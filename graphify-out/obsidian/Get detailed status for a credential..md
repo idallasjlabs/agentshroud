@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Community 198"
+community: "Any"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_198
+  - community/Any
 ---
 
 # Get detailed status for a credential.
 
 ## Connections
-- [[.get_credential_status()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_credential_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_198
+#graphify/rationale #graphify/EXTRACTED #community/Any

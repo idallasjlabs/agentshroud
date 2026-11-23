@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: ""
 type: "code"
-community: "Community 2154"
-location: "L148"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/mainpy
 ---
 
 # AuthRequired
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[dashboard_stats()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

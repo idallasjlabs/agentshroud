@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .filter_response()
 
 ## Connections
-- [[Filter outbound response content to remove sensitive information.          Args]] - `rationale_for` [EXTRACTED]
-- [[FilterResult]] - `references` [EXTRACTED]
+- [[Filter outbound response content to remove sensitive information. Args…]] - `rationale_for` [EXTRACTED]
+- [[FilterResult]] - `calls` [EXTRACTED]
 - [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

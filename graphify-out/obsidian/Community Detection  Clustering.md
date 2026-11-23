@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "concept"
-community: "Community 1721"
+community: "Community Detection / Clustering"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1721
+  - community/Community_Detection_/_Clustering
 ---
 
 # Community Detection / Clustering
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1721
+#graphify/concept #graphify/EXTRACTED #community/Community_Detection_/_Clustering

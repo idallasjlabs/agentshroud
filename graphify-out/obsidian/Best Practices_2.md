@@ -1,22 +1,17 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Community 450"
-location: "L227"
+community: "Security Architecture"
+location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Security_Architecture
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_1]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_1]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_1]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_1]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_1]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[Secrets Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture

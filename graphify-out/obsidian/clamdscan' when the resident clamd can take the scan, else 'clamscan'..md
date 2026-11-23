@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "Community 220"
+community: "test_clamav_pipeline.py"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_clamav_pipelinepy
 ---
 
 # clamdscan' when the resident clamd can take the scan, else 'clamscan'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[preferred_scan_binary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_220
+#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy

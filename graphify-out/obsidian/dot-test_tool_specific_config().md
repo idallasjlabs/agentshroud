@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "RedactionResult"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # .test_tool_specific_config()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
 - [[Test tool-specific configuration overrides]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

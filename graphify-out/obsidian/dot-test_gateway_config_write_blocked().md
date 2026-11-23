@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestConfigurationProtection"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestConfigurationProtection
 ---
 
 # .test_gateway_config_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot write to gateway config directory.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigurationProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestConfigurationProtection

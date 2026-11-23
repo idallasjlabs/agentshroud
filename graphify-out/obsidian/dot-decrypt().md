@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "PortManager"
+community: "EncryptedStore"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/EncryptedStore
 ---
 
 # .decrypt()
@@ -17,8 +17,8 @@ tags:
 - [[dot-decrypt_json()]] - `calls` [EXTRACTED]
 - [[dot-decrypt_str()]] - `calls` [EXTRACTED]
 - [[dot-rotate()]] - `calls` [EXTRACTED]
-- [[Decrypt an AES-256-GCM encrypted blob.          Args             blob The encr]] - `rationale_for` [EXTRACTED]
+- [[Decrypt an AES-256-GCM encrypted blob. Args blob The encrypted blob from…]] - `rationale_for` [EXTRACTED]
 - [[EncryptedStore]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

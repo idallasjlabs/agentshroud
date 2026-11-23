@@ -1,29 +1,34 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 21
 ---
 
 # _run
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
-- [[2. Run Tests]] - document - docs/runbooks/deployment.md
-- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
-- [[4. Build Containers]] - document - docs/runbooks/deployment.md
-- [[5. Deploy]] - document - docs/runbooks/deployment.md
-- [[6. Verify_3]] - document - docs/runbooks/deployment.md
-- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
-- [[Environment Variables_16]] - document - docs/runbooks/deployment.md
-- [[First-Time Setup]] - document - docs/runbooks/deployment.md
-- [[Prerequisites_13]] - document - docs/runbooks/deployment.md
-- [[Quick Summary]] - document - docs/runbooks/deployment.md
-- [[Rolling Back]] - document - docs/runbooks/deployment.md
-- [[Standard Deployment]] - document - docs/runbooks/deployment.md
-- [[Version Tagging]] - document - docs/runbooks/deployment.md
+- [[dot-test_already_at_pin_is_a_distinct_no_op()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_failed_install_fails_and_rolls_back()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_install_that_lands_the_wrong_version_fails_and_rolls_back()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_installs_only_by_immutable_ref()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_non_sha_pin_is_refused_before_touching_hermes()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_pulse_off_passes()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_pulse_switched_on_is_a_failure()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_root_owned_install_is_handed_to_hermes_before_installing()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_script_is_executable_in_git()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_upgrades_to_the_pin_and_reports_from_to()]] - code - gateway/tests/test_update_conduit_push.py
+- [[dot-test_versions_env_pins_conduit_push_to_a_full_sha()]] - code - gateway/tests/test_update_conduit_push.py
+- [[Path_2]] - code
+- [[TestPinIsValidated]] - code - gateway/tests/test_update_conduit_push.py
+- [[TestProvesTheOutcome]] - code - gateway/tests/test_update_conduit_push.py
+- [[TestRepoPin]] - code - gateway/tests/test_update_conduit_push.py
+- [[TestUpgrade]] - code - gateway/tests/test_update_conduit_push.py
+- [[_run()]] - code - gateway/tests/test_update_conduit_push.py
+- [[_versions_file()]] - code - gateway/tests/test_update_conduit_push.py
+- [[parametrize_2]] - code
+- [[scriptsupdate-conduit-push.sh — pinned installer for Hermes's conduit_push…]] - rationale - gateway/tests/test_update_conduit_push.py
+- [[test_update_conduit_push.py]] - code - gateway/tests/test_update_conduit_push.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,13 +36,3 @@ members: 14
 TABLE source_file, type FROM #community/_run
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Implement gateway-level outbound information filtering module]]
-- 1 edge to [[_COMMUNITY_Dockerfile — Gateway]]
-- 1 edge to [[_COMMUNITY_test_gemini_openai_translator.py]]
-- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
-
-## Top bridge nodes
-- [[Environment Variables_16]] - degree 4, connects to 3 communities
-- [[Deployment Runbook — AgentShroud]] - degree 7, connects to 1 community

@@ -1,17 +1,18 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "test_collaborator_tracker.py (4)"
+community: "setup-https-proxy.js"
 location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_4
+  - community/setup-https-proxyjs
 ---
 
 # .constructor()
 
 ## Connections
 - [[PatchedWebSocket]] - `method` [EXTRACTED]
+- [[proxyCreateConnection()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_4
+#graphify/code #graphify/EXTRACTED #community/setup-https-proxyjs

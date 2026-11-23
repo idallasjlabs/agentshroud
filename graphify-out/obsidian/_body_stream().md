@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "pick_latest_stable"
-location: "L333"
+community: "ingest_api/models.py"
+location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pick_latest_stable
+  - community/ingest_api/modelspy
 ---
 
 # _body_stream()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[limit_request_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pick_latest_stable
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

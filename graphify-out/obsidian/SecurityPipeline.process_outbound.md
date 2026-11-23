@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 1788"
+community: "SecurityPipeline.process_outbound"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1788
+  - community/SecurityPipelineprocess_outbound
 ---
 
 # SecurityPipeline.process_outbound
 
-#graphify/code #graphify/EXTRACTED #community/Community_1788
+#graphify/code #graphify/EXTRACTED #community/SecurityPipelineprocess_outbound

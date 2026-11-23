@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 2409"
-location: "L155"
+community: "Added"
+location: "L1096"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2409
+  - community/Added
 ---
 
 # Summary
 
 ## Connections
-- [[1.5.2 (2026-08-23)]] - `contains` [EXTRACTED]
+- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2409
+#graphify/document #graphify/EXTRACTED #community/Added

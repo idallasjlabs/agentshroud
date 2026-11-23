@@ -1,28 +1,28 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: "main.rs"
 location: "L905"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # FakeTransport
 
 ## Connections
-- [[.ok()]] - `method` [EXTRACTED]
-- [[.request()_1]] - `method` [EXTRACTED]
-- [[.with()]] - `method` [EXTRACTED]
+- [[dot-ok()_2]] - `method` [EXTRACTED]
+- [[dot-request()_2]] - `method` [EXTRACTED]
+- [[dot-with()]] - `method` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
 - [[HttpTransport]] - `implements` [EXTRACTED]
-- [[Method]] - `references` [EXTRACTED]
+- [[Method_1]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[RefCell]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[Value]] - `references` [EXTRACTED]
+- [[Value_5]] - `references` [EXTRACTED]
 - [[Vec]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

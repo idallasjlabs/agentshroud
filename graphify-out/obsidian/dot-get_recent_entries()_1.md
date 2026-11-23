@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L297"
+community: "AuditStore"
+location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/AuditStore
 ---
 
 # .get_recent_entries()
@@ -16,4 +16,4 @@ tags:
 - [[AuditStore]] - `method` [EXTRACTED]
 - [[Return the most recent audit entries (alias for query_events with limit).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/AuditStore

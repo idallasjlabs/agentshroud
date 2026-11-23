@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[2026-08-04 fix Hermes zero-CVE heartbeats confused the owner because they're…]] - `rationale_for` [EXTRACTED]
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
-- [[_fake_send()_17]] - `contains` [EXTRACTED]
-- [[_fake_send()]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_fake_send()_2]] - `contains` [EXTRACTED]
+- [[_fake_send()_5]] - `indirect_call` [INFERRED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

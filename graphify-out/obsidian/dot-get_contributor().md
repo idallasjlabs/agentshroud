@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "ServiceManager"
+community: "ContributorManager"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ContributorManager
 ---
 
 # .get_contributor()
@@ -19,4 +19,4 @@ tags:
 - [[ContributorManager]] - `method` [EXTRACTED]
 - [[ContributorRecord]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ContributorManager

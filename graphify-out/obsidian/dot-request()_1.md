@@ -1,24 +1,28 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/inbound_edge/approvals.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L255"
+community: "EnhancedApprovalQueue"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/EnhancedApprovalQueue
 ---
 
 # .request()
 
 ## Connections
-- [[dot-get()_3]] - `calls` [EXTRACTED]
-- [[dot-post()_2]] - `calls` [EXTRACTED]
-- [[HttpResponse]] - `references` [EXTRACTED]
-- [[Method_1]] - `references` [EXTRACTED]
-- [[Option]] - `references` [EXTRACTED]
-- [[ReqwestTransport]] - `method` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
+- [[dot-_idem_key()]] - `calls` [EXTRACTED]
+- [[dot-_status()]] - `calls` [EXTRACTED]
+- [[ApprovalContext]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `calls` [EXTRACTED]
+- [[EdgeApprovals]] - `method` [EXTRACTED]
+- [[PendingApproval]] - `calls` [EXTRACTED]
+- [[Queue (or re-use) the approval for this exact call and issue a ticket.]] - `rationale_for` [EXTRACTED]
+- [[ToolRiskPolicy]] - `calls` [EXTRACTED]
+- [[_iso()]] - `calls` [EXTRACTED]
+- [[_request_token()]] - `indirect_call` [INFERRED]
+- [[args_sha256()]] - `calls` [EXTRACTED]
+- [[render_card()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

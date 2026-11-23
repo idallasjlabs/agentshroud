@@ -1,25 +1,19 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 0"
+community: "middleware.py"
 location: "L174"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/middlewarepy
 ---
 
 # TestKeyVaultWired
 
 ## Connections
-- [[.test_keyvault_instantiated_and_seeded_in_lifespan()]] - `method` [EXTRACTED]
-- [[.test_pipeline_scans_outbound_for_key_leaks()]] - `method` [EXTRACTED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[dot-test_keyvault_instantiated_and_seeded_in_lifespan()]] - `method` [EXTRACTED]
+- [[dot-test_pipeline_scans_outbound_for_key_leaks()]] - `method` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

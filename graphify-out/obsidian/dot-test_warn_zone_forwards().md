@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "asyncio"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/asyncio
 ---
 
 # .test_warn_zone_forwards()
@@ -15,5 +15,6 @@ tags:
 - [[0.3 ≤ score  0.6 warns but never blocks.]] - `rationale_for` [EXTRACTED]
 - [[TestContextIntegrityInPipeline]] - `method` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Community 94"
+community: "AgentShroud — System Overview"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_94
+  - community/AgentShroud__System_Overview
 ---
 
 # System Overview.md
@@ -14,9 +14,5 @@ tags:
 ## Connections
 - [[AgentShroud Security Perimeter]] - `references` [EXTRACTED]
 - [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
-- [[Architecture Overview_2]] - `references` [EXTRACTED]
-- [[Data Flow]] - `references` [EXTRACTED]
-- [[Home]] - `references` [EXTRACTED]
-- [[Quick Reference_14]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_94
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__System_Overview

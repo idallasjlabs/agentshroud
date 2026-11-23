@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "test_soc_services_coverage.py"
-location: "L34"
+community: "test_tool_acl.py"
+location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/test_tool_aclpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResponse]] - `method` [EXTRACTED]
+- [[ToolACLConfig]] - `calls` [EXTRACTED]
+- [[ToolACLEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

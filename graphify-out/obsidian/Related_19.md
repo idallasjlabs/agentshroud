@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 409"
-location: "L345"
+community: "web_content_scanner.py"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_409
+  - community/web_content_scannerpy
 ---
 
 # Related
 
 ## Connections
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_409
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

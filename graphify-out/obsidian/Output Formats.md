@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/apple-reminders/SKILL.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 638"
-location: "L94"
+community: "Himalaya Email CLI"
+location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_638
+  - community/Himalaya_Email_CLI
 ---
 
 # Output Formats
 
 ## Connections
-- [[Common Commands]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_638
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

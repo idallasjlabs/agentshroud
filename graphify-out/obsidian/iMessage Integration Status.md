@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/IMESSAGE_STATUS.md"
 type: "document"
-community: "Community 804"
+community: "iMessage Integration Status"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_804
+  - community/iMessage_Integration_Status
 ---
 
 # iMessage Integration Status
@@ -16,9 +16,9 @@ tags:
 - [[Current State Partially Working]] - `contains` [EXTRACTED]
 - [[Current Status Summary]] - `contains` [EXTRACTED]
 - [[IMESSAGE_STATUS]] - `contains` [EXTRACTED]
-- [[Next Steps_6]] - `contains` [EXTRACTED]
+- [[Next Steps_11]] - `contains` [EXTRACTED]
 - [[Solutions]] - `contains` [EXTRACTED]
 - [[The Error]] - `contains` [EXTRACTED]
-- [[What This Means_1]] - `contains` [EXTRACTED]
+- [[What This Means_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_804
+#graphify/document #graphify/EXTRACTED #community/iMessage_Integration_Status

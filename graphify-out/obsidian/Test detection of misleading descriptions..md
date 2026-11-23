@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "middleware.py"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/middlewarepy
 ---
 
 # Test detection of misleading descriptions.
 
 ## Connections
-- [[.test_deception_detection_misleading_description()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_deception_detection_misleading_description()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

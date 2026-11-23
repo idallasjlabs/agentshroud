@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "egress_filter.py"
+community: "chatbot/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/chatbot/mainpy
 ---
 
 # chatbot/main.py
@@ -15,13 +15,14 @@ tags:
 - [[ChatRequest]] - `contains` [EXTRACTED]
 - [[ChatResponse]] - `contains` [EXTRACTED]
 - [[FastAPI_5]] - `imports_from` [EXTRACTED]
-- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
+- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's…]] - `rationale_for` [EXTRACTED]
 - [[_check_rate_limit()]] - `contains` [EXTRACTED]
 - [[_get_auth_token()]] - `contains` [EXTRACTED]
 - [[chat()]] - `contains` [EXTRACTED]
-- [[health_check()_1]] - `contains` [EXTRACTED]
+- [[health_check()]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `contains` [EXTRACTED]
 - [[load_persona_files()]] - `contains` [EXTRACTED]
+- [[pydantic_1]] - `imports_from` [EXTRACTED]
 - [[require_auth()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

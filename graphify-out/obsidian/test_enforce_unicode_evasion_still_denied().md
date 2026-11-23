@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config"
 location: "L552"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # test_enforce_unicode_evasion_still_denied()
 
 ## Connections
-- [[A fullwidthhomoglyph tool name must not evade the denylistkeyword     heuristi]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[A fullwidthhomoglyph tool name must not evade the denylistkeyword heuristic.…]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

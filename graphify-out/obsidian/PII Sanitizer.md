@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/README.md"
 type: "document"
-community: "Community 659"
+community: "Features"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_659
+  - community/Features
 ---
 
 # PII Sanitizer
 
 ## Connections
-- [[Features_4]] - `contains` [EXTRACTED]
+- [[Features_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_659
+#graphify/document #graphify/EXTRACTED #community/Features

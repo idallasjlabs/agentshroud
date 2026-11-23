@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 103"
-location: "L75"
+community: "asyncio"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_103
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # Any
 
 ## Connections
-- [[._audit()_1]] - `references` [EXTRACTED]
-- [[.get_stats()_10]] - `references` [EXTRACTED]
-- [[.to_dict()_2]] - `references` [EXTRACTED]
-- [[URLAnalyzer]] - `uses` [INFERRED]
-- [[WebContentScanner]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_90]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
+- [[dot-get_stats()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/asyncio

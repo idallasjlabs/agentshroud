@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "concept"
-community: "Community 769"
+community: "gh-issues/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_769
+  - community/gh-issues/SKILLmd
 ---
 
 # openclaw security audit command family
 
 ## Connections
-- [[SKILL_222]] - `implements` [EXTRACTED]
 - [[Stable-named cron scheduling for periodic audits]] - `shares_data_with` [EXTRACTED]
+- [[healthcheckSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_769
+#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Community 739"
-location: "L96"
+community: "First Time Setup"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/First_Time_Setup
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
+- [[First Time Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

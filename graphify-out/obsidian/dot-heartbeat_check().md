@@ -15,8 +15,8 @@ tags:
 - [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
 - [[dot-_log_heartbeat_result()]] - `calls` [EXTRACTED]
 - [[dot-_send_heartbeat_alert()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Check if the agent is responding within expected parameters.          Returns]] - `rationale_for` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
+- [[Check if the agent is responding within expected parameters. Returns Dict…]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

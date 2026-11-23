@@ -1,12 +1,12 @@
 ---
 source_file: ".omp/mcp.json"
 type: "code"
-community: ".omp/mcp.json (2)"
+community: ".omp/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/omp/mcpjson_2
+  - community/omp/mcpjson
 ---
 
 # .omp/mcp.json
@@ -22,4 +22,4 @@ tags:
 - [[safari_4]] - `contains` [EXTRACTED]
 - [[xmind_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/omp/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/omp/mcpjson

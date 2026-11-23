@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/setup-https-proxy.js"
+source_file: "docker/scripts/mcp-proxy-wrapper.js"
 type: "code"
-community: "Community 191"
-location: "L48"
+community: "mcp-proxy-wrapper.js"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_191
+  - community/mcp-proxy-wrapperjs
 ---
 
 # http
 
 ## Connections
-- [[setup-https-proxy.js]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_191
+#graphify/code #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Community 99"
+community: "CollaboratorActivityTracker"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/CollaboratorActivityTracker
 ---
 
 # test_unknown_user_recorded_when_dynamic_tracking_enabled()
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorActivityTracker]] - `calls` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

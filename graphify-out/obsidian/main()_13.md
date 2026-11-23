@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "Community 41"
-location: "L501"
+community: "SecureBrowser"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_41
+  - community/SecureBrowser
 ---
 
 # main()
 
 ## Connections
-- [[create_app()]] - `calls` [EXTRACTED]
-- [[edge_app.py]] - `contains` [EXTRACTED]
-- [[settings_from_env()]] - `calls` [EXTRACTED]
-- [[verify_shipped_descriptors()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `calls` [EXTRACTED]
+- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_41
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

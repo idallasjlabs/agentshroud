@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "ToolResultInjectionScanner"
 location: "L2220"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/ToolResultInjectionScanner
 ---
 
 # Concise collaborator-safe reason text without internal leakage.
 
 ## Connections
-- [[._collaborator_safe_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-_collaborator_safe_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "Community 1071"
+community: "Skill: Security Review (SEC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

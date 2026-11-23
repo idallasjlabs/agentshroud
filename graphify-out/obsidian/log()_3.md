@@ -1,18 +1,19 @@
 ---
-source_file: "docker/scripts/security-report.sh"
+source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Community 814"
-location: "L18"
+community: "colima-health-check.sh"
+location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_814
+  - community/colima-health-checksh
 ---
 
 # log()
 
 ## Connections
-- [[security-report.sh]] - `defines` [EXTRACTED]
-- [[security-report.sh script]] - `calls` [EXTRACTED]
+- [[colima-health-check.sh]] - `defines` [EXTRACTED]
+- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
+- [[notify()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_814
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

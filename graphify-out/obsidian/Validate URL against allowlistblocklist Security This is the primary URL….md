@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "rationale"
-community: "browser/scripts/browse.py (2)"
+community: "SecureBrowser"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/SecureBrowser
 ---
 
 # Validate URL against allowlist/blocklist Security: This is the primary URL…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_validate_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,18 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 77"
+community: "test_voice_latency_guard.py"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/test_voice_latency_guardpy
 ---
 
 # _call_agent_stream()
 
 ## Connections
-- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's     POS]] - `rationale_for` [EXTRACTED]
+- [[Route a voice utterance to a proxied agent via the AgentShroud gateway's POST…]] - `rationale_for` [EXTRACTED]
 - [[_record_turn_latency()]] - `calls` [EXTRACTED]
 - [[_voice_forward_metadata()]] - `calls` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_voice_latency_guard.py]] - `imports` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_77
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

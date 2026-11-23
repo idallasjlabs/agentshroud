@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "AgentShroud Security Architecture"
+community: "DNSBlocklist"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/DNSBlocklist
 ---
 
 # .test_hosts_line_without_domain_returns_none()
@@ -15,4 +15,4 @@ tags:
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
 - [[TestBlocklistWildcardsAndAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

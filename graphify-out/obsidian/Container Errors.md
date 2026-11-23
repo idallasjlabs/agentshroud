@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Community 334"
-location: "L1"
+community: "Error Index"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/Error_Index
 ---
 
-# Container Errors.md
+# Container Errors
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
-- [[Crash Recovery_1]] - `references` [EXTRACTED]
-- [[Error Index]] - `references` [EXTRACTED]
-- [[Startup Errors_1]] - `references` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/Error_Index

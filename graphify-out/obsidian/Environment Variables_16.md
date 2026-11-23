@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 392"
-location: "L102"
+community: "drift_detector.py"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/drift_detectorpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
-- [[trust_manager.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/package.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "openclaw/skills/i-icloud/scripts/calendar.js"
-location: "L11"
+community: "browser-extension/package.json"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-icloud/scripts/calendarjs
+  - community/browser-extension/packagejson
 ---
 
 # license
 
 ## Connections
-- [[hermesskillsi-browserpackage.json]] - `contains` [EXTRACTED]
+- [[browser-extensionpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-icloud/scripts/calendarjs
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

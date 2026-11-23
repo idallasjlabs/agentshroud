@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 486"
-location: "L83"
+community: "Skill: Project Management (PM)"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_486
+  - community/Skill_Project_Management_PM
 ---
 
 # Definition of Done (from CLAUDE.md)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Task Coordination_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_486
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

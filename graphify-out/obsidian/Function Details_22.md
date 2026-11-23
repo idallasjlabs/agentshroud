@@ -1,23 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 673"
-location: "L28"
+community: "falco_monitor.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/falco_monitorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[DockerEngine._cmd(args, kwargs)]] - `contains` [EXTRACTED]
-- [[DockerEngine.compose_up(file, detach)]] - `contains` [EXTRACTED]
-- [[DockerEngine.health_check()]] - `contains` [EXTRACTED]
-- [[DockerEngine.inspect(name)]] - `contains` [EXTRACTED]
-- [[DockerEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[DockerEngine.run(image, name, , ports, volumes, networks, env, privileged, caps, seccomp, detach, read_only, no_new_privileges)]] - `contains` [EXTRACTED]
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[categorize_alerts(alerts)]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)_1]] - `contains` [EXTRACTED]
+- [[is_agentshroud_rule(rule_name)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)_1]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since, agentshroud_only)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_673
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

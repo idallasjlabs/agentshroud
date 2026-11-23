@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L2555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # _launch_scan_background()
 
 ## Connections
-- [[Launch security-scan.sh for the given scanner and discard the handle (fire-and-f]] - `rationale_for` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[Launch security-scan.sh for the given scanner and discard the handle (fire-and-…]] - `rationale_for` [EXTRACTED]
 - [[run_scanner()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[test_launch_scan_background_exec_failure()]] - `calls` [EXTRACTED]
+- [[test_launch_scan_background_success()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

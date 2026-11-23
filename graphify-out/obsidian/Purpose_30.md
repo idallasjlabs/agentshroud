@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/oracle/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 2088"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2088
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2088
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

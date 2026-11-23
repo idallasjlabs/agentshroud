@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L424"
+community: "ScanResult"
+location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/ScanResult
 ---
 
 # ._scan_xml_dtd()
 
 ## Connections
-- [[dot-scan()]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
 - [[ContentFinding]] - `calls` [EXTRACTED]
 - [[Detect DTDentity constructs that drive XML parser memory-safety bugs. Flags…]] - `rationale_for` [EXTRACTED]
-- [[ScanResult]] - `references` [EXTRACTED]
+- [[ScanResult_1]] - `references` [EXTRACTED]
 - [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/ScanResult

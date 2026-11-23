@@ -1,18 +1,17 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 521"
+community: "v0.9.0 — \"Sentinel\" (Blue Team Remediation + Data Isolation + SOC)"
 location: "L218"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_521
+  - community/v090__Sentinel_Blue_Team_Remediation__Data_Isolation__SOC
 ---
 
 # F. Infrastructure
 
 ## Connections
-- [[Architecture_2]] - `contains` [EXTRACTED]
 - [[v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_521
+#graphify/document #graphify/EXTRACTED #community/v090__Sentinel_Blue_Team_Remediation__Data_Isolation__SOC

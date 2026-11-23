@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 640"
+community: "1.4 Implementation Plan"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_640
+  - community/14_Implementation_Plan
 ---
 
 # Phase 5: Distributed Workflows
@@ -18,4 +18,4 @@ tags:
 - [[Workflow 2 Continuous Development]] - `contains` [EXTRACTED]
 - [[Workflow 3 IoT + AI Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_640
+#graphify/document #graphify/EXTRACTED #community/14_Implementation_Plan

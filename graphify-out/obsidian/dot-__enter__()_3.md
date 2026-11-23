@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
-location: "L27"
+community: "_patch_urlopen"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/_patch_urlopen
 ---
 
 # .__enter__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/_patch_urlopen

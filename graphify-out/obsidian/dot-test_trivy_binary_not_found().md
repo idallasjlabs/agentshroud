@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Skill: Project Management (PM) (3)"
+community: "parse_clamscan_output"
 location: "L925"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/parse_clamscan_output
 ---
 
 # .test_trivy_binary_not_found()
 
 ## Connections
 - [[TestContainerSecurity]] - `method` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
+- [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

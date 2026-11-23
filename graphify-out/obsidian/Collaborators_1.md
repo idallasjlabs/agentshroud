@@ -1,19 +1,18 @@
 ---
-source_file: "docs/setup-slack.md"
+source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 1970"
-location: "L156"
+community: "Collaborators"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1970
+  - community/Collaborators
 ---
 
 # Collaborators
 
 ## Connections
-- [[Collaborator Session Isolation (blocked functionsskills)]] - `semantically_similar_to` [INFERRED]
-- [[Collaborators_2]] - `conceptually_related_to` [EXTRACTED]
-- [[Slack Channel Setup]] - `contains` [EXTRACTED]
+- [[Collaborators]] - `conceptually_related_to` [EXTRACTED]
+- [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1970
+#graphify/document #graphify/EXTRACTED #community/Collaborators

@@ -1,27 +1,20 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "Community 131"
-location: "L164"
+community: "test_clamav_pipeline.py"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/test_clamav_pipelinepy
 ---
 
 # save_report()
 
 ## Connections
-- [[.test_custom_prefix()]] - `calls` [EXTRACTED]
-- [[.test_default_prefix()]] - `calls` [EXTRACTED]
-- [[.test_log_dir_created_if_missing()]] - `calls` [EXTRACTED]
-- [[.test_report_content_persisted()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
-- [[Path_21]] - `references` [EXTRACTED]
-- [[Save a Trivy report to the log directory.      Args         report Parsed repo]] - `rationale_for` [EXTRACTED]
-- [[daily_cve_report.py]] - `imports` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py]] - `contains` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
+- [[Save a ClamAV report to the log directory.]] - `rationale_for` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

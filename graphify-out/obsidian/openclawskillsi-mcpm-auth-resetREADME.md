@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "AgentShroud Incident Response Plan (3)"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_3
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # openclaw/skills/i-mcpm-auth-reset/README.md
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_3
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

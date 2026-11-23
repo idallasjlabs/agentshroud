@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "PathIsolationManager"
+community: "test_all_modules_enforce.py"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/test_all_modules_enforcepy
 ---
 
 # .test_path_isolation_instantiates()
@@ -16,4 +16,4 @@ tags:
 - [[PathIsolationManager]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

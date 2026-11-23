@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 117"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

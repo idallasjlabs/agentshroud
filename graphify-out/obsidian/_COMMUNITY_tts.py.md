@@ -1,30 +1,30 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+members: 17
 ---
 
 # tts.py
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Members:** 17 nodes
 
 ## Members
-- [[dot-client()_6]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_check_agentshroud_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_check_openclaw_updates()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_export_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_get_config()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_get_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_killswitch_freeze()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_killswitch_invalid_mode()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_killswitch_no_confirm()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_security_report()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_status()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_update_history()]] - code - gateway/tests/test_runtime_engines.py
-- [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
-- [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[Any_79]] - code
+- [[Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal…]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Kaiser-windowed sinc anti-aliasing filter suppresses content above the output…]] - rationale - gateway/tests/test_voice_gateway.py
+- [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz. For…]] - rationale - voice_gateway/tts.py
+- [[Return text suitable for TTS synthesis on the ESP32 voice interface. Two…]] - rationale - voice_gateway/tts.py
+- [[Split an agent reply into ordered sentence-sized TTS chunks. Applies…]] - rationale - voice_gateway/tts.py
+- [[Synthesize text to raw S16LE PCM mono audio bytes at TARGET_SAMPLE_RATE.…]] - rationale - voice_gateway/tts.py
+- [[Text-to-Speech using Kokoro (local neural TTS, outputs S16LE PCM).]] - rationale - voice_gateway/tts.py
+- [[_get_pipeline()]] - code - voice_gateway/tts.py
+- [[_resample_s16le_mono()]] - code - voice_gateway/tts.py
+- [[normalize_for_speech()]] - code - voice_gateway/tts.py
+- [[split_for_speech()]] - code - voice_gateway/tts.py
+- [[synthesize()]] - code - voice_gateway/tts.py
+- [[test_resample_antialias_attenuates_above_nyquist()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_resample_passband_preserved()]] - code - gateway/tests/test_voice_gateway.py
+- [[test_tts_empty_text_returns_empty()]] - code - gateway/tests/test_voice_gateway.py
+- [[tts.py]] - code - voice_gateway/tts.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +34,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_jira_weekly_review.py]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_egress_retry.py]]
+- 7 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_server.py]]
 
 ## Top bridge nodes
-- [[TestWebAPI]] - degree 20, connects to 5 communities
+- [[tts.py]] - degree 8, connects to 2 communities
+- [[normalize_for_speech()]] - degree 6, connects to 2 communities
+- [[split_for_speech()]] - degree 5, connects to 2 communities
+- [[_resample_s16le_mono()]] - degree 6, connects to 1 community
+- [[test_resample_antialias_attenuates_above_nyquist()]] - degree 3, connects to 1 community

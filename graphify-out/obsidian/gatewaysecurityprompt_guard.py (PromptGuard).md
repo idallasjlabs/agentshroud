@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 0"
+community: "gateway/security/prompt_guard.py (PromptGuard)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/gateway/security/prompt_guardpy_PromptGuard
 ---
 
 # gateway/security/prompt_guard.py (PromptGuard)
 
-## Connections
-- [[test_security_audit.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/gateway/security/prompt_guardpy_PromptGuard

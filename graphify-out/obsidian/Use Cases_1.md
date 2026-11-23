@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 689"
-location: "L59"
+community: "Browser Fetch Skill"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_689
+  - community/Browser_Fetch_Skill
 ---
 
 # Use Cases
 
 ## Connections
-- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_689
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill

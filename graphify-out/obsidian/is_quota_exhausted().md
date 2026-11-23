@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Community 788"
+community: "is_quota_exhausted"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/is_quota_exhausted
 ---
 
 # is_quota_exhausted()
 
 ## Connections
-- [[.proxy_messages()]] - `calls` [EXTRACTED]
-- [[Return (True, token) if the response indicates a billingquota wall.      The st]] - `rationale_for` [EXTRACTED]
+- [[dot-proxy_messages()]] - `calls` [EXTRACTED]
+- [[Return (True, token) if the response indicates a billingquota wall. The stable…]] - `rationale_for` [EXTRACTED]
 - [[_is_anthropic_quota()]] - `calls` [EXTRACTED]
 - [[_is_google_quota()]] - `calls` [EXTRACTED]
 - [[_is_openai_quota()]] - `calls` [EXTRACTED]
+- [[_stream()_1]] - `calls` [EXTRACTED]
 - [[llm_proxy.py]] - `imports` [EXTRACTED]
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 - [[test_200_never_triggers()]] - `calls` [EXTRACTED]
@@ -33,4 +34,4 @@ tags:
 - [[test_no_false_positive_on_anthropic_request_rate_limit()]] - `calls` [EXTRACTED]
 - [[test_non_json_body_anthropic_429_no_substring_match()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_788
+#graphify/code #graphify/EXTRACTED #community/is_quota_exhausted

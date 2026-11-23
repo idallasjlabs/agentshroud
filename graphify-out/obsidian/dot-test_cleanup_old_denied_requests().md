@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_cleanup_old_denied_requests()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test cleanup of old denied requests.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[patch_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

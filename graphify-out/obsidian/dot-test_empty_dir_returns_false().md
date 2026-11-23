@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "SECTION 7: FILING CHECKLIST"
+community: "_age"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SECTION_7_FILING_CHECKLIST
+  - community/_age
 ---
 
 # .test_empty_dir_returns_false()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsFresh_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SECTION_7_FILING_CHECKLIST
+#graphify/code #graphify/EXTRACTED #community/_age

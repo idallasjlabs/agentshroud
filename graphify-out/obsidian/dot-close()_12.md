@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L726"
+community: "EnhancedApprovalQueue"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/EnhancedApprovalQueue
 ---
 
 # .close()
 
 ## Connections
-- [[dot-test_binds_and_returns_transport()]] - `calls` [EXTRACTED]
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[EdgeService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Community 567"
-location: "L12"
+community: "openclaw/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_567
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_567
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

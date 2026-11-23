@@ -1,67 +1,57 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # ApprovalQueue
 
 ## Connections
-- [[.__init__()_5]] - `method` [EXTRACTED]
-- [[._append_audit_event()]] - `method` [EXTRACTED]
-- [[._expire_stale()]] - `method` [EXTRACTED]
-- [[._load_pending_store()]] - `method` [EXTRACTED]
-- [[._persist_pending_store()]] - `method` [EXTRACTED]
-- [[.broadcast()_1]] - `method` [EXTRACTED]
-- [[.cleanup_decided()]] - `method` [EXTRACTED]
-- [[.connect()_1]] - `method` [EXTRACTED]
-- [[.decide()_1]] - `method` [EXTRACTED]
-- [[.disabled_client()]] - `calls` [EXTRACTED]
-- [[.disconnect()_1]] - `method` [EXTRACTED]
-- [[.get_item()_1]] - `method` [EXTRACTED]
-- [[.get_pending()_1]] - `method` [EXTRACTED]
-- [[.no_approval_client()]] - `calls` [EXTRACTED]
-- [[.submit()_1]] - `method` [EXTRACTED]
-- [[ApprovalQueue_1]] - `uses` [INFERRED]
-- [[EnhancedApprovalQueue_3]] - `uses` [INFERRED]
-- [[In-memory approval queue with WebSocket notifications      Actions requiring app]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalStorePersistence]] - `uses` [INFERRED]
-- [[TestApprovalTimeout]] - `uses` [INFERRED]
-- [[TestAutoExpire]] - `uses` [INFERRED]
-- [[TestConcurrentApprovalRequests]] - `uses` [INFERRED]
+- [[dot-__init__()_97]] - `method` [EXTRACTED]
+- [[dot-_append_audit_event()]] - `method` [EXTRACTED]
+- [[dot-_expire_stale()]] - `method` [EXTRACTED]
+- [[dot-_load_pending_store()]] - `method` [EXTRACTED]
+- [[dot-_persist_pending_store()]] - `method` [EXTRACTED]
+- [[dot-broadcast()_1]] - `method` [EXTRACTED]
+- [[dot-cleanup_decided()]] - `method` [EXTRACTED]
+- [[dot-connect()_1]] - `method` [EXTRACTED]
+- [[dot-decide()_1]] - `method` [EXTRACTED]
+- [[dot-disabled_client()]] - `calls` [EXTRACTED]
+- [[dot-disconnect()]] - `method` [EXTRACTED]
+- [[dot-get_item()_2]] - `method` [EXTRACTED]
+- [[dot-get_pending()_2]] - `method` [EXTRACTED]
+- [[dot-no_approval_client()]] - `calls` [EXTRACTED]
+- [[dot-submit()_1]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalQueueItem]] - `uses` [INFERRED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
+- [[In-memory approval queue with WebSocket notifications Actions requiring…]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
-- [[TestSSHExec]] - `uses` [INFERRED]
-- [[TestSSHHistory]] - `uses` [INFERRED]
-- [[TestSSHHosts]] - `uses` [INFERRED]
-- [[TestSSHProxyValidateWriteFile]] - `uses` [INFERRED]
-- [[TestSSHProxyWriteFileTransport]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
-- [[TestSSHValidateCwd]] - `uses` [INFERRED]
-- [[TestSSHWriteFileEndpoint]] - `uses` [INFERRED]
-- [[TestSSHWriteFileLedgerAudit]] - `uses` [INFERRED]
-- [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
-- [[_HangingWebSocket]] - `uses` [INFERRED]
 - [[_queue()]] - `calls` [EXTRACTED]
-- [[approval_queue()]] - `calls` [EXTRACTED]
-- [[approval_queue()_1]] - `calls` [EXTRACTED]
-- [[client()_17]] - `calls` [EXTRACTED]
-- [[client()_18]] - `calls` [EXTRACTED]
-- [[queue()]] - `calls` [EXTRACTED]
+- [[_submit_high_risk()]] - `uses` [INFERRED]
+- [[approval_queue()]] - `uses` [INFERRED]
+- [[approval_queue()_1]] - `uses` [INFERRED]
+- [[client()_11]] - `uses` [INFERRED]
+- [[client()_12]] - `uses` [INFERRED]
+- [[queue()]] - `uses` [INFERRED]
 - [[queue.py]] - `contains` [EXTRACTED]
+- [[run()_1]] - `calls` [INFERRED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
-- [[test_cleanup_decided_persists_removal_to_disk()]] - `calls` [EXTRACTED]
+- [[test_cleanup_decided_persists_removal_to_disk()]] - `uses` [INFERRED]
 - [[test_mfa_guard.py]] - `imports` [EXTRACTED]
-- [[test_persist_pending_store_writes_atomically()]] - `calls` [EXTRACTED]
+- [[test_persist_pending_store_writes_atomically()]] - `uses` [INFERRED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
-- [[test_store_persists_submit_and_decision()]] - `calls` [EXTRACTED]
+- [[test_store_persists_submit_and_decision()]] - `uses` [INFERRED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

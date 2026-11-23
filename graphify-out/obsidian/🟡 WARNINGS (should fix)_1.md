@@ -1,20 +1,22 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Community 840"
-location: "L51"
+community: "AgentShroud Phase Review — 2026-03-05 (Round 2)"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_840
+  - community/AgentShroud_Phase_Review__2026-03-05_Round_2
 ---
 
 # 🟡 WARNINGS (should fix)
 
 ## Connections
-- [[2. Findings]] - `contains` [EXTRACTED]
-- [[W1 `if True  keep indentation` anti-pattern in tests]] - `contains` [EXTRACTED]
-- [[W2 Stale compose snapshot committed to tree]] - `contains` [EXTRACTED]
-- [[W3 Empty test file placeholder]] - `contains` [EXTRACTED]
+- [[3. Round 2 Findings]] - `contains` [EXTRACTED]
+- [[W1 Duplicate `import time` in `dashboard.py`]] - `contains` [EXTRACTED]
+- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - `contains` [EXTRACTED]
+- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - `contains` [EXTRACTED]
+- [[W4 Tailscale image not pinned to SHA256 digest]] - `contains` [EXTRACTED]
+- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_840
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-03-05_Round_2

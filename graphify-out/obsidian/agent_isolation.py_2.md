@@ -1,28 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
-type: "document"
-community: "Community 674"
-location: "L10"
+source_file: "gateway/security/agent_isolation.py"
+type: "code"
+community: "AgentRegistry"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/AgentRegistry
 ---
 
 # agent_isolation.py
 
 ## Connections
-- [[ContainerConfig Defaults]] - `contains` [EXTRACTED]
-- [[Environment Variables_5]] - `contains` [EXTRACTED]
-- [[Function Details_26]] - `contains` [EXTRACTED]
-- [[Integration Notes]] - `contains` [EXTRACTED]
-- [[Integration Testing]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_29]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor]] - `contains` [EXTRACTED]
-- [[Purpose_147]] - `contains` [EXTRACTED]
-- [[Related_33]] - `contains` [EXTRACTED]
-- [[Responsibilities_31]] - `contains` [EXTRACTED]
-- [[Threat Model_2]] - `contains` [EXTRACTED]
-- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
+- [[AgentRegistry]] - `contains` [EXTRACTED]
+- [[ContainerConfig]] - `contains` [EXTRACTED]
+- [[Enum_41]] - `imports_from` [EXTRACTED]
+- [[IsolationCheck]] - `contains` [EXTRACTED]
+- [[IsolationStatus]] - `contains` [EXTRACTED]
+- [[IsolationVerifier]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_agent_isolation.py]] - `imports_from` [EXTRACTED]
+- [[test_group_isolation.py]] - `imports_from` [EXTRACTED]
+- [[test_security_hardening.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

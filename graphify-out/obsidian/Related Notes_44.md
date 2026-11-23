@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
 type: "document"
-community: "Community 690"
-location: "L64"
+community: "TELEGRAM_API_BASE_URL"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_690
+  - community/TELEGRAM_API_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenSCAP]] - `contains` [EXTRACTED]
+- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_690
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_API_BASE_URL

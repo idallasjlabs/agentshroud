@@ -1,19 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 164"
-location: "L24"
+community: "clamav_scanner.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/clamav_scannerpy
 ---
 
 # Threat Model
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
-- [[What AgentShroud Does]] - `contains` [EXTRACTED]
-- [[What We're Protecting Against]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

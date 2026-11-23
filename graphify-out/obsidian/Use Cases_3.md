@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-egress-firewall.md"
 type: "document"
-community: "Community 1145"
-location: "L12"
+community: "Feature: Global Monitor-Only Mode (\"Observatory Mode\")"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1145
+  - community/Feature_Global_Monitor-Only_Mode_Observatory_Mode
 ---
 
 # Use Cases
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Feature Global Monitor-Only Mode (Observatory Mode)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1145
+#graphify/document #graphify/EXTRACTED #community/Feature_Global_Monitor-Only_Mode_Observatory_Mode

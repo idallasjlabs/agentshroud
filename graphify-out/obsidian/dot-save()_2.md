@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "IntelReportStore"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/IntelReportStore
 ---
 
 # .save()
 
 ## Connections
 - [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
-- [[Persist report to the store, linking it to the previous report.          Sets]] - `rationale_for` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
+- [[Persist report to the store, linking it to the previous report. Sets…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

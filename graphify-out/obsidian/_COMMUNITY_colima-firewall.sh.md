@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # colima-firewall.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[ContextGuard Bug — should_block_message() Always Returns False (monitor-only in enforce mode)]] - concept - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
-- [[Prompt Injection Threat Assessment v0.7.0 — 4-Layer Defense Analysis]] - document - docs/planning/reviews/prompt-injection-assessment-2026-02-25.md
+- [[colima-firewall.sh]] - code - docker/scripts/colima-firewall.sh
+- [[colima-firewall.sh script]] - code - docker/scripts/colima-firewall.sh
 
 ## Live Query (requires Dataview plugin)
 

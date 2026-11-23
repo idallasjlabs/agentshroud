@@ -1,43 +1,26 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "Community 64"
+community: "test_mcp_proxy.py"
 location: "L75"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_64
+  - graphify/EXTRACTED
+  - community/test_mcp_proxypy
 ---
 
 # FindingType
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[TestAllowDenyList]] - `uses` [INFERRED]
-- [[TestAuditQueries]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestAuditTrailBounded]] - `uses` [INFERRED]
-- [[TestChainIntegrityMultiple]] - `uses` [INFERRED]
-- [[TestConfigParsing]] - `uses` [INFERRED]
-- [[TestExecuteResultInspectionBinding]] - `uses` [INFERRED]
-- [[TestHashChainIntegration]] - `uses` [INFERRED]
+- [[Enum_25]] - `inherits` [EXTRACTED]
 - [[TestInjectionDetection]] - `uses` [INFERRED]
 - [[TestInspectorEdgeCases]] - `uses` [INFERRED]
-- [[TestPIIDetection]] - `uses` [INFERRED]
-- [[TestPassthroughMode]] - `uses` [INFERRED]
-- [[TestPrivacyPolicyEvents]] - `uses` [INFERRED]
-- [[TestProcessingTime]] - `uses` [INFERRED]
-- [[TestProxyInterception]] - `uses` [INFERRED]
-- [[TestProxyPermissions]] - `uses` [INFERRED]
-- [[TestProxyRateLimiting]] - `uses` [INFERRED]
-- [[TestProxyResultProcessing]] - `uses` [INFERRED]
-- [[TestProxyStats]] - `uses` [INFERRED]
+- [[TestPIIDetection_1]] - `uses` [INFERRED]
 - [[TestSensitiveOps]] - `uses` [INFERRED]
 - [[TestSuspiciousEncoding]] - `uses` [INFERRED]
-- [[TestThreatLevelCalc]] - `uses` [INFERRED]
 - [[Type of security finding.]] - `rationale_for` [EXTRACTED]
-- [[__init__.py_8]] - `imports` [EXTRACTED]
-- [[mcp_inspector.py]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

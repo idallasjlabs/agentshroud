@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L63"
+community: "EnhancedApprovalQueue"
+location: "L475"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/EnhancedApprovalQueue
 ---
 
 # ._record()
 
 ## Connections
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-call_tool()]] - `calls` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
+- [[EdgeCallPipeline]] - `method` [EXTRACTED]
+- [[EdgePrincipal]] - `references` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

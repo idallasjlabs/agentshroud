@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Community 1049"
+community: "openclaw/manifest.json"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1049
+  - community/openclaw/manifestjson
 ---
 
 # entries
 
 ## Connections
-- [[manifest.json_2]] - `contains` [EXTRACTED]
+- [[openclawmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1049
+#graphify/code #graphify/EXTRACTED #community/openclaw/manifestjson

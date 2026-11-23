@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Prune old nodes for changed files before AST re-insert (#1178)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AGENTSHROUD_VERSION fallback to dockerversions.env]] - rationale - docker/bots/hermes/run-standalone.sh
+- [[Prune old nodes for changed files before AST re-insert (1178)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

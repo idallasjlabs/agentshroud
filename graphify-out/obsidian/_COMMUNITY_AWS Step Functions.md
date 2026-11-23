@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AWS Step Functions
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server awslabs.aws-api-mcp-server]] - code - .mcp.json
+- [[AWS Step Functions]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

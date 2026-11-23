@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 103"
+community: "TestWebProxySecurityIntegration"
 location: "L197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Test that OAuth security flags requests with authorization headers.
 
 ## Connections
-- [[.test_oauth_security_flags_auth_headers()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_oauth_security_flags_auth_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

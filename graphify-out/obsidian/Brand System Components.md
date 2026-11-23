@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-bs.md"
+source_file: ".agents/skills/i-bs/SKILL.md"
 type: "document"
-community: "Community 1009"
-location: "L43"
+community: "Required: ≥ 4.5 for text, ≥ 3.0 for UI elements"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Required__45_for_text__30_for_UI_elements
 ---
 
 # Brand System Components
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Required__45_for_text__30_for_UI_elements

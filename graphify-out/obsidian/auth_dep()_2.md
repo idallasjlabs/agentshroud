@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "Community 62"
-location: "L385"
+community: "ingest_api/main.py"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._1]] - `rationale_for` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
-- [[Request_4]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
+- [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

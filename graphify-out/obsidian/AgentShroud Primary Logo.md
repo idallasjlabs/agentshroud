@@ -1,11 +1,11 @@
 ---
 source_file: "branding/logo.png"
 type: "image"
-community: "Community 585"
+community: "AgentShroud Primary Logo"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_585
+  - community/AgentShroud_Primary_Logo
 ---
 
 # AgentShroud Primary Logo
@@ -15,6 +15,6 @@ tags:
 - [[AgentShroud Email Banner (600x150)]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud Logo — Dark Background Variant]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud MerchandiseStationery Mockup]] - `conceptually_related_to` [INFERRED]
-- [[README_38]] - `references` [EXTRACTED]
+- [[brandingREADME]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/INFERRED #community/Community_585
+#graphify/image #graphify/INFERRED #community/AgentShroud_Primary_Logo

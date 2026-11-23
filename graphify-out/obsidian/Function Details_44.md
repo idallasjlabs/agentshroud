@@ -1,25 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Community 567"
+community: "consent_framework.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_567
+  - community/consent_frameworkpy
 ---
 
 # Function Details
 
 ## Connections
-- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.validate_request(req)]] - `contains` [EXTRACTED]
-- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - `contains` [EXTRACTED]
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
+- [[ConsentFramework.validate_configs(configs)]] - `contains` [EXTRACTED]
+- [[consent_framework.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_567
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

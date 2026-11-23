@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Community 435"
+community: "PIIConfig"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/PIIConfig
 ---
 
 # test_telegram_uid_not_redacted_as_phone()
 
 ## Connections
 - [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_16]] - `references` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_435
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

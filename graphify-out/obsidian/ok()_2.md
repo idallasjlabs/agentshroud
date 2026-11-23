@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_launchd_install.sh"
+source_file: "scripts/tailscale-check.sh"
 type: "code"
-community: "Community 2089"
-location: "L22"
+community: "verify-proxy.sh"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2089
+  - community/verify-proxysh
 ---
 
 # ok()
 
 ## Connections
-- [[test_launchd_install.sh]] - `defines` [EXTRACTED]
-- [[test_launchd_install.sh script]] - `calls` [EXTRACTED]
+- [[tailscale-check.sh]] - `defines` [EXTRACTED]
+- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2089
+#graphify/code #graphify/EXTRACTED #community/verify-proxysh

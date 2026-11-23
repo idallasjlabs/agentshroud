@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "GroupWorkspaceManager"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/GroupWorkspaceManager
 ---
 
 # .can_access()
@@ -16,6 +16,6 @@ tags:
 - [[dot-group_workspace_id()]] - `calls` [EXTRACTED]
 - [[dot-resolve_workspace()]] - `calls` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
-- [[Return True if user_id may access the workspace for ``group_chat_id``.]] - `rationale_for` [EXTRACTED]
+- [[Return True if user_id may access the workspace for ``group_chat_id``. A DM…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

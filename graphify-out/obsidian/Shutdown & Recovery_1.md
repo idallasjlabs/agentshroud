@@ -1,23 +1,24 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 306"
-location: "L8"
+community: "Architecture Overview.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Architecture_Overviewmd
 ---
 
-# Shutdown & Recovery
+# Shutdown & Recovery.md
 
 ## Connections
-- [[Crash Recovery]] - `contains` [EXTRACTED]
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
-- [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
-- [[Kill Switch (Emergency Stop)]] - `contains` [EXTRACTED]
-- [[Related Notes_4]] - `contains` [EXTRACTED]
+- [[Container Errors_1]] - `references` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[Home]] - `references` [EXTRACTED]
+- [[Kill Switch Procedure_1]] - `references` [EXTRACTED]
+- [[Restart Procedure]] - `references` [EXTRACTED]
 - [[Shutdown & Recovery]] - `contains` [EXTRACTED]
-- [[State After Recovery]] - `contains` [EXTRACTED]
+- [[Startup Flow Diagram (vault note)]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

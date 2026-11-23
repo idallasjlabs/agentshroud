@@ -1,22 +1,16 @@
 ---
-source_file: "gateway/security/health_report.py"
+source_file: ""
 type: "code"
-community: "Community 185"
-location: "L56"
+community: "EdgeOAuthService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/EdgeOAuthService
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[_methods()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

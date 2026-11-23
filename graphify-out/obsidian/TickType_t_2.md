@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/FreeRTOS.h"
+source_file: ""
 type: "code"
-community: "Community 1397"
-location: "L13"
+community: "test_wakeword_state/stubs/freertos/FreeRTOS.h"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1397
+  - community/test_wakeword_state/stubs/freertos/FreeRTOSh
 ---
 
 # TickType_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[xTaskGetTickCount()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1397
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/freertos/FreeRTOSh

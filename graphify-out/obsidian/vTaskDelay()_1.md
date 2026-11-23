@@ -1,18 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h"
 type: "code"
-community: "Community 1398"
+community: "test_wakeword_state/stubs/freertos/FreeRTOS.h"
 location: "L5"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1398
+  - community/test_wakeword_state/stubs/freertos/FreeRTOSh
 ---
 
 # vTaskDelay()
 
 ## Connections
 - [[TickType_t_3]] - `references` [EXTRACTED]
-- [[task.h_1]] - `contains` [EXTRACTED]
+- [[test_wakeword_statestubsfreertostask.h]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1398
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/freertos/FreeRTOSh

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Incident: Conduit/Hermes instability 2026-10-16"
+community: "test_scorecard_integrity.py"
 location: "L729"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Incident_Conduit/Hermes_instability_2026-10-16
+  - community/test_scorecard_integritypy
 ---
 
 # .test_initial_when_infected()
@@ -16,4 +16,4 @@ tags:
 - [[_clamav_infected()]] - `calls` [EXTRACTED]
 - [[_score_malware_defense()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Incident_Conduit/Hermes_instability_2026-10-16
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

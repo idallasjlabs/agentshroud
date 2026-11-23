@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # test_forward_stream.py
@@ -15,6 +15,7 @@ tags:
 - [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[Tests for POST forwardstream — the streaming voice pipeline. Covers the…]] - `rationale_for` [EXTRACTED]
 - [[_BlockingPipeline]] - `contains` [EXTRACTED]
 - [[_PassthroughPipeline]] - `contains` [EXTRACTED]
 - [[_aiter()]] - `contains` [EXTRACTED]
@@ -27,7 +28,9 @@ tags:
 - [[_sentences_from_deltas()]] - `imports` [EXTRACTED]
 - [[_target()]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_3]] - `imports` [EXTRACTED]
+- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - `contains` [EXTRACTED]
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - `contains` [EXTRACTED]
 - [[test_filtered_stream_redaction_applies_to_released_sentence()]] - `contains` [EXTRACTED]
@@ -54,4 +57,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `contains` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

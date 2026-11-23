@@ -1,24 +1,26 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 223"
+community: "TelegramAPIProxy"
 location: "L331"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/TelegramAPIProxy
 ---
 
 # _persist_groups()
 
 ## Connections
-- [[.add_member()]] - `calls` [EXTRACTED]
-- [[.create_group()]] - `calls` [EXTRACTED]
-- [[.delete_group()]] - `calls` [EXTRACTED]
-- [[.remove_member()]] - `calls` [EXTRACTED]
+- [[dot-add_member()]] - `calls` [EXTRACTED]
+- [[dot-create_group()]] - `calls` [EXTRACTED]
+- [[dot-delete_group()]] - `calls` [EXTRACTED]
+- [[dot-remove_member()]] - `calls` [EXTRACTED]
 - [[Group]] - `references` [EXTRACTED]
 - [[Write only custom groups to disk (auto-groups are derived at runtime).]] - `rationale_for` [EXTRACTED]
+- [[_local_linkgroup_handler()]] - `calls` [EXTRACTED]
+- [[_local_newgroup_handler()]] - `calls` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_223
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

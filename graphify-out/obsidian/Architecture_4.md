@@ -1,17 +1,19 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Community 470"
-location: "L30"
+community: "AgentShroud Docker Configuration"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_470
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Architecture
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Container Stack]] - `contains` [EXTRACTED]
+- [[Security Features (Implemented)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_470
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

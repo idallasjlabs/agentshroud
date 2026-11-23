@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 834"
+community: "web_config.py"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/web_configpy
 ---
 
 # WebProxyConfig.is_domain_denied(domain)
 
 ## Connections
-- [[Function Details_16]] - `contains` [EXTRACTED]
+- [[Function Details_37]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_834
+#graphify/document #graphify/EXTRACTED #community/web_configpy

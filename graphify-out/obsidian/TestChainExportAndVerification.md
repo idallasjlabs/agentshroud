@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Community 7"
+community: "asyncio"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/asyncio
 ---
 
 # TestChainExportAndVerification
 
 ## Connections
-- [[.test_query_filter_by_source()]] - `method` [EXTRACTED]
-- [[.test_query_pagination()]] - `method` [EXTRACTED]
-- [[.test_stats_correct()]] - `method` [EXTRACTED]
-- [[DataLedger]] - `uses` [INFERRED]
+- [[dot-test_query_filter_by_source()]] - `method` [EXTRACTED]
+- [[dot-test_query_pagination()]] - `method` [EXTRACTED]
+- [[dot-test_stats_correct()]] - `method` [EXTRACTED]
 - [[Export chain and re-verify.]] - `rationale_for` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/asyncio

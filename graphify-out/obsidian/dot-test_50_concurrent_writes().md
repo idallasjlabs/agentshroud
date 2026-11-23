@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # .test_50_concurrent_writes()
@@ -14,5 +14,7 @@ tags:
 ## Connections
 - [[50 concurrent write operations should all succeed.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentWrites]] - `method` [EXTRACTED]
+- [[asyncio_39]] - `references` [EXTRACTED]
+- [[write_entry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

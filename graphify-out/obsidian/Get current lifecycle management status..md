@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "MemoryLifecycleManager"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/MemoryLifecycleManager
 ---
 
 # Get current lifecycle management status.
 
 ## Connections
-- [[.get_lifecycle_status()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_lifecycle_status()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Community 665"
-location: "L67"
+community: "Function Details"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_665
+  - community/Function_Details
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_665
+#graphify/document #graphify/EXTRACTED #community/Function_Details

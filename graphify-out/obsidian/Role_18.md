@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-doctor.md"
+source_file: ".github/agents/i-ab.agent.md"
 type: "document"
-community: "Community 1010"
-location: "L10"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1010
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1010
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

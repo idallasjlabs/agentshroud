@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1021"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1021
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1021
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

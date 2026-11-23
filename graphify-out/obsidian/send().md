@@ -1,19 +1,17 @@
 ---
-source_file: "browser-extension/popup.js"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 464"
-location: "L15"
+community: "app"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/app
 ---
 
 # send()
 
 ## Connections
-- [[background.js]] - `references` [EXTRACTED]
-- [[popup.js]] - `contains` [EXTRACTED]
-- [[setStatus()]] - `calls` [EXTRACTED]
+- [[dot-test_email_send_routes_through_injectable_service()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/app

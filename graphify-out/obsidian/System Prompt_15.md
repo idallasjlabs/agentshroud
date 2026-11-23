@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/SKILL.md"
+source_file: ".opencode/agents/daedalus.md"
 type: "document"
-community: "Community 1974"
-location: "L87"
+community: "Daedalus — Concept Illustrator"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1974
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # System Prompt
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1974
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Diagram 12: Credential Flow
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Community Detection  Clustering]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Diagram 12 Credential Flow]] - image - docs/diagrams/images/diagram-12-credential-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

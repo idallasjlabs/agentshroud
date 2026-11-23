@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/bear-notes/SKILL.md"
+source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
 type: "document"
-community: "Community 860"
-location: "L102"
+community: "CodexBar CLI quick ref (usage + cost)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_860
+  - community/CodexBar_CLI_quick_ref_usage__cost
 ---
 
 # Notes
 
 ## Connections
-- [[Bear Notes]] - `contains` [EXTRACTED]
+- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_860
+#graphify/document #graphify/EXTRACTED #community/CodexBar_CLI_quick_ref_usage__cost

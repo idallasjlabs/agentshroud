@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 2345"
+community: "test_scanner_integration_coverage.py"
 location: "L715"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2345
+  - community/test_scanner_integration_coveragepy
 ---
 
 # TestIdentityAuth
 
 ## Connections
-- [[.test_full_stack()_1]] - `method` [EXTRACTED]
-- [[.test_missing_auth_module_zero()]] - `method` [EXTRACTED]
+- [[dot-test_full_stack()_1]] - `method` [EXTRACTED]
+- [[dot-test_missing_auth_module_zero()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2345
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

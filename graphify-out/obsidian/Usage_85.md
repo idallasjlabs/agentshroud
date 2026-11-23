@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Community 177"
+community: "Pull Request Generator (PR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Pull_Request_Generator_PR
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

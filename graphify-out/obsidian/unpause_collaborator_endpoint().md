@@ -1,22 +1,24 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L961"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # unpause_collaborator_endpoint()
 
 ## Connections
-- [[HTTPException]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Resume a paused contributor's bot access.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[unpause_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

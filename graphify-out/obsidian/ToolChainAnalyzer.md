@@ -1,64 +1,50 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # ToolChainAnalyzer
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_134]] - `method` [EXTRACTED]
-- [[._calculate_risk_score()]] - `method` [EXTRACTED]
-- [[._cleanup_old_sessions()_1]] - `method` [EXTRACTED]
-- [[._detect_chain_patterns()]] - `method` [EXTRACTED]
-- [[._load_custom_patterns()]] - `method` [EXTRACTED]
-- [[._load_default_patterns()]] - `method` [EXTRACTED]
-- [[._matches_source_pattern()]] - `method` [EXTRACTED]
-- [[._trigger_alert()_1]] - `method` [EXTRACTED]
-- [[.add_alert_callback()_2]] - `method` [EXTRACTED]
-- [[.analyze_tool_call()]] - `method` [EXTRACTED]
-- [[.analyzer()]] - `calls` [EXTRACTED]
-- [[.analyzer()_1]] - `calls` [EXTRACTED]
-- [[.analyzer()_2]] - `calls` [EXTRACTED]
-- [[.approve_pending_call()]] - `method` [EXTRACTED]
-- [[.get_global_stats()_1]] - `method` [EXTRACTED]
-- [[.get_session_stats()_1]] - `method` [EXTRACTED]
-- [[.sanitize_tool_params()]] - `method` [EXTRACTED]
-- [[.score_reversibility()]] - `method` [EXTRACTED]
-- [[.test_custom_patterns()_1]] - `calls` [EXTRACTED]
-- [[.test_disabled_analyzer()]] - `calls` [EXTRACTED]
-- [[.test_tool_chain_analyzer_instantiates()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[CorrelationSummary]] - `semantically_similar_to` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
-- [[Main tool chain analysis engine.      Tracks sequences of tool calls and identif]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_205]] - `method` [EXTRACTED]
+- [[dot-_calculate_risk_score()]] - `method` [EXTRACTED]
+- [[dot-_cleanup_old_sessions()_1]] - `method` [EXTRACTED]
+- [[dot-_detect_chain_patterns()]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `method` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `method` [EXTRACTED]
+- [[dot-_matches_source_pattern()]] - `method` [EXTRACTED]
+- [[dot-_trigger_alert()_1]] - `method` [EXTRACTED]
+- [[dot-add_alert_callback()_2]] - `method` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `method` [EXTRACTED]
+- [[dot-analyzer()]] - `calls` [EXTRACTED]
+- [[dot-analyzer()_1]] - `calls` [EXTRACTED]
+- [[dot-analyzer()_2]] - `calls` [EXTRACTED]
+- [[dot-approve_pending_call()]] - `method` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `method` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `method` [EXTRACTED]
+- [[dot-sanitize_tool_params()]] - `method` [EXTRACTED]
+- [[dot-score_reversibility()]] - `method` [EXTRACTED]
+- [[dot-test_custom_patterns()_1]] - `calls` [EXTRACTED]
+- [[dot-test_disabled_analyzer()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_chain_analyzer_instantiates()]] - `calls` [EXTRACTED]
+- [[Main tool chain analysis engine. Tracks sequences of tool calls and identifies…]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestParamSanitization]] - `uses` [INFERRED]
 - [[TestReversibilityScoring]] - `uses` [INFERRED]
-- [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
 - [[TestShellBleedPatterns]] - `uses` [INFERRED]
 - [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer._load_custom_patterns]] - `calls` [EXTRACTED]
-- [[ToolChainAnalyzer._load_default_patterns]] - `calls` [EXTRACTED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
-- [[tool_chain_analyzer()]] - `calls` [EXTRACTED]
+- [[tool_chain_analyzer()]] - `uses` [INFERRED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

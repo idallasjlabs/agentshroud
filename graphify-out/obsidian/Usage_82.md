@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 1915"
+community: "Mnemosyne — Retention Engineer"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

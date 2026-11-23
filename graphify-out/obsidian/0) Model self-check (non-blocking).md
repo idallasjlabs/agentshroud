@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/healthcheck/SKILL.md"
 type: "document"
-community: "Community 923"
+community: "Workflow (follow in order)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_923
+  - community/Workflow_follow_in_order
 ---
 
 # 0) Model self-check (non-blocking)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow (follow in order)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_923
+#graphify/document #graphify/EXTRACTED #community/Workflow_follow_in_order

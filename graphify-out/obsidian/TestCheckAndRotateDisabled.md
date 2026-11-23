@@ -1,23 +1,18 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 261"
+community: "asyncio"
 location: "L233"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_261
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # TestCheckAndRotateDisabled
 
 ## Connections
-- [[.test_scheduled_rotation_disabled_short_circuits()]] - `method` [EXTRACTED]
-- [[CredentialInfo]] - `uses` [INFERRED]
-- [[CredentialValidator]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[RotationStatus]] - `uses` [INFERRED]
+- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - `method` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/asyncio

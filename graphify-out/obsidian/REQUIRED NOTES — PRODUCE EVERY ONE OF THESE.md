@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/sav.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 297"
-location: "L105"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
@@ -35,4 +35,4 @@ tags:
 - [[`09 - DiagramsFull System Flowchart.md`]] - `contains` [EXTRACTED]
 - [[`09 - DiagramsStartup Flow Diagram.md`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_297
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

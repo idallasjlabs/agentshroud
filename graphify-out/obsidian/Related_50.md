@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 732"
-location: "L84"
+community: "llm_proxy.py"
+location: "L187"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_732
+  - community/llm_proxypy
 ---
 
 # Related
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_732
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

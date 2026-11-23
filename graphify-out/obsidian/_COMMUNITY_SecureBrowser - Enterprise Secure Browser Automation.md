@@ -1,55 +1,45 @@
 ---
 type: community
-cohesion: 0.05
-members: 40
+members: 32
 ---
 
 # SecureBrowser - Enterprise Secure Browser Automation
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 40 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[Deep Hardening Release]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Acknowledgments]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Breaking Changes and Migration]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Deployment and Operations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Executive Summary_3]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Installation and Upgrade Instructions]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Known Issues and Limitations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Latency Measurements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Performance Benchmarks]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Release Notes - AgentShroud v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Security Module Performance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Support and Resources]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Testing and Quality Assurance]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[Throughput Improvements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[What's New in v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[release-notes-v0.9.0]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚠️ Breaking Changes]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[⚡ Performance Optimizations]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏁 Quick Start]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏗️ Repository and Code Organization]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🏢 Enterprise Partners]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🐛 Known Issues]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[👥 Contributors]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📈 Future Enhancements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📊 Monitoring and Observability]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📋 System Requirements]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📖 Documentation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[📚 Comprehensive Documentation Suite]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔄 Migration Guide]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔍 Advanced Audit Capabilities]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Deep Security Hardening]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Research]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔒 Security Testing]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🔧 Troubleshooting]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🚀 Enhanced Deployment Options]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🛡️ Vulnerability Remediation]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤖 AI-Powered Security]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🤝 Community and Support]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
-- [[🧪 Test Coverage Excellence]] - document - docs/planning/v0.9/release-notes-v0.9.0.md
+- [[Action requires approval but none granted]] - document - skills/custom/securebrowser/SKILL.md
+- [[Browser timeout]] - document - skills/custom/securebrowser/SKILL.md
+- [[CAPTCHA detected]] - document - skills/custom/securebrowser/SKILL.md
+- [[Rate limit exceeded]] - document - skills/custom/securebrowser/SKILL.md
+- [[URL not in allowlist]] - document - skills/custom/securebrowser/SKILL.md
+- [[1. Always Specify Risk Level]] - document - skills/custom/securebrowser/SKILL.md
+- [[1Password Integration]] - document - skills/custom/securebrowser/SKILL.md
+- [[2. Use Allowlisting Liberally]] - document - skills/custom/securebrowser/SKILL.md
+- [[3. Take Screenshots for Audit Trail]] - document - skills/custom/securebrowser/SKILL.md
+- [[4. Handle CAPTCHAs Gracefully]] - document - skills/custom/securebrowser/SKILL.md
+- [[5. Never Extract Credentials]] - document - skills/custom/securebrowser/SKILL.md
+- [[Approval Integration]] - document - skills/custom/securebrowser/SKILL.md
+- [[Audit Logging]] - document - skills/custom/securebrowser/SKILL.md
+- [[Best Practices_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Click Element]] - document - skills/custom/securebrowser/SKILL.md
+- [[Core Security Principles]] - document - skills/custom/securebrowser/SKILL.md
+- [[Example Apple ID Creation (Semi-Automated)]] - document - skills/custom/securebrowser/SKILL.md
+- [[Extract Data]] - document - skills/custom/securebrowser/SKILL.md
+- [[Gateway Integration]] - document - skills/custom/securebrowser/SKILL.md
+- [[Integration with AgentShroud]] - document - skills/custom/securebrowser/SKILL.md
+- [[Limitations]] - document - skills/custom/securebrowser/SKILL.md
+- [[Navigate to URL]] - document - skills/custom/securebrowser/SKILL.md
+- [[Risk Levels]] - document - skills/custom/securebrowser/SKILL.md
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Architecture_1]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Configuration]] - document - skills/custom/securebrowser/SKILL.md
+- [[Security Guarantees]] - document - skills/custom/securebrowser/SKILL.md
+- [[See Also]] - document - skills/custom/securebrowser/SKILL.md
+- [[Take Screenshot]] - document - skills/custom/securebrowser/SKILL.md
+- [[Troubleshooting_6]] - document - skills/custom/securebrowser/SKILL.md
+- [[Usage_25]] - document - skills/custom/securebrowser/SKILL.md
+- [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

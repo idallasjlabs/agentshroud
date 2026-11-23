@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Community 251"
+community: "test_llm_proxy_failover.py"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/test_llm_proxy_failoverpy
 ---
 
 # test_per_request_opt_out_header_skips_failover()
 
 ## Connections
 - [[_call_proxy()]] - `calls` [EXTRACTED]
-- [[make_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[mock_forward()_3]] - `contains` [EXTRACTED]
+- [[mock_forward()_6]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_251
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 117"
+community: "Daedalus — Concept Illustrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Related Skills
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

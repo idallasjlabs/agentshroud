@@ -1,30 +1,30 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Community 282"
+community: "ControlCenter"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_282
+  - community/ControlCenter
 ---
 
 # ControlCenter
 
 ## Connections
-- [[.__init__()_228]] - `method` [EXTRACTED]
-- [[.clear_screen()]] - `method` [EXTRACTED]
-- [[.draw_approvals()]] - `method` [EXTRACTED]
-- [[.draw_dashboard()]] - `method` [EXTRACTED]
-- [[.draw_kill_switch()]] - `method` [EXTRACTED]
-- [[.draw_log()]] - `method` [EXTRACTED]
-- [[.draw_modules()]] - `method` [EXTRACTED]
-- [[.draw_ssh_hosts()]] - `method` [EXTRACTED]
-- [[.get_auth()]] - `method` [EXTRACTED]
-- [[.get_key()_1]] - `method` [EXTRACTED]
-- [[.make_api_request()]] - `method` [EXTRACTED]
-- [[.run()_12]] - `method` [EXTRACTED]
-- [[main()_38]] - `calls` [EXTRACTED]
-- [[text_control_center.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_172]] - `method` [EXTRACTED]
+- [[dot-clear_screen()]] - `method` [EXTRACTED]
+- [[dot-draw_approvals()]] - `method` [EXTRACTED]
+- [[dot-draw_dashboard()]] - `method` [EXTRACTED]
+- [[dot-draw_kill_switch()]] - `method` [EXTRACTED]
+- [[dot-draw_log()]] - `method` [EXTRACTED]
+- [[dot-draw_modules()]] - `method` [EXTRACTED]
+- [[dot-draw_ssh_hosts()]] - `method` [EXTRACTED]
+- [[dot-get_auth()]] - `method` [EXTRACTED]
+- [[dot-get_key()_1]] - `method` [EXTRACTED]
+- [[dot-make_api_request()]] - `method` [EXTRACTED]
+- [[dot-run()_8]] - `method` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
+- [[text_control_center.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_282
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

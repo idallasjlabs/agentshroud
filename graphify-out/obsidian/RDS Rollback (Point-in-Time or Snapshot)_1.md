@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-production/SKILL.md"
+source_file: ".omp/agents/i-production.md"
 type: "document"
-community: "Community 545"
-location: "L87"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L88"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_545
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # RDS Rollback (Point-in-Time or Snapshot)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 MITIGATE (Rollback First!)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_545
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

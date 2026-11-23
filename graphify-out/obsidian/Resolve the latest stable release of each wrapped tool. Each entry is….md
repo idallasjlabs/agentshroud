@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "discover_upstream_versions.py"
 location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/discover_upstream_versionspy
 ---
 
 # Resolve the latest stable release of each wrapped tool. Each entry is…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[discover()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy

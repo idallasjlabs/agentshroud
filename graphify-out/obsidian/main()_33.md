@@ -1,18 +1,19 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
 type: "code"
-community: "Community 382"
-location: "L32"
+community: "mcp_oauth_preflight.py"
+location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/mcp_oauth_preflightpy
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[cmd_oauth()]] - `calls` [EXTRACTED]
+- [[cmd_reachability()]] - `calls` [EXTRACTED]
+- [[mcp_oauth_preflight.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy

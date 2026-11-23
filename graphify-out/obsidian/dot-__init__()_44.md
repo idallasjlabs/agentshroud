@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_a2a_proxy.py"
-location: "L49"
+community: "test_soc_router_coverage.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_14]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[_Svc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

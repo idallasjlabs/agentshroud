@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "Community 147"
+community: "PIIConfig"
 location: "L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/PIIConfig
 ---
 
 # Closed <system-reminder> block is removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_system_reminder_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_147
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

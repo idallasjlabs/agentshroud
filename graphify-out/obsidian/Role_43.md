@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/SKILL.md"
+source_file: ".github/agents/i-session-prompt.agent.md"
 type: "document"
-community: "Community 1993"
-location: "L8"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1993
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1993
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

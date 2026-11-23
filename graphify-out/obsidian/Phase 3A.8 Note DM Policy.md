@@ -1,18 +1,17 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Community 478"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_478
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # Phase 3A.8 Note: DM Policy
 
 ## Connections
-- [[9. Remaining work]] - `contains` [EXTRACTED]
 - [[Remaining Work]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_478
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

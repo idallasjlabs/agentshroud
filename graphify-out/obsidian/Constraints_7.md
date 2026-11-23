@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/SKILL.md"
+source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Community 966"
-location: "L48"
+community: "Remediation"
+location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_966
+  - community/Remediation
 ---
 
 # Constraints
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_7]] - `contains` [EXTRACTED]
+- [[Wire the Approval Queue to enforce mode for high-risk tool calls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_966
+#graphify/document #graphify/EXTRACTED #community/Remediation

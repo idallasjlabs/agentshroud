@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/access-control-matrix.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 204"
-location: "L3"
+community: "API Keys Setup Guide"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_204
+  - community/API_Keys_Setup_Guide
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Access Control Matrix]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_204
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

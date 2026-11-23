@@ -1,21 +1,17 @@
 ---
 source_file: "docs/planning/v1.2/v1.2.0-master-plan.md"
 type: "document"
-community: "Community 387"
-location: "L30"
+community: "Workstream E — Blue + red team security scan, both bots"
+location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_387
+  - community/Workstream_E__Blue__red_team_security_scan_both_bots
 ---
 
 # Intent
 
 ## Connections
-- [[Workstream A — Groups & Teamwork in OpenClaw]] - `contains` [EXTRACTED]
-- [[Workstream A Groups and Teamwork in OpenClaw]] - `contains` [EXTRACTED]
-- [[Workstream C Full Local-Model Parity (Both Bots)]] - `contains` [EXTRACTED]
-- [[Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]] - `contains` [EXTRACTED]
-- [[Workstream E Blue and Red Team Security Scan (Both Bots)]] - `contains` [EXTRACTED]
+- [[Workstream E — Blue + red team security scan, both bots]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_387
+#graphify/document #graphify/EXTRACTED #community/Workstream_E__Blue__red_team_security_scan_both_bots

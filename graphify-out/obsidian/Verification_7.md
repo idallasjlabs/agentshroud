@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 609"
-location: "L285"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_609
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Verification
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_609
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

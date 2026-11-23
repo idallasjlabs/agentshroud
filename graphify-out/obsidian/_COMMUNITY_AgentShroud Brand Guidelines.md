@@ -1,49 +1,27 @@
 ---
 type: community
-cohesion: 0.06
-members: 34
+members: 14
 ---
 
 # AgentShroud Brand Guidelines
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 34 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[1. Skills Installation (`.openclawskills`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[2. Conversation Memory (`.openclawMEMORY.md`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[3. Workspace Files (`workspace`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[4. npm Cache (`.npm`, `.cache`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[5. Temporary Files (`tmp`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[6. Session Configuration (`.config`, `.local`)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Answer to Your Question]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Bind Mount vs Docker Volume]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Can We Use ONLY a Shared Folder]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Configuration_2]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Docker Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Current Location]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[For Read-Only to Work]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Goals]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[How to Access Workspace Files]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Minimum Required Configuration]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[OPENCLAW_WRITE_REQUIREMENTS]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 1 Docker Volume (Current Setup - Recommended)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option 2 Bind Mount (Alternative - More Accessible)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option A Docker Volume (Current)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Option B Bind Mount (Easier for You)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Recommended Configuration for Your Use Case]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Summary What the Bot Needs to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[TL;DR]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does OpenClaw Actually Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What Does the Bot NOT Need to Write]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What OpenClaw Writes During Normal Operation]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[What You Can Do]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[Your Shared Folder The Workspace]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Persistent Volumes (Data Survives Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[✅ Temporary Filesystems (Cleared on Container Restart)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ Currently Missing (Would Break Read-Only)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ NO - Here's What Would Break]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
-- [[❌ System Directories (Read-Only in Production)]] - document - docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md
+- [[AgentShroud Brand Guidelines]] - document - branding/README.md
+- [[Available Formats]] - document - branding/README.md
+- [[Brand Colors]] - document - branding/README.md
+- [[Color Palette]] - document - branding/README.md
+- [[Directory Structure]] - document - branding/README.md
+- [[Do's]] - document - branding/README.md
+- [[Don'ts]] - document - branding/README.md
+- [[File Formats]] - document - branding/README.md
+- [[Logo Usage]] - document - branding/README.md
+- [[Logos]] - document - branding/README.md
+- [[Need Help]] - document - branding/README.md
+- [[Primary Color]] - document - branding/README.md
+- [[Typography]] - document - branding/README.md
+- [[Usage Guidelines]] - document - branding/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,3 +29,9 @@ members: 34
 TABLE source_file, type FROM #community/AgentShroud_Brand_Guidelines
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Primary Logo]]
+
+## Top bridge nodes
+- [[AgentShroud Brand Guidelines]] - degree 8, connects to 1 community

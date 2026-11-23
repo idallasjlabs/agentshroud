@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-bs/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 90"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Usage
 
 ## Connections
-- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

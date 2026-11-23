@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "sidecar.py"
+community: "._run_proxy"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/_run_proxy
 ---
 
 # ._run_proxy()
@@ -15,11 +15,11 @@ tags:
 - [[dot-test_decoded_body_drops_upstream_encoding_and_recomputes_length()]] - `calls` [EXTRACTED]
 - [[dot-test_multiple_set_cookie_headers_are_not_folded()]] - `calls` [EXTRACTED]
 - [[TestHermesDashboardProxyHeaders]] - `method` [EXTRACTED]
-- [[__aenter__()]] - `contains` [EXTRACTED]
-- [[__aexit__()]] - `contains` [EXTRACTED]
-- [[__init__()_3]] - `contains` [EXTRACTED]
+- [[__aenter__()_7]] - `contains` [EXTRACTED]
+- [[__aexit__()_7]] - `contains` [EXTRACTED]
+- [[__init__()_21]] - `contains` [EXTRACTED]
 - [[_body()]] - `indirect_call` [INFERRED]
 - [[multi_items()]] - `contains` [EXTRACTED]
-- [[request()]] - `contains` [EXTRACTED]
+- [[request()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sidecarpy
+#graphify/code #graphify/EXTRACTED #community/_run_proxy

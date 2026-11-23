@@ -12,6 +12,7 @@ tags:
 # .test_extract_username_slack_fallback_to_user_id()
 
 ## Connections
+- [[dot-_extract_username()]] - `calls` [EXTRACTED]
 - [[TestWebhookReceiverSlackExtraction]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebhookReceiver

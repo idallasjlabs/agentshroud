@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
 type: "document"
-community: "Community 354"
+community: "LOW — Informational"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_354
+  - community/LOW__Informational
 ---
 
 # HIGH — Should Fix Before Release
@@ -18,4 +18,4 @@ tags:
 - [[H7 Error Messages Disclose Internal Details]] - `contains` [EXTRACTED]
 - [[New Findings]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_354
+#graphify/document #graphify/EXTRACTED #community/LOW__Informational

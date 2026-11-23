@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_callback_stale.py"
 type: "code"
-community: "Community 996"
+community: "test_egress_callback_stale.py"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_996
+  - community/test_egress_callback_stalepy
 ---
 
 # test_edit_decision_message_stale_logs_debug_not_error()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
+- [[EgressTelegramNotifier]] - `uses` [INFERRED]
 - [[_stale_edit_err()]] - `calls` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[test_egress_callback_stale.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_996
+#graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy

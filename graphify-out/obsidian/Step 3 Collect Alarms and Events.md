@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/eightd-root-cause-analysis.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 765"
-location: "L151"
+community: "The 8D Investigation Process"
+location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_765
+  - community/The_8D_Investigation_Process
 ---
 
 # Step 3: Collect Alarms and Events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[D2 — Problem Description (Data Collection & Characterization)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_765
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

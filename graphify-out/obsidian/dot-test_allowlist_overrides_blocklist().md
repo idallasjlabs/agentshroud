@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "AgentShroud Security Architecture"
+community: "DNSBlocklist"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/DNSBlocklist
 ---
 
 # .test_allowlist_overrides_blocklist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

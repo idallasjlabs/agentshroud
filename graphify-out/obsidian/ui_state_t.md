@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: ""
 type: "code"
-community: "Community 378"
-location: "L136"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # ui_state_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[ui_update()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/app_mainc

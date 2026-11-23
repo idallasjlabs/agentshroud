@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 284"
+community: "AgentShroud Device Pairing Management"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # AgentShroud Device Pairing Management
@@ -15,18 +15,18 @@ tags:
 - [[Approving Device Pairing Requests]] - `contains` [EXTRACTED]
 - [[Common Scenarios]] - `contains` [EXTRACTED]
 - [[DEVICE_PAIRING]] - `contains` [EXTRACTED]
-- [[File Locations_2]] - `contains` [EXTRACTED]
+- [[File Locations]] - `contains` [EXTRACTED]
 - [[Finding Pending Pairing Requests]] - `contains` [EXTRACTED]
 - [[How Device Pairing Works]] - `contains` [EXTRACTED]
-- [[Integration with AgentShroud Workflow_1]] - `contains` [EXTRACTED]
+- [[Integration with AgentShroud Workflow]] - `contains` [EXTRACTED]
 - [[Listing Paired Devices]] - `contains` [EXTRACTED]
-- [[Overview_20]] - `contains` [EXTRACTED]
+- [[Overview_12]] - `contains` [EXTRACTED]
 - [[Quick Reference Commands]] - `contains` [EXTRACTED]
 - [[Rejecting Pairing Requests]] - `contains` [EXTRACTED]
 - [[Revoking Device Access]] - `contains` [EXTRACTED]
-- [[Security Best Practices_8]] - `contains` [EXTRACTED]
+- [[Security Best Practices]] - `contains` [EXTRACTED]
 - [[Security Notes_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_47]] - `contains` [EXTRACTED]
+- [[Troubleshooting_16]] - `contains` [EXTRACTED]
 - [[Why Device Pairing Matters]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

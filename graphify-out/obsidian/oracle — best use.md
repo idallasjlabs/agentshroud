@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 771"
+community: "oracle — best use"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_771
+  - community/oracle__best_use
 ---
 
 # oracle — best use
@@ -18,9 +18,9 @@ tags:
 - [[Golden path]] - `contains` [EXTRACTED]
 - [[Main use case (browser, GPT‑5.2 Pro)]] - `contains` [EXTRACTED]
 - [[Prompt template (high signal)]] - `contains` [EXTRACTED]
-- [[SKILL_233]] - `contains` [EXTRACTED]
-- [[Safety_8]] - `contains` [EXTRACTED]
+- [[Safety]] - `contains` [EXTRACTED]
 - [[Sessions + slugs]] - `contains` [EXTRACTED]
+- [[openclaworacleSKILL]] - `contains` [EXTRACTED]
 - [[“Exhaustive prompt” restoration pattern]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_771
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

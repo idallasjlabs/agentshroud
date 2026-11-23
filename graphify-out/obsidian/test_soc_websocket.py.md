@@ -1,23 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "Community 6"
+community: "soc/models.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/modelspy
 ---
 
 # test_soc_websocket.py
 
 ## Connections
 - [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEvent]] - `contains` [EXTRACTED]
 - [[TestSOCWebSocketHandlerImport]] - `contains` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `contains` [EXTRACTED]
+- [[Tests for gatewaysocwebsocket.py — SOCWebSocketHandler unit tests.]] - `rationale_for` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

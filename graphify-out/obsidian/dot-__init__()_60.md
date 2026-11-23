@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "A2AMethod (2)"
-location: "L122"
+community: "MCPAuditTrail"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod_2
+  - community/MCPAuditTrail
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod_2
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

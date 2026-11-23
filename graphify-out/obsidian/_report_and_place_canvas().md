@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "Community 378"
+community: "app_main.c"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # _report_and_place_canvas()
@@ -16,5 +16,6 @@ tags:
 - [[lv_obj_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[ui_face_init()]] - `calls` [EXTRACTED]
+- [[vt_remote_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/app_mainc

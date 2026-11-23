@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L1390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # Build normalized scanner summary for SOC/dashboard telemetry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_scanner_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

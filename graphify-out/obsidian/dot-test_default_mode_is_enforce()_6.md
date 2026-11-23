@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L56"
+community: "lifespan.py"
+location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/lifespanpy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[Default mode is enforce after v0.8.0 enforcement hardening._2]] - `rationale_for` [EXTRACTED]
-- [[TestDNSFilterConfig]] - `method` [EXTRACTED]
+- [[TestEnforcementMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

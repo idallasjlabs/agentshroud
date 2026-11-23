@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "ingest_api/config.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/ingest_api/configpy
 ---
 
 # .register_bots()
 
 ## Connections
-- [[AgentTarget_1]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[Populate routing targets from the bots registry.          Iterates all BotConfig]] - `rationale_for` [EXTRACTED]
+- [[Populate routing targets from the bots registry. Iterates all BotConfig entries…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

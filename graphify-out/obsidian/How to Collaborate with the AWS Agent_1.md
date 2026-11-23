@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 790"
-location: "L437"
+community: "The 8D Investigation Process"
+location: "L534"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_790
+  - community/The_8D_Investigation_Process
 ---
 
 # How to Collaborate with the AWS Agent
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Agent Interaction Protocol_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_790
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

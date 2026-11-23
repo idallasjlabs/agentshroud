@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".cursor/agents/i-session-prompt.md"
 type: "document"
-community: "Community 745"
-location: "L21"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 — Inject into All Three LLMs_1]] - `contains` [EXTRACTED]
 - [[Step 6 — Confirm_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

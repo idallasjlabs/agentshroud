@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".opencode/agents/i-session-prompt.md"
 type: "document"
-community: "Community 313"
-location: "L28"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_313
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

@@ -1,17 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
+source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "Community 2090"
-location: "L44"
+community: "security-report-retention.sh"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2090
+  - community/security-report-retentionsh
 ---
 
 # log()
 
 ## Connections
-- [[test_sunday_upgrade_head_guard.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh]] - `defines` [EXTRACTED]
+- [[security-report-retention.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2090
+#graphify/code #graphify/EXTRACTED #community/security-report-retentionsh

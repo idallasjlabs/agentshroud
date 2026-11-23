@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "PromptGuard"
-location: "L215"
+community: "MetadataGuard"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/MetadataGuard
 ---
 
 # .guard()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[TestReanchorDelimiters]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestDocumentTagging]] - `method` [EXTRACTED]
+- [[fixture_53]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

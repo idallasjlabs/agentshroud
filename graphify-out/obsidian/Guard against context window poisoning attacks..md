@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "rationale"
-community: "Community 0"
+community: "ContextGuard"
 location: "L68"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/ContextGuard
 ---
 
 # Guard against context window poisoning attacks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContextGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

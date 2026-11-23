@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "ScanResult"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/ScanResult
 ---
 
 # .scan_file()
@@ -17,8 +17,8 @@ tags:
 - [[dot-scan_skill_tree()]] - `calls` [EXTRACTED]
 - [[Finding]] - `calls` [EXTRACTED]
 - [[Scan one skill artefact (``name`` = relative path, ``content`` = text).]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_4]] - `references` [EXTRACTED]
-- [[SkillGuard_1]] - `method` [EXTRACTED]
+- [[ScanResult_2]] - `calls` [EXTRACTED]
+- [[SkillGuard]] - `method` [EXTRACTED]
 - [[SkillScanError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ScanResult

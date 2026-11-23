@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 72"
+community: "DNSFilterConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/DNSFilterConfig
 ---
 
 # strict_filter()
 
 ## Connections
-- [[DNSFilter]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `uses` [INFERRED]
+- [[fixture_34]] - `references` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

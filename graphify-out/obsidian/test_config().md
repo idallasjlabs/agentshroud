@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L91"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_7
+  - graphify/INFERRED
+  - community/ingest_api/configpy
 ---
 
 # test_config()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[Create a test configuration      Uses regex fallback for PII (no spaCy model req]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_2]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[PIIConfig]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[Create a test configuration Uses regex fallback for PII (no spaCy model…]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
 - [[conftest.py]] - `contains` [EXTRACTED]
+- [[fixture_60]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

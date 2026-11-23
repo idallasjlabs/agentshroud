@@ -1,24 +1,21 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "Community 431"
-location: "L20"
+community: "lifespan.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/lifespanpy
 ---
 
 # FilterResult
 
 ## Connections
-- [[.filter_response()_2]] - `references` [EXTRACTED]
-- [[.scan_command_injection()]] - `references` [EXTRACTED]
-- [[Result from XML leak filtering.]] - `rationale_for` [EXTRACTED]
-- [[TestCommandInjectionScan]] - `uses` [INFERRED]
-- [[TestXMLLeakFilter]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `references` [EXTRACTED]
-- [[test_xml_leak_filter.py]] - `imports` [EXTRACTED]
-- [[xml_leak_filter.py]] - `contains` [EXTRACTED]
+- [[dot-filter_response()_2]] - `calls` [EXTRACTED]
+- [[Result of filtering agent response content.]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[outbound_filter.py]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_431
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

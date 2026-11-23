@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L90"
+community: "ResourceGuard"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `references` [EXTRACTED]
-- [[IsolationVerifier]] - `method` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
+- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/agentshroud-manage.sh"
+source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "Community 1270"
-location: "L11"
+community: "killswitch.sh"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1270
+  - community/killswitchsh
 ---
 
 # usage()
 
 ## Connections
-- [[agentshroud-manage.sh]] - `defines` [EXTRACTED]
-- [[agentshroud-manage.sh script]] - `calls` [EXTRACTED]
+- [[killswitch.sh]] - `defines` [EXTRACTED]
+- [[killswitch.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1270
+#graphify/code #graphify/EXTRACTED #community/killswitchsh

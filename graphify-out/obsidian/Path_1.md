@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/profiles.py"
+source_file: ""
 type: "code"
-community: "Community 80"
-location: "L89"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/triage-cve-mitigationspy
 ---
 
 # Path
 
 ## Connections
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[_parse()]] - `references` [EXTRACTED]
-- [[load_profiles()]] - `references` [EXTRACTED]
-- [[test_command_center_has_agents_and_edge_tabs()]] - `calls` [EXTRACTED]
-- [[test_command_center_shows_deployment_and_connection()]] - `calls` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

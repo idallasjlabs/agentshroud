@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "Community 668"
-location: "L12"
+community: "AWS Cloud Management & FinOps"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_668
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Purpose
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_668
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

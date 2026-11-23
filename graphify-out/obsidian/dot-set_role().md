@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "GroupRole"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/GroupRole
 ---
 
 # .set_role()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRoleResolver]] - `method` [EXTRACTED]
 - [[Set or update the role for a user in a specific group.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/GroupRole

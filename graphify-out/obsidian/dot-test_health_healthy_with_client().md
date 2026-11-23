@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "egress_filter.py"
+community: "health_check"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/health_check
 ---
 
 # .test_health_healthy_with_client()
@@ -15,4 +15,4 @@ tags:
 - [[Health endpoint reports healthy when OpenAI client is available.]] - `rationale_for` [EXTRACTED]
 - [[TestHealthCheck]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/health_check

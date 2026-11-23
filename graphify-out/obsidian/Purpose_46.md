@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/i-data/README.md"
+source_file: "docker/config/openclaw/skills/i-data/README.md"
 type: "document"
-community: "Community 90"
+community: "Data Validation (DATA-VAL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Data_Validation_DATA-VAL
 ---
 
 # Purpose
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Data_Validation_DATA-VAL

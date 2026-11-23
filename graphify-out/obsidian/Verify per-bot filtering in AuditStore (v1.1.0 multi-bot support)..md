@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Community 254"
+community: "asyncio"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/asyncio
 ---
 
 # Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditStoreBotId]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

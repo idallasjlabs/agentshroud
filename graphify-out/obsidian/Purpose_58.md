@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Community 1216"
-location: "L6"
+community: "apply-patches.js"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1216
+  - community/apply-patchesjs
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_7]] - `contains` [EXTRACTED]
+- [[apply-patches.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1216
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

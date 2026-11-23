@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "TestFetchDockerhubTagsUsesCurl"
 location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/TestFetchDockerhubTagsUsesCurl
 ---
 
 # ._fake_run()
@@ -18,4 +18,4 @@ tags:
 - [[TestFetchDockerhubTagsUsesCurl]] - `method` [EXTRACTED]
 - [[run()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/TestFetchDockerhubTagsUsesCurl

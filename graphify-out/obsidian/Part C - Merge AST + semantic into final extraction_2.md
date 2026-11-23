@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 375"
+community: "What You Must Do When Invoked"
 location: "L334"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Part C - Merge AST + semantic into final extraction
 
 ## Connections
-- [[Step 3 - Extract entities and relationships_7]] - `contains` [EXTRACTED]
+- [[Step 3 - Extract entities and relationships_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

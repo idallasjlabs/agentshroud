@@ -1,29 +1,27 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # Publish SecureBrowser to ClawHub - Step-by-Step Guide
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[Configuration  Environment Variables_19]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Function Details_35]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Key Classes  Functions_37]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_agent_server_access(agent_id, server_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_all(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.check_rate_limit(agent_id, server_name, tool_name)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.get_trust_level(agent_id)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[MCPPermissionManager.infer_permission_level(tool_name, server_config)]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Purpose_137]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Related_41]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Responsibilities_39]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[Trust Level Reference]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[mcp_permissions.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
-- [[mcp_permissions.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md
+- [[Immediate (Day 1)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Monitor Installations]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Month 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[View Skill Stats]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[Week 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[✅ Success Indicators]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎉 You're Done!]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🎯 Marketing Checklist]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[💬 Skill Listing Template]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📊 Track Success]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[📦 What We Built]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🔄 Update Published Skill]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[🚀 Quick Publish (3 Commands)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,3 +29,12 @@ members: 14
 TABLE source_file, type FROM #community/Publish_SecureBrowser_to_ClawHub_-_Step-by-Step_Guide
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_BROWSER_FETCH_SKILL]]
+- 1 edge to [[_COMMUNITY_📋 Detailed Step-by-Step]]
+- 1 edge to [[_COMMUNITY_🆘 Troubleshooting]]
+- 1 edge to [[_COMMUNITY_🎨 Customize Skill Page (Optional)]]
+
+## Top bridge nodes
+- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 4 communities

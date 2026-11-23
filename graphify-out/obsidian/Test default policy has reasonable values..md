@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 122"
+community: "KeyRotationManager"
 location: "L51"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/KeyRotationManager
 ---
 
 # Test default policy has reasonable values.
 
 ## Connections
-- [[.test_default_policy_values()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_policy_values()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_122
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

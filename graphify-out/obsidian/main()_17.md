@@ -1,23 +1,19 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "Community 420"
-location: "L300"
+community: "classify"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/classify
 ---
 
 # main()
 
 ## Connections
-- [[.to_dict()_15]] - `calls` [EXTRACTED]
-- [[_print_plan()]] - `calls` [EXTRACTED]
-- [[apply_remediation()]] - `calls` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[load_registry()]] - `calls` [EXTRACTED]
-- [[plan_remediation()]] - `calls` [EXTRACTED]
-- [[read_pin()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_1]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_420
+#graphify/code #graphify/EXTRACTED #community/classify

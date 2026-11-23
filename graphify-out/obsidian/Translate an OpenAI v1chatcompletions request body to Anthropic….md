@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/anthropic_openai_translator.py"
+type: "rationale"
+community: "test_anthropic_openai_translator.py"
+location: "L242"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/test_anthropic_openai_translatorpy
+---
+
+# Translate an OpenAI /v1/chat/completions request body to Anthropic…
+
+## Connections
+- [[openai_to_anthropic_request()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

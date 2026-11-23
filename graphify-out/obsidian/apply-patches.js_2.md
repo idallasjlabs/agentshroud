@@ -1,23 +1,48 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
-type: "document"
-community: "Community 826"
-location: "L10"
+source_file: "docker/config/openclaw/apply-patches.js"
+type: "code"
+community: "apply-patches.js"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/apply-patchesjs
 ---
 
 # apply-patches.js
 
 ## Connections
-- [[Behavior]] - `contains` [EXTRACTED]
-- [[Patches Applied]] - `contains` [EXTRACTED]
-- [[Purpose_120]] - `contains` [EXTRACTED]
-- [[Related Notes_6]] - `contains` [EXTRACTED]
-- [[Usage_138]] - `contains` [EXTRACTED]
-- [[Why Required]] - `contains` [EXTRACTED]
-- [[apply-patches.js_1]] - `contains` [EXTRACTED]
+- [[COLLABORATOR_IDS]] - `contains` [EXTRACTED]
+- [[COLLAB_LOCAL_INFO_ONLY]] - `contains` [EXTRACTED]
+- [[GROUP_CHAT_IDS]] - `contains` [EXTRACTED]
+- [[IMPORTANT Do NOT add explicit user IDs alongside ''. OpenClaw's…]] - `rationale_for` [EXTRACTED]
+- [[MODEL_MODE]] - `contains` [EXTRACTED]
+- [[_COLLAB_TOOL_DENY]] - `contains` [EXTRACTED]
+- [[_COLLAB_TOOL_DENY_FULL_ACCESS]] - `contains` [EXTRACTED]
+- [[_GROUP_TOOL_DENY]] - `contains` [EXTRACTED]
+- [[_is_global_full_access]] - `contains` [EXTRACTED]
+- [[_rawGroupIds]] - `contains` [EXTRACTED]
+- [[_resolveCollabDenyList()]] - `contains` [EXTRACTED]
+- [[_resolveCollabToolConfig()]] - `contains` [EXTRACTED]
+- [[_userOverrides]] - `contains` [EXTRACTED]
+- [[allAllowedOrigins]] - `contains` [EXTRACTED]
+- [[allowedOrigins]] - `contains` [EXTRACTED]
+- [[cIdx]] - `contains` [EXTRACTED]
+- [[config_5]] - `contains` [EXTRACTED]
+- [[desiredAllowFrom]] - `contains` [EXTRACTED]
+- [[desiredProvider]] - `contains` [EXTRACTED]
+- [[extraOrigins]] - `contains` [EXTRACTED]
+- [[fs_6]] - `contains` [EXTRACTED]
+- [[gpIdx]] - `contains` [EXTRACTED]
+- [[hasChannelWideFallback]] - `contains` [EXTRACTED]
+- [[hasMain]] - `contains` [EXTRACTED]
+- [[hasOwnerBinding]] - `contains` [EXTRACTED]
+- [[missingOrigins]] - `contains` [EXTRACTED]
+- [[missingProxies]] - `contains` [EXTRACTED]
+- [[path_42]] - `contains` [EXTRACTED]
+- [[providerModels]] - `contains` [EXTRACTED]
+- [[staleGroupBindings]] - `contains` [EXTRACTED]
+- [[trustedProxies]] - `contains` [EXTRACTED]
+- [[{ profile _genericProfile, deny _genericCollabDeny }]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_826
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

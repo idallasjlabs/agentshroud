@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "UserSessionManager (2) (9)"
+community: "_make_sanitizer"
 location: "L558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_9
+  - community/_make_sanitizer
 ---
 
 # .test_collaborator_not_authorized_command_text_is_normalized_json()
 
 ## Connections
 - [[Collaborator auth-denial command text should map to protected scope notice.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_9
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

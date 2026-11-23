@@ -1,19 +1,19 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 1006"
+community: "server.py"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/serverpy
 ---
 
 # _warm()
 
 ## Connections
-- [[Best-effort model warm-up.      Preloading the STT model and TTS pipeline at sta]] - `rationale_for` [EXTRACTED]
+- [[Best-effort model warm-up. Preloading the STT model and TTS pipeline at startup…]] - `rationale_for` [EXTRACTED]
 - [[_lifespan()]] - `indirect_call` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/serverpy

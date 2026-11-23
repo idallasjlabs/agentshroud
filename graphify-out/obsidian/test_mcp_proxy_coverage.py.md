@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 132"
+community: "test_mcp_proxy_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_132
+  - community/test_mcp_proxy_coveragepy
 ---
 
 # test_mcp_proxy_coverage.py
 
 ## Connections
 - [[ConnectionPool]] - `imports` [EXTRACTED]
+- [[Coverage tests for gatewayproxymcp_proxy.py. Targets the branches not…]] - `rationale_for` [EXTRACTED]
 - [[FakeApprovalQueue]] - `contains` [EXTRACTED]
 - [[FakeConn]] - `contains` [EXTRACTED]
 - [[FakeProcess]] - `contains` [EXTRACTED]
@@ -43,8 +44,11 @@ tags:
 - [[TestStdioConnection]] - `contains` [EXTRACTED]
 - [[make_call()]] - `contains` [EXTRACTED]
 - [[make_config()]] - `contains` [EXTRACTED]
-- [[make_proxy()_1]] - `contains` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `shares_data_with` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `conceptually_related_to` [INFERRED]
+- [[make_proxy()]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_132
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy

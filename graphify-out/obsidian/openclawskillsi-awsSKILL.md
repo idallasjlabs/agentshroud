@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "The 8D Investigation Process (2)"
+community: "AWS Cloud Management & FinOps Agent"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process_2
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # openclaw/skills/i-aws/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process_2
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

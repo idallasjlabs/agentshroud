@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 833"
-location: "L23"
+community: "version_routes.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_833
+  - community/version_routespy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_833
+#graphify/document #graphify/EXTRACTED #community/version_routespy

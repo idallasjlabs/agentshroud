@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: ".agents/agents/sf.md"
 type: "document"
-community: "Community 1071"
-location: "L42"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

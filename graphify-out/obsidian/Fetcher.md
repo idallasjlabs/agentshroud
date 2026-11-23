@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: ""
 type: "code"
-community: "Community 57"
-location: "L71"
+community: "make_httpx_fetcher"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_57
+  - graphify/EXTRACTED
+  - community/make_httpx_fetcher
 ---
 
 # Fetcher
 
 ## Connections
-- [[.__init__()_74]] - `references` [EXTRACTED]
-- [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[dot-__init__()_147]] - `references` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

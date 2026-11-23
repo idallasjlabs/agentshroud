@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 346"
+community: "AgentShroud Prerequisites"
 location: "L490"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_346
+  - community/AgentShroud_Prerequisites
 ---
 
 # 🔐 Security Requirements
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
 - [[Network Security]] - `contains` [EXTRACTED]
-- [[Secrets Management]] - `contains` [EXTRACTED]
+- [[Secrets Management_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_346
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 784"
+community: "event_bus.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_784
+  - community/event_buspy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[config.py_3]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_784
+#graphify/document #graphify/EXTRACTED #community/event_buspy

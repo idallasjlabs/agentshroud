@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "TrustManager"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TrustManager
 ---
 
 # .is_action_allowed()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_trust()]] - `calls` [EXTRACTED]
 - [[Check if an agent's trust level allows a given action.]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

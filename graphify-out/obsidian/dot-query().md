@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "_make_proxy()"
+community: "ingest_api/config.py"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ingest_api/configpy
 ---
 
 # .query()
 
 ## Connections
 - [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerEntry_1]] - `calls` [EXTRACTED]
-- [[LedgerQueryResponse_1]] - `references` [EXTRACTED]
-- [[Query ledger entries with pagination and filters          Args             page]] - `rationale_for` [EXTRACTED]
+- [[LedgerQueryResponse]] - `references` [EXTRACTED]
+- [[Query ledger entries with pagination and filters Args page Page number…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ps.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 921"
-location: "L137"
+community: "Pre-Deployment Checklist"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/Pre-Deployment_Checklist
 ---
 
 # Emergency Stop (P1 Incidents Only)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Service Control Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_921
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

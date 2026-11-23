@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L144"
+community: "ApprovalRequest"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ApprovalRequest
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[Any_8]] - `references` [EXTRACTED]
+- [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

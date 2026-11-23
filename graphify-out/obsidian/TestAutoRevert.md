@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 92"
+community: "test_web_api_coverage.py"
 location: "L174"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_92
+  - graphify/EXTRACTED
+  - community/test_web_api_coveragepy
 ---
 
 # TestAutoRevert
 
 ## Connections
-- [[.test_auto_revert_restores_enforce()]] - `method` [EXTRACTED]
-- [[.test_revert_task_created_on_put()]] - `method` [EXTRACTED]
-- [[.test_second_put_cancels_previous_task()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[dot-test_auto_revert_restores_enforce()]] - `method` [EXTRACTED]
+- [[dot-test_revert_task_created_on_put()]] - `method` [EXTRACTED]
+- [[dot-test_second_put_cancels_previous_task()]] - `method` [EXTRACTED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

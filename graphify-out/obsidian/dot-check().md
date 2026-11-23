@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L103"
+community: "CronStateMonitor"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/CronStateMonitor
 ---
 
 # .check()
 
 ## Connections
-- [[Check if request is within rate limit. Returns True if allowed.]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[dot-_dispatch_aggregate()]] - `calls` [EXTRACTED]
+- [[dot-_evaluate()]] - `calls` [EXTRACTED]
+- [[dot-parse_store()]] - `calls` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[One poll pass over all stores. Never raises.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

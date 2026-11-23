@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Path (2)"
+community: "ControlCenter"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/ControlCenter
 ---
 
 # .make_api_request()
@@ -18,8 +18,8 @@ tags:
 - [[dot-draw_modules()]] - `calls` [EXTRACTED]
 - [[dot-draw_ssh_hosts()]] - `calls` [EXTRACTED]
 - [[dot-get_auth()]] - `calls` [EXTRACTED]
-- [[dot-run()_3]] - `calls` [EXTRACTED]
+- [[dot-run()_8]] - `calls` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 - [[Make authenticated API request to gateway]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

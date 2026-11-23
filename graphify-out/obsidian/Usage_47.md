@@ -1,23 +1,17 @@
 ---
-source_file: ".github/agents/i-browser.agent.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Community 449"
-location: "L60"
+community: "Production Safety Checklist (PROD-SAFETY)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
-- [[Click Element_3]] - `contains` [EXTRACTED]
-- [[Extract Data_3]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_3]] - `contains` [EXTRACTED]
-- [[Fill Form_3]] - `contains` [EXTRACTED]
-- [[Navigate to URL_3]] - `contains` [EXTRACTED]
-- [[Take Screenshot_3]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

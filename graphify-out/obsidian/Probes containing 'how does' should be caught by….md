@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Internal MCP gateway pattern (Entra-fronted)"
+community: "._looks_like_safe_collaborator_info_query"
 location: "L7572"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Internal_MCP_gateway_pattern_Entra-fronted
+  - community/_looks_like_safe_collaborator_info_query
 ---
 
 # Probes containing 'how does' should be caught by…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_how_does_routes_to_local_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Internal_MCP_gateway_pattern_Entra-fronted
+#graphify/rationale #graphify/EXTRACTED #community/_looks_like_safe_collaborator_info_query

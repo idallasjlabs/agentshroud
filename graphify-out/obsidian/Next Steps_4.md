@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/architecture/WORKSPACE_DECISION.md"
 type: "document"
-community: "Community 764"
-location: "L78"
+community: "OpenClaw Workspace Usage Guide"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Next Steps
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[Workspace Configuration Decision]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_764
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 665"
-location: "L70"
+community: "dns_filter.py"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_665
+  - community/dns_filterpy
 ---
 
 # Related
 
 ## Connections
-- [[mcp_audit.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_665
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

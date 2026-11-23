@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Community 89"
+community: "test_delegation.py"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/test_delegationpy
 ---
 
 # TestIsDelegated
 
 ## Connections
-- [[.test_is_delegated_returns_false_after_expiry()]] - `method` [EXTRACTED]
-- [[.test_is_delegated_returns_false_for_other_privilege()]] - `method` [EXTRACTED]
-- [[.test_is_delegated_returns_false_for_other_user()]] - `method` [EXTRACTED]
-- [[.test_is_delegated_returns_true_for_active()]] - `method` [EXTRACTED]
-- [[Delegation]] - `uses` [INFERRED]
-- [[DelegationError]] - `uses` [INFERRED]
-- [[DelegationManager]] - `uses` [INFERRED]
+- [[dot-test_is_delegated_returns_false_after_expiry()]] - `method` [EXTRACTED]
+- [[dot-test_is_delegated_returns_false_for_other_privilege()]] - `method` [EXTRACTED]
+- [[dot-test_is_delegated_returns_false_for_other_user()]] - `method` [EXTRACTED]
+- [[dot-test_is_delegated_returns_true_for_active()]] - `method` [EXTRACTED]
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/test_delegationpy

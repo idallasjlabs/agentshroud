@@ -1,18 +1,14 @@
 ---
 source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Community 2068"
+community: "Per-chat group agent + binding reconciliation (Patch 1e)"
 location: "616-692"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2068
+  - community/Per-chat_group_agent__binding_reconciliation_Patch_1e
 ---
 
 # Per-chat group agent + binding reconciliation (Patch 1e)
 
-## Connections
-- [[_resolveCollabToolConfig()]] - `calls` [EXTRACTED]
-- [[apply-patches.js]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_2068
+#graphify/code #graphify/EXTRACTED #community/Per-chat_group_agent__binding_reconciliation_Patch_1e

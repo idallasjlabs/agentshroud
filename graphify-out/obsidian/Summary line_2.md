@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-14.md"
+source_file: "reports/upgrade-2026-09-25.md"
 type: "document"
-community: "Community 611"
-location: "L3"
+community: "Final report"
+location: "L305"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_611
+  - community/Final_report
 ---
 
 # Summary line
 
 ## Connections
-- [[AgentShroud Sunday Upgrade — 2026-09-14 (dev account, agentshroud-bot@marvin)]] - `contains` [EXTRACTED]
+- [[Final report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_611
+#graphify/document #graphify/EXTRACTED #community/Final_report

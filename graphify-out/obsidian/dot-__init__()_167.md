@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "TestOAuthInjection"
-location: "L163"
+community: "test_llm_proxy.py"
+location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/test_llm_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[_HeadFakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

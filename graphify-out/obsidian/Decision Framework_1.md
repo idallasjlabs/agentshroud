@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Community 242"
-location: "L109"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L111"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Decision Framework
@@ -17,4 +17,4 @@ tags:
 - [[EBS Performance Analysis (Critical Pattern)_1]] - `contains` [EXTRACTED]
 - [[Rightsizing Logic_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_242
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

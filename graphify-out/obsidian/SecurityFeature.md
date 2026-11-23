@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/security.py"
 type: "code"
-community: "Community 743"
+community: "api.py"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_743
+  - community/apipy
 ---
 
 # SecurityFeature
@@ -15,6 +15,6 @@ tags:
 - [[A security feature with runtime support info.]] - `rationale_for` [EXTRACTED]
 - [[get_features_for_runtime()]] - `references` [EXTRACTED]
 - [[get_missing_features()]] - `references` [EXTRACTED]
-- [[security.py]] - `contains` [EXTRACTED]
+- [[security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_743
+#graphify/code #graphify/EXTRACTED #community/apipy

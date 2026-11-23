@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "AsyncMock"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AsyncMock
 ---
 
 # .test_non_owner_info_filter_redaction_blocks()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 → blocked]] - `rationale_for` [EXTRACTED]
+- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 →…]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[asyncio_41]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

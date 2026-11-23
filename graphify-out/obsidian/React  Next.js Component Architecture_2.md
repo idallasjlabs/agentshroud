@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ui.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Community 629"
+community: "Skill: UI Expert (UI)"
 location: "L341"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_629
+  - community/Skill_UI_Expert_UI
 ---
 
 # React / Next.js Component Architecture
@@ -16,4 +16,4 @@ tags:
 - [[Component file structure_2]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_629
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

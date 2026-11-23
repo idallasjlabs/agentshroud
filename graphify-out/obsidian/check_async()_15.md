@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L6251"
+community: "FakeRBAC"
+location: "L5925"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/FakeRBAC
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_non_standard_web_port_does_not_queue_egress_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_non_owner_preflight_cooldown_is_scheme_port_scoped()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

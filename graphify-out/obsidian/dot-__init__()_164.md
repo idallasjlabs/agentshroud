@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L314"
+community: "WebProxy"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `references` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/SECURITY_PLAN.md"
 type: "document"
-community: "Community 415"
+community: "AgentShroud Security Hardening Plan"
 location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_415
+  - community/AgentShroud_Security_Hardening_Plan
 ---
 
 # Injection vectors explicitly covered
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Threat Coverage Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_415
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Hardening_Plan

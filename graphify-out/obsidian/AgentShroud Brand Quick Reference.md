@@ -1,12 +1,12 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "document"
-community: "Community 586"
+community: "AgentShroud Brand Quick Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_586
+  - community/AgentShroud_Brand_Quick_Reference
 ---
 
 # AgentShroud Brand Quick Reference
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[Accessibility Checklist]] - `contains` [EXTRACTED]
 - [[Common Use Cases]] - `contains` [EXTRACTED]
-- [[File Locations]] - `contains` [EXTRACTED]
-- [[Logo Files_1]] - `contains` [EXTRACTED]
+- [[File Locations_2]] - `contains` [EXTRACTED]
+- [[Logo Files_2]] - `contains` [EXTRACTED]
 - [[Logo Usage Rules]] - `contains` [EXTRACTED]
 - [[Need More Details]] - `contains` [EXTRACTED]
 - [[Primary Brand Color]] - `contains` [EXTRACTED]
 - [[QUICK-REFERENCE]] - `contains` [EXTRACTED]
 - [[Quick Color Palette]] - `contains` [EXTRACTED]
-- [[Typography]] - `contains` [EXTRACTED]
+- [[Typography_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_586
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Quick_Reference

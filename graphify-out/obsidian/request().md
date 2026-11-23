@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "sidecar.py"
-location: "L480"
+community: "_FakeUnixSocket"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/_FakeUnixSocket
 ---
 
 # request()
 
 ## Connections
-- [[dot-_run_proxy()]] - `contains` [EXTRACTED]
+- [[dot-connect()]] - `calls` [EXTRACTED]
+- [[_patch_http_connection()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sidecarpy
+#graphify/code #graphify/EXTRACTED #community/_FakeUnixSocket

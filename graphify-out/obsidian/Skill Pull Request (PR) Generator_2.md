@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-pr.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 1957"
-location: "L8"
+community: "Skill: Pull Request (PR) Generator"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1957
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Skill: Pull Request (PR) Generator
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Constraints_2]] - `contains` [EXTRACTED]
 - [[Content Requirements_2]] - `contains` [EXTRACTED]
-- [[Objective_4]] - `contains` [EXTRACTED]
-- [[Role_97]] - `contains` [EXTRACTED]
-- [[i-pr_1]] - `contains` [EXTRACTED]
+- [[Objective_2]] - `contains` [EXTRACTED]
+- [[Role_83]] - `contains` [EXTRACTED]
+- [[hermesskillsi-prSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1957
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

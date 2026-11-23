@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "Community 74"
+community: "sync-cve-registry.py"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/sync-cve-registrypy
 ---
 
 # Return the next zero-padded ASH id number for an agent's registry list.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_next_ash_number()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_74
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

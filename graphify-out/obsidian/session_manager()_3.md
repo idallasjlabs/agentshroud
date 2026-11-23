@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_regressions_v1_2.py"
+source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "Community 65"
-location: "L46"
+community: "test_file_sandbox_message_gate.py"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # session_manager()
 
 ## Connections
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[fixture_104]] - `references` [EXTRACTED]
+- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

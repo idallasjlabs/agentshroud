@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Community 727"
-location: "L12"
+community: "Incident Response (INCIDENT)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/Incident_Response_INCIDENT
 ---
 
 # Purpose
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

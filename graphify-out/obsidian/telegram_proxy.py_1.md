@@ -1,17 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "Community 668"
-location: "L1"
+community: "telegram_proxy.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_668
+  - community/telegram_proxypy
 ---
 
-# telegram_proxy.py.md
+# telegram_proxy.py
 
 ## Connections
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_8]] - `contains` [EXTRACTED]
+- [[Function Details_16]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_18]] - `contains` [EXTRACTED]
+- [[Methods Filtered (Inbound)]] - `contains` [EXTRACTED]
+- [[Methods Filtered (Outbound)]] - `contains` [EXTRACTED]
+- [[Purpose_19]] - `contains` [EXTRACTED]
+- [[Related_18]] - `contains` [EXTRACTED]
+- [[Responsibilities_18]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_668
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

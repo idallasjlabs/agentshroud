@@ -1,18 +1,19 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "asb"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/asb
 ---
 
 # asb script
 
 ## Connections
 - [[_asb_banner()]] - `calls` [EXTRACTED]
+- [[_deployment_setup()]] - `calls` [EXTRACTED]
 - [[_ensure_sandbox_image()]] - `calls` [EXTRACTED]
 - [[_hermes_down()]] - `calls` [EXTRACTED]
 - [[_hermes_up()]] - `calls` [EXTRACTED]
@@ -21,4 +22,4 @@ tags:
 - [[asb]] - `contains` [EXTRACTED]
 - [[setup_ephemeral_secrets()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/asb

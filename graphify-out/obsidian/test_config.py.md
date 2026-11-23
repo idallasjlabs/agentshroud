@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Community 181"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/ingest_api/configpy
 ---
 
 # test_config.py
 
 ## Connections
 - [[BotConfig]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
+- [[Tests for configuration loading]] - `rationale_for` [EXTRACTED]
 - [[_bot_service_names()]] - `imports` [EXTRACTED]
 - [[_entity_type_mapping()]] - `imports` [EXTRACTED]
 - [[_load_config()]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
 - [[test_bot_config_base_url()]] - `contains` [EXTRACTED]
 - [[test_bot_config_resolved_container_name_defaults_to_agentshroud_id()]] - `contains` [EXTRACTED]
@@ -31,4 +33,4 @@ tags:
 - [[test_router_config_accepts_docker_service_hostname()]] - `contains` [EXTRACTED]
 - [[test_router_config_accepts_hermes_hostname()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

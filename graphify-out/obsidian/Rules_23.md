@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ux.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 342"
-location: "L32"
+community: "Skill: Technical Illustrator (TI)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_342
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_342
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

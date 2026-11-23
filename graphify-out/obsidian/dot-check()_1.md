@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L155"
+community: "DNSFilterConfig"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/DNSFilterConfig
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_dispatch_aggregate()]] - `calls` [EXTRACTED]
-- [[dot-_evaluate()]] - `calls` [EXTRACTED]
-- [[dot-parse_store()]] - `calls` [EXTRACTED]
-- [[CronStateMonitor]] - `method` [EXTRACTED]
-- [[One poll pass over all stores.  Never raises.]] - `rationale_for` [EXTRACTED]
+- [[dot-_cleanup_rate_window()]] - `calls` [EXTRACTED]
+- [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
+- [[dot-_domain_in_allowlist()]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSQuery]] - `calls` [EXTRACTED]
+- [[DNSVerdict]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

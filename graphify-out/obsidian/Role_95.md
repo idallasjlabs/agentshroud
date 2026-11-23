@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-pca.md"
+source_file: ".agents/agents/mnemosyne.md"
 type: "document"
-community: "Community 1256"
+community: "Mnemosyne — Retention Engineer"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1256
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1256
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

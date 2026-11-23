@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "code"
-community: "Community 1170"
+community: "sync-version.sh"
 location: "123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1170
+  - community/sync-versionsh
 ---
 
 # Release GitHub Release job (CHANGELOG notes extraction)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Release Docker build & tag job]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1170
+#graphify/code #graphify/EXTRACTED #community/sync-versionsh

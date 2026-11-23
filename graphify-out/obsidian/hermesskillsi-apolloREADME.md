@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "TestOutboundInfoFilter"
+community: "Apollo — Audio Systems Producer"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # hermes/skills/i-apollo/README.md
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

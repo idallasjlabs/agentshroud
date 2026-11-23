@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 107"
+community: "Step-by-Step Deployment"
 location: "L535"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/Step-by-Step_Deployment
 ---
 
 # Performance Tuning
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Production Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_107
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

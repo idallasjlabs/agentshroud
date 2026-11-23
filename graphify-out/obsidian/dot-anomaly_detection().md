@@ -20,8 +20,8 @@ tags:
 - [[dot-_count_recent_events()]] - `calls` [EXTRACTED]
 - [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
 - [[dot-_send_anomaly_alert()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Detect unusual patterns that might indicate rogue behavior.          Args]] - `rationale_for` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
+- [[Detect unusual patterns that might indicate rogue behavior. Args tool_calls…]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

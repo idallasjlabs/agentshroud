@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "A2AMethod"
+community: "KeyRotationManager"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/KeyRotationManager
 ---
 
 # .add_custom_policy()
@@ -16,4 +16,4 @@ tags:
 - [[CredentialRotationPolicy]] - `references` [EXTRACTED]
 - [[KeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

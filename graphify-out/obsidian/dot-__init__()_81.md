@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "ServiceManager"
-location: "L141"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[RBACManager]] - `references` [EXTRACTED]
-- [[Role_18]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

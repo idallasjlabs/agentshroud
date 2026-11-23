@@ -1,11 +1,11 @@
 ---
 source_file: "docker/docker-compose.yml"
 type: "code"
-community: "Community 139"
+community: "upgrade-2026-10-12.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/upgrade-2026-10-12md
 ---
 
 # Base docker-compose stack
@@ -17,6 +17,5 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-26]] - `references` [EXTRACTED]
 - [[upgrade-2026-10-12]] - `references` [EXTRACTED]
-- [[upgrade-2026-10-18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_139
+#graphify/code #graphify/EXTRACTED #community/upgrade-2026-10-12md

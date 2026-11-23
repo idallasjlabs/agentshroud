@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L75"
+community: "SubagentMonitor"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/SubagentMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_17]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

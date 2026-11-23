@@ -1,22 +1,22 @@
 ---
-source_file: ".agents/skills/mac-app-discovery/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 870"
+community: "Phase 1 — Raw Collection"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_870
+  - community/Phase_1__Raw_Collection
 ---
 
 # Discovery Strategy
 
 ## Connections
-- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
 - [[Phase 1 — Raw Collection_1]] - `contains` [EXTRACTED]
 - [[Phase 2 — Deduplication & Normalization_1]] - `contains` [EXTRACTED]
 - [[Phase 3 — Categorization_1]] - `contains` [EXTRACTED]
 - [[Phase 4 — Enrichment_1]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_870
+#graphify/document #graphify/EXTRACTED #community/Phase_1__Raw_Collection

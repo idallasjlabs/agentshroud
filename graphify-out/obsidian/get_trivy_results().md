@@ -1,20 +1,23 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L2763"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # get_trivy_results()
 
 ## Connections
-- [[Return the latest Trivy vulnerability scan results.      Trivy scans are run at]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Return the latest Trivy vulnerability scan results. Trivy scans are run at…]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[get]] - `references` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

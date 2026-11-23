@@ -1,30 +1,26 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Community 262"
+community: "OutputSchemaEnforcer"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_262
+  - community/OutputSchemaEnforcer
 ---
 
 # OutputSchemaEnforcer
 
 ## Connections
-- [[.__init__()_118]] - `method` [EXTRACTED]
-- [[._register_default_schema()]] - `method` [EXTRACTED]
-- [[.register_schema()]] - `method` [EXTRACTED]
-- [[.validate()_1]] - `method` [EXTRACTED]
-- [[Output Schema Enforcer Tests (C25)]] - `references` [EXTRACTED]
-- [[SchemaRule]] - `references` [EXTRACTED]
-- [[SchemaValidationResult]] - `references` [EXTRACTED]
-- [[TestOutputSchemaEnforcer]] - `uses` [INFERRED]
-- [[Validates outbound responses against structural schemas.      Usage          e]] - `rationale_for` [EXTRACTED]
-- [[enforcer()_1]] - `calls` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[dot-__init__()_144]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `method` [EXTRACTED]
+- [[dot-register_schema()]] - `method` [EXTRACTED]
+- [[dot-validate()_3]] - `method` [EXTRACTED]
+- [[Validates outbound responses against structural schemas. Usage enforcer =…]] - `rationale_for` [EXTRACTED]
+- [[enforcer()_2]] - `uses` [INFERRED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[output_schema.py]] - `contains` [EXTRACTED]
 - [[test_output_schema.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_262
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

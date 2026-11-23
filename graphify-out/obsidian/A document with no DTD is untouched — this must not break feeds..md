@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "rationale"
-community: "Community 562"
+community: "WebContentScanner"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_562
+  - community/WebContentScanner
 ---
 
 # A document with no DTD is untouched — this must not break feeds.
 
 ## Connections
-- [[.test_plain_xml_not_flagged()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_plain_xml_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_562
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

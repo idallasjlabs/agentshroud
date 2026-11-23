@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 516"
-location: "L125"
+community: "TestAppStateHas"
+location: "L581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/TestAppStateHas
 ---
 
 # TestAppStateHas
 
 ## Connections
-- [[.test_import_failure_returns_false()]] - `method` [EXTRACTED]
-- [[.test_true_and_false_against_real_app_state()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_returns_false_on_import_error()]] - `method` [EXTRACTED]
+- [[dot-test_returns_true_when_attr_set()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_516
+#graphify/code #graphify/EXTRACTED #community/TestAppStateHas

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 127"
+community: "test_daily_cve_report.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/test_daily_cve_reportpy
 ---
 
 # test_daily_cve_report.py
@@ -32,6 +32,7 @@ tags:
 - [[TestTrivySkipDirs]] - `contains` [EXTRACTED]
 - [[TestUpstreamAlertDedup]] - `contains` [EXTRACTED]
 - [[TestUpstreamCveCheckSchedulerRetry]] - `contains` [EXTRACTED]
+- [[Tests for gateway.security.daily_cve_report.]] - `rationale_for` [EXTRACTED]
 - [[_already_sent_today()]] - `imports` [EXTRACTED]
 - [[_build_image_targets()]] - `imports` [EXTRACTED]
 - [[_isolated_alert_state()]] - `contains` [EXTRACTED]
@@ -45,6 +46,6 @@ tags:
 - [[format_upstream_cve_alert()]] - `imports` [EXTRACTED]
 - [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `imports` [EXTRACTED]
-- [[trivy_report.py]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

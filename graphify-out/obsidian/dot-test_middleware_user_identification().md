@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .test_middleware_user_identification()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test that middleware requires user identification.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
+- [[asyncio_72]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 805"
+community: "Trademark Statements"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Trademark_Statements
 ---
 
 # Option 1 — Professional (email, formal)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Trademark Statements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Trademark_Statements

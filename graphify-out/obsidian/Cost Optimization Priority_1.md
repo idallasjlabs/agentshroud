@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Community 242"
-location: "L111"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Cost Optimization Priority
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Decision Framework_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_242
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

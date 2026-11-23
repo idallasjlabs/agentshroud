@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "test_soc_router_coverage.py"
 location: "L2862"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/test_soc_router_coveragepy
 ---
 
 # _file_hash()
 
 ## Connections
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[test_file_hash_existing_and_missing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

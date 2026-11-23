@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/LLM_PROVIDER_SETUP.md"
 type: "document"
-community: "Community 696"
+community: "AgentShroud™ LLM Provider Setup & Switching Guide"
 location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_696
+  - community/AgentShroud_LLM_Provider_Setup__Switching_Guide
 ---
 
 # How to Switch via Telegram:
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[3. Switching Models in OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_696
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_LLM_Provider_Setup__Switching_Guide

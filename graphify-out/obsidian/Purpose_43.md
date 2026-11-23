@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Community 1877"
+community: "Incident Response (INCIDENT)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1877
+  - community/Incident_Response_INCIDENT
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1877
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

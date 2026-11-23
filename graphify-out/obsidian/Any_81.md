@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: ""
 type: "code"
-community: "Community 575"
-location: "L67"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/sync-cve-registrypy
 ---
 
 # Any
 
 ## Connections
-- [[.recent()]] - `references` [EXTRACTED]
-- [[.tail()]] - `references` [EXTRACTED]
-- [[_check_host()]] - `references` [EXTRACTED]
+- [[_ghsa_cvss_score()]] - `references` [EXTRACTED]
+- [[_ghsa_entry_to_py()]] - `references` [EXTRACTED]
+- [[_ghsa_patched_version()]] - `references` [EXTRACTED]
+- [[_next_ash_number()]] - `references` [EXTRACTED]
+- [[_py_str()]] - `references` [EXTRACTED]
+- [[append_ghsa_entries()]] - `references` [EXTRACTED]
+- [[fetch_ghsa_advisories()]] - `references` [EXTRACTED]
+- [[process_ghsa_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_575
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

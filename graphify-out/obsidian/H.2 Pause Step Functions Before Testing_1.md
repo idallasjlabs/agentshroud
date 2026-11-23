@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: "docker/config/hermes/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 462"
-location: "L267"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
+location: "L264"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 ---
 
 # H.2 Pause Step Functions Before Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT

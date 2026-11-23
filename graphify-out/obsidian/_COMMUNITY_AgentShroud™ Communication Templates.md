@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.39
-members: 9
+members: 10
 ---
 
 # AgentShroud™ Communication Templates
 
-**Cohesion:** 0.39 - loosely connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Bot (@agentshroud_bot) — Autonomous Agent (Prod)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPT Codex — QA  Support Engineer  Tertiary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[ChatGPTCodex — TertiaryQA Support Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Claude Code (claude-sonnet-4-6) — Lead Engineer  Primary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Gemini CLI — SecondaryTest Engineer (cannot direct Claude)]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[Gemini CLI — Test Engineer  Secondary Developer]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson (Product Owner  Architect  PM  Operator)]] - concept - docs/diagrams/images/diagram-21-team-structure.svg
-- [[Isaiah Jefferson — Product OwnerArchitectPMOperator]] - image - docs/diagrams/images/diagram-21-team-structure.png
-- [[TeamAgent Role Structure Diagram]] - image - docs/diagrams/images/diagram-21-team-structure.png
+- [[AgentShroud™ Communication Templates]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Claude Code (primary developer)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[For Agents and Bots]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Gemini CLI  ChatGPT Codex (secondary agents)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[OpenClaw Bot (agentshroud-bot)]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 1 — Clean & Professional]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 2 — Compact]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 3 — Full Collaborator Notice]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Option 4 — Documentation Footer]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
+- [[Usage Rules]] - document - docs/project/legal/COMMUNICATION-TEMPLATES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +25,11 @@ members: 9
 TABLE source_file, type FROM #community/AgentShroud_Communication_Templates
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_COMMUNICATION-TEMPLATES]]
+- 1 edge to [[_COMMUNITY_Claude Code — Primary development agent]]
+
+## Top bridge nodes
+- [[AgentShroud™ Communication Templates]] - degree 7, connects to 1 community
+- [[For Agents and Bots]] - degree 5, connects to 1 community

@@ -1,27 +1,25 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Advanced Integrations (Phase 19)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Browser Extension_2]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Full Configuration System (Phase 18)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure — Deferred (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Integration Hub (Phase 13)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Mac Mini Onboarding (Phase 14)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Multi-Host Deployment_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Multi-Platform Container Support_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Personal Infrastructure Monitor (Phase 15)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Post-v1.0.0 — Deferred]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Secure Voice (moved from v0.9.0 → post-v1.0.0 on 2026-03-04)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[iOSmacOS Shortcuts_1]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - document - docker/config/openclaw/AGENTS.md
+- [[Approved Tools and Their Arguments]] - document - docker/config/openclaw/AGENTS.md
+- [[Critical Rules for Local Models]] - document - docker/config/openclaw/AGENTS.md
+- [[Example Multi-Step Tool Use]] - document - docker/config/openclaw/AGENTS.md
+- [[Failover Behaviour (Local Mode)]] - document - docker/config/openclaw/AGENTS.md
+- [[Tool Invocation Format]] - document - docker/config/openclaw/AGENTS.md
+- [[bash]] - document - docker/config/openclaw/AGENTS.md
+- [[file_read]] - document - docker/config/openclaw/AGENTS.md
+- [[file_write]] - document - docker/config/openclaw/AGENTS.md
+- [[openclawAGENTS]] - document - docker/config/openclaw/AGENTS.md
+- [[send_message]] - document - docker/config/openclaw/AGENTS.md
+- [[web_search]] - document - docker/config/openclaw/AGENTS.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +27,3 @@ members: 12
 TABLE source_file, type FROM #community/AgentShroud__OpenClaw_Local-Model_Tool-Use_Instructions
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_package_skill]]
-
-## Top bridge nodes
-- [[Post-v1.0.0 — Deferred]] - degree 12, connects to 1 community

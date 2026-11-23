@@ -1,27 +1,21 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 8
 ---
 
 # notion
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[AGENTS]] - document - docker/config/openclaw/AGENTS.md
-- [[AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]] - document - docker/config/openclaw/AGENTS.md
-- [[Approved Tools and Their Arguments]] - document - docker/config/openclaw/AGENTS.md
-- [[Critical Rules for Local Models]] - document - docker/config/openclaw/AGENTS.md
-- [[Example Multi-Step Tool Use]] - document - docker/config/openclaw/AGENTS.md
-- [[Failover Behaviour (Local Mode)]] - document - docker/config/openclaw/AGENTS.md
-- [[Tool Invocation Format]] - document - docker/config/openclaw/AGENTS.md
-- [[bash]] - document - docker/config/openclaw/AGENTS.md
-- [[file_read]] - document - docker/config/openclaw/AGENTS.md
-- [[file_write]] - document - docker/config/openclaw/AGENTS.md
-- [[send_message]] - document - docker/config/openclaw/AGENTS.md
-- [[web_search]] - document - docker/config/openclaw/AGENTS.md
+- [[API Basics]] - document - skills/openclaw/notion/SKILL.md
+- [[Common Operations]] - document - skills/openclaw/notion/SKILL.md
+- [[Key Differences in 2025-09-03]] - document - skills/openclaw/notion/SKILL.md
+- [[Notes_2]] - document - skills/openclaw/notion/SKILL.md
+- [[Property Types]] - document - skills/openclaw/notion/SKILL.md
+- [[Setup_1]] - document - skills/openclaw/notion/SKILL.md
+- [[notion]] - document - skills/openclaw/notion/SKILL.md
+- [[notionSKILL]] - document - skills/openclaw/notion/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

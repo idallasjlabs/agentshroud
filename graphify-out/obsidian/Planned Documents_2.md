@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/README.md"
 type: "document"
-community: "Community 523"
+community: "Flows Documentation"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_523
+  - community/Flows_Documentation
 ---
 
 # Planned Documents
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Flows Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_523
+#graphify/document #graphify/EXTRACTED #community/Flows_Documentation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # .test_delete_entry_removes_it()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Deleted entry is gone (right to erasure).]] - `rationale_for` [EXTRACTED]
 - [[TestTamperDetection]] - `method` [EXTRACTED]
+- [[asyncio_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

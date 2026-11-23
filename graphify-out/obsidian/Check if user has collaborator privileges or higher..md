@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 6"
+community: "middleware.py"
 location: "L179"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/middlewarepy
 ---
 
 # Check if user has collaborator privileges or higher.
 
 ## Connections
-- [[.is_collaborator_or_higher()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_collaborator_or_higher()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

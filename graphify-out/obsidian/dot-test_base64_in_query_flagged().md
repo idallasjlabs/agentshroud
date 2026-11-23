@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestDataExfiltration"
+community: "URLAnalyzer"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDataExfiltration
+  - community/URLAnalyzer
 ---
 
 # .test_base64_in_query_flagged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDataExfiltration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDataExfiltration
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

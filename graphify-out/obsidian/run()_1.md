@@ -1,27 +1,52 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
+source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "Community 238"
-location: "L281"
+community: "middleware.py"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_238
+  - community/middlewarepy
 ---
 
 # run()
 
 ## Connections
-- [[Fetch creds, build summary, post the comment. Returns a process exit code.]] - `rationale_for` [EXTRACTED]
-- [[_git_commits_last_week()]] - `calls` [EXTRACTED]
-- [[build_comment_payload()_1]] - `calls` [EXTRACTED]
-- [[build_weekly_summary()]] - `calls` [EXTRACTED]
-- [[extract_scrum_items()]] - `calls` [EXTRACTED]
-- [[fetch_op_secret()_1]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket run()]] - `semantically_similar_to` [INFERRED]
-- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
-- [[post_comment()]] - `calls` [EXTRACTED]
-- [[resolve_cloud_id()_1]] - `calls` [EXTRACTED]
-- [[test_jira_weekly_review.py]] - `calls` [EXTRACTED]
+- [[dot-add_protected_content()]] - `indirect_call` [INFERRED]
+- [[dot-scan_outbound()]] - `indirect_call` [INFERRED]
+- [[Action]] - `uses` [INFERRED]
+- [[ApprovalHardening]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `calls` [INFERRED]
+- [[AuditStore]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [INFERRED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[MiddlewareManager]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [INFERRED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `uses` [INFERRED]
+- [[RBACManager]] - `calls` [EXTRACTED]
+- [[Resource]] - `uses` [INFERRED]
+- [[Role]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `contains` [EXTRACTED]
+- [[fail()]] - `calls` [EXTRACTED]
+- [[ok()]] - `calls` [EXTRACTED]
+- [[warn()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_238
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

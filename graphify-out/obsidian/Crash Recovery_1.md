@@ -1,22 +1,26 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
 type: "document"
-community: "Community 334"
+community: "Architecture Overview.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/Architecture_Overviewmd
 ---
 
 # Crash Recovery.md
 
 ## Connections
-- [[Container Errors]] - `references` [EXTRACTED]
+- [[dot-agentsagentssav]] - `references` [EXTRACTED]
+- [[dot-cursoragentssav]] - `references` [EXTRACTED]
+- [[dot-ompagentssav]] - `references` [EXTRACTED]
+- [[dot-opencodeagentssav]] - `references` [EXTRACTED]
 - [[Crash Recovery_2]] - `contains` [EXTRACTED]
-- [[Health Checks_1]] - `references` [EXTRACTED]
-- [[Restart Procedure_1]] - `references` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
-- [[store.py]] - `references` [INFERRED]
+- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
+- [[i-sav SKILL (System Audit Vault, Obsidian)]] - `references` [EXTRACTED]
+- [[i-sav.agent]] - `references` [EXTRACTED]
+- [[openclawskillsi-savSKILL]] - `references` [EXTRACTED]
+- [[savSKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

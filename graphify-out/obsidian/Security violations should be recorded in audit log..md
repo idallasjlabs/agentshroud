@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestSecurityViolationLogging"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestSecurityViolationLogging
 ---
 
 # Security violations should be recorded in audit log.
 
 ## Connections
-- [[.test_violation_recorded_in_audit()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_violation_recorded_in_audit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityViolationLogging

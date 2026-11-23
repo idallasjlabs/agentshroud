@@ -1,18 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 350"
-location: "L698"
+community: "prompt_guard.py"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/prompt_guardpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[Multi-Instance Setup]] - `contains` [EXTRACTED]
-- [[Multi-Instance Setup_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

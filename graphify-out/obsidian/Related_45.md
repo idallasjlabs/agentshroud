@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Community 456"
-location: "L106"
+community: "Function Details"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/Function_Details
 ---
 
 # Related
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/Function_Details

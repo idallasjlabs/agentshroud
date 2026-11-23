@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "docker/config/openclaw/apply-patches.js"
 type: "code"
-community: "Community 682"
-location: "L36"
+community: "apply-patches.js"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_682
+  - community/apply-patchesjs
 ---
 
 # fs
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[apply-patches.js_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_682
+#graphify/code #graphify/EXTRACTED #community/apply-patchesjs

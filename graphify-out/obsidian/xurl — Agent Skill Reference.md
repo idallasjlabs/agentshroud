@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/xurl/SKILL.md"
 type: "document"
-community: "Community 416"
+community: "xurl — Agent Skill Reference"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_416
+  - community/xurl__Agent_Skill_Reference
 ---
 
 # xurl — Agent Skill Reference
@@ -14,15 +14,15 @@ tags:
 ## Connections
 - [[Command Details]] - `contains` [EXTRACTED]
 - [[Common Workflows_2]] - `contains` [EXTRACTED]
-- [[Error Handling_17]] - `contains` [EXTRACTED]
+- [[Error Handling_9]] - `contains` [EXTRACTED]
 - [[Global Flags]] - `contains` [EXTRACTED]
-- [[Installation_3]] - `contains` [EXTRACTED]
-- [[Notes_11]] - `contains` [EXTRACTED]
-- [[Output Format_113]] - `contains` [EXTRACTED]
-- [[Prerequisites_15]] - `contains` [EXTRACTED]
-- [[Quick Reference_15]] - `contains` [EXTRACTED]
+- [[Installation_2]] - `contains` [EXTRACTED]
+- [[Notes_7]] - `contains` [EXTRACTED]
+- [[Output Format_72]] - `contains` [EXTRACTED]
+- [[Prerequisites_8]] - `contains` [EXTRACTED]
+- [[Quick Reference_12]] - `contains` [EXTRACTED]
 - [[Raw API Access]] - `contains` [EXTRACTED]
-- [[SKILL_250]] - `contains` [EXTRACTED]
-- [[Streaming_1]] - `contains` [EXTRACTED]
+- [[Streaming]] - `contains` [EXTRACTED]
+- [[xurlSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_416
+#graphify/document #graphify/EXTRACTED #community/xurl__Agent_Skill_Reference

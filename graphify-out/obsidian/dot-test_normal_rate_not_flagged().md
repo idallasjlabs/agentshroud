@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "DNSFilterConfig"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # .test_normal_rate_not_flagged()
 
 ## Connections
-- [[TestRateLimiting_4]] - `method` [EXTRACTED]
+- [[TestRateLimiting]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

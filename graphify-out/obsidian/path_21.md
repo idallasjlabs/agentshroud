@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Community 131"
-location: "L164"
+community: "test_apply_patches.js"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/test_apply_patchesjs
 ---
 
-# Path
+# path
 
 ## Connections
-- [[_build_image_targets()]] - `calls` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

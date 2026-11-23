@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L3987"
+community: "ToolResultInjectionScanner"
+location: "L4005"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/ToolResultInjectionScanner
 ---
 
 # ._trigger_web_search_log()
 
 ## Connections
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
-- [[Any_83]] - `references` [EXTRACTED]
-- [[Log a web_search egress event with user attribution when raw JSON leaks.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
+- [[Log a web_search egress event with user attribution when raw JSON leaks.…]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[_app_state()]] - `indirect_call` [INFERRED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

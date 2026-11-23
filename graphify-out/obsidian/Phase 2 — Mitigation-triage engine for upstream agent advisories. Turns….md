@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "._run_and_read"
+community: "triage-cve-mitigations.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/triage-cve-mitigationspy
 ---
 
 # Phase 2 — Mitigation-triage engine for upstream agent advisories. Turns…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[triage-cve-mitigations.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_run_and_read
+#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy

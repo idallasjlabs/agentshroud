@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # Risk levels for tool call chains.
 
 ## Connections
-- [[RiskLevel_4]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

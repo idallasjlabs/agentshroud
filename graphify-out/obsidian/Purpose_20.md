@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 177"
-location: "L6"
+community: "web_content_scanner.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/web_content_scannerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-bs.md"
+source_file: "docker/config/hermes/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 1020"
-location: "L33"
+community: "Skill: Mindmap Architect (MM)"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1020
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1020
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

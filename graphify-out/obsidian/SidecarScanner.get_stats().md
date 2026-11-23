@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 877"
+community: "sidecar.py"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/sidecarpy
 ---
 
 # SidecarScanner.get_stats()
 
 ## Connections
-- [[Function Details_13]] - `contains` [EXTRACTED]
+- [[Function Details_38]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_877
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

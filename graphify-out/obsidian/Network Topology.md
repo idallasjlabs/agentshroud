@@ -1,19 +1,17 @@
 ---
-source_file: "docs/architecture/deployment-diagram.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 418"
-location: "L218"
+community: "Architecture Overview"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_418
+  - community/Architecture_Overview
 ---
 
 # Network Topology
 
 ## Connections
-- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
-- [[DNS Routing Configuration]] - `contains` [EXTRACTED]
-- [[Three-Network Architecture]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_418
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

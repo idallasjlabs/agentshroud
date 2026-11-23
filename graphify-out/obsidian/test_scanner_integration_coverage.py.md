@@ -1,32 +1,33 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 516"
+community: "test_scanner_integration_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/test_scanner_integration_coveragepy
 ---
 
 # test_scanner_integration_coverage.py
 
 ## Connections
-- [[TestAccessControl_1]] - `contains` [EXTRACTED]
+- [[Coverage tests for gatewaysecurityscanner_integration.py. Exercises the…]] - `rationale_for` [EXTRACTED]
+- [[TestAccessControl_2]] - `contains` [EXTRACTED]
 - [[TestAgenticScorers]] - `contains` [EXTRACTED]
-- [[TestAggregateResults_1]] - `contains` [EXTRACTED]
+- [[TestAggregateResults]] - `contains` [EXTRACTED]
 - [[TestAiModelSupplyChain]] - `contains` [EXTRACTED]
-- [[TestAppStateHas]] - `contains` [EXTRACTED]
+- [[TestAppStateHas_1]] - `contains` [EXTRACTED]
 - [[TestClamavSummary]] - `contains` [EXTRACTED]
 - [[TestComplianceAuditing]] - `contains` [EXTRACTED]
 - [[TestComplianceMaths]] - `contains` [EXTRACTED]
 - [[TestComputeBotScorecard]] - `contains` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `contains` [EXTRACTED]
+- [[TestComputeScorecard]] - `contains` [EXTRACTED]
 - [[TestContainerRuntimeIsolation]] - `contains` [EXTRACTED]
 - [[TestDaemonConfigReader]] - `contains` [EXTRACTED]
 - [[TestDataConfidentiality]] - `contains` [EXTRACTED]
 - [[TestDockerDaemonConfig]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
 - [[TestFluentBitSummary]] - `contains` [EXTRACTED]
 - [[TestGetSbom_1]] - `contains` [EXTRACTED]
 - [[TestHostOsHardening]] - `contains` [EXTRACTED]
@@ -34,8 +35,8 @@ tags:
 - [[TestImageSigningProvenance]] - `contains` [EXTRACTED]
 - [[TestIncidentResponse]] - `contains` [EXTRACTED]
 - [[TestIsContainerRunning]] - `contains` [EXTRACTED]
-- [[TestIsFresh]] - `contains` [EXTRACTED]
-- [[TestLoadLatestJson_1]] - `contains` [EXTRACTED]
+- [[TestIsFresh_1]] - `contains` [EXTRACTED]
+- [[TestLoadLatestJson]] - `contains` [EXTRACTED]
 - [[TestLoggingMonitoring]] - `contains` [EXTRACTED]
 - [[TestMandatoryGates]] - `contains` [EXTRACTED]
 - [[TestNetworkSegmentation]] - `contains` [EXTRACTED]
@@ -49,18 +50,16 @@ tags:
 - [[TestSupplyChain]] - `contains` [EXTRACTED]
 - [[TestTextReaders]] - `contains` [EXTRACTED]
 - [[TestTrivyImageSummaries]] - `contains` [EXTRACTED]
-- [[TestTrivySummary]] - `contains` [EXTRACTED]
+- [[TestTrivySummary_1]] - `contains` [EXTRACTED]
 - [[TestVulnerabilityManagement]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
 - [[_FakeResp]] - `contains` [EXTRACTED]
 - [[_age()]] - `contains` [EXTRACTED]
 - [[_stub_summary()]] - `contains` [EXTRACTED]
 - [[_w()]] - `contains` [EXTRACTED]
-- [[falco_monitor.py]] - `references` [EXTRACTED]
 - [[flags()]] - `contains` [EXTRACTED]
 - [[fs()]] - `contains` [EXTRACTED]
-- [[test_router.py]] - `conceptually_related_to` [AMBIGUOUS]
+- [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[tools()]] - `contains` [EXTRACTED]
-- [[wazuh_client.py]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_516
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

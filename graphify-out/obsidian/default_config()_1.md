@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_filter.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 72"
-location: "L19"
+community: "EgressEvent"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/EgressEvent
 ---
 
 # default_config()
 
 ## Connections
-- [[DNSFilterConfig]] - `calls` [EXTRACTED]
-- [[test_dns_filter.py]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `uses` [INFERRED]
+- [[fixture_38]] - `references` [EXTRACTED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

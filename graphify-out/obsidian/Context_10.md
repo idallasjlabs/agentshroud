@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/HEXSTRIKE_PROXY_PLAN.md"
+source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Community 876"
+community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_876
+  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
 ---
 
 # Context
 
 ## Connections
-- [[Plan Proxying HexStrike AI MCP Agents via AgentShroud]] - `contains` [EXTRACTED]
+- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_876
+#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured

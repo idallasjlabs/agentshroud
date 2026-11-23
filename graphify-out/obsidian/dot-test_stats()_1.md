@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_audit_export.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "The 8D Investigation Process"
-location: "L145"
+community: "TestOutboundInfoFilter"
+location: "L460"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_stats()
 
 ## Connections
-- [[Test audit store statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestAuditStore]] - `method` [EXTRACTED]
+- [[Test filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

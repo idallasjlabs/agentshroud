@@ -1,23 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 34"
+community: "_FakeRBAC"
 location: "L743"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_34
+  - graphify/EXTRACTED
+  - community/_FakeRBAC
 ---
 
 # TestIsOwner
 
 ## Connections
-- [[.test_fallback_without_rbac_manager()]] - `method` [EXTRACTED]
-- [[.test_with_rbac_manager()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_fallback_without_rbac_manager()]] - `method` [EXTRACTED]
+- [[dot-test_with_rbac_manager()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

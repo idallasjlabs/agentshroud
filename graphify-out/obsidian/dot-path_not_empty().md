@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ServiceManager"
-location: "L288"
+community: "ingest_api/models.py"
+location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/ingest_api/modelspy
 ---
 
 # .path_not_empty()
 
 ## Connections
-- [[SSHWriteFileRequest_1]] - `method` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `method` [EXTRACTED]
+- [[field_validator_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

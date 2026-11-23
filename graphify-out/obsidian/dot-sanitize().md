@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L15"
+community: "ToolResultSanitizer"
+location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/ToolResultSanitizer
 ---
 
 # .sanitize()
 
 ## Connections
-- [[_FakeSanitizer]] - `method` [EXTRACTED]
+- [[dot-_extract_code_blocks()]] - `calls` [EXTRACTED]
+- [[dot-_restore_code_blocks()]] - `calls` [EXTRACTED]
+- [[dot-sanitize_images()]] - `calls` [EXTRACTED]
+- [[dot-sanitize_links()]] - `calls` [EXTRACTED]
+- [[Sanitize tool result content by filtering markdown links and images. Args…]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

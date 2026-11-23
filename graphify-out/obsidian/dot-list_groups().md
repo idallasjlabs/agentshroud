@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Function Details"
-location: "L254"
+community: "GroupRegistry"
+location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/GroupRegistry
 ---
 
 # .list_groups()
@@ -15,4 +15,4 @@ tags:
 - [[Group]] - `references` [EXTRACTED]
 - [[GroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/GroupRegistry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 10"
+community: "soc/router.py"
 location: "L946"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # Pause a contributor's bot access without removing their record.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[pause_collaborator_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

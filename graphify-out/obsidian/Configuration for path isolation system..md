@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Community 26"
+community: "test_all_modules_enforce.py"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/test_all_modules_enforcepy
 ---
 
 # Configuration for path isolation system.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PathIsolationConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy

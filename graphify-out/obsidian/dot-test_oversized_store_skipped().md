@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "CronStateMonitor"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/CronStateMonitor
 ---
 
 # .test_oversized_store_skipped()
@@ -16,4 +16,4 @@ tags:
 - [[TestAdversarial]] - `method` [EXTRACTED]
 - [[_DispatchSpy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

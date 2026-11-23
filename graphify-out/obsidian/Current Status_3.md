@@ -1,17 +1,17 @@
 ---
-source_file: "docs/flows/README.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Community 523"
-location: "L13"
+community: "HTTP_PROXY / HTTPS_PROXY"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_523
+  - community/HTTP_PROXY_/_HTTPS_PROXY
 ---
 
 # Current Status
 
 ## Connections
-- [[Flows Documentation]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_523
+#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY

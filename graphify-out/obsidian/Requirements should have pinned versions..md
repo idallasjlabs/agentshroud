@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestDependencySecurity"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestDependencySecurity
 ---
 
 # Requirements should have pinned versions.
 
 ## Connections
-- [[.test_requirements_pinned()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_requirements_pinned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestDependencySecurity

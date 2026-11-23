@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Community 153"
+community: "2. Security Analysis"
 location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/2_Security_Analysis
 ---
 
 # Fix Status
 
 ## Connections
-- [[6. Verdict_2]] - `contains` [EXTRACTED]
+- [[6. Verdict_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis

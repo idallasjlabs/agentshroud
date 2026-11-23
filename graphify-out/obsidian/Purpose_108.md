@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: ".agents/skills/icloud/README.md"
 type: "document"
-community: "Community 1245"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1245
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1245
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

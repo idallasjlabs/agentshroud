@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-bs.agent.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Community 1013"
-location: "L29"
+community: "Skill: UX Expert (UX)"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1013
+  - community/Skill_UX_Expert_UX
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)_3]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1013
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

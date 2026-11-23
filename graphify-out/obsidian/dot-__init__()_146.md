@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "AgentTarget"
-location: "L57"
+community: "HeuristicClassifier"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/HeuristicClassifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

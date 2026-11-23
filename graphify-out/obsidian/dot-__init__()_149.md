@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "AgentTarget"
-location: "L412"
+community: "make_httpx_fetcher"
+location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/make_httpx_fetcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder_2]] - `method` [EXTRACTED]
+- [[_StreamResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "iCloud Services (3)"
+community: "Mode A — Single task"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Services_3
+  - community/Mode_A__Single_task
 ---
 
 # hermes/skills/i-odev/SKILL.md
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Services_3
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

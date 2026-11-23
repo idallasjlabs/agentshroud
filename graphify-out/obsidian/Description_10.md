@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "DelegationManager"
+community: "GATEWAY_OP_PROXY_URL"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Description
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/DelegationManager
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

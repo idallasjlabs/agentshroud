@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 337"
-location: "L232"
+community: "Skill: Technical Illustrator (TI)"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

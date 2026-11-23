@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Skill: Project Management (PM) (3)"
+community: "run_trivy_scan"
 location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/run_trivy_scan
 ---
 
 # .test_run_nonzero_exit_code_is_error()
 
 ## Connections
 - [[TestTrivyRun]] - `method` [EXTRACTED]
-- [[returncode 0 = clean, 1 = vulns found (both expected); anything         else mea]] - `rationale_for` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
+- [[patch_1]] - `references` [EXTRACTED]
+- [[returncode 0 = clean, 1 = vulns found (both expected); anything else means…]] - `rationale_for` [EXTRACTED]
+- [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/code #graphify/EXTRACTED #community/run_trivy_scan

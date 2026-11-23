@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "main.rs"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/mainrs
 ---
 
 # .new()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[GatewayClientT]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
-- [[_T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/mainrs

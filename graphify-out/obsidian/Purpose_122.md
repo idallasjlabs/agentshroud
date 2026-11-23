@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 714"
-location: "L17"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_714
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_714
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

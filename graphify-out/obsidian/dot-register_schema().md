@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "plan_remediation"
+community: "OutputSchemaEnforcer"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/OutputSchemaEnforcer
 ---
 
 # .register_schema()
@@ -16,4 +16,4 @@ tags:
 - [[Register or replace a named schema.]] - `rationale_for` [EXTRACTED]
 - [[SchemaRule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

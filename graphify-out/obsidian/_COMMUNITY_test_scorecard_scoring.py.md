@@ -1,30 +1,24 @@
 ---
 type: community
-cohesion: 0.30
-members: 15
+members: 11
 ---
 
 # test_scorecard_scoring.py
 
-**Cohesion:** 0.30 - loosely connected
-**Members:** 15 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[dot-_make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-is_blocked()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_all_upstreams_fail_sends_servfail()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_blocked_a_query_returns_zero_ip()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_blocked_aaaa_query_returns_null_ipv6()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_blocked_other_qtype_returns_nxdomain()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_datagram_received_schedules_handler()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_forwarded_query_relays_upstream_response()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_short_upstream_response_still_relayed()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_unparseable_short_query_no_servfail_sent()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[Blocklist stub that blocks every domain.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[Build a minimal DNS query packet in wire format.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
-- [[TestDNSForwarderProtocol]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[_BlockAll]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[build_dns_query()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[Tests verifying each scorecard domain scorer can reach its maximum score (55).…]] - rationale - gateway/tests/test_scorecard_scoring.py
+- [[clean_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_falco()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_openscap_with_zero_fails()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[clean_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[fixture_29]] - code
+- [[not_run_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_falco()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[not_run_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[test_scorecard_scoring.py]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,15 +28,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_api.py (2)]]
-- 4 edges to [[_COMMUNITY_TestOAuthInjection]]
-- 3 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 3 edges to [[_COMMUNITY_Deploying AgentShroud on Raspberry Pi (aarch64)]]
-- 2 edges to [[_COMMUNITY_web_proxy.py]]
+- 4 edges to [[_COMMUNITY__mock_dir_with_files]]
+- 2 edges to [[_COMMUNITY__mock_dir_with_fresh_files]]
+- 2 edges to [[_COMMUNITY_TestIsFresh]]
+- 1 edge to [[_COMMUNITY_TestScoreVulnerabilityManagement]]
+- 1 edge to [[_COMMUNITY_TestScoreIncidentResponse]]
+- 1 edge to [[_COMMUNITY_TestScoreMalwareDefense]]
+- 1 edge to [[_COMMUNITY_TestScoreRuntimeProtection]]
+- 1 edge to [[_COMMUNITY_TestScoreContainerHardening]]
+- 1 edge to [[_COMMUNITY_TestScoreLoggingMonitoring]]
+- 1 edge to [[_COMMUNITY_TestScoreNetworkSegmentation]]
+- 1 edge to [[_COMMUNITY_TestScoreSecretsManagement]]
+- 1 edge to [[_COMMUNITY_TestAppStateHas]]
+- 1 edge to [[_COMMUNITY_TestScoreSecureDevelopment]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
 
 ## Top bridge nodes
-- [[TestDNSForwarderProtocol]] - degree 13, connects to 3 communities
-- [[_BlockAll]] - degree 9, connects to 3 communities
-- [[build_dns_query()]] - degree 11, connects to 2 communities
-- [[dot-test_forwarded_query_relays_upstream_response()]] - degree 5, connects to 2 communities
-- [[dot-_make_protocol()]] - degree 10, connects to 1 community
+- [[test_scorecard_scoring.py]] - degree 28, connects to 14 communities

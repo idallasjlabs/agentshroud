@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 151"
+community: "SecurityConfig"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/SecurityConfig
 ---
 
 # Return module mode, respecting the global permissive override.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_module_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_151
+#graphify/rationale #graphify/EXTRACTED #community/SecurityConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PromptGuard"
+community: "prompt_guard.py"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/prompt_guardpy
 ---
 
 # .test_unicode_zero_width()
 
 ## Connections
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

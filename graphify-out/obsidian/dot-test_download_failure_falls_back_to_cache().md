@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "AgentShroud Security Architecture"
+community: "DNSBlocklist"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/DNSBlocklist
 ---
 
 # .test_download_failure_falls_back_to_cache()
@@ -15,4 +15,4 @@ tags:
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
 - [[TestBlocklistDownload]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

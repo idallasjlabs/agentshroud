@@ -1,12 +1,12 @@
 ---
 source_file: "skills/README.md"
 type: "document"
-community: "Community 431"
+community: "agentshroud-blueteam/SKILL.md"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # OpenClaw Built-in Skills
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_431
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

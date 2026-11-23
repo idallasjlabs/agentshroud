@@ -1,17 +1,13 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "Community 24"
+community: "Outbound Information Filter Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/Outbound_Information_Filter_Tests
 ---
 
 # Outbound Information Filter Tests
 
-## Connections
-- [[OutboundInfoFilter]] - `references` [EXTRACTED]
-- [[PromptProtection]] - `semantically_similar_to` [INFERRED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/Outbound_Information_Filter_Tests

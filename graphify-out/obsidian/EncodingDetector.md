@@ -1,74 +1,40 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "Community 84"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # EncodingDetector
 
 ## Connections
-- [[.__init__()_90]] - `method` [EXTRACTED]
-- [[.analyze()_1]] - `method` [EXTRACTED]
-- [[.decode_base64_segments()]] - `method` [EXTRACTED]
-- [[.decode_hex()]] - `method` [EXTRACTED]
-- [[.decode_rot13()]] - `method` [EXTRACTED]
-- [[.decode_url()]] - `method` [EXTRACTED]
-- [[.replace_homoglyphs()]] - `method` [EXTRACTED]
-- [[.setup_method()_5]] - `calls` [EXTRACTED]
-- [[.strip_zero_width()]] - `method` [EXTRACTED]
-- [[.test_config_disable_base64()]] - `calls` [EXTRACTED]
-- [[Any_13]] - `uses` [INFERRED]
-- [[Clock_1]] - `uses` [INFERRED]
-- [[EdgeService]] - `uses` [INFERRED]
-- [[EdgeStore_3]] - `uses` [INFERRED]
-- [[Facade_1]] - `uses` [INFERRED]
-- [[FakeFacade]] - `uses` [INFERRED]
-- [[MemoryTokenStorage]] - `uses` [INFERRED]
-- [[PIISanitizer_3]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
-- [[SecurityPipeline_2]] - `uses` [INFERRED]
-- [[TestAuditRecord]] - `uses` [INFERRED]
-- [[TestCommandCenterStats]] - `uses` [INFERRED]
-- [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
-- [[TestE2E02InboundPIIRedaction]] - `uses` [INFERRED]
-- [[TestE2E03OutboundPIIRedaction]] - `uses` [INFERRED]
-- [[TestE2E04ContextGuardBlocking]] - `uses` [INFERRED]
-- [[TestE2E05CanaryTripwire]] - `uses` [INFERRED]
-- [[TestE2E06EncodingBypassDetection]] - `uses` [INFERRED]
-- [[TestE2E07TrustEnforcement]] - `uses` [INFERRED]
-- [[TestE2E08AuditChainIntegrity]] - `uses` [INFERRED]
-- [[TestE2E09SessionIsolation]] - `uses` [INFERRED]
-- [[TestE2E10FailClosed]] - `uses` [INFERRED]
+- [[dot-__init__()_228]] - `method` [EXTRACTED]
+- [[dot-analyze()_2]] - `method` [EXTRACTED]
+- [[dot-decode_base64_segments()]] - `method` [EXTRACTED]
+- [[dot-decode_hex()]] - `method` [EXTRACTED]
+- [[dot-decode_rot13()]] - `method` [EXTRACTED]
+- [[dot-decode_url()]] - `method` [EXTRACTED]
+- [[dot-replace_homoglyphs()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
+- [[dot-strip_zero_width()]] - `method` [EXTRACTED]
+- [[dot-test_config_disable_base64()]] - `calls` [EXTRACTED]
 - [[TestEncodingDetector]] - `uses` [INFERRED]
-- [[TestMonitorMode]] - `uses` [INFERRED]
-- [[TestT1ToolAbuse]] - `uses` [INFERRED]
-- [[TestT2Exfiltration]] - `uses` [INFERRED]
-- [[TestT3Writes]] - `uses` [INFERRED]
-- [[TestT4AuthN]] - `uses` [INFERRED]
-- [[TestT9Abuse]] - `uses` [INFERRED]
-- [[TestToolListing]] - `uses` [INFERRED]
-- [[VendorProfile_3]] - `uses` [INFERRED]
-- [[WS-E RT-2 Inbound Encoding Bypass Fix Rationale]] - `rationale_for` [EXTRACTED]
-- [[_BrokenOutputCanary]] - `uses` [INFERRED]
-- [[_BrokenSanitizer]] - `uses` [INFERRED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[build_edge_service()]] - `calls` [EXTRACTED]
-- [[edge()_1]] - `calls` [EXTRACTED]
+- [[edge()]] - `uses` [INFERRED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[pipeline()_1]] - `calls` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[pipeline()]] - `uses` [INFERRED]
+- [[run()_1]] - `calls` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
-- [[stack()]] - `calls` [EXTRACTED]
+- [[stack()]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `imports` [EXTRACTED]
 - [[test_edge_e2e_sdk.py]] - `imports` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `imports` [EXTRACTED]
@@ -78,7 +44,8 @@ tags:
 - [[test_encoding_detector_rot13_empty_text()]] - `calls` [EXTRACTED]
 - [[test_encoding_detector_rot13_ignores_benign_prose()]] - `calls` [EXTRACTED]
 - [[test_encoding_detector_rot13_skips_already_visible_injection()]] - `calls` [EXTRACTED]
+- [[test_inbound_encoding_detector_error_fails_closed()]] - `uses` [INFERRED]
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
-- [[test_ws_e_rt2_inbound_encoding.py]] - `references` [EXTRACTED]
+- [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

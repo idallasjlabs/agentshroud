@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "FileSandbox"
-location: "L44"
+community: "middleware.py"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestFileSandboxConfig]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
+- [[TestFileSandboxDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

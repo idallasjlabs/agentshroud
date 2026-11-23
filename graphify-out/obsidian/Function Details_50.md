@@ -1,23 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Community 392"
-location: "L44"
+community: "Function Details"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Function_Details
 ---
 
 # Function Details
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
-- [[TrustManager._apply_decay(score, last_action_time)]] - `contains` [EXTRACTED]
-- [[TrustManager._update_score(agent_id, delta, event_type, details)]] - `contains` [EXTRACTED]
-- [[TrustManager.get_history(agent_id, limit)]] - `contains` [EXTRACTED]
-- [[TrustManager.get_trust(agent_id)]] - `contains` [EXTRACTED]
-- [[TrustManager.is_action_allowed(agent_id, action)]] - `contains` [EXTRACTED]
-- [[trust_manager.py_2]] - `contains` [EXTRACTED]
+- [[ResourceGuard.__init__(limits)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.add_alert_callback(callback)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_cpu_limit(agent_id)  check_memory_limit(agent_id)  check_disk_write_limit(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.check_resource(agent_id, resource_type, amount)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.cleanup_temp_files(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.get_usage_stats(agent_id)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.register_temp_file(agent_id, file_path)]] - `contains` [EXTRACTED]
+- [[ResourceGuard.start_request_tracking(agent_id)]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,24 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
-type: "document"
-community: "Community 666"
-location: "L10"
+source_file: "gateway/proxy/mcp_inspector.py"
+type: "code"
+community: "test_mcp_proxy.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/test_mcp_proxypy
 ---
 
 # mcp_inspector.py
 
 ## Connections
-- [[Configuration  Environment Variables_4]] - `contains` [EXTRACTED]
-- [[Detection Patterns_1]] - `contains` [EXTRACTED]
-- [[Function Details_10]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_13]] - `contains` [EXTRACTED]
-- [[Purpose_131]] - `contains` [EXTRACTED]
-- [[Related_16]] - `contains` [EXTRACTED]
-- [[Responsibilities_15]] - `contains` [EXTRACTED]
-- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
+- [[Enum_25]] - `imports_from` [EXTRACTED]
+- [[FindingType]] - `contains` [EXTRACTED]
+- [[InspectionFinding]] - `contains` [EXTRACTED]
+- [[InspectionResult]] - `contains` [EXTRACTED]
+- [[MCP Inspector — tool call inspection for injection, PII, and sensitive ops.…]] - `rationale_for` [EXTRACTED]
+- [[MCPInspector]] - `contains` [EXTRACTED]
+- [[ThreatLevel_1]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_proxy_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_666
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

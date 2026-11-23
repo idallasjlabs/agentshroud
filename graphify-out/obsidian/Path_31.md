@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cron_jobs_prompts.py"
+source_file: ""
 type: "code"
-community: "Community 597"
-location: "L40"
+community: "ConfigIntegrityMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_597
+  - community/ConfigIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[dot-__init__()_91]] - `references` [EXTRACTED]
+- [[dot-_hash_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_597
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

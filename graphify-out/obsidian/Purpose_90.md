@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "Community 1235"
-location: "L6"
+community: "proxy_status.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1235
+  - community/proxy_statuspy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1235
+#graphify/document #graphify/EXTRACTED #community/proxy_statuspy

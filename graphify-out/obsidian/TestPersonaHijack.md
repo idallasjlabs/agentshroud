@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "Community 187"
+community: "HeuristicClassifier"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_187
+  - community/HeuristicClassifier
 ---
 
 # TestPersonaHijack
 
 ## Connections
-- [[.test_persona_hijack_detection_rate()]] - `method` [EXTRACTED]
+- [[dot-test_persona_hijack_detection_rate()]] - `method` [EXTRACTED]
 - [[HeuristicClassifier]] - `uses` [INFERRED]
 - [[Persona hijack  DAN-style payloads.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_187
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

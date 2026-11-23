@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "FetchOutcome"
+community: "TestOutboundInfoFilter"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_operational_path_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test that internal file paths are filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

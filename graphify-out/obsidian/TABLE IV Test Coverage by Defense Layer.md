@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 330"
+community: "VIII. Evaluation"
 location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/VIII_Evaluation
 ---
 
 # TABLE IV: Test Coverage by Defense Layer
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VIII. Evaluation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_330
+#graphify/document #graphify/EXTRACTED #community/VIII_Evaluation

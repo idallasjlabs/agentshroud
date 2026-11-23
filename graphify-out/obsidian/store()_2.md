@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_edge_jwt.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 135"
-location: "L39"
+community: "ApprovalStore"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_135
+  - community/ApprovalStore
 ---
 
 # store()
 
 ## Connections
-- [[EdgeStore_4]] - `calls` [EXTRACTED]
-- [[test_edge_jwt.py]] - `contains` [EXTRACTED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[Path_53]] - `references` [EXTRACTED]
+- [[fixture_102]] - `references` [EXTRACTED]
+- [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_135
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

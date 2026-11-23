@@ -1,17 +1,17 @@
 ---
 source_file: ".cursor/mcp.json"
 type: "code"
-community: "Community 397"
+community: ".cursor/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_397
+  - community/cursor/mcpjson
 ---
 
 # safari-mcp
 
 ## Connections
-- [[safari]] - `references` [EXTRACTED]
+- [[safari_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_397
+#graphify/code #graphify/EXTRACTED #community/cursor/mcpjson

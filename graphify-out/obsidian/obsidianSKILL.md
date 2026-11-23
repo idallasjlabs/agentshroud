@@ -1,18 +1,17 @@
 ---
 source_file: "skills/openclaw/obsidian/SKILL.md"
 type: "document"
-community: "LVGL KAWAII FACE"
+community: "Obsidian"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_KAWAII_FACE
+  - community/Obsidian
 ---
 
 # obsidian/SKILL.md
 
 ## Connections
 - [[Obsidian]] - `contains` [EXTRACTED]
-- [[notionSKILL]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE
+#graphify/document #graphify/EXTRACTED #community/Obsidian

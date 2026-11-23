@@ -1,18 +1,20 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "Community 159"
-location: "L61"
+community: "mcp"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/mcp
 ---
 
 # environment
 
 ## Connections
-- [[PATH_6]] - `contains` [EXTRACTED]
-- [[safari_5]] - `contains` [EXTRACTED]
+- [[PATH_18]] - `contains` [EXTRACTED]
+- [[autoOpenFile]] - `contains` [EXTRACTED]
+- [[outputPath]] - `contains` [EXTRACTED]
+- [[xmind]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/mcp

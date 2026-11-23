@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-gg.md"
+source_file: ".github/agents/i-vulcan.agent.md"
 type: "document"
-community: "Community 1956"
-location: "L10"
+community: "Vulcan — Subject Matter Auditor"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1956
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1956
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

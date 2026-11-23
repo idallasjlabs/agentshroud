@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/agents/daedalus.md"
 type: "document"
-community: "Community 1858"
+community: "Daedalus — Concept Illustrator"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1858
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # diagrams/README.md
 
 ## Connections
-- [[Output Format_2]] - `contains` [EXTRACTED]
+- [[Output Format_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1858
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

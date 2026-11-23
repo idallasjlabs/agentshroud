@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "asyncio"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/asyncio
 ---
 
 # .test_dashboard_bad_cookie_returns_403()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[GET dashboard with invalid cookie returns 403]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
+- [[asyncio_47]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

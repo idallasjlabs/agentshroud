@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "ReportStore"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/ReportStore
 ---
 
 # ._enforce_count_cap()
@@ -14,8 +14,7 @@ tags:
 ## Connections
 - [[dot-_persist()]] - `calls` [EXTRACTED]
 - [[dot-delete()]] - `calls` [EXTRACTED]
-- [[dot-get()]] - `calls` [EXTRACTED]
 - [[Prune oldest reports so the shared volume can't be filled.]] - `rationale_for` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

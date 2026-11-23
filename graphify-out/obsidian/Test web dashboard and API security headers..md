@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestWebSecurity"
 location: "L707"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestWebSecurity
 ---
 
 # Test web dashboard and API security headers.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSecurity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "SkillGuard"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/SkillGuard
 ---
 
 # .test_absolute_system_path_write_flags()
@@ -16,4 +16,4 @@ tags:
 - [[TestPathTraversal]] - `method` [EXTRACTED]
 - [[_finding_categories()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

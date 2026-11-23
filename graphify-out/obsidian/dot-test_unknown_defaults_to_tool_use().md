@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestAnalyzeRequestForRBAC"
 location: "L736"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestAnalyzeRequestForRBAC
 ---
 
 # .test_unknown_defaults_to_tool_use()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAnalyzeRequestForRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestAnalyzeRequestForRBAC

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1105"
+community: "asyncio"
 location: "L601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1105
+  - community/asyncio
 ---
 
 # Integration tests with other security components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1105
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

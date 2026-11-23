@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 37"
+community: "AsyncMock"
 location: "L515"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_37
+  - graphify/EXTRACTED
+  - community/AsyncMock
 ---
 
 # test_egress_rules_fallback_empty()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[RuntimeError]] - `calls` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

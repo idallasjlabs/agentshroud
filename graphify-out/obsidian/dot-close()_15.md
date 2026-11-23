@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Usage"
-location: "L97"
+community: "_run_asgi"
+location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/_run_asgi
 ---
 
 # .close()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/_run_asgi

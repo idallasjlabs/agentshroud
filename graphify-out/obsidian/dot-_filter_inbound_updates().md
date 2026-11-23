@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L4201"
+community: "TelegramAPIProxy"
+location: "L4219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/TelegramAPIProxy
 ---
 
 # ._filter_inbound_updates()
@@ -89,15 +89,27 @@ tags:
 - [[dot-_send_rate_limit_notice()]] - `calls` [EXTRACTED]
 - [[dot-_send_stranger_rate_limit_notice()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_text()]] - `calls` [EXTRACTED]
+- [[dot-_state()]] - `indirect_call` [INFERRED]
 - [[dot-_trigger_web_fetch_approval()]] - `calls` [EXTRACTED]
 - [[dot-_username_for_bot()]] - `calls` [EXTRACTED]
 - [[DelegationPrivilege]] - `calls` [EXTRACTED]
-- [[RBACConfig_3]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[Scan inbound messages from getUpdates for security threats.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[_app_state()]] - `indirect_call` [INFERRED]
+- [[_local_addmember_handler()]] - `indirect_call` [INFERRED]
+- [[_local_help_handler()]] - `indirect_call` [INFERRED]
+- [[_local_linkgroup_handler()]] - `indirect_call` [INFERRED]
+- [[_local_listgroups_handler()]] - `indirect_call` [INFERRED]
+- [[_local_newgroup_handler()]] - `indirect_call` [INFERRED]
+- [[_local_removemember_handler()]] - `indirect_call` [INFERRED]
+- [[_local_start_handler()]] - `indirect_call` [INFERRED]
+- [[_local_status_handler()]] - `indirect_call` [INFERRED]
+- [[_local_whoami_handler()]] - `indirect_call` [INFERRED]
+- [[multi_turn_tracker()]] - `indirect_call` [INFERRED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[pause_collaborator()]] - `calls` [EXTRACTED]
 - [[persist_approved_collaborator()]] - `calls` [EXTRACTED]
 - [[unpause_collaborator()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

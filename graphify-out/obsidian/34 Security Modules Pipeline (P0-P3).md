@@ -1,11 +1,11 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "concept"
-community: "Community 915"
+community: "34 Security Modules Pipeline (P0-P3)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_915
+  - community/34_Security_Modules_Pipeline_P0-P3
 ---
 
 # 34 Security Modules Pipeline (P0-P3)
@@ -13,9 +13,8 @@ tags:
 ## Connections
 - [[Multi-Stage Security Pipeline (P0-P3 tiers)]] - `semantically_similar_to` [INFERRED]
 - [[Open Findings (C3-C5, H4-H7, M1-M5)]] - `references` [EXTRACTED]
-- [[approval_queue.py]] - `conceptually_related_to` [EXTRACTED]
 - [[egress_filter module]] - `conceptually_related_to` [EXTRACTED]
 - [[pii_sanitizer module (disabled — false positives)]] - `conceptually_related_to` [EXTRACTED]
 - [[prompt_guard module (observatory mode — too aggressive for enforce)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_915
+#graphify/concept #graphify/EXTRACTED #community/34_Security_Modules_Pipeline_P0-P3

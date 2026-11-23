@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "Community 740"
-location: "L161"
+community: "text_control_center.py / agentshroud_manager.py"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/text_control_centerpy_/_agentshroud_managerpy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_740
+#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy

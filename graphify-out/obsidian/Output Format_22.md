@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mnemosyne/SKILL.md"
+source_file: ".opencode/agents/sf.md"
 type: "document"
-community: "Community 1994"
-location: "L25"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1994
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1994
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

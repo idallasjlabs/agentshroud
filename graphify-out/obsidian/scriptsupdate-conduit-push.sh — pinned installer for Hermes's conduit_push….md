@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_update_conduit_push.py"
 type: "rationale"
-community: "_run()"
+community: "_run"
 location: "L5"
 tags:
   - graphify/rationale

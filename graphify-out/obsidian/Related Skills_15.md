@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "Community 117"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "test_module_stats.py"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/test_module_statspy
 ---
 
 # .test_tool_acl_can_use_tool_records()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 - [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

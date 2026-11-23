@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 1569"
-location: "L119"
+community: "Quick Reference — AgentShroud"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Logs
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

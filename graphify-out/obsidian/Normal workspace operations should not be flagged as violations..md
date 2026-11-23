@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestSecurityViolationLogging"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestSecurityViolationLogging
 ---
 
 # Normal workspace operations should not be flagged as violations.
 
 ## Connections
-- [[.test_normal_operations_not_violations()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_normal_operations_not_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestSecurityViolationLogging

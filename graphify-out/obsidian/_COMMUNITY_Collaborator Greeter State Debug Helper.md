@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Collaborator Greeter State Debug Helper
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[WhitespaceEOF fixers exclude vendored SCAP datastream]] - rationale - .pre-commit-config.yaml
+- [[Collaborator Greeter State Debug Helper]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

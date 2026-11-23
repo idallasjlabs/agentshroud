@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # App Icon 128x128 (AgentShroud logo mark)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue._notify_telegram]] - code - gateway/approval_queue/enhanced_queue.py
+- [[App Icon 128x128 (AgentShroud logo mark)]] - image - branding/icons/app/icon-128x128.png
 
 ## Live Query (requires Dataview plugin)
 

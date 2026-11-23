@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L862"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # query_ledger()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
-- [[Query the data ledger      Returns paginated results with optional filters.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[Query the data ledger Returns paginated results with optional filters.…]] - `rationale_for` [EXTRACTED]
+- [[get_4]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Community 18"
+community: "test_collaborator_responses.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/test_collaborator_responsespy
 ---
 
 # collaborator_responses.py
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[GroupConfig]] - `imports` [EXTRACTED]
 - [[ProjectConfig]] - `imports` [EXTRACTED]
+- [[Shared collaborator response templates for Telegram and Slack proxies.…]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
 - [[build_project_context_injection()]] - `contains` [EXTRACTED]
 - [[format_addtogroup_success()]] - `contains` [EXTRACTED]
@@ -27,6 +28,6 @@ tags:
 - [[format_setmode_success()]] - `contains` [EXTRACTED]
 - [[format_unknown_group()]] - `contains` [EXTRACTED]
 - [[group_config.py]] - `imports_from` [EXTRACTED]
-- [[slack_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_collaborator_responses.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

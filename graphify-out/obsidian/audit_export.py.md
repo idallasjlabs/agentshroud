@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "Community 254"
+community: "AuditEvent"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/AuditEvent
 ---
 
 # audit_export.py
 
 ## Connections
-- [[AuditEvent_1]] - `imports` [EXTRACTED]
-- [[AuditExportConfig_1]] - `contains` [EXTRACTED]
+- [[AuditEvent]] - `imports` [EXTRACTED]
+- [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[AuditExporter]] - `contains` [EXTRACTED]
-- [[AuditStore_1]] - `imports` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
+- [[AuditStore]] - `imports` [EXTRACTED]
 - [[audit_store.py]] - `imports_from` [EXTRACTED]
+- [[test_audit_export.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

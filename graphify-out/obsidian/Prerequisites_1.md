@@ -1,17 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 258"
-location: "L7"
+community: "Deployment Runbook — AgentShroud"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

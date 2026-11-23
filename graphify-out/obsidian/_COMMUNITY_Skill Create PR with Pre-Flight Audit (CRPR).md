@@ -1,31 +1,28 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 15
 ---
 
 # Skill: Create PR with Pre-Flight Audit (CRPR)
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[AgentShroud Security Assessment — v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-1 `history.env` committed to git with live Telegram credentials]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[CRITICAL-2 No request body size limits on API models]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Critical Findings_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Executive Summary_12]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-1 ML injection classifier is entirely a stub]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-2 Approval queue Telegram notifications unimplemented]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-3 Credential generation in key rotation is a placeholder]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[HIGH-4 In-memory audit chain not persisted]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[High-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Low-Priority  Informational]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Medium-Priority Gaps]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Remediation Status (Post-v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[Scorecard Are We Achieving Our Goal]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[What's Working Well_1]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
-- [[security-assessment-v0.8.0]] - document - docs/planning/v0.8/security-assessment-v0.8.0.md
+- [[dot-agentsagentsi-crpr]] - document - .agents/agents/i-crpr.md
+- [[Guardrails_1]] - document - .agents/agents/i-crpr.md
+- [[Invocation]] - document - .agents/agents/i-crpr.md
+- [[Role_14]] - document - .agents/agents/i-crpr.md
+- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - document - .agents/agents/i-crpr.md
+- [[Step 0 — Pre-flight checks]] - document - .agents/agents/i-crpr.md
+- [[Step 1 — Check for an in-progress merge]] - document - .agents/agents/i-crpr.md
+- [[Step 2 — Merge without committing]] - document - .agents/agents/i-crpr.md
+- [[Step 3 — Audit the pending merge]] - document - .agents/agents/i-crpr.md
+- [[Step 3a — Present and resolve confirmed regressions]] - document - .agents/agents/i-crpr.md
+- [[Step 3b — Re-audit to confirm clean]] - document - .agents/agents/i-crpr.md
+- [[Step 3c — Commit the merge]] - document - .agents/agents/i-crpr.md
+- [[Step 4 — Push the branch]] - document - .agents/agents/i-crpr.md
+- [[Step 5 — Generate the PR description]] - document - .agents/agents/i-crpr.md
+- [[Step 6 — Create the PR]] - document - .agents/agents/i-crpr.md
 
 ## Live Query (requires Dataview plugin)
 

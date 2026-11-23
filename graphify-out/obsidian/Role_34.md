@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ux.md"
+source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "Community 296"
+community: "Skill: Security Review (SEC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_296
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

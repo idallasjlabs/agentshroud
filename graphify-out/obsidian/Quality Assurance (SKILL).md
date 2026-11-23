@@ -1,27 +1,27 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 177"
+community: "Quality Assurance (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Quality_Assurance_SKILL
 ---
 
 # Quality Assurance (SKILL)
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-qaREADME]] - `contains` [EXTRACTED]
 - [[Production Safety Checklist (SKILL)]] - `semantically_similar_to` [INFERRED]
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_22]] - `contains` [EXTRACTED]
-- [[Purpose_63]] - `contains` [EXTRACTED]
+- [[Purpose_66]] - `contains` [EXTRACTED]
+- [[Purpose_68]] - `contains` [EXTRACTED]
 - [[Quality Assurance (README)]] - `conceptually_related_to` [INFERRED]
-- [[README_22]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_28]] - `contains` [EXTRACTED]
-- [[Related Skills_84]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
-- [[Usage_86]] - `contains` [EXTRACTED]
+- [[Related Skills_19]] - `contains` [EXTRACTED]
+- [[Related Skills_21]] - `contains` [EXTRACTED]
+- [[Usage_21]] - `contains` [EXTRACTED]
+- [[Usage_23]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

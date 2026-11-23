@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "Community 391"
-location: "L6"
+community: "Function Details"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/Function_Details
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
-- [[GSDE&G Development Master Checklist Skill]] - `contains` [EXTRACTED]
+- [[podman_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_391
+#graphify/document #graphify/EXTRACTED #community/Function_Details

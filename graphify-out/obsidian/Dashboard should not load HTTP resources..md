@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestWebSecurity"
 location: "L738"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestWebSecurity
 ---
 
 # Dashboard should not load HTTP resources.
 
 ## Connections
-- [[.test_no_mixed_content()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_no_mixed_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSecurity

@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TestAtomicRegistryWrites"
 location: "L370"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TestAtomicRegistryWrites
 ---
 
 # .test_atomic_save_never_leaves_partial_registry_on_crash()
 
 ## Connections
-- [[If the write to the temp file fails mid-flight, the existing         registry on]] - `rationale_for` [EXTRACTED]
+- [[If the write to the temp file fails mid-flight, the existing registry on disk…]] - `rationale_for` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `method` [EXTRACTED]
+- [[boom()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestAtomicRegistryWrites

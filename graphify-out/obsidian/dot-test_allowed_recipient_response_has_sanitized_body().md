@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestPatternDetection"
+community: "TestEmailSend"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/TestEmailSend
 ---
 
 # .test_allowed_recipient_response_has_sanitized_body()
@@ -15,4 +15,4 @@ tags:
 - [[Approved response includes sanitized_body field.]] - `rationale_for` [EXTRACTED]
 - [[TestEmailSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

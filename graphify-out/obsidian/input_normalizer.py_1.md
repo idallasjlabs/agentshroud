@@ -1,17 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "Community 679"
-location: "L1"
+community: "input_normalizer.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/input_normalizerpy
 ---
 
-# input_normalizer.py.md
+# input_normalizer.py
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[Environment Variables_7]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
+- [[Invisible Characters Stripped]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_25]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_5]] - `contains` [EXTRACTED]
+- [[Purpose_26]] - `contains` [EXTRACTED]
+- [[Related_25]] - `contains` [EXTRACTED]
+- [[Responsibilities_25]] - `contains` [EXTRACTED]
+- [[Threat Model_11]] - `contains` [EXTRACTED]
+- [[Usage Context]] - `contains` [EXTRACTED]
+- [[input_normalizer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

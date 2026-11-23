@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Community 594"
-location: "L12"
+community: "Athena — Knowledge Distiller"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_594
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_594
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

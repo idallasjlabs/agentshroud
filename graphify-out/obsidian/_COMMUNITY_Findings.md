@@ -1,38 +1,34 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+members: 21
 ---
 
 # Findings
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[AgentShroud Security Hardening Plan]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Architecture_7]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (2026-02-24)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Current State (v0.7.0 → All Phases Complete)]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Endpoints_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Execution Order]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[FINAL Network Lockdown Activation ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[GitHub Workflow]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Injection vectors explicitly covered]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Key points the Cisco finding implies]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Module Status Summary]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P0 Fix Pre-Existing Test Failures ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P1 HTTP CONNECT Proxy + Domain Allowlist ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P2 Credential Isolation via op-proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P3 Channel Ownership — Telegram + Email ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P4 Wire MCP Proxy ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[P5 Wire SecurityPipeline to forward ✅ DONE]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[PII Detection]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Roadmap_1]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[SECURITY_PLAN]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Threat Coverage Matrix]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[What Security Experts Will See]] - document - docs/planning/v0.8/SECURITY_PLAN.md
-- [[Why This Matters_2]] - document - docs/planning/v0.8/SECURITY_PLAN.md
+- [[AgentShroud v0.8.0 — Blue Team Security Assessment]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C1 Hardcoded Owner User ID in middleware.py94]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C2 Hardcoded Owner User ID in webhook_receiver.py45]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[C3 Bot Tokens Partially Exposed in Chat History]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[CRITICAL — Must Fix Before Release_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Findings]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H1 Telegram Proxy middleware_manager Never Initialized]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H2 FileSandbox _extract_file_paths Regex Too Broad]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[H3 Gateway Password Still in auth.token]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[HIGH — Should Fix]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L1 State Dir is a Symlink]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L2 Browser Control Enabled]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[L3 Memory Index Not Built]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[LOW — Informational_1]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M1 No Rate Limiting on Security Endpoints]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M2 subprocess Calls Use Lists (Good) but No Resource Limits]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[M3 Pi-hole Web Password in Secrets File]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[MEDIUM — Recommended]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Remediation Plan]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[Summary_46]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
+- [[blue-team-assessment-v0.8.0]] - document - docs/planning/v0.8/blue-team-assessment-v0.8.0.md
 
 ## Live Query (requires Dataview plugin)
 

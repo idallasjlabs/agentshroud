@@ -1,13 +1,13 @@
 ---
 source_file: "docs/index.html"
 type: "concept"
-community: "Community 2469"
+community: "OpenClaw CVE table (#cves, paginated)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_2469
+  - community/OpenClaw_CVE_table_cves_paginated
 ---
 
 # OpenClaw CVE table (#cves, paginated)
 
-#graphify/concept #graphify/EXTRACTED #community/Community_2469
+#graphify/concept #graphify/EXTRACTED #community/OpenClaw_CVE_table_cves_paginated

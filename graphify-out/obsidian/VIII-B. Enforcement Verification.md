@@ -1,12 +1,12 @@
 ---
 source_file: "docs/papers/agentshroud-ieee-paper.md"
 type: "document"
-community: "Community 330"
+community: "VIII. Evaluation"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_330
+  - community/VIII_Evaluation
 ---
 
 # VIII-B. Enforcement Verification
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VIII. Evaluation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_330
+#graphify/document #graphify/EXTRACTED #community/VIII_Evaluation

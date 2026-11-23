@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-sdlc.md"
+source_file: ".agents/agents/i-sdlc.md"
 type: "document"
-community: "Community 2260"
+community: ".agents/agents/i-sdlc.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2260
+  - community/agents/agents/i-sdlcmd
 ---
 
 # Skill: sdlc
 
 ## Connections
-- [[i-sdlc_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-sdlc]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2260
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-sdlcmd

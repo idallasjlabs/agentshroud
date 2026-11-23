@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L517"
+community: "_make_proxy"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/_make_proxy
 ---
 
 # .filter_xml_blocks()
 
 ## Connections
-- [[PIISanitizer_3]] - `method` [EXTRACTED]
-- [[Remove Claude XML function call blocks from responses          Strips out intern]] - `rationale_for` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

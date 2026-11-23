@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
 type: "document"
-community: "Community 877"
-location: "L53"
+community: "docker_engine.py"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/docker_enginepy
 ---
 
 # Related
 
 ## Connections
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[docker_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_877
+#graphify/document #graphify/EXTRACTED #community/docker_enginepy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 1016"
+community: "Features"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1016
+  - community/Features
 ---
 
 # security-supply-chain.md
@@ -15,6 +15,5 @@ tags:
 - [[Security Supply Chain Analysis]] - `contains` [EXTRACTED]
 - [[Wazuh CVE-2025-24016 (CVSS 9.9)]] - `references` [EXTRACTED]
 - [[container-policy]] - `conceptually_related_to` [INFERRED]
-- [[history-purge-plan]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1016
+#graphify/document #graphify/EXTRACTED #community/Features

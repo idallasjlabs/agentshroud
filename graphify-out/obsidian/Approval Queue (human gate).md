@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-07-data-flow.svg"
 type: "concept"
-community: "Community 487"
+community: "Audit Ledger (SHA-256 hash only)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_487
+  - community/Audit_Ledger_SHA-256_hash_only
 ---
 
 # Approval Queue (human gate)
@@ -13,6 +13,5 @@ tags:
 ## Connections
 - [[PII Sanitizer (Presidio  regex)]] - `shares_data_with` [EXTRACTED]
 - [[Telegram API_1]] - `calls` [EXTRACTED]
-- [[approval_queue.py]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_487
+#graphify/concept #graphify/EXTRACTED #community/Audit_Ledger_SHA-256_hash_only

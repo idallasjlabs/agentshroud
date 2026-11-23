@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-sec/SKILL.md"
 type: "document"
-community: "dashboard_endpoints.py (2)"
+community: "Skill: Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_2
+  - community/Skill_Security_Review_SEC
 ---
 
 # .agents/skills/i-sec/SKILL.md
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

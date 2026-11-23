@@ -1,22 +1,22 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "scripts/export-email-reports.py"
 type: "code"
-community: "Community 777"
-location: "L43"
+community: "export-email-reports.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/export-email-reportspy
 ---
 
 # _parse_since()
 
 ## Connections
-- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or     'YYYY-MM-DD]] - `rationale_for` [EXTRACTED]
+- [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or 'YYYY-MM-DD…]] - `rationale_for` [EXTRACTED]
 - [[_parse_since()_1]] - `semantically_similar_to` [INFERRED]
 - [[_parse_since()_2]] - `semantically_similar_to` [INFERRED]
-- [[datetime_7]] - `references` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[datetime_2]] - `references` [EXTRACTED]
+- [[export-email-reports.py]] - `contains` [EXTRACTED]
+- [[main()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/export-email-reportspy

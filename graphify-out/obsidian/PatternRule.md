@@ -1,31 +1,21 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 22"
+community: "prompt_guard.py"
 location: "L45"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_22
+  - graphify/EXTRACTED
+  - community/prompt_guardpy
 ---
 
 # PatternRule
 
 ## Connections
-- [[.__init__()_122]] - `references` [EXTRACTED]
-- [[.test_custom_pattern()]] - `calls` [EXTRACTED]
-- [[TestAgentIsolation]] - `uses` [INFERRED]
-- [[TestDriftDetector]] - `uses` [INFERRED]
-- [[TestDriftDetectorHardened]] - `uses` [INFERRED]
-- [[TestEgressFilter]] - `uses` [INFERRED]
-- [[TestEgressSSRF]] - `uses` [INFERRED]
-- [[TestEncryptedStore]] - `uses` [INFERRED]
-- [[TestPromptGuard_1]] - `uses` [INFERRED]
-- [[TestPromptGuardEvasion]] - `uses` [INFERRED]
-- [[TestSecureZero]] - `uses` [INFERRED]
-- [[TestTrustManager]] - `uses` [INFERRED]
-- [[TestTrustManagerHardened]] - `uses` [INFERRED]
-- [[prompt_guard.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_108]] - `references` [EXTRACTED]
+- [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
+- [[TestPromptGuard]] - `uses` [INFERRED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

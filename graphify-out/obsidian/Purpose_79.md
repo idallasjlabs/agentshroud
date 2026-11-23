@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-bs/README.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Community 58"
-location: "L6"
+community: "installer.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/installerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/installerpy

@@ -1,33 +1,31 @@
 ---
 type: community
-cohesion: 0.11
 members: 18
 ---
 
 # alert_dispatcher.py
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 18 nodes
 
 ## Members
-- [[Blob Wire Format]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Configuration_14]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.decrypt(blob)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.encrypt(data)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Environment Variables_8]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Function Details_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Key Classes  Functions_6]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Key Rotation Workflow]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Mode Enforce vs Monitor_5]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Purpose_89]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Related_10]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Responsibilities_8]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[Threat Model_7]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[_secure_zero(buffer)]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[encrypted_store.py_2]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
-- [[encrypted_store.py_1]] - document - docs/vault/02 - Modules/Security Modules/encrypted_store.py.md
+- [[Alert JSONL Format]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher._send_notification(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.cleanup_seen()]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.dispatch(alert)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[AlertDispatcher.get_digest(clear)]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Configuration_26]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Environment Variables_15]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Function Details_46]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Key Classes  Functions_49]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Mode Enforce vs Monitor_8]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Module-Level Constants_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Operational Notes_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Purpose_190]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Related_53]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Responsibilities_53]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[Threat Model_23]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[alert_dispatcher.py_2]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
+- [[alert_dispatcher.py_1]] - document - docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,3 +33,9 @@ members: 18
 TABLE source_file, type FROM #community/alert_dispatcherpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
+
+## Top bridge nodes
+- [[alert_dispatcher.py_1]] - degree 2, connects to 1 community

@@ -1,19 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 378"
+community: "app_main.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # audio.c
 
 ## Connections
 - [[String]] - `imports` [EXTRACTED]
-- [[audio.c]] - `imports` [EXTRACTED]
 - [[audio_capture_frame()]] - `contains` [EXTRACTED]
 - [[audio_get_saved_volume()]] - `contains` [EXTRACTED]
 - [[audio_init()]] - `contains` [EXTRACTED]
@@ -21,5 +20,6 @@ tags:
 - [[audio_preinit()]] - `contains` [EXTRACTED]
 - [[audio_set_volume()]] - `contains` [EXTRACTED]
 - [[audio_volume_tick()]] - `contains` [EXTRACTED]
+- [[mainaudio.h]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/app_mainc

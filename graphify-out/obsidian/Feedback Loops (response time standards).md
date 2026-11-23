@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ux.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 296"
-location: "L107"
+community: "Skill: UX Expert (UX)"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/Skill_UX_Expert_UX
 ---
 
 # Feedback Loops (response time standards)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Interaction Design Patterns]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_296
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

@@ -1,16 +1,16 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 104"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_104
+  - community/triage-cve-mitigationspy
 ---
 
 # _consume_field
 
 ## Connections
-- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_104
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

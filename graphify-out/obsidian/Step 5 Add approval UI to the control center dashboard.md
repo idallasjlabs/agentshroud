@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/02-human-in-the-loop.md"
 type: "document"
-community: "Community 607"
+community: "Remediation"
 location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_607
+  - community/Remediation
 ---
 
 # Step 5: Add approval UI to the control center dashboard
 
 ## Connections
-- [[Remediation_3]] - `contains` [EXTRACTED]
+- [[Remediation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_607
+#graphify/document #graphify/EXTRACTED #community/Remediation

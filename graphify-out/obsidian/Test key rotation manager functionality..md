@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 271"
+community: "KeyRotationManager"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/KeyRotationManager
 ---
 
 # Test key rotation manager functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRotationManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_271
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

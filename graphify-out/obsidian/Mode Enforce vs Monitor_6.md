@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Community 287"
-location: "L80"
+community: "canary.py"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/canarypy
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[egress_filter.py_2]] - `contains` [EXTRACTED]
+- [[canary.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_287
+#graphify/document #graphify/EXTRACTED #community/canarypy

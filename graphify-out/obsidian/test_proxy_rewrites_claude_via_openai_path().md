@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "code"
-community: "Community 360"
+community: "test_anthropic_openai_translator.py"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # test_proxy_rewrites_claude_via_openai_path()
 
 ## Connections
-- [[LLMProxy]] - `calls` [EXTRACTED]
-- [[The combined path v1chatcompletions with model=claude- must     end up POST]] - `rationale_for` [EXTRACTED]
+- [[LLMProxy]] - `uses` [INFERRED]
+- [[The combined path v1chatcompletions with model=claude- must end up POSTing…]] - `rationale_for` [EXTRACTED]
+- [[asyncio_18]] - `references` [EXTRACTED]
+- [[fake_open()]] - `indirect_call` [INFERRED]
+- [[mock_forward()]] - `indirect_call` [INFERRED]
 - [[test_claude_via_openai_path.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_360
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

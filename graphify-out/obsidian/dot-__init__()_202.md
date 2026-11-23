@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "AuditExportConfig"
-location: "L65"
+community: "DifferentialPIIDetector"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditExportConfig_1]] - `references` [EXTRACTED]
-- [[AuditExporter]] - `method` [EXTRACTED]
-- [[AuditStore_1]] - `references` [EXTRACTED]
+- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

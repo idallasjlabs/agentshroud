@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 731"
-location: "L84"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Related
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

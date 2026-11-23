@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "rationale"
-community: "Community 245"
+community: "TestProductionCompose"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_245
+  - community/TestProductionCompose
 ---
 
 # Validate examples/docker-compose.production.yml.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProductionCompose]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_245
+#graphify/rationale #graphify/EXTRACTED #community/TestProductionCompose

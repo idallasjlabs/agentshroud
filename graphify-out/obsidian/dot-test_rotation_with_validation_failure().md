@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "env_guard.py"
+community: "KeyRotationManager"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/KeyRotationManager
 ---
 
 # .test_rotation_with_validation_failure()
@@ -15,5 +15,6 @@ tags:
 - [[MockValidator]] - `calls` [EXTRACTED]
 - [[Test rotation workflow with validation failure and rollback.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
+- [[asyncio_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

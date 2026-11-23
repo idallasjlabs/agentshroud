@@ -1,23 +1,17 @@
 ---
-source_file: ".opencode/agents/browser.md"
+source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "Community 504"
-location: "L56"
+community: "System Audit Vault"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_504
+  - community/System_Audit_Vault
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_6]] - `contains` [EXTRACTED]
-- [[Click Element_5]] - `contains` [EXTRACTED]
-- [[Extract Data_5]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_5]] - `contains` [EXTRACTED]
-- [[Fill Form_5]] - `contains` [EXTRACTED]
-- [[Navigate to URL_5]] - `contains` [EXTRACTED]
-- [[Take Screenshot_5]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_504
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault

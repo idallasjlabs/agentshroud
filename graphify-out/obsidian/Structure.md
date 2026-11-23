@@ -1,20 +1,17 @@
 ---
-source_file: "browser-extension/README.md"
+source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Community 587"
-location: "L5"
+community: "Common Queries"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_587
+  - community/Common_Queries
 ---
 
 # Structure
 
 ## Connections
-- [[Browser Extension]] - `contains` [EXTRACTED]
-- [[Gateway wiring]] - `contains` [EXTRACTED]
-- [[Safari]] - `contains` [EXTRACTED]
-- [[Tests_6]] - `contains` [EXTRACTED]
+- [[session-logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_587
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

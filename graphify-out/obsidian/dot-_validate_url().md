@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
+community: "SecureBrowser"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/SecureBrowser
 ---
 
 # ._validate_url()
@@ -18,4 +18,4 @@ tags:
 - [[SecureBrowser]] - `method` [EXTRACTED]
 - [[Validate URL against allowlistblocklist Security This is the primary URL…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

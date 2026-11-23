@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "is_rate_limited_post_retry"
+community: "TestAggregateResults"
 location: "L551"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_rate_limited_post_retry
+  - community/TestAggregateResults
 ---
 
 # .test_all_clean()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_patch_all()]] - `calls` [EXTRACTED]
 - [[TestAggregateResults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_rate_limited_post_retry
+#graphify/code #graphify/EXTRACTED #community/TestAggregateResults

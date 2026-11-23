@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "Community 566"
-location: "L12"
+community: "Project Management (SKILL)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/Project_Management_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[Project Management (PM)_2]] - `contains` [EXTRACTED]
+- [[Project Management (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_566
+#graphify/document #graphify/EXTRACTED #community/Project_Management_SKILL

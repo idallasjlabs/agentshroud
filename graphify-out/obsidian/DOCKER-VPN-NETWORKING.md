@@ -1,12 +1,12 @@
 ---
 source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "Community 465"
+community: "dashboard/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_465
+  - community/dashboard/READMEmd
 ---
 
 # DOCKER-VPN-NETWORKING.md
@@ -18,6 +18,5 @@ tags:
 - [[VPNKit Userspace Networking Mode (fix)]] - `references` [EXTRACTED]
 - [[VpnKitTransparentProxy Setting]] - `references` [EXTRACTED]
 - [[gVisor Networking Mode (Docker Desktop, problematic)]] - `references` [EXTRACTED]
-- [[telegram_proxy.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_465
+#graphify/document #graphify/EXTRACTED #community/dashboard/READMEmd

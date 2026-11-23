@@ -1,17 +1,17 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 213"
+community: "Usage"
 location: "L325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Usage
 ---
 
 # Hermes / HCI
 
 ## Connections
-- [[Usage_56]] - `contains` [EXTRACTED]
+- [[Usage_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/Usage

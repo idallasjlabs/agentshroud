@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ui.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 629"
-location: "L31"
+community: "Skill: Technical Illustrator (TI)"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_629
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_629
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

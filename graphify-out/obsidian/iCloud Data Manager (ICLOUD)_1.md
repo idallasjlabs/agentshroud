@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: "docker/config/openclaw/skills/i-icloud/README.md"
 type: "document"
-community: "Community 1211"
+community: "iCloud Data Manager (ICLOUD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1211
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # iCloud Data Manager (ICLOUD)
 
 ## Connections
-- [[Purpose_50]] - `contains` [EXTRACTED]
-- [[README_55]] - `contains` [EXTRACTED]
-- [[Related Skills_68]] - `contains` [EXTRACTED]
-- [[Usage_72]] - `contains` [EXTRACTED]
+- [[Purpose_49]] - `contains` [EXTRACTED]
+- [[Related Skills_15]] - `contains` [EXTRACTED]
+- [[Usage_16]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-icloudREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1211
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

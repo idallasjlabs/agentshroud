@@ -1,17 +1,16 @@
 ---
 source_file: "branding/icons/modules/drift-detector-256x256.png"
 type: "image"
-community: "Community 626"
+community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_626
+  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 ---
 
 # Drift Detector Module Badge Icon
 
 ## Connections
 - [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - `conceptually_related_to` [INFERRED]
-- [[drift_detector.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_626
+#graphify/image #graphify/INFERRED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle

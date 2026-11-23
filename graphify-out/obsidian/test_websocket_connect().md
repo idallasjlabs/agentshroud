@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 115"
+community: "ApprovalRequest"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/ApprovalRequest
 ---
 
 # test_websocket_connect()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Test WebSocket client connection]] - `rationale_for` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

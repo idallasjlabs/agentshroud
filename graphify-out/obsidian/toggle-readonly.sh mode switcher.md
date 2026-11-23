@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/toggle-readonly.sh"
 type: "code"
-community: "Community 691"
+community: "AgentShroud Security Verification (13-check driver)"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_691
+  - community/AgentShroud_Security_Verification_13-check_driver
 ---
 
 # toggle-readonly.sh mode switcher
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Security Verification (13-check driver)]] - `conceptually_related_to` [INFERRED]
 - [[Read-Only Root FS Constraint — what breaks without proper mounts]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_691
+#graphify/code #graphify/INFERRED #community/AgentShroud_Security_Verification_13-check_driver

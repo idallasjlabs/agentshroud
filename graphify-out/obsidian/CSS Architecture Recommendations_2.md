@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ui.md"
+source_file: ".agents/agents/i-ui.md"
 type: "document"
-community: "Community 629"
+community: "Skill: UI Expert (UI)"
 location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_629
+  - community/Skill_UI_Expert_UI
 ---
 
 # CSS Architecture Recommendations
@@ -17,4 +17,4 @@ tags:
 - [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
 - [[Utility-First (Tailwind  custom utilities)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_629
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

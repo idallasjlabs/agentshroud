@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "Community 1116"
-location: "L52"
+community: "TestMultiBotContextvarRouting"
+location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1116
+  - community/TestMultiBotContextvarRouting
 ---
 
 # run()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
-- [[deploy_ref()]] - `calls` [EXTRACTED]
+- [[dot-test_proxy_request_resets_contextvar_after_return()]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1116
+#graphify/code #graphify/EXTRACTED #community/TestMultiBotContextvarRouting

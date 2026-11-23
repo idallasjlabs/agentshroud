@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Logo on Brand Blue Background
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Atlassian MCP Server (Jira + Confluence, concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
+- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
 
 ## Live Query (requires Dataview plugin)
 

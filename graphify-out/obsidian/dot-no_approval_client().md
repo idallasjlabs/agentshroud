@@ -1,29 +1,31 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "ingest_api/config.py"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ingest_api/configpy
 ---
 
 # .no_approval_client()
 
 ## Connections
 - [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `calls` [EXTRACTED]
-- [[GatewayConfig_3]] - `calls` [EXTRACTED]
-- [[LedgerConfig_1]] - `calls` [EXTRACTED]
+- [[GatewayConfig]] - `calls` [EXTRACTED]
+- [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `calls` [EXTRACTED]
-- [[RouterConfig_1]] - `calls` [EXTRACTED]
-- [[SSHConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[SSHConfig]] - `calls` [EXTRACTED]
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHRequireApprovalFalse]] - `method` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

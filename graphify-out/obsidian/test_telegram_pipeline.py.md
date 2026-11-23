@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Community 63"
+community: "test_telegram_pipeline.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/test_telegram_pipelinepy
 ---
 
 # test_telegram_pipeline.py
 
 ## Connections
+- [[Integration tests SecurityPipeline wired into TelegramAPIProxy message paths.…]] - `rationale_for` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PipelineResult]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy]] - `imports` [EXTRACTED]
@@ -25,7 +26,9 @@ tags:
 - [[TestOutboundPipelineWired]] - `contains` [EXTRACTED]
 - [[_getUpdates_response()]] - `contains` [EXTRACTED]
 - [[_make_pipeline_result()]] - `contains` [EXTRACTED]
-- [[_make_proxy()_4]] - `contains` [EXTRACTED]
-- [[_make_update()_1]] - `contains` [EXTRACTED]
+- [[_make_proxy()_3]] - `contains` [EXTRACTED]
+- [[_make_update()_2]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/test_telegram_pipelinepy

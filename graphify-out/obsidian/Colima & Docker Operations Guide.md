@@ -1,13 +1,13 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 752"
+community: "Colima & Docker Operations Guide"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_752
+  - community/Colima__Docker_Operations_Guide
 ---
 
 # Colima & Docker Operations Guide
 
-#graphify/document #graphify/EXTRACTED #community/Community_752
+#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide

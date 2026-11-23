@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ContextGuard"
-location: "L352"
+community: "prompt_guard.py"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/prompt_guardpy
 ---
 
 # .test_xml_tag_injection()
 
 ## Connections
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

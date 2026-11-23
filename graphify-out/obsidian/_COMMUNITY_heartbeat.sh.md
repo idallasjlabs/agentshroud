@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # heartbeat.sh
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[graphify reference GitHub clone and cross-repo merge_2]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
-- [[openclawskillsgraphifyreferencesgithub-and-merge]] - document - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[_log()_1]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh]] - code - docker/bots/hermes/heartbeat.sh
+- [[heartbeat.sh script]] - code - docker/bots/hermes/heartbeat.sh
 
 ## Live Query (requires Dataview plugin)
 

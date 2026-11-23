@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SOC Egress EgressRequest Model Tests
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[test_unknown_bot_id_raises_key_error]] - code - gateway/tests/test_agent_cve_registry.py
+- [[SOC Egress EgressRequest Model Tests]] - code - gateway/tests/test_soc_egress.py
 
 ## Live Query (requires Dataview plugin)
 

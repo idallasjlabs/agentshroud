@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Community 816"
-location: "L183"
+community: "httpx"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_816
+  - community/httpx
 ---
 
 # Related Notes
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[httpx]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_816
+#graphify/document #graphify/EXTRACTED #community/httpx

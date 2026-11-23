@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2181"
+community: "_make_sanitizer"
 location: "L1875"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2181
+  - community/_make_sanitizer
 ---
 
 # Missing content-type must not bypass form draft leak filtering.
 
 ## Connections
-- [[.test_urlencoded_without_content_type_caption_is_still_filtered()]] - `rationale_for` [EXTRACTED]
-- [[.test_urlencoded_without_content_type_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_urlencoded_without_content_type_draft_is_still_filtered()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2181
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

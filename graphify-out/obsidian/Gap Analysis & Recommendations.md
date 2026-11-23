@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 1086"
+community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1086
+  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
 ---
 
 # Gap Analysis & Recommendations
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CICD Quality Gates (14 jobs, 6 workflows)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1086
+#graphify/concept #graphify/EXTRACTED #community/CI/CD_Quality_Gates_14_jobs_6_workflows

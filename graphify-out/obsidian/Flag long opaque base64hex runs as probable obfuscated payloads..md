@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "Community 924"
+community: "ScanResult"
 location: "L387"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/ScanResult
 ---
 
 # Flag long opaque base64/hex runs as probable obfuscated payloads.
 
 ## Connections
-- [[._scan_opaque_blobs()]] - `rationale_for` [EXTRACTED]
+- [[dot-_scan_opaque_blobs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_924
+#graphify/rationale #graphify/EXTRACTED #community/ScanResult

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
 type: "document"
-community: "Community 532"
-location: "L64"
+community: "Dockerfile — Bot (OpenClaw)"
+location: "L109"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_532
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

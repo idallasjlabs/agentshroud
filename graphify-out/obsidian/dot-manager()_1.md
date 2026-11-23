@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "A2AMethod"
-location: "L162"
+community: "TestPathIsolationManager"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AMethod
+  - community/TestPathIsolationManager
 ---
 
 # .manager()
 
 ## Connections
-- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[TestKeyRotationManager]] - `method` [EXTRACTED]
+- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[fixture_59]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AMethod
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

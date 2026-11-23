@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 1208"
+community: "Daedalus — Concept Illustrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1208
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1208
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

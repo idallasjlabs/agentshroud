@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/icloud.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Community 706"
-location: "L126"
+community: "ANTHROPIC_BASE_URL"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_706
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_5]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_706
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

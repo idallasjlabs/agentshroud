@@ -1,18 +1,17 @@
 ---
 source_file: "docker/scripts/restart.sh"
 type: "code"
-community: "Community 1349"
+community: "restart.sh"
 location: "L1"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1349
+  - graphify/EXTRACTED
+  - community/restartsh
 ---
 
 # restart.sh
 
 ## Connections
-- [[logs.sh]] - `semantically_similar_to` [INFERRED]
 - [[restart.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1349
+#graphify/code #graphify/EXTRACTED #community/restartsh

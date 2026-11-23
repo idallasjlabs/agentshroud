@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/dashboard/proxy_status.py"
 type: "rationale"
-community: "Community 163"
+community: "ProxyDashboard"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/ProxyDashboard
 ---
 
 # Complete proxy status report for the dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProxyStatusReport]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_163
+#graphify/rationale #graphify/EXTRACTED #community/ProxyDashboard

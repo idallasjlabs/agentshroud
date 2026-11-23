@@ -1,26 +1,28 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
-type: "document"
-community: "Community 677"
-location: "L10"
+source_file: "gateway/security/egress_monitor.py"
+type: "code"
+community: "EgressEvent"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_677
+  - community/EgressEvent
 ---
 
 # egress_monitor.py
 
 ## Connections
-- [[Alert Actions]] - `contains` [EXTRACTED]
-- [[Configuration  Environment Variables_21]] - `contains` [EXTRACTED]
-- [[Default Thresholds]] - `contains` [EXTRACTED]
-- [[Function Details_36]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
-- [[Purpose_157]] - `contains` [EXTRACTED]
-- [[Related_43]] - `contains` [EXTRACTED]
-- [[Responsibilities_41]] - `contains` [EXTRACTED]
-- [[Threat Model_12]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
+- [[AlertSeverity]] - `contains` [EXTRACTED]
+- [[AnomalyAlert]] - `contains` [EXTRACTED]
+- [[EgressChannel]] - `contains` [EXTRACTED]
+- [[EgressEvent]] - `contains` [EXTRACTED]
+- [[EgressMonitor]] - `contains` [EXTRACTED]
+- [[EgressMonitorConfig]] - `contains` [EXTRACTED]
+- [[EgressSummary]] - `contains` [EXTRACTED]
+- [[Enum_16]] - `imports_from` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
+- [[test_egress_monitor.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_677
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

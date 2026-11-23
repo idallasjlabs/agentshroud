@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/README.md"
+source_file: "docker/config/hermes/skills/i-socrates/README.md"
 type: "document"
-community: "Community 2083"
+community: "Socrates — Dialogue Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2083
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2083
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

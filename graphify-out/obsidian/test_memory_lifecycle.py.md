@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Community 16"
+community: "test_memory_lifecycle.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/test_memory_lifecyclepy
 ---
 
 # test_memory_lifecycle.py
@@ -24,5 +24,9 @@ tags:
 - [[TestMemoryIntegrityMonitor]] - `contains` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[TestMemorySecurityIntegration]] - `contains` [EXTRACTED]
+- [[Tests for memory lifecycle and integrity management.]] - `rationale_for` [EXTRACTED]
+- [[memory_config.py]] - `imports_from` [EXTRACTED]
+- [[memory_integrity.py]] - `imports_from` [EXTRACTED]
+- [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

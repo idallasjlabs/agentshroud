@@ -1,37 +1,40 @@
 ---
 type: community
-cohesion: 0.10
-members: 22
+members: 27
 ---
 
 # test-sunday-upgrade-scan.sh
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 22 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[1. Observatory Mode (Global Monitor-Only Switch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2. Prompt Injection Hardening]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2a. Fix ContextGuard Enforcement Bug (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2b. Expand PromptGuard Patterns (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2c. Input Normalization Layer (~6h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2d. Cross-Turn Correlation (~8h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[2e. Tool Result Sanitization (~4h)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[3. Interactive Egress Firewall (Little Snitch for Agents)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[4. ML-Based Injection Classifier (Stretch)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[5. Output Canary System]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[6. Enhanced Audit & Compliance]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[A. Steve Hay — ALL Tiers (14 features, 23 requirements)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Wire ALL Modules Into Request Path]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. Bug Fixes]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Observatory Mode (Global MonitorEnforce Switch)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Features_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
-- [[G. Encrypted Container-to-Container Communication]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[H. Pi-hole as Default Stack Component]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[J. Phase 8.5 E2E Verification]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[K. Merge Pending PRs  Code Cleanup]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[M. Misc Quick Wins]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[check()_17]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[deadline()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[dev_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[handoff_status()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[hermes_name()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[lbl32()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[lib30()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[lib_call()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[make_apply_bin()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[make_fake_repo()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[notify()_4]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[outcome30()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[restore()_1]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[revs30()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[run_apply()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[run_gate()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[summary()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[t17_run()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[t19_run()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[t20_run()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[tc31()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test-sunday-upgrade-scan.sh]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[test-sunday-upgrade-scan.sh script]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[tg_flag()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[waitf()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[write_dev_result()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
+- [[write_fake()]] - code - scripts/smoke.d/test-sunday-upgrade-scan.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,14 +42,3 @@ members: 22
 TABLE source_file, type FROM #community/test-sunday-upgrade-scansh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_mcp_inspector.py]]
-- 1 edge to [[_COMMUNITY_package_skill]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
-- 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist Skill (2)]]
-
-## Top bridge nodes
-- [[v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]] - degree 14, connects to 2 communities
-- [[Features_1]] - degree 7, connects to 1 community
-- [[6. Enhanced Audit & Compliance]] - degree 3, connects to 1 community

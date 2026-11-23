@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 891"
-location: "L265"
+community: "Skill: Technical Illustrator (TI)"
+location: "L263"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # File and Directory Conventions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

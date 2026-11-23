@@ -1,20 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Community 350"
-location: "L17"
+community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
 ---
 
 # Prerequisites
 
 ## Connections
-- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
-- [[Optional Requirements]] - `contains` [EXTRACTED]
-- [[Supported Platforms]] - `contains` [EXTRACTED]
-- [[System Requirements_1]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64

@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-personal-ai-assistants.txt"
 type: "document"
-community: "Community 1684"
+community: "Newsletter: Personal AI Assistants"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1684
+  - community/Newsletter_Personal_AI_Assistants
 ---
 
 # Newsletter: Personal AI Assistants
 
-#graphify/document #graphify/EXTRACTED #community/Community_1684
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Personal_AI_Assistants

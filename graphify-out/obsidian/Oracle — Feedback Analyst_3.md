@@ -1,23 +1,23 @@
 ---
 source_file: ".cursor/agents/oracle.md"
 type: "document"
-community: "Community 1988"
+community: "Oracle — Feedback Analyst"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1988
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_27]] - `contains` [EXTRACTED]
-- [[Output Format_38]] - `contains` [EXTRACTED]
-- [[Persona_21]] - `contains` [EXTRACTED]
-- [[Quality Checklist_24]] - `contains` [EXTRACTED]
-- [[Role_109]] - `contains` [EXTRACTED]
-- [[System Prompt_21]] - `contains` [EXTRACTED]
-- [[oracle_1]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsoracle]] - `contains` [EXTRACTED]
+- [[Input Requirements_38]] - `contains` [EXTRACTED]
+- [[Output Format_53]] - `contains` [EXTRACTED]
+- [[Persona_32]] - `contains` [EXTRACTED]
+- [[Quality Checklist_38]] - `contains` [EXTRACTED]
+- [[Role_103]] - `contains` [EXTRACTED]
+- [[System Prompt_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1988
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

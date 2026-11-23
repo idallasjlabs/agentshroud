@@ -1,21 +1,16 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: ""
 type: "code"
-community: "Community 16"
-location: "L65"
+community: "export-email-reports.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/export-email-reportspy
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_108]] - `references` [EXTRACTED]
-- [[._compute_file_hash()]] - `references` [EXTRACTED]
-- [[._detect_modification_source()]] - `references` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
+- [[export_bot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/export-email-reportspy

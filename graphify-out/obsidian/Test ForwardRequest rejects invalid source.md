@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Community 78"
+community: "ingest_api/models.py"
 location: "L224"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/ingest_api/modelspy
 ---
 
 # Test ForwardRequest rejects invalid source
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_forward_request_validation_invalid_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy

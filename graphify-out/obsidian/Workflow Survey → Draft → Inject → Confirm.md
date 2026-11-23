@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "Community 1422"
+community: "Workflow: Survey → Draft → Inject → Confirm"
 location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1422
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
@@ -20,4 +20,4 @@ tags:
 - [[Step 5 — Inject into All Three LLMs]] - `contains` [EXTRACTED]
 - [[Step 6 — Confirm]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1422
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

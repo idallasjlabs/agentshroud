@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "SessionManager"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/SessionManager
 ---
 
 # .test_wrong_ip_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

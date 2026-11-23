@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/tests/test_lifespan_prune.py"
+source_file: ""
 type: "code"
-community: "EgressFilterConfig"
-location: "L43"
+community: "NetworkValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/NetworkValidator
 ---
 
 # Path
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[_make_md()]] - `references` [EXTRACTED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

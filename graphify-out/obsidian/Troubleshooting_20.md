@@ -1,20 +1,20 @@
 ---
-source_file: ".omp/agents/icloud.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 680"
-location: "L143"
+community: "iCloud Services"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_680
+  - community/iCloud_Services
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_4]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_4]] - `contains` [EXTRACTED]
-- [[Connection timeout_4]] - `contains` [EXTRACTED]
-- [[iCloud Services_4]] - `contains` [EXTRACTED]
+- [[401 Unauthorized_1]] - `contains` [EXTRACTED]
+- [[CalendarContacts not found_1]] - `contains` [EXTRACTED]
+- [[Connection timeout_2]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_680
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

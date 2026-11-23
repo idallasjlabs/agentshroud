@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "PromptGuard"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/PromptGuard
 ---
 
 # Test thread safety and race conditions in security modules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConcurrency_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

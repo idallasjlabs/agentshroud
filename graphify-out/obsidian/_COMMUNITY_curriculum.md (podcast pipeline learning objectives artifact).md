@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # curriculum.md (podcast pipeline learning objectives artifact)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
+- [[curriculum.md (podcast pipeline learning objectives artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

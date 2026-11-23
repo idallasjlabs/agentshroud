@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 1212"
-location: "L6"
+community: "router.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1212
+  - community/routerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
+- [[router.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1212
+#graphify/document #graphify/EXTRACTED #community/routerpy

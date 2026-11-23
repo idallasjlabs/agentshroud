@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SecurityPipeline"
+community: "._make_proxy"
 location: "L9338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # .test_cooldown_suppresses_second_ack()
@@ -17,8 +17,8 @@ tags:
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_send()_4]] - `contains` [EXTRACTED]
-- [[fake_send()_11]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_send()_5]] - `contains` [EXTRACTED]
+- [[fake_send()_12]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

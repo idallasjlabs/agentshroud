@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "AgentShroud v0.8.0 \"Watchtower\" — Execution Summary (Draft)"
-location: "L18"
+community: "test_module_stats.py"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+  - community/test_module_statspy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestMetadataGuard_1]] - `method` [EXTRACTED]
+- [[TestEnforcementWiring]] - `method` [EXTRACTED]
+- [[get_collector()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

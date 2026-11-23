@@ -1,19 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Community 389"
+community: "Egress Filter Errors"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Egress_Filter_Errors
 ---
 
 # Egress Filter Errors.md
 
 ## Connections
-- [[Auth Errors]] - `semantically_similar_to` [INFERRED]
 - [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
-- [[Error Index]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors

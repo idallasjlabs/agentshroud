@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_privilege_separation.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "._make_proxy()"
-location: "L187"
+community: "middleware.py"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/middlewarepy
 ---
 
 # .test_workspace_write_allowed()
 
 ## Connections
-- [[Agent can write to its own workspace directory.]] - `rationale_for` [EXTRACTED]
-- [[TestWorkspaceAccessPreserved]] - `method` [EXTRACTED]
+- [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

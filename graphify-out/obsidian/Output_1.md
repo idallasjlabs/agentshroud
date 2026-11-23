@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/sec-offense.md"
+source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Community 1059"
-location: "L356"
+community: "Technical Specification"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/Technical_Specification
 ---
 
 # Output
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1059
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

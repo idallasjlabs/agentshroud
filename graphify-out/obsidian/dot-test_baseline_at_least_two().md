@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "test_scanner_integration.py"
 location: "L770"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_scanner_integrationpy
 ---
 
 # .test_baseline_at_least_two()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreSecretsManagement_1]] - `method` [EXTRACTED]
 - [[_score_secrets_management()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

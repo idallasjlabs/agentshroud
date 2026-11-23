@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Hermes Cron Jobs Reference & Recreation Guide (2)"
+community: "What You Must Do When Invoked"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # hermes/skills/graphify/SKILL.md
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide_2
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

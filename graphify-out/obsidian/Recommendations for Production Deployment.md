@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Community 866"
+community: "Recommendations for Production Deployment"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_866
+  - community/Recommendations_for_Production_Deployment
 ---
 
 # Recommendations for Production Deployment
@@ -20,4 +20,4 @@ tags:
 - [[6. Least-Privilege SSH Users]] - `contains` [EXTRACTED]
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_866
+#graphify/document #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment

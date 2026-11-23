@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-blueteam/references/module-inventory.md"
 type: "document"
-community: "Community 431"
+community: "agentshroud-blueteam/SKILL.md"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_431
+  - graphify/EXTRACTED
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # AgentShroud Module Inventory (Blue Team)
 
 ## Connections
 - [[AgentShroud Module Inventory (Red Team)]] - `shares_data_with` [EXTRACTED]
-- [[SKILL_200]] - `references` [INFERRED]
+- [[agentshroud-blueteamSKILL]] - `references` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_431
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

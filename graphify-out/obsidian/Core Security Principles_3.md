@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-browser.agent.md"
+source_file: ".agents/agents/browser.md"
 type: "document"
-community: "Community 449"
-location: "L16"
+community: "Browser — Secure Browser Automation"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Core Security Principles
 
 ## Connections
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

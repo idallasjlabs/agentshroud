@@ -1,18 +1,18 @@
 ---
-source_file: ".omp/mcp.json"
+source_file: ".mcp.json"
 type: "code"
-community: "Community 404"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/mcpjson
 ---
 
 # github
 
 ## Connections
-- [[.llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh_3]] - `references` [EXTRACTED]
-- [[mcp.json_2]] - `contains` [EXTRACTED]
+- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh_2]] - `references` [EXTRACTED]
+- [[dot-mcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_404
+#graphify/code #graphify/EXTRACTED #community/mcpjson

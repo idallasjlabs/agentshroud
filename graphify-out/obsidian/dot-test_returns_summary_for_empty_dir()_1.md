@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "get_wazuh_summary"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/get_wazuh_summary
 ---
 
 # .test_returns_summary_for_empty_dir()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetWazuhSummary]] - `method` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

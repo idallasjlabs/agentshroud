@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/config_integrity.py"
 type: "rationale"
-community: "Community 241"
+community: "ConfigIntegrityMonitor"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_241
+  - community/ConfigIntegrityMonitor
 ---
 
 # Accept current file hashes as the new baseline (owner-acknowledged rebuild).
 
 ## Connections
-- [[.reset_baseline()]] - `rationale_for` [EXTRACTED]
+- [[dot-reset_baseline()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_241
+#graphify/rationale #graphify/EXTRACTED #community/ConfigIntegrityMonitor

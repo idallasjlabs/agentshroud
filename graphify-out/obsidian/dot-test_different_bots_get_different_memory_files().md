@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TestMultiBotIsolation"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TestMultiBotIsolation
 ---
 
 # .test_different_bots_get_different_memory_files()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMultiBotIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestMultiBotIsolation

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestEdgeCases"
 location: "L334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestEdgeCases
 ---
 
 # Case variations should not bypass protection.
 
 ## Connections
-- [[.test_case_sensitivity()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_case_sensitivity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestEdgeCases

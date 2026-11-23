@@ -1,24 +1,23 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 488"
+community: "test_cli_coverage.py"
 location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/test_cli_coveragepy
 ---
 
 # _FakeWS
 
 ## Connections
-- [[.__aiter__()]] - `method` [EXTRACTED]
-- [[.__anext__()]] - `method` [EXTRACTED]
-- [[.__init__()_156]] - `method` [EXTRACTED]
-- [[.send()_1]] - `method` [EXTRACTED]
+- [[dot-__aiter__()]] - `method` [EXTRACTED]
+- [[dot-__anext__()]] - `method` [EXTRACTED]
+- [[dot-__init__()_140]] - `method` [EXTRACTED]
+- [[dot-send()_1]] - `method` [EXTRACTED]
 - [[Async-iterable WebSocket double.]] - `rationale_for` [EXTRACTED]
-- [[SCLClient]] - `uses` [INFERRED]
 - [[_install_fake_websockets()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_488
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

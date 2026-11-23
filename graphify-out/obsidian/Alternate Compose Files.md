@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Community 460"
+community: "docker-compose.yml"
 location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/docker-composeyml
 ---
 
 # Alternate Compose Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_460
+#graphify/document #graphify/EXTRACTED #community/docker-composeyml

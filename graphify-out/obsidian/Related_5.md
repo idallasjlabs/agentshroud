@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 592"
-location: "L128"
+community: "Function Details"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/Function_Details
 ---
 
 # Related
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/Function_Details

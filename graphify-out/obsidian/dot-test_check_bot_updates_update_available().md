@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "_engine"
 location: "L558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_engine
 ---
 
 # .test_check_bot_updates_update_available()
@@ -15,4 +15,4 @@ tags:
 - [[TestBotUpdates]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_engine

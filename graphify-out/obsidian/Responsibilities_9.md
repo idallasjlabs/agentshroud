@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 1219"
-location: "L19"
+community: "version_routes.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1219
+  - community/version_routespy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1219
+#graphify/document #graphify/EXTRACTED #community/version_routespy

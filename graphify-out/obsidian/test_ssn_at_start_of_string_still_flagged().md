@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "Community 835"
+community: "test_us_ssn_regex_tightened.py"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # test_ssn_at_start_of_string_still_flagged()
 
 ## Connections
 - [[SSN at the very start of a string (no preceding character) is still flagged.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_17]] - `references` [EXTRACTED]
 - [[test_us_ssn_regex_tightened.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_835
+#graphify/code #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

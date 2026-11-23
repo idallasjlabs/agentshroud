@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_audit_archive.py"
+source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 380"
-location: "L50"
+community: "test_mfa_guard.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/test_mfa_guardpy
 ---
 
 # now()
 
 ## Connections
-- [[test_audit_archive.py]] - `contains` [EXTRACTED]
+- [[fixture]] - `references` [EXTRACTED]
+- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_380
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

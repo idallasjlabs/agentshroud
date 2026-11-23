@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-daedalus/SKILL.md"
 type: "document"
-community: "AgentShroud -- USPTO Provisional Patent Application"
+community: "Daedalus — Concept Illustrator"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # hermes/skills/i-daedalus/SKILL.md
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,47 +1,37 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 254"
+community: "ingest_api/main.py"
 location: "L37"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/ingest_api/mainpy
 ---
 
 # ApprovalMode
 
 ## Connections
-- [[._load_rules()]] - `calls` [EXTRACTED]
-- [[.add_rule()]] - `references` [EXTRACTED]
-- [[.approve()]] - `references` [EXTRACTED]
-- [[.deny()]] - `references` [EXTRACTED]
-- [[Any_31]] - `uses` [INFERRED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[dot-add_rule()]] - `references` [EXTRACTED]
+- [[dot-approve()]] - `references` [EXTRACTED]
+- [[dot-deny()]] - `references` [EXTRACTED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
-- [[AuthRequired]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
-- [[FakeAuditStore_1]] - `uses` [INFERRED]
-- [[FakeCaller_1]] - `uses` [INFERRED]
-- [[FakeGroup]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_2]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
+- [[Enum_6]] - `inherits` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
-- [[_FakeDecideQueue]] - `uses` [INFERRED]
-- [[_OutboundScan]] - `uses` [INFERRED]
-- [[_Svc]] - `uses` [INFERRED]
+- [[approve_egress()]] - `uses` [INFERRED]
+- [[egress_add_rule()]] - `uses` [INFERRED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[egress_approve()]] - `uses` [INFERRED]
+- [[egress_deny()]] - `uses` [INFERRED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[override_egress_rule()]] - `uses` [INFERRED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
+- [[test_egress_approve_mode_mapping()]] - `uses` [INFERRED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

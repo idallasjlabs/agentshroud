@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 42"
+community: "test_agent_cve_registry.py"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_agent_cve_registrypy
 ---
 
 # test_hermes_verified_ids_are_never_fabricated()
 
 ## Connections
-- [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes]] - `rationale_for` [EXTRACTED]
+- [[Hermes has no NATIVE GHSA advisory feed (nousresearchhermes-agent publishes…]] - `rationale_for` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

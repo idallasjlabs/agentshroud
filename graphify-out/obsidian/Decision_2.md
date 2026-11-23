@@ -1,19 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
+source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 631"
-location: "L43"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_631
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
-- [[Implementation Status]] - `contains` [EXTRACTED]
-- [[Implementation Strategy]] - `contains` [EXTRACTED]
+- [[ADR-009 Enforce-by-Default Security Philosophy]] - `contains` [EXTRACTED]
+- [[Configuration_7]] - `contains` [EXTRACTED]
+- [[Policy Table]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_631
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

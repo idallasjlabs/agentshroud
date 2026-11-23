@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "mcp_audit.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/mcp_auditpy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

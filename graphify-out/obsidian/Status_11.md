@@ -1,17 +1,17 @@
 ---
-source_file: "shortcuts/README.md"
+source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
 type: "document"
-community: "Community 622"
-location: "L324"
+community: "ADR-004: API Keys Never in Agent Container"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_622
+  - community/ADR-004_API_Keys_Never_in_Agent_Container
 ---
 
 # Status
 
 ## Connections
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
+- [[ADR-004 API Keys Never in Agent Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_622
+#graphify/document #graphify/EXTRACTED #community/ADR-004_API_Keys_Never_in_Agent_Container

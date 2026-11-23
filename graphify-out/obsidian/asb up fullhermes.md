@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L593-L609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # asb up [full|hermes]
@@ -16,4 +16,4 @@ tags:
 - [[phase_apply()]] - `references` [EXTRACTED]
 - [[phase_baseline()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

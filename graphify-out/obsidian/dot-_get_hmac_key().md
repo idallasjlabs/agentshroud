@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-register_system_prompt()]] - `calls` [EXTRACTED]
 - [[dot-verify_system_prompt()]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 - [[Return HMAC key env var preferred, session-scoped random fallback.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PromptGuard

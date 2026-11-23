@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-mm.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 513"
-location: "L180"
+community: "Skill: Mindmap Architect (MM)"
+location: "L178"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Use Case Patterns
@@ -19,4 +19,4 @@ tags:
 - [[Project Planning Map]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

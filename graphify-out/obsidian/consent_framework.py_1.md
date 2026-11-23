@@ -1,17 +1,25 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Community 731"
-location: "L1"
+community: "consent_framework.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/consent_frameworkpy
 ---
 
-# consent_framework.py.md
+# consent_framework.py
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[Function Details_44]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_46]] - `contains` [EXTRACTED]
+- [[Purpose_174]] - `contains` [EXTRACTED]
+- [[Related_48]] - `contains` [EXTRACTED]
+- [[Responsibilities_51]] - `contains` [EXTRACTED]
+- [[Secret Patterns in Environment Variables]] - `contains` [EXTRACTED]
+- [[Shell Injection Patterns Detected]] - `contains` [EXTRACTED]
+- [[Threat Model_21]] - `contains` [EXTRACTED]
+- [[consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

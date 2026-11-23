@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/init-config.sh"
 type: "code"
-community: "Community 2082"
+community: "start.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2082
+  - community/startsh
 ---
 
 # init-config.sh script
@@ -16,4 +16,4 @@ tags:
 - [[_write_soul()]] - `calls` [EXTRACTED]
 - [[init-config.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2082
+#graphify/code #graphify/EXTRACTED #community/startsh

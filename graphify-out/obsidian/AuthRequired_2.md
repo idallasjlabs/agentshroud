@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: ""
 type: "code"
-community: "Community 62"
-location: "L401"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # AuthRequired
 
 ## Connections
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

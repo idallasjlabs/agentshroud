@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_tool_acl.py"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_tool_aclpy
 ---
 
 # .effective_admin()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ToolACLConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

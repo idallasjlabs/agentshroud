@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 38"
+community: "services.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/servicespy
 ---
 
 # _check_clamd()
 
 ## Connections
 - [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - `rationale_for` [EXTRACTED]
-- [[_INTERNAL_SERVICE_ATTRS (internal gateway service table)]] - `references` [EXTRACTED]
-- [[services.py]] - `references` [EXTRACTED]
+- [[services.py]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/servicespy

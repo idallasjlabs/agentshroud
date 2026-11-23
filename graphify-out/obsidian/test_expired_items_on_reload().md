@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "Community 30"
+community: "ApprovalStore"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ApprovalStore
 ---
 
 # test_expired_items_on_reload()
 
 ## Connections
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `uses` [INFERRED]
 - [[Expired items are marked expired during load_pending.]] - `rationale_for` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
+- [[Path_53]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

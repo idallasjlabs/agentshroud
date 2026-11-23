@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 24"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # test_inbound_benign_base64_not_blocked()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[Ordinary base64 content with no injection indicators is forwarded.]] - `rationale_for` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[asyncio_89]] - `references` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/config.py"
 type: "rationale"
-community: "Community 489"
+community: "api.py"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/apipy
 ---
 
 # Load from a config dictionary (e.g. from YAML).
 
 ## Connections
-- [[.from_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_489
+#graphify/rationale #graphify/EXTRACTED #community/apipy

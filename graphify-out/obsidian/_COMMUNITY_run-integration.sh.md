@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # run-integration.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[run-tests-batched.sh]] - code - scripts/run-tests-batched.sh
-- [[run-tests-batched.sh script]] - code - scripts/run-tests-batched.sh
+- [[run-integration.sh]] - code - scripts/testing/run-integration.sh
+- [[run-integration.sh script]] - code - scripts/testing/run-integration.sh
 
 ## Live Query (requires Dataview plugin)
 

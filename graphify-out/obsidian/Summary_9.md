@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 773"
-location: "L471"
+community: "Changelog — AgentShroud™"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_773
+  - community/Changelog__AgentShroud
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - `contains` [EXTRACTED]
+- [[1.5.3 (2026-08-23)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_773
+#graphify/document #graphify/EXTRACTED #community/Changelog__AgentShroud

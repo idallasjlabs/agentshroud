@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "Community 43"
+community: "SecurityPipeline"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/SecurityPipeline
 ---
 
 # Canary should detect that fake PII was stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_verifies_pii_stripping()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_43
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

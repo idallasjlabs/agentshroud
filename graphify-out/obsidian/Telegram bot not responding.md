@@ -1,17 +1,17 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 510"
+community: "OpenClaw Management Scripts"
 location: "L268"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/OpenClaw_Management_Scripts
 ---
 
 # Telegram bot not responding
 
 ## Connections
-- [[Troubleshooting_36]] - `contains` [EXTRACTED]
+- [[Troubleshooting_39]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

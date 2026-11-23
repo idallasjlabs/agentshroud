@@ -1,20 +1,17 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+members: 4
 ---
 
 # pending (bot submits action requiring approval)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_compliance_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_iec_sl_levels()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[approved (action executed, ledger entry written)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[expired (1-hour TTL exceeded, auto-transition on load)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[pending (bot submits action requiring approval)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
+- [[rejected (action blocked, bot notified)]] - concept - docs/diagrams/images/diagram-16-state-approval-queue.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +19,3 @@ members: 5
 TABLE source_file, type FROM #community/pending_bot_submits_action_requiring_approval
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestComplianceMaths]] - degree 5, connects to 1 community

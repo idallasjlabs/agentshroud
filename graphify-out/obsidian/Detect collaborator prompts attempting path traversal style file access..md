@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "TelegramAPIProxy"
 location: "L1197"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts attempting path traversal style file access.
 
 ## Connections
-- [[._looks_like_path_traversal_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_path_traversal_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

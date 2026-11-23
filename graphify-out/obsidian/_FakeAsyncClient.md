@@ -1,24 +1,22 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 452"
+community: "_FakeAsyncClient"
 location: "L591"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_452
+  - community/_FakeAsyncClient
 ---
 
 # _FakeAsyncClient
 
 ## Connections
-- [[.__aenter__()_1]] - `method` [EXTRACTED]
-- [[.__aexit__()_1]] - `method` [EXTRACTED]
-- [[.__init__()_162]] - `method` [EXTRACTED]
-- [[.request()_3]] - `method` [EXTRACTED]
-- [[DNSBlocklist]] - `uses` [INFERRED]
-- [[DNSForwarderProtocol]] - `uses` [INFERRED]
+- [[dot-__aenter__()_1]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_71]] - `method` [EXTRACTED]
+- [[dot-request()]] - `method` [EXTRACTED]
 - [[Stands in for httpx.AsyncClient; records request kwargs.]] - `rationale_for` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_452
+#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient

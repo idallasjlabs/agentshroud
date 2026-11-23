@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/08 - Runbooks/Health Checks.md"
 type: "document"
-community: "Community 1285"
-location: "L32"
+community: "Health Checks"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1285
+  - community/Health_Checks
 ---
 
-# Health Checks
+# Health Checks.md
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Health Checks_1]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1285
+#graphify/document #graphify/EXTRACTED #community/Health_Checks

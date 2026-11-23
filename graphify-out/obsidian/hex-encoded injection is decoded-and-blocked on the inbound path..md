@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "Community 24"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L95"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # hex-encoded injection is decoded-and-blocked on the inbound path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_inbound_hex_injection_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

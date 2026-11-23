@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "rationale"
-community: "._run_and_read"
+community: "triage-cve-mitigations.py"
 location: "L1056"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/triage-cve-mitigationspy
 ---
 
 # Return the index just past a field value that may span multiple lines. Tracks…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_consume_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_run_and_read
+#graphify/rationale #graphify/EXTRACTED #community/triage-cve-mitigationspy

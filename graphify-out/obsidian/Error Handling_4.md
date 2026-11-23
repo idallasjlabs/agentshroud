@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/apollo.md"
+source_file: ".github/agents/i-apollo.agent.md"
 type: "document"
-community: "Community 1404"
-location: "L123"
+community: "Technical Specification"
+location: "L126"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1404
+  - community/Technical_Specification
 ---
 
 # Error Handling
 
 ## Connections
-- [[Technical Specification_2]] - `contains` [EXTRACTED]
+- [[Technical Specification_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1404
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

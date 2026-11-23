@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 64"
+community: "test_mcp_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/test_mcp_proxypy
 ---
 
 # test_mcp_proxy.py
 
 ## Connections
+- [[Comprehensive tests for MCP Proxy Layer.]] - `rationale_for` [EXTRACTED]
 - [[FindingType]] - `imports` [EXTRACTED]
 - [[MCPAuditTrail]] - `imports` [EXTRACTED]
 - [[MCPInspector]] - `imports` [EXTRACTED]
@@ -26,7 +27,7 @@ tags:
 - [[PermissionLevel]] - `imports` [EXTRACTED]
 - [[TestAllowDenyList]] - `contains` [EXTRACTED]
 - [[TestAuditQueries]] - `contains` [EXTRACTED]
-- [[TestAuditTrail]] - `contains` [EXTRACTED]
+- [[TestAuditTrail_1]] - `contains` [EXTRACTED]
 - [[TestAuditTrailBounded]] - `contains` [EXTRACTED]
 - [[TestChainIntegrityMultiple]] - `contains` [EXTRACTED]
 - [[TestConfigParsing]] - `contains` [EXTRACTED]
@@ -34,7 +35,7 @@ tags:
 - [[TestHashChainIntegration]] - `contains` [EXTRACTED]
 - [[TestInjectionDetection]] - `contains` [EXTRACTED]
 - [[TestInspectorEdgeCases]] - `contains` [EXTRACTED]
-- [[TestPIIDetection]] - `contains` [EXTRACTED]
+- [[TestPIIDetection_1]] - `contains` [EXTRACTED]
 - [[TestPassthroughMode]] - `contains` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `contains` [EXTRACTED]
 - [[TestProcessingTime]] - `contains` [EXTRACTED]
@@ -46,17 +47,17 @@ tags:
 - [[TestSensitiveOps]] - `contains` [EXTRACTED]
 - [[TestSuspiciousEncoding]] - `contains` [EXTRACTED]
 - [[TestThreatLevelCalc]] - `contains` [EXTRACTED]
-- [[ThreatLevel]] - `imports` [EXTRACTED]
+- [[ThreatLevel_1]] - `imports` [EXTRACTED]
 - [[audit()]] - `contains` [EXTRACTED]
-- [[config()_3]] - `contains` [EXTRACTED]
+- [[config()_1]] - `contains` [EXTRACTED]
 - [[inspector()]] - `contains` [EXTRACTED]
-- [[mcp_audit.py]] - `references` [EXTRACTED]
-- [[mcp_config.py]] - `references` [EXTRACTED]
-- [[mcp_inspector.py]] - `references` [EXTRACTED]
-- [[mcp_permissions.py]] - `references` [EXTRACTED]
-- [[mcp_proxy.py]] - `references` [EXTRACTED]
+- [[mcp_audit.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[passthrough_proxy()]] - `contains` [EXTRACTED]
 - [[proxy()_1]] - `contains` [EXTRACTED]
 - [[strict_inspector()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

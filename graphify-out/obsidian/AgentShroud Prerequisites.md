@@ -1,22 +1,22 @@
 ---
 source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 346"
+community: "AgentShroud Prerequisites"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_346
+  - community/AgentShroud_Prerequisites
 ---
 
 # AgentShroud Prerequisites
 
 ## Connections
-- [[Overview_15]] - `contains` [EXTRACTED]
-- [[PREREQUISITES]] - `contains` [EXTRACTED]
+- [[Overview_13]] - `contains` [EXTRACTED]
+- [[PREREQUISITES_15]] - `contains` [EXTRACTED]
 - [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 - [[✅ Your Current Setup Status]] - `contains` [EXTRACTED]
-- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
+- [[🆘 Troubleshooting_1]] - `contains` [EXTRACTED]
 - [[🎯 Philosophy Separation of Concerns]] - `contains` [EXTRACTED]
 - [[🎯 You're Not Missing Anything!]] - `contains` [EXTRACTED]
 - [[💻 System Requirements]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[🗂️ File Structure]] - `contains` [EXTRACTED]
 - [[🚀 Quick Start Command]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_346
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

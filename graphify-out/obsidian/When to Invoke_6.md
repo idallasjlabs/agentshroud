@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-auth-reset.md"
+source_file: ".omp/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 263"
-location: "L13"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # When to Invoke
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

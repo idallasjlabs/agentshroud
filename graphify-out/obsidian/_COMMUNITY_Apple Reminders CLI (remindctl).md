@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # Apple Reminders CLI (remindctl)
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[ADR-001-transparent-proxy-vs-agent-modification]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[ADR-001 Transparent Proxy vs Agent Modification]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Agent Modification Cons]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Agent Modification Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Consequences_3]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Context_5]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Decision_5]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Key Considerations]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Mitigation Strategies]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Negative Consequences_2]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Positive Consequences_2]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Risk Assessment]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Status_6]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Transparent Proxy Cons]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
-- [[Transparent Proxy Pros]] - document - docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md
+- [[Apple Reminders CLI (remindctl)]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Clawdbot cron tool as reminder alternative]] - rationale - skills/openclaw/apple-reminders/SKILL.md
+- [[Common Commands]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[CompleteDelete]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Create Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Date Formats]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Example Clarifying User Intent]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Manage Lists]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Output Formats_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[Setup_11]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[View Reminders]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[When NOT to Use_1]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[When to Use_2]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[apple-remindersSKILL]] - document - skills/openclaw/apple-reminders/SKILL.md
+- [[remindctl CLI]] - concept - skills/openclaw/apple-reminders/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +30,3 @@ members: 15
 TABLE source_file, type FROM #community/Apple_Reminders_CLI_remindctl
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-githubmcp.json]]
-
-## Top bridge nodes
-- [[Decision_5]] - degree 2, connects to 1 community

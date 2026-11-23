@@ -1,0 +1,17 @@
+---
+source_file: "gateway/soc/router.py"
+type: "rationale"
+community: "soc/router.py"
+location: "L229"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/soc/routerpy
+---
+
+# Operator-ready risk summary with plain-English bullets and per-user risk map…
+
+## Connections
+- [[get_risk_summary()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

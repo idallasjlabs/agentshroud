@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "asyncio"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/asyncio
 ---
 
 # .test_dashboard_no_auth_returns_403()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[GET dashboard with no auth returns 403]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
+- [[asyncio_47]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
-location: "L568"
+community: "WebContentScanner"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/WebContentScanner
 ---
 
 # .test_case_insensitive()
 
 ## Connections
-- [[dot-_has_fabricated_match()]] - `calls` [EXTRACTED]
-- [[Pattern is case-insensitive.]] - `rationale_for` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

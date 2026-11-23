@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestWebSecurity"
 location: "L747"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestWebSecurity
 ---
 
 # Dashboard should escape user inputs (no raw innerHTML from API).
 
 ## Connections
-- [[.test_xss_in_dashboard_inputs()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_xss_in_dashboard_inputs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestWebSecurity

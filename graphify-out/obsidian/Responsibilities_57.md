@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
 type: "document"
-community: "Community 1007"
-location: "L20"
+community: "Function Details"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/Function_Details
 ---
 
 # Responsibilities
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[resource_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1007
+#graphify/document #graphify/EXTRACTED #community/Function_Details

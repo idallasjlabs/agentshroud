@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "load_config"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/load_config
 ---
 
 # .test_configured_servers_are_allowlisted_by_default()
 
 ## Connections
-- [[Knownconfigured MCP servers must be carried into the default allowlist]] - `rationale_for` [EXTRACTED]
+- [[Knownconfigured MCP servers must be carried into the default allowlist so…]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/load_config

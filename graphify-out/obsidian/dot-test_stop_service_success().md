@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "_stub_client"
-location: "L464"
+community: "_engine"
+location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/_engine
 ---
 
 # .test_stop_service_success()
 
 ## Connections
-- [[TestLifecycleCommands]] - `method` [EXTRACTED]
-- [[_invoke()]] - `calls` [EXTRACTED]
-- [[_stub_client()]] - `calls` [EXTRACTED]
+- [[TestServiceControl]] - `method` [EXTRACTED]
+- [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_stub_client
+#graphify/code #graphify/EXTRACTED #community/_engine

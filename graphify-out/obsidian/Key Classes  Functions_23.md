@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Community 783"
-location: "L24"
+community: "egress_monitor.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/egress_monitorpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

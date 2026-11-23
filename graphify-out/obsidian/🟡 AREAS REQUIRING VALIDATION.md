@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
 type: "document"
-community: "Community 331"
+community: "Phase Review: P0 - Core Pipeline Wiring"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_331
+  - community/Phase_Review_P0_-_Core_Pipeline_Wiring
 ---
 
 # 🟡 AREAS REQUIRING VALIDATION
 
 ## Connections
-- [[2. Security Value Audit_3]] - `contains` [EXTRACTED]
+- [[2. Security Value Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_331
+#graphify/document #graphify/EXTRACTED #community/Phase_Review_P0_-_Core_Pipeline_Wiring

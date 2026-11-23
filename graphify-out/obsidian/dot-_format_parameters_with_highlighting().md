@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L456"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # ._format_parameters_with_highlighting()
 
 ## Connections
 - [[dot-format_hardened_message()]] - `calls` [EXTRACTED]
-- [[Any_43]] - `references` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[Format parameters with risk highlighting.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

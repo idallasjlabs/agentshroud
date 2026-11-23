@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 1204"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L395"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1204
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # 75 Active Security Modules — No Stubs
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[7) AGENTSHROUD-SPECIFIC CONSTRAINTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1204
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

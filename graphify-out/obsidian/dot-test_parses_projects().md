@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "TeamsConfig"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/TeamsConfig
 ---
 
 # .test_parses_projects()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTeamsConfigParsing]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

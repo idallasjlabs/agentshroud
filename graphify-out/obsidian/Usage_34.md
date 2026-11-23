@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mac-app-discovery/README.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "Community 2085"
+community: "Atlas — Curriculum Architect"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2085
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2085
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

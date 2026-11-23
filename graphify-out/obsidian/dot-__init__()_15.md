@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ContextGuard"
-location: "L61"
+community: "FakeRBAC"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/FakeRBAC
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store.          Args             master_secret The ma]] - `rationale_for` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

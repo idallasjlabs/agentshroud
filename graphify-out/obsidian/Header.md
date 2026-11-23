@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "Community 1950"
+community: "Skill: Pull Request (PR) Generator"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1950
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Content Requirements]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1950
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

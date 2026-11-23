@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mm.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 624"
-location: "L339"
+community: "Skill: Technical Illustrator (TI)"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_624
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_624
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

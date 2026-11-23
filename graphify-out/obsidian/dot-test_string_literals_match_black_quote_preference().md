@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers (2)"
+community: "_sync"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers_2
+  - community/_sync
 ---
 
 # .test_string_literals_match_black_quote_preference()
@@ -15,6 +15,6 @@ tags:
 - [[CI runs black on gateway; an appended registry block must already be clean.]] - `rationale_for` [EXTRACTED]
 - [[TestSerialization]] - `method` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
-- [[parametrize_2]] - `references` [EXTRACTED]
+- [[parametrize_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers_2
+#graphify/code #graphify/EXTRACTED #community/_sync

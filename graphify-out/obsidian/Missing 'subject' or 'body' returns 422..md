@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Community 512"
+community: "TestEmailSend"
 location: "L112"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/TestEmailSend
 ---
 
 # Missing 'subject' or 'body' returns 422.
 
 ## Connections
-- [[.test_missing_required_fields_returns_422()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_missing_required_fields_returns_422()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_512
+#graphify/rationale #graphify/EXTRACTED #community/TestEmailSend

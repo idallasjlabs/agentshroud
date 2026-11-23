@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "Community 166"
+community: "EgressFilter"
 location: "L414"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/EgressFilter
 ---
 
 # Falco runtime security alerts viewer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_dashboard()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_166
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

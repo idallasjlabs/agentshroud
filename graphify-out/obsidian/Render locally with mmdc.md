@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 891"
-location: "L239"
+community: "Skill: Technical Illustrator (TI)"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Render locally with mmdc
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rendering and Export]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

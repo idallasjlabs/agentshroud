@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # ._matches_blocked()
@@ -17,4 +17,4 @@ tags:
 - [[Check if path matches any blocked pattern.]] - `rationale_for` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

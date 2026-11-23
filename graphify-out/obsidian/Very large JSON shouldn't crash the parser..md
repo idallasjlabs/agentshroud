@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "ContextGuard"
 location: "L157"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/ContextGuard
 ---
 
 # Very large JSON shouldn't crash the parser.
 
 ## Connections
-- [[.test_oversized_json_payload()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_oversized_json_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

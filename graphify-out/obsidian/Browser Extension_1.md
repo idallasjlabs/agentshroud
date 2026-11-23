@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "docs/planning/RELEASE-PLAN.md"
 type: "document"
-community: "Community 831"
-location: "L322"
+community: "v1.3.0 — Platform Expansion (53 items)"
+location: "L396"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_831
+  - community/v130__Platform_Expansion_53_items
 ---
 
 # Browser Extension
 
 ## Connections
-- [[Post-v1.0.0 — Deferred]] - `contains` [EXTRACTED]
+- [[v1.3.0 — Platform Expansion (53 items)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_831
+#graphify/document #graphify/EXTRACTED #community/v130__Platform_Expansion_53_items

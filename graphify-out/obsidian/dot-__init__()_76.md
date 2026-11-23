@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "ResourceGuard"
-location: "L58"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore]] - `method` [EXTRACTED]
+- [[dot-_load_config()_1]] - `calls` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

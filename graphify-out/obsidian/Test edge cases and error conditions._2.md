@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # Test edge cases and error conditions.
 
 ## Connections
-- [[.test_edge_cases()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_edge_cases()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

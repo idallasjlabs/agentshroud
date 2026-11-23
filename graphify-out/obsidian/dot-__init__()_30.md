@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L323"
+community: "GroupWorkspaceManager"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/GroupWorkspaceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

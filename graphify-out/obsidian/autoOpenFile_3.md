@@ -1,12 +1,12 @@
 ---
-source_file: ".omp/mcp.json"
+source_file: ".mcp.json"
 type: "code"
-community: "Community 404"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/mcpjson
 ---
 
 # autoOpenFile
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xmind_3]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_404
+#graphify/code #graphify/EXTRACTED #community/mcpjson

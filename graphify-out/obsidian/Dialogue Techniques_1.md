@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/socrates/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "Community 1124"
-location: "L78"
+community: "Socrates — Dialogue Architect"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Dialogue Techniques
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1124
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

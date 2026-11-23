@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
 type: "document"
-community: "Community 73"
-location: "L34"
+community: "Egress Filter Errors"
+location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/Egress_Filter_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/Egress_Filter_Errors

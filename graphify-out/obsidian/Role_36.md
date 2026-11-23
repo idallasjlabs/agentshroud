@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/oracle.md"
+source_file: ".agents/agents/i-tdd.md"
 type: "document"
-community: "Community 1979"
-location: "L10"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1979
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1979
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

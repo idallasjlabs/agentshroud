@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".cursor/agents/i-session-prompt.md"
 type: "document"
-community: "Community 745"
-location: "L151"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Re-injection Command (for reference)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "Community 1487"
+community: "deep_security_test"
 location: "1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1487
+  - community/deep_security_test
 ---
 
 # Test Log Sanitizer PII Scrubbing
 
 ## Connections
-- [[LogSanitizer PII-Scrubbing Log Filter]] - `references` [EXTRACTED]
+- [[LogSanitizer]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1487
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

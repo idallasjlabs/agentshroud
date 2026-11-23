@@ -1,13 +1,13 @@
 ---
 source_file: "scripts/data/openclaw-ghsa-snapshot.json"
 type: "document"
-community: "Community 1670"
+community: "openclaw-ghsa-snapshot.json"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1670
+  - community/openclaw-ghsa-snapshotjson
 ---
 
 # openclaw-ghsa-snapshot.json
 
-#graphify/document #graphify/EXTRACTED #community/Community_1670
+#graphify/document #graphify/EXTRACTED #community/openclaw-ghsa-snapshotjson

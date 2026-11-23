@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "Community 88"
+community: "TrustManager"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_88
+  - community/TrustManager
 ---
 
 # hermes_tm()
 
 ## Connections
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_3]] - `references` [EXTRACTED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[fixture_68]] - `references` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_88
+#graphify/code #graphify/EXTRACTED #community/TrustManager

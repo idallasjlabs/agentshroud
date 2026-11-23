@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 140"
+community: "EgressEvent"
 location: "L206"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_140
+  - graphify/EXTRACTED
+  - community/EgressEvent
 ---
 
 # TestDailySummary
 
 ## Connections
-- [[.test_empty_summary()]] - `method` [EXTRACTED]
-- [[.test_summary_report()]] - `method` [EXTRACTED]
-- [[AlertSeverity]] - `uses` [INFERRED]
+- [[dot-test_empty_summary()]] - `method` [EXTRACTED]
+- [[dot-test_summary_report()]] - `method` [EXTRACTED]
 - [[EgressChannel]] - `uses` [INFERRED]
 - [[EgressEvent]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

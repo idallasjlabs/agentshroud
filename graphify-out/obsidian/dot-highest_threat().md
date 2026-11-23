@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPInspector"
+community: "test_mcp_proxy.py"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_mcp_proxypy
 ---
 
 # .highest_threat()
@@ -16,4 +16,4 @@ tags:
 - [[Return the highest threat level from all findings.]] - `rationale_for` [EXTRACTED]
 - [[ThreatLevel_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

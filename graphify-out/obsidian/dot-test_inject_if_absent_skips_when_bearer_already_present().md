@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "AgentShroud System Status Report"
+community: "TestOAuthInjection"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_System_Status_Report
+  - community/TestOAuthInjection
 ---
 
 # .test_inject_if_absent_skips_when_bearer_already_present()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_make_anthropic_injector()]] - `calls` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
-- [[inject_headers does NOT overwrite an existing Authorization Bearer token,]] - `rationale_for` [EXTRACTED]
+- [[inject_headers does NOT overwrite an existing Authorization Bearer token, but…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_System_Status_Report
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 154"
+community: "ToolResultInjectionScanner"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/ToolResultInjectionScanner
 ---
 
 # scanner()
 
 ## Connections
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[_scanner_summary()]] - `indirect_call` [INFERRED]
+- [[fixture_23]] - `references` [EXTRACTED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

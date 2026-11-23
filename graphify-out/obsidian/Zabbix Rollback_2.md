@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-production.md"
+source_file: ".opencode/agents/i-production.md"
 type: "document"
-community: "Community 1180"
-location: "L122"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1180
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Zabbix Rollback
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 3 MITIGATE (Rollback First!)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1180
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

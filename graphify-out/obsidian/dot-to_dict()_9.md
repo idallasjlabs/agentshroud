@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "api.py"
-location: "L94"
+community: "ingest_api/main.py"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/ingest_api/mainpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-get_summary()_1]] - `calls` [EXTRACTED]
-- [[A2APeer]] - `method` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

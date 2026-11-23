@@ -1,25 +1,19 @@
 ---
-source_file: "gateway/soc/event_adapter.py"
+source_file: ""
 type: "code"
-community: "Community 614"
-location: "L23"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/ingest_api/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[SecurityEvent_1]] - `uses` [INFERRED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[_map_severity()]] - `references` [EXTRACTED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_13]] - `references` [EXTRACTED]
+- [[dot-to_dict()_8]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_614
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

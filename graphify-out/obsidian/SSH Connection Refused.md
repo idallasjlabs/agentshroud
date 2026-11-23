@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 1188"
+community: "Troubleshooting"
 location: "L1685"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1188
+  - community/Troubleshooting
 ---
 
 # SSH Connection Refused
 
 ## Connections
-- [[Troubleshooting_46]] - `contains` [EXTRACTED]
+- [[Troubleshooting_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1188
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

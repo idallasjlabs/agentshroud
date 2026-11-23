@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "scripts/cve-registry-manual-review.md"
 type: "document"
-community: "Community 1255"
-location: "L562"
+community: "CVE Registry — Manual Review List"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1255
+  - community/CVE_Registry__Manual_Review_List
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.0 — featesp32-s3-hermes-voice (2026-06-24)]] - `contains` [EXTRACTED]
+- [[CVE Registry — Manual Review List]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1255
+#graphify/document #graphify/EXTRACTED #community/CVE_Registry__Manual_Review_List

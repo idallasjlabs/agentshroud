@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "test_tool_chain_analyzer.py"
+community: "ToolChainAnalyzer"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_tool_chain_analyzerpy
+  - community/ToolChainAnalyzer
 ---
 
 # .test_shell_bleed_bypass_blocked()
 
 ## Connections
 - [[TestShellBleedPatterns]] - `method` [EXTRACTED]
+- [[parametrize_26]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tool_chain_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "PermissionLevel"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/PermissionLevel
 ---
 
 # .test_clamp_low()
 
 ## Connections
-- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TestTrustLevels]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

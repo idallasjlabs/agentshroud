@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/history-purge-plan.md"
 type: "document"
-community: "Community 655"
+community: "Git History Purge Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_655
+  - community/Git_History_Purge_Plan
 ---
 
 # Git History Purge Plan
@@ -16,8 +16,8 @@ tags:
 - [[Post-Purge — Other Instances]] - `contains` [EXTRACTED]
 - [[Post-Rotation Verification]] - `contains` [EXTRACTED]
 - [[Pre-Purge Checklist]] - `contains` [EXTRACTED]
-- [[Procedure]] - `contains` [EXTRACTED]
+- [[Procedure_1]] - `contains` [EXTRACTED]
 - [[Secret Rotation Checklist]] - `contains` [EXTRACTED]
 - [[history-purge-plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_655
+#graphify/document #graphify/EXTRACTED #community/Git_History_Purge_Plan

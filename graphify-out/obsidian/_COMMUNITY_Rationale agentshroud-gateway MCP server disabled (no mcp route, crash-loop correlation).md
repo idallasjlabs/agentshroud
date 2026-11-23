@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # Rationale: agentshroud-gateway MCP server disabled (no /mcp route, crash-loop correlation)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[installapiprerequisites endpoint]] - concept - gateway/web/templates/installer.html
-- [[checkPrereqs()]] - code - gateway/web/templates/installer.html
+- [[Rationale agentshroud-gateway MCP server disabled (no mcp route, crash-loop correlation)]] - rationale - docker/config/openclaw/mcp/servers.json
+- [[openclaw mcpservers.json (MCP server definitions)]] - document - docker/config/openclaw/mcp/servers.json
 
 ## Live Query (requires Dataview plugin)
 

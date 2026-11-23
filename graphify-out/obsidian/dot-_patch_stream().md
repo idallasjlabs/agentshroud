@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "make_httpx_fetcher"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/make_httpx_fetcher
 ---
 
 # ._patch_stream()
@@ -20,5 +20,6 @@ tags:
 - [[dot-test_secure_stream_kwargs_are_pinned()]] - `calls` [EXTRACTED]
 - [[Patch httpx.stream; return a list that records the call kwargs.]] - `rationale_for` [EXTRACTED]
 - [[TestMakeHttpxFetcher]] - `method` [EXTRACTED]
+- [[_fake_stream()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

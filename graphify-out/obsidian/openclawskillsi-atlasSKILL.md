@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-atlas/SKILL.md"
 type: "document"
-community: "WebProxyConfig (2)"
+community: "Atlas — Curriculum Architect"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WebProxyConfig_2
+  - community/Atlas__Curriculum_Architect
 ---
 
 # openclaw/skills/i-atlas/SKILL.md
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WebProxyConfig_2
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

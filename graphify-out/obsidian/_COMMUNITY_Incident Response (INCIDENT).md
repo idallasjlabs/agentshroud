@@ -1,0 +1,22 @@
+---
+type: community
+members: 5
+---
+
+# Incident Response (INCIDENT)
+
+**Members:** 5 nodes
+
+## Members
+- [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Purpose_43]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Related Skills_9]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Usage_10]] - document - docker/config/hermes/skills/i-production/README.md
+- [[hermesskillsi-productionREADME]] - document - docker/config/hermes/skills/i-production/README.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Incident_Response_INCIDENT
+SORT file.name ASC
+```

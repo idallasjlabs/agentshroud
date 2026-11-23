@@ -1,42 +1,53 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 7"
+community: "test_security_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_security_integrationpy
 ---
 
 # test_security_integration.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
+- [[Security Module Integration Tests — full pipeline end-to-end.]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[approval_queue()_1]] - `contains` [EXTRACTED]
+- [[asyncio_64]] - `imports` [EXTRACTED]
+- [[drift_detector.py]] - `imports_from` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[egress_filter()_1]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports_from` [EXTRACTED]
 - [[encrypted_store()]] - `contains` [EXTRACTED]
+- [[encrypted_store.py]] - `imports_from` [EXTRACTED]
 - [[full_pipeline_config()]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ledger()_2]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `imports_from` [EXTRACTED]
 - [[prompt_guard()_2]] - `contains` [EXTRACTED]
-- [[sanitizer()_4]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[queue.py]] - `imports_from` [EXTRACTED]
+- [[sanitizer()_5]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `contains` [EXTRACTED]
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - `contains` [EXTRACTED]
 - [[test_encrypted_store_in_pipeline()]] - `contains` [EXTRACTED]
@@ -49,6 +60,7 @@ tags:
 - [[test_pipeline_selective_modules()]] - `contains` [EXTRACTED]
 - [[test_response_credential_blocking()]] - `contains` [EXTRACTED]
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
-- [[trust_manager()_4]] - `contains` [EXTRACTED]
+- [[trust_manager()_5]] - `contains` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

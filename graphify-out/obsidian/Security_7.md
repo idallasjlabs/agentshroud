@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-mcpm-aws-profile.agent.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 172"
-location: "L304"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L298"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_172
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Security
 
 ## Connections
-- [[Best Practices_7]] - `contains` [EXTRACTED]
+- [[Best Practices]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_172
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

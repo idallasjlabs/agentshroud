@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Community 1210"
+community: "ANTHROPIC_BASE_URL"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1210
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Description
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1210
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

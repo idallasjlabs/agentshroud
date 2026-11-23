@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "pending (bot submits action requiring approval)"
+community: "TestComplianceMaths"
 location: "L1075"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pending_bot_submits_action_requiring_approval
+  - community/TestComplianceMaths
 ---
 
 # .test_weighted_subscore_partial()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestComplianceMaths]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pending_bot_submits_action_requiring_approval
+#graphify/code #graphify/EXTRACTED #community/TestComplianceMaths

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: ""
 type: "code"
-community: "Community 54"
-location: "L98"
+community: "services.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/servicespy
 ---
 
 # Any
 
 ## Connections
-- [[.from_dict()]] - `references` [EXTRACTED]
+- [[dot-__init__()_64]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/servicespy

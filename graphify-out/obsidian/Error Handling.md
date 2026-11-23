@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/apollo.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 1351"
-location: "L123"
+community: "clamav_scanner.py"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1351
+  - community/clamav_scannerpy
 ---
 
 # Error Handling
 
 ## Connections
-- [[Technical Specification]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1351
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

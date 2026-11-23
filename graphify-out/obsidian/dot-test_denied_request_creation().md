@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L452"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_denied_request_creation()
@@ -16,4 +16,4 @@ tags:
 - [[Test denied request creation.]] - `rationale_for` [EXTRACTED]
 - [[TestDeniedRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

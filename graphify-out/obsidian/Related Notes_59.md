@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 1286"
-location: "L104"
+community: "Pydantic"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1286
+  - community/Pydantic
 ---
 
 # Related Notes
 
 ## Connections
-- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
+- [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1286
+#graphify/document #graphify/EXTRACTED #community/Pydantic

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestPromptInjectionDetection"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestPromptInjectionDetection
 ---
 
 # .test_role_override_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptInjectionDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestPromptInjectionDetection

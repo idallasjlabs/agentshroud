@@ -1,31 +1,25 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 12
 ---
 
 # AgentShroud Branding Assets Index
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[Container Properties]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Environment Variables_10]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Health Check_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Key Endpoints_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Logs_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Networks_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Ports]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Related Notes_47]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Resource Limits]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Secrets_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Security Hardening_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Summary_19]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[Volumes_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[agentshroud-gateway_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
-- [[tmpfs Mounts]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[AgentShroud Branding Assets Index]] - document - branding/INDEX.md
+- [[Assets Needed]] - document - branding/INDEX.md
+- [[Documentation Needed]] - document - branding/INDEX.md
+- [[Documentation Status]] - document - branding/INDEX.md
+- [[Icon Sets]] - document - branding/INDEX.md
+- [[Logo Formats Available]] - document - branding/INDEX.md
+- [[Social Media_1]] - document - branding/INDEX.md
+- [[💡 Usage Tips]] - document - branding/INDEX.md
+- [[📁 Directory Overview]] - document - branding/INDEX.md
+- [[📊 Asset Summary]] - document - branding/INDEX.md
+- [[📝 To-Do]] - document - branding/INDEX.md
+- [[📞 Contact]] - document - branding/INDEX.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +27,10 @@ members: 16
 TABLE source_file, type FROM #community/AgentShroud_Branding_Assets_Index
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Primary Logo]]
+- 1 edge to [[_COMMUNITY_🎨 Quick Access]]
+
+## Top bridge nodes
+- [[AgentShroud Branding Assets Index]] - degree 7, connects to 2 communities

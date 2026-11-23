@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 455"
+community: "ToolResultSanitizerConfig"
 location: "L274"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/ToolResultSanitizerConfig
 ---
 
 # Test the convenience sanitize_tool_result function.
 
 ## Connections
-- [[.test_convenience_function()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_convenience_function()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizerConfig

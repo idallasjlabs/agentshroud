@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 563"
-location: "L357"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_563
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Verification
 
 ## Connections
-- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
+- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_563
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

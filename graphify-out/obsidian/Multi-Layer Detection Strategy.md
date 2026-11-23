@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 164"
+community: "Multi-Layer Detection Strategy"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Multi-Layer_Detection_Strategy
 ---
 
 # Multi-Layer Detection Strategy
@@ -16,6 +16,5 @@ tags:
 - [[Layer 2 Unicode Normalization]] - `contains` [EXTRACTED]
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
 - [[Prompt Injection Defense]] - `contains` [EXTRACTED]
-- [[Prompt Injection Detected]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Multi-Layer_Detection_Strategy

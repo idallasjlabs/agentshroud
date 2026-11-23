@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "wakeword.c"
-location: "L718"
+community: "test_module_stats.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/test_module_statspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

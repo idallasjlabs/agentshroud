@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-socrates/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "Community 58"
+community: "Incident Response (INCIDENT)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Incident_Response_INCIDENT
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_9]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

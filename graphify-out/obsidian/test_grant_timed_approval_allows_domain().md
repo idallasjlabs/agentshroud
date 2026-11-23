@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "EgressPolicy"
 location: "L519"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/EgressPolicy
 ---
 
 # test_grant_timed_approval_allows_domain()
 
 ## Connections
 - [[A domain with an active timed approval should be allowed.]] - `rationale_for` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

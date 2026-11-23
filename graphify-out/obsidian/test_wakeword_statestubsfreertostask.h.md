@@ -1,17 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/freertos/task.h"
 type: "code"
-community: "AgentShroud Incident Response Plan (10)"
+community: "test_wakeword_state/stubs/freertos/FreeRTOS.h"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Incident_Response_Plan_10
+  - community/test_wakeword_state/stubs/freertos/FreeRTOSh
 ---
 
 # test_wakeword_state/stubs/freertos/task.h
 
 ## Connections
+- [[test_wakeword_statestubsfreertosFreeRTOS.h]] - `imports` [EXTRACTED]
 - [[vTaskDelay()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan_10
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/freertos/FreeRTOSh

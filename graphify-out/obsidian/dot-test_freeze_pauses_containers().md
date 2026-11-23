@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_modes.py"
 type: "code"
-community: "Security Modules (58)"
+community: "TestKillSwitchScript"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Security_Modules_58
+  - community/TestKillSwitchScript
 ---
 
 # .test_freeze_pauses_containers()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKillSwitchScript]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Security_Modules_58
+#graphify/code #graphify/EXTRACTED #community/TestKillSwitchScript

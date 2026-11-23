@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/metadata_guard.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "ContextGuard"
-location: "L39"
+community: "KeyRotationManager"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/KeyRotationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[MetadataGuard]] - `method` [EXTRACTED]
+- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
+- [[KeyRotationConfig]] - `references` [EXTRACTED]
+- [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

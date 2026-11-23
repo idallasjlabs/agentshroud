@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "browser/scripts/browse.py"
-location: "L800"
+community: "sync-cve-registry.py"
+location: "L586"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/sync-cve-registrypy
 ---
 
 # Run ONE agent's full, independent GHSA pipeline. Returns count registered.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_agent_ghsa()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

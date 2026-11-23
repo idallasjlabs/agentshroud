@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "i-eightd SKILL — 8D Root Cause Analysis"
+community: "load_all_secret_file_values"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/i-eightd_SKILL__8D_Root_Cause_Analysis
+  - community/load_all_secret_file_values
 ---
 
 # .test_returns_values_meeting_min_len()
 
 ## Connections
 - [[TestLoadAllSecretFileValues]] - `method` [EXTRACTED]
+- [[load_all_secret_file_values()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/i-eightd_SKILL__8D_Root_Cause_Analysis
+#graphify/code #graphify/EXTRACTED #community/load_all_secret_file_values

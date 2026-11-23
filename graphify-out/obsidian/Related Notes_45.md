@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Community 800"
-location: "L46"
+community: "OpenClaw"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_800
+  - community/OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[Playwright]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_800
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

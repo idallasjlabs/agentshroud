@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "rationale"
-community: "Community 75"
+community: "_make_proxy"
 location: "L327"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/_make_proxy
 ---
 
 # Drive a single owner command through the proxy and capture admin notices.
 
 ## Connections
-- [[._run_owner_cmd()]] - `rationale_for` [EXTRACTED]
+- [[dot-_run_owner_cmd()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

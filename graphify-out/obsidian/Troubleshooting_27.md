@@ -1,17 +1,21 @@
 ---
-source_file: "docker/bot-capabilities.md"
+source_file: ".opencode/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 806"
-location: "L211"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_806
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
+- [[Access Denied_7]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_7]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_7]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_7]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_806
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

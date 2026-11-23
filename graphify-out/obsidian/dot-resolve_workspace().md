@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "GroupWorkspaceManager"
 location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/GroupWorkspaceManager
 ---
 
 # .resolve_workspace()
@@ -19,7 +19,7 @@ tags:
 - [[dot-read_group_memory()]] - `calls` [EXTRACTED]
 - [[GroupAccessDenied]] - `calls` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
-- [[Resolve the workspacecontext for an inbound message, fail-closed.          Retu]] - `rationale_for` [EXTRACTED]
-- [[WorkspaceContext]] - `references` [EXTRACTED]
+- [[Resolve the workspacecontext for an inbound message, fail-closed. Returns…]] - `rationale_for` [EXTRACTED]
+- [[WorkspaceContext]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

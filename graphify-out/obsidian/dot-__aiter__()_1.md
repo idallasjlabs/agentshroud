@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "1. GitHub MCP Authentication Reset (2)"
-location: "L620"
+community: "_run_asgi"
+location: "L729"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset_2
+  - community/_run_asgi
 ---
 
 # .__aiter__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset_2
+#graphify/code #graphify/EXTRACTED #community/_run_asgi

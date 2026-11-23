@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L140"
+community: "lifespan"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - community/lifespan
 ---
 
 # _op_authenticate()
@@ -15,4 +15,4 @@ tags:
 - [[_prewarm_op()]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/lifespan

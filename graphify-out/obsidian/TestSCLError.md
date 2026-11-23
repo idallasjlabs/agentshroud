@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # TestSCLError
 
 ## Connections
-- [[.test_confirmation_required()]] - `method` [EXTRACTED]
-- [[.test_error_model()]] - `method` [EXTRACTED]
+- [[dot-test_confirmation_required()]] - `method` [EXTRACTED]
+- [[dot-test_error_model()]] - `method` [EXTRACTED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLError]] - `uses` [INFERRED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

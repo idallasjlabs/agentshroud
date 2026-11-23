@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/System Overview.md"
+source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
 type: "document"
-community: "Community 1148"
-location: "L114"
+community: "ANTHROPIC_BASE_URL"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1148
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
+- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1148
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

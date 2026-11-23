@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "ApprovalQueueConfig (2)"
+community: "FakeRBAC"
 location: "L1602"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/FakeRBAC
 ---
 
 # Fullwidth + mention/punctuation blocked command variants should still be…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_blocked_command_with_fullwidth_mention_and_punctuation_is_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

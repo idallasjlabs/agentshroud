@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L37"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_7
+  - graphify/INFERRED
+  - community/ingest_api/configpy
 ---
 
 # full_pipeline_config()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
 - [[Config with all security modules enabled.]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_1]] - `calls` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
-- [[PIIConfig]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
+- [[GatewayConfig]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[RouterConfig]] - `uses` [INFERRED]
+- [[fixture_107]] - `references` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

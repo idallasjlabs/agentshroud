@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 783"
-location: "L1"
+community: "compose_generator.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/compose_generatorpy
 ---
 
-# compose_generator.py.md
+# compose_generator.py
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_21]] - `contains` [EXTRACTED]
+- [[Default Service Configuration]] - `contains` [EXTRACTED]
+- [[Function Details_34]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_36]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
+- [[Related_36]] - `contains` [EXTRACTED]
+- [[Responsibilities_36]] - `contains` [EXTRACTED]
+- [[compose_generator.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

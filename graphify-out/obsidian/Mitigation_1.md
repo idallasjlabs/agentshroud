@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-004-api-keys-never-in-agent-container.md"
+source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
 type: "document"
-community: "Community 894"
-location: "L52"
+community: "ADR-006: Multi-Runtime Container Support"
+location: "L215"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_894
+  - community/ADR-006_Multi-Runtime_Container_Support
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_3]] - `contains` [EXTRACTED]
+- [[Consequences_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_894
+#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support

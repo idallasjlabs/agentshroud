@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L194"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Check if a user has permission to perform an action on a resource.
 
 ## Connections
-- [[.check_permission()]] - `rationale_for` [EXTRACTED]
+- [[dot-check_permission()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

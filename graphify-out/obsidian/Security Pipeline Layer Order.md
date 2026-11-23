@@ -1,11 +1,11 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "concept"
-community: "Community 1556"
+community: "Security Pipeline Flow"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1556
+  - community/Security_Pipeline_Flow
 ---
 
 # Security Pipeline Layer Order
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Security Pipeline Flow]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1556
+#graphify/concept #graphify/EXTRACTED #community/Security_Pipeline_Flow

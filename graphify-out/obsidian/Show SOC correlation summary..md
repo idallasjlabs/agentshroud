@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Community 87"
+community: "cli/main.py"
 location: "L155"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/cli/mainpy
 ---
 
 # Show SOC correlation summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_correlation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_87
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "EnhancedApprovalQueue"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/EnhancedApprovalQueue
 ---
 
 # .test_timeout_auto_deny()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Test timeout with auto-deny.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalWorkflow]] - `method` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

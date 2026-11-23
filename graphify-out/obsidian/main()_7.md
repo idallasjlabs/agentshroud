@@ -1,20 +1,18 @@
 ---
-source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "Community 639"
-location: "L45"
+community: "check_benchmark_regression.py"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_639
+  - community/check_benchmark_regressionpy
 ---
 
 # main()
 
 ## Connections
-- [[Cron Daily CVE Triage & Remediation Scan]] - `shares_data_with` [INFERRED]
-- [[curl_json()]] - `calls` [EXTRACTED]
-- [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
+- [[check()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_639
+#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

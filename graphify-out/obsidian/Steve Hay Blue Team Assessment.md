@@ -1,11 +1,11 @@
 ---
 source_file: "docs/planning/RELEASE-PLAN.md"
 type: "concept"
-community: "Community 400"
+community: "STPA-Sec Analysis of AgentShroud"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_400
+  - graphify/EXTRACTED
+  - community/STPA-Sec_Analysis_of_AgentShroud
 ---
 
 # Steve Hay Blue Team Assessment
@@ -14,4 +14,4 @@ tags:
 - [[Hay, Enterprise Security Feature Priorities Assessment (2026)]] - `conceptually_related_to` [INFERRED]
 - [[v0.8.0 Watchtower — Security Fixes + Module Wiring]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/INFERRED #community/Community_400
+#graphify/concept #graphify/EXTRACTED #community/STPA-Sec_Analysis_of_AgentShroud

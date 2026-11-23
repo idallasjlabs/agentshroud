@@ -1,19 +1,18 @@
 ---
-source_file: "browser-extension/package.json"
+source_file: "docker/config/hermes/skills/i-browser/package.json"
 type: "code"
-community: "Community 693"
-location: "L7"
+community: "hermes/skills/i-browser/package.json"
+location: "L6"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_693
+  - community/hermes/skills/i-browser/packagejson
 ---
 
 # scripts
 
 ## Connections
-- [[package.json_1]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 - [[test_1]] - `contains` [EXTRACTED]
-- [[testcoverage]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_693
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/packagejson

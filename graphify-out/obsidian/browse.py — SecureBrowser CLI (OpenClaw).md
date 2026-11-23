@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 1264"
+community: "browse.py — SecureBrowser CLI (OpenClaw)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1264
+  - community/browsepy__SecureBrowser_CLI_OpenClaw
 ---
 
 # browse.py — SecureBrowser CLI (OpenClaw)
@@ -15,4 +15,4 @@ tags:
 - [[SecureBrowser Security Configuration (config.yaml, OpenClaw)]] - `references` [EXTRACTED]
 - [[browser-fetch package.json]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1264
+#graphify/code #graphify/EXTRACTED #community/browsepy__SecureBrowser_CLI_OpenClaw

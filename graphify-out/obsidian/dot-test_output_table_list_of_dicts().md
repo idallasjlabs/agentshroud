@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "AlertDispatcher (4)"
-location: "L329"
+community: "_output"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_4
+  - community/_output
 ---
 
 # .test_output_table_list_of_dicts()
@@ -15,4 +15,4 @@ tags:
 - [[TestOutputHelpers]] - `method` [EXTRACTED]
 - [[_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_4
+#graphify/code #graphify/EXTRACTED #community/_output

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 71"
+community: "NetworkValidator"
 location: "L558"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/NetworkValidator
 ---
 
 # Convenience function to validate network security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[validate_network_security()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/NetworkValidator

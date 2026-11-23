@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/mcporter/SKILL.md"
 type: "document"
-community: "Community 2268"
+community: "mcporter/SKILL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2268
+  - community/mcporter/SKILLmd
 ---
 
 # mcporter
 
 ## Connections
-- [[SKILL_224]] - `contains` [EXTRACTED]
+- [[mcporterSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2268
+#graphify/document #graphify/EXTRACTED #community/mcporter/SKILLmd

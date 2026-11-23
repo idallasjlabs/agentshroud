@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Community 2030"
+community: "Features"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2030
+  - community/Features
 ---
 
 # Dependency Graph
@@ -16,6 +16,6 @@ tags:
 - [[Gateway Module Dependencies]] - `contains` [EXTRACTED]
 - [[Key Initialization Order (main.py lifespan)]] - `contains` [EXTRACTED]
 - [[Python Package Dependencies]] - `contains` [EXTRACTED]
-- [[Related Notes_70]] - `contains` [EXTRACTED]
+- [[Related Notes_68]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2030
+#graphify/document #graphify/EXTRACTED #community/Features

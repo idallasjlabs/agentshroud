@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 2183"
-location: "L6"
+community: "config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2183
+  - community/configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2183
+#graphify/document #graphify/EXTRACTED #community/configpy

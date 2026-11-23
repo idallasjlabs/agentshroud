@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/atlas/SKILL.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 1169"
-location: "L154"
+community: "Athena — Knowledge Distiller"
+location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/Athena__Knowledge_Distiller
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1169
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

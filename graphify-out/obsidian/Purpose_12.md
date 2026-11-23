@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/README.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "apple_engine.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/apple_enginepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

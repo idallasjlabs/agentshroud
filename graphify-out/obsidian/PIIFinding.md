@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 1"
+community: "middleware.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/middlewarepy
 ---
 
 # PIIFinding
 
 ## Connections
-- [[.scan()_3]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

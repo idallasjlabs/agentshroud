@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 171"
-location: "L8"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)
@@ -14,17 +14,17 @@ tags:
 ## Connections
 - [[AWS Profile Basics]] - `contains` [EXTRACTED]
 - [[AWS SSO Configuration]] - `contains` [EXTRACTED]
-- [[Best Practices_1]] - `contains` [EXTRACTED]
-- [[Configuration Files]] - `contains` [EXTRACTED]
+- [[Best Practices]] - `contains` [EXTRACTED]
+- [[Configuration Files_1]] - `contains` [EXTRACTED]
 - [[Configure New Profile]] - `contains` [EXTRACTED]
 - [[List Available Profiles]] - `contains` [EXTRACTED]
 - [[Multi-Account AWS Access]] - `contains` [EXTRACTED]
-- [[Quick Reference]] - `contains` [EXTRACTED]
-- [[Related Skills_1]] - `contains` [EXTRACTED]
-- [[Role_17]] - `contains` [EXTRACTED]
+- [[Quick Reference_2]] - `contains` [EXTRACTED]
+- [[Related Skills_18]] - `contains` [EXTRACTED]
+- [[Role_69]] - `contains` [EXTRACTED]
 - [[Switch AWS Profile for MCP]] - `contains` [EXTRACTED]
-- [[Troubleshooting_2]] - `contains` [EXTRACTED]
-- [[When to Invoke_1]] - `contains` [EXTRACTED]
-- [[i-mcpm-aws-profile]] - `contains` [EXTRACTED]
+- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[When to Invoke]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpm-aws-profileSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

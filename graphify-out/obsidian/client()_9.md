@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "chatbot/test_main.py"
 type: "code"
-community: "Community 1248"
-location: "L21"
+community: "test_main.py"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/test_mainpy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
+- [[fixture_41]] - `references` [EXTRACTED]
+- [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/test_mainpy

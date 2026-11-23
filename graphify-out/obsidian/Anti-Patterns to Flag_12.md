@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 419"
-location: "L222"
+community: "Skill: UX Expert (UX)"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_419
+  - community/Skill_UX_Expert_UX
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_419
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

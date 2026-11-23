@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "env_guard.py"
-location: "L35"
+community: "Any"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/Any
 ---
 
 # .validate()
 
 ## Connections
-- [[Mock validation that can be controlled.]] - `rationale_for` [EXTRACTED]
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
+- [[CredentialValidator]] - `method` [EXTRACTED]
+- [[Validate a credential. Returns tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/Any

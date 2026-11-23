@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "GroupWorkspaceManager"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/GroupWorkspaceManager
 ---
 
 # ._require_memory()
@@ -18,4 +18,4 @@ tags:
 - [[dot-read_group_memory()]] - `calls` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

@@ -1,17 +1,17 @@
 ---
-source_file: "tests/startup_smoke/test_wire_llm_settings.js"
+source_file: "tests/startup_smoke/test_apply_patches.js"
 type: "code"
-community: "Community 682"
-location: "L38"
+community: "test_apply_patches.js"
+location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_682
+  - community/test_apply_patchesjs
 ---
 
 # { spawnSync }
 
 ## Connections
-- [[test_wire_llm_settings.js]] - `contains` [EXTRACTED]
+- [[test_apply_patches.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_682
+#graphify/code #graphify/EXTRACTED #community/test_apply_patchesjs

@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ps.md"
+source_file: ".agents/skills/oracle/SKILL.md"
 type: "document"
-community: "Community 929"
-location: "L10"
+community: "Oracle — Feedback Analyst"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_929
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_929
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

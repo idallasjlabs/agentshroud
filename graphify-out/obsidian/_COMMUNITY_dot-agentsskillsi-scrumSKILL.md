@@ -1,18 +1,15 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 2
 ---
 
 # .agents/skills/i-scrum/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Accepted-Risk Register for Sunday Upgrade CVE Gate]] - document - .trivyignore.yaml
-- [[CVE-2026-60002 openssh-client no fix (accepted risk)]] - rationale - .trivyignore.yaml
-- [[CVE-2026-6653 libxml2 use-after-free (accepted risk)]] - rationale - .trivyignore.yaml
+- [[dot-agentsskillsi-scrumSKILL]] - document - .agents/skills/i-scrum/SKILL.md
+- [[Skill scrum]] - document - .agents/skills/i-scrum/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,28 +1,29 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 122"
+community: "KeyRotationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/KeyRotationManager
 ---
 
 # key_rotation.py
 
 ## Connections
 - [[CredentialInfo]] - `contains` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `imports` [EXTRACTED]
+- [[CredentialRotationPolicy]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
+- [[Enum_11]] - `imports_from` [EXTRACTED]
+- [[KeyRotationConfig]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `contains` [EXTRACTED]
 - [[RotationStatus]] - `contains` [EXTRACTED]
-- [[Rule agentshroud-subprocess-shell-true]] - `references` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
-- [[datetime_5]] - `imports_from` [EXTRACTED]
+- [[datetime_1]] - `imports_from` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports_from` [EXTRACTED]
 - [[key_rotation_config.py]] - `imports_from` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

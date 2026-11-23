@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/BROWSER_FETCH_SKILL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 837"
-location: "L9"
+community: "Canvas Skill"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_837
+  - community/Canvas_Skill
 ---
 
 # Overview
 
 ## Connections
-- [[Browser-Fetch Skill for 1Password Share Links]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_837
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

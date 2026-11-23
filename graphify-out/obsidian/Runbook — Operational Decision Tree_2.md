@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-tw.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "Community 729"
+community: ".agents/agents/i-tw.md"
 location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/agents/agents/i-twmd
 ---
 
 # Runbook — Operational Decision Tree
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[INFO Extracted 1,204 records → s3my-bucketlanding..._2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-twmd

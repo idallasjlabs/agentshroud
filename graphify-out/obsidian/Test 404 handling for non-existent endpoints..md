@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 53"
+community: "app"
 location: "L221"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/app
 ---
 
 # Test 404 handling for non-existent endpoints.
 
 ## Connections
-- [[.test_404_error()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_404_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_53
+#graphify/rationale #graphify/EXTRACTED #community/app

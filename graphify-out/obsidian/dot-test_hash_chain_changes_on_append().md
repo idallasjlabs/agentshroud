@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Egress Filter Errors"
+community: "TestAuditTrail"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Egress_Filter_Errors
+  - community/TestAuditTrail
 ---
 
 # .test_hash_chain_changes_on_append()
 
 ## Connections
-- [[TestAuditTrail_2]] - `method` [EXTRACTED]
+- [[TestAuditTrail_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Egress_Filter_Errors
+#graphify/code #graphify/EXTRACTED #community/TestAuditTrail

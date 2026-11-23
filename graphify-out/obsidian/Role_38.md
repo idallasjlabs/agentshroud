@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/vulcan.md"
+source_file: ".cursor/agents/i-session-prompt.md"
 type: "document"
-community: "Community 1951"
+community: "Workflow: Survey → Draft → Inject → Confirm"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1951
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1951
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

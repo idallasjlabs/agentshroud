@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 582"
-location: "L6"
+community: "dns_filter.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/dns_filterpy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

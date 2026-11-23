@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/OPENCLAW_WRITE_REQUIREMENTS.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 237"
-location: "L495"
+community: "SecureBrowser Skill"
+location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_237
+  - community/SecureBrowser_Skill
 ---
 
-# Configuration:
+# Configuration
 
 ## Connections
-- [[Recommended Configuration for Your Use Case]] - `contains` [EXTRACTED]
+- [[Full Configuration Example]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_237
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

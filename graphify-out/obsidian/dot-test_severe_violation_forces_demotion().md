@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "soc/router.py"
+community: "lifespan.py"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/lifespanpy
 ---
 
 # .test_severe_violation_forces_demotion()
@@ -18,4 +18,4 @@ tags:
 - [[_make_tm()]] - `calls` [EXTRACTED]
 - [[_set_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

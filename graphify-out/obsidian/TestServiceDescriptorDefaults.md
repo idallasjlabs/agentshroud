@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # TestServiceDescriptorDefaults
 
 ## Connections
-- [[.test_running_service()]] - `method` [EXTRACTED]
-- [[.test_standby_service()]] - `method` [EXTRACTED]
-- [[.test_stopped_service()]] - `method` [EXTRACTED]
-- [[.test_unhealthy_service()]] - `method` [EXTRACTED]
-- [[ServiceManager]] - `uses` [INFERRED]
+- [[dot-test_running_service()]] - `method` [EXTRACTED]
+- [[dot-test_standby_service()]] - `method` [EXTRACTED]
+- [[dot-test_stopped_service()]] - `method` [EXTRACTED]
+- [[dot-test_unhealthy_service()]] - `method` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
+- [[ServiceDescriptor]] - `uses` [INFERRED]
+- [[ServiceStatus]] - `uses` [INFERRED]
 - [[Validate ServiceDescriptor model defaults — no real container calls.]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

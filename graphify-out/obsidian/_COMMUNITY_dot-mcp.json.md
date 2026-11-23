@@ -1,38 +1,36 @@
 ---
 type: community
-cohesion: 0.10
 members: 23
 ---
 
 # .mcp.json
 
-**Cohesion:** 0.10 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[AgentShroud Threat Model (L-1..L-4 Loss Categories)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Agents Rule of Two]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-22708 (Indirect Prompt Injection via Web Browsing)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[CVE-2026-25253 (OpenClaw RCE)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[DNS-Layer Enforcement]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Debenedetti et al., The Attacker Moves Second (2025)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Leveson, Engineering a Safer World (2012)]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[Log-To-Leak MCP Exfiltration Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MCP Proxy Layer]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Microsoft Presidio PII Detection Engine]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[MiddlewareManager (35 Modules)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Mutual TLS Container Communication]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[NanoClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[OpenClaw Agent Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[PII Sanitizer_2]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Pi-hole DNS Filtering]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Prompt Injection Defense (Ensemble of 20+ Patterns)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[SecurityPipeline (8-Guard Ordered Sequence)]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[ToolHijacker Attack]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Transparent Proxy Architecture]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[Zetherion AI Platform]] - concept - docs/papers/agentshroud-ieee-paper.md
-- [[agentshroud-ieee-paper]] - document - docs/papers/agentshroud-ieee-paper.md
-- [[step-ca Private Certificate Authority]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[dot-llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversdevonthinkmcp-devonthink.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh_2]] - code - .mcp.json
+- [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_2]] - code - .mcp.json
+- [[dot-mcp.json]] - code - .mcp.json
+- [[opthomebrewbinnpx_2]] - code - .mcp.json
+- [[PATH_47]] - code - .mcp.json
+- [[atlassian-agentshroud_3]] - code - .mcp.json
+- [[atlassian-idallasj_3]] - code - .mcp.json
+- [[autoOpenFile_3]] - code - .mcp.json
+- [[devonthink_3]] - code - .mcp.json
+- [[github_3]] - code - .mcp.json
+- [[github-agentshroud_3]] - code - .mcp.json
+- [[github-idallasj_3]] - code - .mcp.json
+- [[home-assistant_3]] - code - .mcp.json
+- [[outputPath_3]] - code - .mcp.json
+- [[safari_3]] - code - .mcp.json
+- [[safari-mcp_2]] - code - .mcp.json
+- [[xmind_3]] - code - .mcp.json
+- [[xmind-generator-mcp_2]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,11 +38,3 @@ members: 23
 TABLE source_file, type FROM #community/mcpjson
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_First Time Setup (2)_1]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 1 edge to [[_COMMUNITY__sync]]
-
-## Top bridge nodes
-- [[agentshroud-ieee-paper]] - degree 24, connects to 3 communities

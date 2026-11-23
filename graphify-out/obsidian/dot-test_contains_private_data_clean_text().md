@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "chatbot/main.py"
+community: "PrivacyPolicyEnforcer"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .test_contains_private_data_clean_text()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResponseFiltering]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

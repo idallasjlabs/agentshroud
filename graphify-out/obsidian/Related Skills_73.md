@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Community 582"
+community: "Oracle — Feedback Analyst"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

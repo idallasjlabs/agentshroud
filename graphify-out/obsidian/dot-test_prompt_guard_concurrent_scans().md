@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "PromptGuard"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PromptGuard
 ---
 
 # .test_prompt_guard_concurrent_scans()
 
 ## Connections
 - [[Concurrent prompt scans shouldn't interfere with each other.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [INFERRED]
+- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[scan()_3]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

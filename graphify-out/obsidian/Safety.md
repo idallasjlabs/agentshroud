@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-pr.md"
+source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 1950"
-location: "L37"
+community: "oracle — best use"
+location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1950
+  - community/oracle__best_use
 ---
 
 # Safety
 
 ## Connections
-- [[Content Requirements]] - `contains` [EXTRACTED]
+- [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1950
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

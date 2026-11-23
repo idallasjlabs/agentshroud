@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Community 177"
-location: "L6"
+community: "egress_config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/egress_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

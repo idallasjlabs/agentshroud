@@ -1,28 +1,22 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+members: 9
 ---
 
 # Quickstart
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[dot-agentsskillsi-session-promptSKILL]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Re-injection Command (for reference)]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Role_75]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Rules_19]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 1 — Survey the Repo]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 2 — Answer Six Questions]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 4 — Write the File]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 5 — Inject into All Three LLMs]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Step 6 — Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Trigger_1]] - document - .agents/skills/i-session-prompt/SKILL.md
-- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/skills/i-session-prompt/SKILL.md
+- [[1. Clone]] - document - README.md
+- [[2. Store credentials]] - document - README.md
+- [[3. Start the stack]] - document - README.md
+- [[4. Verify]] - document - README.md
+- [[5. (Optional) Voice Terminal — ESP32-S3-BOX-3]] - document - README.md
+- [[Prerequisites_3]] - document - README.md
+- [[Quickstart]] - document - README.md
+- [[`asb` reference]] - document - README.md
+- [[asb Wrapper Script]] - concept - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,3 +24,11 @@ members: 13
 TABLE source_file, type FROM #community/Quickstart
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
+- 1 edge to [[_COMMUNITY_AgentShroud Operations Cheat Sheet]]
+
+## Top bridge nodes
+- [[Quickstart]] - degree 9, connects to 1 community
+- [[asb Wrapper Script]] - degree 2, connects to 1 community

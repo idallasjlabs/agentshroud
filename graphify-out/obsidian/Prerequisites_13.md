@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
+source_file: "docs/operations/linux.md"
 type: "document"
-community: "Community 816"
-location: "L11"
+community: "Deploying AgentShroud on Linux (x86_64 / aarch64)"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_816
+  - community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64
 ---
 
 # Prerequisites
 
 ## Connections
-- [[First Time Setup_1]] - `contains` [EXTRACTED]
+- [[Deploying AgentShroud on Linux (x86_64  aarch64)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_816
+#graphify/document #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Linux_x86_64_/_aarch64

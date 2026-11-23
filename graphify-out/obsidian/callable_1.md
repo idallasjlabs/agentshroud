@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: ""
 type: "code"
-community: "Community 8"
-location: "L576"
+community: "ToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # callable
 
 ## Connections
-- [[.add_alert_callback()_2]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

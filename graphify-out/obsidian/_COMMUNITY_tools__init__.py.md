@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # tools/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[browser-fetch package.json_2]] - code - skills/custom/browser-fetch/package.json
+- [[tools__init__.py]] - code - gateway/tools/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

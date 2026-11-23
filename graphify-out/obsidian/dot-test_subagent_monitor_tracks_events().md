@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TrustManager"
 location: "L549"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TrustManager
 ---
 
 # .test_subagent_monitor_tracks_events()
@@ -15,4 +15,4 @@ tags:
 - [[Subagent events should be trackable.]] - `rationale_for` [EXTRACTED]
 - [[TestPrivilegeEscalation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TrustManager

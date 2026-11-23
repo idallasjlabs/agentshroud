@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 490"
-location: "L8"
+community: "AgentShroud Setup Guide"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_490
+  - community/AgentShroud_Setup_Guide
 ---
 
-# What Is AgentShroud?
+# What is AgentShroud?
 
 ## Connections
-- [[AgentShroud™ — Project Knowledge Base]] - `contains` [EXTRACTED]
+- [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_490
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

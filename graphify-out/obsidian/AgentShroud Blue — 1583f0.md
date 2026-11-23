@@ -1,11 +1,11 @@
 ---
 source_file: "branding/QUICK-REFERENCE.md"
 type: "concept"
-community: "Community 585"
+community: "AgentShroud Primary Logo"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/AgentShroud_Primary_Logo
 ---
 
 # AgentShroud Blue — #1583f0
@@ -14,6 +14,6 @@ tags:
 - [[AgentShroud Primary Logo]] - `references` [EXTRACTED]
 - [[INDEX]] - `references` [EXTRACTED]
 - [[QUICK-REFERENCE]] - `references` [EXTRACTED]
-- [[README_38]] - `references` [EXTRACTED]
+- [[brandingREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_585
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Primary_Logo

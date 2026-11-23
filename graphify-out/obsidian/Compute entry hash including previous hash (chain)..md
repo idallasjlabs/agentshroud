@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "rationale"
-community: "Community 254"
+community: "AuditEvent"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/AuditEvent
 ---
 
 # Compute entry hash including previous hash (chain).
 
 ## Connections
-- [[.compute_entry_hash()]] - `rationale_for` [EXTRACTED]
+- [[dot-compute_entry_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/AuditEvent

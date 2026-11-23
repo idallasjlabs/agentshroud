@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 1"
+community: "Round 2 Security Hardening Tests"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Round_2_Security_Hardening_Tests
 ---
 
 # Round 2 Security Hardening Tests
 
-## Connections
-- [[FileSandbox]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/Round_2_Security_Hardening_Tests

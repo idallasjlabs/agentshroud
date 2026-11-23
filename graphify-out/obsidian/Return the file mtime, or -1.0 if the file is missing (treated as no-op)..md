@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 151"
+community: "test_config_hot_reload.py"
 location: "L775"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/test_config_hot_reloadpy
 ---
 
 # Return the file mtime, or -1.0 if the file is missing (treated as no-op).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_default_mtime()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_151
+#graphify/rationale #graphify/EXTRACTED #community/test_config_hot_reloadpy

@@ -1,25 +1,23 @@
 ---
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
+community: "SecureBrowser"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/SecureBrowser
 ---
 
 # browser/scripts/browse.py
 
 ## Connections
-- [[Enum_3]] - `imports_from` [EXTRACTED]
-- [[RiskLevel]] - `contains` [EXTRACTED]
+- [[Enum_19]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_1]] - `contains` [EXTRACTED]
 - [[SecureBrowser]] - `contains` [EXTRACTED]
-- [[SecureBrowser - Enterprise-grade secure browser automation Part of SecureClaw…]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser - Enterprise-grade secure browser automation Part of AgentShroud…]] - `rationale_for` [EXTRACTED]
 - [[SecurityConfig]] - `contains` [EXTRACTED]
 - [[SecurityError]] - `contains` [EXTRACTED]
-- [[asyncio_3]] - `imports` [EXTRACTED]
-- [[datetime_3]] - `imports_from` [EXTRACTED]
-- [[main()_1]] - `contains` [EXTRACTED]
+- [[main()_10]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

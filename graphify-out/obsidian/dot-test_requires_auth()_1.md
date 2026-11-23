@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "AgentShroud Security Value Proposition"
-location: "L76"
+community: "_is_op_reference_allowed"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/_is_op_reference_allowed
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[POST mcpproxy without auth should return 401.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+- [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
+- [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
+- [[auth_dep()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

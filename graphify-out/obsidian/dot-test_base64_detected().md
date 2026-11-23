@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # .test_base64_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

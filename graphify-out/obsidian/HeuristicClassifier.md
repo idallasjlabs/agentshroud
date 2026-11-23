@@ -1,31 +1,26 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "Community 379"
+community: "HeuristicClassifier"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_379
+  - community/HeuristicClassifier
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[.__init__()_98]] - `method` [EXTRACTED]
-- [[._classify_heuristic()]] - `method` [EXTRACTED]
-- [[._classify_ml()]] - `method` [EXTRACTED]
-- [[._compute_unicode_anomaly()]] - `method` [EXTRACTED]
-- [[._score_signal()]] - `method` [EXTRACTED]
-- [[._try_load_model()]] - `method` [EXTRACTED]
-- [[.classify()]] - `method` [EXTRACTED]
-- [[.setup_method()_6]] - `calls` [EXTRACTED]
-- [[Any_13]] - `uses` [INFERRED]
-- [[EdgeService]] - `uses` [INFERRED]
-- [[EdgeStore_3]] - `uses` [INFERRED]
-- [[Heuristic injection classifier using multi-signal analysis.      Scoring approac]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `uses` [INFERRED]
-- [[PromptGuard_1]] - `uses` [INFERRED]
+- [[dot-__init__()_146]] - `method` [EXTRACTED]
+- [[dot-_classify_heuristic()]] - `method` [EXTRACTED]
+- [[dot-_classify_ml()]] - `method` [EXTRACTED]
+- [[dot-_compute_unicode_anomaly()]] - `method` [EXTRACTED]
+- [[dot-_score_signal()]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `method` [EXTRACTED]
+- [[dot-classify()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_26]] - `calls` [EXTRACTED]
+- [[Heuristic injection classifier using multi-signal analysis. Scoring approach -…]] - `rationale_for` [EXTRACTED]
 - [[TestClassicOverride]] - `uses` [INFERRED]
 - [[TestContextInjection]] - `uses` [INFERRED]
 - [[TestEncodingBypass]] - `uses` [INFERRED]
@@ -35,14 +30,14 @@ tags:
 - [[TestOverallDetectionRate]] - `uses` [INFERRED]
 - [[TestPersonaHijack]] - `uses` [INFERRED]
 - [[TestPromptExtraction]] - `uses` [INFERRED]
-- [[TestPromptGuardDirectly]] - `uses` [INFERRED]
-- [[VendorProfile_3]] - `uses` [INFERRED]
+- [[_any_detector_fires()]] - `uses` [INFERRED]
+- [[_heuristic_detects()]] - `uses` [INFERRED]
 - [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[heuristic_classifier.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_379
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "rationale"
-community: "Community 86"
+community: "HTTPConnectProxy"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/HTTPConnectProxy
 ---
 
 # Minimal asyncio.StreamWriter mock that captures written bytes.
 
 ## Connections
-- [[_MockWriter]] - `rationale_for` [EXTRACTED]
+- [[_MockWriter_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_86
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

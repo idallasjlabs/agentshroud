@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "TestEmailSend"
+community: "_TrustCaptor"
 location: "L539"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/_TrustCaptor
 ---
 
 # .test_empty_user_id_does_not_elevate_trust()
@@ -17,4 +17,4 @@ tags:
 - [[TestOwnerTrustElevation]] - `method` [EXTRACTED]
 - [[_TrustCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/_TrustCaptor

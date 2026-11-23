@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestConfigurationProtection"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestConfigurationProtection
 ---
 
 # .test_dockerfile_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot modify Dockerfile.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigurationProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestConfigurationProtection

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 408"
-location: "L150"
+community: "clamav_scanner.py"
+location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_408
+  - community/clamav_scannerpy
 ---
 
-# Environment variables
+# Environment Variables
 
 ## Connections
-- [[Configuration_14]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_408
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

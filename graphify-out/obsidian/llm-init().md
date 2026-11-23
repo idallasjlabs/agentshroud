@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/llm-init.sh"
 type: "code"
-community: "scripts/render-agents.sh (agents-src -> .llm_settings)"
+community: "llm-init.sh"
 location: "L2870"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/render-agentssh_agents-src_-_llm_settings
+  - community/llm-initsh
 ---
 
 # llm-init()
@@ -45,4 +45,4 @@ tags:
 - [[llm-init.sh]] - `defines` [EXTRACTED]
 - [[llm-init.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/render-agentssh_agents-src_-_llm_settings
+#graphify/code #graphify/EXTRACTED #community/llm-initsh

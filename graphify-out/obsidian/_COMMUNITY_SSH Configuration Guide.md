@@ -1,38 +1,26 @@
 ---
 type: community
-cohesion: 0.09
-members: 23
+members: 13
 ---
 
 # SSH Configuration Guide
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 23 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[Accessibility]] - document - branding/colors/palette.md
-- [[AgentShroud Blue 1583f0]] - concept - branding/colors/palette.md
-- [[AgentShroud Blue (Primary)]] - document - branding/colors/palette.md
-- [[AgentShroud Color Palette]] - document - branding/colors/palette.md
-- [[Applications]] - document - branding/colors/palette.md
-- [[Borders]] - document - branding/colors/palette.md
-- [[Color Combinations]] - document - branding/colors/palette.md
-- [[Dark Surface Hierarchy]] - document - branding/colors/palette.md
-- [[Dark Theme]] - document - branding/colors/palette.md
-- [[Deep Navy]] - document - branding/colors/palette.md
-- [[Ice Blue]] - document - branding/colors/palette.md
-- [[Light Mode]] - document - branding/colors/palette.md
-- [[Light Theme]] - document - branding/colors/palette.md
-- [[Master Feature List (historical index)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Neutral Colors]] - document - branding/colors/palette.md
-- [[Primary Colors]] - document - branding/colors/palette.md
-- [[Secondary Colors]] - document - branding/colors/palette.md
-- [[Semantic Colors]] - document - branding/colors/palette.md
-- [[Steel Blue]] - document - branding/colors/palette.md
-- [[Text]] - document - branding/colors/palette.md
-- [[Usage Guidelines_2]] - document - branding/colors/palette.md
-- [[Variations]] - document - branding/colors/palette.md
-- [[palette]] - document - branding/colors/palette.md
+- [[Configuration File]] - document - docs/ssh-configuration.md
+- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
+- [[Field Reference]] - document - docs/ssh-configuration.md
+- [[Full Annotated Example]] - document - docs/ssh-configuration.md
+- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
+- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
+- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
+- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
+- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
+- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
+- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
+- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
+- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,3 +28,9 @@ members: 23
 TABLE source_file, type FROM #community/SSH_Configuration_Guide
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Himalaya Email CLI]]
+
+## Top bridge nodes
+- [[SSH Configuration Guide]] - degree 8, connects to 1 community

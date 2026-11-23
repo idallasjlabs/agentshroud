@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-19-incident-response.svg"
 type: "image"
-community: "Community 1480"
+community: "Diagram 18: Runbook"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_1480
+  - community/Diagram_18_Runbook
 ---
 
 # Diagram 19: Incident Response
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Diagram 18 Runbook]] - `semantically_similar_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_1480
+#graphify/image #graphify/INFERRED #community/Diagram_18_Runbook

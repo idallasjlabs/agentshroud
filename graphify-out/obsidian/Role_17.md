@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 171"
-location: "L10"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

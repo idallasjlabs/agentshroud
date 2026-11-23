@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "ResourceGuard"
+community: "test_soc_router_coverage.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/test_soc_router_coveragepy
 ---
 
 # .get_recent_entries()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

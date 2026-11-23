@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_v1_models_synthetic.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "Community 1112"
-location: "L31"
+community: "TestVersionRoutes"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1112
+  - community/TestVersionRoutes
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
-- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
+- [[fixture_134]] - `references` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1112
+#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # Prove the Outcome, Never the Steps — assert on state deltas not exit codes
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[dot-agentsskillsi-agileSKILL]] - document - .agents/skills/i-agile/SKILL.md
-- [[Skill agile]] - document - .agents/skills/i-agile/SKILL.md
+- [[Prove the Outcome, Never the Steps — assert on state deltas not exit codes]] - rationale - CLAUDE.md
+- [[Weekly Sunday Upgrade directive — every versioned component to latest]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

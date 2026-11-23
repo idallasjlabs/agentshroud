@@ -1,26 +1,26 @@
 ---
-source_file: ".agents/skills/atlas/SKILL.md"
+source_file: ".opencode/agents/atlas.md"
 type: "document"
-community: "Community 1169"
-location: "L6"
+community: "Atlas — Curriculum Architect"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_12]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
-- [[Output Format_15]] - `contains` [EXTRACTED]
-- [[Persona_9]] - `contains` [EXTRACTED]
-- [[Quality Checklist_11]] - `contains` [EXTRACTED]
-- [[Role_41]] - `contains` [EXTRACTED]
-- [[SKILL_2]] - `contains` [EXTRACTED]
-- [[System Prompt_9]] - `contains` [EXTRACTED]
-- [[User Prompt Template_5]] - `contains` [EXTRACTED]
-- [[User Prompt Template — OKE Channel_1]] - `contains` [EXTRACTED]
+- [[dot-opencodeagentsatlas]] - `contains` [EXTRACTED]
+- [[Input Requirements_2]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Context_2]] - `contains` [EXTRACTED]
+- [[Output Format_2]] - `contains` [EXTRACTED]
+- [[Persona_2]] - `contains` [EXTRACTED]
+- [[Quality Checklist_2]] - `contains` [EXTRACTED]
+- [[Role_5]] - `contains` [EXTRACTED]
+- [[System Prompt_2]] - `contains` [EXTRACTED]
+- [[User Prompt Template_2]] - `contains` [EXTRACTED]
+- [[User Prompt Template — OKE Channel_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1169
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

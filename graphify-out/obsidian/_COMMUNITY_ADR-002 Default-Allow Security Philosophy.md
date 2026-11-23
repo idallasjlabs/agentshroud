@@ -1,27 +1,24 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 11
 ---
 
 # ADR-002: Default-Allow Security Philosophy
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[Competitive Intelligence Protocol_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[IDENTITY.md - Who I Am_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[Key Output]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[My Owner_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Responsibilities_1]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[My Role_2]] - document - docker/config/openclaw/workspace/IDENTITY.md
-- [[Purpose_160]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Related Notes_63]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[Responsibilities_55]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_2]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[proxy_status.py_1]] - document - docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md
-- [[workspaceIDENTITY]] - document - docker/config/openclaw/workspace/IDENTITY.md
+- [[ADR-002-default-allow-security-philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[ADR-002 Default-Allow Security Philosophy]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Consequences_5]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Context_9]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Decision_8]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Evaluation Criteria]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Implementation Approach]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Mitigation Strategies_1]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Negative Consequences_4]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Positive Consequences_4]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
+- [[Status_8]] - document - docs/architecture/adr/ADR-002-default-allow-security-philosophy.md
 
 ## Live Query (requires Dataview plugin)
 

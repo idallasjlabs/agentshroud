@@ -1,17 +1,17 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "Community 159"
-location: "L74"
+community: "mcp"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/mcp
 ---
 
 # command
 
 ## Connections
-- [[devonthink_5]] - `contains` [EXTRACTED]
+- [[xmind]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/mcp

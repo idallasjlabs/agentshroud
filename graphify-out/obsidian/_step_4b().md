@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "code"
-community: "Community 298"
+community: "_run_4b"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_298
+  - community/_run_4b
 ---
 
 # _step_4b()
@@ -15,4 +15,4 @@ tags:
 - [[_run_4b()]] - `calls` [EXTRACTED]
 - [[test_wazuh_watchdog.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_298
+#graphify/code #graphify/EXTRACTED #community/_run_4b

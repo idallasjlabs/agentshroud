@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # curriculum.md (input requirement)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Skill kanban_1]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
-- [[hermesskillsi-kanbanSKILL]] - document - docker/config/hermes/skills/i-kanban/SKILL.md
+- [[curriculum.md (input requirement)]] - concept - docker/config/openclaw/skills/i-athena/SKILL.md
+- [[curriculum.md output]] - concept - docker/config/openclaw/skills/i-atlas/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

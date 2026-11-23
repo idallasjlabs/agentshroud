@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cd/SKILL.md"
+source_file: ".agents/agents/i-cd.md"
 type: "document"
-community: "Community 948"
-location: "L6"
+community: ".agents/agents/i-cd.md"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_948
+  - community/agents/agents/i-cdmd
 ---
 
 # Skill: cd
 
 ## Connections
-- [[SKILL_14]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-cd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_948
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-cdmd

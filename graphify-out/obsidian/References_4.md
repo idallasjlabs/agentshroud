@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/SKILL.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 874"
-location: "L29"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_874
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # References
 
 ## Connections
-- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_874
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

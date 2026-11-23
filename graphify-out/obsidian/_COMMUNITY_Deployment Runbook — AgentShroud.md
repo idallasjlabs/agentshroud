@@ -1,29 +1,28 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 15
 ---
 
 # Deployment Runbook — AgentShroud
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Immediate (Day 1)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Monitor Installations]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Month 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[View Skill Stats]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Week 1]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[✅ Success Indicators]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎉 You're Done!]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🎯 Marketing Checklist]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[💬 Skill Listing Template]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📊 Track Success]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[📦 What We Built]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🔄 Update Published Skill]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🚀 Quick Publish (3 Commands)]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[1. Pull Latest Code]] - document - docs/runbooks/deployment.md
+- [[2. Run Tests]] - document - docs/runbooks/deployment.md
+- [[3. Update Dependencies (if changed)]] - document - docs/runbooks/deployment.md
+- [[4. Build Containers]] - document - docs/runbooks/deployment.md
+- [[5. Deploy]] - document - docs/runbooks/deployment.md
+- [[6. Verify]] - document - docs/runbooks/deployment.md
+- [[Deployment Runbook — AgentShroud]] - document - docs/runbooks/deployment.md
+- [[Environment Variables_5]] - document - docs/runbooks/deployment.md
+- [[First-Time Setup]] - document - docs/runbooks/deployment.md
+- [[Prerequisites_1]] - document - docs/runbooks/deployment.md
+- [[Quick Summary]] - document - docs/runbooks/deployment.md
+- [[Rolling Back]] - document - docs/runbooks/deployment.md
+- [[Standard Deployment]] - document - docs/runbooks/deployment.md
+- [[Version Tagging]] - document - docs/runbooks/deployment.md
+- [[deployment]] - document - docs/runbooks/deployment.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,12 +30,3 @@ members: 14
 TABLE source_file, type FROM #community/Deployment_Runbook__AgentShroud
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_scriptssecurity-scan.sh]]
-- 1 edge to [[_COMMUNITY_§4 — Hermes-Specific Section (NEW — first assessment)]]
-- 1 edge to [[_COMMUNITY_TestPathIsolationManager]]
-- 1 edge to [[_COMMUNITY_AsyncMock (2) (2)]]
-
-## Top bridge nodes
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - degree 12, connects to 4 communities

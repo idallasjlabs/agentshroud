@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Community 1222"
-location: "L6"
+community: "ssh_proxy.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1222
+  - community/ssh_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1222
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

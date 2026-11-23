@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "browser/scripts/browse.py"
-location: "L766"
+community: "sync-cve-registry.py"
+location: "L552"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/sync-cve-registrypy
 ---
 
 # Append under_review *new_entries* to *agent_id*'s OWN registry list. Inserts…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[append_ghsa_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

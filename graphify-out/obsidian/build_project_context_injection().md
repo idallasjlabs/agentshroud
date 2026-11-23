@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "code"
-community: "Community 18"
+community: "test_collaborator_responses.py"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/test_collaborator_responsespy
 ---
 
 # build_project_context_injection()
 
 ## Connections
-- [[.test_contains_allowed_tools()]] - `calls` [EXTRACTED]
-- [[.test_contains_group_and_project()]] - `calls` [EXTRACTED]
+- [[dot-test_contains_allowed_tools()]] - `calls` [EXTRACTED]
+- [[dot-test_contains_group_and_project()]] - `calls` [EXTRACTED]
 - [[Build the system-prompt injection for project_scoped mode.]] - `rationale_for` [EXTRACTED]
 - [[collaborator_responses.py]] - `contains` [EXTRACTED]
-- [[format_groups_list()]] - `conceptually_related_to` [INFERRED]
 - [[test_collaborator_responses.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

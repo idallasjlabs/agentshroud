@@ -1,25 +1,21 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 216"
+community: "ContextGuard"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/ContextGuard
 ---
 
 # IntegrityScore
 
 ## Connections
-- [[.score_context()]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `shares_data_with` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
+- [[dot-score_context()]] - `calls` [EXTRACTED]
 - [[Rolling context integrity score for a session.]] - `rationale_for` [EXTRACTED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
 - [[TestContextIntegrityScorer]] - `uses` [INFERRED]
 - [[context_integrity.py]] - `contains` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_216
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

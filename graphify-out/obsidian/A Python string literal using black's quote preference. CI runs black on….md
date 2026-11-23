@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "browser/scripts/browse.py"
-location: "L434"
+community: "sync-cve-registry.py"
+location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/sync-cve-registrypy
 ---
 
 # A Python string literal using black's quote preference. CI runs black on…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_py_str()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

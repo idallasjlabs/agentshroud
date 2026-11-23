@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_list_registry_ghsa_ids.py"
 type: "code"
-community: "AgentShroud Threat Model (STRIDE Analysis)"
+community: "_script"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Threat_Model_STRIDE_Analysis
+  - community/_script
 ---
 
 # .test_empty_registries_print_nothing()
@@ -15,4 +15,4 @@ tags:
 - [[TestListRegistryGhsaIds]] - `method` [EXTRACTED]
 - [[_script()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Threat_Model_STRIDE_Analysis
+#graphify/code #graphify/EXTRACTED #community/_script

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/hermes-competitive-landscape-update-am-pm.txt"
 type: "document"
-community: "Community 522"
+community: "competitive-report-*.md dated reports"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/competitive-report-md_dated_reports
 ---
 
 # Hermes Competitive Landscape Update (AM/PM)
@@ -17,4 +17,4 @@ tags:
 - [[competitive-report-.md dated reports]] - `references` [EXTRACTED]
 - [[trend-log.md artifact]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_522
+#graphify/document #graphify/EXTRACTED #community/competitive-report-md_dated_reports

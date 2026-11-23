@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "CronStateMonitor"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/CronStateMonitor
 ---
 
 # .test_ok_jobs_not_failing()
 
 ## Connections
+- [[dot-parse_store()]] - `calls` [EXTRACTED]
 - [[TestParsing]] - `method` [EXTRACTED]
 - [[_oc_job()]] - `calls` [EXTRACTED]
 - [[_openclaw_store()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

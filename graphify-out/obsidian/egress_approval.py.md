@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 23"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/ingest_api/mainpy
 ---
 
 # egress_approval.py
@@ -18,10 +18,10 @@ tags:
 - [[EgressRequest]] - `contains` [EXTRACTED]
 - [[EgressRule]] - `contains` [EXTRACTED]
 - [[EgressScope]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[FR5 Restricted Data Flow]] - `references` [EXTRACTED]
-- [[RiskLevel_3]] - `contains` [EXTRACTED]
-- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[Enum_6]] - `imports_from` [EXTRACTED]
+- [[RiskLevel]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_23
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

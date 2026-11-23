@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "Community 2154"
-location: "L126"
+community: "ingest_api/main.py"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/mainpy
 ---
 
 # auth_dep()
 
 ## Connections
 - [[Auth dependency that uses the app state config._2]] - `rationale_for` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
-- [[Request_5]] - `references` [EXTRACTED]
+- [[Request_8]] - `references` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[forward.py]] - `contains` [EXTRACTED]
-- [[test_channel_ownership.py]] - `imports` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
-- [[test_forward_stream.py]] - `imports` [EXTRACTED]
+- [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

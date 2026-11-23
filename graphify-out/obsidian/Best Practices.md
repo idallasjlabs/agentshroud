@@ -1,22 +1,20 @@
 ---
-source_file: ".agents/agents/browser.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 432"
-location: "L229"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L296"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_432
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
+- [[MCP-Specific]] - `contains` [EXTRACTED]
+- [[Organization]] - `contains` [EXTRACTED]
+- [[Security_7]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_432
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

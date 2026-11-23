@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "Path (2)"
+community: "ControlCenter"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path_2
+  - community/ControlCenter
 ---
 
 # .clear_screen()
@@ -21,4 +21,4 @@ tags:
 - [[Clear screen and position cursor at home]] - `rationale_for` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path_2
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

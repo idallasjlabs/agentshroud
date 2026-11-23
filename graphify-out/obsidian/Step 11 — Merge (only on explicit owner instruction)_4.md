@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-hdev.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 841"
-location: "L328"
+community: "Mode A — Single task"
+location: "L326"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_841
+  - community/Mode_A__Single_task
 ---
 
 # Step 11 — Merge (only on explicit owner instruction)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_841
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

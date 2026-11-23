@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "Community 1221"
+community: "Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1221
+  - community/Security_Review_SEC
 ---
 
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_68]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_73]] - `contains` [EXTRACTED]
-- [[Related Skills_89]] - `contains` [EXTRACTED]
-- [[Usage_91]] - `contains` [EXTRACTED]
+- [[Purpose_153]] - `contains` [EXTRACTED]
+- [[Related Skills_83]] - `contains` [EXTRACTED]
+- [[Usage_93]] - `contains` [EXTRACTED]
+- [[openclawskillsi-secREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1221
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

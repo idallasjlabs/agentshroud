@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Community 58"
-location: "L6"
+community: "spaCy"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/spaCy
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_9]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/spaCy

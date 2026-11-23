@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Critical Findings"
-location: "L76"
+community: "OutputSchemaEnforcer"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Critical_Findings
+  - community/OutputSchemaEnforcer
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Critical_Findings
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

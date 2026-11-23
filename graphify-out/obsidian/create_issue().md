@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
 type: "code"
-community: "Community 148"
+community: "jira_dev_ticket.py"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/jira_dev_ticketpy
 ---
 
 # create_issue()
@@ -14,9 +14,10 @@ tags:
 ## Connections
 - [[Create a Jira issue. Returns the new issue key (e.g. 'SCRUM-124').]] - `rationale_for` [EXTRACTED]
 - [[_auth_headers()]] - `calls` [EXTRACTED]
+- [[build_basic_auth_header()_1]] - `calls` [EXTRACTED]
 - [[build_create_issue_payload()]] - `calls` [EXTRACTED]
 - [[build_issue_url()]] - `calls` [EXTRACTED]
 - [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
-- [[run()]] - `calls` [EXTRACTED]
+- [[run()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/jira_dev_ticketpy

@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Community 265"
+community: "migrate-cve-registry-ghsa.py"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # compute_stats()
 
 ## Connections
-- [[Any_84]] - `references` [EXTRACTED]
-- [[main()_27]] - `calls` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
 - [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

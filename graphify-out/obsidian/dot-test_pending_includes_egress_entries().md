@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_telegram_proxy_outbound.py"
+community: ".test_activity_command_renders_entries"
 location: "L4743"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_outboundpy
+  - community/test_activity_command_renders_entries
 ---
 
 # .test_pending_includes_egress_entries()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestPendingNoticeIncludesEgressSection]] - `method` [EXTRACTED]
+- [[_capture()_2]] - `indirect_call` [INFERRED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
+#graphify/code #graphify/EXTRACTED #community/test_activity_command_renders_entries

@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Community 1305"
+community: "SharedMemoryManager"
 location: "L211"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1305
+  - graphify/EXTRACTED
+  - community/SharedMemoryManager
 ---
 
 # TestAuthorizationHelper
 
 ## Connections
-- [[.test_empty_author_is_denied()]] - `method` [EXTRACTED]
-- [[.test_member_authorized()]] - `method` [EXTRACTED]
-- [[.test_missing_rbac_is_denied()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-test_empty_author_is_denied()]] - `method` [EXTRACTED]
+- [[dot-test_member_authorized()]] - `method` [EXTRACTED]
+- [[dot-test_missing_rbac_is_denied()]] - `method` [EXTRACTED]
 - [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

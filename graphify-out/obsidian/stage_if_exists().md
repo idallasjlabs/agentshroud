@@ -1,0 +1,18 @@
+---
+source_file: ".claude/scripts/claude_repo_setup.sh"
+type: "code"
+community: "claude_repo_setup.sh"
+location: "L82"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/claude_repo_setupsh
+---
+
+# stage_if_exists()
+
+## Connections
+- [[claude_repo_setup.sh]] - `defines` [EXTRACTED]
+- [[claude_repo_setup.sh script]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/claude_repo_setupsh

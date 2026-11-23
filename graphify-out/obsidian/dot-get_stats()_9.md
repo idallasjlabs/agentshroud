@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "PathIsolationManager"
-location: "L286"
+community: "test_e2e_proxy.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
-- [[any_36]] - `references` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
+community: "asb"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/asb
 ---
 
 # DOCKER_API_VERSION
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[asb]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/asb

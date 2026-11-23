@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/router.py"
-type: "code"
-community: "Community 861"
-location: "L116"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+type: "document"
+community: "models.py"
+location: "L43"
 tags:
-  - graphify/code
-  - graphify/INFERRED
-  - community/Community_861
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/modelspy
 ---
 
 # ForwardRequest
 
 ## Connections
-- [[.resolve_target()]] - `references` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[RouterConfig]] - `uses` [INFERRED]
+- [[Model Details]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_861
+#graphify/document #graphify/EXTRACTED #community/modelspy

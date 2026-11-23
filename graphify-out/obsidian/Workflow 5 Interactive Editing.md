@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 179"
+community: "OpenClaw Workspace Usage Guide"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Workflow 5: Interactive Editing
 
 ## Connections
-- [[Common Workflows_1]] - `contains` [EXTRACTED]
+- [[Common Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

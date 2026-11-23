@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 28"
+community: "RedactionResult"
 location: "L27"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/RedactionResult
 ---
 
 # Test the ToolResultPIIConfig configuration class
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolResultPIIConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/RedactionResult

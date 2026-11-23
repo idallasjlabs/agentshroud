@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "MiddlewareManager"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/MiddlewareManager
 ---
 
 # .test_manage_modules_endpoint_uses_the_same_registry()
 
 ## Connections
 - [[TestManageModulesEndpointAccuracy]] - `method` [EXTRACTED]
-- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a]] - `rationale_for` [EXTRACTED]
+- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS, not a…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

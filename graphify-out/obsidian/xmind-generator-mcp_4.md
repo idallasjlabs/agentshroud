@@ -1,17 +1,17 @@
 ---
 source_file: ".pi/mcp.json"
 type: "code"
-community: "Community 405"
+community: ".pi/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_405
+  - community/pi/mcpjson
 ---
 
 # xmind-generator-mcp
 
 ## Connections
-- [[xmind_4]] - `references` [EXTRACTED]
+- [[xmind_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_405
+#graphify/code #graphify/EXTRACTED #community/pi/mcpjson

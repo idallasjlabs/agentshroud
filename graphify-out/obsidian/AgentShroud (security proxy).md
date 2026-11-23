@@ -1,19 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "AgentShroud (security proxy)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/AgentShroud_security_proxy
 ---
 
 # AgentShroud (security proxy)
 
-## Connections
-- [[OPENCLAW_SETUP]] - `references` [EXTRACTED]
-- [[WEB_CONTROL_CENTER_SUMMARY]] - `references` [EXTRACTED]
-- [[competitive-analysis-reports-archive]] - `references` [EXTRACTED]
-- [[setup-guide]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_security_proxy

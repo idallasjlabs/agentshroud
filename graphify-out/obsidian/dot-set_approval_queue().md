@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L129"
+community: "EgressFilter"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilter
 ---
 
 # .set_approval_queue()
@@ -15,4 +15,4 @@ tags:
 - [[EgressFilter]] - `method` [EXTRACTED]
 - [[Set interactive egress approval queue.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L1365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # rename_group()
 
 ## Connections
-- [[HTTPException]] - `calls` [EXTRACTED]
 - [[Rename a group (CC-34).]] - `rationale_for` [EXTRACTED]
 - [[RenameGroupRequest]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[put]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

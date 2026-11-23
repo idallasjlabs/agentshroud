@@ -1,19 +1,19 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 2201"
+community: "AgentShroud Incident Response Plan"
 location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2201
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Incident Classification System
 
 ## Connections
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
-- [[Priority Levels]] - `contains` [EXTRACTED]
+- [[Priority Levels_1]] - `contains` [EXTRACTED]
 - [[Severity Assessment Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2201
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

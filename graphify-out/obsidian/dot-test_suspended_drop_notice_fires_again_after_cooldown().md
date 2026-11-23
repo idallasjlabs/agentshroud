@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SecurityPipeline"
+community: "._make_proxy"
 location: "L8402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # .test_suspended_drop_notice_fires_again_after_cooldown()
@@ -18,8 +18,8 @@ tags:
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_send()_18]] - `contains` [EXTRACTED]
-- [[fake_send()_11]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_send()_22]] - `contains` [EXTRACTED]
+- [[fake_send()_12]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

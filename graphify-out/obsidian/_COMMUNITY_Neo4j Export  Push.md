@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Neo4j Export / Push
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Raw-flag triage discipline (74-merge sweep)]] - rationale - docker/config/hermes/skills/i-ab/SKILL.md
+- [[Neo4j Export  Push]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
 
 ## Live Query (requires Dataview plugin)
 

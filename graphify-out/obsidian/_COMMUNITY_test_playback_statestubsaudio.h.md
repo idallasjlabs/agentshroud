@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # test_playback_state/stubs/audio.h
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[face_set_emotion() (declared in header; drives eyemouth canvases)]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[test_playback_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_playback_state/stubs/audio.h
 
 ## Live Query (requires Dataview plugin)
 

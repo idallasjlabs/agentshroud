@@ -1,20 +1,20 @@
 ---
-source_file: ".omp/mcp.json"
+source_file: ".mcp.json"
 type: "code"
-community: "Community 404"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/mcpjson
 ---
 
 # safari
 
 ## Connections
-- [[opthomebrewbinnpx_3]] - `references` [EXTRACTED]
-- [[PATH_3]] - `requires_env` [EXTRACTED]
-- [[mcp.json_2]] - `contains` [EXTRACTED]
-- [[safari-mcp_3]] - `references` [EXTRACTED]
+- [[dot-mcp.json]] - `contains` [EXTRACTED]
+- [[opthomebrewbinnpx_2]] - `references` [EXTRACTED]
+- [[PATH_47]] - `requires_env` [EXTRACTED]
+- [[safari-mcp_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_404
+#graphify/code #graphify/EXTRACTED #community/mcpjson

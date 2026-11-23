@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-tw.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "Community 729"
+community: ".agents/agents/i-tw.md"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/agents/agents/i-twmd
 ---
 
 # API / Function Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[If not → escalate to field team via ops-alerts_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-twmd

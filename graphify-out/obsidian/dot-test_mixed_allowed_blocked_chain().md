@@ -12,9 +12,10 @@ tags:
 # .test_mixed_allowed_blocked_chain()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 - [[Mix of allowed, blocked, and result entries all in one chain.]] - `rationale_for` [EXTRACTED]
 - [[TestChainIntegrityMultiple]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

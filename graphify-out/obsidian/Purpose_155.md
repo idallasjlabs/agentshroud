@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Community 676"
-location: "L12"
+community: "Test-Driven Development (TDD)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_676
+  - community/Test-Driven_Development_TDD
 ---
 
 # Purpose
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_676
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

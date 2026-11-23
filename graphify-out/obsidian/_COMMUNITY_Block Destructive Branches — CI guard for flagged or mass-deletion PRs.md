@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Block Destructive Branches — CI guard for flagged or mass-deletion PRs
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[UserSessionManager Isolation Tests]] - code - gateway/tests/test_session_isolation.py
+- [[Block Destructive Branches — CI guard for flagged or mass-deletion PRs]] - document - .github/workflows/block-destructive-branch.yml
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L342"
+community: "FileIntegrityRecord"
+location: "L330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/FileIntegrityRecord
 ---
 
 # .get_integrity_status()
 
 ## Connections
 - [[dot-get_recent_alerts()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
 - [[Get current integrity monitoring status.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

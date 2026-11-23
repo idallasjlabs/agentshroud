@@ -16,8 +16,8 @@ tags:
 - [[dot-_compute_unicode_anomaly()]] - `calls` [EXTRACTED]
 - [[dot-_score_signal()]] - `calls` [EXTRACTED]
 - [[dot-classify()]] - `calls` [EXTRACTED]
-- [[ClassificationResult]] - `references` [EXTRACTED]
+- [[ClassificationResult]] - `calls` [EXTRACTED]
 - [[Heuristic-based classification using multi-signal analysis.]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

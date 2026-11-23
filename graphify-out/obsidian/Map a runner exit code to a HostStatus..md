@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "rationale"
-community: "Community 1072"
+community: "classify"
 location: "L118"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1072
+  - community/classify
 ---
 
 # Map a runner exit code to a HostStatus.
 
 ## Connections
-- [[classify()]] - `rationale_for` [EXTRACTED]
+- [[classify()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1072
+#graphify/rationale #graphify/EXTRACTED #community/classify

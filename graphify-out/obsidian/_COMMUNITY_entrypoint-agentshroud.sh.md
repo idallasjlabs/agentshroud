@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # entrypoint-agentshroud.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[codex-review.sh]] - code - scripts/codex-review.sh
-- [[codex-review.sh script]] - code - scripts/codex-review.sh
+- [[entrypoint-agentshroud.sh]] - code - docker/scripts/entrypoint-agentshroud.sh
+- [[entrypoint-agentshroud.sh script]] - code - docker/scripts/entrypoint-agentshroud.sh
 
 ## Live Query (requires Dataview plugin)
 

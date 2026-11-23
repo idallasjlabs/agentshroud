@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Community 1136"
-location: "L15"
+community: "consent_framework.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1136
+  - community/consent_frameworkpy
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1136
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

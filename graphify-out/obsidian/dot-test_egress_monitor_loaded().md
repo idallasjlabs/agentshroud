@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit_advanced.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
-location: "L597"
+community: "MetadataGuard"
+location: "L632"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/MetadataGuard
 ---
 
 # .test_egress_monitor_loaded()
 
 ## Connections
-- [[Egress monitoring should be available.]] - `rationale_for` [EXTRACTED]
-- [[TestExfiltrationDetection]] - `method` [EXTRACTED]
+- [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "Community 127"
+community: "asyncio"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_127
+  - community/asyncio
 ---
 
 # _make_error_report()
 
 ## Connections
-- [[.test_error_report_shows_error_message()]] - `calls` [EXTRACTED]
-- [[.test_trivy_error_still_sends_error_report()]] - `calls` [EXTRACTED]
+- [[dot-test_error_report_shows_error_message()]] - `calls` [EXTRACTED]
+- [[dot-test_trivy_error_still_sends_error_report()]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_127
+#graphify/code #graphify/EXTRACTED #community/asyncio

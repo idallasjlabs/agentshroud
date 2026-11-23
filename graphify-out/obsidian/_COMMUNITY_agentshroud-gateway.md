@@ -1,32 +1,29 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+members: 16
 ---
 
 # agentshroud-gateway
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Members:** 16 nodes
 
 ## Members
-- [[Approve Claude Code Prompt]] - document - skills/openclaw/tmux/SKILL.md
-- [[Capture Output]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check All Sessions Status]] - document - skills/openclaw/tmux/SKILL.md
-- [[Check if Session Needs Input]] - document - skills/openclaw/tmux/SKILL.md
-- [[Claude Code Session Patterns]] - document - skills/openclaw/tmux/SKILL.md
-- [[Common Commands]] - document - skills/openclaw/tmux/SKILL.md
-- [[Example Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[List Sessions]] - document - skills/openclaw/tmux/SKILL.md
-- [[Notes_5]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Keys]] - document - skills/openclaw/tmux/SKILL.md
-- [[Send Task to Session]] - document - skills/openclaw/tmux/SKILL.md
-- [[Sending Input Safely]] - document - skills/openclaw/tmux/SKILL.md
-- [[Session Management]] - document - skills/openclaw/tmux/SKILL.md
-- [[When NOT to Use]] - document - skills/openclaw/tmux/SKILL.md
-- [[When to Use]] - document - skills/openclaw/tmux/SKILL.md
-- [[WindowPane Navigation]] - document - skills/openclaw/tmux/SKILL.md
-- [[tmux Session Control]] - document - skills/openclaw/tmux/SKILL.md
+- [[Container Properties_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Environment Variables_4]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Health Check_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Key Endpoints]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Logs_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Networks]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Ports_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Related Notes_4]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Resource Limits_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Secrets_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Security Hardening_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Summary_2]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[Volumes_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[agentshroud-gateway]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
+- [[tmpfs Mounts_1]] - document - docs/vault/06 - Containers & Services/agentshroud-gateway.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_voice_gateway.py (2)]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[tmux Session Control]] - degree 8, connects to 1 community
+- [[agentshroud-gateway]] - degree 2, connects to 1 community

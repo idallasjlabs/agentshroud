@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-doctor.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Community 1010"
-location: "L164"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1010
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1010
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

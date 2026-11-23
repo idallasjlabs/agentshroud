@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 31"
+community: "MiddlewareManager"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/MiddlewareManager
 ---
 
 # Result from middleware processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MiddlewareResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

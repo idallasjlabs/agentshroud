@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "Any"
-location: "L104"
+community: "EnhancedApprovalQueue"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[dot-__init__()_119]] - `calls` [EXTRACTED]
+- [[EdgeCallPipeline]] - `method` [EXTRACTED]
+- [[EdgeDeps]] - `references` [EXTRACTED]
+- [[_Window]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

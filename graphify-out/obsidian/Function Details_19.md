@@ -1,24 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Community 612"
-location: "L29"
+community: "egress_config.py"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/egress_configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[AppleContainerEngine.compose_up(file, detach)  compose_down(file)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.health_check()]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.inspect(name)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.network_create  network_rm  volume_create  volume_rm]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.pause(name)  unpause(name)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.ps(all)]] - `contains` [EXTRACTED]
-- [[AppleContainerEngine.run(image, name, , ports, volumes, env, privileged, caps, seccomp, detach, ...)]] - `contains` [EXTRACTED]
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
+- [[egress_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

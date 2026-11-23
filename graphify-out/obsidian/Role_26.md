@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ps.md"
+source_file: ".agents/skills/apollo/SKILL.md"
 type: "document"
-community: "Community 921"
-location: "L10"
+community: "Technical Specification"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_921
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "ContextGuard"
-location: "L509"
+community: "soc/router.py"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/soc/routerpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[ContainerSnapshot]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `calls` [EXTRACTED]
-- [[TestDriftDetector]] - `method` [EXTRACTED]
+- [[RBACManager]] - `calls` [EXTRACTED]
+- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

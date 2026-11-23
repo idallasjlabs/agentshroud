@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "_req"
 location: "L573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_req
 ---
 
 # .test_low_finding_allowed()
 
 ## Connections
-- [[TestGitGuard]] - `method` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_req

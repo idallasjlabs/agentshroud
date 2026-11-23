@@ -1,19 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 877"
-location: "L31"
+community: "wazuh_client.py"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/wazuh_clientpy
 ---
 
 # Function Details
 
 ## Connections
-- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
-- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
-- [[sidecar.py_2]] - `contains` [EXTRACTED]
+- [[generate_summary(alerts)]] - `contains` [EXTRACTED]
+- [[get_fim_events(alerts)  get_rootkit_events(alerts)]] - `contains` [EXTRACTED]
+- [[level_to_severity(level)]] - `contains` [EXTRACTED]
+- [[parse_alert(raw)]] - `contains` [EXTRACTED]
+- [[read_alerts(alert_dir, since)]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_877
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

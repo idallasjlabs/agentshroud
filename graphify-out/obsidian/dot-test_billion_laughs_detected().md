@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "test_main_endpoints.py"
+community: "WebContentScanner"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/WebContentScanner
 ---
 
 # .test_billion_laughs_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

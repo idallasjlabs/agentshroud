@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "Community 613"
+community: "Function Details"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/Function_Details
 ---
 
 # PodmanEngine.generate_systemd(name)
 
 ## Connections
-- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Function Details_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/Function_Details

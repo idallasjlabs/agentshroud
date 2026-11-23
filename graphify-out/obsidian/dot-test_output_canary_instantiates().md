@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "PathIsolationManager"
+community: "OutputCanary"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/OutputCanary
 ---
 
 # .test_output_canary_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[OutputCanary]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 719"
-location: "L74"
+community: "wazuh_client.py"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/wazuh_clientpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

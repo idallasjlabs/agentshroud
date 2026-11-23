@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "Community 1937"
+community: "test_hermes_model_resolver.py"
 location: "L97"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1937
+  - graphify/EXTRACTED
+  - community/test_hermes_model_resolverpy
 ---
 
 # test_provider_for_model()
 
 ## Connections
+- [[parametrize_11]] - `references` [EXTRACTED]
 - [[provider_for_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1937
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 418"
+community: "AgentShroud Deployment Architecture"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_418
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Docker Runtime
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Multi-Runtime Support_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_418
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

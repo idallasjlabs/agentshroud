@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # .test_credit_card_detected()
@@ -15,4 +15,4 @@ tags:
 - [[PIIScanner]] - `calls` [EXTRACTED]
 - [[TestPIIScanning]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

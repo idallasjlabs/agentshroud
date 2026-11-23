@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)"
-location: "L46"
+community: "PIIConfig"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertStore]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
+- [[Initialize sanitizer Args config PII configuration from agentshroud.yaml]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[PIISanitizer]] - `method` [EXTRACTED]
+- [[load_all_secret_file_values()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle_2
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

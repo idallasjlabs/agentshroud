@@ -1,17 +1,17 @@
 ---
-source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Community 957"
-location: "L48"
+community: "AgentShroud™ Brand Guidelines"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_957
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Contact
 
 ## Connections
-- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
+- [[Trademark Notice_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_957
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

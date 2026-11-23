@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 1.00
 members: 3
 ---
 
 # Agent CVE Registry module (_AGENT_CVE_REGISTRIES etc.)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
-- [[A2APolicyEngine (gatewaysecuritya2a_policy.py)]] - concept - CHANGELOG.md
-- [[A2AProxy (gatewayproxya2a_proxy.py)]] - concept - CHANGELOG.md
-- [[v1.5.0 A2A Governance]] - document - CHANGELOG.md
+- [[Agent CVE Registry module (_AGENT_CVE_REGISTRIES etc.)]] - code - gateway/security/agent_cve_registry.py
+- [[Registry-integrity fix fabricated CVE ids replaced with synthetic ASH refs]] - rationale - gateway/security/agent_cve_registry.py
+- [[test_security_tool_entries_start_as_under_review_never_pre_claimed_mitigated]] - code - gateway/tests/test_agent_cve_registry.py
 
 ## Live Query (requires Dataview plugin)
 

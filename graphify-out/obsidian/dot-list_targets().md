@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # .list_targets()
 
 ## Connections
-- [[AgentTarget_1]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[Return all configured agent targets          Returns             List of AgentT]] - `rationale_for` [EXTRACTED]
+- [[Return all configured agent targets Returns List of AgentTarget objects]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

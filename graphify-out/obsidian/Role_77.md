@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/athena.md"
+source_file: ".agents/agents/i-pr.md"
 type: "document"
-community: "Community 1652"
+community: "Skill: Pull Request (PR) Generator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1652
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1652
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "_t (2)"
+community: "DNSBlocklist"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t_2
+  - community/DNSBlocklist
 ---
 
 # .parse_hosts_line()
@@ -15,6 +15,6 @@ tags:
 - [[dot-load_from_text()]] - `calls` [EXTRACTED]
 - [[dot-update()]] - `calls` [EXTRACTED]
 - [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Parse a single line from a hosts-format or domain-only blocklist.          Suppo]] - `rationale_for` [EXTRACTED]
+- [[Parse a single line from a hosts-format or domain-only blocklist. Supports -…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t_2
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

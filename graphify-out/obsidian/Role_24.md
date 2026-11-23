@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-pr.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 1950"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1950
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1950
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

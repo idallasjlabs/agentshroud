@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-crpr.md"
+source_file: ".github/agents/i-gg.agent.md"
 type: "document"
-community: "Community 1303"
-location: "L10"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1303
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1303
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

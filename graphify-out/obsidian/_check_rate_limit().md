@@ -1,21 +1,20 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Community 95"
+community: "_check_rate_limit"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/_check_rate_limit
 ---
 
 # _check_rate_limit()
 
 ## Connections
-- [[HTTPException]] - `calls` [INFERRED]
 - [[Raise 429 if the client has exceeded the rate limit.]] - `rationale_for` [EXTRACTED]
 - [[TestRateLimit]] - `calls` [EXTRACTED]
 - [[chat()]] - `calls` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
+- [[chatbotmain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/_check_rate_limit

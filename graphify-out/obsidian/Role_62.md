@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: ".opencode/agents/daedalus.md"
 type: "document"
-community: "Community 438"
-location: "L8"
+community: "Daedalus — Concept Illustrator"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

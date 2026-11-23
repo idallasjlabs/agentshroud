@@ -1,26 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "Community 28"
+community: "ingest_api/config.py"
 location: "L421"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_28
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # TestConfigurationLoading
 
 ## Connections
-- [[.test_config_with_tool_result_pii()]] - `method` [EXTRACTED]
-- [[GatewayConfig_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[dot-test_config_with_tool_result_pii()]] - `method` [EXTRACTED]
+- [[GatewayConfig]] - `uses` [INFERRED]
 - [[Test configuration loading and validation]] - `rationale_for` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

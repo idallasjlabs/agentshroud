@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # build_merge() avoids NetworkX round-trip (#801)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[patch_telegram_edit_message_date.py]] - code - docker/bots/hermes/patch_telegram_edit_message_date.py
+- [[build_merge() avoids NetworkX round-trip (801)]] - rationale - docker/config/hermes/skills/graphify/references/update.md
 
 ## Live Query (requires Dataview plugin)
 

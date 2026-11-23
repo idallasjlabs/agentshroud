@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/things-mac/SKILL.md"
 type: "document"
-community: "Community 428"
+community: "things-mac/SKILL.md"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_428
+  - community/things-mac/SKILLmd
 ---
 
 # Things 3 CLI
 
 ## Connections
-- [[SKILL_243]] - `contains` [EXTRACTED]
+- [[things-macSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_428
+#graphify/document #graphify/EXTRACTED #community/things-mac/SKILLmd

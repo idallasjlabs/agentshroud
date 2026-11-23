@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
+source_file: ""
 type: "code"
-community: "Community 167"
-location: "L269"
+community: "AppleContainerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_167
+  - community/AppleContainerEngine
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
+- [[dot-_run()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_167
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

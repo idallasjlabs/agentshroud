@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/PAIRING_INSTRUCTIONS.md"
 type: "document"
-community: "Community 735"
+community: "OpenClaw Control UI Pairing Instructions"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_735
+  - community/OpenClaw_Control_UI_Pairing_Instructions
 ---
 
 # Still shows "pairing required"
 
 ## Connections
-- [[Troubleshooting_51]] - `contains` [EXTRACTED]
+- [[Troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_735
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Control_UI_Pairing_Instructions

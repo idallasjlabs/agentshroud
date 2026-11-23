@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Community 997"
+community: "start-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_997
+  - community/start-agentshroudsh
 ---
 
 # start-agentshroud.sh
@@ -26,9 +26,9 @@ tags:
 - [[_slack_send()]] - `defines` [EXTRACTED]
 - [[_telegram_bot_token()_1]] - `defines` [EXTRACTED]
 - [[_telegram_get_me_ready()_1]] - `defines` [EXTRACTED]
-- [[_telegram_send()_1]] - `defines` [EXTRACTED]
+- [[_telegram_send()_2]] - `defines` [EXTRACTED]
 - [[_telegram_send_photo()_1]] - `defines` [EXTRACTED]
 - [[op_proxy_read_with_retry()]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_997
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

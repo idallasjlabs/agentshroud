@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 481"
-location: "L135"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_481
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Verification
 
 ## Connections
-- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
+- [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_481
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

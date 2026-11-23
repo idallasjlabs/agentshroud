@@ -1,41 +1,35 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+members: 22
 ---
 
 # Coding Agent (bash-first)
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[dot-agentsskillsgraphifyreferencesadd-watch]] - document - .agents/skills/graphify/references/add-watch.md
-- [[dot-agentsskillsgraphifyreferencesexports]] - document - .agents/skills/graphify/references/exports.md
-- [[dot-agentsskillsgraphifyreferenceshooks]] - document - .agents/skills/graphify/references/hooks.md
-- [[dot-agentsskillsgraphifyreferencesquery]] - document - .agents/skills/graphify/references/query.md
-- [[dot-agentsskillsgraphifyreferencesupdate]] - document - .agents/skills/graphify/references/update.md
-- [[For --cluster-only_2]] - document - .agents/skills/graphify/references/update.md
-- [[For --update (incremental re-extraction)_2]] - document - .agents/skills/graphify/references/update.md
-- [[For --watch_2]] - document - .agents/skills/graphify/references/add-watch.md
-- [[For graphify add_2]] - document - .agents/skills/graphify/references/add-watch.md
-- [[For graphify explain_2]] - document - .agents/skills/graphify/references/query.md
-- [[For graphify path_2]] - document - .agents/skills/graphify/references/query.md
-- [[For git commit hook_2]] - document - .agents/skills/graphify/references/hooks.md
-- [[For native CLAUDE.md integration_2]] - document - .agents/skills/graphify/references/hooks.md
-- [[Step 0 — Constrained query expansion (REQUIRED before traversal)_2]] - document - .agents/skills/graphify/references/query.md
-- [[Step 1 — Traversal_2]] - document - .agents/skills/graphify/references/query.md
-- [[Step 6b - Wiki (only if --wiki flag)_2]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)_2]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7b - SVG export (only if --svg flag)_2]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7c - GraphML export (only if --graphml flag)_2]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 7d - MCP server (only if --mcp flag)_2]] - document - .agents/skills/graphify/references/exports.md
-- [[Step 8 - Token reduction benchmark (only if total_words  5000)_2]] - document - .agents/skills/graphify/references/exports.md
-- [[graphify reference add a URL and watch a folder_2]] - document - .agents/skills/graphify/references/add-watch.md
-- [[graphify reference commit hook and native CLAUDE.md integration_2]] - document - .agents/skills/graphify/references/hooks.md
-- [[graphify reference extra exports and benchmark_2]] - document - .agents/skills/graphify/references/exports.md
-- [[graphify reference incremental update and cluster-only_2]] - document - .agents/skills/graphify/references/update.md
-- [[graphify reference query, path, explain_2]] - document - .agents/skills/graphify/references/query.md
+- [[Auto-Notify on Completion]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Bash Tool Parameters]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Batch PR Reviews (parallel army!)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[BuildingCreating]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Claude Code]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Codex CLI]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Coding Agent (bash-first)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Flags]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Learnings (Jan 2026)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[OpenCode]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[PTY Mode Required for Interactive Coding Agents]] - rationale - skills/openclaw/coding-agent/SKILL.md
+- [[Parallel Issue Fixing with git worktrees]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Pi Coding Agent CLI]] - concept - skills/openclaw/coding-agent/SKILL.md
+- [[Process Tool Actions (for background sessions)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Progress Updates (Critical)]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Quick Start One-Shot Tasks]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[Reviewing PRs]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[The Pattern workdir + background + pty]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[coding-agentSKILL]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[⚠️ PTY Mode Required!]] - document - skills/openclaw/coding-agent/SKILL.md
+- [[⚠️ Rules]] - document - skills/openclaw/coding-agent/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,3 +37,11 @@ members: 26
 TABLE source_file, type FROM #community/Coding_Agent_bash-first
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_gh-issuesSKILL]]
+- 1 edge to [[_COMMUNITY_Hermes Dev Workflow (HDEV) Skill]]
+
+## Top bridge nodes
+- [[coding-agentSKILL]] - degree 8, connects to 1 community
+- [[Codex CLI]] - degree 7, connects to 1 community

@@ -1,65 +1,40 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "Community 0"
-location: "L1353"
+community: "deep_security_test"
+location: "L17"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/deep_security_test
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.get_log_sanitizer()]] - `references` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
-- [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[ConsentFramework]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[KeyRotationManager]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[LogSanitizer_1]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
-- [[MemoryLifecycleManager]] - `uses` [INFERRED]
-- [[MemorySecurityConfig]] - `uses` [INFERRED]
-- [[MetadataGuard]] - `uses` [INFERRED]
-- [[MultiTurnTracker]] - `uses` [INFERRED]
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[OutputCanary]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PathIsolationConfig]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RBACManager_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[SubagentMonitor]] - `uses` [INFERRED]
-- [[SubagentMonitorConfig]] - `uses` [INFERRED]
-- [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
-- [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
-- [[ToolTier_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
-- [[XMLLeakFilter]] - `uses` [INFERRED]
+- [[dot-__init__()_39]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
+- [[dot-_sanitize_text()]] - `method` [EXTRACTED]
+- [[dot-filter()]] - `method` [EXTRACTED]
+- [[dot-get_log_sanitizer()]] - `references` [EXTRACTED]
+- [[dot-sanitizer()_3]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
+- [[dot-test_empty_inputs_everywhere()]] - `calls` [INFERRED]
+- [[dot-test_log_sanitizer_covers_stack_traces()]] - `calls` [INFERRED]
+- [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[Test Log Sanitizer PII Scrubbing]] - `references` [EXTRACTED]
+- [[TestDoSPrevention]] - `uses` [INFERRED]
+- [[TestInfoLeakage]] - `uses` [INFERRED]
+- [[TestLogSanitizer]] - `uses` [INFERRED]
+- [[TestLoggingSecurity]] - `uses` [INFERRED]
+- [[deep_security_test()]] - `uses` [INFERRED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[install_log_sanitizer()]] - `calls` [EXTRACTED]
+- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[t_log()]] - `calls` [EXTRACTED]
+- [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
+- [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

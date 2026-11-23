@@ -1,20 +1,19 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "gateway/inbound_edge/routes.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L58"
+community: "test_edge_service_routes.py"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/test_edge_service_routespy
 ---
 
 # _handle()
 
 ## Connections
-- [[StreamReader_1]] - `references` [EXTRACTED]
-- [[StreamWriter_1]] - `references` [EXTRACTED]
-- [[_pump()]] - `calls` [EXTRACTED]
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
+- [[_pipe()_2]] - `calls` [EXTRACTED]
+- [[_serve()]] - `indirect_call` [INFERRED]
+- [[start_edge_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

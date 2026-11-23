@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Community 1148"
+community: "AgentShroud — System Overview"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1148
+  - community/AgentShroud__System_Overview
 ---
 
 # AgentShroud — System Overview
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[Components_2]] - `contains` [EXTRACTED]
 - [[Key Design Decisions]] - `contains` [EXTRACTED]
-- [[Related Notes_1]] - `contains` [EXTRACTED]
+- [[Related Notes_73]] - `contains` [EXTRACTED]
 - [[Security Layers (in order)]] - `contains` [EXTRACTED]
 - [[System Overview]] - `contains` [EXTRACTED]
 - [[What It Is]] - `contains` [EXTRACTED]
 - [[Who Depends On It]] - `contains` [EXTRACTED]
 - [[Why It Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1148
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__System_Overview

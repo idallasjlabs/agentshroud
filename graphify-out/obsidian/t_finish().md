@@ -1,17 +1,18 @@
 ---
 source_file: "scripts/testing/lib.sh"
 type: "code"
-community: "Community 1543"
+community: "lib.sh"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1543
+  - community/libsh
 ---
 
 # t_finish()
 
 ## Connections
 - [[lib.sh]] - `defines` [EXTRACTED]
+- [[t_status()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1543
+#graphify/code #graphify/EXTRACTED #community/libsh

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 538"
+community: "log_sanitizer.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/log_sanitizerpy
 ---
 
 # Threat Model
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

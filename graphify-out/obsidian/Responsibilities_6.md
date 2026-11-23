@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Community 593"
+community: "auth.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/authpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/authpy

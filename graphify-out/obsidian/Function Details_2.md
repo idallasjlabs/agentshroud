@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 657"
-location: "L39"
+community: "prompt_guard.py"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_657
+  - community/prompt_guardpy
 ---
 
 # Function Details
 
 ## Connections
-- [[enforce_retention()]] - `contains` [EXTRACTED]
-- [[initialize()]] - `contains` [EXTRACTED]
-- [[ledger.py_2]] - `contains` [EXTRACTED]
-- [[query(page, page_size, source, since, until, forwarded_to)]] - `contains` [EXTRACTED]
-- [[record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)]] - `contains` [EXTRACTED]
+- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - `contains` [EXTRACTED]
+- [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
+- [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
+- [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_657
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "browser-extension/README.md"
 type: "document"
-community: "middleware.py"
+community: "Browser Extension"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/Browser_Extension
 ---
 
 # Safari
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Structure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/middlewarepy
+#graphify/document #graphify/EXTRACTED #community/Browser_Extension

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 138"
+community: ".test_collaborator_rate_limit_notice_is_sent_for_each_limited_message"
 location: "L3824"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_138
+  - community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
 ---
 
 # If notice send fails, cooldown should not suppress the next retry attempt.
 
 ## Connections
-- [[.test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_138
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message

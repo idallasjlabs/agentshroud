@@ -1,28 +1,30 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # HealthStatus
 
 ## Connections
-- [[Any_74]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[HealthStatus_1]] - `uses` [INFERRED]
-- [[ServiceDescriptor_1]] - `uses` [INFERRED]
+- [[Enum_38]] - `inherits` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
-- [[ServiceStatus_1]] - `uses` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[TestDescribeService]] - `uses` [INFERRED]
+- [[TestListServices]] - `uses` [INFERRED]
+- [[TestServiceDescriptor]] - `uses` [INFERRED]
+- [[TestServiceDescriptorDefaults]] - `uses` [INFERRED]
+- [[TestStatusMappings]] - `uses` [INFERRED]
+- [[_engine_health_to_health()]] - `uses` [INFERRED]
 - [[services.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_21]] - `inherits` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_services.py]] - `imports` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

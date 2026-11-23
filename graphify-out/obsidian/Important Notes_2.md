@@ -1,17 +1,23 @@
 ---
-source_file: "docs/setup/TELEGRAM_SETUP.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 681"
-location: "L80"
+community: "Important Notes"
+location: "L1621"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_681
+  - community/Important_Notes
 ---
 
 # Important Notes
 
 ## Connections
-- [[Security Considerations_1]] - `contains` [EXTRACTED]
+- [[Add Swap File]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[Backup Strategy]] - `contains` [EXTRACTED]
+- [[Cooling Recommendations]] - `contains` [EXTRACTED]
+- [[Optional Automated Security Updates]] - `contains` [EXTRACTED]
+- [[Power Supply]] - `contains` [EXTRACTED]
+- [[Security Hardening Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_681
+#graphify/document #graphify/EXTRACTED #community/Important_Notes

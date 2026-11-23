@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Community 92"
+community: "KillSwitchConfig"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/KillSwitchConfig
 ---
 
 # Test basic heartbeat functionality.
 
 ## Connections
-- [[.test_heartbeat_check()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_heartbeat_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchConfig

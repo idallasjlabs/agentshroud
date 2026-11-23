@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # i-tdd README.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[dot-test_action_risk_probe_gets_no_banner_risk_guidance()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[B1.5c action-risk questions should get a natural answer without restriction…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[i-tdd README]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[i-tdd SKILL.md (TDD Coach, Red-Green-Refactor)]] - document - docker/config/hermes/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -19,9 +17,3 @@ members: 2
 TABLE source_file, type FROM #community/i-tdd_READMEmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_TestCollaboratorPromptClassifiers (2)]]
-
-## Top bridge nodes
-- [[dot-test_action_risk_probe_gets_no_banner_risk_guidance()]] - degree 2, connects to 1 community

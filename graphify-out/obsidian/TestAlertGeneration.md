@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 140"
+community: "EgressEvent"
 location: "L235"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_140
+  - graphify/EXTRACTED
+  - community/EgressEvent
 ---
 
 # TestAlertGeneration
 
 ## Connections
-- [[.test_alert_has_description()]] - `method` [EXTRACTED]
-- [[.test_alert_has_severity()]] - `method` [EXTRACTED]
-- [[.test_alert_monitor_mode_no_block()]] - `method` [EXTRACTED]
-- [[AlertSeverity]] - `uses` [INFERRED]
+- [[dot-test_alert_has_description()]] - `method` [EXTRACTED]
+- [[dot-test_alert_has_severity()]] - `method` [EXTRACTED]
+- [[dot-test_alert_monitor_mode_no_block()]] - `method` [EXTRACTED]
 - [[EgressChannel]] - `uses` [INFERRED]
 - [[EgressEvent]] - `uses` [INFERRED]
-- [[EgressMonitor]] - `uses` [INFERRED]
-- [[EgressMonitorConfig]] - `uses` [INFERRED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

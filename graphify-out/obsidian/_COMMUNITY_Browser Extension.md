@@ -1,31 +1,29 @@
 ---
 type: community
-cohesion: 0.15
 members: 16
 ---
 
 # Browser Extension
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcpm-aws-profileREADME]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[MCP AWS Profile Configuration README]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[MCP AWS Profile Configuration Skill_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[MCP Auth Reset README]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[MCP Auth Reset Skill_1]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[MCP Doctor README]] - document - .agents/skills/i-mcpm-doctor/README.md
-- [[MCP Doctor Skill]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Purpose_110]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Purpose_111]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_81]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Related Skills_82]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[Usage_87]] - document - .agents/skills/i-mcpm-aws-profile/README.md
-- [[Usage_88]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[hermesskillsi-mcpm-aws-profileREADME]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/README.md
-- [[hermesskillsi-mcpm-aws-profileSKILL]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
+- [[1. URL Forwarder]] - document - browser-extension/README.md
+- [[2. Page Clipper]] - document - browser-extension/README.md
+- [[3. Form Fill Request (Reverse Flow)]] - document - browser-extension/README.md
+- [[4. Tab Session Exporter]] - document - browser-extension/README.md
+- [[5. Reading List Queue]] - document - browser-extension/README.md
+- [[Browser Extension]] - document - browser-extension/README.md
+- [[Browser Support]] - document - browser-extension/README.md
+- [[Features_4]] - document - browser-extension/README.md
+- [[ForwardRequest handler (forward endpoint)]] - code - gateway/ingest_api/routes/forward.py
+- [[Gateway wiring]] - document - browser-extension/README.md
+- [[Privacy Features]] - document - browser-extension/README.md
+- [[Safari_6]] - document - browser-extension/README.md
+- [[Structure_1]] - document - browser-extension/README.md
+- [[Tests_8]] - document - browser-extension/README.md
+- [[browser-extension package.json (Jest test harness)]] - code - browser-extension/package.json
+- [[browser-extensionREADME]] - document - browser-extension/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +33,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
+- 1 edge to [[_COMMUNITY_Credential Security Policy]]
+- 1 edge to [[_COMMUNITY_background.js]]
 
 ## Top bridge nodes
-- [[MCP AWS Profile Configuration README]] - degree 10, connects to 1 community
-- [[hermesskillsi-mcpm-aws-profileSKILL]] - degree 2, connects to 1 community
+- [[Browser Extension]] - degree 6, connects to 1 community
+- [[browser-extensionREADME]] - degree 4, connects to 1 community

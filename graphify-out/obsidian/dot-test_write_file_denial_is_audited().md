@@ -12,7 +12,7 @@ tags:
 # .test_write_file_denial_is_audited()
 
 ## Connections
-- [[Denied write attempts are logged to the ledger for audit (no raw         content]] - `rationale_for` [EXTRACTED]
+- [[Denied write attempts are logged to the ledger for audit (no raw content stored…]] - `rationale_for` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

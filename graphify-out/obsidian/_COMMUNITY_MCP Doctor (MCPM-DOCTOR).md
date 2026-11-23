@@ -1,22 +1,18 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+members: 5
 ---
 
 # MCP Doctor (MCPM-DOCTOR)
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Operating Rules (Non-Negotiable)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 1 All Regions, Every Time]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 2 Default Read-Only]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 3 Script Everything]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 4 Evidence-First Recommendations]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 5 Safe Tagging]] - document - docker/config/hermes/skills/i-aws/SKILL.md
-- [[Rule 6 Never Delete Automatically]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Purpose_124]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Related Skills_54]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Usage_64]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[hermesskillsi-mcpm-doctorREADME]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,9 +20,3 @@ members: 7
 TABLE source_file, type FROM #community/MCP_Doctor_MCPM-DOCTOR
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI) (3)]]
-
-## Top bridge nodes
-- [[Operating Rules (Non-Negotiable)]] - degree 7, connects to 1 community

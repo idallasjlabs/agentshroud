@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "Community 420"
+community: "plan_remediation"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/plan_remediation
 ---
 
 # Sanity-check the planner against the real committed registry.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPlanAgainstRealRegistry]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_420
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

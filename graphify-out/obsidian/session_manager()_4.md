@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_shared_memory_write_acl.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 60"
-location: "L69"
+community: "test_group_isolation.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/test_group_isolationpy
 ---
 
 # session_manager()
 
 ## Connections
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
+- [[UserSessionManager]] - `uses` [INFERRED]
+- [[fixture_106]] - `references` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy

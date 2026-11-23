@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".agents/agents/i-mcpm-doctor.md"
 type: "document"
-community: "Community 1040"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Diagnostic Capabilities
@@ -18,4 +18,4 @@ tags:
 - [[4. Test AWS API MCP Server_2]] - `contains` [EXTRACTED]
 - [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

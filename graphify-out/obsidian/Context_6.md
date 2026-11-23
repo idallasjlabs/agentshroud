@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docs/architecture/adr/ADR-005-sha256-hash-chain-audit-integrity.md"
 type: "document"
-community: "Community 236"
+community: "ADR-005: SHA-256 Hash Chain Audit Integrity"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_236
+  - community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity
 ---
 
 # Context
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain Audit Integrity]] - `contains` [EXTRACTED]
+- [[ADR-005 SHA-256 Hash Chain for Audit Integrity]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_236
+#graphify/document #graphify/EXTRACTED #community/ADR-005_SHA-256_Hash_Chain_Audit_Integrity

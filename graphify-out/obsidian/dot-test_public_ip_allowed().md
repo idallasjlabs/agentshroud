@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "TestLegitimateURLsAllowed"
+community: "URLAnalyzer"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLegitimateURLsAllowed
+  - community/URLAnalyzer
 ---
 
 # .test_public_ip_allowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLegitimateURLsAllowed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLegitimateURLsAllowed
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

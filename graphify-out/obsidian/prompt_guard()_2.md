@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 7"
+community: "test_security_integration.py"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_security_integrationpy
 ---
 
 # prompt_guard()
 
 ## Connections
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[fixture_107]] - `references` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

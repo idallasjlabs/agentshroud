@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L642"
+community: "test_llm_proxy_failover.py"
+location: "L807"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/test_llm_proxy_failoverpy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_whoami_without_slash_uses_local_notice()]] - `contains` [EXTRACTED]
+- [[_slow_read()]] - `indirect_call` [INFERRED]
+- [[test_forward_request_slow_http_error_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # --watch debounce avoids per-file rebuild storms
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ConfigurationSetting (data entity)]] - concept - docs/data/data-dictionary.md
+- [[--watch debounce avoids per-file rebuild storms]] - rationale - docker/config/hermes/skills/graphify/references/add-watch.md
 
 ## Live Query (requires Dataview plugin)
 

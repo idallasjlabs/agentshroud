@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: ""
 type: "code"
-community: "Community 225"
-location: "L123"
+community: "get_wazuh_summary"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/get_wazuh_summary
 ---
 
 # Any
 
 ## Connections
-- [[.inspect()_2]] - `references` [EXTRACTED]
+- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[get_fim_events()]] - `references` [EXTRACTED]
+- [[get_rootkit_events()]] - `references` [EXTRACTED]
+- [[parse_alert()_1]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L758"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # _capture_pins()
@@ -15,5 +15,6 @@ tags:
 - [[check_noop_gate()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

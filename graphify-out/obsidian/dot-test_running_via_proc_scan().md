@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "TestCheckClamd"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/TestCheckClamd
 ---
 
 # .test_running_via_proc_scan()
 
 ## Connections
-- [[PermissionError]] - `calls` [INFERRED]
 - [[TestCheckClamd]] - `method` [EXTRACTED]
+- [[__init__()_1]] - `contains` [EXTRACTED]
 - [[_patch_open()]] - `calls` [EXTRACTED]
+- [[connect()]] - `contains` [EXTRACTED]
+- [[settimeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestCheckClamd

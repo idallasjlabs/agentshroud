@@ -1,21 +1,21 @@
 ---
 source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 1145"
+community: "Browser Fetch Skill"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1145
+  - community/Browser_Fetch_Skill
 ---
 
 # Browser Fetch Skill
 
 ## Connections
-- [[Features_5]] - `contains` [EXTRACTED]
-- [[SKILL_202]] - `contains` [EXTRACTED]
-- [[Security_27]] - `contains` [EXTRACTED]
-- [[Usage_144]] - `contains` [EXTRACTED]
-- [[Use Cases_3]] - `contains` [EXTRACTED]
+- [[Features_1]] - `contains` [EXTRACTED]
+- [[Security_14]] - `contains` [EXTRACTED]
+- [[Usage_31]] - `contains` [EXTRACTED]
+- [[Use Cases_1]] - `contains` [EXTRACTED]
+- [[browser-fetchSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1145
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill

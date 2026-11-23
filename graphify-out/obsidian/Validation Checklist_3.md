@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mm/SKILL.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 313"
-location: "L321"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_313
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_1]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_313
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

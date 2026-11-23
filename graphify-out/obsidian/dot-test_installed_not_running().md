@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestAlreadyIngestedGhsaToday"
+community: "TestWazuhSummary"
 location: "L408"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAlreadyIngestedGhsaToday
+  - community/TestWazuhSummary
 ---
 
 # .test_installed_not_running()
@@ -15,4 +15,4 @@ tags:
 - [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAlreadyIngestedGhsaToday
+#graphify/code #graphify/EXTRACTED #community/TestWazuhSummary

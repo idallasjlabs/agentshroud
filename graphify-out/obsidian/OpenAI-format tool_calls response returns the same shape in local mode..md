@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 2349"
+community: "_make_proxy"
 location: "L271"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2349
+  - community/_make_proxy
 ---
 
 # OpenAI-format tool_calls response returns the same shape in local mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_local_mode_openai_tool_call_shape_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2349
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

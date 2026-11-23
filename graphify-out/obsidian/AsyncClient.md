@@ -1,27 +1,17 @@
 ---
-source_file: "gateway/proxy/collaborator_greeter.py"
+source_file: ""
 type: "code"
-community: "Community 1248"
-location: "L36"
+community: "test_collaborator_greeter.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/test_collaborator_greeterpy
 ---
 
 # AsyncClient
 
 ## Connections
-- [[.__init__()_34]] - `references` [EXTRACTED]
-- [[._get_client()]] - `references` [EXTRACTED]
-- [[client()_4]] - `calls` [INFERRED]
-- [[client()_5]] - `calls` [INFERRED]
-- [[client()_6]] - `calls` [INFERRED]
-- [[client()_9]] - `calls` [INFERRED]
-- [[client()_10]] - `calls` [INFERRED]
-- [[client()_13]] - `calls` [INFERRED]
-- [[client()_14]] - `calls` [INFERRED]
-- [[client()_15]] - `calls` [INFERRED]
-- [[client()_16]] - `calls` [INFERRED]
+- [[dot-__init__()_21]] - `references` [EXTRACTED]
+- [[dot-_get_client()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

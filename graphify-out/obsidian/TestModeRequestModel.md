@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 92"
+community: "test_web_api_coverage.py"
 location: "L246"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_92
+  - graphify/EXTRACTED
+  - community/test_web_api_coveragepy
 ---
 
 # TestModeRequestModel
 
 ## Connections
-- [[.test_custom_revert_minutes()]] - `method` [EXTRACTED]
-- [[.test_default_revert_minutes()]] - `method` [EXTRACTED]
-- [[.test_valid_modes_constant()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
+- [[dot-test_custom_revert_minutes()]] - `method` [EXTRACTED]
+- [[dot-test_default_revert_minutes()]] - `method` [EXTRACTED]
+- [[dot-test_valid_modes_constant()]] - `method` [EXTRACTED]
 - [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

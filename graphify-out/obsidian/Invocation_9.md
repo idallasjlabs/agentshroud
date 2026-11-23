@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-odev.md"
+source_file: ".agents/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Community 844"
-location: "L27"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_844
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_844
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

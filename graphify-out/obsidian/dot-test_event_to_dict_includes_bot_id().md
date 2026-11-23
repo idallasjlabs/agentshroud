@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AlertDispatcher (5)"
+community: "asyncio"
 location: "L375"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/asyncio
 ---
 
 # .test_event_to_dict_includes_bot_id()
 
 ## Connections
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/asyncio

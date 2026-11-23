@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L85"
+community: "PrivacyPolicyEnforcer"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Any_3]] - `references` [EXTRACTED]
-- [[ConversationMessage]] - `calls` [EXTRACTED]
-- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
-- [[Path_1]] - `calls` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
+- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[ServicePolicy]] - `method` [EXTRACTED]
+- [[ServicePrivacy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

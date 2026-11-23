@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # test_soc_egress.py
@@ -19,5 +19,7 @@ tags:
 - [[SCLError]] - `imports` [EXTRACTED]
 - [[TestConfirmationModel]] - `contains` [EXTRACTED]
 - [[TestEgressRequestModel]] - `contains` [EXTRACTED]
+- [[Tests for SOC egress endpoints — model-level and confirmation model validation.]] - `rationale_for` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

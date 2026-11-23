@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/sec-offense.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "Community 1059"
-location: "L325"
+community: "pytest.ini"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/pytestini
 ---
 
 # Coverage Requirements
 
 ## Connections
-- [[Writing Exploit Tests]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1059
+#graphify/document #graphify/EXTRACTED #community/pytestini

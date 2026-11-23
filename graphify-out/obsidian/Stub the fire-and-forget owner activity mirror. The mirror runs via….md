@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "create_auth_dependency (8)"
+community: "test_telegram_proxy_inbound.py"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/create_auth_dependency_8
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # Stub the fire-and-forget owner activity mirror. The mirror runs via…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_no_owner_mirror()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/create_auth_dependency_8
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

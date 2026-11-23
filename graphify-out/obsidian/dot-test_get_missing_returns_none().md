@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestSaveAndGet"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestSaveAndGet
 ---
 
 # .test_get_missing_returns_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSaveAndGet]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestSaveAndGet

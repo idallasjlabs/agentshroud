@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 721"
-location: "L130"
+community: "AgentShroud™ CVE Mitigation Matrix"
+location: "L489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_721
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Verification
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_721
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

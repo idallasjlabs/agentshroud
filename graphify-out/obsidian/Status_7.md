@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "Community 859"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_859
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Status
 
 ## Connections
-- [[ADR-008-progressive-trust-levels]] - `contains` [EXTRACTED]
-- [[ADR-008 Progressive Trust Levels for Agents]] - `contains` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_859
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

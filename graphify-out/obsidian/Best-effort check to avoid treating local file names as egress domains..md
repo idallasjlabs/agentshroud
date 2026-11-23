@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "._extract_first_egress_target"
 location: "L1142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/_extract_first_egress_target
 ---
 
 # Best-effort check to avoid treating local file names as egress domains.
 
 ## Connections
-- [[._looks_like_filename_reference()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_filename_reference()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target

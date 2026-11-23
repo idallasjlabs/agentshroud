@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Community 1572"
+community: "Architecture Review Skill (stub)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1572
+  - community/Architecture_Review_Skill_stub
 ---
 
 # Architecture Review Skill (stub)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1572
+#graphify/document #graphify/EXTRACTED #community/Architecture_Review_Skill_stub

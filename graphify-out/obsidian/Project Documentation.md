@@ -1,19 +1,19 @@
 ---
 source_file: "docs/project/README.md"
 type: "document"
-community: "Community 1056"
+community: "Project Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1056
+  - community/Project_Documentation
 ---
 
 # Project Documentation
 
 ## Connections
-- [[Current Status_5]] - `contains` [EXTRACTED]
+- [[Current Status_7]] - `contains` [EXTRACTED]
 - [[Planned Documents_4]] - `contains` [EXTRACTED]
-- [[README_124]] - `contains` [EXTRACTED]
+- [[projectREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1056
+#graphify/document #graphify/EXTRACTED #community/Project_Documentation

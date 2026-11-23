@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Mermaid Brand Theme Init Block
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[GSDE&G Team (concept)]] - concept - docker/config/hermes/skills/i-mc/SKILL.md
+- [[Mermaid Brand Theme Init Block]] - concept - docker/config/openclaw/skills/i-ti/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

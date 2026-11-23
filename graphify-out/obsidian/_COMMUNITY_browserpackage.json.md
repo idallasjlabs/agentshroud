@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.20
 members: 10
 ---
 
 # browser/package.json
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[Auth Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Container Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Egress Filter Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Error Index_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[HTTP Status Codes]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Related Notes_65]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[author_1]] - code - .agents/skills/browser/package.json
+- [[browserpackage.json]] - code - .agents/skills/browser/package.json
+- [[description_5]] - code - .agents/skills/browser/package.json
+- [[keywords_1]] - code - .agents/skills/browser/package.json
+- [[license_1]] - code - .agents/skills/browser/package.json
+- [[main]] - code - .agents/skills/browser/package.json
+- [[name_1]] - code - .agents/skills/browser/package.json
+- [[scripts]] - code - .agents/skills/browser/package.json
+- [[test]] - code - .agents/skills/browser/package.json
+- [[version_1]] - code - .agents/skills/browser/package.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,9 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/browser/packagejson
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-
-## Top bridge nodes
-- [[Error Index_1]] - degree 10, connects to 1 community

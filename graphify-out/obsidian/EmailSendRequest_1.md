@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/routes/forward.py"
-type: "code"
-community: "Community 2154"
-location: "L176"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+type: "document"
+community: "models.py"
+location: "L70"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/modelspy
 ---
 
 # EmailSendRequest
 
 ## Connections
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `calls` [EXTRACTED]
+- [[Model Details]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/document #graphify/EXTRACTED #community/modelspy

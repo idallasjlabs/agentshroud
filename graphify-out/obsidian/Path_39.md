@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: ""
 type: "code"
-community: "Community 92"
-location: "L268"
+community: "GitGuard"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_92
+  - graphify/EXTRACTED
+  - community/GitGuard
 ---
 
 # Path
 
 ## Connections
-- [[._make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
+- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
+- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
+- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
+- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/GitGuard

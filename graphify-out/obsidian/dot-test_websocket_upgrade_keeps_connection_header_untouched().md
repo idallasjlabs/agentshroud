@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "Athena — Knowledge Distiller (2)"
+community: "TestRewriteRequestHeaders"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/TestRewriteRequestHeaders
 ---
 
 # .test_websocket_upgrade_keeps_connection_header_untouched()
 
 ## Connections
-- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the         han]] - `rationale_for` [EXTRACTED]
+- [[A WebSocket upgrade MUST keep Connection Upgrade (not close) or the handshake…]] - `rationale_for` [EXTRACTED]
 - [[TestRewriteRequestHeaders]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/code #graphify/EXTRACTED #community/TestRewriteRequestHeaders

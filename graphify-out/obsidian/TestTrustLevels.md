@@ -1,26 +1,21 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 54"
+community: "PermissionLevel"
 location: "L121"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_54
+  - graphify/EXTRACTED
+  - community/PermissionLevel
 ---
 
 # TestTrustLevels
 
 ## Connections
-- [[.test_clamp_high()]] - `method` [EXTRACTED]
-- [[.test_clamp_low()]] - `method` [EXTRACTED]
-- [[.test_default_trust_is_1()]] - `method` [EXTRACTED]
-- [[.test_set_and_get()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
+- [[dot-test_clamp_high()]] - `method` [EXTRACTED]
+- [[dot-test_clamp_low()]] - `method` [EXTRACTED]
+- [[dot-test_default_trust_is_1()]] - `method` [EXTRACTED]
+- [[dot-test_set_and_get()]] - `method` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

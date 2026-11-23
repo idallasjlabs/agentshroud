@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-pca.md"
 type: "document"
-community: "Community 1220"
+community: "Output Sections (ALL required)"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1220
+  - community/Output_Sections_ALL_required
 ---
 
 # Output Sections (ALL required)
@@ -23,4 +23,4 @@ tags:
 - [[9. Current Production Status Reviewed]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1220
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

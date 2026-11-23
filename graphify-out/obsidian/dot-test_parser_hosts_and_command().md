@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "PermissionLevel (6)"
+community: "test_multi_host_test.py"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel_6
+  - community/test_multi_host_testpy
 ---
 
 # .test_parser_hosts_and_command()
@@ -15,4 +15,4 @@ tags:
 - [[TestParserAndCommandResolution]] - `method` [EXTRACTED]
 - [[build_parser()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel_6
+#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy

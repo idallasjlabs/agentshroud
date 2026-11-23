@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-mcpm.md"
+source_file: ".github/agents/i-mcpm.agent.md"
 type: "document"
-community: "Community 1936"
-location: "L142"
+community: "Available MCP Servers"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1936
+  - community/Available_MCP_Servers
 ---
 
 # Common Errors
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCP Troubleshooting_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1936
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

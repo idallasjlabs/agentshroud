@@ -12,7 +12,7 @@ tags:
 # .test_write_file_remote_failure_returns_200_with_success_false()
 
 ## Connections
-- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200         res]] - `rationale_for` [EXTRACTED]
+- [[Mirrors sshexec a nonzero remote exit code is surfaced in the 200 response…]] - `rationale_for` [EXTRACTED]
 - [[SSHWriteResult]] - `calls` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "rationale"
-community: "Community 34"
+community: "_FakeRBAC"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/_FakeRBAC
 ---
 
 # Deterministic stand-in for RBACManager.
 
 ## Connections
-- [[_FakeRBAC]] - `rationale_for` [EXTRACTED]
+- [[_FakeRBAC_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_34
+#graphify/rationale #graphify/EXTRACTED #community/_FakeRBAC

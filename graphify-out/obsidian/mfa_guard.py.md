@@ -1,22 +1,26 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "Community 70"
+community: "EnhancedApprovalQueue"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/EnhancedApprovalQueue
 ---
 
 # mfa_guard.py
 
 ## Connections
-- [[MFAGuard_2]] - `contains` [EXTRACTED]
+- [[MFAGuard]] - `contains` [EXTRACTED]
+- [[MFAGuard — second factor for high-risk owner operations. SCRUM-93 · IEC 62443…]] - `rationale_for` [EXTRACTED]
 - [[MFAResult]] - `contains` [EXTRACTED]
 - [[_truthy()]] - `contains` [EXTRACTED]
-- [[mcp_policy.py]] - `references` [EXTRACTED]
+- [[enhanced_queue.py]] - `imports_from` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
-- [[test_mfa_guard.py]] - `references` [EXTRACTED]
+- [[test_edge_approvals.py]] - `imports_from` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports_from` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[test_mfa_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

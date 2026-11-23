@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TestInboundChokepointWiring"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/TestInboundChokepointWiring
 ---
 
 # .proxy()
 
 ## Connections
-- [[TelegramAPIProxy_1]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundChokepointWiring]] - `method` [EXTRACTED]
+- [[fixture_22]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestInboundChokepointWiring

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/05-credential-isolation.md"
+source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Community 609"
+community: "Flip core security modules from monitor to enforce mode"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_609
+  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
 ---
 
 # Evidence
 
 ## Connections
-- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
+- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_609
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode

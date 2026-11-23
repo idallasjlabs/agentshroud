@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 229"
+community: "AlertTelegramRelay"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/AlertTelegramRelay
 ---
 
 # test_alert_telegram_relay.py
@@ -14,9 +14,12 @@ tags:
 ## Connections
 - [[AlertTelegramRelay]] - `imports` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
+- [[Tests for AlertTelegramRelay (SCRUM-61) — security_alert events → owner…]] - `rationale_for` [EXTRACTED]
 - [[_SendSpy]] - `contains` [EXTRACTED]
 - [[_alert_event()]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[alert_telegram_relay.py]] - `imports_from` [EXTRACTED]
+- [[event_bus.py_2]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_api_alerts_endpoint_emits_bus_event()]] - `contains` [EXTRACTED]
 - [[test_async_sanitizer_supported()]] - `contains` [EXTRACTED]
@@ -36,4 +39,4 @@ tags:
 - [[test_warning_alert_relayed_with_orange_marker()]] - `contains` [EXTRACTED]
 - [[test_warning_flood_cannot_starve_critical()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

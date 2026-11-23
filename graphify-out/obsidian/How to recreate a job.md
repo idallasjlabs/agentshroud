@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/cron/JOBS-REFERENCE.md"
+source_file: "docker/config/openclaw/cron/JOBS-REFERENCE.md"
 type: "document"
-community: "Community 373"
-location: "L9"
+community: "OpenClaw Cron Jobs Reference & Recreation Guide"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # How to recreate a job
 
 ## Connections
-- [[Hermes Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
-- [[Hermes Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[OpenClaw Cron Jobs Reference & Recreation Guide]] - `contains` [EXTRACTED]
+- [[OpenClaw Cron Jobs — Reference & Recreation Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_373
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Cron_Jobs_Reference__Recreation_Guide

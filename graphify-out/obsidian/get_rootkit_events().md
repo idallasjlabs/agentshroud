@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "Community 102"
+community: "get_wazuh_summary"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/get_wazuh_summary
 ---
 
 # get_rootkit_events()
 
 ## Connections
-- [[.test_get_rootkit_events()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
-- [[Filter alerts to rootkit detection events only.      Args         alerts List]] - `rationale_for` [EXTRACTED]
+- [[dot-test_get_rootkit_events()]] - `calls` [EXTRACTED]
+- [[Any_37]] - `references` [EXTRACTED]
+- [[Filter alerts to rootkit detection events only. Args alerts List of parsed…]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()_3]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[wazuh_client.py]] - `contains` [EXTRACTED]
+- [[wazuh_alerts()]] - `calls` [EXTRACTED]
+- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

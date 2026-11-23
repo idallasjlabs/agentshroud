@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "discover_upstream_versions.py"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/discover_upstream_versionspy
 ---
 
 # Force AF_INET for name resolution inside the block. Every Docker Hub failure…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ipv4_only()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy

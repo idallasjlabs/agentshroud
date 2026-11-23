@@ -1,18 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Community 334"
+community: "Troubleshooting Matrix"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/Troubleshooting_Matrix
 ---
 
 # Debugging Commands
 
 ## Connections
 - [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
-- [[troubleshooting]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Matrix

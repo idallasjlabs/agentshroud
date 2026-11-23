@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 712"
-location: "L32"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Document Structure
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

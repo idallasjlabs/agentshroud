@@ -1,26 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 307"
+community: "_StubAuditStore"
 location: "L445"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_307
+  - graphify/EXTRACTED
+  - community/_StubAuditStore
 ---
 
 # _Event
 
 ## Connections
-- [[.__init__()_150]] - `method` [EXTRACTED]
-- [[.log_event()_1]] - `calls` [EXTRACTED]
-- [[A2AMethod]] - `uses` [INFERRED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[A2AProxyResult]] - `uses` [INFERRED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_83]] - `method` [EXTRACTED]
+- [[dot-log_event()]] - `calls` [EXTRACTED]
+- [[_StubAuditStore]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_307
+#graphify/code #graphify/EXTRACTED #community/_StubAuditStore

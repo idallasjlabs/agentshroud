@@ -1,17 +1,16 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Community 1"
+community: "Path Isolation Manager Tests"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_1
+  - graphify/INFERRED
+  - community/Path_Isolation_Manager_Tests
 ---
 
 # Privilege Separation File Sandbox Tests
 
 ## Connections
-- [[FileSandbox]] - `references` [EXTRACTED]
 - [[Path Isolation Manager Tests]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/INFERRED #community/Path_Isolation_Manager_Tests

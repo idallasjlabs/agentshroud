@@ -1,24 +1,20 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Community 240"
+community: "AppleContainerEngine"
 location: "L637"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_240
+  - graphify/EXTRACTED
+  - community/AppleContainerEngine
 ---
 
 # TestContainerInfo
 
 ## Connections
-- [[.test_defaults()_1]] - `method` [EXTRACTED]
-- [[.test_with_data()]] - `method` [EXTRACTED]
-- [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
-- [[DockerEngine]] - `uses` [INFERRED]
-- [[PodmanEngine]] - `uses` [INFERRED]
-- [[ServiceDef]] - `uses` [INFERRED]
+- [[dot-test_defaults()_1]] - `method` [EXTRACTED]
+- [[dot-test_with_data()]] - `method` [EXTRACTED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_240
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

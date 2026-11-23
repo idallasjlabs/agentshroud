@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 978"
-location: "L3924"
+community: "soc/router.py"
+location: "L315"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/soc/routerpy
 ---
 
 # List all users and their roles (admin+ only).
 
 ## Connections
-- [[list_users_and_roles()]] - `rationale_for` [EXTRACTED]
+- [[dot-list_users_and_roles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

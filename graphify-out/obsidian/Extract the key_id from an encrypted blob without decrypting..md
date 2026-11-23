@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "rationale"
-community: "Community 96"
+community: "EncryptedStore"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/EncryptedStore
 ---
 
 # Extract the key_id from an encrypted blob without decrypting.
 
 ## Connections
-- [[.get_blob_key_id()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_blob_key_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

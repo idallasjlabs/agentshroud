@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Approval Queue (human-in-the-loop)"
-location: "L24"
+community: "test_jira_weekly_review.py"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/test_jira_weekly_reviewpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

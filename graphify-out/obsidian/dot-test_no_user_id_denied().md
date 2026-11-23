@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "_req"
 location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_req
 ---
 
 # .test_no_user_id_denied()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProcessRequestIdentity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_req

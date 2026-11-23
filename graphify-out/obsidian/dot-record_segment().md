@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "PromptGuard"
-location: "L521"
+community: "ContextGuard"
+location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/ContextGuard
 ---
 
 # .record_segment()
@@ -17,4 +17,4 @@ tags:
 - [[ContextSegment]] - `references` [EXTRACTED]
 - [[Tag a segment and append it to the session's provenance log.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

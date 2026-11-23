@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Community 124"
+community: "ApprovalRequest"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/ApprovalRequest
 ---
 
 # GroupApprovalRouter must correctly distinguish group vs DM context.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestGroupApprovalRouterContextDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

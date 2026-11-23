@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L361"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # _build_one_service()
@@ -15,9 +15,9 @@ tags:
 - [[COMPOSE_CMD]] - `shares_data_with` [EXTRACTED]
 - [[SUNDAY_BUILD_VIA_VM=1 detached in-VM build]] - `rationale_for` [EXTRACTED]
 - [[UPGRADE_LOCK]] - `shares_data_with` [EXTRACTED]
-- [[log()_9]] - `calls` [EXTRACTED]
+- [[log()_1]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[upgrade-2026-09-23-20260923-1400]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

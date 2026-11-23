@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # ._cleanup_old_denied_requests()
@@ -16,4 +16,4 @@ tags:
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[Clean up old denied requests beyond cooldown period.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

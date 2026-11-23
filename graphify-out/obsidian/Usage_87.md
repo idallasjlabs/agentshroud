@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "Community 90"
-location: "L9"
+community: "Production Safety Checklist (PROD-SAFETY)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

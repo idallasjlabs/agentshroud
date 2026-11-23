@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/notion/SKILL.md"
+source_file: "docs/architecture/PHASE3_REQUIREMENTS.md"
 type: "document"
-community: "Community 829"
-location: "L167"
+community: "Phase 3 Requirements: Working Chat Container"
+location: "L364"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_829
+  - community/Phase_3_Requirements_Working_Chat_Container
 ---
 
 # Notes
 
 ## Connections
-- [[notion]] - `contains` [EXTRACTED]
+- [[Phase 3 Requirements Working Chat Container]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_829
+#graphify/document #graphify/EXTRACTED #community/Phase_3_Requirements_Working_Chat_Container

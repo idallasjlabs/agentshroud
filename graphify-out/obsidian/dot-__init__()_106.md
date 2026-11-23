@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "PathIsolationManager"
-location: "L65"
+community: "RedactionResult"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/RedactionResult
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

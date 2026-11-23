@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "Community 2096"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2096
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[Purpose_34]] - `contains` [EXTRACTED]
-- [[README_34]] - `contains` [EXTRACTED]
-- [[Related Skills_40]] - `contains` [EXTRACTED]
-- [[Usage_40]] - `contains` [EXTRACTED]
+- [[Purpose_115]] - `contains` [EXTRACTED]
+- [[Related Skills_45]] - `contains` [EXTRACTED]
+- [[Usage_55]] - `contains` [EXTRACTED]
+- [[sec-offenseREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2096
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

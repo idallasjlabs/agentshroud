@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L205"
+community: "ProgressiveLockdown"
+location: "L361"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/ProgressiveLockdown
 ---
 
 # .all_statuses()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_status()_1]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `method` [EXTRACTED]
-- [[Return lockdown status for all tracked users.]] - `rationale_for` [EXTRACTED]
+- [[Return lockdown status for all tracked principals.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

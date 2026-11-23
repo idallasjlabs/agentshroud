@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 49"
-location: "L368"
+community: "test_soc_router_coverage.py"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/test_soc_router_coveragepy
 ---
 
 # start_service()
 
 ## Connections
-- [[HTTPException]] - `calls` [INFERRED]
-- [[Start a specific service container.]] - `rationale_for` [EXTRACTED]
-- [[_get_engine()]] - `calls` [EXTRACTED]
-- [[_validate_service_name()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[_make_service_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

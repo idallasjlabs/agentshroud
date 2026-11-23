@@ -1,20 +1,18 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "browser/scripts/browse.py"
-location: "L485"
+community: "test_edge_service_routes.py"
+location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/test_edge_service_routespy
 ---
 
 # render()
 
 ## Connections
-- [[_append_nvd_entries()]] - `indirect_call` [INFERRED]
-- [[_entry_to_py()]] - `calls` [EXTRACTED]
-- [[_insert_into_list()]] - `calls` [EXTRACTED]
-- [[append_ghsa_entries()]] - `indirect_call` [INFERRED]
+- [[_consent_routes()]] - `contains` [EXTRACTED]
+- [[consent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

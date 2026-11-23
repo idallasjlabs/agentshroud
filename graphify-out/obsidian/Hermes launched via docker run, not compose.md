@@ -1,14 +1,14 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "rationale"
-community: "Community 2450"
+community: "Hermes launched via docker run, not compose"
 location: "docker/bots/hermes/run-standalone.sh:8"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2450
+  - community/Hermes_launched_via_docker_run_not_compose
 ---
 
 # Hermes launched via docker run, not compose
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2450
+#graphify/rationale #graphify/EXTRACTED #community/Hermes_launched_via_docker_run_not_compose

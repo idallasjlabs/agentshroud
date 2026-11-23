@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "TrustManager"
 location: "L464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/TrustManager
 ---
 
 # .test_get_incidents_with_limit()
 
 ## Connections
-- [[CrossBotTrustLedger_1]] - `references` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `references` [EXTRACTED]
 - [[TestGetIncidentsLimit]] - `method` [EXTRACTED]
-- [[TrustManager_4]] - `references` [EXTRACTED]
+- [[TrustManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

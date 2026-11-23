@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "parse_clamscan_output"
-location: "L354"
+community: "test_scanner_integration_coverage.py"
+location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_clean_when_installed_not_running()
 
 ## Connections
-- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[TestClamavSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

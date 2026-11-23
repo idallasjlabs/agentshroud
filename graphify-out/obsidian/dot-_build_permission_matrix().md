@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "soc/router.py"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/soc/routerpy
 ---
 
 # ._build_permission_matrix()
 
 ## Connections
-- [[dot-__init__()_168]] - `calls` [EXTRACTED]
-- [[Action_3]] - `references` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[Action]] - `references` [EXTRACTED]
 - [[Build the permission matrix for all roles.]] - `rationale_for` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
-- [[Resource_2]] - `references` [EXTRACTED]
-- [[Role_63]] - `references` [EXTRACTED]
+- [[RBACManager]] - `method` [EXTRACTED]
+- [[Resource]] - `references` [EXTRACTED]
+- [[Role]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

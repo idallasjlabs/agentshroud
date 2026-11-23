@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 567"
-location: "L27"
+community: "llm_proxy.py"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_567
+  - community/llm_proxypy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_567
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

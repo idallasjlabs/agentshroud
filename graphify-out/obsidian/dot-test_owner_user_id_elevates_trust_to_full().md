@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "TestEmailSend"
+community: "_TrustCaptor"
 location: "L512"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/_TrustCaptor
 ---
 
 # .test_owner_user_id_elevates_trust_to_full()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_post_forward()]] - `calls` [EXTRACTED]
 - [[TestOwnerTrustElevation]] - `method` [EXTRACTED]
-- [[When request.user_id matches _owner_user_id (with the trusted header),         p]] - `rationale_for` [EXTRACTED]
+- [[When request.user_id matches _owner_user_id (with the trusted header),…]] - `rationale_for` [EXTRACTED]
 - [[_TrustCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/_TrustCaptor

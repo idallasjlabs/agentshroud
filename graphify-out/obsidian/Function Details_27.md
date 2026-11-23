@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
 type: "document"
-community: "Community 536"
-location: "L43"
+community: "security.py"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/securitypy
 ---
 
 # Function Details
 
 ## Connections
-- [[AlertDispatcher._send_notification(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.cleanup_seen()]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.dispatch(alert)]] - `contains` [EXTRACTED]
-- [[AlertDispatcher.get_digest(clear)]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[_validate_runtime(runtime)]] - `contains` [EXTRACTED]
+- [[get_features_for_runtime(runtime)]] - `contains` [EXTRACTED]
+- [[get_missing_features(runtime)]] - `contains` [EXTRACTED]
+- [[get_security_options(runtime)]] - `contains` [EXTRACTED]
+- [[security.py_1]] - `contains` [EXTRACTED]
+- [[warn_missing_features(runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_536
+#graphify/document #graphify/EXTRACTED #community/securitypy

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_fw_client"
+community: "TestWebSearchLog"
 location: "L3766"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_fw_client
+  - community/TestWebSearchLog
 ---
 
 # .test_raw_web_search_json_collaborator_safe_notice()
 
 ## Connections
 - [[Collaborator chat raw web_search JSON produces a safe notice.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_fw_client
+#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog

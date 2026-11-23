@@ -1,17 +1,17 @@
 ---
 source_file: ".cursor/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 263"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L179"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Atlassian: "OAuth flow failed"
 
 ## Connections
-- [[Troubleshooting_9]] - `contains` [EXTRACTED]
+- [[Troubleshooting_30]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

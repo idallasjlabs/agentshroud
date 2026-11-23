@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/__init__.py"
 type: "concept"
-community: "Community 1205"
+community: "Falco (runtime security monitoring)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1205
+  - community/Falco_runtime_security_monitoring
 ---
 
 # Falco (runtime security monitoring)
 
-## Connections
-- [[__init__.py_10]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_1205
+#graphify/concept #graphify/EXTRACTED #community/Falco_runtime_security_monitoring

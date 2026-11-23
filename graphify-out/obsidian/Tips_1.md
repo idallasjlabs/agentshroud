@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/canvas/SKILL.md"
+source_file: "skills/openclaw/himalaya/SKILL.md"
 type: "document"
-community: "Community 356"
-location: "L192"
+community: "Himalaya Email CLI"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_356
+  - community/Himalaya_Email_CLI
 ---
 
 # Tips
 
 ## Connections
-- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Himalaya Email CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_356
+#graphify/document #graphify/EXTRACTED #community/Himalaya_Email_CLI

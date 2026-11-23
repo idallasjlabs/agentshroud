@@ -1,28 +1,23 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 6"
+community: "_audit_entry"
 location: "L503"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/_audit_entry
 ---
 
 # TestCollectRecentEvents
 
 ## Connections
-- [[.test_collects_and_converts()]] - `method` [EXTRACTED]
-- [[.test_none_store_returns_empty()]] - `method` [EXTRACTED]
-- [[.test_severity_filter_drops_lower()]] - `method` [EXTRACTED]
-- [[.test_store_error_returns_empty()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[collect_recent_events()]] - `calls` [EXTRACTED]
+- [[dot-test_collects_and_converts()]] - `method` [EXTRACTED]
+- [[dot-test_none_store_returns_empty()]] - `method` [EXTRACTED]
+- [[dot-test_severity_filter_drops_lower()]] - `method` [EXTRACTED]
+- [[dot-test_store_error_returns_empty()]] - `method` [EXTRACTED]
+- [[SecurityEvent]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/_audit_entry

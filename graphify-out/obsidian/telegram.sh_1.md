@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 469"
+community: "OpenClaw Management Scripts"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_469
+  - community/OpenClaw_Management_Scripts
 ---
 
 # telegram.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OpenClaw Management Scripts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_469
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

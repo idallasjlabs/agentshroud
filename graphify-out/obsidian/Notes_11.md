@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 416"
-location: "L453"
+community: "tmux Session Control"
+location: "L148"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_416
+  - community/tmux_Session_Control
 ---
 
 # Notes
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_416
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

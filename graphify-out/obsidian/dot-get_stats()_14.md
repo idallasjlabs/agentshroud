@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "AgentTarget"
-location: "L160"
+community: "AuditChain"
+location: "L1689"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AuditChain
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_54]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
+- [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AuditChain

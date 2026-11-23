@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-mcpm-auth-reset.md"
+source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 279"
-location: "L223"
+community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_279
+  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_5]] - `contains` [EXTRACTED]
+- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_279
+#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET

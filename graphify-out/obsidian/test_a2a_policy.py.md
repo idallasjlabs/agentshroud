@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "Community 111"
+community: "A2APolicyEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/A2APolicyEngine
 ---
 
 # test_a2a_policy.py
@@ -16,13 +16,13 @@ tags:
 - [[A2APolicyAction]] - `imports` [EXTRACTED]
 - [[A2APolicyConfig]] - `imports` [EXTRACTED]
 - [[A2APolicyDecision]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
-- [[Upstream A2A Gap 78298 — SSRF Push-Notification Callback URL Bypass]] - `references` [EXTRACTED]
-- [[Upstream A2A Gap 83701 — TaskContextId Collision Hijack]] - `references` [EXTRACTED]
+- [[A2APolicyEngine]] - `imports` [EXTRACTED]
+- [[Tests for the A2A (Agent-to-Agent) security policy engine (SCRUM-129).…]] - `rationale_for` [EXTRACTED]
 - [[_LegacyStubApprovalQueue]] - `contains` [EXTRACTED]
 - [[_StubApprovalQueue]] - `contains` [EXTRACTED]
-- [[_base_config()]] - `contains` [EXTRACTED]
-- [[engine()]] - `contains` [EXTRACTED]
+- [[_base_config()_1]] - `contains` [EXTRACTED]
+- [[a2a_policy.py]] - `imports_from` [EXTRACTED]
+- [[engine()_1]] - `contains` [EXTRACTED]
 - [[is_safe_a2a_callback_url()]] - `imports` [EXTRACTED]
 - [[test_allowlisted_peer_low_risk_method_is_allowed()]] - `contains` [EXTRACTED]
 - [[test_callback_url_bare_dot_host_is_rejected()]] - `contains` [EXTRACTED]
@@ -61,4 +61,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `contains` [EXTRACTED]
 - [[test_unknown_peer_is_denied_by_default()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_111
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

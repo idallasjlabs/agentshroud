@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/MASTER-FEATURE-LIST.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 560"
-location: "L406"
+community: "[1.1.1] — fix/guard-wiring-and-ops-hardening (2026-06-10)"
+location: "L611"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_560
+  - community/111__fix/guard-wiring-and-ops-hardening_2026-06-10
 ---
 
 # Summary
 
 ## Connections
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
+- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_560
+#graphify/document #graphify/EXTRACTED #community/111__fix/guard-wiring-and-ops-hardening_2026-06-10

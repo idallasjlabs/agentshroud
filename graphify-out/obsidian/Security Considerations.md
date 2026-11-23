@@ -1,19 +1,19 @@
 ---
-source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 218"
-location: "L160"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Security Considerations
 
 ## Connections
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
-- [[⚠️ Important Security Notes]] - `contains` [EXTRACTED]
-- [[✅ Security Features Enabled]] - `contains` [EXTRACTED]
+- [[How Messages Flow]] - `contains` [EXTRACTED]
+- [[Important Notes]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

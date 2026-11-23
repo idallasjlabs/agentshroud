@@ -12,6 +12,7 @@ tags:
 # .test_detects_private_section_header()
 
 ## Connections
+- [[dot-contains_private_content()]] - `calls` [EXTRACTED]
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

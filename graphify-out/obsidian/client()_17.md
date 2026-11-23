@@ -1,23 +1,18 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "Community 7"
-location: "L79"
+community: "test_soc_edge.py"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_soc_edgepy
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_114]] - `references` [EXTRACTED]
+- [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

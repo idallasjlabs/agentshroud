@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
-location: "L125"
+community: "MCPServerConfig"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPServerConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[FakeProcess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

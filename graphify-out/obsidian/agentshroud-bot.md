@@ -1,20 +1,18 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 1569"
+community: "agentshroud-bot"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/agentshroud-bot
 ---
 
 # agentshroud-bot.md
 
 ## Connections
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 - [[agentshroud-bot_1]] - `contains` [EXTRACTED]
-- [[networks]] - `references` [EXTRACTED]
-- [[openclaw]] - `references` [EXTRACTED]
-- [[volumes]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # Proxy Layer
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
@@ -28,9 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-cursormcp.json]]
-- 1 edge to [[_COMMUNITY_test_jira_weekly_review.py]]
-- 1 edge to [[_COMMUNITY_Pre-Deployment Checklist]]
+- 1 edge to [[_COMMUNITY_TrustManager_1]]
+- 1 edge to [[_COMMUNITY_Gateway ManagementControl-Plane API (v1.3.0)]]
+- 1 edge to [[_COMMUNITY_Audit Ledger (SHA-256 hash only)]]
 
 ## Top bridge nodes
 - [[Proxy Layer_1]] - degree 5, connects to 1 community

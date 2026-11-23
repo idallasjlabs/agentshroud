@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "egress_retry.py"
+community: "AppleContainerEngine"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/AppleContainerEngine
 ---
 
 # .ps()
 
 ## Connections
-- [[ContainerInfo_2]] - `references` [EXTRACTED]
+- [[ContainerInfo]] - `references` [EXTRACTED]
 - [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

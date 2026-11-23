@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md (4)"
+community: "TestScoreMalwareDefense"
 location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_4
+  - community/TestScoreMalwareDefense
 ---
 
 # .test_one_with_infections()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreMalwareDefense]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_4
+#graphify/code #graphify/EXTRACTED #community/TestScoreMalwareDefense

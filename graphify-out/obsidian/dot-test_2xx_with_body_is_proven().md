@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "make_httpx_fetcher"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/make_httpx_fetcher
 ---
 
 # .test_2xx_with_body_is_proven()
@@ -16,4 +16,4 @@ tags:
 - [[_StreamResp]] - `calls` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

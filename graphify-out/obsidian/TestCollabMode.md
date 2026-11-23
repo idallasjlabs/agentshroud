@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # TestCollabMode
 
 ## Connections
-- [[.test_local_only_mode()]] - `method` [EXTRACTED]
-- [[.test_project_scoped_mode()]] - `method` [EXTRACTED]
-- [[.test_unknown_user_returns_local_only()]] - `method` [EXTRACTED]
-- [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[dot-test_local_only_mode()]] - `method` [EXTRACTED]
+- [[dot-test_project_scoped_mode()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_user_returns_local_only()]] - `method` [EXTRACTED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

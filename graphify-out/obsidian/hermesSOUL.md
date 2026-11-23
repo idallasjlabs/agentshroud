@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/SOUL.md"
 type: "document"
-community: "test_ptt_state.c"
+community: "hermes/SOUL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_ptt_statec
+  - community/hermes/SOULmd
 ---
 
 # hermes/SOUL.md
@@ -15,17 +15,15 @@ tags:
 - [[AgentShroud Gateway]] - `references` [EXTRACTED]
 - [[AgentShroud Hermes System Identity (agentshermes-soul.md)]] - `semantically_similar_to` [INFERRED]
 - [[AgentShroud Hermes — System Identity_2]] - `contains` [EXTRACTED]
-- [[EgressFilter_3]] - `references` [EXTRACTED]
+- [[EgressFilter_1]] - `references` [EXTRACTED]
 - [[Isaiah Jefferson (Owner)]] - `references` [EXTRACTED]
-- [[OpenClaw_2]] - `references` [EXTRACTED]
+- [[OpenClaw_3]] - `references` [EXTRACTED]
 - [[PII Sanitizer_1]] - `references` [EXTRACTED]
-- [[TrustManager_5]] - `references` [EXTRACTED]
+- [[TrustManager_1]] - `references` [EXTRACTED]
 - [[agentshroud-ssh-exec.sh helper]] - `references` [EXTRACTED]
-- [[approval_queue.py]] - `references` [EXTRACTED]
 - [[marvin (lab host)]] - `references` [EXTRACTED]
-- [[prompt_guard.py]] - `references` [EXTRACTED]
 - [[raspberrypi (lab host)]] - `references` [EXTRACTED]
 - [[tirith command-safety scanner]] - `references` [EXTRACTED]
 - [[trillian (lab host)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_ptt_statec
+#graphify/document #graphify/EXTRACTED #community/hermes/SOULmd

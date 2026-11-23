@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "format_cve_report()"
+community: "SecureBrowser"
 location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/SecureBrowser
 ---
 
 # .extract()
@@ -14,9 +14,8 @@ tags:
 ## Connections
 - [[dot-_log_action()_3]] - `calls` [EXTRACTED]
 - [[dot-_log_security_event()_3]] - `calls` [EXTRACTED]
-- [[Extract data from page          Security No credential extraction allowed_2]] - `rationale_for` [EXTRACTED]
+- [[Extract data from page Security No credential extraction allowed_3]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
 - [[SecurityError_3]] - `calls` [EXTRACTED]
-- [[main()_8]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

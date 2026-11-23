@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "test_claude_via_openai_path.py"
+community: "Mode A — Single task"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_claude_via_openai_pathpy
+  - community/Mode_A__Single_task
 ---
 
 # openclaw/skills/i-odev/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_claude_via_openai_pathpy
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,17 +1,17 @@
 ---
 source_file: "scripts/auto_remediate_cves.py"
 type: "rationale"
-community: "Community 420"
+community: "plan_remediation"
 location: "L154"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/plan_remediation
 ---
 
 # Serialise for the unattended run's audit trail.
 
 ## Connections
-- [[.to_dict()_15]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_420
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

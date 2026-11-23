@@ -1,46 +1,33 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 26"
+community: "test_all_modules_enforce.py"
 location: "L27"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_26
+  - graphify/EXTRACTED
+  - community/test_all_modules_enforcepy
 ---
 
 # PathIsolationConfig
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_119]] - `references` [EXTRACTED]
-- [[.config()_4]] - `calls` [EXTRACTED]
-- [[.test_custom_config()_2]] - `calls` [EXTRACTED]
-- [[.test_default_config()_5]] - `calls` [EXTRACTED]
-- [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_100]] - `references` [EXTRACTED]
+- [[dot-config()]] - `calls` [EXTRACTED]
+- [[dot-test_custom_config()]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()]] - `calls` [EXTRACTED]
+- [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Configuration for path isolation system.]] - `rationale_for` [EXTRACTED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PathIsolationManager]] - `references` [EXTRACTED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
 - [[TestPathIsolationConfig]] - `uses` [INFERRED]
 - [[TestPathIsolationManager]] - `uses` [INFERRED]
-- [[TestPathRewriteResult]] - `uses` [INFERRED]
-- [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[path_isolation.py]] - `contains` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[run()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

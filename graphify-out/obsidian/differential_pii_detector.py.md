@@ -1,25 +1,24 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "Community 56"
+community: "DifferentialPIIDetector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/DifferentialPIIDetector
 ---
 
 # differential_pii_detector.py
 
 ## Connections
+- [[Differential PII Detector for Tool Results — Module 28 (v1.2.0) IEC 62443 FR3…]] - `rationale_for` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `contains` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[PII Sanitizer Module Badge Icon]] - `conceptually_related_to` [AMBIGUOUS]
 - [[PIIHit]] - `contains` [EXTRACTED]
 - [[PIIHitSeverity]] - `contains` [EXTRACTED]
 - [[ToolResultPIIReport]] - `contains` [EXTRACTED]
 - [[_normalize_adversarial()]] - `contains` [EXTRACTED]
-- [[encoding_detector.py]] - `semantically_similar_to` [INFERRED]
+- [[test_differential_pii_detector.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

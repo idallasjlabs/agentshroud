@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L2071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # egress_emergency_block()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Enabledisable emergency block-all for outbound egress.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[post_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

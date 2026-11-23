@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec/SKILL.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD) (3)"
+community: "Skill: Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD_3
+  - community/Skill_Security_Review_SEC
 ---
 
 # hermes/skills/i-sec/SKILL.md
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD_3
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

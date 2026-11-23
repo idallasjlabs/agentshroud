@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 859"
+community: "ADR-008-progressive-trust-levels.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_859
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Trust Levels (0-4)
 
 ## Connections
-- [[Decision_9]] - `contains` [EXTRACTED]
+- [[Decision_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_859
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

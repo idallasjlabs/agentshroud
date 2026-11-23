@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "_make_proxy"
+community: "DelegationManager"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/DelegationManager
 ---
 
 # .revoke_all_for_user()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_require_owner()]] - `calls` [EXTRACTED]
 - [[dot-_save()]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[DelegationManager]] - `method` [EXTRACTED]
 - [[Revoke all delegations for a specific user. Returns count removed.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

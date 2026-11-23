@@ -1,21 +1,20 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: "docs/archive/CONNECTION-GUIDE.md"
 type: "document"
-community: "Community 171"
-location: "L249"
+community: "AgentShroud Control UI Connection Guide"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/AgentShroud_Control_UI_Connection_Guide
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Cannot connect to gateway]] - `contains` [EXTRACTED]
+- [[Connection timeout]] - `contains` [EXTRACTED]
+- [[Disconnected (1006) no reason]] - `contains` [EXTRACTED]
+- [[AgentShroud Control UI Connection Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Control_UI_Connection_Guide

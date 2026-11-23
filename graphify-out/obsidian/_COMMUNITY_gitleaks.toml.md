@@ -1,23 +1,20 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 7
 ---
 
 # gitleaks.toml
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
-- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_1]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[Integration_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Purpose_81]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Related Notes_53]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Usage_27]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[gitleaks.toml_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[gitleaks.toml]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 
 ## Live Query (requires Dataview plugin)
 

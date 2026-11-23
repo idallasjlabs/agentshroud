@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-mm.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 513"
-location: "L131"
+community: "Skill: Mindmap Architect (MM)"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # MCP Tool: xmind-generator-mcp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[XMind Generation via MCP]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

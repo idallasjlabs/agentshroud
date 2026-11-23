@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/README.md"
+source_file: ".agents/skills/sad/README.md"
 type: "document"
-community: "Community 2102"
-location: "L14"
+community: "System Audit Documentation"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2102
+  - community/System_Audit_Documentation
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2102
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

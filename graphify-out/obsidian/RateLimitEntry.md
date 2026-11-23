@@ -1,23 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "Community 54"
+community: "MCPPermissionManager"
 location: "L144"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_54
+  - graphify/EXTRACTED
+  - community/MCPPermissionManager
 ---
 
 # RateLimitEntry
 
 ## Connections
-- [[.check_rate_limit()]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-check_rate_limit()]] - `calls` [EXTRACTED]
 - [[Track rate limit state for a tool+agent combo.]] - `rationale_for` [EXTRACTED]
-- [[mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

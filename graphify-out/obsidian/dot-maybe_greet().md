@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "export-bot-conversations.py (2)"
+community: "test_collaborator_greeter.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy_2
+  - community/test_collaborator_greeterpy
 ---
 
 # .maybe_greet()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_get_client()]] - `calls` [EXTRACTED]
 - [[dot-_persist_state()]] - `calls` [EXTRACTED]
-- [[CollaboratorGreeter]] - `calls` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 - [[Greet user if cooldown has expired. Returns True when greeting was sent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy_2
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

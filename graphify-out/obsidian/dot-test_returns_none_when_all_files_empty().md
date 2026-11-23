@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_load_latest_json"
+community: "get_trivy_summary"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_load_latest_json
+  - community/get_trivy_summary
 ---
 
 # .test_returns_none_when_all_files_empty()
@@ -15,4 +15,4 @@ tags:
 - [[TestLoadLatestJson_1]] - `method` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_load_latest_json
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

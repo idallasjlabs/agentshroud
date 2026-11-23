@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
-location: "L173"
+community: "mcp_proxy.py"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/mcp_proxypy
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[TestSubmitAuth]] - `method` [EXTRACTED]
-- [[_draft()]] - `calls` [EXTRACTED]
+- [[POST mcpproxy without auth should return 401.]] - `rationale_for` [EXTRACTED]
+- [[TestMCPProxyEndpoint]] - `method` [EXTRACTED]
+- [[asyncio_28]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/mcp_proxypy

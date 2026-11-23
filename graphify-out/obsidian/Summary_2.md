@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 773"
-location: "L120"
+community: "agentshroud-gateway"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_773
+  - community/agentshroud-gateway
 ---
 
 # Summary
 
 ## Connections
-- [[1.5.3 (2026-08-23)]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_773
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

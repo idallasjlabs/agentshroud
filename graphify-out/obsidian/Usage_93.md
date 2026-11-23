@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-sec/README.md"
 type: "document"
-community: "Community 518"
+community: "Security Review (SEC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Security_Review_SEC
 ---
 
 # Usage
 
 ## Connections
-- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

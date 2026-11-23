@@ -1,26 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
-type: "code"
-community: "Community 151"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+type: "document"
+community: "ledger.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/ledgerpy
 ---
 
-# ledger.py
+# ledger.py.md
 
 ## Connections
-- [[DataLedger]] - `contains` [EXTRACTED]
-- [[LedgerConfig]] - `imports` [EXTRACTED]
-- [[LedgerEntry_1]] - `imports` [EXTRACTED]
-- [[LedgerQueryResponse_1]] - `imports` [EXTRACTED]
-- [[README_127]] - `references` [EXTRACTED]
-- [[aiosqlite]] - `references` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
 type: "document"
-community: "Community 357"
+community: "Release Notes - AgentShroud v0.9.0"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_357
+  - community/Release_Notes_-_AgentShroud_v090
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 3 (Final)]] - `contains` [EXTRACTED]
+- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_357
+#graphify/document #graphify/EXTRACTED #community/Release_Notes_-_AgentShroud_v090

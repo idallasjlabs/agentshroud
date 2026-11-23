@@ -1,21 +1,18 @@
 ---
 source_file: "docs/security/VERIFICATION_RESULTS.md"
 type: "document"
-community: "Community 1315"
+community: "Phase 3A/3B Implementation Verification Results"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1315
+  - community/Phase_3A/3B_Implementation_Verification_Results
 ---
 
 # VERIFICATION_RESULTS.md
 
 ## Connections
-- [[Kill Switch]] - `references` [EXTRACTED]
 - [[Phase 3A3B Implementation Verification Results]] - `contains` [EXTRACTED]
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `conceptually_related_to` [AMBIGUOUS]
-- [[SECURITY_VALUE_PROPOSITION]] - `conceptually_related_to` [INFERRED]
-- [[verify-security.sh_1]] - `references` [EXTRACTED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1315
+#graphify/document #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results

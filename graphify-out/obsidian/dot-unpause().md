@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L107"
+community: "AppleContainerEngine"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/AppleContainerEngine
 ---
 
 # .unpause()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

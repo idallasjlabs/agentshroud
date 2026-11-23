@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "rationale"
-community: "Community 99"
+community: "test_get_activity_summary_by_bot_empty_when_no_file"
 location: "L342"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/test_get_activity_summary_by_bot_empty_when_no_file
 ---
 
 # get_activity_summary returns empty by_bot when no log file exists.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_activity_summary_by_bot_empty_when_no_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_99
+#graphify/rationale #graphify/EXTRACTED #community/test_get_activity_summary_by_bot_empty_when_no_file

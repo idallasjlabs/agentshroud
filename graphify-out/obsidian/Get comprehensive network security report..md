@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 71"
+community: "NetworkValidator"
 location: "L534"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/NetworkValidator
 ---
 
 # Get comprehensive network security report.
 
 ## Connections
-- [[.get_security_report()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_security_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/NetworkValidator

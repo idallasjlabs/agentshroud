@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mm.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 624"
-location: "L30"
+community: "Skill: UI Expert (UI)"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_624
+  - community/Skill_UI_Expert_UI
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_624
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

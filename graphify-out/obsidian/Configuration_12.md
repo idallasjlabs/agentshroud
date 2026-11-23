@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docker/config/openclaw/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 1003"
-location: "L267"
+community: "iCloud Services"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/iCloud_Services
 ---
 
 # Configuration
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[iCloud Services_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1003
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

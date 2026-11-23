@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 103"
+community: "TestWebProxySecurityIntegration"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[.setUp()]] - `rationale_for` [EXTRACTED]
+- [[dot-setUp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

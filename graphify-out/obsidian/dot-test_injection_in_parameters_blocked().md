@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "AgentShroud Security Value Proposition"
+community: "mcp_proxy.py"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/mcp_proxypy
 ---
 
 # .test_injection_in_parameters_blocked()
 
 ## Connections
-- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+- [[TestMCPProxyEndpoint]] - `method` [EXTRACTED]
 - [[Tool call with injection pattern in parameters should return 403.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_28]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/code #graphify/EXTRACTED #community/mcp_proxypy

@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: ""
 type: "code"
-community: "Community 8"
-location: "L183"
+community: "LogBuffer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/LogBuffer
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_134]] - `references` [EXTRACTED]
-- [[.analyze_tool_call()]] - `references` [EXTRACTED]
-- [[.get_global_stats()_1]] - `references` [EXTRACTED]
-- [[.get_session_stats()_1]] - `references` [EXTRACTED]
-- [[.sanitize_tool_params()]] - `references` [EXTRACTED]
-- [[.score_reversibility()]] - `references` [EXTRACTED]
+- [[dot-recent()]] - `references` [EXTRACTED]
+- [[dot-tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_8
+#graphify/code #graphify/EXTRACTED #community/LogBuffer

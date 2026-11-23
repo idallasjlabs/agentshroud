@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
+source_file: "docs/vault/00 - START HERE/System Overview.md"
 type: "document"
-community: "Community 1556"
-location: "L117"
+community: "AgentShroud — System Overview"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1556
+  - community/AgentShroud__System_Overview
 ---
 
 # Related Notes
 
 ## Connections
-- [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
+- [[AgentShroud — System Overview]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1556
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__System_Overview

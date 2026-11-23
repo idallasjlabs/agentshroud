@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Job details"
-location: "L200"
+community: "migrate-cve-registry-ghsa.py"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Job_details
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .confident()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Job_details
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "AgentShroud Consolidated Issues Report"
+community: "_age"
 location: "L574"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/_age
 ---
 
 # .test_critical_high_medium_branches()
@@ -15,4 +15,4 @@ tags:
 - [[TestVulnerabilityManagement]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/code #graphify/EXTRACTED #community/_age

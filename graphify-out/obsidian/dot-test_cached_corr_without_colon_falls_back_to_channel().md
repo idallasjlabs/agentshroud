@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "api.py (2)"
+community: "_make_proxy"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/_make_proxy
 ---
 
 # .test_cached_corr_without_colon_falls_back_to_channel()
@@ -15,6 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Correlation ID with no '' separator → outbound attributed to channel id.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

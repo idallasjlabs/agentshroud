@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ti.md"
+source_file: ".agents/agents/i-ux.md"
 type: "document"
-community: "Community 893"
-location: "L304"
+community: "Skill: UX Expert (UX)"
+location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_893
+  - community/Skill_UX_Expert_UX
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_893
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

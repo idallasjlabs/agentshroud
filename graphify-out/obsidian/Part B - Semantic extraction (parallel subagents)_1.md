@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 374"
+community: "What You Must Do When Invoked"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Part B - Semantic extraction (parallel subagents)
 
 ## Connections
-- [[Step 3 - Extract entities and relationships_6]] - `contains` [EXTRACTED]
+- [[Step 3 - Extract entities and relationships_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_374
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

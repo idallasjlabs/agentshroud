@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Enum"
+community: "soc/models.py"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/soc/modelspy
 ---
 
 # .test_construction()
@@ -15,4 +15,4 @@ tags:
 - [[TestWSEvent]] - `method` [EXTRACTED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

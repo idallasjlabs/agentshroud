@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "concept"
-community: "Community 684"
+community: "Per-agent API key scoping, redaction, leak detection, and rotation"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/Per-agent_API_key_scoping_redaction_leak_detection_and_rotation
 ---
 
 # Per-agent API key scoping, redaction, leak detection, and rotation
 
-## Connections
-- [[KeyVault]] - `rationale_for` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_684
+#graphify/concept #graphify/EXTRACTED #community/Per-agent_API_key_scoping_redaction_leak_detection_and_rotation

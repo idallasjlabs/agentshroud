@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".cursor/agents/i-mcpm.md"
 type: "document"
-community: "Community 745"
-location: "L8"
+community: "Available MCP Servers"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Available_MCP_Servers
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

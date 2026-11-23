@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "Community 1"
+community: "TestWorkspaceAccessPreserved"
 location: "L196"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/TestWorkspaceAccessPreserved
 ---
 
 # Agent can write to /tmp for temporary files.
 
 ## Connections
-- [[.test_tmp_write_allowed()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tmp_write_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/TestWorkspaceAccessPreserved

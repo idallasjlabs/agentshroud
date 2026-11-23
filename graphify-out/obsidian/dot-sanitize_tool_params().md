@@ -2,7 +2,7 @@
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
 community: "ToolChainAnalyzer"
-location: "L587"
+location: "L582"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,8 @@ tags:
 # .sanitize_tool_params()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[ParamScanResult]] - `references` [EXTRACTED]
+- [[Any_83]] - `references` [EXTRACTED]
+- [[ParamScanResult]] - `calls` [EXTRACTED]
 - [[Scan tool parameters for injection payloads and return sanitized copy.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 

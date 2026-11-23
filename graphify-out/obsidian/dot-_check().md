@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L237"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # ._check()
@@ -20,6 +20,6 @@ tags:
 - [[dot-check_write()]] - `calls` [EXTRACTED]
 - [[FileOperation]] - `calls` [EXTRACTED]
 - [[FileSandbox]] - `method` [EXTRACTED]
-- [[FileVerdict]] - `references` [EXTRACTED]
+- [[FileVerdict]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

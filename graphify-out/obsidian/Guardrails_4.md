@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-odev.md"
+source_file: ".github/agents/i-ab.agent.md"
 type: "document"
-community: "Community 821"
-location: "L365"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L232"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_821
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_821
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

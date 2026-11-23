@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
-location: "L65"
+community: "test_mfa_guard.py"
+location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()]] - `calls` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
+- [[MFAGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/tests/test_gmail_credential_retrieval.py"
+source_file: ""
 type: "code"
-community: "Community 598"
-location: "L19"
+community: "test_agent_cve_registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_598
+  - community/test_agent_cve_registrypy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_completed()]] - `references` [EXTRACTED]
+- [[_run_triage()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_598
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

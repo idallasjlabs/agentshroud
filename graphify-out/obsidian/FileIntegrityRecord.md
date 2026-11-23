@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "Community 16"
+community: "FileIntegrityRecord"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/FileIntegrityRecord
 ---
 
 # FileIntegrityRecord
 
 ## Connections
-- [[.from_dict()_8]] - `method` [EXTRACTED]
-- [[.scan_file()]] - `references` [EXTRACTED]
-- [[.to_dict()_10]] - `method` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `uses` [INFERRED]
-- [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
+- [[dot-from_dict()_2]] - `method` [EXTRACTED]
+- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_1]] - `method` [EXTRACTED]
 - [[Record of a file's integrity state.]] - `rationale_for` [EXTRACTED]
 - [[memory_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

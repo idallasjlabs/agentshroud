@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # .get_temp_files()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: ".github/agents/i-apollo.agent.md"
 type: "document"
-community: "Community 891"
-location: "L10"
+community: "Technical Specification"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

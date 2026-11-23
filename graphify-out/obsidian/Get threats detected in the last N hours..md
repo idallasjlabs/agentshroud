@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "MemoryLifecycleManager"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/MemoryLifecycleManager
 ---
 
 # Get threats detected in the last N hours.
 
 ## Connections
-- [[.get_recent_threats()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_recent_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleManager

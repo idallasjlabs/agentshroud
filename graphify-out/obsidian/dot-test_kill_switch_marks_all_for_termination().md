@@ -12,6 +12,6 @@ tags:
 # .test_kill_switch_marks_all_for_termination()
 
 ## Connections
-- [[TestKillSwitch]] - `method` [EXTRACTED]
+- [[TestKillSwitch_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

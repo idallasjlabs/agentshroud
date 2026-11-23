@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/browser.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 473"
-location: "L285"
+community: "Browser — Secure Browser Automation"
+location: "L283"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_473
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_8]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_473
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

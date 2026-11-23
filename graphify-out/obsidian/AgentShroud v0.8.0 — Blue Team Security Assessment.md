@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Community 414"
+community: "Findings"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_414
+  - community/Findings
 ---
 
 # AgentShroud v0.8.0 — Blue Team Security Assessment
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Findings]] - `contains` [EXTRACTED]
 - [[Remediation Plan]] - `contains` [EXTRACTED]
-- [[Summary_37]] - `contains` [EXTRACTED]
+- [[Summary_46]] - `contains` [EXTRACTED]
 - [[blue-team-assessment-v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_414
+#graphify/document #graphify/EXTRACTED #community/Findings

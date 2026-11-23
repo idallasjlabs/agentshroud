@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: ""
 type: "code"
-community: "Community 102"
-location: "L66"
+community: "jira_weekly_review.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/jira_weekly_reviewpy
 ---
 
 # datetime
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
-- [[wazuh_client.py]] - `imports_from` [EXTRACTED]
+- [[build_weekly_summary()]] - `references` [EXTRACTED]
+- [[jira_weekly_review.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

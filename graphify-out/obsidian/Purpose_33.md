@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-defense/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Community 2095"
-location: "L6"
+community: "mcp-proxy-wrapper.js"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2095
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2095
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

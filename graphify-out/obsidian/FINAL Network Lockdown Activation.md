@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 481"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
 location: "L228"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_481
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # FINAL: Network Lockdown Activation
@@ -16,7 +16,7 @@ tags:
 - [[Changes_5]] - `contains` [EXTRACTED]
 - [[Plan AgentShroud Security Hardening — Real Agent Containment]] - `contains` [EXTRACTED]
 - [[Pre-Flight Checklist]] - `contains` [EXTRACTED]
-- [[Verification_9]] - `contains` [EXTRACTED]
-- [[Verification_15]] - `contains` [EXTRACTED]
+- [[Verification_5]] - `contains` [EXTRACTED]
+- [[Verification_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_481
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

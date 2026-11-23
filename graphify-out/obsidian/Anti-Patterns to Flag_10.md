@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".opencode/agents/i-tdd.md"
 type: "document"
-community: "Community 744"
-location: "L98"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_744
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_744
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

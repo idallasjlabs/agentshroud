@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ab/SKILL.md"
 type: "document"
-community: "Community 1370"
+community: "Audit Branch (Merge Regression Detection)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1370
+  - community/Audit_Branch_Merge_Regression_Detection
 ---
 
 # Audit Branch (Merge Regression Detection)
@@ -14,4 +14,4 @@ tags:
 - [[GSDL-715 (Merge Regression Ticket)]] - `references` [EXTRACTED]
 - [[i-crpr — Production-Ready PR Skill]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1370
+#graphify/document #graphify/EXTRACTED #community/Audit_Branch_Merge_Regression_Detection

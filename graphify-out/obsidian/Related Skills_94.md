@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-vulcan/README.md"
+source_file: ".omp/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 90"
-location: "L14"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L348"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

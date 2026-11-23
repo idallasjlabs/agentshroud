@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "skills/custom/browser-fetch/SKILL.md"
 type: "document"
-community: "Community 803"
-location: "L10"
+community: "Browser Fetch Skill"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/Browser_Fetch_Skill
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill

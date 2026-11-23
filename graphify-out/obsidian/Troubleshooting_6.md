@@ -1,21 +1,22 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 308"
-location: "L247"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L317"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_308
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_1]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_1]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_1]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_1]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded]] - `contains` [EXTRACTED]
+- [[URL not in allowlist]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_308
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

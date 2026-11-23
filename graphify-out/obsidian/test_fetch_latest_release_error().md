@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 19"
+community: "test_soc_router_coverage.py"
 location: "L2107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/test_soc_router_coveragepy
 ---
 
 # test_fetch_latest_release_error()
 
 ## Connections
+- [[_fetch_latest_release()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

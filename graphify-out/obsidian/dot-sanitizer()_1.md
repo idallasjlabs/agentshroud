@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L88"
+community: "PIIConfig"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/PIIConfig
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [INFERRED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[TestPIIDetection_2]] - `method` [EXTRACTED]
+- [[fixture_124]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

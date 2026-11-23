@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Community 775"
+community: "mcp_config.py"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/mcp_configpy
 ---
 
 # PermissionLevel comparison operators
 
 ## Connections
-- [[Function Details_9]] - `contains` [EXTRACTED]
+- [[Function Details_32]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

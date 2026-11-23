@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Community 224"
+community: "TestMultilingualInjection"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_224
+  - community/TestMultilingualInjection
 ---
 
 # Test that multilingual patterns have appropriate weights.
 
 ## Connections
-- [[.test_pattern_priority()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_pattern_priority()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_224
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

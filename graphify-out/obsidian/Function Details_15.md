@@ -1,22 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Community 720"
-location: "L34"
+community: "mcp_inspector.py"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_720
+  - community/mcp_inspectorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[URLAnalyzer._check_base64(parsed, result)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_private_ip(ip_str)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer._is_ssrf(hostname)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze(url)]] - `contains` [EXTRACTED]
-- [[URLAnalyzer.analyze_and_pin(url)]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[MCPInspector._redact_pii(value)]] - `contains` [EXTRACTED]
+- [[MCPInspector._scan_text(text, path, findings, ...)]] - `contains` [EXTRACTED]
+- [[MCPInspector._scan_value(value, path, findings, ...)]] - `contains` [EXTRACTED]
+- [[MCPInspector._should_block(findings)]] - `contains` [EXTRACTED]
+- [[MCPInspector.inspect_tool_call(tool_name, params, check_injection, check_pii, check_encoding, check_sensitive)]] - `contains` [EXTRACTED]
+- [[MCPInspector.inspect_tool_result(tool_name, result_content, check_pii, check_encoding)]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_720
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

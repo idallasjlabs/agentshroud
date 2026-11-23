@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.13
 members: 20
 ---
 
 # graphify Skill
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 20 nodes
 
 ## Members
@@ -39,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Prompt Hermes Competitive Intelligence Email (AMPM)]]
+- 1 edge to [[_COMMUNITY_Hermes Dev Workflow (HDEV) Skill]]
 
 ## Top bridge nodes
 - [[graphify Skill]] - degree 15, connects to 1 community

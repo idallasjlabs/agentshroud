@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "asyncio"
 location: "L253"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/asyncio
 ---
 
 # .test_context_guard_error_fails_closed()
 
 ## Connections
 - [[TestContextGuardInPipeline]] - `method` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

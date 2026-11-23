@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 634"
+community: "Mode A — Single task"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_634
+  - community/Mode_A__Single_task
 ---
 
 # Tools you have for this workflow
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_634
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "api.py"
 location: "L939"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # ws_updates()
 
 ## Connections
-- [[WebSocket_7]] - `references` [EXTRACTED]
 - [[WebSocket for real-time update progress. Requires scoped WS token.]] - `rationale_for` [EXTRACTED]
 - [[_validate_mgmt_ws_token()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[websocket_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/apipy

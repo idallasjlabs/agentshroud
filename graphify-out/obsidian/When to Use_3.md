@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/tmux/SKILL.md"
+source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Community 576"
-location: "L12"
+community: "GitHub Skill"
+location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_576
+  - community/GitHub_Skill
 ---
 
 # When to Use
 
 ## Connections
-- [[tmux Session Control]] - `contains` [EXTRACTED]
+- [[GitHub Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_576
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

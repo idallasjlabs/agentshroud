@@ -1,108 +1,131 @@
 ---
 type: community
-cohesion: 0.05
-members: 93
+members: 118
 ---
 
 # api.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 93 nodes
+**Members:** 118 nodes
 
 ## Members
-- [[dot-__init__()_150]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_message_size()]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_rate_limit()]] - code - gateway/security/a2a_governance.py
-- [[dot-_check_task_concurrency()]] - code - gateway/security/a2a_governance.py
-- [[dot-_finalize()]] - code - gateway/security/a2a_governance.py
-- [[dot-_process()]] - code - gateway/security/a2a_governance.py
-- [[dot-_sanitize_message()]] - code - gateway/security/a2a_governance.py
-- [[dot-complete_task()]] - code - gateway/security/a2a_governance.py
-- [[dot-fingerprint()]] - code - gateway/security/a2a_governance.py
-- [[dot-get_events()_2]] - code - gateway/security/a2a_governance.py
-- [[dot-get_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-get_summary()_1]] - code - gateway/security/a2a_governance.py
-- [[dot-is_trusted()]] - code - gateway/security/a2a_governance.py
-- [[dot-process_inbound()_7]] - code - gateway/security/a2a_governance.py
-- [[dot-process_outbound()_4]] - code - gateway/security/a2a_governance.py
-- [[dot-register_peer()_1]] - code - gateway/security/a2a_governance.py
-- [[dot-test_api_key_sanitized()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_clean_payload_not_sanitized()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_complete_task_frees_slot()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_disabled_allows_all()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_fingerprint_deterministic()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_fingerprint_differs_for_different_payloads()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_get_events_filtered()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_normal_size_allowed()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_outbound_to_trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_outbound_to_unknown_quarantined()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_oversized_denied()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_peer_stats_updated()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_rate_limit_exceeded()_1]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_register_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_ssn_sanitized()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_summary()_1]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_task_limit_exceeded()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_task_within_limit()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_trust_clamped()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_trusted_peer_allowed()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_unknown_peer_quarantined()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_unregister_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_untrusted_peer_allowed_in_monitor()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_untrusted_peer_denied()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_update_trust()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-test_within_rate_limit()]] - code - gateway/tests/test_a2a_governance.py
-- [[dot-to_dict()_9]] - code - gateway/security/a2a_governance.py
-- [[dot-unregister_peer()]] - code - gateway/security/a2a_governance.py
-- [[dot-update_peer_trust()]] - code - gateway/security/a2a_governance.py
-- [[A2A protocol message types (based on A2A v1.0 spec).]] - rationale - gateway/security/a2a_governance.py
-- [[A2ADecision]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceConfig]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceEvent]] - code - gateway/security/a2a_governance.py
-- [[A2AGovernanceProxy]] - code - gateway/security/a2a_governance.py
-- [[A2AMessage]] - code - gateway/security/a2a_governance.py
-- [[A2AMessageType]] - code - gateway/security/a2a_governance.py
-- [[A2APeer]] - code - gateway/security/a2a_governance.py
-- [[An A2A protocol message passing through the governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Apply final decision and log governance event.]] - rationale - gateway/security/a2a_governance.py
-- [[Audit event for A2A governance decisions.]] - rationale - gateway/security/a2a_governance.py
-- [[Check concurrent task limit for task_request messages.]] - rationale - gateway/security/a2a_governance.py
-- [[Check message payload size.]] - rationale - gateway/security/a2a_governance.py
-- [[Check per-peer rate limit.]] - rationale - gateway/security/a2a_governance.py
-- [[Configuration for the A2A governance proxy.]] - rationale - gateway/security/a2a_governance.py
-- [[Content hash for deduplication and audit.]] - rationale - gateway/security/a2a_governance.py
-- [[Core message processing pipeline.]] - rationale - gateway/security/a2a_governance.py
-- [[Get governance proxy summary.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance decision for an A2A message.]] - rationale - gateway/security/a2a_governance.py
-- [[Governance proxy for Agent-to-Agent communication.      Sits between local agent]] - rationale - gateway/security/a2a_governance.py
-- [[Look up a registered peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Mark a delegated task as complete (decrements active task counter).]] - rationale - gateway/security/a2a_governance.py
-- [[Register a known A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
-- [[Registered A2A peer agent.]] - rationale - gateway/security/a2a_governance.py
-- [[Remove a peer from the registry.]] - rationale - gateway/security/a2a_governance.py
-- [[Retrieve governance events with optional filters.]] - rationale - gateway/security/a2a_governance.py
-- [[Sanitize PII from A2A message payload. Returns list of sanitizations applied.]] - rationale - gateway/security/a2a_governance.py
-- [[TestDisabledProxy]] - code - gateway/tests/test_a2a_governance.py
-- [[TestInboundProcessing]] - code - gateway/tests/test_a2a_governance.py
-- [[TestMessageFingerprint]] - code - gateway/tests/test_a2a_governance.py
-- [[TestMessageSize]] - code - gateway/tests/test_a2a_governance.py
-- [[TestOutboundProcessing]] - code - gateway/tests/test_a2a_governance.py
-- [[TestPIISanitization]] - code - gateway/tests/test_a2a_governance.py
-- [[TestPeerManagement]] - code - gateway/tests/test_a2a_governance.py
-- [[TestRateLimiting_2]] - code - gateway/tests/test_a2a_governance.py
-- [[TestReporting]] - code - gateway/tests/test_a2a_governance.py
-- [[TestTaskConcurrency]] - code - gateway/tests/test_a2a_governance.py
-- [[Update a peer's trust score (called by TrustManager integration).]] - rationale - gateway/security/a2a_governance.py
-- [[Validate and govern an inbound A2A message from a remote peer.]] - rationale - gateway/security/a2a_governance.py
-- [[Validate that the peer is registered and trusted.]] - rationale - gateway/security/a2a_governance.py
-- [[_msg()]] - code - gateway/tests/test_a2a_governance.py
-- [[a2a_governance.py]] - code - gateway/security/a2a_governance.py
-- [[monitor_proxy()]] - code - gateway/tests/test_a2a_governance.py
-- [[proxy()_3]] - code - gateway/tests/test_a2a_governance.py
-- [[test_a2a_governance.py]] - code - gateway/tests/test_a2a_governance.py
-- [[trusted_peer()]] - code - gateway/tests/test_a2a_governance.py
-- [[untrusted_peer()]] - code - gateway/tests/test_a2a_governance.py
+- [[dot-effective_rootless()]] - code - gateway/runtime/config.py
+- [[dot-from_dict()_7]] - code - gateway/runtime/config.py
+- [[dot-from_env()_1]] - code - gateway/runtime/config.py
+- [[dot-test_effective_rootless_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_effective_rootless_override()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_effective_rootless_podman()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_from_dict()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_from_env_defaults()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_from_env_set()]] - code - gateway/tests/test_runtime_engines.py
+- [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
+- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
+- [[Aggregate security report.]] - rationale - gateway/web/api.py
+- [[BaseModel_8]] - code
+- [[Build a CitationVerifier wired to the production (httpx) fetcher. Isolated in a…]] - rationale - gateway/web/api.py
+- [[Check for AgentShroud updates from GitHub.]] - rationale - gateway/web/api.py
+- [[Check for OpenClaw updates (backward-compat alias for updatesbotopenclaw).]] - rationale - gateway/web/api.py
+- [[Check for updates for the named bot container.]] - rationale - gateway/web/api.py
+- [[Compute valid service names from config + sidecars at call-time. Uses each…]] - rationale - gateway/web/api.py
+- [[ConfigUpdate]] - code - gateway/web/api.py
+- [[Configuration for container runtime selection and behavior. Loaded from…]] - rationale - gateway/runtime/config.py
+- [[Create a short-lived WebSocket-only token for management endpoints.]] - rationale - gateway/web/api.py
+- [[Emergency kill switch freeze, shutdown, or disconnect.]] - rationale - gateway/web/api.py
+- [[Export current configuration.]] - rationale - gateway/web/api.py
+- [[Full system status including all services and runtime info.]] - rationale - gateway/web/api.py
+- [[Get current configuration.]] - rationale - gateway/web/api.py
+- [[Get the active container engine.]] - rationale - gateway/web/api.py
+- [[Import configuration from uploaded data.]] - rationale - gateway/web/api.py
+- [[IntelDraftEntry]] - code - gateway/web/api.py
+- [[IntelDraftRequest]] - code - gateway/web/api.py
+- [[KillSwitchAction]] - code - gateway/web/api.py
+- [[Load configuration from environment variables.]] - rationale - gateway/runtime/config.py
+- [[Load from a config dictionary (e.g. from YAML).]] - rationale - gateway/runtime/config.py
+- [[One unverified competitor claim + its candidate source URLs.]] - rationale - gateway/web/api.py
+- [[Perform a kill switch action against the container engine. Shared by ``POST…]] - rationale - gateway/web/api.py
+- [[Pull latest AgentShroud, test, rebuild, restart. Auto-rollback on failure.]] - rationale - gateway/web/api.py
+- [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.…]] - rationale - gateway/web/api.py
+- [[Rebuild containers with latest images.]] - rationale - gateway/web/api.py
+- [[Resolve rootless setting based on runtime.]] - rationale - gateway/runtime/config.py
+- [[Restart a specific service container.]] - rationale - gateway/web/api.py
+- [[Retrieve container logs with optional filtering.]] - rationale - gateway/web/api.py
+- [[Return a comparison dict {feature_name {runtime supported}}.]] - rationale - gateway/runtime/security.py
+- [[Return an IntelReportStore pointed at the configured data directory.]] - rationale - gateway/web/api.py
+- [[Return features NOT available for a given runtime.]] - rationale - gateway/runtime/security.py
+- [[Return real container names for all configured bots (e.g. 'agentshroud-…]] - rationale - gateway/web/api.py
+- [[Return recent competitive-intelligence reports in reverse-chronological order.…]] - rationale - gateway/web/api.py
+- [[Return the current AGENTSHROUD_MODE.]] - rationale - gateway/web/api.py
+- [[Return the latest validated competitive-intelligence report. Auth-gated (owner…]] - rationale - gateway/web/api.py
+- [[Return update history from audit log.]] - rationale - gateway/web/api.py
+- [[Return warning messages for missing security features.]] - rationale - gateway/runtime/security.py
+- [[Revert to previous git commit and rebuild.]] - rationale - gateway/web/api.py
+- [[Rollback OpenClaw (backward-compat alias for updatesbotopenclawrollback).]] - rationale - gateway/web/api.py
+- [[Rollback a named bot container to the previous image tag.]] - rationale - gateway/web/api.py
+- [[Runtime configuration for multi-engine container support.]] - rationale - gateway/runtime/config.py
+- [[RuntimeConfig]] - code - gateway/runtime/config.py
+- [[SecurityFeature]] - code - gateway/runtime/security.py
+- [[Start a specific service container.]] - rationale - gateway/web/api.py
+- [[Stop a specific service container.]] - rationale - gateway/web/api.py
+- [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
+- [[Update configuration (writes YAML and optionally restarts).]] - rationale - gateway/web/api.py
+- [[UpdateRequest]] - code - gateway/web/api.py
+- [[Upgrade OpenClaw (backward-compat alias for updatesbotopenclawupgrade).]] - rationale - gateway/web/api.py
+- [[Upgrade a named bot container.]] - rationale - gateway/web/api.py
+- [[Validate a management WebSocket token (single-use, time-limited).]] - rationale - gateway/web/api.py
+- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
+- [[Validate service name against allowlist to prevent injection.]] - rationale - gateway/web/api.py
+- [[Verify and persist a draft competitive-intel report (SCRUM-75). Each draft…]] - rationale - gateway/web/api.py
+- [[WebSocket endpoint for real-time log streaming. Requires scoped WS token.]] - rationale - gateway/web/api.py
+- [[WebSocket for real-time update progress. Requires scoped WS token.]] - rationale - gateway/web/api.py
+- [[_bot_service_names()]] - code - gateway/web/api.py
+- [[_bot_service_names() must use each bot's real container name, not a hardcoded…]] - rationale - gateway/tests/test_config.py
+- [[_create_mgmt_ws_token()]] - code - gateway/web/api.py
+- [[_get_engine()]] - code - gateway/web/api.py
+- [[_intel_store()]] - code - gateway/web/api.py
+- [[_intel_verifier()]] - code - gateway/web/api.py
+- [[_valid_services()]] - code - gateway/web/api.py
+- [[_validate_mgmt_ws_token()]] - code - gateway/web/api.py
+- [[_validate_runtime()]] - code - gateway/runtime/security.py
+- [[_validate_service_name()]] - code - gateway/web/api.py
+- [[api.py_2]] - code - gateway/web/api.py
+- [[check_agentshroud_updates()]] - code - gateway/web/api.py
+- [[check_bot_updates()]] - code - gateway/web/api.py
+- [[check_openclaw_updates()]] - code - gateway/web/api.py
+- [[execute_killswitch()]] - code - gateway/web/api.py
+- [[export_config()]] - code - gateway/web/api.py
+- [[get_2]] - code
+- [[get_competitive_intel()]] - code - gateway/web/api.py
+- [[get_competitive_intel_history()]] - code - gateway/web/api.py
+- [[get_config()]] - code - gateway/web/api.py
+- [[get_logs()_1]] - code - gateway/web/api.py
+- [[get_missing_features()]] - code - gateway/runtime/security.py
+- [[get_mode()]] - code - gateway/web/api.py
+- [[get_security_comparison()]] - code - gateway/runtime/security.py
+- [[get_status()]] - code - gateway/web/api.py
+- [[import_config()]] - code - gateway/web/api.py
+- [[killswitch()]] - code - gateway/web/api.py
+- [[post_5]] - code
+- [[rebuild()]] - code - gateway/web/api.py
+- [[restart_service()_2]] - code - gateway/web/api.py
+- [[rollback_agentshroud()]] - code - gateway/web/api.py
+- [[rollback_bot()]] - code - gateway/web/api.py
+- [[rollback_openclaw()]] - code - gateway/web/api.py
+- [[runtimeconfig.py]] - code - gateway/runtime/config.py
+- [[security.py_2]] - code - gateway/runtime/security.py
+- [[security_report()]] - code - gateway/web/api.py
+- [[skills_reload()]] - code - gateway/web/api.py
+- [[start_service()_2]] - code - gateway/web/api.py
+- [[stop_service()_2]] - code - gateway/web/api.py
+- [[submit_competitive_intel()]] - code - gateway/web/api.py
+- [[test_bot_service_names_uses_resolved_container_name()]] - code - gateway/tests/test_config.py
+- [[update_config()]] - code - gateway/web/api.py
+- [[update_history()]] - code - gateway/web/api.py
+- [[upgrade_agentshroud()]] - code - gateway/web/api.py
+- [[upgrade_bot()_1]] - code - gateway/web/api.py
+- [[upgrade_openclaw()]] - code - gateway/web/api.py
+- [[warn_missing_features()]] - code - gateway/runtime/security.py
+- [[websocket_4]] - code
+- [[ws_logs()]] - code - gateway/web/api.py
+- [[ws_updates()]] - code - gateway/web/api.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -112,14 +135,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_SubagentGovernance]]
-- 1 edge to [[_COMMUNITY__AGENT_CVE_REGISTRIES]]
+- 13 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 12 edges to [[_COMMUNITY_test_web_api_coverage.py]]
+- 6 edges to [[_COMMUNITY_load_config]]
+- 5 edges to [[_COMMUNITY_DraftEntry]]
+- 5 edges to [[_COMMUNITY_patch]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY__engine]]
+- 4 edges to [[_COMMUNITY__skills_reload_impl]]
+- 3 edges to [[_COMMUNITY_dot-from_source]]
+- 3 edges to [[_COMMUNITY_installer.py]]
+- 3 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 3 edges to [[_COMMUNITY_fastapi]]
+- 2 edges to [[_COMMUNITY_IntelReportStore]]
+- 2 edges to [[_COMMUNITY_make_httpx_fetcher]]
+- 1 edge to [[_COMMUNITY_SkillGuard]]
+- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_test_skill_guard.py]]
+- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[A2ADecision]] - degree 26, connects to 2 communities
-- [[A2AGovernanceProxy]] - degree 43, connects to 1 community
-- [[A2AMessageType]] - degree 15, connects to 1 community
-- [[a2a_governance.py]] - degree 8, connects to 1 community
-- [[Retrieve governance events with optional filters.]] - degree 2, connects to 1 community
+- [[api.py_2]] - degree 82, connects to 19 communities
+- [[get_security_comparison()]] - degree 9, connects to 2 communities
+- [[security.py_2]] - degree 9, connects to 2 communities
+- [[UpdateRequest]] - degree 8, connects to 2 communities
+- [[_bot_service_names()]] - degree 8, connects to 2 communities

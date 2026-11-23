@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 177"
-location: "L6"
+community: "sidecar.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/sidecarpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

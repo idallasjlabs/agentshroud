@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 205"
+community: "DataExfilVolumeGuard"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/DataExfilVolumeGuard
 ---
 
 # test_pipeline_fail_closed_for_non_owner_on_error()
 
 ## Connections
 - [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - `rationale_for` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
-- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
+- [[asyncio_44]] - `references` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_205
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 869"
+community: "sunday-scan.sh"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_869
+  - community/sunday-scansh
 ---
 
 # _sunday_trivy_db_fresh()
@@ -15,4 +15,4 @@ tags:
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
 - [[sunday_refresh_trivy_db()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_869
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

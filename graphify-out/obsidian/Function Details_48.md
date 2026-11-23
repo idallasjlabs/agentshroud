@@ -1,25 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Community 569"
-location: "L38"
+community: "encrypted_store.py"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/encrypted_storepy
 ---
 
 # Function Details
 
 ## Connections
-- [[SubagentMonitor.check_tool_usage(session_id, agent_id, tool_name, required_trust)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.deregister(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_active(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_audit_log(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.get_flagged_events(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.kill_agent(session_id, agent_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.kill_all(session_id)]] - `contains` [EXTRACTED]
-- [[SubagentMonitor.register_spawn(session_id, agent_id, parent_id, parent_trust)]] - `contains` [EXTRACTED]
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[EncryptedStore.__init__(master_secret, secret_path, iterations, key_id)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.decrypt(blob)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.encrypt(data)]] - `contains` [EXTRACTED]
+- [[EncryptedStore.rotate(blobs, new_secret, new_key_id)]] - `contains` [EXTRACTED]
+- [[_secure_zero(buffer)]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_569
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

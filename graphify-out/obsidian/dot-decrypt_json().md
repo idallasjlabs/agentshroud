@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "PortManager"
+community: "EncryptedStore"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/EncryptedStore
 ---
 
 # .decrypt_json()
@@ -16,4 +16,4 @@ tags:
 - [[Decrypt and return as parsed JSON dict.]] - `rationale_for` [EXTRACTED]
 - [[EncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

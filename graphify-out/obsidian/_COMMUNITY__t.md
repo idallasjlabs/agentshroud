@@ -1,49 +1,51 @@
 ---
 type: community
-cohesion: 0.07
-members: 34
+members: 38
 ---
 
 # _t
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 34 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_101]] - code - gateway/security/tool_result_injection.py
-- [[dot-guard()_4]] - code - gateway/tests/test_context_guard.py
-- [[dot-scan_tool_result()_2]] - code - gateway/security/tool_result_injection.py
-- [[dot-test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[CVE-2026-22708 — AI Agent Container Escape via Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[CVE-2026-30741 — RCE via Request-Side Prompt Injection]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Check if message should be allowed, with detailed findings.      Args         t]] - rationale - gateway/security/context_guard.py
-- [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
-- [[Initialize the scanner with optional custom rules.          Args             cu]] - rationale - gateway/security/tool_result_injection.py
-- [[InjectionResult]] - code - gateway/security/tool_result_injection.py
-- [[InjectionRule]] - code - gateway/security/tool_result_injection.py
-- [[Result from tool result injection scan.]] - rationale - gateway/security/tool_result_injection.py
-- [[Rule for detecting injection patterns in tool results.]] - rationale - gateway/security/tool_result_injection.py
-- [[Scan tool result content for injection attempts.          Args             tool]] - rationale - gateway/security/tool_result_injection.py
-- [[Strip potentially malicious markdown from tool results.      Removes     - Mark]] - rationale - gateway/security/input_normalizer.py
-- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
-- [[check_message()]] - code - gateway/security/context_guard.py
-- [[context_guard.py]] - code - gateway/security/context_guard.py
-- [[get_context_guard()]] - code - gateway/security/context_guard.py
-- [[input_normalizer.py]] - code - gateway/security/input_normalizer.py
-- [[strip_markdown_exfil()]] - code - gateway/security/input_normalizer.py
-- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
-- [[tool_result_injection.py]] - code - gateway/security/tool_result_injection.py
+- [[dot-test_apply_writes_registry_and_gap()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_classification_is_deterministic()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_dry_run_writes_nothing()_1]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gap_report_reflects_full_registry_not_just_this_runs_delta()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gap_report_renders_and_lists_gaps()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gaps_are_honest_not_mitigated_or_under_review()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_gaps_include_partially_mitigated()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_multiline_parenthesised_value_consumed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_not_source_fixed_newer()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_parse_non_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_parse_none_and_empty()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_parse_numeric()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_priority_rce_before_generic_injection()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_representative_titles()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_running_version_matches_pinned_openclaw_version()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_source_fixed_equal()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_source_fixed_older()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_summary_counts_sum_to_total()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_does_not_read_hermes()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_full_covers_every_entry_regardless_of_status()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_full_is_a_pure_report_view_not_a_mutation()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_triage_agent_openclaw_all_under_review_processed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unknown_agent_errors()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unmatched_is_unknown()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unparseable_is_not_source_fixed()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[dot-test_unterminated_field_returns_end()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Regression guard for the 2026-07-29 staleness incident. RUNNING_VERSION was…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[TestClassify]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestConsumeFieldEdge]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestDriverIsolation]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestMain_1]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[TestVersion]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[Tests for scriptstriage-cve-mitigations.py — Phase 2 mitigation-triage engine.…]] - rationale - gateway/tests/test_triage_cve_mitigations.py
+- [[_startup_scanner()]] - code - gateway/ingest_api/lifespan.py
+- [[_store_result()_1]] - code - gateway/ingest_api/lifespan.py
+- [[_t()]] - code - gateway/tests/test_triage_cve_mitigations.py
+- [[parametrize_16]] - code
+- [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -53,23 +55,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_ContextGuard]]
-- 5 edges to [[_COMMUNITY_PromptGuard]]
-- 4 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 3 edges to [[_COMMUNITY_MultiTurnTracker]]
-- 3 edges to [[_COMMUNITY_ProxyAction]]
-- 3 edges to [[_COMMUNITY_Any]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
-- 1 edge to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 17 edges to [[_COMMUNITY__entry]]
+- 6 edges to [[_COMMUNITY_dot-_results]]
+- 2 edges to [[_COMMUNITY_TestDefenseLayerVocabulary]]
+- 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_daily_cve_report.py]]
 
 ## Top bridge nodes
-- [[tool_result_injection.py]] - degree 11, connects to 6 communities
-- [[context_guard.py]] - degree 9, connects to 4 communities
-- [[dot-scan_tool_result()_2]] - degree 7, connects to 3 communities
-- [[input_normalizer.py]] - degree 4, connects to 3 communities
-- [[TestCheckMessage]] - degree 9, connects to 2 communities
+- [[_t()]] - degree 46, connects to 4 communities
+- [[test_triage_cve_mitigations.py]] - degree 13, connects to 4 communities
+- [[_startup_scanner()]] - degree 3, connects to 1 community
+- [[dot-test_gaps_include_partially_mitigated()]] - degree 3, connects to 1 community
+- [[dot-test_apply_writes_registry_and_gap()]] - degree 3, connects to 1 community

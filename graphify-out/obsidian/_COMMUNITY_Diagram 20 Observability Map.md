@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Diagram 20: Observability Map
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Gemini Semantic Extraction Backend]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Diagram 20 Observability Map]] - image - docs/diagrams/images/diagram-20-observability-map.svg
 
 ## Live Query (requires Dataview plugin)
 

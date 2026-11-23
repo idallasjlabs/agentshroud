@@ -1,29 +1,18 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
-type: "code"
-community: "Community 707"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+type: "document"
+community: "auth.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/authpy
 ---
 
-# auth.py
+# auth.py.md
 
 ## Connections
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
-- [[README_127]] - `references` [EXTRACTED]
-- [[RateLimiter]] - `contains` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
-- [[approval.py]] - `imports_from` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[create_auth_dependency()]] - `contains` [EXTRACTED]
-- [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[get_auth_dependency()]] - `contains` [EXTRACTED]
-- [[health.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
-- [[verify_token()]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/authpy

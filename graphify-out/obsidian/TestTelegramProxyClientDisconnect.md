@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 44"
+community: "asyncio"
 location: "L393"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_44
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # TestTelegramProxyClientDisconnect
 
 ## Connections
-- [[.test_client_disconnect_returns_499()]] - `method` [EXTRACTED]
+- [[dot-test_client_disconnect_returns_499()]] - `method` [EXTRACTED]
 - [[ClientDisconnect mid-body-read must not crash the gateway process.]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[SSHHostConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/asyncio

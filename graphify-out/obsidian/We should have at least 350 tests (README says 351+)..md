@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Community 130"
+community: "MiddlewareManager"
 location: "L311"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/MiddlewareManager
 ---
 
 # We should have at least 350 tests (README says 351+).
 
 ## Connections
-- [[.test_actual_test_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_actual_test_count_meets_minimum()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_130
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

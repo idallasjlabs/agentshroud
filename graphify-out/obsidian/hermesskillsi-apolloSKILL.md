@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-apollo/SKILL.md"
 type: "document"
-community: "SSH Capability Architecture Document"
+community: "Technical Specification"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Capability_Architecture_Document
+  - community/Technical_Specification
 ---
 
 # hermes/skills/i-apollo/SKILL.md
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

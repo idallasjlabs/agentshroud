@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md"
-location: "L1923"
+community: "TestStartupScannerKeying"
+location: "L322"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd
+  - graphify/INFERRED
+  - community/TestStartupScannerKeying
 ---
 
 # _store_result()
 
 ## Connections
-- [[_startup_scanner()]] - `contains` [EXTRACTED]
+- [[dot-_make_store_result_fn()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd
+#graphify/code #graphify/INFERRED #community/TestStartupScannerKeying

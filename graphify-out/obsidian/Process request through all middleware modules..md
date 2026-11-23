@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 31"
+community: "MiddlewareManager"
 location: "L501"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/MiddlewareManager
 ---
 
 # Process request through all middleware modules.
 
 ## Connections
-- [[.process_request()]] - `rationale_for` [EXTRACTED]
+- [[dot-process_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

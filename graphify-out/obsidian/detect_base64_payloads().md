@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "Community 154"
+community: "PromptGuard"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/PromptGuard
 ---
 
 # detect_base64_payloads()
 
 ## Connections
-- [[._check_encoded_content()]] - `calls` [EXTRACTED]
-- [[.scan()_4]] - `calls` [EXTRACTED]
-- [[Detect potential base64-encoded payloads in text.     Returns list of decoded st]] - `rationale_for` [EXTRACTED]
-- [[input_normalizer.py]] - `contains` [EXTRACTED]
-- [[prompt_guard.py]] - `imports` [EXTRACTED]
+- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[Detect potential base64-encoded payloads in text. Returns list of decoded…]] - `rationale_for` [EXTRACTED]
+- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

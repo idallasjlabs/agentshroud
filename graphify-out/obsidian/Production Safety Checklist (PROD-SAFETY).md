@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "Community 177"
+community: "Quality Assurance (SKILL)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Quality_Assurance_SKILL
 ---
 
 # Production Safety Checklist (PROD-SAFETY)
 
 ## Connections
-- [[Purpose_21]] - `contains` [EXTRACTED]
-- [[README_21]] - `contains` [EXTRACTED]
-- [[Related Skills_27]] - `contains` [EXTRACTED]
-- [[Usage_27]] - `contains` [EXTRACTED]
+- [[Purpose_67]] - `contains` [EXTRACTED]
+- [[Related Skills_20]] - `contains` [EXTRACTED]
+- [[Usage_22]] - `contains` [EXTRACTED]
+- [[hermesskillsi-psREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

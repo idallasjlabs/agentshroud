@@ -1,24 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: ".agents/skills/socrates/README.md"
 type: "document"
-community: "Community 213"
-location: "L274"
+community: "Socrates — Dialogue Architect"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Usage
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
-- [[Check Status_1]] - `contains` [EXTRACTED]
-- [[Hermes  HCI]] - `contains` [EXTRACTED]
-- [[Port Reference]] - `contains` [EXTRACTED]
-- [[Start the Stack]] - `contains` [EXTRACTED]
-- [[Stop the Stack_1]] - `contains` [EXTRACTED]
-- [[Test Chat]] - `contains` [EXTRACTED]
-- [[View Logs]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 243"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
 location: "L412"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Security Notes
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Current Security Posture]] - `contains` [EXTRACTED]
 - [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[Recommendations_2]] - `contains` [EXTRACTED]
+- [[Recommendations_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

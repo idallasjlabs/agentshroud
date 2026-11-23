@@ -1,35 +1,24 @@
 ---
 type: community
-cohesion: 0.10
-members: 20
+members: 11
 ---
 
 # Dockerfile — Bot (OpenClaw)
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 20 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[dot-agentsskillsi-qaSKILL]] - document - .agents/skills/i-qa/SKILL.md
-- [[A. AWS Glue Jobs]] - document - .agents/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions]] - document - .agents/skills/i-qa/SKILL.md
-- [[C. AWS Athena]] - document - .agents/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)]] - document - .agents/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)]] - document - .agents/skills/i-qa/SKILL.md
-- [[F. IAM Policies]] - document - .agents/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network]] - document - .agents/skills/i-qa/SKILL.md
-- [[General Rules]] - document - .agents/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data]] - document - .agents/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist]] - document - .agents/skills/i-qa/SKILL.md
-- [[Objective]] - document - .agents/skills/i-qa/SKILL.md
-- [[Output Format_11]] - document - .agents/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]] - document - .agents/skills/i-qa/SKILL.md
-- [[Role_43]] - document - .agents/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)]] - document - .agents/skills/i-qa/SKILL.md
-- [[Testing Hierarchy]] - document - .agents/skills/i-qa/SKILL.md
+- [[Build Process]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Config Defaults (Baked In)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Directory Structure_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile — Bot (OpenClaw)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Dockerfile.bot]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Image Labels (OCI)_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Pre-installed Tools_1]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Related Notes_22]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Scripts Copied to `usrlocalbin`]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[Security Patches Applied at Build Time]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
+- [[TODO (from source)]] - document - docs/vault/03 - Configuration/Dockerfile.bot.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,7 +28,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[Skill Quality Assurance (QA)]] - degree 7, connects to 1 community
+- [[Dockerfile.bot]] - degree 2, connects to 1 community

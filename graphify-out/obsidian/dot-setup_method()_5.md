@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "AgentShroud Security Architecture"
-location: "L59"
+community: "EncryptedStore"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/EncryptedStore
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestIsBlocked]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

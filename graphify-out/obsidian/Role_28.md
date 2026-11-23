@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-sec.md"
+source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 1413"
-location: "L10"
+community: "Output Sections (ALL required)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1413
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1413
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

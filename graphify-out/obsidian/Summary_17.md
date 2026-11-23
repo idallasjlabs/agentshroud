@@ -1,17 +1,18 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Community 2406"
-location: "L915"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2406
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Summary
 
 ## Connections
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Enforcement Audit Results]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 — Enforcement Audit Results]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2406
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

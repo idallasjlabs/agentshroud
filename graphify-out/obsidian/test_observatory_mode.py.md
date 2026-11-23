@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 92"
+community: "test_web_api_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/test_web_api_coveragepy
 ---
 
 # test_observatory_mode.py
@@ -17,6 +17,7 @@ tags:
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[TDD tests for D1 Observatory Mode apimode endpoint (v0.8.0). Tests 1. GET…]] - `rationale_for` [EXTRACTED]
 - [[TestAutoRevert]] - `contains` [EXTRACTED]
 - [[TestCriticalLogging]] - `contains` [EXTRACTED]
 - [[TestGetMode]] - `contains` [EXTRACTED]
@@ -26,10 +27,14 @@ tags:
 - [[TestObservatoryModeAPI]] - `contains` [EXTRACTED]
 - [[TestSetMode]] - `contains` [EXTRACTED]
 - [[_make_app()]] - `contains` [EXTRACTED]
-- [[client()_11]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[asyncio_55]] - `imports` [EXTRACTED]
+- [[client()_14]] - `contains` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[reset_env_and_task()]] - `contains` [EXTRACTED]
-- [[set_mode()_1]] - `imports` [EXTRACTED]
+- [[set_mode()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

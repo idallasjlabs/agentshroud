@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "rationale"
-community: "Community 7"
+community: "asyncio"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/asyncio
 ---
 
 # Tamper detection at various chain positions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTamperDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

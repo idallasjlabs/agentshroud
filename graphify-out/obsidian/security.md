@@ -1,18 +1,17 @@
 ---
-source_file: "SECURITY.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 130"
-location: "L1"
+community: "Added"
+location: "L1133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/Added
 ---
 
-# SECURITY.md
+# Security
 
 ## Connections
-- [[AgentShroud™ Security Policy]] - `contains` [EXTRACTED]
-- [[test_docs_accuracy.py]] - `references` [EXTRACTED]
+- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_130
+#graphify/document #graphify/EXTRACTED #community/Added

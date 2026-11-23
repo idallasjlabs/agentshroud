@@ -1,25 +1,25 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: ""
 type: "code"
-community: "Community 39"
-location: "L197"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # Result
 
 ## Connections
-- [[.fmt()]] - `references` [EXTRACTED]
-- [[.get()]] - `references` [EXTRACTED]
-- [[.get()_1]] - `references` [EXTRACTED]
-- [[.post()]] - `references` [EXTRACTED]
-- [[.post()_1]] - `references` [EXTRACTED]
-- [[.request()_1]] - `references` [EXTRACTED]
-- [[.request()]] - `references` [EXTRACTED]
-- [[main()_1]] - `references` [EXTRACTED]
+- [[dot-fmt()]] - `references` [EXTRACTED]
+- [[dot-get()_3]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()_2]] - `references` [EXTRACTED]
+- [[dot-request()_3]] - `references` [EXTRACTED]
+- [[dot-request()_4]] - `references` [EXTRACTED]
+- [[main()_39]] - `references` [EXTRACTED]
 - [[main.rs]] - `imports_from` [EXTRACTED]
 - [[run_approvals_decide()]] - `references` [EXTRACTED]
 - [[run_approvals_list()]] - `references` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[run_deploy_status()]] - `references` [EXTRACTED]
 - [[run_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "Community 1924"
+community: "sunday-upgrade.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1924
+  - community/sunday-upgradesh
 ---
 
 # sunday-upgrade.sh
 
 ## Connections
 - [[Jira MCP writes blocked in unattended sessions (don't-ask mode  allowedTools)]] - `references` [EXTRACTED]
-- [[PATH_11]] - `defines` [EXTRACTED]
+- [[PATH_24]] - `defines` [EXTRACTED]
 - [[Same-day reinvocation verify-only, no rebuild]] - `conceptually_related_to` [EXTRACTED]
 - [[Shared working-tree collision between concurrent sessions]] - `conceptually_related_to` [EXTRACTED]
 - [[Wrapper 180-min timeout vs session cannot self-terminate]] - `references` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[upgrade-2026-09-21]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-26]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1924
+#graphify/code #graphify/EXTRACTED #community/sunday-upgradesh

@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Community 1877"
-location: "L6"
+community: "sanitizer.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1877
+  - community/sanitizerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1877
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

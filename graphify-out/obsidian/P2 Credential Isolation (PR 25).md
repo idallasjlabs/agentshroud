@@ -1,18 +1,18 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 106"
+community: "Added"
 location: "L960"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/Added
 ---
 
 # P2: Credential Isolation (PR #25)
 
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
-- [[Added_11]] - `contains` [EXTRACTED]
+- [[Added_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_106
+#graphify/document #graphify/EXTRACTED #community/Added

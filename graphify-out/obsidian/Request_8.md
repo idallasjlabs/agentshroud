@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: ""
 type: "code"
-community: "Community 307"
-location: "L61"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_307
+  - graphify/EXTRACTED
+  - community/ingest_api/mainpy
 ---
 
 # Request
 
 ## Connections
-- [[._handle()_1]] - `references` [EXTRACTED]
-- [[A2APolicyConfig]] - `uses` [INFERRED]
-- [[A2APolicyEngine_1]] - `uses` [INFERRED]
-- [[A2AProxy]] - `uses` [INFERRED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[auth_dep()_3]] - `references` [EXTRACTED]
+- [[dashboard_stats()]] - `references` [EXTRACTED]
+- [[dashboard_ws_token()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[serve_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_307
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

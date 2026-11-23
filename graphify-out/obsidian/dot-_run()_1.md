@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L299"
+community: "TestNvdReportOnly"
+location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/TestNvdReportOnly
 ---
 
 # ._run()
 
 ## Connections
-- [[dot-start()]] - `calls` [EXTRACTED]
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[dot-test_known_cves_matched_by_cve_id_not_id()]] - `calls` [EXTRACTED]
+- [[dot-test_never_writes_and_says_so()]] - `calls` [EXTRACTED]
+- [[TestNvdReportOnly]] - `method` [EXTRACTED]
+- [[_no_write()]] - `indirect_call` [INFERRED]
+- [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestNvdReportOnly

@@ -1,17 +1,16 @@
 ---
 source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 177"
+community: "MCP Tools Usage (README)"
 tags:
   - graphify/document
   - graphify/INFERRED
-  - community/Community_177
+  - community/MCP_Tools_Usage_README
 ---
 
 # MCP Tools Usage (README)
 
 ## Connections
 - [[MCP Tools Usage (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Skills Guide (catalog)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_177
+#graphify/document #graphify/INFERRED #community/MCP_Tools_Usage_README

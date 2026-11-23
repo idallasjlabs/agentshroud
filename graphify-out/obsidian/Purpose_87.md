@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-icloud/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Community 1233"
+community: "CI/CD Pipeline Advisor (SKILL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1233
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1233
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

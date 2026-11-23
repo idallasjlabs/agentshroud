@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 455"
+community: "ToolResultSanitizer"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/ToolResultSanitizer
 ---
 
 # Restore code blocks after sanitization.
 
 ## Connections
-- [[._restore_code_blocks()]] - `rationale_for` [EXTRACTED]
+- [[dot-_restore_code_blocks()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,18 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "TrustConfig"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/soc/routerpy
 ---
 
 # delete
 
 ## Connections
-- [[delete_ledger_entry()]] - `references` [EXTRACTED]
-- [[egress_remove_rule()]] - `references` [EXTRACTED]
-- [[remove_blocked_domain()]] - `references` [EXTRACTED]
+- [[clear_group_memory()]] - `references` [EXTRACTED]
+- [[delete_group()]] - `references` [EXTRACTED]
+- [[remove_egress_rule()]] - `references` [EXTRACTED]
+- [[remove_group_member()]] - `references` [EXTRACTED]
+- [[revoke_collaborator()]] - `references` [EXTRACTED]
+- [[revoke_delegation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec/README.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "Community 1221"
+community: "Quality Assurance (SKILL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1221
+  - community/Quality_Assurance_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1221
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

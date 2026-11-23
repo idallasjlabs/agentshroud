@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-pm.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "Community 1041"
+community: "Skill: Project Management (PM)"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1041
+  - community/Skill_Project_Management_PM
 ---
 
 # Continuity Files
@@ -17,4 +17,4 @@ tags:
 - [[`session-notesCONTINUE.md` (always current)_2]] - `contains` [EXTRACTED]
 - [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1041
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

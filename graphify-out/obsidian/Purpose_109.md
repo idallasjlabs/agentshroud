@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tw/README.md"
+source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "Community 1246"
+community: "macOS System Administrator (MAC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1246
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1246
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

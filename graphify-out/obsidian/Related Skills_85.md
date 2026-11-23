@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Community 90"
-location: "L12"
+community: "Test-Driven Development (TDD)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Test-Driven_Development_TDD
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

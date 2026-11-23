@@ -1,17 +1,17 @@
 ---
-source_file: "config/inbound-edge/schema.json"
+source_file: "opencode.json"
 type: "code"
-community: "Community 2033"
+community: "mcp"
 location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2033
+  - community/mcp
 ---
 
 # $schema
 
 ## Connections
-- [[schema.json]] - `contains` [EXTRACTED]
+- [[opencode.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2033
+#graphify/code #graphify/EXTRACTED #community/mcp

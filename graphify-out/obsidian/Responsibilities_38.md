@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
 type: "document"
-community: "Community 537"
-location: "L18"
+community: "ssh_config.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/ssh_configpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_537
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

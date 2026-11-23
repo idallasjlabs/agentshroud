@@ -1,24 +1,17 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 1123"
-location: "L457"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1123
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Important Notes
 
 ## Connections
-- [[Add Swap File]] - `contains` [EXTRACTED]
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
-- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist_1]] - `contains` [EXTRACTED]
-- [[Backup Strategy]] - `contains` [EXTRACTED]
-- [[Cooling Recommendations]] - `contains` [EXTRACTED]
-- [[Optional Automated Security Updates]] - `contains` [EXTRACTED]
-- [[Power Supply]] - `contains` [EXTRACTED]
-- [[Security Hardening Checklist]] - `contains` [EXTRACTED]
+- [[Security Considerations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1123
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

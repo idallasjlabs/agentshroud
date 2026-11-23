@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_env_guard_class.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 121"
-location: "L23"
+community: "test_skill_guard.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_121
+  - community/test_skill_guardpy
 ---
 
 # guard()
 
 ## Connections
-- [[EnvironmentGuard]] - `calls` [EXTRACTED]
-- [[test_env_guard_class.py]] - `contains` [EXTRACTED]
+- [[SkillGuard]] - `uses` [INFERRED]
+- [[fixture_71]] - `references` [EXTRACTED]
+- [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_121
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

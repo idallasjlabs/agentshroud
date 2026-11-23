@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "Community 1"
+community: "middleware.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/middlewarepy
 ---
 
 # test_privilege_separation.py
@@ -25,7 +25,9 @@ tags:
 - [[TestSystemPathProtection]] - `contains` [EXTRACTED]
 - [[TestWorkspaceAccessPreserved]] - `contains` [EXTRACTED]
 - [[enforce_config()]] - `contains` [EXTRACTED]
+- [[file_sandbox.py]] - `imports_from` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
 - [[middleware_manager()]] - `contains` [EXTRACTED]
 - [[strict_sandbox()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-mcpm-aws-profile.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 182"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Method 1: Set Environment Variable (Session)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Switch AWS Profile for MCP_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_182
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

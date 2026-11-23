@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "Community 30"
+community: "ApprovalStore"
 location: "L455"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ApprovalStore
 ---
 
 # Fetch a single queue item by ID.
 
 ## Connections
-- [[.get_item()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_item()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore

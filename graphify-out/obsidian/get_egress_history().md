@@ -1,23 +1,26 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 51"
+community: "soc/router.py"
 location: "L499"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/soc/routerpy
 ---
 
 # get_egress_history()
 
 ## Connections
-- [[.test_filters_history_by_bot_id()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_returns_full_history()]] - `calls` [EXTRACTED]
+- [[dot-test_filters_history_by_bot_id()]] - `calls` [EXTRACTED]
+- [[dot-test_no_bot_id_returns_full_history()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
 - [[Return egress decision history (approvedenytimeout) (CC-40).]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

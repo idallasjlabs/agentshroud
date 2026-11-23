@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/web/installer.py"
+source_file: ""
 type: "code"
-community: "Community 918"
-location: "L55"
+community: "fastapi.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_918
+  - community/fastapimd
 ---
 
 # Request
 
 ## Connections
-- [[installer_page()]] - `references` [EXTRACTED]
+- [[auth_dep()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_918
+#graphify/code #graphify/EXTRACTED #community/fastapimd

@@ -1,23 +1,24 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 11
 ---
 
 # test_api_contract_fuzz.py
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 11 nodes
 
 ## Members
-- [[Current Status]] - document - docs/project/README.md
-- [[Current Status_1]] - document - docs/requirements/README.md
-- [[Planned Documents]] - document - docs/project/README.md
-- [[Planned Documents_1]] - document - docs/requirements/README.md
-- [[Project Documentation]] - document - docs/project/README.md
-- [[Requirements Documentation]] - document - docs/requirements/README.md
-- [[projectREADME]] - document - docs/project/README.md
-- [[requirementsREADME]] - document - docs/requirements/README.md
+- [[(method, path) for every non-destructive route declaring a requestBody.]] - rationale - gateway/tests/test_api_contract_fuzz.py
+- [[Schema-driven contract fuzzing for the ingestdata-plane API (SCRUM-76).…]] - rationale - gateway/tests/test_api_contract_fuzz.py
+- [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[client()_5]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[fixture_26]] - code
+- [[parametrize_7]] - code
+- [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[test_fuzz_surface_is_nonempty()]] - code - gateway/tests/test_api_contract_fuzz.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,3 +26,9 @@ members: 8
 TABLE source_file, type FROM #community/test_api_contract_fuzzpy
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_app]]
+
+## Top bridge nodes
+- [[client()_5]] - degree 3, connects to 1 community

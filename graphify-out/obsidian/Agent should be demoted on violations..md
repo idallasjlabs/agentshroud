@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Community 1291"
+community: "TestTrustProgression"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1291
+  - community/TestTrustProgression
 ---
 
 # Agent should be demoted on violations.
 
 ## Connections
-- [[.test_demotion_on_violations()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_demotion_on_violations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1291
+#graphify/rationale #graphify/EXTRACTED #community/TestTrustProgression

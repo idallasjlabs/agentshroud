@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/package.json"
+source_file: "docker/config/openclaw/manifest.json"
 type: "code"
-community: "Community 909"
-location: "L3"
+community: "openclaw/manifest.json"
+location: "L2"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_909
+  - community/openclaw/manifestjson
 ---
 
 # version
 
 ## Connections
-- [[package.json_3]] - `contains` [EXTRACTED]
+- [[openclawmanifest.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_909
+#graphify/code #graphify/EXTRACTED #community/openclaw/manifestjson

@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 229"
+community: "AlertTelegramRelay"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/AlertTelegramRelay
 ---
 
 # test_non_alert_events_ignored()
 
 ## Connections
-- [[AlertTelegramRelay]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[_SendSpy]] - `calls` [EXTRACTED]
+- [[asyncio_67]] - `references` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

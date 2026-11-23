@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L4026"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # get_my_permissions()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Get permissions summary for the current user.]] - `rationale_for` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
+- [[get_4]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

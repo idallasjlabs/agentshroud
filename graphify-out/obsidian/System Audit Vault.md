@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "Community 2094"
+community: "System Audit Vault"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2094
+  - community/System_Audit_Vault
 ---
 
 # System Audit Vault
 
 ## Connections
-- [[Purpose_32]] - `contains` [EXTRACTED]
-- [[README_32]] - `contains` [EXTRACTED]
-- [[Related Skills_38]] - `contains` [EXTRACTED]
-- [[Usage_38]] - `contains` [EXTRACTED]
+- [[Purpose_113]] - `contains` [EXTRACTED]
+- [[Related Skills_43]] - `contains` [EXTRACTED]
+- [[Usage_53]] - `contains` [EXTRACTED]
+- [[savREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2094
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault

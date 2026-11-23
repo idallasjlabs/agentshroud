@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
 type: "document"
-community: "Community 803"
-location: "L6"
+community: "falco_monitor.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/falco_monitorpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/falco_monitorpy

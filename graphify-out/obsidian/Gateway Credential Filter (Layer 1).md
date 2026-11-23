@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "rationale"
-community: "Community 270"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # Gateway Credential Filter (Layer 1)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_270
+#graphify/rationale #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

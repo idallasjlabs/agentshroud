@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "Community 181"
+community: "ingest_api/config.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/ingest_api/configpy
 ---
 
 # test_load_config_has_bots()
@@ -16,4 +16,4 @@ tags:
 - [[_load_config()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

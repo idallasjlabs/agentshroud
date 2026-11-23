@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "ledger.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/ledgerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

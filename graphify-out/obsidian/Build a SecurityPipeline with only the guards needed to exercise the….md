@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_rate_limit_guard.py"
+type: "rationale"
+community: "RateLimitGuard"
+location: "L232"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/RateLimitGuard
+---
+
+# Build a SecurityPipeline with only the guards needed to exercise the…
+
+## Connections
+- [[_make_pipeline()_2]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/RateLimitGuard

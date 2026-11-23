@@ -1,20 +1,21 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+members: 8
 ---
 
 # Mnemosyne — Retention Engineer
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Mnemosyne — Retention Engineer_1]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Purpose_50]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Related Skills_36]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[Usage_39]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
-- [[openclawskillsi-mnemosyneREADME]] - document - docker/config/openclaw/skills/i-mnemosyne/README.md
+- [[dot-agentsagentsmnemosyne]] - document - .agents/agents/mnemosyne.md
+- [[Input Requirements_30]] - document - .agents/agents/mnemosyne.md
+- [[Mnemosyne — Retention Engineer]] - document - .agents/agents/mnemosyne.md
+- [[Output Format_45]] - document - .agents/agents/mnemosyne.md
+- [[Persona_24]] - document - .agents/agents/mnemosyne.md
+- [[Quality Checklist_30]] - document - .agents/agents/mnemosyne.md
+- [[Role_95]] - document - .agents/agents/mnemosyne.md
+- [[System Prompt_24]] - document - .agents/agents/mnemosyne.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +23,3 @@ members: 5
 TABLE source_file, type FROM #community/Mnemosyne__Retention_Engineer
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_soc.js]]
-
-## Top bridge nodes
-- [[Mnemosyne — Retention Engineer_1]] - degree 5, connects to 1 community

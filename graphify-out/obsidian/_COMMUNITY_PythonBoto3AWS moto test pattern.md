@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Python/Boto3/AWS moto test pattern
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[append_trend_log.py]] - code - docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt
+- [[PythonBoto3AWS moto test pattern]] - concept - docker/config/openclaw/skills/i-tdd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

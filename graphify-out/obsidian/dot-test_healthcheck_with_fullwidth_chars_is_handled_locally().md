@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
+community: ".test_healthcheck_with_fullwidth_chars_is_handled_locally"
 location: "L4920"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/test_healthcheck_with_fullwidth_chars_is_handled_locally
 ---
 
 # .test_healthcheck_with_fullwidth_chars_is_handled_locally()
@@ -18,8 +18,8 @@ tags:
 - [[Unicode fullwidth healthcheck command should still route to local handler.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_26]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_urlopen()_38]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/test_healthcheck_with_fullwidth_chars_is_handled_locally

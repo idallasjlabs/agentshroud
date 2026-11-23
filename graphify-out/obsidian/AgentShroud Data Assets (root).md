@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-10-data-dictionary.svg"
 type: "concept"
-community: "Community 2040"
+community: "AgentShroud Data Assets (root)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_2040
+  - community/AgentShroud_Data_Assets_root
 ---
 
 # AgentShroud Data Assets (root)
@@ -16,4 +16,4 @@ tags:
 - [[OpenClaw Volume (openclaw.json, cronjobs.json, sessions)]] - `conceptually_related_to` [EXTRACTED]
 - [[SQLite DBs (Backed by SQLite)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_2040
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Data_Assets_root

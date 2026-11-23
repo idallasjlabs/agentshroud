@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "Community 707"
-location: "L44"
+community: "MCP Proxy Errors"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/MCP_Proxy_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors

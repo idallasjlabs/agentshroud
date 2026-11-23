@@ -1,20 +1,17 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Community 619"
+community: "1Password Vault Sharing Instructions"
 location: "L189"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_619
+  - community/1Password_Vault_Sharing_Instructions
 ---
 
 # Current Files Status
 
 ## Connections
 - [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
-- [[Security Implementation Verification]] - `contains` [EXTRACTED]
-- [[✅ Authoritative Files (Active)]] - `contains` [EXTRACTED]
-- [[❌ Removed Files (Outdated)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_619
+#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions

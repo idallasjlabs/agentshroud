@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TestDependencySecurity"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestDependencySecurity
 ---
 
 # .test_requirements_pinned()
@@ -15,4 +15,4 @@ tags:
 - [[Requirements should have pinned versions.]] - `rationale_for` [EXTRACTED]
 - [[TestDependencySecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestDependencySecurity

@@ -1,18 +1,17 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "document"
-community: "Community 1556"
+community: "AgentShroud Agentic OS"
 location: "L401"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1556
+  - community/AgentShroud_Agentic_OS
 ---
 
 # 7-Layer Defense Architecture
 
 ## Connections
 - [[6. Security Pipeline]] - `contains` [EXTRACTED]
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1556
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Agentic_OS

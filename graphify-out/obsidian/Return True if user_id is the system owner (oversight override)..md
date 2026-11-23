@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "Community 61"
+community: "SharedMemoryManager"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/SharedMemoryManager
 ---
 
 # Return True if user_id is the system owner (oversight override).
 
 ## Connections
-- [[._is_owner()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_owner()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_61
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

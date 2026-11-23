@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
 type: "document"
-community: "Community 674"
-location: "L82"
+community: "clamav_scanner.py"
+location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/clamav_scannerpy
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

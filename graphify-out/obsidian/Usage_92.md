@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "Community 1222"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1222
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1222
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

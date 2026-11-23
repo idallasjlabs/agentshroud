@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Community 24"
+community: "SecurityPipeline"
 location: "L755"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/SecurityPipeline
 ---
 
 # Owner query must pass through PII sanitisation unchanged; sanitiser not called.
 
 ## Connections
-- [[.test_owner_inbound_query_not_pii_redacted()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_inbound_query_not_pii_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

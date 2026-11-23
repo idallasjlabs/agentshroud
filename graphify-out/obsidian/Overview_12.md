@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 749"
-location: "L3"
+community: "AgentShroud Device Pairing Management"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_749
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Overview
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_749
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

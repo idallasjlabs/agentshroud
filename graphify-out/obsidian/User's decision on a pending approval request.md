@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Community 143"
+community: "ingest_api/models.py"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/modelspy
 ---
 
 # User's decision on a pending approval request
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ApprovalDecision]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_143
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy

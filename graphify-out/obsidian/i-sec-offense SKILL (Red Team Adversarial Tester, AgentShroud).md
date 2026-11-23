@@ -1,20 +1,18 @@
 ---
 source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 442"
+community: "i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_442
+  - community/i-sec-defense_SKILL_Blue_Team_Security_Auditor_AgentShroud
 ---
 
 # i-sec-offense SKILL (Red Team Adversarial Tester, AgentShroud)
 
 ## Connections
-- [[GSDE&G Skills Reference Guide_1]] - `references` [EXTRACTED]
-- [[STPA-Sec Methodology_1]] - `references` [EXTRACTED]
 - [[Steve Hay's Phase 1 Probes (RedBlue Team Assessment)]] - `references` [EXTRACTED]
 - [[i-sec-defense SKILL (Blue Team Security Auditor, AgentShroud)]] - `conceptually_related_to` [EXTRACTED]
 - [[i-sec-offense README (Red Team Adversarial Tester)]] - `references` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_442
+#graphify/document #graphify/EXTRACTED #community/i-sec-defense_SKILL_Blue_Team_Security_Auditor_AgentShroud

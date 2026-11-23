@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AWS API MCP Server (concept)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Test-Driven Development default (Red-Green-Refactor)]] - rationale - CLAUDE.md
+- [[AWS API MCP Server (concept)]] - concept - docker/config/hermes/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

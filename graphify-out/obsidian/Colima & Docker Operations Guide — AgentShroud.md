@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 168"
+community: "Colima & Docker Operations Guide — AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/Colima__Docker_Operations_Guide__AgentShroud
 ---
 
 # Colima & Docker Operations Guide — AgentShroud
@@ -26,4 +26,4 @@ tags:
 - [[9. VPN Networking Fix (Cisco AnyConnect)]] - `contains` [EXTRACTED]
 - [[colima-docker-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_168
+#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud

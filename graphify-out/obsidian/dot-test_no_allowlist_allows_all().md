@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "DNSFilterConfig"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # .test_no_allowlist_allows_all()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDNSAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

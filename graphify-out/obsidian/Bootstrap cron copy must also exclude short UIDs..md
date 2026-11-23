@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_jobs_prompts.py"
 type: "rationale"
-community: "Community 597"
+community: "test_cron_jobs_prompts.py"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_597
+  - community/test_cron_jobs_promptspy
 ---
 
 # Bootstrap cron copy must also exclude short UIDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bots_cron_prompts_exclude_short_uids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_597
+#graphify/rationale #graphify/EXTRACTED #community/test_cron_jobs_promptspy

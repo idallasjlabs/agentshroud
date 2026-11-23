@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Community 928"
+community: "middleware.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_928
+  - community/middlewarepy
 ---
 
 # prompt_protection.py
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[PromptProtection]] - `contains` [EXTRACTED]
 - [[ProtectedContent]] - `contains` [EXTRACTED]
-- [[RedactionResult_2]] - `contains` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `contains` [EXTRACTED]
+- [[System Prompt Protection for AgentShroud Gateway Prevents extraction of system…]] - `rationale_for` [EXTRACTED]
+- [[test_prompt_protection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_928
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L728"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # ._emit_failover_notice()
@@ -16,6 +16,6 @@ tags:
 - [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Send a single Telegram notice per cooldown window when failover activates.]] - `rationale_for` [EXTRACTED]
-- [[_stream()]] - `calls` [EXTRACTED]
+- [[_stream()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

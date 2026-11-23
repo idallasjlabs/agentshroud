@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "TestMultiTurnTracker"
 location: "L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/TestMultiTurnTracker
 ---
 
 # .test_global_stats()
 
 ## Connections
-- [[Test getting statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
+- [[Test getting global statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker

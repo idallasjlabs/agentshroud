@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # openclaw-ghsa-snapshot.json
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
+- [[openclaw-ghsa-snapshot.json]] - document - scripts/data/openclaw-ghsa-snapshot.json
 
 ## Live Query (requires Dataview plugin)
 

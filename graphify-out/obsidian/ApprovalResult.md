@@ -1,38 +1,25 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "Community 21"
+community: "TestEgressApprovalQueue"
 location: "L21"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_21
+  - graphify/EXTRACTED
+  - community/TestEgressApprovalQueue
 ---
 
 # ApprovalResult
 
 ## Connections
-- [[.request_approval()]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[FakeAuditStore]] - `uses` [INFERRED]
+- [[dot-request_approval()]] - `references` [EXTRACTED]
+- [[Enum_6]] - `inherits` [EXTRACTED]
 - [[Result of an approval request.]] - `rationale_for` [EXTRACTED]
-- [[TestAuditStorePersistence]] - `uses` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
-- [[TestEgressAttempt]] - `uses` [INFERRED]
-- [[TestEgressPolicy]] - `uses` [INFERRED]
-- [[TestEnforceMode]] - `uses` [INFERRED]
-- [[TestIPRules]] - `uses` [INFERRED]
 - [[TestInteractiveApproval]] - `uses` [INFERRED]
-- [[TestLogging]] - `uses` [INFERRED]
-- [[TestMonitorMode_2]] - `uses` [INFERRED]
-- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
-- [[TestPerAgentPolicy]] - `uses` [INFERRED]
-- [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
-- [[TestURLParsing]] - `uses` [INFERRED]
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

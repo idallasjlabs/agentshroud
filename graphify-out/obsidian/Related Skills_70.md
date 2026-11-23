@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Community 90"
+community: "Git Workflow Guardian (GIT-GUARD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Related Skills
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

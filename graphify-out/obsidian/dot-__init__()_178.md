@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L78"
+community: "test_soc_realtime_coverage.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[WebSocket_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

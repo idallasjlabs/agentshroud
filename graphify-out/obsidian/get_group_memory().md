@@ -1,21 +1,24 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L1589"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # get_group_memory()
 
 ## Connections
+- [[Action]] - `uses` [INFERRED]
 - [[Read raw shared memory for a group workspace.]] - `rationale_for` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SharedMemoryManager]] - `calls` [EXTRACTED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SharedMemoryManager]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

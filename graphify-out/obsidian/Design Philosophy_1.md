@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 1003"
-location: "L213"
+community: "AgentShroud™ — Project Knowledge Base"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1003
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # Design Philosophy
 
 ## Connections
-- [[7. Pi-hole DNS Security Layer (Built-In)]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1003
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

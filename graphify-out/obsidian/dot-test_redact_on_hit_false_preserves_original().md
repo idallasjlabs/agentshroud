@@ -1,19 +1,17 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "DifferentialPIIDetector"
 location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/DifferentialPIIDetector
 ---
 
 # .test_redact_on_hit_false_preserves_original()
 
 ## Connections
-- [[DifferentialPIIConfig_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `calls` [EXTRACTED]
 - [[TestRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

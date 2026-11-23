@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/sec-offense.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "Community 1059"
-location: "L282"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Test Structure
 
 ## Connections
-- [[Writing Exploit Tests]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1059
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

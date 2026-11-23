@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/aws.md"
+source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "Community 209"
-location: "L390"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Guardrails
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_209
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

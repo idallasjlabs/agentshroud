@@ -12,6 +12,7 @@ tags:
 # .test_empty_author_is_denied()
 
 ## Connections
+- [[dot-_is_authorized_group_writer()]] - `calls` [EXTRACTED]
 - [[An emptyNone author is never authorized.]] - `rationale_for` [EXTRACTED]
 - [[TestAuthorizationHelper]] - `method` [EXTRACTED]
 

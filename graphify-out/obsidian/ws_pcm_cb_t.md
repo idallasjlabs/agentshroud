@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/main/ws_client.c"
+source_file: ""
 type: "code"
-community: "Community 358"
-location: "L152"
+community: "ws_client.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_358
+  - community/ws_clientc
 ---
 
 # ws_pcm_cb_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[ws_client_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_358
+#graphify/code #graphify/EXTRACTED #community/ws_clientc

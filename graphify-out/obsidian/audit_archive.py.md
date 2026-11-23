@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_archive.py"
 type: "code"
-community: "Community 380"
+community: "archive_old_events"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/archive_old_events
 ---
 
 # audit_archive.py
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[_cli()]] - `contains` [EXTRACTED]
 - [[archive_old_events()]] - `contains` [EXTRACTED]
-- [[datetime_2]] - `imports_from` [EXTRACTED]
+- [[datetime_5]] - `imports_from` [EXTRACTED]
 - [[purge_low_value_events()]] - `contains` [EXTRACTED]
+- [[test_audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_380
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

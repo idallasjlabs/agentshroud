@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "soc/router.py"
-location: "L97"
+community: "test_mcp_proxy_coverage.py"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/test_mcp_proxy_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `references` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[Exception_1]] - `references` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy

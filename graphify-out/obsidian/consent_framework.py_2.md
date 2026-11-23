@@ -1,25 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
-type: "document"
-community: "Community 731"
-location: "L10"
+source_file: "gateway/security/consent_framework.py"
+type: "code"
+community: "ConsentFramework"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/ConsentFramework
 ---
 
 # consent_framework.py
 
 ## Connections
-- [[Function Details_31]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_34]] - `contains` [EXTRACTED]
-- [[Purpose_152]] - `contains` [EXTRACTED]
-- [[Related_38]] - `contains` [EXTRACTED]
-- [[Responsibilities_36]] - `contains` [EXTRACTED]
-- [[Secret Patterns in Environment Variables]] - `contains` [EXTRACTED]
-- [[Shell Injection Patterns Detected]] - `contains` [EXTRACTED]
-- [[Threat Model_7]] - `contains` [EXTRACTED]
-- [[consent_framework.py_1]] - `contains` [EXTRACTED]
+- [[ConfigValidationError]] - `contains` [EXTRACTED]
+- [[Consent Framework Module - Pre-configuration consent for MCP server…]] - `rationale_for` [EXTRACTED]
+- [[ConsentDecision]] - `contains` [EXTRACTED]
+- [[ConsentFramework]] - `contains` [EXTRACTED]
+- [[ServerConfig]] - `contains` [EXTRACTED]
+- [[ShellInjectionDetected]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

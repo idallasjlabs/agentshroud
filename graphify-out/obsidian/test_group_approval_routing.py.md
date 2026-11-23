@@ -1,27 +1,28 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Community 124"
+community: "ApprovalRequest"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/ApprovalRequest
 ---
 
 # test_group_approval_routing.py
 
 ## Connections
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[GroupApprovalRouter]] - `imports` [EXTRACTED]
+- [[TDD — Workstream A (v1.2.0) Group approval routing. Tests that - When an…]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalRouterContextDetection]] - `contains` [EXTRACTED]
 - [[TestGroupApprovalRouterDefaultSend]] - `contains` [EXTRACTED]
-- [[gatewayapproval_queuegroup_router.py (group-{chatId} agent-id scheme, referenced)]] - `imports_from` [EXTRACTED]
-- [[group_router.py (GroupApprovalRouter)]] - `implements` [EXTRACTED]
+- [[group_router.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[mock_send_message()]] - `contains` [EXTRACTED]
 - [[router()]] - `contains` [EXTRACTED]
 - [[router_with_sent()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

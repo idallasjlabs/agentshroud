@@ -1,23 +1,20 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Community 7"
-location: "L92"
+community: "test_dashboard_endpoints.py"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_dashboard_endpointspy
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[SSHProxy]] - `calls` [EXTRACTED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_132]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

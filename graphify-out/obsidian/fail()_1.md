@@ -1,18 +1,20 @@
 ---
-source_file: "docker/tests/test-op-auth.sh"
+source_file: "docker/scripts/container-net-diag.sh"
 type: "code"
-community: "Community 1206"
-location: "L14"
+community: "container-net-diag.sh"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1206
+  - community/container-net-diagsh
 ---
 
 # fail()
 
 ## Connections
-- [[test-op-auth.sh]] - `defines` [EXTRACTED]
-- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
+- [[container-net-diag.sh]] - `defines` [EXTRACTED]
+- [[container-net-diag.sh script]] - `calls` [EXTRACTED]
+- [[http_test()]] - `calls` [EXTRACTED]
+- [[tcp_test()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1206
+#graphify/code #graphify/EXTRACTED #community/container-net-diagsh

@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 38"
+community: "services.py"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/servicespy
 ---
 
 # _known_services()
 
 ## Connections
-- [[.list_services()]] - `calls` [EXTRACTED]
-- [[Return the gateway's own container plus each configured bot's real     container]] - `rationale_for` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[dot-list_services()]] - `calls` [EXTRACTED]
+- [[Return the gateway's own container plus each configured bot's real container…]] - `rationale_for` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
-- [[services.py]] - `references` [EXTRACTED]
+- [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/servicespy

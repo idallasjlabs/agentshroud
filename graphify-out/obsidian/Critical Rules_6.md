@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/eightd-root-cause-analysis.md"
+source_file: "docker/config/hermes/skills/i-eightd/SKILL.md"
 type: "document"
-community: "Community 786"
-location: "L475"
+community: "The 8D Investigation Process"
+location: "L578"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_786
+  - community/The_8D_Investigation_Process
 ---
 
 # Critical Rules
 
 ## Connections
-- [[8D Root Cause Analysis — Data-Driven Control System Investigation_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_786
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-tw.md"
+source_file: ".cursor/agents/i-mm.md"
 type: "document"
-community: "Community 729"
-location: "L234"
+community: "Skill: Mindmap Architect (MM)"
+location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

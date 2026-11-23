@@ -1,25 +1,23 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Community 83"
+community: ".from_source"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/from_source
 ---
 
 # TestDeployManifest
 
 ## Connections
-- [[.test_deploy_copies_files_to_dest()]] - `method` [EXTRACTED]
-- [[.test_deploy_is_idempotent()]] - `method` [EXTRACTED]
-- [[.test_deploy_overwrites_changed_content()]] - `method` [EXTRACTED]
-- [[.test_deploy_to_multiple_destinations()]] - `method` [EXTRACTED]
-- [[.test_deploy_writes_manifest_json()]] - `method` [EXTRACTED]
-- [[ManifestEntry]] - `uses` [INFERRED]
-- [[PlannedAction]] - `uses` [INFERRED]
+- [[dot-test_deploy_copies_files_to_dest()]] - `method` [EXTRACTED]
+- [[dot-test_deploy_is_idempotent()]] - `method` [EXTRACTED]
+- [[dot-test_deploy_overwrites_changed_content()]] - `method` [EXTRACTED]
+- [[dot-test_deploy_to_multiple_destinations()]] - `method` [EXTRACTED]
+- [[dot-test_deploy_writes_manifest_json()]] - `method` [EXTRACTED]
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/from_source

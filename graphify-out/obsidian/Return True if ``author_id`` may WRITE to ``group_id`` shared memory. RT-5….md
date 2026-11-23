@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/shared_memory.py"
+type: "rationale"
+community: "SharedMemoryManager"
+location: "L78"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/SharedMemoryManager
+---
+
+# Return True if ``author_id`` may WRITE to ``group_id`` shared memory. RT-5…
+
+## Connections
+- [[dot-_is_authorized_group_writer()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/SharedMemoryManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "Community 575"
+community: "dashboard_endpoints.py"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/dashboard_endpointspy
 ---
 
 # Alert counts by severity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[alerts_summary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_575
+#graphify/rationale #graphify/EXTRACTED #community/dashboard_endpointspy

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/linux.md"
 type: "document"
-community: "Community 421"
+community: "Updating AgentShroud"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_421
+  - community/Updating_AgentShroud
 ---
 
 # Deploying AgentShroud on Linux (docs/operations/linux.md)
@@ -16,5 +16,6 @@ tags:
 - [[Docker Buildx multi-arch build (linuxamd64, linuxarm64)]] - `conceptually_related_to` [EXTRACTED]
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
 - [[systemd service etcsystemdsystemagentshroud.service for auto-start]] - `conceptually_related_to` [EXTRACTED]
+- [[updating_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_421
+#graphify/document #graphify/EXTRACTED #community/Updating_AgentShroud

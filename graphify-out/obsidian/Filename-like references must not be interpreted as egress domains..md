@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 2"
+community: "_make_sanitizer"
 location: "L2871"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/_make_sanitizer
 ---
 
 # Filename-like references must not be interpreted as egress domains.
 
 ## Connections
-- [[.test_raw_web_fetch_json_filename_reference_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_filename_reference_does_not_queue_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

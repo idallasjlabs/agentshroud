@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/atlas.md"
+source_file: ".agents/agents/vulcan.md"
 type: "document"
-community: "Community 1179"
+community: "Vulcan — Subject Matter Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1179
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1179
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

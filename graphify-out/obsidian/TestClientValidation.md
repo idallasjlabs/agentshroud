@@ -1,26 +1,23 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthRequest"
 location: "L34"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_45
+  - graphify/EXTRACTED
+  - community/OAuthRequest
 ---
 
 # TestClientValidation
 
 ## Connections
-- [[.test_empty_client_id_rejected()]] - `method` [EXTRACTED]
-- [[.test_static_shared_client_id_rejected()]] - `method` [EXTRACTED]
-- [[.test_unique_client_id_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_empty_client_id_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_static_shared_client_id_rejected()]] - `method` [EXTRACTED]
+- [[dot-test_unique_client_id_accepted()]] - `method` [EXTRACTED]
 - [[ConfusedDeputyError]] - `uses` [INFERRED]
 - [[OAuthError]] - `uses` [INFERRED]
 - [[OAuthRequest]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[PKCEViolation]] - `uses` [INFERRED]
-- [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthRequest

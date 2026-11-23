@@ -1,21 +1,18 @@
 ---
-source_file: "docs/reference/PUBLISH-TO-CLAWHUB.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Community 1267"
-location: "L364"
+community: "AgentShroud Prerequisites"
+location: "L640"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1267
+  - community/AgentShroud_Prerequisites
 ---
 
 # 🆘 Troubleshooting
 
 ## Connections
-- [[Authentication required]] - `contains` [EXTRACTED]
-- [[Permission denied]] - `contains` [EXTRACTED]
-- [[Skill validation failed]] - `contains` [EXTRACTED]
-- [[clawhub command not found]] - `contains` [EXTRACTED]
-- [[Publish SecureBrowser to ClawHub - Step-by-Step Guide]] - `contains` [EXTRACTED]
+- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[Common Issues_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1267
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

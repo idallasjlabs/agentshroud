@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-offense/SKILL.md"
+source_file: ".github/agents/i-sec-defense.agent.md"
 type: "document"
-community: "Community 1120"
-location: "L367"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1120
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1120
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

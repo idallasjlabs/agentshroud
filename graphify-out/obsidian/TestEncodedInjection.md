@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 154"
+community: "ToolResultInjectionScanner"
 location: "L100"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_154
+  - graphify/EXTRACTED
+  - community/ToolResultInjectionScanner
 ---
 
 # TestEncodedInjection
 
 ## Connections
-- [[.test_base64_clean_content_not_flagged()]] - `method` [EXTRACTED]
-- [[.test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[InjectionSeverity]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
+- [[dot-test_base64_clean_content_not_flagged()]] - `method` [EXTRACTED]
+- [[dot-test_base64_encoded_injection()_1]] - `method` [EXTRACTED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

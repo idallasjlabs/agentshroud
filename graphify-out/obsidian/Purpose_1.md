@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/athena/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 2064"
-location: "L6"
+community: "models.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2064
+  - community/modelspy
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2064
+#graphify/document #graphify/EXTRACTED #community/modelspy

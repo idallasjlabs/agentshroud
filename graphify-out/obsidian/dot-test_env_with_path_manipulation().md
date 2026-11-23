@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ServerConfig"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ServerConfig
 ---
 
 # .test_env_with_path_manipulation()
 
 ## Connections
-- [[ServerConfig]] - `calls` [EXTRACTED]
+- [[ServerConfig]] - `calls` [INFERRED]
 - [[TestEnvironmentValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

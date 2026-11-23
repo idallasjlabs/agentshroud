@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Community 595"
+community: "canvas_proxy.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_595
+  - community/canvas_proxypy
 ---
 
 # _build_proxy_headers()
@@ -16,4 +16,4 @@ tags:
 - [[_handle_http()]] - `calls` [EXTRACTED]
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_595
+#graphify/code #graphify/EXTRACTED #community/canvas_proxypy

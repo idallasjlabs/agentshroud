@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: ""
 type: "code"
-community: "Community 557"
-location: "L58"
+community: "middleware.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_557
+  - community/middlewarepy
 ---
 
 # Any
 
 ## Connections
-- [[._format_alert_message()]] - `references` [EXTRACTED]
-- [[._log_alert()]] - `references` [EXTRACTED]
-- [[._send_notification()]] - `references` [EXTRACTED]
-- [[.dispatch()]] - `references` [EXTRACTED]
-- [[.get_digest()]] - `references` [EXTRACTED]
-- [[.get_stats()_12]] - `references` [EXTRACTED]
+- [[dot-__init__()_115]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_557
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

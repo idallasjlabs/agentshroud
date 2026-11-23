@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 2406"
-location: "L936"
+community: "[Unreleased] — feat/http-connect-proxy + feat/credential-isolation"
+location: "L1000"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2406
+  - community/Unreleased__feat/http-connect-proxy__feat/credential-isolation
 ---
 
 # Tests
 
 ## Connections
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 2 — 2026-03-14)]] - `contains` [EXTRACTED]
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2406
+#graphify/document #graphify/EXTRACTED #community/Unreleased__feat/http-connect-proxy__feat/credential-isolation

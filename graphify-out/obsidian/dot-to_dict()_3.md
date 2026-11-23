@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "SecurityPipeline"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/SecurityPipeline
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_9]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[CanaryResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

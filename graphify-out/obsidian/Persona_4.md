@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/mnemosyne.md"
+source_file: ".agents/agents/athena.md"
 type: "document"
-community: "Community 1978"
+community: "Athena — Knowledge Distiller"
 location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1978
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Persona
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1978
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

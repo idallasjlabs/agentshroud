@@ -12,7 +12,7 @@ tags:
 # .test_write_file_oversized_content_rejected()
 
 ## Connections
-- [[Decoded content exceeding the ~500KB cap is rejected with 413, and         proxy]] - `rationale_for` [EXTRACTED]
+- [[Decoded content exceeding the ~500KB cap is rejected with 413, and…]] - `rationale_for` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

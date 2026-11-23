@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "Implement per-user session isolation using Telegram user ID"
+community: "installer.py"
 location: "L216"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
+  - community/installerpy
 ---
 
 # Start the installation process. This endpoint kicks off the install and returns…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[start_install()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID
+#graphify/rationale #graphify/EXTRACTED #community/installerpy

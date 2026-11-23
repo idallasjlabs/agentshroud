@@ -1,17 +1,20 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "Community 591"
-location: "L82"
+community: "init_skill.py"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_591
+  - community/init_skillpy
 ---
 
 # main()
 
 ## Connections
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
+- [[init_skill()]] - `calls` [EXTRACTED]
+- [[init_skill.py]] - `contains` [EXTRACTED]
+- [[normalize_skill_name()]] - `calls` [EXTRACTED]
+- [[parse_resources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_591
+#graphify/code #graphify/EXTRACTED #community/init_skillpy

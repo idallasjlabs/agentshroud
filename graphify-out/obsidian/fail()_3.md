@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/check-vendor-compat.sh"
+source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
 type: "code"
-community: "Community 227"
-location: "L55"
+community: "test_sunday_prompt_unattended.sh"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/test_sunday_prompt_unattendedsh
 ---
 
 # fail()
 
 ## Connections
-- [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
-- [[check_hermes()]] - `calls` [EXTRACTED]
-- [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
+- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/test_sunday_prompt_unattendedsh

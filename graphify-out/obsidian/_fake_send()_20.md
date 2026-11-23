@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never… (2)"
-location: "L617"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval"
+location: "L1905"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+  - graphify/INFERRED
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_dedup_is_per_agent()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_request_queues_owner_approval_and_pending_notice()]] - `indirect_call` [INFERRED]
+- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+#graphify/code #graphify/INFERRED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

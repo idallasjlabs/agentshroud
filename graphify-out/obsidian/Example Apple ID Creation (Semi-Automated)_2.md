@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/browser.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 473"
-location: "L203"
+community: "Browser — Secure Browser Automation"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_473
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Example: Apple ID Creation (Semi-Automated)
 
 ## Connections
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_473
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

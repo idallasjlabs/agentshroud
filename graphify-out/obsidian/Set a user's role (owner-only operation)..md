@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L266"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Set a user's role (owner-only operation).
 
 ## Connections
-- [[.set_user_role()]] - `rationale_for` [EXTRACTED]
+- [[dot-set_user_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

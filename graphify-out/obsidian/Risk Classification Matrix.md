@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 453"
+community: "SecureBrowser Security Policies"
 location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_453
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Risk Classification Matrix
@@ -15,4 +15,4 @@ tags:
 - [[Risk Elevation Factors]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_453
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

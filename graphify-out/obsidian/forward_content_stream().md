@@ -1,25 +1,26 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L855"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # forward_content_stream()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[ForwardRequest_2]] - `references` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
-- [[Request_5]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[Streaming variant of forward for OpenAI-compat agents (Hermes).      Same inbou]] - `rationale_for` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[ForwardError]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[Request_3]] - `references` [EXTRACTED]
+- [[Streaming variant of forward for OpenAI-compat agents (Hermes). Same inbound…]] - `rationale_for` [EXTRACTED]
+- [[_event_stream()]] - `contains` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
+- [[post_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

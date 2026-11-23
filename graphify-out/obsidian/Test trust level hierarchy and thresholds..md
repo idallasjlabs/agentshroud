@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Community 11"
+community: "TrustConfig"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/TrustConfig
 ---
 
 # Test trust level hierarchy and thresholds.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustLevels_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

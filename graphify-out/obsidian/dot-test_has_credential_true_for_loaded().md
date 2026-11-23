@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "multi_host_test.py"
+community: "CredentialInjectorConfig"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/CredentialInjectorConfig
 ---
 
 # .test_has_credential_true_for_loaded()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/CredentialInjectorConfig

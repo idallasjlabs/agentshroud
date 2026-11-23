@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "Community 1977"
+community: "Hermes — Reference Verifier"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1977
+  - community/Hermes__Reference_Verifier
 ---
 
 # Hermes — Reference Verifier
 
 ## Connections
-- [[Input Requirements_5]] - `contains` [EXTRACTED]
-- [[Output Format_3]] - `contains` [EXTRACTED]
-- [[Persona_3]] - `contains` [EXTRACTED]
-- [[Quality Checklist_4]] - `contains` [EXTRACTED]
-- [[Role_7]] - `contains` [EXTRACTED]
-- [[System Prompt_3]] - `contains` [EXTRACTED]
-- [[hermes]] - `contains` [EXTRACTED]
+- [[dot-agentsagentshermes]] - `contains` [EXTRACTED]
+- [[Input Requirements_29]] - `contains` [EXTRACTED]
+- [[Output Format_44]] - `contains` [EXTRACTED]
+- [[Persona_23]] - `contains` [EXTRACTED]
+- [[Quality Checklist_29]] - `contains` [EXTRACTED]
+- [[Role_94]] - `contains` [EXTRACTED]
+- [[System Prompt_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1977
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

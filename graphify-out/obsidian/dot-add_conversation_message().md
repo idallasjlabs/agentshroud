@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "MiddlewareManager"
+community: ".get_or_create_session"
 location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/get_or_create_session
 ---
 
 # .add_conversation_message()
@@ -15,8 +15,8 @@ tags:
 - [[dot-_save_sessions()]] - `calls` [EXTRACTED]
 - [[dot-get_or_create_session()]] - `calls` [EXTRACTED]
 - [[Add a message to the user's conversation history for a specific bot.]] - `rationale_for` [EXTRACTED]
-- [[Any_3]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[ConversationMessage]] - `calls` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

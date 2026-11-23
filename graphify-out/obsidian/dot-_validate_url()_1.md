@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: ".proxy_messages()"
+community: "SecureBrowser"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SecureBrowser
 ---
 
 # ._validate_url()
@@ -16,6 +16,6 @@ tags:
 - [[dot-_log_security_event()_1]] - `calls` [EXTRACTED]
 - [[dot-navigate()_1]] - `calls` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
-- [[Validate URL against allowlistblocklist          Security This is the primary]] - `rationale_for` [EXTRACTED]
+- [[Validate URL against allowlistblocklist Security This is the primary URL…_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SSHWriteResult]] - `calls` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
-- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent]] - `rationale_for` [EXTRACTED]
+- [[Valid request SSHProxy.write_file() is invoked with decoded pathcontent…]] - `rationale_for` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHProxy

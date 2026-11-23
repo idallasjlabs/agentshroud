@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "bsp_iot_button_create"
+community: "_w"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/bsp_iot_button_create
+  - community/_w
 ---
 
 # .test_critical_and_warning_statuses()
@@ -15,4 +15,4 @@ tags:
 - [[TestOpenscapSummary]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/bsp_iot_button_create
+#graphify/code #graphify/EXTRACTED #community/_w

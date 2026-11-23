@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "Community 146"
+community: "SubagentMonitor"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_146
+  - community/SubagentMonitor
 ---
 
 # monitor_config()
 
 ## Connections
-- [[SubagentMonitorConfig]] - `calls` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[fixture_44]] - `references` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_146
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

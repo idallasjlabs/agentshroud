@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gifgrep/SKILL.md"
 type: "document"
-community: "test_sunday_upgrade_session_guard.sh"
+community: "gifgrep/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_sunday_upgrade_session_guardsh
+  - community/gifgrep/SKILLmd
 ---
 
 # gifgrep/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[gifgrep]] - `contains` [EXTRACTED]
 - [[gifgrep CLI]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_sunday_upgrade_session_guardsh
+#graphify/document #graphify/EXTRACTED #community/gifgrep/SKILLmd

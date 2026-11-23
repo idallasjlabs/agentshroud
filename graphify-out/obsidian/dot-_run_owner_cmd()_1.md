@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L375"
+community: "_make_proxy"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/_make_proxy
 ---
 
 # ._run_owner_cmd()
@@ -20,9 +20,11 @@ tags:
 - [[dot-test_unlock_known_user_succeeds()]] - `calls` [EXTRACTED]
 - [[dot-test_unlock_unknown_user_reports_no_state()]] - `calls` [EXTRACTED]
 - [[dot-test_unlock_without_user_id_shows_usage()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_3]] - `references` [EXTRACTED]
+- [[TelegramAPIProxy]] - `references` [EXTRACTED]
 - [[TestUnlockCommand]] - `method` [EXTRACTED]
-- [[_make_update()_2]] - `calls` [EXTRACTED]
+- [[_make_update()_1]] - `calls` [EXTRACTED]
 - [[_wrap()]] - `calls` [EXTRACTED]
+- [[capture_notice()_1]] - `contains` [EXTRACTED]
+- [[capture_notice()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-release/SKILL.md"
 type: "document"
-community: "openai-whisper-api/SKILL.md"
+community: "Steps"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openai-whisper-api/SKILLmd
+  - community/Steps
 ---
 
 # i-release/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Release (i-release)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openai-whisper-api/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Steps

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "Community 116"
+community: "A2AProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_116
+  - community/A2AProxy
 ---
 
 # test_a2a_proxy.py
@@ -14,20 +14,21 @@ tags:
 ## Connections
 - [[A2AMethod]] - `imports` [EXTRACTED]
 - [[A2APolicyConfig]] - `imports` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `imports` [EXTRACTED]
+- [[A2APolicyEngine]] - `imports` [EXTRACTED]
 - [[A2AProxy]] - `imports` [EXTRACTED]
 - [[A2AProxyResult]] - `imports` [EXTRACTED]
 - [[DifferentialPIIConfig]] - `imports` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `imports` [EXTRACTED]
-- [[Upstream Hermes Gap 80534 — Peer Identity Resolved From SocketX-Forwarded-For Instead Of Bearer Token]] - `references` [EXTRACTED]
-- [[_Event]] - `contains` [EXTRACTED]
+- [[Tests for the A2A (Agent-to-Agent) inbound proxy interceptor (SCRUM-129).…]] - `rationale_for` [EXTRACTED]
 - [[_StubAuditStore]] - `contains` [EXTRACTED]
-- [[_StubForwarder]] - `contains` [EXTRACTED]
+- [[_StubForwarder_1]] - `contains` [EXTRACTED]
 - [[_base_policy_engine()]] - `contains` [EXTRACTED]
-- [[_jsonrpc()_1]] - `contains` [EXTRACTED]
+- [[_jsonrpc()]] - `contains` [EXTRACTED]
 - [[_redact_message_text()]] - `imports` [EXTRACTED]
-- [[forwarder()]] - `contains` [EXTRACTED]
-- [[proxy()]] - `contains` [EXTRACTED]
+- [[a2a_policy.py]] - `imports_from` [EXTRACTED]
+- [[a2a_proxy.py]] - `imports_from` [EXTRACTED]
+- [[forwarder()_1]] - `contains` [EXTRACTED]
+- [[proxy()_3]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_never_policy_gated()]] - `contains` [EXTRACTED]
 - [[test_agent_card_discovery_is_still_audited()]] - `contains` [EXTRACTED]
 - [[test_extract_text_concatenates_text_parts()]] - `contains` [EXTRACTED]
@@ -63,4 +64,4 @@ tags:
 - [[test_resolve_peer_id_uses_constant_time_comparison()]] - `contains` [EXTRACTED]
 - [[test_resolve_peer_id_whitespace_only_token_returns_none()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_116
+#graphify/code #graphify/EXTRACTED #community/A2AProxy

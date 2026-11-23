@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 25"
+community: "SSHProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/SSHProxy
 ---
 
 # test_ssh_proxy.py
@@ -21,7 +21,11 @@ tags:
 - [[TestIsAutoApproved]] - `contains` [EXTRACTED]
 - [[TestSSHDisabled]] - `contains` [EXTRACTED]
 - [[TestValidateCommand]] - `contains` [EXTRACTED]
-- [[proxy()_2]] - `contains` [EXTRACTED]
-- [[ssh_config()_1]] - `contains` [EXTRACTED]
+- [[Tests for SSH Proxy module]] - `rationale_for` [EXTRACTED]
+- [[asyncio_35]] - `imports` [EXTRACTED]
+- [[proxy()]] - `contains` [EXTRACTED]
+- [[proxy.py]] - `imports_from` [EXTRACTED]
+- [[ssh_config()]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

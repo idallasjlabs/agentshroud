@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-hdev/references/mode-b-sweep.md"
 type: "document"
-community: "Community 2059"
+community: "Mode B — Comprehensive review sweep"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2059
+  - community/Mode_B__Comprehensive_review_sweep
 ---
 
 # Step 2 — Work through directories one at a time
 
 ## Connections
-- [[Mode B — Comprehensive review sweep_3]] - `contains` [EXTRACTED]
+- [[Mode B — Comprehensive review sweep]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2059
+#graphify/document #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "TrustConfig"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TrustConfig
 ---
 
 # .test_trust_level_ordering()
 
 ## Connections
-- [[TestTrustLevels]] - `method` [EXTRACTED]
+- [[TestTrustLevels_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

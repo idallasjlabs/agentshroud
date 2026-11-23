@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 976"
+community: "Animation Guidelines"
 location: "L308"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_976
+  - community/Animation_Guidelines
 ---
 
 # Status & Feedback Animations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Animation Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_976
+#graphify/document #graphify/EXTRACTED #community/Animation_Guidelines

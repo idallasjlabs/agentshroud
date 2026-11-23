@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
+source_file: "docs/planning/reviews/blue-team-audit-v0.7.0.md"
 type: "document"
-community: "Community 606"
-location: "L9"
+community: "AgentShroud v0.7.0 - Blue Team Security Audit Report"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_606
+  - community/AgentShroud_v070_-_Blue_Team_Security_Audit_Report
 ---
 
-# EXECUTIVE SUMMARY
+# Executive Summary
 
 ## Connections
-- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 - Blue Team Security Audit Report]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_606
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_-_Blue_Team_Security_Audit_Report

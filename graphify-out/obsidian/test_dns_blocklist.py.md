@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 158"
+community: "DNSBlocklist"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/DNSBlocklist
 ---
 
 # test_dns_blocklist.py
@@ -17,6 +17,9 @@ tags:
 - [[TestLifecycle]] - `contains` [EXTRACTED]
 - [[TestLoadFromText]] - `contains` [EXTRACTED]
 - [[TestParseHostsLine]] - `contains` [EXTRACTED]
-- [[TestStats]] - `contains` [EXTRACTED]
+- [[TestStats_1]] - `contains` [EXTRACTED]
+- [[Tests for the in-process DNS blocklist (replaced Pi-hole integration).]] - `rationale_for` [EXTRACTED]
+- [[asyncio_76]] - `imports` [EXTRACTED]
+- [[dns_blocklist.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_158
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

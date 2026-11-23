@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/athena.md"
+source_file: ".omp/agents/atlas.md"
 type: "document"
-community: "Community 1557"
-location: "L23"
+community: "Atlas — Curriculum Architect"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1557
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1557
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

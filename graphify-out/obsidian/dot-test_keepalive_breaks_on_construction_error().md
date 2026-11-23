@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "AsyncMock"
 location: "L652"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - graphify/INFERRED
+  - community/AsyncMock
 ---
 
 # .test_keepalive_breaks_on_construction_error()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SOCWebSocketHandler_1]] - `calls` [EXTRACTED]
 - [[TestSendEventAndKeepalive]] - `method` [EXTRACTED]
+- [[boom()_4]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/INFERRED #community/AsyncMock

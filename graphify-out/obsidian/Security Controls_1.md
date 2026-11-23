@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Community 1174"
-location: "L27"
+community: "Playwright"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/Playwright
 ---
 
 # Security Controls
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[Playwright_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1174
+#graphify/document #graphify/EXTRACTED #community/Playwright

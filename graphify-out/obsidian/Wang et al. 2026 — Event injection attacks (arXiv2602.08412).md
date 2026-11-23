@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "paper"
-community: "Community 477"
+community: "Wang et al. 2026 — Event injection attacks (arXiv:2602.08412)"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/Wang_et_al_2026__Event_injection_attacks_arXiv260208412
 ---
 
 # Wang et al. 2026 — Event injection attacks (arXiv:2602.08412)
 
-## Connections
-- [[SessionManager]] - `cites` [EXTRACTED]
-
-#graphify/paper #graphify/EXTRACTED #community/Community_477
+#graphify/paper #graphify/EXTRACTED #community/Wang_et_al_2026__Event_injection_attacks_arXiv260208412

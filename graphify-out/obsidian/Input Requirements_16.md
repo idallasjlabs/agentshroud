@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mnemosyne/SKILL.md"
+source_file: ".agents/agents/daedalus.md"
 type: "document"
-community: "Community 1994"
-location: "L20"
+community: "Daedalus — Concept Illustrator"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1994
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1994
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ContextSegment"
+community: "EnhancedApprovalQueue"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/EnhancedApprovalQueue
 ---
 
 # .submit()
@@ -17,9 +17,9 @@ tags:
 - [[dot-broadcast()]] - `calls` [EXTRACTED]
 - [[dot-submit_tool_request()_2]] - `calls` [EXTRACTED]
 - [[Add an action to the approval queue with policy-based timeout.]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
-- [[ApprovalRequest_1]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
+- [[ApprovalRequest]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[ToolRiskPolicy]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

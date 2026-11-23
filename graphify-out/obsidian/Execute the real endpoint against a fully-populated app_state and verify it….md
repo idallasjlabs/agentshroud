@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_docs_accuracy.py"
+type: "rationale"
+community: "MiddlewareManager"
+location: "L193"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/MiddlewareManager
+---
+
+# Execute the real endpoint against a fully-populated app_state and verify it…
+
+## Connections
+- [[dot-test_endpoint_reports_no_key_collisions_and_high_total()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

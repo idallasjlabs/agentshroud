@@ -1,12 +1,12 @@
 ---
 source_file: "branding/README.md"
 type: "document"
-community: "Community 192"
+community: "AgentShroud Brand Guidelines"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # AgentShroud Brand Guidelines
@@ -17,8 +17,8 @@ tags:
 - [[File Formats]] - `contains` [EXTRACTED]
 - [[Logos]] - `contains` [EXTRACTED]
 - [[Need Help]] - `contains` [EXTRACTED]
-- [[README_38]] - `contains` [EXTRACTED]
-- [[Typography_1]] - `contains` [EXTRACTED]
+- [[Typography]] - `contains` [EXTRACTED]
 - [[Usage Guidelines]] - `contains` [EXTRACTED]
+- [[brandingREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_192
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

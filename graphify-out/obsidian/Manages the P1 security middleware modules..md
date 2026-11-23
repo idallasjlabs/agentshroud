@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "Community 31"
+community: "MiddlewareManager"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_31
+  - community/MiddlewareManager
 ---
 
 # Manages the P1 security middleware modules.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_31
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ServerConfig"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ServerConfig
 ---
 
 # .test_add_and_remove_blacklist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWhitelistBlacklist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

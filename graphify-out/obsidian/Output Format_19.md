@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".omp/agents/i-sec.md"
 type: "document"
-community: "Community 485"
-location: "L155"
+community: "Skill: Security Review (SEC)"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_485
+  - community/Skill_Security_Review_SEC
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_485
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

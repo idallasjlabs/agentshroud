@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-gg.md"
+source_file: ".agents/skills/i-mc/SKILL.md"
 type: "document"
-community: "Community 1949"
-location: "L72"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1949
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1949
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

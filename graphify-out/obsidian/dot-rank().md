@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "GroupRole"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/GroupRole
 ---
 
 # .rank()
@@ -15,4 +15,4 @@ tags:
 - [[GroupRole]] - `method` [EXTRACTED]
 - [[Numeric rank for comparison — higher is more privileged.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/GroupRole

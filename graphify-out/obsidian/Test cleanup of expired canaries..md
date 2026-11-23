@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Community 233"
+community: "OutputCanary"
 location: "L204"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/OutputCanary
 ---
 
 # Test cleanup of expired canaries.
 
 ## Connections
-- [[.test_canary_cleanup()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_canary_cleanup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_233
+#graphify/rationale #graphify/EXTRACTED #community/OutputCanary

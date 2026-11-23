@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "Community 137"
+community: "DraftEntry"
 location: "L172"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_137
+  - graphify/EXTRACTED
+  - community/DraftEntry
 ---
 
 # TestSubmitAuth
 
 ## Connections
-- [[.test_requires_auth()_2]] - `method` [EXTRACTED]
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
+- [[dot-test_requires_auth()_4]] - `method` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-supply-chain.md"
 type: "document"
-community: "Community 570"
+community: "Detailed Profiles"
 location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_570
+  - community/Detailed_Profiles
 ---
 
 # Falco — Runtime Security Monitoring
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Detailed Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_570
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

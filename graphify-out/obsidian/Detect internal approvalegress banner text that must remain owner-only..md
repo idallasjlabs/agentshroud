@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "._extract_first_egress_target"
 location: "L2668"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/_extract_first_egress_target
 ---
 
 # Detect internal approval/egress banner text that must remain owner-only.
 
 ## Connections
-- [[._contains_internal_approval_banner()]] - `rationale_for` [EXTRACTED]
+- [[dot-_contains_internal_approval_banner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target

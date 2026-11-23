@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "ReportStore"
-location: "L32"
+community: "._handle"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/_handle
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubForwarder]] - `method` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/_handle

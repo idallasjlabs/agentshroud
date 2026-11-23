@@ -1,17 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 213"
-location: "L286"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Check Status
 
 ## Connections
-- [[Usage_56]] - `contains` [EXTRACTED]
+- [[Launch the Stack]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

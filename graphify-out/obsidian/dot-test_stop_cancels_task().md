@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "AgentShroud Security Architecture"
+community: "DNSBlocklist"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/DNSBlocklist
 ---
 
 # .test_stop_cancels_task()
@@ -15,5 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
 - [[TestLifecycle]] - `method` [EXTRACTED]
+- [[asyncio_76]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

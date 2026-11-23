@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/launchd/install.sh"
 type: "code"
-community: "AgentShroud™ Communication Templates (3)"
+community: "launchd/install.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Communication_Templates_3
+  - community/launchd/installsh
 ---
 
 # launchd/install.sh
@@ -19,4 +19,4 @@ tags:
 - [[plist_label()]] - `defines` [EXTRACTED]
 - [[say()]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Communication_Templates_3
+#graphify/code #graphify/EXTRACTED #community/launchd/installsh

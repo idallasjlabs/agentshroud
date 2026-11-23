@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Community 1877"
+community: "8D Root Cause Analysis"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1877
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Usage
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1877
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

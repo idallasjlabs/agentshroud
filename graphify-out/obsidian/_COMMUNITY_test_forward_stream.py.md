@@ -1,66 +1,70 @@
 ---
 type: community
-cohesion: 0.04
-members: 51
+members: 57
 ---
 
 # test_forward_stream.py
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 51 nodes
+**Members:** 57 nodes
 
 ## Members
-- [[dot-contributing()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-readme()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-security_md()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_actual_test_count_meets_minimum()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_all_module_attrs_exist_after_init()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_architecture_diagram_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_branch_naming_convention()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_claims_75_security_modules()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_endpoint_reports_no_key_collisions_and_high_total()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_every_pipeline_module_attr_is_a_lifespan_kwarg()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_has_disclosure_policy()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_has_security_contact()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_has_supported_versions()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_lists_security_features()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_manage_modules_endpoint_uses_the_same_registry()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_mentions_coverage_requirement()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_mentions_mit_license()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_mentions_pytest()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_mentions_python_311()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_mentions_test_directory()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_module_has_implementation()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_pytest_command_syntax()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_python_version_claim()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_quickstart_section_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_readme_p1_count_matches_middleware_manager()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_security_modules_listed()]] - code - gateway/tests/test_docs_accuracy.py
-- [[dot-test_version_table_present()]] - code - gateway/tests/test_docs_accuracy.py
-- [[CONTRIBUTING]] - document - CONTRIBUTING.md
-- [[Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg     in li]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Execute the real endpoint against a fully-populated app_state and         verify]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[README claims Python 3.9+.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[SECURITY_5]] - document - SECURITY.md
-- [[TestContributingMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestLifespanWiresEveryPipelineModule]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestReadmeAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestReadmeModulesMatchCode]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestSecurityMdAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[TestTestCountAccuracy]] - code - gateway/tests/test_docs_accuracy.py
-- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS,         not a]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[The test command in CONTRIBUTING.md should be valid.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[This representative sample of modules mentioned in README should exist as code.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify managemodules enumerates every module MiddlewareManager wires.      Mid]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify CONTRIBUTING.md references are correct.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify README.md claims match actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify SECURITY.md content.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify each module listed in README has actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[Verify test count claims in READMEdocs are reasonable.]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[We should have at least 350 tests (README says 351+).]] - rationale - gateway/tests/test_docs_accuracy.py
-- [[_read_file()]] - code - gateway/tests/test_docs_accuracy.py
-- [[test_docs_accuracy.py]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-__init__()_45]] - code - gateway/tests/test_forward_stream.py
+- [[dot-process_inbound()]] - code - gateway/tests/test_forward_stream.py
+- [[dot-process_outbound()]] - code - gateway/tests/test_forward_stream.py
+- [[dot-process_outbound()_1]] - code - gateway/tests/test_forward_stream.py
+- [[2-sentence sliding window over `sentences` each window (previous + current,…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Buffer streamed text deltas and yield each complete sentence as soon as its…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Build a mock app_state whose router streams `sentences_out` as raw text deltas…]] - rationale - gateway/tests/test_forward_stream.py
+- [[Mock pipeline that blocks any window containing the word 'secret'.]] - rationale - gateway/tests/test_forward_stream.py
+- [[Mock pipeline whose process_outbound returns the window text unchanged —…]] - rationale - gateway/tests/test_forward_stream.py
+- [[Resolve the outbound trust level for `request`, shared by the blocking and…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Tests for POST forwardstream — the streaming voice pipeline. Covers the…]] - rationale - gateway/tests/test_forward_stream.py
+- [[_BlockingPipeline]] - code - gateway/tests/test_forward_stream.py
+- [[_PassthroughPipeline]] - code - gateway/tests/test_forward_stream.py
+- [[_aiter()]] - code - gateway/tests/test_forward_stream.py
+- [[_event_stream()]] - code - gateway/ingest_api/routes/forward.py
+- [[_filtered_sentence_stream()]] - code - gateway/ingest_api/routes/forward.py
+- [[_make_stream_app_state()]] - code - gateway/tests/test_forward_stream.py
+- [[_parse_sse_events()]] - code - gateway/tests/test_forward_stream.py
+- [[_post_stream()]] - code - gateway/tests/test_forward_stream.py
+- [[_queued()]] - code - gateway/tests/test_forward_stream.py
+- [[_raise_forward_error()]] - code - gateway/tests/test_forward_stream.py
+- [[_raise_unexpected()]] - code - gateway/tests/test_forward_stream.py
+- [[_request()]] - code - gateway/tests/test_forward_stream.py
+- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
+- [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
+- [[_stream()]] - code - gateway/tests/test_forward_stream.py
+- [[_target()]] - code - gateway/tests/test_forward_stream.py
+- [[asyncio_25]] - code
+- [[parametrize_9]] - code
+- [[process_outbound()_1]] - code - gateway/tests/test_forward_stream.py
+- [[process_outbound()_2]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_redaction_applies_to_released_sentence()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_releases_sentences_in_order()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_single_sentence_flushed_alone()]] - code - gateway/tests/test_forward_stream.py
+- [[test_filtered_stream_windows_are_pairs_joined_by_sentinel()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream.py]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_503_when_no_pipeline_configured()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_drops_credential_bearing_sentence()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_emits_sentence_events_then_done()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_forward_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_ledger_failure_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_records_ledger_entry_with_full_assembled_text()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_returns_early_response_when_queued_for_approval()]] - code - gateway/tests/test_forward_stream.py
+- [[test_forward_stream_unexpected_error_still_emits_done_event()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_empty_stream_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_flushes_trailing_fragment_without_punctuation()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_single_delta_full_sentence()]] - code - gateway/tests/test_forward_stream.py
+- [[test_sentences_from_deltas_splits_on_boundaries()]] - code - gateway/tests/test_forward_stream.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -70,16 +74,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY_MiddlewareManager]]
-- 8 edges to [[_COMMUNITY_SecurityPipeline (2)]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
-- 1 edge to [[_COMMUNITY_AuditExporter]]
-- 1 edge to [[_COMMUNITY_version_routes.py]]
-- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 9 edges to [[_COMMUNITY_ingest_apimodels.py]]
+- 8 edges to [[_COMMUNITY_AgentTarget]]
+- 4 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_TestConfigValidation]]
+- 2 edges to [[_COMMUNITY_app]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[test_docs_accuracy.py]] - degree 14, connects to 4 communities
-- [[TestContributingMdAccuracy]] - degree 11, connects to 2 communities
-- [[TestReadmeAccuracy]] - degree 11, connects to 2 communities
-- [[TestSecurityMdAccuracy]] - degree 10, connects to 2 communities
-- [[TestManageModulesEndpointAccuracy]] - degree 8, connects to 2 communities
+- [[test_forward_stream.py]] - degree 44, connects to 4 communities
+- [[_resolve_user_trust_level()]] - degree 12, connects to 3 communities
+- [[_make_stream_app_state()]] - degree 15, connects to 2 communities
+- [[test_forward_stream_rejects_non_openai_compat_target()]] - degree 5, connects to 2 communities
+- [[_event_stream()]] - degree 4, connects to 2 communities

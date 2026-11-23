@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-qa/README.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "Community 1240"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1240
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Purpose
 
 ## Connections
-- [[Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1240
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

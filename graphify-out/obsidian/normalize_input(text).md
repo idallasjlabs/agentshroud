@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "Community 679"
+community: "input_normalizer.py"
 location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/input_normalizerpy
 ---
 
 # normalize_input(text)
 
 ## Connections
-- [[Function Details_41]] - `contains` [EXTRACTED]
+- [[Function Details_23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

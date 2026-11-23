@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 730"
-location: "L63"
+community: "agent_isolation.py"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/agent_isolationpy
 ---
 
 # Mode: Enforce vs Monitor
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

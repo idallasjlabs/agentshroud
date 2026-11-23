@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
 type: "document"
-community: "Community 1425"
-location: "L183"
+community: "ANTHROPIC_BASE_URL"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1425
+  - community/ANTHROPIC_BASE_URL
 ---
 
 # Related Notes
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1425
+#graphify/document #graphify/EXTRACTED #community/ANTHROPIC_BASE_URL

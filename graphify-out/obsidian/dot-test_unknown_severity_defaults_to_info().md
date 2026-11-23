@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "_coerce_to_ws_event()"
+community: "soc/models.py"
 location: "L590"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/soc/modelspy
 ---
 
 # .test_unknown_severity_defaults_to_info()
@@ -15,4 +15,4 @@ tags:
 - [[TestCoerceToWSEventExtra]] - `method` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

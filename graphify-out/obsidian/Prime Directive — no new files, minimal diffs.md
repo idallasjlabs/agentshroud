@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Community 1596"
+community: "Prime Directive — no new files, minimal diffs"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1596
+  - community/Prime_Directive__no_new_files_minimal_diffs
 ---
 
 # Prime Directive — no new files, minimal diffs
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1596
+#graphify/rationale #graphify/EXTRACTED #community/Prime_Directive__no_new_files_minimal_diffs

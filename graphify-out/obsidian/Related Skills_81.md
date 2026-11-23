@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "Community 90"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

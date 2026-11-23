@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "wakeword.c"
+community: "test_dns_canvas_coverage.py"
 location: "L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .test_lifespan_startup_shutdown()
@@ -15,4 +15,4 @@ tags:
 - [[TestCanvasLifespan]] - `method` [EXTRACTED]
 - [[_run_asgi()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

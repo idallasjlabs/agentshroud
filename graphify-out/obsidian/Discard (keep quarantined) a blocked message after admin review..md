@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L2153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # Discard (keep quarantined) a blocked message after admin review.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[discard_blocked_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

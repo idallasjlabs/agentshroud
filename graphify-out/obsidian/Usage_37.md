@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sad/README.md"
+source_file: ".agents/skills/browser/README.md"
 type: "document"
-community: "Community 2093"
-location: "L9"
+community: "Browser — Secure Browser Automation"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2093
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2093
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

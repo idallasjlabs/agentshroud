@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L105"
+community: "ContextGuard"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[EgressFilterConfig_1]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `references` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

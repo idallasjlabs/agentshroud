@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "MCPInspector"
-location: "L230"
+community: "ingest_api/config.py"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/ingest_api/configpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[MCPAuditTrail_1]] - `references` [EXTRACTED]
-- [[MCPInspector]] - `references` [EXTRACTED]
-- [[MCPPermissionManager_1]] - `references` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
-- [[MCPProxyConfig]] - `references` [EXTRACTED]
+- [[Initialize router Args config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

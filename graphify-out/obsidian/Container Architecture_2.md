@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/TEAM.md"
 type: "document"
-community: "Community 1425"
-location: "L101"
+community: "AgentShroud Development Team — Agile Structure"
+location: "L149"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1425
+  - community/AgentShroud_Development_Team__Agile_Structure
 ---
 
 # Container Architecture
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
-- [[Bot Container (`agentshroud-bot`)]] - `contains` [EXTRACTED]
-- [[Gateway Container (`agentshroud-gateway`)]] - `contains` [EXTRACTED]
+- [[Development Environment]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1425
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Development_Team__Agile_Structure

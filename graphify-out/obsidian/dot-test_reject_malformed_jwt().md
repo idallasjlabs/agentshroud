@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "TestAuth"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestAuth
 ---
 
 # .test_reject_malformed_jwt()
 
 ## Connections
-- [[TestAuth]] - `method` [EXTRACTED]
+- [[TestAuth_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestAuth

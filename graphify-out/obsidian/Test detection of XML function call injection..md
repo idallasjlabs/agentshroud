@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Community 154"
+community: "ToolResultInjectionScanner"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/ToolResultInjectionScanner
 ---
 
 # Test detection of XML function call injection.
 
 ## Connections
-- [[.test_xml_function_injection_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_xml_function_injection_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_154
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 90"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

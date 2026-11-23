@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_launchd_install.sh"
 type: "code"
-community: "Community 2089"
+community: "test_launchd_install.sh"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2089
+  - community/test_launchd_installsh
 ---
 
 # bad()
@@ -15,4 +15,4 @@ tags:
 - [[test_launchd_install.sh]] - `defines` [EXTRACTED]
 - [[test_launchd_install.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2089
+#graphify/code #graphify/EXTRACTED #community/test_launchd_installsh

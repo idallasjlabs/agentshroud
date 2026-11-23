@@ -1,18 +1,17 @@
 ---
 source_file: "docs/planning/v1.2/blue-team-assessment-v1.2.0.md"
 type: "document"
-community: "Community 1119"
+community: "AgentShroud Security Overview v0.8.0"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1119
+  - community/AgentShroud_Security_Overview_v080
 ---
 
 # Blue Team Assessment v1.2.0 (First Dual-Bot Assessment)
 
 ## Connections
 - [[BT-H1 Cross-Bot Shared Memory Isolation Finding]] - `references` [EXTRACTED]
-- [[blue-team-assessment-v0.8.0]] - `references` [EXTRACTED]
 - [[v0.8.0 25-Domain Prompt Injection Defense Assessment]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1119
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Overview_v080

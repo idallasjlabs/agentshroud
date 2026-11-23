@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/start-agentshroud.sh"
 type: "code"
-community: "Community 997"
+community: "start-agentshroud.sh"
 location: "L871"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_997
+  - community/start-agentshroudsh
 ---
 
 # _poll_openclaw_ready()
@@ -17,4 +17,4 @@ tags:
 - [[start-agentshroud.sh]] - `defines` [EXTRACTED]
 - [[start-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_997
+#graphify/code #graphify/EXTRACTED #community/start-agentshroudsh

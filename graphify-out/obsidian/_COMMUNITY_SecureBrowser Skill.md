@@ -1,22 +1,56 @@
 ---
 type: community
-cohesion: 0.33
-members: 7
+members: 43
 ---
 
 # SecureBrowser Skill
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 7 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[AgentShroud Mission Statement (Timestamped)]] - rationale - docs/project/legal/PRIOR-USE.md
-- [[First Use in Commerce (Feb 20, 2026)]] - concept - docs/project/legal/PRIOR-USE.md
-- [[PRIOR-USE]] - document - docs/project/legal/PRIOR-USE.md
-- [[TEAS Plus Filing Process]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Class 009 Filing (Downloadable Software)]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO Class 042 Filing (ScientificTechnological Services)]] - concept - docs/project/legal/USPTO-APPLICATION.md
-- [[USPTO-APPLICATION]] - document - docs/project/legal/USPTO-APPLICATION.md
+- [[Approval required but none granted]] - document - skills/custom/securebrowser/README.md
+- [[Browser timeout_1]] - document - skills/custom/securebrowser/README.md
+- [[CAPTCHA detected_1]] - document - skills/custom/securebrowser/README.md
+- [[Credential extraction blocked]] - document - skills/custom/securebrowser/README.md
+- [[URL not in allowlist_1]] - document - skills/custom/securebrowser/README.md
+- [[1. Verify Installation]] - document - skills/custom/securebrowser/README.md
+- [[2. Configure Allowlist]] - document - skills/custom/securebrowser/README.md
+- [[3. Test Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Approval Workflow]] - document - skills/custom/securebrowser/README.md
+- [[Audit Trail]] - document - skills/custom/securebrowser/README.md
+- [[CLI Reference]] - document - skills/custom/securebrowser/README.md
+- [[Click]] - document - skills/custom/securebrowser/README.md
+- [[Configuration_9]] - document - skills/custom/securebrowser/README.md
+- [[Example 1 Simple Navigation]] - document - skills/custom/securebrowser/README.md
+- [[Example 2 Fill Form (Non-Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 3 Fill Password (Sensitive)]] - document - skills/custom/securebrowser/README.md
+- [[Example 4 Handle CAPTCHA]] - document - skills/custom/securebrowser/README.md
+- [[Extract]] - document - skills/custom/securebrowser/README.md
+- [[Fill Field]] - document - skills/custom/securebrowser/README.md
+- [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
+- [[Integration_2]] - document - skills/custom/securebrowser/README.md
+- [[Key Features_2]] - document - skills/custom/securebrowser/README.md
+- [[License_6]] - document - skills/custom/securebrowser/README.md
+- [[Limitations_1]] - document - skills/custom/securebrowser/README.md
+- [[Navigate]] - document - skills/custom/securebrowser/README.md
+- [[Overview_7]] - document - skills/custom/securebrowser/README.md
+- [[Publishing to ClawHub]] - document - skills/custom/securebrowser/README.md
+- [[Quick Start_5]] - document - skills/custom/securebrowser/README.md
+- [[Risk Classification]] - document - skills/custom/securebrowser/README.md
+- [[Screenshot]] - document - skills/custom/securebrowser/README.md
+- [[SecureBrowser Skill]] - document - skills/custom/securebrowser/README.md
+- [[Security Guarantees_1]] - document - skills/custom/securebrowser/README.md
+- [[Security Model]] - document - skills/custom/securebrowser/README.md
+- [[Step 1 Package Skill]] - document - skills/custom/securebrowser/README.md
+- [[Step 2 Test Locally]] - document - skills/custom/securebrowser/README.md
+- [[Step 3 Publish]] - document - skills/custom/securebrowser/README.md
+- [[Support_1]] - document - skills/custom/securebrowser/README.md
+- [[Troubleshooting_12]] - document - skills/custom/securebrowser/README.md
+- [[URL Access Control_1]] - document - skills/custom/securebrowser/README.md
+- [[Usage Examples_1]] - document - skills/custom/securebrowser/README.md
+- [[With 1Password]] - document - skills/custom/securebrowser/README.md
+- [[With AgentShroud Gateway]] - document - skills/custom/securebrowser/README.md
+- [[securebrowserREADME]] - document - skills/custom/securebrowser/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,12 +58,3 @@ members: 7
 TABLE source_file, type FROM #community/SecureBrowser_Skill
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_SecureBrowser Skill (3)]]
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill (2)]]
-- 1 edge to [[_COMMUNITY_apply-patches.js (2)]]
-
-## Top bridge nodes
-- [[USPTO-APPLICATION]] - degree 6, connects to 2 communities
-- [[PRIOR-USE]] - degree 5, connects to 2 communities

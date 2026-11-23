@@ -1,29 +1,21 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Community 450"
-location: "L6"
+community: "Browser — Secure Browser Automation"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Approval Integration_1]] - `contains` [EXTRACTED]
-- [[Audit Logging_1]] - `contains` [EXTRACTED]
-- [[Best Practices_2]] - `contains` [EXTRACTED]
-- [[Core Security Principles_1]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)_1]] - `contains` [EXTRACTED]
-- [[Limitations_1]] - `contains` [EXTRACTED]
-- [[Risk Levels_1]] - `contains` [EXTRACTED]
-- [[SKILL_4]] - `contains` [EXTRACTED]
-- [[Security Architecture_1]] - `contains` [EXTRACTED]
-- [[Security Configuration_1]] - `contains` [EXTRACTED]
-- [[Security Guarantees_1]] - `contains` [EXTRACTED]
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
-- [[Usage_8]] - `contains` [EXTRACTED]
+- [[Purpose_136]] - `contains` [EXTRACTED]
+- [[Related Skills_66]] - `contains` [EXTRACTED]
+- [[Usage_76]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserREADME]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

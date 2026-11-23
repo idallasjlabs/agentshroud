@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-capability.md"
 type: "document"
-community: "Community 703"
+community: "SSH Capability Architecture Document"
 location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_703
+  - community/SSH_Capability_Architecture_Document
 ---
 
 # Auto-Approved Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Request Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_703
+#graphify/document #graphify/EXTRACTED #community/SSH_Capability_Architecture_Document

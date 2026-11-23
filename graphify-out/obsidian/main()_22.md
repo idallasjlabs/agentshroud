@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/export-telegram-history.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "Community 777"
-location: "L148"
+community: "test_edge_service_routes.py"
+location: "L501"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/test_edge_service_routespy
 ---
 
 # main()
 
 ## Connections
-- [[Path_52]] - `calls` [EXTRACTED]
-- [[_parse_since()_2]] - `calls` [EXTRACTED]
-- [[export()]] - `calls` [EXTRACTED]
-- [[export-telegram-history.py]] - `contains` [EXTRACTED]
+- [[create_app()]] - `calls` [EXTRACTED]
+- [[edge_app.py]] - `contains` [EXTRACTED]
+- [[settings_from_env()]] - `calls` [EXTRACTED]
+- [[verify_shipped_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

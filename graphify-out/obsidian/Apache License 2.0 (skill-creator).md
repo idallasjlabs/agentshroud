@@ -1,13 +1,13 @@
 ---
 source_file: "skills/openclaw/skill-creator/license.txt"
 type: "document"
-community: "Community 1893"
+community: "Apache License 2.0 (skill-creator)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1893
+  - community/Apache_License_20_skill-creator
 ---
 
 # Apache License 2.0 (skill-creator)
 
-#graphify/document #graphify/EXTRACTED #community/Community_1893
+#graphify/document #graphify/EXTRACTED #community/Apache_License_20_skill-creator

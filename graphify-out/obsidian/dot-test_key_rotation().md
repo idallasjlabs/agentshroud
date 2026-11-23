@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "EncryptedStore"
 location: "L746"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/EncryptedStore
 ---
 
 # .test_key_rotation()
@@ -15,4 +15,4 @@ tags:
 - [[Key rotation should re-encrypt all blobs.]] - `rationale_for` [EXTRACTED]
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

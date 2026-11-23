@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-odev.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 821"
-location: "L107"
+community: "Mode A — Single task"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_821
+  - community/Mode_A__Single_task
 ---
 
 # Reviewers and fixer available to you
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_821
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

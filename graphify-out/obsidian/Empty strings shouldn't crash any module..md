@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "ContextGuard"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/ContextGuard
 ---
 
 # Empty strings shouldn't crash any module.
 
 ## Connections
-- [[.test_empty_inputs_everywhere()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_empty_inputs_everywhere()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

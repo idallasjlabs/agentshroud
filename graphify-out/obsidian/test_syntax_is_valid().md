@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "Community 728"
+community: "_run"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_728
+  - community/_run
 ---
 
 # test_syntax_is_valid()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_728
+#graphify/code #graphify/EXTRACTED #community/_run

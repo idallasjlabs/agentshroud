@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/requirements.txt"
 type: "code"
-community: "Community 1196"
+community: "upgrade-2026-10-12.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1196
+  - community/upgrade-2026-10-12md
 ---
 
 # gateway/requirements.txt
@@ -14,7 +14,6 @@ tags:
 - [[Presidio PII detection deps (analyzeranonymizerspacy)]] - `references` [EXTRACTED]
 - [[Transitive-dependency security floors (pip-audit gate)]] - `rationale_for` [EXTRACTED]
 - [[python-jose removal (CVE-2024-3366333664)]] - `rationale_for` [EXTRACTED]
-- [[sunday-upgrade]] - `references` [INFERRED]
 - [[websockets 16.1.1 - 17.1 Sunday upgrade bump]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1196
+#graphify/code #graphify/EXTRACTED #community/upgrade-2026-10-12md

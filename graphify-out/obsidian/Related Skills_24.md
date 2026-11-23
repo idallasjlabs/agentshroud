@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: ".agents/skills/athena/README.md"
 type: "document"
-community: "Community 1915"
+community: "Athena — Knowledge Distiller"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Related Skills
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

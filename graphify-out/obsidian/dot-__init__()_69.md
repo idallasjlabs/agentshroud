@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "Colima & Docker Operations Guide — AgentShroud"
-location: "L83"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[dot-_load_config()]] - `calls` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

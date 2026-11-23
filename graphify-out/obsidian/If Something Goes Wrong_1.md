@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ps/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 438"
-location: "L174"
+community: "Pre-Deployment Checklist"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_438
+  - community/Pre-Deployment_Checklist
 ---
 
 # If Something Goes Wrong
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_438
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

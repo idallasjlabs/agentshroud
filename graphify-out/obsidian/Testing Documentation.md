@@ -1,19 +1,19 @@
 ---
 source_file: "docs/testing/README.md"
 type: "document"
-community: "Community 1354"
+community: "Testing Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1354
+  - community/Testing_Documentation
 ---
 
 # Testing Documentation
 
 ## Connections
-- [[Current Status_11]] - `contains` [EXTRACTED]
+- [[Current Status_9]] - `contains` [EXTRACTED]
 - [[Planned Documents_6]] - `contains` [EXTRACTED]
-- [[README_126]] - `contains` [EXTRACTED]
+- [[testingREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1354
+#graphify/document #graphify/EXTRACTED #community/Testing_Documentation

@@ -1,23 +1,23 @@
 ---
 source_file: ".github/agents/i-mnemosyne.agent.md"
 type: "document"
-community: "Community 1981"
+community: "Mnemosyne — Retention Engineer"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1981
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Mnemosyne — Retention Engineer
 
 ## Connections
-- [[Input Requirements_36]] - `contains` [EXTRACTED]
-- [[Output Format_49]] - `contains` [EXTRACTED]
-- [[Persona_28]] - `contains` [EXTRACTED]
-- [[Quality Checklist_32]] - `contains` [EXTRACTED]
-- [[Role_130]] - `contains` [EXTRACTED]
-- [[System Prompt_28]] - `contains` [EXTRACTED]
+- [[Input Requirements_42]] - `contains` [EXTRACTED]
+- [[Output Format_57]] - `contains` [EXTRACTED]
+- [[Persona_36]] - `contains` [EXTRACTED]
+- [[Quality Checklist_42]] - `contains` [EXTRACTED]
+- [[Role_107]] - `contains` [EXTRACTED]
+- [[System Prompt_36]] - `contains` [EXTRACTED]
 - [[i-mnemosyne.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1981
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

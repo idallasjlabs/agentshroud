@@ -1,27 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
-type: "document"
-community: "Community 565"
-location: "L10"
+source_file: "gateway/security/clamav_scanner.py"
+type: "code"
+community: "test_clamav_pipeline.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_565
+  - community/test_clamav_pipelinepy
 ---
 
 # clamav_scanner.py
 
 ## Connections
-- [[Configuration_17]] - `contains` [EXTRACTED]
-- [[Environment Variables_8]] - `contains` [EXTRACTED]
-- [[Error Handling_16]] - `contains` [EXTRACTED]
-- [[Function Details_30]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_33]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_3]] - `contains` [EXTRACTED]
-- [[Purpose_151]] - `contains` [EXTRACTED]
-- [[Related_37]] - `contains` [EXTRACTED]
-- [[Responsibilities_35]] - `contains` [EXTRACTED]
-- [[Threat Model_6]] - `contains` [EXTRACTED]
-- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
+- [[clamd_available()]] - `contains` [EXTRACTED]
+- [[generate_summary()_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[parse_clamscan_output()]] - `contains` [EXTRACTED]
+- [[preferred_scan_binary()]] - `contains` [EXTRACTED]
+- [[run_clamscan()]] - `contains` [EXTRACTED]
+- [[save_report()_1]] - `contains` [EXTRACTED]
+- [[scan_bytes()]] - `contains` [EXTRACTED]
+- [[test_clamav_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
+- [[update_virus_db()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_565
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

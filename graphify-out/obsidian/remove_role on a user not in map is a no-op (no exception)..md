@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "rationale"
-community: "Community 33"
+community: "GroupRoleResolver"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_33
+  - community/GroupRoleResolver
 ---
 
 # remove_role on a user not in map is a no-op (no exception).
 
 ## Connections
-- [[.test_remove_role_noop_for_missing_user()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_remove_role_noop_for_missing_user()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_33
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

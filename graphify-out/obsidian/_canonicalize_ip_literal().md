@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 111"
+community: "_canonicalize_ip_literal"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/_canonicalize_ip_literal
 ---
 
 # _canonicalize_ip_literal()
 
 ## Connections
-- [[Best-effort canonicalization of alternate IPv4 encodings that     ``ipaddress.ip]] - `rationale_for` [EXTRACTED]
-- [[IPv4Address]] - `calls` [EXTRACTED]
+- [[Best-effort canonicalization of alternate IPv4 encodings that…]] - `rationale_for` [EXTRACTED]
 - [[_BaseAddress]] - `references` [EXTRACTED]
 - [[_int_to_ipv4()]] - `calls` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_111
+#graphify/code #graphify/EXTRACTED #community/_canonicalize_ip_literal

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "._make_proxy()"
-location: "L19"
+community: "DockerEngine"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/DockerEngine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[ResourceGuard]] - `calls` [EXTRACTED]
-- [[ResourceLimits]] - `calls` [EXTRACTED]
-- [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `calls` [EXTRACTED]
+- [[TestDockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

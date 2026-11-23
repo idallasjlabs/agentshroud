@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: ""
 type: "code"
-community: "Community 575"
-location: "L175"
+community: "BufferHandler"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_575
+  - community/BufferHandler
 ---
 
 # LogRecord
 
 ## Connections
-- [[.emit()_1]] - `references` [EXTRACTED]
+- [[dot-emit()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_575
+#graphify/code #graphify/EXTRACTED #community/BufferHandler

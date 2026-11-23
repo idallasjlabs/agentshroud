@@ -1,24 +1,23 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "Community 92"
-location: "L242"
+community: "cli/main.py"
+location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/cli/mainpy
 ---
 
 # set_mode()
 
 ## Connections
-- [[.test_auto_revert_restores_enforce()]] - `calls` [EXTRACTED]
-- [[.test_revert_task_created_on_put()]] - `calls` [EXTRACTED]
-- [[.test_second_put_cancels_previous_task()]] - `calls` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
-- [[ModeRequest]] - `references` [EXTRACTED]
-- [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
-- [[test_observatory_mode.py]] - `imports` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[Set collaboration mode for a group.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[argument]] - `references` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[command_9]] - `references` [EXTRACTED]
+- [[pass_context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

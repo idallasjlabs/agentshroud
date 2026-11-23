@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Community 75"
+community: "FalcoAlertWatcher"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/FalcoAlertWatcher
 ---
 
 # test_no_progressive_lockdown_configured()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `uses` [INFERRED]
 - [[Watcher works without a lockdown module — only logs.]] - `rationale_for` [EXTRACTED]
 - [[_make_alert()]] - `calls` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

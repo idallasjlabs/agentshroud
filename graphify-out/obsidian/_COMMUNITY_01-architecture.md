@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.20
 members: 10
 ---
 
 # 01-architecture.md
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[Change Default Model]] - document - docs/setup/SETUP_API_KEYS.md
-- [[Check Current Profile_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Current Profile_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Check Telegram Channel Status]] - document - docs/setup/SETUP_API_KEYS.md
-- [[List Available Models]] - document - docs/setup/SETUP_API_KEYS.md
-- [[List Available Profiles_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
-- [[List Available Profiles_2]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[Quick Reference_9]] - document - docs/setup/SETUP_API_KEYS.md
-- [[View Configured Profiles_1]] - document - docker/config/hermes/skills/i-mcpm-aws-profile/SKILL.md
-- [[View Configured Providers]] - document - docs/setup/SETUP_API_KEYS.md
+- [[01-architecture]] - document - docs/diagrams/01-architecture.md
+- [[1. C4 Level 0 — Context Diagram (Executive View)]] - document - docs/diagrams/01-architecture.md
+- [[2. C4 Level 1 — Container Diagram]] - document - docs/diagrams/01-architecture.md
+- [[3. Architecture Component Diagram — Gateway internals]] - document - docs/diagrams/01-architecture.md
+- [[AgentShroud — Architecture Diagrams]] - document - docs/diagrams/01-architecture.md
+- [[C4 Level 0 — System Context Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[C4 Level 1 — Container Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[Gateway Internals Component Diagram]] - concept - docs/diagrams/01-architecture.md
+- [[Rendered C4 Context Diagram (PNG)]] - image - docs/diagrams/images/diagram-01-c4-context.png
+- [[Rendered Gateway Components Diagram (PNG)]] - image - docs/diagrams/images/diagram-03-gateway-components.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,13 +25,3 @@ members: 10
 TABLE source_file, type FROM #community/01-architecturemd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE) (2)]]
-- 1 edge to [[_COMMUNITY_AWS Cloud Management & FinOps Agent]]
-- 1 edge to [[_COMMUNITY_iCloud Services Setup - Complete Guide]]
-
-## Top bridge nodes
-- [[Quick Reference_9]] - degree 5, connects to 1 community
-- [[List Available Profiles_2]] - degree 4, connects to 1 community
-- [[List Available Profiles_1]] - degree 3, connects to 1 community

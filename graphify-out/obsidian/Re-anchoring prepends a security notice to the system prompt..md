@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 60"
+community: "test_session_manager.py"
 location: "L434"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/test_session_managerpy
 ---
 
 # Re-anchoring prepends a security notice to the system prompt.
 
 ## Connections
-- [[.test_reanchor_prepends_preamble()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_reanchor_prepends_preamble()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_60
+#graphify/rationale #graphify/EXTRACTED #community/test_session_managerpy

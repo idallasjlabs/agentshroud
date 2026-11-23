@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "SecurityPipeline"
 location: "L769"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/SecurityPipeline
 ---
 
 # .test_non_owner_inbound_query_still_redacted()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_redacting_pii()]] - `calls` [EXTRACTED]
 - [[Non-owner query must still be PII-scrubbed (detector + threshold unchanged).]] - `rationale_for` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[TestInboundPIIOwnerExemption]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

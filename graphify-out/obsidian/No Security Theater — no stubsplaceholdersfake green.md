@@ -1,13 +1,13 @@
 ---
 source_file: "CLAUDE.md"
 type: "rationale"
-community: "Community 1593"
+community: "No Security Theater — no stubs/placeholders/fake green"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1593
+  - community/No_Security_Theater__no_stubs/placeholders/fake_green
 ---
 
 # No Security Theater — no stubs/placeholders/fake green
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1593
+#graphify/rationale #graphify/EXTRACTED #community/No_Security_Theater__no_stubs/placeholders/fake_green

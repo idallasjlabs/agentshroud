@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
+source_file: ".agents/agents/icloud.md"
 type: "document"
-community: "Community 409"
-location: "L223"
+community: "iCloud Services"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_409
+  - community/iCloud_Services
 ---
 
 # Configuration
 
 ## Connections
-- [[Guard Presence and Startup Behavior]] - `contains` [EXTRACTED]
-- [[Key Thresholds]] - `contains` [EXTRACTED]
-- [[Monitor vs. Enforce Mode]] - `contains` [EXTRACTED]
-- [[Owner Exemption]] - `contains` [EXTRACTED]
-- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
+- [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_409
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

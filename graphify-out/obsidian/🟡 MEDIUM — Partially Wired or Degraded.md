@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Community 459"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
 location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_459
+  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
 ---
 
 # 🟡 MEDIUM — Partially Wired or Degraded
@@ -18,4 +18,4 @@ tags:
 - [[9. Audit Store Not Passed to Pipeline]] - `contains` [EXTRACTED]
 - [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_459
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit

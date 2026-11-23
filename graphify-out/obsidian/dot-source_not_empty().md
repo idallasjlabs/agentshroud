@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "IntelReportStore"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/IntelReportStore
 ---
 
 # .source_not_empty()
 
 ## Connections
-- [[CompetitiveIntelReport_2]] - `method` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `method` [EXTRACTED]
+- [[field_validator_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

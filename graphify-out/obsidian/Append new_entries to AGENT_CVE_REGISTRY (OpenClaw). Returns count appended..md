@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "browser/scripts/browse.py"
-location: "L470"
+community: "sync-cve-registry.py"
+location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/sync-cve-registrypy
 ---
 
 # Append new_entries to AGENT_CVE_REGISTRY (OpenClaw). Returns count appended.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[append_to_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

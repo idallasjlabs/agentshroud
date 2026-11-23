@@ -1,18 +1,18 @@
 ---
 source_file: "reports/upgrade-2026-09-20.md"
 type: "document"
-community: "Community 671"
+community: "AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_671
+  - community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run
 ---
 
 # AgentShroud Sunday Upgrade Report — 2026-09-20 (PROD run)
 
 ## Connections
-- [[1. Summary line_2]] - `contains` [EXTRACTED]
+- [[1. Summary line_11]] - `contains` [EXTRACTED]
 - [[10. Jira tracking]] - `contains` [EXTRACTED]
 - [[11. Verification evidence_1]] - `contains` [EXTRACTED]
 - [[12. Breaking changes  manual follow-ups_1]] - `contains` [EXTRACTED]
@@ -23,10 +23,10 @@ tags:
 - [[4. Preflight (prod, read-only)_1]] - `contains` [EXTRACTED]
 - [[5. Inventory — wrapped agents (mandatory script, cited)_1]] - `contains` [EXTRACTED]
 - [[6. Prod stack current health (read-only, unchanged by this run)]] - `contains` [EXTRACTED]
-- [[7. Security findings_1]] - `contains` [EXTRACTED]
+- [[7. Security findings]] - `contains` [EXTRACTED]
 - [[8. Security findings table_1]] - `contains` [EXTRACTED]
 - [[9. Upgrade table_1]] - `contains` [EXTRACTED]
+- [[Sunday Upgrade Report — 2026-09-20 (PROD run, full)]] - `contains` [EXTRACTED]
 - [[upgrade-2026-09-06]] - `contains` [EXTRACTED]
-- [[upgrade-2026-09-20]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_671
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade_Report__2026-09-20_PROD_run

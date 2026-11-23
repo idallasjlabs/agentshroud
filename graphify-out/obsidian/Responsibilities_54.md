@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 733"
+community: "drift_detector.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_733
+  - community/drift_detectorpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_733
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

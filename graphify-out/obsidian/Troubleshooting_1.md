@@ -1,22 +1,20 @@
 ---
-source_file: ".agents/agents/i-mcpm-auth-reset.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 211"
-location: "L163"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Bot doesn't respond]] - `contains` [EXTRACTED]
+- [[Cannot find bot]] - `contains` [EXTRACTED]
+- [[Messages delayed]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_211
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

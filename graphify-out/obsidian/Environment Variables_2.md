@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
+source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
 type: "document"
-community: "Community 714"
-location: "L43"
+community: "agent_isolation.py"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_714
+  - community/agent_isolationpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_714
+#graphify/document #graphify/EXTRACTED #community/agent_isolationpy

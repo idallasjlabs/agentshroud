@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestFileDownload]] - `method` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 - [[proxy_request with path_prefix='file' returns _raw_body sentinel (no JSON…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

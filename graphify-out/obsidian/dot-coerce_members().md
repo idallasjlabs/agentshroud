@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "test_collaborator_responses.py"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/test_collaborator_responsespy
 ---
 
 # .coerce_members()
 
 ## Connections
 - [[GroupConfig]] - `method` [EXTRACTED]
+- [[field_validator]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

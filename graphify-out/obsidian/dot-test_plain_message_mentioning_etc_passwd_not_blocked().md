@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_file_sandbox_message_gate.py"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # .test_plain_message_mentioning_etc_passwd_not_blocked()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestFileSandboxSkippedForPlainMessages]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
+- [[asyncio_61]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

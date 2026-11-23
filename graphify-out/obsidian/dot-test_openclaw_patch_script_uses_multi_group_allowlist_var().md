@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "TestConfigValidation"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/TestConfigValidation
 ---
 
 # .test_openclaw_patch_script_uses_multi_group_allowlist_var()
 
 ## Connections
 - [[TestConfigValidation]] - `method` [EXTRACTED]
-- [[apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).]] - `rationale_for` [EXTRACTED]
+- [[apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestConfigValidation

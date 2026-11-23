@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L7993"
+community: "TelegramAPIProxy"
+location: "L8031"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/TelegramAPIProxy
 ---
 
 # ._send_collaborator_safe_info_response()
@@ -17,6 +17,7 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_text()]] - `calls` [EXTRACTED]
 - [[Send tailored safe informational response for collaborator conceptual query.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[_app_state()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

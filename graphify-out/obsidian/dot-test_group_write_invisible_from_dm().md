@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TestDmIsolation"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/TestDmIsolation
 ---
 
 # .test_group_write_invisible_from_dm()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDmIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestDmIsolation

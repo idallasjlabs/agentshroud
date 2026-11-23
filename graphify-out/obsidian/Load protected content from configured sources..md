@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 141"
+community: "middleware.py"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_141
+  - community/middlewarepy
 ---
 
 # Load protected content from configured sources.
 
 ## Connections
-- [[._load_protected_content()]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_protected_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_141
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

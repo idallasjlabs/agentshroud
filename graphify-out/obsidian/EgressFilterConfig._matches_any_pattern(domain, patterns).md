@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
 type: "document"
-community: "Community 676"
+community: "egress_config.py"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_676
+  - community/egress_configpy
 ---
 
 # EgressFilterConfig._matches_any_pattern(domain, patterns)
 
 ## Connections
-- [[Function Details_34]] - `contains` [EXTRACTED]
+- [[Function Details_19]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_676
+#graphify/document #graphify/EXTRACTED #community/egress_configpy

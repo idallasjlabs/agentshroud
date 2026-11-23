@@ -12,7 +12,8 @@ tags:
 # .test_owner_bypass_is_always_false_regardless_of_input()
 
 ## Connections
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
-- [[Unlike MCP, owner_bypass is not operator-configurable for A2A at         all — a]] - `rationale_for` [EXTRACTED]
+- [[Unlike MCP, owner_bypass is not operator-configurable for A2A at all — an…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

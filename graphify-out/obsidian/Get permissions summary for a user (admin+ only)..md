@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L3998"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # Get permissions summary for a user (admin+ only).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_user_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

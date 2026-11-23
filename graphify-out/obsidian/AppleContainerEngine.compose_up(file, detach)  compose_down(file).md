@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Community 612"
+community: "apple_engine.py"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/apple_enginepy
 ---
 
 # AppleContainerEngine.compose_up(file, detach) / compose_down(file)
 
 ## Connections
-- [[Function Details_19]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

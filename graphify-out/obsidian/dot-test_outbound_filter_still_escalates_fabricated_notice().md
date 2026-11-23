@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "asyncio"
 location: "L807"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/asyncio
 ---
 
 # .test_outbound_filter_still_escalates_fabricated_notice()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[TestOutboundFilterResultBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

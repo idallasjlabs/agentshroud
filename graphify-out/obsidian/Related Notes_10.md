@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 1053"
-location: "L49"
+community: "agentshroud.yaml"
+location: "L213"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1053
+  - community/agentshroudyaml
 ---
 
 # Related Notes
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1053
+#graphify/document #graphify/EXTRACTED #community/agentshroudyaml

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-apollo/README.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Community 1224"
+community: "Vulcan — Subject Matter Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1224
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Usage
 
 ## Connections
-- [[Apollo — Audio Systems Producer_9]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1224
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

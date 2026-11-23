@@ -1,20 +1,22 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 316"
-location: "L142"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L163"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_316
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_6]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_6]] - `contains` [EXTRACTED]
-- [[Connection timeout_6]] - `contains` [EXTRACTED]
-- [[iCloud Services_6]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_1]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_1]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_1]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_1]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_316
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

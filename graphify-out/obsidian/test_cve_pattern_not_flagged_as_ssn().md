@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_us_ssn_regex_tightened.py"
 type: "code"
-community: "Community 835"
+community: "test_us_ssn_regex_tightened.py"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_835
+  - community/test_us_ssn_regex_tightenedpy
 ---
 
 # test_cve_pattern_not_flagged_as_ssn()
 
 ## Connections
 - [[CVE identifiers must NOT be treated as US_SSN.]] - `rationale_for` [EXTRACTED]
-- [[US_SSN regex tightened to exclude CVE IDs]] - `rationale_for` [EXTRACTED]
+- [[asyncio_17]] - `references` [EXTRACTED]
 - [[test_us_ssn_regex_tightened.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_835
+#graphify/code #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

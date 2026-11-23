@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
-location: "L309"
+community: "TestWazuhSummary"
+location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/TestWazuhSummary
 ---
 
 # .test_not_installed()
 
 ## Connections
-- [[TestCheckOpenscap]] - `method` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestWazuhSummary

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/resource_guard.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "._make_proxy()"
-location: "L88"
+community: "ContributorManager"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ContributorManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
-- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
-- [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceLimits]] - `references` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ContributorManager

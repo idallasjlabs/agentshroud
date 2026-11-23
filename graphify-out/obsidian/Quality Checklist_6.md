@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/oracle.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "Community 1979"
-location: "L88"
+community: "Technical Specification"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1979
+  - community/Technical_Specification
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1979
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

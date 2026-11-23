@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 351"
+community: "TestPromptProtection"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/TestPromptProtection
 ---
 
 # Test that dynamically registered bot hostnames are redacted.
 
 ## Connections
-- [[.test_dynamic_bot_hostname_redaction()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dynamic_bot_hostname_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_351
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

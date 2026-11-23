@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "Community 62"
-location: "L386"
+community: "ingest_api/main.py"
+location: "L34"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

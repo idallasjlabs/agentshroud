@@ -1,25 +1,25 @@
 ---
 source_file: "CONTRIBUTING.md"
 type: "document"
-community: "Community 588"
+community: "Contributing to AgentShroud™"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_588
+  - community/Contributing_to_AgentShroud
 ---
 
 # Contributing to AgentShroud™
 
 ## Connections
-- [[CONTRIBUTING]] - `contains` [EXTRACTED]
+- [[CONTRIBUTING_1]] - `contains` [EXTRACTED]
 - [[Code Style]] - `contains` [EXTRACTED]
 - [[Code of Conduct]] - `contains` [EXTRACTED]
 - [[Development Setup]] - `contains` [EXTRACTED]
 - [[Pull Request Process]] - `contains` [EXTRACTED]
-- [[Questions_1]] - `contains` [EXTRACTED]
+- [[Questions_2]] - `contains` [EXTRACTED]
 - [[Response SLA]] - `contains` [EXTRACTED]
 - [[Test Guidelines]] - `contains` [EXTRACTED]
 - [[What to Contribute]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_588
+#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud

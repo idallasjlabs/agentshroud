@@ -12,7 +12,8 @@ tags:
 # .test_audit_entry_created()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

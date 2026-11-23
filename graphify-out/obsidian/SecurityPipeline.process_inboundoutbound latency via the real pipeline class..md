@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Community 7"
+community: "PIIConfig"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/PIIConfig
 ---
 
 # SecurityPipeline.process_inbound/outbound latency via the real pipeline class.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityPipelineChainLatency]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

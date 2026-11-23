@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_audit_archive.py"
+type: "rationale"
+community: "archive_old_events"
+location: "L237"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/archive_old_events
+---
+
+# A full disk (or any VACUUM-specific OperationalError) must not raise past a…
+
+## Connections
+- [[dot-test_vacuum_failure_does_not_discard_a_successful_archive()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/archive_old_events

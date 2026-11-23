@@ -1,30 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 84"
+community: "test_e2e_watchtower.py"
 location: "L177"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_84
+  - graphify/EXTRACTED
+  - community/test_e2e_watchtowerpy
 ---
 
 # TestE2E04ContextGuardBlocking
 
 ## Connections
-- [[.test_cross_context_injection_blocked()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[CanaryTripwire]] - `uses` [INFERRED]
-- [[ContextGuard]] - `uses` [INFERRED]
+- [[dot-test_cross_context_injection_blocked()]] - `method` [EXTRACTED]
 - [[E2E-04 ContextGuard detects session-level injection in multi-turn context.]] - `rationale_for` [EXTRACTED]
-- [[EncodingDetector]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_84
+#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy

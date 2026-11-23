@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "MultiTurnTracker"
+community: "ContextGuard"
 location: "L375"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/ContextGuard
 ---
 
 # ._detect_hidden_instructions()
 
 ## Connections
 - [[dot-analyze_message()]] - `calls` [EXTRACTED]
-- [[ContextAttack]] - `references` [EXTRACTED]
+- [[ContextAttack]] - `calls` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Detect hidden instructions buried in large text blocks.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

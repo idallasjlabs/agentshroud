@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Community 242"
-location: "L181"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Savings Levers (Ranked by Impact)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FY26 Cost Reduction Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_242
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

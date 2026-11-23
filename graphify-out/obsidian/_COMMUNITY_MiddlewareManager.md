@@ -1,17 +1,14 @@
 ---
 type: community
-cohesion: 0.01
-members: 333
+members: 91
 ---
 
 # MiddlewareManager
 
-**Cohesion:** 0.01 - loosely connected
-**Members:** 333 nodes
+**Members:** 91 nodes
 
 ## Members
-- [[dot-__init__()_19]] - code - gateway/security/session_manager.py
-- [[dot-__init__()_20]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-_analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
 - [[dot-_check_cross_session_access()]] - code - gateway/ingest_api/middleware.py
 - [[dot-_check_rbac_permissions()]] - code - gateway/ingest_api/middleware.py
 - [[dot-_critical_guard_failure()]] - code - gateway/ingest_api/middleware.py
@@ -21,328 +18,87 @@ members: 333
 - [[dot-_is_owner()]] - code - gateway/ingest_api/middleware.py
 - [[dot-_is_path_allowed_for_user()]] - code - gateway/ingest_api/middleware.py
 - [[dot-_is_tool_call_request()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_load_sessions()]] - code - gateway/security/session_manager.py
-- [[dot-_save_sessions()]] - code - gateway/security/session_manager.py
-- [[dot-_session_key()]] - code - gateway/security/session_manager.py
-- [[dot-_validate_bot_id()]] - code - gateway/security/session_manager.py
-- [[dot-_validate_user_id()]] - code - gateway/security/session_manager.py
-- [[dot-add_conversation_message()]] - code - gateway/security/session_manager.py
-- [[dot-can_user_access_group()]] - code - gateway/security/session_manager.py
-- [[dot-can_user_access_session()]] - code - gateway/security/session_manager.py
-- [[dot-check_permission()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-check_tool_permission()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-cleanup_old_sessions()_1]] - code - gateway/security/session_manager.py
-- [[dot-close()_2]] - code - gateway/ingest_api/middleware.py
+- [[dot-_record_guard_init_failure()]] - code - gateway/ingest_api/middleware.py
+- [[dot-close()]] - code - gateway/ingest_api/middleware.py
 - [[dot-filter_outbound_response()]] - code - gateway/ingest_api/middleware.py
-- [[dot-from_dict()_1]] - code - gateway/security/session_manager.py
 - [[dot-get_alert_dispatcher()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_dns_filter()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_drift_detector()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_enhanced_tool_sanitizer()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_killswitch_monitor()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_log_sanitizer()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_merged_context()]] - code - gateway/security/session_manager.py
 - [[dot-get_multi_turn_tracker()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_network_validator()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_or_create_group_session()]] - code - gateway/security/session_manager.py
-- [[dot-get_or_create_session()]] - code - gateway/security/session_manager.py
 - [[dot-get_output_canary()]] - code - gateway/ingest_api/middleware.py
 - [[dot-get_rbac_manager()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_session_context()]] - code - gateway/security/session_manager.py
-- [[dot-get_session_prompt_addition()]] - code - gateway/security/session_manager.py
 - [[dot-get_tool_chain_analyzer()]] - code - gateway/ingest_api/middleware.py
-- [[dot-get_user_role()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-get_user_workspace_path()]] - code - gateway/security/session_manager.py
-- [[dot-list_sessions_for_user()]] - code - gateway/security/session_manager.py
-- [[dot-middleware_manager()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-process_request()]] - code - gateway/ingest_api/middleware.py
 - [[dot-process_tool_result()]] - code - gateway/ingest_api/middleware.py
-- [[dot-reanchor_system_prompt()]] - code - gateway/security/session_manager.py
 - [[dot-scan_tool_result()]] - code - gateway/ingest_api/middleware.py
-- [[dot-session_manager()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-session_manager()_1]] - code - gateway/tests/test_session_isolation.py
-- [[dot-temp_workspace()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-temp_workspace()_1]] - code - gateway/tests/test_session_isolation.py
-- [[dot-temp_workspace()_2]] - code - gateway/tests/test_session_isolation.py
-- [[dot-temp_workspace()_3]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_absolute_and_relative_paths()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_allowed_chain_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_analyzer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_rewrite_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_with_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_blocked_without_chain_match()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_bots_resolution_error_swallowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_browser_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_clean_message_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_command_indicator_allowed_when_check_passes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_command_indicator_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_complete_user_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_conversation_history_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_critical_attack_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_critical_finding_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_critical_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_cross_user_path_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_default_bot_and_sanitizer_configured()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_default_deny()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-setup_method()]] - code - gateway/tests/test_rbac.py
+- [[dot-teardown_method()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_actual_test_count_meets_minimum()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_all_module_attrs_exist_after_init()]] - code - gateway/tests/test_docs_accuracy.py
 - [[dot-test_defaults()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_delete_action()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_denied_with_reason()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_dict_message_handled()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_direct_field()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_direct_no_session_manager_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_editor_command_and_quotes()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_empty_tool_calls_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_empty_tool_results_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_env_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_exception_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_exception_fails_open()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_exception_fails_secure()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_execute_action_medium_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_existing_session_context_not_reinjected()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_expected_write_registered()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_fallback_without_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_filter_applied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_filter_not_applied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_full_init_success_and_getters()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_git_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_guard_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_headers_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_high_threat_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_high_tool_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_init_all_modules_fail_falls_back_to_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_invisible_chars_normalized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_isolation_error_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_isolation_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_isolation_fail_closed_without_session_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_log_action_no_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_log_action_with_patterns_returns_original()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_low_finding_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_low_severity_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_low_threat_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_memory_file_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_message_dict_is_stringified_and_normalized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_metadata_exception_non_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_metadata_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_middleware_cross_session_blocking()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_middleware_file_path_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_middleware_normalizes_invisible_unicode()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_middleware_own_workspace_allowed()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_middleware_owner_bypass()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_middleware_session_context_injection()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_middleware_user_identification()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_missing_returns_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_mm_fixture_without_failed_guards_attr_is_safe()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_multi_turn_block_reason_hides_score()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_no_bots_keeps_fallback_workspace()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_filter_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_path_match_no_registration()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_paths()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_scanner_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_session_manager_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_no_user_id_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_non_critical_guard_failure_not_recorded()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_non_default_bot_fallback()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_non_owner_blocked()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_non_owner_blocked_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_not_configured_guard_does_not_fail_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_other_user_under_users_base_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_outer_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_own_workspace_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_own_workspace_path_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_access_control()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_owner_admin_access()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_owner_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_bypass()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_bypass()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_bypass()_2]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_bypasses_sandbox()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_exempt_when_critical_guard_failed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_owner_plain_message_with_path_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_chat_not_a_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_plain_message_skips_check()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_question_defaults_to_read_system()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_rbac_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_rbac_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_rbac_pass_logs_role_and_allows()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_rbac_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_read_action_low_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_sandbox_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_sanitizer_construction_error_sets_none()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_session_context_generation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_session_context_priority()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_session_creation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_session_isolation_directories()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_session_listing_authorization()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_session_persistence()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_session_prompt_isolation()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_strip_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_calls_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tool_permission_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_tool_permission_requires_approval()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_tool_results_key_detected()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_trust_level_per_user()]] - code - gateway/tests/test_session_isolation.py
-- [[dot-test_type_field_message_not_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_type_field_tool_call()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[dot-test_unblocked_rewrite_allowed()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_unknown_defaults_to_tool_use()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_users_heuristic_denied()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_warn_action_returns_sanitized()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_with_rbac_manager()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-test_write_action_no_tier()]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-to_dict()_2]] - code - gateway/security/session_manager.py
-- [[dot-update_user_trust_level()]] - code - gateway/security/session_manager.py
-- [[A security-critical guard whose constructor RAISES during __init__ must     NOT]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[A single message in a conversation.]] - rationale - gateway/security/session_manager.py
-- [[Add a message to the user's conversation history for a specific bot.]] - rationale - gateway/security/session_manager.py
-- [[Any_3]] - code - gateway/security/session_manager.py
-- [[Atomically persist current sessions to the metadata file.          Writes are se]] - rationale - gateway/security/session_manager.py
-- [[Blocked multi-turn sessions should not disclose scoring details.]] - rationale - gateway/tests/test_session_isolation.py
+- [[dot-test_endpoint_reports_no_key_collisions_and_high_total()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_forward_middleware_allowed()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_forward_middleware_blocking()]] - code - gateway/tests/test_main_endpoints.py
+- [[dot-test_manage_modules_endpoint_uses_the_same_registry()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_module_has_implementation()]] - code - gateway/tests/test_docs_accuracy.py
+- [[dot-test_rbac_allows_authorized_access()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_blocks_unauthorized_access()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_handles_missing_user_id()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_initialization_in_middleware()]] - code - gateway/tests/test_rbac.py
+- [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
+- [[Any]] - code
 - [[Check RBAC permissions for the request.]] - rationale - gateway/ingest_api/middleware.py
-- [[Check for unauthorized cross-session access attempts.          Implementation]] - rationale - gateway/ingest_api/middleware.py
+- [[Check for unauthorized cross-session access attempts. Implementation note…]] - rationale - gateway/ingest_api/middleware.py
 - [[Check if a file path is allowed for a user to access.]] - rationale - gateway/ingest_api/middleware.py
-- [[Check if a user can access another user's session.]] - rationale - gateway/security/session_manager.py
 - [[Check if user_id is the system owner via RBAC config (single source of truth).]] - rationale - gateway/ingest_api/middleware.py
-- [[Clean up sessions that haven't been active for the specified number of days.]] - rationale - gateway/security/session_manager.py
-- [[ConversationMessage]] - code - gateway/security/session_manager.py
-- [[Convert session to dictionary for serialization.]] - rationale - gateway/security/session_manager.py
-- [[Create a session manager with temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a session manager.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a temporary workspace for testing.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create a temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create middleware manager with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Create session from dictionary.]] - rationale - gateway/security/session_manager.py
-- [[Deterministic stand-in for RBACManager.]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[End-to-end integration tests for session isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - rationale - gateway/ingest_api/middleware.py
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not finalize them…]] - rationale - gateway/tests/test_rbac.py
+- [[Documentation Verification Tests — ensure docs match reality.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Enforce per-user, per-bot session isolation rules. Each (user_id, bot_id) pair…]] - rationale - gateway/ingest_api/middleware.py
+- [[Exception]] - code
+- [[Execute the real endpoint against a fully-populated app_state and verify it…]] - rationale - gateway/tests/test_docs_accuracy.py
 - [[Extract potential file paths from message content.]] - rationale - gateway/ingest_api/middleware.py
 - [[Extract user ID from request data.]] - rationale - gateway/ingest_api/middleware.py
-- [[FileSandbox must NOT block plain chat messages that mention file-like words.]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Filter outbound response to remove sensitive XML and path information.]] - rationale - gateway/ingest_api/middleware.py
-- [[Get existing session or create a new one for the (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
-- [[Get or create a shared workspace + MEMORY.md for a group.]] - rationale - gateway/security/session_manager.py
-- [[Get session context for injection into agent request.]] - rationale - gateway/security/session_manager.py
-- [[Get session-specific prompt addition for the agent.]] - rationale - gateway/security/session_manager.py
+- [[Filter outbound response to remove sensitive XML and path information. Args…]] - rationale - gateway/ingest_api/middleware.py
 - [[Get the RBAC manager for external access.]] - rationale - gateway/ingest_api/middleware.py
-- [[Get the log sanitizer for integration with logging system.]] - rationale - gateway/ingest_api/middleware.py
-- [[Get the workspace path for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
-- [[GroupSession]] - code - gateway/security/session_manager.py
-- [[Initialize session manager.          Args             base_workspace Base dire]] - rationale - gateway/security/session_manager.py
-- [[Input normalization should strip zero-width obfuscation before guards run.]] - rationale - gateway/tests/test_session_isolation.py
-- [[List session keys that the requesting user is allowed to see.          Returns t]] - rationale - gateway/security/session_manager.py
-- [[Load existing sessions from metadata file.          Handles both the new ``{use]] - rationale - gateway/security/session_manager.py
-- [[Manages per-user, per-bot session isolation.      Sessions are keyed by (user_id]] - rationale - gateway/security/session_manager.py
 - [[Manages the P1 security middleware modules.]] - rationale - gateway/ingest_api/middleware.py
 - [[MiddlewareManager]] - code - gateway/ingest_api/middleware.py
-- [[MiddlewareManager built via __new__ — every module attr explicitly None     so e]] - rationale - gateway/tests/test_middleware_coverage.py
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
 - [[MiddlewareResult]] - code - gateway/ingest_api/middleware.py
-- [[Owner (8096968754) must not be blocked by content-pattern scanning.     They sho]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Path_1]] - code - gateway/security/session_manager.py
 - [[Process request through all middleware modules.]] - rationale - gateway/ingest_api/middleware.py
-- [[Process tool result through PII sanitization before it reaches agent          Ar]] - rationale - gateway/ingest_api/middleware.py
-- [[Regression (SCRUM-61) apialerts used to call event_bus.publish(),     a metho]] - rationale - gateway/tests/test_alert_telegram_relay.py
-- [[Represents a shared workspace + memory for a group.]] - rationale - gateway/security/session_manager.py
+- [[Process tool result through PII sanitization before it reaches agent Args…]] - rationale - gateway/ingest_api/middleware.py
+- [[Record a guard __init__ exception so the request path can fail closed. For…]] - rationale - gateway/ingest_api/middleware.py
 - [[Result from middleware processing.]] - rationale - gateway/ingest_api/middleware.py
-- [[Return True if user_id is a member of group_id.          Checks rbac_config.get_]] - rationale - gateway/security/session_manager.py
-- [[Return True only when the request contains actual tool calls or tool results.]] - rationale - gateway/ingest_api/middleware.py
-- [[Return the cache key string for a (user_id, bot_id) pair.]] - rationale - gateway/security/session_manager.py
-- [[Return the name of a failed critical guard, or None if all healthy.          Use]] - rationale - gateway/ingest_api/middleware.py
-- [[Return the system prompt with a re-anchoring preamble prepended.          Called]] - rationale - gateway/security/session_manager.py
-- [[Return user MEMORY.md + all accessible group MEMORY.md contents for prompt injec]] - rationale - gateway/security/session_manager.py
-- [[Scan tool result for injection attempts and return sanitized content.          A]] - rationale - gateway/ingest_api/middleware.py
+- [[Return True only when the request contains actual tool calls or tool results.…]] - rationale - gateway/ingest_api/middleware.py
+- [[Return the name of a failed critical guard, or None if all healthy. Uses…]] - rationale - gateway/ingest_api/middleware.py
+- [[Scan tool result for injection attempts and return sanitized content. Args…]] - rationale - gateway/ingest_api/middleware.py
+- [[Set up test environment.]] - rationale - gateway/tests/test_rbac.py
 - [[Shutdown middleware background tasks cleanly.]] - rationale - gateway/ingest_api/middleware.py
-- [[Test File Sandbox Message Gate Suite]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[Test WebhookReceiver integration with session isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test complete isolation between two users.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test middleware enforcement of session boundaries.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that conversation histories are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that each user gets isolated directories.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that memory files are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware blocks access to sensitive system files.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware blocks cross-session access attempts.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware injects session context.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that middleware requires user identification.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that owner can access all sessions.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that owner can perform cross-session actions.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that owneradmin can access all user sessions.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that session context is properly generated.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that session listing respects authorization.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that session prompts include isolation instructions.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that sessions persist across manager restarts.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that trust levels are tracked per user.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that user sessions are created properly.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test that users can access their own workspace.]] - rationale - gateway/tests/test_session_isolation.py
-- [[Test the UserSessionManager for per-user isolation.]] - rationale - gateway/tests/test_session_isolation.py
-- [[TestAnalyzeRequestForRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestContextGuard_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestCriticalGuardInitFailClosed]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestCrossSessionAccess]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestEnvGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestExtractFilePaths]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestExtractUserId]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFileSandboxSkippedForPlainMessages]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestFileSandboxStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestFilterOutboundResponse]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestGitGuard]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestInit]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsPathAllowedForUser]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestIsToolCallRequest]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMetadataGuard]] - code - gateway/tests/test_middleware_coverage.py
+- [[Test forward endpoint with middleware integration.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test RBAC handling when user ID is missing.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC integration with middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC allows authorized access.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC blocks unauthorized access attempts.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC is properly initialized in middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that middleware allows requests when they pass checks.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[Test that middleware can block requests with HTTP 403.]] - rationale - gateway/tests/test_main_endpoints.py
+- [[TestForwardEndpoint]] - code - gateway/tests/test_main_endpoints.py
+- [[TestManageModulesEndpointAccuracy]] - code - gateway/tests/test_docs_accuracy.py
 - [[TestMiddlewareResult]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestMiddlewareSessionEnforcement]] - code - gateway/tests/test_session_isolation.py
-- [[TestMultiTurnTracker]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestOwnerBypassContentPatternChecks]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[TestPathIsolationStep]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestProcessRequestIdentity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestProcessRequestRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestScanToolResult]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestSessionIsolationEndToEnd]] - code - gateway/tests/test_session_isolation.py
-- [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestToolChainAnalyzer]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestUserSessionManager]] - code - gateway/tests/test_session_isolation.py
-- [[TestWebhookReceiverIntegration]] - code - gateway/tests/test_session_isolation.py
-- [[Unit tests for the _is_tool_call_request helper (TDD RED phase).]] - rationale - gateway/tests/test_file_sandbox_message_gate.py
-- [[Update the trust level for a user within a bot's namespace.]] - rationale - gateway/security/session_manager.py
-- [[UserSessionManager]] - code - gateway/security/session_manager.py
-- [[Validate and sanitize bot_id to prevent path traversal.          Allows alphanum]] - rationale - gateway/security/session_manager.py
-- [[Validate and sanitize user_id to prevent path traversal.          Only allows al]] - rationale - gateway/security/session_manager.py
-- [[_FakeRBAC]] - code - gateway/tests/test_middleware_coverage.py
-- [[_bot()]] - code - gateway/tests/test_middleware_coverage.py
-- [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_req()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[_scan_result()]] - code - gateway/tests/test_middleware_coverage.py
-- [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[_tool_req()]] - code - gateway/tests/test_middleware_coverage.py
-- [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[manager()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[middleware.py]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[mm()]] - code - gateway/tests/test_middleware_coverage.py
-- [[session_manager()_1]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager.py]] - code - gateway/security/session_manager.py
-- [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[test_api_alerts_endpoint_emits_bus_event()]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
-- [[test_session_isolation.py]] - code - gateway/tests/test_session_isolation.py
-- [[usm()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestRBACIntegration]] - code - gateway/tests/test_rbac.py
+- [[TestReadmeModulesMatchCode]] - code - gateway/tests/test_docs_accuracy.py
+- [[TestTestCountAccuracy]] - code - gateway/tests/test_docs_accuracy.py
+- [[The endpoint's P1 section must be generated from ALL_MODULE_ATTRS, not a…]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify managemodules enumerates every module MiddlewareManager wires.…]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify each module listed in README has actual implementation.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[Verify test count claims in READMEdocs are reasonable.]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[We should have at least 350 tests (README says 351+).]] - rationale - gateway/tests/test_docs_accuracy.py
+- [[asyncio]] - code
+- [[asyncio_1]] - code
+- [[parametrize]] - code
+- [[test_docs_accuracy.py]] - code - gateway/tests/test_docs_accuracy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -352,48 +108,60 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 53 edges to [[_COMMUNITY_Any]]
-- 48 edges to [[_COMMUNITY_openclawskillsi-crSKILL]]
-- 23 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 20 edges to [[_COMMUNITY_RBACConfig (2)]]
-- 14 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 14 edges to [[_COMMUNITY_SharedMemoryManager]]
-- 12 edges to [[_COMMUNITY_ContextGuard]]
-- 12 edges to [[_COMMUNITY_WebhookReceiver]]
-- 10 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 9 edges to [[_COMMUNITY_TestToolChainAnalyzer]]
-- 8 edges to [[_COMMUNITY_api.py (2)]]
-- 4 edges to [[_COMMUNITY_NetworkSecurityFinding]]
-- 4 edges to [[_COMMUNITY_MemoryIntegrityMonitor]]
-- 4 edges to [[_COMMUNITY_PathIsolationManager]]
-- 4 edges to [[_COMMUNITY_SubagentMonitor]]
-- 4 edges to [[_COMMUNITY_KillSwitchMonitor (5)]]
-- 3 edges to [[_COMMUNITY_test_a2a_policy.py]]
-- 3 edges to [[_COMMUNITY_FileSandbox]]
-- 3 edges to [[_COMMUNITY_MiddlewareManager (4)]]
-- 2 edges to [[_COMMUNITY_Canvas Skill]]
-- 2 edges to [[_COMMUNITY_SecureBrowser (3)]]
-- 2 edges to [[_COMMUNITY_SessionManager]]
-- 2 edges to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 2 edges to [[_COMMUNITY_MultiTurnTracker]]
-- 2 edges to [[_COMMUNITY_WebProxy]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy (2)]]
-- 2 edges to [[_COMMUNITY_ToolChainAnalyzer]]
-- 2 edges to [[_COMMUNITY_MCPPermissionManager]]
-- 1 edge to [[_COMMUNITY_agentshroud-blueteamSKILL]]
-- 1 edge to [[_COMMUNITY_Function Details]]
-- 1 edge to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (2) (2)]]
-- 1 edge to [[_COMMUNITY_Local LLM Support — Implementation Review]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (2)]]
-- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_Step-by-Step Deployment]]
+- 16 edges to [[_COMMUNITY_middleware.py]]
+- 11 edges to [[_COMMUNITY_RedactionResult]]
+- 10 edges to [[_COMMUNITY_socrouter.py]]
+- 7 edges to [[_COMMUNITY_test_middleware_coverage.py]]
+- 5 edges to [[_COMMUNITY_TestContributingMdAccuracy]]
+- 4 edges to [[_COMMUNITY_UserSessionManager]]
+- 4 edges to [[_COMMUNITY_test_file_sandbox_message_gate.py]]
+- 3 edges to [[_COMMUNITY_TestCriticalGuardInitFailClosed]]
+- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_dot-test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative]]
+- 3 edges to [[_COMMUNITY_SecurityPipeline]]
+- 2 edges to [[_COMMUNITY_deep_security_test]]
+- 2 edges to [[_COMMUNITY_SubagentMonitor]]
+- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 2 edges to [[_COMMUNITY_EgressEvent]]
+- 2 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 2 edges to [[_COMMUNITY_fastapi]]
+- 2 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
+- 2 edges to [[_COMMUNITY_app]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_MetadataGuard]]
+- 1 edge to [[_COMMUNITY_EnvironmentGuard]]
+- 1 edge to [[_COMMUNITY_GitGuard]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_SessionManager]]
+- 1 edge to [[_COMMUNITY_TokenValidator]]
+- 1 edge to [[_COMMUNITY_ConsentFramework]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleManager]]
+- 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_BrowserSecurityGuard]]
+- 1 edge to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_ContainerSnapshot]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_NetworkValidator]]
+- 1 edge to [[_COMMUNITY_OAuthSecurityValidator]]
+- 1 edge to [[_COMMUNITY_OutputCanary]]
+- 1 edge to [[_COMMUNITY_PathIsolationManager]]
+- 1 edge to [[_COMMUNITY_ToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
+- 1 edge to [[_COMMUNITY_ToolResultSanitizerConfig]]
+- 1 edge to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[MiddlewareManager]] - degree 171, connects to 25 communities
-- [[MiddlewareResult]] - degree 89, connects to 20 communities
-- [[UserSessionManager]] - degree 132, connects to 11 communities
-- [[test_middleware_coverage.py]] - degree 40, connects to 3 communities
-- [[dot-process_request()]] - degree 15, connects to 3 communities
+- [[MiddlewareManager]] - degree 115, connects to 42 communities
+- [[MiddlewareResult]] - degree 20, connects to 6 communities
+- [[test_docs_accuracy.py]] - degree 12, connects to 3 communities
+- [[dot-process_request()]] - degree 15, connects to 2 communities
+- [[TestManageModulesEndpointAccuracy]] - degree 8, connects to 2 communities

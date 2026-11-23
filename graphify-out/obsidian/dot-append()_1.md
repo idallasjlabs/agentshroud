@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "AuditChain"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/AuditChain
 ---
 
 # .append()
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
 - [[dot-append_block()]] - `calls` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
-- [[AuditChainEntry]] - `references` [EXTRACTED]
+- [[AuditChainEntry]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/AuditChain

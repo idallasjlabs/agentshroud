@@ -1,19 +1,16 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 3
 ---
 
 # blucli/SKILL.md
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-test_clean_when_installed_without_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_not_run_without_binary_or_report()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_timestamp_falls_back_to_file_mtime()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestTrivySummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[blu CLI (BluesoundNAD control)]] - concept - skills/openclaw/blucli/SKILL.md
+- [[blucli (blu)]] - document - skills/openclaw/blucli/SKILL.md
+- [[blucliSKILL]] - document - skills/openclaw/blucli/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,11 +18,3 @@ members: 4
 TABLE source_file, type FROM #community/blucli/SKILLmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestTrivySummary_1]] - degree 4, connects to 1 community
-- [[dot-test_timestamp_falls_back_to_file_mtime()]] - degree 2, connects to 1 community

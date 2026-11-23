@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "Community 64"
+community: "MCPProxy"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/MCPProxy
 ---
 
 # Wire optional event bus for privacy/security telemetry.
 
 ## Connections
-- [[.set_event_bus()]] - `rationale_for` [EXTRACTED]
+- [[dot-set_event_bus()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_64
+#graphify/rationale #graphify/EXTRACTED #community/MCPProxy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-hermes/README.md"
+source_file: "docs/vault/05 - Dependencies/trivy.md"
 type: "document"
-community: "Community 1232"
-location: "L6"
+community: "Trivy"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1232
+  - community/Trivy
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_2]] - `contains` [EXTRACTED]
+- [[Trivy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1232
+#graphify/document #graphify/EXTRACTED #community/Trivy

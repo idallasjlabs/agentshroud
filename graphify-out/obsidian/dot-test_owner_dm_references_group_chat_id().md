@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "MiddlewareManager (3)"
+community: "ApprovalRequest"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3
+  - community/ApprovalRequest
 ---
 
 # .test_owner_dm_references_group_chat_id()
 
 ## Connections
-- [[ApprovalRequest_2]] - `calls` [EXTRACTED]
+- [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Owner DM message text must reference the originating group chat_id.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
+- [[asyncio_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

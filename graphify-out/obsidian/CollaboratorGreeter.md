@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "Community 197"
+community: "test_collaborator_greeter.py"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/test_collaborator_greeterpy
 ---
 
 # CollaboratorGreeter
 
 ## Connections
-- [[.__init__()_34]] - `method` [EXTRACTED]
-- [[._get_client()]] - `method` [EXTRACTED]
-- [[._load_state()]] - `method` [EXTRACTED]
-- [[._load_taglines()]] - `method` [EXTRACTED]
-- [[._persist_state()]] - `method` [EXTRACTED]
-- [[.maybe_greet()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_21]] - `method` [EXTRACTED]
+- [[dot-_get_client()]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `method` [EXTRACTED]
+- [[dot-_load_taglines()]] - `method` [EXTRACTED]
+- [[dot-_persist_state()]] - `method` [EXTRACTED]
+- [[dot-maybe_greet()]] - `method` [EXTRACTED]
 - [[Sends a branded greeting photo to each (bot, user) pair once per 24 h.]] - `rationale_for` [EXTRACTED]
 - [[_make_greeter()]] - `calls` [EXTRACTED]
 - [[collaborator_greeter.py]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[test_caption_length_clamped()]] - `calls` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `imports` [EXTRACTED]
 - [[test_get_client_creates_own_when_not_injected()]] - `calls` [EXTRACTED]
@@ -29,10 +29,9 @@ tags:
 - [[test_load_state_non_dict_json_returns_empty()]] - `calls` [EXTRACTED]
 - [[test_load_state_write_empty_fails_silently()]] - `calls` [EXTRACTED]
 - [[test_load_taglines_with_non_list_json_falls_back()]] - `calls` [EXTRACTED]
-- [[test_missing_logo_returns_false()]] - `calls` [EXTRACTED]
-- [[test_missing_taglines_falls_back_to_default()]] - `calls` [EXTRACTED]
-- [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
+- [[test_missing_logo_returns_false()]] - `uses` [INFERRED]
+- [[test_missing_taglines_falls_back_to_default()]] - `uses` [INFERRED]
 - [[test_persist_state_exception_is_swallowed()]] - `calls` [EXTRACTED]
-- [[test_state_file_corruption_recovers()]] - `calls` [EXTRACTED]
+- [[test_state_file_corruption_recovers()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_197
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

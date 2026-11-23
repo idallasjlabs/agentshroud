@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # openclaw agents/_README.txt (50+ specialized agents)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[IAM Policies]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[openclaw agents_README.txt (50+ specialized agents)]] - document - docker/config/openclaw/agents/_README.txt
 
 ## Live Query (requires Dataview plugin)
 

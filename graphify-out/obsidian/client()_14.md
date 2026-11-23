@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_edge.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "Community 1248"
-location: "L135"
+community: "test_web_api_coverage.py"
+location: "L72"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/test_web_api_coveragepy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_edge.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[fixture_98]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

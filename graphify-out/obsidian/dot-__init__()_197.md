@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/telegram_egress_notify.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L136"
+community: "EgressTelegramNotifier"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/EgressTelegramNotifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [INFERRED]
+- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier

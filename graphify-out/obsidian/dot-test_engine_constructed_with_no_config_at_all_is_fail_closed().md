@@ -12,8 +12,8 @@ tags:
 # .test_engine_constructed_with_no_config_at_all_is_fail_closed()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
-- [[`A2APolicyEngine()` with no config argument — the laziest possible         call]] - `rationale_for` [EXTRACTED]
+- [[`A2APolicyEngine()` with no config argument — the laziest possible call site —…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

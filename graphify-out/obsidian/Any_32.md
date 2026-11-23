@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: ""
 type: "code"
-community: "Community 165"
-location: "L82"
+community: "OutputCanary"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/OutputCanary
 ---
 
 # Any
 
 ## Connections
-- [[.pull_undelivered()]] - `references` [EXTRACTED]
-- [[.record_inbound()]] - `references` [EXTRACTED]
+- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
+- [[dot-get_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

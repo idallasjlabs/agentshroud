@@ -1,14 +1,18 @@
 ---
 source_file: "gateway/security/feed_hosts.py"
 type: "code"
-community: "Community 1888"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1888
+  - community/EgressFilter
 ---
 
 # feed_hosts.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_1888
+## Connections
+- [[GENERATED FILE — do not hand-edit. Feed-source hostnames derived from…]] - `rationale_for` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

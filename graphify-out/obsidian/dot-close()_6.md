@@ -1,19 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L401"
+community: "SecureBrowser"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

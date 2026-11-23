@@ -1,17 +1,19 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 667"
+community: "Architecture Overview.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Architecture_Overviewmd
 ---
 
 # mcp_proxy.py.md
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

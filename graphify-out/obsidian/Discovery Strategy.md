@@ -1,22 +1,23 @@
 ---
-source_file: ".agents/agents/mac-app-discovery.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 823"
-location: "L25"
+community: "Mac App Discovery Skill"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_823
+  - community/Mac_App_Discovery_Skill
 ---
 
 # Discovery Strategy
 
 ## Connections
 - [[Mac App Discovery Skill]] - `contains` [EXTRACTED]
+- [[Mac App Discovery Skill_1]] - `contains` [EXTRACTED]
 - [[Phase 1 — Raw Collection]] - `contains` [EXTRACTED]
 - [[Phase 2 — Deduplication & Normalization]] - `contains` [EXTRACTED]
 - [[Phase 3 — Categorization]] - `contains` [EXTRACTED]
 - [[Phase 4 — Enrichment]] - `contains` [EXTRACTED]
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_823
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

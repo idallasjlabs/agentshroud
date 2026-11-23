@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_pipeline_unit.py"
+type: "rationale"
+community: "asyncio"
+location: "L652"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/asyncio
+---
+
+# Step 1.76 PromptGuard tool-result scan must respect user_trust_level.…
+
+## Connections
+- [[TestPromptGuardToolResultTrustGate]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

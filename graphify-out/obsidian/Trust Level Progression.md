@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 164"
+community: "Authentication and Authorization Framework"
 location: "L366"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/Authentication_and_Authorization_Framework
 ---
 
 # Trust Level Progression
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Authentication and Authorization Framework]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/Authentication_and_Authorization_Framework

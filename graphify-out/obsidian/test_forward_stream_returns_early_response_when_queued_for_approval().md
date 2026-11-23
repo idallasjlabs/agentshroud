@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # test_forward_stream_returns_early_response_when_queued_for_approval()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[_post_stream()]] - `calls` [EXTRACTED]
+- [[_queued()]] - `indirect_call` [INFERRED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

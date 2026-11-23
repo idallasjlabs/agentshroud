@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "StdioConnection"
-location: "L143"
+community: "test_mcp_proxy_coverage.py"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/test_mcp_proxy_coveragepy
 ---
 
 # .stop()
 
 ## Connections
-- [[StdioConnection]] - `method` [EXTRACTED]
-- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy

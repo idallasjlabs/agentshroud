@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 6"
+community: "GroupRegistry"
 location: "L296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/GroupRegistry
 ---
 
 # Return True if user_id is in the group.
 
 ## Connections
-- [[.is_member()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-is_member()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/GroupRegistry

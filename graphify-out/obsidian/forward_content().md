@@ -1,25 +1,26 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L587"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # forward_content()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[ForwardRequest_2]] - `references` [EXTRACTED]
-- [[Main ingest endpoint      Receives data from iOS Shortcuts, browser extension, o]] - `rationale_for` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[ForwardError]] - `uses` [INFERRED]
+- [[ForwardRequest]] - `uses` [INFERRED]
+- [[Main ingest endpoint Receives data from iOS Shortcuts, browser extension, or…]] - `rationale_for` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
 - [[_process_inbound()]] - `calls` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
+- [[post_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

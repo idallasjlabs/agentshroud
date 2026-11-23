@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "SharedMemoryManager"
+community: "TestUserMemoryWriteACL"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/TestUserMemoryWriteACL
 ---
 
 # .test_legacy_no_author_write_still_appends()
@@ -15,4 +15,4 @@ tags:
 - [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - `rationale_for` [EXTRACTED]
 - [[TestUserMemoryWriteACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/TestUserMemoryWriteACL

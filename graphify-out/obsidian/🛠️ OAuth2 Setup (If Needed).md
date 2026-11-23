@@ -1,21 +1,21 @@
 ---
 source_file: "docs/setup/GOOGLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 2010"
+community: "Google Services Setup - Calendar, Contacts, Keep"
 location: "L312"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2010
+  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
 ---
 
 # 🛠️ OAuth2 Setup (If Needed)
 
 ## Connections
 - [[Google Services Setup - Calendar, Contacts, Keep]] - `contains` [EXTRACTED]
-- [[Step 1 Create Google Cloud Project_1]] - `contains` [EXTRACTED]
-- [[Step 2 Create OAuth Credentials_1]] - `contains` [EXTRACTED]
+- [[Step 1 Create Google Cloud Project]] - `contains` [EXTRACTED]
+- [[Step 2 Create OAuth Credentials]] - `contains` [EXTRACTED]
 - [[Step 3 Store Credentials]] - `contains` [EXTRACTED]
 - [[Step 4 Get Refresh Token]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2010
+#graphify/document #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep

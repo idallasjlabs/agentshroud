@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-tdd.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 1498"
-location: "L39"
+community: "Skill: Technical Illustrator (TI)"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1498
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1498
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

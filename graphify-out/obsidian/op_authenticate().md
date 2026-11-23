@@ -1,18 +1,23 @@
 ---
 source_file: "docker/scripts/op-auth-common.sh"
 type: "code"
-community: "Community 990"
+community: "1password-skill.sh"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/1password-skillsh
 ---
 
 # op_authenticate()
 
 ## Connections
-- [[op-auth-common.sh]] - `implements` [EXTRACTED]
-- [[op-wrapper.sh]] - `calls` [EXTRACTED]
+- [[get-credential.sh script]] - `calls` [EXTRACTED]
+- [[get_field()]] - `calls` [EXTRACTED]
+- [[get_totp()]] - `calls` [EXTRACTED]
+- [[list_items()]] - `calls` [EXTRACTED]
+- [[list_vaults()]] - `calls` [EXTRACTED]
+- [[op-auth-common.sh]] - `defines` [EXTRACTED]
+- [[op-wrapper.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_990
+#graphify/code #graphify/EXTRACTED #community/1password-skillsh

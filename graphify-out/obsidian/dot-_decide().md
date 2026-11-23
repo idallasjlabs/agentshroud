@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "record_decision()"
-location: "L461"
+community: "load_config"
+location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/load_config
 ---
 
 # ._decide()
@@ -14,9 +14,7 @@ tags:
 ## Connections
 - [[dot-_tier_for()]] - `calls` [EXTRACTED]
 - [[dot-evaluate()]] - `calls` [EXTRACTED]
-- [[A2AMethod_1]] - `references` [EXTRACTED]
-- [[A2APolicyDecision]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
-- [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
+- [[MCPPolicyDecision]] - `calls` [EXTRACTED]
+- [[MCPPolicyEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/record_decision
+#graphify/code #graphify/EXTRACTED #community/load_config

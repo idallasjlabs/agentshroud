@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "GatewayEmailService"
+community: "_make_cve"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/_make_cve
 ---
 
 # .test_zero_cves()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_call()_1]] - `calls` [EXTRACTED]
 - [[TestBuildHeading]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/_make_cve

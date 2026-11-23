@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips."
+community: "_sleep"
 location: "L2008"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/_sleep
 ---
 
 # .test_undelivered_new_advisory_retries_not_marked_ingested()
@@ -17,7 +17,7 @@ tags:
 - [[_fake_all_agents()_1]] - `indirect_call` [INFERRED]
 - [[_sleep()_4]] - `contains` [EXTRACTED]
 - [[_sleep()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[now()_4]] - `contains` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
+- [[now()_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/code #graphify/EXTRACTED #community/_sleep

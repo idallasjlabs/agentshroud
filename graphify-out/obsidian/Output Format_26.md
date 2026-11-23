@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/sf/SKILL.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 1553"
-location: "L129"
+community: "Athena — Knowledge Distiller"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1553
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Output Format
 
 ## Connections
-- [[Salesforce CLI (`sf`) Agent_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[show_notes_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1553
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

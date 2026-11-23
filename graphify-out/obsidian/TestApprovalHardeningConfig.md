@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Community 3"
+community: "middleware.py"
 location: "L18"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_3
+  - graphify/EXTRACTED
+  - community/middlewarepy
 ---
 
 # TestApprovalHardeningConfig
 
 ## Connections
-- [[.test_custom_config()]] - `method` [EXTRACTED]
-- [[.test_default_config()]] - `method` [EXTRACTED]
-- [[ApprovalHardening]] - `uses` [INFERRED]
+- [[dot-test_custom_config()_2]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
-- [[DeceptionDetection]] - `uses` [INFERRED]
-- [[DeniedRequest]] - `uses` [INFERRED]
 - [[Test approval hardening configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_3
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

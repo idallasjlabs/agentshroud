@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-24.md"
 type: "rationale"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/upgrade-2026-09-21md
 ---
 
 # Exclusive mkdir run lock + HEAD-pinned build guard (PR #475)
@@ -16,4 +16,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `rationale_for` [EXTRACTED]
 - [[upgrade-2026-09-24]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_118
+#graphify/rationale #graphify/EXTRACTED #community/upgrade-2026-09-21md

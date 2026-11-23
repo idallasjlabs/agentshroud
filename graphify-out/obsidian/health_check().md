@@ -1,19 +1,20 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Community 95"
+community: "health_check"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/health_check
 ---
 
 # health_check()
 
 ## Connections
-- [[Health check endpoint for Docker.      Reports degraded status when the OpenAI c]] - `rationale_for` [EXTRACTED]
+- [[Health check endpoint for Docker. Reports degraded status when the OpenAI…]] - `rationale_for` [EXTRACTED]
 - [[TestHealthCheck]] - `calls` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
+- [[chatbotmain.py]] - `contains` [EXTRACTED]
+- [[get_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/health_check

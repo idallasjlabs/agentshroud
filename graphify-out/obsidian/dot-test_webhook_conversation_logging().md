@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "WebhookReceiver"
+community: "UserSessionManager"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # .test_webhook_conversation_logging()
@@ -15,5 +15,6 @@ tags:
 - [[Test that conversations are logged per user.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
+- [[asyncio_72]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 726"
+community: "Configuration Reference"
 location: "L500"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_726
+  - community/Configuration_Reference
 ---
 
 # Configuration Reference
@@ -15,8 +15,7 @@ tags:
 - [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
 - [[Example Configurations_1]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml - Main Configuration]] - `contains` [EXTRACTED]
-- [[agentshroud.yaml Configuration File]] - `contains` [EXTRACTED]
 - [[egress-config.yml - Egress Filtering]] - `contains` [EXTRACTED]
 - [[mcp-config.yml - MCP Server Registry]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_726
+#graphify/document #graphify/EXTRACTED #community/Configuration_Reference

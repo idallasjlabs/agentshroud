@@ -12,8 +12,9 @@ tags:
 # .test_from_dict_none_is_fail_closed()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
-- [[load_config-style callers pass whatever the YAML section resolved         to, wh]] - `rationale_for` [EXTRACTED]
+- [[load_config-style callers pass whatever the YAML section resolved to, which is…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SecurityPipeline"
+community: "._make_proxy"
 location: "L8994"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # .test_private_message_does_not_set_eligibility_flag()
@@ -17,6 +17,6 @@ tags:
 - [[TestGroupMentionFilter]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

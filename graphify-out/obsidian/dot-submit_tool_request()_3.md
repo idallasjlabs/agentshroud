@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L393"
+community: "load_config"
+location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/load_config
 ---
 
 # .submit_tool_request()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/load_config

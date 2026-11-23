@@ -1,28 +1,22 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "Community 7"
+community: "PromptGuard"
 location: "L92"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_7
+  - graphify/EXTRACTED
+  - community/PromptGuard
 ---
 
 # TestPromptGuardPerformance
 
 ## Connections
-- [[.guard()_2]] - `method` [EXTRACTED]
-- [[.test_1000_messages_under_5s()]] - `method` [EXTRACTED]
-- [[.test_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[dot-guard()_2]] - `method` [EXTRACTED]
+- [[dot-test_1000_messages_under_5s()]] - `method` [EXTRACTED]
+- [[dot-test_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
 - [[Prompt guard 1000 messages in  5s.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

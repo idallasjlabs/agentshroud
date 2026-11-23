@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-tw.md"
+source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 729"
-location: "L204"
+community: "AgentShroud Brand Guidelines"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules_2]] - `contains` [EXTRACTED]
+- [[Brand Personality]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

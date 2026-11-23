@@ -1,20 +1,20 @@
 ---
 source_file: "browser-extension/background.js"
 type: "code"
-community: "Community 464"
+community: "background.js"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/backgroundjs
 ---
 
 # loadConfig()
 
 ## Connections
-- [[background.js]] - `references` [EXTRACTED]
+- [[background.js]] - `contains` [EXTRACTED]
 - [[clipPage()]] - `calls` [EXTRACTED]
 - [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[save()]] - `semantically_similar_to` [INFERRED]
+- [[save()_1]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

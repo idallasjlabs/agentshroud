@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Mode B — Comprehensive review sweep (4)"
-location: "L342"
+community: "get_wazuh_summary"
+location: "L354"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep_4
+  - community/get_wazuh_summary
 ---
 
 # .test_clean_when_installed_not_running()
 
 ## Connections
-- [[TestClamavSummary]] - `method` [EXTRACTED]
+- [[TestGetWazuhSummary]] - `method` [EXTRACTED]
+- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_4
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

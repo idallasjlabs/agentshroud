@@ -1,17 +1,18 @@
 ---
-source_file: "scripts/list_registry_ghsa_ids.py"
+source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 934"
-location: "L32"
+community: "discover_upstream_versions.py"
+location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_934
+  - community/discover_upstream_versionspy
 ---
 
 # main()
 
 ## Connections
-- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
+- [[discover()]] - `calls` [EXTRACTED]
+- [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_934
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

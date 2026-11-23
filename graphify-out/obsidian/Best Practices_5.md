@@ -1,20 +1,20 @@
 ---
-source_file: ".cursor/agents/i-mcpm-aws-profile.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 182"
-location: "L299"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L297"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Best Practices
 
 ## Connections
-- [[MCP-Specific_2]] - `contains` [EXTRACTED]
-- [[Organization_2]] - `contains` [EXTRACTED]
-- [[Security_4]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[MCP-Specific_1]] - `contains` [EXTRACTED]
+- [[Organization_1]] - `contains` [EXTRACTED]
+- [[Security_15]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_182
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

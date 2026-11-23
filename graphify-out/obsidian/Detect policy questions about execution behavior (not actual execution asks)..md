@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "TelegramAPIProxy"
 location: "L1440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/TelegramAPIProxy
 ---
 
 # Detect policy questions about execution behavior (not actual execution asks).
 
 ## Connections
-- [[._looks_like_hypothetical_execution_question()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_hypothetical_execution_question()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

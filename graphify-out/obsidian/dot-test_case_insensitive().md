@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_xml_dtd_control.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L90"
+community: "CanaryTripwire"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/CanaryTripwire
 ---
 
 # .test_case_insensitive()
 
 ## Connections
-- [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

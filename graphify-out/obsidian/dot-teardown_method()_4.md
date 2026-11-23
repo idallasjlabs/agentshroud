@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L404"
+community: "ResourceGuard"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ResourceGuard
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Clean up integration test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

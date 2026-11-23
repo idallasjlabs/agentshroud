@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "_coerce_to_ws_event()"
-location: "L34"
+community: "soc/models.py"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/soc/modelspy
 ---
 
 # ._send_event()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
 - [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[SOCWebSocketHandler_2]] - `method` [EXTRACTED]
-- [[WSEvent_1]] - `references` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[WSEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

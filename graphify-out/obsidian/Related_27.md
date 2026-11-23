@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 783"
-location: "L73"
+community: "Function Details"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/Function_Details
 ---
 
 # Related
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/Function_Details

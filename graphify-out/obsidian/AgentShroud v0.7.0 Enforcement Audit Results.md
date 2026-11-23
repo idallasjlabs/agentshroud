@@ -1,17 +1,16 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-v0.7.0.md"
 type: "document"
-community: "Community 144"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_144
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # AgentShroud v0.7.0 Enforcement Audit Results
 
 ## Connections
-- [[AgentShroud Session Issue Register — 2026-03-14]] - `conceptually_related_to` [INFERRED]
 - [[AgentShroud v0.7.0 Blue Team Security Audit Report]] - `conceptually_related_to` [INFERRED]
 - [[ContextGuard (context window poisoning defense)]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
@@ -25,11 +24,11 @@ tags:
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
 - [[PromptGuard (Prompt Injection Defense)]] - `references` [EXTRACTED]
 - [[RBAC (Role-Based Access Control)]] - `references` [EXTRACTED]
-- [[Summary_29]] - `contains` [EXTRACTED]
+- [[Summary_17]] - `contains` [EXTRACTED]
 - [[Trust Manager  Progressive Trust System]] - `references` [EXTRACTED]
 - [[Verdict ✅ CONDITIONAL GO]] - `contains` [EXTRACTED]
 - [[XMLFunction-Call Leak Filter]] - `references` [EXTRACTED]
 - [[enforcement-audit-script.py (P0P1P2 module smoke test)]] - `references` [EXTRACTED]
 - [[enforcement-audit-v0.7.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_144
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 537"
-location: "L27"
+community: "compose_generator.py"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_537
+  - community/compose_generatorpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[drift_detector.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_537
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

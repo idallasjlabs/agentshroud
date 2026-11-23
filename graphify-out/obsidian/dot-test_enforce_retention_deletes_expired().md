@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # .test_enforce_retention_deletes_expired()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Retention enforcement removes expired entries.]] - `rationale_for` [EXTRACTED]
 - [[TestRetention]] - `method` [EXTRACTED]
+- [[asyncio_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

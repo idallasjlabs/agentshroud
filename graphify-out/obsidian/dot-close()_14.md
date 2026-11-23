@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/inbound_edge/store.py"
 type: "code"
-community: "Usage"
-location: "L102"
+community: "EdgeStore"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Usage
+  - community/EdgeStore
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesTargetWriter]] - `method` [EXTRACTED]
-- [[test_start_serves_and_stop_closes_loopback()]] - `calls` [EXTRACTED]
+- [[EdgeStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Usage
+#graphify/code #graphify/EXTRACTED #community/EdgeStore

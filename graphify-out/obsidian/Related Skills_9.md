@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
+source_file: "docker/config/hermes/skills/i-production/README.md"
 type: "document"
-community: "Community 2076"
+community: "Incident Response (INCIDENT)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2076
+  - community/Incident_Response_INCIDENT
 ---
 
 # Related Skills
 
 ## Connections
-- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2076
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

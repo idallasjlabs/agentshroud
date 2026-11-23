@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "blogwatcher/SKILL.md"
+community: "TestSocketAndPidProbes"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/blogwatcher/SKILLmd
+  - community/TestSocketAndPidProbes
 ---
 
 # .test_fluent_bit_running_true_with_live_pid()
@@ -15,4 +15,4 @@ tags:
 - [[TestSocketAndPidProbes]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/blogwatcher/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestSocketAndPidProbes

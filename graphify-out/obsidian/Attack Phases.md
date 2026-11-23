@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/sec-offense.md"
+source_file: "docker/config/hermes/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 1059"
-location: "L23"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1059
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Attack Phases
@@ -20,4 +20,4 @@ tags:
 - [[Phase 5 Exploitation Chains]] - `contains` [EXTRACTED]
 - [[Phase 6 Detection Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1059
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

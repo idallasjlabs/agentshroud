@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "TestRBACConfig"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/TestRBACConfig
 ---
 
 # Env overrides should drive runtime owner/collaborator identity.
 
 ## Connections
-- [[.test_owner_and_collaborators_can_be_overridden_from_env()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_and_collaborators_can_be_overridden_from_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/TestRBACConfig

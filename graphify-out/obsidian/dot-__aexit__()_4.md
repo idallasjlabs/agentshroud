@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "wakeword.c"
-location: "L751"
+community: "_HeadFakeClient"
+location: "L824"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/_HeadFakeClient
 ---
 
 # .__aexit__()
 
 ## Connections
-- [[_FakeWSConnect]] - `method` [EXTRACTED]
+- [[_HeadFakeClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Community 2053"
+community: "spaCy"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2053
+  - community/spaCy
 ---
 
 # First-Boot Performance
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2053
+#graphify/document #graphify/EXTRACTED #community/spaCy

@@ -1,32 +1,23 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 137"
-location: "L316"
+community: "_FakeStreamResponse"
+location: "L1412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/_FakeStreamResponse
 ---
 
 # _FakeStreamResponse
 
 ## Connections
-- [[.__enter__()]] - `method` [EXTRACTED]
-- [[.__exit__()]] - `method` [EXTRACTED]
-- [[.__init__()_154]] - `method` [EXTRACTED]
-- [[.iter_bytes()]] - `method` [EXTRACTED]
-- [[.test_2xx_with_body_hashes_content()]] - `calls` [EXTRACTED]
-- [[.test_byte_budget_caps_reads()]] - `calls` [EXTRACTED]
-- [[.test_empty_body_yields_no_hash()]] - `calls` [EXTRACTED]
-- [[.test_non_2xx_status_passed_through()]] - `calls` [EXTRACTED]
-- [[.test_secure_stream_kwargs_are_pinned()]] - `calls` [EXTRACTED]
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[FetchOutcome]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[Stand-in for the object httpx.stream() yields as a context manager.]] - `rationale_for` [EXTRACTED]
-- [[test_citation_verifier.py]] - `contains` [EXTRACTED]
+- [[dot-__aenter__()_3]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_75]] - `method` [EXTRACTED]
+- [[dot-aiter_bytes()]] - `method` [EXTRACTED]
+- [[dot-aread()]] - `method` [EXTRACTED]
+- [[test_fieldflare_route_strips_unsupported_fields_streaming()]] - `calls` [EXTRACTED]
+- [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_137
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamResponse

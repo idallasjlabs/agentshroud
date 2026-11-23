@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # egress_config.py
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[ContainerConfig Defaults]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Environment Variables_13]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Function Details_28]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.generate_compose()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_network_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_shared_nothing()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[IsolationVerifier.verify_volume_isolation()]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Key Classes  Functions_30]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Purpose_128]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Related_34]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Responsibilities_32]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[Threat Model_18]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_2]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
-- [[agent_isolation.py_1]] - document - docs/vault/02 - Modules/Security Modules/agent_isolation.py.md
+- [[Configuration  Environment Variables_11]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Allowlist]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Default Denylist Categories]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.from_environment()]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[EgressFilterConfig.is_denylisted(domain)]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Function Details_19]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Key Classes  Functions_21]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Purpose_22]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Related_21]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Responsibilities_21]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[Threat Model_7]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py_1]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
+- [[egress_config.py]] - document - docs/vault/02 - Modules/Security Modules/egress_config.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,9 +30,3 @@ members: 15
 TABLE source_file, type FROM #community/egress_configpy
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditExporter (2)_1]]
-
-## Top bridge nodes
-- [[agent_isolation.py_2]] - degree 11, connects to 1 community

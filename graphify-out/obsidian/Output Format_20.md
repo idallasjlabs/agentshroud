@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".omp/agents/sf.md"
 type: "document"
-community: "Community 462"
-location: "L30"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

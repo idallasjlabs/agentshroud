@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/inbound_edge/edge_jwt.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
-location: "L194"
+community: "EdgeStore"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/EdgeStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path_50]] - `references` [EXTRACTED]
+- [[EdgeStore]] - `references` [EXTRACTED]
+- [[TokenService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/EdgeStore

@@ -1,25 +1,26 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 51"
+community: "soc/router.py"
 location: "L570"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_51
+  - community/soc/routerpy
 ---
 
 # list_services()
 
 ## Connections
-- [[.test_filters_services_by_bot_image()]] - `calls` [EXTRACTED]
-- [[.test_no_bot_id_returns_all_services()]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
+- [[dot-test_filters_services_by_bot_image()]] - `calls` [EXTRACTED]
+- [[dot-test_no_bot_id_returns_all_services()]] - `calls` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[ServiceManager]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
-- [[_local_agent_health()]] - `calls` [EXTRACTED]
-- [[get_health()_1]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

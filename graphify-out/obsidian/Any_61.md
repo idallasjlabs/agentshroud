@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: ""
 type: "code"
-community: "Community 6"
-location: "L187"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/discover_upstream_versionspy
 ---
 
 # Any
 
 ## Connections
-- [[.check_permission()]] - `references` [EXTRACTED]
-- [[.get_user_permissions_summary()]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[_digest_for_tag()]] - `references` [EXTRACTED]
+- [[_retry()]] - `references` [EXTRACTED]
+- [[discover()]] - `references` [EXTRACTED]
+- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

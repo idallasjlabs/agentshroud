@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 185"
+community: "test_security_toolchain.py"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/test_security_toolchainpy
 ---
 
 # format_report()
 
 ## Connections
-- [[.test_format_report_string()]] - `calls` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
-- [[Format a health report as a human-readable string.      Args         report Fu]] - `rationale_for` [EXTRACTED]
-- [[health_report.py]] - `contains` [EXTRACTED]
+- [[dot-test_format_report_string()]] - `calls` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
+- [[Format a health report as a human-readable string. Args report Full report…]] - `rationale_for` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

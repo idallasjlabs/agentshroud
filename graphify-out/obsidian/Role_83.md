@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-cicd.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 2018"
-location: "L10"
+community: "Skill: Pull Request (PR) Generator"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2018
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2018
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

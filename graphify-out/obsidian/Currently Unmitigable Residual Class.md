@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Community 555"
+community: "Currently Unmitigable Residual Class"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/Currently_Unmitigable_Residual_Class
 ---
 
 # Currently Unmitigable Residual Class
@@ -18,4 +18,4 @@ tags:
 - [[Reachability Context (cap_drop ALL, isolated network)]] - `references` [EXTRACTED]
 - [[Two-Terminal-State Finding Taxonomy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_555
+#graphify/rationale #graphify/EXTRACTED #community/Currently_Unmitigable_Residual_Class

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "IntelReportStore"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/IntelReportStore
 ---
 
 # ._make_report()
@@ -23,7 +23,7 @@ tags:
 - [[dot-test_store_creates_directory()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_chain_fails_for_tampered_entry()]] - `calls` [EXTRACTED]
 - [[dot-test_verify_chain_passes_for_intact_store()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `references` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

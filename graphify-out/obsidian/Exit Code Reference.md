@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "Community 1191"
+community: "Container Errors"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1191
+  - community/Container_Errors
 ---
 
 # Exit Code Reference
 
 ## Connections
-- [[Container Errors_1]] - `contains` [EXTRACTED]
+- [[Container Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1191
+#graphify/document #graphify/EXTRACTED #community/Container_Errors

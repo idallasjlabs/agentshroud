@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 1012"
-location: "L49"
+community: "Architecture Overview"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1012
+  - community/Architecture_Overview
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1012
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-sad/README.md"
 type: "document"
-community: "Community 1216"
-location: "L14"
+community: "System Audit Documentation"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1216
+  - community/System_Audit_Documentation
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_7]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1216
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

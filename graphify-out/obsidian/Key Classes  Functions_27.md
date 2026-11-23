@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
 type: "document"
-community: "Community 613"
-location: "L23"
+community: "Function Details"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/Function_Details
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/Function_Details

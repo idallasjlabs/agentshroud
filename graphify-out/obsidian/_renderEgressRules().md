@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 2334"
+community: "soc.js"
 location: "L1497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2334
+  - community/socjs
 ---
 
 # _renderEgressRules()
 
 ## Connections
+- [[_ago()]] - `calls` [EXTRACTED]
+- [[_esc()_1]] - `calls` [EXTRACTED]
 - [[_loadEgress()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2334
+#graphify/code #graphify/EXTRACTED #community/socjs

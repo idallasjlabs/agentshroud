@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "PermissionLevel"
 location: "L408"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/PermissionLevel
 ---
 
 # .test_rate_limit_per_agent()
 
 ## Connections
-- [[TestRateLimiting_3]] - `method` [EXTRACTED]
+- [[TestRateLimiting_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

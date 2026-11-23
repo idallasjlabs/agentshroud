@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/oracle.md"
+source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "Community 1979"
-location: "L16"
+community: "Athena — Knowledge Distiller"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1979
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Persona
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1979
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

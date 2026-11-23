@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 287"
-location: "L18"
+community: "web_config.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/web_configpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[egress_filter.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_287
+#graphify/document #graphify/EXTRACTED #community/web_configpy

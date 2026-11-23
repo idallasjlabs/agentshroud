@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L70"
+community: "ToolResultSanitizerConfig"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ToolResultSanitizerConfig
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[Test custom configuration.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizerConfig

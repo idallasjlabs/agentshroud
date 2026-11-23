@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "UserSessionManager"
-location: "L437"
+community: "EgressEvent"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/EgressEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Community 460"
+community: "Seccomp Profiles"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/Seccomp_Profiles
 ---
 
 # Seccomp Profiles
@@ -18,8 +18,8 @@ tags:
 - [[Blocked Syscalls (Notable)]] - `contains` [EXTRACTED]
 - [[Default Action]] - `contains` [EXTRACTED]
 - [[Gateway vs Bot Profile Differences]] - `contains` [EXTRACTED]
-- [[Purpose_181]] - `contains` [EXTRACTED]
-- [[Related Notes_25]] - `contains` [EXTRACTED]
+- [[Purpose_64]] - `contains` [EXTRACTED]
+- [[Related Notes_26]] - `contains` [EXTRACTED]
 - [[seccomp-profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_460
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

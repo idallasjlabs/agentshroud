@@ -1,65 +1,44 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 140"
+community: "EgressEvent"
 location: "L40"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_140
+  - graphify/EXTRACTED
+  - community/EgressEvent
 ---
 
 # EgressEvent
 
 ## Connections
-- [[.get_events()_1]] - `references` [EXTRACTED]
-- [[.record()_1]] - `references` [EXTRACTED]
-- [[.scan_response()]] - `calls` [EXTRACTED]
-- [[.test_alert_has_description()]] - `calls` [EXTRACTED]
-- [[.test_alert_has_severity()]] - `calls` [EXTRACTED]
-- [[.test_alert_monitor_mode_no_block()]] - `calls` [EXTRACTED]
-- [[.test_high_volume_triggers_alert()]] - `calls` [EXTRACTED]
-- [[.test_normal_multi_channel_not_flagged()]] - `calls` [EXTRACTED]
-- [[.test_normal_volume_no_alert()]] - `calls` [EXTRACTED]
-- [[.test_record_dns_event()]] - `calls` [EXTRACTED]
-- [[.test_record_file_event()]] - `calls` [EXTRACTED]
-- [[.test_record_http_event()]] - `calls` [EXTRACTED]
-- [[.test_record_mcp_event()]] - `calls` [EXTRACTED]
-- [[.test_slow_drip_across_channels()]] - `calls` [EXTRACTED]
-- [[.test_summary_report()]] - `calls` [EXTRACTED]
-- [[.test_unusual_destination_flagged()]] - `calls` [EXTRACTED]
-- [[MockEgressEvent]] - `shares_data_with` [AMBIGUOUS]
+- [[dot-get_events()_1]] - `references` [EXTRACTED]
+- [[dot-record()]] - `references` [EXTRACTED]
+- [[dot-scan_response()]] - `calls` [EXTRACTED]
+- [[dot-test_alert_has_description()]] - `calls` [EXTRACTED]
+- [[dot-test_alert_has_severity()]] - `calls` [EXTRACTED]
+- [[dot-test_alert_monitor_mode_no_block()]] - `calls` [EXTRACTED]
+- [[dot-test_high_volume_triggers_alert()]] - `calls` [EXTRACTED]
+- [[dot-test_normal_multi_channel_not_flagged()]] - `calls` [EXTRACTED]
+- [[dot-test_normal_volume_no_alert()]] - `calls` [EXTRACTED]
+- [[dot-test_record_dns_event()]] - `calls` [EXTRACTED]
+- [[dot-test_record_file_event()]] - `calls` [EXTRACTED]
+- [[dot-test_record_http_event()]] - `calls` [EXTRACTED]
+- [[dot-test_record_mcp_event()]] - `calls` [EXTRACTED]
+- [[dot-test_slow_drip_across_channels()]] - `calls` [EXTRACTED]
+- [[dot-test_summary_report()]] - `calls` [EXTRACTED]
+- [[dot-test_unusual_destination_flagged()]] - `calls` [EXTRACTED]
 - [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
-- [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
-- [[TestCryptography]] - `uses` [INFERRED]
+- [[TestAnomalyDetection_1]] - `uses` [INFERRED]
 - [[TestDailySummary]] - `uses` [INFERRED]
-- [[TestDependencySecurity]] - `uses` [INFERRED]
-- [[TestDoSPrevention]] - `uses` [INFERRED]
-- [[TestEgressMonitorConfig]] - `uses` [INFERRED]
 - [[TestEventRecording]] - `uses` [INFERRED]
 - [[TestExfiltrationDetection]] - `uses` [INFERRED]
-- [[TestFileSandbox]] - `uses` [INFERRED]
-- [[TestHTTPSecurity]] - `uses` [INFERRED]
-- [[TestInfoLeakage]] - `uses` [INFERRED]
-- [[TestLoggingSecurity]] - `uses` [INFERRED]
-- [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestResourceProtection]] - `uses` [INFERRED]
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[TestTimingAttacks]] - `uses` [INFERRED]
-- [[TestWebSecurity]] - `uses` [INFERRED]
-- [[egress_monitor.py]] - `contains` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/entrypoint-agentshroud.sh"
 type: "code"
-community: "Community 1526"
+community: "entrypoint-agentshroud.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1526
+  - community/entrypoint-agentshroudsh
 ---
 
 # entrypoint-agentshroud.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[entrypoint-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1526
+#graphify/code #graphify/EXTRACTED #community/entrypoint-agentshroudsh

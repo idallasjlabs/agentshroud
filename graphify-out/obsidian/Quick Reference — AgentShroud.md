@@ -1,27 +1,27 @@
 ---
 source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 1285"
+community: "Quick Reference — AgentShroud"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1285
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Quick Reference — AgentShroud
 
 ## Connections
-- [[Common Issues_2]] - `contains` [EXTRACTED]
-- [[Configuration Files_9]] - `contains` [EXTRACTED]
+- [[Common Issues]] - `contains` [EXTRACTED]
+- [[Configuration Files]] - `contains` [EXTRACTED]
 - [[Environment Variables (required)]] - `contains` [EXTRACTED]
-- [[Health Checks]] - `contains` [EXTRACTED]
+- [[Health Checks_2]] - `contains` [EXTRACTED]
 - [[Key Ports]] - `contains` [EXTRACTED]
 - [[Kill Switch_1]] - `contains` [EXTRACTED]
-- [[Logs_1]] - `contains` [EXTRACTED]
-- [[Quick Reference_14]] - `contains` [EXTRACTED]
-- [[Related Notes]] - `contains` [EXTRACTED]
+- [[Logs_2]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `contains` [EXTRACTED]
+- [[Related Notes_20]] - `contains` [EXTRACTED]
 - [[Security Mode Toggle]] - `contains` [EXTRACTED]
 - [[Start  Stop]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1285
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 314"
-location: "L145"
+community: "Skill: UI Expert (UI)"
+location: "L144"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Skill_UI_Expert_UI
 ---
 
 # Form Field
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Component Patterns_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

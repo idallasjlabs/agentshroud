@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L3272"
+community: "fake_urlopen"
+location: "L642"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/fake_urlopen
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_auth_question_about_own_keys_gets_safe_guidance()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_whoami_without_slash_uses_local_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Community 43"
-location: "L82"
+community: "test_e2e_watchtower.py"
+location: "L67"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_43
+  - graphify/INFERRED
+  - community/test_e2e_watchtowerpy
 ---
 
 # pipeline()
 
 ## Connections
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[CanaryTripwire]] - `uses` [INFERRED]
+- [[ContextGuard]] - `uses` [INFERRED]
+- [[EncodingDetector]] - `uses` [INFERRED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[fixture_15]] - `references` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/INFERRED #community/test_e2e_watchtowerpy

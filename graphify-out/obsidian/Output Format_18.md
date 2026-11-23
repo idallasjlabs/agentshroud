@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: ".github/agents/i-sf.agent.md"
 type: "document"
-community: "Community 117"
-location: "L39"
+community: "Salesforce CLI (`sf`) Agent"
+location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

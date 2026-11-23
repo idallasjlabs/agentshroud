@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 463"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
 location: "L616"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_463
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Implementation Timeline
 
 ## Connections
-- [[Next Steps_1]] - `contains` [EXTRACTED]
+- [[Next Steps_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_463
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

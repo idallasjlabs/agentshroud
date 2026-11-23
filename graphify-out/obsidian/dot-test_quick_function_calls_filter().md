@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_quick_function_calls_filter()
@@ -15,4 +15,4 @@ tags:
 - [[Test the performance-optimized function calls only filter.]] - `rationale_for` [EXTRACTED]
 - [[TestXMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

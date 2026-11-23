@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "GitHub Skill"
+community: "._relay"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitHub_Skill
+  - community/_relay
 ---
 
 # ._process_connect()
@@ -16,9 +16,9 @@ tags:
 - [[dot-_handle_client()]] - `calls` [EXTRACTED]
 - [[dot-_relay()]] - `calls` [EXTRACTED]
 - [[dot-_relay_and_scan()]] - `calls` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy]] - `method` [EXTRACTED]
 - [[Parse CONNECT request, check allowlist, relay or block.]] - `rationale_for` [EXTRACTED]
 - [[StreamReader_2]] - `references` [EXTRACTED]
 - [[StreamWriter_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitHub_Skill
+#graphify/code #graphify/EXTRACTED #community/_relay

@@ -1,17 +1,16 @@
 ---
-source_file: "firmware/voice-terminal/main/wakeword.c"
+source_file: ""
 type: "code"
-community: "Community 378"
-location: "L178"
+community: "iot_button_register_cb"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/iot_button_register_cb
 ---
 
 # esp_err_t
 
 ## Connections
-- [[wakeword_init()]] - `references` [EXTRACTED]
+- [[bsp_iot_button_create()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/iot_button_register_cb

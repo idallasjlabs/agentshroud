@@ -1,18 +1,18 @@
 ---
-source_file: "docker/scripts/killswitch.sh"
+source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "Community 990"
-location: "L28"
+community: "workspace.sh"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/workspacesh
 ---
 
 # usage()
 
 ## Connections
-- [[killswitch.sh]] - `defines` [EXTRACTED]
-- [[killswitch.sh script]] - `calls` [EXTRACTED]
+- [[workspace.sh]] - `defines` [EXTRACTED]
+- [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_990
+#graphify/code #graphify/EXTRACTED #community/workspacesh

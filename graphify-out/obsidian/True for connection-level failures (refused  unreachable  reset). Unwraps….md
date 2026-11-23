@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L937"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # True for connection-level failures (refused / unreachable / reset). Unwraps…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_connect_error()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/LLMProxy

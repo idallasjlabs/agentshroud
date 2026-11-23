@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/post-deploy-check.sh"
+source_file: "tests/startup_smoke/test_colima_and_sdk_patch_fallback_resolution.sh"
 type: "code"
-community: "Community 547"
-location: "L65"
+community: "test_colima_and_sdk_patch_fallback_resolution.sh"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_547
+  - community/test_colima_and_sdk_patch_fallback_resolutionsh
 ---
 
 # check()
 
 ## Connections
-- [[post-deploy-check.sh]] - `defines` [EXTRACTED]
-- [[post-deploy-check.sh script]] - `calls` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh]] - `defines` [EXTRACTED]
+- [[test_colima_and_sdk_patch_fallback_resolution.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_547
+#graphify/code #graphify/EXTRACTED #community/test_colima_and_sdk_patch_fallback_resolutionsh

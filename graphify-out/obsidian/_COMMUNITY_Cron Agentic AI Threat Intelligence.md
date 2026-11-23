@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Cron: Agentic AI Threat Intelligence
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud trademark notice (USPTO 99728633)]] - concept - CHANGELOG.md
+- [[Cron Agentic AI Threat Intelligence]] - document - docker/bots/openclaw/config/cron/jobs.json
 
 ## Live Query (requires Dataview plugin)
 

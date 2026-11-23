@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/SKILL.md"
 type: "document"
-community: "Community 843"
+community: "Skill Creation Process"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_843
+  - community/Skill_Creation_Process
 ---
 
 # Anatomy of a Skill
@@ -17,4 +17,4 @@ tags:
 - [[SKILL.md (required)]] - `contains` [EXTRACTED]
 - [[What to Not Include in a Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_843
+#graphify/document #graphify/EXTRACTED #community/Skill_Creation_Process

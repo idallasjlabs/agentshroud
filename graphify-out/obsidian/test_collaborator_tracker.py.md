@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_collaborator_tracker.py"
 type: "code"
-community: "Community 99"
+community: "test_collaborator_tracker.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_99
+  - community/test_collaborator_trackerpy
 ---
 
 # test_collaborator_tracker.py
 
 ## Connections
 - [[CollaboratorActivityTracker]] - `imports` [EXTRACTED]
+- [[Unit tests for CollaboratorActivityTracker.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
+- [[collaborator_tracker.py]] - `imports_from` [EXTRACTED]
 - [[log_file()]] - `contains` [EXTRACTED]
 - [[test_collaborator_entry_has_is_owner_false()]] - `contains` [EXTRACTED]
 - [[test_correlation_id_absent_when_not_provided()]] - `contains` [EXTRACTED]
@@ -51,6 +53,6 @@ tags:
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `contains` [EXTRACTED]
 - [[test_username_is_normalized_for_log_safety()]] - `contains` [EXTRACTED]
 - [[test_webhook_receiver_passes_agent_id_as_bot_id()]] - `contains` [EXTRACTED]
-- [[tracker()]] - `contains` [EXTRACTED]
+- [[tracker()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_99
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

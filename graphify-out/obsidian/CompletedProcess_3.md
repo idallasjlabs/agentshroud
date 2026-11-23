@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/tests/test_deployment_mode.py"
+source_file: ""
 type: "code"
-community: "Community 986"
-location: "L23"
+community: "test_skill_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_986
+  - community/test_skill_guardpy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_bash()]] - `references` [EXTRACTED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_986
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

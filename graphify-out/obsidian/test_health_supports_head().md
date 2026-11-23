@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 46"
+community: "app"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/app
 ---
 
 # test_health_supports_head()
 
 ## Connections
-- [[External uptime monitors (e.g. UptimeRobot) probe with HEAD; a 405     makes a h]] - `rationale_for` [EXTRACTED]
+- [[External uptime monitors (e.g. UptimeRobot) probe with HEAD; a 405 makes a…]] - `rationale_for` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/app

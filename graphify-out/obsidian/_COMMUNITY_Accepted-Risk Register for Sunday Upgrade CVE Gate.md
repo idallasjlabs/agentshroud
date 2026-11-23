@@ -1,18 +1,14 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+members: 1
 ---
 
 # Accepted-Risk Register for Sunday Upgrade CVE Gate
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 1 nodes
 
 ## Members
-- [[check()_2]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
-- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
-- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[Accepted-Risk Register for Sunday Upgrade CVE Gate]] - document - .trivyignore.yaml
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,22 +1,27 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: ""
 type: "code"
-community: "Community 39"
-location: "L35"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # String
 
 ## Connections
-- [[Cli]] - `references` [EXTRACTED]
+- [[AddResource]] - `references` [EXTRACTED]
+- [[ApprovalAction]] - `references` [EXTRACTED]
+- [[Cli_1]] - `references` [EXTRACTED]
+- [[Commands_3]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
+- [[GatewayClient_1]] - `references` [EXTRACTED]
+- [[GetResource]] - `references` [EXTRACTED]
 - [[HttpResponse]] - `references` [EXTRACTED]
-- [[SclClient]] - `references` [EXTRACTED]
+- [[SclClient_1]] - `references` [EXTRACTED]
+- [[ServiceTarget]] - `references` [EXTRACTED]
+- [[SetTarget]] - `references` [EXTRACTED]
 - [[anthropic_openai_sse_translator.py]] - `imports` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `imports` [EXTRACTED]
 - [[app_main.c]] - `imports` [EXTRACTED]
@@ -44,4 +49,4 @@ tags:
 - [[wakeword.c]] - `imports` [EXTRACTED]
 - [[ws_client.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -1,17 +1,22 @@
 ---
 source_file: "docker/config/openclaw/skills/i-sav/SKILL.md"
 type: "document"
-community: "Skill: UX Expert (UX) (2)"
+community: "Architecture Overview.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_UX_Expert_UX_2
+  - community/Architecture_Overviewmd
 ---
 
 # openclaw/skills/i-sav/SKILL.md
 
 ## Connections
-- [[System Audit Vault (Obsidian)_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[Crash Recovery_1]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[Error Index]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
+- [[System Audit Vault (Obsidian)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX_2
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

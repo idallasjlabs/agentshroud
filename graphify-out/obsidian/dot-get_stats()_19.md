@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "_pcm_bytes"
-location: "L165"
+community: "MCPProxy"
+location: "L840"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_pcm_bytes
+  - community/MCPProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_91]] - `references` [EXTRACTED]
+- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_pcm_bytes
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

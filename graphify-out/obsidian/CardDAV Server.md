@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 348"
+community: "Apple Services Setup Guide"
 location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_348
+  - community/Apple_Services_Setup_Guide
 ---
 
 # CardDAV Server
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[📞 Contacts (CardDAV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_348
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

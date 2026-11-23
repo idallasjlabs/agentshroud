@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 341"
+community: "wakeword.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/wakewordc
 ---
 
 # wakeword.c
@@ -19,8 +19,9 @@ tags:
 - [[_btn_released()]] - `contains` [EXTRACTED]
 - [[_ptt_end()]] - `contains` [EXTRACTED]
 - [[_ptt_start()]] - `contains` [EXTRACTED]
+- [[mainaudio.h]] - `imports` [EXTRACTED]
 - [[remote_log.h]] - `imports` [EXTRACTED]
-- [[wakeword.c]] - `imports` [EXTRACTED]
+- [[wakeword.h]] - `imports` [EXTRACTED]
 - [[wakeword_agent_index()]] - `contains` [EXTRACTED]
 - [[wakeword_agent_switch_ack()]] - `contains` [EXTRACTED]
 - [[wakeword_agent_switch_pending()]] - `contains` [EXTRACTED]
@@ -42,4 +43,4 @@ tags:
 - [[wakeword_tts_stop_request()]] - `contains` [EXTRACTED]
 - [[wakeword_tts_stop_requested()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/wakewordc

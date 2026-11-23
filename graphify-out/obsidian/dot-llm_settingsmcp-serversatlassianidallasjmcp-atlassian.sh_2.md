@@ -1,12 +1,12 @@
 ---
 source_file: ".mcp.json"
 type: "code"
-community: "Mac App Discovery Skill"
+community: ".mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mac_App_Discovery_Skill
+  - community/mcpjson
 ---
 
 # .llm_settings/mcp-servers/atlassian/idallasj/mcp-atlassian.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[atlassian-idallasj_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mac_App_Discovery_Skill
+#graphify/code #graphify/EXTRACTED #community/mcpjson

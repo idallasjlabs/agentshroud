@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "document"
-community: "AgentShroud Prerequisites"
+community: "AgentShroud Project Terminology"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/AgentShroud_Project_Terminology
 ---
 
 # Glossary
@@ -18,4 +18,4 @@ tags:
 - [[Technical Abbreviations]] - `contains` [EXTRACTED]
 - [[glossary]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

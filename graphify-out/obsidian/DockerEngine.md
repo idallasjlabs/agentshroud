@@ -1,59 +1,47 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Community 372"
+community: "DockerEngine"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_372
+  - community/DockerEngine
 ---
 
 # DockerEngine
 
 ## Connections
-- [[.__init__()_61]] - `method` [EXTRACTED]
-- [[._cmd()_1]] - `method` [EXTRACTED]
-- [[.build()_1]] - `method` [EXTRACTED]
-- [[.compose_down()_1]] - `method` [EXTRACTED]
-- [[.compose_up()_1]] - `method` [EXTRACTED]
-- [[.exec()_1]] - `method` [EXTRACTED]
-- [[.health_check()_3]] - `method` [EXTRACTED]
-- [[.inspect()_1]] - `method` [EXTRACTED]
-- [[.logs()_1]] - `method` [EXTRACTED]
-- [[.network_create()_1]] - `method` [EXTRACTED]
-- [[.network_rm()_1]] - `method` [EXTRACTED]
-- [[.pause()_1]] - `method` [EXTRACTED]
-- [[.ps()_1]] - `method` [EXTRACTED]
-- [[.pull()_1]] - `method` [EXTRACTED]
-- [[.push()_1]] - `method` [EXTRACTED]
-- [[.rm()_1]] - `method` [EXTRACTED]
-- [[.run()_6]] - `method` [EXTRACTED]
-- [[.setup_method()_23]] - `calls` [EXTRACTED]
-- [[.stop()_6]] - `method` [EXTRACTED]
-- [[.unpause()_1]] - `method` [EXTRACTED]
-- [[.volume_create()_1]] - `method` [EXTRACTED]
-- [[.volume_rm()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_145]] - `method` [EXTRACTED]
+- [[dot-_cmd()_2]] - `method` [EXTRACTED]
+- [[dot-build()_3]] - `method` [EXTRACTED]
+- [[dot-compose_down()_3]] - `method` [EXTRACTED]
+- [[dot-compose_up()_3]] - `method` [EXTRACTED]
+- [[dot-exec()_3]] - `method` [EXTRACTED]
+- [[dot-health_check()_4]] - `method` [EXTRACTED]
+- [[dot-inspect()_3]] - `method` [EXTRACTED]
+- [[dot-logs()_3]] - `method` [EXTRACTED]
+- [[dot-network_create()_3]] - `method` [EXTRACTED]
+- [[dot-network_rm()_3]] - `method` [EXTRACTED]
+- [[dot-pause()_3]] - `method` [EXTRACTED]
+- [[dot-ps()_1]] - `method` [EXTRACTED]
+- [[dot-pull()_3]] - `method` [EXTRACTED]
+- [[dot-push()_3]] - `method` [EXTRACTED]
+- [[dot-rm()_3]] - `method` [EXTRACTED]
+- [[dot-run()_7]] - `method` [EXTRACTED]
+- [[dot-setup_method()_25]] - `calls` [EXTRACTED]
+- [[dot-stop()_9]] - `method` [EXTRACTED]
+- [[dot-unpause()_3]] - `method` [EXTRACTED]
+- [[dot-volume_create()_3]] - `method` [EXTRACTED]
+- [[dot-volume_rm()_3]] - `method` [EXTRACTED]
 - [[Container engine backed by the Docker CLI.]] - `rationale_for` [EXTRACTED]
-- [[ContainerEngine]] - `uses` [INFERRED]
-- [[ContainerEngine_1]] - `inherits` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
-- [[TestAppleContainerEngine]] - `uses` [INFERRED]
-- [[TestComposeGenerator]] - `uses` [INFERRED]
-- [[TestConfigRoundTrip]] - `uses` [INFERRED]
-- [[TestContainerInfo]] - `uses` [INFERRED]
-- [[TestDetectRuntime]] - `uses` [INFERRED]
+- [[ContainerEngine]] - `inherits` [EXTRACTED]
+- [[ContainerInfo]] - `uses` [INFERRED]
 - [[TestDockerEngine]] - `uses` [INFERRED]
 - [[TestGetEngine]] - `uses` [INFERRED]
-- [[TestInstallerAPI]] - `uses` [INFERRED]
-- [[TestManagementPage]] - `uses` [INFERRED]
-- [[TestPodmanEngine]] - `uses` [INFERRED]
-- [[TestRuntimeConfig]] - `uses` [INFERRED]
-- [[TestSecurityFeatures]] - `uses` [INFERRED]
-- [[TestWebAPI]] - `uses` [INFERRED]
-- [[__init__.py_9]] - `imports` [EXTRACTED]
-- [[docker_engine.py]] - `contains` [EXTRACTED]
+- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[get_engine()]] - `uses` [INFERRED]
+- [[runtime__init__.py]] - `imports` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_372
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

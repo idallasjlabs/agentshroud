@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/runbook.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 1177"
-location: "L711"
+community: "Troubleshooting"
+location: "L892"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1177
+  - community/Troubleshooting
 ---
 
 # Performance Issues
 
 ## Connections
-- [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1177
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

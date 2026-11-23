@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "ReportStore"
-location: "L449"
+community: "KeyVault"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportStore
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportStore
+#graphify/code #graphify/EXTRACTED #community/KeyVault

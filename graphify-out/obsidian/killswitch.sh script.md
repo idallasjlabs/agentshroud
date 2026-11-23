@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/killswitch.sh"
 type: "code"
-community: "Community 990"
+community: "killswitch.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_990
+  - community/killswitchsh
 ---
 
 # killswitch.sh script
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[confirm()]] - `calls` [EXTRACTED]
 - [[killswitch.sh]] - `contains` [EXTRACTED]
-- [[usage()_1]] - `calls` [EXTRACTED]
+- [[usage()_3]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_990
+#graphify/code #graphify/EXTRACTED #community/killswitchsh

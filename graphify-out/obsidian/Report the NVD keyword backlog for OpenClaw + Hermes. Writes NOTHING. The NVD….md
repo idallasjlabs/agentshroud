@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "rationale"
-community: "browser/scripts/browse.py"
-location: "L914"
+community: "sync-cve-registry.py"
+location: "L673"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/sync-cve-registrypy
 ---
 
 # Report the NVD keyword backlog for OpenClaw + Hermes. Writes NOTHING. The NVD…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_run_nvd_sync()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy

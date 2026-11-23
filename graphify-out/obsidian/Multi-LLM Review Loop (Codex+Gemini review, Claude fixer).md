@@ -1,17 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "concept"
-community: "Community 644"
+community: "Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)"
 location: "Step 5 / Mode B Step 2"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_644
+  - community/Multi-LLM_Review_Loop_CodexGemini_review_Claude_fixer
 ---
 
 # Multi-LLM Review Loop (Codex+Gemini review, Claude fixer)
 
-## Connections
-- [[hermes-openclaw-dev-workflow]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_644
+#graphify/concept #graphify/EXTRACTED #community/Multi-LLM_Review_Loop_CodexGemini_review_Claude_fixer

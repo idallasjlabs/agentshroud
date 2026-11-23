@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 54"
-location: "L392"
+community: "WebProxy"
+location: "L326"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_54
+  - graphify/EXTRACTED
+  - community/WebProxy
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_no_limit_always_allowed()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_enforced()_1]] - `method` [EXTRACTED]
-- [[.test_rate_limit_per_agent()]] - `method` [EXTRACTED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/WebProxy

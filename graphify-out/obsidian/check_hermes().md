@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Community 227"
+community: "check-vendor-compat.sh"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/check-vendor-compatsh
 ---
 
 # check_hermes()
@@ -16,8 +16,8 @@ tags:
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]
 - [[check-vendor-compat.sh]] - `defines` [EXTRACTED]
 - [[check-vendor-compat.sh script]] - `calls` [EXTRACTED]
-- [[fail()_3]] - `calls` [EXTRACTED]
-- [[pass()_2]] - `calls` [EXTRACTED]
-- [[warn()_2]] - `calls` [EXTRACTED]
+- [[fail()_2]] - `calls` [EXTRACTED]
+- [[pass()_1]] - `calls` [EXTRACTED]
+- [[warn()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

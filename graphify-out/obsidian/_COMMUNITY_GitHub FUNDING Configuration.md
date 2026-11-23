@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # GitHub FUNDING Configuration
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Security Scanner Aggregation and Scorecard Tests]] - code - gateway/tests/test_scanner_integration.py
+- [[GitHub FUNDING Configuration]] - document - .github/FUNDING.yml
 
 ## Live Query (requires Dataview plugin)
 

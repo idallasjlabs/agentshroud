@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "Community 758"
+community: "Atlas — Curriculum Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_758
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_9]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_758
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

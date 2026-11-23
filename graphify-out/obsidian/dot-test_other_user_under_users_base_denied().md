@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestIsPathAllowedForUser"
 location: "L787"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestIsPathAllowedForUser
 ---
 
 # .test_other_user_under_users_base_denied()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsPathAllowedForUser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestIsPathAllowedForUser

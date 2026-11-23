@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "rationale"
-community: "Community 562"
+community: "WebContentScanner"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_562
+  - community/WebContentScanner
 ---
 
 # No internal subset, but still pulls a remote DTD.
 
 ## Connections
-- [[.test_external_dtd_reference_detected()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_external_dtd_reference_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_562
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "Community 1918"
+community: "Daedalus — Concept Illustrator"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1918
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # architecture.puml (PlantUML)
 
 ## Connections
-- [[Output Format_16]] - `contains` [EXTRACTED]
+- [[Output Format_31]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1918
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

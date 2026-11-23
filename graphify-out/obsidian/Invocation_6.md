@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 770"
-location: "L16"
+community: "Mode A — Single task"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_770
+  - community/Mode_A__Single_task
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_770
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

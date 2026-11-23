@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 705"
-location: "L86"
+community: "ledger.py"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_705
+  - community/ledgerpy
 ---
 
 # Related
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_705
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

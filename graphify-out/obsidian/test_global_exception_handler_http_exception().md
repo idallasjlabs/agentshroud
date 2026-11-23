@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Community 143"
+community: "ingest_api/models.py"
 location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/modelspy
 ---
 
 # test_global_exception_handler_http_exception()
 
 ## Connections
-- [[HTTPException]] - `calls` [INFERRED]
 - [[Test global exception handler with HTTPException]] - `rationale_for` [EXTRACTED]
+- [[asyncio_32]] - `references` [EXTRACTED]
 - [[global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

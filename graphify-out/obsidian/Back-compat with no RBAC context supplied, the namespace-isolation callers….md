@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
+type: "rationale"
+community: "TestGroupMemoryWriteACL"
+location: "L150"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/TestGroupMemoryWriteACL
+---
+
+# Back-compat: with no RBAC context supplied, the namespace-isolation callers…
+
+## Connections
+- [[dot-test_legacy_no_rbac_write_still_appends()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/TestGroupMemoryWriteACL

@@ -1,0 +1,54 @@
+---
+type: community
+members: 31
+---
+
+# REQUIRED NOTES — PRODUCE EVERY ONE OF THESE
+
+**Members:** 31 nodes
+
+## Members
+- [[Folder Structure]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[Linking]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[NOW ANALYZE THE FOLLOWING CODEBASE AND PRODUCE THE COMPLETE OBSIDIAN VAULT]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[OBSIDIAN VAULT RULES (Follow These Exactly)]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[OUTPUT FORMAT_70]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[System Audit Vault (Obsidian)]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[Tags]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[YAML Frontmatter]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`00 - START HEREHome.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`00 - START HEREQuick Reference.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`00 - START HERESystem Overview.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureArchitecture Overview.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureData Flow.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureShutdown & Recovery.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`01 - ArchitectureStartup Sequence.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`02 - ModulesFileName.md` — ONE PER SOURCE FILE]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`03 - ConfigurationConfigFile.md` — ONE PER CONFIG FILE]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`04 - Environment VariablesVAR_NAME.md` — ONE PER ENV VAR]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`05 - DependenciesAll Dependencies.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`05 - DependenciesPackageName.md` — ONE PER MAJOR DEPENDENCY]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`06 - Containers & ServicesContainerName.md` — ONE PER CONTAINERSERVICE]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingError Index.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingTroubleshooting Matrix.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`07 - Errors & TroubleshootingErrorName.md` — ONE PER ERROR CATEGORY]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`08 - RunbooksCrash Recovery.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`08 - RunbooksFirst Time Setup.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`08 - RunbooksRestart Procedure.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`09 - DiagramsFull System Flowchart.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[`09 - DiagramsStartup Flow Diagram.md`]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+- [[hermesskillsi-savSKILL]] - document - docker/config/hermes/skills/i-sav/SKILL.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[System Audit Vault (Obsidian)]] - degree 6, connects to 1 community

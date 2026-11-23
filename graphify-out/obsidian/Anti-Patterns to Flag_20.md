@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ti.md"
+source_file: "docker/config/hermes/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 893"
-location: "L224"
+community: "Skill: Technical Illustrator (TI)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_893
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_893
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

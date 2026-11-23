@@ -12,7 +12,8 @@ tags:
 # .test_from_dict_empty_dict_is_fail_closed()
 
 ## Connections
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/models.py"
 location: "L58"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/modelspy
 ---
 
 # Subscribe to EventBus and forward matching events to the client.
 
 ## Connections
-- [[._event_fan_out()]] - `rationale_for` [EXTRACTED]
+- [[dot-_event_fan_out()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/modelspy

@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/security/consent_framework.py"
-type: "code"
-community: "Community 152"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+type: "document"
+community: "consent_framework.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/consent_frameworkpy
 ---
 
-# consent_framework.py
+# consent_framework.py.md
 
 ## Connections
-- [[Chen et al. 2026 (arXiv2602.14364) — MCP config shell injection  secret exfiltration]] - `cites` [EXTRACTED]
-- [[ConfigValidationError]] - `contains` [EXTRACTED]
-- [[ConsentDecision]] - `contains` [EXTRACTED]
-- [[ConsentFramework]] - `contains` [EXTRACTED]
-- [[Maloyan & Namiot 2026 (arXiv2601.17548) — Malicious MCP server configuration attacks]] - `cites` [EXTRACTED]
-- [[ServerConfig]] - `contains` [EXTRACTED]
-- [[ShellInjectionDetected]] - `contains` [EXTRACTED]
-- [[browser_security.py]] - `references` [EXTRACTED]
-- [[oauth_security.py]] - `references` [EXTRACTED]
-- [[test_consent_framework.py]] - `imports_from` [EXTRACTED]
+- [[consent_framework.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_152
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

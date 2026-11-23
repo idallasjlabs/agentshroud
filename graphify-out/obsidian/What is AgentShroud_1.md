@@ -1,17 +1,17 @@
 ---
-source_file: "docs/claude-security-audit-prompt.md"
+source_file: "docker/bots/openclaw/config/workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 470"
-location: "L9"
+community: "AgentShroud — Collaborator Knowledge Base"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_470
+  - community/AgentShroud__Collaborator_Knowledge_Base
 ---
 
 # What is AgentShroud?
 
 ## Connections
-- [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
+- [[AgentShroud — Collaborator Knowledge Base]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_470
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Collaborator_Knowledge_Base

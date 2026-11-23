@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "Community 240"
+community: "gateway/runtime/podman_engine.py (PodmanEngine)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/gateway/runtime/podman_enginepy_PodmanEngine
 ---
 
 # gateway/runtime/podman_engine.py (PodmanEngine)
 
-## Connections
-- [[test_runtime_engines.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_240
+#graphify/code #graphify/EXTRACTED #community/gateway/runtime/podman_enginepy_PodmanEngine

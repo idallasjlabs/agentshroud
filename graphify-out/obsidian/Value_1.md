@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Community 578"
+community: "OPENCLAW_SANDBOX_MODE"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # Value
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

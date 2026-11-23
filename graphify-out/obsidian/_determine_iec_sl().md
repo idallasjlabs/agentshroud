@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 29"
+community: "scanner_integration.py"
 location: "L2319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/scanner_integrationpy
 ---
 
 # _determine_iec_sl()
 
 ## Connections
-- [[Determine the highest achieved IEC 62443 Security Level.      SL 1 All IEC-mapp]] - `rationale_for` [EXTRACTED]
+- [[Determine the highest achieved IEC 62443 Security Level. SL 1 All IEC-mapped…]] - `rationale_for` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_29
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-pm.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 1011"
-location: "L109"
+community: "Skill: Project Management (PM)"
+location: "L107"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1011
+  - community/Skill_Project_Management_PM
 ---
 
 # Status Reporting
@@ -17,4 +17,4 @@ tags:
 - [[README.md Updates]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1011
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

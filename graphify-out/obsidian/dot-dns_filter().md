@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "DNSFilterConfig"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # .dns_filter()
@@ -15,5 +15,6 @@ tags:
 - [[DNSFilter]] - `calls` [EXTRACTED]
 - [[DNSFilterConfig]] - `calls` [EXTRACTED]
 - [[TestDNSRebinding]] - `method` [EXTRACTED]
+- [[fixture_34]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

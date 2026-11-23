@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-crpr.md"
+source_file: ".cursor/agents/i-ab.md"
 type: "document"
-community: "Community 1276"
-location: "L257"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L229"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1276
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1276
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

@@ -1,16 +1,16 @@
 ---
 source_file: "branding/logos/svg/logo-transparent.svg"
 type: "image"
-community: "Community 192"
+community: "AgentShroud™ Brand Guidelines"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_192
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # AgentShroud Transparent Logo (SVG)
 
 ## Connections
-- [[Logo Usage]] - `references` [EXTRACTED]
+- [[Logo Usage_2]] - `references` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_192
+#graphify/image #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

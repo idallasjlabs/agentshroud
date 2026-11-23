@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "ToolResultInjectionScanner"
 location: "L3192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/ToolResultInjectionScanner
 ---
 
 # Remove Telegram HTML formatting tags from collaborator outbound text.
 
 ## Connections
-- [[._strip_collaborator_html_markup()]] - `rationale_for` [EXTRACTED]
+- [[dot-_strip_collaborator_html_markup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

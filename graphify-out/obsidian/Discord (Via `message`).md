@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/discord/SKILL.md"
 type: "document"
-community: "Community 959"
+community: "Discord (Via `message`)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_959
+  - community/Discord_Via_message
 ---
 
 # Discord (Via `message`)
@@ -15,8 +15,8 @@ tags:
 - [[Common Actions (Examples)]] - `contains` [EXTRACTED]
 - [[Guidelines]] - `contains` [EXTRACTED]
 - [[Musts]] - `contains` [EXTRACTED]
-- [[SKILL_214]] - `contains` [EXTRACTED]
 - [[Targets]] - `contains` [EXTRACTED]
 - [[Writing Style (Discord)]] - `contains` [EXTRACTED]
+- [[discordSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_959
+#graphify/document #graphify/EXTRACTED #community/Discord_Via_message

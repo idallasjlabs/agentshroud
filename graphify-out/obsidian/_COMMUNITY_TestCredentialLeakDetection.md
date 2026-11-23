@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.20
 members: 10
 ---
 
 # TestCredentialLeakDetection
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[AgentShroud Module Inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[AgentShroud Module Inventory_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[Original 33 Modules (v0.6.0)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[Original 33 Modules (v0.6.0)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[Pipeline Integration Points]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[Pipeline Integration Points_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[agentshroud-blueteamreferencesmodule-inventory]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[agentshroud-redteamreferencesmodule-inventory]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
-- [[v0.7.0 New Modules (Tier 2+3 + Hardening)]] - document - skills/custom/agentshroud-blueteam/references/module-inventory.md
-- [[v0.7.0 New Modules (Tier 2+3 + Hardening)_1]] - document - skills/custom/agentshroud-redteam/references/module-inventory.md
+- [[dot-test_clean_code_passes()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_clean_content_passes()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_1password_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_aws_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_github_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_google_oauth_secret()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_jwt_token()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-test_detect_openai_key()]] - code - gateway/tests/test_credential_isolation.py
+- [[Test that credential patterns are detected in outbound content.]] - rationale - gateway/tests/test_credential_isolation.py
+- [[TestCredentialLeakDetection]] - code - gateway/tests/test_credential_isolation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +25,11 @@ members: 10
 TABLE source_file, type FROM #community/TestCredentialLeakDetection
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 2 edges to [[_COMMUNITY_CredentialInjectorConfig]]
+- 2 edges to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_test_credential_isolation.py]]
+
+## Top bridge nodes
+- [[TestCredentialLeakDetection]] - degree 14, connects to 3 communities

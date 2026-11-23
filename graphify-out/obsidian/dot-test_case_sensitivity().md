@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestEdgeCases"
 location: "L333"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestEdgeCases
 ---
 
 # .test_case_sensitivity()
@@ -15,4 +15,4 @@ tags:
 - [[Case variations should not bypass protection.]] - `rationale_for` [EXTRACTED]
 - [[TestEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestEdgeCases

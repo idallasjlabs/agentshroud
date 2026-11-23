@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/Dockerfile.bot.md"
+source_file: "docs/vault/03 - Configuration/Dockerfile.gateway.md"
 type: "document"
-community: "Community 739"
-location: "L54"
+community: "Dockerfile — Gateway"
+location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/Dockerfile__Gateway
 ---
 
 # Pre-installed Tools
 
 ## Connections
-- [[Dockerfile — Bot (OpenClaw)]] - `contains` [EXTRACTED]
+- [[Dockerfile — Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Gateway

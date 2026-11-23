@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "Community 196"
+community: "BrowserSecurityGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/BrowserSecurityGuard
 ---
 
 # test_browser_security.py
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
 - [[TestCredentialProtection]] - `contains` [EXTRACTED]
 - [[TestScreenshotAnalysis]] - `contains` [EXTRACTED]
 - [[TestSocialEngineeringDetection]] - `contains` [EXTRACTED]
 - [[TestURLReputation]] - `contains` [EXTRACTED]
-- [[browser_security.py]] - `imports_from` [EXTRACTED]
-- [[guard()]] - `contains` [EXTRACTED]
+- [[Tests for browser_security module. TDD Written before implementation.]] - `rationale_for` [EXTRACTED]
+- [[guard()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

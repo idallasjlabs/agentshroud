@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestResourceGuardAlertBridge"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestResourceGuardAlertBridge
 ---
 
 # .test_missing_timestamp_falls_back_to_zero()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_build_bridge()]] - `calls` [EXTRACTED]
 - [[TestResourceGuardAlertBridge]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestResourceGuardAlertBridge

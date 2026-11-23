@@ -1,26 +1,21 @@
 ---
 source_file: ".agents/skills/i-pm/README.md"
 type: "document"
-community: "Community 1915"
+community: "Project Management (SKILL)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/Project_Management_SKILL
 ---
 
 # Project Management (README)
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-pmREADME]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Purpose_18]] - `contains` [EXTRACTED]
-- [[Purpose_59]] - `contains` [EXTRACTED]
-- [[README_18]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_24]] - `contains` [EXTRACTED]
-- [[Related Skills_80]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
-- [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_24]] - `contains` [EXTRACTED]
-- [[Usage_82]] - `contains` [EXTRACTED]
+- [[Purpose_161]] - `contains` [EXTRACTED]
+- [[Related Skills_106]] - `contains` [EXTRACTED]
+- [[Usage_119]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/Project_Management_SKILL

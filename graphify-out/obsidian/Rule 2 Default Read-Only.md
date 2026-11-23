@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/aws.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 209"
-location: "L43"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Rule 2: Default Read-Only
 
 ## Connections
-- [[Operating Rules (Non-Negotiable)]] - `contains` [EXTRACTED]
+- [[Operating Rules (Non-Negotiable)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_209
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

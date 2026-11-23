@@ -1,20 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
 type: "document"
-community: "Community 834"
-location: "L30"
+community: "telegram_proxy.py"
+location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/telegram_proxypy
 ---
 
 # Function Details
 
 ## Connections
-- [[WebProxyConfig.get_domain_settings(domain)]] - `contains` [EXTRACTED]
-- [[WebProxyConfig.is_domain_allowed(domain)]] - `contains` [EXTRACTED]
-- [[WebProxyConfig.is_domain_denied(domain)]] - `contains` [EXTRACTED]
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy.get_stats()]] - `contains` [EXTRACTED]
+- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - `contains` [EXTRACTED]
+- [[telegram_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_834
+#graphify/document #graphify/EXTRACTED #community/telegram_proxypy

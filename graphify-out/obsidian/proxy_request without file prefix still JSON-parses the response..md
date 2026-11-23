@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1412"
+community: "asyncio"
 location: "L8805"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1412
+  - community/asyncio
 ---
 
 # proxy_request without file/ prefix still JSON-parses the response.
 
 ## Connections
-- [[.test_proxy_request_api_path_still_json_parsed()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_proxy_request_api_path_still_json_parsed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1412
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ContextSegment"
+community: "ApprovalStore"
 location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/ApprovalStore
 ---
 
 # .get_item()
 
 ## Connections
 - [[dot-decide()]] - `calls` [EXTRACTED]
-- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Fetch a single queue item by ID.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/ApprovalStore

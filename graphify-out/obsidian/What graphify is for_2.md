@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/graphify.md"
+source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 926"
-location: "L45"
+community: "What You Must Do When Invoked"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_926
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # What graphify is for
 
 ## Connections
-- [[graphify_4]] - `contains` [EXTRACTED]
+- [[graphify_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_926
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

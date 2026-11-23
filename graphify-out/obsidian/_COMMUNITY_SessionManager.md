@@ -1,69 +1,64 @@
 ---
 type: community
-cohesion: 0.07
-members: 54
+members: 51
 ---
 
 # SessionManager
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 54 nodes
+**Members:** 51 nodes
 
 ## Members
-- [[dot-__init__()_43]] - code - gateway/security/git_guard.py
-- [[dot-_analyze_file_content()]] - code - gateway/security/git_guard.py
-- [[dot-_analyze_script_content()]] - code - gateway/security/git_guard.py
-- [[dot-_analyze_script_file()]] - code - gateway/security/git_guard.py
-- [[dot-_make_hook()]] - code - gateway/tests/test_git_guard.py
-- [[dot-_quarantine_suspicious_files()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_git_hooks()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_package_json()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_pyproject_toml()]] - code - gateway/security/git_guard.py
-- [[dot-_scan_setup_py()]] - code - gateway/security/git_guard.py
-- [[dot-export_findings_report()]] - code - gateway/security/git_guard.py
-- [[dot-get_findings_summary()]] - code - gateway/security/git_guard.py
-- [[dot-monitor_git_operations()]] - code - gateway/security/git_guard.py
-- [[dot-scan_content()]] - code - gateway/security/git_guard.py
-- [[dot-scan_git_repository()]] - code - gateway/security/git_guard.py
-- [[dot-test_clean_hook_passes()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_clean_repo_no_findings()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_curl_in_hook_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_default_mode_is_enforce()_2]] - code - gateway/tests/test_round2_hardening.py
-- [[dot-test_finding_has_file_path()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_git_guard_detects_credential_patterns()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_git_guard_no_path_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_git_guard_scan_repo()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_nc_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_no_git_dir_returns_empty()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_reverse_shell_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[dot-test_wget_flagged()]] - code - gateway/tests/test_git_guard.py
-- [[A security finding in git hooks or install scripts.]] - rationale - gateway/security/git_guard.py
-- [[Analyze a script file for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Analyze file content for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Analyze script content string for malicious patterns.]] - rationale - gateway/security/git_guard.py
-- [[Any_13]] - code - gateway/security/git_guard.py
-- [[Args             mode 'monitor' (log findings) or 'enforce' (quarantine suspic]] - rationale - gateway/security/git_guard.py
-- [[Convenience function to scan a repository.]] - rationale - gateway/security/git_guard.py
-- [[Export findings to a detailed report.]] - rationale - gateway/security/git_guard.py
-- [[Get a summary of all findings.]] - rationale - gateway/security/git_guard.py
-- [[Git guard errors shouldn't expose full file paths.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Git guard should catch credential patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[GitGuard]] - code - gateway/security/git_guard.py
-- [[Monitor and analyze git hooks and package installation scripts.]] - rationale - gateway/security/git_guard.py
-- [[Monitor for git clone and npm install operations.]] - rationale - gateway/security/git_guard.py
-- [[Move suspicious files to quarantine directory.]] - rationale - gateway/security/git_guard.py
-- [[Path_8]] - code - gateway/security/git_guard.py
-- [[Scan a git repository for malicious hooks and scripts.          Args]] - rationale - gateway/security/git_guard.py
-- [[Scan arbitrary text content for malicious gitsupply-chain patterns.          Th]] - rationale - gateway/security/git_guard.py
-- [[Scan git hooks directory for malicious content.]] - rationale - gateway/security/git_guard.py
-- [[Scan package.json for suspicious install scripts.]] - rationale - gateway/security/git_guard.py
-- [[Scan pyproject.toml for suspicious build scripts.]] - rationale - gateway/security/git_guard.py
-- [[Scan setup.py for suspicious installation scripts.]] - rationale - gateway/security/git_guard.py
-- [[SecurityFinding]] - code - gateway/security/git_guard.py
-- [[TestGitGuard_1]] - code - gateway/tests/test_git_guard.py
-- [[git_guard.py]] - code - gateway/security/git_guard.py
-- [[scan_repository()]] - code - gateway/security/git_guard.py
-- [[test_git_guard.py]] - code - gateway/tests/test_git_guard.py
+- [[dot-__init__()_198]] - code - gateway/security/session_security.py
+- [[dot-_fingerprint()]] - code - gateway/security/session_security.py
+- [[dot-cleanup_expired()_3]] - code - gateway/security/session_security.py
+- [[dot-create_session()]] - code - gateway/security/session_security.py
+- [[dot-destroy_session()]] - code - gateway/security/session_security.py
+- [[dot-generate_instruction_nonce()]] - code - gateway/security/session_security.py
+- [[dot-manager()_2]] - code - gateway/tests/test_session_security.py
+- [[dot-register_event_source()]] - code - gateway/security/session_security.py
+- [[dot-test_cleanup_expired()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_create_session()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_destroy_session()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_different_ips_not_rate_limited()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_rate_limit_exceeded()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_rate_limit_resets_after_window()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_rotate_session()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_rotated_session_valid()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_session_bound_to_identity()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_session_id_is_cryptographically_random()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_unknown_event_source_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_valid_event_source_accepted()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_valid_session_accepted()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_wrong_ip_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-test_wrong_user_agent_rejected()]] - code - gateway/tests/test_session_security.py
+- [[dot-validate_event()]] - code - gateway/security/session_security.py
+- [[dot-validate_nonce()]] - code - gateway/security/session_security.py
+- [[dot-validate_session()]] - code - gateway/security/session_security.py
+- [[Any_82]] - code
+- [[EventInjectionError]] - code - gateway/security/session_security.py
+- [[Exception_18]] - code
+- [[Generate a single-use, time-bound nonce for an instruction. Format…]] - rationale - gateway/security/session_security.py
+- [[RateLimitExceeded]] - code - gateway/security/session_security.py
+- [[Return True if the nonce is valid (not replayed, within 5-min window). Side-…]] - rationale - gateway/security/session_security.py
+- [[Session Security Module - Secure session management for MCP gateway. Provides…]] - rationale - gateway/security/session_security.py
+- [[SessionBindingError]] - code - gateway/security/session_security.py
+- [[SessionError]] - code - gateway/security/session_security.py
+- [[SessionExpired]] - code - gateway/security/session_security.py
+- [[SessionManager]] - code - gateway/security/session_security.py
+- [[TestEventInjection]] - code - gateway/tests/test_session_security.py
+- [[TestRateLimiting_3]] - code - gateway/tests/test_session_security.py
+- [[TestSessionCleanup]] - code - gateway/tests/test_session_security.py
+- [[TestSessionCreation]] - code - gateway/tests/test_session_security.py
+- [[TestSessionRotation]] - code - gateway/tests/test_session_security.py
+- [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
+- [[Tests for session_security module. TDD Written before implementation.]] - rationale - gateway/tests/test_session_security.py
+- [[fixture_127]] - code
+- [[manager()_3]] - code - gateway/tests/test_session_security.py
+- [[session_security.py_2]] - code - gateway/security/session_security.py
+- [[test_session_security.py]] - code - gateway/tests/test_session_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -73,18 +68,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 25 edges to [[_COMMUNITY_ContextGuard]]
-- 12 edges to [[_COMMUNITY_dot-_make_proxy()]]
-- 11 edges to [[_COMMUNITY_Any]]
-- 6 edges to [[_COMMUNITY_PathIsolationManager]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_Enum]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
-- 1 edge to [[_COMMUNITY_SecureBrowser (3)]]
+- 4 edges to [[_COMMUNITY_TestAuth_1]]
+- 3 edges to [[_COMMUNITY_TestInstructionNonce]]
+- 3 edges to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
 
 ## Top bridge nodes
-- [[GitGuard]] - degree 84, connects to 7 communities
-- [[git_guard.py]] - degree 5, connects to 1 community
-- [[scan_repository()]] - degree 5, connects to 1 community
-- [[dot-test_git_guard_detects_credential_patterns()]] - degree 3, connects to 1 community
-- [[dot-test_git_guard_no_path_leak()]] - degree 3, connects to 1 community
+- [[SessionManager]] - degree 26, connects to 4 communities
+- [[session_security.py_2]] - degree 10, connects to 3 communities
+- [[test_session_security.py]] - degree 9, connects to 1 community
+- [[dot-validate_session()]] - degree 6, connects to 1 community
+- [[dot-create_session()]] - degree 5, connects to 1 community

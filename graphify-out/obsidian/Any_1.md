@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: ""
 type: "code"
-community: "Community 124"
-location: "L49"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/soc/routerpy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_4]] - `references` [EXTRACTED]
-- [[._default_send()]] - `references` [EXTRACTED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[dot-check_permission()]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

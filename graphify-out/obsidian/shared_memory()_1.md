@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_workspace_manager.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Community 61"
-location: "L91"
+community: "TeamsConfig"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/TeamsConfig
 ---
 
 # shared_memory()
 
 ## Connections
-- [[SharedMemoryManager]] - `calls` [EXTRACTED]
-- [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
+- [[SharedMemoryManager]] - `uses` [INFERRED]
+- [[fixture_93]] - `references` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

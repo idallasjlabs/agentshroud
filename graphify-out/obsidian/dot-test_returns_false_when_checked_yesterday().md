@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "test_daily_cve_report.py"
 location: "L1054"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_returns_false_when_checked_yesterday()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAlreadyCheckedUpstreamToday]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L54"
+community: "FakeClock"
+location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/FakeClock
 ---
 
 # .__call__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/FakeClock

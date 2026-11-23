@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/aws.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 209"
-location: "L87"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Tagging Standard
@@ -16,4 +16,4 @@ tags:
 - [[Required Tags (All Resources)]] - `contains` [EXTRACTED]
 - [[Tag Audit Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_209
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

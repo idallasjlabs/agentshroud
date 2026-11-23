@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_shell_injection_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCommandInjectionScan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

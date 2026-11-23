@@ -1,34 +1,51 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 38
 ---
 
 # Plan: AgentShroud Security Hardening — Real Agent Containment
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 38 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcpm-doctorSKILL]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[1. Check MCP Configuration]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[2. Test GitHub MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[3. Test Atlassian MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[4. Test AWS API MCP Server]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Common Issues & Fixes]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Capabilities]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Diagnostic Workflow]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue AWS credentials not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Atlassian OAuth token expired]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue Docker not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue GitHub MCP authentication failed]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue npx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Issue uvx not found]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Output Format_15]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Related Skills_62]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Role_47]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
-- [[When to Invoke_3]] - document - .agents/skills/i-mcpm-doctor/SKILL.md
+- [[AGENTSHROUD_PLAN-RESET-20260222-0912]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes_1]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes_2]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes_4]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Changes_5]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Context_5]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Execution Order & Parallelism]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[FINAL Network Lockdown Activation]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Files to Modify]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[GitHub Workflow Rules]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P2 Credential Isolation (op-proxy)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P3 Channel Ownership — Telegram + Email]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P4 Wire MCP Proxy]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[P5 Wire SecurityPipeline to forward]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Plan AgentShroud Security Hardening — Real Agent Containment]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Pre-Flight Checklist]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Root Causes (5 distinct bugs)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests_6]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests_7]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests (TDD)]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests (TDD)_1]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Tests (TDD)_2]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_5]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_6]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_7]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_8]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_9]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_10]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[Verification_11]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists_1]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists_2]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists_3]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
+- [[What Exists_4]] - document - docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md
 
 ## Live Query (requires Dataview plugin)
 

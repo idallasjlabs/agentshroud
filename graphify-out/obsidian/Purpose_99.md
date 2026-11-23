@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ps/README.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
 type: "document"
-community: "Community 1239"
+community: "8D Root Cause Analysis"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1239
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1239
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

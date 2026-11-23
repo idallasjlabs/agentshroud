@@ -1,17 +1,20 @@
 ---
-source_file: ".cursor/agents/i-cr.md"
+source_file: ".github/agents/i-daedalus.agent.md"
 type: "document"
-community: "Community 2019"
-location: "L41"
+community: "Daedalus — Concept Illustrator"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2019
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[architecture.puml (PlantUML)_3]] - `contains` [EXTRACTED]
+- [[diagramsREADME_3]] - `contains` [EXTRACTED]
+- [[flow.mmd (Mermaid)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2019
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

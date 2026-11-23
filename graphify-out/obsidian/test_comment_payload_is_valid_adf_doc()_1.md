@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "Community 303"
+community: "test_jira_weekly_review.py"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_303
+  - community/test_jira_weekly_reviewpy
 ---
 
 # test_comment_payload_is_valid_adf_doc()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_jira_weekly_review.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_303
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

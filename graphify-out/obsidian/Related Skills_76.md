@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Community 496"
-location: "L161"
+community: "Incident Response (INCIDENT)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_496
+  - community/Incident_Response_INCIDENT
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_6]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_496
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

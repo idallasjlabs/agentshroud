@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "rationale"
-community: "Community 124"
+community: "ApprovalRequest"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/ApprovalRequest
 ---
 
 # Mock async Telegram sendMessage to capture DM and group notifications.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[mock_send_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_124
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

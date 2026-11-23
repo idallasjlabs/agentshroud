@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "document"
-community: "Community 679"
-location: "L27"
+community: "Function Details"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/Function_Details
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[session_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/document #graphify/EXTRACTED #community/Function_Details

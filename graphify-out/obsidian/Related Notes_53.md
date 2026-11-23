@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Community 1569"
-location: "L72"
+community: "gitleaks.toml"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/gitleakstoml
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Networks]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

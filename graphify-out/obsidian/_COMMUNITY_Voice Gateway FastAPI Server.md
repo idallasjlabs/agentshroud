@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Voice Gateway FastAPI Server
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[soc__init__.py]] - code - gateway/soc/__init__.py
+- [[Voice Gateway FastAPI Server]] - code - voice_gateway/server.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/typography/typography.md"
 type: "document"
-community: "Community 542"
+community: "Type Scale"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_542
+  - community/Type_Scale
 ---
 
 # Headings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Type Scale]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_542
+#graphify/document #graphify/EXTRACTED #community/Type_Scale

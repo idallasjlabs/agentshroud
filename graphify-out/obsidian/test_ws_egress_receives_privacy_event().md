@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 62"
+community: "ingest_api/main.py"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # test_ws_egress_receives_privacy_event()
@@ -17,4 +17,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

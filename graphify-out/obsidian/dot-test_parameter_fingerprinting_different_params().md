@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_parameter_fingerprinting_different_params()
@@ -15,4 +15,4 @@ tags:
 - [[Test that different parameters create different fingerprints.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

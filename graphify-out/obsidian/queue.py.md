@@ -1,30 +1,32 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "Community 151"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/ingest_api/configpy
 ---
 
 # queue.py
 
 ## Connections
 - [[NOTE Called within _lock context]] - `rationale_for` [EXTRACTED]
-- [[AgentShroud Security Dashboard (index.html)]] - `conceptually_related_to` [INFERRED]
-- [[Approval Queue Module Badge Icon]] - `conceptually_related_to` [INFERRED]
 - [[ApprovalQueue]] - `contains` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[MFAGuard_2]] - `imports` [EXTRACTED]
-- [[MFAGuard.verify()]] - `calls` [EXTRACTED]
-- [[README_127]] - `references` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[MFAGuard]] - `imports` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[mfa_guard.py]] - `imports_from` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[test_mfa_guard.py]] - `references` [EXTRACTED]
+- [[test_approval_queue.py]] - `imports_from` [EXTRACTED]
+- [[test_approval_stress.py]] - `imports_from` [EXTRACTED]
+- [[test_mfa_guard.py]] - `imports_from` [EXTRACTED]
+- [[test_security_integration.py]] - `imports_from` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

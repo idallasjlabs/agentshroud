@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 452"
+community: "test_dns_canvas_coverage.py"
 location: "L346"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_452
+  - graphify/EXTRACTED
+  - community/test_dns_canvas_coveragepy
 ---
 
 # TestImportFallback
 
 ## Connections
-- [[.test_dns_blocklist_import_failure_sets_none()]] - `method` [EXTRACTED]
+- [[dot-test_dns_blocklist_import_failure_sets_none()]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
-- [[DNSForwarderProtocol]] - `uses` [INFERRED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_452
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

@@ -1,25 +1,26 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Community 389"
+community: "Architecture Overview.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Architecture_Overviewmd
 ---
 
 # Error Index.md
 
 ## Connections
-- [[Auth Errors]] - `references` [EXTRACTED]
-- [[Container Errors]] - `references` [EXTRACTED]
-- [[Egress Filter Errors]] - `references` [EXTRACTED]
+- [[dot-agentsagentssav]] - `references` [EXTRACTED]
+- [[dot-cursoragentssav]] - `references` [EXTRACTED]
+- [[dot-ompagentssav]] - `references` [EXTRACTED]
+- [[dot-opencodeagentssav]] - `references` [EXTRACTED]
 - [[Error Index_1]] - `contains` [EXTRACTED]
-- [[MCP Proxy Errors_1]] - `references` [EXTRACTED]
-- [[PII Pipeline Errors_1]] - `references` [EXTRACTED]
-- [[Prompt Injection Blocks_1]] - `references` [EXTRACTED]
-- [[SSH Proxy Errors]] - `references` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
+- [[Quick Reference]] - `references` [EXTRACTED]
+- [[i-sav SKILL (System Audit Vault, Obsidian)]] - `references` [EXTRACTED]
+- [[i-sav.agent]] - `references` [EXTRACTED]
+- [[openclawskillsi-savSKILL]] - `references` [EXTRACTED]
+- [[savSKILL]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

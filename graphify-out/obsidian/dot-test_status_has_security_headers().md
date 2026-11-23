@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "asyncio"
 location: "L361"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/asyncio
 ---
 
 # .test_status_has_security_headers()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[GET status should include security headers]] - `rationale_for` [EXTRACTED]
 - [[TestGlobalSecurityHeaders]] - `method` [EXTRACTED]
+- [[asyncio_47]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

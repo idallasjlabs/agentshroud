@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_redteam_probes.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 123"
-location: "L69"
+community: "test_e2e_proxy.py"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/test_e2e_proxypy
 ---
 
 # pipeline()
 
 ## Connections
-- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[test_redteam_probes.py]] - `contains` [EXTRACTED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[fixture_85]] - `references` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_123
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

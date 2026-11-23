@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "api.py"
 location: "L856"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # security_report()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[Aggregate security report.]] - `rationale_for` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[get_2]] - `references` [EXTRACTED]
 - [[get_security_comparison()]] - `calls` [EXTRACTED]
 - [[warn_missing_features()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/apipy

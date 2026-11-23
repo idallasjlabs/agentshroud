@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_xml_dtd_control.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L27"
+community: "TestWebProxySecurityIntegration"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .setUp()
 
 ## Connections
-- [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
-- [[WebContentScanner]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
+- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
+- [[WebProxy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

@@ -1,27 +1,28 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 891"
-location: "L8"
+community: "Skill: Technical Illustrator (TI)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Skill: Technical Illustrator (TI)
 
 ## Connections
-- [[Anti-Patterns to Flag_4]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-tiSKILL]] - `contains` [EXTRACTED]
+- [[Anti-Patterns to Flag_19]] - `contains` [EXTRACTED]
 - [[Brand Theme Block (Mermaid)]] - `contains` [EXTRACTED]
 - [[Core Discipline Understand → Diagram → Validate → Export]] - `contains` [EXTRACTED]
-- [[Dependencies_2]] - `contains` [EXTRACTED]
+- [[Dependencies_11]] - `contains` [EXTRACTED]
 - [[Diagram Types and Data Lakehouse Examples]] - `contains` [EXTRACTED]
 - [[File and Directory Conventions]] - `contains` [EXTRACTED]
 - [[Rendering and Export]] - `contains` [EXTRACTED]
-- [[Role_31]] - `contains` [EXTRACTED]
-- [[Rules_4]] - `contains` [EXTRACTED]
-- [[Validation Checklist_1]] - `contains` [EXTRACTED]
-- [[i-ti]] - `contains` [EXTRACTED]
+- [[Role_149]] - `contains` [EXTRACTED]
+- [[Rules_21]] - `contains` [EXTRACTED]
+- [[Validation Checklist_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

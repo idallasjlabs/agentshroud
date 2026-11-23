@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/tests/test_image_verifier.py"
 type: "code"
-community: "Community 507"
+community: "test_image_verifier.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_507
+  - community/test_image_verifierpy
 ---
 
 # test_image_verifier.py
 
 ## Connections
+- [[Tests for gatewaysecurityimage_verifier.py. Covers - verify_image cosign…]] - `rationale_for` [EXTRACTED]
 - [[_instant_wait_for()_1]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()_1]] - `contains` [EXTRACTED]
+- [[asyncio_79]] - `imports` [EXTRACTED]
+- [[image_verifier.py]] - `imports_from` [EXTRACTED]
 - [[test_cosign_fails_bad_signature()]] - `contains` [EXTRACTED]
 - [[test_cosign_not_found()]] - `contains` [EXTRACTED]
 - [[test_cosign_success()]] - `contains` [EXTRACTED]
@@ -23,4 +26,4 @@ tags:
 - [[verify_image()]] - `imports` [EXTRACTED]
 - [[verify_images()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_507
+#graphify/code #graphify/EXTRACTED #community/test_image_verifierpy

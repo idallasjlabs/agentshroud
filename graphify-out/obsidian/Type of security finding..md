@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "Community 64"
+community: "test_mcp_proxy.py"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/test_mcp_proxypy
 ---
 
 # Type of security finding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[FindingType]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_64
+#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxypy

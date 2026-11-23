@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L877"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # _record_head()
@@ -16,9 +16,9 @@ tags:
 - [[Shared working-tree stability guard]] - `rationale_for` [EXTRACTED]
 - [[_record_head captures real HEAD]] - `calls` [EXTRACTED]
 - [[head-guard function extraction (line-number sed)]] - `references` [EXTRACTED]
-- [[log()_9]] - `calls` [EXTRACTED]
+- [[log()_1]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 - [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

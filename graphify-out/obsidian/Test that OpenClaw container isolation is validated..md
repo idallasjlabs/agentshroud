@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_network_validator.py"
 type: "rationale"
-community: "Community 71"
+community: "NetworkValidator"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/NetworkValidator
 ---
 
 # Test that OpenClaw container isolation is validated.
 
 ## Connections
-- [[.test_validate_docker_compose_config_openclaw_isolation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_validate_docker_compose_config_openclaw_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/NetworkValidator

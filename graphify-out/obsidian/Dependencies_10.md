@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: "docs/planning/v0.8/v0.8.0-release-plan.md"
 type: "document"
-community: "Community 314"
-location: "L391"
+community: "🛡️ AgentShroud Release Plan"
+location: "L177"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/_AgentShroud_Release_Plan
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 — Release Plan]] - `contains` [EXTRACTED]
+- [[🛡️ AgentShroud Release Plan]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/_AgentShroud_Release_Plan

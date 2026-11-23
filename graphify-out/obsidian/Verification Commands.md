@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "Community 1413"
+community: "Skill: Security Review (SEC)"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1413
+  - community/Skill_Security_Review_SEC
 ---
 
 # Verification Commands
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1413
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

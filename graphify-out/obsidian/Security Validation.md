@@ -1,19 +1,17 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 258"
-location: "L326"
+community: "Step-by-Step Deployment"
+location: "L449"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Step-by-Step_Deployment
 ---
 
 # Security Validation
 
 ## Connections
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Check File Permissions]] - `contains` [EXTRACTED]
-- [[Verify Isolation]] - `contains` [EXTRACTED]
+- [[Post-Deployment Validation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

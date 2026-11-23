@@ -1,37 +1,46 @@
 ---
 type: community
-cohesion: 0.09
-members: 22
+members: 33
 ---
 
 # xurl — Agent Skill Reference
 
-**Cohesion:** 0.09 - loosely connected
-**Members:** 22 nodes
+**Members:** 33 nodes
 
 ## Members
-- [[ADR-007 Zero-Config Security]] - concept - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[AgentShroud Deployment Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Apple Containers (macOS)]] - document - docs/architecture/deployment-diagram.md
-- [[Cloud Provider Secrets]] - document - docs/architecture/deployment-diagram.md
-- [[DNS Routing Configuration]] - document - docs/architecture/deployment-diagram.md
-- [[Default Port Allocation]] - document - docs/architecture/deployment-diagram.md
-- [[Deployment Validation]] - document - docs/architecture/deployment-diagram.md
-- [[Docker Runtime]] - document - docs/architecture/deployment-diagram.md
-- [[Docker Secrets]] - document - docs/architecture/deployment-diagram.md
-- [[HashiCorp Vault Integration]] - document - docs/architecture/deployment-diagram.md
-- [[Multi-Instance Support]] - document - docs/architecture/deployment-diagram.md
-- [[Multi-Runtime Support_1]] - document - docs/architecture/deployment-diagram.md
-- [[Network Topology_2]] - document - docs/architecture/deployment-diagram.md
-- [[Overview_14]] - document - docs/architecture/deployment-diagram.md
-- [[Persistent Storage Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Podman Support]] - document - docs/architecture/deployment-diagram.md
-- [[Port Mappings and Auto-Detection]] - document - docs/architecture/deployment-diagram.md
-- [[Secrets Management Integration]] - document - docs/architecture/deployment-diagram.md
-- [[Three-Network Architecture]] - document - docs/architecture/deployment-diagram.md
-- [[Volume Mounts and Secrets Management]] - document - docs/architecture/deployment-diagram.md
-- [[Zero-Configuration Deployment]] - document - docs/architecture/deployment-diagram.md
-- [[deployment-diagram]] - document - docs/architecture/deployment-diagram.md
+- [[Check your activity]] - document - skills/openclaw/xurl/SKILL.md
+- [[Command Details]] - document - skills/openclaw/xurl/SKILL.md
+- [[Common Workflows_2]] - document - skills/openclaw/xurl/SKILL.md
+- [[Direct Messages]] - document - skills/openclaw/xurl/SKILL.md
+- [[Engagement]] - document - skills/openclaw/xurl/SKILL.md
+- [[Error Handling_9]] - document - skills/openclaw/xurl/SKILL.md
+- [[Global Flags]] - document - skills/openclaw/xurl/SKILL.md
+- [[Go]] - document - skills/openclaw/xurl/SKILL.md
+- [[Homebrew (macOS)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Installation_2]] - document - skills/openclaw/xurl/SKILL.md
+- [[Media Upload]] - document - skills/openclaw/xurl/SKILL.md
+- [[Notes_7]] - document - skills/openclaw/xurl/SKILL.md
+- [[Other auth methods]] - document - skills/openclaw/xurl/SKILL.md
+- [[Output Format_72]] - document - skills/openclaw/xurl/SKILL.md
+- [[Post with an image]] - document - skills/openclaw/xurl/SKILL.md
+- [[Posting]] - document - skills/openclaw/xurl/SKILL.md
+- [[Prerequisites_8]] - document - skills/openclaw/xurl/SKILL.md
+- [[Quick Reference_12]] - document - skills/openclaw/xurl/SKILL.md
+- [[Raw API Access]] - document - skills/openclaw/xurl/SKILL.md
+- [[Reading]] - document - skills/openclaw/xurl/SKILL.md
+- [[Register an app (recommended)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Reply to a conversation]] - document - skills/openclaw/xurl/SKILL.md
+- [[Search and engage]] - document - skills/openclaw/xurl/SKILL.md
+- [[Secret Safety (Mandatory)]] - document - skills/openclaw/xurl/SKILL.md
+- [[Set up multiple apps]] - document - skills/openclaw/xurl/SKILL.md
+- [[Shell script]] - document - skills/openclaw/xurl/SKILL.md
+- [[Social Graph]] - document - skills/openclaw/xurl/SKILL.md
+- [[Streaming]] - document - skills/openclaw/xurl/SKILL.md
+- [[Timelines & Mentions]] - document - skills/openclaw/xurl/SKILL.md
+- [[User Info]] - document - skills/openclaw/xurl/SKILL.md
+- [[npm]] - document - skills/openclaw/xurl/SKILL.md
+- [[xurl — Agent Skill Reference]] - document - skills/openclaw/xurl/SKILL.md
+- [[xurlSKILL]] - document - skills/openclaw/xurl/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -39,9 +48,3 @@ members: 22
 TABLE source_file, type FROM #community/xurl__Agent_Skill_Reference
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ADR-007 Zero-Config Security (docker-compose up = fully secured)]]
-
-## Top bridge nodes
-- [[AgentShroud Deployment Architecture]] - degree 8, connects to 1 community

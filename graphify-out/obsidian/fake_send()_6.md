@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L9250"
+community: "._make_proxy"
+location: "L9302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # fake_send()
 
 ## Connections
-- [[dot-test_hello_in_group_sends_hermes_ack()]] - `contains` [EXTRACTED]
+- [[dot-test_dm_hello_does_not_trigger_probe()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

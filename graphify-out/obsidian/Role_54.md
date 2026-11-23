@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: ".github/agents/i-athena.agent.md"
 type: "document"
-community: "Community 485"
-location: "L8"
+community: "Athena — Knowledge Distiller"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_485
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_485
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

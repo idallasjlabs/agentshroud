@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "PIIConfig"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PIIConfig
 ---
 
 # .test_many_pii_entities()
 
 ## Connections
 - [[Message with hundreds of PII entities should complete.]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `calls` [INFERRED]
+- [[PIISanitizer]] - `calls` [INFERRED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

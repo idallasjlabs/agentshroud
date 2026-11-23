@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-session-prompt/SKILL.md"
+source_file: ".opencode/agents/i-tdd.md"
 type: "document"
-community: "Community 745"
-location: "L138"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_745
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_745
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

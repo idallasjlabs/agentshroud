@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/cve-mitigation-matrix.md"
 type: "rationale"
-community: "Community 555"
+community: "AgentShroud Changelog"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/Community_555
+  - graphify/EXTRACTED
+  - community/AgentShroud_Changelog
 ---
 
 # Reachability Context (cap_drop ALL, isolated network)
@@ -14,4 +14,4 @@ tags:
 - [[Currently Unmitigable Residual Class]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `conceptually_related_to` [INFERRED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_555
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Changelog

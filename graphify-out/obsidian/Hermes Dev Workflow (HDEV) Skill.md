@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 1018"
+community: "Hermes Dev Workflow (HDEV) Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1018
+  - community/Hermes_Dev_Workflow_HDEV_Skill
 ---
 
 # Hermes Dev Workflow (HDEV) Skill
@@ -19,6 +19,5 @@ tags:
 - [[agentshroud-ssh-exec.sh (gateway SSH wrapper)]] - `references` [EXTRACTED]
 - [[agentshroud-ssh-write-file.sh (gateway SSH wrapper)]] - `references` [EXTRACTED]
 - [[omlx local model (DeepSeek-R1-0528-Qwen3-8B)]] - `references` [EXTRACTED]
-- [[scriptssmoke.sh (static startup smoke suite)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1018
+#graphify/document #graphify/EXTRACTED #community/Hermes_Dev_Workflow_HDEV_Skill

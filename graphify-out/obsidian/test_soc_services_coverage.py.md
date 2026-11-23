@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "Community 20"
+community: "test_soc_services_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_20
+  - community/test_soc_services_coveragepy
 ---
 
 # test_soc_services_coverage.py
 
 ## Connections
+- [[Coverage tests for gatewaysocservices.py — ServiceManager, socket fallbacks,…]] - `rationale_for` [EXTRACTED]
 - [[HealthStatus]] - `imports` [EXTRACTED]
 - [[ServiceManager]] - `imports` [EXTRACTED]
 - [[ServiceStatus]] - `imports` [EXTRACTED]
@@ -35,6 +36,7 @@ tags:
 - [[_patch_exists()]] - `contains` [EXTRACTED]
 - [[_patch_http_connection()]] - `contains` [EXTRACTED]
 - [[_patch_open()]] - `contains` [EXTRACTED]
-- [[gatewaysocservices.py (ServiceManager)]] - `references` [EXTRACTED]
+- [[services.py]] - `imports_from` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_20
+#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy

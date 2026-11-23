@@ -12,9 +12,9 @@ tags:
 # .test_bare_config_denies_every_peer()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `calls` [EXTRACTED]
-- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets         if n]] - `rationale_for` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig]] - `calls` [EXTRACTED]
+- [[A2APolicyConfig() with no arguments — the shape a fresh deploy gets if nothing…]] - `rationale_for` [EXTRACTED]
+- [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

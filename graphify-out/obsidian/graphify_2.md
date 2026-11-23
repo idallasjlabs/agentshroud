@@ -1,26 +1,26 @@
 ---
-source_file: ".agents/skills/graphify/SKILL.md"
+source_file: "docker/config/hermes/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 369"
+community: "What You Must Do When Invoked"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_369
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # /graphify
 
 ## Connections
-- [[For --update and --cluster-only_1]] - `contains` [EXTRACTED]
-- [[For graphify add and --watch_1]] - `contains` [EXTRACTED]
-- [[For graphify query_1]] - `contains` [EXTRACTED]
-- [[For the commit hook and native CLAUDE.md integration_1]] - `contains` [EXTRACTED]
-- [[Honesty Rules_1]] - `contains` [EXTRACTED]
-- [[Interpreter guard for subcommands_1]] - `contains` [EXTRACTED]
-- [[SKILL_7]] - `contains` [EXTRACTED]
-- [[Usage_11]] - `contains` [EXTRACTED]
-- [[What You Must Do When Invoked_1]] - `contains` [EXTRACTED]
-- [[What graphify is for_1]] - `contains` [EXTRACTED]
+- [[For --update and --cluster-only_2]] - `contains` [EXTRACTED]
+- [[For graphify add and --watch_2]] - `contains` [EXTRACTED]
+- [[For graphify query_2]] - `contains` [EXTRACTED]
+- [[For the commit hook and native CLAUDE.md integration_2]] - `contains` [EXTRACTED]
+- [[Honesty Rules_2]] - `contains` [EXTRACTED]
+- [[Interpreter guard for subcommands_2]] - `contains` [EXTRACTED]
+- [[Usage_128]] - `contains` [EXTRACTED]
+- [[What You Must Do When Invoked_2]] - `contains` [EXTRACTED]
+- [[What graphify is for_2]] - `contains` [EXTRACTED]
+- [[hermesskillsgraphifySKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_369
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

@@ -12,8 +12,8 @@ tags:
 # .process_tool_result()
 
 ## Connections
-- [[Any_42]] - `references` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Process tool result through PII sanitization before it reaches agent          Ar]] - `rationale_for` [EXTRACTED]
+- [[Process tool result through PII sanitization before it reaches agent Args…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

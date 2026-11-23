@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Community 891"
-location: "L26"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

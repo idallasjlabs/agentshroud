@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/references/update.md"
+source_file: "docker/config/openclaw/skills/graphify/references/update.md"
 type: "document"
-community: "Community 291"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_291
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # graphify reference: incremental update and cluster-only
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[For --cluster-only_1]] - `contains` [EXTRACTED]
 - [[For --update (incremental re-extraction)_1]] - `contains` [EXTRACTED]
-- [[query_1]] - `contains` [EXTRACTED]
-- [[update_1]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferencesquery]] - `contains` [EXTRACTED]
+- [[openclawskillsgraphifyreferencesupdate]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_291
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

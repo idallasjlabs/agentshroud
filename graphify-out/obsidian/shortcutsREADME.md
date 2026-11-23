@@ -1,12 +1,12 @@
 ---
 source_file: "shortcuts/README.md"
 type: "document"
-community: "GitHub Copilot CLI Setup Guide"
+community: "iOS / macOS Shortcuts — Relay to AgentShroud"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GitHub_Copilot_CLI_Setup_Guide
+  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
 ---
 
 # shortcuts/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GitHub_Copilot_CLI_Setup_Guide
+#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud

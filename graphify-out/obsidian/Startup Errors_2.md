@@ -1,20 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Error Index.md"
 type: "document"
-community: "Community 740"
-location: "L9"
+community: "Error Index"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/Error_Index
 ---
 
 # Startup Errors
 
 ## Connections
-- [[Bot Container Startup Failures]] - `contains` [EXTRACTED]
-- [[Gateway Container Startup Failures]] - `contains` [EXTRACTED]
-- [[Related Notes_63]] - `contains` [EXTRACTED]
-- [[Startup Errors_1]] - `contains` [EXTRACTED]
+- [[Error Index_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_740
+#graphify/document #graphify/EXTRACTED #community/Error_Index

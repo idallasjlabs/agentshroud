@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+type: "rationale"
+community: "_make_multipart_body"
+location: "L5289"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/_make_multipart_body
+---
+
+# Unknown raw tool-call JSON in form bodies is quarantined for audit. Tightening:…
+
+## Connections
+- [[dot-test_form_unknown_tool_call_quarantined()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/_make_multipart_body

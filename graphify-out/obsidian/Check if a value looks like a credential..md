@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "Community 684"
+community: "EnvironmentGuard"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/EnvironmentGuard
 ---
 
 # Check if a value looks like a credential.
 
 ## Connections
-- [[._looks_like_credential()]] - `rationale_for` [EXTRACTED]
+- [[dot-_looks_like_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_684
+#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard

@@ -1,25 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Community 156"
-location: "L409"
+community: "render_md_email.py"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_156
+  - community/render_md_emailpy
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_2]] - `calls` [EXTRACTED]
-- [[.click()_2]] - `calls` [EXTRACTED]
-- [[.close()_2]] - `calls` [EXTRACTED]
-- [[.extract()_2]] - `calls` [EXTRACTED]
-- [[.fill_field()_2]] - `calls` [EXTRACTED]
-- [[.navigate()_2]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `calls` [EXTRACTED]
-- [[browse.py_2]] - `contains` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_156
+#graphify/code #graphify/EXTRACTED #community/render_md_emailpy

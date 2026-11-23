@@ -1,46 +1,30 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Community 140"
+community: "EgressEvent"
 location: "L72"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_140
+  - graphify/EXTRACTED
+  - community/EgressEvent
 ---
 
 # EgressMonitorConfig
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_58]] - `calls` [EXTRACTED]
-- [[.__init__()_89]] - `references` [EXTRACTED]
-- [[.test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_50]] - `calls` [EXTRACTED]
+- [[dot-__init__()_61]] - `references` [EXTRACTED]
+- [[dot-test_egress_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAlertGeneration]] - `uses` [INFERRED]
-- [[TestAnomalyDetection]] - `uses` [INFERRED]
-- [[TestDailySummary]] - `uses` [INFERRED]
-- [[TestEgressMonitorConfig]] - `uses` [INFERRED]
-- [[TestEventRecording]] - `uses` [INFERRED]
-- [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
-- [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
-- [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[TestSlowDripDetection]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[default_config()_2]] - `calls` [EXTRACTED]
-- [[egress_monitor.py]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor_config()_1]] - `calls` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[default_config()_1]] - `uses` [INFERRED]
+- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[monitor_config()_1]] - `uses` [INFERRED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_140
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

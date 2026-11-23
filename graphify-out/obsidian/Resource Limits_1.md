@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 580"
+community: "agentshroud-gateway"
 location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/agentshroud-gateway
 ---
 
 # Resource Limits
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "AsyncMock"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AsyncMock
 ---
 
 # .test_chat_postmessage_content_scanned()
@@ -15,5 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestProxyOutbound]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[asyncio_41]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

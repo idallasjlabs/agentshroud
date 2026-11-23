@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "ingest_api/main.py"
 location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/ingest_api/mainpy
 ---
 
 # .get_all_rules()
@@ -16,4 +16,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[Get all rules (permanent and session) with scope information.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

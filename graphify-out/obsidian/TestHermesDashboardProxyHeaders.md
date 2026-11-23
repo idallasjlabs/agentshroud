@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 1658"
+community: "._run_proxy"
 location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1658
+  - community/_run_proxy
 ---
 
 # TestHermesDashboardProxyHeaders
 
 ## Connections
-- [[._run_proxy()]] - `method` [EXTRACTED]
-- [[.test_decoded_body_drops_upstream_encoding_and_recomputes_length()]] - `method` [EXTRACTED]
-- [[.test_multiple_set_cookie_headers_are_not_folded()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[StreamHead]] - `uses` [INFERRED]
-- [[hermes_dashboard_proxy must relay upstream headers header-by-header.      Found]] - `rationale_for` [EXTRACTED]
+- [[dot-_run_proxy()]] - `method` [EXTRACTED]
+- [[dot-test_decoded_body_drops_upstream_encoding_and_recomputes_length()]] - `method` [EXTRACTED]
+- [[dot-test_multiple_set_cookie_headers_are_not_folded()]] - `method` [EXTRACTED]
+- [[hermes_dashboard_proxy must relay upstream headers header-by-header. Found on…]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1658
+#graphify/code #graphify/EXTRACTED #community/_run_proxy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/oracle/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "Community 1983"
+community: "Daedalus — Concept Illustrator"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1983
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Input Requirements
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1983
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

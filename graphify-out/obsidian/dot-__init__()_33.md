@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_cron_state_monitor.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L51"
+community: "MemoryIntegrityMonitor"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/MemoryIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DispatchSpy]] - `method` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
+- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

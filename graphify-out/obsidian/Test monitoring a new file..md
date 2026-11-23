@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "TestMemoryIntegrityMonitor"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # Test monitoring a new file.
 
 ## Connections
-- [[.test_file_monitoring_new_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_file_monitoring_new_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

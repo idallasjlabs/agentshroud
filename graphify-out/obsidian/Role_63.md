@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/SKILL.md"
+source_file: ".agents/agents/i-data.md"
 type: "document"
-community: "Community 462"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_462
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Skill Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_462
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

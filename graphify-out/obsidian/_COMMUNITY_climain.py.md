@@ -1,34 +1,77 @@
 ---
 type: community
-cohesion: 0.15
-members: 19
+members: 64
 ---
 
 # cli/main.py
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 19 nodes
+**Members:** 64 nodes
 
 ## Members
-- [[Cosign signature verification of container images (fail-closed on missing binarytimeoutbad signature)]] - rationale - gateway/tests/test_image_verifier.py
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - rationale - gateway/tests/test_image_verifier.py
-- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - rationale - gateway/tests/test_image_verifier.py
-- [[Verify an image signature using cosign keyless OIDC verification.      Args]] - rationale - gateway/security/image_verifier.py
-- [[Verify multiple image signatures concurrently.      Returns         Dict mappin]] - rationale - gateway/security/image_verifier.py
-- [[_instant_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
-- [[_timeout_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
-- [[image_verifier.py]] - code - gateway/security/image_verifier.py
-- [[test_cosign_fails_bad_signature()]] - code - gateway/tests/test_image_verifier.py
-- [[test_cosign_not_found()]] - code - gateway/tests/test_image_verifier.py
-- [[test_cosign_success()]] - code - gateway/tests/test_image_verifier.py
-- [[test_cosign_timeout()]] - code - gateway/tests/test_image_verifier.py
-- [[test_image_verifier.py]] - code - gateway/tests/test_image_verifier.py
-- [[test_verify_images_exception_handled()]] - code - gateway/tests/test_image_verifier.py
-- [[test_verify_images_mixed()]] - code - gateway/tests/test_image_verifier.py
-- [[verify_image()]] - code - gateway/security/image_verifier.py
-- [[verify_images()]] - code - gateway/security/image_verifier.py
-- [[verify_images exception from one task is caught, others continue.]] - rationale - gateway/tests/test_image_verifier.py
-- [[verify_images one succeeds, one fails → results keyed by ref.]] - rationale - gateway/tests/test_image_verifier.py
+- [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
+- [[Add a user to a group.]] - rationale - gateway/cli/main.py
+- [[Aggregate health report.]] - rationale - gateway/cli/main.py
+- [[Any_85]] - code
+- [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
+- [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
+- [[Get container logs for a service.]] - rationale - gateway/cli/main.py
+- [[Inbound MCP Edge status, killunkill, enrollment.]] - rationale - gateway/cli/main.py
+- [[List all contributors with roles and groups.]] - rationale - gateway/cli/main.py
+- [[List all service containers with status.]] - rationale - gateway/cli/main.py
+- [[Open a one-time enrollment window; prints the code once.]] - rationale - gateway/cli/main.py
+- [[Print a write result; a refusal or an unconfirmed no-op never exits 0.]] - rationale - gateway/cli/main.py
+- [[Query recent security events.]] - rationale - gateway/cli/main.py
+- [[Restart a service container.]] - rationale - gateway/cli/main.py
+- [[Revoke a vendor, client or token (takes effect on the next request).]] - rationale - gateway/cli/main.py
+- [[Set collaboration mode for a group.]] - rationale - gateway/cli/main.py
+- [[Set configuration values.]] - rationale - gateway/cli/main.py
+- [[Show SOC correlation summary.]] - rationale - gateway/cli/main.py
+- [[Show current risk score and level.]] - rationale - gateway/cli/main.py
+- [[Show edge state, per-vendor counters, kills and recent calls.]] - rationale - gateway/cli/main.py
+- [[Show pending egress approval requests.]] - rationale - gateway/cli/main.py
+- [[Stop a service container.]] - rationale - gateway/cli/main.py
+- [[Stream real-time events or logs via WebSocket.]] - rationale - gateway/cli/main.py
+- [[Trigger a security scan.]] - rationale - gateway/cli/main.py
+- [[_edge_result()]] - code - gateway/cli/main.py
+- [[_edge_target()]] - code - gateway/cli/main.py
+- [[_edge_target_options()]] - code - gateway/cli/main.py
+- [[add()_1]] - code - gateway/cli/main.py
+- [[add_collaborator()_1]] - code - gateway/cli/main.py
+- [[add_group_member()_1]] - code - gateway/cli/main.py
+- [[agentshroud-soc — Python CLI for the AgentShroud SOC Shared Command Layer.…]] - rationale - gateway/cli/main.py
+- [[approve()_3]] - code - gateway/cli/main.py
+- [[argument]] - code
+- [[climain.py]] - code - gateway/cli/main.py
+- [[command_9]] - code
+- [[deny()_3]] - code - gateway/cli/main.py
+- [[edge()_2]] - code - gateway/cli/main.py
+- [[edge_enroll()_1]] - code - gateway/cli/main.py
+- [[edge_kill()_1]] - code - gateway/cli/main.py
+- [[edge_status()]] - code - gateway/cli/main.py
+- [[edge_unkill()_1]] - code - gateway/cli/main.py
+- [[freeze()]] - code - gateway/cli/main.py
+- [[get()]] - code - gateway/cli/main.py
+- [[get_correlation()]] - code - gateway/cli/main.py
+- [[get_egress_pending()_1]] - code - gateway/cli/main.py
+- [[get_events()]] - code - gateway/cli/main.py
+- [[get_groups()]] - code - gateway/cli/main.py
+- [[get_health()_1]] - code - gateway/cli/main.py
+- [[get_logs()_2]] - code - gateway/cli/main.py
+- [[get_risk()]] - code - gateway/cli/main.py
+- [[get_services()]] - code - gateway/cli/main.py
+- [[get_users()]] - code - gateway/cli/main.py
+- [[group_1]] - code
+- [[option_1]] - code
+- [[pass_context]] - code
+- [[restart()]] - code - gateway/cli/main.py
+- [[restart_service()_3]] - code - gateway/cli/main.py
+- [[scan()_4]] - code - gateway/cli/main.py
+- [[set()]] - code - gateway/cli/main.py
+- [[set_mode()_1]] - code - gateway/cli/main.py
+- [[stop()]] - code - gateway/cli/main.py
+- [[stop_service()_3]] - code - gateway/cli/main.py
+- [[tail()_1]] - code - gateway/cli/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,11 +81,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_api.py (2)]]
-- 2 edges to [[_COMMUNITY_asyncio]]
+- 24 edges to [[_COMMUNITY_SCLClient]]
+- 22 edges to [[_COMMUNITY__output]]
+- 7 edges to [[_COMMUNITY_test_cli_coverage.py]]
+- 4 edges to [[_COMMUNITY__stub_client]]
 
 ## Top bridge nodes
-- [[test_cosign_fails_bad_signature()]] - degree 3, connects to 1 community
-- [[test_cosign_success()]] - degree 3, connects to 1 community
-- [[Test replacement for asyncio.wait_for — awaits coroutine directly.]] - degree 2, connects to 1 community
-- [[Test replacement for asyncio.wait_for — raises TimeoutError.      Closes the un-]] - degree 2, connects to 1 community
+- [[climain.py]] - degree 43, connects to 4 communities
+- [[restart_service()_3]] - degree 8, connects to 2 communities
+- [[stop_service()_3]] - degree 8, connects to 2 communities
+- [[tail()_1]] - degree 8, connects to 2 communities
+- [[add_collaborator()_1]] - degree 7, connects to 2 communities

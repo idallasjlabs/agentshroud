@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "GroupConfig"
+community: "load_config"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupConfig
+  - community/load_config
 ---
 
 # .test_proxy_allowed_domains_parsed_from_yaml()
@@ -16,4 +16,4 @@ tags:
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupConfig
+#graphify/code #graphify/EXTRACTED #community/load_config

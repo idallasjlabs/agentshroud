@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
+community: "._extract_first_egress_target"
 location: "L4130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+  - community/_extract_first_egress_target
 ---
 
 # .test_looks_like_filename_reference_rejects_real_domains()
 
 ## Connections
+- [[dot-_looks_like_filename_reference()]] - `calls` [EXTRACTED]
 - [[TestOutboundClassifierHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
+#graphify/code #graphify/EXTRACTED #community/_extract_first_egress_target

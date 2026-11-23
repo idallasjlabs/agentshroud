@@ -1,19 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "format_cve_report()"
-location: "L401"
+community: "SecureBrowser"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
-- [[main()_8]] - `calls` [EXTRACTED]
+- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

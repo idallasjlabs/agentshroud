@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "MCPProxy"
 location: "L1169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPProxy
 ---
 
 # .test_disabled_server_blocked()
 
 ## Connections
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
-- [[MCPProxyConfig_3]] - `calls` [EXTRACTED]
-- [[MCPServerConfig_2]] - `calls` [EXTRACTED]
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[MCPProxyConfig]] - `calls` [EXTRACTED]
+- [[MCPServerConfig]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestAllowDenyList]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-apollo/SKILL.md"
 type: "document"
-community: "AgentShroud -- USPTO Trademark Application"
+community: "Technical Specification"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_--_USPTO_Trademark_Application
+  - community/Technical_Specification
 ---
 
 # openclaw/skills/i-apollo/SKILL.md
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Trademark_Application
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

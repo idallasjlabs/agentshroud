@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "Community 11"
+community: "lifespan.py"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/lifespanpy
 ---
 
 # Get trust levels in ascending order.
 
 ## Connections
-- [[.get_trust_level_order()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_trust_level_order()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

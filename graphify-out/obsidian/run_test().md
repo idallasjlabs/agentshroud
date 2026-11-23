@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Community 547"
+community: "deployment-mode.sh"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_547
+  - community/deployment-modesh
 ---
 
 # run_test()
 
 ## Connections
 - [[post-deploy-check.sh]] - `semantically_similar_to` [INFERRED]
-- [[smoke.sh]] - `defines` [EXTRACTED]
-- [[smoke.sh script]] - `calls` [EXTRACTED]
+- [[scriptssmoke.sh]] - `defines` [EXTRACTED]
+- [[smoke.sh script_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_547
+#graphify/code #graphify/EXTRACTED #community/deployment-modesh

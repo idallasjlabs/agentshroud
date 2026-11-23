@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/socrates/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "Community 1124"
-location: "L20"
+community: "Socrates — Dialogue Architect"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Speaker Definitions
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EXPERT_1]] - `contains` [EXTRACTED]
 - [[HOST_1]] - `contains` [EXTRACTED]
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1124
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

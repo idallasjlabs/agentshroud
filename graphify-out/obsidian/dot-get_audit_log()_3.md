@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: ".proxy_messages()"
-location: "L421"
+community: "SubagentMonitor"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SubagentMonitor
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[Return complete audit log_1]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_1]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 568"
-location: "L12"
+community: "MCP AWS Profile Configuration README"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/MCP_AWS_Profile_Configuration_README
 ---
 
 # Purpose
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

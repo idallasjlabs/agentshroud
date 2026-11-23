@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 125"
+community: "api.py"
 location: "L1141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/apipy
 ---
 
 # IntelDraftRequest
 
 ## Connections
 - [[A draft competitive-intel report submitted for citation verification.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[CitationVerifier]] - `uses` [INFERRED]
-- [[DraftEntry]] - `uses` [INFERRED]
-- [[IntelReportStore]] - `uses` [INFERRED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[BaseModel_8]] - `inherits` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/apipy

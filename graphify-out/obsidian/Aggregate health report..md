@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Community 87"
+community: "cli/main.py"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/cli/mainpy
 ---
 
 # Aggregate health report.
 
 ## Connections
-- [[get_health()]] - `rationale_for` [EXTRACTED]
+- [[get_health()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_87
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

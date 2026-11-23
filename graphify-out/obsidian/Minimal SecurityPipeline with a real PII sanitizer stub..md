@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "Community 24"
+community: "asyncio"
 location: "L198"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/asyncio
 ---
 
 # Minimal SecurityPipeline with a real PII sanitizer stub.
 
 ## Connections
-- [[_make_pipeline()_2]] - `rationale_for` [EXTRACTED]
+- [[_make_pipeline()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_24
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

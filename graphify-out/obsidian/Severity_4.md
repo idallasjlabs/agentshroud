@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/redteam/03-session-isolation.md"
 type: "document"
-community: "Community 721"
+community: "Implement per-user session isolation using Telegram user ID"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_721
+  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
 ---
 
 # Severity
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_721
+#graphify/document #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID

@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "RedactionResult"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # ._close_middleware_after()
 
 ## Connections
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
-- [[Track every MiddlewareManager instantiated in this class and         close its s]] - `rationale_for` [EXTRACTED]
+- [[Track every MiddlewareManager instantiated in this class and close its sqlite-…]] - `rationale_for` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
+- [[tracker()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

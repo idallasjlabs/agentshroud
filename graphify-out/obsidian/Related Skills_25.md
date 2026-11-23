@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "Community 117"
+community: "Atlas — Curriculum Architect"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

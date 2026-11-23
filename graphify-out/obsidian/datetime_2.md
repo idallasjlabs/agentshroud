@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/audit_archive.py"
+source_file: ""
 type: "code"
-community: "Community 380"
-location: "L46"
+community: "export-email-reports.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_380
+  - community/export-email-reportspy
 ---
 
 # datetime
 
 ## Connections
-- [[archive_old_events()]] - `references` [EXTRACTED]
-- [[audit_archive.py]] - `imports_from` [EXTRACTED]
+- [[_parse_since()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `references` [EXTRACTED]
+- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_380
+#graphify/code #graphify/EXTRACTED #community/export-email-reportspy

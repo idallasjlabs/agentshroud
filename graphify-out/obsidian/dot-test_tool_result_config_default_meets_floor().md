@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "RedactionResult"
 location: "L607"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # .test_tool_result_config_default_meets_floor()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfidenceFloor]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

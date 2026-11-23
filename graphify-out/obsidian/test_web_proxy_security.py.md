@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "Community 103"
+community: "TestWebProxySecurityIntegration"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/TestWebProxySecurityIntegration
 ---
 
 # test_web_proxy_security.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_27]] - `imports_from` [EXTRACTED]
+- [[Integration tests for web proxy security modules. Tests that DNS filter,…]] - `rationale_for` [EXTRACTED]
 - [[MockDNSVerdict]] - `contains` [EXTRACTED]
 - [[MockEgressChannel]] - `contains` [EXTRACTED]
 - [[MockEgressEvent]] - `contains` [EXTRACTED]
@@ -20,7 +21,7 @@ tags:
 - [[MockURLResult]] - `contains` [EXTRACTED]
 - [[ProxyAction]] - `imports` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `contains` [EXTRACTED]
-- [[WebProxy_1]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyResult]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_103
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

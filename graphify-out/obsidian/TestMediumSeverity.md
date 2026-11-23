@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "Community 154"
+community: "ToolResultInjectionScanner"
 location: "L79"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_154
+  - graphify/EXTRACTED
+  - community/ToolResultInjectionScanner
 ---
 
 # TestMediumSeverity
 
 ## Connections
-- [[.test_jailbreak_attempt()]] - `method` [EXTRACTED]
-- [[.test_prompt_extraction()_1]] - `method` [EXTRACTED]
-- [[InjectionAction]] - `uses` [INFERRED]
+- [[dot-test_jailbreak_attempt()]] - `method` [EXTRACTED]
+- [[dot-test_prompt_extraction()]] - `method` [EXTRACTED]
 - [[InjectionSeverity]] - `uses` [INFERRED]
-- [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

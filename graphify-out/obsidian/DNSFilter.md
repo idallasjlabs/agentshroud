@@ -1,52 +1,38 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 72"
+community: "DNSFilterConfig"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/DNSFilterConfig
 ---
 
 # DNSFilter
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_58]] - `calls` [EXTRACTED]
-- [[.__init__()_85]] - `method` [EXTRACTED]
-- [[._cleanup_rate_window()]] - `method` [EXTRACTED]
-- [[._detect_tunneling()]] - `method` [EXTRACTED]
-- [[._domain_in_allowlist()]] - `method` [EXTRACTED]
-- [[._is_private_ip()_1]] - `method` [EXTRACTED]
-- [[.check()_4]] - `method` [EXTRACTED]
-- [[.dns_filter()]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_3]] - `method` [EXTRACTED]
-- [[.get_flagged_queries()]] - `method` [EXTRACTED]
-- [[.resolve_and_cache()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_50]] - `calls` [EXTRACTED]
+- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-_cleanup_rate_window()]] - `method` [EXTRACTED]
+- [[dot-_detect_tunneling()]] - `method` [EXTRACTED]
+- [[dot-_domain_in_allowlist()]] - `method` [EXTRACTED]
+- [[dot-_is_private_ip()_1]] - `method` [EXTRACTED]
+- [[dot-check()_1]] - `method` [EXTRACTED]
+- [[dot-dns_filter()]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_1]] - `method` [EXTRACTED]
+- [[dot-get_flagged_queries()]] - `method` [EXTRACTED]
+- [[dot-resolve_and_cache()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAuditLogging]] - `uses` [INFERRED]
-- [[TestDNSAllowlist]] - `uses` [INFERRED]
-- [[TestDNSFilterConfig]] - `uses` [INFERRED]
 - [[TestDNSRebinding]] - `uses` [INFERRED]
-- [[TestDNSTunnelingDetection]] - `uses` [INFERRED]
-- [[TestEntropyCalculator]] - `uses` [INFERRED]
-- [[TestNormalDNSResolution]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[dns_filter()]] - `calls` [EXTRACTED]
-- [[dns_filter.py]] - `contains` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor_filter()]] - `calls` [EXTRACTED]
-- [[strict_filter()]] - `calls` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[dns_filter()]] - `uses` [INFERRED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[monitor_filter()]] - `uses` [INFERRED]
+- [[strict_filter()]] - `uses` [INFERRED]
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
-- [[web_proxy.py]] - `imports` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

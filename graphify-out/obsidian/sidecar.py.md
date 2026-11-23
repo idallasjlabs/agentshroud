@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
-type: "code"
-community: "Community 43"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
+type: "document"
+community: "sidecar.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/sidecarpy
 ---
 
-# sidecar.py
+# sidecar.py.md
 
 ## Connections
-- [[ScanRequest]] - `contains` [EXTRACTED]
-- [[ScanResponse]] - `contains` [EXTRACTED]
-- [[SidecarScanner]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

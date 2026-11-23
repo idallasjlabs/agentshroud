@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Community 625"
+community: "TestStartupScannerKeying"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_625
+  - community/TestStartupScannerKeying
 ---
 
 # trivy' key is always stored for backward compat (SOC /scanners endpoint).
 
 ## Connections
-- [[.test_legacy_trivy_key_present()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_legacy_trivy_key_present()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_625
+#graphify/rationale #graphify/EXTRACTED #community/TestStartupScannerKeying

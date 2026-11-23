@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "ContextGuard"
-location: "L298"
+community: "CanaryTripwire"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/CanaryTripwire
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

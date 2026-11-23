@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "AgentTarget"
-location: "L60"
+community: "make_httpx_fetcher"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/make_httpx_fetcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[CitationVerifier]] - `method` [EXTRACTED]
+- [[Fetcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

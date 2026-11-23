@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_tool_acl.py"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_tool_aclpy
 ---
 
 # .test_collaborator_can_use_unknown_tool_when_not_denied()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLConfig]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

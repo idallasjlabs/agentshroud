@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # Make gateway source code, config, and security policies read-only to the agent
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_13]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Function Details_25]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Key Classes  Functions_27]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Methods Filtered (Inbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Methods Filtered (Outbound)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Purpose_125]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Related_31]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[Responsibilities_29]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy.get_stats()]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[telegram_proxy.py_2]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
-- [[telegram_proxy.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md
+- [[04-separation-of-privilege]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Constraints_10]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Evidence_4]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Make gateway source code, config, and security policies read-only to the agent]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Problem_7]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Remediation_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Root Cause_5]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Severity_6]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 1 Mount gateway source as read-only Docker volumes]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 2 Add AgentShroud paths to File IO Sandboxing deny list]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 3 Block SSH commands targeting the gateway host]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 4 Make SOUL.md and system prompts immutable]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 5 Add integrity checking for security-critical files]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Step 6 Enforce read-only at the Docker layer]] - document - docs/planning/redteam/04-separation-of-privilege.md
+- [[Verification_16]] - document - docs/planning/redteam/04-separation-of-privilege.md
 
 ## Live Query (requires Dataview plugin)
 

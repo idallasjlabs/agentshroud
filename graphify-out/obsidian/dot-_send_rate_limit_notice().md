@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
-location: "L6983"
+community: "TelegramAPIProxy"
+location: "L7021"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/TelegramAPIProxy
 ---
 
 # ._send_rate_limit_notice()
@@ -16,6 +16,6 @@ tags:
 - [[dot-_collaborator_rate_limit_retry_after_seconds()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[Notify a collaborator they have exceeded the hourly rate limit.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

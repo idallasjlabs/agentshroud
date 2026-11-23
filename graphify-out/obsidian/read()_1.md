@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
-location: "L7836"
+community: "test_llm_proxy_failover.py"
+location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+  - community/test_llm_proxy_failoverpy
 ---
 
 # read()
 
 ## Connections
-- [[fake_urlopen()_64]] - `contains` [EXTRACTED]
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "Community 431"
+community: "middleware.py"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_431
+  - community/middlewarepy
 ---
 
 # Result from XML leak filtering.
 
 ## Connections
-- [[FilterResult_1]] - `rationale_for` [EXTRACTED]
+- [[FilterResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_431
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

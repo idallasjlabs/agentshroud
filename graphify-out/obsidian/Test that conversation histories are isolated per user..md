@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 114"
+community: "UserSessionManager"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/UserSessionManager
 ---
 
 # Test that conversation histories are isolated per user.
 
 ## Connections
-- [[.test_conversation_history_isolation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_conversation_history_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_114
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

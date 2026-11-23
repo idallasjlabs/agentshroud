@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/vulcan.md"
+source_file: ".github/agents/i-athena.agent.md"
 type: "document"
-community: "Community 1951"
-location: "L16"
+community: "Athena — Knowledge Distiller"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1951
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Persona
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1951
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

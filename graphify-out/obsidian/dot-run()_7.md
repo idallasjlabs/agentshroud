@@ -1,0 +1,17 @@
+---
+source_file: "gateway/runtime/docker_engine.py"
+type: "code"
+community: "DockerEngine"
+location: "L56"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/DockerEngine
+---
+
+# .run()
+
+## Connections
+- [[DockerEngine]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

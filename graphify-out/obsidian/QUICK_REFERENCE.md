@@ -1,21 +1,18 @@
 ---
 source_file: "docs/reference/QUICK_REFERENCE.md"
 type: "document"
-community: "Community 764"
+community: "docs/README.md"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_764
+  - graphify/EXTRACTED
+  - community/docs/READMEmd
 ---
 
 # QUICK_REFERENCE.md
 
 ## Connections
-- [[PREREQUISITES]] - `conceptually_related_to` [INFERRED]
 - [[Quick Reference Card]] - `contains` [EXTRACTED]
-- [[Quick Reference Commands]] - `contains` [EXTRACTED]
-- [[RUNBOOK]] - `conceptually_related_to` [INFERRED]
-- [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/INFERRED #community/Community_764
+#graphify/document #graphify/EXTRACTED #community/docs/READMEmd

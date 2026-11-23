@@ -1,32 +1,30 @@
 ---
 type: community
-cohesion: 0.12
 members: 17
 ---
 
 # clamav_scanner.py
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[1. Enhanced Management Dashboard Routes (`gatewaywebmanagement.py`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[2. Responsive CSS Framework (`gatewaywebstaticagentshroud-dashboard.css`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[3. Main Dashboard Template (`gatewaywebtemplatesdashboard.html`)]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[AgentShroud Web Control Center - Implementation Summary]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✅ Dashboard Pages Created]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✅ Design Principles Met]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✅ Technical Implementation]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[✨ Security Features]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🌐 Access Points]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🎨 Branding Compliance]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🎯 Key Features Implemented]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[📋 Task Completed Successfully]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[📱 Device Compatibility]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🔄 Next Steps]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🔧 Architecture]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🚀 What Was Built]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
-- [[🚢 Deployment Status]] - document - docs/project/WEB_CONTROL_CENTER_SUMMARY.md
+- [[Configuration]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Error Handling]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Purpose_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Related_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[Threat Model]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py_1]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[clamav_scanner.py]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[generate_summary(report)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[parse_clamscan_output(output, returncode)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[save_report(report, log_dir)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[update_virus_db(freshclam_bin, timeout)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[AgentShroud Web Control Center - Implementation Summary]] - degree 11, connects to 1 community
+- [[clamav_scanner.py]] - degree 2, connects to 1 community

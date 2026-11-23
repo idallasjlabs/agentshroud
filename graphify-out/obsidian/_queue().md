@@ -1,21 +1,20 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 70"
+community: "test_mfa_guard.py"
 location: "L304"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/test_mfa_guardpy
 ---
 
 # _queue()
 
 ## Connections
 - [[ApprovalQueue]] - `calls` [EXTRACTED]
-- [[ApprovalQueue_1]] - `references` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `calls` [EXTRACTED]
+- [[MFAGuard]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_disabled_approves_without_code()]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_enabled_invalid_code_denied()]] - `calls` [EXTRACTED]
 - [[test_decide_mfa_enabled_missing_code_denied()]] - `calls` [EXTRACTED]
@@ -24,4 +23,4 @@ tags:
 - [[test_decide_reject_never_requires_mfa()]] - `calls` [EXTRACTED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,30 +1,18 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 253"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # All Dependencies.md
 
 ## Connections
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
-- [[aiosqlite]] - `references` [EXTRACTED]
-- [[ci-workflows]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [EXTRACTED]
-- [[fastapi]] - `references` [EXTRACTED]
-- [[httpx]] - `references` [EXTRACTED]
-- [[openclaw]] - `references` [EXTRACTED]
-- [[playwright_1]] - `references` [EXTRACTED]
-- [[presidio-analyzer]] - `references` [EXTRACTED]
-- [[pydantic]] - `references` [EXTRACTED]
-- [[pytest.ini]] - `references` [EXTRACTED]
-- [[python-jose]] - `references` [EXTRACTED]
-- [[spacy]] - `references` [EXTRACTED]
-- [[trivy]] - `references` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

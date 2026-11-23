@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-coding-agent-clis.txt"
 type: "rationale"
-community: "Community 373"
+community: "Prompt: Daily Component Health Digest"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/Community_373
+  - graphify/EXTRACTED
+  - community/Prompt_Daily_Component_Health_Digest
 ---
 
 # Zero-Hallucination Primary-Source Rule (30-day recency)
@@ -14,4 +14,4 @@ tags:
 - [[Silence-Over-Hallucination Principle]] - `semantically_similar_to` [INFERRED]
 - [[Strict Sequential 4-Query Search Protocol]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_373
+#graphify/rationale #graphify/EXTRACTED #community/Prompt_Daily_Component_Health_Digest

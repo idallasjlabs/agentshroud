@@ -1,21 +1,22 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 2077"
-location: "L392"
+community: "SecureBrowser Skill"
+location: "L293"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2077
+  - community/SecureBrowser_Skill
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Agent Not Found]] - `contains` [EXTRACTED]
-- [[Authentication Issues_3]] - `contains` [EXTRACTED]
-- [[Configuration Not Loading]] - `contains` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
-- [[Path Permission Denied]] - `contains` [EXTRACTED]
+- [[Approval required but none granted]] - `contains` [EXTRACTED]
+- [[Browser timeout_1]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_1]] - `contains` [EXTRACTED]
+- [[Credential extraction blocked]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_1]] - `contains` [EXTRACTED]
+- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2077
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

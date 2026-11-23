@@ -1,20 +1,19 @@
 ---
 source_file: "docker/scripts/workspace.sh"
 type: "code"
-community: "Community 763"
+community: "workspace.sh"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_763
+  - community/workspacesh
 ---
 
 # cmd_mkdir()
 
 ## Connections
 - [[check_container()]] - `calls` [EXTRACTED]
-- [[main command dispatcher (case $COMMAND)]] - `calls` [EXTRACTED]
 - [[workspace.sh]] - `defines` [EXTRACTED]
 - [[workspace.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_763
+#graphify/code #graphify/EXTRACTED #community/workspacesh

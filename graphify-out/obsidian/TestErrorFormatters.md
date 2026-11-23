@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "Community 18"
+community: "test_collaborator_responses.py"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/test_collaborator_responsespy
 ---
 
 # TestErrorFormatters
 
 ## Connections
-- [[.test_already_member()]] - `method` [EXTRACTED]
-- [[.test_no_permission()]] - `method` [EXTRACTED]
-- [[.test_not_member()]] - `method` [EXTRACTED]
-- [[.test_unknown_group()]] - `method` [EXTRACTED]
-- [[GroupConfig]] - `uses` [INFERRED]
-- [[ProjectConfig]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[dot-test_already_member()]] - `method` [EXTRACTED]
+- [[dot-test_no_permission()]] - `method` [EXTRACTED]
+- [[dot-test_not_member()]] - `method` [EXTRACTED]
+- [[dot-test_unknown_group()]] - `method` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

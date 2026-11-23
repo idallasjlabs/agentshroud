@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/SOUL.md"
 type: "document"
-community: "Community 1210"
-location: "L15"
+community: "SOUL"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1210
+  - community/SOUL
 ---
 
 # Values
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[SOUL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1210
+#graphify/document #graphify/EXTRACTED #community/SOUL

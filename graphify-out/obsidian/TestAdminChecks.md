@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # TestAdminChecks
 
 ## Connections
-- [[.test_is_group_admin_correct()]] - `method` [EXTRACTED]
-- [[.test_is_group_admin_unknown_group()]] - `method` [EXTRACTED]
-- [[.test_is_group_admin_wrong_user()]] - `method` [EXTRACTED]
-- [[GroupConfig]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
+- [[dot-test_is_group_admin_correct()]] - `method` [EXTRACTED]
+- [[dot-test_is_group_admin_unknown_group()]] - `method` [EXTRACTED]
+- [[dot-test_is_group_admin_wrong_user()]] - `method` [EXTRACTED]
 - [[test_group_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

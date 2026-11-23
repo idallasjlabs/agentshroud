@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "discover_upstream_versions.py"
 location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/discover_upstream_versionspy
 ---
 
 # .test_retry_attempt_runs_with_ipv4_forced()
@@ -19,4 +19,4 @@ tags:
 - [[recorder()]] - `contains` [EXTRACTED]
 - [[recorder()_3]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

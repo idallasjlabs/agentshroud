@@ -1,22 +1,22 @@
 ---
-source_file: ".github/agents/i-apollo.agent.md"
+source_file: ".omp/agents/apollo.md"
 type: "document"
-community: "Community 1355"
-location: "L11"
+community: "Technical Specification"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1355
+  - community/Technical_Specification
 ---
 
 # Apollo — Audio Systems Producer
 
 ## Connections
-- [[Input Requirements_30]] - `contains` [EXTRACTED]
-- [[Output_6]] - `contains` [EXTRACTED]
-- [[Quality Checklist_27]] - `contains` [EXTRACTED]
-- [[Role_113]] - `contains` [EXTRACTED]
-- [[Technical Specification_3]] - `contains` [EXTRACTED]
-- [[i-apollo.agent]] - `contains` [EXTRACTED]
+- [[dot-ompagentsapollo]] - `contains` [EXTRACTED]
+- [[Input Requirements_8]] - `contains` [EXTRACTED]
+- [[Output_4]] - `contains` [EXTRACTED]
+- [[Quality Checklist_8]] - `contains` [EXTRACTED]
+- [[Role_32]] - `contains` [EXTRACTED]
+- [[Technical Specification_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1355
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

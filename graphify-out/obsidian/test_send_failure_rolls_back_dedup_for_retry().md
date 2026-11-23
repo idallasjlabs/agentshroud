@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "Community 229"
+community: "AlertTelegramRelay"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/AlertTelegramRelay
 ---
 
 # test_send_failure_rolls_back_dedup_for_retry()
 
 ## Connections
-- [[AlertTelegramRelay]] - `calls` [EXTRACTED]
+- [[AlertTelegramRelay]] - `uses` [INFERRED]
 - [[_SendSpy]] - `calls` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
+- [[asyncio_67]] - `references` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

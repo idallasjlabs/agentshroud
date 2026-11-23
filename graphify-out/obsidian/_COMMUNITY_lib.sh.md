@@ -1,28 +1,26 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # lib.sh
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[Configuration  Environment Variables_26]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Function Details_46]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Key Classes  Functions_48]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Purpose_151]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Related_52]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Responsibilities_49]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[openclaw service_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[lib.sh]] - code - scripts/testing/lib.sh
+- [[lib.sh script]] - code - scripts/testing/lib.sh
+- [[t_die()]] - code - scripts/testing/lib.sh
+- [[t_finish()]] - code - scripts/testing/lib.sh
+- [[t_have()]] - code - scripts/testing/lib.sh
+- [[t_help()]] - code - scripts/testing/lib.sh
+- [[t_init()]] - code - scripts/testing/lib.sh
+- [[t_json_escape()]] - code - scripts/testing/lib.sh
+- [[t_parse()]] - code - scripts/testing/lib.sh
+- [[t_record()]] - code - scripts/testing/lib.sh
+- [[t_run()]] - code - scripts/testing/lib.sh
+- [[t_skip()]] - code - scripts/testing/lib.sh
+- [[t_status()]] - code - scripts/testing/lib.sh
 
 ## Live Query (requires Dataview plugin)
 

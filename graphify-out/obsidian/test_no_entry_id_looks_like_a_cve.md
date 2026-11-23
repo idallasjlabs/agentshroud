@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_cve_registry.py"
 type: "code"
-community: "Community 420"
+community: "triage-cve-mitigations.py"
 location: "86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/triage-cve-mitigationspy
 ---
 
 # test_no_entry_id_looks_like_a_cve
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_OPENCLAW_CVE_REGISTRY]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_420
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

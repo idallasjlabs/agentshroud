@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "env_guard.py"
+community: "KeyRotationManager"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/env_guardpy
+  - community/KeyRotationManager
 ---
 
 # .setup_manager_with_credential()
@@ -18,5 +18,6 @@ tags:
 - [[MockValidator]] - `calls` [EXTRACTED]
 - [[Set up manager with a credential that needs rotation.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
+- [[fixture_14]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/env_guardpy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

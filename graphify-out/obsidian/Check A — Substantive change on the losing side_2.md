@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ab.md"
+source_file: ".github/agents/i-ab.agent.md"
 type: "document"
-community: "Community 1296"
-location: "L94"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1296
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Check A — Substantive change on the losing side?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 4 — Triage each finding_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1296
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

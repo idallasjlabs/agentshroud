@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 727"
-location: "L79"
+community: "trivy_report.py"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/trivy_reportpy
 ---
 
 # Related
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

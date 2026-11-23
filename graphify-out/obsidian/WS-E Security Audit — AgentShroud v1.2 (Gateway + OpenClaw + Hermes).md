@@ -1,19 +1,18 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Community 734"
+community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_734
+  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
 ---
 
 # WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)
 
 ## Connections
-- [[Executive Summary_13]] - `contains` [EXTRACTED]
-- [[IEC 62443 Industrial Security Framework]] - `references` [EXTRACTED]
+- [[Executive Summary_12]] - `contains` [EXTRACTED]
 - [[Part 1 — Blue-Team Posture Review (SCRUM-72)]] - `contains` [EXTRACTED]
 - [[Part 2 — Red-Team Attack Run (SCRUM-73)]] - `contains` [EXTRACTED]
 - [[Part 3 — Fix-or-Accept Closure (SCRUM-74)]] - `contains` [EXTRACTED]
@@ -24,11 +23,8 @@ tags:
 - [[Risk Callouts]] - `contains` [EXTRACTED]
 - [[Trust Level]] - `references` [EXTRACTED]
 - [[Verification Steps]] - `contains` [EXTRACTED]
-- [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
-- [[forward.py]] - `references` [EXTRACTED]
 - [[gatewayproxypipeline.py (inboundoutbound guard chain)]] - `references` [EXTRACTED]
-- [[incident-response_1]] - `conceptually_related_to` [INFERRED]
 - [[rbac.py (5-level RBAC hierarchy)]] - `references` [EXTRACTED]
 - [[ws-e-audit-v1.2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_734
+#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes

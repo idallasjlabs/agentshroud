@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
 type: "document"
-community: "Community 593"
-location: "L80"
+community: "router.py"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/routerpy
 ---
 
 # Known Issues / Notes
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[router.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/routerpy

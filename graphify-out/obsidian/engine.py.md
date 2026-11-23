@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
-type: "code"
-community: "Community 225"
+source_file: "docs/vault/02 - Modules/Runtime/engine.py.md"
+type: "document"
+community: "engine.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/enginepy
 ---
 
-# engine.py
+# engine.py.md
 
 ## Connections
-- [[ABC]] - `imports_from` [EXTRACTED]
-- [[ContainerEngine_2]] - `contains` [EXTRACTED]
-- [[ContainerInfo_2]] - `contains` [EXTRACTED]
-- [[__init__.py_9]] - `re_exports` [EXTRACTED]
-- [[apple_engine.py]] - `imports_from` [EXTRACTED]
-- [[compose_generator.py]] - `references` [EXTRACTED]
-- [[config.py_1]] - `references` [EXTRACTED]
-- [[docker_engine.py]] - `imports_from` [EXTRACTED]
-- [[podman_engine.py]] - `imports_from` [EXTRACTED]
+- [[engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/document #graphify/EXTRACTED #community/enginepy

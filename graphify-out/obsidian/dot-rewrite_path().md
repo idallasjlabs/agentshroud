@@ -17,7 +17,7 @@ tags:
 - [[dot-_ensure_user_directory()]] - `calls` [EXTRACTED]
 - [[dot-_is_base_directory_access()]] - `calls` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
-- [[PathRewriteResult]] - `references` [EXTRACTED]
-- [[Rewrite a path to isolate it to the user's namespace.          Args]] - `rationale_for` [EXTRACTED]
+- [[PathRewriteResult]] - `calls` [EXTRACTED]
+- [[Rewrite a path to isolate it to the user's namespace. Args path Original file…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PathIsolationManager

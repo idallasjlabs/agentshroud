@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "WebProxy"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/WebProxy
 ---
 
 # .get_domain_settings()
 
 ## Connections
-- [[DomainSettings]] - `references` [EXTRACTED]
+- [[DomainSettings]] - `calls` [EXTRACTED]
 - [[Get settings for a specific domain, falling back to defaults.]] - `rationale_for` [EXTRACTED]
 - [[WebProxyConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

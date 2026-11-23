@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilter"
 location: "L327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilter
 ---
 
 # .get_effective_allowlist()
@@ -16,4 +16,4 @@ tags:
 - [[EgressFilterConfig]] - `method` [EXTRACTED]
 - [[Get the effective allowlist for a specific agent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

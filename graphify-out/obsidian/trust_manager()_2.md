@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 11"
+community: "test_e2e_proxy.py"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/test_e2e_proxypy
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustConfig]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[fixture_85]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

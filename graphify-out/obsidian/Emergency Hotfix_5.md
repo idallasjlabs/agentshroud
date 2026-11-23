@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mc.md"
+source_file: ".omp/agents/i-mc.md"
 type: "document"
-community: "Community 1653"
-location: "L55"
+community: "GSDE&G Development Master Checklist"
+location: "L54"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1653
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[GSDE&G Development Master Checklist_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1653
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "asyncio"
 location: "L4708"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/asyncio
 ---
 
 # Plain language model question should be answered by gateway directly.
 
 ## Connections
-- [[.test_plain_model_question_is_handled_locally()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_plain_model_question_is_handled_locally()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

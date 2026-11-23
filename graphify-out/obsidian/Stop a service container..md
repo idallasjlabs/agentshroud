@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/cli/main.py"
 type: "rationale"
-community: "Community 87"
+community: "cli/main.py"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/cli/mainpy
 ---
 
 # Stop a service container.
 
 ## Connections
-- [[stop_service()]] - `rationale_for` [EXTRACTED]
+- [[stop_service()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_87
+#graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

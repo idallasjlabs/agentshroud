@@ -1,18 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: ".github/agents/i-mcpm-aws-profile.agent.md"
 type: "document"
-community: "Community 179"
-location: "L17"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L325"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Quick Reference
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
-- [[Using the Helper Script]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

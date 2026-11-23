@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mm.md"
+source_file: ".omp/agents/i-ab.md"
 type: "document"
-community: "Community 513"
-location: "L10"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Role
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

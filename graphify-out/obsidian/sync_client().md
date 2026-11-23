@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 62"
+community: "app"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/app
 ---
 
 # sync_client()
 
 ## Connections
 - [[Sync TestClient for WebSocket tests]] - `rationale_for` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_1]] - `references` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/app

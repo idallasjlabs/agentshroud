@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ui.md"
+source_file: ".opencode/agents/apollo.md"
 type: "document"
-community: "Community 515"
-location: "L10"
+community: "Technical Specification"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_515
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_515
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

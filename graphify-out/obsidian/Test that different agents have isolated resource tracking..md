@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Community 5"
+community: "ResourceGuard"
 location: "L143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/ResourceGuard
 ---
 
 # Test that different agents have isolated resource tracking.
 
 ## Connections
-- [[.test_multiple_agents_isolated()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_multiple_agents_isolated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

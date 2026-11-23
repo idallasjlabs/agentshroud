@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "Community 93"
-location: "L45"
+community: "asyncio"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_93
+  - community/asyncio
 ---
 
 # ScanResult
 
 ## Connections
-- [[._scan_encoded_payloads()]] - `references` [EXTRACTED]
-- [[._scan_hidden_content()]] - `references` [EXTRACTED]
-- [[._scan_pii()]] - `references` [EXTRACTED]
-- [[._scan_prompt_injection()]] - `references` [EXTRACTED]
-- [[._scan_xml_dtd()]] - `references` [EXTRACTED]
-- [[._scan_zero_width()]] - `references` [EXTRACTED]
-- [[.flagged()_1]] - `method` [EXTRACTED]
-- [[.scan()_1]] - `references` [EXTRACTED]
-- [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
+- [[dot-_blocking_prompt_guard()]] - `calls` [EXTRACTED]
+- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
+- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
+- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_93
+#graphify/code #graphify/EXTRACTED #community/asyncio

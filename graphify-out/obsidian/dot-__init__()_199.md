@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L37"
+community: "SlackAPIProxy"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/SlackAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_82]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[deque]] - `calls` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

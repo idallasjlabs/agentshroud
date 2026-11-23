@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 1555"
-location: "L173"
+community: "Shutdown & Recovery"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1555
+  - community/Shutdown__Recovery
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Sequence_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1555
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

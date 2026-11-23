@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Send alert for anomaly detection.]] - `rationale_for` [EXTRACTED]
 

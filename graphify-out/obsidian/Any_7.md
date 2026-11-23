@@ -1,20 +1,24 @@
 ---
-source_file: "gateway/inbound_edge/descriptors.py"
+source_file: ""
 type: "code"
-community: "Community 1968"
-location: "L123"
+community: "test_edge_network_isolation.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1968
+  - community/test_edge_network_isolationpy
 ---
 
 # Any
 
 ## Connections
-- [[build_manifest()]] - `references` [EXTRACTED]
-- [[canonical_bytes()]] - `references` [EXTRACTED]
-- [[descriptor_hash()]] - `references` [EXTRACTED]
-- [[verify_descriptors()]] - `references` [EXTRACTED]
+- [[_Override]] - `references` [EXTRACTED]
+- [[_compose()]] - `references` [EXTRACTED]
+- [[_environment()]] - `references` [EXTRACTED]
+- [[_load()]] - `references` [EXTRACTED]
+- [[_merge()]] - `references` [EXTRACTED]
+- [[_networks()]] - `references` [EXTRACTED]
+- [[_published()]] - `references` [EXTRACTED]
+- [[_strip()]] - `references` [EXTRACTED]
+- [[_subnets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1968
+#graphify/code #graphify/EXTRACTED #community/test_edge_network_isolationpy

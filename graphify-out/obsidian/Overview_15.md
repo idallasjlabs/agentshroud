@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/architecture/deployment-diagram.md"
 type: "document"
-community: "Community 346"
-location: "L9"
+community: "AgentShroud Deployment Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_346
+  - community/AgentShroud_Deployment_Architecture
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Prerequisites]] - `contains` [EXTRACTED]
+- [[AgentShroud Deployment Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_346
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Deployment_Architecture

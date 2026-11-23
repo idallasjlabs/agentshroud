@@ -1,56 +1,42 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "Community 477"
+community: "SessionManager"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_477
+  - community/SessionManager
 ---
 
 # SessionManager
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_129]] - `method` [EXTRACTED]
-- [[._fingerprint()]] - `method` [EXTRACTED]
-- [[.cleanup_expired()_3]] - `method` [EXTRACTED]
-- [[.create_session()]] - `method` [EXTRACTED]
-- [[.destroy_session()]] - `method` [EXTRACTED]
-- [[.generate_instruction_nonce()]] - `method` [EXTRACTED]
-- [[.manager()_2]] - `calls` [EXTRACTED]
-- [[.register_event_source()]] - `method` [EXTRACTED]
-- [[.rotate_session()]] - `method` [EXTRACTED]
-- [[.test_cleanup_expired()]] - `calls` [EXTRACTED]
-- [[.test_different_ips_not_rate_limited()]] - `calls` [EXTRACTED]
-- [[.test_expired_session_rejected()]] - `calls` [EXTRACTED]
-- [[.test_rate_limit_exceeded()]] - `calls` [EXTRACTED]
-- [[.test_rate_limit_resets_after_window()]] - `calls` [EXTRACTED]
-- [[.validate_event()]] - `method` [EXTRACTED]
-- [[.validate_nonce()]] - `method` [EXTRACTED]
-- [[.validate_session()]] - `method` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Chen et al. 2026 — Agent configuration vulnerabilities  session hijacking (arXiv2602.14364)]] - `cites` [EXTRACTED]
-- [[ConsentFramework]] - `semantically_similar_to` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_198]] - `method` [EXTRACTED]
+- [[dot-_fingerprint()]] - `method` [EXTRACTED]
+- [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
+- [[dot-create_session()]] - `method` [EXTRACTED]
+- [[dot-destroy_session()]] - `method` [EXTRACTED]
+- [[dot-generate_instruction_nonce()]] - `method` [EXTRACTED]
+- [[dot-manager()_2]] - `calls` [INFERRED]
+- [[dot-register_event_source()]] - `method` [EXTRACTED]
+- [[dot-rotate_session()]] - `method` [EXTRACTED]
+- [[dot-test_cleanup_expired()]] - `calls` [INFERRED]
+- [[dot-test_different_ips_not_rate_limited()]] - `calls` [INFERRED]
+- [[dot-test_expired_session_rejected()]] - `calls` [INFERRED]
+- [[dot-test_rate_limit_exceeded()]] - `calls` [INFERRED]
+- [[dot-test_rate_limit_resets_after_window()]] - `calls` [INFERRED]
+- [[dot-validate_event()]] - `method` [EXTRACTED]
+- [[dot-validate_nonce()]] - `method` [EXTRACTED]
+- [[dot-validate_session()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestEventInjection]] - `uses` [INFERRED]
 - [[TestInstructionNonce]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
-- [[TestSessionCreation]] - `uses` [INFERRED]
-- [[TestSessionRotation]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[Wang et al. 2026 — Event injection attacks (arXiv2602.08412)]] - `cites` [EXTRACTED]
-- [[manager()_3]] - `calls` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[session_security.py]] - `contains` [EXTRACTED]
+- [[manager()_3]] - `uses` [INFERRED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[session_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_477
+#graphify/code #graphify/EXTRACTED #community/SessionManager

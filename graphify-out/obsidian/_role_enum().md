@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # _role_enum()
 
 ## Connections
-- [[._build_record()]] - `calls` [EXTRACTED]
-- [[UserRole]] - `references` [EXTRACTED]
+- [[dot-_build_record()]] - `calls` [EXTRACTED]
+- [[UserRole]] - `uses` [INFERRED]
 - [[contributors.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "upgrade"
+community: "version_routes.py"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/version_routespy
 ---
 
 # .test_invalid_version_format()
@@ -15,4 +15,4 @@ tags:
 - [[TestSecurityReview]] - `method` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/version_routespy

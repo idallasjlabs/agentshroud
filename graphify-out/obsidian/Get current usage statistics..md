@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "Community 5"
+community: "ResourceGuard"
 location: "L426"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/ResourceGuard
 ---
 
 # Get current usage statistics.
 
 ## Connections
-- [[.get_usage_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

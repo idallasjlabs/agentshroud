@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "._make_proxy()"
+community: "ResourceGuard"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ResourceGuard
 ---
 
 # .test_stop_cancels_monitor_task()
@@ -15,6 +15,7 @@ tags:
 - [[ResourceGuard]] - `calls` [EXTRACTED]
 - [[ResourceLimits]] - `calls` [EXTRACTED]
 - [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[asyncio_62]] - `references` [EXTRACTED]
 - [[stop() should cancel background monitor cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

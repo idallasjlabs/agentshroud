@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/smoke.sh"
 type: "code"
-community: "Recommendation"
+community: "deployment-mode.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Recommendation
+  - community/deployment-modesh
 ---
 
 # scripts/smoke.sh
@@ -14,8 +14,5 @@ tags:
 ## Connections
 - [[run_test()]] - `defines` [EXTRACTED]
 - [[smoke.sh script_1]] - `contains` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh]] - `references` [EXTRACTED]
-- [[test_hermes_cron_html_email.sh]] - `references` [EXTRACTED]
-- [[test_openclaw_photo.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Recommendation
+#graphify/code #graphify/EXTRACTED #community/deployment-modesh

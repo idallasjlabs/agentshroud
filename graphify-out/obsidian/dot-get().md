@@ -1,22 +1,29 @@
 ---
-source_file: "gateway/security/report_store.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L182"
+community: "SCLClient"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/SCLClient
 ---
 
 # .get()
 
 ## Connections
-- [[dot-_enforce_count_cap()]] - `calls` [EXTRACTED]
-- [[dot-_path()]] - `calls` [EXTRACTED]
-- [[dot-_valid_id()]] - `calls` [EXTRACTED]
-- [[dot-list()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
-- [[ReportStore]] - `method` [EXTRACTED]
+- [[dot-_request()]] - `calls` [EXTRACTED]
+- [[dot-edge_status()]] - `calls` [EXTRACTED]
+- [[dot-get_correlation()]] - `calls` [EXTRACTED]
+- [[dot-get_egress_pending()]] - `calls` [EXTRACTED]
+- [[dot-get_events()]] - `calls` [EXTRACTED]
+- [[dot-get_groups()]] - `calls` [EXTRACTED]
+- [[dot-get_health()]] - `calls` [EXTRACTED]
+- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
+- [[dot-get_risk()]] - `calls` [EXTRACTED]
+- [[dot-get_services()]] - `calls` [EXTRACTED]
+- [[dot-get_users()]] - `calls` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "Community 0"
+community: "MetadataGuard"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/MetadataGuard
 ---
 
 # Guards against metadata channel attacks and information disclosure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MetadataGuard]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard

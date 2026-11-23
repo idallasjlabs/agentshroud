@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.32
 members: 13
 ---
 
 # update-conduit-push.sh
 
-**Cohesion:** 0.32 - loosely connected
 **Members:** 13 nodes
 
 ## Members

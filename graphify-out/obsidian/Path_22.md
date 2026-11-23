@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: ""
 type: "code"
-community: "Community 102"
-location: "L66"
+community: "test_security_toolchain.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/test_security_toolchainpy
 ---
 
 # Path
 
 ## Connections
-- [[read_alerts()_1]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[init_db()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

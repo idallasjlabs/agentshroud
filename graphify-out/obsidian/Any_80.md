@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/tools/agentshroud_manager.py"
+source_file: ""
 type: "code"
-community: "Community 66"
-location: "L68"
+community: "NetworkValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/NetworkValidator
 ---
 
 # Any
 
 ## Connections
-- [[check_current_version()]] - `references` [EXTRACTED]
-- [[downgrade()]] - `references` [EXTRACTED]
-- [[list_versions()]] - `references` [EXTRACTED]
-- [[rollback()]] - `references` [EXTRACTED]
-- [[security_review()]] - `references` [EXTRACTED]
-- [[upgrade()]] - `references` [EXTRACTED]
+- [[dot-_parse_service_network_config()]] - `references` [EXTRACTED]
+- [[dot-_validate_network_definitions()]] - `references` [EXTRACTED]
+- [[dot-get_security_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "Community 114"
+community: "UserSessionManager"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_114
+  - community/UserSessionManager
 ---
 
 # Test that middleware blocks access to sensitive system files.
 
 ## Connections
-- [[.test_middleware_file_path_isolation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_middleware_file_path_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_114
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

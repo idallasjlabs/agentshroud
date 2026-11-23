@@ -1,16 +1,13 @@
 ---
 source_file: "docker/seccomp/gateway-seccomp.json"
 type: "code"
-community: "Community 814"
+community: "gateway-seccomp.json (Docker seccomp profile)"
 tags:
   - graphify/code
-  - graphify/AMBIGUOUS
-  - community/Community_814
+  - graphify/EXTRACTED
+  - community/gateway-seccompjson_Docker_seccomp_profile
 ---
 
 # gateway-seccomp.json (Docker seccomp profile)
 
-## Connections
-- [[security-scheduler.sh]] - `conceptually_related_to` [AMBIGUOUS]
-
-#graphify/code #graphify/AMBIGUOUS #community/Community_814
+#graphify/code #graphify/EXTRACTED #community/gateway-seccompjson_Docker_seccomp_profile

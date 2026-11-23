@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Community 205"
-location: "L182"
+community: "ingest_api/config.py"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/ingest_api/configpy
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
+- [[asyncio_42]] - `references` [EXTRACTED]
+- [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_205
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

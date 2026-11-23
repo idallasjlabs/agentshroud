@@ -1,16 +1,16 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "Community 587"
+community: "Browser Extension"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_587
+  - community/Browser_Extension
 ---
 
 # browser-extension package.json (Jest test harness)
 
 ## Connections
-- [[README_39]] - `conceptually_related_to` [INFERRED]
+- [[browser-extensionREADME]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_587
+#graphify/code #graphify/INFERRED #community/Browser_Extension

@@ -1,12 +1,12 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 695"
+community: "Applies to: Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)"
 location: "L467"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_695
+  - community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary
 ---
 
 # 8) OUTPUT FORMATTING CONTRACT
@@ -15,4 +15,4 @@ tags:
 - [[Applies to Claude Code (primary) · Gemini CLI (secondary) · Codex CLI (tertiary)]] - `contains` [EXTRACTED]
 - [[Avoid_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_695
+#graphify/document #graphify/EXTRACTED #community/Applies_to_Claude_Code_primary__Gemini_CLI_secondary__Codex_CLI_tertiary

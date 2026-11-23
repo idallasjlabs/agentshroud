@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "._run_and_read"
+community: "triage-cve-mitigations.py"
 location: "L1000"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/triage-cve-mitigationspy
 ---
 
 # _nl()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rewrite_registry_text()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

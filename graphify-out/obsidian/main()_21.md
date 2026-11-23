@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: "gateway/inbound_edge/descriptors.py"
 type: "code"
-community: "Community 777"
-location: "L136"
+community: "test_edge_service_routes.py"
+location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/test_edge_service_routespy
 ---
 
 # main()
 
 ## Connections
-- [[Path_51]] - `calls` [EXTRACTED]
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-email-reports.py]] - `contains` [EXTRACTED]
-- [[export_bot()]] - `calls` [EXTRACTED]
+- [[build_manifest()]] - `calls` [EXTRACTED]
+- [[canonical_bytes()]] - `calls` [EXTRACTED]
+- [[descriptors.py]] - `contains` [EXTRACTED]
+- [[test_cli_verify_ok_and_bad_stdin()]] - `calls` [EXTRACTED]
+- [[verify_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

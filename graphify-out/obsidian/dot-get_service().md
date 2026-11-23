@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Enum"
+community: "services.py"
 location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/servicespy
 ---
 
 # .get_service()
@@ -17,4 +17,4 @@ tags:
 - [[ServiceDescriptor]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/servicespy

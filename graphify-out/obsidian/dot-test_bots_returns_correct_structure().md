@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "test_soc_bots.py"
 location: "L832"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/test_soc_botspy
 ---
 
 # .test_bots_returns_correct_structure()
@@ -16,6 +16,7 @@ tags:
 - [[_make_m6_app_state()]] - `calls` [EXTRACTED]
 - [[_make_m6_bot_config()]] - `calls` [EXTRACTED]
 - [[_make_m6_caller()]] - `calls` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[list_bots()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,22 +1,18 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 126"
-location: "L142"
+community: "sunday-scan.sh"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-scansh
 ---
 
 # die()
 
 ## Connections
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[err()_1]] - `calls` [EXTRACTED]
-- [[phase_baseline()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

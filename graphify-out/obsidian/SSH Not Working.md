@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 243"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
 location: "L397"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_243
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # SSH Not Working
 
 ## Connections
-- [[Troubleshooting_49]] - `contains` [EXTRACTED]
+- [[Troubleshooting_28]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_243
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/operations/macos.md"
 type: "document"
-community: "Community 421"
+community: "Updating AgentShroud"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_421
+  - community/Updating_AgentShroud
 ---
 
 # Deploying AgentShroud on macOS (docs/operations/macos.md)
@@ -15,5 +15,6 @@ tags:
 - [[Docker Desktop (Apple Silicon  Intel transparent arch handling; resource allocation guidance)]] - `conceptually_related_to` [EXTRACTED]
 - [[Native Python gateway dev run uvicorn gateway.ingest_api.mainapp --host 127.0.0.1 --port 8080]] - `conceptually_related_to` [EXTRACTED]
 - [[dockersecretssetup-secrets.sh (secret bootstrap step shared by Linux and macOS install guides)]] - `conceptually_related_to` [EXTRACTED]
+- [[updating_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_421
+#graphify/document #graphify/EXTRACTED #community/Updating_AgentShroud

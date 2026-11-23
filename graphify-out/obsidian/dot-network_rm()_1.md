@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "PodmanEngine"
-location: "L173"
+community: "AppleContainerEngine"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/AppleContainerEngine
 ---
 
 # .network_rm()
 
 ## Connections
-- [[dot-_cmd()]] - `calls` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

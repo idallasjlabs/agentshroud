@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 337"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Expected output:
 
 ## Connections
-- [[SKILL_58]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

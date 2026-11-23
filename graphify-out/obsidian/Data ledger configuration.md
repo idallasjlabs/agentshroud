@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # Data ledger configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LedgerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

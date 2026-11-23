@@ -1,17 +1,17 @@
 ---
 source_file: "browser-extension/manifest.json"
 type: "code"
-community: "Community 440"
+community: "browser-extension/manifest.json"
 location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_440
+  - community/browser-extension/manifestjson
 ---
 
 # default_title
 
 ## Connections
-- [[action]] - `contains` [EXTRACTED]
+- [[action_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_440
+#graphify/code #graphify/EXTRACTED #community/browser-extension/manifestjson

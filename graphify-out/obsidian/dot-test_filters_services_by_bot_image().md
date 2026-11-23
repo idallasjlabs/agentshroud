@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "test_soc_bots.py"
 location: "L474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/test_soc_botspy
 ---
 
 # .test_filters_services_by_bot_image()
 
 ## Connections
-- [[ServiceDescriptor_1]] - `calls` [EXTRACTED]
+- [[ServiceDescriptor]] - `calls` [EXTRACTED]
 - [[TestServicesBotFilter]] - `method` [EXTRACTED]
-- [[When bot_id is given, services whose image matches the bot's image are returned.]] - `rationale_for` [EXTRACTED]
+- [[When bot_id is given, services whose image matches the bot's image are…]] - `rationale_for` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_bot_config()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

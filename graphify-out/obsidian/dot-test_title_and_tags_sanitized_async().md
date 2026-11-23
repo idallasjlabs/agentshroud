@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestAsyncSave"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestAsyncSave
 ---
 
 # .test_title_and_tags_sanitized_async()
@@ -14,5 +14,8 @@ tags:
 ## Connections
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestReviewHardening]] - `method` [EXTRACTED]
+- [[_san()_1]] - `contains` [EXTRACTED]
+- [[_san()]] - `indirect_call` [INFERRED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestAsyncSave

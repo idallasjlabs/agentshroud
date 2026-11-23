@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "Community 125"
+community: "DraftEntry"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/DraftEntry
 ---
 
 # test_default_allowlist_uses_permanent_egress_domains()
@@ -17,4 +17,4 @@ tags:
 - [[_FakeFetcher]] - `calls` [EXTRACTED]
 - [[test_citation_verifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

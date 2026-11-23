@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-bs.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 1009"
-location: "L300"
+community: "prompt_guard.py"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/prompt_guardpy
 ---
 
 # Dependencies
 
 ## Connections
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

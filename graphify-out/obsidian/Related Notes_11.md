@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Community 979"
-location: "L65"
+community: "Docker Volumes"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_979
+  - community/Docker_Volumes
 ---
 
 # Related Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_979
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

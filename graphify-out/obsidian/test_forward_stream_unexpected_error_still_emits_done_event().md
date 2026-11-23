@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # test_forward_stream_unexpected_error_still_emits_done_event()
@@ -15,6 +15,7 @@ tags:
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[_parse_sse_events()]] - `calls` [EXTRACTED]
 - [[_post_stream()]] - `calls` [EXTRACTED]
+- [[_raise_unexpected()]] - `indirect_call` [INFERRED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

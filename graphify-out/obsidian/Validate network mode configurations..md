@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 71"
+community: "NetworkValidator"
 location: "L381"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/NetworkValidator
 ---
 
 # Validate network mode configurations.
 
 ## Connections
-- [[._validate_network_modes()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_network_modes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/NetworkValidator

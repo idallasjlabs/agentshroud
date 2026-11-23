@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "Any"
-location: "L55"
+community: "EnhancedApprovalQueue"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[Facade_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

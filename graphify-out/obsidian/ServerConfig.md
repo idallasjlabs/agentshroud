@@ -1,38 +1,37 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 152"
+community: "ServerConfig"
 location: "L32"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_152
+  - graphify/INFERRED
+  - community/ServerConfig
 ---
 
 # ServerConfig
 
 ## Connections
-- [[.test_blacklisted_command_rejected()]] - `calls` [EXTRACTED]
-- [[.test_empty_command_rejected()]] - `calls` [EXTRACTED]
-- [[.test_env_with_path_manipulation()]] - `calls` [EXTRACTED]
-- [[.test_env_with_secrets_in_value_warned()]] - `calls` [EXTRACTED]
-- [[.test_known_dangerous_patterns_detected()]] - `calls` [EXTRACTED]
-- [[.test_multiple_configs_validated()]] - `calls` [EXTRACTED]
-- [[.test_safe_env_no_warnings()]] - `calls` [EXTRACTED]
-- [[.test_shell_injection_backtick_detected()]] - `calls` [EXTRACTED]
-- [[.test_shell_injection_curl_detected()]] - `calls` [EXTRACTED]
-- [[.test_shell_injection_dollar_paren()]] - `calls` [EXTRACTED]
-- [[.test_shell_injection_pipe_to_sh()]] - `calls` [EXTRACTED]
-- [[.test_shell_injection_rm_rf_detected()]] - `calls` [EXTRACTED]
-- [[.test_shell_injection_wget_detected()]] - `calls` [EXTRACTED]
-- [[.test_valid_config_passes()]] - `calls` [EXTRACTED]
-- [[.test_whitelisted_command_auto_approved()]] - `calls` [EXTRACTED]
-- [[.validate_config()]] - `references` [EXTRACTED]
-- [[.validate_configs()]] - `references` [EXTRACTED]
-- [[TestConsentDecision]] - `uses` [INFERRED]
+- [[dot-test_blacklisted_command_rejected()]] - `calls` [INFERRED]
+- [[dot-test_empty_command_rejected()]] - `calls` [INFERRED]
+- [[dot-test_env_with_path_manipulation()]] - `calls` [INFERRED]
+- [[dot-test_env_with_secrets_in_value_warned()]] - `calls` [INFERRED]
+- [[dot-test_known_dangerous_patterns_detected()]] - `calls` [INFERRED]
+- [[dot-test_multiple_configs_validated()]] - `calls` [INFERRED]
+- [[dot-test_safe_env_no_warnings()]] - `calls` [INFERRED]
+- [[dot-test_shell_injection_backtick_detected()]] - `calls` [INFERRED]
+- [[dot-test_shell_injection_curl_detected()]] - `calls` [INFERRED]
+- [[dot-test_shell_injection_dollar_paren()]] - `calls` [INFERRED]
+- [[dot-test_shell_injection_pipe_to_sh()]] - `calls` [INFERRED]
+- [[dot-test_shell_injection_rm_rf_detected()]] - `calls` [INFERRED]
+- [[dot-test_shell_injection_wget_detected()]] - `calls` [INFERRED]
+- [[dot-test_valid_config_passes()]] - `calls` [INFERRED]
+- [[dot-test_whitelisted_command_auto_approved()]] - `calls` [INFERRED]
+- [[dot-validate_config()]] - `references` [EXTRACTED]
+- [[dot-validate_configs()]] - `references` [EXTRACTED]
 - [[TestEnvironmentValidation]] - `uses` [INFERRED]
 - [[TestServerConfigValidation]] - `uses` [INFERRED]
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
-- [[consent_framework.py]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_152
+#graphify/code #graphify/INFERRED #community/ServerConfig

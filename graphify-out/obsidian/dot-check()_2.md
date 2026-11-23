@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L108"
+community: "ConfigIntegrityMonitor"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/ConfigIntegrityMonitor
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_burst_limit()]] - `calls` [EXTRACTED]
-- [[dot-_sustained_limit()]] - `calls` [EXTRACTED]
-- [[RateLimitDecision]] - `references` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
-- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - `rationale_for` [EXTRACTED]
+- [[dot-_hash_file()]] - `calls` [EXTRACTED]
+- [[dot-_load_baseline()]] - `calls` [EXTRACTED]
+- [[dot-_save_baseline()]] - `calls` [EXTRACTED]
+- [[Compare current file hashes against baseline. Returns a list of change records…]] - `rationale_for` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

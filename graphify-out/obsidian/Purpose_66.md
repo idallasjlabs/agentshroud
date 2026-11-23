@@ -1,17 +1,18 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "Community 90"
+community: "Quality Assurance (SKILL)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Quality_Assurance_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

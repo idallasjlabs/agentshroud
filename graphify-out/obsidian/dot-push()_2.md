@@ -12,7 +12,7 @@ tags:
 # .push()
 
 ## Connections
-- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
 - [[PodmanEngine]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PodmanEngine

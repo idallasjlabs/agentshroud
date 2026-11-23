@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "Community 674"
-location: "L12"
+community: "Production Safety Checklist (PROD-SAFETY)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Purpose
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

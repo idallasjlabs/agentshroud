@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "ReportStore"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/ReportStore
 ---
 
 # .delete()
@@ -17,4 +17,4 @@ tags:
 - [[dot-_valid_id()]] - `calls` [EXTRACTED]
 - [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/ReportStore

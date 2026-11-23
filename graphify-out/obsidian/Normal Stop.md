@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 306"
+community: "Shutdown & Recovery"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/Shutdown__Recovery
 ---
 
 # Normal Stop
 
 ## Connections
-- [[Graceful Shutdown_1]] - `contains` [EXTRACTED]
+- [[Graceful Shutdown]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

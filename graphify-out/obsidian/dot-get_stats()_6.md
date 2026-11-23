@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
+community: "DataExfilVolumeGuard"
 location: "L219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/DataExfilVolumeGuard
 ---
 
 # .get_stats()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

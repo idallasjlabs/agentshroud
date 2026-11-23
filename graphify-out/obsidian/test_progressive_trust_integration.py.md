@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "Community 11"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/lifespanpy
 ---
 
 # test_progressive_trust_integration.py
 
 ## Connections
 - [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
+- [[ProgressiveTrustConfig → TrustManager integration tests. The trust ladder…]] - `rationale_for` [EXTRACTED]
 - [[PromotionThreshold]] - `imports` [EXTRACTED]
 - [[TestBackwardCompat]] - `contains` [EXTRACTED]
 - [[TestEnforcementMode]] - `contains` [EXTRACTED]
@@ -27,11 +28,13 @@ tags:
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]
 - [[_fast_ladder()]] - `contains` [EXTRACTED]
 - [[_make_tm()]] - `contains` [EXTRACTED]
 - [[_set_state()]] - `contains` [EXTRACTED]
+- [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `imports` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

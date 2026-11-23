@@ -1,17 +1,17 @@
 ---
 source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "Community 1139"
-location: "L16"
+community: "allowed_hours"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1139
+  - community/allowed_hours
 ---
 
 # type
 
 ## Connections
-- [[monitor_ack]] - `contains` [EXTRACTED]
+- [[start]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1139
+#graphify/code #graphify/EXTRACTED #community/allowed_hours

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 433"
+community: "Hermes Agent — Connection Setup"
 location: "L115"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_433
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Frontend Client Setup
@@ -17,4 +17,4 @@ tags:
 - [[LibreChat]] - `contains` [EXTRACTED]
 - [[Open WebUI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_433
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

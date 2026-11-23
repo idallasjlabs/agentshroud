@@ -1,17 +1,16 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "concept"
-community: "Community 764"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Tailscale Remote Access (Pi)
 
 ## Connections
-- [[TAILSCALE_COMMANDS]] - `conceptually_related_to` [INFERRED]
 - [[raspberry-pi]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_764
+#graphify/concept #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

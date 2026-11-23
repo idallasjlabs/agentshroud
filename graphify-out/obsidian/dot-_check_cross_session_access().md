@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
-- [[Check for unauthorized cross-session access attempts.          Implementation]] - `rationale_for` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
+- [[Check for unauthorized cross-session access attempts. Implementation note…]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `references` [EXTRACTED]
+- [[MiddlewareResult]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

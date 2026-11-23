@@ -1,18 +1,17 @@
 ---
-source_file: "docs/ssh-capability.md"
+source_file: ".cursor/agents/eightd-root-cause-analysis.md"
 type: "document"
-community: "Community 703"
-location: "L3"
+community: "The 8D Investigation Process"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_703
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
 
 ## Connections
-- [[SSH Capability Architecture Document]] - `contains` [EXTRACTED]
-- [[SSH Capability — Architecture Document]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_703
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

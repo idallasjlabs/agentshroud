@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 107"
+community: "AgentShroud Operations Runbook"
 location: "L409"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # AgentShroud Updates
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[6. System Updates]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_107
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

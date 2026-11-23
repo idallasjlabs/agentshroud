@@ -1,23 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 34"
+community: "TestMemoryIntegrityRegistration"
 location: "L352"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_34
+  - graphify/EXTRACTED
+  - community/TestMemoryIntegrityRegistration
 ---
 
 # TestMemoryIntegrityRegistration
 
 ## Connections
-- [[.test_expected_write_registered()]] - `method` [EXTRACTED]
-- [[.test_no_path_match_no_registration()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_expected_write_registered()]] - `method` [EXTRACTED]
+- [[dot-test_no_path_match_no_registration()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityRegistration

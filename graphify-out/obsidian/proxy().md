@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 116"
-location: "L53"
+community: "SSHProxy"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_116
+  - community/SSHProxy
 ---
 
 # proxy()
 
 ## Connections
-- [[A2AProxy_1]] - `references` [EXTRACTED]
-- [[_StubForwarder]] - `references` [EXTRACTED]
-- [[_base_policy_engine()]] - `calls` [EXTRACTED]
-- [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
+- [[SSHConfig]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
+- [[fixture_51]] - `references` [EXTRACTED]
+- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_116
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

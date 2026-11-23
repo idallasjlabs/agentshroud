@@ -1,19 +1,17 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 231"
-location: "L74"
+community: "Co-Branding Guidelines"
+location: "L244"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Co-Branding_Guidelines
 ---
 
 # Prohibited Uses
 
 ## Connections
-- [[Brand Approval Process]] - `contains` [EXTRACTED]
 - [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
-- [[Logo Usage_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Co-Branding_Guidelines

@@ -1,30 +1,34 @@
 ---
 type: community
-cohesion: 0.13
-members: 15
+members: 21
 ---
 
 # CredentialInjector
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 15 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Mode A — Single task_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 10 — Notify the owner_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 12 — Clean up_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2 — Create a branch + worktree_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 2b — Create the Jira ticket_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 3 — Write and edit code_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 4 — Test and lint_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 5 — Multi-LLM review_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 6 — Build and validate containers_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 7 — Update documentation and website_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 8 — Update the knowledge graph_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 9 — Push and open the PR_2]] - document - .agents/skills/i-hdev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_2]] - document - .agents/skills/i-hdev/SKILL.md
+- [[dot-__init__()_209]] - code - gateway/security/credential_injector.py
+- [[dot-_load_credentials()]] - code - gateway/security/credential_injector.py
+- [[dot-_load_default_mappings()]] - code - gateway/security/credential_injector.py
+- [[dot-get_all_loaded_values()]] - code - gateway/security/credential_injector.py
+- [[dot-get_status()_2]] - code - gateway/security/credential_injector.py
+- [[dot-has_credential()]] - code - gateway/security/credential_injector.py
+- [[dot-inject_headers()_1]] - code - gateway/security/credential_injector.py
+- [[dot-injector()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-injector()_1]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-injector_with_secrets()]] - code - gateway/tests/test_credential_isolation.py
+- [[dot-scan_for_credential_leak()]] - code - gateway/security/credential_injector.py
+- [[Check if we have a loaded credential for a domain.]] - rationale - gateway/security/credential_injector.py
+- [[CredentialInjector]] - code - gateway/security/credential_injector.py
+- [[Inject credentials into request headers based on destination domain. Args…]] - rationale - gateway/security/credential_injector.py
+- [[Injects credentials into outbound requests based on destination domain. The…]] - rationale - gateway/security/credential_injector.py
+- [[Load credential values from Docker Secrets directory.]] - rationale - gateway/security/credential_injector.py
+- [[Register default domain → credential mappings.]] - rationale - gateway/security/credential_injector.py
+- [[Return all loaded credential values for use in outbound scrubbing…]] - rationale - gateway/security/credential_injector.py
+- [[Return status for managemodules endpoint.]] - rationale - gateway/security/credential_injector.py
+- [[Scan outbound content for credential patterns. Returns description of detected…]] - rationale - gateway/security/credential_injector.py
+- [[fixture_131]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +38,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Skill Hermes Dev Workflow (HDEV) (2)]]
+- 8 edges to [[_COMMUNITY_CredentialInjectorConfig]]
+- 4 edges to [[_COMMUNITY_TestCredentialInjector]]
+- 2 edges to [[_COMMUNITY_TestCredentialLeakDetection]]
+- 2 edges to [[_COMMUNITY_TestOAuthInjection]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_test_credential_injector.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_load_all_secret_file_values]]
+- 1 edge to [[_COMMUNITY_TestLeakDetection]]
+- 1 edge to [[_COMMUNITY_test_credential_isolation.py]]
 
 ## Top bridge nodes
-- [[Mode A — Single task_2]] - degree 15, connects to 1 community
+- [[CredentialInjector]] - degree 28, connects to 10 communities
+- [[dot-injector()]] - degree 4, connects to 2 communities
+- [[dot-injector_with_secrets()]] - degree 4, connects to 2 communities
+- [[dot-injector()_1]] - degree 4, connects to 2 communities
+- [[dot-__init__()_209]] - degree 4, connects to 1 community

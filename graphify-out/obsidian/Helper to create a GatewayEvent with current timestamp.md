@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "Community 62"
+community: "ingest_api/main.py"
 location: "L116"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # Helper to create a GatewayEvent with current timestamp
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[make_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

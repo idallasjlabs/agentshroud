@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: ""
 type: "code"
-community: "Community 62"
-location: "L33"
+community: "ingest_api/models.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/modelspy
 ---
 
 # Request
 
 ## Connections
+- [[_process_inbound()]] - `references` [EXTRACTED]
 - [[auth_dep()_1]] - `references` [EXTRACTED]
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

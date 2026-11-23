@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
-- [[Enforce per-user, per-bot session isolation rules.          Each (user_id, bot_i]] - `rationale_for` [EXTRACTED]
+- [[Any]] - `references` [EXTRACTED]
+- [[Enforce per-user, per-bot session isolation rules. Each (user_id, bot_id) pair…]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `references` [EXTRACTED]
+- [[MiddlewareResult]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

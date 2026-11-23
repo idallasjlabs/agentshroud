@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/skills/i-athena/SKILL.md"
 type: "document"
-community: "FR3: System Integrity"
+community: "Athena — Knowledge Distiller"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FR3_System_Integrity
+  - community/Athena__Knowledge_Distiller
 ---
 
 # openclaw/skills/i-athena/SKILL.md
 
 ## Connections
-- [[description of what this does_1]] - `contains` [EXTRACTED]
-- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
+- [[description of what this does_7]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FR3_System_Integrity
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

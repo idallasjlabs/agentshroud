@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 536"
-location: "L90"
+community: "egress_filter.py"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/egress_filterpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_536
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

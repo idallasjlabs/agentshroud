@@ -17,9 +17,9 @@ tags:
 - [[dot-_is_in_write_window()]] - `calls` [EXTRACTED]
 - [[dot-_save_integrity_database()]] - `calls` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `calls` [EXTRACTED]
-- [[FileIntegrityRecord]] - `references` [EXTRACTED]
+- [[FileIntegrityRecord]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_16]] - `references` [EXTRACTED]
+- [[Path_12]] - `references` [EXTRACTED]
 - [[Scan a single file for integrity changes.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

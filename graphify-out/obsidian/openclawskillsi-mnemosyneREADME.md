@@ -12,6 +12,6 @@ tags:
 # openclaw/skills/i-mnemosyne/README.md
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_9]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # asb CLI — Deployment Tool
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[dot-agentsskillsi-architecture-reviewSKILL]] - document - .agents/skills/i-architecture-review/SKILL.md
-- [[Skill architecture-review]] - document - .agents/skills/i-architecture-review/SKILL.md
+- [[Container Architecture (gateway + bot hardening)]] - concept - docs/architecture/agentic-os.md
+- [[asb CLI — Deployment Tool]] - code - docs/architecture/agentic-os.md
 
 ## Live Query (requires Dataview plugin)
 

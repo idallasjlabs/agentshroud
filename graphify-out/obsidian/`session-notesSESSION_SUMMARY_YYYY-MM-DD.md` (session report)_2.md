@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-pm.md"
+source_file: ".agents/agents/i-pm.md"
 type: "document"
-community: "Community 1041"
+community: "Skill: Project Management (PM)"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1041
+  - community/Skill_Project_Management_PM
 ---
 
 # `session-notes/SESSION_SUMMARY_YYYY-MM-DD.md` (session report)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Continuity Files_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1041
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "rationale"
-community: "Community 154"
+community: "ToolResultInjectionScanner"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/ToolResultInjectionScanner
 ---
 
 # Test that clean content passes through unchanged.
 
 ## Connections
-- [[.test_clean_content_passes_through()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_clean_content_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_154
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

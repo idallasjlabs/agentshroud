@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Community 691"
+community: "Security Review (SEC) README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_691
+  - community/Security_Review_SEC_README
 ---
 
 # Security Review (SEC) README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecureClaw Security Review (SEC)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_691
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC_README

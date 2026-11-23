@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 350"
+community: "AgentShroud Setup Guide"
 location: "L1025"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/AgentShroud_Setup_Guide
 ---
 
 # What's Next?
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Setup_Guide

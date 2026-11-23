@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "Local LLM Support — Implementation Review"
+community: "TestGroupMemoryWriteACL"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Local_LLM_Support__Implementation_Review
+  - community/TestGroupMemoryWriteACL
 ---
 
 # .test_owner_write_succeeds()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupMemoryWriteACL]] - `method` [EXTRACTED]
 - [[The owner may write into any group's memory.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryWriteACL

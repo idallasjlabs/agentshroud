@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L983"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # _ensure_build_space()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[_docker_free_gb()]] - `calls` [EXTRACTED]
 - [[_prune_build_cache()]] - `calls` [EXTRACTED]
-- [[err()_1]] - `calls` [EXTRACTED]
+- [[err()]] - `calls` [EXTRACTED]
 - [[phase_apply()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[warn()_5]] - `calls` [EXTRACTED]
+- [[warn()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

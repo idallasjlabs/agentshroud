@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilter"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilter
 ---
 
 # .test_denylist_monitor_mode()
@@ -17,4 +17,4 @@ tags:
 - [[Test denylist behavior in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

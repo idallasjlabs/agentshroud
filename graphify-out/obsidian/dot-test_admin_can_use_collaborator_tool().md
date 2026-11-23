@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "TestAdminAccess"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/TestAdminAccess
 ---
 
 # .test_admin_can_use_collaborator_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAdminAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/TestAdminAccess

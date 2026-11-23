@@ -1,26 +1,20 @@
 ---
-source_file: "gateway/tests/test_session_security.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "Community 477"
-location: "L110"
+community: "PermissionLevel"
+location: "L392"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_477
+  - graphify/EXTRACTED
+  - community/PermissionLevel
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[.test_different_ips_not_rate_limited()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_exceeded()]] - `method` [EXTRACTED]
-- [[.test_rate_limit_resets_after_window()]] - `method` [EXTRACTED]
-- [[EventInjectionError]] - `uses` [INFERRED]
-- [[RateLimitExceeded]] - `uses` [INFERRED]
-- [[SessionBindingError]] - `uses` [INFERRED]
-- [[SessionError]] - `uses` [INFERRED]
-- [[SessionExpired]] - `uses` [INFERRED]
-- [[SessionManager]] - `uses` [INFERRED]
-- [[test_session_security.py]] - `contains` [EXTRACTED]
+- [[dot-test_no_limit_always_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_enforced()_2]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_per_agent()]] - `method` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_477
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

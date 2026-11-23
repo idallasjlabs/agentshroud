@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 271"
+community: "KeyRotationManager"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_271
+  - community/KeyRotationManager
 ---
 
 # Test grace period status tracking.
 
 ## Connections
-- [[.test_grace_period_tracking()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_grace_period_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_271
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

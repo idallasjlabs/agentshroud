@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_pipeline_unit.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "KeyVaultConfig"
-location: "L632"
+community: "test_e2e_watchtower.py"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/test_e2e_watchtowerpy
 ---
 
 # .test_clean_response_passes_unchanged()
 
 ## Connections
-- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
+- [[TestE2E03OutboundPIIRedaction]] - `method` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy

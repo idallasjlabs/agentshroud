@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-odev.md"
+source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 844"
-location: "L126"
+community: "Mode A — Single task"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_844
+  - community/Mode_A__Single_task
 ---
 
 # Step 1 — Sync and confirm clean state
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_844
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

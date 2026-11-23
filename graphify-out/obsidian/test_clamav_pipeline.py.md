@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Community 220"
+community: "test_clamav_pipeline.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_clamav_pipelinepy
 ---
 
 # test_clamav_pipeline.py
@@ -14,13 +14,16 @@ tags:
 ## Connections
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[Tests for ClamAV inline pipeline integration. Covers - scan_bytes() happy…]] - `rationale_for` [EXTRACTED]
 - [[_b64_payload()]] - `contains` [EXTRACTED]
 - [[_instant_wait_for()]] - `contains` [EXTRACTED]
 - [[_make_pipeline()]] - `contains` [EXTRACTED]
 - [[_run_capture()]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
-- [[clamav_scanner.py]] - `imports_from` [EXTRACTED]
+- [[asyncio_33]] - `imports` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `imports_from` [EXTRACTED]
 - [[clamd_sock_path()]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[scan_bytes()]] - `imports` [EXTRACTED]
 - [[test_apt_repo_signatures_are_verified()]] - `contains` [EXTRACTED]
 - [[test_clamav_comes_from_proposed_updates_and_nothing_else_does()]] - `contains` [EXTRACTED]
@@ -44,4 +47,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

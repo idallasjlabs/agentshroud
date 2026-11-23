@@ -1,30 +1,39 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 30"
+community: "EnhancedApprovalQueue"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/EnhancedApprovalQueue
 ---
 
 # enhanced_queue.py
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
-- [[ApprovalStore_1]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
+- [[ApprovalStore]] - `imports` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `contains` [EXTRACTED]
-- [[MFAGuard_2]] - `imports` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `imports` [EXTRACTED]
-- [[ToolRiskPolicy_1]] - `imports` [EXTRACTED]
-- [[group_router.py]] - `references` [EXTRACTED]
+- [[MFAGuard]] - `imports` [EXTRACTED]
+- [[ToolRiskConfig]] - `imports` [EXTRACTED]
+- [[ToolRiskPolicy]] - `imports` [EXTRACTED]
+- [[approval_queuestore.py]] - `imports_from` [EXTRACTED]
+- [[approvals.py]] - `imports_from` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[mfa_guard.py]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_mfa_guard.py]] - `references` [EXTRACTED]
+- [[test_edge_approvals.py]] - `imports_from` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports_from` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[test_enhanced_approval.py]] - `imports_from` [EXTRACTED]
+- [[test_mfa_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

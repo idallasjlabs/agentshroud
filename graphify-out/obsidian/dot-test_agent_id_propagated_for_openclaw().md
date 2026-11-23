@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "TestEmailSend"
+community: "test_forward_routing.py"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/test_forward_routingpy
 ---
 
 # .test_agent_id_propagated_for_openclaw()
 
 ## Connections
-- [[dot-process_inbound()_4]] - `calls` [EXTRACTED]
 - [[AgentTarget]] - `calls` [EXTRACTED]
 - [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - `rationale_for` [EXTRACTED]
@@ -20,4 +19,4 @@ tags:
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]
 - [[_make_mock_app_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy

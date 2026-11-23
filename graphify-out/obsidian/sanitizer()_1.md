@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_block_credentials.py"
 type: "code"
-community: "Community 43"
-location: "L47"
+community: "PIIConfig"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/PIIConfig
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIISanitizer]] - `calls` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[fixture_19]] - `references` [EXTRACTED]
+- [[test_block_credentials.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

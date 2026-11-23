@@ -1,29 +1,24 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "Community 216"
+community: "ContextGuard"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/ContextGuard
 ---
 
 # ContextIntegrityScorer
 
 ## Connections
-- [[.__init__()_79]] - `method` [EXTRACTED]
-- [[.score_context()]] - `method` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[IntegrityScore]] - `shares_data_with` [EXTRACTED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[Scores the integrity of a session's context.      Usage          scorer = Cont]] - `rationale_for` [EXTRACTED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
-- [[TestContextIntegrityScorer]] - `uses` [INFERRED]
+- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-score_context()]] - `method` [EXTRACTED]
+- [[Scores the integrity of a session's context. Usage scorer =…]] - `rationale_for` [EXTRACTED]
 - [[context_integrity.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[scorer()]] - `calls` [EXTRACTED]
+- [[scorer()]] - `uses` [INFERRED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_216
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

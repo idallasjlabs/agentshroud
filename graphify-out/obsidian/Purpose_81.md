@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cr/README.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Community 58"
-location: "L6"
+community: "gitleaks.toml"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/gitleakstoml
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # graphify clone command
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[i-incident-response SKILL (stub)]] - document - docker/config/hermes/skills/i-incident-response/SKILL.md
-- [[i-kaizen SKILL (stub)]] - document - docker/config/hermes/skills/i-kaizen/SKILL.md
+- [[graphify clone command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
+- [[graphify merge-graphs command]] - concept - docker/config/openclaw/skills/graphify/references/github-and-merge.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/agents/i-mc.md"
 type: "document"
-community: "Community 1562"
+community: "GSDE&G Development Master Checklist"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1562
+  - community/GSDEG_Development_Master_Checklist
 ---
 
 # Emergency Hotfix
 
 ## Connections
-- [[GSDE&G Development Master Checklist]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1562
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist

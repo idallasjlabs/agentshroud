@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "MetadataGuard"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/MetadataGuard
 ---
 
 # .sanitize_filename()
@@ -15,4 +15,4 @@ tags:
 - [[MetadataGuard]] - `method` [EXTRACTED]
 - [[Sanitize filename by removing unicode control characters and normalizing.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

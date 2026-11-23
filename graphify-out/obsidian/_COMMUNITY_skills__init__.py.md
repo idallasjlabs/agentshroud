@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # skills/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[Red Team Canary Values (FAKE_SSN, FAKE_KEY, Project Nightingale)]] - concept - docker/config/openclaw/skills/i-sec-offense/SKILL.md
+- [[AgentShroud skills package — manifest sync for skillsagentsMCP configs.]] - rationale - gateway/skills/__init__.py
+- [[skills__init__.py]] - code - gateway/skills/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

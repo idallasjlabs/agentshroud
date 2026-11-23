@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 568"
-location: "L28"
+community: "drift_detector.py"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/drift_detectorpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

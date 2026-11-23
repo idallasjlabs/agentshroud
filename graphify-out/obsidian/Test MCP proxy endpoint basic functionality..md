@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 2050"
+community: ".test_mcp_proxy_endpoint"
 location: "L190"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2050
+  - community/test_mcp_proxy_endpoint
 ---
 
 # Test MCP proxy endpoint basic functionality.
 
 ## Connections
-- [[.test_mcp_proxy_endpoint()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_mcp_proxy_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2050
+#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxy_endpoint

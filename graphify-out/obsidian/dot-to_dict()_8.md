@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/subagent_governance.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "SubagentGovernance"
-location: "L147"
+community: "ingest_api/main.py"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentGovernance
+  - community/ingest_api/mainpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-deregister()_1]] - `calls` [EXTRACTED]
-- [[dot-get_summary()]] - `calls` [EXTRACTED]
-- [[ResourceUsage]] - `method` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentGovernance
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

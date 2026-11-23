@@ -1,0 +1,17 @@
+---
+source_file: ".agents/skills/sec-offense/SKILL.md"
+type: "document"
+community: "AgentShroud Red Team Adversarial Tester"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/AgentShroud_Red_Team_Adversarial_Tester
+---
+
+# sec-offense/SKILL.md
+
+## Connections
+- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

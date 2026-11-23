@@ -1,17 +1,19 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 258"
-location: "L288"
+community: "Shutdown & Recovery"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Shutdown__Recovery
 ---
 
 # Graceful Shutdown
 
 ## Connections
-- [[Stop the Stack]] - `contains` [EXTRACTED]
+- [[Normal Stop]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery]] - `contains` [EXTRACTED]
+- [[Shutdown Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

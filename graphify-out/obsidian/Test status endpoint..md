@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "Community 2050"
+community: "app"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2050
+  - community/app
 ---
 
 # Test /status endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestStatusEndpoint]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2050
+#graphify/rationale #graphify/EXTRACTED #community/app

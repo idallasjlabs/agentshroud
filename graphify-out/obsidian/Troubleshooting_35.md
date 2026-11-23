@@ -1,21 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 175"
-location: "L246"
+community: "Hermes Agent — Connection Setup"
+location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_175
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_7]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_7]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_7]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_7]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_7]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_175
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

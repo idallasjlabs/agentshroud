@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: ""
 type: "code"
-community: "Community 92"
-location: "L60"
+community: "test_web_api_coverage.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_92
+  - graphify/EXTRACTED
+  - community/test_web_api_coveragepy
 ---
 
 # FastAPI
 
 ## Connections
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
 - [[_make_app()]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

@@ -1,27 +1,22 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "_make_filter"
 location: "L183"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_21
+  - graphify/EXTRACTED
+  - community/_make_filter
 ---
 
 # TestURLParsing
 
 ## Connections
-- [[.test_bare_hostname()]] - `method` [EXTRACTED]
-- [[.test_full_url()]] - `method` [EXTRACTED]
-- [[.test_host_port_format()]] - `method` [EXTRACTED]
-- [[ApprovalResult]] - `uses` [INFERRED]
+- [[dot-test_bare_hostname()]] - `method` [EXTRACTED]
+- [[dot-test_full_url()]] - `method` [EXTRACTED]
+- [[dot-test_host_port_format()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
 - [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - `rationale_for` [EXTRACTED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/_make_filter

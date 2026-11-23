@@ -1,21 +1,21 @@
 ---
 source_file: "browser-extension/options.js"
 type: "code"
-community: "Community 464"
+community: "background.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_464
+  - community/backgroundjs
 ---
 
 # options.js
 
 ## Connections
-- [[restore()]] - `references` [EXTRACTED]
-- [[save()]] - `references` [EXTRACTED]
+- [[restore()]] - `indirect_call` [INFERRED]
+- [[save()_1]] - `indirect_call` [INFERRED]
 - [[savedEl]] - `contains` [EXTRACTED]
 - [[tokenEl]] - `contains` [EXTRACTED]
 - [[urlEl]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

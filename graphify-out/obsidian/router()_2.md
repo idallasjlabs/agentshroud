@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_router_openai_translation.py"
+source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Community 7"
-location: "L25"
+community: "ingest_api/config.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # router()
 
 ## Connections
-- [[MultiAgentRouter]] - `calls` [EXTRACTED]
-- [[RouterConfig]] - `calls` [EXTRACTED]
-- [[test_router_openai_translation.py]] - `contains` [EXTRACTED]
+- [[Create a router instance for testing]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[fixture_64]] - `references` [EXTRACTED]
+- [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

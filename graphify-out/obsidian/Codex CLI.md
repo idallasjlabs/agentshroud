@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/coding-agent/SKILL.md"
 type: "document"
-community: "Community 336"
+community: "Coding Agent (bash-first)"
 location: "L99"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_336
+  - community/Coding_Agent_bash-first
 ---
 
 # Codex CLI
@@ -18,6 +18,6 @@ tags:
 - [[Flags]] - `contains` [EXTRACTED]
 - [[OpenClaw Dev Workflow (ODEV)]] - `references` [EXTRACTED]
 - [[Reviewing PRs]] - `contains` [EXTRACTED]
-- [[SKILL_213]] - `implements` [EXTRACTED]
+- [[coding-agentSKILL]] - `implements` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_336
+#graphify/document #graphify/EXTRACTED #community/Coding_Agent_bash-first

@@ -1,38 +1,36 @@
 ---
 type: community
-cohesion: 0.09
 members: 23
 ---
 
 # .pi/mcp.json
 
-**Cohesion:** 0.09 - loosely connected
 **Members:** 23 nodes
 
 ## Members
-- [[Approval Router — `gatewayingest_apiroutesapproval.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Core  Root — main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Dashboard API Router — `gatewaywebdashboard_endpoints.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Dashboard Router — `gatewayingest_apiroutesdashboard.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Environment Variables Used_1]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Forward Router — `gatewayingest_apiroutesforward.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Health Router — `gatewayingest_apirouteshealth.py` (no prefix)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Key Dependencies — Modules Wired at Init]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Known Issues  Notes]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Lifespan  Startup]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Management API Router — `gatewaywebapi.py` (prefix `api`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Middleware (applied to all requests, outermost first)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Overview_11]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[POST forward — 5-Step Security Pipeline]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Related_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Security Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Static Mounts]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[WebSocket Endpoints]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
-- [[main.py]] - document - docs/vault/02 - Modules/Gateway Core/main.py.md
+- [[dot-llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_4]] - code - .pi/mcp.json
+- [[dot-llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh_4]] - code - .pi/mcp.json
+- [[dot-llm_settingsmcp-serversdevonthinkmcp-devonthink.sh_4]] - code - .pi/mcp.json
+- [[dot-llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh_4]] - code - .pi/mcp.json
+- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh_4]] - code - .pi/mcp.json
+- [[dot-llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh_4]] - code - .pi/mcp.json
+- [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_4]] - code - .pi/mcp.json
+- [[dot-pimcp.json]] - code - .pi/mcp.json
+- [[opthomebrewbinnpx_4]] - code - .pi/mcp.json
+- [[PATH_49]] - code - .pi/mcp.json
+- [[atlassian-agentshroud_5]] - code - .pi/mcp.json
+- [[atlassian-idallasj_5]] - code - .pi/mcp.json
+- [[autoOpenFile_5]] - code - .pi/mcp.json
+- [[devonthink_5]] - code - .pi/mcp.json
+- [[github_5]] - code - .pi/mcp.json
+- [[github-agentshroud_5]] - code - .pi/mcp.json
+- [[github-idallasj_5]] - code - .pi/mcp.json
+- [[home-assistant_5]] - code - .pi/mcp.json
+- [[outputPath_5]] - code - .pi/mcp.json
+- [[safari_5]] - code - .pi/mcp.json
+- [[safari-mcp_4]] - code - .pi/mcp.json
+- [[xmind_5]] - code - .pi/mcp.json
+- [[xmind-generator-mcp_4]] - code - .pi/mcp.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -40,9 +38,3 @@ members: 23
 TABLE source_file, type FROM #community/pi/mcpjson
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
-
-## Top bridge nodes
-- [[main.py]] - degree 13, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: "main.rs"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # main.rs
@@ -14,20 +14,20 @@ tags:
 ## Connections
 - [[AddResource]] - `contains` [EXTRACTED]
 - [[ApprovalAction]] - `contains` [EXTRACTED]
-- [[Cli]] - `contains` [EXTRACTED]
+- [[Cli_1]] - `contains` [EXTRACTED]
 - [[CollabMode]] - `contains` [EXTRACTED]
-- [[Commands_1]] - `contains` [EXTRACTED]
+- [[Commands_3]] - `contains` [EXTRACTED]
 - [[FakeTransport]] - `contains` [EXTRACTED]
-- [[GatewayClient]] - `contains` [EXTRACTED]
+- [[GatewayClient_1]] - `contains` [EXTRACTED]
 - [[GetResource]] - `contains` [EXTRACTED]
 - [[HttpResponse]] - `contains` [EXTRACTED]
 - [[HttpTransport]] - `contains` [EXTRACTED]
-- [[Method]] - `contains` [EXTRACTED]
-- [[OutputFormat_1]] - `contains` [EXTRACTED]
+- [[Method_1]] - `contains` [EXTRACTED]
+- [[OutputFormat]] - `contains` [EXTRACTED]
 - [[RefCell]] - `imports_from` [EXTRACTED]
 - [[ReqwestTransport]] - `contains` [EXTRACTED]
 - [[Result]] - `imports_from` [EXTRACTED]
-- [[SclClient]] - `contains` [EXTRACTED]
+- [[SclClient_1]] - `contains` [EXTRACTED]
 - [[ServiceTarget]] - `contains` [EXTRACTED]
 - [[SetTarget]] - `contains` [EXTRACTED]
 - [[approvals_list_empty()]] - `contains` [EXTRACTED]
@@ -61,7 +61,7 @@ tags:
 - [[format_status()]] - `contains` [EXTRACTED]
 - [[format_status_handles_missing_fields()]] - `contains` [EXTRACTED]
 - [[json_str()]] - `contains` [EXTRACTED]
-- [[main()_1]] - `contains` [EXTRACTED]
+- [[main()_39]] - `contains` [EXTRACTED]
 - [[map_http_error()]] - `contains` [EXTRACTED]
 - [[map_http_error_401_message()]] - `contains` [EXTRACTED]
 - [[map_http_error_generic_status()]] - `contains` [EXTRACTED]
@@ -87,4 +87,4 @@ tags:
 - [[status_hits_correct_path()]] - `contains` [EXTRACTED]
 - [[status_parses_and_formats()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

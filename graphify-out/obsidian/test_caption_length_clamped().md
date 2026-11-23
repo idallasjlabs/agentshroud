@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Community 197"
+community: "test_collaborator_greeter.py"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/test_collaborator_greeterpy
 ---
 
 # test_caption_length_clamped()
@@ -15,4 +15,4 @@ tags:
 - [[CollaboratorGreeter]] - `calls` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_197
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

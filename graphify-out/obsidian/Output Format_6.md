@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
+source_file: ".cursor/agents/sec-defense.md"
 type: "document"
-community: "Community 266"
-location: "L396"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L131"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_266
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)_6]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_266
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

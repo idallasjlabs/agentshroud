@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "multi_host_test.py"
+community: "CredentialInjectorConfig"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/CredentialInjectorConfig
 ---
 
 # .test_anthropic_default_strips_x_api_key()
 
 ## Connections
-- [[CredentialInjector]] - `calls` [EXTRACTED]
+- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
 - [[Default Anthropic mapping must strip x-api-key (regression guard).]] - `rationale_for` [EXTRACTED]
 - [[TestCredentialInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/CredentialInjectorConfig

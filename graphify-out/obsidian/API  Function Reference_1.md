@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 337"
+community: ".agents/skills/i-tw/SKILL.md"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # API / Function Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[If not → escalate to field team via ops-alerts_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

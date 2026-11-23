@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # email_send_owner()
 
 ## Connections
-- [[AuthRequired_3]] - `references` [EXTRACTED]
-- [[EmailSendRequest_1]] - `calls` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
+- [[EmailSendRequest]] - `uses` [INFERRED]
 - [[OwnerEmailRequest]] - `references` [EXTRACTED]
-- [[Request_5]] - `references` [EXTRACTED]
-- [[Send an email to the owner without exposing the recipient address in the request]] - `rationale_for` [EXTRACTED]
+- [[Request_3]] - `references` [EXTRACTED]
+- [[Send an email to the owner without exposing the recipient address in the…]] - `rationale_for` [EXTRACTED]
 - [[email_send()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
+- [[post_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-aws/SKILL.md"
 type: "concept"
-community: "Community 2180"
+community: "Claude Code skill catalog (59 skills)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_2180
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # FY26 Cost Reduction Plan (40% target)
@@ -15,4 +15,4 @@ tags:
 - [[CDAS — Central Data Acquisition Systems]] - `references` [EXTRACTED]
 - [[FODL — Fluence Operational Data Lakehouse]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_2180
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

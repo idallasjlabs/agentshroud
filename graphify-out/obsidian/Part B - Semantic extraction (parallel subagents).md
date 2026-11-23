@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/graphify/references/extraction.md"
 type: "document"
-community: "Community 2092"
+community: "graphify Step 3 - Parts A, B and C"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2092
+  - community/graphify_Step_3_-_Parts_A_B_and_C
 ---
 
 # Part B - Semantic extraction (parallel subagents)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify Step 3 - Parts A, B and C]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2092
+#graphify/document #graphify/EXTRACTED #community/graphify_Step_3_-_Parts_A_B_and_C

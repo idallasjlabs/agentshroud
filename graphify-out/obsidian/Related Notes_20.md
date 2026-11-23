@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 1360"
-location: "L47"
+community: "Quick Reference — AgentShroud"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1360
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Related Notes
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1360
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 585"
+community: "AgentShroud Branding Assets Index"
 location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/AgentShroud_Branding_Assets_Index
 ---
 
 # 📊 Asset Summary
@@ -16,6 +16,6 @@ tags:
 - [[Documentation Status]] - `contains` [EXTRACTED]
 - [[Icon Sets]] - `contains` [EXTRACTED]
 - [[Logo Formats Available]] - `contains` [EXTRACTED]
-- [[Social Media]] - `contains` [EXTRACTED]
+- [[Social Media_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_585
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Branding_Assets_Index

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L385"
+community: "ingest_api/config.py"
+location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/ingest_api/configpy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_22]] - `references` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[Any_35]] - `references` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[Get aggregate statistics Returns Dictionary with total entries, by source, etc.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

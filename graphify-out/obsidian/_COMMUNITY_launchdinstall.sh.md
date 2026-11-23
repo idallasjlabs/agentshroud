@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # launchd/install.sh
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Alert  Issue Detected]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Bot container not healthy or crash-looping]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Bot not responding on Telegram_1]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Context limit exceeded, bot resets mid-conversation]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Kill switch gateway kill_switch_enabled=true (freezeshutdowndisconnect)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
-- [[What is the symptom]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[act()]] - code - scripts/launchd/install.sh
+- [[install.sh script]] - code - scripts/launchd/install.sh
+- [[install_agent()]] - code - scripts/launchd/install.sh
+- [[install_dev_crontab()]] - code - scripts/launchd/install.sh
+- [[launchdinstall.sh]] - code - scripts/launchd/install.sh
+- [[plist_label()]] - code - scripts/launchd/install.sh
+- [[say()]] - code - scripts/launchd/install.sh
 
 ## Live Query (requires Dataview plugin)
 

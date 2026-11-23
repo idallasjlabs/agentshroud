@@ -1,28 +1,26 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "Community 918"
+community: "patch"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_918
+  - community/patch
 ---
 
 # TestGetEngine
 
 ## Connections
-- [[.test_auto_detect_priority()]] - `method` [EXTRACTED]
-- [[.test_explicit_apple()]] - `method` [EXTRACTED]
-- [[.test_explicit_docker()]] - `method` [EXTRACTED]
-- [[.test_explicit_podman()]] - `method` [EXTRACTED]
-- [[.test_invalid_runtime()]] - `method` [EXTRACTED]
-- [[.test_no_runtime_available()]] - `method` [EXTRACTED]
+- [[dot-test_auto_detect_priority()]] - `method` [EXTRACTED]
+- [[dot-test_explicit_apple()]] - `method` [EXTRACTED]
+- [[dot-test_explicit_docker()]] - `method` [EXTRACTED]
+- [[dot-test_explicit_podman()]] - `method` [EXTRACTED]
+- [[dot-test_invalid_runtime()]] - `method` [EXTRACTED]
+- [[dot-test_no_runtime_available()]] - `method` [EXTRACTED]
 - [[AppleContainerEngine]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
 - [[DockerEngine]] - `uses` [INFERRED]
 - [[PodmanEngine]] - `uses` [INFERRED]
-- [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_918
+#graphify/code #graphify/EXTRACTED #community/patch

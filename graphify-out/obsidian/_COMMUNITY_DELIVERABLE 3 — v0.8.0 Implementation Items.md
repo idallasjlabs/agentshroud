@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # DELIVERABLE 3 — v0.8.0 Implementation Items
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Translate an Ollama OpenAI-compat response to Gemini candidates format.      The]] - rationale - gateway/proxy/gemini_openai_translator.py
-- [[openai_to_gemini_response (existing failover direction) and     gemini_to_openai]] - rationale - gateway/tests/test_gemini_openai_translator.py
-- [[openai_to_gemini_response()]] - code - gateway/proxy/gemini_openai_translator.py
-- [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_empty_choices_yields_empty_text()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_length_maps_to_max_tokens()]] - code - gateway/tests/test_gemini_openai_translator.py
-- [[test_openai_response_to_gemini_candidates()]] - code - gateway/tests/test_gemini_openai_translator.py
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 1 Streaming Response Outbound Filtering — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 2 Wire MemoryIntegrityLifecycle at Startup — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 3 LLM Proxy User Identity Propagation — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 4 Adversarial Prompt Injection Test Suite — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 5 Audit Chain Guaranteed Persistence for BLOCK Events — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Item 6 Update ADR-002 to Reflect Enforce-by-Default — DONE (v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,13 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_BotConfig]]
-- 2 edges to [[_COMMUNITY_Post-v1.0.0 — Deferred]]
-- 1 edge to [[_COMMUNITY_TestFabricatedSecurityNotice]]
+- 1 edge to [[_COMMUNITY_AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]]
 
 ## Top bridge nodes
-- [[openai_to_gemini_response()]] - degree 8, connects to 3 communities
-- [[test_gemini_to_openai_roundtrip_with_openai_to_gemini_response()]] - degree 4, connects to 2 communities
-- [[test_openai_response_empty_choices_yields_empty_text()]] - degree 2, connects to 1 community
-- [[test_openai_response_length_maps_to_max_tokens()]] - degree 2, connects to 1 community
-- [[test_openai_response_to_gemini_candidates()]] - degree 2, connects to 1 community
+- [[DELIVERABLE 3 — v0.8.0 Implementation Items]] - degree 7, connects to 1 community

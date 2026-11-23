@@ -1,26 +1,25 @@
 ---
 type: community
-cohesion: 0.18
-members: 11
+members: 12
 ---
 
 # init_skill.py
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 11 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[0.1 Code Inventory ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[0.2 Current State ✅_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.1 The Problem_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[1.2 Fix Shipped ✅]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[AgentShroud Recovery Plan v0.4.0_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[EXECUTIVE SUMMARY_14]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 0 STABILIZATION ✅ COMPLETE_1]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 1 SECURITY FIX ✅ COMPLETE (v0.4.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[PHASE 2 NEXT SESSION (v0.5.0)]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RECOVERY_PLAN_PARTIAL]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
-- [[RELEASE HISTORY]] - document - docs/planning/recovery/RECOVERY_PLAN_PARTIAL.md
+- [[TODO Add actual script logic here]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Convert hyphenated skill name to Title Case for display.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Initialize a new skill directory with template SKILL.md. Args skill_name Name…]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Normalize a skill name to lowercase hyphen-case.]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[Skill Initializer - Creates a new skill from template Usage init_skill.py…]] - rationale - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[create_resource_dirs()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[init_skill.py]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[main()_3]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[normalize_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[parse_resources()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
+- [[title_case_skill_name()]] - code - skills/openclaw/skill-creator/scripts/init_skill.py
 
 ## Live Query (requires Dataview plugin)
 

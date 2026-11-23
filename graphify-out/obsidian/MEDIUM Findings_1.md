@@ -1,20 +1,20 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r3.md"
+source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
 type: "document"
-community: "Community 357"
-location: "L89"
+community: "Blue Team Security Assessment — AgentShroud v0.8.0 Round 2"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_357
+  - community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2
 ---
 
 # MEDIUM Findings
 
 ## Connections
-- [[R3-M1 Missing `aiohttp` Dependency in requirements.txt (Reopened from R2-M1)]] - `contains` [EXTRACTED]
-- [[R3-M2 Management WebSocket Endpoints Still Use Master Auth Token (Reopened from R2-M2)]] - `contains` [EXTRACTED]
-- [[R3-M3 Stale Version String in Root Dashboard HTML]] - `contains` [EXTRACTED]
-- [[Round 3 New Findings]] - `contains` [EXTRACTED]
+- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[R2-M1 Missing `aiohttp` in `requirements.txt`]] - `contains` [EXTRACTED]
+- [[R2-M2 WebSocket Endpoints in `webapi.py` Use Full Auth Token (Not Scoped)]] - `contains` [EXTRACTED]
+- [[R2-M3 Trivy Downloads Without Checksum Verification (Both Dockerfiles)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_357
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Assessment__AgentShroud_v080_Round_2

@@ -1,18 +1,17 @@
 ---
 source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Community 799"
+community: "SSH Config"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/SSH_Config
 ---
 
 # Key Configuration
 
 ## Connections
-- [[7. Deployment]] - `contains` [EXTRACTED]
 - [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_799
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

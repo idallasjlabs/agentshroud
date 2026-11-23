@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.27
 members: 10
 ---
 
 # Required Software
 
-**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[dot-__init__()_200]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[dot-send_message()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[dot-send_status_update()]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[Relay Telegram messages through the gateway control plane.      This enables con]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Result of a Telegram send operation via gateway.]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a Telegram message via the gateway relay.          Args             chat_i]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[Send a formatted status update via Telegram.          Formats the message with a]] - rationale - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramGatewayRelay]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[TelegramSendResult]] - code - gateway/proxy/telegram_gateway_relay.py
-- [[telegram_gateway_relay.py]] - code - gateway/proxy/telegram_gateway_relay.py
+- [[1. Docker Desktop]] - document - docs/reference/PREREQUISITES.md
+- [[2. Python 3.11+]] - document - docs/reference/PREREQUISITES.md
+- [[3. Python Packages]] - document - docs/reference/PREREQUISITES.md
+- [[4. Node.js 22+ (for OpenClaw)]] - document - docs/reference/PREREQUISITES.md
+- [[5. Git]] - document - docs/reference/PREREQUISITES.md
+- [[6. Tailscale (Optional but Recommended)]] - document - docs/reference/PREREQUISITES.md
+- [[Hardware_1]] - document - docs/reference/PREREQUISITES.md
+- [[Operating System]] - document - docs/reference/PREREQUISITES.md
+- [[Required Software]] - document - docs/reference/PREREQUISITES.md
+- [[💻 System Requirements]] - document - docs/reference/PREREQUISITES.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
+- 1 edge to [[_COMMUNITY_AgentShroud Prerequisites]]
 
 ## Top bridge nodes
-- [[telegram_gateway_relay.py]] - degree 3, connects to 1 community
+- [[💻 System Requirements]] - degree 4, connects to 1 community

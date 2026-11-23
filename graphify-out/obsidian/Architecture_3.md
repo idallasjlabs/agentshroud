@@ -1,17 +1,18 @@
 ---
-source_file: "docs/architecture/per-agent-isolation.md"
+source_file: "README.md"
 type: "document"
-community: "Community 749"
-location: "L16"
+community: "AgentShroud™ README"
+location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_749
+  - community/AgentShroud_README
 ---
 
 # Architecture
 
 ## Connections
-- [[Per-Agent Container Isolation Architecture]] - `contains` [EXTRACTED]
+- [[75 Security Modules]] - `shares_data_with` [EXTRACTED]
+- [[AgentShroud™ README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_749
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_README

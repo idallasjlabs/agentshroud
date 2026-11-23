@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "Community 375"
+community: "Technical Writer (TW)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_375
+  - community/Technical_Writer_TW
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_11]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_375
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Any"
+community: "OutputCanary"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/OutputCanary
 ---
 
 # .get_status()
 
 ## Connections
-- [[Any_44]] - `references` [EXTRACTED]
+- [[Any_32]] - `references` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
-- [[Return canary status for dashboard.          Args             session_id Sessi]] - `rationale_for` [EXTRACTED]
+- [[Return canary status for dashboard. Args session_id Session identifier…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

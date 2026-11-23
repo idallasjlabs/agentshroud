@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_executor.py"
 type: "rationale"
-community: "Community 1352"
+community: "test_hermes_forwarder_drops_non_http"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1352
+  - community/test_hermes_forwarder_drops_non_http
 ---
 
 # lifespan startup must install ThreadPoolExecutor(max_workers=64).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_lifespan_installs_64_worker_executor()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1352
+#graphify/rationale #graphify/EXTRACTED #community/test_hermes_forwarder_drops_non_http

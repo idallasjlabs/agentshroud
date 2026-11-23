@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L137"
+community: "EgressFilter"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilter
 ---
 
 # .grant_timed_approval()
 
 ## Connections
 - [[EgressFilter]] - `method` [EXTRACTED]
-- [[Record a time-limited interactive approval for a domain.          Called by the]] - `rationale_for` [EXTRACTED]
+- [[Record a time-limited interactive approval for a domain. Called by the Telegram…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

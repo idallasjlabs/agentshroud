@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.67
 members: 3
 ---
 
 # test_sunday_upgrade_session_guard.sh
 
-**Cohesion:** 0.67 - moderately connected
 **Members:** 3 nodes
 
 ## Members
-- [[gifgrep]] - document - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrep CLI]] - concept - skills/openclaw/gifgrep/SKILL.md
-- [[gifgrepSKILL]] - document - skills/openclaw/gifgrep/SKILL.md
+- [[extract_fn()]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+- [[test_sunday_upgrade_session_guard.sh]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+- [[test_sunday_upgrade_session_guard.sh script]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
 
 ## Live Query (requires Dataview plugin)
 

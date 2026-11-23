@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 488"
+community: "test_cli_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/test_cli_coveragepy
 ---
 
 # test_cli_coverage.py
@@ -22,6 +22,7 @@ tags:
 - [[TestSCLClientRequest]] - `contains` [EXTRACTED]
 - [[TestTailCommand]] - `contains` [EXTRACTED]
 - [[TestTailWS]] - `contains` [EXTRACTED]
+- [[Unit tests for the SOC CLI gatewayclimain.py + gatewaycliclient.py. All…]] - `rationale_for` [EXTRACTED]
 - [[_FakeConnect]] - `contains` [EXTRACTED]
 - [[_FakeHTTPResponse]] - `contains` [EXTRACTED]
 - [[_FakeWS]] - `contains` [EXTRACTED]
@@ -36,9 +37,11 @@ tags:
 - [[_stub_client()]] - `contains` [EXTRACTED]
 - [[_tail_ws()]] - `imports` [EXTRACTED]
 - [[cli()]] - `imports` [EXTRACTED]
+- [[climain.py]] - `imports_from` [EXTRACTED]
+- [[client.py]] - `imports_from` [EXTRACTED]
 - [[client_from_env()]] - `imports` [EXTRACTED]
 - [[test_asb_edge_delegates_to_cli_in_gateway_without_secret_in_argv()]] - `contains` [EXTRACTED]
 - [[test_convenience_methods_hit_expected_endpoints()]] - `contains` [EXTRACTED]
 - [[test_main_entrypoint_runs_cli_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_488
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: ".github/agents/i-sec.agent.md"
 type: "document"
-community: "Community 712"
-location: "L43"
+community: "Skill: Security Review (SEC)"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Skill_Security_Review_SEC
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

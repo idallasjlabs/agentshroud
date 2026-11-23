@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L19"
+community: "TestScanParameterAllowlists"
+location: "L663"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestScanParameterAllowlists
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
-- [[TestWSTokens]] - `method` [EXTRACTED]
+- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestScanParameterAllowlists

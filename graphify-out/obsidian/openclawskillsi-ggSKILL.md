@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-gg/SKILL.md"
 type: "document"
-community: "LVGL Kawaii Face Component CMakeLists"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LVGL_Kawaii_Face_Component_CMakeLists
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # openclaw/skills/i-gg/SKILL.md
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LVGL_Kawaii_Face_Component_CMakeLists
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

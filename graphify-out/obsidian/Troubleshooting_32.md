@@ -1,22 +1,22 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
 type: "document"
-community: "Community 277"
-location: "L281"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L166"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_7]] - `contains` [EXTRACTED]
-- [[Browser timeout_7]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_7]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_7]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_7]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_10]] - `contains` [EXTRACTED]
+- [[AWS Token expired (SSO)_4]] - `contains` [EXTRACTED]
+- [[AWS Unable to locate credentials_4]] - `contains` [EXTRACTED]
+- [[Atlassian OAuth flow failed_4]] - `contains` [EXTRACTED]
+- [[GitHub Bad credentials_4]] - `contains` [EXTRACTED]
+- [[GitHub Docker image not found_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_277
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

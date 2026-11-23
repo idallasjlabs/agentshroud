@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_data_exfil_volume_guard.py"
 type: "code"
-community: "Community 206"
-location: "L287"
+community: "DataExfilVolumeGuard"
+location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/DataExfilVolumeGuard
 ---
 
 # test_pipeline_no_guard_is_unchanged()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[SecurityPipeline]] - `calls` [EXTRACTED]
-- [[config-off equivalence absent guard leaves inbound behaviour identical.]] - `rationale_for` [EXTRACTED]
-- [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[asyncio_44]] - `references` [EXTRACTED]
+- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_206
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

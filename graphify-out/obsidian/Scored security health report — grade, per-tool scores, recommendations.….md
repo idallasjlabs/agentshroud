@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L1616"
+community: "ingest_api/main.py"
+location: "L1621"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/mainpy
 ---
 
 # Scored security health report — grade, per-tool scores, recommendations.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[full_security_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Community 1942"
+community: "Claude Code skill catalog (59 skills)"
 location: "Section 1"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1942
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Claude Code (PRIMARY developer configuration)
@@ -17,4 +17,4 @@ tags:
 - [[Warn-first hook strategy (PreToolUsePostToolUse)]] - `references` [EXTRACTED]
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1942
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

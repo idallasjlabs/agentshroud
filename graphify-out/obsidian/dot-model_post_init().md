@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "colima-health-check.sh"
-location: "L101"
+community: "ingest_api/config.py"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/ingest_api/configpy
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[TeamsConfig_1]] - `method` [EXTRACTED]
-- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
+- [[AuditExportConfig_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # .check_read()
@@ -16,4 +16,4 @@ tags:
 - [[FileSandbox]] - `method` [EXTRACTED]
 - [[FileVerdict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

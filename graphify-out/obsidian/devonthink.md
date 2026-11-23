@@ -1,18 +1,20 @@
 ---
-source_file: ".cursor/mcp.json"
+source_file: "opencode.json"
 type: "code"
-community: "Community 397"
-location: "L1"
+community: "mcp"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_397
+  - community/mcp
 ---
 
 # devonthink
 
 ## Connections
-- [[.llm_settingsmcp-serversdevonthinkmcp-devonthink.sh]] - `references` [EXTRACTED]
-- [[mcp.json]] - `contains` [EXTRACTED]
+- [[command_2]] - `contains` [EXTRACTED]
+- [[enabled_3]] - `contains` [EXTRACTED]
+- [[mcp]] - `contains` [EXTRACTED]
+- [[type_20]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_397
+#graphify/code #graphify/EXTRACTED #community/mcp

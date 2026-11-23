@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-icloud/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Community 1211"
+community: "Apollo — Audio Systems Producer"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1211
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1211
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

@@ -1,29 +1,18 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
-type: "code"
-community: "Community 151"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+type: "document"
+community: "sanitizer.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/sanitizerpy
 ---
 
-# sanitizer.py
+# sanitizer.py.md
 
 ## Connections
-- [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `imports` [EXTRACTED]
-- [[PIISanitizer]] - `contains` [EXTRACTED]
-- [[README_127]] - `references` [EXTRACTED]
-- [[RedactionDetail]] - `imports` [EXTRACTED]
-- [[RedactionResult]] - `imports` [EXTRACTED]
-- [[SECURITY-IMPLEMENTATION-VERIFICATION]] - `references` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[verify.sh]] - `references` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

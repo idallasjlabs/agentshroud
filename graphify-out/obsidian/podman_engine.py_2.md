@@ -1,24 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
-type: "document"
-community: "Community 613"
-location: "L10"
+source_file: "gateway/runtime/podman_engine.py"
+type: "code"
+community: "AppleContainerEngine"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/AppleContainerEngine
 ---
 
 # podman_engine.py
 
 ## Connections
-- [[Configuration  Environment Variables_18]] - `contains` [EXTRACTED]
-- [[Function Details_24]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_27]] - `contains` [EXTRACTED]
-- [[Key Differences from DockerEngine]] - `contains` [EXTRACTED]
-- [[Purpose_145]] - `contains` [EXTRACTED]
-- [[Related_31]] - `contains` [EXTRACTED]
-- [[Responsibilities_29]] - `contains` [EXTRACTED]
-- [[podman_engine.py_1]] - `contains` [EXTRACTED]
+- [[ContainerEngine]] - `imports` [EXTRACTED]
+- [[ContainerInfo]] - `imports` [EXTRACTED]
+- [[PodmanEngine]] - `contains` [EXTRACTED]
+- [[engine.py_2]] - `imports_from` [EXTRACTED]
+- [[runtime__init__.py]] - `re_exports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

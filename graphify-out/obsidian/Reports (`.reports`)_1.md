@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Community 242"
-location: "L193"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L195"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Reports (`./reports/`)
 
 ## Connections
-- [[Deliverables_1]] - `contains` [EXTRACTED]
+- [[Deliverables_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_242
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

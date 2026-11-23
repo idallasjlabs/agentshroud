@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 107"
+community: "Step-by-Step Deployment"
 location: "L634"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_107
+  - community/Step-by-Step_Deployment
 ---
 
 # Regular Maintenance Tasks
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Maintenance Procedures]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_107
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

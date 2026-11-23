@@ -1,22 +1,24 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 30"
+community: "EnhancedApprovalQueue"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/EnhancedApprovalQueue
 ---
 
 # _real_queue()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig.      The defau]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `calls` [EXTRACTED]
+- [[ApprovalStore]] - `calls` [EXTRACTED]
+- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig. The default…]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
+- [[ToolRiskConfig]] - `calls` [EXTRACTED]
+- [[_run()_6]] - `calls` [EXTRACTED]
+- [[_run()_7]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

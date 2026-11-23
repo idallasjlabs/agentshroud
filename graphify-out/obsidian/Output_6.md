@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-apollo.agent.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 1355"
-location: "L137"
+community: "Model usage"
+location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1355
+  - community/Model_usage
 ---
 
 # Output
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1355
+#graphify/document #graphify/EXTRACTED #community/Model_usage

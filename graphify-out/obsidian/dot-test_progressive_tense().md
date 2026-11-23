@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "TestFabricatedSecurityNotice"
 location: "L536"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/TestFabricatedSecurityNotice
 ---
 
 # .test_progressive_tense()
@@ -16,4 +16,4 @@ tags:
 - [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 - [[blocking' continuous form.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/TestFabricatedSecurityNotice

@@ -1,21 +1,22 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 712"
-location: "L179"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # → {"site": "site1", "test_mode": True, "output_prefix": "_test/site1/"}
 
 ## Connections
 - [[Changelog Entry]] - `contains` [EXTRACTED]
-- [[Dependencies_3]] - `contains` [EXTRACTED]
-- [[Validation Checklist_2]] - `contains` [EXTRACTED]
+- [[Dependencies_2]] - `contains` [EXTRACTED]
+- [[Validation Checklist]] - `contains` [EXTRACTED]
 - [[Writing Style Rules]] - `contains` [EXTRACTED]
-- [[i-tw]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

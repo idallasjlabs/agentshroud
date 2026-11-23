@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md (5)"
+community: "TestReplayBufferOffsetParsing"
 location: "L4479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_5
+  - community/TestReplayBufferOffsetParsing
 ---
 
 # ._fake_urlopen_factory()
@@ -16,5 +16,6 @@ tags:
 - [[dot-test_non_long_poll_timeout_is_15s()]] - `calls` [EXTRACTED]
 - [[Return a urlopen mock that records the timeout kwarg and succeeds.]] - `rationale_for` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
+- [[_fake()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5
+#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

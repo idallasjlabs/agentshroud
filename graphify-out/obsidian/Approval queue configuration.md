@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "Community 7"
+community: "EnhancedApprovalQueue"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/EnhancedApprovalQueue
 ---
 
 # Approval queue configuration
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue

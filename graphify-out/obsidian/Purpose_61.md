@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-production/README.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 1218"
-location: "L6"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1218
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1218
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

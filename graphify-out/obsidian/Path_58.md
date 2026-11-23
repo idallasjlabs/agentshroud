@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/tests/test_network_validator_gate.py"
+source_file: ""
 type: "code"
-community: "WebProxy"
-location: "L33"
+community: "AlertDispatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/AlertDispatcher
 ---
 
 # Path
 
 ## Connections
-- [[NetworkValidator]] - `uses` [INFERRED]
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

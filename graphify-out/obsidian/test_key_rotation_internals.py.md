@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 261"
+community: "KeyRotationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/KeyRotationManager
 ---
 
 # test_key_rotation_internals.py
 
 ## Connections
+- [[Behavior tests for KeyRotationManager internals and guard branches. The…]] - `rationale_for` [EXTRACTED]
 - [[CredentialInfo]] - `imports` [EXTRACTED]
 - [[CredentialValidator]] - `imports` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
+- [[KeyRotationConfig]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
 - [[RotationStatus]] - `imports` [EXTRACTED]
 - [[TestCheckAndRotateDisabled]] - `contains` [EXTRACTED]
@@ -25,9 +26,8 @@ tags:
 - [[TestStatusHelpers]] - `contains` [EXTRACTED]
 - [[TestStoreIn1Password]] - `contains` [EXTRACTED]
 - [[_old_cred()]] - `contains` [EXTRACTED]
-- [[key_rotation.py (KeyRotationManager)]] - `implements` [EXTRACTED]
-- [[key_rotation_config.py (KeyRotationConfig)]] - `references` [EXTRACTED]
-- [[manager()_2]] - `contains` [EXTRACTED]
-- [[test_key_rotation.py]] - `references` [EXTRACTED]
+- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[key_rotation_config.py]] - `imports_from` [EXTRACTED]
+- [[manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

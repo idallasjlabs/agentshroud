@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-ps.md"
+source_file: ".agents/agents/i-ps.md"
 type: "document"
-community: "Community 929"
+community: "Pre-Deployment Checklist"
 location: "L152"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_929
+  - community/Pre-Deployment_Checklist
 ---
 
 # Post-Deployment Verification
@@ -17,4 +17,4 @@ tags:
 - [[Sign-Off_2]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_929
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

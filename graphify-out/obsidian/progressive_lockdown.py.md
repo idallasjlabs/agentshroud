@@ -1,24 +1,30 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Community 75"
+community: "LockdownLevel"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/LockdownLevel
 ---
 
 # progressive_lockdown.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[FR2 Use Control]] - `references` [EXTRACTED]
+- [[Enum_39]] - `imports_from` [EXTRACTED]
 - [[LockdownAction]] - `contains` [EXTRACTED]
-- [[LockdownLevel_1]] - `contains` [EXTRACTED]
+- [[LockdownLevel]] - `contains` [EXTRACTED]
+- [[Progressive Lockdown — per-principal cumulative risk scoring and escalation.…]] - `rationale_for` [EXTRACTED]
 - [[ProgressiveLockdown]] - `contains` [EXTRACTED]
 - [[UserLockdownState]] - `contains` [EXTRACTED]
 - [[_level_for_count()]] - `contains` [EXTRACTED]
 - [[_max_level()]] - `contains` [EXTRACTED]
+- [[call_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[test_edge_e2e_sdk.py]] - `imports_from` [EXTRACTED]
+- [[test_edge_pipeline.py]] - `imports_from` [EXTRACTED]
+- [[test_progressive_lockdown.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_contributors.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_edge.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/LockdownLevel

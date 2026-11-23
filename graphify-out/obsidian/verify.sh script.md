@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/verify.sh"
 type: "code"
-community: "Community 151"
+community: "verify.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/verifysh
 ---
 
 # verify.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/verifysh

@@ -1,28 +1,40 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+members: 27
 ---
 
 # iCloud Services
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[10. Known Gaps  Open Items]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[11. Quick Reference — Switching to Local Mode]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[2. Source Files]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[3. How Provider Detection Works (`llm_proxy.py95-153`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[5. Model Switching CLI (`scriptsswitch_model.sh`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[6. Three Local Backends]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[8. Telegram Integration]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[9. Bot Startup Flow (local mode)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[LOCAL_LLM_REVIEW]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Local LLM Support — Implementation Review]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Multi-model mode (`local-multi`)]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
-- [[Quick Reference — Switching to Turbo Fieldflare]] - document - docs/planning/v1.2/LOCAL_LLM_REVIEW.md
+- [[401 Unauthorized]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[CalendarContacts not found]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Connection timeout_1]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Add Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Calendar Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Configuration_11]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Contact Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Create Note]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Delete Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Events]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Messages]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[List Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Mail Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Notes Operations]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Contacts]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Mail]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Search Notes]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Security_16]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Send Email]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Setup_2]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Troubleshooting_19]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Update Contact]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[Update Event]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[hermesskillsi-icloudSKILL]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
+- [[iCloud Services]] - document - docker/config/hermes/skills/i-icloud/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -32,8 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AuditExporter (2)_1]]
-- 1 edge to [[_COMMUNITY_Skill Security Review (SEC)]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Local LLM Support — Implementation Review]] - degree 12, connects to 2 communities
+- [[iCloud Services]] - degree 10, connects to 1 community

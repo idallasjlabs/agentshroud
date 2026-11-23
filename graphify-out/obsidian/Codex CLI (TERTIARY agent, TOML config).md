@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md"
 type: "concept"
-community: "Community 2188"
+community: "Claude Code skill catalog (59 skills)"
 location: "Section 3"
 tags:
   - graphify/concept
   - graphify/INFERRED
-  - community/Community_2188
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Codex CLI (TERTIARY agent, TOML config)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Codex CLI role contract (test augmentation  validation)]] - `implements` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_2188
+#graphify/concept #graphify/INFERRED #community/Claude_Code_skill_catalog_59_skills

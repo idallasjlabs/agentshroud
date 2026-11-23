@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # ws_ctrl_cb_t (server control frame callback type)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[face_animation_pause() — freezes canvas redraw to protect WiFi stack]] - code - firmware/voice-terminal/components/lvgl_kawaii_face/lvgl_kawaii_face.c
+- [[ws_ctrl_cb_t (server control frame callback type)]] - code - firmware/voice-terminal/main/ws_client.h
 
 ## Live Query (requires Dataview plugin)
 

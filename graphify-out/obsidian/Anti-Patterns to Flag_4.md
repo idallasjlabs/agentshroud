@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: "docker/config/openclaw/skills/i-sec/SKILL.md"
 type: "document"
-community: "Community 891"
-location: "L224"
+community: "Skill: Security Review (SEC)"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Skill_Security_Review_SEC
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

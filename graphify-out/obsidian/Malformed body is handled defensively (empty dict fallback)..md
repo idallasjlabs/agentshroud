@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "Community 512"
+community: "test_channel_ownership.py"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_512
+  - community/test_channel_ownershippy
 ---
 
 # Malformed body is handled defensively (empty dict fallback).
 
 ## Connections
-- [[.test_non_json_body_returns_200()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_non_json_body_returns_200()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_512
+#graphify/rationale #graphify/EXTRACTED #community/test_channel_ownershippy

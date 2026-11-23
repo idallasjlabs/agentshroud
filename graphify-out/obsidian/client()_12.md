@@ -1,17 +1,25 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "Community 260"
-location: "L121"
+community: "ingest_api/config.py"
+location: "L92"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_260
+  - graphify/INFERRED
+  - community/ingest_api/configpy
 ---
 
 # client()
 
 ## Connections
-- [[test_op_proxy.py]] - `contains` [EXTRACTED]
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
+- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_67]] - `references` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_260
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

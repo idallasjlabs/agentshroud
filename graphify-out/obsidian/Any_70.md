@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/trivy_report.py"
+source_file: ""
 type: "code"
-community: "Community 131"
-location: "L27"
+community: ".get_or_create_session"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_131
+  - community/get_or_create_session
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_2]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `references` [EXTRACTED]
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_131
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

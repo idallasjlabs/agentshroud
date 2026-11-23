@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
 type: "document"
-community: "Community 2047"
-location: "L1607"
+community: "agentshroud-bot"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2047
+  - community/agentshroud-bot
 ---
 
 # Network
 
 ## Connections
-- [[Performance Considerations]] - `contains` [EXTRACTED]
+- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2047
+#graphify/document #graphify/EXTRACTED #community/agentshroud-bot

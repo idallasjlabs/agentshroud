@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "EgressFilterConfig"
-location: "L54"
+community: "ConsentFramework"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/ConsentFramework
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
-- [[Path_67]] - `references` [EXTRACTED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

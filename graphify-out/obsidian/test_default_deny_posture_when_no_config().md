@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "Community 35"
+community: "load_config"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/load_config
 ---
 
 # test_default_deny_posture_when_no_config()
 
 ## Connections
 - [[An empty config denies everything — never a blanket allow.]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `calls` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/load_config

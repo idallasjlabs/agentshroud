@@ -1,34 +1,32 @@
 ---
 type: community
-cohesion: 0.11
 members: 19
 ---
 
 # Crash Recovery
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[dot-agentsskillsi-pmSKILL]] - document - .agents/skills/i-pm/SKILL.md
-- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
-- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
-- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
-- [[Definition of Done (from AGENTS.md)]] - document - .agents/skills/i-pm/SKILL.md
-- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
-- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
-- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
-- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
-- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
-- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
-- [[Role_48]] - document - .agents/skills/i-pm/SKILL.md
-- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
-- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
-- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
-- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
-- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
-- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Auto-Restart_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Diagnosis]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Crash Recovery_2]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Data Recovery]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Immediate Assessment]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Ledger Database_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[OOM Kill (Exit Code 137)_1]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 1 Simple Restart (most common fix)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 2 Full Stop and Start]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 3 Rebuild and Restart]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 4 Volume-Safe Reset]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Option 5 Nuclear Reset (DATA LOSS WARNING)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Pending Approvals]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Post-Recovery Verification]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Python Exception (Exit Code 1)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Recovery Procedures]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Recurring Crashes]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Related Notes_72]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
+- [[Segfault (Exit Code 139)]] - document - docs/vault/08 - Runbooks/Crash Recovery.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,7 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[Skill Project Management (PM)]] - degree 8, connects to 1 community
+- [[Crash Recovery_2]] - degree 9, connects to 1 community

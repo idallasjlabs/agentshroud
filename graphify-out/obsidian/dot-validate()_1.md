@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "plan_remediation"
-location: "L89"
+community: "TokenValidator"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/TokenValidator
 ---
 
 # .validate()
 
 ## Connections
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
-- [[SchemaValidationResult]] - `references` [EXTRACTED]
-- [[Validate output against the named schema.          Args             output The]] - `rationale_for` [EXTRACTED]
+- [[dot-_decode_token()]] - `calls` [EXTRACTED]
+- [[dot-_log()]] - `calls` [EXTRACTED]
+- [[AudienceMismatch]] - `calls` [EXTRACTED]
+- [[IssuerMismatch]] - `calls` [EXTRACTED]
+- [[ScopeViolation]] - `calls` [EXTRACTED]
+- [[TokenError]] - `calls` [EXTRACTED]
+- [[TokenExpiredError]] - `calls` [EXTRACTED]
+- [[TokenValidationResult]] - `calls` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

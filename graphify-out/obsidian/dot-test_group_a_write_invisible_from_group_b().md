@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "KillSwitchMonitor (5)"
-location: "L98"
+community: "GroupWorkspaceManager"
+location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_5
+  - community/GroupWorkspaceManager
 ---
 
 # .test_group_a_write_invisible_from_group_b()
 
 ## Connections
-- [[Content appended to group-A memory must not appear in group-B memory.]] - `rationale_for` [EXTRACTED]
-- [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
+- [[TestCrossGroupIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_5
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: ""
 type: "code"
-community: "Community 341"
-location: "L537"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/wakewordc
 ---
 
 # ws_client_handle_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[_send_status_beacon()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/wakewordc

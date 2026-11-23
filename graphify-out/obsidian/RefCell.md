@@ -1,12 +1,11 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: ""
 type: "code"
-community: "Community 39"
-location: "L907"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # RefCell
@@ -15,4 +14,4 @@ tags:
 - [[FakeTransport]] - `references` [EXTRACTED]
 - [[main.rs]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

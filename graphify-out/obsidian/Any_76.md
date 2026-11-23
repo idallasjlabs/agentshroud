@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_resource_guard_wiring.py"
+source_file: ""
 type: "code"
-community: "Community 5"
-location: "L62"
+community: "version_routes.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_5
+  - graphify/EXTRACTED
+  - community/version_routespy
 ---
 
 # Any
 
 ## Connections
-- [[._build_bridge()]] - `references` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[downgrade_version()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()]] - `references` [EXTRACTED]
+- [[review_version()]] - `references` [EXTRACTED]
+- [[rollback_version()]] - `references` [EXTRACTED]
+- [[upgrade_version()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/version_routespy

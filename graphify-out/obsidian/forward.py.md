@@ -1,29 +1,28 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # forward.py
 
 ## Connections
 - [[AgentTarget]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[EmailSendRequest]] - `imports` [EXTRACTED]
 - [[EmailSendResponse]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[ForwardResponse]] - `imports` [EXTRACTED]
 - [[GatewayEmailService]] - `imports` [EXTRACTED]
+- [[Message forwarding routes. Core message forwarding endpoints -…]] - `rationale_for` [EXTRACTED]
 - [[OwnerEmailRequest]] - `contains` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[RT-6 — Owner-Identity Spoofing via forward body (FIXED)]] - `rationale_for` [EXTRACTED]
-- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `references` [EXTRACTED]
+- [[RBACConfig]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_InboundResult]] - `contains` [EXTRACTED]
 - [[_filtered_sentence_stream()]] - `contains` [EXTRACTED]
@@ -32,23 +31,28 @@ tags:
 - [[_process_inbound()]] - `contains` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `contains` [EXTRACTED]
 - [[_sentences_from_deltas()]] - `contains` [EXTRACTED]
-- [[auth.py]] - `imports_from` [EXTRACTED]
-- [[auth_dep()_3]] - `contains` [EXTRACTED]
+- [[auth_dep()_1]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[email_send()]] - `contains` [EXTRACTED]
 - [[email_send_owner()]] - `contains` [EXTRACTED]
 - [[email_service.py]] - `imports_from` [EXTRACTED]
-- [[event_bus.py]] - `imports_from` [EXTRACTED]
+- [[event_bus.py_2]] - `imports_from` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
 - [[forward_content()]] - `contains` [EXTRACTED]
 - [[forward_content_stream()]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[router.py]] - `imports_from` [EXTRACTED]
+- [[pydantic_1]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[telegram_webhook()]] - `contains` [EXTRACTED]
-- [[test_channel_ownership.py]] - `calls` [EXTRACTED]
+- [[test_channel_ownership.py]] - `imports_from` [EXTRACTED]
+- [[test_email_owner_bypasses_pii.py]] - `imports_from` [EXTRACTED]
 - [[test_forward_routing.py]] - `imports_from` [EXTRACTED]
+- [[test_forward_stream.py]] - `imports_from` [EXTRACTED]
+- [[test_gmail_credential_retrieval.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

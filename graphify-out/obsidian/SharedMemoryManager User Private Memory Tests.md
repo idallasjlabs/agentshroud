@@ -1,14 +1,14 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Community 1817"
+community: "SharedMemoryManager User Private Memory Tests"
 location: "line 107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1817
+  - community/SharedMemoryManager_User_Private_Memory_Tests
 ---
 
 # SharedMemoryManager User Private Memory Tests
 
-#graphify/code #graphify/EXTRACTED #community/Community_1817
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager_User_Private_Memory_Tests

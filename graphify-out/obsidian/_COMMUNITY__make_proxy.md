@@ -1,80 +1,79 @@
 ---
 type: community
-cohesion: 0.06
-members: 65
+members: 66
 ---
 
 # _make_proxy
 
-**Cohesion:** 0.06 - loosely connected
-**Members:** 65 nodes
+**Members:** 66 nodes
 
 ## Members
-- [[dot-__init__()_195]] - code - gateway/security/delegation.py
-- [[dot-_load()]] - code - gateway/security/delegation.py
-- [[dot-_require_owner()]] - code - gateway/security/delegation.py
-- [[dot-_revoke_by_user_privilege()]] - code - gateway/security/delegation.py
-- [[dot-_save()]] - code - gateway/security/delegation.py
-- [[dot-cleanup_expired()_3]] - code - gateway/security/delegation.py
-- [[dot-delegate()]] - code - gateway/security/delegation.py
-- [[dot-from_dict()_9]] - code - gateway/security/delegation.py
-- [[dot-get_active_delegations()]] - code - gateway/security/delegation.py
-- [[dot-get_delegations_for_user()]] - code - gateway/security/delegation.py
-- [[dot-is_active()]] - code - gateway/security/delegation.py
-- [[dot-is_delegated()]] - code - gateway/security/delegation.py
-- [[dot-revoke()]] - code - gateway/security/delegation.py
-- [[dot-revoke_all_for_user()]] - code - gateway/security/delegation.py
-- [[dot-test_cleanup_expired_removes_and_returns_count()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_create_egress_delegation()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_create_user_management_delegation()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_delegation_expires_correctly()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_delegation_has_unique_id()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_delegation_to_dict_and_back()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_duration_over_max_rejected()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_duration_zero_rejected()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_get_active_delegations_excludes_expired()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_get_delegations_for_user()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_false_after_expiry()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_false_for_other_privilege()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_false_for_other_user()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_is_delegated_returns_true_for_active()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_no_active_delegations_initially()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_non_owner_cannot_delegate()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_non_owner_cannot_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_owner_cannot_self_delegate()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_redelegate_replaces_existing()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
-- [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-to_dict()_16]] - code - gateway/security/delegation.py
-- [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
-- [[Create a time-bounded delegation.          Args             owner_id Must matc]] - rationale - gateway/security/delegation.py
-- [[Delegation_1]] - code - gateway/security/delegation.py
-- [[DelegationError]] - code - gateway/security/delegation.py
-- [[DelegationManager]] - code - gateway/tests/test_delegation.py
-- [[DelegationManager_1]] - code - gateway/security/delegation.py
-- [[DelegationPrivilege]] - code - gateway/security/delegation.py
-- [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
-- [[Manages owner-away privilege delegations.      Thread-safe via file locking for]] - rationale - gateway/security/delegation.py
-- [[Raised when a delegation operation is invalid.]] - rationale - gateway/security/delegation.py
-- [[Remove expired delegations, persist result. Returns count removed.]] - rationale - gateway/security/delegation.py
-- [[Return True if the user currently holds the delegated privilege.]] - rationale - gateway/security/delegation.py
-- [[Return all active delegations held by a specific user.]] - rationale - gateway/security/delegation.py
-- [[Return all currently active (non-expired) delegations.]] - rationale - gateway/security/delegation.py
-- [[Revoke all delegations for a specific user. Returns count removed.]] - rationale - gateway/security/delegation.py
-- [[Revoke an active delegation.          Returns True if a matching active delegati]] - rationale - gateway/security/delegation.py
-- [[Subset of privileges that can be delegated by the owner.]] - rationale - gateway/security/delegation.py
-- [[TestAccessControl_2]] - code - gateway/tests/test_delegation.py
-- [[TestDelegateBasic]] - code - gateway/tests/test_delegation.py
-- [[TestIsDelegated]] - code - gateway/tests/test_delegation.py
-- [[TestListAndCleanup]] - code - gateway/tests/test_delegation.py
-- [[TestRedelegation]] - code - gateway/tests/test_delegation.py
-- [[TestRevoke]] - code - gateway/tests/test_delegation.py
-- [[TestSerialization_2]] - code - gateway/tests/test_delegation.py
-- [[ValueError]] - code
-- [[delegation.py]] - code - gateway/security/delegation.py
-- [[mgr()_2]] - code - gateway/tests/test_delegation.py
-- [[test_delegation.py]] - code - gateway/tests/test_delegation.py
+- [[dot-__init__()_14]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_already_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_cached_corr_without_colon_falls_back_to_channel()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_cached_inbound_corr_skips_history_lookup()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_cant_kick_self_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_dm_reply_recovers_inbound_via_conversations_history()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_history_error_records_outbound_without_correlation()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_malformed_json_body_forwards_with_empty_payload()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_missing_args_return_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_missing_args_return_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_missing_channel_or_text_skips_tracking()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_name_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_network_error_returns_synthetic_failure()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_no_token_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_no_token_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_no_token_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_not_in_channel_is_idempotent_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_other_error_returns_false()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_other_error_returns_false()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_recovery_exception_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_redaction_count_access_error_is_non_fatal()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_slack_error_returns_none()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_structured_text_serialized_for_preview()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_success_posts_with_bearer_token()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_success_returns_channel_id_with_sanitized_name()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_success_returns_true()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_success_returns_true()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_system_message_not_tracked()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_thread_reply_recovers_inbound_via_conversations_replies()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_tracker_exception_does_not_break_response()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-test_unknown_content_type_ignored()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[A dict text payload is JSON-serialized before the 80-char preview.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Bodies with an unrecognized Content-Type are not parsed at all.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Cached correlation for the channel → no Slack history call; outbound is…]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Channel name is lowercased, spacesunderscores → hyphens, symbols dropped.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Connection failure → {'ok' False, 'error' exc} (no exception leaks).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Correlation ID with no '' separator → outbound attributed to channel id.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Coverage tests for SlackAPIProxy — tracker recovery, Slack API call layer,…]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Create a SlackAPIProxy with a fake token and no real secretfile IO.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Exception during inbound recovery → swallowed; outbound still recorded.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Happy path POSTs to slack.comapimethod with injected bot token.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[History lookup returns ok=False → no inbound record; outbound still logged,…]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Non-owner channel error reading info_filter_redaction_count is swallowed and…]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Non-thread reply → conversations.history lookup; bot and subtype messages are…]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Pipeline result whose redaction-count attribute raises on access.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[TestBodyParsing]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestCallSlackApi]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestInviteChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestKickChannelMember]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestOutboundTracking]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestProvisionGroupChannel]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[TestRedactionCountErrorSwallow]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[Thread reply with no cached corr → conversations.replies lookup recovers the…]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Tracker errors are non-fatal — Slack response still returned to bot.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[Unparseable JSON body → warning logged, empty payload forwarded (no crash).]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[_RaisingRedactionResult]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[_make_proxy()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[asyncio_7]] - code
+- [[chat.postMessage without channeltext → nothing recorded, no lookups.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[fake_api()]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[fake_api()_1]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[fake_api()_2]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[fake_api()_3]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[is_system=True chat.postMessage bypasses the tracker entirely.]] - rationale - gateway/tests/test_slack_proxy_coverage.py
+- [[test_slack_proxy_coverage.py]] - code - gateway/tests/test_slack_proxy_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -84,19 +83,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ApprovalQueueConfig (3)]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 2 edges to [[_COMMUNITY_test_collaborator_tracker.py (2)]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
-- 1 edge to [[_COMMUNITY_IEC 62443 Compliance Matrix — AgentShroud]]
+- 30 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_SlackAPIProxy]]
+- 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[DelegationPrivilege]] - degree 25, connects to 5 communities
-- [[delegation.py]] - degree 6, connects to 2 communities
-- [[DelegationManager_1]] - degree 24, connects to 1 community
-- [[dot-from_dict()_9]] - degree 3, connects to 1 community
-- [[ValueError]] - degree 2, connects to 1 community
+- [[test_slack_proxy_coverage.py]] - degree 12, connects to 2 communities
+- [[dot-info_filter_redaction_count()]] - degree 3, connects to 2 communities
+- [[_make_proxy()]] - degree 33, connects to 1 community
+- [[dot-test_dm_reply_recovers_inbound_via_conversations_history()]] - degree 7, connects to 1 community
+- [[dot-test_history_error_records_outbound_without_correlation()]] - degree 7, connects to 1 community

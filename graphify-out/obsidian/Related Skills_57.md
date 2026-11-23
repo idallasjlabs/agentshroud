@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Community 90"
+community: "Oracle — Feedback Analyst"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect_7]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

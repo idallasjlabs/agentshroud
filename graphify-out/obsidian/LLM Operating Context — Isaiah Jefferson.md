@@ -1,12 +1,12 @@
 ---
 source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Community 1654"
+community: "LLM Operating Context — Isaiah Jefferson"
 location: "L35"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1654
+  - community/LLM_Operating_Context__Isaiah_Jefferson
 ---
 
 # LLM Operating Context — Isaiah Jefferson
@@ -38,4 +38,4 @@ tags:
 - [[Testing Agent Workflow]] - `contains` [EXTRACTED]
 - [[copilot-instructions]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1654
+#graphify/document #graphify/EXTRACTED #community/LLM_Operating_Context__Isaiah_Jefferson

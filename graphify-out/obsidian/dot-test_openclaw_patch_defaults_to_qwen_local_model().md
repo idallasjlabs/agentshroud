@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "TestConfigValidation"
 location: "L592"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/TestConfigValidation
 ---
 
 # .test_openclaw_patch_defaults_to_qwen_local_model()
 
 ## Connections
-- [[OpenClaw patch script should default to local Ollama but keep API adapter config]] - `rationale_for` [EXTRACTED]
+- [[OpenClaw patch script should default to local Ollama but keep API adapter…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestConfigValidation

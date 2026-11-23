@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "Community 1425"
-location: "L145"
+community: "Network Topology"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1425
+  - community/Network_Topology
 ---
 
-# Network Topology
+# Network Topology.md
 
 ## Connections
-- [[Architecture Overview_3]] - `contains` [EXTRACTED]
+- [[Bot Network Isolation Design]] - `rationale_for` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1425
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

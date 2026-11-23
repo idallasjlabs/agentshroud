@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # agentshroud-manage.sh
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_53]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Quality Assurance (QA)]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Related Skills_39]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[Usage_42]] - document - docker/config/openclaw/skills/i-qa/README.md
-- [[openclawskillsi-qaREADME]] - document - docker/config/openclaw/skills/i-qa/README.md
+- [[agentshroud-manage.sh]] - code - scripts/agentshroud-manage.sh
+- [[agentshroud-manage.sh script]] - code - scripts/agentshroud-manage.sh
+- [[api_call()]] - code - scripts/agentshroud-manage.sh
+- [[usage()]] - code - scripts/agentshroud-manage.sh
+- [[validate_input()]] - code - scripts/agentshroud-manage.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,9 +20,3 @@ members: 5
 TABLE source_file, type FROM #community/agentshroud-managesh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_soc.js]]
-
-## Top bridge nodes
-- [[Quality Assurance (QA)]] - degree 5, connects to 1 community

@@ -1,31 +1,29 @@
 ---
 type: community
-cohesion: 0.12
 members: 16
 ---
 
 # Security Verification Report
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 16 nodes
 
 ## Members
-- [[1. Detection — What Triggers an Incident]] - document - docs/security/incident-response.md
-- [[2. Severity Classification]] - document - docs/security/incident-response.md
-- [[3. Response Procedures]] - document - docs/security/incident-response.md
-- [[4. Kill Switch Usage Guide]] - document - docs/security/incident-response.md
-- [[5. Evidence Preservation]] - document - docs/security/incident-response.md
-- [[6. Post-Incident Review Template]] - document - docs/security/incident-response.md
-- [[8. Contacts and Escalation]] - document - docs/security/incident-response.md
-- [[Audit Ledger Export]] - document - docs/security/incident-response.md
-- [[Decision Tree]] - document - docs/security/incident-response.md
-- [[Incident Response Playbook — AgentShroud]] - document - docs/security/incident-response.md
-- [[P1 — Critical]] - document - docs/security/incident-response.md
-- [[P2 — High]] - document - docs/security/incident-response.md
-- [[P3 — Medium]] - document - docs/security/incident-response.md
-- [[P4 — Low]] - document - docs/security/incident-response.md
-- [[Recovering from Kill Switch]] - document - docs/security/incident-response.md
-- [[What to Capture]] - document - docs/security/incident-response.md
+- [[Conclusion_2]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Emergency Procedures_3]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Gitignore Protection (Multi-Layer)]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Root .gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Security Guarantees_10]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Security Verification Report]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Summary_40]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Test 1 Check Git Tracking]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Test 2 Check README Content]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Test 3 Test Gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Test 4 Check Remote Repository]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[Verification Tests]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[What Is Protected (Never Committed)]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[What Users Need to Do]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[What Was Committed]] - document - docs/security/SECURITY_VERIFICATION.md
+- [[docker.gitignore]] - document - docs/security/SECURITY_VERIFICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,8 +33,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_hermes_model_resolver.py]]
-- 1 edge to [[_COMMUNITY_ApprovalHardening]]
+- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
 
 ## Top bridge nodes
-- [[Incident Response Playbook — AgentShroud]] - degree 9, connects to 2 communities
+- [[Security Verification Report]] - degree 10, connects to 1 community

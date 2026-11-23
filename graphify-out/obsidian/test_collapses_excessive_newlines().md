@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 147"
+community: "PIIConfig"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/PIIConfig
 ---
 
 # test_collapses_excessive_newlines()
@@ -15,4 +15,4 @@ tags:
 - [[Three or more consecutive newlines are collapsed to two.]] - `rationale_for` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

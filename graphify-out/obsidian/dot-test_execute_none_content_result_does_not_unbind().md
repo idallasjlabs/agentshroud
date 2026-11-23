@@ -12,7 +12,9 @@ tags:
 # .test_execute_none_content_result_does_not_unbind()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestExecuteResultInspectionBinding]] - `method` [EXTRACTED]
+- [[_fake_execute()]] - `indirect_call` [INFERRED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

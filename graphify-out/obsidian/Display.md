@@ -1,12 +1,11 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: ""
 type: "code"
-community: "Community 2132"
-location: "L196"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2132
+  - community/mainrs
 ---
 
 # Display
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[CollabMode]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2132
+#graphify/code #graphify/EXTRACTED #community/mainrs

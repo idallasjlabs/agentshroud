@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
+community: "_FakeUnixSocket"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/_FakeUnixSocket
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/_FakeUnixSocket

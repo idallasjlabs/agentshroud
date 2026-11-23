@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_cve_report() (2)"
+community: "_make_report"
 location: "L1280"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/format_cve_report_2
+  - community/_make_report
 ---
 
 # _fake_trivy_scan()
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_image_scans_run_for_each_target()]] - `indirect_call` [INFERRED]
 - [[_make_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/format_cve_report_2
+#graphify/code #graphify/INFERRED #community/_make_report

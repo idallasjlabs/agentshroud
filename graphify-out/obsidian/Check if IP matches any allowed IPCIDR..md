@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "Community 329"
+community: "EgressPolicy"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_329
+  - community/EgressPolicy
 ---
 
 # Check if IP matches any allowed IP/CIDR.
 
 ## Connections
-- [[.matches_ip()]] - `rationale_for` [EXTRACTED]
+- [[dot-matches_ip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_329
+#graphify/rationale #graphify/EXTRACTED #community/EgressPolicy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/SETUP_API_KEYS.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/SKILL.md"
 type: "document"
-community: "Community 510"
-location: "L9"
+community: "The 8D Investigation Process"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/The_8D_Investigation_Process
 ---
 
 # Overview
 
 ## Connections
-- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/The_8D_Investigation_Process

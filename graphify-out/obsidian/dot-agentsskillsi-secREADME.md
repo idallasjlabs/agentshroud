@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
+community: "Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+  - community/Security_Review_SEC
 ---
 
 # .agents/skills/i-sec/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

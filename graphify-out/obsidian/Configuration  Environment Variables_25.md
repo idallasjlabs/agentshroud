@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 732"
-location: "L80"
+community: "sidecar.py"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_732
+  - community/sidecarpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[log_sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_732
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

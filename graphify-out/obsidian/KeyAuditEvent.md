@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 684"
+community: "KeyVault"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/KeyVault
 ---
 
 # KeyAuditEvent
 
 ## Connections
-- [[._log_audit()]] - `calls` [EXTRACTED]
-- [[.get_audit_log()_5]] - `references` [EXTRACTED]
+- [[dot-_log_audit()]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()]] - `references` [EXTRACTED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_684
+#graphify/code #graphify/EXTRACTED #community/KeyVault

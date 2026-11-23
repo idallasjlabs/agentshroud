@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/agents/i-gitops.md"
+source_file: ".agents/skills/i-gitops/SKILL.md"
 type: "document"
-community: "Community 2217"
-location: "L8"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2217
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Skill: gitops
 
 ## Connections
-- [[i-gitops]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-gitopsSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2217
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-heartbeat_check()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Send alert for heartbeat failure.]] - `rationale_for` [EXTRACTED]
 

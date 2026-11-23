@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "AgentShroud Security Architecture"
+community: "DNSBlocklist"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/DNSBlocklist
 ---
 
 # .is_blocked()
 
 ## Connections
-- [[Check if a domain should be blocked.          Checks the domain and all parent d]] - `rationale_for` [EXTRACTED]
+- [[Check if a domain should be blocked. Checks the domain and all parent domains…]] - `rationale_for` [EXTRACTED]
 - [[DNSBlocklist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

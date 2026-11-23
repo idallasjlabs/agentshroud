@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 270"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L282"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # 📚 Created Documentation
@@ -17,4 +17,4 @@ tags:
 - [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
 - [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_270
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

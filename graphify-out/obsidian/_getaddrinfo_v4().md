@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Sunday Upgrade prompt"
+community: "discover_upstream_versions.py"
 location: "L238"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Sunday_Upgrade_prompt
+  - community/discover_upstream_versionspy
 ---
 
 # _getaddrinfo_v4()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_ipv4_only()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Sunday_Upgrade_prompt
+#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy

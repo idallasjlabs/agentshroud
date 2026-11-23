@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "Enum"
+community: "soc/models.py"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/soc/modelspy
 ---
 
 # .test_destructive_requires_confirmation()
@@ -15,4 +15,4 @@ tags:
 - [[SCLConfirmationRequired]] - `calls` [EXTRACTED]
 - [[TestConfirmationModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L831"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # HEAD_AT_START
@@ -18,4 +18,4 @@ tags:
 - [[no-baseline case returns success]] - `shares_data_with` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `shares_data_with` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

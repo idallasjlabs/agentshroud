@@ -12,7 +12,7 @@ tags:
 # .test_write_file_success_and_denial_both_create_distinct_ledger_entries()
 
 ## Connections
-- [[Both outcomes append to the SAME audit trail — a denial is not         silently]] - `rationale_for` [EXTRACTED]
+- [[Both outcomes append to the SAME audit trail — a denial is not silently dropped…]] - `rationale_for` [EXTRACTED]
 - [[SSHWriteResult]] - `calls` [EXTRACTED]
 - [[TestSSHWriteFileLedgerAudit]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]

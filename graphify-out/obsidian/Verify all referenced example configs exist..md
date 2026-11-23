@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 36"
+community: "TestConfigValidation"
 location: "L791"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/TestConfigValidation
 ---
 
 # Verify all referenced example configs exist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllExampleConfigsExist]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_36
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

@@ -1,51 +1,38 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 229"
+community: "ingest_api/main.py"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/ingest_api/mainpy
 ---
 
 # EventBus
 
 ## Connections
-- [[.__init__()_27]] - `method` [EXTRACTED]
-- [[.emit()]] - `method` [EXTRACTED]
-- [[.get_recent()]] - `method` [EXTRACTED]
-- [[.get_stats()]] - `method` [EXTRACTED]
-- [[.subscribe()]] - `method` [EXTRACTED]
-- [[.test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
-- [[.unsubscribe()]] - `method` [EXTRACTED]
-- [[3+ auth failures within 5 minutes escalates event severity to critical]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_181]] - `method` [EXTRACTED]
+- [[dot-emit()_1]] - `method` [EXTRACTED]
+- [[dot-get_recent()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_13]] - `method` [EXTRACTED]
+- [[dot-subscribe()_1]] - `method` [EXTRACTED]
+- [[dot-test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
+- [[dot-unsubscribe()_1]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
-- [[FakeCaller]] - `uses` [INFERRED]
-- [[FastAPI_1]] - `uses` [INFERRED]
-- [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
-- [[LogRecord]] - `uses` [INFERRED]
 - [[Simple in-process event bus with async support]] - `rationale_for` [EXTRACTED]
-- [[TestAgentsRegistry]] - `uses` [INFERRED]
-- [[TestDeploymentMode]] - `uses` [INFERRED]
-- [[TestEdgeEnroll]] - `uses` [INFERRED]
 - [[TestEdgeEventOverWebSocket]] - `uses` [INFERRED]
-- [[TestEdgeKill]] - `uses` [INFERRED]
-- [[TestEdgeStatus]] - `uses` [INFERRED]
-- [[TestLocalAgentHealthHelper]] - `uses` [INFERRED]
-- [[_DropInvalidHTTPRequestFilter]] - `uses` [INFERRED]
-- [[_SendSpy]] - `uses` [INFERRED]
-- [[bus()]] - `calls` [EXTRACTED]
-- [[event_bus.py]] - `contains` [EXTRACTED]
-- [[event_bus.py_1]] - `references` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[bus()]] - `uses` [INFERRED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
-- [[test_api_alerts_endpoint_emits_bus_event()]] - `calls` [EXTRACTED]
+- [[test_api_alerts_endpoint_emits_bus_event()]] - `uses` [INFERRED]
 - [[test_e2e.py]] - `imports` [EXTRACTED]
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
+- [[test_forward_pii_sanitized_and_ledger_entry()]] - `uses` [INFERRED]
 - [[test_soc_edge.py]] - `imports` [EXTRACTED]
-- [[test_subscribed_relay_receives_bus_emissions()]] - `calls` [EXTRACTED]
+- [[test_subscribed_relay_receives_bus_emissions()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

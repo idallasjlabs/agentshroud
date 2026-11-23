@@ -1,31 +1,17 @@
 ---
-source_file: "gateway/soc/models.py"
-type: "code"
-community: "Community 6"
-location: "L31"
+source_file: "docs/planning/redteam/06-outbound-info-filter.md"
+type: "document"
+community: "Implement gateway-level outbound information filtering module"
+location: "L3"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/Implement_gateway-level_outbound_information_filtering_module
 ---
 
 # Severity
 
 ## Connections
-- [[Any_72]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[SecurityEvent]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
-- [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
-- [[event_adapter.py]] - `imports` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[test_soc_bots.py]] - `imports` [EXTRACTED]
-- [[test_soc_models.py]] - `imports` [EXTRACTED]
-- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
-- [[test_soc_websocket.py]] - `imports` [EXTRACTED]
-- [[websocket.py]] - `imports` [EXTRACTED]
+- [[Implement gateway-level outbound information filtering module]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/document #graphify/EXTRACTED #community/Implement_gateway-level_outbound_information_filtering_module

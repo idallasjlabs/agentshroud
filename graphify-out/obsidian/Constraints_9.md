@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/01-enforce-by-default.md"
+source_file: "docs/planning/redteam/05-credential-isolation.md"
 type: "document"
-community: "Community 721"
-location: "L144"
+community: "Remediation"
+location: "L301"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_721
+  - community/Remediation
 ---
 
 # Constraints
 
 ## Connections
-- [[Flip core security modules from monitor to enforce mode]] - `contains` [EXTRACTED]
+- [[Remove secret mounts from agent container and implement transparent credential injection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_721
+#graphify/document #graphify/EXTRACTED #community/Remediation

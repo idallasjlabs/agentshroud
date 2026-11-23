@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/daedalus/SKILL.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 1918"
-location: "L78"
+community: "Athena — Knowledge Distiller"
+location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1918
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1918
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

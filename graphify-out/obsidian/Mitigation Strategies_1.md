@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-002-default-allow-security-philosophy.md"
 type: "document"
-community: "Community 856"
+community: "ADR-002: Default-Allow Security Philosophy"
 location: "L62"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_856
+  - community/ADR-002_Default-Allow_Security_Philosophy
 ---
 
 # Mitigation Strategies
 
 ## Connections
-- [[Consequences_1]] - `contains` [EXTRACTED]
+- [[Consequences_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_856
+#graphify/document #graphify/EXTRACTED #community/ADR-002_Default-Allow_Security_Philosophy

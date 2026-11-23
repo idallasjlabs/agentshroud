@@ -1,14 +1,17 @@
 ---
 source_file: "gateway/__init__.py"
 type: "code"
-community: "test_default_summary_equals_openclaw_summary"
+community: "gateway/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_default_summary_equals_openclaw_summary
+  - community/gateway/__init__py
 ---
 
 # gateway/__init__.py
 
-#graphify/code #graphify/EXTRACTED #community/test_default_summary_equals_openclaw_summary
+## Connections
+- [[AgentShroud Gateway Package]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/gateway/__init__py

@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-edge-isolation.sh"
+source_file: "scripts/smoke.d/test-container-runtime.sh"
 type: "code"
-community: "Community 1975"
-location: "L53"
+community: "test-container-runtime.sh"
+location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1975
+  - community/test-container-runtimesh
 ---
 
 # check()
 
 ## Connections
-- [[_assert_blocked()]] - `calls` [EXTRACTED]
-- [[test-edge-isolation.sh]] - `defines` [EXTRACTED]
-- [[test-edge-isolation.sh script]] - `calls` [EXTRACTED]
+- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
+- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1975
+#graphify/code #graphify/EXTRACTED #community/test-container-runtimesh

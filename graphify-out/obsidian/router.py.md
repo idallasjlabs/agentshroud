@@ -1,30 +1,26 @@
 ---
-source_file: "gateway/ingest_api/router.py"
-type: "code"
-community: "Community 78"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+type: "document"
+community: "router.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/routerpy
 ---
 
 # router.py
 
 ## Connections
-- [[AgentTarget]] - `imports` [EXTRACTED]
-- [[CREDENTIAL-SECURITY-POLICY]] - `references` [EXTRACTED]
-- [[ForwardError]] - `contains` [EXTRACTED]
-- [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[MultiAgentRouter]] - `contains` [EXTRACTED]
-- [[README_127]] - `references` [EXTRACTED]
-- [[RouterConfig]] - `imports` [EXTRACTED]
-- [[RouterError]] - `contains` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
-- [[forward.py]] - `imports_from` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[models.py]] - `imports_from` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_router_openai_translation.py]] - `references` [EXTRACTED]
+- [[Config Keys Read_7]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_7]] - `contains` [EXTRACTED]
+- [[Function Details_31]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_7]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_33]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_7]] - `contains` [EXTRACTED]
+- [[Purpose_51]] - `contains` [EXTRACTED]
+- [[Related_33]] - `contains` [EXTRACTED]
+- [[Responsibilities_33]] - `contains` [EXTRACTED]
+- [[router.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_78
+#graphify/document #graphify/EXTRACTED #community/routerpy

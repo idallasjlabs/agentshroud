@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-mcpm-aws-profile.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 202"
-location: "L348"
+community: "MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_202
+  - community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_5]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_202
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

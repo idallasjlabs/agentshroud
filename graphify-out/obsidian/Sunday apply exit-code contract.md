@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade-apply.sh"
 type: "rationale"
-community: "Community 126"
+community: "sunday-upgrade-apply.sh"
 location: "L47-L57"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-upgrade-applysh
 ---
 
 # Sunday apply exit-code contract
@@ -17,4 +17,4 @@ tags:
 - [[phase_apply()]] - `implements` [EXTRACTED]
 - [[sunday-upgrade-apply main sequence]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_126
+#graphify/rationale #graphify/EXTRACTED #community/sunday-upgrade-applysh

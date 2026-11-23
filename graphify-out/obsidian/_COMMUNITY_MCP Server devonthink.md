@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # MCP Server: devonthink
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Pre-Change Analysis (PCA)]] - document - .agents/skills/i-pca/SKILL.md
+- [[MCP Server devonthink]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

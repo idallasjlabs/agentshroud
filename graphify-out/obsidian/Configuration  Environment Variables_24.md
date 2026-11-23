@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 539"
-location: "L82"
+community: "web_config.py"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/web_configpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_539
+#graphify/document #graphify/EXTRACTED #community/web_configpy

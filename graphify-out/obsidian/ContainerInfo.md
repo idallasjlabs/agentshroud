@@ -1,19 +1,32 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "Community 203"
-location: "L121"
+community: "AppleContainerEngine"
+location: "L17"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_203
+  - graphify/EXTRACTED
+  - community/AppleContainerEngine
 ---
 
 # ContainerInfo
 
 ## Connections
-- [[.ps()]] - `references` [EXTRACTED]
-- [[ContainerEngine_2]] - `uses` [INFERRED]
-- [[ContainerInfo_2]] - `uses` [INFERRED]
+- [[dot-ps()]] - `references` [EXTRACTED]
+- [[dot-ps()_1]] - `references` [EXTRACTED]
+- [[dot-ps()_2]] - `references` [EXTRACTED]
+- [[dot-ps()_3]] - `references` [EXTRACTED]
+- [[dot-test_defaults()_1]] - `calls` [EXTRACTED]
+- [[dot-test_with_data()]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `uses` [INFERRED]
+- [[DockerEngine]] - `uses` [INFERRED]
+- [[Lightweight container metadata returned by psinspect.]] - `rationale_for` [EXTRACTED]
+- [[PodmanEngine]] - `uses` [INFERRED]
+- [[TestContainerInfo]] - `uses` [INFERRED]
+- [[apple_engine.py_2]] - `imports` [EXTRACTED]
+- [[docker_engine.py_2]] - `imports` [EXTRACTED]
+- [[engine.py_2]] - `contains` [EXTRACTED]
+- [[podman_engine.py_2]] - `imports` [EXTRACTED]
+- [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_203
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

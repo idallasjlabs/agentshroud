@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/agents/i-ci.md"
+source_file: "docker/config/hermes/skills/i-ci/SKILL.md"
 type: "document"
-community: "Community 2215"
-location: "L8"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2215
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: ci
 
 ## Connections
-- [[i-ci]] - `contains` [EXTRACTED]
+- [[hermesskillsi-ciSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2215
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 488"
+community: "test_cli_coverage.py"
 location: "L695"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_488
+  - community/test_cli_coveragepy
 ---
 
 # _install_fake_websockets()
 
 ## Connections
-- [[.test_tail_ws_events_stream()]] - `calls` [EXTRACTED]
-- [[.test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - `calls` [EXTRACTED]
+- [[dot-test_tail_ws_events_stream()]] - `calls` [EXTRACTED]
+- [[dot-test_tail_ws_logs_stream_uses_wss_and_log_filter()]] - `calls` [EXTRACTED]
 - [[_FakeConnect]] - `calls` [EXTRACTED]
 - [[_FakeWS]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_488
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

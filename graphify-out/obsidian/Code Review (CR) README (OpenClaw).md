@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-cr/README.md"
 type: "document"
-community: "Community 391"
+community: "GIT-GUARD Skill Definition"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_391
+  - community/GIT-GUARD_Skill_Definition
 ---
 
 # Code Review (CR) README (OpenClaw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Code Review (CR) SKILL (OpenClaw)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_391
+#graphify/document #graphify/EXTRACTED #community/GIT-GUARD_Skill_Definition

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "fixture (2)"
+community: "TestNvdAppend"
 location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fixture_2
+  - community/TestNvdAppend
 ---
 
 # .registry()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestNvdAppend]] - `method` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
-- [[fixture]] - `references` [EXTRACTED]
+- [[fixture_43]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fixture_2
+#graphify/code #graphify/EXTRACTED #community/TestNvdAppend

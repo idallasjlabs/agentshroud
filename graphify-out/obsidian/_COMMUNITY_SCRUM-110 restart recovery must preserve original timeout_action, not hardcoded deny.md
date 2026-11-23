@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SCRUM-110: restart recovery must preserve original timeout_action, not hardcoded deny
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[i-security-reviewer.md (security-reviewer agent)]] - document - docker/config/openclaw/agents/i-security-reviewer.md
+- [[SCRUM-110 restart recovery must preserve original timeout_action, not hardcoded deny]] - rationale - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

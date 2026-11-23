@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
+source_file: ".agents/skills/icloud/README.md"
 type: "document"
-community: "Community 239"
-location: "L24"
+community: "iCloud Data Manager (ICLOUD)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_239
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_239
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

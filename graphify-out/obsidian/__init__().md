@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: ".test_fetch_paginates_via_link_cursor() (2)"
-location: "L518"
+community: "MCPToolCall"
+location: "L529"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fetch_paginates_via_link_cursor_2
+  - community/MCPToolCall
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_fetch_paginates_via_link_cursor()]] - `contains` [EXTRACTED]
+- [[dot-test_egress_allows_non_url_tool_call()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor_2
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

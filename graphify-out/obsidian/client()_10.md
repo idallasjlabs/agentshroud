@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Community 1248"
+community: "ingest_api/config.py"
 location: "L51"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_62]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

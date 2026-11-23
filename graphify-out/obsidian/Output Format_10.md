@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/sec-defense.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Community 1279"
-location: "L131"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1279
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Output Format
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1279
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

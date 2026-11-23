@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "check_upstream_cves() (2)"
+community: "check_upstream_cves"
 location: "L331"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_upstream_cves_2
+  - community/check_upstream_cves
 ---
 
 # .test_raises_on_network_error()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckUpstreamCves]] - `method` [EXTRACTED]
 - [[check_upstream_cves()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_upstream_cves_2
+#graphify/code #graphify/EXTRACTED #community/check_upstream_cves

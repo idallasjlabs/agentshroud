@@ -12,7 +12,7 @@ tags:
 # .test_unwrapped_chain_must_anchor_at_genesis()
 
 ## Connections
-- [[A self-consistent window on a forged anchor must fail when the         chain nev]] - `rationale_for` [EXTRACTED]
+- [[A self-consistent window on a forged anchor must fail when the chain never…]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestAuditChainBounded]] - `method` [EXTRACTED]
 

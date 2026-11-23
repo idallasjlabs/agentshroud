@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "SecurityPipeline (2)"
-location: "L1658"
+community: "SlackAPIProxy"
+location: "L435"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/SlackAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-verify_chain()_2]] - `calls` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
-- [[SecurityPipeline_1]] - `method` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Gemini Semantic Extraction Backend
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[i-gitops SKILL (stub)]] - document - docker/config/hermes/skills/i-gitops/SKILL.md
+- [[Gemini Semantic Extraction Backend]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

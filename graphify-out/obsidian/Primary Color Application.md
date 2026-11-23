@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 976"
+community: "Color Usage"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_976
+  - community/Color_Usage
 ---
 
 # Primary Color Application
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Color Usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_976
+#graphify/document #graphify/EXTRACTED #community/Color_Usage

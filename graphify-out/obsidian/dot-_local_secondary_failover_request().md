@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # ._local_secondary_failover_request()
@@ -20,6 +20,6 @@ tags:
 - [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[Attempt a local→local-secondary failover when the primary local model hits OOM.…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
-- [[test_local_oom_triggers_secondary_failover]] - `references` [INFERRED]
+- [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

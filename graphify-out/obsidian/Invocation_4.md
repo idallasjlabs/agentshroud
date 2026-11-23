@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-hdev/SKILL.md"
+source_file: ".opencode/agents/i-crpr.md"
 type: "document"
-community: "Community 634"
-location: "L25"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_634
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_634
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

@@ -1,24 +1,22 @@
 ---
 type: community
-cohesion: 0.22
 members: 9
 ---
 
 # Skill: Pull Request (PR) Generator
 
-**Cohesion:** 0.22 - loosely connected
 **Members:** 9 nodes
 
 ## Members
-- [[Common Missing Domains]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Diagnosis_1]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Egress Filter Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Egress Filter Not Initialized]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Fix Add Domain to Allowlist]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[HTTP 403 — Egress Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Monitor Mode — Egress Not Enforced]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[RFC1918 Blocked]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
-- [[Related Notes_73]] - document - docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md
+- [[dot-agentsagentsi-pr]] - document - .agents/agents/i-pr.md
+- [[Constraints]] - document - .agents/agents/i-pr.md
+- [[Content Requirements]] - document - .agents/agents/i-pr.md
+- [[Header]] - document - .agents/agents/i-pr.md
+- [[Objective]] - document - .agents/agents/i-pr.md
+- [[Role_77]] - document - .agents/agents/i-pr.md
+- [[Safety_1]] - document - .agents/agents/i-pr.md
+- [[Skill Pull Request (PR) Generator]] - document - .agents/agents/i-pr.md
+- [[Technical Detail]] - document - .agents/agents/i-pr.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,9 +24,3 @@ members: 9
 TABLE source_file, type FROM #community/Skill_Pull_Request_PR_Generator
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-
-## Top bridge nodes
-- [[Egress Filter Errors_2]] - degree 6, connects to 1 community

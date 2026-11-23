@@ -1,23 +1,23 @@
 ---
-source_file: ".github/agents/i-oracle.agent.md"
+source_file: "docker/config/openclaw/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 1982"
-location: "L11"
+community: "Oracle — Feedback Analyst"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1982
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_37]] - `contains` [EXTRACTED]
-- [[Output Format_50]] - `contains` [EXTRACTED]
-- [[Persona_29]] - `contains` [EXTRACTED]
-- [[Quality Checklist_33]] - `contains` [EXTRACTED]
-- [[Role_132]] - `contains` [EXTRACTED]
-- [[System Prompt_29]] - `contains` [EXTRACTED]
-- [[i-oracle.agent]] - `contains` [EXTRACTED]
+- [[Input Requirements_40]] - `contains` [EXTRACTED]
+- [[Output Format_55]] - `contains` [EXTRACTED]
+- [[Persona_34]] - `contains` [EXTRACTED]
+- [[Quality Checklist_40]] - `contains` [EXTRACTED]
+- [[Role_105]] - `contains` [EXTRACTED]
+- [[System Prompt_34]] - `contains` [EXTRACTED]
+- [[openclawskillsi-oracleSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1982
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

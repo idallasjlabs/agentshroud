@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.9/release-notes-v0.9.0.md"
+source_file: "docs/planning/v0.8/v0.8.0-wiring-audit.md"
 type: "document"
-community: "Community 189"
+community: "AgentShroud v0.8.0 \"Watchtower\" — Comprehensive Wiring Audit"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_189
+  - community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Release Notes - AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_189
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower__Comprehensive_Wiring_Audit

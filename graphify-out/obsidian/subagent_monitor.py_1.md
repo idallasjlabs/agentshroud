@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 569"
-location: "L1"
+community: "Function Details"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/Function_Details
 ---
 
-# subagent_monitor.py.md
+# subagent_monitor.py
 
 ## Connections
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Function Details_3]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_5]] - `contains` [EXTRACTED]
+- [[Purpose_5]] - `contains` [EXTRACTED]
+- [[Related_5]] - `contains` [EXTRACTED]
+- [[Responsibilities_5]] - `contains` [EXTRACTED]
+- [[Threat Model_3]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_569
+#graphify/document #graphify/EXTRACTED #community/Function_Details

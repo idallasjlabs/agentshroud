@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-crpr.md"
+source_file: ".opencode/agents/i-pca.md"
 type: "document"
-community: "Community 1276"
-location: "L10"
+community: "Output Sections (ALL required)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1276
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1276
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

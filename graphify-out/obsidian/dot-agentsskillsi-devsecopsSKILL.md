@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-devsecops/SKILL.md"
 type: "document"
-community: "Host Application Firewall Layer (Little Snitch / Lulu on vpnkit)"
+community: ".agents/skills/i-devsecops/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Host_Application_Firewall_Layer_Little_Snitch_/_Lulu_on_vpnkit
+  - community/agents/skills/i-devsecops/SKILLmd
 ---
 
 # .agents/skills/i-devsecops/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill devsecops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Host_Application_Firewall_Layer_Little_Snitch_/_Lulu_on_vpnkit
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-devsecops/SKILLmd

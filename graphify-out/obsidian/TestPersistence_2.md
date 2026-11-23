@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Community 11"
-location: "L184"
+community: "EnhancedApprovalQueue"
+location: "L317"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_11
+  - community/EnhancedApprovalQueue
 ---
 
 # TestPersistence
 
 ## Connections
-- [[.test_persistence_across_instances()]] - `method` [EXTRACTED]
-- [[Test trust survives restart.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[dot-test_restart_recovery_preserves_timeout_action()]] - `method` [EXTRACTED]
+- [[dot-test_restore_pending_items()]] - `method` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
+- [[Test SQLite persistence across restarts.]] - `rationale_for` [EXTRACTED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[ToolRiskPolicy]] - `uses` [INFERRED]
+- [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue

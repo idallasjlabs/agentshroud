@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/infra-check.sh"
 type: "code"
-community: "Community 933"
+community: "verify-proxy.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_933
+  - community/verify-proxysh
 ---
 
 # infra-check.sh
@@ -16,4 +16,4 @@ tags:
 - [[preflight-check.sh]] - `semantically_similar_to` [INFERRED]
 - [[tailscale-check.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_933
+#graphify/code #graphify/INFERRED #community/verify-proxysh

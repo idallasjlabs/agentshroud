@@ -1,24 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 667"
-location: "L37"
+community: "dns_filter.py"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/dns_filterpy
 ---
 
 # Function Details
 
 ## Connections
-- [[ConnectionPool.get_or_create(server_name, config)]] - `contains` [EXTRACTED]
-- [[MCPProxy._execute_tool_call(tool_call, sanitized_params)]] - `contains` [EXTRACTED]
-- [[MCPProxy.check_approval_required(tool_call)]] - `contains` [EXTRACTED]
-- [[MCPProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_call(tool_call, execute)]] - `contains` [EXTRACTED]
-- [[MCPProxy.process_tool_result(tool_result, agent_id)]] - `contains` [EXTRACTED]
-- [[StdioConnection.send_request(method, params)]] - `contains` [EXTRACTED]
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
+- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
+- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

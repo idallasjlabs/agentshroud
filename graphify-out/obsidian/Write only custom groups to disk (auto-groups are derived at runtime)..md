@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 223"
+community: "TelegramAPIProxy"
 location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/TelegramAPIProxy
 ---
 
 # Write only custom groups to disk (auto-groups are derived at runtime).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_persist_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_223
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

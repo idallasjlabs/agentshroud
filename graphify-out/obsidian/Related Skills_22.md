@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Community 485"
-location: "L162"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_485
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_485
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

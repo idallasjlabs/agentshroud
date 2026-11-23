@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-23-roadmap-gantt.png"
 type: "image"
-community: "Community 226"
+community: "Approval Queue (human-in-the-loop)"
 tags:
   - graphify/image
   - graphify/EXTRACTED
-  - community/Community_226
+  - community/Approval_Queue_human-in-the-loop
 ---
 
 # Phase 7 — Enterprise Hardening (planned): IEC 62443 policy docs, Multi-tenant isolation, External contributor access
@@ -14,4 +14,4 @@ tags:
 - [[AgentShroud Development Roadmap — 2026 Gantt Chart]] - `conceptually_related_to` [EXTRACTED]
 - [[Phase 6 — Observability (planned) Tailscale config & serve, Prometheus+Grafana, Log aggregation (Loki)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/image #graphify/EXTRACTED #community/Community_226
+#graphify/image #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop

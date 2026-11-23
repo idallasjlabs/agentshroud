@@ -1,24 +1,25 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 143"
+community: "ingest_api/models.py"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/modelspy
 ---
 
 # limit_request_body()
 
 ## Connections
-- [[JSONResponse_1]] - `calls` [EXTRACTED]
-- [[Reject request bodies larger than 1MB before parsing.      Checks Content-Length]] - `rationale_for` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Reject request bodies larger than 1MB before parsing. Checks Content-Length…]] - `rationale_for` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
+- [[_body_stream()]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[middleware]] - `references` [EXTRACTED]
 - [[test_limit_request_body_chunked_body_over_limit_rejected()]] - `calls` [EXTRACTED]
 - [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - `calls` [EXTRACTED]
 - [[test_limit_request_body_client_disconnect_returns_clean_response()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

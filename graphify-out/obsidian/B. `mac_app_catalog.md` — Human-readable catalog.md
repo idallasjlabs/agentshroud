@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/mac-app-discovery.md"
+source_file: "docker/config/openclaw/skills/i-mac/SKILL.md"
 type: "document"
-community: "Community 823"
-location: "L304"
+community: "Mac App Discovery Skill"
+location: "L307"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_823
+  - community/Mac_App_Discovery_Skill
 ---
 
 # B. `mac_app_catalog.md` — Human-readable catalog
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 5 — Output Generation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_823
+#graphify/document #graphify/EXTRACTED #community/Mac_App_Discovery_Skill

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "system-requirements.md"
+community: "test_security_toolchain.py"
 location: "L759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/system-requirementsmd
+  - community/test_security_toolchainpy
 ---
 
 # .test_grade_c()
@@ -15,4 +15,4 @@ tags:
 - [[TestHealthScoring]] - `method` [EXTRACTED]
 - [[score_to_grade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/system-requirementsmd
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

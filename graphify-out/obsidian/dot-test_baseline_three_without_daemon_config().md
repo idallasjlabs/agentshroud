@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "test_scanner_integration.py"
 location: "L757"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/test_scanner_integrationpy
 ---
 
 # .test_baseline_three_without_daemon_config()
@@ -15,4 +15,4 @@ tags:
 - [[TestScoreNetworkSegmentation_1]] - `method` [EXTRACTED]
 - [[_score_network_segmentation()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

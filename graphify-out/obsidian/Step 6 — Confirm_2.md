@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-session-prompt.md"
+source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Community 1497"
-location: "L131"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1497
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Step 6 — Confirm
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Workflow Survey → Draft → Inject → Confirm_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1497
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

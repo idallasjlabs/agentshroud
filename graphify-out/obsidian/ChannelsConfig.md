@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 181"
+community: "ingest_api/config.py"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_181
+  - community/ingest_api/configpy
 ---
 
 # ChannelsConfig
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[BotConfig]] - `uses` [INFERRED]
+- [[BaseModel_6]] - `inherits` [EXTRACTED]
 - [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - `rationale_for` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[config.py]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_181
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

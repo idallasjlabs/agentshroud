@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "sync-cve-registry.py"
+community: "test_daily_cve_report.py"
 location: "L156"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/test_daily_cve_reportpy
 ---
 
 # Resolve the image tag a container is ACTUALLY running, via docker CLI. The…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_running_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/test_daily_cve_reportpy

@@ -1,23 +1,27 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 57"
+community: "IntelReportStore"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_57
+  - community/IntelReportStore
 ---
 
 # intel_report.py
 
 ## Connections
-- [[Citation_1]] - `contains` [EXTRACTED]
-- [[CompetitiveIntelReport_1]] - `contains` [EXTRACTED]
-- [[CompetitorEntry_1]] - `contains` [EXTRACTED]
+- [[Citation]] - `contains` [EXTRACTED]
+- [[Competitive Intelligence Report — Schema, Integrity, and Store (B.2) IEC 62443…]] - `rationale_for` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `contains` [EXTRACTED]
+- [[CompetitorEntry]] - `contains` [EXTRACTED]
 - [[IntelReportStore]] - `contains` [EXTRACTED]
 - [[ReportIntegrityError]] - `contains` [EXTRACTED]
 - [[_compute_hash()]] - `contains` [EXTRACTED]
 - [[citation_verifier.py]] - `imports_from` [EXTRACTED]
+- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[test_citation_verifier.py]] - `imports_from` [EXTRACTED]
+- [[test_intel_pipeline.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

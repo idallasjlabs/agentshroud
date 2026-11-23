@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 225"
+community: "AppleContainerEngine"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/AppleContainerEngine
 ---
 
 # Return True if the runtime is available and responsive.
 
 ## Connections
-- [[.health_check()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-health_check()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_225
+#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine

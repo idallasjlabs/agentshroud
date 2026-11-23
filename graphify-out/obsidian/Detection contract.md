@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 213"
+community: "AgentShroud Docker Configuration"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Detection contract
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Container Runtime Support (SCRUM-92)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

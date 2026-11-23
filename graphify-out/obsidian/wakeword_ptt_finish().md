@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 341"
+community: "wakeword.c"
 location: "L448"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_341
+  - community/wakewordc
 ---
 
 # wakeword_ptt_finish()
@@ -17,6 +17,7 @@ tags:
 - [[test_ptt_finish_ends_listening()]] - `calls` [INFERRED]
 - [[test_ptt_finish_noop_when_idle()]] - `calls` [INFERRED]
 - [[voice_task()]] - `calls` [INFERRED]
+- [[vt_remote_log()]] - `calls` [INFERRED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_341
+#graphify/code #graphify/INFERRED #community/wakewordc

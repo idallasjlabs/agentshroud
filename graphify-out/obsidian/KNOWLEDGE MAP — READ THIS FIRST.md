@@ -1,12 +1,12 @@
 ---
 source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Community 2022"
+community: "copilot-instructions.md"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2022
+  - community/copilot-instructionsmd
 ---
 
 # KNOWLEDGE MAP — READ THIS FIRST
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[CLAUDE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2022
+#graphify/document #graphify/EXTRACTED #community/copilot-instructionsmd

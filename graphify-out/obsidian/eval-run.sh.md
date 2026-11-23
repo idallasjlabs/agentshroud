@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/eval-run.sh"
 type: "code"
-community: "Community 2306"
+community: "eval-run.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2306
+  - community/eval-runsh
 ---
 
 # eval-run.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[eval-run.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2306
+#graphify/code #graphify/EXTRACTED #community/eval-runsh

@@ -1,21 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Community 833"
-location: "L31"
+community: "sanitizer.py"
+location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_833
+  - community/sanitizerpy
 ---
 
 # Function Details
 
 ## Connections
-- [[HTTPForwarder.forward(path, body, headers, method)]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.get_stats()]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.health_check()]] - `contains` [EXTRACTED]
-- [[HTTPForwarder.set_response_handler(handler)]] - `contains` [EXTRACTED]
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[_sanitize_presidio(content)]] - `contains` [EXTRACTED]
+- [[_sanitize_regex(content)]] - `contains` [EXTRACTED]
+- [[block_credentials(content, source)]] - `contains` [EXTRACTED]
+- [[filter_xml_blocks(content)]] - `contains` [EXTRACTED]
+- [[sanitize(content)]] - `contains` [EXTRACTED]
+- [[sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_833
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

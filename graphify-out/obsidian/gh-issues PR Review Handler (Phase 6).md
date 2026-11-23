@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "concept"
-community: "Community 1103"
+community: "gh-issues/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1103
+  - community/gh-issues/SKILLmd
 ---
 
 # gh-issues PR Review Handler (Phase 6)
 
 ## Connections
-- [[SKILL_217]] - `implements` [EXTRACTED]
+- [[gh-issuesSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1103
+#graphify/concept #graphify/EXTRACTED #community/gh-issues/SKILLmd

@@ -12,6 +12,6 @@ tags:
 # .test_kill_switch_propagates_to_children()
 
 ## Connections
-- [[TestKillSwitch]] - `method` [EXTRACTED]
+- [[TestKillSwitch_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

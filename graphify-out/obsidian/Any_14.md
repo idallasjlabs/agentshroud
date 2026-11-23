@@ -1,30 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/store.py"
+source_file: ""
 type: "code"
-community: "Community 50"
-location: "L142"
+community: "FileIntegrityRecord"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_50
+  - community/FileIntegrityRecord
 ---
 
 # Any
 
 ## Connections
-- [[.add_client()]] - `references` [EXTRACTED]
-- [[.approval_for_ticket()]] - `references` [EXTRACTED]
-- [[.get_client()_2]] - `references` [EXTRACTED]
-- [[.list_clients()]] - `references` [EXTRACTED]
-- [[.list_kills()]] - `references` [EXTRACTED]
-- [[.peek_code()]] - `references` [EXTRACTED]
-- [[.peek_pending()]] - `references` [EXTRACTED]
-- [[.peek_refresh()]] - `references` [EXTRACTED]
-- [[.put_code()]] - `references` [EXTRACTED]
-- [[.put_pending()]] - `references` [EXTRACTED]
-- [[.put_refresh()]] - `references` [EXTRACTED]
-- [[.rotate_refresh()]] - `references` [EXTRACTED]
-- [[.take_code()]] - `references` [EXTRACTED]
-- [[.take_pending()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_2]] - `references` [EXTRACTED]
+- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_50
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

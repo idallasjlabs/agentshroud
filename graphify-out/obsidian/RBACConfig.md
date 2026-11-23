@@ -1,20 +1,101 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Community 6"
-location: "L64"
+community: "middleware.py"
+location: "L53"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/middlewarepy
 ---
 
 # RBACConfig
 
 ## Connections
-- [[.__init__()_125]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[ToolTier_2]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_6]] - `calls` [EXTRACTED]
+- [[dot-__init__()_184]] - `calls` [EXTRACTED]
+- [[dot-__init__()_190]] - `calls` [EXTRACTED]
+- [[dot-__init__()_185]] - `calls` [EXTRACTED]
+- [[dot-__init__()]] - `references` [EXTRACTED]
+- [[dot-__post_init__()_6]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()]] - `method` [EXTRACTED]
+- [[dot-_ensure_rbac()]] - `calls` [EXTRACTED]
+- [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[dot-_is_owner()]] - `calls` [EXTRACTED]
+- [[dot-_make_rbac()]] - `references` [EXTRACTED]
+- [[dot-get_user_groups_by_id()]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_2]] - `method` [EXTRACTED]
+- [[dot-get_users_by_role()]] - `method` [EXTRACTED]
+- [[dot-is_admin_or_higher()]] - `method` [EXTRACTED]
+- [[dot-is_collaborator_or_higher()]] - `method` [EXTRACTED]
+- [[dot-is_owner()_3]] - `method` [EXTRACTED]
+- [[dot-process_request()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `method` [EXTRACTED]
+- [[dot-test_bearer_header_valid()]] - `calls` [EXTRACTED]
+- [[dot-wire_teams_config()]] - `method` [EXTRACTED]
+- [[Configuration for Role-Based Access Control.]] - `rationale_for` [EXTRACTED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPPolicyConfig]] - `uses` [INFERRED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[RBACManager]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[TestCollaboratorPersistence]] - `uses` [INFERRED]
+- [[TestGroupRegistry]] - `uses` [INFERRED]
+- [[TestRBACConfig]] - `uses` [INFERRED]
+- [[TestRBACManager]] - `uses` [INFERRED]
+- [[TestResolveCaller]] - `uses` [INFERRED]
+- [[WebhookReceiver]] - `uses` [INFERRED]
+- [[_get_rbac_manager()]] - `calls` [EXTRACTED]
+- [[_make_owner_caller()]] - `uses` [INFERRED]
+- [[_make_rbac()]] - `calls` [EXTRACTED]
+- [[_make_rbac()_1]] - `calls` [EXTRACTED]
+- [[_process_inbound()]] - `calls` [EXTRACTED]
+- [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
+- [[auth_login()]] - `uses` [INFERRED]
+- [[contributors.py]] - `imports` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
+- [[forward.py]] - `imports` [EXTRACTED]
+- [[group_workspace.py]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `imports` [EXTRACTED]
+- [[mcp_policy.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[pipeline.py_1]] - `imports` [EXTRACTED]
+- [[privacy_policy.py]] - `imports` [EXTRACTED]
+- [[rbac()_4]] - `uses` [INFERRED]
+- [[rbac()_1]] - `uses` [INFERRED]
+- [[rbac()_2]] - `uses` [INFERRED]
+- [[rbac()_5]] - `uses` [INFERRED]
+- [[rbac()_3]] - `uses` [INFERRED]
+- [[rbac.py]] - `imports` [EXTRACTED]
+- [[rbac_config.py]] - `contains` [EXTRACTED]
+- [[run()_1]] - `uses` [INFERRED]
+- [[set_user_role()]] - `uses` [INFERRED]
+- [[shared_memory.py]] - `imports` [EXTRACTED]
+- [[socauth.py]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
+- [[test_group_isolation.py]] - `imports` [EXTRACTED]
+- [[test_group_rbac.py]] - `imports` [EXTRACTED]
+- [[test_group_workspace_manager.py]] - `imports` [EXTRACTED]
+- [[test_mcp_policy.py]] - `imports` [EXTRACTED]
+- [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `calls` [EXTRACTED]
+- [[test_privacy_policy.py]] - `imports` [EXTRACTED]
+- [[test_rbac.py]] - `imports` [EXTRACTED]
+- [[test_shared_memory.py]] - `imports` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `imports` [EXTRACTED]
+- [[test_soc_bots.py]] - `imports` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
+- [[test_tool_acl.py]] - `imports` [EXTRACTED]
+- [[tool_acl.py]] - `imports` [EXTRACTED]
+- [[trigger_cve_report()]] - `uses` [INFERRED]
+- [[webhook_receiver.py]] - `imports` [EXTRACTED]
+- [[websocket.py]] - `imports` [EXTRACTED]
+- [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

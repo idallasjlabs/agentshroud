@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "TrustConfig"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TrustConfig
 ---
 
 # .test_history_empty_for_new_agent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHistory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

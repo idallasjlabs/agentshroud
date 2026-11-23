@@ -1,29 +1,29 @@
 ---
-source_file: ".cursor/agents/browser.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 473"
-location: "L8"
+community: "Browser — Secure Browser Automation"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_473
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Approval Integration_2]] - `contains` [EXTRACTED]
+- [[Approval Integration_1]] - `contains` [EXTRACTED]
 - [[Audit Logging_2]] - `contains` [EXTRACTED]
-- [[Best Practices_4]] - `contains` [EXTRACTED]
-- [[Core Security Principles_2]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)_2]] - `contains` [EXTRACTED]
+- [[Best Practices_3]] - `contains` [EXTRACTED]
+- [[Core Security Principles_1]] - `contains` [EXTRACTED]
+- [[Example Apple ID Creation (Semi-Automated)_1]] - `contains` [EXTRACTED]
 - [[Limitations_2]] - `contains` [EXTRACTED]
-- [[Risk Levels_2]] - `contains` [EXTRACTED]
-- [[Security Architecture_2]] - `contains` [EXTRACTED]
-- [[Security Configuration_2]] - `contains` [EXTRACTED]
+- [[Risk Levels_1]] - `contains` [EXTRACTED]
+- [[Security Architecture_3]] - `contains` [EXTRACTED]
+- [[Security Configuration_1]] - `contains` [EXTRACTED]
 - [[Security Guarantees_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting_8]] - `contains` [EXTRACTED]
-- [[Usage_43]] - `contains` [EXTRACTED]
-- [[browser_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
+- [[Usage_99]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_473
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L1766"
+community: "TelegramAPIProxy"
+location: "L1784"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/TelegramAPIProxy
 ---
 
 # ._looks_like_encoded_exfil_request()
 
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[dot-test_looks_like_encoded_exfil_request_detects_encoded_data_prompt()]] - `calls` [EXTRACTED]
+- [[dot-test_looks_like_encoded_exfil_request_ignores_conceptual_encoding_question()]] - `calls` [EXTRACTED]
 - [[Detect requests to encode sensitiveinternal content for exfiltration.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

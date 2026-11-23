@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-qa.md"
+source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 974"
-location: "L288"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
+location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_974
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 ---
 
 # H.3 Database Tables for Test Data
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_974
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT

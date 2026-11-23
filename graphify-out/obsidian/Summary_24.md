@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1380"
-location: "L1170"
+community: "[Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)"
+location: "L504"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1380
+  - community/Unreleased__feat/v080-enforcement-hardening_session_3__2026-03-15
 ---
 
 # Summary
 
 ## Connections
-- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
+- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1380
+#graphify/document #graphify/EXTRACTED #community/Unreleased__feat/v080-enforcement-hardening_session_3__2026-03-15

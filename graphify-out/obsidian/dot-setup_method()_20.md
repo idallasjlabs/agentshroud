@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L83"
+community: "middleware.py"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/middlewarepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEnforcementWiring]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._5]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

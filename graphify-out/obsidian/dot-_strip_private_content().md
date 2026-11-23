@@ -14,7 +14,9 @@ tags:
 ## Connections
 - [[dot-get_merged_memory_for_user()]] - `calls` [EXTRACTED]
 - [[dot-get_topic_scoped_memory()]] - `calls` [EXTRACTED]
-- [[Remove private-looking content from shared memory before serving         to non-]] - `rationale_for` [EXTRACTED]
+- [[dot-test_strip_private_content_redacts_api_key()]] - `calls` [EXTRACTED]
+- [[dot-test_strip_private_section()]] - `calls` [EXTRACTED]
+- [[Remove private-looking content from shared memory before serving to non-owner…]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

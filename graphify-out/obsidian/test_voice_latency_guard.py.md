@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_latency_guard.py"
 type: "code"
-community: "Community 77"
+community: "test_voice_latency_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_77
+  - community/test_voice_latency_guardpy
 ---
 
 # test_voice_latency_guard.py
 
 ## Connections
+- [[SCRUM-56 — Hermes voice-turn latency guard. Covers the two config-gated…]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `imports` [EXTRACTED]
 - [[_mock_stream_resp()_1]] - `contains` [EXTRACTED]
 - [[_record_turn_latency()]] - `imports` [EXTRACTED]
@@ -32,4 +33,4 @@ tags:
 - [[test_voice_forward_metadata_module_default_is_off()]] - `contains` [EXTRACTED]
 - [[test_voice_forward_metadata_on_sets_no_memory_tag()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_77
+#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy

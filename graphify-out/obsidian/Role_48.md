@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-crpr/SKILL.md"
+source_file: ".opencode/agents/i-sec.md"
 type: "document"
-community: "Community 633"
-location: "L8"
+community: "Skill: Security Review (SEC)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_633
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_633
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

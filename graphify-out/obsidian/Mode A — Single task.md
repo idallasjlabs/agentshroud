@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-hdev.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 819"
-location: "L124"
+community: "Mode A — Single task"
+location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_819
+  - community/Mode_A__Single_task
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_819
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # audio_init() — mic/speaker codec init
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
+- [[audio_init() — micspeaker codec init]] - code - firmware/voice-terminal/main/audio.c
 
 ## Live Query (requires Dataview plugin)
 

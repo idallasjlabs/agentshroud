@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L29"
+community: "asyncio"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/asyncio
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_33]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter. Args config Configuration…]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/asyncio

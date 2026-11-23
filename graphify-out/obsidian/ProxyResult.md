@@ -1,34 +1,29 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Community 54"
+community: "mcp_proxy.py"
 location: "L72"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_54
+  - graphify/EXTRACTED
+  - community/mcp_proxypy
 ---
 
 # ProxyResult
 
 ## Connections
-- [[.process_tool_call()]] - `references` [EXTRACTED]
-- [[.process_tool_result()_1]] - `references` [EXTRACTED]
-- [[GatewayConfig_4]] - `uses` [INFERRED]
-- [[InspectionResult]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
+- [[dot-process_tool_call()]] - `calls` [EXTRACTED]
+- [[dot-process_tool_result()_1]] - `calls` [EXTRACTED]
 - [[Result of proxying an MCP tool call.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPProxyConfigLoading]] - `uses` [INFERRED]
-- [[TestMCPProxyEndpoint_1]] - `uses` [INFERRED]
+- [[TestMCPProxyEndpoint]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
-- [[__init__.py_8]] - `imports` [EXTRACTED]
-- [[mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[_capture()_3]] - `calls` [EXTRACTED]
+- [[_capture()_4]] - `calls` [EXTRACTED]
+- [[_capture()_5]] - `calls` [EXTRACTED]
+- [[_capture()_6]] - `calls` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_54
+#graphify/code #graphify/EXTRACTED #community/mcp_proxypy

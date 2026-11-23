@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_credential_injector.py"
+source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "i-eightd SKILL — 8D Root Cause Analysis"
-location: "L311"
+community: "tail"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/i-eightd_SKILL__8D_Root_Cause_Analysis
+  - community/tail
 ---
 
 # .test_strips_trailing_newline()
 
 ## Connections
-- [[TestLoadAllSecretFileValues]] - `method` [EXTRACTED]
+- [[TestTail]] - `method` [EXTRACTED]
+- [[tail()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/i-eightd_SKILL__8D_Root_Cause_Analysis
+#graphify/code #graphify/EXTRACTED #community/tail

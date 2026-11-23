@@ -1,17 +1,17 @@
 ---
 source_file: ".omp/mcp.json"
 type: "code"
-community: "Community 404"
+community: ".omp/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_404
+  - community/omp/mcpjson
 ---
 
 # xmind-generator-mcp
 
 ## Connections
-- [[xmind_3]] - `references` [EXTRACTED]
+- [[xmind_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_404
+#graphify/code #graphify/EXTRACTED #community/omp/mcpjson

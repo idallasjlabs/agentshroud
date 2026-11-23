@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L210"
+community: "Delegation"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/Delegation
 ---
 
 # .from_dict()
 
 ## Connections
-- [[A2APolicyAction]] - `calls` [EXTRACTED]
-- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
-- [[Any_46]] - `references` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[dot-test_delegation_to_dict_and_back()]] - `calls` [EXTRACTED]
+- [[Delegation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/Delegation

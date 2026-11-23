@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Community 302"
+community: "_FakeWSConnect"
 location: "L741"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_302
+  - community/_FakeWSConnect
 ---
 
 # Async context manager mimicking websockets.connect().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeWSConnect]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_302
+#graphify/rationale #graphify/EXTRACTED #community/_FakeWSConnect

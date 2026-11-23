@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "rationale"
-community: "Community 446"
+community: "generate_branding_assets.py"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/generate_branding_assetspy
 ---
 
 # Paste transparent logo centred on a solid-colour canvas.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[icon_on_canvas()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_446
+#graphify/rationale #graphify/EXTRACTED #community/generate_branding_assetspy

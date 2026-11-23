@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "GroupWorkspaceManager"
 location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/GroupWorkspaceManager
 ---
 
 # .append_dm_memory()
@@ -16,4 +16,4 @@ tags:
 - [[Append to a user's private DM memory (isolated from every group).]] - `rationale_for` [EXTRACTED]
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

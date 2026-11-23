@@ -1,20 +1,21 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/README.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
 type: "document"
-community: "Community 1235"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1235
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # MCP Auth Reset (MCPM-AUTH-RESET)
 
 ## Connections
-- [[Purpose_90]] - `contains` [EXTRACTED]
-- [[README_95]] - `contains` [EXTRACTED]
-- [[Related Skills_111]] - `contains` [EXTRACTED]
-- [[Usage_115]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
+- [[Purpose_169]] - `contains` [EXTRACTED]
+- [[Related Skills_113]] - `contains` [EXTRACTED]
+- [[Usage_126]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1235
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

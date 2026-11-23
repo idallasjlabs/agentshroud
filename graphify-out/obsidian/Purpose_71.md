@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ti/README.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 803"
-location: "L6"
+community: "falco-rules.yaml"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/falco-rulesyaml
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)_1]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml

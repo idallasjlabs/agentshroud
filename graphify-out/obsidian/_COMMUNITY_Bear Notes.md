@@ -1,26 +1,24 @@
 ---
 type: community
-cohesion: 0.18
 members: 11
 ---
 
 # Bear Notes
 
-**Cohesion:** 0.18 - loosely connected
 **Members:** 11 nodes
 
 ## Members
-- [[ADR-007-zero-config-security]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[ADR-007 Zero-Config Security (docker-compose up = fully secured)]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Auto-Configuration Features]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Configuration Hierarchy]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Consequences_6]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Context_9]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Decision_9]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Mitigation_2]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Negative Consequences_5]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Positive Consequences_5]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
-- [[Status_9]] - document - docs/architecture/adr/ADR-007-zero-config-security.md
+- [[Apple Notes CLI]] - document - skills/openclaw/apple-notes/SKILL.md
+- [[Bear Notes]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Common Commands_2]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Configuration_25]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Getting a Bear Token]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Notes_10]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[Options]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[apple-notesSKILL]] - document - skills/openclaw/apple-notes/SKILL.md
+- [[bear-notesSKILL]] - document - skills/openclaw/bear-notes/SKILL.md
+- [[grizzly CLI (Bear notes)]] - concept - skills/openclaw/bear-notes/SKILL.md
+- [[memo CLI (antoniorodrmemo)]] - concept - skills/openclaw/apple-notes/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

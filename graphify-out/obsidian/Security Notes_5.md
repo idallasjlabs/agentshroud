@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 979"
-location: "L58"
+community: "API Keys Setup Guide"
+location: "L246"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_979
+  - community/API_Keys_Setup_Guide
 ---
 
 # Security Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[API Keys Setup Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_979
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

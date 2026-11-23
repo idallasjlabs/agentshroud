@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 133"
+community: "SkillGuard"
 location: "L135"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_133
+  - graphify/EXTRACTED
+  - community/SkillGuard
 ---
 
 # TestExfiltration
 
 ## Connections
-- [[.test_curl_pipe_to_shell_blocks()]] - `method` [EXTRACTED]
-- [[.test_requests_post_to_external_host_flags()]] - `method` [EXTRACTED]
-- [[.test_urllib_urlopen_flags()]] - `method` [EXTRACTED]
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
+- [[dot-test_curl_pipe_to_shell_blocks()]] - `method` [EXTRACTED]
+- [[dot-test_requests_post_to_external_host_flags()]] - `method` [EXTRACTED]
+- [[dot-test_urllib_urlopen_flags()]] - `method` [EXTRACTED]
 - [[Severity]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

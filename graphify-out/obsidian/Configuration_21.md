@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/api/integration-guide.md"
 type: "document"
-community: "Community 617"
-location: "L89"
+community: "OpenSCAP"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/OpenSCAP
 ---
 
 # Configuration
 
 ## Connections
-- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[OpenClaw Integration (Primary Target)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

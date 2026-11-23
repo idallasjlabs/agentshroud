@@ -1,0 +1,17 @@
+---
+source_file: "gateway/ssh_proxy/proxy.py"
+type: "rationale"
+community: "SSHProxy"
+location: "L206"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/SSHProxy
+---
+
+# Validate a structured /ssh/write_file request (host, path, content). Returns…
+
+## Connections
+- [[dot-validate_write_file()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

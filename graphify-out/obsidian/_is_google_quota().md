@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "Community 788"
+community: "is_quota_exhausted"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/is_quota_exhausted
 ---
 
 # _is_google_quota()
@@ -15,4 +15,4 @@ tags:
 - [[is_quota_exhausted()]] - `calls` [EXTRACTED]
 - [[llm_quota_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_788
+#graphify/code #graphify/EXTRACTED #community/is_quota_exhausted

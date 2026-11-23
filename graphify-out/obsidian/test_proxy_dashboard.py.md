@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_proxy_dashboard.py"
 type: "code"
-community: "Community 163"
+community: "ProxyDashboard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_163
+  - community/ProxyDashboard
 ---
 
 # test_proxy_dashboard.py
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[ProxyDashboard]] - `imports` [EXTRACTED]
 - [[ProxyStatusReport]] - `imports` [EXTRACTED]
+- [[Tests for the proxy dashboard status display.]] - `rationale_for` [EXTRACTED]
+- [[proxy_status.py_2]] - `imports_from` [EXTRACTED]
 - [[test_dashboard_audit_broken()]] - `contains` [EXTRACTED]
 - [[test_dashboard_audit_status()]] - `contains` [EXTRACTED]
 - [[test_dashboard_canary_failed()]] - `contains` [EXTRACTED]
@@ -28,4 +30,4 @@ tags:
 - [[test_dashboard_uptime()]] - `contains` [EXTRACTED]
 - [[test_status_report_to_display()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_163
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

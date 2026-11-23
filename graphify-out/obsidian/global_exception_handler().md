@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 143"
+community: "ingest_api/models.py"
 location: "L411"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/modelspy
 ---
 
 # global_exception_handler()
 
 ## Connections
-- [[Catch-all error handler      Never leaks stack traces or internal details to cli]] - `rationale_for` [EXTRACTED]
-- [[Exception_1]] - `references` [EXTRACTED]
-- [[JSONResponse_1]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - `rationale_for` [EXTRACTED]
+- [[Exception_5]] - `references` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
+- [[exception_handler]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_global_exception_handler()]] - `calls` [EXTRACTED]
 - [[test_global_exception_handler_http_exception()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

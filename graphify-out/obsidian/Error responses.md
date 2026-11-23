@@ -1,12 +1,12 @@
 ---
 source_file: "docs/api/api-reference.md"
 type: "document"
-community: "Community 546"
+community: "Integration Guide"
 location: "L157"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_546
+  - community/Integration_Guide
 ---
 
 # Error responses
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[API Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_546
+#graphify/document #graphify/EXTRACTED #community/Integration_Guide

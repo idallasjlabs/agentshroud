@@ -1,21 +1,20 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 299"
-location: "L125"
+community: "Hermes Agent — Connection Setup"
+location: "L217"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Security Model
 
 ## Connections
-- [[Approval Workflow]] - `contains` [EXTRACTED]
-- [[Audit Trail]] - `contains` [EXTRACTED]
-- [[Risk Classification]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
-- [[URL Access Control_1]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
+- [[Inbound Path]] - `contains` [EXTRACTED]
+- [[Mitigations in Place]] - `contains` [EXTRACTED]
+- [[Outbound Path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

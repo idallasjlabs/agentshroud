@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestDocumentTagging"
-location: "L188"
+community: "test_security_audit.py"
+location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDocumentTagging
+  - community/test_security_auditpy
 ---
 
 # .guard()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestDocumentTagging]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `calls` [EXTRACTED]
+- [[TestContextGuard_1]] - `method` [EXTRACTED]
+- [[fixture_124]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

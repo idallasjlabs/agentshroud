@@ -1,20 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Community 616"
-location: "L44"
+community: "mcp_config.py"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_616
+  - community/mcp_configpy
 ---
 
 # Function Details
 
 ## Connections
-- [[DNSFilter._detect_tunneling(domain)]] - `contains` [EXTRACTED]
-- [[DNSFilter.check(domain, agent_id)]] - `contains` [EXTRACTED]
-- [[EntropyCalculator.shannon_entropy(s)]] - `contains` [EXTRACTED]
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig.from_dict(data)]] - `contains` [EXTRACTED]
+- [[PermissionLevel comparison operators]] - `contains` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_616
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

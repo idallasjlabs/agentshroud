@@ -1,32 +1,34 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+members: 21
 ---
 
 # AgentShroud macOS App Icon (1024x1024, Rounded Squircle)
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[auth_headers()_1]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_alerts_summary_with_alerts()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_dashboard_endpoints.py]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_returns_entries()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_clamped()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_logs_recent_tail_param()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_includes_pipeline_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_proxy_status_returns_stats()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_online()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[test_ssh_hosts_returns_hosts()]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[Agent Isolation Module Badge Icon]] - image - branding/icons/modules/agent-isolation-256x256.png
+- [[AgentShroud App Icon (64x64)]] - image - branding/icons/app/icon-64x64.png
+- [[AgentShroud BadgeAvatar Logo Variant (120x120)]] - image - branding/logos/variants/badge-120x120.png
+- [[AgentShroud Brand Collateral Mockup]] - image - branding/logos/png/logo-mockup.png
+- [[AgentShroud Logo (SVG Wrapper, Embedded Raster)]] - image - branding/logos/svg/logo.svg
+- [[AgentShroud Logo - GlowTransparent Variant]] - image - branding/logos/png/logo-transparent.png
+- [[AgentShroud Primary Logo Lockup]] - image - branding/logos/png/logo.png
+- [[AgentShroud macOS App Icon (1024x1024, Rounded Squircle)]] - image - branding/icons/app/icon-macos-rounded-1024x1024.png
+- [[Approval Queue Module Badge Icon]] - image - branding/icons/modules/approval-queue-256x256.png
+- [[Audit Ledger Module Badge Icon]] - image - branding/icons/modules/audit-ledger-256x256.png
+- [[Credential Isolation Module Badge Icon]] - image - branding/icons/modules/credential-iso-256x256.png
+- [[Drift Detector Module Badge Icon]] - image - branding/icons/modules/drift-detector-256x256.png
+- [[Egress Filter Module Badge Icon]] - image - branding/icons/modules/egress-filter-256x256.png
+- [[Encrypted Store Module Badge Icon]] - image - branding/icons/modules/encrypted-store-256x256.png
+- [[HTTP Proxy Module Badge Icon]] - image - branding/icons/modules/http-proxy-256x256.png
+- [[Kill Switch Module Badge Icon]] - image - branding/icons/modules/kill-switch-256x256.png
+- [[Live Dashboard Module Badge Icon]] - image - branding/icons/modules/live-dashboard-256x256.png
+- [[PII Sanitizer Module Badge Icon]] - image - branding/icons/modules/pii-sanitizer-256x256.png
+- [[Prompt Guard Module Badge Icon]] - image - branding/icons/modules/prompt-guard-256x256.png
+- [[SSH Proxy Module Badge Icon]] - image - branding/icons/modules/ssh-proxy-256x256.png
+- [[Trust Manager Module Badge Icon]] - image - branding/icons/modules/trust-manager-256x256.png
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +36,3 @@ members: 17
 TABLE source_file, type FROM #community/AgentShroud_macOS_App_Icon_1024x1024_Rounded_Squircle
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (4)]]
-- 2 edges to [[_COMMUNITY_AgentShroud macOS App Icon (1024x1024, Rounded Squircle) (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (3)]]
-
-## Top bridge nodes
-- [[test_dashboard_endpoints.py]] - degree 20, connects to 3 communities

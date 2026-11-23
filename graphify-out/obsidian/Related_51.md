@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/pipeline.py.md"
 type: "document"
-community: "Community 567"
-location: "L82"
+community: "pipeline.py — Security Pipeline"
+location: "L345"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_567
+  - community/pipelinepy__Security_Pipeline
 ---
 
 # Related
 
 ## Connections
-- [[oauth_security.py_2]] - `contains` [EXTRACTED]
+- [[pipeline.py — Security Pipeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_567
+#graphify/document #graphify/EXTRACTED #community/pipelinepy__Security_Pipeline

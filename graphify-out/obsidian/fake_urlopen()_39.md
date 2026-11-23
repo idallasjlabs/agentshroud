@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L4635"
+community: ".test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator"
+location: "L5077"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_status_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/test_self_diagnostic_with_punctuation_is_handled_locally_for_collaborator

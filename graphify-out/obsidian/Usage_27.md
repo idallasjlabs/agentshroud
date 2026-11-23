@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-ps/README.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Community 177"
-location: "L10"
+community: "gitleaks.toml"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/gitleakstoml
 ---
 
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

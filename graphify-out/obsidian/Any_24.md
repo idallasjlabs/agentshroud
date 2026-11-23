@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 1787"
-location: "L1338"
+community: "._handler"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1787
+  - community/_handler
 ---
 
 # Any
 
 ## Connections
-- [[._filter_streaming_event()]] - `references` [EXTRACTED]
-- [[.proxy_messages_streaming()]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1787
+#graphify/code #graphify/EXTRACTED #community/_handler

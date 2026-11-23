@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "Any"
-location: "L34"
+community: "CanaryTripwire"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/CanaryTripwire
 ---
 
 # .test_custom_config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[Test custom configuration values._1]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
+- [[CanaryConfig_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

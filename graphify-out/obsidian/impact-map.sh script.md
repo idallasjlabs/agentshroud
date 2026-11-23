@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/impact-map.sh"
 type: "code"
-community: "Community 2175"
+community: "impact-map.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2175
+  - community/impact-mapsh
 ---
 
 # impact-map.sh script
@@ -15,4 +15,4 @@ tags:
 - [[impact-map.sh]] - `contains` [EXTRACTED]
 - [[list()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2175
+#graphify/code #graphify/EXTRACTED #community/impact-mapsh

@@ -1,22 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Community 617"
-location: "L41"
+community: "env_guard.py"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/env_guardpy
 ---
 
 # Function Details
 
 ## Connections
-- [[PromptGuard.__init__(block_threshold, warn_threshold, custom_patterns)]] - `contains` [EXTRACTED]
-- [[PromptGuard._check_encoded_content(text)]] - `contains` [EXTRACTED]
-- [[PromptGuard._check_unicode_tricks(text)]] - `contains` [EXTRACTED]
-- [[PromptGuard.scan(text)]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - `contains` [EXTRACTED]
+- [[EnvironmentGuard.scrub_command_output(output, command)]] - `contains` [EXTRACTED]
+- [[check_command(cmd)]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[scrub_output(text)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

@@ -1,23 +1,23 @@
 ---
-source_file: ".github/agents/i-daedalus.agent.md"
+source_file: ".cursor/agents/daedalus.md"
 type: "document"
-community: "Community 1876"
-location: "L11"
+community: "Daedalus — Concept Illustrator"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1876
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Daedalus — Concept Illustrator
 
 ## Connections
-- [[Input Requirements_33]] - `contains` [EXTRACTED]
-- [[Output Format_46]] - `contains` [EXTRACTED]
-- [[Persona_26]] - `contains` [EXTRACTED]
-- [[Quality Checklist_30]] - `contains` [EXTRACTED]
-- [[Role_120]] - `contains` [EXTRACTED]
-- [[System Prompt_26]] - `contains` [EXTRACTED]
-- [[i-daedalus.agent]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsdaedalus]] - `contains` [EXTRACTED]
+- [[Input Requirements_18]] - `contains` [EXTRACTED]
+- [[Output Format_32]] - `contains` [EXTRACTED]
+- [[Persona_12]] - `contains` [EXTRACTED]
+- [[Quality Checklist_18]] - `contains` [EXTRACTED]
+- [[Role_59]] - `contains` [EXTRACTED]
+- [[System Prompt_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1876
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

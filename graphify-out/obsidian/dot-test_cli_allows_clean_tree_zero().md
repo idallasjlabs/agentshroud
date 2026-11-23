@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "AuditStore"
+community: "test_skill_guard.py"
 location: "L529"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/test_skill_guardpy
 ---
 
 # .test_cli_allows_clean_tree_zero()
 
 ## Connections
-- [[Path_30]] - `references` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
 - [[TestScanEntrypoint]] - `method` [EXTRACTED]
 - [[_run_scan_cli()]] - `calls` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

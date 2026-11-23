@@ -1,12 +1,11 @@
 ---
-source_file: "chatbot/main.py"
+source_file: ""
 type: "code"
-community: "egress_filter.py"
-location: "L126"
+community: "chatbot/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/chatbot/mainpy
 ---
 
 # FastAPI
@@ -15,4 +14,4 @@ tags:
 - [[chatbotmain.py]] - `imports_from` [EXTRACTED]
 - [[lifespan()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "ModuleStatsCollector"
+community: "EnhancedApprovalQueue"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[FakeFacade]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

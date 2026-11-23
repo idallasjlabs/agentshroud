@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/redteam/04-separation-of-privilege.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 670"
-location: "L250"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_670
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Verification
 
 ## Connections
-- [[Make gateway source code, config, and security policies read-only to the agent]] - `contains` [EXTRACTED]
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_670
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: ".agents/skills/athena/SKILL.md"
 type: "document"
-community: "Community 583"
+community: "Athena — Knowledge Distiller"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_583
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

@@ -1,22 +1,24 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 254"
-location: "L114"
+community: "ingest_api/config.py"
+location: "L139"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # LedgerEntry
 
 ## Connections
-- [[.get_entry()]] - `references` [EXTRACTED]
-- [[.query()]] - `calls` [EXTRACTED]
-- [[.record()]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[dot-get_entry()]] - `references` [EXTRACTED]
+- [[dot-record()_1]] - `references` [EXTRACTED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[Single entry from the data ledger]] - `rationale_for` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[ledger.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

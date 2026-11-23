@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 491"
+community: "SecureBrowser Security Policies"
 location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_491
+  - community/SecureBrowser_Security_Policies
 ---
 
 # Approval Workflows
@@ -14,7 +14,6 @@ tags:
 ## Connections
 - [[Approval Decision Criteria]] - `contains` [EXTRACTED]
 - [[Approval Request Format]] - `contains` [EXTRACTED]
-- [[ApprovalRequest_5]] - `contains` [EXTRACTED]
 - [[SecureBrowser Security Policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_491
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

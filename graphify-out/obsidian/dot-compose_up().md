@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L147"
+community: "AppleContainerEngine"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/AppleContainerEngine
 ---
 
 # .compose_up()
 
 ## Connections
-- [[Bring up services from a compose file.]] - `rationale_for` [EXTRACTED]
-- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

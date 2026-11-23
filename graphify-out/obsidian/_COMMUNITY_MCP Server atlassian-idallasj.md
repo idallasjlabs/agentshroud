@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # MCP Server: atlassian-idallasj
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[DevSecOps Skill]] - document - .agents/skills/i-devsecops/SKILL.md
+- [[MCP Server atlassian-idallasj]] - code - .mcp.json
 
 ## Live Query (requires Dataview plugin)
 

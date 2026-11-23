@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "Community 30"
+community: "ApprovalStore"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ApprovalStore
 ---
 
 # Submit 100 requests concurrently — all should succeed.
 
 ## Connections
-- [[.test_100_concurrent_submissions()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_100_concurrent_submissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore

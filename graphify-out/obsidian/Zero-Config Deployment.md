@@ -1,17 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "Zero-Config Deployment"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/Zero-Config_Deployment
 ---
 
 # Zero-Config Deployment
 
-## Connections
-- [[setup-guide]] - `references` [EXTRACTED]
-- [[system-requirements]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/Zero-Config_Deployment

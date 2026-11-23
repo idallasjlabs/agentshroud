@@ -1,23 +1,23 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 39"
+community: ".new"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/new
 ---
 
 # run_cves()
 
 ## Connections
-- [[.get()_1]] - `calls` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `calls` [EXTRACTED]
+- [[GatewayClient_1]] - `references` [EXTRACTED]
 - [[Option]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 - [[String]] - `references` [EXTRACTED]
-- [[T]] - `references` [EXTRACTED]
+- [[T_1]] - `references` [EXTRACTED]
 - [[cves_counts_array_when_no_total()]] - `calls` [EXTRACTED]
 - [[cves_formats_summary()]] - `calls` [EXTRACTED]
 - [[cves_reads_nested_summary()]] - `calls` [EXTRACTED]
@@ -25,7 +25,6 @@ tags:
 - [[cves_reports_unknown_bot_error()]] - `calls` [EXTRACTED]
 - [[cves_with_bot_id_appends_query()]] - `calls` [EXTRACTED]
 - [[format_cves()]] - `calls` [EXTRACTED]
-- [[main()_1]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/new

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 2172"
+community: "AgentShroud Operations Runbook"
 location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2172
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # Stopping the System
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[1. Starting and Stopping AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2172
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

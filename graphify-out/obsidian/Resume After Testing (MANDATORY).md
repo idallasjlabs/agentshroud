@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ps.md"
+source_file: ".agents/skills/i-ps/SKILL.md"
 type: "document"
-community: "Community 921"
-location: "L126"
+community: "Pre-Deployment Checklist"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_921
+  - community/Pre-Deployment_Checklist
 ---
 
 # Resume After Testing (MANDATORY)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Service Control Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_921
+#graphify/document #graphify/EXTRACTED #community/Pre-Deployment_Checklist

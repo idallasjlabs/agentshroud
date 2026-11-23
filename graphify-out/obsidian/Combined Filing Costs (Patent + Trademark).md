@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 867"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L858"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_867
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # Combined Filing Costs (Patent + Trademark)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SECTION 6 ESTIMATED COSTS]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_867
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

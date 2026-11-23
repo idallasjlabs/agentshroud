@@ -1,18 +1,17 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-24-final.md"
 type: "document"
-community: "Community 987"
+community: "AgentShroud Phase Review — 2026-02-24-final"
 location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_987
+  - community/AgentShroud_Phase_Review__2026-02-24-final
 ---
 
 # 📊 **P2 — Operational Excellence (Medium Value)**
 
 ## Connections
 - [[3. Remaining Work — Prioritized by Security Value]] - `contains` [EXTRACTED]
-- [[3. Remaining Work — Prioritized by Value]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_987
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-02-24-final

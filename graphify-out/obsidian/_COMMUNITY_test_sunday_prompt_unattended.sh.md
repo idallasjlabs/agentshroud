@@ -1,19 +1,18 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 5
 ---
 
 # test_sunday_prompt_unattended.sh
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Architecture_2]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Files]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Security Features]] - document - docs/reference/BROWSER_FETCH_SKILL.md
-- [[Technical Details]] - document - docs/reference/BROWSER_FETCH_SKILL.md
+- [[fail()_3]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
+- [[pass()_2]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
+- [[rc_ctx()]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
+- [[test_sunday_prompt_unattended.sh]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
+- [[test_sunday_prompt_unattended.sh script]] - code - tests/startup_smoke/test_sunday_prompt_unattended.sh
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,9 +20,3 @@ members: 4
 TABLE source_file, type FROM #community/test_sunday_prompt_unattendedsh
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Browser-Fetch Skill for 1Password Share Links]]
-
-## Top bridge nodes
-- [[Technical Details]] - degree 4, connects to 1 community

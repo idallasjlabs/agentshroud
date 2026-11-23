@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 613"
-location: "L74"
+community: "log_sanitizer.py"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/log_sanitizerpy
 ---
 
 # Related
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

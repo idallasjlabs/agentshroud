@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Community 177"
-location: "L10"
+community: "AGENTSHROUD_CONFIG"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/AGENTSHROUD_CONFIG
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG

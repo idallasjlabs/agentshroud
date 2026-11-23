@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: ".agents/skills/browser/README.md"
 type: "document"
-community: "Community 1238"
+community: "Browser — Secure Browser Automation"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1238
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1238
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-sav.agent.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 328"
-location: "L401"
+community: "Oracle — Feedback Analyst"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_328
+  - community/Oracle__Feedback_Analyst
 ---
 
-# OUTPUT FORMAT
+# Output Format
 
 ## Connections
-- [[System Audit Vault (Obsidian)_3]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_328
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

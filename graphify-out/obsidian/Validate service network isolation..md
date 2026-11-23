@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "rationale"
-community: "Community 71"
+community: "NetworkValidator"
 location: "L230"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_71
+  - community/NetworkValidator
 ---
 
 # Validate service network isolation.
 
 ## Connections
-- [[._validate_service_network_isolation()]] - `rationale_for` [EXTRACTED]
+- [[dot-_validate_service_network_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_71
+#graphify/rationale #graphify/EXTRACTED #community/NetworkValidator

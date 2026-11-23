@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "Community 420"
+community: "plan_remediation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/plan_remediation
 ---
 
 # test_auto_remediate_cves.py
@@ -15,11 +15,8 @@ tags:
 - [[TestPlanAgainstRealRegistry]] - `contains` [EXTRACTED]
 - [[TestPlanRemediation]] - `contains` [EXTRACTED]
 - [[TestVersionPinIO]] - `contains` [EXTRACTED]
-- [[Tests for scriptsauto_remediate_cves.py — automated CVE remediation planning.]] - `rationale_for` [EXTRACTED]
-- [[_OPENCLAW_CVE_REGISTRY]] - `references` [EXTRACTED]
-- [[_entry()]] - `contains` [EXTRACTED]
-- [[plan_remediation]] - `references` [EXTRACTED]
-- [[read_pin]] - `references` [EXTRACTED]
-- [[write_pin]] - `references` [EXTRACTED]
+- [[Tests for scriptsauto_remediate_cves.py — automated CVE remediation planning.…]] - `rationale_for` [EXTRACTED]
+- [[_entry()_1]] - `contains` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_420
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

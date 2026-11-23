@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # .test_content_hashes_are_unique()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Different content should produce different hashes.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
+- [[asyncio_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

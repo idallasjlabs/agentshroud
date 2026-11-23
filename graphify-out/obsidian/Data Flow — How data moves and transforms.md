@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ti.md"
+source_file: ".agents/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 891"
-location: "L98"
+community: "Skill: Technical Illustrator (TI)"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_891
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Data Flow — How data moves and transforms
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Diagram Types and Data Lakehouse Examples]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_891
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

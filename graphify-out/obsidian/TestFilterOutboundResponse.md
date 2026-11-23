@@ -1,25 +1,21 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 68"
+community: "TestFilterOutboundResponse"
 location: "L872"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_68
+  - community/TestFilterOutboundResponse
 ---
 
 # TestFilterOutboundResponse
 
 ## Connections
-- [[.test_exception_fails_open()_1]] - `method` [EXTRACTED]
-- [[.test_filter_applied()]] - `method` [EXTRACTED]
-- [[.test_filter_not_applied()]] - `method` [EXTRACTED]
-- [[.test_no_filter_passthrough()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_exception_fails_open()_1]] - `method` [EXTRACTED]
+- [[dot-test_filter_applied()]] - `method` [EXTRACTED]
+- [[dot-test_filter_not_applied()]] - `method` [EXTRACTED]
+- [[dot-test_no_filter_passthrough()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_68
+#graphify/code #graphify/EXTRACTED #community/TestFilterOutboundResponse

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "._record_leakage()"
+community: "EnvironmentGuard"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_record_leakage
+  - community/EnvironmentGuard
 ---
 
 # .check_command_execution()
@@ -14,8 +14,7 @@ tags:
 ## Connections
 - [[dot-_contains_env_access_patterns()]] - `calls` [EXTRACTED]
 - [[dot-_record_leakage()]] - `calls` [EXTRACTED]
-- [[Check if command execution should be blocked to prevent environment leakage.]] - `rationale_for` [EXTRACTED]
+- [[Check if command execution should be blocked to prevent environment leakage.…]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
-- [[check_command()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_record_leakage
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

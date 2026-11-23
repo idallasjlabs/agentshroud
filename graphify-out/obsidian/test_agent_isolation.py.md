@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agent_isolation.py"
 type: "code"
-community: "Community 52"
+community: "AgentRegistry"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/AgentRegistry
 ---
 
 # test_agent_isolation.py
@@ -21,6 +21,8 @@ tags:
 - [[TestNetworkIsolation]] - `contains` [EXTRACTED]
 - [[TestSharedNothing]] - `contains` [EXTRACTED]
 - [[TestVolumeIsolation]] - `contains` [EXTRACTED]
+- [[Tests for gatewaysecurityagent_isolation.py — verify shared-nothing isolation.]] - `rationale_for` [EXTRACTED]
 - [[_make_config()]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_52
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

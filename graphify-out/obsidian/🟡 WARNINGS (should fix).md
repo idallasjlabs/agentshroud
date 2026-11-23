@@ -1,22 +1,20 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Community 1561"
-location: "L65"
+community: "2. Security Analysis"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1561
+  - community/2_Security_Analysis
 ---
 
 # 🟡 WARNINGS (should fix)
 
 ## Connections
-- [[3. Round 2 Findings]] - `contains` [EXTRACTED]
-- [[W1 Duplicate `import time` in `dashboard.py`]] - `contains` [EXTRACTED]
-- [[W2 Redundant function-level `import threading` in `lifespan.py`]] - `contains` [EXTRACTED]
-- [[W3 Redundant function-level `import fnmatch` in `main.py`]] - `contains` [EXTRACTED]
-- [[W4 Tailscale image not pinned to SHA256 digest]] - `contains` [EXTRACTED]
-- [[W5 Hardcoded owner ID fallback `'1234567890'` in `lifespan.py`]] - `contains` [EXTRACTED]
+- [[2. Findings]] - `contains` [EXTRACTED]
+- [[W1 `if True  keep indentation` anti-pattern in tests]] - `contains` [EXTRACTED]
+- [[W2 Stale compose snapshot committed to tree]] - `contains` [EXTRACTED]
+- [[W3 Empty test file placeholder]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1561
+#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # i-value-stream-mapping SKILL.md (minimal stub)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SharedMemoryManager User Private Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[i-value-stream-mapping SKILL.md (minimal stub)]] - document - docker/config/hermes/skills/i-value-stream-mapping/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

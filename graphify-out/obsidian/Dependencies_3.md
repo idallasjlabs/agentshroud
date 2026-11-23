@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 712"
-location: "L249"
+community: "Skill: UX Expert (UX)"
+location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Skill_UX_Expert_UX
 ---
 
 # Dependencies
 
 ## Connections
-- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

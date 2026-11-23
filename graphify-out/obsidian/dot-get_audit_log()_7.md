@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L174"
+community: "SecureBrowser"
+location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/SecureBrowser
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_flagged_queries()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `references` [EXTRACTED]
+- [[Return complete audit log_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

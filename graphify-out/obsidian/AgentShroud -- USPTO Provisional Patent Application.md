@@ -1,18 +1,18 @@
 ---
 source_file: "docs/USPTO_PROVISIONAL_PATENT_APPLICATION.md"
 type: "document"
-community: "Community 867"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_867
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # AgentShroud -- USPTO Provisional Patent Application
 
 ## Connections
-- [[Filing Reference]] - `contains` [EXTRACTED]
+- [[Filing Reference_1]] - `contains` [EXTRACTED]
 - [[SECTION 1 COVER SHEET (Form PTOSB16)]] - `contains` [EXTRACTED]
 - [[SECTION 2 WRITTEN DESCRIPTION OF THE INVENTION]] - `contains` [EXTRACTED]
 - [[SECTION 3 DRAWINGS]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[SECTION 7 FILING CHECKLIST]] - `contains` [EXTRACTED]
 - [[USPTO_PROVISIONAL_PATENT_APPLICATION]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_867
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

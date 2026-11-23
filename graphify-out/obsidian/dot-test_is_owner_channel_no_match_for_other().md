@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "AsyncMock"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AsyncMock
 ---
 
 # .test_is_owner_channel_no_match_for_other()
@@ -15,4 +15,4 @@ tags:
 - [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

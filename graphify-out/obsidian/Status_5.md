@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "shortcuts/README.md"
 type: "document"
-community: "Community 236"
-location: "L3"
+community: "iOS / macOS Shortcuts — Relay to AgentShroud"
+location: "L324"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_236
+  - community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud
 ---
 
 # Status
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
+- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_236
+#graphify/document #graphify/EXTRACTED #community/iOS_/_macOS_Shortcuts__Relay_to_AgentShroud

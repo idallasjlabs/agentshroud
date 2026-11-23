@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L1398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # set_group_mode()
 
 ## Connections
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[SetModeRequest]] - `references` [EXTRACTED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[persist_group_collab_mode()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[put]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

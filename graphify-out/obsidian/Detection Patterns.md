@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-architecture.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
 type: "document"
-community: "Community 164"
-location: "L249"
+community: "mcp_inspector.py"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/mcp_inspectorpy
 ---
 
 # Detection Patterns
 
 ## Connections
-- [[PII Detection System]] - `contains` [EXTRACTED]
+- [[mcp_inspector.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/mcp_inspectorpy

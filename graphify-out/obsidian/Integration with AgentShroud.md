@@ -1,19 +1,19 @@
 ---
 source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 193"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
 location: "L276"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_193
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Integration with AgentShroud
 
 ## Connections
-- [[1Password Integration_2]] - `contains` [EXTRACTED]
+- [[1Password Integration]] - `contains` [EXTRACTED]
 - [[Gateway Integration]] - `contains` [EXTRACTED]
 - [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_193
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

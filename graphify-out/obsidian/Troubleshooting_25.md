@@ -1,21 +1,21 @@
 ---
-source_file: "docker/QUICKSTART.md"
+source_file: ".github/agents/i-mcpm-aws-profile.agent.md"
 type: "document"
-community: "Community 258"
-location: "L232"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[API Key Error]] - `contains` [EXTRACTED]
-- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
-- [[Container Won't Start]] - `contains` [EXTRACTED]
-- [[Gateway Returns 401 Unauthorized]] - `contains` [EXTRACTED]
-- [[OpenClaw Not Responding]] - `contains` [EXTRACTED]
+- [[Access Denied_5]] - `contains` [EXTRACTED]
+- [[Token expired (SSO)_5]] - `contains` [EXTRACTED]
+- [[Unable to locate credentials_5]] - `contains` [EXTRACTED]
+- [[MCP Not Using Profile_5]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

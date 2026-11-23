@@ -1,21 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Community 677"
-location: "L39"
+community: "forwarder.py"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_677
+  - community/forwarderpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
-- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.forward(path, body, headers, method)]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.get_stats()]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.health_check()]] - `contains` [EXTRACTED]
+- [[HTTPForwarder.set_response_handler(handler)]] - `contains` [EXTRACTED]
+- [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_677
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

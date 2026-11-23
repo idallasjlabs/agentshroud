@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/TAILSCALE_COMMANDS.md"
+source_file: "docs/integrations/README.md"
 type: "document"
-community: "Community 764"
-location: "L71"
+community: "Integrations Documentation"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/Integrations_Documentation
 ---
 
 # Current Status
 
 ## Connections
-- [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
+- [[Integrations Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_764
+#graphify/document #graphify/EXTRACTED #community/Integrations_Documentation

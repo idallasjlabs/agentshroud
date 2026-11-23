@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sav/README.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: "Community 2094"
-location: "L9"
+community: "Daedalus — Concept Illustrator"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2094
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2094
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

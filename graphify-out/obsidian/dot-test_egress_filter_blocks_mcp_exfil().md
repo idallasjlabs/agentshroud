@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "EgressPolicy"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/EgressPolicy
 ---
 
 # .test_egress_filter_blocks_mcp_exfil()
@@ -16,4 +16,4 @@ tags:
 - [[EgressPolicy]] - `calls` [INFERRED]
 - [[TestMCPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

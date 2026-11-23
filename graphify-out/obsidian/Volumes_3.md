@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
 type: "document"
-community: "Mode A — Single task (4)"
-location: "L44"
+community: "docker-compose.yml"
+location: "L129"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mode_A__Single_task_4
+  - community/docker-composeyml
 ---
 
 # Volumes
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task_4
+#graphify/document #graphify/EXTRACTED #community/docker-composeyml

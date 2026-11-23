@@ -1,32 +1,33 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+members: 20
 ---
 
 # package_skill
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[A. One-Click Install & Updates]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[B. Professional Branded Web Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[C. TextCLI Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Collaborators_2]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[D. SSH Chat Interface]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[E. Full Documentation]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[F. Final Hardening + Release]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[G. Trademark  IP]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Infrastructure_4]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[Summary_18]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[v1.0.0 — Fortress (Polish + Public Release)]] - document - docs/planning/MASTER-FEATURE-LIST.md
-- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[dot-create_skill()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-setUp()_2]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-tearDown()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_allows_nested_regular_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_packages_normal_files()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_rejects_symlink_directory()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[dot-test_rejects_symlink_to_external_file()]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[Basic validation of a skill]] - rationale - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Package a skill folder into a .skill file. Args skill_path Path to the skill…]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[Quick validation script for skills - minimal version]] - rationale - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[Regression tests for skill packaging security behavior.]] - rationale - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[Skill Packager - Creates a distributable .skill file of a skill folder Usage…]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[TestCase]] - code
+- [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[main()_30]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
+- [[test_package_skill.py]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
+- [[validate_skill()]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,11 +35,3 @@ members: 17
 TABLE source_file, type FROM #community/package_skill
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_test-sunday-upgrade-scan.sh]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ — OpenClaw Local-Model Tool-Use Instructions]]
-
-## Top bridge nodes
-- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities

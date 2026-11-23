@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "RedactionResult"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # .test_initialization()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

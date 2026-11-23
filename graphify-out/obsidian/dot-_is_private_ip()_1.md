@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "LLMProxy"
-location: "L258"
+community: "DNSFilterConfig"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/DNSFilterConfig
 ---
 
 # ._is_private_ip()
 
 ## Connections
-- [[dot-_is_ssrf()]] - `calls` [EXTRACTED]
-- [[dot-analyze()]] - `calls` [EXTRACTED]
-- [[dot-analyze_and_pin()]] - `calls` [EXTRACTED]
-- [[Check if an IP address is privatereservedloopback.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[Return True if the IP address is in a private  loopback range.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

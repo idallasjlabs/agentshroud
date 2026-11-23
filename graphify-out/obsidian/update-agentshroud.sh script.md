@@ -1,18 +1,19 @@
 ---
 source_file: "scripts/update-agentshroud.sh"
 type: "code"
-community: "Community 227"
+community: "check-vendor-compat.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/check-vendor-compatsh
 ---
 
 # update-agentshroud.sh script
 
 ## Connections
 - [[_rollback()]] - `calls` [EXTRACTED]
+- [[check-vendor-compat.sh script]] - `calls` [EXTRACTED]
 - [[update-agentshroud.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

@@ -1,78 +1,25 @@
 ---
 type: community
-cohesion: 0.05
-members: 63
+members: 12
 ---
 
 # chatbot/main.py
 
-**Cohesion:** 0.05 - loosely connected
-**Members:** 63 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[dot-__init__()_203]] - code - gateway/security/privacy_policy.py
-- [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
-- [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
-- [[dot-contains_private_data()]] - code - gateway/security/privacy_policy.py
-- [[dot-default()]] - code - gateway/security/privacy_policy.py
-- [[dot-filter_response()_2]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_10]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_11]] - code - gateway/security/privacy_policy.py
-- [[dot-is_service_allowed()]] - code - gateway/security/privacy_policy.py
-- [[dot-should_alert()]] - code - gateway/security/privacy_policy.py
-- [[dot-should_audit()]] - code - gateway/security/privacy_policy.py
-- [[dot-test_admin_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_audit_disabled_globally()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_clean_response_not_modified()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_allowed_shared_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_api_key_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_blocked_from_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_collaborator_email_content_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_contains_private_data_clean_text()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_contains_private_data_detects_email()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_default_policy_marks_gmail_private()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_extra_pattern_redacted()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_extra_redact_patterns_loaded()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_adds_new_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_overrides_existing()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_from_dict_unknown_privacy_defaults_to_private()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_group_member_allowed_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_invalid_extra_pattern_does_not_crash()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_non_group_member_blocked_from_group_only_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_owner_can_access_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_owner_response_not_filtered()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_alert_non_owner()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_audit_private_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_not_alert_owner()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_should_not_audit_unknown_service()]] - code - gateway/tests/test_privacy_policy.py
-- [[dot-test_unknown_service_allowed_by_default()]] - code - gateway/tests/test_privacy_policy.py
-- [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
-- [[Parse from a YAMLdict representation.          Example YAML             privac]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy Policy Enforcement Tests]] - code - gateway/tests/test_privacy_policy.py
-- [[Privacy classification for a service.]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - rationale - gateway/security/privacy_policy.py
-- [[Privacy policy for a single service.]] - rationale - gateway/security/privacy_policy.py
-- [[PrivacyPolicy]] - code - gateway/security/privacy_policy.py
-- [[PrivacyPolicyEnforcer]] - code - gateway/security/privacy_policy.py
-- [[RBACConfig_4]] - code - gateway/tests/test_privacy_policy.py
-- [[Return True if an access attempt to this service should be logged.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if text appears to contain admin-private data.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if the owner should be alerted about this access attempt.]] - rationale - gateway/security/privacy_policy.py
-- [[Return True if user_id may access the named service.]] - rationale - gateway/security/privacy_policy.py
-- [[Return a default policy with all known private services locked down.]] - rationale - gateway/security/privacy_policy.py
-- [[ServicePolicy]] - code - gateway/security/privacy_policy.py
-- [[ServicePrivacy]] - code - gateway/security/privacy_policy.py
-- [[Strip admin-private content from a response before delivering to user.]] - rationale - gateway/security/privacy_policy.py
-- [[TestAuditAndAlert]] - code - gateway/tests/test_privacy_policy.py
-- [[TestPrivacyPolicyParsing]] - code - gateway/tests/test_privacy_policy.py
-- [[TestResponseFiltering]] - code - gateway/tests/test_privacy_policy.py
-- [[TestServiceAccessControl]] - code - gateway/tests/test_privacy_policy.py
-- [[_make_rbac()_1]] - code - gateway/tests/test_privacy_policy.py
-- [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
-- [[enforcer()_3]] - code - gateway/tests/test_privacy_policy.py
-- [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
-- [[rbac()_6]] - code - gateway/tests/test_privacy_policy.py
-- [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
+- [[FastAPI_5]] - code
+- [[FastAPI lifespan - initialize OpenAI client and persona once.]] - rationale - chatbot/main.py
+- [[HTTPAuthorizationCredentials_1]] - code
+- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's…]] - rationale - chatbot/main.py
+- [[Load Isaiah's persona from IDENTITY, SOUL, and USER files.]] - rationale - chatbot/main.py
+- [[Read the expected auth token from env or secrets.]] - rationale - chatbot/main.py
+- [[Require valid Bearer token for chat endpoints. When CHATBOT_AUTH_TOKEN is not…]] - rationale - chatbot/main.py
+- [[_get_auth_token()]] - code - chatbot/main.py
+- [[chatbotmain.py]] - code - chatbot/main.py
+- [[lifespan()_1]] - code - chatbot/main.py
+- [[load_persona_files()]] - code - chatbot/main.py
+- [[require_auth()_1]] - code - chatbot/main.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -82,14 +29,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_MiddlewareManager (2)]]
-- 7 edges to [[_COMMUNITY_colima-health-check.sh]]
-- 3 edges to [[_COMMUNITY_Enum]]
-- 2 edges to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)]]
+- 4 edges to [[_COMMUNITY_chat]]
+- 1 edge to [[_COMMUNITY_TestLifespan]]
+- 1 edge to [[_COMMUNITY_test_main.py]]
+- 1 edge to [[_COMMUNITY_TestAuth]]
+- 1 edge to [[_COMMUNITY_health_check]]
+- 1 edge to [[_COMMUNITY__check_rate_limit]]
+- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
 
 ## Top bridge nodes
-- [[TestResponseFiltering]] - degree 15, connects to 2 communities
-- [[test_privacy_policy.py]] - degree 14, connects to 2 communities
-- [[TestServiceAccessControl]] - degree 14, connects to 2 communities
-- [[ServicePrivacy]] - degree 12, connects to 2 communities
-- [[TestAuditAndAlert]] - degree 12, connects to 2 communities
+- [[chatbotmain.py]] - degree 12, connects to 4 communities
+- [[require_auth()_1]] - degree 6, connects to 2 communities
+- [[lifespan()_1]] - degree 6, connects to 1 community
+- [[_get_auth_token()]] - degree 5, connects to 1 community

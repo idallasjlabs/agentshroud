@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
+community: "api.py"
 location: "L809"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # Revert to previous git commit and rebuild.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[rollback_agentshroud()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,28 +1,24 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 120"
+community: "WebProxy"
 location: "L498"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_120
+  - graphify/EXTRACTED
+  - community/WebProxy
 ---
 
 # TestWebProxyConfig
 
 ## Connections
-- [[.test_domain_denied()]] - `method` [EXTRACTED]
-- [[.test_get_domain_settings_custom()]] - `method` [EXTRACTED]
-- [[.test_get_domain_settings_default()]] - `method` [EXTRACTED]
-- [[.test_passthrough_mode_default_off()]] - `method` [EXTRACTED]
-- [[.test_wildcard_domain_settings()]] - `method` [EXTRACTED]
-- [[AuditChain]] - `uses` [INFERRED]
+- [[dot-test_domain_denied()]] - `method` [EXTRACTED]
+- [[dot-test_get_domain_settings_custom()]] - `method` [EXTRACTED]
+- [[dot-test_get_domain_settings_default()]] - `method` [EXTRACTED]
+- [[dot-test_passthrough_mode_default_off()]] - `method` [EXTRACTED]
+- [[dot-test_wildcard_domain_settings()]] - `method` [EXTRACTED]
 - [[DomainSettings]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/WebProxy

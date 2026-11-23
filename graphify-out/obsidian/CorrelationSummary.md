@@ -1,21 +1,19 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "Community 2071"
+community: "ingest_api/main.py"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2071
+  - community/ingest_api/mainpy
 ---
 
 # CorrelationSummary
 
 ## Connections
-- [[.to_dict()_12]] - `method` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `semantically_similar_to` [INFERRED]
-- [[_renderCorrelation()]] - `shares_data_with` [INFERRED]
-- [[build_correlation_summary()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_10]] - `method` [EXTRACTED]
+- [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2071
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

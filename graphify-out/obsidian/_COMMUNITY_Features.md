@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.13
 members: 15
 ---
 
 # Features
 
-**Cohesion:** 0.13 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[Mode A — Single task_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 1 — Sync and confirm clean state_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 10 — Notify the owner_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 11 — Merge (only on explicit owner instruction)_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 12 — Clean up_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2 — Create a branch + worktree_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 2b — Create the Jira ticket_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 3 — Write and edit code_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 4 — Test and lint_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 5 — Multi-LLM review_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 6 — Build and validate containers_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 7 — Update documentation and website_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 8 — Update the knowledge graph_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 9 — Push and open the PR_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
-- [[Step 9b — Update the Jira ticket with the PR link_4]] - document - docker/config/openclaw/skills/i-hdev/SKILL.md
+- [[Action Feed]] - document - dashboard/README.md
+- [[Data Ledger Viewer]] - document - dashboard/README.md
+- [[Features]] - document - dashboard/README.md
+- [[Kill Switch]] - document - dashboard/README.md
+- [[Memory Browser]] - document - dashboard/README.md
+- [[Network Inspector]] - document - dashboard/README.md
+- [[Overview]] - document - docs/security/security-supply-chain.md
+- [[Read-Only Filesystem (Planned)]] - concept - docs/security/container-policy.md
+- [[Recommendations]] - document - docs/security/security-supply-chain.md
+- [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - rationale - docs/security/container-policy.md
+- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
+- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
+- [[Wazuh CVE-2025-24016 (CVSS 9.9)]] - concept - docs/security/security-supply-chain.md
+- [[container-policy]] - document - docs/security/container-policy.md
+- [[security-supply-chain]] - document - docs/security/security-supply-chain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +32,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_fixture]]
+- 1 edge to [[_COMMUNITY_dashboardREADME]]
+- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
+- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
+- 1 edge to [[_COMMUNITY_Detailed Profiles]]
+- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
 
 ## Top bridge nodes
-- [[Mode A — Single task_4]] - degree 15, connects to 1 community
+- [[Features]] - degree 6, connects to 1 community
+- [[container-policy]] - degree 5, connects to 1 community
+- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community
+- [[Kill Switch]] - degree 3, connects to 1 community
+- [[Read-Only Filesystem (Planned)]] - degree 2, connects to 1 community

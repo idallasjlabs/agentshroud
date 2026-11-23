@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 40"
+community: "test_web_api_coverage.py"
 location: "L457"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/test_web_api_coveragepy
 ---
 
 # TestDefaultBotDockerfile
 
 ## Connections
-- [[.test_default_bot_dockerfile_used()]] - `method` [EXTRACTED]
-- [[.test_fallback_when_config_load_fails()]] - `method` [EXTRACTED]
-- [[.test_fallback_when_default_bot_has_no_dockerfile()]] - `method` [EXTRACTED]
-- [[.test_fallback_when_no_bots()]] - `method` [EXTRACTED]
-- [[.test_first_bot_used_when_no_default_flag()]] - `method` [EXTRACTED]
-- [[KillSwitchAction]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[UpdateRequest]] - `uses` [INFERRED]
+- [[dot-test_default_bot_dockerfile_used()]] - `method` [EXTRACTED]
+- [[dot-test_fallback_when_config_load_fails()]] - `method` [EXTRACTED]
+- [[dot-test_fallback_when_default_bot_has_no_dockerfile()]] - `method` [EXTRACTED]
+- [[dot-test_fallback_when_no_bots()]] - `method` [EXTRACTED]
+- [[dot-test_first_bot_used_when_no_default_flag()]] - `method` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
-community: "Community 582"
+community: "Quality Assurance (SKILL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_582
+  - community/Quality_Assurance_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
-- [[MCP AWS Profile Configuration README]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_582
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

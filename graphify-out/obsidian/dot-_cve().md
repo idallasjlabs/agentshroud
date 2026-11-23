@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_upstream_cve_alert() (2)"
+community: "daily_cve_report.py"
 location: "L365"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert_2
+  - community/daily_cve_reportpy
 ---
 
 # ._cve()
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_summary_under_telegram_limit_for_100_cves()]] - `calls` [EXTRACTED]
 - [[TestFormatUpstreamCveAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert_2
+#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy

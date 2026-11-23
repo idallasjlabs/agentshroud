@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_FIX.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 502"
-location: "L22"
+community: "AgentShroud™ — Project Knowledge Base"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_502
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # The Problem
 
 ## Connections
-- [[iMessage Integration Fix - Using imsg + imessage-exporter]] - `contains` [EXTRACTED]
+- [[Why AgentShroud Exists]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_502
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

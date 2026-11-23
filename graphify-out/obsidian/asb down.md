@@ -1,14 +1,14 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "Community 2488"
+community: "asb down"
 location: "L610-L615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2488
+  - community/asb_down
 ---
 
 # asb down
 
-#graphify/code #graphify/EXTRACTED #community/Community_2488
+#graphify/code #graphify/EXTRACTED #community/asb_down

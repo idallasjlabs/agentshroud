@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 299"
+community: "SecureBrowser Skill"
 location: "L300"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/SecureBrowser_Skill
 ---
 
 # "Approval required but none granted"
 
 ## Connections
-- [[Troubleshooting_57]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

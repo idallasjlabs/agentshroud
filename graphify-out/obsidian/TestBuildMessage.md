@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 201"
+community: "GatewayEmailService"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_201
+  - community/GatewayEmailService
 ---
 
 # TestBuildMessage
 
 ## Connections
-- [[.test_html_message_has_plain_fallback_then_html()]] - `method` [EXTRACTED]
-- [[.test_plain_message_has_single_plain_part()]] - `method` [EXTRACTED]
-- [[GatewayEmailService]] - `uses` [INFERRED]
+- [[dot-test_html_message_has_plain_fallback_then_html()]] - `method` [EXTRACTED]
+- [[dot-test_plain_message_has_single_plain_part()]] - `method` [EXTRACTED]
 - [[test_gateway_email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_201
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

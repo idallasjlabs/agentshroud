@@ -1,17 +1,17 @@
 ---
-source_file: ".github/copilot-instructions.md"
+source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "Community 2195"
-location: "L589"
+community: "macOS System Administrator (MAC)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2195
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Usage
 
 ## Connections
-- [[1) PROJECT IDENTITY]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2195
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

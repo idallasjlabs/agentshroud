@@ -1,60 +1,45 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 26"
+community: "PathIsolationManager"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/PathIsolationManager
 ---
 
 # PathIsolationManager
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_119]] - `method` [EXTRACTED]
-- [[._apply_path_rewriting()]] - `method` [EXTRACTED]
-- [[._check_cross_user_access()]] - `method` [EXTRACTED]
-- [[._cleanup_user_directory()]] - `method` [EXTRACTED]
-- [[._ensure_base_directory()]] - `method` [EXTRACTED]
-- [[._ensure_user_directory()]] - `method` [EXTRACTED]
-- [[._get_user_temp_dir()]] - `method` [EXTRACTED]
-- [[._is_base_directory_access()]] - `method` [EXTRACTED]
-- [[._sanitize_user_id()]] - `method` [EXTRACTED]
-- [[.cleanup_abandoned_directories()]] - `method` [EXTRACTED]
-- [[.end_user_session()]] - `method` [EXTRACTED]
-- [[.get_active_users()]] - `method` [EXTRACTED]
-- [[.get_stats()_18]] - `method` [EXTRACTED]
-- [[.get_user_temp_path()]] - `method` [EXTRACTED]
-- [[.manager()_1]] - `calls` [EXTRACTED]
-- [[.register_user_session()]] - `method` [EXTRACTED]
-- [[.rewrite_path()]] - `method` [EXTRACTED]
-- [[.test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
+- [[dot-_apply_path_rewriting()]] - `method` [EXTRACTED]
+- [[dot-_check_cross_user_access()]] - `method` [EXTRACTED]
+- [[dot-_cleanup_user_directory()]] - `method` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `method` [EXTRACTED]
+- [[dot-_ensure_user_directory()]] - `method` [EXTRACTED]
+- [[dot-_get_user_temp_dir()]] - `method` [EXTRACTED]
+- [[dot-_is_base_directory_access()]] - `method` [EXTRACTED]
+- [[dot-_sanitize_user_id()]] - `method` [EXTRACTED]
+- [[dot-cleanup_abandoned_directories()]] - `method` [EXTRACTED]
+- [[dot-end_user_session()]] - `method` [EXTRACTED]
+- [[dot-get_active_users()]] - `method` [EXTRACTED]
+- [[dot-get_stats()_5]] - `method` [EXTRACTED]
+- [[dot-get_user_temp_path()]] - `method` [EXTRACTED]
+- [[dot-manager()_1]] - `calls` [EXTRACTED]
+- [[dot-register_user_session()]] - `method` [EXTRACTED]
+- [[dot-rewrite_path()]] - `method` [EXTRACTED]
+- [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]
 - [[Manages per-user path isolation for temporary files and directories.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[Path Isolation Manager Tests]] - `references` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestGetModuleModeEnforceDefault]] - `uses` [INFERRED]
-- [[TestModuleConfigDefaults]] - `uses` [INFERRED]
 - [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
-- [[TestPathIsolationConfig]] - `uses` [INFERRED]
 - [[TestPathIsolationManager]] - `uses` [INFERRED]
-- [[TestPathRewriteResult]] - `uses` [INFERRED]
-- [[TestSecurityConfigDefaults]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[path_isolation.py]] - `contains` [EXTRACTED]
-- [[run()_2]] - `calls` [EXTRACTED]
+- [[run()_1]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

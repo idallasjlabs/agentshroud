@@ -1,21 +1,27 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 229"
-location: "L1"
+community: "event_bus.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/event_buspy
 ---
 
-# event_bus.py.md
+# event_bus.py
 
 ## Connections
-- [[EventBus]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `references` [EXTRACTED]
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
-- [[main.py_3]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[Config Keys Read_6]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_6]] - `contains` [EXTRACTED]
+- [[Event Types Emitted by main.py]] - `contains` [EXTRACTED]
+- [[Function Details_24]] - `contains` [EXTRACTED]
+- [[Imports From  Exports To_6]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_26]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_6]] - `contains` [EXTRACTED]
+- [[Purpose_32]] - `contains` [EXTRACTED]
+- [[Related_26]] - `contains` [EXTRACTED]
+- [[Responsibilities_26]] - `contains` [EXTRACTED]
+- [[event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_229
+#graphify/document #graphify/EXTRACTED #community/event_buspy

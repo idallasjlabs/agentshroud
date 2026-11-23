@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "load_config"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/load_config
 ---
 
 # .test_no_mcp_section_still_deny_by_default()
 
 ## Connections
-- [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed]] - `rationale_for` [EXTRACTED]
-- [[MCPPolicyEngine_1]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed default…]] - `rationale_for` [EXTRACTED]
+- [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultPolicyNoMcpServers]] - `method` [EXTRACTED]
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/load_config

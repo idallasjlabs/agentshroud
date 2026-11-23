@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "scripts/deploy.sh"
 type: "code"
-community: "Community 102"
-location: "L67"
+community: "deploy.sh"
+location: "L12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/deploysh
 ---
 
-# Path
+# PATH
 
 ## Connections
-- [[.__init__()_93]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[deploy.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/deploysh

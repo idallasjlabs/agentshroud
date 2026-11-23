@@ -1,24 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
-type: "document"
-community: "Community 877"
-location: "L10"
+source_file: "gateway/proxy/sidecar.py"
+type: "code"
+community: "test_e2e_proxy.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_877
+  - community/test_e2e_proxypy
 ---
 
 # sidecar.py
 
 ## Connections
-- [[Configuration  Environment Variables_7]] - `contains` [EXTRACTED]
-- [[Function Details_13]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_16]] - `contains` [EXTRACTED]
-- [[Purpose_134]] - `contains` [EXTRACTED]
-- [[Related_20]] - `contains` [EXTRACTED]
-- [[Responsibilities_18]] - `contains` [EXTRACTED]
-- [[Security Limitation Warning]] - `contains` [EXTRACTED]
-- [[sidecar.py_1]] - `contains` [EXTRACTED]
+- [[ScanRequest_1]] - `contains` [EXTRACTED]
+- [[ScanResponse]] - `contains` [EXTRACTED]
+- [[SidecarScanner]] - `contains` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_877
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

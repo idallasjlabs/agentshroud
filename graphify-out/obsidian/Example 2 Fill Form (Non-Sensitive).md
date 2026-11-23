@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 2009"
+community: "SecureBrowser Skill"
 location: "L85"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2009
+  - community/SecureBrowser_Skill
 ---
 
 # Example 2: Fill Form (Non-Sensitive)
 
 ## Connections
-- [[Usage Examples_2]] - `contains` [EXTRACTED]
+- [[Usage Examples_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2009
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

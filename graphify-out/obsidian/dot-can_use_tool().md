@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "test_llm_proxy.py"
 location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_llm_proxypy
 ---
 
 # .can_use_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeToolACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

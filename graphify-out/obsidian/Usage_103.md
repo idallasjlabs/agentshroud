@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 277"
-location: "L55"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_277
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_10]] - `contains` [EXTRACTED]
-- [[Click Element_7]] - `contains` [EXTRACTED]
-- [[Extract Data_7]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_7]] - `contains` [EXTRACTED]
-- [[Fill Form_7]] - `contains` [EXTRACTED]
-- [[Navigate to URL_7]] - `contains` [EXTRACTED]
-- [[Take Screenshot_7]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_277
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

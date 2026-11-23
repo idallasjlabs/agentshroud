@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-SECURITY-POLICY.md"
 type: "document"
-community: "Community 396"
+community: "Credential Security Policy"
 location: "L302"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_396
+  - community/Credential_Security_Policy
 ---
 
 # Step 4: Test the Protection
@@ -15,4 +15,4 @@ tags:
 - [[Implementation Status]] - `contains` [EXTRACTED]
 - [[Implementation Steps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_396
+#graphify/document #graphify/EXTRACTED #community/Credential_Security_Policy

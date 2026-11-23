@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "plan_remediation"
-location: "L67"
+community: "RedactionResult"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/RedactionResult
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

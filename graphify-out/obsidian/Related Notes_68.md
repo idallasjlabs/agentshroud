@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
+source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
 type: "document"
-community: "Community 741"
-location: "L141"
+community: "Features"
+location: "L137"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_741
+  - community/Features
 ---
 
 # Related Notes
 
 ## Connections
-- [[Kill Switch Procedure_1]] - `contains` [EXTRACTED]
+- [[Dependency Graph_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_741
+#graphify/document #graphify/EXTRACTED #community/Features

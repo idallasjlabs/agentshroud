@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_proxy.py.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Community 667"
-location: "L12"
+community: "Athena — Knowledge Distiller"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_667
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_667
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

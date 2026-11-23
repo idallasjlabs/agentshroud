@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Stale Baseline Turns Rollback Into Unintended Revert
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ci (Continuous Integration) SKILL stub (OpenClaw)]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
+- [[Stale Baseline Turns Rollback Into Unintended Revert]] - rationale - reports/upgrade-2026-09-14.md
 
 ## Live Query (requires Dataview plugin)
 

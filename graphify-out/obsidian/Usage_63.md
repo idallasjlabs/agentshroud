@@ -1,23 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Community 276"
-location: "L55"
+community: "MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_8]] - `contains` [EXTRACTED]
-- [[Click Element_6]] - `contains` [EXTRACTED]
-- [[Extract Data_6]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_6]] - `contains` [EXTRACTED]
-- [[Fill Form_6]] - `contains` [EXTRACTED]
-- [[Navigate to URL_6]] - `contains` [EXTRACTED]
-- [[Take Screenshot_6]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

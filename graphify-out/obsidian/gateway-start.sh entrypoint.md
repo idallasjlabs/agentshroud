@@ -1,11 +1,11 @@
 ---
 source_file: "docker/scripts/gateway-start.sh"
 type: "code"
-community: "Community 2264"
+community: "gateway-start.sh entrypoint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2264
+  - community/gateway-startsh_entrypoint
 ---
 
 # gateway-start.sh entrypoint
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[security-entrypoint.sh boot scan flow]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2264
+#graphify/code #graphify/EXTRACTED #community/gateway-startsh_entrypoint

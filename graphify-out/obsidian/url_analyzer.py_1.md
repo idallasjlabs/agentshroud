@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Community 720"
-location: "L1"
+community: "url_analyzer.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_720
+  - community/url_analyzerpy
 ---
 
-# url_analyzer.py.md
+# url_analyzer.py
 
 ## Connections
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_15]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_28]] - `contains` [EXTRACTED]
+- [[Purpose_35]] - `contains` [EXTRACTED]
+- [[Related_28]] - `contains` [EXTRACTED]
+- [[Responsibilities_28]] - `contains` [EXTRACTED]
+- [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
+- [[url_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_720
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

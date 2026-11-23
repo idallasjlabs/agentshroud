@@ -1,17 +1,17 @@
 ---
-source_file: "docs/governance/AGENT_ROLES.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 471"
-location: "L81"
+community: "Model usage"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_471
+  - community/Model_usage
 ---
 
 # References
 
 ## Connections
-- [[Multi-Agent Role Matrix]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_471
+#graphify/document #graphify/EXTRACTED #community/Model_usage

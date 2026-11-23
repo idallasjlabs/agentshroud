@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
 type: "document"
-community: "Community 1007"
+community: "api.py"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/apipy
 ---
 
 # Pydantic Models
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[api.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1007
+#graphify/document #graphify/EXTRACTED #community/apipy

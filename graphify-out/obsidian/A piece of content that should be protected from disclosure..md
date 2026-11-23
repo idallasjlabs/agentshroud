@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 928"
+community: "middleware.py"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_928
+  - community/middlewarepy
 ---
 
 # A piece of content that should be protected from disclosure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ProtectedContent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_928
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-pca.md"
+source_file: ".github/agents/i-pca.agent.md"
 type: "document"
-community: "Community 1256"
-location: "L125"
+community: "Output Sections (ALL required)"
+location: "L128"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1256
+  - community/Output_Sections_ALL_required
 ---
 
 # Output Format Rules
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1256
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

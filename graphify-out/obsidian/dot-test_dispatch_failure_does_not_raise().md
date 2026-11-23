@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "CronStateMonitor"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/CronStateMonitor
 ---
 
 # .test_dispatch_failure_does_not_raise()
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[CronStateMonitor]] - `calls` [EXTRACTED]
 - [[TestTransitions]] - `method` [EXTRACTED]
+- [[_boom()]] - `indirect_call` [INFERRED]
 - [[_oc_job()]] - `calls` [EXTRACTED]
 - [[_openclaw_store()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

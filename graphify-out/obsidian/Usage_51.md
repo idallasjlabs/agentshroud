@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/graphify.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "Community 936"
-location: "L11"
+community: "Oracle — Feedback Analyst"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_936
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_7]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_936
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

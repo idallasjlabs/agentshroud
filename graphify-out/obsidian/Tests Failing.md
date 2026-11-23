@@ -1,17 +1,17 @@
 ---
-source_file: "docs/runbooks/troubleshooting.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 702"
-location: "L117"
+community: "Troubleshooting"
+location: "L852"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_702
+  - community/Troubleshooting
 ---
 
 # Tests Failing
 
 ## Connections
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_702
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "_make_proxy"
-location: "L265"
+community: "DelegationManager"
+location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/DelegationManager
 ---
 
 # ._load()
 
 ## Connections
-- [[dot-__init__()_195]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_9]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_4]] - `calls` [EXTRACTED]
+- [[DelegationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

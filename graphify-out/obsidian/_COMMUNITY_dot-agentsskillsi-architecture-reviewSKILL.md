@@ -1,18 +1,15 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 2
 ---
 
 # .agents/skills/i-architecture-review/SKILL.md
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[dot-test_full_attestation_chain()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_no_sbom_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestAiModelSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-agentsskillsi-architecture-reviewSKILL]] - document - .agents/skills/i-architecture-review/SKILL.md
+- [[Skill architecture-review]] - document - .agents/skills/i-architecture-review/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -20,11 +17,3 @@ members: 3
 TABLE source_file, type FROM #community/agents/skills/i-architecture-review/SKILLmd
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestAiModelSupplyChain]] - degree 3, connects to 1 community
-- [[dot-test_full_attestation_chain()]] - degree 2, connects to 1 community

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "Community 90"
-location: "L12"
+community: "Technical Illustrator (TI)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Technical_Illustrator_TI
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_TI

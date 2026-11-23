@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "MCPToolCall"
-location: "L47"
+community: "DifferentialPIIDetector"
+location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/DifferentialPIIDetector
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPToolCall_1]] - `method` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

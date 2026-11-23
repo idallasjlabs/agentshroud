@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L430"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Test handling of invalid action/resource combinations.
 
 ## Connections
-- [[.test_invalid_action_resource_combinations()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_invalid_action_resource_combinations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

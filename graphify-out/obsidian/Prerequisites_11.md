@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/TELEGRAM_GMAIL_SETUP.md"
+source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Community 244"
-location: "L43"
+community: "Hermes Agent — Connection Setup"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_244
+  - community/Hermes_Agent__Connection_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Part 2 Set Up Gmail Integration]] - `contains` [EXTRACTED]
+- [[Hermes Agent — Connection Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_244
+#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup

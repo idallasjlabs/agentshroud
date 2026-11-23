@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "Community 801"
-location: "L37"
+community: "ingest_api/config.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/ingest_api/configpy
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_62]] - `references` [EXTRACTED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_801
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

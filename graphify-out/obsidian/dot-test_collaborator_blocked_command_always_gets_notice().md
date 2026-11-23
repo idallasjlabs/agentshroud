@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py (2)"
+community: "._make_proxy"
 location: "L7970"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy_2
+  - community/_make_proxy
 ---
 
 # .test_collaborator_blocked_command_always_gets_notice()
@@ -18,8 +18,8 @@ tags:
 - [[TestNoResponseGuarantee]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_send()_23]] - `contains` [EXTRACTED]
-- [[fake_send()_11]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_send()_15]] - `contains` [EXTRACTED]
+- [[fake_send()_12]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy_2
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

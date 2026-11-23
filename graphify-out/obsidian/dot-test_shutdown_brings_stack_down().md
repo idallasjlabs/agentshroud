@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "_engine"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_engine
 ---
 
 # .test_shutdown_brings_stack_down()
 
 ## Connections
-- [[TestKillSwitch_1]] - `method` [EXTRACTED]
+- [[TestKillSwitch]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_engine

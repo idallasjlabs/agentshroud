@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "MemoryLifecycleManager"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/MemoryLifecycleManager
 ---
 
 # .enforce_daily_notes_retention()
@@ -17,4 +17,4 @@ tags:
 - [[Enforce retention policy for daily notes.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

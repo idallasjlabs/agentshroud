@@ -1,22 +1,26 @@
 ---
 source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "Community 890"
+community: "ContributorManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/ContributorManager
 ---
 
 # test_soc_contributors.py
 
 ## Connections
-- [[ContributorManager]] - `tests` [EXTRACTED]
+- [[ContributorManager]] - `imports` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
+- [[Role]] - `imports` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `contains` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_1]] - `contains` [EXTRACTED]
+- [[Tests for gatewaysoccontributors.py — ContributorManager record building. No…]] - `rationale_for` [EXTRACTED]
+- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[contributors.py]] - `imports_from` [EXTRACTED]
+- [[progressive_lockdown.py]] - `imports_from` [EXTRACTED]
+- [[rbac_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_890
+#graphify/code #graphify/EXTRACTED #community/ContributorManager

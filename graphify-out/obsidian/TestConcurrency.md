@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 75"
+community: "ProgressiveLockdown"
 location: "L555"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_75
+  - graphify/EXTRACTED
+  - community/ProgressiveLockdown
 ---
 
 # TestConcurrency
 
 ## Connections
-- [[.test_async_gather_record_block_counts_exactly()]] - `method` [EXTRACTED]
-- [[.test_threaded_record_block_counts_exactly()]] - `method` [EXTRACTED]
-- [[FalcoAlertWatcher]] - `uses` [INFERRED]
-- [[LockdownLevel_1]] - `uses` [INFERRED]
+- [[dot-test_async_gather_record_block_counts_exactly()]] - `method` [EXTRACTED]
+- [[dot-test_threaded_record_block_counts_exactly()]] - `method` [EXTRACTED]
 - [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

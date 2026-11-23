@@ -1,28 +1,19 @@
 ---
-source_file: "docs/requirements/use-cases.md"
+source_file: "docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md"
 type: "document"
-community: "Community 779"
-location: "L1"
+community: "Distributed OpenClaw Node Architecture — Raspberry Pi 4"
+location: "L527"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_779
+  - community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4
 ---
 
 # Use Cases
 
 ## Connections
-- [[AgentShroud Security Proxy]] - `contains` [EXTRACTED]
-- [[UC-001 User Sends Message to Agent (PII Sanitization Flow)]] - `contains` [EXTRACTED]
-- [[UC-002 Agent Calls MCP Tool (Inspection + Permission Check)]] - `contains` [EXTRACTED]
-- [[UC-003 Agent Fetches Web Content (SSRF Check + Content Scan)]] - `contains` [EXTRACTED]
-- [[UC-004 Admin Activates Kill Switch]] - `contains` [EXTRACTED]
-- [[UC-005 Agent Requests SSH Access (Approval Queue)]] - `contains` [EXTRACTED]
-- [[UC-006 Security Alert Triggers Notification]] - `contains` [EXTRACTED]
-- [[UC-007 New Agent Onboarding (Trust Level 0)]] - `contains` [EXTRACTED]
-- [[UC-008 Operator Reviews Audit Trail]] - `contains` [EXTRACTED]
-- [[UC-009 System Detects Prompt Injection]] - `contains` [EXTRACTED]
-- [[UC-010 Multi-Instance Deployment with Port Auto-Detection]] - `contains` [EXTRACTED]
-- [[use-cases]] - `contains` [EXTRACTED]
+- [[Best Use Cases for Distributed Node Approach]] - `contains` [EXTRACTED]
+- [[Distributed OpenClaw Node Architecture — Raspberry Pi 4]] - `contains` [EXTRACTED]
+- [[Not Ideal For]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_779
+#graphify/document #graphify/EXTRACTED #community/Distributed_OpenClaw_Node_Architecture__Raspberry_Pi_4

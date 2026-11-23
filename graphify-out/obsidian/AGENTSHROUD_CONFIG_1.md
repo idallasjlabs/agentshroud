@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
 type: "document"
-community: "Community 73"
+community: "AGENTSHROUD_CONFIG"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/AGENTSHROUD_CONFIG
 ---
 
 # AGENTSHROUD_CONFIG
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AGENTSHROUD_CONFIG]] - `contains` [EXTRACTED]
 - [[Default Search Order (when NOT set)]] - `contains` [EXTRACTED]
-- [[Description]] - `contains` [EXTRACTED]
-- [[Related Notes_28]] - `contains` [EXTRACTED]
-- [[Usage_141]] - `contains` [EXTRACTED]
+- [[Description_13]] - `contains` [EXTRACTED]
+- [[Related Notes_55]] - `contains` [EXTRACTED]
+- [[Usage_28]] - `contains` [EXTRACTED]
 - [[When to Set]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG

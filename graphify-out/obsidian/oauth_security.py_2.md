@@ -1,24 +1,27 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
-type: "document"
-community: "Community 567"
-location: "L10"
+source_file: "gateway/security/oauth_security.py"
+type: "code"
+community: "OAuthSecurityValidator"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_567
+  - community/OAuthSecurityValidator
 ---
 
 # oauth_security.py
 
 ## Connections
-- [[Configuration  Environment Variables_26]] - `contains` [EXTRACTED]
-- [[Function Details_44]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_47]] - `contains` [EXTRACTED]
-- [[Purpose_165]] - `contains` [EXTRACTED]
-- [[Related_51]] - `contains` [EXTRACTED]
-- [[Responsibilities_49]] - `contains` [EXTRACTED]
-- [[Threat Model_20]] - `contains` [EXTRACTED]
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[ConfusedDeputyError]] - `contains` [EXTRACTED]
+- [[OAuth Security Module - Prevents confused deputy attacks on MCP OAuth proxy…]] - `rationale_for` [EXTRACTED]
+- [[OAuthError]] - `contains` [EXTRACTED]
+- [[OAuthRequest]] - `contains` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `contains` [EXTRACTED]
+- [[PKCEViolation]] - `contains` [EXTRACTED]
+- [[RedirectMismatch]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[secrets.py]] - `imports` [EXTRACTED]
+- [[test_oauth_security.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_567
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

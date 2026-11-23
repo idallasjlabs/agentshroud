@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 2317"
-location: "L368"
+community: "FalcoAlertWatcher"
+location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2317
+  - community/FalcoAlertWatcher
 ---
 
 # TestFalcoSummary
 
 ## Connections
-- [[.test_installed_not_running_is_clean_note()]] - `method` [EXTRACTED]
-- [[.test_not_installed_not_running()]] - `method` [EXTRACTED]
-- [[.test_running_with_alerts_sets_timestamp()]] - `method` [EXTRACTED]
-- [[.test_running_without_alert_dir()]] - `method` [EXTRACTED]
-- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_read_alerts_missing_dir()]] - `method` [EXTRACTED]
+- [[dot-test_summary_clean()]] - `method` [EXTRACTED]
+- [[dot-test_summary_top_rules()]] - `method` [EXTRACTED]
+- [[dot-test_summary_with_alerts()]] - `method` [EXTRACTED]
+- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2317
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

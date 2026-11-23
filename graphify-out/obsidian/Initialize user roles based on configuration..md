@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 223"
+community: "soc/router.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/soc/routerpy
 ---
 
 # Initialize user roles based on configuration.
 
 ## Connections
-- [[.__post_init__()_8]] - `rationale_for` [EXTRACTED]
+- [[dot-__post_init__()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_223
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

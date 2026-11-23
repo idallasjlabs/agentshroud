@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L695"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # _resolve_effective_agent_id()
 
 ## Connections
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[Resolve trusted effective identity and prevent owner spoofing via body.]] - `rationale_for` [EXTRACTED]
 - [[_normalize_agent_identity()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[mcp_proxy_endpoint()]] - `calls` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

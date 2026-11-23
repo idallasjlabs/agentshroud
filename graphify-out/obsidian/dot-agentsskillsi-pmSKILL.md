@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Crash Recovery"
+community: "Skill: Project Management (PM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Crash_Recovery
+  - community/Skill_Project_Management_PM
 ---
 
 # .agents/skills/i-pm/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Crash_Recovery
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

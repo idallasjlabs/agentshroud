@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "ModeRequest"
+community: "LLMProxy"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/LLMProxy
 ---
 
 # .get_stats()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

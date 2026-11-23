@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: ""
 type: "code"
-community: "Community 230"
-location: "L140"
+community: "ContextGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_230
+  - community/ContextGuard
 ---
 
 # Any
 
 ## Connections
-- [[._redact_pii()]] - `references` [EXTRACTED]
-- [[._scan_value()]] - `references` [EXTRACTED]
-- [[.inspect_tool_call()]] - `references` [EXTRACTED]
-- [[.inspect_tool_result()]] - `references` [EXTRACTED]
+- [[dot-__init__()_73]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_230
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

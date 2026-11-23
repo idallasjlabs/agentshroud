@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "test_security_audit.py"
 location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/test_security_auditpy
 ---
 
 # .test_base64_injection()
 
 ## Connections
 - [[Base64 encoded instruction.]] - `rationale_for` [EXTRACTED]
-- [[TestPromptGuard]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

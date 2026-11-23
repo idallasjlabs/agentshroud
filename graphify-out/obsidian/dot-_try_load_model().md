@@ -12,8 +12,8 @@ tags:
 # ._try_load_model()
 
 ## Connections
-- [[dot-__init__()_133]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
-- [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_146]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
+- [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

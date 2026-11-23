@@ -1,14 +1,14 @@
 ---
 source_file: ".pre-commit-config.yaml"
 type: "code"
-community: "Community 1865"
+community: "pre-commit check-yaml hook (--unsafe)"
 location: "30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1865
+  - community/pre-commit_check-yaml_hook_--unsafe
 ---
 
 # pre-commit check-yaml hook (--unsafe)
 
-#graphify/code #graphify/EXTRACTED #community/Community_1865
+#graphify/code #graphify/EXTRACTED #community/pre-commit_check-yaml_hook_--unsafe

@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "Community 686"
+community: "test_scorecard_scoring.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_686
+  - community/test_scorecard_scoringpy
 ---
 
 # not_run_falco()
 
 ## Connections
+- [[fixture_29]] - `references` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_686
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

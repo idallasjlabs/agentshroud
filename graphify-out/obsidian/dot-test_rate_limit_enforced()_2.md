@@ -1,18 +1,17 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "egress_filter.py"
-location: "L86"
+community: "PermissionLevel"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/PermissionLevel
 ---
 
 # .test_rate_limit_enforced()
 
 ## Connections
-- [[Exceeding the rate limit returns 429.]] - `rationale_for` [EXTRACTED]
-- [[TestRateLimit]] - `method` [EXTRACTED]
+- [[TestRateLimiting_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

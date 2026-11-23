@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "soc/router.py"
-location: "L289"
+community: "lifespan.py"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/lifespanpy
 ---
 
 # .is_tool_allowed()
 
 ## Connections
-- [[dot-get_trust()]] - `calls` [EXTRACTED]
-- [[Per-level tool gate from the progressive trust ladder.          Tri-state True]] - `rationale_for` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[Check if a tool is allowed for the given trust level.]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `method` [EXTRACTED]
+- [[TrustLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

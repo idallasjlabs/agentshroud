@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ContextSegment"
+community: "EnhancedApprovalQueue"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/EnhancedApprovalQueue
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Wait for an approval decision.          Returns             True if approved, F]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Wait for an approval decision. Returns True if approved, False if deniedtimed…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

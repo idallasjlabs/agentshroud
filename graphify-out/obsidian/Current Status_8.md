@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
+source_file: "docs/requirements/README.md"
 type: "document"
-community: "Community 804"
-location: "L89"
+community: "Requirements Documentation"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_804
+  - community/Requirements_Documentation
 ---
 
 # Current Status
 
 ## Connections
-- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
+- [[Requirements Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_804
+#graphify/document #graphify/EXTRACTED #community/Requirements_Documentation

@@ -17,7 +17,8 @@ tags:
 - [[dot-get_group_memory()]] - `calls` [EXTRACTED]
 - [[dot-get_topic_scoped_memory()]] - `calls` [EXTRACTED]
 - [[dot-get_user_memory()]] - `calls` [EXTRACTED]
-- [[Build merged memory context for bot prompt injection.          Includes]] - `rationale_for` [EXTRACTED]
+- [[dot-is_owner()_3]] - `indirect_call` [INFERRED]
+- [[Build merged memory context for bot prompt injection. Includes 1. User's own…]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

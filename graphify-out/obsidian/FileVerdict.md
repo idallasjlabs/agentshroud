@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "Community 1"
+community: "middleware.py"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/middlewarepy
 ---
 
 # FileVerdict
 
 ## Connections
-- [[._check()]] - `references` [EXTRACTED]
-- [[.check_read()]] - `references` [EXTRACTED]
-- [[.check_write()]] - `references` [EXTRACTED]
+- [[dot-_check()]] - `calls` [EXTRACTED]
+- [[dot-check_read()]] - `references` [EXTRACTED]
+- [[dot-check_write()]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

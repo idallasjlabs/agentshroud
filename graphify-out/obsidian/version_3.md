@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/manifest.json"
+source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "Community 1049"
-location: "L2"
+community: "openclaw/skills/i-browser/package.json"
+location: "L3"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1049
+  - community/openclaw/skills/i-browser/packagejson
 ---
 
 # version
 
 ## Connections
-- [[manifest.json_1]] - `contains` [EXTRACTED]
+- [[openclawskillsi-browserpackage.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1049
+#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/packagejson

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "Community 544"
+community: "Apollo — Audio Systems Producer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_544
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Related Skills
 
 ## Connections
-- [[Code Review (CR)_1]] - `contains` [EXTRACTED]
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_544
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

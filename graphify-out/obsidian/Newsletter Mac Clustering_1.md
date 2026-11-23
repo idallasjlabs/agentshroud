@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-mac-clustering.txt"
 type: "document"
-community: "Community 1682"
+community: "Newsletter: Mac Clustering"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1682
+  - community/Newsletter_Mac_Clustering
 ---
 
 # Newsletter: Mac Clustering
 
-#graphify/document #graphify/EXTRACTED #community/Community_1682
+#graphify/document #graphify/EXTRACTED #community/Newsletter_Mac_Clustering

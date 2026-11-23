@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "test_all_modules_enforce.py"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/test_all_modules_enforcepy
 ---
 
 # .test_egress_filter_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[EgressFilter]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

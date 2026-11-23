@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 17"
+community: "EgressFilter"
 location: "L181"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/EgressFilter
 ---
 
 # Test denylist behavior in monitor mode.
 
 ## Connections
-- [[.test_denylist_monitor_mode()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_denylist_monitor_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

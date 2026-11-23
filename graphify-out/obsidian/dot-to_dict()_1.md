@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "ContextGuard"
-location: "L35"
+community: "FileIntegrityRecord"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/FileIntegrityRecord
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[dot-set_baseline()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "Community 97"
+community: "PrivacyPolicyEnforcer"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/PrivacyPolicyEnforcer
 ---
 
 # PrivacyPolicy
 
 ## Connections
-- [[.__init__()_120]] - `references` [EXTRACTED]
-- [[.default()]] - `method` [EXTRACTED]
-- [[.from_dict()_10]] - `method` [EXTRACTED]
-- [[Privacy policy configuration.      Loaded from agentshroud.yaml `privacy` secti]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_2]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-__init__()_13]] - `references` [EXTRACTED]
+- [[dot-default()]] - `method` [EXTRACTED]
+- [[dot-from_dict()]] - `method` [EXTRACTED]
+- [[Privacy policy configuration. Loaded from agentshroud.yaml `privacy` section.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditAndAlert]] - `uses` [INFERRED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[TestResponseFiltering]] - `uses` [INFERRED]
 - [[TestServiceAccessControl]] - `uses` [INFERRED]
+- [[default_policy()]] - `uses` [INFERRED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

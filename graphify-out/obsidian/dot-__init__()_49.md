@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
-location: "L445"
+community: "SCLClient"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/SCLClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/SCLClient

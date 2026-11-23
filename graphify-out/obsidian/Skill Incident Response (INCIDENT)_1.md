@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/i-production/SKILL.md"
+source_file: ".omp/agents/i-production.md"
 type: "document"
-community: "Community 545"
-location: "L6"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_545
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Skill: Incident Response (INCIDENT)
 
 ## Connections
+- [[dot-ompagentsi-production]] - `contains` [EXTRACTED]
 - [[Incident Response Workflow_1]] - `contains` [EXTRACTED]
 - [[Post-Incident_1]] - `contains` [EXTRACTED]
-- [[Role_61]] - `contains` [EXTRACTED]
-- [[SKILL_43]] - `contains` [EXTRACTED]
+- [[Role_4]] - `contains` [EXTRACTED]
 - [[Severity Matrix_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_545
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

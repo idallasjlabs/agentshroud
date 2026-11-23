@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "Community 5"
+community: "ResourceGuard"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/ResourceGuard
 ---
 
 # TestResourceGuardLifecycle
 
 ## Connections
-- [[.test_stop_cancels_monitor_task_and_idempotent()]] - `method` [EXTRACTED]
+- [[dot-test_stop_cancels_monitor_task_and_idempotent()]] - `method` [EXTRACTED]
 - [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
 - [[The lifespan must stop the background monitor task on shutdown.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_63]] - `references` [EXTRACTED]
 - [[test_resource_guard_wiring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

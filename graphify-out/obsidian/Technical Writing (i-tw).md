@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 803"
+community: "Technical Illustrator (i-ti)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Technical Writing (i-tw)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Mindmap Architect (MM)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 712"
-location: "L156"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L153"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # API / Function Reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[If not → escalate to field team via ops-alerts]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

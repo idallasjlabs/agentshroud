@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-sec-defense.agent.md"
+source_file: "skills/custom/agentshroud-blueteam/SKILL.md"
 type: "document"
-community: "Community 1295"
-location: "L155"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L150"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1295
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor_3]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1295
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

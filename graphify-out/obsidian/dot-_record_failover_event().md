@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L783"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # ._record_failover_event()
@@ -15,6 +15,6 @@ tags:
 - [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Persist a failover event to the audit chain if wired.]] - `rationale_for` [EXTRACTED]
-- [[_stream()]] - `calls` [EXTRACTED]
+- [[_stream()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

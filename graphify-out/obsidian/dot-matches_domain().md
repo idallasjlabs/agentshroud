@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "EgressPolicy"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/EgressPolicy
 ---
 
 # .matches_domain()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[Check if domain matches any allowed domain (supports wildcards).          Wildca]] - `rationale_for` [EXTRACTED]
+- [[Check if domain matches any allowed domain (supports wildcards). Wildcards only…]] - `rationale_for` [EXTRACTED]
 - [[EgressPolicy]] - `method` [EXTRACTED]
+- [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

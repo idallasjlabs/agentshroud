@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "rationale"
-community: "Community 48"
+community: "discover_upstream_versions.py"
 location: "L258"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/discover_upstream_versionspy
 ---
 
 # One attempt of ``fetch``: hard-bounded, IPv4-only after the first failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_guarded_fetch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_48
+#graphify/rationale #graphify/EXTRACTED #community/discover_upstream_versionspy

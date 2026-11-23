@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # SECTION 9: IMPORTANT NOTES
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Purpose_40]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Related Skills_26]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[Usage_29]] - document - docker/config/openclaw/skills/i-aws/README.md
-- [[openclawskillsi-awsREADME]] - document - docker/config/openclaw/skills/i-aws/README.md
+- [[SECTION 9 IMPORTANT NOTES]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[TEAS Plus vs. TEAS Standard]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[The TM Symbol]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Trademark vs. Patent]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
+- [[Why Standard Character Mark First]] - document - docs/USPTO_TRADEMARK_APPLICATION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_soc.js]]
+- 1 edge to [[_COMMUNITY_AgentShroud -- USPTO Trademark Application]]
 
 ## Top bridge nodes
-- [[AWS Cloud Management & FinOps]] - degree 5, connects to 1 community
+- [[SECTION 9 IMPORTANT NOTES]] - degree 5, connects to 1 community

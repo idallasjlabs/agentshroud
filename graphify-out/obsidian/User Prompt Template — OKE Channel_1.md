@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/atlas/SKILL.md"
+source_file: ".omp/agents/atlas.md"
 type: "document"
-community: "Community 1169"
-location: "L173"
+community: "Atlas — Curriculum Architect"
+location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/Atlas__Curriculum_Architect
 ---
 
 # User Prompt Template — OKE Channel
 
 ## Connections
-- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1169
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/test/test_playback_state/test_playback_state.c"
+source_file: ""
 type: "code"
-community: "Community 228"
-location: "L59"
+community: "test_playback_state.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_228
+  - community/test_playback_statec
 ---
 
 # face_state_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[face_set_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_228
+#graphify/code #graphify/EXTRACTED #community/test_playback_statec

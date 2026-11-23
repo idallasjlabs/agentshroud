@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "_is_op_reference_allowed"
+community: "hermes_dashboard_ws_proxy"
 location: "L615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/hermes_dashboard_ws_proxy
 ---
 
 # .test_relays_text_and_bytes_both_directions()
 
 ## Connections
 - [[dot-_mock_websocket()]] - `calls` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
 - [[_one_frame_aiter()]] - `indirect_call` [INFERRED]
-- [[asyncio_1]] - `references` [EXTRACTED]
+- [[asyncio_52]] - `references` [EXTRACTED]
 - [[hermes_dashboard_ws_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy

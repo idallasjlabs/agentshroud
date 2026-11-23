@@ -1,17 +1,17 @@
 ---
-source_file: "docs/operations/raspberry-pi.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 451"
-location: "L3"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_451
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Deploying AgentShroud on Raspberry Pi (aarch64)]] - `contains` [EXTRACTED]
+- [[AgentShroud Phase 3 - Quick Start Guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_451
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

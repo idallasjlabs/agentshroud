@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "KeyVault"
-location: "L72"
+community: "EnvironmentGuard"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/EnvironmentGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyVault]] - `method` [EXTRACTED]
-- [[KeyVaultConfig]] - `references` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

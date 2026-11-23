@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # codex-review.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[plan_1]] - document - docs/planning/redteam/plan.md
-- [[plan]] - document - docs/planning/redteam/plan.md
+- [[codex-review.sh]] - code - scripts/codex-review.sh
+- [[codex-review.sh script]] - code - scripts/codex-review.sh
 
 ## Live Query (requires Dataview plugin)
 

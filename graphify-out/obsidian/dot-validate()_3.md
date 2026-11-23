@@ -1,0 +1,19 @@
+---
+source_file: "gateway/security/output_schema.py"
+type: "code"
+community: "OutputSchemaEnforcer"
+location: "L89"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/OutputSchemaEnforcer
+---
+
+# .validate()
+
+## Connections
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[SchemaValidationResult]] - `calls` [EXTRACTED]
+- [[Validate output against the named schema. Args output The agent response text…]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

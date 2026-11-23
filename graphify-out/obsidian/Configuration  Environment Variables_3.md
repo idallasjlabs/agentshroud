@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Community 775"
-location: "L78"
+community: "apple_engine.py"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/apple_enginepy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[mcp_config.py_2]] - `contains` [EXTRACTED]
+- [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

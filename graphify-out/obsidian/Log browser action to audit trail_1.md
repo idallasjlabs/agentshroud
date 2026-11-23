@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 155"
+community: "SecureBrowser"
 location: "L206"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/SecureBrowser
 ---
 
 # Log browser action to audit trail
 
 ## Connections
-- [[._log_action()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_log_action()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_155
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
 type: "document"
-community: "Community 593"
-location: "L70"
+community: "event_bus.py"
+location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_593
+  - community/event_buspy
 ---
 
 # Config Keys Read
 
 ## Connections
-- [[sanitizer.py_2]] - `contains` [EXTRACTED]
+- [[event_bus.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_593
+#graphify/document #graphify/EXTRACTED #community/event_buspy

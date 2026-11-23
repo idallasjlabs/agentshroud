@@ -1,14 +1,14 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 1699"
+community: "SecureBrowser.close"
 location: "browse.py:401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1699
+  - community/SecureBrowserclose
 ---
 
 # SecureBrowser.close()
 
-#graphify/code #graphify/EXTRACTED #community/Community_1699
+#graphify/code #graphify/EXTRACTED #community/SecureBrowserclose

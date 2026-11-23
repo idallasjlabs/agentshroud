@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L231"
+community: "MCPPermissionManager"
+location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/MCPPermissionManager
 ---
 
 # .check_tool_permission()
 
 ## Connections
-- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
-- [[Check if a user can use tools of a specific tier.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
-- [[ToolTier_1]] - `references` [EXTRACTED]
+- [[dot-_record_private_access_attempt()]] - `calls` [EXTRACTED]
+- [[dot-check_all()]] - `calls` [EXTRACTED]
+- [[dot-get_trust_level()]] - `calls` [EXTRACTED]
+- [[dot-infer_permission_level()]] - `calls` [EXTRACTED]
+- [[Check if an agent can call a specific tool. Default-allow only blocks if trust…]] - `rationale_for` [EXTRACTED]
+- [[MCPPermissionManager]] - `method` [EXTRACTED]
+- [[PermissionCheck]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

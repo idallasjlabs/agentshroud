@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_sanitize_user_id()]] - `calls` [EXTRACTED]
 - [[dot-rewrite_path()]] - `calls` [EXTRACTED]
-- [[Check if path is trying to access another user's isolated namespace.          Re]] - `rationale_for` [EXTRACTED]
+- [[Check if path is trying to access another user's isolated namespace. Returns…]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PathIsolationManager

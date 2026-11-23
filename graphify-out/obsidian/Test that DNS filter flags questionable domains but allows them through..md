@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 103"
+community: "TestWebProxySecurityIntegration"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Test that DNS filter flags questionable domains but allows them through.
 
 ## Connections
-- [[.test_dns_filter_flags_but_allows_questionable_domains()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_dns_filter_flags_but_allows_questionable_domains()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

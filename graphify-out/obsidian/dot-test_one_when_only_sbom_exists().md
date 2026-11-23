@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "OpenSCAP"
+community: "_mock_dir_with_files"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/_mock_dir_with_files
 ---
 
 # .test_one_when_only_sbom_exists()
 
 ## Connections
-- [[TestScoreImageIntegrity_1]] - `method` [EXTRACTED]
+- [[TestScoreImageIntegrity]] - `method` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `calls` [EXTRACTED]
 - [[_mock_missing_dir()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenSCAP
+#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_files

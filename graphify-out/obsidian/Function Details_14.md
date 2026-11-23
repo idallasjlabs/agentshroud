@@ -1,22 +1,23 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/telegram_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_audit.py.md"
 type: "document"
-community: "Community 668"
+community: "mcp_audit.py"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_668
+  - community/mcp_auditpy
 ---
 
 # Function Details
 
 ## Connections
-- [[TelegramAPIProxy._filter_inbound_updates(response_data)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy._filter_outbound(body, content_type)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy._forward_to_telegram(url, body, content_type)]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy.get_stats()]] - `contains` [EXTRACTED]
-- [[TelegramAPIProxy.proxy_request(bot_token, method, body, content_type)]] - `contains` [EXTRACTED]
-- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.generate_report()]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.log_tool_call(agent_id, server_name, tool_name, parameters, findings_count, threat_level, blocked, block_reason, pii_redacted, call_id)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.log_tool_result(call_id, agent_id, server_name, tool_name, success, error_message, result_summary, findings_count, threat_level, pii_redacted)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.start_call(call_id)]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail.verify_chain()]] - `contains` [EXTRACTED]
+- [[Query Methods]] - `contains` [EXTRACTED]
+- [[mcp_audit.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_668
+#graphify/document #graphify/EXTRACTED #community/mcp_auditpy

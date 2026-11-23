@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
-location: "L57"
+community: "PIIConfig"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

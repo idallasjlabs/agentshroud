@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L31"
+community: "load_config"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/load_config
 ---
 
 # .__init__()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig]] - `calls` [EXTRACTED]
+- [[MCPPolicyEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/load_config

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "Community 16"
+community: "test_memory_lifecycle.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/test_memory_lifecyclepy
 ---
 
 # memory_config.py
@@ -15,5 +15,9 @@ tags:
 - [[MemoryIntegrityConfig]] - `contains` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `contains` [EXTRACTED]
 - [[MemorySecurityConfig]] - `contains` [EXTRACTED]
+- [[memory_integrity.py]] - `imports_from` [EXTRACTED]
+- [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_16
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

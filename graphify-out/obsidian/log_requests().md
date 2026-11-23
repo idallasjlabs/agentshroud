@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 143"
+community: "ingest_api/main.py"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/mainpy
 ---
 
 # log_requests()
 
 ## Connections
-- [[Log all incoming requests      Never logs request bodies (may contain PII).]] - `rationale_for` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[Log all incoming requests Never logs request bodies (may contain PII).]] - `rationale_for` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[middleware]] - `references` [EXTRACTED]
 - [[test_log_requests_middleware()]] - `calls` [EXTRACTED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

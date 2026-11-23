@@ -1,25 +1,22 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/drift_detector.py.md"
 type: "document"
-community: "Community 568"
-location: "L40"
+community: "drift_detector.py"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/drift_detectorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - `contains` [EXTRACTED]
-- [[SessionManager.cleanup_expired()]] - `contains` [EXTRACTED]
-- [[SessionManager.create_session(ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.destroy_session(session_id)]] - `contains` [EXTRACTED]
-- [[SessionManager.register_event_source(session_id, source)]] - `contains` [EXTRACTED]
-- [[SessionManager.rotate_session(old_session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_event(session_id, source, event)]] - `contains` [EXTRACTED]
-- [[SessionManager.validate_session(session_id, ip, user_agent)]] - `contains` [EXTRACTED]
-- [[session_security.py_2]] - `contains` [EXTRACTED]
+- [[ContainerSnapshot.config_hash()]] - `contains` [EXTRACTED]
+- [[DriftDetector.acknowledge_alert(alert_id)]] - `contains` [EXTRACTED]
+- [[DriftDetector.check_drift(current)]] - `contains` [EXTRACTED]
+- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - `contains` [EXTRACTED]
+- [[DriftDetector.set_baseline(snapshot)]] - `contains` [EXTRACTED]
+- [[drift_detector.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/document #graphify/EXTRACTED #community/drift_detectorpy

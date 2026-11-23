@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 86"
+community: "HTTPConnectProxy"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_86
+  - community/HTTPConnectProxy
 ---
 
 # test_malformed_request_line_returns_400()
 
 ## Connections
-- [[HTTPConnectProxy]] - `calls` [EXTRACTED]
-- [[_MockWriter]] - `calls` [EXTRACTED]
-- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[_MockWriter_1]] - `calls` [EXTRACTED]
+- [[_make_stream()_1]] - `calls` [EXTRACTED]
+- [[asyncio_82]] - `references` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

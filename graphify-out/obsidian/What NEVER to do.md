@@ -1,17 +1,17 @@
 ---
-source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 807"
-location: "L46"
+community: "Credential Isolation — Gateway op-proxy (ACTIVE)"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_807
+  - community/Credential_Isolation__Gateway_op-proxy_ACTIVE
 ---
 
 # What NEVER to do
 
 ## Connections
-- [[🏗️ Credential Architecture — How Secrets Are Retrieved]] - `contains` [EXTRACTED]
+- [[Credential Isolation — Gateway op-proxy (ACTIVE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_807
+#graphify/document #graphify/EXTRACTED #community/Credential_Isolation__Gateway_op-proxy_ACTIVE

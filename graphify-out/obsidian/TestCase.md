@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 564"
+community: "package_skill"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_564
+  - community/package_skill
 ---
 
 # TestCase
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[TestPackageSkillSecurity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_564
+#graphify/code #graphify/EXTRACTED #community/package_skill

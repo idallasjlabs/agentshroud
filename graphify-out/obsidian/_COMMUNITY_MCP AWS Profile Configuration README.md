@@ -1,31 +1,20 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 7
 ---
 
 # MCP AWS Profile Configuration README
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[ANTHROPIC_BASE_URL_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[ANTHROPIC_BASE_URL]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Configuration_16]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Description_5]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Description_6]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[GATEWAY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[How It Works_3]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_44]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Related Notes_45]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[SDK Patch_1]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Set In_4]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Typical Value]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Usage Contexts]] - document - docs/vault/04 - Environment Variables/GATEWAY_URL.md
-- [[Value_4]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
-- [[Why It's Critical]] - document - docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md
+- [[dot-agentsskillsi-mcpm-aws-profileREADME]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[MCP AWS Profile Configuration README]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[MCP AWS Profile Configuration Skill_1]] - document - .agents/skills/i-mcpm-aws-profile/SKILL.md
+- [[Purpose_168]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Related Skills_112]] - document - .agents/skills/i-mcpm-aws-profile/README.md
+- [[Usage_125]] - document - .agents/skills/i-mcpm-aws-profile/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +22,9 @@ members: 16
 TABLE source_file, type FROM #community/MCP_AWS_Profile_Configuration_README
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[MCP AWS Profile Configuration README]] - degree 6, connects to 1 community

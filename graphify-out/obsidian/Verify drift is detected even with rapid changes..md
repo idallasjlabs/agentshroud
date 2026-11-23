@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "rationale"
-community: "Community 0"
+community: "ContainerSnapshot"
 location: "L923"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/ContainerSnapshot
 ---
 
 # Verify drift is detected even with rapid changes.
 
 ## Connections
-- [[.test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_simultaneous_baseline_and_config_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/ContainerSnapshot

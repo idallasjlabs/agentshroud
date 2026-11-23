@@ -1,25 +1,20 @@
 ---
 source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 91"
+community: "docs/README.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/docs/READMEmd
 ---
 
 # OPENCLAW_SETUP.md
 
 ## Connections
-- [[AgentShroud (security proxy)]] - `references` [EXTRACTED]
-- [[Approval Queue_2]] - `references` [EXTRACTED]
-- [[HERMES_SETUP]] - `conceptually_related_to` [INFERRED]
-- [[OpenClaw_2]] - `references` [EXTRACTED]
-- [[OpenClaw Bot Container]] - `references` [EXTRACTED]
-- [[OpenClaw Bot SSH Configuration]] - `contains` [EXTRACTED]
+- [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
-- [[TELEGRAM_GMAIL_SETUP]] - `conceptually_related_to` [EXTRACTED]
-- [[colima-docker-guide]] - `conceptually_related_to` [INFERRED]
+- [[TELEGRAM_SETUP]] - `references` [EXTRACTED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_91
+#graphify/document #graphify/EXTRACTED #community/docs/READMEmd

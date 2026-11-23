@@ -1,27 +1,20 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 1281"
-location: "L60"
+community: "ContextGuard"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/ContextGuard
 ---
 
 # SessionContext
 
 ## Connections
-- [[._add_disclosure_event()]] - `references` [EXTRACTED]
-- [[._analyze_agent_response()]] - `references` [EXTRACTED]
-- [[._analyze_user_message()]] - `references` [EXTRACTED]
-- [[._check_thresholds()]] - `references` [EXTRACTED]
-- [[._score_message_patterns()]] - `references` [EXTRACTED]
-- [[._score_response_patterns()]] - `references` [EXTRACTED]
-- [[._trigger_alert()]] - `references` [EXTRACTED]
-- [[.track_message()]] - `references` [EXTRACTED]
+- [[dot-_detect_rapid_context_growth()]] - `references` [EXTRACTED]
+- [[dot-analyze_message()]] - `calls` [EXTRACTED]
 - [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
-- [[Context tracking for a single session.]] - `rationale_for` [EXTRACTED]
-- [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
+- [[context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1281
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

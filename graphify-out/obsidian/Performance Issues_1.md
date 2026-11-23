@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/setup-guide.md"
+source_file: "docs/operations/runbook.md"
 type: "document"
-community: "Community 350"
-location: "L892"
+community: "AgentShroud Operations Runbook"
+location: "L711"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/AgentShroud_Operations_Runbook
 ---
 
 # Performance Issues
 
 ## Connections
-- [[Troubleshooting_54]] - `contains` [EXTRACTED]
+- [[8. Common Troubleshooting Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Operations_Runbook

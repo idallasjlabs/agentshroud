@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
+source_file: "docs/architecture/adr/ADR-008-progressive-trust-levels.md"
 type: "document"
-community: "Community 858"
-location: "L44"
+community: "ADR-008-progressive-trust-levels.md"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_858
+  - community/ADR-008-progressive-trust-levelsmd
 ---
 
 # Mitigation
 
 ## Connections
-- [[Consequences_6]] - `contains` [EXTRACTED]
+- [[Consequences_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_858
+#graphify/document #graphify/EXTRACTED #community/ADR-008-progressive-trust-levelsmd

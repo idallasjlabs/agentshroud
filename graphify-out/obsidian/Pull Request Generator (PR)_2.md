@@ -1,21 +1,20 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pr/README.md"
 type: "document"
-community: "Community 1238"
+community: "Pull Request Generator (PR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1238
+  - community/Pull_Request_Generator_PR
 ---
 
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_97]] - `contains` [EXTRACTED]
-- [[README_102]] - `contains` [EXTRACTED]
-- [[Related Skills_121]] - `contains` [EXTRACTED]
-- [[SKILL_152]] - `contains` [EXTRACTED]
-- [[Usage_123]] - `contains` [EXTRACTED]
+- [[Purpose_145]] - `contains` [EXTRACTED]
+- [[Related Skills_75]] - `contains` [EXTRACTED]
+- [[Usage_85]] - `contains` [EXTRACTED]
+- [[openclawskillsi-prREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1238
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

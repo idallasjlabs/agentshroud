@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # /graphify path command
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.close()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[graphify path command]] - concept - docker/config/openclaw/skills/graphify/references/query.md
 
 ## Live Query (requires Dataview plugin)
 

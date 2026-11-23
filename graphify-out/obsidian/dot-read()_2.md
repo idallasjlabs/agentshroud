@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "api.py (3)"
-location: "L149"
+community: "_patch_urlopen"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_3
+  - community/_patch_urlopen
 ---
 
 # .read()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_3
+#graphify/code #graphify/EXTRACTED #community/_patch_urlopen

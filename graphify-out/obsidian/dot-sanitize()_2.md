@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L171"
+community: "RedactionResult"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # .sanitize()
 
 ## Connections
+- [[dot-_apply_enforcement()]] - `calls` [EXTRACTED]
+- [[dot-_resolve_threshold()]] - `calls` [EXTRACTED]
 - [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
 - [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
-- [[Detect and redact PII from content          Args             content Text to s]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_3]] - `method` [EXTRACTED]
+- [[Detect PII in content and apply the enforcement action Args content Text to…]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer]] - `method` [EXTRACTED]
 - [[RedactionResult]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

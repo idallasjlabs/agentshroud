@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_turn_tracker.py"
+source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "Enum"
-location: "L45"
+community: "ToolChainAnalyzer"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/ToolChainAnalyzer
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test proper initialization of MultiTurnTracker.]] - `rationale_for` [EXTRACTED]
-- [[TestMultiTurnTracker_1]] - `method` [EXTRACTED]
+- [[Test proper initialization of ToolChainAnalyzer.]] - `rationale_for` [EXTRACTED]
+- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

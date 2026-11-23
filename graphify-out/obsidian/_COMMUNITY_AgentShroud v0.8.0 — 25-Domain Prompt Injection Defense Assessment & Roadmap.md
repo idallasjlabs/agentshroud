@@ -1,27 +1,22 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 9
 ---
 
 # AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[dot-test_10_x_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_127_0_0_1_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_169_254_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_192_168_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_decimal_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_hex_ip_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv4_mapped_ipv6_192_168_blocked()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv4_mapped_ipv6_blocked()_2]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ipv6_loopback_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_localhost_blocked()_1]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_public_ip_allowed()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestSSRFBlocking]] - code - gateway/tests/test_web_proxy.py
+- [[Additional Controls Checklist]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Context_8]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Critical Files (v0.8.0 Changes)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[DELIVERABLE 2 — Maturity Scorecard]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Implementation Sequence (v0.8.0 Execution Order)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Top-10 Gaps by Exploitability x Impact (Post v0.8.0)]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[Verification Plan]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
+- [[security-assessment-v0.8.0-25-domain]] - document - docs/planning/v0.8/security-assessment-v0.8.0-25-domain.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,9 +26,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 3 — v0.8.0 Implementation Items]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 4 — v1.0 Roadmap]]
+- 1 edge to [[_COMMUNITY_DELIVERABLE 1 — Domain-by-Domain Assessment]]
+- 1 edge to [[_COMMUNITY_Output Sections (ALL required)_7]]
 
 ## Top bridge nodes
-- [[TestSSRFBlocking]] - degree 18, connects to 3 communities
+- [[AgentShroud v0.8.0 — 25-Domain Prompt Injection Defense Assessment & Roadmap]] - degree 11, connects to 3 communities
+- [[Verification Plan]] - degree 2, connects to 1 community

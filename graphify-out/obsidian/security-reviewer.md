@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-security-reviewer.md"
+source_file: "docker/config/hermes/agents/i-security-reviewer.md"
 type: "document"
-community: "Community 2225"
-location: "L8"
+community: "Security Review (SEC)"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2225
+  - community/Security_Review_SEC
 ---
 
 # security-reviewer
 
 ## Connections
-- [[i-security-reviewer]] - `contains` [EXTRACTED]
+- [[hermesagentsi-security-reviewer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2225
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

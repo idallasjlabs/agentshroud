@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.36
 members: 8
 ---
 
 # TestTriageClassLevelCoverage
 
-**Cohesion:** 0.36 - loosely connected
 **Members:** 8 nodes
 
 ## Members
@@ -27,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_main_endpoints.py]]
+- 1 edge to [[_COMMUNITY_WebContentScanner]]
 
 ## Top bridge nodes
 - [[TestTriageClassLevelCoverage]] - degree 6, connects to 1 community

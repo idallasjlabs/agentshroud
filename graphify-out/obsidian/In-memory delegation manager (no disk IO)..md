@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "rationale"
-community: "Community 89"
+community: "mgr"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/mgr
 ---
 
 # In-memory delegation manager (no disk I/O).
 
 ## Connections
-- [[mgr()]] - `rationale_for` [EXTRACTED]
+- [[mgr()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/mgr

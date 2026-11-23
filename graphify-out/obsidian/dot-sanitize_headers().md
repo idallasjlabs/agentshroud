@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "MetadataGuard"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/MetadataGuard
 ---
 
 # .sanitize_headers()
@@ -15,4 +15,4 @@ tags:
 - [[MetadataGuard]] - `method` [EXTRACTED]
 - [[Sanitize HTTP headers by removing sensitive information.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

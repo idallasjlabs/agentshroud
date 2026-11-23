@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "SSHResult"
 location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHResult
 ---
 
 # .test_ssh_exec_cwd_accepted_and_forwarded()
@@ -16,4 +16,4 @@ tags:
 - [[TestSSHExec]] - `method` [EXTRACTED]
 - [[cwd is validated and passed to proxy.execute().]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/SSHResult

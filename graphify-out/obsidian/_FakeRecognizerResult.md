@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "Community 56"
-location: "L209"
+community: "PIIConfig"
+location: "L143"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_56
+  - graphify/EXTRACTED
+  - community/PIIConfig
 ---
 
 # _FakeRecognizerResult
 
 ## Connections
-- [[.__init__()_160]] - `method` [EXTRACTED]
-- [[.test_presidio_result_becomes_pii_hit()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[PIIHit]] - `uses` [INFERRED]
-- [[PIIHitSeverity]] - `uses` [INFERRED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_26]] - `method` [EXTRACTED]
+- [[dot-analyze()_1]] - `calls` [EXTRACTED]
+- [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

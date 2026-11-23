@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "Community 2154"
+community: "app"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/app
 ---
 
 # test_email_owner_bypasses_pii.py
 
 ## Connections
-- [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[TestOwnerEmailBypassesPii]] - `contains` [EXTRACTED]
+- [[Tests that owner-bound email bypasses PII sanitisation. Root cause of the…]] - `rationale_for` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[auth_dep()_3]] - `imports` [EXTRACTED]
-- [[bypass_auth()_1]] - `contains` [EXTRACTED]
-- [[client()_7]] - `contains` [EXTRACTED]
-- [[email_send()]] - `calls` [EXTRACTED]
+- [[auth_dep()_1]] - `imports` [EXTRACTED]
+- [[bypass_auth()]] - `contains` [EXTRACTED]
+- [[client()_2]] - `contains` [EXTRACTED]
+- [[forward.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/app

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "All Dependencies.md (2)"
+community: "TestParseModeStrippedAfterPIIRedaction"
 location: "L4410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/TestParseModeStrippedAfterPIIRedaction
 ---
 
 # .test_parse_mode_preserved_when_no_pii_detected()
@@ -15,6 +15,7 @@ tags:
 - [[dot-_make_owner_proxy()]] - `calls` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 - [[parse_mode=HTML must be preserved for owner when text contains no PII.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction

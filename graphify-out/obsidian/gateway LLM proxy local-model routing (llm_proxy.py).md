@@ -1,17 +1,13 @@
 ---
 source_file: "docker/bots/hermes/resolve_model.py"
 type: "concept"
-community: "Community 134"
+community: "gateway LLM proxy local-model routing (llm_proxy.py)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_134
+  - community/gateway_LLM_proxy_local-model_routing_llm_proxypy
 ---
 
 # gateway LLM proxy local-model routing (llm_proxy.py)
 
-## Connections
-- [[apply-patches.js patch driver (openclaw.json)]] - `semantically_similar_to` [INFERRED]
-- [[resolve_model()]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_134
+#graphify/concept #graphify/EXTRACTED #community/gateway_LLM_proxy_local-model_routing_llm_proxypy

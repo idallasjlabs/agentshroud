@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-final.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05-r3.md"
 type: "document"
-community: "Community 1119"
-location: "L166"
+community: "AgentShroud v0.8.0 — Peer Review Round 3 (FINAL)"
+location: "L17"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1119
+  - community/AgentShroud_v080__Peer_Review_Round_3_FINAL
 ---
 
 # Test Results
 
 ## Connections
-- [[Fixes Applied]] - `contains` [EXTRACTED]
+- [[Summary_44]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1119
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Peer_Review_Round_3_FINAL

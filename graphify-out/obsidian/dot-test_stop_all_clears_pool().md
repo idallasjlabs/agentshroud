@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_bots_ssh_exec_wrapper.py"
+community: "MCPServerConfig"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_bots_ssh_exec_wrapperpy
+  - community/MCPServerConfig
 ---
 
 # .test_stop_all_clears_pool()
@@ -16,4 +16,4 @@ tags:
 - [[FakeConn]] - `calls` [EXTRACTED]
 - [[TestConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

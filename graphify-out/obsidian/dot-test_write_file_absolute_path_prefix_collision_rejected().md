@@ -12,7 +12,7 @@ tags:
 # .test_write_file_absolute_path_prefix_collision_rejected()
 
 ## Connections
-- [[A sibling directory that merely shares the root as a string prefix         (no ']] - `rationale_for` [EXTRACTED]
+- [[A sibling directory that merely shares the root as a string prefix (no ''…]] - `rationale_for` [EXTRACTED]
 - [[TestSSHWriteFileEndpoint]] - `method` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
 

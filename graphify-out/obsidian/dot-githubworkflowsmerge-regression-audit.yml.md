@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/hermes/skills/i-ab/SKILL.md"
 type: "concept"
-community: "Token Reduction Benchmark"
+community: ".github/workflows/merge-regression-audit.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Token_Reduction_Benchmark
+  - community/github/workflows/merge-regression-audityml
 ---
 
 # .github/workflows/merge-regression-audit.yml
 
-#graphify/concept #graphify/EXTRACTED #community/Token_Reduction_Benchmark
+#graphify/concept #graphify/EXTRACTED #community/github/workflows/merge-regression-audityml

@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/main/ui_face.c"
+source_file: ""
 type: "code"
-community: "Community 341"
-location: "L150"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/wakewordc
 ---
 
 # lv_event_t
@@ -15,4 +14,4 @@ tags:
 - [[_touch_pressed()]] - `references` [EXTRACTED]
 - [[_touch_start_only()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/wakewordc

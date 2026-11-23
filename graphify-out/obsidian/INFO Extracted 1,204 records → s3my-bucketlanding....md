@@ -1,18 +1,19 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 712"
-location: "L70"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # [INFO] Extracted 1,204 records → s3://my-bucket/landing/...
 
 ## Connections
 - [[Runbook — Operational Decision Tree]] - `contains` [EXTRACTED]
-- [[i-tw]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

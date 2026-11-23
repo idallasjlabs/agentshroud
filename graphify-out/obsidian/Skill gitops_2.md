@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-gitops.md"
+source_file: ".agents/agents/i-gitops.md"
 type: "document"
-community: "Community 2253"
+community: ".agents/agents/i-gitops.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2253
+  - community/agents/agents/i-gitopsmd
 ---
 
 # Skill: gitops
 
 ## Connections
-- [[i-gitops_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-gitops]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2253
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-gitopsmd

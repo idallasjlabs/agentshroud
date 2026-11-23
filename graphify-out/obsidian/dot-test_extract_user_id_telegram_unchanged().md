@@ -12,6 +12,7 @@ tags:
 # .test_extract_user_id_telegram_unchanged()
 
 ## Connections
+- [[dot-_extract_user_id()_1]] - `calls` [EXTRACTED]
 - [[TestWebhookReceiverSlackExtraction]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebhookReceiver

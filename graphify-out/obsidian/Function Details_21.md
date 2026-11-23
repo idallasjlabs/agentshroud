@@ -1,20 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
 type: "document"
-community: "Community 784"
-location: "L27"
+community: "egress_monitor.py"
+location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_784
+  - community/egress_monitorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[RuntimeConfig.effective_rootless (property)]] - `contains` [EXTRACTED]
-- [[RuntimeConfig.from_dict(data)]] - `contains` [EXTRACTED]
-- [[RuntimeConfig.from_env()]] - `contains` [EXTRACTED]
-- [[config.py_3]] - `contains` [EXTRACTED]
+- [[EgressMonitor.check_anomalies(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.daily_summary(agent_id)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.get_events(agent_id, channel)]] - `contains` [EXTRACTED]
+- [[EgressMonitor.record(event)]] - `contains` [EXTRACTED]
+- [[egress_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_784
+#graphify/document #graphify/EXTRACTED #community/egress_monitorpy

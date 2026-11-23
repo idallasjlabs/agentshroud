@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "Community 2182"
+community: "Branding Specialist (BS)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2182
+  - community/Branding_Specialist_BS
 ---
 
 # Related Skills
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2182
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

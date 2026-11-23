@@ -1,39 +1,22 @@
 ---
 type: community
-cohesion: 0.08
-members: 24
+members: 9
 ---
 
 # AgentShroud v1.2.0 Master Plan
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 24 nodes
+**Members:** 9 nodes
 
 ## Members
-- [[dot-setup_method()_23]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_build()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_build_with_args()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_compose_down()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_compose_up()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_exec()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_health_check_fail()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_health_check_ok()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_inspect()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_logs()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_network_create()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_network_create_internal()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_pause_unpause()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_ps()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_ps_empty()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_pull()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_push()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_rm()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_rm_force()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_run_basic()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_run_with_options()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_stop()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_volume_create()]] - code - gateway/tests/test_runtime_engines.py
-- [[TestDockerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[AgentShroud v1.2.0 Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[AgentShroud v1.2.0 — Master Plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Cross-cutting branches + PR train]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Open clarifications before coding starts]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Out of scope for v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Tracking + cadence]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Why v1.2.0]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[Workstream D Sync SkillsMCP from ~.llm_settings]] - concept - docs/planning/v1.2/v1.2.0-master-plan.md
+- [[v1.2.0-master-plan]] - document - docs/planning/v1.2/v1.2.0-master-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,12 +26,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_jira_weekly_review.py]]
-- 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 1 edge to [[_COMMUNITY_PodmanEngine]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_egress_retry.py]]
+- 6 edges to [[_COMMUNITY_Workstream D — Sync agentsskillsMCP from `~.llm_settings` into both bots]]
+- 2 edges to [[_COMMUNITY_Workstream B Security Features from Competitive Intel]]
+- 1 edge to [[_COMMUNITY_Workstream C — Full local-model parity for both bots]]
+- 1 edge to [[_COMMUNITY_Workstream E — Blue + red team security scan, both bots]]
+- 1 edge to [[_COMMUNITY_Planning Docs Index (redteam, reviews, recovery, version buckets)]]
+- 1 edge to [[_COMMUNITY_Red Team Assessment v1.2.0]]
 
 ## Top bridge nodes
-- [[TestDockerEngine]] - degree 29, connects to 5 communities
-- [[dot-setup_method()_23]] - degree 2, connects to 1 community
+- [[AgentShroud v1.2.0 Master Plan]] - degree 14, connects to 4 communities
+- [[AgentShroud v1.2.0 — Master Plan]] - degree 11, connects to 4 communities

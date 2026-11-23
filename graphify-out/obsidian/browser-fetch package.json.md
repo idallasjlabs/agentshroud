@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/package.json"
 type: "code"
-community: "Community 1264"
+community: "browse.py — SecureBrowser CLI (OpenClaw)"
 tags:
   - graphify/code
   - graphify/AMBIGUOUS
-  - community/Community_1264
+  - community/browsepy__SecureBrowser_CLI_OpenClaw
 ---
 
 # browser-fetch package.json
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[browse.py — SecureBrowser CLI (OpenClaw)]] - `semantically_similar_to` [AMBIGUOUS]
 
-#graphify/code #graphify/AMBIGUOUS #community/Community_1264
+#graphify/code #graphify/AMBIGUOUS #community/browsepy__SecureBrowser_CLI_OpenClaw

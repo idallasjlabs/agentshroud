@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Function Details"
+community: "GroupRegistry"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/GroupRegistry
 ---
 
 # ._make_rbac()
@@ -25,4 +25,4 @@ tags:
 - [[RBACConfig]] - `references` [EXTRACTED]
 - [[TestGroupRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/GroupRegistry

@@ -12,8 +12,9 @@ tags:
 # .export_config()
 
 ## Connections
-- [[AuditExportConfig_1]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `calls` [EXTRACTED]
 - [[Create test export configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditExporter]] - `method` [EXTRACTED]
+- [[fixture_115]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditExportConfig

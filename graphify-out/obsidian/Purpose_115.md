@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "Community 556"
-location: "L12"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Purpose
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

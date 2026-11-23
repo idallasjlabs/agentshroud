@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Community 261"
+community: "key_rotation.py (KeyRotationManager)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_261
+  - community/key_rotationpy_KeyRotationManager
 ---
 
 # key_rotation.py (KeyRotationManager)
 
-## Connections
-- [[test_key_rotation_internals.py]] - `implements` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_261
+#graphify/code #graphify/EXTRACTED #community/key_rotationpy_KeyRotationManager

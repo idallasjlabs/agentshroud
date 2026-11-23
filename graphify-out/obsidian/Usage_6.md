@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Community 2066"
-location: "L10"
+community: "mcp-proxy-wrapper.js"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2066
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2066
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

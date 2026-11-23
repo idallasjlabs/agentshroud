@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "Community 1248"
-location: "L135"
+community: "_is_op_reference_allowed"
+location: "L121"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/_is_op_reference_allowed
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[auth_dep()]] - `indirect_call` [INFERRED]
+- [[fixture_110]] - `references` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

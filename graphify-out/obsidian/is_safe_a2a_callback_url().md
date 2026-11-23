@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 111"
+community: "A2APolicyEngine"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/A2APolicyEngine
 ---
 
 # is_safe_a2a_callback_url()
 
 ## Connections
-- [[._decide()]] - `calls` [EXTRACTED]
-- [[Hardened SSRF guard for A2A push-notification callback URLs.      Independent mi]] - `rationale_for` [EXTRACTED]
+- [[dot-_decide()_1]] - `calls` [EXTRACTED]
+- [[Hardened SSRF guard for A2A push-notification callback URLs. Independent…]] - `rationale_for` [EXTRACTED]
 - [[_address_is_public()]] - `calls` [EXTRACTED]
 - [[_canonicalize_ip_literal()]] - `calls` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_callback_url_ssrf_bypass_encodings_are_rejected()]] - `calls` [EXTRACTED]
 - [[test_callback_url_unresolvable_hostname_fails_closed()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_111
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

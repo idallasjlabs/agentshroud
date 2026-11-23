@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 299"
+community: "SecureBrowser Skill"
 location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_299
+  - community/SecureBrowser_Skill
 ---
 
 # Integration
@@ -16,4 +16,4 @@ tags:
 - [[With 1Password]] - `contains` [EXTRACTED]
 - [[With AgentShroud Gateway]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_299
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

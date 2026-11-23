@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 730"
+community: "dns_filter.py"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/dns_filterpy
 ---
 
 # Threat Model
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

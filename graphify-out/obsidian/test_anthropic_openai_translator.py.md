@@ -1,18 +1,21 @@
 ---
 source_file: "gateway/tests/test_anthropic_openai_translator.py"
 type: "code"
-community: "Community 360"
+community: "test_anthropic_openai_translator.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # test_anthropic_openai_translator.py
 
 ## Connections
+- [[Tests for gatewayproxyanthropic_openai_translator.py and…]] - `rationale_for` [EXTRACTED]
 - [[_collect_sse()]] - `contains` [EXTRACTED]
+- [[anthropic_openai_sse_translator.py]] - `imports_from` [EXTRACTED]
+- [[anthropic_openai_translator.py]] - `imports_from` [EXTRACTED]
 - [[anthropic_to_openai_request()]] - `imports` [EXTRACTED]
 - [[openai_to_anthropic_response()]] - `imports` [EXTRACTED]
 - [[test_sse_translator_basic_text_stream()]] - `contains` [EXTRACTED]
@@ -38,4 +41,4 @@ tags:
 - [[test_translator_tool_use_blocks()]] - `contains` [EXTRACTED]
 - [[translate_openai_sse_to_anthropic()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_360
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

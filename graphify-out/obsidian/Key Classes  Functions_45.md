@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Community 539"
-location: "L27"
+community: "browser_security.py"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/browser_securitypy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_539
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

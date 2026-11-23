@@ -1,25 +1,24 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
 type: "code"
-community: "Community 882"
+community: "init_skill.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_882
+  - community/init_skillpy
 ---
 
 # init_skill.py
 
 ## Connections
 - [[TODO Add actual script logic here]] - `rationale_for` [EXTRACTED]
-- [[SKILL_238]] - `references` [EXTRACTED]
+- [[Skill Initializer - Creates a new skill from template Usage init_skill.py…]] - `rationale_for` [EXTRACTED]
 - [[create_resource_dirs()]] - `contains` [EXTRACTED]
 - [[init_skill()]] - `contains` [EXTRACTED]
-- [[main()_35]] - `contains` [EXTRACTED]
+- [[main()_3]] - `contains` [EXTRACTED]
 - [[normalize_skill_name()]] - `contains` [EXTRACTED]
-- [[package_skill()]] - `conceptually_related_to` [INFERRED]
 - [[parse_resources()]] - `contains` [EXTRACTED]
 - [[title_case_skill_name()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_882
+#graphify/code #graphify/EXTRACTED #community/init_skillpy

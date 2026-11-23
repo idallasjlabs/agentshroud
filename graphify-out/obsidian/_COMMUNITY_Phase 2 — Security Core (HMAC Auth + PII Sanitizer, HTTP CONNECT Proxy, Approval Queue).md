@@ -1,23 +1,20 @@
 ---
 type: community
-cohesion: 0.25
-members: 8
+members: 7
 ---
 
 # Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)
 
-**Cohesion:** 0.25 - loosely connected
-**Members:** 8 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Purpose_4]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Related Notes_6]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[Where Used]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
-- [[store.py]] - code - gateway/approval_queue/store.py
+- [[Phase 1 — Foundation (Bot Container + Telegram, Gateway API + Ledger)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 3 — Credential Isolation (Op-Proxy, 1Password service account)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 4 — Channels (iMessage MCP, iCloud Email, MCP Proxy Inspector)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 5 — Stability (context limit fix, cascading retry + startup)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 6 — Observability (Prometheus + Grafana, log aggregation)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
+- [[Phase 7 — Enterprise Hardening (multi-tenant isolation, IEC 62443 policy docs, external contributor access)]] - concept - docs/diagrams/images/diagram-23-roadmap-gantt.svg
 
 ## Live Query (requires Dataview plugin)
 
@@ -25,16 +22,3 @@ members: 8
 TABLE source_file, type FROM #community/Phase_2__Security_Core_HMAC_Auth__PII_Sanitizer_HTTP_CONNECT_Proxy_Approval_Queue
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY__make_proxy()]]
-- 2 edges to [[_COMMUNITY_Restart Procedure]]
-- 1 edge to [[_COMMUNITY_ContextSegment]]
-- 1 edge to [[_COMMUNITY_ApprovalStore]]
-- 1 edge to [[_COMMUNITY_test_voice_latency_guard.py]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
-
-## Top bridge nodes
-- [[store.py]] - degree 7, connects to 5 communities
-- [[aiosqlite]] - degree 5, connects to 3 communities

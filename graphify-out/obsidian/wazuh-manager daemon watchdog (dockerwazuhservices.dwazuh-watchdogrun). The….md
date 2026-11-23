@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "rationale"
-community: "test_wazuh_watchdog.py"
+community: "_run_4b"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/_run_4b
 ---
 
 # wazuh-manager daemon watchdog (docker/wazuh/services.d/wazuh-watchdog/run). The…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_wazuh_watchdog.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/rationale #graphify/EXTRACTED #community/_run_4b

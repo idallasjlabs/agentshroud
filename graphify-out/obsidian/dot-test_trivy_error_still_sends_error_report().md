@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
+community: "asyncio"
 location: "L223"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/asyncio
 ---
 
 # .test_trivy_error_still_sends_error_report()
 
 ## Connections
 - [[TestRunAndSendCveReport]] - `method` [EXTRACTED]
-- [[_fake_send()_11]] - `contains` [EXTRACTED]
-- [[_fake_send()]] - `indirect_call` [INFERRED]
+- [[_fake_send()_6]] - `contains` [EXTRACTED]
+- [[_fake_send()_5]] - `indirect_call` [INFERRED]
 - [[_make_error_report()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/asyncio

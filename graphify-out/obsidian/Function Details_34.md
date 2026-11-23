@@ -1,21 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 676"
-location: "L40"
+community: "compose_generator.py"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_676
+  - community/compose_generatorpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EgressFilterConfig._matches_any_pattern(domain, patterns)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.from_environment()]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.get_effective_allowlist(agent_id)]] - `contains` [EXTRACTED]
-- [[EgressFilterConfig.is_denylisted(domain)]] - `contains` [EXTRACTED]
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_1]] - `contains` [EXTRACTED]
+- [[generate_apple_script(services)]] - `contains` [EXTRACTED]
+- [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_676
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

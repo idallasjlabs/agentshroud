@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-cr.md"
+source_file: ".omp/agents/i-pca.md"
 type: "document"
-community: "Community 2013"
-location: "L12"
+community: "Output Sections (ALL required)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2013
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2013
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

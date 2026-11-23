@@ -1,17 +1,17 @@
 ---
-source_file: ".github/COPILOT_CLI_SETUP.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Community 1992"
-location: "L3"
+community: "Security Pipeline Flow"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1992
+  - community/Security_Pipeline_Flow
 ---
 
 # Overview
 
 ## Connections
-- [[GitHub Copilot CLI Setup Guide]] - `contains` [EXTRACTED]
+- [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1992
+#graphify/document #graphify/EXTRACTED #community/Security_Pipeline_Flow

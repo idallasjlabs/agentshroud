@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_SANDBOX_MODE.md"
 type: "document"
-community: "Community 1174"
-location: "L37"
+community: "OPENCLAW_SANDBOX_MODE"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1174
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # Related Notes
 
 ## Connections
-- [[browser-fetch.js_2]] - `contains` [EXTRACTED]
+- [[OPENCLAW_SANDBOX_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1174
+#graphify/document #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

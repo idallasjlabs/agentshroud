@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-socrates/SKILL.md"
 type: "document"
-community: "AgentShroud Red Team Adversarial Tester (3)"
+community: "Socrates — Dialogue Architect"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Red_Team_Adversarial_Tester_3
+  - community/Socrates__Dialogue_Architect
 ---
 
 # openclaw/skills/i-socrates/SKILL.md
 
 ## Connections
-- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester_3
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

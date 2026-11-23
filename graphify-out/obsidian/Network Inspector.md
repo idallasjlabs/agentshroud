@@ -1,17 +1,17 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Community 465"
+community: "Features"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_465
+  - community/Features
 ---
 
 # Network Inspector
 
 ## Connections
-- [[Features_1]] - `contains` [EXTRACTED]
+- [[Features]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_465
+#graphify/document #graphify/EXTRACTED #community/Features

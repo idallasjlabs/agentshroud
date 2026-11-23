@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "Community 9"
+community: "KillSwitchMonitor"
 location: "L498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/KillSwitchMonitor
 ---
 
 # Count events in the last N seconds.
 
 ## Connections
-- [[._count_recent_events()]] - `rationale_for` [EXTRACTED]
+- [[dot-_count_recent_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_9
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

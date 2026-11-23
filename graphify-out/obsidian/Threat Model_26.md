@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
 type: "document"
-community: "Community 392"
+community: "Function Details"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_392
+  - community/Function_Details
 ---
 
 # Threat Model
 
 ## Connections
-- [[TrustManager_5]] - `contains` [EXTRACTED]
-- [[trust_manager.py_2]] - `contains` [EXTRACTED]
+- [[key_vault.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_392
+#graphify/document #graphify/EXTRACTED #community/Function_Details

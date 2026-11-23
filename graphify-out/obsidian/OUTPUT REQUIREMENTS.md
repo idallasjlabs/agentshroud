@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/workspace/competitive-analysis.md"
 type: "document"
-community: "Community 908"
+community: "REPORT STRUCTURE"
 location: "L242"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_908
+  - community/REPORT_STRUCTURE
 ---
 
 # OUTPUT REQUIREMENTS
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Competitive Intelligence Report — Standard Prompt (Hermes Agent)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_908
+#graphify/document #graphify/EXTRACTED #community/REPORT_STRUCTURE

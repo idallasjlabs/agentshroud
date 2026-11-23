@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-atlas/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 90"
-location: "L6"
+community: "trivy_report.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/trivy_reportpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect_7]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

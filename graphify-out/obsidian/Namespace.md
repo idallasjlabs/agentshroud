@@ -1,12 +1,11 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: ""
 type: "code"
-community: "Community 265"
-location: "L472"
+community: "migrate-cve-registry-ghsa.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_265
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Namespace
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[gather_advisories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_265
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

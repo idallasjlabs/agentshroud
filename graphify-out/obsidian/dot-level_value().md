@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "CrossBotTrustLedger"
+community: "PermissionLevel"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/PermissionLevel
 ---
 
 # .level_value()
@@ -16,6 +16,7 @@ tags:
 - [[dot-__gt__()]] - `calls` [EXTRACTED]
 - [[dot-__le__()]] - `calls` [EXTRACTED]
 - [[dot-__lt__()]] - `calls` [EXTRACTED]
-- [[PermissionLevel_1]] - `method` [EXTRACTED]
+- [[dot-test_level_values()]] - `calls` [EXTRACTED]
+- [[PermissionLevel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

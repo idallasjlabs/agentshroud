@@ -1,24 +1,26 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: ""
 type: "code"
-community: "Community 39"
-location: "L255"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/mainrs
 ---
 
 # Option
 
 ## Connections
-- [[.post()]] - `references` [EXTRACTED]
-- [[.post()_1]] - `references` [EXTRACTED]
-- [[.request()]] - `references` [EXTRACTED]
-- [[.request()_1]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()_2]] - `references` [EXTRACTED]
+- [[dot-request()_3]] - `references` [EXTRACTED]
+- [[dot-request()_4]] - `references` [EXTRACTED]
+- [[Commands_3]] - `references` [EXTRACTED]
 - [[FakeTransport]] - `references` [EXTRACTED]
+- [[GetResource]] - `references` [EXTRACTED]
 - [[map_http_error()]] - `references` [EXTRACTED]
 - [[resolve_token()]] - `references` [EXTRACTED]
 - [[run_cves()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/code #graphify/EXTRACTED #community/mainrs

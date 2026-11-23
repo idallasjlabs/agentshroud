@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "TelegramAPIProxy (3)"
+community: "make_httpx_fetcher"
 location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_3
+  - community/make_httpx_fetcher
 ---
 
 # .test_byte_budget_caps_reads()
@@ -17,4 +17,4 @@ tags:
 - [[_FakeStreamResponse_1]] - `calls` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_3
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

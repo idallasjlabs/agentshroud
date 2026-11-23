@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "ControlCenter"
+community: "TestSnapshotSmoke"
 location: "L666"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/TestSnapshotSmoke
 ---
 
 # .test_live_registry_is_idempotent_no_new_backlog()
@@ -16,4 +16,4 @@ tags:
 - [[TestSnapshotSmoke]] - `method` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/TestSnapshotSmoke

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/nano-pdf/SKILL.md"
+source_file: "skills/openclaw/model-usage/SKILL.md"
 type: "document"
-community: "Community 1414"
-location: "L29"
+community: "Model usage"
+location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1414
+  - community/Model_usage
 ---
 
 # Quick start
 
 ## Connections
-- [[nano-pdf]] - `contains` [EXTRACTED]
+- [[Model usage]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1414
+#graphify/document #graphify/EXTRACTED #community/Model_usage

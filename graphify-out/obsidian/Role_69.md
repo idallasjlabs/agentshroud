@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "Community 337"
-location: "L8"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

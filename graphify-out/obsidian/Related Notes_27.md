@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Auth Errors.md"
 type: "document"
-community: "Community 532"
-location: "L75"
+community: "HTTP 401 — Unauthorized"
+location: "L80"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_532
+  - community/HTTP_401__Unauthorized
 ---
 
 # Related Notes
 
 ## Connections
-- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
+- [[Auth Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_532
+#graphify/document #graphify/EXTRACTED #community/HTTP_401__Unauthorized

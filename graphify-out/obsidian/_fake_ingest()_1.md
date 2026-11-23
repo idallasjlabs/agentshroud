@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips."
+community: "_sleep"
 location: "L1505"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/_sleep
 ---
 
 # _fake_ingest()
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_skips_ingest_when_marked_done_after_wake()]] - `indirect_call` [INFERRED]
 - [[dot-test_skips_when_already_ingested_today()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/code #graphify/INFERRED #community/_sleep

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-tdd/SKILL.md"
 type: "document"
-community: "1. GitHub MCP Authentication Reset"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_GitHub_MCP_Authentication_Reset
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # .agents/skills/i-tdd/SKILL.md
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_GitHub_MCP_Authentication_Reset
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

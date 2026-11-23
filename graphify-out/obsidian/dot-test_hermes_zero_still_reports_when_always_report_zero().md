@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Owner wants to SEE a Hermes report even with 0 new advisories.]] - `rationale_for` [EXTRACTED]
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
-- [[_fake_send()_18]] - `contains` [EXTRACTED]
-- [[_fake_send()]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_fake_send()_3]] - `contains` [EXTRACTED]
+- [[_fake_send()_5]] - `indirect_call` [INFERRED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

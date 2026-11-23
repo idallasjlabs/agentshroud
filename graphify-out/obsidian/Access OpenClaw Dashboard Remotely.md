@@ -1,12 +1,12 @@
 ---
 source_file: "docs/reference/TAILSCALE_COMMANDS.md"
 type: "document"
-community: "Community 764"
+community: "Tailscale Remote Access Setup"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_764
+  - community/Tailscale_Remote_Access_Setup
 ---
 
 # Access OpenClaw Dashboard Remotely
@@ -17,4 +17,4 @@ tags:
 - [[Option 3 Both Services]] - `contains` [EXTRACTED]
 - [[Tailscale Remote Access Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_764
+#graphify/document #graphify/EXTRACTED #community/Tailscale_Remote_Access_Setup

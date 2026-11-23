@@ -1,17 +1,17 @@
 ---
 source_file: "docs/architecture/adr/ADR-009-enforce-by-default.md"
 type: "document"
-community: "Community 517"
+community: "ADR-009: Enforce-by-Default Security Philosophy"
 location: "L39"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_517
+  - community/ADR-009_Enforce-by-Default_Security_Philosophy
 ---
 
 # Policy Table
 
 ## Connections
-- [[Decision_10]] - `contains` [EXTRACTED]
+- [[Decision_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_517
+#graphify/document #graphify/EXTRACTED #community/ADR-009_Enforce-by-Default_Security_Philosophy

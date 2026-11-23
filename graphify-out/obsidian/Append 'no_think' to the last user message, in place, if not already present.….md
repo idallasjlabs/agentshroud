@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "rationale"
-community: "SecureBrowser (4)"
+community: "._suppress_qwen3_thinking"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/_suppress_qwen3_thinking
 ---
 
 # Append '/no_think' to the last user message, in place, if not already present.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_suppress_qwen3_thinking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/rationale #graphify/EXTRACTED #community/_suppress_qwen3_thinking

@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "_make_sanitizer"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_make_sanitizer
 ---
 
 # .test_pipeline_receives_trust_level()
 
 ## Connections
 - [[Proxy should pass ownernon-owner trust level into outbound pipeline.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
+- [[process_outbound()_22]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "code"
-community: "Community 788"
+community: "is_quota_exhausted"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_788
+  - community/is_quota_exhausted
 ---
 
 # test_llm_quota_detector.py
@@ -16,7 +16,7 @@ tags:
 - [[TestOverloadedMultiProvider]] - `contains` [EXTRACTED]
 - [[is_overloaded()]] - `imports` [EXTRACTED]
 - [[is_quota_exhausted()]] - `imports` [EXTRACTED]
-- [[llm_quota_detector.py]] - `references` [EXTRACTED]
+- [[llm_quota_detector.py]] - `imports_from` [EXTRACTED]
 - [[test_200_never_triggers()]] - `contains` [EXTRACTED]
 - [[test_400_without_quota_substring_not_flagged()]] - `contains` [EXTRACTED]
 - [[test_500_never_triggers()]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[test_no_false_positive_on_anthropic_request_rate_limit()]] - `contains` [EXTRACTED]
 - [[test_non_json_body_anthropic_429_no_substring_match()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_788
+#graphify/code #graphify/EXTRACTED #community/is_quota_exhausted

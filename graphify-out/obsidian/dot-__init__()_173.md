@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "TestToolChainAnalyzer"
-location: "L95"
+community: "IntelReportStore"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/IntelReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

@@ -1,28 +1,28 @@
 ---
-source_file: ".github/agents/i-socrates.agent.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "Community 1076"
-location: "L11"
+community: "Socrates — Dialogue Architect"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1076
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Dialogue Techniques_3]] - `contains` [EXTRACTED]
-- [[ElevenLabs v3 Audio Tags_3]] - `contains` [EXTRACTED]
-- [[Input Requirements_38]] - `contains` [EXTRACTED]
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_3]] - `contains` [EXTRACTED]
-- [[Output Format_55]] - `contains` [EXTRACTED]
-- [[Persona_30]] - `contains` [EXTRACTED]
-- [[Quality Checklist_34]] - `contains` [EXTRACTED]
-- [[Role_141]] - `contains` [EXTRACTED]
-- [[Speaker Definitions_3]] - `contains` [EXTRACTED]
-- [[System Prompt_30]] - `contains` [EXTRACTED]
-- [[User Prompt Template_14]] - `contains` [EXTRACTED]
-- [[i-socrates.agent]] - `contains` [EXTRACTED]
+- [[dot-agentsagentssocrates]] - `contains` [EXTRACTED]
+- [[Dialogue Techniques_1]] - `contains` [EXTRACTED]
+- [[ElevenLabs v3 Audio Tags_1]] - `contains` [EXTRACTED]
+- [[Input Requirements_69]] - `contains` [EXTRACTED]
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - `contains` [EXTRACTED]
+- [[Output Format_111]] - `contains` [EXTRACTED]
+- [[Persona_53]] - `contains` [EXTRACTED]
+- [[Quality Checklist_61]] - `contains` [EXTRACTED]
+- [[Role_272]] - `contains` [EXTRACTED]
+- [[Speaker Definitions_1]] - `contains` [EXTRACTED]
+- [[System Prompt_53]] - `contains` [EXTRACTED]
+- [[User Prompt Template_21]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1076
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

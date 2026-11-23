@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/multi_host_test.py"
 type: "code"
-community: "parse_trivy_output"
+community: "MultiHostResult"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/MultiHostResult
 ---
 
 # .exit_code()
@@ -15,4 +15,4 @@ tags:
 - [[0 iff all hosts passed; 1 otherwise (incl. empty  any unreachable).]] - `rationale_for` [EXTRACTED]
 - [[MultiHostResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/MultiHostResult

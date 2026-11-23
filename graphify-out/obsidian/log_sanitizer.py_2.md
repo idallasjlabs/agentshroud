@@ -1,25 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
-type: "document"
-community: "Community 732"
-location: "L10"
+source_file: "gateway/security/log_sanitizer.py"
+type: "code"
+community: "TestLogSanitizer"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_732
+  - community/TestLogSanitizer
 ---
 
 # log_sanitizer.py
 
 ## Connections
-- [[Configuration  Environment Variables_25]] - `contains` [EXTRACTED]
-- [[Function Details_43]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_46]] - `contains` [EXTRACTED]
-- [[Pattern Taxonomy]] - `contains` [EXTRACTED]
-- [[Purpose_164]] - `contains` [EXTRACTED]
-- [[Related_50]] - `contains` [EXTRACTED]
-- [[Responsibilities_48]] - `contains` [EXTRACTED]
-- [[Threat Model_19]] - `contains` [EXTRACTED]
-- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
+- [[Log Sanitizer - Security Hardening Module Scrubs PII, credentials, and…]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `contains` [EXTRACTED]
+- [[install_log_sanitizer()]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_log_sanitizer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_732
+#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-odev/SKILL.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer (3)"
+community: "Mode A — Single task"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer_3
+  - community/Mode_A__Single_task
 ---
 
 # .agents/skills/i-odev/SKILL.md
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer_3
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

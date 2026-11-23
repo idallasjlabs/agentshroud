@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/i-sec/README.md"
 type: "document"
-community: "Community 211"
-location: "L224"
+community: "Security Review (SEC)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/Security_Review_SEC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_211
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

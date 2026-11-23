@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ui.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 515"
-location: "L255"
+community: "Skill: UI Expert (UI)"
+location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_515
+  - community/Skill_UI_Expert_UI
 ---
 
 # Container Query Pattern (preferred over breakpoints for components)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Responsive Layout System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_515
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-pr.md"
+source_file: ".omp/agents/i-pr.md"
 type: "document"
-community: "Community 1957"
-location: "L14"
+community: "Skill: Pull Request (PR) Generator"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1957
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Objective
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1957
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

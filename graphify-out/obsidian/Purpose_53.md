@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_proxy.py.md"
 type: "document"
-community: "Community 1213"
-location: "L6"
+community: "web_proxy.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1213
+  - community/web_proxypy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[web_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1213
+#graphify/document #graphify/EXTRACTED #community/web_proxypy

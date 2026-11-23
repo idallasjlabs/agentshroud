@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 168"
+community: "8. Docker System Pruning"
 location: "L427"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_168
+  - community/8_Docker_System_Pruning
 ---
 
 # Prune from inside Colima VM (use when host-side prune hangs)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Docker System Pruning]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_168
+#graphify/document #graphify/EXTRACTED #community/8_Docker_System_Pruning

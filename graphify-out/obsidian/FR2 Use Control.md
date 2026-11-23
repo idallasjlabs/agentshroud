@@ -1,11 +1,11 @@
 ---
 source_file: "docs/compliance/iec-62443-matrix.md"
 type: "concept"
-community: "Community 89"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
 tags:
   - graphify/concept
-  - graphify/EXTRACTED
-  - community/Community_89
+  - graphify/INFERRED
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # FR2: Use Control
@@ -13,10 +13,6 @@ tags:
 ## Connections
 - [[Kill Switch (freeze  shutdown  disconnect)]] - `conceptually_related_to` [INFERRED]
 - [[State Machine — Approval Queue Item Lifecycle]] - `conceptually_related_to` [INFERRED]
-- [[delegation.py]] - `references` [EXTRACTED]
 - [[iec-62443-matrix]] - `conceptually_related_to` [EXTRACTED]
-- [[killswitch_monitor.py]] - `references` [EXTRACTED]
-- [[progressive_lockdown.py]] - `references` [EXTRACTED]
-- [[rbac.py]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_89
+#graphify/concept #graphify/INFERRED #community/IEC_62443_Compliance_Matrix__AgentShroud

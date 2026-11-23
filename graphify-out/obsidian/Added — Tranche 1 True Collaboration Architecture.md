@@ -1,12 +1,12 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1984"
+community: "[0.9.0] — feat/v0.9.0-soc-team-collab — \"Sentinel\" (2026-03-18)"
 location: "L782"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1984
+  - community/090__feat/v090-soc-team-collab__Sentinel_2026-03-18
 ---
 
 # Added — Tranche 1: True Collaboration Architecture
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1984
+#graphify/document #graphify/EXTRACTED #community/090__feat/v090-soc-team-collab__Sentinel_2026-03-18

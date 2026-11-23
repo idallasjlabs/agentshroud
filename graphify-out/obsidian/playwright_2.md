@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/skill.json"
-type: "code"
-community: "Technical Specification (2)"
-location: "L41"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
+type: "document"
+community: "Playwright"
+location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification_2
+  - community/Playwright
 ---
 
-# playwright
+# playwright.md
 
 ## Connections
-- [[dependencies_20]] - `contains` [EXTRACTED]
+- [[Playwright_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Technical_Specification_2
+#graphify/document #graphify/EXTRACTED #community/Playwright

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0.md"
 type: "document"
-community: "Community 2062"
+community: "Findings"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2062
+  - community/Findings
 ---
 
 # H1: Telegram Proxy middleware_manager Never Initialized
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[HIGH — Should Fix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2062
+#graphify/document #graphify/EXTRACTED #community/Findings

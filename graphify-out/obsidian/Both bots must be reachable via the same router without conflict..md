@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Community 78"
+community: "ingest_api/config.py"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/ingest_api/configpy
 ---
 
 # Both bots must be reachable via the same router without conflict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_hermes_and_openclaw_coexist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

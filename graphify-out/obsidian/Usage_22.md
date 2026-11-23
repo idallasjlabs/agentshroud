@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "Community 117"
+community: "Quality Assurance (SKILL)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Quality_Assurance_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

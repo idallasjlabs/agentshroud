@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 306"
-location: "L192"
+community: "agentshroud-gateway"
+location: "L127"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/agentshroud-gateway
 ---
 
 # Related Notes
 
 ## Connections
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
+- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

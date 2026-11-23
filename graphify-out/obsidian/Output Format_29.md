@@ -1,18 +1,18 @@
 ---
-source_file: ".cursor/agents/athena.md"
+source_file: ".opencode/agents/athena.md"
 type: "document"
-community: "Community 1652"
-location: "L28"
+community: "Athena — Knowledge Distiller"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1652
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Output Format
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
-- [[show_notes_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_5]] - `contains` [EXTRACTED]
+- [[show_notes_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1652
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

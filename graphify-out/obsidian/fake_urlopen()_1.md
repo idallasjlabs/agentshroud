@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
-location: "L6883"
+community: "FakeRBAC"
+location: "L3500"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/FakeRBAC
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_block_notice_sent_without_markdown_parse_mode()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_high_risk_approval_workflow_question_gets_safe_guidance()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

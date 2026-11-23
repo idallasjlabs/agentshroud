@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Community 22"
+community: "prompt_guard.py"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/prompt_guardpy
 ---
 
 # test_prompt_guard_init()
@@ -16,4 +16,4 @@ tags:
 - [[Test PromptGuard initialization]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

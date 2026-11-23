@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soak_status.py"
 type: "code"
-community: "_FakeUpstreamWS"
+community: "classify"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUpstreamWS
+  - community/classify
 ---
 
 # .test_empty_heartbeat_file_skip_does_not_mask_a_real_error()
@@ -15,5 +15,6 @@ tags:
 - [[A benign heartbeat skip must not hide an actual failing job.]] - `rationale_for` [EXTRACTED]
 - [[TestClassify_2]] - `method` [EXTRACTED]
 - [[_job()]] - `calls` [EXTRACTED]
+- [[classify()_2]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUpstreamWS
+#graphify/code #graphify/EXTRACTED #community/classify

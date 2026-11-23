@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ssh_config.py"
-type: "code"
-community: "Community 25"
+source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+type: "document"
+community: "ssh_config.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/ssh_configpy
 ---
 
-# ssh_config.py
+# ssh_config.py.md
 
 ## Connections
-- [[SSHConfig]] - `contains` [EXTRACTED]
-- [[SSHHostConfig]] - `contains` [EXTRACTED]
-- [[config.py]] - `imports_from` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[ssh_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_25
+#graphify/document #graphify/EXTRACTED #community/ssh_configpy

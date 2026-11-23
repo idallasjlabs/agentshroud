@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "ToolResultInjectionScanner"
+location: "L3487"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/ToolResultInjectionScanner
+---
+
+# Replace a non-file text field value in a multipart/form-data body. Only the…
+
+## Connections
+- [[dot-_multipart_replace_field()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ContextSegment"
+community: "EnhancedApprovalQueue"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/EnhancedApprovalQueue
 ---
 
 # .get_policy_for_tier()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-requires_approval()]] - `calls` [EXTRACTED]
 - [[dot-submit_tool_request()_2]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Get the policy for a risk tier.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
+- [[ToolRiskPolicy]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

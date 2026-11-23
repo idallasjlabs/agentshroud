@@ -1,18 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 3
+members: 2
 ---
 
 # .agents/skills/graphify/references/extraction-spec.md
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 3 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[extract_fn()]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
-- [[test_sunday_upgrade_session_guard.sh]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
-- [[test_sunday_upgrade_session_guard.sh script]] - code - tests/startup_smoke/test_sunday_upgrade_session_guard.sh
+- [[dot-agentsskillsgraphifyreferencesextraction-spec]] - document - .agents/skills/graphify/references/extraction-spec.md
+- [[graphify reference extraction subagent prompt]] - document - .agents/skills/graphify/references/extraction-spec.md
 
 ## Live Query (requires Dataview plugin)
 

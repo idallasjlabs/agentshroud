@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "ToolChainAnalyzer"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ToolChainAnalyzer
 ---
 
 # .test_rapid_file_enumeration()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of rapid file enumeration.]] - `rationale_for` [EXTRACTED]
 - [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

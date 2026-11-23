@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "telegram_proxy.py"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/telegram_proxypy
 ---
 
 # .test_project_scoped_mode()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollabMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

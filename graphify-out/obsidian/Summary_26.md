@@ -1,18 +1,17 @@
 ---
-source_file: "docs/compliance/iec-62443-matrix.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 162"
-location: "L116"
+community: "[Unreleased] — feat/http-connect-proxy + feat/credential-isolation"
+location: "L946"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/Unreleased__feat/http-connect-proxy__feat/credential-isolation
 ---
 
 # Summary
 
 ## Connections
-- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
-- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
+- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_162
+#graphify/document #graphify/EXTRACTED #community/Unreleased__feat/http-connect-proxy__feat/credential-isolation

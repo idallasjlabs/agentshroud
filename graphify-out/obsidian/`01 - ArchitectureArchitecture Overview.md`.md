@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/sav.md"
+source_file: "docker/config/hermes/skills/i-sav/SKILL.md"
 type: "document"
-community: "Community 297"
-location: "L137"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_297
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # `01 - Architecture/Architecture Overview.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_297
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

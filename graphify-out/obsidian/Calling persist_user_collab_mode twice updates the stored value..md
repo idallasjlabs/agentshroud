@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # Calling persist_user_collab_mode twice updates the stored value.
 
 ## Connections
-- [[.test_persist_user_collab_mode_update()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_persist_user_collab_mode_update()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

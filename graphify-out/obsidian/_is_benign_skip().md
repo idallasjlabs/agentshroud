@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "code"
-community: "Community 310"
+community: "classify"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_310
+  - community/classify
 ---
 
 # _is_benign_skip()
 
 ## Connections
-- [[Any_85]] - `references` [EXTRACTED]
+- [[Any_47]] - `references` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
 - [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_310
+#graphify/code #graphify/EXTRACTED #community/classify

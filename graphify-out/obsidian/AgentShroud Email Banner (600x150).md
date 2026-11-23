@@ -1,11 +1,11 @@
 ---
 source_file: "branding/email/email-banner-600x150.png"
 type: "image"
-community: "Community 585"
+community: "AgentShroud Primary Logo"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_585
+  - community/AgentShroud_Primary_Logo
 ---
 
 # AgentShroud Email Banner (600x150)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Primary Logo]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_585
+#graphify/image #graphify/INFERRED #community/AgentShroud_Primary_Logo

@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # test_pipeline_stats()
 
 ## Connections
-- [[.process_inbound()_1]] - `calls` [EXTRACTED]
-- [[.process_outbound()_1]] - `calls` [EXTRACTED]
 - [[Verify pipeline statistics are tracked correctly.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_49]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

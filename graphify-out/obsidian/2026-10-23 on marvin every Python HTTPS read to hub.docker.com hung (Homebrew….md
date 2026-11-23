@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "rationale"
-community: "Sunday Upgrade prompt"
+community: "TestFetchDockerhubTagsUsesCurl"
 location: "L399"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_prompt
+  - community/TestFetchDockerhubTagsUsesCurl
 ---
 
 # 2026-10-23 on marvin: every Python HTTPS read to hub.docker.com hung (Homebrew…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFetchDockerhubTagsUsesCurl]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Sunday_Upgrade_prompt
+#graphify/rationale #graphify/EXTRACTED #community/TestFetchDockerhubTagsUsesCurl

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "Any"
-location: "L204"
+community: "test_e2e_watchtower.py"
+location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/test_e2e_watchtowerpy
 ---
 
 # .check_response()
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `calls` [EXTRACTED]
-- [[CanaryResult_1]] - `references` [EXTRACTED]
-- [[Check if response contains the session's canary (prompt leakage detected).]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[_BrokenOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy

@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 40"
+community: "test_web_api_coverage.py"
 location: "L960"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/test_web_api_coveragepy
 ---
 
 # TestWsUpdates
 
 ## Connections
-- [[.test_echoes_status_until_disconnect()]] - `method` [EXTRACTED]
-- [[.test_invalid_token_closes_4003()_1]] - `method` [EXTRACTED]
-- [[.test_missing_token_closes_4001()_1]] - `method` [EXTRACTED]
-- [[KillSwitchAction]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[UpdateRequest]] - `uses` [INFERRED]
+- [[dot-test_echoes_status_until_disconnect()]] - `method` [EXTRACTED]
+- [[dot-test_invalid_token_closes_4003()]] - `method` [EXTRACTED]
+- [[dot-test_missing_token_closes_4001()_1]] - `method` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

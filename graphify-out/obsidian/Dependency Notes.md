@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 579"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_579
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Dependency Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[All Dependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_579
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

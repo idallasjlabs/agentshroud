@@ -1,12 +1,12 @@
 ---
 source_file: ".omp/agents/i-pr.md"
 type: "document"
-community: "Community 1960"
+community: "Skill: Pull Request (PR) Generator"
 location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1960
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Constraints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pull Request (PR) Generator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1960
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

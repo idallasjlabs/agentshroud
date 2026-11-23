@@ -1,11 +1,11 @@
 ---
 source_file: "docs/TEAM.md"
 type: "concept"
-community: "Community 1141"
+community: "Claude Code — Primary development agent"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1141
+  - community/Claude_Code__Primary_development_agent
 ---
 
 # Scrum Master / Agile Coach — AgentShroud Bot (OpenClaw)
@@ -14,4 +14,4 @@ tags:
 - [[Claude Code — Primary development agent]] - `references` [EXTRACTED]
 - [[Product Owner — Isaiah Jefferson]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1141
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code__Primary_development_agent

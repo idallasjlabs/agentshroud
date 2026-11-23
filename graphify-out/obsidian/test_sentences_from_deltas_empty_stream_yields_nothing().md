@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # test_sentences_from_deltas_empty_stream_yields_nothing()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[_aiter()]] - `calls` [EXTRACTED]
 - [[_sentences_from_deltas()]] - `calls` [EXTRACTED]
+- [[asyncio_25]] - `references` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

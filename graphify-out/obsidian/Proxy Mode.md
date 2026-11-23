@@ -1,16 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "Proxy Mode"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/Proxy_Mode
 ---
 
 # Proxy Mode
 
-## Connections
-- [[setup-guide]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/Proxy_Mode

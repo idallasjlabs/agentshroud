@@ -1,24 +1,25 @@
 ---
 source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Community 694"
+community: "skill.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_694
+  - community/skilljson
 ---
 
 # skill.json
 
 ## Connections
-- [[author_4]] - `contains` [EXTRACTED]
-- [[dependencies]] - `contains` [EXTRACTED]
-- [[description_6]] - `contains` [EXTRACTED]
-- [[keywords_4]] - `contains` [EXTRACTED]
-- [[name_6]] - `contains` [EXTRACTED]
-- [[security]] - `contains` [EXTRACTED]
-- [[tools_1]] - `contains` [EXTRACTED]
-- [[version_8]] - `contains` [EXTRACTED]
+- [[author]] - `contains` [EXTRACTED]
+- [[dependencies_1]] - `contains` [EXTRACTED]
+- [[description_4]] - `contains` [EXTRACTED]
+- [[keywords]] - `contains` [EXTRACTED]
+- [[name]] - `contains` [EXTRACTED]
+- [[playwright_1]] - `imports` [EXTRACTED]
+- [[security_1]] - `contains` [EXTRACTED]
+- [[tools]] - `contains` [EXTRACTED]
+- [[version]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_694
+#graphify/code #graphify/EXTRACTED #community/skilljson

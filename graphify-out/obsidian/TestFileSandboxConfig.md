@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "Community 1"
+community: "middleware.py"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/middlewarepy
 ---
 
 # TestFileSandboxConfig
 
 ## Connections
-- [[.test_default_blocks_sensitive_paths()]] - `method` [EXTRACTED]
-- [[.test_default_has_reasonable_allowed_paths()]] - `method` [EXTRACTED]
-- [[.test_default_mode_is_enforce()_2]] - `method` [EXTRACTED]
-- [[FileSandbox]] - `uses` [INFERRED]
-- [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[PIIScanner]] - `uses` [INFERRED]
+- [[dot-test_default_blocks_sensitive_paths()]] - `method` [EXTRACTED]
+- [[dot-test_default_has_reasonable_allowed_paths()]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_3]] - `method` [EXTRACTED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

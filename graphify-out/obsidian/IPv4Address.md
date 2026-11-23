@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: ""
 type: "code"
-community: "Community 111"
-location: "L255"
+community: "_canonicalize_ip_literal"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_111
+  - community/_canonicalize_ip_literal
 ---
 
 # IPv4Address
 
 ## Connections
-- [[_canonicalize_ip_literal()]] - `calls` [EXTRACTED]
 - [[_int_to_ipv4()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_111
+#graphify/code #graphify/EXTRACTED #community/_canonicalize_ip_literal

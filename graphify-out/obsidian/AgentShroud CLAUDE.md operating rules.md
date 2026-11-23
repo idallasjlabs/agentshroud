@@ -1,11 +1,11 @@
 ---
 source_file: "CLAUDE.md"
 type: "document"
-community: "Community 639"
+community: "8. Governance Model"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_639
+  - community/8_Governance_Model
 ---
 
 # AgentShroud CLAUDE.md operating rules
@@ -15,4 +15,4 @@ tags:
 - [[Prove the Outcome, Never the Steps]] - `references` [EXTRACTED]
 - [[Weekly Upgrades EVERYTHING Means Everything]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_639
+#graphify/document #graphify/EXTRACTED #community/8_Governance_Model

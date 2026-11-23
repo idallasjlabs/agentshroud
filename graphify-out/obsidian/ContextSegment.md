@@ -1,26 +1,21 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 216"
+community: "ContextGuard"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/ContextGuard
 ---
 
 # ContextSegment
 
 ## Connections
-- [[.get_segment_provenance()]] - `references` [EXTRACTED]
-- [[.record_segment()]] - `references` [EXTRACTED]
-- [[.tag_segment()]] - `references` [EXTRACTED]
-- [[Any_45]] - `uses` [INFERRED]
-- [[ContextIntegrityScorer]] - `uses` [INFERRED]
-- [[IntegrityScore]] - `uses` [INFERRED]
+- [[dot-get_segment_provenance()]] - `references` [EXTRACTED]
+- [[dot-record_segment()]] - `references` [EXTRACTED]
+- [[dot-tag_segment()]] - `calls` [EXTRACTED]
 - [[Tagged provenance record for a context segment.]] - `rationale_for` [EXTRACTED]
-- [[TestCheckMessage]] - `uses` [INFERRED]
-- [[TestContextIntegrityScorer]] - `uses` [INFERRED]
 - [[TestSourceTagging]] - `uses` [INFERRED]
 - [[_make_segment()]] - `calls` [EXTRACTED]
 - [[context_guard.py]] - `contains` [EXTRACTED]
@@ -28,4 +23,4 @@ tags:
 - [[test_context_guard.py]] - `imports` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_216
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

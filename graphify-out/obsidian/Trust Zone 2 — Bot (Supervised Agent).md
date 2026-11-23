@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-11-trust-boundary.svg"
 type: "concept"
-community: "Community 968"
+community: "AgentShroud Gateway (holds 1Password service account)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_968
+  - community/AgentShroud_Gateway_holds_1Password_service_account
 ---
 
 # Trust Zone 2 — Bot (Supervised Agent)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AgentShroud Bot (no direct credentialinternet access)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_968
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Gateway_holds_1Password_service_account

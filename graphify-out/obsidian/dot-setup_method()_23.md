@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "AgentShroud v1.2.0 Master Plan"
-location: "L126"
+community: "TestMultilingualInjection"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_v120_Master_Plan
+  - community/TestMultilingualInjection
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DockerEngine]] - `calls` [EXTRACTED]
-- [[TestDockerEngine]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_v120_Master_Plan
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

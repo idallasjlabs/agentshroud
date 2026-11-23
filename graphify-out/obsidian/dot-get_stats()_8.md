@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "MCPInspector"
-location: "L840"
+community: "test_e2e_proxy.py"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_34]] - `references` [EXTRACTED]
-- [[Get proxy statistics._1]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

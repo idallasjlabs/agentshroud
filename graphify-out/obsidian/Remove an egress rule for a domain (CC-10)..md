@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 10"
+community: "soc/router.py"
 location: "L487"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # Remove an egress rule for a domain (CC-10).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[remove_egress_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

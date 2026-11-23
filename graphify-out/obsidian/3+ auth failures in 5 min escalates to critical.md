@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "Community 62"
+community: "ingest_api/main.py"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # 3+ auth failures in 5 min escalates to critical
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_auth_failure_escalation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

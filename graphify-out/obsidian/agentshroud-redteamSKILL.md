@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/SKILL.md"
 type: "document"
-community: "Test-Driven Development README"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # agentshroud-redteam/SKILL.md
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester]] - `contains` [EXTRACTED]
+- [[AgentShroud Red Team Adversarial Tester_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

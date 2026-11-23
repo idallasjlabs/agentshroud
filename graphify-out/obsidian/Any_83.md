@@ -1,20 +1,21 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: ""
 type: "code"
-community: "Community 48"
-location: "L176"
+community: "ToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/ToolChainAnalyzer
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[dot-__init__()_205]] - `references` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_params()]] - `references` [EXTRACTED]
+- [[dot-score_reversibility()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

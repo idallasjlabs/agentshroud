@@ -1,19 +1,17 @@
 ---
-source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
+source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 306"
-location: "L10"
+community: "AgentShroud Phase 3 - Quick Start Guide"
+location: "L288"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_306
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # Graceful Shutdown
 
 ## Connections
-- [[Normal Stop]] - `contains` [EXTRACTED]
-- [[Shutdown & Recovery_1]] - `contains` [EXTRACTED]
-- [[Shutdown Sequence]] - `contains` [EXTRACTED]
+- [[Stop the Stack_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_306
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

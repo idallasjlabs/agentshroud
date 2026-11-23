@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 68"
+community: "test_voice_gateway.py"
 location: "L1843"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_68
+  - community/test_voice_gatewaypy
 ---
 
 # test_ws_direct_agent_pipeline_error_pops_history_and_recovery_send_fails()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[RuntimeError]] - `calls` [INFERRED]
-- [[When the LLM raises in the 'direct' agent path       - the user message appende]] - `rationale_for` [EXTRACTED]
+- [[When the LLM raises in the 'direct' agent path - the user message appended to…]] - `rationale_for` [EXTRACTED]
+- [[_fail_llm()]] - `indirect_call` [INFERRED]
+- [[_receive_side_effect()]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_68
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

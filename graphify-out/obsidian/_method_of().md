@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "Community 221"
+community: "A2APolicyEngine"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_221
+  - community/A2APolicyEngine
 ---
 
 # _method_of()
 
 ## Connections
-- [[.enforce()]] - `calls` [EXTRACTED]
-- [[.evaluate()]] - `calls` [EXTRACTED]
-- [[A2AMethod]] - `references` [EXTRACTED]
-- [[Accept either the enum or its string value (JSON-RPC payloads arrive     as plai]] - `rationale_for` [EXTRACTED]
+- [[dot-enforce()_1]] - `calls` [EXTRACTED]
+- [[dot-evaluate()_1]] - `calls` [EXTRACTED]
+- [[A2AMethod]] - `calls` [EXTRACTED]
+- [[Accept either the enum or its string value (JSON-RPC payloads arrive as plain…]] - `rationale_for` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_221
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

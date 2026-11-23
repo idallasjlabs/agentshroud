@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-hdev/references/mode-b-sweep.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 2059"
-location: "L1"
+community: "Mode A — Single task"
+location: "L354"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2059
+  - community/Mode_A__Single_task
 ---
 
 # Mode B — Comprehensive review sweep
 
 ## Connections
-- [[Step 1 — One branch + worktree for the whole sweep]] - `contains` [EXTRACTED]
-- [[Step 2 — Work through directories one at a time]] - `contains` [EXTRACTED]
-- [[Step 3 — After the last directory (or a natural stopping point)]] - `contains` [EXTRACTED]
-- [[mode-b-sweep]] - `contains` [EXTRACTED]
+- [[Skill OpenClaw Dev Workflow (ODEV)]] - `contains` [EXTRACTED]
+- [[Step 1 — One branch + worktree for the whole sweep_3]] - `contains` [EXTRACTED]
+- [[Step 2 — Work through directories one at a time_3]] - `contains` [EXTRACTED]
+- [[Step 3 — After the last directory (or a natural stopping point)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2059
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

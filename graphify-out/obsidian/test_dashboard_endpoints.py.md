@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "Community 801"
+community: "test_dashboard_endpoints.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/test_dashboard_endpointspy
 ---
 
 # test_dashboard_endpoints.py
@@ -14,8 +14,12 @@ tags:
 ## Connections
 - [[AlertStore]] - `imports` [EXTRACTED]
 - [[LogBuffer]] - `imports` [EXTRACTED]
-- [[auth_headers()_1]] - `contains` [EXTRACTED]
-- [[client()_5]] - `contains` [EXTRACTED]
+- [[Tests for dashboard API endpoints proxystatus, alertssummary, sshhosts,…]] - `rationale_for` [EXTRACTED]
+- [[auth_headers()_4]] - `contains` [EXTRACTED]
+- [[client()_18]] - `contains` [EXTRACTED]
+- [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[test_alert_store_push_and_summary()]] - `contains` [EXTRACTED]
 - [[test_alerts_summary_empty()]] - `contains` [EXTRACTED]
 - [[test_alerts_summary_requires_auth()]] - `contains` [EXTRACTED]
@@ -33,4 +37,4 @@ tags:
 - [[test_ssh_hosts_requires_auth()]] - `contains` [EXTRACTED]
 - [[test_ssh_hosts_returns_hosts()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_801
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

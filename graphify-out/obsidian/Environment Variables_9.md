@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
 type: "document"
-community: "Community 616"
-location: "L84"
+community: "canary.py"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_616
+  - community/canarypy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[dns_filter.py_2]] - `contains` [EXTRACTED]
+- [[canary.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_616
+#graphify/document #graphify/EXTRACTED #community/canarypy

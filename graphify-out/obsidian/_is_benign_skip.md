@@ -1,11 +1,11 @@
 ---
 source_file: "scripts/soak_status.py"
 type: "code"
-community: "Community 310"
+community: "classify"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_310
+  - community/classify
 ---
 
 # _is_benign_skip
@@ -14,4 +14,4 @@ tags:
 - [[OpenClaw isHeartbeatContentEffectivelyEmpty benign skip]] - `references` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_310
+#graphify/code #graphify/EXTRACTED #community/classify

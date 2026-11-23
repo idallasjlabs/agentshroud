@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Any"
-location: "L21"
+community: "ToolResultSanitizerConfig"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/ToolResultSanitizerConfig
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
+- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizerConfig

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Community 569"
-location: "L27"
+community: "encrypted_store.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/encrypted_storepy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_569
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

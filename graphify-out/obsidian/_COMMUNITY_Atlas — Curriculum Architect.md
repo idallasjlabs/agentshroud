@@ -1,32 +1,30 @@
 ---
 type: community
-cohesion: 0.12
 members: 17
 ---
 
 # Atlas — Curriculum Architect
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[Follow-up (within 48 hours)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Glue Job Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Immediate (within 2 hours)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Incident Response Workflow_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Phase 1 ASSESS (Max 5 minutes)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Phase 2 COMMUNICATE (Concurrent with assess)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Phase 3 MITIGATE (Rollback First!)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Post-Incident_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Post-Mortem Template_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[RDS Rollback (Point-in-Time or Snapshot)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Role_59]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[S3 Data Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Severity Matrix_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Skill Incident Response (INCIDENT)_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Step Function Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[Zabbix Rollback_2]] - document - docker/config/hermes/skills/i-production/SKILL.md
-- [[hermesskillsi-productionSKILL]] - document - docker/config/hermes/skills/i-production/SKILL.md
+- [[Atlas — Curriculum Architect]] - document - .github/agents/i-atlas.agent.md
+- [[CPA Curriculum Frontmatter Addition]] - document - .github/agents/i-atlas.agent.md
+- [[Coverage Types]] - document - .github/agents/i-atlas.agent.md
+- [[Episode Closing]] - document - .github/agents/i-atlas.agent.md
+- [[Exam Weight Integration]] - document - .github/agents/i-atlas.agent.md
+- [[Gleim Unit Mapping]] - document - .github/agents/i-atlas.agent.md
+- [[Input Requirements]] - document - .github/agents/i-atlas.agent.md
+- [[Mandatory Acronym Expansion]] - document - .github/agents/i-atlas.agent.md
+- [[OKE Channel — CPA Exam Context]] - document - .github/agents/i-atlas.agent.md
+- [[Output Format]] - document - .github/agents/i-atlas.agent.md
+- [[Persona]] - document - .github/agents/i-atlas.agent.md
+- [[Quality Checklist]] - document - .github/agents/i-atlas.agent.md
+- [[Role_1]] - document - .github/agents/i-atlas.agent.md
+- [[System Prompt]] - document - .github/agents/i-atlas.agent.md
+- [[User Prompt Template]] - document - .github/agents/i-atlas.agent.md
+- [[User Prompt Template — OKE Channel]] - document - .github/agents/i-atlas.agent.md
+- [[i-atlas.agent]] - document - .github/agents/i-atlas.agent.md
 
 ## Live Query (requires Dataview plugin)
 

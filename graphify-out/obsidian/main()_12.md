@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/descriptors.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "Community 1968"
-location: "L216"
+community: "SecureBrowser"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1968
+  - community/SecureBrowser
 ---
 
 # main()
 
 ## Connections
-- [[build_manifest()]] - `calls` [EXTRACTED]
-- [[canonical_bytes()]] - `calls` [EXTRACTED]
-- [[descriptors.py]] - `contains` [EXTRACTED]
-- [[verify_descriptors()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `calls` [EXTRACTED]
+- [[openclawskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1968
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

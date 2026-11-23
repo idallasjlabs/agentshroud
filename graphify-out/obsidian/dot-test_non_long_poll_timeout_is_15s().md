@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md (5)"
+community: "TestReplayBufferOffsetParsing"
 location: "L4492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd_5
+  - community/TestReplayBufferOffsetParsing
 ---
 
 # .test_non_long_poll_timeout_is_15s()
 
 ## Connections
 - [[dot-_fake_urlopen_factory()]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 - [[sendMessage and similar calls must use a 15s urlopen timeout.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd_5
+#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

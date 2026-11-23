@@ -1,49 +1,37 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "Community 28"
+community: "RedactionResult"
 location: "L25"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_28
+  - graphify/EXTRACTED
+  - community/RedactionResult
 ---
 
 # ToolResultPIIConfig
 
 ## Connections
-- [[.__init__()_136]] - `method` [EXTRACTED]
-- [[.__init__()_137]] - `references` [EXTRACTED]
-- [[.get_config_for_tool()]] - `method` [EXTRACTED]
-- [[.set_config()]] - `calls` [EXTRACTED]
-- [[.test_default_config()_6]] - `calls` [EXTRACTED]
-- [[.test_email_content_scanning()]] - `calls` [EXTRACTED]
-- [[.test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
-- [[.test_sanitize_disabled()]] - `calls` [EXTRACTED]
-- [[.test_tool_result_config_default_meets_floor()]] - `calls` [EXTRACTED]
-- [[.test_tool_specific_config()]] - `calls` [EXTRACTED]
-- [[.tool_config()]] - `calls` [EXTRACTED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[dot-__init__()_107]] - `references` [EXTRACTED]
+- [[dot-__init__()_106]] - `method` [EXTRACTED]
+- [[dot-get_config_for_tool()]] - `method` [EXTRACTED]
+- [[dot-set_config()]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_2]] - `calls` [EXTRACTED]
+- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
+- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
+- [[dot-test_sanitize_disabled()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_result_config_default_meets_floor()]] - `calls` [EXTRACTED]
+- [[dot-test_tool_specific_config()]] - `calls` [EXTRACTED]
+- [[dot-tool_config()]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
 - [[PII configuration with per-tool overrides]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
 - [[TestConfidenceFloor]] - `uses` [INFERRED]
-- [[TestConfigurationLoading]] - `uses` [INFERRED]
-- [[TestMiddlewareIntegration]] - `uses` [INFERRED]
 - [[TestRealWorldScenarios]] - `uses` [INFERRED]
 - [[TestToolResultPIIConfig]] - `uses` [INFERRED]
 - [[TestToolResultSanitizer]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[middleware.py]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_28
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

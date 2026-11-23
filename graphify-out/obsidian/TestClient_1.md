@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_skills_manifest_sync.py"
+source_file: ""
 type: "code"
-community: "Community 83"
-location: "L328"
+community: "test_skill_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_83
+  - community/test_skill_guardpy
 ---
 
 # TestClient
 
 ## Connections
-- [[.client()_7]] - `references` [EXTRACTED]
-- [[.test_reload_requires_auth()]] - `calls` [EXTRACTED]
-- [[.test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
-- [[.test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
-- [[ManifestEntry]] - `uses` [INFERRED]
-- [[PlannedAction]] - `uses` [INFERRED]
-- [[SkillsManifest]] - `uses` [INFERRED]
+- [[dot-client()_6]] - `references` [EXTRACTED]
+- [[dot-test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_83
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

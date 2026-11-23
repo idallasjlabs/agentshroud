@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "GroupWorkspaceManager"
 location: "L355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/GroupWorkspaceManager
 ---
 
 # .test_rbac_without_is_owner_callable()
@@ -15,4 +15,4 @@ tags:
 - [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
 - [[TestDefensiveGuards]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

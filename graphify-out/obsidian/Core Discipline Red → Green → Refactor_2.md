@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-tdd.md"
+source_file: ".github/agents/i-tdd.agent.md"
 type: "document"
-community: "Community 1498"
-location: "L16"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1498
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Core Discipline: Red → Green → Refactor
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1498
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

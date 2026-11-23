@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
 community: "WebhookReceiver"
-location: "L325"
+location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,10 @@ tags:
 
 ## Connections
 - [[dot-process_webhook()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[dot-test_extract_user_id_slack()]] - `calls` [EXTRACTED]
+- [[dot-test_extract_user_id_slack_missing_event()]] - `calls` [EXTRACTED]
+- [[dot-test_extract_user_id_telegram_unchanged()]] - `calls` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[Extract user ID from webhook payload based on source platform.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 

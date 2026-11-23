@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 179"
-location: "L366"
+community: "[Unreleased] — feat/v0.8.0-enforcement-hardening (session 3 — 2026-03-15)"
+location: "L879"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/Unreleased__feat/v080-enforcement-hardening_session_3__2026-03-15
 ---
 
 # Summary
 
 ## Connections
-- [[OpenClaw Workspace Usage Guide]] - `contains` [EXTRACTED]
+- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/Unreleased__feat/v080-enforcement-hardening_session_3__2026-03-15

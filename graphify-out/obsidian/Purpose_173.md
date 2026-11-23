@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Community 1007"
-location: "L16"
+community: "fastapi.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/fastapimd
 ---
 
 # Purpose
 
 ## Connections
-- [[api.py_2]] - `contains` [EXTRACTED]
+- [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1007
+#graphify/document #graphify/EXTRACTED #community/fastapimd

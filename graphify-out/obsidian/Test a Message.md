@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 413"
+community: "Step-by-Step Installation"
 location: "L413"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_413
+  - community/Step-by-Step_Installation
 ---
 
 # Test a Message
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_413
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L111"
+community: "TestWebProxySecurityIntegration"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter_2]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `method` [EXTRACTED]
-- [[WebProxy_1]] - `references` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

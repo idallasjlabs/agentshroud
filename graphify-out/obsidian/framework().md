@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "Community 152"
+community: "ServerConfig"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/ServerConfig
 ---
 
 # framework()
 
 ## Connections
-- [[ConsentFramework]] - `calls` [EXTRACTED]
+- [[ConsentFramework]] - `uses` [INFERRED]
+- [[fixture_121]] - `references` [EXTRACTED]
 - [[test_consent_framework.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_152
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

@@ -1,18 +1,18 @@
 ---
 type: community
-cohesion: 0.67
-members: 3
+members: 5
 ---
 
 # test_hermes_mcp_reconciliation.sh
 
-**Cohesion:** 0.67 - moderately connected
-**Members:** 3 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
-- [[buildSummary()]] - code - gateway/web/templates/installer.html
-- [[startInstall()]] - code - gateway/web/templates/installer.html
+- [[check()_7]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[count_key()]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[reconcile_noyaml()]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
+- [[test_hermes_mcp_reconciliation.sh script]] - code - tests/startup_smoke/test_hermes_mcp_reconciliation.sh
 
 ## Live Query (requires Dataview plugin)
 

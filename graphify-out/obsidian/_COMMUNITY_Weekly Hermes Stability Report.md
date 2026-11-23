@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Weekly Hermes Stability Report
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[dashboard__init__.py]] - code - gateway/dashboard/__init__.py
+- [[Weekly Hermes Stability Report_1]] - document - docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,22 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 553"
-location: "L160"
+community: "Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_553
+  - community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[AWS Token expired (SSO)_7]] - `contains` [EXTRACTED]
-- [[AWS Unable to locate credentials_7]] - `contains` [EXTRACTED]
-- [[Atlassian OAuth flow failed_7]] - `contains` [EXTRACTED]
-- [[GitHub Bad credentials_7]] - `contains` [EXTRACTED]
-- [[GitHub Docker image not found_7]] - `contains` [EXTRACTED]
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_7]] - `contains` [EXTRACTED]
+- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_553
+#graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 413"
+community: "Step 5: Configure Ports"
 location: "L314"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_413
+  - community/Step_5_Configure_Ports
 ---
 
 # Default Configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Step 5 Configure Ports]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_413
+#graphify/document #graphify/EXTRACTED #community/Step_5_Configure_Ports

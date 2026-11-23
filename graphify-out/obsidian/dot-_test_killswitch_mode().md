@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-verify_killswitch()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
-- [[Test a specific kill switch mode.          Args             mode The kill swit]] - `rationale_for` [EXTRACTED]
+- [[Test a specific kill switch mode. Args mode The kill switch mode to test…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

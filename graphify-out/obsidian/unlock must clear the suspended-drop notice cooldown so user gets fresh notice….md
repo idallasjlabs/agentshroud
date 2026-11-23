@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "._make_proxy"
 location: "L8135"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # /unlock must clear the suspended-drop notice cooldown so user gets fresh notice…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unlock_clears_suspended_drop_cooldown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

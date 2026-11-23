@@ -1,26 +1,22 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 34"
+community: "TestCrossSessionAccess"
 location: "L652"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_34
+  - community/TestCrossSessionAccess
 ---
 
 # TestCrossSessionAccess
 
 ## Connections
-- [[.test_clean_message_allowed()]] - `method` [EXTRACTED]
-- [[.test_dict_message_handled()]] - `method` [EXTRACTED]
-- [[.test_direct_no_session_manager_blocked()]] - `method` [EXTRACTED]
-- [[.test_non_owner_blocked()]] - `method` [EXTRACTED]
-- [[.test_owner_allowed()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_clean_message_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_dict_message_handled()]] - `method` [EXTRACTED]
+- [[dot-test_direct_no_session_manager_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_non_owner_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_owner_allowed()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/TestCrossSessionAccess

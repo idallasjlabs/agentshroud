@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Drift Detection in Pipeline
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[MCPPolicyEngine.enforce()]] - code - gateway/security/mcp_policy.py
+- [[Drift Detection in Pipeline]] - code - gateway/tests/test_security_integration.py
 
 ## Live Query (requires Dataview plugin)
 

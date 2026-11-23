@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "Community 1341"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1341
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Unsafe Control Actions (UCAs)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Methodology_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1341
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

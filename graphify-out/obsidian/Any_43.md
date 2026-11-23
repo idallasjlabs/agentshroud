@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: ""
 type: "code"
-community: "Community 43"
-location: "L50"
+community: "EnhancedApprovalQueue"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/EnhancedApprovalQueue
 ---
 
 # Any
 
 ## Connections
-- [[.to_dict()_5]] - `references` [EXTRACTED]
+- [[dot-_p0()]] - `references` [EXTRACTED]
+- [[dot-_record()_1]] - `references` [EXTRACTED]
+- [[dot-_scrub()]] - `references` [EXTRACTED]
+- [[dot-call_tool()]] - `references` [EXTRACTED]
+- [[dot-list_tools()]] - `references` [EXTRACTED]
+- [[dot-run()_4]] - `references` [EXTRACTED]
+- [[_result()]] - `references` [EXTRACTED]
+- [[_string_leaves()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

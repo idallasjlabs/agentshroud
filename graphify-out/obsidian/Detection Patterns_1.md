@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_inspector.py.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 666"
-location: "L59"
+community: "AgentShroud Security Architecture"
+location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_666
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Detection Patterns
 
 ## Connections
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[PII Detection System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_666
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

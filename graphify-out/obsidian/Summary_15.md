@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1984"
-location: "L775"
+community: "Changed"
+location: "L471"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1984
+  - community/Changed
 ---
 
 # Summary
 
 ## Connections
-- [[0.9.0 — featv0.9.0-soc-team-collab — Sentinel (2026-03-18)]] - `contains` [EXTRACTED]
+- [[1.2.2 — releasev1.2.2 (2026-06-28)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1984
+#graphify/document #graphify/EXTRACTED #community/Changed

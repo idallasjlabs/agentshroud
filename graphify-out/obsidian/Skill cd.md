@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/agents/i-cd.md"
+source_file: "docker/config/hermes/skills/i-cd/SKILL.md"
 type: "document"
-community: "Community 2213"
-location: "L8"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2213
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: cd
 
 ## Connections
-- [[i-cd]] - `contains` [EXTRACTED]
+- [[hermesskillsi-cdSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2213
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

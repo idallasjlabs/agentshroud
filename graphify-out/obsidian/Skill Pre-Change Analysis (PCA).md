@@ -1,22 +1,22 @@
 ---
 source_file: ".agents/agents/i-pca.md"
 type: "document"
-community: "Community 1220"
+community: "Output Sections (ALL required)"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1220
+  - community/Output_Sections_ALL_required
 ---
 
 # Skill: Pre-Change Analysis (PCA)
 
 ## Connections
+- [[dot-agentsagentsi-pca]] - `contains` [EXTRACTED]
 - [[Closing Gate]] - `contains` [EXTRACTED]
 - [[Output Format Rules]] - `contains` [EXTRACTED]
 - [[Output Sections (ALL required)]] - `contains` [EXTRACTED]
 - [[Persisted Artifact Mode (opt-in repos only)]] - `contains` [EXTRACTED]
-- [[Role_22]] - `contains` [EXTRACTED]
-- [[i-pca]] - `contains` [EXTRACTED]
+- [[Role_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1220
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

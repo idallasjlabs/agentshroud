@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "MemoryLifecycleManager"
 location: "L207"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/MemoryLifecycleManager
 ---
 
 # .archive_file()
@@ -16,7 +16,7 @@ tags:
 - [[dot-enforce_memory_md_size_limit()]] - `calls` [EXTRACTED]
 - [[Archive a file to the archive directory.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_17]] - `references` [EXTRACTED]
+- [[Path_19]] - `references` [EXTRACTED]
 - [[RetentionAction]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

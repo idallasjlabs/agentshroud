@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "Community 54"
+community: "MCPPermissionManager"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/MCPPermissionManager
 ---
 
 # Record blocked private-tool access attempts for SOC/audit views.
 
 ## Connections
-- [[._record_private_access_attempt()]] - `rationale_for` [EXTRACTED]
+- [[dot-_record_private_access_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_54
+#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager

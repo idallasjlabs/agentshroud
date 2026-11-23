@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 78"
+community: "TestConfigValidation"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/TestConfigValidation
 ---
 
 # Test all valid sources are accepted
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_valid_sources()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation

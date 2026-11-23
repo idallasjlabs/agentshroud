@@ -1,18 +1,18 @@
 ---
 source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Community 173"
+community: "AgentShroud v0.9.0"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_173
+  - community/AgentShroud_v090
 ---
 
 # How to regenerate this report accurately
 
 ## Connections
-- [[AgentShroud v0.9.0_2]] - `contains` [EXTRACTED]
-- [[AgentShroud v1.3.0_1]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_173
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

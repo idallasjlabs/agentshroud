@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_sunday_prompt_unattended.sh"
+source_file: "docker/tests/test-op-auth.sh"
 type: "code"
-community: "Community 2176"
-location: "L11"
+community: "test-op-auth.sh"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2176
+  - community/test-op-authsh
 ---
 
 # pass()
 
 ## Connections
-- [[test_sunday_prompt_unattended.sh]] - `defines` [EXTRACTED]
-- [[test_sunday_prompt_unattended.sh script]] - `calls` [EXTRACTED]
+- [[test-op-auth.sh]] - `defines` [EXTRACTED]
+- [[test-op-auth.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2176
+#graphify/code #graphify/EXTRACTED #community/test-op-authsh

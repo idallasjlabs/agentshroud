@@ -1,0 +1,17 @@
+---
+source_file: "gateway/soc/router.py"
+type: "rationale"
+community: "soc/router.py"
+location: "L2814"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/soc/routerpy
+---
+
+# Run a Trivy CVE scan immediately and send the report via Telegram. Requires…
+
+## Connections
+- [[trigger_cve_report()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

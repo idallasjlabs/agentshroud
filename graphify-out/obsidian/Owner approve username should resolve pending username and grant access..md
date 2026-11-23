@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 2394"
+community: "fake_owner_notice"
 location: "L815"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2394
+  - community/fake_owner_notice
 ---
 
 # Owner /approve <username> should resolve pending username and grant access.
 
 ## Connections
-- [[.test_owner_approve_command_resolves_pending_username_alias()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_approve_command_resolves_pending_username_alias()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2394
+#graphify/rationale #graphify/EXTRACTED #community/fake_owner_notice

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/weather/SKILL.md"
+source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 852"
+community: "tmux Session Control"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_852
+  - community/tmux_Session_Control
 ---
 
 # When to Use
 
 ## Connections
-- [[Weather Skill]] - `contains` [EXTRACTED]
+- [[tmux Session Control]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_852
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

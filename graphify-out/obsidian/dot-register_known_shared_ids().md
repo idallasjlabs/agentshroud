@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Any"
+community: "OAuthSecurityValidator"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/OAuthSecurityValidator
 ---
 
 # .register_known_shared_ids()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

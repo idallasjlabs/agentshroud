@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Community 90"
+community: "System Audit Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/System_Audit_Documentation
 ---
 
 # System Audit Documentation
 
 ## Connections
-- [[Purpose_64]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_69]] - `contains` [EXTRACTED]
-- [[Related Skills_85]] - `contains` [EXTRACTED]
-- [[Usage_87]] - `contains` [EXTRACTED]
+- [[Purpose_130]] - `contains` [EXTRACTED]
+- [[Related Skills_60]] - `contains` [EXTRACTED]
+- [[Usage_70]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
+- [[hermesskillsi-sadREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

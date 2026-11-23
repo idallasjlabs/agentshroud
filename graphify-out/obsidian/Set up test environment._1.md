@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 16"
-location: "L193"
+community: "soc/router.py"
+location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/soc/routerpy
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[.setup_method()_10]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

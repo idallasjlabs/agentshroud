@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "TestNormalizeForSpeech"
+community: "Any"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Any
 ---
 
 # .rotate_credential()
@@ -18,9 +18,8 @@ tags:
 - [[dot-_validate_credential()]] - `calls` [EXTRACTED]
 - [[dot-check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[dot-emergency_rotate_credential()]] - `calls` [EXTRACTED]
-- [[dot-should_rotate()]] - `calls` [EXTRACTED]
-- [[Any_27]] - `references` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
-- [[Rotate a single credential with zero downtime.          Workflow generate new →]] - `rationale_for` [EXTRACTED]
+- [[Rotate a single credential with zero downtime. Workflow generate new →…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/code #graphify/EXTRACTED #community/Any

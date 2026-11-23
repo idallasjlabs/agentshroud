@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.08
 members: 24
 ---
 
 # Phase 3 Requirements: Working Chat Container
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 24 nodes
 
 ## Members
@@ -17,7 +15,7 @@ members: 24
 - [[Files to Mount in Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[MUST HAVE (Phase 3 - Minimum Viable Chat)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Must-Implement Security Controls (from 10_skills_to_harden_openclaw.txt)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[Notes_2]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[Notes_6]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[PHASE3_REQUIREMENTS]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Part 1 Isaiah's Persona Package]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Part 2 Phase 3 Feature Scope]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
@@ -26,7 +24,7 @@ members: 24
 - [[Personality Traits to Embed]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Phase 3 Requirements Working Chat Container]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Professional Context (for relevant responses)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
-- [[References_2]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
+- [[References_4]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 1 Container Configuration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 2 Persona Integration (Day 1)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md
 - [[Step 3 Security Hardening (Day 2)]] - document - docs/architecture/PHASE3_REQUIREMENTS.md

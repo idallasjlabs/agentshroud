@@ -1,21 +1,25 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "Community 143"
+community: "ingest_api/models.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/modelspy
 ---
 
 # test_main_simple.py
 
 ## Connections
 - [[ApprovalDecision]] - `imports` [EXTRACTED]
-- [[ApprovalRequest_3]] - `imports` [EXTRACTED]
+- [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[Simplified unit tests for main.py to achieve 90% coverage Focuses on easily…]] - `rationale_for` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[limit_request_body()]] - `imports` [EXTRACTED]
 - [[log_requests()]] - `imports` [EXTRACTED]
 - [[security_headers_middleware()]] - `imports` [EXTRACTED]
@@ -35,4 +39,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `contains` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_143
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

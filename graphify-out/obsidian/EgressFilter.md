@@ -1,19 +1,91 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 120"
-location: "L111"
+community: "EgressFilter"
+location: "L88"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_120
+  - graphify/EXTRACTED
+  - community/EgressFilter
 ---
 
 # EgressFilter
 
 ## Connections
-- [[.__init__()_38]] - `references` [EXTRACTED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[dot-__init__()_163]] - `references` [EXTRACTED]
+- [[dot-__init__()_175]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `method` [EXTRACTED]
+- [[dot-_is_ipv6()]] - `method` [EXTRACTED]
+- [[dot-_is_private_ip()_2]] - `method` [EXTRACTED]
+- [[dot-_matches_allowlist_domain()]] - `method` [EXTRACTED]
+- [[dot-_matches_ip_list()]] - `method` [EXTRACTED]
+- [[dot-_record()_2]] - `method` [EXTRACTED]
+- [[dot-check()_6]] - `method` [EXTRACTED]
+- [[dot-check_async()]] - `method` [EXTRACTED]
+- [[dot-flush_notifications()]] - `method` [EXTRACTED]
+- [[dot-get_log()]] - `method` [EXTRACTED]
+- [[dot-get_policy()_1]] - `method` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
+- [[dot-get_top_destinations()]] - `method` [EXTRACTED]
+- [[dot-grant_timed_approval()]] - `method` [EXTRACTED]
+- [[dot-set_agent_policy()]] - `method` [EXTRACTED]
+- [[dot-set_approval_queue()]] - `method` [EXTRACTED]
+- [[dot-set_event_bus()]] - `method` [EXTRACTED]
+- [[dot-set_notifier()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
+- [[dot-test_allowed_egress_counts_as_allowed()]] - `calls` [EXTRACTED]
+- [[dot-test_denied_egress_counts_as_blocked()]] - `calls` [EXTRACTED]
+- [[dot-test_deny_all_false()]] - `calls` [EXTRACTED]
+- [[dot-test_denylist_monitor_mode()]] - `calls` [EXTRACTED]
+- [[dot-test_denylist_overrides_allowlist()]] - `calls` [EXTRACTED]
+- [[dot-test_egress_filter_instantiates()]] - `calls` [EXTRACTED]
+- [[dot-test_empty_ports_allows_all()]] - `calls` [EXTRACTED]
+- [[dot-test_enforce_mode_blocks_unknown_domains()]] - `calls` [EXTRACTED]
+- [[dot-test_logging_differences_by_mode()]] - `calls` [EXTRACTED]
+- [[dot-test_monitor_mode_allows_unknown_domains()]] - `calls` [EXTRACTED]
+- [[dot-test_per_agent_policy()]] - `calls` [EXTRACTED]
+- [[dot-test_port_filtering()]] - `calls` [EXTRACTED]
+- [[dot-test_private_ip_blocking()]] - `calls` [EXTRACTED]
+- [[dot-test_url_parsing()_1]] - `calls` [EXTRACTED]
+- [[dot-test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
+- [[AppState]] - `uses` [INFERRED]
+- [[EgressFilterConfig]] - `uses` [INFERRED]
+- [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - `rationale_for` [EXTRACTED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[TestAuditStorePersistence]] - `uses` [INFERRED]
+- [[TestEgressFilter]] - `uses` [INFERRED]
+- [[TestEgressFilterEnforcement]] - `uses` [INFERRED]
+- [[TestEgressSSRF]] - `uses` [INFERRED]
+- [[TestEgressWiringEndToEnd]] - `uses` [INFERRED]
+- [[TestEnforceMode]] - `uses` [INFERRED]
+- [[TestIPRules]] - `uses` [INFERRED]
+- [[TestInteractiveApproval]] - `uses` [INFERRED]
+- [[TestModuleInstantiationInEnforceMode]] - `uses` [INFERRED]
+- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
+- [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
+- [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
+- [[_make_filter()]] - `calls` [EXTRACTED]
+- [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[egress_filter()]] - `uses` [INFERRED]
+- [[egress_filter()_1]] - `uses` [INFERRED]
+- [[egress_filter.py_2]] - `contains` [EXTRACTED]
+- [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
+- [[lifespan.py]] - `imports` [EXTRACTED]
+- [[run()_1]] - `calls` [EXTRACTED]
+- [[state.py]] - `imports` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `imports` [EXTRACTED]
+- [[test_egress_enforce.py]] - `imports` [EXTRACTED]
+- [[test_egress_filter.py]] - `imports` [EXTRACTED]
+- [[test_egress_filter_flush_without_notifier()]] - `uses` [INFERRED]
+- [[test_egress_filter_no_notification_on_allow()]] - `uses` [INFERRED]
+- [[test_egress_filter_notifies_on_deny()]] - `uses` [INFERRED]
+- [[test_module_stats.py]] - `imports` [EXTRACTED]
+- [[test_redteam_probes.py]] - `imports` [EXTRACTED]
+- [[test_security_hardening.py]] - `imports` [EXTRACTED]
+- [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

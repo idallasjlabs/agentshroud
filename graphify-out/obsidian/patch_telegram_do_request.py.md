@@ -1,19 +1,18 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "code"
-community: "Community 489"
+community: "_Instr"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_489
+  - community/_Instr
 ---
 
 # patch_telegram_do_request.py
 
 ## Connections
-- [[PTB HTTPXRequest __slots__ Crash-Loop Fix Rationale]] - `rationale_for` [EXTRACTED]
 - [[_Instr]] - `contains` [EXTRACTED]
-- [[_wrapped()]] - `contains` [EXTRACTED]
+- [[_wrapped()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_489
+#graphify/code #graphify/EXTRACTED #community/_Instr

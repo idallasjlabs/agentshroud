@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "EgressFilterConfig"
+community: "._rewrite_known_runtime_errors"
 location: "L3831"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/_rewrite_known_runtime_errors
 ---
 
 # .test_rewrite_known_runtime_errors_matches_http_status_without_body()
 
 ## Connections
+- [[dot-_rewrite_known_runtime_errors()]] - `calls` [EXTRACTED]
 - [[TestRuntimeRewriteHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/_rewrite_known_runtime_errors

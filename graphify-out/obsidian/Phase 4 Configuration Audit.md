@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "Community 1279"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L108"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1279
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Phase 4: Configuration Audit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Audit Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1279
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

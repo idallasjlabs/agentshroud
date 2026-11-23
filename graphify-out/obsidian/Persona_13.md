@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/oracle/SKILL.md"
+source_file: ".github/agents/i-daedalus.agent.md"
 type: "document"
-community: "Community 1983"
-location: "L14"
+community: "Daedalus — Concept Illustrator"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1983
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Persona
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1983
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

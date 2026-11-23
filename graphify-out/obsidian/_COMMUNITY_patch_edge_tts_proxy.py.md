@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # patch_edge_tts_proxy.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
+- [[patch_edge_tts_proxy.py]] - code - docker/bots/hermes/patch_edge_tts_proxy.py
 
 ## Live Query (requires Dataview plugin)
 

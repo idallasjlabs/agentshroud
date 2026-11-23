@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_network_validator_gate.py"
 type: "code"
-community: "WebProxy"
+community: "NetworkValidator"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/NetworkValidator
 ---
 
 # .test_validator_knows_the_two_real_networks()
@@ -15,4 +15,4 @@ tags:
 - [[NetworkValidator]] - `calls` [EXTRACTED]
 - [[TestExpectedNetworksAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

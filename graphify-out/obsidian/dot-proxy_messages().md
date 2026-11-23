@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L970"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # .proxy_messages()
@@ -16,7 +16,7 @@ tags:
 - [[dot-_emit_failover_notice()]] - `calls` [EXTRACTED]
 - [[dot-_enforce_tool_acl()]] - `calls` [EXTRACTED]
 - [[dot-_failover_request()]] - `calls` [EXTRACTED]
-- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound_streaming()]] - `calls` [EXTRACTED]
 - [[dot-_forward_request()]] - `calls` [EXTRACTED]
 - [[dot-_get_local_model()]] - `calls` [EXTRACTED]
@@ -33,7 +33,13 @@ tags:
 - [[dot-_widen_optional_tool_param_types()]] - `calls` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Proxy an LLM API request. Returns (status_code, response_headers,…]] - `rationale_for` [EXTRACTED]
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `calls` [INFERRED]
-- [[test_non_fieldflare_local_route_keeps_fields]] - `calls` [INFERRED]
+- [[anthropic_to_openai_response()]] - `calls` [EXTRACTED]
+- [[gemini_failover_unsupported_reason()]] - `calls` [EXTRACTED]
+- [[gemini_to_openai_response()]] - `calls` [EXTRACTED]
+- [[is_overloaded()]] - `calls` [EXTRACTED]
+- [[is_quota_exhausted()]] - `calls` [EXTRACTED]
+- [[is_rate_limited_post_retry()]] - `calls` [EXTRACTED]
+- [[openai_to_anthropic_request()]] - `calls` [EXTRACTED]
+- [[openai_to_gemini_request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

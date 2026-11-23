@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 2046"
+community: "soc.js"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2046
+  - community/socjs
 ---
 
 # _connectWS()
 
 ## Connections
-- [[WSEvent]] - `shares_data_with` [INFERRED]
 - [[_handleWSEvent()]] - `calls` [EXTRACTED]
-- [[_post()]] - `calls` [EXTRACTED]
+- [[_post()_1]] - `calls` [EXTRACTED]
 - [[_setWSStatus()]] - `calls` [EXTRACTED]
 - [[_showLoginModal()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2046
+#graphify/code #graphify/EXTRACTED #community/socjs

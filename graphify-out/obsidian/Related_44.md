@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Community 538"
-location: "L118"
+community: "Function Details"
+location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/Function_Details
 ---
 
 # Related
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/setup-https-proxy.js"
 type: "code"
-community: "Community 191"
+community: "setup-https-proxy proxyCreateConnection"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_191
+  - community/setup-https-proxy_proxyCreateConnection
 ---
 
 # setup-https-proxy patchWsForProxy()
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[setup-https-proxy proxyCreateConnection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_191
+#graphify/code #graphify/EXTRACTED #community/setup-https-proxy_proxyCreateConnection

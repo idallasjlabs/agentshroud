@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "rationale"
-community: "Community 625"
+community: "TestStartupScannerKeying"
 location: "L443"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_625
+  - community/TestStartupScannerKeying
 ---
 
 # Each _store_result call appends an entry to scanner_result_history.
 
 ## Connections
-- [[.test_history_accumulates_all_entries()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_history_accumulates_all_entries()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_625
+#graphify/rationale #graphify/EXTRACTED #community/TestStartupScannerKeying

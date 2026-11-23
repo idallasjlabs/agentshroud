@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-defense/README.md"
+source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "Community 2095"
+community: "macOS System Administrator (MAC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2095
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2095
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

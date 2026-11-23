@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/images/diagram-06-cicd-deployment.svg"
 type: "image"
-community: "Community 1086"
+community: "CI/CD Quality Gates (14 jobs, 6 workflows)"
 tags:
   - graphify/image
   - graphify/INFERRED
-  - community/Community_1086
+  - community/CI/CD_Quality_Gates_14_jobs_6_workflows
 ---
 
 # Git Worktrees (../agentshroud-worktrees/)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Get Shit Done (GSD) Governance Cadence]] - `conceptually_related_to` [INFERRED]
 
-#graphify/image #graphify/INFERRED #community/Community_1086
+#graphify/image #graphify/INFERRED #community/CI/CD_Quality_Gates_14_jobs_6_workflows

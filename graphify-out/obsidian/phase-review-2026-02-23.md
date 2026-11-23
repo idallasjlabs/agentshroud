@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/phase-review-2026-02-23.md"
 type: "document"
-community: "Community 153"
+community: "1. Accomplishments This Phase"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/1_Accomplishments_This_Phase
 ---
 
 # phase-review-2026-02-23.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Phase Review — 2026-02-23]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/1_Accomplishments_This_Phase

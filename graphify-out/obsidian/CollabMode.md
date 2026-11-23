@@ -1,19 +1,20 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "Community 2132"
+community: "main.rs"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2132
+  - community/mainrs
 ---
 
 # CollabMode
 
 ## Connections
-- [[.fmt()]] - `method` [EXTRACTED]
+- [[dot-fmt()]] - `method` [EXTRACTED]
 - [[Display]] - `implements` [EXTRACTED]
+- [[SetTarget]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2132
+#graphify/code #graphify/EXTRACTED #community/mainrs

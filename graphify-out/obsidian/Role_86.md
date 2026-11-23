@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-data.md"
+source_file: ".github/agents/i-pr.agent.md"
 type: "document"
-community: "Community 1935"
-location: "L10"
+community: "Skill: Pull Request (PR) Generator"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1935
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1935
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

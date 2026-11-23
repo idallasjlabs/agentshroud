@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L224"
+community: "AuditStore"
+location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/AuditStore
 ---
 
 # .query_events()
 
 ## Connections
 - [[dot-get_recent_entries()_1]] - `calls` [EXTRACTED]
-- [[AuditEvent_1]] - `references` [EXTRACTED]
+- [[AuditEvent]] - `calls` [EXTRACTED]
 - [[AuditStore]] - `method` [EXTRACTED]
-- [[Query audit events with optional filters.          Args             bot_id Whe]] - `rationale_for` [EXTRACTED]
+- [[Query audit events with optional filters. Args bot_id When set, restricts…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/AuditStore

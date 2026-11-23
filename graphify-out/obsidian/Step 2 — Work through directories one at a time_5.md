@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 1307"
+community: "Mode A — Single task"
 location: "L384"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1307
+  - community/Mode_A__Single_task
 ---
 
 # Step 2 — Work through directories one at a time
 
 ## Connections
-- [[Mode B — Comprehensive review sweep_17]] - `contains` [EXTRACTED]
+- [[Mode B — Comprehensive review sweep_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1307
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

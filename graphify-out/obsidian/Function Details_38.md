@@ -1,23 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 456"
-location: "L47"
+community: "sidecar.py"
+location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/sidecarpy
 ---
 
 # Function Details
 
 ## Connections
-- [[EnvironmentGuard.check_command_execution(command, agent_id)]] - `contains` [EXTRACTED]
-- [[EnvironmentGuard.check_file_access(file_path, agent_id)]] - `contains` [EXTRACTED]
-- [[EnvironmentGuard.monitor_environment_access(agent_id)]] - `contains` [EXTRACTED]
-- [[EnvironmentGuard.scrub_command_output(output, command)]] - `contains` [EXTRACTED]
-- [[check_command(cmd)]] - `contains` [EXTRACTED]
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
-- [[scrub_output(text)]] - `contains` [EXTRACTED]
+- [[SidecarScanner.get_stats()]] - `contains` [EXTRACTED]
+- [[SidecarScanner.scan(request)]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

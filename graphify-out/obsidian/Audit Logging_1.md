@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Community 450"
-location: "L183"
+community: "Security Architecture"
+location: "L237"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Security_Architecture
 ---
 
 # Audit Logging
 
 ## Connections
-- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
+- [[Logging and Monitoring]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture

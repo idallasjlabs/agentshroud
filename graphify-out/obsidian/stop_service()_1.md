@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 10"
-location: "L632"
+community: "test_soc_router_coverage.py"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/test_soc_router_coveragepy
 ---
 
 # stop_service()
 
 ## Connections
-- [[JSONResponse_1]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[ServiceActionRequest]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `calls` [EXTRACTED]
-- [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[_make_service_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

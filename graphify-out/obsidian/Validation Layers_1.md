@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: ".cursor/agents/i-data.md"
 type: "document"
-community: "Community 896"
-location: "L34"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_896
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Validation Layers
@@ -18,4 +18,4 @@ tags:
 - [[4. Cross-Site Comparison_1]] - `contains` [EXTRACTED]
 - [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_896
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

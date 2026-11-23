@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "jira_weekly_review.py"
+community: "patch"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/jira_weekly_reviewpy
+  - community/patch
 ---
 
 # .test_detect_apple()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestDetectRuntime]] - `method` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
+- [[patch]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy
+#graphify/code #graphify/EXTRACTED #community/patch

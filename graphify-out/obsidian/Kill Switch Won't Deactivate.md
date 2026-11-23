@@ -1,17 +1,17 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 702"
+community: "Known Log Messages"
 location: "L75"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_702
+  - community/Known_Log_Messages
 ---
 
 # Kill Switch Won't Deactivate
 
 ## Connections
-- [[Common Issues_1]] - `contains` [EXTRACTED]
+- [[Common Issues_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_702
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

@@ -1,24 +1,24 @@
 ---
-source_file: ".agents/skills/vulcan/SKILL.md"
+source_file: ".cursor/agents/vulcan.md"
 type: "document"
-community: "Community 1974"
-location: "L6"
+community: "Vulcan — Subject Matter Auditor"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1974
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_19]] - `contains` [EXTRACTED]
-- [[Output Format_28]] - `contains` [EXTRACTED]
-- [[Persona_15]] - `contains` [EXTRACTED]
-- [[Quality Checklist_17]] - `contains` [EXTRACTED]
-- [[Role_75]] - `contains` [EXTRACTED]
-- [[SKILL_73]] - `contains` [EXTRACTED]
-- [[System Prompt_15]] - `contains` [EXTRACTED]
-- [[User Prompt Template_7]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsvulcan]] - `contains` [EXTRACTED]
+- [[Input Requirements_24]] - `contains` [EXTRACTED]
+- [[Output Format_39]] - `contains` [EXTRACTED]
+- [[Persona_18]] - `contains` [EXTRACTED]
+- [[Quality Checklist_24]] - `contains` [EXTRACTED]
+- [[Role_82]] - `contains` [EXTRACTED]
+- [[System Prompt_18]] - `contains` [EXTRACTED]
+- [[User Prompt Template_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1974
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

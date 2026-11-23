@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "Community 184"
+community: "MCPAuditTrail"
 location: "L352"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_184
+  - community/MCPAuditTrail
 ---
 
 # In-memory MCP audit window must be bounded (mirrors AuditChain).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditTrailBounded]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_184
+#graphify/rationale #graphify/EXTRACTED #community/MCPAuditTrail

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "rationale"
-community: "Community 1000"
+community: "URLAnalyzer"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/URLAnalyzer
 ---
 
 # Data exfiltration patterns in URLs — flagged, not blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDataExfiltration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1000
+#graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer

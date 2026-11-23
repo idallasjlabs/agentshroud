@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "Community 44"
+community: "app"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/app
 ---
 
 # Sync TestClient for WebSocket tests
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sync_client()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_44
+#graphify/rationale #graphify/EXTRACTED #community/app

@@ -1,12 +1,12 @@
 ---
-source_file: "skills/custom/browser-fetch/package.json"
+source_file: "browser-extension/package.json"
 type: "code"
-community: "Community 900"
-location: "L7"
+community: "browser-extension/package.json"
+location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_900
+  - community/browser-extension/packagejson
 ---
 
 # test
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[scripts_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_900
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

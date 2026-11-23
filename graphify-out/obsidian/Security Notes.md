@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Community 427"
-location: "L281"
+community: "ssh_proxy.py"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/ssh_proxypy
 ---
 
-# Security notes
+# Security Notes
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_427
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

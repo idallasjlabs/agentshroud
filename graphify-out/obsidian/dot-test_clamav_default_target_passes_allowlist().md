@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "WebContentScanner"
+community: "TestScanParameterAllowlists"
 location: "L679"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/TestScanParameterAllowlists
 ---
 
 # .test_clamav_default_target_passes_allowlist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/TestScanParameterAllowlists

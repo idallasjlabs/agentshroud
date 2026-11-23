@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L35"
+community: "FakeClock"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/FakeClock
 ---
 
 # .advance()
 
 ## Connections
 - [[FakeClock]] - `method` [EXTRACTED]
-- [[test_burst_clears_after_burst_window()]] - `calls` [EXTRACTED]
-- [[test_window_slides_and_allows_again()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/FakeClock

@@ -1,17 +1,17 @@
 ---
-source_file: "branding/INDEX.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "Community 585"
-location: "L81"
+community: "11. Hard Guardrails (Non-Negotiables)"
+location: "L387"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/11_Hard_Guardrails_Non-Negotiables
 ---
 
 # Documentation
 
 ## Connections
-- [[🎨 Quick Access]] - `contains` [EXTRACTED]
+- [[11. Hard Guardrails (Non-Negotiables)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_585
+#graphify/document #graphify/EXTRACTED #community/11_Hard_Guardrails_Non-Negotiables

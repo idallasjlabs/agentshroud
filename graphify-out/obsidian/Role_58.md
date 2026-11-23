@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "Community 1198"
+community: "Daedalus — Concept Illustrator"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1198
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1198
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

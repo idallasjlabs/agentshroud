@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "scanner_integration.py"
 location: "L971"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/scanner_integrationpy
 ---
 
 # .test_compute_weighted_subscore_full_score()
 
 ## Connections
-- [[TestComputeScorecard]] - `method` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
 - [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

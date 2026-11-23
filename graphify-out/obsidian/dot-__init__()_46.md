@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
-location: "L29"
+community: "ContainerSnapshot"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/ContainerSnapshot
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[dot-_init_db()]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

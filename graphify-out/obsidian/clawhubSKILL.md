@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/clawhub/SKILL.md"
 type: "document"
-community: "hermes/skills/i-chaos-engineering/SKILL.md"
+community: "clawhub/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/hermes/skills/i-chaos-engineering/SKILLmd
+  - community/clawhub/SKILLmd
 ---
 
 # clawhub/SKILL.md
 
 ## Connections
-- [[ClawHub CLI]] - `implements` [EXTRACTED]
+- [[ClawHub CLI]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-chaos-engineering/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/clawhub/SKILLmd

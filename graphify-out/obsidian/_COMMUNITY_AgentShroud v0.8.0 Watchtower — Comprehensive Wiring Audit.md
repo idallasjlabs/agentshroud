@@ -1,27 +1,34 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 21
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Comprehensive Wiring Audit
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 21 nodes
 
 ## Members
-- [[Backup]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Cleanup Warning]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Docker Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Inspecting Volumes]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Related Notes_60]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Details]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[Volume Inventory]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-browsers]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-config]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-ssh]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[agentshroud-workspace]] - document - docs/vault/06 - Containers & Services/volumes.md
-- [[gateway-data]] - document - docs/vault/06 - Containers & Services/volumes.md
+- [[1. EgressTelegramNotifier — Little Snitch Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[2. Approval Queue — Missing Telegram Notifications]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[3. OutputCanary — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[4. EnhancedToolResultSanitizer — Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[5. LLMProxy — Never Instantiated]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[6. Callback Query Handler for Inline Buttons]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[7. KeyVault — Instantiated but Not Used]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[8. SidecarScanner — External Tool Interface]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[9. Audit Store Not Passed to Pipeline]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Executive Summary_8]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Fix Priority List]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Inbound Request Path (middleware.py → process_request)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Infrastructure (lifespan.py — initialized at startup)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Outbound Path (middleware.py)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Pipeline (pipeline.py → process_inbound  process_outbound)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[Revised Summary]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[v0.8.0-wiring-audit]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[✅ CONFIRMED WIRED AND WORKING]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🔴 CRITICAL — Not Wired (code exists, tests pass, but NOT running in production)]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
+- [[🟡 MEDIUM — Partially Wired or Degraded]] - document - docs/planning/v0.8/v0.8.0-wiring-audit.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ v0.8.0 Watchtower — Complete Feature List]]
 
 ## Top bridge nodes
-- [[Docker Volumes]] - degree 7, connects to 1 community
+- [[AgentShroud v0.8.0 Watchtower — Comprehensive Wiring Audit]] - degree 8, connects to 1 community

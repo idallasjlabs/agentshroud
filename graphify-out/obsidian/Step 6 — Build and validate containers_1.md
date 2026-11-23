@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-odev.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 821"
-location: "L210"
+community: "Mode A — Single task"
+location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_821
+  - community/Mode_A__Single_task
 ---
 
 # Step 6 — Build and validate containers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_821
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 118"
+community: "discover_upstream_versions.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/discover_upstream_versionspy
 ---
 
 # discover_upstream_versions.py
 
 ## Connections
+- [[Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…]] - `rationale_for` [EXTRACTED]
 - [[Host network filter blocking Homebrew PythonNode outbound]] - `conceptually_related_to` [EXTRACTED]
-- [[INCIDENT_2026-10-16_conduit-outage]] - `references` [EXTRACTED]
 - [[OpenClaw 2026.10.2 - 2026.10.4 upgrade (dev)]] - `references` [EXTRACTED]
 - [[_call_with_deadline()]] - `contains` [EXTRACTED]
 - [[_digest_for_tag()]] - `contains` [EXTRACTED]
@@ -23,15 +23,14 @@ tags:
 - [[_sortable()]] - `contains` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `semantically_similar_to` [INFERRED]
 - [[discover()]] - `contains` [EXTRACTED]
-- [[dockerversions.env version pins_1]] - `shares_data_with` [INFERRED]
 - [[fetch_dockerhub_tags()]] - `contains` [EXTRACTED]
 - [[fetch_npm_versions()]] - `contains` [EXTRACTED]
 - [[is_stable()]] - `contains` [EXTRACTED]
-- [[main()_19]] - `contains` [EXTRACTED]
+- [[main()_26]] - `contains` [EXTRACTED]
 - [[pick_latest_hermes_tag()]] - `contains` [EXTRACTED]
 - [[pick_latest_stable()]] - `contains` [EXTRACTED]
-- [[sunday-upgrade]] - `references` [EXTRACTED]
+- [[test_discover_upstream_versions.py]] - `imports_from` [EXTRACTED]
 - [[upgrade-2026-09-20-dev]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-27-20260927-0800]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_118
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

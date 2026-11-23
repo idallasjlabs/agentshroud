@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "chatbot/main.py"
+community: "PrivacyPolicyEnforcer"
 location: "L301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .contains_private_data()
@@ -15,4 +15,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 - [[Return True if text appears to contain admin-private data.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

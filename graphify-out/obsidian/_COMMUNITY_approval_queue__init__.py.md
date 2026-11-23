@@ -1,16 +1,15 @@
 ---
 type: community
-cohesion: 1.00
-members: 1
+members: 2
 ---
 
 # approval_queue/__init__.py
 
-**Cohesion:** 1.00 - tightly connected
-**Members:** 1 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[No Security Theater — no stubsplaceholdersfake green]] - rationale - CLAUDE.md
+- [[Approval Queue Package - WebSocket-based approval system for sensitive agent…]] - rationale - gateway/approval_queue/__init__.py
+- [[approval_queue__init__.py]] - code - gateway/approval_queue/__init__.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "EnvironmentGuard"
 location: "L960"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/EnvironmentGuard
 ---
 
 # ._make_record()
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_ssn_redaction_in_logs()]] - `calls` [EXTRACTED]
 - [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

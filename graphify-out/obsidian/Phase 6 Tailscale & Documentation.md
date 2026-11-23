@@ -1,18 +1,18 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 106"
+community: "Added"
 location: "L1102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/Added
 ---
 
 # Phase 6: Tailscale & Documentation
 
 ## Connections
 - [[Added]] - `contains` [EXTRACTED]
-- [[Added_16]] - `contains` [EXTRACTED]
+- [[Added_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_106
+#graphify/document #graphify/EXTRACTED #community/Added

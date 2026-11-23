@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "TestEgressApprovalQueue"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/TestEgressApprovalQueue
 ---
 
 # .test_allowlist_persistence()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test that allowlist rules are persisted to disk.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
+- [[asyncio_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

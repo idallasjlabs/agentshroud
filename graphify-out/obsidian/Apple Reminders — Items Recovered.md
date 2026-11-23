@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/MASTER-FEATURE-LIST.md"
 type: "document"
-community: "Community 560"
+community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
 location: "L373"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_560
+  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
 ---
 
 # Apple Reminders — Items Recovered
@@ -16,4 +16,4 @@ tags:
 - [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - `contains` [EXTRACTED]
 - [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_560
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned

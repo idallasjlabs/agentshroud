@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "Community 137"
+community: "DraftEntry"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_137
+  - community/DraftEntry
 ---
 
 # A source counts as proven only on a 2xx with non-empty content.
 
 ## Connections
-- [[.ok()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-ok()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_137
+#graphify/rationale #graphify/EXTRACTED #community/DraftEntry

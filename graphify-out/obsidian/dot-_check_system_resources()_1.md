@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_get_system_stats()]] - `calls` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[Check if system resource usage is abnormal.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 

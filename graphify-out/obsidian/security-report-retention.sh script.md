@@ -1,18 +1,18 @@
 ---
 source_file: "docker/scripts/security-report-retention.sh"
 type: "code"
-community: "Community 814"
+community: "security-report-retention.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_814
+  - community/security-report-retentionsh
 ---
 
 # security-report-retention.sh script
 
 ## Connections
-- [[log()_2]] - `calls` [EXTRACTED]
+- [[log()_10]] - `calls` [EXTRACTED]
 - [[security-report-retention.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_814
+#graphify/code #graphify/EXTRACTED #community/security-report-retentionsh

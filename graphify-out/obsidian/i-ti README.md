@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "Community 1106"
+community: "i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1106
+  - community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_diagrams
 ---
 
 # i-ti README.md
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[i-ti SKILL.md (Technical Illustrator, Mermaid diagrams)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1106
+#graphify/document #graphify/EXTRACTED #community/i-ti_SKILLmd_Technical_Illustrator_Mermaid_diagrams

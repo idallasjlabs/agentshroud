@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 1.00
 members: 3
 ---
 
 # startInstall
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 3 nodes
 
 ## Members
-- [[agentshroud-secrets.sh script]] - code - docker/bots/hermes/agentshroud-secrets.sh
-- [[dockerbotshermesagentshroud-secrets.sh (s6 cont-init secret injection)]] - code - docker/bots/hermes/agentshroud-secrets.sh
-- [[inject()]] - code - docker/bots/hermes/agentshroud-secrets.sh
+- [[installapiinstall endpoint]] - concept - gateway/web/templates/installer.html
+- [[buildSummary()]] - code - gateway/web/templates/installer.html
+- [[startInstall()]] - code - gateway/web/templates/installer.html
 
 ## Live Query (requires Dataview plugin)
 

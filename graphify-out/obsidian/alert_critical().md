@@ -1,19 +1,19 @@
 ---
 source_file: "docker/scripts/security-entrypoint.sh"
 type: "code"
-community: "Community 2174"
+community: "security-entrypoint.sh"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2174
+  - community/security-entrypointsh
 ---
 
 # alert_critical()
 
 ## Connections
-- [[log()_1]] - `calls` [EXTRACTED]
+- [[log()_8]] - `calls` [EXTRACTED]
 - [[security-entrypoint.sh]] - `defines` [EXTRACTED]
 - [[security-entrypoint.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2174
+#graphify/code #graphify/EXTRACTED #community/security-entrypointsh

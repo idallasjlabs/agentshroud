@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/apollo.md"
 type: "document"
-community: "Community 1351"
+community: "Technical Specification"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1351
+  - community/Technical_Specification
 ---
 
 # Script Parsing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Specification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1351
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

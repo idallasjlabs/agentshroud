@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-hdev.md"
+source_file: ".cursor/agents/aws.md"
 type: "document"
-community: "Community 841"
-location: "L365"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L390"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_841
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Guardrails
 
 ## Connections
-- [[Skill Hermes Dev Workflow (HDEV)_2]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps Agent_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_841
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

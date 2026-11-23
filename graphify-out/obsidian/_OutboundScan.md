@@ -1,25 +1,19 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L372"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_18
+  - graphify/EXTRACTED
+  - community/telegram_proxypy
 ---
 
 # _OutboundScan
 
 ## Connections
-- [[._scan_outbound_text()]] - `references` [EXTRACTED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[DelegationPrivilege]] - `uses` [INFERRED]
-- [[GroupWorkspaceManager]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[RateLimiter]] - `uses` [INFERRED]
-- [[Result of the shared outbound text security scan.      processed a scan path (c]] - `rationale_for` [EXTRACTED]
-- [[telegram_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-_scan_outbound_text()]] - `calls` [EXTRACTED]
+- [[Result of the shared outbound text security scan. processed a scan path…]] - `rationale_for` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

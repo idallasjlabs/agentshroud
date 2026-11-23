@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
+source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "Community 273"
-location: "L28"
+community: "Video Frames (ffmpeg)"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/Video_Frames_ffmpeg
 ---
 
 # Notes
 
 ## Connections
-- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
+- [[Video Frames (ffmpeg)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_273
+#graphify/document #graphify/EXTRACTED #community/Video_Frames_ffmpeg

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "Community 43"
+community: "SecurityPipeline.process_inbound"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/SecurityPipelineprocess_inbound
 ---
 
 # SecurityPipeline.process_inbound
 
-## Connections
-- [[SidecarScanner]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/SecurityPipelineprocess_inbound

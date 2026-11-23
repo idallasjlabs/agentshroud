@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_weekly_review.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "test_wazuh_watchdog.py (2)"
-location: "L203"
+community: "test_cli_coverage.py"
+location: "L684"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy_2
+  - community/test_cli_coveragepy
 ---
 
 # .__call__()
 
 ## Connections
-- [[_MockTransport_1]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy_2
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

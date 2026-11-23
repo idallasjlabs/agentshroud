@@ -1,17 +1,17 @@
 ---
 source_file: "config/inbound-edge/schema.json"
 type: "code"
-community: "Community 1552"
-location: "L13"
+community: "properties"
+location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1552
+  - community/properties
 ---
 
 # type
 
 ## Connections
-- [[docs]] - `contains` [EXTRACTED]
+- [[vendor]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1552
+#graphify/code #graphify/EXTRACTED #community/properties

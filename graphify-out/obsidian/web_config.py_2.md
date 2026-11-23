@@ -1,24 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
-type: "document"
-community: "Community 834"
-location: "L10"
+source_file: "gateway/proxy/web_config.py"
+type: "code"
+community: "WebProxy"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/WebProxy
 ---
 
 # web_config.py
 
 ## Connections
-- [[Configuration  Environment Variables_10]] - `contains` [EXTRACTED]
-- [[Function Details_16]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_19]] - `contains` [EXTRACTED]
-- [[Purpose_137]] - `contains` [EXTRACTED]
-- [[Related_23]] - `contains` [EXTRACTED]
-- [[Responsibilities_21]] - `contains` [EXTRACTED]
-- [[WebProxyConfig Fields]] - `contains` [EXTRACTED]
-- [[web_config.py_1]] - `contains` [EXTRACTED]
+- [[DomainSettings]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `contains` [EXTRACTED]
+- [[http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[test_heartbeat_egress.py]] - `imports_from` [EXTRACTED]
+- [[test_http_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `imports_from` [EXTRACTED]
+- [[test_web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_834
+#graphify/code #graphify/EXTRACTED #community/WebProxy

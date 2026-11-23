@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/aws.md"
+source_file: "docker/config/openclaw/skills/i-aws/SKILL.md"
 type: "document"
-community: "Community 209"
-location: "L352"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L350"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_209
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Resource Inventory CSV Schema
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AWS Cloud Management & FinOps Agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_209
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestExfiltrationDetection"
 location: "L613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestExfiltrationDetection
 ---
 
 # Git guard should catch credential patterns.
 
 ## Connections
-- [[.test_git_guard_detects_credential_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_git_guard_detects_credential_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestExfiltrationDetection

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/eightd-root-cause-analysis/references/learning-and-xml.md"
 type: "document"
-community: "Community 1965"
+community: "Learning System (Continuous Improvement)"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1965
+  - community/Learning_System_Continuous_Improvement
 ---
 
 # XML Configuration File Parsing
@@ -17,4 +17,4 @@ tags:
 - [[Why This Matters]] - `contains` [EXTRACTED]
 - [[learning-and-xml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1965
+#graphify/document #graphify/EXTRACTED #community/Learning_System_Continuous_Improvement

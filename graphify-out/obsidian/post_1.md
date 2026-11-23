@@ -1,13 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolChainAnalyzer.sanitize_tool_params (C34)"
+community: "KeyRotationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzersanitize_tool_params_C34
+  - community/KeyRotationManager
 ---
 
 # post
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzersanitize_tool_params_C34
+## Connections
+- [[rotate_credential()]] - `references` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

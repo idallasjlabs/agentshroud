@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/audio.c"
 type: "code"
-community: "Community 378"
+community: "app_main.c"
 location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # audio_init()
@@ -15,6 +15,6 @@ tags:
 - [[app_main()]] - `calls` [INFERRED]
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[audio_get_saved_volume()]] - `calls` [EXTRACTED]
-- [[esp_err_t]] - `references` [EXTRACTED]
+- [[esp_err_t_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/app_mainc

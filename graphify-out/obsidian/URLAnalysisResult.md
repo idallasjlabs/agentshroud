@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Community 1000"
+community: "URLAnalyzer"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/URLAnalyzer
 ---
 
 # URLAnalysisResult
 
 ## Connections
-- [[._check_base64()]] - `references` [EXTRACTED]
-- [[.analyze()]] - `references` [EXTRACTED]
-- [[.flagged()]] - `method` [EXTRACTED]
+- [[dot-_check_base64()]] - `references` [EXTRACTED]
+- [[dot-analyze()]] - `calls` [EXTRACTED]
+- [[dot-flagged()_1]] - `method` [EXTRACTED]
 - [[Result of analyzing a URL.]] - `rationale_for` [EXTRACTED]
-- [[url_analyzer.py]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1000
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

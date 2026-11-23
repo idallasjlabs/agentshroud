@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 533"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_533
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents
 ---
 
 # gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents
@@ -19,7 +19,7 @@ tags:
 - [[Phase 5 — Spawn Sub-agents (Parallel)]] - `contains` [EXTRACTED]
 - [[Phase 6 — PR Review Handler]] - `contains` [EXTRACTED]
 - [[Results Collection]] - `contains` [EXTRACTED]
-- [[SKILL_217]] - `contains` [EXTRACTED]
 - [[Watch Mode (if --watch is active)]] - `contains` [EXTRACTED]
+- [[gh-issuesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_533
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents

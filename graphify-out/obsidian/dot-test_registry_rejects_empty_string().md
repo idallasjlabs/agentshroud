@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "SecureBrowser (2)"
+community: "TestTelegramTokenRegistry"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_2
+  - community/TestTelegramTokenRegistry
 ---
 
 # .test_registry_rejects_empty_string()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTelegramTokenRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_2
+#graphify/code #graphify/EXTRACTED #community/TestTelegramTokenRegistry

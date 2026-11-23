@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 90"
-location: "L6"
+community: "web_config.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/web_configpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/web_configpy

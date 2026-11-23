@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: ".agents/skills/i-cr/SKILL.md"
+community: "CronStateMonitor"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/CronStateMonitor
 ---
 
 # ._episode_id()
@@ -16,4 +16,4 @@ tags:
 - [[CronStateMonitor]] - `method` [EXTRACTED]
 - [[JobState]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

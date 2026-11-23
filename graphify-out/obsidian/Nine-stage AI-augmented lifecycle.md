@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/WORKFLOW.md"
 type: "concept"
-community: "Community 742"
+community: "Claude Code skill catalog (59 skills)"
 location: "Lifecycle"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_742
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # Nine-stage AI-augmented lifecycle
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Agent layer (skills, subagents, orchestration)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_742
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

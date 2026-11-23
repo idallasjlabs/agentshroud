@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_cve_report() (2)"
+community: "asyncio"
 location: "L727"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/asyncio
 ---
 
 # .test_returns_error_on_github_api_failure()
 
 ## Connections
 - [[TestRunUpstreamCveCheck]] - `method` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

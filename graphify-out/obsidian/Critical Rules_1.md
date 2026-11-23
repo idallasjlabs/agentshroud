@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/sec-defense.md"
+source_file: ".agents/skills/sec-defense/SKILL.md"
 type: "document"
-community: "Community 1279"
-location: "L144"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1279
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Critical Rules
 
 ## Connections
-- [[AgentShroud Blue Team Security Auditor]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1279
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

@@ -1,20 +1,22 @@
 ---
-source_file: ".github/agents/i-icloud.agent.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 554"
-location: "L147"
+community: "Browser — Secure Browser Automation"
+location: "L281"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_554
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[401 Unauthorized_3]] - `contains` [EXTRACTED]
-- [[CalendarContacts not found_3]] - `contains` [EXTRACTED]
-- [[Connection timeout_3]] - `contains` [EXTRACTED]
-- [[iCloud Services_3]] - `contains` [EXTRACTED]
+- [[Action requires approval but none granted_1]] - `contains` [EXTRACTED]
+- [[Browser timeout_2]] - `contains` [EXTRACTED]
+- [[CAPTCHA detected_2]] - `contains` [EXTRACTED]
+- [[Rate limit exceeded_1]] - `contains` [EXTRACTED]
+- [[URL not in allowlist_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_554
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

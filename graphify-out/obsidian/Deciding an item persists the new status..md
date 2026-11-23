@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "rationale"
-community: "Community 30"
+community: "ApprovalStore"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ApprovalStore
 ---
 
 # Deciding an item persists the new status.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_decide_persists()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore

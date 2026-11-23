@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-offense/README.md"
+source_file: ".agents/skills/mnemosyne/README.md"
 type: "document"
-community: "Community 2096"
+community: "Mnemosyne — Retention Engineer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2096
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Related Skills
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2096
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

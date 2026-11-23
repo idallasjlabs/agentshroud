@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # ledger()
 
 ## Connections
-- [[DataLedger]] - `calls` [EXTRACTED]
-- [[LedgerConfig]] - `calls` [EXTRACTED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[fixture_61]] - `references` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

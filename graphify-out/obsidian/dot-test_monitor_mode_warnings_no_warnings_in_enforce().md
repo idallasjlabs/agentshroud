@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "TestEnforceDefaults"
+community: "SecurityConfig"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/SecurityConfig
 ---
 
 # .test_monitor_mode_warnings_no_warnings_in_enforce()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig_1]] - `calls` [EXTRACTED]
 - [[Test that no warnings are logged when all modules are in enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 - [[check_monitor_mode_warnings()]] - `calls` [EXTRACTED]
+- [[dict]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/code #graphify/EXTRACTED #community/SecurityConfig

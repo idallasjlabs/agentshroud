@@ -1,25 +1,24 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Community 201"
+community: "GatewayEmailService"
 location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_201
+  - community/GatewayEmailService
 ---
 
 # _FakeSmtp
 
 ## Connections
-- [[.__enter__()_2]] - `method` [EXTRACTED]
-- [[.__exit__()_2]] - `method` [EXTRACTED]
-- [[.__init__()_177]] - `method` [EXTRACTED]
-- [[.login()_1]] - `method` [EXTRACTED]
-- [[.sendmail()_1]] - `method` [EXTRACTED]
-- [[GatewayEmailService]] - `uses` [INFERRED]
+- [[dot-__enter__()]] - `method` [EXTRACTED]
+- [[dot-__exit__()]] - `method` [EXTRACTED]
+- [[dot-__init__()_66]] - `method` [EXTRACTED]
+- [[dot-login()_1]] - `method` [EXTRACTED]
+- [[dot-sendmail()_1]] - `method` [EXTRACTED]
 - [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - `rationale_for` [EXTRACTED]
 - [[_service()]] - `calls` [EXTRACTED]
 - [[test_gateway_email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_201
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

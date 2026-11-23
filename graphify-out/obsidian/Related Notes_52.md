@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Community 580"
-location: "L127"
+community: "CI Workflows"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/CI_Workflows
 ---
 
 # Related Notes
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/CI_Workflows

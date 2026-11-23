@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "TrustConfig"
 location: "L534"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/TrustConfig
 ---
 
 # .test_adding_a_fourth_bot_extends_the_mesh_to_everyone()
 
 ## Connections
 - [[dot-_shared_tm()]] - `calls` [EXTRACTED]
+- [[dot-build_full_mesh()]] - `calls` [EXTRACTED]
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 - [[The exact scenario the user asked for add a 4th bot and it just works.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

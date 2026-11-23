@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/WORKSPACE_USAGE.md"
+source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "Community 179"
-location: "L316"
+community: "Identity Reference - AgentShroud System"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/Identity_Reference_-_AgentShroud_System
 ---
 
-# Via Telegram
+# Via Telegram:
 
 ## Connections
-- [[Integration with Bot]] - `contains` [EXTRACTED]
+- [[💬 Communication Flow]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System

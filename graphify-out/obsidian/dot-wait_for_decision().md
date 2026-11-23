@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "hermes/skills/i-bs/README.md"
-location: "L332"
+community: "test_mcp_proxy_coverage.py"
+location: "L455"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-bs/READMEmd
+  - community/test_mcp_proxy_coveragepy
 ---
 
 # .wait_for_decision()
 
 ## Connections
-- [[_StubApprovalQueue]] - `method` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy

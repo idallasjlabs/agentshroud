@@ -1,21 +1,21 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 1236"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1236
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[Purpose_93]] - `contains` [EXTRACTED]
-- [[README_98]] - `contains` [EXTRACTED]
-- [[Related Skills_117]] - `contains` [EXTRACTED]
-- [[SKILL_152]] - `contains` [EXTRACTED]
-- [[Usage_119]] - `contains` [EXTRACTED]
+- [[Purpose_167]] - `contains` [EXTRACTED]
+- [[Related Skills_111]] - `contains` [EXTRACTED]
+- [[Usage_124]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-mcpmREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1236
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L20"
+community: "asyncio"
+location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/asyncio
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[OutputCanary]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/asyncio

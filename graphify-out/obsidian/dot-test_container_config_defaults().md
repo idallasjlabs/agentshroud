@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "AgentRegistry"
 location: "L754"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/AgentRegistry
 ---
 
 # .test_container_config_defaults()
 
 ## Connections
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
+- [[ContainerConfig]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

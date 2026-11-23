@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 1222"
-location: "L14"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L349"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1222
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Socrates — Dialogue Architect_7]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1222
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

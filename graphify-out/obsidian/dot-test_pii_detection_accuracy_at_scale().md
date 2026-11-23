@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "PIIConfig"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PIIConfig
 ---
 
 # .test_pii_detection_accuracy_at_scale()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 - [[Verify detection accuracy doesn't degrade at scale.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

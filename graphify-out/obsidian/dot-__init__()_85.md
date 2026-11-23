@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
-location: "L23"
+community: "_HeadFakeClient"
+location: "L818"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/_HeadFakeClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[_HeadFakeClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

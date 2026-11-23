@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+source_file: "docker/config/openclaw/skills/i-gg/README.md"
 type: "document"
-community: "Community 612"
-location: "L12"
+community: "Git Workflow Guardian (GIT-GUARD)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Purpose
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD

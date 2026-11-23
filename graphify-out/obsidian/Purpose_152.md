@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "Community 731"
-location: "L12"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Purpose
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

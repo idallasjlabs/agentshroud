@@ -1,24 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L933"
+community: "_FakeAsyncClient"
+location: "L609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/_FakeAsyncClient
 ---
 
 # .request()
 
 ## Connections
-- [[dot-get()_2]] - `calls` [EXTRACTED]
-- [[dot-post()_1]] - `calls` [EXTRACTED]
-- [[FakeTransport]] - `method` [EXTRACTED]
-- [[HttpResponse]] - `references` [EXTRACTED]
-- [[Method_1]] - `references` [EXTRACTED]
-- [[Option]] - `references` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient

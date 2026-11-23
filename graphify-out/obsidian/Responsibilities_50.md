@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
 type: "document"
-community: "Community 617"
-location: "L18"
+community: "http_proxy.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/http_proxypy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[http_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/http_proxypy

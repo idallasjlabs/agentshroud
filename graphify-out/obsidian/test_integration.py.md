@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_integration.py"
 type: "code"
-community: "Community 885"
+community: "test_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_885
+  - community/test_integrationpy
 ---
 
 # test_integration.py
 
 ## Connections
+- [[Integration tests for the full gateway stack]] - `rationale_for` [EXTRACTED]
 - [[test_forward_with_auth()]] - `contains` [EXTRACTED]
 - [[test_forward_without_auth()]] - `contains` [EXTRACTED]
 - [[test_health_check_no_auth()]] - `contains` [EXTRACTED]
 - [[test_ledger_query()]] - `contains` [EXTRACTED]
 - [[test_websocket_auth()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_885
+#graphify/code #graphify/EXTRACTED #community/test_integrationpy

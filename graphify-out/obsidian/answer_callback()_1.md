@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "asyncio"
 location: "L5763"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/asyncio
 ---
 
 # answer_callback()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_egress_callback_from_collaborator_is_rejected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

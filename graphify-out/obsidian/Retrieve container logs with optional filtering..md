@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
+community: "api.py"
 location: "L878"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # Retrieve container logs with optional filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_logs()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/apipy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 100"
+community: "AsyncMock"
 location: "L686"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/AsyncMock
 ---
 
 # Plain-text sanitization keeps working (redacted text forwarded).
 
 ## Connections
-- [[.test_text_sanitization_still_applied()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_text_sanitization_still_applied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_100
+#graphify/rationale #graphify/EXTRACTED #community/AsyncMock

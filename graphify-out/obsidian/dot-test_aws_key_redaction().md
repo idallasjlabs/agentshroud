@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "EnvironmentGuard"
 location: "L963"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/EnvironmentGuard
 ---
 
 # .test_aws_key_redaction()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_make_record()]] - `calls` [EXTRACTED]
 - [[TestLoggingSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

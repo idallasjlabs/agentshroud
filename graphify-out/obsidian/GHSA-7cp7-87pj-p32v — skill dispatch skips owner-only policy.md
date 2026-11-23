@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "document"
-community: "Community 1560"
+community: "Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)"
 location: "480"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1560
+  - community/Owner-elevation-over-unverified-origin_refusal_owner_directive_2026-09-15
 ---
 
 # GHSA-7cp7-87pj-p32v — skill dispatch skips owner-only policy
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Owner-elevation-over-unverified-origin refusal (owner directive 2026-09-15)]] - `cites` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1560
+#graphify/document #graphify/EXTRACTED #community/Owner-elevation-over-unverified-origin_refusal_owner_directive_2026-09-15

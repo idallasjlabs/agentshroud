@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-odev.md"
+source_file: "docker/config/hermes/skills/i-odev/SKILL.md"
 type: "document"
-community: "Community 821"
-location: "L176"
+community: "Mode A — Single task"
+location: "L174"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_821
+  - community/Mode_A__Single_task
 ---
 
 # Step 3 — Write and edit code
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Mode A — Single task_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_821
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

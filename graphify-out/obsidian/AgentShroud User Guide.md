@@ -1,25 +1,25 @@
 ---
 source_file: "docs/user-guide.md"
 type: "document"
-community: "Community 327"
+community: "AgentShroud User Guide"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_327
+  - community/AgentShroud_User_Guide
 ---
 
 # AgentShroud User Guide
 
 ## Connections
 - [[Dashboard Overview]] - `contains` [EXTRACTED]
-- [[FAQ_1]] - `contains` [EXTRACTED]
-- [[Getting Started]] - `contains` [EXTRACTED]
+- [[FAQ]] - `contains` [EXTRACTED]
+- [[Getting Started_1]] - `contains` [EXTRACTED]
 - [[Interacting via Telegram]] - `contains` [EXTRACTED]
 - [[Need Help_1]] - `contains` [EXTRACTED]
 - [[SSH Access]] - `contains` [EXTRACTED]
 - [[Understanding Approval Requests]] - `contains` [EXTRACTED]
-- [[What is AgentShroud_3]] - `contains` [EXTRACTED]
+- [[What is AgentShroud_2]] - `contains` [EXTRACTED]
 - [[user-guide]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_327
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_User_Guide

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "Community 536"
-location: "L12"
+community: "Quality Assurance (QA)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_536
+  - community/Quality_Assurance_QA
 ---
 
 # Purpose
 
 ## Connections
-- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_536
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

@@ -1,19 +1,17 @@
 ---
 source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "Community 253"
+community: "CI Workflows"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_253
+  - community/CI_Workflows
 ---
 
 # ci-workflows.md
 
 ## Connections
-- [[All Dependencies]] - `references` [EXTRACTED]
 - [[CI Workflows]] - `contains` [EXTRACTED]
-- [[pytest.ini]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_253
+#graphify/document #graphify/EXTRACTED #community/CI_Workflows

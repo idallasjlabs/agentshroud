@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "get_wazuh_summary"
 location: "L694"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/get_wazuh_summary
 ---
 
 # .test_get_fim_events()
@@ -15,4 +15,4 @@ tags:
 - [[TestWazuhParser]] - `method` [EXTRACTED]
 - [[get_fim_events()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

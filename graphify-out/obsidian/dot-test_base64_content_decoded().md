@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "test_e2e_watchtower.py"
 location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_e2e_watchtowerpy
 ---
 
 # .test_base64_content_decoded()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Response containing base64-encoded payload is decoded by the pipeline.]] - `rationale_for` [EXTRACTED]
 - [[TestE2E06EncodingBypassDetection]] - `method` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy

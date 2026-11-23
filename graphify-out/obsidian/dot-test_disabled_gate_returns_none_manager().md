@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "TestInboundChokepointWiring"
 location: "L331"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/TestInboundChokepointWiring
 ---
 
 # .test_disabled_gate_returns_none_manager()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInboundChokepointWiring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestInboundChokepointWiring

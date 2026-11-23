@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/USPTO-APPLICATION.md"
 type: "document"
-community: "Community 827"
+community: "AgentShroud™ — Trademark Prior Use Record"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_827
+  - community/AgentShroud__Trademark_Prior_Use_Record
 ---
 
 # Class 042 — Scientific and Technological Services *(Primary)*
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[International Classification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_827
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Trademark_Prior_Use_Record

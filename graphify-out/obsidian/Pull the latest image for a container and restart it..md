@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 10"
+community: "soc/router.py"
 location: "L687"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # Pull the latest image for a container and restart it.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[update_service()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

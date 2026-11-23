@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Deploying AgentShroud on Raspberry Pi (aarch64)"
+community: "test_dns_canvas_coverage.py"
 location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .test_dns_blocklist_import_failure_sets_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestImportFallback]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_Raspberry_Pi_aarch64
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

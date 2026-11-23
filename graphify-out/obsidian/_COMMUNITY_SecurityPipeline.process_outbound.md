@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SecurityPipeline.process_outbound
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
+- [[SecurityPipeline.process_outbound]] - code - gateway/proxy/pipeline.py
 
 ## Live Query (requires Dataview plugin)
 

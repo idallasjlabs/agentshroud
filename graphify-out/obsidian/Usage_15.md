@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: "docker/config/openclaw/skills/i-hermes/README.md"
 type: "document"
-community: "Community 544"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_544
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Usage
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_544
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

@@ -5,7 +5,7 @@ community: "ContextGuard"
 location: "L337"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/ContextGuard
 ---
 
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[ContextGuard]] - `calls` [INFERRED]
 - [[Empty strings shouldn't crash any module.]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [INFERRED]
+- [[PromptGuard]] - `calls` [INFERRED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/ContextGuard

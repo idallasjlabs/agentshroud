@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "fake_urlopen"
 location: "L518"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/fake_urlopen
 ---
 
 # Collaborator /help should be handled locally with safe scoped commands.
 
 ## Connections
-- [[.test_collaborator_help_uses_local_notice()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_help_uses_local_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/fake_urlopen

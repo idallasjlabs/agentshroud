@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "Community 139"
+community: "upgrade-2026-10-12.md"
 location: "lines 83-87"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_139
+  - community/upgrade-2026-10-12md
 ---
 
 # S5 docker-compose.yml does not bind port 8080 to 0.0.0.0
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Base docker-compose stack]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_139
+#graphify/concept #graphify/EXTRACTED #community/upgrade-2026-10-12md

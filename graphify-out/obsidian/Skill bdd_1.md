@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-bdd/SKILL.md"
+source_file: "docker/config/hermes/skills/i-bdd/SKILL.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Skill: bdd
 
 ## Connections
-- [[SKILL_12]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bddSKILL]] - `contains` [EXTRACTED]
+- [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

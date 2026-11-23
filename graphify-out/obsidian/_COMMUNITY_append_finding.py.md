@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # append_finding.py
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[script.md (podcast pipeline dialogue artifact)]] - concept - docker/config/hermes/skills/i-mnemosyne/SKILL.md
+- [[append_finding.py]] - code - docker/config/hermes/cron/prompts/newsletter-chat-front-ends-search-infra.txt
 
 ## Live Query (requires Dataview plugin)
 

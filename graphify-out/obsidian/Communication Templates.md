@@ -1,21 +1,17 @@
 ---
-source_file: "BRAND.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Community 615"
+community: "AgentShroud™ Brand Guidelines"
 location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_615
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Communication Templates
 
 ## Connections
 - [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
-- [[Incident Response Playbook — AgentShroud]] - `contains` [EXTRACTED]
-- [[Internal Alert (Telegram)]] - `contains` [EXTRACTED]
-- [[Stakeholder Notification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_615
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

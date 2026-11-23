@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup-telegram.md"
 type: "document"
-community: "Community 889"
+community: "Telegram Channel Setup"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_889
+  - community/Telegram_Channel_Setup
 ---
 
 # Step 3: Find Your Telegram User ID
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Telegram Channel Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_889
+#graphify/document #graphify/EXTRACTED #community/Telegram_Channel_Setup

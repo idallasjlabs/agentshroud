@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "rationale"
-community: "Community 420"
+community: "plan_remediation"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/plan_remediation
 ---
 
 # An operator may cap how far forward an unattended job may jump.
 
 ## Connections
-- [[.test_max_target_caps_the_bump()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_max_target_caps_the_bump()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_420
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Community 731"
-location: "L28"
+community: "mcp_config.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/mcp_configpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

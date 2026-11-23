@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 231"
+community: "Brand Approval Process"
 location: "L160"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Brand_Approval_Process
 ---
 
 # Internal Use
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Brand Approval Process]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Brand_Approval_Process

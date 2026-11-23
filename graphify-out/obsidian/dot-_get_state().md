@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L72"
+community: "LockdownLevel"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/LockdownLevel
 ---
 
 # ._get_state()
 
 ## Connections
+- [[dot-escalate_to()]] - `calls` [EXTRACTED]
 - [[dot-record_block()]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `method` [EXTRACTED]
-- [[UserLockdownState]] - `references` [EXTRACTED]
+- [[UserLockdownState]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/LockdownLevel

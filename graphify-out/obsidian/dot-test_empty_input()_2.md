@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L67"
+community: "test_security_audit.py"
+location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/test_security_auditpy
 ---
 
 # .test_empty_input()
 
 ## Connections
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

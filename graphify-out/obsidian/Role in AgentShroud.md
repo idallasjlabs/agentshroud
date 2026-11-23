@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "Community 1569"
+community: "OpenClaw"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/OpenClaw
 ---
 
 # Role in AgentShroud
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

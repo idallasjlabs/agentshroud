@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/icloud.md"
+source_file: ".agents/agents/icloud.md"
 type: "document"
-community: "Community 635"
+community: "iCloud Services"
 location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/iCloud_Services
 ---
 
 # Contact Operations
@@ -18,4 +18,4 @@ tags:
 - [[Update Contact_2]] - `contains` [EXTRACTED]
 - [[iCloud Services_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Request (2)"
+community: "compute_backoff"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/compute_backoff
 ---
 
 # .test_capped_at_cap_for_large_attempts()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeBackoff]] - `method` [EXTRACTED]
 - [[compute_backoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/compute_backoff

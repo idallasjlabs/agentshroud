@@ -1,27 +1,36 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 23
 ---
 
 # .omp/mcp.json
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[Example Production Server with Strict Restrictions]] - document - docs/ssh-configuration.md
-- [[Field Reference]] - document - docs/ssh-configuration.md
-- [[Full Annotated Example]] - document - docs/ssh-configuration.md
-- [[How AllowDeny Lists Work]] - document - docs/ssh-configuration.md
-- [[How Auto-Approve Works]] - document - docs/ssh-configuration.md
-- [[How to Add a New Trusted Host]] - document - docs/ssh-configuration.md
-- [[SSH Configuration Guide]] - document - docs/ssh-configuration.md
-- [[Step 1 Choose a logical name]] - document - docs/ssh-configuration.md
-- [[Step 2 Add the host entry]] - document - docs/ssh-configuration.md
-- [[Step 3 Set up SSH keys]] - document - docs/ssh-configuration.md
-- [[Step 4 Pre-populate known_hosts (recommended)]] - document - docs/ssh-configuration.md
-- [[Step 5 Restart the gateway]] - document - docs/ssh-configuration.md
+- [[dot-llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_3]] - code - .omp/mcp.json
+- [[dot-llm_settingsmcp-serversatlassianidallasjmcp-atlassian.sh_3]] - code - .omp/mcp.json
+- [[dot-llm_settingsmcp-serversdevonthinkmcp-devonthink.sh_3]] - code - .omp/mcp.json
+- [[dot-llm_settingsmcp-serversgithubagentshroudgithub-mcp-wrapper.sh_3]] - code - .omp/mcp.json
+- [[dot-llm_settingsmcp-serversgithubdefaultgithub-mcp-wrapper.sh_3]] - code - .omp/mcp.json
+- [[dot-llm_settingsmcp-serversgithubidallasjgithub-mcp-wrapper.sh_3]] - code - .omp/mcp.json
+- [[dot-llm_settingsmcp-servershome-assistantmcp-ha.sh_3]] - code - .omp/mcp.json
+- [[dot-ompmcp.json]] - code - .omp/mcp.json
+- [[opthomebrewbinnpx_3]] - code - .omp/mcp.json
+- [[PATH_48]] - code - .omp/mcp.json
+- [[atlassian-agentshroud_4]] - code - .omp/mcp.json
+- [[atlassian-idallasj_4]] - code - .omp/mcp.json
+- [[autoOpenFile_4]] - code - .omp/mcp.json
+- [[devonthink_4]] - code - .omp/mcp.json
+- [[github_4]] - code - .omp/mcp.json
+- [[github-agentshroud_4]] - code - .omp/mcp.json
+- [[github-idallasj_4]] - code - .omp/mcp.json
+- [[home-assistant_4]] - code - .omp/mcp.json
+- [[outputPath_4]] - code - .omp/mcp.json
+- [[safari_4]] - code - .omp/mcp.json
+- [[safari-mcp_3]] - code - .omp/mcp.json
+- [[xmind_4]] - code - .omp/mcp.json
+- [[xmind-generator-mcp_3]] - code - .omp/mcp.json
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +38,3 @@ members: 12
 TABLE source_file, type FROM #community/omp/mcpjson
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_ssh-configuration]]
-
-## Top bridge nodes
-- [[SSH Configuration Guide]] - degree 7, connects to 1 community

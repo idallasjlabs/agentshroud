@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .test_multi_turn_block_reason_hides_score()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Blocked multi-turn sessions should not disclose scoring details.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
+- [[asyncio_72]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

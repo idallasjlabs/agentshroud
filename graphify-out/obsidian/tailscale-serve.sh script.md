@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/tailscale-serve.sh"
 type: "code"
-community: "Community 875"
+community: "tailscale-serve.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_875
+  - community/tailscale-servesh
 ---
 
 # tailscale-serve.sh script
@@ -23,4 +23,4 @@ tags:
 - [[edge_validate_ports()]] - `calls` [EXTRACTED]
 - [[tailscale-serve.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_875
+#graphify/code #graphify/EXTRACTED #community/tailscale-servesh

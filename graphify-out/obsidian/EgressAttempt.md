@@ -1,38 +1,24 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "Community 329"
+community: "._check_impl"
 location: "L36"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_329
+  - graphify/EXTRACTED
+  - community/_check_impl
 ---
 
 # EgressAttempt
 
 ## Connections
-- [[._check_impl()]] - `references` [EXTRACTED]
-- [[._record()_2]] - `references` [EXTRACTED]
-- [[.check()_5]] - `references` [EXTRACTED]
-- [[.check_async()]] - `references` [EXTRACTED]
-- [[.get_log()]] - `references` [EXTRACTED]
-- [[EgressFilter_2]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[FakeAuditStore]] - `uses` [INFERRED]
-- [[TestAuditStorePersistence]] - `uses` [INFERRED]
+- [[dot-_check_impl()]] - `references` [EXTRACTED]
+- [[dot-_record()_2]] - `calls` [EXTRACTED]
+- [[dot-check()_6]] - `references` [EXTRACTED]
+- [[dot-check_async()]] - `references` [EXTRACTED]
+- [[dot-get_log()]] - `references` [EXTRACTED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]
-- [[TestEgressPolicy]] - `uses` [INFERRED]
-- [[TestEnforceMode]] - `uses` [INFERRED]
-- [[TestIPRules]] - `uses` [INFERRED]
-- [[TestInteractiveApproval]] - `uses` [INFERRED]
-- [[TestLogging]] - `uses` [INFERRED]
-- [[TestMonitorMode_2]] - `uses` [INFERRED]
-- [[TestOpenClawResearchDomainsAllowlisted]] - `uses` [INFERRED]
-- [[TestPerAgentPolicy]] - `uses` [INFERRED]
-- [[TestSMTPIMAPPorts]] - `uses` [INFERRED]
-- [[TestURLParsing]] - `uses` [INFERRED]
-- [[egress_filter.py]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `contains` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_329
+#graphify/code #graphify/EXTRACTED #community/_check_impl

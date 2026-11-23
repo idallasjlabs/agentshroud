@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/05-behavior.md"
 type: "document"
-community: "Community 904"
+community: "03-data.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_904
+  - community/03-datamd
 ---
 
 # 05-behavior.md
@@ -14,9 +14,8 @@ tags:
 ## Connections
 - [[AgentShroud — System Behavior Diagrams]] - `contains` [EXTRACTED]
 - [[Logic Flow — Request Execution]] - `conceptually_related_to` [EXTRACTED]
-- [[README_120]] - `references` [EXTRACTED]
 - [[Sequence Diagram — Telegram Message to Response]] - `conceptually_related_to` [EXTRACTED]
 - [[State Machine — Approval Queue Item Lifecycle]] - `conceptually_related_to` [EXTRACTED]
 - [[State Machine — Bot Session  Context Lifecycle]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_904
+#graphify/document #graphify/EXTRACTED #community/03-datamd

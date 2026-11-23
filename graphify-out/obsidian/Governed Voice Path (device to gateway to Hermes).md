@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "Community 555"
+community: "AgentShroud Changelog"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/AgentShroud_Changelog
 ---
 
 # Governed Voice Path (device to gateway to Hermes)
@@ -16,4 +16,4 @@ tags:
 - [[Spoken High-Risk Command Approval Pause]] - `references` [EXTRACTED]
 - [[Voice Gateway Service (STTTTS on marvin)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_555
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog

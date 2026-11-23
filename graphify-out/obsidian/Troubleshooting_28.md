@@ -1,22 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
+source_file: "docs/setup/OPENCLAW_SETUP.md"
 type: "document"
-community: "Community 276"
-location: "L281"
+community: "OpenClaw Setup Guide - agentshroud.ai Bot"
+location: "L356"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_276
+  - community/OpenClaw_Setup_Guide_-_agentshroudai_Bot
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Action requires approval but none granted_6]] - `contains` [EXTRACTED]
-- [[Browser timeout_6]] - `contains` [EXTRACTED]
-- [[CAPTCHA detected_6]] - `contains` [EXTRACTED]
-- [[Rate limit exceeded_6]] - `contains` [EXTRACTED]
-- [[URL not in allowlist_6]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_8]] - `contains` [EXTRACTED]
+- [[Control UI Not Accessible]] - `contains` [EXTRACTED]
+- [[Gateway Can't Reach OpenClaw]] - `contains` [EXTRACTED]
+- [[OpenClaw Setup Guide - agentshroud.ai Bot]] - `contains` [EXTRACTED]
+- [[OpenClaw Won't Start]] - `contains` [EXTRACTED]
+- [[SSH Not Working]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_276
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Setup_Guide_-_agentshroudai_Bot

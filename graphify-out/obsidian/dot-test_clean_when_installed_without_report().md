@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "blucli/SKILL.md"
+community: "TestTrivySummary"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/blucli/SKILLmd
+  - community/TestTrivySummary
 ---
 
 # .test_clean_when_installed_without_report()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrivySummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/blucli/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestTrivySummary

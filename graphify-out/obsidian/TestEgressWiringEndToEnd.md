@@ -1,26 +1,23 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Community 300"
+community: "test_module_stats.py"
 location: "L116"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_300
+  - graphify/EXTRACTED
+  - community/test_module_statspy
 ---
 
 # TestEgressWiringEndToEnd
 
 ## Connections
-- [[.setup_method()_14]] - `method` [EXTRACTED]
-- [[.test_allowed_egress_counts_as_allowed()]] - `method` [EXTRACTED]
-- [[.test_denied_egress_counts_as_blocked()]] - `method` [EXTRACTED]
-- [[Decision]] - `uses` [INFERRED]
+- [[dot-setup_method()_21]] - `method` [EXTRACTED]
+- [[dot-test_allowed_egress_counts_as_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_denied_egress_counts_as_blocked()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[ModuleStatsCollector]] - `uses` [INFERRED]
-- [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked.      The]] - `rationale_for` [EXTRACTED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[EgressFilter]] - `uses` [INFERRED]
+- [[SCRUM-80 F1 regression — a DENIED egress attempt must count as blocked. The…]] - `rationale_for` [EXTRACTED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_300
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

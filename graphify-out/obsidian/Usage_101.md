@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: ".agents/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 1227"
+community: "What You Must Do When Invoked"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1227
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps_2]] - `contains` [EXTRACTED]
+- [[graphify]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1227
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

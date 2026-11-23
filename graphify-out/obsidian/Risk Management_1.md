@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: "docker/config/hermes/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 486"
-location: "L136"
+community: "Skill: Project Management (PM)"
+location: "L135"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_486
+  - community/Skill_Project_Management_PM
 ---
 
 # Risk Management
@@ -16,4 +16,4 @@ tags:
 - [[Known Risks_1]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_486
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

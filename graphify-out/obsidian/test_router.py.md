@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Community 325"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/ingest_api/configpy
 ---
 
 # test_router.py
@@ -15,10 +15,14 @@ tags:
 - [[AgentTarget]] - `imports` [EXTRACTED]
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
-- [[router()_1]] - `contains` [EXTRACTED]
+- [[Tests for multi-agent router]] - `rationale_for` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
+- [[router()_2]] - `contains` [EXTRACTED]
 - [[router_config()]] - `contains` [EXTRACTED]
 - [[test_agent_target_custom_paths()]] - `contains` [EXTRACTED]
 - [[test_agent_target_default_paths()]] - `contains` [EXTRACTED]
@@ -38,7 +42,5 @@ tags:
 - [[test_resolve_target_explicit()]] - `contains` [EXTRACTED]
 - [[test_resolve_target_invalid_explicit()]] - `contains` [EXTRACTED]
 - [[test_resolves_hermes_target()]] - `contains` [EXTRACTED]
-- [[test_router_streaming.py]] - `conceptually_related_to` [INFERRED]
-- [[test_scanner_integration_coverage.py]] - `conceptually_related_to` [AMBIGUOUS]
 
-#graphify/code #graphify/EXTRACTED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

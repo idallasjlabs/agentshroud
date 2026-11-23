@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "soc/router.py"
-location: "L91"
+community: "TrustConfig"
+location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TrustConfig
 ---
 
 # .test_register_idempotent()
 
 ## Connections
-- [[TestAgentRegistration]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

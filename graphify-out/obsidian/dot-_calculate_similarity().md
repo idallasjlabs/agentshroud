@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AgentShroud Module Inventory"
-location: "L252"
+community: "middleware.py"
+location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/middlewarepy
 ---
 
 # ._calculate_similarity()
@@ -17,4 +17,4 @@ tags:
 - [[PromptProtection]] - `method` [EXTRACTED]
 - [[ProtectedContent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

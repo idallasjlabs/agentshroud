@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "Community 341"
+community: "wakeword.c"
 location: "L517"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/wakewordc
 ---
 
 # wakeword_deinit()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/wakewordc

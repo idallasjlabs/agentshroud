@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/session-logs/SKILL.md"
+source_file: "gateway/README.md"
 type: "document"
-community: "Community 273"
-location: "L22"
+community: "Features"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/Features
 ---
 
 # Structure
 
 ## Connections
-- [[session-logs]] - `contains` [EXTRACTED]
+- [[Gateway Layer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_273
+#graphify/document #graphify/EXTRACTED #community/Features

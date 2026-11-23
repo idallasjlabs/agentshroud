@@ -1,17 +1,18 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/compliance/iec-62443-matrix.md"
 type: "document"
-community: "Community 2016"
-location: "L946"
+community: "IEC 62443 Compliance Matrix — AgentShroud"
+location: "L116"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2016
+  - community/IEC_62443_Compliance_Matrix__AgentShroud
 ---
 
 # Summary
 
 ## Connections
-- [[Unreleased — feathttp-connect-proxy + featcredential-isolation]] - `contains` [EXTRACTED]
+- [[IEC 62443 Compliance Matrix — AgentShroud]] - `contains` [EXTRACTED]
+- [[Key Components Referenced (v1.0.0)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2016
+#graphify/document #graphify/EXTRACTED #community/IEC_62443_Compliance_Matrix__AgentShroud

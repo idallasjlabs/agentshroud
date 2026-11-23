@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "Community 60"
+community: "TestAtomicRegistryWrites"
 location: "L351"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/TestAtomicRegistryWrites
 ---
 
 # A corrupt/partial registry file must not crash construction.
 
 ## Connections
-- [[.test_load_tolerates_corrupt_registry()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_load_tolerates_corrupt_registry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_60
+#graphify/rationale #graphify/EXTRACTED #community/TestAtomicRegistryWrites

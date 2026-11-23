@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 16"
+community: "test_memory_lifecycle.py"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/test_memory_lifecyclepy
 ---
 
 # Source of a file modification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ModificationSource]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/test_memory_lifecyclepy

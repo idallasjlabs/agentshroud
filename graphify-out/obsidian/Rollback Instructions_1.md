@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-09-06-prod.md"
+source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
 type: "document"
-community: "Community 534"
-location: "L342"
+community: "SecurityFinding"
+location: "L184"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_534
+  - community/SecurityFinding
 ---
 
 # Rollback Instructions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Weekly Upgrade — 2026-09-06_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_534
+#graphify/document #graphify/EXTRACTED #community/SecurityFinding

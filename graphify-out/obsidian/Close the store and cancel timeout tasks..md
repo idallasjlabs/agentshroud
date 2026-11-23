@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "Community 30"
+community: "EnhancedApprovalQueue"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/EnhancedApprovalQueue
 ---
 
 # Close the store and cancel timeout tasks.
 
 ## Connections
-- [[.close()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue

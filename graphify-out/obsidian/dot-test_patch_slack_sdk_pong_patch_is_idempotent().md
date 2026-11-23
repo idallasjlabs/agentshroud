@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "TestConfigValidation"
 location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/TestConfigValidation
 ---
 
 # .test_patch_slack_sdk_pong_patch_is_idempotent()
 
 ## Connections
 - [[TestConfigValidation]] - `method` [EXTRACTED]
-- [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied.]] - `rationale_for` [EXTRACTED]
+- [[patch-slack-sdk.sh must stay quiet when the pong patch is already applied. The…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestConfigValidation

@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "fake_owner_notice()"
+community: "fake_owner_notice"
 location: "L1309"
 tags:
   - graphify/code
@@ -18,7 +18,7 @@ tags:
 - [[Unknown non-owner user should trigger pending approval workflow and not forward.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 - [[fake_owner_notice()_17]] - `contains` [EXTRACTED]
 - [[fake_owner_notice()_4]] - `indirect_call` [INFERRED]
 - [[fake_pending_notice()_1]] - `indirect_call` [INFERRED]

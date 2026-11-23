@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_auto_remediate_cves.py"
+type: "rationale"
+community: "plan_remediation"
+location: "L194"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/plan_remediation
+---
+
+# The rollback path: a failed deploy must restore the pin verbatim, downstream…
+
+## Connections
+- [[dot-test_pin_revert_restores_the_exact_original_string()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/plan_remediation

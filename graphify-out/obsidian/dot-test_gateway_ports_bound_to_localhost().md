@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docker_compose.py"
 type: "code"
-community: "Telegram & Gmail Integration Guide"
+community: "TestProductionCompose"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Telegram__Gmail_Integration_Guide
+  - community/TestProductionCompose
 ---
 
 # .test_gateway_ports_bound_to_localhost()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProductionCompose]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Telegram__Gmail_Integration_Guide
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

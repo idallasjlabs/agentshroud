@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ContextSegment"
+community: "MCPProxy"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MCPProxy
 ---
 
 # .mcp_proxy_with_approval()
 
 ## Connections
 - [[Create an MCP proxy with approval queue.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `calls` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
+- [[fixture_81]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

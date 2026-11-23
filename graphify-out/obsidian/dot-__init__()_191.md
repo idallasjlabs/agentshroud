@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
-location: "L42"
+community: "DNSBlocklist"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/DNSBlocklist
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Path_67]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

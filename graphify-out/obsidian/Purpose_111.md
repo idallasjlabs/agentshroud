@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "Community 766"
-location: "L12"
+community: "Oracle — Feedback Analyst"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_766
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[auth.py_3]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_766
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

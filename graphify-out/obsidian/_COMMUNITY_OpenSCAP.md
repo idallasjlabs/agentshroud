@@ -1,30 +1,25 @@
 ---
 type: community
-cohesion: 0.20
-members: 15
+members: 12
 ---
 
 # OpenSCAP
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 15 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[dot-test_five_optimal()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_five_sbom_and_trivy_clean()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_four_sbom_and_trivy_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_four_with_zero_highs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_one_when_only_sbom_exists()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_three_sbom_has_packages_no_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_three_with_sbom_trivy_no_criticals_but_has_highs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_two_empty_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_zero_when_nothing_present()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[dot-test_zero_without_sbom()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[Return a mock Path that exists and whose glob() returns named mock files.]] - rationale - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreImageIntegrity_1]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSupplyChain]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_dir_with_files()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[_mock_missing_dir()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[Configuration_21]] - document - docs/api/integration-guide.md
+- [[Installation in Gateway]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Integration Point]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Integration Testing]] - document - docs/api/integration-guide.md
+- [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
+- [[OpenSCAP_1]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Purpose_171]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Related Notes_69]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,15 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_Feature Global Monitor-Only Mode (Observatory Mode)]]
-- 3 edges to [[_COMMUNITY_Command Details]]
-- 2 edges to [[_COMMUNITY_hermesskillsi-crSKILL.md (2)]]
-- 2 edges to [[_COMMUNITY_hermesskillsi-bsREADME.md (4)]]
-- 1 edge to [[_COMMUNITY_MCP Auth Reset (MCPM-AUTH-RESET)]]
+- 1 edge to [[_COMMUNITY_AgentShroud Enterprise Governance for Autonomous AI Agents]]
+- 1 edge to [[_COMMUNITY_Integration Guide]]
 
 ## Top bridge nodes
-- [[_mock_dir_with_files()]] - degree 13, connects to 5 communities
-- [[_mock_missing_dir()]] - degree 6, connects to 3 communities
-- [[TestScoreImageIntegrity_1]] - degree 7, connects to 2 communities
-- [[TestScoreSupplyChain]] - degree 6, connects to 1 community
-- [[dot-test_five_optimal()]] - degree 2, connects to 1 community
+- [[OpenClaw Integration (Primary Target)]] - degree 4, connects to 2 communities

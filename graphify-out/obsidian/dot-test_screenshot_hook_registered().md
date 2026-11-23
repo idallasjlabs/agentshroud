@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "BrowserSecurityGuard"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/BrowserSecurityGuard
 ---
 
 # .test_screenshot_hook_registered()
 
 ## Connections
 - [[TestScreenshotAnalysis]] - `method` [EXTRACTED]
-- [[ThreatAssessment]] - `calls` [EXTRACTED]
+- [[ThreatAssessment]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/SKILL.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 242"
-location: "L364"
+community: "Skills by Category"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/Skills_by_Category
 ---
 
 # Workflow
 
 ## Connections
-- [[AWS Cloud Management & FinOps Agent_1]] - `contains` [EXTRACTED]
+- [[Skills by Category]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_242
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

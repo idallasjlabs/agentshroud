@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "AuditExportConfig"
-location: "L28"
+community: "OAuthSecurityValidator"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/OAuthSecurityValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

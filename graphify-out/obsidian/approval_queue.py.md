@@ -1,23 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 1219"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1219
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # approval_queue.py.md
 
 ## Connections
-- [[34 Security Modules Pipeline (P0-P3)]] - `conceptually_related_to` [EXTRACTED]
-- [[Approval Queue (human gate)]] - `shares_data_with` [EXTRACTED]
-- [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 - [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
-- [[Layer-by-Layer Breakdown]] - `contains` [EXTRACTED]
-- [[SOUL_2]] - `references` [EXTRACTED]
-- [[Security Controls]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1219
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

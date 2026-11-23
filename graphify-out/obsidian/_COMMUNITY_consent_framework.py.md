@@ -1,29 +1,28 @@
 ---
 type: community
-cohesion: 0.14
-members: 14
+members: 15
 ---
 
 # consent_framework.py
 
-**Cohesion:** 0.14 - loosely connected
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Configuration  Environment Variables_21]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Function Details_37]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Purpose_139]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Related_43]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Responsibilities_41]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[Security Feature Registry]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[_validate_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_features_for_runtime(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[get_security_options(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[security.py_2]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[security.py_1]] - document - docs/vault/02 - Modules/Runtime/security.py.md
-- [[warn_missing_features(runtime)]] - document - docs/vault/02 - Modules/Runtime/security.py.md
+- [[ConsentFramework.add_to_blacklist(command)  remove_from_blacklist(command)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.add_to_whitelist(command)  remove_from_whitelist(command)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.get_whitelist()  get_blacklist()]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.validate_config(config)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[ConsentFramework.validate_configs(configs)]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Function Details_44]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Key Classes  Functions_46]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Purpose_174]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Related_48]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Responsibilities_51]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Shell Injection Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[consent_framework.py_1]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[consent_framework.py]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 
 ## Live Query (requires Dataview plugin)
 

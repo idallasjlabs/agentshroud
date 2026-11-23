@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Critical/High/Medium/Low tool risk tiers gating approval requirement
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AgentShroud Logo on Brand Blue Background]] - image - branding/logos/variants/logo-on-brand-blue-1024x1024.png
+- [[CriticalHighMediumLow tool risk tiers gating approval requirement]] - concept - gateway/tests/test_enhanced_approval.py
 
 ## Live Query (requires Dataview plugin)
 

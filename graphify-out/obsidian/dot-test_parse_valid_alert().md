@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "FalcoAlertWatcher"
 location: "L580"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/FalcoAlertWatcher
 ---
 
 # .test_parse_valid_alert()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFalcoParser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

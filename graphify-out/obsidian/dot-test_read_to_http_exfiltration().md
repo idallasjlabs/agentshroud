@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "ToolChainAnalyzer"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ToolChainAnalyzer
 ---
 
 # .test_read_to_http_exfiltration()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of read → HTTP exfiltration pattern.]] - `rationale_for` [EXTRACTED]
 - [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

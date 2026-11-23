@@ -1,12 +1,11 @@
 ---
-source_file: "scripts/sync-cve-registry.py"
+source_file: ""
 type: "code"
-community: "Community 74"
-location: "L154"
+community: "sync-cve-registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_74
+  - community/sync-cve-registrypy
 ---
 
 # expr
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[_list_literals()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_74
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

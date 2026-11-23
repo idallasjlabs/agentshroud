@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_config_integrity_monitor.py"
 type: "code"
-community: "Community 241"
+community: "ConfigIntegrityMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_241
+  - community/ConfigIntegrityMonitor
 ---
 
 # test_config_integrity_monitor.py
 
 ## Connections
+- [[Behavior tests for ConfigIntegrityMonitor…]] - `rationale_for` [EXTRACTED]
 - [[ConfigIntegrityMonitor]] - `imports` [EXTRACTED]
 - [[_write_openclaw()]] - `contains` [EXTRACTED]
+- [[config_integrity.py]] - `imports_from` [EXTRACTED]
 - [[dirs()]] - `contains` [EXTRACTED]
 - [[test_added_file_is_detected()]] - `contains` [EXTRACTED]
 - [[test_baseline_advances_only_when_clean()]] - `contains` [EXTRACTED]
@@ -30,4 +32,4 @@ tags:
 - [[test_tamper_baseline_is_not_advanced_so_alert_refires()]] - `contains` [EXTRACTED]
 - [[test_unchanged_second_run_reports_no_changes()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_241
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

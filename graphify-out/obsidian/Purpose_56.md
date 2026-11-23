@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm/README.md"
+source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 1215"
-location: "L6"
+community: "agentshroud.yaml"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1215
+  - community/agentshroudyaml
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
+- [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1215
+#graphify/document #graphify/EXTRACTED #community/agentshroudyaml

@@ -1,22 +1,23 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 1006"
+community: "server.py"
 location: "L377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/serverpy
 ---
 
 # firmware_bin()
 
 ## Connections
-- [[Request_10]] - `references` [EXTRACTED]
-- [[Response_1]] - `references` [EXTRACTED]
-- [[Serve the current ESP32 firmware binary for OTA (SCRUM-58).      Contract expect]] - `rationale_for` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
+- [[Response]] - `references` [EXTRACTED]
+- [[Serve the current ESP32 firmware binary for OTA (SCRUM-58). Contract expected…]] - `rationale_for` [EXTRACTED]
 - [[_get_firmware_etag()]] - `calls` [EXTRACTED]
 - [[_ota_token_ok()]] - `calls` [EXTRACTED]
+- [[api_route]] - `references` [EXTRACTED]
 - [[server.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/serverpy

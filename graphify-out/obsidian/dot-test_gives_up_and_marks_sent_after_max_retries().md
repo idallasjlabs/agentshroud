@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: ".test_gives_up_and_marks_sent_after_max_retries()"
+community: ".test_gives_up_and_marks_sent_after_max_retries"
 location: "L1816"
 tags:
   - graphify/code
@@ -18,7 +18,7 @@ tags:
 - [[_fake_run()_3]] - `indirect_call` [INFERRED]
 - [[_sleep()_7]] - `contains` [EXTRACTED]
 - [[_sleep()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[now()_7]] - `contains` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
+- [[now()_9]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "_coerce_to_ws_event()"
+community: "soc/models.py"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/soc/modelspy
 ---
 
 # ._make_handler()
@@ -19,4 +19,4 @@ tags:
 - [[SOCWebSocketHandler]] - `references` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

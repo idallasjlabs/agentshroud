@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/collaborator_responses.py"
 type: "rationale"
-community: "Community 18"
+community: "test_collaborator_responses.py"
 location: "L85"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/test_collaborator_responsespy
 ---
 
 # Format a user's accessible projects for display.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[format_projects_list()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_responsespy

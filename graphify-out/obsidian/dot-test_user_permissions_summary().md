@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "soc/router.py"
 location: "L282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/soc/routerpy
 ---
 
 # .test_user_permissions_summary()
@@ -15,4 +15,4 @@ tags:
 - [[Test getting user permissions summary.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

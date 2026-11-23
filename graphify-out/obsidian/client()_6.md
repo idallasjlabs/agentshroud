@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_e2e.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 1248"
-location: "L24"
+community: "test_soc_router_coverage.py"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1248
+  - community/test_soc_router_coveragepy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
-- [[test_e2e.py]] - `contains` [EXTRACTED]
+- [[fixture_27]] - `references` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

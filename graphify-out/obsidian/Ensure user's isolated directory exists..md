@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "rationale"
-community: "Community 26"
+community: "PathIsolationManager"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/PathIsolationManager
 ---
 
 # Ensure user's isolated directory exists.
 
 ## Connections
-- [[._ensure_user_directory()]] - `rationale_for` [EXTRACTED]
+- [[dot-_ensure_user_directory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

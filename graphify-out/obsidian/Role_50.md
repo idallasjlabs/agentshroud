@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-gg/SKILL.md"
+source_file: ".opencode/agents/i-tdd.md"
 type: "document"
-community: "Community 949"
-location: "L8"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_949
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_949
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

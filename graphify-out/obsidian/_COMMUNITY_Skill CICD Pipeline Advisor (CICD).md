@@ -1,25 +1,20 @@
 ---
 type: community
-cohesion: 0.20
-members: 10
+members: 7
 ---
 
 # Skill: CI/CD Pipeline Advisor (CICD)
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 10 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[dot-test_export_config_delegates_to_get()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_config_reads_yaml()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_config_when_file_missing()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_import_config_delegates_to_update()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_rejects_unknown_keys()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_round_trips_bots_key()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_without_existing_file_skips_backup()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_config_writes_yaml_and_backs_up()]] - code - gateway/tests/test_web_api_coverage.py
-- [[SCRUM-107 the `bots` top-level key must be allowed through PUT         apicon]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[TestConfig_1]] - code - gateway/tests/test_web_api_coverage.py
+- [[Deployment Matrix  (Direct to Prod)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[GitHub Actions Best Practices]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Quality Gates  (execution order)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Review Flags  (block the merge)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Role_17]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
+- [[openclawskillsi-cicdSKILL]] - document - docker/config/openclaw/skills/i-cicd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[TestConfig_1]] - degree 12, connects to 1 community
+- [[Skill CICD Pipeline Advisor (CICD)]] - degree 7, connects to 1 community

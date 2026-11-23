@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: ".github/agents/i-apollo.agent.md"
 type: "document"
-community: "Community 1071"
-location: "L160"
+community: "Technical Specification"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Technical_Specification
 ---
 
 # Quality Checklist
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

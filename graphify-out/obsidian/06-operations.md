@@ -1,12 +1,12 @@
 ---
 source_file: "docs/diagrams/06-operations.md"
 type: "document"
-community: "Community 1989"
+community: "06-operations.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1989
+  - community/06-operationsmd
 ---
 
 # 06-operations.md
@@ -15,7 +15,6 @@ tags:
 - [[AgentShroud — Operations & Reliability Diagrams]] - `contains` [EXTRACTED]
 - [[Incident Response Flow — Severity & Escalation]] - `conceptually_related_to` [EXTRACTED]
 - [[Monitoring & Observability Map]] - `conceptually_related_to` [EXTRACTED]
-- [[README_120]] - `references` [EXTRACTED]
 - [[Runbook  Decision Tree — On-Call Logic]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1989
+#graphify/document #graphify/EXTRACTED #community/06-operationsmd

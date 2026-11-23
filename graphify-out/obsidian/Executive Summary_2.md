@@ -1,18 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-p0-2026-02-23.md"
+source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 331"
-location: "L6"
+community: "AgentShroud Security Architecture"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_331
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Phase Review P0 - Core Pipeline Wiring]] - `contains` [EXTRACTED]
-- [[Phase Review P0 — Core Pipeline Wiring]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_331
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

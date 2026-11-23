@@ -1,18 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L61"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_38
+  - graphify/INFERRED
+  - community/soc/modelspy
 ---
 
 # TestEgressRequest
 
 ## Connections
-- [[.test_construction()]] - `method` [EXTRACTED]
+- [[dot-test_construction()_1]] - `method` [EXTRACTED]
+- [[EgressRequest_1]] - `uses` [INFERRED]
+- [[EgressStatus]] - `uses` [INFERRED]
+- [[RiskLevel_5]] - `uses` [INFERRED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/INFERRED #community/soc/modelspy

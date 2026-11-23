@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/pytest.ini.md"
+source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Community 1428"
-location: "L58"
+community: "Security Pipeline Flow"
+location: "L117"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1428
+  - community/Security_Pipeline_Flow
 ---
 
 # Related Notes
 
 ## Connections
-- [[pytest.ini_1]] - `contains` [EXTRACTED]
+- [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1428
+#graphify/document #graphify/EXTRACTED #community/Security_Pipeline_Flow

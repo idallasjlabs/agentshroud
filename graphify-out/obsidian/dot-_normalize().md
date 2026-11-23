@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "CanaryTripwire"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/CanaryTripwire
 ---
 
 # ._normalize()
@@ -16,4 +16,4 @@ tags:
 - [[dot-_check_plain()]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

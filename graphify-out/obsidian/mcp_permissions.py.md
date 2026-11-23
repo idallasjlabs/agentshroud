@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
-type: "code"
-community: "Community 54"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
+type: "document"
+community: "Function Details"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/Function_Details
 ---
 
-# mcp_permissions.py
+# mcp_permissions.py.md
 
 ## Connections
-- [[MCPPermissionManager]] - `contains` [EXTRACTED]
-- [[MCPProxyConfig]] - `imports` [EXTRACTED]
-- [[MCPServerConfig]] - `imports` [EXTRACTED]
-- [[PermissionCheck]] - `contains` [EXTRACTED]
-- [[PermissionLevel]] - `imports` [EXTRACTED]
-- [[PrivateAccessAttempt]] - `contains` [EXTRACTED]
-- [[PrivateRedactionEvent]] - `contains` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[RateLimitEntry]] - `contains` [EXTRACTED]
-- [[__init__.py_8]] - `re_exports` [EXTRACTED]
-- [[mcp_config.py]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/document #graphify/EXTRACTED #community/Function_Details

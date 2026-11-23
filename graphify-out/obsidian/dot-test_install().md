@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "hermes/skills/i-browser/browse.js"
+community: "test_runtime_engines.py"
 location: "L807"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/test_runtime_enginespy
 ---
 
 # .test_install()
 
 ## Connections
-- [[Installer must not fake completion SCRUM-107.          The endpoint has no auto]] - `rationale_for` [EXTRACTED]
+- [[Installer must not fake completion SCRUM-107. The endpoint has no automated…]] - `rationale_for` [EXTRACTED]
 - [[TestInstallerAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

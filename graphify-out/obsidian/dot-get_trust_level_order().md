@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "soc/router.py"
+community: "lifespan.py"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/lifespanpy
 ---
 
 # .get_trust_level_order()
@@ -15,7 +15,7 @@ tags:
 - [[dot-get_next_trust_level()]] - `calls` [EXTRACTED]
 - [[dot-get_previous_trust_level()]] - `calls` [EXTRACTED]
 - [[Get trust levels in ascending order.]] - `rationale_for` [EXTRACTED]
-- [[ProgressiveTrustConfig_2]] - `method` [EXTRACTED]
+- [[ProgressiveTrustConfig]] - `method` [EXTRACTED]
 - [[TrustLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

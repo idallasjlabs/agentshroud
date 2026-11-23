@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 37"
+community: "test_soc_router_coverage.py"
 location: "L2325"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_37
+  - graphify/INFERRED
+  - community/test_soc_router_coveragepy
 ---
 
 # test_rollback_gateway_paths()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
+- [[_fake_ssh()]] - `indirect_call` [INFERRED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/INFERRED #community/test_soc_router_coveragepy

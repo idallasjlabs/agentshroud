@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-sec.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "Community 1413"
+community: "Skill: Security Review (SEC)"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1413
+  - community/Skill_Security_Review_SEC
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1413
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

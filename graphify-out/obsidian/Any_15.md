@@ -1,21 +1,16 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: ""
 type: "code"
-community: "Community 229"
-location: "L55"
+community: "TestResourceGuardAlertBridge"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_229
+  - community/TestResourceGuardAlertBridge
 ---
 
 # Any
 
 ## Connections
-- [[.__call__()_1]] - `references` [EXTRACTED]
-- [[.__init__()_24]] - `references` [EXTRACTED]
-- [[._clean_tool()]] - `references` [EXTRACTED]
-- [[._coerce()]] - `references` [EXTRACTED]
-- [[._handle()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/TestResourceGuardAlertBridge

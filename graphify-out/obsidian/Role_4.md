@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/athena.md"
+source_file: ".omp/agents/i-production.md"
 type: "document"
-community: "Community 1557"
-location: "L10"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1557
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1557
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

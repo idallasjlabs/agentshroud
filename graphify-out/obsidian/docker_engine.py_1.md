@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
 type: "document"
-community: "Community 673"
-location: "L1"
+community: "docker_engine.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_673
+  - community/docker_enginepy
 ---
 
-# docker_engine.py.md
+# docker_engine.py
 
 ## Connections
-- [[docker_engine.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_10]] - `contains` [EXTRACTED]
+- [[Docker Security Options Used]] - `contains` [EXTRACTED]
+- [[Function Details_18]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_20]] - `contains` [EXTRACTED]
+- [[Purpose_21]] - `contains` [EXTRACTED]
+- [[Related_20]] - `contains` [EXTRACTED]
+- [[Responsibilities_20]] - `contains` [EXTRACTED]
+- [[docker_engine.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_673
+#graphify/document #graphify/EXTRACTED #community/docker_enginepy

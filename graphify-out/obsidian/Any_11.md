@@ -1,29 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/oauth_service.py"
+source_file: ""
 type: "code"
-community: "Community 32"
-location: "L106"
+community: "parse_trivy_output"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_32
+  - community/parse_trivy_output
 ---
 
 # Any
 
 ## Connections
-- [[._issue()]] - `references` [EXTRACTED]
-- [[.authorize()_1]] - `references` [EXTRACTED]
-- [[.consent_view()]] - `references` [EXTRACTED]
-- [[.exchange_authorization_code()_1]] - `references` [EXTRACTED]
-- [[.exchange_refresh_token()_1]] - `references` [EXTRACTED]
-- [[.get_client()_1]] - `references` [EXTRACTED]
-- [[.load_access_token()_1]] - `references` [EXTRACTED]
-- [[.load_authorization_code()_1]] - `references` [EXTRACTED]
-- [[.load_refresh_token()_1]] - `references` [EXTRACTED]
-- [[.register_client()_1]] - `references` [EXTRACTED]
-- [[TokenRejected]] - `uses` [INFERRED]
-- [[TokenService]] - `uses` [INFERRED]
-- [[VendorProfile_2]] - `uses` [INFERRED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

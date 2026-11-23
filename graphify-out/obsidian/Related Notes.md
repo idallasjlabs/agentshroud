@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 1285"
-location: "L176"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1285
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Related Notes
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[All Dependencies_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1285
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt

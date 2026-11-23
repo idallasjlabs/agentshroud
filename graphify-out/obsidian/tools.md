@@ -1,20 +1,17 @@
 ---
-source_file: "config/inbound-edge/schema.json"
+source_file: "skills/custom/browser-fetch/skill.json"
 type: "code"
-community: "Community 2186"
-location: "L33"
+community: "skill.json"
+location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2186
+  - community/skilljson
 ---
 
 # tools
 
 ## Connections
-- [[additionalProperties_2]] - `contains` [EXTRACTED]
-- [[maxProperties]] - `contains` [EXTRACTED]
-- [[properties]] - `contains` [EXTRACTED]
-- [[type_13]] - `contains` [EXTRACTED]
+- [[skill.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2186
+#graphify/code #graphify/EXTRACTED #community/skilljson

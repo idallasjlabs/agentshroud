@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L8347"
+community: "._make_proxy"
+location: "L8299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # fake_send()
 
 ## Connections
-- [[dot-test_suspended_user_receives_drop_notice()]] - `contains` [EXTRACTED]
+- [[dot-test_collab_threshold_notices_fire_only_once_per_level()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

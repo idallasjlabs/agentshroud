@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-bot.md"
+source_file: "docs/operations/deployment-procedure.md"
 type: "document"
-community: "Community 1569"
-location: "L72"
+community: "Step-by-Step Deployment"
+location: "L475"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/Step-by-Step_Deployment
 ---
 
 # Security Hardening
 
 ## Connections
-- [[agentshroud-bot_1]] - `contains` [EXTRACTED]
+- [[Production Hardening]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Deployment

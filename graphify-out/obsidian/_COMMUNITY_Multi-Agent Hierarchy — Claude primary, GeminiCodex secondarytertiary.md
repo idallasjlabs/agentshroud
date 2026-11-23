@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Multi-Agent Hierarchy — Claude primary, Gemini/Codex secondary/tertiary
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Agile Skill (stub)]] - document - .agents/skills/i-agile/SKILL.md
+- [[Multi-Agent Hierarchy — Claude primary, GeminiCodex secondarytertiary]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

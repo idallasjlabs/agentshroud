@@ -1,30 +1,28 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Community 22"
+community: "prompt_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/prompt_guardpy
 ---
 
 # test_prompt_guard.py
 
 ## Connections
-- [[CVE-2026-31045 — indirect prompt injection via tool results]] - `references` [EXTRACTED]
-- [[Numbered security control catalog (C8, C9, C18, C47, ...)]] - `conceptually_related_to` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `imports` [EXTRACTED]
 - [[TestNewPatternsV080]] - `contains` [EXTRACTED]
 - [[TestReanchorDelimiters]] - `contains` [EXTRACTED]
 - [[TestSystemPromptHMAC]] - `contains` [EXTRACTED]
 - [[TestToolResultScan]] - `contains` [EXTRACTED]
+- [[Tests for PromptGuard security component]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[prompt_guard()_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 - [[test_benign_message()]] - `contains` [EXTRACTED]
-- [[test_performance.py]] - `shares_data_with` [INFERRED]
 - [[test_prompt_guard_init()]] - `contains` [EXTRACTED]
-- [[test_security_hardening.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

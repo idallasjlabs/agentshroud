@@ -1,0 +1,18 @@
+---
+source_file: "gateway/tests/test_edge_profiles.py"
+type: "code"
+community: "test_edge_profiles.py"
+location: "L186"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/test_edge_profilespy
+---
+
+# .test_claude_profile_covers_every_claude_surface()
+
+## Connections
+- [[Duet, chat and Cowork share one Claude account and client identity, so the edge…]] - `rationale_for` [EXTRACTED]
+- [[TestShippedProfiles]] - `method` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/test_edge_profilespy

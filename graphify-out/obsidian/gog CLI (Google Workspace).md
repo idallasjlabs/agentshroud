@@ -1,16 +1,16 @@
 ---
 source_file: "skills/openclaw/gog/SKILL.md"
 type: "concept"
-community: "Community 865"
+community: "gog/SKILL.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_865
+  - community/gog/SKILLmd
 ---
 
 # gog CLI (Google Workspace)
 
 ## Connections
-- [[SKILL_220]] - `implements` [EXTRACTED]
+- [[gogSKILL]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_865
+#graphify/concept #graphify/EXTRACTED #community/gog/SKILLmd

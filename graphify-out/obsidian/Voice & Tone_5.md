@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-tw.md"
+source_file: ".agents/agents/i-tw.md"
 type: "document"
-community: "Community 753"
-location: "L203"
+community: ".agents/agents/i-tw.md"
+location: "L204"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_753
+  - community/agents/agents/i-twmd
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules_5]] - `contains` [EXTRACTED]
+- [[Writing Style Rules_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_753
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-twmd

@@ -1,34 +1,18 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
-type: "code"
-community: "Community 22"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+type: "document"
+community: "prompt_guard.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/prompt_guardpy
 ---
 
-# prompt_guard.py
+# prompt_guard.py.md
 
 ## Connections
-- [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[FR3 System Integrity]] - `references` [EXTRACTED]
-- [[PatternRule]] - `contains` [EXTRACTED]
-- [[Prompt Guard Module Badge Icon]] - `conceptually_related_to` [INFERRED]
-- [[PromptGuard]] - `contains` [EXTRACTED]
-- [[ScanResult_1]] - `contains` [EXTRACTED]
-- [[SystemPromptFingerprint]] - `contains` [EXTRACTED]
-- [[ThreatAction]] - `contains` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [INFERRED]
-- [[detect_base64_payloads()]] - `imports` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
-- [[multi_turn_tracker.py]] - `semantically_similar_to` [INFERRED]
-- [[normalize_input()]] - `imports` [EXTRACTED]
-- [[state.py]] - `imports_from` [EXTRACTED]
-- [[test_multilingual_injection.py]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

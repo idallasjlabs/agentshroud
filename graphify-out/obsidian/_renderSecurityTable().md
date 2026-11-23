@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 2049"
+community: "soc.js"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2049
+  - community/socjs
 ---
 
 # _renderSecurityTable()
 
 ## Connections
-- [[SecurityEvent_1]] - `shares_data_with` [INFERRED]
+- [[_esc()_1]] - `calls` [EXTRACTED]
 - [[_handleWSEvent()]] - `calls` [EXTRACTED]
 - [[_loadSecurity()]] - `calls` [EXTRACTED]
+- [[_sevBadge()]] - `calls` [EXTRACTED]
+- [[_ts()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2049
+#graphify/code #graphify/EXTRACTED #community/socjs

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "WebContentScanner"
+community: "app"
 location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/app
 ---
 
 # .test_404_error()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test 404 handling for non-existent endpoints.]] - `rationale_for` [EXTRACTED]
 - [[TestErrorHandling]] - `method` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/app

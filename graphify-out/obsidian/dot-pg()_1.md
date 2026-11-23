@@ -12,7 +12,8 @@ tags:
 # .pg()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestToolResultScan]] - `method` [EXTRACTED]
+- [[fixture_96]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PromptGuard

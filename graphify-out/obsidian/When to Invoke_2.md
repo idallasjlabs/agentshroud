@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-doctor.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 1010"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1010
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # When to Invoke
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1010
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

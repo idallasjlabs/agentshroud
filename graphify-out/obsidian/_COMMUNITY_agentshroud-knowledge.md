@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # agentshroud-knowledge.md
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Hyperedges Rule (max 3chunk)]] - concept - docker/config/openclaw/skills/graphify/references/extraction-spec.md
+- [[agentshroud-knowledge]] - document - docs/agentshroud-knowledge.md
 
 ## Live Query (requires Dataview plugin)
 

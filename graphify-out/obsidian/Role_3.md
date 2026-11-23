@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/apollo.md"
+source_file: ".omp/agents/atlas.md"
 type: "document"
-community: "Community 1351"
-location: "L10"
+community: "Atlas — Curriculum Architect"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1351
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1351
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

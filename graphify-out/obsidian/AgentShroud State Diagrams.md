@@ -1,12 +1,12 @@
 ---
 source_file: "docs/flows/state-diagrams.md"
 type: "document"
-community: "Community 1162"
+community: "AgentShroud State Diagrams"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1162
+  - community/AgentShroud_State_Diagrams
 ---
 
 # AgentShroud State Diagrams
@@ -18,4 +18,4 @@ tags:
 - [[4. Gateway Operational Modes]] - `contains` [EXTRACTED]
 - [[state-diagrams]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1162
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_State_Diagrams

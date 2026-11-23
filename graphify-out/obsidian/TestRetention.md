@@ -1,21 +1,19 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "Community 7"
+community: "asyncio"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/asyncio
 ---
 
 # TestRetention
 
 ## Connections
-- [[.test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
+- [[dot-test_enforce_retention_deletes_expired()]] - `method` [EXTRACTED]
 - [[Retention enforcement.]] - `rationale_for` [EXTRACTED]
 - [[test_audit_chain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/asyncio

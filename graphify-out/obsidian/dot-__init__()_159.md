@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/tests/test_soc_contributors.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L55"
+community: "ContributorManager"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/ContributorManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/ContributorManager

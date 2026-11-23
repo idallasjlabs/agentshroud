@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .analyze_request()
@@ -17,9 +17,9 @@ tags:
 - [[dot-_check_parameter_obfuscation()]] - `calls` [EXTRACTED]
 - [[dot-_check_repeat_request_patterns()]] - `calls` [EXTRACTED]
 - [[dot-_normalize_description()]] - `calls` [EXTRACTED]
-- [[Analyze an approval request for potential deception or social engineering.]] - `rationale_for` [EXTRACTED]
-- [[Any_43]] - `references` [EXTRACTED]
+- [[Analyze an approval request for potential deception or social engineering.…]] - `rationale_for` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
 - [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[DeceptionDetection]] - `references` [EXTRACTED]
+- [[DeceptionDetection]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

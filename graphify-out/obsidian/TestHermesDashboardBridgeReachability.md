@@ -1,24 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "Community 65"
+community: "test_security_regressions_v1_2.py"
 location: "L338"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_65
+  - graphify/EXTRACTED
+  - community/test_security_regressions_v1_2py
 ---
 
 # TestHermesDashboardBridgeReachability
 
 ## Connections
-- [[.test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()]] - `method` [EXTRACTED]
-- [[.test_run_standalone_sets_matching_bridge_port()]] - `method` [EXTRACTED]
-- [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor     hermes-a]] - `rationale_for` [EXTRACTED]
-- [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_hermes_dashboard_stays_loopback_and_gateway_uses_the_bridge_port()]] - `method` [EXTRACTED]
+- [[dot-test_run_standalone_sets_matching_bridge_port()]] - `method` [EXTRACTED]
+- [[Hermes's dashboard binds 127.0.0.1 inside its own container (vendor hermes-…]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_65
+#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

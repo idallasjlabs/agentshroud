@@ -1,24 +1,25 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
-type: "document"
-community: "Community 720"
-location: "L10"
+source_file: "gateway/proxy/url_analyzer.py"
+type: "code"
+community: "URLAnalyzer"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_720
+  - community/URLAnalyzer
 ---
 
 # url_analyzer.py
 
 ## Connections
-- [[Configuration  Environment Variables_9]] - `contains` [EXTRACTED]
-- [[Function Details_15]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_18]] - `contains` [EXTRACTED]
-- [[Purpose_136]] - `contains` [EXTRACTED]
-- [[Related_22]] - `contains` [EXTRACTED]
-- [[Responsibilities_20]] - `contains` [EXTRACTED]
-- [[SSRF Detection Coverage]] - `contains` [EXTRACTED]
-- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
+- [[Enum_9]] - `imports_from` [EXTRACTED]
+- [[URL Analyzer — detect SSRF, data exfiltration, and suspicious URL patterns.…]] - `rationale_for` [EXTRACTED]
+- [[URLAnalysisResult]] - `contains` [EXTRACTED]
+- [[URLAnalyzer]] - `contains` [EXTRACTED]
+- [[URLFinding]] - `contains` [EXTRACTED]
+- [[URLVerdict]] - `contains` [EXTRACTED]
+- [[_looks_like_base64()]] - `contains` [EXTRACTED]
+- [[test_url_analyzer.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_720
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: "docker/config/hermes/skills/i-pr/README.md"
 type: "document"
-community: "Community 90"
+community: "Pull Request Generator (PR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Pull_Request_Generator_PR
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

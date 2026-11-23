@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L6494"
+community: "test_mcp_proxy_coverage.py"
+location: "L534"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - graphify/INFERRED
+  - community/test_mcp_proxy_coveragepy
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_scheme_relative_url_queues_https_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/INFERRED #community/test_mcp_proxy_coveragepy

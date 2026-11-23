@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .test_deception_detection_downplaying_language()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of downplaying language.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
 type: "document"
-community: "Community 566"
-location: "L28"
+community: "Function Details"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/Function_Details
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[oauth_security.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_566
+#graphify/document #graphify/EXTRACTED #community/Function_Details

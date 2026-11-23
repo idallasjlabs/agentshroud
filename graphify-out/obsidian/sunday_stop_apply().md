@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 869"
+community: "sunday-scan.sh"
 location: "L635"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_869
+  - community/sunday-scansh
 ---
 
 # sunday_stop_apply()
 
 ## Connections
 - [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[warn()_3]] - `calls` [EXTRACTED]
+- [[warn()_5]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_869
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

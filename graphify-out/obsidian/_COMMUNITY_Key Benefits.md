@@ -1,21 +1,18 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+members: 5
 ---
 
 # Key Benefits
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Purpose_21]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Related Notes_19]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[text_control_center.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[1. True Distributed AI]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[2. Enhanced Security]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[3. Advanced Capabilities]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[4. Better Development Workflow]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
+- [[Key Benefits]] - document - docs/architecture/DISTRIBUTED_OPENCLAW_NODE_ARCHITECTURE.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,3 +20,9 @@ members: 6
 TABLE source_file, type FROM #community/Key_Benefits
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
+
+## Top bridge nodes
+- [[Key Benefits]] - degree 5, connects to 1 community

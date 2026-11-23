@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-crpr.md"
+source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 1303"
-location: "L20"
+community: "Mode A — Single task"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1303
+  - community/Mode_A__Single_task
 ---
 
 # Invocation
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1303
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

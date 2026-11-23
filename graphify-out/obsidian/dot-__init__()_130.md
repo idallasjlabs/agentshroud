@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L393"
+community: "A2APeerTestDouble"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2APeerTestDouble
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `references` [EXTRACTED]
-- [[A2APolicyEngine_2]] - `method` [EXTRACTED]
+- [[A2APeerTestDouble]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L8097"
+community: "TelegramAPIProxy"
+location: "L8135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/TelegramAPIProxy
 ---
 
 # ._notify_user_blocked()
@@ -18,6 +18,6 @@ tags:
 - [[dot-_sanitize_reason()]] - `calls` [EXTRACTED]
 - [[dot-_send_telegram_text()]] - `calls` [EXTRACTED]
 - [[Send a user-friendly notification when a message is blocked.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

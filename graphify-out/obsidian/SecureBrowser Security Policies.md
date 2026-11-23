@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/references/security-policies.md"
 type: "document"
-community: "Community 453"
+community: "SecureBrowser Security Policies"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_453
+  - community/SecureBrowser_Security_Policies
 ---
 
 # SecureBrowser Security Policies
@@ -16,11 +16,11 @@ tags:
 - [[Audit Trail Standards]] - `contains` [EXTRACTED]
 - [[Compliance_1]] - `contains` [EXTRACTED]
 - [[Core Security Principles_9]] - `contains` [EXTRACTED]
-- [[Future Enhancements_2]] - `contains` [EXTRACTED]
-- [[Incident Response]] - `contains` [EXTRACTED]
+- [[Future Enhancements_1]] - `contains` [EXTRACTED]
+- [[Incident Response_1]] - `contains` [EXTRACTED]
 - [[Risk Classification Matrix]] - `contains` [EXTRACTED]
 - [[Security Testing_1]] - `contains` [EXTRACTED]
-- [[Threat Model_28]] - `contains` [EXTRACTED]
+- [[Threat Model_17]] - `contains` [EXTRACTED]
 - [[security-policies]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_453
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Security_Policies

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-hdev.md"
+source_file: "docker/config/hermes/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 819"
-location: "L107"
+community: "Mode A — Single task"
+location: "L105"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_819
+  - community/Mode_A__Single_task
 ---
 
 # Reviewers and fixer available to you
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_819
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

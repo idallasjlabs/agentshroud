@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "Community 233"
+community: "OutputCanary"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/OutputCanary
 ---
 
 # Result of checking a response for canary presence.
 
 ## Connections
-- [[CanaryResult_2]] - `rationale_for` [EXTRACTED]
+- [[CanaryResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_233
+#graphify/rationale #graphify/EXTRACTED #community/OutputCanary

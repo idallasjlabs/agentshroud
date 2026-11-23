@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # esp_err.h stub (playback state test)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[POST forwardstream (streaming voice pipeline)]] - code - gateway/ingest_api/routes/forward.py
+- [[esp_err.h stub (playback state test)]] - code - firmware/voice-terminal/test/test_playback_state/stubs/esp_err.h
 
 ## Live Query (requires Dataview plugin)
 

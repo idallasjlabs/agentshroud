@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: ".agents/skills/i-architecture-review/SKILL.md"
+community: "test_scanner_integration_coverage.py"
 location: "L1018"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-architecture-review/SKILLmd
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_no_sbom_zero()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAiModelSupplyChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-architecture-review/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

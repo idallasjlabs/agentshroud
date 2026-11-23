@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L439"
+community: "TelegramAPIProxy"
+location: "L1020"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/TelegramAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

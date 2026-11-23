@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Production Safety Checklist (PROD-SAFETY)"
+community: "Browser — Secure Browser Automation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Production_Safety_Checklist_PROD-SAFETY
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # hermes/skills/i-browser/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

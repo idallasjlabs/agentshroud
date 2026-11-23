@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "ingest_api/config.py"
 location: "L377"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ingest_api/configpy
 ---
 
 # .enforce_retention()
 
 ## Connections
-- [[dot-initialize()_3]] - `calls` [EXTRACTED]
+- [[dot-initialize()]] - `calls` [EXTRACTED]
 - [[DataLedger]] - `method` [EXTRACTED]
-- [[Delete entries older than retention_days          Returns             Number of]] - `rationale_for` [EXTRACTED]
+- [[Delete entries older than retention_days Returns Number of entries deleted]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

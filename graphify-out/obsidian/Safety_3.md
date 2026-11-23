@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-pr.agent.md"
+source_file: "docker/config/hermes/skills/i-pr/SKILL.md"
 type: "document"
-community: "Community 1953"
-location: "L40"
+community: "Skill: Pull Request (PR) Generator"
+location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1953
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Safety
 
 ## Connections
-- [[Content Requirements_3]] - `contains` [EXTRACTED]
+- [[Content Requirements_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1953
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

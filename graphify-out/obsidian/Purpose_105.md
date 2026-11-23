@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Community 1243"
+community: "Pull Request Generator (PR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1243
+  - community/Pull_Request_Generator_PR
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_2]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1243
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

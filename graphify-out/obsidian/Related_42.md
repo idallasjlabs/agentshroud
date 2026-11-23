@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 287"
-location: "L87"
+community: "sidecar.py"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_287
+  - community/sidecarpy
 ---
 
 # Related
 
 ## Connections
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[egress_filter.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_287
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

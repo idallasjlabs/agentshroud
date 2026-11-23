@@ -1,19 +1,19 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: "docs/architecture/adr/ADR-001-transparent-proxy-vs-agent-modification.md"
 type: "document"
-community: "Community 236"
-location: "L17"
+community: "ADR-001: Transparent Proxy vs Agent Modification"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_236
+  - community/ADR-001_Transparent_Proxy_vs_Agent_Modification
 ---
 
 # Decision
 
 ## Connections
-- [[ADR-006 Multi-Runtime Container Support]] - `contains` [EXTRACTED]
-- [[Cisco AnyConnect VPN Networking Fix (col0 vmnet route)]] - `references` [EXTRACTED]
-- [[Runtime Abstraction Layer]] - `references` [EXTRACTED]
+- [[ADR-001 Transparent Proxy vs Agent Modification]] - `contains` [EXTRACTED]
+- [[Implementation Status]] - `contains` [EXTRACTED]
+- [[Implementation Strategy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_236
+#graphify/document #graphify/EXTRACTED #community/ADR-001_Transparent_Proxy_vs_Agent_Modification

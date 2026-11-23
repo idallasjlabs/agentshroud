@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "Community 11"
+community: "TrustConfig"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/TrustConfig
 ---
 
 # trust_db()
 
 ## Connections
 - [[Create a temporary trust database.]] - `rationale_for` [EXTRACTED]
+- [[fixture_135]] - `references` [EXTRACTED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

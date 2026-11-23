@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "Community 14"
+community: "test_telegram_proxy_inbound.py"
 location: "L675"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_14
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # Return True if message originates from a group or supergroup chat.
 
 ## Connections
-- [[._is_group_message()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_group_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_14
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

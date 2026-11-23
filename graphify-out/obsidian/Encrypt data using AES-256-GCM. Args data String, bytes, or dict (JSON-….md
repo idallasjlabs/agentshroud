@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/encrypted_store.py"
+type: "rationale"
+community: "EncryptedStore"
+location: "L117"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/EncryptedStore
+---
+
+# Encrypt data using AES-256-GCM. Args: data: String, bytes, or dict (JSON-…
+
+## Connections
+- [[dot-encrypt()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

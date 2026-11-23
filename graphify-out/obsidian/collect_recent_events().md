@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "Community 614"
+community: "soc/models.py"
 location: "L203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/soc/modelspy
 ---
 
 # collect_recent_events()
 
 ## Connections
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
 - [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - `rationale_for` [EXTRACTED]
-- [[SecurityEvent]] - `references` [EXTRACTED]
-- [[TestCollectRecentEvents]] - `calls` [EXTRACTED]
+- [[SecurityEvent]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[_map_severity()]] - `calls` [EXTRACTED]
 - [[event_adapter.py]] - `contains` [EXTRACTED]
 - [[from_audit_chain_entry()]] - `calls` [EXTRACTED]
 - [[get_egress_log()]] - `calls` [EXTRACTED]
 - [[get_security_events()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_614
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

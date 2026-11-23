@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TelegramAPIProxy (14)"
+community: "TestPromptProtection"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_14
+  - community/TestPromptProtection
 ---
 
 # .test_credential_redaction()
@@ -15,4 +15,4 @@ tags:
 - [[Test redaction of credential patterns.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_14
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

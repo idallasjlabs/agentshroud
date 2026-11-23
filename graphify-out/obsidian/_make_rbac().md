@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_privacy_policy.py"
 type: "code"
-community: "Community 97"
+community: "PrivacyPolicyEnforcer"
 location: "L26"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_97
+  - community/PrivacyPolicyEnforcer
 ---
 
 # _make_rbac()
 
 ## Connections
-- [[.test_collaborator_allowed_shared_service()]] - `calls` [EXTRACTED]
-- [[.test_group_member_allowed_group_only_service()]] - `calls` [EXTRACTED]
-- [[.test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACConfig_2]] - `references` [EXTRACTED]
+- [[dot-test_collaborator_allowed_shared_service()]] - `calls` [EXTRACTED]
+- [[dot-test_group_member_allowed_group_only_service()]] - `calls` [EXTRACTED]
+- [[dot-test_non_group_member_blocked_from_group_only_service()]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[Role]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[rbac()_3]] - `calls` [EXTRACTED]
+- [[rbac()]] - `calls` [EXTRACTED]
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_97
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

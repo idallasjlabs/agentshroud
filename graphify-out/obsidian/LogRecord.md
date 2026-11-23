@@ -1,26 +1,16 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: ""
 type: "code"
-community: "Community 229"
-location: "L65"
+community: "deep_security_test"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_229
+  - graphify/EXTRACTED
+  - community/deep_security_test
 ---
 
 # LogRecord
 
 ## Connections
-- [[.filter()]] - `references` [EXTRACTED]
-- [[AlertTelegramRelay]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[EventBus]] - `uses` [INFERRED]
-- [[GroupRegistry]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_229
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

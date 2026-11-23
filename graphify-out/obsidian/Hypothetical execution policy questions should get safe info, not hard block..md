@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "asyncio"
 location: "L3050"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/asyncio
 ---
 
 # Hypothetical execution policy questions should get safe info, not hard block.
 
 ## Connections
-- [[.test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

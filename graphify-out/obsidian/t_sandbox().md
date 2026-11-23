@@ -2,16 +2,18 @@
 source_file: "gateway/ingest_api/main.py"
 type: "code"
 community: "deep_security_test"
-location: "L3418"
+location: "L3423"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/deep_security_test
 ---
 
 # t_sandbox()
 
 ## Connections
+- [[FileSandbox]] - `calls` [EXTRACTED]
+- [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[deep_security_test()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/deep_security_test
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "rationale"
-community: "Community 801"
+community: "test_dashboard_endpoints.py"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/test_dashboard_endpointspy
 ---
 
 # When pipeline exists, stats should reflect its data.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_proxy_status_includes_pipeline_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_801
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboard_endpointspy

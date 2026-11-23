@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L116"
+community: "EgressFilter"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/EgressFilter
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[EgressFilterConfig]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

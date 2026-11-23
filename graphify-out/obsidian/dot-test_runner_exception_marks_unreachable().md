@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "LOW Findings"
+community: "run_multi_host"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LOW_Findings
+  - community/run_multi_host
 ---
 
 # .test_runner_exception_marks_unreachable()
 
 ## Connections
 - [[TestRunMultiHost]] - `method` [EXTRACTED]
+- [[_boom()_1]] - `indirect_call` [INFERRED]
 - [[run_multi_host()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LOW_Findings
+#graphify/code #graphify/EXTRACTED #community/run_multi_host

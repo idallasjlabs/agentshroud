@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 81"
+community: "test_http_proxy_coverage.py"
 location: "L597"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/test_http_proxy_coveragepy
 ---
 
 # _capture_scans()
 
 ## Connections
-- [[HTTPConnectProxy_1]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy]] - `uses` [INFERRED]
+- [[_fake_scan()]] - `indirect_call` [INFERRED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 - [[test_relay_and_scan_idle_timeout_no_data_no_scan()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_limit_reached_scans_once()]] - `calls` [EXTRACTED]
@@ -22,4 +23,4 @@ tags:
 - [[test_relay_and_scan_swallows_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_relay_and_scan_tls_tunnel_skips_ciphertext_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "test_group_rbac.py"
 location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/test_group_rbacpy
 ---
 
 # .test_owner_unrestricted_matches_dm_behavior()
@@ -15,4 +15,4 @@ tags:
 - [[Owner group-context check must match standard can_use_tool result.]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerGroupContext]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/test_group_rbacpy

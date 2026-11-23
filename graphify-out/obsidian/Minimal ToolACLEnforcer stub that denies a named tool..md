@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "rationale"
-community: "Community 1278"
+community: "test_llm_proxy.py"
 location: "L538"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1278
+  - community/test_llm_proxypy
 ---
 
 # Minimal ToolACLEnforcer stub that denies a named tool.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeToolACL]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1278
+#graphify/rationale #graphify/EXTRACTED #community/test_llm_proxypy

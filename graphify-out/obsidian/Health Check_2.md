@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 580"
-location: "L88"
+community: "Step-by-Step Installation"
+location: "L385"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/Step-by-Step_Installation
 ---
 
 # Health Check
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[Step 7 Verify Installation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

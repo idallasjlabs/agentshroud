@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "Community 124"
+community: "ApprovalRequest"
 location: "L284"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_124
+  - community/ApprovalRequest
 ---
 
 # TestGroupApprovalRouterDefaultSend
 
 ## Connections
-- [[.test_default_send_stub_returns_ok()]] - `method` [EXTRACTED]
-- [[.test_router_works_without_send_fn()]] - `method` [EXTRACTED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
+- [[dot-test_default_send_stub_returns_ok()]] - `method` [EXTRACTED]
+- [[dot-test_router_works_without_send_fn()]] - `method` [EXTRACTED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[Cover the no-op _default_send stub used when no transport is injected.]] - `rationale_for` [EXTRACTED]
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_124
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

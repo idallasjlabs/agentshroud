@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "test_mfa_guard.py"
 location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_mfa_guardpy
 ---
 
 # ._prune_used()
 
 ## Connections
-- [[dot-verify()_1]] - `calls` [EXTRACTED]
+- [[dot-verify()]] - `calls` [EXTRACTED]
 - [[Drop replay records older than the accepted window (bounded memory).]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
+- [[MFAGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

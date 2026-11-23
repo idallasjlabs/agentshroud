@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ssh-config.md"
+source_file: "docs/vault/03 - Configuration/seccomp-profiles.md"
 type: "document"
-community: "Community 799"
-location: "L51"
+community: "Seccomp Profiles"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_799
+  - community/Seccomp_Profiles
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Config]] - `contains` [EXTRACTED]
+- [[Seccomp Profiles]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_799
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L32"
+community: "LogBuffer"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/LogBuffer
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[Initialize sanitizer          Args             config PII configuration from a]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer_3]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/LogBuffer

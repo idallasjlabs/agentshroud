@@ -1,34 +1,33 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 20
 ---
 
 # AgentShroud Operations Cheat Sheet
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[AgentShroud Data Dictionary]] - document - docs/data/data-dictionary.md
-- [[Approval Decision Criteria]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[Approval Workflows]] - document - skills/custom/securebrowser/references/security-policies.md
-- [[ApprovalRequest_4]] - document - docs/data/data-dictionary.md
-- [[AuditEntry]] - document - docs/data/data-dictionary.md
-- [[Core Audit Entities]] - document - docs/data/data-dictionary.md
-- [[DNSQuery]] - document - docs/data/data-dictionary.md
-- [[Data Classification]] - document - docs/data/data-dictionary.md
-- [[Data Retention Policies]] - document - docs/data/data-dictionary.md
-- [[InspectionResult_1]] - document - docs/data/data-dictionary.md
-- [[Network Security Entities]] - document - docs/data/data-dictionary.md
-- [[RateLimitBucket]] - document - docs/data/data-dictionary.md
-- [[Relationship Diagram]] - document - docs/data/data-dictionary.md
-- [[Runtime State Entities]] - document - docs/data/data-dictionary.md
-- [[Security Management Entities]] - document - docs/data/data-dictionary.md
-- [[SessionState]] - document - docs/data/data-dictionary.md
-- [[TrustLevel_3]] - document - docs/data/data-dictionary.md
-- [[URLAnalysisResult]] - document - docs/data/data-dictionary.md
-- [[data-dictionary]] - document - docs/data/data-dictionary.md
+- [[AgentShroud Operations Cheat Sheet]] - document - CHEATSHEET.md
+- [[CHEATSHEET_6]] - document - CHEATSHEET.md
+- [[Colima VM]] - document - CHEATSHEET.md
+- [[Container Basics]] - document - CHEATSHEET.md
+- [[Hermes Agent Management]] - document - CHEATSHEET.md
+- [[Hermes Bot]] - concept - README.md
+- [[Hermes Control Interface (HCI)]] - concept - CHEATSHEET.md
+- [[Host IPs (extra_hosts)]] - document - CHEATSHEET.md
+- [[Key Paths]] - document - CHEATSHEET.md
+- [[Kill Switch (Emergency)]] - document - CHEATSHEET.md
+- [[Network Diagnostics]] - document - CHEATSHEET.md
+- [[OpenClaw (Bot) Management]] - document - CHEATSHEET.md
+- [[SOC API]] - concept - CHEATSHEET.md
+- [[SOC API — Common Queries]] - document - CHEATSHEET.md
+- [[Secrets_3]] - document - CHEATSHEET.md
+- [[Security Scanners]] - document - CHEATSHEET.md
+- [[Telegram Bot Commands (Owner)]] - document - CHEATSHEET.md
+- [[Tests_5]] - document - CHEATSHEET.md
+- [[Upgrades & Rollbacks]] - document - CHEATSHEET.md
+- [[Web Management UI]] - document - CHEATSHEET.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,11 +37,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud A Transparent Proxy Framework for Enterprise Governance of Autonomous AI Agents]]
-- 1 edge to [[_COMMUNITY_Himalaya Email CLI]]
-- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
+- 1 edge to [[_COMMUNITY_Quickstart]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Security Policy]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ README]]
 
 ## Top bridge nodes
-- [[AgentShroud Data Dictionary]] - degree 9, connects to 1 community
-- [[Network Security Entities]] - degree 5, connects to 1 community
-- [[Approval Workflows]] - degree 3, connects to 1 community
+- [[AgentShroud Operations Cheat Sheet]] - degree 20, connects to 2 communities
+- [[Hermes Bot]] - degree 2, connects to 1 community

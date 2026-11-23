@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Community 2053"
-location: "L27"
+community: "fastapi.md"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2053
+  - community/fastapimd
 ---
 
 # Where Used
 
 ## Connections
-- [[spaCy]] - `contains` [EXTRACTED]
+- [[FastAPI_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2053
+#graphify/document #graphify/EXTRACTED #community/fastapimd

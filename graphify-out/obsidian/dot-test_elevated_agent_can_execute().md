@@ -12,7 +12,8 @@ tags:
 # .test_elevated_agent_can_execute()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestProxyPermissions]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/graphify/references/exports.md"
 type: "document"
-community: "10. Troubleshooting"
+community: "graphify reference: extra exports and benchmark"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/10_Troubleshooting
+  - community/graphify_reference_extra_exports_and_benchmark
 ---
 
 # hermes/skills/graphify/references/exports.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[graphify reference extra exports and benchmark]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting
+#graphify/document #graphify/EXTRACTED #community/graphify_reference_extra_exports_and_benchmark

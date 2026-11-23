@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 17"
-location: "L31"
+community: "middleware.py"
+location: "L22"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/middlewarepy
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

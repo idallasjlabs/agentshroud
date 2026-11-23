@@ -1,18 +1,18 @@
 ---
 source_file: "skills/custom/browser-fetch/browser-fetch.js"
 type: "code"
-community: "Community 193"
+community: "browser-fetch.js"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_193
+  - community/browser-fetchjs
 ---
 
 # browserFetch()
 
 ## Connections
 - [[appendLog()_3]] - `calls` [EXTRACTED]
-- [[browser-fetch.js]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_193
+#graphify/code #graphify/EXTRACTED #community/browser-fetchjs

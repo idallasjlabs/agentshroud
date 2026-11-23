@@ -1,0 +1,29 @@
+---
+type: community
+members: 6
+---
+
+# Phase 2: Development Tools
+
+**Members:** 6 nodes
+
+## Members
+- [[Additional Dev Tools_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Docker & Docker Compose_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Git Configuration_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Node.js (for OpenClaw & AgentShroud)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Phase 2 Development Tools_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+- [[Python (for testing tools)_1]] - document - docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/Phase_2_Development_Tools
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]]
+
+## Top bridge nodes
+- [[Phase 2 Development Tools_1]] - degree 6, connects to 1 community

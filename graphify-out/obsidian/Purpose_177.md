@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docker/config/hermes/skills/i-ti/README.md"
 type: "document"
-community: "Community 1360"
-location: "L15"
+community: "Technical Illustrator (i-ti)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1360
+  - community/Technical_Illustrator_i-ti
 ---
 
 # Purpose
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1360
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

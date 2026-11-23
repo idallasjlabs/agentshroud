@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: ""
 type: "code"
-community: "Community 216"
-location: "L64"
+community: "test_e2e_proxy.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_216
+  - graphify/EXTRACTED
+  - community/test_e2e_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[.__init__()_79]] - `references` [EXTRACTED]
-- [[ContextSegment]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[SystemPromptFingerprint]] - `uses` [INFERRED]
+- [[dot-get_stats()_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_216
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

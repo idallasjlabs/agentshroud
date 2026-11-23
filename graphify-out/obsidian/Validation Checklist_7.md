@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ti.md"
+source_file: ".agents/agents/i-mm.md"
 type: "document"
-community: "Community 893"
-location: "L289"
+community: "Skill: Mindmap Architect (MM)"
+location: "L323"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_893
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_893
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

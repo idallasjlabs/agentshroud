@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/tests/test_edge_approvals.py"
 type: "code"
-community: "MiddlewareManager (6)"
-location: "L36"
+community: "TestTelegramDispatch"
+location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_6
+  - community/TestTelegramDispatch
 ---
 
 # ._run()
 
 ## Connections
-- [[CompletedProcess_2]] - `references` [EXTRACTED]
-- [[ContainerEngine]] - `method` [EXTRACTED]
-- [[Run a CLI command and return the result.]] - `rationale_for` [EXTRACTED]
-- [[Start a container. Returns container id.]] - `rationale_for` [EXTRACTED]
+- [[dot-_proxy()]] - `calls` [EXTRACTED]
+- [[dot-_update()]] - `calls` [EXTRACTED]
+- [[dot-test_non_owner_tap_is_flagged_not_owner()]] - `calls` [EXTRACTED]
+- [[dot-test_owner_tap_reaches_edge_and_is_not_forwarded()]] - `calls` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestTelegramDispatch]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_6
+#graphify/code #graphify/EXTRACTED #community/TestTelegramDispatch

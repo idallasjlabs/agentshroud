@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "KeyVaultConfig"
-location: "L88"
+community: "InstructionEnvelope"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/InstructionEnvelope
 ---
 
 # .wrap_tool_result()
@@ -17,4 +17,4 @@ tags:
 - [[EnvelopeSigner]] - `method` [EXTRACTED]
 - [[InstructionEnvelope]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/InstructionEnvelope

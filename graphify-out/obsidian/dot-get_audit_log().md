@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
-location: "L421"
+community: "KeyVault"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/KeyVault
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[Return complete audit log]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[KeyAuditEvent]] - `references` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/KeyVault

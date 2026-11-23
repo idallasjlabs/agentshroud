@@ -1,20 +1,55 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+members: 42
 ---
 
 # TestPathIsolationManager
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[Authentication required]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Permission denied]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[Skill validation failed]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[clawhub command not found]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
-- [[🆘 Troubleshooting]] - document - docs/reference/PUBLISH-TO-CLAWHUB.md
+- [[dot-config()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-manager()_1]] - code - gateway/tests/test_path_isolation.py
+- [[dot-temp_dir()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_allow_own_namespace_access()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_already_isolated_paths_not_rewritten()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_block_base_directory_access()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_block_cross_user_access()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_cleanup_abandoned_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_get_stats()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_initialization()_1]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_path_rewriting_no_rewrite_needed()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_path_rewriting_temp_files()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_register_user_session()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_user_id_sanitization()]] - code - gateway/tests/test_path_isolation.py
+- [[Create path isolation manager for testing.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Create temporary directory for testing.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Create test configuration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test allowing access to own namespace.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocking cross-user namespace access.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test blocking direct access to base agentshroud directory.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test cleanup of abandoned user directories.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test ending user session.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting active users.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting statistics.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test getting user temp path.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test manager initialization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path isolation manager.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path rewriting for tmp files.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test path rewriting for nested tmp paths.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test paths that don't need rewriting.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test that active user directories are not cleaned up.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test that already isolated paths are not double-rewritten.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
+- [[fixture_59]] - code
+- [[patch_5]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +59,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Deployment Runbook — AgentShroud]]
+- 2 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 2 edges to [[_COMMUNITY_PathIsolationManager]]
+- 1 edge to [[_COMMUNITY_PathRewriteResult]]
 
 ## Top bridge nodes
-- [[🆘 Troubleshooting]] - degree 5, connects to 1 community
+- [[TestPathIsolationManager]] - degree 23, connects to 3 communities
+- [[dot-config()]] - degree 4, connects to 1 community
+- [[dot-manager()_1]] - degree 4, connects to 1 community

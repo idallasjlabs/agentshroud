@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "TestMultipartOutboundPipeline"
-location: "L86"
+community: "OutputCanary"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultipartOutboundPipeline
+  - community/OutputCanary
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `references` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[Initialize the Output Canary System. Args config Optional configuration. Uses…]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultipartOutboundPipeline
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-_classify_heuristic()]] - `calls` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
-- [[Pattern_2]] - `references` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
+- [[Pattern_5]] - `references` [EXTRACTED]
 - [[Score a single signal pattern. Returns 0.0–1.0.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

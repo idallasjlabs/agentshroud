@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_stress.py"
+source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "Community 30"
-location: "L30"
+community: "EnhancedApprovalQueue"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/EnhancedApprovalQueue
 ---
 
 # store()
 
 ## Connections
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[test_approval_stress.py]] - `contains` [EXTRACTED]
+- [[EdgeStore]] - `uses` [INFERRED]
+- [[fixture_78]] - `references` [EXTRACTED]
+- [[test_edge_jwt.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

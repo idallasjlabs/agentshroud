@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-qa.md"
+source_file: "docker/config/openclaw/skills/i-qa/SKILL.md"
 type: "document"
-community: "Community 985"
-location: "L253"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
+location: "L248"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_985
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 ---
 
 # H.1 Pause Glue Jobs Before Testing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[H. Service Control for Production Testing_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_985
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT

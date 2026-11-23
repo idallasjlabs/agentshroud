@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "FileSandbox"
-location: "L409"
+community: "SecureBrowser"
+location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/SecureBrowser
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
-- [[FileOperation]] - `references` [EXTRACTED]
-- [[FileSandbox]] - `method` [EXTRACTED]
+- [[Return complete audit log_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

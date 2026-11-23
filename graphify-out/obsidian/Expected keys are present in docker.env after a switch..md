@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "Community 145"
+community: "._run_and_read"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_145
+  - community/_run_and_read
 ---
 
 # Expected keys are present in docker/.env after a switch.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSwitchModelEnvKeys]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_145
+#graphify/rationale #graphify/EXTRACTED #community/_run_and_read

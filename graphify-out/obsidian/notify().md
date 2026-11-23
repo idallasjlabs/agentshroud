@@ -1,20 +1,17 @@
 ---
-source_file: "browser-extension/background.js"
+source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "Community 464"
-location: "L45"
+community: "EnhancedApprovalQueue"
+location: "L57"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_464
+  - graphify/INFERRED
+  - community/EnhancedApprovalQueue
 ---
 
 # notify()
 
 ## Connections
-- [[background.js]] - `references` [EXTRACTED]
-- [[clipPage()]] - `calls` [EXTRACTED]
-- [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[reportResult()]] - `calls` [EXTRACTED]
+- [[svc()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_464
+#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue

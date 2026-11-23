@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Community 2083"
-location: "L6"
+community: "auth.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2083
+  - community/authpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2083
+#graphify/document #graphify/EXTRACTED #community/authpy

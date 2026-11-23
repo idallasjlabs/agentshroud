@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "TestSecurityPipelineChainLatency"
+community: "PIIConfig"
 location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityPipelineChainLatency
+  - community/PIIConfig
 ---
 
 # .test_100_outbound_messages_under_5s()
 
 ## Connections
-- [[100 messages through process_inbound in under 5 seconds.]] - `rationale_for` [EXTRACTED]
+- [[100 messages through process_outbound in under 5 seconds.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `method` [EXTRACTED]
+- [[asyncio_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityPipelineChainLatency
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

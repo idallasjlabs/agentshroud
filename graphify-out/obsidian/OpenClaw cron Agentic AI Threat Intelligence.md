@@ -1,13 +1,13 @@
 ---
 source_file: "docker/bots/openclaw/config/cron/jobs.json"
 type: "code"
-community: "Community 1675"
+community: "OpenClaw cron: Agentic AI Threat Intelligence"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1675
+  - community/OpenClaw_cron_Agentic_AI_Threat_Intelligence
 ---
 
 # OpenClaw cron: Agentic AI Threat Intelligence
 
-#graphify/code #graphify/EXTRACTED #community/Community_1675
+#graphify/code #graphify/EXTRACTED #community/OpenClaw_cron_Agentic_AI_Threat_Intelligence

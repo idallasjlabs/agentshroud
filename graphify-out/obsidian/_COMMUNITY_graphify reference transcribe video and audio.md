@@ -1,19 +1,16 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 3
 ---
 
 # graphify reference: transcribe video and audio
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[Current Status_4]] - document - docs/testing/README.md
-- [[Planned Documents_4]] - document - docs/testing/README.md
-- [[Testing Documentation]] - document - docs/testing/README.md
-- [[testingREADME]] - document - docs/testing/README.md
+- [[dot-agentsskillsgraphifyreferencestranscribe]] - document - .agents/skills/graphify/references/transcribe.md
+- [[Step 2.5 - Transcribe video  audio files (only if video files detected)]] - document - .agents/skills/graphify/references/transcribe.md
+- [[graphify reference transcribe video and audio]] - document - .agents/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

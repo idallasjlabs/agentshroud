@@ -1,17 +1,21 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "soc/models.py"
 location: "L130"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - graphify/INFERRED
+  - community/soc/modelspy
 ---
 
 # .blocked()
 
 ## Connections
-- [[ScanResult_4]] - `method` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `indirect_call` [INFERRED]
+- [[dot-_process_outbound_core()]] - `indirect_call` [INFERRED]
+- [[ScanResult_2]] - `method` [EXTRACTED]
+- [[from_egress_attempt()]] - `indirect_call` [INFERRED]
+- [[from_pipeline_result()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/INFERRED #community/soc/modelspy

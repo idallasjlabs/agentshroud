@@ -1,17 +1,14 @@
 ---
 source_file: "docker/bots/hermes/patch_slack_session_recreate.py"
 type: "code"
-community: "Community 150"
+community: "patch_slack_session_recreate.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_150
+  - community/patch_slack_session_recreatepy
 ---
 
 # patch_slack_session_recreate.py
 
-## Connections
-- [[aiohttp ClientSession closed-session crash-loop fix (partial)]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_150
+#graphify/code #graphify/EXTRACTED #community/patch_slack_session_recreatepy

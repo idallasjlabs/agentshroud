@@ -1,24 +1,20 @@
 ---
 type: community
-cohesion: 0.42
-members: 9
+members: 7
 ---
 
 # 7. Pi-hole DNS Security Layer (Built-In)
 
-**Cohesion:** 0.42 - moderately connected
-**Members:** 9 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[_real_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[_stale_callback_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[_stale_edit_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_answer_callback_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_answer_callback_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_edit_decision_message_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_edit_decision_message_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_egress_callback_stale.py]] - code - gateway/tests/test_egress_callback_stale.py
-- [[test_stale_detectors()]] - code - gateway/tests/test_egress_callback_stale.py
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[AgentShroud Web Console Integration]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Architecture]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Configuration_1]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Default Blocklists (Auto-Updated)]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Deliverables]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
+- [[Design Philosophy]] - document - docs/planning/v0.8/v0.8.0-release-plan.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,12 +24,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_Critical Findings]]
-- 4 edges to [[_COMMUNITY_AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist (3)]]
+- 1 edge to [[_COMMUNITY_🛡️ AgentShroud Release Plan]]
 
 ## Top bridge nodes
-- [[test_egress_callback_stale.py]] - degree 11, connects to 2 communities
-- [[test_stale_detectors()]] - degree 6, connects to 1 community
-- [[test_answer_callback_real_error_still_logs_error()]] - degree 3, connects to 1 community
-- [[test_answer_callback_stale_logs_debug_not_error()]] - degree 3, connects to 1 community
-- [[test_edit_decision_message_real_error_still_logs_error()]] - degree 3, connects to 1 community
+- [[7. Pi-hole DNS Security Layer (Built-In)]] - degree 7, connects to 1 community

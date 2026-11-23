@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L2092"
+community: "fake_urlopen"
+location: "L3411"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/fake_urlopen
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_show_high_level_policy_question_gets_safe_guidance()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

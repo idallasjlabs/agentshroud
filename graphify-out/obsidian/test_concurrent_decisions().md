@@ -1,19 +1,22 @@
 ---
 source_file: "gateway/tests/test_approval_queue.py"
 type: "code"
-community: "Community 115"
+community: "ApprovalRequest"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_115
+  - community/ApprovalRequest
 ---
 
 # test_concurrent_decisions()
 
 ## Connections
-- [[ApprovalRequest_3]] - `calls` [EXTRACTED]
+- [[ApprovalRequest]] - `uses` [INFERRED]
 - [[Test that concurrent decision attempts are handled correctly]] - `rationale_for` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
+- [[decide_approve()]] - `contains` [EXTRACTED]
+- [[decide_reject()]] - `contains` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_115
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

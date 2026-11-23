@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
+source_file: "docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md"
 type: "document"
-community: "Community 1210"
-location: "L27"
+community: "GATEWAY_OP_PROXY_URL"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1210
+  - community/GATEWAY_OP_PROXY_URL
 ---
 
 # Set In
 
 ## Connections
-- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
+- [[GATEWAY_OP_PROXY_URL_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1210
+#graphify/document #graphify/EXTRACTED #community/GATEWAY_OP_PROXY_URL

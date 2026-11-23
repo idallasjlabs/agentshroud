@@ -16,6 +16,8 @@ tags:
 - [[_chain_events()]] - `calls` [EXTRACTED]
 - [[_make_live_db()]] - `calls` [EXTRACTED]
 - [[archive_old_events()]] - `calls` [EXTRACTED]
-- [[audit.db uses SQLite's default DELETE journal mode, which requires         an ex]] - `rationale_for` [EXTRACTED]
+- [[audit.db uses SQLite's default DELETE journal mode, which requires an exclusive…]] - `rationale_for` [EXTRACTED]
+- [[hold_write_lock()]] - `indirect_call` [INFERRED]
+- [[release_after_delay()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/archive_old_events

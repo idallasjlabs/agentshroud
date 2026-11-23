@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/legal/COMMUNICATION-TEMPLATES.md"
 type: "document"
-community: "Community 1251"
+community: "COMMUNICATION-TEMPLATES.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1251
+  - community/COMMUNICATION-TEMPLATESmd
 ---
 
 # COMMUNICATION-TEMPLATES.md
@@ -17,6 +17,5 @@ tags:
 - [[Option 2 — Compact Trademark Notice]] - `references` [EXTRACTED]
 - [[Option 3 — Full Collaborator Trademark Notice]] - `references` [EXTRACTED]
 - [[Option 4 — Documentation Footer Trademark Notice]] - `references` [EXTRACTED]
-- [[TRADEMARK]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1251
+#graphify/document #graphify/EXTRACTED #community/COMMUNICATION-TEMPLATESmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "TestEnforceDefaults"
+community: "TestObservatoryMode"
 location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/TestObservatoryMode
 ---
 
 # .test_get_module_mode_respect_global_override()
@@ -16,4 +16,4 @@ tags:
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

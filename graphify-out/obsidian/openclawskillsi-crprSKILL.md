@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-crpr/SKILL.md"
 type: "document"
-community: "Skill: Create PR with Pre-Flight Audit (CRPR) (2)"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR_2
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # openclaw/skills/i-crpr/SKILL.md
 
 ## Connections
-- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

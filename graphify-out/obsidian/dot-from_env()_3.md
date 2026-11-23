@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/killswitch_config.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L144"
+community: "KillSwitchConfig"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/KillSwitchConfig
 ---
 
 # .from_env()
 
 ## Connections
-- [[Build an MFAGuard from environment variables  Docker secret file.          Reco]] - `rationale_for` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
-- [[_truthy()]] - `calls` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
+- [[dot-__init__()_220]] - `calls` [EXTRACTED]
+- [[KillSwitchConfig]] - `method` [EXTRACTED]
+- [[Load configuration from environment variables._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig

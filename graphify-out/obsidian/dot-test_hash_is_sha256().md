@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # .test_hash_is_sha256()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Content hash should be a valid SHA-256 hex digest.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
+- [[asyncio_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

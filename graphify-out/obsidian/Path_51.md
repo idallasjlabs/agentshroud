@@ -1,19 +1,16 @@
 ---
-source_file: "scripts/export-email-reports.py"
+source_file: ""
 type: "code"
-community: "Community 777"
-location: "L96"
+community: "CollaboratorActivityTracker"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/CollaboratorActivityTracker
 ---
 
 # Path
 
 ## Connections
-- [[_report_date()]] - `calls` [EXTRACTED]
-- [[export_bot()]] - `references` [EXTRACTED]
-- [[main()_21]] - `calls` [EXTRACTED]
+- [[dot-__init__()_156]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

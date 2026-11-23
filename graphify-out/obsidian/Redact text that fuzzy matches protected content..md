@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "Community 928"
+community: "middleware.py"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_928
+  - community/middlewarepy
 ---
 
 # Redact text that fuzzy matches protected content.
 
 ## Connections
-- [[._redact_fuzzy_match()]] - `rationale_for` [EXTRACTED]
+- [[dot-_redact_fuzzy_match()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_928
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

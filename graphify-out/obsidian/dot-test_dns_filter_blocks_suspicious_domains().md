@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "scanner_integration.py"
+community: "TestWebProxySecurityIntegration"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .test_dns_filter_blocks_suspicious_domains()
@@ -17,4 +17,4 @@ tags:
 - [[Test that DNS filter blocks suspicious domains.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

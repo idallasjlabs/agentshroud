@@ -1,22 +1,21 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 565"
-location: "L36"
+community: "trivy_report.py"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_565
+  - community/trivy_reportpy
 ---
 
 # Function Details
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
-- [[generate_summary(report)]] - `contains` [EXTRACTED]
-- [[parse_clamscan_output(output, returncode)]] - `contains` [EXTRACTED]
-- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - `contains` [EXTRACTED]
-- [[save_report(report, log_dir)]] - `contains` [EXTRACTED]
-- [[update_virus_db(freshclam_bin, timeout)]] - `contains` [EXTRACTED]
+- [[generate_summary(report)_1]] - `contains` [EXTRACTED]
+- [[parse_trivy_output(raw)]] - `contains` [EXTRACTED]
+- [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - `contains` [EXTRACTED]
+- [[save_report(report, log_dir)_1]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_565
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

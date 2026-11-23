@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "Community 70"
+community: "test_mfa_guard.py"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_70
+  - community/test_mfa_guardpy
 ---
 
 # test_disabled_by_default_allows_without_factor()
 
 ## Connections
-- [[MFAGuard_2]] - `calls` [EXTRACTED]
+- [[MFAGuard]] - `calls` [EXTRACTED]
+- [[MFAResult]] - `uses` [INFERRED]
 - [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_70
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

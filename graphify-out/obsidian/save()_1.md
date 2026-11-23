@@ -1,27 +1,18 @@
 ---
-source_file: "scripts/generate_branding_assets.py"
+source_file: "browser-extension/options.js"
 type: "code"
-community: "Community 446"
-location: "L60"
+community: "background.js"
+location: "L19"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_446
+  - graphify/INFERRED
+  - community/backgroundjs
 ---
 
 # save()
 
 ## Connections
-- [[Image]] - `references` [EXTRACTED]
-- [[Path_53]] - `references` [EXTRACTED]
-- [[ensure()]] - `calls` [EXTRACTED]
-- [[generate_branding_assets.py]] - `contains` [EXTRACTED]
-- [[generate_email()]] - `calls` [EXTRACTED]
-- [[generate_favicons()]] - `calls` [EXTRACTED]
-- [[generate_feature_icons()]] - `calls` [EXTRACTED]
-- [[generate_icon_sizes()]] - `calls` [EXTRACTED]
-- [[generate_presentation()]] - `calls` [EXTRACTED]
-- [[generate_social()]] - `calls` [EXTRACTED]
-- [[generate_variants()]] - `calls` [EXTRACTED]
+- [[loadConfig()]] - `semantically_similar_to` [INFERRED]
+- [[options.js]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/INFERRED #community/backgroundjs

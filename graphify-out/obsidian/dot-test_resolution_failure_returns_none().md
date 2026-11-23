@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "TestListServices"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/TestListServices
 ---
 
 # .test_resolution_failure_returns_none()
 
 ## Connections
 - [[ServiceManager]] - `calls` [EXTRACTED]
-- [[TestGetEngine]] - `method` [EXTRACTED]
+- [[TestGetEngine_1]] - `method` [EXTRACTED]
+- [[_boom()_15]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/TestListServices

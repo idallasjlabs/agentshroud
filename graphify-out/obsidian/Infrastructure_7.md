@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-sec-offense.agent.md"
+source_file: "docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md"
 type: "document"
-community: "Community 1075"
-location: "L372"
+community: "AgentShroud™ — Project Knowledge Base"
+location: "L98"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1075
+  - community/AgentShroud__Project_Knowledge_Base
 ---
 
 # Infrastructure
 
 ## Connections
-- [[AgentShroud Red Team Adversarial Tester_3]] - `contains` [EXTRACTED]
+- [[Architecture_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1075
+#graphify/document #graphify/EXTRACTED #community/AgentShroud__Project_Knowledge_Base

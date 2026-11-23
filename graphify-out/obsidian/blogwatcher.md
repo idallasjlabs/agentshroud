@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/blogwatcher/SKILL.md"
 type: "document"
-community: "Community 1376"
+community: "blogwatcher/SKILL.md"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1376
+  - community/blogwatcher/SKILLmd
 ---
 
 # blogwatcher
 
 ## Connections
-- [[SKILL_208]] - `contains` [EXTRACTED]
+- [[blogwatcherSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1376
+#graphify/document #graphify/EXTRACTED #community/blogwatcher/SKILLmd

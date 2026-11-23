@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Outbound Infrastructure Content Filter (deny-list for hostnames, tool names, user IDs)"
+community: "TestFalcoSummary"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
+  - community/TestFalcoSummary
 ---
 
 # .test_running_without_alert_dir()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFalcoSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Outbound_Infrastructure_Content_Filter_deny-list_for_hostnames_tool_names_user_IDs
+#graphify/code #graphify/EXTRACTED #community/TestFalcoSummary

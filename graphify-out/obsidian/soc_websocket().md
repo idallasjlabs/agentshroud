@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 6"
+community: "test_soc_realtime_coverage.py"
 location: "L3235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/test_soc_realtime_coveragepy
 ---
 
 # soc_websocket()
 
 ## Connections
-- [[WebSocket_5]] - `references` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
+- [[websocket_5]] - `references` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

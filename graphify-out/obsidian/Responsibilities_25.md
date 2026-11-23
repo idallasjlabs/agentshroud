@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
 type: "document"
-community: "Community 783"
-location: "L15"
+community: "input_normalizer.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_783
+  - community/input_normalizerpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[input_normalizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_783
+#graphify/document #graphify/EXTRACTED #community/input_normalizerpy

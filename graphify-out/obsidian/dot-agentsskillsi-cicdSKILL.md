@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Management Dashboard"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Management_Dashboard
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # .agents/skills/i-cicd/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Management_Dashboard
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md"
 type: "document"
-community: "Community 1559"
+community: "PII Pipeline Errors"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1559
+  - community/PII_Pipeline_Errors
 ---
 
 # PII Not Being Detected
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PII Pipeline Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1559
+#graphify/document #graphify/EXTRACTED #community/PII_Pipeline_Errors

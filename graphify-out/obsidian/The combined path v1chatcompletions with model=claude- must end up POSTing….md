@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_claude_via_openai_path.py"
+type: "rationale"
+community: "test_anthropic_openai_translator.py"
+location: "L66"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/test_anthropic_openai_translatorpy
+---
+
+# The combined path: /v1/chat/completions with model=claude-* must end up POSTing…
+
+## Connections
+- [[test_proxy_rewrites_claude_via_openai_path()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

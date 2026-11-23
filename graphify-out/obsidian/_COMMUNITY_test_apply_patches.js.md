@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.42
-members: 9
+members: 10
 ---
 
 # test_apply_patches.js
 
-**Cohesion:** 0.42 - moderately connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Best-effort plain-language gloss of a 5-field cron expression.]] - rationale - scripts/generate-job-schedule.py
-- [[describe_cron()]] - code - scripts/generate-job-schedule.py
-- [[docker_exec()]] - code - scripts/generate-job-schedule.py
-- [[fmt_ts()]] - code - scripts/generate-job-schedule.py
-- [[generate-job-schedule.py]] - code - scripts/generate-job-schedule.py
-- [[load_hermes_jobs()]] - code - scripts/generate-job-schedule.py
-- [[load_openclaw_jobs()]] - code - scripts/generate-job-schedule.py
-- [[main()_36]] - code - scripts/generate-job-schedule.py
-- [[render_html()]] - code - scripts/generate-job-schedule.py
+- [[PATCHES_FILE]] - code - tests/startup_smoke/test_apply_patches.js
+- [[ROSTER_ENV]] - code - tests/startup_smoke/test_apply_patches.js
+- [[assert()_1]] - code - tests/startup_smoke/test_apply_patches.js
+- [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
+- [[fs_1]] - code - tests/startup_smoke/test_apply_patches.js
+- [[os_1]] - code - tests/startup_smoke/test_apply_patches.js
+- [[path_21]] - code - tests/startup_smoke/test_apply_patches.js
+- [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
+- [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
+- [[{ spawnSync }_1]] - code - tests/startup_smoke/test_apply_patches.js
 
 ## Live Query (requires Dataview plugin)
 

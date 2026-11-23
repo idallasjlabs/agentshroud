@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 538"
-location: "L18"
+community: "sidecar.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_538
+  - community/sidecarpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_538
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

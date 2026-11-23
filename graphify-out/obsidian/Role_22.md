@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-pca.md"
+source_file: ".opencode/agents/i-ab.md"
 type: "document"
-community: "Community 1220"
-location: "L10"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1220
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1220
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "api.py"
 location: "L544"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # check_bot_updates()
@@ -15,7 +15,8 @@ tags:
 - [[Check for updates for the named bot container.]] - `rationale_for` [EXTRACTED]
 - [[_get_engine()]] - `calls` [EXTRACTED]
 - [[_resolve_bot_container()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[check_openclaw_updates()]] - `calls` [EXTRACTED]
+- [[get_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/apipy

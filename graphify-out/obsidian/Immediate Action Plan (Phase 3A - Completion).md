@@ -1,22 +1,22 @@
 ---
 source_file: "docs/security/SECURITY_VALUE_PROPOSITION_REVISED.md"
 type: "document"
-community: "Community 472"
+community: "AgentShroud Security Value Proposition - Revised"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_472
+  - community/AgentShroud_Security_Value_Proposition_-_Revised
 ---
 
 # Immediate Action Plan (Phase 3A - Completion)
 
 ## Connections
 - [[AgentShroud Security Value Proposition - REVISED]] - `contains` [EXTRACTED]
-- [[AgentShroud Security Value Proposition - Revised]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Value Proposition - Revised_1]] - `contains` [EXTRACTED]
 - [[Priority 1 Fix Broken Security (CRITICAL)]] - `contains` [EXTRACTED]
 - [[Priority 2 Add OpenSCAP Scanning (HIGH)]] - `contains` [EXTRACTED]
 - [[Priority 3 Create IEC 62443 Compliance Matrix (HIGH)]] - `contains` [EXTRACTED]
 - [[Priority 4 Create Security Verification Script (HIGH)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_472
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition_-_Revised

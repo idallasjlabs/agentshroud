@@ -1,21 +1,16 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: ""
 type: "code"
-community: "KillSwitchMonitor"
-location: "L268"
+community: "test_cron_jobs_prompts.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/KillSwitchMonitor
+  - graphify/EXTRACTED
+  - community/test_cron_jobs_promptspy
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_monitor()]] - `references` [EXTRACTED]
-- [[KillSwitchConfig_1]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[ModeRequest]] - `uses` [INFERRED]
-- [[SecurityPipeline_1]] - `uses` [INFERRED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

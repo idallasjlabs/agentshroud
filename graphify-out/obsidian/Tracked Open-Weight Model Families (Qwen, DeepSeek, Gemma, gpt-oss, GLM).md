@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/newsletter-model-version-tracker.txt"
 type: "concept"
-community: "Community 373"
+community: "Hermes Cron Jobs Reference & Recreation Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_373
+  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
 ---
 
 # Tracked Open-Weight Model Families (Qwen, DeepSeek, Gemma, gpt-oss, GLM)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Prompt Newsletter — Model Version Tracker]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_373
+#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide

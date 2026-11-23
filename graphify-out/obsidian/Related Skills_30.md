@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "Community 518"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Related Skills
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

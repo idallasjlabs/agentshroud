@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L62"
+community: "GitGuard"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/GitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
-- [[AuditEvent_1]] - `method` [EXTRACTED]
+- [[Args mode 'monitor' (log findings) or 'enforce' (quarantine suspicious files)]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/code #graphify/EXTRACTED #community/GitGuard

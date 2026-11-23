@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-doctor/README.md"
+source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: "wazuh_client.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/wazuh_clientpy
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Doctor (MCPM-DOCTOR)]] - `contains` [EXTRACTED]
+- [[wazuh_client.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/wazuh_clientpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_approval_routing.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ApprovalRequest"
 location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ApprovalRequest
 ---
 
 # .test_extract_chat_id_returns_none_for_non_group()
@@ -16,4 +16,4 @@ tags:
 - [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
 - [[extract_group_chat_id returns None for non-group agent IDs.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

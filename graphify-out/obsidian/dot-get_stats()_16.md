@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "AgentShroud — Master Feature List (Everything Ever Mentioned)"
-location: "L220"
+community: "._check_impl"
+location: "L616"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
+  - community/_check_impl
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_62]] - `references` [EXTRACTED]
-- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
+- [[dot-get_log()]] - `calls` [EXTRACTED]
+- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud__Master_Feature_List_Everything_Ever_Mentioned
+#graphify/code #graphify/EXTRACTED #community/_check_impl

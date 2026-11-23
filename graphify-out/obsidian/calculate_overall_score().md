@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "Community 185"
+community: "test_security_toolchain.py"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_185
+  - community/test_security_toolchainpy
 ---
 
 # calculate_overall_score()
 
 ## Connections
-- [[.test_all_clean()_1]] - `calls` [EXTRACTED]
-- [[.test_empty_summaries()]] - `calls` [EXTRACTED]
-- [[.test_partial_tools()]] - `calls` [EXTRACTED]
-- [[Any_49]] - `references` [EXTRACTED]
-- [[Calculate weighted overall security score.      Args         summaries Dict ma]] - `rationale_for` [EXTRACTED]
+- [[dot-test_all_clean()_1]] - `calls` [EXTRACTED]
+- [[dot-test_empty_summaries()]] - `calls` [EXTRACTED]
+- [[dot-test_partial_tools()]] - `calls` [EXTRACTED]
+- [[Any_23]] - `references` [EXTRACTED]
+- [[Calculate weighted overall security score. Args summaries Dict mapping tool…]] - `rationale_for` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]
-- [[health_report.py]] - `contains` [EXTRACTED]
+- [[health_report.py_2]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_185
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

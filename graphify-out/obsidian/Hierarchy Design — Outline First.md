@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-mm.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 513"
-location: "L72"
+community: "Skill: Mindmap Architect (MM)"
+location: "L70"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Hierarchy Design — Outline First
@@ -16,4 +16,4 @@ tags:
 - [[Outline Template]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

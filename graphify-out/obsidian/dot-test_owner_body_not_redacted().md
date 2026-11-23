@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestPatternDetection"
+community: "TestEmailSend"
 location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPatternDetection
+  - community/TestEmailSend
 ---
 
 # .test_owner_body_not_redacted()
 
 ## Connections
-- [[Allowed (owner) recipient receives the body verbatim — PII scan is skipped.]] - `rationale_for` [EXTRACTED]
+- [[Allowed (owner) recipient receives the body verbatim — PII scan is skipped. The…]] - `rationale_for` [EXTRACTED]
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestEmailSend]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPatternDetection
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

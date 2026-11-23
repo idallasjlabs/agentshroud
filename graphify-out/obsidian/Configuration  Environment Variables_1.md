@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 407"
-location: "L184"
+community: "Function Details"
+location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_407
+  - community/Function_Details
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[http_proxy.py_2]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_407
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/README.md"
+source_file: "docker/config/openclaw/skills/graphify/SKILL.md"
 type: "document"
-community: "Community 58"
+community: "What You Must Do When Invoked"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/What_You_Must_Do_When_Invoked
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_9]] - `contains` [EXTRACTED]
+- [[graphify_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/What_You_Must_Do_When_Invoked

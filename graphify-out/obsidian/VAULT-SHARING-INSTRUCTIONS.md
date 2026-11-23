@@ -1,19 +1,17 @@
 ---
 source_file: "docs/setup/VAULT-SHARING-INSTRUCTIONS.md"
 type: "document"
-community: "Community 696"
+community: "1Password Vault Sharing Instructions"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_696
+  - community/1Password_Vault_Sharing_Instructions
 ---
 
 # VAULT-SHARING-INSTRUCTIONS.md
 
 ## Connections
 - [[1Password Vault Sharing Instructions]] - `contains` [EXTRACTED]
-- [[OpenClaw Bot Container]] - `references` [EXTRACTED]
-- [[SETUP_API_KEYS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_696
+#graphify/document #graphify/EXTRACTED #community/1Password_Vault_Sharing_Instructions

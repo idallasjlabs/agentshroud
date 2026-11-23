@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # SharedMemoryManager Merged Memory Tests
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[Diagram 18 Runbook]] - image - docs/diagrams/images/diagram-18-runbook.svg
-- [[Diagram 19 Incident Response]] - image - docs/diagrams/images/diagram-19-incident-response.svg
+- [[SharedMemoryManager Merged Memory Tests]] - code - gateway/tests/test_shared_memory.py
+- [[SharedMemoryManager Topic-Scoped Memory Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 

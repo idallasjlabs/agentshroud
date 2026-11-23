@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "ContainerSnapshot"
 location: "L855"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/ContainerSnapshot
 ---
 
 # .test_health_report_importable()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

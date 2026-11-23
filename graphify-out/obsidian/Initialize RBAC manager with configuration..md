@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L65"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Initialize RBAC manager with configuration.
 
 ## Connections
-- [[.__init__()_125]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

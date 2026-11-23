@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L67"
+community: "PIIConfig"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SubagentMonitor]] - `method` [EXTRACTED]
-- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
+- [[_FakeAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

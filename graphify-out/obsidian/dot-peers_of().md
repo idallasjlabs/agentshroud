@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "TrustManager"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/TrustManager
 ---
 
 # .peers_of()
@@ -16,4 +16,4 @@ tags:
 - [[CrossBotTrustLedger]] - `method` [EXTRACTED]
 - [[Return the registered peers for bot_name (empty list if none).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

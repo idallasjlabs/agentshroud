@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "GroupApprovalRouter (3)"
+community: "test_telegram_proxy_inbound.py"
 location: "L8865"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter_3
+  - community/test_telegram_proxy_inboundpy
 ---
 
 # .test_mention_case_insensitive()
 
 ## Connections
+- [[dot-_bot_is_mentioned()]] - `calls` [EXTRACTED]
 - [[TestBotIsMentioned]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter_3
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy

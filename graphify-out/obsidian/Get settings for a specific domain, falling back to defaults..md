@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "Community 120"
+community: "WebProxy"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/WebProxy
 ---
 
 # Get settings for a specific domain, falling back to defaults.
 
 ## Connections
-- [[.get_domain_settings()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_domain_settings()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/WebProxy

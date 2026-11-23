@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "First iteration ingests + records; second sees dedup and skips."
-location: "L1598"
+community: "CronStateMonitor"
+location: "L154"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/First_iteration_ingests__records_second_sees_dedup_and_skips
+  - community/CronStateMonitor
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `indirect_call` [INFERRED]
+- [[dot-test_dispatch_failure_does_not_raise()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/First_iteration_ingests__records_second_sees_dedup_and_skips
+#graphify/code #graphify/INFERRED #community/CronStateMonitor

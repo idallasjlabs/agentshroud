@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/turbo-fieldfare-fix-watch.txt"
 type: "concept"
-community: "Community 958"
+community: "Turbo Fieldfare (MLX inference backend)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_958
+  - community/Turbo_Fieldfare_MLX_inference_backend
 ---
 
 # Turbo Fieldfare (MLX inference backend)
@@ -16,4 +16,4 @@ tags:
 - [[Today in AI (Daily Newsletter)]] - `references` [EXTRACTED]
 - [[Turbo Fieldfare GitHub Issue 84 (decoder_consume bug)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_958
+#graphify/concept #graphify/EXTRACTED #community/Turbo_Fieldfare_MLX_inference_backend

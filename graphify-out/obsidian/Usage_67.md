@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-daedalus/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Community 1208"
+community: "Oracle — Feedback Analyst"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1208
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Usage
 
 ## Connections
-- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1208
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

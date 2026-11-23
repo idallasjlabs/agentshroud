@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/cron/prompts/collaborator-report-morning.txt"
 type: "concept"
-community: "Community 212"
+community: "Report Delivery Format Instructions"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_212
+  - community/Report_Delivery_Format_Instructions
 ---
 
 # Contributor Log Read Path (gateway-data primary, memory fallback)
@@ -15,4 +15,4 @@ tags:
 - [[Collaborator Report (Morning) Cron Prompt]] - `shares_data_with` [EXTRACTED]
 - [[Collaborator Report - Evening Job]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_212
+#graphify/concept #graphify/EXTRACTED #community/Report_Delivery_Format_Instructions

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "GroupApprovalRouter"
+community: "BlockingPipeline"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/BlockingPipeline
 ---
 
 # .test_inbound_text_normalized_before_pipeline()
@@ -18,6 +18,6 @@ tags:
 - [[Zero-width obfuscation should be normalized before pipeline evaluation.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/BlockingPipeline

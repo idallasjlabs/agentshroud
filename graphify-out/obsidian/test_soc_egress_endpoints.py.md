@@ -1,18 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "Community 85"
+community: "test_soc_egress_endpoints.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/test_soc_egress_endpointspy
 ---
 
 # test_soc_egress_endpoints.py
 
 ## Connections
-- [[client()_15]] - `contains` [EXTRACTED]
+- [[client()_13]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_manage_egress_add_remove_rule_and_risk()]] - `contains` [EXTRACTED]
 - [[test_manage_egress_emergency_toggle()]] - `contains` [EXTRACTED]
@@ -38,4 +41,4 @@ tags:
 - [[test_soc_scanners_recent_returns_history()]] - `contains` [EXTRACTED]
 - [[test_soc_scanners_recent_status_filter()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_85
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

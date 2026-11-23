@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "MetadataGuard"
 location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/MetadataGuard
 ---
 
 # .check_oversized_headers()
@@ -15,4 +15,4 @@ tags:
 - [[Check if headers exceed size limits.]] - `rationale_for` [EXTRACTED]
 - [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

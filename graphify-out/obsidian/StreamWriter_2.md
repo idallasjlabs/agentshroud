@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 709"
-location: "L174"
+community: "._relay"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_709
+  - community/_relay
 ---
 
 # StreamWriter
 
 ## Connections
-- [[._handle_client()]] - `references` [EXTRACTED]
-- [[._process_connect()]] - `references` [EXTRACTED]
-- [[._relay()]] - `references` [EXTRACTED]
-- [[._relay_and_scan()]] - `references` [EXTRACTED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[dot-_handle_client()]] - `references` [EXTRACTED]
+- [[dot-_process_connect()]] - `references` [EXTRACTED]
+- [[dot-_relay()]] - `references` [EXTRACTED]
+- [[dot-_relay_and_scan()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_709
+#graphify/code #graphify/EXTRACTED #community/_relay

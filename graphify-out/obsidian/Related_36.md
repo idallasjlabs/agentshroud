@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 730"
-location: "L75"
+community: "compose_generator.py"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/compose_generatorpy
 ---
 
 # Related
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

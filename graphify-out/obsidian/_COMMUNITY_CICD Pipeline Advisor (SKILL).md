@@ -1,53 +1,47 @@
 ---
 type: community
-cohesion: 0.11
-members: 38
+members: 34
 ---
 
 # CI/CD Pipeline Advisor (SKILL)
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 38 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[dot-__call__()_6]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-__init__()_89]] - code - gateway/security/rate_limit_guard.py
-- [[dot-__init__()_90]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
-- [[dot-advance()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-check()_2]] - code - gateway/security/rate_limit_guard.py
-- [[dot-get_stats()_7]] - code - gateway/security/rate_limit_guard.py
-- [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
-- [[Build a SecurityPipeline with only the guards needed to exercise the     RateLim]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[Configuration for class`RateLimitGuard`.      All windows are per (agent_id, t]] - rationale - gateway/security/rate_limit_guard.py
-- [[FakeClock]] - code - gateway/tests/test_rate_limit_guard.py
-- [[No injected clock the guard falls back to time.monotonic and still works.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[RateLimitConfig]] - code - gateway/security/rate_limit_guard.py
-- [[RateLimitDecision]] - code - gateway/security/rate_limit_guard.py
-- [[RateLimitGuard]] - code - gateway/security/rate_limit_guard.py
-- [[Record one request for (agent_id, tool) and decide allowblock.          Fail-cl]] - rationale - gateway/security/rate_limit_guard.py
-- [[Structured verdict returned by meth`RateLimitGuard.check`.]] - rationale - gateway/security/rate_limit_guard.py
-- [[_make_pipeline()_2]] - code - gateway/tests/test_rate_limit_guard.py
-- [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
-- [[test_burst_clears_after_burst_window()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_burst_detection_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_default_clock_is_monotonic()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_disabled_never_blocks()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_fail_closed_on_internal_error()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_limits_are_per_agent()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_limits_are_per_tool()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_per_tool_override()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_blocks_and_downstream_not_reached()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_disabled_guard_passthrough()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_pipeline_no_guard_is_unchanged()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_rate_limit_guard.py]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_stats_counts_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_sustained_limit_blocks_on_overflow()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_under_limit_allows()]] - code - gateway/tests/test_rate_limit_guard.py
-- [[test_window_slides_and_allows_again()]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-scripts Numbered Script Library Convention]] - concept - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[AWS Cloud Management & FinOps (README)]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[AWS Cloud Management & FinOps Agent (SKILL)]] - document - docker/config/hermes/skills/i-aws/SKILL.md
+- [[Brand System Components (IdentityColorTypographyVoiceLayoutComponents)]] - concept - docker/config/hermes/skills/i-bs/SKILL.md
+- [[Branding Specialist (BS) (README)]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Branding Specialist (BS) (SKILL)]] - document - docker/config/hermes/skills/i-bs/SKILL.md
+- [[CD Skill (Continuous Delivery pipeline design)]] - document - docker/config/hermes/skills/i-cd/SKILL.md
+- [[CI Skill (Continuous Integration pipeline)]] - document - docker/config/hermes/skills/i-ci/SKILL.md
+- [[CICD Pipeline Advisor (CICD)]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[CICD Pipeline Advisor (README)]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[CICD Pipeline Advisor (SKILL)]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[CICD Quality Gates (execution order)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Code Review (CR) (README)]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Code Review (CR) (SKILL)]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Data Validation (DATA-VAL) Skill]] - document - .agents/skills/i-data/SKILL.md
+- [[Data Validation README]] - document - .agents/skills/i-data/README.md
+- [[Deployment Matrix  (Direct to Prod)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Deployment Matrix (Direct to Prod)]] - concept - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[EBS Performance Analysis Pattern]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[GSDE&G Team (Global Services Digital Enablement & Governance)]] - concept - docker/config/hermes/skills/i-aws/SKILL.md
+- [[GitHub Actions Best Practices_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Production-Specific Review Checklist (blast radius, rollback, Athena cost guard)]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Purpose_87]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Quality Gates  (execution order)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Related Skills_22]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[Review Flags  (block the merge)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Role_120]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Skill CICD Pipeline Advisor (CICD)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Usage_29]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[WCAG AA Contrast Standard]] - concept - docker/config/hermes/skills/i-bs/SKILL.md
+- [[fluenceenergy-ops-data-lakehouse (275TB S3 Data Lake)]] - concept - .agents/skills/i-data/SKILL.md
+- [[hermesskillsi-cicdREADME]] - document - docker/config/hermes/skills/i-cicd/README.md
+- [[hermesskillsi-cicdSKILL]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,11 +51,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_SecurityPipeline (2)]]
-- 2 edges to [[_COMMUNITY_api.py (2)]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
+- 1 edge to [[_COMMUNITY_Claude Code skill catalog (59 skills)]]
 
 ## Top bridge nodes
-- [[_make_pipeline()_2]] - degree 6, connects to 2 communities
-- [[test_pipeline_no_guard_is_unchanged()_1]] - degree 4, connects to 2 communities
-- [[test_rate_limit_guard.py]] - degree 22, connects to 1 community
-- [[FakeClock]] - degree 8, connects to 1 community
+- [[Skill CICD Pipeline Advisor (CICD)_4]] - degree 8, connects to 1 community
+- [[AWS Cloud Management & FinOps Agent (SKILL)]] - degree 5, connects to 1 community
+- [[CICD Pipeline Advisor (README)]] - degree 5, connects to 1 community

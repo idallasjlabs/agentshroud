@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: ""
 type: "code"
-community: "Community 241"
-location: "L49"
+community: "MemoryIntegrityMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_241
+  - community/MemoryIntegrityMonitor
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_76]] - `references` [EXTRACTED]
-- [[._hash_file()]] - `references` [EXTRACTED]
+- [[dot-__init__()_33]] - `references` [EXTRACTED]
+- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
+- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
+- [[dot-scan_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_241
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
+source_file: ""
 type: "code"
-community: "Community 220"
-location: "L59"
+community: "EnhancedApprovalQueue"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/EnhancedApprovalQueue
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()]] - `references` [EXTRACTED]
-- [[parse_clamscan_output()]] - `references` [EXTRACTED]
-- [[run_clamscan()]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
-- [[scan_bytes()]] - `references` [EXTRACTED]
-- [[update_virus_db()]] - `references` [EXTRACTED]
+- [[_decode()]] - `references` [EXTRACTED]
+- [[verify_signature_only()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

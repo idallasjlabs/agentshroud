@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-eightd/README.md"
+source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "Community 90"
+community: "8D Root Cause Analysis"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Purpose
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

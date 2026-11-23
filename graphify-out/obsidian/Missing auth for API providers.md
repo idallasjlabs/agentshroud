@@ -1,18 +1,17 @@
 ---
 source_file: "docker/scripts/README.md"
 type: "document"
-community: "Community 510"
+community: "OpenClaw Management Scripts"
 location: "L249"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_510
+  - community/OpenClaw_Management_Scripts
 ---
 
 # "Missing auth" for API providers
 
 ## Connections
-- [[Troubleshooting_36]] - `contains` [EXTRACTED]
-- [[Troubleshooting_52]] - `contains` [EXTRACTED]
+- [[Troubleshooting_39]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_510
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Management_Scripts

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # .test_pii_in_write_flagged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIScanning]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "rationale"
-community: "Community 122"
+community: "KeyRotationManager"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/KeyRotationManager
 ---
 
 # Check if a specific emergency trigger is enabled.
 
 ## Connections
-- [[.is_emergency_trigger_enabled()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_emergency_trigger_enabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_122
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

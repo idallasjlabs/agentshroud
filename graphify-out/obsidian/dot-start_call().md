@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "What Does OpenClaw Actually Need to Write?"
+community: "MCPAuditTrail"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/What_Does_OpenClaw_Actually_Need_to_Write
+  - community/MCPAuditTrail
 ---
 
 # .start_call()
@@ -16,4 +16,4 @@ tags:
 - [[MCPAuditTrail]] - `method` [EXTRACTED]
 - [[Record the start time of a tool call for duration tracking.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/What_Does_OpenClaw_Actually_Need_to_Write
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

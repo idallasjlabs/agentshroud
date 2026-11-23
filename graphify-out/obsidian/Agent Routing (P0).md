@@ -1,18 +1,18 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 773"
+community: "Fixed"
 location: "L1073"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_773
+  - community/Fixed
 ---
 
 # Agent Routing (P0)
 
 ## Connections
-- [[Fixed]] - `contains` [EXTRACTED]
-- [[Fixed_18]] - `contains` [EXTRACTED]
+- [[Fixed_15]] - `contains` [EXTRACTED]
+- [[Fixed_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_773
+#graphify/document #graphify/EXTRACTED #community/Fixed

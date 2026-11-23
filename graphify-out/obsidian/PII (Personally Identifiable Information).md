@@ -1,24 +1,17 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 91"
+community: "AgentShroud v0.8.0 \"Watchtower\" Release Plan"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/AgentShroud_v080_Watchtower_Release_Plan
 ---
 
 # PII (Personally Identifiable Information)
 
 ## Connections
 - [[AgentShroud Security Architecture]] - `references` [EXTRACTED]
-- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - `references` [EXTRACTED]
 - [[HERMES_SETUP]] - `references` [EXTRACTED]
-- [[access-control-matrix]] - `references` [EXTRACTED]
-- [[audit-specification]] - `references` [EXTRACTED]
-- [[incident-response_1]] - `references` [EXTRACTED]
-- [[setup-guide]] - `references` [EXTRACTED]
-- [[system-requirements]] - `references` [EXTRACTED]
-- [[use-cases]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_91
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower_Release_Plan

@@ -1,0 +1,32 @@
+---
+type: community
+members: 15
+---
+
+# tailscale-serve.sh
+
+**Members:** 15 nodes
+
+## Members
+- [[Gateway hermes-dashboard reverse proxy 502 from hostTailscale]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[cmd_persist()]] - code - scripts/tailscale-serve.sh
+- [[cmd_start()]] - code - scripts/tailscale-serve.sh
+- [[cmd_status()_1]] - code - scripts/tailscale-serve.sh
+- [[cmd_stop()]] - code - scripts/tailscale-serve.sh
+- [[edge_funnel_off()]] - code - scripts/tailscale-serve.sh
+- [[edge_funnel_on()]] - code - scripts/tailscale-serve.sh
+- [[edge_funnel_plan()]] - code - scripts/tailscale-serve.sh
+- [[edge_funnel_status()]] - code - scripts/tailscale-serve.sh
+- [[edge_port_handlers()]] - code - scripts/tailscale-serve.sh
+- [[edge_require_root()]] - code - scripts/tailscale-serve.sh
+- [[edge_validate_ports()]] - code - scripts/tailscale-serve.sh
+- [[hermes-dashboard-relay container (9119 Tailscale bypass of gateway)]] - concept - INCIDENT-2026-10-16-conduit-and-stability.md
+- [[tailscale-serve.sh]] - code - scripts/tailscale-serve.sh
+- [[tailscale-serve.sh script]] - code - scripts/tailscale-serve.sh
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/tailscale-servesh
+SORT file.name ASC
+```

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "rationale"
-community: "Community 614"
+community: "soc/models.py"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_614
+  - community/soc/modelspy
 ---
 
 # Convert a PipelineResult to SecurityEvent.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[from_pipeline_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_614
+#graphify/rationale #graphify/EXTRACTED #community/soc/modelspy

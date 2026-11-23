@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-ci/SKILL.md"
+source_file: ".agents/agents/i-ci.md"
 type: "document"
-community: "Community 117"
-location: "L6"
+community: ".agents/agents/i-ci.md"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/agents/agents/i-cimd
 ---
 
 # Skill: ci
 
 ## Connections
-- [[SKILL_16]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-ci]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-cimd

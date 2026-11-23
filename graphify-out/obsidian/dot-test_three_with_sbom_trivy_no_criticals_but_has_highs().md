@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "OpenSCAP"
+community: "_mock_dir_with_files"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/_mock_dir_with_files
 ---
 
 # .test_three_with_sbom_trivy_no_criticals_but_has_highs()
 
 ## Connections
-- [[TestScoreImageIntegrity_1]] - `method` [EXTRACTED]
+- [[TestScoreImageIntegrity]] - `method` [EXTRACTED]
 - [[_mock_dir_with_files()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenSCAP
+#graphify/code #graphify/EXTRACTED #community/_mock_dir_with_files

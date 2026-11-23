@@ -1,19 +1,16 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 3
 ---
 
 # shared network (sidecar mode bridge)
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[dot-test_empty_files_skipped()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_invalid_then_valid()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_missing_dir_returns_none()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestLoadLatestJson]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[agentshroud-gateway service (sidecar mode, optional scan)]] - code - docker-compose.sidecar.yml
+- [[openclaw service (sidecar mode, exposed normally)]] - code - docker-compose.sidecar.yml
+- [[shared network (sidecar mode bridge)]] - code - docker-compose.sidecar.yml
 
 ## Live Query (requires Dataview plugin)
 
@@ -21,12 +18,3 @@ members: 4
 TABLE source_file, type FROM #community/shared_network_sidecar_mode_bridge
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager (3) (2)]]
-- 1 edge to [[_COMMUNITY_UserSessionManager (3) (2)]]
-
-## Top bridge nodes
-- [[TestLoadLatestJson]] - degree 4, connects to 1 community
-- [[dot-test_empty_files_skipped()]] - degree 2, connects to 1 community
-- [[dot-test_invalid_then_valid()]] - degree 2, connects to 1 community

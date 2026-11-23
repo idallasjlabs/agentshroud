@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-tw.md"
+source_file: "docker/config/openclaw/skills/i-ti/SKILL.md"
 type: "document"
-community: "Community 729"
-location: "L43"
+community: "Skill: Technical Illustrator (TI)"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_729
+  - community/Skill_Technical_Illustrator_TI
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill Technical Writer (TW)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_729
+#graphify/document #graphify/EXTRACTED #community/Skill_Technical_Illustrator_TI

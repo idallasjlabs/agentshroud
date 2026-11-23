@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "Community 36"
+community: "TestConfigValidation"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/TestConfigValidation
 ---
 
 # test_config_validation.py
 
 ## Connections
-- [[ForwardRequest]] - `references` [EXTRACTED]
-- [[RouterConfig]] - `references` [EXTRACTED]
+- [[ForwardRequest]] - `imports` [EXTRACTED]
+- [[RouterConfig]] - `imports` [EXTRACTED]
 - [[TestAllExampleConfigsExist]] - `contains` [EXTRACTED]
 - [[TestConfigValidation]] - `contains` [EXTRACTED]
 - [[TestMinimalConfig]] - `contains` [EXTRACTED]
@@ -21,6 +21,5 @@ tags:
 - [[TestRecommendedConfig]] - `contains` [EXTRACTED]
 - [[_DropInvalidHTTPRequestFilter]] - `imports` [EXTRACTED]
 - [[_parse_env_file()]] - `contains` [EXTRACTED]
-- [[test_cron_jobs_prompts.py]] - `conceptually_related_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_36
+#graphify/code #graphify/EXTRACTED #community/TestConfigValidation

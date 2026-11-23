@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/tmux/scripts/wait-for-text.sh"
+source_file: "skills/openclaw/video-frames/scripts/frame.sh"
 type: "code"
-community: "Community 1064"
+community: "frame.sh"
 location: "L4"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1064
+  - community/framesh
 ---
 
 # usage()
 
 ## Connections
-- [[wait-for-text.sh]] - `defines` [EXTRACTED]
-- [[wait-for-text.sh script]] - `calls` [EXTRACTED]
+- [[frame.sh]] - `defines` [EXTRACTED]
+- [[frame.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1064
+#graphify/code #graphify/EXTRACTED #community/framesh

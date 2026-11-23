@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "_engine"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_engine
 ---
 
 # .test_disconnect_stops_and_removes_bot()
 
 ## Connections
-- [[SimpleNamespace]] - `calls` [EXTRACTED]
-- [[TestKillSwitch_1]] - `method` [EXTRACTED]
+- [[TestKillSwitch]] - `method` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_engine

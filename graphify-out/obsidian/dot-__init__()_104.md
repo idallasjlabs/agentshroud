@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L314"
+community: "CanaryTripwire"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/CanaryTripwire
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuard_1]] - `method` [EXTRACTED]
-- [[_Rule]] - `references` [EXTRACTED]
+- [[CanaryConfig_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

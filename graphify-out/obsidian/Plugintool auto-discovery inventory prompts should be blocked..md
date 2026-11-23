@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "asyncio"
 location: "L4101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/asyncio
 ---
 
 # Plugin/tool auto-discovery inventory prompts should be blocked.
 
 ## Connections
-- [[.test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

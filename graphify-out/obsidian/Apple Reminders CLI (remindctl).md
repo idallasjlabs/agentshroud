@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/apple-reminders/SKILL.md"
 type: "document"
-community: "Community 638"
+community: "Apple Reminders CLI (remindctl)"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_638
+  - community/Apple_Reminders_CLI_remindctl
 ---
 
 # Apple Reminders CLI (remindctl)
@@ -15,9 +15,9 @@ tags:
 - [[Common Commands]] - `contains` [EXTRACTED]
 - [[Date Formats]] - `contains` [EXTRACTED]
 - [[Example Clarifying User Intent]] - `contains` [EXTRACTED]
-- [[SKILL_206]] - `contains` [EXTRACTED]
-- [[Setup_10]] - `contains` [EXTRACTED]
-- [[When NOT to Use]] - `contains` [EXTRACTED]
-- [[When to Use_1]] - `contains` [EXTRACTED]
+- [[Setup_11]] - `contains` [EXTRACTED]
+- [[When NOT to Use_1]] - `contains` [EXTRACTED]
+- [[When to Use_2]] - `contains` [EXTRACTED]
+- [[apple-remindersSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_638
+#graphify/document #graphify/EXTRACTED #community/Apple_Reminders_CLI_remindctl

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/openclaw/himalaya/references/message-composition.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 475"
-location: "L194"
+community: "Canvas Skill"
+location: "L192"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_475
+  - community/Canvas_Skill
 ---
 
 # Tips
 
 ## Connections
-- [[Message Composition with MML (MIME Meta Language)]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_475
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

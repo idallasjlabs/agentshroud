@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "Community 26"
+community: "PathRewriteResult"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/PathRewriteResult
 ---
 
 # path_isolation.py
@@ -15,7 +15,8 @@ tags:
 - [[PathIsolationConfig]] - `contains` [EXTRACTED]
 - [[PathIsolationManager]] - `contains` [EXTRACTED]
 - [[PathRewriteResult]] - `contains` [EXTRACTED]
-- [[Rule agentshroud-path-traversal-open]] - `references` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
+- [[test_path_isolation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_26
+#graphify/code #graphify/EXTRACTED #community/PathRewriteResult

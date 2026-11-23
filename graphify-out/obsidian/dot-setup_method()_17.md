@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Any"
+community: ".setup_method"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/setup_method
 ---
 
 # .setup_method()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/setup_method

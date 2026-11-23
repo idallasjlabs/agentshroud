@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 730"
-location: "L69"
+community: "alert_dispatcher.py"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/alert_dispatcherpy
 ---
 
 # Operational Notes
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

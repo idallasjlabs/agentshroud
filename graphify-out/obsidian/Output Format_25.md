@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/sf/SKILL-20261003-1855.md"
 type: "document"
-community: "Community 1783"
+community: "Salesforce CLI (`sf`) Agent"
 location: "L91"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1783
+  - community/Salesforce_CLI_sf_Agent
 ---
 
 # Output Format
 
 ## Connections
-- [[Salesforce CLI (`sf`) Agent_1]] - `contains` [EXTRACTED]
+- [[Salesforce CLI (`sf`) Agent_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1783
+#graphify/document #graphify/EXTRACTED #community/Salesforce_CLI_sf_Agent

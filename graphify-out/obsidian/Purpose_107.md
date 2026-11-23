@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-tdd/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Community 1244"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1244
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1244
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

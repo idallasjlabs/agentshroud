@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/updating.md"
 type: "document"
-community: "Community 559"
+community: "Updating AgentShroud"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_559
+  - community/Updating_AgentShroud
 ---
 
 # Without Git
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rollback Procedure]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_559
+#graphify/document #graphify/EXTRACTED #community/Updating_AgentShroud

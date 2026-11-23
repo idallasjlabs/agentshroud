@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L4064"
+community: "ingest_api/main.py"
+location: "L4069"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/mainpy
 ---
 
 # Return a paginated list of blocked domains. Authentication required.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_blocked_domains()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

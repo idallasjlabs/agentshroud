@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "record_decision()"
-location: "L199"
+community: "TrustManager"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/record_decision
+  - community/TrustManager
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[A2APolicyConfig_1]] - `method` [EXTRACTED]
-- [[_norm()]] - `calls` [EXTRACTED]
+- [[TrustDecayPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/record_decision
+#graphify/code #graphify/EXTRACTED #community/TrustManager

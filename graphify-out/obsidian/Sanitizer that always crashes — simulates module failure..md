@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "Community 84"
+community: "test_e2e_watchtower.py"
 location: "L377"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/test_e2e_watchtowerpy
 ---
 
 # Sanitizer that always crashes — simulates module failure.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BrokenSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/test_e2e_watchtowerpy

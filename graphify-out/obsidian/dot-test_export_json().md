@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "AuditExporter (2)"
+community: "AuditExporter"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter_2
+  - community/AuditExporter
 ---
 
 # .test_export_json()
@@ -15,5 +15,6 @@ tags:
 - [[AuditExporter]] - `calls` [EXTRACTED]
 - [[Test JSON export format.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditExporter]] - `method` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter_2
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

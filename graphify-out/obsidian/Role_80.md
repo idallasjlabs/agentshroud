@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/hermes.md"
+source_file: ".cursor/agents/i-gg.md"
 type: "document"
-community: "Community 1986"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1986
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1986
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

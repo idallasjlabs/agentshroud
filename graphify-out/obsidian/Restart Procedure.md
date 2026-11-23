@@ -1,17 +1,20 @@
 ---
-source_file: "docs/operations/runbook.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Community 2172"
-location: "L95"
+community: "Architecture Overview.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2172
+  - community/Architecture_Overviewmd
 ---
 
-# Restart Procedure
+# Restart Procedure.md
 
 ## Connections
-- [[1. Starting and Stopping AgentShroud]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `references` [EXTRACTED]
+- [[Restart Procedure_1]] - `contains` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
+- [[Startup Sequence_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2172
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

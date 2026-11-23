@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Performance baseline — inbound latency <0.5ms arm64/macOS
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[BDD Skill (stub)]] - document - .agents/skills/i-bdd/SKILL.md
+- [[Performance baseline — inbound latency 0.5ms arm64macOS]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

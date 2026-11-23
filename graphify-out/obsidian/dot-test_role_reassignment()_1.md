@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_injection.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ProxyAction"
-location: "L40"
+community: "prompt_guard.py"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/prompt_guardpy
 ---
 
 # .test_role_reassignment()
 
 ## Connections
-- [[TestHighSeverity]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

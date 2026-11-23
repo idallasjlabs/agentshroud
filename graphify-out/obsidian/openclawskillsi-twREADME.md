@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "AgentTarget (8)"
+community: "Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget_8
+  - community/Technical_Writer_TW
 ---
 
 # openclaw/skills/i-tw/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget_8
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

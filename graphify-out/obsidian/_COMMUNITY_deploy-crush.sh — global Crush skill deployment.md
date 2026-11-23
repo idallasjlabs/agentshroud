@@ -1,19 +1,15 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 2
 ---
 
 # deploy-crush.sh — global Crush skill deployment
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 2 nodes
 
 ## Members
-- [[patch-anthropic-sdk.sh]] - code - docker/scripts/patch-anthropic-sdk.sh
-- [[patch-anthropic-sdk.sh script]] - code - docker/scripts/patch-anthropic-sdk.sh
-- [[patch-telegram-sdk.sh]] - code - docker/scripts/patch-telegram-sdk.sh
-- [[patch-telegram-sdk.sh script]] - code - docker/scripts/patch-telegram-sdk.sh
+- [[deploy-crush.sh — global Crush skill deployment]] - concept - .llm_settings/scripts/README.md
+- [[deploy-opencode.sh — global OpenCode agent deployment]] - concept - .llm_settings/scripts/README.md
 
 ## Live Query (requires Dataview plugin)
 

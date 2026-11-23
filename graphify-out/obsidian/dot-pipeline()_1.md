@@ -1,22 +1,23 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "TestSecurityPipelineChainLatency"
+community: "PIIConfig"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityPipelineChainLatency
+  - community/PIIConfig
 ---
 
 # .pipeline()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `calls` [EXTRACTED]
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[SecurityPipeline_1]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityPipelineChainLatency
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

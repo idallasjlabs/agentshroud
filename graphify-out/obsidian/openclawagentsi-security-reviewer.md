@@ -1,18 +1,18 @@
 ---
 source_file: "docker/config/openclaw/agents/i-security-reviewer.md"
 type: "document"
-community: "Skill: OpenClaw Dev Workflow (ODEV) (2)"
+community: "Security Review (SEC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+  - community/Security_Review_SEC
 ---
 
 # openclaw/agents/i-security-reviewer.md
 
 ## Connections
 - [[Security Review (SEC)]] - `contains` [EXTRACTED]
-- [[security-reviewer]] - `contains` [EXTRACTED]
+- [[security-reviewer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_OpenClaw_Dev_Workflow_ODEV_2
+#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

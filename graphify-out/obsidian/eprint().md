@@ -1,18 +1,18 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "Community 492"
+community: "model_usage.py"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_492
+  - community/model_usagepy
 ---
 
 # eprint()
 
 ## Connections
-- [[main()_32]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_492
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

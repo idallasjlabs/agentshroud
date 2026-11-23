@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Crash Recovery.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Community 482"
-location: "L197"
+community: "aiosqlite"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_482
+  - community/aiosqlite
 ---
 
 # Related Notes
 
 ## Connections
-- [[Crash Recovery_2]] - `contains` [EXTRACTED]
+- [[aiosqlite]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_482
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

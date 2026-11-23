@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate_branding_assets.py"
 type: "code"
-community: "Community 446"
+community: "generate_branding_assets.py"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_446
+  - community/generate_branding_assetspy
 ---
 
 # generate_variants()
@@ -16,6 +16,6 @@ tags:
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `calls` [EXTRACTED]
 - [[main()_25]] - `calls` [EXTRACTED]
-- [[save()_1]] - `calls` [EXTRACTED]
+- [[save()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_446
+#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

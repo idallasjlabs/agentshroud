@@ -1,17 +1,17 @@
 ---
 source_file: "docker/QUICKSTART.md"
 type: "document"
-community: "Community 258"
+community: "AgentShroud Phase 3 - Quick Start Guide"
 location: "L271"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_258
+  - community/AgentShroud_Phase_3_-_Quick_Start_Guide
 ---
 
 # OpenClaw Not Responding
 
 ## Connections
-- [[Troubleshooting_25]] - `contains` [EXTRACTED]
+- [[Troubleshooting_13]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_258
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_3_-_Quick_Start_Guide

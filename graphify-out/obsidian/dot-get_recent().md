@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "ingest_api/main.py"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/ingest_api/mainpy
 ---
 
 # .get_recent()
 
 ## Connections
-- [[dot-to_dict()_15]] - `calls` [EXTRACTED]
-- [[Any_79]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

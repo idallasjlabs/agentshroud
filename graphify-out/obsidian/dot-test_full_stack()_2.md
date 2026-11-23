@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "UserSessionManager (3) (2)"
+community: "test_scanner_integration_coverage.py"
 location: "L707"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_3_2
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_full_stack()
@@ -15,4 +15,4 @@ tags:
 - [[TestIncidentResponse]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_3_2
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

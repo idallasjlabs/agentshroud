@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Community 747"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_747
+  - community/TrustManager
 ---
 
 # agentshroud.yaml (main config schema)
@@ -14,4 +14,4 @@ tags:
 - [[agent_trust SQLite table]] - `conceptually_related_to` [EXTRACTED]
 - [[approval_requests SQLite table]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_747
+#graphify/code #graphify/EXTRACTED #community/TrustManager

@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "test_a2a_policy.py"
+community: "AgentRegistry"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/AgentRegistry
 ---
 
 # .verify_shared_nothing()
 
 ## Connections
-- [[dot-get()_4]] - `calls` [EXTRACTED]
-- [[dot-list_agents()]] - `calls` [EXTRACTED]
 - [[dot-verify_network_isolation()]] - `calls` [EXTRACTED]
 - [[dot-verify_volume_isolation()]] - `calls` [EXTRACTED]
 - [[Full shared-nothing verification network + volume + security settings.]] - `rationale_for` [EXTRACTED]
-- [[IsolationCheck]] - `references` [EXTRACTED]
+- [[IsolationCheck]] - `calls` [EXTRACTED]
 - [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

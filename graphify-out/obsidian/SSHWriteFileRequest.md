@@ -1,31 +1,23 @@
 ---
-source_file: "gateway/ingest_api/main.py"
+source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 254"
-location: "L1118"
+community: "ingest_api/models.py"
+location: "L265"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/ingest_api/modelspy
 ---
 
 # SSHWriteFileRequest
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[ssh_write_file()]] - `references` [EXTRACTED]
+- [[dot-path_not_empty()]] - `method` [EXTRACTED]
+- [[dot-validate_base64()]] - `method` [EXTRACTED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[Request to write file content to an allowlisted SSH host. Unlike…]] - `rationale_for` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
+- [[ssh_write_file()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

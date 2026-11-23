@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-gg.md"
+source_file: ".github/agents/i-gg.agent.md"
 type: "document"
-community: "Community 1956"
-location: "L15"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1956
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Protected Branch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1956
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

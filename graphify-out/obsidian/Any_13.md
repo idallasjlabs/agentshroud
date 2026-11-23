@@ -1,32 +1,20 @@
 ---
-source_file: "gateway/inbound_edge/service.py"
+source_file: ""
 type: "code"
-community: "Community 2048"
-location: "L98"
+community: "._handle"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_2048
+  - graphify/EXTRACTED
+  - community/_handle
 ---
 
 # Any
 
 ## Connections
-- [[CanaryTripwire]] - `uses` [INFERRED]
-- [[EdgeApprovals]] - `uses` [INFERRED]
-- [[EdgeCallPipeline]] - `uses` [INFERRED]
-- [[EdgeDeps]] - `uses` [INFERRED]
-- [[EdgeOAuthService]] - `uses` [INFERRED]
-- [[EncodingDetector]] - `uses` [INFERRED]
-- [[EnvelopeSigner_1]] - `uses` [INFERRED]
-- [[HermesDelegate]] - `uses` [INFERRED]
-- [[HeuristicClassifier]] - `uses` [INFERRED]
-- [[LabSearch]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PkeStatus]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
-- [[TokenService]] - `uses` [INFERRED]
-- [[VendorProfile_2]] - `uses` [INFERRED]
-- [[build_edge_service()]] - `references` [EXTRACTED]
+- [[dot-__call__()_3]] - `references` [EXTRACTED]
+- [[dot-__init__()_37]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_2048
+#graphify/code #graphify/EXTRACTED #community/_handle

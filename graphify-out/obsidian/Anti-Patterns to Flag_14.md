@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 314"
+community: "Skill: Mindmap Architect (MM)"
 location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Anti-Patterns to Flag
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

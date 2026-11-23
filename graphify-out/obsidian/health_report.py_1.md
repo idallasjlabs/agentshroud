@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 566"
-location: "L1"
+community: "Function Details"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/Function_Details
 ---
 
-# health_report.py.md
+# health_report.py
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables]] - `contains` [EXTRACTED]
+- [[Function Details_1]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_3]] - `contains` [EXTRACTED]
+- [[Purpose_3]] - `contains` [EXTRACTED]
+- [[Related_3]] - `contains` [EXTRACTED]
+- [[Responsibilities_3]] - `contains` [EXTRACTED]
+- [[Threat Model_1]] - `contains` [EXTRACTED]
+- [[health_report.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_566
+#graphify/document #graphify/EXTRACTED #community/Function_Details

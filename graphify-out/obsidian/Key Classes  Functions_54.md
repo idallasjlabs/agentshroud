@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/wazuh_client.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 618"
-location: "L27"
+community: "trust_manager.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_618
+  - community/trust_managerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_618
+#graphify/document #graphify/EXTRACTED #community/trust_managerpy

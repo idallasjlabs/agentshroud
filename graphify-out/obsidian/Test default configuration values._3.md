@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 16"
-location: "L36"
+community: "TestEgressFilterConfig"
+location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/TestEgressFilterConfig
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_4]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_5]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressFilterConfig

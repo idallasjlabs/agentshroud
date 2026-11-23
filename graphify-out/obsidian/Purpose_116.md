@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: ".agents/skills/socrates/README.md"
 type: "document"
-community: "Community 705"
-location: "L12"
+community: "Socrates — Dialogue Architect"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_705
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_705
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_collaborator_greeter.py"
 type: "code"
-community: "Community 197"
+community: "test_collaborator_greeter.py"
 location: "L224"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_197
+  - community/test_collaborator_greeterpy
 ---
 
 # test_missing_logo_returns_false()
 
 ## Connections
-- [[CollaboratorGreeter]] - `calls` [EXTRACTED]
+- [[CollaboratorGreeter]] - `uses` [INFERRED]
+- [[asyncio_12]] - `references` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_197
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

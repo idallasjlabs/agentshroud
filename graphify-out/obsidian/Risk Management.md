@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-pm.md"
+source_file: ".agents/skills/i-pm/SKILL.md"
 type: "document"
-community: "Community 1011"
-location: "L138"
+community: "Skill: Project Management (PM)"
+location: "L136"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1011
+  - community/Skill_Project_Management_PM
 ---
 
 # Risk Management
@@ -16,4 +16,4 @@ tags:
 - [[Known Risks]] - `contains` [EXTRACTED]
 - [[Skill Project Management (PM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1011
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

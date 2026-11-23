@@ -1,23 +1,27 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 11"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/lifespanpy
 ---
 
 # progressive_trust_config.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[Progressive Trust Ladder (threshold-gated promotion + typed-violation demotion)]] - `rationale_for` [EXTRACTED]
+- [[Enum_32]] - `imports_from` [EXTRACTED]
 - [[ProgressiveTrustConfig]] - `contains` [EXTRACTED]
 - [[PromotionThreshold]] - `contains` [EXTRACTED]
 - [[TrustLevel]] - `contains` [EXTRACTED]
 - [[ViolationType]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `contains` [EXTRACTED]
+- [[test_a2a_integration.py]] - `imports_from` [EXTRACTED]
+- [[test_a2a_trust_scoring.py]] - `imports_from` [EXTRACTED]
+- [[test_progressive_trust_integration.py]] - `imports_from` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

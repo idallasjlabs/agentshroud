@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "TrustConfig"
-location: "L909"
+community: "ingest_api/main.py"
+location: "L914"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/mainpy
 ---
 
 # List all configured agent targets with health status Authentication required.
 
 ## Connections
-- [[list_agents()]] - `rationale_for` [EXTRACTED]
+- [[list_agents()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

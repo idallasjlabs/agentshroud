@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-security-review.md"
 type: "document"
-community: "Community 866"
+community: "Recommendations for Production Deployment"
 location: "L74"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_866
+  - community/Recommendations_for_Production_Deployment
 ---
 
 # Risk Summary
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSH Security Review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_866
+#graphify/document #graphify/EXTRACTED #community/Recommendations_for_Production_Deployment

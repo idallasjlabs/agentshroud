@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 96"
+community: "TestInfoLeakage"
 location: "L387"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_96
+  - community/TestInfoLeakage
 ---
 
 # Decryption errors shouldn't expose the encryption key.
 
 ## Connections
-- [[.test_encrypted_store_error_no_key_leak()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_encrypted_store_error_no_key_leak()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_96
+#graphify/rationale #graphify/EXTRACTED #community/TestInfoLeakage

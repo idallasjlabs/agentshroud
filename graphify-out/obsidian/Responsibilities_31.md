@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 674"
+community: "log_sanitizer.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/log_sanitizerpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

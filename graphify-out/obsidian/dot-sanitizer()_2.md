@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_performance.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L52"
+community: "RedactionResult"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/RedactionResult
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `calls` [EXTRACTED]
-- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

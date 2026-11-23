@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-hdev.md"
+source_file: ".agents/skills/i-hdev/SKILL.md"
 type: "document"
-community: "Community 841"
-location: "L124"
+community: "Mode A — Single task"
+location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_841
+  - community/Mode_A__Single_task
 ---
 
 # Mode A — Single task
@@ -28,4 +28,4 @@ tags:
 - [[Step 9 — Push and open the PR_4]] - `contains` [EXTRACTED]
 - [[Step 9b — Update the Jira ticket with the PR link_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_841
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

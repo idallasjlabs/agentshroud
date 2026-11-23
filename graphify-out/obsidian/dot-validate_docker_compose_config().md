@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "WebProxy"
-location: "L72"
+community: "NetworkValidator"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/NetworkValidator
 ---
 
 # .validate_docker_compose_config()
@@ -19,10 +19,8 @@ tags:
 - [[dot-_validate_port_exposure()]] - `calls` [EXTRACTED]
 - [[dot-_validate_privileged_containers()]] - `calls` [EXTRACTED]
 - [[dot-_validate_service_network_isolation()]] - `calls` [EXTRACTED]
-- [[dot-detect_configuration_drift()]] - `calls` [EXTRACTED]
-- [[NetworkSecurityFinding]] - `references` [EXTRACTED]
+- [[NetworkSecurityFinding]] - `calls` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
-- [[Validate docker-compose network configuration.          Args             compos]] - `rationale_for` [EXTRACTED]
-- [[validate_network_security()]] - `calls` [EXTRACTED]
+- [[Validate docker-compose network configuration. Args compose_file_path Path to…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

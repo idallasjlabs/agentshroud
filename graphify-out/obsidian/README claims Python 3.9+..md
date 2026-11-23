@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "Community 130"
+community: "TestContributingMdAccuracy"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_130
+  - community/TestContributingMdAccuracy
 ---
 
 # README claims Python 3.9+.
 
 ## Connections
-- [[.test_python_version_claim()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_python_version_claim()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_130
+#graphify/rationale #graphify/EXTRACTED #community/TestContributingMdAccuracy

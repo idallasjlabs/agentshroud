@@ -1,22 +1,25 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 151"
+community: "test_config_hot_reload.py"
 location: "L782"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/test_config_hot_reloadpy
 ---
 
 # config_watcher()
 
 ## Connections
-- [[Background mtime-poll watcher reload the config when the file changes.      Pol]] - `rationale_for` [EXTRACTED]
-- [[GatewayConfig_1]] - `references` [EXTRACTED]
-- [[Path_3]] - `references` [EXTRACTED]
-- [[config.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[Background mtime-poll watcher reload the config when the file changes. Polls…]] - `rationale_for` [EXTRACTED]
+- [[GatewayConfig]] - `references` [EXTRACTED]
+- [[Path_15]] - `references` [EXTRACTED]
+- [[_drive()]] - `calls` [EXTRACTED]
+- [[_drive()_1]] - `calls` [EXTRACTED]
+- [[_drive()_2]] - `calls` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[lifespan()]] - `calls` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[reload_config()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
@@ -24,4 +27,4 @@ tags:
 - [[test_watcher_reloads_on_mtime_change()]] - `calls` [EXTRACTED]
 - [[test_watcher_stops_on_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

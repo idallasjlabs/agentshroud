@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "_is_op_reference_allowed"
+community: "hermes_dashboard_ws_proxy"
 location: "L548"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/hermes_dashboard_ws_proxy
 ---
 
 # ._mock_websocket()
@@ -17,6 +17,7 @@ tags:
 - [[dot-test_traversal_in_path_closes_without_connecting()]] - `calls` [EXTRACTED]
 - [[dot-test_traversal_in_query_closes_without_connecting()]] - `calls` [EXTRACTED]
 - [[dot-test_upstream_connect_failure_closes_gracefully()]] - `calls` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy

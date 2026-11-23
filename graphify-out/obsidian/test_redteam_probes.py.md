@@ -1,33 +1,42 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 123"
+community: "test_redteam_probes.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/test_redteam_probespy
 ---
 
 # test_redteam_probes.py
 
 ## Connections
 - [[ContextGuard]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
+- [[Red Team Probe Tests — Phase 5 Steve Hay's specific attack probes. Each test…]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[_make_approval_queue()]] - `contains` [EXTRACTED]
 - [[_make_full_pipeline()]] - `contains` [EXTRACTED]
 - [[_make_pii_sanitizer()]] - `contains` [EXTRACTED]
-- [[pipeline()_2]] - `contains` [EXTRACTED]
+- [[context_guard.py]] - `imports_from` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports_from` [EXTRACTED]
+- [[encoding_detector.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[pipeline()_1]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_admin_action_requires_approval()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_records_all_events()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_tamper_detection()]] - `contains` [EXTRACTED]
@@ -51,5 +60,6 @@ tags:
 - [[test_ssn_redacted_inbound()]] - `contains` [EXTRACTED]
 - [[test_ssn_redacted_outbound()]] - `contains` [EXTRACTED]
 - [[test_trust_escalation_blocked()]] - `contains` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_123
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

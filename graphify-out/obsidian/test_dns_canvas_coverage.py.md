@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 452"
+community: "test_dns_canvas_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_452
+  - community/test_dns_canvas_coveragepy
 ---
 
 # test_dns_canvas_coverage.py
 
 ## Connections
+- [[Coverage tests for dns_forwarder, dns_blocklist, and canvas_proxy. Exercises…]] - `rationale_for` [EXTRACTED]
 - [[DNSBlocklist]] - `imports` [EXTRACTED]
 - [[DNSForwarderProtocol]] - `imports` [EXTRACTED]
 - [[TestBlocklistDownload]] - `contains` [EXTRACTED]
@@ -38,14 +39,16 @@ tags:
 - [[_run_asgi()]] - `contains` [EXTRACTED]
 - [[_ws_scope()]] - `contains` [EXTRACTED]
 - [[build_dns_query()]] - `contains` [EXTRACTED]
-- [[canvas_proxy_app()]] - `calls` [EXTRACTED]
+- [[canvas_proxy.py]] - `imports` [EXTRACTED]
+- [[dns_blocklist.py]] - `imports_from` [EXTRACTED]
+- [[dns_forwarder.py]] - `imports_from` [EXTRACTED]
 - [[fake_httpx_client()]] - `contains` [EXTRACTED]
 - [[forward_query()]] - `imports` [EXTRACTED]
 - [[gateway_password()]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
 - [[make_fake_socket_module()]] - `contains` [EXTRACTED]
 - [[parse_domain_name()]] - `imports` [EXTRACTED]
 - [[parse_query()]] - `imports` [EXTRACTED]
 - [[start_dns_forwarder()]] - `imports` [EXTRACTED]
-- [[test_dns_filter.py]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_452
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

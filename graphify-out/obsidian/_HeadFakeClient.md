@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 53"
+community: "_HeadFakeClient"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/_HeadFakeClient
 ---
 
 # _HeadFakeClient
 
 ## Connections
-- [[.__aenter__()_4]] - `method` [EXTRACTED]
-- [[.__aexit__()_4]] - `method` [EXTRACTED]
-- [[.__init__()_191]] - `method` [EXTRACTED]
-- [[.stream()]] - `method` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
-- [[StreamHead]] - `uses` [INFERRED]
+- [[dot-__aenter__()_4]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_85]] - `method` [EXTRACTED]
+- [[dot-stream()_1]] - `method` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

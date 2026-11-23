@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L62"
+community: "ContainerSnapshot"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContainerSnapshot
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-_save_sessions()]] - `calls` [EXTRACTED]
-- [[Any_3]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

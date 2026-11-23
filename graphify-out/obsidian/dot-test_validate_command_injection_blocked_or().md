@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "SSHProxy"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHProxy
 ---
 
 # .test_validate_command_injection_blocked_or()
@@ -15,4 +15,4 @@ tags:
 - [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestValidateCommand]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

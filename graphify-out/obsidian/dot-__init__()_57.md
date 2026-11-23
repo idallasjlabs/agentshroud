@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "StdioConnection"
+community: "MCPServerConfig"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StdioConnection
+  - community/MCPServerConfig
 ---
 
 # .__init__()
@@ -15,4 +15,4 @@ tags:
 - [[HttpSseConnection]] - `method` [EXTRACTED]
 - [[MCPServerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StdioConnection
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

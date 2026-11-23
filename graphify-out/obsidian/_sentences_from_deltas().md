@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L779"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # _sentences_from_deltas()
 
 ## Connections
-- [[Buffer streamed text deltas and yield each complete sentence as soon as     its]] - `rationale_for` [EXTRACTED]
+- [[Buffer streamed text deltas and yield each complete sentence as soon as its…]] - `rationale_for` [EXTRACTED]
+- [[_event_stream()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[test_forward_stream.py]] - `imports` [EXTRACTED]
 - [[test_sentences_from_deltas_empty_stream_yields_nothing()]] - `calls` [EXTRACTED]
@@ -20,4 +21,4 @@ tags:
 - [[test_sentences_from_deltas_single_delta_full_sentence()]] - `calls` [EXTRACTED]
 - [[test_sentences_from_deltas_splits_on_boundaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

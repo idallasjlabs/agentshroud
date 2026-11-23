@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L446"
+community: "TestWebProxySecurityIntegration"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Event]] - `method` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

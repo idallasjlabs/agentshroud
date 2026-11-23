@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "document"
-community: "Community 377"
+community: "AgentShroud Security Policy - Final Decision"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_377
+  - community/AgentShroud_Security_Policy_-_Final_Decision
 ---
 
 # AgentShroud Security Policy - Final Decision
@@ -25,4 +25,4 @@ tags:
 - [[🚫 Removed Documentation]] - `contains` [EXTRACTED]
 - [[🤖 Why Ultra-Conservative Won]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_377
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Policy_-_Final_Decision

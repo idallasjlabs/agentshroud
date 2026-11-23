@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "ResourceGuard"
-location: "L107"
+community: "BrowserSecurityGuard"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/BrowserSecurityGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

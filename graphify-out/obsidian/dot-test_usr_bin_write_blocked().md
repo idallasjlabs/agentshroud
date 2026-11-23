@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestSystemPathProtection"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestSystemPathProtection
 ---
 
 # .test_usr_bin_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot write to usrbin system binaries.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPathProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestSystemPathProtection

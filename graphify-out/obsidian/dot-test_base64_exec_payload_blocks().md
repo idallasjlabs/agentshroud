@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "SkillGuard"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/SkillGuard
 ---
 
 # .test_base64_exec_payload_blocks()
@@ -16,4 +16,4 @@ tags:
 - [[TestObfuscation]] - `method` [EXTRACTED]
 - [[_finding_categories()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

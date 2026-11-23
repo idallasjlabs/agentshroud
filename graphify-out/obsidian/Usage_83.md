@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pr/README.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Community 90"
+community: "Oracle — Feedback Analyst"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Usage
 
 ## Connections
-- [[Pull Request Generator (PR)_1]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

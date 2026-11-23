@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Community 518"
+community: "Test-Driven Development (TDD)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Test-Driven_Development_TDD
 ---
 
 # Test-Driven Development (TDD)
 
 ## Connections
-- [[Purpose_24]] - `contains` [EXTRACTED]
-- [[README_24]] - `contains` [EXTRACTED]
-- [[Related Skills_30]] - `contains` [EXTRACTED]
-- [[Usage_30]] - `contains` [EXTRACTED]
+- [[Purpose_155]] - `contains` [EXTRACTED]
+- [[Related Skills_85]] - `contains` [EXTRACTED]
+- [[Usage_95]] - `contains` [EXTRACTED]
+- [[openclawskillsi-tddREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

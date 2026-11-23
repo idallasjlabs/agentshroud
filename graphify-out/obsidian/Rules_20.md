@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ti.md"
+source_file: ".agents/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 893"
-location: "L26"
+community: ".agents/skills/i-tw/SKILL.md"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_893
+  - community/agents/skills/i-tw/SKILLmd
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Illustrator (TI)_2]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_893
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-tw/SKILLmd

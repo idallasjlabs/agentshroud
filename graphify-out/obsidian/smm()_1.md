@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "Community 1305"
+community: "test_shared_memory.py"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/test_shared_memorypy
 ---
 
 # smm()
 
 ## Connections
-- [[SharedMemoryManager]] - `calls` [EXTRACTED]
+- [[SharedMemoryManager]] - `uses` [INFERRED]
+- [[fixture_119]] - `references` [EXTRACTED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy

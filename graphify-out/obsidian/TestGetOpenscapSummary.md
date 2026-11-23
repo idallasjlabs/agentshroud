@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 363"
+community: "Any"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_363
+  - community/Any
 ---
 
 # TestGetOpenscapSummary
 
 ## Connections
-- [[.test_clean_report()]] - `method` [EXTRACTED]
-- [[.test_critical_on_critical_findings()]] - `method` [EXTRACTED]
-- [[.test_not_run_when_no_report()_1]] - `method` [EXTRACTED]
-- [[.test_warning_on_failures()]] - `method` [EXTRACTED]
+- [[dot-test_clean_report()]] - `method` [EXTRACTED]
+- [[dot-test_critical_on_critical_findings()]] - `method` [EXTRACTED]
+- [[dot-test_not_run_when_no_report()_1]] - `method` [EXTRACTED]
+- [[dot-test_warning_on_failures()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_363
+#graphify/code #graphify/EXTRACTED #community/Any

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L69"
+community: "test_soc_realtime_coverage.py"
+location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[_FakeBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

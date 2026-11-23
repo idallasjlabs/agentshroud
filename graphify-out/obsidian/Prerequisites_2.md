@@ -1,17 +1,17 @@
 ---
-source_file: "docs/integrations/voice-terminal-esp32-s3.md"
+source_file: "docs/vault/08 - Runbooks/First Time Setup.md"
 type: "document"
-community: "Community 427"
-location: "L41"
+community: "First Time Setup"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_427
+  - community/First_Time_Setup
 ---
 
 # Prerequisites
 
 ## Connections
-- [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - `contains` [EXTRACTED]
+- [[First Time Setup]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_427
+#graphify/document #graphify/EXTRACTED #community/First_Time_Setup

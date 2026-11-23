@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "Community 434"
+community: "ClassificationResult"
 location: "L25"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_434
+  - community/ClassificationResult
 ---
 
 # Result of injection classification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ClassificationResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_434
+#graphify/rationale #graphify/EXTRACTED #community/ClassificationResult

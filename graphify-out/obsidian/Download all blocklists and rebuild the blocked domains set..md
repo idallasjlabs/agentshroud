@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Community 708"
+community: "DNSBlocklist"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_708
+  - community/DNSBlocklist
 ---
 
 # Download all blocklists and rebuild the blocked domains set.
 
 ## Connections
-- [[.update()]] - `rationale_for` [EXTRACTED]
+- [[dot-update()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_708
+#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

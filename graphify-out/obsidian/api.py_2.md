@@ -1,24 +1,98 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
-type: "document"
-community: "Community 1007"
-location: "L10"
+source_file: "gateway/web/api.py"
+type: "code"
+community: "api.py"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1007
+  - community/apipy
 ---
 
 # api.py
 
 ## Connections
-- [[Key Endpoints]] - `contains` [EXTRACTED]
-- [[Purpose_173]] - `contains` [EXTRACTED]
-- [[Pydantic Models]] - `contains` [EXTRACTED]
-- [[Related Notes_13]] - `contains` [EXTRACTED]
-- [[Responsibilities_57]] - `contains` [EXTRACTED]
-- [[Runtime Engine Integration]] - `contains` [EXTRACTED]
-- [[Security_25]] - `contains` [EXTRACTED]
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[CitationVerifier]] - `imports` [EXTRACTED]
+- [[ConfigUpdate]] - `contains` [EXTRACTED]
+- [[DraftEntry]] - `imports` [EXTRACTED]
+- [[IntelDraftEntry]] - `contains` [EXTRACTED]
+- [[IntelDraftRequest]] - `contains` [EXTRACTED]
+- [[IntelReportStore]] - `imports` [EXTRACTED]
+- [[KillSwitchAction]] - `contains` [EXTRACTED]
+- [[KillSwitchError]] - `contains` [EXTRACTED]
+- [[ModeRequest]] - `contains` [EXTRACTED]
+- [[RuntimeConfig]] - `imports` [EXTRACTED]
+- [[SkillGuard]] - `imports` [EXTRACTED]
+- [[SkillGuardBlocked]] - `contains` [EXTRACTED]
+- [[SkillsManifest]] - `imports` [EXTRACTED]
+- [[UpdateRequest]] - `contains` [EXTRACTED]
+- [[_bot_service_names()]] - `contains` [EXTRACTED]
+- [[_create_mgmt_ws_token()]] - `contains` [EXTRACTED]
+- [[_get_default_bot_dockerfile()]] - `contains` [EXTRACTED]
+- [[_get_engine()]] - `contains` [EXTRACTED]
+- [[_intel_store()]] - `contains` [EXTRACTED]
+- [[_intel_verifier()]] - `contains` [EXTRACTED]
+- [[_resolve_bot_container()]] - `contains` [EXTRACTED]
+- [[_skills_reload_impl()]] - `contains` [EXTRACTED]
+- [[_skills_reload_paths()]] - `contains` [EXTRACTED]
+- [[_valid_services()]] - `contains` [EXTRACTED]
+- [[_validate_mgmt_ws_token()]] - `contains` [EXTRACTED]
+- [[_validate_service_name()]] - `contains` [EXTRACTED]
+- [[check_agentshroud_updates()]] - `contains` [EXTRACTED]
+- [[check_bot_updates()]] - `contains` [EXTRACTED]
+- [[check_openclaw_updates()]] - `contains` [EXTRACTED]
+- [[dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
+- [[deploy_manifest()]] - `imports` [EXTRACTED]
+- [[detect_runtime()]] - `imports` [EXTRACTED]
+- [[execute_killswitch()]] - `contains` [EXTRACTED]
+- [[export_config()]] - `contains` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[get_competitive_intel()]] - `contains` [EXTRACTED]
+- [[get_competitive_intel_history()]] - `contains` [EXTRACTED]
+- [[get_config()]] - `contains` [EXTRACTED]
+- [[get_engine()]] - `imports` [EXTRACTED]
+- [[get_logs()_1]] - `contains` [EXTRACTED]
+- [[get_mode()]] - `contains` [EXTRACTED]
+- [[get_security_comparison()]] - `imports` [EXTRACTED]
+- [[get_status()]] - `contains` [EXTRACTED]
+- [[import_config()]] - `contains` [EXTRACTED]
+- [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[killswitch()]] - `contains` [EXTRACTED]
+- [[load_config()]] - `imports` [EXTRACTED]
+- [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
+- [[management.py]] - `imports_from` [EXTRACTED]
+- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[rebuild()]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `contains` [EXTRACTED]
+- [[restart_service()_2]] - `contains` [EXTRACTED]
+- [[rollback_agentshroud()]] - `contains` [EXTRACTED]
+- [[rollback_bot()]] - `contains` [EXTRACTED]
+- [[rollback_openclaw()]] - `contains` [EXTRACTED]
+- [[runtime__init__.py]] - `imports_from` [EXTRACTED]
+- [[runtimeconfig.py]] - `imports_from` [EXTRACTED]
+- [[secrets.py]] - `imports` [EXTRACTED]
+- [[security.py_2]] - `imports_from` [EXTRACTED]
+- [[security_report()]] - `contains` [EXTRACTED]
+- [[set_mode()]] - `contains` [EXTRACTED]
+- [[skills_reload()]] - `contains` [EXTRACTED]
+- [[start_service()_2]] - `contains` [EXTRACTED]
+- [[stop_service()_2]] - `contains` [EXTRACTED]
+- [[submit_competitive_intel()]] - `contains` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `imports_from` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
+- [[test_skill_guard.py]] - `imports_from` [EXTRACTED]
+- [[test_skills_manifest_sync.py]] - `imports_from` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `imports_from` [EXTRACTED]
+- [[update_config()]] - `contains` [EXTRACTED]
+- [[update_history()]] - `contains` [EXTRACTED]
+- [[upgrade_agentshroud()]] - `contains` [EXTRACTED]
+- [[upgrade_bot()_1]] - `contains` [EXTRACTED]
+- [[upgrade_openclaw()]] - `contains` [EXTRACTED]
+- [[verify_token()]] - `imports` [EXTRACTED]
+- [[warn_missing_features()]] - `imports` [EXTRACTED]
+- [[ws_logs()]] - `contains` [EXTRACTED]
+- [[ws_updates()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1007
+#graphify/code #graphify/EXTRACTED #community/apipy

@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "Community 2085"
+community: "macOS System Administrator (MAC)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2085
+  - community/macOS_System_Administrator_MAC
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_28]] - `contains` [EXTRACTED]
-- [[README_28]] - `contains` [EXTRACTED]
-- [[Related Skills_34]] - `contains` [EXTRACTED]
-- [[Usage_34]] - `contains` [EXTRACTED]
+- [[Purpose_109]] - `contains` [EXTRACTED]
+- [[Related Skills_39]] - `contains` [EXTRACTED]
+- [[Usage_49]] - `contains` [EXTRACTED]
+- [[mac-app-discoveryREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2085
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

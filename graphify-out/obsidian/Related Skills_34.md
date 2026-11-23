@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mac-app-discovery/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Community 2085"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2085
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Related Skills
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2085
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestParamSanitization"
+community: "ToolChainAnalyzer"
 location: "L485"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParamSanitization
+  - community/ToolChainAnalyzer
 ---
 
 # .analyzer()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestParamSanitization]] - `method` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
+- [[fixture_130]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParamSanitization
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

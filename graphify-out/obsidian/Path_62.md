@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: ""
 type: "code"
-community: "KillSwitchMonitor"
-location: "L38"
+community: "TestOAuthInjection"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TestOAuthInjection
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_198]] - `references` [EXTRACTED]
+- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 7"
-location: "L46"
+community: "ingest_api/config.py"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # auth_headers()
 
 ## Connections
-- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
+- [[fixture_66]] - `references` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

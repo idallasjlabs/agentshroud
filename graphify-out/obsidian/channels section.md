@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 73"
+community: "agentshroud.yaml"
 location: "L191"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/agentshroudyaml
 ---
 
 # channels section
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[agentshroud.yaml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/agentshroudyaml

@@ -1,17 +1,18 @@
 ---
-source_file: ".agents/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/i-mcpm-auth-reset/SKILL.md"
 type: "document"
-community: "Community 211"
-location: "L172"
+community: "10. Troubleshooting"
+location: "L170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/10_Troubleshooting
 ---
 
 # GitHub: "Docker image not found"
 
 ## Connections
-- [[Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
+- [[Troubleshooting_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_211
+#graphify/document #graphify/EXTRACTED #community/10_Troubleshooting

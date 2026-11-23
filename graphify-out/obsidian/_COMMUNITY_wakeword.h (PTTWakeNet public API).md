@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # wakeword.h (PTT/WakeNet public API)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Obsidian appearance.json (empty)]] - document - docs/vault/.obsidian/appearance.json
+- [[wakeword.h (PTTWakeNet public API)]] - code - firmware/voice-terminal/main/wakeword.h
 
 ## Live Query (requires Dataview plugin)
 

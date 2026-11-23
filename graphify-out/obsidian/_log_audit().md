@@ -1,62 +1,59 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # _log_audit()
 
 ## Connections
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_2]] - `references` [EXTRACTED]
 - [[AuditLogEntry]] - `calls` [EXTRACTED]
-- [[AuditResult_1]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[SCLInterface_1]] - `references` [EXTRACTED]
+- [[AuditResult]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[SCLInterface]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
 - [[_decide_approval()]] - `calls` [EXTRACTED]
 - [[_run_killswitch()]] - `calls` [EXTRACTED]
-- [[add_collaborator()_1]] - `calls` [EXTRACTED]
-- [[add_group_member()_1]] - `calls` [EXTRACTED]
+- [[add_collaborator()]] - `calls` [EXTRACTED]
+- [[add_group_member()]] - `calls` [EXTRACTED]
 - [[approve_egress()]] - `calls` [EXTRACTED]
-- [[approve_request()]] - `calls` [EXTRACTED]
 - [[clear_group_memory()]] - `calls` [EXTRACTED]
 - [[create_delegation()]] - `calls` [EXTRACTED]
 - [[create_group()]] - `calls` [EXTRACTED]
 - [[delete_group()]] - `calls` [EXTRACTED]
 - [[deny_egress()]] - `calls` [EXTRACTED]
-- [[deny_request()]] - `calls` [EXTRACTED]
-- [[edge_enroll()_1]] - `calls` [EXTRACTED]
-- [[edge_kill()_1]] - `calls` [EXTRACTED]
-- [[edge_unkill()_1]] - `calls` [EXTRACTED]
+- [[edge_enroll()]] - `calls` [EXTRACTED]
+- [[edge_kill()]] - `calls` [EXTRACTED]
+- [[edge_unkill()]] - `calls` [EXTRACTED]
 - [[emergency_block_egress()]] - `calls` [EXTRACTED]
-- [[killswitch_disconnect()]] - `calls` [EXTRACTED]
-- [[killswitch_freeze()]] - `calls` [EXTRACTED]
-- [[killswitch_shutdown()]] - `calls` [EXTRACTED]
 - [[override_egress_rule()]] - `calls` [EXTRACTED]
 - [[pause_collaborator_endpoint()]] - `calls` [EXTRACTED]
 - [[rebuild_all_services()]] - `calls` [EXTRACTED]
 - [[remove_egress_rule()]] - `calls` [EXTRACTED]
 - [[remove_group_member()]] - `calls` [EXTRACTED]
 - [[rename_group()]] - `calls` [EXTRACTED]
-- [[restart_service()_1]] - `calls` [EXTRACTED]
+- [[restart_service()]] - `calls` [EXTRACTED]
 - [[revoke_collaborator()]] - `calls` [EXTRACTED]
 - [[revoke_delegation()]] - `calls` [EXTRACTED]
 - [[revoke_egress_history()]] - `calls` [EXTRACTED]
 - [[rollback_gateway()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
 - [[run_scanner()]] - `calls` [EXTRACTED]
 - [[set_group_mode()]] - `calls` [EXTRACTED]
 - [[set_log_level()]] - `calls` [EXTRACTED]
 - [[set_module_mode()]] - `calls` [EXTRACTED]
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
-- [[set_user_role()_1]] - `calls` [EXTRACTED]
+- [[set_user_role()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[start_service()]] - `calls` [EXTRACTED]
-- [[stop_service()_1]] - `calls` [EXTRACTED]
+- [[stop_service()]] - `calls` [EXTRACTED]
+- [[test_log_audit_appends_to_audit_store()]] - `calls` [EXTRACTED]
+- [[test_log_audit_survives_app_state_failure()]] - `calls` [EXTRACTED]
 - [[unpause_collaborator_endpoint()]] - `calls` [EXTRACTED]
 - [[update_display_name()]] - `calls` [EXTRACTED]
 - [[update_service()]] - `calls` [EXTRACTED]
@@ -64,4 +61,4 @@ tags:
 - [[upgrade_gateway()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 148"
-location: "L129"
+community: "jira_weekly_review.py"
+location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/jira_weekly_reviewpy
 ---
 
 # build_tenant_info_url()
 
 ## Connections
 - [[Unauthenticated site-to-cloud-ID discovery URL.]] - `rationale_for` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
 - [[resolve_cloud_id()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

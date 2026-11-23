@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
 type: "document"
-community: "Community 720"
-location: "L74"
+community: "web_content_scanner.py"
+location: "L67"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_720
+  - community/web_content_scannerpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
+- [[web_content_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_720
+#graphify/document #graphify/EXTRACTED #community/web_content_scannerpy

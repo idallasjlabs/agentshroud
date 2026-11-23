@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "api.py"
 location: "L487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # export_config()
 
 ## Connections
 - [[Export current configuration.]] - `rationale_for` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
-- [[get_config()_1]] - `calls` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[get_2]] - `references` [EXTRACTED]
+- [[get_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/apipy

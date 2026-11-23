@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: ""
 type: "code"
-community: "Community 312"
-location: "L218"
+community: "._run_and_read"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_312
+  - community/_run_and_read
 ---
 
 # Path
 
 ## Connections
-- [[.__init__()_95]] - `calls` [EXTRACTED]
-- [[._analyze_file_content()]] - `references` [EXTRACTED]
-- [[._analyze_script_file()]] - `references` [EXTRACTED]
-- [[._quarantine_suspicious_files()]] - `calls` [EXTRACTED]
-- [[._scan_git_hooks()]] - `references` [EXTRACTED]
-- [[._scan_package_json()]] - `references` [EXTRACTED]
-- [[._scan_pyproject_toml()]] - `references` [EXTRACTED]
-- [[._scan_setup_py()]] - `references` [EXTRACTED]
-- [[.scan_git_repository()]] - `calls` [EXTRACTED]
+- [[_read_env()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_312
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

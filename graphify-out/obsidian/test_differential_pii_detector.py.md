@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Community 56"
+community: "DifferentialPIIDetector"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_56
+  - community/DifferentialPIIDetector
 ---
 
 # test_differential_pii_detector.py
@@ -25,8 +25,9 @@ tags:
 - [[TestRedaction]] - `contains` [EXTRACTED]
 - [[TestStandardPIIAlwaysCaught]] - `contains` [EXTRACTED]
 - [[TestToolResultPIIReport]] - `contains` [EXTRACTED]
-- [[_FakeRecognizerResult]] - `contains` [EXTRACTED]
-- [[default_config()]] - `contains` [EXTRACTED]
+- [[Tests for Module 28 — Differential PII Detector for Tool Results. IEC 62443 FR3…]] - `rationale_for` [EXTRACTED]
+- [[default_config()_4]] - `contains` [EXTRACTED]
 - [[detector()]] - `contains` [EXTRACTED]
+- [[differential_pii_detector.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/OPENCLAW_SSH_SETUP.md"
 type: "document"
-community: "Community 218"
+community: "OpenClaw Bot SSH Configuration"
 location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_218
+  - community/OpenClaw_Bot_SSH_Configuration
 ---
 
 # Problem: "Connection timeout"
 
 ## Connections
-- [[Troubleshooting_50]] - `contains` [EXTRACTED]
+- [[Troubleshooting_11]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_218
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration

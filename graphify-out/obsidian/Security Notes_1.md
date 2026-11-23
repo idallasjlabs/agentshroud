@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Community 284"
+community: "AgentShroud Device Pairing Management"
 location: "L443"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Security Notes
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

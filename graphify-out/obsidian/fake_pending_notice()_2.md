@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "fake_owner_notice()"
+community: "fake_owner_notice"
 location: "L1354"
 tags:
   - graphify/code

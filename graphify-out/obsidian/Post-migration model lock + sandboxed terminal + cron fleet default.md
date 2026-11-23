@@ -1,17 +1,17 @@
 ---
 source_file: "docker/bots/hermes/start.sh"
 type: "rationale"
-community: "Community 290"
+community: "start.sh"
 location: "L365-L445"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_290
+  - community/startsh
 ---
 
 # Post-migration model lock + sandboxed terminal + cron fleet default
 
 ## Connections
-- [[start.sh (Hermes s6 main program  startup wrapper)]] - `implements` [EXTRACTED]
+- [[start.sh]] - `implements` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_290
+#graphify/rationale #graphify/EXTRACTED #community/startsh

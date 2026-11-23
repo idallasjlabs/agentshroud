@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
+community: ".test_healthcheck_with_leading_whitespace_is_handled_locally"
 location: "L4886"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/test_healthcheck_with_leading_whitespace_is_handled_locally
 ---
 
 # .test_healthcheck_with_leading_whitespace_is_handled_locally()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_28]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_urlopen()_37]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/test_healthcheck_with_leading_whitespace_is_handled_locally

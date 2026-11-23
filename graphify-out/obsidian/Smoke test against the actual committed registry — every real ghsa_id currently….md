@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_list_registry_ghsa_ids.py"
+type: "rationale"
+community: "_script"
+location: "L83"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/_script
+---
+
+# Smoke test against the actual committed registry — every real ghsa_id currently…
+
+## Connections
+- [[dot-test_against_the_real_registry()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/_script

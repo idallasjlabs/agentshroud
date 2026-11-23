@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/killswitch_config.py"
 type: "rationale"
-community: "Community 92"
+community: "KillSwitchConfig"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/KillSwitchConfig
 ---
 
 # Convert configuration to dictionary for serialization.
 
 ## Connections
-- [[.to_dict()_9]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_15]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchConfig

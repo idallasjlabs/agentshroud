@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/tailscale-check.sh"
+source_file: "tests/startup_smoke/test_launchd_install.sh"
 type: "code"
-community: "Community 933"
-location: "L16"
+community: "test_launchd_install.sh"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/test_launchd_installsh
 ---
 
 # ok()
 
 ## Connections
-- [[tailscale-check.sh]] - `defines` [EXTRACTED]
-- [[tailscale-check.sh script]] - `calls` [EXTRACTED]
+- [[test_launchd_install.sh]] - `defines` [EXTRACTED]
+- [[test_launchd_install.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_933
+#graphify/code #graphify/EXTRACTED #community/test_launchd_installsh

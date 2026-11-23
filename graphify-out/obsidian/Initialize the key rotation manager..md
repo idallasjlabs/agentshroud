@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Community 122"
+community: "KeyRotationManager"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/KeyRotationManager
 ---
 
 # Initialize the key rotation manager.
 
 ## Connections
-- [[.__init__()_101]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_18]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_122
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

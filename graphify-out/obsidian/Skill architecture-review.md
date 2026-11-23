@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-architecture-review.md"
+source_file: ".agents/skills/i-architecture-review/SKILL.md"
 type: "document"
-community: "Community 2211"
-location: "L8"
+community: ".agents/skills/i-architecture-review/SKILL.md"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2211
+  - community/agents/skills/i-architecture-review/SKILLmd
 ---
 
 # Skill: architecture-review
 
 ## Connections
-- [[i-architecture-review]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-architecture-reviewSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2211
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-architecture-review/SKILLmd

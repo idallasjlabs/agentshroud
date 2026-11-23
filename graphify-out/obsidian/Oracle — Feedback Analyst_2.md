@@ -1,23 +1,23 @@
 ---
 source_file: ".agents/skills/oracle/SKILL.md"
 type: "document"
-community: "Community 1983"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1983
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Oracle — Feedback Analyst
 
 ## Connections
-- [[Input Requirements_17]] - `contains` [EXTRACTED]
-- [[Output Format_23]] - `contains` [EXTRACTED]
-- [[Persona_13]] - `contains` [EXTRACTED]
-- [[Quality Checklist_15]] - `contains` [EXTRACTED]
-- [[Role_73]] - `contains` [EXTRACTED]
-- [[SKILL_66]] - `contains` [EXTRACTED]
-- [[System Prompt_13]] - `contains` [EXTRACTED]
+- [[Input Requirements_34]] - `contains` [EXTRACTED]
+- [[Output Format_49]] - `contains` [EXTRACTED]
+- [[Persona_28]] - `contains` [EXTRACTED]
+- [[Quality Checklist_34]] - `contains` [EXTRACTED]
+- [[Role_99]] - `contains` [EXTRACTED]
+- [[System Prompt_28]] - `contains` [EXTRACTED]
+- [[skillsoracleSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1983
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

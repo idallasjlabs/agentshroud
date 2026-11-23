@@ -1,38 +1,33 @@
 ---
 type: community
-cohesion: 0.15
-members: 13
+members: 10
 ---
 
-# Error Index.md
+# Error Index
 
-**Cohesion:** 0.15 - loosely connected
-**Members:** 13 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Bot Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Bot Exits Before Gateway Is Healthy]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Container Startup Failures]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Gateway Health Check Never Passes]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[OpenClaw Not Starting]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Related Notes_57]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[Startup Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`Could not load Claude OAuth token after retries`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`FileNotFoundError No agentshroud.yaml found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`No auth_token found in secret file`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`ValueError Invalid YAML structure`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[`startup Warning Gateway password file not found`]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
-- [[spaCy Model Not Loading]] - document - docs/vault/07 - Errors & Troubleshooting/Startup Errors.md
+- [[Auth Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Container Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Egress Filter Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Error Index_1]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[HTTP Status Codes]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[PII Pipeline Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Prompt Injection Blocks]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Related Notes_29]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 
 ## Live Query (requires Dataview plugin)
 
 ```dataview
-TABLE source_file, type FROM #community/Error_Indexmd
+TABLE source_file, type FROM #community/Error_Index
 SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[Startup Errors_1]] - degree 4, connects to 1 community
+- [[Error Index_1]] - degree 10, connects to 1 community

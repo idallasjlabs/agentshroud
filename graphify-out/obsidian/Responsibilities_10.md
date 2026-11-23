@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Community 979"
-location: "L19"
+community: "Function Details"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_979
+  - community/Function_Details
 ---
 
 # Responsibilities
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_979
+#graphify/document #graphify/EXTRACTED #community/Function_Details

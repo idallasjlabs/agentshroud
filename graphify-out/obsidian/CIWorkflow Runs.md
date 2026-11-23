@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/github/SKILL.md"
 type: "document"
-community: "Community 713"
+community: "GitHub Skill"
 location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_713
+  - community/GitHub_Skill
 ---
 
 # CI/Workflow Runs
 
 ## Connections
-- [[Common Commands_2]] - `contains` [EXTRACTED]
+- [[Common Commands_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_713
+#graphify/document #graphify/EXTRACTED #community/GitHub_Skill

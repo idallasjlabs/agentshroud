@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "MiddlewareManager"
+community: ".get_or_create_session"
 location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/get_or_create_session
 ---
 
 # .get_session_prompt_addition()
@@ -16,4 +16,4 @@ tags:
 - [[Get session-specific prompt addition for the agent.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/README.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "Community 117"
+community: "Apollo — Audio Systems Producer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Related Skills
 
 ## Connections
-- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

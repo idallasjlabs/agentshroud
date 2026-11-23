@@ -1,12 +1,12 @@
 ---
 source_file: ".github/COPILOT_CLI_SETUP.md"
 type: "document"
-community: "Community 2079"
+community: "Installation"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2079
+  - community/Installation
 ---
 
 # Installation
@@ -18,4 +18,4 @@ tags:
 - [[macOS  Linux]] - `contains` [EXTRACTED]
 - [[npm (Cross-platform)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2079
+#graphify/document #graphify/EXTRACTED #community/Installation

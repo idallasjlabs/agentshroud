@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "DNSFilterConfig"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # ._detect_tunneling()
 
 ## Connections
-- [[dot-check()_5]] - `calls` [EXTRACTED]
+- [[dot-check()_1]] - `calls` [EXTRACTED]
 - [[dot-shannon_entropy()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
-- [[TunnelingPattern]] - `references` [EXTRACTED]
+- [[TunnelingPattern]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

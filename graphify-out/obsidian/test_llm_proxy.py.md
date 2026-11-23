@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "Community 1278"
+community: "test_llm_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1278
+  - community/test_llm_proxypy
 ---
 
 # test_llm_proxy.py
@@ -56,4 +56,4 @@ tags:
 - [[test_streaming_with_head_reports_200_then_chunks()]] - `contains` [EXTRACTED]
 - [[test_streaming_with_head_reports_upstream_400_and_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1278
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

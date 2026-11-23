@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # ._build_forward_payload()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
-- [[Build the outbound payload for `target`, shared by the blocking and         stre]] - `rationale_for` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
+- [[Build the outbound payload for `target`, shared by the blocking and streaming…]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

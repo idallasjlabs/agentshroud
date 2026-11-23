@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 337"
-location: "L23"
+community: "Skill: UX Expert (UX)"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/Skill_UX_Expert_UX
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

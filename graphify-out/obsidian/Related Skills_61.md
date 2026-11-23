@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-cicd/README.md"
+source_file: "docker/config/hermes/skills/i-sec-defense/README.md"
 type: "document"
-community: "Community 1877"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1877
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
-- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1877
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

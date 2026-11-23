@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-aws/README.md"
 type: "document"
-community: "SECTION 9: IMPORTANT NOTES"
+community: "AWS Cloud Management & FinOps"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SECTION_9_IMPORTANT_NOTES
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # openclaw/skills/i-aws/README.md
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SECTION_9_IMPORTANT_NOTES
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

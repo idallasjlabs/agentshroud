@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ui.md"
+source_file: "docker/config/openclaw/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 629"
-location: "L393"
+community: "Skill: UX Expert (UX)"
+location: "L279"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_629
+  - community/Skill_UX_Expert_UX
 ---
 
 # Dependencies
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_629
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

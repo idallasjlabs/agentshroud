@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/icloud.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 635"
-location: "L127"
+community: "prompt_guard.py"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_635
+  - community/prompt_guardpy
 ---
 
 # Configuration
 
 ## Connections
-- [[iCloud Services_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_635
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: ".pi/mcp.json"
 type: "code"
-community: ".pi/mcp.json (2)"
+community: ".pi/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pi/mcpjson_2
+  - community/pi/mcpjson
 ---
 
 # .llm_settings/mcp-servers/github/agentshroud/github-mcp-wrapper.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[github-agentshroud_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pi/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/pi/mcpjson

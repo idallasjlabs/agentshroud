@@ -1,17 +1,17 @@
 ---
 source_file: "docs/runbooks/RUNBOOK.md"
 type: "concept"
-community: "Community 726"
+community: "TELEGRAM_ISSUES.md"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_726
+  - graphify/EXTRACTED
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # Multi-Host Infrastructure (Marvin/Trillian/Pi)
 
 ## Connections
-- [[RUNBOOK]] - `references` [EXTRACTED]
+- [[RUNBOOK_1]] - `references` [EXTRACTED]
 - [[raspberry-pi]] - `conceptually_related_to` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_726
+#graphify/concept #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

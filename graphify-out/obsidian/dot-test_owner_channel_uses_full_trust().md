@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "AsyncMock"
 location: "L231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AsyncMock
 ---
 
 # .test_owner_channel_uses_full_trust()
@@ -16,5 +16,6 @@ tags:
 - [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[asyncio_41]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

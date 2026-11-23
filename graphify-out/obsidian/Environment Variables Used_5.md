@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 556"
-location: "L79"
+community: "version_routes.py"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/version_routespy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/version_routespy

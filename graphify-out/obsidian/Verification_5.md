@@ -1,17 +1,23 @@
 ---
-source_file: "docs/planning/redteam/03-session-isolation.md"
+source_file: "docs/planning/v0.8/AGENTSHROUD_PLAN-RESET-20260222-0912.md"
 type: "document"
-community: "Community 608"
-location: "L228"
+community: "Plan: AgentShroud Security Hardening — Real Agent Containment"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_608
+  - community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment
 ---
 
 # Verification
 
 ## Connections
-- [[Implement per-user session isolation using Telegram user ID]] - `contains` [EXTRACTED]
+- [[FINAL Network Lockdown Activation]] - `contains` [EXTRACTED]
+- [[P0 Fix 54 Pre-Existing Test Failures ✅ DONE — PR 23 open]] - `contains` [EXTRACTED]
+- [[P1 HTTP CONNECT Proxy + Domain Allowlist]] - `contains` [EXTRACTED]
+- [[P2 Credential Isolation (op-proxy)]] - `contains` [EXTRACTED]
+- [[P3 Channel Ownership — Telegram + Email]] - `contains` [EXTRACTED]
+- [[P4 Wire MCP Proxy]] - `contains` [EXTRACTED]
+- [[P5 Wire SecurityPipeline to forward]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_608
+#graphify/document #graphify/EXTRACTED #community/Plan_AgentShroud_Security_Hardening__Real_Agent_Containment

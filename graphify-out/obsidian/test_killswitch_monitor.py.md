@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "code"
-community: "Community 92"
+community: "KillSwitchConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/KillSwitchConfig
 ---
 
 # test_killswitch_monitor.py
@@ -16,5 +16,7 @@ tags:
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[TestKillSwitchConfig_1]] - `contains` [EXTRACTED]
 - [[TestKillSwitchMonitor]] - `contains` [EXTRACTED]
+- [[killswitch_config.py]] - `imports_from` [EXTRACTED]
+- [[killswitch_monitor.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_92
+#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig

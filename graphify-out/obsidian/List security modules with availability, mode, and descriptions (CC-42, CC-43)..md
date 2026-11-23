@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "Community 10"
+community: "soc/router.py"
 location: "L1814"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # List security modules with availability, mode, and descriptions (CC-42, CC-43).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_10
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

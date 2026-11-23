@@ -1,12 +1,12 @@
 ---
 source_file: "branding/colors/palette.md"
 type: "document"
-community: "Community 395"
+community: "AgentShroud Color Palette"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/AgentShroud_Color_Palette
 ---
 
 # Secondary Colors
@@ -17,4 +17,4 @@ tags:
 - [[Ice Blue]] - `contains` [EXTRACTED]
 - [[Steel Blue]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Color_Palette

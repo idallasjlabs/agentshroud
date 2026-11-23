@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: ""
 type: "code"
-community: "Community 35"
-location: "L200"
+community: "DockerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_35
+  - community/DockerEngine
 ---
 
 # Any
 
 ## Connections
-- [[.enforce()_1]] - `references` [EXTRACTED]
-- [[.evaluate()_1]] - `references` [EXTRACTED]
-- [[.from_dict()_7]] - `references` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
+- [[dot-inspect()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_35
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

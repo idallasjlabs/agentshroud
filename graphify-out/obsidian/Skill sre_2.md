@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-sre.md"
+source_file: ".agents/agents/i-sre.md"
 type: "document"
-community: "Community 2262"
+community: ".agents/agents/i-sre.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2262
+  - community/agents/agents/i-sremd
 ---
 
 # Skill: sre
 
 ## Connections
-- [[i-sre_1]] - `contains` [EXTRACTED]
+- [[dot-agentsagentsi-sre]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2262
+#graphify/document #graphify/EXTRACTED #community/agents/agents/i-sremd

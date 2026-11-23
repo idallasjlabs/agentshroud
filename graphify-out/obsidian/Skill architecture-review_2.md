@@ -1,17 +1,17 @@
 ---
 source_file: ".cursor/agents/i-architecture-review.md"
 type: "document"
-community: "Community 2247"
+community: ".cursor/agents/i-architecture-review.md"
 location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2247
+  - community/cursor/agents/i-architecture-reviewmd
 ---
 
 # Skill: architecture-review
 
 ## Connections
-- [[i-architecture-review_1]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsi-architecture-review]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2247
+#graphify/document #graphify/EXTRACTED #community/cursor/agents/i-architecture-reviewmd

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/audit-specification.md"
 type: "document"
-community: "Community 217"
+community: "AgentShroud Audit Specification"
 location: "L253"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_217
+  - community/AgentShroud_Audit_Specification
 ---
 
 # Tier-Based Retention Strategy
@@ -18,4 +18,4 @@ tags:
 - [[Tier 3 Debug and Diagnostic Events (1 Year)]] - `contains` [EXTRACTED]
 - [[Tier 4 High-Volume Events (90 Days)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_217
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Audit_Specification

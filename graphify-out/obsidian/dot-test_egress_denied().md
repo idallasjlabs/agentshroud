@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "_coerce_to_ws_event()"
+community: "soc/models.py"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_coerce_to_ws_event
+  - community/soc/modelspy
 ---
 
 # .test_egress_denied()
@@ -15,4 +15,4 @@ tags:
 - [[TestCoerceToWSEvent]] - `method` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

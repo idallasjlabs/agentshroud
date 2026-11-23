@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "Any"
-location: "L93"
+community: "EnhancedApprovalQueue"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EnhancedApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `references` [EXTRACTED]
+- [[MemoryTokenStorage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

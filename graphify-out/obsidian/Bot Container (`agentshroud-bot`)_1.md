@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Community 739"
+community: "All Environment Variables"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/All_Environment_Variables
 ---
 
 # Bot Container (`agentshroud-bot`)
@@ -18,4 +18,4 @@ tags:
 - [[Required Secrets (as Docker secret files)]] - `contains` [EXTRACTED]
 - [[Set in `docker-compose.yml`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/All_Environment_Variables

@@ -1,20 +1,16 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: ""
 type: "code"
-community: "Community 254"
-location: "L347"
+community: "MemoryLifecycleManager"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/MemoryLifecycleManager
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_1]] - `references` [EXTRACTED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

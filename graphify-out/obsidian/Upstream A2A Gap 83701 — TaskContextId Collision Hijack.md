@@ -1,19 +1,13 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "concept"
-community: "Community 307"
+community: "Upstream A2A Gap #83701 — Task/ContextId Collision Hijack"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_307
+  - community/Upstream_A2A_Gap_83701__Task/ContextId_Collision_Hijack
 ---
 
 # Upstream A2A Gap #83701 — Task/ContextId Collision Hijack
 
-## Connections
-- [[A2APolicyEngine_1]] - `implements` [EXTRACTED]
-- [[test_a2a_integration.py]] - `references` [EXTRACTED]
-- [[test_a2a_policy.py]] - `references` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `references` [EXTRACTED]
-
-#graphify/concept #graphify/EXTRACTED #community/Community_307
+#graphify/concept #graphify/EXTRACTED #community/Upstream_A2A_Gap_83701__Task/ContextId_Collision_Hijack

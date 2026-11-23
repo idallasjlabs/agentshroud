@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Canvas Skill"
+community: "TestRBACConfig"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/TestRBACConfig
 ---
 
 # .test_default_config_initialization()
 
 ## Connections
-- [[RBACConfig]] - `calls` [EXTRACTED]
 - [[Test default RBAC configuration initialization.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/code #graphify/EXTRACTED #community/TestRBACConfig

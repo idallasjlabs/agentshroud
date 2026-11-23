@@ -1,11 +1,11 @@
 ---
 source_file: ".semgrep.yml"
 type: "document"
-community: "Community 162"
+community: "AgentShroud Semgrep SAST Configuration"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_162
+  - community/AgentShroud_Semgrep_SAST_Configuration
 ---
 
 # AgentShroud Semgrep SAST Configuration
@@ -24,4 +24,4 @@ tags:
 - [[Rule agentshroud-subprocess-shell-true]] - `references` [EXTRACTED]
 - [[Rule agentshroud-subprocess-unvalidated-input]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_162
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Semgrep_SAST_Configuration

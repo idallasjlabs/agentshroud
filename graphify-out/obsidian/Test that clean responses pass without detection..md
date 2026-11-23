@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "Community 233"
+community: "OutputCanary"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_233
+  - community/OutputCanary
 ---
 
 # Test that clean responses pass without detection.
 
 ## Connections
-- [[.test_clean_response_passes()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_clean_response_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_233
+#graphify/rationale #graphify/EXTRACTED #community/OutputCanary

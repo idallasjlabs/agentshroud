@@ -1,42 +1,21 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "Community 254"
-location: "L25"
+community: "ingest_api/config.py"
+location: "L275"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # AuditExportConfig
 
 ## Connections
-- [[.__init__()_68]] - `method` [EXTRACTED]
-- [[.__init__()_69]] - `references` [EXTRACTED]
-- [[._default_jsonld_context()]] - `method` [EXTRACTED]
-- [[.export_config()]] - `calls` [EXTRACTED]
-- [[AuditEvent_1]] - `uses` [INFERRED]
-- [[AuditStore_1]] - `uses` [INFERRED]
-- [[AuthRequired]] - `uses` [INFERRED]
-- [[Configuration for audit export functionality.]] - `rationale_for` [EXTRACTED]
-- [[Exception_1]] - `uses` [INFERRED]
-- [[MCPProxyRequest]] - `uses` [INFERRED]
-- [[MCPResultRequest]] - `uses` [INFERRED]
-- [[OpProxyRequest]] - `uses` [INFERRED]
-- [[Request_2]] - `uses` [INFERRED]
-- [[SSHExecRequest]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest]] - `uses` [INFERRED]
-- [[TestAuditEvent]] - `uses` [INFERRED]
-- [[TestAuditExporter]] - `uses` [INFERRED]
-- [[TestAuditStore]] - `uses` [INFERRED]
-- [[TestAuditStoreAnchoredVerify]] - `uses` [INFERRED]
-- [[TestAuditStoreBotId]] - `uses` [INFERRED]
-- [[TestAuditStoreConcurrentAppend]] - `uses` [INFERRED]
-- [[WebSocket_2]] - `uses` [INFERRED]
-- [[audit_export.py]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[soc_export()]] - `calls` [EXTRACTED]
-- [[test_audit_export.py]] - `imports` [EXTRACTED]
+- [[dot-model_post_init()]] - `method` [EXTRACTED]
+- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[Configuration for compliance audit export functionality.]] - `rationale_for` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
+- [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

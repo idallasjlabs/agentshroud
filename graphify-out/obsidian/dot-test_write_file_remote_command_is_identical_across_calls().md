@@ -12,9 +12,15 @@ tags:
 # .test_write_file_remote_command_is_identical_across_calls()
 
 ## Connections
-- [[SSHProxy_1]] - `calls` [EXTRACTED]
+- [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
-- [[The remote command string must not vary with request content —         proving i]] - `rationale_for` [EXTRACTED]
+- [[The remote command string must not vary with request content — proving it…]] - `rationale_for` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
+- [[communicate()_1]] - `contains` [EXTRACTED]
+- [[fake_create_subprocess_exec()_2]] - `contains` [EXTRACTED]
+- [[fake_create_subprocess_exec()_3]] - `indirect_call` [INFERRED]
+- [[kill()_1]] - `contains` [EXTRACTED]
+- [[wait()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHProxy

@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: ""
 type: "code"
-community: "Community 122"
-location: "L132"
+community: "archive_old_events"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/archive_old_events
 ---
 
 # datetime
 
 ## Connections
-- [[.register_credential()]] - `references` [EXTRACTED]
-- [[CredentialRotationPolicy_1]] - `uses` [INFERRED]
-- [[KeyRotationConfig_1]] - `uses` [INFERRED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[archive_old_events()]] - `references` [EXTRACTED]
+- [[audit_archive.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_122
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

@@ -1,55 +1,48 @@
 ---
 type: community
-cohesion: 0.10
-members: 40
+members: 35
 ---
 
 # test_soc_egress_endpoints.py
 
-**Cohesion:** 0.10 - loosely connected
-**Members:** 40 nodes
+**Members:** 35 nodes
 
 ## Members
-- [[dot-test_base64_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_classic_override_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_classic_payloads_individually()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_context_injection_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_detection_breakdown_by_category()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_encoding_bypass_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_multilingual_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_overall_detection_rate_meets_threshold()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_payload_count_meets_minimum()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_persona_hijack_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_prompt_extraction_detection_rate()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_url_encoded_payload_normalized()]] - code - gateway/tests/test_adversarial_injection.py
-- [[dot-test_zero_width_space_stripped()]] - code - gateway/tests/test_adversarial_injection.py
-- [[Classic instruction-override payloads — should have near-100% detection.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Combined detected if ANY defense layer triggers.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Context  document retrieval poisoning payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Encoding bypass variants — validates InputNormalizer multi-pass decode.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[End-to-end all 110+ payloads against combined defense layer.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Ensure the payload library stays above 100 entries (CI regression gate).]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[HeuristicClassifier]] - code - gateway/tests/test_adversarial_injection.py
-- [[Multilingual injection variants.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Persona hijack  DAN-style payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[PromptGuard]] - code - gateway/tests/test_adversarial_injection.py
-- [[Report per-category detection rates for observability (not a gate).]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Return True if HeuristicClassifier flags as injection or uncertain.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Return True if InputNormalizer changes the text (encoding detected).]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[Return True if PromptGuard assigns a non-zero score or blocks.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[System prompt extraction payloads.]] - rationale - gateway/tests/test_adversarial_injection.py
-- [[TestClassicOverride]] - code - gateway/tests/test_adversarial_injection.py
-- [[TestContextInjection]] - code - gateway/tests/test_adversarial_injection.py
-- [[TestEncodingBypass]] - code - gateway/tests/test_adversarial_injection.py
-- [[TestMultilingual]] - code - gateway/tests/test_adversarial_injection.py
-- [[TestOverallDetectionRate]] - code - gateway/tests/test_adversarial_injection.py
-- [[TestPersonaHijack]] - code - gateway/tests/test_adversarial_injection.py
-- [[TestPromptExtraction]] - code - gateway/tests/test_adversarial_injection.py
-- [[_any_detector_fires()]] - code - gateway/tests/test_adversarial_injection.py
-- [[_heuristic_detects()]] - code - gateway/tests/test_adversarial_injection.py
-- [[_normalizer_transforms()]] - code - gateway/tests/test_adversarial_injection.py
-- [[_prompt_guard_detects()]] - code - gateway/tests/test_adversarial_injection.py
-- [[test_adversarial_injection.py]] - code - gateway/tests/test_adversarial_injection.py
+- [[Limit param caps the number of returned items.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
+- [[Returns empty result when scanner_result_history is empty.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
+- [[Returns scanner events from app_state.scanner_result_history.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
+- [[Status query param filters by summary.status.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
+- [[asyncio_51]] - code
+- [[cleanup_expired()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[client()_13]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[fixture_91]] - code
+- [[get_pending_requests()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[run_clamscan()_1]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[run_trivy_scan()_1]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_egress_add_remove_rule_and_risk()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_egress_emergency_toggle()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_egress_log_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_egress_pending_endpoint_includes_summary()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_egress_rules_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_privacy_policy_and_audit_endpoints()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_scan_all_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_scanners_history_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_scanners_summary_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_correlation_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_events_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_export_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_export_invalid_format()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_report_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_manage_soc_report_falls_back_to_contributor_logs()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_outbound_quarantine_endpoints()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_quarantine_list_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_quarantine_release_and_discard_flow()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_quarantine_summary_endpoint()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_soc_egress_endpoints.py]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_soc_scanners_recent_empty()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_soc_scanners_recent_limit()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_soc_scanners_recent_returns_history()]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[test_soc_scanners_recent_status_filter()]] - code - gateway/tests/test_soc_egress_endpoints.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,14 +52,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_PromptGuard]]
-- 10 edges to [[_COMMUNITY_HeuristicClassifier]]
-- 9 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
-- 4 edges to [[_COMMUNITY_TestHeuristicClassifierDirectly]]
+- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_app]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
-- [[test_adversarial_injection.py]] - degree 16, connects to 4 communities
-- [[HeuristicClassifier]] - degree 15, connects to 3 communities
-- [[PromptGuard]] - degree 15, connects to 3 communities
-- [[TestEncodingBypass]] - degree 9, connects to 3 communities
-- [[TestOverallDetectionRate]] - degree 8, connects to 2 communities
+- [[test_soc_egress_endpoints.py]] - degree 28, connects to 2 communities
+- [[client()_13]] - degree 4, connects to 2 communities
+- [[test_manage_soc_events_endpoint()]] - degree 3, connects to 1 community
+- [[test_manage_soc_report_endpoint()]] - degree 3, connects to 1 community

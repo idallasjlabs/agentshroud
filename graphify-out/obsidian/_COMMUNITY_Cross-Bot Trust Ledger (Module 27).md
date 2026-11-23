@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Cross-Bot Trust Ledger (Module 27)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[test_wakeword_statestubsaudio.h]] - code - firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h
+- [[Cross-Bot Trust Ledger (Module 27)]] - code - gateway/security/cross_bot_trust_ledger.py
 
 ## Live Query (requires Dataview plugin)
 

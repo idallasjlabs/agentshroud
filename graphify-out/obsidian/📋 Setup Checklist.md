@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/APPLE-SERVICES-SETUP.md"
 type: "document"
-community: "Community 348"
+community: "Apple Services Setup Guide"
 location: "L151"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_348
+  - community/Apple_Services_Setup_Guide
 ---
 
 # 📋 Setup Checklist
@@ -16,6 +16,6 @@ tags:
 - [[Apple ID Creation]] - `contains` [EXTRACTED]
 - [[Apple Services Setup Guide]] - `contains` [EXTRACTED]
 - [[Test Access]] - `contains` [EXTRACTED]
-- [[iCloud Services_8]] - `contains` [EXTRACTED]
+- [[iCloud Services_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_348
+#graphify/document #graphify/EXTRACTED #community/Apple_Services_Setup_Guide

@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: ".test_gives_up_and_marks_sent_after_max_retries()"
+community: ".test_gives_up_and_marks_sent_after_max_retries"
 location: "L1263"
 tags:
   - graphify/code

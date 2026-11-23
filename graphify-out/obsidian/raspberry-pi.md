@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/raspberry-pi.md"
 type: "document"
-community: "Community 726"
+community: "TELEGRAM_ISSUES.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_726
+  - community/TELEGRAM_ISSUESmd
 ---
 
 # raspberry-pi.md
@@ -19,6 +19,5 @@ tags:
 - [[Secrets Setup Script (dockersecretssetup-secrets.sh)]] - `references` [EXTRACTED]
 - [[Tailscale Remote Access (Pi)]] - `references` [EXTRACTED]
 - [[agentshroud.yaml Configuration File]] - `references` [EXTRACTED]
-- [[deployment]] - `references` [AMBIGUOUS]
 
-#graphify/document #graphify/EXTRACTED #community/Community_726
+#graphify/document #graphify/EXTRACTED #community/TELEGRAM_ISSUESmd

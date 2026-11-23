@@ -1,29 +1,23 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 855"
+community: "test_group_isolation.py"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_855
+  - community/test_group_isolationpy
 ---
 
 # TestGroupMemoryNamespaceIsolation
 
 ## Connections
-- [[.test_group_a_write_invisible_from_group_b()]] - `method` [EXTRACTED]
-- [[.test_group_b_write_invisible_from_group_a()]] - `method` [EXTRACTED]
-- [[.test_group_id_uses_group_prefix_namespace()]] - `method` [EXTRACTED]
-- [[.test_group_memory_physically_isolated()]] - `method` [EXTRACTED]
-- [[.test_group_writes_are_independent_namespaces()]] - `method` [EXTRACTED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[SharedMemoryManager]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_group_a_write_invisible_from_group_b()_1]] - `method` [EXTRACTED]
+- [[dot-test_group_b_write_invisible_from_group_a()]] - `method` [EXTRACTED]
+- [[dot-test_group_id_uses_group_prefix_namespace()]] - `method` [EXTRACTED]
+- [[dot-test_group_memory_physically_isolated()]] - `method` [EXTRACTED]
+- [[dot-test_group_writes_are_independent_namespaces()]] - `method` [EXTRACTED]
 - [[Writes in group-A must not be readable from group-B.]] - `rationale_for` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_855
+#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy

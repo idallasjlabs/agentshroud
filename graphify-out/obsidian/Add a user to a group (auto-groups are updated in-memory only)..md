@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "Community 223"
+community: "GroupRegistry"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_223
+  - community/GroupRegistry
 ---
 
 # Add a user to a group (auto-groups are updated in-memory only).
 
 ## Connections
-- [[.add_member()]] - `rationale_for` [EXTRACTED]
+- [[dot-add_member()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_223
+#graphify/rationale #graphify/EXTRACTED #community/GroupRegistry

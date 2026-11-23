@@ -1,18 +1,18 @@
 ---
 source_file: "scripts/smoke.d/test-skills-sync.sh"
 type: "code"
-community: "Community 710"
+community: "test-skills-sync.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_710
+  - community/test-skills-syncsh
 ---
 
 # test-skills-sync.sh script
 
 ## Connections
-- [[check()_6]] - `calls` [EXTRACTED]
+- [[check()_5]] - `calls` [EXTRACTED]
 - [[test-skills-sync.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_710
+#graphify/code #graphify/EXTRACTED #community/test-skills-syncsh

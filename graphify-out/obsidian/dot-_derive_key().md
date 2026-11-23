@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "PortManager"
+community: "EncryptedStore"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/EncryptedStore
 ---
 
 # ._derive_key()
@@ -18,4 +18,4 @@ tags:
 - [[EncryptedStore]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "rationale"
-community: "Community 215"
+community: "AgentShroud™ CVE Mitigation Matrix"
 tags:
   - graphify/rationale
-  - graphify/INFERRED
-  - community/Community_215
+  - graphify/EXTRACTED
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Test-Fixture Gitleaks False Positives
@@ -14,4 +14,4 @@ tags:
 - [[CWE Coverage]] - `conceptually_related_to` [INFERRED]
 - [[Gitleaks Allowlist Strategy]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/INFERRED #community/Community_215
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

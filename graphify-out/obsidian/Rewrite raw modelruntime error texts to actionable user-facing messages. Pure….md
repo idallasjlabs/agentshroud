@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "ToolResultInjectionScanner"
+location: "L3929"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/ToolResultInjectionScanner
+---
+
+# Rewrite raw model/runtime error texts to actionable user-facing messages. Pure…
+
+## Connections
+- [[dot-_apply_outbound_model_error_rewrites()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

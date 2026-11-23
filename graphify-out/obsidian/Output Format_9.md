@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/oracle.md"
+source_file: ".opencode/agents/sec-defense.md"
 type: "document"
-community: "Community 1979"
-location: "L28"
+community: "AgentShroud Blue Team Security Auditor"
+location: "L130"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1979
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Output Format
 
 ## Connections
-- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
+- [[AgentShroud Blue Team Security Auditor_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1979
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TestSendTelegramTruncation (2)"
+community: "._run_proxy"
 location: "L531"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSendTelegramTruncation_2
+  - community/_run_proxy
 ---
 
 # __exit__()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_short_text_passes_through_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSendTelegramTruncation_2
+#graphify/code #graphify/EXTRACTED #community/_run_proxy

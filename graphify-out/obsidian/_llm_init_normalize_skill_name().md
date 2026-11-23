@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/scripts/llm-init.sh"
 type: "code"
-community: "_llm_init_agent_reference_paths() (2)"
+community: "llm-init.sh"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_llm_init_agent_reference_paths_2
+  - community/llm-initsh
 ---
 
 # _llm_init_normalize_skill_name()
@@ -16,4 +16,4 @@ tags:
 - [[llm-init()]] - `calls` [EXTRACTED]
 - [[llm-init.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_llm_init_agent_reference_paths_2
+#graphify/code #graphify/EXTRACTED #community/llm-initsh

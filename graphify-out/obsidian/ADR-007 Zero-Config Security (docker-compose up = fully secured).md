@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/adr/ADR-007-zero-config-security.md"
 type: "document"
-community: "Community 858"
+community: "ADR-007: Zero-Config Security (docker-compose up = fully secured)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_858
+  - community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured
 ---
 
 # ADR-007: Zero-Config Security (docker-compose up = fully secured)
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ADR-007-zero-config-security]] - `contains` [EXTRACTED]
 - [[Consequences_6]] - `contains` [EXTRACTED]
-- [[Context_7]] - `contains` [EXTRACTED]
-- [[Decision_8]] - `contains` [EXTRACTED]
-- [[Status_6]] - `contains` [EXTRACTED]
+- [[Context_10]] - `contains` [EXTRACTED]
+- [[Decision_9]] - `contains` [EXTRACTED]
+- [[Status_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_858
+#graphify/document #graphify/EXTRACTED #community/ADR-007_Zero-Config_Security_docker-compose_up__fully_secured

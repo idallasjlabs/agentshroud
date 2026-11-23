@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/recovery/RECOVERY_PLAN.md"
+source_file: "docs/setup/TELEGRAM_SETUP.md"
 type: "document"
-community: "Community 606"
-location: "L507"
+community: "Telegram Bot Setup for OpenClaw"
+location: "L162"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_606
+  - community/Telegram_Bot_Setup_for_OpenClaw
 ---
 
-# NEXT STEPS
+# Next Steps
 
 ## Connections
-- [[AgentShroud Recovery Plan v0.4.0]] - `contains` [EXTRACTED]
+- [[Telegram Bot Setup for OpenClaw]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_606
+#graphify/document #graphify/EXTRACTED #community/Telegram_Bot_Setup_for_OpenClaw

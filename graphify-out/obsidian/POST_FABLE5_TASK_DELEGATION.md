@@ -1,20 +1,17 @@
 ---
 source_file: "docs/planning/v1.0/POST_FABLE5_TASK_DELEGATION.md"
 type: "document"
-community: "Community 386"
+community: "Post-fable-5 Task Delegation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_386
+  - community/Post-fable-5_Task_Delegation
 ---
 
 # POST_FABLE5_TASK_DELEGATION.md
 
 ## Connections
-- [[AgentShroud v1.0.0 Fortress Release Announcement]] - `references` [INFERRED]
-- [[Notes_1]] - `contains` [EXTRACTED]
 - [[Post-fable-5 Task Delegation]] - `contains` [EXTRACTED]
-- [[Task list]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_386
+#graphify/document #graphify/EXTRACTED #community/Post-fable-5_Task_Delegation

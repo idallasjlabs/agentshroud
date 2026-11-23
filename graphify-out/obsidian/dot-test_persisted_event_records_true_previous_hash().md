@@ -15,6 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestAuditChainBounded]] - `method` [EXTRACTED]
-- [[The fire-and-forget SQLite log must record the entry's actual         previous_h]] - `rationale_for` [EXTRACTED]
+- [[The fire-and-forget SQLite log must record the entry's actual previous_hash,…]] - `rationale_for` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

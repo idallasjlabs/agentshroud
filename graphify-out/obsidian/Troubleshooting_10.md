@@ -1,21 +1,22 @@
 ---
-source_file: ".cursor/agents/i-mcpm-aws-profile.md"
+source_file: "docs/setup/BOT_DEVELOPMENT_TEAM_RPI_SETUP.md"
 type: "document"
-community: "Community 182"
-location: "L249"
+community: "Troubleshooting"
+location: "L1683"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Troubleshooting
 ---
 
 # Troubleshooting
 
 ## Connections
-- [[Access Denied_2]] - `contains` [EXTRACTED]
-- [[Token expired (SSO)_2]] - `contains` [EXTRACTED]
-- [[Unable to locate credentials_2]] - `contains` [EXTRACTED]
-- [[MCP Not Using Profile_2]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Dev Environment — Raspberry Pi 4 (8GB) Setup Checklist]] - `contains` [EXTRACTED]
+- [[Docker Permission Denied]] - `contains` [EXTRACTED]
+- [[High Temperature]] - `contains` [EXTRACTED]
+- [[Out of Memory]] - `contains` [EXTRACTED]
+- [[SSH Connection Refused]] - `contains` [EXTRACTED]
+- [[Slow Builds]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_182
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting

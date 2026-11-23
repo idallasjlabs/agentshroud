@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/sec-offense/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/SKILL.md"
 type: "document"
-community: "Community 1120"
+community: "AgentShroud Red Team Adversarial Tester"
 location: "L258"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1120
+  - community/AgentShroud_Red_Team_Adversarial_Tester
 ---
 
 # Phase 6: Detection Validation
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Attack Phases_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1120
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Red_Team_Adversarial_Tester

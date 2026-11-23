@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
 type: "code"
-community: "Community 382"
+community: "generate_image.py"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/generate_imagepy
 ---
 
 # get_api_key()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Get API key from argument first, then environment.]] - `rationale_for` [EXTRACTED]
 - [[generate_image.py]] - `contains` [EXTRACTED]
-- [[main()_33]] - `calls` [EXTRACTED]
+- [[main()_15]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/generate_imagepy

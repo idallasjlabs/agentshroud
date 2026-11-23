@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
-location: "L521"
+community: "patch"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/patch
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `calls` [EXTRACTED]
+- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/patch

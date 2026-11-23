@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SkillGuard"
-location: "L768"
+community: "ingest_api/main.py"
+location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/ingest_api/mainpy
 ---
 
 # .set_emergency_block_all()
@@ -15,4 +15,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[Enabledisable emergency global egress deny.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

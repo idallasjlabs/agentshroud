@@ -1,14 +1,14 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_edit_message_date.py"
 type: "code"
-community: "Community 2482"
+community: "patch_telegram_edit_message_date.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2482
+  - community/patch_telegram_edit_message_datepy
 ---
 
 # patch_telegram_edit_message_date.py
 
-#graphify/code #graphify/EXTRACTED #community/Community_2482
+#graphify/code #graphify/EXTRACTED #community/patch_telegram_edit_message_datepy

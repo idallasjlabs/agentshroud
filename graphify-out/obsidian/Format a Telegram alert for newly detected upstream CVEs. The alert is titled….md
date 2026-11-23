@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "format_upstream_cve_alert() (2)"
+community: "daily_cve_report.py"
 location: "L610"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert_2
+  - community/daily_cve_reportpy
 ---
 
 # Format a Telegram alert for newly detected upstream CVEs. The alert is titled…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[format_upstream_cve_alert()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert_2
+#graphify/rationale #graphify/EXTRACTED #community/daily_cve_reportpy

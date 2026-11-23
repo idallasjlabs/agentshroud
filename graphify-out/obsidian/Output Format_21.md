@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".opencode/agents/i-sec.md"
 type: "document"
-community: "Community 744"
-location: "L82"
+community: "Skill: Security Review (SEC)"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_744
+  - community/Skill_Security_Review_SEC
 ---
 
 # Output Format
 
 ## Connections
-- [[Skill Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_744
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

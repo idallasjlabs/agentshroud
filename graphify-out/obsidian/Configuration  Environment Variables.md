@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 833"
-location: "L49"
+community: "Function Details"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_833
+  - community/Function_Details
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_833
+#graphify/document #graphify/EXTRACTED #community/Function_Details

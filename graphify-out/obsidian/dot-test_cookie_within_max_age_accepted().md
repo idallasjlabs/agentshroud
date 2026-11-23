@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "_wrap_response()"
+community: "TestConsentCookieBinding"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/TestConsentCookieBinding
 ---
 
 # .test_cookie_within_max_age_accepted()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestConsentCookieBinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/TestConsentCookieBinding

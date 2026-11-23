@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "Community 60"
-location: "L51"
+community: "KeyRotationManager"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_60
+  - community/KeyRotationManager
 ---
 
 # manager()
 
 ## Connections
-- [[MiddlewareManager with real session_manager, all other deps mocked.      Uses __]] - `rationale_for` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[KeyRotationConfig]] - `uses` [INFERRED]
+- [[KeyRotationManager]] - `uses` [INFERRED]
+- [[fixture_13]] - `references` [EXTRACTED]
+- [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_60
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

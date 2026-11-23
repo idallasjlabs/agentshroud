@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 2316"
+community: "TestComplianceMaths"
 location: "L1071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2316
+  - community/TestComplianceMaths
 ---
 
 # TestComplianceMaths
 
 ## Connections
-- [[.test_compliance_levels()]] - `method` [EXTRACTED]
-- [[.test_iec_sl_levels()]] - `method` [EXTRACTED]
-- [[.test_weighted_subscore_empty_map()]] - `method` [EXTRACTED]
-- [[.test_weighted_subscore_partial()]] - `method` [EXTRACTED]
+- [[dot-test_compliance_levels()]] - `method` [EXTRACTED]
+- [[dot-test_iec_sl_levels()]] - `method` [EXTRACTED]
+- [[dot-test_weighted_subscore_empty_map()]] - `method` [EXTRACTED]
+- [[dot-test_weighted_subscore_partial()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2316
+#graphify/code #graphify/EXTRACTED #community/TestComplianceMaths

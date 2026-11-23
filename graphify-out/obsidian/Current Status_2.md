@@ -1,17 +1,17 @@
 ---
-source_file: "docs/data/README.md"
+source_file: "docs/setup/IMESSAGE_PERMISSION_FIX.md"
 type: "document"
-community: "Community 589"
-location: "L13"
+community: "How to Fix (5 Minutes)"
+location: "L89"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_589
+  - community/How_to_Fix_5_Minutes
 ---
 
 # Current Status
 
 ## Connections
-- [[Data Documentation]] - `contains` [EXTRACTED]
+- [[iMessage Permission Fix - Step by Step]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_589
+#graphify/document #graphify/EXTRACTED #community/How_to_Fix_5_Minutes

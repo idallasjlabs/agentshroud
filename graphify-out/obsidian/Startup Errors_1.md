@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Community 334"
-location: "L1"
+community: "Gateway Container Startup Failures"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/Gateway_Container_Startup_Failures
 ---
 
-# Startup Errors.md
+# Startup Errors
 
 ## Connections
-- [[Container Errors]] - `references` [EXTRACTED]
-- [[First Time Setup]] - `references` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
-- [[Troubleshooting Matrix]] - `references` [EXTRACTED]
+- [[Bot Container Startup Failures]] - `contains` [EXTRACTED]
+- [[Gateway Container Startup Failures]] - `contains` [EXTRACTED]
+- [[Related Notes_9]] - `contains` [EXTRACTED]
+- [[Startup Errors]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures

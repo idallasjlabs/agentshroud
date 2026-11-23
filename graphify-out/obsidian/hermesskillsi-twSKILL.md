@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "OpenClaw Workspace Usage Guide"
+community: "hermes/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Workspace_Usage_Guide
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # hermes/skills/i-tw/SKILL.md
@@ -17,8 +17,8 @@ tags:
 - [[Expected INFO Re-queued 3 jobs]] - `contains` [EXTRACTED]
 - [[If not → escalate to field team via ops-alerts]] - `contains` [EXTRACTED]
 - [[Query the control DB]] - `contains` [EXTRACTED]
-- [[Skill Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
 - [[INFO Extracted 1,204 records → s3my-bucketlanding...]] - `contains` [EXTRACTED]
-- [[→ {site site1, test_mode True, output_prefix _testsite1}_1]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

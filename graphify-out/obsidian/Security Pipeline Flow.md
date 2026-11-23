@@ -1,20 +1,18 @@
 ---
 source_file: "docs/vault/09 - Diagrams/Security Pipeline Flow.md"
 type: "document"
-community: "Community 1556"
+community: "Security Pipeline Flow"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1556
+  - community/Security_Pipeline_Flow
 ---
 
 # Security Pipeline Flow.md
 
 ## Connections
-- [[Full System Flowchart]] - `references` [EXTRACTED]
 - [[Security Pipeline Flow_1]] - `contains` [EXTRACTED]
 - [[Security Pipeline Layer Order]] - `conceptually_related_to` [EXTRACTED]
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1556
+#graphify/document #graphify/EXTRACTED #community/Security_Pipeline_Flow

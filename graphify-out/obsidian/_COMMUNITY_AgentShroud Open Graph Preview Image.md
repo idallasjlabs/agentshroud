@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Open Graph Preview Image
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 128x128 (AgentShroud logo mark)]] - image - branding/favicons/favicon-128x128.png
+- [[AgentShroud Open Graph Preview Image]] - image - branding/social/open-graph-1200x630.png
 
 ## Live Query (requires Dataview plugin)
 

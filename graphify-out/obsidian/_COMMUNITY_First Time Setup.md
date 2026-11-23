@@ -1,44 +1,25 @@
 ---
 type: community
-cohesion: 0.08
-members: 29
+members: 12
 ---
 
 # First Time Setup
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 29 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[1. GitHub MCP_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[10. Troubleshooting]] - document - firmware/voice-terminal/SETUP.md
-- [[2. Atlassian MCP (Jira + Confluence)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[3. AWS API MCP_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[AWS Token expired (SSO)]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[AWS Unable to locate credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Atlassian OAuth flow failed]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Authentication Issues]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Authentication Issues_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Available MCP Servers_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Boot loop — abort() in i2c.c before app_main]] - document - firmware/voice-terminal/SETUP.md
-- [[Button component v4.x API error at build time]] - document - firmware/voice-terminal/SETUP.md
-- [[Common Errors]] - document - .agents/skills/i-mcpm/SKILL.md
-- [[Common Errors_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[First reply is slow (~5-7 s extra thinking)]] - document - firmware/voice-terminal/SETUP.md
-- [[GitHub Bad credentials]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[GitHub Docker image not found]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[LVGL compile error — undefined symbol `lv_screen_active` or `.rotate` field]] - document - firmware/voice-terminal/SETUP.md
-- [[MCP Troubleshooting]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Opening serial monitor resets the device]] - document - firmware/voice-terminal/SETUP.md
-- [[PSRAM shows 0 KB in logs]] - document - firmware/voice-terminal/SETUP.md
-- [[Role_23]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[Troubleshooting_16]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Undeclared symbol `lv_font_montserrat_28`]] - document - firmware/voice-terminal/SETUP.md
-- [[WebSocket connect times out forever (handshake reaches HTTP 101, then dies)]] - document - firmware/voice-terminal/SETUP.md
-- [[WiFi won't connect — reason=201 NO_AP_FOUND]] - document - firmware/voice-terminal/SETUP.md
-- [[hermesskillsi-mcpmSKILL]] - document - docker/config/hermes/skills/i-mcpm/SKILL.md
-- [[sdkconfig.defaults SSID change doesn't take]] - document - firmware/voice-terminal/SETUP.md
+- [[First Time Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Prerequisites_2]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Related Notes_18]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 1 Create Secret Files]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 2 Configure agentshroud.yaml]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 3 Configure 1Password Items]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 4 Build Container Images]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 5 Start Containers]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 6 Verify Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 7 Configure iOS Shortcuts (Optional)]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Step 8 Verify Security Posture]] - document - docs/vault/08 - Runbooks/First Time Setup.md
+- [[Troubleshooting First Setup]] - document - docs/vault/08 - Runbooks/First Time Setup.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -48,12 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_AgentShroud Gateway (Trust Zone 1) holds 1Password service account, enforces policy, signs ledger entries, controls approval queue, HMACJWT validation]]
-- 1 edge to [[_COMMUNITY_Sprint Cadence Decision]]
-- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
-- 1 edge to [[_COMMUNITY_API Keys Setup Guide]]
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
 
 ## Top bridge nodes
-- [[10. Troubleshooting]] - degree 23, connects to 3 communities
-- [[Troubleshooting_16]] - degree 6, connects to 1 community
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - degree 6, connects to 1 community
+- [[First Time Setup]] - degree 12, connects to 1 community

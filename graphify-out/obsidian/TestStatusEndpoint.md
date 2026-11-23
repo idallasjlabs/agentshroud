@@ -1,21 +1,19 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 2050"
+community: "app"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2050
+  - community/app
 ---
 
 # TestStatusEndpoint
 
 ## Connections
-- [[.test_status_endpoint()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[StreamHead]] - `uses` [INFERRED]
+- [[dot-test_status_endpoint()]] - `method` [EXTRACTED]
 - [[Test status endpoint.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2050
+#graphify/code #graphify/EXTRACTED #community/app

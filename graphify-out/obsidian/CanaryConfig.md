@@ -1,23 +1,24 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Community 1052"
-location: "L19"
+community: "OutputCanary"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1052
+  - community/OutputCanary
 ---
 
 # CanaryConfig
 
 ## Connections
-- [[.__init__()_73]] - `references` [EXTRACTED]
-- [[.test_custom_config()_1]] - `calls` [EXTRACTED]
-- [[.test_no_canaries()]] - `calls` [EXTRACTED]
-- [[.test_scan_response_no_block_when_block_disabled()]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `uses` [INFERRED]
-- [[canary_tripwire.py]] - `contains` [EXTRACTED]
-- [[test_canary_tripwire.py]] - `imports` [EXTRACTED]
+- [[dot-__init__()_88]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-test_incident_logging()]] - `calls` [EXTRACTED]
+- [[dot-test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
+- [[Configuration for the Output Canary System.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `uses` [INFERRED]
+- [[output_canary.py]] - `contains` [EXTRACTED]
+- [[test_output_canary.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1052
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

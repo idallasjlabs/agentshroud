@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 1248"
-location: "L32"
+community: "app"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/app
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_5]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/app

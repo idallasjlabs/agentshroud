@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/SKILL.md"
+source_file: ".agents/agents/aws.md"
 type: "document"
-community: "Community 242"
-location: "L41"
+community: "AWS Cloud Management & FinOps Agent"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_242
+  - community/AWS_Cloud_Management__FinOps_Agent
 ---
 
 # Rule 2: Default Read-Only
 
 ## Connections
-- [[Operating Rules (Non-Negotiable)_1]] - `contains` [EXTRACTED]
+- [[Operating Rules (Non-Negotiable)_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_242
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps_Agent

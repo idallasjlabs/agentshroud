@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # test-system.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[patch-slack-sdk.sh]] - code - docker/scripts/patch-slack-sdk.sh
-- [[patch-slack-sdk.sh script]] - code - docker/scripts/patch-slack-sdk.sh
+- [[test-system.sh]] - code - docker/scripts/test-system.sh
+- [[test-system.sh script]] - code - docker/scripts/test-system.sh
 
 ## Live Query (requires Dataview plugin)
 

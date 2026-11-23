@@ -1,28 +1,24 @@
 ---
-source_file: "scripts/sunday-upgrade-apply.sh"
+source_file: "scripts/lib/sunday-scan.sh"
 type: "code"
-community: "Community 126"
-location: "L140"
+community: "sunday-scan.sh"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_126
+  - community/sunday-scansh
 ---
 
 # warn()
 
 ## Connections
-- [[_agent_selfcheck()]] - `calls` [EXTRACTED]
-- [[_attempt_rollback()]] - `calls` [EXTRACTED]
-- [[_ensure_build_space()]] - `calls` [EXTRACTED]
-- [[_prune_build_cache()]] - `calls` [EXTRACTED]
-- [[_take_apply_lock()]] - `calls` [EXTRACTED]
-- [[phase_apply()]] - `calls` [EXTRACTED]
-- [[phase_discover()]] - `calls` [EXTRACTED]
-- [[phase_preflight()]] - `calls` [EXTRACTED]
-- [[phase_verify()]] - `calls` [EXTRACTED]
-- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
-- [[sunday-upgrade-apply.sh script]] - `calls` [EXTRACTED]
-- [[write_handoff()]] - `calls` [EXTRACTED]
+- [[_sunday_warn_expiring_acceptances()]] - `calls` [EXTRACTED]
+- [[sunday-scan.sh]] - `defines` [EXTRACTED]
+- [[sunday_deadline_epoch()]] - `calls` [EXTRACTED]
+- [[sunday_ensure_trivy()]] - `calls` [EXTRACTED]
+- [[sunday_resolve_scan_image()]] - `calls` [EXTRACTED]
+- [[sunday_restore_stack()]] - `calls` [EXTRACTED]
+- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[sunday_stop_apply()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_126
+#graphify/code #graphify/EXTRACTED #community/sunday-scansh

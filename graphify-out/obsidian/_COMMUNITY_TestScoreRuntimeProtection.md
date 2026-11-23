@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # TestScoreRuntimeProtection
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[⚠️ MEDIUM-VALUE COMPONENTS (Good Intent, Implementation Gaps)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ HIGH-VALUE SECURITY COMPONENTS (Real Protection)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[✅ OVERALL ASSESSMENT GENUINE SECURITY FRAMEWORK]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
-- [[🔍 NEEDS STRENGTHENING (Risk of Security Theater)]] - document - docs/planning/reviews/phase-review-2026-02-24-final.md
+- [[dot-test_five_running_zero_findings()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_running_with_noncritical_findings()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_one_when_not_run()_2]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_two_with_criticals()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreRuntimeProtection]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit — Real Protection vs. Theater Assessment]] - degree 5, connects to 1 community
+- [[TestScoreRuntimeProtection]] - degree 5, connects to 1 community

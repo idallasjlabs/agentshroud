@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_triage_cve_mitigations.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Path"
-location: "L559"
+community: "_sync"
+location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_sync
 ---
 
 # .test_dry_run_writes_nothing()
 
 ## Connections
-- [[TestMain]] - `method` [EXTRACTED]
-- [[_t()]] - `calls` [EXTRACTED]
+- [[TestSerialization]] - `method` [EXTRACTED]
+- [[_adv()]] - `calls` [EXTRACTED]
+- [[_sync()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_sync

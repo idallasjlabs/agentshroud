@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/summarize/SKILL.md"
 type: "document"
-community: "Community 428"
+community: "Summarize"
 location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_428
+  - community/Summarize
 ---
 
 # Model + keys
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Summarize]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_428
+#graphify/document #graphify/EXTRACTED #community/Summarize

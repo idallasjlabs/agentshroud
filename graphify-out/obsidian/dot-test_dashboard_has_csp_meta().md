@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TestWebSecurity"
 location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestWebSecurity
 ---
 
 # .test_dashboard_has_csp_meta()
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard should have Content-Security-Policy or mention it.]] - `rationale_for` [EXTRACTED]
 - [[TestWebSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestWebSecurity

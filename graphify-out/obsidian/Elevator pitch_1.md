@@ -1,12 +1,12 @@
 ---
-source_file: "docker/config/openclaw/workspace/BRAND.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Community 1365"
+community: "AgentShroud™ Brand Guidelines"
 location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1365
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Elevator pitch
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1365
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

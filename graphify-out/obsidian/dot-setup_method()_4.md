@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "ProxyAction"
-location: "L23"
+community: "patch"
+location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/patch
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `calls` [EXTRACTED]
+- [[TestPodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/patch

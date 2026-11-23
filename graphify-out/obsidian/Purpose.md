@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/apollo/README.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
 type: "document"
-community: "Community 2061"
-location: "L6"
+community: "middleware.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2061
+  - community/middlewarepy
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[middleware.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2061
+#graphify/document #graphify/EXTRACTED #community/middlewarepy

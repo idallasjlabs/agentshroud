@@ -1,28 +1,25 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthSecurityValidator"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_45
+  - community/OAuthSecurityValidator
 ---
 
 # OAuthError
 
 ## Connections
-- [[.check_state_reuse()]] - `calls` [EXTRACTED]
-- [[.validate_request()]] - `calls` [EXTRACTED]
+- [[dot-check_state_reuse()]] - `calls` [EXTRACTED]
+- [[dot-validate_request()]] - `calls` [EXTRACTED]
 - [[ConfusedDeputyError]] - `inherits` [EXTRACTED]
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[Exception_19]] - `inherits` [EXTRACTED]
 - [[PKCEViolation]] - `inherits` [EXTRACTED]
 - [[RedirectMismatch]] - `inherits` [EXTRACTED]
 - [[TestClientValidation]] - `uses` [INFERRED]
-- [[TestConsentCookieBinding]] - `uses` [INFERRED]
-- [[TestPKCE]] - `uses` [INFERRED]
-- [[TestRedirectURI]] - `uses` [INFERRED]
 - [[TestStateValidation]] - `uses` [INFERRED]
-- [[oauth_security.py]] - `contains` [EXTRACTED]
+- [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/README.md"
 type: "document"
-community: "Community 213"
+community: "AgentShroud Docker Configuration"
 location: "L411"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_213
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Verify Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Development_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_213
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

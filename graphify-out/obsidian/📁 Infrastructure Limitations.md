@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/REPORTED_ISSUES.md"
 type: "document"
-community: "Community 501"
+community: "AgentShroud Consolidated Issues Report"
 location: "L102"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_501
+  - community/AgentShroud_Consolidated_Issues_Report
 ---
 
 # 📁 Infrastructure Limitations
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Consolidated Issues Report]] - `contains` [EXTRACTED]
 - [[AgentShroud™ Consolidated Issues Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_501
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report

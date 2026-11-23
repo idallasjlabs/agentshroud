@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 2"
+community: "TestDefaultBotId"
 location: "L5379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/TestDefaultBotId
 ---
 
 # TestDefaultBotId
 
 ## Connections
-- [[.test_contextvar_takes_precedence_over_default()]] - `method` [EXTRACTED]
-- [[.test_default_is_openclaw_when_not_injected()]] - `method` [EXTRACTED]
-- [[.test_injected_default_overrides_openclaw()]] - `method` [EXTRACTED]
-- [[CollaboratorActivityTracker]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
+- [[dot-test_contextvar_takes_precedence_over_default()]] - `method` [EXTRACTED]
+- [[dot-test_default_is_openclaw_when_not_injected()]] - `method` [EXTRACTED]
+- [[dot-test_injected_default_overrides_openclaw()]] - `method` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
-- [[_active_bot_id returns the constructor-injected default when no contextvar is se]] - `rationale_for` [EXTRACTED]
+- [[_active_bot_id returns the constructor-injected default when no contextvar is…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2
+#graphify/code #graphify/EXTRACTED #community/TestDefaultBotId

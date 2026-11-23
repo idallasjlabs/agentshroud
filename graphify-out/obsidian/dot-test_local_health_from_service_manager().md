@@ -1,0 +1,19 @@
+---
+source_file: "gateway/tests/test_soc_edge.py"
+type: "code"
+community: "TestAgentsRegistry"
+location: "L278"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/TestAgentsRegistry
+---
+
+# .test_local_health_from_service_manager()
+
+## Connections
+- [[TestAgentsRegistry]] - `method` [EXTRACTED]
+- [[_bot()_1]] - `calls` [EXTRACTED]
+- [[_rows()]] - `calls` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

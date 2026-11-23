@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "rationale"
-community: "Community 216"
+community: "ContextGuard"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_216
+  - community/ContextGuard
 ---
 
 # Untrusted segment injected after system segment reduces score.
 
 ## Connections
-- [[.test_injected_untrusted_segment_lowers_score()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_injected_untrusted_segment_lowers_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_216
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

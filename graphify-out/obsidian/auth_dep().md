@@ -1,22 +1,28 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 2154"
+community: "app"
 location: "L191"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/app
 ---
 
 # auth_dep()
 
 ## Connections
+- [[dot-teardown_method()_2]] - `indirect_call` [INFERRED]
+- [[dot-test_discard_blocked_message_not_found_returns_error()]] - `indirect_call` [INFERRED]
+- [[dot-test_email_send_routes_through_injectable_service()]] - `indirect_call` [INFERRED]
+- [[dot-test_quarantine_summary_counts_inbound_and_outbound()]] - `indirect_call` [INFERRED]
+- [[dot-test_release_blocked_outbound_marks_item_released()]] - `indirect_call` [INFERRED]
+- [[dot-test_requires_auth()_1]] - `indirect_call` [INFERRED]
 - [[Authentication dependency for protected endpoints]] - `rationale_for` [EXTRACTED]
-- [[HTTPException]] - `calls` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
+- [[client()_16]] - `indirect_call` [INFERRED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_channel_ownership.py]] - `imports` [EXTRACTED]
 - [[test_email_owner_bypasses_pii.py]] - `imports` [EXTRACTED]
 - [[test_forward_stream.py]] - `imports` [EXTRACTED]
@@ -24,4 +30,4 @@ tags:
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_op_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/app

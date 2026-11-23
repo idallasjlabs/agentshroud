@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # CLAUDE.md as the repo constitution
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ToolResultInjectionScanner Test Suite]] - code - gateway/tests/test_tool_injection_scan.py
+- [[CLAUDE.md as the repo constitution]] - rationale - .llm_settings/docs/Claude-Code-TDD-Playbook.md
 
 ## Live Query (requires Dataview plugin)
 

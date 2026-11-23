@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "rationale"
-community: "Community 2154"
+community: "Owner-allowlist checked before PII sanitisation to avoid CVE/date-dense body collapse"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/Owner-allowlist_checked_before_PII_sanitisation_to_avoid_CVE/date-dense_body_collapse
 ---
 
 # Owner-allowlist checked before PII sanitisation to avoid CVE/date-dense body collapse
 
-## Connections
-- [[email_send()]] - `rationale_for` [EXTRACTED]
-
-#graphify/rationale #graphify/EXTRACTED #community/Community_2154
+#graphify/rationale #graphify/EXTRACTED #community/Owner-allowlist_checked_before_PII_sanitisation_to_avoid_CVE/date-dense_body_collapse

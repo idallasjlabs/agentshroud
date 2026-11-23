@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tools/port_manager.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "TrustConfig (2)"
-location: "L88"
+community: "test_mcp_proxy_coverage.py"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig_2
+  - community/test_mcp_proxy_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[PortManager]] - `method` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy

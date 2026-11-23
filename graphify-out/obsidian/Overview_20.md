@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/DEVICE_PAIRING.md"
+source_file: "docs/archive/FUTURE-FEATURES.md"
 type: "document"
-community: "Community 284"
-location: "L8"
+community: "Future Features & Roadmap"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_284
+  - community/Future_Features__Roadmap
 ---
 
 # Overview
 
 ## Connections
-- [[AgentShroud Device Pairing Management]] - `contains` [EXTRACTED]
+- [[Future Features & Roadmap]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_284
+#graphify/document #graphify/EXTRACTED #community/Future_Features__Roadmap

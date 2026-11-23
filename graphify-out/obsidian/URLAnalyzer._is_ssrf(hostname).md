@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Community 720"
+community: "url_analyzer.py"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_720
+  - community/url_analyzerpy
 ---
 
 # URLAnalyzer._is_ssrf(hostname)
 
 ## Connections
-- [[Function Details_15]] - `contains` [EXTRACTED]
+- [[Function Details_26]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_720
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

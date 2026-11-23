@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 30"
+community: "EnhancedApprovalQueue"
 location: "L448"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/EnhancedApprovalQueue
 ---
 
 # Test that approval events are generated for WebSocket notification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_websocket_notifications()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue

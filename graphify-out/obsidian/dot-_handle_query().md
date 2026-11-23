@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "web_proxy.py"
+community: "parse_query"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/parse_query
 ---
 
 # ._handle_query()
@@ -18,4 +18,4 @@ tags:
 - [[forward_query()]] - `calls` [EXTRACTED]
 - [[parse_query()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/parse_query

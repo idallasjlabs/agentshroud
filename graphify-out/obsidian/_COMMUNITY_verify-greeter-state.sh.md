@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # verify-greeter-state.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[agentshroud-redteamreferencessteve-hay-plan]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
-- [[plan_3]] - document - skills/custom/agentshroud-redteam/references/steve-hay-plan.md
+- [[verify-greeter-state.sh]] - code - scripts/verify-greeter-state.sh
+- [[verify-greeter-state.sh script]] - code - scripts/verify-greeter-state.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # run-unit.sh
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[set-model.sh]] - code - docker/scripts/set-model.sh
-- [[set-model.sh script]] - code - docker/scripts/set-model.sh
+- [[run-unit.sh]] - code - scripts/testing/run-unit.sh
+- [[run-unit.sh script]] - code - scripts/testing/run-unit.sh
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 805"
+community: "Trademark Statements"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Trademark_Statements
 ---
 
 # SYSTEM-INSTRUCTIONS-SECURITY.md
@@ -17,4 +17,4 @@ tags:
 - [[System Instructions Credential Security (Ultra-Conservative)]] - `contains` [EXTRACTED]
 - [[bot-capabilities]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Trademark_Statements

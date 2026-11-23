@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Threat Model"
+community: "Vulcan — Subject Matter Auditor"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Threat_Model
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # hermes/skills/i-vulcan/SKILL.md
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Threat_Model
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

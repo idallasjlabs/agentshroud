@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sad/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Community 2093"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2093
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2093
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

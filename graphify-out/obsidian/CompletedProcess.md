@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: ""
 type: "code"
-community: "Community 225"
-location: "L36"
+community: "._run_and_read"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/_run_and_read
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[._run()]] - `references` [EXTRACTED]
+- [[_run_switch()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/code #graphify/EXTRACTED #community/_run_and_read

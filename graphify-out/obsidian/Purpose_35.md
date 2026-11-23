@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/socrates/README.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Community 2098"
-location: "L6"
+community: "url_analyzer.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2098
+  - community/url_analyzerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2098
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

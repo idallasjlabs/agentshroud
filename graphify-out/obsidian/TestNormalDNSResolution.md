@@ -1,25 +1,22 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 72"
+community: "TestNormalDNSResolution"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/TestNormalDNSResolution
 ---
 
 # TestNormalDNSResolution
 
 ## Connections
-- [[.test_common_services_allowed()]] - `method` [EXTRACTED]
-- [[.test_long_but_legitimate_domain()]] - `method` [EXTRACTED]
-- [[.test_monitor_mode_never_blocks()]] - `method` [EXTRACTED]
-- [[.test_normal_domain_allowed()]] - `method` [EXTRACTED]
-- [[.test_subdomain_allowed()]] - `method` [EXTRACTED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[dot-test_common_services_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_long_but_legitimate_domain()]] - `method` [EXTRACTED]
+- [[dot-test_monitor_mode_never_blocks()]] - `method` [EXTRACTED]
+- [[dot-test_normal_domain_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_subdomain_allowed()]] - `method` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/TestNormalDNSResolution

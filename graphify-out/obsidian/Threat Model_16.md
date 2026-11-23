@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
+source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Community 566"
-location: "L15"
+community: "Security Architecture"
+location: "L269"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_566
+  - community/Security_Architecture
 ---
 
 # Threat Model
 
 ## Connections
-- [[health_report.py_2]] - `contains` [EXTRACTED]
+- [[Security Architecture_2]] - `contains` [EXTRACTED]
+- [[What We Don't Protect Against]] - `contains` [EXTRACTED]
+- [[What We Protect Against]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_566
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture

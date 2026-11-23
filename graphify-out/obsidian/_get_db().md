@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 66"
+community: "version_routes.py"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/version_routespy
 ---
 
 # _get_db()
 
 ## Connections
-- [[Connection_2]] - `references` [EXTRACTED]
+- [[Connection_3]] - `references` [EXTRACTED]
 - [[Get SQLite connection for version history.]] - `rationale_for` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[rollback()]] - `calls` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/version_routespy

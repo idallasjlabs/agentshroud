@@ -1,34 +1,20 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 254"
+community: "ingest_api/main.py"
 location: "L158"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_254
+  - graphify/EXTRACTED
+  - community/ingest_api/mainpy
 ---
 
 # OpProxyRequest
 
 ## Connections
-- [[Action_1]] - `uses` [INFERRED]
-- [[ApprovalMode]] - `uses` [INFERRED]
-- [[ApprovalRequest_3]] - `uses` [INFERRED]
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
-- [[AuditExporter]] - `uses` [INFERRED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[LedgerEntry_1]] - `uses` [INFERRED]
-- [[LedgerQueryResponse_1]] - `uses` [INFERRED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[BaseModel_11]] - `inherits` [EXTRACTED]
 - [[Request body for POST credentialsop-proxy.]] - `rationale_for` [EXTRACTED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SSHExecRequest_1]] - `uses` [INFERRED]
-- [[SSHExecResponse]] - `uses` [INFERRED]
-- [[SSHWriteFileRequest_1]] - `uses` [INFERRED]
-- [[SSHWriteFileResponse]] - `uses` [INFERRED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_254
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

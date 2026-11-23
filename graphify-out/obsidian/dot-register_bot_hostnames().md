@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "Deploying AgentShroud on macOS (Apple Silicon / Intel)"
-location: "L278"
+community: "middleware.py"
+location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+  - community/middlewarepy
 ---
 
 # .register_bot_hostnames()
 
 ## Connections
-- [[Add bot container hostnames to the infrastructure detection patterns.          C]] - `rationale_for` [EXTRACTED]
+- [[Add bot container hostnames to the infrastructure detection patterns. Called at…]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Deploying_AgentShroud_on_macOS_Apple_Silicon_/_Intel
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,20 +1,25 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "Community 381"
+community: "TelegramAPIProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_381
+  - community/TelegramAPIProxy
 ---
 
 # slack_proxy.py
 
 ## Connections
+- [[Slack API Proxy — secures outbound bot → Slack traffic. Outbound Bot Slack API…]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy]] - `contains` [EXTRACTED]
 - [[TelegramAPIProxy]] - `imports` [EXTRACTED]
-- [[collaborator_responses.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[read_secret()]] - `imports` [EXTRACTED]
+- [[secrets.py]] - `imports` [EXTRACTED]
+- [[slack_socket_client.py]] - `imports_from` [EXTRACTED]
+- [[test_slack_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_slack_proxy_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_381
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

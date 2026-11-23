@@ -1,18 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L104"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_38
+  - graphify/INFERRED
+  - community/soc/modelspy
 ---
 
 # TestContributorRecord
 
 ## Connections
-- [[.test_construction()_1]] - `method` [EXTRACTED]
+- [[dot-test_construction()]] - `method` [EXTRACTED]
+- [[ContributorRecord]] - `uses` [INFERRED]
+- [[Platform]] - `uses` [INFERRED]
+- [[UserRole]] - `uses` [INFERRED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/INFERRED #community/soc/modelspy

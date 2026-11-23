@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "ingest_api/config.py"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ingest_api/configpy
 ---
 
 # .test_ssh_hosts_list()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHHosts]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,17 +1,23 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Community 833"
-location: "L1"
+community: "forwarder.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_833
+  - community/forwarderpy
 ---
 
-# forwarder.py.md
+# forwarder.py
 
 ## Connections
-- [[forwarder.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_23]] - `contains` [EXTRACTED]
+- [[Function Details_36]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_39]] - `contains` [EXTRACTED]
+- [[Purpose_59]] - `contains` [EXTRACTED]
+- [[Related_40]] - `contains` [EXTRACTED]
+- [[Responsibilities_39]] - `contains` [EXTRACTED]
+- [[forwarder.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_833
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_lifespan_prune.py"
 type: "code"
-community: "Community 436"
+community: "test_lifespan_prune.py"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/test_lifespan_prunepy
 ---
 
 # test_is_fixture_uid_blocks_short_numeric()
 
 ## Connections
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
+- [[parametrize_30]] - `references` [EXTRACTED]
 - [[test_lifespan_prune.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_436
+#graphify/code #graphify/EXTRACTED #community/test_lifespan_prunepy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ResourceGuard"
-location: "L50"
+community: "FakeRBAC"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/FakeRBAC
 ---
 
 # .is_owner()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

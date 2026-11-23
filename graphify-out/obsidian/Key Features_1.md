@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Community 707"
-location: "L23"
+community: "installer.py"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/installerpy
 ---
 
 # Key Features
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/installerpy

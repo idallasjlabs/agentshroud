@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "rationale"
-community: "Community 683"
+community: "DNSForwarderProtocol"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_683
+  - community/DNSForwarderProtocol
 ---
 
 # Blocklist stub that blocks every domain.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BlockAll]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_683
+#graphify/rationale #graphify/EXTRACTED #community/DNSForwarderProtocol

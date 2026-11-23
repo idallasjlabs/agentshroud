@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "_run_4b"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/_run_4b
 ---
 
 # .test_restart_that_does_not_recover_is_a_failure()
@@ -15,4 +15,4 @@ tags:
 - [[TestHealthCheckWazuhStep]] - `method` [EXTRACTED]
 - [[_run_4b()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/_run_4b

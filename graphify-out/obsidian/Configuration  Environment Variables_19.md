@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
 type: "document"
-community: "Community 727"
-location: "L75"
+community: "mcp_config.py"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/mcp_configpy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

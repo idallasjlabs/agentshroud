@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/canary.py"
-type: "code"
-community: "Community 43"
+source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+type: "document"
+community: "canary.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/canarypy
 ---
 
-# canary.py
+# canary.py.md
 
 ## Connections
-- [[CanaryCheck]] - `contains` [EXTRACTED]
-- [[CanaryResult]] - `contains` [EXTRACTED]
-- [[alert_dispatcher.py]] - `references` [EXTRACTED]
-- [[encrypted_store.py]] - `references` [EXTRACTED]
-- [[run_canary()]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[canary.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/document #graphify/EXTRACTED #community/canarypy

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "Community 1236"
+community: "Apollo — Audio Systems Producer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1236
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1236
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

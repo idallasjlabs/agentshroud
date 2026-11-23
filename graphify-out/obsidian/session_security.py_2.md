@@ -1,24 +1,26 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
-type: "document"
-community: "Community 568"
-location: "L10"
+source_file: "gateway/security/session_security.py"
+type: "code"
+community: "SessionManager"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_568
+  - community/SessionManager
 ---
 
 # session_security.py
 
 ## Connections
-- [[Configuration  Environment Variables_28]] - `contains` [EXTRACTED]
-- [[Function Details_47]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_50]] - `contains` [EXTRACTED]
-- [[Purpose_168]] - `contains` [EXTRACTED]
-- [[Related_54]] - `contains` [EXTRACTED]
-- [[Responsibilities_52]] - `contains` [EXTRACTED]
-- [[Threat Model_23]] - `contains` [EXTRACTED]
-- [[session_security.py_1]] - `contains` [EXTRACTED]
+- [[EventInjectionError]] - `contains` [EXTRACTED]
+- [[RateLimitExceeded]] - `contains` [EXTRACTED]
+- [[Session]] - `contains` [EXTRACTED]
+- [[Session Security Module - Secure session management for MCP gateway. Provides…]] - `rationale_for` [EXTRACTED]
+- [[SessionBindingError]] - `contains` [EXTRACTED]
+- [[SessionError]] - `contains` [EXTRACTED]
+- [[SessionExpired]] - `contains` [EXTRACTED]
+- [[SessionManager]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[secrets.py]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_568
+#graphify/code #graphify/EXTRACTED #community/SessionManager

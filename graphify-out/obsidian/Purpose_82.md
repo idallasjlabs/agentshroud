@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Community 1229"
-location: "L6"
+community: "SSH Config"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1229
+  - community/SSH_Config
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_9]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1229
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

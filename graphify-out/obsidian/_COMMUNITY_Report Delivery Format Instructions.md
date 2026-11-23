@@ -1,27 +1,35 @@
 ---
 type: community
-cohesion: 0.18
-members: 12
+members: 22
 ---
 
 # Report Delivery Format Instructions
 
-**Cohesion:** 0.18 - loosely connected
-**Members:** 12 nodes
+**Members:** 22 nodes
 
 ## Members
-- [[7. Deployment]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.1 Supported Platforms]] - document - docs/papers/agentshroud-whitepaper.md
-- [[7.2 Quick Start]] - document - docs/papers/agentshroud-whitepaper.md
-- [[Applied By_1]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Configuration_20]] - document - skills/custom/securebrowser/README.md
-- [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
-- [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_153]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_59]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[AgentShroud Branded Report Template]] - code - docker/config/openclaw/cron/templates/report-template.html
+- [[AgentShroud Weekly Summary (Hermes Prompt)]] - document - docker/config/hermes/cron/prompts/agentshroud-weekly-summary.txt
+- [[Brand colors reference]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Canonical storage]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Collaborator Daily Digest Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-daily-digest.txt
+- [[Collaborator Report (Evening) Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
+- [[Collaborator Report (Morning) Cron Prompt]] - document - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
+- [[Collaborator Report - Evening Job]] - document - docker/config/openclaw/cron/prompts/collaborator-report-evening.txt
+- [[Contributor Log Read Path (gateway-data primary, memory fallback)]] - concept - docker/config/openclaw/cron/prompts/collaborator-report-morning.txt
+- [[Dual-Surface Report Delivery (Email HTML  Telegram Markdown)]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[HTML version (for email)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[How to build it]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Markdown version (for Telegram + archival)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Quick checklist]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Report Delivery Format Instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Rules_12]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Sending via email]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Source Verification Policy]] - rationale - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Source Verification Policy (MANDATORY)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Telegram delivery rules (from AGENTS.md)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[Verification checklist (run before saving any report)]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
+- [[html-report-instructions]] - document - docker/config/openclaw/cron/templates/html-report-instructions.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,11 +39,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_security.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (9)]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 2 edges to [[_COMMUNITY_OpenClaw Cron Jobs Reference & Recreation Guide]]
 
 ## Top bridge nodes
-- [[7. Deployment]] - degree 5, connects to 1 community
-- [[Configuration_20]] - degree 4, connects to 1 community
-- [[ssh-config]] - degree 2, connects to 1 community
+- [[Report Delivery Format Instructions]] - degree 14, connects to 1 community
+- [[AgentShroud Branded Report Template]] - degree 2, connects to 1 community

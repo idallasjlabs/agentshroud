@@ -1,17 +1,17 @@
 ---
 source_file: "skills/openclaw/weather/SKILL.md"
 type: "document"
-community: "Community 852"
+community: "Weather Skill"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_852
+  - community/Weather_Skill
 ---
 
 # Current Weather
 
 ## Connections
-- [[Commands_4]] - `contains` [EXTRACTED]
+- [[Commands]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_852
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

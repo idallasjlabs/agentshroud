@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 164"
+community: "AgentShroud Security Architecture"
 location: "L247"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/AgentShroud_Security_Architecture
 ---
 
 # PII Detection System
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
 - [[Detection Locations]] - `contains` [EXTRACTED]
-- [[Detection Patterns]] - `contains` [EXTRACTED]
+- [[Detection Patterns_1]] - `contains` [EXTRACTED]
 - [[Effectiveness Metrics]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

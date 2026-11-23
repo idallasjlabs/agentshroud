@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "test_session_manager.py"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/test_session_managerpy
 ---
 
 # .test_owner_can_access_any_session()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAccessControl_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/test_session_managerpy

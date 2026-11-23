@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mac/README.md"
+source_file: ".cursor/agents/browser.md"
 type: "document"
-community: "Community 58"
-location: "L10"
+community: "Browser — Secure Browser Automation"
+location: "L57"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_58
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)_2]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_7]] - `contains` [EXTRACTED]
+- [[Click Element_5]] - `contains` [EXTRACTED]
+- [[Extract Data_5]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_4]] - `contains` [EXTRACTED]
+- [[Fill Form_4]] - `contains` [EXTRACTED]
+- [[Navigate to URL_5]] - `contains` [EXTRACTED]
+- [[Take Screenshot_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_58
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

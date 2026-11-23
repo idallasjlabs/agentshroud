@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "skills/openclaw/canvas/SKILL.md"
 type: "document"
-community: "Community 578"
-location: "L23"
+community: "Canvas Skill"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/Canvas_Skill
 ---
 
 # How It Works
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[Architecture_6]] - `contains` [EXTRACTED]
+- [[Canvas Skill]] - `contains` [EXTRACTED]
+- [[Tailscale Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/Canvas_Skill

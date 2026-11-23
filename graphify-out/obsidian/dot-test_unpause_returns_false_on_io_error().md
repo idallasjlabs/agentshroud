@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "Canvas Skill"
+community: "TestCollaboratorPersistence"
 location: "L663"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Canvas_Skill
+  - community/TestCollaboratorPersistence
 ---
 
 # .test_unpause_returns_false_on_io_error()
@@ -14,5 +14,7 @@ tags:
 ## Connections
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
+- [[boom()_14]] - `contains` [EXTRACTED]
+- [[boom()_12]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Canvas_Skill
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence

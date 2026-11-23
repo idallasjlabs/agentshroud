@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: ""
 type: "code"
-community: "Community 43"
-location: "L93"
+community: "AppleContainerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/AppleContainerEngine
 ---
 
 # Any
 
 ## Connections
-- [[.get_stats()_7]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

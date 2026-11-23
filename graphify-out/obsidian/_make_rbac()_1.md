@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 194"
+community: "test_tool_acl.py"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/test_tool_aclpy
 ---
 
 # _make_rbac()
 
 ## Connections
-- [[.test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
-- [[.test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACConfig_4]] - `references` [EXTRACTED]
-- [[TeamsConfig_2]] - `references` [EXTRACTED]
+- [[dot-test_group_allowlist_grants_extra_tool()]] - `calls` [EXTRACTED]
+- [[dot-test_project_allowed_tools_grant_access()]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[Role]] - `uses` [INFERRED]
+- [[TeamsConfig]] - `uses` [INFERRED]
 - [[rbac()_6]] - `calls` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

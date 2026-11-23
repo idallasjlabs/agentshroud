@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "SecurityPipeline"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/SecurityPipeline
 ---
 
 # .test_every_pipeline_module_attr_is_a_lifespan_kwarg()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifespanWiresEveryPipelineModule]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

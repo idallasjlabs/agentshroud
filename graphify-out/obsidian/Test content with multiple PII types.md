@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Community 435"
+community: "PIIConfig"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/PIIConfig
 ---
 
 # Test content with multiple PII types
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mixed_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_435
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

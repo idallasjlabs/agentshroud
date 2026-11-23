@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-kanban/SKILL.md"
+source_file: "docker/config/hermes/skills/i-kanban/SKILL.md"
 type: "document"
-community: "Community 1437"
-location: "L6"
+community: "hermes/skills/i-kanban/SKILL.md"
+location: "L5"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1437
+  - community/hermes/skills/i-kanban/SKILLmd
 ---
 
 # Skill: kanban
 
 ## Connections
-- [[SKILL_30]] - `contains` [EXTRACTED]
+- [[hermesskillsi-kanbanSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1437
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-kanban/SKILLmd

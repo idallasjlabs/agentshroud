@@ -1,18 +1,19 @@
 ---
-source_file: "scripts/preflight-check.sh"
+source_file: "scripts/smoke.d/test-edge-isolation.sh"
 type: "code"
-community: "Community 933"
-location: "L12"
+community: "test-edge-isolation.sh"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_933
+  - community/test-edge-isolationsh
 ---
 
 # check()
 
 ## Connections
-- [[preflight-check.sh]] - `defines` [EXTRACTED]
-- [[preflight-check.sh script]] - `calls` [EXTRACTED]
+- [[_assert_blocked()]] - `calls` [EXTRACTED]
+- [[test-edge-isolation.sh]] - `defines` [EXTRACTED]
+- [[test-edge-isolation.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_933
+#graphify/code #graphify/EXTRACTED #community/test-edge-isolationsh

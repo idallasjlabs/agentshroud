@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "Community 739"
-location: "L114"
+community: "Startup Sequence"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_739
+  - community/Startup_Sequence
 ---
 
 # Related Notes
 
 ## Connections
-- [[4. Environment Variables]] - `contains` [EXTRACTED]
-- [[All Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_739
+#graphify/document #graphify/EXTRACTED #community/Startup_Sequence

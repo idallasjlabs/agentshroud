@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-_check_system_resources()_1]] - `calls` [EXTRACTED]
 - [[dot-anomaly_detection()]] - `calls` [EXTRACTED]
-- [[dot-get_status()_2]] - `calls` [EXTRACTED]
+- [[dot-get_status()_3]] - `calls` [EXTRACTED]
 - [[dot-heartbeat_check()]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
 - [[Get current system statistics.]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 

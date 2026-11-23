@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1916"
-location: "L715"
+community: "[1.3.0] \"Reliability\" (2026-07-21)"
+location: "L429"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1916
+  - community/130_Reliability_2026-07-21
 ---
 
 # Summary
 
 ## Connections
-- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
+- [[1.2.3 — releasev1.2.3 (2026-06-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1916
+#graphify/document #graphify/EXTRACTED #community/130_Reliability_2026-07-21

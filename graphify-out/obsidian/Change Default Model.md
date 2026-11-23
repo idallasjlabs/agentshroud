@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 897"
+community: "API Keys Setup Guide"
 location: "L265"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_897
+  - community/API_Keys_Setup_Guide
 ---
 
 # Change Default Model
 
 ## Connections
-- [[Quick Reference_13]] - `contains` [EXTRACTED]
+- [[Quick Reference_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_897
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

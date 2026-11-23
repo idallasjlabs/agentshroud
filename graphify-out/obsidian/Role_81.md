@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-ab.md"
+source_file: ".cursor/agents/i-pr.md"
 type: "document"
-community: "Community 1296"
+community: "Skill: Pull Request (PR) Generator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1296
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1296
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

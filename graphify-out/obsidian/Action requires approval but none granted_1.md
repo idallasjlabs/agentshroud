@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "docker/config/hermes/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 450"
+community: "Browser — Secure Browser Automation"
 location: "L286"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # "Action requires approval but none granted"
 
 ## Connections
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_14]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

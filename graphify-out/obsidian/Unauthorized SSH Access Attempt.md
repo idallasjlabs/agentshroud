@@ -1,12 +1,12 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "Community 2202"
+community: "AgentShroud Incident Response Plan"
 location: "L378"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2202
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # Unauthorized SSH Access Attempt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[P3 Medium Priority Incidents]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2202
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

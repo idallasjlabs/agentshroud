@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 17"
+community: "TestEgressFilterConfig"
 location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/TestEgressFilterConfig
 ---
 
 # Test EgressFilterConfig functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressFilterConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressFilterConfig

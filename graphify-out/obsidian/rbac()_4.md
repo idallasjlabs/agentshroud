@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_shared_memory.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 1305"
-location: "L65"
+community: "test_group_isolation.py"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/test_group_isolationpy
 ---
 
 # rbac()
 
 ## Connections
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[TeamsConfig]] - `calls` [EXTRACTED]
-- [[test_shared_memory.py]] - `contains` [EXTRACTED]
+- [[RBACConfig]] - `uses` [INFERRED]
+- [[fixture_106]] - `references` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
