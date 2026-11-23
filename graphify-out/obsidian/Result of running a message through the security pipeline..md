@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "Community 63"
+community: "AuditChain"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_63
+  - community/AuditChain
 ---
 
 # Result of running a message through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PipelineResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_63
+#graphify/rationale #graphify/EXTRACTED #community/AuditChain

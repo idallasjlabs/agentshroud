@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 569"
+community: "alert_dispatcher.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_569
+  - community/alert_dispatcherpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_569
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

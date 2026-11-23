@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_content_scanner.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/egress_filter.py.md"
 type: "document"
-community: "Community 669"
-location: "L15"
+community: "egress_filter.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_669
+  - community/egress_filterpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[egress_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_669
+#graphify/document #graphify/EXTRACTED #community/egress_filterpy

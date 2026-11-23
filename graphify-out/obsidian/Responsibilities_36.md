@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
 type: "document"
-community: "Community 731"
-location: "L18"
+community: "compose_generator.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_731
+  - community/compose_generatorpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_731
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

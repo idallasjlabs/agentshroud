@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "Community 1413"
+community: "Skill: Security Review (SEC)"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1413
+  - community/Skill_Security_Review_SEC
 ---
 
 # Review Layers
@@ -18,4 +18,4 @@ tags:
 - [[Layer 4 Data Flow Security]] - `contains` [EXTRACTED]
 - [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1413
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

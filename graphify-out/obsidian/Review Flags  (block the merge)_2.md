@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/i-cicd.md"
+source_file: ".agents/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Community 2018"
-location: "L43"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2018
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Review Flags  (block the merge)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2018
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

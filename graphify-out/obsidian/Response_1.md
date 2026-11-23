@@ -1,17 +1,16 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: ""
 type: "code"
-community: "Community 1006"
-location: "L377"
+community: "A2APeerTestDouble"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/A2APeerTestDouble
 ---
 
 # Response
 
 ## Connections
-- [[firmware_bin()]] - `references` [EXTRACTED]
+- [[dot-_handle()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble

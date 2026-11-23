@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Community 194"
+community: "TeamsConfig"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/TeamsConfig
 ---
 
 # Return all projects accessible to the user via group membership.
 
 ## Connections
-- [[.get_user_projects()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_user_projects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_194
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

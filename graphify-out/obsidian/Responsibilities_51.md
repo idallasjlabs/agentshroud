@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/resource_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/consent_framework.py.md"
 type: "document"
-community: "Community 540"
+community: "consent_framework.py"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_540
+  - community/consent_frameworkpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[resource_guard.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_540
+#graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

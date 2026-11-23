@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L353"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Return True if changing from_role → to_role represents an escalation.
 
 ## Connections
-- [[.is_privilege_escalation()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_privilege_escalation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

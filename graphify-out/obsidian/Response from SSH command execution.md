@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "Community 254"
+community: "ingest_api/main.py"
 location: "L251"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/ingest_api/mainpy
 ---
 
 # Response from SSH command execution
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SSHExecResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

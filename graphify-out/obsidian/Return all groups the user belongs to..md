@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "Community 194"
+community: "TeamsConfig"
 location: "L122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_194
+  - community/TeamsConfig
 ---
 
 # Return all groups the user belongs to.
 
 ## Connections
-- [[.get_user_groups()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_user_groups()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_194
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 436"
+community: "TestReplayBufferOffsetParsing"
 location: "L4480"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/TestReplayBufferOffsetParsing
 ---
 
 # Return a urlopen mock that records the timeout kwarg and succeeds.
 
 ## Connections
-- [[._fake_urlopen_factory()]] - `rationale_for` [EXTRACTED]
+- [[dot-_fake_urlopen_factory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_436
+#graphify/rationale #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/WORKSPACE_USAGE.md"
 type: "document"
-community: "Community 179"
+community: "OpenClaw Workspace Usage Guide"
 location: "L261"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_179
+  - community/OpenClaw_Workspace_Usage_Guide
 ---
 
 # Restore Workspace
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Backup and Restore]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_179
+#graphify/document #graphify/EXTRACTED #community/OpenClaw_Workspace_Usage_Guide

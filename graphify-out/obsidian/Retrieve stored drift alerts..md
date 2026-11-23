@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "rationale"
-community: "Community 0"
+community: "ContainerSnapshot"
 location: "L273"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/ContainerSnapshot
 ---
 
 # Retrieve stored drift alerts.
 
 ## Connections
-- [[.get_alerts()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/ContainerSnapshot

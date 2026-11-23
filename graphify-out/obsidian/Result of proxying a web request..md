@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "Community 103"
+community: "WebProxyResult"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/WebProxyResult
 ---
 
 # Result of proxying a web request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebProxyResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/WebProxyResult

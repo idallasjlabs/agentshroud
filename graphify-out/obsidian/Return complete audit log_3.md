@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Community 160"
+community: "SecureBrowser"
 location: "L400"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/SecureBrowser
 ---
 
 # Return complete audit log
 
 ## Connections
-- [[.get_audit_log()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-get_audit_log()_7]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_160
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

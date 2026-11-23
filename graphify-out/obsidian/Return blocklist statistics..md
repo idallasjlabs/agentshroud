@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/dns_blocklist.py"
 type: "rationale"
-community: "Community 158"
+community: "DNSBlocklist"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/DNSBlocklist
 ---
 
 # Return blocklist statistics.
 
 ## Connections
-- [[.stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_158
+#graphify/rationale #graphify/EXTRACTED #community/DNSBlocklist

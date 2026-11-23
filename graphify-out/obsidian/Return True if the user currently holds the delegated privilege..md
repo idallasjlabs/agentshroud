@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "Community 89"
+community: "._cleanup_expired"
 location: "L199"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/_cleanup_expired
 ---
 
 # Return True if the user currently holds the delegated privilege.
 
 ## Connections
-- [[.is_delegated()]] - `rationale_for` [EXTRACTED]
+- [[dot-is_delegated()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_89
+#graphify/rationale #graphify/EXTRACTED #community/_cleanup_expired

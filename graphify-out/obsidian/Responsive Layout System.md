@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ui.md"
+source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 515"
-location: "L218"
+community: "Skill: UI Expert (UI)"
+location: "L216"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_515
+  - community/Skill_UI_Expert_UI
 ---
 
 # Responsive Layout System
@@ -17,4 +17,4 @@ tags:
 - [[Dashboard Grid]] - `contains` [EXTRACTED]
 - [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_515
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trust_manager.py.md"
 type: "document"
-community: "Community 853"
-location: "L19"
+community: "trust_manager.py"
+location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_853
+  - community/trust_managerpy
 ---
 
 # Responsibilities
 
 ## Connections
-- [[proxy_status.py_2]] - `contains` [EXTRACTED]
+- [[trust_manager.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_853
+#graphify/document #graphify/EXTRACTED #community/trust_managerpy

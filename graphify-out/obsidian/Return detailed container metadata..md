@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 225"
+community: "AppleContainerEngine"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/AppleContainerEngine
 ---
 
 # Return detailed container metadata.
 
 ## Connections
-- [[.inspect()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-inspect()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_225
+#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine
