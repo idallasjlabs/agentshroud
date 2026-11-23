@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "upgrade"
+community: "version_routes.py"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/upgrade
+  - community/version_routespy
 ---
 
 # .test_successful_rollback()
@@ -16,4 +16,4 @@ tags:
 - [[rollback()]] - `calls` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/upgrade
+#graphify/code #graphify/EXTRACTED #community/version_routespy

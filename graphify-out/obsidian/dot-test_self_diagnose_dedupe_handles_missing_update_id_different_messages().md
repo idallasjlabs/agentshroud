@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestInboundPipelineOnGetUpdates"
+community: "fake_urlopen"
 location: "L5558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInboundPipelineOnGetUpdates
+  - community/fake_urlopen
 ---
 
 # .test_self_diagnose_dedupe_handles_missing_update_id_different_messages()
@@ -18,8 +18,8 @@ tags:
 - [[When update_id is missing, different message_id values should not dedupe self-…]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_44]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_urlopen()_75]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInboundPipelineOnGetUpdates
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

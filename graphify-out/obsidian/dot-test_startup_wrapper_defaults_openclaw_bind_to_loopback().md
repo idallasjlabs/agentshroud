@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "TestConfigValidation"
 location: "L341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/TestConfigValidation
 ---
 
 # .test_startup_wrapper_defaults_openclaw_bind_to_loopback()
 
 ## Connections
-- [[Startup wrapper should default OpenClaw bind to loopback unless explicitly overr]] - `rationale_for` [EXTRACTED]
+- [[Startup wrapper should default OpenClaw bind to loopback unless explicitly…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/TestConfigValidation

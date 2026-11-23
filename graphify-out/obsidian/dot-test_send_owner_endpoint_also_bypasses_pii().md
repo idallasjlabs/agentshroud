@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "TestOwnerEmailBypassesPii"
+community: "AsyncMock"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOwnerEmailBypassesPii
+  - community/AsyncMock
 ---
 
 # .test_send_owner_endpoint_also_bypasses_pii()
@@ -16,4 +16,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestOwnerEmailBypassesPii]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOwnerEmailBypassesPii
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

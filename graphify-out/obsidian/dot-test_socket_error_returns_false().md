@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "api.py (3)"
+community: "TestIsContainerRunning"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_3
+  - community/TestIsContainerRunning
 ---
 
 # .test_socket_error_returns_false()
 
 ## Connections
 - [[TestIsContainerRunning]] - `method` [EXTRACTED]
+- [[boom()_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_3
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

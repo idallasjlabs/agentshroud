@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "RedactionResult"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # .test_sanitize_dict_with_pii()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult_2]] - `calls` [EXTRACTED]
+- [[RedactionResult]] - `calls` [EXTRACTED]
 - [[Test sanitizing dictionary content with PII]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[asyncio_46]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

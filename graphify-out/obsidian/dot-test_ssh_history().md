@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "SSHResult"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHResult
 ---
 
 # .test_ssh_history()
@@ -15,4 +15,4 @@ tags:
 - [[SSHResult]] - `calls` [EXTRACTED]
 - [[TestSSHHistory]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/SSHResult

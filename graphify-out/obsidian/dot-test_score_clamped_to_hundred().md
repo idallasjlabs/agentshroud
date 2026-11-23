@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "test_soc_bots.py"
 location: "L716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/test_soc_botspy
 ---
 
 # .test_score_clamped_to_hundred()
@@ -16,4 +16,4 @@ tags:
 - [[TestComputeBotScorecard_1]] - `method` [EXTRACTED]
 - [[compute_bot_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

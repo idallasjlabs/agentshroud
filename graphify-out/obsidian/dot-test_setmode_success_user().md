@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "test_collaborator_responses.py"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/test_collaborator_responsespy
 ---
 
 # .test_setmode_success_user()
@@ -15,4 +15,4 @@ tags:
 - [[TestMutationFormatters]] - `method` [EXTRACTED]
 - [[format_setmode_success()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

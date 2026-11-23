@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "test_fieldflare_route_strips_unsupported_fields_streaming"
+community: "ingest_api/models.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_fieldflare_route_strips_unsupported_fields_streaming
+  - community/ingest_api/modelspy
 ---
 
 # .test_status_response_monitor_mode()
@@ -16,4 +16,4 @@ tags:
 - [[Test status response in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnhancedStatus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_fieldflare_route_strips_unsupported_fields_streaming
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

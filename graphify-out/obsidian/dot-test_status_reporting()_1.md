@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "check-vendor-compat.sh"
-location: "L140"
+community: "test_memory_lifecycle.py"
+location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check-vendor-compatsh
+  - community/test_memory_lifecyclepy
 ---
 
 # .test_status_reporting()
 
 ## Connections
-- [[Test canary status reporting for dashboard.]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[Test status reporting from both components.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

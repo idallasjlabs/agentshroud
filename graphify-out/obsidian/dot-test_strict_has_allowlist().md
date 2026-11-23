@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "TestDNSFilterConfig"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/TestDNSFilterConfig
 ---
 
 # .test_strict_has_allowlist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDNSFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/TestDNSFilterConfig

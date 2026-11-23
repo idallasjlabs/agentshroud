@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "soc/router.py"
+community: "lifespan.py"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/lifespanpy
 ---
 
 # .test_score_alone_cannot_promote_with_ladder()
@@ -17,4 +17,4 @@ tags:
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

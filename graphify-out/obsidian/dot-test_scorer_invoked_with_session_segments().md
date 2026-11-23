@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "asyncio"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/asyncio
 ---
 
 # .test_scorer_invoked_with_session_segments()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestContextIntegrityInPipeline]] - `method` [EXTRACTED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

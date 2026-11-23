@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Common Queries"
+community: "parse_clamscan_output"
 location: "L525"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Common_Queries
+  - community/parse_clamscan_output
 ---
 
 # .test_summary_error()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestClamAVSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Common_Queries
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

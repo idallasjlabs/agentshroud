@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "._make_proxy()"
+community: "patch"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/patch
 ---
 
 # .test_start_request_tracking_survives_psutil_error()
 
 ## Connections
 - [[TestUsageStatsAndTracking]] - `method` [EXTRACTED]
+- [[patch_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/patch

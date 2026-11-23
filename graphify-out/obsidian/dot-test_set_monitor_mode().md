@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "KillSwitchMonitor"
+community: "TestSetMode"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/TestSetMode
 ---
 
 # .test_set_monitor_mode()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/TestSetMode

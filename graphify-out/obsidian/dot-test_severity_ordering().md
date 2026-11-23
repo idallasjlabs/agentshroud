@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L313"
+community: "soc/models.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/soc/modelspy
 ---
 
 # .test_severity_ordering()
 
 ## Connections
-- [[TestAggregation]] - `method` [EXTRACTED]
+- [[TestSecurityEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

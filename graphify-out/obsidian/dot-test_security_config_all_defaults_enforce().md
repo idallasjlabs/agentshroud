@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "TestEnforceDefaults"
+community: "SecurityConfig"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/SecurityConfig
 ---
 
 # .test_security_config_all_defaults_enforce()
 
 ## Connections
-- [[SecurityConfig_4]] - `calls` [EXTRACTED]
+- [[SecurityConfig_1]] - `calls` [EXTRACTED]
 - [[Test that all core modules default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/code #graphify/EXTRACTED #community/SecurityConfig

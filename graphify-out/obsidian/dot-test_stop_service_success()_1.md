@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "AsyncMock"
-location: "L267"
+community: "_stub_client"
+location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_stub_client
 ---
 
 # .test_stop_service_success()
 
 ## Connections
-- [[TestServiceControl]] - `method` [EXTRACTED]
-- [[_engine()]] - `calls` [EXTRACTED]
+- [[TestLifecycleCommands]] - `method` [EXTRACTED]
+- [[_invoke()]] - `calls` [EXTRACTED]
+- [[_stub_client()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_stub_client

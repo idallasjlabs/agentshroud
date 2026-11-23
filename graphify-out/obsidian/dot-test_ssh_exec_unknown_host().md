@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "SSHResult"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/SSHResult
 ---
 
 # .test_ssh_exec_unknown_host()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHExec]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/SSHResult

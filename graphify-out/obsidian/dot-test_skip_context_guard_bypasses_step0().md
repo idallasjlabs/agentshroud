@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "asyncio"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/asyncio
 ---
 
 # .test_skip_context_guard_bypasses_step0()
@@ -14,7 +14,8 @@ tags:
 ## Connections
 - [[TestContextGuardInPipeline]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
-- [[_make_pipeline()_3]] - `calls` [EXTRACTED]
-- [[skip_context_guard=True must prevent ContextGuard from running — used by Telegra]] - `rationale_for` [EXTRACTED]
+- [[_make_pipeline()_1]] - `calls` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
+- [[skip_context_guard=True must prevent ContextGuard from running — used by…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

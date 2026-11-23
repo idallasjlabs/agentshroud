@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_multi_host_test.py"
+source_file: "gateway/tests/test_credential_injector.py"
 type: "code"
-community: "Migration Path (SSH → Distributed Node)"
-location: "L76"
+community: "load_all_secret_file_values"
+location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Migration_Path_SSH__Distributed_Node
+  - community/load_all_secret_file_values
 ---
 
 # .test_strips_trailing_newline()
 
 ## Connections
-- [[TestTail]] - `method` [EXTRACTED]
-- [[tail()]] - `calls` [EXTRACTED]
+- [[TestLoadAllSecretFileValues]] - `method` [EXTRACTED]
+- [[load_all_secret_file_values()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Migration_Path_SSH__Distributed_Node
+#graphify/code #graphify/EXTRACTED #community/load_all_secret_file_values

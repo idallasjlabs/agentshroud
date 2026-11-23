@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "GSDL-715 (silent regression incident)"
+community: "asyncio"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GSDL-715_silent_regression_incident
+  - community/asyncio
 ---
 
 # .test_store_timeout_is_false()
 
 ## Connections
 - [[TestStoreIn1Password]] - `method` [EXTRACTED]
+- [[asyncio_54]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GSDL-715_silent_regression_incident
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "soc/router.py (3)"
-location: "L118"
+community: "TrustConfig"
+location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy_3
+  - community/TrustConfig
 ---
 
 # .test_success_increases_score()
 
 ## Connections
-- [[TestTrustProgression]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy_3
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

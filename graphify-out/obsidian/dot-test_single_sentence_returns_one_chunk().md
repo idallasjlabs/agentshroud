@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "WebProxyConfig (3)"
+community: "TelegramAPIProxy"
 location: "L455"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyConfig_3
+  - community/TelegramAPIProxy
 ---
 
 # .test_single_sentence_returns_one_chunk()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_s()]] - `calls` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyConfig_3
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

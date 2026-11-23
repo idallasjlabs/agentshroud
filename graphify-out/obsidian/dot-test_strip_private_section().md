@@ -12,6 +12,7 @@ tags:
 # .test_strip_private_section()
 
 ## Connections
+- [[dot-_strip_private_content()]] - `calls` [EXTRACTED]
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

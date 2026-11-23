@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L448"
+community: "OutputCanary"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/OutputCanary
 ---
 
 # .test_status_reporting()
 
 ## Connections
-- [[Test status reporting from both components.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[Test canary status reporting for dashboard.]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

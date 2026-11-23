@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestPIIDetection"
+community: "test_mcp_proxy.py"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPIIDetection
+  - community/test_mcp_proxypy
 ---
 
 # .test_ssn_redacted_in_params()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPIIDetection
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

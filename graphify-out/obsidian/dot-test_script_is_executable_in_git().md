@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_wazuh_watchdog.py"
+source_file: "gateway/tests/test_update_conduit_push.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
-location: "L118"
+community: "_run"
+location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/_run
 ---
 
 # .test_script_is_executable_in_git()
 
 ## Connections
-- [[TestWatchdogWiring]] - `method` [EXTRACTED]
+- [[TestRepoPin]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/_run

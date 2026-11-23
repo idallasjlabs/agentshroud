@@ -12,9 +12,10 @@ tags:
 # .test_store_persists_across_reopen()
 
 ## Connections
-- [[ApprovalQueueItem_3]] - `calls` [EXTRACTED]
+- [[ApprovalQueueItem]] - `calls` [EXTRACTED]
 - [[ApprovalStore]] - `calls` [EXTRACTED]
 - [[Items survive store closereopen cycle.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalStore

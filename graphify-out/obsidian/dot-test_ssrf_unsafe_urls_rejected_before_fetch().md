@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "DraftEntry"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/DraftEntry
 ---
 
 # .test_ssrf_unsafe_urls_rejected_before_fetch()
@@ -16,5 +16,6 @@ tags:
 - [[DraftEntry]] - `calls` [EXTRACTED]
 - [[TestVerifyEntry]] - `method` [EXTRACTED]
 - [[_FakeFetcher]] - `calls` [EXTRACTED]
+- [[parametrize_33]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

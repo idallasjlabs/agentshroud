@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PortManager"
+community: "EncryptedStore"
 location: "L776"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PortManager
+  - community/EncryptedStore
 ---
 
 # .test_secure_zero_empty()
@@ -15,4 +15,4 @@ tags:
 - [[TestSecureZero]] - `method` [EXTRACTED]
 - [[_secure_zero()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PortManager
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

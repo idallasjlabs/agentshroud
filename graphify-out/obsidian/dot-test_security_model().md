@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Phase 3A/3B Implementation Verification Results"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L4301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3A/3B_Implementation_Verification_Results
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # .test_security_model()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_resp()]] - `calls` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results
+#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

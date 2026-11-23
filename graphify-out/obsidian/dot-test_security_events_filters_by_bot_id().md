@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "test_soc_bots.py"
 location: "L885"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/test_soc_botspy
 ---
 
 # .test_security_events_filters_by_bot_id()
@@ -15,6 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestBotSelectorFrontend]] - `method` [EXTRACTED]
 - [[_make_m6_caller()]] - `calls` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[get_security_events()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

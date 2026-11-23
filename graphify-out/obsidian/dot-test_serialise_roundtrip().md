@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "SecurityPipeline (3)"
+community: "ManifestEntry"
 location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_3
+  - community/ManifestEntry
 ---
 
 # .test_serialise_roundtrip()
 
 ## Connections
-- [[Path_61]] - `references` [EXTRACTED]
+- [[dot-from_file()]] - `calls` [EXTRACTED]
+- [[Path_72]] - `references` [EXTRACTED]
 - [[TestManifestEntry]] - `method` [EXTRACTED]
-- [[_sha256()_3]] - `calls` [EXTRACTED]
+- [[_sha256()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_3
+#graphify/code #graphify/EXTRACTED #community/ManifestEntry

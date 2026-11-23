@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "AsyncMock"
+community: "test_web_api_coverage.py"
 location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/test_web_api_coveragepy
 ---
 
 # .test_status_with_running_and_stopped_containers()
 
 ## Connections
-- [[TestStatus]] - `method` [EXTRACTED]
+- [[TestStatus_1]] - `method` [EXTRACTED]
 - [[_container()]] - `calls` [EXTRACTED]
 - [[_engine()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
