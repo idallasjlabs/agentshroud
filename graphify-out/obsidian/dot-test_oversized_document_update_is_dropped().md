@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "_wrap_response"
 location: "L8724"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_wrap_response
 ---
 
 # .test_oversized_document_update_is_dropped()
@@ -17,6 +17,6 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

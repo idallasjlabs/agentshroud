@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "GatewayEmailService"
+community: "_make_cve"
 location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/_make_cve
 ---
 
 # .test_openclaw_h2_correct()
@@ -16,4 +16,4 @@ tags:
 - [[TestGenerate]] - `method` [EXTRACTED]
 - [[_make_cve()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/_make_cve

@@ -12,7 +12,9 @@ tags:
 # .test_private_tool_violation_emits_event()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
+- [[emit()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

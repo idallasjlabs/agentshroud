@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_auto_remediate_cves.py"
 type: "code"
-community: "test_daily_cve_report.py"
-location: "L194"
+community: "plan_remediation"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/plan_remediation
 ---
 
 # .test_pin_revert_restores_the_exact_original_string()
 
 ## Connections
 - [[TestVersionPinIO]] - `method` [EXTRACTED]
-- [[The rollback path a failed deploy must restore the pin verbatim,         downst]] - `rationale_for` [EXTRACTED]
+- [[The rollback path a failed deploy must restore the pin verbatim, downstream…]] - `rationale_for` [EXTRACTED]
 - [[read_pin()]] - `calls` [INFERRED]
 - [[write_pin()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestSecurity"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestSecurity
 ---
 
 # .test_pii_redacted_on_save()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestSecurity]] - `method` [EXTRACTED]
+- [[_redact()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestSecurity

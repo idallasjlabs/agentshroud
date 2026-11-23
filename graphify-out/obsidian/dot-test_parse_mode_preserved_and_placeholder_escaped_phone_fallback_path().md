@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "All Dependencies.md (2)"
+community: "TestParseModeStrippedAfterPIIRedaction"
 location: "L4389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/TestParseModeStrippedAfterPIIRedaction
 ---
 
 # .test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()
 
 ## Connections
 - [[dot-_make_owner_proxy()]] - `calls` [EXTRACTED]
-- [[PII redaction must not strip parse_mode for the whole message (owner, fallback p]] - `rationale_for` [EXTRACTED]
+- [[PII redaction must not strip parse_mode for the whole message (owner, fallback…_1]] - `rationale_for` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction

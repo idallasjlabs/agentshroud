@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_tool_acl.py"
 location: "L239"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_tool_aclpy
 ---
 
 # .test_private_tool_still_blocked_even_when_deny_unknown_false()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLConfig]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

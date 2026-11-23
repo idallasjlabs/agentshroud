@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+community: "TestScoreVulnerabilityManagement"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/TestScoreVulnerabilityManagement
 ---
 
 # .test_one_when_not_run()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScoreVulnerabilityManagement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/code #graphify/EXTRACTED #community/TestScoreVulnerabilityManagement

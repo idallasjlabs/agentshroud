@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "MCPToolCall"
-location: "L647"
+community: "WebProxy"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/WebProxy
 ---
 
 # .test_passthrough_allows_everything()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
 - [[TestPassthroughMode_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/WebProxy

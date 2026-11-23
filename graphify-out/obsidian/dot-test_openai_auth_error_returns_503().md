@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "egress_filter.py"
+community: "TestErrorSanitization"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_filterpy
+  - community/TestErrorSanitization
 ---
 
 # .test_openai_auth_error_returns_503()
@@ -16,4 +16,4 @@ tags:
 - [[OpenAI AuthenticationError returns 503 without leaking the key.]] - `rationale_for` [EXTRACTED]
 - [[TestErrorSanitization]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_filterpy
+#graphify/code #graphify/EXTRACTED #community/TestErrorSanitization

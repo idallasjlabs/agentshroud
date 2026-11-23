@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestPIIDetection"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestPIIDetection
 ---
 
 # .test_pii_in_response_flagged()
 
 ## Connections
-- [[TestPIIDetection_2]] - `method` [EXTRACTED]
+- [[TestPIIDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestPIIDetection

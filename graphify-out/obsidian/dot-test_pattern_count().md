@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Google Services Setup - Calendar, Contacts, Keep"
+community: "TestNewPatternsV080"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Google_Services_Setup_-_Calendar_Contacts_Keep
+  - community/TestNewPatternsV080
 ---
 
 # .test_pattern_count()
@@ -15,4 +15,4 @@ tags:
 - [[Regression guard — fail if patterns drop below 43.]] - `rationale_for` [EXTRACTED]
 - [[TestNewPatternsV080]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Google_Services_Setup_-_Calendar_Contacts_Keep
+#graphify/code #graphify/EXTRACTED #community/TestNewPatternsV080

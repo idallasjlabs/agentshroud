@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "PIIConfig"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PIIConfig
 ---
 
 # .test_pii_scan_time_independent_of_content()
 
 ## Connections
 - [[PII scanning time should be roughly linear, not exponential.]] - `rationale_for` [EXTRACTED]
+- [[PIIConfig]] - `calls` [INFERRED]
+- [[PIISanitizer]] - `calls` [INFERRED]
 - [[TestTimingAttacks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

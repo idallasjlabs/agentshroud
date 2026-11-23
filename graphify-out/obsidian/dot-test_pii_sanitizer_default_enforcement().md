@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "TestEnforceDefaults"
+community: "PIIConfig"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEnforceDefaults
+  - community/PIIConfig
 ---
 
 # .test_pii_sanitizer_default_enforcement()
 
 ## Connections
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
 - [[Test PIISanitizer defaults to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[TestModuleEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEnforceDefaults
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

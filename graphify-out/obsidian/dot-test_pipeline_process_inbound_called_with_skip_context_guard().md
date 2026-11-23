@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "SecurityPipeline (2)"
+community: "test_telegram_pipeline.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline_2
+  - community/test_telegram_pipelinepy
 ---
 
 # .test_pipeline_process_inbound_called_with_skip_context_guard()
@@ -17,6 +17,7 @@ tags:
 - [[_getUpdates_response()]] - `calls` [EXTRACTED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
 - [[_make_proxy()_3]] - `calls` [EXTRACTED]
-- [[_make_update()_1]] - `calls` [EXTRACTED]
+- [[_make_update()_2]] - `calls` [EXTRACTED]
+- [[asyncio_68]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline_2
+#graphify/code #graphify/EXTRACTED #community/test_telegram_pipelinepy

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
-- [[_fake_send()_19]] - `contains` [EXTRACTED]
-- [[_fake_send()]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[_fake_send()_4]] - `contains` [EXTRACTED]
+- [[_fake_send()_5]] - `indirect_call` [INFERRED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "DNSFilterConfig"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # .test_private_ip_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Known private ranges should be detected.]] - `rationale_for` [EXTRACTED]
 - [[TestDNSRebinding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

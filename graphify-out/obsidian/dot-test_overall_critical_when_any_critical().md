@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "Any"
 location: "L504"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/Any
 ---
 
 # .test_overall_critical_when_any_critical()
@@ -17,4 +17,4 @@ tags:
 - [[_trivy_critical()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/Any

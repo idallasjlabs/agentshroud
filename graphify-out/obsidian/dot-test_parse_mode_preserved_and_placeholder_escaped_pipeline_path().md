@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "All Dependencies.md (2)"
+community: "TestParseModeStrippedAfterPIIRedaction"
 location: "L4432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/All_Dependenciesmd_2
+  - community/TestParseModeStrippedAfterPIIRedaction
 ---
 
 # .test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()
 
 ## Connections
 - [[dot-_make_owner_proxy()]] - `calls` [EXTRACTED]
-- [[PII redaction via the pipeline path must not strip parse_mode either (owner, pip]] - `rationale_for` [EXTRACTED]
+- [[PII redaction via the pipeline path must not strip parse_mode either (owner,…]] - `rationale_for` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
+- [[process_outbound()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/All_Dependenciesmd_2
+#graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction
