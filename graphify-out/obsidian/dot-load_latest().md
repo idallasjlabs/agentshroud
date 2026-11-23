@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "IntelReportStore"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/IntelReportStore
 ---
 
 # .load_latest()
 
 ## Connections
 - [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
-- [[dot-verify_integrity()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport_2]] - `references` [EXTRACTED]
-- [[IntelReportStore_1]] - `method` [EXTRACTED]
-- [[Load the most recently saved report.          Args             verify If True,]] - `rationale_for` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Load the most recently saved report. Args verify If True, raise…]] - `rationale_for` [EXTRACTED]
 - [[ReportIntegrityError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

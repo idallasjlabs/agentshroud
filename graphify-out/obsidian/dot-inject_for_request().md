@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "KeyVault"
-location: "L157"
+location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .inject_for_request()
 
 ## Connections
-- [[dot-get_key()]] - `calls` [EXTRACTED]
 - [[KeyInjector]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyVault

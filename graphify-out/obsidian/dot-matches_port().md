@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L93"
+community: "EgressPolicy"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/EgressPolicy
 ---
 
 # .matches_port()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
 - [[Check if port is allowed.]] - `rationale_for` [EXTRACTED]
 - [[EgressPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

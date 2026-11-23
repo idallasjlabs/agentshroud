@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_context_guard.py"
 type: "code"
 community: "ContextGuard"
-location: "L312"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,7 @@ tags:
 
 ## Connections
 - [[ContextGuard]] - `calls` [EXTRACTED]
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestSourceTagging]] - `method` [EXTRACTED]
+- [[fixture_46]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "_make_proxy"
+community: "Delegation"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/Delegation
 ---
 
 # .is_active()
 
 ## Connections
-- [[Delegation_1]] - `method` [EXTRACTED]
+- [[Delegation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/Delegation

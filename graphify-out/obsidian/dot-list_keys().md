@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "KeyVault"
-location: "L92"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED

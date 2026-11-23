@@ -12,7 +12,7 @@ tags:
 # .filter_outbound_response()
 
 ## Connections
-- [[Filter outbound response to remove sensitive XML and path information.]] - `rationale_for` [EXTRACTED]
+- [[Filter outbound response to remove sensitive XML and path information. Args…]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

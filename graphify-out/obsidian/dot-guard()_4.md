@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_context_guard.py"
+source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "_t"
-location: "L57"
+community: "PromptGuard"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_t
+  - community/PromptGuard
 ---
 
 # .guard()
 
 ## Connections
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[TestSourceTagging]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
+- [[fixture_96]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_t
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

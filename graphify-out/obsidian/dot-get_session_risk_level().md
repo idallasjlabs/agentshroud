@@ -12,7 +12,6 @@ tags:
 # .get_session_risk_level()
 
 ## Connections
-- [[dot-get_attack_summary()]] - `calls` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
 - [[Get risk level for a session based on detected attacks.]] - `rationale_for` [EXTRACTED]
 

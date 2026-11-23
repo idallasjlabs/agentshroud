@@ -1,18 +1,18 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: ".new"
 location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/new
 ---
 
 # .new()
 
 ## Connections
-- [[dot-ok()]] - `calls` [EXTRACTED]
+- [[dot-ok()_2]] - `calls` [EXTRACTED]
 - [[dot-with()]] - `calls` [EXTRACTED]
 - [[SclClient_1]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
@@ -32,11 +32,11 @@ tags:
 - [[deploy_status_errors_when_version_unauthorized()]] - `calls` [EXTRACTED]
 - [[deploy_status_reads_version_endpoint()]] - `calls` [EXTRACTED]
 - [[format_cves()]] - `calls` [EXTRACTED]
-- [[main()_19]] - `calls` [EXTRACTED]
+- [[main()_39]] - `calls` [EXTRACTED]
 - [[render_output_lines()]] - `calls` [EXTRACTED]
 - [[status_errors_on_401()]] - `calls` [EXTRACTED]
 - [[status_errors_when_gateway_down()]] - `calls` [EXTRACTED]
 - [[status_hits_correct_path()]] - `calls` [EXTRACTED]
 - [[status_parses_and_formats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/new

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tests/test_a2a_proxy.py"
 type: "code"
-community: "UserSessionManager (2)"
-location: "L446"
+community: "A2AProxy"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AProxy
 ---
 
 # .forward()
 
 ## Connections
-- [[dot-process_agent_card_request()]] - `calls` [EXTRACTED]
-- [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[_StubForwarder_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/A2AProxy

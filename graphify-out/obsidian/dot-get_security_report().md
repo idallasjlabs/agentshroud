@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "WebProxy"
-location: "L569"
+community: "NetworkValidator"
+location: "L533"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/NetworkValidator
 ---
 
 # .get_security_report()
 
 ## Connections
-- [[dot-export_report()]] - `calls` [EXTRACTED]
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_80]] - `references` [EXTRACTED]
 - [[Get comprehensive network security report.]] - `rationale_for` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

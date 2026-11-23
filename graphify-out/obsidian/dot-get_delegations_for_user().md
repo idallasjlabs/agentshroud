@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "_make_proxy"
+community: "._cleanup_expired"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/_cleanup_expired
 ---
 
 # .get_delegations_for_user()
 
 ## Connections
-- [[Delegation_1]] - `references` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[dot-_cleanup_expired()]] - `calls` [EXTRACTED]
+- [[Delegation]] - `references` [EXTRACTED]
+- [[DelegationManager]] - `method` [EXTRACTED]
 - [[Return all active delegations held by a specific user.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/_cleanup_expired

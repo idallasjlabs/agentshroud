@@ -1,13 +1,13 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ab/SKILL.md"
 type: "concept"
-community: "AI Agent"
+community: ".github/workflows/merge-regression-audit.yml"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/AI_Agent
+  - community/github/workflows/merge-regression-audityml
 ---
 
 # .github/workflows/merge-regression-audit.yml
 
-#graphify/concept #graphify/EXTRACTED #community/AI_Agent
+#graphify/concept #graphify/EXTRACTED #community/github/workflows/merge-regression-audityml

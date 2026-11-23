@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "._make_proxy()"
+community: "ResourceGuard"
 location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ResourceGuard
 ---
 
 # .get_usage_stats()
 
 ## Connections
-- [[Any_59]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[Get current usage statistics.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
-- [[ResourceUsage_1]] - `calls` [EXTRACTED]
+- [[ResourceUsage]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPInspector"
+community: "test_mcp_proxy.py"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_mcp_proxypy
 ---
 
 # .inspect_tool_result()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-_redact_pii()]] - `calls` [EXTRACTED]
 - [[dot-_scan_value()]] - `calls` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
+- [[Any_31]] - `references` [EXTRACTED]
 - [[Inspect a tool result for PII and encoding issues.]] - `rationale_for` [EXTRACTED]
-- [[InspectionResult]] - `references` [EXTRACTED]
-- [[MCPInspector_1]] - `method` [EXTRACTED]
+- [[InspectionResult]] - `calls` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

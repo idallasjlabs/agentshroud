@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "CI/CD Pipeline Advisor (SKILL)"
-location: "L218"
+community: "middleware.py"
+location: "L472"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_SKILL
+  - community/middlewarepy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[Get statistics about approval hardening.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "LLMProxy"
-location: "L55"
+community: "ScanResult"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/ScanResult
 ---
 
 # .flagged()
 
 ## Connections
-- [[URLAnalysisResult_1]] - `method` [EXTRACTED]
+- [[ScanResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/ScanResult

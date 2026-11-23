@@ -1,18 +1,18 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L421"
+community: "SecureBrowser"
+location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/SecureBrowser
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[Return complete audit log_2]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[Return complete audit log]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

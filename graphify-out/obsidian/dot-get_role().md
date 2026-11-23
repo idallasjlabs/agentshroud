@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "GroupRoleResolver"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/GroupRoleResolver
 ---
 
 # .get_role()
 
 ## Connections
 - [[dot-is_member_or_higher()]] - `calls` [EXTRACTED]
-- [[dot-is_owner()_3]] - `calls` [EXTRACTED]
-- [[GroupRole]] - `references` [EXTRACTED]
+- [[dot-is_owner()_4]] - `calls` [EXTRACTED]
+- [[GroupRole]] - `calls` [EXTRACTED]
 - [[GroupRoleResolver]] - `method` [EXTRACTED]
-- [[Return the GroupRole for user_id in group_chat_id.          Returns GroupRole.RE]] - `rationale_for` [EXTRACTED]
+- [[Return the GroupRole for user_id in group_chat_id. Returns GroupRole.READ_ONLY…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

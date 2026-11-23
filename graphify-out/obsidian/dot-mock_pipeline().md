@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "api.py (2)"
+community: "UserSessionManager"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy_2
+  - community/UserSessionManager
 ---
 
 # .mock_pipeline()
@@ -15,5 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Create a mock security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
+- [[fixture_123]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy_2
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "middleware.py"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/middlewarepy
 ---
 
 # .is_admin_or_higher()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-get_user_role()_2]] - `calls` [EXTRACTED]
 - [[Check if user has admin privileges or higher.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_3]] - `method` [EXTRACTED]
+- [[RBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

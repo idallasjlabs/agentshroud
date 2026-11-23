@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "chatbot/main.py"
-location: "L132"
+community: "AgentRegistry"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/AgentRegistry
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[Parse from a YAMLdict representation.          Example YAML             privac]] - `rationale_for` [EXTRACTED]
-- [[PrivacyPolicy]] - `method` [EXTRACTED]
-- [[ServicePolicy]] - `calls` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
+- [[dot-test_serialization()]] - `calls` [EXTRACTED]
+- [[dot-test_serialization_roundtrip()]] - `calls` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[ContainerConfig]] - `calls` [EXTRACTED]
+- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

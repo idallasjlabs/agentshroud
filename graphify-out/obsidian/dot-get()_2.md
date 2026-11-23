@@ -1,22 +1,21 @@
 ---
-source_file: "cli/src/main.rs"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L350"
+community: ".get"
+location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/get
 ---
 
 # .get()
 
 ## Connections
-- [[dot-request()]] - `calls` [EXTRACTED]
-- [[GatewayClientT]] - `method` [EXTRACTED]
-- [[Result]] - `references` [EXTRACTED]
-- [[Value_3]] - `references` [EXTRACTED]
-- [[build_url()]] - `calls` [EXTRACTED]
-- [[map_http_error()]] - `calls` [EXTRACTED]
+- [[dot-_path()]] - `calls` [EXTRACTED]
+- [[dot-_valid_id()]] - `calls` [EXTRACTED]
+- [[dot-list()]] - `calls` [EXTRACTED]
+- [[Any_89]] - `references` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/get

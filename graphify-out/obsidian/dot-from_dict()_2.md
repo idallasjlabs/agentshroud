@@ -1,22 +1,21 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "FileIntegrityRecord"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/FileIntegrityRecord
 ---
 
 # .from_dict()
 
 ## Connections
 - [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[Any_14]] - `references` [EXTRACTED]
 - [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
 - [[FileIntegrityRecord]] - `method` [EXTRACTED]
 - [[ModificationSource]] - `calls` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "EgressFilterConfig (2)"
-location: "L644"
+community: "PathIsolationManager"
+location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/PathIsolationManager
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-get_log()]] - `calls` [EXTRACTED]
-- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
+- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[any_36]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

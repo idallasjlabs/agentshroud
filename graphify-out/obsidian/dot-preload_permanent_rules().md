@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "ingest_api/main.py"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/ingest_api/mainpy
 ---
 
 # .preload_permanent_rules()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_check_existing_rule()]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[EgressRule]] - `calls` [EXTRACTED]
-- [[Pre-approve known service domains at startup without interactive prompts.]] - `rationale_for` [EXTRACTED]
+- [[Pre-approve known service domains at startup without interactive prompts.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

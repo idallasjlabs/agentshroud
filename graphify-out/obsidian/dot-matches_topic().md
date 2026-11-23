@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "colima-health-check.sh"
+community: "test_collaborator_responses.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/test_collaborator_responsespy
 ---
 
 # .matches_topic()
@@ -15,4 +15,4 @@ tags:
 - [[ProjectConfig]] - `method` [EXTRACTED]
 - [[Return True if any focus_topic appears in the text (case-insensitive).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy

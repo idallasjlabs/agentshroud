@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L178"
+community: "LockdownLevel"
+location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/LockdownLevel
 ---
 
 # .is_suspended()
 
 ## Connections
+- [[dot-level_of()]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `method` [EXTRACTED]
-- [[Return True if the user's session is currently suspended.]] - `rationale_for` [EXTRACTED]
+- [[Return True if the principal's session is currently suspended.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/LockdownLevel

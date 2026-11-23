@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "Any"
+community: "OutputCanary"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/OutputCanary
 ---
 
 # .generate_canary()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_create_detection_patterns()]] - `calls` [EXTRACTED]
 - [[dot-_create_invisible_canary()]] - `calls` [EXTRACTED]
-- [[Generate and store a canary for this session.          Args             session]] - `rationale_for` [EXTRACTED]
+- [[Generate and store a canary for this session. Args session_id Unique session…]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/inbound_edge/approvals.py"
 type: "code"
-community: "Critical Findings"
-location: "L207"
+community: "EnhancedApprovalQueue"
+location: "L240"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Critical_Findings
+  - community/EnhancedApprovalQueue
 ---
 
 # .handle_callback()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
-- [[Process inline button callback. Returns action result.          Actions allow_1]] - `rationale_for` [EXTRACTED]
+- [[EdgeApprovals]] - `method` [EXTRACTED]
+- [[Telegram inline-button handler. Returns the toast text to show.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Critical_Findings
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "TrustManager"
 location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/TrustManager
 ---
 
 # .get_incidents()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[CrossBotTrustLedger]] - `method` [EXTRACTED]
 - [[IncidentRecord]] - `references` [EXTRACTED]
-- [[Return incidents, optionally filtered by source bot.          Args]] - `rationale_for` [EXTRACTED]
+- [[Return incidents, optionally filtered by source bot. Args source_bot If…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

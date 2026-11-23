@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "WebProxy"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/WebProxy
 ---
 
 # .is_domain_denied()
@@ -15,4 +15,4 @@ tags:
 - [[Check if a domain is on the denylist.]] - `rationale_for` [EXTRACTED]
 - [[WebProxyConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

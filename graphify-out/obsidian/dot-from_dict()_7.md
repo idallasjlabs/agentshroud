@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/runtime/config.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L79"
+community: "api.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/apipy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-register()]] - `calls` [EXTRACTED]
-- [[AgentRegistry]] - `method` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[Deserialize registry from dict.]] - `rationale_for` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
+- [[dot-test_from_dict()]] - `calls` [EXTRACTED]
+- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/apipy

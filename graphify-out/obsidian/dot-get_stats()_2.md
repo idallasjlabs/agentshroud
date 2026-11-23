@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "agentshroud-blueteam/SKILL.md (2)"
+community: "asyncio"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agentshroud-blueteam/SKILLmd_2
+  - community/asyncio
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_33]] - `references` [EXTRACTED]
 - [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget (2)"
+community: "AgentTarget"
 location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget_2
+  - community/AgentTarget
 ---
 
 # .forward_to_agent_stream()
 
 ## Connections
 - [[dot-_build_forward_payload()]] - `calls` [EXTRACTED]
-- [[AgentTarget_1]] - `references` [EXTRACTED]
-- [[Any_53]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[ForwardError]] - `calls` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[Stream sanitized content to an OpenAI-compatible agent, yielding text         de]] - `rationale_for` [EXTRACTED]
+- [[Stream sanitized content to an OpenAI-compatible agent, yielding text deltas as…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget_2
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

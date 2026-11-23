@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/mfa_guard.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "test_mfa_guard.py"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_mfa_guardpy
 ---
 
 # .is_required()
 
 ## Connections
-- [[dot-verify()_1]] - `calls` [EXTRACTED]
-- [[MFAGuard_2]] - `method` [EXTRACTED]
-- [[Return True if ``action_type`` requires a second factor right now.          Two]] - `rationale_for` [EXTRACTED]
+- [[dot-verify()]] - `calls` [EXTRACTED]
+- [[MFAGuard]] - `method` [EXTRACTED]
+- [[Return True if ``action_type`` requires a second factor right now. Two classes…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

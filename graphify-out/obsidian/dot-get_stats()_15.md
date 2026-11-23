@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "AgentTarget"
-location: "L93"
+community: "WebhookReceiver"
+location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/WebhookReceiver
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_55]] - `references` [EXTRACTED]
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

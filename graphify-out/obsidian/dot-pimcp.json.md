@@ -1,12 +1,12 @@
 ---
 source_file: ".pi/mcp.json"
 type: "code"
-community: ".pi/mcp.json (2)"
+community: ".pi/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pi/mcpjson_2
+  - community/pi/mcpjson
 ---
 
 # .pi/mcp.json
@@ -22,4 +22,4 @@ tags:
 - [[safari_5]] - `contains` [EXTRACTED]
 - [[xmind_5]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pi/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/pi/mcpjson

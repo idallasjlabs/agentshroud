@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "GroupRoleResolver"
+community: "main.rs"
 location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/mainrs
 ---
 
 # .new()
@@ -15,4 +15,4 @@ tags:
 - [[ReqwestTransport]] - `method` [EXTRACTED]
 - [[Self]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/mainrs

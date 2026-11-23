@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L162"
+community: "soc/router.py"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/soc/routerpy
 ---
 
 # .is_owner()
 
 ## Connections
-- [[FakeRBAC]] - `method` [EXTRACTED]
+- [[SCLCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

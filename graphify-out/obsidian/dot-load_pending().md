@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Load all pending (non-expired, non-decided) items.          Items whose expires_]] - `rationale_for` [EXTRACTED]
+- [[Load all pending (non-expired, non-decided) items. Items whose expires_at is in…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalStore

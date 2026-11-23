@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "test_soc_bots.py"
-location: "L113"
+community: "SharedMemoryManager"
+location: "L169"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - graphify/INFERRED
+  - community/SharedMemoryManager
 ---
 
 # .is_owner()
 
 ## Connections
-- [[dot-get_role()]] - `calls` [EXTRACTED]
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
-- [[Return True if user_id is the owner in group_chat_id.]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_authorized_group_writer()]] - `indirect_call` [INFERRED]
+- [[dot-_is_owner()_1]] - `indirect_call` [INFERRED]
+- [[dot-append_to_user_memory()]] - `indirect_call` [INFERRED]
+- [[dot-get_merged_memory_for_user()]] - `indirect_call` [INFERRED]
+- [[dot-get_topic_scoped_memory()]] - `indirect_call` [INFERRED]
+- [[Check if user is the owner (any platform).]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/INFERRED #community/SharedMemoryManager

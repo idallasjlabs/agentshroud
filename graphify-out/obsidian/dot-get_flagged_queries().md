@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L242"
+community: "DNSFilterConfig"
+location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # .get_flagged_queries()
 
 ## Connections
-- [[dot-get_audit_log()_7]] - `calls` [EXTRACTED]
+- [[dot-get_audit_log()_1]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `references` [EXTRACTED]
+- [[DNSQuery]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

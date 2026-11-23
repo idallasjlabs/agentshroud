@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L200"
+community: "test_session_manager.py"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/test_session_managerpy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[Any_49]] - `references` [EXTRACTED]
-- [[MCPPolicyAction]] - `calls` [EXTRACTED]
-- [[MCPPolicyConfig_1]] - `method` [EXTRACTED]
-- [[Parse a policy config from a plain dict (e.g. loaded from YAML)._1]] - `rationale_for` [EXTRACTED]
-- [[cls]] - `calls` [INFERRED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[dot-test_session_to_dict_and_back()]] - `calls` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[ConversationMessage]] - `calls` [EXTRACTED]
+- [[Create session from dictionary.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_session_managerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/cli/client.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never…"
+community: "SCLClient"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+  - community/SCLClient
 ---
 
 # .post()
@@ -18,11 +18,14 @@ tags:
 - [[dot-approve_egress()]] - `calls` [EXTRACTED]
 - [[dot-block_egress()]] - `calls` [EXTRACTED]
 - [[dot-deny_egress()]] - `calls` [EXTRACTED]
+- [[dot-edge_enroll()]] - `calls` [EXTRACTED]
+- [[dot-edge_kill()]] - `calls` [EXTRACTED]
+- [[dot-edge_unkill()]] - `calls` [EXTRACTED]
 - [[dot-freeze()]] - `calls` [EXTRACTED]
-- [[dot-restart_service()]] - `calls` [EXTRACTED]
+- [[dot-restart_service()_1]] - `calls` [EXTRACTED]
 - [[dot-run_scan()]] - `calls` [EXTRACTED]
-- [[dot-stop_service()]] - `calls` [EXTRACTED]
-- [[Any_23]] - `references` [EXTRACTED]
+- [[dot-stop_service()_1]] - `calls` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never
+#graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "MCPPermissionManager"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/MCPPermissionManager
 ---
 
 # .get_privacy_policy_status()
@@ -15,4 +15,4 @@ tags:
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return privacy policy file load status for dashboardaudit APIs.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "chatbot/main.py"
+community: "PrivacyPolicyEnforcer"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .is_service_allowed()
@@ -17,4 +17,4 @@ tags:
 - [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
 - [[Return True if user_id may access the named service.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

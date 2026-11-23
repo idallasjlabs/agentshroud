@@ -1,12 +1,12 @@
 ---
 source_file: ".github/mcp.json"
 type: "code"
-community: ".github/mcp.json (2)"
+community: ".github/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/github/mcpjson_2
+  - community/github/mcpjson
 ---
 
 # .llm_settings/mcp-servers/atlassian/agentshroud/mcp-atlassian.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[atlassian-agentshroud_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/github/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/github/mcpjson

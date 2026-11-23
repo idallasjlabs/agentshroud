@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "PathIsolationManager"
-location: "L69"
+community: "SessionManager"
+location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/SessionManager
 ---
 
 # .manager()
 
 ## Connections
-- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `calls` [EXTRACTED]
-- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[SessionManager]] - `calls` [INFERRED]
+- [[TestInstructionNonce]] - `method` [EXTRACTED]
+- [[fixture_127]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/SessionManager

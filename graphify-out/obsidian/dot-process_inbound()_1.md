@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L123"
+community: "test_e2e_proxy.py"
+location: "L427"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_e2e_proxypy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[EncodingDetectingPipeline]] - `method` [EXTRACTED]
-- [[FakePipelineResult]] - `calls` [EXTRACTED]
+- [[_PassInboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

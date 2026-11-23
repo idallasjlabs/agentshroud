@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_prompt_guard.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
 community: "PromptGuard"
-location: "L176"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,8 @@ tags:
 # .guard()
 
 ## Connections
-- [[PromptGuard_1]] - `calls` [EXTRACTED]
-- [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "ResourceGuard"
-location: "L53"
+community: "._teams_config"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_teams_config
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[FakeCaller]] - `method` [EXTRACTED]
+- [[dot-_teams_config()]] - `indirect_call` [INFERRED]
+- [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_teams_config

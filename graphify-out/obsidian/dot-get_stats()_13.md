@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L383"
+community: "ingest_api/main.py"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/ingest_api/mainpy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

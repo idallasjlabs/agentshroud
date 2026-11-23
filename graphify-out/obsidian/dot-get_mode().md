@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L409"
+community: "PIIConfig"
+location: "L483"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PIIConfig
 ---
 
 # .get_mode()
 
 ## Connections
-- [[PIISanitizer_3]] - `method` [EXTRACTED]
-- [[Return current enforcement mode          Returns             enforce or moni]] - `rationale_for` [EXTRACTED]
+- [[PIISanitizer]] - `method` [EXTRACTED]
+- [[Return current enforcement mode Returns enforce or monitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

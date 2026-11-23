@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "ContextSegment"
-location: "L450"
+community: "test_soc_router_coverage.py"
+location: "L1517"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/test_soc_router_coveragepy
 ---
 
 # .get_pending()
 
 ## Connections
-- [[ApprovalQueueItem_2]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
-- [[Get all pending approval items.]] - `rationale_for` [EXTRACTED]
+- [[_FakeDecideQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
