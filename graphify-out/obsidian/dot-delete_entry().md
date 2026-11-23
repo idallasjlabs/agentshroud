@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "ingest_api/config.py"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/ingest_api/configpy
 ---
 
 # .delete_entry()
 
 ## Connections
 - [[DataLedger]] - `method` [EXTRACTED]
-- [[Forget this' - permanently delete a ledger entry          Implements right to er]] - `rationale_for` [EXTRACTED]
+- [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

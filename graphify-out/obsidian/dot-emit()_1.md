@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "TestOutboundInfoFilter (2)"
+community: "ingest_api/main.py"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter_2
+  - community/ingest_api/mainpy
 ---
 
 # .emit()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Emit an event to all subscribers]] - `rationale_for` [EXTRACTED]
 - [[EventBus]] - `method` [EXTRACTED]
-- [[GatewayEvent]] - `shares_data_with` [EXTRACTED]
+- [[GatewayEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter_2
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

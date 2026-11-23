@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "MiddlewareManager"
+community: ".get_or_create_session"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/get_or_create_session
 ---
 
 # ._session_key()
@@ -18,4 +18,4 @@ tags:
 - [[Return the cache key string for a (user_id, bot_id) pair.]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/get_or_create_session

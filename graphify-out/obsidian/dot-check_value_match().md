@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "KeyVault"
-location: "L130"
+location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .check_value_match()
 
 ## Connections
-- [[dot-scan_outbound()]] - `calls` [EXTRACTED]
 - [[Check if any stored key values appear in text. Returns matching key names.]] - `rationale_for` [EXTRACTED]
 - [[KeyVault]] - `method` [EXTRACTED]
 

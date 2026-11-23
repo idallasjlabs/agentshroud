@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L356"
+community: "ingest_api/models.py"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/ingest_api/modelspy
 ---
 
 # .body_not_empty()
 
 ## Connections
-- [[EmailSendRequest_1]] - `method` [EXTRACTED]
+- [[EmailSendRequest]] - `method` [EXTRACTED]
+- [[field_validator_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

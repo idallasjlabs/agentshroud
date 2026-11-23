@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L187"
+community: "soc/router.py"
+location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/soc/routerpy
 ---
 
 # .check_permission()
 
 ## Connections
-- [[dot-get_user_role()_3]] - `calls` [EXTRACTED]
-- [[dot-list_users_and_roles()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
-- [[Action_3]] - `references` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
-- [[Check if a user has permission to perform an action on a resource.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `references` [EXTRACTED]
-- [[RBACManager_2]] - `method` [EXTRACTED]
-- [[Resource_2]] - `references` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

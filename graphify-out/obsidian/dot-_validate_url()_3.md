@@ -1,12 +1,12 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "format_cve_report()"
+community: "SecureBrowser"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report
+  - community/SecureBrowser
 ---
 
 # ._validate_url()
@@ -16,6 +16,6 @@ tags:
 - [[dot-_log_security_event()_3]] - `calls` [EXTRACTED]
 - [[dot-navigate()_3]] - `calls` [EXTRACTED]
 - [[SecureBrowser_3]] - `method` [EXTRACTED]
-- [[Validate URL against allowlistblocklist          Security This is the primary_2]] - `rationale_for` [EXTRACTED]
+- [[Validate URL against allowlistblocklist Security This is the primary URL…_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

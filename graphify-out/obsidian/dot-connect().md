@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: ".connect()"
-location: "L350"
+community: "_FakeUnixSocket"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/connect
+  - community/_FakeUnixSocket
 ---
 
 # .connect()
 
 ## Connections
-- [[Accept a WebSocket connection and add to connected set          Args]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket]] - `references` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/connect
+#graphify/code #graphify/EXTRACTED #community/_FakeUnixSocket

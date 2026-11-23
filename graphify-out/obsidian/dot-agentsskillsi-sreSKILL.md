@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-sre/SKILL.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md (2)"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd_2
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # .agents/skills/i-sre/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill sre]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd_2
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

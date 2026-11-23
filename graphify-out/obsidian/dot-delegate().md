@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "_make_proxy"
+community: "DelegationManager"
 location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/DelegationManager
 ---
 
 # .delegate()
@@ -15,10 +15,10 @@ tags:
 - [[dot-_require_owner()]] - `calls` [EXTRACTED]
 - [[dot-_revoke_by_user_privilege()]] - `calls` [EXTRACTED]
 - [[dot-_save()]] - `calls` [EXTRACTED]
-- [[Create a time-bounded delegation.          Args             owner_id Must matc]] - `rationale_for` [EXTRACTED]
-- [[Delegation_1]] - `references` [EXTRACTED]
+- [[Create a time-bounded delegation. Args owner_id Must match configured…]] - `rationale_for` [EXTRACTED]
+- [[Delegation]] - `calls` [EXTRACTED]
 - [[DelegationError]] - `calls` [EXTRACTED]
-- [[DelegationManager_1]] - `method` [EXTRACTED]
+- [[DelegationManager]] - `method` [EXTRACTED]
 - [[DelegationPrivilege]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/DelegationManager

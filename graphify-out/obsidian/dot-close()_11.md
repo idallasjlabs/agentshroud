@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "AlertDispatcher (5)"
-location: "L163"
+community: "EnhancedApprovalQueue"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_5
+  - community/EnhancedApprovalQueue
 ---
 
 # .close()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
+- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_5
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

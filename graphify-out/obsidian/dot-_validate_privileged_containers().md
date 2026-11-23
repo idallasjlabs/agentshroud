@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "WebProxy"
-location: "L412"
+community: "NetworkValidator"
+location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/NetworkValidator
 ---
 
 # ._validate_privileged_containers()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-validate_docker_compose_config()]] - `calls` [EXTRACTED]
 - [[NetworkConfiguration]] - `references` [EXTRACTED]
-- [[NetworkSecurityFinding]] - `references` [EXTRACTED]
+- [[NetworkSecurityFinding]] - `calls` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate that no containers are running in privileged mode.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

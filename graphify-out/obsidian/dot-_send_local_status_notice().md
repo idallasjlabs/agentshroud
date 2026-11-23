@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
-location: "L7649"
+community: "TelegramAPIProxy"
+location: "L7687"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/TelegramAPIProxy
 ---
 
 # ._send_local_status_notice()
@@ -15,6 +15,7 @@ tags:
 - [[dot-_active_send_token()]] - `calls` [EXTRACTED]
 - [[dot-_send_local_notice_with_fallback()]] - `calls` [EXTRACTED]
 - [[Send deterministic status summary without model invocation.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[_local_status_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

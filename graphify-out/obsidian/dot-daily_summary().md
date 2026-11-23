@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "Any"
+community: "EgressEvent"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/EgressEvent
 ---
 
 # .daily_summary()
 
 ## Connections
 - [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressSummary]] - `references` [EXTRACTED]
+- [[EgressSummary]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

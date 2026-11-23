@@ -1,24 +1,25 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L3575"
+community: "ToolResultInjectionScanner"
+location: "L3593"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/ToolResultInjectionScanner
 ---
 
 # ._scan_outbound_text()
 
 ## Connections
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
-- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[dot-_quarantine_outbound_block()]] - `calls` [EXTRACTED]
 - [[dot-_set_outbound_block_cascade()]] - `calls` [EXTRACTED]
-- [[Core outbound security scan shared by JSON, form, and multipart branches.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
-- [[_OutboundScan]] - `references` [EXTRACTED]
+- [[dot-info_filter_redaction_count()]] - `indirect_call` [INFERRED]
+- [[Core outbound security scan shared by JSON, form, and multipart branches. Runs…]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[_OutboundScan]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -12,7 +12,7 @@ tags:
 # .approve_pending_call()
 
 ## Connections
-- [[Approve a pending tool call that required approval.          Args             s]] - `rationale_for` [EXTRACTED]
+- [[Approve a pending tool call that required approval. Args session_id Session…]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

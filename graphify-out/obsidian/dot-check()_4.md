@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_runtime_engines.py"
-location: "L85"
+community: "WebProxy"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/WebProxy
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_hash_file()]] - `calls` [EXTRACTED]
-- [[dot-_load_baseline()]] - `calls` [EXTRACTED]
-- [[dot-_save_baseline()]] - `calls` [EXTRACTED]
-- [[Compare current file hashes against baseline.          Returns a list of change]] - `rationale_for` [EXTRACTED]
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Check if request is within rate limit. Returns True if allowed.]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

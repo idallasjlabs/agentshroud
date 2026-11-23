@@ -1,20 +1,25 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "UserSessionManager (2)"
+community: "A2AProxy"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2
+  - community/A2AProxy
 ---
 
 # .extract_text_for_pii_scan()
 
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
-- [[A2AProxy_1]] - `method` [EXTRACTED]
-- [[Any_39]] - `references` [EXTRACTED]
-- [[Flatten an A2A Message's `parts` array to plain text for PII         scanning.]] - `rationale_for` [EXTRACTED]
+- [[A2AProxy]] - `method` [EXTRACTED]
+- [[Any_88]] - `references` [EXTRACTED]
+- [[Flatten an A2A Message's `parts` array to plain text for PII scanning. Returns…]] - `rationale_for` [EXTRACTED]
+- [[test_extract_text_concatenates_text_parts()]] - `calls` [EXTRACTED]
+- [[test_extract_text_empty_message_returns_empty_string()]] - `calls` [EXTRACTED]
+- [[test_extract_text_flags_binary_parts_without_scanning_them()]] - `calls` [EXTRACTED]
+- [[test_extract_text_handles_missing_parts_key()]] - `calls` [EXTRACTED]
+- [[test_extract_text_skips_non_dict_entries_in_parts()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2
+#graphify/code #graphify/EXTRACTED #community/A2AProxy

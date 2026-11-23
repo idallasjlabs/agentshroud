@@ -1,25 +1,18 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "test_agent_cve_registry.py (2)"
-location: "L145"
+community: "PIIConfig"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy_2
+  - community/PIIConfig
 ---
 
 # .analyze()
 
 ## Connections
-- [[dot-decode_base64_segments()]] - `calls` [EXTRACTED]
-- [[dot-decode_hex()]] - `calls` [EXTRACTED]
-- [[dot-decode_rot13()]] - `calls` [EXTRACTED]
-- [[dot-decode_url()]] - `calls` [EXTRACTED]
-- [[dot-replace_homoglyphs()]] - `calls` [EXTRACTED]
-- [[dot-strip_zero_width()]] - `calls` [EXTRACTED]
-- [[DecodedLayer]] - `calls` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
-- [[EncodingResult]] - `calls` [EXTRACTED]
+- [[_FakeAnalyzer]] - `method` [EXTRACTED]
+- [[_FakeRecognizerResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy_2
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

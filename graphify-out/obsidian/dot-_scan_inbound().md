@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L1759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # ._scan_inbound()
@@ -16,4 +16,4 @@ tags:
 - [[LLMProxy]] - `method` [EXTRACTED]
 - [[Scan inbound user message text for PII and injection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

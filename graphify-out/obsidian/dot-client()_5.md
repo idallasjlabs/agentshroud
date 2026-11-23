@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_api_contract.py"
+source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
-location: "L28"
+community: "TestSkillsReloadEndpoint"
+location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Gateway_Python_Dependencies_gateway/requirementstxt
+  - community/TestSkillsReloadEndpoint
 ---
 
 # .client()
 
 ## Connections
-- [[Create a FastAPI test client.]] - `rationale_for` [EXTRACTED]
-- [[TestOpenAPIContract]] - `method` [EXTRACTED]
+- [[Path_72]] - `references` [EXTRACTED]
+- [[TestClient]] - `references` [EXTRACTED]
+- [[TestSkillsReloadEndpoint]] - `method` [EXTRACTED]
+- [[fixture_45]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
+#graphify/code #graphify/EXTRACTED #community/TestSkillsReloadEndpoint

@@ -14,6 +14,10 @@ tags:
 ## Connections
 - [[dot-get_merged_memory_for_user()]] - `calls` [EXTRACTED]
 - [[dot-get_topic_scoped_memory()]] - `calls` [EXTRACTED]
+- [[dot-test_clean_text_not_flagged()]] - `calls` [EXTRACTED]
+- [[dot-test_detects_api_key_pattern()]] - `calls` [EXTRACTED]
+- [[dot-test_detects_bearer_token()]] - `calls` [EXTRACTED]
+- [[dot-test_detects_private_section_header()]] - `calls` [EXTRACTED]
 - [[Return True if text contains patterns matching privatesensitive content.]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 

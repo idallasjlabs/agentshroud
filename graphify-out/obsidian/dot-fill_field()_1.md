@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
-community: ".proxy_messages()"
+community: "SecureBrowser"
 location: "L293"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/proxy_messages
+  - community/SecureBrowser
 ---
 
 # .fill_field()
@@ -16,9 +16,8 @@ tags:
 - [[dot-_log_action()_1]] - `calls` [EXTRACTED]
 - [[dot-_log_security_event()_1]] - `calls` [EXTRACTED]
 - [[dot-_requires_approval()_1]] - `calls` [EXTRACTED]
-- [[Fill a single form field          Security Risk classification, approval for se]] - `rationale_for` [EXTRACTED]
+- [[Fill a single form field Security Risk classification, approval for sensitive…_1]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 - [[SecurityError_1]] - `calls` [EXTRACTED]
-- [[main()_6]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/proxy_messages
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

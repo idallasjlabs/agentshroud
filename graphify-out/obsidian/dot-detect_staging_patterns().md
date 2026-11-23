@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "FileSandbox"
+community: "middleware.py"
 location: "L390"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/middlewarepy
 ---
 
 # .detect_staging_patterns()
 
 ## Connections
 - [[FileSandbox]] - `method` [EXTRACTED]
-- [[StagingPattern]] - `references` [EXTRACTED]
+- [[StagingPattern]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

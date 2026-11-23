@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval()"
-location: "L70"
+community: "SecureBrowser"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[Clean up browser resources_3]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

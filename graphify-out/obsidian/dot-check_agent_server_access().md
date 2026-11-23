@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "MCPPermissionManager"
 location: "L403"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/MCPPermissionManager
 ---
 
 # .check_agent_server_access()
@@ -16,6 +16,6 @@ tags:
 - [[dot-get_trust_level()]] - `calls` [EXTRACTED]
 - [[Check if an agent can access a server at all.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[PermissionCheck]] - `references` [EXTRACTED]
+- [[PermissionCheck]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

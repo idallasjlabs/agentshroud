@@ -1,22 +1,21 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L163"
+community: "RateLimitGuard"
+location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/RateLimitGuard
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80),         the]] - `rationale_for` [EXTRACTED]
-- [[record_decision()]] - `calls` [EXTRACTED]
+- [[dot-_burst_limit()]] - `calls` [EXTRACTED]
+- [[dot-_sustained_limit()]] - `calls` [EXTRACTED]
+- [[RateLimitDecision]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Record one request for (agent_id, tool) and decide allowblock. Fail-closed on…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "test_soc_services_coverage.py"
-location: "L54"
+community: "AuditStore"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/AuditStore
 ---
 
 # .close()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

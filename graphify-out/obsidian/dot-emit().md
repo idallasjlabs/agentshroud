@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "main.py (2)"
+community: "BufferHandler"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainpy_2
+  - community/BufferHandler
 ---
 
 # .emit()
 
 ## Connections
-- [[dot-append()]] - `calls` [EXTRACTED]
 - [[BufferHandler]] - `method` [EXTRACTED]
-- [[LogRecord_1]] - `references` [EXTRACTED]
+- [[LogRecord_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainpy_2
+#graphify/code #graphify/EXTRACTED #community/BufferHandler

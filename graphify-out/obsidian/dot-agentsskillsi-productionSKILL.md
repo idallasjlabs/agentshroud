@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-production/SKILL.md"
 type: "document"
-community: "test_openclaw_photo.sh"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/test_openclaw_photosh
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # .agents/skills/i-production/SKILL.md
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/test_openclaw_photosh
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

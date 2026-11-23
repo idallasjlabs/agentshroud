@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_tool_acl.py"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_tool_aclpy
 ---
 
 # .enforcer()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestToolRateLimiting]] - `method` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
+- [[fixture_122]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

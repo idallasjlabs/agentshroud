@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Skill: Mindmap Architect (MM)"
+community: "Code Review (CR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Mindmap_Architect_MM
+  - community/Code_Review_CR
 ---
 
 # .agents/skills/i-cr/README.md
 
 ## Connections
-- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

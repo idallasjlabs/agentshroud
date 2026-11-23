@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "ContextSegment"
-location: "L106"
+community: "TrustManager"
+location: "L442"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/TrustManager
 ---
 
 # .close()
 
 ## Connections
-- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/TrustManager

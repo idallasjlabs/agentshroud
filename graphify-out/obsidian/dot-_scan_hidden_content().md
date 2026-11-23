@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L294"
+community: "ScanResult"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/ScanResult
 ---
 
 # ._scan_hidden_content()
 
 ## Connections
-- [[dot-scan()]] - `calls` [EXTRACTED]
+- [[dot-scan()_4]] - `calls` [EXTRACTED]
 - [[ContentFinding]] - `calls` [EXTRACTED]
 - [[Scan HTML for hidden instructions in comments, invisible elements, meta tags.]] - `rationale_for` [EXTRACTED]
-- [[ScanResult]] - `references` [EXTRACTED]
+- [[ScanResult_1]] - `references` [EXTRACTED]
 - [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/ScanResult

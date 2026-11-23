@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_do_request.py"
 type: "code"
-community: "Skill: MCP Doctor (MCPM-DOCTOR)"
+community: "_Instr"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR
+  - community/_Instr
 ---
 
 # .do_request()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_Instr]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR
+#graphify/code #graphify/EXTRACTED #community/_Instr

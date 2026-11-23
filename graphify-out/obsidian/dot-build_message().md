@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "AgentShroud Access Control Matrix"
+community: "GatewayEmailService"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Access_Control_Matrix
+  - community/GatewayEmailService
 ---
 
 # .build_message()
 
 ## Connections
 - [[dot-send()]] - `calls` [EXTRACTED]
-- [[Build the MIME message string (multipartalternative).          For HTML mail th]] - `rationale_for` [EXTRACTED]
-- [[GatewayEmailService_1]] - `method` [EXTRACTED]
+- [[Build the MIME message string (multipartalternative). For HTML mail the plain…]] - `rationale_for` [EXTRACTED]
+- [[GatewayEmailService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Access_Control_Matrix
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

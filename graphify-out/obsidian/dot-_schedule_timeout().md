@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ContextSegment"
+community: "EnhancedApprovalQueue"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/EnhancedApprovalQueue
 ---
 
 # ._schedule_timeout()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[dot-initialize()_1]] - `calls` [EXTRACTED]
 - [[dot-submit()]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue_1]] - `method` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Schedule a timeout task for a request.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskPolicy_1]] - `references` [EXTRACTED]
+- [[ToolRiskPolicy]] - `references` [EXTRACTED]
+- [[timeout_handler()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "Incident Response (INCIDENT)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/Incident_Response_INCIDENT
 ---
 
 # .agents/skills/i-production/README.md
 
 ## Connections
-- [[operationsincident-response]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

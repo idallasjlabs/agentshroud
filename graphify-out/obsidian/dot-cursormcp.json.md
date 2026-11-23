@@ -1,12 +1,12 @@
 ---
 source_file: ".cursor/mcp.json"
 type: "code"
-community: ".cursor/mcp.json (2)"
+community: ".cursor/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/cursor/mcpjson_2
+  - community/cursor/mcpjson
 ---
 
 # .cursor/mcp.json
@@ -22,4 +22,4 @@ tags:
 - [[safari_1]] - `contains` [EXTRACTED]
 - [[xmind_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/cursor/mcpjson_2
+#graphify/code #graphify/EXTRACTED #community/cursor/mcpjson

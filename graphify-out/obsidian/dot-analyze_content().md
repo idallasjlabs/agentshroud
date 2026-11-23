@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "AgentShroud™ README"
-location: "L107"
+community: "BrowserSecurityGuard"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/BrowserSecurityGuard
 ---
 
 # .analyze_content()
 
 ## Connections
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
-- [[ThreatAssessment]] - `references` [EXTRACTED]
+- [[ThreatAssessment]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

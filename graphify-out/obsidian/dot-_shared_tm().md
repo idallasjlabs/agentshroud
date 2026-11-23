@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "A2AGovernanceProxy"
+community: "TrustConfig"
 location: "L515"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AGovernanceProxy
+  - community/TrustConfig
 ---
 
 # ._shared_tm()
@@ -19,6 +19,6 @@ tags:
 - [[dot-test_two_bots_are_mutual_peers()]] - `calls` [EXTRACTED]
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustManager_4]] - `references` [EXTRACTED]
+- [[TrustManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AGovernanceProxy
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

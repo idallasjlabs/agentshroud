@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "soc/router.py"
-location: "L442"
+community: "TokenValidator"
+location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TokenValidator
 ---
 
 # .close()
 
 ## Connections
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[Close the audit-log database connection.]] - `rationale_for` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

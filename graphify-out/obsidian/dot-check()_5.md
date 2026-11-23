@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L87"
+community: "fastapi.md"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/fastapimd
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_cleanup_rate_window()]] - `calls` [EXTRACTED]
-- [[dot-_detect_tunneling()]] - `calls` [EXTRACTED]
-- [[dot-_domain_in_allowlist()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSQuery_1]] - `calls` [EXTRACTED]
-- [[DNSVerdict]] - `references` [EXTRACTED]
+- [[Check if client is within rate limit Args client_id Usually client IP address…]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/fastapimd

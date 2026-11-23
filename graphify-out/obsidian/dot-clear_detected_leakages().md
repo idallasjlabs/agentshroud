@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "EnvironmentGuard"
 location: "L392"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/EnvironmentGuard
 ---
 
 # .clear_detected_leakages()
@@ -15,4 +15,4 @@ tags:
 - [[Clear the list of detected leakages.]] - `rationale_for` [EXTRACTED]
 - [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

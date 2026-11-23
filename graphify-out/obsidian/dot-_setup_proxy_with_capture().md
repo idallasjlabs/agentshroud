@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L186"
+community: "TestCollabLockdownNotifications"
+location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/TestCollabLockdownNotifications
 ---
 
 # ._setup_proxy_with_capture()
@@ -19,6 +19,7 @@ tags:
 - [[dot-test_no_collab_notice_below_alert()]] - `calls` [EXTRACTED]
 - [[dot-test_owner_also_notified_on_threshold()]] - `calls` [EXTRACTED]
 - [[TestCollabLockdownNotifications]] - `method` [EXTRACTED]
-- [[_make_proxy()_4]] - `calls` [EXTRACTED]
+- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[capture()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/TestCollabLockdownNotifications

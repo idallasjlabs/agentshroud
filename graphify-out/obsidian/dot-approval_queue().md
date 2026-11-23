@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "TestEgressApprovalQueue"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/TestEgressApprovalQueue
 ---
 
 # .approval_queue()
@@ -15,5 +15,6 @@ tags:
 - [[Create EgressApprovalQueue instance for testing.]] - `rationale_for` [EXTRACTED]
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
+- [[fixture_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

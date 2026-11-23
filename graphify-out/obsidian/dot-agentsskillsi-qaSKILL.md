@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-qa/SKILL.md"
 type: "document"
-community: "Dockerfile — Bot (OpenClaw)"
+community: "Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Dockerfile__Bot_OpenClaw
+  - community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 ---
 
 # .agents/skills/i-qa/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Quality Assurance (QA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw
+#graphify/document #graphify/EXTRACTED #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT

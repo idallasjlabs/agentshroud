@@ -12,7 +12,8 @@ tags:
 # .append_to_user_memory()
 
 ## Connections
-- [[Append content to user's private memory file.          Authorization (RT-5, WS-E]] - `rationale_for` [EXTRACTED]
+- [[dot-is_owner()_3]] - `indirect_call` [INFERRED]
+- [[Append content to user's private memory file. Authorization (RT-5, WS-E HIGH)…]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

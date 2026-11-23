@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "ForwardRequest"
+community: "TestParanoidConfig"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/TestParanoidConfig
 ---
 
 # .config()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestMinimalConfig]] - `method` [EXTRACTED]
 - [[_parse_env_file()]] - `calls` [EXTRACTED]
+- [[fixture_95]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/TestParanoidConfig

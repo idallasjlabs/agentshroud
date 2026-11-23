@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
-location: "L401"
+community: "MiddlewareManager"
+location: "L1438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/MiddlewareManager
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[MiddlewareManager]] - `method` [EXTRACTED]
+- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

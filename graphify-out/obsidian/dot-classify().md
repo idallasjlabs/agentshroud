@@ -15,7 +15,7 @@ tags:
 - [[dot-_classify_heuristic()]] - `calls` [EXTRACTED]
 - [[dot-_classify_ml()]] - `calls` [EXTRACTED]
 - [[ClassificationResult]] - `references` [EXTRACTED]
-- [[Classify text for injection probability.          Args             text Input]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[Classify text for injection probability. Args text Input text to classify…]] - `rationale_for` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

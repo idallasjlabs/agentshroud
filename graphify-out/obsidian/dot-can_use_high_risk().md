@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "test_soc_bots.py"
+community: "GroupRole"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_botspy
+  - community/GroupRole
 ---
 
 # .can_use_high_risk()
 
 ## Connections
 - [[GroupRole]] - `method` [EXTRACTED]
-- [[Return True if this role is permitted to REQUEST high-risk tools.          OWNER]] - `rationale_for` [EXTRACTED]
+- [[Return True if this role is permitted to REQUEST high-risk tools. OWNER…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_botspy
+#graphify/code #graphify/EXTRACTED #community/GroupRole

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "MCPPermissionManager"
 location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/MCPPermissionManager
 ---
 
 # .check_tool_parameters()
@@ -17,6 +17,7 @@ tags:
 - [[dot-get_trust_level()]] - `calls` [EXTRACTED]
 - [[Block non-owner tool calls that reference admin-private data pathscontent.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[PermissionCheck]] - `references` [EXTRACTED]
+- [[PermissionCheck]] - `calls` [EXTRACTED]
+- [[_walk()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager

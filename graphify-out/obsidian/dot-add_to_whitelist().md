@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ConsentFramework"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ConsentFramework
 ---
 
 # .add_to_whitelist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

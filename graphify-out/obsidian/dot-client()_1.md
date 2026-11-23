@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "hermes/skills/i-browser/browse.js"
-location: "L781"
+community: "test_runtime_engines.py"
+location: "L863"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes/skills/i-browser/browsejs
+  - community/test_runtime_enginespy
 ---
 
 # .client()
 
 ## Connections
-- [[TestInstallerAPI]] - `method` [EXTRACTED]
+- [[TestConfigRoundTrip]] - `method` [EXTRACTED]
+- [[fixture_37]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

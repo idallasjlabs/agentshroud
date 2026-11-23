@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "DraftEntry"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/DraftEntry
 ---
 
 # ._verify_url()
@@ -15,7 +15,8 @@ tags:
 - [[dot-verify_entry()]] - `calls` [EXTRACTED]
 - [[Citation]] - `references` [EXTRACTED]
 - [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Re-fetch url and return a Citation iff it is allowlisted + live.          SSRF]] - `rationale_for` [EXTRACTED]
+- [[Re-fetch url and return a Citation iff it is allowlisted + live. SSRF…]] - `rationale_for` [EXTRACTED]
+- [[_fetch()]] - `calls` [EXTRACTED]
 - [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

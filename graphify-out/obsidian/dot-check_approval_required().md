@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AgentShroud Security Value Proposition"
+community: "MCPProxy"
 location: "L859"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/MCPProxy
 ---
 
 # .check_approval_required()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
 - [[Check if a tool call requires approval and wait for it if needed.]] - `rationale_for` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (3)"
-location: "L7329"
+community: "TelegramAPIProxy"
+location: "L7367"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_3
+  - community/TelegramAPIProxy
 ---
 
 # ._send_local_help_notice()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[dot-_send_local_notice_with_fallback()]] - `calls` [EXTRACTED]
 - [[Send deterministic help command list without model invocation.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[_local_help_handler()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_3
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

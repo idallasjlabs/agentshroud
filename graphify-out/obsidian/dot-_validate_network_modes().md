@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "WebProxy"
-location: "L380"
+community: "NetworkValidator"
+location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/NetworkValidator
 ---
 
 # ._validate_network_modes()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-validate_docker_compose_config()]] - `calls` [EXTRACTED]
 - [[NetworkConfiguration]] - `references` [EXTRACTED]
-- [[NetworkSecurityFinding]] - `references` [EXTRACTED]
+- [[NetworkSecurityFinding]] - `calls` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 - [[Validate network mode configurations.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

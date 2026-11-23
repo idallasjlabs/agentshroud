@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
 - [[SubagentMonitor]] - `method` [EXTRACTED]
-- [[ToolCheckResult]] - `references` [EXTRACTED]
+- [[ToolCheckResult]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

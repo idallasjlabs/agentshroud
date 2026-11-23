@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/i-kanban/SKILL.md"
 type: "document"
-community: "clawhub/SKILL.md"
+community: ".agents/skills/i-kanban/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/clawhub/SKILLmd
+  - community/agents/skills/i-kanban/SKILLmd
 ---
 
 # .agents/skills/i-kanban/SKILL.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill kanban]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/clawhub/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-kanban/SKILLmd

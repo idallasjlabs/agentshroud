@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_is_authorized_group_writer()]] - `calls` [EXTRACTED]
-- [[Append a timestamped entry to the group shared memory file.          Authorizati]] - `rationale_for` [EXTRACTED]
+- [[Append a timestamped entry to the group shared memory file. Authorization…]] - `rationale_for` [EXTRACTED]
 - [[SharedMemoryManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

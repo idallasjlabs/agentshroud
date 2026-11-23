@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: "The 8D Investigation Process"
+community: "AuditStore"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/The_8D_Investigation_Process
+  - community/AuditStore
 ---
 
 # .audit_store()
@@ -15,5 +15,6 @@ tags:
 - [[AuditStore]] - `calls` [EXTRACTED]
 - [[Create in-memory audit store for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `method` [EXTRACTED]
+- [[fixture_115]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/The_8D_Investigation_Process
+#graphify/code #graphify/EXTRACTED #community/AuditStore

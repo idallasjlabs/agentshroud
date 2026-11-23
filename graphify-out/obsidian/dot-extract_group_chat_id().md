@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ApprovalRequest"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ApprovalRequest
 ---
 
 # .extract_group_chat_id()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-is_group_context()]] - `calls` [EXTRACTED]
 - [[dot-route_approval()]] - `calls` [EXTRACTED]
-- [[Extract the raw chat_id from a group-{chat_id} agent_id.          Returns None i]] - `rationale_for` [EXTRACTED]
+- [[Extract the raw chat_id from a group-{chat_id} agent_id. Returns None if the…]] - `rationale_for` [EXTRACTED]
 - [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

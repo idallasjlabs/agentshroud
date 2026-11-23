@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L2704"
+community: "TelegramAPIProxy"
+location: "L2722"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/TelegramAPIProxy
 ---
 
 # ._strip_json_fence()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_parse_tool_call_json()]] - `calls` [EXTRACTED]
 - [[Strip optional markdown json fences around model output.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

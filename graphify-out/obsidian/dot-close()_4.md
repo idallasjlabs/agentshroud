@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "UserSessionManager"
-location: "L466"
+community: "SecureBrowser"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "TestPathIsolationManager"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/TestPathIsolationManager
 ---
 
 # .config()
@@ -15,5 +15,6 @@ tags:
 - [[Create test configuration.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationConfig]] - `calls` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[fixture_59]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

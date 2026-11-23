@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ApprovalStore"
-location: "L57"
+community: "ingest_api/config.py"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ingest_api/configpy
 ---
 
 # .close()
 
 ## Connections
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
+- [[Close database connection]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

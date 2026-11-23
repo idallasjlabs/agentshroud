@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
-community: "MCPPolicyEngine (2)"
+community: "DraftEntry"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine_2
+  - community/DraftEntry
 ---
 
 # ._verifier()
@@ -16,4 +16,4 @@ tags:
 - [[TestVerifyEntry]] - `method` [EXTRACTED]
 - [[_FakeFetcher]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine_2
+#graphify/code #graphify/EXTRACTED #community/DraftEntry
