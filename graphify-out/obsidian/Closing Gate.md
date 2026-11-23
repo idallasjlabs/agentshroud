@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-pca.md"
 type: "document"
-community: "Community 1220"
+community: "Output Sections (ALL required)"
 location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1220
+  - community/Output_Sections_ALL_required
 ---
 
 # Closing Gate
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Skill Pre-Change Analysis (PCA)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1220
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

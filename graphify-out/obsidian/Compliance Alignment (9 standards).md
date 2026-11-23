@@ -1,11 +1,11 @@
 ---
 source_file: "docs/architecture/agentic-os.md"
 type: "concept"
-community: "Community 517"
+community: "Gateway Management/Control-Plane API (v1.3.0)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_517
+  - community/Gateway_Management/Control-Plane_API_v130
 ---
 
 # Compliance Alignment (9 standards)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[SecurityPipeline (75 modules, 7 layers)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_517
+#graphify/concept #graphify/EXTRACTED #community/Gateway_Management/Control-Plane_API_v130

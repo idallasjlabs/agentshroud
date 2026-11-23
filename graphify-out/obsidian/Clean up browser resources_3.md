@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "rationale"
-community: "Community 160"
+community: "SecureBrowser"
 location: "L380"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/SecureBrowser
 ---
 
 # Clean up browser resources
 
 ## Connections
-- [[.close()_22]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_160
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

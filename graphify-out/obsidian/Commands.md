@@ -1,17 +1,21 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "Community 39"
-location: "L46"
+source_file: "skills/openclaw/weather/SKILL.md"
+type: "document"
+community: "Weather Skill"
+location: "L36"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/Weather_Skill
 ---
 
 # Commands
 
 ## Connections
-- [[Cli]] - `references` [EXTRACTED]
+- [[Current Weather]] - `contains` [EXTRACTED]
+- [[Forecasts]] - `contains` [EXTRACTED]
+- [[Format Codes]] - `contains` [EXTRACTED]
+- [[Format Options]] - `contains` [EXTRACTED]
+- [[Weather Skill]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/document #graphify/EXTRACTED #community/Weather_Skill

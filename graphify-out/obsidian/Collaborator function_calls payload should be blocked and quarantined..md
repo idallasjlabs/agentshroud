@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "FakeRBAC"
 location: "L1789"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/FakeRBAC
 ---
 
 # Collaborator <function_calls> payload should be blocked and quarantined.
 
 ## Connections
-- [[.test_collaborator_function_calls_payload_text_is_quarantined()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_function_calls_payload_text_is_quarantined()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "Community 346"
-location: "L642"
+community: "Quick Reference — AgentShroud"
+location: "L134"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_346
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Common Issues
 
 ## Connections
-- [[🆘 Troubleshooting]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_346
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

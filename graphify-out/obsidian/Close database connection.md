@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # Close database connection
 
 ## Connections
-- [[.close()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_9]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_7
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

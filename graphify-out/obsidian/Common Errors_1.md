@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".cursor/agents/i-mcpm.md"
 type: "document"
-community: "Community 288"
-location: "L140"
+community: "Available MCP Servers"
+location: "L142"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_288
+  - community/Available_MCP_Servers
 ---
 
 # Common Errors
 
 ## Connections
-- [[10. Troubleshooting]] - `contains` [EXTRACTED]
 - [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_288
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

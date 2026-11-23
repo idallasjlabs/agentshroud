@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 455"
+community: "._is_domain_allowed"
 location: "L142"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/_is_domain_allowed
 ---
 
 # Check if this is an internal link (relative, anchor, etc.).
 
 ## Connections
-- [[._is_internal_link()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_internal_link()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/_is_domain_allowed

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/troubleshooting.md"
 type: "document"
-community: "Community 535"
+community: "Known Log Messages"
 location: "L458"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_535
+  - community/Known_Log_Messages
 ---
 
 # ClamAV: `Socket for clamd not found yet, retrying (N/1800)...`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Known Log Messages]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_535
+#graphify/document #graphify/EXTRACTED #community/Known_Log_Messages

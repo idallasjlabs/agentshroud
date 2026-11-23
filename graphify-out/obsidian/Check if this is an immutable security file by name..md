@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "rationale"
-community: "Community 1"
+community: "middleware.py"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/middlewarepy
 ---
 
 # Check if this is an immutable security file by name.
 
 ## Connections
-- [[._is_immutable_file()]] - `rationale_for` [EXTRACTED]
+- [[dot-_is_immutable_file()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

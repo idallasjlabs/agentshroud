@@ -1,17 +1,17 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 231"
+community: "Logo Usage"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Logo_Usage
 ---
 
 # Clear Space
 
 ## Connections
-- [[Logo Usage_2]] - `contains` [EXTRACTED]
+- [[Logo Usage_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Logo_Usage

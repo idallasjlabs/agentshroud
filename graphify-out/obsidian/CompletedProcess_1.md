@@ -1,17 +1,16 @@
 ---
-source_file: "gateway/tests/test_agent_cve_registry.py"
+source_file: ""
 type: "code"
-community: "Community 42"
-location: "L580"
+community: "test_bots_ssh_exec_wrapper.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_42
+  - community/test_bots_ssh_exec_wrapperpy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_triage()]] - `references` [EXTRACTED]
+- [[_run_wrapper_capture_bearer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_42
+#graphify/code #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

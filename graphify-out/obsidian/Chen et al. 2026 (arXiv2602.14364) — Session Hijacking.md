@@ -1,16 +1,13 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/session_security.py.md"
 type: "paper"
-community: "Community 76"
+community: "Chen et al. 2026 (arXiv:2602.14364) — Session Hijacking"
 tags:
   - graphify/paper
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/Chen_et_al_2026_arXiv260214364__Session_Hijacking
 ---
 
 # Chen et al. 2026 (arXiv:2602.14364) — Session Hijacking
 
-## Connections
-- [[session_security.py]] - `cites` [EXTRACTED]
-
-#graphify/paper #graphify/EXTRACTED #community/Community_76
+#graphify/paper #graphify/EXTRACTED #community/Chen_et_al_2026_arXiv260214364__Session_Hijacking

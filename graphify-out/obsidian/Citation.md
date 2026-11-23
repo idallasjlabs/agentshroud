@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "Community 57"
-location: "L142"
+community: "DraftEntry"
+location: "L60"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_57
+  - graphify/EXTRACTED
+  - community/DraftEntry
 ---
 
 # Citation
 
 ## Connections
-- [[._verify_url()]] - `references` [EXTRACTED]
-- [[Citation_1]] - `uses` [INFERRED]
-- [[CompetitiveIntelReport_1]] - `uses` [INFERRED]
-- [[CompetitorEntry_1]] - `uses` [INFERRED]
+- [[dot-_verify_url()]] - `references` [EXTRACTED]
+- [[A verified source backing a competitor claim. A Citation is only created by the…]] - `rationale_for` [EXTRACTED]
+- [[BaseModel_14]] - `inherits` [EXTRACTED]
+- [[CitationVerifier]] - `uses` [INFERRED]
+- [[citation_verifier.py]] - `imports` [EXTRACTED]
+- [[intel_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_57
+#graphify/code #graphify/EXTRACTED #community/DraftEntry

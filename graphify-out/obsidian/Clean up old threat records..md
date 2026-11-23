@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "MemoryLifecycleManager"
 location: "L346"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/MemoryLifecycleManager
 ---
 
 # Clean up old threat records.
 
 ## Connections
-- [[._cleanup_old_threats()]] - `rationale_for` [EXTRACTED]
+- [[dot-_cleanup_old_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleManager

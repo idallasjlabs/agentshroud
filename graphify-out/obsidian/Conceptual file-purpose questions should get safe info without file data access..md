@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 4"
+community: "fake_urlopen"
 location: "L2935"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_4
+  - community/fake_urlopen
 ---
 
 # Conceptual file-purpose questions should get safe info without file data access.
 
 ## Connections
-- [[.test_collaborator_file_metadata_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_collaborator_file_metadata_question_gets_safe_info()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_4
+#graphify/rationale #graphify/EXTRACTED #community/fake_urlopen

@@ -1,11 +1,11 @@
 ---
 source_file: "AGENTS.md"
 type: "concept"
-community: "Community 1140"
+community: "AGENTS.md — Codex CLI Guidance"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1140
+  - community/AGENTSmd__Codex_CLI_Guidance
 ---
 
 # Codex Test Augmenter Role
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[AGENTS.md — Codex CLI Guidance]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1140
+#graphify/concept #graphify/EXTRACTED #community/AGENTSmd__Codex_CLI_Guidance

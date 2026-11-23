@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "Community 152"
+community: "ConsentFramework"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_152
+  - community/ConsentFramework
 ---
 
 # ConfigValidationError
 
 ## Connections
-- [[Exception]] - `inherits` [EXTRACTED]
+- [[Exception_20]] - `inherits` [EXTRACTED]
 - [[ShellInjectionDetected]] - `inherits` [EXTRACTED]
-- [[consent_framework.py]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_152
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

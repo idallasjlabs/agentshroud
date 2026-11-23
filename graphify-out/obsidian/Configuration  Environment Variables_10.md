@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/docker_engine.py.md"
 type: "document"
-community: "Community 834"
-location: "L65"
+community: "docker_engine.py"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_834
+  - community/docker_enginepy
 ---
 
 # Configuration / Environment Variables
 
 ## Connections
-- [[web_config.py_2]] - `contains` [EXTRACTED]
+- [[docker_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_834
+#graphify/document #graphify/EXTRACTED #community/docker_enginepy

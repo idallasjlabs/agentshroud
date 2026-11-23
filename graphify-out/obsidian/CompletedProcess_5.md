@@ -1,22 +1,16 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: ""
 type: "code"
-community: "Community 133"
-location: "L458"
+community: "_get_gmail_app_password"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_133
+  - graphify/EXTRACTED
+  - community/_get_gmail_app_password
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
-- [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
-- [[_run_scan_cli()]] - `references` [EXTRACTED]
+- [[_completed()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password

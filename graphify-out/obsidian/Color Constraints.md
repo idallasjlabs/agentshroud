@@ -1,12 +1,12 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 231"
+community: "Co-Branding Guidelines"
 location: "L239"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Co-Branding_Guidelines
 ---
 
 # Color Constraints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Co-Branding Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Co-Branding_Guidelines

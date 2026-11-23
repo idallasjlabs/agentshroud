@@ -1,57 +1,33 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "Community 436"
+community: "CollaboratorActivityTracker"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/CollaboratorActivityTracker
 ---
 
 # CollaboratorActivityTracker
 
 ## Connections
-- [[.__init__()_75]] - `method` [EXTRACTED]
-- [[._append_contributor_log()]] - `method` [EXTRACTED]
-- [[._coerce_timestamp()]] - `method` [EXTRACTED]
-- [[._normalize_preview()]] - `method` [EXTRACTED]
-- [[._normalize_username()]] - `method` [EXTRACTED]
-- [[.get_activity()]] - `method` [EXTRACTED]
-- [[.get_activity_summary()]] - `method` [EXTRACTED]
-- [[.get_health()_1]] - `method` [EXTRACTED]
-- [[.record_activity()]] - `method` [EXTRACTED]
-- [[.test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
-- [[.test_initial_state_healthy()]] - `calls` [EXTRACTED]
-- [[Collaborator Tracker Tests]] - `references` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `uses` [INFERRED]
-- [[Path_35]] - `uses` [INFERRED]
-- [[TelegramAPIProxy_3]] - `uses` [INFERRED]
-- [[TestBuildCollaboratorSafeInfoResponse]] - `uses` [INFERRED]
-- [[TestDefaultBotId]] - `uses` [INFERRED]
-- [[TestDomainValidationHelper]] - `uses` [INFERRED]
-- [[TestEgressBannerRedactionNoOwnerNotice]] - `uses` [INFERRED]
-- [[TestEgressTargetExtraction]] - `uses` [INFERRED]
-- [[TestForwardToTelegramTimeouts]] - `uses` [INFERRED]
-- [[TestInternalBannerMatcher]] - `uses` [INFERRED]
-- [[TestLooksLikeSafeCollaboratorInfoQuery]] - `uses` [INFERRED]
-- [[TestMultipartOutboundPipeline]] - `uses` [INFERRED]
-- [[TestOutboundClassifierHelpers]] - `uses` [INFERRED]
-- [[TestOutboundPipelineIntegration]] - `uses` [INFERRED]
-- [[TestOutboundScanUnification]] - `uses` [INFERRED]
-- [[TestOutboundTextFieldResolution]] - `uses` [INFERRED]
-- [[TestOwnerActivityNotice]] - `uses` [INFERRED]
-- [[TestOwnerMirrorCoalescing]] - `uses` [INFERRED]
-- [[TestParseModeStrippedAfterPIIRedaction]] - `uses` [INFERRED]
-- [[TestPendingNoticeIncludesEgressSection]] - `uses` [INFERRED]
-- [[TestReplayBufferOffsetParsing]] - `uses` [INFERRED]
-- [[TestRuntimeRewriteHelpers]] - `uses` [INFERRED]
-- [[TestTelegram400Retry]] - `uses` [INFERRED]
+- [[dot-__init__()_156]] - `method` [EXTRACTED]
+- [[dot-_append_contributor_log()]] - `method` [EXTRACTED]
+- [[dot-_coerce_timestamp()]] - `method` [EXTRACTED]
+- [[dot-_normalize_preview()]] - `method` [EXTRACTED]
+- [[dot-_normalize_username()]] - `method` [EXTRACTED]
+- [[dot-get_activity()]] - `method` [EXTRACTED]
+- [[dot-get_activity_summary()]] - `method` [EXTRACTED]
+- [[dot-get_health()_1]] - `method` [EXTRACTED]
+- [[dot-record_activity()]] - `method` [EXTRACTED]
+- [[dot-test_failed_write_makes_unhealthy()]] - `calls` [EXTRACTED]
+- [[dot-test_initial_state_healthy()]] - `calls` [EXTRACTED]
 - [[TestTrackerGetHealth]] - `uses` [INFERRED]
-- [[TestWebSearchLog]] - `uses` [INFERRED]
-- [[Tracks collaborator messages at the gateway level.      Records every inbound me]] - `rationale_for` [EXTRACTED]
+- [[Tracks collaborator messages at the gateway level. Records every inbound…]] - `rationale_for` [EXTRACTED]
+- [[_prune_fixture_markdown()]] - `uses` [INFERRED]
 - [[collaborator_tracker.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_collaborator_tracker.py]] - `imports` [EXTRACTED]
 - [[test_fixture_uid_writes_blocked()]] - `calls` [EXTRACTED]
@@ -63,6 +39,6 @@ tags:
 - [[test_telegram_proxy_outbound.py]] - `imports` [EXTRACTED]
 - [[test_test_user_prefix_blocked()]] - `calls` [EXTRACTED]
 - [[test_unknown_user_recorded_when_dynamic_tracking_enabled()]] - `calls` [EXTRACTED]
-- [[tracker()]] - `calls` [EXTRACTED]
+- [[tracker()_1]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_436
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

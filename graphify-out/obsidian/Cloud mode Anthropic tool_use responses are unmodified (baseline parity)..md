@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "Community 112"
+community: "_make_proxy"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_112
+  - community/_make_proxy
 ---
 
 # Cloud mode Anthropic tool_use responses are unmodified (baseline parity).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_112
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

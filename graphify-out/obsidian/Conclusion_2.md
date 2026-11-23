@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Community 621"
+community: "Security Verification Report"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_621
+  - community/Security_Verification_Report
 ---
 
 # Conclusion
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Verification Report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_621
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
+community: "deep_security_test"
 location: "L3276"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/deep_security_test
 ---
 
 # Comprehensive security integration test — tests every module with real payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[deep_security_test()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/deep_security_test

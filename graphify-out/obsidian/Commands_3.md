@@ -1,17 +1,25 @@
 ---
-source_file: "skills/openclaw/model-usage/references/codexbar-cli.md"
-type: "document"
-community: "Community 273"
-location: "L8"
+source_file: "cli/src/main.rs"
+type: "code"
+community: "main.rs"
+location: "L57"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/mainrs
 ---
 
 # Commands
 
 ## Connections
-- [[CodexBar CLI quick ref (usage + cost)]] - `contains` [EXTRACTED]
+- [[AddResource]] - `references` [EXTRACTED]
+- [[ApprovalAction]] - `references` [EXTRACTED]
+- [[Cli_1]] - `references` [EXTRACTED]
+- [[GetResource]] - `references` [EXTRACTED]
+- [[Option]] - `references` [EXTRACTED]
+- [[ServiceTarget]] - `references` [EXTRACTED]
+- [[SetTarget]] - `references` [EXTRACTED]
+- [[String]] - `references` [EXTRACTED]
+- [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_273
+#graphify/code #graphify/EXTRACTED #community/mainrs
