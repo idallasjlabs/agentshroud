@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "Community 66"
+community: "version_routes.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/version_routespy
 ---
 
 # agentshroud_manager.py
@@ -20,7 +20,8 @@ tags:
 - [[mask_credentials()]] - `contains` [EXTRACTED]
 - [[rollback()]] - `contains` [EXTRACTED]
 - [[security_review()]] - `contains` [EXTRACTED]
+- [[test_agentshroud_manager.py]] - `imports_from` [EXTRACTED]
 - [[upgrade()]] - `contains` [EXTRACTED]
-- [[version_routes.py]] - `imports_from` [EXTRACTED]
+- [[version_routes.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/version_routespy

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/IDENTITY.md"
 type: "document"
-community: "05-behavior.md"
+community: "Identity Reference - AgentShroud System"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/05-behaviormd
+  - community/Identity_Reference_-_AgentShroud_System
 ---
 
 # architecture/IDENTITY.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Identity Reference - AgentShroud System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/05-behaviormd
+#graphify/document #graphify/EXTRACTED #community/Identity_Reference_-_AgentShroud_System

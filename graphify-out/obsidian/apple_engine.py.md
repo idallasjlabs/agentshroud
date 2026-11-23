@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
-type: "code"
-community: "Community 225"
+source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
+type: "document"
+community: "apple_engine.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/apple_enginepy
 ---
 
-# apple_engine.py
+# apple_engine.py.md
 
 ## Connections
-- [[AppleContainerEngine]] - `contains` [EXTRACTED]
-- [[ContainerEngine_2]] - `imports` [EXTRACTED]
-- [[ContainerInfo_2]] - `imports` [EXTRACTED]
-- [[RuntimeConfig]] - `references` [EXTRACTED]
-- [[__init__.py_9]] - `re_exports` [EXTRACTED]
-- [[engine.py]] - `imports_from` [EXTRACTED]
-- [[security.py]] - `references` [EXTRACTED]
+- [[apple_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

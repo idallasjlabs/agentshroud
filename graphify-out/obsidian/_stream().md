@@ -1,26 +1,17 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "SecureBrowser (4)"
-location: "L1477"
+community: "test_forward_stream.py"
+location: "L297"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - graphify/INFERRED
+  - community/test_forward_streampy
 ---
 
 # _stream()
 
 ## Connections
-- [[dot-_emit_failover_notice()]] - `calls` [EXTRACTED]
-- [[dot-_get_local_model()]] - `calls` [EXTRACTED]
-- [[dot-_is_connect_error()]] - `calls` [EXTRACTED]
-- [[dot-_local_backend_headers()]] - `calls` [EXTRACTED]
-- [[dot-_local_failover_base()]] - `calls` [EXTRACTED]
-- [[dot-_normalize_local_model()]] - `calls` [EXTRACTED]
-- [[dot-_record_failover_event()]] - `calls` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `contains` [EXTRACTED]
-- [[StreamHead]] - `calls` [EXTRACTED]
-- [[_bytes_only()]] - `calls` [EXTRACTED]
+- [[_make_stream_app_state()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/INFERRED #community/test_forward_streampy

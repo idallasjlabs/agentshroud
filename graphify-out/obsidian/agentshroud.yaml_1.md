@@ -1,20 +1,20 @@
 ---
 source_file: "docs/vault/03 - Configuration/agentshroud.yaml.md"
 type: "document"
-community: "Community 73"
+community: "agentshroud.yaml"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/agentshroudyaml
 ---
 
 # agentshroud.yaml
 
 ## Connections
 - [[Config Search Order]] - `contains` [EXTRACTED]
-- [[Purpose_176]] - `contains` [EXTRACTED]
-- [[Related Notes_19]] - `contains` [EXTRACTED]
+- [[Purpose_56]] - `contains` [EXTRACTED]
+- [[Related Notes_10]] - `contains` [EXTRACTED]
 - [[Top-Level Sections]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[channels section]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[security_modules section]] - `contains` [EXTRACTED]
 - [[ssh section]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/agentshroudyaml

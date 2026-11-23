@@ -1,17 +1,18 @@
 ---
 source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
 type: "document"
-community: "Community 580"
+community: "agentshroud-gateway"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/agentshroud-gateway
 ---
 
 # agentshroud-gateway.md
 
 ## Connections
+- [[Architecture Overview]] - `references` [EXTRACTED]
 - [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/agentshroud-gateway

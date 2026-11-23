@@ -1,18 +1,20 @@
 ---
-source_file: "docker/bots/hermes/start.sh"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 1500"
-location: "L98"
+community: "test_edge_service_routes.py"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1500
+  - community/test_edge_service_routespy
 ---
 
 # _telegram_send()
 
 ## Connections
-- [[start.sh]] - `defines` [EXTRACTED]
-- [[start.sh script]] - `calls` [EXTRACTED]
+- [[card()]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
+- [[service.py]] - `contains` [EXTRACTED]
+- [[test_telegram_send_posts_card()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1500
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

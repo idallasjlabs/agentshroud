@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TrustConfig"
-location: "L2226"
+community: "ingest_api/main.py"
+location: "L2231"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/ingest_api/mainpy
 ---
 
 # _top_reasons()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[quarantine_summary()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

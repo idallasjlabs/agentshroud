@@ -1,12 +1,12 @@
 ---
 source_file: "README.md"
 type: "document"
-community: "Community 441"
+community: "Quickstart"
 location: "L370"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_441
+  - community/Quickstart
 ---
 
 # `asb` reference
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Quickstart]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_441
+#graphify/document #graphify/EXTRACTED #community/Quickstart

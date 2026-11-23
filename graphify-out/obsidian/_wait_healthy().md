@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Community 1757"
+community: "colima-health-check.sh"
 location: "L487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1757
+  - community/colima-health-checksh
 ---
 
 # _wait_healthy()
@@ -15,4 +15,4 @@ tags:
 - [[colima-health-check.sh]] - `defines` [EXTRACTED]
 - [[colima-health-check.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1757
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

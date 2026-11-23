@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "Community 378"
+community: "app_main.c"
 location: "L935"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # app_main()
@@ -26,4 +26,4 @@ tags:
 - [[wifi_init()]] - `calls` [EXTRACTED]
 - [[ws_client_create()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/Community_378
+#graphify/code #graphify/INFERRED #community/app_mainc

@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "Community 1305"
+community: "agent_isolation.py (AgentRegistry)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/agent_isolationpy_AgentRegistry
 ---
 
 # agent_isolation.py (AgentRegistry)
 
-## Connections
-- [[test_group_isolation.py]] - `implements` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/agent_isolationpy_AgentRegistry

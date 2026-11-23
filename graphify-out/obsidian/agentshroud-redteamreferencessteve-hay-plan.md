@@ -1,17 +1,17 @@
 ---
 source_file: "skills/custom/agentshroud-redteam/references/steve-hay-plan.md"
 type: "document"
-community: "verify-greeter-state.sh"
+community: "agentshroud-redteam/references/steve-hay-plan.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/verify-greeter-statesh
+  - community/agentshroud-redteam/references/steve-hay-planmd
 ---
 
 # agentshroud-redteam/references/steve-hay-plan.md
 
 ## Connections
-- [[plan_3]] - `contains` [EXTRACTED]
+- [[plan_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/verify-greeter-statesh
+#graphify/document #graphify/EXTRACTED #community/agentshroud-redteam/references/steve-hay-planmd

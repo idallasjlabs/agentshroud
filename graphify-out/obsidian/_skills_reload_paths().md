@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "_skills_reload_impl"
 location: "L969"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/_skills_reload_impl
 ---
 
 # _skills_reload_paths()
 
 ## Connections
-- [[Path_47]] - `references` [EXTRACTED]
-- [[Resolve the source (``~.llm_settings``) and bot-config destinations.      Extr]] - `rationale_for` [EXTRACTED]
+- [[Path_20]] - `references` [EXTRACTED]
+- [[Resolve the source (``~.llm_settings``) and bot-config destinations.…]] - `rationale_for` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl

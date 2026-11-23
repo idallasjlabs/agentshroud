@@ -1,14 +1,17 @@
 ---
 source_file: "gateway/approval_queue/__init__.py"
 type: "code"
-community: "App Icon 512x512 (AgentShroud logo mark)"
+community: "approval_queue/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/App_Icon_512x512_AgentShroud_logo_mark
+  - community/approval_queue/__init__py
 ---
 
 # approval_queue/__init__.py
 
-#graphify/code #graphify/EXTRACTED #community/App_Icon_512x512_AgentShroud_logo_mark
+## Connections
+- [[Approval Queue Package - WebSocket-based approval system for sensitive agent…]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/approval_queue/__init__py

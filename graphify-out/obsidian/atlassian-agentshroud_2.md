@@ -1,18 +1,18 @@
 ---
-source_file: ".mcp.json"
+source_file: ".github/mcp.json"
 type: "code"
-community: "Community 403"
+community: ".github/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_403
+  - community/github/mcpjson
 ---
 
 # atlassian-agentshroud
 
 ## Connections
-- [[.llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_2]] - `references` [EXTRACTED]
-- [[.mcp.json]] - `contains` [EXTRACTED]
+- [[dot-githubmcp.json]] - `contains` [EXTRACTED]
+- [[dot-llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_403
+#graphify/code #graphify/EXTRACTED #community/github/mcpjson

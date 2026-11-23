@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/sav/SKILL.md"
+source_file: ".agents/agents/sav.md"
 type: "document"
-community: "Community 426"
-location: "L144"
+community: "REQUIRED NOTES — PRODUCE EVERY ONE OF THESE"
+location: "L146"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_426
+  - community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE
 ---
 
 # `01 - Architecture/Startup Sequence.md`
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[REQUIRED NOTES — PRODUCE EVERY ONE OF THESE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_426
+#graphify/document #graphify/EXTRACTED #community/REQUIRED_NOTES__PRODUCE_EVERY_ONE_OF_THESE

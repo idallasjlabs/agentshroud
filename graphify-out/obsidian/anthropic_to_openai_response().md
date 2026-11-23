@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/anthropic_openai_translator.py"
 type: "code"
-community: "Community 360"
+community: "test_anthropic_openai_translator.py"
 location: "L291"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_360
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # anthropic_to_openai_response()
 
 ## Connections
-- [[.proxy_messages()]] - `calls` [EXTRACTED]
+- [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - `rationale_for` [EXTRACTED]
 - [[_random_msg_id()_1]] - `calls` [EXTRACTED]
 - [[anthropic_openai_translator.py]] - `contains` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[test_anthropic_to_openai_response_envelope()]] - `calls` [EXTRACTED]
 - [[test_claude_via_openai_path.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_360
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/apple_engine.py.md"
 type: "document"
-community: "Community 612"
-location: "L1"
+community: "apple_engine.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_612
+  - community/apple_enginepy
 ---
 
-# apple_engine.py.md
+# apple_engine.py
 
 ## Connections
-- [[apple_engine.py_2]] - `contains` [EXTRACTED]
+- [[Apple Containers vs DockerPodman]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_3]] - `contains` [EXTRACTED]
+- [[Function Details_9]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_11]] - `contains` [EXTRACTED]
+- [[Purpose_12]] - `contains` [EXTRACTED]
+- [[Related_11]] - `contains` [EXTRACTED]
+- [[Responsibilities_11]] - `contains` [EXTRACTED]
+- [[apple_engine.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_612
+#graphify/document #graphify/EXTRACTED #community/apple_enginepy

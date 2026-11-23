@@ -1,20 +1,18 @@
 ---
-source_file: "opencode.json"
+source_file: ".pi/mcp.json"
 type: "code"
-community: "Community 159"
-location: "L25"
+community: ".pi/mcp.json"
+location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/pi/mcpjson
 ---
 
 # atlassian-agentshroud
 
 ## Connections
-- [[command_3]] - `contains` [EXTRACTED]
-- [[enabled_4]] - `contains` [EXTRACTED]
-- [[mcp]] - `contains` [EXTRACTED]
-- [[type_30]] - `contains` [EXTRACTED]
+- [[dot-llm_settingsmcp-serversatlassianagentshroudmcp-atlassian.sh_4]] - `references` [EXTRACTED]
+- [[dot-pimcp.json]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/pi/mcpjson

@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 87"
-location: "L298"
+community: "soc/router.py"
+location: "L1297"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/soc/routerpy
 ---
 
 # add_group_member()
 
 ## Connections
-- [[Add a user to a group.]] - `rationale_for` [EXTRACTED]
-- [[_output()]] - `calls` [EXTRACTED]
-- [[main.py_1]] - `contains` [EXTRACTED]
+- [[AddGroupMemberRequest]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[_app_state()]] - `calls` [EXTRACTED]
+- [[_log_audit()]] - `calls` [EXTRACTED]
+- [[persist_group_member_add()]] - `calls` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

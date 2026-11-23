@@ -1,13 +1,13 @@
 ---
 source_file: "cli/Cargo.toml"
 type: "document"
-community: "Community 1660"
+community: "agentshroud-soc Cargo package"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1660
+  - community/agentshroud-soc_Cargo_package
 ---
 
 # agentshroud-soc Cargo package
 
-#graphify/document #graphify/EXTRACTED #community/Community_1660
+#graphify/document #graphify/EXTRACTED #community/agentshroud-soc_Cargo_package

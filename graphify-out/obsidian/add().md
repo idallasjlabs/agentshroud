@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
-location: "L280"
+community: "ingest_api/main.py"
+location: "L3115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # add()
 
 ## Connections
-- [[main.py_1]] - `contains` [EXTRACTED]
-- [[run_cis_benchmark()]] - `calls` [INFERRED]
+- [[run_cis_benchmark()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

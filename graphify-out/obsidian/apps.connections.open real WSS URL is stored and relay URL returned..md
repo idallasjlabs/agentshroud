@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "Community 100"
+community: "AsyncMock"
 location: "L389"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_100
+  - community/AsyncMock
 ---
 
 # apps.connections.open: real WSS URL is stored and relay URL returned.
 
 ## Connections
-- [[.test_connections_open_rewrites_url()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_connections_open_rewrites_url()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_100
+#graphify/rationale #graphify/EXTRACTED #community/AsyncMock

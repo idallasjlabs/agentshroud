@@ -1,25 +1,20 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "Community 0"
+community: "AlertDispatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/AlertDispatcher
 ---
 
 # alert_dispatcher.py
 
 ## Connections
 - [[AlertDispatcher]] - `contains` [EXTRACTED]
-- [[canary.py]] - `references` [EXTRACTED]
-- [[clamav]] - `references` [INFERRED]
-- [[dns_filter.py]] - `references` [EXTRACTED]
-- [[drift_detector.py]] - `references` [EXTRACTED]
-- [[egress_filter.py]] - `references` [EXTRACTED]
-- [[falco-rules]] - `references` [INFERRED]
-- [[health_report.py]] - `semantically_similar_to` [INFERRED]
-- [[wazuh-ossec]] - `references` [INFERRED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_alert_dispatcher_retry.py]] - `imports_from` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
