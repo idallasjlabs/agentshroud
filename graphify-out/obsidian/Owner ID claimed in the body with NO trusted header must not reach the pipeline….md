@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_forward_routing.py"
+type: "rationale"
+community: "test_forward_routing.py"
+location: "L269"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/test_forward_routingpy
+---
+
+# Owner ID claimed in the body with NO trusted header must not reach the pipeline…
+
+## Connections
+- [[dot-test_body_owner_id_without_trusted_header_is_stripped()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/test_forward_routingpy

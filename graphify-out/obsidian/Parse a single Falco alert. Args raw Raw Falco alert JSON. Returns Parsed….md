@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/falco_monitor.py"
+type: "rationale"
+community: "FalcoAlertWatcher"
+location: "L117"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/FalcoAlertWatcher
+---
+
+# Parse a single Falco alert. Args: raw: Raw Falco alert JSON. Returns: Parsed…
+
+## Connections
+- [[parse_alert()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

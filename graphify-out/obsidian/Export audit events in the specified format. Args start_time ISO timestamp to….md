@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/audit_export.py"
+type: "rationale"
+community: "AuditExporter"
+location: "L79"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/AuditExporter
+---
+
+# Export audit events in the specified format. Args: start_time: ISO timestamp to…
+
+## Connections
+- [[dot-export_events()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/AuditExporter
