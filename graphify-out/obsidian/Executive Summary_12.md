@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/threat-model.md"
+source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "Community 935"
-location: "L3"
+community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_935
+  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Threat Model (STRIDE Analysis)]] - `contains` [EXTRACTED]
+- [[WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_935
+#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes

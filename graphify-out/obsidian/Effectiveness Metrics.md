@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 164"
+community: "AgentShroud Security Architecture"
 location: "L270"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Effectiveness Metrics
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PII Detection System]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

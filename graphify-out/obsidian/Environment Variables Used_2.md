@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/auth.py.md"
 type: "document"
-community: "Community 657"
-location: "L70"
+community: "auth.py"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_657
+  - community/authpy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[ledger.py_2]] - `contains` [EXTRACTED]
+- [[auth.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_657
+#graphify/document #graphify/EXTRACTED #community/authpy

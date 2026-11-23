@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 616"
+community: "dns_filter.py"
 location: "L63"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_616
+  - community/dns_filterpy
 ---
 
 # EntropyCalculator.shannon_entropy(s)
 
 ## Connections
-- [[Function Details_32]] - `contains` [EXTRACTED]
+- [[Function Details_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_616
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy

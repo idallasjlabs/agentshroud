@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/blue-team-assessment-v0.8.0-r2.md"
+source_file: "docs/testing/test-coverage-report.md"
 type: "document"
-community: "Community 357"
-location: "L10"
+community: "AgentShroud v0.9.0"
+location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_357
+  - community/AgentShroud_v090
 ---
 
 # Executive Summary
 
 ## Connections
-- [[Blue Team Security Assessment — AgentShroud v0.8.0 Round 2]] - `contains` [EXTRACTED]
+- [[AgentShroud v0.9.0]] - `contains` [EXTRACTED]
+- [[AgentShroud v1.3.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_357
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v090

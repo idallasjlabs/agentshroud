@@ -1,11 +1,11 @@
 ---
 source_file: "docs/diagrams/03-data.md"
 type: "concept"
-community: "Community 589"
+community: "03-data.md"
 tags:
   - graphify/concept
-  - graphify/INFERRED
-  - community/Community_589
+  - graphify/EXTRACTED
+  - community/03-datamd
 ---
 
 # Entity Relationship Diagram (ledger, approval_items)
@@ -13,8 +13,7 @@ tags:
 ## Connections
 - [[03-data]] - `conceptually_related_to` [EXTRACTED]
 - [[Data Lineage Diagram]] - `shares_data_with` [INFERRED]
-- [[README_119]] - `conceptually_related_to` [INFERRED]
 - [[Rendered ERD Diagram (PNG)]] - `implements` [EXTRACTED]
 - [[State Machine — Approval Queue Item Lifecycle]] - `shares_data_with` [INFERRED]
 
-#graphify/concept #graphify/INFERRED #community/Community_589
+#graphify/concept #graphify/EXTRACTED #community/03-datamd

@@ -1,17 +1,18 @@
 ---
-source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "Community 627"
-location: "L10"
+community: "AgentShroud™ CVE Mitigation Matrix"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_627
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
+- [[Application CVEs (OpenClaw  Hermes)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_627
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

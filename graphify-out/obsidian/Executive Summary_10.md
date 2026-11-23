@@ -1,17 +1,17 @@
 ---
-source_file: "docs/security/security-architecture.md"
+source_file: "docs/planning/v0.8/security-assessment-v0.8.0.md"
 type: "document"
-community: "Community 164"
-location: "L3"
+community: "AgentShroud Security Assessment — v0.8.0"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_164
+  - community/AgentShroud_Security_Assessment__v080
 ---
 
 # Executive Summary
 
 ## Connections
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[AgentShroud Security Assessment — v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_164
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Assessment__v080

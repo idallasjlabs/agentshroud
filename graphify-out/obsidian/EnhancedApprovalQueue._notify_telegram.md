@@ -1,13 +1,13 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "Community 1611"
+community: "EnhancedApprovalQueue._notify_telegram"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1611
+  - community/EnhancedApprovalQueue_notify_telegram
 ---
 
 # EnhancedApprovalQueue._notify_telegram
 
-#graphify/code #graphify/EXTRACTED #community/Community_1611
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue_notify_telegram

@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/alert_dispatcher.py.md"
 type: "document"
-community: "Community 617"
-location: "L103"
+community: "alert_dispatcher.py"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/alert_dispatcherpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
+- [[alert_dispatcher.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/alert_dispatcherpy

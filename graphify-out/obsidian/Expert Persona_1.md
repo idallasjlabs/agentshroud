@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/socrates/SKILL.md"
+source_file: ".agents/agents/socrates.md"
 type: "document"
-community: "Community 1124"
-location: "L137"
+community: "Socrates — Dialogue Architect"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1124
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Expert Persona
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1124
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

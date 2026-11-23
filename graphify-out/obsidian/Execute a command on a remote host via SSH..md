@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ssh_proxy/proxy.py"
 type: "rationale"
-community: "Community 25"
+community: "SSHResult"
 location: "L404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_25
+  - community/SSHResult
 ---
 
 # Execute a command on a remote host via SSH.
 
 ## Connections
-- [[.execute()]] - `rationale_for` [EXTRACTED]
+- [[dot-execute()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_25
+#graphify/rationale #graphify/EXTRACTED #community/SSHResult

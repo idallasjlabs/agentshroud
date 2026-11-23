@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/agentshroud-gateway.md"
+source_file: "docs/vault/02 - Modules/Security Modules/encrypted_store.py.md"
 type: "document"
-community: "Community 580"
-location: "L58"
+community: "encrypted_store.py"
+location: "L103"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_580
+  - community/encrypted_storepy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[agentshroud-gateway_1]] - `contains` [EXTRACTED]
+- [[encrypted_store.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_580
+#graphify/document #graphify/EXTRACTED #community/encrypted_storepy

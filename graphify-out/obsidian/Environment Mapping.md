@@ -1,12 +1,12 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "Community 862"
-location: "L15"
+community: "AgentShroud Weekly Upgrade — 2026-09-06"
+location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_862
+  - community/AgentShroud_Weekly_Upgrade__2026-09-06
 ---
 
 # Environment Mapping
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_862
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade__2026-09-06

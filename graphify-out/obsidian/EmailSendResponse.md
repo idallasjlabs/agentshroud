@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # EmailSendResponse
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
 - [[Response from POST emailsend.]] - `rationale_for` [EXTRACTED]
-- [[email_send()]] - `calls` [EXTRACTED]
+- [[email_send()]] - `uses` [INFERRED]
 - [[forward.py]] - `imports` [EXTRACTED]
-- [[models.py]] - `contains` [EXTRACTED]
+- [[ingest_apimodels.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

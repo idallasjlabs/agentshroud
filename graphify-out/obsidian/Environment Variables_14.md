@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/input_normalizer.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
 type: "document"
-community: "Community 679"
-location: "L84"
+community: "env_guard.py"
+location: "L100"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_679
+  - community/env_guardpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[input_normalizer.py_2]] - `contains` [EXTRACTED]
+- [[env_guard.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_679
+#graphify/document #graphify/EXTRACTED #community/env_guardpy

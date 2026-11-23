@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/atlas/SKILL.md"
+source_file: ".omp/agents/atlas.md"
 type: "document"
-community: "Community 1169"
-location: "L138"
+community: "Atlas — Curriculum Architect"
+location: "L139"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1169
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Episode Closing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[OKE Channel — CPA Exam Context_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1169
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

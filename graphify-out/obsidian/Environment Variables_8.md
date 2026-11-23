@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/mcp-proxy-wrapper.js.md"
 type: "document"
-community: "Community 565"
-location: "L94"
+community: "mcp-proxy-wrapper.js"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_565
+  - community/mcp-proxy-wrapperjs
 ---
 
 # Environment Variables
 
 ## Connections
-- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[mcp-proxy-wrapper.js_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_565
+#graphify/document #graphify/EXTRACTED #community/mcp-proxy-wrapperjs

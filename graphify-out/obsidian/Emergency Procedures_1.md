@@ -1,19 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 294"
+community: "Skills by Category"
 location: "L252"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_294
+  - community/Skills_by_Category
 ---
 
 # Emergency Procedures
 
 ## Connections
-- [[Emergency Contacts_1]] - `contains` [EXTRACTED]
-- [[GSDE&G Skills Reference_1]] - `contains` [EXTRACTED]
-- [[P1 Incident Response_1]] - `contains` [EXTRACTED]
+- [[Emergency Contacts]] - `contains` [EXTRACTED]
+- [[GSDE&G Skills Reference]] - `contains` [EXTRACTED]
+- [[P1 Incident Response]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_294
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

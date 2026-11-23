@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/event_bus.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
 type: "document"
-community: "Community 767"
-location: "L56"
+community: "models.py"
+location: "L79"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_767
+  - community/modelspy
 ---
 
 # Environment Variables Used
 
 ## Connections
-- [[event_bus.py_2]] - `contains` [EXTRACTED]
+- [[models.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_767
+#graphify/document #graphify/EXTRACTED #community/modelspy

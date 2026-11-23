@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/mac-app-discovery.md"
+source_file: ".omp/agents/apollo.md"
 type: "document"
-community: "Community 848"
-location: "L341"
+community: "Technical Specification"
+location: "L122"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_848
+  - community/Technical_Specification
 ---
 
 # Error Handling
 
 ## Connections
-- [[Mac App Discovery Skill_2]] - `contains` [EXTRACTED]
+- [[Technical Specification_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_848
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

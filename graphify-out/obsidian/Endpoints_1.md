@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 401"
+community: "main.py"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_401
+  - community/mainpy
 ---
 
 # Endpoints
@@ -22,6 +22,6 @@ tags:
 - [[Management Dashboard Router — `gatewaywebmanagement.py` (prefix `manage`)]] - `contains` [EXTRACTED]
 - [[SOC Router — `gatewaysocrouter.py` (prefix `socv1`)]] - `contains` [EXTRACTED]
 - [[Version Router — `gatewayingest_apiversion_routes.py` (prefix `apiv1versions`)]] - `contains` [EXTRACTED]
-- [[main.py_4]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_401
+#graphify/document #graphify/EXTRACTED #community/mainpy

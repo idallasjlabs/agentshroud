@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: ""
 type: "code"
-community: "Community 170"
-location: "L49"
+community: "_skills_reload_impl"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_170
+  - graphify/EXTRACTED
+  - community/_skills_reload_impl
 ---
 
 # Exception
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[_patch_urlopen()]] - `references` [EXTRACTED]
+- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_170
+#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Community 292"
+community: "Skills by Category"
 location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_292
+  - community/Skills_by_Category
 ---
 
 # Emergency Contacts
 
 ## Connections
-- [[Emergency Procedures]] - `contains` [EXTRACTED]
+- [[Emergency Procedures_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_292
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

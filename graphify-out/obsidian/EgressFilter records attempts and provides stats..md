@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "Community 21"
+community: "_make_filter"
 location: "L208"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/_make_filter
 ---
 
 # EgressFilter records attempts and provides stats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLogging]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_21
+#graphify/rationale #graphify/EXTRACTED #community/_make_filter

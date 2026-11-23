@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/oracle/SKILL.md"
 type: "document"
-community: "Community 771"
+community: "oracle — best use"
 location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_771
+  - community/oracle__best_use
 ---
 
 # Engines (API vs browser)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[oracle — best use]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_771
+#graphify/document #graphify/EXTRACTED #community/oracle__best_use

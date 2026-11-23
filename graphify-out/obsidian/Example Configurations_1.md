@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 726"
+community: "Configuration Reference"
 location: "L617"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_726
+  - community/Configuration_Reference
 ---
 
 # Example Configurations
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Configuration Reference]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_726
+#graphify/document #graphify/EXTRACTED #community/Configuration_Reference

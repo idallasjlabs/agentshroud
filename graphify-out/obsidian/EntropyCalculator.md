@@ -1,50 +1,23 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "Community 0"
+community: "TestExfiltrationDetection"
 location: "L27"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/TestExfiltrationDetection
 ---
 
 # EntropyCalculator
 
 ## Connections
-- [[.shannon_entropy()]] - `method` [EXTRACTED]
-- [[TestAuditLogging]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
-- [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
-- [[TestCryptography]] - `uses` [INFERRED]
-- [[TestDNSAllowlist]] - `uses` [INFERRED]
-- [[TestDNSFilterConfig]] - `uses` [INFERRED]
-- [[TestDNSRebinding]] - `uses` [INFERRED]
-- [[TestDNSTunnelingDetection]] - `uses` [INFERRED]
-- [[TestDependencySecurity]] - `uses` [INFERRED]
-- [[TestDoSPrevention]] - `uses` [INFERRED]
+- [[dot-shannon_entropy()]] - `method` [EXTRACTED]
 - [[TestEntropyCalculator]] - `uses` [INFERRED]
 - [[TestExfiltrationDetection]] - `uses` [INFERRED]
-- [[TestFileSandbox]] - `uses` [INFERRED]
-- [[TestHTTPSecurity]] - `uses` [INFERRED]
-- [[TestInfoLeakage]] - `uses` [INFERRED]
-- [[TestLoggingSecurity]] - `uses` [INFERRED]
-- [[TestMCPSecurity]] - `uses` [INFERRED]
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestNormalDNSResolution]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
-- [[TestRateLimiting]] - `uses` [INFERRED]
-- [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[TestTimingAttacks]] - `uses` [INFERRED]
-- [[TestWebSecurity]] - `uses` [INFERRED]
-- [[dns_filter.py]] - `contains` [EXTRACTED]
+- [[dns_filter.py_2]] - `contains` [EXTRACTED]
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection

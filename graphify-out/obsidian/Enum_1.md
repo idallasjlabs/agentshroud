@@ -1,17 +1,18 @@
 ---
-source_file: "config/inbound-edge/schema.json"
+source_file: ""
 type: "code"
-community: "Community 1139"
-location: "L12"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1139
+  - community/soc/routerpy
 ---
 
-# enum
+# Enum
 
 ## Connections
-- [[support]] - `contains` [EXTRACTED]
+- [[Action]] - `inherits` [EXTRACTED]
+- [[Resource]] - `inherits` [EXTRACTED]
+- [[rbac.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1139
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

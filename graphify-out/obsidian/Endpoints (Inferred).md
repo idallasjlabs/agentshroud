@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
 type: "document"
-community: "Community 1136"
+community: "installer.py"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1136
+  - community/installerpy
 ---
 
 # Endpoints (Inferred)
 
 ## Connections
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1136
+#graphify/document #graphify/EXTRACTED #community/installerpy

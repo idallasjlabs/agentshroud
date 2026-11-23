@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/agent_isolation.py.md"
+source_file: "docs/runbooks/deployment.md"
 type: "document"
-community: "Community 674"
-location: "L85"
+community: "Deployment Runbook — AgentShroud"
+location: "L101"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_674
+  - community/Deployment_Runbook__AgentShroud
 ---
 
 # Environment Variables
 
 ## Connections
-- [[agent_isolation.py_2]] - `contains` [EXTRACTED]
+- [[Deployment Runbook — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_674
+#graphify/document #graphify/EXTRACTED #community/Deployment_Runbook__AgentShroud

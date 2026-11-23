@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/dns_filter.py.md"
 type: "document"
-community: "Community 1053"
-location: "L43"
+community: "dns_filter.py"
+location: "L84"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1053
+  - community/dns_filterpy
 ---
 
 # Environment Variables
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[dns_filter.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1053
+#graphify/document #graphify/EXTRACTED #community/dns_filterpy
