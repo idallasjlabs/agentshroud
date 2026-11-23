@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-aws-profile.md"
+source_file: ".agents/skills/sec-defense/README.md"
 type: "document"
-community: "Community 182"
-location: "L349"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_182
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

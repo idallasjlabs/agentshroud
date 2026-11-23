@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/ANTHROPIC_BASE_URL.md"
+source_file: "docs/vault/08 - Runbooks/Restart Procedure.md"
 type: "document"
-community: "Community 578"
-location: "L50"
+community: "Restart Procedure"
+location: "L145"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/Restart_Procedure
 ---
 
 # Related Notes
 
 ## Connections
-- [[ANTHROPIC_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[Restart Procedure_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/Restart_Procedure

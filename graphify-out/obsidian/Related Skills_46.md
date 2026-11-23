@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
+source_file: ".agents/skills/socrates/README.md"
 type: "document"
-community: "Community 239"
-location: "L227"
+community: "Socrates — Dialogue Architect"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_239
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_239
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

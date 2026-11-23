@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "rationale"
-community: "Community 516"
+community: "fs"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_516
+  - community/fs
 ---
 
 # Replace shutil.which with a controllable name → path mapping.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tools()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_516
+#graphify/rationale #graphify/EXTRACTED #community/fs

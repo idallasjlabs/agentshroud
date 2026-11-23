@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-athena/README.md"
+source_file: ".agents/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 1225"
-location: "L14"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L224"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1225
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller_9]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1225
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

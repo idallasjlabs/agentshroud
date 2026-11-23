@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Community 171"
-location: "L349"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

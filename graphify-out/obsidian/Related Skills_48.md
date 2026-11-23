@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-mcpm-doctor.agent.md"
+source_file: "docker/config/hermes/skills/i-apollo/README.md"
 type: "document"
-community: "Community 1017"
-location: "L167"
+community: "Apollo — Audio Systems Producer"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1017
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1017
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

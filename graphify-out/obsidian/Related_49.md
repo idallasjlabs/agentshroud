@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/key_vault.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
 type: "document"
-community: "Community 539"
-location: "L93"
+community: "main.py"
+location: "L464"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_539
+  - community/mainpy
 ---
 
 # Related
 
 ## Connections
-- [[key_vault.py_2]] - `contains` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_539
+#graphify/document #graphify/EXTRACTED #community/mainpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/atlas/README.md"
+source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Community 2065"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2065
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Related Skills
 
 ## Connections
-- [[Atlas — Curriculum Architect_1]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2065
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

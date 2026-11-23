@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Full System Flowchart.md"
+source_file: "docs/vault/03 - Configuration/All Environment Variables.md"
 type: "document"
-community: "Community 390"
-location: "L129"
+community: "All Environment Variables"
+location: "L114"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_390
+  - community/All_Environment_Variables
 ---
 
 # Related Notes
 
 ## Connections
-- [[Full System Flowchart_1]] - `contains` [EXTRACTED]
+- [[4. Environment Variables]] - `contains` [EXTRACTED]
+- [[All Environment Variables_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_390
+#graphify/document #graphify/EXTRACTED #community/All_Environment_Variables

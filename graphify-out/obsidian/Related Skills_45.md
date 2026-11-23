@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "Community 1040"
-location: "L164"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

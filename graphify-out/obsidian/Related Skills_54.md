@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-mcpm-doctor.md"
+source_file: "docker/config/hermes/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Community 1048"
-location: "L163"
+community: "MCP Doctor (MCPM-DOCTOR)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1048
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_5]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1048
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

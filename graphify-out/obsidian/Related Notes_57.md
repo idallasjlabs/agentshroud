@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Egress Filter Errors.md"
+source_file: "docs/vault/05 - Dependencies/clamav.md"
 type: "document"
-community: "Community 946"
-location: "L99"
+community: "ClamAV"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_946
+  - community/ClamAV
 ---
 
 # Related Notes
 
 ## Connections
-- [[Egress Filter Errors_1]] - `contains` [EXTRACTED]
+- [[ClamAV_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_946
+#graphify/document #graphify/EXTRACTED #community/ClamAV

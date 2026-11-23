@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: "Community 177"
+community: "Daedalus — Concept Illustrator"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Related Skills
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

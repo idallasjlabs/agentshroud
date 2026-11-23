@@ -1,17 +1,16 @@
 ---
-source_file: "voice_gateway/server.py"
+source_file: ""
 type: "code"
-community: "Community 1006"
-location: "L377"
+community: "installer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/installerpy
 ---
 
 # Request
 
 ## Connections
-- [[firmware_bin()]] - `references` [EXTRACTED]
+- [[installer_page()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/installerpy

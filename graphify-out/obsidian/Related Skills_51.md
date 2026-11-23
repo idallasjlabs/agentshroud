@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/i-mcpm-doctor.md"
+source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Community 1045"
-location: "L163"
+community: "GSDE&G Development Master Checklist (MC)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1045
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_4]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1045
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

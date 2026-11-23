@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/06 - Containers & Services/networks.md"
 type: "document"
-community: "Community 389"
-location: "L78"
+community: "Docker Networks"
+location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_389
+  - community/Docker_Networks
 ---
 
 # Related Notes
 
 ## Connections
-- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
+- [[Docker Networks]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_389
+#graphify/document #graphify/EXTRACTED #community/Docker_Networks

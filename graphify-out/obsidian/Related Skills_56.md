@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-athena/README.md"
+source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Community 2178"
+community: "Mnemosyne — Retention Engineer"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2178
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Related Skills
 
 ## Connections
-- [[Athena — Knowledge Distiller_7]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2178
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

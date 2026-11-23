@@ -1,18 +1,16 @@
 ---
-source_file: "gateway/inbound_edge/routes.py"
+source_file: ""
 type: "code"
-community: "Community 32"
-location: "L72"
+community: "server.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_32
+  - graphify/EXTRACTED
+  - community/serverpy
 ---
 
 # Request
 
 ## Connections
-- [[OAuthFailure]] - `uses` [INFERRED]
-- [[edge_rpc()]] - `references` [EXTRACTED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_32
+#graphify/code #graphify/EXTRACTED #community/serverpy

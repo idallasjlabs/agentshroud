@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/03 - Configuration/falco-rules.md"
 type: "document"
-community: "Community 73"
-location: "L50"
+community: "falco-rules.yaml"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_73
+  - community/falco-rulesyaml
 ---
 
 # Related Notes
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[falco-rules.yaml]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_73
+#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml

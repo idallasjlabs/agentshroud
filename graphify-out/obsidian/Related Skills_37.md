@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sad/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Community 2093"
-location: "L12"
+community: "Production Safety Checklist (PROD-SAFETY)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2093
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2093
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

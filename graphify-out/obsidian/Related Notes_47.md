@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "Community 1082"
-location: "L53"
+community: "spaCy"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/spaCy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1082
+#graphify/document #graphify/EXTRACTED #community/spaCy

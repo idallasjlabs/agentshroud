@@ -1,12 +1,12 @@
 ---
 source_file: ".github/workflows/release.yml"
 type: "code"
-community: "Community 1170"
+community: "sync-version.sh"
 location: "12"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1170
+  - community/sync-versionsh
 ---
 
 # Release test job (py3.13, tag/version sync checks)
@@ -15,4 +15,4 @@ tags:
 - [[Release Docker build & tag job]] - `references` [EXTRACTED]
 - [[sync-version.sh]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1170
+#graphify/code #graphify/EXTRACTED #community/sync-versionsh

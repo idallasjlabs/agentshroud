@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "Community 2029"
-location: "L97"
+community: "browser-fetch.js"
+location: "L37"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2029
+  - community/browser-fetchjs
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2029
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

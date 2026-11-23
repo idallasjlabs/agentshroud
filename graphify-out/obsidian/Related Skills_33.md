@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/icloud/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Community 2084"
+community: "Code Review (CR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2084
+  - community/Code_Review_CR
 ---
 
 # Related Skills
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2084
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

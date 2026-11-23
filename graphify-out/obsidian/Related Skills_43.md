@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "Community 263"
-location: "L224"
+community: "System Audit Vault"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/System_Audit_Vault
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault

@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/i-mcpm-auth-reset.md"
+source_file: "docker/config/hermes/skills/i-athena/README.md"
 type: "document"
-community: "Community 274"
-location: "L223"
+community: "Athena — Knowledge Distiller"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_4]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_274
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

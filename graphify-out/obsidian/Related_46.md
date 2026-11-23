@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/falco_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "Community 678"
-location: "L81"
+community: "browser_security.py"
+location: "L86"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_678
+  - community/browser_securitypy
 ---
 
 # Related
 
 ## Connections
-- [[falco_monitor.py_2]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_678
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

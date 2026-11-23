@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/i-mcpm-aws-profile.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Community 183"
-location: "L348"
+community: "Atlas — Curriculum Architect"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_183
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Related Skills
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_4]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_183
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

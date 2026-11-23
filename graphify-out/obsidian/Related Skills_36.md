@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/oracle/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "Community 2088"
+community: "Incident Response (INCIDENT)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2088
+  - community/Incident_Response_INCIDENT
 ---
 
 # Related Skills
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2088
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

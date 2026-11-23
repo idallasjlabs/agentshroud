@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/volumes.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Community 800"
-location: "L90"
+community: "SSH Config"
+location: "L51"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_800
+  - community/SSH_Config
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Volumes]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_800
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

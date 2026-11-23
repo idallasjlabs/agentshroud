@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
+source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 1366"
-location: "L83"
+community: "Layer-by-Layer Breakdown"
+location: "L221"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1366
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Related Notes
 
 ## Connections
-- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
+- [[Data Flow_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1366
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

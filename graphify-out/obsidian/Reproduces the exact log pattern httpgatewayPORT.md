@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "Community 161"
+community: "TestNormalizeForSpeech"
 location: "L305"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_161
+  - community/TestNormalizeForSpeech
 ---
 
 # Reproduces the exact log pattern: http://gateway:[PORT]
 
 ## Connections
-- [[.test_port_inline_colon()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_port_inline_colon()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_161
+#graphify/rationale #graphify/EXTRACTED #community/TestNormalizeForSpeech

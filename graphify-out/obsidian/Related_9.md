@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
 type: "document"
-community: "Community 820"
-location: "L73"
+community: "version_routes.py"
+location: "L77"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/version_routespy
 ---
 
 # Related
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[version_routes.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/document #graphify/EXTRACTED #community/version_routespy

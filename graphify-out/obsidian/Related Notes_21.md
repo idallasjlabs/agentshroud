@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/docker-compose.yml.md"
+source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
 type: "document"
-community: "Community 460"
-location: "L166"
+community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
+location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_460
+  - community/EnhancedApprovalQueue_enhanced_queuepy
 ---
 
 # Related Notes
 
 ## Connections
-- [[docker-compose.yml_1]] - `contains` [EXTRACTED]
+- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_460
+#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy

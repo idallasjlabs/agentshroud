@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/README.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "Community 117"
+community: "CI/CD Pipeline Advisor (CICD)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

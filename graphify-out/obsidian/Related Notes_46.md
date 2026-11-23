@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Community 1084"
-location: "L63"
+community: "python-jose"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1084
+  - community/python-jose
 ---
 
 # Related Notes
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1084
+#graphify/document #graphify/EXTRACTED #community/python-jose

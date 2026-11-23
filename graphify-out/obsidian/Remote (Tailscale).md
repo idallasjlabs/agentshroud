@@ -1,12 +1,12 @@
 ---
 source_file: "docs/project/SYSTEM_STATUS.md"
 type: "document"
-community: "Community 604"
+community: "AgentShroud System Status Report"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_604
+  - community/AgentShroud_System_Status_Report
 ---
 
 # Remote (Tailscale)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🔧 System Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_604
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Status_Report

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mnemosyne/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Community 2086"
+community: "Pull Request Generator (PR)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2086
+  - community/Pull_Request_Generator_PR
 ---
 
 # Related Skills
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2086
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

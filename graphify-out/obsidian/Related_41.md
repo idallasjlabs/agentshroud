@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
 type: "document"
-community: "Community 676"
-location: "L87"
+community: "web_config.py"
+location: "L69"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_676
+  - community/web_configpy
 ---
 
 # Related
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[web_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_676
+#graphify/document #graphify/EXTRACTED #community/web_configpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openclaw.md"
+source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
 type: "document"
-community: "Community 1569"
-location: "L56"
+community: "HTTP_PROXY / HTTPS_PROXY"
+location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1569
+  - community/HTTP_PROXY_/_HTTPS_PROXY
 ---
 
 # Related Notes
 
 ## Connections
-- [[OpenClaw]] - `contains` [EXTRACTED]
+- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1569
+#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sav/README.md"
+source_file: ".agents/skills/icloud/README.md"
 type: "document"
-community: "Community 2094"
-location: "L12"
+community: "iCloud Data Manager (ICLOUD)"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2094
+  - community/iCloud_Data_Manager_ICLOUD
 ---
 
 # Related Skills
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2094
+#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD

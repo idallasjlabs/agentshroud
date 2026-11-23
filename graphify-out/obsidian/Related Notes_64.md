@@ -1,18 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "Community 334"
-location: "L143"
+community: "proxy_status.py"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/proxy_statuspy
 ---
 
 # Related Notes
 
 ## Connections
-- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
-- [[troubleshooting]] - `contains` [EXTRACTED]
+- [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/proxy_statuspy

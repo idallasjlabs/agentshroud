@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/README.md"
+source_file: ".opencode/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 1228"
-location: "L14"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L223"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1228
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Related Skills
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1228
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

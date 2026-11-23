@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: ".agents/skills/aws/README.md"
 type: "document"
-community: "Community 177"
+community: "AWS Cloud Management & FinOps"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Related Skills
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/04 - Environment Variables/OPENCLAW_DISABLE_HOST_FILESYSTEM.md"
 type: "document"
-community: "Community 826"
-location: "L78"
+community: "OPENCLAW_SANDBOX_MODE"
+location: "L36"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_826
+  - community/OPENCLAW_SANDBOX_MODE
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_2]] - `contains` [EXTRACTED]
+- [[OPENCLAW_DISABLE_HOST_FILESYSTEM_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_826
+#graphify/document #graphify/EXTRACTED #community/OPENCLAW_SANDBOX_MODE

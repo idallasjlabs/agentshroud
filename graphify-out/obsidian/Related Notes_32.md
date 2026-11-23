@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/GATEWAY_URL.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "Community 578"
-location: "L42"
+community: "ssh_proxy.py"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_578
+  - community/ssh_proxypy
 ---
 
 # Related Notes
 
 ## Connections
-- [[GATEWAY_URL_1]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_578
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

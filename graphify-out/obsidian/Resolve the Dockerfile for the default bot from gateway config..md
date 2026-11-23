@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "Community 49"
+community: "load_config"
 location: "L496"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/load_config
 ---
 
 # Resolve the Dockerfile for the default bot from gateway config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_get_default_bot_dockerfile()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_49
+#graphify/rationale #graphify/EXTRACTED #community/load_config

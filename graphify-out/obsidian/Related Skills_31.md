@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Community 803"
+community: "Branding Specialist (BS)"
 location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/Branding_Specialist_BS
 ---
 
 # Related Skills
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
-- [[Technical Illustrator (i-ti)]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

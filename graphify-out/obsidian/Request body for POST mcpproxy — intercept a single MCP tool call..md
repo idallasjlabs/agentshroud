@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 254"
+community: "ingest_api/main.py"
 location: "L675"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/ingest_api/mainpy
 ---
 
 # Request body for POST /mcp/proxy — intercept a single MCP tool call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPProxyRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
