@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # Competitive Security Matrix — AgentShroud vs AI Agent Platforms
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[1. Normal Message Flow]] - document - docs/flows/sequence-diagrams.md
-- [[2. MCP Tool Call Flow]] - document - docs/flows/sequence-diagrams.md
-- [[3. Kill Switch Activation Flow]] - document - docs/flows/sequence-diagrams.md
-- [[4. SSH Command Flow]] - document - docs/flows/sequence-diagrams.md
-- [[5. Web Fetch Flow]] - document - docs/flows/sequence-diagrams.md
-- [[AgentShroud Sequence Diagrams]] - document - docs/flows/sequence-diagrams.md
-- [[sequence-diagrams]] - document - docs/flows/sequence-diagrams.md
+- [[Competitive Security Matrix — AgentShroud vs AI Agent Platforms]] - document - docs/security/competitive-security-matrix.md
+- [[Container Security Toolchain Comparison]] - document - docs/security/competitive-security-matrix.md
+- [[Key Takeaways]] - document - docs/security/competitive-security-matrix.md
+- [[Module Comparison]] - document - docs/security/competitive-security-matrix.md
+- [[Security Score (out of 28)]] - document - docs/security/competitive-security-matrix.md
+- [[Updated Magic Quadrant Position]] - document - docs/security/competitive-security-matrix.md
+- [[competitive-security-matrix]] - document - docs/security/competitive-security-matrix.md
 
 ## Live Query (requires Dataview plugin)
 

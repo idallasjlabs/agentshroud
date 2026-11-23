@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # COMMUNICATION-TEMPLATES.md
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
@@ -24,8 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_SecureBrowser Skill (3)]]
-- 1 edge to [[_COMMUNITY_voice_task]]
+- 1 edge to [[_COMMUNITY_AgentShroud™ Communication Templates]]
 
 ## Top bridge nodes
-- [[COMMUNICATION-TEMPLATES]] - degree 6, connects to 2 communities
+- [[COMMUNICATION-TEMPLATES]] - degree 5, connects to 1 community

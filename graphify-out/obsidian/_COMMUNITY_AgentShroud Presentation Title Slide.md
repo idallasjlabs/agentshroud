@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Presentation Title Slide
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[AWS Step Functions]] - concept - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[AgentShroud Presentation Title Slide]] - image - branding/presentation/title-slide-1920x1080.png
 
 ## Live Query (requires Dataview plugin)
 

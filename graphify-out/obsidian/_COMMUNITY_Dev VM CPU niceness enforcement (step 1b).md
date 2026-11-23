@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Dev VM CPU niceness enforcement (step 1b)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Token Reduction Benchmark]] - concept - docker/config/openclaw/skills/graphify/references/exports.md
+- [[Dev VM CPU niceness enforcement (step 1b)]] - rationale - docker/scripts/colima-health-check.sh
 
 ## Live Query (requires Dataview plugin)
 

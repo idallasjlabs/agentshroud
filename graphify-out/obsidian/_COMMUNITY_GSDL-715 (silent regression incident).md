@@ -1,20 +1,17 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+members: 4
 ---
 
 # GSDL-715 (silent regression incident)
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[Discrete confidence-score rubric]] - rationale - docker/config/hermes/skills/graphify/references/extraction-spec.md
+- [[Finding Triage Classes (CONFIRMEDPROBABLESELF_HEALEDFALSE_POSITIVEGOOD_DIRECTION)]] - concept - docker/config/openclaw/skills/i-ab/SKILL.md
+- [[GSDL-715 (silent regression incident)]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
+- [[scriptsaudit_merge_regression.py]] - concept - docker/config/hermes/skills/i-ab/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,12 +19,3 @@ members: 5
 TABLE source_file, type FROM #community/GSDL-715_silent_regression_incident
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_A2AMethod]]
-- 1 edge to [[_COMMUNITY_test_key_rotation_internals.py]]
-- 1 edge to [[_COMMUNITY_CredentialInfo]]
-- 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
-
-## Top bridge nodes
-- [[TestStoreIn1Password]] - degree 10, connects to 4 communities

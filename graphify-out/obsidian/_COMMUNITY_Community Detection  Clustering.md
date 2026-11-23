@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Community Detection / Clustering
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Chaos Engineering Skill_1]] - document - docker/config/hermes/skills/i-chaos-engineering/SKILL.md
+- [[Community Detection  Clustering]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

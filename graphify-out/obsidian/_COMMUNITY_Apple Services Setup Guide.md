@@ -1,41 +1,40 @@
 ---
 type: community
-cohesion: 0.08
-members: 26
+members: 27
 ---
 
 # Apple Services Setup Guide
 
-**Cohesion:** 0.08 - loosely connected
-**Members:** 26 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[Accounts]] - document - docs/reference/PREREQUISITES.md
-- [[Additional Tools in Containers]] - document - docs/reference/PREREQUISITES.md
-- [[AgentShroud Prerequisites]] - document - docs/reference/PREREQUISITES.md
-- [[Annually]] - document - docs/reference/PREREQUISITES.md
-- [[Base Images]] - document - docs/reference/PREREQUISITES.md
-- [[Common Issues_1]] - document - docs/reference/PREREQUISITES.md
-- [[Configuration_7]] - document - docs/reference/PREREQUISITES.md
-- [[Monthly]] - document - docs/reference/PREREQUISITES.md
-- [[Network Security]] - document - docs/reference/PREREQUISITES.md
-- [[Overview_8]] - document - docs/reference/PREREQUISITES.md
-- [[Quarterly]] - document - docs/reference/PREREQUISITES.md
-- [[Secrets Management]] - document - docs/reference/PREREQUISITES.md
-- [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_2]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
-- [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
-- [[🆘 Troubleshooting_1]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 Philosophy Separation of Concerns]] - document - docs/reference/PREREQUISITES.md
-- [[🎯 You're Not Missing Anything!]] - document - docs/reference/PREREQUISITES.md
-- [[📊 Cost Breakdown]] - document - docs/reference/PREREQUISITES.md
-- [[📚 Additional Resources]] - document - docs/reference/PREREQUISITES.md
-- [[📦 Docker Images & Dependencies]] - document - docs/reference/PREREQUISITES.md
-- [[🔄 Maintenance Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🔐 Security Requirements]] - document - docs/reference/PREREQUISITES.md
-- [[🗂️ File Structure]] - document - docs/reference/PREREQUISITES.md
-- [[🚀 Quick Start Command]] - document - docs/reference/PREREQUISITES.md
+- [[APPLE-SERVICES-SETUP]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Access Pattern]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[App-Specific Password (if 2FA enabled)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Apple ID Creation]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Apple Services Setup Guide]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[CalDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[CardDAV Server]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Credential Storage]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[IMAP Settings (Incoming Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Notes Access Options]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Phase 1 Email]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Phase 2 Calendar]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Phase 3 Contacts]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[SMTP Settings (Outgoing Mail)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Test Access]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[Two-Factor Authentication]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[iCloud Services_5]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🎯 Next Steps_1]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📅 Calendar (CalDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📋 Setup Checklist]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📚 Documentation Links]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📝 Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📞 Contacts (CardDAV)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[📧 Apple Mail (IMAPSMTP)]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🔐 App-Specific Passwords]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🚨 Security Notes]] - document - docs/setup/APPLE-SERVICES-SETUP.md
+- [[🤖 Bot Integration Plan]] - document - docs/setup/APPLE-SERVICES-SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -45,9 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_llm_proxy_thinking_suppression.py]]
-- 1 edge to [[_COMMUNITY_colima-health-check.sh (2)]]
-- 1 edge to [[_COMMUNITY_generate-job-schedule.py]]
+- 1 edge to [[_COMMUNITY_docsREADME]]
 
 ## Top bridge nodes
-- [[AgentShroud Prerequisites]] - degree 16, connects to 3 communities
+- [[APPLE-SERVICES-SETUP]] - degree 2, connects to 1 community

@@ -1,12 +1,10 @@
 ---
 type: community
-cohesion: 0.07
 members: 30
 ---
 
 # AgentShroud v0.9.0 — Human Interface Testing Guide
 
-**Cohesion:** 0.07 - loosely connected
 **Members:** 30 nodes
 
 ## Members
@@ -21,7 +19,7 @@ members: 30
 - [[Access and Login]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
 - [[AgentShroud v0.9.0 — Human Interface Testing Guide]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
 - [[Dashboard Tabs to Verify]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
-- [[Delegation]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
+- [[Delegation_1]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
 - [[Egress Firewall]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
 - [[Egress Tab]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md
 - [[Group Management]] - document - docs/planning/v0.9/v0.9.0-testing-guide.md

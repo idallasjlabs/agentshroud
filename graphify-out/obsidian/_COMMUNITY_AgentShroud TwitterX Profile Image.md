@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Twitter/X Profile Image
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 32x32 (AgentShroud logo mark)]] - image - branding/favicons/favicon-32x32.png
+- [[AgentShroud TwitterX Profile Image]] - image - branding/social/twitter-profile-400x400.png
 
 ## Live Query (requires Dataview plugin)
 

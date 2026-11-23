@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Favicon 256x256 (AgentShroud logo mark)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server safari]] - code - .mcp.json
+- [[Favicon 256x256 (AgentShroud logo mark)]] - image - branding/favicons/favicon-256x256.png
 
 ## Live Query (requires Dataview plugin)
 

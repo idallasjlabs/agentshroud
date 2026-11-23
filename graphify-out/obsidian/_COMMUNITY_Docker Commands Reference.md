@@ -1,27 +1,28 @@
 ---
 type: community
-cohesion: 0.20
-members: 12
+members: 15
 ---
 
 # Docker Commands Reference
 
-**Cohesion:** 0.20 - loosely connected
-**Members:** 12 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Audit query GET ledger (hashes only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Auto-delete at expires_at]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Cron trigger (no user content)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[LLM API call (sanitized text only)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[PII Redaction (PHONE_NUMBER, EMAIL_ADDRESS, SSN)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Response to user (Telegram  iMessage)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Telegram message (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[Tool call (MCP-inspected)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[content_hash = SHA-256(sanitized)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[iMessage (raw user text)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[ledger row (id, timestamp, source, hashes, sanitized flag, expires_at)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
-- [[original_content_hash = SHA-256(raw)]] - concept - docs/diagrams/images/diagram-09-data-lineage.svg
+- [[AgentShroud Minimal Docker Compose]] - document - examples/docker-compose.minimal.yml
+- [[AgentShroud Production Docker Compose]] - document - examples/docker-compose.production.yml
+- [[Container management_1]] - document - examples/docker-commands.md
+- [[Container status]] - document - examples/docker-commands.md
+- [[Debugging read-only filesystem errors]] - document - examples/docker-commands.md
+- [[Docker Commands Reference]] - document - examples/docker-commands.md
+- [[Exec into containers]] - document - examples/docker-commands.md
+- [[Logs_4]] - document - examples/docker-commands.md
+- [[Networking_1]] - document - examples/docker-commands.md
+- [[OpenClaw CLI commands (run inside agentshroud-bot)]] - document - examples/docker-commands.md
+- [[Reading files from containers]] - document - examples/docker-commands.md
+- [[Secrets inspection (read-only check)]] - document - examples/docker-commands.md
+- [[Volume management]] - document - examples/docker-commands.md
+- [[Writing files to containers]] - document - examples/docker-commands.md
+- [[docker-commands]] - document - examples/docker-commands.md
 
 ## Live Query (requires Dataview plugin)
 

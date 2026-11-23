@@ -1,31 +1,21 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 8
 ---
 
 # GitHub Copilot CLI Setup Guide
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Canonical request (copy-paste `curl` to validate before building Shortcuts)]] - document - shortcuts/README.md
-- [[Content-type quick reference]] - document - shortcuts/README.md
-- [[Contract verification (automated)]] - document - shortcuts/README.md
-- [[One-time setup (do this first)]] - document - shortcuts/README.md
-- [[Recipe A — Share Sheet text  URL]] - document - shortcuts/README.md
-- [[Recipe B — Siri voice capture (Hey Siri, send to AgentShroud)]] - document - shortcuts/README.md
-- [[Recipe C — Screenshot relay (OCR text)]] - document - shortcuts/README.md
-- [[Recipe D — Clipboard relay (macOS menu bar  iOS)]] - document - shortcuts/README.md
-- [[Recipe E — Share Sheet photo relay]] - document - shortcuts/README.md
-- [[Request body — `ForwardRequest`]] - document - shortcuts/README.md
-- [[Response body — `ForwardResponse`]] - document - shortcuts/README.md
-- [[Status_4]] - document - shortcuts/README.md
-- [[The `forward` contract (authoritative)]] - document - shortcuts/README.md
-- [[Troubleshooting_31]] - document - shortcuts/README.md
-- [[iOS  macOS Shortcuts — Relay to AgentShroud]] - document - shortcuts/README.md
-- [[shortcutsREADME]] - document - shortcuts/README.md
+- [[Agent Files Location]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Built-in Default Agents]] - document - .github/COPILOT_CLI_SETUP.md
+- [[COPILOT_CLI_SETUP]] - document - .github/COPILOT_CLI_SETUP.md
+- [[GitHub Copilot CLI Setup Guide]] - document - .github/COPILOT_CLI_SETUP.md
+- [[MCP Server Integration]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Overview_5]] - document - .github/COPILOT_CLI_SETUP.md
+- [[Questions]] - document - .github/COPILOT_CLI_SETUP.md
+- [[References_1]] - document - .github/COPILOT_CLI_SETUP.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,3 +23,19 @@ members: 16
 TABLE source_file, type FROM #community/GitHub_Copilot_CLI_Setup_Guide
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Installation]]
+- 1 edge to [[_COMMUNITY_Basic Usage]]
+- 1 edge to [[_COMMUNITY_Role & Restrictions]]
+- 1 edge to [[_COMMUNITY_Security & Permissions]]
+- 1 edge to [[_COMMUNITY_Repository Context]]
+- 1 edge to [[_COMMUNITY_Common Workflows]]
+- 1 edge to [[_COMMUNITY_Authentication]]
+- 1 edge to [[_COMMUNITY_Context Management]]
+- 1 edge to [[_COMMUNITY_Troubleshooting_2]]
+- 1 edge to [[_COMMUNITY_Configuration Files]]
+- 1 edge to [[_COMMUNITY_Custom Agents]]
+
+## Top bridge nodes
+- [[GitHub Copilot CLI Setup Guide]] - degree 18, connects to 11 communities

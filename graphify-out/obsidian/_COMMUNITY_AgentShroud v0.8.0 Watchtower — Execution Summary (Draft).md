@@ -1,40 +1,38 @@
 ---
 type: community
-cohesion: 0.08
 members: 25
 ---
 
 # AgentShroud v0.8.0 "Watchtower" — Execution Summary (Draft)
 
-**Cohesion:** 0.08 - loosely connected
 **Members:** 25 nodes
 
 ## Members
-- [[dot-setup_method()_22]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_all_unicode_control_chars_stripped()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_check_for_exif_detects_magic_bytes()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_check_oversized_headers_flags_large_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_check_oversized_headers_passes_normal_headers()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_internal_ip_patterns_comprehensive()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_filename_normalizes_unicode()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_filename_strips_control_chars()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_headers_redacts_internal_ips()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_headers_strips_sensitive()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_headers_truncates_on_size_limit()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_image_metadata_preserves_non_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[dot-test_sanitize_image_metadata_removes_exif()]] - code - gateway/tests/test_metadata_guard.py
-- [[Test comprehensive internal IP pattern matching.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that EXIF metadata is removed from image data.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that all specified unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that header sanitization stops at size limit.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that internal IPs are redacted from headers.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that non-EXIF data is preserved.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that normal-sized headers pass.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that oversized headers are flagged.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that sensitive headers are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode control characters are stripped.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[Test that unicode is normalized with NFKC.]] - rationale - gateway/tests/test_metadata_guard.py
-- [[TestMetadataGuard_1]] - code - gateway/tests/test_metadata_guard.py
+- [[1) v0.8.0 Baseline Delivery (Documented)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[2) Additional v0.8.0 Stabilization Work (Current Execution Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[3) Verification Evidence (Current Cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[4) v0.8.0 Done Gate — 2026-03-14 Status]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Items Still Remaining (Tracked Separately)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[5) Notes]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[6) Owner Readout — Daily Telegram Validation Checklist]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[A. Startup + baseline]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[AgentShroud v0.8.0 Watchtower — Execution Summary (Draft)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Assessmentquality loop support delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[B. Collaborator onboarding]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Bot container verification (2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[C. Command contract (role split)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[D. Egress behavior]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Delivered capability groups (baseline)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[E. Leak-safety checks]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Executive Summary_11]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[F. Rate-limit UX]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[G. Daily evidence capture]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Gateway regression suites]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[P0P1 Fixes Applied (2026-03-14 cycle)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Security assessment (V8-7 quality loop pass — 2026-03-14)]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Targeted stabilization tests addedexercised]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[Telegram securityUX hardening delivered]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
+- [[v0.8.0-execution-summary-draft]] - document - docs/planning/v0.8/v0.8.0-execution-summary-draft.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,11 +40,3 @@ members: 25
 TABLE source_file, type FROM #community/AgentShroud_v080_Watchtower__Execution_Summary_Draft
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_ContextGuard]]
-- 2 edges to [[_COMMUNITY_TestDocumentTagging]]
-
-## Top bridge nodes
-- [[TestMetadataGuard_1]] - degree 16, connects to 2 communities
-- [[dot-setup_method()_22]] - degree 2, connects to 1 community

@@ -1,34 +1,42 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 29
 ---
 
 # AgentShroud™ — Project Knowledge Base
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[02-infrastructure]] - document - docs/diagrams/02-infrastructure.md
-- [[07-team-planning]] - document - docs/diagrams/07-team-planning.md
-- [[21. Agile Team Diagram — Structure & Roles]] - document - docs/diagrams/07-team-planning.md
-- [[22. Dependency Graph — Component Dependencies]] - document - docs/diagrams/07-team-planning.md
-- [[23. Roadmap  Timeline — Development Phases]] - document - docs/diagrams/07-team-planning.md
-- [[4. Infrastructure Diagram — Hosting & Servers]] - document - docs/diagrams/02-infrastructure.md
-- [[5. Network Topology Diagram]] - document - docs/diagrams/02-infrastructure.md
-- [[6. Deployment Diagram — What Runs Where]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Infrastructure & Network Diagrams]] - document - docs/diagrams/02-infrastructure.md
-- [[AgentShroud — Team, Planning & Dependency Diagrams]] - document - docs/diagrams/07-team-planning.md
-- [[Agile Team Diagram — Structure & Roles]] - concept - docs/diagrams/07-team-planning.md
-- [[Dependency Graph — Component Deployment Order]] - concept - docs/diagrams/07-team-planning.md
-- [[Deployment Diagram — What Runs Where]] - concept - docs/diagrams/02-infrastructure.md
-- [[Infrastructure Diagram — Hosting & Servers]] - concept - docs/diagrams/02-infrastructure.md
-- [[Network Topology Diagram]] - concept - docs/diagrams/02-infrastructure.md
-- [[Rendered CICD Deployment Diagram (PNG)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.png
-- [[Rendered Infrastructure Hosting Diagram (PNG)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.png
-- [[Rendered Network Topology Diagram (PNG)]] - image - docs/diagrams/images/diagram-05-network-topology.png
-- [[Roadmap  Timeline — Development Phases]] - concept - docs/diagrams/07-team-planning.md
+- [[About the Creator]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[AgentShroud™ — Project Knowledge Base]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Architecture_10]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Architecture Review]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Current Status_11]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Design Philosophy_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Development Phases]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Documentation & Ideas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Egress Pipeline (Agent → Internet)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Frequently Asked Questions]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[How He Works]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[How to Contribute]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Inbound Pipeline (User → Agent)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Infrastructure_7]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Multi-Platform Support]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Outbound Pipeline (Agent → User)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Red Team Testing (Most Valuable!)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Security Modules]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Technology Stack]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Conjecture]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Problem_1]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Security Pipeline]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Solution]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[The Thesis]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[What He Builds]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[What Is AgentShroud_4]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[Why AgentShroud Exists]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[collaborator-workspacePUBLIC-INFO]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[v0.8.0 Focus Areas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,12 +44,3 @@ members: 19
 TABLE source_file, type FROM #community/AgentShroud__Project_Knowledge_Base
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 2 edges to [[_COMMUNITY_Distributed OpenClaw Node Architecture — Raspberry Pi 4]]
-- 1 edge to [[_COMMUNITY_PHASE_3A_3B_IMPLEMENTATION]]
-
-## Top bridge nodes
-- [[02-infrastructure]] - degree 5, connects to 1 community
-- [[07-team-planning]] - degree 5, connects to 1 community
-- [[Roadmap  Timeline — Development Phases]] - degree 2, connects to 1 community

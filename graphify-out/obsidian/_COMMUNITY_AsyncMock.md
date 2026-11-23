@@ -1,114 +1,139 @@
 ---
 type: community
-cohesion: 0.04
-members: 99
+members: 126
 ---
 
 # AsyncMock
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 99 nodes
+**Members:** 126 nodes
 
 ## Members
-- [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_bot_updates_npm_missing_binary()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_bot_updates_update_available()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_openclaw_updates_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_updates_git_failure_returns_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_check_updates_reports_behind()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_custom_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
-- [[dot-test_default_bot_dockerfile_used()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_default_revert_minutes()]] - code - gateway/tests/test_observatory_mode.py
-- [[dot-test_disconnect_reports_failure_on_engine_errors()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_disconnect_stops_and_removes_bot()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_echoes_status_until_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_fallback_when_config_load_fails()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_fallback_when_default_bot_has_no_dockerfile()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_fallback_when_no_bots()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_first_bot_used_when_no_default_flag()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_freeze_reports_failure_when_pause_fails()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_engine_uses_runtime_config()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_logs_combined_handles_partial_failure()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_logs_for_service()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_logs_service_not_found_returns_404()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_logs_unknown_service_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_get_mode_default_enforce()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_invalid_mode_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_invalid_service_name_rejected()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_invalid_token_raises_401()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_killswitch_action_default_unconfirmed()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_master_token_rejected_4003()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_missing_token_closes_4001()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_missing_token_closes_4001()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_mode_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rebuild_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rebuild_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_restart_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rollback_agentshroud_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rollback_bot()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_rollback_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_set_mode_cancels_previous_revert_task()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_set_mode_clamps_high_revert()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_set_mode_enforce_revert_task_is_noop()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_set_mode_invalid_returns_400()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_set_mode_monitor_auto_reverts()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_shutdown_brings_stack_down()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_shutdown_failure_reports_error()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_start_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_start_service_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_status_runtime_failure_degrades_gracefully()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_status_with_running_and_stopped_containers()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_stop_service_success()_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_pull_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_skip_tests_skips_test_step()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_success_with_tests_and_security_review()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_upgrade_test_failure_triggers_rollback()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_valid_modes_constant()]] - code - gateway/tests/test_observatory_mode.py
-- [[dot-test_valid_token_authenticates()]] - code - gateway/tests/test_web_api_coverage.py
-- [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[KillSwitchAction]] - code - gateway/web/api.py
-- [[ModeRequest]] - code - gateway/web/api.py
-- [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
-- [[SimpleNamespace]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestBotUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestDefaultBotDockerfile]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestGetEngineHelper]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestKillSwitch_1]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestMode]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestModeRequestModel]] - code - gateway/tests/test_observatory_mode.py
-- [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestRequireAuth]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestStatus]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestWsLogs]] - code - gateway/tests/test_web_api_coverage.py
-- [[TestWsUpdates]] - code - gateway/tests/test_web_api_coverage.py
-- [[UpdateRequest]] - code - gateway/web/api.py
-- [[_container()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_engine()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
-- [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[client()_13]] - code - gateway/tests/test_web_api_coverage.py
-- [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
-- [[webapi.py (POST apiintelreports)]] - code - gateway/web/api.py
+- [[dot-__call__()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-__init__()_95]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-test_attachments_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_blocks_scanned_even_when_text_present()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_chat_postmessage_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_chat_update_content_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_close_stops_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_close_swallows_stop_errors()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_close_with_no_resource_guard()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_connections_open_missing_url_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_rewrites_url()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_skips_content_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_connections_open_slack_error_passthrough()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_consume_relay_token_one_time()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_consume_relay_token_unknown()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_each_reconnect_issues_unique_token()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_event_without_user_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_file_upload_initial_comment_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_get_stats_returns_counters()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_is_owner_channel_empty_owner_uid_always_false()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_is_owner_channel_matches_owner_uid()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_is_owner_channel_no_match_for_other()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_keepalive_breaks_on_construction_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_message_event_records_activity()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_message_preview_truncated_to_80_chars()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_no_bot_token_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_no_sanitizer_passthrough()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_no_tracker_does_not_raise()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_message_event_ignored()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_message_method_not_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_clean_message_passes()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_high_risk_leakage_blocked_before_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_info_filter_redaction_blocks()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_pipeline_exception_fail_closed()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_non_owner_tailscale_hostname_blocked()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_outbound_blocked_returns_error()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_owner_channel_uses_full_trust()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_owner_pipeline_exception_fail_open()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_owner_recipient_body_preserved()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[dot-test_post_ephemeral_scanned()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_sanitized_text_replaces_original()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_sanitized_with_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_sanitized_without_redactions()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_sanitizer_error_fails_open()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_send_owner_endpoint_also_bypasses_pii()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[dot-test_structured_field_sanitization_blocks_delivery()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_system_notification_skips_pipeline()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_text_sanitization_still_applied()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_tracker_error_does_not_propagate()]] - code - gateway/tests/test_slack_proxy.py
+- [[dot-test_unknown_recipient_body_still_scrubbed()]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[dot-test_urlencoded_body_parsed()]] - code - gateway/tests/test_slack_proxy.py
+- [[emailsend-owner delegates to email_send and also skips PII for the owner.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[A secret hidden in blocks must be caught even if `text` is benign.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[AsyncMock]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Create a SlackAPIProxy with test credentials and no real IO.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Each call to apps.connections.open issues a distinct relay token.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[If the pipeline wants to redact inside blocks JSON, delivery is blocked…]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Legacy attachments are scanned for leaked content.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Minimal async callable for monkeypatching.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Non-owner channel Tailscale hostname triggers leakage pre-check → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel clean message with no leakage passes through.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel high-risk leakage detected before pipeline → blocked.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline exception → blocked (fail-closed).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Non-owner channel pipeline passes but info_filter_redaction_count  0 →…]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner channel pipeline exception → logged but message still forwarded.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Owner-allowlisted recipient receives body verbatim; pii_redacted=False.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[P0 security Slack outbound must differentiate owner vs collaborator channels.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Plain-text sanitization keeps working (redacted text forwarded).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[TestClose]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestHandleEvent]] - code - gateway/tests/test_slack_proxy.py
+- [[TestMultiFieldOutboundScanning]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOwnerChannelFiltering]] - code - gateway/tests/test_slack_proxy.py
+- [[TestOwnerEmailBypassesPii]] - code - gateway/tests/test_email_owner_bypasses_pii.py
+- [[TestProcessToolResult]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestProxyOutbound]] - code - gateway/tests/test_slack_proxy.py
+- [[TestSocketModeRelay]] - code - gateway/tests/test_slack_proxy.py
+- [[Tests for SlackAPIProxy — outbound Slack API proxying through SecurityPipeline.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Tests for SlackAPIProxy.handle_event() — inbound Socket Mode event processing.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[Unknown recipient's body is PII-scrubbed before approval queue submission.]] - rationale - gateway/tests/test_email_owner_bypasses_pii.py
+- [[_make_proxy()_1]] - code - gateway/tests/test_slack_proxy.py
+- [[_pass_result()]] - code - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open Slack error response returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[asyncio_41]] - code
+- [[blocksattachments and upload text must be scanned, not just `text`. Regression…]] - rationale - gateway/tests/test_slack_proxy.py
+- [[boom()_4]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[consume_relay_token returns the URL once then None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[files.upload initial_commenttitle text is scanned.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores message events with no user field.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event ignores non-message event types.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event is a no-op and does not raise when tracker is None.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
+- [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[scan()]] - code - gateway/tests/test_slack_proxy.py
+- [[scan()_1]] - code - gateway/tests/test_slack_proxy.py
+- [[scan()_2]] - code - gateway/tests/test_slack_proxy.py
+- [[test_audit_export_cef()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_exporter_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_audit_export_json_dict_payload()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_cve_report_queued()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_approve_missing_or_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_approve_mode_mapping()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_revoke()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_history_with_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_non_list_and_missing()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_queue_raises()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_pending_with_bot_filter()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_override_scoped()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rule_remove()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rules_fallback_empty()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_egress_rules_source_tagging()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_exec_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_log_audit_appends_to_audit_store()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_run_scanner_validation_and_launch()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
+- [[test_ssh_compose_success()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_ssh_compose_timeout_and_exception()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_bot_paths()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_upgrade_gateway_paths()]] - code - gateway/tests/test_soc_router_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -118,24 +143,69 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 7 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 6 edges to [[_COMMUNITY_MCPPolicyEngine (2)]]
-- 5 edges to [[_COMMUNITY_api.py (2)]]
-- 5 edges to [[_COMMUNITY__resolve_bot_container()]]
-- 4 edges to [[_COMMUNITY_TestMgmtWsTokens]]
-- 4 edges to [[_COMMUNITY_TelegramAPIProxy (3)]]
-- 4 edges to [[_COMMUNITY_Skill CICD Pipeline Advisor (CICD)]]
-- 3 edges to [[_COMMUNITY_ServiceManager]]
-- 3 edges to [[_COMMUNITY_KillSwitchMonitor (3)]]
-- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 30 edges to [[_COMMUNITY__make_proxy]]
+- 25 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 10 edges to [[_COMMUNITY_asyncio_1]]
+- 9 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 9 edges to [[_COMMUNITY_test_telegram_pipeline.py]]
+- 7 edges to [[_COMMUNITY_app]]
+- 7 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 5 edges to [[_COMMUNITY_hermes_dashboard_ws_proxy]]
+- 5 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 5 edges to [[_COMMUNITY_RedactionResult]]
+- 5 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 5 edges to [[_COMMUNITY_test_web_api_coverage.py]]
+- 5 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_DNSBlocklist]]
+- 4 edges to [[_COMMUNITY_DNSForwarderProtocol]]
+- 4 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 4 edges to [[_COMMUNITY_asyncio_8]]
+- 3 edges to [[_COMMUNITY_SlackAPIProxy]]
+- 3 edges to [[_COMMUNITY_dot-_make_proxy]]
+- 3 edges to [[_COMMUNITY_TestEmailSend]]
+- 3 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 3 edges to [[_COMMUNITY_test_mcp_proxy_coverage.py]]
+- 3 edges to [[_COMMUNITY__audit_entry]]
+- 3 edges to [[_COMMUNITY_socmodels.py]]
+- 3 edges to [[_COMMUNITY_SSHProxy]]
+- 2 edges to [[_COMMUNITY_test_middleware_coverage.py]]
+- 2 edges to [[_COMMUNITY_TestAsyncClient]]
+- 2 edges to [[_COMMUNITY_TestErrorSanitization]]
+- 2 edges to [[_COMMUNITY_ApprovalRequest]]
+- 2 edges to [[_COMMUNITY_TestTelegramDispatch]]
+- 2 edges to [[_COMMUNITY_test_forward_routing.py]]
+- 2 edges to [[_COMMUNITY_test_image_verifier.py]]
+- 2 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_RateLimitGuard]]
+- 2 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
+- 1 edge to [[_COMMUNITY_test_chat_completions_alias.py]]
+- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline (2)]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline (3)]]
+- 1 edge to [[_COMMUNITY__TrustCaptor]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_dot-test_mcp_proxy_endpoint]]
+- 1 edge to [[_COMMUNITY_MCPServerConfig]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_asyncio_3]]
+- 1 edge to [[_COMMUNITY__make_client]]
+- 1 edge to [[_COMMUNITY_dot-test_events_api_envelope_dispatches_handle_event]]
+- 1 edge to [[_COMMUNITY_dot-test_hello_message_not_dispatched]]
+- 1 edge to [[_COMMUNITY_dot-_handler]]
+- 1 edge to [[_COMMUNITY_TestMultiBotContextvarRouting]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_test_v1_models_synthetic.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
-- [[ModeRequest]] - degree 47, connects to 8 communities
-- [[UpdateRequest]] - degree 29, connects to 7 communities
-- [[KillSwitchAction]] - degree 27, connects to 7 communities
-- [[test_web_api_coverage.py]] - degree 30, connects to 4 communities
-- [[webapi.py (POST apiintelreports)]] - degree 5, connects to 4 communities
+- [[AsyncMock]] - degree 235, connects to 53 communities
+- [[test_slack_proxy.py]] - degree 12, connects to 3 communities
+- [[test_egress_approve_mode_mapping()]] - degree 3, connects to 2 communities
+- [[test_launch_scan_background_exec_failure()]] - degree 3, connects to 2 communities
+- [[test_launch_scan_background_success()]] - degree 3, connects to 2 communities

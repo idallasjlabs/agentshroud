@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # Gateway-Enforced Intel Verification (SCRUM-75)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SDLC Governance]] - document - .agents/skills/i-sdlc/SKILL.md
-- [[Scrum Ceremony Facilitation]] - document - .agents/skills/i-scrum/SKILL.md
+- [[Competitive Intelligence Report Standard Prompt (Hermes)]] - document - docker/config/hermes/workspace/competitive-analysis.md
+- [[Gateway-Enforced Intel Verification (SCRUM-75)]] - concept - docker/config/hermes/workspace/competitive-analysis.md
 
 ## Live Query (requires Dataview plugin)
 

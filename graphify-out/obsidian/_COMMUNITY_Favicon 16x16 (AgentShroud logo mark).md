@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Favicon 16x16 (AgentShroud logo mark)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[MCP Server home-assistant]] - code - .mcp.json
+- [[Favicon 16x16 (AgentShroud logo mark)]] - image - branding/favicons/favicon-16x16.png
 
 ## Live Query (requires Dataview plugin)
 

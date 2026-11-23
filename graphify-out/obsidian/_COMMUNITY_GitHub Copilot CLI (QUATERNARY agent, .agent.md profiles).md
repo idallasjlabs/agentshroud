@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer Exfiltration Pattern Detection Tests]] - code - gateway/tests/test_tool_chain_analyzer.py
+- [[GitHub Copilot CLI (QUATERNARY agent, .agent.md profiles)]] - concept - .llm_settings/docs/AI_TOOLS_CONFIGURATION_GUIDE.md
 
 ## Live Query (requires Dataview plugin)
 

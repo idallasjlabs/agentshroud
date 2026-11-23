@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # App Icon 32x32 (AgentShroud logo mark)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.wait_for_decision]] - code - gateway/approval_queue/enhanced_queue.py
+- [[App Icon 32x32 (AgentShroud logo mark)]] - image - branding/icons/app/icon-32x32.png
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,27 +1,25 @@
 ---
 type: community
-cohesion: 0.17
 members: 12
 ---
 
 # GSDE&G Development Master Checklist
 
-**Cohesion:** 0.17 - loosely connected
 **Members:** 12 nodes
 
 ## Members
-- [[Approval Queue Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Basic Status (No Auth)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Bot Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Container Health Check]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Full Health Report (Auth Required)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Gateway Health Endpoints]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Check Intervals (Docker)]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Health Checks_1]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Ledger Health]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Monitoring Script]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Related Notes_61]] - document - docs/vault/08 - Runbooks/Health Checks.md
-- [[Security Health Report]] - document - docs/vault/08 - Runbooks/Health Checks.md
+- [[dot-agentsagentsi-mc]] - document - .agents/agents/i-mc.md
+- [[Emergency Hotfix_1]] - document - .agents/agents/i-mc.md
+- [[GSDE&G Development Master Checklist_1]] - document - .agents/agents/i-mc.md
+- [[Phase 1 · Plan & Branch  → `ggSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Phase 2 · TDD  → `tddSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Phase 3 · QA  → `qaSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Phase 4 · Code Review  → `crSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Phase 5 · Pull Request  → `prSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Phase 6 · CI  → `cicdSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Phase 7 · Deploy  → `psSKILL.md`_1]] - document - .agents/agents/i-mc.md
+- [[Quick Commands_1]] - document - .agents/agents/i-mc.md
+- [[Skill Index_1]] - document - .agents/agents/i-mc.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,9 +27,3 @@ members: 12
 TABLE source_file, type FROM #community/GSDEG_Development_Master_Checklist
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-
-## Top bridge nodes
-- [[Health Checks_1]] - degree 10, connects to 1 community

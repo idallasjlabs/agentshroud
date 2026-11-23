@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # Dependabot Configuration
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[SOC Models SecurityEvent Tests]] - code - gateway/tests/test_soc_models.py
-- [[SOC ServiceManager Tests (get_logs, module_filter)]] - code - gateway/tests/test_soc_services.py
+- [[Dependabot Configuration]] - code - .github/dependabot.yml
+- [[Presidio-Anonymizer 2.2.364 Version Pin-Out]] - rationale - .github/dependabot.yml
 
 ## Live Query (requires Dataview plugin)
 

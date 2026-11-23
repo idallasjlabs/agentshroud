@@ -1,21 +1,19 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # GitHub Branch Protection — `main`
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[Feedback Guidelines_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Output Format_5]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Production-Specific Review Checks_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Review Principles_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Role_12]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Skill Code Review (CR)_1]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
+- [[BRANCH_PROTECTION]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[GitHub Branch Protection — `main`]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Local Enforcement (already active)]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Required Settings]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Required Status Checks]] - document - docs/governance/BRANCH_PROTECTION.md
+- [[Verification_1]] - document - docs/governance/BRANCH_PROTECTION.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,9 +21,3 @@ members: 6
 TABLE source_file, type FROM #community/GitHub_Branch_Protection__main
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_soc.js]]
-
-## Top bridge nodes
-- [[Skill Code Review (CR)_1]] - degree 6, connects to 1 community

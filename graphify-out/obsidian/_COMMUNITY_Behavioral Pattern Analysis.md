@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Behavioral Pattern Analysis
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[podcast_plan.json (voice config)]] - concept - docker/config/openclaw/skills/i-apollo/SKILL.md
+- [[Behavioral Pattern Analysis]] - concept - docs/project/glossary.md
 
 ## Live Query (requires Dataview plugin)
 

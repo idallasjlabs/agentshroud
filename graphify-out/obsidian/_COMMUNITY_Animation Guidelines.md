@@ -1,24 +1,20 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+members: 7
 ---
 
 # Animation Guidelines
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Members:** 7 nodes
 
 ## Members
-- [[AgentShroud Data Flow Diagrams (doc)]] - document - docs/flows/data-flow-diagram.md
-- [[Audit Ledger (blockchain-style chain)]] - concept - docs/flows/data-flow-diagram.md
-- [[Diagram 11 Trust Boundary]] - image - docs/diagrams/images/diagram-11-trust-boundary.svg
-- [[Diagram 13 Network Security Egress]] - image - docs/diagrams/images/diagram-13-network-security-egress.svg
-- [[Diagram 14 Logic Flow]] - image - docs/diagrams/images/diagram-14-logic-flow.svg
-- [[Kill Switch (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
-- [[MCP Proxy Detailed Flow (tool call inspection, permission check, rate limit, forward, result inspection)]] - concept - docs/flows/data-flow-diagram.md
-- [[PII Sanitizer (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
-- [[Trust Manager (Level 1 security component)]] - concept - docs/flows/data-flow-diagram.md
+- [[Accessibility]] - document - branding/guidelines/brand-guidelines.md
+- [[Animation Guidelines]] - document - branding/guidelines/brand-guidelines.md
+- [[CSS Reference]] - document - branding/guidelines/brand-guidelines.md
+- [[Logo Animation Constraints]] - document - branding/guidelines/brand-guidelines.md
+- [[Motion Principles]] - document - branding/guidelines/brand-guidelines.md
+- [[Status & Feedback Animations]] - document - branding/guidelines/brand-guidelines.md
+- [[Timing & Easing]] - document - branding/guidelines/brand-guidelines.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,3 +22,9 @@ members: 9
 TABLE source_file, type FROM #community/Animation_Guidelines
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud Brand Guidelines_1]]
+
+## Top bridge nodes
+- [[Animation Guidelines]] - degree 7, connects to 1 community

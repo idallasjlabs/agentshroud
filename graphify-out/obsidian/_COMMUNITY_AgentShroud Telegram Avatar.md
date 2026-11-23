@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # AgentShroud Telegram Avatar
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Favicon 16x16 (AgentShroud logo mark)]] - image - branding/favicons/favicon-16x16.png
+- [[AgentShroud Telegram Avatar]] - image - branding/social/telegram-avatar-512x512.png
 
 ## Live Query (requires Dataview plugin)
 

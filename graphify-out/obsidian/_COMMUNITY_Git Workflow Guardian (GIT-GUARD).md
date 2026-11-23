@@ -1,22 +1,18 @@
 ---
 type: community
-cohesion: 0.29
-members: 7
+members: 5
 ---
 
 # Git Workflow Guardian (GIT-GUARD)
 
-**Cohesion:** 0.29 - loosely connected
-**Members:** 7 nodes
+**Members:** 5 nodes
 
 ## Members
-- [[Competitive Security Matrix — AgentShroud vs AI Agent Platforms]] - document - docs/security/competitive-security-matrix.md
-- [[Container Security Toolchain Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Key Takeaways]] - document - docs/security/competitive-security-matrix.md
-- [[Module Comparison]] - document - docs/security/competitive-security-matrix.md
-- [[Security Score (out of 28)]] - document - docs/security/competitive-security-matrix.md
-- [[Updated Magic Quadrant Position]] - document - docs/security/competitive-security-matrix.md
-- [[competitive-security-matrix]] - document - docs/security/competitive-security-matrix.md
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_140]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Related Skills_70]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Usage_80]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[openclawskillsi-ggREADME]] - document - docker/config/openclaw/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,3 +20,9 @@ members: 7
 TABLE source_file, type FROM #community/Git_Workflow_Guardian_GIT-GUARD
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
+
+## Top bridge nodes
+- [[Git Workflow Guardian (GIT-GUARD)_1]] - degree 5, connects to 1 community

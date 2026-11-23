@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # CLASS_PROFILE
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[pre-commit gitleaks hook (v8.18.1)]] - code - .pre-commit-config.yaml
+- [[CLASS_PROFILE]] - code - scripts/triage-cve-mitigations.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Generic AI Agent Integration (HTTP Proxy Mode)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[omlx-keepwarm.sh — keeps gemma model resident (cold 5.06s vs warm 0.69s)]] - rationale - CHANGELOG.md
+- [[Generic AI Agent Integration (HTTP Proxy Mode)]] - document - docs/api/integration-guide.md
 
 ## Live Query (requires Dataview plugin)
 

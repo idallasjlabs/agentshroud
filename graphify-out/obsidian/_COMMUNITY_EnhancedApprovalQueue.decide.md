@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # EnhancedApprovalQueue.decide
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Approval queue — emailfile-deletionexternal-APIskill-install must route through it]] - rationale - CLAUDE.md
+- [[EnhancedApprovalQueue.decide]] - code - gateway/approval_queue/enhanced_queue.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,30 +1,28 @@
 ---
 type: community
-cohesion: 0.15
 members: 15
 ---
 
 # Backup & Restore Runbook — AgentShroud
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 15 nodes
 
 ## Members
-- [[jira_dev_ticket add_comment()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_basic_auth_header()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_comment_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_issue_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_op_proxy_request()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_tenant_info_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket build_transitions_url()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket create_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_credentials()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket fetch_op_secret()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket find_transition_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket resolve_cloud_id()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket run()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket transition_issue()]] - code - docker/config/hermes/workspace/jira_dev_ticket.py
-- [[jira_dev_ticket.py (OpenClaw copy)]] - code - docker/config/openclaw/workspace/jira_dev_ticket.py
+- [[Backup & Restore Runbook — AgentShroud]] - document - docs/runbooks/backup-restore.md
+- [[Backup Procedure]] - document - docs/runbooks/backup-restore.md
+- [[Backup Retention]] - document - docs/runbooks/backup-restore.md
+- [[Daily Audit Ledger Review]] - concept - docs/runbooks/daily-operations.md
+- [[Daily Automated Backup]] - document - docs/runbooks/backup-restore.md
+- [[Disaster Recovery (Full Rebuild)]] - document - docs/runbooks/backup-restore.md
+- [[Disaster Recovery Full Rebuild Procedure]] - concept - docs/runbooks/backup-restore.md
+- [[Manual Backup]] - document - docs/runbooks/backup-restore.md
+- [[Off-Site Backup]] - document - docs/runbooks/backup-restore.md
+- [[Restore Procedure]] - document - docs/runbooks/backup-restore.md
+- [[Restore from Backup]] - document - docs/runbooks/backup-restore.md
+- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - concept - docs/papers/agentshroud-ieee-paper.md
+- [[What to Back Up]] - document - docs/runbooks/backup-restore.md
+- [[backup-restore]] - document - docs/runbooks/backup-restore.md
+- [[daily-operations]] - document - docs/runbooks/daily-operations.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,12 +32,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestEgressTelegramNotify]]
-- 2 edges to [[_COMMUNITY_AgentShroud™ Brand Guidelines]]
+- 1 edge to [[_COMMUNITY_Morning Checklist (5 minutes)]]
+- 1 edge to [[_COMMUNITY_agentshroud-ieee-paper]]
+- 1 edge to [[_COMMUNITY_TELEGRAM_ISSUES]]
 
 ## Top bridge nodes
-- [[jira_dev_ticket run()]] - degree 7, connects to 2 communities
-- [[jira_dev_ticket build_basic_auth_header()]] - degree 4, connects to 1 community
-- [[jira_dev_ticket resolve_cloud_id()]] - degree 3, connects to 1 community
-- [[jira_dev_ticket build_op_proxy_request()]] - degree 2, connects to 1 community
-- [[jira_dev_ticket.py (OpenClaw copy)]] - degree 2, connects to 1 community
+- [[daily-operations]] - degree 3, connects to 1 community
+- [[Tamper-Evident Audit (SHA-256 Hash Chain)]] - degree 2, connects to 1 community
+- [[Disaster Recovery Full Rebuild Procedure]] - degree 2, connects to 1 community

@@ -1,47 +1,109 @@
 ---
 type: community
-cohesion: 0.07
-members: 32
+members: 96
 ---
 
 # EgressFilter
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 32 nodes
+**Members:** 96 nodes
 
 ## Members
-- [[ARM64 Support]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[All Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
-- [[CI Workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Coverage Threshold]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Expected Pipeline (Inferred)]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[FastAPI_2]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Gateway Usage_1]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Key FastAPI Features Used]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Key Features Used]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Key Test Command]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Purpose_71]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Purpose_72]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Purpose_73]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Purpose_74]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Related Notes_21]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Related Notes_22]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Related Notes_23]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Related Notes_24]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Script Usage]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Security Note]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Trivy_1]] - document - docs/vault/05 - Dependencies/trivy.md
-- [[Where Used_4]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[Where Used_5]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[ci-workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[clamav_1]] - document - docs/vault/05 - Dependencies/clamav.md
-- [[fastapi_1]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[httpx_1]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[httpx]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[pydantic_1]] - document - docs/vault/05 - Dependencies/pydantic.md
-- [[pytest.ini_1]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[trivy]] - document - docs/vault/05 - Dependencies/trivy.md
+- [[dot-__init__()_175]] - code - gateway/security/egress_filter.py
+- [[dot-_matches_any_pattern()]] - code - gateway/security/egress_config.py
+- [[dot-flush_notifications()]] - code - gateway/security/egress_filter.py
+- [[dot-get_effective_allowlist()]] - code - gateway/security/egress_config.py
+- [[dot-grant_timed_approval()]] - code - gateway/security/egress_filter.py
+- [[dot-is_denylisted()]] - code - gateway/security/egress_config.py
+- [[dot-set_approval_queue()]] - code - gateway/security/egress_filter.py
+- [[dot-set_event_bus()]] - code - gateway/security/egress_filter.py
+- [[dot-set_notifier()]] - code - gateway/security/egress_filter.py
+- [[dot-setup_method()_29]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_config_roundtrip()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_deny_all_false()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_denylist_monitor_mode()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_denylist_overrides_allowlist()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_enforce_mode_blocks_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_invalid_mode_handling()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_logging_differences_by_mode()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_monitor_mode_allows_unknown_domains()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_per_agent_policy()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_port_filtering()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_private_ip_blocking()]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_url_parsing()_1]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_wildcard_allowlist_matching()]] - code - gateway/tests/test_egress_enforce.py
+- [[AgentShroud Management Dashboard routes. All manage routes require…]] - rationale - gateway/web/management.py
+- [[BaseModel_9]] - code
+- [[Check if a domain matches the denylist.]] - rationale - gateway/security/egress_config.py
+- [[Check if domain matches any pattern in the list (supports wildcards).]] - rationale - gateway/security/egress_config.py
+- [[Configuration for egress filtering enforcement.]] - rationale - gateway/security/egress_config.py
+- [[EgressAllowlistResponse]] - code - gateway/web/management.py
+- [[EgressAllowlistUpdate]] - code - gateway/web/management.py
+- [[EgressFilter]] - code - gateway/security/egress_filter.py
+- [[EgressFilterConfig]] - code - gateway/security/egress_config.py
+- [[Falco runtime security alerts viewer.]] - rationale - gateway/web/management.py
+- [[Filter outbound connections based on allowlists with enforcemonitor modes.]] - rationale - gateway/security/egress_filter.py
+- [[GENERATED FILE — do not hand-edit. Feed-source hostnames derived from…]] - rationale - gateway/security/feed_hosts.py
+- [[Get current egress allowlist configuration.]] - rationale - gateway/web/management.py
+- [[Get the effective allowlist for a specific agent.]] - rationale - gateway/security/egress_config.py
+- [[Get the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
+- [[Record a time-limited interactive approval for a domain. Called by the Telegram…]] - rationale - gateway/security/egress_filter.py
+- [[Request model for updating egress allowlist.]] - rationale - gateway/web/management.py
+- [[Response model for egress allowlist.]] - rationale - gateway/web/management.py
+- [[Security tools overview — links to all tool-specific dashboards.]] - rationale - gateway/web/management.py
+- [[Send pending egress notifications via Telegram. Called from request handler.…]] - rationale - gateway/security/egress_filter.py
+- [[Serve the SSH hosts page.]] - rationale - gateway/web/management.py
+- [[Serve the approval queue page.]] - rationale - gateway/web/management.py
+- [[Serve the audit log page.]] - rationale - gateway/web/management.py
+- [[Serve the collaborators page (dynamic — fetches live activity data).]] - rationale - gateway/web/management.py
+- [[Serve the emergency kill switch page.]] - rationale - gateway/web/management.py
+- [[Serve the main dashboard page.]] - rationale - gateway/web/management.py
+- [[Serve the main management dashboard.]] - rationale - gateway/web/management.py
+- [[Serve the security modules page (dynamic — fetches live data).]] - rationale - gateway/web/management.py
+- [[Set interactive egress approval queue.]] - rationale - gateway/security/egress_filter.py
+- [[Set optional event bus for real-time egress telemetry.]] - rationale - gateway/security/egress_filter.py
+- [[Set the Telegram notifier for egress approval requests.]] - rationale - gateway/security/egress_filter.py
+- [[Set the global egress filter configuration.]] - rationale - gateway/security/egress_config.py
+- [[Test EgressFilter with enforcemonitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test URL parsing for domains and ports.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test denylist behavior in monitor mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test handling of invalid modes.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test port-based filtering.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that config can be saved and retrieved.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that denylist overrides allowlist in strict mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that enforce mode blocks domains not in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that logging differs between enforce and monitor modes.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that monitor mode allows unknown domains but logs them.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test that private IPs are blocked regardless of mode.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test the management API endpoints (would need FastAPI test client).]] - rationale - gateway/tests/test_egress_enforce.py
+- [[Test wildcard matching in allowlist.]] - rationale - gateway/tests/test_egress_enforce.py
+- [[TestEgressFilterEnforcement]] - code - gateway/tests/test_egress_enforce.py
+- [[TestEgressManagementAPI]] - code - gateway/tests/test_egress_enforce.py
+- [[Update egress allowlist configuration (owner only).]] - rationale - gateway/web/management.py
+- [[Wazuh HIDS alerts and FIM events viewer.]] - rationale - gateway/web/management.py
+- [[approvals()]] - code - gateway/web/management.py
+- [[audit()_1]] - code - gateway/web/management.py
+- [[collaborators()]] - code - gateway/web/management.py
+- [[dashboard()]] - code - gateway/web/management.py
+- [[dashboard_main()]] - code - gateway/web/management.py
+- [[egress_config.py_2]] - code - gateway/security/egress_config.py
+- [[egress_filter()]] - code - gateway/tests/test_e2e_proxy.py
+- [[egress_filter()_1]] - code - gateway/tests/test_security_integration.py
+- [[egress_filter.py_2]] - code - gateway/security/egress_filter.py
+- [[falco_dashboard()]] - code - gateway/web/management.py
+- [[feed_hosts.py]] - code - gateway/security/feed_hosts.py
+- [[get_3]] - code
+- [[get_egress_allowlist()]] - code - gateway/web/management.py
+- [[get_egress_config()]] - code - gateway/security/egress_config.py
+- [[killswitch()_1]] - code - gateway/web/management.py
+- [[management.py]] - code - gateway/web/management.py
+- [[modules()]] - code - gateway/web/management.py
+- [[put_2]] - code
+- [[security_overview()]] - code - gateway/web/management.py
+- [[set_egress_config()]] - code - gateway/security/egress_config.py
+- [[ssh()]] - code - gateway/web/management.py
+- [[test_egress_enforce.py]] - code - gateway/tests/test_egress_enforce.py
+- [[update_egress_allowlist()]] - code - gateway/web/management.py
+- [[wazuh_dashboard()]] - code - gateway/web/management.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,22 +113,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_OpenClaw cron AgentShroud Daily Check-in (disabled, calls agentshroud-ssh-exec.sh)]]
-- 2 edges to [[_COMMUNITY_ApprovalQueueConfig (7)]]
-- 1 edge to [[_COMMUNITY_Security Review (SEC)]]
-- 1 edge to [[_COMMUNITY_Phase 2 — Security Core (HMAC Auth + PII Sanitizer, HTTP CONNECT Proxy, Approval Queue)]]
-- 1 edge to [[_COMMUNITY_AgentShroud™ — Trademark Prior Use Record]]
-- 1 edge to [[_COMMUNITY_AgentTarget (2)]]
-- 1 edge to [[_COMMUNITY_dockerbotshermesrun-standalone.sh (docker run launcher for Hermes)]]
-- 1 edge to [[_COMMUNITY_Common Queries]]
-- 1 edge to [[_COMMUNITY_Skill MCP Auth Reset (MCPM-AUTH-RESET) (3)]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency()]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (4)]]
-- 1 edge to [[_COMMUNITY_AuditExporter (2)_1]]
+- 29 edges to [[_COMMUNITY_EgressPolicy]]
+- 13 edges to [[_COMMUNITY_dot-_check_impl]]
+- 11 edges to [[_COMMUNITY_asyncio_5]]
+- 8 edges to [[_COMMUNITY_TestEgressFilterConfig]]
+- 7 edges to [[_COMMUNITY_KeyRotationManager]]
+- 6 edges to [[_COMMUNITY_TestEgressFilter]]
+- 6 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 6 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 6 edges to [[_COMMUNITY_test_security_integration.py]]
+- 5 edges to [[_COMMUNITY_test_module_stats.py]]
+- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 4 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 4 edges to [[_COMMUNITY__make_filter]]
+- 4 edges to [[_COMMUNITY_middleware.py]]
+- 4 edges to [[_COMMUNITY_WebProxy]]
+- 4 edges to [[_COMMUNITY_DraftEntry]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_TestEgressSSRF]]
+- 2 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
-- [[All Dependencies]] - degree 14, connects to 5 communities
-- [[clamav_1]] - degree 6, connects to 3 communities
-- [[fastapi_1]] - degree 4, connects to 1 community
-- [[pytest.ini_1]] - degree 3, connects to 1 community
-- [[openscap]] - degree 3, connects to 1 community
+- [[EgressFilter]] - degree 75, connects to 19 communities
+- [[egress_filter.py_2]] - degree 22, connects to 13 communities
+- [[EgressFilterConfig]] - degree 65, connects to 10 communities
+- [[egress_config.py_2]] - degree 16, connects to 8 communities
+- [[management.py]] - degree 30, connects to 6 communities

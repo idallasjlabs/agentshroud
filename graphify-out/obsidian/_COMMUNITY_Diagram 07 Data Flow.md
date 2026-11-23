@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Diagram 07: Data Flow
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Self-Written Whisper Domain-Hint Prompt]] - concept - docker/config/openclaw/skills/graphify/references/transcribe.md
+- [[Diagram 07 Data Flow]] - image - docs/diagrams/images/diagram-07-data-flow.svg
 
 ## Live Query (requires Dataview plugin)
 

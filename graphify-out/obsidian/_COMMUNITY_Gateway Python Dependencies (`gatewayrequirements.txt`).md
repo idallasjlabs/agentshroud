@@ -1,32 +1,30 @@
 ---
 type: community
-cohesion: 0.12
 members: 17
 ---
 
 # Gateway Python Dependencies (`gateway/requirements.txt`)
 
-**Cohesion:** 0.12 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[dot-client()_5]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_health_endpoint_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_no_500_on_empty_requests()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_openapi_schema_is_valid()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_openapi_snapshot_matches_live_schema()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_protected_endpoints_reject_unauthenticated()]] - code - gateway/tests/test_api_contract.py
-- [[dot-test_version_consistency()]] - code - gateway/tests/test_api_contract.py
-- [[API endpoints should not return 500 on malformedempty requests.]] - rationale - gateway/tests/test_api_contract.py
-- [[API version in OpenAPI schema matches gateway package version.]] - rationale - gateway/tests/test_api_contract.py
-- [[Create a FastAPI test client.]] - rationale - gateway/tests/test_api_contract.py
-- [[Healthstatus endpoint must be accessible without authentication.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema and version consistency tests.]] - rationale - gateway/tests/test_api_contract.py
-- [[OpenAPI schema endpoint returns valid JSON schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
-- [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
-- [[The committed gatewayopenapi.json snapshot must match the live schema.]] - rationale - gateway/tests/test_api_contract.py
-- [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
+- [[All Dependencies_1]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[All Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Authentication]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Bot  Docker Container Dependencies]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Configuration_3]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Core Framework]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Data Storage]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Dependency Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Gateway Python Dependencies (`gatewayrequirements.txt`)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Installed from External Sources]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Networking]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Node.js Packages (installed globally)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[PII Detection]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Related Notes]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[System Packages (apt)]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Testing]] - document - docs/vault/05 - Dependencies/All Dependencies.md
+- [[Utilities]] - document - docs/vault/05 - Dependencies/All Dependencies.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,3 +32,9 @@ members: 17
 TABLE source_file, type FROM #community/Gateway_Python_Dependencies_gateway/requirementstxt
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_Architecture Overview]]
+
+## Top bridge nodes
+- [[All Dependencies]] - degree 2, connects to 1 community

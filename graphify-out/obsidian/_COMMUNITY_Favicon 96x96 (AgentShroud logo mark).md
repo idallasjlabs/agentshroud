@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Favicon 96x96 (AgentShroud logo mark)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[EnhancedApprovalQueue.broadcast (SCRUM-154 bounded)]] - code - gateway/approval_queue/enhanced_queue.py
+- [[Favicon 96x96 (AgentShroud logo mark)]] - image - branding/favicons/favicon-96x96.png
 
 ## Live Query (requires Dataview plugin)
 

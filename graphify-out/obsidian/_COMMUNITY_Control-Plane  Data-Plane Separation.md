@@ -1,17 +1,15 @@
 ---
 type: community
-cohesion: 1.00
 members: 2
 ---
 
 # Control-Plane / Data-Plane Separation
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 2 nodes
 
 ## Members
-- [[dot-agentsskillsi-observabilitySKILL]] - document - .agents/skills/i-observability/SKILL.md
-- [[Skill observability]] - document - .agents/skills/i-observability/SKILL.md
+- [[Control-Plane  Data-Plane Separation]] - rationale - docs/planning/HEXSTRIKE_PROXY_PLAN.md
+- [[HexStrike MCP Proxy Plan]] - document - docs/planning/HEXSTRIKE_PROXY_PLAN.md
 
 ## Live Query (requires Dataview plugin)
 

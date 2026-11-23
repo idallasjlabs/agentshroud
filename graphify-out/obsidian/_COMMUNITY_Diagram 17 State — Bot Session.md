@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Diagram 17: State — Bot Session
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Cumulative Token Cost Tracker]] - concept - docker/config/openclaw/skills/graphify/SKILL.md
+- [[Diagram 17 State — Bot Session]] - image - docs/diagrams/images/diagram-17-state-bot-session.svg
 
 ## Live Query (requires Dataview plugin)
 

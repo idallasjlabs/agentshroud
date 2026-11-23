@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Feature Request Issue Template
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Security Integration — Full Pipeline Tests]] - code - gateway/tests/test_security_integration.py
+- [[Feature Request Issue Template]] - document - .github/ISSUE_TEMPLATE/feature_request.yml
 
 ## Live Query (requires Dataview plugin)
 

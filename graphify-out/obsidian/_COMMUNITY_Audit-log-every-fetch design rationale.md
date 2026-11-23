@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Audit-log-every-fetch design rationale
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[CVE Triage Report Cron Prompt]] - document - docker/config/openclaw/cron/prompts/cve-triage-report.txt
+- [[Audit-log-every-fetch design rationale]] - rationale - docker/config/openclaw/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)
 

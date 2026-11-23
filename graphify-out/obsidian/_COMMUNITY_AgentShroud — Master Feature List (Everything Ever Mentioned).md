@@ -1,32 +1,30 @@
 ---
 type: community
-cohesion: 0.14
 members: 17
 ---
 
 # AgentShroud — Master Feature List (Everything Ever Mentioned)
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 17 nodes
 
 ## Members
-- [[dot-_format_alert_message()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_is_duplicate()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_is_rate_limited()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_log_alert()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-_send_notification()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-dispatch()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-get_digest()]] - code - gateway/security/alert_dispatcher.py
-- [[dot-get_stats()_16]] - code - gateway/security/alert_dispatcher.py
-- [[Any_62]] - code - gateway/security/alert_dispatcher.py
-- [[Append alert to JSONL log file.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Check if alert was already seen within dedup window.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Check if we've exceeded the rate limit.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Dispatch an alert based on severity.          Args             alert Alert dic]] - rationale - gateway/security/alert_dispatcher.py
-- [[Format alert as human-readable message.]] - rationale - gateway/security/alert_dispatcher.py
-- [[Get buffered alerts for daily digest.          Args             clear Clear bu]] - rationale - gateway/security/alert_dispatcher.py
-- [[Get dispatcher statistics.]] - rationale - gateway/security/alert_dispatcher.py
-- [[POST alert to apialerts with bounded retry + backoff.          Returns True on]] - rationale - gateway/security/alert_dispatcher.py
+- [[A. One-Click Install & Updates]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Shared Tasks]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud Tasks (all overdue, added to v0.8.0)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Apple Reminders — Items Recovered]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[B. Professional Branded Web Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[C. TextCLI Command Center]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Collaborators_2]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[D. SSH Chat Interface]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[E. Full Documentation]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[F. Final Hardening + Release]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[G. Trademark  IP]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Infrastructure_10]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[MASTER-FEATURE-LIST]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[Summary_38]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[v1.0.0 — Fortress (Polish + Public Release)]] - document - docs/planning/MASTER-FEATURE-LIST.md
+- [[⚠️ STATUS UPDATE — 2026-07-09 (read before the per-item marks below)]] - document - docs/planning/MASTER-FEATURE-LIST.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -36,11 +34,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_v0.8.0 — Watchtower (Complete Security + Everything We Know Today)]]
+- 1 edge to [[_COMMUNITY_v0.9.0 — Sentinel (Blue Team Remediation + Data Isolation + SOC)]]
+- 1 edge to [[_COMMUNITY_Post-v1.0.0 — Deferred]]
 
 ## Top bridge nodes
-- [[dot-dispatch()]] - degree 7, connects to 1 community
-- [[dot-_send_notification()]] - degree 5, connects to 1 community
-- [[dot-_format_alert_message()]] - degree 4, connects to 1 community
-- [[dot-_log_alert()]] - degree 4, connects to 1 community
-- [[dot-get_digest()]] - degree 3, connects to 1 community
+- [[AgentShroud — Master Feature List (Everything Ever Mentioned)]] - degree 10, connects to 3 communities
