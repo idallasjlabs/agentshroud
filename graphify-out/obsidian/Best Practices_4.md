@@ -1,12 +1,12 @@
 ---
-source_file: ".cursor/agents/browser.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 473"
-location: "L229"
+community: "Browser — Secure Browser Automation"
+location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_473
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Best Practices
@@ -17,6 +17,6 @@ tags:
 - [[3. Take Screenshots for Audit Trail_2]] - `contains` [EXTRACTED]
 - [[4. Handle CAPTCHAs Gracefully_2]] - `contains` [EXTRACTED]
 - [[5. Never Extract Credentials_2]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_3]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_473
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/07 - Errors & Troubleshooting/Startup Errors.md"
 type: "document"
-community: "Community 740"
+community: "Gateway Container Startup Failures"
 location: "L112"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_740
+  - community/Gateway_Container_Startup_Failures
 ---
 
 # Bot Container Startup Failures
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Bot Exits Before Gateway Is Healthy]] - `contains` [EXTRACTED]
 - [[OpenClaw Not Starting]] - `contains` [EXTRACTED]
-- [[Startup Errors_2]] - `contains` [EXTRACTED]
+- [[Startup Errors_1]] - `contains` [EXTRACTED]
 - [[`Could not load Claude OAuth token after retries`]] - `contains` [EXTRACTED]
 - [[`startup Warning Gateway password file not found`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_740
+#graphify/document #graphify/EXTRACTED #community/Gateway_Container_Startup_Failures

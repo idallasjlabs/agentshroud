@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Community 435"
+community: "PIIConfig"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/PIIConfig
 ---
 
 # Bare 10-digit Telegram UID must pass through unchanged — no <PHONE_NUMBER>.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_uid_not_redacted_as_phone()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_435
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

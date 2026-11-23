@@ -1,20 +1,22 @@
 ---
-source_file: ".agents/agents/i-mcpm-aws-profile.md"
+source_file: "skills/custom/securebrowser/SKILL.md"
 type: "document"
-community: "Community 171"
-location: "L299"
+community: "SecureBrowser - Enterprise Secure Browser Automation"
+location: "L222"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_171
+  - community/SecureBrowser_-_Enterprise_Secure_Browser_Automation
 ---
 
 # Best Practices
 
 ## Connections
-- [[MCP-Specific]] - `contains` [EXTRACTED]
-- [[Organization]] - `contains` [EXTRACTED]
-- [[Security]] - `contains` [EXTRACTED]
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
+- [[1. Always Specify Risk Level]] - `contains` [EXTRACTED]
+- [[2. Use Allowlisting Liberally]] - `contains` [EXTRACTED]
+- [[3. Take Screenshots for Audit Trail]] - `contains` [EXTRACTED]
+- [[4. Handle CAPTCHAs Gracefully]] - `contains` [EXTRACTED]
+- [[5. Never Extract Credentials]] - `contains` [EXTRACTED]
+- [[SecureBrowser - Enterprise Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_171
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_-_Enterprise_Secure_Browser_Automation

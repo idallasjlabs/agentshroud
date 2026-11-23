@@ -1,21 +1,17 @@
 ---
-source_file: "branding/guidelines/brand-guidelines.md"
+source_file: "BRAND.md"
 type: "document"
-community: "Community 231"
+community: "AgentShroud™ Brand Guidelines"
 location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Brand Identity
 
 ## Connections
-- [[AgentShroud Brand Guidelines_1]] - `contains` [EXTRACTED]
-- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
-- [[Mission]] - `contains` [EXTRACTED]
-- [[Values]] - `contains` [EXTRACTED]
-- [[Vision]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

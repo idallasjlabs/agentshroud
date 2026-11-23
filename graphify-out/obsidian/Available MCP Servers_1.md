@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "Community 1085"
-location: "L12"
+community: "Available MCP Servers"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1085
+  - community/Available_MCP_Servers
 ---
 
 # Available MCP Servers
@@ -15,6 +15,6 @@ tags:
 - [[1. GitHub MCP_1]] - `contains` [EXTRACTED]
 - [[2. Atlassian MCP (Jira + Confluence)_1]] - `contains` [EXTRACTED]
 - [[3. AWS API MCP_1]] - `contains` [EXTRACTED]
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1085
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

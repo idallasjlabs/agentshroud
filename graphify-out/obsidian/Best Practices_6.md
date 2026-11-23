@@ -1,22 +1,20 @@
 ---
-source_file: ".github/agents/i-browser.agent.md"
+source_file: ".agents/agents/i-mcpm-aws-profile.md"
 type: "document"
-community: "Community 449"
-location: "L232"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
+location: "L299"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_449
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Best Practices
 
 ## Connections
-- [[1. Always Specify Risk Level_3]] - `contains` [EXTRACTED]
-- [[2. Use Allowlisting Liberally_3]] - `contains` [EXTRACTED]
-- [[3. Take Screenshots for Audit Trail_3]] - `contains` [EXTRACTED]
-- [[4. Handle CAPTCHAs Gracefully_3]] - `contains` [EXTRACTED]
-- [[5. Never Extract Credentials_3]] - `contains` [EXTRACTED]
-- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[MCP-Specific_2]] - `contains` [EXTRACTED]
+- [[Organization_2]] - `contains` [EXTRACTED]
+- [[Security_18]] - `contains` [EXTRACTED]
+- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_449
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

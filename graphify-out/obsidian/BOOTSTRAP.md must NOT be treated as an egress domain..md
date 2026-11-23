@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 353"
+community: "._extract_first_egress_target"
 location: "L4107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_353
+  - community/_extract_first_egress_target
 ---
 
 # BOOTSTRAP.md must NOT be treated as an egress domain.
 
 ## Connections
-- [[.test_extract_first_egress_target_skips_md_filenames()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_extract_first_egress_target_skips_md_filenames()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_353
+#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target

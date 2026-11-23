@@ -1,17 +1,17 @@
 ---
 source_file: "branding/guidelines/brand-guidelines.md"
 type: "document"
-community: "Community 231"
+community: "Logo Usage"
 location: "L60"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_231
+  - community/Logo_Usage
 ---
 
 # Backgrounds
 
 ## Connections
-- [[Logo Usage_2]] - `contains` [EXTRACTED]
+- [[Logo Usage_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_231
+#graphify/document #graphify/EXTRACTED #community/Logo_Usage

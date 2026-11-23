@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "Community 65"
+community: "test_security_regressions_v1_2.py"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_65
+  - community/test_security_regressions_v1_2py
 ---
 
 # BT-H4 (reverse): Writing to Hermes workspace does not bleed into OpenClaw.
 
 ## Connections
-- [[.test_hermes_memory_write_does_not_appear_in_openclaw_memory()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_hermes_memory_write_does_not_appear_in_openclaw_memory()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_65
+#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py

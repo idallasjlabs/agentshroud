@@ -1,21 +1,21 @@
 ---
-source_file: ".cursor/agents/athena.md"
+source_file: ".github/agents/i-athena.agent.md"
 type: "document"
-community: "Community 1652"
-location: "L8"
+community: "Athena — Knowledge Distiller"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1652
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_21]] - `contains` [EXTRACTED]
-- [[Output Format_29]] - `contains` [EXTRACTED]
-- [[Persona_16]] - `contains` [EXTRACTED]
-- [[Role_77]] - `contains` [EXTRACTED]
-- [[athena_1]] - `contains` [EXTRACTED]
+- [[Input Requirements_13]] - `contains` [EXTRACTED]
+- [[Output Format_27]] - `contains` [EXTRACTED]
+- [[Persona_7]] - `contains` [EXTRACTED]
+- [[Role_54]] - `contains` [EXTRACTED]
+- [[i-athena.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1652
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

@@ -1,22 +1,22 @@
 ---
 source_file: "skills/openclaw/bear-notes/SKILL.md"
 type: "document"
-community: "Community 860"
+community: "Bear Notes"
 location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_860
+  - community/Bear_Notes
 ---
 
 # Bear Notes
 
 ## Connections
-- [[Common Commands_1]] - `contains` [EXTRACTED]
-- [[Configuration_26]] - `contains` [EXTRACTED]
+- [[Common Commands_2]] - `contains` [EXTRACTED]
+- [[Configuration_25]] - `contains` [EXTRACTED]
 - [[Getting a Bear Token]] - `contains` [EXTRACTED]
-- [[Notes_3]] - `contains` [EXTRACTED]
+- [[Notes_10]] - `contains` [EXTRACTED]
 - [[Options]] - `contains` [EXTRACTED]
-- [[SKILL_207]] - `contains` [EXTRACTED]
+- [[bear-notesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_860
+#graphify/document #graphify/EXTRACTED #community/Bear_Notes

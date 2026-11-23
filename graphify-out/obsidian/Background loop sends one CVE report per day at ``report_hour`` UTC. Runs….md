@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/daily_cve_report.py"
 type: "rationale"
-community: "sync-cve-registry.py"
+community: "daily_cve_report.py"
 location: "L402"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/daily_cve_reportpy
 ---
 
 # Background loop: sends one CVE report per day at ``report_hour`` UTC. Runs…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[cve_report_scheduler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/rationale #graphify/EXTRACTED #community/daily_cve_reportpy

@@ -1,20 +1,20 @@
 ---
 source_file: ".agents/skills/browser/README.md"
 type: "document"
-community: "Community 2067"
+community: "Browser — Secure Browser Automation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2067
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_4]] - `contains` [EXTRACTED]
-- [[README_4]] - `contains` [EXTRACTED]
-- [[Related Skills_7]] - `contains` [EXTRACTED]
-- [[Usage_7]] - `contains` [EXTRACTED]
+- [[Purpose_97]] - `contains` [EXTRACTED]
+- [[Related Skills_27]] - `contains` [EXTRACTED]
+- [[Usage_37]] - `contains` [EXTRACTED]
+- [[browserREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2067
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

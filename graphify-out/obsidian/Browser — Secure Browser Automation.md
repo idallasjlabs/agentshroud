@@ -1,29 +1,20 @@
 ---
-source_file: ".agents/agents/browser.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Community 432"
-location: "L8"
+community: "Browser — Secure Browser Automation"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_432
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Approval Integration]] - `contains` [EXTRACTED]
-- [[Audit Logging]] - `contains` [EXTRACTED]
-- [[Best Practices]] - `contains` [EXTRACTED]
-- [[Core Security Principles]] - `contains` [EXTRACTED]
-- [[Example Apple ID Creation (Semi-Automated)]] - `contains` [EXTRACTED]
-- [[Limitations]] - `contains` [EXTRACTED]
-- [[Risk Levels]] - `contains` [EXTRACTED]
-- [[Security Architecture]] - `contains` [EXTRACTED]
-- [[Security Configuration]] - `contains` [EXTRACTED]
-- [[Security Guarantees]] - `contains` [EXTRACTED]
-- [[Troubleshooting]] - `contains` [EXTRACTED]
-- [[Usage]] - `contains` [EXTRACTED]
-- [[browser]] - `contains` [EXTRACTED]
+- [[Purpose_40]] - `contains` [EXTRACTED]
+- [[Related Skills_6]] - `contains` [EXTRACTED]
+- [[Usage_7]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_432
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

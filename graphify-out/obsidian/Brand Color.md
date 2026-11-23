@@ -1,12 +1,12 @@
 ---
 source_file: "branding/INDEX.md"
 type: "document"
-community: "Community 585"
+community: "🎨 Quick Access"
 location: "L76"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_585
+  - community/_Quick_Access
 ---
 
 # Brand Color
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🎨 Quick Access]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_585
+#graphify/document #graphify/EXTRACTED #community/_Quick_Access

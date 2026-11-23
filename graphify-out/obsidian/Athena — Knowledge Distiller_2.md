@@ -1,21 +1,21 @@
 ---
-source_file: ".agents/skills/athena/SKILL.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 1568"
-location: "L6"
+community: "Athena — Knowledge Distiller"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1568
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Athena — Knowledge Distiller
 
 ## Connections
-- [[Input Requirements_11]] - `contains` [EXTRACTED]
-- [[Output Format_14]] - `contains` [EXTRACTED]
-- [[Persona_8]] - `contains` [EXTRACTED]
-- [[Role_40]] - `contains` [EXTRACTED]
-- [[SKILL_1]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsathena]] - `contains` [EXTRACTED]
+- [[Input Requirements_12]] - `contains` [EXTRACTED]
+- [[Output Format_26]] - `contains` [EXTRACTED]
+- [[Persona_6]] - `contains` [EXTRACTED]
+- [[Role_53]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1568
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

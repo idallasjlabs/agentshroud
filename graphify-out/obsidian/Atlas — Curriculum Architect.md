@@ -1,26 +1,26 @@
 ---
-source_file: ".agents/agents/atlas.md"
+source_file: ".github/agents/i-atlas.agent.md"
 type: "document"
-community: "Community 1138"
-location: "L8"
+community: "Atlas — Curriculum Architect"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1138
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Input Requirements_2]] - `contains` [EXTRACTED]
+- [[Input Requirements]] - `contains` [EXTRACTED]
 - [[OKE Channel — CPA Exam Context]] - `contains` [EXTRACTED]
-- [[Output Format_1]] - `contains` [EXTRACTED]
-- [[Persona_1]] - `contains` [EXTRACTED]
-- [[Quality Checklist_2]] - `contains` [EXTRACTED]
-- [[Role_5]] - `contains` [EXTRACTED]
-- [[System Prompt_1]] - `contains` [EXTRACTED]
-- [[User Prompt Template_1]] - `contains` [EXTRACTED]
+- [[Output Format]] - `contains` [EXTRACTED]
+- [[Persona]] - `contains` [EXTRACTED]
+- [[Quality Checklist]] - `contains` [EXTRACTED]
+- [[Role_1]] - `contains` [EXTRACTED]
+- [[System Prompt]] - `contains` [EXTRACTED]
+- [[User Prompt Template]] - `contains` [EXTRACTED]
 - [[User Prompt Template — OKE Channel]] - `contains` [EXTRACTED]
-- [[atlas]] - `contains` [EXTRACTED]
+- [[i-atlas.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1138
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

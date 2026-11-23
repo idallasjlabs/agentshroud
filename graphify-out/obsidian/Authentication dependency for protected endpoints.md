@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 2154"
+community: "app"
 location: "L192"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/app
 ---
 
 # Authentication dependency for protected endpoints
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2154
+#graphify/rationale #graphify/EXTRACTED #community/app

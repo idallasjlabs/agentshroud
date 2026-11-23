@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: ""
 type: "code"
-community: "Community 1787"
-location: "L936"
+community: "telegram_egress_notify.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1787
+  - community/telegram_egress_notifypy
 ---
 
 # BaseException
 
 ## Connections
-- [[._is_connect_error()]] - `references` [EXTRACTED]
-- [[._local_backend_unavailable_response()]] - `references` [EXTRACTED]
+- [[_err_text()]] - `references` [EXTRACTED]
+- [[_is_stale_callback_error()]] - `references` [EXTRACTED]
+- [[_is_stale_edit_error()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1787
+#graphify/code #graphify/EXTRACTED #community/telegram_egress_notifypy

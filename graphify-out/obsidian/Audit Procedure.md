@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/sec-defense.md"
 type: "document"
-community: "Community 1279"
+community: "AgentShroud Blue Team Security Auditor"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1279
+  - community/AgentShroud_Blue_Team_Security_Auditor
 ---
 
 # Audit Procedure
@@ -19,4 +19,4 @@ tags:
 - [[Phase 4 Configuration Audit]] - `contains` [EXTRACTED]
 - [[Phase 5 Steve Hay's Specific Probes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1279
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Blue_Team_Security_Auditor

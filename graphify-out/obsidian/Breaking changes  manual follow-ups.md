@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-20260906-0808.md"
+source_file: "reports/upgrade-2026-09-25.md"
 type: "document"
-community: "Community 862"
-location: "L156"
+community: "Final report"
+location: "L386"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_862
+  - community/Final_report
 ---
 
 # Breaking changes / manual follow-ups
 
 ## Connections
-- [[AgentShroud Weekly Upgrade — 2026-09-06]] - `contains` [EXTRACTED]
+- [[Final report]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_862
+#graphify/document #graphify/EXTRACTED #community/Final_report

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/All Dependencies.md"
 type: "document"
-community: "Community 579"
+community: "Gateway Python Dependencies (`gateway/requirements.txt`)"
 location: "L72"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_579
+  - community/Gateway_Python_Dependencies_gateway/requirementstxt
 ---
 
 # Bot / Docker Container Dependencies
@@ -17,4 +17,4 @@ tags:
 - [[Node.js Packages (installed globally)]] - `contains` [EXTRACTED]
 - [[System Packages (apt)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_579
+#graphify/document #graphify/EXTRACTED #community/Gateway_Python_Dependencies_gateway/requirementstxt
