@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "EncryptedStore"
 location: "L704"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/EncryptedStore
 ---
 
 # .test_ciphertext_not_plaintext()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

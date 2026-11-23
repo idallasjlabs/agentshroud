@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "test_soc_bots.py"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/test_soc_botspy
 ---
 
 # .test_bot_id_augments_result_with_image_scan()
@@ -16,6 +16,7 @@ tags:
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_bot_config()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[get_scanner_results()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

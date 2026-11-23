@@ -12,7 +12,8 @@ tags:
 # .test_chain_includes_blocked()
 
 ## Connections
-- [[MCPToolCall_1]] - `calls` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestHashChainIntegration]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "scanner_integration.py"
+community: "TestWebProxySecurityIntegration"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .test_browser_security_skips_non_browser_user_agents()
@@ -17,4 +17,4 @@ tags:
 - [[Test that browser security checks are skipped for non-browser user agents.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

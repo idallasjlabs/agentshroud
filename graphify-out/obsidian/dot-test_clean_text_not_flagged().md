@@ -12,6 +12,7 @@ tags:
 # .test_clean_text_not_flagged()
 
 ## Connections
+- [[dot-contains_private_content()]] - `calls` [EXTRACTED]
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

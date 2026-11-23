@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "ClassificationResult"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/ClassificationResult
 ---
 
 # .test_classification_result_properties()
@@ -15,4 +15,4 @@ tags:
 - [[ClassificationResult]] - `calls` [EXTRACTED]
 - [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/ClassificationResult

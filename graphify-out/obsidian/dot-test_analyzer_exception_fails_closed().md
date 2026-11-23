@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "_tool_req"
 location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_tool_req
 ---
 
 # .test_analyzer_exception_fails_closed()
@@ -15,4 +15,4 @@ tags:
 - [[TestToolChainAnalyzer]] - `method` [EXTRACTED]
 - [[_tool_req()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_tool_req

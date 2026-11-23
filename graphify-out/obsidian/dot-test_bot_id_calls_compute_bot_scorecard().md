@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "AlertDispatcher (2)"
+community: "test_soc_bots.py"
 location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_2
+  - community/test_soc_botspy
 ---
 
 # .test_bot_id_calls_compute_bot_scorecard()
@@ -15,6 +15,7 @@ tags:
 - [[TestScorecardBotId]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[get_security_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_2
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

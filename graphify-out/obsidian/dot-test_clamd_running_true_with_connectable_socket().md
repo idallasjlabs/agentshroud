@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "blogwatcher/SKILL.md"
+community: "TestSocketAndPidProbes"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/blogwatcher/SKILLmd
+  - community/TestSocketAndPidProbes
 ---
 
 # .test_clamd_running_true_with_connectable_socket()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSocketAndPidProbes]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/blogwatcher/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/TestSocketAndPidProbes

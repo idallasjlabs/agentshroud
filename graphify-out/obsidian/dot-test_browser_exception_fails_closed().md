@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "_req"
 location: "L546"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_req
 ---
 
 # .test_browser_exception_fails_closed()
@@ -15,4 +15,4 @@ tags:
 - [[TestBrowserSecurity]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_req

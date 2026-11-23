@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path"
+community: "_t"
 location: "L575"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_t
 ---
 
 # .test_apply_writes_registry_and_gap()
 
 ## Connections
-- [[TestMain]] - `method` [EXTRACTED]
+- [[TestMain_1]] - `method` [EXTRACTED]
 - [[_entry()]] - `calls` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_t

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "ForwardRequest"
+community: "TestParanoidConfig"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ForwardRequest
+  - community/TestParanoidConfig
 ---
 
 # .test_approval_queue_enabled()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRecommendedConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ForwardRequest
+#graphify/code #graphify/EXTRACTED #community/TestParanoidConfig

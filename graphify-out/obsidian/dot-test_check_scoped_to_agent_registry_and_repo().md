@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
 - [[_fake_check()]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 - [[check_upstream_cves(agent_id=...) selects that agent's OWN repo + list.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

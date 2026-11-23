@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AgentRegistry"
+community: "AsyncMock"
 location: "L601"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/AsyncMock
 ---
 
 # .test_attachments_scanned()
@@ -16,5 +16,8 @@ tags:
 - [[Legacy attachments are scanned for leaked content.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
+- [[asyncio_41]] - `references` [EXTRACTED]
+- [[scan()]] - `contains` [EXTRACTED]
+- [[scan()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

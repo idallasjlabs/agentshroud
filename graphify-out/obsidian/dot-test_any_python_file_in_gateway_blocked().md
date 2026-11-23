@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "._make_proxy()"
+community: "TestAgentShroudSourceCodeProtection"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestAgentShroudSourceCodeProtection
 ---
 
 # .test_any_python_file_in_gateway_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Any .py file in gateway directory should be blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestAgentShroudSourceCodeProtection

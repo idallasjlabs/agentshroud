@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "._make_proxy()"
+community: "ResourceGuard"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ResourceGuard
 ---
 
 # .test_check_memory_limit_returns_false_on_exception()
@@ -15,4 +15,4 @@ tags:
 - [[ResourceGuard]] - `calls` [EXTRACTED]
 - [[TestResourceGuardFailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

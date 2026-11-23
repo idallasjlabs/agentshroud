@@ -15,6 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[AuditChain]] - `calls` [EXTRACTED]
 - [[TestAuditChainBounded]] - `method` [EXTRACTED]
-- [[append_owner_bypass writes to the hash chain AND persists a HIGH         'owner_]] - `rationale_for` [EXTRACTED]
+- [[append_owner_bypass writes to the hash chain AND persists a HIGH 'owner_bypass'…]] - `rationale_for` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

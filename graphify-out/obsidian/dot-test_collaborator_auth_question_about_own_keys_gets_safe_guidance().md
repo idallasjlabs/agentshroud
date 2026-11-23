@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "fake_urlopen"
 location: "L3262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/fake_urlopen
 ---
 
 # .test_collaborator_auth_question_about_own_keys_gets_safe_guidance()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[fake_urlopen()_65]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_19]] - `indirect_call` [INFERRED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[fake_urlopen()_50]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/fake_urlopen

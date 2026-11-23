@@ -12,6 +12,6 @@ tags:
 # .test_audit_filterable_by_agent()
 
 ## Connections
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor
