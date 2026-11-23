@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/chat_console.py"
 type: "code"
-community: "Community 825"
+community: "chat_console.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_825
+  - community/chat_consolepy
 ---
 
 # check_status()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Check gateway and bot status]] - `rationale_for` [EXTRACTED]
 - [[chat_console.py]] - `contains` [EXTRACTED]
-- [[main()_37]] - `calls` [EXTRACTED]
+- [[main()_4]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_825
+#graphify/code #graphify/EXTRACTED #community/chat_consolepy

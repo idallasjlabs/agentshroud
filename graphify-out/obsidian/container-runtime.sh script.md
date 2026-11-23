@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/lib/container-runtime.sh"
 type: "code"
-community: "Community 295"
+community: "container-runtime.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_295
+  - community/container-runtimesh
 ---
 
 # container-runtime.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[container-runtime.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_295
+#graphify/code #graphify/EXTRACTED #community/container-runtimesh

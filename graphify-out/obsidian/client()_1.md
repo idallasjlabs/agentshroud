@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_api_contract_fuzz.py"
+source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Community 1067"
-location: "L144"
+community: "app"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1067
+  - community/app
 ---
 
 # client()
 
 ## Connections
-- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
+- [[Fully initialized async client with lifespan.]] - `rationale_for` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_2]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_e2e.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1067
+#graphify/code #graphify/EXTRACTED #community/app

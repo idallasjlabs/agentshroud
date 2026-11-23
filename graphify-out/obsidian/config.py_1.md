@@ -1,19 +1,25 @@
 ---
-source_file: "gateway/runtime/config.py"
-type: "code"
-community: "Community 225"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
+type: "document"
+community: "config.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/configpy
 ---
 
 # config.py
 
 ## Connections
-- [[RuntimeConfig]] - `contains` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
-- [[engine.py]] - `references` [EXTRACTED]
+- [[Configuration  Environment Variables_22]] - `contains` [EXTRACTED]
+- [[Environment Variables_10]] - `contains` [EXTRACTED]
+- [[Function Details_35]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_37]] - `contains` [EXTRACTED]
+- [[Purpose_55]] - `contains` [EXTRACTED]
+- [[Related_37]] - `contains` [EXTRACTED]
+- [[Responsibilities_37]] - `contains` [EXTRACTED]
+- [[Rootless Resolution Table]] - `contains` [EXTRACTED]
+- [[config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_225
+#graphify/document #graphify/EXTRACTED #community/configpy

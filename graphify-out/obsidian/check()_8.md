@@ -1,18 +1,18 @@
 ---
-source_file: "tests/startup_smoke/test_bot_boot_live.sh"
+source_file: "tests/startup_smoke/test_setup_secrets.sh"
 type: "code"
-community: "Community 1420"
-location: "L29"
+community: "test_setup_secrets.sh"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1420
+  - community/test_setup_secretssh
 ---
 
 # check()
 
 ## Connections
-- [[test_bot_boot_live.sh]] - `defines` [EXTRACTED]
-- [[test_bot_boot_live.sh script]] - `calls` [EXTRACTED]
+- [[test_setup_secrets.sh]] - `defines` [EXTRACTED]
+- [[test_setup_secrets.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1420
+#graphify/code #graphify/EXTRACTED #community/test_setup_secretssh

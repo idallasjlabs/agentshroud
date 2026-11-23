@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "code"
-community: "Community 2154"
-location: "L38"
+community: "test_chat_completions_alias.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/test_chat_completions_aliaspy
 ---
 
 # client()
 
 ## Connections
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_39]] - `references` [EXTRACTED]
+- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/test_chat_completions_aliaspy

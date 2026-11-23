@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L6636"
+community: "MCPToolCall"
+location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/MCPToolCall
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_consecutive_dot_domain_does_not_queue_egress_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_egress_denied_blocks_url_tool_call()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

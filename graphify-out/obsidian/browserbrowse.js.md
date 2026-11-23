@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/browser/browse.js"
 type: "code"
-community: "browser/browse.js (2)"
+community: "browser/browse.js"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/browsejs_2
+  - community/browser/browsejs
 ---
 
 # browser/browse.js
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[appendLog()]] - `contains` [EXTRACTED]
 - [[browserFetch()]] - `indirect_call` [INFERRED]
-- [[fs]] - `contains` [EXTRACTED]
-- [[path_4]] - `contains` [EXTRACTED]
+- [[fs_2]] - `contains` [EXTRACTED]
+- [[path_26]] - `contains` [EXTRACTED]
 - [[{ chromium }]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/browsejs_2
+#graphify/code #graphify/EXTRACTED #community/browser/browsejs

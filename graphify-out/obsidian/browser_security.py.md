@@ -1,26 +1,24 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Community 196"
+community: "BrowserSecurityGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_196
+  - community/BrowserSecurityGuard
 ---
 
 # browser_security.py
 
 ## Connections
+- [[Browser Security Module - Detects social engineering in web content. Provides…]] - `rationale_for` [EXTRACTED]
 - [[BrowserSecurityGuard]] - `contains` [EXTRACTED]
 - [[CredentialEntryBlocked]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
 - [[ThreatAssessment]] - `contains` [EXTRACTED]
-- [[ThreatLevel_1]] - `contains` [EXTRACTED]
-- [[Wu et al. 2026 (arXiv2601.07263) — Browser-based agent social engineering attacks]] - `cites` [EXTRACTED]
-- [[consent_framework.py]] - `references` [EXTRACTED]
-- [[session_security.py]] - `references` [EXTRACTED]
-- [[test_browser_security.py]] - `imports_from` [EXTRACTED]
-- [[web_proxy.py]] - `imports_from` [EXTRACTED]
+- [[ThreatLevel]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_196
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

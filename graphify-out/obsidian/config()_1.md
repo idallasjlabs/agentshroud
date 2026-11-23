@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 9"
-location: "L27"
+community: "test_mcp_proxy.py"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_9
+  - graphify/INFERRED
+  - community/test_mcp_proxypy
 ---
 
 # config()
 
 ## Connections
-- [[KillSwitchConfig]] - `calls` [EXTRACTED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[fixture_52]] - `references` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/INFERRED #community/test_mcp_proxypy

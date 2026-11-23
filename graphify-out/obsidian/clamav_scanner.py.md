@@ -1,28 +1,18 @@
 ---
-source_file: "gateway/security/clamav_scanner.py"
-type: "code"
-community: "Community 220"
+source_file: "docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md"
+type: "document"
+community: "clamav_scanner.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/clamav_scannerpy
 ---
 
-# clamav_scanner.py
+# clamav_scanner.py.md
 
 ## Connections
-- [[clamd_available()]] - `contains` [EXTRACTED]
-- [[generate_summary()]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
-- [[parse_clamscan_output()]] - `contains` [EXTRACTED]
-- [[preferred_scan_binary()]] - `contains` [EXTRACTED]
-- [[run_clamscan()]] - `contains` [EXTRACTED]
-- [[save_report()]] - `contains` [EXTRACTED]
-- [[scan_bytes()]] - `contains` [EXTRACTED]
-- [[test_clamav_pipeline.py]] - `imports_from` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[update_virus_db()]] - `contains` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[clamav_scanner.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/document #graphify/EXTRACTED #community/clamav_scannerpy

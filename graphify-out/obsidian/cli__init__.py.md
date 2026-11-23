@@ -1,14 +1,17 @@
 ---
 source_file: "gateway/cli/__init__.py"
 type: "code"
-community: "Newsletter: Chat Front-ends & Search Infra"
+community: "cli/__init__.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Newsletter_Chat_Front-ends__Search_Infra
+  - community/cli/__init__py
 ---
 
 # cli/__init__.py
 
-#graphify/code #graphify/EXTRACTED #community/Newsletter_Chat_Front-ends__Search_Infra
+## Connections
+- [[AgentShroud SOC CLI — agentshroud-soc command (Python implementation). Wraps…]] - `rationale_for` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/cli/__init__py

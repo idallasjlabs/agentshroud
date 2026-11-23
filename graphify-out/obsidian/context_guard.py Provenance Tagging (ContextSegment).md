@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "Community 1563"
+community: "Cross-Turn Correlation Capability"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1563
+  - community/Cross-Turn_Correlation_Capability
 ---
 
 # context_guard.py Provenance Tagging (ContextSegment)
@@ -14,4 +14,4 @@ tags:
 - [[Cross-Turn Correlation Capability]] - `implements` [EXTRACTED]
 - [[RovoBlast Attack (Atlassian Rovo AI)]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1563
+#graphify/code #graphify/EXTRACTED #community/Cross-Turn_Correlation_Capability

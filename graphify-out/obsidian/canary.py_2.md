@@ -1,27 +1,20 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
-type: "document"
-community: "Community 730"
-location: "L10"
+source_file: "gateway/security/canary.py"
+type: "code"
+community: "SecurityPipeline"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/SecurityPipeline
 ---
 
 # canary.py
 
 ## Connections
-- [[Canary Checks]] - `contains` [EXTRACTED]
-- [[Environment Variables_7]] - `contains` [EXTRACTED]
-- [[Function Details_29]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_2]] - `contains` [EXTRACTED]
-- [[Operational Notes_1]] - `contains` [EXTRACTED]
-- [[Purpose_150]] - `contains` [EXTRACTED]
-- [[Related_36]] - `contains` [EXTRACTED]
-- [[Responsibilities_34]] - `contains` [EXTRACTED]
-- [[Threat Model_5]] - `contains` [EXTRACTED]
-- [[canary.py_1]] - `contains` [EXTRACTED]
+- [[CanaryCheck]] - `contains` [EXTRACTED]
+- [[CanaryResult]] - `contains` [EXTRACTED]
+- [[run_canary()]] - `contains` [EXTRACTED]
+- [[test_canary.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

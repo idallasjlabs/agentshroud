@@ -1,24 +1,20 @@
 ---
-source_file: "gateway/tools/multi_host_test.py"
+source_file: "scripts/triage-cve-mitigations.py"
 type: "code"
-community: "Community 1072"
-location: "L117"
+community: "triage-cve-mitigations.py"
+location: "L777"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1072
+  - community/triage-cve-mitigationspy
 ---
 
 # classify()
 
 ## Connections
-- [[.test_255_is_unreachable()]] - `calls` [EXTRACTED]
-- [[.test_nonzero_is_fail()]] - `calls` [EXTRACTED]
-- [[.test_zero_is_pass()]] - `calls` [EXTRACTED]
-- [[HostStatus]] - `references` [EXTRACTED]
-- [[Map a runner exit code to a HostStatus.]] - `rationale_for` [EXTRACTED]
-- [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[run_multi_host()]] - `calls` [EXTRACTED]
-- [[test_multi_host_test.py]] - `imports` [EXTRACTED]
+- [[Classify an advisory into its vulnerability class from title+description.…]] - `rationale_for` [EXTRACTED]
+- [[VulnClass]] - `references` [EXTRACTED]
+- [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
+- [[triage_entry()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1072
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

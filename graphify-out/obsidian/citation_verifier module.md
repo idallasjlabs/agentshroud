@@ -1,17 +1,13 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "Community 125"
+community: "citation_verifier module"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_125
+  - community/citation_verifier_module
 ---
 
 # citation_verifier module
 
-## Connections
-- [[test_citation_verifier.py]] - `implements` [EXTRACTED]
-- [[test_intel_endpoint.py]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_125
+#graphify/code #graphify/EXTRACTED #community/citation_verifier_module

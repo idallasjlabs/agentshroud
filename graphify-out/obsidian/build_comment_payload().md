@@ -1,20 +1,20 @@
 ---
-source_file: "docker/config/hermes/workspace/jira_dev_ticket.py"
+source_file: "docker/config/hermes/workspace/jira_weekly_review.py"
 type: "code"
-community: "Community 148"
-location: "L150"
+community: "jira_weekly_review.py"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_148
+  - community/jira_weekly_reviewpy
 ---
 
 # build_comment_payload()
 
 ## Connections
-- [[Build the ADF (Atlassian Document Format) body for POST ...comment.]] - `rationale_for` [EXTRACTED]
-- [[_adf_doc()]] - `calls` [EXTRACTED]
-- [[add_comment()]] - `calls` [EXTRACTED]
-- [[jira_dev_ticket.py]] - `contains` [EXTRACTED]
+- [[Build the Atlassian Document Format (ADF) body for POST ...comment. The REST…]] - `rationale_for` [EXTRACTED]
+- [[_adf_paragraph()]] - `calls` [EXTRACTED]
+- [[jira_weekly_review.py]] - `contains` [EXTRACTED]
+- [[run()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_148
+#graphify/code #graphify/EXTRACTED #community/jira_weekly_reviewpy

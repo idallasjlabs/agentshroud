@@ -1,12 +1,12 @@
 ---
 source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 1652"
+community: "Athena — Knowledge Distiller"
 location: "L82"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1652
+  - community/Athena__Knowledge_Distiller
 ---
 
 # cheatsheet.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[description of what this does_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1652
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

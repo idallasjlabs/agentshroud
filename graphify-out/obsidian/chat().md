@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "Community 95"
+community: "chat"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/chat
 ---
 
 # chat()
@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[ChatRequest]] - `references` [EXTRACTED]
 - [[ChatResponse]] - `calls` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
 - [[Process chat message with Isaiah's personality.]] - `rationale_for` [EXTRACTED]
-- [[Request]] - `references` [EXTRACTED]
+- [[Request_2]] - `references` [EXTRACTED]
 - [[TestAsyncClient]] - `calls` [EXTRACTED]
 - [[TestErrorSanitization]] - `calls` [EXTRACTED]
 - [[_check_rate_limit()]] - `calls` [EXTRACTED]
-- [[main.py]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `calls` [EXTRACTED]
+- [[chatbotmain.py]] - `contains` [EXTRACTED]
+- [[post_2]] - `references` [EXTRACTED]
+- [[require_auth()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/chat

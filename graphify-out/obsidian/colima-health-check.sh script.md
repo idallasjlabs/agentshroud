@@ -1,23 +1,26 @@
 ---
 source_file: "docker/scripts/colima-health-check.sh"
 type: "code"
-community: "Community 1757"
+community: "colima-health-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1757
+  - community/colima-health-checksh
 ---
 
 # colima-health-check.sh script
 
 ## Connections
+- [[_colima_vm_flags()]] - `calls` [EXTRACTED]
+- [[_dead_dns_servers()]] - `calls` [EXTRACTED]
 - [[_upgrade_in_progress()]] - `calls` [EXTRACTED]
 - [[_wait_healthy()]] - `calls` [EXTRACTED]
 - [[colima-health-check.sh]] - `contains` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
-- [[notify()_1]] - `calls` [EXTRACTED]
+- [[log()_3]] - `calls` [EXTRACTED]
+- [[notify()_3]] - `calls` [EXTRACTED]
+- [[read_state()]] - `calls` [EXTRACTED]
 - [[resolve_docker_host()]] - `calls` [EXTRACTED]
 - [[write_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1757
+#graphify/code #graphify/EXTRACTED #community/colima-health-checksh

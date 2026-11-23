@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_api_contract_fuzz.py"
 type: "code"
-community: "Community 1248"
-location: "L25"
+community: "test_api_contract_fuzz.py"
+location: "L144"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/test_api_contract_fuzzpy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_26]] - `references` [EXTRACTED]
+- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

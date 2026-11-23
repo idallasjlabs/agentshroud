@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 805"
+community: "Trademark Statements"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_805
+  - community/Trademark_Statements
 ---
 
 # bot-capabilities.md
@@ -17,4 +17,4 @@ tags:
 - [[Never Display Credentials in Chat Policy (Ultra-Conservative)]] - `references` [EXTRACTED]
 - [[SYSTEM-INSTRUCTIONS-SECURITY]] - `semantically_similar_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_805
+#graphify/document #graphify/EXTRACTED #community/Trademark_Statements

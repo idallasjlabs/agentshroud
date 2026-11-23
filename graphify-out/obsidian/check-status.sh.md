@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/check-status.sh"
 type: "code"
-community: "Community 1520"
+community: "check-status.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1520
+  - community/check-statussh
 ---
 
 # check-status.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[check-status.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1520
+#graphify/code #graphify/EXTRACTED #community/check-statussh

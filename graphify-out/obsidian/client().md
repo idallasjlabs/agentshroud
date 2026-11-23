@@ -1,17 +1,20 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 95"
-location: "L33"
+community: "app"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/app
 ---
 
 # client()
 
 ## Connections
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_1]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/code #graphify/EXTRACTED #community/app

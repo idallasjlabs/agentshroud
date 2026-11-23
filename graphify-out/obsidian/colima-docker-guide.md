@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Community 91"
+community: "AgentShroud v0.8.0 \"Watchtower\" Release Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/AgentShroud_v080_Watchtower_Release_Plan
 ---
 
 # colima-docker-guide.md
@@ -15,7 +15,5 @@ tags:
 - [[Colima & Docker Operations Guide — AgentShroud]] - `contains` [EXTRACTED]
 - [[Container Runtime]] - `references` [EXTRACTED]
 - [[Marvin (proddev host)]] - `references` [EXTRACTED]
-- [[OPENCLAW_SETUP]] - `conceptually_related_to` [INFERRED]
-- [[setup-guide]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_91
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080_Watchtower_Release_Plan

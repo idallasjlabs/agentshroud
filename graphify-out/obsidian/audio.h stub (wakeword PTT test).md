@@ -1,16 +1,13 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/audio.h"
 type: "code"
-community: "Community 341"
+community: "audio.h stub (wakeword PTT test)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/audioh_stub_wakeword_PTT_test
 ---
 
 # audio.h stub (wakeword PTT test)
 
-## Connections
-- [[test_ptt_state.c]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/audioh_stub_wakeword_PTT_test

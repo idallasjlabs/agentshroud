@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 1248"
-location: "L16"
+community: "test_web_api_coverage.py"
+location: "L59"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1248
+  - graphify/EXTRACTED
+  - community/test_web_api_coveragepy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncClient]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_99]] - `references` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_1248
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

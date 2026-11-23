@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/check-vendor-compat.sh"
 type: "code"
-community: "Community 227"
+community: "check-vendor-compat.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/check-vendor-compatsh
 ---
 
 # check-vendor-compat.sh script
@@ -15,5 +15,6 @@ tags:
 - [[check-vendor-compat.sh]] - `contains` [EXTRACTED]
 - [[check_hermes()]] - `calls` [EXTRACTED]
 - [[check_openclaw()]] - `calls` [EXTRACTED]
+- [[update-agentshroud.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_227
+#graphify/code #graphify/EXTRACTED #community/check-vendor-compatsh

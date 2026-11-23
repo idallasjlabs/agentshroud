@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/smoke.d/test-container-runtime.sh"
+source_file: "scripts/smoke.d/test-edge-keygen.sh"
 type: "code"
-community: "Community 1176"
-location: "L40"
+community: "run_sourced"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1176
+  - community/run_sourced
 ---
 
 # check()
 
 ## Connections
-- [[test-container-runtime.sh]] - `defines` [EXTRACTED]
-- [[test-container-runtime.sh script]] - `calls` [EXTRACTED]
+- [[test-edge-keygen.sh]] - `defines` [EXTRACTED]
+- [[test-edge-keygen.sh script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1176
+#graphify/code #graphify/EXTRACTED #community/run_sourced

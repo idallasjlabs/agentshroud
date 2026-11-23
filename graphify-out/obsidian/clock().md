@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 206"
+community: "RateLimitGuard"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_206
+  - community/RateLimitGuard
 ---
 
 # clock()
 
 ## Connections
 - [[FakeClock_1]] - `calls` [EXTRACTED]
+- [[fixture_55]] - `references` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_206
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
