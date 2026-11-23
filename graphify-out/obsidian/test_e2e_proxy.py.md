@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # test_e2e_proxy.py
 
 ## Connections
 - [[AuditChain]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[E2E Proxy Pipeline Tests — verify security pipeline actually works. These tests…]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[ForwarderConfig]] - `imports` [EXTRACTED]
@@ -22,21 +23,28 @@ tags:
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
 - [[PromptGuard]] - `imports` [EXTRACTED]
-- [[ScanRequest]] - `imports` [EXTRACTED]
+- [[ScanRequest_1]] - `imports` [EXTRACTED]
 - [[SecurityPipeline]] - `imports` [EXTRACTED]
 - [[SidecarScanner]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[WebhookReceiver]] - `imports` [EXTRACTED]
 - [[_PassInboundPipeline]] - `contains` [EXTRACTED]
-- [[_StubForwarder_2]] - `contains` [EXTRACTED]
+- [[_StubForwarder]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[egress_filter()]] - `contains` [EXTRACTED]
-- [[forwarder()_1]] - `contains` [EXTRACTED]
-- [[pii_config()]] - `contains` [EXTRACTED]
-- [[pipeline()]] - `contains` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports_from` [EXTRACTED]
+- [[forwarder()]] - `contains` [EXTRACTED]
+- [[forwarder.py_2]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[pii_config()_1]] - `contains` [EXTRACTED]
+- [[pipeline()_2]] - `contains` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[prompt_guard()]] - `contains` [EXTRACTED]
-- [[run_full()]] - `references` [EXTRACTED]
-- [[sanitizer()_1]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[sanitizer()_4]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
+- [[sidecar.py_2]] - `imports_from` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_empty_valid()]] - `contains` [EXTRACTED]
 - [[test_audit_chain_integrity()]] - `contains` [EXTRACTED]
@@ -65,5 +73,7 @@ tags:
 - [[test_webhook_receiver_processes()]] - `contains` [EXTRACTED]
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
 - [[trust_manager()_2]] - `contains` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
+- [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

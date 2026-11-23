@@ -1,32 +1,33 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 81"
+community: "test_http_proxy_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/test_http_proxy_coveragepy
 ---
 
 # test_http_proxy_coverage.py
 
 ## Connections
+- [[Coverage tests for HTTPConnectProxy — server lifecycle, timeout paths, tunnel…]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `imports` [EXTRACTED]
-- [[WebProxy_1]] - `imports` [EXTRACTED]
+- [[WebProxy]] - `imports` [EXTRACTED]
 - [[WebProxyConfig]] - `imports` [EXTRACTED]
 - [[_CloseRaisesTargetWriter]] - `contains` [EXTRACTED]
 - [[_CloseRaisesWriter]] - `contains` [EXTRACTED]
-- [[_DummyTargetWriter_1]] - `contains` [EXTRACTED]
+- [[_DummyTargetWriter]] - `contains` [EXTRACTED]
 - [[_HeaderTimeoutReader]] - `contains` [EXTRACTED]
-- [[_MockWriter_1]] - `contains` [EXTRACTED]
+- [[_MockWriter]] - `contains` [EXTRACTED]
 - [[_SocketTransportWriter]] - `contains` [EXTRACTED]
 - [[_TimeoutReader]] - `contains` [EXTRACTED]
 - [[_allowlist_proxy()]] - `contains` [EXTRACTED]
 - [[_capture_scans()]] - `contains` [EXTRACTED]
 - [[_eof_target_connection()]] - `contains` [EXTRACTED]
-- [[_make_stream()_1]] - `contains` [EXTRACTED]
-- [[http_proxy.py (HTTPConnectProxy)]] - `implements` [EXTRACTED]
+- [[_make_stream()]] - `contains` [EXTRACTED]
+- [[http_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_bypass_logging_failure_does_not_block_tunnel()]] - `contains` [EXTRACTED]
 - [[test_bypass_with_egress_filter_lacking_approval_queue()]] - `contains` [EXTRACTED]
 - [[test_clamav_scan_clean_records_nothing()]] - `contains` [EXTRACTED]
@@ -39,7 +40,6 @@ tags:
 - [[test_handle_client_swallows_timeout_and_closes_writer()]] - `contains` [EXTRACTED]
 - [[test_handle_client_tolerates_writer_close_failure()]] - `contains` [EXTRACTED]
 - [[test_header_read_timeout_returns_408()]] - `contains` [EXTRACTED]
-- [[test_http_proxy.py]] - `references` [EXTRACTED]
 - [[test_keepalive_set_on_both_tunnel_ends()]] - `contains` [EXTRACTED]
 - [[test_keepalive_skipped_when_socket_is_none()]] - `contains` [EXTRACTED]
 - [[test_keepalive_socket_lookup_failure_is_swallowed()]] - `contains` [EXTRACTED]
@@ -65,5 +65,7 @@ tags:
 - [[test_tunnel_connect_uses_happy_eyeballs()]] - `contains` [EXTRACTED]
 - [[test_tunnel_retries_then_succeeds()]] - `contains` [EXTRACTED]
 - [[test_tunnel_target_writer_close_failure_swallowed()]] - `contains` [EXTRACTED]
+- [[web_config.py_2]] - `imports_from` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

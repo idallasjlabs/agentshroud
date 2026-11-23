@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canvas_proxy.py"
 type: "code"
-community: "Community 1300"
+community: "canvas_proxy.py"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1300
+  - community/canvas_proxypy
 ---
 
 # test_env_override_takes_precedence()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canvas_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1300
+#graphify/code #graphify/EXTRACTED #community/canvas_proxypy

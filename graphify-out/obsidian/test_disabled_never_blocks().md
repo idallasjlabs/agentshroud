@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_data_exfil_volume_guard.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "Community 205"
-location: "L174"
+community: "RateLimitGuard"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_205
+  - community/RateLimitGuard
 ---
 
 # test_disabled_never_blocks()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `calls` [EXTRACTED]
-- [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
+- [[RateLimitConfig]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `calls` [EXTRACTED]
+- [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_205
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

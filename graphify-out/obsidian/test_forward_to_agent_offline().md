@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Community 325"
+community: "AgentTarget"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/AgentTarget
 ---
 
 # test_forward_to_agent_offline()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[ForwardError]] - `uses` [INFERRED]
 - [[Test forwarding to offline agent raises ForwardError]] - `rationale_for` [EXTRACTED]
+- [[asyncio_59]] - `references` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

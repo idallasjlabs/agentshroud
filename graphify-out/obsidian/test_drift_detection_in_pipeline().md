@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 0"
+community: "ContainerSnapshot"
 location: "L313"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/ContainerSnapshot
 ---
 
 # test_drift_detection_in_pipeline()
@@ -17,4 +17,4 @@ tags:
 - [[DriftDetector]] - `calls` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 7"
+community: "test_security_integration.py"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_security_integrationpy
 ---
 
 # test_full_pipeline_clean_message()
 
 ## Connections
 - [[Clean message flows through entire pipeline without issues.]] - `rationale_for` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
+- [[asyncio_64]] - `references` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

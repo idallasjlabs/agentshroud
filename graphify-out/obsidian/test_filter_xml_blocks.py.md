@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "Community 147"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_147
+  - community/PIIConfig
 ---
 
 # test_filter_xml_blocks.py
@@ -14,7 +14,10 @@ tags:
 ## Connections
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
-- [[sanitizer()_3]] - `contains` [EXTRACTED]
+- [[Tests for filter_xml_blocks method in PIISanitizer. TDD approach Tests written…]] - `rationale_for` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[sanitizer()_2]] - `contains` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_collapses_excessive_newlines()]] - `contains` [EXTRACTED]
 - [[test_does_not_filter_normal_text()]] - `contains` [EXTRACTED]
 - [[test_does_not_filter_regular_html_tags()]] - `contains` [EXTRACTED]
@@ -38,4 +41,4 @@ tags:
 - [[test_was_filtered_false_when_no_blocks()]] - `contains` [EXTRACTED]
 - [[test_was_filtered_true_when_block_present()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_147
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

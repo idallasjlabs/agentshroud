@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Community 251"
+community: "test_llm_proxy_failover.py"
 location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/test_llm_proxy_failoverpy
 ---
 
 # test_failover_notification_cooldown()
 
 ## Connections
-- [[make_proxy()]] - `calls` [EXTRACTED]
+- [[make_proxy()_1]] - `calls` [EXTRACTED]
+- [[mock_urlopen()]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_251
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

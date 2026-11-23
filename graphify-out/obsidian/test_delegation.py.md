@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "Community 89"
+community: "test_delegation.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_89
+  - community/test_delegationpy
 ---
 
 # test_delegation.py
@@ -22,7 +22,9 @@ tags:
 - [[TestListAndCleanup]] - `contains` [EXTRACTED]
 - [[TestRedelegation]] - `contains` [EXTRACTED]
 - [[TestRevoke]] - `contains` [EXTRACTED]
-- [[TestSerialization]] - `contains` [EXTRACTED]
-- [[mgr()]] - `contains` [EXTRACTED]
+- [[TestSerialization_1]] - `contains` [EXTRACTED]
+- [[Tests for gatewaysecuritydelegation.py — V9-T1 Owner-away privilege…]] - `rationale_for` [EXTRACTED]
+- [[delegation.py]] - `imports_from` [EXTRACTED]
+- [[mgr()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_89
+#graphify/code #graphify/EXTRACTED #community/test_delegationpy

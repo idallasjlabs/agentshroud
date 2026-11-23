@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "Community 1305"
+community: "test_group_isolation.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1305
+  - community/test_group_isolationpy
 ---
 
 # test_group_isolation.py
@@ -14,21 +14,23 @@ tags:
 ## Connections
 - [[AgentRegistry]] - `imports` [EXTRACTED]
 - [[ContainerConfig]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
+- [[RBACConfig]] - `imports` [EXTRACTED]
 - [[SharedMemoryManager]] - `imports` [EXTRACTED]
+- [[TDD — Workstream A (v1.2.0) Group memory namespace isolation. Tests that -…]] - `rationale_for` [EXTRACTED]
 - [[TeamsConfig]] - `imports` [EXTRACTED]
-- [[Test Group Config]] - `semantically_similar_to` [INFERRED]
 - [[TestAgentRegistryGroupIdentity]] - `contains` [EXTRACTED]
 - [[TestGroupMemoryInvisibleFromDM]] - `contains` [EXTRACTED]
 - [[TestGroupMemoryNamespaceIsolation]] - `contains` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[agent_isolation.py (AgentRegistry)]] - `implements` [EXTRACTED]
-- [[rbac()]] - `contains` [EXTRACTED]
-- [[session_manager()_1]] - `contains` [EXTRACTED]
-- [[session_manager.py (UserSessionManager)]] - `references` [EXTRACTED]
-- [[shared_memory()]] - `contains` [EXTRACTED]
-- [[shared_memory.py (SharedMemoryManager)]] - `references` [EXTRACTED]
-- [[teams()_2]] - `contains` [EXTRACTED]
-- [[tmp_workspace()]] - `contains` [EXTRACTED]
+- [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
+- [[group_config.py]] - `imports_from` [EXTRACTED]
+- [[rbac()_4]] - `contains` [EXTRACTED]
+- [[rbac_config.py]] - `imports_from` [EXTRACTED]
+- [[session_manager()_4]] - `contains` [EXTRACTED]
+- [[session_manager.py]] - `imports_from` [EXTRACTED]
+- [[shared_memory()_2]] - `contains` [EXTRACTED]
+- [[shared_memory.py]] - `imports_from` [EXTRACTED]
+- [[teams()_4]] - `contains` [EXTRACTED]
+- [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1305
+#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy

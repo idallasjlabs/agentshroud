@@ -1,23 +1,18 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_cron_html_email.sh"
 type: "code"
-community: "Community 547"
+community: "test_hermes_cron_html_email.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_547
+  - community/test_hermes_cron_html_emailsh
 ---
 
 # test_hermes_cron_html_email.sh
 
 ## Connections
 - [[check()_12]] - `defines` [EXTRACTED]
-- [[email_helper.sh]] - `references` [EXTRACTED]
-- [[jobs.yaml (Hermes cron)]] - `references` [EXTRACTED]
-- [[smoke.sh]] - `references` [EXTRACTED]
-- [[test_hermes_chown_coverage.sh]] - `semantically_similar_to` [INFERRED]
 - [[test_hermes_cron_html_email.sh script]] - `contains` [EXTRACTED]
-- [[test_openclaw_photo.sh]] - `semantically_similar_to` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_547
+#graphify/code #graphify/EXTRACTED #community/test_hermes_cron_html_emailsh

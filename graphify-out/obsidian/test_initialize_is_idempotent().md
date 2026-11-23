@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/tests/test_approval_store.py"
+source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "Community 30"
-location: "L136"
+community: "ingest_api/config.py"
+location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/ingest_api/configpy
 ---
 
 # test_initialize_is_idempotent()
 
 ## Connections
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[Path_26]] - `references` [EXTRACTED]
-- [[Re-initializing must not orphan the first aiosqlite connection.      aiosqlite c]] - `rationale_for` [EXTRACTED]
-- [[test_approval_store.py]] - `contains` [EXTRACTED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[LedgerConfig]] - `uses` [INFERRED]
+- [[Re-initializing must not orphan the first aiosqlite connection. aiosqlite…]] - `rationale_for` [EXTRACTED]
+- [[asyncio_42]] - `references` [EXTRACTED]
+- [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

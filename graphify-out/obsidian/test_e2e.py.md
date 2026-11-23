@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_e2e.py"
 type: "code"
-community: "Community 309"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_309
+  - community/ingest_api/mainpy
 ---
 
 # test_e2e.py
 
 ## Connections
+- [[End-to-end integration tests for the full gateway stack. Tests the complete…]] - `rationale_for` [EXTRACTED]
 - [[EventBus]] - `imports` [EXTRACTED]
-- [[Role_1]] - `references` [EXTRACTED]
+- [[Role]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[client()_6]] - `contains` [EXTRACTED]
-- [[dashboard.py]] - `calls` [EXTRACTED]
-- [[test_canary.py]] - `semantically_similar_to` [INFERRED]
+- [[client()_1]] - `contains` [EXTRACTED]
+- [[event_bus.py_2]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[test_dashboard_requires_auth()_1]] - `contains` [EXTRACTED]
 - [[test_dashboard_returns_html()]] - `contains` [EXTRACTED]
 - [[test_dashboard_stats_returns_json()]] - `contains` [EXTRACTED]
@@ -26,4 +28,4 @@ tags:
 - [[test_ssh_submit_queues_approval()]] - `contains` [EXTRACTED]
 - [[test_status_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_309
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

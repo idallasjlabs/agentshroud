@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "Community 48"
+community: "discover_upstream_versions.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/discover_upstream_versionspy
 ---
 
 # test_discover_upstream_versions.py
@@ -21,6 +21,7 @@ tags:
 - [[TestPickLatestHermesTag]] - `contains` [EXTRACTED]
 - [[TestPickLatestStable]] - `contains` [EXTRACTED]
 - [[TestRetry]] - `contains` [EXTRACTED]
-- [[Tests for scriptsdiscover_upstream_versions.py — latest-release discovery.  Cop]] - `rationale_for` [EXTRACTED]
+- [[Tests for scriptsdiscover_upstream_versions.py — latest-release discovery.…]] - `rationale_for` [EXTRACTED]
+- [[discover_upstream_versions.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

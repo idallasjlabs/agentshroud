@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "Community 1058"
+community: "is_quota_exhausted"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1058
+  - community/is_quota_exhausted
 ---
 
 # test_detector_skips_non_429()
@@ -15,4 +15,4 @@ tags:
 - [[is_rate_limited_post_retry()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1058
+#graphify/code #graphify/EXTRACTED #community/is_quota_exhausted

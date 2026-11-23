@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_gemini_openai_translator.py"
 type: "code"
-community: "Community 361"
+community: "test_gemini_openai_translator.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_361
+  - community/test_gemini_openai_translatorpy
 ---
 
 # test_gemini_openai_translator.py
 
 ## Connections
+- [[Tests for gatewayproxygemini_openai_translator.py.]] - `rationale_for` [EXTRACTED]
 - [[gemini_failover_unsupported_reason()]] - `imports` [EXTRACTED]
+- [[gemini_openai_translator.py]] - `imports_from` [EXTRACTED]
 - [[gemini_to_openai_request()]] - `imports` [EXTRACTED]
 - [[gemini_to_openai_response()]] - `imports` [EXTRACTED]
 - [[openai_to_gemini_request()]] - `imports` [EXTRACTED]
@@ -43,4 +45,4 @@ tags:
 - [[test_unsupported_reason_streaming_path()]] - `contains` [EXTRACTED]
 - [[test_unsupported_reason_tools_in_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_361
+#graphify/code #graphify/EXTRACTED #community/test_gemini_openai_translatorpy

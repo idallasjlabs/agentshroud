@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L588"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # test_inbound_outbound_both_audited()
 
 ## Connections
-- [[.process_inbound()_1]] - `calls` [EXTRACTED]
-- [[.process_outbound()_1]] - `calls` [EXTRACTED]
-- [[AuditChain]] - `calls` [EXTRACTED]
+- [[AuditChain]] - `uses` [INFERRED]
+- [[PipelineAction]] - `uses` [INFERRED]
 - [[Verify both inbound and outbound are in audit chain.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_49]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 846"
+community: "test_voice_gateway.py"
 location: "L3579"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_846
+  - community/test_voice_gatewaypy
 ---
 
 # test_firmware_bin_auth_and_etag()
 
 ## Connections
-- [[GET firmwarebin token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.]] - `rationale_for` [EXTRACTED]
+- [[GET firmwarebin token gate, 200 + quoted SHA-256 ETag, HEAD ETag parity.…]] - `rationale_for` [EXTRACTED]
 - [[_fw_client()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_846
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

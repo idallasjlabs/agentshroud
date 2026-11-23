@@ -1,20 +1,20 @@
 ---
 source_file: "tests/startup_smoke/test_hermes_mcp_reconciliation.sh"
 type: "code"
-community: "Community 1421"
+community: "test_hermes_mcp_reconciliation.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1421
+  - community/test_hermes_mcp_reconciliationsh
 ---
 
 # test_hermes_mcp_reconciliation.sh
 
 ## Connections
-- [[check()_14]] - `defines` [EXTRACTED]
+- [[check()_7]] - `defines` [EXTRACTED]
 - [[count_key()]] - `defines` [EXTRACTED]
 - [[reconcile_noyaml()]] - `defines` [EXTRACTED]
 - [[test_hermes_mcp_reconciliation.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1421
+#graphify/code #graphify/EXTRACTED #community/test_hermes_mcp_reconciliationsh

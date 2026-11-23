@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_generate_cve_page.py"
 type: "code"
-community: "Community 200"
+community: "_make_cve"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_200
+  - community/_make_cve
 ---
 
 # test_generate_cve_page.py
@@ -15,8 +15,8 @@ tags:
 - [[TestBuildHeading]] - `contains` [EXTRACTED]
 - [[TestBuildTable]] - `contains` [EXTRACTED]
 - [[TestGenerate]] - `contains` [EXTRACTED]
+- [[Tests for scriptsgenerate-cve-page.py — M7 Hermes CVE section. Covers -…]] - `rationale_for` [EXTRACTED]
 - [[_get_mod()]] - `contains` [EXTRACTED]
 - [[_make_cve()]] - `contains` [EXTRACTED]
-- [[generate-cve-page.py]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_200
+#graphify/code #graphify/EXTRACTED #community/_make_cve

@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "EgressPolicy"
 location: "L542"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_21
+  - community/EgressPolicy
 ---
 
 # test_grant_timed_approval_expired_falls_back_to_deny()
 
 ## Connections
 - [[An expired timed approval should be evicted and the domain denied.]] - `rationale_for` [EXTRACTED]
+- [[EgressAction]] - `uses` [INFERRED]
 - [[_make_deny_all_filter()]] - `calls` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

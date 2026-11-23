@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # test_filtered_stream_blocked_final_sentence_yields_nothing()
@@ -15,6 +15,7 @@ tags:
 - [[_BlockingPipeline]] - `calls` [EXTRACTED]
 - [[_aiter()]] - `calls` [EXTRACTED]
 - [[_filtered_sentence_stream()]] - `calls` [EXTRACTED]
+- [[asyncio_25]] - `references` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

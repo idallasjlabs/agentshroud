@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Community 75"
+community: "FalcoAlertWatcher"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/FalcoAlertWatcher
 ---
 
 # test_falco_watcher.py
 
 ## Connections
 - [[FalcoAlertWatcher]] - `imports` [EXTRACTED]
+- [[Tests for FalcoAlertWatcher — enforcement bridge from Falco alerts to…]] - `rationale_for` [EXTRACTED]
 - [[_make_alert()]] - `contains` [EXTRACTED]
+- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
 - [[test_critical_alert_triggers_lockdown()]] - `contains` [EXTRACTED]
 - [[test_deduplication_same_alert_twice()]] - `contains` [EXTRACTED]
 - [[test_missing_alert_dir_noop()]] - `contains` [EXTRACTED]
@@ -22,4 +24,4 @@ tags:
 - [[test_stop_halts_run_loop()]] - `contains` [EXTRACTED]
 - [[test_warning_alert_not_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

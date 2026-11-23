@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "Community 7"
+community: "test_security_integration.py"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_security_integrationpy
 ---
 
 # test_egress_blocks_unauthorized_after_trust_check()
 
 ## Connections
+- [[EgressAction]] - `uses` [INFERRED]
 - [[Even if trust allows an action, egress filter blocks unauthorized destinations.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

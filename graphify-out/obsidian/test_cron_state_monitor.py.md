@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "Community 113"
+community: "CronStateMonitor"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/CronStateMonitor
 ---
 
 # test_cron_state_monitor.py
@@ -16,12 +16,14 @@ tags:
 - [[TestAdversarial]] - `contains` [EXTRACTED]
 - [[TestParsing]] - `contains` [EXTRACTED]
 - [[TestTransitions]] - `contains` [EXTRACTED]
+- [[Tests for CronStateMonitor (SCRUM-61 part 2) — bot cron failures →…]] - `rationale_for` [EXTRACTED]
 - [[_DedupDispatchFake]] - `contains` [EXTRACTED]
 - [[_DispatchSpy]] - `contains` [EXTRACTED]
 - [[_hermes_job()]] - `contains` [EXTRACTED]
 - [[_hermes_store()]] - `contains` [EXTRACTED]
 - [[_oc_job()]] - `contains` [EXTRACTED]
 - [[_openclaw_store()]] - `contains` [EXTRACTED]
+- [[cron_state_monitor.py]] - `imports_from` [EXTRACTED]
 - [[test_poll_loop_runs_and_stops()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

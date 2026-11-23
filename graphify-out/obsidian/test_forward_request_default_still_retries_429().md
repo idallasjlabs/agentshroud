@@ -1,19 +1,23 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "Community 251"
+community: "test_llm_proxy_failover.py"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_251
+  - community/test_llm_proxy_failoverpy
 ---
 
 # test_forward_request_default_still_retries_429()
 
 ## Connections
-- [[Without the interactive flag the 3-retry loop is unchanged (guards the     herme]] - `rationale_for` [EXTRACTED]
-- [[make_proxy()]] - `calls` [EXTRACTED]
+- [[Without the interactive flag the 3-retry loop is unchanged (guards the hermes-…]] - `rationale_for` [EXTRACTED]
+- [[_no_sleep()]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_urlopen()_20]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_21]] - `indirect_call` [INFERRED]
+- [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_251
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

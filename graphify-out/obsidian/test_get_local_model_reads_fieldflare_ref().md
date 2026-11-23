@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 2352"
+community: "_make_proxy"
 location: "L596"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2352
+  - community/_make_proxy
 ---
 
 # test_get_local_model_reads_fieldflare_ref()
 
 ## Connections
-- [[_get_local_model strips the provider prefix for a Fieldflare ref, same     as it]] - `rationale_for` [EXTRACTED]
-- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[_get_local_model strips the provider prefix for a Fieldflare ref, same as it…]] - `rationale_for` [EXTRACTED]
+- [[_make_proxy()_4]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2352
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

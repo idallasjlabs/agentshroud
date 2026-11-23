@@ -1,24 +1,26 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "Community 17"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/EgressFilter
 ---
 
 # test_egress_enforce.py
 
 ## Connections
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `contains` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `contains` [EXTRACTED]
 - [[TestEgressManagementAPI]] - `contains` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports_from` [EXTRACTED]
 - [[get_egress_config()]] - `imports` [EXTRACTED]
 - [[set_egress_config()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_17
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

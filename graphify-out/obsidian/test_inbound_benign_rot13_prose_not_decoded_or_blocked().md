@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 24"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # test_inbound_benign_rot13_prose_not_decoded_or_blocked()
 
 ## Connections
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
+- [[asyncio_89]] - `references` [EXTRACTED]
 - [[rot13-looking prose with no injection indicators is left alone.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

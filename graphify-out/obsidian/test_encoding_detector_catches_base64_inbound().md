@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "Community 123"
+community: "test_redteam_probes.py"
 location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_123
+  - community/test_redteam_probespy
 ---
 
 # test_encoding_detector_catches_base64_inbound()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[EncodingDetector must detect base64-encoded payloads on inbound.]] - `rationale_for` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
+- [[asyncio_27]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_123
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

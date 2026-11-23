@@ -1,25 +1,30 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "Community 62"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # test_dashboard.py
 
 ## Connections
+- [[Tests for Dashboard endpoints and WebSocket activity feed]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `imports` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
 - [[_load_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_parse_collaborator_log_dirs()]] - `imports` [EXTRACTED]
-- [[client()_4]] - `contains` [EXTRACTED]
-- [[dashboard.py]] - `calls` [EXTRACTED]
+- [[asyncio_69]] - `imports` [EXTRACTED]
+- [[client()]] - `contains` [EXTRACTED]
+- [[dashboard.py]] - `imports_from` [EXTRACTED]
+- [[event_bus.py_2]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
 - [[test_build_activity_entries_from_contributor_logs()]] - `contains` [EXTRACTED]
@@ -44,4 +49,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `contains` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

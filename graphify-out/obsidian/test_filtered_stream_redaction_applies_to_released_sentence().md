@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "Community 47"
+community: "test_forward_stream.py"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_47
+  - community/test_forward_streampy
 ---
 
 # test_filtered_stream_redaction_applies_to_released_sentence()
@@ -14,6 +14,8 @@ tags:
 ## Connections
 - [[_aiter()]] - `calls` [EXTRACTED]
 - [[_filtered_sentence_stream()]] - `calls` [EXTRACTED]
+- [[asyncio_25]] - `references` [EXTRACTED]
+- [[process_outbound()_1]] - `contains` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_47
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # test_group_config.py
@@ -21,7 +21,9 @@ tags:
 - [[TestProjectQueries]] - `contains` [EXTRACTED]
 - [[TestTeamsConfigParsing]] - `contains` [EXTRACTED]
 - [[TestUserCollabModeOverride]] - `contains` [EXTRACTED]
+- [[Tests for group_config.py — V9-4A TeamsConfig, GroupConfig, ProjectConfig.]] - `rationale_for` [EXTRACTED]
+- [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
-- [[teams()_1]] - `contains` [EXTRACTED]
+- [[teams()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
