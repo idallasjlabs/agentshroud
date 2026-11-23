@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "SecureBrowser (3)"
+community: "ConsentFramework"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_3
+  - community/ConsentFramework
 ---
 
 # .test_decision_approved()
 
 ## Connections
-- [[ConsentDecision]] - `calls` [EXTRACTED]
+- [[ConsentDecision]] - `calls` [INFERRED]
 - [[TestConsentDecision]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_3
+#graphify/code #graphify/EXTRACTED #community/ConsentFramework

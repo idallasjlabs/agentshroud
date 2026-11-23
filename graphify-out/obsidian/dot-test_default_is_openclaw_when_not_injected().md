@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "TestDefaultBotId"
 location: "L5382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestDefaultBotId
 ---
 
 # .test_default_is_openclaw_when_not_injected()
 
 ## Connections
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestDefaultBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TestDefaultBotId

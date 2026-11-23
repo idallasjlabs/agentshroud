@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
 community: "_stub_client"
-location: "L422"
+location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestGetCommands]] - `method` [EXTRACTED]
 - [[_stub_client()]] - `calls` [EXTRACTED]
+- [[cli()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_stub_client

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "EgressPolicy"
 location: "L597"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/EgressPolicy
 ---
 
 # .test_default_policy_allows_imaps()
 
 ## Connections
 - [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[EgressPolicy default allows port 465 (SMTPS).]] - `rationale_for` [EXTRACTED]
+- [[EgressPolicy default allows port 993 (IMAPS).]] - `rationale_for` [EXTRACTED]
 - [[TestSMTPIMAPPorts]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

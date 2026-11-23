@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .test_complete_user_isolation()
@@ -15,5 +15,6 @@ tags:
 - [[Test complete isolation between two users.]] - `rationale_for` [EXTRACTED]
 - [[TestSessionIsolationEndToEnd]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[asyncio_72]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

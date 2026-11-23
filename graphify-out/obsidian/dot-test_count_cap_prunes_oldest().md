@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestReviewHardening"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestReviewHardening
 ---
 
 # .test_count_cap_prunes_oldest()
@@ -15,4 +15,4 @@ tags:
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestReviewHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestReviewHardening

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "_make_proxy"
+community: "TestDelegateBasic"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/TestDelegateBasic
 ---
 
 # .test_delegation_has_unique_id()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDelegateBasic]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/TestDelegateBasic

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "ContextSegment"
+community: "MCPProxy"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextSegment
+  - community/MCPProxy
 ---
 
 # .test_critical_tool_requires_approval()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test that critical tools are identified as requiring approval.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextSegment
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestReportAPI"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestReportAPI
 ---
 
 # .test_create_list_get_roundtrip()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReportAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestReportAPI

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L76"
+community: "DNSBlocklist"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/DNSBlocklist
 ---
 
 # .test_custom_denylist()
 
 ## Connections
-- [[TestDomainDenylist]] - `method` [EXTRACTED]
-- [[WebProxy]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestIsBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

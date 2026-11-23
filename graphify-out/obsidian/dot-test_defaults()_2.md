@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "egress_retry.py"
-location: "L638"
+community: "soc/models.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/soc/modelspy
 ---
 
 # .test_defaults()
 
 ## Connections
-- [[ContainerInfo_3]] - `calls` [EXTRACTED]
-- [[TestContainerInfo]] - `method` [EXTRACTED]
+- [[ServiceDescriptor]] - `calls` [EXTRACTED]
+- [[TestServiceDescriptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

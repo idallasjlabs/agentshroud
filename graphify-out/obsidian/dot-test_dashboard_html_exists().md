@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TestWebSecurity"
 location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestWebSecurity
 ---
 
 # .test_dashboard_html_exists()
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard should have an HTML file.]] - `rationale_for` [EXTRACTED]
 - [[TestWebSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestWebSecurity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_cve_report() (2)"
+community: "_make_report"
 location: "L1272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/_make_report
 ---
 
 # .test_daily_fs_scan_skips_security_log_tree()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[TestTrivySkipDirs]] - `method` [EXTRACTED]
 - [[The daily fs scan of  must exclude varlogsecurity (trivy's own cache +…]] - `rationale_for` [EXTRACTED]
-- [[_fake_send()_10]] - `contains` [EXTRACTED]
-- [[_fake_send()]] - `indirect_call` [INFERRED]
+- [[_fake_send()_18]] - `contains` [EXTRACTED]
+- [[_fake_send()_5]] - `indirect_call` [INFERRED]
 - [[_fake_trivy_scan()_5]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/code #graphify/EXTRACTED #community/_make_report

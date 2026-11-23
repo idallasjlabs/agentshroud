@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MiddlewareManager (3) (2)"
+community: "_w"
 location: "L894"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3_2
+  - community/_w
 ---
 
 # .test_containerized_no_compose_zero()
@@ -15,4 +15,4 @@ tags:
 - [[TestDockerDaemonConfig]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2
+#graphify/code #graphify/EXTRACTED #community/_w

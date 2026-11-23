@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Pydantic"
+community: "DNSBlocklist"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/DNSBlocklist
 ---
 
 # .test_deduplication()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pydantic
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

@@ -12,6 +12,7 @@ tags:
 # .test_detects_api_key_pattern()
 
 ## Connections
+- [[dot-contains_private_content()]] - `calls` [EXTRACTED]
 - [[TestPrivateContentDetection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

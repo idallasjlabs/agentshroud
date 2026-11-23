@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "WebProxy"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/WebProxy
 ---
 
 # .test_denied_domain_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDomainDenylist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

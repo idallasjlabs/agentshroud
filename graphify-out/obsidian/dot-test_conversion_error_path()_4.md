@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L397"
+community: "soc/models.py"
+location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/soc/modelspy
 ---
 
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromPipelineResult]] - `method` [EXTRACTED]
+- [[TestFromEgressAttempt]] - `method` [EXTRACTED]
+- [[domain()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

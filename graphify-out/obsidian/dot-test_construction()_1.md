@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "Enum"
+community: "soc/models.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Enum
+  - community/soc/modelspy
 ---
 
 # .test_construction()
@@ -15,4 +15,4 @@ tags:
 - [[EgressRequest_1]] - `calls` [EXTRACTED]
 - [[TestEgressRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Enum
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

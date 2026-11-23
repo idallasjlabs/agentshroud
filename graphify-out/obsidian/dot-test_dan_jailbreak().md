@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ContextGuard"
-location: "L228"
+community: "prompt_guard.py"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/prompt_guardpy
 ---
 
 # .test_dan_jailbreak()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

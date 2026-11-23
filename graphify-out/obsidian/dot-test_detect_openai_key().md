@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_credential_isolation.py"
 type: "code"
-community: "ModeRequest (3)"
+community: "TestCredentialLeakDetection"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest_3
+  - community/TestCredentialLeakDetection
 ---
 
 # .test_detect_openai_key()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest_3
+#graphify/code #graphify/EXTRACTED #community/TestCredentialLeakDetection

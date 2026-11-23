@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "AgentShroud (system, C4 context) (3)"
+community: "multi_host_test.py"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_system_C4_context_3
+  - community/multi_host_testpy
 ---
 
 # .test_custom_user()
@@ -15,4 +15,4 @@ tags:
 - [[TestBuildSshArgv]] - `method` [EXTRACTED]
 - [[build_ssh_argv()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_system_C4_context_3
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

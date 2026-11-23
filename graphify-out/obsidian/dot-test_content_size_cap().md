@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_report_store.py"
 type: "code"
-community: "test_dashboard.py"
+community: "TestSecurity"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/TestSecurity
 ---
 
 # .test_content_size_cap()
@@ -15,4 +15,4 @@ tags:
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/TestSecurity

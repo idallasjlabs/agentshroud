@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "pending (bot submits action requiring approval)"
+community: "TestComplianceMaths"
 location: "L1103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/pending_bot_submits_action_requiring_approval
+  - community/TestComplianceMaths
 ---
 
 # .test_compliance_levels()
 
 ## Connections
 - [[TestComplianceMaths]] - `method` [EXTRACTED]
+- [[parametrize_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/pending_bot_submits_action_requiring_approval
+#graphify/code #graphify/EXTRACTED #community/TestComplianceMaths

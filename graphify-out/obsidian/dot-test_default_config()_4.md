@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "PathIsolationManager"
-location: "L23"
+community: "test_memory_lifecycle.py"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/test_memory_lifecyclepy
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
 - [[Test default configuration values._2]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy
