@@ -1,24 +1,24 @@
 ---
 source_file: ".github/agents/i-vulcan.agent.md"
 type: "document"
-community: "Community 1954"
+community: "Vulcan — Subject Matter Auditor"
 location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1954
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Vulcan — Subject Matter Auditor
 
 ## Connections
-- [[Input Requirements_39]] - `contains` [EXTRACTED]
-- [[Output Format_56]] - `contains` [EXTRACTED]
-- [[Persona_31]] - `contains` [EXTRACTED]
-- [[Quality Checklist_35]] - `contains` [EXTRACTED]
-- [[Role_147]] - `contains` [EXTRACTED]
-- [[System Prompt_31]] - `contains` [EXTRACTED]
-- [[User Prompt Template_15]] - `contains` [EXTRACTED]
+- [[Input Requirements_26]] - `contains` [EXTRACTED]
+- [[Output Format_41]] - `contains` [EXTRACTED]
+- [[Persona_20]] - `contains` [EXTRACTED]
+- [[Quality Checklist_26]] - `contains` [EXTRACTED]
+- [[Role_87]] - `contains` [EXTRACTED]
+- [[System Prompt_20]] - `contains` [EXTRACTED]
+- [[User Prompt Template_13]] - `contains` [EXTRACTED]
 - [[i-vulcan.agent]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1954
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

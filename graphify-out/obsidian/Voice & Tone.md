@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: "docker/config/openclaw/workspace/BRAND.md"
 type: "document"
-community: "Community 712"
-location: "L204"
+community: "AgentShroud™ Brand Guidelines"
+location: "L52"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules]] - `contains` [EXTRACTED]
+- [[AgentShroud™ Brand Guidelines]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

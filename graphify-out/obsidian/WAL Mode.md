@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Community 334"
+community: "aiosqlite"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_334
+  - community/aiosqlite
 ---
 
 # WAL Mode
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[aiosqlite]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_334
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

@@ -1,28 +1,31 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 6"
+community: "soc/models.py"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/modelspy
 ---
 
 # WSEventType
 
 ## Connections
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_38]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
-- [[WSEvent_1]] - `uses` [INFERRED]
-- [[WebSocket_6]] - `uses` [INFERRED]
-- [[_handleWSEvent()]] - `shares_data_with` [INFERRED]
-- [[models.py_1]] - `contains` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[TestCoerceToWSEvent]] - `uses` [INFERRED]
+- [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
+- [[TestEdgeEventOverWebSocket]] - `uses` [INFERRED]
+- [[TestSendEventAndKeepalive]] - `uses` [INFERRED]
+- [[TestWSEvent]] - `uses` [INFERRED]
+- [[_coerce_to_ws_event()]] - `uses` [INFERRED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_21]] - `inherits` [EXTRACTED]
 - [[test_soc_edge.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

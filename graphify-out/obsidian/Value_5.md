@@ -1,17 +1,31 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/TELEGRAM_API_BASE_URL.md"
-type: "document"
-community: "Community 1971"
-location: "L15"
+source_file: ""
+type: "code"
+community: "main.rs"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1971
+  - community/mainrs
 ---
 
 # Value
 
 ## Connections
-- [[TELEGRAM_API_BASE_URL_1]] - `contains` [EXTRACTED]
+- [[dot-get()_3]] - `references` [EXTRACTED]
+- [[dot-get()_4]] - `references` [EXTRACTED]
+- [[dot-post()_1]] - `references` [EXTRACTED]
+- [[dot-post()_2]] - `references` [EXTRACTED]
+- [[dot-request()_2]] - `references` [EXTRACTED]
+- [[dot-request()_3]] - `references` [EXTRACTED]
+- [[dot-request()_4]] - `references` [EXTRACTED]
+- [[FakeTransport]] - `references` [EXTRACTED]
+- [[format_approvals()]] - `references` [EXTRACTED]
+- [[format_cves()]] - `references` [EXTRACTED]
+- [[format_decision()]] - `references` [EXTRACTED]
+- [[format_deploy_status()]] - `references` [EXTRACTED]
+- [[format_status()]] - `references` [EXTRACTED]
+- [[json_str()]] - `references` [EXTRACTED]
+- [[print_output()]] - `references` [EXTRACTED]
+- [[render_output_lines()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1971
+#graphify/code #graphify/EXTRACTED #community/mainrs

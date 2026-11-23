@@ -1,22 +1,17 @@
 ---
 source_file: "docs/project/WEB_CONTROL_CENTER_SUMMARY.md"
 type: "document"
-community: "Community 91"
+community: "AgentShroud Web Control Center - Implementation Summary"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_91
+  - community/AgentShroud_Web_Control_Center_-_Implementation_Summary
 ---
 
 # WEB_CONTROL_CENTER_SUMMARY.md
 
 ## Connections
-- [[AgentShroud (security proxy)]] - `references` [EXTRACTED]
 - [[AgentShroud Web Control Center - Implementation Summary]] - `contains` [EXTRACTED]
-- [[Approval Queue_2]] - `references` [EXTRACTED]
-- [[Audit Trail_1]] - `references` [EXTRACTED]
-- [[Kill Switch_2]] - `references` [EXTRACTED]
-- [[access-control-matrix]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_91
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Web_Control_Center_-_Implementation_Summary

@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/references/security-policies.md"
+source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Community 453"
-location: "L98"
+community: "Security Architecture"
+location: "L280"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_453
+  - community/Security_Architecture
 ---
 
 # What We Don't Protect Against
 
 ## Connections
-- [[Threat Model_28]] - `contains` [EXTRACTED]
+- [[Threat Model_16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_453
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture

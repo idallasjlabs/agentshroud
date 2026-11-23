@@ -1,13 +1,13 @@
 ---
 source_file: ".agents/skills/i-value-stream-mapping/SKILL.md"
 type: "document"
-community: "Community 1581"
+community: "Value Stream Mapping Skill"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1581
+  - community/Value_Stream_Mapping_Skill
 ---
 
 # Value Stream Mapping Skill
 
-#graphify/document #graphify/EXTRACTED #community/Community_1581
+#graphify/document #graphify/EXTRACTED #community/Value_Stream_Mapping_Skill

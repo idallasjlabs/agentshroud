@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Community 80"
+community: "delegation.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_80
+  - community/delegationpy
 ---
 
 # ValueError
 
 ## Connections
 - [[DelegationError]] - `inherits` [EXTRACTED]
-- [[ProfileError]] - `inherits` [EXTRACTED]
-- [[SkillScanError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_80
+#graphify/code #graphify/EXTRACTED #community/delegationpy

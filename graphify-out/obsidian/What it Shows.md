@@ -1,12 +1,12 @@
 ---
 source_file: "src/interfaces/README.md"
 type: "document"
-community: "Community 1107"
+community: "Control Center"
 location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1107
+  - community/Control_Center
 ---
 
 # What it Shows
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Control Center]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1107
+#graphify/document #graphify/EXTRACTED #community/Control_Center

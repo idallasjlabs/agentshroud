@@ -1,50 +1,36 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "Community 93"
+community: "WebContentScanner"
 location: "L196"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_93
+  - graphify/EXTRACTED
+  - community/WebContentScanner
 ---
 
 # WebContentScanner
 
 ## Connections
-- [[.__init__()_56]] - `method` [EXTRACTED]
-- [[._scan_encoded_payloads()]] - `method` [EXTRACTED]
-- [[._scan_hidden_content()]] - `method` [EXTRACTED]
-- [[._scan_pii()]] - `method` [EXTRACTED]
-- [[._scan_prompt_injection()]] - `method` [EXTRACTED]
-- [[._scan_xml_dtd()]] - `method` [EXTRACTED]
-- [[._scan_zero_width()]] - `method` [EXTRACTED]
-- [[.scan()_1]] - `method` [EXTRACTED]
-- [[.setUp()_1]] - `calls` [EXTRACTED]
-- [[.test_finding_severity_is_critical()]] - `calls` [EXTRACTED]
-- [[Any_33]] - `uses` [INFERRED]
-- [[ProxyAction]] - `uses` [INFERRED]
-- [[RateLimiter_1]] - `uses` [INFERRED]
-- [[Scan web content for prompt injection, PII, and hidden payloads.      All findin]] - `rationale_for` [EXTRACTED]
-- [[TestClassify_2]] - `uses` [INFERRED]
-- [[TestConsumeFieldEdge]] - `uses` [INFERRED]
+- [[dot-__init__()_50]] - `references` [EXTRACTED]
+- [[dot-__init__()_150]] - `method` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `method` [EXTRACTED]
+- [[dot-_scan_hidden_content()]] - `method` [EXTRACTED]
+- [[dot-_scan_pii()]] - `method` [EXTRACTED]
+- [[dot-_scan_prompt_injection()]] - `method` [EXTRACTED]
+- [[dot-_scan_xml_dtd()]] - `method` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `method` [EXTRACTED]
+- [[dot-scan()_4]] - `method` [EXTRACTED]
+- [[dot-setUp()_1]] - `calls` [EXTRACTED]
+- [[dot-test_finding_severity_is_critical()]] - `calls` [EXTRACTED]
+- [[Scan web content for prompt injection, PII, and hidden payloads. All findings…]] - `rationale_for` [EXTRACTED]
 - [[TestDangerousXMLDetection]] - `uses` [INFERRED]
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
 - [[TestDefenseLayerVocabulary]] - `uses` [INFERRED]
-- [[TestDriverIsolation]] - `uses` [INFERRED]
-- [[TestMain_1]] - `uses` [INFERRED]
-- [[TestRewrite]] - `uses` [INFERRED]
-- [[TestTriageClassLevelCoverage]] - `uses` [INFERRED]
-- [[TestTriageEntry]] - `uses` [INFERRED]
-- [[TestVersion]] - `uses` [INFERRED]
-- [[URLAnalyzer_1]] - `uses` [INFERRED]
-- [[WebContentScanner_1]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig_1]] - `uses` [INFERRED]
-- [[WebProxyResult]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
 - [[test_triage_cve_mitigations.py]] - `imports` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
-- [[web_content_scanner.py]] - `contains` [EXTRACTED]
-- [[web_proxy.py]] - `imports` [EXTRACTED]
+- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_93
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

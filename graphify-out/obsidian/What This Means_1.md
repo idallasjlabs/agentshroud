@@ -1,17 +1,17 @@
 ---
-source_file: "docs/setup/IMESSAGE_STATUS.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
 type: "document"
-community: "Community 804"
-location: "L13"
+community: "3. Brutally Honest Self-Assessment"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_804
+  - community/3_Brutally_Honest_Self-Assessment
 ---
 
 # What This Means
 
 ## Connections
-- [[iMessage Integration Status]] - `contains` [EXTRACTED]
+- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_804
+#graphify/document #graphify/EXTRACTED #community/3_Brutally_Honest_Self-Assessment

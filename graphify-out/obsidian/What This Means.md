@@ -1,17 +1,17 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-03.md"
+source_file: "docs/archive/SECURITY.md"
 type: "document"
-community: "Community 1115"
-location: "L28"
+community: "Security Architecture"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1115
+  - community/Security_Architecture
 ---
 
 # What This Means
 
 ## Connections
-- [[1. Accomplishments This Phase (Feb 25 – Mar 3)]] - `contains` [EXTRACTED]
+- [[Build Process Security]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1115
+#graphify/document #graphify/EXTRACTED #community/Security_Architecture

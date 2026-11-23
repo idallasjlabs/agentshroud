@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 337"
-location: "L202"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L201"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_337
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Voice & Tone
 
 ## Connections
-- [[Writing Style Rules_1]] - `contains` [EXTRACTED]
+- [[Writing Style Rules]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_337
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

@@ -1,19 +1,19 @@
 ---
 source_file: "skills/openclaw/video-frames/SKILL.md"
 type: "document"
-community: "Community 1117"
+community: "Video Frames (ffmpeg)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1117
+  - community/Video_Frames_ffmpeg
 ---
 
 # Video Frames (ffmpeg)
 
 ## Connections
-- [[Notes_9]] - `contains` [EXTRACTED]
-- [[Quick start_4]] - `contains` [EXTRACTED]
-- [[SKILL_246]] - `contains` [EXTRACTED]
+- [[Notes_5]] - `contains` [EXTRACTED]
+- [[Quick start_6]] - `contains` [EXTRACTED]
+- [[video-framesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1117
+#graphify/document #graphify/EXTRACTED #community/Video_Frames_ffmpeg

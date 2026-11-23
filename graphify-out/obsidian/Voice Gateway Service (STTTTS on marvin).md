@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "concept"
-community: "Community 555"
+community: "AgentShroud Changelog"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/AgentShroud_Changelog
 ---
 
 # Voice Gateway Service (STT/TTS on marvin)
@@ -15,4 +15,4 @@ tags:
 - [[Reachability Context (cap_drop ALL, isolated network)]] - `conceptually_related_to` [INFERRED]
 - [[Tailscale Funnel Exposure (supersedes on-device client)]] - `rationale_for` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_555
+#graphify/concept #graphify/EXTRACTED #community/AgentShroud_Changelog

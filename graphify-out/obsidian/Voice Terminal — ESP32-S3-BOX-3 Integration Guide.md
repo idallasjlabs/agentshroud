@@ -1,18 +1,20 @@
 ---
 source_file: "docs/integrations/voice-terminal-esp32-s3.md"
 type: "document"
-community: "Community 144"
+community: "AgentShroud v0.7.0 Enforcement Audit Results"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_144
+  - community/AgentShroud_v070_Enforcement_Audit_Results
 ---
 
 # Voice Terminal — ESP32-S3-BOX-3 Integration Guide
 
 ## Connections
+- [[AgentShroud™ README]] - `references` [EXTRACTED]
 - [[Egress Filter  SSRF Protection]] - `references` [EXTRACTED]
 - [[PII Sanitizer (Presidio + regex hybrid)]] - `references` [EXTRACTED]
+- [[docsREADME]] - `references` [EXTRACTED]
 - [[voice-gateway service (ESP32 voice terminal backend)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_144
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_v070_Enforcement_Audit_Results

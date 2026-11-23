@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: ""
 type: "code"
-community: "Community 6"
-location: "L38"
+community: "test_soc_realtime_coverage.py"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/test_soc_realtime_coveragepy
 ---
 
 # WebSocket
 
 ## Connections
-- [[.__init__()_144]] - `references` [EXTRACTED]
-- [[Severity_2]] - `uses` [INFERRED]
-- [[WSEvent]] - `uses` [INFERRED]
-- [[WSEventType]] - `uses` [INFERRED]
+- [[dot-__init__()_178]] - `references` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

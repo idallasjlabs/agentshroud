@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mm.md"
+source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
 type: "document"
-community: "Community 513"
-location: "L323"
+community: "hermes/skills/i-cr/SKILL.md"
+location: "L231"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_513
+  - community/hermes/skills/i-cr/SKILLmd
 ---
 
 # Validation Checklist
 
 ## Connections
-- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
+- [[→ {site site1, test_mode True, output_prefix _testsite1}]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_513
+#graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

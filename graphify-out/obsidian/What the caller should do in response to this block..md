@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "rationale"
-community: "Community 75"
+community: "LockdownLevel"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/LockdownLevel
 ---
 
 # What the caller should do in response to this block.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LockdownAction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_75
+#graphify/rationale #graphify/EXTRACTED #community/LockdownLevel

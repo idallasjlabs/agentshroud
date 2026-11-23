@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-21.md"
 type: "rationale"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/upgrade-2026-09-21md
 ---
 
 # Vendor supply-chain freshness gate (npm min-release-age / uv exclude-newer)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[upgrade-2026-09-21]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_118
+#graphify/rationale #graphify/EXTRACTED #community/upgrade-2026-09-21md

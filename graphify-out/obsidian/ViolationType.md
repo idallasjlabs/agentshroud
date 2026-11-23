@@ -1,55 +1,34 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "Community 11"
+community: "lifespan.py"
 location: "L44"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_11
+  - graphify/EXTRACTED
+  - community/lifespanpy
 ---
 
 # ViolationType
 
 ## Connections
-- [[A2APolicyEngine]] - `uses` [INFERRED]
+- [[dot-record_violation()]] - `references` [EXTRACTED]
 - [[A2AProxy]] - `uses` [INFERRED]
-- [[A2AProxyResult]] - `uses` [INFERRED]
-- [[Any_21]] - `uses` [INFERRED]
-- [[Any_29]] - `uses` [INFERRED]
-- [[AuditChain]] - `uses` [INFERRED]
-- [[AuditChainEntry]] - `uses` [INFERRED]
-- [[Enum]] - `inherits` [EXTRACTED]
-- [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[ParsedA2ARequest]] - `uses` [INFERRED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_1]] - `uses` [INFERRED]
-- [[ProgressiveTrustConfig_2]] - `uses` [INFERRED]
+- [[Enum_32]] - `inherits` [EXTRACTED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[TestBackwardCompat]] - `uses` [INFERRED]
-- [[TestEnforcementMode]] - `uses` [INFERRED]
-- [[TestEnforcementModeResolver]] - `uses` [INFERRED]
-- [[TestEnumMapping]] - `uses` [INFERRED]
-- [[TestGatedPromotion]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
-- [[TestToolACLComposition]] - `uses` [INFERRED]
-- [[TestToolGating]] - `uses` [INFERRED]
 - [[TestTypedViolations]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustLevel_2]] - `uses` [INFERRED]
-- [[TrustManager_2]] - `uses` [INFERRED]
-- [[TrustManager_4]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
+- [[TrustManager]] - `uses` [INFERRED]
 - [[Types of security violations.]] - `rationale_for` [EXTRACTED]
-- [[ViolationType_1]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `uses` [INFERRED]
 - [[a2a_proxy.py]] - `imports` [EXTRACTED]
-- [[pipeline.py]] - `imports` [EXTRACTED]
+- [[pipeline.py_1]] - `imports` [EXTRACTED]
 - [[progressive_trust_config.py]] - `contains` [EXTRACTED]
+- [[test_a2a_ssrf_callback_is_a_severe_violation_by_default()]] - `uses` [INFERRED]
+- [[test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()]] - `uses` [INFERRED]
+- [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - `uses` [INFERRED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
+- [[test_a2a_violation_types_exist()]] - `uses` [INFERRED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

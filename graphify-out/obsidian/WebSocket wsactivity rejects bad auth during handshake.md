@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "Community 62"
+community: "ingest_api/main.py"
 location: "L257"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # WebSocket /ws/activity rejects bad auth during handshake
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_activity_requires_auth()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_62
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

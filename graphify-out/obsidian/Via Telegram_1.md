@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/IDENTITY.md"
+source_file: "docker/SYSTEM-INSTRUCTIONS-SECURITY.md"
 type: "document"
-community: "Community 899"
-location: "L49"
+community: "System Instructions: Credential Security (Ultra-Conservative)"
+location: "L304"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_899
+  - community/System_Instructions_Credential_Security_Ultra-Conservative
 ---
 
-# Via Telegram:
+# Via Telegram
 
 ## Connections
-- [[💬 Communication Flow]] - `contains` [EXTRACTED]
+- [[💬 Example Conversations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_899
+#graphify/document #graphify/EXTRACTED #community/System_Instructions_Credential_Security_Ultra-Conservative
