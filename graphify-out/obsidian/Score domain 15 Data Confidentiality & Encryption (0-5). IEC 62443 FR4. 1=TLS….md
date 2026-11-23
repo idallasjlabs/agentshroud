@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/scanner_integration.py"
+type: "rationale"
+community: "scanner_integration.py"
+location: "L1328"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/scanner_integrationpy
+---
+
+# Score domain 15: Data Confidentiality & Encryption (0-5). IEC 62443 FR4. 1=TLS…
+
+## Connections
+- [[_score_data_confidentiality_encryption()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

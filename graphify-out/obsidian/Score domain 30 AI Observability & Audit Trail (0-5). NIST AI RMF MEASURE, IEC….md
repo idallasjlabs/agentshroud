@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/scanner_integration.py"
+type: "rationale"
+community: "scanner_integration.py"
+location: "L1970"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/scanner_integrationpy
+---
+
+# Score domain 30: AI Observability & Audit Trail (0-5). NIST AI RMF MEASURE, IEC…
+
+## Connections
+- [[_score_ai_observability()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/scanner_integrationpy

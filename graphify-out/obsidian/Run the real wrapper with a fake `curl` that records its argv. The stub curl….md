@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_bots_ssh_exec_wrapper.py"
+type: "rationale"
+community: "test_bots_ssh_exec_wrapper.py"
+location: "L270"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/test_bots_ssh_exec_wrapperpy
+---
+
+# Run the real wrapper with a fake `curl` that records its argv. The stub curl…
+
+## Connections
+- [[_run_wrapper_capture_bearer()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/test_bots_ssh_exec_wrapperpy

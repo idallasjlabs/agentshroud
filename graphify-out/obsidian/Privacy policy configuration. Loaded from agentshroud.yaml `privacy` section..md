@@ -1,0 +1,17 @@
+---
+source_file: "gateway/security/privacy_policy.py"
+type: "rationale"
+community: "PrivacyPolicyEnforcer"
+location: "L118"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/PrivacyPolicyEnforcer
+---
+
+# Privacy policy configuration. Loaded from agentshroud.yaml `privacy:` section.
+
+## Connections
+- [[PrivacyPolicy]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

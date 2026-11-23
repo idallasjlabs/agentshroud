@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "telegram_proxy.py"
+location: "L373"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/telegram_proxypy
+---
+
+# Result of the shared outbound text security scan. processed: a scan path…
+
+## Connections
+- [[_OutboundScan]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "TelegramAPIProxy"
+location: "L813"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/TelegramAPIProxy
+---
+
+# Resolve target by id, static alias, or pending username alias. Resolution…
+
+## Connections
+- [[dot-_extract_owner_target_resolved()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

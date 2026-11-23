@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "TelegramAPIProxy"
+location: "L654"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/TelegramAPIProxy
+---
+
+# Return True when ``text`` is a bare liveness-check phrase. Strips a leading…
+
+## Connections
+- [[dot-_matches_presence_probe()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
