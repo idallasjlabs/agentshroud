@@ -1,31 +1,32 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "Community 6"
+community: "soc/router.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # rbac.py
 
 ## Connections
-- [[Action_1]] - `contains` [EXTRACTED]
-- [[CVE-2026-22172 — WebSocket Scope Self-Declaration]] - `references` [EXTRACTED]
-- [[CVE-2026-32922 — Token Scope Expansion via device.token.rotate]] - `references` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[FR2 Use Control]] - `references` [EXTRACTED]
+- [[Action]] - `contains` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[PermissionResult]] - `contains` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[RBACManager_1]] - `contains` [EXTRACTED]
-- [[Resource_1]] - `contains` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
-- [[ToolTier_2]] - `imports` [EXTRACTED]
-- [[auth.py_1]] - `imports_from` [EXTRACTED]
+- [[RBAC Manager - Role-Based Access Control Core Implements role-based access…]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `imports` [EXTRACTED]
+- [[RBACManager]] - `contains` [EXTRACTED]
+- [[Resource]] - `contains` [EXTRACTED]
+- [[Role]] - `imports` [EXTRACTED]
+- [[ToolTier]] - `imports` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
-- [[router.py_1]] - `imports_from` [EXTRACTED]
+- [[socauth.py]] - `imports_from` [EXTRACTED]
+- [[socrouter.py]] - `imports_from` [EXTRACTED]
+- [[test_rbac.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_edge.py]] - `imports_from` [EXTRACTED]
+- [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/testing/release-check.sh"
 type: "code"
-community: "Community 2307"
+community: "release-check.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2307
+  - community/release-checksh
 ---
 
 # release-check.sh
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[release-check.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2307
+#graphify/code #graphify/EXTRACTED #community/release-checksh

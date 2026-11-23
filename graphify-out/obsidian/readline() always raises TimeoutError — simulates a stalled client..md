@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "Community 120"
+community: "test_http_proxy_coverage.py"
 location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/test_http_proxy_coveragepy
 ---
 
 # readline() always raises TimeoutError — simulates a stalled client.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_TimeoutReader]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/test_http_proxy_coveragepy

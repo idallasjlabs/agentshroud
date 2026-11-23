@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 657"
+community: "ledger.py"
 location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_657
+  - community/ledgerpy
 ---
 
 # record(source, content, original_content, sanitized, redaction_count, redaction_types, forwarded_to, content_type, metadata)
 
 ## Connections
-- [[Function Details_2]] - `contains` [EXTRACTED]
+- [[Function Details_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_657
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

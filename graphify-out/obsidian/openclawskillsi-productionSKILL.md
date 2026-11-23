@@ -1,18 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-production/SKILL.md"
 type: "document"
-community: "MiddlewareManager (8)"
+community: "Phase 3: MITIGATE (Rollback First!)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MiddlewareManager_8
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # openclaw/skills/i-production/SKILL.md
 
 ## Connections
-- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
-- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MiddlewareManager_8
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

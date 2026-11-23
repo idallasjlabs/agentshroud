@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Community 707"
+community: "python-jose"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/python-jose
 ---
 
 # python-jose
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[Auth Methods]] - `contains` [EXTRACTED]
 - [[Current Usage]] - `contains` [EXTRACTED]
-- [[Key Features_1]] - `contains` [EXTRACTED]
-- [[Purpose_193]] - `contains` [EXTRACTED]
-- [[Related Notes_48]] - `contains` [EXTRACTED]
-- [[Security Note_2]] - `contains` [EXTRACTED]
+- [[Key Features]] - `contains` [EXTRACTED]
+- [[Purpose_77]] - `contains` [EXTRACTED]
+- [[Related Notes_46]] - `contains` [EXTRACTED]
+- [[Security Note_1]] - `contains` [EXTRACTED]
 - [[python-jose]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_707
+#graphify/document #graphify/EXTRACTED #community/python-jose

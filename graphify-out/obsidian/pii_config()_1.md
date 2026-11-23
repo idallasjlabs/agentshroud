@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 7"
-location: "L40"
+community: "test_e2e_proxy.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/test_e2e_proxypy
 ---
 
 # pii_config()
 
 ## Connections
-- [[PIIConfig]] - `calls` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[PIIConfig]] - `uses` [INFERRED]
+- [[fixture_85]] - `references` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

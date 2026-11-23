@@ -1,24 +1,23 @@
 ---
 source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "Community 1051"
+community: "postmortem.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1051
+  - community/postmortemmd
 ---
 
 # postmortem.md
 
 ## Connections
-- [[CLAUDE_1]] - `conceptually_related_to` [INFERRED]
 - [[Contributing Factors]] - `contains` [EXTRACTED]
 - [[Follow-Up Actions]] - `contains` [EXTRACTED]
 - [[Incident Summary]] - `contains` [EXTRACTED]
 - [[Remediation]] - `contains` [EXTRACTED]
-- [[Root Cause]] - `contains` [EXTRACTED]
+- [[Root Cause_1]] - `contains` [EXTRACTED]
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - `contains` [EXTRACTED]
 - [[Timeline]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1051
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

@@ -1,14 +1,18 @@
 ---
 source_file: "firmware/voice-terminal/main/ota.h"
 type: "code"
-community: "Community 1766"
+community: "ota.c"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1766
+  - community/otac
 ---
 
 # ota.h
 
-#graphify/code #graphify/EXTRACTED #community/Community_1766
+## Connections
+- [[app_main.c]] - `imports` [EXTRACTED]
+- [[ota.c]] - `imports` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/otac

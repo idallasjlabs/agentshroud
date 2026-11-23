@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-eightd/README.md"
 type: "document"
-community: "dashboard_endpoints.py (3)"
+community: "8D Root Cause Analysis"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy_3
+  - community/8D_Root_Cause_Analysis
 ---
 
 # openclaw/skills/i-eightd/README.md
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard_endpointspy_3
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

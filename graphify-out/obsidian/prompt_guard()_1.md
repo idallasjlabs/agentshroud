@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "Community 22"
+community: "PromptGuard"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/PromptGuard
 ---
 
 # prompt_guard()
 
 ## Connections
 - [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `uses` [INFERRED]
+- [[fixture_96]] - `references` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/scripts/patch-anthropic-sdk.sh"
 type: "code"
-community: "Community 1350"
+community: "patch-anthropic-sdk.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1350
+  - community/patch-anthropic-sdksh
 ---
 
 # patch-anthropic-sdk.sh script
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[patch-anthropic-sdk.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1350
+#graphify/code #graphify/EXTRACTED #community/patch-anthropic-sdksh

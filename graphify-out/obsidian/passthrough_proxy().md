@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "Community 64"
+community: "test_mcp_proxy.py"
 location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_64
+  - community/test_mcp_proxypy
 ---
 
 # passthrough_proxy()
 
 ## Connections
-- [[MCPProxy]] - `calls` [EXTRACTED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[fixture_52]] - `references` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

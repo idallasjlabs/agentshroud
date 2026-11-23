@@ -1,29 +1,28 @@
 ---
 source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 617"
-location: "L1"
+community: "prompt_guard.py"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_617
+  - community/prompt_guardpy
 ---
 
-# prompt_guard.py.md
+# prompt_guard.py
 
 ## Connections
-- [[Configuration_21]] - `contains` [EXTRACTED]
-- [[Dependencies_49]] - `contains` [EXTRACTED]
-- [[Environment Variables_15]] - `contains` [EXTRACTED]
-- [[Function Details_45]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_48]] - `contains` [EXTRACTED]
-- [[Mode Enforce vs Monitor_10]] - `contains` [EXTRACTED]
+- [[Configuration_2]] - `contains` [EXTRACTED]
+- [[Dependencies]] - `contains` [EXTRACTED]
+- [[Environment Variables_1]] - `contains` [EXTRACTED]
+- [[Function Details_2]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_4]] - `contains` [EXTRACTED]
+- [[Mode Enforce vs Monitor_1]] - `contains` [EXTRACTED]
 - [[Pattern Categories and Weights]] - `contains` [EXTRACTED]
-- [[Purpose_166]] - `contains` [EXTRACTED]
-- [[Related_52]] - `contains` [EXTRACTED]
-- [[Responsibilities_50]] - `contains` [EXTRACTED]
-- [[SOUL_2]] - `references` [EXTRACTED]
-- [[Threat Model_21]] - `contains` [EXTRACTED]
-- [[prompt_guard.py_2]] - `contains` [EXTRACTED]
+- [[Purpose_4]] - `contains` [EXTRACTED]
+- [[Related_4]] - `contains` [EXTRACTED]
+- [[Responsibilities_4]] - `contains` [EXTRACTED]
+- [[Threat Model_2]] - `contains` [EXTRACTED]
+- [[prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_617
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

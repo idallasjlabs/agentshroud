@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # persist_user_collab_mode writes under __user_overrides__ key.
 
 ## Connections
-- [[.test_persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_persist_user_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_18
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy

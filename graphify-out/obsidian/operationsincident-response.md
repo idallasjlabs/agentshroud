@@ -1,24 +1,17 @@
 ---
 source_file: "docs/operations/incident-response.md"
 type: "document"
-community: "OpenClaw Bot SSH Configuration"
+community: "AgentShroud Incident Response Plan"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenClaw_Bot_SSH_Configuration
+  - community/AgentShroud_Incident_Response_Plan
 ---
 
 # operations/incident-response.md
 
 ## Connections
-- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
-- [[dot-agentsskillsi-productionREADME]] - `contains` [EXTRACTED]
 - [[AgentShroud Incident Response Plan]] - `contains` [EXTRACTED]
-- [[Incident Response (SKILL)]] - `conceptually_related_to` [INFERRED]
-- [[Purpose_63]] - `contains` [EXTRACTED]
-- [[Related Skills_50]] - `contains` [EXTRACTED]
-- [[Skills Guide (catalog)]] - `references` [EXTRACTED]
-- [[Usage_52]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenClaw_Bot_SSH_Configuration
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Incident_Response_Plan

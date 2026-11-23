@@ -1,16 +1,13 @@
 ---
 source_file: "docker/bots/hermes/patch_telegram_send_base_url.py"
 type: "code"
-community: "Community 584"
+community: "patch_telegram_send_base_url.py patch driver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_584
+  - community/patch_telegram_send_base_urlpy_patch_driver
 ---
 
 # patch_telegram_send_base_url.py patch driver
 
-## Connections
-- [[_read()]] - `calls` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_584
+#graphify/code #graphify/EXTRACTED #community/patch_telegram_send_base_urlpy_patch_driver

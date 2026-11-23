@@ -1,21 +1,21 @@
 ---
 source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "Community 522"
+community: "render_md_email.py"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_522
+  - community/render_md_emailpy
 ---
 
 # render()
 
 ## Connections
 - [[_inline()]] - `calls` [EXTRACTED]
-- [[_insert_into_list()]] - `calls` [INFERRED]
 - [[_render_table()]] - `calls` [EXTRACTED]
-- [[main()_4]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `references` [EXTRACTED]
+- [[_save_fence()]] - `indirect_call` [INFERRED]
+- [[main()_8]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_522
+#graphify/code #graphify/EXTRACTED #community/render_md_emailpy

@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ps/README.md"
 type: "document"
-community: "2. Security Value Audit — Real Protection vs. Theater Assessment"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/2_Security_Value_Audit__Real_Protection_vs_Theater_Assessment
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # openclaw/skills/i-ps/README.md
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/2_Security_Value_Audit__Real_Protection_vs_Theater_Assessment
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

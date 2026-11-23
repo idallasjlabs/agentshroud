@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "Community 18"
+community: "telegram_proxy.py"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_18
+  - community/telegram_proxypy
 ---
 
 # persist_group_delete()
@@ -17,6 +17,6 @@ tags:
 - [[_save_overrides()]] - `calls` [EXTRACTED]
 - [[delete_group()]] - `calls` [EXTRACTED]
 - [[group_config.py]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `imports` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_18
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "Implement per-user session isolation using Telegram user ID"
+community: "chat"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Implement_per-user_session_isolation_using_Telegram_user_ID
+  - community/chat
 ---
 
 # post
 
 ## Connections
-- [[start_install()]] - `references` [EXTRACTED]
+- [[chat()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Implement_per-user_session_isolation_using_Telegram_user_ID
+#graphify/code #graphify/EXTRACTED #community/chat

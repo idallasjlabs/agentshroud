@@ -1,18 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-hdev/SKILL.md"
 type: "document"
-community: "fixture"
+community: "Mode A — Single task"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fixture
+  - community/Mode_A__Single_task
 ---
 
 # openclaw/skills/i-hdev/SKILL.md
 
 ## Connections
 - [[Skill Hermes Dev Workflow (HDEV)_1]] - `contains` [EXTRACTED]
-- [[Skill OpenClaw Dev Workflow (ODEV)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fixture
+#graphify/document #graphify/EXTRACTED #community/Mode_A__Single_task

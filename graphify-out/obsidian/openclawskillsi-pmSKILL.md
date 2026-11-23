@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-pm/SKILL.md"
 type: "document"
-community: "Skill: Project Management (PM) (2)"
+community: "Skill: Project Management (PM)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_2
+  - community/Skill_Project_Management_PM
 ---
 
 # openclaw/skills/i-pm/SKILL.md
 
 ## Connections
-- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
+- [[Skill Project Management (PM)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM_2
+#graphify/document #graphify/EXTRACTED #community/Skill_Project_Management_PM

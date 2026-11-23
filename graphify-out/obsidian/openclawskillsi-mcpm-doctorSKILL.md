@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-doctor/SKILL.md"
 type: "document"
-community: "Skill: MCP Doctor (MCPM-DOCTOR) (2)"
+community: "Skill: MCP Doctor (MCPM-DOCTOR)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_MCP_Doctor_MCPM-DOCTOR_2
+  - community/Skill_MCP_Doctor_MCPM-DOCTOR
 ---
 
 # openclaw/skills/i-mcpm-doctor/SKILL.md
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Doctor (MCPM-DOCTOR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR_2
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Doctor_MCPM-DOCTOR

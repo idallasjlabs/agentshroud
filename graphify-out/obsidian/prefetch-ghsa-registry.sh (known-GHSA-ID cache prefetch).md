@@ -1,17 +1,13 @@
 ---
 source_file: "docker/config/openclaw/cron/scripts/prefetch-ghsa-registry.sh"
 type: "code"
-community: "Community 639"
+community: "prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_639
+  - community/prefetch-ghsa-registrysh_known-GHSA-ID_cache_prefetch
 ---
 
 # prefetch-ghsa-registry.sh (known-GHSA-ID cache prefetch)
 
-## Connections
-- [[gatewaysecurityagent_cve_registry.py GHSA registry]] - `references` [EXTRACTED]
-- [[known_ghsa_ids()]] - `shares_data_with` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_639
+#graphify/code #graphify/EXTRACTED #community/prefetch-ghsa-registrysh_known-GHSA-ID_cache_prefetch

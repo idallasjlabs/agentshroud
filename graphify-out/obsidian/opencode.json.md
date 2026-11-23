@@ -1,18 +1,18 @@
 ---
 source_file: "opencode.json"
 type: "code"
-community: "Community 159"
+community: "mcp"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_159
+  - community/mcp
 ---
 
 # opencode.json
 
 ## Connections
-- [[$schema_1]] - `contains` [EXTRACTED]
+- [[$schema]] - `contains` [EXTRACTED]
 - [[mcp]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_159
+#graphify/code #graphify/EXTRACTED #community/mcp

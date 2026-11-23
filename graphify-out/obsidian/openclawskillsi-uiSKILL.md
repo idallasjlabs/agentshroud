@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/openclaw/skills/i-ui/SKILL.md"
 type: "document"
-community: "Slack Channel Setup"
+community: "Skill: UI Expert (UI)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Slack_Channel_Setup
+  - community/Skill_UI_Expert_UI
 ---
 
 # openclaw/skills/i-ui/SKILL.md
 
 ## Connections
-- [[Skill UI Expert (UI)_2]] - `contains` [EXTRACTED]
+- [[Skill UI Expert (UI)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Slack_Channel_Setup
+#graphify/document #graphify/EXTRACTED #community/Skill_UI_Expert_UI

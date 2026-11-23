@@ -1,12 +1,12 @@
 ---
-source_file: ".pi/mcp.json"
+source_file: ".omp/mcp.json"
 type: "code"
-community: "Community 405"
+community: ".omp/mcp.json"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_405
+  - community/omp/mcpjson
 ---
 
 # outputPath
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xmind_4]] - `requires_env` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_405
+#graphify/code #graphify/EXTRACTED #community/omp/mcpjson

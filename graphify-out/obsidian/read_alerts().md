@@ -1,26 +1,27 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "Community 102"
+community: "FalcoAlertWatcher"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/FalcoAlertWatcher
 ---
 
 # read_alerts()
 
 ## Connections
-- [[.test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
-- [[Any_48]] - `references` [EXTRACTED]
-- [[Path_13]] - `references` [EXTRACTED]
-- [[Read Falco alerts from the alert directory.      Args         alert_dir Direct]] - `rationale_for` [EXTRACTED]
-- [[datetime_4]] - `references` [EXTRACTED]
+- [[dot-test_read_alerts_missing_dir()]] - `calls` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
+- [[Path]] - `references` [EXTRACTED]
+- [[Read Falco alerts from the alert directory. Args alert_dir Directory…]] - `rationale_for` [EXTRACTED]
+- [[datetime]] - `references` [EXTRACTED]
+- [[falco_alerts()]] - `calls` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `calls` [EXTRACTED]
 - [[parse_alert()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

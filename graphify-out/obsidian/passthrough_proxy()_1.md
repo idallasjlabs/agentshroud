@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "Community 120"
+community: "WebProxy"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/WebProxy
 ---
 
 # passthrough_proxy()
 
 ## Connections
-- [[WebProxy_1]] - `calls` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[fixture_108]] - `references` [EXTRACTED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_120
+#graphify/code #graphify/EXTRACTED #community/WebProxy

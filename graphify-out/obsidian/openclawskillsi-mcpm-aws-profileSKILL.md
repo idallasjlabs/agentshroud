@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md"
 type: "document"
-community: "openclaw/workspace/jira_dev_ticket.py"
+community: "Skill: MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/openclaw/workspace/jira_dev_ticketpy
+  - community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # openclaw/skills/i-mcpm-aws-profile/SKILL.md
@@ -15,4 +15,4 @@ tags:
 - [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/openclaw/workspace/jira_dev_ticketpy
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
