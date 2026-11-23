@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "ProxyAction"
+community: "ToolResultInjectionScanner"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyAction
+  - community/ToolResultInjectionScanner
 ---
 
 # .test_new_instructions_override()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHighSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyAction
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

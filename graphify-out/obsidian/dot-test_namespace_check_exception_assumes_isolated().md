@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MiddlewareManager (3) (2)"
+community: "TestContainerRuntimeIsolation"
 location: "L944"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_3_2
+  - community/TestContainerRuntimeIsolation
 ---
 
 # .test_namespace_check_exception_assumes_isolated()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestContainerRuntimeIsolation]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
+- [[raising_path()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_3_2
+#graphify/code #graphify/EXTRACTED #community/TestContainerRuntimeIsolation

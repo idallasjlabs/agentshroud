@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "LOW Findings"
+community: "run_multi_host"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LOW_Findings
+  - community/run_multi_host
 ---
 
 # .test_on_host_callback_invoked_per_host()
@@ -16,4 +16,4 @@ tags:
 - [[_fake_runner()]] - `calls` [EXTRACTED]
 - [[run_multi_host()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LOW_Findings
+#graphify/code #graphify/EXTRACTED #community/run_multi_host

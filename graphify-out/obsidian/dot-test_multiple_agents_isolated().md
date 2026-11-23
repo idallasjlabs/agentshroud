@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "._make_proxy()"
+community: "ResourceGuard"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ResourceGuard
 ---
 
 # .test_multiple_agents_isolated()
@@ -15,4 +15,4 @@ tags:
 - [[Test that different agents have isolated resource tracking.]] - `rationale_for` [EXTRACTED]
 - [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

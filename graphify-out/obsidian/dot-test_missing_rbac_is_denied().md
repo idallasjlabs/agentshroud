@@ -12,6 +12,7 @@ tags:
 # .test_missing_rbac_is_denied()
 
 ## Connections
+- [[dot-_is_authorized_group_writer()]] - `calls` [EXTRACTED]
 - [[No RBAC principal → cannot authorize → deny (fail-closed).]] - `rationale_for` [EXTRACTED]
 - [[TestAuthorizationHelper]] - `method` [EXTRACTED]
 

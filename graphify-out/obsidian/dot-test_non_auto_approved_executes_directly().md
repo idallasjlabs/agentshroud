@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "MCPPermissionManager (2)"
+community: "SSHResult"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager_2
+  - community/SSHResult
 ---
 
 # .test_non_auto_approved_executes_directly()
@@ -16,4 +16,4 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `method` [EXTRACTED]
 - [[When require_approval=false, non-auto-approved commands execute directly.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager_2
+#graphify/code #graphify/EXTRACTED #community/SSHResult

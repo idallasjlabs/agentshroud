@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestCriticalGuardInitFailClosed"
 location: "L1056"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestCriticalGuardInitFailClosed
 ---
 
 # .test_non_owner_blocked_when_critical_guard_failed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCriticalGuardInitFailClosed]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestCriticalGuardInitFailClosed

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "FakeRBAC"
 location: "L6099"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/FakeRBAC
 ---
 
 # .test_non_owner_non_http_url_does_not_suppress_separate_bare_domain_preflight()
@@ -18,7 +18,7 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[check_async()_14]] - `contains` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[check_async()_11]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "asyncio"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/asyncio
 ---
 
 # .test_nonexistent_entry_returns_none()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Looking up nonexistent entry returns None.]] - `rationale_for` [EXTRACTED]
 - [[TestTamperDetection]] - `method` [EXTRACTED]
+- [[asyncio_39]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/asyncio

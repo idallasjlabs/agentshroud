@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "_make_cve"
+community: "BotConfig"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_cve
+  - community/BotConfig
 ---
 
 # .test_miss_debounced_within_rebuild_interval()
@@ -14,8 +14,10 @@ tags:
 ## Connections
 - [[dot-_allowed_networks()]] - `calls` [EXTRACTED]
 - [[dot-_mock_request()]] - `calls` [EXTRACTED]
-- [[Repeated misses within the debounce window must not re-read secrets         on e]] - `rationale_for` [EXTRACTED]
+- [[Repeated misses within the debounce window must not re-read secrets on every…]] - `rationale_for` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `method` [EXTRACTED]
+- [[_fake_read_secret()]] - `contains` [EXTRACTED]
+- [[_fake_read_secret()_1]] - `indirect_call` [INFERRED]
 - [[telegram_api_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_cve
+#graphify/code #graphify/EXTRACTED #community/BotConfig

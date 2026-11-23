@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path"
+community: "_entry"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_entry
 ---
 
 # .test_not_source_fixed_full_class_is_fully_mitigated_without_source_fix()
@@ -17,4 +17,4 @@ tags:
 - [[_not_yet_fixed()]] - `calls` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_entry

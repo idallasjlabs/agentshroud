@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_browser_security.py"
 type: "code"
-community: "AgentShroud™ README"
+community: "BrowserSecurityGuard"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_README
+  - community/BrowserSecurityGuard
 ---
 
 # .test_multiple_threats_aggregated()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSocialEngineeringDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_README
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

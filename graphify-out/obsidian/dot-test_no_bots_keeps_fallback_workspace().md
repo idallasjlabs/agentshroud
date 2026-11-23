@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestSetConfig"
 location: "L928"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestSetConfig
 ---
 
 # .test_no_bots_keeps_fallback_workspace()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSetConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestSetConfig

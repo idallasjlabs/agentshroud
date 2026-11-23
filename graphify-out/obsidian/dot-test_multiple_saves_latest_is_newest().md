@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "IntelReportStore"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/IntelReportStore
 ---
 
 # .test_multiple_saves_latest_is_newest()
@@ -16,4 +16,4 @@ tags:
 - [[IntelReportStore]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

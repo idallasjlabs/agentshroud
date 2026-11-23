@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
+community: "FakeRBAC"
 location: "L6242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/FakeRBAC
 ---
 
 # .test_non_owner_non_standard_web_port_does_not_queue_egress_preflight()
@@ -17,8 +17,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
-- [[check_async()_15]] - `contains` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[check_async()_12]] - `contains` [EXTRACTED]
 - [[web_fetch preflight approvals should only allow standard web ports.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/FakeRBAC

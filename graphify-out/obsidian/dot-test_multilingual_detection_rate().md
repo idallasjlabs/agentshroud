@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "test_adversarial_injection.py"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/test_adversarial_injectionpy
 ---
 
 # .test_multilingual_detection_rate()
 
 ## Connections
-- [[HeuristicClassifier]] - `calls` [EXTRACTED]
-- [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestMultilingual]] - `method` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_adversarial_injectionpy

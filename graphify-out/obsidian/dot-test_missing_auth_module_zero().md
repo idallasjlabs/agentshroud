@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: ".agents/skills/i-devsecops/SKILL.md"
+community: "test_scanner_integration_coverage.py"
 location: "L716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/agents/skills/i-devsecops/SKILLmd
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_missing_auth_module_zero()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIdentityAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/agents/skills/i-devsecops/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

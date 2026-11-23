@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_middleware_coverage.py"
 location: "L692"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_middleware_coveragepy
 ---
 
 # .test_missing_returns_none()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExtractUserId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

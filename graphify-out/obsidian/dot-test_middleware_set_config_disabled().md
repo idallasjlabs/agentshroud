@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
+community: "RedactionResult"
 location: "L321"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # .test_middleware_set_config_disabled()
 
 ## Connections
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[PIIConfig_2]] - `calls` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
 - [[Test middleware configuration with disabled tool result PII]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

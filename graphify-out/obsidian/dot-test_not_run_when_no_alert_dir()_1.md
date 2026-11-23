@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "parse_clamscan_output"
+community: "get_wazuh_summary"
 location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/get_wazuh_summary
 ---
 
 # .test_not_run_when_no_alert_dir()
 
 ## Connections
-- [[Path_33]] - `calls` [EXTRACTED]
 - [[TestGetWazuhSummary]] - `method` [EXTRACTED]
 - [[get_wazuh_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary

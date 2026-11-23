@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "ToolACLEnforcer"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/ToolACLEnforcer
 ---
 
 # .test_no_rbac_allows_read()
@@ -16,4 +16,4 @@ tags:
 - [[ToolACLConfig]] - `calls` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

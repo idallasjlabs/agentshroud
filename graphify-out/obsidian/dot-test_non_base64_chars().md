@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "_looks_like_base64()"
+community: "URLAnalyzer"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_looks_like_base64
+  - community/URLAnalyzer
 ---
 
 # .test_non_base64_chars()
@@ -15,4 +15,4 @@ tags:
 - [[TestBase64Heuristic]] - `method` [EXTRACTED]
 - [[_looks_like_base64()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_looks_like_base64
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

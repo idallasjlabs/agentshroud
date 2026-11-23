@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_telegram_notify.py"
 type: "code"
-community: "apply-patches.js"
+community: "TestEgressTelegramNotify"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/TestEgressTelegramNotify
 ---
 
 # .test_notify_pending_failure()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test notification handles API failure gracefully.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
+- [[asyncio_45]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

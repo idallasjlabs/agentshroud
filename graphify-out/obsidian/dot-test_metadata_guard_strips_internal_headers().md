@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TestInfoLeakage"
 location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestInfoLeakage
 ---
 
 # .test_metadata_guard_strips_internal_headers()
@@ -16,4 +16,4 @@ tags:
 - [[MetadataGuard]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestInfoLeakage

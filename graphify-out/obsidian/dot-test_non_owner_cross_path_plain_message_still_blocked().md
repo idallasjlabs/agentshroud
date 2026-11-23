@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_file_sandbox_message_gate.py"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # .test_non_owner_cross_path_plain_message_still_blocked()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestOwnerBypassContentPatternChecks]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
+- [[asyncio_61]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

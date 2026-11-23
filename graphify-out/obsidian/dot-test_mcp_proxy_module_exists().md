@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "PromptGuard"
 location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PromptGuard
 ---
 
 # .test_mcp_proxy_module_exists()
@@ -15,4 +15,4 @@ tags:
 - [[MCP proxy module should be importable.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

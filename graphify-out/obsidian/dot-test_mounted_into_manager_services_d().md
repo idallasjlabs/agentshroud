@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_wazuh_watchdog.py"
 type: "code"
-community: "test_wazuh_watchdog.py"
+community: "_run_4b"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_wazuh_watchdogpy
+  - community/_run_4b
 ---
 
 # .test_mounted_into_manager_services_d()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWatchdogWiring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_wazuh_watchdogpy
+#graphify/code #graphify/EXTRACTED #community/_run_4b

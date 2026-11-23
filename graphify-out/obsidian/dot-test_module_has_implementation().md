@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "MiddlewareManager"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/MiddlewareManager
 ---
 
 # .test_module_has_implementation()
 
 ## Connections
 - [[TestReadmeModulesMatchCode]] - `method` [EXTRACTED]
+- [[parametrize]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

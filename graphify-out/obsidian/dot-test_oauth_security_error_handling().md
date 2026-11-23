@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "scanner_integration.py"
+community: "TestWebProxySecurityIntegration"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .test_oauth_security_error_handling()
@@ -17,4 +17,4 @@ tags:
 - [[Test that OAuth security errors don't block requests.]] - `rationale_for` [EXTRACTED]
 - [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "code"
-community: "RBACConfig (2)"
+community: "TestAtomicRegistryWrites"
 location: "L344"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RBACConfig_2
+  - community/TestAtomicRegistryWrites
 ---
 
 # .test_no_temp_files_left_behind()
@@ -15,4 +15,4 @@ tags:
 - [[A successful save leaves only the final registry file, no .tmp.]] - `rationale_for` [EXTRACTED]
 - [[TestAtomicRegistryWrites]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RBACConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestAtomicRegistryWrites

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "_wrap_response() (3)"
+community: "EgressEvent"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_3
+  - community/EgressEvent
 ---
 
 # .test_normal_volume_no_alert()
 
 ## Connections
 - [[EgressEvent]] - `calls` [EXTRACTED]
-- [[TestAnomalyDetection]] - `method` [EXTRACTED]
+- [[TestAnomalyDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_3
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

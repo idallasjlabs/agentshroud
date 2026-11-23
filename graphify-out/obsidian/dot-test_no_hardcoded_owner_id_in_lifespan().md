@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "._make_proxy()"
+community: "middleware.py"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/middlewarepy
 ---
 
 # .test_no_hardcoded_owner_id_in_lifespan()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDRYOwnerChatID]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

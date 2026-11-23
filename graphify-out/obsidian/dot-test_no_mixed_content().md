@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TestWebSecurity"
 location: "L737"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestWebSecurity
 ---
 
 # .test_no_mixed_content()
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard should not load HTTP resources.]] - `rationale_for` [EXTRACTED]
 - [[TestWebSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestWebSecurity

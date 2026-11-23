@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_update_conduit_push.py"
 type: "code"
-community: "_run()"
+community: "_run"
 location: "L187"
 tags:
   - graphify/code
@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestPinIsValidated]] - `method` [EXTRACTED]
-- [[_run()_1]] - `calls` [EXTRACTED]
+- [[_run()]] - `calls` [EXTRACTED]
 - [[_versions_file()]] - `calls` [EXTRACTED]
-- [[parametrize]] - `references` [EXTRACTED]
+- [[parametrize_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run

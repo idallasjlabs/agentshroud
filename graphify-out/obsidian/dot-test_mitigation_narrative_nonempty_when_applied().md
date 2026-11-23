@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "Path"
+community: "_entry"
 location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Path
+  - community/_entry
 ---
 
 # .test_mitigation_narrative_nonempty_when_applied()
@@ -16,4 +16,4 @@ tags:
 - [[_entry()]] - `calls` [EXTRACTED]
 - [[_t()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Path
+#graphify/code #graphify/EXTRACTED #community/_entry

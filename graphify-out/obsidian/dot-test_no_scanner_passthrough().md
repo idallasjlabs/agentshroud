@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestScanToolResult"
 location: "L837"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestScanToolResult
 ---
 
 # .test_no_scanner_passthrough()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScanToolResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestScanToolResult

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L465"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .test_middleware_normalizes_invisible_unicode()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Input normalization should strip zero-width obfuscation before guards run.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
+- [[asyncio_72]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

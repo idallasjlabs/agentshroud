@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "ToolResultSanitizer"
+community: "load_config"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/load_config
 ---
 
 # .test_missing_section_yields_deny_by_default_policy()
 
 ## Connections
-- [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default policy]] - `rationale_for` [EXTRACTED]
+- [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default…]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/load_config

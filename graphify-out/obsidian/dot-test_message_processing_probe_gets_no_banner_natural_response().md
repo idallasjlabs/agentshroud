@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "sunday-upgrade-report.sh"
+community: "TelegramAPIProxy"
 location: "L7553"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgrade-reportsh
+  - community/TelegramAPIProxy
 ---
 
 # .test_message_processing_probe_gets_no_banner_natural_response()
 
 ## Connections
+- [[dot-_build_collaborator_safe_info_response()]] - `calls` [EXTRACTED]
 - [[B1.2b pipelineprocessing questions should get a natural answer without…]] - `rationale_for` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-reportsh
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
