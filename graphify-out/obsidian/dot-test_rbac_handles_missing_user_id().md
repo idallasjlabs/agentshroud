@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "MiddlewareManager (2)"
+community: "MiddlewareManager"
 location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/MiddlewareManager
 ---
 
 # .test_rbac_handles_missing_user_id()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Test RBAC handling when user ID is missing.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

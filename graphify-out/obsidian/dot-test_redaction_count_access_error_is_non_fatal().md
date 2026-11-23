@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "SlackAPIProxy"
+community: "_make_proxy"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/_make_proxy
 ---
 
 # .test_redaction_count_access_error_is_non_fatal()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
-- [[Non-owner channel error reading info_filter_redaction_count is swallowed]] - `rationale_for` [EXTRACTED]
+- [[Non-owner channel error reading info_filter_redaction_count is swallowed and…]] - `rationale_for` [EXTRACTED]
 - [[TestRedactionCountErrorSwallow]] - `method` [EXTRACTED]
 - [[_RaisingRedactionResult]] - `calls` [EXTRACTED]
-- [[_make_proxy()_2]] - `calls` [EXTRACTED]
+- [[_make_proxy()]] - `calls` [EXTRACTED]
+- [[asyncio_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

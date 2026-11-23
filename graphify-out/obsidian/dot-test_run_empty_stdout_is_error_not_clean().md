@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Skill: Project Management (PM) (3)"
+community: "run_trivy_scan"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Skill_Project_Management_PM_3
+  - community/run_trivy_scan
 ---
 
 # .test_run_empty_stdout_is_error_not_clean()
 
 ## Connections
-- [[A 0-byteempty stdout means the scan failed to produce output --         it must]] - `rationale_for` [EXTRACTED]
+- [[A 0-byteempty stdout means the scan failed to produce output -- it must never…]] - `rationale_for` [EXTRACTED]
 - [[TestTrivyRun]] - `method` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `calls` [EXTRACTED]
+- [[patch_1]] - `references` [EXTRACTED]
+- [[run_trivy_scan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Skill_Project_Management_PM_3
+#graphify/code #graphify/EXTRACTED #community/run_trivy_scan

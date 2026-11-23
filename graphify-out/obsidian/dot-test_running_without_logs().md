@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "MCP tools available — GitHub (repos/PRs/issues), Atlassian (Jira/Confluence)"
+community: "TestFluentBitSummary"
 location: "L487"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCP_tools_available__GitHub_repos/PRs/issues_Atlassian_Jira/Confluence
+  - community/TestFluentBitSummary
 ---
 
 # .test_running_without_logs()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFluentBitSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCP_tools_available__GitHub_repos/PRs/issues_Atlassian_Jira/Confluence
+#graphify/code #graphify/EXTRACTED #community/TestFluentBitSummary

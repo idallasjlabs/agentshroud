@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "PromptGuard"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PromptGuard
 ---
 
 # .test_rapid_fire_scans()
 
 ## Connections
+- [[PromptGuard]] - `calls` [INFERRED]
 - [[Rapid scanning shouldn't degrade or crash.]] - `rationale_for` [EXTRACTED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

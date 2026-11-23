@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "Remediation"
+community: "_get_gmail_app_password"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Remediation
+  - community/_get_gmail_app_password
 ---
 
 # .test_returns_none_when_all_paths_fail()
@@ -15,5 +15,7 @@ tags:
 - [[TestGetGmailAppPasswordWithSession]] - `method` [EXTRACTED]
 - [[_completed()]] - `calls` [EXTRACTED]
 - [[_get_gmail_app_password()]] - `calls` [EXTRACTED]
+- [[fake_path()_4]] - `contains` [EXTRACTED]
+- [[fake_path()_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Remediation
+#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password

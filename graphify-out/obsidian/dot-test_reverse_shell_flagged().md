@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_git_guard.py"
 type: "code"
-community: "SessionManager"
+community: "GitGuard"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/GitGuard
 ---
 
 # .test_reverse_shell_flagged()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_make_hook()]] - `calls` [EXTRACTED]
 - [[GitGuard]] - `calls` [EXTRACTED]
-- [[TestGitGuard_1]] - `method` [EXTRACTED]
+- [[TestGitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/GitGuard

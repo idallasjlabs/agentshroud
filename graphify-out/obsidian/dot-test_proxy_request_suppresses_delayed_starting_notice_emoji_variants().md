@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "_make_sanitizer"
 location: "L2433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_make_sanitizer
 ---
 
 # .test_proxy_request_suppresses_delayed_starting_notice_emoji_variants()
 
 ## Connections
 - [[Delayed-starting dedupe should tolerate emoji variation drift.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_2]] - `calls` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
+- [[_mock_forward()_5]] - `contains` [EXTRACTED]
+- [[_mock_forward()_4]] - `indirect_call` [INFERRED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

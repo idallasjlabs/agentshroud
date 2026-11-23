@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "TestMCPResultEndpoint"
+community: "mcp_proxy.py"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMCPResultEndpoint
+  - community/mcp_proxypy
 ---
 
 # .test_result_requires_auth()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
 - [[Unauthenticated request is rejected.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_29]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint
+#graphify/code #graphify/EXTRACTED #community/mcp_proxypy

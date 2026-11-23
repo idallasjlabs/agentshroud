@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "FalcoAlertWatcher (2)"
+community: "get_sbom"
 location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher_2
+  - community/get_sbom
 ---
 
 # .test_returns_latest_sbom()
 
 ## Connections
-- [[TestGetSbom_1]] - `method` [EXTRACTED]
+- [[TestGetSbom]] - `method` [EXTRACTED]
 - [[get_sbom()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher_2
+#graphify/code #graphify/EXTRACTED #community/get_sbom

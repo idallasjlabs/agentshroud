@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "AgentShroud Consolidated Issues Report"
+community: "TestRuntimeProtectionAndMalware"
 location: "L618"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Consolidated_Issues_Report
+  - community/TestRuntimeProtectionAndMalware
 ---
 
 # .test_runtime_noncritical_findings_scores_four()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRuntimeProtectionAndMalware]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Consolidated_Issues_Report
+#graphify/code #graphify/EXTRACTED #community/TestRuntimeProtectionAndMalware

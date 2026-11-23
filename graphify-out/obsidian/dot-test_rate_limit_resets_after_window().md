@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "SessionManager"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/SessionManager
 ---
 
 # .test_rate_limit_resets_after_window()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
-- [[TestRateLimiting]] - `method` [EXTRACTED]
+- [[SessionManager]] - `calls` [INFERRED]
+- [[TestRateLimiting_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/SessionManager

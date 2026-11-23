@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Mode B — Comprehensive review sweep (4)"
+community: "test_scanner_integration_coverage.py"
 location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Mode_B__Comprehensive_review_sweep_4
+  - community/test_scanner_integration_coveragepy
 ---
 
 # .test_running_without_report()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestClamavSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Mode_B__Comprehensive_review_sweep_4
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy

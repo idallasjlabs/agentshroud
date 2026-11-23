@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming)"
+community: "FalcoAlertWatcher"
 location: "L640"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming
+  - community/FalcoAlertWatcher
 ---
 
 # .test_read_alerts_missing_dir()
@@ -15,4 +15,4 @@ tags:
 - [[TestFalcoSummary]] - `method` [EXTRACTED]
 - [[read_alerts()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

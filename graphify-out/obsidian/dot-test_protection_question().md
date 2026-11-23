@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestLooksLikeSafeCollaboratorInfoQuery"
+community: "._looks_like_safe_collaborator_info_query"
 location: "L4165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLooksLikeSafeCollaboratorInfoQuery
+  - community/_looks_like_safe_collaborator_info_query
 ---
 
 # .test_protection_question()
 
 ## Connections
+- [[dot-_looks_like_safe_collaborator_info_query()]] - `calls` [EXTRACTED]
 - [[TestLooksLikeSafeCollaboratorInfoQuery]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLooksLikeSafeCollaboratorInfoQuery
+#graphify/code #graphify/EXTRACTED #community/_looks_like_safe_collaborator_info_query

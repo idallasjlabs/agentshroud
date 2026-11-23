@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_op_proxy.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L184"
+community: "TestEmailSend"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/TestEmailSend
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[Endpoint returns 401 without auth override.]] - `rationale_for` [EXTRACTED]
-- [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
+- [[Endpoint returns 401 without auth override._1]] - `rationale_for` [EXTRACTED]
+- [[TestEmailSend]] - `method` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

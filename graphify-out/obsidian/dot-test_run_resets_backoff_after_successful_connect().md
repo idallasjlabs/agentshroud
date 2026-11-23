@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "Request (2)"
+community: ".test_run_resets_backoff_after_successful_connect"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/test_run_resets_backoff_after_successful_connect
 ---
 
 # .test_run_resets_backoff_after_successful_connect()
@@ -15,5 +15,10 @@ tags:
 - [[A successful WSS connection resets the attempt counter to 0.]] - `rationale_for` [EXTRACTED]
 - [[TestComputeBackoff]] - `method` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
+- [[asyncio_34]] - `references` [EXTRACTED]
+- [[fake_backoff()]] - `indirect_call` [INFERRED]
+- [[fake_connect_and_handle()]] - `indirect_call` [INFERRED]
+- [[fake_get_wss_url()]] - `indirect_call` [INFERRED]
+- [[fake_sleep()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/test_run_resets_backoff_after_successful_connect

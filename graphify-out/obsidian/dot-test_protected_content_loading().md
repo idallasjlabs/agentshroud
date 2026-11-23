@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestOutboundPipelineIntegration (2)"
+community: "TestPromptProtection"
 location: "L247"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration_2
+  - community/TestPromptProtection
 ---
 
 # .test_protected_content_loading()
@@ -16,4 +16,4 @@ tags:
 - [[Test loading protected content from files.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration_2
+#graphify/code #graphify/EXTRACTED #community/TestPromptProtection

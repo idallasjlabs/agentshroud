@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "CrossBotTrustLedger"
-location: "L398"
+community: "MCPToolCall"
+location: "L615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CrossBotTrustLedger
+  - community/MCPToolCall
 ---
 
 # .test_rate_limit_enforced()
 
 ## Connections
-- [[TestRateLimiting_3]] - `method` [EXTRACTED]
+- [[MCPToolCall]] - `calls` [EXTRACTED]
+- [[TestProxyRateLimiting]] - `method` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CrossBotTrustLedger
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

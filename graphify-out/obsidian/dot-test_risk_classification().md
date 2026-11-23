@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "FetchOutcome"
+community: "TestOutboundInfoFilter"
 location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FetchOutcome
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_risk_classification()
@@ -15,4 +15,4 @@ tags:
 - [[Test response risk level classification.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FetchOutcome
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

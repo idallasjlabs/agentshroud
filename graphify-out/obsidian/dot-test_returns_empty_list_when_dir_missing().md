@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "OpenClaw Skill Metadata Schema (frontmatter convention)"
+community: "get_trivy_image_summaries"
 location: "L1071"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+  - community/get_trivy_image_summaries
 ---
 
 # .test_returns_empty_list_when_dir_missing()
 
 ## Connections
-- [[Path_33]] - `calls` [EXTRACTED]
 - [[TestGetTrivyImageSummaries]] - `method` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_Skill_Metadata_Schema_frontmatter_convention
+#graphify/code #graphify/EXTRACTED #community/get_trivy_image_summaries
