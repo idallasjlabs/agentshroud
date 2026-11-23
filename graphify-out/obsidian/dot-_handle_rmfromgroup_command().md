@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "colima-health-check.sh"
-location: "L7938"
+community: "TelegramAPIProxy"
+location: "L7976"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/TelegramAPIProxy
 ---
 
 # ._handle_rmfromgroup_command()
@@ -15,9 +15,9 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Handle rmfromgroup user_id group_id (owner or group admin).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[format_rmfromgroup_success()]] - `calls` [EXTRACTED]
 - [[format_unknown_group()]] - `calls` [EXTRACTED]
 - [[persist_group_member_remove()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

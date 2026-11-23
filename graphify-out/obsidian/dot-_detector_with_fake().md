@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "DifferentialPIIDetector"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/DifferentialPIIDetector
 ---
 
 # ._detector_with_fake()
@@ -18,5 +18,6 @@ tags:
 - [[dot-test_presidio_result_becomes_pii_hit()]] - `calls` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `references` [EXTRACTED]
 - [[TestPresidioPathContract]] - `method` [EXTRACTED]
+- [[_analyze()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L1567"
+community: "TelegramAPIProxy"
+location: "L1585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/TelegramAPIProxy
 ---
 
 # ._looks_like_approval_queue_probe()
 
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[dot-test_looks_like_approval_queue_probe_detects_internal_metadata_query()]] - `calls` [EXTRACTED]
+- [[dot-test_looks_like_approval_queue_probe_ignores_generic_approval_question()]] - `calls` [EXTRACTED]
 - [[Detect collaborator prompts trying to inspect approval queue internalsmetadata.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

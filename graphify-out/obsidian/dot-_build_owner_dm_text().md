@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "test_a2a_proxy.py"
+community: "ApprovalRequest"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_proxypy
+  - community/ApprovalRequest
 ---
 
 # ._build_owner_dm_text()
@@ -17,4 +17,4 @@ tags:
 - [[Build the owner DM notification text.]] - `rationale_for` [EXTRACTED]
 - [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_proxypy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilterConfig (2)"
+community: "EgressFilter"
 location: "L349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig_2
+  - community/EgressFilter
 ---
 
 # ._matches_any_pattern()
@@ -18,4 +18,4 @@ tags:
 - [[EgressFilterConfig]] - `method` [EXTRACTED]
 - [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

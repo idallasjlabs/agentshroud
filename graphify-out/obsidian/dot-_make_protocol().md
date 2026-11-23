@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "test_scorecard_scoring.py"
+community: "DNSForwarderProtocol"
 location: "L222"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scorecard_scoringpy
+  - community/DNSForwarderProtocol
 ---
 
 # ._make_protocol()
@@ -23,4 +23,4 @@ tags:
 - [[DNSForwarderProtocol]] - `calls` [EXTRACTED]
 - [[TestDNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

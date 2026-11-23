@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "test_llm_proxy.py"
+community: "DifferentialPIIDetector"
 location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/DifferentialPIIDetector
 ---
 
 # ._scan()
@@ -17,8 +17,8 @@ tags:
 - [[dot-scan_prompt()]] - `calls` [EXTRACTED]
 - [[dot-scan_tool_result()_3]] - `calls` [EXTRACTED]
 - [[Core scan normalize adversarial patterns, then run PII recognition.]] - `rationale_for` [EXTRACTED]
-- [[DifferentialPIIDetector_1]] - `method` [EXTRACTED]
-- [[ToolResultPIIReport]] - `references` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
+- [[ToolResultPIIReport]] - `calls` [EXTRACTED]
 - [[_normalize_adversarial()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "SecureBrowser (4)"
+community: "LLMProxy"
 location: "L806"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser_4
+  - community/LLMProxy
 ---
 
 # ._failover_request()
@@ -20,5 +20,10 @@ tags:
 - [[dot-proxy_messages()]] - `calls` [EXTRACTED]
 - [[Attempt a cloud→local failover dispatch. Returns (status, headers, body) from…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `method` [EXTRACTED]
+- [[anthropic_to_openai_request()]] - `calls` [EXTRACTED]
+- [[gemini_failover_unsupported_reason()]] - `calls` [EXTRACTED]
+- [[gemini_to_openai_request()]] - `calls` [EXTRACTED]
+- [[openai_to_anthropic_response()]] - `calls` [EXTRACTED]
+- [[openai_to_gemini_response()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser_4
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

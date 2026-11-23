@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-_is_in_write_window()]] - `calls` [EXTRACTED]
 - [[dot-scan_file()]] - `calls` [EXTRACTED]
-- [[Attempt to detect the source of a file modification.          Detection strategy]] - `rationale_for` [EXTRACTED]
+- [[Attempt to detect the source of a file modification. Detection strategy (in…]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[ModificationSource]] - `references` [EXTRACTED]
-- [[Path_16]] - `references` [EXTRACTED]
+- [[Path_12]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

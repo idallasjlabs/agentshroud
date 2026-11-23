@@ -1,7 +1,7 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "._results()"
+community: "._results"
 location: "L422"
 tags:
   - graphify/code

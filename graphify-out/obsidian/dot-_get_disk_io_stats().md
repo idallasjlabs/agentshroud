@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "._make_proxy()"
+community: "ResourceGuard"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/ResourceGuard
 ---
 
 # ._get_disk_io_stats()
 
 ## Connections
-- [[dot-__init__()_158]] - `calls` [EXTRACTED]
+- [[dot-__init__()_160]] - `calls` [EXTRACTED]
 - [[dot-check_disk_write_limit()]] - `calls` [EXTRACTED]
-- [[Any_59]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
 - [[Get current disk IO statistics.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

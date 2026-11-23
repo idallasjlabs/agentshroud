@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "ProxyDashboard"
+community: "SecureBrowser"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/SecureBrowser
 ---
 
 # ._log_security_event()
@@ -14,10 +14,9 @@ tags:
 ## Connections
 - [[dot-_validate_url()_2]] - `calls` [EXTRACTED]
 - [[dot-click()_2]] - `calls` [EXTRACTED]
-- [[dot-detect_captcha()_2]] - `calls` [EXTRACTED]
 - [[dot-extract()_2]] - `calls` [EXTRACTED]
 - [[dot-fill_field()_2]] - `calls` [EXTRACTED]
 - [[Log security-related events_2]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

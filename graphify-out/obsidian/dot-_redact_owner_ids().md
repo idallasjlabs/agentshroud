@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L3958"
+community: "ToolResultInjectionScanner"
+location: "L3976"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/ToolResultInjectionScanner
 ---
 
 # ._redact_owner_ids()
 
 ## Connections
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
-- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
-- [[Any_83]] - `references` [EXTRACTED]
-- [[Redact the owner's Telegram user ID from collaborator-bound text.          Strip]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
+- [[Redact the owner's Telegram user ID from collaborator-bound text. Strips the ID…]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

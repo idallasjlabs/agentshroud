@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-process_request()]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Return the name of a failed critical guard, or None if all healthy.          Use]] - `rationale_for` [EXTRACTED]
+- [[Return the name of a failed critical guard, or None if all healthy. Uses…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

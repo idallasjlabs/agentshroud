@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L99"
+community: "DifferentialPIIDetector"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/DifferentialPIIDetector
 ---
 
 # ._init_presidio()
 
 ## Connections
-- [[dot-__init__()_174]] - `calls` [EXTRACTED]
-- [[Initialize Microsoft Presidio engines          Falls back to regex if Presidios]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_202]] - `calls` [EXTRACTED]
+- [[Attempt to initialise Presidio deterministically; else regex. SECURITY never…]] - `rationale_for` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

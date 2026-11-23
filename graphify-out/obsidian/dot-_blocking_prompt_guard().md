@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "asyncio"
 location: "L671"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/asyncio
 ---
 
 # ._blocking_prompt_guard()
@@ -15,7 +15,7 @@ tags:
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_standard_trust_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_untrusted_tool_result_injection_is_blocked()]] - `calls` [EXTRACTED]
-- [[ScanResult_1]] - `calls` [EXTRACTED]
+- [[ScanResult]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

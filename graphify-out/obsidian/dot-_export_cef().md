@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "AuditExporter (2)"
+community: "AuditExporter"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExporter_2
+  - community/AuditExporter
 ---
 
 # ._export_cef()
@@ -15,6 +15,7 @@ tags:
 - [[dot-export_events()]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `references` [EXTRACTED]
 - [[AuditExporter]] - `method` [EXTRACTED]
-- [[Export events in Common Event Format (CEF).          CEF Format CEFVersionDev]] - `rationale_for` [EXTRACTED]
+- [[Export events in Common Event Format (CEF). CEF Format CEFVersionDevice…]] - `rationale_for` [EXTRACTED]
+- [[escape_cef()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExporter_2
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

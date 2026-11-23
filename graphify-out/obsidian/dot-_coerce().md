@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "AlertTelegramRelay"
+community: "._handle"
 location: "L182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/_handle
 ---
 
 # ._coerce()
 
 ## Connections
-- [[dot-_handle()_1]] - `calls` [EXTRACTED]
+- [[dot-_handle()]] - `calls` [EXTRACTED]
+- [[dot-severity()]] - `indirect_call` [INFERRED]
+- [[dot-summary()]] - `indirect_call` [INFERRED]
 - [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - `rationale_for` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_32]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/_handle

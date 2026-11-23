@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L419"
+community: "._check_impl"
+location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/_check_impl
 ---
 
 # ._matches_allowlist_domain()
@@ -15,5 +15,6 @@ tags:
 - [[dot-_check_impl()]] - `calls` [EXTRACTED]
 - [[Check if domain matches any domain in the allowlist (supports wildcards).]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `method` [EXTRACTED]
+- [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/_check_impl

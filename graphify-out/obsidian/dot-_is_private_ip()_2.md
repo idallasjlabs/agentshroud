@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
-location: "L226"
+community: "._check_impl"
+location: "L431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/_check_impl
 ---
 
 # ._is_private_ip()
 
 ## Connections
-- [[dot-check_rebinding()]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[Return True if the IP address is in a private  loopback range.]] - `rationale_for` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[Check if host is a private, loopback, link-local, or reserved IP. Covers RFC…]] - `rationale_for` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/_check_impl

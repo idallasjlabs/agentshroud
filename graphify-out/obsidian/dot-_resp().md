@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Phase 3A/3B Implementation Verification Results"
+community: "TestBuildCollaboratorSafeInfoResponse"
 location: "L4254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Phase_3A/3B_Implementation_Verification_Results
+  - community/TestBuildCollaboratorSafeInfoResponse
 ---
 
 # ._resp()
 
 ## Connections
+- [[dot-_build_collaborator_safe_info_response()]] - `calls` [EXTRACTED]
 - [[dot-test_architecture_existing_branch()]] - `calls` [EXTRACTED]
 - [[dot-test_collaboration_capability()]] - `calls` [EXTRACTED]
 - [[dot-test_credit_card_privacy()]] - `calls` [EXTRACTED]
@@ -31,4 +32,4 @@ tags:
 - [[dot-test_what_can_you_capability()]] - `calls` [EXTRACTED]
 - [[TestBuildCollaboratorSafeInfoResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Phase_3A/3B_Implementation_Verification_Results
+#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse

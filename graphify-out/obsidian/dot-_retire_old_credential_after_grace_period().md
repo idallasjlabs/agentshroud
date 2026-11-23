@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "TestNormalizeForSpeech"
+community: "Any"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNormalizeForSpeech
+  - community/Any
 ---
 
 # ._retire_old_credential_after_grace_period()
@@ -16,4 +16,4 @@ tags:
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Retire old credential after grace period ends.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNormalizeForSpeech
+#graphify/code #graphify/EXTRACTED #community/Any

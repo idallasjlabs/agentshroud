@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "openclaw/skills/i-cr/SKILL.md"
-location: "L208"
+community: "RedactionResult"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/openclaw/skills/i-cr/SKILLmd
+  - community/RedactionResult
 ---
 
 # ._sanitize_presidio()
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
 - [[dot-sanitize()_2]] - `calls` [EXTRACTED]
-- [[PIISanitizer_3]] - `method` [EXTRACTED]
+- [[PIISanitizer]] - `method` [EXTRACTED]
 - [[RedactionResult]] - `references` [EXTRACTED]
-- [[Sanitize using Microsoft Presidio          Wraps synchronous Presidio calls in a]] - `rationale_for` [EXTRACTED]
+- [[Sanitize using Microsoft Presidio Wraps synchronous Presidio calls in…]] - `rationale_for` [EXTRACTED]
+- [[_analyze_and_anonymize()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

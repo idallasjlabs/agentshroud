@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
 community: "WebhookReceiver"
-location: "L277"
+location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_replace_message()]] - `calls` [EXTRACTED]
 - [[dot-process_webhook()]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[Prepare payload with session context injection.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "colima-health-check.sh"
-location: "L7903"
+community: "TelegramAPIProxy"
+location: "L7941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/colima-health-checksh
+  - community/TelegramAPIProxy
 ---
 
 # ._handle_addtogroup_command()
@@ -15,9 +15,9 @@ tags:
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_send_owner_admin_notice()]] - `calls` [EXTRACTED]
 - [[Handle addtogroup user_id group_id (owner only).]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[format_addtogroup_success()]] - `calls` [EXTRACTED]
 - [[format_unknown_group()]] - `calls` [EXTRACTED]
 - [[persist_group_member_add()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/colima-health-checksh
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

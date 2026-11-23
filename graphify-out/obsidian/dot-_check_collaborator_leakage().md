@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L3937"
+community: "ToolResultInjectionScanner"
+location: "L3955"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/ToolResultInjectionScanner
 ---
 
 # ._check_collaborator_leakage()
@@ -15,10 +15,10 @@ tags:
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
 - [[dot-_contains_critical_collaborator_leakage()]] - `calls` [EXTRACTED]
 - [[dot-_contains_high_risk_collaborator_leakage()]] - `calls` [EXTRACTED]
-- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
 - [[dot-_resolve_collaborator_mode()]] - `calls` [EXTRACTED]
-- [[Any_83]] - `references` [EXTRACTED]
-- [[Return a safe-notice replacement when protected content would leak.          Cri]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
+- [[Return a safe-notice replacement when protected content would leak. Critical…]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

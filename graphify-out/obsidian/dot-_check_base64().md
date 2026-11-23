@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "LLMProxy"
+community: "URLAnalyzer"
 location: "L292"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/URLAnalyzer
 ---
 
 # ._check_base64()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-analyze()]] - `calls` [EXTRACTED]
 - [[Check for base64-encoded data in URL path and query values.]] - `rationale_for` [EXTRACTED]
-- [[URLAnalysisResult_1]] - `references` [EXTRACTED]
-- [[URLAnalyzer_1]] - `method` [EXTRACTED]
+- [[URLAnalysisResult]] - `references` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 - [[_looks_like_base64()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

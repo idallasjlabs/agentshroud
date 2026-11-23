@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_classify_heuristic()]] - `calls` [EXTRACTED]
 - [[Detect unusual Unicode patterns that suggest evasion.]] - `rationale_for` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L794"
+community: "TelegramAPIProxy"
+location: "L812"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/TelegramAPIProxy
 ---
 
 # ._extract_owner_target_resolved()
@@ -15,7 +15,7 @@ tags:
 - [[dot-_extract_owner_target()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_resolve_pending_username_target()]] - `calls` [EXTRACTED]
-- [[Resolve target by id, static alias, or pending username alias.          Resoluti]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[Resolve target by id, static alias, or pending username alias. Resolution…]] - `rationale_for` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "browser/scripts/browse.py (2)"
+community: "SecureBrowser"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy_2
+  - community/SecureBrowser
 ---
 
 # ._log_action()
@@ -17,7 +17,7 @@ tags:
 - [[dot-fill_field()]] - `calls` [EXTRACTED]
 - [[dot-navigate()]] - `calls` [EXTRACTED]
 - [[Log browser action to audit trail]] - `rationale_for` [EXTRACTED]
-- [[RiskLevel]] - `references` [EXTRACTED]
+- [[RiskLevel_1]] - `references` [EXTRACTED]
 - [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy_2
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

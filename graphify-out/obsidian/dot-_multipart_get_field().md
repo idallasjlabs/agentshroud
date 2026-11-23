@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py (2)"
-location: "L3450"
+community: "ToolResultInjectionScanner"
+location: "L3468"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy_2
+  - community/ToolResultInjectionScanner
 ---
 
 # ._multipart_get_field()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[Extract a non-file text field value from a multipartform-data body.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy_2
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AgentShroud Module Inventory"
-location: "L273"
+community: "middleware.py"
+location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/middlewarepy
 ---
 
 # ._redact_fuzzy_match()
@@ -17,4 +17,4 @@ tags:
 - [[ProtectedContent]] - `references` [EXTRACTED]
 - [[Redact text that fuzzy matches protected content.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -15,7 +15,7 @@ tags:
 - [[dot-_classify_heuristic()]] - `calls` [EXTRACTED]
 - [[dot-classify()]] - `calls` [EXTRACTED]
 - [[ClassificationResult]] - `references` [EXTRACTED]
-- [[HeuristicClassifier_1]] - `method` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 - [[EXPERIMENTAL ML model classification placeholder.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

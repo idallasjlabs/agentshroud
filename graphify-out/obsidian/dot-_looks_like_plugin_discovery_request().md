@@ -1,20 +1,22 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_tracker.py"
-location: "L1987"
+community: "TelegramAPIProxy"
+location: "L2005"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_trackerpy
+  - community/TelegramAPIProxy
 ---
 
 # ._looks_like_plugin_discovery_request()
 
 ## Connections
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
+- [[dot-test_looks_like_plugin_discovery_request_detects_inventory_prompt()]] - `calls` [EXTRACTED]
+- [[dot-test_looks_like_plugin_discovery_request_ignores_conceptual_question()]] - `calls` [EXTRACTED]
 - [[Detect collaborator prompts requesting plugintool auto-discovery inventory.]] - `rationale_for` [EXTRACTED]
-- [[TelegramAPIProxy_1]] - `method` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
