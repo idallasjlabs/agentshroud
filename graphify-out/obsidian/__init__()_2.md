@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ApprovalQueueConfig (2)"
-location: "L5638"
+community: "TestCheckClamd"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig_2
+  - community/TestCheckClamd
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_owner_activity_is_tracked_with_flag()]] - `contains` [EXTRACTED]
+- [[dot-test_running_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_2
+#graphify/code #graphify/EXTRACTED #community/TestCheckClamd

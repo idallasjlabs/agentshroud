@@ -1,19 +1,23 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L1241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # list_security_modules()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[List all security modules and their status.]] - `rationale_for` [EXTRACTED]
-- [[main.py_2]] - `contains` [EXTRACTED]
+- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[SecurityPipeline]] - `uses` [INFERRED]
+- [[get_4]] - `references` [EXTRACTED]
+- [[ingest_apimain.py]] - `contains` [EXTRACTED]
+- [[prompt_protection()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_978
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

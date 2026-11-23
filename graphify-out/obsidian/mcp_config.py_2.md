@@ -1,26 +1,29 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
-type: "document"
-community: "Community 775"
-location: "L10"
+source_file: "gateway/proxy/mcp_config.py"
+type: "code"
+community: "PermissionLevel"
+location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/Community_775
+  - community/PermissionLevel
 ---
 
 # mcp_config.py
 
 ## Connections
-- [[Configuration  Environment Variables_3]] - `contains` [EXTRACTED]
-- [[Function Details_9]] - `contains` [EXTRACTED]
-- [[Key Classes  Functions_12]] - `contains` [EXTRACTED]
-- [[MCPProxyConfig Fields]] - `contains` [EXTRACTED]
-- [[MCPServerConfig Fields]] - `contains` [EXTRACTED]
-- [[PermissionLevel Ordering]] - `contains` [EXTRACTED]
-- [[Purpose_130]] - `contains` [EXTRACTED]
-- [[Related_15]] - `contains` [EXTRACTED]
-- [[Responsibilities_14]] - `contains` [EXTRACTED]
-- [[mcp_config.py_1]] - `contains` [EXTRACTED]
+- [[Enum_37]] - `imports_from` [EXTRACTED]
+- [[MCPProxyConfig]] - `contains` [EXTRACTED]
+- [[MCPServerConfig]] - `contains` [EXTRACTED]
+- [[MCPToolConfig]] - `contains` [EXTRACTED]
+- [[MCPTransport]] - `contains` [EXTRACTED]
+- [[PermissionLevel]] - `contains` [EXTRACTED]
+- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
+- [[proxy__init__.py]] - `re_exports` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports_from` [EXTRACTED]
+- [[test_mcp_proxy_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_775
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

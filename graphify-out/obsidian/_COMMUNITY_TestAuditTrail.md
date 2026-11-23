@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.27
 members: 10
 ---
 
 # TestAuditTrail
 
-**Cohesion:** 0.27 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[CONFIG_5]] - code - skills/custom/icloud/scripts/calendar.js
-- [[args_3]] - code - skills/custom/icloud/scripts/calendar.js
-- [[createEvent()_3]] - code - skills/custom/icloud/scripts/calendar.js
-- [[customicloudscriptscalendar.js]] - code - skills/custom/icloud/scripts/calendar.js
-- [[getCredentials()_3]] - code - skills/custom/icloud/scripts/calendar.js
-- [[https_5]] - code - skills/custom/icloud/scripts/calendar.js
-- [[listEvents()_3]] - code - skills/custom/icloud/scripts/calendar.js
-- [[makeRequest()_3]] - code - skills/custom/icloud/scripts/calendar.js
-- [[parseCalendarData()_3]] - code - skills/custom/icloud/scripts/calendar.js
-- [[{ execSync }_3]] - code - skills/custom/icloud/scripts/calendar.js
+- [[dot-test_blocked_entry_logged()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_chain_entries_linked()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_changes_on_append()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_genesis()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_hash_chain_valid()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_log_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_log_tool_result()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_redacted_flag()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_tampered_chain_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestAuditTrail_1]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,3 +25,9 @@ members: 10
 TABLE source_file, type FROM #community/TestAuditTrail
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_test_mcp_proxy.py]]
+
+## Top bridge nodes
+- [[TestAuditTrail_1]] - degree 10, connects to 1 community

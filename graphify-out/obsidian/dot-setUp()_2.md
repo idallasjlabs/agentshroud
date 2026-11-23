@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/skill-creator/scripts/test_package_skill.py"
 type: "code"
-community: "Function Details (4)"
+community: "package_skill"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details_4
+  - community/package_skill
 ---
 
 # .setUp()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPackageSkillSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details_4
+#graphify/code #graphify/EXTRACTED #community/package_skill

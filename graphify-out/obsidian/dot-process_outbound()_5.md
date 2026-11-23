@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "UserSessionManager (2) (2)"
-location: "L168"
+community: "AuditChain"
+location: "L1048"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager_2_2
+  - community/AuditChain
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_BlockingPipeline]] - `method` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
+- [[PipelineResult]] - `references` [EXTRACTED]
+- [[Process an outbound response through the security pipeline. Thin wrapper around…]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager_2_2
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,18 +1,16 @@
 ---
 type: community
-cohesion: 0.06
 members: 31
 ---
 
 # Skill: UX Expert (UX)
 
-**Cohesion:** 0.06 - loosely connected
 **Members:** 31 nodes
 
 ## Members
 - [[dot-agentsskillsi-uxSKILL]] - document - .agents/skills/i-ux/SKILL.md
 - [[Alert Prioritization Display]] - document - .agents/skills/i-ux/SKILL.md
-- [[Anti-Patterns to Flag_2]] - document - .agents/skills/i-ux/SKILL.md
+- [[Anti-Patterns to Flag_12]] - document - .agents/skills/i-ux/SKILL.md
 - [[CLI  TUI UX]] - document - .agents/skills/i-ux/SKILL.md
 - [[CLI UX Rules]] - document - .agents/skills/i-ux/SKILL.md
 - [[Confirmation Patterns]] - document - .agents/skills/i-ux/SKILL.md
@@ -21,7 +19,7 @@ members: 31
 - [[Core Discipline Discover → Define → Design → Validate]] - document - .agents/skills/i-ux/SKILL.md
 - [[Dashboard UX]] - document - .agents/skills/i-ux/SKILL.md
 - [[Data Density Rules]] - document - .agents/skills/i-ux/SKILL.md
-- [[Dependencies_2]] - document - .agents/skills/i-ux/SKILL.md
+- [[Dependencies_3]] - document - .agents/skills/i-ux/SKILL.md
 - [[Drill-Down Pattern]] - document - .agents/skills/i-ux/SKILL.md
 - [[Error Message Patterns]] - document - .agents/skills/i-ux/SKILL.md
 - [[Feedback Loops (response time standards)]] - document - .agents/skills/i-ux/SKILL.md
@@ -34,8 +32,8 @@ members: 31
 - [[Nielsen's 10 Heuristics — GSDE&G Application]] - document - .agents/skills/i-ux/SKILL.md
 - [[Progressive Disclosure]] - document - .agents/skills/i-ux/SKILL.md
 - [[Progressive Form Pattern (for multi-step workflows)]] - document - .agents/skills/i-ux/SKILL.md
-- [[Role_20]] - document - .agents/skills/i-ux/SKILL.md
-- [[Rules_3]] - document - .agents/skills/i-ux/SKILL.md
+- [[Role_127]] - document - .agents/skills/i-ux/SKILL.md
+- [[Rules_13]] - document - .agents/skills/i-ux/SKILL.md
 - [[Site Alarm Acknowledgment Flow]] - document - .agents/skills/i-ux/SKILL.md
 - [[Skill UX Expert (UX)]] - document - .agents/skills/i-ux/SKILL.md
 - [[Usability Audit Checklist]] - document - .agents/skills/i-ux/SKILL.md
@@ -50,7 +48,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
 - [[Skill UX Expert (UX)]] - degree 15, connects to 1 community

@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 684"
+community: "KeyVault"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_684
+  - community/KeyVault
 ---
 
 # key_vault.py
 
 ## Connections
-- [[FR4 Data Confidentiality]] - `references` [EXTRACTED]
 - [[KeyAuditEvent]] - `contains` [EXTRACTED]
 - [[KeyEntry]] - `contains` [EXTRACTED]
 - [[KeyInjector]] - `contains` [EXTRACTED]
@@ -20,8 +19,6 @@ tags:
 - [[KeyVault]] - `contains` [EXTRACTED]
 - [[KeyVaultConfig]] - `contains` [EXTRACTED]
 - [[LeakScanResult]] - `contains` [EXTRACTED]
-- [[egress_monitor.py]] - `references` [EXTRACTED]
-- [[env_guard.py]] - `semantically_similar_to` [INFERRED]
-- [[log_sanitizer.py]] - `semantically_similar_to` [INFERRED]
+- [[test_key_vault.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_684
+#graphify/code #graphify/EXTRACTED #community/KeyVault

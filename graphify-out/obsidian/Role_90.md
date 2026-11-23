@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-aws-profile.md"
+source_file: ".omp/agents/vulcan.md"
 type: "document"
-community: "Community 182"
-location: "L10"
+community: "Vulcan — Subject Matter Auditor"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_182
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_182
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

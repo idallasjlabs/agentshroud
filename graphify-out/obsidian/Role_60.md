@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/SKILL.md"
+source_file: ".github/agents/i-daedalus.agent.md"
 type: "document"
-community: "Community 951"
-location: "L8"
+community: "Daedalus — Concept Illustrator"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_951
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_951
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

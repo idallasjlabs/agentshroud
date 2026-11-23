@@ -1,18 +1,18 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "Community 1006"
+community: "_call_llm_stream"
 location: "L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/_call_llm_stream
 ---
 
 # _call_llm_stream()
 
 ## Connections
-- [[Stream conversation history through the gateway's OpenAI-compat     endpoint, yi]] - `rationale_for` [EXTRACTED]
+- [[Stream conversation history through the gateway's OpenAI-compat endpoint,…]] - `rationale_for` [EXTRACTED]
 - [[_effective_voice_model()]] - `calls` [EXTRACTED]
 - [[omlx-keepwarm.sh]] - `semantically_similar_to` [INFERRED]
 - [[server.py]] - `contains` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[test_call_llm_stream_sends_full_history()]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_skips_malformed_chunks()]] - `calls` [EXTRACTED]
 - [[test_call_llm_stream_yields_sentences()]] - `calls` [EXTRACTED]
-- [[test_voice_gateway.py]] - `references` [EXTRACTED]
+- [[test_voice_gateway.py]] - `imports` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/_call_llm_stream

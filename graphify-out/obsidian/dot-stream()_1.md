@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "🛡️ AgentShroud Release Plan (2)"
-location: "L1446"
+community: "_HeadFakeClient"
+location: "L827"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_AgentShroud_Release_Plan_2
+  - community/_HeadFakeClient
 ---
 
 # .stream()
 
 ## Connections
-- [[_FakeStreamClient]] - `method` [EXTRACTED]
+- [[_HeadFakeClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_AgentShroud_Release_Plan_2
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

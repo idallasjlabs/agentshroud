@@ -1,20 +1,20 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/init_skill.py"
+source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 882"
-location: "L320"
+community: "export-bot-conversations.py"
+location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_882
+  - community/export-bot-conversationspy
 ---
 
 # main()
 
 ## Connections
-- [[init_skill()]] - `calls` [EXTRACTED]
-- [[init_skill.py]] - `contains` [EXTRACTED]
-- [[normalize_skill_name()]] - `calls` [EXTRACTED]
-- [[parse_resources()]] - `calls` [EXTRACTED]
+- [[_parse_since()_1]] - `calls` [EXTRACTED]
+- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
+- [[export_hermes()]] - `calls` [EXTRACTED]
+- [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_882
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

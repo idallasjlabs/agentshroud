@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L136"
+community: "ScanResult"
+location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/ScanResult
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-_record()_1]] - `calls` [EXTRACTED]
-- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
-- [[CanaryResult_2]] - `references` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[dot-_scan_encoded_payloads()]] - `calls` [EXTRACTED]
+- [[dot-_scan_hidden_content()]] - `calls` [EXTRACTED]
+- [[dot-_scan_pii()]] - `calls` [EXTRACTED]
+- [[dot-_scan_prompt_injection()]] - `calls` [EXTRACTED]
+- [[dot-_scan_xml_dtd()]] - `calls` [EXTRACTED]
+- [[dot-_scan_zero_width()]] - `calls` [EXTRACTED]
+- [[Scan content for security issues. Args content The web content to scan.…]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_1]] - `calls` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/ScanResult

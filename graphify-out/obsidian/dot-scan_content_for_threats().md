@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "ContentThreat"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ContentThreat
 ---
 
 # .scan_content_for_threats()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-sanitize_content()]] - `calls` [EXTRACTED]
 - [[dot-validate_memory_write()]] - `calls` [EXTRACTED]
-- [[ContentThreat]] - `references` [EXTRACTED]
+- [[ContentThreat]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[Scan memory file content for security threats.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ContentThreat

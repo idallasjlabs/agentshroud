@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Self-Written Whisper Domain-Hint Prompt
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[SecureBrowser.detect_captcha()]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[Self-Written Whisper Domain-Hint Prompt]] - concept - docker/config/openclaw/skills/graphify/references/transcribe.md
 
 ## Live Query (requires Dataview plugin)
 

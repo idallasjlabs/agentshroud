@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm.md"
+source_file: ".opencode/agents/i-pr.md"
 type: "document"
-community: "Community 1936"
-location: "L10"
+community: "Skill: Pull Request (PR) Generator"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1936
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_2]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1936
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

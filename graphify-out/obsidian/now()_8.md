@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_audit_archive.py"
 type: "code"
-community: ".test_gives_up_and_marks_sent_after_max_retries()"
-location: "L1776"
+community: "archive_old_events"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/archive_old_events
 ---
 
 # now()
 
 ## Connections
-- [[dot-test_retries_on_failed_send_before_giving_up()]] - `contains` [EXTRACTED]
+- [[fixture_97]] - `references` [EXTRACTED]
+- [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

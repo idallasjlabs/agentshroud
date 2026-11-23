@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: ".omp/agents/i-tdd.md"
 type: "document"
-community: "Community 117"
-location: "L10"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_117
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_117
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-auth-reset.md"
+source_file: ".cursor/agents/i-crpr.md"
 type: "document"
-community: "Community 211"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_211
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

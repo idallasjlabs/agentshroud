@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "AgentShroud Module Inventory"
+community: "middleware.py"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Module_Inventory
+  - community/middlewarepy
 ---
 
 # .scan_response()
@@ -15,7 +15,7 @@ tags:
 - [[dot-_calculate_similarity()]] - `calls` [EXTRACTED]
 - [[dot-_redact_fuzzy_match()]] - `calls` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
-- [[RedactionResult_3]] - `references` [EXTRACTED]
-- [[Scan text for protected content and return redacted version.          Args]] - `rationale_for` [EXTRACTED]
+- [[RedactionResult_1]] - `calls` [EXTRACTED]
+- [[Scan text for protected content and return redacted version. Args text The…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Module_Inventory
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

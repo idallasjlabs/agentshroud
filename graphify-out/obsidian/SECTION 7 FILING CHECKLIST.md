@@ -1,12 +1,12 @@
 ---
 source_file: "docs/USPTO_TRADEMARK_APPLICATION.md"
 type: "document"
-community: "Community 867"
+community: "AgentShroud -- USPTO Provisional Patent Application"
 location: "L227"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_867
+  - community/AgentShroud_--_USPTO_Provisional_Patent_Application
 ---
 
 # SECTION 7: FILING CHECKLIST
@@ -18,4 +18,4 @@ tags:
 - [[Post-Filing]] - `contains` [EXTRACTED]
 - [[Pre-Filing Preparation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_867
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_--_USPTO_Provisional_Patent_Application

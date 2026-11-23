@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "Community 6"
+community: "test_soc_realtime_coverage.py"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _get_rbac_manager()
 
 ## Connections
-- [[.test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
-- [[RBACConfig_1]] - `calls` [EXTRACTED]
-- [[RBACManager_1]] - `calls` [EXTRACTED]
-- [[RBACManager_2]] - `references` [EXTRACTED]
+- [[dot-test_get_rbac_manager_builds_real_manager()]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[RBACManager]] - `calls` [EXTRACTED]
 - [[_resolve_caller()]] - `calls` [EXTRACTED]
-- [[auth.py_1]] - `contains` [EXTRACTED]
+- [[socauth.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

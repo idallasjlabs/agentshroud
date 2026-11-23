@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/daedalus/SKILL.md"
+source_file: ".github/agents/i-sec.agent.md"
 type: "document"
-community: "Community 1918"
-location: "L8"
+community: "Skill: Security Review (SEC)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1918
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1918
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

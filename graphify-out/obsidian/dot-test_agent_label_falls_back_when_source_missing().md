@@ -15,6 +15,6 @@ tags:
 - [[If the per-agent source config is missing, the label falls back gracefully.]] - `rationale_for` [EXTRACTED]
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
 - [[_raise()]] - `indirect_call` [INFERRED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

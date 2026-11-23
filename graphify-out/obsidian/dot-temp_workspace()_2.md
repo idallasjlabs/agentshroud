@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .temp_workspace()
 
 ## Connections
-- [[Create a temporary workspace for testing.]] - `rationale_for` [EXTRACTED]
+- [[Create a temporary workspace for testing._1]] - `rationale_for` [EXTRACTED]
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
+- [[fixture_123]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

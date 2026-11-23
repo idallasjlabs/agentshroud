@@ -2,7 +2,7 @@
 source_file: "gateway/security/key_vault.py"
 type: "code"
 community: "KeyVault"
-location: "L169"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,8 @@ tags:
 # .scan_outbound()
 
 ## Connections
-- [[dot-_log_audit()]] - `calls` [EXTRACTED]
-- [[dot-check_value_match()]] - `calls` [EXTRACTED]
 - [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[LeakScanResult]] - `references` [EXTRACTED]
+- [[LeakScanResult]] - `calls` [EXTRACTED]
+- [[run()_1]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyVault

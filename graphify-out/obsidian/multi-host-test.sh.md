@@ -1,18 +1,17 @@
 ---
 source_file: "scripts/multi-host-test.sh"
 type: "code"
-community: "Community 785"
+community: "multi-host-test.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_785
+  - community/multi-host-testsh
 ---
 
 # multi-host-test.sh
 
 ## Connections
-- [[main()_16]] - `calls` [EXTRACTED]
 - [[multi-host-test.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_785
+#graphify/code #graphify/EXTRACTED #community/multi-host-testsh

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: "docker/config/hermes/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 314"
+community: "Skill: UX Expert (UX)"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Skill_UX_Expert_UX
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

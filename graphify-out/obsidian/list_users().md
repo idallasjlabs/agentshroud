@@ -1,20 +1,23 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L833"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_10
+  - graphify/INFERRED
+  - community/soc/routerpy
 ---
 
 # list_users()
 
 ## Connections
-- [[ContributorManager]] - `calls` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[ContributorManager]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_app_state()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/INFERRED #community/soc/routerpy

@@ -1,27 +1,19 @@
 ---
-source_file: "chatbot/main.py"
-type: "code"
-community: "Community 95"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+type: "document"
+community: "Architecture Overview.md"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_95
+  - community/Architecture_Overviewmd
 ---
 
-# main.py
+# main.py.md
 
 ## Connections
-- [[ChatRequest]] - `contains` [EXTRACTED]
-- [[ChatResponse]] - `contains` [EXTRACTED]
-- [[FastAPI]] - `imports_from` [EXTRACTED]
-- [[Isaiah Chat Service - Phase 3 MVP Minimal chat service with Isaiah's personality]] - `rationale_for` [EXTRACTED]
-- [[_check_rate_limit()]] - `contains` [EXTRACTED]
-- [[_get_auth_token()]] - `contains` [EXTRACTED]
-- [[chat()]] - `contains` [EXTRACTED]
-- [[health_check()]] - `contains` [EXTRACTED]
-- [[lifespan()]] - `contains` [EXTRACTED]
-- [[load_persona_files()]] - `contains` [EXTRACTED]
-- [[require_auth()]] - `contains` [EXTRACTED]
+- [[Architecture Overview]] - `references` [EXTRACTED]
+- [[Data Flow]] - `references` [EXTRACTED]
+- [[main.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_95
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

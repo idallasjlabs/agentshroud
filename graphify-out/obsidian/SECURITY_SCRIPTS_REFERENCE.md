@@ -1,20 +1,18 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 398"
+community: "AgentShroud Security Scripts Reference"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/AgentShroud_Security_Scripts_Reference
 ---
 
 # SECURITY_SCRIPTS_REFERENCE.md
 
 ## Connections
 - [[AgentShroud Security Scripts Reference]] - `contains` [EXTRACTED]
-- [[Kill Switch]] - `references` [EXTRACTED]
-- [[scan.sh_1]] - `references` [EXTRACTED]
-- [[verify-security.sh_1]] - `references` [EXTRACTED]
+- [[docsREADME]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Scripts_Reference

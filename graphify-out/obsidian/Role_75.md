@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/SKILL.md"
+source_file: ".opencode/agents/i-mcpm.md"
 type: "document"
-community: "Community 1974"
-location: "L8"
+community: "Available MCP Servers"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1974
+  - community/Available_MCP_Servers
 ---
 
 # Role
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1974
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L717"
+community: "test_llm_proxy_failover.py"
+location: "L702"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_llm_proxy_failoverpy
 ---
 
 # mock_forward()
 
 ## Connections
-- [[test_cloud_backend_connect_failure_still_returns_502()]] - `contains` [EXTRACTED]
+- [[test_failover_routes_qwen3_to_lm_studio_with_normalized_model()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

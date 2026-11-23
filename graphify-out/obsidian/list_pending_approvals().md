@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 62"
-location: "L110"
+community: "soc/router.py"
+location: "L1661"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/soc/routerpy
 ---
 
 # list_pending_approvals()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
-- [[List all pending approval requests      Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
-- [[approval.py]] - `contains` [EXTRACTED]
+- [[Action]] - `uses` [INFERRED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
+- [[_app_state()]] - `calls` [EXTRACTED]
+- [[get]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

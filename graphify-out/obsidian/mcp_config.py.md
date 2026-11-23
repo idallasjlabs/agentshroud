@@ -1,29 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
-type: "code"
-community: "Community 54"
+source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_config.py.md"
+type: "document"
+community: "mcp_config.py"
 location: "L1"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_54
+  - community/mcp_configpy
 ---
 
-# mcp_config.py
+# mcp_config.py.md
 
 ## Connections
-- [[AGENTSHROUD_MODE]] - `references` [INFERRED]
-- [[Enum]] - `imports_from` [EXTRACTED]
-- [[MCPProxyConfig]] - `contains` [EXTRACTED]
-- [[MCPServerConfig]] - `contains` [EXTRACTED]
-- [[MCPToolConfig]] - `contains` [EXTRACTED]
-- [[MCPTransport]] - `contains` [EXTRACTED]
-- [[PermissionLevel]] - `contains` [EXTRACTED]
-- [[__init__.py_8]] - `re_exports` [EXTRACTED]
-- [[agentshroud.yaml]] - `references` [INFERRED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[mcp_permissions.py]] - `imports_from` [EXTRACTED]
-- [[mcp_proxy.py]] - `imports_from` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `references` [EXTRACTED]
+- [[mcp_config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_54
+#graphify/document #graphify/EXTRACTED #community/mcp_configpy

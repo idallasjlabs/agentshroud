@@ -1,90 +1,112 @@
 ---
 type: community
-cohesion: 0.04
-members: 75
+members: 99
 ---
 
 # WebProxy
 
-**Cohesion:** 0.04 - loosely connected
-**Members:** 75 nodes
+**Members:** 99 nodes
 
 ## Members
-- [[dot-__init__()_177]] - code - gateway/security/network_validator.py
-- [[dot-_parse_service_network_config()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_container_runtime_config()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_dns_configuration()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_network_definitions()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_network_modes()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_port_exposure()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_privileged_containers()]] - code - gateway/security/network_validator.py
-- [[dot-_validate_service_network_isolation()]] - code - gateway/security/network_validator.py
-- [[dot-detect_configuration_drift()]] - code - gateway/security/network_validator.py
-- [[dot-export_report()]] - code - gateway/security/network_validator.py
-- [[dot-get_security_report()]] - code - gateway/security/network_validator.py
-- [[dot-setup_method()_33]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_clean_compose_yields_zero_critical()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-test_gateway_network_bridging_validation()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_get_security_report_shape()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-test_network_security_finding_structure()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_network_validation_comprehensive_rules()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_network_validator_init()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_privileged_service_is_critical()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-test_validate_docker_compose_config_empty_config()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_host_network_flagged()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_invalid_file()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_missing_internal_network()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_multiple_violations()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_openclaw_isolation()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_privileged_flagged()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validate_docker_compose_config_valid_config_passes()]] - code - gateway/tests/test_network_validator.py
-- [[dot-test_validator_knows_the_two_real_networks()]] - code - gateway/tests/test_network_validator_gate.py
-- [[dot-validate_docker_compose_config()]] - code - gateway/security/network_validator.py
-- [[dot-validate_runtime_configuration()]] - code - gateway/security/network_validator.py
-- [[A network security finding.]] - rationale - gateway/security/network_validator.py
-- [[A privileged container is the textbook escape-the-sandbox finding —         vali]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[Any_73]] - code - gateway/security/network_validator.py
-- [[Container network configuration.]] - rationale - gateway/security/network_validator.py
-- [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
-- [[Detect drift between compose file and runtime configuration.]] - rationale - gateway/security/network_validator.py
-- [[Export network security report to file.]] - rationale - gateway/security/network_validator.py
-- [[Get comprehensive network security report.]] - rationale - gateway/security/network_validator.py
-- [[NetworkConfiguration]] - code - gateway/security/network_validator.py
-- [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
-- [[NetworkValidator]] - code - gateway/security/network_validator.py
-- [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
-- [[Path_58]] - code - gateway/tests/test_network_validator_gate.py
-- [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test handling of empty configuration.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test handling of invalidnon-existent files.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that OpenClaw container isolation is validated.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that a valid docker-compose configuration passes.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that gateway service network bridging is validated.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that host network mode is flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that missing internal network is flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[Test that privileged containers are flagged.]] - rationale - gateway/tests/test_network_validator.py
-- [[TestExpectedNetworksAllowlist]] - code - gateway/tests/test_network_validator_gate.py
-- [[TestGateScope]] - code - gateway/tests/test_network_validator_gate.py
-- [[TestNetworkValidator]] - code - gateway/tests/test_network_validator.py
-- [[TestValidatorAPI]] - code - gateway/tests/test_network_validator_gate.py
-- [[Validate DNS configuration for security.]] - rationale - gateway/security/network_validator.py
-- [[Validate a single container's runtime network configuration.]] - rationale - gateway/security/network_validator.py
-- [[Validate container network isolation and security.]] - rationale - gateway/security/network_validator.py
-- [[Validate docker-compose network configuration.          Args             compos]] - rationale - gateway/security/network_validator.py
-- [[Validate network definitions in compose file.]] - rationale - gateway/security/network_validator.py
-- [[Validate network mode configurations.]] - rationale - gateway/security/network_validator.py
-- [[Validate port exposure configuration.]] - rationale - gateway/security/network_validator.py
-- [[Validate runtime network configuration using Docker API.]] - rationale - gateway/security/network_validator.py
-- [[Validate service network isolation.]] - rationale - gateway/security/network_validator.py
-- [[Validate that no containers are running in privileged mode.]] - rationale - gateway/security/network_validator.py
-- [[network_validator.py]] - code - gateway/security/network_validator.py
-- [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
-- [[test_network_validator_gate.py]] - code - gateway/tests/test_network_validator_gate.py
-- [[tmp_compose()]] - code - gateway/tests/test_network_validator_gate.py
-- [[validate_network_security()]] - code - gateway/security/network_validator.py
+- [[NOTE api.telegram.org is intentionally NOT listed here. The bot is]] - rationale - gateway/proxy/http_proxy.py
+- [[dot-__init__()_163]] - code - gateway/proxy/http_proxy.py
+- [[dot-__init__()_164]] - code - gateway/proxy/web_proxy.py
+- [[dot-allowlist_config()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-allowlist_proxy()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-check()_4]] - code - gateway/proxy/web_proxy.py
+- [[dot-get_domain_settings()]] - code - gateway/proxy/web_config.py
+- [[dot-is_domain_allowed()]] - code - gateway/proxy/web_config.py
+- [[dot-is_domain_denied()]] - code - gateway/proxy/web_config.py
+- [[dot-reset()_2]] - code - gateway/proxy/web_proxy.py
+- [[dot-test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_case_insensitive()_2]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_custom_denylist()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_default_mode_is_denylist()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denied_subdomain_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denylist_mode_still_works()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_different_domains_independent()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_domain_denied()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_domain_not_in_denylist_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_empty_allowlist_blocks_everything()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_exact_match()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_github_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_listed_domain_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_allows_everything()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_rate_limit_blocks_excess()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ssrf_blocked_before_allowlist_check()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_unlisted_domain_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_deeper_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_domain_settings()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_matches_root_domain()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_matches_subdomain()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse…]] - rationale - gateway/tests/test_http_proxy.py
+- [[Check if a domain is on the allowlist (used when mode == 'allowlist'). Supports…]] - rationale - gateway/proxy/web_config.py
+- [[Check if a domain is on the denylist.]] - rationale - gateway/proxy/web_config.py
+- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
+- [[Configuration for the web traffic proxy. Default-allow all URLs pass unless…]] - rationale - gateway/proxy/web_config.py
+- [[Default (denylist) mode is unchanged.]] - rationale - gateway/tests/test_web_proxy.py
+- [[Default-deny allowlist unlisted domains are blocked.]] - rationale - gateway/tests/test_web_proxy.py
+- [[DomainSettings]] - code - gateway/proxy/web_config.py
+- [[Enum_35]] - code
+- [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
+- [[HTTP CONNECT proxy server — intercepts all bot outbound traffic. Listens on…]] - rationale - gateway/proxy/http_proxy.py
+- [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
+- [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
+- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[RateLimiter]] - code - gateway/proxy/web_proxy.py
+- [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
+- [[TestAllowlistMode]] - code - gateway/tests/test_web_proxy.py
+- [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
+- [[TestDataExfiltration_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
+- [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
+- [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
+- [[TestPassthroughMode_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestRateLimiting_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
+- [[TestStats]] - code - gateway/tests/test_web_proxy.py
+- [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
+- [[Tests for Web Proxy — comprehensive security tests. Covers URL…]] - rationale - gateway/tests/test_web_proxy.py
+- [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
+- [[Verify hc-ping.com (Healthchecks.io) is on the egress allowlist. Without this…]] - rationale - gateway/tests/test_heartbeat_egress.py
+- [[WebProxy]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig]] - code - gateway/proxy/web_config.py
+- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
+- [[config()_2]] - code - gateway/tests/test_web_proxy.py
+- [[fixture_108]] - code
+- [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
+- [[passthrough_proxy()_1]] - code - gateway/tests/test_web_proxy.py
+- [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
+- [[str_19]] - code
+- [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
+- [[web_config.py_2]] - code - gateway/proxy/web_config.py
+- [[web_proxy.py_2]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -94,14 +116,34 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_ContextGuard]]
-- 9 edges to [[_COMMUNITY_Any]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_One Shroud Over Every Wire (founding mantra)]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy()]]
-- 1 edge to [[_COMMUNITY__wrap_response()]]
+- 22 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 9 edges to [[_COMMUNITY_EgressEvent]]
+- 8 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 7 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
+- 6 edges to [[_COMMUNITY_lifespan.py]]
+- 5 edges to [[_COMMUNITY_WebProxyResult]]
+- 5 edges to [[_COMMUNITY_TestWebProxySecurityIntegration]]
+- 4 edges to [[_COMMUNITY_EgressFilter]]
+- 3 edges to [[_COMMUNITY_URLAnalyzer]]
+- 3 edges to [[_COMMUNITY_TestAuditChain]]
+- 3 edges to [[_COMMUNITY_BrowserSecurityGuard]]
+- 3 edges to [[_COMMUNITY_WebContentScanner]]
+- 3 edges to [[_COMMUNITY_NetworkValidator]]
+- 3 edges to [[_COMMUNITY_OAuthSecurityValidator]]
+- 2 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
+- 1 edge to [[_COMMUNITY_TestPromptInjectionDetection]]
+- 1 edge to [[_COMMUNITY_TestHiddenContent]]
+- 1 edge to [[_COMMUNITY_TestPIIDetection]]
+- 1 edge to [[_COMMUNITY_TestZeroWidthAttacks]]
+- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[NetworkValidator]] - degree 52, connects to 5 communities
-- [[validate_network_security()]] - degree 10, connects to 1 community
-- [[dot-test_network_validator_init()]] - degree 2, connects to 1 community
+- [[WebProxy]] - degree 51, connects to 14 communities
+- [[web_proxy.py_2]] - degree 30, connects to 11 communities
+- [[test_web_proxy.py]] - degree 31, connects to 8 communities
+- [[http_proxy.py]] - degree 16, connects to 7 communities
+- [[WebProxyConfig]] - degree 49, connects to 5 communities

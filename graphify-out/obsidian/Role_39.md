@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/apollo/SKILL.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "Community 1379"
-location: "L8"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1379
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1379
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

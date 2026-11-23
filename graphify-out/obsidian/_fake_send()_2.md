@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_cve_report() (2)"
-location: "L1434"
+community: "asyncio"
+location: "L935"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_cve_report_2
+  - community/asyncio
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_critical_image_finding_uses_red_icon()]] - `contains` [EXTRACTED]
+- [[dot-test_hermes_zero_stays_silent_via_all_agents()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_cve_report_2
+#graphify/code #graphify/EXTRACTED #community/asyncio

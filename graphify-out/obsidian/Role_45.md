@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/SKILL.md"
+source_file: ".omp/agents/i-sec.md"
 type: "document"
-community: "Community 483"
-location: "L8"
+community: "Skill: Security Review (SEC)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_483
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_483
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "SkillGuard"
+community: "TestEgressApprovalQueue"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SkillGuard
+  - community/TestEgressApprovalQueue
 ---
 
 # .temp_rules_file()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[Create temporary rules file for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
+- [[fixture_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SkillGuard
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

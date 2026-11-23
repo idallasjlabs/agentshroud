@@ -1,25 +1,32 @@
 ---
 type: community
-cohesion: 0.31
-members: 10
+members: 19
 ---
 
 # Workflow (follow in order)
 
-**Cohesion:** 0.31 - loosely connected
-**Members:** 10 nodes
+**Members:** 19 nodes
 
 ## Members
-- [[dot-test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_explicit_apple()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_explicit_docker()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_explicit_podman()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_invalid_runtime()]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-test_no_runtime_available()]] - code - gateway/tests/test_runtime_engines.py
-- [[ContainerEngine_2]] - code - gateway/runtime/__init__.py
-- [[Return an appropriate container engine instance.      Args         preference]] - rationale - gateway/runtime/__init__.py
-- [[TestGetEngine_1]] - code - gateway/tests/test_runtime_engines.py
-- [[get_engine()]] - code - gateway/runtime/__init__.py
+- [[0) Model self-check (non-blocking)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[1) Establish context (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[2) Run OpenClaw security audits (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[3) Check OpenClaw versionupdate status (read-only)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[4) Determine risk tolerance (after system context)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[5) Produce a remediation plan]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[6) Offer execution options]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[7) Execute with confirmations]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[8) Verify and report]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Core rules]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Logging and audit trail]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Memory writes (conditional)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw Host Hardening]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[OpenClaw command accuracy]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Overview_35]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Periodic checks]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required confirmations (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Required prompt to schedule (always)]] - document - skills/openclaw/healthcheck/SKILL.md
+- [[Workflow (follow in order)]] - document - skills/openclaw/healthcheck/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,18 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_jira_weekly_review.py]]
-- 3 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 2 edges to [[_COMMUNITY_PodmanEngine]]
-- 2 edges to [[_COMMUNITY_Approval Queue (human-in-the-loop)]]
-- 2 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager (6)]]
-- 1 edge to [[_COMMUNITY_pipeline.py — Security Pipeline]]
-- 1 edge to [[_COMMUNITY_egress_retry.py]]
-- 1 edge to [[_COMMUNITY_create_auth_dependency()]]
+- 1 edge to [[_COMMUNITY_gh-issuesSKILL]]
 
 ## Top bridge nodes
-- [[get_engine()]] - degree 16, connects to 5 communities
-- [[TestGetEngine_1]] - degree 12, connects to 5 communities
-- [[ContainerEngine_2]] - degree 5, connects to 4 communities
+- [[OpenClaw Host Hardening]] - degree 9, connects to 1 community

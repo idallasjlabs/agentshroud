@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-doctor.md"
+source_file: ".opencode/agents/i-gg.md"
 type: "document"
-community: "Community 1040"
-location: "L10"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1040
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1040
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

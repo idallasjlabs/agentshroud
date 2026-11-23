@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-qa.md"
+source_file: ".cursor/agents/hermes.md"
 type: "document"
-community: "Community 985"
-location: "L12"
+community: "Hermes — Reference Verifier"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_985
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[Skill Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_985
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

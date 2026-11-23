@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "WebContentScanner"
-location: "L667"
+community: "MiddlewareManager"
+location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/MiddlewareManager
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
-- [[auth_dep()]] - `indirect_call` [INFERRED]
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not finalize them…]] - `rationale_for` [EXTRACTED]
+- [[TestRBACIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

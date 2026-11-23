@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "MiddlewareManager"
+community: "UserSessionManager"
 location: "L236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/UserSessionManager
 ---
 
 # .session_manager()
@@ -15,5 +15,6 @@ tags:
 - [[Create a session manager.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[fixture_123]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

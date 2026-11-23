@@ -1,23 +1,24 @@
 ---
 source_file: "gateway/web/management.py"
 type: "code"
-community: "Community 166"
+community: "EgressFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_166
+  - community/EgressFilter
 ---
 
 # management.py
 
 ## Connections
+- [[AgentShroud Management Dashboard routes. All manage routes require…]] - `rationale_for` [EXTRACTED]
 - [[EgressAllowlistResponse]] - `contains` [EXTRACTED]
 - [[EgressAllowlistUpdate]] - `contains` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
-- [[KeyRotationConfig_1]] - `imports` [EXTRACTED]
+- [[KeyRotationConfig]] - `imports` [EXTRACTED]
 - [[KeyRotationManager]] - `imports` [EXTRACTED]
-- [[api.py]] - `imports_from` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
 - [[approvals()]] - `contains` [EXTRACTED]
 - [[audit()_1]] - `contains` [EXTRACTED]
 - [[collaborators()]] - `contains` [EXTRACTED]
@@ -25,14 +26,16 @@ tags:
 - [[credentials_status()]] - `contains` [EXTRACTED]
 - [[dashboard()]] - `contains` [EXTRACTED]
 - [[dashboard_main()]] - `contains` [EXTRACTED]
-- [[egress_config.py]] - `imports_from` [EXTRACTED]
+- [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[falco_dashboard()]] - `contains` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
 - [[get_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[get_egress_config()]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[killswitch()_1]] - `contains` [EXTRACTED]
-- [[main.py_2]] - `imports_from` [EXTRACTED]
 - [[modules()]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[rotate_credential()]] - `contains` [EXTRACTED]
 - [[security_overview()]] - `contains` [EXTRACTED]
 - [[set_egress_config()]] - `imports` [EXTRACTED]
@@ -40,4 +43,4 @@ tags:
 - [[update_egress_allowlist()]] - `contains` [EXTRACTED]
 - [[wazuh_dashboard()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_166
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

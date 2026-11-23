@@ -1,21 +1,17 @@
 ---
 source_file: "docs/setup/SETUP_API_KEYS.md"
 type: "document"
-community: "Community 696"
+community: "API Keys Setup Guide"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/Community_696
+  - graphify/EXTRACTED
+  - community/API_Keys_Setup_Guide
 ---
 
 # SETUP_API_KEYS.md
 
 ## Connections
 - [[API Keys Setup Guide]] - `contains` [EXTRACTED]
-- [[LLM_PROVIDER_SETUP]] - `semantically_similar_to` [INFERRED]
-- [[OpenClaw Bot Container]] - `references` [EXTRACTED]
-- [[TELEGRAM_SETUP]] - `conceptually_related_to` [INFERRED]
-- [[VAULT-SHARING-INSTRUCTIONS]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/Community_696
+#graphify/document #graphify/EXTRACTED #community/API_Keys_Setup_Guide

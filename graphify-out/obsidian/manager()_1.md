@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "Community 61"
+community: "GroupWorkspaceManager"
 location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_61
+  - community/GroupWorkspaceManager
 ---
 
 # manager()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `calls` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `uses` [INFERRED]
+- [[fixture_22]] - `references` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_61
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

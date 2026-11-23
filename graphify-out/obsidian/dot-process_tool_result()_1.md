@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AgentShroud Security Value Proposition"
+community: "MCPProxy"
 location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Value_Proposition
+  - community/MCPProxy
 ---
 
 # .process_tool_result()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-_emit_privacy_event()]] - `calls` [EXTRACTED]
 - [[dot-_sanitize_admin_private_data()]] - `calls` [EXTRACTED]
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 - [[MCPToolResult]] - `references` [EXTRACTED]
-- [[Process a tool result coming back (for cases where execution happens externally)]] - `rationale_for` [EXTRACTED]
-- [[ProxyResult]] - `references` [EXTRACTED]
+- [[Process a tool result coming back (for cases where execution happens…]] - `rationale_for` [EXTRACTED]
+- [[ProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Value_Proposition
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

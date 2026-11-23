@@ -1,23 +1,22 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Community 29"
+community: "scanner_integration.py"
 location: "L2079"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_29
+  - community/scanner_integrationpy
 ---
 
 # _evaluate_mandatory_gates()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
-- [[Apply mandatory gate overrides to domain scores.      Returns updated scores dic]] - `rationale_for` [EXTRACTED]
-- [[Path_19]] - `calls` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
+- [[Apply mandatory gate overrides to domain scores. Returns updated scores dict.…]] - `rationale_for` [EXTRACTED]
 - [[_app_state_has()]] - `calls` [EXTRACTED]
 - [[_security_scan_sh_text()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_29
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

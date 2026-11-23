@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "FileSandbox"
-location: "L52"
+community: "test_e2e_proxy.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/test_e2e_proxypy
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-check_write()]] - `calls` [EXTRACTED]
-- [[PIIFinding]] - `calls` [EXTRACTED]
-- [[PIIScanResult]] - `references` [EXTRACTED]
-- [[PIIScanner]] - `method` [EXTRACTED]
+- [[Scan a message through the security pipeline.]] - `rationale_for` [EXTRACTED]
+- [[ScanRequest_1]] - `references` [EXTRACTED]
+- [[ScanResponse]] - `calls` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

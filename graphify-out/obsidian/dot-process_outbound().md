@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "TestEmailSend"
-location: "L42"
+community: "test_forward_stream.py"
+location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/test_forward_streampy
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[_BlockingPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

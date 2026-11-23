@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Scan tool result for injection attempts and return sanitized content.          A]] - `rationale_for` [EXTRACTED]
+- [[Scan tool result for injection attempts and return sanitized content. Args…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MiddlewareManager

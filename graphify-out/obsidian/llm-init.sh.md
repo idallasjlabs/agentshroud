@@ -1,19 +1,17 @@
 ---
 source_file: ".llm_settings/scripts/llm-init.sh"
 type: "code"
-community: "scripts/render-agents.sh (agents-src -> .llm_settings)"
+community: "llm-init.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scripts/render-agentssh_agents-src_-_llm_settings
+  - community/llm-initsh
 ---
 
 # llm-init.sh
 
 ## Connections
-- [[Additional CLIs OpenCode, Crush, Antigravity, Grok Build, Pi]] - `references` [EXTRACTED]
-- [[GitHub Copilot CLI Setup Guide]] - `references` [INFERRED]
 - [[_llm_init_agent_reference_paths()]] - `defines` [EXTRACTED]
 - [[_llm_init_any_tool_enabled()]] - `defines` [EXTRACTED]
 - [[_llm_init_bounded()]] - `defines` [EXTRACTED]
@@ -61,9 +59,7 @@ tags:
 - [[_llm_init_skill_name_for()]] - `defines` [EXTRACTED]
 - [[_llm_init_testing_summary()]] - `defines` [EXTRACTED]
 - [[_llm_init_tool_enabled()]] - `defines` [EXTRACTED]
-- [[deploy-opencode.sh]] - `conceptually_related_to` [EXTRACTED]
 - [[llm-init()]] - `defines` [EXTRACTED]
 - [[llm-init.sh script]] - `contains` [EXTRACTED]
-- [[scriptsrender-agents.sh (agents-src - .llm_settings)]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scripts/render-agentssh_agents-src_-_llm_settings
+#graphify/code #graphify/EXTRACTED #community/llm-initsh

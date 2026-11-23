@@ -1,32 +1,42 @@
 ---
 type: community
-cohesion: 0.12
-members: 17
+members: 29
 ---
 
 # Skill Creation Process
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 17 nodes
+**Members:** 29 nodes
 
 ## Members
-- [[Configuration  Environment Variables_4]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Function Details_11]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Key Classes  Functions_12]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.__init__(allowed_redirect_uris, require_pkce)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.create_consent_cookie(client_id, scopes, user_id)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.record_state_used(state)  check_state_reuse(state)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.register_known_shared_ids(ids)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_consent_cookie(cookie, client_id, scopes, user_id)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_redirect_uri(uri)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.validate_request(req)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[OAuthSecurityValidator.verify_pkce(verifier, challenge, method)]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Purpose_97]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Related_16]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Responsibilities_14]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[Threat Model_12]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[oauth_security.py_1]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
-- [[oauth_security.py]] - document - docs/vault/02 - Modules/Security Modules/oauth_security.py.md
+- [[About Skills]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Anatomy of a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Assets (`assets`)]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Body]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Bundled Resources (optional)]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Concise is Key]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Core Principles]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Frontmatter]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Learn Proven Design Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Progressive Disclosure Design Principle]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Progressive Disclosure Patterns]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[References (`references`)]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[SKILL.md (required)]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Scripts (`scripts`)]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Set Appropriate Degrees of Freedom]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creation Process]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Creator]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Skill Naming]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Start with Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 1 Understanding the Skill with Concrete Examples]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 2 Planning the Reusable Skill Contents]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 3 Initializing the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 4 Edit the Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 5 Packaging a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Step 6 Iterate]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[Update SKILL]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[What Skills Provide]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[What to Not Include in a Skill]] - document - skills/openclaw/skill-creator/SKILL.md
+- [[skill-creatorSKILL]] - document - skills/openclaw/skill-creator/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "Community 2154"
+community: "ingest_api/models.py"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2154
+  - community/ingest_api/modelspy
 ---
 
 # _InboundResult
 
 ## Connections
-- [[Everything the post-routing forwarding steps (blocking or streaming)     need, o]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[_process_inbound()]] - `references` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[Everything the post-routing forwarding steps (blocking or streaming) need, once…]] - `rationale_for` [EXTRACTED]
+- [[_process_inbound()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2154
+#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy

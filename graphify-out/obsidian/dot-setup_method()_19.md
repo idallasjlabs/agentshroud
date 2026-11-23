@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ModuleStatsCollector"
-location: "L124"
+community: "prompt_guard.py"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModuleStatsCollector
+  - community/prompt_guardpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModuleStatsCollector
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "Any"
-location: "L185"
+community: "BrowserSecurityGuard"
+location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/BrowserSecurityGuard
 ---
 
 # .register_screenshot_hook()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

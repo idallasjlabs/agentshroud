@@ -1,23 +1,21 @@
 ---
 source_file: "docs/papers/attack-teardowns-rovoblast-cross-turn.md"
 type: "concept"
-community: "Community 1563"
+community: "Cross-Turn Correlation Capability"
 location: "lines 9-36"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1563
+  - community/Cross-Turn_Correlation_Capability
 ---
 
 # RovoBlast Attack (Atlassian Rovo AI)
 
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `references` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `implements` [EXTRACTED]
 - [[EgressFilter.check()]] - `implements` [EXTRACTED]
 - [[PromptArmor Atlassian Rovo Content-Borne Injection Disclosure]] - `cites` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `implements` [EXTRACTED]
 - [[Varonis RovoBlast How One Click Triggered Atlassian's AI Assistant to Leak Data]] - `cites` [EXTRACTED]
 - [[context_guard.py Provenance Tagging (ContextSegment)]] - `implements` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1563
+#graphify/concept #graphify/EXTRACTED #community/Cross-Turn_Correlation_Capability

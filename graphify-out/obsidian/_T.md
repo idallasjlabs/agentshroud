@@ -1,12 +1,11 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: ""
 type: "code"
-community: "Community 48"
-location: "L201"
+community: "discover_upstream_versions.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/discover_upstream_versionspy
 ---
 
 # _T
@@ -16,4 +15,4 @@ tags:
 - [[_guarded_fetch()]] - `references` [EXTRACTED]
 - [[_retry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

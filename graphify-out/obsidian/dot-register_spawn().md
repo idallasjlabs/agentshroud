@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
-- [[SubagentInfo]] - `references` [EXTRACTED]
+- [[SubagentInfo]] - `calls` [EXTRACTED]
 - [[SubagentMonitor]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

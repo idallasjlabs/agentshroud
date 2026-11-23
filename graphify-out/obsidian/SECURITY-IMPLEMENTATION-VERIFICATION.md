@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 1315"
+community: "SECURITY_VALUE_PROPOSITION.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1315
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # SECURITY-IMPLEMENTATION-VERIFICATION.md
@@ -16,7 +16,5 @@ tags:
 - [[SECURITY_VERIFICATION]] - `conceptually_related_to` [AMBIGUOUS]
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 - [[Ultra-Conservative Credential Display Policy]] - `references` [EXTRACTED]
-- [[VERIFICATION_RESULTS]] - `conceptually_related_to` [AMBIGUOUS]
-- [[sanitizer.py]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1315
+#graphify/document #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

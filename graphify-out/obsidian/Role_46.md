@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/SKILL.md"
+source_file: ".omp/agents/i-session-prompt.md"
 type: "document"
-community: "Community 948"
-location: "L8"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_948
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_948
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

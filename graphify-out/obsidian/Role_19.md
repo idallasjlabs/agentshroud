@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm.md"
+source_file: ".github/agents/i-crpr.agent.md"
 type: "document"
-community: "Community 1929"
-location: "L10"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1929
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1929
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

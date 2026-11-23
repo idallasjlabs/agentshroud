@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # SharedMemoryManager Group Memory Read/Write Tests
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer.score_reversibility (C37)]] - code - gateway/security/tool_chain_analyzer.py
+- [[SharedMemoryManager Group Memory ReadWrite Tests]] - code - gateway/tests/test_shared_memory.py
 
 ## Live Query (requires Dataview plugin)
 

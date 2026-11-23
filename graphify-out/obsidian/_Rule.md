@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "Community 924"
+community: "ScanResult"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_924
+  - community/ScanResult
 ---
 
 # _Rule
 
 ## Connections
-- [[.__init__()_131]] - `references` [EXTRACTED]
+- [[dot-__init__()_221]] - `references` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_924
+#graphify/code #graphify/EXTRACTED #community/ScanResult

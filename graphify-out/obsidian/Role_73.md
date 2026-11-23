@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/oracle/SKILL.md"
+source_file: ".omp/agents/i-mcpm.md"
 type: "document"
-community: "Community 1983"
-location: "L8"
+community: "Available MCP Servers"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1983
+  - community/Available_MCP_Servers
 ---
 
 # Role
 
 ## Connections
-- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1983
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

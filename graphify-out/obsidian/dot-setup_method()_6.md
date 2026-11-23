@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L70"
+community: "TestParseHostsLine"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TestParseHostsLine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityConfig_1]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine

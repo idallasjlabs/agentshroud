@@ -1,17 +1,24 @@
 ---
 source_file: "docs/vault/02 - Modules/Proxy Layer/mcp_permissions.py.md"
 type: "document"
-community: "Community 719"
-location: "L1"
+community: "Function Details"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_719
+  - community/Function_Details
 ---
 
-# mcp_permissions.py.md
+# mcp_permissions.py
 
 ## Connections
-- [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_2]] - `contains` [EXTRACTED]
+- [[Function Details_8]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_10]] - `contains` [EXTRACTED]
+- [[Purpose_11]] - `contains` [EXTRACTED]
+- [[Related_10]] - `contains` [EXTRACTED]
+- [[Responsibilities_10]] - `contains` [EXTRACTED]
+- [[Trust Level Reference]] - `contains` [EXTRACTED]
+- [[mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_719
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: "Any"
-location: "L19"
+community: "CanaryTripwire"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/CanaryTripwire
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
-- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
-- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

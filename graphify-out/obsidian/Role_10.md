@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-cicd.md"
+source_file: ".github/agents/i-pca.agent.md"
 type: "document"
-community: "Community 2012"
-location: "L10"
+community: "Output Sections (ALL required)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2012
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2012
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

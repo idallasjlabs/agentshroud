@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-session-prompt.md"
+source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Community 1422"
-location: "L10"
+community: "Output Sections (ALL required)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1422
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1422
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

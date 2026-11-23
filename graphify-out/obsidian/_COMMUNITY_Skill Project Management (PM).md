@@ -1,34 +1,32 @@
 ---
 type: community
-cohesion: 0.11
 members: 19
 ---
 
 # Skill: Project Management (PM)
 
-**Cohesion:** 0.11 - loosely connected
 **Members:** 19 nodes
 
 ## Members
-- [[About the Creator]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[AgentShroud™ — Project Knowledge Base]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Architecture Review]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Current Status_6]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Development Phases]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Documentation & Ideas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Frequently Asked Questions]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[How He Works]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[How to Contribute]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Red Team Testing (Most Valuable!)]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Technology Stack]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Conjecture]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Problem]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Solution]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[The Thesis]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What He Builds]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[What Is AgentShroud_3]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[Why AgentShroud Exists]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
-- [[v0.8.0 Focus Areas]] - document - docker/bots/openclaw/workspace/collaborator-workspace/PUBLIC-INFO.md
+- [[dot-agentsskillsi-pmSKILL]] - document - .agents/skills/i-pm/SKILL.md
+- [[Assigning Work]] - document - .agents/skills/i-pm/SKILL.md
+- [[CHANGELOG.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Continuity Files]] - document - .agents/skills/i-pm/SKILL.md
+- [[Definition of Done (from CLAUDE.md)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Escalation]] - document - .agents/skills/i-pm/SKILL.md
+- [[Known Risks]] - document - .agents/skills/i-pm/SKILL.md
+- [[Project Roadmap]] - document - .agents/skills/i-pm/SKILL.md
+- [[Quick Status (for chatTelegram)]] - document - .agents/skills/i-pm/SKILL.md
+- [[README.md Updates]] - document - .agents/skills/i-pm/SKILL.md
+- [[Risk Management]] - document - .agents/skills/i-pm/SKILL.md
+- [[Role_168]] - document - .agents/skills/i-pm/SKILL.md
+- [[Skill Project Management (PM)]] - document - .agents/skills/i-pm/SKILL.md
+- [[Status Reporting]] - document - .agents/skills/i-pm/SKILL.md
+- [[Task Coordination]] - document - .agents/skills/i-pm/SKILL.md
+- [[Tracking Format]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE-YYYY-MM-DD.md` (daily snapshot)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesCONTINUE.md` (always current)]] - document - .agents/skills/i-pm/SKILL.md
+- [[`session-notesSESSION_SUMMARY_YYYY-MM-DD.md` (session report)]] - document - .agents/skills/i-pm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,8 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Vulcan — Subject Matter Auditor (2)]]
-- 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD) (3)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[AgentShroud™ — Project Knowledge Base]] - degree 9, connects to 2 communities
+- [[Skill Project Management (PM)]] - degree 8, connects to 1 community

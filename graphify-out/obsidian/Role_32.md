@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-tw.md"
+source_file: ".omp/agents/apollo.md"
 type: "document"
-community: "Community 712"
-location: "L10"
+community: "Technical Specification"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_712
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_712
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

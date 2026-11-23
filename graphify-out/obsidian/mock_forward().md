@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_claude_via_openai_path.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L638"
+community: "test_anthropic_openai_translator.py"
+location: "L73"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_voice_gatewaypy
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # mock_forward()
 
 ## Connections
-- [[_proxy_with_connect_refused()]] - `indirect_call` [INFERRED]
-- [[test_backend_unavailable_warning_rate_limited()]] - `indirect_call` [INFERRED]
-- [[test_cloud_backend_connect_failure_still_returns_502()]] - `indirect_call` [INFERRED]
+- [[test_proxy_rewrites_claude_via_openai_path()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy
+#graphify/code #graphify/INFERRED #community/test_anthropic_openai_translatorpy

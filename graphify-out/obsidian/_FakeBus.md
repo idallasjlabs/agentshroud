@@ -1,28 +1,22 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 6"
+community: "test_soc_realtime_coverage.py"
 location: "L604"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _FakeBus
 
 ## Connections
-- [[.__init__()_209]] - `method` [EXTRACTED]
-- [[.subscribe()_1]] - `method` [EXTRACTED]
-- [[.test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
-- [[.test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
-- [[.unsubscribe()_1]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[dot-__init__()_179]] - `method` [EXTRACTED]
+- [[dot-subscribe()]] - `method` [EXTRACTED]
+- [[dot-test_fan_out_filters_and_forwards()]] - `calls` [EXTRACTED]
+- [[dot-test_fan_out_survives_coerce_exception()]] - `calls` [EXTRACTED]
+- [[dot-unsubscribe()]] - `method` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

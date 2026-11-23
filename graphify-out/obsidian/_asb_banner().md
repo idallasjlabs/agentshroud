@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/asb"
 type: "code"
-community: "telegram_api_proxy (/telegram-api/{path})"
-location: "L84"
+community: "asb"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_api_proxy_/telegram-api/path
+  - community/asb
 ---
 
 # _asb_banner()
@@ -15,4 +15,4 @@ tags:
 - [[asb]] - `defines` [EXTRACTED]
 - [[asb script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_api_proxy_/telegram-api/path
+#graphify/code #graphify/EXTRACTED #community/asb

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-tdd.md"
+source_file: ".cursor/agents/i-tdd.md"
 type: "document"
-community: "Community 1444"
+community: "Skill: Test-Driven Development (TDD)"
 location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1444
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1444
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

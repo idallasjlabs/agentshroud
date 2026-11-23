@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "Community 2408"
+community: "_patch_urlopen"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2408
+  - community/_patch_urlopen
 ---
 
 # _FakeHTTPResponse
 
 ## Connections
-- [[.__enter__()_1]] - `method` [EXTRACTED]
-- [[.__exit__()_1]] - `method` [EXTRACTED]
-- [[.__init__()_155]] - `method` [EXTRACTED]
-- [[.read()]] - `method` [EXTRACTED]
+- [[dot-__enter__()_3]] - `method` [EXTRACTED]
+- [[dot-__exit__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_216]] - `method` [EXTRACTED]
+- [[dot-read()_2]] - `method` [EXTRACTED]
 - [[Context-manager stand-in for the object urlopen() yields.]] - `rationale_for` [EXTRACTED]
-- [[SCLClient]] - `uses` [INFERRED]
+- [[fake_urlopen()_82]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2408
+#graphify/code #graphify/EXTRACTED #community/_patch_urlopen

@@ -1,18 +1,19 @@
 ---
 source_file: "skills/openclaw/model-usage/scripts/model_usage.py"
 type: "code"
-community: "Community 492"
+community: "model_usage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_492
+  - community/model_usagepy
 ---
 
 # model_usage.py
 
 ## Connections
 - [[ModelCost]] - `contains` [EXTRACTED]
+- [[Summarize CodexBar local cost usage by model. Defaults to current model (most…]] - `rationale_for` [EXTRACTED]
 - [[aggregate_costs()]] - `contains` [EXTRACTED]
 - [[build_json_all()]] - `contains` [EXTRACTED]
 - [[build_json_current()]] - `contains` [EXTRACTED]
@@ -20,7 +21,7 @@ tags:
 - [[filter_by_days()]] - `contains` [EXTRACTED]
 - [[latest_day_cost()]] - `contains` [EXTRACTED]
 - [[load_payload()]] - `contains` [EXTRACTED]
-- [[main()_32]] - `contains` [EXTRACTED]
+- [[main()_27]] - `contains` [EXTRACTED]
 - [[parse_daily_entries()]] - `contains` [EXTRACTED]
 - [[parse_date()]] - `contains` [EXTRACTED]
 - [[pick_current_model()]] - `contains` [EXTRACTED]
@@ -29,4 +30,4 @@ tags:
 - [[run_codexbar_cost()]] - `contains` [EXTRACTED]
 - [[usd()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_492
+#graphify/code #graphify/EXTRACTED #community/model_usagepy

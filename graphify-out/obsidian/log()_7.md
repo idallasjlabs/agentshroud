@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/lib/sunday-scan.sh"
+source_file: "tests/startup_smoke/test_sunday_upgrade_head_guard.sh"
 type: "code"
-community: "Community 869"
-location: "L66"
+community: "test_sunday_upgrade_head_guard.sh"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_869
+  - community/test_sunday_upgrade_head_guardsh
 ---
 
 # log()
 
 ## Connections
-- [[sunday-scan.sh]] - `defines` [EXTRACTED]
-- [[sunday_run_scan_gate()]] - `calls` [EXTRACTED]
+- [[test_sunday_upgrade_head_guard.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_869
+#graphify/code #graphify/EXTRACTED #community/test_sunday_upgrade_head_guardsh

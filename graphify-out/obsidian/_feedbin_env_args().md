@@ -1,12 +1,12 @@
 ---
 source_file: "docker/bots/hermes/run-standalone.sh"
 type: "code"
-community: "Community 1919"
+community: "run-standalone.sh"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1919
+  - community/run-standalonesh
 ---
 
 # _feedbin_env_args()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run-standalone.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1919
+#graphify/code #graphify/EXTRACTED #community/run-standalonesh

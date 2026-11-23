@@ -2,7 +2,7 @@
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
 community: "ToolChainAnalyzer"
-location: "L609"
+location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,9 @@ tags:
 # .score_reversibility()
 
 ## Connections
-- [[Any_40]] - `references` [EXTRACTED]
-- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 = irrevers]] - `rationale_for` [EXTRACTED]
-- [[ReversibilityScore]] - `references` [EXTRACTED]
+- [[Any_83]] - `references` [EXTRACTED]
+- [[Return a reversibility score for the given tool call (1.0 = safe, 0.1 =…]] - `rationale_for` [EXTRACTED]
+- [[ReversibilityScore]] - `calls` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

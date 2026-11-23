@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "Sunday Upgrade Report — 2026-09-17 (prod, on-demand)"
-location: "L7842"
+community: ".test_default_transport_is_smtp_ssl"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+  - community/test_default_transport_is_smtp_ssl
 ---
 
 # __exit__()
 
 ## Connections
-- [[fake_urlopen()_64]] - `contains` [EXTRACTED]
+- [[dot-test_default_transport_is_smtp_ssl()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Sunday_Upgrade_Report__2026-09-17_prod_on-demand
+#graphify/code #graphify/EXTRACTED #community/test_default_transport_is_smtp_ssl

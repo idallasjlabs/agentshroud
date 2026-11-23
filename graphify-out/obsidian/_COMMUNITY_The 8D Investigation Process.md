@@ -1,27 +1,45 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 32
 ---
 
 # The 8D Investigation Process
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 32 nodes
 
 ## Members
-- [[dot-audit_store()_1]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_log_event()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_stats()_1]] - code - gateway/tests/test_audit_export.py
-- [[Create in-memory audit store for testing.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test logging audit events.]] - rationale - gateway/tests/test_audit_export.py
-- [[Test querying events with filters.]] - rationale - gateway/tests/test_audit_export.py
-- [[TestAuditStore]] - code - gateway/tests/test_audit_export.py
+- [[8D Root Cause Analysis — Data-Driven Control System Investigation]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Agent Interaction Protocol]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Architecture Context]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Confidence Scoring_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Critical Rules_6]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D0 — Planning & Scoping]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D1 — Team & Expertise Identification]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D2 — Problem Description (Data Collection & Characterization)]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D3 — Interim Containment Assessment]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D4 — Root Cause Analysis (Correlated Event Detection)]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D5 — Permanent Corrective Action Definition]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D6 — Implementation Verification]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D7 — Systemic Prevention]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[D8 — Documentation & Recognition]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Device Hierarchy_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Collaborate with the AWS Agent]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[How to Interact with the Human Investigator]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Input Requirements_50]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Knowledge Base Schema_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Learning System (Continuous Improvement)_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Overview_8]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Pattern Matching for New Incidents_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 1 Collect the Error Event Data]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 2 Collect ALL Data in the Time Window]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 3 Collect Alarms and Events]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 4 Build the IS  IS NOT Matrix]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Step 5 Establish Baseline]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[The 8D Investigation Process]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[What to Extract_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[Why This Matters_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[XML Configuration File Parsing_1]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
+- [[hermesskillsi-eightdSKILL]] - document - docker/config/hermes/skills/i-eightd/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,13 +47,3 @@ members: 12
 TABLE source_file, type FROM #community/The_8D_Investigation_Process
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 3 edges to [[_COMMUNITY_AlertDispatcher (5)]]
-- 2 edges to [[_COMMUNITY_AuditExporter (2)]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue (`enhanced_queue.py`)]]
-- 1 edge to [[_COMMUNITY_AuditExportConfig]]
-
-## Top bridge nodes
-- [[TestAuditStore]] - degree 12, connects to 4 communities
-- [[dot-audit_store()_1]] - degree 3, connects to 1 community

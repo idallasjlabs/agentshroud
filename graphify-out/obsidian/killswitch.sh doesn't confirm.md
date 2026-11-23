@@ -1,17 +1,17 @@
 ---
 source_file: "docs/security/SECURITY_SCRIPTS_REFERENCE.md"
 type: "document"
-community: "Community 398"
+community: "AgentShroud Security Scripts Reference"
 location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_398
+  - community/AgentShroud_Security_Scripts_Reference
 ---
 
 # killswitch.sh doesn't confirm
 
 ## Connections
-- [[Troubleshooting_43]] - `contains` [EXTRACTED]
+- [[Troubleshooting_58]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_398
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Scripts_Reference

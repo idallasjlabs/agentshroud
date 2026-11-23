@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/SKILL.md"
+source_file: ".cursor/agents/daedalus.md"
 type: "document"
-community: "Community 486"
-location: "L8"
+community: "Daedalus — Concept Illustrator"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_486
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_486
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

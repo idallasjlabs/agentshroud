@@ -1,42 +1,27 @@
 ---
 type: community
-cohesion: 0.07
-members: 27
+members: 14
 ---
 
 # Slack Channel Setup
 
-**Cohesion:** 0.07 - loosely connected
-**Members:** 27 nodes
+**Members:** 14 nodes
 
 ## Members
-- [[Accessibility Requirements_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Anti-Patterns to Flag_10]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[BEM (Block Element Modifier)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Breakpoints (mobile-first)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Button_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[CSS Architecture Recommendations_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[CSS Modules (React  Next.js)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component Patterns_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component contract rules_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Component file structure_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Container Query Pattern (preferred over breakpoints for components)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Core Discipline Structure → Component → Layout → Validate_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dark  Light Theme Implementation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dashboard Grid_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Data Table_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Dependencies_10]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Form Field_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Modal  Dialog_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Navigation_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[React  Next.js Component Architecture_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Responsive Layout System_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Role_33]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Rules_11]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Skill UI Expert (UI)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[UI Validation Checklist_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[Utility-First (Tailwind  custom utilities)_2]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
-- [[openclawskillsi-uiSKILL]] - document - docker/config/openclaw/skills/i-ui/SKILL.md
+- [[Architecture_5]] - document - docs/setup-slack.md
+- [[Sending Messages to the Bot]] - document - docs/setup-slack.md
+- [[Slack Channel Setup]] - document - docs/setup-slack.md
+- [[Step 10 Verify]] - document - docs/setup-slack.md
+- [[Step 1 Create a Slack App]] - document - docs/setup-slack.md
+- [[Step 2 Enable Socket Mode]] - document - docs/setup-slack.md
+- [[Step 3 Add Bot Token Scopes]] - document - docs/setup-slack.md
+- [[Step 4 Enable Event Subscriptions]] - document - docs/setup-slack.md
+- [[Step 5 Enable App Home Messages Tab]] - document - docs/setup-slack.md
+- [[Step 6 Install the App]] - document - docs/setup-slack.md
+- [[Step 7 Find Your Slack User ID]] - document - docs/setup-slack.md
+- [[Step 9 Rebuild and Start]] - document - docs/setup-slack.md
+- [[Troubleshooting_22]] - document - docs/setup-slack.md
+- [[setup-slack]] - document - docs/setup-slack.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -46,7 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_soc.js]]
+- 1 edge to [[_COMMUNITY_Collaborators]]
+- 1 edge to [[_COMMUNITY_Telegram Channel Setup]]
 
 ## Top bridge nodes
-- [[Skill UI Expert (UI)_2]] - degree 14, connects to 1 community
+- [[Slack Channel Setup]] - degree 15, connects to 2 communities

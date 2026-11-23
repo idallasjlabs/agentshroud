@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ab/SKILL.md"
+source_file: ".github/agents/i-tdd.agent.md"
 type: "document"
-community: "Community 632"
-location: "L8"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_632
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_1]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_632
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

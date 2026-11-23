@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.29
 members: 7
 ---
 
 # What is the symptom?
 
-**Cohesion:** 0.29 - loosely connected
 **Members:** 7 nodes
 
 ## Members
-- [[Integration_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Purpose_8]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Related Notes_10]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Usage_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[gitleaks.toml_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[gitleaks.toml]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Alert  Issue Detected]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Bot container not healthy or crash-looping]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Bot not responding on Telegram_1]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Context limit exceeded, bot resets mid-conversation]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Kill switch gateway kill_switch_enabled=true (freezeshutdowndisconnect)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[Security alert (blocked domain, HIGH MCP threat, canary token triggered)]] - concept - docs/diagrams/images/diagram-18-runbook.svg
+- [[What is the symptom]] - concept - docs/diagrams/images/diagram-18-runbook.svg
 
 ## Live Query (requires Dataview plugin)
 

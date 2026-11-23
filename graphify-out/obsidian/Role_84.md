@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-cr.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/SKILL.md"
 type: "document"
-community: "Community 2019"
-location: "L12"
+community: "Vulcan — Subject Matter Auditor"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2019
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2019
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

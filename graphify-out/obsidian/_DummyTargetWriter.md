@@ -1,24 +1,26 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 86"
-location: "L110"
+community: "test_http_proxy_coverage.py"
+location: "L87"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_86
+  - graphify/EXTRACTED
+  - community/test_http_proxy_coveragepy
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[.close()_16]] - `method` [EXTRACTED]
-- [[.drain()_1]] - `method` [EXTRACTED]
-- [[.write()_1]] - `method` [EXTRACTED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[HTTPConnectProxy]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[test_http_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-__init__()_210]] - `method` [EXTRACTED]
+- [[dot-close()_19]] - `method` [EXTRACTED]
+- [[dot-drain()]] - `method` [EXTRACTED]
+- [[dot-write()]] - `method` [EXTRACTED]
+- [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
+- [[_capture_open()]] - `calls` [EXTRACTED]
+- [[_flaky_open()]] - `calls` [EXTRACTED]
+- [[_open_conn()]] - `calls` [EXTRACTED]
+- [[_uvloop_like_open()]] - `calls` [EXTRACTED]
+- [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_86
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

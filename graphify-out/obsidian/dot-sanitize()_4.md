@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L379"
+community: "_make_proxy"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/_make_proxy
 ---
 
 # .sanitize()
 
 ## Connections
-- [[_BrokenSanitizer]] - `method` [EXTRACTED]
+- [[_FakeSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

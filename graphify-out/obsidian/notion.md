@@ -1,23 +1,23 @@
 ---
 source_file: "skills/openclaw/notion/SKILL.md"
 type: "document"
-community: "Community 829"
+community: "notion"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_829
+  - community/notion
 ---
 
 # notion
 
 ## Connections
 - [[API Basics]] - `contains` [EXTRACTED]
-- [[Common Operations_1]] - `contains` [EXTRACTED]
+- [[Common Operations]] - `contains` [EXTRACTED]
 - [[Key Differences in 2025-09-03]] - `contains` [EXTRACTED]
-- [[Notes_6]] - `contains` [EXTRACTED]
+- [[Notes_2]] - `contains` [EXTRACTED]
 - [[Property Types]] - `contains` [EXTRACTED]
-- [[SKILL_228]] - `contains` [EXTRACTED]
-- [[Setup_12]] - `contains` [EXTRACTED]
+- [[Setup_1]] - `contains` [EXTRACTED]
+- [[notionSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_829
+#graphify/document #graphify/EXTRACTED #community/notion

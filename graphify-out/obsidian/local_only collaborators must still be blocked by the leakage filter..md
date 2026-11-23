@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1131"
+community: "FakeRBAC"
 location: "L9568"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1131
+  - community/FakeRBAC
 ---
 
 # local_only collaborators must still be blocked by the leakage filter.
 
 ## Connections
-- [[.test_default_collab_outbound_still_blocked_by_leakage_filter()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_collab_outbound_still_blocked_by_leakage_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1131
+#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC

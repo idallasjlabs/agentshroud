@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-bs.md"
+source_file: ".cursor/agents/i-pca.md"
 type: "document"
-community: "Community 1009"
+community: "Output Sections (ALL required)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

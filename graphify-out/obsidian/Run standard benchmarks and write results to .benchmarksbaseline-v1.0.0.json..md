@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "Community 11"
+community: "PIIConfig"
 location: "L379"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/PIIConfig
 ---
 
 # Run standard benchmarks and write results to .benchmarks/baseline-v1.0.0.json.
 
 ## Connections
-- [[.test_write_baseline_json()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_write_baseline_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

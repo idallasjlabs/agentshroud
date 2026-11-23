@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/__main__.py"
 type: "code"
-community: "Community 1006"
+community: "server.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1006
+  - community/serverpy
 ---
 
 # __main__.py
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1006
+#graphify/code #graphify/EXTRACTED #community/serverpy

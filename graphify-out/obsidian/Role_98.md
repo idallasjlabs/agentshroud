@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-production.md"
+source_file: ".agents/skills/mnemosyne/SKILL.md"
 type: "document"
-community: "Community 1180"
-location: "L10"
+community: "Mnemosyne — Retention Engineer"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1180
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1180
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

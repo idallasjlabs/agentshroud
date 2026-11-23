@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/weekly-hermes-stability-report.txt"
 type: "concept"
-community: "Hermes Cron Jobs Reference & Recreation Guide"
+community: "Telegram Formatting Rule (bold only, no headers or tables)"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+  - community/Telegram_Formatting_Rule_bold_only_no_headers_or_tables
 ---
 
 # .start-history Epoch Restart Ledger
@@ -14,4 +14,4 @@ tags:
 - [[Prompt Weekly Hermes Stability Report]] - `references` [EXTRACTED]
 - [[gateway-exit-diag.log RestartExit Telemetry]] - `shares_data_with` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Hermes_Cron_Jobs_Reference__Recreation_Guide
+#graphify/concept #graphify/EXTRACTED #community/Telegram_Formatting_Rule_bold_only_no_headers_or_tables

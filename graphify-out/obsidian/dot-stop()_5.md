@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "Request (2)"
-location: "L93"
+community: "MCPServerConfig"
+location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Request_2
+  - community/MCPServerConfig
 ---
 
 # .stop()
 
 ## Connections
-- [[Signal the run loop to exit.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
+- [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Request_2
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

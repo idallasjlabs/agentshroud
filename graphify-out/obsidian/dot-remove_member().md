@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "Function Details"
-location: "L292"
+community: "GroupRegistry"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/GroupRegistry
 ---
 
 # .remove_member()
 
 ## Connections
-- [[Add a user to a group (auto-groups are updated in-memory only).]] - `rationale_for` [EXTRACTED]
 - [[GroupRegistry]] - `method` [EXTRACTED]
 - [[Remove a user from a group (auto-groups are updated in-memory only).]] - `rationale_for` [EXTRACTED]
 - [[_persist_groups()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Function_Details
+#graphify/code #graphify/EXTRACTED #community/GroupRegistry

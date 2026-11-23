@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "ApprovalQueueConfig"
+community: "CanaryTripwire"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/CanaryTripwire
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
+- [[dot-scan()]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 - [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - `rationale_for` [EXTRACTED]
-- [[TripwireResponse]] - `references` [EXTRACTED]
+- [[TripwireResponse]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

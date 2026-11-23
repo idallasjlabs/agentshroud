@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Kill Switch Procedure"
-location: "L16"
+community: "DNSBlocklist"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/DNSBlocklist
 ---
 
 # .setup_method()
 
 ## Connections
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestParseHostsLine]] - `method` [EXTRACTED]
+- [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

@@ -1,40 +1,40 @@
 ---
 type: community
-cohesion: 0.13
-members: 25
+members: 27
 ---
 
 # TestFabricatedSecurityNotice
 
-**Cohesion:** 0.13 - loosely connected
-**Members:** 25 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[Failover reply with choices (e.g. rate-limit stub) must not return content]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Failover reply with empty-string content must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Failover reply with null content and no tool_calls must not return content.]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Failover to a qwen-family model must disable thinking mode Qwen3's     think]] - rationale - gateway/tests/test_anthropic_openai_translator.py
-- [[Translate an Anthropic Messages request body to OpenAI chat completions format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[Translate an Ollama OpenAI-compat response to Anthropic Messages API format.]] - rationale - gateway/proxy/anthropic_openai_translator.py
-- [[anthropic_to_openai_request()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[openai_to_anthropic_response()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[test_anthropic_openai_translator.py]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_anthropic_tool_definitions()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_basic_text_message()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_empty_choices_yields_nonempty_content()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_empty_string_content_yields_nonempty_content()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_max_tokens_finish_reason()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_no_system_prompt()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_non_qwen_target_unchanged()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_null_content_no_tool_calls_yields_nonempty_content()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_openai_to_anthropic_basic()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_preserves_original_model()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_qwen_target_injects_no_think()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_qwen_target_no_system_still_gets_no_think()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_system_block_list()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_tool_calls_to_tool_use()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_tool_result_becomes_tool_role_message()]] - code - gateway/tests/test_anthropic_openai_translator.py
-- [[test_translator_tool_use_blocks()]] - code - gateway/tests/test_anthropic_openai_translator.py
+- [[dot-_has_fabricated_match()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_blocked_unauthorized_command()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_blocking_suspicious_code_execution()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_case_insensitive()_3]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_category_is_operational()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_continues_blocking()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_exact_past_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_flagging_form()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_legitimate_responses_not_matched()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_possessive_flagging()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_present_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_prevents_form()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_progressive_tense()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_redaction_applied()]] - code - gateway/tests/test_outbound_filter.py
+- [[Matched text is replaced with RESPONSE_FILTERED.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Normal helpful responses must NOT trigger the pattern.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Original pattern exact past-tense form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Pattern is case-insensitive.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Pattern is in the OPERATIONAL category.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Possessive form AGENTSHROUD's behavioral analysis flagging.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Standalone 'blocked unauthorized command execution' without AGENTSHROUD prefix.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test cases for the widened fabricated_security_notice pattern.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestFabricatedSecurityNotice]] - code - gateway/tests/test_outbound_filter.py
+- [[blocking suspicious code execution' variant.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[blocking' continuous form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[continues blocking' — adverb + gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[flagging' gerund form.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,12 +44,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_mcp_config.py]]
-- 6 edges to [[_COMMUNITY_Function Details (8)]]
-- 1 edge to [[_COMMUNITY_DELIVERABLE 3 — v0.8.0 Implementation Items]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
+- 2 edges to [[_COMMUNITY_asyncio_1]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
-- [[anthropic_to_openai_request()]] - degree 16, connects to 2 communities
-- [[openai_to_anthropic_response()]] - degree 12, connects to 2 communities
-- [[test_anthropic_openai_translator.py]] - degree 25, connects to 1 community
+- [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities

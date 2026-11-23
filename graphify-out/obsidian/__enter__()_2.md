@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "OpenClaw and Hermes are processed on fully separate paths; one failing never… (2)"
-location: "L661"
+community: ".test_stranger_rate_limit_notice_includes_reset_time"
+location: "L7839"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+  - community/test_stranger_rate_limit_notice_includes_reset_time
 ---
 
 # __enter__()
 
 ## Connections
-- [[dot-test_patched_versions_carried_into_result()]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_33]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OpenClaw_and_Hermes_are_processed_on_fully_separate_paths_one_failing_never_2
+#graphify/code #graphify/EXTRACTED #community/test_stranger_rate_limit_notice_includes_reset_time

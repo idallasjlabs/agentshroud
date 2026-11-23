@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L45"
+community: ".test_gives_up_and_marks_sent_after_max_retries"
+location: "L1776"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # now()
 
 ## Connections
-- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_retries_on_failed_send_before_giving_up()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

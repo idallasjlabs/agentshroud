@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/tests/test_xml_dtd_control.py"
 type: "code"
-community: "scanner_integration.py"
-location: "L62"
+community: "WebContentScanner"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/WebContentScanner
 ---
 
 # .setUp()
 
 ## Connections
-- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
-- [[TestWebProxySecurityIntegration]] - `method` [EXTRACTED]
-- [[WebProxy]] - `calls` [EXTRACTED]
+- [[TestDangerousXMLDetection]] - `method` [EXTRACTED]
+- [[WebContentScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

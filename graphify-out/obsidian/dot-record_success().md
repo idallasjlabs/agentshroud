@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "soc/router.py"
+community: "TrustManager"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/TrustManager
 ---
 
 # .record_success()
@@ -15,6 +15,6 @@ tags:
 - [[dot-_update_score()]] - `calls` [EXTRACTED]
 - [[Record a successful action, increasing trust.]] - `rationale_for` [EXTRACTED]
 - [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager_1]] - `method` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

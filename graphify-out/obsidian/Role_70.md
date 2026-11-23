@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-ui/SKILL.md"
+source_file: ".github/agents/i-data.agent.md"
 type: "document"
-community: "Community 314"
-location: "L8"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_314
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Skill UI Expert (UI)_1]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_314
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

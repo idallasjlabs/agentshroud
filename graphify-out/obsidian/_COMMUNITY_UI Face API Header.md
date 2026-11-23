@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # UI Face API Header
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[docsREADME.md — documentation structure index and project phase status]] - document - docs/README.md
+- [[UI Face API Header]] - code - firmware/voice-terminal/main/ui_face.h
 
 ## Live Query (requires Dataview plugin)
 

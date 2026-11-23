@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/canary-deploy.sh"
+source_file: "docker/wazuh/services.d/wazuh-watchdog/run"
 type: "code"
-community: "Community 1116"
-location: "L47"
+community: "run"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1116
+  - community/run
 ---
 
 # log()
 
 ## Connections
-- [[canary-deploy.sh]] - `defines` [EXTRACTED]
-- [[canary-deploy.sh script]] - `calls` [EXTRACTED]
+- [[run_1]] - `defines` [EXTRACTED]
+- [[run script]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1116
+#graphify/code #graphify/EXTRACTED #community/run

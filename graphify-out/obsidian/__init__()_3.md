@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "sidecar.py"
-location: "L458"
+community: "TestCheckClamd"
+location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sidecarpy
+  - community/TestCheckClamd
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-_run_proxy()]] - `contains` [EXTRACTED]
+- [[dot-test_standby_when_no_socket_and_no_process()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sidecarpy
+#graphify/code #graphify/EXTRACTED #community/TestCheckClamd

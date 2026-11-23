@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/daedalus.md"
+source_file: ".agents/skills/vulcan/SKILL.md"
 type: "document"
-community: "Community 1917"
-location: "L10"
+community: "Vulcan — Subject Matter Auditor"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1917
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1917
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

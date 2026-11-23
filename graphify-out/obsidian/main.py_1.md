@@ -1,57 +1,29 @@
 ---
-source_file: "gateway/cli/main.py"
-type: "code"
-community: "Community 87"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Gateway Core/main.py.md"
+type: "document"
+community: "main.py"
+location: "L11"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_87
+  - community/mainpy
 ---
 
 # main.py
 
 ## Connections
-- [[SCLClient]] - `imports` [EXTRACTED]
-- [[_default_format()]] - `contains` [EXTRACTED]
-- [[_edge_result()]] - `contains` [EXTRACTED]
-- [[_edge_target()]] - `contains` [EXTRACTED]
-- [[_edge_target_options()]] - `contains` [EXTRACTED]
-- [[_is_tty()]] - `contains` [EXTRACTED]
-- [[_output()]] - `contains` [EXTRACTED]
-- [[_print_table()]] - `contains` [EXTRACTED]
-- [[_tail_ws()]] - `contains` [EXTRACTED]
-- [[add()]] - `contains` [EXTRACTED]
-- [[add_collaborator()]] - `contains` [EXTRACTED]
-- [[add_group_member()]] - `contains` [EXTRACTED]
-- [[approve()]] - `contains` [EXTRACTED]
-- [[cli()]] - `contains` [EXTRACTED]
-- [[client.py]] - `imports_from` [EXTRACTED]
-- [[deny()]] - `contains` [EXTRACTED]
-- [[edge()]] - `contains` [EXTRACTED]
-- [[edge_enroll()]] - `contains` [EXTRACTED]
-- [[edge_kill()]] - `contains` [EXTRACTED]
-- [[edge_status()]] - `contains` [EXTRACTED]
-- [[edge_unkill()]] - `contains` [EXTRACTED]
-- [[freeze()]] - `contains` [EXTRACTED]
-- [[get()]] - `contains` [EXTRACTED]
-- [[get_correlation()]] - `contains` [EXTRACTED]
-- [[get_egress_pending()]] - `contains` [EXTRACTED]
-- [[get_events()]] - `contains` [EXTRACTED]
-- [[get_groups()]] - `contains` [EXTRACTED]
-- [[get_health()]] - `contains` [EXTRACTED]
-- [[get_logs()]] - `contains` [EXTRACTED]
-- [[get_risk()]] - `contains` [EXTRACTED]
-- [[get_services()]] - `contains` [EXTRACTED]
-- [[get_users()]] - `contains` [EXTRACTED]
-- [[main()_11]] - `contains` [EXTRACTED]
-- [[restart()]] - `contains` [EXTRACTED]
-- [[restart_service()]] - `contains` [EXTRACTED]
-- [[scan()]] - `contains` [EXTRACTED]
-- [[set()]] - `contains` [EXTRACTED]
-- [[set_mode()]] - `contains` [EXTRACTED]
-- [[stop()]] - `contains` [EXTRACTED]
-- [[stop_service()]] - `contains` [EXTRACTED]
-- [[tail()]] - `contains` [EXTRACTED]
+- [[Endpoints_1]] - `contains` [EXTRACTED]
+- [[Environment Variables Used_10]] - `contains` [EXTRACTED]
+- [[Key Dependencies — Modules Wired at Init]] - `contains` [EXTRACTED]
+- [[Known Issues  Notes_9]] - `contains` [EXTRACTED]
+- [[Lifespan  Startup]] - `contains` [EXTRACTED]
+- [[Middleware (applied to all requests, outermost first)]] - `contains` [EXTRACTED]
+- [[Overview_29]] - `contains` [EXTRACTED]
+- [[POST forward — 5-Step Security Pipeline]] - `contains` [EXTRACTED]
+- [[Related_49]] - `contains` [EXTRACTED]
+- [[Security Notes_8]] - `contains` [EXTRACTED]
+- [[Static Mounts]] - `contains` [EXTRACTED]
+- [[WebSocket Endpoints]] - `contains` [EXTRACTED]
+- [[main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_87
+#graphify/document #graphify/EXTRACTED #community/mainpy

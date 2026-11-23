@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/a2a_governance.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "api.py"
-location: "L234"
+community: "BlockingPipeline"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/BlockingPipeline
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[dot-_process()]] - `calls` [EXTRACTED]
-- [[A2ADecision]] - `references` [EXTRACTED]
-- [[A2AGovernanceProxy]] - `method` [EXTRACTED]
-- [[A2AMessage]] - `references` [EXTRACTED]
-- [[Validate and govern an inbound A2A message from a remote peer.]] - `rationale_for` [EXTRACTED]
+- [[FakePipelineResult]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/BlockingPipeline

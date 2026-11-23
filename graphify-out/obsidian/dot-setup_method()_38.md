@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "server.py"
-location: "L360"
+community: "test_ws_e_rt2_inbound_encoding.py"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AppleContainerEngine]] - `calls` [EXTRACTED]
-- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
+- [[EncodingDetector]] - `calls` [EXTRACTED]
+- [[TestEncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

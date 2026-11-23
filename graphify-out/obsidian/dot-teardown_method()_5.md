@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "._make_proxy()"
-location: "L28"
+community: "test_memory_lifecycle.py"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_memory_lifecyclepy
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[Clean up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

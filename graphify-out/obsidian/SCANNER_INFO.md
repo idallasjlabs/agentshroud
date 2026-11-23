@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 82"
+community: "soc.js"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_82
+  - community/socjs
 ---
 
 # SCANNER_INFO
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_82
+#graphify/code #graphify/EXTRACTED #community/socjs

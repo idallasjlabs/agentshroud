@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/auth.py"
-type: "code"
-community: "Community 890"
-location: "L141"
+source_file: ".github/agents/i-production.agent.md"
+type: "document"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L13"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_890
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Role
 
 ## Connections
-- [[.__init__()_141]] - `references` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_890
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

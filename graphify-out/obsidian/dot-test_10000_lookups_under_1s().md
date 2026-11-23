@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "TrustManager"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/TrustManager
 ---
 
 # .test_10000_lookups_under_1s()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[10000 trust lookups in under 1 second.]] - `rationale_for` [EXTRACTED]
 - [[TestTrustManagerPerformance]] - `method` [EXTRACTED]
-- [[TrustManager_1]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/TrustManager

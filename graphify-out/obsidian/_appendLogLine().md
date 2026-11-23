@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 2049"
+community: "soc.js"
 location: "L1929"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2049
+  - community/socjs
 ---
 
 # _appendLogLine()
@@ -16,4 +16,4 @@ tags:
 - [[_ts()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2049
+#graphify/code #graphify/EXTRACTED #community/socjs

@@ -1,21 +1,26 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "Community 1057"
+community: "make_fake_socket_module"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1057
+  - community/make_fake_socket_module
 ---
 
 # make_fake_socket_module()
 
 ## Connections
-- [[.test_all_upstreams_fail_returns_none()]] - `calls` [EXTRACTED]
-- [[.test_failover_to_second_upstream()]] - `calls` [EXTRACTED]
-- [[.test_first_upstream_succeeds()]] - `calls` [EXTRACTED]
-- [[Build a fake `socket` module namespace driving forward_query without IO.      E]] - `rationale_for` [EXTRACTED]
+- [[dot-test_all_upstreams_fail_returns_none()]] - `calls` [EXTRACTED]
+- [[dot-test_failover_to_second_upstream()]] - `calls` [EXTRACTED]
+- [[dot-test_first_upstream_succeeds()]] - `calls` [EXTRACTED]
+- [[Build a fake `socket` module namespace driving forward_query without IO. Each…]] - `rationale_for` [EXTRACTED]
+- [[__init__()_7]] - `contains` [EXTRACTED]
+- [[close()_1]] - `contains` [EXTRACTED]
+- [[recv()]] - `contains` [EXTRACTED]
+- [[sendto()]] - `contains` [EXTRACTED]
+- [[settimeout()_3]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1057
+#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module

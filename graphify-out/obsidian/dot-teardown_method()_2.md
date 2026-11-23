@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L77"
+community: "TestScanParameterAllowlists"
+location: "L667"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TestScanParameterAllowlists
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[Clean up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
+- [[auth_dep()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/TestScanParameterAllowlists

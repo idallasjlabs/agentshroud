@@ -1,29 +1,27 @@
 ---
 type: community
-cohesion: 0.14
 members: 14
 ---
 
 # Technical Specification
 
-**Cohesion:** 0.14 - loosely connected
 **Members:** 14 nodes
 
 ## Members
-- [[browser-extensionpackage.json]] - code - browser-extension/package.json
-- [[collectCoverageFrom]] - code - browser-extension/package.json
-- [[description_7]] - code - browser-extension/package.json
-- [[devDependencies]] - code - browser-extension/package.json
-- [[jest]] - code - browser-extension/package.json
-- [[jest_1]] - code - browser-extension/package.json
-- [[license_3]] - code - browser-extension/package.json
-- [[name_1]] - code - browser-extension/package.json
-- [[private]] - code - browser-extension/package.json
-- [[scripts]] - code - browser-extension/package.json
-- [[test]] - code - browser-extension/package.json
-- [[testcoverage]] - code - browser-extension/package.json
-- [[testEnvironment]] - code - browser-extension/package.json
-- [[version_3]] - code - browser-extension/package.json
+- [[dot-agentsagentsapollo]] - document - .agents/agents/apollo.md
+- [[API Call Structure]] - document - .agents/agents/apollo.md
+- [[Apollo — Audio Systems Producer]] - document - .agents/agents/apollo.md
+- [[Audio Quality Settings]] - document - .agents/agents/apollo.md
+- [[Error Handling_1]] - document - .agents/agents/apollo.md
+- [[Input Requirements_4]] - document - .agents/agents/apollo.md
+- [[Output]] - document - .agents/agents/apollo.md
+- [[Primary API Text-to-Dialogue]] - document - .agents/agents/apollo.md
+- [[Quality Checklist_4]] - document - .agents/agents/apollo.md
+- [[Quick Mode Create Podcast API]] - document - .agents/agents/apollo.md
+- [[Role_25]] - document - .agents/agents/apollo.md
+- [[Script Parsing]] - document - .agents/agents/apollo.md
+- [[Technical Specification]] - document - .agents/agents/apollo.md
+- [[Voice Configuration]] - document - .agents/agents/apollo.md
 
 ## Live Query (requires Dataview plugin)
 

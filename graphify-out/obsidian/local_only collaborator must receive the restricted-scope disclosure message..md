@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "Community 1131"
+community: "asyncio"
 location: "L9619"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1131
+  - community/asyncio
 ---
 
 # local_only collaborator must receive the restricted-scope disclosure message.
 
 ## Connections
-- [[.test_default_disclosure_text()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_disclosure_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1131
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

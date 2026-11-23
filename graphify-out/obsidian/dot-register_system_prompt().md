@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_get_hmac_key()]] - `calls` [EXTRACTED]
 - [[Compute and return an HMAC-SHA256 fingerprint for the system prompt.]] - `rationale_for` [EXTRACTED]
-- [[PromptGuard_1]] - `method` [EXTRACTED]
-- [[SystemPromptFingerprint]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
+- [[SystemPromptFingerprint]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PromptGuard

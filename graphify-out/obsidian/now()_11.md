@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_audit_archive.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "🟢 INFO (nice to have) (2)"
-location: "L50"
+community: ".test_gives_up_and_marks_sent_after_max_retries"
+location: "L1880"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_INFO_nice_to_have_2
+  - community/test_gives_up_and_marks_sent_after_max_retries
 ---
 
 # now()
 
 ## Connections
-- [[test_audit_archive.py]] - `contains` [EXTRACTED]
+- [[dot-test_successful_send_marks_sent_immediately_no_retry()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_INFO_nice_to_have_2
+#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

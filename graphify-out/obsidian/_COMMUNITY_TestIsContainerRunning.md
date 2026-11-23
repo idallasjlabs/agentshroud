@@ -1,24 +1,25 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+members: 12
 ---
 
 # TestIsContainerRunning
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Members:** 12 nodes
 
 ## Members
-- [[R - Repudiation]] - document - docs/security/threat-model.md
-- [[S - Spoofing Identity]] - document - docs/security/threat-model.md
-- [[STRIDE Threat Analysis]] - document - docs/security/threat-model.md
-- [[T - Tampering with Data]] - document - docs/security/threat-model.md
-- [[Threat API Key Impersonation]] - document - docs/security/threat-model.md
-- [[Threat Agent Identity Spoofing]] - document - docs/security/threat-model.md
-- [[Threat Audit Log Tampering]] - document - docs/security/threat-model.md
-- [[Threat Configuration Drift]] - document - docs/security/threat-model.md
-- [[Threat Non-Repudiation Bypass]] - document - docs/security/threat-model.md
+- [[dot-_patch_http()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_404_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_containerized_fallback_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_full_host_evidence()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_no_kernel_info_zero()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_running_container_returns_true()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_socket_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_stopped_container_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestHostOsHardening]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestIsContainerRunning]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[boom()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[boom()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,10 +29,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Resources]]
-- 1 edge to [[_COMMUNITY_graphify reference GitHub clone and cross-repo merge]]
-- 1 edge to [[_COMMUNITY_TestCredentialInjection]]
-- 1 edge to [[_COMMUNITY__llm_init_agent_reference_paths()]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration_coverage.py]]
+- 2 edges to [[_COMMUNITY__w]]
+- 1 edge to [[_COMMUNITY_dot-_run_proxy]]
 
 ## Top bridge nodes
-- [[STRIDE Threat Analysis]] - degree 7, connects to 4 communities
+- [[TestIsContainerRunning]] - degree 6, connects to 1 community
+- [[dot-_patch_http()]] - degree 5, connects to 1 community
+- [[TestHostOsHardening]] - degree 4, connects to 1 community
+- [[dot-test_containerized_fallback_evidence()]] - degree 4, connects to 1 community
+- [[dot-test_full_host_evidence()]] - degree 2, connects to 1 community

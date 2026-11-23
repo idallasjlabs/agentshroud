@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "AlertDispatcher (3)"
-location: "L197"
+community: "WebProxy"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher_3
+  - community/WebProxy
 ---
 
 # .reset()
 
 ## Connections
-- [[Owner command reset lockdown state for a user. Returns True if existed.]] - `rationale_for` [EXTRACTED]
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher_3
+#graphify/code #graphify/EXTRACTED #community/WebProxy

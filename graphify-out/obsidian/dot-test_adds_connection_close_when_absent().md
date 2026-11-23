@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "Athena — Knowledge Distiller (2)"
+community: "TestRewriteRequestHeaders"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller_2
+  - community/TestRewriteRequestHeaders
 ---
 
 # .test_adds_connection_close_when_absent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRewriteRequestHeaders]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Athena__Knowledge_Distiller_2
+#graphify/code #graphify/EXTRACTED #community/TestRewriteRequestHeaders

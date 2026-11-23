@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "TestEncryptedStore"
-location: "L38"
+community: "ResourceGuard"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEncryptedStore
+  - community/ResourceGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestEncryptedStore]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEncryptedStore
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

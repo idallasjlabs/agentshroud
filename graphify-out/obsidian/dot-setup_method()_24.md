@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ApprovalQueueConfig"
-location: "L15"
+community: "PromptGuard"
+location: "L800"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalQueueConfig
+  - community/PromptGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

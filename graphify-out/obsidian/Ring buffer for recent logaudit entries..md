@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "rationale"
-community: "Community 801"
+community: "LogBuffer"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_801
+  - community/LogBuffer
 ---
 
 # Ring buffer for recent log/audit entries.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LogBuffer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_801
+#graphify/rationale #graphify/EXTRACTED #community/LogBuffer

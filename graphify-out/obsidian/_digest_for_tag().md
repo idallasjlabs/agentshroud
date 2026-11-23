@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/discover_upstream_versions.py"
 type: "code"
-community: "Community 48"
+community: "discover_upstream_versions.py"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_48
+  - community/discover_upstream_versionspy
 ---
 
 # _digest_for_tag()
 
 ## Connections
-- [[Any_83]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[discover()]] - `calls` [EXTRACTED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_48
+#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

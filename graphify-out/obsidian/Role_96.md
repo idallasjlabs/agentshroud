@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-pm.md"
+source_file: ".agents/agents/oracle.md"
 type: "document"
-community: "Community 1041"
+community: "Oracle — Feedback Analyst"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1041
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Role
 
 ## Connections
-- [[Skill Project Management (PM)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1041
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

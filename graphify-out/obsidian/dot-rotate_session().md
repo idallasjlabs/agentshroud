@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "TelegramAPIProxy (2)"
+community: "TestAuth"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy_2
+  - community/TestAuth
 ---
 
 # .rotate_session()
 
 ## Connections
 - [[dot-validate_session()]] - `calls` [EXTRACTED]
-- [[Session]] - `references` [EXTRACTED]
+- [[Session]] - `calls` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy_2
+#graphify/code #graphify/EXTRACTED #community/TestAuth

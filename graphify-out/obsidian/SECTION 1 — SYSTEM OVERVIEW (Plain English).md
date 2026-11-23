@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/sad.md"
 type: "document"
-community: "Community 1277"
+community: "System Audit & Documentation"
 location: "L18"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1277
+  - community/System_Audit__Documentation
 ---
 
 # SECTION 1 — SYSTEM OVERVIEW (Plain English)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[System Audit & Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1277
+#graphify/document #graphify/EXTRACTED #community/System_Audit__Documentation

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "TestCollaboratorPromptClassifiers"
-location: "L42"
+community: "test_e2e_watchtower.py"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/test_e2e_watchtowerpy
 ---
 
 # .sanitize()
 
 ## Connections
-- [[_FakeSanitizer_1]] - `method` [EXTRACTED]
+- [[_BrokenSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy

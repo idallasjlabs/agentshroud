@@ -1,20 +1,20 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "Community 420"
-location: "L220"
+community: "migrate-cve-registry-ghsa.py"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_420
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # load_registry()
 
 ## Connections
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Import the committed OpenClaw registry.]] - `rationale_for` [EXTRACTED]
-- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_17]] - `calls` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
+- [[Import the current OpenClaw + Hermes registry lists (in file order).]] - `rationale_for` [EXTRACTED]
+- [[main()_16]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_420
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

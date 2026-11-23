@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "soc/router.py (2)"
+community: "TrustConfig"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy_2
+  - community/TrustConfig
 ---
 
 # .test_action_allowed_basic()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy_2
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/hermes/cron/prompts/jira-weekly-review.txt"
 type: "concept"
-community: "Community 338"
+community: "Prompt: Daily Component Health Digest"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_338
+  - community/Prompt_Daily_Component_Health_Digest
 ---
 
 # jira_weekly_review.py Pre-Committed Posting Script
@@ -16,4 +16,4 @@ tags:
 - [[SCRUM-81 Weekly Review Ticket]] - `references` [EXTRACTED]
 - [[render_md_email.py Markdown-to-Inline-CSS Email Renderer]] - `semantically_similar_to` [INFERRED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_338
+#graphify/concept #graphify/EXTRACTED #community/Prompt_Daily_Component_Health_Digest

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-10-04.md"
 type: "concept"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/upgrade-2026-09-21md
 ---
 
 # SCRUM-185 (9-registry triage gap ticket)
@@ -15,4 +15,4 @@ tags:
 - [[upgrade-2026-10-04]] - `references` [EXTRACTED]
 - [[upgrade-2026-10-11]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_118
+#graphify/concept #graphify/EXTRACTED #community/upgrade-2026-09-21md

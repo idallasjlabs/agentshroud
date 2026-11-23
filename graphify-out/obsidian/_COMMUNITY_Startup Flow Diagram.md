@@ -1,19 +1,16 @@
 ---
 type: community
-cohesion: 0.50
-members: 4
+members: 3
 ---
 
 # Startup Flow Diagram
 
-**Cohesion:** 0.50 - moderately connected
-**Members:** 4 nodes
+**Members:** 3 nodes
 
 ## Members
-- [[logs.sh]] - code - docker/scripts/logs.sh
-- [[logs.sh script]] - code - docker/scripts/logs.sh
-- [[restart.sh]] - code - docker/scripts/restart.sh
-- [[restart.sh script]] - code - docker/scripts/restart.sh
+- [[Related Notes_19]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram_1]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
+- [[Startup Flow Diagram]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
 
 ## Live Query (requires Dataview plugin)
 

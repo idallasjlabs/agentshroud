@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "sync-cve-registry.py"
-location: "L232"
+community: "asyncio"
+location: "L617"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/asyncio
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_trivy_error_still_sends_error_report()]] - `contains` [EXTRACTED]
+- [[dot-test_dedup_is_per_agent()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/asyncio

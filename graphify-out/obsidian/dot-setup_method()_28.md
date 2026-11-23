@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "test_a2a_policy.py"
-location: "L647"
+community: "test_memory_lifecycle.py"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_a2a_policypy
+  - community/test_memory_lifecyclepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AgentRegistry]] - `calls` [EXTRACTED]
-- [[ContainerConfig_1]] - `calls` [EXTRACTED]
-- [[TestAgentIsolation]] - `method` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
+- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_a2a_policypy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

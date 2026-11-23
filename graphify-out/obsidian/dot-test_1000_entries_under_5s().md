@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "PIIConfig"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PIIConfig
 ---
 
 # .test_1000_entries_under_5s()
@@ -14,5 +14,6 @@ tags:
 ## Connections
 - [[TestAuditChainPerformance]] - `method` [EXTRACTED]
 - [[Write 1000 audit entries in under 5 seconds.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/apollo.md"
+source_file: ".agents/agents/i-gg.md"
 type: "document"
-community: "Community 1404"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1404
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1404
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "KillSwitchMonitor (3)"
+community: "IntelReportStore"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor_3
+  - community/IntelReportStore
 ---
 
 # .store_dir()
 
 ## Connections
-- [[Path_52]] - `references` [EXTRACTED]
+- [[Path_60]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
+- [[fixture_112]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor_3
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

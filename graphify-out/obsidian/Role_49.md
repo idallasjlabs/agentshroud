@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-data/SKILL.md"
+source_file: ".opencode/agents/i-session-prompt.md"
 type: "document"
-community: "Community 896"
-location: "L8"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_896
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)_1]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_896
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

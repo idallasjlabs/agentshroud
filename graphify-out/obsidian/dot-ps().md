@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "egress_retry.py"
+community: "AppleContainerEngine"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_retrypy
+  - community/AppleContainerEngine
 ---
 
 # .ps()
@@ -15,4 +15,4 @@ tags:
 - [[AppleContainerEngine]] - `method` [EXTRACTED]
 - [[ContainerInfo]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_retrypy
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

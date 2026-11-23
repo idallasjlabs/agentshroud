@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "Community 36"
+community: "TestParanoidConfig"
 location: "L100"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_36
+  - community/TestParanoidConfig
 ---
 
 # minimal.env should have reasonable defaults.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMinimalConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_36
+#graphify/rationale #graphify/EXTRACTED #community/TestParanoidConfig

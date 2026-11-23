@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/generate-cve-page.py"
 type: "code"
-community: "Community 399"
+community: "generate-cve-page.py"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_399
+  - community/generate-cve-pagepy
 ---
 
 # _agent_display_name()
@@ -16,4 +16,4 @@ tags:
 - [[generate()]] - `calls` [EXTRACTED]
 - [[generate-cve-page.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_399
+#graphify/code #graphify/EXTRACTED #community/generate-cve-pagepy

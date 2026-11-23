@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-session-prompt.md"
+source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
 type: "document"
-community: "Community 1497"
-location: "L10"
+community: "Hermes — Reference Verifier"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1497
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1497
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

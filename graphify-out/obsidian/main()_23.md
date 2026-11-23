@@ -1,18 +1,17 @@
 ---
-source_file: "scripts/gemini-review.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Community 1118"
-location: "L83"
+community: "test_agent_cve_registry.py"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1118
+  - community/test_agent_cve_registrypy
 ---
 
 # main()
 
 ## Connections
-- [[call_gemini()]] - `calls` [EXTRACTED]
-- [[gemini-review.py]] - `contains` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1118
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

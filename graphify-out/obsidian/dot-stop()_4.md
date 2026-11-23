@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AgentShroud Security Architecture"
-location: "L273"
+community: "MCPServerConfig"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentShroud_Security_Architecture
+  - community/MCPServerConfig
 ---
 
 # .stop()
 
 ## Connections
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentShroud_Security_Architecture
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

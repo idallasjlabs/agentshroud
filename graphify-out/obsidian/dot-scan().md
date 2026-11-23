@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "test_main_endpoints.py"
-location: "L219"
+community: "CanaryTripwire"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_main_endpointspy
+  - community/CanaryTripwire
 ---
 
 # .scan()
 
 ## Connections
-- [[dot-_scan_encoded_payloads()]] - `calls` [EXTRACTED]
-- [[dot-_scan_hidden_content()]] - `calls` [EXTRACTED]
-- [[dot-_scan_pii()]] - `calls` [EXTRACTED]
-- [[dot-_scan_prompt_injection()]] - `calls` [EXTRACTED]
-- [[dot-_scan_xml_dtd()]] - `calls` [EXTRACTED]
-- [[dot-_scan_zero_width()]] - `calls` [EXTRACTED]
-- [[Scan content for security issues. Args content The web content to scan.…]] - `rationale_for` [EXTRACTED]
-- [[ScanResult]] - `calls` [EXTRACTED]
-- [[WebContentScanner]] - `method` [EXTRACTED]
+- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
+- [[dot-_check_plain()]] - `calls` [EXTRACTED]
+- [[dot-_record()]] - `calls` [EXTRACTED]
+- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
+- [[CanaryResult_2]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_main_endpointspy
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

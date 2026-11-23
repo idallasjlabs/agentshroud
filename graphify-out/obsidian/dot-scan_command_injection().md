@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "Any"
+community: "middleware.py"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/middlewarepy
 ---
 
 # .scan_command_injection()
 
 ## Connections
-- [[FilterResult]] - `references` [EXTRACTED]
-- [[Scan outbound text for command  code injection patterns.          Does NOT modi]] - `rationale_for` [EXTRACTED]
+- [[FilterResult]] - `calls` [EXTRACTED]
+- [[Scan outbound text for command  code injection patterns. Does NOT modify the…]] - `rationale_for` [EXTRACTED]
 - [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

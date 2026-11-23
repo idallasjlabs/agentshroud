@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "main.py (2)"
-location: "L49"
+community: "AppleContainerEngine"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mainpy_2
+  - community/AppleContainerEngine
 ---
 
 # .push()
 
 ## Connections
-- [[dot-append()]] - `calls` [EXTRACTED]
-- [[Alert]] - `calls` [EXTRACTED]
-- [[AlertStore]] - `method` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mainpy_2
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

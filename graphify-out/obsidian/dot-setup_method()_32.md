@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_log_sanitizer.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "_wrap_response() (4)"
-location: "L15"
+community: "TestMetadataGuard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response_4
+  - community/TestMetadataGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[LogSanitizer]] - `calls` [EXTRACTED]
-- [[TestLogSanitizer]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response_4
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

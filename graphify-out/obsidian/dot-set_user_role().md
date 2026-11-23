@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/rbac_config.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L161"
+community: "soc/router.py"
+location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/soc/routerpy
 ---
 
 # .set_user_role()
 
 ## Connections
-- [[RBACConfig_3]] - `method` [EXTRACTED]
-- [[Role_64]] - `references` [EXTRACTED]
-- [[Set role for a user ID (owner-only operation).]] - `rationale_for` [EXTRACTED]
+- [[dot-audit_privilege_change()]] - `calls` [EXTRACTED]
+- [[dot-check_permission()]] - `calls` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[RBACManager]] - `method` [EXTRACTED]
+- [[Role]] - `references` [EXTRACTED]
+- [[Set a user's role (owner-only operation).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

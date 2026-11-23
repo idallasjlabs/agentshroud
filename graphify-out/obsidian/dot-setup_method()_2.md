@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "Pydantic"
-location: "L101"
+community: "TestMemoryIntegrityMonitor"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
+- [[Set up test environment._2]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Pydantic
+#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

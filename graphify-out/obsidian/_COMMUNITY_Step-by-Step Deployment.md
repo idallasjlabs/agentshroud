@@ -1,31 +1,56 @@
 ---
 type: community
-cohesion: 0.12
-members: 16
+members: 43
 ---
 
 # Step-by-Step Deployment
 
-**Cohesion:** 0.12 - loosely connected
-**Members:** 16 nodes
+**Members:** 43 nodes
 
 ## Members
-- [[Config Keys Read_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Environment Variables Used_3]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Extended v0.8.0 Modules]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[FileSandbox Configuration (hardcoded in __init__)]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Imports From  Exports To_1]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Key Classes  Functions_15]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Known Issues  Notes_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Memory Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[P1 Core Guards]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Purpose_113]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Related_19]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Responsibilities_17]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Security Modules Initialized]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[Tool Security]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[middleware.py_2]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
-- [[process_request Flow]] - document - docs/vault/02 - Modules/Gateway Core/middleware.py.md
+- [[1Password Integration (Optional)]] - document - docs/operations/deployment-procedure.md
+- [[AgentShroud Deployment Procedure]] - document - docs/operations/deployment-procedure.md
+- [[Container Won't Start]] - document - docs/operations/deployment-procedure.md
+- [[Database Connection Issues]] - document - docs/operations/deployment-procedure.md
+- [[Deployment Modes_1]] - document - docs/operations/deployment-procedure.md
+- [[Functional Testing]] - document - docs/operations/deployment-procedure.md
+- [[Grafana Dashboard Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Maintenance Procedures]] - document - docs/operations/deployment-procedure.md
+- [[Monitoring Setup]] - document - docs/operations/deployment-procedure.md
+- [[Network Requirements]] - document - docs/operations/deployment-procedure.md
+- [[Option A Manual Secret Creation]] - document - docs/operations/deployment-procedure.md
+- [[Option A Self-Signed Certificate (DevelopmentTesting)]] - document - docs/operations/deployment-procedure.md
+- [[Option B 1Password Integration]] - document - docs/operations/deployment-procedure.md
+- [[Option B Let's Encrypt Certificate (Production)]] - document - docs/operations/deployment-procedure.md
+- [[Option C Corporate Certificate Authority]] - document - docs/operations/deployment-procedure.md
+- [[Performance Tuning]] - document - docs/operations/deployment-procedure.md
+- [[Port Already in Use_2]] - document - docs/operations/deployment-procedure.md
+- [[Post-Deployment Validation]] - document - docs/operations/deployment-procedure.md
+- [[Prerequisites_4]] - document - docs/operations/deployment-procedure.md
+- [[Production Hardening]] - document - docs/operations/deployment-procedure.md
+- [[Prometheus Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Proxy Mode (Recommended)_1]] - document - docs/operations/deployment-procedure.md
+- [[Regular Maintenance Tasks]] - document - docs/operations/deployment-procedure.md
+- [[SSL Certificate Issues]] - document - docs/operations/deployment-procedure.md
+- [[Security Hardening_3]] - document - docs/operations/deployment-procedure.md
+- [[Security Validation]] - document - docs/operations/deployment-procedure.md
+- [[Sidecar Mode (Advanced)]] - document - docs/operations/deployment-procedure.md
+- [[Software Dependencies]] - document - docs/operations/deployment-procedure.md
+- [[Step 10 Initial Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 1 System Preparation]] - document - docs/operations/deployment-procedure.md
+- [[Step 2 Repository Clone and Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 3 Secret Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 4 SSL Certificate Setup]] - document - docs/operations/deployment-procedure.md
+- [[Step 5 Configuration Customization]] - document - docs/operations/deployment-procedure.md
+- [[Step 6 Port Configuration]] - document - docs/operations/deployment-procedure.md
+- [[Step 7 Docker Secrets Creation]] - document - docs/operations/deployment-procedure.md
+- [[Step 8 Service Startup]] - document - docs/operations/deployment-procedure.md
+- [[Step 9 Health Verification]] - document - docs/operations/deployment-procedure.md
+- [[Step-by-Step Deployment]] - document - docs/operations/deployment-procedure.md
+- [[System Requirements]] - document - docs/operations/deployment-procedure.md
+- [[Troubleshooting Common Issues]] - document - docs/operations/deployment-procedure.md
+- [[Update Procedure]] - document - docs/operations/deployment-procedure.md
+- [[deployment-procedure]] - document - docs/operations/deployment-procedure.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +58,3 @@ members: 16
 TABLE source_file, type FROM #community/Step-by-Step_Deployment
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-
-## Top bridge nodes
-- [[middleware.py_2]] - degree 12, connects to 1 community

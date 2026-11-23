@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-bs.md"
+source_file: ".cursor/agents/vulcan.md"
 type: "document"
-community: "Community 1020"
+community: "Vulcan — Subject Matter Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1020
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1020
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

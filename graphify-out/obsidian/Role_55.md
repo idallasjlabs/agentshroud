@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm/SKILL.md"
+source_file: ".omp/agents/athena.md"
 type: "document"
-community: "Community 1085"
-location: "L8"
+community: "Athena — Knowledge Distiller"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1085
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1085
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

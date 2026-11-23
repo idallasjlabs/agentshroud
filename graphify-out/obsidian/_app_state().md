@@ -1,43 +1,54 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # _app_state()
 
 ## Connections
+- [[dot-_emit_quarantine_event()]] - `indirect_call` [INFERRED]
+- [[dot-_filter_inbound_updates()]] - `indirect_call` [INFERRED]
+- [[dot-_proxy_request_impl()]] - `indirect_call` [INFERRED]
+- [[dot-_quarantine_blocked_message()]] - `indirect_call` [INFERRED]
+- [[dot-_quarantine_outbound_block()]] - `indirect_call` [INFERRED]
+- [[dot-_send_collaborator_safe_info_response()]] - `indirect_call` [INFERRED]
+- [[dot-_send_owner_activity_notice()]] - `indirect_call` [INFERRED]
+- [[dot-_send_owner_collabs_notice()]] - `indirect_call` [INFERRED]
+- [[dot-_send_owner_pending_notice()]] - `indirect_call` [INFERRED]
+- [[dot-_trigger_web_fetch_approval()]] - `indirect_call` [INFERRED]
+- [[dot-_trigger_web_search_log()]] - `indirect_call` [INFERRED]
+- [[dot-process_webhook()]] - `indirect_call` [INFERRED]
+- [[_build_egress_live_snapshot()]] - `indirect_call` [INFERRED]
 - [[_decide_approval()]] - `calls` [EXTRACTED]
 - [[_edge_service()]] - `calls` [EXTRACTED]
 - [[_edge_snapshot()]] - `calls` [EXTRACTED]
 - [[_log_audit()]] - `calls` [EXTRACTED]
 - [[_worst_lockdown()]] - `calls` [EXTRACTED]
 - [[acknowledge_config_integrity()]] - `calls` [EXTRACTED]
-- [[add_group_member()_1]] - `calls` [EXTRACTED]
+- [[add_group_member()]] - `calls` [EXTRACTED]
 - [[approve_egress()]] - `calls` [EXTRACTED]
-- [[approve_request()]] - `calls` [EXTRACTED]
 - [[clear_group_memory()]] - `calls` [EXTRACTED]
 - [[create_delegation()]] - `calls` [EXTRACTED]
 - [[create_group()]] - `calls` [EXTRACTED]
 - [[delete_group()]] - `calls` [EXTRACTED]
 - [[deny_egress()]] - `calls` [EXTRACTED]
-- [[deny_request()]] - `calls` [EXTRACTED]
 - [[emergency_block_egress()]] - `calls` [EXTRACTED]
 - [[export_audit()]] - `calls` [EXTRACTED]
 - [[get_collaborator_activity()]] - `calls` [EXTRACTED]
-- [[get_config()]] - `calls` [EXTRACTED]
+- [[get_config()_1]] - `calls` [EXTRACTED]
 - [[get_egress_history()]] - `calls` [EXTRACTED]
 - [[get_egress_log()]] - `calls` [EXTRACTED]
-- [[get_egress_pending()_1]] - `calls` [EXTRACTED]
+- [[get_egress_pending()]] - `calls` [EXTRACTED]
 - [[get_egress_rules()]] - `calls` [EXTRACTED]
 - [[get_group()]] - `calls` [EXTRACTED]
 - [[get_group_memory()]] - `calls` [EXTRACTED]
-- [[get_health()_1]] - `calls` [EXTRACTED]
+- [[get_health()]] - `calls` [EXTRACTED]
 - [[get_llm_failover_stats()]] - `calls` [EXTRACTED]
 - [[get_modules()]] - `calls` [EXTRACTED]
 - [[get_privacy_policies()]] - `calls` [EXTRACTED]
@@ -52,14 +63,11 @@ tags:
 - [[get_soc_correlation()]] - `calls` [EXTRACTED]
 - [[get_tool_acl()]] - `calls` [EXTRACTED]
 - [[get_user()]] - `calls` [EXTRACTED]
-- [[killswitch_disconnect()]] - `calls` [EXTRACTED]
-- [[killswitch_freeze()]] - `calls` [EXTRACTED]
-- [[killswitch_shutdown()]] - `calls` [EXTRACTED]
-- [[list_agents()_1]] - `calls` [EXTRACTED]
+- [[list_agents()]] - `calls` [EXTRACTED]
 - [[list_bots()]] - `calls` [EXTRACTED]
 - [[list_delegations()]] - `calls` [EXTRACTED]
 - [[list_groups()]] - `calls` [EXTRACTED]
-- [[list_pending_approvals()_1]] - `calls` [EXTRACTED]
+- [[list_pending_approvals()]] - `calls` [EXTRACTED]
 - [[list_services()]] - `calls` [EXTRACTED]
 - [[list_users()]] - `calls` [EXTRACTED]
 - [[override_egress_rule()]] - `calls` [EXTRACTED]
@@ -68,10 +76,10 @@ tags:
 - [[rename_group()]] - `calls` [EXTRACTED]
 - [[revoke_delegation()]] - `calls` [EXTRACTED]
 - [[revoke_egress_history()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
 - [[set_group_mode()]] - `calls` [EXTRACTED]
 - [[set_module_mode()]] - `calls` [EXTRACTED]
 - [[set_user_collab_mode()]] - `calls` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 - [[verify_audit_chain()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

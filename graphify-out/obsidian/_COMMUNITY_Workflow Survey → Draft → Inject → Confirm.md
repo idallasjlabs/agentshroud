@@ -1,28 +1,26 @@
 ---
 type: community
-cohesion: 0.15
 members: 13
 ---
 
 # Workflow: Survey → Draft → Inject → Confirm
 
-**Cohesion:** 0.15 - loosely connected
 **Members:** 13 nodes
 
 ## Members
-- [[After Disconnect]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Freeze]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[After Shutdown]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Actions]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Monitoring]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 1 Dashboard (Recommended)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 2 API]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 3 Script]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Method 4 Docker Direct (Last Resort)]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Post-Kill Switch Procedure]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[Related Notes_58]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
-- [[When to Use_3]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
+- [[dot-agentsagentsi-session-prompt]] - document - .agents/agents/i-session-prompt.md
+- [[Re-injection Command (for reference)]] - document - .agents/agents/i-session-prompt.md
+- [[Role_35]] - document - .agents/agents/i-session-prompt.md
+- [[Rules]] - document - .agents/agents/i-session-prompt.md
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/agents/i-session-prompt.md
+- [[Step 1 — Survey the Repo]] - document - .agents/agents/i-session-prompt.md
+- [[Step 2 — Answer Six Questions]] - document - .agents/agents/i-session-prompt.md
+- [[Step 3 — Write SESSION_PROMPT]] - document - .agents/agents/i-session-prompt.md
+- [[Step 4 — Write the File]] - document - .agents/agents/i-session-prompt.md
+- [[Step 5 — Inject into All Three LLMs]] - document - .agents/agents/i-session-prompt.md
+- [[Step 6 — Confirm]] - document - .agents/agents/i-session-prompt.md
+- [[Trigger_1]] - document - .agents/agents/i-session-prompt.md
+- [[Workflow Survey → Draft → Inject → Confirm]] - document - .agents/agents/i-session-prompt.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,9 +28,3 @@ members: 13
 TABLE source_file, type FROM #community/Workflow_Survey__Draft__Inject__Confirm
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_Restart Procedure]]
-
-## Top bridge nodes
-- [[Kill Switch Procedure_1]] - degree 10, connects to 1 community

@@ -1,23 +1,21 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "Community 49"
+community: "api.py"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_49
+  - community/apipy
 ---
 
 # killswitch()
 
 ## Connections
 - [[Emergency kill switch freeze, shutdown, or disconnect.]] - `rationale_for` [EXTRACTED]
-- [[HTTPException]] - `calls` [INFERRED]
 - [[KillSwitchAction]] - `references` [EXTRACTED]
-- [[_bot_service_names()]] - `calls` [EXTRACTED]
-- [[_get_engine()]] - `calls` [EXTRACTED]
-- [[api.py]] - `contains` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
 - [[execute_killswitch()]] - `calls` [EXTRACTED]
+- [[post_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_49
+#graphify/code #graphify/EXTRACTED #community/apipy

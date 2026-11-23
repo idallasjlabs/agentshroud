@@ -1,12 +1,12 @@
 ---
 source_file: "docs/compliance/soc2-attestation-path.md"
 type: "document"
-community: "Community 548"
+community: "10. Security Supply Chain Analysis"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_548
+  - community/10_Security_Supply_Chain_Analysis
 ---
 
 # SOC 2 Type II — Attestation Path & Go/No-Go Scoping
@@ -20,4 +20,4 @@ tags:
 - [[Why this is on the board]] - `contains` [EXTRACTED]
 - [[soc2-attestation-path]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_548
+#graphify/document #graphify/EXTRACTED #community/10_Security_Supply_Chain_Analysis

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L192"
+community: "TestOutboundInfoFilter"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TestOutboundInfoFilter
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryLifecycleConfig_1]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

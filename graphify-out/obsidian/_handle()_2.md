@@ -1,23 +1,19 @@
 ---
-source_file: "docker/bots/hermes/dashboard_bridge.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "test_cron_jobs_prompts.py"
-location: "L106"
+community: "lifespan"
+location: "L2251"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - graphify/INFERRED
+  - community/lifespan
 ---
 
 # _handle()
 
 ## Connections
-- [[StreamReader]] - `references` [EXTRACTED]
-- [[StreamWriter]] - `references` [EXTRACTED]
-- [[_pipe()_2]] - `calls` [EXTRACTED]
-- [[_read_request_headers()]] - `calls` [EXTRACTED]
-- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
-- [[rewrite_request_headers()]] - `calls` [EXTRACTED]
+- [[_pipe()_1]] - `calls` [EXTRACTED]
+- [[_run_hermes_api_forwarder()]] - `indirect_call` [INFERRED]
+- [[_run_hermes_dashboard_forwarder()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/INFERRED #community/lifespan

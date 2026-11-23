@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-pr.md"
+source_file: ".agents/skills/hermes/SKILL.md"
 type: "document"
-community: "Community 1957"
-location: "L10"
+community: "Hermes — Reference Verifier"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1957
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_2]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1957
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

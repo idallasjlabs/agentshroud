@@ -1,26 +1,22 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "Community 5"
+community: "_FakeStreamClient"
 location: "L1431"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/_FakeStreamClient
 ---
 
 # _FakeStreamClient
 
 ## Connections
-- [[.__aenter__()_6]] - `method` [EXTRACTED]
-- [[.__aexit__()_6]] - `method` [EXTRACTED]
-- [[.__init__()_193]] - `method` [EXTRACTED]
-- [[.stream()_1]] - `method` [EXTRACTED]
-- [[LLMProxy]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
+- [[dot-__aenter__()_2]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_74]] - `method` [EXTRACTED]
+- [[dot-stream()]] - `method` [EXTRACTED]
 - [[Stands in for httpx.AsyncClient inside LLMProxy._stream().]] - `rationale_for` [EXTRACTED]
-- [[VRAMHeadroomError]] - `uses` [INFERRED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamClient

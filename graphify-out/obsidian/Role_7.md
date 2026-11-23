@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/hermes.md"
+source_file: ".opencode/agents/i-production.md"
 type: "document"
-community: "Community 1977"
-location: "L10"
+community: "Phase 3: MITIGATE (Rollback First!)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1977
+  - community/Phase_3_MITIGATE_Rollback_First
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Skill Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1977
+#graphify/document #graphify/EXTRACTED #community/Phase_3_MITIGATE_Rollback_First

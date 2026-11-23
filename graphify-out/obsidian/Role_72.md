@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mnemosyne/SKILL.md"
+source_file: ".omp/agents/i-data.md"
 type: "document"
-community: "Community 1994"
-location: "L8"
+community: "Skill: Data Validation (DATA-VAL)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1994
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1994
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

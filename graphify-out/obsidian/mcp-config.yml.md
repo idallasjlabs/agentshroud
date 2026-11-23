@@ -1,11 +1,11 @@
 ---
 source_file: "docs/data/schema-documentation.md"
 type: "code"
-community: "Community 637"
+community: "Proxy Layer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_637
+  - community/Proxy_Layer
 ---
 
 # mcp-config.yml
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[MCP Proxy]] - `conceptually_related_to` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_637
+#graphify/code #graphify/EXTRACTED #community/Proxy_Layer

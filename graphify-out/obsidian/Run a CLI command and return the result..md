@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "Community 225"
+community: "AppleContainerEngine"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_225
+  - community/AppleContainerEngine
 ---
 
 # Run a CLI command and return the result.
 
 ## Connections
-- [[._run()]] - `rationale_for` [EXTRACTED]
+- [[dot-_run()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_225
+#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine

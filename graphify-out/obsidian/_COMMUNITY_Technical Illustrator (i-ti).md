@@ -1,27 +1,26 @@
 ---
 type: community
-cohesion: 0.17
-members: 12
+members: 13
 ---
 
 # Technical Illustrator (i-ti)
 
-**Cohesion:** 0.17 - loosely connected
-**Members:** 12 nodes
+**Members:** 13 nodes
 
 ## Members
-- [[dot-agentsskillsi-mcSKILL]] - document - .agents/skills/i-mc/SKILL.md
-- [[Emergency Hotfix]] - document - .agents/skills/i-mc/SKILL.md
-- [[GSDE&G Development Master Checklist]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 1 · Plan & Branch  → `ggSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 2 · TDD  → `tddSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 3 · QA  → `qaSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 4 · Code Review  → `crSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 5 · Pull Request  → `prSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 6 · CI  → `cicdSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Phase 7 · Deploy  → `psSKILL.md`]] - document - .agents/skills/i-mc/SKILL.md
-- [[Quick Commands]] - document - .agents/skills/i-mc/SKILL.md
-- [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
+- [[dot-agentsskillsi-tiREADME]] - document - .agents/skills/i-ti/README.md
+- [[Mindmap Architect (MM)]] - document - .agents/skills/i-mm/SKILL.md
+- [[Purpose_176]] - document - .agents/skills/i-ti/README.md
+- [[Purpose_177]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Related Skills_115]] - document - .agents/skills/i-ti/README.md
+- [[Related Skills_116]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (TI)_1]] - document - .agents/skills/i-ti/README.md
+- [[Technical Illustrator (TI)_2]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
+- [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
+- [[Usage_131]] - document - .agents/skills/i-ti/README.md
+- [[Usage_132]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,7 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
+- 1 edge to [[_COMMUNITY_dot-agentsskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
 
 ## Top bridge nodes
-- [[GSDE&G Development Master Checklist]] - degree 12, connects to 1 community
+- [[Technical Illustrator (i-ti)]] - degree 10, connects to 2 communities

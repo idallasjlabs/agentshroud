@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Test-Driven Development default (Red-Green-Refactor)
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Create PR with Pre-Flight Audit (CRPR) Skill]] - document - .agents/skills/i-crpr/SKILL.md
+- [[Test-Driven Development default (Red-Green-Refactor)]] - rationale - CLAUDE.md
 
 ## Live Query (requires Dataview plugin)
 

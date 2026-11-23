@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # WebhookReceiver Session Isolation Integration
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[ToolChainAnalyzer.sanitize_tool_params (C34)]] - code - gateway/security/tool_chain_analyzer.py
+- [[WebhookReceiver Session Isolation Integration]] - code - gateway/tests/test_session_isolation.py
 
 ## Live Query (requires Dataview plugin)
 

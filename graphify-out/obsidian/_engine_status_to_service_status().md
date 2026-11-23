@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 38"
+community: "services.py"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/servicespy
 ---
 
 # _engine_status_to_service_status()
 
 ## Connections
-- [[._describe_service()]] - `calls` [EXTRACTED]
-- [[ServiceStatus_1]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `calls` [EXTRACTED]
+- [[ServiceStatus]] - `uses` [INFERRED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/servicespy

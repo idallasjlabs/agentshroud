@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-odev.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "Community 844"
+community: "Hermes — Reference Verifier"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_844
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[Skill OpenClaw Dev Workflow (ODEV)_2]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_844
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

@@ -1,19 +1,17 @@
 ---
 type: community
-cohesion: 0.50
 members: 4
 ---
 
 # TestScoreContainerHardening
 
-**Cohesion:** 0.50 - moderately connected
 **Members:** 4 nodes
 
 ## Members
-- [[2. Security Value Audit_2]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[PARTIAL PROTECTION (real logic, but gaps or dependencies)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[REAL PROTECTION (functional enforcement, would stop actual attacks)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
-- [[SECURITY THEATER RISK (looks good, limited real value)]] - document - docs/planning/reviews/phase-review-2026-03-03.md
+- [[dot-test_five_openscap_all_passing()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_with_openscap_running_but_failures()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_baseline_no_openscap()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreContainerHardening]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ApprovalQueueConfig (5)]]
+- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
 
 ## Top bridge nodes
-- [[2. Security Value Audit_2]] - degree 4, connects to 1 community
+- [[TestScoreContainerHardening]] - degree 4, connects to 1 community

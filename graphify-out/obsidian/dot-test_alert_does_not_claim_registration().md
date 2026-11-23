@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "format_upstream_cve_alert() (2)"
+community: "daily_cve_report.py"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/format_upstream_cve_alert_2
+  - community/daily_cve_reportpy
 ---
 
 # .test_alert_does_not_claim_registration()
@@ -17,4 +17,4 @@ tags:
 - [[The gateway never writes the registry, so the alert must not say it did. It…]] - `rationale_for` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert_2
+#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy

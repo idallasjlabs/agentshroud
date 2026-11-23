@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "SecurityPipeline"
+community: "._make_proxy"
 location: "L9373"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/_make_proxy
 ---
 
 # noop_owner_notice()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_stranger_hello_in_group_receives_ack()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/_make_proxy

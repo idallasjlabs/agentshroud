@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-aws-profile/SKILL.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
-community: "Community 308"
-location: "L8"
+community: "Athena — Knowledge Distiller"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_308
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_308
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

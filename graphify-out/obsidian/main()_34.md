@@ -1,25 +1,19 @@
 ---
-source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "Community 382"
-location: "L164"
+community: "sync-cve-registry.py"
+location: "L692"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_382
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[Path_57]] - `calls` [EXTRACTED]
-- [[RuntimeError]] - `calls` [INFERRED]
-- [[default_out_dir()]] - `calls` [EXTRACTED]
-- [[gen.py]] - `contains` [EXTRACTED]
-- [[get_model_defaults()]] - `calls` [EXTRACTED]
-- [[pick_prompts()]] - `calls` [EXTRACTED]
-- [[request_images()]] - `calls` [EXTRACTED]
-- [[slugify()]] - `calls` [EXTRACTED]
-- [[write_gallery()]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_382
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: ".test_gives_up_and_marks_sent_after_max_retries()"
-location: "L1826"
+community: "_sleep"
+location: "L1976"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_gives_up_and_marks_sent_after_max_retries
+  - community/_sleep
 ---
 
 # now()
 
 ## Connections
-- [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - `contains` [EXTRACTED]
+- [[dot-test_zero_new_cves_marks_checked_immediately()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries
+#graphify/code #graphify/EXTRACTED #community/_sleep

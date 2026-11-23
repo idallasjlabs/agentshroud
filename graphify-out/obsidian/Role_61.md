@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-production/SKILL.md"
+source_file: ".omp/agents/daedalus.md"
 type: "document"
-community: "Community 545"
-location: "L8"
+community: "Daedalus — Concept Illustrator"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_545
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_545
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

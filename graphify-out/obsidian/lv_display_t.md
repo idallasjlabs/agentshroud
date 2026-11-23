@@ -1,12 +1,11 @@
 ---
-source_file: "firmware/voice-terminal/main/app_main.c"
+source_file: ""
 type: "code"
-community: "Community 378"
-location: "L116"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_378
+  - community/app_mainc
 ---
 
 # lv_display_t
@@ -14,4 +13,4 @@ tags:
 ## Connections
 - [[_lvgl_flush_wait_yield()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_378
+#graphify/code #graphify/EXTRACTED #community/app_mainc

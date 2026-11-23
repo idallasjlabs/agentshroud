@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # ToolChainAnalyzer Exfiltration Pattern Detection Tests
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[Test Data Ledger]] - code - gateway/tests/test_ledger.py
+- [[ToolChainAnalyzer Exfiltration Pattern Detection Tests]] - code - gateway/tests/test_tool_chain_analyzer.py
 
 ## Live Query (requires Dataview plugin)
 

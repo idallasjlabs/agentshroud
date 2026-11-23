@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "MCPProxy"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/MCPProxy
 ---
 
 # .set_event_bus()
 
 ## Connections
-- [[MCPProxy_1]] - `method` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
 - [[Wire optional event bus for privacysecurity telemetry.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/MCPProxy

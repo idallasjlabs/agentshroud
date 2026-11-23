@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: ".build_full_mesh()"
+community: "TrustManager"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/build_full_mesh
+  - community/TrustManager
 ---
 
 # .register_peer()
 
 ## Connections
-- [[dot-build_full_mesh()]] - `calls` [EXTRACTED]
 - [[CrossBotTrustLedger]] - `method` [EXTRACTED]
-- [[Register bot_b as a peer of bot_a.          Args             bot_a Source bot]] - `rationale_for` [EXTRACTED]
+- [[Register bot_b as a peer of bot_a. Args bot_a Source bot name. bot_b Peer…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/build_full_mesh
+#graphify/code #graphify/EXTRACTED #community/TrustManager

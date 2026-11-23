@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "WebProxy"
-location: "L19"
+community: "DNSBlocklist"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/DNSBlocklist
 ---
 
 # .setup_method()
 
 ## Connections
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[TestNetworkValidator]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestIsBlocked]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

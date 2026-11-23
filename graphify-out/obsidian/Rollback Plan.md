@@ -1,12 +1,12 @@
 ---
 source_file: "docs/architecture/PHASE_3A_3B_IMPLEMENTATION.md"
 type: "document"
-community: "Community 393"
+community: "PHASE_3A_3B_IMPLEMENTATION.md"
 location: "L257"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_393
+  - community/PHASE_3A_3B_IMPLEMENTATIONmd
 ---
 
 # Rollback Plan
@@ -18,4 +18,4 @@ tags:
 - [[Phase 3A & 3B Implementation Summary]] - `contains` [EXTRACTED]
 - [[Restore hardcoded gateway password (if secret mounting fails)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_393
+#graphify/document #graphify/EXTRACTED #community/PHASE_3A_3B_IMPLEMENTATIONmd

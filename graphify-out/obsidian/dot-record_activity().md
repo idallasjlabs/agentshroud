@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "EgressFilterConfig"
+community: ".record_activity"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilterConfig
+  - community/record_activity
 ---
 
 # .record_activity()
@@ -15,8 +15,8 @@ tags:
 - [[dot-_append_contributor_log()]] - `calls` [EXTRACTED]
 - [[dot-_normalize_preview()]] - `calls` [EXTRACTED]
 - [[dot-_normalize_username()]] - `calls` [EXTRACTED]
-- [[Append one activity entry for any tracked collaborator or the owner.          Ar]] - `rationale_for` [EXTRACTED]
-- [[CollaboratorActivityTracker_1]] - `method` [EXTRACTED]
+- [[Append one activity entry for any tracked collaborator or the owner. Args…]] - `rationale_for` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
 - [[_is_fixture_uid()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/record_activity

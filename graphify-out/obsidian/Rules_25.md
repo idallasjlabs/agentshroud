@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-mm.agent.md"
+source_file: ".cursor/agents/i-ux.md"
 type: "document"
-community: "Community 558"
-location: "L33"
+community: "Skill: UX Expert (UX)"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_558
+  - community/Skill_UX_Expert_UX
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_3]] - `contains` [EXTRACTED]
+- [[Skill UX Expert (UX)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_558
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

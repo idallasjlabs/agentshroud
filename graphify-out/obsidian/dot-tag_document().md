@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "TestDocumentTagging"
+community: "MetadataGuard"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDocumentTagging
+  - community/MetadataGuard
 ---
 
 # .tag_document()
 
 ## Connections
 - [[Create and store a provenance tag for a document.]] - `rationale_for` [EXTRACTED]
-- [[DocumentTag]] - `references` [EXTRACTED]
+- [[DocumentTag]] - `calls` [EXTRACTED]
 - [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDocumentTagging
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

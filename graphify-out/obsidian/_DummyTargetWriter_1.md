@@ -1,25 +1,24 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "Community 822"
-location: "L87"
+community: "HTTPConnectProxy"
+location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_822
+  - community/HTTPConnectProxy
 ---
 
 # _DummyTargetWriter
 
 ## Connections
-- [[.__init__()_181]] - `method` [EXTRACTED]
-- [[.close()_19]] - `method` [EXTRACTED]
-- [[.drain()_3]] - `method` [EXTRACTED]
-- [[.write()_3]] - `method` [EXTRACTED]
-- [[HTTPConnectProxy]] - `uses` [INFERRED]
-- [[WebProxy_1]] - `uses` [INFERRED]
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]
-- [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-close()_21]] - `method` [EXTRACTED]
+- [[dot-drain()_2]] - `method` [EXTRACTED]
+- [[dot-write()_2]] - `method` [EXTRACTED]
+- [[_open_conn()_3]] - `calls` [EXTRACTED]
+- [[_open_conn()_4]] - `calls` [EXTRACTED]
+- [[_open_conn()_5]] - `calls` [EXTRACTED]
+- [[_open_conn()_6]] - `calls` [EXTRACTED]
+- [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_822
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

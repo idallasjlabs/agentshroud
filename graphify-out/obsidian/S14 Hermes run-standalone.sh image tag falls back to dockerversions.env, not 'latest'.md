@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_bot_boot_static.sh"
 type: "concept"
-community: "Community 118"
+community: "upgrade-2026-09-21.md"
 location: "lines 212-228"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_118
+  - community/upgrade-2026-09-21md
 ---
 
 # S14 Hermes run-standalone.sh image tag falls back to docker/versions.env, not 'latest'
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[versions.env]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_118
+#graphify/concept #graphify/EXTRACTED #community/upgrade-2026-09-21md

@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L394"
+community: "ToolResultInjectionScanner"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/ToolResultInjectionScanner
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
-- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/soc/static/soc.js"
 type: "code"
-community: "Community 2049"
+community: "soc.js"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2049
+  - community/socjs
 ---
 
 # _handleWSEvent()
 
 ## Connections
-- [[WSEventType]] - `shares_data_with` [INFERRED]
 - [[_appendLogLine()]] - `calls` [EXTRACTED]
 - [[_connectWS()]] - `calls` [EXTRACTED]
 - [[_edgeLiveEvent()]] - `calls` [EXTRACTED]
@@ -20,4 +19,4 @@ tags:
 - [[_renderSecurityTable()]] - `calls` [EXTRACTED]
 - [[soc.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2049
+#graphify/code #graphify/EXTRACTED #community/socjs

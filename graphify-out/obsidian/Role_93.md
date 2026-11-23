@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mm.md"
+source_file: ".opencode/agents/vulcan.md"
 type: "document"
-community: "Community 624"
-location: "L10"
+community: "Vulcan — Subject Matter Auditor"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_624
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Role
 
 ## Connections
-- [[Skill Mindmap Architect (MM)_2]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_624
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

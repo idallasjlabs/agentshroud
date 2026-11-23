@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/version_routes.py"
 type: "code"
-community: "Community 66"
+community: "version_routes.py"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_66
+  - community/version_routespy
 ---
 
 # RollbackRequest
 
 ## Connections
-- [[BaseModel]] - `inherits` [EXTRACTED]
+- [[BaseModel_12]] - `inherits` [EXTRACTED]
 - [[Request for rollback operation.]] - `rationale_for` [EXTRACTED]
 - [[rollback_version()]] - `references` [EXTRACTED]
-- [[version_routes.py]] - `contains` [EXTRACTED]
+- [[version_routes.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_66
+#graphify/code #graphify/EXTRACTED #community/version_routespy

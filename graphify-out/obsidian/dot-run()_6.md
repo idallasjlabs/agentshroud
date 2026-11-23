@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "LLMProxy.proxy_messages (non-streaming) (2)"
-location: "L206"
+community: "EnhancedApprovalQueue"
+location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxyproxy_messages_non-streaming_2
+  - community/EnhancedApprovalQueue
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Poll Falco alert files until stopped.]] - `rationale_for` [EXTRACTED]
+- [[FakeFacade]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming_2
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

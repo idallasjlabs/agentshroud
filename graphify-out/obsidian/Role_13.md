@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-data.md"
+source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "Community 1928"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1928
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1928
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

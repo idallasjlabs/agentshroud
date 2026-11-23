@@ -1,11 +1,11 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 1563"
+community: "Cross-Turn Correlation Capability"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1563
+  - community/Cross-Turn_Correlation_Capability
 ---
 
 # multi_turn_tracker.py / SubagentMonitor
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Cross-Turn Correlation Capability]] - `implements` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1563
+#graphify/code #graphify/EXTRACTED #community/Cross-Turn_Correlation_Capability

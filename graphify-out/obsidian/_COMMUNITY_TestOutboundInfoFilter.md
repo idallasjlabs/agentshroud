@@ -1,80 +1,76 @@
 ---
 type: community
-cohesion: 0.03
-members: 65
+members: 63
 ---
 
 # TestOutboundInfoFilter
 
-**Cohesion:** 0.03 - loosely connected
-**Members:** 65 nodes
+**Members:** 63 nodes
 
 ## Members
-- [[AWS Cloud Management & FinOps_1]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Apollo — Audio Systems Producer_3]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Athena — Knowledge Distiller_3]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Atlas — Curriculum Architect_3]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Branding Specialist (BS)_2]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Data Validation (DATA-VAL)_2]] - document - docker/config/hermes/skills/i-data/README.md
-- [[GSDE&G Development Master Checklist (MC)_2]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Git Workflow Guardian (GIT-GUARD)_2]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[MCP Doctor (MCPM-DOCTOR)_2]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Pull Request Generator (PR)_2]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_162]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_163]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Purpose_164]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_165]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Purpose_166]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Purpose_167]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Purpose_168]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Purpose_169]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_170]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Purpose_171]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_172]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_173]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Purpose_174]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_89]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Related Skills_90]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Related Skills_91]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Related Skills_92]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Related Skills_93]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Related Skills_94]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Related Skills_95]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Related Skills_96]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Related Skills_97]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Related Skills_98]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Related Skills_99]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Related Skills_100]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Related Skills_101]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Technical Writer (TW)_2]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_101]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_102]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[Usage_103]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_104]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_105]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Usage_106]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Usage_107]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Usage_108]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_109]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Usage_110]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Usage_111]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_112]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Usage_113]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[hermesskillsi-apolloREADME]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[hermesskillsi-athenaREADME]] - document - docker/config/hermes/skills/i-athena/README.md
-- [[hermesskillsi-atlasREADME]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[hermesskillsi-awsREADME]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[hermesskillsi-bsREADME]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[hermesskillsi-dataREADME]] - document - docker/config/hermes/skills/i-data/README.md
-- [[hermesskillsi-ggREADME]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[hermesskillsi-mcREADME]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[hermesskillsi-mcpm-doctorREADME]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[hermesskillsi-prREADME]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[hermesskillsi-sec-defenseREADME]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[hermesskillsi-sec-offenseREADME]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[hermesskillsi-twREADME]] - document - docker/config/hermes/skills/i-tw/README.md
+- [[dot-_time_one_filter()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-setup_method()_7]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_admin_private_service_data_redacted()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_agentshroud_name_not_redacted()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_code_block_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_collaborator_name_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_common_tools_not_filtered()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_comprehensive_attack_scenarios()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_context_aware_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_credential_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_custom_patterns()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_edge_cases()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_initialization_default()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_initialization_with_config()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_internal_url_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_mcp_tool_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_monitor_mode()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_multiple_categories()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_operational_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_partial_xml_tool_tag_is_filtered()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_pattern_overlaps()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_performance()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_private_ip_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_risk_classification()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_security_architecture_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_stats()_1]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_tailnet_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_tailscale_hostname_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_telegram_user_id_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_trust_level_overrides()]] - code - gateway/tests/test_outbound_filter.py
+- [[dot-test_workspace_internal_path_filtering()]] - code - gateway/tests/test_outbound_filter.py
+- [[Admin-private service references should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[AgentShroud brand name must pass through unredacted (Fix C).]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Known collaborator names should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Set up test fixtures.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Split-fragment XML tags must still be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test adding custom filter patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test against realistic attack scenarios.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test context-aware user ID filtering.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test edge cases and boundary conditions.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test filter initializes with custom configuration.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test filter initializes with default configuration.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test filter statistics.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test filtering with multiple information categories.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test handling of overlapping patterns.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test response risk level classification.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test suite for the outbound information filter.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that Tailscale hostnames are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that Telegram user IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that common English words are not filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that credential paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that filtering performance is acceptable.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that function_calls XML blocks are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that internal URLs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that internal file paths are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that monitor mode logs but doesn't redact.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that private IP addresses are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that security module references are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that sensitive MCP tool names are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that tailnet IDs are filtered.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[Test that trust level overrides work correctly.]] - rationale - gateway/tests/test_outbound_filter.py
+- [[TestOutboundInfoFilter]] - code - gateway/tests/test_outbound_filter.py
+- [[Workspace runtime paths should be redacted.]] - rationale - gateway/tests/test_outbound_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -84,21 +80,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_OpenClaw Bot SSH Configuration]]
-- 1 edge to [[_COMMUNITY_8D Root Cause Analysis]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (3)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (4)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (5)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (6)]]
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL.md (6)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (7)]]
-- 1 edge to [[_COMMUNITY_TestOutboundInfoFilter (8)]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
-- 1 edge to [[_COMMUNITY_System Audit & Documentation (3)]]
-- 1 edge to [[_COMMUNITY_Skill UI Expert (UI)]]
-- 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
-- 1 edge to [[_COMMUNITY_MultiHostResult]]
-- 1 edge to [[_COMMUNITY_AgentShroud System Architecture Document (SAD)]]
+- 6 edges to [[_COMMUNITY_asyncio_1]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
-- [[hermesskillsi-bsREADME]] - degree 30, connects to 15 communities
+- [[TestOutboundInfoFilter]] - degree 34, connects to 2 communities
+- [[dot-setup_method()_7]] - degree 3, connects to 1 community
+- [[dot-test_custom_patterns()]] - degree 3, connects to 1 community
+- [[dot-test_initialization_with_config()]] - degree 3, connects to 1 community
+- [[dot-test_monitor_mode()]] - degree 3, connects to 1 community

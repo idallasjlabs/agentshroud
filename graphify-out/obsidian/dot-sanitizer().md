@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ContextGuard"
-location: "L955"
+community: "PIIConfig"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/PIIConfig
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[LogSanitizer]] - `calls` [EXTRACTED]
-- [[TestLoggingSecurity]] - `method` [EXTRACTED]
+- [[PIIConfig]] - `calls` [EXTRACTED]
+- [[PIISanitizer]] - `calls` [EXTRACTED]
+- [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

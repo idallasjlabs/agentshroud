@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # Technical Writer (TW)
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[Incident Response (INCIDENT)]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Purpose_31]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Related Skills_17]] - document - docker/config/hermes/skills/i-production/README.md
-- [[Usage_20]] - document - docker/config/hermes/skills/i-production/README.md
-- [[hermesskillsi-productionREADME]] - document - docker/config/hermes/skills/i-production/README.md
+- [[Purpose_157]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Related Skills_87]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Technical Writer (TW)_1]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[Usage_97]] - document - docker/config/openclaw/skills/i-tw/README.md
+- [[openclawskillsi-twREADME]] - document - docker/config/openclaw/skills/i-tw/README.md
 
 ## Live Query (requires Dataview plugin)
 

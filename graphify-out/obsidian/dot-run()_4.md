@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "Approval Queue (human-in-the-loop)"
-location: "L56"
+community: "EnhancedApprovalQueue"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/EnhancedApprovalQueue
 ---
 
 # .run()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
+- [[Facade]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue

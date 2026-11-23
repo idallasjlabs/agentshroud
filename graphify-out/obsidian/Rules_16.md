@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-bs.md"
+source_file: ".agents/skills/i-mm/SKILL.md"
 type: "document"
-community: "Community 1020"
-location: "L26"
+community: "Skill: Mindmap Architect (MM)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1020
+  - community/Skill_Mindmap_Architect_MM
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)_2]] - `contains` [EXTRACTED]
+- [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1020
+#graphify/document #graphify/EXTRACTED #community/Skill_Mindmap_Architect_MM

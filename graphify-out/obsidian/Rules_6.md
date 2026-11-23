@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-ui.md"
+source_file: ".github/agents/i-tdd.agent.md"
 type: "document"
-community: "Community 515"
-location: "L31"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_515
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Rules
 
 ## Connections
-- [[Skill UI Expert (UI)]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_515
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

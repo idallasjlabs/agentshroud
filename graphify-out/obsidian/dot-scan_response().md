@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "scanner_integration.py"
+community: "WebProxyResult"
 location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/WebProxyResult
 ---
 
 # .scan_response()
 
 ## Connections
 - [[dot-_audit()]] - `calls` [EXTRACTED]
+- [[EgressEvent]] - `calls` [EXTRACTED]
 - [[Scan a response body for prompt injection, PII, and hidden content. This is…]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `method` [EXTRACTED]
 - [[WebProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/WebProxyResult

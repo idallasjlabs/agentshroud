@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L133"
+community: "test_module_stats.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/test_module_statspy
 ---
 
 # .reset()
 
 ## Connections
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

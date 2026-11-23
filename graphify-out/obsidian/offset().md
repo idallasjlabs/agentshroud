@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "browser/scripts/browse.py"
-location: "L387"
+community: "sync-cve-registry.py"
+location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/scripts/browsepy
+  - community/sync-cve-registrypy
 ---
 
 # offset()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_insert_into_list()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/scripts/browsepy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

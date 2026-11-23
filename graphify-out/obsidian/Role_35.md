@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/mnemosyne.md"
+source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "Community 1978"
+community: "Workflow: Survey → Draft → Inject → Confirm"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1978
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1978
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

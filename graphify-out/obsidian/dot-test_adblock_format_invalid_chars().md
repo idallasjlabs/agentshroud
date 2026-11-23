@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Kill Switch Procedure"
+community: "TestParseHostsLine"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Kill_Switch_Procedure
+  - community/TestParseHostsLine
 ---
 
 # .test_adblock_format_invalid_chars()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Kill_Switch_Procedure
+#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine

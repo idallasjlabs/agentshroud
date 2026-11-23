@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L284"
+community: "A2APolicyEngine"
+location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/A2APolicyEngine
 ---
 
 # .submit_tool_request()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[_StubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

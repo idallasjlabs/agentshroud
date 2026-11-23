@@ -1,23 +1,19 @@
 ---
-source_file: "firmware/voice-terminal/test/test_wakeword_state/test_ptt_state.c"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "Community 341"
-location: "L187"
+community: "SecureBrowser"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_341
+  - community/SecureBrowser
 ---
 
 # main()
 
 ## Connections
-- [[test_clear_allows_fresh_tap()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_ends_listening()]] - `calls` [EXTRACTED]
-- [[test_ptt_finish_noop_when_idle()]] - `calls` [EXTRACTED]
-- [[test_ptt_state.c]] - `contains` [EXTRACTED]
-- [[test_push_frame_suppressed_while_triggered()]] - `calls` [EXTRACTED]
-- [[test_tap_in_idle_starts_listen()]] - `calls` [EXTRACTED]
-- [[test_vad_timeout_fires_without_audio()]] - `calls` [EXTRACTED]
+- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `calls` [EXTRACTED]
+- [[browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_341
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

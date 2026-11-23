@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "NetworkSecurityFinding"
+community: "DNSFilterConfig"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkSecurityFinding
+  - community/DNSFilterConfig
 ---
 
 # .resolve_and_cache()
 
 ## Connections
-- [[dot-check_rebinding()]] - `calls` [EXTRACTED]
 - [[DNSFilter]] - `method` [EXTRACTED]
 - [[Resolve domain to an IP and cache it for 5 minutes.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkSecurityFinding
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

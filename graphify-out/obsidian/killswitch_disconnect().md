@@ -1,24 +1,25 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "Community 10"
+community: "soc/router.py"
 location: "L801"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_10
+  - community/soc/routerpy
 ---
 
 # killswitch_disconnect()
 
 ## Connections
+- [[Action]] - `uses` [INFERRED]
 - [[DisconnectRequest]] - `references` [EXTRACTED]
-- [[JSONResponse_1]] - `references` [EXTRACTED]
-- [[SCLCaller_1]] - `references` [EXTRACTED]
-- [[_app_state()]] - `calls` [EXTRACTED]
+- [[JSONResponse]] - `references` [EXTRACTED]
+- [[Resource]] - `uses` [INFERRED]
+- [[SCLCaller]] - `uses` [INFERRED]
 - [[_confirmation_required()]] - `calls` [EXTRACTED]
-- [[_log_audit()]] - `calls` [EXTRACTED]
 - [[_run_killswitch()]] - `calls` [EXTRACTED]
-- [[router.py_1]] - `contains` [EXTRACTED]
+- [[post]] - `references` [EXTRACTED]
+- [[socrouter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_10
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

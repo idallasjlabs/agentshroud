@@ -1,25 +1,23 @@
 ---
 type: community
-cohesion: 0.20
 members: 10
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
 
-**Cohesion:** 0.20 - loosely connected
 **Members:** 10 nodes
 
 ## Members
-- [[1. Schema Validation_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[2. Partition Coverage_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[3. Data Quality Checks_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[4. Cross-Site Comparison_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Critical Cost Control_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Role_91]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Skill Data Validation (DATA-VAL)_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Test Data Validation Pattern_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[Validation Layers_1]] - document - docker/config/hermes/skills/i-data/SKILL.md
-- [[hermesskillsi-dataSKILL]] - document - docker/config/hermes/skills/i-data/SKILL.md
+- [[1. GitHub MCP_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[2. Atlassian MCP (Jira + Confluence)_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[3. AWS API MCP_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Authentication Issues_8]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Available MCP Servers_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Common Errors_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[MCP Troubleshooting_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Role_268]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_7]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
+- [[openclawskillsi-mcpmSKILL]] - document - docker/config/openclaw/skills/i-mcpm/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -29,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Skill Data Validation (DATA-VAL)_1]] - degree 6, connects to 1 community
+- [[Skill MCP Tools Usage (MCP-TOOLS)_7]] - degree 5, connects to 1 community

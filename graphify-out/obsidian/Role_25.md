@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-production.md"
+source_file: ".agents/agents/apollo.md"
 type: "document"
-community: "Community 1142"
+community: "Technical Specification"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1142
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1142
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

@@ -1,33 +1,35 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "Community 62"
+community: "ingest_api/main.py"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_62
+  - community/ingest_api/mainpy
 ---
 
 # make_event()
 
 ## Connections
-- [[._alert()]] - `calls` [EXTRACTED]
-- [[._emit_privacy_event()]] - `calls` [EXTRACTED]
-- [[._emit_quarantine_event()]] - `calls` [EXTRACTED]
-- [[._record()]] - `calls` [EXTRACTED]
-- [[._record()_2]] - `calls` [EXTRACTED]
-- [[.approve()]] - `calls` [EXTRACTED]
-- [[.check_async()]] - `calls` [EXTRACTED]
-- [[.deny()]] - `calls` [EXTRACTED]
-- [[.request_approval()]] - `calls` [EXTRACTED]
-- [[.test_edge_gateway_event_is_forwarded()]] - `calls` [EXTRACTED]
-- [[.test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
-- [[.test_unmapped_gateway_event_still_dropped()]] - `calls` [EXTRACTED]
-- [[Any_16]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `references` [EXTRACTED]
+- [[dot-_alert()]] - `calls` [EXTRACTED]
+- [[dot-_emit_privacy_event()]] - `calls` [EXTRACTED]
+- [[dot-_emit_quarantine_event()]] - `calls` [EXTRACTED]
+- [[dot-_record()_1]] - `calls` [EXTRACTED]
+- [[dot-_record()_2]] - `calls` [EXTRACTED]
+- [[dot-approve()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[dot-deny()]] - `calls` [EXTRACTED]
+- [[dot-request_approval()]] - `calls` [EXTRACTED]
+- [[dot-test_edge_gateway_event_is_forwarded()]] - `calls` [EXTRACTED]
+- [[dot-test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
+- [[dot-test_unmapped_gateway_event_still_dropped()]] - `calls` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `calls` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
+- [[_event_stream()]] - `calls` [EXTRACTED]
+- [[_execute_and_record()]] - `calls` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[activity_websocket()]] - `calls` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
@@ -40,15 +42,14 @@ tags:
 - [[discard_blocked_outbound()]] - `calls` [EXTRACTED]
 - [[egress_add_rule()]] - `calls` [EXTRACTED]
 - [[egress_approval.py]] - `imports` [EXTRACTED]
-- [[egress_filter.py]] - `imports` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports` [EXTRACTED]
 - [[egress_remove_rule()]] - `calls` [EXTRACTED]
 - [[egress_websocket()]] - `calls` [EXTRACTED]
-- [[event_bus.py]] - `contains` [EXTRACTED]
-- [[event_bus.py_1]] - `references` [EXTRACTED]
+- [[event_bus.py_2]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
 - [[forward_content()]] - `calls` [EXTRACTED]
-- [[main.py_2]] - `imports` [EXTRACTED]
-- [[mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports` [EXTRACTED]
+- [[mcp_proxy.py_2]] - `imports` [EXTRACTED]
 - [[receive_security_alert()]] - `calls` [EXTRACTED]
 - [[release_blocked_message()]] - `calls` [EXTRACTED]
 - [[release_blocked_outbound()]] - `calls` [EXTRACTED]
@@ -56,7 +57,7 @@ tags:
 - [[ssh_exec()]] - `calls` [EXTRACTED]
 - [[ssh_write_file()]] - `calls` [EXTRACTED]
 - [[submit_approval_request()]] - `calls` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `imports` [EXTRACTED]
 - [[test_async_subscriber()]] - `calls` [EXTRACTED]
 - [[test_auth_failure_escalation()]] - `calls` [EXTRACTED]
@@ -66,7 +67,7 @@ tags:
 - [[test_event_bus.py]] - `imports` [EXTRACTED]
 - [[test_event_has_required_fields()]] - `calls` [EXTRACTED]
 - [[test_get_recent()]] - `calls` [EXTRACTED]
-- [[test_get_stats()_1]] - `calls` [EXTRACTED]
+- [[test_get_stats()_2]] - `calls` [EXTRACTED]
 - [[test_manage_soc_events_endpoint()]] - `calls` [EXTRACTED]
 - [[test_manage_soc_report_endpoint()]] - `calls` [EXTRACTED]
 - [[test_non_alert_events_ignored()]] - `calls` [EXTRACTED]
@@ -79,4 +80,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_62
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

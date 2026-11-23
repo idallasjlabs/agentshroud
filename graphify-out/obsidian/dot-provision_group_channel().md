@@ -2,7 +2,7 @@
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
 community: "SlackAPIProxy"
-location: "L442"
+location: "L438"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_call_slack_api()]] - `calls` [EXTRACTED]
-- [[Create a Slack channel for a group. Returns channel_id or None on failure.]] - `rationale_for` [EXTRACTED]
+- [[Create a Slack channel for a group. Returns channel_id or None on failure.…]] - `rationale_for` [EXTRACTED]
 - [[SlackAPIProxy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

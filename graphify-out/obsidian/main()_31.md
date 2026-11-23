@@ -1,25 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "Community 160"
-location: "L409"
+community: "test_dns_canvas_coverage.py"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_160
+  - community/test_dns_canvas_coveragepy
 ---
 
 # main()
 
 ## Connections
-- [[._take_screenshot()_3]] - `calls` [EXTRACTED]
-- [[.click()_3]] - `calls` [EXTRACTED]
-- [[.close()_22]] - `calls` [EXTRACTED]
-- [[.extract()_3]] - `calls` [EXTRACTED]
-- [[.fill_field()_3]] - `calls` [EXTRACTED]
-- [[.navigate()_3]] - `calls` [EXTRACTED]
-- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_3]] - `calls` [EXTRACTED]
-- [[browse.py_3]] - `contains` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_160
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

@@ -1,34 +1,33 @@
 ---
 type: community
-cohesion: 0.11
-members: 19
+members: 20
 ---
 
 # TestBuildCollaboratorSafeInfoResponse
 
-**Cohesion:** 0.11 - loosely connected
-**Members:** 19 nodes
+**Members:** 20 nodes
 
 ## Members
-- [[dot-agentsskillsi-bsSKILL]] - document - .agents/skills/i-bs/SKILL.md
-- [[Anti-Patterns to Flag_15]] - document - .agents/skills/i-bs/SKILL.md
-- [[Brand Audit Checklist]] - document - .agents/skills/i-bs/SKILL.md
-- [[Brand System Components]] - document - .agents/skills/i-bs/SKILL.md
-- [[Color Token Definition]] - document - .agents/skills/i-bs/SKILL.md
-- [[Core Discipline Audit → Define → Apply → Enforce]] - document - .agents/skills/i-bs/SKILL.md
-- [[Deck  Slide Master Rules]] - document - .agents/skills/i-bs/SKILL.md
-- [[Dependencies_16]] - document - .agents/skills/i-bs/SKILL.md
-- [[Diagram Theme Block (Mermaid)]] - document - .agents/skills/i-bs/SKILL.md
-- [[File & Directory Conventions]] - document - .agents/skills/i-bs/SKILL.md
-- [[HTML  CSS Brand Variables]] - document - .agents/skills/i-bs/SKILL.md
-- [[Patterns by Output Type]] - document - .agents/skills/i-bs/SKILL.md
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - document - .agents/skills/i-bs/SKILL.md
-- [[Role_46]] - document - .agents/skills/i-bs/SKILL.md
-- [[Rules_16]] - document - .agents/skills/i-bs/SKILL.md
-- [[Skill Branding Specialist (BS)]] - document - .agents/skills/i-bs/SKILL.md
-- [[Typography Scale]] - document - .agents/skills/i-bs/SKILL.md
-- [[Validate contrast ratio]] - document - .agents/skills/i-bs/SKILL.md
-- [[Voice & Tone Guide]] - document - .agents/skills/i-bs/SKILL.md
+- [[dot-_resp()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_architecture_existing_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_collaboration_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_credit_card_privacy()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_fallback_for_unmatched()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_contains_capability_hint()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_good_morning()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_hello()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_greeting_hi()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_input_consistency_formatting_trick()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_input_consistency_spaces_or_dashes()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_password_credential_branch()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_pii_sanitization()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_restriction_not_allowed()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_restriction_refuse()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_security_approach()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_security_model()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[dot-test_what_can_you_capability()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[Static response builder for collaborator conceptual queries.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
+- [[TestBuildCollaboratorSafeInfoResponse]] - code - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -38,9 +37,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_dot-agentsskillsi-crSKILL.md (2)]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
 
 ## Top bridge nodes
-- [[Required ≥ 4.5 for text, ≥ 3.0 for UI elements]] - degree 10, connects to 1 community
-- [[Skill Branding Specialist (BS)]] - degree 8, connects to 1 community
-- [[Validate contrast ratio]] - degree 2, connects to 1 community
+- [[TestBuildCollaboratorSafeInfoResponse]] - degree 21, connects to 2 communities
+- [[dot-_resp()]] - degree 19, connects to 1 community

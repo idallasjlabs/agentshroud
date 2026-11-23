@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "GroupApprovalRouter"
-location: "L147"
+community: "test_forward_routing.py"
+location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupApprovalRouter
+  - community/test_forward_routingpy
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[FakePipelineResult]] - `calls` [EXTRACTED]
-- [[PassthroughPipeline]] - `method` [EXTRACTED]
+- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupApprovalRouter
+#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-bs.md"
+source_file: ".agents/agents/i-session-prompt.md"
 type: "document"
-community: "Community 1009"
-location: "L26"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L140"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1009
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Rules
 
 ## Connections
-- [[Skill Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1009
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

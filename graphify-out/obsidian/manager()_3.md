@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "Community 76"
+community: "SessionManager"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_76
+  - community/SessionManager
 ---
 
 # manager()
 
 ## Connections
-- [[SessionManager]] - `calls` [EXTRACTED]
+- [[SessionManager]] - `uses` [INFERRED]
+- [[fixture_127]] - `references` [EXTRACTED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_76
+#graphify/code #graphify/EXTRACTED #community/SessionManager

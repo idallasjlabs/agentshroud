@@ -1,35 +1,18 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "Community 24"
+community: "asyncio"
 location: "L380"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_24
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # _FakeIntegrityScore
 
 ## Connections
-- [[AuditChain]] - `uses` [INFERRED]
-- [[CrossBotTrustLedger]] - `uses` [INFERRED]
-- [[EnvelopeSigner_1]] - `uses` [INFERRED]
-- [[InjectionAction]] - `uses` [INFERRED]
-- [[InstructionEnvelope]] - `uses` [INFERRED]
-- [[KeyLeakDetector]] - `uses` [INFERRED]
-- [[KeyVault]] - `uses` [INFERRED]
-- [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[OutboundInfoFilter]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[ScanResult_1]] - `uses` [INFERRED]
-- [[SecurityPipeline]] - `uses` [INFERRED]
-- [[ThreatAction]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
 - [[_make_integrity_pipeline()]] - `calls` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/asyncio

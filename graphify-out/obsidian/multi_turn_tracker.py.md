@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "Community 1281"
+community: "test_all_modules_enforce.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1281
+  - community/test_all_modules_enforcepy
 ---
 
 # multi_turn_tracker.py
@@ -16,12 +16,13 @@ tags:
 - [[ConsistencyScore]] - `contains` [EXTRACTED]
 - [[DisclosureCategory]] - `contains` [EXTRACTED]
 - [[DisclosureEvent]] - `contains` [EXTRACTED]
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_13]] - `imports_from` [EXTRACTED]
+- [[Multi-Turn Context Tracker for AgentShroud Gateway Tracks cumulative…]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `contains` [EXTRACTED]
-- [[SKILL_200]] - `references` [EXTRACTED]
-- [[SessionContext_1]] - `contains` [EXTRACTED]
+- [[SessionContext]] - `contains` [EXTRACTED]
 - [[ThresholdConfig]] - `contains` [EXTRACTED]
-- [[prompt_guard.py]] - `semantically_similar_to` [INFERRED]
-- [[test_multi_turn_tracker.py]] - `references` [EXTRACTED]
+- [[middleware.py_2]] - `imports_from` [EXTRACTED]
+- [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
+- [[test_multi_turn_tracker.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1281
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

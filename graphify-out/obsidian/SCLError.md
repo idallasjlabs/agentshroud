@@ -1,22 +1,24 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # SCLError
 
 ## Connections
-- [[.test_error_model()]] - `calls` [EXTRACTED]
-- [[.test_permission_denied_error()]] - `calls` [EXTRACTED]
-- [[BaseModel]] - `inherits` [EXTRACTED]
-- [[models.py_1]] - `contains` [EXTRACTED]
+- [[dot-test_error_model()]] - `calls` [EXTRACTED]
+- [[dot-test_permission_denied_error()]] - `calls` [EXTRACTED]
+- [[BaseModel_10]] - `inherits` [EXTRACTED]
+- [[TestConfirmationModel]] - `uses` [INFERRED]
+- [[TestSCLError]] - `uses` [INFERRED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
 - [[test_soc_egress.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

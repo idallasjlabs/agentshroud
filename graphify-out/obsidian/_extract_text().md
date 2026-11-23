@@ -1,19 +1,19 @@
 ---
 source_file: "scripts/export-bot-conversations.py"
 type: "code"
-community: "Community 777"
+community: "export-bot-conversations.py"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_777
+  - community/export-bot-conversationspy
 ---
 
 # _extract_text()
 
 ## Connections
-- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);]] - `rationale_for` [EXTRACTED]
+- [[OpenClaw message content is a list of blocks (texttool_usetool_result...);…]] - `rationale_for` [EXTRACTED]
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]
 - [[export_openclaw()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_777
+#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy

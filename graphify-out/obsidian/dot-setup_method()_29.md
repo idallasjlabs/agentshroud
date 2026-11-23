@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "MiddlewareManager (2)"
-location: "L341"
+community: "EgressFilter"
+location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager_2
+  - community/EgressFilter
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[Set up test environment._1]] - `rationale_for` [EXTRACTED]
-- [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager_2
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

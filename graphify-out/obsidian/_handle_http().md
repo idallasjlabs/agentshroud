@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/proxy/canvas_proxy.py"
 type: "code"
-community: "Community 595"
+community: "canvas_proxy.py"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_595
+  - community/canvas_proxypy
 ---
 
 # _handle_http()
 
 ## Connections
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[Proxy an HTTP request after validating Basic Auth.]] - `rationale_for` [EXTRACTED]
 - [[_build_proxy_headers()]] - `calls` [EXTRACTED]
 - [[_check_basic_auth()]] - `calls` [EXTRACTED]
 - [[canvas_proxy.py]] - `contains` [EXTRACTED]
 - [[canvas_proxy_app()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_595
+#graphify/code #graphify/EXTRACTED #community/canvas_proxypy

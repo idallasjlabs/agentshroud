@@ -1,20 +1,18 @@
 ---
 type: community
-cohesion: 0.40
 members: 5
 ---
 
 # TestScoreIncidentResponse
 
-**Cohesion:** 0.40 - moderately connected
 **Members:** 5 nodes
 
 ## Members
-- [[7. Recommendations by Severity]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.1 Pre-Red Team (Critical)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.2 Short-term (High Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.3 Medium-term (Medium Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
-- [[7.4 Long-term (Low Priority)]] - document - docs/planning/reviews/blue-team-audit-v0.7.0.md
+- [[dot-test_five_with_soc_correlation_and_killswitch()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_four_with_soc_correlation()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_one_baseline_neither_running()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[dot-test_three_with_falco_and_wazuh()]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreIncidentResponse]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -24,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_AgentShroud v0.7.0 Enforcement Audit Results]]
+- 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
 
 ## Top bridge nodes
-- [[7. Recommendations by Severity]] - degree 5, connects to 1 community
+- [[TestScoreIncidentResponse]] - degree 5, connects to 1 community

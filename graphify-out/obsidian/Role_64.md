@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-release/SKILL.md"
+source_file: ".agents/agents/i-mcpm.md"
 type: "document"
-community: "Community 770"
-location: "L8"
+community: "Available MCP Servers"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_770
+  - community/Available_MCP_Servers
 ---
 
 # Role
 
 ## Connections
-- [[Skill Release (i-release)]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_770
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

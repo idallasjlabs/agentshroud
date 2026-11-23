@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_auth.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "TestEgressApprovalQueue"
-location: "L56"
+community: "deep_security_test"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/deep_security_test
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestSessionTokens]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

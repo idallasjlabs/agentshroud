@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "Community 38"
+community: "services.py"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/servicespy
 ---
 
 # _engine_health_to_health()
 
 ## Connections
-- [[._describe_service()]] - `calls` [EXTRACTED]
-- [[HealthStatus_1]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `calls` [EXTRACTED]
+- [[HealthStatus]] - `uses` [INFERRED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/servicespy

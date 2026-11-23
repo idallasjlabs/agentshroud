@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "Community 590"
-location: "L309"
+community: "cve_prefetch.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_590
+  - community/cve_prefetchpy
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_590
+#graphify/code #graphify/EXTRACTED #community/cve_prefetchpy

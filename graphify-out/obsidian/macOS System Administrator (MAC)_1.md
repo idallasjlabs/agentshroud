@@ -1,21 +1,21 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
-community: "Community 1212"
+community: "openclaw/skills/i-cr/SKILL.md"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1212
+  - community/openclaw/skills/i-cr/SKILLmd
 ---
 
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_51]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_56]] - `contains` [EXTRACTED]
-- [[Related Skills_69]] - `contains` [EXTRACTED]
-- [[Usage_73]] - `contains` [EXTRACTED]
+- [[Purpose_165]] - `contains` [EXTRACTED]
+- [[Related Skills_109]] - `contains` [EXTRACTED]
+- [[Usage_122]] - `contains` [EXTRACTED]
+- [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[openclawskillsi-macREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1212
+#graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

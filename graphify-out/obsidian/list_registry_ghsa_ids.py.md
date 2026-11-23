@@ -1,18 +1,19 @@
 ---
 source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "Community 934"
+community: "test_agent_cve_registry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_934
+  - community/test_agent_cve_registrypy
 ---
 
 # list_registry_ghsa_ids.py
 
 ## Connections
-- [[main()_26]] - `contains` [EXTRACTED]
-- [[test_list_registry_ghsa_ids.py]] - `implements` [EXTRACTED]
+- [[Print every ghsa_id in the CVE registry, one per line. Exists so the daily CVE…]] - `rationale_for` [EXTRACTED]
+- [[agent_cve_registry.py]] - `imports_from` [EXTRACTED]
+- [[main()_23]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_934
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

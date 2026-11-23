@@ -1,21 +1,19 @@
 ---
 type: community
-cohesion: 0.33
 members: 6
 ---
 
 # SubagentMonitor._log_event
 
-**Cohesion:** 0.33 - loosely connected
 **Members:** 6 nodes
 
 ## Members
-- [[Browser Fetch Skill]] - document - skills/custom/browser-fetch/SKILL.md
-- [[Features]] - document - skills/custom/browser-fetch/SKILL.md
-- [[Security_3]] - document - skills/custom/browser-fetch/SKILL.md
-- [[Usage_3]] - document - skills/custom/browser-fetch/SKILL.md
-- [[Use Cases]] - document - skills/custom/browser-fetch/SKILL.md
-- [[browser-fetchSKILL]] - document - skills/custom/browser-fetch/SKILL.md
+- [[SubagentMonitor._log_event]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.check_tool_usage]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.deregister]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.kill_agent]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.kill_all]] - code - gateway/security/subagent_monitor.py
+- [[SubagentMonitor.register_spawn]] - code - gateway/security/subagent_monitor.py
 
 ## Live Query (requires Dataview plugin)
 

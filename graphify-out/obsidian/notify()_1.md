@@ -1,19 +1,18 @@
 ---
-source_file: "docker/scripts/colima-health-check.sh"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "Community 1757"
-location: "L163"
+community: "test_edge_service_routes.py"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1757
+  - community/test_edge_service_routespy
 ---
 
 # notify()
 
 ## Connections
-- [[colima-health-check.sh]] - `defines` [EXTRACTED]
-- [[colima-health-check.sh script]] - `calls` [EXTRACTED]
-- [[log()]] - `calls` [EXTRACTED]
+- [[_telegram_send()]] - `calls` [EXTRACTED]
+- [[build_edge_service()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1757
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

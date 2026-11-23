@@ -1,24 +1,23 @@
 ---
 type: community
-cohesion: 0.22
-members: 9
+members: 10
 ---
 
 # Threat Model
 
-**Cohesion:** 0.22 - loosely connected
-**Members:** 9 nodes
+**Members:** 10 nodes
 
 ## Members
-- [[Input Requirements_18]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Output Format_33]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Persona_14]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Quality Checklist_16]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Role_99]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[System Prompt_14]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[User Prompt Template_6]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[Vulcan — Subject Matter Auditor_2]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
-- [[hermesskillsi-vulcanSKILL]] - document - docker/config/hermes/skills/i-vulcan/SKILL.md
+- [[1. Command Injection]] - document - docs/ssh-security-review.md
+- [[2. Host Spoofing  Man-in-the-Middle]] - document - docs/ssh-security-review.md
+- [[3. Credential Theft]] - document - docs/ssh-security-review.md
+- [[4. Privilege Escalation]] - document - docs/ssh-security-review.md
+- [[5. Denial of Service]] - document - docs/ssh-security-review.md
+- [[6. Audit Log Tampering  PII Leakage]] - document - docs/ssh-security-review.md
+- [[D - Denial of Service]] - document - docs/security/threat-model.md
+- [[Threat Model_29]] - document - docs/ssh-security-review.md
+- [[Threat Context Window Stuffing]] - document - docs/security/threat-model.md
+- [[Threat Resource Exhaustion]] - document - docs/security/threat-model.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,7 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_OpenClaw Workspace Usage Guide]]
+- 1 edge to [[_COMMUNITY_Recommendations for Production Deployment]]
+- 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
 
 ## Top bridge nodes
-- [[Vulcan — Subject Matter Auditor_2]] - degree 9, connects to 1 community
+- [[Threat Model_29]] - degree 8, connects to 1 community
+- [[D - Denial of Service]] - degree 4, connects to 1 community

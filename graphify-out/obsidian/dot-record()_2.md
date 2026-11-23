@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "_make_proxy()"
-location: "L114"
+community: "test_module_stats.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_module_statspy
 ---
 
 # .record()
 
 ## Connections
-- [[dot-_hash_content()]] - `calls` [EXTRACTED]
-- [[Create a new ledger entry          Args             source Source identifier (]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerEntry_1]] - `references` [EXTRACTED]
+- [[Decision]] - `calls` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[Record one enforcement decision for ``module``. Never raises an…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "Approval Queue (human-in-the-loop)"
+community: "DockerEngine"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Approval_Queue_human-in-the-loop
+  - community/DockerEngine
 ---
 
 # .push()
 
 ## Connections
-- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
+- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
 - [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Approval_Queue_human-in-the-loop
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

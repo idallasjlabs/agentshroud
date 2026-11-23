@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "AlertDispatcher"
 location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/AlertDispatcher
 ---
 
 # .test_alert_dispatcher_concurrent_dispatch()
@@ -14,6 +14,7 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `calls` [INFERRED]
 - [[Concurrent alert dispatch shouldn't lose or corrupt alerts.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency]] - `method` [EXTRACTED]
+- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[dispatch()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

@@ -1,16 +1,14 @@
 ---
 type: community
-cohesion: 1.00
 members: 1
 ---
 
 # Whitespace/EOF fixers exclude vendored SCAP datastream
 
-**Cohesion:** 1.00 - tightly connected
 **Members:** 1 nodes
 
 ## Members
-- [[markmap-mcp-server (MCP server)]] - concept - docker/config/hermes/skills/i-mm/SKILL.md
+- [[WhitespaceEOF fixers exclude vendored SCAP datastream]] - rationale - .pre-commit-config.yaml
 
 ## Live Query (requires Dataview plugin)
 
