@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 619"
+community: "Security Implementation Verification"
 location: "L273"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_619
+  - community/Security_Implementation_Verification
 ---
 
 # 📋 Compliance Checklist
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Security Implementation Verification]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_619
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification

@@ -1,18 +1,17 @@
 ---
 source_file: "docs/security/SECURITY-IMPLEMENTATION-VERIFICATION.md"
 type: "document"
-community: "Community 619"
+community: "Security Implementation Verification"
 location: "L210"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_619
+  - community/Security_Implementation_Verification
 ---
 
 # ❌ Removed Files (Outdated)
 
 ## Connections
-- [[Current Files Status]] - `contains` [EXTRACTED]
 - [[📁 Current File Status]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_619
+#graphify/document #graphify/EXTRACTED #community/Security_Implementation_Verification

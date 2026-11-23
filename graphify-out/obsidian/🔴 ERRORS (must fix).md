@@ -1,18 +1,19 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
 type: "document"
-community: "Community 153"
-location: "L48"
+community: "2. Security Analysis"
+location: "L30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_153
+  - community/2_Security_Analysis
 ---
 
 # 🔴 ERRORS (must fix)
 
 ## Connections
-- [[3. Round 2 Findings]] - `contains` [EXTRACTED]
-- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - `contains` [EXTRACTED]
+- [[2. Findings]] - `contains` [EXTRACTED]
+- [[E1 YAML indentation error in `docker-compose.pi.yml`]] - `contains` [EXTRACTED]
+- [[E2 YAML indentation error in `docker-compose.trillian.yml`]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_153
+#graphify/document #graphify/EXTRACTED #community/2_Security_Analysis

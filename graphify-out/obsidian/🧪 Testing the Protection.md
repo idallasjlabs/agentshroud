@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 270"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L171"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # 🧪 Testing the Protection
@@ -18,4 +18,4 @@ tags:
 - [[Test 2 Via Telegram (Should Be Blocked)]] - `contains` [EXTRACTED]
 - [[Test 3 Check Audit Log]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_270
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

@@ -1,19 +1,18 @@
 ---
-source_file: "docs/planning/reviews/phase-review-2026-03-05.md"
+source_file: "docs/planning/reviews/phase-review-2026-03-05-r2.md"
 type: "document"
-community: "Community 840"
-location: "L30"
+community: "AgentShroud Phase Review — 2026-03-05 (Round 2)"
+location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_840
+  - community/AgentShroud_Phase_Review__2026-03-05_Round_2
 ---
 
 # 🔴 ERRORS (must fix)
 
 ## Connections
-- [[2. Findings]] - `contains` [EXTRACTED]
-- [[E1 YAML indentation error in `docker-compose.pi.yml`]] - `contains` [EXTRACTED]
-- [[E2 YAML indentation error in `docker-compose.trillian.yml`]] - `contains` [EXTRACTED]
+- [[3. Round 2 Findings]] - `contains` [EXTRACTED]
+- [[E1 Tailscale sidecar on internal-only network cannot reach control plane]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_840
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Phase_Review__2026-03-05_Round_2
