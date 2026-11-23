@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/session-logs/SKILL.md"
 type: "document"
-community: "Community 273"
+community: "Common Queries"
 location: "L34"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_273
+  - community/Common_Queries
 ---
 
 # List all sessions by date and size
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Queries]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_273
+#graphify/document #graphify/EXTRACTED #community/Common_Queries

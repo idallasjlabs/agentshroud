@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_monitor.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "Community 677"
-location: "L27"
+community: "forwarder.py"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_677
+  - community/forwarderpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[egress_monitor.py_2]] - `contains` [EXTRACTED]
+- [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_677
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

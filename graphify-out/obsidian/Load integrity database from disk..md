@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "Community 16"
+community: "MemoryIntegrityMonitor"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/MemoryIntegrityMonitor
 ---
 
 # Load integrity database from disk.
 
 ## Connections
-- [[._load_integrity_database()]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_integrity_database()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

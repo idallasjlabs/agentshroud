@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/log_sanitizer.py.md"
 type: "document"
-community: "Community 675"
-location: "L25"
+community: "log_sanitizer.py"
+location: "L26"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_675
+  - community/log_sanitizerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[browser_security.py_2]] - `contains` [EXTRACTED]
+- [[log_sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_675
+#graphify/document #graphify/EXTRACTED #community/log_sanitizerpy

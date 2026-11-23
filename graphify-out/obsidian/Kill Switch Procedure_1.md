@@ -1,26 +1,19 @@
 ---
 source_file: "docs/vault/08 - Runbooks/Kill Switch Procedure.md"
 type: "document"
-community: "Community 741"
-location: "L9"
+community: "Architecture Overview.md"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_741
+  - community/Architecture_Overviewmd
 ---
 
-# Kill Switch Procedure
+# Kill Switch Procedure.md
 
 ## Connections
-- [[Kill Switch Actions]] - `contains` [EXTRACTED]
-- [[Kill Switch Monitoring]] - `contains` [EXTRACTED]
 - [[Kill Switch Procedure]] - `contains` [EXTRACTED]
-- [[Method 1 Dashboard (Recommended)]] - `contains` [EXTRACTED]
-- [[Method 2 API]] - `contains` [EXTRACTED]
-- [[Method 3 Script]] - `contains` [EXTRACTED]
-- [[Method 4 Docker Direct (Last Resort)]] - `contains` [EXTRACTED]
-- [[Post-Kill Switch Procedure]] - `contains` [EXTRACTED]
-- [[Related Notes_68]] - `contains` [EXTRACTED]
-- [[When to Use]] - `contains` [EXTRACTED]
+- [[Quick Reference]] - `references` [EXTRACTED]
+- [[Shutdown & Recovery_1]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_741
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overviewmd

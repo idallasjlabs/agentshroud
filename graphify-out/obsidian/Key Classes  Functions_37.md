@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/egress_config.py.md"
+source_file: "docs/vault/02 - Modules/Runtime/config.py.md"
 type: "document"
-community: "Community 676"
-location: "L28"
+community: "config.py"
+location: "L21"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_676
+  - community/configpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[egress_config.py_2]] - `contains` [EXTRACTED]
+- [[config.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_676
+#graphify/document #graphify/EXTRACTED #community/configpy

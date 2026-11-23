@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Community 1284"
+community: "httpx"
 location: "L29"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1284
+  - community/httpx
 ---
 
 # Key Features Used
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[httpx]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1284
+#graphify/document #graphify/EXTRACTED #community/httpx

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/env_guard.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/sidecar.py.md"
 type: "document"
-community: "Community 456"
-location: "L30"
+community: "sidecar.py"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_456
+  - community/sidecarpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[env_guard.py_2]] - `contains` [EXTRACTED]
+- [[sidecar.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_456
+#graphify/document #graphify/EXTRACTED #community/sidecarpy

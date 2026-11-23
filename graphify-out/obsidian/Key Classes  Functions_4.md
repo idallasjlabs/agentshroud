@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/models.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/prompt_guard.py.md"
 type: "document"
-community: "Community 556"
-location: "L21"
+community: "prompt_guard.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_556
+  - community/prompt_guardpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[models.py_3]] - `contains` [EXTRACTED]
+- [[prompt_guard.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_556
+#graphify/document #graphify/EXTRACTED #community/prompt_guardpy

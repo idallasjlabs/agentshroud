@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "Community 52"
+community: "AgentRegistry"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_52
+  - community/AgentRegistry
 ---
 
 # List all registered agent IDs.
 
 ## Connections
-- [[.list_agents()]] - `rationale_for` [EXTRACTED]
+- [[dot-list_agents()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_52
+#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry

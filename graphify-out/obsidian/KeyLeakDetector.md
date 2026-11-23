@@ -1,48 +1,30 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "Community 684"
+community: "KeyVault"
 location: "L159"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_684
+  - graphify/EXTRACTED
+  - community/KeyVault
 ---
 
 # KeyLeakDetector
 
 ## Connections
-- [[.__init__()_104]] - `method` [EXTRACTED]
-- [[._make_vault_pipeline()]] - `calls` [EXTRACTED]
-- [[.scan_outbound()]] - `method` [EXTRACTED]
-- [[.test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
-- [[.test_detect_key_in_outbound()]] - `calls` [EXTRACTED]
-- [[.test_leak_detection_logged()]] - `calls` [EXTRACTED]
-- [[.test_no_leak_clean_message()]] - `calls` [EXTRACTED]
-- [[TestAuditChain]] - `uses` [INFERRED]
-- [[TestAuditChainBounded]] - `uses` [INFERRED]
-- [[TestContextGuardInPipeline]] - `uses` [INFERRED]
-- [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
-- [[TestEnvelopeSignerInPipeline]] - `uses` [INFERRED]
-- [[TestInboundPIIOwnerExemption]] - `uses` [INFERRED]
-- [[TestKeyInjection]] - `uses` [INFERRED]
+- [[dot-__init__()_35]] - `method` [EXTRACTED]
+- [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
+- [[dot-scan_outbound()]] - `method` [EXTRACTED]
+- [[dot-test_detect_api_key_patterns()]] - `calls` [EXTRACTED]
+- [[dot-test_detect_key_in_outbound()]] - `calls` [EXTRACTED]
+- [[dot-test_leak_detection_logged()]] - `calls` [EXTRACTED]
+- [[dot-test_no_leak_clean_message()]] - `calls` [EXTRACTED]
 - [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
-- [[TestKeyRedaction]] - `uses` [INFERRED]
-- [[TestKeyRotation]] - `uses` [INFERRED]
-- [[TestKeyScoping]] - `uses` [INFERRED]
-- [[TestKeyStorage]] - `uses` [INFERRED]
-- [[TestKeyVaultConfig]] - `uses` [INFERRED]
-- [[TestOutboundFilterResultBinding]] - `uses` [INFERRED]
-- [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
-- [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
-- [[TestTrustViolationRecording]] - `uses` [INFERRED]
-- [[_FakeAttack]] - `uses` [INFERRED]
-- [[_FakeIntegrityScore]] - `uses` [INFERRED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
-- [[lifespan()_1]] - `calls` [EXTRACTED]
+- [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_684
+#graphify/code #graphify/EXTRACTED #community/KeyVault

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/canary.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
 type: "document"
-community: "Community 730"
-location: "L26"
+community: "trivy_report.py"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_730
+  - community/trivy_reportpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_730
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

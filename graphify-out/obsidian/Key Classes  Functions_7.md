@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/ssh_config.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/ledger.py.md"
 type: "document"
-community: "Community 820"
-location: "L21"
+community: "ledger.py"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_820
+  - community/ledgerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[ssh_config.py_2]] - `contains` [EXTRACTED]
+- [[ledger.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_820
+#graphify/document #graphify/EXTRACTED #community/ledgerpy

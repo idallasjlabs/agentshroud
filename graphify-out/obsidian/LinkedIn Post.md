@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.0/RELEASE-ANNOUNCEMENT-v1.0.0.md"
 type: "document"
-community: "Community 386"
+community: "AgentShroud Security Overview v0.8.0"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_386
+  - community/AgentShroud_Security_Overview_v080
 ---
 
 # LinkedIn Post
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud v1.0.0 Fortress Release Announcement]] - `contains` [EXTRACTED]
 - [[AgentShroud™ v1.0.0 Fortress — Release Announcement]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_386
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Overview_v080

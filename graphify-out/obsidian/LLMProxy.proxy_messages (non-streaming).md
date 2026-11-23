@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "Community 129"
+community: "LLMProxy.proxy_messages (non-streaming)"
 location: "L834-L1200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_129
+  - community/LLMProxyproxy_messages_non-streaming
 ---
 
 # LLMProxy.proxy_messages (non-streaming)
 
 ## Connections
-- [[LLMProxy]] - `implements` [EXTRACTED]
 - [[LLMProxy._build_timeout_fallback_response]] - `calls` [EXTRACTED]
 - [[LLMProxy._emit_failover_notice]] - `calls` [EXTRACTED]
 - [[LLMProxy._enforce_tool_acl]] - `calls` [EXTRACTED]
@@ -34,9 +33,9 @@ tags:
 - [[LLMProxy._widen_optional_tool_param_types]] - `calls` [EXTRACTED]
 - [[LLMProxy.proxy_messages_streaming]] - `semantically_similar_to` [EXTRACTED]
 - [[LOCAL_MODEL_ROUTES]] - `references` [EXTRACTED]
-- [[google_api_proxy]] - `calls` [EXTRACTED]
-- [[ollama_api_proxy]] - `calls` [EXTRACTED]
-- [[test_fieldflare_route_strips_unsupported_fields_non_streaming]] - `calls` [EXTRACTED]
-- [[test_non_fieldflare_local_route_keeps_fields]] - `calls` [EXTRACTED]
+- [[google_api_proxy()]] - `calls` [EXTRACTED]
+- [[ollama_api_proxy()]] - `calls` [EXTRACTED]
+- [[test_fieldflare_route_strips_unsupported_fields_non_streaming()]] - `calls` [EXTRACTED]
+- [[test_non_fieldflare_local_route_keeps_fields()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_129
+#graphify/code #graphify/EXTRACTED #community/LLMProxyproxy_messages_non-streaming

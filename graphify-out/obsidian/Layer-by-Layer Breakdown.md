@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Data Flow.md"
 type: "document"
-community: "Community 1219"
+community: "Layer-by-Layer Breakdown"
 location: "L94"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1219
+  - community/Layer-by-Layer_Breakdown
 ---
 
 # Layer-by-Layer Breakdown
@@ -24,8 +24,5 @@ tags:
 - [[8. Security Pipeline]] - `contains` [EXTRACTED]
 - [[9. Proxy Routing]] - `contains` [EXTRACTED]
 - [[Data Flow_1]] - `contains` [EXTRACTED]
-- [[EgressFilter_3]] - `contains` [EXTRACTED]
-- [[`SecurityPipeline`]] - `contains` [EXTRACTED]
-- [[approval_queue.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1219
+#graphify/document #graphify/EXTRACTED #community/Layer-by-Layer_Breakdown

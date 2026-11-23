@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/01 - Architecture/Shutdown & Recovery.md"
 type: "document"
-community: "Community 1219"
+community: "Shutdown & Recovery"
 location: "L154"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1219
+  - community/Shutdown__Recovery
 ---
 
 # Ledger Database
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Data Integrity After Crash]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1219
+#graphify/document #graphify/EXTRACTED #community/Shutdown__Recovery

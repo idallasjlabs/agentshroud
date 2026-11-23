@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/security.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/url_analyzer.py.md"
 type: "document"
-community: "Community 727"
-location: "L23"
+community: "url_analyzer.py"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_727
+  - community/url_analyzerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[security.py_2]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_727
+#graphify/document #graphify/EXTRACTED #community/url_analyzerpy

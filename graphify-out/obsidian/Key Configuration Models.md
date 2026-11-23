@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Community 1082"
+community: "Pydantic"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1082
+  - community/Pydantic
 ---
 
 # Key Configuration Models
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Pydantic]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1082
+#graphify/document #graphify/EXTRACTED #community/Pydantic

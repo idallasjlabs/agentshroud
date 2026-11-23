@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/middleware.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/health_report.py.md"
 type: "document"
-community: "Community 592"
-location: "L26"
+community: "Function Details"
+location: "L28"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_592
+  - community/Function_Details
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[middleware.py_2]] - `contains` [EXTRACTED]
+- [[health_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_592
+#graphify/document #graphify/EXTRACTED #community/Function_Details

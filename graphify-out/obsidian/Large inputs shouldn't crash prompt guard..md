@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 84"
+community: "ResourceGuard"
 location: "L1080"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_84
+  - community/ResourceGuard
 ---
 
 # Large inputs shouldn't crash prompt guard.
 
 ## Connections
-- [[.test_prompt_guard_large_input()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_prompt_guard_large_input()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_84
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

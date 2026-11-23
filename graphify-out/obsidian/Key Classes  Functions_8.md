@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/version_routes.py.md"
+source_file: "docs/vault/02 - Modules/Gateway Core/sanitizer.py.md"
 type: "document"
-community: "Community 594"
-location: "L22"
+community: "sanitizer.py"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_594
+  - community/sanitizerpy
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[version_routes.py_2]] - `contains` [EXTRACTED]
+- [[sanitizer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_594
+#graphify/document #graphify/EXTRACTED #community/sanitizerpy

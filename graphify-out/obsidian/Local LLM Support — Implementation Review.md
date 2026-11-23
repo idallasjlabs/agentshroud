@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/LOCAL_LLM_REVIEW.md"
 type: "document"
-community: "Community 798"
+community: "Local LLM Support — Implementation Review"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_798
+  - community/Local_LLM_Support__Implementation_Review
 ---
 
 # Local LLM Support — Implementation Review
@@ -23,7 +23,7 @@ tags:
 - [[7. Test Coverage (`gatewayteststest_llm_proxy.py`)]] - `contains` [EXTRACTED]
 - [[8. Telegram Integration]] - `contains` [EXTRACTED]
 - [[9. Bot Startup Flow (local mode)]] - `contains` [EXTRACTED]
-- [[Architecture Overview]] - `contains` [EXTRACTED]
+- [[Architecture Overview_3]] - `contains` [EXTRACTED]
 - [[LOCAL_LLM_REVIEW]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_798
+#graphify/document #graphify/EXTRACTED #community/Local_LLM_Support__Implementation_Review

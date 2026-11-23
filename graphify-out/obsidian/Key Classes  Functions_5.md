@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Gateway Core/router.py.md"
+source_file: "docs/vault/02 - Modules/Security Modules/subagent_monitor.py.md"
 type: "document"
-community: "Community 705"
-location: "L23"
+community: "Function Details"
+location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_705
+  - community/Function_Details
 ---
 
 # Key Classes / Functions
 
 ## Connections
-- [[router.py_3]] - `contains` [EXTRACTED]
+- [[subagent_monitor.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_705
+#graphify/document #graphify/EXTRACTED #community/Function_Details

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/i-sec/SKILL.md"
+source_file: ".cursor/agents/i-sec.md"
 type: "document"
-community: "Community 744"
-location: "L39"
+community: "Skill: Security Review (SEC)"
+location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_744
+  - community/Skill_Security_Review_SEC
 ---
 
 # Layer 3: Network Security
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Review Layers_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_744
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "EncryptedStore"
 location: "L747"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/EncryptedStore
 ---
 
 # Key rotation should re-encrypt all blobs.
 
 ## Connections
-- [[.test_key_rotation()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_key_rotation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/EncryptedStore

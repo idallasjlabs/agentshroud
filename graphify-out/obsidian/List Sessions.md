@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "Community 576"
+community: "tmux Session Control"
 location: "L41"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_576
+  - community/tmux_Session_Control
 ---
 
 # List Sessions
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Commands_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_576
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

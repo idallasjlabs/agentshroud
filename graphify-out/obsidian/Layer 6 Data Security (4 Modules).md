@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Community 301"
+community: "Security Module Inventory"
 location: "L185"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_301
+  - community/Security_Module_Inventory
 ---
 
 # Layer 6: Data Security (4 Modules)
@@ -18,4 +18,4 @@ tags:
 - [[24. Audit Trail Manager]] - `contains` [EXTRACTED]
 - [[Security Module Inventory]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_301
+#graphify/document #graphify/EXTRACTED #community/Security_Module_Inventory

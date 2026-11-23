@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/02 - Modules/Runtime/podman_engine.py.md"
 type: "document"
-community: "Community 613"
+community: "Function Details"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_613
+  - community/Function_Details
 ---
 
 # Key Differences from DockerEngine
 
 ## Connections
-- [[podman_engine.py_2]] - `contains` [EXTRACTED]
+- [[podman_engine.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_613
+#graphify/document #graphify/EXTRACTED #community/Function_Details

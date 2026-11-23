@@ -1,17 +1,17 @@
 ---
 source_file: ".agents/skills/browser/scripts/browse.py"
 type: "rationale"
-community: "Community 149"
+community: "SecureBrowser"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_149
+  - community/SecureBrowser
 ---
 
 # Log security-related events
 
 ## Connections
-- [[._log_security_event()]] - `rationale_for` [EXTRACTED]
+- [[dot-_log_security_event()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_149
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

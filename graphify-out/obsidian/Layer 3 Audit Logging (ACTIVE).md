@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 type: "document"
-community: "Community 270"
+community: "CREDENTIAL-PROTECTION-IMPLEMENTED.md"
 location: "L59"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_270
+  - community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd
 ---
 
 # Layer 3: Audit Logging (ACTIVE)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[🛡️ Protection Layers]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_270
+#graphify/document #graphify/EXTRACTED #community/CREDENTIAL-PROTECTION-IMPLEMENTEDmd

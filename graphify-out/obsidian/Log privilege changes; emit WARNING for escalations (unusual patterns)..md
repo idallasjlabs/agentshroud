@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L360"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Log privilege changes; emit WARNING for escalations (unusual patterns).
 
 ## Connections
-- [[.audit_privilege_change()]] - `rationale_for` [EXTRACTED]
+- [[dot-audit_privilege_change()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

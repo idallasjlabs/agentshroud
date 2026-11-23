@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "Community 978"
+community: "ingest_api/main.py"
 location: "L2086"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_978
+  - community/ingest_api/mainpy
 ---
 
 # List quarantined blocked inbound messages for admin review.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_blocked_message_quarantine()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_978
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
