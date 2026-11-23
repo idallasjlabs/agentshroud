@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "Community 7"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_7
+  - community/ingest_api/configpy
 ---
 
 # test_ssh_endpoints.py
 
 ## Connections
 - [[ApprovalQueue]] - `imports` [EXTRACTED]
-- [[ApprovalQueueConfig_2]] - `imports` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `imports` [EXTRACTED]
 - [[DataLedger]] - `imports` [EXTRACTED]
-- [[GatewayConfig_1]] - `imports` [EXTRACTED]
+- [[GatewayConfig]] - `imports` [EXTRACTED]
 - [[LedgerConfig]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
@@ -31,9 +31,18 @@ tags:
 - [[TestSSHHosts]] - `contains` [EXTRACTED]
 - [[TestSSHRequireApprovalFalse]] - `contains` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `contains` [EXTRACTED]
-- [[auth_headers()_3]] - `contains` [EXTRACTED]
-- [[client()_17]] - `contains` [EXTRACTED]
-- [[ssh_config()]] - `contains` [EXTRACTED]
+- [[Tests for SSH API endpoints]] - `rationale_for` [EXTRACTED]
+- [[auth_headers()_2]] - `contains` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
+- [[ledger.py_2]] - `imports_from` [EXTRACTED]
+- [[proxy.py]] - `imports_from` [EXTRACTED]
+- [[queue.py]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
+- [[ssh_config()_1]] - `contains` [EXTRACTED]
+- [[ssh_config.py_2]] - `imports_from` [EXTRACTED]
 - [[test_config_with_ssh()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_7
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

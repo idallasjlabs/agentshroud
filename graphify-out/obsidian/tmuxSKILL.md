@@ -1,20 +1,17 @@
 ---
 source_file: "skills/openclaw/tmux/SKILL.md"
 type: "document"
-community: "test_voice_gateway.py (2)"
+community: "tmux Session Control"
 location: "L1"
 tags:
   - graphify/document
-  - graphify/INFERRED
-  - community/test_voice_gatewaypy_2
+  - graphify/EXTRACTED
+  - community/tmux_Session_Control
 ---
 
 # tmux/SKILL.md
 
 ## Connections
-- [[OpenClaw Skill Metadata Schema (frontmatter convention)]] - `conceptually_related_to` [INFERRED]
-- [[find-sessions.sh]] - `conceptually_related_to` [INFERRED]
 - [[tmux Session Control]] - `contains` [EXTRACTED]
-- [[wait-for-text.sh]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/INFERRED #community/test_voice_gatewaypy_2
+#graphify/document #graphify/EXTRACTED #community/tmux_Session_Control

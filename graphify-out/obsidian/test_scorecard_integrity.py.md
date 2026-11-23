@@ -1,23 +1,25 @@
 ---
 source_file: "gateway/tests/test_scorecard_integrity.py"
 type: "code"
-community: "Community 207"
+community: "test_scorecard_integrity.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_207
+  - community/test_scorecard_integritypy
 ---
 
 # test_scorecard_integrity.py
 
 ## Connections
+- [[Scorecard integrity tests — verify no stubemptystale data can inflate scores.…]] - `rationale_for` [EXTRACTED]
 - [[_clean_clamav()]] - `contains` [EXTRACTED]
 - [[_clean_trivy()]] - `contains` [EXTRACTED]
 - [[_not_run_clamav()]] - `contains` [EXTRACTED]
 - [[_not_run_trivy()]] - `contains` [EXTRACTED]
 - [[_score_malware_defense()]] - `imports` [EXTRACTED]
 - [[_score_vulnerability_management()]] - `imports` [EXTRACTED]
+- [[scanner_integration.py]] - `imports_from` [EXTRACTED]
 - [[test_empty_collaborator_activity_no_score()]] - `contains` [EXTRACTED]
 - [[test_empty_key_rotation_log_no_score()]] - `contains` [EXTRACTED]
 - [[test_host_hardening_empty_audit_log_no_bonus()]] - `contains` [EXTRACTED]
@@ -34,4 +36,4 @@ tags:
 - [[test_vuln_not_run_scores_1()]] - `contains` [EXTRACTED]
 - [[test_vuln_stale_report_scores_1()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_207
+#graphify/code #graphify/EXTRACTED #community/test_scorecard_integritypy

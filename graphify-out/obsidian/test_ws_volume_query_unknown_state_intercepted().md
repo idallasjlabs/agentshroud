@@ -1,20 +1,25 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 101"
+community: "asyncio"
 location: "L2760"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_101
+  - community/asyncio
 ---
 
 # test_ws_volume_query_unknown_state_intercepted()
 
 ## Connections
-- [[Before any set, 'what is the volume' speaks the unknown-state reply and     stil]] - `rationale_for` [EXTRACTED]
+- [[Before any set, 'what is the volume' speaks the unknown-state reply and still…]] - `rationale_for` [EXTRACTED]
+- [[_agent_must_not_be_called()_9]] - `contains` [EXTRACTED]
+- [[_agent_must_not_be_called()_7]] - `indirect_call` [INFERRED]
+- [[_capture_synth()_11]] - `contains` [EXTRACTED]
+- [[_capture_synth()]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
+- [[asyncio_50]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_101
+#graphify/code #graphify/EXTRACTED #community/asyncio

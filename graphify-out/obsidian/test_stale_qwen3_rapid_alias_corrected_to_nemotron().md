@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_model_resolver.py"
 type: "code"
-community: "Community 134"
+community: "test_hermes_model_resolver.py"
 location: "L313"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_134
+  - graphify/EXTRACTED
+  - community/test_hermes_model_resolverpy
 ---
 
 # test_stale_qwen3_rapid_alias_corrected_to_nemotron()
@@ -15,4 +15,4 @@ tags:
 - [[_apply_stale_alias_correction()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_134
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

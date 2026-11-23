@@ -1,12 +1,12 @@
 ---
 source_file: "tests/startup_smoke/test_sunday_upgrade_session_guard.sh"
 type: "code"
-community: "Community 2206"
+community: "test_sunday_upgrade_session_guard.sh"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_2206
+  - community/test_sunday_upgrade_session_guardsh
 ---
 
 # test_sunday_upgrade_session_guard.sh
@@ -15,4 +15,4 @@ tags:
 - [[extract_fn()]] - `defines` [EXTRACTED]
 - [[test_sunday_upgrade_session_guard.sh script]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_2206
+#graphify/code #graphify/EXTRACTED #community/test_sunday_upgrade_session_guardsh

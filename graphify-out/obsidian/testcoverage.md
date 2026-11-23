@@ -1,17 +1,17 @@
 ---
 source_file: "browser-extension/package.json"
 type: "code"
-community: "Community 693"
+community: "browser-extension/package.json"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_693
+  - community/browser-extension/packagejson
 ---
 
 # test:coverage
 
 ## Connections
-- [[scripts_1]] - `contains` [EXTRACTED]
+- [[scripts_4]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_693
+#graphify/code #graphify/EXTRACTED #community/browser-extension/packagejson

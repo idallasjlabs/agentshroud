@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 22"
+community: "AgentRegistry"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_22
+  - community/AgentRegistry
 ---
 
 # test_security_hardening.py
@@ -17,7 +17,7 @@ tags:
 - [[ContainerSnapshot]] - `imports` [EXTRACTED]
 - [[DriftDetector]] - `imports` [EXTRACTED]
 - [[EgressAction]] - `imports` [EXTRACTED]
-- [[EgressFilter_1]] - `imports` [EXTRACTED]
+- [[EgressFilter]] - `imports` [EXTRACTED]
 - [[EgressFilterConfig]] - `imports` [EXTRACTED]
 - [[EgressPolicy]] - `imports` [EXTRACTED]
 - [[EncryptedStore]] - `imports` [EXTRACTED]
@@ -31,16 +31,22 @@ tags:
 - [[TestEgressFilter]] - `contains` [EXTRACTED]
 - [[TestEgressSSRF]] - `contains` [EXTRACTED]
 - [[TestEncryptedStore]] - `contains` [EXTRACTED]
-- [[TestPromptGuard_1]] - `contains` [EXTRACTED]
+- [[TestPromptGuard]] - `contains` [EXTRACTED]
 - [[TestPromptGuardEvasion]] - `contains` [EXTRACTED]
 - [[TestSecureZero]] - `contains` [EXTRACTED]
 - [[TestTrustManager]] - `contains` [EXTRACTED]
 - [[TestTrustManagerHardened]] - `contains` [EXTRACTED]
+- [[Tests for Phase 7 Security Hardening modules. Tests encrypted_store,…]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
 - [[TrustConfig]] - `imports` [EXTRACTED]
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
-- [[TrustManager_1]] - `imports` [EXTRACTED]
+- [[TrustManager]] - `imports` [EXTRACTED]
 - [[_secure_zero()]] - `imports` [EXTRACTED]
-- [[test_prompt_guard.py]] - `semantically_similar_to` [INFERRED]
+- [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
+- [[drift_detector.py]] - `imports_from` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports_from` [EXTRACTED]
+- [[encrypted_store.py]] - `imports_from` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_22
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

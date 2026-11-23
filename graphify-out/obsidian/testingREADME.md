@@ -1,12 +1,12 @@
 ---
 source_file: "docs/testing/README.md"
 type: "document"
-community: "graphify reference: transcribe video and audio"
+community: "Testing Documentation"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/graphify_reference_transcribe_video_and_audio
+  - community/Testing_Documentation
 ---
 
 # testing/README.md
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Testing Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/graphify_reference_transcribe_video_and_audio
+#graphify/document #graphify/EXTRACTED #community/Testing_Documentation

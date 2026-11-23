@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "Community 455"
+community: "ToolResultSanitizerConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/ToolResultSanitizerConfig
 ---
 
 # test_tool_result_sanitizer_enhanced.py
@@ -15,8 +15,9 @@ tags:
 - [[TestIntegration_1]] - `contains` [EXTRACTED]
 - [[TestToolResultSanitizer_1]] - `contains` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `contains` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `imports` [EXTRACTED]
+- [[ToolResultSanitizer]] - `imports` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `imports` [EXTRACTED]
 - [[sanitize_tool_result()]] - `imports` [EXTRACTED]
+- [[tool_result_sanitizer_enhanced.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_455
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizerConfig

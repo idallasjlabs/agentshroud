@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "Community 220"
+community: "test_clamav_pipeline.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_clamav_pipelinepy
 ---
 
 # test_scan_bytes_empty_input()
 
 ## Connections
+- [[asyncio_33]] - `references` [EXTRACTED]
 - [[scan_bytes()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

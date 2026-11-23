@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_egress_endpoints.py"
 type: "code"
-community: "Community 85"
+community: "test_soc_egress_endpoints.py"
 location: "L580"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_85
+  - community/test_soc_egress_endpointspy
 ---
 
 # test_soc_scanners_recent_limit()
 
 ## Connections
 - [[Limit param caps the number of returned items.]] - `rationale_for` [EXTRACTED]
+- [[asyncio_51]] - `references` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_85
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

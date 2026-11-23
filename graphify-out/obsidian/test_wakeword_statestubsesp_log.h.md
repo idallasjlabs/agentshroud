@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/esp_log.h"
 type: "code"
-community: "ToolACLEnforcer.check_tool_rate_limit"
+community: "test_wakeword_state/stubs/esp_log.h"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolACLEnforcercheck_tool_rate_limit
+  - community/test_wakeword_state/stubs/esp_logh
 ---
 
 # test_wakeword_state/stubs/esp_log.h
 
-#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcercheck_tool_rate_limit
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/esp_logh

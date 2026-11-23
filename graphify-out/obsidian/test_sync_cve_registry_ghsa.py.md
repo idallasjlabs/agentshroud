@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "Community 1424"
+community: "test_sync_cve_registry_ghsa.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1424
+  - community/test_sync_cve_registry_ghsapy
 ---
 
 # test_sync_cve_registry_ghsa.py
@@ -20,10 +20,11 @@ tags:
 - [[TestNvdReportOnly]] - `contains` [EXTRACTED]
 - [[TestPerAgentIsolation]] - `contains` [EXTRACTED]
 - [[TestProcessGhsaAdvisories]] - `contains` [EXTRACTED]
-- [[TestSerialization_2]] - `contains` [EXTRACTED]
+- [[TestSerialization]] - `contains` [EXTRACTED]
 - [[TestSnapshotSmoke]] - `contains` [EXTRACTED]
+- [[Tests for scriptssync-cve-registry.py — Phase 1 GHSA under_review auto-…]] - `rationale_for` [EXTRACTED]
 - [[_adv()]] - `contains` [EXTRACTED]
 - [[_exec_registry()]] - `contains` [EXTRACTED]
 - [[_sync()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1424
+#graphify/code #graphify/EXTRACTED #community/test_sync_cve_registry_ghsapy

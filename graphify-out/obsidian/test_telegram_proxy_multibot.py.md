@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "Community 105"
+community: "BotConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_105
+  - community/BotConfig
 ---
 
 # test_telegram_proxy_multibot.py
@@ -19,7 +19,8 @@ tags:
 - [[TestTelegramProxyRouteMultiBot]] - `contains` [EXTRACTED]
 - [[TestTelegramTokenRegistry]] - `contains` [EXTRACTED]
 - [[TestTelegramTokenRegistryRebuildOnMiss]] - `contains` [EXTRACTED]
+- [[Tests for multi-bot Telegram token registry in the gateway route handler. Phase…]] - `rationale_for` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
-- [[telegram_proxy.py]] - `imports_from` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_105
+#graphify/code #graphify/EXTRACTED #community/BotConfig

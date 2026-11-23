@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_stt_model_ab.py"
 type: "code"
-community: "Community 305"
+community: "test_voice_stt_model_ab.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_305
+  - community/test_voice_stt_model_abpy
 ---
 
 # test_voice_stt_model_ab.py
 
 ## Connections
+- [[SCRUM-57 — STT model AB (Whisper small.en ↔ base.en). Covers the config-driven…]] - `rationale_for` [EXTRACTED]
 - [[stt.py]] - `imports` [EXTRACTED]
 - [[test_module_model_size_defaults_to_small_en()]] - `contains` [EXTRACTED]
 - [[test_module_model_size_env_override()]] - `contains` [EXTRACTED]
@@ -28,4 +29,4 @@ tags:
 - [[test_transcribe_emits_latency_record()]] - `contains` [EXTRACTED]
 - [[test_valid_model_sizes_contains_documented_ab_set()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_305
+#graphify/code #graphify/EXTRACTED #community/test_voice_stt_model_abpy

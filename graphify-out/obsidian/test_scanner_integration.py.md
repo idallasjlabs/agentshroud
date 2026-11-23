@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Community 67"
+community: "test_scanner_integration.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_67
+  - community/test_scanner_integrationpy
 ---
 
 # test_scanner_integration.py
 
 ## Connections
-- [[TestAggregateResults]] - `contains` [EXTRACTED]
-- [[TestComputeScorecard]] - `contains` [EXTRACTED]
+- [[TestAggregateResults_1]] - `contains` [EXTRACTED]
+- [[TestComputeScorecard_1]] - `contains` [EXTRACTED]
 - [[TestGetClamavSummary]] - `contains` [EXTRACTED]
 - [[TestGetFalcoSummary]] - `contains` [EXTRACTED]
 - [[TestGetOpenscapSummary]] - `contains` [EXTRACTED]
@@ -21,19 +21,20 @@ tags:
 - [[TestGetTrivyImageSummaries]] - `contains` [EXTRACTED]
 - [[TestGetTrivySummary]] - `contains` [EXTRACTED]
 - [[TestGetWazuhSummary]] - `contains` [EXTRACTED]
-- [[TestLoadLatestJson]] - `contains` [EXTRACTED]
-- [[TestScoreComplianceAuditing]] - `contains` [EXTRACTED]
-- [[TestScoreContainerHardening]] - `contains` [EXTRACTED]
-- [[TestScoreImageIntegrity]] - `contains` [EXTRACTED]
-- [[TestScoreIncidentResponse]] - `contains` [EXTRACTED]
-- [[TestScoreLoggingMonitoring]] - `contains` [EXTRACTED]
-- [[TestScoreMalwareDefense]] - `contains` [EXTRACTED]
-- [[TestScoreNetworkSegmentation]] - `contains` [EXTRACTED]
-- [[TestScoreRuntimeProtection]] - `contains` [EXTRACTED]
-- [[TestScoreSecretsManagement]] - `contains` [EXTRACTED]
+- [[TestLoadLatestJson_1]] - `contains` [EXTRACTED]
+- [[TestScoreComplianceAuditing_1]] - `contains` [EXTRACTED]
+- [[TestScoreContainerHardening_1]] - `contains` [EXTRACTED]
+- [[TestScoreImageIntegrity_1]] - `contains` [EXTRACTED]
+- [[TestScoreIncidentResponse_1]] - `contains` [EXTRACTED]
+- [[TestScoreLoggingMonitoring_1]] - `contains` [EXTRACTED]
+- [[TestScoreMalwareDefense_1]] - `contains` [EXTRACTED]
+- [[TestScoreNetworkSegmentation_1]] - `contains` [EXTRACTED]
+- [[TestScoreRuntimeProtection_1]] - `contains` [EXTRACTED]
+- [[TestScoreSecretsManagement_1]] - `contains` [EXTRACTED]
 - [[TestScoreSecureDevelopment]] - `contains` [EXTRACTED]
-- [[TestScoreSupplyChain]] - `contains` [EXTRACTED]
-- [[TestScoreVulnerabilityManagement]] - `contains` [EXTRACTED]
+- [[TestScoreSupplyChain_1]] - `contains` [EXTRACTED]
+- [[TestScoreVulnerabilityManagement_1]] - `contains` [EXTRACTED]
+- [[Tests for gatewaysecurityscanner_integration.py — V9-T3 Scanner Aggregation.…]] - `rationale_for` [EXTRACTED]
 - [[_clamav_clean()]] - `contains` [EXTRACTED]
 - [[_clamav_infected()]] - `contains` [EXTRACTED]
 - [[_clean_trivy_report()]] - `contains` [EXTRACTED]
@@ -69,9 +70,10 @@ tags:
 - [[get_clamav_summary()]] - `imports` [EXTRACTED]
 - [[get_falco_summary()]] - `imports` [EXTRACTED]
 - [[get_openscap_summary()]] - `imports` [EXTRACTED]
-- [[get_sbom()]] - `imports` [EXTRACTED]
+- [[get_sbom()_1]] - `imports` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `imports` [EXTRACTED]
 - [[get_trivy_summary()]] - `imports` [EXTRACTED]
 - [[get_wazuh_summary()]] - `imports` [EXTRACTED]
+- [[scanner_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_67
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

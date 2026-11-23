@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "Community 154"
+community: "ToolResultInjectionScanner"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_154
+  - community/ToolResultInjectionScanner
 ---
 
 # test_tool_injection_scan.py
@@ -15,6 +15,8 @@ tags:
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[InjectionSeverity]] - `imports` [EXTRACTED]
 - [[TestToolResultInjectionScanner]] - `contains` [EXTRACTED]
+- [[Tests for ToolResultInjectionScanner.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
+- [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_154
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

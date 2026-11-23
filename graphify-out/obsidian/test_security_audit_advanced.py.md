@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "Community 0"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/PIIConfig
 ---
 
 # test_security_audit_advanced.py
@@ -22,8 +22,5 @@ tags:
 - [[TestPrivilegeEscalation]] - `contains` [EXTRACTED]
 - [[TestTimingAttacks]] - `contains` [EXTRACTED]
 - [[TestWebSecurity]] - `contains` [EXTRACTED]
-- [[session_manager.py (UserSessionManager)]] - `references` [INFERRED]
-- [[test_security_audit.py]] - `conceptually_related_to` [INFERRED]
-- [[webapi.py (POST apiintelreports)]] - `references` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,18 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 37"
+community: "AsyncMock"
 location: "L2149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_37
+  - community/AsyncMock
 ---
 
 # test_ssh_compose_success()
 
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
+- [[_ssh_compose()]] - `calls` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_37
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

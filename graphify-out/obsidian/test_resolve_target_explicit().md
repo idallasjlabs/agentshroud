@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "Community 78"
+community: "AgentTarget"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/AgentTarget
 ---
 
 # test_resolve_target_explicit()
 
 ## Connections
-- [[ForwardRequest]] - `calls` [EXTRACTED]
+- [[ForwardRequest]] - `uses` [INFERRED]
 - [[Test routing with explicit route_to]] - `rationale_for` [EXTRACTED]
+- [[asyncio_59]] - `references` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_78
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

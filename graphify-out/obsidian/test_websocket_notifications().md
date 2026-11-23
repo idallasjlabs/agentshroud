@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "Community 30"
+community: "EnhancedApprovalQueue"
 location: "L447"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_30
+  - graphify/INFERRED
+  - community/EnhancedApprovalQueue
 ---
 
 # test_websocket_notifications()
 
 ## Connections
-- [[ApprovalQueueConfig_2]] - `calls` [EXTRACTED]
-- [[ApprovalStore]] - `calls` [INFERRED]
-- [[ApprovalStore_1]] - `calls` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `uses` [INFERRED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[Test that approval events are generated for WebSocket notification.]] - `rationale_for` [EXTRACTED]
-- [[ToolRiskConfig_1]] - `calls` [EXTRACTED]
+- [[ToolRiskConfig]] - `uses` [INFERRED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_30
+#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue

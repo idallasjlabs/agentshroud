@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "Community 436"
+community: "PIIConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_436
+  - community/PIIConfig
 ---
 
 # test_telegram_proxy_outbound.py
@@ -38,9 +38,13 @@ tags:
 - [[TestTelegram400Retry]] - `contains` [EXTRACTED]
 - [[TestTrackerGetHealth]] - `contains` [EXTRACTED]
 - [[TestWebSearchLog]] - `contains` [EXTRACTED]
-- [[Tests for TelegramAPIProxy outbound security pipeline integration.  Proves that]] - `rationale_for` [EXTRACTED]
+- [[Tests for TelegramAPIProxy outbound security pipeline integration. Proves that…]] - `rationale_for` [EXTRACTED]
 - [[_make_multipart_body()]] - `contains` [EXTRACTED]
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
+- [[asyncio_30]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
+- [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_436
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

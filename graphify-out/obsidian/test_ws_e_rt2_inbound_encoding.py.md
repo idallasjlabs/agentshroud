@@ -1,27 +1,33 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "Community 24"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_24
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # test_ws_e_rt2_inbound_encoding.py
 
 ## Connections
 - [[EncodingConfig]] - `imports` [EXTRACTED]
-- [[EncodingDetector]] - `references` [EXTRACTED]
+- [[EncodingDetector]] - `imports` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `imports` [EXTRACTED]
-- [[PromptGuard]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `imports` [EXTRACTED]
+- [[SecurityPipeline]] - `imports` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `imports` [EXTRACTED]
+- [[WS-E RT-2 — Inbound encoding bypass (HIGH) regression tests. Before this fix an…]] - `rationale_for` [EXTRACTED]
 - [[_make_pipeline()_4]] - `contains` [EXTRACTED]
+- [[encoding_detector.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
+- [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_encoding_detector_decodes_rot13_injection()]] - `contains` [EXTRACTED]
 - [[test_encoding_detector_rot13_can_be_disabled()]] - `contains` [EXTRACTED]
 - [[test_encoding_detector_rot13_empty_text()]] - `contains` [EXTRACTED]
@@ -43,5 +49,6 @@ tags:
 - [[test_tool_injection_encoded_check_uses_full_ruleset()]] - `contains` [EXTRACTED]
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `contains` [EXTRACTED]
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `contains` [EXTRACTED]
+- [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_24
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

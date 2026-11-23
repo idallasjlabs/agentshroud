@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "Community 5"
+community: "ResourceGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/ResourceGuard
 ---
 
 # test_resource_guard.py
@@ -15,6 +15,7 @@ tags:
 - [[ResourceGuard]] - `imports` [EXTRACTED]
 - [[ResourceLimits]] - `imports` [EXTRACTED]
 - [[TestResourceGuard]] - `contains` [EXTRACTED]
-- [[test_resource_guard_wiring.py]] - `conceptually_related_to` [INFERRED]
+- [[Tests for Resource Exhaustion Guard]] - `rationale_for` [EXTRACTED]
+- [[resource_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

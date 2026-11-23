@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 133"
+community: "test_skill_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_133
+  - community/test_skill_guardpy
 ---
 
 # test_skill_guard.py
@@ -31,14 +31,15 @@ tags:
 - [[TestScanEntrypointInProcess]] - `contains` [EXTRACTED]
 - [[TestSecretAccess]] - `contains` [EXTRACTED]
 - [[TestSyncScriptPreflight]] - `contains` [EXTRACTED]
+- [[Tests for SkillGuard — skill supply-chain scanning (SCRUM-97). Coverage -…]] - `rationale_for` [EXTRACTED]
 - [[_finding_categories()]] - `contains` [EXTRACTED]
 - [[_run_scan_cli()]] - `contains` [EXTRACTED]
 - [[_write_tree()]] - `contains` [EXTRACTED]
-- [[gatewaysecurityskill_guard.py (SkillGuard)]] - `references` [EXTRACTED]
-- [[gatewayskillsscan.py (scan CLI)]] - `references` [EXTRACTED]
-- [[guard()_4]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[guard()_2]] - `contains` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 - [[scan.py]] - `imports_from` [EXTRACTED]
-- [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
+- [[skill_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

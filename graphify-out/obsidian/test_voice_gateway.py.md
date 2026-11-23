@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "Community 46"
+community: "test_voice_gateway.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_46
+  - community/test_voice_gatewaypy
 ---
 
 # test_voice_gateway.py
@@ -14,8 +14,9 @@ tags:
 ## Connections
 - [[TestNormalizeForSpeech]] - `contains` [EXTRACTED]
 - [[TestSplitForSpeech]] - `contains` [EXTRACTED]
+- [[Tests for the Voice Gateway FastAPI app (server.py, stt.py, tts.py). All…]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `imports` [EXTRACTED]
-- [[_call_llm_stream()]] - `references` [EXTRACTED]
+- [[_call_llm_stream()]] - `imports` [EXTRACTED]
 - [[_fake_kokoro_pipeline()]] - `contains` [EXTRACTED]
 - [[_fw_client()]] - `contains` [EXTRACTED]
 - [[_mock_llm_stream_resp()]] - `contains` [EXTRACTED]
@@ -27,6 +28,7 @@ tags:
 - [[_reset_reply_resume()]] - `contains` [EXTRACTED]
 - [[_run_disconnect_test()]] - `contains` [EXTRACTED]
 - [[_sse_body()]] - `contains` [EXTRACTED]
+- [[asyncio_50]] - `imports` [EXTRACTED]
 - [[normalize_for_speech()]] - `imports` [EXTRACTED]
 - [[server.py]] - `imports_from` [EXTRACTED]
 - [[split_for_speech()]] - `imports` [EXTRACTED]
@@ -126,6 +128,5 @@ tags:
 - [[test_ws_volume_query_intercepted_returns_tracked_level()]] - `contains` [EXTRACTED]
 - [[test_ws_volume_query_unknown_state_intercepted()]] - `contains` [EXTRACTED]
 - [[tts.py]] - `imports_from` [EXTRACTED]
-- [[voice_gateway app (FastAPI)]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_46
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

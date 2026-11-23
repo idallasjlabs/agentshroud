@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # test_webhook_receiver_processes()
 
 ## Connections
 - [[Verify webhook receiver routes through pipeline.]] - `rationale_for` [EXTRACTED]
-- [[WebhookReceiver]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `uses` [INFERRED]
+- [[asyncio_49]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "Community 43"
+community: "test_e2e_proxy.py"
 location: "L474"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_43
+  - community/test_e2e_proxypy
 ---
 
 # test_webhook_outbound_pipeline_crash_fails_closed()
 
 ## Connections
 - [[If the outbound pipeline crashes, the bot response must be withheld.]] - `rationale_for` [EXTRACTED]
-- [[WebhookReceiver]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `calls` [EXTRACTED]
-- [[_StubForwarder_2]] - `calls` [EXTRACTED]
+- [[_StubForwarder]] - `calls` [EXTRACTED]
+- [[asyncio_49]] - `references` [EXTRACTED]
+- [[crashing_outbound()]] - `indirect_call` [INFERRED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_43
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

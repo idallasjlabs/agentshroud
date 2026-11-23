@@ -1,21 +1,22 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "Community 151"
+community: "test_config_hot_reload.py"
 location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_151
+  - community/test_config_hot_reloadpy
 ---
 
 # test_watcher_ignores_missing_file()
 
 ## Connections
 - [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - `rationale_for` [EXTRACTED]
-- [[_load()]] - `calls` [EXTRACTED]
+- [[_drive()]] - `contains` [EXTRACTED]
+- [[_load()_1]] - `calls` [EXTRACTED]
 - [[_write()]] - `calls` [EXTRACTED]
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[test_config_hot_reload.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_151
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

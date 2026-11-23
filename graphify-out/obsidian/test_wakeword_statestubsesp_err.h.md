@@ -1,14 +1,14 @@
 ---
 source_file: "firmware/voice-terminal/test/test_wakeword_state/stubs/esp_err.h"
 type: "code"
-community: "MCPPolicyEngine.enforce"
+community: "test_wakeword_state/stubs/esp_err.h"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngineenforce
+  - community/test_wakeword_state/stubs/esp_errh
 ---
 
 # test_wakeword_state/stubs/esp_err.h
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngineenforce
+#graphify/code #graphify/EXTRACTED #community/test_wakeword_state/stubs/esp_errh

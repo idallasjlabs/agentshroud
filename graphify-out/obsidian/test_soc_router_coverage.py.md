@@ -1,36 +1,40 @@
 ---
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "Community 19"
+community: "test_soc_router_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_19
+  - community/test_soc_router_coveragepy
 ---
 
 # test_soc_router_coverage.py
 
 ## Connections
 - [[ApprovalMode]] - `imports` [EXTRACTED]
-- [[ApprovalQueueItem_3]] - `imports` [EXTRACTED]
+- [[ApprovalQueueItem]] - `imports` [EXTRACTED]
 - [[AuditResult]] - `imports` [EXTRACTED]
-- [[FakeAuditStore_1]] - `contains` [EXTRACTED]
-- [[FakeCaller_1]] - `contains` [EXTRACTED]
+- [[Coverage tests for gatewaysocrouter.py — SCL REST endpoints. Strategy a…]] - `rationale_for` [EXTRACTED]
+- [[FakeAuditStore]] - `contains` [EXTRACTED]
+- [[FakeCaller]] - `contains` [EXTRACTED]
 - [[FakeGroup]] - `contains` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
+- [[Role]] - `imports` [EXTRACTED]
 - [[_FakeDecideQueue]] - `contains` [EXTRACTED]
 - [[_Svc]] - `contains` [EXTRACTED]
 - [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 - [[_make_service_manager()]] - `contains` [EXTRACTED]
 - [[_pending_item()]] - `contains` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
-- [[gatewaysocauth.py (get_caller)]] - `references` [EXTRACTED]
+- [[client()_6]] - `contains` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
-- [[holder()_1]] - `contains` [EXTRACTED]
+- [[holder()]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
 - [[ks_engine()]] - `contains` [EXTRACTED]
-- [[router.py_1]] - `tests` [EXTRACTED]
-- [[state()_1]] - `contains` [EXTRACTED]
+- [[rbac_config.py]] - `imports_from` [EXTRACTED]
+- [[socauth.py]] - `imports_from` [EXTRACTED]
+- [[socrouter.py]] - `imports` [EXTRACTED]
+- [[state()]] - `contains` [EXTRACTED]
 - [[test_add_collaborator()]] - `contains` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `contains` [EXTRACTED]
 - [[test_agent_cves_known_and_unknown()]] - `contains` [EXTRACTED]
@@ -184,4 +188,4 @@ tags:
 - [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 - [[test_websocket_route_dispatch()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_19
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

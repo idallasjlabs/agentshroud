@@ -1,21 +1,23 @@
 ---
 source_file: "gateway/tests/test_telegram_replay.py"
 type: "code"
-community: "Community 165"
+community: "test_telegram_replay.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_165
+  - community/test_telegram_replaypy
 ---
 
 # test_telegram_replay.py
 
 ## Connections
+- [[Tests for UpdateReplayBuffer (gatewayproxytelegram_replay.py).]] - `rationale_for` [EXTRACTED]
 - [[UpdateReplayBuffer]] - `imports` [EXTRACTED]
 - [[_cleanup_call_count_for_next_cleanup()]] - `contains` [EXTRACTED]
 - [[_update()]] - `contains` [EXTRACTED]
 - [[buf()]] - `contains` [EXTRACTED]
+- [[telegram_replay.py]] - `imports_from` [EXTRACTED]
 - [[test_cleanup_db_error_swallowed()]] - `contains` [EXTRACTED]
 - [[test_cleanup_drops_old_rows()]] - `contains` [EXTRACTED]
 - [[test_cleanup_execute_exception_swallowed()]] - `contains` [EXTRACTED]
@@ -35,4 +37,4 @@ tags:
 - [[test_record_then_pull_returns_undelivered()]] - `contains` [EXTRACTED]
 - [[test_sqlite_failure_does_not_raise()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_165
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

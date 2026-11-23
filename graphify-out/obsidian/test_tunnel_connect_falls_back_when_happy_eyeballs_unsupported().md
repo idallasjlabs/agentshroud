@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "Community 81"
+community: "test_http_proxy_coverage.py"
 location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_81
+  - community/test_http_proxy_coveragepy
 ---
 
 # test_tunnel_connect_falls_back_when_happy_eyeballs_unsupported()
 
 ## Connections
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
-- [[HTTPConnectProxy_1]] - `calls` [EXTRACTED]
-- [[Real-world regression (2026-07-29) uvloop (the active event loop under     uvic]] - `rationale_for` [EXTRACTED]
-- [[_MockWriter_1]] - `calls` [EXTRACTED]
-- [[_make_stream()_1]] - `calls` [EXTRACTED]
+- [[Real-world regression (2026-07-29) uvloop (the active event loop under uvicorn…]] - `rationale_for` [EXTRACTED]
+- [[_MockWriter]] - `calls` [EXTRACTED]
+- [[_make_stream()]] - `calls` [EXTRACTED]
+- [[_uvloop_like_open()]] - `indirect_call` [INFERRED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_81
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

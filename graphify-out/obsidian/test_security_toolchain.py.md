@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 102"
+community: "test_security_toolchain.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_102
+  - community/test_security_toolchainpy
 ---
 
 # test_security_toolchain.py
@@ -16,10 +16,10 @@ tags:
 - [[TestAlertDispatcher]] - `contains` [EXTRACTED]
 - [[TestClamAVParser]] - `contains` [EXTRACTED]
 - [[TestClamAVRun]] - `contains` [EXTRACTED]
-- [[TestClamAVSummary]] - `contains` [EXTRACTED]
+- [[TestClamAVSummary_1]] - `contains` [EXTRACTED]
 - [[TestFalcoCategorize]] - `contains` [EXTRACTED]
 - [[TestFalcoParser]] - `contains` [EXTRACTED]
-- [[TestFalcoSummary_1]] - `contains` [EXTRACTED]
+- [[TestFalcoSummary]] - `contains` [EXTRACTED]
 - [[TestHealthOverallScore]] - `contains` [EXTRACTED]
 - [[TestHealthReport]] - `contains` [EXTRACTED]
 - [[TestHealthScoring]] - `contains` [EXTRACTED]
@@ -27,21 +27,26 @@ tags:
 - [[TestTrivyParser]] - `contains` [EXTRACTED]
 - [[TestTrivyRun]] - `contains` [EXTRACTED]
 - [[TestTrivySaveReport]] - `contains` [EXTRACTED]
-- [[TestTrivySummary_1]] - `contains` [EXTRACTED]
+- [[TestTrivySummary]] - `contains` [EXTRACTED]
 - [[TestWazuhParser]] - `contains` [EXTRACTED]
-- [[TestWazuhSummary_1]] - `contains` [EXTRACTED]
+- [[TestWazuhSummary]] - `contains` [EXTRACTED]
+- [[Tests for the security toolchain modules. Covers Trivy, ClamAV, Falco, Wazuh,…]] - `rationale_for` [EXTRACTED]
+- [[alert_dispatcher.py]] - `imports_from` [EXTRACTED]
 - [[calculate_overall_score()]] - `imports` [EXTRACTED]
 - [[calculate_tool_score()]] - `imports` [EXTRACTED]
 - [[categorize_alerts()]] - `imports` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `imports_from` [EXTRACTED]
+- [[falco_monitor.py]] - `imports_from` [EXTRACTED]
 - [[format_report()]] - `imports` [EXTRACTED]
 - [[generate_report()]] - `imports` [EXTRACTED]
-- [[generate_summary()]] - `imports` [EXTRACTED]
 - [[generate_summary()_1]] - `imports` [EXTRACTED]
 - [[generate_summary()_2]] - `imports` [EXTRACTED]
+- [[generate_summary()]] - `imports` [EXTRACTED]
 - [[generate_summary()_3]] - `imports` [EXTRACTED]
 - [[get_fim_events()]] - `imports` [EXTRACTED]
 - [[get_rootkit_events()]] - `imports` [EXTRACTED]
 - [[get_trend()]] - `imports` [EXTRACTED]
+- [[health_report.py_2]] - `imports_from` [EXTRACTED]
 - [[is_agentshroud_rule()]] - `imports` [EXTRACTED]
 - [[level_to_severity()]] - `imports` [EXTRACTED]
 - [[parse_alert()]] - `imports` [EXTRACTED]
@@ -50,9 +55,11 @@ tags:
 - [[parse_trivy_output()]] - `imports` [EXTRACTED]
 - [[read_alerts()]] - `imports` [EXTRACTED]
 - [[run_clamscan()]] - `imports` [EXTRACTED]
-- [[run_trivy_scan()_1]] - `imports` [EXTRACTED]
-- [[save_report()_1]] - `imports` [EXTRACTED]
+- [[run_trivy_scan()]] - `imports` [EXTRACTED]
+- [[save_report()]] - `imports` [EXTRACTED]
 - [[score_to_grade()]] - `imports` [EXTRACTED]
+- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
 - [[update_virus_db()]] - `imports` [EXTRACTED]
+- [[wazuh_client.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_102
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

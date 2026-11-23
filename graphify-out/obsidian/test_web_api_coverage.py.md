@@ -1,25 +1,26 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 40"
+community: "test_web_api_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_40
+  - community/test_web_api_coveragepy
 ---
 
 # test_web_api_coverage.py
 
 ## Connections
+- [[Coverage tests for gatewaywebapi.py (management REST API). Exercises auth,…]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchAction]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
 - [[TestAgentshroudUpdates]] - `contains` [EXTRACTED]
 - [[TestBotUpdates]] - `contains` [EXTRACTED]
-- [[TestConfig_1]] - `contains` [EXTRACTED]
+- [[TestConfig]] - `contains` [EXTRACTED]
 - [[TestDefaultBotDockerfile]] - `contains` [EXTRACTED]
 - [[TestGetEngineHelper]] - `contains` [EXTRACTED]
-- [[TestKillSwitch_1]] - `contains` [EXTRACTED]
+- [[TestKillSwitch]] - `contains` [EXTRACTED]
 - [[TestLogs]] - `contains` [EXTRACTED]
 - [[TestMgmtWsTokens]] - `contains` [EXTRACTED]
 - [[TestMode]] - `contains` [EXTRACTED]
@@ -39,8 +40,9 @@ tags:
 - [[_gitless_run()]] - `contains` [EXTRACTED]
 - [[_module_state_guard()]] - `contains` [EXTRACTED]
 - [[_resolve_bot_container()]] - `imports` [EXTRACTED]
-- [[client()_21]] - `contains` [EXTRACTED]
-- [[require_auth()_1]] - `imports` [EXTRACTED]
-- [[webapi.py (POST apiintelreports)]] - `references` [EXTRACTED]
+- [[api.py_2]] - `imports_from` [EXTRACTED]
+- [[client()_15]] - `contains` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[require_auth()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_40
+#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy

@@ -1,18 +1,21 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "Community 325"
+community: "AgentTarget"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/AgentTarget
 ---
 
 # test_stream_payload_sets_stream_true()
 
 ## Connections
-- [[AgentTarget]] - `calls` [EXTRACTED]
+- [[AgentTarget]] - `uses` [INFERRED]
+- [[asyncio_60]] - `references` [EXTRACTED]
+- [[mock_stream()_13]] - `contains` [EXTRACTED]
+- [[mock_stream()_18]] - `indirect_call` [INFERRED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,26 +1,27 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 6"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/test_soc_realtime_coveragepy
 ---
 
 # test_soc_realtime_coverage.py
 
 ## Connections
-- [[Action_1]] - `imports` [EXTRACTED]
+- [[Action]] - `imports` [EXTRACTED]
+- [[Coverage tests for gatewaysocwebsocket.py, event_adapter.py and auth.py.…]] - `rationale_for` [EXTRACTED]
 - [[PermissionResult]] - `imports` [EXTRACTED]
-- [[RBACConfig_1]] - `imports` [EXTRACTED]
-- [[Resource_1]] - `imports` [EXTRACTED]
-- [[Role_1]] - `imports` [EXTRACTED]
+- [[RBACConfig]] - `imports` [EXTRACTED]
+- [[Resource]] - `imports` [EXTRACTED]
+- [[Role]] - `imports` [EXTRACTED]
 - [[SCLCaller]] - `imports` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `imports` [EXTRACTED]
-- [[SecurityEvent_1]] - `imports` [EXTRACTED]
-- [[Severity_2]] - `imports` [EXTRACTED]
+- [[SecurityEvent]] - `imports` [EXTRACTED]
+- [[Severity_1]] - `imports` [EXTRACTED]
 - [[TestCoerceToWSEventExtra]] - `contains` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `contains` [EXTRACTED]
 - [[TestEventFanOut]] - `contains` [EXTRACTED]
@@ -41,7 +42,7 @@ tags:
 - [[WSEvent]] - `imports` [EXTRACTED]
 - [[WSEventType]] - `imports` [EXTRACTED]
 - [[_FakeBus]] - `contains` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC]] - `contains` [EXTRACTED]
 - [[_audit_entry()]] - `contains` [EXTRACTED]
 - [[_block_run_secrets()]] - `contains` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `imports` [EXTRACTED]
@@ -54,10 +55,16 @@ tags:
 - [[_verify_session_token()]] - `imports` [EXTRACTED]
 - [[clean_auth_env()]] - `contains` [EXTRACTED]
 - [[event_adapter.py]] - `imports_from` [EXTRACTED]
+- [[fastapi_3]] - `imports_from` [EXTRACTED]
 - [[get_caller()]] - `imports` [EXTRACTED]
 - [[issue_session_token()]] - `imports` [EXTRACTED]
 - [[issue_ws_token()]] - `imports` [EXTRACTED]
+- [[rbac.py]] - `imports_from` [EXTRACTED]
+- [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
+- [[socauth.py]] - `imports_from` [EXTRACTED]
+- [[socmodels.py]] - `imports_from` [EXTRACTED]
+- [[websocket.py]] - `imports_from` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

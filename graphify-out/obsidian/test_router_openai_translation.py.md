@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "Community 78"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/ingest_api/configpy
 ---
 
 # test_router_openai_translation.py
@@ -16,11 +16,13 @@ tags:
 - [[ForwardError]] - `imports` [EXTRACTED]
 - [[MultiAgentRouter]] - `imports` [EXTRACTED]
 - [[RouterConfig]] - `imports` [EXTRACTED]
+- [[Tests for §2.2 OpenAI-compatible target translation in MultiAgentRouter.…]] - `rationale_for` [EXTRACTED]
 - [[_mock_response()]] - `contains` [EXTRACTED]
-- [[config.py]] - `references` [EXTRACTED]
-- [[models.py]] - `references` [EXTRACTED]
-- [[router()_2]] - `contains` [EXTRACTED]
-- [[router.py]] - `references` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
+- [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
+- [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
+- [[router()_1]] - `contains` [EXTRACTED]
 - [[test_generic_target_returns_json_as_is()]] - `contains` [EXTRACTED]
 - [[test_generic_target_sends_content_body()]] - `contains` [EXTRACTED]
 - [[test_openai_empty_choices_raises_forward_error()]] - `contains` [EXTRACTED]
@@ -29,4 +31,4 @@ tags:
 - [[test_openai_target_returns_content_string()]] - `contains` [EXTRACTED]
 - [[test_openai_target_sends_messages_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_78
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

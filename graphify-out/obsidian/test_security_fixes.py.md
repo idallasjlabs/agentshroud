@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 44"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/ingest_api/configpy
 ---
 
 # test_security_fixes.py
@@ -25,10 +25,13 @@ tags:
 - [[TestTelegramProxyClientDisconnect]] - `contains` [EXTRACTED]
 - [[TestVersionConsistency]] - `contains` [EXTRACTED]
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
+- [[Tests for v0.2.0 peer review security fixes Covers - CRITICAL-1 SSH…]] - `rationale_for` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_13]] - `contains` [EXTRACTED]
-- [[gatewayingest_apiroutesdashboard.py (_create_ws_token)]] - `references` [EXTRACTED]
+- [[client()_4]] - `contains` [EXTRACTED]
+- [[dashboard.py]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/tests/test_falco_watcher.py"
 type: "code"
-community: "Community 75"
+community: "FalcoAlertWatcher"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/FalcoAlertWatcher
 ---
 
 # test_stop_halts_run_loop()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `uses` [INFERRED]
+- [[asyncio_3]] - `references` [EXTRACTED]
+- [[counting_poll()]] - `indirect_call` [INFERRED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
