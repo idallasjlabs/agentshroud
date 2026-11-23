@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_mcp_policy.py"
+type: "rationale"
+community: "load_config"
+location: "L506"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/load_config
+---
+
+# End-to-end: the engine wired into MCPProxy with a REAL approval queue must…
+
+## Connections
+- [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/load_config

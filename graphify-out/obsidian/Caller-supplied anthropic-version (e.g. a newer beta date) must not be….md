@@ -1,0 +1,17 @@
+---
+source_file: "gateway/tests/test_credential_injector.py"
+type: "rationale"
+community: "TestOAuthInjection"
+location: "L264"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/TestOAuthInjection
+---
+
+# Caller-supplied anthropic-version (e.g. a newer beta date) must not be…
+
+## Connections
+- [[dot-test_existing_anthropic_version_preserved()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/TestOAuthInjection

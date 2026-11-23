@@ -1,0 +1,17 @@
+---
+source_file: "gateway/proxy/telegram_proxy.py"
+type: "rationale"
+community: "TelegramAPIProxy"
+location: "L1822"
+tags:
+  - graphify/rationale
+  - graphify/EXTRACTED
+  - community/TelegramAPIProxy
+---
+
+# Detect requests to extract hidden-channel content from sensitive/internal…
+
+## Connections
+- [[dot-_looks_like_hidden_channel_exfil_request()]] - `rationale_for` [EXTRACTED]
+
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
