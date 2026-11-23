@@ -1,24 +1,19 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "Community 0"
+community: "middleware.py"
 location: "L50"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/middlewarepy
 ---
 
 # TestFileSandboxDefaultEnforce
 
 ## Connections
-- [[.test_default_mode_is_enforce()_5]] - `method` [EXTRACTED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EnvironmentGuard]] - `uses` [INFERRED]
+- [[dot-test_default_mode_is_enforce()_4]] - `method` [EXTRACTED]
 - [[FileSandboxConfig]] - `uses` [INFERRED]
-- [[GitGuard]] - `uses` [INFERRED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

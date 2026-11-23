@@ -1,34 +1,23 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "Community 132"
+community: "MCPServerConfig"
 location: "L248"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_132
+  - graphify/EXTRACTED
+  - community/MCPServerConfig
 ---
 
 # TestHttpSseConnection
 
 ## Connections
-- [[._fake_aiohttp()]] - `method` [EXTRACTED]
-- [[.test_missing_aiohttp_raises_runtime_error()]] - `method` [EXTRACTED]
-- [[.test_send_request_and_session_reuse()]] - `method` [EXTRACTED]
-- [[ConnectionPool]] - `uses` [INFERRED]
+- [[dot-_fake_aiohttp()]] - `method` [EXTRACTED]
+- [[dot-test_missing_aiohttp_raises_runtime_error()]] - `method` [EXTRACTED]
+- [[dot-test_send_request_and_session_reuse()]] - `method` [EXTRACTED]
 - [[HttpSseConnection]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
 - [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_132
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

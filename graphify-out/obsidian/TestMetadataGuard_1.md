@@ -1,23 +1,19 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 34"
+community: "test_middleware_coverage.py"
 location: "L485"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_34
+  - graphify/EXTRACTED
+  - community/test_middleware_coveragepy
 ---
 
 # TestMetadataGuard
 
 ## Connections
-- [[.test_headers_sanitized()]] - `method` [EXTRACTED]
-- [[.test_metadata_exception_non_blocking()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
+- [[dot-test_headers_sanitized()]] - `method` [EXTRACTED]
+- [[dot-test_metadata_exception_non_blocking()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_34
+#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

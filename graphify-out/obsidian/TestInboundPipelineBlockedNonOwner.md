@@ -1,21 +1,18 @@
 ---
 source_file: "gateway/tests/test_telegram_pipeline.py"
 type: "code"
-community: "Community 63"
+community: "test_telegram_pipeline.py"
 location: "L107"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_63
+  - graphify/EXTRACTED
+  - community/test_telegram_pipelinepy
 ---
 
 # TestInboundPipelineBlockedNonOwner
 
 ## Connections
-- [[.test_blocked_non_owner_drops_update_and_increments_stats()]] - `method` [EXTRACTED]
-- [[PipelineAction]] - `uses` [INFERRED]
-- [[PipelineResult]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[dot-test_blocked_non_owner_drops_update_and_increments_stats()]] - `method` [EXTRACTED]
 - [[test_telegram_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_63
+#graphify/code #graphify/EXTRACTED #community/test_telegram_pipelinepy

@@ -1,26 +1,21 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "Community 194"
+community: "TestOwnerAccess"
 location: "L55"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_194
+  - graphify/EXTRACTED
+  - community/TestOwnerAccess
 ---
 
 # TestOwnerAccess
 
 ## Connections
-- [[.test_owner_can_use_admin_tool()]] - `method` [EXTRACTED]
-- [[.test_owner_can_use_any_unknown_tool()]] - `method` [EXTRACTED]
-- [[.test_owner_can_use_private_tool()]] - `method` [EXTRACTED]
-- [[.test_owner_denied_tools_is_empty()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[TeamsConfig]] - `uses` [INFERRED]
-- [[ToolACLConfig]] - `uses` [INFERRED]
-- [[ToolACLEnforcer]] - `uses` [INFERRED]
+- [[dot-test_owner_can_use_admin_tool()]] - `method` [EXTRACTED]
+- [[dot-test_owner_can_use_any_unknown_tool()]] - `method` [EXTRACTED]
+- [[dot-test_owner_can_use_private_tool()]] - `method` [EXTRACTED]
+- [[dot-test_owner_denied_tools_is_empty()]] - `method` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_194
+#graphify/code #graphify/EXTRACTED #community/TestOwnerAccess

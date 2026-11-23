@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "Community 31"
+community: "MiddlewareManager"
 location: "L1009"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_31
+  - graphify/EXTRACTED
+  - community/MiddlewareManager
 ---
 
 # TestMiddlewareResult
 
 ## Connections
-- [[.test_defaults()]] - `method` [EXTRACTED]
-- [[.test_denied_with_reason()]] - `method` [EXTRACTED]
-- [[MiddlewareManager]] - `uses` [INFERRED]
+- [[dot-test_defaults()]] - `method` [EXTRACTED]
+- [[dot-test_denied_with_reason()]] - `method` [EXTRACTED]
 - [[MiddlewareResult]] - `uses` [INFERRED]
-- [[PIIConfig]] - `uses` [INFERRED]
-- [[UserSessionManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_31
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

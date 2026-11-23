@@ -1,24 +1,22 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "Community 325"
+community: "test_forward_routing.py"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_325
+  - community/test_forward_routingpy
 ---
 
 # TestOwnerSpoofingViaForwardBody
 
 ## Connections
-- [[._post()]] - `method` [EXTRACTED]
-- [[.test_body_owner_id_with_matching_trusted_header_is_honored()]] - `method` [EXTRACTED]
-- [[.test_body_owner_id_without_trusted_header_is_stripped()]] - `method` [EXTRACTED]
-- [[.test_non_owner_body_user_id_passes_through()]] - `method` [EXTRACTED]
-- [[AgentTarget]] - `uses` [INFERRED]
-- [[ForwardRequest]] - `uses` [INFERRED]
-- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity     to t]] - `rationale_for` [EXTRACTED]
+- [[dot-_post()]] - `method` [EXTRACTED]
+- [[dot-test_body_owner_id_with_matching_trusted_header_is_honored()]] - `method` [EXTRACTED]
+- [[dot-test_body_owner_id_without_trusted_header_is_stripped()]] - `method` [EXTRACTED]
+- [[dot-test_non_owner_body_user_id_passes_through()]] - `method` [EXTRACTED]
+- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity to the…]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_325
+#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy

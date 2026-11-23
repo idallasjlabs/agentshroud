@@ -1,21 +1,18 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "Community 5"
+community: "ResourceGuard"
 location: "L211"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_5
+  - graphify/EXTRACTED
+  - community/ResourceGuard
 ---
 
 # TestGlobalAccessor
 
 ## Connections
-- [[.test_get_resource_guard_is_lazy_singleton()]] - `method` [EXTRACTED]
-- [[ResourceGuard]] - `uses` [INFERRED]
-- [[ResourceLimits]] - `uses` [INFERRED]
-- [[VRAMHeadroomError]] - `uses` [INFERRED]
+- [[dot-test_get_resource_guard_is_lazy_singleton()]] - `method` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_5
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

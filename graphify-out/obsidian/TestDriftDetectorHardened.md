@@ -1,36 +1,21 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "Community 0"
+community: "ContainerSnapshot"
 location: "L919"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/ContainerSnapshot
 ---
 
 # TestDriftDetectorHardened
 
 ## Connections
-- [[.test_simultaneous_baseline_and_config_change()]] - `method` [EXTRACTED]
-- [[AgentRegistry]] - `uses` [INFERRED]
-- [[ContainerConfig]] - `uses` [INFERRED]
+- [[dot-test_simultaneous_baseline_and_config_change()]] - `method` [EXTRACTED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[DriftDetector]] - `uses` [INFERRED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[EncryptedStore]] - `uses` [INFERRED]
-- [[IsolationStatus]] - `uses` [INFERRED]
-- [[IsolationVerifier]] - `uses` [INFERRED]
-- [[PatternRule]] - `uses` [INFERRED]
-- [[PromptGuard]] - `uses` [INFERRED]
 - [[Tests for drift detector hardening.]] - `rationale_for` [EXTRACTED]
-- [[ThreatAction]] - `uses` [INFERRED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

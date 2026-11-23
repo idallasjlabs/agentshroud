@@ -1,27 +1,23 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "Community 45"
+community: "OAuthRequest"
 location: "L116"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_45
+  - graphify/EXTRACTED
+  - community/OAuthRequest
 ---
 
 # TestPKCE
 
 ## Connections
-- [[.test_pkce_plain_rejected_when_s256_required()]] - `method` [EXTRACTED]
-- [[.test_pkce_required_missing_challenge()]] - `method` [EXTRACTED]
-- [[.test_pkce_s256_accepted()]] - `method` [EXTRACTED]
-- [[.test_pkce_verifier_validation()]] - `method` [EXTRACTED]
-- [[ConfusedDeputyError]] - `uses` [INFERRED]
-- [[OAuthError]] - `uses` [INFERRED]
+- [[dot-test_pkce_plain_rejected_when_s256_required()]] - `method` [EXTRACTED]
+- [[dot-test_pkce_required_missing_challenge()]] - `method` [EXTRACTED]
+- [[dot-test_pkce_s256_accepted()]] - `method` [EXTRACTED]
+- [[dot-test_pkce_verifier_validation()]] - `method` [EXTRACTED]
 - [[OAuthRequest]] - `uses` [INFERRED]
-- [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[PKCEViolation]] - `uses` [INFERRED]
-- [[RedirectMismatch]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_45
+#graphify/code #graphify/EXTRACTED #community/OAuthRequest

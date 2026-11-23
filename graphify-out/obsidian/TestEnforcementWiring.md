@@ -1,27 +1,23 @@
 ---
 source_file: "gateway/tests/test_module_stats.py"
 type: "code"
-community: "Community 300"
+community: "test_module_stats.py"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_300
+  - community/test_module_statspy
 ---
 
 # TestEnforcementWiring
 
 ## Connections
-- [[.setup_method()_13]] - `method` [EXTRACTED]
-- [[.test_record_decision_helper()]] - `method` [EXTRACTED]
-- [[.test_record_decision_never_raises()]] - `method` [EXTRACTED]
-- [[.test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]
-- [[Decision]] - `uses` [INFERRED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
-- [[ModuleStatsCollector]] - `uses` [INFERRED]
+- [[dot-setup_method()_22]] - `method` [EXTRACTED]
+- [[dot-test_record_decision_helper()]] - `method` [EXTRACTED]
+- [[dot-test_record_decision_never_raises()]] - `method` [EXTRACTED]
+- [[dot-test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]
 - [[SCRUM-80 — the record helper + wrapped enforcement points feed real data.]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_module_stats.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_300
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

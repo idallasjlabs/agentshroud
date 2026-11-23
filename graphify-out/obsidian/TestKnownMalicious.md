@@ -1,24 +1,20 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "Community 133"
+community: "SkillGuard"
 location: "L267"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_133
+  - graphify/EXTRACTED
+  - community/SkillGuard
 ---
 
 # TestKnownMalicious
 
 ## Connections
-- [[.test_crypto_miner_indicator_flags()]] - `method` [EXTRACTED]
-- [[.test_reverse_shell_indicator_blocks()]] - `method` [EXTRACTED]
-- [[Recommendation]] - `uses` [INFERRED]
-- [[ScanResult_2]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[dot-test_crypto_miner_indicator_flags()]] - `method` [EXTRACTED]
+- [[dot-test_reverse_shell_indicator_blocks()]] - `method` [EXTRACTED]
 - [[SkillGuard]] - `uses` [INFERRED]
-- [[SkillScanError]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_133
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

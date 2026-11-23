@@ -1,27 +1,22 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "Community 6"
+community: "soc/models.py"
 location: "L408"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_6
+  - graphify/EXTRACTED
+  - community/soc/modelspy
 ---
 
 # TestFromEgressAttempt
 
 ## Connections
-- [[.test_conversion_error_path()_2]] - `method` [EXTRACTED]
-- [[.test_dict_allowed_without_reason()]] - `method` [EXTRACTED]
-- [[.test_dict_blocked_with_reason()]] - `method` [EXTRACTED]
-- [[.test_object_form()]] - `method` [EXTRACTED]
-- [[Action_1]] - `uses` [INFERRED]
-- [[PermissionResult]] - `uses` [INFERRED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Resource_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
-- [[SOCWebSocketHandler]] - `uses` [INFERRED]
+- [[dot-test_conversion_error_path()_4]] - `method` [EXTRACTED]
+- [[dot-test_dict_allowed_without_reason()]] - `method` [EXTRACTED]
+- [[dot-test_dict_blocked_with_reason()]] - `method` [EXTRACTED]
+- [[dot-test_object_form()]] - `method` [EXTRACTED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_6
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

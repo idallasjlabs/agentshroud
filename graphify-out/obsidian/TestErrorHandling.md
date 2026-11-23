@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 53"
+community: "app"
 location: "L217"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_53
+  - community/app
 ---
 
 # TestErrorHandling
 
 ## Connections
-- [[.test_404_error()]] - `method` [EXTRACTED]
-- [[.test_method_not_allowed()]] - `method` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[StreamHead]] - `uses` [INFERRED]
+- [[dot-test_404_error()]] - `method` [EXTRACTED]
+- [[dot-test_method_not_allowed()]] - `method` [EXTRACTED]
 - [[Test error handling across endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_53
+#graphify/code #graphify/EXTRACTED #community/app

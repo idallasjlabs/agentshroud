@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_scorecard_scoring.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 1129"
-location: "L562"
+community: "_age"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1129
+  - community/_age
 ---
 
 # TestIsFresh
 
 ## Connections
-- [[.test_returns_false_for_empty_dir()]] - `method` [EXTRACTED]
-- [[.test_returns_false_for_missing_dir()]] - `method` [EXTRACTED]
-- [[.test_returns_false_for_stale_file()]] - `method` [EXTRACTED]
-- [[.test_returns_true_for_fresh_file()]] - `method` [EXTRACTED]
-- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
+- [[dot-test_empty_dir_returns_false()]] - `method` [EXTRACTED]
+- [[dot-test_fresh_file_returns_true()]] - `method` [EXTRACTED]
+- [[dot-test_old_file_returns_false()]] - `method` [EXTRACTED]
+- [[dot-test_stat_error_returns_false()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1129
+#graphify/code #graphify/EXTRACTED #community/_age

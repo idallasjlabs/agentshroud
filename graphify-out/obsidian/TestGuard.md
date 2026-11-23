@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_canary_deploy.py"
 type: "code"
-community: "Community 728"
+community: "_run"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_728
+  - community/_run
 ---
 
 # TestGuard
 
 ## Connections
-- [[.test_dry_run_allowed_for_any_user()]] - `method` [EXTRACTED]
-- [[.test_refuses_when_not_green_user()]] - `method` [EXTRACTED]
+- [[dot-test_dry_run_allowed_for_any_user()]] - `method` [EXTRACTED]
+- [[dot-test_refuses_when_not_green_user()]] - `method` [EXTRACTED]
 - [[test_canary_deploy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_728
+#graphify/code #graphify/EXTRACTED #community/_run

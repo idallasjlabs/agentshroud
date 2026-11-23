@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "Community 25"
+community: "SSHProxy"
 location: "L106"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_25
+  - graphify/EXTRACTED
+  - community/SSHProxy
 ---
 
 # TestIsAutoApproved
 
 ## Connections
-- [[.test_is_auto_approved_no()]] - `method` [EXTRACTED]
-- [[.test_is_auto_approved_unknown_host()]] - `method` [EXTRACTED]
-- [[.test_is_auto_approved_yes()]] - `method` [EXTRACTED]
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[SSHHostConfig]] - `uses` [INFERRED]
+- [[dot-test_is_auto_approved_no()]] - `method` [EXTRACTED]
+- [[dot-test_is_auto_approved_unknown_host()]] - `method` [EXTRACTED]
+- [[dot-test_is_auto_approved_yes()]] - `method` [EXTRACTED]
 - [[SSHProxy]] - `uses` [INFERRED]
-- [[SSHResult]] - `uses` [INFERRED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_25
+#graphify/code #graphify/EXTRACTED #community/SSHProxy
