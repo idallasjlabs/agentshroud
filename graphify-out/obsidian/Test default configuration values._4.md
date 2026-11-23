@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 26"
-location: "L24"
+community: "ToolResultSanitizerConfig"
+location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/ToolResultSanitizerConfig
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizerConfig

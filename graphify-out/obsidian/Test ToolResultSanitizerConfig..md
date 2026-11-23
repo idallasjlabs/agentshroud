@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 455"
+community: "ToolResultSanitizerConfig"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/ToolResultSanitizerConfig
 ---
 
 # Test ToolResultSanitizerConfig.
 
 ## Connections
-- [[TestToolResultSanitizer_1]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizerConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizerConfig

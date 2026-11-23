@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "rationale"
-community: "Community 169"
+community: "soc/models.py"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_169
+  - community/soc/modelspy
 ---
 
 # Test event filtering via the subscriptions set (mirrors _event_fan_out logic).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSubscriptionFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_169
+#graphify/rationale #graphify/EXTRACTED #community/soc/modelspy

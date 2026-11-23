@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "Community 3"
+community: "PathRewriteResult"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/PathRewriteResult
 ---
 
 # Test custom configuration values.
 
 ## Connections
-- [[.test_custom_config()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_custom_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/PathRewriteResult

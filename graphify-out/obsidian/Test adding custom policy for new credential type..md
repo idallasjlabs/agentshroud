@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 122"
+community: "KeyRotationManager"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_122
+  - community/KeyRotationManager
 ---
 
 # Test adding custom policy for new credential type.
 
 ## Connections
-- [[.test_add_custom_policy()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_add_custom_policy()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_122
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

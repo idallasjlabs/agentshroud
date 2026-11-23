@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "test_memory_lifecycle.py"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/test_memory_lifecyclepy
 ---
 
 # Test complete memory protection workflow.
 
 ## Connections
-- [[.test_integrated_memory_protection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_integrated_memory_protection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/test_memory_lifecyclepy

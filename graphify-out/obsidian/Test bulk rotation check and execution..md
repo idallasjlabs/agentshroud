@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "Community 479"
+community: "KeyRotationManager"
 location: "L407"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_479
+  - community/KeyRotationManager
 ---
 
 # Test bulk rotation check and execution.
 
 ## Connections
-- [[.test_check_and_rotate_due_credentials()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_check_and_rotate_due_credentials()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_479
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

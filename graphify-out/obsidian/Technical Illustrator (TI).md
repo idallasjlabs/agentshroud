@@ -1,20 +1,20 @@
 ---
-source_file: ".agents/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-ti/README.md"
 type: "document"
-community: "Community 803"
+community: "Technical Illustrator (TI)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_803
+  - community/Technical_Illustrator_TI
 ---
 
 # Technical Illustrator (TI)
 
 ## Connections
-- [[Purpose_25]] - `contains` [EXTRACTED]
-- [[README_25]] - `contains` [EXTRACTED]
-- [[Related Skills_31]] - `contains` [EXTRACTED]
-- [[Usage_31]] - `contains` [EXTRACTED]
+- [[Purpose_156]] - `contains` [EXTRACTED]
+- [[Related Skills_86]] - `contains` [EXTRACTED]
+- [[Usage_96]] - `contains` [EXTRACTED]
+- [[openclawskillsi-tiREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_803
+#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_TI

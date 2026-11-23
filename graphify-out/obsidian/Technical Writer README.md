@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-tw/README.md"
 type: "document"
-community: "Community 518"
+community: "Test-Driven Development README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Test-Driven_Development_README
 ---
 
 # Technical Writer README
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Technical Writer (TW)_3]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

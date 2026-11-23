@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/SECURITY_VERIFICATION.md"
 type: "document"
-community: "Community 621"
+community: "Security Verification Report"
 location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_621
+  - community/Security_Verification_Report
 ---
 
 # Test 3: Test Gitignore
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Verification Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_621
+#graphify/document #graphify/EXTRACTED #community/Security_Verification_Report

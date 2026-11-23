@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "rationale"
-community: "Community 254"
+community: "AuditEvent"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_254
+  - community/AuditEvent
 ---
 
 # Test hash chain computation.
 
 ## Connections
-- [[.test_entry_hash_chain()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_entry_hash_chain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_254
+#graphify/rationale #graphify/EXTRACTED #community/AuditEvent

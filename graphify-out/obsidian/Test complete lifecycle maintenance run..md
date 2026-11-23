@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "Community 16"
+community: "TestMemoryLifecycleManager"
 location: "L341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_16
+  - community/TestMemoryLifecycleManager
 ---
 
 # Test complete lifecycle maintenance run.
 
 ## Connections
-- [[.test_lifecycle_maintenance()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_lifecycle_maintenance()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_16
+#graphify/rationale #graphify/EXTRACTED #community/TestMemoryLifecycleManager

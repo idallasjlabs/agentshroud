@@ -1,17 +1,14 @@
 ---
 source_file: "gateway/tests/test_gmail_credential_retrieval.py"
 type: "code"
-community: "Community 1991"
+community: "Test Gmail Credential Retrieval"
 location: "1"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_1991
+  - graphify/EXTRACTED
+  - community/Test_Gmail_Credential_Retrieval
 ---
 
 # Test Gmail Credential Retrieval
 
-## Connections
-- [[test_key_rotation.py]] - `semantically_similar_to` [INFERRED]
-
-#graphify/code #graphify/INFERRED #community/Community_1991
+#graphify/code #graphify/EXTRACTED #community/Test_Gmail_Credential_Retrieval

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: ""
 type: "code"
-community: "Community 113"
-location: "L291"
+community: "CronStateMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_113
+  - community/CronStateMonitor
 ---
 
 # Task
 
 ## Connections
-- [[.start()_2]] - `references` [EXTRACTED]
+- [[dot-start()]] - `references` [EXTRACTED]
 - [[app_main.c]] - `imports` [EXTRACTED]
 - [[wakeword.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_113
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

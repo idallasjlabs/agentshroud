@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "Community 707"
+community: "fastapi.md"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_707
+  - community/fastapimd
 ---
 
 # Test auth dependency with missing Authorization header
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_auth_dependency_missing_header()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_707
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

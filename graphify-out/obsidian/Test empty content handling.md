@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "Community 435"
+community: "PIIConfig"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_435
+  - community/PIIConfig
 ---
 
 # Test empty content handling
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_empty_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_435
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

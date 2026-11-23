@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Community 92"
+community: "KillSwitchConfig"
 location: "L133"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_92
+  - community/KillSwitchConfig
 ---
 
 # Test anomaly detection with excessive tool calls.
 
 ## Connections
-- [[.test_anomaly_detection_excessive_tool_calls()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_anomaly_detection_excessive_tool_calls()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_92
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchConfig

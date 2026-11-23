@@ -1,21 +1,20 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "Community 90"
+community: "Technical Writer (TW)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Technical_Writer_TW
 ---
 
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_72]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[README_77]] - `contains` [EXTRACTED]
-- [[Related Skills_93]] - `contains` [EXTRACTED]
-- [[Usage_95]] - `contains` [EXTRACTED]
+- [[Purpose_157]] - `contains` [EXTRACTED]
+- [[Related Skills_87]] - `contains` [EXTRACTED]
+- [[Usage_97]] - `contains` [EXTRACTED]
+- [[openclawskillsi-twREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

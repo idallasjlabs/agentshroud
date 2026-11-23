@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "middleware.py"
 location: "L366"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/middlewarepy
 ---
 
 # Test cleanup of old denied requests.
 
 ## Connections
-- [[.test_cleanup_old_denied_requests()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_cleanup_old_denied_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

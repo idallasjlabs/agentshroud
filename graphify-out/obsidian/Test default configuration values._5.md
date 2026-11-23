@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_killswitch_monitor.py"
 type: "rationale"
-community: "Community 455"
-location: "L21"
+community: "KillSwitchConfig"
+location: "L28"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/KillSwitchConfig
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[.test_default_config()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchConfig

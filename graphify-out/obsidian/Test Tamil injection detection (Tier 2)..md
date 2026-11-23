@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "rationale"
-community: "Community 224"
+community: "TestMultilingualInjection"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_224
+  - community/TestMultilingualInjection
 ---
 
 # Test Tamil injection detection (Tier 2).
 
 ## Connections
-- [[.test_tier2_tamil_injection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tier2_tamil_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_224
+#graphify/rationale #graphify/EXTRACTED #community/TestMultilingualInjection

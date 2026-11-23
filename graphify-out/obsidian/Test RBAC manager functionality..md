@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "soc/router.py"
 location: "L126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/soc/routerpy
 ---
 
 # Test RBAC manager functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRBACManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

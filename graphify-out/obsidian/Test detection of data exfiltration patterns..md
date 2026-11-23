@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "Community 0"
+community: "TestExfiltrationDetection"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/TestExfiltrationDetection
 ---
 
 # Test detection of data exfiltration patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExfiltrationDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/TestExfiltrationDetection

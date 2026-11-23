@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "rationale"
-community: "Community 143"
+community: "ingest_api/models.py"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_143
+  - community/ingest_api/modelspy
 ---
 
 # Test global exception handler
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_global_exception_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_143
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy

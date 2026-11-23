@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "Community 6"
+community: "TestRBACConfig"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_6
+  - community/TestRBACConfig
 ---
 
 # Test dynamic role assignment.
 
 ## Connections
-- [[.test_role_assignment()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_role_assignment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_6
+#graphify/rationale #graphify/EXTRACTED #community/TestRBACConfig

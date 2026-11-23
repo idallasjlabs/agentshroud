@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "Community 28"
+community: "RedactionResult"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_28
+  - community/RedactionResult
 ---
 
 # Test content extraction from string results
 
 ## Connections
-- [[.test_extract_scannable_content_string()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_extract_scannable_content_string()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_28
+#graphify/rationale #graphify/EXTRACTED #community/RedactionResult

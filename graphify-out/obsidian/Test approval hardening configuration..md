@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "middleware.py"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/middlewarepy
 ---
 
 # Test approval hardening configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestApprovalHardeningConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

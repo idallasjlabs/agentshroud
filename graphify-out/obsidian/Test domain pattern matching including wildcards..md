@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 455"
+community: "TestToolResultSanitizer"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/TestToolResultSanitizer
 ---
 
 # Test domain pattern matching including wildcards.
 
 ## Connections
-- [[.test_domain_matching_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_domain_matching_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/TestToolResultSanitizer

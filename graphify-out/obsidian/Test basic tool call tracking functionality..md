@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "Community 8"
+community: "ToolChainAnalyzer"
 location: "L71"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_8
+  - community/ToolChainAnalyzer
 ---
 
 # Test basic tool call tracking functionality.
 
 ## Connections
-- [[.test_basic_tool_call_tracking()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_basic_tool_call_tracking()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_8
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

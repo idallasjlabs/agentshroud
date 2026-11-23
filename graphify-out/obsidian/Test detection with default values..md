@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 3"
+community: "middleware.py"
 location: "L442"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_3
+  - community/middlewarepy
 ---
 
 # Test detection with default values.
 
 ## Connections
-- [[.test_default_detection()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_3
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

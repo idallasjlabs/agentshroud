@@ -1,16 +1,13 @@
 ---
 source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "Community 158"
+community: "Test DNS Blocklist Suite"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_158
+  - community/Test_DNS_Blocklist_Suite
 ---
 
 # Test DNS Blocklist Suite
 
-## Connections
-- [[DNSBlocklist]] - `references` [EXTRACTED]
-
-#graphify/code #graphify/EXTRACTED #community/Community_158
+#graphify/code #graphify/EXTRACTED #community/Test_DNS_Blocklist_Suite

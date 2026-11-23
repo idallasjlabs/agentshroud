@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v0.8/agentshroud-security-overview-v0.8.0.md"
 type: "document"
-community: "Community 1948"
+community: "AgentShroud Security Overview v0.8.0"
 location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1948
+  - community/AgentShroud_Security_Overview_v080
 ---
 
 # Test Coverage Summary (Post-Remediation)
@@ -15,4 +15,4 @@ tags:
 - [[AgentShroud Security Overview v0.8.0]] - `contains` [EXTRACTED]
 - [[AgentShroud Security Overview — v0.8.0]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1948
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Overview_v080

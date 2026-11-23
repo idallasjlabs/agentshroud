@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "Community 23"
+community: "TestEgressApprovalQueue"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_23
+  - community/TestEgressApprovalQueue
 ---
 
 # Test cleanup of expired pending requests.
 
 ## Connections
-- [[.test_cleanup_expired_requests()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_cleanup_expired_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_23
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue

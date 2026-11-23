@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "Community 26"
+community: "middleware.py"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_26
+  - community/middlewarepy
 ---
 
 # Test custom configuration values.
 
 ## Connections
-- [[.test_custom_config()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-test_custom_config()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_26
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "rationale"
-community: "Community 17"
+community: "TestEgressFilterConfig"
 location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_17
+  - community/TestEgressFilterConfig
 ---
 
 # Test allowlist with denylist in strict mode.
 
 ## Connections
-- [[.test_effective_allowlist_with_denylist()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_effective_allowlist_with_denylist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_17
+#graphify/rationale #graphify/EXTRACTED #community/TestEgressFilterConfig
