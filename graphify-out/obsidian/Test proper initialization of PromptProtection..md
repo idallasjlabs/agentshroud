@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 351"
+community: "TestPromptProtection"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/TestPromptProtection
 ---
 
 # Test proper initialization of PromptProtection.
 
 ## Connections
-- [[.test_initialization()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_351
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

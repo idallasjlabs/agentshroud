@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "Community 44"
+community: "ingest_api/config.py"
 location: "L210"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_44
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # TestApprovalQueuePIISanitization
 
 ## Connections
-- [[.test_ssh_approval_sanitizes_command_pii()]] - `method` [EXTRACTED]
+- [[dot-test_ssh_approval_sanitizes_command_pii()]] - `method` [EXTRACTED]
 - [[Approval queue details must be PII-sanitized before storage]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_44
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

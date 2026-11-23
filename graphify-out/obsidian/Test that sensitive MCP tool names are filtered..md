@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 2362"
+community: "TestOutboundInfoFilter"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2362
+  - community/TestOutboundInfoFilter
 ---
 
 # Test that sensitive MCP tool names are filtered.
 
 ## Connections
-- [[.test_mcp_tool_filtering()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_mcp_tool_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2362
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 78"
+community: "fastapi.md"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/fastapimd
 ---
 
 # Test that XSS payloads are safely stored
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_xss_attempt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

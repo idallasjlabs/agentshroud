@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 2403"
+community: "TestPromptProtection"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_2403
+  - community/TestPromptProtection
 ---
 
 # Test redaction of tool inventory details.
 
 ## Connections
-- [[.test_tool_inventory_redaction()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_tool_inventory_redaction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_2403
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "rationale"
-community: "Community 5"
+community: "ResourceGuard"
 location: "L44"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_5
+  - community/ResourceGuard
 ---
 
 # Test that resource usage over limits is blocked.
 
 ## Connections
-- [[.test_check_resource_over_limit_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_check_resource_over_limit_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_5
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

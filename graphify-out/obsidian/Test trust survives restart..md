@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "Community 11"
+community: "TrustManager"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/TrustManager
 ---
 
 # Test trust survives restart.
 
 ## Connections
-- [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
+- [[TestPersistence_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_11
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

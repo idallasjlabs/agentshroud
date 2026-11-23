@@ -1,26 +1,26 @@
 ---
 source_file: ".agents/skills/i-tdd/README.md"
 type: "document"
-community: "Community 518"
+community: "Test-Driven Development README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Test-Driven_Development_README
 ---
 
 # Test-Driven Development README
 
 ## Connections
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-tddREADME]] - `contains` [EXTRACTED]
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_24]] - `contains` [EXTRACTED]
-- [[Purpose_70]] - `contains` [EXTRACTED]
-- [[README_24]] - `contains` [EXTRACTED]
-- [[README_47]] - `contains` [EXTRACTED]
-- [[Related Skills_30]] - `contains` [EXTRACTED]
-- [[Related Skills_91]] - `contains` [EXTRACTED]
-- [[SKILL_19]] - `contains` [EXTRACTED]
+- [[Purpose_159]] - `contains` [EXTRACTED]
+- [[Purpose_160]] - `contains` [EXTRACTED]
+- [[Related Skills_104]] - `contains` [EXTRACTED]
+- [[Related Skills_105]] - `contains` [EXTRACTED]
 - [[Test-Driven Development (TDD) Coach]] - `references` [EXTRACTED]
-- [[Usage_30]] - `contains` [EXTRACTED]
-- [[Usage_93]] - `contains` [EXTRACTED]
+- [[Usage_117]] - `contains` [EXTRACTED]
+- [[Usage_118]] - `contains` [EXTRACTED]
+- [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

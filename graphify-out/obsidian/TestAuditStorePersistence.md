@@ -1,26 +1,23 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "Community 21"
+community: "asyncio"
 location: "L270"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_21
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # TestAuditStorePersistence
 
 ## Connections
-- [[.test_allow_is_not_persisted_to_audit_store()]] - `method` [EXTRACTED]
-- [[.test_deny_is_persisted_to_audit_store()]] - `method` [EXTRACTED]
-- [[ApprovalResult]] - `uses` [INFERRED]
-- [[EgressAction]] - `uses` [INFERRED]
-- [[EgressAttempt]] - `uses` [INFERRED]
-- [[EgressFilter_1]] - `uses` [INFERRED]
+- [[dot-test_allow_is_not_persisted_to_audit_store()]] - `method` [EXTRACTED]
+- [[dot-test_deny_is_persisted_to_audit_store()]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
-- [[EgressPolicy]] - `uses` [INFERRED]
-- [[Only DENY decisions are persisted to the tamper-evident audit store.      ALLOW]] - `rationale_for` [EXTRACTED]
+- [[FakeAuditStore_1]] - `contains` [EXTRACTED]
+- [[Only DENY decisions are persisted to the tamper-evident audit store. ALLOW…]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_21
+#graphify/code #graphify/EXTRACTED #community/asyncio

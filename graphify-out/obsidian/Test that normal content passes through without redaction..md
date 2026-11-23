@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "Community 351"
+community: "TestPromptProtection"
 location: "L172"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_351
+  - community/TestPromptProtection
 ---
 
 # Test that normal content passes through without redaction.
 
 ## Connections
-- [[.test_normal_content_passes()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_normal_content_passes()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_351
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection

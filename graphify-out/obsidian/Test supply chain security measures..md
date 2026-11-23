@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "test_security_audit.py"
 location: "L1095"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/test_security_auditpy
 ---
 
 # Test supply chain security measures.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSupplyChain_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

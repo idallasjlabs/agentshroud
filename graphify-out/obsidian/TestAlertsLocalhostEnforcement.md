@@ -1,22 +1,20 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "Community 1658"
+community: "app"
 location: "L720"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1658
+  - community/app
 ---
 
 # TestAlertsLocalhostEnforcement
 
 ## Connections
-- [[.test_alerts_accepted_from_localhost()]] - `method` [EXTRACTED]
-- [[.test_alerts_rejected_from_non_localhost()]] - `method` [EXTRACTED]
+- [[dot-test_alerts_accepted_from_localhost()]] - `method` [EXTRACTED]
+- [[dot-test_alerts_rejected_from_non_localhost()]] - `method` [EXTRACTED]
 - [[apialerts must reject non-localhost callers (S1 fix).]] - `rationale_for` [EXTRACTED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[StreamHead]] - `uses` [INFERRED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1658
+#graphify/code #graphify/EXTRACTED #community/app

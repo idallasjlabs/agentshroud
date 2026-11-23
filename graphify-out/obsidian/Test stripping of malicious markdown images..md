@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "Community 455"
+community: "TestToolResultSanitizer"
 location: "L124"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_455
+  - community/TestToolResultSanitizer
 ---
 
 # Test stripping of malicious markdown images.
 
 ## Connections
-- [[.test_malicious_image_stripping()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_malicious_image_stripping()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_455
+#graphify/rationale #graphify/EXTRACTED #community/TestToolResultSanitizer

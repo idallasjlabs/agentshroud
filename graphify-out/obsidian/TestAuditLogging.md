@@ -1,24 +1,21 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "Community 72"
+community: "DNSFilterConfig"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_72
+  - community/DNSFilterConfig
 ---
 
 # TestAuditLogging
 
 ## Connections
-- [[.test_flagged_queries_in_log()]] - `method` [EXTRACTED]
-- [[.test_log_contains_timestamp()]] - `method` [EXTRACTED]
-- [[.test_log_contains_verdict()]] - `method` [EXTRACTED]
-- [[.test_queries_logged()]] - `method` [EXTRACTED]
-- [[DNSFilter]] - `uses` [INFERRED]
-- [[DNSFilterConfig]] - `uses` [INFERRED]
-- [[EntropyCalculator]] - `uses` [INFERRED]
+- [[dot-test_flagged_queries_in_log()]] - `method` [EXTRACTED]
+- [[dot-test_log_contains_timestamp()]] - `method` [EXTRACTED]
+- [[dot-test_log_contains_verdict()]] - `method` [EXTRACTED]
+- [[dot-test_queries_logged()]] - `method` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_72
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

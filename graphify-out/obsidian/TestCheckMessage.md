@@ -1,25 +1,23 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "Community 344"
+community: "ContextGuard"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_344
+  - community/ContextGuard
 ---
 
 # TestCheckMessage
 
 ## Connections
-- [[.test_few_repetitions_allowed()]] - `method` [EXTRACTED]
-- [[.test_normal_message_allowed()]] - `method` [EXTRACTED]
-- [[.test_normal_sized_message_allowed()]] - `method` [EXTRACTED]
-- [[.test_oversized_message_blocked()]] - `method` [EXTRACTED]
-- [[.test_repeated_pattern_flagged()]] - `method` [EXTRACTED]
-- [[.test_short_repetitions_allowed()]] - `method` [EXTRACTED]
-- [[ContextGuard]] - `uses` [INFERRED]
-- [[ContextSegment]] - `uses` [INFERRED]
+- [[dot-test_few_repetitions_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_normal_message_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_normal_sized_message_allowed()]] - `method` [EXTRACTED]
+- [[dot-test_oversized_message_blocked()]] - `method` [EXTRACTED]
+- [[dot-test_repeated_pattern_flagged()]] - `method` [EXTRACTED]
+- [[dot-test_short_repetitions_allowed()]] - `method` [EXTRACTED]
 - [[test_context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_344
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

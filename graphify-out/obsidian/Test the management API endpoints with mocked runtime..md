@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "rationale"
-community: "Community 240"
+community: "patch"
 location: "L661"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_240
+  - community/patch
 ---
 
 # Test the management API endpoints with mocked runtime.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWebAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_240
+#graphify/rationale #graphify/EXTRACTED #community/patch

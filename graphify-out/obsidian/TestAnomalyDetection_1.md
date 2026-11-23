@@ -1,25 +1,23 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "Community 9"
-location: "L144"
+community: "EgressEvent"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_9
+  - community/EgressEvent
 ---
 
 # TestAnomalyDetection
 
 ## Connections
-- [[.test_excessive_requests_flagged()]] - `method` [EXTRACTED]
-- [[.test_excessive_tokens_flagged()]] - `method` [EXTRACTED]
-- [[.test_excessive_tool_calls_flagged_and_alerted()]] - `method` [EXTRACTED]
-- [[.test_no_anomaly_when_within_limits()]] - `method` [EXTRACTED]
-- [[.test_system_resource_cpu_anomaly()]] - `method` [EXTRACTED]
-- [[.test_system_resource_memory_anomaly()]] - `method` [EXTRACTED]
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[KillSwitchMonitor]] - `uses` [INFERRED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[dot-test_high_volume_triggers_alert()]] - `method` [EXTRACTED]
+- [[dot-test_normal_volume_no_alert()]] - `method` [EXTRACTED]
+- [[dot-test_unusual_destination_flagged()]] - `method` [EXTRACTED]
+- [[AlertSeverity]] - `uses` [INFERRED]
+- [[EgressChannel]] - `uses` [INFERRED]
+- [[EgressEvent]] - `uses` [INFERRED]
+- [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_9
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

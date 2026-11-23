@@ -1,23 +1,25 @@
 ---
-source_file: "gateway/tests/test_trust_manager.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "Community 11"
-location: "L203"
+community: "TestConfig"
+location: "L385"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_11
+  - community/TestConfig
 ---
 
 # TestConfig
 
 ## Connections
-- [[.test_custom_points()]] - `method` [EXTRACTED]
-- [[.test_thresholds_populated()]] - `method` [EXTRACTED]
-- [[Test configuration options.]] - `rationale_for` [EXTRACTED]
-- [[TrustConfig]] - `uses` [INFERRED]
-- [[TrustLevel_1]] - `uses` [INFERRED]
-- [[TrustManager_1]] - `uses` [INFERRED]
-- [[test_trust_manager.py]] - `contains` [EXTRACTED]
+- [[dot-test_export_config_delegates_to_get()]] - `method` [EXTRACTED]
+- [[dot-test_get_config_reads_yaml()]] - `method` [EXTRACTED]
+- [[dot-test_get_config_when_file_missing()]] - `method` [EXTRACTED]
+- [[dot-test_import_config_delegates_to_update()]] - `method` [EXTRACTED]
+- [[dot-test_update_config_rejects_unknown_keys()]] - `method` [EXTRACTED]
+- [[dot-test_update_config_round_trips_bots_key()]] - `method` [EXTRACTED]
+- [[dot-test_update_config_without_existing_file_skips_backup()]] - `method` [EXTRACTED]
+- [[dot-test_update_config_writes_yaml_and_backs_up()]] - `method` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_11
+#graphify/code #graphify/EXTRACTED #community/TestConfig

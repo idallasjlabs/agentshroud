@@ -1,29 +1,25 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "Community 75"
+community: "TestCollabLockdownNotifications"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/TestCollabLockdownNotifications
 ---
 
 # TestCollabLockdownNotifications
 
 ## Connections
-- [[._setup_proxy_with_capture()]] - `method` [EXTRACTED]
-- [[.test_collab_notified_at_alert_threshold()]] - `method` [EXTRACTED]
-- [[.test_collab_notified_at_escalated_threshold()]] - `method` [EXTRACTED]
-- [[.test_collab_notified_at_suspended_threshold()]] - `method` [EXTRACTED]
-- [[.test_collab_notified_only_once_per_level()]] - `method` [EXTRACTED]
-- [[.test_no_collab_notice_below_alert()]] - `method` [EXTRACTED]
-- [[.test_owner_also_notified_on_threshold()]] - `method` [EXTRACTED]
-- [[FalcoAlertWatcher]] - `uses` [INFERRED]
-- [[LockdownLevel_1]] - `uses` [INFERRED]
-- [[ProgressiveLockdown]] - `uses` [INFERRED]
-- [[TelegramAPIProxy]] - `uses` [INFERRED]
+- [[dot-_setup_proxy_with_capture()]] - `method` [EXTRACTED]
+- [[dot-test_collab_notified_at_alert_threshold()]] - `method` [EXTRACTED]
+- [[dot-test_collab_notified_at_escalated_threshold()]] - `method` [EXTRACTED]
+- [[dot-test_collab_notified_at_suspended_threshold()]] - `method` [EXTRACTED]
+- [[dot-test_collab_notified_only_once_per_level()]] - `method` [EXTRACTED]
+- [[dot-test_no_collab_notice_below_alert()]] - `method` [EXTRACTED]
+- [[dot-test_owner_also_notified_on_threshold()]] - `method` [EXTRACTED]
 - [[Verify _quarantine_blocked_message sends threshold warnings to the collaborator.]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/TestCollabLockdownNotifications

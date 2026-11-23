@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 30"
+community: "MCPProxy"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/MCPProxy
 ---
 
 # Test that critical tools are identified as requiring approval.
 
 ## Connections
-- [[.test_critical_tool_requires_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_critical_tool_requires_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/MCPProxy

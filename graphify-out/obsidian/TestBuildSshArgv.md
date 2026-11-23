@@ -1,22 +1,19 @@
 ---
 source_file: "gateway/tests/test_multi_host_test.py"
 type: "code"
-community: "Community 942"
+community: "multi_host_test.py"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_942
+  - community/multi_host_testpy
 ---
 
 # TestBuildSshArgv
 
 ## Connections
-- [[.test_argv_shape()]] - `method` [EXTRACTED]
-- [[.test_custom_user()]] - `method` [EXTRACTED]
-- [[HostResult]] - `uses` [INFERRED]
-- [[HostStatus]] - `uses` [INFERRED]
-- [[MultiHostResult]] - `uses` [INFERRED]
+- [[dot-test_argv_shape()]] - `method` [EXTRACTED]
+- [[dot-test_custom_user()]] - `method` [EXTRACTED]
 - [[test_multi_host_test.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_942
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

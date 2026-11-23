@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "Community 30"
+community: "EnhancedApprovalQueue"
 location: "L238"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_30
+  - community/EnhancedApprovalQueue
 ---
 
 # Test that low-risk tools don't require approval.
 
 ## Connections
-- [[.test_low_risk_tool_no_approval()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_low_risk_tool_no_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_30
+#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue

@@ -1,20 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "Community 220"
+community: "test_clamav_pipeline.py"
 location: "L530"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_clamav_pipelinepy
 ---
 
 # TestClamAVRun
 
 ## Connections
-- [[.test_run_not_found()]] - `method` [EXTRACTED]
-- [[.test_update_db_not_found()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[dot-test_run_not_found()]] - `method` [EXTRACTED]
+- [[dot-test_update_db_not_found()]] - `method` [EXTRACTED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

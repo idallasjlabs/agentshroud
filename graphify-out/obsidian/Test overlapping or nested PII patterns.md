@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "Community 78"
+community: "fastapi.md"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/fastapimd
 ---
 
 # Test overlapping or nested PII patterns
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_nested_pii_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "Community 531"
+community: "ingest_api/config.py"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_531
+  - community/ingest_api/configpy
 ---
 
 # Test retrieving a ledger entry by ID
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_get_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_531
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

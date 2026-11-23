@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: "Community 1105"
+community: "asyncio"
 location: "L620"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1105
+  - community/asyncio
 ---
 
 # Test with realistic agent response patterns.
 
 ## Connections
-- [[.test_real_world_agent_responses()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_real_world_agent_responses()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1105
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

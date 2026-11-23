@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "Community 103"
+community: "TestWebProxySecurityIntegration"
 location: "L298"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_103
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Test that multiple security modules work together correctly.
 
 ## Connections
-- [[.test_multiple_security_modules_integration()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_multiple_security_modules_integration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_103
+#graphify/rationale #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

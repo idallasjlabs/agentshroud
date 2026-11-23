@@ -1,23 +1,20 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "Community 56"
+community: "DifferentialPIIDetector"
 location: "L329"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_56
+  - graphify/EXTRACTED
+  - community/DifferentialPIIDetector
 ---
 
 # TestAsymmetricFloor
 
 ## Connections
-- [[.test_scan_produces_report_with_correct_floor_used()]] - `method` [EXTRACTED]
-- [[.test_weak_hit_present_in_tool_result_only()]] - `method` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
+- [[dot-test_scan_produces_report_with_correct_floor_used()]] - `method` [EXTRACTED]
+- [[dot-test_weak_hit_present_in_tool_result_only()]] - `method` [EXTRACTED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[PIIHit]] - `uses` [INFERRED]
-- [[PIIHitSeverity]] - `uses` [INFERRED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_56
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

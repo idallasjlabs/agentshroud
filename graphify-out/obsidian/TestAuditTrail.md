@@ -1,39 +1,29 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "Community 64"
-location: "L286"
+community: "ContainerSnapshot"
+location: "L759"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_64
+  - graphify/EXTRACTED
+  - community/ContainerSnapshot
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[.test_blocked_entry_logged()]] - `method` [EXTRACTED]
-- [[.test_chain_entries_linked()]] - `method` [EXTRACTED]
-- [[.test_hash_chain_changes_on_append()]] - `method` [EXTRACTED]
-- [[.test_hash_chain_genesis()]] - `method` [EXTRACTED]
-- [[.test_hash_chain_valid()]] - `method` [EXTRACTED]
-- [[.test_log_tool_call()]] - `method` [EXTRACTED]
-- [[.test_log_tool_result()]] - `method` [EXTRACTED]
-- [[.test_pii_redacted_flag()]] - `method` [EXTRACTED]
-- [[.test_tampered_chain_detected()]] - `method` [EXTRACTED]
-- [[FindingType]] - `uses` [INFERRED]
-- [[MCPAuditTrail]] - `uses` [INFERRED]
-- [[MCPInspector]] - `uses` [INFERRED]
-- [[MCPPermissionManager]] - `uses` [INFERRED]
-- [[MCPProxy]] - `uses` [INFERRED]
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolCall]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPToolResult]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `uses` [INFERRED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_alert_dedup()]] - `method` [EXTRACTED]
+- [[dot-test_alert_dispatcher_init()]] - `method` [EXTRACTED]
+- [[dot-test_alert_dispatcher_write()]] - `method` [EXTRACTED]
+- [[dot-test_canary_system_importable()]] - `method` [EXTRACTED]
+- [[dot-test_drift_detector_baseline()]] - `method` [EXTRACTED]
+- [[dot-test_drift_detector_detects_change()]] - `method` [EXTRACTED]
+- [[dot-test_drift_no_false_positive()]] - `method` [EXTRACTED]
+- [[dot-test_health_report_importable()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ContainerSnapshot]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[Test audit chain integrity and tamper detection.]] - `rationale_for` [EXTRACTED]
+- [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_64
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

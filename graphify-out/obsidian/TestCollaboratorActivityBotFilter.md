@@ -1,20 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_bots.py"
 type: "code"
-community: "Community 51"
+community: "test_soc_bots.py"
 location: "L434"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_51
+  - graphify/EXTRACTED
+  - community/test_soc_botspy
 ---
 
 # TestCollaboratorActivityBotFilter
 
 ## Connections
-- [[.test_filters_activity_by_bot_id_in_source()]] - `method` [EXTRACTED]
-- [[RBACConfig_1]] - `uses` [INFERRED]
-- [[Role_1]] - `uses` [INFERRED]
+- [[dot-test_filters_activity_by_bot_id_in_source()]] - `method` [EXTRACTED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_51
+#graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,19 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "Community 38"
+community: "soc/models.py"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_38
+  - community/soc/modelspy
 ---
 
 # TestConfirmationModel
 
 ## Connections
-- [[.test_destructive_requires_confirmation()]] - `method` [EXTRACTED]
-- [[.test_permission_denied_error()]] - `method` [EXTRACTED]
+- [[dot-test_destructive_requires_confirmation()]] - `method` [EXTRACTED]
+- [[dot-test_permission_denied_error()]] - `method` [EXTRACTED]
+- [[SCLConfirmationRequired]] - `uses` [INFERRED]
+- [[SCLError]] - `uses` [INFERRED]
 - [[test_soc_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_38
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

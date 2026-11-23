@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "Community 78"
+community: "AgentTarget"
 location: "L45"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_78
+  - community/AgentTarget
 ---
 
 # Test routing with explicit route_to
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_resolve_target_explicit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_78
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

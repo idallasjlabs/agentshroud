@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "Community 220"
-location: "L512"
+community: "test_scanner_integration_coverage.py"
+location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_220
+  - community/test_scanner_integration_coveragepy
 ---
 
-# TestClamAVSummary
+# TestClamavSummary
 
 ## Connections
-- [[.test_summary_clean()_1]] - `method` [EXTRACTED]
-- [[.test_summary_error()_1]] - `method` [EXTRACTED]
-- [[.test_summary_infected()]] - `method` [EXTRACTED]
-- [[AlertDispatcher]] - `uses` [INFERRED]
-- [[test_security_toolchain.py]] - `contains` [EXTRACTED]
+- [[dot-test_clean_when_installed_not_running()_2]] - `method` [EXTRACTED]
+- [[dot-test_not_run_when_not_installed()]] - `method` [EXTRACTED]
+- [[dot-test_running_report_mtime_timestamp()]] - `method` [EXTRACTED]
+- [[dot-test_running_without_report()]] - `method` [EXTRACTED]
+- [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_220
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integration_coveragepy
