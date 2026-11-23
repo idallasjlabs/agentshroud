@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/i-gg/README.md"
 type: "document"
-community: "Community 211"
-location: "L21"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_211
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_211
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

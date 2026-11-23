@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/graphify.md"
+source_file: ".agents/skills/sec-defense/README.md"
 type: "document"
-community: "Community 955"
-location: "L11"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_955
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_9]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_955
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

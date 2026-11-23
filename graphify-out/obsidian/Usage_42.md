@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/README.md"
+source_file: ".agents/skills/i-cicd/README.md"
 type: "document"
-community: "Community 2102"
+community: "CI/CD Pipeline Advisor (CICD)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2102
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Usage
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2102
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ux/SKILL.md"
 type: "concept"
-community: "Community 518"
+community: "Test-Driven Development README"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Test-Driven_Development_README
 ---
 
 # UX Skill (i-ux, external)
@@ -16,4 +16,4 @@ tags:
 - [[Technical Writer (TW)_3]] - `references` [EXTRACTED]
 - [[UI Expert (UI)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_518
+#graphify/concept #graphify/EXTRACTED #community/Test-Driven_Development_README

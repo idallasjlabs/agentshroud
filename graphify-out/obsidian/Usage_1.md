@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/graphify.md"
+source_file: ".agents/skills/i-data/README.md"
 type: "document"
-community: "Community 920"
-location: "L12"
+community: ".agents/skills/i-cr/SKILL.md"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_920
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_1]] - `contains` [EXTRACTED]
+- [[Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_920
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

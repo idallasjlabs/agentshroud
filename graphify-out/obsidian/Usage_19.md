@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mcpm-auth-reset/README.md"
+source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
 type: "document"
-community: "Community 583"
-location: "L10"
+community: "apply-patches.js"
+location: "L61"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_583
+  - community/apply-patchesjs
 ---
 
 # Usage
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)]] - `contains` [EXTRACTED]
+- [[apply-patches.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_583
+#graphify/document #graphify/EXTRACTED #community/apply-patchesjs

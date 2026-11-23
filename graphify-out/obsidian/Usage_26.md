@@ -1,18 +1,24 @@
 ---
-source_file: ".agents/skills/i-production/README.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Community 177"
-location: "L10"
+community: "Usage"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Usage
 ---
 
 # Usage
 
 ## Connections
-- [[Incident Response (INCIDENT)]] - `contains` [EXTRACTED]
-- [[incident-response]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Check Status]] - `contains` [EXTRACTED]
+- [[Hermes  HCI]] - `contains` [EXTRACTED]
+- [[Port Reference]] - `contains` [EXTRACTED]
+- [[Start the Stack]] - `contains` [EXTRACTED]
+- [[Stop the Stack]] - `contains` [EXTRACTED]
+- [[Test Chat]] - `contains` [EXTRACTED]
+- [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/Usage

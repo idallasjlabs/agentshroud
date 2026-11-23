@@ -1,11 +1,11 @@
 ---
 source_file: ".agents/skills/i-ui/SKILL.md"
 type: "document"
-community: "Community 518"
+community: "Test-Driven Development README"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Test-Driven_Development_README
 ---
 
 # UI Expert (UI)
@@ -15,4 +15,4 @@ tags:
 - [[Technical Illustrator (TI)_3]] - `references` [EXTRACTED]
 - [[UX Skill (i-ux, external)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README

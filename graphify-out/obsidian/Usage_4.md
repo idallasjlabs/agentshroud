@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/athena/README.md"
+source_file: ".agents/skills/i-mcpm/README.md"
 type: "document"
-community: "Community 2064"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2064
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[Athena — Knowledge Distiller_1]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2064
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

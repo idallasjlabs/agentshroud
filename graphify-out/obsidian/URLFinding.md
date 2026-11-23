@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "Community 1000"
+community: "URLAnalyzer"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_1000
+  - community/URLAnalyzer
 ---
 
 # URLFinding
 
 ## Connections
-- [[._check_base64()]] - `calls` [EXTRACTED]
-- [[.analyze()]] - `calls` [EXTRACTED]
+- [[dot-_check_base64()]] - `calls` [EXTRACTED]
+- [[dot-analyze()]] - `calls` [EXTRACTED]
 - [[A single finding from URL analysis.]] - `rationale_for` [EXTRACTED]
-- [[url_analyzer.py]] - `contains` [EXTRACTED]
+- [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_1000
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

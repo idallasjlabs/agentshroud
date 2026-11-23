@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-gg/README.md"
+source_file: "docker/config/hermes/skills/i-sad/README.md"
 type: "document"
-community: "Community 90"
-location: "L10"
+community: "System Audit Documentation"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/System_Audit_Documentation
 ---
 
 # Usage
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

@@ -1,17 +1,23 @@
 ---
-source_file: "docker/config/openclaw/skills/i-atlas/README.md"
+source_file: "docker/config/openclaw/skills/i-browser/SKILL.md"
 type: "document"
-community: "Community 1226"
-location: "L10"
+community: "Browser — Secure Browser Automation"
+location: "L55"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1226
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[Atlas — Curriculum Architect_9]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_4]] - `contains` [EXTRACTED]
+- [[Click Element_2]] - `contains` [EXTRACTED]
+- [[Extract Data_2]] - `contains` [EXTRACTED]
+- [[Fetch JavaScript-Heavy Page (Node.js)_1]] - `contains` [EXTRACTED]
+- [[Fill Form_1]] - `contains` [EXTRACTED]
+- [[Navigate to URL_2]] - `contains` [EXTRACTED]
+- [[Take Screenshot_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1226
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/i-ux.md"
+source_file: ".agents/skills/i-ux/SKILL.md"
 type: "document"
-community: "Community 296"
-location: "L126"
+community: "Skill: UX Expert (UX)"
+location: "L124"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_296
+  - community/Skill_UX_Expert_UX
 ---
 
 # User Flow Diagrams
@@ -16,4 +16,4 @@ tags:
 - [[Site Alarm Acknowledgment Flow]] - `contains` [EXTRACTED]
 - [[Skill UX Expert (UX)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_296
+#graphify/document #graphify/EXTRACTED #community/Skill_UX_Expert_UX

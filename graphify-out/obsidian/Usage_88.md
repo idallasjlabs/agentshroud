@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "Community 90"
-location: "L9"
+community: "Quality Assurance (QA)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Quality_Assurance_QA
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-browser/README.md"
 type: "document"
-community: "Community 550"
-location: "L18"
+community: "Browser — Secure Browser Automation"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_550
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_6]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_550
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

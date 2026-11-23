@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mac/README.md"
+source_file: "docker/config/openclaw/skills/i-athena/README.md"
 type: "document"
-community: "Community 1212"
+community: "Athena — Knowledge Distiller"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1212
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Usage
 
 ## Connections
-- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1212
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

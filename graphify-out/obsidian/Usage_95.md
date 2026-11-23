@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Community 90"
+community: "Test-Driven Development (TDD)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/Test-Driven_Development_TDD
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

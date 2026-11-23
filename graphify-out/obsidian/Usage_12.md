@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/README.md"
+source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
 type: "document"
-community: "Community 2083"
+community: "Daedalus — Concept Illustrator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2083
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Usage
 
 ## Connections
-- [[Hermes — Podcast Production Orchestrator]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2083
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

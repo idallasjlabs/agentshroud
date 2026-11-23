@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Community 263"
-location: "L21"
+community: "Pull Request Generator (PR)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_263
+  - community/Pull_Request_Generator_PR
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_2]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_263
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

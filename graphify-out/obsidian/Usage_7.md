@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/README.md"
+source_file: "docker/config/hermes/skills/i-browser/README.md"
 type: "document"
-community: "Community 2067"
+community: "Browser — Secure Browser Automation"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2067
+  - community/Browser__Secure_Browser_Automation
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[Browser — Secure Browser Automation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2067
+#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

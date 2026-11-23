@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/atlas.md"
+source_file: ".github/agents/i-atlas.agent.md"
 type: "document"
-community: "Community 1138"
-location: "L175"
+community: "Atlas — Curriculum Architect"
+location: "L178"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1138
+  - community/Atlas__Curriculum_Architect
 ---
 
 # User Prompt Template — OKE Channel
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1138
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/socrates/README.md"
+source_file: ".agents/skills/i-bs/README.md"
 type: "document"
-community: "Community 2098"
+community: "Branding Specialist (BS)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2098
+  - community/Branding_Specialist_BS
 ---
 
 # Usage
 
 ## Connections
-- [[Socrates — Dialogue Architect_1]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2098
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

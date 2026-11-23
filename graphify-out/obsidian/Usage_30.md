@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "src/interfaces/README.md"
 type: "document"
-community: "Community 518"
-location: "L10"
+community: "Control Center"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_518
+  - community/Control_Center
 ---
 
 # Usage
 
 ## Connections
-- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[Control Center]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_518
+#graphify/document #graphify/EXTRACTED #community/Control_Center

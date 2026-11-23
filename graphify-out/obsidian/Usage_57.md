@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/graphify/SKILL.md"
+source_file: ".agents/skills/vulcan/README.md"
 type: "document"
-community: "Community 374"
+community: "Vulcan — Subject Matter Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_374
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_10]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_374
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

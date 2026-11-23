@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-aws/README.md"
+source_file: "docker/config/hermes/skills/i-mc/README.md"
 type: "document"
-community: "Community 90"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_90
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_90
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

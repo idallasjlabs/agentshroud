@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "Community 1915"
-location: "L10"
+community: "AGENTSHROUD_MODE"
+location: "L50"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1915
+  - community/AGENTSHROUD_MODE
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1915
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

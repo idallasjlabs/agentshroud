@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/graphify.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "Community 926"
-location: "L12"
+community: "GSDE&G Development Master Checklist (MC)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_926
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_4]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_926
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

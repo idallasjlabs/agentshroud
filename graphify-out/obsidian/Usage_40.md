@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-offense/README.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "Community 2096"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2096
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2096
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

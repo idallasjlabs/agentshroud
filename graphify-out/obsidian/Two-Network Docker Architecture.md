@@ -1,19 +1,18 @@
 ---
 source_file: "docs/architecture/system-architecture.md"
 type: "document"
-community: "Community 748"
+community: "AgentShroud System Architecture Document (SAD)"
 location: "L168"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_748
+  - community/AgentShroud_System_Architecture_Document_SAD
 ---
 
 # Two-Network Docker Architecture
 
 ## Connections
-- [[ADR-003 Two-Network Container Isolation]] - `conceptually_related_to` [EXTRACTED]
 - [[AgentShroud System Architecture Document (SAD)]] - `contains` [EXTRACTED]
 - [[Network Isolation Benefits]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_748
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_System_Architecture_Document_SAD

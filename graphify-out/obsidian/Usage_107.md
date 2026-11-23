@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-daedalus/README.md"
+source_file: ".omp/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Community 1229"
-location: "L10"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1229
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Usage
 
 ## Connections
-- [[Daedalus — Concept Illustrator_9]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1229
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

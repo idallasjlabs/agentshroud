@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/SECURITY-POLICY-FINAL.md"
 type: "rationale"
-community: "Community 1315"
+community: "SECURITY_VALUE_PROPOSITION.md"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1315
+  - community/SECURITY_VALUE_PROPOSITIONmd
 ---
 
 # Ultra-Conservative Credential Display Policy
@@ -16,4 +16,4 @@ tags:
 - [[SECURITY-POLICY-FINAL]] - `references` [EXTRACTED]
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1315
+#graphify/rationale #graphify/EXTRACTED #community/SECURITY_VALUE_PROPOSITIONmd

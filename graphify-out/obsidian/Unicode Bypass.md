@@ -1,13 +1,13 @@
 ---
 source_file: "docs/project/glossary.md"
 type: "concept"
-community: "Community 1749"
+community: "Unicode Bypass"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_1749
+  - community/Unicode_Bypass
 ---
 
 # Unicode Bypass
 
-#graphify/concept #graphify/EXTRACTED #community/Community_1749
+#graphify/concept #graphify/EXTRACTED #community/Unicode_Bypass

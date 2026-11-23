@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "Community 311"
+community: "get_trivy_image_summaries"
 location: "L1145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_311
+  - community/get_trivy_image_summaries
 ---
 
 # Unknown bot_id with no config match falls through and returns all entries.
 
 ## Connections
-- [[.test_bot_id_filter_unknown_bot_returns_all()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_bot_id_filter_unknown_bot_returns_all()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_311
+#graphify/rationale #graphify/EXTRACTED #community/get_trivy_image_summaries

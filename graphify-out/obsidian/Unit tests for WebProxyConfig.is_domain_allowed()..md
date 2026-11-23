@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "Community 120"
+community: "WebProxy"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_120
+  - community/WebProxy
 ---
 
 # Unit tests for WebProxyConfig.is_domain_allowed().
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIsDomainAllowed]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_120
+#graphify/rationale #graphify/EXTRACTED #community/WebProxy

@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-qa/README.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Community 177"
+community: "Incident Response (INCIDENT)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_177
+  - community/Incident_Response_INCIDENT
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_177
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

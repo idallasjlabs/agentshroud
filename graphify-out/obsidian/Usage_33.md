@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/icloud/README.md"
+source_file: ".agents/skills/athena/README.md"
 type: "document"
-community: "Community 2084"
+community: "Athena — Knowledge Distiller"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2084
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Usage
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2084
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

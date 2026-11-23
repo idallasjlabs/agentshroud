@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sec-offense/README.md"
+source_file: "docker/config/openclaw/skills/i-sav/README.md"
 type: "document"
-community: "Community 2184"
-location: "L10"
+community: "System Audit Vault"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2184
+  - community/System_Audit_Vault
 ---
 
 # Usage
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
+- [[System Audit Vault_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2184
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault

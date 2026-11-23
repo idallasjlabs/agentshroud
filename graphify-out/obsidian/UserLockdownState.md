@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "Community 75"
+community: "LockdownLevel"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Community_75
+  - community/LockdownLevel
 ---
 
 # UserLockdownState
 
 ## Connections
-- [[._claim_notify()]] - `references` [EXTRACTED]
-- [[._effective_level()]] - `references` [EXTRACTED]
-- [[._get_state()]] - `references` [EXTRACTED]
-- [[._refresh()]] - `references` [EXTRACTED]
+- [[dot-_claim_notify()]] - `references` [EXTRACTED]
+- [[dot-_effective_level()]] - `references` [EXTRACTED]
+- [[dot-_get_state()]] - `calls` [EXTRACTED]
+- [[dot-_refresh()]] - `references` [EXTRACTED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_75
+#graphify/code #graphify/EXTRACTED #community/LockdownLevel

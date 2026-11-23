@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/agents/icloud.md"
+source_file: "docker/config/hermes/skills/i-icloud/SKILL.md"
 type: "document"
-community: "Community 530"
-location: "L75"
+community: "iCloud Services"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_530
+  - community/iCloud_Services
 ---
 
 # Update Contact
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Contact Operations]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_530
+#graphify/document #graphify/EXTRACTED #community/iCloud_Services

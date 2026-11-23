@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/SKILL.md"
+source_file: "skills/custom/securebrowser/README.md"
 type: "document"
-community: "Community 450"
-location: "L283"
+community: "SecureBrowser Skill"
+location: "L295"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_450
+  - community/SecureBrowser_Skill
 ---
 
 # "URL not in allowlist"
 
 ## Connections
-- [[Troubleshooting_4]] - `contains` [EXTRACTED]
+- [[Troubleshooting_12]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_450
+#graphify/document #graphify/EXTRACTED #community/SecureBrowser_Skill

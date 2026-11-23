@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/graphify.agent.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "Community 922"
-location: "L15"
+community: "Incident Response (INCIDENT)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_922
+  - community/Incident_Response_INCIDENT
 ---
 
 # Usage
 
 ## Connections
-- [[graphify_5]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_922
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

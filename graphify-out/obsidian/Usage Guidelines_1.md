@@ -1,19 +1,17 @@
 ---
-source_file: "branding/colors/palette.md"
+source_file: "docs/project/legal/TRADEMARK.md"
 type: "document"
-community: "Community 395"
-location: "L87"
+community: "AgentShroud™ Brand Guidelines"
+location: "L23"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_395
+  - community/AgentShroud_Brand_Guidelines
 ---
 
 # Usage Guidelines
 
 ## Connections
-- [[Accessibility]] - `contains` [EXTRACTED]
-- [[AgentShroud Color Palette]] - `contains` [EXTRACTED]
-- [[Applications]] - `contains` [EXTRACTED]
+- [[Trademark Notice_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_395
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Brand_Guidelines

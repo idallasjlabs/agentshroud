@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/sec-offense/README.md"
 type: "document"
-community: "Community 279"
-location: "L20"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_279
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_5]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_279
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

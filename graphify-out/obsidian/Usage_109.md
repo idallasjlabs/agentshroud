@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-eightd/README.md"
+source_file: "skills/README.md"
 type: "document"
-community: "Community 1231"
-location: "L10"
+community: "agentshroud-blueteam/SKILL.md"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1231
+  - community/agentshroud-blueteam/SKILLmd
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis_2]] - `contains` [EXTRACTED]
+- [[AgentShroud Skills Library]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1231
+#graphify/document #graphify/EXTRACTED #community/agentshroud-blueteam/SKILLmd

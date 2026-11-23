@@ -1,12 +1,12 @@
 ---
 source_file: ".llm_settings/docs/MCP_README.md"
 type: "concept"
-community: "Community 2188"
+community: "Claude Code skill catalog (59 skills)"
 location: "Prerequisites"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Community_2188
+  - community/Claude_Code_skill_catalog_59_skills
 ---
 
 # UV/uvx package manager prerequisite
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[awslabs.aws-api-mcp-server configuration (--readonly)]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Community_2188
+#graphify/concept #graphify/EXTRACTED #community/Claude_Code_skill_catalog_59_skills

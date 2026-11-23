@@ -1,18 +1,17 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "rationale"
-community: "Community 44"
+community: "SSHProxy"
 location: "L242"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_44
+  - community/SSHProxy
 ---
 
 # Unit tests for SSHProxy.validate_cwd().
 
 ## Connections
-- [[TestSSHProxyValidateWriteFile]] - `rationale_for` [EXTRACTED]
 - [[TestSSHValidateCwd]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_44
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

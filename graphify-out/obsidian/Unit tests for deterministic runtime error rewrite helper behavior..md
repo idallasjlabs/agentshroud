@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "Community 1426"
+community: "._rewrite_known_runtime_errors"
 location: "L3787"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_1426
+  - community/_rewrite_known_runtime_errors
 ---
 
 # Unit tests for deterministic runtime error rewrite helper behavior.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRuntimeRewriteHelpers]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_1426
+#graphify/rationale #graphify/EXTRACTED #community/_rewrite_known_runtime_errors

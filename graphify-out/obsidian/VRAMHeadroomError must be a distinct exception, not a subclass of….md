@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "rationale"
-community: "ModeRequest"
+community: "ResourceGuard"
 location: "L539"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/ResourceGuard
 ---
 
 # VRAMHeadroomError must be a distinct exception, not a subclass of…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ModeRequest
+#graphify/rationale #graphify/EXTRACTED #community/ResourceGuard

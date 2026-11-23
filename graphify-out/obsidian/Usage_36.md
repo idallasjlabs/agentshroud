@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/oracle/README.md"
+source_file: ".agents/skills/aws/README.md"
 type: "document"
-community: "Community 2088"
+community: "AWS Cloud Management & FinOps"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2088
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Usage
 
 ## Connections
-- [[Oracle — Feedback Analyst_1]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2088
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

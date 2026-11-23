@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/i-mcpm-auth-reset.md"
+source_file: ".agents/skills/sad/README.md"
 type: "document"
-community: "Community 274"
-location: "L20"
+community: "System Audit Documentation"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_274
+  - community/System_Audit_Documentation
 ---
 
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_4]] - `contains` [EXTRACTED]
+- [[System Audit Documentation]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_274
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation

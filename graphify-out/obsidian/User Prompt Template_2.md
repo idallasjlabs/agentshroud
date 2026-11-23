@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/socrates.md"
+source_file: ".opencode/agents/atlas.md"
 type: "document"
-community: "Community 1071"
-location: "L114"
+community: "Atlas — Curriculum Architect"
+location: "L155"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1071
+  - community/Atlas__Curriculum_Architect
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1071
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,21 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/README.md"
+source_file: "docker/bot-capabilities.md"
 type: "document"
-community: "Community 2009"
-location: "L70"
+community: "Credential Management - 1Password Integration"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2009
+  - community/Credential_Management_-_1Password_Integration
 ---
 
 # Usage Examples
 
 ## Connections
-- [[Example 1 Simple Navigation]] - `contains` [EXTRACTED]
-- [[Example 2 Fill Form (Non-Sensitive)]] - `contains` [EXTRACTED]
-- [[Example 3 Fill Password (Sensitive)]] - `contains` [EXTRACTED]
-- [[Example 4 Handle CAPTCHA]] - `contains` [EXTRACTED]
-- [[SecureBrowser Skill]] - `contains` [EXTRACTED]
+- [[Credential Management - 1Password Integration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2009
+#graphify/document #graphify/EXTRACTED #community/Credential_Management_-_1Password_Integration

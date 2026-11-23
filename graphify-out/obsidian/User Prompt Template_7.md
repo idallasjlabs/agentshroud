@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/vulcan/SKILL.md"
+source_file: ".omp/agents/athena.md"
 type: "document"
-community: "Community 1974"
-location: "L108"
+community: "Athena — Knowledge Distiller"
+location: "L132"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1974
+  - community/Athena__Knowledge_Distiller
 ---
 
 # User Prompt Template
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_2]] - `contains` [EXTRACTED]
+- [[description of what this does_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1974
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
