@@ -1,62 +1,36 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 146"
+community: "SubagentMonitor"
 location: "L66"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_146
+  - graphify/EXTRACTED
+  - community/SubagentMonitor
 ---
 
 # SubagentMonitor
 
 ## Connections
-- [[.__init__()_29]] - `calls` [EXTRACTED]
-- [[.__init__()_132]] - `method` [EXTRACTED]
-- [[._log_event()]] - `method` [EXTRACTED]
-- [[.check_tool_usage()]] - `method` [EXTRACTED]
-- [[.deregister()]] - `method` [EXTRACTED]
-- [[.get_active()]] - `method` [EXTRACTED]
-- [[.get_audit_log()_6]] - `method` [EXTRACTED]
-- [[.get_flagged_events()]] - `method` [EXTRACTED]
-- [[.kill_agent()]] - `method` [EXTRACTED]
-- [[.kill_all()]] - `method` [EXTRACTED]
-- [[.register_spawn()]] - `method` [EXTRACTED]
-- [[A2APolicyEngine_1]] - `semantically_similar_to` [INFERRED]
-- [[Action]] - `uses` [INFERRED]
-- [[Any_18]] - `uses` [INFERRED]
-- [[Exception_2]] - `uses` [INFERRED]
-- [[LogSanitizer]] - `uses` [INFERRED]
+- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-_log_event()]] - `method` [EXTRACTED]
+- [[dot-check_tool_usage()]] - `method` [EXTRACTED]
+- [[dot-deregister()]] - `method` [EXTRACTED]
+- [[dot-get_active()]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_3]] - `method` [EXTRACTED]
+- [[dot-get_flagged_events()]] - `method` [EXTRACTED]
+- [[dot-kill_agent()]] - `method` [EXTRACTED]
+- [[dot-kill_all()]] - `method` [EXTRACTED]
+- [[dot-register_spawn()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareResult]] - `uses` [INFERRED]
-- [[RBACManager]] - `uses` [INFERRED]
-- [[Resource]] - `uses` [INFERRED]
-- [[TestAuditTrail_1]] - `uses` [INFERRED]
-- [[TestAuditTrail_2]] - `uses` [INFERRED]
 - [[TestAuth_1]] - `uses` [INFERRED]
-- [[TestConcurrentLimits]] - `uses` [INFERRED]
-- [[TestContainerSecurity]] - `uses` [INFERRED]
-- [[TestContextGuard_1]] - `uses` [INFERRED]
-- [[TestCryptography]] - `uses` [INFERRED]
-- [[TestFileSandbox]] - `uses` [INFERRED]
-- [[TestKillSwitch]] - `uses` [INFERRED]
-- [[TestLoggingSecurity]] - `uses` [INFERRED]
-- [[TestNetworkSecurity]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestPermissionMonitoring]] - `uses` [INFERRED]
-- [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
-- [[TestSubagentMonitorConfig]] - `uses` [INFERRED]
-- [[TestSubagentTracking]] - `uses` [INFERRED]
-- [[TestSupplyChain_1]] - `uses` [INFERRED]
-- [[TestTrustInheritance]] - `uses` [INFERRED]
-- [[ToolTier]] - `uses` [INFERRED]
-- [[middleware.py]] - `imports` [EXTRACTED]
-- [[monitor()_1]] - `calls` [EXTRACTED]
-- [[strict_monitor()]] - `calls` [EXTRACTED]
-- [[subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[middleware.py_2]] - `imports` [EXTRACTED]
+- [[monitor()_1]] - `uses` [INFERRED]
+- [[strict_monitor()]] - `uses` [INFERRED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_146
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 350"
+community: "Prerequisites"
 location: "L33"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_350
+  - community/Prerequisites
 ---
 
 # Supported Platforms
 
 ## Connections
-- [[Prerequisites_12]] - `contains` [EXTRACTED]
+- [[Prerequisites_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_350
+#graphify/document #graphify/EXTRACTED #community/Prerequisites

@@ -1,17 +1,17 @@
 ---
-source_file: "CHANGELOG.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "Community 1255"
-location: "L1046"
+community: "Architecture Overview"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1255
+  - community/Architecture_Overview
 ---
 
 # Summary
 
 ## Connections
-- [[0.6.0 - 2026-02-23]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1255
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

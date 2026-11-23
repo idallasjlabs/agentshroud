@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/daedalus.md"
+source_file: ".opencode/agents/atlas.md"
 type: "document"
-community: "Community 1858"
-location: "L68"
+community: "Atlas — Curriculum Architect"
+location: "L92"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1858
+  - community/Atlas__Curriculum_Architect
 ---
 
 # System Prompt
 
 ## Connections
-- [[Daedalus — Concept Illustrator]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1858
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

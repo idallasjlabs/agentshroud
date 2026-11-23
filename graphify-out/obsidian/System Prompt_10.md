@@ -1,12 +1,12 @@
 ---
-source_file: ".agents/skills/daedalus/SKILL.md"
+source_file: ".agents/agents/daedalus.md"
 type: "document"
-community: "Community 1918"
-location: "L66"
+community: "Daedalus — Concept Illustrator"
+location: "L68"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1918
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # System Prompt
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1918
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

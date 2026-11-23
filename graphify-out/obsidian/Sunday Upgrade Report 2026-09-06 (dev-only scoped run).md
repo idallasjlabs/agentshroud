@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-dev.md"
 type: "document"
-community: "Community 227"
+community: "check-vendor-compat.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/check-vendor-compatsh
 ---
 
 # Sunday Upgrade Report 2026-09-06 (dev-only scoped run)
@@ -15,4 +15,4 @@ tags:
 - [[check_hermes()]] - `references` [EXTRACTED]
 - [[check_openclaw()]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_227
+#graphify/document #graphify/EXTRACTED #community/check-vendor-compatsh

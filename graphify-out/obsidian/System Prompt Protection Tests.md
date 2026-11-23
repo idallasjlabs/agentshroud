@@ -1,17 +1,16 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "Community 141"
+community: "Output Canary System Tests"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/Community_141
+  - graphify/INFERRED
+  - community/Output_Canary_System_Tests
 ---
 
 # System Prompt Protection Tests
 
 ## Connections
 - [[Output Canary System Tests]] - `semantically_similar_to` [INFERRED]
-- [[PromptProtection]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_141
+#graphify/code #graphify/INFERRED #community/Output_Canary_System_Tests

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "Community 0"
+community: "test_security_audit.py"
 location: "L573"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_0
+  - community/test_security_auditpy
 ---
 
 # Symlink-based escape attempt blocked.
 
 ## Connections
-- [[.test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
+- [[dot-test_symlink_traversal_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_0
+#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy

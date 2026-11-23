@@ -1,12 +1,12 @@
 ---
 source_file: ".agents/agents/i-ab.md"
 type: "document"
-community: "Community 1275"
+community: "Skill: Audit Branch (AB) — Merge Regression Detection"
 location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1275
+  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
 ---
 
 # Step 4 — Triage each finding
@@ -17,4 +17,4 @@ tags:
 - [[Check C — Still broken at HEAD (not self-healed)]] - `contains` [EXTRACTED]
 - [[Skill Audit Branch (AB) — Merge Regression Detection]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1275
+#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection

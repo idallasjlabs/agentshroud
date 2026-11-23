@@ -1,38 +1,26 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "Community 0"
+community: "SubagentMonitor"
 location: "L24"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/Community_0
+  - graphify/EXTRACTED
+  - community/SubagentMonitor
 ---
 
 # SubagentEventType
 
 ## Connections
-- [[._log_event()]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[dot-_log_event()]] - `references` [EXTRACTED]
+- [[Enum_18]] - `inherits` [EXTRACTED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
-- [[TestDependencySecurity]] - `uses` [INFERRED]
-- [[TestDoSPrevention]] - `uses` [INFERRED]
-- [[TestExfiltrationDetection]] - `uses` [INFERRED]
-- [[TestHTTPSecurity]] - `uses` [INFERRED]
-- [[TestInfoLeakage]] - `uses` [INFERRED]
-- [[TestKillSwitch]] - `uses` [INFERRED]
-- [[TestMCPSecurity]] - `uses` [INFERRED]
+- [[TestKillSwitch_1]] - `uses` [INFERRED]
 - [[TestPermissionMonitoring]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[TestSubagentMonitorConfig]] - `uses` [INFERRED]
-- [[TestSubagentTracking]] - `uses` [INFERRED]
-- [[TestTimingAttacks]] - `uses` [INFERRED]
-- [[TestTrustInheritance]] - `uses` [INFERRED]
-- [[TestWebSecurity]] - `uses` [INFERRED]
-- [[str]] - `inherits` [EXTRACTED]
-- [[subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[str_12]] - `inherits` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/Community_0
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

@@ -1,20 +1,20 @@
 ---
 source_file: "docs/setup/setup-guide.md"
 type: "document"
-community: "Community 413"
+community: "Step-by-Step Installation"
 location: "L381"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_413
+  - community/Step-by-Step_Installation
 ---
 
 # Step 7: Verify Installation
 
 ## Connections
-- [[Dashboard Access_1]] - `contains` [EXTRACTED]
-- [[Health Check]] - `contains` [EXTRACTED]
+- [[Dashboard Access]] - `contains` [EXTRACTED]
+- [[Health Check_2]] - `contains` [EXTRACTED]
 - [[Step-by-Step Installation]] - `contains` [EXTRACTED]
 - [[Test a Message]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_413
+#graphify/document #graphify/EXTRACTED #community/Step-by-Step_Installation

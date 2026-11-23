@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/hermes/SKILL.md"
+source_file: ".agents/skills/daedalus/SKILL.md"
 type: "document"
-community: "Community 1993"
-location: "L59"
+community: "Daedalus — Concept Illustrator"
+location: "L66"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1993
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # System Prompt
 
 ## Connections
-- [[Hermes — Reference Verifier_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1993
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

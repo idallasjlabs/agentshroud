@@ -1,17 +1,17 @@
 ---
-source_file: "reports/upgrade-2026-09-06-dev.md"
+source_file: "reports/upgrade-2026-09-26.md"
 type: "document"
-community: "Community 1780"
-location: "L3"
+community: "AgentShroud Sunday Upgrade — 2026-09-26 (DEV run)"
+location: "L206"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1780
+  - community/AgentShroud_Sunday_Upgrade__2026-09-26_DEV_run
 ---
 
 # Summary line
 
 ## Connections
-- [[AgentShroud Sunday Upgrade — 2026-09-06 (dev-only, read-only inventory → scoped fixes)]] - `contains` [EXTRACTED]
+- [[AgentShroud Sunday Upgrade — 2026-09-26 (DEV run)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1780
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Sunday_Upgrade__2026-09-26_DEV_run

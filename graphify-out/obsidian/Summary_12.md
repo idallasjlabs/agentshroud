@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 2039"
-location: "L611"
+community: "[1.3.0] \"Reliability\" (2026-07-21)"
+location: "L1170"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2039
+  - community/130_Reliability_2026-07-21
 ---
 
 # Summary
 
 ## Connections
-- [[1.1.1 — fixguard-wiring-and-ops-hardening (2026-06-10)]] - `contains` [EXTRACTED]
+- [[0.1.0 - 2026-02-16]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2039
+#graphify/document #graphify/EXTRACTED #community/130_Reliability_2026-07-21

@@ -1,17 +1,20 @@
 ---
-source_file: "skills/openclaw/xurl/SKILL.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/llm_proxy.py.md"
 type: "document"
-community: "Community 416"
-location: "L340"
+community: "llm_proxy.py"
+location: "L125"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_416
+  - community/llm_proxypy
 ---
 
 # Streaming
 
 ## Connections
-- [[xurl — Agent Skill Reference]] - `contains` [EXTRACTED]
+- [[Buffered streaming filter (`_filter_outbound_streaming`)]] - `contains` [EXTRACTED]
+- [[True-streaming path (`proxy_messages_streaming`)]] - `contains` [EXTRACTED]
+- [[`think` tag stripping]] - `contains` [EXTRACTED]
+- [[llm_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_416
+#graphify/document #graphify/EXTRACTED #community/llm_proxypy

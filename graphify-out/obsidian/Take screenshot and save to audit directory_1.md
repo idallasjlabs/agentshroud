@@ -1,17 +1,17 @@
 ---
 source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "rationale"
-community: "Community 155"
+community: "SecureBrowser"
 location: "L281"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_155
+  - community/SecureBrowser
 ---
 
 # Take screenshot and save to audit directory
 
 ## Connections
-- [[._take_screenshot()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_take_screenshot()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_155
+#graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

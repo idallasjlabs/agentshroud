@@ -1,17 +1,17 @@
 ---
 source_file: "reports/upgrade-2026-09-17.md"
 type: "document"
-community: "Community 347"
+community: "AgentShroud Weekly Upgrade Report — 2026-08-30"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_347
+  - community/AgentShroud_Weekly_Upgrade_Report__2026-08-30
 ---
 
 # Sunday Upgrade Report — 2026-09-17 (prod, on-demand)
 
 ## Connections
-- [[1. Summary line]] - `contains` [EXTRACTED]
+- [[1. Summary line_8]] - `contains` [EXTRACTED]
 - [[10. Jira — unavailable this run]] - `contains` [EXTRACTED]
 - [[11. Verification evidence]] - `contains` [EXTRACTED]
 - [[12. Breaking changes  manual follow-ups]] - `contains` [EXTRACTED]
@@ -25,6 +25,6 @@ tags:
 - [[8. Security findings table]] - `contains` [EXTRACTED]
 - [[9. Upgrade table]] - `contains` [EXTRACTED]
 - [[SecurityFinding_1]] - `contains` [EXTRACTED]
-- [[Sunday Upgrade Report — 2026-09-20 (PROD run, full)]] - `references` [EXTRACTED]
+- [[Sunday Upgrade Report — 2026-09-17 (on-demand run, prod account)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_347
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Weekly_Upgrade_Report__2026-08-30

@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-06-prod.md"
 type: "document"
-community: "Community 227"
+community: "sunday-upgrade-apply.sh"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_227
+  - community/sunday-upgrade-applysh
 ---
 
 # Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)
@@ -18,4 +18,4 @@ tags:
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[sunday-upgrade.sh (remote-control launcher)]] - `references` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_227
+#graphify/document #graphify/EXTRACTED #community/sunday-upgrade-applysh

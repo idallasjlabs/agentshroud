@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1984"
-location: "L879"
+community: "Changed"
+location: "L661"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1984
+  - community/Changed
 ---
 
 # Summary
 
 ## Connections
-- [[Unreleased — featv0.8.0-enforcement-hardening (session 3 — 2026-03-15)]] - `contains` [EXTRACTED]
+- [[1.1.0 — feat-v1.4.0-shroud-another-bot — Hermes (2026-05-29)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1984
+#graphify/document #graphify/EXTRACTED #community/Changed

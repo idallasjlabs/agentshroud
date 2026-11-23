@@ -1,23 +1,17 @@
 ---
-source_file: "cli/src/main.rs"
-type: "code"
-community: "Community 39"
-location: "L337"
+source_file: "docs/project/glossary.md"
+type: "document"
+community: "AgentShroud Project Terminology"
+location: "L115"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/Community_39
+  - community/AgentShroud_Project_Terminology
 ---
 
 # T
 
 ## Connections
-- [[.new()_1]] - `references` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
-- [[run_approvals_decide()]] - `references` [EXTRACTED]
-- [[run_approvals_list()]] - `references` [EXTRACTED]
-- [[run_cves()]] - `references` [EXTRACTED]
-- [[run_deploy_status()]] - `references` [EXTRACTED]
-- [[run_status()]] - `references` [EXTRACTED]
+- [[AgentShroud Project Terminology]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Community_39
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Project_Terminology

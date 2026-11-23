@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/athena.md"
+source_file: ".github/agents/i-atlas.agent.md"
 type: "document"
-community: "Community 1557"
-location: "L120"
+community: "Atlas — Curriculum Architect"
+location: "L96"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1557
+  - community/Atlas__Curriculum_Architect
 ---
 
 # System Prompt
 
 ## Connections
-- [[description of what this does]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1557
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/hermes.md"
+source_file: "docker/config/hermes/skills/i-oracle/SKILL.md"
 type: "document"
-community: "Community 1977"
-location: "L61"
+community: "Oracle — Feedback Analyst"
+location: "L73"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1977
+  - community/Oracle__Feedback_Analyst
 ---
 
 # System Prompt
 
 ## Connections
-- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1977
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,12 +1,12 @@
 ---
 source_file: "skills/openclaw/gh-issues/SKILL.md"
 type: "document"
-community: "Community 533"
+community: "gh-issues — Auto-fix GitHub Issues with Parallel Sub-agents"
 location: "L692"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_533
+  - community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents
 ---
 
 # Step 6.4 — Present Review Comments
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 6 — PR Review Handler]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_533
+#graphify/document #graphify/EXTRACTED #community/gh-issues__Auto-fix_GitHub_Issues_with_Parallel_Sub-agents

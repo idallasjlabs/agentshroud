@@ -1,11 +1,11 @@
 ---
 source_file: "firmware/voice-terminal/SETUP.md"
 type: "rationale"
-community: "Community 555"
+community: "AgentShroud Changelog"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Community_555
+  - community/AgentShroud_Changelog
 ---
 
 # Tailscale Funnel Exposure (supersedes on-device client)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Voice Gateway Service (STTTTS on marvin)]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Community_555
+#graphify/rationale #graphify/EXTRACTED #community/AgentShroud_Changelog

@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 106"
-location: "L1096"
+community: "[1.5.0] \"A2A Governance\" (2026-08-14)"
+location: "L715"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_106
+  - community/150_A2A_Governance_2026-08-14
 ---
 
 # Summary
 
 ## Connections
-- [[0.4.0 - 2026-02-19]] - `contains` [EXTRACTED]
+- [[1.0.0 — featv1.0.0 — Fortress (2026-03-31)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_106
+#graphify/document #graphify/EXTRACTED #community/150_A2A_Governance_2026-08-14

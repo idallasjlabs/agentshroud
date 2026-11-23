@@ -1,17 +1,17 @@
 ---
 source_file: "CHANGELOG.md"
 type: "document"
-community: "Community 1984"
-location: "L504"
+community: "Changelog — AgentShroud™"
+location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1984
+  - community/Changelog__AgentShroud
 ---
 
 # Summary
 
 ## Connections
-- [[1.2.1 — releasev1.2.1-quality-sweep (2026-06-27)]] - `contains` [EXTRACTED]
+- [[1.5.1 A2A Governance (2026-08-22)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1984
+#graphify/document #graphify/EXTRACTED #community/Changelog__AgentShroud

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/ssh-configuration.md"
 type: "document"
-community: "Community 818"
+community: "SSH Configuration Guide"
 location: "L113"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_818
+  - community/SSH_Configuration_Guide
 ---
 
 # Step 4: Pre-populate known_hosts (recommended)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[How to Add a New Trusted Host]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_818
+#graphify/document #graphify/EXTRACTED #community/SSH_Configuration_Guide

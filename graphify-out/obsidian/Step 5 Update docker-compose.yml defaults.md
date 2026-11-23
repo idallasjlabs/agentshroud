@@ -1,17 +1,17 @@
 ---
 source_file: "docs/planning/redteam/01-enforce-by-default.md"
 type: "document"
-community: "Community 721"
+community: "Flip core security modules from monitor to enforce mode"
 location: "L121"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_721
+  - community/Flip_core_security_modules_from_monitor_to_enforce_mode
 ---
 
 # Step 5: Update docker-compose.yml defaults
 
 ## Connections
-- [[Remediation_2]] - `contains` [EXTRACTED]
+- [[Remediation_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_721
+#graphify/document #graphify/EXTRACTED #community/Flip_core_security_modules_from_monitor_to_enforce_mode
