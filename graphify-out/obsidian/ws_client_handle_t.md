@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "wakeword.c"
+community: "voice_task"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/voice_task
 ---
 
 # ws_client_handle_t
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_send_status_beacon()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/voice_task

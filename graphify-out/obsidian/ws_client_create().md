@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "ws_client.c"
+community: "voice_task"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_clientc
+  - community/voice_task
 ---
 
 # ws_client_create()
@@ -20,4 +20,4 @@ tags:
 - [[ws_pcm_cb_t]] - `references` [EXTRACTED]
 - [[ws_state_cb_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_clientc
+#graphify/code #graphify/EXTRACTED #community/voice_task

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # websocket.py
@@ -22,7 +22,7 @@ tags:
 - [[_coerce_to_ws_event()]] - `contains` [EXTRACTED]
 - [[_get_config_token()]] - `imports` [EXTRACTED]
 - [[event_bus.py_2]] - `imports_from` [EXTRACTED]
-- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[fastapi_4]] - `imports_from` [EXTRACTED]
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[socauth.py]] - `imports_from` [EXTRACTED]
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports_from` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

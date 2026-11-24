@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ws_client.c"
+community: "voice_task"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_clientc
+  - community/voice_task
 ---
 
 # ws_state_cb_t
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ws_client_create()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_clientc
+#graphify/code #graphify/EXTRACTED #community/voice_task

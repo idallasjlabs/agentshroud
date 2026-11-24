@@ -1,20 +1,20 @@
 ---
 source_file: "firmware/voice-terminal/main/ws_client.c"
 type: "code"
-community: "ws_client.c"
+community: "voice_task"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_clientc
+  - community/voice_task
 ---
 
 # ws_client_send_pcm()
 
 ## Connections
 - [[_deliver_utterance()]] - `calls` [INFERRED]
-- [[esp_err_t_3]] - `references` [EXTRACTED]
+- [[esp_err_t_4]] - `references` [EXTRACTED]
 - [[ws_client.c]] - `contains` [EXTRACTED]
 - [[ws_client_handle_t_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_clientc
+#graphify/code #graphify/EXTRACTED #community/voice_task
