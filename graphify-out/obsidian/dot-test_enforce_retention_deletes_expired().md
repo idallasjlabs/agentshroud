@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Retention enforcement removes expired entries.]] - `rationale_for` [EXTRACTED]
 - [[TestRetention]] - `method` [EXTRACTED]
-- [[asyncio_39]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

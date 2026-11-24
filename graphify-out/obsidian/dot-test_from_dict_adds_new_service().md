@@ -12,7 +12,7 @@ tags:
 # .test_from_dict_adds_new_service()
 
 ## Connections
-- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[TestPrivacyPolicyParsing]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

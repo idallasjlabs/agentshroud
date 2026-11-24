@@ -12,7 +12,7 @@ tags:
 # .test_from_dict()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[TestRuntimeConfig]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

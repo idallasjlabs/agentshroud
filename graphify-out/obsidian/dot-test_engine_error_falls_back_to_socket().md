@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_patch_exists"
+community: "ServiceManager"
 location: "L665"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_patch_exists
+  - community/ServiceManager
 ---
 
 # .test_engine_error_falls_back_to_socket()
@@ -17,4 +17,4 @@ tags:
 - [[_fake_socket_logs()]] - `indirect_call` [INFERRED]
 - [[_patch_exists()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_patch_exists
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEgressFilter"
+community: "EgressFilter"
 location: "L496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilter
+  - community/EgressFilter
 ---
 
 # .test_empty_ports_allows_all()
@@ -16,4 +16,4 @@ tags:
 - [[EgressPolicy]] - `calls` [EXTRACTED]
 - [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

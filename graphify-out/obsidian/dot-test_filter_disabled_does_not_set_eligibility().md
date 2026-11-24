@@ -17,6 +17,6 @@ tags:
 - [[When group_mention_only is disabled, eligibility map is not populated.]] - `rationale_for` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

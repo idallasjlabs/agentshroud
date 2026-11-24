@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "TokenValidator"
+community: "_make_token"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/_make_token
 ---
 
 # .test_empty_scope_accepted_when_none_required()
@@ -15,4 +15,4 @@ tags:
 - [[TestScopeEnforcement]] - `method` [EXTRACTED]
 - [[_make_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/_make_token

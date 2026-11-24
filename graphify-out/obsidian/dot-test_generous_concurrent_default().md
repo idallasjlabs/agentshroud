@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TestSubagentMonitorConfig"
+community: "SubagentMonitor"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSubagentMonitorConfig
+  - community/SubagentMonitor
 ---
 
 # .test_generous_concurrent_default()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSubagentMonitorConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSubagentMonitorConfig
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

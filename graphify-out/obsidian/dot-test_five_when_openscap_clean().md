@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "_score_compliance_auditing"
 location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/_score_compliance_auditing
 ---
 
 # .test_five_when_openscap_clean()
 
 ## Connections
-- [[TestScoreContainerHardening_1]] - `method` [EXTRACTED]
+- [[TestScoreContainerHardening]] - `method` [EXTRACTED]
 - [[_openscap_clean()]] - `calls` [EXTRACTED]
 - [[_score_container_hardening()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/_score_compliance_auditing

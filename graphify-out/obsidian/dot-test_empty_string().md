@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestExfiltrationDetection"
+community: "DNSFilterConfig"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/DNSFilterConfig
 ---
 
 # .test_empty_string()
@@ -15,4 +15,4 @@ tags:
 - [[dot-shannon_entropy()]] - `calls` [EXTRACTED]
 - [[TestEntropyCalculator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

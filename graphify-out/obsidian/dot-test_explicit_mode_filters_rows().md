@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestAgentsRegistry]] - `method` [EXTRACTED]
-- [[_bot()_1]] - `calls` [EXTRACTED]
+- [[_bot()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

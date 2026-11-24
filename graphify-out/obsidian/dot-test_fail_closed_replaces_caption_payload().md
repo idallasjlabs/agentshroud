@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_multipart_body"
+community: "TestOutboundScanUnification"
 location: "L5349"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_multipart_body
+  - community/TestOutboundScanUnification
 ---
 
 # .test_fail_closed_replaces_caption_payload()
@@ -15,7 +15,7 @@ tags:
 - [[Fail-closed substitution must target the resolved text field. Regression the…]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundScanUnification]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
-- [[process_outbound()_9]] - `contains` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
+- [[process_outbound()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_multipart_body
+#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_gateway_yaml_ssh_hosts_cover_all_lab_hosts"
 location: "L733"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_gateway_yaml_ssh_hosts_cover_all_lab_hosts
 ---
 
 # .test_gateway_yaml_ssh_hosts_cover_all_lab_hosts()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[agentshroud.yaml must define all three lab hosts in ssh.hosts as agentshroud-…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_gateway_yaml_ssh_hosts_cover_all_lab_hosts

@@ -12,7 +12,7 @@ tags:
 # .test_entry_to_py_handles_none_cvss()
 
 ## Connections
-- [[TestSerialization]] - `method` [EXTRACTED]
+- [[TestSerialization_1]] - `method` [EXTRACTED]
 - [[_adv()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
 

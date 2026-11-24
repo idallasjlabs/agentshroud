@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "lifespan.py"
 location: "L337"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ContextGuard
+  - community/lifespanpy
 ---
 
 # .test_empty_inputs_everywhere()
@@ -18,4 +18,4 @@ tags:
 - [[PromptGuard]] - `calls` [INFERRED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextGuard
+#graphify/code #graphify/INFERRED #community/lifespanpy
