@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestEdgeEnroll"
+community: "TestAgentsRegistry"
 location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEdgeEnroll
+  - community/TestAgentsRegistry
 ---
 
 # .test_killed_vendor_cannot_enroll()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeEnroll]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEdgeEnroll
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

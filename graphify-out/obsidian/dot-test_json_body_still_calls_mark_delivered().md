@@ -16,6 +16,6 @@ tags:
 - [[dot-_make_proxy_with_mock_buffer()]] - `calls` [EXTRACTED]
 - [[JSON getUpdates body must still call mark_delivered (existing behaviour…]] - `rationale_for` [EXTRACTED]
 - [[TestReplayBufferOffsetParsing]] - `method` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

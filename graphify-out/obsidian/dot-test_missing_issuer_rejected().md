@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "TokenValidator"
+community: "_make_token"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/_make_token
 ---
 
 # .test_missing_issuer_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[TestIssuerValidation]] - `method` [EXTRACTED]
 - [[_make_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/_make_token

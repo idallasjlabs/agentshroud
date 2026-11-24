@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestMiddlewareSessionEnforcement"
 location: "L402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # .test_middleware_session_context_injection()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test that middleware injects session context.]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareSessionEnforcement]] - `method` [EXTRACTED]
-- [[asyncio_72]] - `references` [EXTRACTED]
+- [[asyncio_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

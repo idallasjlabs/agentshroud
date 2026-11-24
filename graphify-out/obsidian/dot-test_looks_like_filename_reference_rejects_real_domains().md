@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "._extract_first_egress_target"
+community: "TestOutboundClassifierHelpers"
 location: "L4130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_first_egress_target
+  - community/TestOutboundClassifierHelpers
 ---
 
 # .test_looks_like_filename_reference_rejects_real_domains()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_looks_like_filename_reference()]] - `calls` [EXTRACTED]
 - [[TestOutboundClassifierHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_first_egress_target
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

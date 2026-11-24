@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestLifespanWiring]] - `method` [EXTRACTED]
-- [[__init__()_25]] - `contains` [EXTRACTED]
+- [[__init__()_22]] - `contains` [EXTRACTED]
 - [[asyncio_88]] - `references` [EXTRACTED]
 - [[run()_6]] - `contains` [EXTRACTED]
 

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
 community: "EncryptedStore"
-location: "L746"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,6 @@ tags:
 # .test_key_rotation()
 
 ## Connections
-- [[Key rotation should re-encrypt all blobs.]] - `rationale_for` [EXTRACTED]
-- [[TestCryptography]] - `method` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EncryptedStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: "TestOutboundPipelineIntegration"
 location: "L1008"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # .test_memory_provider_error_underscore_variant_is_rewritten()
@@ -15,6 +15,6 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[Underscore-delimited embedding_provider wording should still trigger rewrite.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "TestLifespan"
+community: "chatbot/main.py"
 location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLifespan
+  - community/chatbot/mainpy
 ---
 
 # .test_lifespan_with_api_key_initializes_async_client()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifespan]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLifespan
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

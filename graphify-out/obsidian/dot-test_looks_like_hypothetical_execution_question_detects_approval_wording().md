@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "normalize_input"
 location: "L7278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/normalize_input
 ---
 
 # .test_looks_like_hypothetical_execution_question_detects_approval_wording()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_looks_like_hypothetical_execution_question()]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

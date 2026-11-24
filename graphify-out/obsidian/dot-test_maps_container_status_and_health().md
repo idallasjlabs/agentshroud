@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "test_soc_edge.py"
+community: "TestLocalAgentHealthHelper"
 location: "L329"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_edgepy
+  - community/TestLocalAgentHealthHelper
 ---
 
 # .test_maps_container_status_and_health()
@@ -15,4 +15,4 @@ tags:
 - [[TestLocalAgentHealthHelper]] - `method` [EXTRACTED]
 - [[list_services()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy
+#graphify/code #graphify/EXTRACTED #community/TestLocalAgentHealthHelper

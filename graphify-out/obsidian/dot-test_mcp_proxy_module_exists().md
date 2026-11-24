@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # .test_mcp_proxy_module_exists()
@@ -15,4 +15,4 @@ tags:
 - [[MCP proxy module should be importable.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy
