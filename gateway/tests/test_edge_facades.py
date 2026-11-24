@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from types import SimpleNamespace
 
 import httpx
+import pytest
 
 from gateway.inbound_edge.facades import HermesDelegate, LabSearch, PkeStatus
 from gateway.security.instruction_envelope import (
@@ -126,3 +127,47 @@ async def test_delegate_wraps_task_as_untrusted_and_targets_restricted_profile()
     )
     assert out == {"reply": "done", "hermes_session_id": "sess-42"}
     assert facade.target == "hermes:edge-delegate"
+
+
+# ── lab_search egress: internal SearXNG goes direct, anything else stays proxied ──
+# Prod 2026-11-24: the gateway's egress proxy (127.0.0.1:8181) only handles CONNECT,
+# so lab_search's plain-http GET to http://searxng-local:8080 got 405 and every call
+# failed with "internal error", while direct GET returned 200. The mocked transport
+# above never sent anything through the proxy, so no test saw it.
+@pytest.mark.parametrize(
+    "url,expected",
+    [
+        ("http://searxng-local:8080", None),
+        ("http://searxng:8080/", None),
+        ("http://searx.example.com:8080", "http://127.0.0.1:8181"),
+        ("https://search.example.org", "http://127.0.0.1:8181"),
+        ("http://10.254.111.8:8080", "http://127.0.0.1:8181"),
+        ("http://localhost:8080", "http://127.0.0.1:8181"),
+    ],
+)
+def test_searxng_proxy_direct_only_for_internal_container_names(url, expected):
+    from gateway.inbound_edge.service import _searxng_proxy
+
+    assert _searxng_proxy(url, "http://127.0.0.1:8181") == expected
+
+
+async def test_lab_search_reaches_internal_searxng_without_the_connect_only_proxy():
+    """End-to-end through the real wiring: with the default URL, lab_search must not
+    route its http GET via the egress proxy (which answers 405 to non-CONNECT)."""
+    from gateway.inbound_edge.service import _searxng_proxy
+
+    url = "http://searxng-local:8080"
+    seen = []
+
+    def handler(request):
+        seen.append(request)
+        if request.method != "CONNECT" and request.url.host == "127.0.0.1":
+            return httpx.Response(405)
+        return httpx.Response(200, json={"results": [{"title": "t", "url": "u", "content": "c"}]})
+
+    facade = LabSearch(
+        url, _searxng_proxy(url, "http://127.0.0.1:8181"), transport=httpx.MockTransport(handler)
+    )
+    out = await facade.run({"query": "OpenClaw release"}, None)
+    assert out["results"] == [{"title": "t", "url": "u", "snippet": "c"}]
+    assert facade._proxy is None
