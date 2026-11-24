@@ -36,11 +36,12 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_SecurityPipeline]]
-- 3 edges to [[_COMMUNITY_test_web_api_coverage.py]]
-- 1 edge to [[_COMMUNITY_SecurityConfig]]
+- 2 edges to [[_COMMUNITY_ModeRequest]]
+- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
-- [[TestObservatoryMode]] - degree 12, connects to 2 communities
+- [[TestObservatoryMode]] - degree 12, connects to 3 communities
 - [[dot-test_get_module_mode_respect_global_override()]] - degree 3, connects to 1 community
 - [[dot-test_observatory_mode_state_initialization()]] - degree 3, connects to 1 community
 - [[dot-test_security_pipeline_set_global_mode()]] - degree 3, connects to 1 community

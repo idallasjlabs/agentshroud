@@ -8,7 +8,7 @@ members: 60
 **Members:** 60 nodes
 
 ## Members
-- [[dot-__init__()_88]] - code - gateway/security/output_canary.py
+- [[dot-__init__()_93]] - code - gateway/security/output_canary.py
 - [[dot-_create_detection_patterns()]] - code - gateway/security/output_canary.py
 - [[dot-_create_invisible_canary()]] - code - gateway/security/output_canary.py
 - [[dot-_scan_for_canary()]] - code - gateway/security/output_canary.py
@@ -16,7 +16,7 @@ members: 60
 - [[dot-cleanup_expired_canaries()]] - code - gateway/security/output_canary.py
 - [[dot-generate_canary()]] - code - gateway/security/output_canary.py
 - [[dot-get_status()]] - code - gateway/security/output_canary.py
-- [[dot-setup_method()_14]] - code - gateway/tests/test_output_canary.py
+- [[dot-setup_method()_12]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_canary_cleanup()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_canary_generation_per_session()]] - code - gateway/tests/test_output_canary.py
 - [[dot-test_clean_response_passes()]] - code - gateway/tests/test_output_canary.py
@@ -44,7 +44,7 @@ members: 60
 - [[Main Output Canary System for detecting prompt leakage. This system generates…]] - rationale - gateway/security/output_canary.py
 - [[Output Canary System for AgentShroud Gateway Detects prompt leakage by…]] - rationale - gateway/security/output_canary.py
 - [[OutputCanary]] - code - gateway/security/output_canary.py
-- [[Pattern_4]] - code
+- [[Pattern_3]] - code
 - [[Result of checking a response for canary presence.]] - rationale - gateway/security/output_canary.py
 - [[Return canary status for dashboard. Args session_id Session identifier…]] - rationale - gateway/security/output_canary.py
 - [[Scan response text for a specific canary. Args session_id Session identifier…]] - rationale - gateway/security/output_canary.py
@@ -77,11 +77,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
-- 3 edges to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_PathIsolationManager]]
 
 ## Top bridge nodes
-- [[OutputCanary]] - degree 21, connects to 3 communities
+- [[OutputCanary]] - degree 21, connects to 4 communities
 - [[output_canary.py]] - degree 7, connects to 2 communities
 - [[dot-test_output_canary_instantiates()]] - degree 2, connects to 1 community

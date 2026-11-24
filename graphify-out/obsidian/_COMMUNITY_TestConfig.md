@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
+- 1 edge to [[_COMMUNITY__engine]]
 
 ## Top bridge nodes
 - [[TestConfig]] - degree 9, connects to 1 community

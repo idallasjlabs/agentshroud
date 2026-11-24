@@ -8,9 +8,9 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__call__()_5]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-__init__()_93]] - code - gateway/security/rate_limit_guard.py
-- [[dot-__init__()_94]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__call__()_6]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__init__()_97]] - code - gateway/security/rate_limit_guard.py
+- [[dot-__init__()_98]] - code - gateway/tests/test_rate_limit_guard.py
 - [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[dot-advance()_1]] - code - gateway/tests/test_rate_limit_guard.py
@@ -29,10 +29,10 @@ members: 42
 - [[Tests for RateLimitGuard — SCRUM-68 WS-B.1 deep-hardening module. Adaptive per-…]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[__getitem__()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[_make_pipeline()_2]] - code - gateway/tests/test_rate_limit_guard.py
-- [[asyncio_38]] - code
+- [[asyncio_35]] - code
 - [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[fixture_55]] - code
+- [[fixture_63]] - code
 - [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
 - [[test_burst_clears_after_burst_window()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[test_burst_detection_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
@@ -60,9 +60,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_SecurityPipeline]]
+- 2 edges to [[_COMMUNITY_AsyncMock]]
 - 2 edges to [[_COMMUNITY_lifespan.py]]
 - 2 edges to [[_COMMUNITY_lifespan]]
-- 2 edges to [[_COMMUNITY_AsyncMock]]
 
 ## Top bridge nodes
 - [[RateLimitGuard]] - degree 24, connects to 2 communities

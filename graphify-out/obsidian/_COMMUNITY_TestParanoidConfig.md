@@ -39,12 +39,12 @@ members: 40
 - [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
-- [[Path_41]] - code
+- [[Path_42]] - code
 - [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
 - [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
 - [[TestRecommendedConfig]] - code - gateway/tests/test_config_validation.py
 - [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
-- [[fixture_95]] - code
+- [[fixture_96]] - code
 - [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
 - [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
 - [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
@@ -57,7 +57,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestConfigValidation]]
+- 4 edges to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
 - [[TestParanoidConfig]] - degree 21, connects to 1 community

@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_116]] - document - .agents/skills/socrates/README.md
+- [[Purpose_114]] - document - .agents/skills/socrates/README.md
 - [[Related Skills_46]] - document - .agents/skills/socrates/README.md
 - [[Socrates — Dialogue Architect_1]] - document - .agents/skills/socrates/README.md
 - [[Usage_56]] - document - .agents/skills/socrates/README.md

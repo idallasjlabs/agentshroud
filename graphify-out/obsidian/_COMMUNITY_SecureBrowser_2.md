@@ -8,7 +8,7 @@ members: 45
 **Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_77]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_86]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
@@ -19,7 +19,7 @@ members: 45
 - [[dot-_take_screenshot()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-_validate_url()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-click()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
-- [[dot-close()_7]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[dot-close()_5]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-extract()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-fill_field()_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[dot-get_audit_log()_6]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
@@ -31,7 +31,7 @@ members: 45
 - [[Clean up browser resources_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Click an element Security Risk classification for destructive actions_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Enum_22]] - code
-- [[Exception_7]] - code
+- [[Exception_9]] - code
 - [[Extract data from page Security No credential extraction allowed_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Fill a single form field Security Risk classification, approval for sensitive…_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Initialize browser with security settings_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
@@ -42,7 +42,7 @@ members: 45
 - [[Raised when security policy is violated_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Return complete audit log_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Risk classification for browser actions_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
-- [[RiskLevel_3]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[RiskLevel_4]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Secure browser automation with enterprise controls Security guarantees - Only…_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[SecureBrowser_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[SecureBrowser - Enterprise-grade secure browser automation Part of AgentShroud…_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
@@ -51,7 +51,7 @@ members: 45
 - [[SecurityError_2]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Take screenshot and save to audit directory_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist Security This is the primary URL…_2]] - rationale - docker/config/openclaw/skills/i-browser/scripts/browse.py
-- [[main()_12]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
+- [[main()_13]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 - [[openclawskillsi-browserscriptsbrowse.py]] - code - docker/config/openclaw/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)

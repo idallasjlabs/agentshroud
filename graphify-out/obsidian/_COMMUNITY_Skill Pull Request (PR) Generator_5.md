@@ -13,7 +13,7 @@ members: 9
 - [[Content Requirements_5]] - document - .opencode/agents/i-pr.md
 - [[Header_5]] - document - .opencode/agents/i-pr.md
 - [[Objective_5]] - document - .opencode/agents/i-pr.md
-- [[Role_92]] - document - .opencode/agents/i-pr.md
+- [[Role_93]] - document - .opencode/agents/i-pr.md
 - [[Safety_6]] - document - .opencode/agents/i-pr.md
 - [[Skill Pull Request (PR) Generator_5]] - document - .opencode/agents/i-pr.md
 - [[Technical Detail_5]] - document - .opencode/agents/i-pr.md

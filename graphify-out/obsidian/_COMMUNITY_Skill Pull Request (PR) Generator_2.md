@@ -12,7 +12,7 @@ members: 9
 - [[Content Requirements_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 - [[Header_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 - [[Objective_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md
-- [[Role_83]] - document - docker/config/hermes/skills/i-pr/SKILL.md
+- [[Role_84]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 - [[Safety_3]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 - [[Skill Pull Request (PR) Generator_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md
 - [[Technical Detail_2]] - document - docker/config/hermes/skills/i-pr/SKILL.md

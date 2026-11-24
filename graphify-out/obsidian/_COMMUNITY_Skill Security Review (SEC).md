@@ -17,7 +17,7 @@ members: 13
 - [[Layer 4 Data Flow Security]] - document - .agents/agents/i-sec.md
 - [[Output Format_11]] - document - .agents/agents/i-sec.md
 - [[Review Layers]] - document - .agents/agents/i-sec.md
-- [[Role_34]] - document - .agents/agents/i-sec.md
+- [[Role_35]] - document - .agents/agents/i-sec.md
 - [[SecureClaw-Specific Threat Model]] - document - .agents/agents/i-sec.md
 - [[Skill Security Review (SEC)]] - document - .agents/agents/i-sec.md
 - [[Verification Commands]] - document - .agents/agents/i-sec.md

@@ -8,7 +8,7 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__init__()_92]] - code - gateway/security/shared_memory.py
+- [[dot-__init__()_96]] - code - gateway/security/shared_memory.py
 - [[dot-_is_authorized_group_writer()]] - code - gateway/security/shared_memory.py
 - [[dot-_is_owner()_1]] - code - gateway/security/group_workspace.py
 - [[dot-_strip_private_content()]] - code - gateway/security/shared_memory.py
@@ -60,12 +60,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_GroupWorkspaceManager]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
 - 3 edges to [[_COMMUNITY_test_shared_memory.py]]
 - 3 edges to [[_COMMUNITY_TeamsConfig]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
 - 2 edges to [[_COMMUNITY_test_group_isolation.py]]
 - 2 edges to [[_COMMUNITY_test_security_regressions_v1_2.py]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
 - 1 edge to [[_COMMUNITY_UserSessionManager]]
 
 ## Top bridge nodes

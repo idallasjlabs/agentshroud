@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Project Management (PM)]] - document - docker/config/hermes/skills/i-pm/README.md
-- [[Purpose_128]] - document - docker/config/hermes/skills/i-pm/README.md
+- [[Purpose_126]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Related Skills_58]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[Usage_68]] - document - docker/config/hermes/skills/i-pm/README.md
 - [[hermesskillsi-pmREADME]] - document - docker/config/hermes/skills/i-pm/README.md

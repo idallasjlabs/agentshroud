@@ -10,8 +10,8 @@ members: 19
 ## Members
 - [[dot-agentsskillsi-tddREADME]] - document - .agents/skills/i-tdd/README.md
 - [[Branding Specialist Skill (i-bs, external)]] - concept - .agents/skills/i-bs/SKILL.md
-- [[Purpose_159]] - document - .agents/skills/i-tdd/README.md
-- [[Purpose_160]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Purpose_160]] - document - .agents/skills/i-tdd/README.md
+- [[Purpose_161]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[Related Skills_104]] - document - .agents/skills/i-tdd/README.md
 - [[Related Skills_105]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[Technical Illustrator (TI)_3]] - document - .agents/skills/i-ti/SKILL.md

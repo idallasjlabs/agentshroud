@@ -11,9 +11,9 @@ members: 12
 - [[1. Summary line_6]] - document - reports/upgrade-2026-10-11.md
 - [[2. Environment mapping_5]] - document - reports/upgrade-2026-10-11.md
 - [[3. Upgrade table (discovery 2026-10-11 ~0301 EDT, `scriptsdiscover_upstream_versions.py --json`)]] - document - reports/upgrade-2026-10-11.md
-- [[4. Security findings_4]] - document - reports/upgrade-2026-10-11.md
-- [[5. Verification evidence_4]] - document - reports/upgrade-2026-10-11.md
-- [[6. Breaking changes  manual follow-ups_1]] - document - reports/upgrade-2026-10-11.md
+- [[4. Security findings_5]] - document - reports/upgrade-2026-10-11.md
+- [[5. Verification evidence_5]] - document - reports/upgrade-2026-10-11.md
+- [[6. Breaking changes  manual follow-ups_2]] - document - reports/upgrade-2026-10-11.md
 - [[7. Rollback_1]] - document - reports/upgrade-2026-10-11.md
 - [[8. Time]] - document - reports/upgrade-2026-10-11.md
 - [[Apply attempt 1 (0301–0335 EDT) — FAILED, exit 50 (rollback script reported failure)]] - document - reports/upgrade-2026-10-11.md

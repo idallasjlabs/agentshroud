@@ -25,7 +25,7 @@ members: 19
 - [[Protected API endpoints must reject requests without auth tokens.]] - rationale - gateway/tests/test_api_contract.py
 - [[TestOpenAPIContract]] - code - gateway/tests/test_api_contract.py
 - [[The committed gatewayopenapi.json snapshot must match the live schema. This is…]] - rationale - gateway/tests/test_api_contract.py
-- [[fixture_137]] - code
+- [[fixture_139]] - code
 - [[test_api_contract.py]] - code - gateway/tests/test_api_contract.py
 
 ## Live Query (requires Dataview plugin)

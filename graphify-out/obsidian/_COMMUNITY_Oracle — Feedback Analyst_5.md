@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_58]] - document - .github/agents/i-oracle.agent.md
 - [[Persona_37]] - document - .github/agents/i-oracle.agent.md
 - [[Quality Checklist_43]] - document - .github/agents/i-oracle.agent.md
-- [[Role_108]] - document - .github/agents/i-oracle.agent.md
+- [[Role_110]] - document - .github/agents/i-oracle.agent.md
 - [[System Prompt_37]] - document - .github/agents/i-oracle.agent.md
 - [[i-oracle.agent]] - document - .github/agents/i-oracle.agent.md
 

@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Pull Request Generator (PR)_1]] - document - docker/config/hermes/skills/i-pr/README.md
-- [[Purpose_129]] - document - docker/config/hermes/skills/i-pr/README.md
+- [[Purpose_127]] - document - docker/config/hermes/skills/i-pr/README.md
 - [[Related Skills_59]] - document - docker/config/hermes/skills/i-pr/README.md
 - [[Usage_69]] - document - docker/config/hermes/skills/i-pr/README.md
 - [[hermesskillsi-prREADME]] - document - docker/config/hermes/skills/i-pr/README.md

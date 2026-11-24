@@ -17,7 +17,7 @@ members: 13
 - [[Layer 4 Data Flow Security_5]] - document - .opencode/agents/i-sec.md
 - [[Output Format_21]] - document - .opencode/agents/i-sec.md
 - [[Review Layers_5]] - document - .opencode/agents/i-sec.md
-- [[Role_48]] - document - .opencode/agents/i-sec.md
+- [[Role_49]] - document - .opencode/agents/i-sec.md
 - [[SecureClaw-Specific Threat Model_5]] - document - .opencode/agents/i-sec.md
 - [[Skill Security Review (SEC)_5]] - document - .opencode/agents/i-sec.md
 - [[Verification Commands_5]] - document - .opencode/agents/i-sec.md

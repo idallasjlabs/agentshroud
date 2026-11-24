@@ -13,7 +13,7 @@ members: 7
 - [[Output Format_68]] - document - .omp/agents/i-cr.md
 - [[Production-Specific Review Checks_5]] - document - .omp/agents/i-cr.md
 - [[Review Principles_5]] - document - .omp/agents/i-cr.md
-- [[Role_124]] - document - .omp/agents/i-cr.md
+- [[Role_126]] - document - .omp/agents/i-cr.md
 - [[Skill Code Review (CR)_5]] - document - .omp/agents/i-cr.md
 
 ## Live Query (requires Dataview plugin)

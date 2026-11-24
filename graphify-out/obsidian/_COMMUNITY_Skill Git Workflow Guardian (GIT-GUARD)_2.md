@@ -14,7 +14,7 @@ members: 9
 - [[Mandatory Workflow  (10 steps)_2]] - document - .github/agents/i-gg.agent.md
 - [[Protected Branch_2]] - document - .github/agents/i-gg.agent.md
 - [[REFUSE These_2]] - document - .github/agents/i-gg.agent.md
-- [[Role_85]] - document - .github/agents/i-gg.agent.md
+- [[Role_86]] - document - .github/agents/i-gg.agent.md
 - [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - document - .github/agents/i-gg.agent.md
 - [[i-gg.agent]] - document - .github/agents/i-gg.agent.md
 

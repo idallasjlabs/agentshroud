@@ -33,6 +33,7 @@ members: 34
 - [[Pausing is access-gating only, not a roleremoval change (constraint check).]] - rationale - gateway/tests/test_rbac.py
 - [[TestCollaboratorPersistence]] - code - gateway/tests/test_rbac.py
 - [[Writes to one exclusion set must not clobber the other persisted keys.]] - rationale - gateway/tests/test_rbac.py
+- [[boom()_6]] - code - gateway/tests/test_rbac.py
 - [[boom()_7]] - code - gateway/tests/test_rbac.py
 - [[boom()_8]] - code - gateway/tests/test_rbac.py
 - [[boom()_9]] - code - gateway/tests/test_rbac.py
@@ -40,7 +41,6 @@ members: 34
 - [[boom()_11]] - code - gateway/tests/test_rbac.py
 - [[boom()_12]] - code - gateway/tests/test_rbac.py
 - [[boom()_13]] - code - gateway/tests/test_rbac.py
-- [[boom()_14]] - code - gateway/tests/test_rbac.py
 - [[removed_collaborator_ids  paused_collaborator_ids share…]] - rationale - gateway/tests/test_rbac.py
 
 ## Live Query (requires Dataview plugin)
@@ -51,8 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_middleware.py]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[TestCollaboratorPersistence]] - degree 24, connects to 2 communities
+- [[TestCollaboratorPersistence]] - degree 24, connects to 1 community

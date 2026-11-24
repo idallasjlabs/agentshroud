@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_60]] - document - .omp/agents/mnemosyne.md
 - [[Persona_39]] - document - .omp/agents/mnemosyne.md
 - [[Quality Checklist_45]] - document - .omp/agents/mnemosyne.md
-- [[Role_110]] - document - .omp/agents/mnemosyne.md
+- [[Role_112]] - document - .omp/agents/mnemosyne.md
 - [[System Prompt_39]] - document - .omp/agents/mnemosyne.md
 
 ## Live Query (requires Dataview plugin)

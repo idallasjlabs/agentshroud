@@ -17,7 +17,7 @@ members: 14
 - [[Primary API Text-to-Dialogue_3]] - document - .github/agents/i-apollo.agent.md
 - [[Quality Checklist_7]] - document - .github/agents/i-apollo.agent.md
 - [[Quick Mode Create Podcast API_3]] - document - .github/agents/i-apollo.agent.md
-- [[Role_31]] - document - .github/agents/i-apollo.agent.md
+- [[Role_32]] - document - .github/agents/i-apollo.agent.md
 - [[Script Parsing_3]] - document - .github/agents/i-apollo.agent.md
 - [[Technical Specification_3]] - document - .github/agents/i-apollo.agent.md
 - [[Voice Configuration_3]] - document - .github/agents/i-apollo.agent.md

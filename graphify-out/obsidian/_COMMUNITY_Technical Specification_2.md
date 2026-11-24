@@ -18,7 +18,7 @@ members: 14
 - [[Primary API Text-to-Dialogue_2]] - document - .cursor/agents/apollo.md
 - [[Quality Checklist_6]] - document - .cursor/agents/apollo.md
 - [[Quick Mode Create Podcast API_2]] - document - .cursor/agents/apollo.md
-- [[Role_27]] - document - .cursor/agents/apollo.md
+- [[Role_28]] - document - .cursor/agents/apollo.md
 - [[Script Parsing_2]] - document - .cursor/agents/apollo.md
 - [[Technical Specification_2]] - document - .cursor/agents/apollo.md
 - [[Voice Configuration_2]] - document - .cursor/agents/apollo.md

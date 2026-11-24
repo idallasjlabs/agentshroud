@@ -13,7 +13,7 @@ members: 7
 - [[GitHub Actions Best Practices_6]] - document - .omp/agents/i-cicd.md
 - [[Quality Gates  (execution order)_6]] - document - .omp/agents/i-cicd.md
 - [[Review Flags  (block the merge)_6]] - document - .omp/agents/i-cicd.md
-- [[Role_123]] - document - .omp/agents/i-cicd.md
+- [[Role_125]] - document - .omp/agents/i-cicd.md
 - [[Skill CICD Pipeline Advisor (CICD)_6]] - document - .omp/agents/i-cicd.md
 
 ## Live Query (requires Dataview plugin)

@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_64]] - document - .opencode/agents/oracle.md
 - [[Persona_43]] - document - .opencode/agents/oracle.md
 - [[Quality Checklist_49]] - document - .opencode/agents/oracle.md
-- [[Role_114]] - document - .opencode/agents/oracle.md
+- [[Role_116]] - document - .opencode/agents/oracle.md
 - [[System Prompt_43]] - document - .opencode/agents/oracle.md
 
 ## Live Query (requires Dataview plugin)

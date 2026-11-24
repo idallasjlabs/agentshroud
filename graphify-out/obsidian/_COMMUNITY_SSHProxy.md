@@ -1,15 +1,15 @@
 ---
 type: community
-members: 144
+members: 136
 ---
 
 # SSHProxy
 
-**Members:** 144 nodes
+**Members:** 136 nodes
 
 ## Members
 - [[dot-' escaping the allowed root is rejected — never reaches proxy.write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[dot-__init__()_86]] - code - gateway/ssh_proxy/proxy.py
+- [[dot-__init__()_92]] - code - gateway/ssh_proxy/proxy.py
 - [[dot-is_auto_approved()]] - code - gateway/ssh_proxy/proxy.py
 - [[dot-test_absolute_path_accepted()]] - code - gateway/tests/test_ssh_endpoints.py
 - [[dot-test_absolute_path_outside_root_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
@@ -36,7 +36,6 @@ members: 144
 - [[dot-test_relative_path_resolved_under_root_accepted()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[dot-test_root_itself_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[dot-test_semicolon_rejected()]] - code - gateway/tests/test_ssh_endpoints.py
-- [[dot-test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
 - [[dot-test_unknown_host_rejected()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[dot-test_validate_auto_approve_exact_only()]] - code - gateway/tests/test_ssh_proxy.py
 - [[dot-test_validate_command_allowed()]] - code - gateway/tests/test_ssh_proxy.py
@@ -100,12 +99,10 @@ members: 144
 - [[SSH command proxy with validation and audit support]] - rationale - gateway/ssh_proxy/proxy.py
 - [[SSHProxy]] - code - gateway/ssh_proxy/proxy.py
 - [[SSHWriteResult]] - code - gateway/ssh_proxy/proxy.py
-- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
 - [[Test newline-based injection attempts (Finding 11)]] - rationale - gateway/tests/test_ssh_proxy.py
 - [[TestExecute]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestInjectionNewline]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestIsAutoApproved]] - code - gateway/tests/test_ssh_proxy.py
-- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
 - [[TestSSHProxyValidateWriteFile]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHProxyWriteFileTransport]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHValidateCwd]] - code - gateway/tests/test_ssh_endpoints.py
@@ -113,7 +110,6 @@ members: 144
 - [[TestSSHWriteFileLedgerAudit]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[TestValidateCommand]] - code - gateway/tests/test_ssh_proxy.py
-- [[Tests for SSH Proxy module]] - rationale - gateway/tests/test_ssh_proxy.py
 - [[The remote command string must not vary with request content — proving it…]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
 - [[Unit tests for SSHProxy.validate_cwd().]] - rationale - gateway/tests/test_ssh_endpoints.py
 - [[Unit tests for SSHProxy.validate_write_file().]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
@@ -124,8 +120,8 @@ members: 144
 - [[Validate a structured sshwrite_file request (host, path, content). Returns…]] - rationale - gateway/ssh_proxy/proxy.py
 - [[Write file content to a remote host via structured (non-shell-string)…]] - rationale - gateway/ssh_proxy/proxy.py
 - [[_b64()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[asyncio_35]] - code
-- [[asyncio_36]] - code
+- [[asyncio_32]] - code
+- [[asyncio_33]] - code
 - [[communicate()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[communicate()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[communicate()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
@@ -137,16 +133,12 @@ members: 144
 - [[fake_create_subprocess_exec()_3]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[fake_create_subprocess_exec()_4]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[fake_create_subprocess_exec()_5]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[fixture_51]] - code
 - [[kill()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[kill()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[kill()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[kill()_3]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[kill()_4]] - code - gateway/tests/test_ssh_write_file_endpoint.py
-- [[proxy()]] - code - gateway/tests/test_ssh_proxy.py
 - [[ssh binary missing  spawn failure surfaces as exit_code=-1 with the OSError…]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
-- [[ssh_config()]] - code - gateway/tests/test_ssh_proxy.py
-- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
 - [[wait()]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[wait()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
 - [[wait()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
@@ -161,17 +153,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 31 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 4 edges to [[_COMMUNITY_SSHResult]]
+- 31 edges to [[_COMMUNITY_GatewayConfig]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_SSHResult]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
-- [[SSHProxy]] - degree 90, connects to 6 communities
-- [[test_ssh_proxy.py]] - degree 15, connects to 2 communities
+- [[SSHProxy]] - degree 90, connects to 5 communities
+- [[TestExecute]] - degree 7, connects to 2 communities
 - [[_b64()]] - degree 33, connects to 1 community
 - [[TestSSHProxyValidateWriteFile]] - degree 16, connects to 1 community
-- [[TestSSHWriteFileEndpoint]] - degree 14, connects to 1 community
+- [[TestValidateCommand]] - degree 14, connects to 1 community

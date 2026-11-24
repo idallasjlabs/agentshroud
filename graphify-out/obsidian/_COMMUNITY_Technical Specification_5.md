@@ -18,7 +18,7 @@ members: 14
 - [[Primary API Text-to-Dialogue_5]] - document - .opencode/agents/apollo.md
 - [[Quality Checklist_9]] - document - .opencode/agents/apollo.md
 - [[Quick Mode Create Podcast API_5]] - document - .opencode/agents/apollo.md
-- [[Role_33]] - document - .opencode/agents/apollo.md
+- [[Role_34]] - document - .opencode/agents/apollo.md
 - [[Script Parsing_5]] - document - .opencode/agents/apollo.md
 - [[Technical Specification_5]] - document - .opencode/agents/apollo.md
 - [[Voice Configuration_5]] - document - .opencode/agents/apollo.md

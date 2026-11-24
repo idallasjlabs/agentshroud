@@ -15,7 +15,7 @@ members: 15
 - [[Guardrails_8]] - document - .opencode/agents/i-ab.md
 - [[Invocation Forms_4]] - document - .opencode/agents/i-ab.md
 - [[Jira  PR Comment Format_4]] - document - .opencode/agents/i-ab.md
-- [[Role_22]] - document - .opencode/agents/i-ab.md
+- [[Role_23]] - document - .opencode/agents/i-ab.md
 - [[Skill Audit Branch (AB) — Merge Regression Detection_4]] - document - .opencode/agents/i-ab.md
 - [[Step 1 — Verify the script exists_4]] - document - .opencode/agents/i-ab.md
 - [[Step 2 — Determine the target_4]] - document - .opencode/agents/i-ab.md

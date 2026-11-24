@@ -12,7 +12,7 @@ members: 7
 - [[Output Format_67]] - document - .github/agents/i-cr.agent.md
 - [[Production-Specific Review Checks_4]] - document - .github/agents/i-cr.agent.md
 - [[Review Principles_4]] - document - .github/agents/i-cr.agent.md
-- [[Role_122]] - document - .github/agents/i-cr.agent.md
+- [[Role_124]] - document - .github/agents/i-cr.agent.md
 - [[Skill Code Review (CR)_4]] - document - .github/agents/i-cr.agent.md
 - [[i-cr.agent]] - document - .github/agents/i-cr.agent.md
 

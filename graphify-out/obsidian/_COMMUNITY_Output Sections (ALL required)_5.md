@@ -19,7 +19,7 @@ members: 14
 - [[Closing Gate_5]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[Output Format Rules_5]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[Output Sections (ALL required)_5]] - document - docker/config/hermes/skills/i-pca/SKILL.md
-- [[Role_28]] - document - docker/config/hermes/skills/i-pca/SKILL.md
+- [[Role_29]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[Skill Pre-Change Analysis (PCA)_5]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 - [[hermesskillsi-pcaSKILL]] - document - docker/config/hermes/skills/i-pca/SKILL.md
 

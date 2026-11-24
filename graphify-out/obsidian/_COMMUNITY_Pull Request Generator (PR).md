@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-prREADME]] - document - .agents/skills/i-pr/README.md
 - [[Pull Request Generator (PR)]] - document - .agents/skills/i-pr/README.md
-- [[Purpose_105]] - document - .agents/skills/i-pr/README.md
+- [[Purpose_103]] - document - .agents/skills/i-pr/README.md
 - [[Related Skills_35]] - document - .agents/skills/i-pr/README.md
 - [[Usage_45]] - document - .agents/skills/i-pr/README.md
 

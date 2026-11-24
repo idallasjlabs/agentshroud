@@ -13,12 +13,12 @@ members: 11
 - [[dot-test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Any_15]] - code
+- [[Any_21]] - code
 - [[End-to-end register the bridge on a real ResourceGuard, trigger its alert path…]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[Recreate the lifespan bridge closure verbatim from…]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[The lifespan bridges ResourceGuard's native callback payload to…]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[_resource_alert_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[_resource_alert_bridge()_1]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 

@@ -19,7 +19,7 @@ members: 42
 - [[dot-test_dont_cleanup_active_user_directories()]] - code - gateway/tests/test_path_isolation.py
 - [[dot-test_end_user_session()]] - code - gateway/tests/test_path_isolation.py
 - [[dot-test_get_active_users()]] - code - gateway/tests/test_path_isolation.py
-- [[dot-test_get_stats()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_get_stats()_1]] - code - gateway/tests/test_path_isolation.py
 - [[dot-test_get_user_temp_path()]] - code - gateway/tests/test_path_isolation.py
 - [[dot-test_initialization()_1]] - code - gateway/tests/test_path_isolation.py
 - [[dot-test_path_rewriting_nested_paths()]] - code - gateway/tests/test_path_isolation.py
@@ -48,7 +48,7 @@ members: 42
 - [[Test user ID sanitization.]] - rationale - gateway/tests/test_path_isolation.py
 - [[Test user session registration.]] - rationale - gateway/tests/test_path_isolation.py
 - [[TestPathIsolationManager]] - code - gateway/tests/test_path_isolation.py
-- [[fixture_59]] - code
+- [[fixture_65]] - code
 - [[patch_5]] - code
 
 ## Live Query (requires Dataview plugin)
@@ -59,11 +59,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
-- 2 edges to [[_COMMUNITY_PathIsolationManager]]
-- 1 edge to [[_COMMUNITY_PathRewriteResult]]
+- 5 edges to [[_COMMUNITY_PathIsolationManager]]
 
 ## Top bridge nodes
-- [[TestPathIsolationManager]] - degree 23, connects to 3 communities
+- [[TestPathIsolationManager]] - degree 23, connects to 1 community
 - [[dot-config()]] - degree 4, connects to 1 community
 - [[dot-manager()_1]] - degree 4, connects to 1 community

@@ -13,7 +13,7 @@ members: 10
 - [[3. Data Quality Checks_2]] - document - .github/agents/i-data.agent.md
 - [[4. Cross-Site Comparison_2]] - document - .github/agents/i-data.agent.md
 - [[Critical Cost Control_2]] - document - .github/agents/i-data.agent.md
-- [[Role_70]] - document - .github/agents/i-data.agent.md
+- [[Role_71]] - document - .github/agents/i-data.agent.md
 - [[Skill Data Validation (DATA-VAL)_2]] - document - .github/agents/i-data.agent.md
 - [[Test Data Validation Pattern_2]] - document - .github/agents/i-data.agent.md
 - [[Validation Layers_2]] - document - .github/agents/i-data.agent.md

@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_130]] - document - docker/config/hermes/skills/i-sad/README.md
+- [[Purpose_128]] - document - docker/config/hermes/skills/i-sad/README.md
 - [[Related Skills_60]] - document - docker/config/hermes/skills/i-sad/README.md
 - [[System Audit Documentation_1]] - document - docker/config/hermes/skills/i-sad/README.md
 - [[Usage_70]] - document - docker/config/hermes/skills/i-sad/README.md

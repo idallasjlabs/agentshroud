@@ -42,8 +42,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 4 edges to [[_COMMUNITY_SSHProxy]]
+- 8 edges to [[_COMMUNITY_GatewayConfig]]
+- 3 edges to [[_COMMUNITY_SSHProxy]]
 
 ## Top bridge nodes
 - [[SSHResult]] - degree 15, connects to 2 communities

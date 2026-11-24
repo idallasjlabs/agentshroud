@@ -16,7 +16,7 @@ members: 13
 - [[Layer 4 Data Flow Security_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 - [[Output Format_16]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 - [[Review Layers_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
-- [[Role_40]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
+- [[Role_41]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 - [[SecureClaw-Specific Threat Model_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 - [[Skill Security Review (SEC)_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md
 - [[Verification Commands_2]] - document - docker/config/openclaw/skills/i-sec/SKILL.md

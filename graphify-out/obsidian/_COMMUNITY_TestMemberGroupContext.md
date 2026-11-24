@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_group_rbac.py]]
+- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
 
 ## Top bridge nodes
 - [[TestMemberGroupContext]] - degree 7, connects to 1 community

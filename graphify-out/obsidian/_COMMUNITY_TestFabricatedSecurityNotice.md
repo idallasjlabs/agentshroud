@@ -44,8 +44,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_asyncio_1]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_OutboundInfoFilter]]
 
 ## Top bridge nodes
-- [[TestFabricatedSecurityNotice]] - degree 19, connects to 2 communities
+- [[TestFabricatedSecurityNotice]] - degree 19, connects to 1 community

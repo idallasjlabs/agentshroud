@@ -1,14 +1,14 @@
 ---
 type: community
-members: 51
+members: 47
 ---
 
 # SessionManager
 
-**Members:** 51 nodes
+**Members:** 47 nodes
 
 ## Members
-- [[dot-__init__()_198]] - code - gateway/security/session_security.py
+- [[dot-__init__()_193]] - code - gateway/security/session_security.py
 - [[dot-_fingerprint()]] - code - gateway/security/session_security.py
 - [[dot-cleanup_expired()_3]] - code - gateway/security/session_security.py
 - [[dot-create_session()]] - code - gateway/security/session_security.py
@@ -17,7 +17,6 @@ members: 51
 - [[dot-manager()_2]] - code - gateway/tests/test_session_security.py
 - [[dot-register_event_source()]] - code - gateway/security/session_security.py
 - [[dot-test_cleanup_expired()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_create_session()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_destroy_session()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_different_ips_not_rate_limited()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_expired_session_rejected()]] - code - gateway/tests/test_session_security.py
@@ -25,8 +24,6 @@ members: 51
 - [[dot-test_rate_limit_resets_after_window()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_rotate_session()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_rotated_session_valid()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_session_bound_to_identity()]] - code - gateway/tests/test_session_security.py
-- [[dot-test_session_id_is_cryptographically_random()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_unknown_event_source_rejected()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_unknown_session_rejected()]] - code - gateway/tests/test_session_security.py
 - [[dot-test_unregistered_session_event_rejected()]] - code - gateway/tests/test_session_security.py
@@ -37,7 +34,7 @@ members: 51
 - [[dot-validate_event()]] - code - gateway/security/session_security.py
 - [[dot-validate_nonce()]] - code - gateway/security/session_security.py
 - [[dot-validate_session()]] - code - gateway/security/session_security.py
-- [[Any_82]] - code
+- [[Any_79]] - code
 - [[EventInjectionError]] - code - gateway/security/session_security.py
 - [[Exception_18]] - code
 - [[Generate a single-use, time-bound nonce for an instruction. Format…]] - rationale - gateway/security/session_security.py
@@ -51,12 +48,11 @@ members: 51
 - [[TestEventInjection]] - code - gateway/tests/test_session_security.py
 - [[TestRateLimiting_3]] - code - gateway/tests/test_session_security.py
 - [[TestSessionCleanup]] - code - gateway/tests/test_session_security.py
-- [[TestSessionCreation]] - code - gateway/tests/test_session_security.py
 - [[TestSessionRotation]] - code - gateway/tests/test_session_security.py
 - [[TestSessionValidation]] - code - gateway/tests/test_session_security.py
 - [[Tests for session_security module. TDD Written before implementation.]] - rationale - gateway/tests/test_session_security.py
-- [[fixture_127]] - code
-- [[manager()_3]] - code - gateway/tests/test_session_security.py
+- [[fixture_129]] - code
+- [[manager()_4]] - code - gateway/tests/test_session_security.py
 - [[session_security.py_2]] - code - gateway/security/session_security.py
 - [[test_session_security.py]] - code - gateway/tests/test_session_security.py
 
@@ -68,15 +64,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_TestAuth_1]]
+- 4 edges to [[_COMMUNITY_TestAuth]]
 - 3 edges to [[_COMMUNITY_TestInstructionNonce]]
-- 3 edges to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_TestSessionCreation]]
+- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 
 ## Top bridge nodes
 - [[SessionManager]] - degree 26, connects to 4 communities
 - [[session_security.py_2]] - degree 10, connects to 3 communities
-- [[test_session_security.py]] - degree 9, connects to 1 community
+- [[test_session_security.py]] - degree 9, connects to 2 communities
 - [[dot-validate_session()]] - degree 6, connects to 1 community
 - [[dot-create_session()]] - degree 5, connects to 1 community

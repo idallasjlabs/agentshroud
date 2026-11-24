@@ -8,7 +8,7 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[dot-__init__()_49]] - code - gateway/cli/client.py
+- [[dot-__init__()_53]] - code - gateway/cli/client.py
 - [[dot-_request()]] - code - gateway/cli/client.py
 - [[dot-add_collaborator()]] - code - gateway/cli/client.py
 - [[dot-add_group_member()]] - code - gateway/cli/client.py
@@ -27,17 +27,17 @@ members: 32
 - [[dot-get_events()]] - code - gateway/cli/client.py
 - [[dot-get_groups()]] - code - gateway/cli/client.py
 - [[dot-get_health()]] - code - gateway/cli/client.py
-- [[dot-get_logs()_1]] - code - gateway/cli/client.py
+- [[dot-get_logs()]] - code - gateway/cli/client.py
 - [[dot-get_risk()]] - code - gateway/cli/client.py
 - [[dot-get_services()]] - code - gateway/cli/client.py
 - [[dot-get_users()]] - code - gateway/cli/client.py
 - [[dot-post()]] - code - gateway/cli/client.py
 - [[dot-put()]] - code - gateway/cli/client.py
-- [[dot-restart_service()_1]] - code - gateway/cli/client.py
+- [[dot-restart_service()]] - code - gateway/cli/client.py
 - [[dot-run_scan()]] - code - gateway/cli/client.py
 - [[dot-set_group_mode()]] - code - gateway/cli/client.py
-- [[dot-stop_service()_1]] - code - gateway/cli/client.py
-- [[Any_19]] - code
+- [[dot-stop_service()]] - code - gateway/cli/client.py
+- [[Any_24]] - code
 - [[Minimal synchronous httpx-free client for the SCL API.]] - rationale - gateway/cli/client.py
 - [[SCLClient]] - code - gateway/cli/client.py
 
