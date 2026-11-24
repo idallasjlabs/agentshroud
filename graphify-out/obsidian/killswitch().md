@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/web/management.py"
 type: "code"
-community: "api.py"
-location: "L410"
+community: "management.py"
+location: "L890"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/managementpy
 ---
 
 # killswitch()
 
 ## Connections
-- [[Emergency kill switch freeze, shutdown, or disconnect.]] - `rationale_for` [EXTRACTED]
-- [[KillSwitchAction]] - `references` [EXTRACTED]
-- [[api.py_2]] - `contains` [EXTRACTED]
-- [[execute_killswitch()]] - `calls` [EXTRACTED]
-- [[post_5]] - `references` [EXTRACTED]
+- [[Serve the emergency kill switch page.]] - `rationale_for` [EXTRACTED]
+- [[get_4]] - `references` [EXTRACTED]
+- [[management.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/managementpy

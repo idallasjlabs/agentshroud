@@ -12,7 +12,7 @@ tags:
 # mcp_inspector.py
 
 ## Connections
-- [[Enum_25]] - `imports_from` [EXTRACTED]
+- [[Enum_26]] - `imports_from` [EXTRACTED]
 - [[FindingType]] - `contains` [EXTRACTED]
 - [[InspectionFinding]] - `contains` [EXTRACTED]
 - [[InspectionResult]] - `contains` [EXTRACTED]

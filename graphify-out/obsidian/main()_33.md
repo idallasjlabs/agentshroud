@@ -1,19 +1,17 @@
 ---
-source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
+source_file: "scripts/list_registry_ghsa_ids.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
-location: "L497"
+community: "sync-cve-registry.py"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[cmd_oauth()]] - `calls` [EXTRACTED]
-- [[cmd_reachability()]] - `calls` [EXTRACTED]
-- [[mcp_oauth_preflight.py]] - `contains` [EXTRACTED]
+- [[list_registry_ghsa_ids.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

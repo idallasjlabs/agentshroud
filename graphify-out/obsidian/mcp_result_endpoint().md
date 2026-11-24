@@ -12,7 +12,7 @@ tags:
 # mcp_result_endpoint()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - `rationale_for` [EXTRACTED]
 - [[MCPResultRequest]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `uses` [INFERRED]

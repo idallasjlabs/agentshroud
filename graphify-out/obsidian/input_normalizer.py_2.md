@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "normalize_input"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/normalize_input
 ---
 
 # input_normalizer.py
@@ -24,4 +24,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/normalize_input

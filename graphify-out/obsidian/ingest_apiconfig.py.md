@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/lifespanpy
 ---
 
 # ingest_api/config.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueueConfig]] - `contains` [EXTRACTED]
-- [[AuditExportConfig_1]] - `contains` [EXTRACTED]
+- [[AuditExportConfig]] - `contains` [EXTRACTED]
 - [[BotConfig]] - `imports` [EXTRACTED]
 - [[ChannelsConfig]] - `contains` [EXTRACTED]
 - [[GatewayConfig]] - `contains` [EXTRACTED]
@@ -86,4 +86,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

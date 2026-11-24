@@ -1,19 +1,18 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "docker/bots/hermes/docker_proxy_relay.py"
 type: "code"
-community: "SecureBrowser"
-location: "L409"
+community: "_handle"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/_handle
 ---
 
 # main()
 
 ## Connections
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
-- [[browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[_handle()_2]] - `indirect_call` [INFERRED]
+- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/_handle

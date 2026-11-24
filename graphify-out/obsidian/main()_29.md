@@ -1,18 +1,18 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
 type: "code"
-community: "ControlCenter"
-location: "L408"
+community: "package_skill"
+location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/package_skill
 ---
 
 # main()
 
 ## Connections
-- [[ControlCenter]] - `calls` [EXTRACTED]
-- [[text_control_center.py_1]] - `contains` [EXTRACTED]
+- [[package_skill()]] - `calls` [EXTRACTED]
+- [[package_skill.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/package_skill

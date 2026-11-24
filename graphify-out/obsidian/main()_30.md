@@ -1,18 +1,18 @@
 ---
-source_file: "skills/openclaw/skill-creator/scripts/package_skill.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "package_skill"
-location: "L99"
+community: "test_dns_canvas_coverage.py"
+location: "L309"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/package_skill
+  - community/test_dns_canvas_coveragepy
 ---
 
 # main()
 
 ## Connections
-- [[package_skill()]] - `calls` [EXTRACTED]
-- [[package_skill.py]] - `contains` [EXTRACTED]
+- [[dns_forwarder.py]] - `contains` [EXTRACTED]
+- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/package_skill
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "get_wazuh_summary"
+community: "wazuh_client.py"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_wazuh_summary
+  - community/wazuh_clientpy
 ---
 
 # level_to_severity()
@@ -18,4 +18,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary
+#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy

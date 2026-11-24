@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/inbound_edge/descriptors.py"
 type: "code"
 community: "test_edge_service_routes.py"
-location: "L501"
+location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,10 @@ tags:
 # main()
 
 ## Connections
-- [[create_app()]] - `calls` [EXTRACTED]
-- [[edge_app.py]] - `contains` [EXTRACTED]
-- [[settings_from_env()]] - `calls` [EXTRACTED]
-- [[verify_shipped_descriptors()]] - `calls` [EXTRACTED]
+- [[build_manifest()]] - `calls` [EXTRACTED]
+- [[canonical_bytes()]] - `calls` [EXTRACTED]
+- [[descriptors.py]] - `contains` [EXTRACTED]
+- [[test_cli_verify_ok_and_bad_stdin()]] - `calls` [EXTRACTED]
+- [[verify_descriptors()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

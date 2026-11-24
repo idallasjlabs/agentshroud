@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "scripts/soak_status.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L519"
+community: "classify"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/classify
 ---
 
 # main()
 
 ## Connections
-- [[cli()]] - `calls` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
-- [[test_main_entrypoint_runs_cli_group()]] - `calls` [EXTRACTED]
+- [[check-soak-status.sh]] - `references` [EXTRACTED]
+- [[classify()_1]] - `calls` [EXTRACTED]
+- [[soak_status.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/classify

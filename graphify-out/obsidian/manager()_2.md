@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "test_file_sandbox_message_gate.py"
-location: "L51"
+community: "TrustManager"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/TrustManager
 ---
 
 # manager()
 
 ## Connections
-- [[MiddlewareManager]] - `uses` [INFERRED]
-- [[MiddlewareManager with real session_manager, all other deps mocked. Uses…]] - `rationale_for` [EXTRACTED]
-- [[fixture_104]] - `references` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[Create a trust manager with temp DB.]] - `rationale_for` [EXTRACTED]
+- [[TrustManager]] - `uses` [INFERRED]
+- [[fixture_75]] - `references` [EXTRACTED]
+- [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

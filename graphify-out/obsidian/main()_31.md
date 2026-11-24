@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "docker/bots/hermes/dashboard_bridge.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L309"
+community: "_handle"
+location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/_handle
 ---
 
 # main()
 
 ## Connections
-- [[dns_forwarder.py]] - `contains` [EXTRACTED]
-- [[start_dns_forwarder()]] - `calls` [EXTRACTED]
+- [[_handle()_4]] - `indirect_call` [INFERRED]
+- [[dashboard_bridge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_handle

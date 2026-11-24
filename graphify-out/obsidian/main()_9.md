@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "docker/bots/hermes/render_md_email.py"
 type: "code"
-community: "_handle"
-location: "L82"
+community: "render_md_email.py"
+location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/render_md_emailpy
 ---
 
 # main()
 
 ## Connections
-- [[_handle()]] - `indirect_call` [INFERRED]
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
+- [[render()_1]] - `calls` [EXTRACTED]
+- [[render_md_email.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/render_md_emailpy

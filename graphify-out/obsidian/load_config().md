@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "load_config"
+community: "lifespan"
 location: "L406"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/lifespan
 ---
 
 # load_config()
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - `calls` [EXTRACTED]
 - [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueConfig]] - `calls` [EXTRACTED]
-- [[AuditExportConfig_1]] - `calls` [EXTRACTED]
+- [[AuditExportConfig]] - `calls` [EXTRACTED]
 - [[BotConfig]] - `calls` [EXTRACTED]
 - [[ChannelsConfig]] - `calls` [EXTRACTED]
 - [[GatewayConfig]] - `calls` [EXTRACTED]
@@ -64,4 +64,4 @@ tags:
 - [[upgrade_agentshroud()]] - `calls` [EXTRACTED]
 - [[upgrade_hermes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/lifespan
