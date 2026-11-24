@@ -16,7 +16,7 @@ tags:
 - [[_make_m6_app_state()]] - `calls` [EXTRACTED]
 - [[_make_m6_bot_config()]] - `calls` [EXTRACTED]
 - [[_make_m6_caller()]] - `calls` [EXTRACTED]
-- [[asyncio_77]] - `references` [EXTRACTED]
+- [[asyncio_76]] - `references` [EXTRACTED]
 - [[list_bots()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ResourceGuard"
+community: "TestTempFiles"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/TestTempFiles
 ---
 
 # .test_cleanup_unlinks_existing_and_clears_registry()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTempFiles]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/TestTempFiles

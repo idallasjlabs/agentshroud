@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_direct_file_query_returns_protect_file_notice"
+community: "_make_update"
 location: "L2451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_direct_file_query_returns_protect_file_notice
+  - community/_make_update
 ---
 
 # .test_collaborator_direct_file_query_returns_protect_file_notice()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_urlopen()_35]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_urlopen()_36]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_direct_file_query_returns_protect_file_notice
+#graphify/code #graphify/EXTRACTED #community/_make_update

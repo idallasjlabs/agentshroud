@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AsyncMock"
+community: "_make_proxy"
 location: "L566"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_make_proxy
 ---
 
 # .test_blocks_scanned_even_when_text_present()
@@ -16,7 +16,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
-- [[asyncio_41]] - `references` [EXTRACTED]
-- [[scan()_1]] - `indirect_call` [INFERRED]
+- [[asyncio_38]] - `references` [EXTRACTED]
+- [[scan()_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

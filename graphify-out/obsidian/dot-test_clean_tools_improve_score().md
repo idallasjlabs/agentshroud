@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "compute_scorecard"
 location: "L981"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/compute_scorecard
 ---
 
 # .test_clean_tools_improve_score()
 
 ## Connections
 - [[dot-_all_not_run_patches()]] - `calls` [EXTRACTED]
-- [[TestComputeScorecard_1]] - `method` [EXTRACTED]
+- [[TestComputeScorecard]] - `method` [EXTRACTED]
 - [[_clamav_clean()]] - `calls` [EXTRACTED]
 - [[_falco_clean()]] - `calls` [EXTRACTED]
 - [[_openscap_clean()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[_wazuh_clean()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/compute_scorecard

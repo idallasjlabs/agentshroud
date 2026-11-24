@@ -16,6 +16,6 @@ tags:
 - [[TestAuditStoreConcurrentAppend]] - `method` [EXTRACTED]
 - [[_assert_linear_chain()]] - `calls` [EXTRACTED]
 - [[_chain_rows()]] - `calls` [EXTRACTED]
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_concurrent_log_event_two_connections_keeps_linear_chain

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "TestTrustLevels"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/TestTrustLevels
 ---
 
 # .test_clamp_low()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustLevels]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/TestTrustLevels

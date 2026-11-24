@@ -20,8 +20,8 @@ tags:
 - [[_fake_approval()_6]] - `indirect_call` [INFERRED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_urlopen()_46]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_urlopen()_28]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

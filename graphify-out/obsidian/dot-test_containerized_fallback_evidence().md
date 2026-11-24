@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestHostOsHardening]] - `method` [EXTRACTED]
 - [[_w()]] - `calls` [EXTRACTED]
-- [[boom()_1]] - `contains` [EXTRACTED]
-- [[boom()_2]] - `indirect_call` [INFERRED]
+- [[boom()_2]] - `contains` [EXTRACTED]
+- [[boom()_3]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

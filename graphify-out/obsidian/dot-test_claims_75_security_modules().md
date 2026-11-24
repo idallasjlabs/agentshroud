@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "TestContributingMdAccuracy"
+community: "test_docs_accuracy.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestContributingMdAccuracy
+  - community/test_docs_accuracypy
 ---
 
 # .test_claims_75_security_modules()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadmeAccuracy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestContributingMdAccuracy
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

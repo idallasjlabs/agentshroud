@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_profiles.py"
 type: "code"
-community: "test_edge_profiles.py"
+community: "_write"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_profilespy
+  - community/_write
 ---
 
 # .test_connection_types_of_shipped_vendors()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestShippedProfiles]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_profilespy
+#graphify/code #graphify/EXTRACTED #community/_write

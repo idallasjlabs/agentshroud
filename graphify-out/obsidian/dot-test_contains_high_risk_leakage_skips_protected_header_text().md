@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "._extract_first_egress_target"
+community: "TestOutboundClassifierHelpers"
 location: "L4095"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_first_egress_target
+  - community/TestOutboundClassifierHelpers
 ---
 
 # .test_contains_high_risk_leakage_skips_protected_header_text()
@@ -16,4 +16,4 @@ tags:
 - [[Our own protected notices must never be double-filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundClassifierHelpers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_first_egress_target
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

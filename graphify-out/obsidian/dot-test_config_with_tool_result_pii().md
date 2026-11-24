@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "RedactionResult"
 location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/RedactionResult
 ---
 
 # .test_config_with_tool_result_pii()
@@ -16,4 +16,4 @@ tags:
 - [[Test that configuration includes tool result PII settings]] - `rationale_for` [EXTRACTED]
 - [[TestConfigurationLoading]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

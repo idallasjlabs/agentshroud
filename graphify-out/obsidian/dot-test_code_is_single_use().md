@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "EdgeOAuthService"
+community: "_client_info"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/_client_info
 ---
 
 # .test_code_is_single_use()
@@ -15,4 +15,4 @@ tags:
 - [[TestAuthorizeAndConsent]] - `method` [EXTRACTED]
 - [[_linked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/_client_info
