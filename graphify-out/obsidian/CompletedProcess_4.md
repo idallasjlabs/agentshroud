@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "test_skill_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/test_skill_guardpy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_run_triage()]] - `references` [EXTRACTED]
+- [[_run_scan_cli()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

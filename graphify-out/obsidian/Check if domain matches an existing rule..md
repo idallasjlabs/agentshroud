@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "EgressScope"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/EgressScope
 ---
 
 # Check if domain matches an existing rule.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_existing_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressScope

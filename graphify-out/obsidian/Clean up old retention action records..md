@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MemoryLifecycleManager"
+community: "middleware.py"
 location: "L358"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # Clean up old retention action records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_cleanup_old_actions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

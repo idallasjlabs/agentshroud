@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "PromptGuard"
+community: "prompt_guard.py"
 location: "L616"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/prompt_guardpy
 ---
 
 # Compute and return an HMAC-SHA256 fingerprint for the system prompt.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-register_system_prompt()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/prompt_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "test_security_integration.py"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/test_security_integrationpy
 ---
 
 # Config with all security modules enabled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[full_pipeline_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/test_security_integrationpy

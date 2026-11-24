@@ -12,7 +12,7 @@ tags:
 # CollaboratorActivityTracker
 
 ## Connections
-- [[dot-__init__()_156]] - `method` [EXTRACTED]
+- [[dot-__init__()_143]] - `method` [EXTRACTED]
 - [[dot-_append_contributor_log()]] - `method` [EXTRACTED]
 - [[dot-_coerce_timestamp()]] - `method` [EXTRACTED]
 - [[dot-_normalize_preview()]] - `method` [EXTRACTED]

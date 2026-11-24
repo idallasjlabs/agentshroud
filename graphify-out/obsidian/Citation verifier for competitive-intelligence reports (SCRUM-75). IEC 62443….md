@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "rationale"
-community: "DraftEntry"
+community: "CompetitiveIntelReport"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/CompetitiveIntelReport
 ---
 
 # Citation verifier for competitive-intelligence reports (SCRUM-75). IEC 62443…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[citation_verifier.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DraftEntry
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

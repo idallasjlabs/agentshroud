@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "Any"
 location: "L543"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Any
 ---
 
 # Check if system resource usage is abnormal.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_system_resources()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Any

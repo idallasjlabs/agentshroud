@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L297"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # Complete gateway configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GatewayConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig

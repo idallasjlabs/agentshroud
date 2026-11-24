@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L234"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # Concurrent prompt scans shouldn't interfere with each other.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_prompt_guard_concurrent_scans()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "._check_impl"
+community: "EgressFilter"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_check_impl
+  - community/EgressFilter
 ---
 
 # Check if an outbound connection is allowed. Args: agent_id: The agent making…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_check_impl
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

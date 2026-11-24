@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "rationale"
-community: "fastapi.md"
+community: "ingest_api/main.py"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/ingest_api/mainpy
 ---
 
 # Check if client is within rate limit Args: client_id: Usually client IP address…
 
 ## Connections
-- [[dot-check()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-check()_6]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fastapimd
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
