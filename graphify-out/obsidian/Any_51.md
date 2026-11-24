@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "load_config"
+community: "DockerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/DockerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()]] - `references` [EXTRACTED]
-- [[dot-evaluate()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_6]] - `references` [EXTRACTED]
+- [[dot-inspect()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

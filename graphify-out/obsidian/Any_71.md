@@ -1,22 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/models.py"
+community: ".process_webhook"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/process_webhook
 ---
 
 # Any
 
 ## Connections
-- [[_map_severity()]] - `references` [EXTRACTED]
-- [[collect_recent_events()]] - `references` [EXTRACTED]
-- [[from_anomaly_alert()]] - `references` [EXTRACTED]
-- [[from_audit_chain_entry()]] - `references` [EXTRACTED]
-- [[from_dict()]] - `references` [EXTRACTED]
-- [[from_egress_attempt()]] - `references` [EXTRACTED]
-- [[from_pipeline_result()]] - `references` [EXTRACTED]
+- [[dot-_extract_message()]] - `references` [EXTRACTED]
+- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
+- [[dot-_extract_username()]] - `references` [EXTRACTED]
+- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
+- [[dot-_replace_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_15]] - `references` [EXTRACTED]
+- [[dot-process_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/process_webhook

@@ -1,19 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "discover_upstream_versions.py"
+community: "middleware.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/discover_upstream_versionspy
+  - community/middlewarepy
 ---
 
 # Any
 
 ## Connections
-- [[_digest_for_tag()]] - `references` [EXTRACTED]
-- [[_retry()]] - `references` [EXTRACTED]
-- [[discover()]] - `references` [EXTRACTED]
-- [[fetch_dockerhub_tags()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_9]] - `references` [EXTRACTED]
+- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

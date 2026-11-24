@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "PermissionLevel"
+community: "LogBuffer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/LogBuffer
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_8]] - `references` [EXTRACTED]
+- [[dot-recent()]] - `references` [EXTRACTED]
+- [[dot-tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/LogBuffer

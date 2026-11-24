@@ -12,8 +12,8 @@ tags:
 # AlertDispatcher
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_171]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_169]] - `method` [EXTRACTED]
 - [[dot-_format_alert_message()]] - `method` [EXTRACTED]
 - [[dot-_is_duplicate()]] - `method` [EXTRACTED]
 - [[dot-_is_rate_limited()]] - `method` [EXTRACTED]
@@ -32,9 +32,9 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[TestAlertDispatcher]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
+- [[TestConcurrency]] - `uses` [INFERRED]
 - [[alert_dispatcher.py]] - `contains` [EXTRACTED]
-- [[dispatcher()]] - `uses` [INFERRED]
+- [[dispatcher()_1]] - `uses` [INFERRED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]

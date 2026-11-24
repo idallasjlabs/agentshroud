@@ -1,22 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "WebhookReceiver"
+community: "UserSessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_extract_message()]] - `references` [EXTRACTED]
-- [[dot-_extract_user_id()_1]] - `references` [EXTRACTED]
-- [[dot-_extract_username()]] - `references` [EXTRACTED]
-- [[dot-_prepare_session_payload()]] - `references` [EXTRACTED]
-- [[dot-_replace_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_15]] - `references` [EXTRACTED]
-- [[dot-process_webhook()]] - `references` [EXTRACTED]
+- [[dot-add_conversation_message()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_6]] - `references` [EXTRACTED]
+- [[dot-get_session_context()]] - `references` [EXTRACTED]
+- [[dot-reanchor_system_prompt()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_11]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

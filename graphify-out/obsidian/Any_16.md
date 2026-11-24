@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "SecurityPipeline"
+community: "parse_trivy_output"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/parse_trivy_output
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_3]] - `references` [EXTRACTED]
+- [[generate_summary()_1]] - `references` [EXTRACTED]
+- [[parse_trivy_output()]] - `references` [EXTRACTED]
+- [[run_trivy_scan()]] - `references` [EXTRACTED]
+- [[save_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/parse_trivy_output

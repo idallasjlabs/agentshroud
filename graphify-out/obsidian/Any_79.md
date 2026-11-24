@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "tts.py"
+community: "SessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ttspy
+  - community/SessionManager
 ---
 
 # Any
 
 ## Connections
-- [[_get_pipeline()]] - `references` [EXTRACTED]
+- [[dot-validate_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ttspy
+#graphify/code #graphify/EXTRACTED #community/SessionManager

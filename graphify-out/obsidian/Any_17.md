@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "MemoryLifecycleManager"
+community: "._monitor_resources"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/_monitor_resources
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
+- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
+- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/code #graphify/EXTRACTED #community/_monitor_resources

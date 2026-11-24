@@ -1,16 +1,25 @@
 ---
 source_file: ""
 type: "code"
-community: "test_e2e_proxy.py"
+community: "EdgeOAuthService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/EdgeOAuthService
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_stats()_9]] - `references` [EXTRACTED]
+- [[dot-_issue()]] - `references` [EXTRACTED]
+- [[dot-authorize()_1]] - `references` [EXTRACTED]
+- [[dot-consent_view()]] - `references` [EXTRACTED]
+- [[dot-exchange_authorization_code()_1]] - `references` [EXTRACTED]
+- [[dot-exchange_refresh_token()_1]] - `references` [EXTRACTED]
+- [[dot-get_client()_1]] - `references` [EXTRACTED]
+- [[dot-load_access_token()_1]] - `references` [EXTRACTED]
+- [[dot-load_authorization_code()_1]] - `references` [EXTRACTED]
+- [[dot-load_refresh_token()_1]] - `references` [EXTRACTED]
+- [[dot-register_client()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

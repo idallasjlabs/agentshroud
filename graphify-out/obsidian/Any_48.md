@@ -1,25 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EdgeOAuthService"
+community: "test_edge_approvals.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/test_edge_approvalspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_issue()]] - `references` [EXTRACTED]
-- [[dot-authorize()]] - `references` [EXTRACTED]
-- [[dot-consent_view()]] - `references` [EXTRACTED]
-- [[dot-exchange_authorization_code()]] - `references` [EXTRACTED]
-- [[dot-exchange_refresh_token()]] - `references` [EXTRACTED]
-- [[dot-get_client()]] - `references` [EXTRACTED]
-- [[dot-load_access_token()]] - `references` [EXTRACTED]
-- [[dot-load_authorization_code()]] - `references` [EXTRACTED]
-- [[dot-load_refresh_token()]] - `references` [EXTRACTED]
-- [[dot-register_client()]] - `references` [EXTRACTED]
+- [[args_sha256()]] - `references` [EXTRACTED]
+- [[render_card()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/test_edge_approvalspy

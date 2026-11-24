@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "classify"
+community: "EdgeOAuthService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/classify
+  - community/EdgeOAuthService
 ---
 
 # Any
 
 ## Connections
-- [[_is_benign_skip()]] - `references` [EXTRACTED]
-- [[classify()_1]] - `references` [EXTRACTED]
+- [[_methods()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/classify
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

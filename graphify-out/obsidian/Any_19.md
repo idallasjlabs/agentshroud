@@ -1,20 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "SCLClient"
+community: "._handle"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/_handle
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()_1]] - `references` [EXTRACTED]
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[dot-__call__()_4]] - `references` [EXTRACTED]
+- [[dot-__init__()_35]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/_handle

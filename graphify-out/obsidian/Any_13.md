@@ -1,20 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "._handle"
+community: "ApprovalRequest"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/ApprovalRequest
 ---
 
 # Any
 
 ## Connections
-- [[dot-__call__()_3]] - `references` [EXTRACTED]
-- [[dot-__init__()_37]] - `references` [EXTRACTED]
-- [[dot-_clean_tool()]] - `references` [EXTRACTED]
-- [[dot-_coerce()]] - `references` [EXTRACTED]
-- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[dot-__init__()_24]] - `references` [EXTRACTED]
+- [[dot-_default_send()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

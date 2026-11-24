@@ -24,7 +24,7 @@ tags:
 - [[Next Steps (Phase 4+)]] - `contains` [EXTRACTED]
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - `contains` [EXTRACTED]
 - [[Quick Start_3]] - `contains` [EXTRACTED]
-- [[Reference]] - `contains` [EXTRACTED]
+- [[Reference_2]] - `contains` [EXTRACTED]
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - `contains` [EXTRACTED]
 - [[Security Features (Deferred to Phase 5+)]] - `contains` [EXTRACTED]
 - [[Startup Warnings Reference]] - `contains` [EXTRACTED]

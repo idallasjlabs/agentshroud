@@ -1,19 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "ResourceGuard"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ServiceManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()_1]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-__init__()_162]] - `references` [EXTRACTED]
+- [[dot-_describe_service()]] - `references` [EXTRACTED]
+- [[dot-_get_engine()]] - `references` [EXTRACTED]
+- [[_inspect_via_socket()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -12,8 +12,8 @@ tags:
 # AlertTelegramRelay
 
 ## Connections
-- [[dot-__call__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_37]] - `method` [EXTRACTED]
+- [[dot-__call__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_35]] - `method` [EXTRACTED]
 - [[dot-_clean_tool()]] - `method` [EXTRACTED]
 - [[dot-_coerce()]] - `method` [EXTRACTED]
 - [[dot-_dedup_key()]] - `method` [EXTRACTED]

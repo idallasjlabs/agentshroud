@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AppleContainerEngine"
+community: "SOCWebSocketHandler"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/SOCWebSocketHandler
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

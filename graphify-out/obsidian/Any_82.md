@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "SessionManager"
+community: "MultiTurnTracker"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/MultiTurnTracker
 ---
 
 # Any
 
 ## Connections
-- [[dot-validate_event()]] - `references` [EXTRACTED]
+- [[dot-__init__()_212]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()_1]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

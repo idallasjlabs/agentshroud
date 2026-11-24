@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "FileIntegrityRecord"
+community: "EnvironmentGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileIntegrityRecord
+  - community/EnvironmentGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_2]] - `references` [EXTRACTED]
-- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
-- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
-- [[dot-to_dict()_1]] - `references` [EXTRACTED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

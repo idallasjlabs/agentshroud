@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[build_edge_service()]] - `references` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

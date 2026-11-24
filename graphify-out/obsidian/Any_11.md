@@ -1,19 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "parse_trivy_output"
+community: "MCPInspector"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/MCPInspector
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_1]] - `references` [EXTRACTED]
-- [[parse_trivy_output()]] - `references` [EXTRACTED]
-- [[run_trivy_scan()]] - `references` [EXTRACTED]
-- [[save_report()]] - `references` [EXTRACTED]
+- [[dot-_redact_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

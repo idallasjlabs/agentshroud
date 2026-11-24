@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "canvas_proxy.py"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/canvas_proxypy
+  - community/ingest_api/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[_handle_http()]] - `references` [EXTRACTED]
-- [[_handle_websocket()]] - `references` [EXTRACTED]
-- [[canvas_proxy_app()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/canvas_proxypy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

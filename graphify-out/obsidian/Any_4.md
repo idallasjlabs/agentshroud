@@ -1,18 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "WebProxyResult"
+community: "test_security_toolchain.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyResult
+  - community/test_security_toolchainpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_audit()]] - `references` [EXTRACTED]
-- [[dot-get_stats()]] - `references` [EXTRACTED]
-- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyResult
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
