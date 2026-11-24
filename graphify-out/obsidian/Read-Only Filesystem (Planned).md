@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/container-policy.md"
 type: "concept"
-community: "Features"
+community: "Detailed Profiles"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Features
+  - community/Detailed_Profiles
 ---
 
 # Read-Only Filesystem (Planned)
@@ -14,4 +14,4 @@ tags:
 - [[SECURITY_VALUE_PROPOSITION]] - `references` [EXTRACTED]
 - [[container-policy]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Features
+#graphify/concept #graphify/EXTRACTED #community/Detailed_Profiles

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/09 - Diagrams/Dependency Graph.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Features"
-location: "L137"
+community: "AgentTarget"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/AgentTarget
 ---
 
 # Related Notes
 
 ## Connections
-- [[Dependency Graph_1]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/AgentTarget

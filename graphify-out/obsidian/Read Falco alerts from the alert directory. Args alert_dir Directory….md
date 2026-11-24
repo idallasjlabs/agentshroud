@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/falco_monitor.py"
 type: "rationale"
-community: "FalcoAlertWatcher"
+community: "test_security_toolchain.py"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/test_security_toolchainpy
 ---
 
 # Read Falco alerts from the alert directory. Args: alert_dir: Directory…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[read_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy

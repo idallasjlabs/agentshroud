@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TrustLevel"
 location: "L227"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustLevel
 ---
 
 # Record a security violation, significantly decreasing trust. With a progressive…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-record_violation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TrustLevel

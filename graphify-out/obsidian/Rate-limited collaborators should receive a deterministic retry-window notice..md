@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: ".test_collaborator_rate_limit_notice_includes_retry_window"
+community: "_wrap_response"
 location: "L3691"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_rate_limit_notice_includes_retry_window
+  - community/_wrap_response
 ---
 
 # Rate-limited collaborators should receive a deterministic retry-window notice.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_includes_retry_window
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

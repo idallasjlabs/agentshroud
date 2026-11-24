@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "rationale"
-community: "TrustManager"
+community: "TrustLevel"
 location: "L218"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustLevel
 ---
 
 # Record a failed/blocked action, decreasing trust.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-record_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/TrustLevel

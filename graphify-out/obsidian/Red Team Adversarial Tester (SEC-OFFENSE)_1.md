@@ -12,7 +12,7 @@ tags:
 # Red Team Adversarial Tester (SEC-OFFENSE)
 
 ## Connections
-- [[Purpose_152]] - `contains` [EXTRACTED]
+- [[Purpose_150]] - `contains` [EXTRACTED]
 - [[Related Skills_82]] - `contains` [EXTRACTED]
 - [[Usage_92]] - `contains` [EXTRACTED]
 - [[openclawskillsi-sec-offenseREADME]] - `contains` [EXTRACTED]

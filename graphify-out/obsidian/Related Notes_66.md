@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "httpx"
+community: "GatewayConfig"
 location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/httpx
+  - community/GatewayConfig
 ---
 
 # Related Notes
 
 ## Connections
-- [[httpx]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/httpx
+#graphify/document #graphify/EXTRACTED #community/GatewayConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "PIIConfig"
+community: "test_sanitizer.py"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_sanitizerpy
 ---
 
 # Regex-only path must not match bare 10-digit digit string as phone number.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_regex_fallback_requires_separator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "fastapi.md"
+community: "telegram_proxy.py"
 location: "L415"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/telegram_proxypy
 ---
 
 # Read persisted paused-collaborator IDs from disk. Owner-initiated manual pause…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[load_paused_collaborator_ids()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fastapimd
+#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
