@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_all_modules_enforce.py"
-location: "L363"
+community: ".analyze_tool_call"
+location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/analyze_tool_call
 ---
 
 # ._cleanup_old_sessions()
 
 ## Connections
-- [[dot-track_message()]] - `calls` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[dot-analyze_tool_call()]] - `calls` [EXTRACTED]
 - [[Remove old sessions to prevent memory bloat.]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/analyze_tool_call

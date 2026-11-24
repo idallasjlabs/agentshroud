@@ -16,6 +16,6 @@ tags:
 - [[dot-test_fetches_through_curl_with_a_bounded_time()]] - `calls` [EXTRACTED]
 - [[dot-test_ipv4_retry_attempts_pass_dash_4_to_curl()]] - `calls` [EXTRACTED]
 - [[TestFetchDockerhubTagsUsesCurl]] - `method` [EXTRACTED]
-- [[run()]] - `indirect_call` [INFERRED]
+- [[run()_1]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/TestFetchDockerhubTagsUsesCurl

@@ -12,7 +12,7 @@ tags:
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_48]] - `calls` [EXTRACTED]
+- [[dot-__init__()_52]] - `calls` [EXTRACTED]
 - [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-dispatch()]] - `calls` [EXTRACTED]
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Append alert to JSONL log file.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

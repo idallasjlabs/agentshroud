@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "._s"
 location: "L443"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_s
 ---
 
 # ._s()
@@ -27,4 +27,4 @@ tags:
 - [[_local_removemember_handler()]] - `indirect_call` [INFERRED]
 - [[split_for_speech()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_s

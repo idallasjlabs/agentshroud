@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "._check_impl"
+community: "EgressFilter"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_check_impl
+  - community/EgressFilter
 ---
 
 # ._is_ipv6()
@@ -16,4 +16,4 @@ tags:
 - [[Check if host looks like an IPv6 address.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_check_impl
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

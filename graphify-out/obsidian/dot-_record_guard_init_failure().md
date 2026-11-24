@@ -12,7 +12,7 @@ tags:
 # ._record_guard_init_failure()
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
 - [[Exception]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Record a guard __init__ exception so the request path can fail closed. For…]] - `rationale_for` [EXTRACTED]

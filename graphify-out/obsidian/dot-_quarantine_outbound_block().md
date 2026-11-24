@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "._filter_outbound"
 location: "L6953"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/_filter_outbound
 ---
 
 # ._quarantine_outbound_block()
@@ -21,4 +21,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[_app_state()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

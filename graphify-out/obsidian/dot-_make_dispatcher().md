@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "AlertDispatcher"
+community: "TestAlertDispatcher"
 location: "L879"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestAlertDispatcher
 ---
 
 # ._make_dispatcher()
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_critical_alert_notified()]] - `calls` [EXTRACTED]
 - [[dot-test_dedup()]] - `calls` [EXTRACTED]
 - [[dot-test_get_digest()]] - `calls` [EXTRACTED]
-- [[dot-test_get_stats()_2]] - `calls` [EXTRACTED]
+- [[dot-test_get_stats()]] - `calls` [EXTRACTED]
 - [[dot-test_high_alert_notified()]] - `calls` [EXTRACTED]
 - [[dot-test_log_to_jsonl()]] - `calls` [EXTRACTED]
 - [[dot-test_low_alert_buffered()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[AlertDispatcher]] - `calls` [EXTRACTED]
 - [[TestAlertDispatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestAlertDispatcher

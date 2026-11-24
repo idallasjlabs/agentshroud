@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "test_all_modules_enforce.py"
+community: "SessionContext"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/SessionContext
 ---
 
 # ._score_response_patterns()
@@ -18,4 +18,4 @@ tags:
 - [[Score agent response for potential leaks.]] - `rationale_for` [EXTRACTED]
 - [[SessionContext]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/SessionContext

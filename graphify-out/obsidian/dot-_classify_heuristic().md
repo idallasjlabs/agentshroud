@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "normalize_input"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/normalize_input
 ---
 
 # ._classify_heuristic()
@@ -20,4 +20,4 @@ tags:
 - [[Heuristic-based classification using multi-signal analysis.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/normalize_input

@@ -17,6 +17,6 @@ tags:
 - [[dot-summary()]] - `indirect_call` [INFERRED]
 - [[Accept GatewayEvent objects or plain dicts from legacy emitters.]] - `rationale_for` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_13]] - `references` [EXTRACTED]
+- [[Any_19]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_handle

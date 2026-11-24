@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "._monitor_resources"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_monitor_resources
 ---
 
 # ._check_system_resources()
@@ -17,4 +17,4 @@ tags:
 - [[Check system-wide resource usage for anomalies (synchronous).]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_monitor_resources

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "test_all_modules_enforce.py"
-location: "L113"
+community: "run"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/run
 ---
 
 # ._compile_detection_patterns()
 
 ## Connections
-- [[dot-__init__()_22]] - `calls` [EXTRACTED]
-- [[Compile regex patterns for detecting disclosure categories.]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[dot-__init__()_3]] - `calls` [EXTRACTED]
+- [[Compile regex patterns for detecting disclosure attempts.]] - `rationale_for` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/run

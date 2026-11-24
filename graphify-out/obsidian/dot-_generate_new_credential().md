@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Any"
+community: "KeyRotationManager"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KeyRotationManager
 ---
 
 # ._generate_new_credential()
 
 ## Connections
 - [[dot-rotate_credential()]] - `calls` [EXTRACTED]
-- [[Any_25]] - `references` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[EXPERIMENTAL Generate a new credential value. WARNING This method generates…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

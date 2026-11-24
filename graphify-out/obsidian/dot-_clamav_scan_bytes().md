@@ -15,6 +15,6 @@ tags:
 - [[dot-_relay_and_scan()]] - `calls` [EXTRACTED]
 - [[HTTPConnectProxy]] - `method` [EXTRACTED]
 - [[Write data to a temp file and scan with ClamAV. Runs in a thread executor so it…]] - `rationale_for` [EXTRACTED]
-- [[run_clamscan()]] - `calls` [EXTRACTED]
+- [[run_clamscan()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_relay

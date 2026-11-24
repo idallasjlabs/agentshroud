@@ -12,7 +12,7 @@ tags:
 # ._log()
 
 ## Connections
-- [[dot-validate()_1]] - `calls` [EXTRACTED]
+- [[dot-validate()_3]] - `calls` [EXTRACTED]
 - [[TokenValidator]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TokenValidator

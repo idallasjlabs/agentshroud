@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "._filter_outbound"
 location: "L3203"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/_filter_outbound
 ---
 
 # ._html_tags_balanced()
@@ -16,4 +16,4 @@ tags:
 - [[Return True only when every Telegram-supported HTML open tag has a matching…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

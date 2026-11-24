@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "code"
-community: ".get_or_create_session"
+community: "UserSessionManager"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/UserSessionManager
 ---
 
 # ._save_sessions()
@@ -18,4 +18,4 @@ tags:
 - [[Atomically persist current sessions to the metadata file. Writes are serialized…]] - `rationale_for` [EXTRACTED]
 - [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_or_create_session
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

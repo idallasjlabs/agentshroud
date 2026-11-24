@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "TestPresidioPathContract"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/TestPresidioPathContract
 ---
 
 # ._detector_with_fake()
@@ -20,4 +20,4 @@ tags:
 - [[TestPresidioPathContract]] - `method` [EXTRACTED]
 - [[_analyze()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/TestPresidioPathContract

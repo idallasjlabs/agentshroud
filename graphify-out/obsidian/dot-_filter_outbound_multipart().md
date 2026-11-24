@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "._filter_outbound"
 location: "L3507"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/_filter_outbound
 ---
 
 # ._filter_outbound_multipart()
@@ -25,4 +25,4 @@ tags:
 - [[normalize_input()]] - `calls` [EXTRACTED]
 - [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound

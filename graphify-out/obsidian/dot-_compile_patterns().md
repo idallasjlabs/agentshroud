@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/log_sanitizer.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "deep_security_test"
-location: "L24"
+community: "OutboundInfoFilter"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deep_security_test
+  - community/OutboundInfoFilter
 ---
 
 # ._compile_patterns()
 
 ## Connections
-- [[dot-__init__()_39]] - `calls` [EXTRACTED]
-- [[Compile regex patterns for sensitive data detection.]] - `rationale_for` [EXTRACTED]
-- [[LogSanitizer]] - `method` [EXTRACTED]
-- [[Pattern_3]] - `references` [EXTRACTED]
+- [[dot-__init__()_121]] - `calls` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
+- [[Compile all filter patterns into regex objects.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deep_security_test
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

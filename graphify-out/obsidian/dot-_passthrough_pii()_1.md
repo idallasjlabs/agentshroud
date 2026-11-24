@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # ._passthrough_pii()
@@ -20,4 +20,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -20,7 +20,7 @@ tags:
 - [[dot-test_x_api_key_stripped_and_bearer_plus_beta_injected()]] - `calls` [EXTRACTED]
 - [[CredentialInjector]] - `references` [EXTRACTED]
 - [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
-- [[Path_62]] - `references` [EXTRACTED]
+- [[Path_61]] - `references` [EXTRACTED]
 - [[TestOAuthInjection]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOAuthInjection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L841"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # ._pipeline_with_trust()
@@ -22,4 +22,4 @@ tags:
 - [[TrustConfig]] - `calls` [EXTRACTED]
 - [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

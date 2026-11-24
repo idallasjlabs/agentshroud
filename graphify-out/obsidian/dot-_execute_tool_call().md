@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "MCPToolCall"
 location: "L696"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/MCPToolCall
 ---
 
 # ._execute_tool_call()
@@ -19,4 +19,4 @@ tags:
 - [[MCPToolCall]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/MCPToolCall

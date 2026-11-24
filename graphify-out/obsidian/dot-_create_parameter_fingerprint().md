@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # ._create_parameter_fingerprint()
@@ -18,4 +18,4 @@ tags:
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[Create a fingerprint for request parameters.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

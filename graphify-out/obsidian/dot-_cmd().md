@@ -1,31 +1,32 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L34"
+community: "PodmanEngine"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/PodmanEngine
 ---
 
 # ._cmd()
 
 ## Connections
-- [[dot-exec()]] - `calls` [EXTRACTED]
-- [[dot-health_check()]] - `calls` [EXTRACTED]
-- [[dot-inspect()]] - `calls` [EXTRACTED]
-- [[dot-logs()]] - `calls` [EXTRACTED]
-- [[dot-network_create()]] - `calls` [EXTRACTED]
-- [[dot-network_rm()]] - `calls` [EXTRACTED]
-- [[dot-pause()]] - `calls` [EXTRACTED]
-- [[dot-pull()]] - `calls` [EXTRACTED]
-- [[dot-push()]] - `calls` [EXTRACTED]
-- [[dot-rm()]] - `calls` [EXTRACTED]
+- [[dot-exec()_1]] - `calls` [EXTRACTED]
+- [[dot-generate_systemd()]] - `calls` [EXTRACTED]
+- [[dot-health_check()_1]] - `calls` [EXTRACTED]
+- [[dot-inspect()_1]] - `calls` [EXTRACTED]
+- [[dot-logs()_1]] - `calls` [EXTRACTED]
+- [[dot-network_create()_1]] - `calls` [EXTRACTED]
+- [[dot-network_rm()_1]] - `calls` [EXTRACTED]
+- [[dot-pause()_1]] - `calls` [EXTRACTED]
+- [[dot-pull()_1]] - `calls` [EXTRACTED]
+- [[dot-push()_1]] - `calls` [EXTRACTED]
+- [[dot-rm()_1]] - `calls` [EXTRACTED]
 - [[dot-stop()_6]] - `calls` [EXTRACTED]
-- [[dot-unpause()]] - `calls` [EXTRACTED]
-- [[dot-volume_create()]] - `calls` [EXTRACTED]
-- [[dot-volume_rm()]] - `calls` [EXTRACTED]
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[dot-unpause()_1]] - `calls` [EXTRACTED]
+- [[dot-volume_create()_1]] - `calls` [EXTRACTED]
+- [[dot-volume_rm()_1]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

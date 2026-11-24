@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._is_group_message"
 location: "L674"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_is_group_message
 ---
 
 # ._is_group_message()
@@ -21,4 +21,4 @@ tags:
 - [[Return True if message originates from a group or supergroup chat.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_is_group_message

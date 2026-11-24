@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "middleware.py"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/middlewarepy
 ---
 
 # ._detect_modification_source()
@@ -17,6 +17,6 @@ tags:
 - [[Attempt to detect the source of a file modification. Detection strategy (in…]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
 - [[ModificationSource]] - `references` [EXTRACTED]
-- [[Path_12]] - `references` [EXTRACTED]
+- [[Path_55]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

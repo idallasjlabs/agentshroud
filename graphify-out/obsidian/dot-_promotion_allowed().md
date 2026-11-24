@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustManager"
+community: "TrustLevel"
 location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustLevel
 ---
 
 # ._promotion_allowed()
@@ -17,4 +17,4 @@ tags:
 - [[TrustLevel_1]] - `references` [EXTRACTED]
 - [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

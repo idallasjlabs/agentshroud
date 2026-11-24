@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L953"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # ._pipeline()
@@ -22,4 +22,4 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[TestPIIBlockModeInPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

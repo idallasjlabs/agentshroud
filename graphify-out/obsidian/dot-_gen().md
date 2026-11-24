@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestStreamingProxyStatusPropagation"
+community: "StreamHead"
 location: "L815"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStreamingProxyStatusPropagation
+  - community/StreamHead
 ---
 
 # ._gen()
@@ -17,4 +17,4 @@ tags:
 - [[TestStreamingProxyStatusPropagation]] - `method` [EXTRACTED]
 - [[_g()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation
+#graphify/code #graphify/EXTRACTED #community/StreamHead

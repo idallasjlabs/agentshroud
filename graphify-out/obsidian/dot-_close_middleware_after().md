@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 - [[Track every MiddlewareManager instantiated in this class and close its sqlite-…]] - `rationale_for` [EXTRACTED]
-- [[fixture_70]] - `references` [EXTRACTED]
+- [[fixture_77]] - `references` [EXTRACTED]
 - [[tracker()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

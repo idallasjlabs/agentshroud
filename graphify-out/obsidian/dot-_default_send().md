@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_default_send_stub_returns_ok()]] - `calls` [EXTRACTED]
-- [[Any_8]] - `references` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
 - [[GroupApprovalRouter]] - `method` [EXTRACTED]
 - [[No-op send stub — used when no transport is injected.]] - `rationale_for` [EXTRACTED]
 

@@ -12,9 +12,9 @@ tags:
 # ._get_disk_io_stats()
 
 ## Connections
-- [[dot-__init__()_160]] - `calls` [EXTRACTED]
+- [[dot-__init__()_147]] - `calls` [EXTRACTED]
 - [[dot-check_disk_write_limit()]] - `calls` [EXTRACTED]
-- [[Any_63]] - `references` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
 - [[Get current disk IO statistics.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "TestCollaboratorPromptClassifiers"
 location: "L2045"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # ._looks_like_tool_trace_request()
@@ -19,4 +19,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

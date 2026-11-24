@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "._get_engine"
+community: "ServiceManager"
 location: "L396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/ServiceManager
 ---
 
 # ._logs_via_socket()
 
 ## Connections
-- [[dot-get_logs()]] - `calls` [EXTRACTED]
+- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
 - [[Read container logs via Docker Unix socket — fallback when engine unavailable.…]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
-- [[connect()_3]] - `contains` [EXTRACTED]
+- [[connect()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PromptGuard"
+community: "prompt_guard.py"
 location: "L685"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/prompt_guardpy
 ---
 
 # ._check_unicode_tricks()
@@ -16,4 +16,4 @@ tags:
 - [[Detect unicode obfuscation tricks.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

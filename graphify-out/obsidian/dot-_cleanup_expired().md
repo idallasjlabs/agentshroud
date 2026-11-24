@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "._cleanup_expired"
+community: "DelegationPrivilege"
 location: "L254"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_cleanup_expired
+  - community/DelegationPrivilege
 ---
 
 # ._cleanup_expired()
@@ -17,4 +17,4 @@ tags:
 - [[dot-is_delegated()]] - `calls` [EXTRACTED]
 - [[DelegationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_cleanup_expired
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege
