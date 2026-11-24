@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_router_streaming.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "AgentTarget"
-location: "L160"
+community: "test_voice_gateway.py"
+location: "L602"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_voice_gatewaypy
 ---
 
 # mock_stream()
 
 ## Connections
-- [[_mock_stream_response()]] - `calls` [EXTRACTED]
-- [[test_stream_raises_forward_error_on_malformed_json()]] - `contains` [EXTRACTED]
+- [[_mock_llm_stream_resp()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_flushes_trailing_fragment()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

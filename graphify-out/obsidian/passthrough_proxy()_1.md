@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[WebProxy]] - `uses` [INFERRED]
 - [[WebProxyConfig]] - `uses` [INFERRED]
-- [[fixture_108]] - `references` [EXTRACTED]
+- [[fixture_107]] - `references` [EXTRACTED]
 - [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxy

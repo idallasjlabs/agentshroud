@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestProductionCompose"
+community: "test_docs_accuracy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/test_docs_accuracypy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_has_services_key()]] - `references` [EXTRACTED]
-- [[dot-test_valid_yaml()]] - `references` [EXTRACTED]
+- [[dot-test_module_has_implementation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

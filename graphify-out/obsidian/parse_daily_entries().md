@@ -12,8 +12,8 @@ tags:
 # parse_daily_entries()
 
 ## Connections
-- [[Any_62]] - `references` [EXTRACTED]
-- [[main()_27]] - `calls` [EXTRACTED]
+- [[Any_58]] - `references` [EXTRACTED]
+- [[main()_26]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/model_usagepy

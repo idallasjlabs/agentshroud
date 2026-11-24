@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "MiddlewareManager"
+community: "_run"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/_run
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_module_has_implementation()]] - `references` [EXTRACTED]
+- [[dot-test_non_sha_pin_is_refused_before_touching_hermes()]] - `references` [EXTRACTED]
+- [[dot-test_pulse_off_passes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/_run

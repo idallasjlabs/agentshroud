@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/inbound_edge/service.py"
+source_file: "browser-extension/background.js"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L129"
+community: "background.js"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/backgroundjs
 ---
 
 # notify()
 
 ## Connections
-- [[_telegram_send()]] - `calls` [EXTRACTED]
-- [[build_edge_service()]] - `indirect_call` [INFERRED]
+- [[background.js]] - `contains` [EXTRACTED]
+- [[clipPage()]] - `calls` [EXTRACTED]
+- [[forwardUrl()]] - `calls` [EXTRACTED]
+- [[reportResult()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/backgroundjs

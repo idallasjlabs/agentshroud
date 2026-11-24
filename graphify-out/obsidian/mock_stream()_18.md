@@ -1,24 +1,19 @@
 ---
-source_file: "gateway/tests/test_router_streaming.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "AgentTarget"
-location: "L62"
+community: "test_voice_gateway.py"
+location: "L667"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentTarget
+  - graphify/EXTRACTED
+  - community/test_voice_gatewaypy
 ---
 
 # mock_stream()
 
 ## Connections
-- [[_mock_stream_response()]] - `calls` [EXTRACTED]
-- [[test_stream_ignores_lines_without_data_prefix()]] - `indirect_call` [INFERRED]
-- [[test_stream_payload_sets_stream_true()]] - `indirect_call` [INFERRED]
-- [[test_stream_raises_forward_error_on_connect_failure()]] - `indirect_call` [INFERRED]
-- [[test_stream_raises_forward_error_on_http_status_error()]] - `indirect_call` [INFERRED]
-- [[test_stream_raises_forward_error_on_malformed_json()]] - `indirect_call` [INFERRED]
-- [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `indirect_call` [INFERRED]
-- [[test_stream_yields_content_deltas_in_order()]] - `indirect_call` [INFERRED]
+- [[_mock_llm_stream_resp()]] - `calls` [EXTRACTED]
+- [[_openai_delta_lines()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_sends_full_history()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

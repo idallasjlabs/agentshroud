@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "normalize_input"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/normalize_input
 ---
 
 # normalize_input()
@@ -76,7 +76,7 @@ tags:
 - [[dot-analyze_message()]] - `calls` [EXTRACTED]
 - [[dot-process_request()]] - `calls` [EXTRACTED]
 - [[dot-scan()_3]] - `calls` [EXTRACTED]
-- [[dot-scan_tool_result()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
 - [[dot-test_base64_payload_normalized()]] - `calls` [EXTRACTED]
 - [[dot-test_detection_breakdown_by_category()]] - `calls` [EXTRACTED]
 - [[dot-test_encoding_bypass_detection_rate()]] - `calls` [EXTRACTED]
@@ -94,4 +94,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_edge_oauth.py"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L57"
+community: "test_edge_service_routes.py"
+location: "L129"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/EnhancedApprovalQueue
+  - graphify/EXTRACTED
+  - community/test_edge_service_routespy
 ---
 
 # notify()
 
 ## Connections
-- [[svc()_1]] - `indirect_call` [INFERRED]
+- [[_telegram_send()]] - `calls` [EXTRACTED]
+- [[build_edge_service()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Skill Packager - Creates a distributable .skill file of a skill folder Usage…]] - `rationale_for` [EXTRACTED]
-- [[main()_30]] - `contains` [EXTRACTED]
+- [[main()_29]] - `contains` [EXTRACTED]
 - [[package_skill()]] - `contains` [EXTRACTED]
 - [[quick_validate.py]] - `imports_from` [EXTRACTED]
 - [[test_package_skill.py]] - `imports_from` [EXTRACTED]

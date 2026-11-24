@@ -17,7 +17,7 @@ tags:
 - [[dot-test_rejects_symlink_directory()]] - `calls` [EXTRACTED]
 - [[dot-test_rejects_symlink_to_external_file()]] - `calls` [EXTRACTED]
 - [[Package a skill folder into a .skill file. Args skill_path Path to the skill…]] - `rationale_for` [EXTRACTED]
-- [[main()_30]] - `calls` [EXTRACTED]
+- [[main()_29]] - `calls` [EXTRACTED]
 - [[package_skill.py]] - `contains` [EXTRACTED]
 - [[test_package_skill.py]] - `imports` [EXTRACTED]
 - [[validate_skill()]] - `calls` [EXTRACTED]

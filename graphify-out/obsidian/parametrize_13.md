@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestComplianceMaths"
+community: "test_mfa_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestComplianceMaths
+  - community/test_mfa_guardpy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_compliance_levels()]] - `references` [EXTRACTED]
+- [[test_is_required_tool_call_tier_parsing()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestComplianceMaths
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

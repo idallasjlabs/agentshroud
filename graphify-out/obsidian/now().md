@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_mfa_guard.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L45"
+community: "_sleep"
+location: "L1703"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/_sleep
 ---
 
 # now()
 
 ## Connections
-- [[fixture]] - `references` [EXTRACTED]
-- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
+- [[dot-test_ingest_records_even_when_disk_write_fails()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/_sleep

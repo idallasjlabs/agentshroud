@@ -1,17 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_latency_guard.py"
-location: "L1313"
+community: "test_voice_gateway.py"
+location: "L1353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_voice_gatewaypy
 ---
 
 # mock_stream()
 
 ## Connections
-- [[test_call_agent_stream_generic_http_error_falls_back()]] - `contains` [EXTRACTED]
+- [[_mock_stream_resp()]] - `calls` [EXTRACTED]
+- [[_sse_body()]] - `calls` [EXTRACTED]
+- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

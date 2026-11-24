@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "PathRewriteResult"
+community: "PathIsolationManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathRewriteResult
+  - community/PathIsolationManager
 ---
 
 # path_isolation.py
@@ -19,4 +19,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathRewriteResult
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

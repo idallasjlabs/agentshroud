@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "_sleep"
-location: "L1652"
+location: "L2019"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # now()
 
 ## Connections
-- [[dot-test_skips_ingest_when_marked_done_after_wake()]] - `contains` [EXTRACTED]
+- [[dot-test_undelivered_new_advisory_retries_not_marked_ingested()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sleep

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "IntelReportStore"
+community: "CompetitiveIntelReport"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/CompetitiveIntelReport
 ---
 
 # model_validator
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-_compute_content_hash()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

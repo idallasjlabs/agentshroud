@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/models.py"
+community: "test_security.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_securitypy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_string_mapping()]] - `references` [EXTRACTED]
-- [[dot-test_type_mapping()]] - `references` [EXTRACTED]
+- [[test_shortcut_content_types_accepted()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

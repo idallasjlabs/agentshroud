@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_edge.py"
+community: "test_soc_realtime_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_edgepy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_declared_mode_and_drift()]] - `references` [EXTRACTED]
+- [[dot-test_engine_health_mapping()]] - `references` [EXTRACTED]
+- [[dot-test_engine_status_mapping()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

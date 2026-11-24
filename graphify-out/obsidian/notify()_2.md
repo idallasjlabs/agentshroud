@@ -1,20 +1,17 @@
 ---
-source_file: "browser-extension/background.js"
+source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "background.js"
-location: "L45"
+community: "test_edge_e2e_sdk.py"
+location: "L57"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/backgroundjs
+  - graphify/INFERRED
+  - community/test_edge_e2e_sdkpy
 ---
 
 # notify()
 
 ## Connections
-- [[background.js]] - `contains` [EXTRACTED]
-- [[clipPage()]] - `calls` [EXTRACTED]
-- [[forwardUrl()]] - `calls` [EXTRACTED]
-- [[reportResult()]] - `calls` [EXTRACTED]
+- [[svc()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/backgroundjs
+#graphify/code #graphify/INFERRED #community/test_edge_e2e_sdkpy

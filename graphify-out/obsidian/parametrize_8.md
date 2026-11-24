@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "_stub_client"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/_stub_client
 ---
 
 # parametrize
 
 ## Connections
-- [[test_approvals_missing_queue_is_503()]] - `references` [EXTRACTED]
-- [[test_approvals_unknown_id_is_404()]] - `references` [EXTRACTED]
+- [[dot-test_kill_each_scope()]] - `references` [EXTRACTED]
+- [[dot-test_simple_get_subcommands()]] - `references` [EXTRACTED]
+- [[test_convenience_methods_hit_expected_endpoints()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_stub_client
