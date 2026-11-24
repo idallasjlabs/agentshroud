@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/approval_queue/store.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "ApprovalStore"
-location: "L63"
+community: "ReportIntegrityError"
+location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ReportIntegrityError
 ---
 
 # .save()
 
 ## Connections
-- [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[ApprovalStore]] - `method` [EXTRACTED]
-- [[Insert or replace an approval item.]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
+- [[Persist report to the store, linking it to the previous report. Sets…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError

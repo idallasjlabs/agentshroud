@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/approvals.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_edge_approvals.py"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_edge_approvalspy
 ---
 
 # .request()
@@ -25,4 +25,4 @@ tags:
 - [[args_sha256()]] - `calls` [EXTRACTED]
 - [[render_card()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_edge_approvalspy

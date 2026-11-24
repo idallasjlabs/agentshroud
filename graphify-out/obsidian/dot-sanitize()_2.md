@@ -18,6 +18,6 @@ tags:
 - [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
 - [[Detect PII in content and apply the enforcement action Args content Text to…]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `method` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

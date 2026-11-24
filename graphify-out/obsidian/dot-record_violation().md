@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustLevel"
 location: "L221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustLevel
 ---
 
 # .record_violation()
@@ -19,4 +19,4 @@ tags:
 - [[TrustManager]] - `method` [EXTRACTED]
 - [[ViolationType]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

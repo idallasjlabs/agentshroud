@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "test_edge_facades.py"
-location: "L125"
+community: "FalcoAlertWatcher"
+location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_facadespy
+  - community/FalcoAlertWatcher
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_age_hours()]] - `calls` [EXTRACTED]
-- [[dot-_parse()]] - `calls` [EXTRACTED]
-- [[Any_84]] - `references` [EXTRACTED]
-- [[PkeStatus]] - `method` [EXTRACTED]
+- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Poll Falco alert files until stopped.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_facadespy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "soc/models.py"
-location: "L85"
+community: "EnvelopeSigner"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/EnvelopeSigner
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
+- [[HermesDelegate]] - `method` [EXTRACTED]
+- [[wrap_untrusted()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

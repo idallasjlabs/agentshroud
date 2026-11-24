@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/data_exfil_volume_guard.py"
 type: "code"
-community: "test_all_modules_enforce.py"
-location: "L375"
+community: "DataExfilVolumeGuard"
+location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/DataExfilVolumeGuard
 ---
 
 # .reset_session()
 
 ## Connections
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[Reset session score after owner review. Args session_id Session to reset…]] - `rationale_for` [EXTRACTED]
+- [[Clear cumulative + baseline state for a session (e.g. on new session).]] - `rationale_for` [EXTRACTED]
+- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

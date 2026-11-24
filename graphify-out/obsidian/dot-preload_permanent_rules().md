@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "EgressScope"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/EgressScope
 ---
 
 # .preload_permanent_rules()
@@ -17,4 +17,4 @@ tags:
 - [[EgressRule]] - `calls` [EXTRACTED]
 - [[Pre-approve known service domains at startup without interactive prompts.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/EgressScope

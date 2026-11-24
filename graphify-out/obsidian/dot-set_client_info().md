@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "MemoryTokenStorage"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/MemoryTokenStorage
 ---
 
 # .set_client_info()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryTokenStorage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/MemoryTokenStorage

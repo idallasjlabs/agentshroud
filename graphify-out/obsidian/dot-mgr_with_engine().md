@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services.py"
 type: "code"
-community: "TestServiceManagerGetLogs"
+community: "ServiceManager"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestServiceManagerGetLogs
+  - community/ServiceManager
 ---
 
 # .mgr_with_engine()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestServiceManagerGetLogs]] - `method` [EXTRACTED]
-- [[fixture_30]] - `references` [EXTRACTED]
+- [[fixture_109]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestServiceManagerGetLogs
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

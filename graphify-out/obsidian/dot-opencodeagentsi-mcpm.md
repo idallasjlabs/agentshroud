@@ -12,6 +12,6 @@ tags:
 # .opencode/agents/i-mcpm.md
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_5]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

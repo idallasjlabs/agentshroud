@@ -1,18 +1,20 @@
 ---
 source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "test_edge_facades.py"
-location: "L56"
+community: "EnvelopeSigner"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_facadespy
+  - community/EnvelopeSigner
 ---
 
 # .run()
 
 ## Connections
-- [[Any_84]] - `references` [EXTRACTED]
-- [[LabSearch]] - `method` [EXTRACTED]
+- [[dot-_age_hours()]] - `calls` [EXTRACTED]
+- [[dot-_parse()]] - `calls` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
+- [[PkeStatus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_facadespy
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

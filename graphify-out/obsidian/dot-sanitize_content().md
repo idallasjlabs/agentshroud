@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "ContentThreat"
+community: "middleware.py"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContentThreat
+  - community/middlewarepy
 ---
 
 # .sanitize_content()
@@ -17,4 +17,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[Sanitize content by removingredacting threats.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContentThreat
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

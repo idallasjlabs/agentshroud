@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "_TrustCaptor"
-location: "L421"
+community: "AuditChain"
+location: "L1048"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_TrustCaptor
+  - community/AuditChain
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_outbound_core()]] - `calls` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[PipelineResult]] - `references` [EXTRACTED]
+- [[Process an outbound response through the security pipeline. Thin wrapper around…]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_TrustCaptor
+#graphify/code #graphify/EXTRACTED #community/AuditChain

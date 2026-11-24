@@ -1,21 +1,21 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "WebProxyResult"
-location: "L434"
+community: "run"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyResult
+  - community/run
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-_audit()]] - `calls` [EXTRACTED]
-- [[EgressEvent]] - `calls` [EXTRACTED]
-- [[Scan a response body for prompt injection, PII, and hidden content. This is…]] - `rationale_for` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyResult]] - `calls` [EXTRACTED]
+- [[dot-_calculate_similarity()]] - `calls` [EXTRACTED]
+- [[dot-_redact_fuzzy_match()]] - `calls` [EXTRACTED]
+- [[PromptProtection]] - `method` [EXTRACTED]
+- [[RedactionResult]] - `calls` [EXTRACTED]
+- [[Scan text for protected content and return redacted version. Args text The…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyResult
+#graphify/code #graphify/EXTRACTED #community/run

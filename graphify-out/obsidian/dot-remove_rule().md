@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "EgressApprovalQueue"
 location: "L729"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/EgressApprovalQueue
 ---
 
 # .remove_rule()
@@ -16,4 +16,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[Remove an egress rule. Args domain Domain to remove rule for Returns True if…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

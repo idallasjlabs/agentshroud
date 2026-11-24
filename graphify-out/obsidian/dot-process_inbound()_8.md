@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_TrustCaptor"
-location: "L407"
+community: "BlockingPipeline"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_TrustCaptor
+  - community/BlockingPipeline
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[FakePipelineResult]] - `calls` [EXTRACTED]
+- [[PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_TrustCaptor
+#graphify/code #graphify/EXTRACTED #community/BlockingPipeline

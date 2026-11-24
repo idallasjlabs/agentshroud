@@ -22,10 +22,10 @@ tags:
 - [[dot-edge_kill()]] - `calls` [EXTRACTED]
 - [[dot-edge_unkill()]] - `calls` [EXTRACTED]
 - [[dot-freeze()]] - `calls` [EXTRACTED]
-- [[dot-restart_service()_1]] - `calls` [EXTRACTED]
+- [[dot-restart_service()]] - `calls` [EXTRACTED]
 - [[dot-run_scan()]] - `calls` [EXTRACTED]
-- [[dot-stop_service()_1]] - `calls` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[dot-stop_service()]] - `calls` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

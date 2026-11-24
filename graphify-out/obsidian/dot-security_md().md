@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "TestContributingMdAccuracy"
+community: "test_docs_accuracy.py"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestContributingMdAccuracy
+  - community/test_docs_accuracypy
 ---
 
 # .security_md()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestSecurityMdAccuracy]] - `method` [EXTRACTED]
 - [[_read_file()]] - `calls` [EXTRACTED]
-- [[fixture_101]] - `references` [EXTRACTED]
+- [[fixture_99]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestContributingMdAccuracy
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "asyncio"
-location: "L281"
+community: "AuditStore"
+location: "L172"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/AuditStore
 ---
 
 # .log_event()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[dot-_get_latest_hash()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `calls` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Log a new audit event with hash chain integrity. Args bot_id Identifier of…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/AuditStore

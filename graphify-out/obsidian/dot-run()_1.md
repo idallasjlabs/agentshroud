@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "SlackSocketClient"
+community: ".test_events_api_envelope_dispatches_handle_event"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # .run()
@@ -18,4 +18,4 @@ tags:
 - [[SlackSocketClient]] - `method` [EXTRACTED]
 - [[compute_backoff()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

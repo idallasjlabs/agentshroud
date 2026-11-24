@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "egress_approval.py"
 location: "L356"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/egress_approvalpy
 ---
 
 # .request_approval()
@@ -20,4 +20,4 @@ tags:
 - [[Request approval for egress to a domainport. Args domain Target domain port…]] - `rationale_for` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/egress_approvalpy

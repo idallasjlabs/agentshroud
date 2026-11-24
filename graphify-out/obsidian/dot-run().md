@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L206"
+community: "make_event"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/make_event
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Poll Falco alert files until stopped.]] - `rationale_for` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
+- [[Facade]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/make_event

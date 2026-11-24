@@ -1,19 +1,20 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
-location: "L165"
+community: "._extract_egress_targets"
+location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/_extract_egress_targets
 ---
 
 # .send_request()
 
 ## Connections
+- [[dot-start()_2]] - `calls` [EXTRACTED]
 - [[Any_91]] - `references` [EXTRACTED]
-- [[HttpSseConnection]] - `method` [EXTRACTED]
-- [[Send an HTTP request to the MCP server.]] - `rationale_for` [EXTRACTED]
+- [[Send a JSON-RPC request and read the response.]] - `rationale_for` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets

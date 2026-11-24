@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "IntelReportStore"
-location: "L212"
+community: "test_mfa_guard.py"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/test_mfa_guardpy
 ---
 
 # .save()
 
 ## Connections
-- [[dot-_load_latest_file()]] - `calls` [EXTRACTED]
-- [[CompetitiveIntelReport]] - `references` [EXTRACTED]
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_59]] - `references` [EXTRACTED]
-- [[Persist report to the store, linking it to the previous report. Sets…]] - `rationale_for` [EXTRACTED]
+- [[ApprovalQueueItem]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Insert or replace an approval item.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

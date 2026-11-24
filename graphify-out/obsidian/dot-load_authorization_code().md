@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/oauth_service.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "EdgeOAuthService"
-location: "L227"
+community: "GatewayBackedProvider"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/GatewayBackedProvider
 ---
 
 # .load_authorization_code()
 
 ## Connections
-- [[Any_48]] - `references` [EXTRACTED]
-- [[EdgeOAuthService]] - `method` [EXTRACTED]
+- [[AuthorizationCode]] - `references` [EXTRACTED]
+- [[GatewayBackedProvider]] - `method` [EXTRACTED]
+- [[OAuthClientInformationFull]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
