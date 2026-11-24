@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "._get_engine"
+community: "ServiceManager"
 location: "L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/ServiceManager
 ---
 
 # .start_service()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_get_engine()]] - `calls` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

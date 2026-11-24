@@ -17,6 +17,6 @@ tags:
 - [[_capture()_1]] - `contains` [EXTRACTED]
 - [[_capture()_2]] - `indirect_call` [INFERRED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_activity_command_renders_entries

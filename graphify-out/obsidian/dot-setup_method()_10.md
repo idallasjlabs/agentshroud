@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestScanParameterAllowlists"
-location: "L663"
+community: "ContainerSnapshot"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScanParameterAllowlists
+  - community/ContainerSnapshot
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
-- [[app()]] - `indirect_call` [INFERRED]
+- [[ContainerSnapshot]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScanParameterAllowlists
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

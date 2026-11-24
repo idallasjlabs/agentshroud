@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_adversarial_injection.py"
+community: "normalize_input"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/normalize_input
 ---
 
 # .test_base64_payload_normalized()
@@ -17,4 +17,4 @@ tags:
 - [[_normalizer_transforms()]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

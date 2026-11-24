@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "daily_cve_report.py"
+community: "format_upstream_cve_alert"
 location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/daily_cve_reportpy
+  - community/format_upstream_cve_alert
 ---
 
 # .test_alert_titled_for_agent_label()
@@ -16,4 +16,4 @@ tags:
 - [[TestFormatUpstreamCveAlert]] - `method` [EXTRACTED]
 - [[format_upstream_cve_alert()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/format_upstream_cve_alert

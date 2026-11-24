@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Create temporary directory for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
-- [[fixture_59]] - `references` [EXTRACTED]
+- [[fixture_65]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

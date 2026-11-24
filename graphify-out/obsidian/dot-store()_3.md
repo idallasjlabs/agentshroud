@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AuditStore]] - `calls` [EXTRACTED]
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
-- [[fixture_115]] - `references` [EXTRACTED]
+- [[fixture_116]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditStore

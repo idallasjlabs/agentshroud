@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_output_canary.py"
+source_file: "gateway/tests/test_benchmark_regression.py"
 type: "code"
-community: "OutputCanary"
-location: "L20"
+community: "test_benchmark_regression.py"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/test_benchmark_regressionpy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[OutputCanary]] - `calls` [EXTRACTED]
-- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
-- [[TestOutputCanary]] - `method` [EXTRACTED]
+- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
+- [[load_baseline()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/test_benchmark_regressionpy

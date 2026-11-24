@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/cron_state_monitor.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "CronStateMonitor"
-location: "L315"
+community: "make_proxy"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/make_proxy
 ---
 
 # .stop()
 
 ## Connections
-- [[CronStateMonitor]] - `method` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/make_proxy

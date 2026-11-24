@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L101"
+community: "HTTPConnectProxy"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/HTTPConnectProxy
 ---
 
 # .start()
 
 ## Connections
-- [[dot-send_request()_1]] - `calls` [EXTRACTED]
-- [[Start the MCP server process.]] - `rationale_for` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy]] - `method` [EXTRACTED]
+- [[Start the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -16,6 +16,6 @@ tags:
 - [[First sendMessage returns 400 'can't parse entities'; retry with plain text…]] - `rationale_for` [EXTRACTED]
 - [[TestTelegram400Retry]] - `method` [EXTRACTED]
 - [[_fake_urlopen()_1]] - `indirect_call` [INFERRED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestTelegram400Retry

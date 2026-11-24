@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AlertDispatcher]] - `calls` [INFERRED]
 - [[Concurrent alert dispatch shouldn't lose or corrupt alerts.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[TestConcurrency]] - `method` [EXTRACTED]
 - [[dispatch()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

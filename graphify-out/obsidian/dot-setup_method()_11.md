@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_tool_injection_scan.py"
 type: "code"
-community: "TestEgressSSRF"
-location: "L845"
+community: "ToolResultInjectionScanner"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressSSRF
+  - community/ToolResultInjectionScanner
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressSSRF]] - `method` [EXTRACTED]
+- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressSSRF
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

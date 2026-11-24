@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "SlackSocketClient"
-location: "L93"
+community: "test_mcp_proxy.py"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackSocketClient
+  - community/test_mcp_proxypy
 ---
 
 # .stop()
 
 ## Connections
-- [[Signal the run loop to exit.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackSocketClient
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

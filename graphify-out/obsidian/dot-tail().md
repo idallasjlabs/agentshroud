@@ -12,7 +12,7 @@ tags:
 # .tail()
 
 ## Connections
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[LogBuffer]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/LogBuffer

@@ -15,9 +15,9 @@ tags:
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
 - [[FakeApprovalQueue]] - `calls` [INFERRED]
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]
-- [[__init__()_19]] - `contains` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[get_pending_requests()_1]] - `contains` [EXTRACTED]
+- [[__init__()_15]] - `contains` [EXTRACTED]
+- [[asyncio_63]] - `references` [EXTRACTED]
+- [[get_pending_requests()_2]] - `contains` [EXTRACTED]
 - [[request_approval()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

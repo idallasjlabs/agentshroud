@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "TestMetadataGuard"
-location: "L18"
+community: "ws_soc_endpoint"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/ws_soc_endpoint
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestMetadataGuard]] - `method` [EXTRACTED]
+- [[Clear token store before each test.]] - `rationale_for` [EXTRACTED]
+- [[TestWSTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint

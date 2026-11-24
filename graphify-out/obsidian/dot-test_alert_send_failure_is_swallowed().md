@@ -16,6 +16,6 @@ tags:
 - [[TestPerAgentUpstreamChecks]] - `method` [EXTRACTED]
 - [[_boom_send()]] - `contains` [EXTRACTED]
 - [[_boom_send()_1]] - `indirect_call` [INFERRED]
-- [[asyncio_20]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

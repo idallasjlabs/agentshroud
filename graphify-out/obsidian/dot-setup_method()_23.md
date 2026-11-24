@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_multilingual_injection.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestMultilingualInjection"
-location: "L10"
+community: "prompt_guard.py"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/prompt_guardpy
 ---
 
 # .setup_method()
 
 ## Connections
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
-- [[TestMultilingualInjection]] - `method` [EXTRACTED]
+- [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
