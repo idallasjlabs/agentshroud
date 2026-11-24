@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/router.py"
+community: "server.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/serverpy
 ---
 
 # Request
 
 ## Connections
-- [[soc_dashboard()]] - `references` [EXTRACTED]
+- [[firmware_bin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/serverpy

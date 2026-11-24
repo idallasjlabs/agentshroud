@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APeerTestDouble"
+community: "soc_dashboard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APeerTestDouble
+  - community/soc_dashboard
 ---
 
 # Request
 
 ## Connections
-- [[dot-_handle()_1]] - `references` [EXTRACTED]
+- [[soc_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble
+#graphify/code #graphify/EXTRACTED #community/soc_dashboard
