@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "deep_security_test"
+community: "lifespan"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deep_security_test
+  - community/lifespan
 ---
 
 # LogRecord
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deep_security_test
+#graphify/code #graphify/EXTRACTED #community/lifespan

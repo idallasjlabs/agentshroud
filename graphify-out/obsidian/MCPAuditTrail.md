@@ -12,8 +12,8 @@ tags:
 # MCPAuditTrail
 
 ## Connections
-- [[dot-__init__()_227]] - `references` [EXTRACTED]
-- [[dot-__init__()_60]] - `method` [EXTRACTED]
+- [[dot-__init__()_62]] - `references` [EXTRACTED]
+- [[dot-__init__()_65]] - `method` [EXTRACTED]
 - [[dot-__len__()]] - `method` [EXTRACTED]
 - [[dot-_compute_chain_hash()]] - `method` [EXTRACTED]
 - [[dot-entries()]] - `method` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[mcp_audit.py_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `imports` [EXTRACTED]
-- [[proxy()_1]] - `uses` [INFERRED]
+- [[proxy()]] - `uses` [INFERRED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]

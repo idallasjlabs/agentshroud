@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "test_mcp_proxy.py"
 location: "L224"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/test_mcp_proxypy
 ---
 
 # MCPProxy
 
 ## Connections
-- [[dot-__init__()_227]] - `method` [EXTRACTED]
+- [[dot-__init__()_62]] - `method` [EXTRACTED]
 - [[dot-_emit_privacy_event()]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `method` [EXTRACTED]
 - [[dot-_extract_egress_targets()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-mcp_proxy_with_approval()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_call()]] - `method` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `method` [EXTRACTED]
-- [[dot-set_event_bus()_2]] - `method` [EXTRACTED]
+- [[dot-set_event_bus()]] - `method` [EXTRACTED]
 - [[dot-shutdown()]] - `method` [EXTRACTED]
 - [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
 - [[dot-test_egress_allows_non_url_tool_call()]] - `calls` [EXTRACTED]
@@ -40,13 +40,13 @@ tags:
 - [[TestMCPProxyIntegration]] - `uses` [INFERRED]
 - [[TestPassthrough]] - `uses` [INFERRED]
 - [[TestProxyInterception]] - `uses` [INFERRED]
-- [[_run()_7]] - `calls` [EXTRACTED]
+- [[_run()_9]] - `calls` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 - [[passthrough_proxy()]] - `uses` [INFERRED]
-- [[proxy()_1]] - `uses` [INFERRED]
+- [[proxy()]] - `uses` [INFERRED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `imports` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

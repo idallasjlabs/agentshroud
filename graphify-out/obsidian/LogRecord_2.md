@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "BufferHandler"
+community: "LogSanitizer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BufferHandler
+  - community/LogSanitizer
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-emit()]] - `references` [EXTRACTED]
+- [[dot-filter()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BufferHandler
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

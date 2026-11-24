@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # MCPPolicyEngine
 
 ## Connections
-- [[dot-__init__()_142]] - `method` [EXTRACTED]
+- [[dot-__init__()_133]] - `method` [EXTRACTED]
 - [[dot-_decide()]] - `method` [EXTRACTED]
 - [[dot-_tier_for()]] - `method` [EXTRACTED]
 - [[dot-enforce()]] - `method` [EXTRACTED]
@@ -59,4 +59,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `uses` [INFERRED]
 - [[test_unknown_server_is_denied_by_default()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

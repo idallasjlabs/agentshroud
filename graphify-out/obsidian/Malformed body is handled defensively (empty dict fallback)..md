@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "test_channel_ownership.py"
+community: "TestTelegramWebhook"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_channel_ownershippy
+  - community/TestTelegramWebhook
 ---
 
 # Malformed body is handled defensively (empty dict fallback).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_json_body_returns_200()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_channel_ownershippy
+#graphify/rationale #graphify/EXTRACTED #community/TestTelegramWebhook

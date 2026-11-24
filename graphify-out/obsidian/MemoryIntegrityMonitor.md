@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "middleware.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/middlewarepy
 ---
 
 # MemoryIntegrityMonitor
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_33]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_154]] - `method` [EXTRACTED]
 - [[dot-_compute_file_hash()]] - `method` [EXTRACTED]
 - [[dot-_detect_modification_source()]] - `method` [EXTRACTED]
 - [[dot-_is_in_write_window()]] - `method` [EXTRACTED]
@@ -26,8 +26,8 @@ tags:
 - [[dot-register_expected_write()]] - `method` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `method` [EXTRACTED]
 - [[dot-scan_file()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
 - [[dot-test_integrity_database_persistence()]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `shares_data_with` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -12,6 +12,6 @@ tags:
 # Log a new audit event with hash chain integrity. Args: bot_id: Identifier of…
 
 ## Connections
-- [[dot-log_event()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-log_event()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditStore

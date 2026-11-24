@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: "MCPPermissionManager"
+community: "test_mcp_proxy.py"
 location: "L176"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_mcp_proxypy
 ---
 
 # Manages permissions for MCP tool calls. Default-allow philosophy: tools work…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPPermissionManager]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxypy

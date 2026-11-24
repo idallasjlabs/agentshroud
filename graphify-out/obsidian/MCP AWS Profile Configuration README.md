@@ -14,7 +14,7 @@ tags:
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mcpm-aws-profileREADME]] - `contains` [EXTRACTED]
 - [[MCP AWS Profile Configuration Skill_1]] - `references` [INFERRED]
-- [[Purpose_168]] - `contains` [EXTRACTED]
+- [[Purpose_169]] - `contains` [EXTRACTED]
 - [[Related Skills_112]] - `contains` [EXTRACTED]
 - [[Usage_125]] - `contains` [EXTRACTED]
 

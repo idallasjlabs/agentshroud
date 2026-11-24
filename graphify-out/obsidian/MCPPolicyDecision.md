@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # MCPPolicyDecision
@@ -21,4 +21,4 @@ tags:
 - [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - `uses` [INFERRED]
 - [[test_mcp_policy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

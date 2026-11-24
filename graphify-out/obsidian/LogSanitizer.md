@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "deep_security_test"
+community: "LogSanitizer"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deep_security_test
+  - community/LogSanitizer
 ---
 
 # LogSanitizer
 
 ## Connections
-- [[dot-__init__()_39]] - `method` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `method` [EXTRACTED]
+- [[dot-__init__()_197]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-_sanitize_text()]] - `method` [EXTRACTED]
-- [[dot-filter()]] - `method` [EXTRACTED]
+- [[dot-filter()_1]] - `method` [EXTRACTED]
 - [[dot-get_log_sanitizer()]] - `references` [EXTRACTED]
-- [[dot-sanitizer()_3]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
+- [[dot-sanitizer()_2]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_37]] - `calls` [EXTRACTED]
 - [[dot-test_empty_inputs_everywhere()]] - `calls` [INFERRED]
 - [[dot-test_log_sanitizer_covers_stack_traces()]] - `calls` [INFERRED]
 - [[Custom logging filter that sanitizes sensitive data from log records.]] - `rationale_for` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deep_security_test
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

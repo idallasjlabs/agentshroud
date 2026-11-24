@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Authentication Issues]] - `contains` [EXTRACTED]
 - [[Common Errors]] - `contains` [EXTRACTED]
-- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

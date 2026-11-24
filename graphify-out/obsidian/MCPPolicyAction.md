@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L51"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # MCPPolicyAction
 
 ## Connections
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
 - [[Enum_33]] - `inherits` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
 - [[The three terminal policy outcomes for an MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
-- [[str_17]] - `inherits` [EXTRACTED]
+- [[str_18]] - `inherits` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `uses` [INFERRED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `uses` [INFERRED]
 - [[test_critical_tool_requires_approval()]] - `uses` [INFERRED]
@@ -46,4 +46,4 @@ tags:
 - [[test_server_and_tool_matching_is_case_insensitive()]] - `uses` [INFERRED]
 - [[test_unknown_server_is_denied_by_default()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/load_config
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

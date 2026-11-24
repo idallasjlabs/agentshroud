@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "fastapi.md"
+community: "ingest_api/main.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/ingest_api/mainpy
 ---
 
 # Main Endpoints Integration Tests - P1 Middleware Wiring Tests for main.py…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_main_endpoints.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fastapimd
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

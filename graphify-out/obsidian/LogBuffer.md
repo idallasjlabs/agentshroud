@@ -12,7 +12,7 @@ tags:
 # LogBuffer
 
 ## Connections
-- [[dot-__init__()_174]] - `method` [EXTRACTED]
+- [[dot-__init__()_171]] - `method` [EXTRACTED]
 - [[dot-append()]] - `method` [EXTRACTED]
 - [[dot-tail()]] - `method` [EXTRACTED]
 - [[Ring buffer for recent logaudit entries.]] - `rationale_for` [EXTRACTED]

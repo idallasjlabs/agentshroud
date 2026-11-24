@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "test_dashboard.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_dashboardpy
 ---
 
 # Load contributor logs from multiple directories with de-dup by filename.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_load_contributor_logs()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy
