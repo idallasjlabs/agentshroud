@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APolicyEngine"
+community: "LockdownLevel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/LockdownLevel
 ---
 
 # Enum
 
 ## Connections
-- [[A2AMethod]] - `inherits` [EXTRACTED]
-- [[A2APolicyAction]] - `inherits` [EXTRACTED]
-- [[a2a_policy.py]] - `imports_from` [EXTRACTED]
+- [[LockdownLevel]] - `inherits` [EXTRACTED]
+- [[progressive_lockdown.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/LockdownLevel

@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_e2e_proxy.py"
+community: "test_module_stats.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_module_statspy
 ---
 
 # Enum
 
 ## Connections
-- [[PipelineAction]] - `inherits` [EXTRACTED]
-- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
+- [[Decision]] - `inherits` [EXTRACTED]
+- [[module_stats.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

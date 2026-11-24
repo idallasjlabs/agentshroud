@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: ".process_webhook"
 location: "L304"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/process_webhook
 ---
 
 # Extract user ID from webhook payload based on source platform.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_user_id()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/process_webhook

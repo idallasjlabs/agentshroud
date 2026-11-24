@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "ApprovalRequest"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ApprovalRequest
 ---
 
 # Expired request raises ValueError on decide.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_expired_request_cannot_be_decided()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

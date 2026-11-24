@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mcp_proxy_coverage.py"
+community: "make_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/make_event
 ---
 
 # Exception
 
 ## Connections
-- [[dot-__init__()_28]] - `references` [EXTRACTED]
+- [[_Denied]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/make_event

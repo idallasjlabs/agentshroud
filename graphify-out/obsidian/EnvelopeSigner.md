@@ -12,8 +12,8 @@ tags:
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_206]] - `references` [EXTRACTED]
-- [[dot-__init__()_215]] - `method` [EXTRACTED]
+- [[dot-__init__()_203]] - `references` [EXTRACTED]
+- [[dot-__init__()_205]] - `method` [EXTRACTED]
 - [[dot-_compute_signature()]] - `method` [EXTRACTED]
 - [[dot-sign()]] - `method` [EXTRACTED]
 - [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]

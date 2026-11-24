@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_skills_reload_impl"
+community: "GatewayBackedProvider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/GatewayBackedProvider
 ---
 
 # Exception
 
 ## Connections
-- [[SkillGuardBlocked]] - `inherits` [EXTRACTED]
+- [[GatewayError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "ContextGuard"
+community: "lifespan.py"
 location: "L338"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/lifespanpy
 ---
 
 # Empty strings shouldn't crash any module.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_empty_inputs_everywhere()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContextGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

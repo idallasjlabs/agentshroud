@@ -1,35 +1,35 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # EnhancedApprovalQueue
 
 ## Connections
-- [[dot-__init__()_227]] - `references` [EXTRACTED]
-- [[dot-__init__()_118]] - `references` [EXTRACTED]
-- [[dot-__init__()_117]] - `method` [EXTRACTED]
+- [[dot-__init__()_62]] - `references` [EXTRACTED]
+- [[dot-__init__()_148]] - `references` [EXTRACTED]
+- [[dot-__init__()_114]] - `method` [EXTRACTED]
 - [[dot-_notify_telegram()]] - `method` [EXTRACTED]
 - [[dot-_schedule_timeout()]] - `method` [EXTRACTED]
 - [[dot-_timeout_request()]] - `method` [EXTRACTED]
-- [[dot-broadcast()]] - `method` [EXTRACTED]
-- [[dot-close()_11]] - `method` [EXTRACTED]
-- [[dot-connect()_2]] - `method` [EXTRACTED]
-- [[dot-decide()]] - `method` [EXTRACTED]
+- [[dot-broadcast()_1]] - `method` [EXTRACTED]
+- [[dot-close()_9]] - `method` [EXTRACTED]
+- [[dot-connect()_1]] - `method` [EXTRACTED]
+- [[dot-decide()_1]] - `method` [EXTRACTED]
 - [[dot-disconnect()_1]] - `method` [EXTRACTED]
-- [[dot-get_item()_1]] - `method` [EXTRACTED]
-- [[dot-get_pending()_1]] - `method` [EXTRACTED]
+- [[dot-get_item()_2]] - `method` [EXTRACTED]
+- [[dot-get_pending()_2]] - `method` [EXTRACTED]
 - [[dot-get_policy_for_tier()]] - `method` [EXTRACTED]
 - [[dot-get_tool_risk_tier()]] - `method` [EXTRACTED]
 - [[dot-initialize()_1]] - `method` [EXTRACTED]
 - [[dot-requires_approval()]] - `method` [EXTRACTED]
-- [[dot-submit()]] - `method` [EXTRACTED]
+- [[dot-submit()_1]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()_2]] - `method` [EXTRACTED]
 - [[dot-test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
@@ -52,7 +52,7 @@ tags:
 - [[_submit_enhanced_high_risk()]] - `uses` [INFERRED]
 - [[_submit_tool_call()]] - `uses` [INFERRED]
 - [[approvals.py]] - `imports` [EXTRACTED]
-- [[edge()]] - `uses` [INFERRED]
+- [[edge()_1]] - `uses` [INFERRED]
 - [[enhanced_mfa_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue.py]] - `contains` [EXTRACTED]
@@ -72,4 +72,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `uses` [INFERRED]
 - [[test_websocket_notifications()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

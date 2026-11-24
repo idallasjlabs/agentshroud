@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestWebProxySecurityIntegration"
+community: "ProgressiveTrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebProxySecurityIntegration
+  - community/ProgressiveTrustConfig
 ---
 
 # Enum
 
 ## Connections
-- [[MockEgressChannel]] - `inherits` [EXTRACTED]
-- [[MockThreatLevel]] - `inherits` [EXTRACTED]
-- [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
+- [[TrustLevel]] - `inherits` [EXTRACTED]
+- [[ViolationType]] - `inherits` [EXTRACTED]
+- [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration
+#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig

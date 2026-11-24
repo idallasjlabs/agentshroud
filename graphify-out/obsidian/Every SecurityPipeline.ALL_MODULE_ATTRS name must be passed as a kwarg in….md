@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "test_docs_accuracy.py"
 location: "L262"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/test_docs_accuracypy
 ---
 
 # Every SecurityPipeline.ALL_MODULE_ATTRS name must be passed as a kwarg in…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLifespanWiresEveryPipelineModule]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ResourceGuard"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/ingest_api/mainpy
 ---
 
 # Exception
 
 ## Connections
-- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

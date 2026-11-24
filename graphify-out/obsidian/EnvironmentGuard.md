@@ -12,8 +12,8 @@ tags:
 # EnvironmentGuard
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_23]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_26]] - `method` [EXTRACTED]
 - [[dot-_contains_env_access_patterns()]] - `method` [EXTRACTED]
 - [[dot-_looks_like_credential()]] - `method` [EXTRACTED]
 - [[dot-_record_leakage()]] - `method` [EXTRACTED]

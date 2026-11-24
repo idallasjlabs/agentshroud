@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L270"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # Evaluate a single MCP tool call. Pure — no I/O, no side effects beyond best-…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-evaluate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

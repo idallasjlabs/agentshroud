@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "GitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/GitGuard
 ---
 
 # Enum
 
 ## Connections
-- [[TrustLevel]] - `inherits` [EXTRACTED]
-- [[ViolationType]] - `inherits` [EXTRACTED]
-- [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
+- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
+- [[git_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/GitGuard

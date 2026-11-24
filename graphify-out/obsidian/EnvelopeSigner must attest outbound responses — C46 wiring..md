@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # EnvelopeSigner must attest outbound responses — C46 wiring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnvelopeSignerInPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline

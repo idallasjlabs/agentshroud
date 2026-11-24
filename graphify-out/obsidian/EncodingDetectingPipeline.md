@@ -12,7 +12,7 @@ tags:
 # EncodingDetectingPipeline
 
 ## Connections
-- [[dot-process_inbound()_6]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_7]] - `method` [EXTRACTED]
 - [[dot-test_encoding_detected_on_getUpdates()]] - `calls` [EXTRACTED]
 - [[Pipeline that detects base64-encoded injections.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "Skills by Category"
+community: "GSDE&G Skills Reference"
 location: "L260"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/GSDEG_Skills_Reference
 ---
 
 # Emergency Contacts
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Emergency Procedures_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Skills_Reference

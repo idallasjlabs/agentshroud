@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "BrowserSecurityGuard"
+community: "SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BrowserSecurityGuard
+  - community/SecureBrowser
 ---
 
 # Exception
 
 ## Connections
-- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

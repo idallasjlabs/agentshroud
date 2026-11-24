@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "SecureBrowser"
+community: "PipelineAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/PipelineAction
 ---
 
 # Enum
 
 ## Connections
-- [[RiskLevel_4]] - `inherits` [EXTRACTED]
-- [[securebrowserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[PipelineAction]] - `inherits` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "app"
 location: "L1004"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/app
 ---
 
 # Empty STT result: no LLM call, state goes directly to idle.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_empty_transcript_goes_idle()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/app
