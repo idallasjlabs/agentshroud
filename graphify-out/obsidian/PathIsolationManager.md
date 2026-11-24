@@ -12,8 +12,8 @@ tags:
 # PathIsolationManager
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_100]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_103]] - `method` [EXTRACTED]
 - [[dot-_apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[dot-_check_cross_user_access()]] - `method` [EXTRACTED]
 - [[dot-_cleanup_user_directory()]] - `method` [EXTRACTED]
@@ -38,7 +38,7 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[path_isolation.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_path_isolation.py]] - `imports` [EXTRACTED]
 

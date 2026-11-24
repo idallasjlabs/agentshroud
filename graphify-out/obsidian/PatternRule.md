@@ -12,7 +12,7 @@ tags:
 # PatternRule
 
 ## Connections
-- [[dot-__init__()_108]] - `references` [EXTRACTED]
+- [[dot-__init__()_136]] - `references` [EXTRACTED]
 - [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[prompt_guard.py_2]] - `contains` [EXTRACTED]

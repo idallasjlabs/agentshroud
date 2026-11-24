@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "triage-cve-mitigations.py"
+community: "_run"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/triage-cve-mitigationspy
+  - community/_run
 ---
 
 # Path
 
 ## Connections
-- [[_rel()]] - `references` [EXTRACTED]
-- [[gap_report_path()]] - `references` [EXTRACTED]
+- [[_versions_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy
+#graphify/code #graphify/EXTRACTED #community/_run

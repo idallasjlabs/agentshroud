@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "._filter_outbound"
 location: "L2732"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_filter_outbound
 ---
 
 # Parse leaked model tool-call JSON blobs (e.g. {'name': 'NO_REPLY', ...}).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_parse_tool_call_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

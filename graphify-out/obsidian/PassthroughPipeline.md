@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "_wrap_response"
 location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # PassthroughPipeline
 
 ## Connections
 - [[dot-_make_proxy()_3]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_7]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_8]] - `method` [EXTRACTED]
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_is_quarantined()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_command_uppercase_is_quarantined()]] - `calls` [EXTRACTED]
@@ -220,4 +220,4 @@ tags:
 - [[Pipeline that allows everything.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

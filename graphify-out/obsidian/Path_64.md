@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: ".get_or_create_session"
+community: "UserSessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/UserSessionManager
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_180]] - `references` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_or_create_session
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ScanResult"
+community: "test_lifespan_prune.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/test_lifespan_prunepy
 ---
 
 # Path
 
 ## Connections
-- [[_build_tree()]] - `references` [EXTRACTED]
+- [[_make_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/test_lifespan_prunepy

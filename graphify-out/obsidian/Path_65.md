@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/main.py"
+community: "UserSessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/UserSessionManager
 ---
 
 # Path
 
 ## Connections
-- [[_load_contributor_logs()]] - `references` [EXTRACTED]
-- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
+- [[dot-__init__()_185]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

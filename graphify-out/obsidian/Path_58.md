@@ -11,6 +11,6 @@ tags:
 # Path
 
 ## Connections
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[dispatcher()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

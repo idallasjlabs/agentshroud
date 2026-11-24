@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "deep_security_test"
+community: "OutputCanary"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/deep_security_test
+  - community/OutputCanary
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/deep_security_test
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

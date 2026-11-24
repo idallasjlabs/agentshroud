@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_multi_host_test.py"
+community: "ScanResult"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_multi_host_testpy
+  - community/ScanResult
 ---
 
 # Path
 
 ## Connections
-- [[_run_wrapper()]] - `references` [EXTRACTED]
-- [[_write_exec()]] - `references` [EXTRACTED]
+- [[_build_tree()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/ScanResult

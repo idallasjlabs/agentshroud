@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "FalcoAlertWatcher"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/triage-cve-mitigationspy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_4]] - `references` [EXTRACTED]
-- [[read_alerts()]] - `references` [EXTRACTED]
+- [[_rel()]] - `references` [EXTRACTED]
+- [[gap_report_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

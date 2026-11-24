@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "generate_branding_assets.py"
+community: "EdgeStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_branding_assetspy
+  - community/EdgeStore
 ---
 
 # Path
 
 ## Connections
-- [[ensure()]] - `references` [EXTRACTED]
-- [[save()]] - `references` [EXTRACTED]
+- [[dot-__init__()_150]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy
+#graphify/code #graphify/EXTRACTED #community/EdgeStore

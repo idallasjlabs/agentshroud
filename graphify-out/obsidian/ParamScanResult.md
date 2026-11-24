@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "tool_chain_analyzer.py"
 location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/tool_chain_analyzerpy
 ---
 
 # ParamScanResult
@@ -18,4 +18,4 @@ tags:
 - [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

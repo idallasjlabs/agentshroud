@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: ".test_owner_pending_command_shows_pending_active_and_revoked"
+community: "_make_update"
 location: "L1115"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_owner_pending_command_shows_pending_active_and_revoked
+  - community/_make_update
 ---
 
 # Owner /pending should return deterministic snapshot of…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_owner_pending_command_shows_pending_active_and_revoked
+#graphify/rationale #graphify/EXTRACTED #community/_make_update

@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "MemoryIntegrityMonitor"
+community: "TestKillSwitchVerification"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/TestKillSwitchVerification
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_33]] - `references` [EXTRACTED]
-- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
-- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-scan_file()]] - `references` [EXTRACTED]
+- [[dot-_make_monitor()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/TestKillSwitchVerification

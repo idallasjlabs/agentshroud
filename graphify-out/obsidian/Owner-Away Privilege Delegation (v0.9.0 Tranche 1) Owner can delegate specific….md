@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "delegation.py"
+community: "DelegationPrivilege"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/delegationpy
+  - community/DelegationPrivilege
 ---
 
 # Owner-Away Privilege Delegation (v0.9.0 Tranche 1) Owner can delegate specific…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[delegation.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/delegationpy
+#graphify/rationale #graphify/EXTRACTED #community/DelegationPrivilege

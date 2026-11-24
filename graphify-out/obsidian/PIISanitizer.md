@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[dot-__init__()_24]] - `method` [EXTRACTED]
+- [[dot-__init__()_28]] - `method` [EXTRACTED]
 - [[dot-_apply_enforcement()]] - `method` [EXTRACTED]
 - [[dot-_get_sanitizer_for_tool()]] - `references` [EXTRACTED]
 - [[dot-_init_presidio()]] - `method` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[PII detection and redaction engine Attempts to use Microsoft Presidio with…]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[RedactionResult_1]] - `uses` [INFERRED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
 - [[TestFullPipelineLatency]] - `uses` [INFERRED]
@@ -63,14 +63,14 @@ tags:
 - [[_regex_sanitizer()]] - `calls` [EXTRACTED]
 - [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `uses` [INFERRED]
-- [[client()_11]] - `uses` [INFERRED]
-- [[client()_12]] - `uses` [INFERRED]
+- [[client()_13]] - `uses` [INFERRED]
+- [[client()_14]] - `uses` [INFERRED]
 - [[conftest.py]] - `imports` [EXTRACTED]
-- [[edge()]] - `uses` [INFERRED]
+- [[edge()_1]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[sanitizer()_3]] - `uses` [INFERRED]
 - [[sanitizer()_1]] - `uses` [INFERRED]
 - [[sanitizer()_4]] - `uses` [INFERRED]
@@ -104,4 +104,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy
