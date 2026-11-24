@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Collaborator block notice should retry with deterministic unavailable fallback…]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

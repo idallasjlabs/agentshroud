@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_send()_3]] - `contains` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_send()_4]] - `contains` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

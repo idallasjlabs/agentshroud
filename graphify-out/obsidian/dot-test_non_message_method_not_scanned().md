@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AsyncMock"
+community: "_make_proxy"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_make_proxy
 ---
 
 # .test_non_message_method_not_scanned()
@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestProxyOutbound]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
-- [[asyncio_41]] - `references` [EXTRACTED]
+- [[asyncio_38]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

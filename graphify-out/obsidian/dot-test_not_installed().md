@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestCheckClamd"
-location: "L152"
+community: "TestWazuhSummary"
+location: "L405"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckClamd
+  - community/TestWazuhSummary
 ---
 
 # .test_not_installed()
 
 ## Connections
-- [[TestCheckClamd]] - `method` [EXTRACTED]
-- [[_patch_exists()]] - `calls` [EXTRACTED]
+- [[TestWazuhSummary_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckClamd
+#graphify/code #graphify/EXTRACTED #community/TestWazuhSummary

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TestTrustInheritance"
+community: "SubagentMonitor"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustInheritance
+  - community/SubagentMonitor
 ---
 
 # .test_nested_subagent_inherits_chain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustInheritance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustInheritance
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

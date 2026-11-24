@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "SOCWebSocketHandler"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/SOCWebSocketHandler
 ---
 
 # .test_no_subscription_accepts_security_event()
@@ -16,4 +16,4 @@ tags:
 - [[dot-_matches()]] - `calls` [EXTRACTED]
 - [[TestSubscriptionFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

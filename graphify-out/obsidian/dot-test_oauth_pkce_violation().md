@@ -12,6 +12,6 @@ tags:
 # .test_oauth_pkce_violation()
 
 ## Connections
-- [[TestAuth_1]] - `method` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuth

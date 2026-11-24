@@ -12,6 +12,6 @@ tags:
 # .test_one_baseline_no_configs()
 
 ## Connections
-- [[TestScoreSecureDevelopment_1]] - `method` [EXTRACTED]
+- [[TestScoreSecureDevelopment]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreSecureDevelopment

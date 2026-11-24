@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_openclaw_patch_script_sets_control_ui_allowed_origins"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_openclaw_patch_script_sets_control_ui_allowed_origins
 ---
 
 # .test_openclaw_patch_script_sets_control_ui_allowed_origins()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[openclaw init patch script must seed control UI origins for non-loopback bind.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_patch_script_sets_control_ui_allowed_origins

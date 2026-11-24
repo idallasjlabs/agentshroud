@@ -16,7 +16,7 @@ tags:
 - [[TestEgressPendingBotFilter]] - `method` [EXTRACTED]
 - [[_make_app_state()]] - `calls` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
-- [[asyncio_77]] - `references` [EXTRACTED]
+- [[asyncio_76]] - `references` [EXTRACTED]
 - [[get_egress_pending()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

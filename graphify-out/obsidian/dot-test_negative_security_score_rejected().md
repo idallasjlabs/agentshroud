@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "IntelReportStore"
+community: "CompetitiveIntelReport"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/CompetitiveIntelReport
 ---
 
 # .test_negative_security_score_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[CompetitorEntry]] - `calls` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

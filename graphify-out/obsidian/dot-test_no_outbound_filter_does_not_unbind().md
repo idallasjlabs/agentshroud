@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L792"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # .test_no_outbound_filter_does_not_unbind()
@@ -15,4 +15,4 @@ tags:
 - [[TestOutboundFilterResultBinding]] - `method` [EXTRACTED]
 - [[_make_pipeline()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

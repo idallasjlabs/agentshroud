@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "ServiceManager"
 location: "L716"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/ServiceManager
 ---
 
 # .test_non_200_returns_empty()
@@ -17,4 +17,4 @@ tags:
 - [[_FakeResponse]] - `calls` [EXTRACTED]
 - [[_patch_http_connection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

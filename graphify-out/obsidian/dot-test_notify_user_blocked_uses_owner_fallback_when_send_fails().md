@@ -15,7 +15,7 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Owner block notice should retry with owner-specific fallback when first send…]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_send()_13]] - `contains` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 

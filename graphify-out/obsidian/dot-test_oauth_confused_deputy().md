@@ -12,6 +12,6 @@ tags:
 # .test_oauth_confused_deputy()
 
 ## Connections
-- [[TestAuth_1]] - `method` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuth

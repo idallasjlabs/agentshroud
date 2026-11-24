@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # .test_missing_section_yields_deny_by_default_policy()
@@ -17,4 +17,4 @@ tags:
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

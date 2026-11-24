@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "TokenValidator"
+community: "_make_token"
 location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/_make_token
 ---
 
 # .test_not_a_jwt_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMalformedTokens]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/_make_token

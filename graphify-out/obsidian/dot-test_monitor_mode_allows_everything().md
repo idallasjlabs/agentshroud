@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # .test_monitor_mode_allows_everything()
@@ -17,4 +17,4 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[TestNormalFileOperations]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/FileSandbox
