@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestExfiltrationDetection"
+community: "EnvironmentGuard"
 location: "L576"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/EnvironmentGuard
 ---
 
 # TestExfiltrationDetection
 
 ## Connections
 - [[dot-test_dns_tunneling_detection()]] - `method` [EXTRACTED]
-- [[dot-test_egress_monitor_loaded()_1]] - `method` [EXTRACTED]
+- [[dot-test_egress_monitor_loaded()]] - `method` [EXTRACTED]
 - [[dot-test_env_guard_detects_data_access()]] - `method` [EXTRACTED]
 - [[dot-test_file_sandbox_staging_detection()]] - `method` [EXTRACTED]
 - [[dot-test_git_guard_detects_credential_patterns()]] - `method` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[Test detection of data exfiltration patterns.]] - `rationale_for` [EXTRACTED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

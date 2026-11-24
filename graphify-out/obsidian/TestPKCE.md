@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthRequest"
+community: "test_security_audit.py"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthRequest
+  - community/test_security_auditpy
 ---
 
 # TestPKCE
@@ -20,4 +20,4 @@ tags:
 - [[PKCEViolation]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthRequest
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

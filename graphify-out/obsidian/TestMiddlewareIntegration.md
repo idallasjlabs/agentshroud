@@ -23,7 +23,7 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[RedactionResult_1]] - `uses` [INFERRED]
 - [[Test integration with MiddlewareManager]] - `rationale_for` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_allowed()]] - `method` [EXTRACTED]
 - [[dot-test_blocked()]] - `method` [EXTRACTED]
-- [[dot-test_conversion_error_path()_3]] - `method` [EXTRACTED]
+- [[dot-test_conversion_error_path()_4]] - `method` [EXTRACTED]
 - [[dot-test_sanitized()]] - `method` [EXTRACTED]
 - [[Severity_1]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]

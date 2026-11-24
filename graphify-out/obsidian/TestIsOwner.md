@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "_FakeRBAC"
+community: "test_middleware_coverage.py"
 location: "L743"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeRBAC
+  - community/test_middleware_coveragepy
 ---
 
 # TestIsOwner
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_with_rbac_manager()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

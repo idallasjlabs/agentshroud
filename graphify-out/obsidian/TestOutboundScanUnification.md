@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_multipart_body"
+community: "TestOutboundScanUnification"
 location: "L5195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_multipart_body
+  - community/TestOutboundScanUnification
 ---
 
 # TestOutboundScanUnification
@@ -23,4 +23,4 @@ tags:
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_multipart_body
+#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification

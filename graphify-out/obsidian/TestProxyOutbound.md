@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AsyncMock"
+community: "_make_proxy"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_make_proxy
 ---
 
 # TestProxyOutbound
@@ -23,4 +23,4 @@ tags:
 - [[dot-test_urlencoded_body_parsed()]] - `method` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

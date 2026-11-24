@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "_resolve_bot_container"
 location: "L535"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/_resolve_bot_container
 ---
 
 # TestResolveBotContainer
@@ -18,4 +18,4 @@ tags:
 - [[_resolve_bot_container must use BotConfig.resolved_container_name, not a…]] - `rationale_for` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_resolve_bot_container

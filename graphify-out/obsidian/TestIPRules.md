@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_allowed_cidr()]] - `method` [EXTRACTED]
-- [[dot-test_allowed_ip()_1]] - `method` [EXTRACTED]
+- [[dot-test_allowed_ip()]] - `method` [EXTRACTED]
 - [[dot-test_ipv4_mapped_ipv6_blocked()_1]] - `method` [EXTRACTED]
 - [[dot-test_localhost_hostname_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_private_ip_allowed_if_in_policy_allowlist()]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "TestLLMProxyEndpoints"
+community: "GitGuard"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLLMProxyEndpoints
+  - community/GitGuard
 ---
 
 # TestLLMProxyEndpoints
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_v1_endpoint_is_defined()]] - `method` [EXTRACTED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLLMProxyEndpoints
+#graphify/code #graphify/EXTRACTED #community/GitGuard

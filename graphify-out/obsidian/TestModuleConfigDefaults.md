@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "TestModuleConfigDefaults"
+community: "SubagentMonitor"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestModuleConfigDefaults
+  - community/SubagentMonitor
 ---
 
 # TestModuleConfigDefaults
@@ -23,4 +23,4 @@ tags:
 - [[Verify individual module configs default to enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestModuleConfigDefaults
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

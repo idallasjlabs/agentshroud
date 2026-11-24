@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # TestModuleEnforcement
@@ -19,4 +19,4 @@ tags:
 - [[Test that individual modules respect the enforcemonitor mode.]] - `rationale_for` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

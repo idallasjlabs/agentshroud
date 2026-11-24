@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
+community: "asyncio"
 location: "L1299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_report
+  - community/asyncio
 ---
 
 # TestRunAndSendCveReportImageScans
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_image_scans_run_for_each_target()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_report
+#graphify/code #graphify/EXTRACTED #community/asyncio

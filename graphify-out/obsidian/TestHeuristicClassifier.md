@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "TestHeuristicClassifier"
+community: "normalize_input"
 location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHeuristicClassifier
+  - community/normalize_input
 ---
 
 # TestHeuristicClassifier
 
 ## Connections
-- [[dot-setup_method()_26]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `method` [EXTRACTED]
 - [[dot-test_benign_text_low_score()]] - `method` [EXTRACTED]
 - [[dot-test_classification_result_properties()]] - `method` [EXTRACTED]
 - [[dot-test_clear_injection_high_score()]] - `method` [EXTRACTED]
 - [[dot-test_cyrillic_homoglyph()]] - `method` [EXTRACTED]
-- [[dot-test_empty_text()]] - `method` [EXTRACTED]
+- [[dot-test_empty_text()_1]] - `method` [EXTRACTED]
 - [[dot-test_encoding_evasion()]] - `method` [EXTRACTED]
 - [[dot-test_exfiltration_attempt()]] - `method` [EXTRACTED]
 - [[dot-test_long_benign_text()]] - `method` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[Test the heuristic injection classifier.]] - `rationale_for` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/normalize_input

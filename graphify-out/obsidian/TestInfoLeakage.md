@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestInfoLeakage"
+community: "LogSanitizer"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInfoLeakage
+  - community/LogSanitizer
 ---
 
 # TestInfoLeakage
@@ -27,4 +27,4 @@ tags:
 - [[TokenValidator]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInfoLeakage
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

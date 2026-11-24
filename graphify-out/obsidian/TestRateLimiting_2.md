@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/tests/test_mcp_permissions.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "PermissionLevel"
-location: "L392"
+community: "WebProxy"
+location: "L326"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/WebProxy
 ---
 
 # TestRateLimiting
 
 ## Connections
-- [[dot-test_no_limit_always_allowed()]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_enforced()_2]] - `method` [EXTRACTED]
-- [[dot-test_rate_limit_per_agent()]] - `method` [EXTRACTED]
-- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
+- [[dot-test_different_domains_independent()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limit_blocks_excess()]] - `method` [EXTRACTED]
+- [[dot-test_rate_limiter_reset()]] - `method` [EXTRACTED]
+- [[RateLimiter]] - `uses` [INFERRED]
+- [[WebProxy]] - `uses` [INFERRED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/WebProxy

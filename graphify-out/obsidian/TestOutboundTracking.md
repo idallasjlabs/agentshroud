@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "_make_proxy"
+community: "AsyncMock"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AsyncMock
 ---
 
 # TestOutboundTracking
@@ -24,4 +24,4 @@ tags:
 - [[dot-test_tracker_exception_does_not_break_response()]] - `method` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "TestPromptExtraction"
+community: "normalize_input"
 location: "L315"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptExtraction
+  - community/normalize_input
 ---
 
 # TestPromptExtraction
@@ -18,4 +18,4 @@ tags:
 - [[System prompt extraction payloads.]] - `rationale_for` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptExtraction
+#graphify/code #graphify/EXTRACTED #community/normalize_input

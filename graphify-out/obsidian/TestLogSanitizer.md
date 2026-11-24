@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "TestLogSanitizer"
+community: "LogSanitizer"
 location: "L14"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLogSanitizer
+  - community/LogSanitizer
 ---
 
 # TestLogSanitizer
 
 ## Connections
 - [[dot-_filter_msg()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_9]] - `method` [EXTRACTED]
+- [[dot-setup_method()_37]] - `method` [EXTRACTED]
 - [[dot-test_aws_key_redacted()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_unchanged()]] - `method` [EXTRACTED]
 - [[dot-test_credit_card_redacted()_1]] - `method` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[LogSanitizer]] - `uses` [INFERRED]
 - [[test_log_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLogSanitizer
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

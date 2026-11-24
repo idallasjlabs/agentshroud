@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestEgressRequestModel
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_red_risk_high_threat()]] - `method` [EXTRACTED]
 - [[EgressRequest_1]] - `uses` [INFERRED]
 - [[EgressStatus]] - `uses` [INFERRED]
-- [[RiskLevel_5]] - `uses` [INFERRED]
+- [[RiskLevel_6]] - `uses` [INFERRED]
 - [[test_soc_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

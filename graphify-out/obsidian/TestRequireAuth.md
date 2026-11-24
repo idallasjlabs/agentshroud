@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "require_auth"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/require_auth
 ---
 
 # TestRequireAuth
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_valid_token_authenticates()]] - `method` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/require_auth

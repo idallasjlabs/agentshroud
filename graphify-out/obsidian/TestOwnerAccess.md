@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestOwnerAccess"
+community: "test_tool_acl.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOwnerAccess
+  - community/test_tool_aclpy
 ---
 
 # TestOwnerAccess
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_owner_denied_tools_is_empty()]] - `method` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOwnerAccess
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

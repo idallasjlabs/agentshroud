@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "asyncio"
+community: "GatewayConfig"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/GatewayConfig
 ---
 
 # TestGlobalSecurityHeaders
@@ -17,4 +17,4 @@ tags:
 - [[All API responses should include basic security headers.]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

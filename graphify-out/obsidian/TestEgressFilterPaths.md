@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
+community: "make_proxy"
 location: "L518"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/make_proxy
 ---
 
 # TestEgressFilterPaths
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_sync_egress_filter_deny_blocks()]] - `method` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/make_proxy

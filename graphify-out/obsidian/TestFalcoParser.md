@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "FalcoAlertWatcher"
+community: "test_security_toolchain.py"
 location: "L579"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/test_security_toolchainpy
 ---
 
 # TestFalcoParser
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_parse_valid_alert()]] - `method` [EXTRACTED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

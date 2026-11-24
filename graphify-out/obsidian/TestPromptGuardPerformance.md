@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # TestPromptGuardPerformance
 
 ## Connections
-- [[dot-guard()_2]] - `method` [EXTRACTED]
+- [[dot-guard()]] - `method` [EXTRACTED]
 - [[dot-test_1000_messages_under_5s()]] - `method` [EXTRACTED]
 - [[dot-test_detection_accuracy_at_scale()]] - `method` [EXTRACTED]
 - [[Prompt guard 1000 messages in  5s.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

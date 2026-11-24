@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "TestOverallDetectionRate"
+community: "normalize_input"
 location: "L387"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOverallDetectionRate
+  - community/normalize_input
 ---
 
 # TestOverallDetectionRate
@@ -20,4 +20,4 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOverallDetectionRate
+#graphify/code #graphify/EXTRACTED #community/normalize_input

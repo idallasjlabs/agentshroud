@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "MiddlewareManager"
+community: "TestRBACIntegration"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/TestRBACIntegration
 ---
 
 # TestRBACIntegration
 
 ## Connections
 - [[dot-setup_method()]] - `method` [EXTRACTED]
-- [[dot-teardown_method()]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_1]] - `method` [EXTRACTED]
 - [[dot-test_rbac_allows_authorized_access()]] - `method` [EXTRACTED]
 - [[dot-test_rbac_blocks_unauthorized_access()]] - `method` [EXTRACTED]
 - [[dot-test_rbac_handles_missing_user_id()]] - `method` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[Test RBAC integration with middleware.]] - `rationale_for` [EXTRACTED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/TestRBACIntegration

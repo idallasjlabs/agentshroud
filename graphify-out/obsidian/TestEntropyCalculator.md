@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestExfiltrationDetection"
+community: "DNSFilterConfig"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/DNSFilterConfig
 ---
 
 # TestEntropyCalculator
@@ -18,4 +18,4 @@ tags:
 - [[EntropyCalculator]] - `uses` [INFERRED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
