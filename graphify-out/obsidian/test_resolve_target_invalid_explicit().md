@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[Test routing with invalid explicit target falls back to default]] - `rationale_for` [EXTRACTED]
-- [[asyncio_59]] - `references` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

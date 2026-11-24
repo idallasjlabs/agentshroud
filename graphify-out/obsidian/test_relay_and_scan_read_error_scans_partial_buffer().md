@@ -15,7 +15,7 @@ tags:
 - [[Bytes relayed before a connection error are still sampled for scanning.]] - `rationale_for` [EXTRACTED]
 - [[HTTPConnectProxy]] - `calls` [EXTRACTED]
 - [[_MockWriter]] - `calls` [EXTRACTED]
-- [[__init__()_23]] - `contains` [EXTRACTED]
+- [[__init__()_20]] - `contains` [EXTRACTED]
 - [[_capture_scans()]] - `calls` [EXTRACTED]
 - [[read()_9]] - `contains` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[forward_to_agent sends {model, messages} when chat_path ends…]] - `rationale_for` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]

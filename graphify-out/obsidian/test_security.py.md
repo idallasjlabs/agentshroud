@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "fastapi.md"
+community: "test_security.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/test_securitypy
 ---
 
 # test_security.py
@@ -40,4 +40,4 @@ tags:
 - [[test_xss_attempt()]] - `contains` [EXTRACTED]
 - [[verify_token()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

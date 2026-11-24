@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[forward_to_agent extracts choices0.message.content and returns a string.]] - `rationale_for` [EXTRACTED]
 - [[mock_post()_5]] - `contains` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]

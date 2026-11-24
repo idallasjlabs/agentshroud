@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_call_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mock_forward()_11]] - `contains` [EXTRACTED]
 - [[mock_forward()_6]] - `indirect_call` [INFERRED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[The OpenAI payload must include a non-empty model field.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[mock_post()_4]] - `contains` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]

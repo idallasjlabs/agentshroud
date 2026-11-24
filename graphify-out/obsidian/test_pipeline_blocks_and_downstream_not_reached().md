@@ -15,7 +15,7 @@ tags:
 - [[RateLimitConfig]] - `uses` [INFERRED]
 - [[RateLimitGuard]] - `uses` [INFERRED]
 - [[_make_pipeline()_2]] - `calls` [EXTRACTED]
-- [[asyncio_38]] - `references` [EXTRACTED]
+- [[asyncio_35]] - `references` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimitGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # test_router_openai_translation.py
@@ -18,7 +18,7 @@ tags:
 - [[RouterConfig]] - `imports` [EXTRACTED]
 - [[Tests for §2.2 OpenAI-compatible target translation in MultiAgentRouter.…]] - `rationale_for` [EXTRACTED]
 - [[_mock_response()]] - `contains` [EXTRACTED]
-- [[httpx_1]] - `imports` [EXTRACTED]
+- [[httpx]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_openai_target_returns_content_string()]] - `contains` [EXTRACTED]
 - [[test_openai_target_sends_messages_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

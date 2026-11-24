@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # test_pipeline_selective_modules()
@@ -17,4 +17,4 @@ tags:
 - [[Pipeline with only PII enabled, prompt guard disabled.]] - `rationale_for` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

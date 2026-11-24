@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_aiter()]] - `calls` [EXTRACTED]
 - [[_sentences_from_deltas()]] - `calls` [EXTRACTED]
-- [[asyncio_25]] - `references` [EXTRACTED]
+- [[asyncio_26]] - `references` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_forward_streampy
