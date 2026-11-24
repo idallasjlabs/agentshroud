@@ -1,36 +1,36 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "AppleContainerEngine"
+community: "ContainerEngine"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ContainerEngine
 ---
 
 # ContainerEngine
 
 ## Connections
 - [[dot-_run()_3]] - `method` [EXTRACTED]
-- [[dot-build()_1]] - `method` [EXTRACTED]
-- [[dot-compose_down()_1]] - `method` [EXTRACTED]
-- [[dot-compose_up()_1]] - `method` [EXTRACTED]
-- [[dot-exec()_1]] - `method` [EXTRACTED]
-- [[dot-health_check()_1]] - `method` [EXTRACTED]
-- [[dot-inspect()_1]] - `method` [EXTRACTED]
-- [[dot-logs()_1]] - `method` [EXTRACTED]
-- [[dot-network_create()_1]] - `method` [EXTRACTED]
-- [[dot-network_rm()_1]] - `method` [EXTRACTED]
-- [[dot-pause()_1]] - `method` [EXTRACTED]
-- [[dot-ps()_2]] - `method` [EXTRACTED]
-- [[dot-pull()_1]] - `method` [EXTRACTED]
-- [[dot-push()_1]] - `method` [EXTRACTED]
-- [[dot-rm()_1]] - `method` [EXTRACTED]
-- [[dot-stop()_7]] - `method` [EXTRACTED]
-- [[dot-unpause()_1]] - `method` [EXTRACTED]
-- [[dot-volume_create()_1]] - `method` [EXTRACTED]
-- [[dot-volume_rm()_1]] - `method` [EXTRACTED]
+- [[dot-build()]] - `method` [EXTRACTED]
+- [[dot-compose_down()]] - `method` [EXTRACTED]
+- [[dot-compose_up()]] - `method` [EXTRACTED]
+- [[dot-exec()]] - `method` [EXTRACTED]
+- [[dot-health_check()]] - `method` [EXTRACTED]
+- [[dot-inspect()]] - `method` [EXTRACTED]
+- [[dot-logs()]] - `method` [EXTRACTED]
+- [[dot-network_create()]] - `method` [EXTRACTED]
+- [[dot-network_rm()]] - `method` [EXTRACTED]
+- [[dot-pause()]] - `method` [EXTRACTED]
+- [[dot-ps()_3]] - `method` [EXTRACTED]
+- [[dot-pull()]] - `method` [EXTRACTED]
+- [[dot-push()]] - `method` [EXTRACTED]
+- [[dot-rm()]] - `method` [EXTRACTED]
+- [[dot-stop()_5]] - `method` [EXTRACTED]
+- [[dot-unpause()]] - `method` [EXTRACTED]
+- [[dot-volume_create()]] - `method` [EXTRACTED]
+- [[dot-volume_rm()]] - `method` [EXTRACTED]
 - [[ABC]] - `inherits` [EXTRACTED]
 - [[AppleContainerEngine]] - `inherits` [EXTRACTED]
 - [[DockerEngine]] - `inherits` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[podman_engine.py_2]] - `imports` [EXTRACTED]
 - [[runtime__init__.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

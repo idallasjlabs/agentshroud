@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "rationale"
-community: "soc/router.py"
+community: "ServiceManager"
 location: "L2021"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ServiceManager
 ---
 
 # Container name → health, or its status when not running. Empty when the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_local_agent_health()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_session"
+community: "UserSessionManager"
 location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/UserSessionManager
 ---
 
 # Convert session to dictionary for serialization.
 
 ## Connections
-- [[dot-to_dict()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_11]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "ServerConfig"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ServerConfig
 ---
 
 # ConsentFramework
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_204]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_181]] - `method` [EXTRACTED]
 - [[dot-add_to_blacklist()]] - `method` [EXTRACTED]
 - [[dot-add_to_whitelist()]] - `method` [EXTRACTED]
 - [[dot-get_blacklist()]] - `method` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[dot-validate_config()]] - `method` [EXTRACTED]
 - [[dot-validate_configs()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py]] - `contains` [EXTRACTED]
 - [[framework()]] - `uses` [INFERRED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

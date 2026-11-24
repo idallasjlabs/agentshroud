@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "test_memory_lifecycle.py"
+community: "middleware.py"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_memory_lifecyclepy
+  - community/middlewarepy
 ---
 
 # Create configuration from environment variables.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-from_env()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_memory_lifecyclepy
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # Create a test tool risk configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tool_risk_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

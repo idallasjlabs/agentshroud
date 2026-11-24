@@ -12,7 +12,7 @@ tags:
 # ContributorManager
 
 ## Connections
-- [[dot-__init__()_158]] - `method` [EXTRACTED]
+- [[dot-__init__()_145]] - `method` [EXTRACTED]
 - [[dot-_build_record()]] - `method` [EXTRACTED]
 - [[dot-_ensure_rbac()]] - `method` [EXTRACTED]
 - [[dot-_ensure_teams()]] - `method` [EXTRACTED]

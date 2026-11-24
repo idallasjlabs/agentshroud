@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "test_config_hot_reload.py"
+community: "lifespan"
 location: "L727"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/lifespan
 ---
 
 # Copy only the reloadable-field subset from ``new`` onto ``current`` in place.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[apply_reloadable_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

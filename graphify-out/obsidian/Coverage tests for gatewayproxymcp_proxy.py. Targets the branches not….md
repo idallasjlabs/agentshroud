@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "rationale"
-community: "test_mcp_proxy_coverage.py"
+community: "test_mcp_proxy.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/test_mcp_proxypy
 ---
 
 # Coverage tests for gateway/proxy/mcp_proxy.py. Targets the branches not…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_mcp_proxy_coverage.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxypy

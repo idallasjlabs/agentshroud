@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "rationale"
-community: "MemoryLifecycleConfig"
+community: "middleware.py"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryLifecycleConfig
+  - community/middlewarepy
 ---
 
 # Configuration for memory lifecycle management.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MemoryLifecycleConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleConfig
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

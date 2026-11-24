@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_security_toolchain.py"
+community: "generate_report"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/generate_report
 ---
 
 # Connection
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[init_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/generate_report
