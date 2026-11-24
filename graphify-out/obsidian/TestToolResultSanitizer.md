@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-default_config()]] - `method` [EXTRACTED]
-- [[dot-sanitizer()_2]] - `method` [EXTRACTED]
+- [[dot-sanitizer()_3]] - `method` [EXTRACTED]
 - [[dot-test_empty_content_handling()]] - `method` [EXTRACTED]
 - [[dot-test_extract_scannable_content_dict()]] - `method` [EXTRACTED]
 - [[dot-test_extract_scannable_content_list()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[dot-tool_config()]] - `method` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RedactionDetail]] - `uses` [INFERRED]
-- [[RedactionResult]] - `uses` [INFERRED]
+- [[RedactionResult_1]] - `uses` [INFERRED]
 - [[Test the ToolResultSanitizer class]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
 - [[ToolResultSanitizer_1]] - `uses` [INFERRED]

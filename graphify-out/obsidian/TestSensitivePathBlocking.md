@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "TestSensitivePathBlocking"
+community: "FileSandbox"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSensitivePathBlocking
+  - community/FileSandbox
 ---
 
 # TestSensitivePathBlocking
@@ -21,4 +21,4 @@ tags:
 - [[dot-test_ssh_private_key_flagged()]] - `method` [EXTRACTED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSensitivePathBlocking
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

@@ -12,7 +12,7 @@ tags:
 # TestToolResultInjectionScanner
 
 ## Connections
-- [[dot-setup_method()_8]] - `method` [EXTRACTED]
+- [[dot-setup_method()_11]] - `method` [EXTRACTED]
 - [[dot-test_base64_encoded_injection()]] - `method` [EXTRACTED]
 - [[dot-test_clean_content_passes_through()]] - `method` [EXTRACTED]
 - [[dot-test_ignore_instructions_injection_high_severity()]] - `method` [EXTRACTED]

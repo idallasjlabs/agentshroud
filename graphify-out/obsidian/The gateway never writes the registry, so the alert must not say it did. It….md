@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "daily_cve_report.py"
+community: "format_upstream_cve_alert"
 location: "L395"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/daily_cve_reportpy
+  - community/format_upstream_cve_alert
 ---
 
 # The gateway never writes the registry, so the alert must not say it did. It…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_alert_does_not_claim_registration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/daily_cve_reportpy
+#graphify/rationale #graphify/EXTRACTED #community/format_upstream_cve_alert

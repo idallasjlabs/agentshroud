@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestToolRateLimiting"
+community: "test_tool_acl.py"
 location: "L266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolRateLimiting
+  - community/test_tool_aclpy
 ---
 
 # TestToolRateLimiting
@@ -20,4 +20,4 @@ tags:
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolRateLimiting
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

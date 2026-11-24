@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionManager"
+community: "TestSessionCreation"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TestSessionCreation
 ---
 
 # TestSessionCreation
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_session_id_is_cryptographically_random()]] - `method` [EXTRACTED]
 - [[test_session_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TestSessionCreation

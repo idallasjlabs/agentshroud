@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "asyncio"
+community: "GatewayConfig"
 location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/GatewayConfig
 ---
 
 # TestVersionConsistency
@@ -16,4 +16,4 @@ tags:
 - [[Version strings should be consistent across the codebase.]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

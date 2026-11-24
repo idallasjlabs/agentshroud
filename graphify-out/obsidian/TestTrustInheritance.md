@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TestTrustInheritance"
+community: "SubagentMonitor"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustInheritance
+  - community/SubagentMonitor
 ---
 
 # TestTrustInheritance
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_trust_violation_flagged()]] - `method` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustInheritance
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

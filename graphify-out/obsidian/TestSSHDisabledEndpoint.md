@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L308"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # TestSSHDisabledEndpoint
@@ -27,4 +27,4 @@ tags:
 - [[Test that SSH disabled returns 503 (Finding 12)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/configpy
+#graphify/code #graphify/INFERRED #community/GatewayConfig

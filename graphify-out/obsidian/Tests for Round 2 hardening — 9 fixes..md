@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "rationale"
-community: "middleware.py"
+community: "GitGuard"
 location: "L1"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/GitGuard
 ---
 
 # Tests for Round 2 hardening — 9 fixes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_round2_hardening.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/GitGuard

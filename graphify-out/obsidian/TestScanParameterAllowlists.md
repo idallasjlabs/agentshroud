@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestScanParameterAllowlists"
+community: "app"
 location: "L660"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScanParameterAllowlists
+  - community/app
 ---
 
 # TestScanParameterAllowlists
 
 ## Connections
-- [[dot-setup_method()_10]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_3]] - `method` [EXTRACTED]
+- [[dot-teardown_method()]] - `method` [EXTRACTED]
 - [[dot-test_clamav_default_target_passes_allowlist()]] - `method` [EXTRACTED]
 - [[dot-test_clamav_invalid_target_returns_400()]] - `method` [EXTRACTED]
 - [[dot-test_openscap_default_profile_passes_regex()]] - `method` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.]] - `rationale_for` [EXTRACTED]
 - [[test_main_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScanParameterAllowlists
+#graphify/code #graphify/EXTRACTED #community/app

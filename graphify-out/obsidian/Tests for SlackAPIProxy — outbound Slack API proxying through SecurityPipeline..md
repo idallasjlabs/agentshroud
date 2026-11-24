@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "AsyncMock"
+community: "_make_proxy"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_make_proxy
 ---
 
 # Tests for SlackAPIProxy — outbound Slack API proxying through SecurityPipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_slack_proxy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

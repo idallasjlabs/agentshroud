@@ -12,7 +12,7 @@ tags:
 # TestWebAPI
 
 ## Connections
-- [[dot-client()_4]] - `method` [EXTRACTED]
+- [[dot-client()_3]] - `method` [EXTRACTED]
 - [[dot-test_check_agentshroud_updates()]] - `method` [EXTRACTED]
 - [[dot-test_check_openclaw_updates()]] - `method` [EXTRACTED]
 - [[dot-test_export_config()]] - `method` [EXTRACTED]
