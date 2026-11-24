@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: ".test_switch_model_script_uses_current_target_syntax"
 location: "L584"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_switch_model_script_uses_current_target_syntax
 ---
 
 # Operator guidance should use valid switch_model target syntax (no legacy cloud…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_switch_model_script_uses_current_target_syntax()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/test_switch_model_script_uses_current_target_syntax

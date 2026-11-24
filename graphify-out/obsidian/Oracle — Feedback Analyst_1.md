@@ -17,7 +17,7 @@ tags:
 - [[Output Format_46]] - `contains` [EXTRACTED]
 - [[Persona_25]] - `contains` [EXTRACTED]
 - [[Quality Checklist_31]] - `contains` [EXTRACTED]
-- [[Role_96]] - `contains` [EXTRACTED]
+- [[Role_97]] - `contains` [EXTRACTED]
 - [[System Prompt_25]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -12,8 +12,8 @@ tags:
 # OutputCanary
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_88]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_93]] - `method` [EXTRACTED]
 - [[dot-_create_detection_patterns()]] - `method` [EXTRACTED]
 - [[dot-_create_invisible_canary()]] - `method` [EXTRACTED]
 - [[dot-_scan_for_canary()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-cleanup_expired_canaries()]] - `method` [EXTRACTED]
 - [[dot-generate_canary()]] - `method` [EXTRACTED]
 - [[dot-get_status()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
 - [[dot-test_incident_logging()]] - `calls` [EXTRACTED]
 - [[dot-test_output_canary_instantiates()]] - `calls` [EXTRACTED]
 - [[dot-test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
