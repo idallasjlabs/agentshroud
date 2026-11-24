@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "lifespan"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/lifespan
 ---
 
 # Channel ownership configuration (P3: Telegram + email oversight, P5: iMessage)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ChannelsConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespan

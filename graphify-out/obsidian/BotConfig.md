@@ -18,7 +18,7 @@ tags:
 - [[dot-test_bot_config_image_field_present()]] - `calls` [EXTRACTED]
 - [[dot-test_bot_config_telegram_token_secret_set()]] - `calls` [EXTRACTED]
 - [[dot-test_openclaw_bot_config_backward_compat()]] - `calls` [EXTRACTED]
-- [[BaseModel_5]] - `inherits` [EXTRACTED]
+- [[BaseModel_4]] - `inherits` [EXTRACTED]
 - [[Declaration for a single bot encapsulated by AgentShroud. Required bot HTTP…]] - `rationale_for` [EXTRACTED]
 - [[GatewayConfig]] - `uses` [INFERRED]
 - [[TestTelegramBotConfigTokenSecretField]] - `uses` [INFERRED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "middleware.py"
+community: "run"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # Calculate similarity between text and protected content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_calculate_similarity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/run

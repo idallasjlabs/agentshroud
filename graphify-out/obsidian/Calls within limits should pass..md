@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "TestToolRateLimiting"
+community: "test_tool_acl.py"
 location: "L272"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolRateLimiting
+  - community/test_tool_aclpy
 ---
 
 # Calls within limits should pass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_under_threshold_passes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolRateLimiting
+#graphify/rationale #graphify/EXTRACTED #community/test_tool_aclpy

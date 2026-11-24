@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Any"
+community: "KeyRotationManager"
 location: "L195"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/KeyRotationManager
 ---
 
 # Calculate overall credential health score.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_health_score()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
