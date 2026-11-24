@@ -198,3 +198,52 @@ class TestShippedProfiles:
         for vendor, prof in p.load_profiles(p.VENDORS_DIR).items():
             if prof.tool_access("delegate_to_hermes"):
                 assert prof.tool_access("delegate_to_hermes") == "write", vendor
+
+
+@pytest.fixture(autouse=True)
+def _no_enable_env(monkeypatch):
+    monkeypatch.delenv(p.ENABLE_ENV, raising=False)
+
+
+class TestEnableFromEnvironment:
+    """The per-host on switch lives in docker/.env, not in the tracked profile, so a
+    pilot never leaves an uncommitted change in the build context."""
+
+    def test_env_enables_a_disabled_profile(self, tmp_path, monkeypatch):
+        monkeypatch.setenv(p.ENABLE_ENV, "test-vendor")
+        prof = p.load_profiles(_write(tmp_path, _variant(enabled=False)))["test-vendor"]
+        assert prof.enabled is True
+
+    def test_profile_flag_stands_when_env_unset(self, tmp_path):
+        prof = p.load_profiles(_write(tmp_path, _variant(enabled=False)))["test-vendor"]
+        assert prof.enabled is False
+
+    def test_env_list_tolerates_spaces_and_empty_items(self, tmp_path, monkeypatch):
+        monkeypatch.setenv(p.ENABLE_ENV, " , test-vendor ,")
+        prof = p.load_profiles(_write(tmp_path, _variant(enabled=False)))["test-vendor"]
+        assert prof.enabled is True
+
+    def test_env_never_disables_or_touches_other_vendors(self, tmp_path, monkeypatch):
+        _write(tmp_path, _variant(enabled=False))
+        _write(tmp_path, _variant(vendor="other", enabled=True), name="other")
+        monkeypatch.setenv(p.ENABLE_ENV, "test-vendor")
+        profiles = p.load_profiles(tmp_path)
+        assert profiles["test-vendor"].enabled is True
+        assert profiles["other"].enabled is True
+
+    def test_unknown_vendor_in_env_refuses(self, tmp_path, monkeypatch):
+        monkeypatch.setenv(p.ENABLE_ENV, "test-vendr")
+        with pytest.raises(p.ProfileError, match="test-vendr"):
+            p.load_profiles(_write(tmp_path, _variant(enabled=False)))
+
+    def test_env_cannot_enable_an_unimplemented_chat_bridge(self, tmp_path, monkeypatch):
+        monkeypatch.setenv(p.ENABLE_ENV, "test-vendor")
+        data = _variant(enabled=False, connection="chat-bridge")
+        with pytest.raises(p.ProfileError, match="chat-bridge"):
+            p.load_profiles(_write(tmp_path, data))
+
+    def test_env_enables_shipped_claude_duet(self, monkeypatch):
+        monkeypatch.setenv(p.ENABLE_ENV, "claude-duet")
+        profiles = p.load_profiles(p.VENDORS_DIR)
+        assert profiles["claude-duet"].enabled is True
+        assert not any(prof.enabled for v, prof in profiles.items() if v != "claude-duet")

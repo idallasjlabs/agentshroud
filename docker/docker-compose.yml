@@ -220,6 +220,10 @@ services:
       - AGENTSHROUD_EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:8443}
       - AGENTSHROUD_EDGE_UPSTREAM_HOST=agentshroud-mcp-edge
       - AGENTSHROUD_EDGE_DELEGATE=${AGENTSHROUD_EDGE_DELEGATE:-0}
+      # Comma-separated vendors to enable on this host (e.g. claude-duet) although
+      # their tracked profile ships enabled: false. Set per host in docker/.env so a
+      # pilot never dirties the build context; empty (the default) enables none.
+      - AGENTSHROUD_EDGE_ENABLE_VENDORS=${AGENTSHROUD_EDGE_ENABLE_VENDORS:-}
       # Comma-separated https RSS URLs for the read-only pke_status tool; empty
       # (the default) means the tool is not offered. Set per host, never here.
       - AGENTSHROUD_EDGE_PKE_FEEDS=${AGENTSHROUD_EDGE_PKE_FEEDS:-}

@@ -19,6 +19,7 @@ IEC 62443 alignment: FR2 (Use Control) — per-principal authorisation of tools.
 import ipaddress
 import json
 import logging
+import os
 from dataclasses import dataclass, field
 from datetime import time
 from pathlib import Path
@@ -37,6 +38,10 @@ VENDORS_DIR = CONFIG_DIR / "vendors"
 SCHEMA_PATH = CONFIG_DIR / "schema.json"
 # The gateway-wide Presidio floor (CLAUDE.md §7.8). Profiles may raise it, never lower it.
 GLOBAL_DLP_FLOOR = PIIConfig().min_confidence
+# Per-host on switch (docker/.env): comma-separated vendors to enable even though
+# their tracked profile ships ``enabled: false``. It can only enable, never
+# disable, and every other profile check still applies to the enabled vendor.
+ENABLE_ENV = "AGENTSHROUD_EDGE_ENABLE_VENDORS"
 
 
 class ProfileError(ValueError):
@@ -194,6 +199,7 @@ def load_profiles(directory: Path = VENDORS_DIR) -> Dict[str, VendorProfile]:
     if not directory.is_dir():
         raise ProfileError(f"vendor profile directory missing: {directory}")
     validator = _schema_validator()
+    enable = {v.strip() for v in os.environ.get(ENABLE_ENV, "").split(",") if v.strip()}
     profiles: Dict[str, VendorProfile] = {}
     paths = sorted([*directory.glob("*.yaml"), *directory.glob("*.yml")])
     for path in paths:
@@ -201,8 +207,14 @@ def load_profiles(directory: Path = VENDORS_DIR) -> Dict[str, VendorProfile]:
             data = yaml.safe_load(path.read_text())
         except yaml.YAMLError as exc:
             raise ProfileError(f"{path.name}: unparseable YAML: {exc}") from exc
+        if isinstance(data, dict) and data.get("vendor") in enable and not data.get("enabled"):
+            logger.warning("Inbound edge vendor %s enabled by %s", data["vendor"], ENABLE_ENV)
+            data["enabled"] = True
         profile = _parse(path, data, validator)
         if profile.vendor in profiles:
             raise ProfileError(f"duplicate profile for vendor {profile.vendor!r}")
         profiles[profile.vendor] = profile
+    unknown = sorted(enable - set(profiles))
+    if unknown:
+        raise ProfileError(f"{ENABLE_ENV} names unknown vendor(s): {', '.join(unknown)}")
     return profiles
