@@ -1,0 +1,337 @@
+---
+type: community
+members: 271
+---
+
+# GatewayConfig
+
+**Members:** 271 nodes
+
+## Members
+- [[NOTE Called within _lock context]] - rationale - gateway/approval_queue/queue.py
+- [[NOTE `timeout or host.max_session_seconds` treats 0 as falsy (same]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[dot-__init__()_101]] - code - gateway/ingest_api/ledger.py
+- [[dot-__init__()_102]] - code - gateway/ingest_api/router.py
+- [[dot-_append_audit_event()]] - code - gateway/approval_queue/queue.py
+- [[dot-_expire_stale()]] - code - gateway/approval_queue/queue.py
+- [[dot-_hash_content()]] - code - gateway/ingest_api/ledger.py
+- [[dot-_load_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[dot-_persist_pending_store()]] - code - gateway/approval_queue/queue.py
+- [[dot-broadcast()]] - code - gateway/approval_queue/queue.py
+- [[dot-cleanup_decided()]] - code - gateway/approval_queue/queue.py
+- [[dot-close()_7]] - code - gateway/ingest_api/ledger.py
+- [[dot-connect()]] - code - gateway/approval_queue/queue.py
+- [[dot-decide()]] - code - gateway/approval_queue/queue.py
+- [[dot-delete_entry()]] - code - gateway/ingest_api/ledger.py
+- [[dot-disabled_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[dot-disconnect()]] - code - gateway/approval_queue/queue.py
+- [[dot-enforce_retention()]] - code - gateway/ingest_api/ledger.py
+- [[dot-expand_key_path()]] - code - gateway/ingest_api/ssh_config.py
+- [[dot-expand_known_hosts()]] - code - gateway/ingest_api/ssh_config.py
+- [[dot-get_entry()]] - code - gateway/ingest_api/ledger.py
+- [[dot-get_item()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-get_pending()_1]] - code - gateway/approval_queue/queue.py
+- [[dot-get_stats()_4]] - code - gateway/ingest_api/ledger.py
+- [[dot-initialize()]] - code - gateway/ingest_api/ledger.py
+- [[dot-ledger()]] - code - gateway/tests/test_performance.py
+- [[dot-ledger()_1]] - code - gateway/tests/test_performance.py
+- [[dot-no_approval_client()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[dot-query()]] - code - gateway/ingest_api/ledger.py
+- [[dot-record()_1]] - code - gateway/ingest_api/ledger.py
+- [[dot-submit()]] - code - gateway/approval_queue/queue.py
+- [[dot-test_1000_entries_under_5s()]] - code - gateway/tests/test_performance.py
+- [[dot-test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_query_after_1000_entries()]] - code - gateway/tests/test_performance.py
+- [[dot-test_ssh_approval_sanitizes_command_pii()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ssh_command_uses_strict_checking()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ssh_disabled_config()]] - code - gateway/tests/test_ssh_proxy.py
+- [[dot-test_ssh_exec_disabled_returns_503()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[dot-test_ssh_hosts_list()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[dot-test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_strict_host_key_checking_in_source()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
+- [[dot-validate_default_url()]] - code - gateway/ingest_api/config.py
+- [[dot-validate_targets()]] - code - gateway/ingest_api/config.py
+- [[Accept a WebSocket connection and add to connected set Args websocket…]] - rationale - gateway/approval_queue/queue.py
+- [[Add an action to the approval queue Args request Approval request from agent…]] - rationale - gateway/approval_queue/queue.py
+- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Any_34]] - code
+- [[Any_35]] - code
+- [[Approval queue details must be PII-sanitized before storage]] - rationale - gateway/tests/test_security_fixes.py
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[ApprovalQueue]] - code - gateway/approval_queue/queue.py
+- [[Async SQLite-backed data ledger Records all content forwarded through the…]] - rationale - gateway/ingest_api/ledger.py
+- [[Audit Chain Verification Tests — integrity, tamper detection, concurrency.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Audit chain 1000 entries in  5s.]] - rationale - gateway/tests/test_performance.py
+- [[BaseModel_5]] - code
+- [[BaseModel_6]] - code
+- [[Best-effort JSONL persistence for queue lifecycle events.]] - rationale - gateway/approval_queue/queue.py
+- [[CI has no real agentshroud.yaml (gitignored, per-deployment secret config) —…]] - rationale - gateway/tests/conftest.py
+- [[Check all pending items and expire those past timeout Returns List of expired…]] - rationale - gateway/approval_queue/queue.py
+- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Close database connection]] - rationale - gateway/ingest_api/ledger.py
+- [[Complete gateway configuration]] - rationale - gateway/ingest_api/config.py
+- [[Configuration for a single SSH host]] - rationale - gateway/ingest_api/ssh_config.py
+- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
+- [[Create a FastAPI TestClient with test configuration Note This doesn't…]] - rationale - gateway/tests/conftest.py
+- [[Create a PIISanitizer instance for testing]] - rationale - gateway/tests/conftest.py
+- [[Create a new ledger entry Args source Source identifier (shortcut,…]] - rationale - gateway/ingest_api/ledger.py
+- [[Create a test configuration Uses regex fallback for PII (no spaCy model…]] - rationale - gateway/tests/conftest.py
+- [[Create an initialized in-memory ledger for testing Yields the ledger, then…]] - rationale - gateway/tests/conftest.py
+- [[Create database, tables, and run initial cleanup Must be called before using…]] - rationale - gateway/ingest_api/ledger.py
+- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
+- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
+- [[Data ledger configuration]] - rationale - gateway/ingest_api/config.py
+- [[DataLedger]] - code - gateway/ingest_api/ledger.py
+- [[Database Files]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Delete entries older than retention_days Returns Number of entries deleted]] - rationale - gateway/ingest_api/ledger.py
+- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
+- [[Execute SSH command with validation and approval]] - rationale - gateway/ingest_api/main.py
+- [[Fetch a single ledger entry by ID Args entry_id Entry UUID Returns…]] - rationale - gateway/ingest_api/ledger.py
+- [[Fetch a single queue item by ID Args request_id Request UUID Returns…]] - rationale - gateway/approval_queue/queue.py
+- [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - rationale - gateway/ingest_api/ledger.py
+- [[ForwardResponse]] - code - gateway/ingest_api/models.py
+- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboard with valid cookie serves HTML_1]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token with bad cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardws-token without cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
+- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
+- [[GatewayConfig]] - code - gateway/ingest_api/config.py
+- [[Get aggregate statistics Returns Dictionary with total entries, by source, etc.]] - rationale - gateway/ingest_api/ledger.py
+- [[Get all pending (not expired, not decided) items First expires any stale items.…]] - rationale - gateway/approval_queue/queue.py
+- [[In-memory approval queue with WebSocket notifications Actions requiring…]] - rationale - gateway/approval_queue/queue.py
+- [[Initialize router Args config Router configuration]] - rationale - gateway/ingest_api/router.py
+- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
+- [[LedgerConfig]] - code - gateway/ingest_api/config.py
+- [[LedgerEntry]] - code - gateway/ingest_api/models.py
+- [[LedgerQueryResponse]] - code - gateway/ingest_api/models.py
+- [[Load queue items from store file when present.]] - rationale - gateway/approval_queue/queue.py
+- [[Load the real agentshroud.yaml when present (deployment host), else the…]] - rationale - gateway/tests/test_config.py
+- [[Map agentshroud.yaml entity names to Presidiointernal entity names]] - rationale - gateway/ingest_api/config.py
+- [[Multi-agent router configuration]] - rationale - gateway/ingest_api/config.py
+- [[Paginated ledger query results]] - rationale - gateway/ingest_api/models.py
+- [[Persist queue items to disk for restart durability (best effort). Uses atomic…]] - rationale - gateway/approval_queue/queue.py
+- [[Process an approval decision Args request_id Request UUID approved Whether…]] - rationale - gateway/approval_queue/queue.py
+- [[Purpose_158]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Query ledger entries with pagination and filters Args page Page number…]] - rationale - gateway/ingest_api/ledger.py
+- [[Query performance after 1000 entries.]] - rationale - gateway/tests/test_performance.py
+- [[Re-initializing must not orphan the first aiosqlite connection. aiosqlite…]] - rationale - gateway/tests/test_ledger.py
+- [[Related Notes_66]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Remove a WebSocket connection from connected set Args websocket WebSocket…]] - rationale - gateway/approval_queue/queue.py
+- [[Remove decided (approvedrejectedexpired) items older than max_age_seconds.…]] - rationale - gateway/approval_queue/queue.py
+- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
+- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST sshwrite_file. success reflects whether the remote write…]] - rationale - gateway/ingest_api/models.py
+- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
+- [[Return Authorization headers with test token]] - rationale - gateway/tests/conftest.py
+- [[RouterConfig]] - code - gateway/ingest_api/config.py
+- [[RouterConfig must accept the Hermes Docker service hostname.]] - rationale - gateway/tests/test_config.py
+- [[RouterConfig should accept single-label Docker service hostnames.]] - rationale - gateway/tests/test_config.py
+- [[SHA-256 hash of content string Args content Text to hash Returns Hexadecimal…]] - rationale - gateway/ingest_api/ledger.py
+- [[SSH exec requiring approval sanitizes PII in command before storing]] - rationale - gateway/tests/test_security_fixes.py
+- [[SSH execute builds command with StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
+- [[SSHConfig]] - code - gateway/ingest_api/ssh_config.py
+- [[SSHExecRequest]] - code - gateway/ingest_api/models.py
+- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
+- [[SSHHostConfig]] - code - gateway/ingest_api/ssh_config.py
+- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
+- [[Send a JSON message to all connected WebSocket clients Silently removes clients…]] - rationale - gateway/approval_queue/queue.py
+- [[Set up app state and provide TestClient.]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Set up app state and provide TestClient._1]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Single entry from the data ledger]] - rationale - gateway/ingest_api/models.py
+- [[Source code uses StrictHostKeyChecking=yes]] - rationale - gateway/tests/test_security_fixes.py
+- [[Store configuration Actual database connection created in initialize(). Args…]] - rationale - gateway/ingest_api/ledger.py
+- [[Sync TestClient for WebSocket tests_1]] - rationale - gateway/tests/test_security_fixes.py
+- [[Test PII entity type mapping]] - rationale - gateway/tests/test_config.py
+- [[Test SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[Test creating a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a ledger entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test deleting a non-existent entry]] - rationale - gateway/tests/test_ledger.py
+- [[Test ledger query with source filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test loading configuration from agentshroud.yaml (or the committed example).]] - rationale - gateway/tests/test_config.py
+- [[Test paginated ledger query]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with forwarded_to filter]] - rationale - gateway/tests/test_ledger.py
+- [[Test querying ledger with time range filters]] - rationale - gateway/tests/test_ledger.py
+- [[Test require_approval=false executes directly (Finding 5)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Test retrieving a ledger entry by ID]] - rationale - gateway/tests/test_ledger.py
+- [[Test stats calculation]] - rationale - gateway/tests/test_ledger.py
+- [[Test that SSH disabled returns 503 (Finding 12)]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Test that configuration has sensible defaults]] - rationale - gateway/tests/test_config.py
+- [[Test that load_config() populates bots — from YAML or backward-compat default.]] - rationale - gateway/tests/test_config.py
+- [[TestApprovalQueuePIISanitization]] - code - gateway/tests/test_security_fixes.py
+- [[TestAuditChainPerformance]] - code - gateway/tests/test_performance.py
+- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
+- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
+- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
+- [[TestSSHDisabled]] - code - gateway/tests/test_ssh_proxy.py
+- [[TestSSHDisabledEndpoint]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHHosts]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHRequireApprovalFalse]] - code - gateway/tests/test_ssh_endpoints.py
+- [[TestSSHStrictHostKeyChecking]] - code - gateway/tests/test_security_fixes.py
+- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
+- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
+- [[Tests for POST mcpresult endpoint and mcp_proxy_data  proxy_allowed_domains…]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Tests for POST sshwrite_file — structured (non-shell-string) file writes.…]] - rationale - gateway/tests/test_ssh_write_file_endpoint.py
+- [[Tests for SSH API endpoints]] - rationale - gateway/tests/test_ssh_endpoints.py
+- [[Tests for SSH Proxy module]] - rationale - gateway/tests/test_ssh_proxy.py
+- [[Tests for configuration loading]] - rationale - gateway/tests/test_config.py
+- [[Tests for data ledger]] - rationale - gateway/tests/test_ledger.py
+- [[Tests for v0.2.0 peer review security fixes Covers - CRITICAL-1 SSH…]] - rationale - gateway/tests/test_security_fixes.py
+- [[Top-level SSH proxy configuration]] - rationale - gateway/ingest_api/ssh_config.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[Validate that default_url uses httphttps and targets an internal Docker host.…]] - rationale - gateway/ingest_api/config.py
+- [[Validate that each target URL uses httphttps and targets an internal Docker…]] - rationale - gateway/ingest_api/config.py
+- [[Verify SSH proxy uses StrictHostKeyChecking=yes, not accept-new]] - rationale - gateway/tests/test_security_fixes.py
+- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
+- [[WAL Mode]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[WebSocket_3]] - code
+- [[When agentshroud.yaml declares hermes, load_config() populates it in bots.]] - rationale - gateway/tests/test_config.py
+- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
+- [[Where Used_4]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[Write 1000 audit entries in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
+- [[_ensure_agentshroud_config_resolvable()]] - code - gateway/tests/conftest.py
+- [[_entity_type_mapping()]] - code - gateway/ingest_api/config.py
+- [[_execute_and_record()]] - code - gateway/ingest_api/main.py
+- [[_load_config()]] - code - gateway/tests/test_config.py
+- [[aiosqlite_1]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[aiosqlite]] - document - docs/vault/05 - Dependencies/aiosqlite.md
+- [[asyncio_39]] - code
+- [[asyncio_40]] - code
+- [[auth_headers()]] - code - gateway/tests/conftest.py
+- [[auth_headers()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[auth_headers()_2]] - code - gateway/tests/test_ssh_endpoints.py
+- [[auth_headers()_3]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[bot_config.py]] - code - gateway/ingest_api/bot_config.py
+- [[client()_11]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[client()_12]] - code - gateway/tests/test_security_fixes.py
+- [[client()_13]] - code - gateway/tests/test_ssh_endpoints.py
+- [[client()_14]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[conftest.py]] - code - gateway/tests/conftest.py
+- [[field_validator_2]] - code
+- [[field_validator_3]] - code
+- [[fixture_66]] - code
+- [[fixture_67]] - code
+- [[fixture_68]] - code
+- [[fixture_69]] - code
+- [[fixture_70]] - code
+- [[fixture_71]] - code
+- [[fixture_72]] - code
+- [[ingest_apimodels.py]] - code - gateway/ingest_api/models.py
+- [[ledger()]] - code - gateway/tests/test_audit_chain.py
+- [[ledger.py_2]] - code - gateway/ingest_api/ledger.py
+- [[proxy()_1]] - code - gateway/tests/test_ssh_proxy.py
+- [[proxy.py]] - code - gateway/ssh_proxy/proxy.py
+- [[pydantic_1]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[queue.py]] - code - gateway/approval_queue/queue.py
+- [[sanitizer()_3]] - code - gateway/tests/conftest.py
+- [[ssh_config()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[ssh_config()_1]] - code - gateway/tests/test_ssh_proxy.py
+- [[ssh_config()_2]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[ssh_config.py_2]] - code - gateway/ingest_api/ssh_config.py
+- [[ssh_exec()]] - code - gateway/ingest_api/main.py
+- [[sync_client()_1]] - code - gateway/tests/test_security_fixes.py
+- [[test_audit_chain.py]] - code - gateway/tests/test_audit_chain.py
+- [[test_client()]] - code - gateway/tests/conftest.py
+- [[test_config()]] - code - gateway/tests/conftest.py
+- [[test_config()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_config.py]] - code - gateway/tests/test_config.py
+- [[test_config_defaults()]] - code - gateway/tests/test_config.py
+- [[test_config_with_ssh()]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_config_with_ssh()_1]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+- [[test_delete_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_delete_nonexistent()]] - code - gateway/tests/test_ledger.py
+- [[test_entity_type_mapping()]] - code - gateway/tests/test_config.py
+- [[test_get_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_get_stats()_1]] - code - gateway/tests/test_ledger.py
+- [[test_initialize_is_idempotent()]] - code - gateway/tests/test_ledger.py
+- [[test_ledger()]] - code - gateway/tests/conftest.py
+- [[test_ledger.py]] - code - gateway/tests/test_ledger.py
+- [[test_load_config()]] - code - gateway/tests/test_config.py
+- [[test_load_config_has_bots()]] - code - gateway/tests/test_config.py
+- [[test_load_config_registers_hermes()]] - code - gateway/tests/test_config.py
+- [[test_mcp_result_endpoint.py]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[test_query_ledger()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_forwarded_to_filter()]] - code - gateway/tests/test_ledger.py
+- [[test_query_with_time_filters()]] - code - gateway/tests/test_ledger.py
+- [[test_record_entry()]] - code - gateway/tests/test_ledger.py
+- [[test_router_config_accepts_docker_service_hostname()]] - code - gateway/tests/test_config.py
+- [[test_router_config_accepts_hermes_hostname()]] - code - gateway/tests/test_config.py
+- [[test_security_fixes.py]] - code - gateway/tests/test_security_fixes.py
+- [[test_ssh_endpoints.py]] - code - gateway/tests/test_ssh_endpoints.py
+- [[test_ssh_proxy.py]] - code - gateway/tests/test_ssh_proxy.py
+- [[test_ssh_write_file_endpoint.py]] - code - gateway/tests/test_ssh_write_file_endpoint.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/GatewayConfig
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 68 edges to [[_COMMUNITY_lifespan.py]]
+- 44 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 34 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 33 edges to [[_COMMUNITY_AgentTarget]]
+- 31 edges to [[_COMMUNITY_SSHProxy]]
+- 21 edges to [[_COMMUNITY_lifespan]]
+- 16 edges to [[_COMMUNITY_ApprovalRequest]]
+- 13 edges to [[_COMMUNITY_test_security_integration.py]]
+- 10 edges to [[_COMMUNITY_RedactionResult]]
+- 8 edges to [[_COMMUNITY_SSHResult]]
+- 8 edges to [[_COMMUNITY_app]]
+- 6 edges to [[_COMMUNITY_asyncio_2]]
+- 6 edges to [[_COMMUNITY_BotConfig]]
+- 5 edges to [[_COMMUNITY_email_send]]
+- 5 edges to [[_COMMUNITY_TestConfigValidation]]
+- 3 edges to [[_COMMUNITY_test_dashboard.py]]
+- 3 edges to [[_COMMUNITY_api.py]]
+- 2 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_StatusResponse]]
+- 2 edges to [[_COMMUNITY_ProxyResult]]
+- 2 edges to [[_COMMUNITY_make_event]]
+- 2 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 1 edge to [[_COMMUNITY_run]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_decide_approval]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_test_mcp_proxy.py]]
+- 1 edge to [[_COMMUNITY_management.py]]
+- 1 edge to [[_COMMUNITY_Pydantic]]
+- 1 edge to [[_COMMUNITY_test_edge_approvals.py]]
+- 1 edge to [[_COMMUNITY_test_forward_routing.py]]
+- 1 edge to [[_COMMUNITY_test_security.py]]
+- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 1 edge to [[_COMMUNITY_AuditEvent]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 1 edge to [[_COMMUNITY_detect_runtime]]
+
+## Top bridge nodes
+- [[ingest_apimodels.py]] - degree 45, connects to 12 communities
+- [[pydantic_1]] - degree 17, connects to 12 communities
+- [[GatewayConfig]] - degree 48, connects to 9 communities
+- [[test_mcp_result_endpoint.py]] - degree 18, connects to 7 communities
+- [[RouterConfig]] - degree 40, connects to 6 communities
