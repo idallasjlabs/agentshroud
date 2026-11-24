@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "test_delegation.py"
+community: "DelegationPrivilege"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_delegationpy
+  - community/DelegationPrivilege
 ---
 
 # .test_revoke_returns_false_when_nothing_to_revoke()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRevoke]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_delegationpy
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

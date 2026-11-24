@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TestEmailSend"
-location: "L121"
+community: "test_intel_endpoint.py"
+location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEmailSend
+  - community/test_intel_endpointpy
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[Endpoint returns 401 without auth override._1]] - `rationale_for` [EXTRACTED]
-- [[TestEmailSend]] - `method` [EXTRACTED]
-- [[app()]] - `indirect_call` [INFERRED]
+- [[TestSubmitAuth]] - `method` [EXTRACTED]
+- [[_draft()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEmailSend
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

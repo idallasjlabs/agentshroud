@@ -15,7 +15,7 @@ tags:
 - [[Domains containing invalid hostname characters must be rejected.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
-- [[check_async()_39]] - `contains` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
+- [[check_async()_37]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "PromptGuard"
+community: "TestPromptGuardEvasion"
 location: "L830"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/TestPromptGuardEvasion
 ---
 
 # .test_rtl_override_detection()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuardEvasion]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/TestPromptGuardEvasion

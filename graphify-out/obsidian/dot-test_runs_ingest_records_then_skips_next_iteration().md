@@ -16,8 +16,8 @@ tags:
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
 - [[_fake_ingest()_1]] - `indirect_call` [INFERRED]
 - [[_sleep()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_20]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
-- [[now()_3]] - `contains` [EXTRACTED]
+- [[now()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sleep

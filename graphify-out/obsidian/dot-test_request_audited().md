@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestAuditChain"
+community: "WebProxy"
 location: "L430"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuditChain
+  - community/WebProxy
 ---
 
 # .test_request_audited()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuditChain
+#graphify/code #graphify/EXTRACTED #community/WebProxy

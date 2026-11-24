@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "DraftEntry"
-location: "L173"
+community: "TestTelegramWebhook"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/TestTelegramWebhook
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[TestSubmitAuth]] - `method` [EXTRACTED]
-- [[_draft()]] - `calls` [EXTRACTED]
+- [[Endpoint returns 401 without auth override._2]] - `rationale_for` [EXTRACTED]
+- [[TestTelegramWebhook]] - `method` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/TestTelegramWebhook

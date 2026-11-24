@@ -15,7 +15,7 @@ tags:
 - [[Consecutive-dot domains should be rejected before approval queueing.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
-- [[check_async()_38]] - `contains` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
+- [[check_async()_36]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_sanitizer

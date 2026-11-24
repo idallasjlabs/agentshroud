@@ -18,7 +18,7 @@ tags:
 - [[_fake_run()_3]] - `indirect_call` [INFERRED]
 - [[_sleep()_8]] - `contains` [EXTRACTED]
 - [[_sleep()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_20]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 - [[now()_10]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_gives_up_and_marks_sent_after_max_retries

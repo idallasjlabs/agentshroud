@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "_wrap_response"
 location: "L7606"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # .test_safe_info_response_exception_sends_unavailable_fallback()
@@ -16,6 +16,6 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 - [[always_raise()]] - `indirect_call` [INFERRED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

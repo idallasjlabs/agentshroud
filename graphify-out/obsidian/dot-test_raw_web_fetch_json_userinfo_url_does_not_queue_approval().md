@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: ".test_raw_web_fetch_json_userinfo_url_does_not_queue_approval"
 location: "L3299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/test_raw_web_fetch_json_userinfo_url_does_not_queue_approval
 ---
 
 # .test_raw_web_fetch_json_userinfo_url_does_not_queue_approval()
@@ -15,7 +15,7 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[URLs with credentials should not be queued for web-fetch approvals.]] - `rationale_for` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
-- [[check_async()_62]] - `contains` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
+- [[check_async()_53]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_userinfo_url_does_not_queue_approval
