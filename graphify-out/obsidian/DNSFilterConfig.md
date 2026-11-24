@@ -12,9 +12,9 @@ tags:
 # DNSFilterConfig
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_51]] - `references` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_54]] - `references` [EXTRACTED]
 - [[dot-dns_filter()]] - `calls` [EXTRACTED]
 - [[dot-test_dns_filter_config()]] - `calls` [EXTRACTED]
 - [[dot-test_dns_filter_default_enforce()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[TestNetworkSecurity]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[deep_security_test()]] - `uses` [INFERRED]
-- [[default_config()]] - `uses` [INFERRED]
+- [[default_config()_1]] - `uses` [INFERRED]
 - [[dns_filter.py_2]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]

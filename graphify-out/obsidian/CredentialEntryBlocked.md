@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-can_enter_credentials()]] - `calls` [EXTRACTED]
-- [[Exception_8]] - `inherits` [EXTRACTED]
+- [[Exception_10]] - `inherits` [EXTRACTED]
 - [[TestCredentialProtection]] - `uses` [INFERRED]
 - [[browser_security.py]] - `contains` [EXTRACTED]
 

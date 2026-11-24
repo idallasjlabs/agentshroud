@@ -12,9 +12,9 @@ tags:
 # DNSFilter
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_54]] - `method` [EXTRACTED]
 - [[dot-_cleanup_rate_window()]] - `method` [EXTRACTED]
 - [[dot-_detect_tunneling()]] - `method` [EXTRACTED]
 - [[dot-_domain_in_allowlist()]] - `method` [EXTRACTED]

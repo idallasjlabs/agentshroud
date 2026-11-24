@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-register_validator()]] - `references` [EXTRACTED]
-- [[dot-validate()_2]] - `method` [EXTRACTED]
+- [[dot-validate()]] - `method` [EXTRACTED]
 - [[Base class for credential validators.]] - `rationale_for` [EXTRACTED]
 - [[MockValidator]] - `inherits` [EXTRACTED]
 - [[TestGenerateAndValidate]] - `uses` [INFERRED]

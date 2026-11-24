@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "delegation.py"
+community: "DelegationPrivilege"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/delegationpy
+  - community/DelegationPrivilege
 ---
 
 # DelegationError
@@ -20,4 +20,4 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/delegationpy
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

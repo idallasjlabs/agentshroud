@@ -12,7 +12,7 @@ tags:
 # Default Service Configuration
 
 ## Connections
-- [[compose_generator.py_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 - [[gateway service]] - `contains` [EXTRACTED]
 - [[openclaw service]] - `contains` [EXTRACTED]
 

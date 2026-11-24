@@ -12,8 +12,8 @@ tags:
 # CredentialInjector
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_209]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_206]] - `method` [EXTRACTED]
 - [[dot-_load_credentials()]] - `method` [EXTRACTED]
 - [[dot-_load_default_mappings()]] - `method` [EXTRACTED]
 - [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # DNSBlocklist
 
 ## Connections
-- [[dot-__init__()_191]] - `method` [EXTRACTED]
+- [[dot-__init__()_187]] - `method` [EXTRACTED]
 - [[dot-_periodic_update_loop()]] - `method` [EXTRACTED]
 - [[dot-download_blocklist()]] - `method` [EXTRACTED]
 - [[dot-is_blocked()]] - `method` [EXTRACTED]
@@ -20,10 +20,10 @@ tags:
 - [[dot-parse_hosts_line()]] - `method` [EXTRACTED]
 - [[dot-setup_method()_33]] - `calls` [EXTRACTED]
 - [[dot-setup_method()_34]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_6]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_7]] - `calls` [EXTRACTED]
 - [[dot-start_periodic_updates()]] - `method` [EXTRACTED]
 - [[dot-stats()]] - `method` [EXTRACTED]
-- [[dot-stop()_11]] - `method` [EXTRACTED]
+- [[dot-stop()_9]] - `method` [EXTRACTED]
 - [[dot-test_custom_denylist()_1]] - `calls` [EXTRACTED]
 - [[dot-test_download_failure_falls_back_to_cache()]] - `calls` [EXTRACTED]
 - [[dot-test_download_failure_no_cache_returns_none()]] - `calls` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "DelegationManager"
+community: "DelegationPrivilege"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationManager
+  - community/DelegationPrivilege
 ---
 
 # DelegationManager
 
 ## Connections
-- [[dot-__init__()_7]] - `method` [EXTRACTED]
+- [[dot-__init__()_9]] - `method` [EXTRACTED]
 - [[dot-_cleanup_expired()]] - `method` [EXTRACTED]
 - [[dot-_load()]] - `method` [EXTRACTED]
 - [[dot-_require_owner()]] - `method` [EXTRACTED]
@@ -29,7 +29,7 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[mgr()_1]] - `uses` [INFERRED]
+- [[mgr()]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationManager
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

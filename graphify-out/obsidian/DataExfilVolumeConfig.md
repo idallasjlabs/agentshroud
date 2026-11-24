@@ -12,7 +12,7 @@ tags:
 # DataExfilVolumeConfig
 
 ## Connections
-- [[dot-__init__()_105]] - `calls` [EXTRACTED]
+- [[dot-__init__()_107]] - `calls` [EXTRACTED]
 - [[Configuration for class`DataExfilVolumeGuard`.]] - `rationale_for` [EXTRACTED]
 - [[data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
@@ -27,7 +27,7 @@ tags:
 - [[test_cumulative_is_per_session()]] - `calls` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `imports` [EXTRACTED]
 - [[test_disabled_never_blocks()_1]] - `calls` [EXTRACTED]
-- [[test_get_stats()_1]] - `calls` [EXTRACTED]
+- [[test_get_stats()_2]] - `calls` [EXTRACTED]
 - [[test_pipeline_allows_small_response()]] - `uses` [INFERRED]
 - [[test_pipeline_blocks_and_downstream_not_reached()_1]] - `uses` [INFERRED]
 - [[test_reset_session_clears_state()]] - `calls` [EXTRACTED]

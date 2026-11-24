@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "deep_security_test"
+community: "LogSanitizer"
 location: "L18"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/deep_security_test
+  - community/LogSanitizer
 ---
 
 # Custom logging filter that sanitizes sensitive data from log records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LogSanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/deep_security_test
+#graphify/rationale #graphify/EXTRACTED #community/LogSanitizer
