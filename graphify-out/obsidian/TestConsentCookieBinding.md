@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "TestConsentCookieBinding"
+community: "test_security_audit.py"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConsentCookieBinding
+  - community/test_security_auditpy
 ---
 
 # TestConsentCookieBinding
@@ -23,4 +23,4 @@ tags:
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConsentCookieBinding
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

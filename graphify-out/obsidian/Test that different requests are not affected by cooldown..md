@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L248"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # Test that different requests are not affected by cooldown.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_different_requests_not_in_cooldown()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening

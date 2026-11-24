@@ -20,7 +20,7 @@ tags:
 - [[dot-test_export_json_ld()]] - `method` [EXTRACTED]
 - [[dot-test_tamper_detection()]] - `method` [EXTRACTED]
 - [[dot-test_verify_export_integrity()]] - `method` [EXTRACTED]
-- [[AuditExportConfig]] - `uses` [INFERRED]
+- [[AuditExportConfig_1]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[AuditStore]] - `uses` [INFERRED]
 - [[Test AuditExporter functionality.]] - `rationale_for` [EXTRACTED]

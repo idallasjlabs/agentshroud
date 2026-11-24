@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "_make_proxy"
+community: "AsyncMock"
 location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AsyncMock
 ---
 
 # TestCallSlackApi
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_success_posts_with_bearer_token()]] - `method` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestConfirmationModel
@@ -18,4 +18,4 @@ tags:
 - [[SCLError]] - `uses` [INFERRED]
 - [[test_soc_egress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

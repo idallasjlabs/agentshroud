@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L506"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # TestBuildFullMesh
@@ -27,4 +27,4 @@ tags:
 - [[build_full_mesh N-agent-scalable topology construction. Adding a 3rd4thNth…]] - `rationale_for` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

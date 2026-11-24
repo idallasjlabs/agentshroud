@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "StatusResponse"
 location: "L46"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/StatusResponse
 ---
 
 # Test that new fields are optional (backward compat).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_status_response_optional_fields()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/StatusResponse

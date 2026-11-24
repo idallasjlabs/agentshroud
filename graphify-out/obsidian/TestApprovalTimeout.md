@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalStore"
+community: "ApprovalRequest"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ApprovalRequest
 ---
 
 # TestApprovalTimeout
@@ -18,4 +18,4 @@ tags:
 - [[Timeout handling for approval requests.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

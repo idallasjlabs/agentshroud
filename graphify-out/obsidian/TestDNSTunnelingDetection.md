@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestDNSTunnelingDetection"
+community: "DNSFilterConfig"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSTunnelingDetection
+  - community/DNSFilterConfig
 ---
 
 # TestDNSTunnelingDetection
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_very_long_subdomain_flagged()]] - `method` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSTunnelingDetection
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

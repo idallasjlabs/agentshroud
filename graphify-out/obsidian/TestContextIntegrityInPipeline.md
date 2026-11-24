@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # TestContextIntegrityInPipeline
@@ -25,4 +25,4 @@ tags:
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

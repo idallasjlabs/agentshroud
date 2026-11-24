@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestCollaboratorAccess"
+community: "test_tool_acl.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCollaboratorAccess
+  - community/test_tool_aclpy
 ---
 
 # TestCollaboratorAccess
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_collaborator_denied_unknown_by_default()]] - `method` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorAccess
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

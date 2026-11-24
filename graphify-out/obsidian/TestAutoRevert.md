@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # TestAutoRevert
@@ -18,4 +18,4 @@ tags:
 - [[ModeRequest]] - `uses` [INFERRED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

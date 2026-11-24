@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "RedactionResult"
 location: "L425"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/RedactionResult
 ---
 
 # Test that configuration includes tool result PII settings
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_config_with_tool_result_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/RedactionResult

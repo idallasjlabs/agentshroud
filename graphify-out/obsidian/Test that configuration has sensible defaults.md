@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L38"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # Test that configuration has sensible defaults
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_config_defaults()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig

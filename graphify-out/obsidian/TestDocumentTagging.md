@@ -12,7 +12,7 @@ tags:
 # TestDocumentTagging
 
 ## Connections
-- [[dot-guard()_1]] - `method` [EXTRACTED]
+- [[dot-guard()_5]] - `method` [EXTRACTED]
 - [[dot-test_document_tag_creation()]] - `method` [EXTRACTED]
 - [[dot-test_document_tag_lookup_by_hash()]] - `method` [EXTRACTED]
 - [[dot-test_document_tag_untrusted_source()]] - `method` [EXTRACTED]

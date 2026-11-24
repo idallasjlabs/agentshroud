@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: "lifespan"
 location: "L790"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/lifespan
 ---
 
 # TestAllExampleConfigsExist
@@ -16,4 +16,4 @@ tags:
 - [[Verify all referenced example configs exist.]] - `rationale_for` [EXTRACTED]
 - [[test_config_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/lifespan

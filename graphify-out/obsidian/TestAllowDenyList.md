@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "test_mcp_proxy.py"
 location: "L1155"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPProxy
+  - community/test_mcp_proxypy
 ---
 
 # TestAllowDenyList
@@ -20,4 +20,4 @@ tags:
 - [[MCPToolCall]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPProxy
+#graphify/code #graphify/INFERRED #community/test_mcp_proxypy

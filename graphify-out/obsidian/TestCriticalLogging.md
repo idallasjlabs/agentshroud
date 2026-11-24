@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "test_observatory_mode.py"
 location: "L156"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/test_observatory_modepy
 ---
 
 # TestCriticalLogging
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_no_critical_when_setting_enforce()]] - `method` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

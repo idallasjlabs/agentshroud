@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestCoerceToWSEvent
@@ -21,4 +21,4 @@ tags:
 - [[WSEventType]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

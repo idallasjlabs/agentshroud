@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "TestCollaboratorPromptClassifiers"
 location: "L6992"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # TestCollaboratorPromptClassifiers
@@ -103,4 +103,4 @@ tags:
 - [[Unit tests for collaborator-facing prompt classification helpers.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
