@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_shared_memory.py"
+community: "test_soc_realtime_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # fixture
 
 ## Connections
-- [[rbac()_5]] - `references` [EXTRACTED]
-- [[session_mgr()]] - `references` [EXTRACTED]
-- [[smm()_1]] - `references` [EXTRACTED]
-- [[tmp_workspace()_2]] - `references` [EXTRACTED]
+- [[clean_auth_env()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

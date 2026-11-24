@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TrustConfig"
+community: "test_dashboard_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/test_dashboard_endpointspy
 ---
 
 # fixture
 
 ## Connections
-- [[manager()_4]] - `references` [EXTRACTED]
-- [[strict_config()_3]] - `references` [EXTRACTED]
-- [[strict_manager()]] - `references` [EXTRACTED]
-- [[trust_db()]] - `references` [EXTRACTED]
+- [[auth_headers()_4]] - `references` [EXTRACTED]
+- [[client()_19]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

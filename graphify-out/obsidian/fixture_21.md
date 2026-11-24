@@ -1,21 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-guard()_2]] - `references` [EXTRACTED]
-- [[dot-ledger()]] - `references` [EXTRACTED]
-- [[dot-ledger()_1]] - `references` [EXTRACTED]
-- [[dot-pipeline()]] - `references` [EXTRACTED]
-- [[dot-pipeline()_1]] - `references` [EXTRACTED]
-- [[dot-sanitizer()]] - `references` [EXTRACTED]
+- [[dot-guard()_6]] - `references` [EXTRACTED]
+- [[dot-guard()_1]] - `references` [EXTRACTED]
+- [[dot-pg()]] - `references` [EXTRACTED]
+- [[dot-pg()_1]] - `references` [EXTRACTED]
+- [[prompt_guard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "fs"
+community: "test_chat_completions_alias.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fs
+  - community/test_chat_completions_aliaspy
 ---
 
 # fixture
 
 ## Connections
-- [[flags()]] - `references` [EXTRACTED]
-- [[fs()]] - `references` [EXTRACTED]
-- [[tools()]] - `references` [EXTRACTED]
+- [[client()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fs
+#graphify/code #graphify/EXTRACTED #community/test_chat_completions_aliaspy

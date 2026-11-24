@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_api_contract_fuzz.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_api_contract_fuzzpy
 ---
 
 # fixture
 
 ## Connections
-- [[client()_6]] - `references` [EXTRACTED]
-- [[holder()]] - `references` [EXTRACTED]
-- [[ks_engine()]] - `references` [EXTRACTED]
-- [[state()]] - `references` [EXTRACTED]
+- [[client()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

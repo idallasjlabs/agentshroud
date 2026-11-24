@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "run"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/run
 ---
 
 # fixture
 
 ## Connections
-- [[enhanced_mfa_queue()]] - `references` [EXTRACTED]
-- [[now()]] - `references` [EXTRACTED]
+- [[prompt_protection()]] - `references` [EXTRACTED]
+- [[sample_protected_content()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/run

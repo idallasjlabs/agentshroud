@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestPathIsolationManager"
+community: "BrowserSecurityGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/BrowserSecurityGuard
 ---
 
 # fixture
 
 ## Connections
-- [[dot-config()]] - `references` [EXTRACTED]
-- [[dot-manager()_1]] - `references` [EXTRACTED]
-- [[dot-temp_dir()]] - `references` [EXTRACTED]
+- [[guard()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

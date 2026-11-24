@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestEgressTelegramNotify"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/GatewayConfig
 ---
 
 # fixture
 
 ## Connections
-- [[dot-notifier()]] - `references` [EXTRACTED]
+- [[client()_12]] - `references` [EXTRACTED]
+- [[sync_client()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

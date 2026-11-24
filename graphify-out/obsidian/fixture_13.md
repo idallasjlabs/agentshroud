@@ -11,6 +11,8 @@ tags:
 # fixture
 
 ## Connections
-- [[manager()]] - `references` [EXTRACTED]
+- [[dot-manager()]] - `references` [EXTRACTED]
+- [[dot-sample_credential()]] - `references` [EXTRACTED]
+- [[dot-setup_manager_with_credential()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_socket_client.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_run_resets_backoff_after_successful_connect"
-location: "L76"
+community: "_wrap_response"
+location: "L3925"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_run_resets_backoff_after_successful_connect
+  - community/_wrap_response
 ---
 
 # fake_sleep()
 
 ## Connections
-- [[dot-test_run_resets_backoff_after_successful_connect()]] - `indirect_call` [INFERRED]
+- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_run_resets_backoff_after_successful_connect
+#graphify/code #graphify/INFERRED #community/_wrap_response

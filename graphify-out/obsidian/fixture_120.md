@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "version_routes.py"
+community: "test_voice_gateway.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/test_voice_gatewaypy
 ---
 
 # fixture
 
 ## Connections
-- [[tmp_db()]] - `references` [EXTRACTED]
+- [[_reset_reply_resume()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

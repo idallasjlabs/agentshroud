@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "ProgressiveTrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/ProgressiveTrustConfig
 ---
 
 # fixture
 
 ## Connections
-- [[svc()_1]] - `references` [EXTRACTED]
+- [[trust_manager()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig

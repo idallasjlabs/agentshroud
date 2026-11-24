@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TeamsConfig"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/MCPPolicyEngine
 ---
 
 # fixture
 
 ## Connections
-- [[teams()_3]] - `references` [EXTRACTED]
+- [[engine()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

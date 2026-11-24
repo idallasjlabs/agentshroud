@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "_engine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_engine
 ---
 
 # fixture
 
 ## Connections
-- [[_no_owner_mirror()]] - `references` [EXTRACTED]
-- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
+- [[_module_state_guard()]] - `references` [EXTRACTED]
+- [[client()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_engine

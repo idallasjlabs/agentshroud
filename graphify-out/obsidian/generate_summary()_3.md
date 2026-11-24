@@ -1,29 +1,21 @@
 ---
-source_file: "gateway/security/wazuh_client.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "get_wazuh_summary"
-location: "L175"
+community: "parse_clamscan_output"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_wazuh_summary
+  - community/parse_clamscan_output
 ---
 
 # generate_summary()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
-- [[Generate a summary dict suitable for the health report. Args alerts List of…_1]] - `rationale_for` [EXTRACTED]
-- [[get_clamav_summary()]] - `calls` [EXTRACTED]
-- [[get_falco_summary()]] - `calls` [EXTRACTED]
-- [[get_fim_events()]] - `calls` [EXTRACTED]
-- [[get_rootkit_events()]] - `calls` [EXTRACTED]
-- [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
-- [[get_trivy_summary()]] - `calls` [EXTRACTED]
-- [[get_wazuh_summary()]] - `calls` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
+- [[Generate a summary dict suitable for the health report. Args report Parsed…_1]] - `rationale_for` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `imports` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[wazuh_alerts()]] - `calls` [EXTRACTED]
-- [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "app"
+community: "TestRewriteRequestHeaders"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app
+  - community/TestRewriteRequestHeaders
 ---
 
 # fixture
 
 ## Connections
-- [[client()_4]] - `references` [EXTRACTED]
-- [[sync_client()_1]] - `references` [EXTRACTED]
+- [[bridge_module()]] - `references` [EXTRACTED]
+- [[relay_module()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app
+#graphify/code #graphify/EXTRACTED #community/TestRewriteRequestHeaders

@@ -24,7 +24,7 @@ tags:
 - [[generate_variants()]] - `contains` [EXTRACTED]
 - [[get_font()]] - `contains` [EXTRACTED]
 - [[icon_on_canvas()]] - `contains` [EXTRACTED]
-- [[main()_25]] - `contains` [EXTRACTED]
+- [[main()_24]] - `contains` [EXTRACTED]
 - [[save()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

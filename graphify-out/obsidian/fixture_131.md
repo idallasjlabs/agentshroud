@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "CredentialInjector"
+community: "test_security_audit.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/test_security_auditpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-injector()]] - `references` [EXTRACTED]
-- [[dot-injector()_1]] - `references` [EXTRACTED]
-- [[dot-injector_with_secrets()]] - `references` [EXTRACTED]
+- [[validator()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

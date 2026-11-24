@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TokenValidator"
+community: "_make_token"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/_make_token
 ---
 
 # fixture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[validator()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/_make_token

@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_skill_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_skill_guardpy
 ---
 
 # fixture
 
 ## Connections
-- [[Clock]] - `references` [EXTRACTED]
-- [[store()_1]] - `references` [EXTRACTED]
-- [[svc()]] - `references` [EXTRACTED]
+- [[dot-client()_6]] - `references` [EXTRACTED]
+- [[guard()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

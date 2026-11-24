@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_v1_models_synthetic.py"
+community: "web_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/web_proxypy
 ---
 
 # fixture
 
 ## Connections
-- [[client()_8]] - `references` [EXTRACTED]
+- [[default_config()_2]] - `references` [EXTRACTED]
+- [[monitor()]] - `references` [EXTRACTED]
+- [[monitor_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "IntelReportStore"
+community: "CompetitiveIntelReport"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/CompetitiveIntelReport
 ---
 
 # field_validator
@@ -14,4 +14,4 @@ tags:
 - [[dot-report_id_not_empty()]] - `references` [EXTRACTED]
 - [[dot-source_not_empty()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

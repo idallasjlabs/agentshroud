@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "fake_urlopen"
-location: "L3925"
+community: "ModeRequest"
+location: "L184"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/fake_urlopen
+  - community/ModeRequest
 ---
 
 # fake_sleep()
 
 ## Connections
-- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - `indirect_call` [INFERRED]
+- [[dot-test_set_mode_cancels_previous_revert_task()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/fake_urlopen
+#graphify/code #graphify/INFERRED #community/ModeRequest

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_dns_canvas_coverage.py"
+community: "AlertDispatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/AlertDispatcher
 ---
 
 # fixture
 
 ## Connections
-- [[fake_httpx_client()]] - `references` [EXTRACTED]
-- [[gateway_password()]] - `references` [EXTRACTED]
+- [[dispatcher()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

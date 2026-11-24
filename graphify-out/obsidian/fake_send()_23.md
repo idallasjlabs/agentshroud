@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "._make_proxy"
-location: "L8375"
+community: ".test_unknown_user_always_gets_pending_or_rate_limit_notice"
+location: "L7978"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/test_unknown_user_always_gets_pending_or_rate_limit_notice
 ---
 
 # fake_send()
 
 ## Connections
-- [[dot-test_suspended_drop_notice_respects_cooldown()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_blocked_command_always_gets_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/test_unknown_user_always_gets_pending_or_rate_limit_notice

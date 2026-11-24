@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_StubForwarder_1]] - `calls` [EXTRACTED]
-- [[fixture_139]] - `references` [EXTRACTED]
+- [[fixture_140]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

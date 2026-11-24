@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_credential_injector.py"
+community: "test_soc_router_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_credential_injectorpy
+  - community/test_soc_router_coveragepy
 ---
 
 # fixture
 
 ## Connections
-- [[injector()]] - `references` [EXTRACTED]
-- [[secrets_dir()]] - `references` [EXTRACTED]
+- [[client()_5]] - `references` [EXTRACTED]
+- [[holder()]] - `references` [EXTRACTED]
+- [[ks_engine()]] - `references` [EXTRACTED]
+- [[state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,18 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "TestProductionCompose"
+community: "GroupRoleResolver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/GroupRoleResolver
 ---
 
 # fixture
 
 ## Connections
-- [[dot-compose()]] - `references` [EXTRACTED]
-- [[dot-compose()_1]] - `references` [EXTRACTED]
-- [[dot-compose()_2]] - `references` [EXTRACTED]
+- [[acl_config()]] - `references` [EXTRACTED]
+- [[enforcer()_1]] - `references` [EXTRACTED]
+- [[group_role_resolver()]] - `references` [EXTRACTED]
+- [[rbac()_2]] - `references` [EXTRACTED]
+- [[teams()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

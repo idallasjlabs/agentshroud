@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "test_security_integration.py"
 location: "L37"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/configpy
+  - community/test_security_integrationpy
 ---
 
 # full_pipeline_config()
@@ -18,7 +18,7 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[fixture_107]] - `references` [EXTRACTED]
+- [[fixture_106]] - `references` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/configpy
+#graphify/code #graphify/INFERRED #community/test_security_integrationpy

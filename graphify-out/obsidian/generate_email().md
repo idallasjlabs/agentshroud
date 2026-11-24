@@ -15,7 +15,7 @@ tags:
 - [[ensure()]] - `calls` [EXTRACTED]
 - [[generate_branding_assets.py]] - `contains` [EXTRACTED]
 - [[get_font()]] - `calls` [EXTRACTED]
-- [[main()_25]] - `calls` [EXTRACTED]
+- [[main()_24]] - `calls` [EXTRACTED]
 - [[save()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/generate_branding_assetspy

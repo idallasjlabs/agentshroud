@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "_wrap_response"
-location: "L466"
+community: "test_llm_proxy.py"
+location: "L416"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_wrap_response
+  - graphify/INFERRED
+  - community/test_llm_proxypy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_help_uses_local_notice_and_includes_revoke()]] - `contains` [EXTRACTED]
+- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/INFERRED #community/test_llm_proxypy

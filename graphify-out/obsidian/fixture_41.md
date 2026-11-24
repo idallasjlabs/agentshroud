@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_main.py"
+community: "test_key_vault.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mainpy
+  - community/test_key_vaultpy
 ---
 
 # fixture
 
 ## Connections
-- [[app()_1]] - `references` [EXTRACTED]
-- [[client()_9]] - `references` [EXTRACTED]
+- [[config()_3]] - `references` [EXTRACTED]
+- [[vault()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/test_key_vaultpy

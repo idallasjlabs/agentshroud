@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "IntelReportStore"
+community: "test_edge_e2e_sdk.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/test_edge_e2e_sdkpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-store()_1]] - `references` [EXTRACTED]
-- [[dot-store_dir()]] - `references` [EXTRACTED]
+- [[edge()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

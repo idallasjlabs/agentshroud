@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "fake_urlopen"
-location: "L4793"
+community: "_make_update"
+location: "L672"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fake_urlopen
+  - community/_make_update
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_with_mention_and_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_owner_revoke_command_revokes_target_user()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fake_urlopen
+#graphify/code #graphify/EXTRACTED #community/_make_update

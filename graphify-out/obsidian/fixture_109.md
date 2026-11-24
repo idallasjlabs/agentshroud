@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "PermissionLevel"
+community: "ServiceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/ServiceManager
 ---
 
 # fixture
 
 ## Connections
-- [[config()_3]] - `references` [EXTRACTED]
-- [[mgr()_2]] - `references` [EXTRACTED]
+- [[dot-mgr_with_engine()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "TestApprovalHardening"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/TestApprovalHardening
 ---
 
 # fixture
 
 ## Connections
-- [[edge()]] - `references` [EXTRACTED]
+- [[dot-config()_1]] - `references` [EXTRACTED]
+- [[dot-hardening()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

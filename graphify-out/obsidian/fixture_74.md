@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TrustManager
 ---
 
 # fixture
 
 ## Connections
-- [[enforce_config()]] - `references` [EXTRACTED]
-- [[middleware_manager()]] - `references` [EXTRACTED]
-- [[strict_sandbox()_1]] - `references` [EXTRACTED]
+- [[pipeline()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

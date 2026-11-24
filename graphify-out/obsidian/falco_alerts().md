@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_security_toolchain.py"
 location: "L1816"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_security_toolchainpy
 ---
 
 # falco_alerts()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Return recent Falco runtime security alerts with summary.]] - `rationale_for` [EXTRACTED]
 - [[generate_summary()]] - `calls` [EXTRACTED]
-- [[get_4]] - `references` [EXTRACTED]
+- [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[read_alerts()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

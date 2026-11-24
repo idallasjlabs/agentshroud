@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "TestEgressTelegramNotify"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestEgressTelegramNotify
 ---
 
 # fixture
 
 ## Connections
-- [[dot-xml_filter()]] - `references` [EXTRACTED]
+- [[dot-notifier()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

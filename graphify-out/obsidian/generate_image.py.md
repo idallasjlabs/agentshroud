@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Generate images using Google's Nano Banana Pro (Gemini 3 Pro Image) API. Usage…]] - `rationale_for` [EXTRACTED]
 - [[get_api_key()]] - `contains` [EXTRACTED]
-- [[main()_15]] - `contains` [EXTRACTED]
+- [[main()_16]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/generate_imagepy

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "NetworkValidator"
+community: "A2APolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkValidator
+  - community/A2APolicyEngine
 ---
 
 # fixture
 
 ## Connections
-- [[tmp_compose()]] - `references` [EXTRACTED]
+- [[engine()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkValidator
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

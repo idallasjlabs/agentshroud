@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestRewriteRequestHeaders"
+community: "test_edge_network_isolation.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRewriteRequestHeaders
+  - community/test_edge_network_isolationpy
 ---
 
 # fixture
 
 ## Connections
-- [[bridge_module()]] - `references` [EXTRACTED]
-- [[relay_module()]] - `references` [EXTRACTED]
+- [[_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRewriteRequestHeaders
+#graphify/code #graphify/EXTRACTED #community/test_edge_network_isolationpy

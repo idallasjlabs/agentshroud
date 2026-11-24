@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
-location: "L439"
+community: "_wrap_response"
+location: "L5149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_wrap_response
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_start_uses_local_notice_and_does_not_forward()]] - `contains` [EXTRACTED]
+- [[dot-test_self_diagnose_plain_word_with_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

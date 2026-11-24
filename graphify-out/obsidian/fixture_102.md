@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalStore"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/AgentTarget
 ---
 
 # fixture
 
 ## Connections
-- [[store()_2]] - `references` [EXTRACTED]
+- [[router()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

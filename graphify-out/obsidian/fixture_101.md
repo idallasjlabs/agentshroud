@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestContributingMdAccuracy"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestContributingMdAccuracy
+  - community/AgentTarget
 ---
 
 # fixture
 
 ## Connections
-- [[dot-contributing()]] - `references` [EXTRACTED]
-- [[dot-readme()]] - `references` [EXTRACTED]
-- [[dot-security_md()]] - `references` [EXTRACTED]
+- [[router()_2]] - `references` [EXTRACTED]
+- [[router_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestContributingMdAccuracy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

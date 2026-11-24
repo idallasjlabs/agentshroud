@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_healthcheck_with_leading_whitespace_is_handled_locally"
-location: "L4895"
+community: "_make_update"
+location: "L2794"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_healthcheck_with_leading_whitespace_is_handled_locally
+  - community/_make_update
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_with_leading_whitespace_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_env_secret_probe_returns_protect_secret_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_healthcheck_with_leading_whitespace_is_handled_locally
+#graphify/code #graphify/EXTRACTED #community/_make_update

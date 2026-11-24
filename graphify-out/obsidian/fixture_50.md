@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_session_manager.py"
+community: "TestNvdAppend"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_session_managerpy
+  - community/TestNvdAppend
 ---
 
 # fixture
 
 ## Connections
-- [[mgr()]] - `references` [EXTRACTED]
+- [[dot-registry()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_session_managerpy
+#graphify/code #graphify/EXTRACTED #community/TestNvdAppend

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_healthcheck_with_fullwidth_chars_is_handled_locally"
-location: "L4929"
+community: "_make_update"
+location: "L4531"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_healthcheck_with_fullwidth_chars_is_handled_locally
+  - community/_make_update
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_with_fullwidth_chars_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_healthcheck_is_handled_locally()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_healthcheck_with_fullwidth_chars_is_handled_locally
+#graphify/code #graphify/EXTRACTED #community/_make_update

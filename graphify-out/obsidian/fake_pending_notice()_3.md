@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "fake_owner_notice"
+community: ".test_stranger_within_limit_triggers_approval_workflow"
 location: "L7743"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fake_owner_notice
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # fake_pending_notice()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fake_owner_notice
+#graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

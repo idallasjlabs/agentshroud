@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/AgentTarget
 ---
 
 # fixture
 
 ## Connections
-- [[secrets_dir()_1]] - `references` [EXTRACTED]
-- [[signed_descriptors()]] - `references` [EXTRACTED]
+- [[router()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -12,7 +12,7 @@ tags:
 # firmware_bin()
 
 ## Connections
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request]] - `references` [EXTRACTED]
 - [[Response]] - `references` [EXTRACTED]
 - [[Serve the current ESP32 firmware binary for OTA (SCRUM-58). Contract expected…]] - `rationale_for` [EXTRACTED]
 - [[_get_firmware_etag()]] - `calls` [EXTRACTED]

@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "BrowserSecurityGuard"
+community: "TestResponseConsistency"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BrowserSecurityGuard
+  - community/TestResponseConsistency
 ---
 
 # fixture
 
 ## Connections
-- [[guard()_1]] - `references` [EXTRACTED]
+- [[dot-tracker()]] - `references` [EXTRACTED]
+- [[mock_alert_callback()]] - `references` [EXTRACTED]
+- [[multi_turn_tracker()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard
+#graphify/code #graphify/EXTRACTED #community/TestResponseConsistency

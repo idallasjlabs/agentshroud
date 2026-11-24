@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_redteam_probes.py"
+community: "telegram_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/telegram_proxypy
 ---
 
 # fixture
 
 ## Connections
-- [[pipeline()_1]] - `references` [EXTRACTED]
+- [[teams()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/telegram_proxypy

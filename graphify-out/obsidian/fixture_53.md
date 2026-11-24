@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "MetadataGuard"
+community: "TestSkillsReloadEndpoint"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/TestSkillsReloadEndpoint
 ---
 
 # fixture
 
 ## Connections
-- [[dot-guard()_1]] - `references` [EXTRACTED]
+- [[dot-client()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/TestSkillsReloadEndpoint

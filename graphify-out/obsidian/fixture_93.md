@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TeamsConfig"
+community: "test_soc_egress_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/test_soc_egress_endpointspy
 ---
 
 # fixture
 
 ## Connections
-- [[rbac()_3]] - `references` [EXTRACTED]
-- [[session_manager()_2]] - `references` [EXTRACTED]
-- [[shared_memory()_1]] - `references` [EXTRACTED]
+- [[client()_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

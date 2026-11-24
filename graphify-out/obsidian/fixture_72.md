@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/GatewayConfig
 ---
 
 # fixture
 
 ## Connections
-- [[dot-config()_1]] - `references` [EXTRACTED]
-- [[dot-hardening()]] - `references` [EXTRACTED]
+- [[auth_headers()_3]] - `references` [EXTRACTED]
+- [[client()_14]] - `references` [EXTRACTED]
+- [[ssh_config()_2]] - `references` [EXTRACTED]
+- [[test_config_with_ssh()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

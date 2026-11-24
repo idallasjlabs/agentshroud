@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "email_send"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/email_send
 ---
 
 # fixture
 
 ## Connections
-- [[dirs()]] - `references` [EXTRACTED]
+- [[bypass_auth()]] - `references` [EXTRACTED]
+- [[client()_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/email_send
