@@ -12,9 +12,9 @@ tags:
 # NetworkValidator
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_192]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_188]] - `method` [EXTRACTED]
 - [[dot-_parse_service_network_config()]] - `method` [EXTRACTED]
 - [[dot-_validate_container_runtime_config()]] - `method` [EXTRACTED]
 - [[dot-_validate_dns_configuration()]] - `method` [EXTRACTED]

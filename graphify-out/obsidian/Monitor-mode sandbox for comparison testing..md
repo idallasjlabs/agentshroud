@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L499"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # Monitor-mode sandbox for comparison testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-monitor_sandbox()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

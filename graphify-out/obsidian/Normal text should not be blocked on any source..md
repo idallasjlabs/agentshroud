@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_block_credentials.py"
 type: "rationale"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L125"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # Normal text should not be blocked on any source.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_normal_text_not_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

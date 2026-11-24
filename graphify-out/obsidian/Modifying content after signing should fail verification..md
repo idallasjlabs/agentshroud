@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "TestEnvelopeSigner"
+community: "EnvelopeSigner"
 location: "L26"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEnvelopeSigner
+  - community/EnvelopeSigner
 ---
 
 # Modifying content after signing should fail verification.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_tampered_content_fails()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEnvelopeSigner
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

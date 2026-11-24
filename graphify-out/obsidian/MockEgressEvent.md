@@ -12,7 +12,7 @@ tags:
 # MockEgressEvent
 
 ## Connections
-- [[dot-__init__()_110]] - `method` [EXTRACTED]
+- [[dot-__init__()_111]] - `method` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

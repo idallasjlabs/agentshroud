@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # MonkeyPatch
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[test_decision_records_soc_heatmap()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

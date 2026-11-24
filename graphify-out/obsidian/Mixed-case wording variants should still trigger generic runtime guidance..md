@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "asyncio"
 location: "L898"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/asyncio
 ---
 
 # Mixed-case wording variants should still trigger generic runtime guidance.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_memory_provider_error_case_variant_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

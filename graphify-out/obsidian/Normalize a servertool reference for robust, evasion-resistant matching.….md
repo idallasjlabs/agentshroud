@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "rationale"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L225"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # Normalize a server/tool reference for robust, evasion-resistant matching.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_norm()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine
