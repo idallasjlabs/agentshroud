@@ -415,6 +415,11 @@ async def test_consent_route_error_paths():
                         "vendor": "poke",
                         "vendor_display": "<b>Poke</b>",
                         "redirect_host": "p",
+                        "redirect_origin": (
+                            "https://x.test; script-src *"
+                            if body["params"]["request_id"] == "bad"
+                            else "https://claude.ai"
+                        ),
                     }
                 },
             )
@@ -435,8 +440,16 @@ async def test_consent_route_error_paths():
         assert (await c.get("/oauth/consent?req=gone")).status_code == 400
         page = await c.get("/oauth/consent?req=ok")
         assert "&lt;b&gt;Poke&lt;/b&gt;" in page.text and "<b>Poke</b>" not in page.text
+        # Link must be able to return to the vendor: browsers apply form-action to the redirect after
+        # the form is sent, so 'self' alone silently blocks the 302 to claude.ai (2026-11-24 dev link)
+        csp = page.headers["content-security-policy"]
+        assert "form-action 'self' https://claude.ai;" in csp and "default-src 'none'" in csp
+        # an origin that is not a plain scheme://host[:port] never reaches the policy
+        bad = (await c.get("/oauth/consent?req=bad")).headers["content-security-policy"]
+        assert "form-action 'self';" in bad and "script-src" not in bad and "x.test" not in bad
         wrong = await c.post("/oauth/consent", data={"req": "ok", "code": "zzzzzzzz"})
         assert wrong.status_code == 200 and "wrong or expired" in wrong.text
+        assert "form-action 'self' https://claude.ai;" in wrong.headers["content-security-policy"]
         old = await c.post("/oauth/consent", data={"req": "old", "code": "zzzzzzzz"})
         assert old.status_code == 400
         assert (await c.get("/healthz")).json() == {"status": "ok"}

@@ -175,10 +175,13 @@ class EdgeOAuthService:
         if pending is None:
             return None
         profile = self.profiles.get(pending["vendor"])
+        back = urlparse(pending["params"]["redirect_uri"])
         return {
             "vendor": pending["vendor"],
             "vendor_display": profile.display_name if profile else pending["vendor"],
-            "redirect_host": urlparse(pending["params"]["redirect_uri"]).hostname,
+            "redirect_host": back.hostname,
+            # where Link sends the browser; the consent page allows exactly this origin as form-action
+            "redirect_origin": f"{back.scheme}://{back.netloc.rpartition('@')[2]}",
             "scopes": pending["params"].get("scopes") or [],
         }
 

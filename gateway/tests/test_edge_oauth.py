@@ -218,6 +218,8 @@ class TestAuthorizeAndConsent:
         view = await svc.consent_view(req)
         assert view["vendor_display"] == "Claude Duet"
         assert view["redirect_host"] == "claude.ai"
+        # the consent page lets its form go back to exactly this origin (CSP form-action)
+        assert view["redirect_origin"] == "https://claude.ai"
 
     async def test_foreign_resource_rejected(self, svc):
         await svc.store.open_enrollment("claude-duet", ttl_s=600)
