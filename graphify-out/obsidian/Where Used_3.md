@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "aiosqlite"
-location: "L19"
+community: "FastAPI"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aiosqlite
+  - community/FastAPI
 ---
 
 # Where Used
 
 ## Connections
-- [[aiosqlite]] - `contains` [EXTRACTED]
+- [[FastAPI_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aiosqlite
+#graphify/document #graphify/EXTRACTED #community/FastAPI

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "fastapi.md"
-location: "L24"
+community: "AgentTarget"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/AgentTarget
 ---
 
 # Where Used
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fastapimd
+#graphify/document #graphify/EXTRACTED #community/AgentTarget

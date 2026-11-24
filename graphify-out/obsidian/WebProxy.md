@@ -12,13 +12,13 @@ tags:
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_163]] - `references` [EXTRACTED]
-- [[dot-__init__()_50]] - `method` [EXTRACTED]
+- [[dot-__init__()_151]] - `references` [EXTRACTED]
+- [[dot-__init__()_153]] - `method` [EXTRACTED]
 - [[dot-_audit()]] - `method` [EXTRACTED]
 - [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[dot-check_request()]] - `method` [EXTRACTED]
 - [[dot-get_stats()]] - `method` [EXTRACTED]
-- [[dot-scan_response()]] - `method` [EXTRACTED]
+- [[dot-scan_response()_1]] - `method` [EXTRACTED]
 - [[dot-setUp()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[URLAnalyzer]] - `uses` [INFERRED]

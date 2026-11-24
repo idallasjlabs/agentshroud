@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "TestOutboundPipelineIntegration"
 location: "L82"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # When pipeline is set, process_outbound must be called on outbound messages.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_outbound_pipeline_called_when_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

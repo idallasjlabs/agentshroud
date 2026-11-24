@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "lifespan.py"
+community: "ProgressiveTrustConfig"
 location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ProgressiveTrustConfig
 ---
 
 # ViolationType
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-record_violation()]] - `references` [EXTRACTED]
 - [[A2AProxy]] - `uses` [INFERRED]
-- [[Enum_32]] - `inherits` [EXTRACTED]
+- [[Enum_27]] - `inherits` [EXTRACTED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
 - [[TestTypedViolations]] - `uses` [INFERRED]
@@ -31,4 +31,4 @@ tags:
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig

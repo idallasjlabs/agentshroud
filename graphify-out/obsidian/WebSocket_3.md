@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/GatewayConfig
 ---
 
 # WebSocket
 
 ## Connections
-- [[dot-connect()_2]] - `references` [EXTRACTED]
-- [[dot-disconnect()_1]] - `references` [EXTRACTED]
+- [[dot-connect()]] - `references` [EXTRACTED]
+- [[dot-disconnect()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

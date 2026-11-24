@@ -12,8 +12,8 @@ tags:
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_163]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `references` [EXTRACTED]
+- [[dot-__init__()_151]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `references` [EXTRACTED]
 - [[dot-allowlist_config()]] - `calls` [EXTRACTED]
 - [[dot-get_domain_settings()]] - `method` [EXTRACTED]
 - [[dot-is_domain_allowed()]] - `method` [EXTRACTED]
@@ -36,12 +36,12 @@ tags:
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[config()_2]] - `uses` [INFERRED]
+- [[config()_4]] - `uses` [INFERRED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
