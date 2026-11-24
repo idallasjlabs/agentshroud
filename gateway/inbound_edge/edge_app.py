@@ -466,7 +466,7 @@ def create_app(
             allowed_hosts=hosts,
             allowed_origins=[settings.public_url],
         ),
-        host="0.0.0.0",  # nosec B104 - container-internal; only reachable via the gateway relay
+        host="0.0.0.0",  # nosec B104 - container-internal; reachable only via the gateway relay or the edge Funnel node
         auth=AuthSettings(
             issuer_url=settings.public_url,
             resource_server_url=settings.resource,

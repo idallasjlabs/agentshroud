@@ -39,9 +39,27 @@ deployment_runs_local_agents() { [ "$1" = local ] || [ "$1" = hybrid ]; }
 
 deployment_runs_edge() { [ "$1" = cloud ] || [ "$1" = hybrid ]; }
 
-# deployment_profile_flags MODE — global compose flags (before build/up).
+# deployment_edge_funnel_enabled [ENV_FILE] — true when this host opted in to the
+# edge's dedicated public Funnel node. Same precedence as the mode: environment,
+# then the last AGENTSHROUD_EDGE_FUNNEL= line of ENV_FILE (read as text, never
+# sourced). Anything but "1" is off.
+deployment_edge_funnel_enabled() {
+  local env_file="${1:-}" value="${AGENTSHROUD_EDGE_FUNNEL:-}"
+  if [ -z "$value" ] && [ -n "$env_file" ] && [ -f "$env_file" ]; then
+    value="$(sed -n 's/^AGENTSHROUD_EDGE_FUNNEL=//p' "$env_file" | tail -1 | tr -d "\"'\r")"
+  fi
+  [ "$value" = 1 ]
+}
+
+# deployment_profile_flags MODE [ENV_FILE] — global compose flags (before build/up).
+# The Funnel node is public exposure, so it needs an edge mode AND the host switch.
 deployment_profile_flags() {
-  if deployment_runs_edge "$1"; then echo "--profile edge"; else echo ""; fi
+  if ! deployment_runs_edge "$1"; then echo ""; return 0; fi
+  if deployment_edge_funnel_enabled "${2:-}"; then
+    echo "--profile edge --profile edge-funnel"
+  else
+    echo "--profile edge"
+  fi
 }
 
 # deployment_up_flags MODE — flags for `compose up`. OpenClaw has no compose

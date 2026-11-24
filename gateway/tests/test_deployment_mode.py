@@ -101,7 +101,39 @@ def test_gateway_is_told_the_mode_for_the_command_center():
     assert "AGENTSHROUD_DEPLOYMENT=${AGENTSHROUD_DEPLOYMENT:-local}" in env
 
 
-def _asb_setup(mode: str, want_hermes: str, profile_flag: str) -> dict:
+@pytest.mark.parametrize(
+    "mode,funnel,expected",
+    [
+        ("local", "1", ""),
+        ("hybrid", "", "--profile edge"),
+        ("hybrid", "0", "--profile edge"),
+        ("hybrid", "1", "--profile edge --profile edge-funnel"),
+        ("cloud", "1", "--profile edge --profile edge-funnel"),
+    ],
+)
+def test_edge_funnel_profile_is_opt_in_and_needs_an_edge_mode(mode, funnel, expected):
+    """The dedicated Funnel node is public exposure, so it never starts by mode
+    alone: the host must set AGENTSHROUD_EDGE_FUNNEL=1, and only edge modes run it."""
+    out = _bash(f"deployment_profile_flags {mode}", {"AGENTSHROUD_EDGE_FUNNEL": funnel})
+    assert out.returncode == 0 and out.stdout.strip() == expected
+
+
+def test_edge_funnel_switch_read_from_env_file_without_sourcing(tmp_path):
+    env_file = tmp_path / ".env"
+    env_file.write_text('TOUCHED=$(touch pwned)\nAGENTSHROUD_EDGE_FUNNEL="1"\n')
+    out = subprocess.run(
+        ["bash", "-c", f'. "{LIB}"; deployment_profile_flags hybrid "{env_file}"'],
+        capture_output=True,
+        text=True,
+        cwd=tmp_path,
+        env={"PATH": "/usr/bin:/bin"},
+        check=False,
+    )
+    assert out.stdout.strip() == "--profile edge --profile edge-funnel"
+    assert not (tmp_path / "pwned").exists()
+
+
+def _asb_setup(mode: str, want_hermes: str, profile_flag: str, funnel: str = "") -> dict:
     """Run scripts/asb's real _deployment_setup and report the variables it leaves."""
     text = (REPO / "scripts" / "asb").read_text()
     start = text.index("_deployment_setup() {")
@@ -117,7 +149,11 @@ def _asb_setup(mode: str, want_hermes: str, profile_flag: str) -> dict:
         ["bash", "-c", script],
         capture_output=True,
         text=True,
-        env={"PATH": "/usr/bin:/bin", "AGENTSHROUD_DEPLOYMENT": mode},
+        env={
+            "PATH": "/usr/bin:/bin",
+            "AGENTSHROUD_DEPLOYMENT": mode,
+            "AGENTSHROUD_EDGE_FUNNEL": funnel,
+        },
         check=True,
     )
     keys = ("hermes", "profile", "deploy_profile", "deploy_up", "inbound_edge")
@@ -155,6 +191,11 @@ def test_asb_hybrid_mode_adds_edge_to_full_stack():
         "deploy_up": "",
         "inbound_edge": "1",
     }
+
+
+def test_asb_hybrid_mode_with_funnel_switch_adds_the_funnel_node():
+    got = _asb_setup("hybrid", "1", "--profile voice", funnel="1")
+    assert got["deploy_profile"] == "--profile edge --profile edge-funnel"
 
 
 def test_asb_build_and_up_carry_the_deployment_flags():
