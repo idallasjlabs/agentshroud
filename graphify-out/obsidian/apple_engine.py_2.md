@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "AppleContainerEngine"
+community: "ContainerEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ContainerEngine
 ---
 
 # apple_engine.py
@@ -18,4 +18,4 @@ tags:
 - [[engine.py_2]] - `imports_from` [EXTRACTED]
 - [[runtime__init__.py]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

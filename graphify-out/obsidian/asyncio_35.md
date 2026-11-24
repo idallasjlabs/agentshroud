@@ -1,20 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "SSHProxy"
+community: "RateLimitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/RateLimitGuard
 ---
 
 # asyncio
 
 ## Connections
-- [[dot-test_execute_nonzero_exit()]] - `references` [EXTRACTED]
-- [[dot-test_execute_success()]] - `references` [EXTRACTED]
-- [[dot-test_execute_timeout()]] - `references` [EXTRACTED]
-- [[dot-test_execute_unknown_host()]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
+- [[test_pipeline_blocks_and_downstream_not_reached()]] - `references` [EXTRACTED]
+- [[test_pipeline_disabled_guard_passthrough()]] - `references` [EXTRACTED]
+- [[test_pipeline_no_guard_is_unchanged()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

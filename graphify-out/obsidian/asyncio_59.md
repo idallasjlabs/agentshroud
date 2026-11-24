@@ -1,29 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentTarget"
+community: "test_file_sandbox_message_gate.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_forward_to_agent_http_error()]] - `references` [EXTRACTED]
-- [[test_forward_to_agent_offline()]] - `references` [EXTRACTED]
-- [[test_forward_to_agent_timeout()]] - `references` [EXTRACTED]
-- [[test_forward_to_agent_unexpected_error()]] - `references` [EXTRACTED]
-- [[test_forward_uses_chat_path()]] - `references` [EXTRACTED]
-- [[test_health_check_healthy_agent()]] - `references` [EXTRACTED]
-- [[test_health_check_offline_agent()]] - `references` [EXTRACTED]
-- [[test_health_check_single_target()]] - `references` [EXTRACTED]
-- [[test_health_check_uses_health_path()]] - `references` [EXTRACTED]
-- [[test_hermes_and_openclaw_coexist()]] - `references` [EXTRACTED]
-- [[test_resolve_target_default()]] - `references` [EXTRACTED]
-- [[test_resolve_target_explicit()]] - `references` [EXTRACTED]
-- [[test_resolve_target_invalid_explicit()]] - `references` [EXTRACTED]
-- [[test_resolves_hermes_target()]] - `references` [EXTRACTED]
+- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_owner_plain_message_with_path_not_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - `references` [EXTRACTED]
+- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

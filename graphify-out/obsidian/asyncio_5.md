@@ -1,34 +1,28 @@
 ---
 source_file: ""
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestMiddlewareSessionEnforcement"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # asyncio
 
 ## Connections
-- [[dot-test_add_egress_rule_endpoint()]] - `references` [EXTRACTED]
-- [[dot-test_allowlist_persistence()]] - `references` [EXTRACTED]
-- [[dot-test_approval_flow_once()]] - `references` [EXTRACTED]
-- [[dot-test_approval_flow_permanent()]] - `references` [EXTRACTED]
-- [[dot-test_approval_flow_session()]] - `references` [EXTRACTED]
-- [[dot-test_approve_endpoint_logic()]] - `references` [EXTRACTED]
-- [[dot-test_cleanup_expired_requests()]] - `references` [EXTRACTED]
-- [[dot-test_denial_flow()]] - `references` [EXTRACTED]
-- [[dot-test_deny_endpoint_logic()]] - `references` [EXTRACTED]
-- [[dot-test_denylist_persistence()]] - `references` [EXTRACTED]
-- [[dot-test_emergency_block_all_denies_requests()]] - `references` [EXTRACTED]
-- [[dot-test_existing_rule_bypass()]] - `references` [EXTRACTED]
-- [[dot-test_get_egress_rules_endpoint()]] - `references` [EXTRACTED]
-- [[dot-test_pending_requests_endpoint()]] - `references` [EXTRACTED]
-- [[dot-test_remove_egress_rule_endpoint()]] - `references` [EXTRACTED]
-- [[dot-test_rule_management()]] - `references` [EXTRACTED]
-- [[dot-test_session_rules_not_persisted()]] - `references` [EXTRACTED]
-- [[dot-test_timeout_behavior()]] - `references` [EXTRACTED]
-- [[test_egress_approval.py]] - `imports` [EXTRACTED]
+- [[dot-test_complete_user_isolation()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_cross_session_blocking()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_file_path_isolation()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_normalizes_invisible_unicode()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_own_workspace_allowed()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_owner_bypass()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_session_context_injection()]] - `references` [EXTRACTED]
+- [[dot-test_middleware_user_identification()]] - `references` [EXTRACTED]
+- [[dot-test_multi_turn_block_reason_hides_score()]] - `references` [EXTRACTED]
+- [[dot-test_owner_admin_access()]] - `references` [EXTRACTED]
+- [[dot-test_webhook_conversation_logging()]] - `references` [EXTRACTED]
+- [[dot-test_webhook_session_context_injection()]] - `references` [EXTRACTED]
+- [[dot-test_webhook_user_id_extraction()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

@@ -12,7 +12,7 @@ tags:
 # auth_dep()
 
 ## Connections
-- [[dot-teardown_method()_2]] - `indirect_call` [INFERRED]
+- [[dot-teardown_method()]] - `indirect_call` [INFERRED]
 - [[dot-test_discard_blocked_message_not_found_returns_error()]] - `indirect_call` [INFERRED]
 - [[dot-test_email_send_routes_through_injectable_service()]] - `indirect_call` [INFERRED]
 - [[dot-test_quarantine_summary_counts_inbound_and_outbound()]] - `indirect_call` [INFERRED]

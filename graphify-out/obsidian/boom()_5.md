@@ -2,17 +2,16 @@
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
 community: "test_skill_guard.py"
-location: "L408"
+location: "L505"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/test_skill_guardpy
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_main_unreadable_file_fails_closed()]] - `indirect_call` [INFERRED]
-- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `indirect_call` [INFERRED]
+- [[dot-test_main_unreadable_file_fails_closed()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Alert counts by severity.]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
-- [[get_9]] - `references` [EXTRACTED]
+- [[get_8]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

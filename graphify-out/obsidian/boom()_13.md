@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
 community: "TestCollaboratorPersistence"
-location: "L726"
+location: "L666"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # boom()
 
 ## Connections
-- [[dot-test_unpause_returns_false_on_inner_write_error()]] - `contains` [EXTRACTED]
+- [[dot-test_unpause_returns_false_on_io_error()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence

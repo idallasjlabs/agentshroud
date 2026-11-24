@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_proxy_gemini_translation_failure_falls_through_gracefully"
+community: "TestRBACIntegration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_proxy_gemini_translation_failure_falls_through_gracefully
+  - community/TestRBACIntegration
 ---
 
 # asyncio
 
 ## Connections
-- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `references` [EXTRACTED]
-- [[test_proxy_rewrites_gemini_via_openai_path()]] - `references` [EXTRACTED]
+- [[dot-test_rbac_allows_authorized_access()]] - `references` [EXTRACTED]
+- [[dot-test_rbac_blocks_unauthorized_access()]] - `references` [EXTRACTED]
+- [[dot-test_rbac_handles_missing_user_id()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_proxy_gemini_translation_failure_falls_through_gracefully
+#graphify/code #graphify/EXTRACTED #community/TestRBACIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "rationale"
-community: "test_edge_service_routes.py"
-location: "L129"
+community: "GatewayBackedProvider"
+location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/GatewayBackedProvider
 ---
 
 # ``OAuthAuthorizationServerProvider`` whose every decision is made by the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GatewayBackedProvider]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/rationale #graphify/EXTRACTED #community/GatewayBackedProvider

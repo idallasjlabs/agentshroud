@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AuditEvent]] - `contains` [EXTRACTED]
 - [[AuditStore]] - `contains` [EXTRACTED]
-- [[aiosqlite_1]] - `imports` [EXTRACTED]
+- [[aiosqlite]] - `imports` [EXTRACTED]
 - [[audit_export.py]] - `imports_from` [EXTRACTED]
 - [[test_audit_export.py]] - `imports_from` [EXTRACTED]
 - [[test_edge_e2e_sdk.py]] - `imports_from` [EXTRACTED]

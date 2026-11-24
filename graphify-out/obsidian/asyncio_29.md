@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "mcp_proxy.py"
+community: "ProxyResult"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_proxypy
+  - community/ProxyResult
 ---
 
 # asyncio
@@ -22,4 +22,4 @@ tags:
 - [[dot-test_result_with_null_content()]] - `references` [EXTRACTED]
 - [[dot-test_result_with_pii_is_audited_not_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

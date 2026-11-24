@@ -1,21 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalStore"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/AgentTarget
 ---
 
 # asyncio
 
 ## Connections
-- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
-- [[test_decide_persists()]] - `references` [EXTRACTED]
-- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
-- [[test_initialize_is_idempotent()_1]] - `references` [EXTRACTED]
-- [[test_persist_and_reload()]] - `references` [EXTRACTED]
-- [[test_store_survives_restart()]] - `references` [EXTRACTED]
+- [[test_generic_target_returns_json_as_is()]] - `references` [EXTRACTED]
+- [[test_generic_target_sends_content_body()]] - `references` [EXTRACTED]
+- [[test_openai_empty_choices_raises_forward_error()]] - `references` [EXTRACTED]
+- [[test_openai_malformed_response_raises_forward_error()]] - `references` [EXTRACTED]
+- [[test_openai_payload_includes_model()]] - `references` [EXTRACTED]
+- [[test_openai_target_returns_content_string()]] - `references` [EXTRACTED]
+- [[test_openai_target_sends_messages_body()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "_make_proxy"
+community: "AsyncMock"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/AsyncMock
 ---
 
 # asyncio
@@ -42,4 +42,4 @@ tags:
 - [[dot-test_tracker_exception_does_not_break_response()]] - `references` [EXTRACTED]
 - [[dot-test_unknown_content_type_ignored()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

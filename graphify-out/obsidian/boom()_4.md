@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "AsyncMock"
-location: "L655"
+community: "test_skill_guard.py"
+location: "L408"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AsyncMock
+  - community/test_skill_guardpy
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_keepalive_breaks_on_construction_error()]] - `indirect_call` [INFERRED]
+- [[dot-test_main_unreadable_file_fails_closed()]] - `indirect_call` [INFERRED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AsyncMock
+#graphify/code #graphify/INFERRED #community/test_skill_guardpy
