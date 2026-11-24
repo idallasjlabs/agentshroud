@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "TestEgressApprovalAPI"
 location: "L536"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/TestEgressApprovalAPI
 ---
 
 # .test_deny_endpoint_logic()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test POST manageegressdeny{request_id} endpoint logic.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `method` [EXTRACTED]
-- [[asyncio_5]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalAPI

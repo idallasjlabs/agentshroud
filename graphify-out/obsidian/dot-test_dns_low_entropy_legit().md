@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestExfiltrationDetection"
+community: "MetadataGuard"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/MetadataGuard
 ---
 
 # .test_dns_low_entropy_legit()
@@ -16,4 +16,4 @@ tags:
 - [[Legit domains have lower entropy.]] - `rationale_for` [EXTRACTED]
 - [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

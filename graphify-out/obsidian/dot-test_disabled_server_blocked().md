@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "test_mcp_proxy.py"
 location: "L1169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/test_mcp_proxypy
 ---
 
 # .test_disabled_server_blocked()
@@ -17,6 +17,6 @@ tags:
 - [[MCPServerConfig]] - `calls` [EXTRACTED]
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestAllowDenyList]] - `method` [EXTRACTED]
-- [[asyncio_4]] - `references` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

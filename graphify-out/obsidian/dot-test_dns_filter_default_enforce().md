@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "TestModuleConfigDefaults"
+community: "SubagentMonitor"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestModuleConfigDefaults
+  - community/SubagentMonitor
 ---
 
 # .test_dns_filter_default_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[DNSFilterConfig]] - `calls` [EXTRACTED]
 - [[TestModuleConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestModuleConfigDefaults
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

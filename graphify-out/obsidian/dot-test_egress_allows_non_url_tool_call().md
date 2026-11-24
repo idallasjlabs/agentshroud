@@ -19,7 +19,7 @@ tags:
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]
 - [[__init__()]] - `contains` [EXTRACTED]
-- [[asyncio_4]] - `references` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 - [[check_async()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # .test_custom_points()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfig_1]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_security.py"
 type: "code"
-community: "SessionManager"
+community: "TestSessionCreation"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/TestSessionCreation
 ---
 
 # .test_create_session()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSessionCreation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/TestSessionCreation

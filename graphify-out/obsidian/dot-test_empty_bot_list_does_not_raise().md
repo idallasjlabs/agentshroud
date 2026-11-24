@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # .test_empty_bot_list_does_not_raise()
@@ -16,4 +16,4 @@ tags:
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

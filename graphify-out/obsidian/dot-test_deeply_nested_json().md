@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # .test_deeply_nested_json()
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard]] - `calls` [INFERRED]
 - [[TestHTTPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

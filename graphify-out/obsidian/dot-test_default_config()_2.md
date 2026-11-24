@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "RedactionResult"
-location: "L29"
+community: "TrustManager"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/TrustManager
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[Test default configuration]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
+- [[TestTrustLevels_1]] - `method` [EXTRACTED]
+- [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/TrustManager

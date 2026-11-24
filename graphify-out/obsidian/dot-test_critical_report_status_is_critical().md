@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_image_summaries"
+community: "Any"
 location: "L1100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_image_summaries
+  - community/Any
 ---
 
 # .test_critical_report_status_is_critical()
@@ -17,4 +17,4 @@ tags:
 - [[_write_image_report()]] - `calls` [EXTRACTED]
 - [[get_trivy_image_summaries()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_image_summaries
+#graphify/code #graphify/EXTRACTED #community/Any

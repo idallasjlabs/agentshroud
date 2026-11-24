@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "TestAccessControl"
+community: "DelegationPrivilege"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAccessControl
+  - community/DelegationPrivilege
 ---
 
 # .test_duration_zero_rejected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAccessControl]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAccessControl
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

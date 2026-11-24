@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "ServerConfig"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ServerConfig
 ---
 
 # .test_decision_denied()
@@ -15,4 +15,4 @@ tags:
 - [[ConsentDecision]] - `calls` [INFERRED]
 - [[TestConsentDecision]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

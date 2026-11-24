@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "test_key_vault.py"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/test_key_vaultpy
 ---
 
 # .test_delete_key()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyStorage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/test_key_vaultpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "TestModuleConfigDefaults"
+community: "SubagentMonitor"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestModuleConfigDefaults
+  - community/SubagentMonitor
 ---
 
 # .test_egress_monitor_default_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[EgressMonitorConfig]] - `calls` [EXTRACTED]
 - [[TestModuleConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestModuleConfigDefaults
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

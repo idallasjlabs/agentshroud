@@ -17,7 +17,7 @@ tags:
 - [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_send()_6]] - `contains` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 

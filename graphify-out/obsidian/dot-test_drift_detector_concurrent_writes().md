@@ -15,6 +15,6 @@ tags:
 - [[Concurrent baseline updates — SQLite is single-threaded by default. This…]] - `rationale_for` [EXTRACTED]
 - [[ContainerSnapshot]] - `calls` [INFERRED]
 - [[DriftDetector]] - `calls` [INFERRED]
-- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[TestConcurrency]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

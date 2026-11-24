@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_monitor.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "EgressEvent"
-location: "L36"
+community: "test_observatory_mode.py"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/test_observatory_modepy
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressMonitorConfig]] - `method` [EXTRACTED]
+- [[TestGetMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

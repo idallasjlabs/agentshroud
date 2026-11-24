@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestEgressFilterConfig"
-location: "L30"
+community: "middleware.py"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilterConfig
+  - community/middlewarepy
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
-- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
+- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._2]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

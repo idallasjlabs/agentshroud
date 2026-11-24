@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_progressive_trust_integration.py"
+source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "lifespan.py"
-location: "L345"
+community: "GitGuard"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/GitGuard
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestEnforcementMode]] - `method` [EXTRACTED]
+- [[GitGuard]] - `calls` [EXTRACTED]
+- [[TestGitGuardDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/GitGuard
