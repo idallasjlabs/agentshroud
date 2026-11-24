@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[compose_generator.py_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/compose_generatorpy

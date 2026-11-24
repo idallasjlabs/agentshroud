@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/README.md"
+source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "8D Root Cause Analysis"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/8D_Root_Cause_Analysis
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

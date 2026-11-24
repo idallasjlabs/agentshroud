@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "GatewayEmailService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/GatewayEmailService
 ---
 
 # Protocol
 
 ## Connections
-- [[Facade]] - `inherits` [EXTRACTED]
+- [[SmtpLike]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

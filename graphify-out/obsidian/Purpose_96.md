@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/README.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: "AWS Cloud Management & FinOps"
+community: "Daedalus — Concept Illustrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

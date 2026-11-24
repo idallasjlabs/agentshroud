@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-tdd/README.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "Test-Driven Development README"
-location: "L6"
+community: "AgentTarget"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Test-Driven_Development_README
+  - community/AgentTarget
 ---
 
 # Purpose
 
 ## Connections
-- [[Test-Driven Development (TDD)_1]] - `contains` [EXTRACTED]
-- [[Test-Driven Development README]] - `contains` [EXTRACTED]
+- [[httpx_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
+#graphify/document #graphify/EXTRACTED #community/AgentTarget

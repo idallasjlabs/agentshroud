@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/icloud/README.md"
+source_file: ".agents/skills/mnemosyne/README.md"
 type: "document"
-community: "iCloud Data Manager (ICLOUD)"
+community: "Mnemosyne — Retention Engineer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/iCloud_Data_Manager_ICLOUD
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[iCloud Data Manager (ICLOUD)_2]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/iCloud_Data_Manager_ICLOUD
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

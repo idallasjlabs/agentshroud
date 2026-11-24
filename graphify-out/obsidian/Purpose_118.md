@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
+community: "Atlas — Curriculum Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

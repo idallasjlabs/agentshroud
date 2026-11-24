@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sav/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-offense/README.md"
 type: "document"
-community: "System Audit Vault"
+community: "Red Team Adversarial Tester (SEC-OFFENSE)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault_1]] - `contains` [EXTRACTED]
+- [[Red Team Adversarial Tester (SEC-OFFENSE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE

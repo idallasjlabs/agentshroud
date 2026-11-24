@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "middleware.py"
+community: "soc/router.py"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/soc/routerpy
 ---
 
 # RBACConfig
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_6]] - `calls` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_59]] - `calls` [EXTRACTED]
+- [[dot-__init__()_180]] - `calls` [EXTRACTED]
+- [[dot-__init__()_49]] - `calls` [EXTRACTED]
 - [[dot-__init__()_184]] - `calls` [EXTRACTED]
-- [[dot-__init__()_190]] - `calls` [EXTRACTED]
-- [[dot-__init__()_185]] - `calls` [EXTRACTED]
-- [[dot-__init__()]] - `references` [EXTRACTED]
+- [[dot-__init__()_1]] - `references` [EXTRACTED]
 - [[dot-__post_init__()_6]] - `calls` [EXTRACTED]
 - [[dot-__post_init__()]] - `method` [EXTRACTED]
 - [[dot-_ensure_rbac()]] - `calls` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[dot-is_collaborator_or_higher()]] - `method` [EXTRACTED]
 - [[dot-is_owner()_3]] - `method` [EXTRACTED]
 - [[dot-process_request()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `method` [EXTRACTED]
+- [[dot-set_user_role()]] - `method` [EXTRACTED]
 - [[dot-test_bearer_header_valid()]] - `calls` [EXTRACTED]
 - [[dot-wire_teams_config()]] - `method` [EXTRACTED]
 - [[Configuration for Role-Based Access Control.]] - `rationale_for` [EXTRACTED]
@@ -68,13 +68,13 @@ tags:
 - [[pipeline.py_1]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `imports` [EXTRACTED]
 - [[rbac()_4]] - `uses` [INFERRED]
-- [[rbac()_1]] - `uses` [INFERRED]
 - [[rbac()_2]] - `uses` [INFERRED]
+- [[rbac()_1]] - `uses` [INFERRED]
 - [[rbac()_5]] - `uses` [INFERRED]
 - [[rbac()_3]] - `uses` [INFERRED]
 - [[rbac.py]] - `imports` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `uses` [INFERRED]
+- [[run()]] - `uses` [INFERRED]
 - [[set_user_role()]] - `uses` [INFERRED]
 - [[shared_memory.py]] - `imports` [EXTRACTED]
 - [[socauth.py]] - `imports` [EXTRACTED]
@@ -98,4 +98,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

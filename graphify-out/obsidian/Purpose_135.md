@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-aws/README.md"
+source_file: "docker/config/openclaw/skills/i-bs/README.md"
 type: "document"
-community: "AWS Cloud Management & FinOps"
+community: "Branding Specialist (BS)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/Branding_Specialist_BS
 ---
 
 # Purpose
 
 ## Connections
-- [[AWS Cloud Management & FinOps_1]] - `contains` [EXTRACTED]
+- [[Branding Specialist (BS)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS

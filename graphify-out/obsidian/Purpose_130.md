@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-sad/README.md"
+source_file: "docker/config/openclaw/skills/i-apollo/README.md"
 type: "document"
-community: "System Audit Documentation"
+community: "Apollo — Audio Systems Producer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Documentation
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

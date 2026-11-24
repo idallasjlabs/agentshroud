@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: ".agents/skills/athena/README.md"
 type: "document"
-community: "httpx"
-location: "L15"
+community: "Athena — Knowledge Distiller"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/httpx
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Purpose
 
 ## Connections
-- [[httpx]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/httpx
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

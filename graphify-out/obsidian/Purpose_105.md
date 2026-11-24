@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pr/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "Pull Request Generator (PR)"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Generator_PR
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

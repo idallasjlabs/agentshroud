@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: ".agents/skills/i-production/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (MC)"
+community: "Incident Response (INCIDENT)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_MC
+  - community/Incident_Response_INCIDENT
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

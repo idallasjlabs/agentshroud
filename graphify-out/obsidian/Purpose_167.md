@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mcpm/README.md"
+source_file: "docker/config/openclaw/skills/i-mc/README.md"
 type: "document"
 community: "openclaw/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[MCP Tools Usage (MCPM)_2]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

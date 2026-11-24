@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/openclaw/skills/i-mc/README.md"
+source_file: "docker/config/openclaw/skills/i-mac/README.md"
 type: "document"
 community: "openclaw/skills/i-cr/SKILL.md"
 location: "L6"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_2]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/openclaw/skills/i-cr/SKILLmd

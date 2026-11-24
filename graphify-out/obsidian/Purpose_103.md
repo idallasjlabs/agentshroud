@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/README.md"
+source_file: ".agents/skills/i-pr/README.md"
 type: "document"
-community: "Code Review (CR)"
+community: "Pull Request Generator (PR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Code_Review_CR
+  - community/Pull_Request_Generator_PR
 ---
 
 # Purpose
 
 ## Connections
-- [[Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Pull Request Generator (PR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Code_Review_CR
+#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

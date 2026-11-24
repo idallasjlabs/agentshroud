@@ -12,6 +12,6 @@ tags:
 # Public entry — records the decision for the SOC heat-map (SCRUM-80), then…
 
 ## Connections
-- [[dot-can_use_tool()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-can_use_tool()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

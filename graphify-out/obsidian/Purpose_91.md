@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "aiosqlite"
-location: "L15"
+community: "Apollo — Audio Systems Producer"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/aiosqlite
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/aiosqlite
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/openscap.md"
+source_file: "docs/vault/02 - Modules/Security Modules/browser_security.py.md"
 type: "document"
-community: "OpenSCAP"
-location: "L16"
+community: "browser_security.py"
+location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/OpenSCAP
+  - community/browser_securitypy
 ---
 
 # Purpose
 
 ## Connections
-- [[OpenSCAP_1]] - `contains` [EXTRACTED]
+- [[browser_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/OpenSCAP
+#graphify/document #graphify/EXTRACTED #community/browser_securitypy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-bs/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "Branding Specialist (BS)"
+community: "Code Review (CR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Branding_Specialist_BS
+  - community/Code_Review_CR
 ---
 
 # Purpose
 
 ## Connections
-- [[Branding Specialist (BS)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Branding_Specialist_BS
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

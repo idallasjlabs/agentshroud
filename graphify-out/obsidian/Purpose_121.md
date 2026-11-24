@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mc/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (MC)"
+community: "MCP AWS Profile Configuration (MCPM-AWS-PROFILE)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_MC
+  - community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE
 ---
 
 # Purpose
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)_1]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC
+#graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE

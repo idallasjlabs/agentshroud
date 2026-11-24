@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pm/README.md"
+source_file: "docker/config/openclaw/skills/i-production/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "Incident Response (INCIDENT)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/Incident_Response_INCIDENT
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)_1]] - `contains` [EXTRACTED]
+- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "AppleContainerEngine"
+community: "ContainerEngine"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ContainerEngine
 ---
 
 # Pull an image from a registry.
 
 ## Connections
-- [[dot-pull()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-pull()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-offense/README.md"
+source_file: ".agents/skills/vulcan/README.md"
 type: "document"
-community: "Red Team Adversarial Tester (SEC-OFFENSE)"
+community: "Vulcan — Subject Matter Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Red_Team_Adversarial_Tester_SEC-OFFENSE
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Purpose
 
 ## Connections
-- [[Red Team Adversarial Tester (SEC-OFFENSE)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Red_Team_Adversarial_Tester_SEC-OFFENSE
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

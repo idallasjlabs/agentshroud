@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/i-mc/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (CICD)"
+community: "GSDE&G Development Master Checklist (MC)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_CICD
+  - community/GSDEG_Development_Master_Checklist_MC
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

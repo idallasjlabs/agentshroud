@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "Technical Illustrator (TI)"
+community: "Vulcan — Subject Matter Auditor"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_TI
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

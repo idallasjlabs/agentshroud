@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mac-app-discovery/README.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "macOS System Administrator (MAC)"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

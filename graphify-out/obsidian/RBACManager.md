@@ -12,8 +12,8 @@ tags:
 # RBACManager
 
 ## Connections
-- [[dot-__init__()_1]] - `references` [EXTRACTED]
-- [[dot-__init__()]] - `method` [EXTRACTED]
+- [[dot-__init__()_2]] - `references` [EXTRACTED]
+- [[dot-__init__()_1]] - `method` [EXTRACTED]
 - [[dot-_build_permission_matrix()]] - `method` [EXTRACTED]
 - [[dot-_build_tool_permissions()]] - `method` [EXTRACTED]
 - [[dot-audit_privilege_change()]] - `method` [EXTRACTED]
@@ -26,7 +26,7 @@ tags:
 - [[dot-get_user_role()]] - `method` [EXTRACTED]
 - [[dot-is_privilege_escalation()]] - `method` [EXTRACTED]
 - [[dot-list_users_and_roles()]] - `method` [EXTRACTED]
-- [[dot-set_user_role()]] - `method` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `method` [EXTRACTED]
 - [[dot-setup_method()_1]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_action_resource_combinations()]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_user_id()]] - `calls` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[rbac.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[set_user_role()]] - `uses` [INFERRED]
 - [[socauth.py]] - `imports` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]

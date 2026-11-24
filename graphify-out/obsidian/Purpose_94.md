@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/athena/README.md"
+source_file: ".agents/skills/aws/README.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
+community: "AWS Cloud Management & FinOps"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/AWS_Cloud_Management__FinOps
 ---
 
 # Purpose
 
 ## Connections
-- [[Athena — Knowledge Distiller_6]] - `contains` [EXTRACTED]
+- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps

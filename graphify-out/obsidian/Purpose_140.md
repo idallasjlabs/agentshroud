@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-mnemosyne/README.md"
 type: "document"
-community: "Git Workflow Guardian (GIT-GUARD)"
+community: "Mnemosyne — Retention Engineer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
