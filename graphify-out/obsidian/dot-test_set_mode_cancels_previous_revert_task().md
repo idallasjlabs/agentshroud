@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # .test_set_mode_cancels_previous_revert_task()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestMode]] - `method` [EXTRACTED]
-- [[fake_sleep()_1]] - `indirect_call` [INFERRED]
+- [[fake_sleep()_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

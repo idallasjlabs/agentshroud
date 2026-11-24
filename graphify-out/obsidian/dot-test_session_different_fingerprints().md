@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Different fingerprints should create different sessions.]] - `rationale_for` [EXTRACTED]
 - [[Session]] - `calls` [EXTRACTED]
-- [[TestAuth_1]] - `method` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuth

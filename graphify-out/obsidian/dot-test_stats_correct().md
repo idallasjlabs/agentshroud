@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Stats reflect actual data.]] - `rationale_for` [EXTRACTED]
 - [[TestChainExportAndVerification]] - `method` [EXTRACTED]
-- [[asyncio_39]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

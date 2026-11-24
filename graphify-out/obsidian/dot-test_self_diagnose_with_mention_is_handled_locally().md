@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_self_diagnose_with_mention_is_handled_locally"
+community: "asyncio"
 location: "L5102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_self_diagnose_with_mention_is_handled_locally
+  - community/asyncio
 ---
 
 # .test_self_diagnose_with_mention_is_handled_locally()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_urlopen()_40]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_urlopen()_21]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_self_diagnose_with_mention_is_handled_locally
+#graphify/code #graphify/EXTRACTED #community/asyncio

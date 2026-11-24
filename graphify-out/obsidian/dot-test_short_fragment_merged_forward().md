@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "._s"
 location: "L489"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_s
 ---
 
 # .test_short_fragment_merged_forward()
@@ -16,4 +16,4 @@ tags:
 - [[A fragment under 12 chars is merged into the following chunk.]] - `rationale_for` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_s

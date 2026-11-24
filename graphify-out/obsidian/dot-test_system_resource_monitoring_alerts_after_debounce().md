@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "TestResourceGuard"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/TestResourceGuard
 ---
 
 # .test_system_resource_monitoring_alerts_after_debounce()
@@ -16,4 +16,4 @@ tags:
 - [[TestResourceGuard]] - `method` [EXTRACTED]
 - [[patch_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/TestResourceGuard

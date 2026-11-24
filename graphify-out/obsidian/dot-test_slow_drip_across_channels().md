@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "EgressEvent"
+community: "web_proxy.py"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/web_proxypy
 ---
 
 # .test_slow_drip_across_channels()
@@ -16,4 +16,4 @@ tags:
 - [[Small amounts across multiple channels should be detected.]] - `rationale_for` [EXTRACTED]
 - [[TestSlowDripDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

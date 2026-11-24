@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[DNSBlocklist]] - `calls` [EXTRACTED]
 - [[TestLifecycle]] - `method` [EXTRACTED]
-- [[asyncio_76]] - `references` [EXTRACTED]
+- [[asyncio_75]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DNSBlocklist

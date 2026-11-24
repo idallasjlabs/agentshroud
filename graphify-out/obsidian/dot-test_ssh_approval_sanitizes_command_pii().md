@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # .test_ssh_approval_sanitizes_command_pii()
@@ -17,6 +17,6 @@ tags:
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
 - [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestApprovalQueuePIISanitization]] - `method` [EXTRACTED]
-- [[asyncio_47]] - `references` [EXTRACTED]
+- [[asyncio_40]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

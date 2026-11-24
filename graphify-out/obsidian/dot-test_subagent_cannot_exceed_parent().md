@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TestTrustInheritance"
+community: "SubagentMonitor"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustInheritance
+  - community/SubagentMonitor
 ---
 
 # .test_subagent_cannot_exceed_parent()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestTrustInheritance]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustInheritance
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

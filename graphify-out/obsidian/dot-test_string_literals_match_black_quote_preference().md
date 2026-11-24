@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[CI runs black on gateway; an appended registry block must already be clean.]] - `rationale_for` [EXTRACTED]
-- [[TestSerialization]] - `method` [EXTRACTED]
+- [[TestSerialization_1]] - `method` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
-- [[parametrize_4]] - `references` [EXTRACTED]
+- [[parametrize_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sync
