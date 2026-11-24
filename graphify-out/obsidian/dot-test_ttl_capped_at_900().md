@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestEdgeEnroll"
+community: "TestAgentsRegistry"
 location: "L643"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEdgeEnroll
+  - community/TestAgentsRegistry
 ---
 
 # .test_ttl_capped_at_900()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeEnroll]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEdgeEnroll
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

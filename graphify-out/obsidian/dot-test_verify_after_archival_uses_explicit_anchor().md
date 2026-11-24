@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[After the head is archived, the archived predecessor's entry_hash is the anchor.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStoreAnchoredVerify]] - `method` [EXTRACTED]
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

@@ -15,6 +15,6 @@ tags:
 - [[TestOwnerMirrorCoalescing]] - `method` [EXTRACTED]
 - [[_fake_admin_notice()_1]] - `indirect_call` [INFERRED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOwnerMirrorCoalescing

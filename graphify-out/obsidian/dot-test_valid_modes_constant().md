@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L255"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # .test_valid_modes_constant()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestModeRequestModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

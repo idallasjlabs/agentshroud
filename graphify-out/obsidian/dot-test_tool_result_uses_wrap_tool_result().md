@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # .test_tool_result_uses_wrap_tool_result()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `calls` [EXTRACTED]
-- [[asyncio_37]] - `references` [EXTRACTED]
+- [[asyncio_34]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "TestOutboundInfoFilter"
+community: ".test_telegram_user_id_filtering"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/test_telegram_user_id_filtering
 ---
 
 # .test_telegram_user_id_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test that Telegram user IDs are filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/test_telegram_user_id_filtering

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # .test_trust_escalation_attack()
@@ -17,4 +17,4 @@ tags:
 - [[TrustManager]] - `calls` [EXTRACTED]
 - [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

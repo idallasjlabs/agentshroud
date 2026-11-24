@@ -18,7 +18,7 @@ tags:
 - [[Unknown non-owner user should trigger pending approval workflow and not forward.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_owner_notice()_17]] - `contains` [EXTRACTED]
 - [[fake_owner_notice()_4]] - `indirect_call` [INFERRED]
 - [[fake_pending_notice()_1]] - `indirect_call` [INFERRED]

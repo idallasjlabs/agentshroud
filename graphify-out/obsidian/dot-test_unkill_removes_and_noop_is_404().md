@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestEdgeKill"
+community: "TestAgentsRegistry"
 location: "L549"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEdgeKill
+  - community/TestAgentsRegistry
 ---
 
 # .test_unkill_removes_and_noop_is_404()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeKill]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEdgeKill
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

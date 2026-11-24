@@ -15,8 +15,8 @@ tags:
 - [[FakeApprovalQueue]] - `calls` [INFERRED]
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[get_pending_requests()_2]] - `contains` [EXTRACTED]
+- [[asyncio_63]] - `references` [EXTRACTED]
+- [[get_pending_requests()_3]] - `contains` [EXTRACTED]
 - [[request_approval()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

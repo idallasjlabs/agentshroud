@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "IntelReportStore"
+community: "TestIntelReportHashIntegrity"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/TestIntelReportHashIntegrity
 ---
 
 # .test_verify_integrity_fails_after_tampering()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestIntelReportHashIntegrity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/TestIntelReportHashIntegrity

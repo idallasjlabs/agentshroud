@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_store_path()]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPersistence]] - `method` [EXTRACTED]
-- [[boom()_14]] - `contains` [EXTRACTED]
-- [[boom()_12]] - `indirect_call` [INFERRED]
+- [[boom()_13]] - `contains` [EXTRACTED]
+- [[boom()_11]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence
