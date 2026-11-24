@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestCollaboratorPromptClassifiers"
 location: "L2143"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Detect collaborator prompts attempting security/config guardrail changes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_guardrail_modification_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

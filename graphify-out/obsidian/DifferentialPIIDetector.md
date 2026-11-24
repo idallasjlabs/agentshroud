@@ -12,7 +12,7 @@ tags:
 # DifferentialPIIDetector
 
 ## Connections
-- [[dot-__init__()_202]] - `method` [EXTRACTED]
+- [[dot-__init__()_201]] - `method` [EXTRACTED]
 - [[dot-_deduplicate()]] - `method` [EXTRACTED]
 - [[dot-_detect_pii()]] - `method` [EXTRACTED]
 - [[dot-_detect_presidio()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-_redact()]] - `method` [EXTRACTED]
 - [[dot-_scan()]] - `method` [EXTRACTED]
 - [[dot-scan_prompt()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `method` [EXTRACTED]
+- [[dot-scan_tool_result()_1]] - `method` [EXTRACTED]
 - [[dot-test_bare_city_name_not_flagged_but_street_address_is()]] - `references` [EXTRACTED]
 - [[dot-test_clean_content_no_hits()]] - `references` [EXTRACTED]
 - [[dot-test_core_ssn_unioned_when_presidio_misses_it()]] - `references` [EXTRACTED]

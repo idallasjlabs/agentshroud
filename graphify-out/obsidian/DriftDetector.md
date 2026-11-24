@@ -12,8 +12,8 @@ tags:
 # DriftDetector
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_46]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_44]] - `method` [EXTRACTED]
 - [[dot-_init_db()]] - `method` [EXTRACTED]
 - [[dot-acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-check_drift()]] - `method` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-get_alerts()]] - `method` [EXTRACTED]
 - [[dot-get_baseline()]] - `method` [EXTRACTED]
 - [[dot-set_baseline()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
 - [[dot-test_drift_detector_baseline()]] - `calls` [EXTRACTED]
 - [[dot-test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
 - [[dot-test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
+- [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
 - [[drift_detector.py]] - `contains` [EXTRACTED]

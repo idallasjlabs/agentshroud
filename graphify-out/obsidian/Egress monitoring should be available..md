@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TestExfiltrationDetection"
+community: "EnvironmentGuard"
 location: "L598"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/EnvironmentGuard
 ---
 
 # Egress monitoring should be available.
 
 ## Connections
-- [[dot-test_egress_monitor_loaded()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_egress_monitor_loaded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard

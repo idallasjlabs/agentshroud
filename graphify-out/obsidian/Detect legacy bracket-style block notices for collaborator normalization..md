@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._extract_first_egress_target"
+community: "TestOutboundClassifierHelpers"
 location: "L2689"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_first_egress_target
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Detect legacy bracket-style block notices for collaborator normalization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_contains_legacy_block_notice()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

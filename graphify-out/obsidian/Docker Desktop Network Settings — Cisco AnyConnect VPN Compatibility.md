@@ -16,10 +16,10 @@ tags:
 - [[How to Apply]] - `contains` [EXTRACTED]
 - [[If It Stops Working After a VPN Reconnect]] - `contains` [EXTRACTED]
 - [[Network Architecture (unchanged)]] - `contains` [EXTRACTED]
-- [[Problem]] - `contains` [EXTRACTED]
+- [[Problem_2]] - `contains` [EXTRACTED]
 - [[Related Files]] - `contains` [EXTRACTED]
-- [[Root Cause]] - `contains` [EXTRACTED]
+- [[Root Cause_1]] - `contains` [EXTRACTED]
 - [[Settings Changed]] - `contains` [EXTRACTED]
-- [[Verification]] - `contains` [EXTRACTED]
+- [[Verification_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

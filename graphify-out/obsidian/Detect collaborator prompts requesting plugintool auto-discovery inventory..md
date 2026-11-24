@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestCollaboratorPromptClassifiers"
 location: "L2006"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Detect collaborator prompts requesting plugin/tool auto-discovery inventory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_plugin_discovery_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

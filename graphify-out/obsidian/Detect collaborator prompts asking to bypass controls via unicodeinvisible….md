@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TelegramAPIProxy"
+community: "TestCollaboratorPromptClassifiers"
 location: "L1404"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # Detect collaborator prompts asking to bypass controls via unicode/invisible…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_unicode_obfuscation_bypass_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "asyncio"
 location: "L1485"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/asyncio
 ---
 
 # Embedding provider wording variants should rewrite for urlencoded payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_memory_provider_error_variant_is_rewritten_for_form_payload()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

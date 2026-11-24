@@ -12,14 +12,14 @@ tags:
 # EgressPolicy
 
 ## Connections
-- [[dot-__init__()_175]] - `calls` [EXTRACTED]
+- [[dot-__init__()_172]] - `calls` [EXTRACTED]
 - [[dot-get_policy()_1]] - `references` [EXTRACTED]
 - [[dot-matches_domain()]] - `method` [EXTRACTED]
 - [[dot-matches_ip()]] - `method` [EXTRACTED]
 - [[dot-matches_port()]] - `method` [EXTRACTED]
 - [[dot-set_agent_policy()]] - `references` [EXTRACTED]
-- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
 - [[dot-test_agent_specific_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_allowed_cidr()]] - `calls` [EXTRACTED]
 - [[dot-test_connect_proxy_policy_allows_smtp_gmail_465()]] - `calls` [EXTRACTED]

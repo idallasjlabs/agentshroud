@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "rationale"
-community: "DifferentialPIIDetector"
+community: "differential_pii_detector.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/differential_pii_detectorpy
 ---
 
 # Differential PII Detector for Tool Results — Module 28 (v1.2.0) IEC 62443 FR3…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[differential_pii_detector.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/rationale #graphify/EXTRACTED #community/differential_pii_detectorpy
