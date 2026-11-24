@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "rationale"
-community: "deep_security_test"
+community: "LogSanitizer"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/deep_security_test
+  - community/LogSanitizer
 ---
 
 # Sanitize sensitive data in text.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_sanitize_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/deep_security_test
+#graphify/rationale #graphify/EXTRACTED #community/LogSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Common Scenarios"
+community: "AgentShroud Device Pairing Management"
 location: "L225"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Scenarios
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Scenario 2: Safari Private Window
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Common Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Scenarios
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

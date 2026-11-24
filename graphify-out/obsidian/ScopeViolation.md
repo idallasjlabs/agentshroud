@@ -12,7 +12,7 @@ tags:
 # ScopeViolation
 
 ## Connections
-- [[dot-validate()_1]] - `calls` [EXTRACTED]
+- [[dot-validate()_3]] - `calls` [EXTRACTED]
 - [[TestScopeEnforcement]] - `uses` [INFERRED]
 - [[TokenError]] - `inherits` [EXTRACTED]
 - [[token_validation.py]] - `contains` [EXTRACTED]

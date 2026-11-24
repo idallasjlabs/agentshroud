@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "TestFileSandbox"
 location: "L590"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestFileSandbox
 ---
 
 # Same path, different modes — enforce blocks, monitor allows.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_enforce_vs_monitor_contrast()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

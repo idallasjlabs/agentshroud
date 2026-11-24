@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "EgressApprovalQueue"
 location: "L308"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/EgressApprovalQueue
 ---
 
 # Save rules to persistent storage.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_save_rules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

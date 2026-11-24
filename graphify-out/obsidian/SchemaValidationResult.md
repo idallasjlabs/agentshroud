@@ -12,7 +12,7 @@ tags:
 # SchemaValidationResult
 
 ## Connections
-- [[dot-validate()_3]] - `calls` [EXTRACTED]
+- [[dot-validate()_2]] - `calls` [EXTRACTED]
 - [[Result of validating output against a schema.]] - `rationale_for` [EXTRACTED]
 - [[output_schema.py]] - `contains` [EXTRACTED]
 
