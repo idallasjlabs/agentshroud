@@ -30,6 +30,7 @@ Run: ``python -m gateway.inbound_edge.edge_app`` (see docker/mcp-edge/Dockerfile
 import html
 import logging
 import os
+import re
 import uuid
 from dataclasses import dataclass
 from pathlib import Path
@@ -286,8 +287,11 @@ Every tool call stays subject to AgentShroud policy, and writes still need your 
 <input name="code" autocomplete="one-time-code" required minlength="8" maxlength="64">
 <button type="submit">Link</button></form>{error}</body></html>"""
 
+_CONSENT_CSP = "default-src 'none'; style-src 'unsafe-inline'; form-action {form_action}; frame-ancestors 'none'"
+# a plain scheme://host[:port], nothing that could add policy text
+_ORIGIN_RE = re.compile(r"https?://[a-z0-9.-]+(:[0-9]{1,5})?", re.IGNORECASE)
 _CONSENT_HEADERS = {
-    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'",
+    "Content-Security-Policy": _CONSENT_CSP.format(form_action="'self'"),
     "X-Frame-Options": "DENY",
     "Referrer-Policy": "no-referrer",
     "Cache-Control": "no-store",
@@ -306,7 +310,12 @@ def _consent_routes(gw: GatewayClient) -> List[Route]:
             req=html.escape(req),
             error=f"<p role='alert'>{html.escape(error)}</p>" if error else "",
         )
-        return HTMLResponse(page, headers=_CONSENT_HEADERS)
+        # Browsers apply form-action to the redirect that follows the form, so Link's 302 back to the
+        # vendor (claude.ai) is blocked silently unless its origin is allowed here.
+        origin = view.get("redirect_origin") or ""
+        form_action = f"'self' {origin}" if _ORIGIN_RE.fullmatch(origin) else "'self'"
+        csp = _CONSENT_CSP.format(form_action=form_action)
+        return HTMLResponse(page, headers={**_CONSENT_HEADERS, "Content-Security-Policy": csp})
 
     async def consent(request: Request):
         if request.method == "GET":

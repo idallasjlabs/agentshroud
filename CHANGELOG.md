@@ -38,6 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Inbound Edge consent: **Link** did nothing, then said "Authorisation request expired". The page's `form-action 'self'` policy made the browser block the redirect back to the vendor (claude.ai). The policy now also allows that request's own callback origin, and nothing else (SCRUM-198).
 - SOC killswitch endpoints (UI and both CLIs) returned `ok: true` without killing anything (SCRUM-199).
 - SOC approve/deny called missing queue methods; the pending list was always empty (SCRUM-200).
 - The benchmark regression gate could not fail and measured no P99 (SCRUM-201).

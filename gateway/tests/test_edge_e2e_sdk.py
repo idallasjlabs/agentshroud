@@ -192,6 +192,12 @@ async def test_full_oauth_and_tool_calls_with_sdk_client(tmp_path):
                 req = parse_qs(urlparse(consent).query)["req"][0]
                 back = await browser.post("/oauth/consent", data={"req": req, "code": enrollment})
                 assert back.status_code == 302
+                # the consent page's form-action must allow where Link sends the browser
+                dest = urlparse(back.headers["location"])
+                allowed = (
+                    page.headers["content-security-policy"].split("form-action ")[1].split(";")[0]
+                )
+                assert f"{dest.scheme}://{dest.netloc}" in allowed.split()
                 q = parse_qs(urlparse(back.headers["location"]).query)
                 captured["code"], captured["state"] = q["code"][0], q.get("state", [None])[0]
 
