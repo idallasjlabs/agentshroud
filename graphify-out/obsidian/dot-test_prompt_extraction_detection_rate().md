@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "TestPromptExtraction"
+community: "normalize_input"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptExtraction
+  - community/normalize_input
 ---
 
 # .test_prompt_extraction_detection_rate()
@@ -15,4 +15,4 @@ tags:
 - [[TestPromptExtraction]] - `method` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptExtraction
+#graphify/code #graphify/EXTRACTED #community/normalize_input

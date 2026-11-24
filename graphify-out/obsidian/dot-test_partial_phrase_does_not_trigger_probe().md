@@ -16,7 +16,7 @@ tags:
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_send()_9]] - `contains` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 - [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - `rationale_for` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "test_runtime_engines.py"
+community: "TestInstallerAPI"
 location: "L791"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/TestInstallerAPI
 ---
 
 # .test_prerequisites()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInstallerAPI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/TestInstallerAPI

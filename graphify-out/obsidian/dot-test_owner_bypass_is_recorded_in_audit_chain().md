@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # .test_owner_bypass_is_recorded_in_audit_chain()
@@ -16,6 +16,6 @@ tags:
 - [[TestContextGuardInPipeline]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_1]] - `calls` [EXTRACTED]
-- [[asyncio_37]] - `references` [EXTRACTED]
+- [[asyncio_34]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestT2Exfiltration]] - `method` [EXTRACTED]
-- [[_profile()]] - `calls` [EXTRACTED]
+- [[_profile()_1]] - `calls` [EXTRACTED]
 - [[_text()]] - `calls` [EXTRACTED]
 - [[_token()]] - `calls` [EXTRACTED]
 

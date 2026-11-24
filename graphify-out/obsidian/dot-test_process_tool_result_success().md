@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult]] - `calls` [EXTRACTED]
+- [[RedactionResult_1]] - `calls` [EXTRACTED]
 - [[Test successful tool result processing]] - `rationale_for` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
-- [[asyncio_46]] - `references` [EXTRACTED]
+- [[asyncio_45]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

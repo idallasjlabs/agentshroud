@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "TestInjectionDetection"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/TestInjectionDetection
 ---
 
 # .test_prompt_override_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInjectionDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection

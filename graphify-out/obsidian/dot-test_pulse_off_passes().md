@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestProvesTheOutcome]] - `method` [EXTRACTED]
 - [[_run()]] - `calls` [EXTRACTED]
-- [[parametrize_2]] - `references` [EXTRACTED]
+- [[parametrize]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run

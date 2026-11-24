@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestFileSandboxStep]] - `method` [EXTRACTED]
-- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
+- [[_FakeRBAC]] - `calls` [EXTRACTED]
 - [[_tool_req()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_tool_req

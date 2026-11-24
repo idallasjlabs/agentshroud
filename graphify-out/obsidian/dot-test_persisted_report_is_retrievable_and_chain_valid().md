@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "DraftEntry"
+community: "test_intel_endpoint.py"
 location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/test_intel_endpointpy
 ---
 
 # .test_persisted_report_is_retrievable_and_chain_valid()
@@ -16,4 +16,4 @@ tags:
 - [[_draft()]] - `calls` [EXTRACTED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

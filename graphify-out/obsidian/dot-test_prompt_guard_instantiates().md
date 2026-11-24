@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "test_all_modules_enforce.py"
+community: "PathIsolationManager"
 location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/PathIsolationManager
 ---
 
 # .test_prompt_guard_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

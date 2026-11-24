@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestFileDownload]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[proxy_request returns 502 sentinel when file download raises.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

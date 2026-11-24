@@ -16,6 +16,6 @@ tags:
 - [[PII redaction must not strip parse_mode for the whole message (owner, fallback…_1]] - `rationale_for` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction

@@ -15,6 +15,6 @@ tags:
 - [[On construction, _runtime_revoked_collaborators must be backed by the persisted…]] - `rationale_for` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestOwnerAccess"
+community: "test_tool_acl.py"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOwnerAccess
+  - community/test_tool_aclpy
 ---
 
 # .test_owner_denied_tools_is_empty()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOwnerAccess
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

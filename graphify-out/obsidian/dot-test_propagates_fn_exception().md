@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestCallWithDeadline]] - `method` [EXTRACTED]
 - [[_call_with_deadline()]] - `calls` [INFERRED]
-- [[boom()_15]] - `indirect_call` [INFERRED]
+- [[boom()_14]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/discover_upstream_versionspy

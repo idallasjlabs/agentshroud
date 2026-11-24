@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # .test_propagation_limited_to_max_depth()
@@ -16,4 +16,4 @@ tags:
 - [[TestIncidentPropagation]] - `method` [EXTRACTED]
 - [[TrustConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

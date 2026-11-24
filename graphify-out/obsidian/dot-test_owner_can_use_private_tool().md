@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestOwnerAccess"
+community: "test_tool_acl.py"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOwnerAccess
+  - community/test_tool_aclpy
 ---
 
 # .test_owner_can_use_private_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOwnerAccess
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

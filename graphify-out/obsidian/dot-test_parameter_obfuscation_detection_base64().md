@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # .test_parameter_obfuscation_detection_base64()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of base64-encoded parameters.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
