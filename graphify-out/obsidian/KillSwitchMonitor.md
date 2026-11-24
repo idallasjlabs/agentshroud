@@ -12,7 +12,7 @@ tags:
 # KillSwitchMonitor
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
 - [[dot-__init__()_220]] - `method` [EXTRACTED]
 - [[dot-_check_request_rate()]] - `method` [EXTRACTED]
 - [[dot-_check_system_resources()_1]] - `method` [EXTRACTED]

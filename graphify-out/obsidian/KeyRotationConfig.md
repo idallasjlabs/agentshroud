@@ -12,7 +12,7 @@ tags:
 # KeyRotationConfig
 
 ## Connections
-- [[dot-__init__()_18]] - `references` [EXTRACTED]
+- [[dot-__init__()_22]] - `references` [EXTRACTED]
 - [[dot-add_custom_policy()]] - `method` [EXTRACTED]
 - [[dot-get_op_reference()]] - `method` [EXTRACTED]
 - [[dot-get_policy()]] - `method` [EXTRACTED]

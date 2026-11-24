@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "asyncio"
+community: "TestKeyLeakDetection"
 location: "L574"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/TestKeyLeakDetection
 ---
 
 # KeyLeakDetector wiring — stored credential values must never leave the gateway.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyLeakDetection_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/TestKeyLeakDetection

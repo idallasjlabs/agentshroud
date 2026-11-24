@@ -12,8 +12,8 @@ tags:
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_34]] - `references` [EXTRACTED]
-- [[dot-__init__()_35]] - `references` [EXTRACTED]
+- [[dot-__init__()_78]] - `references` [EXTRACTED]
+- [[dot-__init__()_76]] - `references` [EXTRACTED]
 - [[dot-__init__()_36]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]

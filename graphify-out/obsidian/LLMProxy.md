@@ -12,7 +12,7 @@ tags:
 # LLMProxy
 
 ## Connections
-- [[dot-__init__()_55]] - `method` [EXTRACTED]
+- [[dot-__init__()_58]] - `method` [EXTRACTED]
 - [[dot-_apply_filters()]] - `method` [EXTRACTED]
 - [[dot-_build_timeout_fallback_response()]] - `method` [EXTRACTED]
 - [[dot-_emit_failover_notice()]] - `method` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[dot-_strip_fieldflare_unsupported_fields()]] - `method` [EXTRACTED]
 - [[dot-_suppress_qwen3_thinking()]] - `method` [EXTRACTED]
 - [[dot-_widen_optional_tool_param_types()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_1]] - `method` [EXTRACTED]
+- [[dot-get_stats()_2]] - `method` [EXTRACTED]
 - [[dot-proxy_messages()]] - `method` [EXTRACTED]
 - [[dot-proxy_messages_streaming()]] - `method` [EXTRACTED]
 - [[Proxies LLM API calls (Anthropic, OpenAI, Google) through the security pipeline.]] - `rationale_for` [EXTRACTED]
