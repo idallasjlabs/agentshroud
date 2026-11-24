@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "asyncio"
+community: "_mock_ws"
 location: "L2804"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # A 'set volume' updates the tracked level so a later query reports it — proves…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_set_then_query_reports_the_set_level()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/_mock_ws

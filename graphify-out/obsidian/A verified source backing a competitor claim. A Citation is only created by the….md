@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "DraftEntry"
+community: "CompetitiveIntelReport"
 location: "L61"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/CompetitiveIntelReport
 ---
 
 # A verified source backing a competitor claim. A Citation is only created by the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Citation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/DraftEntry
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

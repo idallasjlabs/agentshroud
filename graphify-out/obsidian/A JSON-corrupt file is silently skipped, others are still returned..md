@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "get_trivy_image_summaries"
+community: "Any"
 location: "L1168"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_image_summaries
+  - community/Any
 ---
 
 # A JSON-corrupt file is silently skipped, others are still returned.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_corrupt_report_file_is_skipped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_image_summaries
+#graphify/rationale #graphify/EXTRACTED #community/Any

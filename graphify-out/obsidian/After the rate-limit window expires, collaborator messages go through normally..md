@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: ".test_stranger_within_limit_triggers_approval_workflow"
 location: "L7863"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # After the rate-limit window expires, collaborator messages go through normally.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCollaboratorRateLimitRecovery]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow
