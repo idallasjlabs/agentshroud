@@ -18,6 +18,6 @@ tags:
 - [[dot-test_serialise_roundtrip()]] - `calls` [EXTRACTED]
 - [[Build a ManifestEntry by reading path from disk.]] - `rationale_for` [EXTRACTED]
 - [[ManifestEntry]] - `method` [EXTRACTED]
-- [[Path_55]] - `references` [EXTRACTED]
+- [[Path_71]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ManifestEntry

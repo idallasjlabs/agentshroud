@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
+community: "EncodingDetector"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/EncodingDetector
 ---
 
 # .decode_hex()
@@ -17,4 +17,4 @@ tags:
 - [[replacer()_1]] - `contains` [EXTRACTED]
 - [[replacer()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/EncodingDetector

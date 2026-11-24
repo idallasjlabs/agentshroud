@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "middleware.py"
+community: ".get_user_role"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/get_user_role
 ---
 
 # .is_collaborator_or_higher()
@@ -16,4 +16,4 @@ tags:
 - [[Check if user has collaborator privileges or higher.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/get_user_role

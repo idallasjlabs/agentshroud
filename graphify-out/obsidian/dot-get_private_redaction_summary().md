@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: ".get_private_redaction_events"
 location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/get_private_redaction_events
 ---
 
 # .get_private_redaction_summary()
@@ -16,4 +16,4 @@ tags:
 - [[Aggregate recent private-data redaction events.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/get_private_redaction_events

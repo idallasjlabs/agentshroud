@@ -12,6 +12,6 @@ tags:
 # .get_user_role()
 
 ## Connections
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContributorManager

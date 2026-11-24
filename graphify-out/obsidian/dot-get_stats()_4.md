@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # .get_stats()
@@ -16,4 +16,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[Get aggregate statistics Returns Dictionary with total entries, by source, etc.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

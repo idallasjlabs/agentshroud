@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "Any"
+community: "KeyRotationManager"
 location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KeyRotationManager
 ---
 
 # .get_health_score()
 
 ## Connections
-- [[Any_25]] - `references` [EXTRACTED]
+- [[Any_12]] - `references` [EXTRACTED]
 - [[Calculate overall credential health score.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

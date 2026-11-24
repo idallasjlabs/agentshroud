@@ -12,7 +12,7 @@ tags:
 # .get_key()
 
 ## Connections
-- [[dot-run()_8]] - `calls` [EXTRACTED]
+- [[dot-run()_7]] - `calls` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 - [[Get a single keypress (non-blocking)]] - `rationale_for` [EXTRACTED]
 

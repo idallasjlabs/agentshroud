@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "middleware.py"
+community: "soc/router.py"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/soc/routerpy
 ---
 
 # .get_users_by_role()
@@ -16,4 +16,4 @@ tags:
 - [[RBACConfig]] - `method` [EXTRACTED]
 - [[Role]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

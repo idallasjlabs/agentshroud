@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # .hardening()
@@ -15,6 +15,6 @@ tags:
 - [[ApprovalHardening]] - `calls` [EXTRACTED]
 - [[Create approval hardening instance for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
-- [[fixture_72]] - `references` [EXTRACTED]
+- [[fixture_80]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

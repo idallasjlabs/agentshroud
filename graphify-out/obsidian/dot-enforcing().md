@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/profiles.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L79"
+community: "make_event"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/make_event
 ---
 
 # .enforcing()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VendorProfile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/make_event

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "middleware.py"
-location: "L409"
+community: "TokenValidator"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TokenValidator
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
-- [[FileOperation]] - `references` [EXTRACTED]
-- [[FileSandbox]] - `method` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

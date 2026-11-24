@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "middleware.py"
+community: "run"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # .filter_function_calls_only()
@@ -15,4 +15,4 @@ tags:
 - [[Quick filter that only removes function call XML (for performance). Args…]] - `rationale_for` [EXTRACTED]
 - [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/run

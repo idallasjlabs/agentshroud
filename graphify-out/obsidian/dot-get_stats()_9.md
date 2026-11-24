@@ -12,7 +12,7 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[Any_46]] - `references` [EXTRACTED]
+- [[Any_43]] - `references` [EXTRACTED]
 - [[SidecarScanner]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

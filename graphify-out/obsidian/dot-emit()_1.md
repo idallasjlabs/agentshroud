@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L64"
+community: "BufferHandler"
+location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/BufferHandler
 ---
 
 # .emit()
 
 ## Connections
-- [[Emit an event to all subscribers]] - `rationale_for` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
-- [[GatewayEvent]] - `references` [EXTRACTED]
+- [[BufferHandler]] - `method` [EXTRACTED]
+- [[LogRecord_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/BufferHandler

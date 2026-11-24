@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "PodmanEngine"
-location: "L159"
+community: "DockerEngine"
+location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/DockerEngine
 ---
 
 # .inspect()
 
 ## Connections
 - [[dot-_cmd()_1]] - `calls` [EXTRACTED]
-- [[Any_34]] - `references` [EXTRACTED]
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[Any_51]] - `references` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_metadata_guard.py"
+source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "MetadataGuard"
-location: "L188"
+community: "lifespan.py"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/lifespanpy
 ---
 
 # .guard()
 
 ## Connections
-- [[MetadataGuard]] - `calls` [EXTRACTED]
-- [[TestDocumentTagging]] - `method` [EXTRACTED]
-- [[fixture_53]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

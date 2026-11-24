@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "test_security_audit.py"
-location: "L219"
+community: "prompt_guard.py"
+location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/prompt_guardpy
 ---
 
 # .guard()
 
 ## Connections
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
-- [[fixture_124]] - `references` [EXTRACTED]
+- [[TestReanchorDelimiters]] - `method` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

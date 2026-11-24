@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
+community: "EncodingDetector"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/EncodingDetector
 ---
 
 # .decode_rot13()
@@ -17,4 +17,4 @@ tags:
 - [[DecodedLayer]] - `calls` [EXTRACTED]
 - [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/EncodingDetector

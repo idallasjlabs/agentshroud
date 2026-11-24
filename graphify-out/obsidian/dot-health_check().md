@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L201"
+community: "ContainerEngine"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ContainerEngine
 ---
 
 # .health_check()
 
 ## Connections
-- [[dot-_cmd()]] - `calls` [EXTRACTED]
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[Return True if the runtime is available and responsive.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/ContainerEngine

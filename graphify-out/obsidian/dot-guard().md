@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_context_guard.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ContextGuard"
-location: "L57"
+community: "lifespan.py"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/lifespanpy
 ---
 
 # .guard()
 
 ## Connections
-- [[ContextGuard]] - `calls` [EXTRACTED]
-- [[TestSourceTagging]] - `method` [EXTRACTED]
-- [[fixture_46]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
+- [[fixture_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

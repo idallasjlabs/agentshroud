@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "services.py"
+community: "ServiceManager"
 location: "L276"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/ServiceManager
 ---
 
 # .get_service()
@@ -17,4 +17,4 @@ tags:
 - [[ServiceDescriptor]] - `references` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

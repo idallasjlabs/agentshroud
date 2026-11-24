@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "services.py"
+community: "ServiceManager"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/ServiceManager
 ---
 
 # .list_services()
@@ -19,4 +19,4 @@ tags:
 - [[ServiceManager]] - `method` [EXTRACTED]
 - [[_known_services()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

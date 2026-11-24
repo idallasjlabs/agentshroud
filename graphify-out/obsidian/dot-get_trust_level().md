@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "PermissionCheck"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PermissionCheck
 ---
 
 # .get_trust_level()
@@ -18,4 +18,4 @@ tags:
 - [[Get trust level, defaulting to 1 (write) for unknown agents.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/PermissionCheck

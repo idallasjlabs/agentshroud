@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "test_mcp_proxy.py"
 location: "L362"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_mcp_proxypy
 ---
 
 # .get_private_data_patterns()
@@ -15,4 +15,4 @@ tags:
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return configured admin-private data redaction patterns.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

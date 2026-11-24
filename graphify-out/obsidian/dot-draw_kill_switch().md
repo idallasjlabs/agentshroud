@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-clear_screen()]] - `calls` [EXTRACTED]
-- [[dot-run()_8]] - `calls` [EXTRACTED]
+- [[dot-run()_7]] - `calls` [EXTRACTED]
 - [[ControlCenter]] - `method` [EXTRACTED]
 - [[Draw kill switch screen]] - `rationale_for` [EXTRACTED]
 

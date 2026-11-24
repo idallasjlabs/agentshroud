@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # .delete_entry()
@@ -15,4 +15,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[Forget this' - permanently delete a ledger entry Implements right to erasure.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

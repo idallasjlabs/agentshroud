@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/security/privacy_policy.py"
 type: "code"
-community: "middleware.py"
-location: "L91"
+community: "PrivacyPolicyEnforcer"
+location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # .filter_response()
 
 ## Connections
-- [[Filter outbound response content to remove sensitive information. Args…]] - `rationale_for` [EXTRACTED]
-- [[FilterResult]] - `calls` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[dot-_get_role_value()]] - `calls` [EXTRACTED]
+- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[Strip admin-private content from a response before delivering to user. Args…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # .ledger()
@@ -15,6 +15,6 @@ tags:
 - [[DataLedger]] - `calls` [EXTRACTED]
 - [[LedgerConfig]] - `calls` [EXTRACTED]
 - [[TestFullPipelineLatency]] - `method` [EXTRACTED]
-- [[fixture_21]] - `references` [EXTRACTED]
+- [[fixture_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

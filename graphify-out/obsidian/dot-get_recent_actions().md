@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MemoryLifecycleManager"
+community: "middleware.py"
 location: "L374"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # .get_recent_actions()
@@ -17,4 +17,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[RetentionAction]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/code #graphify/EXTRACTED #community/middlewarepy
