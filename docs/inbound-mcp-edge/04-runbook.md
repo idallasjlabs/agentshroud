@@ -46,7 +46,7 @@ Then run `asb rebuild full` (or `asb up full`). No mode enables a vendor or publ
 
 ### 4. Enable one vendor
 
-Set `enabled: true` in `config/inbound-edge/vendors/<vendor>.yaml`, restart the gateway, then confirm in the Agents tab.
+Add the vendor to `AGENTSHROUD_EDGE_ENABLE_VENDORS` in this host's `docker/.env` (comma-separated, e.g. `claude-duet`), run `asb up`, then confirm in the Agents tab. Leave the tracked profile at `enabled: false`: an edited profile is an uncommitted change in the build context, and the Sunday upgrade refuses to build from one.
 
 ### 5. Expose publicly
 
@@ -77,11 +77,11 @@ Duet's traffic comes from Anthropic's cloud, not from your phone, so everything 
 **Ready before the invitation (no account needed):**
 - [ ] prod on the current `main`, `AGENTSHROUD_DEPLOYMENT=hybrid`, `AGENTSHROUD_EDGE_PKE_FEEDS` set; prod edge secrets created (`docker/setup-secrets.sh edge-init`).
 - [ ] `asb rebuild full` passes, including P9; the Command Center shows the edge *enabled*, `vendors_enabled=[]`, no drift.
-- [ ] `claude-duet` is still `enabled: false` and Funnel is off (`sudo scripts/tailscale-serve.sh edge-funnel status`).
+- [ ] `claude-duet` is not in `AGENTSHROUD_EDGE_ENABLE_VENDORS` and Funnel is off (`sudo scripts/tailscale-serve.sh edge-funnel status`).
 
 **When the invitation arrives** (Duet's one-time limit reset is valid until 2026-11-30; plan the tests before then):
 1. Install Duet on a **personal** phone (invitations are tied to the phone's Apple/Google account) and sign in with the Claude account.
-2. Enable the vendor: set `enabled: true` in `config/inbound-edge/vendors/claude-duet.yaml` (reads only: `lab_search`, `pke_status`), restart the gateway. Do not commit the change.
+2. Enable the vendor: set `AGENTSHROUD_EDGE_ENABLE_VENDORS=claude-duet` in `docker/.env` (reads only: `lab_search`, `pke_status`), run `asb up`, and confirm the gateway log shows `vendors_enabled=['claude-duet']`. Do not edit the tracked profile.
 3. Review, then open, the public door (admin account, `sudo`):
    ```bash
    sudo scripts/tailscale-serve.sh edge-funnel plan
@@ -107,7 +107,7 @@ Duet's traffic comes from Anthropic's cloud, not from your phone, so everything 
 
 Forged/replayed tokens, unlisted tools and schema abuse (H1–H3) cannot be driven from Duet; `gateway/tests/test_edge_*.py` covers them, and they can be repeated against the public URL with the MCP SDK.
 
-**Between sessions:** `asb edge kill --vendor claude-duet --confirm`, `sudo scripts/tailscale-serve.sh edge-funnel off`, set `claude-duet` back to `enabled: false`, toggle the connector off in Claude, and remove any Duet standing instruction that calls AgentShroud.
+**Between sessions:** `asb edge kill --vendor claude-duet --confirm`, `sudo scripts/tailscale-serve.sh edge-funnel off`, remove `claude-duet` from `AGENTSHROUD_EDGE_ENABLE_VENDORS` and run `asb up`, toggle the connector off in Claude, and remove any Duet standing instruction that calls AgentShroud.
 
 ## 2. Killswitch
 
