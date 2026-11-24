@@ -15,7 +15,8 @@ Environment:
     AGENTSHROUD_INBOUND_EDGE        "1" to enable
     AGENTSHROUD_EDGE_PUBLIC_URL     e.g. https://marvin.tail240ea8.ts.net:8443 (issuer)
     AGENTSHROUD_EDGE_SEARXNG_URL    default http://searxng-local:8080
-    AGENTSHROUD_EDGE_EGRESS_PROXY   default http://127.0.0.1:8181
+    AGENTSHROUD_EDGE_EGRESS_PROXY   default http://127.0.0.1:8181 (internet egress; an
+                                    internal SearXNG container is reached directly)
     AGENTSHROUD_EDGE_PKE_FEEDS      comma-separated https feed URLs (tool hidden if empty)
     AGENTSHROUD_EDGE_HERMES_URL     default http://${HERMES_API_HOST_UPSTREAM}:8642
     AGENTSHROUD_EDGE_HERMES_PROFILE default edge-delegate (tool hidden unless set to on)
@@ -31,6 +32,7 @@ import secrets
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
+from urllib.parse import urlparse
 
 import httpx
 
@@ -74,6 +76,21 @@ class EdgeService:
 
     async def close(self) -> None:
         await self.store.close()
+
+
+def _searxng_proxy(url: str, egress_proxy: Optional[str]) -> Optional[str]:
+    """Proxy for lab_search's call to SearXNG.
+
+    The egress proxy controls internet egress and only handles CONNECT, so a plain
+    http GET to the internal SearXNG container through it fails (405). A single-label
+    host is a container name on the internal Docker network, so that hop goes direct.
+    Anything else (a dotted name or an IP, i.e. possibly the internet) keeps the
+    egress proxy, so pointing AGENTSHROUD_EDGE_SEARXNG_URL elsewhere cannot bypass it.
+    """
+    host = urlparse(url).hostname or ""
+    if host and "." not in host and ":" not in host and host != "localhost":
+        return None
+    return egress_proxy
 
 
 def _read_secret_blob(name: str) -> bytes:
@@ -134,11 +151,8 @@ async def build_edge_service(app_state: Any) -> Optional[EdgeService]:
     oauth = EdgeOAuthService(store, tokens, profiles, issuer, resource, notify=notify)
 
     proxy = os.environ.get("AGENTSHROUD_EDGE_EGRESS_PROXY", "http://127.0.0.1:8181") or None
-    facades: Dict[str, Any] = {
-        "lab_search": LabSearch(
-            os.environ.get("AGENTSHROUD_EDGE_SEARXNG_URL", "http://searxng-local:8080"), proxy
-        )
-    }
+    searxng = os.environ.get("AGENTSHROUD_EDGE_SEARXNG_URL", "http://searxng-local:8080")
+    facades: Dict[str, Any] = {"lab_search": LabSearch(searxng, _searxng_proxy(searxng, proxy))}
     feeds = [u.strip() for u in os.environ.get("AGENTSHROUD_EDGE_PKE_FEEDS", "").split(",")]
     if any(feeds):
         facades["pke_status"] = PkeStatus([u for u in feeds if u], proxy)
