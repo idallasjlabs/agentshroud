@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[is_safe_a2a_callback_url()]] - `calls` [EXTRACTED]
-- [[parametrize_25]] - `references` [EXTRACTED]
+- [[parametrize_23]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

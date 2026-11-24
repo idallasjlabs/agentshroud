@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_adversarial_injection.py"
+community: "normalize_input"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/normalize_input
 ---
 
 # test_adversarial_injection.py
@@ -33,4 +33,4 @@ tags:
 - [[normalize_input()]] - `imports` [EXTRACTED]
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

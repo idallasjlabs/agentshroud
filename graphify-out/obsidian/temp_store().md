@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # temp_store()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[Create a temporary SQLite store for testing.]] - `rationale_for` [EXTRACTED]
-- [[fixture_81]] - `references` [EXTRACTED]
+- [[fixture_84]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

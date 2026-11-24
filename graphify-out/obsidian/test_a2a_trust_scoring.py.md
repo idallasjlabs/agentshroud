@@ -32,7 +32,7 @@ tags:
 - [[test_proxy_without_trust_manager_does_not_raise()]] - `contains` [EXTRACTED]
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `contains` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `contains` [EXTRACTED]
-- [[trust_manager()_4]] - `contains` [EXTRACTED]
+- [[trust_manager()_2]] - `contains` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "MiddlewareManager"
+community: "test_docs_accuracy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_docs_accuracypy
 ---
 
 # test_docs_accuracy.py
@@ -25,4 +25,4 @@ tags:
 - [[_read_file()]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "ApprovalStore"
+community: "test_mfa_guard.py"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/test_mfa_guardpy
 ---
 
 # test_decide_persists()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[Deciding an item persists the new status.]] - `rationale_for` [EXTRACTED]
-- [[Path_53]] - `references` [EXTRACTED]
+- [[Path_38]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
-- [[asyncio_56]] - `references` [EXTRACTED]
+- [[asyncio_46]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

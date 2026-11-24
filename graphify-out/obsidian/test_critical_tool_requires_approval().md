@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L98"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # test_critical_tool_requires_approval()
@@ -16,4 +16,4 @@ tags:
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/load_config
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

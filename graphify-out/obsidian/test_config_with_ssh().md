@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L56"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # test_config_with_ssh()
@@ -17,7 +17,7 @@ tags:
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[fixture_66]] - `references` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/configpy
+#graphify/code #graphify/INFERRED #community/GatewayConfig

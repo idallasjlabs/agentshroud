@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "PipelineAction"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/PipelineAction
 ---
 
 # test_clamav_pipeline.py
@@ -20,7 +20,7 @@ tags:
 - [[_make_pipeline()]] - `contains` [EXTRACTED]
 - [[_run_capture()]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()]] - `contains` [EXTRACTED]
-- [[asyncio_33]] - `imports` [EXTRACTED]
+- [[asyncio_31]] - `imports` [EXTRACTED]
 - [[clamav_scanner.py_2]] - `imports_from` [EXTRACTED]
 - [[clamd_sock_path()]] - `contains` [EXTRACTED]
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

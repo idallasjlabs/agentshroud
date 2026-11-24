@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "PipelineAction"
 location: "L277"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/PipelineAction
 ---
 
 # test_clamd_available_false_for_stale_socket_left_by_killed_daemon()
@@ -15,4 +15,4 @@ tags:
 - [[clamd_available()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

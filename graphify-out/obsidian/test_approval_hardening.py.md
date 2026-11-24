@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # test_approval_hardening.py
@@ -22,4 +22,4 @@ tags:
 - [[TestDeniedRequest]] - `contains` [EXTRACTED]
 - [[approval_hardening.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

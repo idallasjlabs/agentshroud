@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "make_event"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/make_event
 ---
 
 # test_emit_no_subscribers_no_error()
 
 ## Connections
 - [[Emitting with no subscribers doesn't raise]] - `rationale_for` [EXTRACTED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/make_event

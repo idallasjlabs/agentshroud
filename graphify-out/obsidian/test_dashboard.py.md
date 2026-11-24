@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_dashboard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_dashboardpy
 ---
 
 # test_dashboard.py
@@ -19,11 +19,11 @@ tags:
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
 - [[_load_contributor_logs()]] - `imports` [EXTRACTED]
 - [[_parse_collaborator_log_dirs()]] - `imports` [EXTRACTED]
-- [[asyncio_69]] - `imports` [EXTRACTED]
+- [[asyncio_2]] - `imports` [EXTRACTED]
 - [[client()]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `imports_from` [EXTRACTED]
 - [[event_bus.py_2]] - `imports_from` [EXTRACTED]
-- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[httpx]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[sync_client()]] - `contains` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `contains` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

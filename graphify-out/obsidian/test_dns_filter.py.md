@@ -24,7 +24,7 @@ tags:
 - [[TestNormalDNSResolution]] - `contains` [EXTRACTED]
 - [[TestRateLimiting]] - `contains` [EXTRACTED]
 - [[Tests for DNS exfiltration prevention.]] - `rationale_for` [EXTRACTED]
-- [[default_config()]] - `contains` [EXTRACTED]
+- [[default_config()_1]] - `contains` [EXTRACTED]
 - [[dns_filter()]] - `contains` [EXTRACTED]
 - [[dns_filter.py_2]] - `imports_from` [EXTRACTED]
 - [[monitor_config()]] - `contains` [EXTRACTED]

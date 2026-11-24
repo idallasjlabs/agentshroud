@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "SecurityPipeline"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/lifespanpy
 ---
 
 # test_canary.py
@@ -40,4 +40,4 @@ tags:
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[unhealthy_forwarder()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/lifespanpy
