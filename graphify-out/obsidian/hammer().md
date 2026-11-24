@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "TestConcurrency"
 location: "L563"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ProgressiveLockdown
+  - community/TestConcurrency
 ---
 
 # hammer()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_threaded_record_block_counts_exactly()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ProgressiveLockdown
+#graphify/code #graphify/INFERRED #community/TestConcurrency

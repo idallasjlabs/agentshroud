@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_68]] - `references` [EXTRACTED]
+- [[fixture_73]] - `references` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustManager

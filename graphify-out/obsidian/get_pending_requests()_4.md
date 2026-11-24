@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dashboard.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L359"
+community: "asyncio"
+location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/asyncio
 ---
 
 # get_pending_requests()
 
 ## Connections
-- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - `contains` [EXTRACTED]
+- [[dot-test_unknown_domain_denied_when_denied()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/asyncio

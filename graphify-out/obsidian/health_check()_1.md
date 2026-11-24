@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "chatbot/main.py"
 type: "code"
-community: "fastapi.md"
-location: "L30"
+community: "chatbot/main.py"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/chatbot/mainpy
 ---
 
 # health_check()
 
 ## Connections
-- [[Minimal health check endpoint — no authentication required. Returns only basic…]] - `rationale_for` [EXTRACTED]
-- [[get_8]] - `references` [EXTRACTED]
-- [[health.py]] - `contains` [EXTRACTED]
+- [[Health check endpoint for Docker. Reports degraded status when the OpenAI…]] - `rationale_for` [EXTRACTED]
+- [[TestHealthCheck]] - `calls` [EXTRACTED]
+- [[chatbotmain.py]] - `contains` [EXTRACTED]
+- [[get_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

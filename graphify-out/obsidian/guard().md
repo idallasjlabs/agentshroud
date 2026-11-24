@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[fixture_47]] - `references` [EXTRACTED]
+- [[fixture_57]] - `references` [EXTRACTED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextGuard

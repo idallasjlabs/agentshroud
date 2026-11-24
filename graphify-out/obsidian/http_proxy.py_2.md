@@ -20,7 +20,7 @@ tags:
 - [[Internal State (`_stats`)]] - `contains` [EXTRACTED]
 - [[Key Classes]] - `contains` [EXTRACTED]
 - [[Module-level Constants]] - `contains` [EXTRACTED]
-- [[Purpose_172]] - `contains` [EXTRACTED]
+- [[Purpose_173]] - `contains` [EXTRACTED]
 - [[Related_47]] - `contains` [EXTRACTED]
 - [[Responsibilities_50]] - `contains` [EXTRACTED]
 - [[Security Notes_6]] - `contains` [EXTRACTED]

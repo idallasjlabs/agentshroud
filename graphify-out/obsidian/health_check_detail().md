@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "fastapi.md"
+community: "StatusResponse"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/StatusResponse
 ---
 
 # health_check_detail()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_1]] - `references` [EXTRACTED]
 - [[Detailed health check endpoint — authentication required. Returns full system…]] - `rationale_for` [EXTRACTED]
 - [[StatusResponse]] - `uses` [INFERRED]
-- [[get_8]] - `references` [EXTRACTED]
+- [[get_2]] - `references` [EXTRACTED]
 - [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/StatusResponse

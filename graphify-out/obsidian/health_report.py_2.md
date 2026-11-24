@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/health_report.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "generate_report"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/generate_report
 ---
 
 # health_report.py
@@ -24,4 +24,4 @@ tags:
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/generate_report

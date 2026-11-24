@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SkillGuard]] - `uses` [INFERRED]
-- [[fixture_71]] - `references` [EXTRACTED]
+- [[fixture_78]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

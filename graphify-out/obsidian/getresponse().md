@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "ServiceManager"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/ServiceManager
 ---
 
 # getresponse()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_http_connection()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

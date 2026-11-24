@@ -12,9 +12,9 @@ tags:
 # get_ledger_entry()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Get a single ledger entry by ID Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[get_4]] - `references` [EXTRACTED]
+- [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

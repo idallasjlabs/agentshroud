@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
 community: "asyncio"
-location: "L340"
+location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # get_pending_requests()
 
 ## Connections
-- [[dot-test_unknown_domain_denied_when_denied()]] - `contains` [EXTRACTED]
+- [[dot-test_unknown_domain_allowed_when_approved()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio
