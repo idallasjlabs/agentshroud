@@ -120,7 +120,7 @@ edge_funnel_plan() {
     echo "       AGENTSHROUD_EDGE_PUBLIC_URL equal to https://<host>:${EDGE_FUNNEL_PORT}"
     echo "    2. config/inbound-edge/descriptors.manifest.json is signed"
     echo "       (descriptors.manifest.sig + descriptors.pub.pem present and verifying)"
-    echo "    3. At least one vendor in config/inbound-edge/vendors/*.yaml has enabled: true"
+    echo "    3. At least one vendor is enabled: AGENTSHROUD_EDGE_ENABLE_VENDORS in docker/.env"
     echo "    4. Secrets edge_signing_key and edge_gateway_token are provisioned"
     echo "       (docker/setup-secrets.sh edge-init)"
     echo ""

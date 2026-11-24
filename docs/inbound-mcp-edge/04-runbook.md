@@ -50,7 +50,19 @@ Add the vendor to `AGENTSHROUD_EDGE_ENABLE_VENDORS` in this host's `docker/.env`
 
 ### 5. Expose publicly
 
-**Owner approval required.** First review what would be exposed:
+**Owner approval required.** Use the dedicated Funnel node. claude.ai's connector backend does not connect to Funnel :8443 (found 2026-11-24), and 443 on the host node belongs to the Hermes dashboard, whose browser origin the edge's consent page must not share.
+
+**Dedicated node (preferred): its own hostname on 443.**
+1. Tailnet policy (admin console → Access controls), once. The tag may own nothing else, and no ACL rule may use it as a source, so the node can reach no other tailnet device:
+   ```json
+   "tagOwners": { "tag:agentshroud-edge": ["autogroup:admin"] },
+   "nodeAttrs": [ { "target": ["tag:agentshroud-edge"], "attr": ["funnel"] } ]
+   ```
+2. Admin console → Settings → Keys → **Generate auth key**: one-off, pre-approved, tag `tag:agentshroud-edge`, short expiry. Store it without echoing it: `docker/setup-secrets.sh store-one edge_funnel_authkey` (masked prompt; touches no other secret). It is used once; the node identity then lives in the `edge-funnel-state` volume.
+3. In `docker/.env`: `AGENTSHROUD_EDGE_FUNNEL=1` and `AGENTSHROUD_EDGE_PUBLIC_URL=https://agentshroud-edge.<tailnet>.ts.net` (dev: `agentshroud-edge-dev`), then `asb up`. The gateway log shows the new issuer; `docker ps` shows `agentshroud-edge-funnel` healthy.
+4. Stop: set `AGENTSHROUD_EDGE_FUNNEL=0`, `asb up`, and `docker stop agentshroud-edge-funnel`. Revoke the node in the admin console to retire its identity.
+
+**Legacy :8443 on the host node** (tailnet clients only; claude.ai cannot use it). First review what would be exposed:
 
 ```bash
 sudo scripts/tailscale-serve.sh edge-funnel plan     # prints exactly what would be exposed
@@ -68,7 +80,7 @@ sudo scripts/tailscale-serve.sh edge-funnel on --yes-expose-publicly
 asb edge enroll --vendor claude-duet --confirm     # prints a one-time code, valid 10 minutes
 ```
 
-In the vendor's UI, add the custom connector `https://<node>.ts.net:8443/mcp`. When your browser reaches the consent page, enter the code. Telegram then confirms the link.
+In the vendor's UI, add the custom connector `https://agentshroud-edge.<tailnet>.ts.net/mcp` (the dedicated node; legacy `https://<node>.ts.net:8443/mcp`). When your browser reaches the consent page, enter the code. Telegram then confirms the link.
 
 ## 1a. Claude Duet pilot (prod, owner's Claude account)
 
@@ -82,14 +94,10 @@ Duet's traffic comes from Anthropic's cloud, not from your phone, so everything 
 **When the invitation arrives** (Duet's one-time limit reset is valid until 2026-11-30; plan the tests before then):
 1. Install Duet on a **personal** phone (invitations are tied to the phone's Apple/Google account) and sign in with the Claude account.
 2. Enable the vendor: set `AGENTSHROUD_EDGE_ENABLE_VENDORS=claude-duet` in `docker/.env` (reads only: `lab_search`, `pke_status`), run `asb up`, and confirm the gateway log shows `vendors_enabled=['claude-duet']`. Do not edit the tracked profile.
-3. Review, then open, the public door (admin account, `sudo`):
-   ```bash
-   sudo scripts/tailscale-serve.sh edge-funnel plan
-   sudo scripts/tailscale-serve.sh edge-funnel on --yes-expose-publicly
-   ```
-4. From **outside** the tailnet (phone on cellular, Tailscale off): `https://marvin.tail240ea8.ts.net:8443/mcp` returns **401** with `WWW-Authenticate`; `https://marvin.tail240ea8.ts.net:8443/.well-known/oauth-protected-resource/mcp` returns metadata whose `resource` is exactly `https://marvin.tail240ea8.ts.net:8443/mcp`.
+3. Open the public door with the dedicated Funnel node (§1 step 5): `AGENTSHROUD_EDGE_FUNNEL=1` and `AGENTSHROUD_EDGE_PUBLIC_URL=https://agentshroud-edge.tail240ea8.ts.net` in `docker/.env`, then `asb up`.
+4. From **outside** the tailnet (phone on cellular, Tailscale off): `https://agentshroud-edge.tail240ea8.ts.net/mcp` returns **401** with `WWW-Authenticate`; `https://agentshroud-edge.tail240ea8.ts.net/.well-known/oauth-protected-resource/mcp` returns metadata whose `resource` is exactly `https://agentshroud-edge.tail240ea8.ts.net/mcp`.
 5. Open the enrollment window: `asb edge enroll --vendor claude-duet --confirm` (one-time code, 10 minutes).
-6. claude.ai → **Customize → Connectors → Add custom connector**: name `AgentShroud`, URL `https://marvin.tail240ea8.ts.net:8443/mcp`, **Sign in now**, OAuth client **Register automatically**. ("Use Claude's published identity" (CIMD) is not supported yet: Anthropic does not publish the hosted apps' client-ID URL, so the edge cannot allowlist it exactly. Claude falls back to registration when CIMD is not advertised.) Enter the one-time code on the consent page.
+6. claude.ai → **Customize → Connectors → Add custom connector**: name `AgentShroud`, URL `https://agentshroud-edge.tail240ea8.ts.net/mcp`, **Sign in now**, OAuth client **Register automatically**. ("Use Claude's published identity" (CIMD) is not supported yet: Anthropic does not publish the hosted apps' client-ID URL, so the edge cannot allowlist it exactly. Claude falls back to registration when CIMD is not advertised.) Enter the one-time code on the consent page.
 7. Set both tools to **ask before use** in the connector's permissions. Smoke-test in a chat, then in Duet: "List the connected apps you can use. Is AgentShroud one of them?" and "Use AgentShroud lab_search to look up the latest OpenClaw release."
 8. **Go/no-go:** if Duet does not list AgentShroud, record it, ask Claude support whether custom connectors work in the Duet preview, and run the tests below through regular Claude.
 
@@ -107,7 +115,7 @@ Duet's traffic comes from Anthropic's cloud, not from your phone, so everything 
 
 Forged/replayed tokens, unlisted tools and schema abuse (H1–H3) cannot be driven from Duet; `gateway/tests/test_edge_*.py` covers them, and they can be repeated against the public URL with the MCP SDK.
 
-**Between sessions:** `asb edge kill --vendor claude-duet --confirm`, `sudo scripts/tailscale-serve.sh edge-funnel off`, remove `claude-duet` from `AGENTSHROUD_EDGE_ENABLE_VENDORS` and run `asb up`, toggle the connector off in Claude, and remove any Duet standing instruction that calls AgentShroud.
+**Between sessions:** `asb edge kill --vendor claude-duet --confirm`, set `AGENTSHROUD_EDGE_FUNNEL=0` (and `docker stop agentshroud-edge-funnel`), remove `claude-duet` from `AGENTSHROUD_EDGE_ENABLE_VENDORS` and run `asb up`, toggle the connector off in Claude, and remove any Duet standing instruction that calls AgentShroud.
 
 ## 2. Killswitch
 

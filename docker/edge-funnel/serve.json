@@ -1,0 +1,40 @@
+{
+  "TCP": {
+    "443": {
+      "HTTPS": true
+    }
+  },
+  "Web": {
+    "${TS_CERT_DOMAIN}:443": {
+      "Handlers": {
+        "/mcp": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/mcp"
+        },
+        "/.well-known/": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/.well-known/"
+        },
+        "/authorize": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/authorize"
+        },
+        "/token": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/token"
+        },
+        "/register": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/register"
+        },
+        "/revoke": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/revoke"
+        },
+        "/oauth/consent": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/oauth/consent"
+        },
+        "/healthz": {
+          "Proxy": "http://agentshroud-mcp-edge:8443/healthz"
+        }
+      }
+    }
+  },
+  "AllowFunnel": {
+    "${TS_CERT_DOMAIN}:443": true
+  }
+}

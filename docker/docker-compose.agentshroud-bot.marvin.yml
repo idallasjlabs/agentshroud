@@ -122,13 +122,18 @@ services:
     environment:
       - EDGE_PUBLIC_URL=${AGENTSHROUD_EDGE_PUBLIC_URL:-https://marvin.tail240ea8.ts.net:10000}
 
+  agentshroud-edge-funnel:
+    container_name: agentshroud-dev-edge-funnel
+    environment:
+      - TS_HOSTNAME=${AGENTSHROUD_EDGE_FUNNEL_HOSTNAME:-agentshroud-edge-dev}
+
 secrets:
   telegram_bot_token:
     file: ./secrets/telegram_bot_token_marvin.txt
   hermes_telegram_bot_token:
     file: ./secrets/hermes_telegram_bot_token_marvin.txt
 
-# All four networks offset from prod (10.254.110-113.0/24) to prevent pool overlap on the same host.
+# All six networks offset from prod (10.254.110-115.0/24) to prevent pool overlap on the same host.
 networks:
   agentshroud-internal:
     ipam:
@@ -146,3 +151,11 @@ networks:
     ipam:
       config: !override
         - subnet: 172.23.0.0/24
+  agentshroud-edge-ingress:
+    ipam:
+      config: !override
+        - subnet: 172.24.0.0/24
+  agentshroud-edge-egress:
+    ipam:
+      config: !override
+        - subnet: 172.25.0.0/24

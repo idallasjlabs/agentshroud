@@ -18,7 +18,14 @@ semantics applied):
   the signing key);
 * the DMZ subnet is outside the gateway's ``PROXY_ALLOWED_NETWORKS``, so the edge
   cannot use ``/v1``, ``/forward`` or the CONNECT proxy;
-* the gateway publishes the edge port on 127.0.0.1 only.
+* the gateway publishes the edge port on 127.0.0.1 only;
+* the dedicated Funnel node (``agentshroud-edge-funnel``) gives the edge its own
+  public hostname on 443, a browser origin of its own instead of sharing the
+  Hermes dashboard's. It shares ``agentshroud-edge-ingress`` (internal) with the
+  edge alone, reaches the internet only through ``agentshroud-edge-egress`` (no
+  other member), runs Tailscale in userspace mode with no capabilities, devices,
+  published ports or docker.sock, holds only ``edge_funnel_authkey``, and its
+  serve config exposes exactly the edge paths, all proxied to the edge.
 
 Every check is also run against a deliberately broken copy of the compose model
 (``MUTATIONS``) to prove it fails when its control is removed.
@@ -30,6 +37,7 @@ from __future__ import annotations
 
 import copy
 import ipaddress
+import json
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional
 
@@ -44,6 +52,22 @@ EDGE = "agentshroud-mcp-edge"
 GATEWAY = "gateway"
 DMZ = "agentshroud-dmz"
 EDGE_PORT = 8443
+FUNNEL = "agentshroud-edge-funnel"
+INGRESS = "agentshroud-edge-ingress"
+EGRESS = "agentshroud-edge-egress"
+FUNNEL_STATE_VOLUME = "edge-funnel-state"
+SERVE_CONFIG = REPO_ROOT / "docker" / "edge-funnel" / "serve.json"
+# Same list as scripts/tailscale-serve.sh EDGE_PATHS: the edge's whole public surface.
+EDGE_PATHS = [
+    "/mcp",
+    "/.well-known/",
+    "/authorize",
+    "/token",
+    "/register",
+    "/revoke",
+    "/oauth/consent",
+    "/healthz",
+]
 
 
 class _Override(list):
@@ -153,8 +177,9 @@ def _published(port: Any) -> Optional[Dict[str, str]]:
 
 
 def check_edge_on_dmz_only(c):
-    nets = _networks(c["services"][EDGE])
-    return None if nets == [DMZ] else f"edge networks are {nets}, expected only {DMZ}"
+    nets = sorted(_networks(c["services"][EDGE]))
+    want = sorted([DMZ, INGRESS])
+    return None if nets == want else f"edge networks are {nets}, expected only {want}"
 
 
 def check_dmz_internal(c):
@@ -278,6 +303,88 @@ def check_forwarder_targets_edge(c):
     )
 
 
+def _members(c, network):
+    return sorted(n for n, s in c["services"].items() if network in _networks(s))
+
+
+def check_ingress_internal_edge_and_funnel_only(c):
+    if (c["networks"].get(INGRESS) or {}).get("internal") is not True:
+        return f"{INGRESS} is not internal: true"
+    members, want = _members(c, INGRESS), sorted([EDGE, FUNNEL])
+    return None if members == want else f"{INGRESS} members are {members}, expected {want}"
+
+
+def check_egress_funnel_only(c):
+    members = _members(c, EGRESS)
+    return None if members == [FUNNEL] else f"{EGRESS} members are {members}, expected [{FUNNEL}]"
+
+
+def check_funnel_networks(c):
+    nets, want = sorted(_networks(c["services"][FUNNEL])), sorted([INGRESS, EGRESS])
+    return None if nets == want else f"funnel networks are {nets}, expected {want}"
+
+
+def check_funnel_unprivileged(c):
+    svc = c["services"][FUNNEL]
+    if svc.get("cap_drop") != ["ALL"] or svc.get("cap_add") or svc.get("privileged"):
+        return f"funnel capabilities: drop={svc.get('cap_drop')} add={svc.get('cap_add')}"
+    if svc.get("devices"):
+        return f"funnel has devices {svc['devices']} (userspace mode needs no /dev/net/tun)"
+    if _environment(svc).get("TS_USERSPACE") != "true":
+        return "funnel is not in TS_USERSPACE=true mode"
+    if svc.get("read_only") is not True:
+        return "funnel root is not read_only"
+    if "no-new-privileges:true" not in [str(o) for o in svc.get("security_opt") or []]:
+        return "funnel lacks no-new-privileges:true"
+    if any(str(o).startswith("seccomp") for o in svc.get("security_opt") or []):
+        return "funnel overrides the default seccomp profile"
+    return None
+
+
+def check_funnel_no_ports_or_host_access(c):
+    svc = c["services"][FUNNEL]
+    if svc.get("ports") or svc.get("network_mode"):
+        return f"funnel publishes ports/network_mode: {svc.get('ports') or svc.get('network_mode')}"
+    if "docker.sock" in yaml.safe_dump(svc):
+        return "funnel references docker.sock"
+    sources = [str(v).split(":", 1)[0] for v in svc.get("volumes") or []]
+    allowed = {FUNNEL_STATE_VOLUME, "./edge-funnel/serve.json"}
+    extra = [v for v in sources if v not in allowed]
+    return None if not extra else f"funnel mounts unexpected volumes {extra}"
+
+
+def check_funnel_secrets(c):
+    secrets = [
+        s if isinstance(s, str) else s.get("source")
+        for s in c["services"][FUNNEL].get("secrets") or []
+    ]
+    return None if secrets == ["edge_funnel_authkey"] else f"funnel secrets are {secrets}"
+
+
+def check_funnel_opt_in_profile(c):
+    profiles = c["services"][FUNNEL].get("profiles") or []
+    return None if profiles == ["edge-funnel"] else f"funnel profiles are {profiles}"
+
+
+def check_serve_config_exposes_only_edge(c, serve=None):
+    serve = serve if serve is not None else json.loads(SERVE_CONFIG.read_text())
+    if list(serve.get("TCP", {})) != ["443"] or not serve["TCP"]["443"].get("HTTPS"):
+        return f"serve TCP config is {serve.get('TCP')}, expected HTTPS on 443 only"
+    funnel = serve.get("AllowFunnel", {})
+    if funnel != {"${TS_CERT_DOMAIN}:443": True}:
+        return f"AllowFunnel is {funnel}"
+    web = serve.get("Web", {})
+    if list(web) != ["${TS_CERT_DOMAIN}:443"]:
+        return f"serve Web hosts are {list(web)}"
+    handlers = web["${TS_CERT_DOMAIN}:443"].get("Handlers", {})
+    if sorted(handlers) != sorted(EDGE_PATHS):
+        return f"serve paths are {sorted(handlers)}, expected {sorted(EDGE_PATHS)}"
+    for path, h in handlers.items():
+        if h != {"Proxy": f"http://{EDGE}:{EDGE_PORT}{path}"}:
+            return f"serve path {path} proxies to {h}, expected the edge"
+    return None
+
+
 CHECKS: Dict[str, Callable[[Dict[str, Any]], Optional[str]]] = {
     f.__name__: f
     for f in (
@@ -297,6 +404,14 @@ CHECKS: Dict[str, Callable[[Dict[str, Any]], Optional[str]]] = {
         check_dmz_subnet_unique,
         check_issuer_matches,
         check_forwarder_targets_edge,
+        check_ingress_internal_edge_and_funnel_only,
+        check_egress_funnel_only,
+        check_funnel_networks,
+        check_funnel_unprivileged,
+        check_funnel_no_ports_or_host_access,
+        check_funnel_secrets,
+        check_funnel_opt_in_profile,
+        check_serve_config_exposes_only_edge,
     )
 }
 
@@ -427,6 +542,62 @@ MUTATIONS: List[tuple] = [
 ]
 
 
+def _serve_mutation(change):
+    def mutate(c):
+        serve = json.loads(SERVE_CONFIG.read_text())
+        change(serve)
+        c["__serve__"] = serve
+
+    return mutate
+
+
+def _handlers(serve):
+    return serve["Web"]["${TS_CERT_DOMAIN}:443"]["Handlers"]
+
+
+MUTATIONS += [
+    ("check_edge_on_dmz_only", lambda c: _svc(c, EDGE).update(networks=[DMZ])),
+    (
+        "check_ingress_internal_edge_and_funnel_only",
+        lambda c: c["networks"][INGRESS].pop("internal"),
+    ),
+    (
+        "check_ingress_internal_edge_and_funnel_only",
+        lambda c: _svc(c, GATEWAY)["networks"].append(INGRESS),
+    ),
+    ("check_egress_funnel_only", lambda c: _svc(c, EDGE)["networks"].append(EGRESS)),
+    ("check_funnel_networks", lambda c: _svc(c, FUNNEL)["networks"].append(DMZ)),
+    ("check_funnel_unprivileged", lambda c: _svc(c, FUNNEL).update(cap_add=["NET_ADMIN"])),
+    (
+        "check_funnel_unprivileged",
+        lambda c: _svc(c, FUNNEL).update(devices=["/dev/net/tun:/dev/net/tun"]),
+    ),
+    ("check_funnel_unprivileged", lambda c: _add_env(c, FUNNEL, "TS_USERSPACE=false")),
+    ("check_funnel_unprivileged", lambda c: _svc(c, FUNNEL).pop("read_only")),
+    ("check_funnel_no_ports_or_host_access", lambda c: _svc(c, FUNNEL).update(ports=["443:443"])),
+    (
+        "check_funnel_no_ports_or_host_access",
+        lambda c: _svc(c, FUNNEL)["volumes"].append("/var/run/docker.sock:/var/run/docker.sock"),
+    ),
+    ("check_funnel_secrets", lambda c: _svc(c, FUNNEL)["secrets"].append("edge_gateway_token")),
+    ("check_funnel_opt_in_profile", lambda c: _svc(c, FUNNEL).pop("profiles")),
+    (
+        "check_serve_config_exposes_only_edge",
+        _serve_mutation(lambda s: _handlers(s).update({"/": {"Proxy": "http://gateway:8080/"}})),
+    ),
+    (
+        "check_serve_config_exposes_only_edge",
+        _serve_mutation(
+            lambda s: _handlers(s).update({"/mcp": {"Proxy": "http://agentshroud-hermes-v2:9119/"}})
+        ),
+    ),
+    (
+        "check_serve_config_exposes_only_edge",
+        _serve_mutation(lambda s: s["AllowFunnel"].update({"${TS_CERT_DOMAIN}:8443": True})),
+    ),
+]
+
+
 def test_every_check_has_a_mutation():
     assert {name for name, _ in MUTATIONS} == set(CHECKS)
 
@@ -437,4 +608,9 @@ def test_every_check_has_a_mutation():
 def test_check_fails_when_control_removed(compose, name, mutate):
     broken = copy.deepcopy(compose)
     mutate(broken)
-    assert CHECKS[name](broken) is not None, f"{name} still passes after mutation"
+    check = CHECKS[name]
+    if name == "check_serve_config_exposes_only_edge":
+        result = check(broken, broken.get("__serve__"))
+    else:
+        result = check(broken)
+    assert result is not None, f"{name} still passes after mutation"

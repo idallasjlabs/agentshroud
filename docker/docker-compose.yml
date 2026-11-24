@@ -1008,11 +1008,12 @@ services:
   # The one internet-facing container: MCP Streamable HTTP + OAuth 2.1 for hosted
   # agents (Claude Duet, Poke, Gemini Spark, OpenAI Dots). A protocol terminator
   # only — every decision is made by the gateway behind POST /edge/v1/rpc, so the
-  # edge holds no signing key, no policy and no state. Public path:
-  #   Funnel :8443 → host 127.0.0.1:8443 → gateway TCP forwarder → this :8443.
-  # Network: agentshroud-dmz ONLY (internal: true). Its sole peer there is the
-  # gateway, so it cannot reach Hermes, OpenClaw, docker-socket-proxy or the
-  # internet (gateway/tests/test_edge_network_isolation.py,
+  # edge holds no signing key, no policy and no state. Public paths:
+  #   dedicated node: agentshroud-edge-funnel (443, own hostname) → this :8443;
+  #   legacy: Funnel :8443 → host 127.0.0.1:8443 → gateway TCP forwarder → this :8443.
+  # Networks: agentshroud-dmz (internal: true; sole peer the gateway) and
+  # agentshroud-edge-ingress (internal: true; sole peer its Funnel node), so it
+  # cannot reach Hermes, OpenClaw, docker-socket-proxy or the internet (gateway/tests/test_edge_network_isolation.py,
   # scripts/smoke.d/test-edge-isolation.sh). With AGENTSHROUD_INBOUND_EDGE unset
   # on the gateway it stays up but every call gets the gateway's 503.
   # IEC 62443: FR5 (Restricted Data Flow) SL2, FR3 (System Integrity).
@@ -1032,6 +1033,8 @@ services:
         condition: service_healthy
     networks:
       - agentshroud-dmz
+      # Shared only with agentshroud-edge-funnel, the edge's dedicated public door.
+      - agentshroud-edge-ingress
     user: "10001:10001"
     read_only: true
     cap_drop:
@@ -1070,6 +1073,77 @@ services:
       timeout: 5s
       retries: 3
       start_period: 20s
+
+  # ── Inbound MCP Edge: dedicated public door ───────────────────────────────────
+  # Its own Tailscale node, e.g. https://agentshroud-edge.<tailnet>.ts.net on 443.
+  # claude.ai's connector backend does not connect to Funnel :8443 (2026-11-24),
+  # and 443 on the host node is the Hermes dashboard's origin: putting the edge's
+  # consent page there would let a Hermes page script drive it. A separate node
+  # gives the edge its own origin, certificate and kill switch.
+  # Topology: shares agentshroud-edge-ingress (internal) with the edge ONLY and
+  # reaches Tailscale's control plane through agentshroud-edge-egress (no other
+  # member). Userspace networking: no NET_ADMIN, no /dev/net/tun, no forwarding,
+  # so it cannot route the edge anywhere. serve.json exposes exactly the edge's
+  # paths (gateway/tests/test_edge_network_isolation.py).
+  # Opt-in: profile edge-funnel, started by asb when AGENTSHROUD_EDGE_FUNNEL=1.
+  # It runs as root because containerboot needs to write its state volume, but
+  # with every capability dropped, a read-only root and no-new-privileges.
+  # IEC 62443: FR5 (Restricted Data Flow) SL2, FR1 (separate identity).
+  agentshroud-edge-funnel:
+    profiles: [edge-funnel]
+    image: tailscale/tailscale:v1.104.7@sha256:72c1e19e0aedca96b8533bbb0b4368564410ff20b17e53b804eb6c1f04a31be4
+    container_name: agentshroud-edge-funnel
+    restart: unless-stopped
+    depends_on:
+      agentshroud-mcp-edge:
+        condition: service_healthy
+    networks:
+      - agentshroud-edge-ingress
+      - agentshroud-edge-egress
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp:noexec,nosuid,nodev,size=16m
+    volumes:
+      - edge-funnel-state:/var/lib/tailscale
+      - ./edge-funnel/serve.json:/config/serve.json:ro
+    secrets:
+      - edge_funnel_authkey
+    # The auth key is read from the secret file at start, never set in compose
+    # or .env. It is only needed for the first login; the node key then lives in
+    # the state volume (TS_AUTH_ONCE).
+    entrypoint:
+      - /bin/sh
+      - -c
+      - 'TS_AUTHKEY="$$(cat /run/secrets/edge_funnel_authkey)" exec /usr/local/bin/containerboot'
+    environment:
+      - TS_USERSPACE=true
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_AUTH_ONCE=true
+      - TS_ACCEPT_DNS=false
+      - TS_HOSTNAME=${AGENTSHROUD_EDGE_FUNNEL_HOSTNAME:-agentshroud-edge}
+      - TS_EXTRA_ARGS=--advertise-tags=${AGENTSHROUD_EDGE_FUNNEL_TAG:-tag:agentshroud-edge}
+      - TS_SERVE_CONFIG=/config/serve.json
+      - TS_ENABLE_HEALTH_CHECK=true
+      - TS_LOCAL_ADDR_PORT=127.0.0.1:9002
+    mem_limit: 256m
+    memswap_limit: 256m
+    cpus: 0.5
+    pids_limit: 128
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:9002/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
 
 
 # ── Secrets ────────────────────────────────────────────────────────────────────
@@ -1127,6 +1201,9 @@ secrets:
     file: ./secrets/edge_signing_key.txt
   edge_gateway_token:
     file: ./secrets/edge_gateway_token.txt
+  # Tailscale auth key (tagged, for the edge's dedicated Funnel node only).
+  edge_funnel_authkey:
+    file: ./secrets/edge_funnel_authkey.txt
 
 # ── Networks (SCRUM-93 · IEC 62443 FR5 — Restricted Data Flow / network DMZ) ─────
 # THREE-TIER SEGMENTATION:
@@ -1169,6 +1246,19 @@ networks:
     ipam:
       config:
         - subnet: 10.254.113.0/24
+  # Edge <-> its Funnel node only (agentshroud-edge-funnel).
+  agentshroud-edge-ingress:
+    driver: bridge
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.254.114.0/24
+  # The Funnel node's route to Tailscale's control plane and relays; no other member.
+  agentshroud-edge-egress:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.254.115.0/24
   agentshroud-console:
     # Retained for backwards compatibility with override files.
     # Canvas port 18789 is now published by the gateway (via canvas auth-proxy),
@@ -1182,6 +1272,10 @@ networks:
 # ── Volumes ────────────────────────────────────────────────────────────────────
 volumes:
   gateway-data:
+    driver: local
+  # Tailscale node identity of the edge's Funnel node (survives restarts, so the
+  # auth key is used once).
+  edge-funnel-state:
     driver: local
   agentshroud-config:
     driver: local

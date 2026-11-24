@@ -393,6 +393,9 @@ declare -a SECRET_DEFS=(
     "feedbin_password|Feedbin account password|yes|yes|hermes"
     "podcastindex_api_key|Podcast Index API key|yes|yes|hermes"
     "podcastindex_api_secret|Podcast Index API secret|yes|yes|hermes"
+    # Tagged Tailscale auth key for the Inbound MCP Edge's dedicated Funnel node
+    # (docker-compose.yml agentshroud-edge-funnel). Used once, at first login.
+    "edge_funnel_authkey|Tailscale auth key for the edge Funnel node (tskey-auth-..., tagged)|yes|yes|all"
 )
 
 # ── Inbound MCP Edge secrets (SCRUM-215) ───────────────────────────────────────
@@ -722,6 +725,31 @@ cmd_extract() {
     fi
 }
 
+# store-one NAME — prompt (masked) for one SECRET_DEFS entry and store only that.
+# Unlike `store`, it does not regenerate gateway_password or touch any other
+# secret, so adding a new credential never rotates an existing one.
+cmd_store_one() {
+    local want="${1:-}" def name prompt masked optional secret_bot value
+    if [[ -z "$want" ]]; then
+        echo "Usage: setup-secrets.sh store-one <name>" >&2
+        return 2
+    fi
+    for def in "${SECRET_DEFS[@]}"; do
+        IFS='|' read -r name prompt masked optional secret_bot <<< "$def"
+        [[ "$name" == "$want" ]] || continue
+        value="$(read_secret_masked "$prompt")"
+        if [[ -z "$value" ]]; then
+            echo "  [aborted] empty value — nothing stored" >&2
+            return 1
+        fi
+        store_secret "$name" "$value"
+        echo "  [stored] $name (backend: ${BACKEND})"
+        return 0
+    done
+    echo "Unknown secret '$want' — not in SECRET_DEFS" >&2
+    return 2
+}
+
 cmd_dump_op_refs() {
     # Prints "name=op://..." for every secret with a DEDICATED op_ref_for()
     # entry (the exact, non-fuzzy references gateway/ingest_api/main.py's
@@ -861,6 +889,7 @@ Usage:
   ./setup-secrets.sh store                   Store ALL secrets in credential backend
   ./setup-secrets.sh store --bot openclaw    Store only OpenClaw + shared secrets
   ./setup-secrets.sh store --bot hermes      Store only Hermes + shared secrets
+  ./setup-secrets.sh store-one <name>        Store ONE secret (masked prompt); touches no other secret
   ./setup-secrets.sh extract                 Extract ALL secrets → docker/secrets/*.txt
   ./setup-secrets.sh extract --bot openclaw  Extract only OpenClaw + shared secret files
   ./setup-secrets.sh extract --bot hermes    Extract only Hermes + shared secret files
@@ -909,6 +938,12 @@ if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
     trap 'rm -rf "$OP_STATE_DIR"' EXIT
     SUBCOMMAND="${1:-}"
     shift || true  # consume subcommand; remaining args parsed below
+    # store-one takes a positional secret name, which the flag parser below rejects.
+    STORE_ONE_NAME=""
+    if [[ "$SUBCOMMAND" == "store-one" ]]; then
+        STORE_ONE_NAME="${1:-}"
+        shift || true
+    fi
 
     # Parse optional --bot flag for store/extract subcommands.
     # Exported as BOT_FILTER so helper functions can read it.
@@ -938,6 +973,7 @@ if [[ "${BASH_SOURCE[0]}" == "$0" ]]; then
 
     case "$SUBCOMMAND" in
         store)   cmd_store ;;
+        store-one) cmd_store_one "$STORE_ONE_NAME" ;;
         extract) cmd_extract ;;
         migrate) cmd_migrate ;;
         edge-init) cmd_edge_init ;;
