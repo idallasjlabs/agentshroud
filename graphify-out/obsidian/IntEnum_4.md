@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "DifferentialPIIDetector"
+community: "TrustLevel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/TrustLevel
 ---
 
 # IntEnum
 
 ## Connections
-- [[PIIHitSeverity]] - `inherits` [EXTRACTED]
+- [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

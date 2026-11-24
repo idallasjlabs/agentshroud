@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustManager
 ---
 
 # IntEnum
 
 ## Connections
-- [[TrustLevel_1]] - `inherits` [EXTRACTED]
+- [[BotIncidentSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

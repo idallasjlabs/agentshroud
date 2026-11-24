@@ -20,7 +20,7 @@ tags:
 - [[TestRunMultiHost]] - `uses` [INFERRED]
 - [[classify()_2]] - `references` [EXTRACTED]
 - [[multi_host_test.py]] - `contains` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str_4]] - `inherits` [EXTRACTED]
 - [[test_multi_host_test.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/multi_host_testpy

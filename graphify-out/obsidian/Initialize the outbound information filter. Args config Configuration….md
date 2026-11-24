@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "asyncio"
+community: "OutboundInfoFilter"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/OutboundInfoFilter
 ---
 
 # Initialize the outbound information filter. Args: config: Configuration…
 
 ## Connections
-- [[dot-__init__()_90]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_121]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

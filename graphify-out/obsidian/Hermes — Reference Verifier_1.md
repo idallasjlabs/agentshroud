@@ -16,7 +16,7 @@ tags:
 - [[Output Format_47]] - `contains` [EXTRACTED]
 - [[Persona_26]] - `contains` [EXTRACTED]
 - [[Quality Checklist_32]] - `contains` [EXTRACTED]
-- [[Role_97]] - `contains` [EXTRACTED]
+- [[Role_98]] - `contains` [EXTRACTED]
 - [[System Prompt_26]] - `contains` [EXTRACTED]
 - [[hermesSKILL]] - `contains` [EXTRACTED]
 

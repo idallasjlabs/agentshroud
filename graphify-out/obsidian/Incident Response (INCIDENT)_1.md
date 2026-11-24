@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-productionREADME]] - `contains` [EXTRACTED]
-- [[Purpose_106]] - `contains` [EXTRACTED]
+- [[Purpose_104]] - `contains` [EXTRACTED]
 - [[Related Skills_36]] - `contains` [EXTRACTED]
 - [[Usage_46]] - `contains` [EXTRACTED]
 

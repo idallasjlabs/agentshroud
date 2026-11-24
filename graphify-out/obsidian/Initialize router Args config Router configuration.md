@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L53"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # Initialize router Args: config: Router configuration
 
 ## Connections
-- [[dot-__init__()_99]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_102]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig

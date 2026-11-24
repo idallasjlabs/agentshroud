@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TestExfiltrationDetection"
+community: "MetadataGuard"
 location: "L613"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/MetadataGuard
 ---
 
 # High-entropy domains (potential tunneling).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dns_entropy_calculator()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EgressEvent"
+community: "PIIHit"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/PIIHit
 ---
 
 # IntEnum
 
 ## Connections
-- [[AlertSeverity]] - `inherits` [EXTRACTED]
+- [[PIIHitSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/PIIHit
