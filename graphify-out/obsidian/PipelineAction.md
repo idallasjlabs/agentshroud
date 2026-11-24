@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "PipelineAction"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_e2e_proxypy
+  - community/PipelineAction
 ---
 
 # PipelineAction
 
 ## Connections
-- [[Enum_29]] - `inherits` [EXTRACTED]
+- [[Enum_23]] - `inherits` [EXTRACTED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestContextIntegrityInPipeline]] - `uses` [INFERRED]
 - [[TestE2E01PromptGuardBlocking]] - `uses` [INFERRED]
@@ -22,7 +22,7 @@ tags:
 - [[TestPIIBlockModeInPipeline]] - `uses` [INFERRED]
 - [[_make_pipeline_result()]] - `uses` [INFERRED]
 - [[pipeline.py_1]] - `contains` [EXTRACTED]
-- [[str_15]] - `inherits` [EXTRACTED]
+- [[str_14]] - `inherits` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `uses` [INFERRED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
 - [[test_clean_message_passes()]] - `uses` [INFERRED]
@@ -48,4 +48,4 @@ tags:
 - [[test_trust_level_enforced()]] - `uses` [INFERRED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_e2e_proxypy
+#graphify/code #graphify/INFERRED #community/PipelineAction

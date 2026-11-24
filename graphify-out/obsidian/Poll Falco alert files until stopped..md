@@ -12,6 +12,6 @@ tags:
 # Poll Falco alert files until stopped.
 
 ## Connections
-- [[dot-run()]] - `rationale_for` [EXTRACTED]
+- [[dot-run()_12]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/FalcoAlertWatcher

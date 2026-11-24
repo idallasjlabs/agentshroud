@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "MCPProxy"
+community: "._extract_egress_targets"
 location: "L761"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/_extract_egress_targets
 ---
 
 # Process a tool result coming back (for cases where execution happens…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-process_tool_result()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPProxy
+#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
