@@ -1,15 +1,15 @@
 ---
 type: community
-members: 118
+members: 109
 ---
 
 # api.py
 
-**Members:** 118 nodes
+**Members:** 109 nodes
 
 ## Members
 - [[dot-effective_rootless()]] - code - gateway/runtime/config.py
-- [[dot-from_dict()_7]] - code - gateway/runtime/config.py
+- [[dot-from_dict()_8]] - code - gateway/runtime/config.py
 - [[dot-from_env()_1]] - code - gateway/runtime/config.py
 - [[dot-test_effective_rootless_docker()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_effective_rootless_override()]] - code - gateway/tests/test_runtime_engines.py
@@ -18,7 +18,6 @@ members: 118
 - [[dot-test_from_env_defaults()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_from_env_set()]] - code - gateway/tests/test_runtime_engines.py
 - [[A draft competitive-intel report submitted for citation verification.]] - rationale - gateway/web/api.py
-- [[A security feature with runtime support info.]] - rationale - gateway/runtime/security.py
 - [[Aggregate security report.]] - rationale - gateway/web/api.py
 - [[BaseModel_8]] - code
 - [[Build a CitationVerifier wired to the production (httpx) fetcher. Isolated in a…]] - rationale - gateway/web/api.py
@@ -46,23 +45,20 @@ members: 118
 - [[Re-read ``~.llm_settings`` and sync skillsagentsMCP into both bot configs.…]] - rationale - gateway/web/api.py
 - [[Rebuild containers with latest images.]] - rationale - gateway/web/api.py
 - [[Resolve rootless setting based on runtime.]] - rationale - gateway/runtime/config.py
+- [[Resolve the Dockerfile for the default bot from gateway config.]] - rationale - gateway/web/api.py
 - [[Restart a specific service container.]] - rationale - gateway/web/api.py
 - [[Retrieve container logs with optional filtering.]] - rationale - gateway/web/api.py
-- [[Return a comparison dict {feature_name {runtime supported}}.]] - rationale - gateway/runtime/security.py
 - [[Return an IntelReportStore pointed at the configured data directory.]] - rationale - gateway/web/api.py
-- [[Return features NOT available for a given runtime.]] - rationale - gateway/runtime/security.py
 - [[Return real container names for all configured bots (e.g. 'agentshroud-…]] - rationale - gateway/web/api.py
 - [[Return recent competitive-intelligence reports in reverse-chronological order.…]] - rationale - gateway/web/api.py
 - [[Return the current AGENTSHROUD_MODE.]] - rationale - gateway/web/api.py
 - [[Return the latest validated competitive-intelligence report. Auth-gated (owner…]] - rationale - gateway/web/api.py
 - [[Return update history from audit log.]] - rationale - gateway/web/api.py
-- [[Return warning messages for missing security features.]] - rationale - gateway/runtime/security.py
 - [[Revert to previous git commit and rebuild.]] - rationale - gateway/web/api.py
 - [[Rollback OpenClaw (backward-compat alias for updatesbotopenclawrollback).]] - rationale - gateway/web/api.py
 - [[Rollback a named bot container to the previous image tag.]] - rationale - gateway/web/api.py
 - [[Runtime configuration for multi-engine container support.]] - rationale - gateway/runtime/config.py
 - [[RuntimeConfig]] - code - gateway/runtime/config.py
-- [[SecurityFeature]] - code - gateway/runtime/security.py
 - [[Start a specific service container.]] - rationale - gateway/web/api.py
 - [[Stop a specific service container.]] - rationale - gateway/web/api.py
 - [[TestRuntimeConfig]] - code - gateway/tests/test_runtime_engines.py
@@ -71,7 +67,6 @@ members: 118
 - [[Upgrade OpenClaw (backward-compat alias for updatesbotopenclawupgrade).]] - rationale - gateway/web/api.py
 - [[Upgrade a named bot container.]] - rationale - gateway/web/api.py
 - [[Validate a management WebSocket token (single-use, time-limited).]] - rationale - gateway/web/api.py
-- [[Validate runtime name to prevent attribute access injection.]] - rationale - gateway/runtime/security.py
 - [[Validate service name against allowlist to prevent injection.]] - rationale - gateway/web/api.py
 - [[Verify and persist a draft competitive-intel report (SCRUM-75). Each draft…]] - rationale - gateway/web/api.py
 - [[WebSocket endpoint for real-time log streaming. Requires scoped WS token.]] - rationale - gateway/web/api.py
@@ -79,12 +74,12 @@ members: 118
 - [[_bot_service_names()]] - code - gateway/web/api.py
 - [[_bot_service_names() must use each bot's real container name, not a hardcoded…]] - rationale - gateway/tests/test_config.py
 - [[_create_mgmt_ws_token()]] - code - gateway/web/api.py
+- [[_get_default_bot_dockerfile()]] - code - gateway/web/api.py
 - [[_get_engine()]] - code - gateway/web/api.py
 - [[_intel_store()]] - code - gateway/web/api.py
 - [[_intel_verifier()]] - code - gateway/web/api.py
 - [[_valid_services()]] - code - gateway/web/api.py
 - [[_validate_mgmt_ws_token()]] - code - gateway/web/api.py
-- [[_validate_runtime()]] - code - gateway/runtime/security.py
 - [[_validate_service_name()]] - code - gateway/web/api.py
 - [[api.py_2]] - code - gateway/web/api.py
 - [[check_agentshroud_updates()]] - code - gateway/web/api.py
@@ -92,17 +87,15 @@ members: 118
 - [[check_openclaw_updates()]] - code - gateway/web/api.py
 - [[execute_killswitch()]] - code - gateway/web/api.py
 - [[export_config()]] - code - gateway/web/api.py
-- [[get_2]] - code
+- [[get_5]] - code
 - [[get_competitive_intel()]] - code - gateway/web/api.py
 - [[get_competitive_intel_history()]] - code - gateway/web/api.py
 - [[get_config()]] - code - gateway/web/api.py
 - [[get_logs()_1]] - code - gateway/web/api.py
-- [[get_missing_features()]] - code - gateway/runtime/security.py
 - [[get_mode()]] - code - gateway/web/api.py
-- [[get_security_comparison()]] - code - gateway/runtime/security.py
 - [[get_status()]] - code - gateway/web/api.py
 - [[import_config()]] - code - gateway/web/api.py
-- [[killswitch()]] - code - gateway/web/api.py
+- [[killswitch()_1]] - code - gateway/web/api.py
 - [[post_5]] - code
 - [[rebuild()]] - code - gateway/web/api.py
 - [[restart_service()_2]] - code - gateway/web/api.py
@@ -110,7 +103,6 @@ members: 118
 - [[rollback_bot()]] - code - gateway/web/api.py
 - [[rollback_openclaw()]] - code - gateway/web/api.py
 - [[runtimeconfig.py]] - code - gateway/runtime/config.py
-- [[security.py_2]] - code - gateway/runtime/security.py
 - [[security_report()]] - code - gateway/web/api.py
 - [[skills_reload()]] - code - gateway/web/api.py
 - [[start_service()_2]] - code - gateway/web/api.py
@@ -122,8 +114,7 @@ members: 118
 - [[upgrade_agentshroud()]] - code - gateway/web/api.py
 - [[upgrade_bot()_1]] - code - gateway/web/api.py
 - [[upgrade_openclaw()]] - code - gateway/web/api.py
-- [[warn_missing_features()]] - code - gateway/runtime/security.py
-- [[websocket_4]] - code
+- [[websocket_5]] - code
 - [[ws_logs()]] - code - gateway/web/api.py
 - [[ws_updates()]] - code - gateway/web/api.py
 
@@ -135,32 +126,36 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 12 edges to [[_COMMUNITY_test_web_api_coverage.py]]
-- 6 edges to [[_COMMUNITY_load_config]]
-- 5 edges to [[_COMMUNITY_DraftEntry]]
-- 5 edges to [[_COMMUNITY_patch]]
-- 4 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY__engine]]
-- 4 edges to [[_COMMUNITY__skills_reload_impl]]
+- 9 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 7 edges to [[_COMMUNITY__engine]]
+- 6 edges to [[_COMMUNITY_lifespan]]
+- 4 edges to [[_COMMUNITY_ModeRequest]]
+- 4 edges to [[_COMMUNITY_DraftEntry]]
+- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_KillSwitchError]]
 - 3 edges to [[_COMMUNITY_dot-from_source]]
-- 3 edges to [[_COMMUNITY_installer.py]]
-- 3 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 3 edges to [[_COMMUNITY_fastapi]]
+- 3 edges to [[_COMMUNITY_patch]]
+- 3 edges to [[_COMMUNITY__resolve_bot_container]]
+- 3 edges to [[_COMMUNITY__skills_reload_impl]]
+- 3 edges to [[_COMMUNITY_GatewayConfig]]
 - 2 edges to [[_COMMUNITY_IntelReportStore]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
 - 2 edges to [[_COMMUNITY_make_httpx_fetcher]]
+- 2 edges to [[_COMMUNITY_detect_runtime]]
 - 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
-- 1 edge to [[_COMMUNITY_AppleContainerEngine]]
+- 1 edge to [[_COMMUNITY_require_auth]]
+- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_management.py]]
+- 1 edge to [[_COMMUNITY_ContainerEngine]]
 - 1 edge to [[_COMMUNITY_test_skill_guard.py]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 1 edge to [[_COMMUNITY_test_intel_endpoint.py]]
 - 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
 
 ## Top bridge nodes
-- [[api.py_2]] - degree 82, connects to 19 communities
-- [[get_security_comparison()]] - degree 9, connects to 2 communities
-- [[security.py_2]] - degree 9, connects to 2 communities
-- [[UpdateRequest]] - degree 8, connects to 2 communities
+- [[api.py_2]] - degree 82, connects to 25 communities
+- [[get_status()]] - degree 10, connects to 3 communities
+- [[execute_killswitch()]] - degree 10, connects to 2 communities
 - [[_bot_service_names()]] - degree 8, connects to 2 communities
+- [[_intel_verifier()]] - degree 5, connects to 2 communities

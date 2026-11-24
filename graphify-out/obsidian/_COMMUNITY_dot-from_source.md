@@ -1,11 +1,11 @@
 ---
 type: community
-members: 56
+members: 57
 ---
 
 # .from_source
 
-**Members:** 56 nodes
+**Members:** 57 nodes
 
 ## Members
 - [[dot-from_source()]] - code - gateway/skills/manifest.py
@@ -44,6 +44,7 @@ members: 56
 - [[Copy all files in manifest from source to each per-bot destination.…]] - rationale - gateway/skills/manifest.py
 - [[In-memory representation of the skillsagentsMCP manifest.]] - rationale - gateway/skills/manifest.py
 - [[One unit of work in a deploy plan (canonical entry - per-bot path). ``action``…]] - rationale - gateway/skills/manifest.py
+- [[Path_71]] - code
 - [[Path_72]] - code
 - [[PlannedAction]] - code - gateway/skills/manifest.py
 - [[Return names of entries that are missing or hash-mismatched in dest. Returns…]] - rationale - gateway/skills/manifest.py
@@ -73,17 +74,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 14 edges to [[_COMMUNITY_ManifestEntry]]
+- 11 edges to [[_COMMUNITY_ManifestEntry]]
 - 7 edges to [[_COMMUNITY_TestSkillsReloadEndpoint]]
 - 3 edges to [[_COMMUNITY_ScanResult_1]]
 - 3 edges to [[_COMMUNITY_api.py]]
 - 3 edges to [[_COMMUNITY__skills_reload_impl]]
-- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
-- 1 edge to [[_COMMUNITY_fastapi]]
+- 1 edge to [[_COMMUNITY_require_auth]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
 - [[SkillsManifest]] - degree 20, connects to 5 communities
 - [[test_skills_manifest_sync.py]] - degree 20, connects to 5 communities
 - [[dot-from_source()]] - degree 33, connects to 4 communities
-- [[deploy_manifest()]] - degree 24, connects to 4 communities
+- [[deploy_manifest()]] - degree 24, connects to 3 communities
 - [[Path_72]] - degree 33, connects to 2 communities

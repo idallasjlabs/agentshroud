@@ -1,38 +1,70 @@
 ---
 type: community
-members: 34
+members: 92
 ---
 
 # lifespan
 
-**Members:** 34 nodes
+**Members:** 92 nodes
 
 ## Members
-- [[dot-filter()_1]] - code - gateway/ingest_api/lifespan.py
-- [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - code - gateway/tests/test_config_validation.py
+- [[dot-filter()]] - code - gateway/ingest_api/lifespan.py
+- [[dot-model_post_init()]] - code - gateway/ingest_api/config.py
+- [[dot-test_file_exists()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_mcp_proxy_data_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_mcp_proxy_data_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_proxy_allowed_domains_defaults_to_empty_when_absent()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[A missing file (mtime -1.0) must not trigger a reload (no reject storm).]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[A structurally-valid YAML that violates the pydantic schema is rejected.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[Attach BufferHandler to the root agentshroud logger.]] - rationale - gateway/web/dashboard_endpoints.py
-- [[FastAPI_1]] - code
+- [[AuditExportConfig]] - code - gateway/ingest_api/config.py
+- [[Background mtime-poll watcher reload the config when the file changes. Polls…]] - rationale - gateway/ingest_api/config.py
+- [[Channel ownership configuration (P3 Telegram + email oversight, P5 iMessage)]] - rationale - gateway/ingest_api/config.py
+- [[ChannelsConfig]] - code - gateway/ingest_api/config.py
+- [[Configuration for compliance audit export functionality.]] - rationale - gateway/ingest_api/config.py
+- [[Copy only the reloadable-field subset from ``new`` onto ``current`` in place.…]] - rationale - gateway/ingest_api/config.py
+- [[Every GatewayConfig field is classified exactly once, disjointly.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[FastAPI_2]] - code
 - [[FastAPI lifespan - startup and shutdown]] - rationale - gateway/ingest_api/lifespan.py
+- [[File mtime changes but no reloadable field differs — reload still succeeds.]] - rationale - gateway/tests/test_config_hot_reload.py
 - [[Install warning filter once for uvicorn logger.]] - rationale - gateway/ingest_api/lifespan.py
-- [[Lifespan filter should suppress repeated malformed HTTP warning noise.]] - rationale - gateway/tests/test_config_validation.py
-- [[LogRecord_1]] - code
+- [[Load and validate configuration from agentshroud.yaml Search order 1. Explicit…]] - rationale - gateway/ingest_api/config.py
+- [[LogRecord]] - code
+- [[Path_15]] - code
+- [[Path_16]] - code
+- [[Re-parse and validate ``config_path``; atomically swap in reloadable fields.…]] - rationale - gateway/ingest_api/config.py
 - [[Resolve each configured bot's OWN Telegram token, distinct from the default.…]] - rationale - gateway/ingest_api/lifespan.py
+- [[Resolve the config file path using the same search order as load_config().…]] - rationale - gateway/ingest_api/config.py
+- [[Return the file mtime, or -1.0 if the file is missing (treated as no-op).]] - rationale - gateway/ingest_api/config.py
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - rationale - gateway/ingest_api/lifespan.py
+- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
+- [[TestMCPProxyConfigLoading]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[Tests for SCRUM-89 config hot-reload (config.py). Covers the validated, fail-…]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
 - [[_DropInvalidHTTPRequestFilter]] - code - gateway/ingest_api/lifespan.py
 - [[_alert_sanitize()]] - code - gateway/ingest_api/lifespan.py
 - [[_audit_chain_heartbeat()]] - code - gateway/ingest_api/lifespan.py
 - [[_build_per_bot_telegram_tokens()]] - code - gateway/ingest_api/lifespan.py
 - [[_check_trivy_report()]] - code - gateway/ingest_api/lifespan.py
+- [[_default_mtime returns the file mtime, and -1.0 when the file is absent.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[_default_mtime()]] - code - gateway/ingest_api/config.py
+- [[_drive()]] - code - gateway/tests/test_config_hot_reload.py
+- [[_drive()_1]] - code - gateway/tests/test_config_hot_reload.py
+- [[_drive()_2]] - code - gateway/tests/test_config_hot_reload.py
+- [[_fake_mtime()]] - code - gateway/tests/test_config_hot_reload.py
+- [[_handle()]] - code - gateway/ingest_api/lifespan.py
 - [[_handle()_1]] - code - gateway/ingest_api/lifespan.py
-- [[_handle()_2]] - code - gateway/ingest_api/lifespan.py
 - [[_install_uvicorn_warning_filter()]] - code - gateway/ingest_api/lifespan.py
+- [[_load()_1]] - code - gateway/tests/test_config_hot_reload.py
 - [[_on_config_reload()]] - code - gateway/ingest_api/lifespan.py
+- [[_on_reload()]] - code - gateway/tests/test_config_hot_reload.py
 - [[_op_authenticate()]] - code - gateway/ingest_api/lifespan.py
 - [[_pipe()]] - code - gateway/ingest_api/lifespan.py
 - [[_pipe()_1]] - code - gateway/ingest_api/lifespan.py
 - [[_prewarm_op()]] - code - gateway/ingest_api/lifespan.py
 - [[_report_sanitize()]] - code - gateway/ingest_api/lifespan.py
-- [[_resource_alert_bridge()_1]] - code - gateway/ingest_api/lifespan.py
+- [[_resource_alert_bridge()]] - code - gateway/ingest_api/lifespan.py
 - [[_run_canvas_proxy()]] - code - gateway/ingest_api/lifespan.py
 - [[_run_hermes_api_forwarder()]] - code - gateway/ingest_api/lifespan.py
 - [[_run_hermes_dashboard_forwarder()]] - code - gateway/ingest_api/lifespan.py
@@ -40,8 +72,34 @@ members: 34
 - [[_run_security_scheduler()]] - code - gateway/ingest_api/lifespan.py
 - [[_verify_bot_image()]] - code - gateway/ingest_api/lifespan.py
 - [[_wazuh_periodic()]] - code - gateway/ingest_api/lifespan.py
+- [[_write()]] - code - gateway/tests/test_config_hot_reload.py
+- [[apply_reloadable_config()]] - code - gateway/ingest_api/config.py
+- [[config_watcher()]] - code - gateway/ingest_api/config.py
 - [[install_log_handler()]] - code - gateway/web/dashboard_endpoints.py
 - [[lifespan()]] - code - gateway/ingest_api/lifespan.py
+- [[load_config()]] - code - gateway/ingest_api/config.py
+- [[mcp_proxy_data is an empty dict when section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[mcp_proxy_data is populated from the mcp_proxy YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[parametrize_5]] - code
+- [[proxy_allowed_domains is empty list when proxy section is absent from YAML.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[reload_config()]] - code - gateway/ingest_api/config.py
+- [[resolve_config_path honors the explicit arg and AGENTSHROUD_CONFIG env.]] - rationale - gateway/tests/test_config_hot_reload.py
+- [[resolve_config_path()]] - code - gateway/ingest_api/config.py
+- [[test_apply_swaps_only_reloadable_fields()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_config_hot_reload.py]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
+- [[test_default_mtime_reads_real_file_and_handles_missing()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_field_partition_is_disjoint_and_covers_model()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_applies_valid_change()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_missing_file_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_no_reloadable_field_changed()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_rejects_invalid_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_resolve_config_path_explicit_and_env()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_ignores_missing_file()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_reloads_on_mtime_change()]] - code - gateway/tests/test_config_hot_reload.py
+- [[test_watcher_stops_on_event()]] - code - gateway/tests/test_config_hot_reload.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,55 +109,60 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_lifespan.py]]
-- 4 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 4 edges to [[_COMMUNITY_load_config]]
-- 4 edges to [[_COMMUNITY_app]]
+- 25 edges to [[_COMMUNITY_lifespan.py]]
+- 21 edges to [[_COMMUNITY_GatewayConfig]]
+- 11 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 6 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 6 edges to [[_COMMUNITY_api.py]]
+- 4 edges to [[_COMMUNITY_TestParanoidConfig]]
+- 4 edges to [[_COMMUNITY_middleware.py]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
 - 3 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 3 edges to [[_COMMUNITY_KeyVault]]
-- 3 edges to [[_COMMUNITY_middleware.py]]
-- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 3 edges to [[_COMMUNITY_TrustManager]]
 - 3 edges to [[_COMMUNITY_AgentRegistry]]
-- 2 edges to [[_COMMUNITY_FalcoAlertWatcher]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_TestConfigValidation]]
+- 3 edges to [[_COMMUNITY_app]]
+- 2 edges to [[_COMMUNITY_run]]
 - 2 edges to [[_COMMUNITY_RateLimitGuard]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
 - 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
+- 2 edges to [[_COMMUNITY_ProgressiveTrustConfig]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
 - 2 edges to [[_COMMUNITY_WebProxy]]
-- 2 edges to [[_COMMUNITY_MCPProxy]]
-- 2 edges to [[_COMMUNITY_SecurityConfig]]
 - 2 edges to [[_COMMUNITY_test_edge_service_routes.py]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_DelegationManager]]
+- 1 edge to [[_COMMUNITY_DelegationPrivilege]]
 - 1 edge to [[_COMMUNITY_ReportStore]]
 - 1 edge to [[_COMMUNITY_CronStateMonitor]]
 - 1 edge to [[_COMMUNITY_EncryptedStore]]
 - 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
-- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
+- 1 edge to [[_COMMUNITY_dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise]]
 - 1 edge to [[_COMMUNITY_ContainerSnapshot]]
-- 1 edge to [[_COMMUNITY_MemoryLifecycleManager]]
 - 1 edge to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_MemoryLifecycleConfig]]
+- 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 1 edge to [[_COMMUNITY_KeyLeakDetector]]
+- 1 edge to [[_COMMUNITY_SecurityConfig]]
 - 1 edge to [[_COMMUNITY_ContextGuard]]
 - 1 edge to [[_COMMUNITY_SSHProxy]]
 - 1 edge to [[_COMMUNITY_BufferHandler]]
-- 1 edge to [[_COMMUNITY_asyncio_1]]
+- 1 edge to [[_COMMUNITY_SecurityPipeline]]
 - 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
 - 1 edge to [[_COMMUNITY_CanaryTripwire]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
 - 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
+- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 - 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
 - 1 edge to [[_COMMUNITY_GroupRegistry]]
-- 1 edge to [[_COMMUNITY_PromptGuard]]
-- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 - 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_ApprovalStore]]
-- 1 edge to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 1 edge to [[_COMMUNITY_EncodingDetector]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
 - 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
-- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_EgressFilter]]
 - 1 edge to [[_COMMUNITY_AuditStore]]
@@ -107,26 +170,30 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_DNSBlocklist]]
 - 1 edge to [[_COMMUNITY_NetworkValidator]]
 - 1 edge to [[_COMMUNITY_EgressTelegramNotifier]]
+- 1 edge to [[_COMMUNITY_normalize_input]]
 - 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
 - 1 edge to [[_COMMUNITY_EnvelopeSigner]]
+- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
 - 1 edge to [[_COMMUNITY_HTTPConnectProxy]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
-- 1 edge to [[_COMMUNITY_test_config_hot_reload.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
+- 1 edge to [[_COMMUNITY_TrustLevel]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY__build_image_targets]]
+- 1 edge to [[_COMMUNITY_ServiceManager]]
+- 1 edge to [[_COMMUNITY_require_auth]]
+- 1 edge to [[_COMMUNITY__resolve_bot_container]]
+- 1 edge to [[_COMMUNITY_daily_cve_report.py]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 1 edge to [[_COMMUNITY_read_secret]]
 - 1 edge to [[_COMMUNITY_ResourceGuard]]
-- 1 edge to [[_COMMUNITY_PermissionLevel]]
 - 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 1 edge to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY__t]]
 - 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
 - 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
 - 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
 
 ## Top bridge nodes
-- [[lifespan()]] - degree 119, connects to 68 communities
+- [[lifespan()]] - degree 119, connects to 65 communities
+- [[load_config()]] - degree 51, connects to 15 communities
+- [[test_config_validation.py]] - degree 9, connects to 4 communities
 - [[install_log_handler()]] - degree 5, connects to 3 communities
-- [[_DropInvalidHTTPRequestFilter]] - degree 6, connects to 2 communities
-- [[_build_per_bot_telegram_tokens()]] - degree 4, connects to 2 communities
-- [[_install_uvicorn_warning_filter()]] - degree 4, connects to 1 community
+- [[test_config_hot_reload.py]] - degree 23, connects to 2 communities

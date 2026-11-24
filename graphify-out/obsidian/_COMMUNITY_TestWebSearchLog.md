@@ -31,13 +31,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 10 edges to [[_COMMUNITY__make_sanitizer]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 5 edges to [[_COMMUNITY__make_sanitizer]]
+- 5 edges to [[_COMMUNITY_asyncio_5]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
 - [[TestWebSearchLog]] - degree 8, connects to 2 communities
-- [[dot-test_web_search_log_called_with_correct_params()]] - degree 5, connects to 1 community
-- [[dot-test_web_search_query_truncation()]] - degree 5, connects to 1 community
-- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 1 community
-- [[dot-test_raw_web_search_json_owner_message()]] - degree 4, connects to 1 community
+- [[dot-test_web_search_log_called_with_correct_params()]] - degree 5, connects to 2 communities
+- [[dot-test_web_search_query_truncation()]] - degree 5, connects to 2 communities
+- [[dot-test_raw_web_search_json_collaborator_safe_notice()]] - degree 4, connects to 2 communities
+- [[dot-test_raw_web_search_json_owner_message()]] - degree 4, connects to 2 communities

@@ -24,9 +24,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_test_edge_approvals.py]]
 
 ## Top bridge nodes
 - [[TestTelegramDispatch]] - degree 8, connects to 2 communities

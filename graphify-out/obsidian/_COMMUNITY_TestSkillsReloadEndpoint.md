@@ -14,7 +14,7 @@ members: 7
 - [[dot-test_reload_returns_500_on_source_missing()]] - code - gateway/tests/test_skills_manifest_sync.py
 - [[TestClient]] - code
 - [[TestSkillsReloadEndpoint]] - code - gateway/tests/test_skills_manifest_sync.py
-- [[fixture_45]] - code
+- [[fixture_53]] - code
 
 ## Live Query (requires Dataview plugin)
 

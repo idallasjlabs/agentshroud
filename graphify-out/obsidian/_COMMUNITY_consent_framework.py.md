@@ -21,8 +21,8 @@ members: 15
 - [[Secret Patterns in Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Shell Injection Patterns Detected]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[Threat Model_21]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
+- [[consent_framework.py_2]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 - [[consent_framework.py_1]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
-- [[consent_framework.py]] - document - docs/vault/02 - Modules/Security Modules/consent_framework.py.md
 
 ## Live Query (requires Dataview plugin)
 

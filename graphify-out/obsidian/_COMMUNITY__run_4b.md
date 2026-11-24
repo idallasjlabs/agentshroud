@@ -31,7 +31,7 @@ members: 29
 - [[TestWatchdogBehaviour]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[TestWatchdogWiring]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[_all()]] - code - gateway/tests/test_wazuh_watchdog.py
-- [[_run()_5]] - code - gateway/tests/test_wazuh_watchdog.py
+- [[_run()_7]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[_run_4b()]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[_step_4b()]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[skipif]] - code

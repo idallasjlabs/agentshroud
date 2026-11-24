@@ -26,8 +26,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY__make_sanitizer]]
+- 1 edge to [[_COMMUNITY_GitGuard]]
+- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
 
 ## Top bridge nodes
 - [[TestNotifyUserBlockedSanitization]] - degree 5, connects to 2 communities

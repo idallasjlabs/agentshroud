@@ -50,16 +50,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 8 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 5 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_fastapi]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 2 edges to [[_COMMUNITY__FakeWSConnect]]
 - 1 edge to [[_COMMUNITY_app]]
 - 1 edge to [[_COMMUNITY_server.py]]
 
 ## Top bridge nodes
-- [[hermes_dashboard_ws_proxy()]] - degree 12, connects to 3 communities
 - [[dot-test_alerts_accepted_from_localhost()]] - degree 5, connects to 3 communities
+- [[hermes_dashboard_ws_proxy()]] - degree 12, connects to 2 communities
 - [[dot-test_bots_inventory_matches_the_real_container_name()]] - degree 4, connects to 2 communities
 - [[TestHermesDashboardPathTraversal]] - degree 9, connects to 1 community
 - [[TestHermesDashboardWsProxy]] - degree 8, connects to 1 community

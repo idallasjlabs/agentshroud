@@ -29,7 +29,7 @@ members: 43
 - [[Build n chained events, oldest first, spaced spacing_days apart ending at…]] - rationale - gateway/tests/test_audit_archive.py
 - [[Connection_2]] - code
 - [[Move audit_events older than cutoff_days into archive_path, then delete +…]] - rationale - gateway/security/audit_archive.py
-- [[Path_43]] - code
+- [[Path_44]] - code
 - [[TestArchiveOldEvents]] - code - gateway/tests/test_audit_archive.py
 - [[TestPurgeLowValueEvents]] - code - gateway/tests/test_audit_archive.py
 - [[The remaining live rows' own internal chain (row N's prev_hash == row N-1's…]] - rationale - gateway/tests/test_audit_archive.py

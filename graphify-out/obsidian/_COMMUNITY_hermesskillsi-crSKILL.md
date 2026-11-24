@@ -27,8 +27,8 @@ members: 45
 - [[Query the control DB]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[README — Entry Point for a Repo or Service]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Review Principles_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Role_67]] - document - docker/config/hermes/skills/i-cr/SKILL.md
-- [[Role_68]] - document - docker/config/hermes/skills/i-tw/SKILL.md
+- [[Role_68]] - document - docker/config/hermes/skills/i-cr/SKILL.md
+- [[Role_69]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Rules_11]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Runbook — Operational Decision Tree]] - document - docker/config/hermes/skills/i-tw/SKILL.md
 - [[Skill Code Review (CR)_1]] - document - docker/config/hermes/skills/i-cr/SKILL.md
@@ -75,7 +75,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_iCloud Services]]
 - 1 edge to [[_COMMUNITY_Mac App Discovery Skill]]
 - 1 edge to [[_COMMUNITY_GSDE&G Development Master Checklist_6]]
-- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
+- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)_1]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)_1]]
 - 1 edge to [[_COMMUNITY_Skill Project Management (PM)_1]]
 - 1 edge to [[_COMMUNITY_Pre-Deployment Checklist_1]]

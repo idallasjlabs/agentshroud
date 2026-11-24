@@ -25,7 +25,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_AuditExporter]]
 - 1 edge to [[_COMMUNITY__audit_entry]]
-- 1 edge to [[_COMMUNITY_socmodels.py]]
+- 1 edge to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 
 ## Top bridge nodes
 - [[dot-verify_export_integrity()]] - degree 4, connects to 1 community

@@ -82,16 +82,17 @@ SORT file.name ASC
 - 11 edges to [[_COMMUNITY_LLMProxy]]
 - 6 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
 - 4 edges to [[_COMMUNITY_is_quota_exhausted]]
-- 2 edges to [[_COMMUNITY_test_llm_proxy.py]]
 - 2 edges to [[_COMMUNITY_main.rs]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_StreamHead]]
+- 1 edge to [[_COMMUNITY_email_send]]
 - 1 edge to [[_COMMUNITY_is_overloaded]]
 - 1 edge to [[_COMMUNITY_dot-_suppress_qwen3_thinking]]
 - 1 edge to [[_COMMUNITY_test_proxy_gemini_translation_failure_falls_through_gracefully]]
 - 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
+- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
 
 ## Top bridge nodes
-- [[llm_proxy.py]] - degree 27, connects to 8 communities
+- [[llm_proxy.py]] - degree 27, connects to 9 communities
 - [[anthropic_to_openai_request()]] - degree 19, connects to 1 community
 - [[openai_to_anthropic_response()]] - degree 13, connects to 1 community
 - [[anthropic_openai_translator.py]] - degree 12, connects to 1 community

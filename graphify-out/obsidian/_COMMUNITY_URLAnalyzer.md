@@ -8,7 +8,7 @@ members: 65
 **Members:** 65 nodes
 
 ## Members
-- [[dot-__init__()_16]] - code - gateway/proxy/url_analyzer.py
+- [[dot-__init__()_20]] - code - gateway/proxy/url_analyzer.py
 - [[dot-_check_base64()]] - code - gateway/proxy/url_analyzer.py
 - [[dot-_is_private_ip()]] - code - gateway/proxy/url_analyzer.py
 - [[dot-_is_ssrf()]] - code - gateway/proxy/url_analyzer.py
@@ -70,7 +70,7 @@ members: 65
 - [[_looks_like_base64()]] - code - gateway/proxy/url_analyzer.py
 - [[analyzer()]] - code - gateway/tests/test_url_analyzer.py
 - [[fixture_11]] - code
-- [[str_5]] - code
+- [[str_6]] - code
 - [[test_url_analyzer.py]] - code - gateway/tests/test_url_analyzer.py
 - [[url_analyzer.py_2]] - code - gateway/proxy/url_analyzer.py
 
@@ -82,9 +82,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_WebProxy]]
+- 2 edges to [[_COMMUNITY_WebProxy]]
+- 2 edges to [[_COMMUNITY_web_proxy.py]]
 - 2 edges to [[_COMMUNITY_TestSSRFDetection]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 
 ## Top bridge nodes
 - [[URLAnalyzer]] - degree 13, connects to 2 communities

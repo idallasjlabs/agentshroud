@@ -45,8 +45,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_EnvironmentGuard]]
-- 1 edge to [[_COMMUNITY_middleware.py]]
 - 1 edge to [[_COMMUNITY_test_env_guard_class.py]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
 
 ## Top bridge nodes
 - [[env_guard.py]] - degree 9, connects to 3 communities

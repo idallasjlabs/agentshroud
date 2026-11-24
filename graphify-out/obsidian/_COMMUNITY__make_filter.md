@@ -1,17 +1,17 @@
 ---
 type: community
-members: 41
+members: 39
 ---
 
 # _make_filter
 
-**Members:** 41 nodes
+**Members:** 39 nodes
 
 ## Members
 - [[dot-test_allowed_cidr()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_allowed_domain_passes()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_allowed_domain_still_allowed_in_monitor()]] - code - gateway/tests/test_egress_filter.py
-- [[dot-test_allowed_ip()_1]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowed_ip()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_attempt_fields()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_bare_hostname()]] - code - gateway/tests/test_egress_filter.py
 - [[dot-test_denied_domain_overrides_allow()]] - code - gateway/tests/test_egress_filter.py
@@ -34,7 +34,6 @@ members: 41
 - [[dot-test_wildcard_one_level()]] - code - gateway/tests/test_egress_filter.py
 - [[CIDR in policy allowlist should match.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Create an EgressFilter with a simple config.]] - rationale - gateway/tests/test_egress_filter.py
-- [[EgressAttempt stores the right fields.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter correctly parses URLs, hostport, and bare hostnames.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter in enforce mode should block unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
 - [[EgressFilter in monitor mode should allow but log unlisted destinations.]] - rationale - gateway/tests/test_egress_filter.py
@@ -42,7 +41,6 @@ members: 41
 - [[IP allowlist and private-IP SSRF protection.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Private IPs are blocked by default to prevent SSRF.]] - rationale - gateway/tests/test_egress_filter.py
 - [[Private IPs pass if explicitly in the EgressPolicy allowlist (SSRF check).]] - rationale - gateway/tests/test_egress_filter.py
-- [[TestEgressAttempt]] - code - gateway/tests/test_egress_filter.py
 - [[TestEnforceMode]] - code - gateway/tests/test_egress_filter.py
 - [[TestIPRules]] - code - gateway/tests/test_egress_filter.py
 - [[TestLogging]] - code - gateway/tests/test_egress_filter.py
@@ -58,14 +56,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 19 edges to [[_COMMUNITY_EgressPolicy]]
-- 4 edges to [[_COMMUNITY_EgressFilter]]
-- 3 edges to [[_COMMUNITY_asyncio_5]]
-- 1 edge to [[_COMMUNITY_dot-_check_impl]]
+- 17 edges to [[_COMMUNITY_EgressFilter]]
+- 6 edges to [[_COMMUNITY_EgressPolicy]]
+- 3 edges to [[_COMMUNITY_asyncio_4]]
 
 ## Top bridge nodes
 - [[_make_filter()]] - degree 32, connects to 3 communities
 - [[TestEnforceMode]] - degree 12, connects to 2 communities
 - [[TestIPRules]] - degree 11, connects to 2 communities
-- [[TestEgressAttempt]] - degree 6, connects to 2 communities
 - [[TestLogging]] - degree 7, connects to 1 community
+- [[TestURLParsing]] - degree 6, connects to 1 community

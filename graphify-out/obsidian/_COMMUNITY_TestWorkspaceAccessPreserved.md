@@ -8,9 +8,9 @@ members: 8
 **Members:** 8 nodes
 
 ## Members
-- [[dot-test_tmp_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_tmp_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
 - [[dot-test_workspace_subdirectory_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
-- [[dot-test_workspace_write_allowed()]] - code - gateway/tests/test_privilege_separation.py
+- [[dot-test_workspace_write_allowed()_1]] - code - gateway/tests/test_privilege_separation.py
 - [[Agent can still write to its own workspace.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent can write to tmp for temporary files.]] - rationale - gateway/tests/test_privilege_separation.py
 - [[Agent can write to its own workspace directory.]] - rationale - gateway/tests/test_privilege_separation.py
@@ -25,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_FileSandbox]]
 
 ## Top bridge nodes
 - [[TestWorkspaceAccessPreserved]] - degree 5, connects to 1 community

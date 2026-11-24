@@ -13,7 +13,7 @@ members: 21
 - [[FreeTypeFont]] - code
 - [[Image]] - code
 - [[Paste transparent logo centred on a solid-colour canvas.]] - rationale - scripts/generate_branding_assets.py
-- [[Path_54]] - code
+- [[Path_53]] - code
 - [[branded_banner()]] - code - scripts/generate_branding_assets.py
 - [[ensure()]] - code - scripts/generate_branding_assets.py
 - [[generate_branding_assets.py]] - code - scripts/generate_branding_assets.py
@@ -27,7 +27,7 @@ members: 21
 - [[generate_variants()]] - code - scripts/generate_branding_assets.py
 - [[get_font()]] - code - scripts/generate_branding_assets.py
 - [[icon_on_canvas()]] - code - scripts/generate_branding_assets.py
-- [[main()_25]] - code - scripts/generate_branding_assets.py
+- [[main()_24]] - code - scripts/generate_branding_assets.py
 - [[save()]] - code - scripts/generate_branding_assets.py
 
 ## Live Query (requires Dataview plugin)

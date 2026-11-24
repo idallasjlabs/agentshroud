@@ -20,14 +20,14 @@ members: 62
 - [[_call_proxy()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[_no_sleep()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[_slow_read()]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[asyncio_19]] - code
+- [[asyncio_20]] - code
 - [[canary()]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[canary()_1]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[close()_2]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[fake_urlopen()_20]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[fake_urlopen()_21]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[fake_urlopen()_22]] - code - gateway/tests/test_llm_proxy_failover.py
-- [[fake_urlopen()_23]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[close()_1]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[fake_urlopen()_16]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[fake_urlopen()_17]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[fake_urlopen()_18]] - code - gateway/tests/test_llm_proxy_failover.py
+- [[fake_urlopen()_19]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[make_proxy()_1]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[mock_forward()_1]] - code - gateway/tests/test_llm_proxy_failover.py
 - [[mock_forward()_2]] - code - gateway/tests/test_llm_proxy_failover.py

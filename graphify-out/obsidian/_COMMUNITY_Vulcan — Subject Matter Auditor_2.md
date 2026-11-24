@@ -13,7 +13,7 @@ members: 9
 - [[Output Format_39]] - document - .cursor/agents/vulcan.md
 - [[Persona_18]] - document - .cursor/agents/vulcan.md
 - [[Quality Checklist_24]] - document - .cursor/agents/vulcan.md
-- [[Role_82]] - document - .cursor/agents/vulcan.md
+- [[Role_83]] - document - .cursor/agents/vulcan.md
 - [[System Prompt_18]] - document - .cursor/agents/vulcan.md
 - [[User Prompt Template_11]] - document - .cursor/agents/vulcan.md
 - [[Vulcan — Subject Matter Auditor_2]] - document - .cursor/agents/vulcan.md

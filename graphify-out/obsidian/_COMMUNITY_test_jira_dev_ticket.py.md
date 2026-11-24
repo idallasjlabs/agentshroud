@@ -8,8 +8,8 @@ members: 46
 **Members:** 46 nodes
 
 ## Members
-- [[dot-__call__()_4]] - code - gateway/tests/test_jira_dev_ticket.py
-- [[dot-__init__()_68]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[dot-__call__()_5]] - code - gateway/tests/test_jira_dev_ticket.py
+- [[dot-__init__()_75]] - code - gateway/tests/test_jira_dev_ticket.py
 - [[Records requests; serves op-proxy secrets then a scripted Jira response.]] - rationale - gateway/tests/test_jira_dev_ticket.py
 - [[Tests for the generalized Jira dev-ticket helper (create  comment …]] - rationale - gateway/tests/test_jira_dev_ticket.py
 - [[_MockTransport]] - code - gateway/tests/test_jira_dev_ticket.py

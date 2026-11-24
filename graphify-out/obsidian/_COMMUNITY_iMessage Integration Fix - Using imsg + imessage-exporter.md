@@ -16,7 +16,7 @@ members: 10
 - [[Status_2]] - document - docs/setup/IMESSAGE_FIX.md
 - [[The Fix]] - document - docs/setup/IMESSAGE_FIX.md
 - [[The Problem]] - document - docs/setup/IMESSAGE_FIX.md
-- [[Verification_2]] - document - docs/setup/IMESSAGE_FIX.md
+- [[Verification_1]] - document - docs/setup/IMESSAGE_FIX.md
 - [[iMessage Integration Fix - Using imsg + imessage-exporter]] - document - docs/setup/IMESSAGE_FIX.md
 
 ## Live Query (requires Dataview plugin)

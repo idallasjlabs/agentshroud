@@ -15,7 +15,7 @@ members: 15
 - [[BrowserSecurityGuard.register_screenshot_hook(hook)]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Function Details_42]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Key Classes  Functions_45]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
-- [[Purpose_170]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
+- [[Purpose_171]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Related_46]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Responsibilities_49]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md
 - [[Social Engineering Patterns]] - document - docs/vault/02 - Modules/Security Modules/browser_security.py.md

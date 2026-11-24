@@ -26,9 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY__make_sanitizer]]
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_asyncio_5]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY__make_sanitizer]]
 
 ## Top bridge nodes
 - [[TestTelegram400Retry]] - degree 6, connects to 2 communities

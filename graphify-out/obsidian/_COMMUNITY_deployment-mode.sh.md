@@ -1,17 +1,18 @@
 ---
 type: community
-members: 14
+members: 15
 ---
 
 # deployment-mode.sh
 
-**Members:** 14 nodes
+**Members:** 15 nodes
 
 ## Members
 - [[_svc_container()]] - code - scripts/post-deploy-check.sh
 - [[check()_16]] - code - scripts/post-deploy-check.sh
 - [[deployment-mode.sh]] - code - scripts/lib/deployment-mode.sh
 - [[deployment-mode.sh script]] - code - scripts/lib/deployment-mode.sh
+- [[deployment_edge_funnel_enabled()]] - code - scripts/lib/deployment-mode.sh
 - [[deployment_mode_resolve()]] - code - scripts/lib/deployment-mode.sh
 - [[deployment_profile_flags()]] - code - scripts/lib/deployment-mode.sh
 - [[deployment_runs_edge()]] - code - scripts/lib/deployment-mode.sh
@@ -31,7 +32,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_sunday-upgrade.sh]]
+- 1 edge to [[_COMMUNITY_upgrade-2026-09-21]]
 - 1 edge to [[_COMMUNITY_check-vendor-compat.sh]]
 
 ## Top bridge nodes

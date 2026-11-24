@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[__init__()_16]] - code - gateway/tests/test_soc_router_coverage.py
+- [[__init__()_12]] - code - gateway/tests/test_soc_router_coverage.py
 - [[__truediv__()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[exists()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[parent()]] - code - gateway/tests/test_soc_router_coverage.py

@@ -8,7 +8,7 @@ members: 14
 **Members:** 14 nodes
 
 ## Members
-- [[dot-__init__()_17]] - code - gateway/security/tool_result_sanitizer_enhanced.py
+- [[dot-__init__()_21]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_extract_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-_restore_code_blocks()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
 - [[dot-sanitize()]] - code - gateway/security/tool_result_sanitizer_enhanced.py
@@ -43,4 +43,4 @@ SORT file.name ASC
 - [[dot-test_warn_mode()]] - degree 4, connects to 2 communities
 - [[dot-sanitize()]] - degree 6, connects to 1 community
 - [[dot-sanitize_links()]] - degree 4, connects to 1 community
-- [[dot-__init__()_17]] - degree 2, connects to 1 community
+- [[dot-__init__()_21]] - degree 2, connects to 1 community

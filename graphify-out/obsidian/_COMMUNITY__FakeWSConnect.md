@@ -10,7 +10,7 @@ members: 12
 ## Members
 - [[dot-__aenter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-__aexit__()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_29]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_31]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[Async context manager mimicking websockets.connect().]] - rationale - gateway/tests/test_dns_canvas_coverage.py
 - [[WebSocket relay for Slack Socket Mode inbound traffic. Bot connects here…]] - rationale - gateway/ingest_api/main.py
 - [[_FakeWSConnect]] - code - gateway/tests/test_dns_canvas_coverage.py

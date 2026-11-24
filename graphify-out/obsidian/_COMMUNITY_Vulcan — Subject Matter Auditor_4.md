@@ -12,7 +12,7 @@ members: 9
 - [[Output Format_41]] - document - .github/agents/i-vulcan.agent.md
 - [[Persona_20]] - document - .github/agents/i-vulcan.agent.md
 - [[Quality Checklist_26]] - document - .github/agents/i-vulcan.agent.md
-- [[Role_87]] - document - .github/agents/i-vulcan.agent.md
+- [[Role_88]] - document - .github/agents/i-vulcan.agent.md
 - [[System Prompt_20]] - document - .github/agents/i-vulcan.agent.md
 - [[User Prompt Template_13]] - document - .github/agents/i-vulcan.agent.md
 - [[Vulcan — Subject Matter Auditor_4]] - document - .github/agents/i-vulcan.agent.md

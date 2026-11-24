@@ -9,9 +9,9 @@ members: 6
 
 ## Members
 - [[dot-test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
-- [[__enter__()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[__exit__()_1]] - code - gateway/tests/test_gateway_email_service.py
-- [[__init__()_15]] - code - gateway/tests/test_gateway_email_service.py
+- [[__enter__()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[__exit__()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[__init__()_11]] - code - gateway/tests/test_gateway_email_service.py
 - [[login()]] - code - gateway/tests/test_gateway_email_service.py
 - [[sendmail()]] - code - gateway/tests/test_gateway_email_service.py
 

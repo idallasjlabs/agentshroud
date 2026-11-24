@@ -19,10 +19,10 @@ members: 15
 - [[dot-test_string_literals_match_black_quote_preference()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[CI runs black on gateway; an appended registry block must already be clean.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestListLocator]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[TestSerialization]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[TestSerialization_1]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_exec_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_sync()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[parametrize_4]] - code
+- [[parametrize_2]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -43,6 +43,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[_sync()]] - degree 41, connects to 7 communities
 - [[_exec_registry()]] - degree 4, connects to 2 communities
-- [[TestSerialization]] - degree 6, connects to 1 community
+- [[TestSerialization_1]] - degree 6, connects to 1 community
 - [[TestListLocator]] - degree 5, connects to 1 community
 - [[dot-test_append_targets_correct_agent_list()]] - degree 4, connects to 1 community

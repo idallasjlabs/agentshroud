@@ -1,11 +1,11 @@
 ---
 type: community
-members: 41
+members: 38
 ---
 
 # app_main.c
 
-**Members:** 41 nodes
+**Members:** 38 nodes
 
 ## Members
 - [[_apply_agent_cb()]] - code - firmware/voice-terminal/main/ui_face.c
@@ -27,7 +27,6 @@ members: 41
 - [[audio_preinit()]] - code - firmware/voice-terminal/main/audio.c
 - [[audio_set_volume()]] - code - firmware/voice-terminal/main/audio.c
 - [[audio_volume_tick()]] - code - firmware/voice-terminal/main/audio.c
-- [[esp_err_t_4]] - code
 - [[esp_err_t_5]] - code
 - [[esp_event_base_t_1]] - code
 - [[face_emotion_t]] - code
@@ -39,12 +38,10 @@ members: 41
 - [[ui_face.h]] - code - firmware/voice-terminal/main/ui_face.h
 - [[ui_face_init()]] - code - firmware/voice-terminal/main/ui_face.c
 - [[ui_face_set_agent()]] - code - firmware/voice-terminal/main/ui_face.c
-- [[ui_face_set_state()]] - code - firmware/voice-terminal/main/ui_face.c
 - [[ui_init()]] - code - firmware/voice-terminal/main/app_main.c
 - [[ui_state_t]] - code
 - [[ui_update()]] - code - firmware/voice-terminal/main/app_main.c
 - [[wakeword.h]] - code - firmware/voice-terminal/main/wakeword.h
-- [[wakeword_init()]] - code - firmware/voice-terminal/main/wakeword.c
 - [[wifi_event_handler()]] - code - firmware/voice-terminal/main/app_main.c
 - [[wifi_init()]] - code - firmware/voice-terminal/main/app_main.c
 - [[ws_client.h]] - code - firmware/voice-terminal/main/ws_client.h
@@ -58,16 +55,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 17 edges to [[_COMMUNITY_wakeword.c]]
-- 8 edges to [[_COMMUNITY_test_playback_state.c]]
-- 5 edges to [[_COMMUNITY_ws_client.c]]
+- 11 edges to [[_COMMUNITY_wakeword.c]]
+- 10 edges to [[_COMMUNITY_voice_task]]
+- 9 edges to [[_COMMUNITY_test_playback_state.c]]
 - 3 edges to [[_COMMUNITY_main.rs]]
 - 2 edges to [[_COMMUNITY_ota.c]]
 - 1 edge to [[_COMMUNITY_CronStateMonitor]]
 
 ## Top bridge nodes
 - [[app_main.c]] - degree 26, connects to 6 communities
-- [[ui_face.c]] - degree 15, connects to 2 communities
-- [[app_main()]] - degree 13, connects to 2 communities
-- [[ui_face_set_state()]] - degree 6, connects to 2 communities
+- [[app_main()]] - degree 13, connects to 4 communities
+- [[ui_face.c]] - degree 15, connects to 3 communities
 - [[remote_log.h]] - degree 4, connects to 2 communities
+- [[audio.c]] - degree 9, connects to 1 community

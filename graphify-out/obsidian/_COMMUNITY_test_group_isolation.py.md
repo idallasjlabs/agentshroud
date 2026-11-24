@@ -28,7 +28,7 @@ members: 30
 - [[TestGroupMemoryNamespaceIsolation]] - code - gateway/tests/test_group_isolation.py
 - [[User DM content must not leak into a group the user is NOT a member of.]] - rationale - gateway/tests/test_group_isolation.py
 - [[Writes in group-A must not be readable from group-B.]] - rationale - gateway/tests/test_group_isolation.py
-- [[fixture_106]] - code
+- [[fixture_105]] - code
 - [[get_merged_memory_for_user returns group section and private section separately.]] - rationale - gateway/tests/test_group_isolation.py
 - [[group-A and group-B memory files must be in separate directories.]] - rationale - gateway/tests/test_group_isolation.py
 - [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - rationale - gateway/tests/test_group_isolation.py
@@ -49,14 +49,13 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_UserSessionManager]]
 - 4 edges to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
 - 2 edges to [[_COMMUNITY_SharedMemoryManager]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
 - 2 edges to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[test_group_isolation.py]] - degree 20, connects to 7 communities
+- [[test_group_isolation.py]] - degree 20, connects to 6 communities
 - [[rbac()_4]] - degree 3, connects to 1 community
 - [[session_manager()_4]] - degree 3, connects to 1 community
 - [[shared_memory()_2]] - degree 3, connects to 1 community

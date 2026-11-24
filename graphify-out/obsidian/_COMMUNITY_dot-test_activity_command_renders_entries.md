@@ -29,13 +29,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY__make_sanitizer]]
-- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 3 edges to [[_COMMUNITY__make_sanitizer]]
+- 3 edges to [[_COMMUNITY_asyncio_5]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
+- [[dot-test_activity_command_renders_entries()]] - degree 6, connects to 2 communities
+- [[dot-test_activity_command_reports_tracker_unhealthy()]] - degree 6, connects to 2 communities
 - [[TestOwnerActivityNotice]] - degree 5, connects to 2 communities
 - [[TestPendingNoticeIncludesEgressSection]] - degree 4, connects to 2 communities
-- [[dot-test_activity_command_renders_entries()]] - degree 6, connects to 1 community
-- [[dot-test_activity_command_reports_tracker_unhealthy()]] - degree 6, connects to 1 community
-- [[dot-test_pending_includes_egress_entries()]] - degree 4, connects to 1 community
+- [[dot-test_pending_includes_egress_entries()]] - degree 4, connects to 2 communities

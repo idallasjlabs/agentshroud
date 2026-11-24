@@ -11,12 +11,12 @@ members: 19
 - [[Hermes API forwarder must include an HTTP-method peek to drop non-HTTP…]] - rationale - gateway/tests/test_telegram_executor.py
 - [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - rationale - gateway/tests/test_telegram_executor.py
 - [[Regression guards for gateway lifespan startup fixes. Covers -…]] - rationale - gateway/tests/test_telegram_executor.py
-- [[__init__()_24]] - code - gateway/tests/test_telegram_executor.py
+- [[__init__()_21]] - code - gateway/tests/test_telegram_executor.py
 - [[_fake_open_connection()]] - code - gateway/tests/test_telegram_executor.py
 - [[_fake_reader_factory()]] - code - gateway/tests/test_telegram_executor.py
 - [[asyncio_84]] - code
+- [[close()_3]] - code - gateway/tests/test_telegram_executor.py
 - [[close()_4]] - code - gateway/tests/test_telegram_executor.py
-- [[close()_5]] - code - gateway/tests/test_telegram_executor.py
 - [[drain()]] - code - gateway/tests/test_telegram_executor.py
 - [[drain()_1]] - code - gateway/tests/test_telegram_executor.py
 - [[get_extra_info()]] - code - gateway/tests/test_telegram_executor.py

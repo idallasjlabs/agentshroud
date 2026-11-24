@@ -1,29 +1,25 @@
 ---
 type: community
-members: 68
+members: 63
 ---
 
 # sunday-upgrade-apply.sh
 
-**Members:** 68 nodes
+**Members:** 63 nodes
 
 ## Members
 - [[AGENTSHROUD_HERMES_DISABLE_TELEGRAM]] - code - scripts/sunday-upgrade-apply.sh
 - [[Build one service at a time]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[COMPOSE (asb compose command string)]] - code - scripts/asb
 - [[COMPOSE_CMD]] - code - scripts/sunday-upgrade-apply.sh
-- [[ColimaDocker VM Storage Exhaustion]] - concept - reports/upgrade-2026-09-06-prod.md
 - [[Compose profile gating (voicehermesfull)]] - rationale - scripts/asb
 - [[HEAD_AT_START]] - code - scripts/sunday-upgrade-apply.sh
-- [[PATH_6]] - code - scripts/sunday-upgrade-apply.sh
+- [[PATH_7]] - code - scripts/sunday-upgrade-apply.sh
 - [[PROJECT (compose project name)]] - code - scripts/asb
 - [[Prove the outcome, never the steps (CLAUDE.md 0.0)]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[S15 asb _preserve_nonempty_secrets restores emptymissing values and keeps new non-empty ones]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[S16 asb rebuildclean-rebuild build with $_PROFILE_FLAG]] - concept - tests/startup_smoke/test_bot_boot_static.sh
 - [[Shared working-tree stability guard]] - rationale - scripts/sunday-upgrade-apply.sh
-- [[Sunday Upgrade Report 2026-09-06 (prod read-only, pre-crisis)]] - document - reports/upgrade-2026-09-06-20260906-0808.md
-- [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - document - reports/upgrade-2026-09-06-prod.md
-- [[Sunday Upgrade Report Hermes-cron Delivery]] - code - scripts/hermes-cron/sunday-upgrade-report.sh
 - [[Sunday apply exit-code contract]] - rationale - scripts/sunday-upgrade-apply.sh
 - [[UPGRADE_LOCK]] - code - scripts/sunday-upgrade-apply.sh
 - [[_PROFILE_FLAG]] - code - scripts/asb
@@ -73,7 +69,6 @@ members: 68
 - [[sunday-upgrade-apply main sequence]] - code - scripts/sunday-upgrade-apply.sh
 - [[sunday-upgrade-apply.sh]] - code - scripts/sunday-upgrade-apply.sh
 - [[sunday-upgrade-apply.sh script]] - code - scripts/sunday-upgrade-apply.sh
-- [[sunday-upgrade.sh (remote-control launcher)]] - code - scripts/sunday-upgrade.sh
 - [[warn()_2]] - code - scripts/sunday-upgrade-apply.sh
 - [[write_handoff()]] - code - scripts/sunday-upgrade-apply.sh
 
@@ -85,16 +80,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_upgrade-2026-09-21]]
+- 15 edges to [[_COMMUNITY_upgrade-2026-09-21]]
 - 9 edges to [[_COMMUNITY_sunday-scan.sh]]
-- 4 edges to [[_COMMUNITY_check-vendor-compat.sh]]
+- 5 edges to [[_COMMUNITY_check-vendor-compat.sh]]
 - 2 edges to [[_COMMUNITY_plan_remediation]]
 - 2 edges to [[_COMMUNITY_container-runtime.sh]]
 - 2 edges to [[_COMMUNITY_upgrade-2026-10-12]]
-- 2 edges to [[_COMMUNITY_sunday-upgrade.sh]]
 
 ## Top bridge nodes
-- [[sunday-upgrade-apply.sh]] - degree 57, connects to 7 communities
+- [[sunday-upgrade-apply.sh]] - degree 57, connects to 6 communities
 - [[sunday-upgrade-apply.sh script]] - degree 28, connects to 2 communities
 - [[phase_apply()]] - degree 25, connects to 1 community
 - [[sunday-upgrade-apply main sequence]] - degree 19, connects to 1 community

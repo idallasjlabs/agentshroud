@@ -10,7 +10,7 @@ members: 19
 ## Members
 - [[Create a fake contributor markdown file for the given uid.]] - rationale - gateway/tests/test_lifespan_prune.py
 - [[Gateway-level collaborator activity tracker. Logs every non-owner message from…]] - rationale - gateway/security/collaborator_tracker.py
-- [[Path_74]] - code
+- [[Path_75]] - code
 - [[Real-UID markdown files must never be deleted by the prune pass.]] - rationale - gateway/tests/test_lifespan_prune.py
 - [[Return True when uid looks like a test fixture that should be silently dropped.…]] - rationale - gateway/security/collaborator_tracker.py
 - [[Run the same markdown-prune logic as lifespan.py and return pruned count.]] - rationale - gateway/tests/test_lifespan_prune.py

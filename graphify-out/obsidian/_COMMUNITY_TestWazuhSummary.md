@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[dot-test_installed_not_running()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[dot-test_not_installed()_3]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[dot-test_not_installed()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_running_no_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_running_with_alert_dir()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestWazuhSummary_1]] - code - gateway/tests/test_scanner_integration_coverage.py

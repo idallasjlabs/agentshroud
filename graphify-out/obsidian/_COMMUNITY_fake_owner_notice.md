@@ -1,11 +1,11 @@
 ---
 type: community
-members: 64
+members: 60
 ---
 
 # fake_owner_notice
 
-**Members:** 64 nodes
+**Members:** 60 nodes
 
 ## Members
 - [[dot-test_owner_addcollab_accepts_known_name_alias()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -25,10 +25,8 @@ members: 64
 - [[dot-test_owner_deny_without_target_auto_selects_single_pending()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_owner_restorecollabs_restores_defaults()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_revoked_user_messages_require_owner_reapproval()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[First message from unknown user (within limit) queues approval flow.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner addcollab should accept known collaborator short-name aliases.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner addcollab should add collaborator and clear revoked state.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner addcollab without target should return usage guidance.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -67,11 +65,9 @@ members: 64
 - [[fake_owner_notice()_16]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_owner_notice()_17]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_owner_notice()_18]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_owner_notice()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_pending_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_pending_notice()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_pending_notice()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_pending_notice()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -81,16 +77,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 79 edges to [[_COMMUNITY_FakeRBAC]]
-- 20 edges to [[_COMMUNITY__wrap_response]]
-- 20 edges to [[_COMMUNITY_asyncio_7]]
-- 1 edge to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy]]
-- 1 edge to [[_COMMUNITY_dot-test_collaborator_rate_limit_resets_after_window]]
+- 76 edges to [[_COMMUNITY__wrap_response]]
+- 19 edges to [[_COMMUNITY__make_update]]
+- 19 edges to [[_COMMUNITY_asyncio_1]]
+- 3 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
+- 1 edge to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice]]
 
 ## Top bridge nodes
-- [[dot-test_stranger_within_limit_triggers_approval_workflow()]] - degree 11, connects to 4 communities
 - [[dot-test_revoked_user_messages_require_owner_reapproval()]] - degree 11, connects to 3 communities
 - [[dot-test_unknown_user_repeated_start_still_gets_pending_notice()]] - degree 11, connects to 3 communities
 - [[dot-test_unknown_user_message_triggers_owner_approval_workflow()]] - degree 10, connects to 3 communities
 - [[dot-test_owner_addcollab_accepts_known_name_alias()]] - degree 9, connects to 3 communities
+- [[dot-test_owner_addcollab_adds_target_and_notifies()]] - degree 9, connects to 3 communities

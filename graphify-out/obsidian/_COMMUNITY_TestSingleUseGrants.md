@@ -22,7 +22,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 
 ## Top bridge nodes
 - [[TestSingleUseGrants]] - degree 5, connects to 1 community

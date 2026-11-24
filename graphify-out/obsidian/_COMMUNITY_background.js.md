@@ -15,7 +15,7 @@ members: 20
 - [[getActiveTab()]] - code - browser-extension/background.js
 - [[icon48.png — solid blue (2b6cff) placeholder icon, no logotext]] - image - browser-extension/icons/icon48.png
 - [[loadConfig()]] - code - browser-extension/background.js
-- [[notify()_2]] - code - browser-extension/background.js
+- [[notify()_1]] - code - browser-extension/background.js
 - [[options.js]] - code - browser-extension/options.js
 - [[popup.html (toolbar popup UI)]] - code - browser-extension/popup.html
 - [[popup.js]] - code - browser-extension/popup.js

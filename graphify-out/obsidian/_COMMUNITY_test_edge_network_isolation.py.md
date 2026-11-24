@@ -1,15 +1,15 @@
 ---
 type: community
-members: 51
+members: 63
 ---
 
 # test_edge_network_isolation.py
 
-**Members:** 51 nodes
+**Members:** 63 nodes
 
 ## Members
 - [[A sequence tagged ``!override`` — replaces instead of merging.]] - rationale - gateway/tests/test_edge_network_isolation.py
-- [[Any_7]] - code
+- [[Any_8]] - code
 - [[IPv4Network]] - code
 - [[Minimal compose merge mappings deep-merge, ``!override`` replaces,…]] - rationale - gateway/tests/test_edge_network_isolation.py
 - [[Node]] - code
@@ -24,10 +24,13 @@ members: 51
 - [[_compose()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_env_key()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_environment()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_handlers()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_load()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_members()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_merge()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_networks()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_published()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[_serve_mutation()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_strip()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_subnets()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[_svc()]] - code - gateway/tests/test_edge_network_isolation.py
@@ -42,14 +45,23 @@ members: 51
 - [[check_edge_on_dmz_only()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_edge_read_only()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_edge_secrets()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_egress_funnel_only()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_forwarder_targets_edge()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_funnel_networks()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_funnel_no_ports_or_host_access()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_funnel_opt_in_profile()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_funnel_secrets()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_funnel_unprivileged()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_gateway_edge_port_loopback_only()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_gateway_keeps_dual_membership()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[check_ingress_internal_edge_and_funnel_only()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_issuer_matches()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_proxy_allowlist_excludes_dmz()]] - code - gateway/tests/test_edge_network_isolation.py
-- [[fixture_8]] - code
+- [[check_serve_config_exposes_only_edge()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[fixture_6]] - code
 - [[list]] - code
-- [[parametrize_3]] - code
+- [[mutate()]] - code - gateway/tests/test_edge_network_isolation.py
+- [[parametrize_1]] - code
 - [[service.py reads AGENTSHROUD_EDGE_PKE_FEEDS; without the passthrough the…]] - rationale - gateway/tests/test_edge_network_isolation.py
 - [[test_check_fails_when_control_removed()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[test_dev_and_prod_dmz_subnets_differ()]] - code - gateway/tests/test_edge_network_isolation.py

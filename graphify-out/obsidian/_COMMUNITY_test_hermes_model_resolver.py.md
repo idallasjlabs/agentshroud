@@ -30,8 +30,8 @@ members: 51
 - [[local mode with HERMES_MAIN_MODEL set → bare local model + ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
 - [[local mode, HERMES_MAIN_MODEL empty → use AGENTSHROUD_LOCAL_MODEL_REF.]] - rationale - gateway/tests/test_hermes_model_resolver.py
 - [[local-multi mode LM Studio dash-style anchor model → ollama provider.]] - rationale - gateway/tests/test_hermes_model_resolver.py
-- [[main()_6]] - code - docker/bots/hermes/resolve_model.py
-- [[parametrize_11]] - code
+- [[main()_7]] - code - docker/bots/hermes/resolve_model.py
+- [[parametrize_9]] - code
 - [[provider_for_model()]] - code - docker/bots/hermes/resolve_model.py
 - [[resolve_model()]] - code - docker/bots/hermes/resolve_model.py
 - [[resolve_model.py]] - code - docker/bots/hermes/resolve_model.py

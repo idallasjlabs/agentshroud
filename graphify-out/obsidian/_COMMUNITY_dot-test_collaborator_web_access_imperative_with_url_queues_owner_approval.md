@@ -45,11 +45,11 @@ members: 42
 - [[_fake_send()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_fake_send()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_fake_send()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_42]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_43]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_44]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_45]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_46]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_24]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_25]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_26]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_27]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_urlopen()_28]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -59,14 +59,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 40 edges to [[_COMMUNITY_FakeRBAC]]
-- 10 edges to [[_COMMUNITY__wrap_response]]
-- 10 edges to [[_COMMUNITY_asyncio_7]]
-- 5 edges to [[_COMMUNITY_fake_urlopen]]
+- 40 edges to [[_COMMUNITY__wrap_response]]
+- 15 edges to [[_COMMUNITY__make_update]]
+- 10 edges to [[_COMMUNITY_asyncio_1]]
 
 ## Top bridge nodes
-- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - degree 11, connects to 4 communities
-- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - degree 11, connects to 4 communities
-- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - degree 11, connects to 4 communities
-- [[dot-test_collaborator_web_access_policy_question_with_url_no_collaborator_keyword_is_safe()]] - degree 11, connects to 4 communities
-- [[dot-test_collaborator_web_access_request_returns_pending_egress_notice()]] - degree 11, connects to 4 communities
+- [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - degree 13, connects to 3 communities
+- [[dot-test_collaborator_web_access_request_with_bare_domain_queues_owner_approval()]] - degree 13, connects to 3 communities
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - degree 11, connects to 3 communities
+- [[dot-test_collaborator_web_access_policy_question_with_bare_domain_is_safe()]] - degree 11, connects to 3 communities
+- [[dot-test_collaborator_web_access_policy_question_with_url_does_not_queue_preflight()]] - degree 11, connects to 3 communities

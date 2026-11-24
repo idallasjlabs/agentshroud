@@ -16,7 +16,7 @@ members: 16
 - [[dot-test_never_restarts_anything()]] - code - gateway/tests/test_container_dns_check.py
 - [[dot-test_probe_matches_the_health_check()]] - code - gateway/tests/test_container_dns_check.py
 - [[Gateway DNS-server check in colima-health-check.sh (4c) and post-deploy-…]] - rationale - gateway/tests/test_container_dns_check.py
-- [[Path_9]] - code
+- [[Path_10]] - code
 - [[TestHealthCheckDnsServers]] - code - gateway/tests/test_container_dns_check.py
 - [[TestPostDeployDnsServers]] - code - gateway/tests/test_container_dns_check.py
 - [[_block()]] - code - gateway/tests/test_container_dns_check.py

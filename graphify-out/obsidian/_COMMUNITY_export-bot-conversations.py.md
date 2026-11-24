@@ -13,8 +13,8 @@ members: 24
 - [[OpenClaw message content is a list of blocks (texttool_usetool_result...);…]] - rationale - scripts/export-bot-conversations.py
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or 'YYYY-MM-DD…_1]] - rationale - scripts/export-bot-conversations.py
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or 'YYYY-MM-DD…_2]] - rationale - scripts/export-telegram-history.py
+- [[Path_69]] - code
 - [[Path_70]] - code
-- [[Path_71]] - code
 - [[Read a file out of a container via `exec cat` rather than `docker cp` — on this…]] - rationale - scripts/export-bot-conversations.py
 - [[Why exec cat replaced docker cp for reading container files]] - rationale - scripts/export-bot-conversations.py
 - [[_docker_read_file()]] - code - scripts/export-bot-conversations.py

@@ -10,7 +10,7 @@ members: 13
 ## Members
 - [[dot-agentsagentsi-session-prompt]] - document - .agents/agents/i-session-prompt.md
 - [[Re-injection Command (for reference)]] - document - .agents/agents/i-session-prompt.md
-- [[Role_35]] - document - .agents/agents/i-session-prompt.md
+- [[Role_36]] - document - .agents/agents/i-session-prompt.md
 - [[Rules]] - document - .agents/agents/i-session-prompt.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)]] - document - .agents/agents/i-session-prompt.md
 - [[Step 1 — Survey the Repo]] - document - .agents/agents/i-session-prompt.md

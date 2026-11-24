@@ -12,7 +12,7 @@ members: 11
 - [[_real_err()]] - code - gateway/tests/test_egress_callback_stale.py
 - [[_stale_callback_err()]] - code - gateway/tests/test_egress_callback_stale.py
 - [[_stale_edit_err()]] - code - gateway/tests/test_egress_callback_stale.py
-- [[asyncio_22]] - code
+- [[asyncio_24]] - code
 - [[test_answer_callback_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py
 - [[test_answer_callback_stale_logs_debug_not_error()]] - code - gateway/tests/test_egress_callback_stale.py
 - [[test_edit_decision_message_real_error_still_logs_error()]] - code - gateway/tests/test_egress_callback_stale.py

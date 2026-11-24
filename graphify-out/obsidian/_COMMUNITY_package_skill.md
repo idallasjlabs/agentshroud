@@ -22,7 +22,7 @@ members: 20
 - [[Skill Packager - Creates a distributable .skill file of a skill folder Usage…]] - rationale - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[TestCase]] - code
 - [[TestPackageSkillSecurity]] - code - skills/openclaw/skill-creator/scripts/test_package_skill.py
-- [[main()_30]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
+- [[main()_29]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[package_skill()]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[package_skill.py]] - code - skills/openclaw/skill-creator/scripts/package_skill.py
 - [[quick_validate.py]] - code - skills/openclaw/skill-creator/scripts/quick_validate.py

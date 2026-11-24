@@ -13,7 +13,7 @@ members: 9
 - [[Output Format_43]] - document - .opencode/agents/vulcan.md
 - [[Persona_22]] - document - .opencode/agents/vulcan.md
 - [[Quality Checklist_28]] - document - .opencode/agents/vulcan.md
-- [[Role_93]] - document - .opencode/agents/vulcan.md
+- [[Role_94]] - document - .opencode/agents/vulcan.md
 - [[System Prompt_22]] - document - .opencode/agents/vulcan.md
 - [[User Prompt Template_15]] - document - .opencode/agents/vulcan.md
 - [[Vulcan — Subject Matter Auditor_6]] - document - .opencode/agents/vulcan.md

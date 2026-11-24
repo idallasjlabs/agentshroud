@@ -26,10 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_FakeRBAC]]
-- 3 edges to [[_COMMUNITY_fastapi]]
-- 3 edges to [[_COMMUNITY__wrap_response]]
-- 3 edges to [[_COMMUNITY_asyncio_7]]
+- 12 edges to [[_COMMUNITY__wrap_response]]
+- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY__make_update]]
+- 3 edges to [[_COMMUNITY_asyncio_1]]
 
 ## Top bridge nodes
 - [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - degree 10, connects to 4 communities

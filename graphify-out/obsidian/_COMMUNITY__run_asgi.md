@@ -10,8 +10,8 @@ members: 29
 ## Members
 - [[dot-__aiter__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-__anext__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_165]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-close()_15]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_156]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-close()_12]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-send()_2]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_authorized_request_proxied_upstream()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_generic_exception_and_failing_close_swallowed()]] - code - gateway/tests/test_dns_canvas_coverage.py
