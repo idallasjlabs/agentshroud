@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Return True if the named Docker container is currently in 'running' state. Uses…]] - `rationale_for` [EXTRACTED]
-- [[connect()_6]] - `contains` [EXTRACTED]
+- [[connect()_3]] - `contains` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

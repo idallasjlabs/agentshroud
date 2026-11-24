@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L3221"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # _llm_must_not_be_called()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_tell_agent_command_with_chained_instruction()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_mock_ws

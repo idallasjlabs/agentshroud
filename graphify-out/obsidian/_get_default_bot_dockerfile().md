@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "load_config"
+community: "api.py"
 location: "L495"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/apipy
 ---
 
 # _get_default_bot_dockerfile()
@@ -16,4 +16,4 @@ tags:
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/apipy

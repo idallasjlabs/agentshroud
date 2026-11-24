@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: "_mock_forward"
 location: "L2131"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_sanitizer
+  - community/_mock_forward
 ---
 
 # _mock_forward()
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_proxy_request_suppresses_starting_notice_emoji_variants()]] - `indirect_call` [INFERRED]
 - [[dot-test_proxy_request_suppresses_startup_notice_emoji_variants()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_make_sanitizer
+#graphify/code #graphify/INFERRED #community/_mock_forward

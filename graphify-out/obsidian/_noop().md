@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy"
 location: "L39"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # _noop()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_no_owner_mirror()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/INFERRED #community/_make_proxy

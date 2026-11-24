@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L2932"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # _llm_must_not_be_called()
@@ -18,4 +18,4 @@ tags:
 - [[test_ws_use_local_command_reflects_live_voice_model()]] - `indirect_call` [INFERRED]
 - [[test_ws_use_model_command_intercepted()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/_mock_ws

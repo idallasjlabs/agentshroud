@@ -12,7 +12,7 @@ tags:
 # _fake_contributor_manager()
 
 ## Connections
-- [[__init__()_17]] - `contains` [EXTRACTED]
+- [[__init__()_13]] - `contains` [EXTRACTED]
 - [[get_contributor()]] - `contains` [EXTRACTED]
 - [[list_contributors()]] - `contains` [EXTRACTED]
 - [[test_get_user_found_and_missing()]] - `calls` [EXTRACTED]

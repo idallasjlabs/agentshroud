@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _map_severity()
 
 ## Connections
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - `rationale_for` [EXTRACTED]
 - [[Severity_1]] - `uses` [INFERRED]
 - [[collect_recent_events()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[from_audit_chain_entry()]] - `calls` [EXTRACTED]
 - [[from_dict()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

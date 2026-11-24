@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "soc_dashboard"
 location: "L3266"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/soc_dashboard
 ---
 
 # _minimal_dashboard_html()
@@ -17,4 +17,4 @@ tags:
 - [[soc_dashboard()]] - `calls` [EXTRACTED]
 - [[test_minimal_dashboard_html_contents()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/soc_dashboard

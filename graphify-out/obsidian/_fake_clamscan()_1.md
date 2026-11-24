@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "test_clamav_scan_unavailable_degrades_silently"
+community: "HTTPConnectProxy"
 location: "L731"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_clamav_scan_unavailable_degrades_silently
+  - community/HTTPConnectProxy
 ---
 
 # _fake_clamscan()
@@ -17,4 +17,4 @@ tags:
 - [[test_clamav_scan_unavailable_degrades_silently()]] - `indirect_call` [INFERRED]
 - [[test_clamav_scan_unlink_failure_swallowed()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_clamav_scan_unavailable_degrades_silently
+#graphify/code #graphify/INFERRED #community/HTTPConnectProxy

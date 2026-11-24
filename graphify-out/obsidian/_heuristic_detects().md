@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_adversarial_injection.py"
+community: "normalize_input"
 location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/normalize_input
 ---
 
 # _heuristic_detects()
@@ -17,4 +17,4 @@ tags:
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

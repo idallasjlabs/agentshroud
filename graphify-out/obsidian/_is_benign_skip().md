@@ -12,7 +12,7 @@ tags:
 # _is_benign_skip()
 
 ## Connections
-- [[Any_47]] - `references` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
 - [[classify()_1]] - `calls` [EXTRACTED]
 - [[soak_status.py]] - `contains` [EXTRACTED]
 

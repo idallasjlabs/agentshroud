@@ -12,7 +12,7 @@ tags:
 # _fake_open_connection()
 
 ## Connections
-- [[close()_5]] - `contains` [EXTRACTED]
+- [[close()_4]] - `contains` [EXTRACTED]
 - [[drain()_1]] - `contains` [EXTRACTED]
 - [[test_hermes_forwarder_drops_non_http()]] - `contains` [EXTRACTED]
 - [[write()_1]] - `contains` [EXTRACTED]

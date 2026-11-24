@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "asyncio"
-location: "L693"
+location: "L1379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # _fake_send()
 
 ## Connections
-- [[dot-test_sends_alert_when_new_cves_found()]] - `contains` [EXTRACTED]
+- [[dot-test_image_scan_result_in_return_value()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

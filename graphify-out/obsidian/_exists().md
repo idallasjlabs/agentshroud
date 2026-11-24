@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_patch_exists"
+community: "ServiceManager"
 location: "L104"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_patch_exists
+  - community/ServiceManager
 ---
 
 # _exists()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_patch_exists()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_patch_exists
+#graphify/code #graphify/INFERRED #community/ServiceManager
