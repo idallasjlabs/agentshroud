@@ -38,7 +38,7 @@ members: 32
 - [[Tag Audit Process]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Tagging Standard]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[Target 40% Full-Year Reduction on Global Services Resources]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
-- [[Workflow]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
+- [[Workflow_2]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 - [[openclawskillsi-awsSKILL]] - document - docker/config/openclaw/skills/i-aws/SKILL.md
 
 ## Live Query (requires Dataview plugin)

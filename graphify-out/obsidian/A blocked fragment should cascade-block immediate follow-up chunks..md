@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "asyncio"
 location: "L357"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/asyncio
 ---
 
 # A blocked fragment should cascade-block immediate follow-up chunks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_block_cascade_blocks_followup_fragment()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

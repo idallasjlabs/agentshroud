@@ -58,7 +58,7 @@ members: 52
 - [[fake_tail_ws()]] - code - gateway/tests/test_cli_coverage.py
 - [[interrupted()]] - code - gateway/tests/test_cli_coverage.py
 - [[missing_dep()]] - code - gateway/tests/test_cli_coverage.py
-- [[parametrize_10]] - code
+- [[parametrize_8]] - code
 - [[stdout + stderr regardless of click version (mix_stderr removed in 8.2).]] - rationale - gateway/tests/test_cli_coverage.py
 
 ## Live Query (requires Dataview plugin)

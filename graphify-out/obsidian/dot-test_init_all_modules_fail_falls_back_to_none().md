@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_middleware_coverage.py"
+community: "MiddlewareManager"
 location: "L204"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_middleware_coveragepy
+  - community/MiddlewareManager
 ---
 
 # .test_init_all_modules_fail_falls_back_to_none()
@@ -15,4 +15,4 @@ tags:
 - [[MiddlewareManager]] - `calls` [EXTRACTED]
 - [[TestInit]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

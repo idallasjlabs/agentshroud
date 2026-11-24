@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/mnemosyne.md"
+source_file: ".agents/agents/hermes.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "Hermes — Reference Verifier"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/Hermes__Reference_Verifier
 ---
 
 # Role
 
 ## Connections
-- [[Mnemosyne — Retention Engineer]] - `contains` [EXTRACTED]
+- [[Hermes — Reference Verifier]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier

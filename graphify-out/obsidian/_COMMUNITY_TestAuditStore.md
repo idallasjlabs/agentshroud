@@ -11,7 +11,7 @@ members: 10
 - [[dot-test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_log_event()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_stats()_2]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_stats()]] - code - gateway/tests/test_audit_export.py
 - [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
@@ -36,4 +36,4 @@ SORT file.name ASC
 - [[dot-test_hash_chain_integrity()]] - degree 3, connects to 1 community
 - [[dot-test_log_event()]] - degree 3, connects to 1 community
 - [[dot-test_query_events()]] - degree 3, connects to 1 community
-- [[dot-test_stats()_2]] - degree 3, connects to 1 community
+- [[dot-test_stats()]] - degree 3, connects to 1 community

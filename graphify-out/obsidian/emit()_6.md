@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_e2e_sdk.py"
+source_file: "gateway/tests/test_edge_service_routes.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L117"
+community: "test_edge_service_routes.py"
+location: "L68"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EnhancedApprovalQueue
+  - community/test_edge_service_routespy
 ---
 
 # emit()
 
 ## Connections
-- [[stack()]] - `indirect_call` [INFERRED]
+- [[_app_state()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue
+#graphify/code #graphify/INFERRED #community/test_edge_service_routespy

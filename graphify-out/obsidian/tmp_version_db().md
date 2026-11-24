@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Use a temporary DB for all tests.]] - `rationale_for` [EXTRACTED]
-- [[fixture_134]] - `references` [EXTRACTED]
+- [[fixture_136]] - `references` [EXTRACTED]
 - [[test_version_routes.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

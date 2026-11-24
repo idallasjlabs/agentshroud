@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L35"
+community: "SubagentMonitor"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/SubagentMonitor
 ---
 
 # default_config()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `uses` [INFERRED]
-- [[fixture_129]] - `references` [EXTRACTED]
-- [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `uses` [INFERRED]
+- [[fixture_51]] - `references` [EXTRACTED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

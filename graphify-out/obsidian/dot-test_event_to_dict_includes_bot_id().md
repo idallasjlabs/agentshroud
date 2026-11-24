@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

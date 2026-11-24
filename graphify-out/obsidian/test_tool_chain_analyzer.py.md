@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "tool_chain_analyzer.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/tool_chain_analyzerpy
 ---
 
 # test_tool_chain_analyzer.py
@@ -16,7 +16,7 @@ tags:
 - [[ChainMatch]] - `imports` [EXTRACTED]
 - [[ParamScanResult]] - `imports` [EXTRACTED]
 - [[ReversibilityScore]] - `imports` [EXTRACTED]
-- [[RiskLevel_6]] - `imports` [EXTRACTED]
+- [[RiskLevel]] - `imports` [EXTRACTED]
 - [[TestParamSanitization]] - `contains` [EXTRACTED]
 - [[TestReversibilityScoring]] - `contains` [EXTRACTED]
 - [[TestShellBleedPatterns]] - `contains` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[tool_chain_analyzer()]] - `contains` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

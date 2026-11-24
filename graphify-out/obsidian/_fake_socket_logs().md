@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_patch_exists"
+community: "ServiceManager"
 location: "L670"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_patch_exists
+  - community/ServiceManager
 ---
 
 # _fake_socket_logs()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_engine_error_falls_back_to_socket()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_patch_exists
+#graphify/code #graphify/INFERRED #community/ServiceManager

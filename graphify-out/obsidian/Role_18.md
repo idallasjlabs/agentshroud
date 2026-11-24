@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-ab.agent.md"
+source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
 type: "document"
-community: "Skill: Audit Branch (AB) — Merge Regression Detection"
-location: "L13"
+community: "Skill: CI/CD Pipeline Advisor (CICD)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Audit_Branch_AB__Merge_Regression_Detection
+  - community/Skill_CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Audit Branch (AB) — Merge Regression Detection_2]] - `contains` [EXTRACTED]
+- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Audit_Branch_AB__Merge_Regression_Detection
+#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD

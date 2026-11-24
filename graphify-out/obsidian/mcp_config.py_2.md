@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "PermissionLevel"
+community: "test_mcp_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/test_mcp_proxypy
 ---
 
 # mcp_config.py
 
 ## Connections
-- [[Enum_37]] - `imports_from` [EXTRACTED]
+- [[Enum_14]] - `imports_from` [EXTRACTED]
 - [[MCPProxyConfig]] - `contains` [EXTRACTED]
 - [[MCPServerConfig]] - `contains` [EXTRACTED]
 - [[MCPToolConfig]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

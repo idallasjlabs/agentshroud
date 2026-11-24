@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "TrustManager"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/TrustManager
 ---
 
 # Red Team Probe Tests — Phase 5: Steve Hay's specific attack probes. Each test…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_redteam_probes.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

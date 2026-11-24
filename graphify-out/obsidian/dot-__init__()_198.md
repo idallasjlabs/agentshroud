@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/session_security.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "SessionManager"
-location: "L57"
+community: "test_security_audit.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/test_security_auditpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SessionManager]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "OAuthSecurityValidator"
+community: "test_security_audit.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/test_security_auditpy
 ---
 
 # Exception
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[OAuthError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

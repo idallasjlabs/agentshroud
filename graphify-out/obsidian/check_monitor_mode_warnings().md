@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "SecurityConfig"
+community: "lifespan.py"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityConfig
+  - community/lifespanpy
 ---
 
 # check_monitor_mode_warnings()
@@ -22,4 +22,4 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_enforce_defaults.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

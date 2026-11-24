@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Add an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[post_6]] - `references` [EXTRACTED]

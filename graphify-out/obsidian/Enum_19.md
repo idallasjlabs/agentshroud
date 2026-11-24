@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "SecureBrowser"
+community: "SubagentMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/SubagentMonitor
 ---
 
 # Enum
 
 ## Connections
-- [[RiskLevel_1]] - `inherits` [EXTRACTED]
-- [[browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
+- [[SubagentEventType]] - `inherits` [EXTRACTED]
+- [[subagent_monitor.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

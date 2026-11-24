@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__aenter__()_6]] - `method` [EXTRACTED]
 - [[dot-__aexit__()_6]] - `method` [EXTRACTED]
-- [[dot-__init__()_167]] - `method` [EXTRACTED]
+- [[dot-__init__()_158]] - `method` [EXTRACTED]
 - [[dot-aiter_bytes()_1]] - `method` [EXTRACTED]
 - [[dot-aread()_1]] - `method` [EXTRACTED]
 - [[_run_stream()]] - `calls` [EXTRACTED]

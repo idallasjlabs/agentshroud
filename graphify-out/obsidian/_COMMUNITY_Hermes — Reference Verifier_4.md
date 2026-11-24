@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_56]] - document - .github/agents/i-hermes.agent.md
 - [[Persona_35]] - document - .github/agents/i-hermes.agent.md
 - [[Quality Checklist_41]] - document - .github/agents/i-hermes.agent.md
-- [[Role_106]] - document - .github/agents/i-hermes.agent.md
+- [[Role_108]] - document - .github/agents/i-hermes.agent.md
 - [[System Prompt_35]] - document - .github/agents/i-hermes.agent.md
 - [[i-hermes.agent]] - document - .github/agents/i-hermes.agent.md
 

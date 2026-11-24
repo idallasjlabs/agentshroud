@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-mcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx_2]] - `references` [EXTRACTED]
-- [[PATH_47]] - `requires_env` [EXTRACTED]
+- [[PATH_48]] - `requires_env` [EXTRACTED]
 - [[autoOpenFile_3]] - `requires_env` [EXTRACTED]
 - [[outputPath_3]] - `requires_env` [EXTRACTED]
 - [[xmind-generator-mcp_2]] - `references` [EXTRACTED]

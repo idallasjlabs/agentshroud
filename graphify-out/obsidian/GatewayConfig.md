@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L296"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # GatewayConfig
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_get_module_mode_no_env_override()]] - `calls` [EXTRACTED]
 - [[dot-test_global_monitor_override_downgrades_all()]] - `calls` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
-- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[BotConfig]] - `uses` [INFERRED]
 - [[Complete gateway configuration]] - `rationale_for` [EXTRACTED]
 - [[SSHConfig]] - `uses` [INFERRED]
@@ -61,4 +61,4 @@ tags:
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

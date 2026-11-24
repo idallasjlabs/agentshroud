@@ -1,21 +1,23 @@
 ---
-source_file: "gateway/inbound_edge/descriptors.py"
+source_file: "skills/openclaw/openai-image-gen/scripts/gen.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L216"
+community: "gen.py"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/genpy
 ---
 
 # main()
 
 ## Connections
-- [[build_manifest()]] - `calls` [EXTRACTED]
-- [[canonical_bytes()]] - `calls` [EXTRACTED]
-- [[descriptors.py]] - `contains` [EXTRACTED]
-- [[test_cli_verify_ok_and_bad_stdin()]] - `calls` [EXTRACTED]
-- [[verify_descriptors()]] - `calls` [EXTRACTED]
+- [[default_out_dir()]] - `calls` [EXTRACTED]
+- [[gen.py]] - `contains` [EXTRACTED]
+- [[get_model_defaults()]] - `calls` [EXTRACTED]
+- [[pick_prompts()]] - `calls` [EXTRACTED]
+- [[request_images()]] - `calls` [EXTRACTED]
+- [[slugify()]] - `calls` [EXTRACTED]
+- [[write_gallery()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/genpy

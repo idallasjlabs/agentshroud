@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPServerConfig"
+community: "test_mcp_proxy.py"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/test_mcp_proxypy
 ---
 
 # .test_start_send_and_stop()
@@ -18,4 +18,4 @@ tags:
 - [[TestStdioConnection]] - `method` [EXTRACTED]
 - [[fake_exec()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

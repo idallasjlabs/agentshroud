@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "PathIsolationManager"
-location: "L65"
+community: "InjectionRule"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/InjectionRule
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
-- [[PathIsolationConfig]] - `references` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
+- [[Initialize the scanner with optional custom rules. Args custom_rules…]] - `rationale_for` [EXTRACTED]
+- [[InjectionRule]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/InjectionRule

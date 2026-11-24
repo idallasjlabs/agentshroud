@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L2310"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # _receive()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_mock_ws()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/_mock_ws

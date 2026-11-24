@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: ".test_mcp_proxy_endpoint"
+community: "app"
 location: "L189"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_endpoint
+  - community/app
 ---
 
 # .test_mcp_proxy_endpoint()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[Test MCP proxy endpoint basic functionality.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
+- [[TestMCPProxyEndpoint]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_endpoint
+#graphify/code #graphify/EXTRACTED #community/app

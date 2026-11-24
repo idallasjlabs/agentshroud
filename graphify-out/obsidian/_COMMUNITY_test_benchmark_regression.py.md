@@ -9,7 +9,7 @@ members: 42
 
 ## Members
 - [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-setup_method()_16]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-setup_method()_14]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
@@ -33,12 +33,12 @@ members: 42
 - [[TestPercentileMath]] - code - gateway/tests/test_benchmark_regression.py
 - [[The P50P99 the gate consumes must be computed correctly.]] - rationale - gateway/tests/test_benchmark_regression.py
 - [[Time each of N iterations; return meanp50p99 in ms.]] - rationale - gateway/tests/test_benchmark_regression.py
-- [[__init__()_17]] - code - gateway/tests/test_soc_router_coverage.py
+- [[__init__()_13]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_fake_contributor_manager()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_one_run()]] - code - gateway/tests/test_benchmark_regression.py
 - [[_write_results()]] - code - gateway/tests/test_benchmark_regression.py
 - [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
-- [[fixture_56]] - code
+- [[fixture_64]] - code
 - [[get_contributor()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[list_contributors()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py

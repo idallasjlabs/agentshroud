@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # DataLedger
 
 ## Connections
-- [[dot-__init__()_98]] - `method` [EXTRACTED]
+- [[dot-__init__()_101]] - `method` [EXTRACTED]
 - [[dot-_hash_content()]] - `method` [EXTRACTED]
-- [[dot-close()_9]] - `method` [EXTRACTED]
+- [[dot-close()_7]] - `method` [EXTRACTED]
 - [[dot-delete_entry()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-enforce_retention()]] - `method` [EXTRACTED]
@@ -35,8 +35,8 @@ tags:
 - [[TestFullPipelineLatency]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
-- [[client()_11]] - `uses` [INFERRED]
-- [[client()_12]] - `uses` [INFERRED]
+- [[client()_13]] - `uses` [INFERRED]
+- [[client()_14]] - `uses` [INFERRED]
 - [[conftest.py]] - `imports` [EXTRACTED]
 - [[ledger()]] - `uses` [INFERRED]
 - [[ledger()_2]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

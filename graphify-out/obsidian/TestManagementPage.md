@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "test_runtime_engines.py"
+community: "TestInstallerAPI"
 location: "L835"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/TestInstallerAPI
 ---
 
 # TestManagementPage
 
 ## Connections
-- [[dot-client()_3]] - `method` [EXTRACTED]
+- [[dot-client()_2]] - `method` [EXTRACTED]
 - [[dot-test_dashboard_page()]] - `method` [EXTRACTED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/TestInstallerAPI

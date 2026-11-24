@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L147"
+community: "EdgeOAuthService"
+location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/EdgeOAuthService
 ---
 
 # .get_client()
 
 ## Connections
-- [[GatewayBackedProvider]] - `method` [EXTRACTED]
-- [[OAuthClientInformationFull]] - `references` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
+- [[EdgeOAuthService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

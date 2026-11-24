@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: ".get_or_create_session"
-location: "L138"
+community: "AuditChain"
+location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
-- [[Initialize session manager. Args base_workspace Base directory for user…]] - `rationale_for` [EXTRACTED]
-- [[Path_64]] - `references` [EXTRACTED]
-- [[UserSessionManager]] - `method` [EXTRACTED]
+- [[AuditChain]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_or_create_session
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,21 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "daily_cve_report.py"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/daily_cve_reportpy
+  - community/test_edge_service_routespy
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[build_manifest()]] - `references` [EXTRACTED]
+- [[canonical_bytes()]] - `references` [EXTRACTED]
+- [[descriptor_hash()]] - `references` [EXTRACTED]
+- [[verify_descriptors()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

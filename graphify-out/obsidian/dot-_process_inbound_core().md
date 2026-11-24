@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-blocked()]] - `indirect_call` [INFERRED]
-- [[dot-process_inbound()_4]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[PipelineResult]] - `calls` [EXTRACTED]
 - [[Process an inbound message through the full security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `method` [EXTRACTED]

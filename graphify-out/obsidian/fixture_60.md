@@ -1,21 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/config.py"
+community: "test_session_manager.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/test_session_managerpy
 ---
 
 # fixture
 
 ## Connections
-- [[_ensure_agentshroud_config_resolvable()]] - `references` [EXTRACTED]
-- [[auth_headers()]] - `references` [EXTRACTED]
-- [[sanitizer()_3]] - `references` [EXTRACTED]
-- [[test_client()]] - `references` [EXTRACTED]
-- [[test_config()]] - `references` [EXTRACTED]
-- [[test_ledger()]] - `references` [EXTRACTED]
+- [[mgr()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/test_session_managerpy

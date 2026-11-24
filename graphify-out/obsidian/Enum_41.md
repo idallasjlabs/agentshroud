@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentRegistry"
+community: "A2APolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/A2APolicyEngine
 ---
 
 # Enum
 
 ## Connections
-- [[IsolationStatus]] - `inherits` [EXTRACTED]
-- [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
+- [[A2AMethod]] - `inherits` [EXTRACTED]
+- [[A2APolicyAction]] - `inherits` [EXTRACTED]
+- [[a2a_policy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

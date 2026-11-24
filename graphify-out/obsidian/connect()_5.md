@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "services.py"
-location: "L30"
+community: "_patch_open"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/_patch_open
 ---
 
 # connect()
 
 ## Connections
-- [[_inspect_via_socket()]] - `contains` [EXTRACTED]
+- [[dot-test_running_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/_patch_open

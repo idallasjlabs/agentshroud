@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TestUserMemoryWriteACL"
+community: "TeamsConfig"
 location: "L165"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestUserMemoryWriteACL
+  - community/TeamsConfig
 ---
 
 # TestUserMemoryWriteACL
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_self_write_succeeds()]] - `method` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestUserMemoryWriteACL
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

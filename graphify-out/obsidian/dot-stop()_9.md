@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "DockerEngine"
-location: "L96"
+community: "DNSBlocklist"
+location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/DNSBlocklist
 ---
 
 # .stop()
 
 ## Connections
-- [[dot-_cmd()_2]] - `calls` [EXTRACTED]
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Stop periodic updates.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

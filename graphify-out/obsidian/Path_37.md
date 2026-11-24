@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # Path
 
 ## Connections
-- [[_parse()]] - `references` [EXTRACTED]
-- [[load_profiles()]] - `references` [EXTRACTED]
+- [[dot-__init__()_116]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

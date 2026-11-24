@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_egress_enforce.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
 community: "EgressFilter"
-location: "L224"
+location: "L450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,9 +12,6 @@ tags:
 # .test_url_parsing()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
-- [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[Test URL parsing for domains and ports.]] - `rationale_for` [EXTRACTED]
-- [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EgressFilter

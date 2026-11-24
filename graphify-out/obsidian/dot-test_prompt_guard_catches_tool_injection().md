@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # .test_prompt_guard_catches_tool_injection()
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard]] - `calls` [INFERRED]
 - [[TestMCPSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

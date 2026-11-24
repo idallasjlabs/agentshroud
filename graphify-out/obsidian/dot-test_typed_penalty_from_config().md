@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "lifespan.py"
+community: "ToolACLEnforcer"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ToolACLEnforcer
 ---
 
 # .test_typed_penalty_from_config()
@@ -16,4 +16,4 @@ tags:
 - [[_fast_ladder()]] - `calls` [EXTRACTED]
 - [[_make_tm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-pca/SKILL.md"
+source_file: "docker/config/openclaw/skills/i-pca/SKILL.md"
 type: "document"
-community: "Skill: Pre-Change Analysis (PCA)"
-location: "L8"
+community: "Output Sections (ALL required)"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pre-Change_Analysis_PCA
+  - community/Output_Sections_ALL_required
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_7]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA
+#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required

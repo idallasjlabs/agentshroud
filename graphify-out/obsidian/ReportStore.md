@@ -12,7 +12,7 @@ tags:
 # ReportStore
 
 ## Connections
-- [[dot-__init__()_8]] - `method` [EXTRACTED]
+- [[dot-__init__()_10]] - `method` [EXTRACTED]
 - [[dot-_check_size()]] - `method` [EXTRACTED]
 - [[dot-_enforce_count_cap()]] - `method` [EXTRACTED]
 - [[dot-_path()]] - `method` [EXTRACTED]
@@ -20,7 +20,7 @@ tags:
 - [[dot-_sanitize_async()]] - `method` [EXTRACTED]
 - [[dot-_sanitize_sync()]] - `method` [EXTRACTED]
 - [[dot-_valid_id()]] - `method` [EXTRACTED]
-- [[dot-client()]] - `calls` [EXTRACTED]
+- [[dot-client()_4]] - `calls` [EXTRACTED]
 - [[dot-delete()]] - `method` [EXTRACTED]
 - [[dot-get()_2]] - `method` [EXTRACTED]
 - [[dot-list()]] - `method` [EXTRACTED]

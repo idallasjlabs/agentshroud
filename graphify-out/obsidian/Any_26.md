@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "services.py"
+community: "test_mcp_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/test_mcp_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_64]] - `references` [EXTRACTED]
-- [[dot-_describe_service()]] - `references` [EXTRACTED]
-- [[dot-_get_engine()]] - `references` [EXTRACTED]
-- [[_inspect_via_socket()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

@@ -15,7 +15,7 @@ members: 11
 - [[TestStatus]] - code - gateway/tests/test_credential_injector.py
 - [[Tests for gatewaysecuritycredential_injector.py — verify secrets never leak.]] - rationale - gateway/tests/test_credential_injector.py
 - [[Verify that raw credential values never appear in log output.]] - rationale - gateway/tests/test_credential_injector.py
-- [[fixture_28]] - code
+- [[fixture_29]] - code
 - [[injector()]] - code - gateway/tests/test_credential_injector.py
 - [[secrets_dir()]] - code - gateway/tests/test_credential_injector.py
 - [[test_credential_injector.py]] - code - gateway/tests/test_credential_injector.py

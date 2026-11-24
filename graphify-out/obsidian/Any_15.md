@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestResourceGuardAlertBridge"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestResourceGuardAlertBridge
+  - community/lifespanpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestResourceGuardAlertBridge
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

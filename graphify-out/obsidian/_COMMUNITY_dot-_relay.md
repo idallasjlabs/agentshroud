@@ -34,7 +34,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_HTTPConnectProxy]]
 - 5 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
-- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
 
 ## Top bridge nodes
 - [[dot-_relay()]] - degree 10, connects to 2 communities

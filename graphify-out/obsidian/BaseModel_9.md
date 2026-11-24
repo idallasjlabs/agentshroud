@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "EgressFilter"
+community: "CompetitiveIntelReport"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/CompetitiveIntelReport
 ---
 
 # BaseModel
 
 ## Connections
-- [[EgressAllowlistResponse]] - `inherits` [EXTRACTED]
-- [[EgressAllowlistUpdate]] - `inherits` [EXTRACTED]
+- [[Citation]] - `inherits` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `inherits` [EXTRACTED]
+- [[CompetitorEntry]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

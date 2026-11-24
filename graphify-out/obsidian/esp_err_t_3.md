@@ -1,22 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ws_client.c"
+community: "wakeword.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_clientc
+  - community/wakewordc
 ---
 
 # esp_err_t
 
 ## Connections
-- [[ws_client_send_end()]] - `references` [EXTRACTED]
-- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen()]] - `references` [EXTRACTED]
-- [[ws_client_send_listen_resume()]] - `references` [EXTRACTED]
-- [[ws_client_send_log()]] - `references` [EXTRACTED]
-- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
-- [[ws_client_send_stop()]] - `references` [EXTRACTED]
+- [[wakeword_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_clientc
+#graphify/code #graphify/EXTRACTED #community/wakewordc

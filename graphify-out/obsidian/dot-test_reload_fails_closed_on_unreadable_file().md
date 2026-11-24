@@ -16,6 +16,6 @@ tags:
 - [[TestClient_1]] - `references` [EXTRACTED]
 - [[TestReloadIntegration]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
-- [[boom()_5]] - `indirect_call` [INFERRED]
+- [[boom()_4]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

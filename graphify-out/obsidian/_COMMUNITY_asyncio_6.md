@@ -27,7 +27,7 @@ members: 21
 - [[TestAuditStoreAnchoredVerify]] - code - gateway/tests/test_audit_export.py
 - [[TestAuditStoreBotId]] - code - gateway/tests/test_audit_export.py
 - [[Verify per-bot filtering in AuditStore (v1.1.0 multi-bot support).]] - rationale - gateway/tests/test_audit_export.py
-- [[asyncio_80]] - code
+- [[asyncio_79]] - code
 - [[verify_hash_chain(start_id=X) anchors on X's predecessor (SCRUM-204).]] - rationale - gateway/tests/test_audit_export.py
 
 ## Live Query (requires Dataview plugin)
@@ -45,7 +45,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_dot-test_concurrent_log_event_two_connections_keeps_linear_chain]]
 
 ## Top bridge nodes
-- [[asyncio_80]] - degree 25, connects to 3 communities
+- [[asyncio_79]] - degree 25, connects to 3 communities
 - [[TestAuditStoreAnchoredVerify]] - degree 11, connects to 2 communities
 - [[TestAuditStoreBotId]] - degree 10, connects to 2 communities
 - [[dot-test_migration_adds_bot_id_column()]] - degree 4, connects to 1 community

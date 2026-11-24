@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: ".test_events_api_envelope_dispatches_handle_event"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # slack_proxy.py
@@ -22,4 +22,4 @@ tags:
 - [[test_slack_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_slack_proxy_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

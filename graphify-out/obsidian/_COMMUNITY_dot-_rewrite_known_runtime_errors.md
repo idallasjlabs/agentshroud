@@ -32,8 +32,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
-- 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
 
 ## Top bridge nodes
 - [[TestRuntimeRewriteHelpers]] - degree 13, connects to 2 communities

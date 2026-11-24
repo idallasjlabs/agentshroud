@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestNormalDNSResolution"
+community: "DNSFilterConfig"
 location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNormalDNSResolution
+  - community/DNSFilterConfig
 ---
 
 # TestNormalDNSResolution
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_subdomain_allowed()]] - `method` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNormalDNSResolution
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

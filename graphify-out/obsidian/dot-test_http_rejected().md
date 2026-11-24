@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "test_security_audit.py"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/test_security_auditpy
 ---
 
 # .test_http_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthSecurityValidator]] - `calls` [INFERRED]
 - [[TestRedirectURI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

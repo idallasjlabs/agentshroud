@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "soc/router.py"
+community: "KillSwitchError"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/KillSwitchError
 ---
 
 # A kill switch action did not fully take effect. ``status_code`` is 503 when no…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KillSwitchError]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchError

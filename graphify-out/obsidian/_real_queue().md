@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # _real_queue()
@@ -17,8 +17,8 @@ tags:
 - [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig. The default…]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `calls` [EXTRACTED]
 - [[ToolRiskConfig]] - `calls` [EXTRACTED]
-- [[_run()_6]] - `calls` [EXTRACTED]
-- [[_run()_7]] - `calls` [EXTRACTED]
+- [[_run()_8]] - `calls` [EXTRACTED]
+- [[_run()_9]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

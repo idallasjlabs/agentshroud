@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "delegation.py"
+community: "SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/delegationpy
+  - community/SecureBrowser
 ---
 
 # Enum
 
 ## Connections
-- [[DelegationPrivilege]] - `inherits` [EXTRACTED]
-- [[delegation.py]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_2]] - `inherits` [EXTRACTED]
+- [[browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/delegationpy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -12,14 +12,14 @@ tags:
 # InjectionAction
 
 ## Connections
-- [[Enum_14]] - `inherits` [EXTRACTED]
+- [[Enum_17]] - `inherits` [EXTRACTED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestContextGuardInPipeline]] - `uses` [INFERRED]
 - [[TestHighSeverity]] - `uses` [INFERRED]
 - [[TestSanitization]] - `uses` [INFERRED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[pipeline.py_1]] - `imports` [EXTRACTED]
-- [[str_9]] - `inherits` [EXTRACTED]
+- [[str_11]] - `inherits` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_tool_injection_scan.py]] - `imports` [EXTRACTED]
 - [[test_tool_injection_scan_blocks_encoded_lower_ranked_rule()]] - `uses` [INFERRED]

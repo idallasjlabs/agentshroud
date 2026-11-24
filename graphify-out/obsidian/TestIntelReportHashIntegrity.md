@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "IntelReportStore"
+community: "TestIntelReportHashIntegrity"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/TestIntelReportHashIntegrity
 ---
 
 # TestIntelReportHashIntegrity
@@ -20,4 +20,4 @@ tags:
 - [[CompetitiveIntelReport]] - `uses` [INFERRED]
 - [[test_intel_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/TestIntelReportHashIntegrity

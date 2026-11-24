@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalStore"
+community: "test_file_sandbox_message_gate.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # fixture
 
 ## Connections
-- [[queue()]] - `references` [EXTRACTED]
-- [[store()_3]] - `references` [EXTRACTED]
+- [[manager()_3]] - `references` [EXTRACTED]
+- [[session_manager()_3]] - `references` [EXTRACTED]
+- [[temp_workspace()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

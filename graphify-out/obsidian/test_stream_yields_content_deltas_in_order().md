@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[_sse_lines()]] - `calls` [EXTRACTED]
-- [[asyncio_60]] - `references` [EXTRACTED]
-- [[mock_stream()_18]] - `indirect_call` [INFERRED]
+- [[asyncio_58]] - `references` [EXTRACTED]
+- [[mock_stream()_6]] - `indirect_call` [INFERRED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

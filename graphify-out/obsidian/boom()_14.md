@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_discover_upstream_versions.py"
 type: "code"
-community: "TestCollaboratorPersistence"
-location: "L666"
+community: "discover_upstream_versions.py"
+location: "L221"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestCollaboratorPersistence
+  - graphify/INFERRED
+  - community/discover_upstream_versionspy
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_unpause_returns_false_on_io_error()]] - `contains` [EXTRACTED]
+- [[dot-test_propagates_fn_exception()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence
+#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L311"
+community: "GatewayBackedProvider"
+location: "L320"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/GatewayBackedProvider
 ---
 
 # consent()
 
 ## Connections
 - [[_consent_routes()]] - `indirect_call` [INFERRED]
-- [[render()_1]] - `calls` [EXTRACTED]
+- [[render()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

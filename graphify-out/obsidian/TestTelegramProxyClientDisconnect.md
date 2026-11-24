@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "asyncio"
+community: "GatewayConfig"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/GatewayConfig
 ---
 
 # TestTelegramProxyClientDisconnect
@@ -16,4 +16,4 @@ tags:
 - [[ClientDisconnect mid-body-read must not crash the gateway process.]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

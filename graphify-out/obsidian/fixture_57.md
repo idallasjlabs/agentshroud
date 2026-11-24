@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "mgr"
+community: "ContextGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mgr
+  - community/ContextGuard
 ---
 
 # fixture
 
 ## Connections
-- [[mgr()_1]] - `references` [EXTRACTED]
+- [[guard()]] - `references` [EXTRACTED]
+- [[scorer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mgr
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

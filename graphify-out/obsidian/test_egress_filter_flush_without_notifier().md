@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "asyncio"
+community: "EgressFilter"
 location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressFilter
 ---
 
 # test_egress_filter_flush_without_notifier()
@@ -15,8 +15,8 @@ tags:
 - [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_63]] - `references` [EXTRACTED]
 - [[flush_notifications with no notifier set should not crash.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

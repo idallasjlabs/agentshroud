@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # set_mode()
@@ -19,7 +19,7 @@ tags:
 - [[Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.]] - `rationale_for` [EXTRACTED]
 - [[_auto_revert()]] - `contains` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
-- [[put_1]] - `references` [EXTRACTED]
+- [[put_2]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

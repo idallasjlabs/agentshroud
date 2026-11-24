@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # _no_real_telegram_network()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Fail any real urlopen fast unless a test installs its own fake. Blocked-message…]] - `rationale_for` [EXTRACTED]
 - [[_refuse()]] - `indirect_call` [INFERRED]
-- [[fixture_31]] - `references` [EXTRACTED]
+- [[fixture_37]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

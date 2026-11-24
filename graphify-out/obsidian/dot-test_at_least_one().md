@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_score_secure_development"
+community: "test_scanner_integration.py"
 location: "L816"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_secure_development
+  - community/test_scanner_integrationpy
 ---
 
 # .test_at_least_one()
 
 ## Connections
-- [[TestScoreSecureDevelopment]] - `method` [EXTRACTED]
+- [[TestScoreSecureDevelopment_1]] - `method` [EXTRACTED]
 - [[_score_secure_development()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_secure_development
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

@@ -12,9 +12,9 @@ tags:
 # UserSessionManager
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_185]] - `calls` [EXTRACTED]
-- [[dot-__init__()_180]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_184]] - `calls` [EXTRACTED]
+- [[dot-__init__()_185]] - `method` [EXTRACTED]
 - [[dot-_load_sessions()]] - `method` [EXTRACTED]
 - [[dot-_save_sessions()]] - `method` [EXTRACTED]
 - [[dot-_session_key()]] - `method` [EXTRACTED]
@@ -53,9 +53,9 @@ tags:
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
-- [[mgr()]] - `uses` [INFERRED]
+- [[mgr()_2]] - `uses` [INFERRED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[session_manager()_3]] - `uses` [INFERRED]
 - [[session_manager()_4]] - `uses` [INFERRED]
 - [[session_manager()]] - `uses` [INFERRED]

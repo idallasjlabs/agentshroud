@@ -38,9 +38,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
 
 ## Top bridge nodes
 - [[TestDomainValidationHelper]] - degree 20, connects to 2 communities
-- [[dot-_is_valid_domain_name()]] - degree 20, connects to 1 community
+- [[dot-_is_valid_domain_name()]] - degree 20, connects to 2 communities

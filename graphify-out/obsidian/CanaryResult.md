@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "SecurityPipeline"
+community: "lifespan.py"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/lifespanpy
 ---
 
 # CanaryResult
 
 ## Connections
-- [[dot-to_dict()_3]] - `method` [EXTRACTED]
+- [[dot-to_dict()_4]] - `method` [EXTRACTED]
 - [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
 - [[canary.py_2]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

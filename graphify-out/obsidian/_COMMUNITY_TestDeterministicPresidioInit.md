@@ -17,7 +17,7 @@ members: 14
 - [[TestDeterministicPresidioInit]] - code - gateway/tests/test_differential_pii_detector.py
 - [[The default-model auto-download path must never be taken. If Presidio is ever…]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[When the pinned model loads, Presidio is built with an explicit ``nlp_engine``…]] - rationale - gateway/tests/test_differential_pii_detector.py
-- [[__init__()_6]] - code - gateway/tests/test_differential_pii_detector.py
+- [[__init__()_3]] - code - gateway/tests/test_differential_pii_detector.py
 - [[_fake_analyzer()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[_no_model()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[_spy()]] - code - gateway/tests/test_differential_pii_detector.py
@@ -31,7 +31,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_DifferentialPIIDetector]]
+- 2 edges to [[_COMMUNITY_test_differential_pii_detector.py]]
+- 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
 
 ## Top bridge nodes
-- [[TestDeterministicPresidioInit]] - degree 9, connects to 1 community
+- [[TestDeterministicPresidioInit]] - degree 9, connects to 2 communities

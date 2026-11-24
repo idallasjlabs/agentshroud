@@ -18,7 +18,7 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_owner_notice()_4]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/fake_owner_notice

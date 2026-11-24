@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-apollo.agent.md"
+source_file: ".agents/skills/i-pca/SKILL.md"
 type: "document"
-community: "Technical Specification"
-location: "L13"
+community: "Skill: Pre-Change Analysis (PCA)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/Skill_Pre-Change_Analysis_PCA
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
+- [[Skill Pre-Change Analysis (PCA)_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/Skill_Pre-Change_Analysis_PCA

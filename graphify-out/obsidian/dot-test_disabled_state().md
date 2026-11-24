@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "test_soc_edge.py"
+community: "soc/router.py"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_edgepy
+  - community/soc/routerpy
 ---
 
 # .test_disabled_state()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeStatus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

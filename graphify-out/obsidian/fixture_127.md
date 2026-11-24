@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "SessionManager"
+community: "NetworkValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/NetworkValidator
 ---
 
 # fixture
 
 ## Connections
-- [[dot-manager()_2]] - `references` [EXTRACTED]
-- [[manager()_3]] - `references` [EXTRACTED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

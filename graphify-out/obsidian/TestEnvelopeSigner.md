@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "code"
-community: "TestEnvelopeSigner"
+community: "EnvelopeSigner"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEnvelopeSigner
+  - community/EnvelopeSigner
 ---
 
 # TestEnvelopeSigner
@@ -23,4 +23,4 @@ tags:
 - [[InstructionEnvelope]] - `uses` [INFERRED]
 - [[test_instruction_envelope.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

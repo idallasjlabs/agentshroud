@@ -1,16 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "._handler"
+community: "SCLClient"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handler
+  - community/SCLClient
 ---
 
 # Any
 
 ## Connections
-- [[dot-_handler()]] - `references` [EXTRACTED]
+- [[dot-_request()]] - `references` [EXTRACTED]
+- [[dot-delete()_1]] - `references` [EXTRACTED]
+- [[dot-get()]] - `references` [EXTRACTED]
+- [[dot-post()]] - `references` [EXTRACTED]
+- [[dot-put()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handler
+#graphify/code #graphify/EXTRACTED #community/SCLClient

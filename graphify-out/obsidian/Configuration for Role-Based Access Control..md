@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "middleware.py"
+community: "soc/router.py"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/soc/routerpy
 ---
 
 # Configuration for Role-Based Access Control.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RBACConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

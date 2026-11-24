@@ -15,7 +15,7 @@ tags:
 - [[dot-_fake_urlopen_factory()]] - `calls` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 - [[getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing

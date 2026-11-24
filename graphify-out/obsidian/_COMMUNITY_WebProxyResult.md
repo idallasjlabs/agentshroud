@@ -12,9 +12,9 @@ members: 13
 - [[dot-check_request()]] - code - gateway/proxy/web_proxy.py
 - [[dot-flagged()]] - code - gateway/proxy/web_proxy.py
 - [[dot-get_stats()]] - code - gateway/proxy/web_proxy.py
-- [[dot-scan_response()]] - code - gateway/proxy/web_proxy.py
+- [[dot-scan_response()_1]] - code - gateway/proxy/web_proxy.py
 - [[dot-to_dict()]] - code - gateway/proxy/web_proxy.py
-- [[Any_4]] - code
+- [[Any_5]] - code
 - [[Check an outbound HTTP request before it's sent. This is the pre-flight check.…]] - rationale - gateway/proxy/web_proxy.py
 - [[Get proxy statistics.]] - rationale - gateway/proxy/web_proxy.py
 - [[Record an audit entry in the hash chain.]] - rationale - gateway/proxy/web_proxy.py
@@ -30,13 +30,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_WebProxy]]
+- 4 edges to [[_COMMUNITY_WebProxy]]
 - 2 edges to [[_COMMUNITY_TestWebProxySecurityIntegration]]
-- 1 edge to [[_COMMUNITY_EgressEvent]]
+- 2 edges to [[_COMMUNITY_web_proxy.py]]
 
 ## Top bridge nodes
 - [[WebProxyResult]] - degree 8, connects to 2 communities
-- [[dot-scan_response()]] - degree 5, connects to 2 communities
+- [[dot-scan_response()_1]] - degree 5, connects to 2 communities
 - [[dot-_audit()]] - degree 5, connects to 1 community
 - [[dot-check_request()]] - degree 4, connects to 1 community
 - [[dot-get_stats()]] - degree 3, connects to 1 community

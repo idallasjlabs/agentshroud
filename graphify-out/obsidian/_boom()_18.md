@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TestFailsLoudly"
-location: "L473"
+community: "test_tts_kokoro_pipeline_load_failure_raises"
+location: "L85"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/TestFailsLoudly
+  - graphify/INFERRED
+  - community/test_tts_kokoro_pipeline_load_failure_raises
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_main_exits_nonzero_when_an_agent_fails()]] - `contains` [EXTRACTED]
+- [[test_lifespan_tolerates_warmup_failure()]] - `indirect_call` [INFERRED]
+- [[test_tts_kokoro_pipeline_load_failure_raises()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestFailsLoudly
+#graphify/code #graphify/INFERRED #community/test_tts_kokoro_pipeline_load_failure_raises

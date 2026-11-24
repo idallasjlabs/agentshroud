@@ -1,17 +1,16 @@
 ---
 type: community
-members: 65
+members: 63
 ---
 
 # test_e2e_watchtower.py
 
-**Members:** 65 nodes
+**Members:** 63 nodes
 
 ## Members
 - [[dot-check_response()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-sanitize()_1]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_agents_process_independently()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[dot-test_audit_chain_hash_chained()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_base64_content_decoded()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_benign_message_passes()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_blocked_message_has_audit_entry()]] - code - gateway/tests/test_e2e_watchtower.py
@@ -30,7 +29,6 @@ members: 65
 - [[dot-test_pii_from_agent_a_not_in_agent_b_audit()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_ssn_redacted()]] - code - gateway/tests/test_e2e_watchtower.py
 - [[dot-test_trusted_agent_can_send_message()]] - code - gateway/tests/test_e2e_watchtower.py
-- [[Audit chain is a hash chain each entry references the previous hash.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Batch F1 — v0.8.0 Watchtower E2E Test Suite (10 enforcement scenarios). These…]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[Blocking agent A does not affect agent B's processing.]] - rationale - gateway/tests/test_e2e_watchtower.py
 - [[E2E-01 PromptGuard blocks high-confidence injection payloads.]] - rationale - gateway/tests/test_e2e_watchtower.py
@@ -82,23 +80,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 8 edges to [[_COMMUNITY_lifespan.py]]
 - 6 edges to [[_COMMUNITY_SecurityPipeline]]
-- 5 edges to [[_COMMUNITY_PIIConfig]]
-- 4 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 6 edges to [[_COMMUNITY_TrustManager]]
+- 4 edges to [[_COMMUNITY_PipelineAction]]
 - 3 edges to [[_COMMUNITY_AuditChain]]
 - 3 edges to [[_COMMUNITY_ContextGuard]]
 - 3 edges to [[_COMMUNITY_CanaryTripwire]]
-- 3 edges to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_PromptGuard]]
-- 2 edges to [[_COMMUNITY_TrustConfig]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 3 edges to [[_COMMUNITY_EncodingDetector]]
 - 1 edge to [[_COMMUNITY_prompt_guard.py]]
 
 ## Top bridge nodes
-- [[test_e2e_watchtower.py]] - degree 39, connects to 13 communities
+- [[test_e2e_watchtower.py]] - degree 39, connects to 9 communities
 - [[pipeline()]] - degree 7, connects to 5 communities
-- [[trust_manager()]] - degree 4, connects to 2 communities
 - [[TestE2E01PromptGuardBlocking]] - degree 6, connects to 1 community
 - [[TestE2E08AuditChainIntegrity]] - degree 6, connects to 1 community
+- [[TestE2E05CanaryTripwire]] - degree 5, connects to 1 community

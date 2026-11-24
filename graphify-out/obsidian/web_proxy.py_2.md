@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "web_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/web_proxypy
 ---
 
 # web_proxy.py
@@ -19,7 +19,7 @@ tags:
 - [[EgressEvent]] - `imports` [EXTRACTED]
 - [[EgressMonitor]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
-- [[Enum_35]] - `imports_from` [EXTRACTED]
+- [[Enum_15]] - `imports_from` [EXTRACTED]
 - [[NetworkValidator]] - `imports` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `imports` [EXTRACTED]
 - [[ProxyAction]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[web_config.py_2]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

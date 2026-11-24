@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "._extract_first_egress_target"
+community: "TestOutboundClassifierHelpers"
 location: "L4035"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_first_egress_target
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Unit tests for outbound helper classifiers used by collaborator filtering.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundClassifierHelpers]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

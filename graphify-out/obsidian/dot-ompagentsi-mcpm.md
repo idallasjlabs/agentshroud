@@ -12,6 +12,6 @@ tags:
 # .omp/agents/i-mcpm.md
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

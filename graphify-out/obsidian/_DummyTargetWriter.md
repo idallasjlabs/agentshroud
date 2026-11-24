@@ -12,8 +12,8 @@ tags:
 # _DummyTargetWriter
 
 ## Connections
-- [[dot-__init__()_210]] - `method` [EXTRACTED]
-- [[dot-close()_19]] - `method` [EXTRACTED]
+- [[dot-__init__()_207]] - `method` [EXTRACTED]
+- [[dot-close()_18]] - `method` [EXTRACTED]
 - [[dot-drain()]] - `method` [EXTRACTED]
 - [[dot-write()]] - `method` [EXTRACTED]
 - [[_CloseRaisesTargetWriter]] - `inherits` [EXTRACTED]

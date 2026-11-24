@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_voice_gateway.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "mock_stream"
-location: "L1487"
+community: "._fake_aiohttp"
+location: "L259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mock_stream
+  - community/_fake_aiohttp
 ---
 
 # __aexit__()
 
 ## Connections
-- [[test_call_agent_uses_structured_timeout()]] - `contains` [EXTRACTED]
+- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mock_stream
+#graphify/code #graphify/EXTRACTED #community/_fake_aiohttp

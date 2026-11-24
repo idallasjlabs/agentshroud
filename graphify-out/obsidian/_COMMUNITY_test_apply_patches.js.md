@@ -14,7 +14,7 @@ members: 10
 - [[baseConfig()]] - code - tests/startup_smoke/test_apply_patches.js
 - [[fs_1]] - code - tests/startup_smoke/test_apply_patches.js
 - [[os_1]] - code - tests/startup_smoke/test_apply_patches.js
-- [[path_21]] - code - tests/startup_smoke/test_apply_patches.js
+- [[path_19]] - code - tests/startup_smoke/test_apply_patches.js
 - [[runPatches()]] - code - tests/startup_smoke/test_apply_patches.js
 - [[test_apply_patches.js]] - code - tests/startup_smoke/test_apply_patches.js
 - [[{ spawnSync }_1]] - code - tests/startup_smoke/test_apply_patches.js

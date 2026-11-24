@@ -1,17 +1,17 @@
 ---
-source_file: ".opencode/agents/i-mcpm.md"
+source_file: ".opencode/agents/i-data.md"
 type: "document"
-community: "Available MCP Servers"
+community: "Skill: Data Validation (DATA-VAL)"
 location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Skill_Data_Validation_DATA-VAL
 ---
 
 # Role
 
 ## Connections
-- [[Skill MCP Tools Usage (MCP-TOOLS)_4]] - `contains` [EXTRACTED]
+- [[Skill Data Validation (DATA-VAL)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL

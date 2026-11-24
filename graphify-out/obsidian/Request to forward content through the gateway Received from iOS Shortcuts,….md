@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: "AgentTarget"
 location: "L23"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentTarget
 ---
 
 # Request to forward content through the gateway Received from iOS Shortcuts,…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ForwardRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

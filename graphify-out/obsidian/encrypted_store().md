@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[EncryptedStore]] - `uses` [INFERRED]
-- [[fixture_107]] - `references` [EXTRACTED]
+- [[fixture_106]] - `references` [EXTRACTED]
 - [[t_encrypt()]] - `indirect_call` [INFERRED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 

@@ -41,7 +41,7 @@ tags:
 - [[dot-test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
 - [[dot-test_serialise_contains_version_and_timestamp()]] - `calls` [EXTRACTED]
 - [[Build a manifest by walking source (``~.llm_settings``). Raises…]] - `rationale_for` [EXTRACTED]
-- [[Path_55]] - `references` [EXTRACTED]
+- [[Path_71]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `method` [EXTRACTED]
 - [[_build_tree()]] - `calls` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]

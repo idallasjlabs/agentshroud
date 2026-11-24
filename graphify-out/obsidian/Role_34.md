@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-sec.md"
+source_file: ".opencode/agents/apollo.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
-location: "L10"
+community: "Technical Specification"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

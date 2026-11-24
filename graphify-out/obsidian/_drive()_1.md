@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_hot_reload.py"
 type: "code"
-community: "test_config_hot_reload.py"
+community: "lifespan"
 location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_config_hot_reloadpy
+  - community/lifespan
 ---
 
 # _drive()
@@ -18,4 +18,4 @@ tags:
 - [[config_watcher()]] - `calls` [EXTRACTED]
 - [[test_watcher_reloads_on_mtime_change()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy
+#graphify/code #graphify/EXTRACTED #community/lifespan

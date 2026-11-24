@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_security_audit.py"
+community: "TestPromptGuard"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestPromptGuard
 ---
 
 # .test_prompt_leaking_via_markdown()
@@ -15,4 +15,4 @@ tags:
 - [[Markdown-based injection.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/TestPromptGuard

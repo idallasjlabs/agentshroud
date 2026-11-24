@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_network_isolation.py"
+community: "DelegationPrivilege"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_network_isolationpy
+  - community/DelegationPrivilege
 ---
 
 # fixture
 
 ## Connections
-- [[_compose()]] - `references` [EXTRACTED]
+- [[mgr()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_network_isolationpy
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

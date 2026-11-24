@@ -12,11 +12,11 @@ tags:
 # ToolACLEnforcer
 
 ## Connections
-- [[dot-__init__()_186]] - `method` [EXTRACTED]
+- [[dot-__init__()_182]] - `method` [EXTRACTED]
 - [[dot-_can_use_tool_impl()]] - `method` [EXTRACTED]
 - [[dot-_get_group_tool_allowlist()]] - `method` [EXTRACTED]
 - [[dot-_get_role()]] - `method` [EXTRACTED]
-- [[dot-can_use_tool()_1]] - `method` [EXTRACTED]
+- [[dot-can_use_tool()]] - `method` [EXTRACTED]
 - [[dot-can_use_tool_from_origin()]] - `method` [EXTRACTED]
 - [[dot-can_use_tool_in_group_context()]] - `method` [EXTRACTED]
 - [[dot-check_tool_rate_limit()]] - `method` [EXTRACTED]

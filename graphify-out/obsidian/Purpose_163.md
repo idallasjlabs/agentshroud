@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Security Modules/oauth_security.py.md"
+source_file: "docker/config/hermes/skills/i-cr/README.md"
 type: "document"
-community: "Function Details"
-location: "L12"
+community: "Project Management (SKILL)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Function_Details
+  - community/Project_Management_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[oauth_security.py_1]] - `contains` [EXTRACTED]
+- [[Code Review (CR)_2]] - `contains` [EXTRACTED]
+- [[Code Review (i-cr)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Function_Details
+#graphify/document #graphify/EXTRACTED #community/Project_Management_SKILL

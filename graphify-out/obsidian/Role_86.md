@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-pr.agent.md"
+source_file: ".github/agents/i-gg.agent.md"
 type: "document"
-community: "Skill: Pull Request (PR) Generator"
+community: "Skill: Git Workflow Guardian (GIT-GUARD)"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Pull_Request_PR_Generator
+  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pull Request (PR) Generator_3]] - `contains` [EXTRACTED]
+- [[Skill Git Workflow Guardian (GIT-GUARD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator
+#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD

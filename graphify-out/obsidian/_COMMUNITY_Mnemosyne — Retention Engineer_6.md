@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_63]] - document - .opencode/agents/mnemosyne.md
 - [[Persona_42]] - document - .opencode/agents/mnemosyne.md
 - [[Quality Checklist_48]] - document - .opencode/agents/mnemosyne.md
-- [[Role_113]] - document - .opencode/agents/mnemosyne.md
+- [[Role_115]] - document - .opencode/agents/mnemosyne.md
 - [[System Prompt_42]] - document - .opencode/agents/mnemosyne.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,13 +1,14 @@
 ---
 type: community
-members: 69
+members: 72
 ---
 
 # test_collaborator_responses.py
 
-**Members:** 69 nodes
+**Members:** 72 nodes
 
 ## Members
+- [[dot-_handle_addtogroup_command()]] - code - gateway/proxy/telegram_proxy.py
 - [[dot-coerce_members()]] - code - gateway/security/group_config.py
 - [[dot-is_admin()]] - code - gateway/security/group_config.py
 - [[dot-is_member()]] - code - gateway/security/group_config.py
@@ -49,6 +50,7 @@ members: 69
 - [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
 - [[GroupConfig]] - code - gateway/security/group_config.py
+- [[Handle addtogroup user_id group_id (owner only).]] - rationale - gateway/proxy/telegram_proxy.py
 - [[ProjectConfig]] - code - gateway/security/group_config.py
 - [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
 - [[Shared collaborator response templates for Telegram and Slack proxies.…]] - rationale - gateway/proxy/collaborator_responses.py
@@ -74,6 +76,7 @@ members: 69
 - [[format_projects_list()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
 - [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
 - [[project()]] - code - gateway/tests/test_collaborator_responses.py
 - [[teams()]] - code - gateway/tests/test_collaborator_responses.py
 - [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
@@ -86,14 +89,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 10 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 15 edges to [[_COMMUNITY_telegram_proxy.py]]
+- 11 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 7 edges to [[_COMMUNITY_TeamsConfig]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[test_collaborator_responses.py]] - degree 26, connects to 3 communities
 - [[GroupConfig]] - degree 18, connects to 3 communities
-- [[collaborator_responses.py]] - degree 17, connects to 3 communities
+- [[test_collaborator_responses.py]] - degree 26, connects to 2 communities
+- [[collaborator_responses.py]] - degree 17, connects to 2 communities
 - [[ProjectConfig]] - degree 10, connects to 2 communities
 - [[format_group_info()]] - degree 7, connects to 2 communities

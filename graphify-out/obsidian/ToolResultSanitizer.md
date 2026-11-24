@@ -12,7 +12,7 @@ tags:
 # ToolResultSanitizer
 
 ## Connections
-- [[dot-__init__()_17]] - `method` [EXTRACTED]
+- [[dot-__init__()_21]] - `method` [EXTRACTED]
 - [[dot-_domain_matches_pattern()]] - `method` [EXTRACTED]
 - [[dot-_extract_code_blocks()]] - `method` [EXTRACTED]
 - [[dot-_is_domain_allowed()]] - `method` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-sanitize()]] - `method` [EXTRACTED]
 - [[dot-sanitize_images()]] - `method` [EXTRACTED]
 - [[dot-sanitize_links()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_17]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
 - [[dot-test_performance_with_large_content()]] - `calls` [EXTRACTED]
 - [[dot-test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
 - [[dot-test_warn_mode()]] - `calls` [EXTRACTED]

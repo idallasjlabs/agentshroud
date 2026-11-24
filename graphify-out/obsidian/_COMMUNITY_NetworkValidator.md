@@ -8,7 +8,7 @@ members: 75
 **Members:** 75 nodes
 
 ## Members
-- [[dot-__init__()_192]] - code - gateway/security/network_validator.py
+- [[dot-__init__()_188]] - code - gateway/security/network_validator.py
 - [[dot-_parse_service_network_config()]] - code - gateway/security/network_validator.py
 - [[dot-_validate_container_runtime_config()]] - code - gateway/security/network_validator.py
 - [[dot-_validate_dns_configuration()]] - code - gateway/security/network_validator.py
@@ -38,7 +38,7 @@ members: 75
 - [[dot-validate_runtime_configuration()]] - code - gateway/security/network_validator.py
 - [[A network security finding.]] - rationale - gateway/security/network_validator.py
 - [[A privileged container is the textbook escape-the-sandbox finding — validator…]] - rationale - gateway/tests/test_network_validator_gate.py
-- [[Any_80]] - code
+- [[Any_77]] - code
 - [[Container Network Isolation Validator - Security Hardening Module Validate…]] - rationale - gateway/security/network_validator.py
 - [[Container network configuration.]] - rationale - gateway/security/network_validator.py
 - [[Convenience function to validate network security.]] - rationale - gateway/security/network_validator.py
@@ -48,7 +48,7 @@ members: 75
 - [[NetworkSecurityFinding]] - code - gateway/security/network_validator.py
 - [[NetworkValidator]] - code - gateway/security/network_validator.py
 - [[Parse network configuration for a service.]] - rationale - gateway/security/network_validator.py
-- [[Path_68]] - code
+- [[Path_67]] - code
 - [[Test NetworkSecurityFinding dataclass structure.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test comprehensive network validation rules.]] - rationale - gateway/tests/test_network_validator.py
 - [[Test detection of multiple configuration violations.]] - rationale - gateway/tests/test_network_validator.py
@@ -76,7 +76,7 @@ members: 75
 - [[Validate service network isolation.]] - rationale - gateway/security/network_validator.py
 - [[Validate that no containers are running in privileged mode.]] - rationale - gateway/security/network_validator.py
 - [[_write()_3]] - code - gateway/tests/test_network_validator_gate.py
-- [[fixture_126]] - code
+- [[fixture_127]] - code
 - [[network_validator.py]] - code - gateway/security/network_validator.py
 - [[post-deploy-check.sh fails ONLY on critical. These tests pin that contract.]] - rationale - gateway/tests/test_network_validator_gate.py
 - [[test_network_validator.py]] - code - gateway/tests/test_network_validator.py
@@ -92,12 +92,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_WebProxy]]
-- 3 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_WebProxy]]
 - 2 edges to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_web_proxy.py]]
 - 1 edge to [[_COMMUNITY_MetadataGuard]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_test_security_audit.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]

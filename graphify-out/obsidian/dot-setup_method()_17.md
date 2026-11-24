@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_canary_tripwire.py"
 type: "code"
-community: ".setup_method"
-location: "L51"
+community: "CanaryTripwire"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup_method
+  - community/CanaryTripwire
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `calls` [EXTRACTED]
+- [[TestCanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup_method
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_edge_fuzz.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "no_exec"
-location: "L125"
+community: "TestIsContainerRunning"
+location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/no_exec
+  - community/TestIsContainerRunning
 ---
 
 # boom()
 
 ## Connections
-- [[no_exec()]] - `indirect_call` [INFERRED]
+- [[dot-test_containerized_fallback_evidence()]] - `indirect_call` [INFERRED]
+- [[dot-test_socket_error_returns_false()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/no_exec
+#graphify/code #graphify/INFERRED #community/TestIsContainerRunning

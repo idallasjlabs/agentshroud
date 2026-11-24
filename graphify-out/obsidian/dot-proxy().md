@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TelegramAPIProxy]] - `calls` [EXTRACTED]
 - [[TestInboundChokepointWiring]] - `method` [EXTRACTED]
-- [[fixture_22]] - `references` [EXTRACTED]
+- [[fixture_23]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestInboundChokepointWiring

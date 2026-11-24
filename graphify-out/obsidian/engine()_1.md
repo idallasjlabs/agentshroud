@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[_base_config()_1]] - `calls` [EXTRACTED]
-- [[fixture_125]] - `references` [EXTRACTED]
+- [[fixture_126]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

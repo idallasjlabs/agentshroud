@@ -15,7 +15,7 @@ tags:
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 - [[log_external_decision()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestWebSearchLog

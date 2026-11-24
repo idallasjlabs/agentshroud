@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestSetConfig"
+community: "test_middleware_coverage.py"
 location: "L904"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSetConfig
+  - community/test_middleware_coveragepy
 ---
 
 # .test_default_bot_and_sanitizer_configured()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[TestSetConfig]] - `method` [EXTRACTED]
-- [[_bot()]] - `calls` [EXTRACTED]
+- [[_bot()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSetConfig
+#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

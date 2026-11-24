@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "TestConfigValidation"
+community: "test_security.py"
 location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_securitypy
 ---
 
 # test_shortcut_content_types_accepted()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Every content_type an iOS Shortcut can emit is accepted with source=shortcut. -…]] - `rationale_for` [EXTRACTED]
 - [[ForwardRequest]] - `uses` [INFERRED]
-- [[parametrize_21]] - `references` [EXTRACTED]
+- [[parametrize_24]] - `references` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

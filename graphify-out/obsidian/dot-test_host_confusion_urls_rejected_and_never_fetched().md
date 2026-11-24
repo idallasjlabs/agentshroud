@@ -15,7 +15,7 @@ tags:
 - [[CitationVerifier]] - `calls` [EXTRACTED]
 - [[DraftEntry]] - `calls` [EXTRACTED]
 - [[TestVerifyEntry]] - `method` [EXTRACTED]
-- [[_FakeFetcher]] - `calls` [EXTRACTED]
+- [[_FakeFetcher_1]] - `calls` [EXTRACTED]
 - [[parametrize_33]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DraftEntry

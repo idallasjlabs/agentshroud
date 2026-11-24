@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_57]] - document - .github/agents/i-mnemosyne.agent.md
 - [[Persona_36]] - document - .github/agents/i-mnemosyne.agent.md
 - [[Quality Checklist_42]] - document - .github/agents/i-mnemosyne.agent.md
-- [[Role_107]] - document - .github/agents/i-mnemosyne.agent.md
+- [[Role_109]] - document - .github/agents/i-mnemosyne.agent.md
 - [[System Prompt_36]] - document - .github/agents/i-mnemosyne.agent.md
 - [[i-mnemosyne.agent]] - document - .github/agents/i-mnemosyne.agent.md
 

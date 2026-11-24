@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "test_mcp_proxy.py"
-location: "L133"
+community: "BrowserSecurityGuard"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/BrowserSecurityGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPInspector]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "asyncio"
-location: "L136"
+community: "LogSanitizer"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/LogSanitizer
 ---
 
 # ._compile_patterns()
 
 ## Connections
-- [[dot-__init__()_90]] - `calls` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
-- [[Compile all filter patterns into regex objects.]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[dot-__init__()_197]] - `calls` [EXTRACTED]
+- [[Compile regex patterns for sensitive data detection.]] - `rationale_for` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
+- [[Pattern_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

@@ -18,8 +18,8 @@ members: 18
 - [[Project Management (SKILL)]] - document - .agents/skills/i-pm/SKILL.md
 - [[Pull Request Generator (README)]] - document - .agents/skills/i-pr/README.md
 - [[Pull Request Generator (SKILL)]] - document - .agents/skills/i-pr/SKILL.md
-- [[Purpose_161]] - document - .agents/skills/i-pm/README.md
-- [[Purpose_162]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Purpose_162]] - document - .agents/skills/i-pm/README.md
+- [[Purpose_163]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Related Skills_106]] - document - .agents/skills/i-pm/README.md
 - [[Related Skills_107]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md

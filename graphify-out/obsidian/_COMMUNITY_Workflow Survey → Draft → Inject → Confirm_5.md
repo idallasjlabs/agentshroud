@@ -10,7 +10,7 @@ members: 13
 ## Members
 - [[dot-opencodeagentsi-session-prompt]] - document - .opencode/agents/i-session-prompt.md
 - [[Re-injection Command (for reference)_5]] - document - .opencode/agents/i-session-prompt.md
-- [[Role_49]] - document - .opencode/agents/i-session-prompt.md
+- [[Role_50]] - document - .opencode/agents/i-session-prompt.md
 - [[Rules_9]] - document - .opencode/agents/i-session-prompt.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_5]] - document - .opencode/agents/i-session-prompt.md
 - [[Step 1 — Survey the Repo_5]] - document - .opencode/agents/i-session-prompt.md

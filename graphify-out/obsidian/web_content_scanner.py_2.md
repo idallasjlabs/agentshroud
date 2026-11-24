@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ContentFinding]] - `contains` [EXTRACTED]
-- [[Enum_34]] - `imports_from` [EXTRACTED]
+- [[Enum_35]] - `imports_from` [EXTRACTED]
 - [[FindingSeverity]] - `contains` [EXTRACTED]
 - [[ScanResult_1]] - `contains` [EXTRACTED]
 - [[WebContentScanner]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "_check_rate_limit"
+community: "chatbot/main.py"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_check_rate_limit
+  - community/chatbot/mainpy
 ---
 
 # _check_rate_limit()
@@ -17,4 +17,4 @@ tags:
 - [[chat()]] - `calls` [EXTRACTED]
 - [[chatbotmain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_check_rate_limit
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

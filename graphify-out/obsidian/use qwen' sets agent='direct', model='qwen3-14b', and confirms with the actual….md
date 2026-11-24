@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "asyncio"
+community: "_mock_ws"
 location: "L2978"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # use qwen' sets agent='direct', model='qwen3-14b', and confirms with the actual…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_use_local_command_confirms_with_model_name()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/_mock_ws

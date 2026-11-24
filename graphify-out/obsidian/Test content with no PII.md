@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_sanitizer.py"
 type: "rationale"
-community: "PIIConfig"
+community: "test_sanitizer.py"
 location: "L56"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_sanitizerpy
 ---
 
 # Test content with no PII
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_no_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/test_sanitizerpy

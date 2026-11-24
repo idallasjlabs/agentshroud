@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "SOCWebSocketHandler"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/SOCWebSocketHandler
 ---
 
 # ._send_event()
@@ -17,4 +17,4 @@ tags:
 - [[SOCWebSocketHandler]] - `method` [EXTRACTED]
 - [[WSEvent]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Multiple messages through pipeline concurrently — thread safety.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_64]] - `references` [EXTRACTED]
+- [[asyncio_61]] - `references` [EXTRACTED]
 - [[process_message()]] - `contains` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 

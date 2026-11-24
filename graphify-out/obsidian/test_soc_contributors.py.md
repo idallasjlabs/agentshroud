@@ -18,7 +18,7 @@ tags:
 - [[TestLockdownLevelWiring]] - `contains` [EXTRACTED]
 - [[TestPausedFieldWiring]] - `contains` [EXTRACTED]
 - [[Tests for gatewaysoccontributors.py — ContributorManager record building. No…]] - `rationale_for` [EXTRACTED]
-- [[_FakeRBAC_2]] - `contains` [EXTRACTED]
+- [[_FakeRBAC_1]] - `contains` [EXTRACTED]
 - [[contributors.py]] - `imports_from` [EXTRACTED]
 - [[progressive_lockdown.py]] - `imports_from` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]

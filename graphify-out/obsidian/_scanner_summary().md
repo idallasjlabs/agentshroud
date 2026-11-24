@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-summary()]] - `indirect_call` [INFERRED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Build normalized scanner summary for SOCdashboard telemetry.]] - `rationale_for` [EXTRACTED]
 - [[Return normalized scanner state + latest results for SOCdashboard views.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
-- [[get_4]] - `references` [EXTRACTED]
+- [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[run_all_scanners()]] - `calls` [EXTRACTED]
 - [[scanner()]] - `indirect_call` [INFERRED]

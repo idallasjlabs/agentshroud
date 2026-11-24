@@ -44,7 +44,7 @@ members: 38
 - [[_startup_scanner()]] - code - gateway/ingest_api/lifespan.py
 - [[_store_result()_1]] - code - gateway/ingest_api/lifespan.py
 - [[_t()]] - code - gateway/tests/test_triage_cve_mitigations.py
-- [[parametrize_16]] - code
+- [[parametrize_14]] - code
 - [[test_triage_cve_mitigations.py]] - code - gateway/tests/test_triage_cve_mitigations.py
 
 ## Live Query (requires Dataview plugin)
@@ -59,8 +59,8 @@ SORT file.name ASC
 - 6 edges to [[_COMMUNITY_dot-_results]]
 - 2 edges to [[_COMMUNITY_TestDefenseLayerVocabulary]]
 - 1 edge to [[_COMMUNITY_WebContentScanner]]
+- 1 edge to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_daily_cve_report.py]]
 
 ## Top bridge nodes
 - [[_t()]] - degree 46, connects to 4 communities

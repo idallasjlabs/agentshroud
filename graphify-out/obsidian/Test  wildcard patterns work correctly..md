@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L240"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # Test ** wildcard patterns work correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_wildcard_pattern_matching()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "TestReversibilityScoring"
 location: "L535"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestReversibilityScoring
 ---
 
 # .test_delete_file_mostly_irreversible()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReversibilityScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestReversibilityScoring

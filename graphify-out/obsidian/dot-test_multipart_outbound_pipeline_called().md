@@ -15,8 +15,8 @@ tags:
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 - [[process_outbound must run on multipart caption text.]] - `rationale_for` [EXTRACTED]
-- [[process_outbound()_4]] - `contains` [EXTRACTED]
+- [[process_outbound()_8]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_multipart_body

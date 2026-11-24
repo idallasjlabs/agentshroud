@@ -19,7 +19,7 @@ tags:
 - [[Tests for MultiAgentRouter.forward_to_agent_stream — SSE relay to an OpenAI-…]] - `rationale_for` [EXTRACTED]
 - [[_mock_stream_response()]] - `contains` [EXTRACTED]
 - [[_sse_lines()]] - `contains` [EXTRACTED]
-- [[httpx_1]] - `imports` [EXTRACTED]
+- [[httpx]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]

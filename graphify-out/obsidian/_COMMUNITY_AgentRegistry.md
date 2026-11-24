@@ -8,8 +8,8 @@ members: 88
 **Members:** 88 nodes
 
 ## Members
-- [[dot-__init__()_194]] - code - gateway/security/agent_isolation.py
-- [[dot-__init__()_195]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_190]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_191]] - code - gateway/security/agent_isolation.py
 - [[dot-from_dict()_10]] - code - gateway/security/agent_isolation.py
 - [[dot-generate_compose()]] - code - gateway/security/agent_isolation.py
 - [[dot-get()_1]] - code - gateway/security/agent_isolation.py
@@ -62,7 +62,7 @@ members: 88
 - [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - rationale - gateway/tests/test_group_isolation.py
 - [[ContainerConfig]] - code - gateway/security/agent_isolation.py
 - [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
-- [[Enum_41]] - code
+- [[Enum_42]] - code
 - [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
 - [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
 - [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
@@ -93,7 +93,7 @@ members: 88
 - [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
 - [[agent_isolation.py_2]] - code - gateway/security/agent_isolation.py
 - [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[str_24]] - code
+- [[str_25]] - code
 - [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
 - [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
 
@@ -105,26 +105,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_lifespan.py]]
 - 5 edges to [[_COMMUNITY_EncryptedStore]]
+- 5 edges to [[_COMMUNITY_lifespan.py]]
 - 5 edges to [[_COMMUNITY_ContainerSnapshot]]
+- 5 edges to [[_COMMUNITY_TrustManager]]
+- 5 edges to [[_COMMUNITY_EgressFilter]]
 - 4 edges to [[_COMMUNITY_prompt_guard.py]]
 - 4 edges to [[_COMMUNITY_test_group_isolation.py]]
-- 3 edges to [[_COMMUNITY_EgressFilter]]
-- 3 edges to [[_COMMUNITY_middleware.py]]
 - 3 edges to [[_COMMUNITY_lifespan]]
-- 3 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_EgressPolicy]]
-- 2 edges to [[_COMMUNITY_PromptGuard]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
-- 1 edge to [[_COMMUNITY_TestEgressFilter]]
-- 1 edge to [[_COMMUNITY_TestEgressSSRF]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_TestPromptGuardEvasion]]
 - 1 edge to [[_COMMUNITY_parse_clamscan_output]]
 - 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 1 edge to [[_COMMUNITY_TrustLevel]]
 
 ## Top bridge nodes
-- [[test_security_hardening.py]] - degree 36, connects to 11 communities
+- [[test_security_hardening.py]] - degree 36, connects to 9 communities
 - [[AgentRegistry]] - degree 50, connects to 5 communities
 - [[ContainerConfig]] - degree 22, connects to 3 communities
 - [[agent_isolation.py_2]] - degree 11, connects to 3 communities

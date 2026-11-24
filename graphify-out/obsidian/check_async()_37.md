@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
 community: "_make_sanitizer"
-location: "L2811"
+location: "L3040"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # check_async()
 
 ## Connections
-- [[dot-test_raw_web_fetch_json_approval_strips_trailing_punctuation()]] - `contains` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_domain_with_invalid_chars_does_not_queue_approval()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_sanitizer

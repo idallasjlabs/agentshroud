@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "_sleep"
-location: "L1929"
+location: "L1976"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # now()
 
 ## Connections
-- [[dot-test_undelivered_new_cves_retries_not_marked_checked()]] - `contains` [EXTRACTED]
+- [[dot-test_zero_new_cves_marks_checked_immediately()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sleep

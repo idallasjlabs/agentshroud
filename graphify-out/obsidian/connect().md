@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/soc/router.py"
 type: "code"
-community: "TestCheckClamd"
-location: "L186"
+community: "test_soc_router_coverage.py"
+location: "L3011"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckClamd
+  - community/test_soc_router_coveragepy
 ---
 
 # connect()
 
 ## Connections
-- [[dot-test_running_via_proc_scan()]] - `contains` [EXTRACTED]
+- [[_unix_call()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckClamd
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "BrowserSecurityGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/BrowserSecurityGuard
 ---
 
 # Exception
 
 ## Connections
-- [[ApprovalDenied]] - `inherits` [EXTRACTED]
-- [[ApprovalPending]] - `inherits` [EXTRACTED]
+- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

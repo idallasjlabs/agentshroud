@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/event_adapter.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # from_dict()
 
 ## Connections
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - `rationale_for` [EXTRACTED]
 - [[SecurityEvent]] - `calls` [EXTRACTED]
 - [[_map_severity()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[get_security_alerts()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

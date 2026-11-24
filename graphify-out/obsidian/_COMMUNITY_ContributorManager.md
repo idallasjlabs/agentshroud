@@ -1,22 +1,16 @@
 ---
 type: community
-members: 31
+members: 25
 ---
 
 # ContributorManager
 
-**Members:** 31 nodes
+**Members:** 25 nodes
 
 ## Members
-- [[dot-__init__()_158]] - code - gateway/soc/contributors.py
-- [[dot-__init__()_159]] - code - gateway/tests/test_soc_contributors.py
-- [[dot-_build_record()]] - code - gateway/soc/contributors.py
-- [[dot-_ensure_rbac()]] - code - gateway/soc/contributors.py
-- [[dot-_ensure_teams()]] - code - gateway/soc/contributors.py
-- [[dot-_load_paused_ids()]] - code - gateway/soc/contributors.py
-- [[dot-get_contributor()]] - code - gateway/soc/contributors.py
+- [[dot-__init__()_145]] - code - gateway/soc/contributors.py
+- [[dot-__init__()_146]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-get_user_role()_3]] - code - gateway/tests/test_soc_contributors.py
-- [[dot-list_contributors()]] - code - gateway/soc/contributors.py
 - [[dot-test_build_record_defaults_to_normal_when_no_lockdown_state()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_build_record_does_not_crash_if_lockdown_missing()]] - code - gateway/tests/test_soc_contributors.py
 - [[dot-test_build_record_prefers_app_wide_progressive_lockdown()]] - code - gateway/tests/test_soc_contributors.py
@@ -35,7 +29,7 @@ members: 31
 - [[TestLockdownLevelWiring]] - code - gateway/tests/test_soc_contributors.py
 - [[TestPausedFieldWiring]] - code - gateway/tests/test_soc_contributors.py
 - [[Tests for gatewaysoccontributors.py — ContributorManager record building. No…]] - rationale - gateway/tests/test_soc_contributors.py
-- [[_FakeRBAC_2]] - code - gateway/tests/test_soc_contributors.py
+- [[_FakeRBAC_1]] - code - gateway/tests/test_soc_contributors.py
 - [[_load_paused_ids must never crash record-building if the persisted store is…]] - rationale - gateway/tests/test_soc_contributors.py
 - [[paused feature ContributorRecord.paused reflects the persisted paused set.]] - rationale - gateway/tests/test_soc_contributors.py
 - [[test_soc_contributors.py]] - code - gateway/tests/test_soc_contributors.py
@@ -48,16 +42,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_socrouter.py]]
+- 11 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 9 edges to [[_COMMUNITY_socrouter.py]]
 - 8 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 8 edges to [[_COMMUNITY_socmodels.py]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY_fastapi]]
 - 1 edge to [[_COMMUNITY_LockdownLevel]]
 
 ## Top bridge nodes
 - [[test_soc_contributors.py]] - degree 10, connects to 4 communities
-- [[ContributorManager]] - degree 27, connects to 3 communities
+- [[ContributorManager]] - degree 27, connects to 2 communities
 - [[TestLockdownLevelWiring]] - degree 10, connects to 2 communities
 - [[TestPausedFieldWiring]] - degree 10, connects to 2 communities
-- [[_FakeRBAC_2]] - degree 13, connects to 1 community
+- [[_FakeRBAC_1]] - degree 13, connects to 1 community

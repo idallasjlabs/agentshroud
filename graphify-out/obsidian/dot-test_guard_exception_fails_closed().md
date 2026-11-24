@@ -12,7 +12,7 @@ tags:
 # .test_guard_exception_fails_closed()
 
 ## Connections
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestContextGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

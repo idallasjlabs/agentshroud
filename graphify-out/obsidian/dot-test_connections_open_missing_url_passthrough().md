@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: "AsyncMock"
+community: "_make_proxy"
 location: "L419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_make_proxy
 ---
 
 # .test_connections_open_missing_url_passthrough()
@@ -16,6 +16,6 @@ tags:
 - [[TestSocketModeRelay]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[apps.connections.open response without url field returned unchanged.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_41]] - `references` [EXTRACTED]
+- [[asyncio_38]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

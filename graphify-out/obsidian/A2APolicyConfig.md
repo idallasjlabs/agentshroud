@@ -12,8 +12,8 @@ tags:
 # A2APolicyConfig
 
 ## Connections
-- [[dot-__init__()_225]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()_7]] - `method` [EXTRACTED]
+- [[dot-__init__()_227]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
 - [[dot-from_dict()_11]] - `method` [EXTRACTED]
 - [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
 - [[Declarative A2A security policy. Loaded from the ``a2a_policy`` section of…]] - `rationale_for` [EXTRACTED]

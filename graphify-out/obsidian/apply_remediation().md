@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.…]] - `rationale_for` [EXTRACTED]
 - [[RemediationPlan]] - `references` [EXTRACTED]
-- [[_run()_9]] - `calls` [EXTRACTED]
+- [[_run()_10]] - `calls` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_24]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 - [[read_pin()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade-apply.sh]] - `references` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "ToolChainAnalyzer"
+community: "TestToolChainAnalyzer"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestToolChainAnalyzer
 ---
 
 # TestToolChainAnalyzer
@@ -20,7 +20,7 @@ tags:
 - [[dot-test_credential_to_outbound_blocking()]] - `method` [EXTRACTED]
 - [[dot-test_custom_patterns()_1]] - `method` [EXTRACTED]
 - [[dot-test_disabled_analyzer()]] - `method` [EXTRACTED]
-- [[dot-test_edge_cases()_4]] - `method` [EXTRACTED]
+- [[dot-test_edge_cases()_1]] - `method` [EXTRACTED]
 - [[dot-test_exec_to_network_pattern()]] - `method` [EXTRACTED]
 - [[dot-test_global_stats()_1]] - `method` [EXTRACTED]
 - [[dot-test_initialization()_5]] - `method` [EXTRACTED]
@@ -35,9 +35,9 @@ tags:
 - [[dot-test_time_window_expiry()]] - `method` [EXTRACTED]
 - [[ChainAction]] - `uses` [INFERRED]
 - [[ChainMatch]] - `uses` [INFERRED]
-- [[RiskLevel_6]] - `uses` [INFERRED]
+- [[RiskLevel]] - `uses` [INFERRED]
 - [[Test cases for ToolChainAnalyzer class.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer

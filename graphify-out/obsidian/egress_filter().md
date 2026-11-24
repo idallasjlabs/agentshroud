@@ -15,7 +15,7 @@ tags:
 - [[EgressFilter]] - `uses` [INFERRED]
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[EgressPolicy]] - `uses` [INFERRED]
-- [[fixture_85]] - `references` [EXTRACTED]
+- [[fixture_88]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/EgressFilter

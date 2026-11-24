@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "rationale"
-community: "test_runtime_engines.py"
+community: "generate_compose"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/generate_compose
 ---
 
 # Generate a compose YAML file for Docker or Podman. Args: services: List of…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_compose()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/rationale #graphify/EXTRACTED #community/generate_compose

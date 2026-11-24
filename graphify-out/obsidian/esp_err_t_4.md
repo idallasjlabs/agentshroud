@@ -1,19 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "app_main.c"
+community: "voice_task"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/voice_task
 ---
 
 # esp_err_t
 
 ## Connections
-- [[audio_init()]] - `references` [EXTRACTED]
-- [[audio_play()]] - `references` [EXTRACTED]
-- [[audio_preinit()]] - `references` [EXTRACTED]
-- [[audio_set_volume()]] - `references` [EXTRACTED]
+- [[ws_client_send_end()]] - `references` [EXTRACTED]
+- [[ws_client_send_keepalive()]] - `references` [EXTRACTED]
+- [[ws_client_send_listen()]] - `references` [EXTRACTED]
+- [[ws_client_send_listen_resume()]] - `references` [EXTRACTED]
+- [[ws_client_send_log()]] - `references` [EXTRACTED]
+- [[ws_client_send_pcm()]] - `references` [EXTRACTED]
+- [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/voice_task

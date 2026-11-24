@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "TestDelegateBasic"
+community: "DelegationPrivilege"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDelegateBasic
+  - community/DelegationPrivilege
 ---
 
 # .test_create_user_management_delegation()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDelegateBasic]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDelegateBasic
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

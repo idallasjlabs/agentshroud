@@ -23,7 +23,7 @@ tags:
 - [[dot-test_status_critical_when_critical_present()]] - `calls` [EXTRACTED]
 - [[dot-test_total_vulnerability_count_shown()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_count_severity_omitted()]] - `calls` [EXTRACTED]
-- [[Any_52]] - `references` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
 - [[Format a Trivy scan result into a Telegram-ready Markdown message. Args…]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `contains` [EXTRACTED]
 - [[generate_summary()_1]] - `calls` [EXTRACTED]

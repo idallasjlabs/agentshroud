@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "test_dashboard.py"
 location: "L159"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_dashboardpy
 ---
 
 # WebSocket /ws/activity receives emitted events
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_activity_receives_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/test_dashboardpy

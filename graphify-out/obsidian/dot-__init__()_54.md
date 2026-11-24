@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "_skills_reload_impl"
-location: "L964"
+community: "DNSFilterConfig"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/DNSFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_53]] - `calls` [EXTRACTED]
-- [[dot-__init__()_54]] - `calls` [EXTRACTED]
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

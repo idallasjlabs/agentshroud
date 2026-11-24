@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "GatewayConfig"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/GatewayConfig
 ---
 
 # ApprovalDecision
 
 ## Connections
-- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[User's decision on a pending approval request]] - `rationale_for` [EXTRACTED]
 - [[approval.py]] - `imports` [EXTRACTED]
 - [[decide_approval()]] - `uses` [INFERRED]
@@ -20,4 +20,4 @@ tags:
 - [[test_approval_decision_valid()]] - `uses` [INFERRED]
 - [[test_main_simple.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

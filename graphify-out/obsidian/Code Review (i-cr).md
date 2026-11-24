@@ -12,7 +12,7 @@ tags:
 
 ## Connections
 - [[Project Management (SKILL)]] - `references` [EXTRACTED]
-- [[Purpose_162]] - `contains` [EXTRACTED]
+- [[Purpose_163]] - `contains` [EXTRACTED]
 - [[Related Skills_107]] - `contains` [EXTRACTED]
 - [[Usage_120]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]

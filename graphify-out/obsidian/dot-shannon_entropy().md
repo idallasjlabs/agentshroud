@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "TestExfiltrationDetection"
+community: "DNSFilterConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/DNSFilterConfig
 ---
 
 # .shannon_entropy()
@@ -21,4 +21,4 @@ tags:
 - [[dot-test_low_entropy_string()]] - `calls` [EXTRACTED]
 - [[EntropyCalculator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

@@ -2,17 +2,18 @@
 source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
 community: "lifespan"
-location: "L2341"
+location: "L2251"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/lifespan
 ---
 
 # _handle()
 
 ## Connections
-- [[_pipe()]] - `calls` [EXTRACTED]
-- [[_run_hermes_api_forwarder()]] - `contains` [EXTRACTED]
+- [[_pipe()_1]] - `calls` [EXTRACTED]
+- [[_run_hermes_api_forwarder()]] - `indirect_call` [INFERRED]
+- [[_run_hermes_dashboard_forwarder()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/INFERRED #community/lifespan

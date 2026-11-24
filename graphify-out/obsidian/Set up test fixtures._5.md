@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "rationale"
-community: "middleware.py"
-location: "L20"
+community: "TestWebProxySecurityIntegration"
+location: "L63"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_20]] - `rationale_for` [EXTRACTED]
+- [[dot-setUp()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

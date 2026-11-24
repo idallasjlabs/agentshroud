@@ -12,7 +12,7 @@ tags:
 # .add_client()
 
 ## Connections
-- [[Any_64]] - `references` [EXTRACTED]
+- [[Any_59]] - `references` [EXTRACTED]
 - [[EdgeStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EdgeStore

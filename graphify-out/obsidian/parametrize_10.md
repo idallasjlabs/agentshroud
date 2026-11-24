@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_stub_client"
+community: "test_v1_models_synthetic.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/test_v1_models_syntheticpy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_kill_each_scope()]] - `references` [EXTRACTED]
-- [[dot-test_simple_get_subcommands()]] - `references` [EXTRACTED]
-- [[test_convenience_methods_hit_expected_endpoints()]] - `references` [EXTRACTED]
+- [[test_v1_models_get_returns_synthetic_200()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_stub_client
+#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy

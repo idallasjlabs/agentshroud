@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "mcp_proxy.py"
+community: "ProxyResult"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_proxypy
+  - community/ProxyResult
 ---
 
 # ProxyResult
@@ -15,7 +15,7 @@ tags:
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `calls` [EXTRACTED]
 - [[Result of proxying an MCP tool call.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPProxyEndpoint]] - `uses` [INFERRED]
+- [[TestMCPProxyEndpoint_1]] - `uses` [INFERRED]
 - [[TestMCPResultEndpoint]] - `uses` [INFERRED]
 - [[_capture()_3]] - `calls` [EXTRACTED]
 - [[_capture()_4]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[test_mcp_proxy_endpoint.py]] - `imports` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

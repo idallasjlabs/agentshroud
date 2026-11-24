@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-data.md"
+source_file: ".opencode/agents/daedalus.md"
 type: "document"
-community: "Skill: Data Validation (DATA-VAL)"
-location: "L10"
+community: "Daedalus — Concept Illustrator"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Data_Validation_DATA-VAL
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Role
 
 ## Connections
-- [[Skill Data Validation (DATA-VAL)]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Data_Validation_DATA-VAL
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

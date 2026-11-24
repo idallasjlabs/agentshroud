@@ -12,7 +12,7 @@ members: 8
 - [[Replace _app_state_has with a controllable membership set.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[Replace shutil.which with a controllable name → path mapping.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[fake_path()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[fixture_42]] - code
+- [[fixture_48]] - code
 - [[flags()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[fs()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[tools()]] - code - gateway/tests/test_scanner_integration_coverage.py

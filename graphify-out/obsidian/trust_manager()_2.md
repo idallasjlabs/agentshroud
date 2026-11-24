@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L57"
+community: "ProgressiveTrustConfig"
+location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/ProgressiveTrustConfig
 ---
 
 # trust_manager()
 
 ## Connections
-- [[TrustConfig]] - `uses` [INFERRED]
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_85]] - `references` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[fixture_79]] - `references` [EXTRACTED]
+- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig

@@ -12,7 +12,7 @@ tags:
 # HermesA2AForwarder
 
 ## Connections
-- [[dot-__init__()_224]] - `method` [EXTRACTED]
+- [[dot-__init__()_226]] - `method` [EXTRACTED]
 - [[dot-close()_23]] - `method` [EXTRACTED]
 - [[dot-forward()_3]] - `method` [EXTRACTED]
 - [[Real HTTP forwarder to Hermes's internal A2A JSON-RPC listener. Matches the…]] - `rationale_for` [EXTRACTED]

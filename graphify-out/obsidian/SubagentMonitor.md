@@ -12,8 +12,8 @@ tags:
 # SubagentMonitor
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_74]] - `method` [EXTRACTED]
 - [[dot-_log_event()]] - `method` [EXTRACTED]
 - [[dot-check_tool_usage()]] - `method` [EXTRACTED]
 - [[dot-deregister()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-kill_all()]] - `method` [EXTRACTED]
 - [[dot-register_spawn()]] - `method` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[TestAuth_1]] - `uses` [INFERRED]
+- [[TestAuth]] - `uses` [INFERRED]
 - [[TestResourceProtection]] - `uses` [INFERRED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[monitor()_1]] - `uses` [INFERRED]

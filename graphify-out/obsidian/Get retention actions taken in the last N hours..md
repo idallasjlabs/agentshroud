@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MemoryLifecycleManager"
+community: "middleware.py"
 location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # Get retention actions taken in the last N hours.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_recent_actions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

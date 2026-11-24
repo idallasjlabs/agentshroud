@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L277"
+community: "ServiceManager"
+location: "L573"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/DifferentialPIIDetector
+  - graphify/EXTRACTED
+  - community/ServiceManager
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_presidio_exception_falls_back_to_regex()]] - `indirect_call` [INFERRED]
+- [[dot-test_internal_probe_failure_keeps_container_descriptors()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

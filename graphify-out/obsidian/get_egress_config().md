@@ -12,7 +12,7 @@ tags:
 # get_egress_config()
 
 ## Connections
-- [[dot-__init__()_175]] - `calls` [EXTRACTED]
+- [[dot-__init__()_172]] - `calls` [EXTRACTED]
 - [[dot-test_config_roundtrip()]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `references` [EXTRACTED]
 - [[Get the global egress filter configuration.]] - `rationale_for` [EXTRACTED]

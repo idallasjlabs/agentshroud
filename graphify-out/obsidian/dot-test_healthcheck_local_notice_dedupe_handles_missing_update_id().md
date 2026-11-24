@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "FakeRBAC"
+community: "_make_update"
 location: "L5282"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_make_update
 ---
 
 # .test_healthcheck_local_notice_dedupe_handles_missing_update_id()
@@ -18,8 +18,8 @@ tags:
 - [[When update_id is missing, dedupe should fall back to message_id identity.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_urlopen()_8]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_62]] - `indirect_call` [INFERRED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_urlopen()_56]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/_make_update

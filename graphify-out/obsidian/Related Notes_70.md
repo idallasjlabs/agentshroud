@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docs/vault/05 - Dependencies/openscap.md"
 type: "document"
-community: "fastapi.md"
-location: "L46"
+community: "OpenSCAP"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/OpenSCAP
 ---
 
 # Related Notes
 
 ## Connections
-- [[FastAPI_4]] - `contains` [EXTRACTED]
+- [[OpenSCAP_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/fastapimd
+#graphify/document #graphify/EXTRACTED #community/OpenSCAP

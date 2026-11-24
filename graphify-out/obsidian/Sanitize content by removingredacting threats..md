@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "ContentThreat"
+community: "middleware.py"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContentThreat
+  - community/middlewarepy
 ---
 
 # Sanitize content by removing/redacting threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-sanitize_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContentThreat
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

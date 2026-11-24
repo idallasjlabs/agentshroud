@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "MemoryLifecycleManager"
-location: "L75"
+community: "GatewayBackedProvider"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/GatewayBackedProvider
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
-- [[Path_19]] - `references` [EXTRACTED]
+- [[AsyncBaseTransport]] - `references` [EXTRACTED]
+- [[EdgeSettings]] - `references` [EXTRACTED]
+- [[GatewayClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

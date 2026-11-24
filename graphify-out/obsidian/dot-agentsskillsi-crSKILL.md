@@ -30,7 +30,7 @@ tags:
 - [[Skill Data Validation (DATA-VAL)_5]] - `contains` [EXTRACTED]
 - [[Skill Git Workflow Guardian (GIT-GUARD)_5]] - `contains` [EXTRACTED]
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]] - `contains` [EXTRACTED]
-- [[Skill MCP Tools Usage (MCP-TOOLS)_5]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 - [[Skill Mindmap Architect (MM)]] - `contains` [EXTRACTED]
 - [[Skill Pre-Change Analysis (PCA)_7]] - `contains` [EXTRACTED]
 - [[Skill Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]

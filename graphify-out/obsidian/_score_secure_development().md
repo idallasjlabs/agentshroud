@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "_score_secure_development"
+community: "test_scanner_integration.py"
 location: "L1205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_secure_development
+  - community/test_scanner_integrationpy
 ---
 
 # _score_secure_development()
@@ -19,4 +19,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_secure_development
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "TrustManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/TrustManager
 ---
 
 # test_pipeline_unit.py
@@ -48,4 +48,4 @@ tags:
 - [[_make_signer_pipeline()]] - `contains` [EXTRACTED]
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/TrustManager

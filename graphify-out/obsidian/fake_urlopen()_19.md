@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "FakeRBAC"
-location: "L5183"
+community: "test_llm_proxy_failover.py"
+location: "L763"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/test_llm_proxy_failoverpy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_self_diagnostic_with_fullwidth_chars_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

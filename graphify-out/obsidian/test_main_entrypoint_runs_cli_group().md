@@ -12,7 +12,7 @@ tags:
 # test_main_entrypoint_runs_cli_group()
 
 ## Connections
-- [[main()_18]] - `calls` [EXTRACTED]
+- [[main()_19]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

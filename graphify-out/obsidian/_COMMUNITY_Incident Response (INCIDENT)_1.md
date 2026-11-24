@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-productionREADME]] - document - .agents/skills/i-production/README.md
 - [[Incident Response (INCIDENT)_1]] - document - .agents/skills/i-production/README.md
-- [[Purpose_106]] - document - .agents/skills/i-production/README.md
+- [[Purpose_104]] - document - .agents/skills/i-production/README.md
 - [[Related Skills_36]] - document - .agents/skills/i-production/README.md
 - [[Usage_46]] - document - .agents/skills/i-production/README.md
 

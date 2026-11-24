@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "_make_client"
+community: ".test_events_api_envelope_dispatches_handle_event"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_client
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # _make_client()
@@ -22,4 +22,4 @@ tags:
 - [[SlackSocketClient]] - `calls` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_client
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

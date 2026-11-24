@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TestSubagentTracking"
+community: "SubagentMonitor"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSubagentTracking
+  - community/SubagentMonitor
 ---
 
 # TestSubagentTracking
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_subagent_info_has_spawn_time()]] - `method` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSubagentTracking
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

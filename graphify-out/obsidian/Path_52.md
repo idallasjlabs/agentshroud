@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalStore"
+community: "CollaboratorActivityTracker"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/CollaboratorActivityTracker
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_157]] - `references` [EXTRACTED]
+- [[dot-__init__()_143]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

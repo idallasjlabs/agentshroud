@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
 community: "_sleep"
-location: "L1703"
+location: "L1591"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # now()
 
 ## Connections
-- [[dot-test_ingest_records_even_when_disk_write_fails()]] - `contains` [EXTRACTED]
+- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sleep

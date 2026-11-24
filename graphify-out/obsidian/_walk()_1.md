@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "._extract_egress_targets"
 location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/_extract_egress_targets
 ---
 
 # _walk()
@@ -16,4 +16,4 @@ tags:
 - [[_add()]] - `calls` [EXTRACTED]
 - [[_walk()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "._get_engine"
-location: "L444"
+community: "SCLClient"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/SCLClient
 ---
 
 # .get_logs()
 
 ## Connections
-- [[dot-_get_engine()]] - `calls` [EXTRACTED]
-- [[dot-_logs_via_socket()]] - `calls` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[dot-get()]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/SCLClient

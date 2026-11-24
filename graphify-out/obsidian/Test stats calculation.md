@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L139"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # Test stats calculation
 
 ## Connections
-- [[test_get_stats()]] - `rationale_for` [EXTRACTED]
+- [[test_get_stats()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig

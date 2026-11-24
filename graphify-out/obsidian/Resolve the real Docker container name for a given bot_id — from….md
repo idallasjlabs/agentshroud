@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "test_web_api_coverage.py"
+community: "_resolve_bot_container"
 location: "L533"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/_resolve_bot_container
 ---
 
 # Resolve the real Docker container name for a given bot_id — from…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_resolve_bot_container()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/_resolve_bot_container

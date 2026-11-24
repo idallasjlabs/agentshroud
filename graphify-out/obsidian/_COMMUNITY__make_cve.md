@@ -32,7 +32,7 @@ members: 44
 - [[dot-test_under_review_in_heading_not_all_mitigated()]] - code - gateway/tests/test_generate_cve_page.py
 - [[dot-test_under_review_none_cvss_renders_dash()]] - code - gateway/tests/test_generate_cve_page.py
 - [[dot-test_zero_cves()]] - code - gateway/tests/test_generate_cve_page.py
-- [[Path_25]] - code
+- [[Path_24]] - code
 - [[Return the generate-cve-page module (already loaded above).]] - rationale - gateway/tests/test_generate_cve_page.py
 - [[TestBuildHeading]] - code - gateway/tests/test_generate_cve_page.py
 - [[TestBuildTable]] - code - gateway/tests/test_generate_cve_page.py

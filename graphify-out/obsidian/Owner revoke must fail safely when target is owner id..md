@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "fake_urlopen"
+community: "_wrap_response"
 location: "L751"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fake_urlopen
+  - community/_wrap_response
 ---
 
 # Owner /revoke must fail safely when target is owner id.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_revoke_command_cannot_revoke_owner()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fake_urlopen
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "MemoryLifecycleConfig"
+community: "ToolResultInjectionScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleConfig
+  - community/ToolResultInjectionScanner
 ---
 
 # Enum
 
 ## Connections
-- [[ContentThreatType]] - `inherits` [EXTRACTED]
-- [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
+- [[InjectionAction]] - `inherits` [EXTRACTED]
+- [[InjectionSeverity]] - `inherits` [EXTRACTED]
+- [[tool_result_injection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "ingest_api/main.py"
 location: "L412"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/ingest_api/mainpy
 ---
 
 # Catch-all error handler Never leaks stack traces or internal details to client.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[global_exception_handler()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

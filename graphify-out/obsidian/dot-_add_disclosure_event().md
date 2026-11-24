@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "test_all_modules_enforce.py"
+community: "SessionContext"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/SessionContext
 ---
 
 # ._add_disclosure_event()
@@ -21,4 +21,4 @@ tags:
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
 - [[SessionContext]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/SessionContext

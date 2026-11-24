@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_security_audit.py"
+community: "TestFileSandbox"
 location: "L578"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestFileSandbox
 ---
 
 # .test_staging_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Detect data staging patterns.]] - `rationale_for` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/TestFileSandbox

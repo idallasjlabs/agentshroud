@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "CollaboratorActivityTracker"
+community: "plan_remediation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/plan_remediation
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_156]] - `references` [EXTRACTED]
+- [[read_pin()]] - `references` [EXTRACTED]
+- [[write_pin()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

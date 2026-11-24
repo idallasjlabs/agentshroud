@@ -12,7 +12,7 @@ tags:
 # TestEnforcementWiring
 
 ## Connections
-- [[dot-setup_method()_22]] - `method` [EXTRACTED]
+- [[dot-setup_method()_20]] - `method` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `method` [EXTRACTED]
 - [[dot-test_record_decision_never_raises()]] - `method` [EXTRACTED]
 - [[dot-test_tool_acl_can_use_tool_records()]] - `method` [EXTRACTED]

@@ -11,7 +11,7 @@ members: 15
 - [[dot-opencodeagentsi-crpr]] - document - .opencode/agents/i-crpr.md
 - [[Guardrails_9]] - document - .opencode/agents/i-crpr.md
 - [[Invocation_4]] - document - .opencode/agents/i-crpr.md
-- [[Role_23]] - document - .opencode/agents/i-crpr.md
+- [[Role_24]] - document - .opencode/agents/i-crpr.md
 - [[Skill Create PR with Pre-Flight Audit (CRPR)_4]] - document - .opencode/agents/i-crpr.md
 - [[Step 0 — Pre-flight checks_4]] - document - .opencode/agents/i-crpr.md
 - [[Step 1 — Check for an in-progress merge_4]] - document - .opencode/agents/i-crpr.md

@@ -8,7 +8,7 @@ members: 57
 **Members:** 57 nodes
 
 ## Members
-- [[dot-__init__()_45]] - code - gateway/tests/test_forward_stream.py
+- [[dot-__init__()_43]] - code - gateway/tests/test_forward_stream.py
 - [[dot-process_inbound()]] - code - gateway/tests/test_forward_stream.py
 - [[dot-process_outbound()]] - code - gateway/tests/test_forward_stream.py
 - [[dot-process_outbound()_1]] - code - gateway/tests/test_forward_stream.py
@@ -35,10 +35,10 @@ members: 57
 - [[_sentences_from_deltas()]] - code - gateway/ingest_api/routes/forward.py
 - [[_stream()]] - code - gateway/tests/test_forward_stream.py
 - [[_target()]] - code - gateway/tests/test_forward_stream.py
-- [[asyncio_25]] - code
-- [[parametrize_9]] - code
-- [[process_outbound()_1]] - code - gateway/tests/test_forward_stream.py
-- [[process_outbound()_2]] - code - gateway/tests/test_forward_stream.py
+- [[asyncio_26]] - code
+- [[parametrize_6]] - code
+- [[process_outbound()_5]] - code - gateway/tests/test_forward_stream.py
+- [[process_outbound()_6]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_blocked_final_sentence_yields_nothing()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_blocked_window_releases_nothing_for_that_window()]] - code - gateway/tests/test_forward_stream.py
 - [[test_filtered_stream_redaction_applies_to_released_sentence()]] - code - gateway/tests/test_forward_stream.py
@@ -74,15 +74,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_ingest_apimodels.py]]
-- 8 edges to [[_COMMUNITY_AgentTarget]]
+- 11 edges to [[_COMMUNITY_AgentTarget]]
 - 4 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_TestConfigValidation]]
+- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 4 edges to [[_COMMUNITY_email_send]]
 - 2 edges to [[_COMMUNITY_app]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_make_event]]
+- 1 edge to [[_COMMUNITY_GatewayConfig]]
 
 ## Top bridge nodes
-- [[test_forward_stream.py]] - degree 44, connects to 4 communities
+- [[test_forward_stream.py]] - degree 44, connects to 5 communities
 - [[_resolve_user_trust_level()]] - degree 12, connects to 3 communities
 - [[_make_stream_app_state()]] - degree 15, connects to 2 communities
 - [[test_forward_stream_rejects_non_openai_compat_target()]] - degree 5, connects to 2 communities

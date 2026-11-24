@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test answer_callback handles errors.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
-- [[asyncio_45]] - `references` [EXTRACTED]
+- [[asyncio_44]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

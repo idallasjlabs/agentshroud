@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "test_adversarial_injection.py"
+community: "normalize_input"
 location: "L300"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/normalize_input
 ---
 
 # Context / document retrieval poisoning payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextInjection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/rationale #graphify/EXTRACTED #community/normalize_input

@@ -12,7 +12,7 @@ tags:
 # verify_killswitch()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Run kill switch verification test. Args dry_run If True (default), only…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[post_6]] - `references` [EXTRACTED]

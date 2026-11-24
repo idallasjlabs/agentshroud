@@ -12,7 +12,7 @@ tags:
 # _sse_lines()
 
 ## Connections
-- [[mock_stream()_13]] - `calls` [EXTRACTED]
+- [[mock_stream()_1]] - `calls` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `calls` [EXTRACTED]
 

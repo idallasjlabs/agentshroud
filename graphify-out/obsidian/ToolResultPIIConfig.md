@@ -12,11 +12,11 @@ tags:
 # ToolResultPIIConfig
 
 ## Connections
-- [[dot-__init__()_107]] - `references` [EXTRACTED]
-- [[dot-__init__()_106]] - `method` [EXTRACTED]
+- [[dot-__init__()_109]] - `references` [EXTRACTED]
+- [[dot-__init__()_108]] - `method` [EXTRACTED]
 - [[dot-get_config_for_tool()]] - `method` [EXTRACTED]
 - [[dot-set_config()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_2]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `calls` [EXTRACTED]
 - [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
 - [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_disabled()]] - `calls` [EXTRACTED]

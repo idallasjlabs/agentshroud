@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_custom_config()_3]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_6]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_7]] - `method` [EXTRACTED]
 - [[Test ToolResultSanitizerConfig.]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]

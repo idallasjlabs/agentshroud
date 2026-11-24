@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L279"
+community: "middleware.py"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/middlewarepy
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[DifferentialPIIConfig]] - `method` [EXTRACTED]
+- [[RetentionAction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "TestMemoryLifecycleManager"
+community: "middleware.py"
 location: "L245"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # Test content sanitization removes threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_content_sanitization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMemoryLifecycleManager
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

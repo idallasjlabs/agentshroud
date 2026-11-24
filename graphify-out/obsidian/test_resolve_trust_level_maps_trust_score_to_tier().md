@@ -15,7 +15,7 @@ tags:
 - [[_request()]] - `calls` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `calls` [EXTRACTED]
 - [[_target()]] - `calls` [EXTRACTED]
-- [[parametrize_9]] - `references` [EXTRACTED]
+- [[parametrize_6]] - `references` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_forward_streampy

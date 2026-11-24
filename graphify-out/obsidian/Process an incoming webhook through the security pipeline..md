@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: ".process_webhook"
 location: "L105"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/process_webhook
 ---
 
 # Process an incoming webhook through the security pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-process_webhook()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/process_webhook

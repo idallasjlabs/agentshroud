@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/contributors.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "ContributorManager"
-location: "L27"
+community: "test_llm_proxy.py"
+location: "L797"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContributorManager
+  - community/test_llm_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContributorManager]] - `method` [EXTRACTED]
+- [[_HeadFakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContributorManager
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

@@ -19,14 +19,14 @@ members: 21
 - [[dot-test_script_is_executable_in_git()]] - code - gateway/tests/test_update_conduit_push.py
 - [[dot-test_upgrades_to_the_pin_and_reports_from_to()]] - code - gateway/tests/test_update_conduit_push.py
 - [[dot-test_versions_env_pins_conduit_push_to_a_full_sha()]] - code - gateway/tests/test_update_conduit_push.py
-- [[Path_2]] - code
+- [[Path_1]] - code
 - [[TestPinIsValidated]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestProvesTheOutcome]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestRepoPin]] - code - gateway/tests/test_update_conduit_push.py
 - [[TestUpgrade]] - code - gateway/tests/test_update_conduit_push.py
 - [[_run()]] - code - gateway/tests/test_update_conduit_push.py
 - [[_versions_file()]] - code - gateway/tests/test_update_conduit_push.py
-- [[parametrize_2]] - code
+- [[parametrize]] - code
 - [[scriptsupdate-conduit-push.sh — pinned installer for Hermes's conduit_push…]] - rationale - gateway/tests/test_update_conduit_push.py
 - [[test_update_conduit_push.py]] - code - gateway/tests/test_update_conduit_push.py
 

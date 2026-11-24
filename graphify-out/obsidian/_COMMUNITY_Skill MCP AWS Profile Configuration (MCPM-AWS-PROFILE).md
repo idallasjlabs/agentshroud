@@ -35,7 +35,7 @@ members: 41
 - [[Quick Reference_2]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Related Skills_17]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/README.md
 - [[Related Skills_18]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
-- [[Role_69]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
+- [[Role_70]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Scenario Development → Production]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Security_7]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md
 - [[Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - document - docker/config/openclaw/skills/i-mcpm-aws-profile/SKILL.md

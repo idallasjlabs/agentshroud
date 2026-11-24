@@ -15,7 +15,7 @@ tags:
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[_StubForwarder_1]] - `references` [EXTRACTED]
 - [[_base_policy_engine()]] - `calls` [EXTRACTED]
-- [[fixture_139]] - `references` [EXTRACTED]
+- [[fixture_140]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

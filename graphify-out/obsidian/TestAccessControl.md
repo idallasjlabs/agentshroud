@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "TestAccessControl"
+community: "DelegationPrivilege"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAccessControl
+  - community/DelegationPrivilege
 ---
 
 # TestAccessControl
@@ -21,4 +21,4 @@ tags:
 - [[DelegationPrivilege]] - `uses` [INFERRED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAccessControl
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

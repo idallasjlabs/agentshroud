@@ -12,7 +12,7 @@ tags:
 # TestServiceManagerImport
 
 ## Connections
-- [[dot-test_import()]] - `method` [EXTRACTED]
+- [[dot-test_import()_1]] - `method` [EXTRACTED]
 - [[dot-test_instantiate_without_engine()]] - `method` [EXTRACTED]
 - [[ServiceManager]] - `uses` [INFERRED]
 - [[Verify ServiceManager can be imported without a running container engine.]] - `rationale_for` [EXTRACTED]

@@ -12,9 +12,9 @@ tags:
 # load_registry()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
+- [[Any_55]] - `references` [EXTRACTED]
 - [[Import the committed OpenClaw registry.]] - `rationale_for` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_24]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/plan_remediation

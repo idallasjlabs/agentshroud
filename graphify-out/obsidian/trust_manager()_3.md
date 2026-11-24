@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_integration.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "lifespan.py"
-location: "L85"
+community: "test_e2e_proxy.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_e2e_proxypy
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
+- [[TrustConfig]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_82]] - `references` [EXTRACTED]
-- [[test_a2a_integration.py]] - `contains` [EXTRACTED]
+- [[fixture_88]] - `references` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

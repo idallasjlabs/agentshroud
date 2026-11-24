@@ -30,13 +30,14 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 3 edges to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_Any_1]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_compute_scorecard]]
 - 1 edge to [[_COMMUNITY_get_trivy_summary]]
 
 ## Top bridge nodes
 - [[get_sbom()_1]] - degree 9, connects to 4 communities
-- [[_score_supply_chain()]] - degree 9, connects to 3 communities
+- [[_score_supply_chain()]] - degree 9, connects to 4 communities
 - [[TestGetSbom]] - degree 4, connects to 1 community
 - [[TestScoreSupplyChain_1]] - degree 4, connects to 1 community

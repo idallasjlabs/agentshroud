@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_voice_gateway.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L188"
+community: "ServiceManager"
+location: "L513"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/ServiceManager
 ---
 
 # _boom()
 
 ## Connections
-- [[test_tts_kokoro_pipeline_load_failure_raises()]] - `contains` [EXTRACTED]
+- [[dot-test_falls_back_to_openclaw_only_on_config_load_failure()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

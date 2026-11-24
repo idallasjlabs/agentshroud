@@ -8,7 +8,7 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[dot-__init__()_218]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-__init__()_215]] - code - gateway/web/dashboard_endpoints.py
 - [[dot-push()_4]] - code - gateway/web/dashboard_endpoints.py
 - [[Alert]] - code - gateway/web/dashboard_endpoints.py
 - [[Alert counts by severity.]] - rationale - gateway/web/dashboard_endpoints.py
@@ -23,7 +23,7 @@ members: 20
 - [[_tcp_check()]] - code - gateway/web/dashboard_endpoints.py
 - [[alerts_summary()]] - code - gateway/web/dashboard_endpoints.py
 - [[dashboard_endpoints.py]] - code - gateway/web/dashboard_endpoints.py
-- [[get_9]] - code
+- [[get_8]] - code
 - [[logs_recent()]] - code - gateway/web/dashboard_endpoints.py
 - [[proxy_status()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[ssh_hosts()_1]] - code - gateway/web/dashboard_endpoints.py
@@ -39,17 +39,16 @@ SORT file.name ASC
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_LogBuffer]]
 - 3 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_BufferHandler]]
 - 1 edge to [[_COMMUNITY_dot-_handle]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
+- 1 edge to [[_COMMUNITY_require_auth]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
-- [[dashboard_endpoints.py]] - degree 18, connects to 9 communities
+- [[dashboard_endpoints.py]] - degree 18, connects to 8 communities
 - [[AlertStore]] - degree 8, connects to 3 communities
 - [[_check_host()]] - degree 5, connects to 1 community
 - [[test_alert_store_push_and_summary()]] - degree 2, connects to 1 community

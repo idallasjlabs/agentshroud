@@ -1,29 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EgressFilter"
+community: "decide_approval"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/decide_approval
 ---
 
 # get
 
 ## Connections
-- [[approvals()]] - `references` [EXTRACTED]
-- [[audit()_1]] - `references` [EXTRACTED]
-- [[collaborators()]] - `references` [EXTRACTED]
-- [[credentials_health()]] - `references` [EXTRACTED]
-- [[credentials_status()]] - `references` [EXTRACTED]
-- [[dashboard()]] - `references` [EXTRACTED]
-- [[dashboard_main()]] - `references` [EXTRACTED]
-- [[falco_dashboard()]] - `references` [EXTRACTED]
-- [[get_egress_allowlist()]] - `references` [EXTRACTED]
-- [[killswitch()_1]] - `references` [EXTRACTED]
-- [[modules()]] - `references` [EXTRACTED]
-- [[security_overview()]] - `references` [EXTRACTED]
-- [[ssh()]] - `references` [EXTRACTED]
-- [[wazuh_dashboard()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/decide_approval

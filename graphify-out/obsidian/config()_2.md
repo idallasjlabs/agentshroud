@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "WebProxy"
-location: "L24"
+community: "test_mcp_proxy.py"
+location: "L33"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/WebProxy
+  - graphify/INFERRED
+  - community/test_mcp_proxypy
 ---
 
 # config()
 
 ## Connections
-- [[WebProxyConfig]] - `uses` [INFERRED]
-- [[fixture_108]] - `references` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[MCPTransport]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[fixture_39]] - `references` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/INFERRED #community/test_mcp_proxypy

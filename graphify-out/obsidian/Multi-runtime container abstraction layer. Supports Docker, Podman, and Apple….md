@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "rationale"
-community: "AppleContainerEngine"
+community: "ContainerEngine"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ContainerEngine
 ---
 
 # Multi-runtime container abstraction layer. Supports Docker, Podman, and Apple…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[runtime__init__.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

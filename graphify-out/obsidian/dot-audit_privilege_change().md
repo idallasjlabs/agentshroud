@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-is_privilege_escalation()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
 - [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `method` [EXTRACTED]
 - [[Role]] - `references` [EXTRACTED]

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestDeterministicPresidioInit]] - `method` [EXTRACTED]
 - [[When the pinned model loads, Presidio is built with an explicit ``nlp_engine``…]] - `rationale_for` [EXTRACTED]
-- [[__init__()_6]] - `contains` [EXTRACTED]
+- [[__init__()_3]] - `contains` [EXTRACTED]
 - [[_fake_analyzer()]] - `indirect_call` [INFERRED]
 - [[create_engine()]] - `contains` [EXTRACTED]
 

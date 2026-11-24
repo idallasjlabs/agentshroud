@@ -1,21 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mcp_proxy.py"
+community: "fixture"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/fixture
 ---
 
 # fixture
 
 ## Connections
-- [[audit()]] - `references` [EXTRACTED]
-- [[config()_1]] - `references` [EXTRACTED]
-- [[inspector()]] - `references` [EXTRACTED]
-- [[passthrough_proxy()]] - `references` [EXTRACTED]
-- [[proxy()_1]] - `references` [EXTRACTED]
-- [[strict_inspector()]] - `references` [EXTRACTED]
+- [[dot-approval_queue()]] - `references` [EXTRACTED]
+- [[dot-mock_app_state()]] - `references` [EXTRACTED]
+- [[dot-mock_auth()]] - `references` [EXTRACTED]
+- [[dot-temp_rules_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/fixture

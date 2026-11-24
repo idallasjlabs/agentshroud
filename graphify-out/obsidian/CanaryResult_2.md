@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_check_encoded()]] - `calls` [EXTRACTED]
 - [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-scan()]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CanaryTripwire

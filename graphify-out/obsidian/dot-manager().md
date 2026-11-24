@@ -16,6 +16,6 @@ tags:
 - [[KeyRotationConfig]] - `calls` [EXTRACTED]
 - [[KeyRotationManager]] - `calls` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
-- [[fixture_14]] - `references` [EXTRACTED]
+- [[fixture_13]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

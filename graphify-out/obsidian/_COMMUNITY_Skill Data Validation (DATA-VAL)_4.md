@@ -14,7 +14,7 @@ members: 10
 - [[3. Data Quality Checks_4]] - document - .opencode/agents/i-data.md
 - [[4. Cross-Site Comparison_4]] - document - .opencode/agents/i-data.md
 - [[Critical Cost Control_4]] - document - .opencode/agents/i-data.md
-- [[Role_74]] - document - .opencode/agents/i-data.md
+- [[Role_75]] - document - .opencode/agents/i-data.md
 - [[Skill Data Validation (DATA-VAL)_4]] - document - .opencode/agents/i-data.md
 - [[Test Data Validation Pattern_4]] - document - .opencode/agents/i-data.md
 - [[Validation Layers_4]] - document - .opencode/agents/i-data.md

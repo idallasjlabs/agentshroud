@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "lifespan"
-location: "L65"
+community: "LogSanitizer"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/LogSanitizer
 ---
 
 # .filter()
 
 ## Connections
-- [[LogRecord_1]] - `references` [EXTRACTED]
-- [[_DropInvalidHTTPRequestFilter]] - `method` [EXTRACTED]
+- [[dot-_sanitize_text()]] - `calls` [EXTRACTED]
+- [[Filter log record, sanitizing sensitive content.]] - `rationale_for` [EXTRACTED]
+- [[LogRecord_2]] - `references` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

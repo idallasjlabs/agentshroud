@@ -1,19 +1,20 @@
 ---
-source_file: "docker/bots/hermes/resolve_model.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "test_hermes_model_resolver.py"
-location: "L183"
+community: "GatewayBackedProvider"
+location: "L510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/GatewayBackedProvider
 ---
 
 # main()
 
 ## Connections
-- [[CLI `resolve_model.py modelprovider`. Defaults to 'model'.]] - `rationale_for` [EXTRACTED]
-- [[_resolve_from_env()]] - `calls` [EXTRACTED]
-- [[resolve_model.py]] - `contains` [EXTRACTED]
+- [[create_app()]] - `calls` [EXTRACTED]
+- [[edge_app.py]] - `contains` [EXTRACTED]
+- [[settings_from_env()]] - `calls` [EXTRACTED]
+- [[verify_shipped_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

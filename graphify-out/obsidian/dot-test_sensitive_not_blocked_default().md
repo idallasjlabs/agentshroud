@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "TestInjectionDetection"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/TestInjectionDetection
 ---
 
 # .test_sensitive_not_blocked_default()
@@ -15,4 +15,4 @@ tags:
 - [[Sensitive ops are flagged but not blocked in default mode.]] - `rationale_for` [EXTRACTED]
 - [[TestSensitiveOps]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection

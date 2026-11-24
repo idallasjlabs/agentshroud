@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: ".new"
+community: "main.rs"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/new
+  - community/mainrs
 ---
 
 # run_cves()
@@ -27,4 +27,4 @@ tags:
 - [[format_cves()]] - `calls` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/new
+#graphify/code #graphify/EXTRACTED #community/mainrs

@@ -17,7 +17,7 @@ members: 11
 - [[_pipe()_3]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[_read_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[dashboard_bridge.py]] - code - docker/bots/hermes/dashboard_bridge.py
-- [[main()_32]] - code - docker/bots/hermes/dashboard_bridge.py
+- [[main()_31]] - code - docker/bots/hermes/dashboard_bridge.py
 - [[rewrite_request_headers()]] - code - docker/bots/hermes/dashboard_bridge.py
 
 ## Live Query (requires Dataview plugin)

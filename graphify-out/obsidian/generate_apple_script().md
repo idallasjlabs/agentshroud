@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "test_runtime_engines.py"
+community: "generate_compose"
 location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/generate_compose
 ---
 
 # generate_apple_script()
@@ -16,7 +16,7 @@ tags:
 - [[dot-test_generate_apple_script()]] - `calls` [EXTRACTED]
 - [[Generate a shell script to start services with Apple Containers. Apple…]] - `rationale_for` [EXTRACTED]
 - [[ServiceDef]] - `references` [EXTRACTED]
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/generate_compose

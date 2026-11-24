@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestInfoLeakage"
+community: "LogSanitizer"
 location: "L419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInfoLeakage
+  - community/LogSanitizer
 ---
 
 # .test_env_guard_scrubs_output()
@@ -16,4 +16,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInfoLeakage
+#graphify/code #graphify/EXTRACTED #community/LogSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "._extract_egress_targets"
 location: "L331"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/_extract_egress_targets
 ---
 
 # ._sanitize_admin_private_data()
@@ -19,4 +19,4 @@ tags:
 - [[Redact admin-private data from tool results for non-owner agents.]] - `rationale_for` [EXTRACTED]
 - [[_scrub()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets

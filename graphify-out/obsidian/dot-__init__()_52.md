@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "TokenValidator"
-location: "L52"
+community: "test_telegram_replay.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/test_telegram_replaypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

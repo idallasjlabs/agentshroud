@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "test_memory_lifecycle.py"
-location: "L35"
+community: "TestApprovalHardening"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_memory_lifecyclepy
+  - community/TestApprovalHardening
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._2]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._1]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

@@ -16,7 +16,7 @@ members: 12
 - [[dot-test_script_exists_test_is_present()]] - code - gateway/tests/test_observatory_mode.py
 - [[dot-test_verification_log_written()]] - code - gateway/tests/test_observatory_mode.py
 - [[Automated verification that verify_killswitch() returns required fields.]] - rationale - gateway/tests/test_observatory_mode.py
-- [[Path_11]] - code
+- [[Path_12]] - code
 - [[TestKillSwitchVerification]] - code - gateway/tests/test_observatory_mode.py
 - [[dry_run=True must never trigger actual kill switch execution.]] - rationale - gateway/tests/test_observatory_mode.py
 - [[verify_killswitch() must write a log entry for auditability.]] - rationale - gateway/tests/test_observatory_mode.py
@@ -29,9 +29,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_KillSwitchConfig]]
 - 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
+- 2 edges to [[_COMMUNITY_KillSwitchConfig]]
+- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
 
 ## Top bridge nodes
 - [[TestKillSwitchVerification]] - degree 11, connects to 3 communities

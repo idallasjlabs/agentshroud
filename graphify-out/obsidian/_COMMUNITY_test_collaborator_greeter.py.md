@@ -8,7 +8,7 @@ members: 43
 **Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_21]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-__init__()_25]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
@@ -61,7 +61,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
 - [[collaborator_greeter.py]] - degree 5, connects to 2 communities

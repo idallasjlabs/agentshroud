@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "installer.py"
+community: "detect_runtime"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/detect_runtime
 ---
 
 # installer_page()
 
 ## Connections
-- [[Request_10]] - `references` [EXTRACTED]
+- [[Request_8]] - `references` [EXTRACTED]
 - [[Serve the installer wizard HTML.]] - `rationale_for` [EXTRACTED]
-- [[get_10]] - `references` [EXTRACTED]
+- [[get_9]] - `references` [EXTRACTED]
 - [[installer.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

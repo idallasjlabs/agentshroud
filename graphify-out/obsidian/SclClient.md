@@ -12,7 +12,7 @@ tags:
 # SCLClient
 
 ## Connections
-- [[dot-__init__()_49]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `method` [EXTRACTED]
 - [[dot-_request()]] - `method` [EXTRACTED]
 - [[dot-add_collaborator()]] - `method` [EXTRACTED]
 - [[dot-add_group_member()]] - `method` [EXTRACTED]
@@ -31,16 +31,16 @@ tags:
 - [[dot-get_events()]] - `method` [EXTRACTED]
 - [[dot-get_groups()]] - `method` [EXTRACTED]
 - [[dot-get_health()]] - `method` [EXTRACTED]
-- [[dot-get_logs()_1]] - `method` [EXTRACTED]
+- [[dot-get_logs()]] - `method` [EXTRACTED]
 - [[dot-get_risk()]] - `method` [EXTRACTED]
 - [[dot-get_services()]] - `method` [EXTRACTED]
 - [[dot-get_users()]] - `method` [EXTRACTED]
 - [[dot-post()]] - `method` [EXTRACTED]
 - [[dot-put()]] - `method` [EXTRACTED]
-- [[dot-restart_service()_1]] - `method` [EXTRACTED]
+- [[dot-restart_service()]] - `method` [EXTRACTED]
 - [[dot-run_scan()]] - `method` [EXTRACTED]
 - [[dot-set_group_mode()]] - `method` [EXTRACTED]
-- [[dot-stop_service()_1]] - `method` [EXTRACTED]
+- [[dot-stop_service()]] - `method` [EXTRACTED]
 - [[dot-test_empty_response_body_returns_empty_dict()]] - `calls` [EXTRACTED]
 - [[dot-test_get_builds_url_headers_and_parses_json()]] - `calls` [EXTRACTED]
 - [[dot-test_get_with_params_encodes_query_string()]] - `calls` [EXTRACTED]

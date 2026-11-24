@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Any"
+community: "KeyRotationManager"
 location: "L341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/KeyRotationManager
 ---
 
 # Rotate a single credential with zero downtime. Workflow: generate new →…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-rotate_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

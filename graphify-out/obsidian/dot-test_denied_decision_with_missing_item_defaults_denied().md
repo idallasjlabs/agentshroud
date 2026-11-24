@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
+community: "make_proxy"
 location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/make_proxy
 ---
 
 # .test_denied_decision_with_missing_item_defaults_denied()
@@ -17,4 +17,4 @@ tags:
 - [[make_call()]] - `calls` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/make_proxy

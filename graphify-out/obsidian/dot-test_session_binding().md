@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Session]] - `calls` [EXTRACTED]
 - [[Session must bind to user identity.]] - `rationale_for` [EXTRACTED]
-- [[TestAuth_1]] - `method` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuth

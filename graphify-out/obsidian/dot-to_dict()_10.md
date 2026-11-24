@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L44"
+community: "AuditChain"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/AuditChain
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_73]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[PipelineResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/AuditChain

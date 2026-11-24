@@ -1,46 +1,40 @@
 ---
 type: community
-members: 33
+members: 27
 ---
 
 # asyncio
 
-**Members:** 33 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[dot-test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_get_credential_status_none_for_unknown()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStatusHelpers]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[asyncio_54]] - code
-- [[validate()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-__init__()_160]] - code - gateway/tests/test_egress_filter.py
+- [[dot-log_event()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allow_is_not_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_deny_is_persisted_to_audit_store()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_emits_egress_event_to_event_bus()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unknown_domain_allowed_when_approved()]] - code - gateway/tests/test_egress_filter.py
+- [[dot-test_unknown_domain_denied_when_denied()]] - code - gateway/tests/test_egress_filter.py
+- [[EgressFilter must NOT notify when domain is allowed.]] - rationale - gateway/tests/test_egress_filter.py
+- [[EgressFilter must call notifier when blocking an unknown domain.]] - rationale - gateway/tests/test_egress_filter.py
+- [[FakeAuditStore_1]] - code - gateway/tests/test_egress_filter.py
+- [[Only DENY decisions are persisted to the tamper-evident audit store. ALLOW…]] - rationale - gateway/tests/test_egress_filter.py
+- [[TestAuditStorePersistence]] - code - gateway/tests/test_egress_filter.py
+- [[__init__()_15]] - code - gateway/tests/test_egress_filter.py
+- [[__init__()_16]] - code - gateway/tests/test_egress_filter.py
+- [[asyncio_63]] - code
+- [[emit()_7]] - code - gateway/tests/test_egress_filter.py
+- [[get_pending_requests()_2]] - code - gateway/tests/test_egress_filter.py
+- [[get_pending_requests()_3]] - code - gateway/tests/test_egress_filter.py
+- [[get_pending_requests()_4]] - code - gateway/tests/test_egress_filter.py
+- [[notify_pending()]] - code - gateway/tests/test_egress_filter.py
+- [[notify_pending()_1]] - code - gateway/tests/test_egress_filter.py
+- [[request_approval()]] - code - gateway/tests/test_egress_filter.py
+- [[request_approval()_1]] - code - gateway/tests/test_egress_filter.py
+- [[request_approval()_2]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_no_notification_on_allow()]] - code - gateway/tests/test_egress_filter.py
+- [[test_egress_filter_notifies_on_deny()]] - code - gateway/tests/test_egress_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,11 +44,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_KeyRotationManager]]
+- 17 edges to [[_COMMUNITY_EgressFilter]]
+- 3 edges to [[_COMMUNITY_make_proxy]]
+- 3 edges to [[_COMMUNITY__make_filter]]
+- 2 edges to [[_COMMUNITY_EgressPolicy]]
 
 ## Top bridge nodes
-- [[_old_cred()]] - degree 9, connects to 1 community
-- [[TestRotateGuardBranches]] - degree 8, connects to 1 community
-- [[TestGenerateAndValidate]] - degree 5, connects to 1 community
-- [[TestReadFrom1Password]] - degree 5, connects to 1 community
-- [[TestStoreIn1Password]] - degree 5, connects to 1 community
+- [[dot-test_unknown_domain_allowed_when_approved()]] - degree 6, connects to 3 communities
+- [[dot-test_unknown_domain_denied_when_denied()]] - degree 6, connects to 3 communities
+- [[test_egress_filter_no_notification_on_allow()]] - degree 7, connects to 2 communities
+- [[test_egress_filter_notifies_on_deny()]] - degree 7, connects to 2 communities
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - degree 7, connects to 2 communities

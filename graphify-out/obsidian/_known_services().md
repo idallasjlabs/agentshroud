@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "services.py"
+community: "ServiceManager"
 location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/ServiceManager
 ---
 
 # _known_services()
@@ -17,4 +17,4 @@ tags:
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

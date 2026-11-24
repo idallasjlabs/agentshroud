@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "MCPProxy"
+community: "TestMCPProxyIntegration"
 location: "L301"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/TestMCPProxyIntegration
 ---
 
 # Test owner bypass for high-tier tools.
 
 ## Connections
-- [[dot-test_owner_bypass()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-test_owner_bypass()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyIntegration

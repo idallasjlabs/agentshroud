@@ -12,7 +12,7 @@ tags:
 # TestPromptGuard
 
 ## Connections
-- [[dot-setup_method()_19]] - `method` [EXTRACTED]
+- [[dot-setup_method()_23]] - `method` [EXTRACTED]
 - [[dot-test_base64_encoded_injection()_2]] - `method` [EXTRACTED]
 - [[dot-test_benign_base64()]] - `method` [EXTRACTED]
 - [[dot-test_clean_input()]] - `method` [EXTRACTED]
@@ -33,7 +33,7 @@ tags:
 - [[dot-test_sanitized_output()]] - `method` [EXTRACTED]
 - [[dot-test_unicode_zero_width()]] - `method` [EXTRACTED]
 - [[dot-test_warn_threshold()]] - `method` [EXTRACTED]
-- [[dot-test_xml_tag_injection()]] - `method` [EXTRACTED]
+- [[dot-test_xml_tag_injection()_1]] - `method` [EXTRACTED]
 - [[PatternRule]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]

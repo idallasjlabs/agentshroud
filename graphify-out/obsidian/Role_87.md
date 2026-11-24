@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-vulcan.agent.md"
+source_file: ".github/agents/i-pr.agent.md"
 type: "document"
-community: "Vulcan — Subject Matter Auditor"
+community: "Skill: Pull Request (PR) Generator"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Vulcan__Subject_Matter_Auditor
+  - community/Skill_Pull_Request_PR_Generator
 ---
 
 # Role
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_4]] - `contains` [EXTRACTED]
+- [[Skill Pull Request (PR) Generator_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor
+#graphify/document #graphify/EXTRACTED #community/Skill_Pull_Request_PR_Generator

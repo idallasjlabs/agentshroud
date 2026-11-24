@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L932"
+community: "TestApprovalHardening"
+location: "L384"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/TestApprovalHardening
 ---
 
 # .test_get_stats()
 
 ## Connections
-- [[dot-_make_dispatcher()]] - `calls` [EXTRACTED]
-- [[TestAlertDispatcher]] - `method` [EXTRACTED]
+- [[Test getting hardening statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardening]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

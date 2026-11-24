@@ -12,7 +12,7 @@ tags:
 # colima-health-check.sh
 
 ## Connections
-- [[PATH_10]] - `defines` [EXTRACTED]
+- [[PATH_11]] - `defines` [EXTRACTED]
 - [[_colima_vm_flags()]] - `defines` [EXTRACTED]
 - [[_dead_dns_servers()]] - `defines` [EXTRACTED]
 - [[_upgrade_in_progress()]] - `defines` [EXTRACTED]

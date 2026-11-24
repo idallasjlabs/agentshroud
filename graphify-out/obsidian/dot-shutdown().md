@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPProxy"
+community: "test_mcp_proxy.py"
 location: "L855"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/test_mcp_proxypy
 ---
 
 # .shutdown()
@@ -15,4 +15,4 @@ tags:
 - [[Clean shutdown — close all connections.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # TestApprovalHardening
@@ -28,7 +28,7 @@ tags:
 - [[dot-test_format_hardened_message_with_normalization()]] - `method` [EXTRACTED]
 - [[dot-test_format_hardened_message_with_security_concerns()]] - `method` [EXTRACTED]
 - [[dot-test_format_parameters_with_highlighting()]] - `method` [EXTRACTED]
-- [[dot-test_get_stats()_1]] - `method` [EXTRACTED]
+- [[dot-test_get_stats()_2]] - `method` [EXTRACTED]
 - [[dot-test_initialization()_3]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_handles_empty()]] - `method` [EXTRACTED]
 - [[dot-test_normalize_description_removes_misleading_phrases()]] - `method` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[Test approval hardening functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

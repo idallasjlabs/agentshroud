@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "load_profiles"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/load_profiles
 ---
 
 # ValueError
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[ProfileError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/load_profiles

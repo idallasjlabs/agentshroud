@@ -13,7 +13,7 @@ members: 9
 - [[Content Requirements_1]] - document - .cursor/agents/i-pr.md
 - [[Header_1]] - document - .cursor/agents/i-pr.md
 - [[Objective_1]] - document - .cursor/agents/i-pr.md
-- [[Role_81]] - document - .cursor/agents/i-pr.md
+- [[Role_82]] - document - .cursor/agents/i-pr.md
 - [[Safety_2]] - document - .cursor/agents/i-pr.md
 - [[Skill Pull Request (PR) Generator_1]] - document - .cursor/agents/i-pr.md
 - [[Technical Detail_1]] - document - .cursor/agents/i-pr.md

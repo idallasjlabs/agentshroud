@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "ProgressiveLockdown"
+community: "TestConcurrency"
 location: "L582"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/TestConcurrency
 ---
 
 # one()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_async_gather_record_block_counts_exactly()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/TestConcurrency

@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/i-sec.md"
+source_file: ".github/agents/i-tdd.agent.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
-location: "L9"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)_4]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

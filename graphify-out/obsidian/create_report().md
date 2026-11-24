@@ -12,7 +12,7 @@ tags:
 # create_report()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Request_6]] - `references` [EXTRACTED]
 - [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

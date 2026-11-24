@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L465"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # A REAL EnhancedApprovalQueue + default ToolRiskConfig must NOT let the engine's…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

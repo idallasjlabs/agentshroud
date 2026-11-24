@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "EdgeOAuthService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/EdgeOAuthService
 ---
 
 # Exception
 
 ## Connections
-- [[TokenRejected]] - `inherits` [EXTRACTED]
+- [[OAuthFailure]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

@@ -12,9 +12,9 @@ tags:
 # BrowserSecurityGuard
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_78]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_87]] - `method` [EXTRACTED]
 - [[dot-analyze_content()]] - `method` [EXTRACTED]
 - [[dot-analyze_screenshot()]] - `method` [EXTRACTED]
 - [[dot-can_enter_credentials()]] - `method` [EXTRACTED]

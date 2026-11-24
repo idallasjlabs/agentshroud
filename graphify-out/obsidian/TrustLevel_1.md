@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustLevel"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/TrustLevel
 ---
 
 # TrustLevel
 
 ## Connections
-- [[dot-__init__()_103]] - `references` [EXTRACTED]
+- [[dot-__init__()_217]] - `references` [EXTRACTED]
 - [[dot-_force_demotion()]] - `calls` [EXTRACTED]
 - [[dot-_promotion_allowed()]] - `references` [EXTRACTED]
 - [[dot-_score_to_level()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-record_success()]] - `references` [EXTRACTED]
 - [[dot-record_violation()]] - `references` [EXTRACTED]
 - [[dot-register_agent()]] - `references` [EXTRACTED]
-- [[IntEnum_3]] - `inherits` [EXTRACTED]
+- [[IntEnum_4]] - `inherits` [EXTRACTED]
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/TrustLevel

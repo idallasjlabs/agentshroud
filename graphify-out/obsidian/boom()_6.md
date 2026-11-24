@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "test_skill_guard.py"
-location: "L505"
+community: "TestCollaboratorPersistence"
+location: "L717"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/TestCollaboratorPersistence
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_main_unreadable_file_fails_closed()]] - `contains` [EXTRACTED]
+- [[dot-test_pause_returns_false_on_inner_write_error()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPersistence

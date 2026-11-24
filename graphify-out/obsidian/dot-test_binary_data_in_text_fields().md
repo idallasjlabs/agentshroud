@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L348"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # .test_binary_data_in_text_fields()
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard]] - `calls` [INFERRED]
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

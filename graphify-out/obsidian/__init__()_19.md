@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "asyncio"
-location: "L369"
+community: "._run_proxy"
+location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_run_proxy
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `contains` [EXTRACTED]
+- [[dot-_run_proxy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_run_proxy

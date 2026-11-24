@@ -12,9 +12,9 @@ tags:
 # ._profile()
 
 ## Connections
-- [[dot-authorize()]] - `calls` [EXTRACTED]
+- [[dot-authorize()_1]] - `calls` [EXTRACTED]
 - [[dot-consent_submit()]] - `calls` [EXTRACTED]
-- [[dot-register_client()]] - `calls` [EXTRACTED]
+- [[dot-register_client()_1]] - `calls` [EXTRACTED]
 - [[EdgeOAuthService]] - `method` [EXTRACTED]
 - [[OAuthFailure]] - `calls` [EXTRACTED]
 - [[VendorProfile]] - `references` [EXTRACTED]

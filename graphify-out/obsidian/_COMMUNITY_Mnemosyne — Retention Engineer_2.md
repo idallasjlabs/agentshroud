@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_51]] - document - .cursor/agents/mnemosyne.md
 - [[Persona_30]] - document - .cursor/agents/mnemosyne.md
 - [[Quality Checklist_36]] - document - .cursor/agents/mnemosyne.md
-- [[Role_101]] - document - .cursor/agents/mnemosyne.md
+- [[Role_102]] - document - .cursor/agents/mnemosyne.md
 - [[System Prompt_30]] - document - .cursor/agents/mnemosyne.md
 
 ## Live Query (requires Dataview plugin)

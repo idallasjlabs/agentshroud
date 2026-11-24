@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L113"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # MCPPolicyConfig
 
 ## Connections
-- [[dot-__init__()_142]] - `calls` [EXTRACTED]
+- [[dot-__init__()_133]] - `calls` [EXTRACTED]
 - [[dot-__post_init__()_6]] - `method` [EXTRACTED]
-- [[dot-from_dict()_6]] - `method` [EXTRACTED]
+- [[dot-from_dict()_7]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy. Loaded from the ``mcp_policy`` section of…]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
@@ -36,4 +36,4 @@ tags:
 - [[test_owner_bypass_defaults_to_rbac_owner_identity()]] - `uses` [INFERRED]
 - [[test_owner_bypasses_approval_but_not_hard_deny()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/load_config
+#graphify/code #graphify/INFERRED #community/MCPPolicyEngine

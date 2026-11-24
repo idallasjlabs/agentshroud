@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "test_key_vault.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/test_key_vaultpy
 ---
 
 # test_key_vault.py
@@ -24,8 +24,8 @@ tags:
 - [[TestKeyStorage]] - `contains` [EXTRACTED]
 - [[TestKeyVaultConfig]] - `contains` [EXTRACTED]
 - [[Tests for API key isolation and vault.]] - `rationale_for` [EXTRACTED]
-- [[config()]] - `contains` [EXTRACTED]
+- [[config()_3]] - `contains` [EXTRACTED]
 - [[key_vault.py]] - `imports_from` [EXTRACTED]
 - [[vault()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/test_key_vaultpy

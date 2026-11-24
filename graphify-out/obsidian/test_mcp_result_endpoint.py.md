@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # test_mcp_result_endpoint.py
@@ -22,8 +22,8 @@ tags:
 - [[TestMCPResultEndpoint]] - `contains` [EXTRACTED]
 - [[Tests for POST mcpresult endpoint and mcp_proxy_data  proxy_allowed_domains…]] - `rationale_for` [EXTRACTED]
 - [[auth_headers()_1]] - `contains` [EXTRACTED]
-- [[client()_10]] - `contains` [EXTRACTED]
-- [[httpx_1]] - `imports_from` [EXTRACTED]
+- [[client()_11]] - `contains` [EXTRACTED]
+- [[httpx]] - `imports_from` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[load_config()]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[test_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

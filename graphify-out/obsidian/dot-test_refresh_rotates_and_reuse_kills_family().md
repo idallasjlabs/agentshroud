@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "EdgeOAuthService"
-location: "L242"
+community: "_client_info"
+location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/_client_info
 ---
 
 # .test_refresh_rotates_and_reuse_kills_family()
@@ -15,4 +15,4 @@ tags:
 - [[TestRefreshAndRevoke]] - `method` [EXTRACTED]
 - [[_linked()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/_client_info

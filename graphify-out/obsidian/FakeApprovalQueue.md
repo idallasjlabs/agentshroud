@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
+community: "make_proxy"
 location: "L444"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/make_proxy
 ---
 
 # FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_27]] - `method` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-get_item()]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()]] - `method` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]
@@ -26,4 +26,4 @@ tags:
 - [[dot-wait_for_decision()]] - `method` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/make_proxy

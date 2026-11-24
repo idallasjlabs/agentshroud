@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestReversibilityScoring]] - `method` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `calls` [EXTRACTED]
-- [[fixture_130]] - `references` [EXTRACTED]
+- [[fixture_128]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "EdgeOAuthService"
+community: "_client_info"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/_client_info
 ---
 
 # .test_redirect_must_be_allowlisted()
@@ -15,4 +15,4 @@ tags:
 - [[TestRegistration]] - `method` [EXTRACTED]
 - [[_client_info()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/_client_info

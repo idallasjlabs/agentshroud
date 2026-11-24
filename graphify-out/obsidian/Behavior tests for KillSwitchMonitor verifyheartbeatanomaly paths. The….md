@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "rationale"
-community: "KillSwitchConfig"
+community: "KillSwitchMonitor"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchConfig
+  - community/KillSwitchMonitor
 ---
 
 # Behavior tests for KillSwitchMonitor verify/heartbeat/anomaly paths. The…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_killswitch_monitor_behavior.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchConfig
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor

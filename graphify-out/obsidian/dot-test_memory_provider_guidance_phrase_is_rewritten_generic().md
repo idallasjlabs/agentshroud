@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: ".test_memory_provider_guidance_phrase_is_rewritten_generic"
 location: "L929"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/test_memory_provider_guidance_phrase_is_rewritten_generic
 ---
 
 # .test_memory_provider_guidance_phrase_is_rewritten_generic()
@@ -15,6 +15,6 @@ tags:
 - [[Memory guidance mentioning agents.defaults.memorySearch.provider should…]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/test_memory_provider_guidance_phrase_is_rewritten_generic

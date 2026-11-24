@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-check_url_reputation()]] - `references` [EXTRACTED]
-- [[IntEnum_1]] - `inherits` [EXTRACTED]
+- [[IntEnum_2]] - `inherits` [EXTRACTED]
 - [[TestScreenshotAnalysis]] - `uses` [INFERRED]
 - [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
 - [[TestURLReputation]] - `uses` [INFERRED]

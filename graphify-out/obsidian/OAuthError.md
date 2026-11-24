@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "test_security_audit.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/test_security_auditpy
 ---
 
 # OAuthError
@@ -22,4 +22,4 @@ tags:
 - [[TestStateValidation]] - `uses` [INFERRED]
 - [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

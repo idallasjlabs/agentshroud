@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
+community: "EncodingDetector"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/EncodingDetector
 ---
 
 # TestEncodingDetector
 
 ## Connections
-- [[dot-setup_method()_38]] - `method` [EXTRACTED]
+- [[dot-setup_method()_25]] - `method` [EXTRACTED]
 - [[dot-test_base64_detected()]] - `method` [EXTRACTED]
 - [[dot-test_config_disable_base64()]] - `method` [EXTRACTED]
-- [[dot-test_empty_input()_3]] - `method` [EXTRACTED]
+- [[dot-test_empty_input()_2]] - `method` [EXTRACTED]
 - [[dot-test_homoglyph_replaced()]] - `method` [EXTRACTED]
 - [[dot-test_nested_encoding()]] - `method` [EXTRACTED]
 - [[dot-test_plain_text_no_detection()]] - `method` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[test_encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/EncodingDetector

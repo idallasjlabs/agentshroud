@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "rationale"
-community: "asyncio"
+community: "TestUpstreamAlertDedup"
 location: "L550"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/TestUpstreamAlertDedup
 ---
 
 # The 06:05 check and the 07:00 GHSA ingest share one diff; an advisory still…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUpstreamAlertDedup]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/TestUpstreamAlertDedup

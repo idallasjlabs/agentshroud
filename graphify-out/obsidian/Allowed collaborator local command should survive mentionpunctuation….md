@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "FakeRBAC"
+community: "_make_update"
 location: "L1720"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/_make_update
 ---
 
 # Allowed collaborator local command should survive mention/punctuation…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_allowed_collaborator_model_command_with_mention_is_handled_locally()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FakeRBAC
+#graphify/rationale #graphify/EXTRACTED #community/_make_update

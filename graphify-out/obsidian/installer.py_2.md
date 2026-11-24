@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "installer.py"
+community: "detect_runtime"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/detect_runtime
 ---
 
 # installer.py
@@ -17,7 +17,7 @@ tags:
 - [[PrerequisiteCheck]] - `contains` [EXTRACTED]
 - [[check_prerequisites()]] - `contains` [EXTRACTED]
 - [[detect_runtime()]] - `imports` [EXTRACTED]
-- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[fastapi_4]] - `imports_from` [EXTRACTED]
 - [[get_runtimes()]] - `contains` [EXTRACTED]
 - [[get_security_comparison()]] - `imports` [EXTRACTED]
 - [[installer_page()]] - `contains` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[security.py_2]] - `imports_from` [EXTRACTED]
 - [[start_install()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

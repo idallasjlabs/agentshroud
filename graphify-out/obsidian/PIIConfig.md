@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # PIIConfig
 
 ## Connections
-- [[dot-__init__()_106]] - `references` [EXTRACTED]
-- [[dot-__init__()_24]] - `references` [EXTRACTED]
+- [[dot-__init__()_108]] - `references` [EXTRACTED]
+- [[dot-__init__()_28]] - `references` [EXTRACTED]
 - [[dot-_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-default_config()]] - `calls` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[dot-test_single_message_pipeline_under_100ms()]] - `calls` [EXTRACTED]
 - [[dot-test_tool_specific_config()]] - `calls` [EXTRACTED]
 - [[dot-test_unicode_normalization_bypass()]] - `calls` [INFERRED]
-- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[PII detection and redaction configuration]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `uses` [INFERRED]
@@ -69,7 +69,7 @@ tags:
 - [[_regex_sanitizer()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `uses` [INFERRED]
 - [[conftest.py]] - `imports` [EXTRACTED]
-- [[edge()]] - `uses` [INFERRED]
+- [[edge()_1]] - `uses` [INFERRED]
 - [[full_pipeline_config()]] - `uses` [INFERRED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
@@ -77,7 +77,7 @@ tags:
 - [[pii_config()_1]] - `uses` [INFERRED]
 - [[pii_config()]] - `uses` [INFERRED]
 - [[profiles.py]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [INFERRED]
+- [[run()]] - `calls` [INFERRED]
 - [[sanitizer()_1]] - `uses` [INFERRED]
 - [[sanitizer()_2]] - `uses` [INFERRED]
 - [[sanitizer.py_2]] - `imports` [EXTRACTED]
@@ -113,4 +113,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

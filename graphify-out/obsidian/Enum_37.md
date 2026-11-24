@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "PermissionLevel"
+community: "middleware.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/middlewarepy
 ---
 
 # Enum
 
 ## Connections
-- [[MCPTransport]] - `inherits` [EXTRACTED]
-- [[PermissionLevel]] - `inherits` [EXTRACTED]
-- [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
+- [[ContentThreatType]] - `inherits` [EXTRACTED]
+- [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

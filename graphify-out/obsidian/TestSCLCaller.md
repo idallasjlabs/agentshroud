@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "soc/router.py"
+community: "ws_soc_endpoint"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ws_soc_endpoint
 ---
 
 # TestSCLCaller
@@ -25,4 +25,4 @@ tags:
 - [[SCLCaller]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint

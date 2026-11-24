@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "EgressEvent"
+community: "web_proxy.py"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/web_proxypy
 ---
 
 # .test_record_mcp_event()
@@ -15,4 +15,4 @@ tags:
 - [[EgressEvent]] - `calls` [EXTRACTED]
 - [[TestEventRecording]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

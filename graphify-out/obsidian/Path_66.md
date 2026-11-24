@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "WebhookReceiver"
+community: "DNSBlocklist"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/DNSBlocklist
 ---
 
 # Path
 
 ## Connections
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
+- [[dot-__init__()_187]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

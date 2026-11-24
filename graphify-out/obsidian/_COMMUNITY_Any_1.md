@@ -1,38 +1,36 @@
 ---
 type: community
-members: 25
+members: 23
 ---
 
 # Any
 
-**Members:** 25 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[dot-_generate_new_credential()]] - code - gateway/security/key_rotation.py
-- [[dot-_retire_old_credential_after_grace_period()]] - code - gateway/security/key_rotation.py
-- [[dot-_store_credential_in_1password()]] - code - gateway/security/key_rotation.py
-- [[dot-_validate_credential()]] - code - gateway/security/key_rotation.py
-- [[dot-check_and_rotate_due_credentials()]] - code - gateway/security/key_rotation.py
-- [[dot-cleanup_retired_credentials()]] - code - gateway/security/key_rotation.py
-- [[dot-emergency_rotate_credential()]] - code - gateway/security/key_rotation.py
-- [[dot-get_all_credentials_status()]] - code - gateway/security/key_rotation.py
-- [[dot-get_credential_status()]] - code - gateway/security/key_rotation.py
-- [[dot-get_health_score()]] - code - gateway/security/key_rotation.py
-- [[dot-rotate_credential()]] - code - gateway/security/key_rotation.py
-- [[dot-validate()_2]] - code - gateway/security/key_rotation.py
-- [[Any_25]] - code
-- [[Calculate overall credential health score.]] - rationale - gateway/security/key_rotation.py
-- [[Check all credentials and rotate those that are due.]] - rationale - gateway/security/key_rotation.py
-- [[Clean up any credentials past their grace period.]] - rationale - gateway/security/key_rotation.py
-- [[Get detailed status for a credential.]] - rationale - gateway/security/key_rotation.py
-- [[Get status for all managed credentials.]] - rationale - gateway/security/key_rotation.py
-- [[Perform emergency rotation of a credential.]] - rationale - gateway/security/key_rotation.py
-- [[Retire old credential after grace period ends.]] - rationale - gateway/security/key_rotation.py
-- [[Rotate a single credential with zero downtime. Workflow generate new →…]] - rationale - gateway/security/key_rotation.py
-- [[Store a new credential in 1Password.]] - rationale - gateway/security/key_rotation.py
-- [[Validate a credential using registered validator.]] - rationale - gateway/security/key_rotation.py
-- [[Validate a credential. Returns tuple (is_valid, message)]] - rationale - gateway/security/key_rotation.py
-- [[EXPERIMENTAL Generate a new credential value. WARNING This method generates…]] - rationale - gateway/security/key_rotation.py
+- [[dot-_patch_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_clean_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_critical_on_critical_findings()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_not_run_when_no_report()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_overall_clean_when_all_clean()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_overall_critical_when_any_critical()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_overall_not_configured_when_all_not_run()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_overall_warning_when_high_only()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_scanners_dict_has_all_tools()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_timestamp_present()_1]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_totals_sum_across_scanners()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_warning_on_failures()]] - code - gateway/tests/test_scanner_integration.py
+- [[Aggregate results from all security scanners into a unified dict. Returns Dict…]] - rationale - gateway/security/scanner_integration.py
+- [[Any_60]] - code
+- [[Return Fluent Bit log collector status. Fluent Bit is a log shipper, not a…]] - rationale - gateway/security/scanner_integration.py
+- [[Return True if fluent-bit pidfile tmpfluent-bit.pid exists with a live PID.]] - rationale - gateway/security/scanner_integration.py
+- [[Return latest OpenSCAP compliance summary from saved reports.]] - rationale - gateway/security/scanner_integration.py
+- [[TestAggregateResults_1]] - code - gateway/tests/test_scanner_integration.py
+- [[TestGetOpenscapSummary]] - code - gateway/tests/test_scanner_integration.py
+- [[_is_fluent_bit_running()]] - code - gateway/security/scanner_integration.py
+- [[aggregate_results()]] - code - gateway/security/scanner_integration.py
+- [[get_fluent_bit_summary()]] - code - gateway/security/scanner_integration.py
+- [[get_openscap_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,11 +40,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_KeyRotationManager]]
+- 11 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 8 edges to [[_COMMUNITY_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY__score_compliance_auditing]]
+- 4 edges to [[_COMMUNITY_get_trivy_summary]]
+- 4 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 3 edges to [[_COMMUNITY__score_image_integrity]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_get_falco_summary]]
+- 2 edges to [[_COMMUNITY_get_wazuh_summary]]
+- 2 edges to [[_COMMUNITY_compute_scorecard]]
+- 1 edge to [[_COMMUNITY_get_sbom]]
+- 1 edge to [[_COMMUNITY_Any]]
+- 1 edge to [[_COMMUNITY_test_soc_bots.py]]
 
 ## Top bridge nodes
-- [[Any_25]] - degree 11, connects to 1 community
-- [[dot-rotate_credential()]] - degree 9, connects to 1 community
-- [[dot-check_and_rotate_due_credentials()]] - degree 4, connects to 1 community
-- [[dot-emergency_rotate_credential()]] - degree 4, connects to 1 community
-- [[dot-_generate_new_credential()]] - degree 4, connects to 1 community
+- [[Any_60]] - degree 22, connects to 12 communities
+- [[aggregate_results()]] - degree 19, connects to 6 communities
+- [[get_openscap_summary()]] - degree 11, connects to 4 communities
+- [[dot-test_overall_clean_when_all_clean()]] - degree 7, connects to 4 communities
+- [[dot-_patch_all_not_run()]] - degree 10, connects to 3 communities

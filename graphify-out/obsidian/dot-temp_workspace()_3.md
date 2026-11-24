@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Create a temporary workspace for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
-- [[fixture_123]] - `references` [EXTRACTED]
+- [[fixture_125]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

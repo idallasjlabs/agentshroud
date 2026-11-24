@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: ".test_memory_provider_error_is_rewritten_for_form_caption_field"
 location: "L1781"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/test_memory_provider_error_is_rewritten_for_form_caption_field
 ---
 
 # Memory provider runtime errors should rewrite when form payload uses caption…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_memory_provider_error_is_rewritten_for_form_caption_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/test_memory_provider_error_is_rewritten_for_form_caption_field

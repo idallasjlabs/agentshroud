@@ -24,8 +24,8 @@ members: 20
 - [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
 - [[Tests for Version Manager API Routes.]] - rationale - gateway/tests/test_version_routes.py
 - [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
-- [[client()_19]] - code - gateway/tests/test_version_routes.py
-- [[fixture_134]] - code
+- [[client()_20]] - code - gateway/tests/test_version_routes.py
+- [[fixture_136]] - code
 - [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
 - [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
 
@@ -38,9 +38,9 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_app]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_version_routes.py]]
-- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
 - [[test_version_routes.py]] - degree 7, connects to 3 communities
-- [[fixture_134]] - degree 3, connects to 1 community
+- [[fixture_136]] - degree 3, connects to 1 community

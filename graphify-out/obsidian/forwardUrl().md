@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[background.js]] - `contains` [EXTRACTED]
 - [[loadConfig()]] - `calls` [EXTRACTED]
-- [[notify()_2]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 - [[reportResult()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/backgroundjs

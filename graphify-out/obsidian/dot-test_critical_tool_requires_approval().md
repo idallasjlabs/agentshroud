@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "MCPProxy"
+community: "TestMCPProxyIntegration"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/TestMCPProxyIntegration
 ---
 
 # .test_critical_tool_requires_approval()
@@ -16,4 +16,4 @@ tags:
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
 - [[asyncio_48]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/TestMCPProxyIntegration

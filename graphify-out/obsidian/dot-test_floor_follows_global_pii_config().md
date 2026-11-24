@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_profiles.py"
 type: "code"
-community: "test_edge_profiles.py"
+community: "_write"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_profilespy
+  - community/_write
 ---
 
 # .test_floor_follows_global_pii_config()
@@ -15,4 +15,4 @@ tags:
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[TestDlpFloor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_profilespy
+#graphify/code #graphify/EXTRACTED #community/_write

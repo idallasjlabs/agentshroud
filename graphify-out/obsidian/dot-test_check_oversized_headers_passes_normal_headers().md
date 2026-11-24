@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "TestMetadataGuard"
+community: "MetadataGuard"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/MetadataGuard
 ---
 
 # .test_check_oversized_headers_passes_normal_headers()
@@ -15,4 +15,4 @@ tags:
 - [[Test that normal-sized headers pass.]] - `rationale_for` [EXTRACTED]
 - [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

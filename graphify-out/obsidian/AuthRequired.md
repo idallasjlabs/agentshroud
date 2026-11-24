@@ -1,20 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/models.py"
+community: "test_dashboard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/test_dashboardpy
 ---
 
 # AuthRequired
 
 ## Connections
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[dashboard_stats()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

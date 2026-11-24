@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Reject JWTs with alg=none (classic attack).]] - `rationale_for` [EXTRACTED]
-- [[TestAuth_1]] - `method` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuth

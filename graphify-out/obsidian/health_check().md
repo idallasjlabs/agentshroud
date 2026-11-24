@@ -1,20 +1,19 @@
 ---
-source_file: "chatbot/main.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "code"
-community: "health_check"
-location: "L166"
+community: "StatusResponse"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/health_check
+  - community/StatusResponse
 ---
 
 # health_check()
 
 ## Connections
-- [[Health check endpoint for Docker. Reports degraded status when the OpenAI…]] - `rationale_for` [EXTRACTED]
-- [[TestHealthCheck]] - `calls` [EXTRACTED]
-- [[chatbotmain.py]] - `contains` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[Minimal health check endpoint — no authentication required. Returns only basic…]] - `rationale_for` [EXTRACTED]
+- [[get_2]] - `references` [EXTRACTED]
+- [[health.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/health_check
+#graphify/code #graphify/EXTRACTED #community/StatusResponse

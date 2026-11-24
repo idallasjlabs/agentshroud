@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "KeyVaultConfig"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/KeyVaultConfig
 ---
 
 # KeyVaultConfig
@@ -19,7 +19,7 @@ tags:
 - [[TestCryptography]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection]] - `uses` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `uses` [INFERRED]
-- [[config()]] - `uses` [INFERRED]
+- [[config()_3]] - `uses` [INFERRED]
 - [[key_vault.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig

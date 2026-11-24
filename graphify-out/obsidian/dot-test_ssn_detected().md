@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # .test_ssn_detected()
@@ -15,4 +15,4 @@ tags:
 - [[PIIScanner]] - `calls` [EXTRACTED]
 - [[TestPIIScanning]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

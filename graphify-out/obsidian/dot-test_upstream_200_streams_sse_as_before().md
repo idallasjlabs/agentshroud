@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "TestStreamingProxyStatusPropagation"
+community: "StreamHead"
 location: "L844"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStreamingProxyStatusPropagation
+  - community/StreamHead
 ---
 
 # .test_upstream_200_streams_sse_as_before()
@@ -19,4 +19,4 @@ tags:
 - [[TestStreamingProxyStatusPropagation]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStreamingProxyStatusPropagation
+#graphify/code #graphify/EXTRACTED #community/StreamHead

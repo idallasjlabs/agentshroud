@@ -1,14 +1,14 @@
 ---
 type: community
-members: 35
+members: 34
 ---
 
 # MCPAuditTrail
 
-**Members:** 35 nodes
+**Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_60]] - code - gateway/proxy/mcp_audit.py
+- [[dot-__init__()_65]] - code - gateway/proxy/mcp_audit.py
 - [[dot-__len__()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-_compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-entries()]] - code - gateway/proxy/mcp_audit.py
@@ -30,7 +30,7 @@ members: 35
 - [[dot-total_appended()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-verify_chain()]] - code - gateway/proxy/mcp_audit.py
 - [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Any_22]] - code
+- [[Any_27]] - code
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
 - [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
 - [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
@@ -42,7 +42,6 @@ members: 35
 - [[Record the start time of a tool call for duration tracking.]] - rationale - gateway/proxy/mcp_audit.py
 - [[TestAuditTrailBounded]] - code - gateway/tests/test_mcp_proxy.py
 - [[Verify integrity of the retained MCP audit hash-chain window. Anchors at the…]] - rationale - gateway/proxy/mcp_audit.py
-- [[mcp_audit.py_2]] - code - gateway/proxy/mcp_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,14 +51,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 12 edges to [[_COMMUNITY_test_mcp_proxy.py]]
 - 3 edges to [[_COMMUNITY_MCPToolCall]]
-- 3 edges to [[_COMMUNITY_test_mcp_proxy_coverage.py]]
-- 2 edges to [[_COMMUNITY_MCPProxy]]
-- 2 edges to [[_COMMUNITY_mcp_proxy.py]]
+- 1 edge to [[_COMMUNITY_make_proxy]]
 
 ## Top bridge nodes
-- [[MCPAuditTrail]] - degree 36, connects to 5 communities
-- [[mcp_audit.py_2]] - degree 6, connects to 3 communities
+- [[MCPAuditTrail]] - degree 36, connects to 3 communities
 - [[MCPAuditEntry]] - degree 11, connects to 1 community
 - [[TestAuditTrailBounded]] - degree 8, connects to 1 community

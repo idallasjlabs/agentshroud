@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "PIIHit"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/PIIHit
 ---
 
 # .from_confidence()
@@ -16,4 +16,4 @@ tags:
 - [[dot-_detect_regex()]] - `calls` [EXTRACTED]
 - [[PIIHitSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/PIIHit

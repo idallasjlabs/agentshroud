@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "WebProxy"
-location: "L111"
+community: "ServiceManager"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy]] - `method` [EXTRACTED]
-- [[WebProxy]] - `references` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[_FakeResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

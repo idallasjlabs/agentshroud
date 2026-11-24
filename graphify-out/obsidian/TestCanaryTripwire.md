@@ -12,7 +12,7 @@ tags:
 # TestCanaryTripwire
 
 ## Connections
-- [[dot-setup_method()_18]] - `method` [EXTRACTED]
+- [[dot-setup_method()_17]] - `method` [EXTRACTED]
 - [[dot-test_api_key_canary()]] - `method` [EXTRACTED]
 - [[dot-test_base64_canary()]] - `method` [EXTRACTED]
 - [[dot-test_case_insensitive()]] - `method` [EXTRACTED]

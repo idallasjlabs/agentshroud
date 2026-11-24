@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "._s"
 location: "L464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_s
 ---
 
 # .test_empty_string_returns_empty_list()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_s()]] - `calls` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_s

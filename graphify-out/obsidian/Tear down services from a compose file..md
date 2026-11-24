@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/runtime/engine.py"
 type: "rationale"
-community: "AppleContainerEngine"
+community: "ContainerEngine"
 location: "L152"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/ContainerEngine
 ---
 
 # Tear down services from a compose file.
 
 ## Connections
-- [[dot-compose_down()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-compose_down()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/rationale #graphify/EXTRACTED #community/ContainerEngine

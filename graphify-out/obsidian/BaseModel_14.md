@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "DraftEntry"
+community: "chatbot/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/chatbot/mainpy
 ---
 
 # BaseModel
 
 ## Connections
-- [[Citation]] - `inherits` [EXTRACTED]
-- [[CompetitiveIntelReport]] - `inherits` [EXTRACTED]
-- [[CompetitorEntry]] - `inherits` [EXTRACTED]
+- [[ChatRequest]] - `inherits` [EXTRACTED]
+- [[ChatResponse]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

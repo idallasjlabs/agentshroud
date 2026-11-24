@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[Agent registry should be importable.]] - `rationale_for` [EXTRACTED]
-- [[TestAuth_1]] - `method` [EXTRACTED]
+- [[TestAuth]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuth

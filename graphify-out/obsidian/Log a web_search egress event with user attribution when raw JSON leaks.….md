@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "ToolResultInjectionScanner"
+community: "._filter_outbound"
 location: "L4006"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/_filter_outbound
 ---
 
 # Log a web_search egress event with user attribution when raw JSON leaks.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_trigger_web_search_log()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/rationale #graphify/EXTRACTED #community/_filter_outbound

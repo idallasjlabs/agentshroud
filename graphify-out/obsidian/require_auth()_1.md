@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTPAuthorizationCredentials_1]] - `references` [EXTRACTED]
 - [[Require valid Bearer token for chat endpoints. When CHATBOT_AUTH_TOKEN is not…]] - `rationale_for` [EXTRACTED]
-- [[TestAuth]] - `calls` [EXTRACTED]
+- [[TestAuth_1]] - `calls` [EXTRACTED]
 - [[_get_auth_token()]] - `calls` [EXTRACTED]
 - [[chat()]] - `calls` [EXTRACTED]
 - [[chatbotmain.py]] - `contains` [EXTRACTED]

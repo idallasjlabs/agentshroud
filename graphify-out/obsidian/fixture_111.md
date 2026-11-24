@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AlertDispatcher"
+community: "test_edge_e2e_sdk.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_edge_e2e_sdkpy
 ---
 
 # fixture
 
 ## Connections
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[svc()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

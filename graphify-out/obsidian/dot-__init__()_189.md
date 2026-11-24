@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "fastapi.md"
-location: "L37"
+community: "DNSForwarderProtocol"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/DNSForwarderProtocol
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args max_requests Maximum requests allowed in the time window window_seconds…]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "make_event"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/make_event
 ---
 
 # .get_recent()
 
 ## Connections
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
 - [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/make_event

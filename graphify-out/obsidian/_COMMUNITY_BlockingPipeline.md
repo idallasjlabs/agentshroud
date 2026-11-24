@@ -8,9 +8,9 @@ members: 21
 **Members:** 21 nodes
 
 ## Members
-- [[dot-process_inbound()_5]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-process_inbound()_6]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-process_inbound()_7]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-process_inbound()_8]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_clean_message_passes_through()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_encoding_detected_on_getUpdates()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_inbound_text_normalized_before_pipeline()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -38,15 +38,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 18 edges to [[_COMMUNITY_FakeRBAC]]
-- 6 edges to [[_COMMUNITY__wrap_response]]
-- 6 edges to [[_COMMUNITY_asyncio_7]]
-- 3 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 2 edges to [[_COMMUNITY__make_multipart_body]]
-- 1 edge to [[_COMMUNITY__make_sanitizer]]
+- 19 edges to [[_COMMUNITY__wrap_response]]
+- 6 edges to [[_COMMUNITY_asyncio_1]]
+- 5 edges to [[_COMMUNITY__make_update]]
+- 3 edges to [[_COMMUNITY_dot-_make_proxy]]
+- 1 edge to [[_COMMUNITY__make_multipart_body]]
+- 1 edge to [[_COMMUNITY_dot-test_form_outbound_pipeline_block_non_owner]]
+- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
 
 ## Top bridge nodes
-- [[BlockingPipeline]] - degree 10, connects to 3 communities
+- [[BlockingPipeline]] - degree 10, connects to 4 communities
 - [[dot-test_clean_message_passes_through()]] - degree 7, connects to 3 communities
 - [[dot-test_encoding_detected_on_getUpdates()]] - degree 7, connects to 3 communities
 - [[dot-test_inbound_text_normalized_before_pipeline()]] - degree 7, connects to 3 communities

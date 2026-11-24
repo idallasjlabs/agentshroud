@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "TestPermissionLevel"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/TestPermissionLevel
 ---
 
 # .test_level_values()
@@ -15,4 +15,4 @@ tags:
 - [[dot-level_value()]] - `calls` [EXTRACTED]
 - [[TestPermissionLevel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/TestPermissionLevel

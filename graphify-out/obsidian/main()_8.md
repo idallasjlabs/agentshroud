@@ -1,18 +1,18 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "scripts/check_benchmark_regression.py"
 type: "code"
-community: "render_md_email.py"
-location: "L250"
+community: "check_benchmark_regression.py"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/render_md_emailpy
+  - community/check_benchmark_regressionpy
 ---
 
 # main()
 
 ## Connections
-- [[render()]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[check()]] - `calls` [EXTRACTED]
+- [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/render_md_emailpy
+#graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

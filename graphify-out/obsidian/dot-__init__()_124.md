@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_jwt.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L31"
+community: "test_e2e_proxy.py"
+location: "L412"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_e2e_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Clock]] - `method` [EXTRACTED]
+- [[_StubForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

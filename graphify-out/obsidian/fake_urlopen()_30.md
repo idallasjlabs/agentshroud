@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L4679"
+community: ".test_owner_revoke_command_persists_pause_to_disk"
+location: "L703"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_owner_revoke_command_persists_pause_to_disk
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_model_status_command_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_owner_revoke_command_persists_pause_to_disk()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_owner_revoke_command_persists_pause_to_disk

@@ -12,7 +12,7 @@ members: 9
 - [[Content Requirements_3]] - document - .github/agents/i-pr.agent.md
 - [[Header_3]] - document - .github/agents/i-pr.agent.md
 - [[Objective_3]] - document - .github/agents/i-pr.agent.md
-- [[Role_86]] - document - .github/agents/i-pr.agent.md
+- [[Role_87]] - document - .github/agents/i-pr.agent.md
 - [[Safety_4]] - document - .github/agents/i-pr.agent.md
 - [[Skill Pull Request (PR) Generator_3]] - document - .github/agents/i-pr.agent.md
 - [[Technical Detail_3]] - document - .github/agents/i-pr.agent.md

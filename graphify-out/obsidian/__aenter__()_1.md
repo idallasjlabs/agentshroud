@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L256"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # __aenter__()
 
 ## Connections
-- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
+- [[dot-test_get_wss_url_raises_on_api_error()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

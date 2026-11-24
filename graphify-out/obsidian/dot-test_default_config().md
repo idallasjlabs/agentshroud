@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_path_isolation.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "PathRewriteResult"
-location: "L23"
+community: "test_key_vault.py"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathRewriteResult
+  - community/test_key_vaultpy
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[PathIsolationConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
-- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
+- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathRewriteResult
+#graphify/code #graphify/EXTRACTED #community/test_key_vaultpy

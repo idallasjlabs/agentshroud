@@ -12,7 +12,7 @@ members: 7
 - [[GitHub Actions Best Practices_5]] - document - .github/agents/i-cicd.agent.md
 - [[Quality Gates  (execution order)_5]] - document - .github/agents/i-cicd.agent.md
 - [[Review Flags  (block the merge)_5]] - document - .github/agents/i-cicd.agent.md
-- [[Role_121]] - document - .github/agents/i-cicd.agent.md
+- [[Role_123]] - document - .github/agents/i-cicd.agent.md
 - [[Skill CICD Pipeline Advisor (CICD)_5]] - document - .github/agents/i-cicd.agent.md
 - [[i-cicd.agent]] - document - .github/agents/i-cicd.agent.md
 

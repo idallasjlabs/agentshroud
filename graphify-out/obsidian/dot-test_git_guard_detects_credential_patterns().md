@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestExfiltrationDetection"
+community: "EnvironmentGuard"
 location: "L612"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/EnvironmentGuard
 ---
 
 # .test_git_guard_detects_credential_patterns()
@@ -16,4 +16,4 @@ tags:
 - [[GitGuard]] - `calls` [INFERRED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

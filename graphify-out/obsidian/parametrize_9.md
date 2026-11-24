@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_forward_stream.py"
+community: "test_hermes_model_resolver.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/test_hermes_model_resolverpy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - `references` [EXTRACTED]
+- [[test_provider_for_model()]] - `references` [EXTRACTED]
+- [[test_strip_provider_prefix()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

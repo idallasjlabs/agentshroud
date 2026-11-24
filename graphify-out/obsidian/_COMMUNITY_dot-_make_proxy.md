@@ -1,11 +1,11 @@
 ---
 type: community
-members: 162
+members: 158
 ---
 
 # ._make_proxy
 
-**Members:** 162 nodes
+**Members:** 158 nodes
 
 ## Members
 - [[dot-_make_proxy()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -16,8 +16,6 @@ members: 162
 - [[dot-test_collab_gets_escalation_notice_at_5_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_gets_suspension_notice_at_10_blocks()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collab_threshold_notices_fire_only_once_per_level()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_always_gets_response_for_generic_message()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_blocked_command_always_gets_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_cooldown_suppresses_second_ack()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_dm_hello_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -43,7 +41,6 @@ members: 162
 - [[dot-test_notify_user_blocked_uses_collaborator_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_openclaw_mention_does_not_affect_hermes_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_owner_unaffected_by_collaborator_rate_limiter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_partial_phrase_does_not_trigger_probe()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_predicate_hello_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_predicate_hi_matches()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -62,7 +59,6 @@ members: 162
 - [[dot-test_suspended_drop_notice_respects_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_suspended_user_receives_drop_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_two_bots_same_group_independent_eligibility()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_unlock_calls_reset_on_lockdown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_unlock_clears_manual_pause_without_prior_lockdown_state()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[dot-test_unlock_clears_suspended_drop_cooldown()]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -87,7 +83,6 @@ members: 162
 - [[@agentshroud_hermes_bot hello' normalises to 'hello' → matches.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[@agentshroud_hermes_bot mention sets hermes eligibility, not openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[@agentshroud_hermes_bot message processed as openclaw yields ineligible for…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[A blocked slash command must always produce a protected notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[A dropped message past the cooldown window must produce a new notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[A stranger (not owner, not collaborator) typing 'hello' in a group still gets…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[A user manually revoke'd (paused) with no ProgressiveLockdown block history…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -97,7 +92,7 @@ members: 162
 - [[Collaborator must receive suspension notice at block 10.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Collaborator must receive warning text when they reach 3 security blocks.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[DMs don't interact with the group eligibility map.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Even a generic message triggers _send_collaborator_safe_info_response…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Fail any real urlopen fast unless a test installs its own fake. Blocked-message…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Group messages with @mention are forwarded and mark chat as response-eligible.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Group messages without @mention are forwarded (for context) but mark chat as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Group presence probe bare trigger phrases make each bot reply with a short…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -105,25 +100,29 @@ members: 162
 - [[Integration tests for group at-mention filtering. The bot reads ALL group…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[On construction, _runtime_revoked_collaborators must be backed by the persisted…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Owner block notice should retry with owner-specific fallback when first send…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Owner messages are never rate-limited by the collaborator limiter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Per-bot eligibility — each bot in a shared group tracks mention state…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Second 'hello' within the cooldown window must NOT send a second ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Second dropped message within cooldown window must NOT produce another notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[Stub the fire-and-forget owner activity mirror. The mirror runs via…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Suspended user's dropped message must trigger a 'session suspended' notice.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestGroupPresenceProbe]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestPerBotGroupMentionFilter]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[TestProgressiveLockdownUX]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[Tests for TelegramAPIProxy inbound security pipeline integration. Proves that…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Tests for lockdown UX unlock fix, collaborator notifications, locked,…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[The probe is group-only; 'hello' in a DM chat must not fire the ack.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Threshold notices must not repeat on subsequent blocks at the same level.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Two bots in the same group track eligibility independently.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown bot_id falls back to _bot_username.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown users must always receive either a pending notice or a rate-limit…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[When bot_username is unset the filter is bypassed entirely.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[When group_mention_only is disabled, eligibility map is not populated.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[_make_group_update()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_no_owner_mirror()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_no_real_telegram_network()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[_noop()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
+- [[_refuse()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[_username_for_bot returns the correct @username for each bot_id.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_notice()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -137,8 +136,6 @@ members: 162
 - [[fake_notice()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_notice()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_notice()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_owner_notice()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -160,9 +157,7 @@ members: 162
 - [[fake_send()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_22]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_23]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_24]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fixture_37]] - code
 - [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -170,6 +165,7 @@ members: 162
 - [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[noop()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[noop_owner_notice()]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[test_telegram_proxy_inbound.py]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -179,17 +175,26 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 49 edges to [[_COMMUNITY_asyncio_7]]
-- 43 edges to [[_COMMUNITY_FakeRBAC]]
-- 37 edges to [[_COMMUNITY__wrap_response]]
-- 11 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 9 edges to [[_COMMUNITY_test_telegram_proxy_inbound.py]]
-- 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_fake_owner_notice]]
+- 50 edges to [[_COMMUNITY__wrap_response]]
+- 48 edges to [[_COMMUNITY_asyncio_1]]
+- 19 edges to [[_COMMUNITY__make_update]]
+- 9 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 4 edges to [[_COMMUNITY_AsyncMock]]
+- 4 edges to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice]]
+- 3 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
+- 3 edges to [[_COMMUNITY_BlockingPipeline]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_dot-_bot_is_mentioned]]
+- 1 edge to [[_COMMUNITY_dot-_normalize_command_token]]
+- 1 edge to [[_COMMUNITY_dot-_is_group_message]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[dot-test_unknown_user_always_gets_pending_or_rate_limit_notice()]] - degree 11, connects to 5 communities
-- [[dot-test_owner_unaffected_by_collaborator_rate_limiter()]] - degree 9, connects to 4 communities
-- [[dot-test_collaborator_always_gets_response_for_generic_message()]] - degree 9, connects to 4 communities
-- [[dot-test_collaborator_blocked_command_always_gets_notice()]] - degree 9, connects to 4 communities
+- [[test_telegram_proxy_inbound.py]] - degree 32, connects to 16 communities
 - [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - degree 9, connects to 4 communities
+- [[dot-test_suspended_drop_notice_respects_cooldown()]] - degree 9, connects to 4 communities
+- [[dot-test_suspended_user_receives_drop_notice()]] - degree 9, connects to 4 communities
+- [[dot-test_dm_hello_does_not_trigger_probe()]] - degree 8, connects to 3 communities

@@ -12,7 +12,7 @@ tags:
 # set_user_role()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Request_6]] - `references` [EXTRACTED]
 - [[Role]] - `uses` [INFERRED]
 - [[Set a user's role (owner only).]] - `rationale_for` [EXTRACTED]

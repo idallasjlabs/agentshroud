@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "test_security_toolchain.py"
+community: "generate_report"
 location: "L736"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_toolchainpy
+  - community/generate_report
 ---
 
 # .test_one_critical()
@@ -15,4 +15,4 @@ tags:
 - [[TestHealthScoring]] - `method` [EXTRACTED]
 - [[calculate_tool_score()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy
+#graphify/code #graphify/EXTRACTED #community/generate_report

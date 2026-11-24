@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/ws-e-audit-v1.2.md"
 type: "document"
-community: "WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)"
+community: "Part 2 — Red-Team Attack Run (SCRUM-73)"
 location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+  - community/Part_2__Red-Team_Attack_Run_SCRUM-73
 ---
 
 # WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)
@@ -27,4 +27,4 @@ tags:
 - [[rbac.py (5-level RBAC hierarchy)]] - `references` [EXTRACTED]
 - [[ws-e-audit-v1.2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes
+#graphify/document #graphify/EXTRACTED #community/Part_2__Red-Team_Attack_Run_SCRUM-73

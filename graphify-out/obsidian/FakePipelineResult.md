@@ -12,9 +12,9 @@ tags:
 # FakePipelineResult
 
 ## Connections
-- [[dot-process_inbound()_5]] - `calls` [EXTRACTED]
 - [[dot-process_inbound()_6]] - `calls` [EXTRACTED]
 - [[dot-process_inbound()_7]] - `calls` [EXTRACTED]
+- [[dot-process_inbound()_8]] - `calls` [EXTRACTED]
 - [[process_inbound()_1]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 

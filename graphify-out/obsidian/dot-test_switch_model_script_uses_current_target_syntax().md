@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_switch_model_script_uses_current_target_syntax"
 location: "L583"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_switch_model_script_uses_current_target_syntax
 ---
 
 # .test_switch_model_script_uses_current_target_syntax()
@@ -15,4 +15,4 @@ tags:
 - [[Operator guidance should use valid switch_model target syntax (no legacy cloud…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_switch_model_script_uses_current_target_syntax

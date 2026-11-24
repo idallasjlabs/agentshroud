@@ -34,7 +34,7 @@ members: 34
 - [[Quality Gates  (execution order)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Related Skills_22]] - document - docker/config/hermes/skills/i-cicd/README.md
 - [[Review Flags  (block the merge)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
-- [[Role_120]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
+- [[Role_122]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[Skill CICD Pipeline Advisor (CICD)_4]] - document - docker/config/hermes/skills/i-cicd/SKILL.md
 - [[The 400-Line Rule]] - concept - docker/config/hermes/skills/i-cr/SKILL.md
 - [[Usage_29]] - document - docker/config/hermes/skills/i-cicd/README.md

@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/tests/test_middleware_coverage.py"
+source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestSetConfig"
-location: "L899"
+community: "TestAgentsRegistry"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSetConfig
+  - community/TestAgentsRegistry
 ---
 
 # _bot()
 
 ## Connections
-- [[dot-test_default_bot_and_sanitizer_configured()]] - `calls` [EXTRACTED]
-- [[dot-test_non_default_bot_fallback()]] - `calls` [EXTRACTED]
-- [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
+- [[dot-test_derived_hosted_local()]] - `calls` [EXTRACTED]
+- [[dot-test_edge_disabled_local_only_derived()]] - `calls` [EXTRACTED]
+- [[dot-test_explicit_mode_filters_rows()]] - `calls` [EXTRACTED]
+- [[dot-test_health_timeout_reads_unknown()]] - `calls` [EXTRACTED]
+- [[dot-test_local_health_from_service_manager()]] - `calls` [EXTRACTED]
+- [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSetConfig
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

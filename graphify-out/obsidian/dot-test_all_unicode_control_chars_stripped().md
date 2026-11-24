@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "TestMetadataGuard"
+community: "MetadataGuard"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/MetadataGuard
 ---
 
 # .test_all_unicode_control_chars_stripped()
@@ -15,4 +15,4 @@ tags:
 - [[Test that all specified unicode control characters are stripped.]] - `rationale_for` [EXTRACTED]
 - [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

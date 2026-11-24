@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "lifespan.py"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/lifespanpy
 ---
 
 # Application state container for the AgentShroud Gateway
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[state.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

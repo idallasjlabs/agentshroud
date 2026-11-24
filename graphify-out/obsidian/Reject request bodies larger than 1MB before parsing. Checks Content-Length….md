@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "ingest_api/main.py"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/ingest_api/mainpy
 ---
 
 # Reject request bodies larger than 1MB before parsing. Checks Content-Length…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[limit_request_body()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 25
+members: 19
 ---
 
 # ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)
 
-**Members:** 25 nodes
+**Members:** 19 nodes
 
 ## Members
 - [[1. Hardware prep]] - document - firmware/voice-terminal/SETUP.md
@@ -21,12 +21,6 @@ members: 25
 - [[3. Tailscale changes]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 - [[4. iPhone & iPad (just hotspots — they do NOT tunnel the box)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 - [[5. Hardware prep]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6. Firmware]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.1 Toolchain + board support]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.2 Roaming WiFi (join first reachable, skip captive portals)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.3 Join the tailnet (MicroLink)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.4 Connect to the Voice Gateway]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
-- [[6.5 Audio + display state machine]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 - [[7. Bring-up order (one cause per failure)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 - [[8. Gotchas (incl. AgentShroud-specific)]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
 - [[9. hey buddy wake word — honest status]] - document - docs/planning/v1.3/esp32-s3-hermes-voice-terminal.md
@@ -43,7 +37,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_ESP32-S3-BOX-3 Voice Terminal — Manual Setup Runbook]]
+- 1 edge to [[_COMMUNITY_6. Firmware]]
 
 ## Top bridge nodes
-- [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - degree 15, connects to 1 community
+- [[ESP32-S3-BOX-3 Voice Terminal for Hermes (behind AgentShroud)]] - degree 15, connects to 2 communities
 - [[1. Hardware prep]] - degree 2, connects to 1 community

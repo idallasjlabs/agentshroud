@@ -1,14 +1,14 @@
 ---
 type: community
-members: 62
+members: 68
 ---
 
 # GroupWorkspaceManager
 
-**Members:** 62 nodes
+**Members:** 68 nodes
 
 ## Members
-- [[dot-__init__()_30]] - code - gateway/security/group_workspace.py
+- [[dot-__init__()_33]] - code - gateway/security/group_workspace.py
 - [[dot-_require_memory()]] - code - gateway/security/group_workspace.py
 - [[dot-append_dm_memory()]] - code - gateway/security/group_workspace.py
 - [[dot-append_group_memory()]] - code - gateway/security/group_workspace.py
@@ -20,9 +20,14 @@ members: 62
 - [[dot-resolve_workspace()]] - code - gateway/security/group_workspace.py
 - [[dot-test_disabled_manager_denies_group_resolve()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_disabled_manager_still_allows_dm()]] - code - gateway/tests/test_group_workspace_manager.py
+- [[dot-test_dm_context_needs_no_membership()]] - code - gateway/tests/test_group_workspace_manager.py
+- [[dot-test_dm_context_resolves_to_user_namespace()]] - code - gateway/tests/test_group_workspace_manager.py
+- [[dot-test_dm_workspace_id_differs_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
+- [[dot-test_dm_write_invisible_from_group()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_enabled_default_true()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_group_a_write_invisible_from_group_b()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_group_keyed_by_raw_chat_id()]] - code - gateway/tests/test_group_workspace_manager.py
+- [[dot-test_group_write_invisible_from_dm()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_member_can_access_group_workspace()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_member_of_a_cannot_read_group_b_memory()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[dot-test_member_of_a_denied_group_b()]] - code - gateway/tests/test_group_workspace_manager.py
@@ -59,16 +64,17 @@ members: 62
 - [[TestConfigGate]] - code - gateway/tests/test_group_workspace_manager.py
 - [[TestCrossGroupIsolation]] - code - gateway/tests/test_group_workspace_manager.py
 - [[TestDefensiveGuards]] - code - gateway/tests/test_group_workspace_manager.py
+- [[TestDmIsolation]] - code - gateway/tests/test_group_workspace_manager.py
 - [[TestMembersShareGroupWorkspace]] - code - gateway/tests/test_group_workspace_manager.py
 - [[TestNonMemberDenied]] - code - gateway/tests/test_group_workspace_manager.py
 - [[WorkspaceContext]] - code - gateway/security/group_workspace.py
-- [[fixture_22]] - code
+- [[fixture_23]] - code
 - [[group_workspace.py]] - code - gateway/security/group_workspace.py
 - [[manager()_1]] - code - gateway/tests/test_group_workspace_manager.py
-- [[rbac()_2]] - code - gateway/tests/test_group_workspace_manager.py
+- [[rbac()_1]] - code - gateway/tests/test_group_workspace_manager.py
 - [[session_manager()]] - code - gateway/tests/test_group_workspace_manager.py
 - [[shared_memory()]] - code - gateway/tests/test_group_workspace_manager.py
-- [[teams()_2]] - code - gateway/tests/test_group_workspace_manager.py
+- [[teams()_1]] - code - gateway/tests/test_group_workspace_manager.py
 - [[test_group_workspace_manager.py]] - code - gateway/tests/test_group_workspace_manager.py
 
 ## Live Query (requires Dataview plugin)
@@ -79,19 +85,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 5 edges to [[_COMMUNITY_socrouter.py]]
 - 5 edges to [[_COMMUNITY_SharedMemoryManager]]
 - 5 edges to [[_COMMUNITY_TeamsConfig]]
 - 5 edges to [[_COMMUNITY_UserSessionManager]]
 - 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 3 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 3 edges to [[_COMMUNITY_middleware.py]]
 - 2 edges to [[_COMMUNITY_TestInboundChokepointWiring]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_TestDmIsolation]]
 
 ## Top bridge nodes
-- [[test_group_workspace_manager.py]] - degree 25, connects to 9 communities
-- [[group_workspace.py]] - degree 11, connects to 6 communities
+- [[test_group_workspace_manager.py]] - degree 25, connects to 7 communities
+- [[group_workspace.py]] - degree 11, connects to 5 communities
 - [[GroupWorkspaceManager]] - degree 30, connects to 3 communities
 - [[TestDefensiveGuards]] - degree 7, connects to 1 community
-- [[fixture_22]] - degree 6, connects to 1 community
+- [[fixture_23]] - degree 6, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "rationale"
-community: "MCPProxy"
+community: "test_mcp_proxy.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/test_mcp_proxypy
 ---
 
 # Top-level MCP proxy configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MCPProxyConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPProxy
+#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxypy

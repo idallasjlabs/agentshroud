@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "ContentThreat"
-location: "L50"
+community: "test_differential_pii_detector.py"
+location: "L279"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContentThreat
+  - community/test_differential_pii_detectorpy
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[ContentThreat]] - `method` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContentThreat
+#graphify/code #graphify/EXTRACTED #community/test_differential_pii_detectorpy

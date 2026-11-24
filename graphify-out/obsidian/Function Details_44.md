@@ -17,6 +17,6 @@ tags:
 - [[ConsentFramework.get_whitelist()  get_blacklist()]] - `contains` [EXTRACTED]
 - [[ConsentFramework.validate_config(config)]] - `contains` [EXTRACTED]
 - [[ConsentFramework.validate_configs(configs)]] - `contains` [EXTRACTED]
-- [[consent_framework.py_1]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "._bot_is_mentioned"
 location: "L680"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_bot_is_mentioned
 ---
 
 # Return True if the bot is @mentioned or a bot_command targets this bot. Checks…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_bot_is_mentioned()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/_bot_is_mentioned

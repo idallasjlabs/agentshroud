@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[default_out_dir()]] - `contains` [EXTRACTED]
 - [[get_model_defaults()]] - `contains` [EXTRACTED]
-- [[main()_20]] - `contains` [EXTRACTED]
+- [[main()_21]] - `contains` [EXTRACTED]
 - [[pick_prompts()]] - `contains` [EXTRACTED]
 - [[request_images()]] - `contains` [EXTRACTED]
 - [[slugify()]] - `contains` [EXTRACTED]

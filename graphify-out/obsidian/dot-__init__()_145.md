@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "DockerEngine"
-location: "L24"
+community: "ContributorManager"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/ContributorManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[ContributorManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/ContributorManager

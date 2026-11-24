@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/session_manager.py"
+source_file: "gateway/skills/manifest.py"
 type: "code"
-community: ".get_or_create_session"
-location: "L62"
+community: "ManifestEntry"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/ManifestEntry
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_70]] - `references` [EXTRACTED]
-- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
-- [[UserSession]] - `method` [EXTRACTED]
+- [[ManifestEntry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_or_create_session
+#graphify/code #graphify/EXTRACTED #community/ManifestEntry

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # .test_no_scorer_leaves_result_unscored()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestContextIntegrityInPipeline]] - `method` [EXTRACTED]
 - [[_make_pipeline()_1]] - `calls` [EXTRACTED]
-- [[asyncio_37]] - `references` [EXTRACTED]
+- [[asyncio_34]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

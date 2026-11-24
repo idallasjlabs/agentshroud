@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-from_dict()_11]] - `calls` [EXTRACTED]
-- [[Enum_40]] - `inherits` [EXTRACTED]
+- [[Enum_41]] - `inherits` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
 - [[The three terminal policy outcomes for an A2A request.]] - `rationale_for` [EXTRACTED]
 - [[a2a_policy.py]] - `contains` [EXTRACTED]
-- [[str_23]] - `inherits` [EXTRACTED]
+- [[str_24]] - `inherits` [EXTRACTED]
 - [[test_a2a_policy.py]] - `imports` [EXTRACTED]
 - [[test_a2a_policy_default_failclosed.py]] - `imports` [EXTRACTED]
 - [[test_allowlisted_peer_low_risk_method_is_allowed()]] - `uses` [INFERRED]

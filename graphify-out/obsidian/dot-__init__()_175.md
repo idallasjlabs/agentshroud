@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "EgressFilter"
-location: "L91"
+community: "ws_soc_endpoint"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ws_soc_endpoint
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[EgressFilterConfig]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint

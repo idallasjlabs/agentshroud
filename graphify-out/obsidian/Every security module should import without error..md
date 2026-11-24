@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "TestSupplyChain"
 location: "L1103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestSupplyChain
 ---
 
 # Every security module should import without error.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_all_security_modules_importable()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/TestSupplyChain

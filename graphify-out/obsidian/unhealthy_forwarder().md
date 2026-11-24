@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "test_e2e_proxy.py"
+community: "HTTPForwarder"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/HTTPForwarder
 ---
 
 # unhealthy_forwarder()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ForwarderConfig]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `uses` [INFERRED]
-- [[fixture_84]] - `references` [EXTRACTED]
+- [[fixture_138]] - `references` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/HTTPForwarder

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "SOCWebSocketHandler"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/SOCWebSocketHandler
 ---
 
 # .test_instantiate()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSOCWebSocketHandlerImport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

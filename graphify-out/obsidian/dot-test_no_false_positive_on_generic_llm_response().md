@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "._extract_first_egress_target"
+community: "TestOutboundClassifierHelpers"
 location: "L4680"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_first_egress_target
+  - community/TestOutboundClassifierHelpers
 ---
 
 # .test_no_false_positive_on_generic_llm_response()
@@ -16,4 +16,4 @@ tags:
 - [[Common LLM prose with 'risk', 'tool', 'id' must NOT trigger the matcher.]] - `rationale_for` [EXTRACTED]
 - [[TestInternalBannerMatcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_first_egress_target
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

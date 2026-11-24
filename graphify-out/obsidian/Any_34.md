@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "PodmanEngine"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/GatewayConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
+- [[dot-_append_audit_event()]] - `references` [EXTRACTED]
+- [[dot-broadcast()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

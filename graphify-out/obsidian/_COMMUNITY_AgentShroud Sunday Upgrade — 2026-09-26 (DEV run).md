@@ -30,7 +30,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_sunday-upgrade.sh]]
+- 1 edge to [[_COMMUNITY_upgrade-2026-09-21]]
 
 ## Top bridge nodes
 - [[AgentShroud Sunday Upgrade — 2026-09-26 (DEV run)]] - degree 12, connects to 1 community

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # asyncio
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_set_observatory_mode_endpoint()]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

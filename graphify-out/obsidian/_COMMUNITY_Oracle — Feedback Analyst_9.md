@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Oracle — Feedback Analyst_9]] - document - docker/config/hermes/skills/i-oracle/README.md
-- [[Purpose_127]] - document - docker/config/hermes/skills/i-oracle/README.md
+- [[Purpose_125]] - document - docker/config/hermes/skills/i-oracle/README.md
 - [[Related Skills_57]] - document - docker/config/hermes/skills/i-oracle/README.md
 - [[Usage_67]] - document - docker/config/hermes/skills/i-oracle/README.md
 - [[hermesskillsi-oracleREADME]] - document - docker/config/hermes/skills/i-oracle/README.md

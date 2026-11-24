@@ -16,7 +16,7 @@ tags:
 - [[Retry behavior of AlertDispatcher._send_notification (kaizen fix). Before this…]] - `rationale_for` [EXTRACTED]
 - [[_alert()]] - `contains` [EXTRACTED]
 - [[alert_dispatcher.py]] - `imports_from` [EXTRACTED]
-- [[dispatcher()]] - `contains` [EXTRACTED]
+- [[dispatcher()_1]] - `contains` [EXTRACTED]
 - [[test_all_attempts_fail_logs_warning_not_error()]] - `contains` [EXTRACTED]
 - [[test_backoff_called_between_attempts()]] - `contains` [EXTRACTED]
 - [[test_dispatch_persists_alert_even_if_notification_fails()]] - `contains` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # _run_triage()
 
 ## Connections
-- [[CompletedProcess_4]] - `references` [EXTRACTED]
+- [[CompletedProcess_5]] - `references` [EXTRACTED]
 - [[test_agent_cve_registry.py]] - `contains` [EXTRACTED]
 - [[test_all_agents_flag_exists()]] - `calls` [EXTRACTED]
 - [[test_all_agents_run_reports_untriaged_and_exits_nonzero()]] - `calls` [EXTRACTED]

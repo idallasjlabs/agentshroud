@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestFailsLoudly]] - `method` [EXTRACTED]
-- [[_boom()_19]] - `indirect_call` [INFERRED]
+- [[_boom()_17]] - `indirect_call` [INFERRED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestFailsLoudly

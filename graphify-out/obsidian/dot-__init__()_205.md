@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "ToolChainAnalyzer"
-location: "L183"
+community: "EnvelopeSigner"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/EnvelopeSigner
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
-- [[Any_83]] - `references` [EXTRACTED]
-- [[Initialize the tool chain analyzer. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
-- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
+- [[EnvelopeSigner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

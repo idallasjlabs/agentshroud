@@ -16,7 +16,7 @@ tags:
 - [[TestSSHProxyWriteFileTransport]] - `method` [EXTRACTED]
 - [[The remote command string must not vary with request content — proving it…]] - `rationale_for` [EXTRACTED]
 - [[_b64()]] - `calls` [EXTRACTED]
-- [[asyncio_36]] - `references` [EXTRACTED]
+- [[asyncio_33]] - `references` [EXTRACTED]
 - [[communicate()_1]] - `contains` [EXTRACTED]
 - [[fake_create_subprocess_exec()_2]] - `contains` [EXTRACTED]
 - [[fake_create_subprocess_exec()_3]] - `indirect_call` [INFERRED]

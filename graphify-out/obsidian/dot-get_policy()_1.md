@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "._check_impl"
+community: "EgressFilter"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_check_impl
+  - community/EgressFilter
 ---
 
 # .get_policy()
@@ -17,4 +17,4 @@ tags:
 - [[EgressPolicy]] - `references` [EXTRACTED]
 - [[Get effective policy for an agent.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_check_impl
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

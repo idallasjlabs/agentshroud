@@ -46,8 +46,8 @@ members: 42
 - [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
 - [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
 - [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
-- [[asyncio_39]] - code
-- [[read()_4]] - code - gateway/tests/test_audit_chain.py
+- [[asyncio_36]] - code
+- [[read()_5]] - code - gateway/tests/test_audit_chain.py
 - [[write()]] - code - gateway/tests/test_audit_chain.py
 - [[write_entry()]] - code - gateway/tests/test_audit_chain.py
 
@@ -59,10 +59,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 6 edges to [[_COMMUNITY_GatewayConfig]]
 
 ## Top bridge nodes
-- [[asyncio_39]] - degree 15, connects to 1 community
+- [[asyncio_36]] - degree 15, connects to 1 community
 - [[TestAuditChainIntegrity]] - degree 6, connects to 1 community
 - [[TestTamperDetection]] - degree 6, connects to 1 community
 - [[TestChainExportAndVerification]] - degree 5, connects to 1 community

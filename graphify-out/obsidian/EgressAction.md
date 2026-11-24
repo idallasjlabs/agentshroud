@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "EgressPolicy"
+community: "EgressFilter"
 location: "L30"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EgressPolicy
+  - community/EgressFilter
 ---
 
 # EgressAction
 
 ## Connections
 - [[dot-_record()_2]] - `references` [EXTRACTED]
-- [[Enum_12]] - `inherits` [EXTRACTED]
+- [[Enum_38]] - `inherits` [EXTRACTED]
 - [[HTTPConnectProxy]] - `uses` [INFERRED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]
 - [[TestEgressFilter]] - `uses` [INFERRED]
@@ -32,8 +32,8 @@ tags:
 - [[egress_filter.py_2]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
-- [[run()_1]] - `uses` [INFERRED]
-- [[str_7]] - `inherits` [EXTRACTED]
+- [[run()]] - `uses` [INFERRED]
+- [[str_21]] - `inherits` [EXTRACTED]
 - [[test_connect_denied_by_egress_filter_returns_403()]] - `uses` [INFERRED]
 - [[test_connect_system_bypass_domain_skips_policy_checks()]] - `uses` [INFERRED]
 - [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - `uses` [INFERRED]
@@ -49,4 +49,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EgressPolicy
+#graphify/code #graphify/INFERRED #community/EgressFilter

@@ -11,7 +11,7 @@ members: 9
 - [[Alias for hermes v0.16.0's OpenAI client. POST chatcompletions (no v1…]] - rationale - gateway/tests/test_chat_completions_alias.py
 - [[Regression don't break the existing v1messages path.]] - rationale - gateway/tests/test_chat_completions_alias.py
 - [[client()_7]] - code - gateway/tests/test_chat_completions_alias.py
-- [[fixture_39]] - code
+- [[fixture_42]] - code
 - [[test_chat_completions_alias.py]] - code - gateway/tests/test_chat_completions_alias.py
 - [[test_chat_completions_alias_passes_correct_path_to_proxy()]] - code - gateway/tests/test_chat_completions_alias.py
 - [[test_chat_completions_alias_routes_to_v1_path()]] - code - gateway/tests/test_chat_completions_alias.py

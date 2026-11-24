@@ -38,18 +38,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_scanner_integration.py]]
 - 6 edges to [[_COMMUNITY_scanner_integration.py]]
-- 5 edges to [[_COMMUNITY_Any]]
+- 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_Any_1]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_compute_scorecard]]
 - 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 1 edge to [[_COMMUNITY__score_compliance_auditing]]
 - 1 edge to [[_COMMUNITY_get_sbom]]
-- 1 edge to [[_COMMUNITY_get_wazuh_summary]]
+- 1 edge to [[_COMMUNITY__score_image_integrity]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
 - [[get_trivy_summary()]] - degree 16, connects to 7 communities
+- [[_is_fresh()]] - degree 8, connects to 4 communities
 - [[_load_latest_json()]] - degree 15, connects to 3 communities
-- [[_is_fresh()]] - degree 8, connects to 3 communities
+- [[_score_ai_model_supply_chain()]] - degree 5, connects to 2 communities
 - [[TestLoadLatestJson_1]] - degree 8, connects to 1 community
-- [[_score_ai_model_supply_chain()]] - degree 5, connects to 1 community

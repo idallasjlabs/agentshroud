@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_dashboard_fallback_when_template_missing"
-location: "L2385"
+community: "asyncio"
+location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_fallback_when_template_missing
+  - community/asyncio
 ---
 
 # __init__()
 
 ## Connections
-- [[test_dashboard_fallback_when_template_missing()]] - `contains` [EXTRACTED]
+- [[dot-test_emits_egress_event_to_event_bus()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_fallback_when_template_missing
+#graphify/code #graphify/EXTRACTED #community/asyncio

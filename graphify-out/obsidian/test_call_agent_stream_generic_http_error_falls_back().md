@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_latency_guard.py"
+community: "test_voice_gateway.py"
 location: "L1305"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_latency_guardpy
+  - community/test_voice_gatewaypy
 ---
 
 # test_call_agent_stream_generic_http_error_falls_back()
@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[A connection-level error (not a statustimeout) also falls back to the trouble-…]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[asyncio_50]] - `references` [EXTRACTED]
-- [[mock_stream()_24]] - `contains` [EXTRACTED]
-- [[mock_stream()_8]] - `indirect_call` [INFERRED]
+- [[asyncio_71]] - `references` [EXTRACTED]
+- [[mock_stream()_9]] - `contains` [EXTRACTED]
+- [[mock_stream()_20]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_latency_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

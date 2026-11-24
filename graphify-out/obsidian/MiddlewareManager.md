@@ -12,7 +12,7 @@ tags:
 # MiddlewareManager
 
 ## Connections
-- [[dot-__init__()_112]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `method` [EXTRACTED]
 - [[dot-_analyze_request_for_rbac()]] - `method` [EXTRACTED]
 - [[dot-_check_cross_session_access()]] - `method` [EXTRACTED]
 - [[dot-_check_rbac_permissions()]] - `method` [EXTRACTED]
@@ -115,11 +115,11 @@ tags:
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[list_security_modules()]] - `uses` [INFERRED]
-- [[manager()_2]] - `uses` [INFERRED]
+- [[manager()_3]] - `uses` [INFERRED]
 - [[middleware.py_2]] - `contains` [EXTRACTED]
 - [[middleware_manager()]] - `uses` [INFERRED]
 - [[mm()]] - `uses` [INFERRED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `imports` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `imports` [EXTRACTED]

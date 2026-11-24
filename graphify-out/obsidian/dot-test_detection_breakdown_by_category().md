@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "TestOverallDetectionRate"
+community: "normalize_input"
 location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOverallDetectionRate
+  - community/normalize_input
 ---
 
 # .test_detection_breakdown_by_category()
@@ -17,4 +17,4 @@ tags:
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOverallDetectionRate
+#graphify/code #graphify/EXTRACTED #community/normalize_input

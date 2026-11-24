@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestDNSFilterConfig"
+community: "DNSFilterConfig"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSFilterConfig
+  - community/DNSFilterConfig
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[Default mode is enforce after v0.8.0 enforcement hardening._1]] - `rationale_for` [EXTRACTED]
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - `rationale_for` [EXTRACTED]
 - [[TestDNSFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

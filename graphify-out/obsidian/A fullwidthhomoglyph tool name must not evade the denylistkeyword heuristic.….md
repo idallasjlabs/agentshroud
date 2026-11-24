@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L553"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # A fullwidth/homoglyph tool name must not evade the denylist/keyword heuristic.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_enforce_unicode_evasion_still_denied()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/load_config
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

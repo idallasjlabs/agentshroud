@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-pimcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx_4]] - `references` [EXTRACTED]
-- [[PATH_49]] - `requires_env` [EXTRACTED]
+- [[PATH_50]] - `requires_env` [EXTRACTED]
 - [[safari-mcp_4]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/pi/mcpjson

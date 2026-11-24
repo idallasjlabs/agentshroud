@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "rationale"
-community: "TestModuleConfigDefaults"
+community: "SubagentMonitor"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestModuleConfigDefaults
+  - community/SubagentMonitor
 ---
 
 # Kill switch dry_run must be False — real termination on anomaly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_killswitch_dry_run_disabled()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestModuleConfigDefaults
+#graphify/rationale #graphify/EXTRACTED #community/SubagentMonitor

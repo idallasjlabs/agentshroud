@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "lifespan"
 location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/lifespan
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
+- [[AuditExportConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/lifespan

@@ -27,9 +27,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_FakeRBAC]]
-- 3 edges to [[_COMMUNITY__wrap_response]]
-- 3 edges to [[_COMMUNITY_asyncio_7]]
+- 12 edges to [[_COMMUNITY__wrap_response]]
+- 3 edges to [[_COMMUNITY_asyncio_1]]
+- 3 edges to [[_COMMUNITY__make_update]]
 
 ## Top bridge nodes
 - [[dot-test_proxy_request_returns_ack_only_updates_when_all_dropped()]] - degree 8, connects to 2 communities

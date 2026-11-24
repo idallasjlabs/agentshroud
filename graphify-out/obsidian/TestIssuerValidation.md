@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "TokenValidator"
+community: "_make_token"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/_make_token
 ---
 
 # TestIssuerValidation
@@ -17,4 +17,4 @@ tags:
 - [[IssuerMismatch]] - `uses` [INFERRED]
 - [[test_token_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/_make_token

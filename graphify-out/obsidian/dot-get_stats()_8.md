@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L152"
+community: "OutboundInfoFilter"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/OutboundInfoFilter
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_45]] - `references` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -14,7 +14,7 @@ members: 12
 - [[Output Format_27]] - document - .github/agents/i-athena.agent.md
 - [[Persona_7]] - document - .github/agents/i-athena.agent.md
 - [[Quality Checklist_13]] - document - .github/agents/i-athena.agent.md
-- [[Role_54]] - document - .github/agents/i-athena.agent.md
+- [[Role_55]] - document - .github/agents/i-athena.agent.md
 - [[System Prompt_7]] - document - .github/agents/i-athena.agent.md
 - [[User Prompt Template_6]] - document - .github/agents/i-athena.agent.md
 - [[cheatsheet_3]] - document - .github/agents/i-athena.agent.md

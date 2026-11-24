@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_156]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Purpose_154]] - document - docker/config/openclaw/skills/i-ti/README.md
 - [[Related Skills_86]] - document - docker/config/openclaw/skills/i-ti/README.md
 - [[Technical Illustrator (TI)]] - document - docker/config/openclaw/skills/i-ti/README.md
 - [[Usage_96]] - document - docker/config/openclaw/skills/i-ti/README.md

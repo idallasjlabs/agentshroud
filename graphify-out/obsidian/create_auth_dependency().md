@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "fastapi.md"
+community: "ingest_api/main.py"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/ingest_api/mainpy
 ---
 
 # create_auth_dependency()
@@ -17,8 +17,8 @@ tags:
 - [[approval.py]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `calls` [EXTRACTED]
 - [[auth_dep()_2]] - `calls` [EXTRACTED]
-- [[auth_dep()_3]] - `calls` [EXTRACTED]
 - [[auth_dep()_1]] - `calls` [EXTRACTED]
+- [[auth_dep()_3]] - `calls` [EXTRACTED]
 - [[auth_dep()_4]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `imports` [EXTRACTED]
 - [[dependency()]] - `indirect_call` [INFERRED]
@@ -32,4 +32,4 @@ tags:
 - [[test_auth_dependency_missing_header()]] - `calls` [EXTRACTED]
 - [[test_auth_dependency_valid_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

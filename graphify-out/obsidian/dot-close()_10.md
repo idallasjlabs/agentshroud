@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "TrustManager"
-location: "L442"
+community: "test_mfa_guard.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_mfa_guardpy
 ---
 
 # .close()
 
 ## Connections
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Close the database connection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

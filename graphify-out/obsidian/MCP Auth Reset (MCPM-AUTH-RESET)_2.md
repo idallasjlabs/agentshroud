@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-mcpm-auth-resetREADME]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
-- [[Purpose_169]] - `contains` [EXTRACTED]
+- [[Purpose_170]] - `contains` [EXTRACTED]
 - [[Related Skills_113]] - `contains` [EXTRACTED]
 - [[Usage_126]] - `contains` [EXTRACTED]
 

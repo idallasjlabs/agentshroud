@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "rationale"
-community: "ConsentFramework"
+community: "ServerConfig"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ServerConfig
 ---
 
 # Consent Framework Module - Pre-configuration consent for MCP server…
 
 ## Connections
-- [[consent_framework.py_2]] - `rationale_for` [EXTRACTED]
+- [[consent_framework.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ConsentFramework
+#graphify/rationale #graphify/EXTRACTED #community/ServerConfig

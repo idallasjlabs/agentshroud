@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PromptGuard"
+community: "prompt_guard.py"
 location: "L625"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/prompt_guardpy
 ---
 
 # .verify_system_prompt()
@@ -17,4 +17,4 @@ tags:
 - [[Return True if prompt_text matches the stored HMAC fingerprint.]] - `rationale_for` [EXTRACTED]
 - [[SystemPromptFingerprint]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

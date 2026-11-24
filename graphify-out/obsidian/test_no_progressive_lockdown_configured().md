@@ -15,7 +15,7 @@ tags:
 - [[FalcoAlertWatcher]] - `uses` [INFERRED]
 - [[Watcher works without a lockdown module — only logs.]] - `rationale_for` [EXTRACTED]
 - [[_make_alert()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_81]] - `references` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

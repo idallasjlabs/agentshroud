@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_48]] - document - .agents/skills/mnemosyne/SKILL.md
 - [[Persona_27]] - document - .agents/skills/mnemosyne/SKILL.md
 - [[Quality Checklist_33]] - document - .agents/skills/mnemosyne/SKILL.md
-- [[Role_98]] - document - .agents/skills/mnemosyne/SKILL.md
+- [[Role_99]] - document - .agents/skills/mnemosyne/SKILL.md
 - [[System Prompt_27]] - document - .agents/skills/mnemosyne/SKILL.md
 - [[mnemosyneSKILL]] - document - .agents/skills/mnemosyne/SKILL.md
 

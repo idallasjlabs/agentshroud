@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "ingest_api/main.py"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/ingest_api/mainpy
 ---
 
 # Message forwarding routes. Core message forwarding endpoints: -…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

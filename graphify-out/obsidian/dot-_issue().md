@@ -12,9 +12,9 @@ tags:
 # ._issue()
 
 ## Connections
-- [[dot-exchange_authorization_code()]] - `calls` [EXTRACTED]
-- [[dot-exchange_refresh_token()]] - `calls` [EXTRACTED]
-- [[Any_48]] - `references` [EXTRACTED]
+- [[dot-exchange_authorization_code()_1]] - `calls` [EXTRACTED]
+- [[dot-exchange_refresh_token()_1]] - `calls` [EXTRACTED]
+- [[Any_46]] - `references` [EXTRACTED]
 - [[EdgeOAuthService]] - `method` [EXTRACTED]
 - [[OAuthFailure]] - `calls` [EXTRACTED]
 

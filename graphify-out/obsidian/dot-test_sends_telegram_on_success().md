@@ -15,7 +15,7 @@ tags:
 - [[TestRunAndSendCveReport]] - `method` [EXTRACTED]
 - [[_fake_send()_5]] - `indirect_call` [INFERRED]
 - [[_make_report()]] - `calls` [EXTRACTED]
-- [[asyncio_20]] - `references` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

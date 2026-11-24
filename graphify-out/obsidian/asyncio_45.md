@@ -1,29 +1,25 @@
 ---
 source_file: ""
 type: "code"
-community: "TestEgressTelegramNotify"
+community: "RedactionResult"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressTelegramNotify
+  - community/RedactionResult
 ---
 
 # asyncio
 
 ## Connections
-- [[dot-test_answer_callback_error()]] - `references` [EXTRACTED]
-- [[dot-test_answer_callback_success()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_allow_always_returns_agent_id()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_approve_1h()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_approve_4h()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_approve_permanent()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_deny()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_deny_returns_agent_id()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_invalid_format()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_missing_agent_id_safe()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_request_not_found()]] - `references` [EXTRACTED]
-- [[dot-test_handle_callback_returns_agent_id()]] - `references` [EXTRACTED]
-- [[dot-test_notify_pending_failure()]] - `references` [EXTRACTED]
-- [[dot-test_notify_pending_success()]] - `references` [EXTRACTED]
+- [[dot-test_email_content_scanning()]] - `references` [EXTRACTED]
+- [[dot-test_empty_content_handling()]] - `references` [EXTRACTED]
+- [[dot-test_icloud_contact_scanning()]] - `references` [EXTRACTED]
+- [[dot-test_process_tool_result_no_sanitizer()]] - `references` [EXTRACTED]
+- [[dot-test_process_tool_result_sanitizer_error()]] - `references` [EXTRACTED]
+- [[dot-test_process_tool_result_success()]] - `references` [EXTRACTED]
+- [[dot-test_sanitize_dict_with_pii()]] - `references` [EXTRACTED]
+- [[dot-test_sanitize_disabled()]] - `references` [EXTRACTED]
+- [[dot-test_sanitize_string_with_pii()]] - `references` [EXTRACTED]
+- [[dot-test_tool_specific_configuration()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

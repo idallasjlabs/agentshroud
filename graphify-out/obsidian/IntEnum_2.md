@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TrustManager"
+community: "BrowserSecurityGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/BrowserSecurityGuard
 ---
 
 # IntEnum
 
 ## Connections
-- [[BotIncidentSeverity]] - `inherits` [EXTRACTED]
+- [[ThreatLevel]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

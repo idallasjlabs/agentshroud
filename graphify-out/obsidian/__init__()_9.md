@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
 community: "test_soc_router_coverage.py"
-location: "L1434"
+location: "L2311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # __init__()
 
 ## Connections
-- [[test_group_memory_read()]] - `contains` [EXTRACTED]
+- [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

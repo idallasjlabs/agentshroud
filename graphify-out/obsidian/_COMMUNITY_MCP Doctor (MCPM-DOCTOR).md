@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[MCP Doctor (MCPM-DOCTOR)_1]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
-- [[Purpose_124]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
+- [[Purpose_122]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 - [[Related Skills_54]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 - [[Usage_64]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md
 - [[hermesskillsi-mcpm-doctorREADME]] - document - docker/config/hermes/skills/i-mcpm-doctor/README.md

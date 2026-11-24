@@ -12,12 +12,12 @@ tags:
 # TestToolResultSanitizer
 
 ## Connections
-- [[dot-setup_method()_17]] - `method` [EXTRACTED]
+- [[dot-setup_method()_15]] - `method` [EXTRACTED]
 - [[dot-test_blocked_pattern_detection()]] - `method` [EXTRACTED]
 - [[dot-test_code_blocks_preserved()]] - `method` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `method` [EXTRACTED]
 - [[dot-test_domain_matching_patterns()]] - `method` [EXTRACTED]
-- [[dot-test_edge_cases()_3]] - `method` [EXTRACTED]
+- [[dot-test_edge_cases()_4]] - `method` [EXTRACTED]
 - [[dot-test_empty_alt_text_handling()]] - `method` [EXTRACTED]
 - [[dot-test_empty_or_none_input()]] - `method` [EXTRACTED]
 - [[dot-test_external_domain_stripping()]] - `method` [EXTRACTED]

@@ -2,17 +2,16 @@
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
 community: "TestIsContainerRunning"
-location: "L175"
+location: "L861"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/TestIsContainerRunning
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_containerized_fallback_evidence()]] - `indirect_call` [INFERRED]
-- [[dot-test_socket_error_returns_false()]] - `indirect_call` [INFERRED]
+- [[dot-test_containerized_fallback_evidence()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/TestIsContainerRunning
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

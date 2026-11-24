@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "StatusResponse"
 location: "L7"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/StatusResponse
 ---
 
 # .test_status_response_model()
@@ -16,4 +16,4 @@ tags:
 - [[Test that StatusResponse model accepts new fields.]] - `rationale_for` [EXTRACTED]
 - [[TestEnhancedStatus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/StatusResponse

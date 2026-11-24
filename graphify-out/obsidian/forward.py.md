@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "ingest_api/main.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/ingest_api/mainpy
 ---
 
 # forward.py
@@ -31,13 +31,13 @@ tags:
 - [[_process_inbound()]] - `contains` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `contains` [EXTRACTED]
 - [[_sentences_from_deltas()]] - `contains` [EXTRACTED]
-- [[auth_dep()_1]] - `contains` [EXTRACTED]
+- [[auth_dep()_3]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `imports` [EXTRACTED]
 - [[email_send()]] - `contains` [EXTRACTED]
 - [[email_send_owner()]] - `contains` [EXTRACTED]
 - [[email_service.py]] - `imports_from` [EXTRACTED]
 - [[event_bus.py_2]] - `imports_from` [EXTRACTED]
-- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[fastapi_4]] - `imports_from` [EXTRACTED]
 - [[forward_content()]] - `contains` [EXTRACTED]
 - [[forward_content_stream()]] - `contains` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_gmail_credential_retrieval.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestStatusMappings"
+community: "TestProductionCompose"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestStatusMappings
+  - community/TestProductionCompose
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_engine_health_mapping()]] - `references` [EXTRACTED]
-- [[dot-test_engine_status_mapping()]] - `references` [EXTRACTED]
+- [[dot-test_has_services_key()]] - `references` [EXTRACTED]
+- [[dot-test_valid_yaml()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestStatusMappings
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

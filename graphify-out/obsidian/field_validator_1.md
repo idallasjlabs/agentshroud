@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/models.py"
+community: "email_send"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # field_validator
@@ -18,4 +18,4 @@ tags:
 - [[dot-validate_base64()]] - `references` [EXTRACTED]
 - [[dot-validate_source()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/email_send

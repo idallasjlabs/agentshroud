@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_switch_model_script_exists_with_supported_targets"
 location: "L566"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_switch_model_script_exists_with_supported_targets
 ---
 
 # .test_switch_model_script_exists_with_supported_targets()
@@ -15,4 +15,4 @@ tags:
 - [[Model switch helper should support local and major cloud providers.]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_switch_model_script_exists_with_supported_targets

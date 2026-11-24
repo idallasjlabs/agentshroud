@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L201"
+community: "KillSwitchError"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/KillSwitchError
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConnectionPool]] - `method` [EXTRACTED]
+- [[dot-__init__()_57]] - `calls` [EXTRACTED]
+- [[KillSwitchError]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/KillSwitchError

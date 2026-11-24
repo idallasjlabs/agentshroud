@@ -12,9 +12,9 @@ tags:
 # AgentRegistry
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_195]] - `references` [EXTRACTED]
-- [[dot-__init__()_194]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_191]] - `references` [EXTRACTED]
+- [[dot-__init__()_190]] - `method` [EXTRACTED]
 - [[dot-from_dict()_10]] - `method` [EXTRACTED]
 - [[dot-get()_1]] - `method` [EXTRACTED]
 - [[dot-list_agents()]] - `method` [EXTRACTED]

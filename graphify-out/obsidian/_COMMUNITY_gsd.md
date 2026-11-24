@@ -12,7 +12,7 @@ members: 6
 - [[Blast Radius]] - document - .github/ISSUE_TEMPLATE/gsd.md
 - [[Effort]] - document - .github/ISSUE_TEMPLATE/gsd.md
 - [[Outcome]] - document - .github/ISSUE_TEMPLATE/gsd.md
-- [[Problem_1]] - document - .github/ISSUE_TEMPLATE/gsd.md
+- [[Problem]] - document - .github/ISSUE_TEMPLATE/gsd.md
 - [[gsd]] - document - .github/ISSUE_TEMPLATE/gsd.md
 
 ## Live Query (requires Dataview plugin)

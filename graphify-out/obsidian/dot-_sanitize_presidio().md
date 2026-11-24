@@ -15,7 +15,7 @@ tags:
 - [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
 - [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `method` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
 - [[Sanitize using Microsoft Presidio Wraps synchronous Presidio calls in…]] - `rationale_for` [EXTRACTED]
 - [[_analyze_and_anonymize()]] - `indirect_call` [INFERRED]
 

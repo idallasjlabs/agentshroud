@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "_skills_reload_impl"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/_skills_reload_impl
 ---
 
 # Path
 
 ## Connections
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl

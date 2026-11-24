@@ -1,32 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/models.py"
+community: "email_send"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # BaseModel
 
 ## Connections
-- [[AgentTarget]] - `inherits` [EXTRACTED]
-- [[ApprovalDecision]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueItem]] - `inherits` [EXTRACTED]
-- [[ApprovalRequest]] - `inherits` [EXTRACTED]
-- [[EmailSendRequest]] - `inherits` [EXTRACTED]
-- [[EmailSendResponse]] - `inherits` [EXTRACTED]
-- [[ForwardRequest]] - `inherits` [EXTRACTED]
-- [[ForwardResponse]] - `inherits` [EXTRACTED]
-- [[LedgerEntry]] - `inherits` [EXTRACTED]
-- [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
-- [[RedactionDetail]] - `inherits` [EXTRACTED]
-- [[RedactionResult]] - `inherits` [EXTRACTED]
-- [[SSHExecRequest]] - `inherits` [EXTRACTED]
-- [[SSHExecResponse]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
-- [[StatusResponse]] - `inherits` [EXTRACTED]
+- [[OwnerEmailRequest]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/email_send

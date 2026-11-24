@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "GroupRole"
+community: "tool_chain_analyzer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRole
+  - community/tool_chain_analyzerpy
 ---
 
 # Enum
 
 ## Connections
-- [[GroupRole]] - `inherits` [EXTRACTED]
-- [[group_rbac.py]] - `imports_from` [EXTRACTED]
+- [[ChainAction]] - `inherits` [EXTRACTED]
+- [[RiskLevel]] - `inherits` [EXTRACTED]
+- [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRole
+#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy

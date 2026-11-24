@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "TestAccessControl"
+community: "DelegationPrivilege"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAccessControl
+  - community/DelegationPrivilege
 ---
 
 # .test_non_owner_cannot_delegate()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAccessControl]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAccessControl
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

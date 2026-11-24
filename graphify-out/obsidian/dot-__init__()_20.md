@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L49"
+community: "URLAnalyzer"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/URLAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_8]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[Args resolve_dns If True, resolve hostnames to IPs and check those too.…]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

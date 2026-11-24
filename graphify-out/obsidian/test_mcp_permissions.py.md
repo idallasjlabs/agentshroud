@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "PermissionLevel"
+community: "test_mcp_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/test_mcp_proxypy
 ---
 
 # test_mcp_permissions.py
@@ -20,15 +20,15 @@ tags:
 - [[TestCheckAll]] - `contains` [EXTRACTED]
 - [[TestInferPermission]] - `contains` [EXTRACTED]
 - [[TestPermissionLevel]] - `contains` [EXTRACTED]
-- [[TestRateLimiting_2]] - `contains` [EXTRACTED]
+- [[TestRateLimiting_1]] - `contains` [EXTRACTED]
 - [[TestServerAccess]] - `contains` [EXTRACTED]
 - [[TestToolPermission]] - `contains` [EXTRACTED]
 - [[TestTrustLevels]] - `contains` [EXTRACTED]
 - [[TestTrustMapping]] - `contains` [EXTRACTED]
 - [[Tests for MCP permission system.]] - `rationale_for` [EXTRACTED]
-- [[config()_3]] - `contains` [EXTRACTED]
+- [[config()_1]] - `contains` [EXTRACTED]
 - [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
 - [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
-- [[mgr()_2]] - `contains` [EXTRACTED]
+- [[mgr()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

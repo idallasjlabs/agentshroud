@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_rbac.py"
 type: "code"
-community: "test_group_rbac.py"
+community: "GroupRoleResolver"
 location: "L298"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_rbacpy
+  - community/GroupRoleResolver
 ---
 
 # TestOwnerGroupContext
@@ -17,4 +17,4 @@ tags:
 - [[Owner must have unrestricted access even in group context.]] - `rationale_for` [EXTRACTED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_rbacpy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

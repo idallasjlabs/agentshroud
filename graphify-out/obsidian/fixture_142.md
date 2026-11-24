@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "DraftEntry"
+community: "chatbot/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/chatbot/mainpy
 ---
 
 # fixture
 
 ## Connections
+- [[app()_1]] - `references` [EXTRACTED]
 - [[client()_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

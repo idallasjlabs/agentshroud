@@ -9,7 +9,7 @@ members: 13
 
 ## Members
 - [[Re-injection Command (for reference)_3]] - document - .github/agents/i-session-prompt.agent.md
-- [[Role_43]] - document - .github/agents/i-session-prompt.agent.md
+- [[Role_44]] - document - .github/agents/i-session-prompt.agent.md
 - [[Rules_5]] - document - .github/agents/i-session-prompt.agent.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_3]] - document - .github/agents/i-session-prompt.agent.md
 - [[Step 1 — Survey the Repo_3]] - document - .github/agents/i-session-prompt.agent.md

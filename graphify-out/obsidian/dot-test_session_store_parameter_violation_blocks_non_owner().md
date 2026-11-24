@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestPrivacyPolicyEvents]] - `method` [EXTRACTED]
-- [[asyncio_4]] - `references` [EXTRACTED]
+- [[asyncio_1]] - `references` [EXTRACTED]
 - [[emit()_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPToolCall

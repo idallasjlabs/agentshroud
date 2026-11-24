@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "make_event"
 location: "L196"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/make_event
 ---
 
 # ._visible_tools()
@@ -17,4 +17,4 @@ tags:
 - [[EdgeCallPipeline]] - `method` [EXTRACTED]
 - [[VendorProfile]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/make_event

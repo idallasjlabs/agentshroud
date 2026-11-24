@@ -12,7 +12,7 @@ tags:
 # release_blocked_message()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Release a quarantined message for admin workflow follow-up.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]

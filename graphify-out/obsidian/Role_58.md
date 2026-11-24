@@ -1,8 +1,8 @@
 ---
-source_file: ".agents/skills/daedalus/SKILL.md"
+source_file: ".agents/agents/daedalus.md"
 type: "document"
 community: "Daedalus — Concept Illustrator"
-location: "L8"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_3]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

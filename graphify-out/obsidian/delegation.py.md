@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "delegation.py"
+community: "DelegationPrivilege"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/delegationpy
+  - community/DelegationPrivilege
 ---
 
 # delegation.py
@@ -16,8 +16,8 @@ tags:
 - [[DelegationError]] - `contains` [EXTRACTED]
 - [[DelegationManager]] - `contains` [EXTRACTED]
 - [[DelegationPrivilege]] - `contains` [EXTRACTED]
-- [[Enum_20]] - `imports_from` [EXTRACTED]
+- [[Enum_6]] - `imports_from` [EXTRACTED]
 - [[Owner-Away Privilege Delegation (v0.9.0 Tranche 1) Owner can delegate specific…]] - `rationale_for` [EXTRACTED]
 - [[test_delegation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/delegationpy
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

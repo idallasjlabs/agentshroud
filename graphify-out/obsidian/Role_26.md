@@ -1,8 +1,8 @@
 ---
-source_file: ".agents/skills/apollo/SKILL.md"
+source_file: ".agents/agents/apollo.md"
 type: "document"
 community: "Technical Specification"
-location: "L8"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_1]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Technical_Specification

@@ -12,7 +12,7 @@ tags:
 # ._vendor_of()
 
 ## Connections
-- [[dot-authorize()]] - `calls` [EXTRACTED]
+- [[dot-authorize()_1]] - `calls` [EXTRACTED]
 - [[EdgeOAuthService]] - `method` [EXTRACTED]
 - [[OAuthFailure]] - `calls` [EXTRACTED]
 

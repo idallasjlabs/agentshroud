@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L66"
+community: "ContainerSnapshot"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/ContainerSnapshot
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Svc]] - `method` [EXTRACTED]
+- [[dot-_init_db()]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

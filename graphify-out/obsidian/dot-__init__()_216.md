@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "_patch_urlopen"
-location: "L36"
+community: "TokenValidator"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_patch_urlopen
+  - community/TokenValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_patch_urlopen
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

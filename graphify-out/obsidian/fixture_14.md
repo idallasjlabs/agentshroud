@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "KeyRotationManager"
+community: "test_observatory_mode.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/test_observatory_modepy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-manager()]] - `references` [EXTRACTED]
-- [[dot-sample_credential()]] - `references` [EXTRACTED]
-- [[dot-setup_manager_with_credential()]] - `references` [EXTRACTED]
+- [[client()_3]] - `references` [EXTRACTED]
+- [[reset_env_and_task()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

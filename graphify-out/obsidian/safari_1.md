@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-cursormcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx]] - `references` [EXTRACTED]
-- [[PATH_45]] - `requires_env` [EXTRACTED]
+- [[PATH_46]] - `requires_env` [EXTRACTED]
 - [[safari-mcp]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/cursor/mcpjson

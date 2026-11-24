@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "PermissionCheck"
 location: "L493"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/PermissionCheck
 ---
 
 # .check_tool_parameters()
@@ -20,4 +20,4 @@ tags:
 - [[PermissionCheck]] - `calls` [EXTRACTED]
 - [[_walk()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/PermissionCheck

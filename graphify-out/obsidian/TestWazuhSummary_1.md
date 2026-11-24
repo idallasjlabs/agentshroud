@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_installed_not_running()]] - `method` [EXTRACTED]
-- [[dot-test_not_installed()_3]] - `method` [EXTRACTED]
+- [[dot-test_not_installed()]] - `method` [EXTRACTED]
 - [[dot-test_running_no_alert_dir()]] - `method` [EXTRACTED]
 - [[dot-test_running_with_alert_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]

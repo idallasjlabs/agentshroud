@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "no_exec"
+community: "PipelineAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/no_exec
+  - community/PipelineAction
 ---
 
 # fixture
 
 ## Connections
-- [[no_exec()]] - `references` [EXTRACTED]
+- [[clamd_sock_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/no_exec
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

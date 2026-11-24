@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "test_slack_socket_client.py"
+community: ".test_events_api_envelope_dispatches_handle_event"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_slack_socket_clientpy
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # slack_socket_client.py
@@ -19,4 +19,4 @@ tags:
 - [[slack_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_slack_socket_client.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_slack_socket_clientpy
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

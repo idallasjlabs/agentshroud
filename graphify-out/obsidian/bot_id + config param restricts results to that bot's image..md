@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "get_trivy_image_summaries"
+community: "Any"
 location: "L1122"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_image_summaries
+  - community/Any
 ---
 
 # bot_id + config param restricts results to that bot's image.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_bot_id_filter_matches_bot_image()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_image_summaries
+#graphify/rationale #graphify/EXTRACTED #community/Any

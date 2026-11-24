@@ -12,7 +12,7 @@ members: 6
 - [[Closing Gate_7]] - document - .agents/skills/i-pca/SKILL.md
 - [[Output Format Rules_7]] - document - .agents/skills/i-pca/SKILL.md
 - [[Persisted Artifact Mode (opt-in repos only)_5]] - document - .agents/skills/i-pca/SKILL.md
-- [[Role_30]] - document - .agents/skills/i-pca/SKILL.md
+- [[Role_31]] - document - .agents/skills/i-pca/SKILL.md
 - [[Skill Pre-Change Analysis (PCA)_7]] - document - .agents/skills/i-pca/SKILL.md
 
 ## Live Query (requires Dataview plugin)

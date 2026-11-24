@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "TestOutboundPipelineIntegration"
 location: "L1707"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # Form message should keep healthcheck SKILL.md text unchanged when sandbox hint…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_healthcheck_skill_message_without_sandbox_is_not_rewritten_for_form_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

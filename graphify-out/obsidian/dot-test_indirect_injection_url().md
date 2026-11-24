@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_security_audit.py"
+community: "TestPromptGuard"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestPromptGuard
 ---
 
 # .test_indirect_injection_url()
@@ -15,4 +15,4 @@ tags:
 - [[TestPromptGuard_1]] - `method` [EXTRACTED]
 - [[URL-based indirect injection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/TestPromptGuard

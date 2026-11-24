@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "sunday-upgrade.sh"
+community: "upgrade-2026-09-21.md"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/upgrade-2026-09-21md
 ---
 
 # _session_guard()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sunday-upgrade.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/code #graphify/EXTRACTED #community/upgrade-2026-09-21md

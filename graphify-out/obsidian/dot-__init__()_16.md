@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/encrypted_store.py"
 type: "code"
-community: "URLAnalyzer"
-location: "L102"
+community: "EncryptedStore"
+location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/EncryptedStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args resolve_dns If True, resolve hostnames to IPs and check those too.…]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
+- [[EncryptedStore]] - `method` [EXTRACTED]
+- [[Initialize the encrypted store. Args master_secret The master secret string.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

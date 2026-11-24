@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestT9Abuse]] - `method` [EXTRACTED]
-- [[_profile()]] - `calls` [EXTRACTED]
+- [[_profile()_1]] - `calls` [EXTRACTED]
 - [[_text()]] - `calls` [EXTRACTED]
 - [[_token()]] - `calls` [EXTRACTED]
 - [[slow()]] - `indirect_call` [INFERRED]

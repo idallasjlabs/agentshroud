@@ -12,7 +12,7 @@ tags:
 # release_blocked_outbound()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Release a blocked outbound message for adminmanual resend flow.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]

@@ -42,8 +42,8 @@ members: 37
 - [[Validate examplesdocker-compose.production.yml.]] - rationale - gateway/tests/test_docker_compose.py
 - [[_load_compose()]] - code - gateway/tests/test_docker_compose.py
 - [[_load_compose_raw()]] - code - gateway/tests/test_docker_compose.py
-- [[fixture_86]] - code
-- [[parametrize_17]] - code
+- [[fixture_89]] - code
+- [[parametrize_15]] - code
 - [[test_docker_compose.py]] - code - gateway/tests/test_docker_compose.py
 
 ## Live Query (requires Dataview plugin)

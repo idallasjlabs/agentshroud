@@ -18,7 +18,7 @@ tags:
 - [[dot-test_process_tool_result_success()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_dict_with_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_string_with_pii()]] - `calls` [EXTRACTED]
-- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[Individual redaction record]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[TestMiddlewareIntegration]] - `uses` [INFERRED]

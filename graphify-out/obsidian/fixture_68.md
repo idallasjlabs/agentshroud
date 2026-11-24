@@ -1,19 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TrustManager"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/GatewayConfig
 ---
 
 # fixture
 
 ## Connections
-- [[hermes_tm()]] - `references` [EXTRACTED]
-- [[ledger()_1]] - `references` [EXTRACTED]
-- [[openclaw_tm()]] - `references` [EXTRACTED]
-- [[policy()]] - `references` [EXTRACTED]
+- [[auth_headers()_1]] - `references` [EXTRACTED]
+- [[client()_11]] - `references` [EXTRACTED]
+- [[test_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

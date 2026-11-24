@@ -1,29 +1,29 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ApprovalStore"
+community: "test_mfa_guard.py"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/test_mfa_guardpy
 ---
 
 # ApprovalQueueItem
 
 ## Connections
 - [[dot-_notify_telegram()]] - `references` [EXTRACTED]
-- [[dot-decide()]] - `references` [EXTRACTED]
 - [[dot-decide()_1]] - `references` [EXTRACTED]
-- [[dot-get_item()_1]] - `references` [EXTRACTED]
+- [[dot-decide()]] - `references` [EXTRACTED]
 - [[dot-get_item()_2]] - `references` [EXTRACTED]
-- [[dot-get_pending()_1]] - `references` [EXTRACTED]
+- [[dot-get_item()_1]] - `references` [EXTRACTED]
 - [[dot-get_pending()_2]] - `references` [EXTRACTED]
+- [[dot-get_pending()_1]] - `references` [EXTRACTED]
 - [[dot-load_all()]] - `references` [EXTRACTED]
 - [[dot-load_pending()]] - `references` [EXTRACTED]
-- [[dot-save()_1]] - `references` [EXTRACTED]
-- [[dot-submit()]] - `references` [EXTRACTED]
+- [[dot-save()_2]] - `references` [EXTRACTED]
 - [[dot-submit()_1]] - `references` [EXTRACTED]
+- [[dot-submit()]] - `references` [EXTRACTED]
 - [[dot-test_store_expires_old_items()]] - `calls` [EXTRACTED]
 - [[dot-test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
 - [[dot-test_store_save_and_load()]] - `calls` [EXTRACTED]
@@ -31,7 +31,7 @@ tags:
 - [[A pending approval request in the queue]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[TestApprovalStorePersistence]] - `uses` [INFERRED]
 - [[_make_item()]] - `calls` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

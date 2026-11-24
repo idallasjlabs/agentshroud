@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "_make_proxy"
+community: "SlackAPIProxy"
 location: "L75"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_proxy
+  - community/SlackAPIProxy
 ---
 
 # .info_filter_redaction_count()
@@ -16,4 +16,4 @@ tags:
 - [[dot-proxy_outbound()]] - `indirect_call` [INFERRED]
 - [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/INFERRED #community/SlackAPIProxy

@@ -21,7 +21,7 @@ tags:
 - [[dot-test_run_timeout()]] - `calls` [EXTRACTED]
 - [[dot-test_run_whitespace_only_stdout_is_error()]] - `calls` [EXTRACTED]
 - [[dot-test_trivy_binary_not_found()]] - `calls` [EXTRACTED]
-- [[Any_11]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[Run a Trivy scan and return parsed results. Args target Scan target…]] - `rationale_for` [EXTRACTED]
 - [[daily_cve_report.py]] - `imports` [EXTRACTED]
 - [[parse_trivy_output()]] - `calls` [EXTRACTED]

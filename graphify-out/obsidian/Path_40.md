@@ -1,16 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "load_config"
+community: "GitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/GitGuard
 ---
 
 # Path
 
 ## Connections
-- [[_write()_1]] - `references` [EXTRACTED]
+- [[dot-_analyze_file_content()]] - `references` [EXTRACTED]
+- [[dot-_analyze_script_file()]] - `references` [EXTRACTED]
+- [[dot-_scan_git_hooks()]] - `references` [EXTRACTED]
+- [[dot-_scan_package_json()]] - `references` [EXTRACTED]
+- [[dot-_scan_pyproject_toml()]] - `references` [EXTRACTED]
+- [[dot-_scan_setup_py()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/GitGuard

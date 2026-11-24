@@ -1,19 +1,22 @@
 ---
 type: community
-members: 76
+members: 78
 ---
 
 # A2AProxy
 
-**Members:** 76 nodes
+**Members:** 78 nodes
 
 ## Members
 - [[dot-__init__()_222]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-__init__()_223]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_224]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-__init__()_225]] - code - gateway/tests/test_a2a_proxy.py
 - [[dot-_audit()_1]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-_record_trust_violation()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-extract_text_for_pii_scan()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-forward()_2]] - code - gateway/tests/test_a2a_proxy.py
+- [[dot-log_event()_2]] - code - gateway/tests/test_a2a_proxy.py
 - [[dot-parse_jsonrpc_request()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-process_agent_card_request()]] - code - gateway/proxy/a2a_proxy.py
 - [[dot-process_inbound_request()]] - code - gateway/proxy/a2a_proxy.py
@@ -40,13 +43,14 @@ members: 76
 - [[Terminates inbound A2A HTTP requests, enforces policy, forwards. Usage proxy…]] - rationale - gateway/proxy/a2a_proxy.py
 - [[Tests for the A2A (Agent-to-Agent) inbound proxy interceptor (SCRUM-129).…]] - rationale - gateway/tests/test_a2a_proxy.py
 - [[Token comparison must not leak timing information — same guarantee as Hermes's…]] - rationale - gateway/tests/test_a2a_proxy.py
+- [[_Event]] - code - gateway/tests/test_a2a_proxy.py
+- [[_StubAuditStore]] - code - gateway/tests/test_a2a_proxy.py
 - [[_StubForwarder_1]] - code - gateway/tests/test_a2a_proxy.py
 - [[_base_policy_engine()]] - code - gateway/tests/test_a2a_proxy.py
 - [[_jsonrpc()]] - code - gateway/tests/test_a2a_proxy.py
 - [[_redact_message_text()]] - code - gateway/proxy/a2a_proxy.py
-- [[a2a_proxy.py]] - code - gateway/proxy/a2a_proxy.py
 - [[asyncio_85]] - code
-- [[fixture_139]] - code
+- [[fixture_140]] - code
 - [[forwarder()_1]] - code - gateway/tests/test_a2a_proxy.py
 - [[proxy()_3]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_a2a_proxy.py]] - code - gateway/tests/test_a2a_proxy.py
@@ -68,13 +72,11 @@ members: 76
 - [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_malformed_body_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - code - gateway/tests/test_a2a_proxy.py
-- [[test_process_inbound_request_task_ownership_violation_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_process_inbound_request_unknown_token_is_blocked()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_proxy_result_defaults_are_safe()]] - code - gateway/tests/test_a2a_proxy.py
 - [[test_redact_message_text_clears_all_text_parts_not_just_the_first()]] - code - gateway/tests/test_a2a_proxy.py
@@ -93,16 +95,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_A2APolicyConfig]]
-- 18 edges to [[_COMMUNITY_A2APolicyEngine]]
-- 6 edges to [[_COMMUNITY_DifferentialPIIDetector]]
-- 3 edges to [[_COMMUNITY__StubAuditStore]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_test_module_stats.py]]
+- 29 edges to [[_COMMUNITY_A2APolicyConfig]]
+- 13 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 3 edges to [[_COMMUNITY_test_differential_pii_detector.py]]
+- 3 edges to [[_COMMUNITY_DifferentialPIIDetector]]
+- 1 edge to [[_COMMUNITY_ProgressiveTrustConfig]]
+- 1 edge to [[_COMMUNITY_test_module_stats.py]]
 
 ## Top bridge nodes
 - [[test_a2a_proxy.py]] - degree 51, connects to 4 communities
-- [[a2a_proxy.py]] - degree 13, connects to 4 communities
 - [[A2AProxy]] - degree 58, connects to 3 communities
 - [[_base_policy_engine()]] - degree 10, connects to 2 communities
-- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - degree 8, connects to 2 communities
+- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - degree 9, connects to 2 communities
+- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - degree 8, connects to 2 communities

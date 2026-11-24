@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestAdminAccess"
+community: "test_tool_acl.py"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAdminAccess
+  - community/test_tool_aclpy
 ---
 
 # TestAdminAccess
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_admin_denied_tools_contains_private()]] - `method` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAdminAccess
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

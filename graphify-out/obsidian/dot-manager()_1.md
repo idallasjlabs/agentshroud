@@ -15,6 +15,6 @@ tags:
 - [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
 - [[PathIsolationManager]] - `calls` [EXTRACTED]
 - [[TestPathIsolationManager]] - `method` [EXTRACTED]
-- [[fixture_59]] - `references` [EXTRACTED]
+- [[fixture_65]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalStore"
+community: "test_mfa_guard.py"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/test_mfa_guardpy
 ---
 
 # .initialize()
@@ -15,4 +15,4 @@ tags:
 - [[ApprovalStore]] - `method` [EXTRACTED]
 - [[Open the database and create the schema. Idempotent a second call must not…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

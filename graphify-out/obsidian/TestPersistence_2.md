@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L317"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # TestPersistence
@@ -22,4 +22,4 @@ tags:
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue
+#graphify/code #graphify/INFERRED #community/test_mfa_guardpy

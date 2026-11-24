@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_module_stats.py"
+community: "TestWebProxySecurityIntegration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_module_statspy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Enum
 
 ## Connections
-- [[Decision]] - `inherits` [EXTRACTED]
-- [[module_stats.py]] - `imports_from` [EXTRACTED]
+- [[MockEgressChannel]] - `inherits` [EXTRACTED]
+- [[MockThreatLevel]] - `inherits` [EXTRACTED]
+- [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_module_statspy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "rationale"
-community: "fastapi.md"
+community: "test_security.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/test_securitypy
 ---
 
 # Security and edge case tests for AgentShroud Gateway
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_security.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fastapimd
+#graphify/rationale #graphify/EXTRACTED #community/test_securitypy

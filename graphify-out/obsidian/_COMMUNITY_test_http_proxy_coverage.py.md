@@ -8,14 +8,14 @@ members: 96
 **Members:** 96 nodes
 
 ## Members
+- [[dot-__init__()_207]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_208]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_209]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-__init__()_210]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_211]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_212]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_213]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_16]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -44,7 +44,7 @@ members: 96
 - [[_MockWriter]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[__init__()_23]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[__init__()_20]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_always_fail()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_boom()_28]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -113,10 +113,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 7 edges to [[_COMMUNITY_WebProxy]]
+- 37 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 6 edges to [[_COMMUNITY_WebProxy]]
 - 5 edges to [[_COMMUNITY_dot-_relay]]
-- 4 edges to [[_COMMUNITY_test_clamav_scan_unavailable_degrades_silently]]
+- 1 edge to [[_COMMUNITY_web_proxy.py]]
 
 ## Top bridge nodes
 - [[test_http_proxy_coverage.py]] - degree 55, connects to 4 communities

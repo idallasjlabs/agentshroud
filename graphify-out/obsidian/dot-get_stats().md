@@ -12,7 +12,7 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[Any_4]] - `references` [EXTRACTED]
+- [[Any_5]] - `references` [EXTRACTED]
 - [[Get proxy statistics.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `method` [EXTRACTED]
 

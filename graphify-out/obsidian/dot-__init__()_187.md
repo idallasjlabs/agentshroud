@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/proxy/dns_blocklist.py"
 type: "code"
-community: "._run_proxy"
-location: "L145"
+community: "DNSBlocklist"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_proxy
+  - community/DNSBlocklist
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeResp]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `method` [EXTRACTED]
+- [[Path_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_proxy
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

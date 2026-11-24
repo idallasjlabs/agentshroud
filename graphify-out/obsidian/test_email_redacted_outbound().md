@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "TrustManager"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/TrustManager
 ---
 
 # test_email_redacted_outbound()
 
 ## Connections
 - [[Probe 1.9d PII sanitizer must redact email addresses on outbound.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_27]] - `references` [EXTRACTED]
+- [[asyncio_42]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

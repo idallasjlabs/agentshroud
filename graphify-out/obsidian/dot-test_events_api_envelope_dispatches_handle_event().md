@@ -14,13 +14,13 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestSlackSocketClient]] - `method` [EXTRACTED]
-- [[__aenter__()_2]] - `contains` [EXTRACTED]
-- [[__aexit__()_2]] - `contains` [EXTRACTED]
+- [[__aenter__()]] - `contains` [EXTRACTED]
+- [[__aexit__()]] - `contains` [EXTRACTED]
 - [[__aiter__()]] - `contains` [EXTRACTED]
 - [[__anext__()]] - `contains` [EXTRACTED]
-- [[__init__()_12]] - `contains` [EXTRACTED]
+- [[__init__()_5]] - `contains` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
-- [[asyncio_34]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[events_api envelopes call proxy.handle_event with the payload.]] - `rationale_for` [EXTRACTED]
 - [[send()_1]] - `contains` [EXTRACTED]
 

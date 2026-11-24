@@ -17,7 +17,7 @@ tags:
 - [[Resource]] - `uses` [INFERRED]
 - [[Run a Trivy CVE scan immediately and send the report via Telegram. Requires…]] - `rationale_for` [EXTRACTED]
 - [[SCLCaller]] - `uses` [INFERRED]
-- [[_run()_8]] - `contains` [EXTRACTED]
+- [[_run()_5]] - `contains` [EXTRACTED]
 - [[post]] - `references` [EXTRACTED]
 - [[socrouter.py]] - `contains` [EXTRACTED]
 

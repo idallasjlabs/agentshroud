@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
 type: "code"
-community: "_fake_stats"
+community: "KillSwitchMonitor"
 location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_fake_stats
+  - community/KillSwitchMonitor
 ---
 
 # .test_no_anomaly_when_within_limits()
@@ -16,4 +16,4 @@ tags:
 - [[TestAnomalyDetection]] - `method` [EXTRACTED]
 - [[_fake_stats()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_fake_stats
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

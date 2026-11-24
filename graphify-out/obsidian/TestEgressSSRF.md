@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEgressSSRF"
+community: "EgressPolicy"
 location: "L842"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressSSRF
+  - community/EgressPolicy
 ---
 
 # TestEgressSSRF
 
 ## Connections
-- [[dot-setup_method()_11]] - `method` [EXTRACTED]
+- [[dot-setup_method()_8]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[Tests for SSRF protection in egress filter.]] - `rationale_for` [EXTRACTED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressSSRF
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

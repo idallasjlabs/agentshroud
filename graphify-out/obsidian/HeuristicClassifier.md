@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "normalize_input"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/normalize_input
 ---
 
 # HeuristicClassifier
 
 ## Connections
-- [[dot-__init__()_146]] - `method` [EXTRACTED]
+- [[dot-__init__()_199]] - `method` [EXTRACTED]
 - [[dot-_classify_heuristic()]] - `method` [EXTRACTED]
 - [[dot-_classify_ml()]] - `method` [EXTRACTED]
 - [[dot-_compute_unicode_anomaly()]] - `method` [EXTRACTED]
 - [[dot-_score_signal()]] - `method` [EXTRACTED]
 - [[dot-_try_load_model()]] - `method` [EXTRACTED]
 - [[dot-classify()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_26]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
 - [[Heuristic injection classifier using multi-signal analysis. Scoring approach -…]] - `rationale_for` [EXTRACTED]
 - [[TestClassicOverride]] - `uses` [INFERRED]
 - [[TestContextInjection]] - `uses` [INFERRED]
@@ -40,4 +40,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[test_heuristic_classifier.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/normalize_input

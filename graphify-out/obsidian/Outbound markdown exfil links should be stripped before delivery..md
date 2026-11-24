@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "TestOutboundPipelineIntegration"
 location: "L375"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # Outbound markdown exfil links should be stripped before delivery.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_markdown_exfil_link_scrubbed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

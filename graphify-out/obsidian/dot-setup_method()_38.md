@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_encoding_detector.py"
+source_file: "gateway/tests/test_heuristic_classifier.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
-location: "L10"
+community: "normalize_input"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/normalize_input
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncodingDetector]] - `calls` [EXTRACTED]
-- [[TestEncodingDetector]] - `method` [EXTRACTED]
+- [[HeuristicClassifier]] - `calls` [EXTRACTED]
+- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

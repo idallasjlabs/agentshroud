@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "TestKeyLeakDetection"
 location: "L573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/TestKeyLeakDetection
 ---
 
 # TestKeyLeakDetection
@@ -26,4 +26,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/TestKeyLeakDetection

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "PermissionLevel"
+community: "WebContentScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/WebContentScanner
 ---
 
 # str
 
 ## Connections
-- [[MCPTransport]] - `inherits` [EXTRACTED]
-- [[PermissionLevel]] - `inherits` [EXTRACTED]
+- [[FindingSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

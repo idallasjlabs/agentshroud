@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "_wrap_response"
-location: "L6600"
+community: "make_proxy"
+location: "L534"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_wrap_response
+  - graphify/INFERRED
+  - community/make_proxy
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_malformed_hyphen_domain_does_not_queue_egress_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/INFERRED #community/make_proxy

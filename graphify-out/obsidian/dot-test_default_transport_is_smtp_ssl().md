@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[TestSend]] - `method` [EXTRACTED]
-- [[__enter__()_1]] - `contains` [EXTRACTED]
-- [[__exit__()_1]] - `contains` [EXTRACTED]
-- [[__init__()_15]] - `contains` [EXTRACTED]
+- [[__enter__()_2]] - `contains` [EXTRACTED]
+- [[__exit__()_2]] - `contains` [EXTRACTED]
+- [[__init__()_11]] - `contains` [EXTRACTED]
 - [[login()]] - `contains` [EXTRACTED]
 - [[sendmail()]] - `contains` [EXTRACTED]
 

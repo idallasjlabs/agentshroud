@@ -18,7 +18,7 @@ tags:
 - [[baseConfig()]] - `contains` [EXTRACTED]
 - [[fs_1]] - `contains` [EXTRACTED]
 - [[os_1]] - `contains` [EXTRACTED]
-- [[path_21]] - `contains` [EXTRACTED]
+- [[path_19]] - `contains` [EXTRACTED]
 - [[runPatches()]] - `contains` [EXTRACTED]
 - [[{ spawnSync }_1]] - `contains` [EXTRACTED]
 

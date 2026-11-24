@@ -12,7 +12,7 @@ tags:
 # _run_hermes_dashboard_forwarder()
 
 ## Connections
-- [[_handle()_2]] - `indirect_call` [INFERRED]
+- [[_handle()_1]] - `indirect_call` [INFERRED]
 - [[_pipe()_1]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `contains` [EXTRACTED]
 

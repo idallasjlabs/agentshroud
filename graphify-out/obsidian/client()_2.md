@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
 community: "app"
-location: "L38"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,8 @@ tags:
 
 ## Connections
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_3]] - `references` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[fixture_4]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app

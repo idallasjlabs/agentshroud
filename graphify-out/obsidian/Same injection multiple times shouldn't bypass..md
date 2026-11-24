@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "TestPromptGuard"
 location: "L293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestPromptGuard
 ---
 
 # Same injection multiple times shouldn't bypass.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_repeated_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/TestPromptGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "rationale"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L309"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # Handle timeout for a pending request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_timeout_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

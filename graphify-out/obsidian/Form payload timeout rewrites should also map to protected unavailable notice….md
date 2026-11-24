@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "asyncio"
 location: "L798"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/asyncio
 ---
 
 # Form payload timeout rewrites should also map to protected unavailable notice…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

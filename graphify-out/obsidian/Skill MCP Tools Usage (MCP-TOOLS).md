@@ -1,20 +1,22 @@
 ---
-source_file: ".agents/agents/i-mcpm.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Available MCP Servers"
-location: "L8"
+community: "Skill: MCP Tools Usage (MCP-TOOLS)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Available_MCP_Servers
+  - community/Skill_MCP_Tools_Usage_MCP-TOOLS
 ---
 
 # Skill: MCP Tools Usage (MCP-TOOLS)
 
 ## Connections
-- [[dot-agentsagentsi-mcpm]] - `contains` [EXTRACTED]
-- [[Available MCP Servers_1]] - `contains` [EXTRACTED]
-- [[MCP Troubleshooting]] - `contains` [EXTRACTED]
-- [[Role_64]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
+- [[dot-agentsskillsi-mcpmSKILL]] - `contains` [EXTRACTED]
+- [[10. Troubleshooting]] - `contains` [EXTRACTED]
+- [[Available MCP Servers]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting_5]] - `contains` [EXTRACTED]
+- [[Role_17]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS

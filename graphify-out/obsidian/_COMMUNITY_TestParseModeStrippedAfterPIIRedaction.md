@@ -20,7 +20,7 @@ members: 13
 - [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
 - [[TestParseModeStrippedAfterPIIRedaction]] - code - gateway/tests/test_telegram_proxy_outbound.py
 - [[parse_mode=HTML must be preserved for owner when text contains no PII.]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[process_outbound()]] - code - gateway/tests/test_telegram_proxy_outbound.py
+- [[process_outbound()_4]] - code - gateway/tests/test_telegram_proxy_outbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,13 +30,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY__make_sanitizer]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY__make_sanitizer]]
+- 4 edges to [[_COMMUNITY_asyncio_5]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
 - [[TestParseModeStrippedAfterPIIRedaction]] - degree 8, connects to 2 communities
-- [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - degree 6, connects to 1 community
-- [[dot-test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - degree 5, connects to 1 community
-- [[dot-test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - degree 5, connects to 1 community
-- [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - degree 5, connects to 1 community
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - degree 6, connects to 2 communities
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_email_fallback_path()]] - degree 5, connects to 2 communities
+- [[dot-test_parse_mode_preserved_and_placeholder_escaped_phone_fallback_path()]] - degree 5, connects to 2 communities
+- [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - degree 5, connects to 2 communities

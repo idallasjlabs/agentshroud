@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestOwnerBypassContentPatternChecks]] - `method` [EXTRACTED]
 - [[_plain_msg()]] - `calls` [EXTRACTED]
-- [[asyncio_61]] - `references` [EXTRACTED]
+- [[asyncio_59]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

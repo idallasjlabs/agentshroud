@@ -15,7 +15,7 @@ members: 9
 - [[Mandatory Workflow  (10 steps)_4]] - document - .opencode/agents/i-gg.md
 - [[Protected Branch_4]] - document - .opencode/agents/i-gg.md
 - [[REFUSE These_4]] - document - .opencode/agents/i-gg.md
-- [[Role_91]] - document - .opencode/agents/i-gg.md
+- [[Role_92]] - document - .opencode/agents/i-gg.md
 - [[Skill Git Workflow Guardian (GIT-GUARD)_4]] - document - .opencode/agents/i-gg.md
 
 ## Live Query (requires Dataview plugin)

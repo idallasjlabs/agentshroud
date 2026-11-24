@@ -12,8 +12,8 @@ tags:
 # KeyRotationManager
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_18]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_22]] - `method` [EXTRACTED]
 - [[dot-_generate_new_credential()]] - `method` [EXTRACTED]
 - [[dot-_read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[dot-_retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]

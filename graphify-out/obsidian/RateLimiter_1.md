@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "fastapi.md"
+community: "ingest_api/main.py"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/ingest_api/mainpy
 ---
 
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_190]] - `calls` [EXTRACTED]
-- [[dot-__init__()_189]] - `method` [EXTRACTED]
-- [[dot-check()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_49]] - `calls` [EXTRACTED]
+- [[dot-__init__()_178]] - `method` [EXTRACTED]
+- [[dot-check()_6]] - `method` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_notice_falls_back_without_markdown()]] - `calls` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `calls` [EXTRACTED]
 - [[dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message()]] - `calls` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[test_security.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "WebhookReceiver"
+community: ".process_webhook"
 location: "L341"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/process_webhook
 ---
 
 # Extract message text from webhook payload (Telegram format).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_extract_message()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/rationale #graphify/EXTRACTED #community/process_webhook

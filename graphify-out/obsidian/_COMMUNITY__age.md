@@ -21,7 +21,7 @@ members: 19
 - [[dot-test_stale_report_caps_at_one()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_stat_error_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_two_day_old_clean_is_measured()]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[Path_73]] - code
+- [[Path_74]] - code
 - [[Set a file's mtime to `hours` hours in the past.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[TestComplianceAuditing]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestIsFresh_1]] - code - gateway/tests/test_scanner_integration_coverage.py

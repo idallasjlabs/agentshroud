@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "_skills_reload_impl"
-location: "L117"
+community: "SCLClient"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/SCLClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_54]] - `calls` [EXTRACTED]
-- [[KillSwitchError]] - `method` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/code #graphify/EXTRACTED #community/SCLClient

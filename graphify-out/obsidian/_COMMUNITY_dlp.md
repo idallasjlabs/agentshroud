@@ -10,7 +10,7 @@ members: 10
 ## Members
 - [[additionalProperties_2]] - code - config/inbound-edge/schema.json
 - [[dlp]] - code - config/inbound-edge/schema.json
-- [[enum_15]] - code - config/inbound-edge/schema.json
+- [[enum_13]] - code - config/inbound-edge/schema.json
 - [[maximum]] - code - config/inbound-edge/schema.json
 - [[min_confidence]] - code - config/inbound-edge/schema.json
 - [[mode]] - code - config/inbound-edge/schema.json

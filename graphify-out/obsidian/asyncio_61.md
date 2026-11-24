@@ -1,22 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "test_file_sandbox_message_gate.py"
+community: "test_security_integration.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/test_security_integrationpy
 ---
 
 # asyncio
 
 ## Connections
-- [[dot-test_non_owner_cross_path_plain_message_still_blocked()]] - `references` [EXTRACTED]
-- [[dot-test_owner_message_mentioning_other_users_file_not_blocked()]] - `references` [EXTRACTED]
-- [[dot-test_owner_plain_message_with_path_not_blocked()]] - `references` [EXTRACTED]
-- [[dot-test_plain_message_mentioning_config_yaml_not_blocked()]] - `references` [EXTRACTED]
-- [[dot-test_plain_message_mentioning_etc_passwd_not_blocked()]] - `references` [EXTRACTED]
-- [[dot-test_plain_message_mentioning_memory_not_blocked()]] - `references` [EXTRACTED]
-- [[dot-test_tool_call_with_unauthorized_path_still_blocked()]] - `references` [EXTRACTED]
+- [[test_full_pipeline_clean_message()]] - `references` [EXTRACTED]
+- [[test_full_pipeline_pii_message()]] - `references` [EXTRACTED]
+- [[test_hyphenated_sk_keys_are_blocked()]] - `references` [EXTRACTED]
+- [[test_pii_and_prompt_guard_both_trigger()]] - `references` [EXTRACTED]
+- [[test_pipeline_concurrent_messages()]] - `references` [EXTRACTED]
+- [[test_response_credential_blocking()]] - `references` [EXTRACTED]
+- [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

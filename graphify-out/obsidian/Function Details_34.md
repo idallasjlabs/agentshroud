@@ -12,7 +12,7 @@ tags:
 # Function Details
 
 ## Connections
-- [[compose_generator.py_1]] - `contains` [EXTRACTED]
+- [[compose_generator.py_2]] - `contains` [EXTRACTED]
 - [[generate_apple_script(services)]] - `contains` [EXTRACTED]
 - [[generate_compose(services, runtime)]] - `contains` [EXTRACTED]
 

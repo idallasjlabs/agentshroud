@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "_FakeUnixSocket"
+community: "ServiceManager"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUnixSocket
+  - community/ServiceManager
 ---
 
 # .settimeout()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUnixSocket
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

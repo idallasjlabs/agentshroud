@@ -12,10 +12,10 @@ tags:
 # UserSession
 
 ## Connections
-- [[dot-from_dict()_5]] - `method` [EXTRACTED]
+- [[dot-from_dict()_6]] - `method` [EXTRACTED]
 - [[dot-get_or_create_session()]] - `calls` [EXTRACTED]
 - [[dot-test_session_to_dict_and_back()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_7]] - `method` [EXTRACTED]
+- [[dot-to_dict()_11]] - `method` [EXTRACTED]
 - [[Represents an isolated session for a user within a specific bot workspace. Each…]] - `rationale_for` [EXTRACTED]
 - [[TestSerialization_2]] - `uses` [INFERRED]
 - [[session_manager.py]] - `contains` [EXTRACTED]

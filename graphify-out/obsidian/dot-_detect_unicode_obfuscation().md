@@ -12,7 +12,7 @@ tags:
 # ._detect_unicode_obfuscation()
 
 ## Connections
-- [[dot-scan_tool_result()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
 - [[Detect unicode-based obfuscation techniques.]] - `rationale_for` [EXTRACTED]
 - [[InjectionSeverity]] - `references` [EXTRACTED]
 - [[ToolResultInjectionScanner]] - `method` [EXTRACTED]

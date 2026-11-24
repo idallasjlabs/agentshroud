@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security.py"
 type: "code"
-community: "TestConfigValidation"
+community: "test_security.py"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_securitypy
 ---
 
 # test_shortcut_empty_content_rejected()
@@ -16,4 +16,4 @@ tags:
 - [[ForwardRequest]] - `calls` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_securitypy

@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "soc/router.py"
-location: "L174"
+community: "_FakeRBAC"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/_FakeRBAC
 ---
 
 # .check_permission()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

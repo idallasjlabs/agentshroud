@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/security/collaborator_tracker.py"
 type: "code"
-community: "load_config"
-location: "L278"
+community: "CollaboratorActivityTracker"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/CollaboratorActivityTracker
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
+- [[Path_52]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker

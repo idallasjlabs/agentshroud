@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-psREADME]] - `contains` [EXTRACTED]
-- [[Purpose_107]] - `contains` [EXTRACTED]
+- [[Purpose_105]] - `contains` [EXTRACTED]
 - [[Related Skills_37]] - `contains` [EXTRACTED]
 - [[Usage_47]] - `contains` [EXTRACTED]
 

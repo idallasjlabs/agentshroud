@@ -15,6 +15,6 @@ tags:
 - [[Default PII configuration for tests]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[fixture_70]] - `references` [EXTRACTED]
+- [[fixture_77]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

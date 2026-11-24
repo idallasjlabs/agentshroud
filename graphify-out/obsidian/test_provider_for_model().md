@@ -12,7 +12,7 @@ tags:
 # test_provider_for_model()
 
 ## Connections
-- [[parametrize_11]] - `references` [EXTRACTED]
+- [[parametrize_9]] - `references` [EXTRACTED]
 - [[provider_for_model()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 

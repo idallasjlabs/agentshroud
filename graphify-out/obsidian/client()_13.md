@@ -1,20 +1,25 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L16"
+community: "GatewayConfig"
+location: "L79"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - graphify/INFERRED
+  - community/GatewayConfig
 ---
 
 # client()
 
 ## Connections
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_91]] - `references` [EXTRACTED]
-- [[lifespan()]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/INFERRED #community/GatewayConfig

@@ -11,7 +11,7 @@ tags:
 # fixture
 
 ## Connections
-- [[dot-client()]] - `references` [EXTRACTED]
+- [[dot-client()_4]] - `references` [EXTRACTED]
 - [[store()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestReportAPI

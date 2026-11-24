@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_patch_urlopen"
+community: "TokenValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_patch_urlopen
+  - community/TokenValidator
 ---
 
 # Exception
 
 ## Connections
-- [[_patch_urlopen()]] - `references` [EXTRACTED]
+- [[TokenError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_patch_urlopen
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

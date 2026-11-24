@@ -15,6 +15,6 @@ tags:
 - [[AuditStore]] - `calls` [EXTRACTED]
 - [[Opening a pre-migration DB (no bot_id column) should auto-migrate.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStoreBotId]] - `method` [EXTRACTED]
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

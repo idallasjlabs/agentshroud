@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-agentsagentsi-session-prompt]] - `contains` [EXTRACTED]
 - [[Re-injection Command (for reference)]] - `contains` [EXTRACTED]
-- [[Role_35]] - `contains` [EXTRACTED]
+- [[Role_36]] - `contains` [EXTRACTED]
 - [[Rules]] - `contains` [EXTRACTED]
 - [[Trigger_1]] - `contains` [EXTRACTED]
 - [[Workflow Survey → Draft → Inject → Confirm]] - `contains` [EXTRACTED]

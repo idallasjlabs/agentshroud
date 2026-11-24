@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "PromptGuard"
+community: "ContextGuard"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/ContextGuard
 ---
 
 # .test_context_guard_session_isolation_under_load()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ContextGuard]] - `calls` [INFERRED]
 - [[Sessions shouldn't leak data under concurrent access.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[TestConcurrency]] - `method` [EXTRACTED]
 - [[analyze()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

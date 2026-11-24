@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_manager.py"
 type: "rationale"
-community: ".get_or_create_session"
+community: "UserSessionManager"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_or_create_session
+  - community/UserSessionManager
 ---
 
 # Validate and sanitize bot_id to prevent path traversal. Allows alphanumeric…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_validate_bot_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_or_create_session
+#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

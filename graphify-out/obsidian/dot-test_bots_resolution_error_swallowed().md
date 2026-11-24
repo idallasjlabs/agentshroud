@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestSetConfig"
+community: "test_middleware_coverage.py"
 location: "L933"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSetConfig
+  - community/test_middleware_coveragepy
 ---
 
 # .test_bots_resolution_error_swallowed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSetConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSetConfig
+#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

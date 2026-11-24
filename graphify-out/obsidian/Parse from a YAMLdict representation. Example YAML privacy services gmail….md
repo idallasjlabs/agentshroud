@@ -12,6 +12,6 @@ tags:
 # Parse from a YAML/dict representation. Example YAML: privacy: services: gmail:…
 
 ## Connections
-- [[dot-from_dict()]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_2]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

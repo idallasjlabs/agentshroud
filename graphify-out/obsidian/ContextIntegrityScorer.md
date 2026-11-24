@@ -12,7 +12,7 @@ tags:
 # ContextIntegrityScorer
 
 ## Connections
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-__init__()_82]] - `method` [EXTRACTED]
 - [[dot-score_context()]] - `method` [EXTRACTED]
 - [[Scores the integrity of a session's context. Usage scorer =…]] - `rationale_for` [EXTRACTED]
 - [[context_integrity.py]] - `contains` [EXTRACTED]

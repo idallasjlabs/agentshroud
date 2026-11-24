@@ -12,7 +12,7 @@ members: 38
 - [[dot-test_credential_redaction()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_disabled_protection()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_dynamic_bot_hostname_redaction()]] - code - gateway/tests/test_prompt_protection.py
-- [[dot-test_edge_cases()_2]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_edge_cases()_3]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_file_reference_redaction()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
@@ -29,7 +29,7 @@ members: 38
 - [[Product name 'agentshroud' and 'agentshroud-openclaw' are public branding —…]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test adding protected content.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test cases for PromptProtection class.]] - rationale - gateway/tests/test_prompt_protection.py
-- [[Test edge cases and error conditions._1]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test edge cases and error conditions._2]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py
@@ -55,7 +55,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_middleware.py]]
+- 4 edges to [[_COMMUNITY_run]]
 
 ## Top bridge nodes
 - [[TestPromptProtection]] - degree 21, connects to 1 community

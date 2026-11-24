@@ -15,7 +15,7 @@ tags:
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[Empty choices list raises ForwardError.]] - `rationale_for` [EXTRACTED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[mock_post()_2]] - `contains` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]

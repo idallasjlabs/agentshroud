@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestEdgeKill"
+community: "TestAgentsRegistry"
 location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEdgeKill
+  - community/TestAgentsRegistry
 ---
 
 # .test_rbac_denial_is_403()
@@ -15,4 +15,4 @@ tags:
 - [[FakeCaller_1]] - `calls` [EXTRACTED]
 - [[TestAgentsRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEdgeKill
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

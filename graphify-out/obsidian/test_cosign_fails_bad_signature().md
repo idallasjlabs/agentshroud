@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[_instant_wait_for()_1]] - `indirect_call` [INFERRED]
-- [[asyncio_79]] - `references` [EXTRACTED]
+- [[asyncio_78]] - `references` [EXTRACTED]
 - [[test_image_verifier.py]] - `contains` [EXTRACTED]
 - [[verify_image()]] - `calls` [EXTRACTED]
 

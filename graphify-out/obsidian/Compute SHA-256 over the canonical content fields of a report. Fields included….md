@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "rationale"
-community: "IntelReportStore"
+community: "CompetitiveIntelReport"
 location: "L167"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/CompetitiveIntelReport
 ---
 
 # Compute SHA-256 over the canonical content fields of a report. Fields included:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_compute_hash()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/IntelReportStore
+#graphify/rationale #graphify/EXTRACTED #community/CompetitiveIntelReport

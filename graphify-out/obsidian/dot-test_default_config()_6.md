@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "ToolResultSanitizerConfig"
-location: "L20"
+community: "TestEgressFilterConfig"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizerConfig
+  - community/TestEgressFilterConfig
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
+- [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizerConfig
+#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig

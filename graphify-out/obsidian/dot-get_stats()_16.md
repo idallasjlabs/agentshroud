@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "._check_impl"
-location: "L616"
+community: "SlackAPIProxy"
+location: "L435"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_check_impl
+  - community/SlackAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-get_log()]] - `calls` [EXTRACTED]
-- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_check_impl
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

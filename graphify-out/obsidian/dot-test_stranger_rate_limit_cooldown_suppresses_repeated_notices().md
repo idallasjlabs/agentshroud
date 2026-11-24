@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_rate_limit_resets_after_window"
+community: ".test_stranger_within_limit_triggers_approval_workflow"
 location: "L7789"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_rate_limit_resets_after_window
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # .test_stranger_rate_limit_cooldown_suppresses_repeated_notices()
@@ -18,8 +18,8 @@ tags:
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_rl_notice()_2]] - `contains` [EXTRACTED]
 - [[fake_rl_notice()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_rate_limit_resets_after_window
+#graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "middleware.py"
+community: "run"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # Test removal of function call XML blocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_function_calls_xml_removal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/run

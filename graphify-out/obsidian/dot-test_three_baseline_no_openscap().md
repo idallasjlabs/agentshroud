@@ -12,6 +12,6 @@ tags:
 # .test_three_baseline_no_openscap()
 
 ## Connections
-- [[TestScoreContainerHardening]] - `method` [EXTRACTED]
+- [[TestScoreContainerHardening_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreContainerHardening

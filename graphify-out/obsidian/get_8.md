@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "fastapi.md"
+community: "dashboard_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/dashboard_endpointspy
 ---
 
 # get
 
 ## Connections
-- [[health_check()_1]] - `references` [EXTRACTED]
-- [[health_check_detail()]] - `references` [EXTRACTED]
+- [[alerts_summary()]] - `references` [EXTRACTED]
+- [[logs_recent()]] - `references` [EXTRACTED]
+- [[proxy_status()_1]] - `references` [EXTRACTED]
+- [[ssh_hosts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

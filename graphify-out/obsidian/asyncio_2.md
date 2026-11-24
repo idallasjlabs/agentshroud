@@ -1,30 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "test_dashboard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_dashboardpy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_decide_mfa_disabled_approves_without_code()]] - `references` [EXTRACTED]
-- [[test_decide_mfa_enabled_invalid_code_denied()]] - `references` [EXTRACTED]
-- [[test_decide_mfa_enabled_missing_code_denied()]] - `references` [EXTRACTED]
-- [[test_decide_mfa_enabled_replayed_code_denied()]] - `references` [EXTRACTED]
-- [[test_decide_mfa_enabled_valid_code_approves()]] - `references` [EXTRACTED]
-- [[test_decide_reject_never_requires_mfa()]] - `references` [EXTRACTED]
-- [[test_enhanced_decide_missing_code_denied()]] - `references` [EXTRACTED]
-- [[test_enhanced_decide_missing_item_fail_closed()]] - `references` [EXTRACTED]
-- [[test_enhanced_decide_reject_no_mfa()]] - `references` [EXTRACTED]
-- [[test_enhanced_decide_valid_code_approves()]] - `references` [EXTRACTED]
-- [[test_enhanced_tool_call_critical_allowed_with_mfa()]] - `references` [EXTRACTED]
-- [[test_enhanced_tool_call_critical_blocked_without_mfa()]] - `references` [EXTRACTED]
-- [[test_enhanced_tool_call_high_allowed_with_mfa()]] - `references` [EXTRACTED]
-- [[test_enhanced_tool_call_high_blocked_without_mfa()]] - `references` [EXTRACTED]
-- [[test_enhanced_tool_call_medium_not_gated()]] - `references` [EXTRACTED]
+- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - `references` [EXTRACTED]
+- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - `references` [EXTRACTED]
+- [[test_dashboard.py]] - `imports` [EXTRACTED]
+- [[test_dashboard_has_csp_header()]] - `references` [EXTRACTED]
+- [[test_dashboard_requires_auth()]] - `references` [EXTRACTED]
+- [[test_dashboard_serves_html()]] - `references` [EXTRACTED]
+- [[test_dashboard_stats_endpoint()]] - `references` [EXTRACTED]
+- [[test_dashboard_stats_requires_auth()]] - `references` [EXTRACTED]
+- [[test_dashboard_xss_prevention()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

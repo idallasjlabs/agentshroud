@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_ledger.py"
+source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "ingest_api/config.py"
-location: "L138"
+community: "make_event"
+location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/make_event
 ---
 
 # test_get_stats()
 
 ## Connections
-- [[Test stats calculation]] - `rationale_for` [EXTRACTED]
-- [[asyncio_42]] - `references` [EXTRACTED]
-- [[test_ledger.py]] - `contains` [EXTRACTED]
+- [[Stats track event counts]] - `rationale_for` [EXTRACTED]
+- [[asyncio_4]] - `references` [EXTRACTED]
+- [[make_event()]] - `calls` [EXTRACTED]
+- [[test_event_bus.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/make_event

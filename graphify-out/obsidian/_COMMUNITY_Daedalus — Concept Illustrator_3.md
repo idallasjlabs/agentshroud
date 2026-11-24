@@ -13,7 +13,7 @@ members: 11
 - [[Output Format_31]] - document - .agents/skills/daedalus/SKILL.md
 - [[Persona_11]] - document - .agents/skills/daedalus/SKILL.md
 - [[Quality Checklist_17]] - document - .agents/skills/daedalus/SKILL.md
-- [[Role_58]] - document - .agents/skills/daedalus/SKILL.md
+- [[Role_59]] - document - .agents/skills/daedalus/SKILL.md
 - [[System Prompt_11]] - document - .agents/skills/daedalus/SKILL.md
 - [[architecture.puml (PlantUML)_1]] - document - .agents/skills/daedalus/SKILL.md
 - [[daedalusSKILL]] - document - .agents/skills/daedalus/SKILL.md

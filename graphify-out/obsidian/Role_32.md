@@ -1,8 +1,8 @@
 ---
-source_file: ".omp/agents/apollo.md"
+source_file: ".github/agents/i-apollo.agent.md"
 type: "document"
 community: "Technical Specification"
-location: "L9"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer_4]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Technical_Specification

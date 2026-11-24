@@ -12,8 +12,8 @@ tags:
 # WebContentScanner
 
 ## Connections
-- [[dot-__init__()_50]] - `references` [EXTRACTED]
-- [[dot-__init__()_150]] - `method` [EXTRACTED]
+- [[dot-__init__()_153]] - `references` [EXTRACTED]
+- [[dot-__init__()_141]] - `method` [EXTRACTED]
 - [[dot-_scan_encoded_payloads()]] - `method` [EXTRACTED]
 - [[dot-_scan_hidden_content()]] - `method` [EXTRACTED]
 - [[dot-_scan_pii()]] - `method` [EXTRACTED]

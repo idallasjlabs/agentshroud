@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "DNSBlocklist"
+community: "NetworkValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/NetworkValidator
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_191]] - `references` [EXTRACTED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

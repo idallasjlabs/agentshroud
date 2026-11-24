@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "rationale"
-community: "installer.py"
+community: "detect_runtime"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/detect_runtime
 ---
 
 # Get available runtimes with recommendations.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_runtimes()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/installerpy
+#graphify/rationale #graphify/EXTRACTED #community/detect_runtime

@@ -15,6 +15,6 @@ tags:
 - [[CredentialInjector]] - `calls` [EXTRACTED]
 - [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
 - [[TestCredentialLeakDetection]] - `method` [EXTRACTED]
-- [[fixture_131]] - `references` [EXTRACTED]
+- [[fixture_134]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CredentialInjector

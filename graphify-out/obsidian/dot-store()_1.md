@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_60]] - `references` [EXTRACTED]
+- [[Path_59]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
-- [[fixture_112]] - `references` [EXTRACTED]
+- [[fixture_114]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/IntelReportStore

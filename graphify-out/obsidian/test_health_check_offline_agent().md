@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Test health check for offline agent]] - `rationale_for` [EXTRACTED]
 - [[_raise_connect()]] - `indirect_call` [INFERRED]
-- [[asyncio_59]] - `references` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

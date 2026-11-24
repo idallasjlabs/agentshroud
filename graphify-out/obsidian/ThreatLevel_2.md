@@ -12,9 +12,9 @@ tags:
 # ThreatLevel
 
 ## Connections
-- [[Enum_30]] - `inherits` [EXTRACTED]
+- [[Enum_32]] - `inherits` [EXTRACTED]
 - [[Threat levels for detected issues.]] - `rationale_for` [EXTRACTED]
 - [[git_guard.py]] - `contains` [EXTRACTED]
-- [[str_16]] - `inherits` [EXTRACTED]
+- [[str_17]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GitGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "TestMediumSeverity"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/TestMediumSeverity
 ---
 
 # .test_jailbreak_attempt()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMediumSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/TestMediumSeverity

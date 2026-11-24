@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[BrowserSecurityGuard]] - `uses` [INFERRED]
-- [[fixture_49]] - `references` [EXTRACTED]
+- [[fixture_59]] - `references` [EXTRACTED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

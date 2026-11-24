@@ -1,49 +1,22 @@
 ---
 type: community
-members: 75
+members: 36
 ---
 
 # test_ws_e_rt2_inbound_encoding.py
 
-**Members:** 75 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[dot-__init__()_228]] - code - gateway/security/encoding_detector.py
-- [[dot-analyze()_2]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_base64_segments()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_hex()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_rot13()]] - code - gateway/security/encoding_detector.py
-- [[dot-decode_url()]] - code - gateway/security/encoding_detector.py
-- [[dot-replace_homoglyphs()]] - code - gateway/security/encoding_detector.py
-- [[dot-setup_method()_38]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-strip_zero_width()]] - code - gateway/security/encoding_detector.py
-- [[dot-test_base64_detected()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_config_disable_base64()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_empty_input()_3]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_homoglyph_replaced()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_nested_encoding()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_plain_text_no_detection()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_short_base64_not_flagged()_1]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_url_encoding_detected()]] - code - gateway/tests/test_encoding_detector.py
-- [[dot-test_zero_width_stripped()]] - code - gateway/tests/test_encoding_detector.py
 - [[A homoglyph-obfuscated injection is normalized-and-blocked inbound. The payload…]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[A nested base64(base64(injection)) payload is peeled and blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[A plain unencoded benign message is untouched by the encoding step.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Cleartext injection is not re-rotated into noise (indicator already present).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Decode rot13-obfuscated injection payloads. rot13 is self-inverse and applies…]] - rationale - gateway/security/encoding_detector.py
-- [[DecodedLayer]] - code - gateway/security/encoding_detector.py
 - [[Double-base64 encoded lower-ranked injection is caught (was top-5 only).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[Empty inbound text is handled without error.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[EncodingConfig]] - code - gateway/security/encoding_detector.py
-- [[EncodingDetector]] - code - gateway/security/encoding_detector.py
-- [[EncodingResult]] - code - gateway/security/encoding_detector.py
 - [[Fully percent-encoded injection is decoded-and-blocked on inbound. The…]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[If the encoding detector raises, non-owner traffic is blocked (fail-closed).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Ordinary base64 content with no injection indicators is forwarded.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Owner encoded-injection is audited and allowed, never blocked.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[Pipeline wired with the guards relevant to inbound encoding defence. No…]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[TestEncodingDetector]] - code - gateway/tests/test_encoding_detector.py
-- [[The check_rot13 config flag gates the rot13 layer.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[WS-E RT-2 — Inbound encoding bypass (HIGH) regression tests. Before this fix an…]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[_make_pipeline()_4]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[`_check_encoded_content` now matches rules beyond the old top-5 slice. Failing-…]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
@@ -51,22 +24,10 @@ members: 75
 - [[analyze()_1]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[asyncio_89]] - code
 - [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[encoding_detector.py]] - code - gateway/security/encoding_detector.py
 - [[hex-encoded injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[hex-encoded lower-ranked injection is caught by the full ruleset.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[replacer()]] - code - gateway/security/encoding_detector.py
-- [[replacer()_1]] - code - gateway/security/encoding_detector.py
-- [[replacer()_2]] - code - gateway/security/encoding_detector.py
-- [[rot13 decode is NOT applied to benign prose (no injection indicators).]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[rot13 layer is surfaced when the decoded text reveals injection language.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[rot13-looking prose with no injection indicators is left alone.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[rot13-obfuscated injection is decoded-and-blocked on the inbound path.]] - rationale - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector.py]] - code - gateway/tests/test_encoding_detector.py
-- [[test_encoding_detector_decodes_rot13_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_can_be_disabled()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_empty_text()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_ignores_benign_prose()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
-- [[test_encoding_detector_rot13_skips_already_visible_injection()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_inbound_base64_injection_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_inbound_benign_base64_not_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
 - [[test_inbound_benign_rot13_prose_not_decoded_or_blocked()]] - code - gateway/tests/test_ws_e_rt2_inbound_encoding.py
@@ -92,24 +53,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 10 edges to [[_COMMUNITY_lifespan.py]]
+- 8 edges to [[_COMMUNITY_EncodingDetector]]
 - 7 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
-- 7 edges to [[_COMMUNITY_EnhancedApprovalQueue]]
-- 5 edges to [[_COMMUNITY_PIIConfig]]
-- 4 edges to [[_COMMUNITY_PromptGuard]]
-- 3 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 3 edges to [[_COMMUNITY_test_redteam_probes.py]]
-- 3 edges to [[_COMMUNITY_test_e2e_watchtower.py]]
+- 3 edges to [[_COMMUNITY_PipelineAction]]
 - 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_edge_service_routes.py]]
-- 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 2 edges to [[_COMMUNITY_test_encoding_detector_decodes_rot13_injection]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
 - 1 edge to [[_COMMUNITY_prompt_guard.py]]
 
 ## Top bridge nodes
 - [[test_ws_e_rt2_inbound_encoding.py]] - degree 38, connects to 8 communities
-- [[EncodingDetector]] - degree 35, connects to 7 communities
 - [[_make_pipeline()_4]] - degree 19, connects to 4 communities
-- [[encoding_detector.py]] - degree 10, connects to 3 communities
+- [[test_inbound_encoding_detector_error_fails_closed()]] - degree 6, connects to 1 community
 - [[test_inbound_base64_injection_blocked()]] - degree 5, connects to 1 community
+- [[test_inbound_owner_encoded_injection_allowed()]] - degree 5, connects to 1 community

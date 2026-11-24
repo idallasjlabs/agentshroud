@@ -12,6 +12,6 @@ tags:
 # Scan a response body for prompt injection, PII, and hidden content. This is…
 
 ## Connections
-- [[dot-scan_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-scan_response()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/WebProxyResult

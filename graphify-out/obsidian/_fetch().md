@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "DraftEntry"
+community: ".verify_entry"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/verify_entry
 ---
 
 # _fetch()
@@ -16,4 +16,4 @@ tags:
 - [[FetchOutcome]] - `calls` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/verify_entry

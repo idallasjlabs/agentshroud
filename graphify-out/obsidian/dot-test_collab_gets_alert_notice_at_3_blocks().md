@@ -15,8 +15,8 @@ tags:
 - [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[Collaborator must receive warning text when they reach 3 security blocks.]] - `rationale_for` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_send()_17]] - `contains` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_send()_14]] - `contains` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

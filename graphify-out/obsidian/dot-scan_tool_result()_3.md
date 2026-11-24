@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L371"
+community: "prompt_guard.py"
+location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/prompt_guardpy
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-_scan()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
-- [[Scan a tool result with the lower confidence floor. Args tool_name Name of…]] - `rationale_for` [EXTRACTED]
-- [[ToolResultPIIReport]] - `references` [EXTRACTED]
+- [[dot-scan()_3]] - `calls` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
+- [[Scan tool result content for indirect prompt injection. Tool results (web…]] - `rationale_for` [EXTRACTED]
+- [[ScanResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

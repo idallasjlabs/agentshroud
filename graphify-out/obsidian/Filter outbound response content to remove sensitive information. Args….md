@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "middleware.py"
+community: "run"
 location: "L92"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # Filter outbound response content to remove sensitive information. Args:…
 
 ## Connections
-- [[dot-filter_response()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/run

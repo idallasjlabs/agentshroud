@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_mcp_policy_default_failclosed.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # .test_engine_requires_approval_for_destructive_tool_on_known_server()
 
 ## Connections
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
 - [[Fail-closed intent even on a known server, an obviously destructive tool must…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
 - [[_write()_1]] - `calls` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

@@ -1,19 +1,21 @@
 ---
-source_file: "gateway/web/management.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "EgressFilter"
-location: "L890"
+community: "api.py"
+location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/apipy
 ---
 
 # killswitch()
 
 ## Connections
-- [[Serve the emergency kill switch page.]] - `rationale_for` [EXTRACTED]
-- [[get_3]] - `references` [EXTRACTED]
-- [[management.py]] - `contains` [EXTRACTED]
+- [[Emergency kill switch freeze, shutdown, or disconnect.]] - `rationale_for` [EXTRACTED]
+- [[KillSwitchAction]] - `references` [EXTRACTED]
+- [[api.py_2]] - `contains` [EXTRACTED]
+- [[execute_killswitch()]] - `calls` [EXTRACTED]
+- [[post_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/apipy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "_TrustCaptor"
+community: "test_forward_routing.py"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_TrustCaptor
+  - community/test_forward_routingpy
 ---
 
 # Minimal app_state for owner-trust tests.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_trust_app_state()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_TrustCaptor
+#graphify/rationale #graphify/EXTRACTED #community/test_forward_routingpy

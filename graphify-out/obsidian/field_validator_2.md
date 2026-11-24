@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # field_validator
@@ -14,4 +14,4 @@ tags:
 - [[dot-validate_default_url()]] - `references` [EXTRACTED]
 - [[dot-validate_targets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

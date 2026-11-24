@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "TelegramAPIProxy"
 location: "L631"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/TelegramAPIProxy
 ---
 
 # ._is_owner_chat()
@@ -18,4 +18,4 @@ tags:
 - [[Return True when chat_id belongs to the configured owner. Handles both real…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

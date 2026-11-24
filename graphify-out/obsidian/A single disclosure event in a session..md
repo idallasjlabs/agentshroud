@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "test_all_modules_enforce.py"
+community: "SessionContext"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/SessionContext
 ---
 
 # A single disclosure event in a session.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DisclosureEvent]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/rationale #graphify/EXTRACTED #community/SessionContext

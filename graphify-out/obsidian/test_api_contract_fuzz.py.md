@@ -15,7 +15,7 @@ tags:
 - [[Schema-driven contract fuzzing for the ingestdata-plane API (SCRUM-76).…]] - `rationale_for` [EXTRACTED]
 - [[_deep_nest()]] - `contains` [EXTRACTED]
 - [[_fuzzable_endpoints()]] - `contains` [EXTRACTED]
-- [[client()_5]] - `contains` [EXTRACTED]
+- [[client()_4]] - `contains` [EXTRACTED]
 - [[test_destructive_routes_are_excluded()]] - `contains` [EXTRACTED]
 - [[test_endpoint_survives_adversarial_body()]] - `contains` [EXTRACTED]
 - [[test_fuzz_surface_is_nonempty()]] - `contains` [EXTRACTED]

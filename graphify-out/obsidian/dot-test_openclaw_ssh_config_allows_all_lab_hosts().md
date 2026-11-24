@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_openclaw_ssh_config_allows_all_lab_hosts"
 location: "L763"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_openclaw_ssh_config_allows_all_lab_hosts
 ---
 
 # .test_openclaw_ssh_config_allows_all_lab_hosts()
@@ -15,4 +15,4 @@ tags:
 - [[OpenClaw's SSH client config must have Host blocks for all three lab hosts.…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_ssh_config_allows_all_lab_hosts

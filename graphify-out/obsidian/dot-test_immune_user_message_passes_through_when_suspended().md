@@ -17,8 +17,8 @@ tags:
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
-- [[fake_send()_21]] - `contains` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
+- [[fake_send()_18]] - `contains` [EXTRACTED]
 - [[fake_send()_12]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

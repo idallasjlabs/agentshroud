@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_limits.py"
 type: "code"
-community: "ResourceGuard"
+community: "TestTempFiles"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/TestTempFiles
 ---
 
 # TestTempFiles
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_register_under_limit()]] - `method` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/TestTempFiles

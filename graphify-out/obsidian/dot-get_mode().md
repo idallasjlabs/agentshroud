@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L483"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # .get_mode()
@@ -15,4 +15,4 @@ tags:
 - [[PIISanitizer]] - `method` [EXTRACTED]
 - [[Return current enforcement mode Returns enforce or monitor]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

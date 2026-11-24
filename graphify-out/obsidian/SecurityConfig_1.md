@@ -28,7 +28,7 @@ tags:
 - [[dot-test_security_config_pii_sanitizer_enforce()]] - `calls` [EXTRACTED]
 - [[dot-test_security_config_prompt_guard_enforce()]] - `calls` [EXTRACTED]
 - [[dot-test_security_config_subagent_monitor_enforce()]] - `calls` [EXTRACTED]
-- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[Complete security configuration]] - `rationale_for` [EXTRACTED]
 - [[TestEnforceDefaults]] - `uses` [INFERRED]
 - [[TestSecurityConfigDefaults]] - `uses` [INFERRED]

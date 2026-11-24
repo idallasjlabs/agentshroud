@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "TestOutboundInfoFilter"
-location: "L23"
+community: "run"
+location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundInfoFilter
+  - community/run
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/run

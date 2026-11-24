@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Rewriting the first examined row's prev_hash must not be self-anchoring.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStoreAnchoredVerify]] - `method` [EXTRACTED]
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

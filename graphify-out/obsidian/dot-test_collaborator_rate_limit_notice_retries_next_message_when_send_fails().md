@@ -19,7 +19,7 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_rate_notice()_1]] - `contains` [EXTRACTED]
 - [[fake_rate_notice()_2]] - `indirect_call` [INFERRED]
 

@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "DifferentialPIIDetector"
+community: "SessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/SessionManager
 ---
 
 # fixture
 
 ## Connections
-- [[default_config()_4]] - `references` [EXTRACTED]
-- [[detector()]] - `references` [EXTRACTED]
+- [[dot-manager()_2]] - `references` [EXTRACTED]
+- [[manager()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/SessionManager

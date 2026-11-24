@@ -12,6 +12,7 @@ tags:
 
 ## Connections
 - [[test_compose_flags_per_mode()]] - `references` [EXTRACTED]
+- [[test_edge_funnel_profile_is_opt_in_and_needs_an_edge_mode()]] - `references` [EXTRACTED]
 - [[test_environment_value_wins()]] - `references` [EXTRACTED]
 - [[test_unknown_mode_fails_closed()]] - `references` [EXTRACTED]
 - [[test_what_each_mode_runs()]] - `references` [EXTRACTED]

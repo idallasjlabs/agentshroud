@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuthSecurityValidator"
+community: "test_security_audit.py"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/test_security_auditpy
 ---
 
 # OAuthSecurityValidator
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_201]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_198]] - `method` [EXTRACTED]
 - [[dot-check_state_reuse()]] - `method` [EXTRACTED]
 - [[dot-create_consent_cookie()]] - `method` [EXTRACTED]
 - [[dot-record_state_used()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[validator()_1]] - `uses` [INFERRED]
 - [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

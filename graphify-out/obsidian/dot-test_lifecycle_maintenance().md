@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestMemoryLifecycleManager"
+community: "middleware.py"
 location: "L340"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # .test_lifecycle_maintenance()
@@ -15,4 +15,4 @@ tags:
 - [[Test complete lifecycle maintenance run.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMemoryLifecycleManager
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

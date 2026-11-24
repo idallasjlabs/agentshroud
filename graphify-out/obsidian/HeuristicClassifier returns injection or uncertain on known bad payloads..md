@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "TestClassicOverride"
+community: "normalize_input"
 location: "L456"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestClassicOverride
+  - community/normalize_input
 ---
 
 # HeuristicClassifier returns injection or uncertain on known bad payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHeuristicClassifierDirectly]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestClassicOverride
+#graphify/rationale #graphify/EXTRACTED #community/normalize_input

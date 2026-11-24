@@ -1,54 +1,21 @@
 ---
 type: community
-members: 41
+members: 8
 ---
 
 # get_wazuh_summary
 
-**Members:** 41 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[dot-test_clean_when_installed_not_running()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_clean_when_installed_not_running()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_get_fim_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_get_rootkit_events()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_level_to_severity()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_not_run_when_no_alert_dir()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_not_run_when_no_alert_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_parse_empty()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_fim_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_parse_rootkit_event()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_returns_summary_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_returns_summary_for_empty_dir()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[Any_37]] - code
-- [[Filter alerts to file integrity monitoring events only. Args alerts List of…]] - rationale - gateway/security/wazuh_client.py
-- [[Filter alerts to rootkit detection events only. Args alerts List of parsed…]] - rationale - gateway/security/wazuh_client.py
-- [[Generate a summary dict suitable for the health report. Args alerts List of…_1]] - rationale - gateway/security/wazuh_client.py
-- [[Map Wazuh alert level to severity string. Args level Wazuh alert level…]] - rationale - gateway/security/wazuh_client.py
-- [[Parse a single Wazuh alert. Args raw Raw Wazuh alert JSON. Returns Parsed…]] - rationale - gateway/security/wazuh_client.py
-- [[Path_32]] - code
-- [[Read Wazuh alerts from the alert directory. Args alert_dir Directory…]] - rationale - gateway/security/wazuh_client.py
-- [[Return True if a non-zombie falco process is running inside this container.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if wazuh-agentd is running as a local process inside this container.]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest Falco alert summary from the local alert directory. CC-20 If…]] - rationale - gateway/security/scanner_integration.py
 - [[Return latest Wazuh alert summary from the shared alert volume. wazuh-agentd…]] - rationale - gateway/security/scanner_integration.py
-- [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - rationale - gateway/ingest_api/main.py
-- [[TestGetFalcoSummary]] - code - gateway/tests/test_scanner_integration.py
 - [[TestGetWazuhSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestWazuhParser]] - code - gateway/tests/test_security_toolchain.py
-- [[_is_falco_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_wazuh_agent_running()]] - code - gateway/security/scanner_integration.py
-- [[datetime_3]] - code
-- [[generate_summary()_3]] - code - gateway/security/wazuh_client.py
-- [[get_falco_summary()]] - code - gateway/security/scanner_integration.py
-- [[get_fim_events()]] - code - gateway/security/wazuh_client.py
-- [[get_rootkit_events()]] - code - gateway/security/wazuh_client.py
 - [[get_wazuh_summary()]] - code - gateway/security/scanner_integration.py
-- [[level_to_severity()]] - code - gateway/security/wazuh_client.py
-- [[parse_alert()_1]] - code - gateway/security/wazuh_client.py
-- [[read_alerts()_1]] - code - gateway/security/wazuh_client.py
-- [[wazuh_alerts()]] - code - gateway/ingest_api/main.py
-- [[wazuh_client.py_2]] - code - gateway/security/wazuh_client.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,19 +25,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_scanner_integration.py]]
-- 7 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 5 edges to [[_COMMUNITY_Any]]
-- 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_get_trivy_image_summaries]]
-- 1 edge to [[_COMMUNITY_get_trivy_summary]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 3 edges to [[_COMMUNITY_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 2 edges to [[_COMMUNITY_Any_1]]
+- 1 edge to [[_COMMUNITY_compute_scorecard]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
-- [[generate_summary()_3]] - degree 13, connects to 5 communities
-- [[get_wazuh_summary()]] - degree 13, connects to 4 communities
-- [[wazuh_client.py_2]] - degree 11, connects to 4 communities
-- [[get_falco_summary()]] - degree 12, connects to 3 communities
-- [[read_alerts()_1]] - degree 10, connects to 1 community
+- [[get_wazuh_summary()]] - degree 13, connects to 6 communities
+- [[TestGetWazuhSummary]] - degree 4, connects to 1 community
+- [[_is_wazuh_agent_running()]] - degree 3, connects to 1 community

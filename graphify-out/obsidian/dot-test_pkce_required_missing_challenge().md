@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthRequest"
+community: "test_security_audit.py"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthRequest
+  - community/test_security_auditpy
 ---
 
 # .test_pkce_required_missing_challenge()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthRequest]] - `calls` [INFERRED]
 - [[TestPKCE]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthRequest
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

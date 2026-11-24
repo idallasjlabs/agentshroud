@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
+- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
 
 ## Top bridge nodes
 - [[TestSetMode]] - degree 10, connects to 1 community

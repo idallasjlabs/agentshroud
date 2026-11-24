@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_enhanced_approval.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "MCPProxy"
-location: "L300"
+community: "_req"
+location: "L555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/_req
 ---
 
 # .test_owner_bypass()
 
 ## Connections
-- [[MCPToolCall]] - `calls` [EXTRACTED]
-- [[Test owner bypass for high-tier tools.]] - `rationale_for` [EXTRACTED]
-- [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
-- [[asyncio_48]] - `references` [EXTRACTED]
+- [[TestGitGuard_1]] - `method` [EXTRACTED]
+- [[_FakeRBAC]] - `calls` [EXTRACTED]
+- [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPProxy
+#graphify/code #graphify/EXTRACTED #community/_req

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPServerConfig"
+community: "test_mcp_proxy.py"
 location: "L316"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPServerConfig
+  - community/test_mcp_proxypy
 ---
 
 # TestConnectionPool
@@ -21,4 +21,4 @@ tags:
 - [[StdioConnection]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/MCPServerConfig
+#graphify/code #graphify/INFERRED #community/test_mcp_proxypy

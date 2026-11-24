@@ -1,16 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "AuditStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/AuditStore
 ---
 
 # fixture
 
 ## Connections
-- [[clean_auth_env()]] - `references` [EXTRACTED]
+- [[dot-audit_store()]] - `references` [EXTRACTED]
+- [[dot-audit_store()_1]] - `references` [EXTRACTED]
+- [[dot-export_config()]] - `references` [EXTRACTED]
+- [[dot-store()_2]] - `references` [EXTRACTED]
+- [[dot-store()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

@@ -38,10 +38,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_asyncio]]
+- 5 edges to [[_COMMUNITY_asyncio]]
 - 3 edges to [[_COMMUNITY__sleep]]
 - 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY__make_report]]
 
 ## Top bridge nodes
 - [[dot-test_gives_up_and_marks_sent_after_max_retries()]] - degree 8, connects to 2 communities

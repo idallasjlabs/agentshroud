@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "email_send"
 location: "L370"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # Everything the post-routing forwarding steps (blocking or streaming) need, once…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_InboundResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/email_send

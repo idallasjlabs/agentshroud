@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "MCPProxy"
+community: "TestMCPProxyIntegration"
 location: "L256"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MCPProxy
+  - community/TestMCPProxyIntegration
 ---
 
 # Create an MCP proxy with approval queue.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-mcp_proxy_with_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MCPProxy
+#graphify/rationale #graphify/EXTRACTED #community/TestMCPProxyIntegration

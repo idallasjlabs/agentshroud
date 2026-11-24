@@ -10,7 +10,7 @@ members: 13
 ## Members
 - [[dot-ompagentsi-session-prompt]] - document - .omp/agents/i-session-prompt.md
 - [[Re-injection Command (for reference)_4]] - document - .omp/agents/i-session-prompt.md
-- [[Role_46]] - document - .omp/agents/i-session-prompt.md
+- [[Role_47]] - document - .omp/agents/i-session-prompt.md
 - [[Rules_7]] - document - .omp/agents/i-session-prompt.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_4]] - document - .omp/agents/i-session-prompt.md
 - [[Step 1 — Survey the Repo_4]] - document - .omp/agents/i-session-prompt.md

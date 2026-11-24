@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "rationale"
-community: "Any"
+community: "KeyRotationManager"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Any
+  - community/KeyRotationManager
 ---
 
 # Validate a credential. Returns: tuple: (is_valid, message)
 
 ## Connections
-- [[dot-validate()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-validate()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Any
+#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "DraftEntry"
+community: "test_intel_endpoint.py"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/test_intel_endpointpy
 ---
 
 # TestSubmitEndpoint
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_too_many_entries_rejected()]] - `method` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

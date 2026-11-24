@@ -9,7 +9,7 @@ members: 20
 
 ## Members
 - [[dot-from_environment()]] - code - gateway/security/egress_config.py
-- [[dot-test_default_config()_5]] - code - gateway/tests/test_egress_enforce.py
+- [[dot-test_default_config()_6]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_denylist_wildcards()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_effective_allowlist_basic()]] - code - gateway/tests/test_egress_enforce.py
 - [[dot-test_effective_allowlist_with_denylist()]] - code - gateway/tests/test_egress_enforce.py
@@ -38,11 +38,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 8 edges to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_GitGuard]]
 
 ## Top bridge nodes
 - [[TestEgressConfigDefaultEnforce]] - degree 3, connects to 2 communities
 - [[TestEgressFilterConfig]] - degree 10, connects to 1 community
 - [[dot-from_environment()]] - degree 6, connects to 1 community
-- [[dot-test_default_config()_5]] - degree 3, connects to 1 community
+- [[dot-test_default_config()_6]] - degree 3, connects to 1 community
 - [[dot-test_denylist_wildcards()]] - degree 3, connects to 1 community

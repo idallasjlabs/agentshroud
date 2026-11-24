@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "asyncio"
+community: "SecurityPipeline"
 location: "L686"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/SecurityPipeline
 ---
 
 # .test_full_trust_tool_result_injection_audited_not_blocked()
@@ -17,6 +17,6 @@ tags:
 - [[FULL-trust owner response scan runs, detection audited, delivery NOT blocked.]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
-- [[asyncio_37]] - `references` [EXTRACTED]
+- [[asyncio_34]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/SecurityPipeline

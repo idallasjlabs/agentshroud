@@ -1,26 +1,17 @@
 ---
-source_file: "docs/security/SECURITY_ARCHITECTURE.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Security Controls"
-location: "L119"
+community: "Playwright"
+location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Controls
+  - community/Playwright
 ---
 
 # Security Controls
 
 ## Connections
-- [[1. Container Isolation]] - `contains` [EXTRACTED]
-- [[2. Capability Dropping]] - `contains` [EXTRACTED]
-- [[2. Network Isolation]] - `contains` [EXTRACTED]
-- [[3. Resource Limits]] - `contains` [EXTRACTED]
-- [[4. Network Isolation]] - `contains` [EXTRACTED]
-- [[5. Audit Ledger]] - `contains` [EXTRACTED]
-- [[6. Approval Queue]] - `contains` [EXTRACTED]
-- [[7. Secrets Management]] - `contains` [EXTRACTED]
-- [[8. Bot Identity Separation]] - `contains` [EXTRACTED]
-- [[AgentShroud Security Architecture]] - `contains` [EXTRACTED]
+- [[Playwright_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Controls
+#graphify/document #graphify/EXTRACTED #community/Playwright

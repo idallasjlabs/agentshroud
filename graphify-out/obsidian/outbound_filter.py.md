@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "lifespan.py"
+community: "OutboundInfoFilter"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/OutboundInfoFilter
 ---
 
 # outbound_filter.py
@@ -22,4 +22,4 @@ tags:
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Mnemosyne — Retention Engineer_7]] - document - .agents/skills/mnemosyne/README.md
-- [[Purpose_110]] - document - .agents/skills/mnemosyne/README.md
+- [[Purpose_108]] - document - .agents/skills/mnemosyne/README.md
 - [[Related Skills_40]] - document - .agents/skills/mnemosyne/README.md
 - [[Usage_50]] - document - .agents/skills/mnemosyne/README.md
 - [[mnemosyneREADME]] - document - .agents/skills/mnemosyne/README.md

@@ -13,7 +13,7 @@ members: 7
 - [[Output Format_66]] - document - .cursor/agents/i-cr.md
 - [[Production-Specific Review Checks_3]] - document - .cursor/agents/i-cr.md
 - [[Review Principles_3]] - document - .cursor/agents/i-cr.md
-- [[Role_119]] - document - .cursor/agents/i-cr.md
+- [[Role_121]] - document - .cursor/agents/i-cr.md
 - [[Skill Code Review (CR)_3]] - document - .cursor/agents/i-cr.md
 
 ## Live Query (requires Dataview plugin)

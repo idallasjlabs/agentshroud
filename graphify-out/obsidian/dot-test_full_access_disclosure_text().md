@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[fake_send_text()_1]] - `indirect_call` [INFERRED]
 - [[full_access collaborator must receive the general-access disclosure message.]] - `rationale_for` [EXTRACTED]
 

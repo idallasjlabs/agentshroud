@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-production/README.md"
+source_file: "docker/config/openclaw/skills/i-qa/README.md"
 type: "document"
-community: "Incident Response (INCIDENT)"
+community: "Quality Assurance (QA)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Incident_Response_INCIDENT
+  - community/Quality_Assurance_QA
 ---
 
 # Purpose
 
 ## Connections
-- [[Incident Response (INCIDENT)_2]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_QA

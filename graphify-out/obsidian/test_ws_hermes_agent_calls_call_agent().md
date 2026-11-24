@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L1573"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # test_ws_hermes_agent_calls_call_agent()
@@ -19,7 +19,7 @@ tags:
 - [[_mock_llm()_1]] - `indirect_call` [INFERRED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[asyncio_50]] - `references` [EXTRACTED]
+- [[asyncio_71]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_mock_ws

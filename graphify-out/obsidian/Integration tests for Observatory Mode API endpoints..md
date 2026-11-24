@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L510"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # Integration tests for Observatory Mode API endpoints.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestObservatoryModeAPI]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

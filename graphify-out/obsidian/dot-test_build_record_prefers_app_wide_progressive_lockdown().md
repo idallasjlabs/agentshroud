@@ -16,6 +16,6 @@ tags:
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[SCRUM-203 the app-wide instance on app_state.progressive_lockdown wins.]] - `rationale_for` [EXTRACTED]
 - [[TestLockdownLevelWiring]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContributorManager

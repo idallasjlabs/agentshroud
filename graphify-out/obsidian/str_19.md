@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "WebProxy"
+community: "prompt_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/prompt_guardpy
 ---
 
 # str
 
 ## Connections
-- [[ProxyAction]] - `inherits` [EXTRACTED]
+- [[ThreatAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

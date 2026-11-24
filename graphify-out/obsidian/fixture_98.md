@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_web_api_coverage.py"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/test_edge_service_routespy
 ---
 
 # fixture
 
 ## Connections
-- [[client()_14]] - `references` [EXTRACTED]
-- [[reset_env_and_task()]] - `references` [EXTRACTED]
+- [[secrets_dir()_1]] - `references` [EXTRACTED]
+- [[signed_descriptors()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

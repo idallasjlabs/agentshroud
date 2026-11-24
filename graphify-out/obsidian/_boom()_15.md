@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "TestListServices"
-location: "L383"
+community: "TestPresidioPathContract"
+location: "L277"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestListServices
+  - community/TestPresidioPathContract
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_falls_back_to_openclaw_only_on_config_load_failure()]] - `indirect_call` [INFERRED]
-- [[dot-test_internal_probe_failure_keeps_container_descriptors()]] - `indirect_call` [INFERRED]
-- [[dot-test_resolution_failure_returns_none()]] - `indirect_call` [INFERRED]
+- [[dot-test_presidio_exception_falls_back_to_regex()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TestListServices
+#graphify/code #graphify/INFERRED #community/TestPresidioPathContract

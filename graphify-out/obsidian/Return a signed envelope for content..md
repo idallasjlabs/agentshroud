@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "InstructionEnvelope"
+community: "EnvelopeSigner"
 location: "L62"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InstructionEnvelope
+  - community/EnvelopeSigner
 ---
 
 # Return a signed envelope for content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-sign()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InstructionEnvelope
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

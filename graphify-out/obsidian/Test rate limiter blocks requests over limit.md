@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_auth.py"
 type: "rationale"
-community: "fastapi.md"
+community: "ingest_api/main.py"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/ingest_api/mainpy
 ---
 
 # Test rate limiter blocks requests over limit
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_rate_limiter_blocks_excess_requests()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fastapimd
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

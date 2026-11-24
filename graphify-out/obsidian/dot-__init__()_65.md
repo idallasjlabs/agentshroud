@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L51"
+community: "MCPAuditTrail"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/MCPAuditTrail
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

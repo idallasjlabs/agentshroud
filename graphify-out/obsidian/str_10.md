@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "telegram_proxy.py"
+community: "web_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/web_proxypy
 ---
 
 # str
 
 ## Connections
-- [[DelegationPrivilege]] - `inherits` [EXTRACTED]
+- [[EgressChannel]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

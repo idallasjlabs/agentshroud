@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "test_adversarial_injection.py"
+community: "normalize_input"
 location: "L332"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/normalize_input
 ---
 
 # TestEncodingBypass
@@ -21,4 +21,4 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

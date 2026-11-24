@@ -15,6 +15,6 @@ tags:
 - [[Mock configuration for middleware tests]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
-- [[fixture_70]] - `references` [EXTRACTED]
+- [[fixture_77]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

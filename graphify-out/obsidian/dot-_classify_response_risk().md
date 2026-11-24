@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "lifespan.py"
+community: "OutboundInfoFilter"
 location: "L461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/OutboundInfoFilter
 ---
 
 # ._classify_response_risk()
@@ -17,4 +17,4 @@ tags:
 - [[FilterMatch]] - `references` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

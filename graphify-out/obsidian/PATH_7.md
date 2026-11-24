@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/launch-instance.sh"
+source_file: "scripts/sunday-upgrade-apply.sh"
 type: "code"
-community: "launch-instance.sh"
-location: "L14"
+community: "sunday-upgrade-apply.sh"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/launch-instancesh
+  - community/sunday-upgrade-applysh
 ---
 
 # PATH
 
 ## Connections
-- [[launch-instance.sh]] - `defines` [EXTRACTED]
+- [[sunday-upgrade-apply.sh]] - `defines` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/launch-instancesh
+#graphify/code #graphify/EXTRACTED #community/sunday-upgrade-applysh

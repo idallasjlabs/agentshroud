@@ -15,7 +15,7 @@ tags:
 - [[If openai_to_gemini_request raises, the request must still be forwarded…]] - `rationale_for` [EXTRACTED]
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[_broken_translator()]] - `indirect_call` [INFERRED]
-- [[asyncio_23]] - `references` [EXTRACTED]
+- [[asyncio_25]] - `references` [EXTRACTED]
 - [[mock_forward()_16]] - `contains` [EXTRACTED]
 - [[mock_forward()_17]] - `indirect_call` [INFERRED]
 - [[test_gemini_via_openai_path.py]] - `contains` [EXTRACTED]

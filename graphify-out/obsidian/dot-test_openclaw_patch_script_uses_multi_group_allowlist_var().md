@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_openclaw_patch_script_uses_multi_group_allowlist_var"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_openclaw_patch_script_uses_multi_group_allowlist_var
 ---
 
 # .test_openclaw_patch_script_uses_multi_group_allowlist_var()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[apply-patches.js must reference AGENTSHROUD_GROUP_CHAT_IDS (multi-group).…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_patch_script_uses_multi_group_allowlist_var

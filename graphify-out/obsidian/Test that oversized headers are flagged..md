@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "TestMetadataGuard"
+community: "MetadataGuard"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/MetadataGuard
 ---
 
 # Test that oversized headers are flagged.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_check_oversized_headers_flags_large_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard

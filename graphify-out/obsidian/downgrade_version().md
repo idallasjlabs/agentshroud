@@ -12,11 +12,11 @@ tags:
 # downgrade_version()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[Downgrade to a previous version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]
-- [[post_8]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/version_routespy

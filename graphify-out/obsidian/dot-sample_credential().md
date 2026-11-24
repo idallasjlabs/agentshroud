@@ -15,6 +15,6 @@ tags:
 - [[Create a sample credential for testing.]] - `rationale_for` [EXTRACTED]
 - [[CredentialInfo]] - `calls` [EXTRACTED]
 - [[TestKeyRotationManager]] - `method` [EXTRACTED]
-- [[fixture_14]] - `references` [EXTRACTED]
+- [[fixture_13]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

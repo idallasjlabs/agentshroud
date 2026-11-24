@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APeerTestDouble"
+community: "test_mfa_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APeerTestDouble
+  - community/test_mfa_guardpy
 ---
 
 # fixture
 
 ## Connections
-- [[test_double_peer()]] - `references` [EXTRACTED]
-- [[trust_manager()_3]] - `references` [EXTRACTED]
+- [[queue()]] - `references` [EXTRACTED]
+- [[store()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "test_redteam_probes.py"
+community: "TrustManager"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/TrustManager
 ---
 
 # Probe 1.6: EgressFilter must block non-allowlisted domains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_blocks_unknown_domain()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

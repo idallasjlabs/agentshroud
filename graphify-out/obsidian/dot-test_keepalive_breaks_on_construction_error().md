@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestSendEventAndKeepalive]] - `method` [EXTRACTED]
-- [[boom()_4]] - `indirect_call` [INFERRED]
+- [[boom()_1]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/AsyncMock

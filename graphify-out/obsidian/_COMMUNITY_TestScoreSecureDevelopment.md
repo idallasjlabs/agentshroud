@@ -10,7 +10,7 @@ members: 3
 ## Members
 - [[dot-test_five_all_sdl_configs_present()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[dot-test_one_baseline_no_configs()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[TestScoreSecureDevelopment_1]] - code - gateway/tests/test_scorecard_scoring.py
+- [[TestScoreSecureDevelopment]] - code - gateway/tests/test_scorecard_scoring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,4 +23,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
 
 ## Top bridge nodes
-- [[TestScoreSecureDevelopment_1]] - degree 3, connects to 1 community
+- [[TestScoreSecureDevelopment]] - degree 3, connects to 1 community

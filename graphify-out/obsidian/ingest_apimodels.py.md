@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "GatewayConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/GatewayConfig
 ---
 
 # ingest_api/models.py
@@ -23,7 +23,7 @@ tags:
 - [[LedgerEntry]] - `contains` [EXTRACTED]
 - [[LedgerQueryResponse]] - `contains` [EXTRACTED]
 - [[RedactionDetail]] - `contains` [EXTRACTED]
-- [[RedactionResult]] - `contains` [EXTRACTED]
+- [[RedactionResult_1]] - `contains` [EXTRACTED]
 - [[SSHExecRequest]] - `contains` [EXTRACTED]
 - [[SSHExecResponse]] - `contains` [EXTRACTED]
 - [[SSHWriteFileRequest]] - `contains` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

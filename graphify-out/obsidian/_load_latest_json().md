@@ -19,7 +19,7 @@ tags:
 - [[dot-test_returns_none_on_invalid_json()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_none_when_all_files_empty()]] - `calls` [EXTRACTED]
 - [[dot-test_skips_empty_files_returns_next_valid()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Load the most recent JSON report file from a directory. Args directory…]] - `rationale_for` [EXTRACTED]
 - [[Path_35]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]

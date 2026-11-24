@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "TrustLevel"
 location: "L208"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/TrustLevel
 ---
 
 # test_trust_insufficient_action_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[TrustLevel_1]] - `uses` [INFERRED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

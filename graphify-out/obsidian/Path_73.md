@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "_age"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_age
+  - community/FalcoAlertWatcher
 ---
 
 # Path
 
 ## Connections
-- [[_age()]] - `references` [EXTRACTED]
-- [[_w()]] - `references` [EXTRACTED]
+- [[dot-__init__()_211]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_age
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

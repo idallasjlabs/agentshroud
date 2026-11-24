@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "MCPServerConfig"
+community: "test_mcp_proxy.py"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/test_mcp_proxypy
 ---
 
 # TestHttpSseConnection
@@ -20,4 +20,4 @@ tags:
 - [[MCPTransport]] - `uses` [INFERRED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

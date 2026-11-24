@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "fastapi.md"
+community: "TestCollaboratorPromptClassifiers"
 location: "L7521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fastapimd
+  - community/TestCollaboratorPromptClassifiers
 ---
 
 # .test_collaborator_rate_limit_retry_after_seconds_uses_window()
@@ -16,4 +16,4 @@ tags:
 - [[RateLimiter_1]] - `calls` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fastapimd
+#graphify/code #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers

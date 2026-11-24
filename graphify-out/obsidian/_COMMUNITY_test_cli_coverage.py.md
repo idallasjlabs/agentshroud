@@ -12,9 +12,9 @@ members: 36
 - [[dot-__aexit__()_5]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__aiter__()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__anext__()]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__call__()_9]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_139]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_140]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__call__()_7]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_130]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_131]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-send()_1]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_default_format_for_pipe()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_env_token_and_url_used()]] - code - gateway/tests/test_cli_coverage.py
@@ -40,7 +40,7 @@ members: 36
 - [[`asb edge ...` runs the SOC CLI inside the gateway container, passing only a…]] - rationale - gateway/tests/test_cli_coverage.py
 - [[client.py]] - code - gateway/cli/client.py
 - [[client_from_env()]] - code - gateway/cli/client.py
-- [[main()_18]] - code - gateway/cli/main.py
+- [[main()_19]] - code - gateway/cli/main.py
 - [[test_asb_edge_delegates_to_cli_in_gateway_without_secret_in_argv()]] - code - gateway/tests/test_cli_coverage.py
 - [[test_cli_coverage.py]] - code - gateway/tests/test_cli_coverage.py
 - [[test_main_entrypoint_runs_cli_group()]] - code - gateway/tests/test_cli_coverage.py
@@ -63,5 +63,5 @@ SORT file.name ASC
 - [[test_cli_coverage.py]] - degree 31, connects to 5 communities
 - [[_default_format()]] - degree 6, connects to 2 communities
 - [[client.py]] - degree 5, connects to 2 communities
-- [[main()_18]] - degree 3, connects to 2 communities
+- [[main()_19]] - degree 3, connects to 2 communities
 - [[client_from_env()]] - degree 8, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestMemoryIntegrityRegistration"
+community: "_req"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMemoryIntegrityRegistration
+  - community/_req
 ---
 
 # TestMemoryIntegrityRegistration
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_no_path_match_no_registration()]] - `method` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityRegistration
+#graphify/code #graphify/EXTRACTED #community/_req

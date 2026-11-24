@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "soc/models.py"
-location: "L432"
+community: "test_soc_realtime_coverage.py"
+location: "L397"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .test_conversion_error_path()
 
 ## Connections
-- [[TestFromEgressAttempt]] - `method` [EXTRACTED]
-- [[domain()]] - `contains` [EXTRACTED]
+- [[TestFromPipelineResult]] - `method` [EXTRACTED]
+- [[blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

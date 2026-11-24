@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalStore"
+community: "ApprovalRequest"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ApprovalRequest
 ---
 
 # .test_concurrent_submit_and_decide()
@@ -15,7 +15,7 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Submit and decide requests concurrently.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `method` [EXTRACTED]
-- [[asyncio_57]] - `references` [EXTRACTED]
+- [[asyncio_47]] - `references` [EXTRACTED]
 - [[decide()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

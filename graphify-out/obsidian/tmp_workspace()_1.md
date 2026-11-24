@@ -12,7 +12,7 @@ tags:
 # tmp_workspace()
 
 ## Connections
-- [[fixture_106]] - `references` [EXTRACTED]
+- [[fixture_105]] - `references` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_group_isolationpy

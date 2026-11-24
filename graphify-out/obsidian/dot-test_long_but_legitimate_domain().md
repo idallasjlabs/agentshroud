@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestNormalDNSResolution"
+community: "DNSFilterConfig"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNormalDNSResolution
+  - community/DNSFilterConfig
 ---
 
 # .test_long_but_legitimate_domain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNormalDNSResolution]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNormalDNSResolution
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

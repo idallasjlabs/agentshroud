@@ -1,52 +1,46 @@
 ---
 type: community
-members: 39
+members: 33
 ---
 
 # asyncio
 
-**Members:** 39 nodes
+**Members:** 33 nodes
 
 ## Members
-- [[dot-test_client_disconnect_returns_499()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_cookie_not_secure_on_http()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_bad_token_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_cookie_auth_serves_html()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_no_auth_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_dashboard_token_sets_cookie_and_redirects()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_json_api_has_cache_control()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_status_has_security_headers()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_status_returns_current_version()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_with_bad_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_with_valid_cookie()]] - code - gateway/tests/test_security_fixes.py
-- [[dot-test_ws_token_without_cookie_returns_403()]] - code - gateway/tests/test_security_fixes.py
-- [[All API responses should include basic security headers.]] - rationale - gateway/tests/test_security_fixes.py
-- [[ClientDisconnect mid-body-read must not crash the gateway process.]] - rationale - gateway/tests/test_security_fixes.py
-- [[Cookie secure=False on HTTP requests]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard cookie secure flag is dynamic based on request scheme]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard should set httpOnly cookie and redirect to clean URL]] - rationale - gateway/tests/test_security_fixes.py
-- [[Dashboard ws-token endpoint returns token only for cookie-authed sessions]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with invalid cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with no auth returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboard with valid cookie serves HTML]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token with bad cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token with valid cookie returns token]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardws-token without cookie returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=valid sets cookie and redirects to dashboard]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET dashboardtoken=wrong returns 403]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should include security headers]] - rationale - gateway/tests/test_security_fixes.py
-- [[GET status should return current version]] - rationale - gateway/tests/test_security_fixes.py
-- [[JSON API responses should have Cache-Control no-store]] - rationale - gateway/tests/test_security_fixes.py
-- [[TestDashboardCookieAuth]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardSecureCookie]] - code - gateway/tests/test_security_fixes.py
-- [[TestDashboardWSToken]] - code - gateway/tests/test_security_fixes.py
-- [[TestGlobalSecurityHeaders]] - code - gateway/tests/test_security_fixes.py
-- [[TestTelegramProxyClientDisconnect]] - code - gateway/tests/test_security_fixes.py
-- [[TestVersionConsistency]] - code - gateway/tests/test_security_fixes.py
-- [[Version strings should be consistent across the codebase.]] - rationale - gateway/tests/test_security_fixes.py
-- [[When body() raises ClientDisconnect the handler returns 499 without crashing.]] - rationale - gateway/tests/test_security_fixes.py
-- [[asyncio_47]] - code
+- [[dot-test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_get_credential_status_none_for_unknown()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestStatusHelpers]] - code - gateway/tests/test_key_rotation_internals.py
+- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
+- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[asyncio_54]] - code
+- [[validate()]] - code - gateway/tests/test_key_rotation_internals.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -56,13 +50,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
+- 13 edges to [[_COMMUNITY_KeyRotationManager]]
 
 ## Top bridge nodes
-- [[dot-test_client_disconnect_returns_499()]] - degree 5, connects to 2 communities
-- [[asyncio_47]] - degree 15, connects to 1 community
-- [[TestDashboardCookieAuth]] - degree 7, connects to 1 community
-- [[TestDashboardWSToken]] - degree 5, connects to 1 community
-- [[TestGlobalSecurityHeaders]] - degree 4, connects to 1 community
+- [[_old_cred()]] - degree 9, connects to 1 community
+- [[TestRotateGuardBranches]] - degree 8, connects to 1 community
+- [[TestGenerateAndValidate]] - degree 5, connects to 1 community
+- [[TestReadFrom1Password]] - degree 5, connects to 1 community
+- [[TestStoreIn1Password]] - degree 5, connects to 1 community

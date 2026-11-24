@@ -12,10 +12,10 @@ tags:
 # AsyncMock
 
 ## Connections
-- [[dot-__call__()_6]] - `method` [EXTRACTED]
-- [[dot-__init__()_95]] - `method` [EXTRACTED]
-- [[dot-__init__()_59]] - `calls` [INFERRED]
-- [[dot-__init__()_42]] - `calls` [INFERRED]
+- [[dot-__call__()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_18]] - `method` [EXTRACTED]
+- [[dot-__init__()_64]] - `calls` [INFERRED]
+- [[dot-__init__()_40]] - `calls` [INFERRED]
 - [[dot-_handler()]] - `calls` [INFERRED]
 - [[dot-_mock_request()]] - `calls` [INFERRED]
 - [[dot-_mock_websocket()]] - `calls` [INFERRED]

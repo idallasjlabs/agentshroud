@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "TestListServices"
+community: "ServiceManager"
 location: "L500"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestListServices
+  - community/ServiceManager
 ---
 
 # TestKnownServices
@@ -17,4 +17,4 @@ tags:
 - [[_known_services() must resolve each bot's real container name — not a hardcoded…]] - `rationale_for` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestListServices
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "test_all_modules_enforce.py"
+community: "SessionContext"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/SessionContext
 ---
 
 # ._analyze_agent_response()
@@ -18,4 +18,4 @@ tags:
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
 - [[SessionContext]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/SessionContext

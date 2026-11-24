@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "._cleanup_expired"
+community: "DelegationPrivilege"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_cleanup_expired
+  - community/DelegationPrivilege
 ---
 
 # .get_delegations_for_user()
@@ -17,4 +17,4 @@ tags:
 - [[DelegationManager]] - `method` [EXTRACTED]
 - [[Return all active delegations held by a specific user.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_cleanup_expired
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

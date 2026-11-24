@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalStore"
+community: "test_mfa_guard.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ApprovalStore
+  - community/test_mfa_guardpy
 ---
 
 # queue()
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
-- [[fixture_103]] - `references` [EXTRACTED]
+- [[fixture_82]] - `references` [EXTRACTED]
 - [[test_approval_stress.py]] - `contains` [EXTRACTED]
 - [[test_full_oauth_and_tool_calls_with_sdk_client()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ApprovalStore
+#graphify/code #graphify/INFERRED #community/test_mfa_guardpy

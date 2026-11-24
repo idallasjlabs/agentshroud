@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/security/tool_acl.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L543"
+community: "ToolACLEnforcer"
+location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/ToolACLEnforcer
 ---
 
 # .can_use_tool()
 
 ## Connections
-- [[_FakeToolACL]] - `method` [EXTRACTED]
+- [[dot-_can_use_tool_impl()]] - `calls` [EXTRACTED]
+- [[dot-can_use_tool_from_origin()]] - `calls` [EXTRACTED]
+- [[dot-can_use_tool_in_group_context()]] - `calls` [EXTRACTED]
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80), then…]] - `rationale_for` [EXTRACTED]
+- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

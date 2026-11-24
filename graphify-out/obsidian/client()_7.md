@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_39]] - `references` [EXTRACTED]
+- [[fixture_42]] - `references` [EXTRACTED]
 - [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_chat_completions_aliaspy

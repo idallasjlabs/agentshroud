@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestToolRateLimiting]] - `method` [EXTRACTED]
 - [[ToolACLEnforcer]] - `calls` [EXTRACTED]
-- [[fixture_122]] - `references` [EXTRACTED]
+- [[fixture_124]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

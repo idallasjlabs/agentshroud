@@ -14,7 +14,7 @@ members: 16
 - [[Atlassian OAuth_7]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[GitHub PAT_7]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[MCP Auth Reset (MCPM-AUTH-RESET)_2]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Purpose_169]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[Purpose_170]] - document - .agents/skills/i-mcpm-auth-reset/README.md
 - [[Related Skills_113]] - document - .agents/skills/i-mcpm-auth-reset/README.md
 - [[Related Skills_114]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Role_189]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md

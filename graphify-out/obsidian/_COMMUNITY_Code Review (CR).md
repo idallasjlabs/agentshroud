@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-crREADME]] - document - .agents/skills/i-cr/README.md
 - [[Code Review (CR)]] - document - .agents/skills/i-cr/README.md
-- [[Purpose_103]] - document - .agents/skills/i-cr/README.md
+- [[Purpose_101]] - document - .agents/skills/i-cr/README.md
 - [[Related Skills_33]] - document - .agents/skills/i-cr/README.md
 - [[Usage_43]] - document - .agents/skills/i-cr/README.md
 

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "TestMemoryIntegrityMonitor"
-location: "L70"
+community: "run"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMemoryIntegrityMonitor
+  - community/run
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[Set up test environment._2]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/run

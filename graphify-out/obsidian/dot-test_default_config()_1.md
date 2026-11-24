@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "KeyVault"
-location: "L34"
+community: "PathIsolationManager"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/PathIsolationManager
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[TestKeyVaultConfig]] - `method` [EXTRACTED]
+- [[PathIsolationConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values.]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

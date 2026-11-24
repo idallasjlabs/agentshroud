@@ -16,7 +16,7 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[Updates without text (e.g. photos) should skip the pipeline.]] - `rationale_for` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_21]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 - [[process_inbound()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BlockingPipeline

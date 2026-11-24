@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/security/session_security.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "SessionManager"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/SessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/SessionManager

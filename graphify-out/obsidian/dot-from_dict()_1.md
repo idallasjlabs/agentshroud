@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L57"
+community: "EgressScope"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/EgressScope
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-from_dict()]] - `calls` [EXTRACTED]
-- [[ServicePolicy]] - `method` [EXTRACTED]
-- [[ServicePrivacy]] - `calls` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
+- [[override_egress_rule()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/EgressScope

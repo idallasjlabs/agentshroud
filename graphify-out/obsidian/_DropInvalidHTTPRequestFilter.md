@@ -12,7 +12,7 @@ tags:
 # _DropInvalidHTTPRequestFilter
 
 ## Connections
-- [[dot-filter()_1]] - `method` [EXTRACTED]
+- [[dot-filter()]] - `method` [EXTRACTED]
 - [[dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise()]] - `calls` [EXTRACTED]
 - [[Suppress noisy uvicorn warning spam for malformed probe traffic.]] - `rationale_for` [EXTRACTED]
 - [[_install_uvicorn_warning_filter()]] - `calls` [EXTRACTED]

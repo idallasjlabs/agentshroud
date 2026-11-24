@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayEmailService"
+community: "make_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/make_event
 ---
 
 # Protocol
 
 ## Connections
-- [[SmtpLike]] - `inherits` [EXTRACTED]
+- [[Facade]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/make_event

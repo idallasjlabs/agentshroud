@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[TestInteractiveApproval]] - `method` [EXTRACTED]
-- [[__init__()_20]] - `contains` [EXTRACTED]
+- [[__init__()_16]] - `contains` [EXTRACTED]
 - [[_make_filter()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[emit()_9]] - `contains` [EXTRACTED]
+- [[asyncio_63]] - `references` [EXTRACTED]
+- [[emit()_7]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "ingest_api/models.py"
+community: "email_send"
 location: "L334"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # Request to send an email through the gateway (P3: channel ownership). The bot…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/rationale #graphify/EXTRACTED #community/email_send

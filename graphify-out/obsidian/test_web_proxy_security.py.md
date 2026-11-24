@@ -12,7 +12,7 @@ tags:
 # test_web_proxy_security.py
 
 ## Connections
-- [[Enum_27]] - `imports_from` [EXTRACTED]
+- [[Enum_28]] - `imports_from` [EXTRACTED]
 - [[Integration tests for web proxy security modules. Tests that DNS filter,…]] - `rationale_for` [EXTRACTED]
 - [[MockDNSVerdict]] - `contains` [EXTRACTED]
 - [[MockEgressChannel]] - `contains` [EXTRACTED]

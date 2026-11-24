@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "asyncio"
+community: "OutboundInfoFilter"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/OutboundInfoFilter
 ---
 
 # .test_real_world_agent_responses()
@@ -16,4 +16,4 @@ tags:
 - [[Test with realistic agent response patterns.]] - `rationale_for` [EXTRACTED]
 - [[TestIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

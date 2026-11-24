@@ -1,20 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "get_wazuh_summary"
+community: "wazuh_client.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_wazuh_summary
+  - community/wazuh_clientpy
 ---
 
 # Any
 
 ## Connections
-- [[generate_summary()_3]] - `references` [EXTRACTED]
+- [[generate_summary()_2]] - `references` [EXTRACTED]
 - [[get_fim_events()]] - `references` [EXTRACTED]
 - [[get_rootkit_events()]] - `references` [EXTRACTED]
 - [[parse_alert()_1]] - `references` [EXTRACTED]
 - [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary
+#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy

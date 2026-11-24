@@ -12,7 +12,7 @@ tags:
 # subagent_monitor.py
 
 ## Connections
-- [[Enum_18]] - `imports_from` [EXTRACTED]
+- [[Enum_19]] - `imports_from` [EXTRACTED]
 - [[SubagentEvent]] - `contains` [EXTRACTED]
 - [[SubagentEventType]] - `contains` [EXTRACTED]
 - [[SubagentInfo]] - `contains` [EXTRACTED]

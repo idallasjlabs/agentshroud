@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "SSHProxy"
+community: "GatewayConfig"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/GatewayConfig
 ---
 
 # .test_ssh_disabled_config()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSSHDisabled]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

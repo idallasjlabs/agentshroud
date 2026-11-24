@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_has_fabricated_match()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_15]] - `method` [EXTRACTED]
+- [[dot-setup_method()_22]] - `method` [EXTRACTED]
 - [[dot-test_blocked_unauthorized_command()]] - `method` [EXTRACTED]
 - [[dot-test_blocking_suspicious_code_execution()]] - `method` [EXTRACTED]
 - [[dot-test_case_insensitive()_3]] - `method` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: ".test_default_transport_is_smtp_ssl"
-location: "L121"
+community: "asyncio"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_default_transport_is_smtp_ssl
+  - community/asyncio
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_default_transport_is_smtp_ssl()]] - `contains` [EXTRACTED]
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_default_transport_is_smtp_ssl
+#graphify/code #graphify/EXTRACTED #community/asyncio

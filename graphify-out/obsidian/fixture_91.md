@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "_build_image_targets"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/_build_image_targets
 ---
 
 # fixture
 
 ## Connections
-- [[client()_13]] - `references` [EXTRACTED]
+- [[dot-_no_docker()_1]] - `references` [EXTRACTED]
+- [[dot-_no_docker()]] - `references` [EXTRACTED]
+- [[_isolated_alert_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "rationale"
-community: "TestScanParameterAllowlists"
+community: "app"
 location: "L661"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestScanParameterAllowlists
+  - community/app
 ---
 
 # Allowlist validation on ClamAV target, Trivy scan type, OpenSCAP profile.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScanParameterAllowlists]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestScanParameterAllowlists
+#graphify/rationale #graphify/EXTRACTED #community/app

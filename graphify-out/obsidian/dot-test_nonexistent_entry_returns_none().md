@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Looking up nonexistent entry returns None.]] - `rationale_for` [EXTRACTED]
 - [[TestTamperDetection]] - `method` [EXTRACTED]
-- [[asyncio_39]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

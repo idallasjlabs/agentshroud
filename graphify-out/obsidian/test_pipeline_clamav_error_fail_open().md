@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "PipelineAction"
 location: "L170"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/PipelineAction
 ---
 
 # test_pipeline_clamav_error_fail_open()
@@ -17,7 +17,7 @@ tags:
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[_b64_payload()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()]] - `calls` [EXTRACTED]
-- [[asyncio_33]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

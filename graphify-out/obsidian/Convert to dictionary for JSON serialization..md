@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "FileIntegrityRecord"
+community: "middleware.py"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileIntegrityRecord
+  - community/middlewarepy
 ---
 
 # Convert to dictionary for JSON serialization.
 
 ## Connections
-- [[dot-to_dict()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileIntegrityRecord
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

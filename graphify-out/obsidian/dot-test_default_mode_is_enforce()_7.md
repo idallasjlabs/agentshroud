@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_observatory_mode.py"
+source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "test_web_api_coverage.py"
-location: "L80"
+community: "ToolACLEnforcer"
+location: "L345"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ToolACLEnforcer
 ---
 
 # .test_default_mode_is_enforce()
 
 ## Connections
-- [[TestGetMode]] - `method` [EXTRACTED]
+- [[TestEnforcementMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ToolACLEnforcer

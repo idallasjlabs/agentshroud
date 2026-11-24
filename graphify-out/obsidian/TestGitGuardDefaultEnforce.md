@@ -12,7 +12,7 @@ tags:
 # TestGitGuardDefaultEnforce
 
 ## Connections
-- [[dot-test_default_mode_is_enforce()_5]] - `method` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_6]] - `method` [EXTRACTED]
 - [[dot-test_scan_repository_default_enforce()]] - `method` [EXTRACTED]
 - [[GitGuard]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]

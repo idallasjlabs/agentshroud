@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "test_clamav_pipeline.py"
+community: "PipelineAction"
 location: "L36"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/PipelineAction
 ---
 
 # True if clamd accepts connections on its socket. Connects rather than testing…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[clamd_available()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/rationale #graphify/EXTRACTED #community/PipelineAction

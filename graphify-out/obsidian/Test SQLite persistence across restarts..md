@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # Test SQLite persistence across restarts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPersistence_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

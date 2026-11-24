@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "fixture"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/fixture
 ---
 
 # .approval_queue()
@@ -15,6 +15,6 @@ tags:
 - [[Create EgressApprovalQueue instance for testing.]] - `rationale_for` [EXTRACTED]
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
-- [[fixture_7]] - `references` [EXTRACTED]
+- [[fixture_52]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/fixture

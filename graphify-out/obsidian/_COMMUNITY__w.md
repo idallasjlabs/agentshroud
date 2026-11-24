@@ -45,7 +45,7 @@ members: 40
 - [[TestOpenscapSummary]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestProcScans]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestSecretsManagement]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[TestSupplyChain]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[TestSupplyChain_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[Write a file under the sandbox root, creating parents.]] - rationale - gateway/tests/test_scanner_integration_coverage.py
 - [[_w()]] - code - gateway/tests/test_scanner_integration_coverage.py
 

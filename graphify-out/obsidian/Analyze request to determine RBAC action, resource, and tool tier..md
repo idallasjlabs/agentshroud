@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: "soc/router.py"
 location: "L928"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/soc/routerpy
 ---
 
 # Analyze request to determine RBAC action, resource, and tool tier.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_analyze_request_for_rbac()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy

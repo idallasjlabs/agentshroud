@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[KeyRotationConfig]] - `uses` [INFERRED]
 - [[KeyRotationManager]] - `uses` [INFERRED]
-- [[fixture_13]] - `references` [EXTRACTED]
+- [[fixture_12]] - `references` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/KeyRotationManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: "_mock_forward"
 location: "L2259"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/_mock_forward
 ---
 
 # _mock_forward()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_request_allows_distinct_system_notices()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/_mock_forward

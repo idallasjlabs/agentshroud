@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "test_web_api_coverage.py"
-location: "L184"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_web_api_coveragepy
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # fake_sleep()
 
 ## Connections
-- [[dot-test_set_mode_cancels_previous_revert_task()]] - `indirect_call` [INFERRED]
+- [[dot-test_run_resets_backoff_after_successful_connect()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_web_api_coveragepy
+#graphify/code #graphify/INFERRED #community/test_events_api_envelope_dispatches_handle_event

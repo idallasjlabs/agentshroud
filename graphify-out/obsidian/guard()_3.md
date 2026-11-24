@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[EnvironmentGuard]] - `uses` [INFERRED]
-- [[fixture_87]] - `references` [EXTRACTED]
+- [[fixture_90]] - `references` [EXTRACTED]
 - [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy

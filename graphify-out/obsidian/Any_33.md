@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "asyncio"
+community: "PodmanEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/PodmanEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_90]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
-- [[dot-get_stats()_2]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

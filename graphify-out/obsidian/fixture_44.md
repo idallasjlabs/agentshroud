@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "SubagentMonitor"
+community: "ToolResultInjectionScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/ToolResultInjectionScanner
 ---
 
 # fixture
 
 ## Connections
-- [[default_config()_2]] - `references` [EXTRACTED]
-- [[monitor()_1]] - `references` [EXTRACTED]
-- [[monitor_config()_2]] - `references` [EXTRACTED]
-- [[strict_config()_1]] - `references` [EXTRACTED]
-- [[strict_monitor()]] - `references` [EXTRACTED]
+- [[scanner()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

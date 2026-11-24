@@ -43,13 +43,13 @@ members: 42
 - [[_sleep()_5]] - code - gateway/tests/test_daily_cve_report.py
 - [[_sleep()_6]] - code - gateway/tests/test_daily_cve_report.py
 - [[_sleep_then_cancel()]] - code - gateway/tests/test_daily_cve_report.py
+- [[now()]] - code - gateway/tests/test_daily_cve_report.py
 - [[now()_1]] - code - gateway/tests/test_daily_cve_report.py
 - [[now()_2]] - code - gateway/tests/test_daily_cve_report.py
 - [[now()_3]] - code - gateway/tests/test_daily_cve_report.py
 - [[now()_4]] - code - gateway/tests/test_daily_cve_report.py
 - [[now()_5]] - code - gateway/tests/test_daily_cve_report.py
 - [[now()_6]] - code - gateway/tests/test_daily_cve_report.py
-- [[now()_7]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -62,7 +62,7 @@ SORT file.name ASC
 - 8 edges to [[_COMMUNITY_asyncio]]
 - 3 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 - 3 edges to [[_COMMUNITY_dot-test_gives_up_and_marks_sent_after_max_retries]]
-- 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
+- 1 edge to [[_COMMUNITY_list_cve_agents]]
 
 ## Top bridge nodes
 - [[dot-test_runs_ingest_records_then_skips_next_iteration()]] - degree 7, connects to 2 communities

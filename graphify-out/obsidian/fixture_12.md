@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_group_rbac.py"
+community: "KeyRotationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_rbacpy
+  - community/KeyRotationManager
 ---
 
 # fixture
 
 ## Connections
-- [[acl_config()]] - `references` [EXTRACTED]
-- [[enforcer()_1]] - `references` [EXTRACTED]
-- [[group_role_resolver()]] - `references` [EXTRACTED]
-- [[rbac()_1]] - `references` [EXTRACTED]
-- [[teams()_1]] - `references` [EXTRACTED]
+- [[manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_rbacpy
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

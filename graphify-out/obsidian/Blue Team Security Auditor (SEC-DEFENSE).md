@@ -12,7 +12,7 @@ tags:
 # Blue Team Security Auditor (SEC-DEFENSE)
 
 ## Connections
-- [[Purpose_114]] - `contains` [EXTRACTED]
+- [[Purpose_112]] - `contains` [EXTRACTED]
 - [[Related Skills_44]] - `contains` [EXTRACTED]
 - [[Usage_54]] - `contains` [EXTRACTED]
 - [[sec-defenseREADME]] - `contains` [EXTRACTED]

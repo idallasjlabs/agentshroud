@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L266"
+community: "TestOutboundScanUnification"
+location: "L5262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/TestOutboundScanUnification
 ---
 
 # process_outbound()
 
 ## Connections
-- [[test_filtered_stream_redaction_applies_to_released_sentence()]] - `contains` [EXTRACTED]
+- [[dot-test_form_owner_id_redaction_continues_to_pipeline_scan()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification

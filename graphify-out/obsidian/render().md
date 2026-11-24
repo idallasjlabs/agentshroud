@@ -1,21 +1,18 @@
 ---
-source_file: "docker/bots/hermes/render_md_email.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "render_md_email.py"
-location: "L106"
+community: "GatewayBackedProvider"
+location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/render_md_emailpy
+  - community/GatewayBackedProvider
 ---
 
 # render()
 
 ## Connections
-- [[_inline()]] - `calls` [EXTRACTED]
-- [[_render_table()]] - `calls` [EXTRACTED]
-- [[_save_fence()]] - `indirect_call` [INFERRED]
-- [[main()_8]] - `calls` [EXTRACTED]
-- [[render_md_email.py]] - `contains` [EXTRACTED]
+- [[_consent_routes()]] - `contains` [EXTRACTED]
+- [[consent()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/render_md_emailpy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

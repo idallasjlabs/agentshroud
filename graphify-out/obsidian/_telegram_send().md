@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[card()]] - `calls` [EXTRACTED]
-- [[notify()_1]] - `calls` [EXTRACTED]
+- [[notify()]] - `calls` [EXTRACTED]
 - [[service.py]] - `contains` [EXTRACTED]
 - [[test_telegram_send_posts_card()]] - `calls` [EXTRACTED]
 

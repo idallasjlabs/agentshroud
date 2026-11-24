@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/credential_injector.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "CredentialInjector"
-location: "L105"
+community: "test_http_proxy_coverage.py"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/test_http_proxy_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_credentials()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_mappings()]] - `calls` [EXTRACTED]
-- [[CredentialInjector]] - `method` [EXTRACTED]
-- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

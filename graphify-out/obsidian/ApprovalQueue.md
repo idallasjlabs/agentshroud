@@ -1,32 +1,32 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # ApprovalQueue
 
 ## Connections
-- [[dot-__init__()_97]] - `method` [EXTRACTED]
+- [[dot-__init__()_115]] - `method` [EXTRACTED]
 - [[dot-_append_audit_event()]] - `method` [EXTRACTED]
 - [[dot-_expire_stale()]] - `method` [EXTRACTED]
 - [[dot-_load_pending_store()]] - `method` [EXTRACTED]
 - [[dot-_persist_pending_store()]] - `method` [EXTRACTED]
-- [[dot-broadcast()_1]] - `method` [EXTRACTED]
+- [[dot-broadcast()]] - `method` [EXTRACTED]
 - [[dot-cleanup_decided()]] - `method` [EXTRACTED]
-- [[dot-connect()_1]] - `method` [EXTRACTED]
-- [[dot-decide()_1]] - `method` [EXTRACTED]
+- [[dot-connect()]] - `method` [EXTRACTED]
+- [[dot-decide()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-disconnect()]] - `method` [EXTRACTED]
-- [[dot-get_item()_2]] - `method` [EXTRACTED]
-- [[dot-get_pending()_2]] - `method` [EXTRACTED]
+- [[dot-get_item()_1]] - `method` [EXTRACTED]
+- [[dot-get_pending()_1]] - `method` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[dot-submit()_1]] - `method` [EXTRACTED]
+- [[dot-submit()]] - `method` [EXTRACTED]
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
 - [[ApprovalQueueItem]] - `uses` [INFERRED]
 - [[ApprovalRequest]] - `uses` [INFERRED]
@@ -38,11 +38,11 @@ tags:
 - [[_submit_high_risk()]] - `uses` [INFERRED]
 - [[approval_queue()]] - `uses` [INFERRED]
 - [[approval_queue()_1]] - `uses` [INFERRED]
-- [[client()_11]] - `uses` [INFERRED]
-- [[client()_12]] - `uses` [INFERRED]
+- [[client()_13]] - `uses` [INFERRED]
+- [[client()_14]] - `uses` [INFERRED]
 - [[queue()]] - `uses` [INFERRED]
 - [[queue.py]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [INFERRED]
+- [[run()]] - `calls` [INFERRED]
 - [[test_approval_queue.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
 - [[test_cleanup_decided_persists_removal_to_disk()]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[test_store_persists_submit_and_decision()]] - `uses` [INFERRED]
 - [[test_store_restores_items_on_init()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

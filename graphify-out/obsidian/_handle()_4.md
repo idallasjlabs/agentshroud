@@ -17,7 +17,7 @@ tags:
 - [[_pipe()_3]] - `calls` [EXTRACTED]
 - [[_read_request_headers()]] - `calls` [EXTRACTED]
 - [[dashboard_bridge.py]] - `contains` [EXTRACTED]
-- [[main()_32]] - `indirect_call` [INFERRED]
+- [[main()_31]] - `indirect_call` [INFERRED]
 - [[rewrite_request_headers()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_handle

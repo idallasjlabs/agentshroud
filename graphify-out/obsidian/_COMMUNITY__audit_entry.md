@@ -33,14 +33,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_socmodels.py]]
-- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 7 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
 - 1 edge to [[_COMMUNITY_dot-verify_export_integrity]]
 
 ## Top bridge nodes
-- [[TestFromAuditChainEntry]] - degree 12, connects to 3 communities
-- [[TestCollectRecentEvents]] - degree 7, connects to 2 communities
+- [[TestFromAuditChainEntry]] - degree 12, connects to 2 communities
 - [[_audit_entry()]] - degree 12, connects to 1 community
+- [[TestCollectRecentEvents]] - degree 7, connects to 1 community
 - [[dot-test_collects_and_converts()]] - degree 3, connects to 1 community
 - [[dot-test_severity_filter_drops_lower()]] - degree 3, connects to 1 community

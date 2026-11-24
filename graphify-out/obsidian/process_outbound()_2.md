@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L233"
+community: "TestOutboundScanUnification"
+location: "L5236"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/TestOutboundScanUnification
 ---
 
 # process_outbound()
 
 ## Connections
-- [[test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()]] - `contains` [EXTRACTED]
+- [[dot-test_json_caption_pipeline_block_replaces_caption()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification

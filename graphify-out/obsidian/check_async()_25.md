@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
-location: "L6214"
+community: "_wrap_response"
+location: "L6142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_wrap_response
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_whitespace_split_url_does_not_queue_egress_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_non_owner_userinfo_url_does_not_queue_egress_preflight()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

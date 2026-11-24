@@ -11,8 +11,8 @@ members: 9
 - [[Synthetic v1modelsid response so hermes v0.16.0 preflight succeeds. The…]] - rationale - gateway/tests/test_v1_models_synthetic.py
 - [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - rationale - gateway/tests/test_v1_models_synthetic.py
 - [[client()_8]] - code - gateway/tests/test_v1_models_synthetic.py
-- [[fixture_40]] - code
-- [[parametrize_12]] - code
+- [[fixture_43]] - code
+- [[parametrize_10]] - code
 - [[test_v1_messages_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py
 - [[test_v1_models_get_returns_synthetic_200()]] - code - gateway/tests/test_v1_models_synthetic.py
 - [[test_v1_models_post_still_goes_through_proxy()]] - code - gateway/tests/test_v1_models_synthetic.py

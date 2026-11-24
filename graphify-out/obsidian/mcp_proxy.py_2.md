@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "mcp_proxy.py"
+community: "test_mcp_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_proxypy
+  - community/test_mcp_proxypy
 ---
 
 # mcp_proxy.py
@@ -43,4 +43,4 @@ tags:
 - [[test_mcp_proxy_endpoint.py]] - `imports_from` [EXTRACTED]
 - [[test_mcp_result_endpoint.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

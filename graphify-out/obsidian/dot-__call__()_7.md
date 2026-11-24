@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_jwt.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L34"
+community: "test_cli_coverage.py"
+location: "L684"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_cli_coveragepy
 ---
 
 # .__call__()
 
 ## Connections
-- [[Clock]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

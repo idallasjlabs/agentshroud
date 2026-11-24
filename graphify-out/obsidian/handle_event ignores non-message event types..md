@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "rationale"
-community: "AsyncMock"
+community: "_make_proxy"
 location: "L503"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/_make_proxy
 ---
 
 # handle_event ignores non-message event types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_message_event_ignored()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AsyncMock
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Deleted entry is gone (right to erasure).]] - `rationale_for` [EXTRACTED]
 - [[TestTamperDetection]] - `method` [EXTRACTED]
-- [[asyncio_39]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

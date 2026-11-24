@@ -1,16 +1,17 @@
 ---
 type: community
-members: 99
+members: 107
 ---
 
 # WebProxy
 
-**Members:** 99 nodes
+**Members:** 107 nodes
 
 ## Members
 - [[NOTE api.telegram.org is intentionally NOT listed here. The bot is]] - rationale - gateway/proxy/http_proxy.py
-- [[dot-__init__()_163]] - code - gateway/proxy/http_proxy.py
-- [[dot-__init__()_164]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_151]] - code - gateway/proxy/http_proxy.py
+- [[dot-__init__()_152]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_153]] - code - gateway/proxy/web_proxy.py
 - [[dot-allowlist_config()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-allowlist_proxy()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-check()_4]] - code - gateway/proxy/web_proxy.py
@@ -19,12 +20,16 @@ members: 99
 - [[dot-is_domain_denied()]] - code - gateway/proxy/web_config.py
 - [[dot-reset()_2]] - code - gateway/proxy/web_proxy.py
 - [[dot-test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_case_insensitive()_2]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_clean_content_no_injection()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_custom_denylist()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_data_exfil_instruction_detected()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_default_mode_is_denylist()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
@@ -38,22 +43,27 @@ members: 99
 - [[dot-test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_github_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ignore_instructions_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_injection_adds_security_headers()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_listed_domain_passes()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_allows_everything()_1]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_rate_limit_blocks_excess()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_request_audited()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_response_audited()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_role_override_detected()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_ssrf_blocked_before_allowlist_check()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_system_delimiter_detected()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_tool_invocation_detected()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_unlisted_domain_blocked()_1]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_wildcard_deeper_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
 - [[dot-test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
@@ -69,22 +79,22 @@ members: 99
 - [[Default (denylist) mode is unchanged.]] - rationale - gateway/tests/test_web_proxy.py
 - [[Default-deny allowlist unlisted domains are blocked.]] - rationale - gateway/tests/test_web_proxy.py
 - [[DomainSettings]] - code - gateway/proxy/web_config.py
-- [[Enum_35]] - code
 - [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
 - [[HTTP CONNECT proxy server — intercepts all bot outbound traffic. Listens on…]] - rationale - gateway/proxy/http_proxy.py
 - [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
 - [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
-- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
 - [[RateLimiter]] - code - gateway/proxy/web_proxy.py
 - [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
 - [[TestAllowlistMode]] - code - gateway/tests/test_web_proxy.py
+- [[TestAuditChain]] - code - gateway/tests/test_web_proxy.py
 - [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
 - [[TestDataExfiltration_1]] - code - gateway/tests/test_web_proxy.py
 - [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
 - [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
 - [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
-- [[TestPassthroughMode_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestRateLimiting_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestPromptInjectionDetection]] - code - gateway/tests/test_web_proxy.py
+- [[TestRateLimiting_2]] - code - gateway/tests/test_web_proxy.py
 - [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
 - [[TestStats]] - code - gateway/tests/test_web_proxy.py
 - [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
@@ -94,19 +104,17 @@ members: 99
 - [[WebProxy]] - code - gateway/proxy/web_proxy.py
 - [[WebProxyConfig]] - code - gateway/proxy/web_config.py
 - [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
-- [[config()_2]] - code - gateway/tests/test_web_proxy.py
-- [[fixture_108]] - code
+- [[config()_4]] - code - gateway/tests/test_web_proxy.py
+- [[fixture_107]] - code
 - [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
 - [[passthrough_proxy()_1]] - code - gateway/tests/test_web_proxy.py
 - [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
-- [[str_19]] - code
 - [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
 - [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
 - [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
 - [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
 - [[web_config.py_2]] - code - gateway/proxy/web_config.py
-- [[web_proxy.py_2]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -116,34 +124,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 22 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 9 edges to [[_COMMUNITY_EgressEvent]]
-- 8 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 7 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
-- 6 edges to [[_COMMUNITY_lifespan.py]]
-- 5 edges to [[_COMMUNITY_WebProxyResult]]
-- 5 edges to [[_COMMUNITY_TestWebProxySecurityIntegration]]
-- 4 edges to [[_COMMUNITY_EgressFilter]]
-- 3 edges to [[_COMMUNITY_URLAnalyzer]]
-- 3 edges to [[_COMMUNITY_TestAuditChain]]
-- 3 edges to [[_COMMUNITY_BrowserSecurityGuard]]
-- 3 edges to [[_COMMUNITY_WebContentScanner]]
-- 3 edges to [[_COMMUNITY_NetworkValidator]]
-- 3 edges to [[_COMMUNITY_OAuthSecurityValidator]]
+- 21 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 15 edges to [[_COMMUNITY_web_proxy.py]]
+- 6 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
+- 5 edges to [[_COMMUNITY_lifespan.py]]
+- 5 edges to [[_COMMUNITY_EgressFilter]]
+- 4 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 4 edges to [[_COMMUNITY_WebProxyResult]]
+- 3 edges to [[_COMMUNITY_TestWebProxySecurityIntegration]]
+- 2 edges to [[_COMMUNITY_URLAnalyzer]]
+- 2 edges to [[_COMMUNITY_BrowserSecurityGuard]]
+- 2 edges to [[_COMMUNITY_WebContentScanner]]
 - 2 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_NetworkValidator]]
+- 2 edges to [[_COMMUNITY_test_security_audit.py]]
 - 2 edges to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_EgressPolicy]]
 - 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
-- 1 edge to [[_COMMUNITY_TestPromptInjectionDetection]]
 - 1 edge to [[_COMMUNITY_TestHiddenContent]]
 - 1 edge to [[_COMMUNITY_TestPIIDetection]]
 - 1 edge to [[_COMMUNITY_TestZeroWidthAttacks]]
-- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
 
 ## Top bridge nodes
-- [[WebProxy]] - degree 51, connects to 14 communities
-- [[web_proxy.py_2]] - degree 30, connects to 11 communities
-- [[test_web_proxy.py]] - degree 31, connects to 8 communities
-- [[http_proxy.py]] - degree 16, connects to 7 communities
+- [[WebProxy]] - degree 51, connects to 13 communities
+- [[test_web_proxy.py]] - degree 31, connects to 7 communities
+- [[dot-__init__()_153]] - degree 12, connects to 7 communities
+- [[http_proxy.py]] - degree 16, connects to 6 communities
 - [[WebProxyConfig]] - degree 49, connects to 5 communities

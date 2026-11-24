@@ -12,7 +12,7 @@ tags:
 # test_proxy_status_returns_stats()
 
 ## Connections
-- [[asyncio_81]] - `references` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

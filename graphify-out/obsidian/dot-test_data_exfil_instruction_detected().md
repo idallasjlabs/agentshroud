@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "TestPromptInjectionDetection"
+community: "WebProxy"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptInjectionDetection
+  - community/WebProxy
 ---
 
 # .test_data_exfil_instruction_detected()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptInjectionDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/WebProxy

@@ -14,7 +14,7 @@ members: 11
 - [[Output Format_35]] - document - .opencode/agents/daedalus.md
 - [[Persona_15]] - document - .opencode/agents/daedalus.md
 - [[Quality Checklist_21]] - document - .opencode/agents/daedalus.md
-- [[Role_62]] - document - .opencode/agents/daedalus.md
+- [[Role_63]] - document - .opencode/agents/daedalus.md
 - [[System Prompt_15]] - document - .opencode/agents/daedalus.md
 - [[architecture.puml (PlantUML)_5]] - document - .opencode/agents/daedalus.md
 - [[diagramsREADME_5]] - document - .opencode/agents/daedalus.md

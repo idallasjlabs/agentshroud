@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "TestContributingMdAccuracy"
+community: "test_docs_accuracy.py"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestContributingMdAccuracy
+  - community/test_docs_accuracypy
 ---
 
 # TestContributingMdAccuracy
@@ -22,4 +22,4 @@ tags:
 - [[Verify CONTRIBUTING.md references are correct.]] - `rationale_for` [EXTRACTED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestContributingMdAccuracy
+#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy

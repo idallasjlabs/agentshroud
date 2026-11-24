@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "test_adversarial_injection.py"
+community: "normalize_input"
 location: "L223"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_adversarial_injectionpy
+  - community/normalize_input
 ---
 
 # Return True if PromptGuard assigns a non-zero score or blocks.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_prompt_guard_detects()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_adversarial_injectionpy
+#graphify/rationale #graphify/EXTRACTED #community/normalize_input

@@ -15,8 +15,8 @@ members: 10
 - [[dot-test_nvd_layout_failure_exits_nonzero()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[An unreachable feed must fail the run, not print '0 new' and exit 0.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestFailsLoudly]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[_boom()_18]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[_boom()_19]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_boom()_16]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_boom()_17]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_timeout()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)

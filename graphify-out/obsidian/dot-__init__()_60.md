@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L62"
+community: "test_mcp_proxy.py"
+location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/test_mcp_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

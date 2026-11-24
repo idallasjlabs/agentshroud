@@ -15,7 +15,7 @@ tags:
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[mock_post()_3]] - `contains` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]
 - [[test_router_openai_translation.py]] - `contains` [EXTRACTED]

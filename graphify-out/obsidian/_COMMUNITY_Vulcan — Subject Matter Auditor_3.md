@@ -12,7 +12,7 @@ members: 9
 - [[Output Format_40]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
 - [[Persona_19]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
 - [[Quality Checklist_25]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
-- [[Role_84]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
+- [[Role_85]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
 - [[System Prompt_19]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
 - [[User Prompt Template_12]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md
 - [[Vulcan — Subject Matter Auditor_3]] - document - docker/config/openclaw/skills/i-vulcan/SKILL.md

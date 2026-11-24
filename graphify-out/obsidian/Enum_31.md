@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "OutboundInfoFilter"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/OutboundInfoFilter
 ---
 
 # Enum
@@ -14,4 +14,4 @@ tags:
 - [[InfoCategory]] - `inherits` [EXTRACTED]
 - [[outbound_filter.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

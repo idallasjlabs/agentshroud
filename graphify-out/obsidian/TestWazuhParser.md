@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "get_wazuh_summary"
+community: "wazuh_client.py"
 location: "L673"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_wazuh_summary
+  - community/wazuh_clientpy
 ---
 
 # TestWazuhParser
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_parse_rootkit_event()]] - `method` [EXTRACTED]
 - [[test_security_toolchain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary
+#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy

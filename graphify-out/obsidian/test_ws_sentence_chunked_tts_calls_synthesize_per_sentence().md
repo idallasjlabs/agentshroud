@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "mock_stream"
+community: "test_voice_gateway.py"
 location: "L1327"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mock_stream
+  - community/test_voice_gatewaypy
 ---
 
 # test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()
@@ -16,8 +16,8 @@ tags:
 - [[_mock_synthesize()_1]] - `indirect_call` [INFERRED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[mock_stream()_11]] - `contains` [EXTRACTED]
-- [[mock_stream()_8]] - `indirect_call` [INFERRED]
+- [[mock_stream()_24]] - `contains` [EXTRACTED]
+- [[mock_stream()_20]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mock_stream
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

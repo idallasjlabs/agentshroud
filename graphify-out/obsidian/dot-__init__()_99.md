@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "ingest_api/config.py"
-location: "L52"
+community: "PodmanEngine"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/PodmanEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize router Args config Router configuration]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[RouterConfig]] - `references` [EXTRACTED]
+- [[dot-_detect_compose()]] - `calls` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

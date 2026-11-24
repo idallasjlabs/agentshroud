@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "MCPInspector"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/MCPInspector
 ---
 
 # ._scan_value()
@@ -16,9 +16,9 @@ tags:
 - [[dot-_scan_value()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-inspect_tool_result()]] - `calls` [EXTRACTED]
-- [[Any_31]] - `references` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[InspectionFinding]] - `references` [EXTRACTED]
 - [[MCPInspector]] - `method` [EXTRACTED]
 - [[Recursively scan a value, appending findings in-place.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

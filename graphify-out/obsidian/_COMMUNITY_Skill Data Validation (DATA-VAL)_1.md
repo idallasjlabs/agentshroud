@@ -14,7 +14,7 @@ members: 10
 - [[3. Data Quality Checks_1]] - document - .cursor/agents/i-data.md
 - [[4. Cross-Site Comparison_1]] - document - .cursor/agents/i-data.md
 - [[Critical Cost Control_1]] - document - .cursor/agents/i-data.md
-- [[Role_65]] - document - .cursor/agents/i-data.md
+- [[Role_66]] - document - .cursor/agents/i-data.md
 - [[Skill Data Validation (DATA-VAL)_1]] - document - .cursor/agents/i-data.md
 - [[Test Data Validation Pattern_1]] - document - .cursor/agents/i-data.md
 - [[Validation Layers_1]] - document - .cursor/agents/i-data.md

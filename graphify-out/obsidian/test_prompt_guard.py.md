@@ -20,7 +20,7 @@ tags:
 - [[TestToolResultScan]] - `contains` [EXTRACTED]
 - [[Tests for PromptGuard security component]] - `rationale_for` [EXTRACTED]
 - [[ThreatAction]] - `imports` [EXTRACTED]
-- [[prompt_guard()_1]] - `contains` [EXTRACTED]
+- [[prompt_guard()]] - `contains` [EXTRACTED]
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 - [[test_benign_message()]] - `contains` [EXTRACTED]
 - [[test_prompt_guard_init()]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "middleware.py"
+community: "run"
 location: "L79"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # Compile regex patterns for detecting disclosure attempts.
 
 ## Connections
-- [[dot-_compile_detection_patterns()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/run

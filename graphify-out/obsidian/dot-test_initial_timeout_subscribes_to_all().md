@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "._handler"
+community: "SOCWebSocketHandler"
 location: "L744"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handler
+  - community/SOCWebSocketHandler
 ---
 
 # .test_initial_timeout_subscribes_to_all()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_handler()]] - `calls` [EXTRACTED]
 - [[TestHandlerRun]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handler
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

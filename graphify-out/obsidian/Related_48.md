@@ -12,6 +12,6 @@ tags:
 # Related
 
 ## Connections
-- [[consent_framework.py_1]] - `contains` [EXTRACTED]
+- [[consent_framework.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/consent_frameworkpy

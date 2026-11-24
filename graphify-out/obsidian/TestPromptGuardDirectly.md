@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "TestClassicOverride"
+community: "normalize_input"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestClassicOverride
+  - community/normalize_input
 ---
 
 # TestPromptGuardDirectly
@@ -17,4 +17,4 @@ tags:
 - [[PromptGuard scans high-confidence classic payloads with non-zero score.]] - `rationale_for` [EXTRACTED]
 - [[test_adversarial_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestClassicOverride
+#graphify/code #graphify/EXTRACTED #community/normalize_input

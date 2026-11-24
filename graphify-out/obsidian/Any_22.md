@@ -1,17 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "MCPAuditTrail"
+community: "GatewayBackedProvider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/GatewayBackedProvider
 ---
 
 # Any
 
 ## Connections
-- [[dot-generate_report()]] - `references` [EXTRACTED]
-- [[dot-log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-__init__()_48]] - `references` [EXTRACTED]
+- [[dot-_token()]] - `references` [EXTRACTED]
+- [[dot-call()]] - `references` [EXTRACTED]
+- [[dot-exchange_identity_assertion()]] - `references` [EXTRACTED]
+- [[dot-revoke_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

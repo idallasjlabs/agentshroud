@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "fake_urlopen"
+community: "_wrap_response"
 location: "L6845"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fake_urlopen
+  - community/_wrap_response
 ---
 
 # Rate-limit notice must reflect configured collaborator limit.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rate_limit_notice_mentions_configured_limit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fake_urlopen
+#graphify/rationale #graphify/EXTRACTED #community/_wrap_response

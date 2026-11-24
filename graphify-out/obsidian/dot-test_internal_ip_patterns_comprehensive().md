@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "TestMetadataGuard"
+community: "MetadataGuard"
 location: "L137"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/MetadataGuard
 ---
 
 # .test_internal_ip_patterns_comprehensive()
@@ -15,4 +15,4 @@ tags:
 - [[Test comprehensive internal IP pattern matching.]] - `rationale_for` [EXTRACTED]
 - [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

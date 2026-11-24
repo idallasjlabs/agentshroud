@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestCriticalGuardInitFailClosed"
+community: "_FakeRBAC"
 location: "L1026"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCriticalGuardInitFailClosed
+  - community/_FakeRBAC
 ---
 
 # TestCriticalGuardInitFailClosed
@@ -22,4 +22,4 @@ tags:
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCriticalGuardInitFailClosed
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

@@ -12,7 +12,7 @@ tags:
 # .can_use_tool_from_origin()
 
 ## Connections
-- [[dot-can_use_tool()_1]] - `calls` [EXTRACTED]
+- [[dot-can_use_tool()]] - `calls` [EXTRACTED]
 - [[Authorize a tool call, refusing owner elevation over an unverified origin. WHY…]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 - [[record_decision()]] - `calls` [EXTRACTED]

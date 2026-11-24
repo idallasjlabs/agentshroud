@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestAgentsRegistry]] - `method` [EXTRACTED]
-- [[_bot()_1]] - `calls` [EXTRACTED]
+- [[_bot()]] - `calls` [EXTRACTED]
 - [[_rows()]] - `calls` [EXTRACTED]
 - [[_timeout()_1]] - `indirect_call` [INFERRED]
 

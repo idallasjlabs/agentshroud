@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "installer.py"
+community: "detect_runtime"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/detect_runtime
 ---
 
 # BaseModel
@@ -14,4 +14,4 @@ tags:
 - [[InstallConfig]] - `inherits` [EXTRACTED]
 - [[PrerequisiteCheck]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

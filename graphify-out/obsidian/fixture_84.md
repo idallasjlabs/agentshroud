@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_e2e_proxy.py"
+community: "test_mfa_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_mfa_guardpy
 ---
 
 # fixture
 
 ## Connections
-- [[canary_pipeline()]] - `references` [EXTRACTED]
-- [[healthy_forwarder()]] - `references` [EXTRACTED]
-- [[unhealthy_forwarder()]] - `references` [EXTRACTED]
+- [[dot-mcp_proxy_with_approval()]] - `references` [EXTRACTED]
+- [[enhanced_queue()]] - `references` [EXTRACTED]
+- [[temp_store()]] - `references` [EXTRACTED]
+- [[tool_risk_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

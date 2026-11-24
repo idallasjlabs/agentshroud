@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_skill_guard.py"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/GatewayConfig
 ---
 
 # fixture
 
 ## Connections
-- [[dot-client()_6]] - `references` [EXTRACTED]
-- [[guard()_2]] - `references` [EXTRACTED]
+- [[proxy()_1]] - `references` [EXTRACTED]
+- [[ssh_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

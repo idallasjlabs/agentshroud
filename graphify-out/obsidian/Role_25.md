@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/apollo.md"
+source_file: ".agents/skills/i-cr/SKILL.md"
 type: "document"
-community: "Technical Specification"
+community: ".agents/skills/i-cr/SKILL.md"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Specification
+  - community/agents/skills/i-cr/SKILLmd
 ---
 
 # Role
 
 ## Connections
-- [[Apollo — Audio Systems Producer]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Specification
+#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd

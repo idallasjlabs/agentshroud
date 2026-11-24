@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "delegation.py"
+community: "DelegationPrivilege"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/delegationpy
+  - community/DelegationPrivilege
 ---
 
 # ValueError
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DelegationError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/delegationpy
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

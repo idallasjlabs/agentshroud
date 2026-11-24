@@ -1,104 +1,64 @@
 ---
 type: community
-members: 91
+members: 51
 ---
 
 # test_security_audit.py
 
-**Members:** 91 nodes
+**Members:** 51 nodes
 
 ## Members
-- [[dot-guard()_5]] - code - gateway/tests/test_security_audit.py
-- [[dot-guard()_6]] - code - gateway/tests/test_security_audit.py
-- [[dot-sandbox()]] - code - gateway/tests/test_security_audit.py
-- [[dot-sanitizer()_3]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_all_modules_have_copyright()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_all_security_modules_importable()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_base64_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dan_jailbreak()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dockerfile_exists()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_empty_input()_2]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ignore_previous_instructions()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_instruction_override()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_json_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_eval_or_exec_in_security()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_no_hardcoded_secrets_in_source()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_role_reassignment()_2]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_role_switching()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_session_isolation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_staging_detection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_windows_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_write_outside_allowed_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_write_pii_detection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_xml_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-token_validator()]] - code - gateway/tests/test_security_audit.py
-- [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[All security modules should have copyright header.]] - rationale - gateway/tests/test_security_audit.py
-- [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
-- [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
-- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
-- [[Dockerfile should be present for reproducible builds.]] - rationale - gateway/tests/test_security_audit.py
-- [[Every security module should import without error.]] - rationale - gateway/tests/test_security_audit.py
-- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
-- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
-- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
-- [[No hardcoded secrets in Python source files.]] - rationale - gateway/tests/test_security_audit.py
-- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Reading from tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
-- [[Security modules should not call eval() or exec(). Uses AST analysis so the…]] - rationale - gateway/tests/test_security_audit.py
-- [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test supply chain security measures.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestContextGuard_1]] - code - gateway/tests/test_security_audit.py
-- [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_audit.py
-- [[TestSupplyChain_1]] - code - gateway/tests/test_security_audit.py
-- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
-- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
-- [[fixture_124]] - code
+- [[dot-__init__()_198]] - code - gateway/security/oauth_security.py
+- [[dot-check_state_reuse()]] - code - gateway/security/oauth_security.py
+- [[dot-create_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[dot-record_state_used()]] - code - gateway/security/oauth_security.py
+- [[dot-register_known_shared_ids()]] - code - gateway/security/oauth_security.py
+- [[dot-test_cookie_custom_max_age_expires_sooner()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_expired_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_tamper_detected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_within_max_age_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_wrong_client_fails()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_cookie_wrong_scope_fails()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_create_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_different_uri_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_empty_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_empty_state_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_exact_match_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_http_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_path_traversal_rejected()_1]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_plain_rejected_when_s256_required()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_required_missing_challenge()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_s256_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_pkce_verifier_validation()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_short_state_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_state_replay_detected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_static_shared_client_id_rejected()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_unique_client_id_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_valid_state_accepted()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-test_validate_consent_cookie()]] - code - gateway/tests/test_oauth_security.py
+- [[dot-validate_consent_cookie()]] - code - gateway/security/oauth_security.py
+- [[dot-validate_redirect_uri()]] - code - gateway/security/oauth_security.py
+- [[dot-validate_request()]] - code - gateway/security/oauth_security.py
+- [[dot-verify_pkce()]] - code - gateway/security/oauth_security.py
+- [[ConfusedDeputyError]] - code - gateway/security/oauth_security.py
+- [[Exception_19]] - code
+- [[OAuth Security Module - Prevents confused deputy attacks on MCP OAuth proxy…]] - rationale - gateway/security/oauth_security.py
+- [[OAuthError]] - code - gateway/security/oauth_security.py
+- [[OAuthRequest]] - code - gateway/security/oauth_security.py
+- [[OAuthSecurityValidator]] - code - gateway/security/oauth_security.py
+- [[PKCEViolation]] - code - gateway/security/oauth_security.py
+- [[RedirectMismatch]] - code - gateway/security/oauth_security.py
+- [[TestClientValidation]] - code - gateway/tests/test_oauth_security.py
+- [[TestConsentCookieBinding]] - code - gateway/tests/test_oauth_security.py
+- [[TestPKCE]] - code - gateway/tests/test_oauth_security.py
+- [[TestRedirectURI]] - code - gateway/tests/test_oauth_security.py
+- [[TestStateValidation]] - code - gateway/tests/test_oauth_security.py
+- [[Tests for oauth_security module - MCP OAuth proxy security. TDD Written before…]] - rationale - gateway/tests/test_oauth_security.py
+- [[fixture_131]] - code
+- [[oauth_security.py_2]] - code - gateway/security/oauth_security.py
+- [[test_oauth_security.py]] - code - gateway/tests/test_oauth_security.py
 - [[test_security_audit.py]] - code - gateway/tests/test_security_audit.py
+- [[validator()_1]] - code - gateway/tests/test_oauth_security.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -108,45 +68,49 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_middleware.py]]
-- 3 edges to [[_COMMUNITY_EncryptedStore]]
-- 3 edges to [[_COMMUNITY_EnvironmentGuard]]
+- 4 edges to [[_COMMUNITY_TestAuth]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
 - 3 edges to [[_COMMUNITY_ContainerSnapshot]]
-- 3 edges to [[_COMMUNITY_ContextGuard]]
-- 3 edges to [[_COMMUNITY_PromptGuard]]
+- 3 edges to [[_COMMUNITY_web_proxy.py]]
+- 3 edges to [[_COMMUNITY_MetadataGuard]]
 - 3 edges to [[_COMMUNITY_ResourceGuard]]
-- 3 edges to [[_COMMUNITY_TestAuth_1]]
-- 3 edges to [[_COMMUNITY_OAuthSecurityValidator]]
-- 2 edges to [[_COMMUNITY_PIIConfig]]
-- 2 edges to [[_COMMUNITY_KeyVault]]
-- 2 edges to [[_COMMUNITY_deep_security_test]]
-- 2 edges to [[_COMMUNITY_TokenValidator]]
+- 3 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
+- 2 edges to [[_COMMUNITY_EnvironmentGuard]]
+- 2 edges to [[_COMMUNITY_KeyVaultConfig]]
+- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
+- 2 edges to [[_COMMUNITY_FileSandbox]]
 - 2 edges to [[_COMMUNITY_SubagentMonitor]]
-- 2 edges to [[_COMMUNITY_MetadataGuard]]
-- 2 edges to [[_COMMUNITY_parse_clamscan_output]]
-- 2 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
+- 2 edges to [[_COMMUNITY_WebProxy]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
 - 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_EgressEvent]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_TestSupplyChain]]
 - 1 edge to [[_COMMUNITY_BrowserSecurityGuard]]
 - 1 edge to [[_COMMUNITY_TestPIIDetection_1]]
 - 1 edge to [[_COMMUNITY_TrustManager]]
 - 1 edge to [[_COMMUNITY_GitGuard]]
 - 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_ServerConfig]]
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
 - 1 edge to [[_COMMUNITY_NetworkValidator]]
 - 1 edge to [[_COMMUNITY_AgentRegistry]]
-- 1 edge to [[_COMMUNITY_ConsentFramework]]
-- 1 edge to [[_COMMUNITY_TestExfiltrationDetection]]
+- 1 edge to [[_COMMUNITY_TestPromptGuard]]
+- 1 edge to [[_COMMUNITY_LogSanitizer]]
+- 1 edge to [[_COMMUNITY_TokenValidator]]
 - 1 edge to [[_COMMUNITY_run_trivy_scan]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output]]
 - 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_get_wazuh_summary]]
+- 1 edge to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY_generate_report]]
+- 1 edge to [[_COMMUNITY_PipelineAction]]
+- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 
 ## Top bridge nodes
 - [[test_security_audit.py]] - degree 54, connects to 35 communities
-- [[fixture_124]] - degree 8, connects to 3 communities
-- [[dot-token_validator()]] - degree 3, connects to 2 communities
-- [[dot-sanitizer()_3]] - degree 3, connects to 2 communities
-- [[TestFileSandbox]] - degree 24, connects to 1 community
+- [[OAuthSecurityValidator]] - degree 21, connects to 4 communities
+- [[oauth_security.py_2]] - degree 11, connects to 3 communities
+- [[ConfusedDeputyError]] - degree 6, connects to 1 community
+- [[PKCEViolation]] - degree 6, connects to 1 community

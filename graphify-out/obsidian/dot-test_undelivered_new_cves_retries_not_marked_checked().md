@@ -16,7 +16,7 @@ tags:
 - [[_fake_all_agents()_1]] - `indirect_call` [INFERRED]
 - [[_sleep()_5]] - `contains` [EXTRACTED]
 - [[_sleep()_2]] - `indirect_call` [INFERRED]
-- [[asyncio_20]] - `references` [EXTRACTED]
-- [[now()_6]] - `contains` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[now()_5]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sleep

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[If the guard raises, non-owner outbound is blocked (fail-closed).]] - `rationale_for` [EXTRACTED]
 - [[_make_pipeline()_3]] - `calls` [EXTRACTED]
-- [[asyncio_44]] - `references` [EXTRACTED]
+- [[asyncio_43]] - `references` [EXTRACTED]
 - [[test_data_exfil_volume_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard

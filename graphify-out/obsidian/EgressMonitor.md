@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "EgressEvent"
+community: "web_proxy.py"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/web_proxypy
 ---
 
 # EgressMonitor
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_61]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_66]] - `method` [EXTRACTED]
 - [[dot-check_anomalies()]] - `method` [EXTRACTED]
 - [[dot-daily_summary()]] - `method` [EXTRACTED]
 - [[dot-get_events()_1]] - `method` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "get_wazuh_summary"
+community: "wazuh_client.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_wazuh_summary
+  - community/wazuh_clientpy
 ---
 
 # wazuh_client.py
 
 ## Connections
 - [[datetime_3]] - `imports_from` [EXTRACTED]
-- [[generate_summary()_3]] - `contains` [EXTRACTED]
+- [[generate_summary()_2]] - `contains` [EXTRACTED]
 - [[get_fim_events()]] - `contains` [EXTRACTED]
 - [[get_rootkit_events()]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_security_audit.py]] - `imports_from` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_wazuh_summary
+#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy

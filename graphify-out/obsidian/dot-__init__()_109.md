@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "TestWebProxySecurityIntegration"
-location: "L24"
+community: "RedactionResult"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebProxySecurityIntegration
+  - community/RedactionResult
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockDNSVerdict]] - `method` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

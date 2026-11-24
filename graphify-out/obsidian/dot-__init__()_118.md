@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/approvals.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L129"
+community: "test_module_stats.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_module_statspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeApprovals]] - `method` [EXTRACTED]
-- [[EdgeStore]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[Notifier]] - `references` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

@@ -12,7 +12,7 @@ tags:
 # macOS System Administrator (MAC)
 
 ## Connections
-- [[Purpose_109]] - `contains` [EXTRACTED]
+- [[Purpose_107]] - `contains` [EXTRACTED]
 - [[Related Skills_39]] - `contains` [EXTRACTED]
 - [[Usage_49]] - `contains` [EXTRACTED]
 - [[mac-app-discoveryREADME]] - `contains` [EXTRACTED]

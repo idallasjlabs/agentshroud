@@ -1,17 +1,19 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L178"
+community: "GatewayConfig"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/GatewayConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
+- [[Store configuration Actual database connection created in initialize(). Args…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

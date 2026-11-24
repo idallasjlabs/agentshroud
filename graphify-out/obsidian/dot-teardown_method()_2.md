@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_main_endpoints.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestScanParameterAllowlists"
-location: "L667"
+community: "ContainerSnapshot"
+location: "L523"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestScanParameterAllowlists
+  - community/ContainerSnapshot
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestScanParameterAllowlists]] - `method` [EXTRACTED]
-- [[auth_dep()]] - `indirect_call` [INFERRED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestScanParameterAllowlists
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

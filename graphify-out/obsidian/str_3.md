@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "multi_host_test.py"
+community: "DelegationPrivilege"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/multi_host_testpy
+  - community/DelegationPrivilege
 ---
 
 # str
 
 ## Connections
-- [[HostStatus]] - `inherits` [EXTRACTED]
+- [[DelegationPrivilege]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/multi_host_testpy
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

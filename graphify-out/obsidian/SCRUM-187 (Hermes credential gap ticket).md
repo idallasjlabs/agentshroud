@@ -1,11 +1,11 @@
 ---
 source_file: "reports/upgrade-2026-09-27.md"
 type: "concept"
-community: "sunday-upgrade.sh"
+community: "upgrade-2026-09-21.md"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/upgrade-2026-09-21md
 ---
 
 # SCRUM-187 (Hermes credential gap ticket)
@@ -16,4 +16,4 @@ tags:
 - [[upgrade-2026-09-27-20260927-1400]] - `references` [EXTRACTED]
 - [[upgrade-2026-09-27]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/concept #graphify/EXTRACTED #community/upgrade-2026-09-21md

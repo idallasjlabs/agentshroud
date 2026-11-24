@@ -1,28 +1,36 @@
 ---
 type: community
-members: 15
+members: 23
 ---
 
 # Features
 
-**Members:** 15 nodes
+**Members:** 23 nodes
 
 ## Members
-- [[Action Feed]] - document - dashboard/README.md
-- [[Data Ledger Viewer]] - document - dashboard/README.md
-- [[Features]] - document - dashboard/README.md
-- [[Kill Switch]] - document - dashboard/README.md
-- [[Memory Browser]] - document - dashboard/README.md
-- [[Network Inspector]] - document - dashboard/README.md
-- [[Overview]] - document - docs/security/security-supply-chain.md
-- [[Read-Only Filesystem (Planned)]] - concept - docs/security/container-policy.md
-- [[Recommendations]] - document - docs/security/security-supply-chain.md
-- [[Secret Management Hierarchy (1Password → Docker Secrets → Env)]] - rationale - docs/security/container-policy.md
-- [[Security Supply Chain Analysis]] - document - docs/security/security-supply-chain.md
-- [[Verdict Summary]] - document - docs/security/security-supply-chain.md
-- [[Wazuh CVE-2025-24016 (CVSS 9.9)]] - concept - docs/security/security-supply-chain.md
-- [[container-policy]] - document - docs/security/container-policy.md
-- [[security-supply-chain]] - document - docs/security/security-supply-chain.md
+- [[1. Install Dependencies]] - document - gateway/README.md
+- [[2. Configure]] - document - gateway/README.md
+- [[3. Run]] - document - gateway/README.md
+- [[4. Test]] - document - gateway/README.md
+- [[Approval Queue_1]] - document - gateway/README.md
+- [[Authentication_3]] - document - gateway/README.md
+- [[Data Ledger]] - document - gateway/README.md
+- [[Dependency Graph_1]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Dependency Graph]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Features_5]] - document - gateway/README.md
+- [[Gateway Layer]] - document - gateway/README.md
+- [[Gateway Module Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Gateway Startup Initialization Order]] - concept - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Implementation Status_3]] - document - gateway/README.md
+- [[Ingest API]] - document - gateway/README.md
+- [[Key Initialization Order (main.py lifespan)]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[PII Sanitizer]] - document - gateway/README.md
+- [[Python Package Dependencies]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Related Notes_69]] - document - docs/vault/09 - Diagrams/Dependency Graph.md
+- [[Setup_12]] - document - gateway/README.md
+- [[Structure_2]] - document - gateway/README.md
+- [[Tech Stack_1]] - document - gateway/README.md
+- [[gatewayREADME]] - document - gateway/README.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -30,17 +38,3 @@ members: 15
 TABLE source_file, type FROM #community/Features
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_dashboardREADME]]
-- 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]
-- 1 edge to [[_COMMUNITY_Container Security Policy — AgentShroud]]
-- 1 edge to [[_COMMUNITY_Detailed Profiles]]
-- 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-
-## Top bridge nodes
-- [[Features]] - degree 6, connects to 1 community
-- [[container-policy]] - degree 5, connects to 1 community
-- [[Security Supply Chain Analysis]] - degree 5, connects to 1 community
-- [[Kill Switch]] - degree 3, connects to 1 community
-- [[Read-Only Filesystem (Planned)]] - degree 2, connects to 1 community

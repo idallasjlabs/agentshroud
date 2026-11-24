@@ -15,7 +15,7 @@ tags:
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
 - [[Test forwarding handles unexpected exceptions]] - `rationale_for` [EXTRACTED]
-- [[asyncio_59]] - `references` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 - [[mock_post()_9]] - `contains` [EXTRACTED]
 - [[mock_post()_8]] - `indirect_call` [INFERRED]
 - [[test_router.py]] - `contains` [EXTRACTED]

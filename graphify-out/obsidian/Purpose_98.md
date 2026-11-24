@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/daedalus/README.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Purpose
 
 ## Connections
-- [[Daedalus — Concept Illustrator_8]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

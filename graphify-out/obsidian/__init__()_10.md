@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L2311"
+community: "._fake_aiohttp"
+location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/_fake_aiohttp
 ---
 
 # __init__()
 
 ## Connections
-- [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
+- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_fake_aiohttp

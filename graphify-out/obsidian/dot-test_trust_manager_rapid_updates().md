@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Rapid trust score updates shouldn't corrupt state.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[TestConcurrency]] - `method` [EXTRACTED]
 - [[TrustManager]] - `calls` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustManager

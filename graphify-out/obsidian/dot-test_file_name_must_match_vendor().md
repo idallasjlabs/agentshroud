@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_profiles.py"
 type: "code"
-community: "test_edge_profiles.py"
+community: "_write"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_profilespy
+  - community/_write
 ---
 
 # .test_file_name_must_match_vendor()
@@ -15,4 +15,4 @@ tags:
 - [[TestValidProfile]] - `method` [EXTRACTED]
 - [[_write()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_profilespy
+#graphify/code #graphify/EXTRACTED #community/_write

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "PromptGuard"
+community: "prompt_guard.py"
 location: "L705"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/prompt_guardpy
 ---
 
 # .scan()
@@ -14,11 +14,11 @@ tags:
 ## Connections
 - [[dot-_check_encoded_content()]] - `calls` [EXTRACTED]
 - [[dot-_check_unicode_tricks()]] - `calls` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_3]] - `calls` [EXTRACTED]
 - [[PromptGuard]] - `method` [EXTRACTED]
 - [[Scan input text for prompt injection patterns. Args text The user input to…]] - `rationale_for` [EXTRACTED]
 - [[ScanResult]] - `calls` [EXTRACTED]
 - [[detect_base64_payloads()]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PromptGuard
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

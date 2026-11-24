@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "HeuristicClassifier"
+community: "normalize_input"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/normalize_input
 ---
 
 # Pattern
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-_score_signal()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/normalize_input

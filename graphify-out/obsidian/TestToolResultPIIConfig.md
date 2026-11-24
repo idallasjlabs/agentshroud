@@ -12,7 +12,7 @@ tags:
 # TestToolResultPIIConfig
 
 ## Connections
-- [[dot-test_default_config()_2]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[dot-test_tool_specific_config()]] - `method` [EXTRACTED]
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[Test the ToolResultPIIConfig configuration class]] - `rationale_for` [EXTRACTED]

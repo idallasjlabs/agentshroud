@@ -12,7 +12,7 @@ tags:
 # test_endpoint_survives_adversarial_body()
 
 ## Connections
-- [[parametrize_7]] - `references` [EXTRACTED]
+- [[parametrize_3]] - `references` [EXTRACTED]
 - [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

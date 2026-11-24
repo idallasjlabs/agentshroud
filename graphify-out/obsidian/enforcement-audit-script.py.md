@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/reviews/enforcement-audit-script.py"
 type: "code"
-community: "middleware.py"
+community: "run"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # enforcement-audit-script.py
@@ -43,7 +43,7 @@ tags:
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 - [[ok()]] - `contains` [EXTRACTED]
-- [[run()_1]] - `contains` [EXTRACTED]
+- [[run()]] - `contains` [EXTRACTED]
 - [[warn()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/run

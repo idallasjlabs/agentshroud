@@ -34,7 +34,7 @@ members: 28
 - [[The vault has no item literally titled Brave Search API Key — the real item…]] - rationale - gateway/tests/test_op_proxy.py
 - [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
 - [[client()_16]] - code - gateway/tests/test_op_proxy.py
-- [[fixture_110]] - code
+- [[fixture_108]] - code
 - [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
 
 ## Live Query (requires Dataview plugin)

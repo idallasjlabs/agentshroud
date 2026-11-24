@@ -10,10 +10,10 @@ members: 21
 ## Members
 - [[Tests for dashboard API endpoints proxystatus, alertssummary, sshhosts,…]] - rationale - gateway/tests/test_dashboard_endpoints.py
 - [[When pipeline exists, stats should reflect its data.]] - rationale - gateway/tests/test_dashboard_endpoints.py
-- [[asyncio_81]] - code
+- [[asyncio_80]] - code
 - [[auth_headers()_4]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[client()_18]] - code - gateway/tests/test_dashboard_endpoints.py
-- [[fixture_132]] - code
+- [[client()_19]] - code - gateway/tests/test_dashboard_endpoints.py
+- [[fixture_135]] - code
 - [[tail parameter is clamped to 1-100.]] - rationale - gateway/tests/test_dashboard_endpoints.py
 - [[test_alerts_summary_empty()]] - code - gateway/tests/test_dashboard_endpoints.py
 - [[test_alerts_summary_requires_auth()]] - code - gateway/tests/test_dashboard_endpoints.py
@@ -42,9 +42,9 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_dashboard_endpoints.py]]
 - 1 edge to [[_COMMUNITY_app]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 - 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
 - [[test_dashboard_endpoints.py]] - degree 24, connects to 4 communities
-- [[client()_18]] - degree 4, connects to 2 communities
+- [[client()_19]] - degree 4, connects to 2 communities

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "lifespan.py"
 location: "L67"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/lifespanpy
 ---
 
 # Run the canary verification system. Args: pipeline: SecurityPipeline instance…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[run_canary()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

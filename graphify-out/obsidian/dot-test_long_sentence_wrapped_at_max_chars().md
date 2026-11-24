@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "._s"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_s
 ---
 
 # .test_long_sentence_wrapped_at_max_chars()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_s()]] - `calls` [EXTRACTED]
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_s

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "code"
-community: "Delegation"
+community: "DelegationPrivilege"
 location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Delegation
+  - community/DelegationPrivilege
 ---
 
 # .is_active()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Delegation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Delegation
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "app"
+community: "run"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app
+  - community/run
 ---
 
 # fixture
 
 ## Connections
-- [[client()]] - `references` [EXTRACTED]
-- [[sync_client()]] - `references` [EXTRACTED]
+- [[dot-xml_filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app
+#graphify/code #graphify/EXTRACTED #community/run

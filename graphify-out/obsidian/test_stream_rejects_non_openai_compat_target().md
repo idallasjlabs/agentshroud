@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[ForwardError]] - `uses` [INFERRED]
-- [[asyncio_60]] - `references` [EXTRACTED]
+- [[asyncio_58]] - `references` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_get_gmail_app_password"
+community: "test_agent_cve_registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_gmail_app_password
+  - community/test_agent_cve_registrypy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[_completed()]] - `references` [EXTRACTED]
+- [[_run_triage()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_gmail_app_password
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

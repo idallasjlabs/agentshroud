@@ -12,7 +12,7 @@ tags:
 # _CloseRaisesTargetWriter
 
 ## Connections
-- [[dot-close()_17]] - `method` [EXTRACTED]
+- [[dot-close()_16]] - `method` [EXTRACTED]
 - [[_DummyTargetWriter]] - `inherits` [EXTRACTED]
 - [[_open_conn()_2]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

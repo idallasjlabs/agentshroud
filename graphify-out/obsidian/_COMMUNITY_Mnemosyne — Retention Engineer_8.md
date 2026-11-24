@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Mnemosyne — Retention Engineer_8]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
-- [[Purpose_126]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
+- [[Purpose_124]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[Related Skills_56]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[Usage_66]] - document - docker/config/hermes/skills/i-mnemosyne/README.md
 - [[hermesskillsi-mnemosyneREADME]] - document - docker/config/hermes/skills/i-mnemosyne/README.md

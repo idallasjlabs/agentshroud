@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "soc/router.py"
+community: "test_soc_router_coverage.py"
 location: "L2555"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/test_soc_router_coveragepy
 ---
 
 # _launch_scan_background()
@@ -18,4 +18,4 @@ tags:
 - [[test_launch_scan_background_exec_failure()]] - `calls` [EXTRACTED]
 - [[test_launch_scan_background_success()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

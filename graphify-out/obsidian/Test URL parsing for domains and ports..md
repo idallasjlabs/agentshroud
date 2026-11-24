@@ -12,6 +12,6 @@ tags:
 # Test URL parsing for domains and ports.
 
 ## Connections
-- [[dot-test_url_parsing()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_url_parsing()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/EgressFilter

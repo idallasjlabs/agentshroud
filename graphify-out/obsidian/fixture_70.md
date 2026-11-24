@@ -1,20 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "RedactionResult"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/GatewayConfig
 ---
 
 # fixture
 
 ## Connections
-- [[dot-_close_middleware_after()]] - `references` [EXTRACTED]
-- [[dot-default_config()]] - `references` [EXTRACTED]
-- [[dot-mock_config()]] - `references` [EXTRACTED]
-- [[dot-sanitizer()_2]] - `references` [EXTRACTED]
-- [[dot-tool_config()]] - `references` [EXTRACTED]
+- [[dot-disabled_client()]] - `references` [EXTRACTED]
+- [[dot-no_approval_client()]] - `references` [EXTRACTED]
+- [[auth_headers()_2]] - `references` [EXTRACTED]
+- [[client()_13]] - `references` [EXTRACTED]
+- [[ssh_config()]] - `references` [EXTRACTED]
+- [[test_config_with_ssh()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/soc/auth.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
 community: "soc/router.py"
-location: "L141"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,8 +12,10 @@ tags:
 # .__init__()
 
 ## Connections
-- [[RBACManager]] - `references` [EXTRACTED]
-- [[Role]] - `references` [EXTRACTED]
-- [[SCLCaller]] - `method` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

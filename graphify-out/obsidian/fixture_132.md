@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_dashboard_endpoints.py"
+community: "TestAgentsRegistry"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/TestAgentsRegistry
 ---
 
 # fixture
 
 ## Connections
-- [[auth_headers()_4]] - `references` [EXTRACTED]
 - [[client()_18]] - `references` [EXTRACTED]
+- [[edge()]] - `references` [EXTRACTED]
+- [[holder()_1]] - `references` [EXTRACTED]
+- [[state()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry

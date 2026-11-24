@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-cicdREADME]] - document - .agents/skills/i-cicd/README.md
 - [[CICD Pipeline Advisor (CICD)_1]] - document - .agents/skills/i-cicd/README.md
-- [[Purpose_102]] - document - .agents/skills/i-cicd/README.md
+- [[Purpose_100]] - document - .agents/skills/i-cicd/README.md
 - [[Related Skills_32]] - document - .agents/skills/i-cicd/README.md
 - [[Usage_42]] - document - .agents/skills/i-cicd/README.md
 

@@ -36,8 +36,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_GroupRole]]
-- 1 edge to [[_COMMUNITY_test_group_rbac.py]]
+- 2 edges to [[_COMMUNITY_GroupRoleResolver]]
 
 ## Top bridge nodes
-- [[TestGroupRoleResolver]] - degree 13, connects to 2 communities
+- [[TestGroupRoleResolver]] - degree 13, connects to 1 community

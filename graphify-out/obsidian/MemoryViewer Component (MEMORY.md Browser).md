@@ -1,11 +1,11 @@
 ---
 source_file: "dashboard/README.md"
 type: "concept"
-community: "dashboard/README.md"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/dashboard/READMEmd
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # MemoryViewer Component (MEMORY.md Browser)
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dashboardREADME]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/dashboard/READMEmd
+#graphify/concept #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

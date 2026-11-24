@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestToolListing]] - `method` [EXTRACTED]
-- [[_profile()]] - `calls` [EXTRACTED]
+- [[_profile()_1]] - `calls` [EXTRACTED]
 - [[_token()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_token

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "rationale"
-community: "test_clamav_pipeline.py"
+community: "parse_clamscan_output"
 location: "L93"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/parse_clamscan_output
 ---
 
 # Run ClamAV scan and return parsed results. Args: target: Directory or file to…
 
 ## Connections
-- [[run_clamscan()]] - `rationale_for` [EXTRACTED]
+- [[run_clamscan()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/rationale #graphify/EXTRACTED #community/parse_clamscan_output

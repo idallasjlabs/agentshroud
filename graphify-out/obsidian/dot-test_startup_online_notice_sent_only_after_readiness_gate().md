@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_startup_online_notice_sent_only_after_readiness_gate"
 location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_startup_online_notice_sent_only_after_readiness_gate
 ---
 
 # .test_startup_online_notice_sent_only_after_readiness_gate()
@@ -15,4 +15,4 @@ tags:
 - [[Online notice must appear after readiness probes to avoid premature status…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_startup_online_notice_sent_only_after_readiness_gate

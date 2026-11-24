@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_edge_jwt.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L39"
+community: "test_mfa_guard.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # store()
 
 ## Connections
-- [[EdgeStore]] - `uses` [INFERRED]
-- [[fixture_78]] - `references` [EXTRACTED]
-- [[test_edge_jwt.py]] - `contains` [EXTRACTED]
+- [[ApprovalStore]] - `uses` [INFERRED]
+- [[Path_38]] - `references` [EXTRACTED]
+- [[fixture_81]] - `references` [EXTRACTED]
+- [[test_approval_store.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

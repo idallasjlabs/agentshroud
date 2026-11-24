@@ -1,20 +1,21 @@
 ---
 type: community
-members: 47
+members: 49
 ---
 
 # EdgeStore
 
-**Members:** 47 nodes
+**Members:** 49 nodes
 
 ## Members
-- [[dot-__init__()_161]] - code - gateway/inbound_edge/edge_jwt.py
-- [[dot-__init__()_162]] - code - gateway/inbound_edge/store.py
+- [[dot-__init__()_148]] - code - gateway/inbound_edge/approvals.py
+- [[dot-__init__()_149]] - code - gateway/inbound_edge/edge_jwt.py
+- [[dot-__init__()_150]] - code - gateway/inbound_edge/store.py
 - [[dot-_one()]] - code - gateway/inbound_edge/store.py
 - [[dot-add_client()]] - code - gateway/inbound_edge/store.py
 - [[dot-add_ticket()]] - code - gateway/inbound_edge/store.py
 - [[dot-approval_for_ticket()]] - code - gateway/inbound_edge/store.py
-- [[dot-close()_14]] - code - gateway/inbound_edge/store.py
+- [[dot-close()_11]] - code - gateway/inbound_edge/store.py
 - [[dot-consume_approval()]] - code - gateway/inbound_edge/store.py
 - [[dot-consume_enrollment()]] - code - gateway/inbound_edge/store.py
 - [[dot-enrollment_window_vendor()]] - code - gateway/inbound_edge/store.py
@@ -41,13 +42,14 @@ members: 47
 - [[dot-take_code()]] - code - gateway/inbound_edge/store.py
 - [[dot-take_pending()]] - code - gateway/inbound_edge/store.py
 - [[dot-unkill()]] - code - gateway/inbound_edge/store.py
-- [[Any_64]] - code
+- [[Any_59]] - code
 - [[Async SQLite store. One instance per gateway process.]] - rationale - gateway/inbound_edge/store.py
 - [[Atomically mark an approval used. True for exactly one caller.]] - rationale - gateway/inbound_edge/store.py
 - [[Consume a refresh token. Reuse of a consumed token revokes its family.]] - rationale - gateway/inbound_edge/store.py
 - [[EdgeStore]] - code - gateway/inbound_edge/store.py
 - [[Mint a one-time code the owner types on the consent page. Returned once.]] - rationale - gateway/inbound_edge/store.py
-- [[Path_56]] - code
+- [[Notifier]] - code
+- [[Path_54]] - code
 - [[RFC 7009 revocation of a refresh token kills its whole family.]] - rationale - gateway/inbound_edge/store.py
 - [[Return and delete an unexpired code. A second call returns None.]] - rationale - gateway/inbound_edge/store.py
 - [[The newest unconsumed, unexpired request_id for this idempotency key.]] - rationale - gateway/inbound_edge/store.py
@@ -64,13 +66,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 23 edges to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 17 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 4 edges to [[_COMMUNITY_test_edge_approvals.py]]
+- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
 - 2 edges to [[_COMMUNITY_EdgeOAuthService]]
 - 2 edges to [[_COMMUNITY_test_edge_service_routes.py]]
-- 2 edges to [[_COMMUNITY_test_soc_edge.py]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_make_event]]
 - 1 edge to [[_COMMUNITY_archive_old_events]]
 
 ## Top bridge nodes
-- [[EdgeStore]] - degree 62, connects to 5 communities
+- [[EdgeStore]] - degree 62, connects to 8 communities
+- [[dot-__init__()_148]] - degree 4, connects to 2 communities
 - [[_h()]] - degree 15, connects to 1 community
-- [[dot-__init__()_161]] - degree 2, connects to 1 community
+- [[dot-__init__()_149]] - degree 2, connects to 1 community

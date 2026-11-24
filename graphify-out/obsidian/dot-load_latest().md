@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "IntelReportStore"
+community: "ReportIntegrityError"
 location: "L241"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/ReportIntegrityError
 ---
 
 # .load_latest()
@@ -18,4 +18,4 @@ tags:
 - [[Load the most recently saved report. Args verify If True, raise…]] - `rationale_for` [EXTRACTED]
 - [[ReportIntegrityError]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError

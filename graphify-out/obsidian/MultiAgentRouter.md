@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # MultiAgentRouter
 
 ## Connections
-- [[dot-__init__()_99]] - `method` [EXTRACTED]
+- [[dot-__init__()_102]] - `method` [EXTRACTED]
 - [[dot-_build_forward_payload()]] - `method` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent()]] - `method` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `method` [EXTRACTED]
-- [[dot-health_check()_5]] - `method` [EXTRACTED]
+- [[dot-health_check()_3]] - `method` [EXTRACTED]
 - [[dot-list_targets()]] - `method` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-register_bots()]] - `method` [EXTRACTED]
@@ -29,8 +29,8 @@ tags:
 - [[Routes content to appropriate agent containers Routing priority 1. Explicit…]] - `rationale_for` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
-- [[client()_11]] - `uses` [INFERRED]
-- [[client()_12]] - `uses` [INFERRED]
+- [[client()_13]] - `uses` [INFERRED]
+- [[client()_14]] - `uses` [INFERRED]
 - [[ingest_apirouter.py]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -46,4 +46,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

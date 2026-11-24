@@ -15,8 +15,8 @@ members: 12
 - [[Key Commands]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[OpenClaw Integration (Primary Target)]] - document - docs/api/integration-guide.md
 - [[OpenSCAP_1]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Purpose_171]] - document - docs/vault/05 - Dependencies/openscap.md
-- [[Related Notes_69]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Purpose_172]] - document - docs/vault/05 - Dependencies/openscap.md
+- [[Related Notes_70]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[Relationship to Other Security Tools]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[What It Checks_1]] - document - docs/vault/05 - Dependencies/openscap.md
 - [[openscap]] - document - docs/vault/05 - Dependencies/openscap.md

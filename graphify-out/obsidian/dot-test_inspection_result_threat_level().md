@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "TestInjectionDetection"
 location: "L1287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/TestInjectionDetection
 ---
 
 # .test_inspection_result_threat_level()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestThreatLevelCalc]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_canary_tripwire.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "CanaryTripwire"
-location: "L15"
+community: ".setup_method"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CanaryTripwire
+  - community/setup_method
 ---
 
 # .setup_method()
 
 ## Connections
-- [[CanaryTripwire]] - `calls` [EXTRACTED]
-- [[TestCanaryTripwire]] - `method` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._4]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CanaryTripwire
+#graphify/code #graphify/EXTRACTED #community/setup_method

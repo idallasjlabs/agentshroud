@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "._monitor_resources"
 location: "L257"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/_monitor_resources
 ---
 
 # ._cleanup_expired_usage()
@@ -16,4 +16,4 @@ tags:
 - [[Clean up old usage data (older than 5 minutes).]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/_monitor_resources

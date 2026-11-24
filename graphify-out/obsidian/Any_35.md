@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # Any
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-get_stats()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

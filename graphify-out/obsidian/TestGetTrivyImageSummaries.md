@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_image_summaries"
+community: "Any"
 location: "L1070"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_image_summaries
+  - community/Any
 ---
 
 # TestGetTrivyImageSummaries
@@ -23,4 +23,4 @@ tags:
 - [[dot-test_returns_one_entry_per_report_file()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_image_summaries
+#graphify/code #graphify/EXTRACTED #community/Any

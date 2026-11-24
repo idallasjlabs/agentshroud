@@ -1,26 +1,26 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "KeyRotationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/KeyRotationManager
 ---
 
 # Any
 
 ## Connections
-- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
-- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
-- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
-- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
-- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
-- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
-- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
-- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
-- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
-- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
-- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
+- [[dot-_generate_new_credential()]] - `references` [EXTRACTED]
+- [[dot-_validate_credential()]] - `references` [EXTRACTED]
+- [[dot-check_and_rotate_due_credentials()]] - `references` [EXTRACTED]
+- [[dot-cleanup_retired_credentials()]] - `references` [EXTRACTED]
+- [[dot-emergency_rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-get_all_credentials_status()]] - `references` [EXTRACTED]
+- [[dot-get_credential_status()]] - `references` [EXTRACTED]
+- [[dot-get_health_score()]] - `references` [EXTRACTED]
+- [[dot-register_credential()]] - `references` [EXTRACTED]
+- [[dot-rotate_credential()]] - `references` [EXTRACTED]
+- [[dot-validate()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/KeyRotationManager

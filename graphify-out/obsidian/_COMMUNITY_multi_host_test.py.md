@@ -22,7 +22,7 @@ members: 15
 - [[_run()_1]] - code - gateway/tools/multi_host_test.py
 - [[build_ssh_argv()]] - code - gateway/tools/multi_host_test.py
 - [[multi_host_test.py]] - code - gateway/tools/multi_host_test.py
-- [[str_3]] - code
+- [[str_4]] - code
 
 ## Live Query (requires Dataview plugin)
 

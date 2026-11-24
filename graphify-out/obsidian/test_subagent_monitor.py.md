@@ -23,10 +23,10 @@ tags:
 - [[TestSubagentTracking]] - `contains` [EXTRACTED]
 - [[TestTrustInheritance]] - `contains` [EXTRACTED]
 - [[Tests for sub-agent oversight and monitoring.]] - `rationale_for` [EXTRACTED]
-- [[default_config()_2]] - `contains` [EXTRACTED]
+- [[default_config()_4]] - `contains` [EXTRACTED]
 - [[monitor()_1]] - `contains` [EXTRACTED]
 - [[monitor_config()_2]] - `contains` [EXTRACTED]
-- [[strict_config()_1]] - `contains` [EXTRACTED]
+- [[strict_config()_2]] - `contains` [EXTRACTED]
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py_2]] - `imports_from` [EXTRACTED]
 

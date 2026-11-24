@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "EgressEvent"
-location: "L86"
+community: "test_mcp_proxy.py"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/test_mcp_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

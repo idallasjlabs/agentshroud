@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_all_modules_enforce.py"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/lifespanpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-tracker()]] - `references` [EXTRACTED]
-- [[mock_alert_callback()]] - `references` [EXTRACTED]
-- [[multi_turn_tracker()]] - `references` [EXTRACTED]
+- [[sanitizer()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

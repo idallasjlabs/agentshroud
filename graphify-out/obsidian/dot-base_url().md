@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/bot_config.py"
 type: "code"
-community: "LLMProxy"
+community: "BotConfig"
 location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/BotConfig
 ---
 
 # .base_url()
@@ -17,4 +17,4 @@ tags:
 - [[_stream()_1]] - `indirect_call` [INFERRED]
 - [[list_agents()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/BotConfig

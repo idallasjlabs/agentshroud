@@ -12,7 +12,7 @@ tags:
 # .test_extra_pattern_redacted()
 
 ## Connections
-- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestResponseFiltering]] - `method` [EXTRACTED]
 

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AppleContainerEngine"
+community: "test_setup_store_one_cli.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/test_setup_store_one_clipy
 ---
 
 # CompletedProcess
 
 ## Connections
-- [[dot-_run()_3]] - `references` [EXTRACTED]
+- [[_run()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/test_setup_store_one_clipy

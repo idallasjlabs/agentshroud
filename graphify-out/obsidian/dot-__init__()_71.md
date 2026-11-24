@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "_FakeAsyncClient"
-location: "L598"
+community: "FileSandbox"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeAsyncClient
+  - community/FileSandbox
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
+- [[FileSandboxConfig]] - `references` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

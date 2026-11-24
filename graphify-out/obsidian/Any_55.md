@@ -1,20 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "plan_remediation"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/plan_remediation
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_154]] - `references` [EXTRACTED]
-- [[dot-_token()]] - `references` [EXTRACTED]
-- [[dot-call()]] - `references` [EXTRACTED]
-- [[dot-exchange_identity_assertion()]] - `references` [EXTRACTED]
-- [[dot-revoke_token()_1]] - `references` [EXTRACTED]
+- [[dot-to_dict()_6]] - `references` [EXTRACTED]
+- [[load_registry()_1]] - `references` [EXTRACTED]
+- [[plan_remediation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "GatewayConfig"
 location: "L72"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/GatewayConfig
 ---
 
 # Add an action to the approval queue Args: request: Approval request from agent…
 
 ## Connections
-- [[dot-submit()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-submit()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig

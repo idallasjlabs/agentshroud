@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-resolve_target()]] - `calls` [EXTRACTED]
-- [[Exception_15]] - `inherits` [EXTRACTED]
+- [[Exception_14]] - `inherits` [EXTRACTED]
 - [[Raised when no valid routing target found]] - `rationale_for` [EXTRACTED]
 - [[ingest_apirouter.py]] - `contains` [EXTRACTED]
 

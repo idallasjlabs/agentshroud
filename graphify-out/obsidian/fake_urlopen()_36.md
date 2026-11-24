@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_rate_limit_notice_includes_retry_window"
-location: "L3700"
+community: "_make_update"
+location: "L2461"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_rate_limit_notice_includes_retry_window
+  - community/_make_update
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_rate_limit_notice_includes_retry_window()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_direct_file_query_returns_protect_file_notice()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_rate_limit_notice_includes_retry_window
+#graphify/code #graphify/EXTRACTED #community/_make_update

@@ -15,8 +15,8 @@ members: 13
 - [[Purpose_54]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Related_36]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Responsibilities_36]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[compose_generator.py_1]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[compose_generator.py]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[gateway service]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[generate_apple_script(services)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[generate_compose(services, runtime)]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md

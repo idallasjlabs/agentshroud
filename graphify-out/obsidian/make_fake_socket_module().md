@@ -16,11 +16,11 @@ tags:
 - [[dot-test_failover_to_second_upstream()]] - `calls` [EXTRACTED]
 - [[dot-test_first_upstream_succeeds()]] - `calls` [EXTRACTED]
 - [[Build a fake `socket` module namespace driving forward_query without IO. Each…]] - `rationale_for` [EXTRACTED]
-- [[__init__()_7]] - `contains` [EXTRACTED]
-- [[close()_1]] - `contains` [EXTRACTED]
+- [[__init__()_4]] - `contains` [EXTRACTED]
+- [[close()]] - `contains` [EXTRACTED]
 - [[recv()]] - `contains` [EXTRACTED]
 - [[sendto()]] - `contains` [EXTRACTED]
-- [[settimeout()_3]] - `contains` [EXTRACTED]
+- [[settimeout()]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/make_fake_socket_module

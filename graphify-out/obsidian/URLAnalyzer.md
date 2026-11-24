@@ -12,8 +12,8 @@ tags:
 # URLAnalyzer
 
 ## Connections
-- [[dot-__init__()_50]] - `references` [EXTRACTED]
-- [[dot-__init__()_16]] - `method` [EXTRACTED]
+- [[dot-__init__()_153]] - `references` [EXTRACTED]
+- [[dot-__init__()_20]] - `method` [EXTRACTED]
 - [[dot-_check_base64()]] - `method` [EXTRACTED]
 - [[dot-_is_private_ip()]] - `method` [EXTRACTED]
 - [[dot-_is_ssrf()]] - `method` [EXTRACTED]

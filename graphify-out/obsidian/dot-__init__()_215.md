@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "EnvelopeSigner"
-location: "L52"
+community: "dashboard_endpoints.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy

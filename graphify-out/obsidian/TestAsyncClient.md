@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "TestAsyncClient"
+community: "chatbot/main.py"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAsyncClient
+  - community/chatbot/mainpy
 ---
 
 # TestAsyncClient
@@ -18,4 +18,4 @@ tags:
 - [[chat()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAsyncClient
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_approvals.py"
 type: "code"
-community: "_ctx"
+community: "test_edge_approvals.py"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_ctx
+  - community/test_edge_approvalspy
 ---
 
 # .test_owner_button_approves()
@@ -15,4 +15,4 @@ tags:
 - [[TestCallback]] - `method` [EXTRACTED]
 - [[_ctx()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_ctx
+#graphify/code #graphify/EXTRACTED #community/test_edge_approvalspy

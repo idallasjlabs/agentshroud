@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "IntelReportStore"
-location: "L205"
+community: "test_dns_canvas_coverage.py"
+location: "L585"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/test_dns_canvas_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_59]] - `references` [EXTRACTED]
+- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

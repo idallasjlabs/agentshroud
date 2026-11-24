@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ON forwardstream body carries metadata={no_memory True}.]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[asyncio_78]] - `references` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[mock_stream()_26]] - `contains` [EXTRACTED]
 - [[mock_stream()_25]] - `indirect_call` [INFERRED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]

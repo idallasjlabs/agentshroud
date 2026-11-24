@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "OAuthRequest"
+community: "test_security_audit.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthRequest
+  - community/test_security_auditpy
 ---
 
 # .test_unique_client_id_accepted()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthRequest]] - `calls` [INFERRED]
 - [[TestClientValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthRequest
+#graphify/code #graphify/EXTRACTED #community/test_security_auditpy

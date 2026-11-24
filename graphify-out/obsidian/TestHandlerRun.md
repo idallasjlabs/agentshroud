@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "._handler"
+community: "SOCWebSocketHandler"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handler
+  - community/SOCWebSocketHandler
 ---
 
 # TestHandlerRun
@@ -22,4 +22,4 @@ tags:
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handler
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

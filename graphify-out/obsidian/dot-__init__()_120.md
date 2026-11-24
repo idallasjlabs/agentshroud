@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L162"
+community: "ProgressiveLockdown"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_119]] - `calls` [EXTRACTED]
-- [[EdgeCallPipeline]] - `method` [EXTRACTED]
-- [[EdgeDeps]] - `references` [EXTRACTED]
-- [[_Window]] - `calls` [EXTRACTED]
+- [[Args decay_window_seconds When set, only blocks recorded within this many…]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

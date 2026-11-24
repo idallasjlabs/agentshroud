@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_block_credentials.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # test_normal_technical_content_not_blocked()
@@ -16,4 +16,4 @@ tags:
 - [[asyncio_14]] - `references` [EXTRACTED]
 - [[test_block_credentials.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

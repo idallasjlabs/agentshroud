@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "IntelReportStore"
+community: "CompetitiveIntelReport"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/CompetitiveIntelReport
 ---
 
 # .verify_integrity()
@@ -16,4 +16,4 @@ tags:
 - [[Return True iff the stored content_hash matches recomputation.]] - `rationale_for` [EXTRACTED]
 - [[_compute_hash()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

@@ -1,20 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "ManifestEntry"
+community: "middleware.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ManifestEntry
+  - community/middlewarepy
 ---
 
 # Path
 
 ## Connections
-- [[dot-from_file()]] - `references` [EXTRACTED]
-- [[dot-from_source()]] - `references` [EXTRACTED]
-- [[deploy_manifest()]] - `references` [EXTRACTED]
-- [[plan_deploy()]] - `references` [EXTRACTED]
-- [[validate_manifest()]] - `references` [EXTRACTED]
+- [[dot-__init__()_154]] - `references` [EXTRACTED]
+- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
+- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
+- [[dot-scan_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ManifestEntry
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

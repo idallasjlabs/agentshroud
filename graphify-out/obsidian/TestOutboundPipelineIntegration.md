@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: "TestOutboundPipelineIntegration"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # TestOutboundPipelineIntegration
@@ -198,4 +198,4 @@ tags:
 - [[Tests that _filter_outbound calls the full security pipeline.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

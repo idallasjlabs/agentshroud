@@ -12,13 +12,13 @@ tags:
 # RateLimiter
 
 ## Connections
-- [[dot-__init__()_50]] - `calls` [EXTRACTED]
-- [[dot-__init__()_164]] - `method` [EXTRACTED]
+- [[dot-__init__()_153]] - `calls` [EXTRACTED]
+- [[dot-__init__()_152]] - `method` [EXTRACTED]
 - [[dot-check()_4]] - `method` [EXTRACTED]
 - [[dot-reset()_2]] - `method` [EXTRACTED]
 - [[dot-test_rate_limiter_reset()]] - `calls` [EXTRACTED]
 - [[Simple in-memory per-domain rate limiter using sliding window.]] - `rationale_for` [EXTRACTED]
-- [[TestRateLimiting_1]] - `uses` [INFERRED]
+- [[TestRateLimiting_2]] - `uses` [INFERRED]
 - [[test_web_proxy.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py_2]] - `contains` [EXTRACTED]
 

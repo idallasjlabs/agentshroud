@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestEgressApprovalQueue"
+community: "DelegationPrivilege"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/DelegationPrivilege
 ---
 
 # Enum
 
 ## Connections
-- [[ApprovalMode]] - `inherits` [EXTRACTED]
-- [[ApprovalResult]] - `inherits` [EXTRACTED]
-- [[RiskLevel]] - `inherits` [EXTRACTED]
-- [[egress_approval.py]] - `imports_from` [EXTRACTED]
+- [[DelegationPrivilege]] - `inherits` [EXTRACTED]
+- [[delegation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

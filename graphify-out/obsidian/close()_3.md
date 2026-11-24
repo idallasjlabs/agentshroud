@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_telegram_executor.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L272"
+community: "test_hermes_forwarder_drops_non_http"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/test_hermes_forwarder_drops_non_http
 ---
 
 # close()
 
 ## Connections
-- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
+- [[test_hermes_forwarder_drops_non_http()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/test_hermes_forwarder_drops_non_http

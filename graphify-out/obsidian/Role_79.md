@@ -1,8 +1,8 @@
 ---
-source_file: ".agents/skills/vulcan/SKILL.md"
+source_file: ".agents/agents/vulcan.md"
 type: "document"
 community: "Vulcan — Subject Matter Auditor"
-location: "L8"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Vulcan — Subject Matter Auditor_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

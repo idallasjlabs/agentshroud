@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
-location: "L4861"
+community: ".test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message"
+location: "L5334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - `contains` [EXTRACTED]
+- [[dot-test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message

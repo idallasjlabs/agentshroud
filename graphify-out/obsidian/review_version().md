@@ -12,10 +12,10 @@ tags:
 # review_version()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[Perform security review for a target version (no approval needed).]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
-- [[post_8]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 - [[security_review()]] - `calls` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 

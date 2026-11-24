@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_image_summaries"
+community: "Any"
 location: "L1037"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_image_summaries
+  - community/Any
 ---
 
 # _write_image_report()
@@ -19,9 +19,9 @@ tags:
 - [[dot-test_each_entry_has_image_key()]] - `calls` [EXTRACTED]
 - [[dot-test_ignores_non_image_prefixed_files()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_one_entry_per_report_file()]] - `calls` [EXTRACTED]
-- [[Any_78]] - `references` [EXTRACTED]
-- [[Path_38]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
+- [[Path_39]] - `references` [EXTRACTED]
 - [[Write a fake image report file in the expected filename format.]] - `rationale_for` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_image_summaries
+#graphify/code #graphify/EXTRACTED #community/Any

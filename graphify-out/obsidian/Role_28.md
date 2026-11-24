@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pca/SKILL.md"
+source_file: ".cursor/agents/apollo.md"
 type: "document"
-community: "Output Sections (ALL required)"
-location: "L7"
+community: "Technical Specification"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Output_Sections_ALL_required
+  - community/Technical_Specification
 ---
 
 # Role
 
 ## Connections
-- [[Skill Pre-Change Analysis (PCA)_5]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Output_Sections_ALL_required
+#graphify/document #graphify/EXTRACTED #community/Technical_Specification

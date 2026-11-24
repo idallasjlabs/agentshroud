@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_55]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Persona_34]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[Quality Checklist_40]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
-- [[Role_105]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
+- [[Role_106]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[System Prompt_34]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 - [[openclawskillsi-oracleSKILL]] - document - docker/config/openclaw/skills/i-oracle/SKILL.md
 

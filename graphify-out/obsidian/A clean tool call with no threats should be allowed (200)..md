@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "rationale"
-community: "mcp_proxy.py"
+community: "ProxyResult"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/mcp_proxypy
+  - community/ProxyResult
 ---
 
 # A clean tool call with no threats should be allowed (200).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_clean_tool_call_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/mcp_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/ProxyResult

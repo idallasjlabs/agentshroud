@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # TestTrustManager
 
 ## Connections
-- [[dot-setup_method()_37]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_16]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
 - [[dot-test_action_allowed_basic()]] - `method` [EXTRACTED]
 - [[dot-test_action_denied_high_trust()]] - `method` [EXTRACTED]
 - [[dot-test_action_unknown_agent()]] - `method` [EXTRACTED]
@@ -34,4 +34,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

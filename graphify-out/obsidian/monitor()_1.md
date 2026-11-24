@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[SubagentMonitor]] - `uses` [INFERRED]
-- [[fixture_44]] - `references` [EXTRACTED]
+- [[fixture_51]] - `references` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SubagentMonitor

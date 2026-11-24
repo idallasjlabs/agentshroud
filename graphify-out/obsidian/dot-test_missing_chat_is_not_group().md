@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._is_group_message"
 location: "L8928"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_is_group_message
 ---
 
 # .test_missing_chat_is_not_group()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_is_group_message()]] - `calls` [EXTRACTED]
 - [[TestIsGroupMessage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_is_group_message

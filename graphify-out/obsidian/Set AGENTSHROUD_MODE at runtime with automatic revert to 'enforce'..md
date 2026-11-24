@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L243"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # Set AGENTSHROUD_MODE at runtime with automatic revert to 'enforce'.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

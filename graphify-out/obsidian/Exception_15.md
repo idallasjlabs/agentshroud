@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentTarget"
+community: "test_edge_e2e_sdk.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_edge_e2e_sdkpy
 ---
 
 # Exception
 
 ## Connections
-- [[ForwardError]] - `inherits` [EXTRACTED]
-- [[RouterError]] - `inherits` [EXTRACTED]
+- [[TokenRejected]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

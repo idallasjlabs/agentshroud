@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # test_router.py
@@ -43,4 +43,4 @@ tags:
 - [[test_resolve_target_invalid_explicit()]] - `contains` [EXTRACTED]
 - [[test_resolves_hermes_target()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

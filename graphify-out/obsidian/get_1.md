@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "health_check"
+community: "test_dashboard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/health_check
+  - community/test_dashboardpy
 ---
 
 # get
 
 ## Connections
-- [[health_check()]] - `references` [EXTRACTED]
+- [[dashboard_stats()]] - `references` [EXTRACTED]
+- [[dashboard_ws_token()]] - `references` [EXTRACTED]
+- [[get_collaborators()]] - `references` [EXTRACTED]
+- [[serve_dashboard()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/health_check
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

@@ -12,6 +12,6 @@ tags:
 # .test_four_with_openscap_running_but_failures()
 
 ## Connections
-- [[TestScoreContainerHardening]] - `method` [EXTRACTED]
+- [[TestScoreContainerHardening_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreContainerHardening

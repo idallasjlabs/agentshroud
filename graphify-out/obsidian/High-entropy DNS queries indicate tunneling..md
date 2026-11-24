@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TestExfiltrationDetection"
+community: "EnvironmentGuard"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestExfiltrationDetection
+  - community/EnvironmentGuard
 ---
 
 # High-entropy DNS queries indicate tunneling.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_dns_tunneling_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestExfiltrationDetection
+#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard

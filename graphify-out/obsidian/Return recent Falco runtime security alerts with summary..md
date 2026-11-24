@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "test_security_toolchain.py"
 location: "L1817"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_security_toolchainpy
 ---
 
 # Return recent Falco runtime security alerts with summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[falco_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy

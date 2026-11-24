@@ -12,7 +12,7 @@ tags:
 # run_all_scanners()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Run all locally available security scanners and return consolidated results.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]
 - [[_scanner_summary()]] - `calls` [EXTRACTED]

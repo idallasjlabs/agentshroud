@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "DraftEntry"
+community: ".verify_entry"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/verify_entry
 ---
 
 # ._verify_url()
@@ -19,4 +19,4 @@ tags:
 - [[_fetch()]] - `calls` [EXTRACTED]
 - [[domain_matches()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/verify_entry

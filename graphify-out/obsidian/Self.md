@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: ".new"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/new
+  - community/mainrs
 ---
 
 # Self
@@ -17,4 +17,4 @@ tags:
 - [[dot-ok()_2]] - `references` [EXTRACTED]
 - [[dot-with()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/new
+#graphify/code #graphify/EXTRACTED #community/mainrs

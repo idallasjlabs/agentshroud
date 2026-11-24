@@ -17,7 +17,7 @@ tags:
 - [[TestLegitimateURLsAllowed]] - `uses` [INFERRED]
 - [[TestPIIInURLs]] - `uses` [INFERRED]
 - [[TestSSRFDetection]] - `uses` [INFERRED]
-- [[str_5]] - `inherits` [EXTRACTED]
+- [[str_6]] - `inherits` [EXTRACTED]
 - [[test_url_analyzer.py]] - `imports` [EXTRACTED]
 - [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 

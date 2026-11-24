@@ -12,7 +12,7 @@ tags:
 # _PassInboundPipeline
 
 ## Connections
-- [[dot-__init__()_133]] - `method` [EXTRACTED]
+- [[dot-__init__()_123]] - `method` [EXTRACTED]
 - [[dot-process_inbound()_1]] - `method` [EXTRACTED]
 - [[dot-process_outbound()_2]] - `method` [EXTRACTED]
 - [[Pipeline stub inbound passes through; outbound behavior injectable.]] - `rationale_for` [EXTRACTED]

@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "app"
-location: "L21"
+community: "test_observatory_mode.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app
+  - community/test_observatory_modepy
 ---
 
 # client()
 
 ## Connections
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_4]] - `references` [EXTRACTED]
-- [[lifespan()]] - `calls` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[fixture_14]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

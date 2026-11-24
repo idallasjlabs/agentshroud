@@ -1,12 +1,12 @@
 ---
 source_file: "docs/security/security-architecture.md"
 type: "document"
-community: "Multi-Layer Detection Strategy"
+community: "AgentShroud Security Architecture"
 location: "L278"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Layer_Detection_Strategy
+  - community/AgentShroud_Security_Architecture
 ---
 
 # Multi-Layer Detection Strategy
@@ -17,4 +17,4 @@ tags:
 - [[Layer 3 Multi-Layer Decoding]] - `contains` [EXTRACTED]
 - [[Prompt Injection Defense]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Layer_Detection_Strategy
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Security_Architecture

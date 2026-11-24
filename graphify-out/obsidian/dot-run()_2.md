@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L61"
+community: "SOCWebSocketHandler"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/SOCWebSocketHandler
 ---
 
 # .run()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
+- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
+- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

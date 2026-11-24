@@ -1,19 +1,24 @@
 ---
-source_file: "gateway/runtime/compose_generator.py"
-type: "code"
-community: "test_runtime_engines.py"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
+type: "document"
+community: "compose_generator.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/compose_generatorpy
 ---
 
 # compose_generator.py
 
 ## Connections
-- [[ServiceDef]] - `contains` [EXTRACTED]
-- [[generate_apple_script()]] - `contains` [EXTRACTED]
-- [[generate_compose()]] - `contains` [EXTRACTED]
+- [[Configuration  Environment Variables_21]] - `contains` [EXTRACTED]
+- [[Default Service Configuration]] - `contains` [EXTRACTED]
+- [[Function Details_34]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_36]] - `contains` [EXTRACTED]
+- [[Purpose_54]] - `contains` [EXTRACTED]
+- [[Related_36]] - `contains` [EXTRACTED]
+- [[Responsibilities_36]] - `contains` [EXTRACTED]
+- [[compose_generator.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/document #graphify/EXTRACTED #community/compose_generatorpy

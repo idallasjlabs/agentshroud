@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L43"
+community: "MultiTurnTracker"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/MultiTurnTracker
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter]] - `method` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
+- [[Initialize the multi-turn tracker. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ThresholdConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

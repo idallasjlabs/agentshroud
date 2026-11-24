@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PIIConfig"
+community: "GatewayConfig"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/GatewayConfig
 ---
 
 # .test_query_after_1000_entries()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Query performance after 1000 entries.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChainPerformance]] - `method` [EXTRACTED]
-- [[asyncio_15]] - `references` [EXTRACTED]
+- [[asyncio_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

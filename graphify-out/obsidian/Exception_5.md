@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/models.py"
+community: "ReportIntegrityError"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/ReportIntegrityError
 ---
 
 # Exception
 
 ## Connections
-- [[global_exception_handler()]] - `references` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-hermes/SKILL.md"
+source_file: ".cursor/agents/mnemosyne.md"
 type: "document"
-community: "Hermes — Reference Verifier"
-location: "L8"
+community: "Mnemosyne — Retention Engineer"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier_3]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_edge.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "TestEdgeKill"
-location: "L44"
+community: "HTTPConnectProxy"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEdgeKill
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeCaller_1]] - `method` [EXTRACTED]
+- [[_MockWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEdgeKill
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

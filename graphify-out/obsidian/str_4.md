@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "multi_host_test.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/multi_host_testpy
 ---
 
 # str
 
 ## Connections
-- [[ServicePrivacy]] - `inherits` [EXTRACTED]
+- [[HostStatus]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

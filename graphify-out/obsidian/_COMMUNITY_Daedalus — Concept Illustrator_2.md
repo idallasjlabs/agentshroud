@@ -14,7 +14,7 @@ members: 11
 - [[Output Format_30]] - document - .agents/agents/daedalus.md
 - [[Persona_10]] - document - .agents/agents/daedalus.md
 - [[Quality Checklist_16]] - document - .agents/agents/daedalus.md
-- [[Role_57]] - document - .agents/agents/daedalus.md
+- [[Role_58]] - document - .agents/agents/daedalus.md
 - [[System Prompt_10]] - document - .agents/agents/daedalus.md
 - [[architecture.puml (PlantUML)]] - document - .agents/agents/daedalus.md
 - [[diagramsREADME]] - document - .agents/agents/daedalus.md

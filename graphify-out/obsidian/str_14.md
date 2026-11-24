@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_module_stats.py"
+community: "PipelineAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_module_statspy
+  - community/PipelineAction
 ---
 
 # str
 
 ## Connections
-- [[Decision]] - `inherits` [EXTRACTED]
+- [[PipelineAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_module_statspy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

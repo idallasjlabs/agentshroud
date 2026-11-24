@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
-location: "L3059"
+community: ".test_collaborator_web_access_imperative_with_url_queues_owner_approval"
+location: "L2040"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_collaborator_web_access_imperative_with_url_queues_owner_approval
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_hypothetical_execution_question_gets_safe_info()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_web_access_policy_question_gets_safe_info_not_blocked()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_web_access_imperative_with_url_queues_owner_approval

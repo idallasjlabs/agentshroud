@@ -8,7 +8,7 @@ members: 29
 **Members:** 29 nodes
 
 ## Members
-- [[dot-__init__()_176]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_173]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_binds_and_returns_transport()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_compression_pointer()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_dns_blocklist_import_failure_sets_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
@@ -31,9 +31,9 @@ members: 29
 - [[dns_blocklist.py]] - code - gateway/proxy/dns_blocklist.py
 - [[dns_forwarder.py]] - code - gateway/proxy/dns_forwarder.py
 - [[fake_httpx_client()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[fixture_113]] - code
+- [[fixture_115]] - code
 - [[gateway_password()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[main()_31]] - code - gateway/proxy/dns_forwarder.py
+- [[main()_30]] - code - gateway/proxy/dns_forwarder.py
 - [[parse_domain_name()]] - code - gateway/proxy/dns_forwarder.py
 - [[start_dns_forwarder()]] - code - gateway/proxy/dns_forwarder.py
 - [[test_dns_canvas_coverage.py]] - code - gateway/tests/test_dns_canvas_coverage.py
@@ -56,7 +56,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY__FakeWSConnect]]
 - 1 edge to [[_COMMUNITY__FakeAsyncClient]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 - 1 edge to [[_COMMUNITY_canvas_proxy.py]]
 
 ## Top bridge nodes

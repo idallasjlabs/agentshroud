@@ -48,7 +48,7 @@ members: 41
 - [[US phone (555) 867-5309.]] - rationale - gateway/tests/test_security_audit.py
 - [[Visa card 4111-1111-1111-1111.]] - rationale - gateway/tests/test_security_audit.py
 - [[ZIP codes should not be flagged as SSNphoneCC.]] - rationale - gateway/tests/test_security_audit.py
-- [[asyncio_43]] - code
+- [[asyncio_41]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,7 +58,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_test_security_audit.py]]
 
 ## Top bridge nodes

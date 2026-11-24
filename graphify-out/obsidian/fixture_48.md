@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "fs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/fs
 ---
 
 # fixture
 
 ## Connections
-- [[clamd_sock_path()]] - `references` [EXTRACTED]
+- [[flags()]] - `references` [EXTRACTED]
+- [[fs()]] - `references` [EXTRACTED]
+- [[tools()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/fs

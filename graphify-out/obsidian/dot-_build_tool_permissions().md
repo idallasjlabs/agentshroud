@@ -12,7 +12,7 @@ tags:
 # ._build_tool_permissions()
 
 ## Connections
-- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_1]] - `calls` [EXTRACTED]
 - [[Build tool tier permissions for each role.]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `method` [EXTRACTED]
 - [[Role]] - `references` [EXTRACTED]

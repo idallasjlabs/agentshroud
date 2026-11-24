@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # .monitor_sandbox()
@@ -16,6 +16,6 @@ tags:
 - [[FileSandboxConfig]] - `calls` [EXTRACTED]
 - [[Monitor-mode sandbox for comparison testing.]] - `rationale_for` [EXTRACTED]
 - [[TestFileSandbox]] - `method` [EXTRACTED]
-- [[fixture_124]] - `references` [EXTRACTED]
+- [[fixture_47]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

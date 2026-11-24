@@ -12,10 +12,10 @@ tags:
 # soc_correlation()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Cross-signal SOC correlation summary.]] - `rationale_for` [EXTRACTED]
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
-- [[get_4]] - `references` [EXTRACTED]
+- [[get_6]] - `references` [EXTRACTED]
 - [[get_risk_score()]] - `indirect_call` [INFERRED]
 - [[get_soc_correlation()]] - `indirect_call` [INFERRED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

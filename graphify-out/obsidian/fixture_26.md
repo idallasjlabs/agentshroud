@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_api_contract_fuzz.py"
+community: "test_differential_pii_detector.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/test_differential_pii_detectorpy
 ---
 
 # fixture
 
 ## Connections
-- [[client()_5]] - `references` [EXTRACTED]
+- [[default_config()]] - `references` [EXTRACTED]
+- [[detector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/test_differential_pii_detectorpy

@@ -15,7 +15,7 @@ tags:
 - [[dot-_missing_()]] - `method` [EXTRACTED]
 - [[dot-record_incident()]] - `references` [EXTRACTED]
 - [[dot-test_from_string()]] - `calls` [EXTRACTED]
-- [[IntEnum_2]] - `inherits` [EXTRACTED]
+- [[IntEnum_3]] - `inherits` [EXTRACTED]
 - [[Ordered severity levels for cross-bot incidents. Values map to IEC 62443 SLIR…]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TestBotIncidentSeverity]] - `uses` [INFERRED]

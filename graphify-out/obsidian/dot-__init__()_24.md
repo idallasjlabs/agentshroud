@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "PIIConfig"
-location: "L38"
+community: "ApprovalRequest"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/ApprovalRequest
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
-- [[Initialize sanitizer Args config PII configuration from agentshroud.yaml]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer]] - `method` [EXTRACTED]
-- [[load_all_secret_file_values()]] - `calls` [EXTRACTED]
+- [[Any_13]] - `references` [EXTRACTED]
+- [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "LLMProxy"
+community: "TestResourceGuardAlertBridge"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/TestResourceGuardAlertBridge
 ---
 
 # Any
 
 ## Connections
-- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/TestResourceGuardAlertBridge

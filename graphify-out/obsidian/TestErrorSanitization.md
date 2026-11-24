@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "TestErrorSanitization"
+community: "chatbot/main.py"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestErrorSanitization
+  - community/chatbot/mainpy
 ---
 
 # TestErrorSanitization
@@ -17,4 +17,4 @@ tags:
 - [[chat()]] - `calls` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestErrorSanitization
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

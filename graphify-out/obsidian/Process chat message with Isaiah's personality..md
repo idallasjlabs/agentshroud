@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/main.py"
 type: "rationale"
-community: "chat"
+community: "chatbot/main.py"
 location: "L184"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/chat
+  - community/chatbot/mainpy
 ---
 
 # Process chat message with Isaiah's personality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[chat()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/chat
+#graphify/rationale #graphify/EXTRACTED #community/chatbot/mainpy

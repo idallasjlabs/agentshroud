@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "TestConfigValidation"
+community: ".test_openclaw_version_pin_is_consistent_across_bot_images"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_openclaw_version_pin_is_consistent_across_bot_images
 ---
 
 # OpenClaw's bot Dockerfile must pin via the shared ARG OPENCLAW_VERSION (backed…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_openclaw_version_pin_is_consistent_across_bot_images()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/rationale #graphify/EXTRACTED #community/test_openclaw_version_pin_is_consistent_across_bot_images

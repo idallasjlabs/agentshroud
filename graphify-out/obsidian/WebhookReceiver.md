@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "WebhookReceiver"
+community: "UserSessionManager"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[dot-__init__()_185]] - `method` [EXTRACTED]
+- [[dot-__init__()_184]] - `method` [EXTRACTED]
 - [[dot-_can_create_directory()]] - `method` [EXTRACTED]
 - [[dot-_extract_message()]] - `method` [EXTRACTED]
 - [[dot-_extract_user_id()_1]] - `method` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `uses` [INFERRED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

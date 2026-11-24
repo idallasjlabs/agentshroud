@@ -19,11 +19,11 @@ tags:
 - [[dot-get_events()]] - `calls` [EXTRACTED]
 - [[dot-get_groups()]] - `calls` [EXTRACTED]
 - [[dot-get_health()]] - `calls` [EXTRACTED]
-- [[dot-get_logs()_1]] - `calls` [EXTRACTED]
+- [[dot-get_logs()]] - `calls` [EXTRACTED]
 - [[dot-get_risk()]] - `calls` [EXTRACTED]
 - [[dot-get_services()]] - `calls` [EXTRACTED]
 - [[dot-get_users()]] - `calls` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

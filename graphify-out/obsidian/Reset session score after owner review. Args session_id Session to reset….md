@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "test_all_modules_enforce.py"
+community: "MultiTurnTracker"
 location: "L376"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/MultiTurnTracker
 ---
 
 # Reset session score after owner review. Args: session_id: Session to reset…
 
 ## Connections
-- [[dot-reset_session()]] - `rationale_for` [EXTRACTED]
+- [[dot-reset_session()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

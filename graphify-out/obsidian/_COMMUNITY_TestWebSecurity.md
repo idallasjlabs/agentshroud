@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
 - [[TestWebSecurity]] - degree 7, connects to 1 community

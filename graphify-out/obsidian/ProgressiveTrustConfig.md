@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "lifespan.py"
+community: "ProgressiveTrustConfig"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ProgressiveTrustConfig
 ---
 
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-__init__()_103]] - `references` [EXTRACTED]
+- [[dot-__init__()_217]] - `references` [EXTRACTED]
 - [[dot-get_next_trust_level()]] - `method` [EXTRACTED]
 - [[dot-get_previous_trust_level()]] - `method` [EXTRACTED]
 - [[dot-get_trust_level_order()]] - `method` [EXTRACTED]
-- [[dot-is_tool_allowed()_1]] - `method` [EXTRACTED]
+- [[dot-is_tool_allowed()]] - `method` [EXTRACTED]
 - [[Configuration for the progressive trust system.]] - `rationale_for` [EXTRACTED]
 - [[TestEnforcementMode]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
@@ -33,8 +33,8 @@ tags:
 - [[test_a2a_task_ownership_violation_has_a_configured_penalty_heavier_than_generic_policy()]] - `calls` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
-- [[trust_manager()_3]] - `uses` [INFERRED]
-- [[trust_manager()_4]] - `uses` [INFERRED]
+- [[trust_manager()_5]] - `uses` [INFERRED]
+- [[trust_manager()_2]] - `uses` [INFERRED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig

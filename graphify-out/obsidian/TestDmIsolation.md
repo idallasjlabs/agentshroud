@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_workspace_manager.py"
 type: "code"
-community: "TestDmIsolation"
+community: "GroupWorkspaceManager"
 location: "L213"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDmIsolation
+  - community/GroupWorkspaceManager
 ---
 
 # TestDmIsolation
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_group_write_invisible_from_dm()]] - `method` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDmIsolation
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

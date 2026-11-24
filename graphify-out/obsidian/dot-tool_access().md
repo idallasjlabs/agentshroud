@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/profiles.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L74"
+community: "make_event"
+location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/make_event
 ---
 
 # .tool_access()
@@ -15,4 +15,4 @@ tags:
 - [[VendorProfile]] - `method` [EXTRACTED]
 - [[``read````write`` when the vendor may call ``tool``, else ``None``.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/make_event

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_openclaw_patch_script_seeds_group_allowlist"
 location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_openclaw_patch_script_seeds_group_allowlist
 ---
 
 # .test_openclaw_patch_script_seeds_group_allowlist()
@@ -15,4 +15,4 @@ tags:
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 - [[openclaw init patch script must seed Telegram group allowlist when policy is…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_openclaw_patch_script_seeds_group_allowlist

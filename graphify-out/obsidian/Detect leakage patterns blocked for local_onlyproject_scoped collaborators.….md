@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "._extract_first_egress_target"
+community: "TestOutboundClassifierHelpers"
 location: "L2619"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_first_egress_target
+  - community/TestOutboundClassifierHelpers
 ---
 
 # Detect leakage patterns blocked for local_only/project_scoped collaborators.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_contains_high_risk_collaborator_leakage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

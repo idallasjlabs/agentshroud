@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "rationale"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L423"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # Test auto-revert timer functionality.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_auto_revert_timer_logic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/ModeRequest

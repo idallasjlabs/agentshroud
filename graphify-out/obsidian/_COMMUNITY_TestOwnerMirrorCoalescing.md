@@ -23,11 +23,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY__make_sanitizer]]
-- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY__make_sanitizer]]
+- 2 edges to [[_COMMUNITY_asyncio_5]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 
 ## Top bridge nodes
 - [[TestOwnerMirrorCoalescing]] - degree 5, connects to 2 communities
-- [[dot-test_second_message_after_window_sends_again()]] - degree 5, connects to 1 community
-- [[dot-test_two_messages_within_window_send_only_one_mirror()]] - degree 4, connects to 1 community
+- [[dot-test_second_message_after_window_sends_again()]] - degree 5, connects to 2 communities
+- [[dot-test_two_messages_within_window_send_only_one_mirror()]] - degree 4, connects to 2 communities

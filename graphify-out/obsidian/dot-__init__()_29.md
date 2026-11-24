@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "_FakeWSConnect"
-location: "L745"
+community: "make_proxy"
+location: "L445"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeWSConnect
+  - community/make_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWSConnect]] - `method` [EXTRACTED]
+- [[FakeApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeWSConnect
+#graphify/code #graphify/EXTRACTED #community/make_proxy

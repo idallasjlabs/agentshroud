@@ -12,7 +12,7 @@ tags:
 # tool_result_injection.py
 
 ## Connections
-- [[Enum_14]] - `imports_from` [EXTRACTED]
+- [[Enum_17]] - `imports_from` [EXTRACTED]
 - [[InjectionAction]] - `contains` [EXTRACTED]
 - [[InjectionResult]] - `contains` [EXTRACTED]
 - [[InjectionRule]] - `contains` [EXTRACTED]

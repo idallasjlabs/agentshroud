@@ -1,16 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "GroupWorkspaceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/GroupWorkspaceManager
 ---
 
 # fixture
 
 ## Connections
-- [[scanner()]] - `references` [EXTRACTED]
+- [[dot-proxy()]] - `references` [EXTRACTED]
+- [[manager()_1]] - `references` [EXTRACTED]
+- [[rbac()_1]] - `references` [EXTRACTED]
+- [[session_manager()]] - `references` [EXTRACTED]
+- [[shared_memory()]] - `references` [EXTRACTED]
+- [[teams()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

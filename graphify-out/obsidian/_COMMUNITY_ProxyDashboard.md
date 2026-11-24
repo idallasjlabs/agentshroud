@@ -8,7 +8,7 @@ members: 44
 **Members:** 44 nodes
 
 ## Members
-- [[dot-__init__()_80]] - code - gateway/dashboard/proxy_status.py
+- [[dot-__init__()_89]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_display()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-get_report()]] - code - gateway/dashboard/proxy_status.py
 - [[dot-record_message_proxied()]] - code - gateway/dashboard/proxy_status.py

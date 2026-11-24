@@ -48,7 +48,7 @@ members: 54
 - [[Related Skills_4]] - document - .agents/skills/i-mcpm/README.md
 - [[Related Skills_5]] - document - .agents/skills/i-tw/README.md
 - [[Review Principles]] - document - .agents/skills/i-cr/SKILL.md
-- [[Role_24]] - document - .agents/skills/i-cr/SKILL.md
+- [[Role_25]] - document - .agents/skills/i-cr/SKILL.md
 - [[Skill Index]] - document - .agents/skills/i-mc/SKILL.md
 - [[Skill Code Review (CR)]] - document - .agents/skills/i-cr/SKILL.md
 - [[Skill bdd]] - document - .agents/skills/i-bdd/SKILL.md
@@ -73,13 +73,13 @@ SORT file.name ASC
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_Required ≥ 4.5 for text, ≥ 3.0 for UI elements]]
 - 1 edge to [[_COMMUNITY_Security Review (SEC)]]
+- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)]]
 - 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection_5]]
 - 1 edge to [[_COMMUNITY_Skill Create PR with Pre-Flight Audit (CRPR)_5]]
 - 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)_5]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)_5]]
 - 1 edge to [[_COMMUNITY_MCP AWS Profile Configuration README]]
 - 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]]
-- 1 edge to [[_COMMUNITY_10. Troubleshooting]]
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)]]
 - 1 edge to [[_COMMUNITY_Skill Pre-Change Analysis (PCA)]]
 - 1 edge to [[_COMMUNITY_Project Management (SKILL)]]

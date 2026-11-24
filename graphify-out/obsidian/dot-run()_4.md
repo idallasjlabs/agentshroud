@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L77"
+community: "DockerEngine"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/DockerEngine
 ---
 
 # .run()
 
 ## Connections
-- [[Any_43]] - `references` [EXTRACTED]
-- [[Facade]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

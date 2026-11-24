@@ -12,7 +12,7 @@ tags:
 # TelegramAPIProxy
 
 ## Connections
-- [[dot-__init__()_190]] - `method` [EXTRACTED]
+- [[dot-__init__()_49]] - `method` [EXTRACTED]
 - [[dot-_active_bot_id()]] - `method` [EXTRACTED]
 - [[dot-_active_send_token()]] - `method` [EXTRACTED]
 - [[dot-_answer_callback_query()]] - `method` [EXTRACTED]

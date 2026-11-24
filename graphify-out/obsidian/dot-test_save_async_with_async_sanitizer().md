@@ -15,6 +15,6 @@ tags:
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestAsyncSave]] - `method` [EXTRACTED]
 - [[_san()]] - `indirect_call` [INFERRED]
-- [[asyncio_31]] - `references` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAsyncSave

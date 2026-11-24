@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "asyncio"
+community: "TestUpstreamAlertDedup"
 location: "L549"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/TestUpstreamAlertDedup
 ---
 
 # TestUpstreamAlertDedup
@@ -21,4 +21,4 @@ tags:
 - [[The 0605 check and the 0700 GHSA ingest share one diff; an advisory still…]] - `rationale_for` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/TestUpstreamAlertDedup

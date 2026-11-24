@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
+community: "make_proxy"
 location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/make_proxy
 ---
 
 # FakeConn
 
 ## Connections
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
+- [[dot-__init__()_30]] - `method` [EXTRACTED]
 - [[dot-send_request()]] - `method` [EXTRACTED]
-- [[dot-stop()_2]] - `method` [EXTRACTED]
+- [[dot-stop()_1]] - `method` [EXTRACTED]
 - [[dot-test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]
 - [[dot-test_execution_with_none_content_skips_result_inspection()]] - `calls` [EXTRACTED]
 - [[dot-test_generic_exception()]] - `calls` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[Stand-in connection injected into the proxy's pool.]] - `rationale_for` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/make_proxy

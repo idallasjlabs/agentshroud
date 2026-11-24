@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Critical Cost Control_2]] - `contains` [EXTRACTED]
-- [[Role_70]] - `contains` [EXTRACTED]
+- [[Role_71]] - `contains` [EXTRACTED]
 - [[Test Data Validation Pattern_2]] - `contains` [EXTRACTED]
 - [[Validation Layers_2]] - `contains` [EXTRACTED]
 - [[i-data.agent]] - `contains` [EXTRACTED]

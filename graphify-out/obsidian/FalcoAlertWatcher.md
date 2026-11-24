@@ -12,11 +12,11 @@ tags:
 # FalcoAlertWatcher
 
 ## Connections
-- [[dot-__init__()_4]] - `method` [EXTRACTED]
+- [[dot-__init__()_211]] - `method` [EXTRACTED]
 - [[dot-_handle_critical()]] - `method` [EXTRACTED]
 - [[dot-_process_new_alerts()]] - `method` [EXTRACTED]
-- [[dot-run()]] - `method` [EXTRACTED]
-- [[dot-stop()]] - `method` [EXTRACTED]
+- [[dot-run()_12]] - `method` [EXTRACTED]
+- [[dot-stop()_11]] - `method` [EXTRACTED]
 - [[dot-test_falco_critical_escalates_instance_shared_with_telegram()]] - `calls` [EXTRACTED]
 - [[Tail Falco alert files and trigger progressive lockdown on CRITICAL alerts.…]] - `rationale_for` [EXTRACTED]
 - [[TestLifespanWiring]] - `uses` [INFERRED]

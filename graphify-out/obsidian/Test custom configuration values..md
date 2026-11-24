@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "PathRewriteResult"
+community: "PathIsolationManager"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathRewriteResult
+  - community/PathIsolationManager
 ---
 
 # Test custom configuration values.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_custom_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathRewriteResult
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

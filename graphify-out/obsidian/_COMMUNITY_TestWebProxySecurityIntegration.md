@@ -8,9 +8,9 @@ members: 39
 **Members:** 39 nodes
 
 ## Members
-- [[dot-__init__()_109]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-__init__()_110]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-__init__()_111]] - code - gateway/tests/test_web_proxy_security.py
+- [[dot-__init__()_112]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-setUp()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_browser_security_blocks_high_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_browser_security_flags_medium_risk_urls()]] - code - gateway/tests/test_web_proxy_security.py
@@ -24,14 +24,14 @@ members: 39
 - [[dot-test_multiple_security_modules_integration()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_oauth_security_error_handling()]] - code - gateway/tests/test_web_proxy_security.py
 - [[dot-test_oauth_security_flags_auth_headers()]] - code - gateway/tests/test_web_proxy_security.py
-- [[Enum_27]] - code
+- [[Enum_28]] - code
 - [[Integration tests for web proxy security modules. Tests that DNS filter,…]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[MockDNSVerdict]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockEgressChannel]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockEgressEvent]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockThreatLevel]] - code - gateway/tests/test_web_proxy_security.py
 - [[MockURLResult]] - code - gateway/tests/test_web_proxy_security.py
-- [[Set up test fixtures._4]] - rationale - gateway/tests/test_web_proxy_security.py
+- [[Set up test fixtures._5]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Test that DNS filter blocks suspicious domains.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Test that DNS filter errors cause fail-closed behavior.]] - rationale - gateway/tests/test_web_proxy_security.py
 - [[Test that DNS filter flags questionable domains but allows them through.]] - rationale - gateway/tests/test_web_proxy_security.py
@@ -56,10 +56,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_WebProxy]]
+- 3 edges to [[_COMMUNITY_WebProxy]]
 - 2 edges to [[_COMMUNITY_WebProxyResult]]
+- 2 edges to [[_COMMUNITY_web_proxy.py]]
 
 ## Top bridge nodes
-- [[TestWebProxySecurityIntegration]] - degree 18, connects to 2 communities
-- [[test_web_proxy_security.py]] - degree 11, connects to 2 communities
+- [[TestWebProxySecurityIntegration]] - degree 18, connects to 3 communities
+- [[test_web_proxy_security.py]] - degree 11, connects to 3 communities
 - [[dot-setUp()]] - degree 3, connects to 1 community

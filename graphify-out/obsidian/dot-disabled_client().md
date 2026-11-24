@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L312"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # .disabled_client()
@@ -24,6 +24,6 @@ tags:
 - [[SSHConfig]] - `calls` [EXTRACTED]
 - [[TestSSHDisabledEndpoint]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_66]] - `references` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

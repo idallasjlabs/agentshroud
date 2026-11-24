@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_cron_jobs_prompts.py"
+community: "parse_clamscan_output"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/parse_clamscan_output
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

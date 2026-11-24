@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/app_main.c"
 type: "code"
-community: "ws_client.c"
+community: "voice_task"
 location: "L566"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/ws_clientc
+  - community/voice_task
 ---
 
 # rlog_task()
@@ -17,4 +17,4 @@ tags:
 - [[ws_client_connected()]] - `calls` [INFERRED]
 - [[ws_client_send_log()]] - `calls` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/ws_clientc
+#graphify/code #graphify/INFERRED #community/voice_task

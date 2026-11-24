@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L208"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # TestFullPipelineLatency
@@ -23,4 +23,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/PIIConfig
+#graphify/code #graphify/INFERRED #community/lifespanpy

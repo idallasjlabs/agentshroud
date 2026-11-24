@@ -12,7 +12,7 @@ tags:
 # TestEncryptedStore
 
 ## Connections
-- [[dot-setup_method()_5]] - `method` [EXTRACTED]
+- [[dot-setup_method()_6]] - `method` [EXTRACTED]
 - [[dot-test_b64_roundtrip()]] - `method` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `method` [EXTRACTED]
 - [[dot-test_different_encryptions_differ()]] - `method` [EXTRACTED]
@@ -24,11 +24,11 @@ tags:
 - [[dot-test_get_blob_key_id()]] - `method` [EXTRACTED]
 - [[dot-test_invalid_blob_too_short()]] - `method` [EXTRACTED]
 - [[dot-test_invalid_blob_version()]] - `method` [EXTRACTED]
-- [[dot-test_key_rotation()_1]] - `method` [EXTRACTED]
+- [[dot-test_key_rotation()]] - `method` [EXTRACTED]
 - [[dot-test_key_rotation_auto_increment()]] - `method` [EXTRACTED]
 - [[dot-test_large_data()]] - `method` [EXTRACTED]
 - [[dot-test_no_secret_raises()]] - `method` [EXTRACTED]
-- [[dot-test_wrong_key_fails()_1]] - `method` [EXTRACTED]
+- [[dot-test_wrong_key_fails()]] - `method` [EXTRACTED]
 - [[EncryptedStore]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 

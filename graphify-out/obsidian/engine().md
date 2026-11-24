@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # engine()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[_base_config()]] - `calls` [EXTRACTED]
-- [[fixture_90]] - `references` [EXTRACTED]
+- [[fixture_92]] - `references` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

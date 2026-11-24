@@ -12,7 +12,7 @@ tags:
 # ._generate_event_id()
 
 ## Connections
-- [[dot-__init__()_200]] - `calls` [EXTRACTED]
+- [[dot-__init__()_196]] - `calls` [EXTRACTED]
 - [[AuditEvent]] - `method` [EXTRACTED]
 - [[Generate a unique event ID based on timestamp + random.]] - `rationale_for` [EXTRACTED]
 

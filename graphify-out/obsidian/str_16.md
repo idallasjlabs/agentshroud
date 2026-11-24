@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GitGuard"
+community: "GroupRoleResolver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/GroupRoleResolver
 ---
 
 # str
 
 ## Connections
-- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
+- [[GroupRole]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-by_name()]] - `references` [EXTRACTED]
 - [[dot-from_file()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_6]] - `method` [EXTRACTED]
+- [[dot-to_dict()_7]] - `method` [EXTRACTED]
 - [[A single item in the skills manifest.]] - `rationale_for` [EXTRACTED]
 - [[TestManifestEntry]] - `uses` [INFERRED]
 - [[manifest.py]] - `contains` [EXTRACTED]

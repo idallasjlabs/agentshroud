@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "._check_impl"
+community: "EgressFilter"
 location: "L432"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_check_impl
+  - community/EgressFilter
 ---
 
 # Check if host is a private, loopback, link-local, or reserved IP. Covers: RFC…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_private_ip()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_check_impl
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

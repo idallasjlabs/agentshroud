@@ -12,6 +12,6 @@ tags:
 # Result of PII sanitization
 
 ## Connections
-- [[RedactionResult]] - `rationale_for` [EXTRACTED]
+- [[RedactionResult_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/RedactionResult

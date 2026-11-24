@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "test_security_audit.py"
+community: "TestFileSandbox"
 location: "L528"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestFileSandbox
 ---
 
 # Access to /proc/self/environ exposes env vars — must be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proc_self_environ_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/rationale #graphify/EXTRACTED #community/TestFileSandbox

@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[dot-_log_event()]] - `references` [EXTRACTED]
-- [[Enum_18]] - `inherits` [EXTRACTED]
+- [[Enum_19]] - `inherits` [EXTRACTED]
 - [[TestAuditTrail_2]] - `uses` [INFERRED]
 - [[TestConcurrentLimits]] - `uses` [INFERRED]
 - [[TestKillSwitch_1]] - `uses` [INFERRED]
 - [[TestPermissionMonitoring]] - `uses` [INFERRED]
 - [[TestPrivilegeEscalation]] - `uses` [INFERRED]
-- [[str_12]] - `inherits` [EXTRACTED]
+- [[str_13]] - `inherits` [EXTRACTED]
 - [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 

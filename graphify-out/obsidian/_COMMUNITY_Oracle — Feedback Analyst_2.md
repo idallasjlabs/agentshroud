@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_49]] - document - .agents/skills/oracle/SKILL.md
 - [[Persona_28]] - document - .agents/skills/oracle/SKILL.md
 - [[Quality Checklist_34]] - document - .agents/skills/oracle/SKILL.md
-- [[Role_99]] - document - .agents/skills/oracle/SKILL.md
+- [[Role_100]] - document - .agents/skills/oracle/SKILL.md
 - [[System Prompt_28]] - document - .agents/skills/oracle/SKILL.md
 - [[skillsoracleSKILL]] - document - .agents/skills/oracle/SKILL.md
 

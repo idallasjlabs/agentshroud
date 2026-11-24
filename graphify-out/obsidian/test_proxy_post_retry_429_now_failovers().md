@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Updated 2026-06-15 a plain 429 that escaped the upstream retry loop NOW…]] - `rationale_for` [EXTRACTED]
 - [[_call_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mock_forward()_15]] - `contains` [EXTRACTED]
 - [[mock_forward()_6]] - `indirect_call` [INFERRED]

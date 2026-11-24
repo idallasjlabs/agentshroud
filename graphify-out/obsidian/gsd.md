@@ -16,6 +16,6 @@ tags:
 - [[Blast Radius]] - `contains` [EXTRACTED]
 - [[Effort]] - `contains` [EXTRACTED]
 - [[Outcome]] - `contains` [EXTRACTED]
-- [[Problem_1]] - `contains` [EXTRACTED]
+- [[Problem]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/gsdmd

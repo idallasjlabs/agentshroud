@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[HTTP 200 with an overloaded_error body must trigger local failover.]] - `rationale_for` [EXTRACTED]
 - [[_call_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[mock_forward()_5]] - `contains` [EXTRACTED]
 - [[mock_forward()_6]] - `indirect_call` [INFERRED]

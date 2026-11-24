@@ -1,21 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "GroupWorkspaceManager"
+community: "KillSwitchMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupWorkspaceManager
+  - community/KillSwitchMonitor
 ---
 
 # fixture
 
 ## Connections
-- [[dot-proxy()]] - `references` [EXTRACTED]
-- [[manager()_1]] - `references` [EXTRACTED]
-- [[rbac()_2]] - `references` [EXTRACTED]
-- [[session_manager()]] - `references` [EXTRACTED]
-- [[shared_memory()]] - `references` [EXTRACTED]
-- [[teams()_2]] - `references` [EXTRACTED]
+- [[config()]] - `references` [EXTRACTED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
+community: "asyncio"
 location: "L1301"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_report
+  - community/asyncio
 ---
 
 # ._no_docker()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Pin _running_image to the docker-unavailable fallback (same as…]] - `rationale_for` [EXTRACTED]
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
-- [[fixture_89]] - `references` [EXTRACTED]
+- [[fixture_91]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_report
+#graphify/code #graphify/EXTRACTED #community/asyncio

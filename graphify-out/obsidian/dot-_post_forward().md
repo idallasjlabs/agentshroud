@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "_TrustCaptor"
+community: "test_forward_routing.py"
 location: "L479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_TrustCaptor
+  - community/test_forward_routingpy
 ---
 
 # ._post_forward()
@@ -21,4 +21,4 @@ tags:
 - [[_make_trust_app_state()]] - `calls` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_TrustCaptor
+#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy

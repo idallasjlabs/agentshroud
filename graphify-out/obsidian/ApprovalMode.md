@@ -17,7 +17,7 @@ tags:
 - [[dot-approve()]] - `references` [EXTRACTED]
 - [[dot-deny()]] - `references` [EXTRACTED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
-- [[Enum_6]] - `inherits` [EXTRACTED]
+- [[Enum_12]] - `inherits` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]

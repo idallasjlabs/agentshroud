@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "TestMetadataGuard"
+community: "MetadataGuard"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMetadataGuard
+  - community/MetadataGuard
 ---
 
 # Test comprehensive internal IP pattern matching.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_internal_ip_patterns_comprehensive()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMetadataGuard
+#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard

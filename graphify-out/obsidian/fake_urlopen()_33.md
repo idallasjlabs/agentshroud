@@ -1,20 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_stranger_rate_limit_notice_includes_reset_time"
-location: "L7828"
+community: "_make_update"
+location: "L6883"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_stranger_rate_limit_notice_includes_reset_time
+  - community/_make_update
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - `contains` [EXTRACTED]
-- [[__enter__()_2]] - `contains` [EXTRACTED]
-- [[__exit__()_2]] - `contains` [EXTRACTED]
-- [[read()_3]] - `contains` [EXTRACTED]
+- [[dot-test_block_notice_sent_without_markdown_parse_mode()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_stranger_rate_limit_notice_includes_reset_time
+#graphify/code #graphify/EXTRACTED #community/_make_update

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # Tests for Enhanced Approval Queue with Tool Risk Tiers
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_enhanced_approval.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

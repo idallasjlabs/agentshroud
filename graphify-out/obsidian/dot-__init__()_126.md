@@ -1,17 +1,22 @@
 ---
-source_file: "gateway/tests/test_edge_pipeline.py"
+source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L41"
+community: "EdgeOAuthService"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/EdgeOAuthService
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeFacade]] - `method` [EXTRACTED]
+- [[dot-__init__()_127]] - `calls` [EXTRACTED]
+- [[EdgeOAuthService]] - `method` [EXTRACTED]
+- [[EdgeStore]] - `references` [EXTRACTED]
+- [[Notify]] - `references` [EXTRACTED]
+- [[TokenService]] - `references` [EXTRACTED]
+- [[VendorProfile]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

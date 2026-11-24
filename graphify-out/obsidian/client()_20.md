@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_version_routes.py"
 type: "code"
-community: "test_channel_ownership.py"
-location: "L37"
+community: "TestVersionRoutes"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_channel_ownershippy
+  - community/TestVersionRoutes
 ---
 
 # client()
 
 ## Connections
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_140]] - `references` [EXTRACTED]
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[fixture_136]] - `references` [EXTRACTED]
+- [[test_version_routes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_channel_ownershippy
+#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes

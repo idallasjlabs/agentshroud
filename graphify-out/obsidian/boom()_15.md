@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_discover_upstream_versions.py"
+source_file: "gateway/tests/test_edge_fuzz.py"
 type: "code"
-community: "discover_upstream_versions.py"
-location: "L221"
+community: "test_edge_fuzz.py"
+location: "L125"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/discover_upstream_versionspy
+  - community/test_edge_fuzzpy
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_propagates_fn_exception()]] - `indirect_call` [INFERRED]
+- [[no_exec()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy
+#graphify/code #graphify/INFERRED #community/test_edge_fuzzpy

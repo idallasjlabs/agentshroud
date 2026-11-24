@@ -15,7 +15,7 @@ members: 9
 - [[Mandatory Workflow  (10 steps)]] - document - .agents/agents/i-gg.md
 - [[Protected Branch]] - document - .agents/agents/i-gg.md
 - [[REFUSE These]] - document - .agents/agents/i-gg.md
-- [[Role_76]] - document - .agents/agents/i-gg.md
+- [[Role_77]] - document - .agents/agents/i-gg.md
 - [[Skill Git Workflow Guardian (GIT-GUARD)]] - document - .agents/agents/i-gg.md
 
 ## Live Query (requires Dataview plugin)

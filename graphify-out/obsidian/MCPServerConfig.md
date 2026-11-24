@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "MCPServerConfig"
+community: "test_mcp_proxy.py"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/test_mcp_proxypy
 ---
 
 # MCPServerConfig
 
 ## Connections
-- [[dot-__init__()_57]] - `references` [EXTRACTED]
-- [[dot-__init__()_58]] - `references` [EXTRACTED]
-- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
+- [[dot-__init__()_61]] - `references` [EXTRACTED]
+- [[dot-__init__()_63]] - `references` [EXTRACTED]
+- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
 - [[dot-get_or_create()]] - `references` [EXTRACTED]
 - [[dot-infer_permission_level()]] - `references` [EXTRACTED]
 - [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
@@ -33,8 +33,8 @@ tags:
 - [[TestConnectionPool]] - `uses` [INFERRED]
 - [[TestHttpSseConnection]] - `uses` [INFERRED]
 - [[TestStdioConnection]] - `uses` [INFERRED]
-- [[config()_3]] - `uses` [INFERRED]
 - [[config()_1]] - `uses` [INFERRED]
+- [[config()_2]] - `uses` [INFERRED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py_2]] - `imports` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

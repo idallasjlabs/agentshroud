@@ -18,7 +18,7 @@ tags:
 - [[Run ``fn`` in a daemon thread; raise ``TimeoutError`` if it outlives…]] - `rationale_for` [EXTRACTED]
 - [[_T]] - `references` [EXTRACTED]
 - [[_guarded_fetch()]] - `calls` [EXTRACTED]
-- [[_run()_10]] - `indirect_call` [INFERRED]
+- [[_run()_11]] - `indirect_call` [INFERRED]
 - [[discover_upstream_versions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/discover_upstream_versionspy

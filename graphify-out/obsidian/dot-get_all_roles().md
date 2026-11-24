@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "GroupRole"
+community: "GroupRoleResolver"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRole
+  - community/GroupRoleResolver
 ---
 
 # .get_all_roles()
@@ -16,4 +16,4 @@ tags:
 - [[GroupRoleResolver]] - `method` [EXTRACTED]
 - [[Return all user→role mappings for a group.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRole
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

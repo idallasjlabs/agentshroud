@@ -29,8 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_middleware.py]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[TestRBACConfig]] - degree 9, connects to 2 communities
+- [[TestRBACConfig]] - degree 9, connects to 1 community

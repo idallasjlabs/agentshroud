@@ -8,7 +8,7 @@ members: 32
 **Members:** 32 nodes
 
 ## Members
-- [[dot-__init__()_150]] - code - gateway/proxy/web_content_scanner.py
+- [[dot-__init__()_141]] - code - gateway/proxy/web_content_scanner.py
 - [[dot-setUp()_1]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_billion_laughs_detected()]] - code - gateway/tests/test_xml_dtd_control.py
 - [[dot-test_case_insensitive()_1]] - code - gateway/tests/test_xml_dtd_control.py
@@ -25,7 +25,7 @@ members: 32
 - [[A document with no DTD is untouched — this must not break feeds.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[An attacker controls the Content-Type header, so sniff the body.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[Entity declarations carry both XXE and billion-laughs.]] - rationale - gateway/tests/test_xml_dtd_control.py
-- [[Enum_34]] - code
+- [[Enum_35]] - code
 - [[FindingSeverity]] - code - gateway/proxy/web_content_scanner.py
 - [[Gateway XML DTDentity control — CLAUDE.md 0.05 arm 2. CVE-2026-6653 is a use-…]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[HTML5's bare !DOCTYPE html has no internal subset and is harmless.]] - rationale - gateway/tests/test_xml_dtd_control.py
@@ -37,7 +37,7 @@ members: 32
 - [[The '' block inside DOCTYPE is what xmlParseInternalSubset parses.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[The distinction this whole control rests on.]] - rationale - gateway/tests/test_xml_dtd_control.py
 - [[WebContentScanner]] - code - gateway/proxy/web_content_scanner.py
-- [[str_18]] - code
+- [[str_20]] - code
 - [[test_xml_dtd_control.py]] - code - gateway/tests/test_xml_dtd_control.py
 - [[web_content_scanner.py_2]] - code - gateway/proxy/web_content_scanner.py
 
@@ -50,10 +50,10 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_ScanResult]]
-- 3 edges to [[_COMMUNITY_WebProxy]]
+- 2 edges to [[_COMMUNITY_WebProxy]]
+- 2 edges to [[_COMMUNITY_web_proxy.py]]
 - 1 edge to [[_COMMUNITY_TestTriageClassLevelCoverage]]
 - 1 edge to [[_COMMUNITY_TestDefenseLayerVocabulary]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
 - 1 edge to [[_COMMUNITY__t]]
 
 ## Top bridge nodes

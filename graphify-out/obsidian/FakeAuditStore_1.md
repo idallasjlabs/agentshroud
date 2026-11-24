@@ -12,8 +12,8 @@ tags:
 # FakeAuditStore
 
 ## Connections
-- [[dot-__init__()_169]] - `method` [EXTRACTED]
-- [[dot-log_event()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_160]] - `method` [EXTRACTED]
+- [[dot-log_event()]] - `method` [EXTRACTED]
 - [[dot-test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[dot-test_deny_is_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[TestAuditStorePersistence]] - `contains` [EXTRACTED]

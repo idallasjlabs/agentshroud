@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L86"
+community: "TrustManager"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/TrustManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/TrustManager

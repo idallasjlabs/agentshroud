@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Create a ToolChainAnalyzer instance for testing.]] - `rationale_for` [EXTRACTED]
 - [[ToolChainAnalyzer]] - `uses` [INFERRED]
-- [[fixture_130]] - `references` [EXTRACTED]
+- [[fixture_128]] - `references` [EXTRACTED]
 - [[test_tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

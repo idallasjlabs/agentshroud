@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "DraftEntry"
+community: "CompetitiveIntelReport"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/CompetitiveIntelReport
 ---
 
 # citation_verifier.py
@@ -26,4 +26,4 @@ tags:
 - [[test_citation_verifier.py]] - `imports_from` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

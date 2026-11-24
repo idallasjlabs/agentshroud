@@ -13,7 +13,7 @@ members: 7
 - [[Output Format_69]] - document - .opencode/agents/i-cr.md
 - [[Production-Specific Review Checks_6]] - document - .opencode/agents/i-cr.md
 - [[Review Principles_6]] - document - .opencode/agents/i-cr.md
-- [[Role_126]] - document - .opencode/agents/i-cr.md
+- [[Role_128]] - document - .opencode/agents/i-cr.md
 - [[Skill Code Review (CR)_6]] - document - .opencode/agents/i-cr.md
 
 ## Live Query (requires Dataview plugin)

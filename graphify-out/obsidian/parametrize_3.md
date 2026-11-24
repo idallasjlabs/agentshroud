@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_network_isolation.py"
+community: "test_api_contract_fuzz.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_network_isolationpy
+  - community/test_api_contract_fuzzpy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_check_fails_when_control_removed()]] - `references` [EXTRACTED]
-- [[test_gateway_mounts_edge_config_read_only()]] - `references` [EXTRACTED]
-- [[test_gateway_receives_pke_feed_list()]] - `references` [EXTRACTED]
-- [[test_isolation_control_holds()]] - `references` [EXTRACTED]
+- [[test_endpoint_survives_adversarial_body()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_network_isolationpy
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

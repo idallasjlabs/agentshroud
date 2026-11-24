@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "TestPresidioPathContract"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/TestPresidioPathContract
 ---
 
 # TestPresidioPathContract
@@ -23,4 +23,4 @@ tags:
 - [[_FakeRecognizerResult_1]] - `contains` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/TestPresidioPathContract

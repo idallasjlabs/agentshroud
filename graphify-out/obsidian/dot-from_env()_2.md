@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "test_memory_lifecycle.py"
+community: "middleware.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_memory_lifecyclepy
+  - community/middlewarepy
 ---
 
 # .from_env()
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
 - [[dot-test_config_from_env()]] - `calls` [EXTRACTED]
 - [[Create configuration from environment variables.]] - `rationale_for` [EXTRACTED]
 - [[MemorySecurityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

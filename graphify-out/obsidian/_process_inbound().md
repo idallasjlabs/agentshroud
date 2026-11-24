@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "email_send"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # _process_inbound()
@@ -22,4 +22,4 @@ tags:
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 - [[source()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/email_send

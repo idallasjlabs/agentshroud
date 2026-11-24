@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "GitGuard"
+community: "GroupRoleResolver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/GroupRoleResolver
 ---
 
 # Enum
 
 ## Connections
-- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
-- [[git_guard.py]] - `imports_from` [EXTRACTED]
+- [[GroupRole]] - `inherits` [EXTRACTED]
+- [[group_rbac.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

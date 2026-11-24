@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # FileSandbox
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_114]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_71]] - `method` [EXTRACTED]
 - [[dot-_check()]] - `method` [EXTRACTED]
 - [[dot-_detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[dot-_is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-check_read()]] - `method` [EXTRACTED]
 - [[dot-check_write()]] - `method` [EXTRACTED]
 - [[dot-detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_8]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_2]] - `method` [EXTRACTED]
 - [[dot-get_security_violations()]] - `method` [EXTRACTED]
 - [[dot-get_temp_files()]] - `method` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -44,7 +44,7 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[sandbox()]] - `uses` [INFERRED]
 - [[strict_sandbox()]] - `uses` [INFERRED]
 - [[strict_sandbox()_1]] - `uses` [INFERRED]
@@ -54,4 +54,4 @@ tags:
 - [[test_privilege_separation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

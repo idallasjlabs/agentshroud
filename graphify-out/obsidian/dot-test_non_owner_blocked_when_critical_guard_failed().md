@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "TestCriticalGuardInitFailClosed"
+community: "_FakeRBAC"
 location: "L1056"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCriticalGuardInitFailClosed
+  - community/_FakeRBAC
 ---
 
 # .test_non_owner_blocked_when_critical_guard_failed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCriticalGuardInitFailClosed]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCriticalGuardInitFailClosed
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

@@ -8,7 +8,7 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-client()]] - code - gateway/tests/test_report_store.py
+- [[dot-client()_4]] - code - gateway/tests/test_report_store.py
 - [[dot-test_create_list_get_roundtrip()]] - code - gateway/tests/test_report_store.py
 - [[dot-test_cross_bot_visibility()]] - code - gateway/tests/test_report_store.py
 - [[dot-test_missing_content_422()]] - code - gateway/tests/test_report_store.py
@@ -33,4 +33,4 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[TestReportAPI]] - degree 9, connects to 2 communities
 - [[store()]] - degree 3, connects to 2 communities
-- [[dot-client()]] - degree 3, connects to 1 community
+- [[dot-client()_4]] - degree 3, connects to 1 community

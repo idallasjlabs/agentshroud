@@ -1,12 +1,12 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "TestAsyncClient"
+community: "chatbot/main.py"
 location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAsyncClient
+  - community/chatbot/mainpy
 ---
 
 # .test_chat_success_returns_parsed_response()
@@ -16,4 +16,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAsyncClient
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

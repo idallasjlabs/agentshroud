@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "GatewayConfig"
 location: "L980"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/GatewayConfig
 ---
 
 # ssh_exec()
 
 ## Connections
 - [[ApprovalRequest]] - `uses` [INFERRED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Execute SSH command with validation and approval]] - `rationale_for` [EXTRACTED]
 - [[SSHExecRequest]] - `uses` [INFERRED]
 - [[SSHExecResponse]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[post_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

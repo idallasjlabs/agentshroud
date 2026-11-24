@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_channel_ownership.py"
+community: "A2AProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_channel_ownershippy
+  - community/A2AProxy
 ---
 
 # fixture
 
 ## Connections
-- [[bypass_auth()_1]] - `references` [EXTRACTED]
-- [[client()_20]] - `references` [EXTRACTED]
+- [[forwarder()_1]] - `references` [EXTRACTED]
+- [[proxy()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_channel_ownershippy
+#graphify/code #graphify/EXTRACTED #community/A2AProxy

@@ -16,6 +16,6 @@ tags:
 - [[Gateway Module Dependencies]] - `contains` [EXTRACTED]
 - [[Key Initialization Order (main.py lifespan)]] - `contains` [EXTRACTED]
 - [[Python Package Dependencies]] - `contains` [EXTRACTED]
-- [[Related Notes_68]] - `contains` [EXTRACTED]
+- [[Related Notes_69]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Features

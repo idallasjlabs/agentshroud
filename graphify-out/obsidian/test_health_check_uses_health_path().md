@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[asyncio_59]] - `references` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 - [[health_check builds URL from target.health_path.]] - `rationale_for` [EXTRACTED]
 - [[mock_get()_1]] - `contains` [EXTRACTED]
 - [[mock_get()]] - `indirect_call` [INFERRED]

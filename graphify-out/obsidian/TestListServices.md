@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "TestListServices"
+community: "test_soc_realtime_coverage.py"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestListServices
+  - community/test_soc_realtime_coveragepy
 ---
 
 # TestListServices
@@ -19,4 +19,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestListServices
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

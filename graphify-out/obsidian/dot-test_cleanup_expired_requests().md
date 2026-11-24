@@ -15,6 +15,6 @@ tags:
 - [[EgressRequest]] - `calls` [EXTRACTED]
 - [[Test cleanup of expired pending requests.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
-- [[asyncio_5]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

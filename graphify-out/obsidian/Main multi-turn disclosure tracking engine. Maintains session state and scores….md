@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "test_all_modules_enforce.py"
+community: "MultiTurnTracker"
 location: "L87"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/MultiTurnTracker
 ---
 
 # Main multi-turn disclosure tracking engine. Maintains session state and scores…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiTurnTracker]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

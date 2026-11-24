@@ -8,16 +8,16 @@ members: 40
 **Members:** 40 nodes
 
 ## Members
-- [[dot-__init__()_104]] - code - gateway/security/canary_tripwire.py
+- [[dot-__init__()_106]] - code - gateway/security/canary_tripwire.py
 - [[dot-_check_encoded()]] - code - gateway/security/canary_tripwire.py
 - [[dot-_check_plain()]] - code - gateway/security/canary_tripwire.py
 - [[dot-_normalize()]] - code - gateway/security/canary_tripwire.py
-- [[dot-_record()]] - code - gateway/security/canary_tripwire.py
+- [[dot-_record()_1]] - code - gateway/security/canary_tripwire.py
 - [[dot-detection_count()]] - code - gateway/security/canary_tripwire.py
 - [[dot-register_canary()]] - code - gateway/security/canary_tripwire.py
-- [[dot-scan()]] - code - gateway/security/canary_tripwire.py
-- [[dot-scan_response()_1]] - code - gateway/security/canary_tripwire.py
-- [[dot-setup_method()_18]] - code - gateway/tests/test_canary_tripwire.py
+- [[dot-scan()_1]] - code - gateway/security/canary_tripwire.py
+- [[dot-scan_response()_2]] - code - gateway/security/canary_tripwire.py
+- [[dot-setup_method()_17]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_api_key_canary()]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_base64_canary()]] - code - gateway/tests/test_canary_tripwire.py
 - [[dot-test_case_insensitive()]] - code - gateway/tests/test_canary_tripwire.py
@@ -57,9 +57,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_EnhancedApprovalQueue]]
+- 7 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 - 3 edges to [[_COMMUNITY_test_e2e_watchtower.py]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_run]]
 - 1 edge to [[_COMMUNITY_test_edge_service_routes.py]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]

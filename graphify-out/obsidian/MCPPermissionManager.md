@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "MCPPermissionManager"
+community: "test_mcp_proxy.py"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/test_mcp_proxypy
 ---
 
 # MCPPermissionManager
 
 ## Connections
-- [[dot-__init__()_227]] - `references` [EXTRACTED]
-- [[dot-__init__()_6]] - `method` [EXTRACTED]
+- [[dot-__init__()_62]] - `references` [EXTRACTED]
+- [[dot-__init__()_59]] - `method` [EXTRACTED]
 - [[dot-_load_privacy_policy()]] - `method` [EXTRACTED]
 - [[dot-_recompile_private_data_patterns()]] - `method` [EXTRACTED]
 - [[dot-_record_private_access_attempt()]] - `method` [EXTRACTED]
@@ -47,11 +47,11 @@ tags:
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `imports` [EXTRACTED]
-- [[mgr()_2]] - `uses` [INFERRED]
-- [[proxy()_1]] - `uses` [INFERRED]
+- [[mgr()_1]] - `uses` [INFERRED]
+- [[proxy()]] - `uses` [INFERRED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

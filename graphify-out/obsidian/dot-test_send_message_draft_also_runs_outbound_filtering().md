@@ -16,7 +16,7 @@ tags:
 - [[TestOutboundPipelineWired]] - `method` [EXTRACTED]
 - [[_make_pipeline_result()]] - `calls` [EXTRACTED]
 - [[_make_proxy()_3]] - `calls` [EXTRACTED]
-- [[asyncio_68]] - `references` [EXTRACTED]
+- [[asyncio_67]] - `references` [EXTRACTED]
 - [[fake_forward()_3]] - `indirect_call` [INFERRED]
 - [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - `rationale_for` [EXTRACTED]
 

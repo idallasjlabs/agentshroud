@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Non-HTTP bytes (e.g. TLS ClientHello) must be dropped without proxying.]] - `rationale_for` [EXTRACTED]
-- [[__init__()_24]] - `contains` [EXTRACTED]
+- [[__init__()_21]] - `contains` [EXTRACTED]
 - [[_fake_open_connection()]] - `contains` [EXTRACTED]
 - [[_fake_reader_factory()]] - `contains` [EXTRACTED]
 - [[asyncio_84]] - `references` [EXTRACTED]
-- [[close()_4]] - `contains` [EXTRACTED]
+- [[close()_3]] - `contains` [EXTRACTED]
 - [[drain()]] - `contains` [EXTRACTED]
 - [[get_extra_info()]] - `contains` [EXTRACTED]
 - [[test_telegram_executor.py]] - `contains` [EXTRACTED]

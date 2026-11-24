@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "lifespan.py"
 location: "L130"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/lifespanpy
 ---
 
 # Verify canary message contains the expected fake PII.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_message_contains_fake_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

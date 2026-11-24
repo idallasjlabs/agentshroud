@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_benchmark_regression.py"
-location: "L902"
+community: "ServiceManager"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_benchmark_regressionpy
+  - community/ServiceManager
 ---
 
 # __init__()
 
 ## Connections
-- [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
+- [[_patch_http_connection()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_benchmark_regressionpy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

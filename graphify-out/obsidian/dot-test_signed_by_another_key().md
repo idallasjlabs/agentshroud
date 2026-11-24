@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_edge_e2e_sdk.py"
 location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .test_signed_by_another_key()
@@ -17,4 +17,4 @@ tags:
 - [[_token()_1]] - `calls` [EXTRACTED]
 - [[generate_signing_key_pem()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

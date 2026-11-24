@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "GroupWorkspaceManager"
-location: "L95"
+community: "make_proxy"
+location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupWorkspaceManager
+  - community/make_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[Exception_2]] - `references` [EXTRACTED]
+- [[FakeConn]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager
+#graphify/code #graphify/EXTRACTED #community/make_proxy

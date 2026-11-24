@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "middleware.py"
+community: "run"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # .add_protected_content()
@@ -16,6 +16,6 @@ tags:
 - [[Add content to the protected registry. Args name Identifier for this content…]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 - [[ProtectedContent]] - `calls` [EXTRACTED]
-- [[run()_1]] - `indirect_call` [INFERRED]
+- [[run()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/run

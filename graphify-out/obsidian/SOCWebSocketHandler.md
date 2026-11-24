@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "SOCWebSocketHandler"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/SOCWebSocketHandler
 ---
 
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_178]] - `method` [EXTRACTED]
+- [[dot-__init__()_67]] - `method` [EXTRACTED]
 - [[dot-_event_fan_out()]] - `method` [EXTRACTED]
 - [[dot-_handler()]] - `references` [EXTRACTED]
 - [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
 - [[dot-_make_handler()]] - `references` [EXTRACTED]
 - [[dot-_matches()]] - `references` [EXTRACTED]
 - [[dot-_send_event()]] - `method` [EXTRACTED]
-- [[dot-run()_9]] - `method` [EXTRACTED]
+- [[dot-run()_2]] - `method` [EXTRACTED]
 - [[dot-test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[TestEdgeEventOverWebSocket]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[websocket.py]] - `contains` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

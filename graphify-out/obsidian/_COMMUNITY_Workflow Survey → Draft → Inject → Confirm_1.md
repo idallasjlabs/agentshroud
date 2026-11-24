@@ -10,7 +10,7 @@ members: 13
 ## Members
 - [[dot-cursoragentsi-session-prompt]] - document - .cursor/agents/i-session-prompt.md
 - [[Re-injection Command (for reference)_1]] - document - .cursor/agents/i-session-prompt.md
-- [[Role_38]] - document - .cursor/agents/i-session-prompt.md
+- [[Role_39]] - document - .cursor/agents/i-session-prompt.md
 - [[Rules_2]] - document - .cursor/agents/i-session-prompt.md
 - [[Skill Session Prompt Generator (SESSION-PROMPT)_1]] - document - .cursor/agents/i-session-prompt.md
 - [[Step 1 — Survey the Repo_1]] - document - .cursor/agents/i-session-prompt.md

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L49"
+community: "_HeadFakeClient"
+location: "L818"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/_HeadFakeClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_31]] - `references` [EXTRACTED]
+- [[_HeadFakeClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

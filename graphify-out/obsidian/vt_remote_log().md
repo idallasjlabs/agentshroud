@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_btn_pressed()]] - `calls` [INFERRED]
 - [[_deliver_utterance()]] - `calls` [EXTRACTED]
-- [[_on_event()]] - `calls` [INFERRED]
+- [[_on_event()_1]] - `calls` [INFERRED]
 - [[_on_ws_ctrl()]] - `calls` [EXTRACTED]
 - [[_ptt_start()]] - `calls` [INFERRED]
 - [[_report_and_place_canvas()]] - `calls` [INFERRED]

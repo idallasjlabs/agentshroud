@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "installer.py"
+community: "chatbot/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/chatbot/mainpy
 ---
 
 # get
 
 ## Connections
-- [[check_prerequisites()]] - `references` [EXTRACTED]
-- [[get_runtimes()]] - `references` [EXTRACTED]
-- [[installer_page()]] - `references` [EXTRACTED]
+- [[health_check()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/installerpy
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

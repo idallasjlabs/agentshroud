@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_chain_analyzer.py"
+source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolChainAnalyzer"
-location: "L442"
+community: "TestToolResultSanitizer"
+location: "L290"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestToolResultSanitizer
 ---
 
 # .test_edge_cases()
 
 ## Connections
-- [[Test edge cases and error conditions._2]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
-- [[failing_callback()]] - `indirect_call` [INFERRED]
-- [[working_callback()]] - `indirect_call` [INFERRED]
+- [[Test edge cases and malformed inputs.]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestToolResultSanitizer

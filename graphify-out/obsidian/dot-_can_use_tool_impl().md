@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_get_group_tool_allowlist()]] - `calls` [EXTRACTED]
 - [[dot-_get_role()]] - `calls` [EXTRACTED]
-- [[dot-can_use_tool()_1]] - `calls` [EXTRACTED]
+- [[dot-can_use_tool()]] - `calls` [EXTRACTED]
 - [[Check whether user_id may invoke the named tool. Returns (allowed bool,…]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 

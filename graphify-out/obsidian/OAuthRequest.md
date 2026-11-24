@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "OAuthRequest"
+community: "test_security_audit.py"
 location: "L44"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/OAuthRequest
+  - community/test_security_auditpy
 ---
 
 # OAuthRequest
@@ -28,4 +28,4 @@ tags:
 - [[TestStateValidation]] - `uses` [INFERRED]
 - [[oauth_security.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/OAuthRequest
+#graphify/code #graphify/INFERRED #community/test_security_auditpy

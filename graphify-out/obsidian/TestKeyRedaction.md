@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "TestKeyRedaction"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/TestKeyRedaction
 ---
 
 # TestKeyRedaction
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_partial_key_redacted()]] - `method` [EXTRACTED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/TestKeyRedaction

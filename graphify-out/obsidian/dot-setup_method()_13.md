@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "MemoryLifecycleConfig"
-location: "L192"
+community: "MetadataGuard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleConfig
+  - community/MetadataGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[Set up test environment._3]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

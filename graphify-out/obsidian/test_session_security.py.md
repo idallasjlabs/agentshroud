@@ -20,6 +20,6 @@ tags:
 - [[TestSessionRotation]] - `contains` [EXTRACTED]
 - [[TestSessionValidation]] - `contains` [EXTRACTED]
 - [[Tests for session_security module. TDD Written before implementation.]] - `rationale_for` [EXTRACTED]
-- [[manager()_3]] - `contains` [EXTRACTED]
+- [[manager()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SessionManager

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "_run_asgi"
-location: "L718"
+community: "test_edge_e2e_sdk.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_asgi
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[Facade_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_asgi
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

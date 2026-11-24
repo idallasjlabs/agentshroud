@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # .no_approval_client()
@@ -26,6 +26,6 @@ tags:
 - [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHRequireApprovalFalse]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_66]] - `references` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

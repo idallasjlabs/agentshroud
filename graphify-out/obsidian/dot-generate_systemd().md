@@ -12,7 +12,7 @@ tags:
 # .generate_systemd()
 
 ## Connections
-- [[dot-_cmd()_1]] - `calls` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
 - [[Generate a systemd unit file for a container.]] - `rationale_for` [EXTRACTED]
 - [[PodmanEngine]] - `method` [EXTRACTED]
 

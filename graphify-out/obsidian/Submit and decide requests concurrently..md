@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "ApprovalRequest"
 location: "L64"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ApprovalRequest
 ---
 
 # Submit and decide requests concurrently.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_concurrent_submit_and_decide()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalRequest

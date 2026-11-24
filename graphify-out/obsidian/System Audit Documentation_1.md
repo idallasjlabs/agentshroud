@@ -12,7 +12,7 @@ tags:
 # System Audit Documentation
 
 ## Connections
-- [[Purpose_130]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
 - [[Related Skills_60]] - `contains` [EXTRACTED]
 - [[Usage_70]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]

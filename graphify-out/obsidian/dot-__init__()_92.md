@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "gateway/ssh_proxy/proxy.py"
 type: "code"
-community: "SharedMemoryManager"
-location: "L57"
+community: "SSHProxy"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/SSHProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[SSHConfig]] - `references` [EXTRACTED]
+- [[SSHProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

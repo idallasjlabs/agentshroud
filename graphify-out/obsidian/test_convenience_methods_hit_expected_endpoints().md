@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SCLClient]] - `uses` [INFERRED]
 - [[_patch_urlopen()]] - `calls` [EXTRACTED]
-- [[parametrize_10]] - `references` [EXTRACTED]
+- [[parametrize_8]] - `references` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_patch_urlopen

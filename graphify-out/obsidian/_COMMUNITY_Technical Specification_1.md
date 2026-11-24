@@ -17,7 +17,7 @@ members: 14
 - [[Primary API Text-to-Dialogue_1]] - document - .agents/skills/apollo/SKILL.md
 - [[Quality Checklist_5]] - document - .agents/skills/apollo/SKILL.md
 - [[Quick Mode Create Podcast API_1]] - document - .agents/skills/apollo/SKILL.md
-- [[Role_26]] - document - .agents/skills/apollo/SKILL.md
+- [[Role_27]] - document - .agents/skills/apollo/SKILL.md
 - [[Script Parsing_1]] - document - .agents/skills/apollo/SKILL.md
 - [[Technical Specification_1]] - document - .agents/skills/apollo/SKILL.md
 - [[Voice Configuration_1]] - document - .agents/skills/apollo/SKILL.md

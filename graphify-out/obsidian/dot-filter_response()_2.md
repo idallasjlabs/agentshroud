@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "lifespan.py"
+community: "OutboundInfoFilter"
 location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/OutboundInfoFilter
 ---
 
 # .filter_response()
@@ -19,4 +19,4 @@ tags:
 - [[FilterResult_1]] - `calls` [EXTRACTED]
 - [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

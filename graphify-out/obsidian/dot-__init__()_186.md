@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "test_tool_acl.py"
-location: "L214"
+community: "A2APolicyEngine"
+location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_tool_aclpy
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[_StubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

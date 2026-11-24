@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
-location: "L1405"
+community: "asyncio"
+location: "L762"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_report
+  - community/asyncio
 ---
 
 # _fake_send()
 
 ## Connections
-- [[dot-test_image_scan_error_does_not_abort_report()]] - `contains` [EXTRACTED]
+- [[dot-test_no_telegram_send_when_no_token()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_report
+#graphify/code #graphify/EXTRACTED #community/asyncio

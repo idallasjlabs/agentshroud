@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/security/intel_report.py"
 type: "code"
-community: "_FakeUnixSocket"
-location: "L45"
+community: "ReportIntegrityError"
+location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUnixSocket
+  - community/ReportIntegrityError
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[IntelReportStore]] - `method` [EXTRACTED]
+- [[Path_23]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUnixSocket
+#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError

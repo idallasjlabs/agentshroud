@@ -16,7 +16,7 @@ members: 24
 - [[Internal State (`_stats`)]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Key Classes]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Module-level Constants]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
-- [[Purpose_172]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
+- [[Purpose_173]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Related_47]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Responsibilities_50]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md
 - [[Security Notes_6]] - document - docs/vault/02 - Modules/Proxy Layer/http_proxy.py.md

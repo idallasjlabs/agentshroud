@@ -8,8 +8,8 @@ members: 28
 **Members:** 28 nodes
 
 ## Members
-- [[dot-__call__()_12]] - code - gateway/tests/test_alert_telegram_relay.py
-- [[dot-__init__()_170]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__call__()_9]] - code - gateway/tests/test_alert_telegram_relay.py
+- [[dot-__init__()_161]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[Alert → owner Telegram relay (SCRUM-61). Event-bus subscriber that forwards…]] - rationale - gateway/ingest_api/alert_telegram_relay.py
 - [[AlertTelegramRelay]] - code - gateway/ingest_api/alert_telegram_relay.py
 - [[Subscribe to the gateway EventBus; relay security alerts to Telegram.]] - rationale - gateway/ingest_api/alert_telegram_relay.py
@@ -18,7 +18,7 @@ members: 28
 - [[_alert_event()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[_san()_3]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[alert_telegram_relay.py]] - code - gateway/ingest_api/alert_telegram_relay.py
-- [[asyncio_67]] - code
+- [[asyncio_64]] - code
 - [[test_alert_telegram_relay.py]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_async_sanitizer_supported()]] - code - gateway/tests/test_alert_telegram_relay.py
 - [[test_critical_alert_relayed_to_owner()]] - code - gateway/tests/test_alert_telegram_relay.py
@@ -46,15 +46,16 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_dot-_handle]]
-- 7 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_make_event]]
 - 2 edges to [[_COMMUNITY_test_api_alerts_endpoint_emits_bus_event]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_dot-flush]]
 - 1 edge to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
 - [[AlertTelegramRelay]] - degree 29, connects to 4 communities
-- [[test_alert_telegram_relay.py]] - degree 26, connects to 2 communities
-- [[asyncio_67]] - degree 17, connects to 1 community
+- [[test_alert_telegram_relay.py]] - degree 26, connects to 4 communities
+- [[asyncio_64]] - degree 17, connects to 1 community
 - [[_alert_event()]] - degree 16, connects to 1 community
 - [[test_subscribed_relay_receives_bus_emissions()]] - degree 6, connects to 1 community

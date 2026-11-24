@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "WebContentScanner"
+community: "prompt_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/prompt_guardpy
 ---
 
 # Enum
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
+- [[ThreatAction]] - `inherits` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

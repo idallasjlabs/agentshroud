@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/config.py"
+community: "RateLimitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/RateLimitGuard
 ---
 
 # fixture
 
 ## Connections
-- [[router()_1]] - `references` [EXTRACTED]
+- [[clock()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

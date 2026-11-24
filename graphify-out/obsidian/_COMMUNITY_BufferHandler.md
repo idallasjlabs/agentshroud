@@ -8,9 +8,9 @@ members: 4
 **Members:** 4 nodes
 
 ## Members
-- [[dot-emit()]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-emit()_1]] - code - gateway/web/dashboard_endpoints.py
 - [[BufferHandler]] - code - gateway/web/dashboard_endpoints.py
-- [[LogRecord_2]] - code
+- [[LogRecord_1]] - code
 - [[Logging handler that pushes records into the LogBuffer.]] - rationale - gateway/web/dashboard_endpoints.py
 
 ## Live Query (requires Dataview plugin)

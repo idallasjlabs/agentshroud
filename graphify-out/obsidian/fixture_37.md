@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_runtime_engines.py"
+community: "._make_proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/_make_proxy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-client()_1]] - `references` [EXTRACTED]
-- [[dot-client()_2]] - `references` [EXTRACTED]
-- [[dot-client()_3]] - `references` [EXTRACTED]
-- [[dot-client()_4]] - `references` [EXTRACTED]
+- [[_no_owner_mirror()]] - `references` [EXTRACTED]
+- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

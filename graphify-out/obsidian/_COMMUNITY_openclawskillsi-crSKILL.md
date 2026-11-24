@@ -17,9 +17,9 @@ members: 42
 - [[Output Format_90]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[Persona_47]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[Production-Specific Review Checks_7]] - document - docker/config/openclaw/skills/i-cr/SKILL.md
-- [[Purpose_165]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[Purpose_166]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Purpose_167]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Purpose_166]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Purpose_167]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Purpose_168]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[Quality Checklist_53]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
 - [[Related Skills_109]] - document - docker/config/openclaw/skills/i-mac/README.md
 - [[Related Skills_110]] - document - docker/config/openclaw/skills/i-mc/README.md
@@ -84,7 +84,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Daedalus — Concept Illustrator_10]]
 - 1 edge to [[_COMMUNITY_Skill Data Validation (DATA-VAL)_7]]
 - 1 edge to [[_COMMUNITY_Skill Git Workflow Guardian (GIT-GUARD)_7]]
-- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)]]
+- 1 edge to [[_COMMUNITY_Skill MCP Tools Usage (MCP-TOOLS)_2]]
 - 1 edge to [[_COMMUNITY_Skill Pull Request (PR) Generator_7]]
 - 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor_7]]
 - 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)_7]]

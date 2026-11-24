@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestOAuthInjection"
+community: "test_cron_jobs_prompts.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOAuthInjection
+  - community/test_cron_jobs_promptspy
 ---
 
 # Path
 
 ## Connections
-- [[dot-_make_anthropic_injector()]] - `references` [EXTRACTED]
+- [[_load_jobs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOAuthInjection
+#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy

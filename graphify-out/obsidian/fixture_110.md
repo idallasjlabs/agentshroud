@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "_is_op_reference_allowed"
+community: "test_edge_e2e_sdk.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_op_reference_allowed
+  - community/test_edge_e2e_sdkpy
 ---
 
 # fixture
 
 ## Connections
-- [[client()_16]] - `references` [EXTRACTED]
+- [[Clock]] - `references` [EXTRACTED]
+- [[store()_3]] - `references` [EXTRACTED]
+- [[svc()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

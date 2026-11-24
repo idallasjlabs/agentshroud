@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_delegation.py"
 type: "code"
-community: "TestListAndCleanup"
+community: "DelegationPrivilege"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestListAndCleanup
+  - community/DelegationPrivilege
 ---
 
 # .test_get_delegations_for_user()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestListAndCleanup]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestListAndCleanup
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

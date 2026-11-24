@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/DEVICE_PAIRING.md"
 type: "document"
-community: "Common Scenarios"
+community: "AgentShroud Device Pairing Management"
 location: "L208"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Common_Scenarios
+  - community/AgentShroud_Device_Pairing_Management
 ---
 
 # Common Scenarios
@@ -19,4 +19,4 @@ tags:
 - [[Scenario 4 LostStolen Device]] - `contains` [EXTRACTED]
 - [[Scenario 5 Clear All Devices (Nuclear Option)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Common_Scenarios
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Device_Pairing_Management

@@ -8,8 +8,8 @@ members: 106
 **Members:** 106 nodes
 
 ## Members
-- [[dot-__init__()_106]] - code - gateway/security/tool_result_sanitizer.py
-- [[dot-__init__()_107]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-__init__()_108]] - code - gateway/security/tool_result_sanitizer.py
+- [[dot-__init__()_109]] - code - gateway/security/tool_result_sanitizer.py
 - [[dot-_apply_enforcement()]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-_close_middleware_after()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-_extract_dict_content()]] - code - gateway/security/tool_result_sanitizer.py
@@ -25,10 +25,11 @@ members: 106
 - [[dot-mock_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-sanitize()_2]] - code - gateway/ingest_api/sanitizer.py
 - [[dot-sanitize_tool_result()]] - code - gateway/security/tool_result_sanitizer.py
-- [[dot-sanitizer()_2]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-sanitizer()_3]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-set_config()]] - code - gateway/ingest_api/middleware.py
 - [[dot-test_all_production_tool_overrides_meet_floor()]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_default_config()_2]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_config_with_tool_result_pii()]] - code - gateway/tests/test_tool_result_pii.py
+- [[dot-test_default_config()_3]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_default_pii_config_meets_floor()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_email_content_scanning()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_empty_content_handling()]] - code - gateway/tests/test_tool_result_pii.py
@@ -37,7 +38,6 @@ members: 106
 - [[dot-test_extract_scannable_content_string()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_icloud_contact_scanning()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_initialization()_2]] - code - gateway/tests/test_tool_result_pii.py
-- [[dot-test_middleware_set_config()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_middleware_set_config_disabled()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_middleware_set_config_missing()]] - code - gateway/tests/test_tool_result_pii.py
 - [[dot-test_process_tool_result_no_sanitizer()]] - code - gateway/tests/test_tool_result_pii.py
@@ -65,20 +65,20 @@ members: 106
 - [[Reconstruct the tool result with sanitized content]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Recursively extract string content from dictionary]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[RedactionDetail]] - code - gateway/ingest_api/models.py
-- [[RedactionResult]] - code - gateway/ingest_api/models.py
+- [[RedactionResult_1]] - code - gateway/ingest_api/models.py
 - [[Result of PII sanitization]] - rationale - gateway/ingest_api/models.py
 - [[Return the effective confidence threshold for one call (raise-only). The…]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Sanitize a tool result for PII before it reaches the agent Args tool_name…]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Sanitize using Microsoft Presidio Wraps synchronous Presidio calls in…]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Sanitize using regex patterns (fallback mode) Detects - US_SSN XXX-XX-XXXX -…]] - rationale - gateway/ingest_api/sanitizer.py
 - [[Set configuration and initialize tool result sanitizer]] - rationale - gateway/ingest_api/middleware.py
+- [[Test configuration loading and validation]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test content extraction from dictionary results]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test content extraction from list results]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test content extraction from string results]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test default configuration]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test handling of empty or whitespace-only content]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test integration with MiddlewareManager]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Test middleware configuration setup]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test middleware configuration with disabled tool result PII]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test middleware configuration with missing tool_result_pii config]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test realistic tool result scenarios]] - rationale - gateway/tests/test_tool_result_pii.py
@@ -89,6 +89,7 @@ members: 106
 - [[Test scanning email content for sensitive data]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test scanning iCloud contact data for PII]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test successful tool result processing]] - rationale - gateway/tests/test_tool_result_pii.py
+- [[Test that configuration includes tool result PII settings]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test that different tools get different PII configurations]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test the ToolResultPIIConfig configuration class]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test the ToolResultSanitizer class]] - rationale - gateway/tests/test_tool_result_pii.py
@@ -96,12 +97,12 @@ members: 106
 - [[Test tool result processing when sanitizer raises an exception]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Test tool-specific configuration overrides]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[TestConfidenceFloor]] - code - gateway/tests/test_tool_result_pii.py
+- [[TestConfigurationLoading]] - code - gateway/tests/test_tool_result_pii.py
 - [[TestMiddlewareIntegration]] - code - gateway/tests/test_tool_result_pii.py
 - [[TestRealWorldScenarios]] - code - gateway/tests/test_tool_result_pii.py
 - [[TestToolResultPIIConfig]] - code - gateway/tests/test_tool_result_pii.py
 - [[TestToolResultSanitizer]] - code - gateway/tests/test_tool_result_pii.py
 - [[Tests for Tool Result PII Sanitization Comprehensive tests for the tool result…]] - rationale - gateway/tests/test_tool_result_pii.py
-- [[Tool Result PII Sanitizer Wraps the existing PIISanitizer for tool-result-…]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Tool result PII configuration for tests]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[Tool result PII sanitizer with per-tool configuration]] - rationale - gateway/security/tool_result_sanitizer.py
 - [[Tool result sanitizer instance for tests]] - rationale - gateway/tests/test_tool_result_pii.py
@@ -109,10 +110,9 @@ members: 106
 - [[ToolResultSanitizer_1]] - code - gateway/security/tool_result_sanitizer.py
 - [[Track every MiddlewareManager instantiated in this class and close its sqlite-…]] - rationale - gateway/tests/test_tool_result_pii.py
 - [[_analyze_and_anonymize()]] - code - gateway/ingest_api/sanitizer.py
-- [[asyncio_46]] - code
-- [[fixture_70]] - code
+- [[asyncio_45]] - code
+- [[fixture_77]] - code
 - [[test_tool_result_pii.py]] - code - gateway/tests/test_tool_result_pii.py
-- [[tool_result_sanitizer.py]] - code - gateway/security/tool_result_sanitizer.py
 - [[tracker()]] - code - gateway/tests/test_tool_result_pii.py
 
 ## Live Query (requires Dataview plugin)
@@ -123,16 +123,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 32 edges to [[_COMMUNITY_PIIConfig]]
+- 34 edges to [[_COMMUNITY_lifespan.py]]
 - 11 edges to [[_COMMUNITY_MiddlewareManager]]
-- 6 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 6 edges to [[_COMMUNITY_ingest_apimodels.py]]
+- 10 edges to [[_COMMUNITY_GatewayConfig]]
 - 5 edges to [[_COMMUNITY_AsyncMock]]
-- 4 edges to [[_COMMUNITY_middleware.py]]
+- 3 edges to [[_COMMUNITY_middleware.py]]
 
 ## Top bridge nodes
-- [[test_tool_result_pii.py]] - degree 18, connects to 5 communities
-- [[tool_result_sanitizer.py]] - degree 11, connects to 4 communities
+- [[test_tool_result_pii.py]] - degree 18, connects to 4 communities
 - [[ToolResultPIIConfig]] - degree 21, connects to 3 communities
 - [[ToolResultSanitizer_1]] - degree 21, connects to 3 communities
-- [[RedactionResult]] - degree 22, connects to 2 communities
+- [[RedactionResult_1]] - degree 22, connects to 2 communities
+- [[RedactionDetail]] - degree 16, connects to 2 communities

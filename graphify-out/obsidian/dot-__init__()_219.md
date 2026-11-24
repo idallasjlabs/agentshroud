@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "_TrustCaptor"
-location: "L404"
+community: "HTTPForwarder"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_TrustCaptor
+  - community/HTTPForwarder
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[ForwarderConfig]] - `calls` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_TrustCaptor
+#graphify/code #graphify/EXTRACTED #community/HTTPForwarder

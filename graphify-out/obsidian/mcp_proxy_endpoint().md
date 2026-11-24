@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalRequest]] - `uses` [INFERRED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - `rationale_for` [EXTRACTED]
 - [[MCPProxyRequest]] - `references` [EXTRACTED]
 - [[MCPToolCall]] - `uses` [INFERRED]

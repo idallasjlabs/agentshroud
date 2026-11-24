@@ -1,18 +1,18 @@
 ---
 type: community
-members: 193
+members: 197
 ---
 
 # test_soc_router_coverage.py
 
-**Members:** 193 nodes
+**Members:** 197 nodes
 
 ## Members
+- [[dot-__init__()_38]] - code - gateway/tests/test_soc_router_coverage.py
+- [[dot-__init__()_39]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-__init__()_40]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-__init__()_41]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-__init__()_42]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_43]] - code - gateway/tests/test_soc_router_coverage.py
-- [[dot-__init__()_44]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-get_pending()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-get_recent_entries()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[dot-is_group_admin()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -25,6 +25,7 @@ members: 193
 - [[FakeAuditStore]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeCaller]] - code - gateway/tests/test_soc_router_coverage.py
 - [[FakeGroup]] - code - gateway/tests/test_soc_router_coverage.py
+- [[Launch security-scan.sh for the given scanner and discard the handle (fire-and-…]] - rationale - gateway/soc/router.py
 - [[Mirrors EnhancedApprovalQueue's public surface…]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[Mock container engine + two configured bots for the shared kill switch.]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[Query GitHub releases API. Returns {tag_name ..., html_url ...} or…]] - rationale - gateway/soc/router.py
@@ -33,9 +34,9 @@ members: 193
 - [[Stands in for SCLCaller RBAC require() is a no-op, owner is switchable.]] - rationale - gateway/tests/test_soc_router_coverage.py
 - [[_FakeDecideQueue]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_Svc]] - code - gateway/tests/test_soc_router_coverage.py
+- [[__init__()_7]] - code - gateway/tests/test_soc_router_coverage.py
 - [[__init__()_8]] - code - gateway/tests/test_soc_router_coverage.py
 - [[__init__()_9]] - code - gateway/tests/test_soc_router_coverage.py
-- [[__init__()_10]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_boom()_2]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_boom()_3]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_boom()_4]] - code - gateway/tests/test_soc_router_coverage.py
@@ -53,21 +54,22 @@ members: 193
 - [[_fake_ssh()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_fetch_latest_release()]] - code - gateway/soc/router.py
 - [[_file_hash()]] - code - gateway/soc/router.py
+- [[_launch_scan_background()]] - code - gateway/soc/router.py
 - [[_make_service_manager()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_no_engine()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_pending_item()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[_unix_call()]] - code - gateway/soc/router.py
-- [[client()_6]] - code - gateway/tests/test_soc_router_coverage.py
-- [[connect()_4]] - code - gateway/soc/router.py
+- [[client()_5]] - code - gateway/tests/test_soc_router_coverage.py
+- [[connect()]] - code - gateway/soc/router.py
 - [[fake_endpoint()]] - code - gateway/tests/test_soc_router_coverage.py
-- [[fixture_27]] - code
+- [[fixture_28]] - code
 - [[get_group_memory()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[get_logs()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[get_pending()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[holder()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[ks_engine()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[list_services()_1]] - code - gateway/tests/test_soc_router_coverage.py
-- [[parametrize_8]] - code
+- [[parametrize_4]] - code
 - [[restart_service()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[start_service()_1]] - code - gateway/tests/test_soc_router_coverage.py
 - [[state()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -145,6 +147,8 @@ members: 193
 - [[test_killswitch_shutdown_engine_failure_is_not_ok()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_killswitch_shutdown_requires_confirm()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_killswitch_shutdown_runs_compose_down()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_exec_failure()]] - code - gateway/tests/test_soc_router_coverage.py
+- [[test_launch_scan_background_success()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_list_bots_default_and_configured()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_list_delegations()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[test_list_groups_empty_and_populated()]] - code - gateway/tests/test_soc_router_coverage.py
@@ -211,17 +215,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 25 edges to [[_COMMUNITY_AsyncMock]]
-- 18 edges to [[_COMMUNITY_socrouter.py]]
+- 19 edges to [[_COMMUNITY_socrouter.py]]
 - 3 edges to [[_COMMUNITY_test_benchmark_regression.py]]
-- 2 edges to [[_COMMUNITY_ApprovalStore]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_soc_dashboard]]
 - 1 edge to [[_COMMUNITY_test_dashboard_fallback_when_template_missing]]
-- 1 edge to [[_COMMUNITY_fastapi]]
-- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
 - [[test_soc_router_coverage.py]] - degree 175, connects to 8 communities
 - [[FakeCaller]] - degree 11, connects to 1 community
 - [[_docker_exec_bot()]] - degree 7, connects to 1 community
 - [[_fetch_latest_release()]] - degree 5, connects to 1 community
-- [[_pending_item()]] - degree 3, connects to 1 community
+- [[_launch_scan_background()]] - degree 5, connects to 1 community

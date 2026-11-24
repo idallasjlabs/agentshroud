@@ -32,7 +32,7 @@ members: 77
 - [[dot-test_single_attempt_never_sleeps()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[A fetch that never returns must not hang the unattended run. 2026-10-16 the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[All published versions of an npm package (via the npm CLI).]] - rationale - scripts/discover_upstream_versions.py
-- [[Any_61]] - code
+- [[Any_57]] - code
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all…]] - rationale - scripts/discover_upstream_versions.py
 - [[Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…]] - rationale - scripts/discover_upstream_versions.py
 - [[Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean.]] - rationale - gateway/tests/test_discover_upstream_versions.py
@@ -59,9 +59,9 @@ members: 77
 - [[_guarded_fetch()]] - code - scripts/discover_upstream_versions.py
 - [[_ipv4_only()]] - code - scripts/discover_upstream_versions.py
 - [[_retry()]] - code - scripts/discover_upstream_versions.py
-- [[_run()_10]] - code - scripts/discover_upstream_versions.py
+- [[_run()_11]] - code - scripts/discover_upstream_versions.py
 - [[always_fails()]] - code - gateway/tests/test_discover_upstream_versions.py
-- [[boom()_15]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[boom()_14]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[discover()]] - code - scripts/discover_upstream_versions.py
 - [[discover() applies the retry to both sources, independently.]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[discover_upstream_versions.py]] - code - scripts/discover_upstream_versions.py
@@ -76,7 +76,7 @@ members: 77
 - [[hub()_2]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[hub()_3]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[latest''main' float and would defeat the whole point of pinning.]] - rationale - gateway/tests/test_discover_upstream_versions.py
-- [[main()_26]] - code - scripts/discover_upstream_versions.py
+- [[main()_25]] - code - scripts/discover_upstream_versions.py
 - [[npm()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[pick_latest_hermes_tag()]] - code - scripts/discover_upstream_versions.py
 - [[recorder()]] - code - gateway/tests/test_discover_upstream_versions.py
@@ -95,14 +95,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 6 edges to [[_COMMUNITY_pick_latest_stable]]
-- 4 edges to [[_COMMUNITY_upgrade-2026-09-21]]
+- 5 edges to [[_COMMUNITY_upgrade-2026-09-21]]
 - 1 edge to [[_COMMUNITY_TestFetchDockerhubTagsUsesCurl]]
-- 1 edge to [[_COMMUNITY_sunday-upgrade.sh]]
 - 1 edge to [[_COMMUNITY_plan_remediation]]
 - 1 edge to [[_COMMUNITY_upgrade-2026-10-12]]
 
 ## Top bridge nodes
-- [[discover_upstream_versions.py]] - degree 20, connects to 5 communities
+- [[discover_upstream_versions.py]] - degree 20, connects to 4 communities
 - [[test_discover_upstream_versions.py]] - degree 11, connects to 2 communities
 - [[discover()]] - degree 14, connects to 1 community
 - [[fetch_dockerhub_tags()]] - degree 4, connects to 1 community

@@ -10,7 +10,7 @@ members: 20
 ## Members
 - [[dot-test_convenience_function()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_custom_config()_3]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
-- [[dot-test_default_config()_6]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
+- [[dot-test_default_config()_7]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_performance_with_large_content()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[dot-test_realistic_web_scraping_result()]] - code - gateway/tests/test_tool_result_sanitizer_enhanced.py
 - [[Configuration for tool result markdown sanitization.]] - rationale - gateway/security/tool_result_sanitizer_enhanced.py

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
+community: "test_mcp_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/test_mcp_proxypy
 ---
 
 # test_mcp_proxy_coverage.py
@@ -51,4 +51,4 @@ tags:
 - [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

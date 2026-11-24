@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "FakeRBAC"
-location: "L5606"
+community: "make_fake_socket_module"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/make_fake_socket_module
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_non_owner_activity_is_tracked_for_unknown_user()]] - `contains` [EXTRACTED]
+- [[make_fake_socket_module()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module

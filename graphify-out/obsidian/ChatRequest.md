@@ -1,19 +1,19 @@
 ---
 source_file: "chatbot/main.py"
 type: "code"
-community: "chat"
+community: "chatbot/main.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chat
+  - community/chatbot/mainpy
 ---
 
 # ChatRequest
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_14]] - `inherits` [EXTRACTED]
 - [[chat()]] - `references` [EXTRACTED]
 - [[chatbotmain.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chat
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

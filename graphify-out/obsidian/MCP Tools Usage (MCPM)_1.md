@@ -12,7 +12,7 @@ tags:
 # MCP Tools Usage (MCPM)
 
 ## Connections
-- [[Purpose_125]] - `contains` [EXTRACTED]
+- [[Purpose_123]] - `contains` [EXTRACTED]
 - [[Related Skills_55]] - `contains` [EXTRACTED]
 - [[Usage_65]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcpmREADME]] - `contains` [EXTRACTED]

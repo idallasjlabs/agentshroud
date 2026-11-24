@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EgressEvent"
+community: "test_mcp_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/test_mcp_proxypy
 ---
 
 # fixture
 
 ## Connections
-- [[default_config()_1]] - `references` [EXTRACTED]
-- [[monitor()]] - `references` [EXTRACTED]
-- [[monitor_config()_1]] - `references` [EXTRACTED]
+- [[config()_1]] - `references` [EXTRACTED]
+- [[mgr()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

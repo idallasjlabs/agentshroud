@@ -1,11 +1,11 @@
 ---
 type: community
-members: 46
+members: 44
 ---
 
 # TestMultiTurnTracker
 
-**Members:** 46 nodes
+**Members:** 44 nodes
 
 ## Members
 - [[dot-test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -14,8 +14,7 @@ members: 46
 - [[dot-test_blocked_session_behavior()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_disabled_tracker()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_edge_cases()_1]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_edge_cases()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
 - [[dot-test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
@@ -49,7 +48,6 @@ members: 46
 - [[Test getting session statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test proper initialization of MultiTurnTracker.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test session reset functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test that disabled tracker doesn't track or score.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test that scores accumulate across turns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test that sessions get blocked at high scores.]] - rationale - gateway/tests/test_multi_turn_tracker.py
 - [[Test threshold-based warning system.]] - rationale - gateway/tests/test_multi_turn_tracker.py
@@ -63,8 +61,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 3 edges to [[_COMMUNITY_multi_turn_tracker.py]]
+- 2 edges to [[_COMMUNITY_MultiTurnTracker]]
 
 ## Top bridge nodes
-- [[TestMultiTurnTracker]] - degree 27, connects to 1 community
-- [[dot-test_disabled_tracker()]] - degree 3, connects to 1 community
+- [[TestMultiTurnTracker]] - degree 27, connects to 2 communities

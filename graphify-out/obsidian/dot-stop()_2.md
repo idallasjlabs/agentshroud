@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
-location: "L137"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # .stop()
 
 ## Connections
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[Signal the run loop to exit.]] - `rationale_for` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

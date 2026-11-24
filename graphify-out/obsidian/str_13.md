@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "prompt_guard.py"
+community: "SubagentMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/SubagentMonitor
 ---
 
 # str
 
 ## Connections
-- [[ThreatAction]] - `inherits` [EXTRACTED]
+- [[SubagentEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

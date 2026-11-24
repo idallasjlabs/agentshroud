@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "rationale"
-community: "_skills_reload_impl"
+community: "KillSwitchError"
 location: "L962"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/KillSwitchError
 ---
 
 # Raised when SkillGuard blocks a dangerous skill tree before deploy.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SkillGuardBlocked]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/rationale #graphify/EXTRACTED #community/KillSwitchError

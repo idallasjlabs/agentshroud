@@ -1,18 +1,19 @@
 ---
-source_file: "skills/openclaw/nano-banana-pro/scripts/generate_image.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "generate_image.py"
-location: "L32"
+community: "cve_prefetch.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_imagepy
+  - community/cve_prefetchpy
 ---
 
 # main()
 
 ## Connections
-- [[generate_image.py]] - `contains` [EXTRACTED]
-- [[get_api_key()]] - `calls` [EXTRACTED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_imagepy
+#graphify/code #graphify/EXTRACTED #community/cve_prefetchpy

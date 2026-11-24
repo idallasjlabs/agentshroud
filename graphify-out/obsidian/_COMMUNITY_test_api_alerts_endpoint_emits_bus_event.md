@@ -21,8 +21,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 2 edges to [[_COMMUNITY_AlertTelegramRelay]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[test_api_alerts_endpoint_emits_bus_event()]] - degree 7, connects to 2 communities
+- [[test_api_alerts_endpoint_emits_bus_event()]] - degree 7, connects to 3 communities

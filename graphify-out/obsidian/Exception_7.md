@@ -11,6 +11,6 @@ tags:
 # Exception
 
 ## Connections
-- [[SecurityError_2]] - `inherits` [EXTRACTED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

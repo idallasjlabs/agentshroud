@@ -22,7 +22,7 @@ tags:
 - [[TestVerifyEntry]] - `contains` [EXTRACTED]
 - [[TestVerifyReport]] - `contains` [EXTRACTED]
 - [[Tests for the citation verifier (SCRUM-75). The verifier ENFORCES that every…]] - `rationale_for` [EXTRACTED]
-- [[_FakeFetcher]] - `contains` [EXTRACTED]
+- [[_FakeFetcher_1]] - `contains` [EXTRACTED]
 - [[_FakeStreamResponse_1]] - `contains` [EXTRACTED]
 - [[citation_verifier.py]] - `imports_from` [EXTRACTED]
 - [[intel_report.py]] - `imports_from` [EXTRACTED]

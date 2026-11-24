@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_heuristic_classifier.py"
+source_file: "gateway/tests/test_resource_guard.py"
 type: "code"
-community: "HeuristicClassifier"
-location: "L13"
+community: "ResourceGuard"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/ResourceGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[HeuristicClassifier]] - `calls` [EXTRACTED]
-- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+- [[ResourceGuard]] - `calls` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
+- [[TestResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

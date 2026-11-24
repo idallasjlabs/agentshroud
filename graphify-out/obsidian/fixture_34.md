@@ -12,7 +12,7 @@ tags:
 
 ## Connections
 - [[dot-dns_filter()]] - `references` [EXTRACTED]
-- [[default_config()]] - `references` [EXTRACTED]
+- [[default_config()_1]] - `references` [EXTRACTED]
 - [[dns_filter()]] - `references` [EXTRACTED]
 - [[monitor_config()]] - `references` [EXTRACTED]
 - [[monitor_filter()]] - `references` [EXTRACTED]

@@ -17,7 +17,7 @@ tags:
 - [[dot-_log_redaction_audit()]] - `calls` [EXTRACTED]
 - [[dot-_reconstruct_result()]] - `calls` [EXTRACTED]
 - [[Any_39]] - `references` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
 - [[Sanitize a tool result for PII before it reaches the agent Args tool_name…]] - `rationale_for` [EXTRACTED]
 - [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 

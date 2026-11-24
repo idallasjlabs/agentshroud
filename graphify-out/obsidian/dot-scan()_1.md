@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/security/file_sandbox.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "middleware.py"
-location: "L52"
+community: "CanaryTripwire"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/CanaryTripwire
 ---
 
 # .scan()
 
 ## Connections
-- [[PIIFinding]] - `calls` [EXTRACTED]
-- [[PIIScanResult]] - `calls` [EXTRACTED]
-- [[PIIScanner]] - `method` [EXTRACTED]
+- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
+- [[dot-_check_plain()]] - `calls` [EXTRACTED]
+- [[dot-_record()_1]] - `calls` [EXTRACTED]
+- [[dot-scan_response()_2]] - `calls` [EXTRACTED]
+- [[CanaryResult_2]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

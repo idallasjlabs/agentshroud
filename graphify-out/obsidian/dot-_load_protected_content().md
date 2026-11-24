@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "middleware.py"
+community: "run"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # ._load_protected_content()
 
 ## Connections
-- [[dot-__init__()_115]] - `calls` [EXTRACTED]
+- [[dot-__init__()_3]] - `calls` [EXTRACTED]
 - [[dot-add_protected_content()]] - `calls` [EXTRACTED]
 - [[Load protected content from configured sources.]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/run

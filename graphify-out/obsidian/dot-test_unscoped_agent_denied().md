@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyVault"
+community: "TestKeyScoping"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/TestKeyScoping
 ---
 
 # .test_unscoped_agent_denied()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyScoping]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/TestKeyScoping

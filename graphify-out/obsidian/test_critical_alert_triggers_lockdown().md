@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[FalcoAlertWatcher]] - `uses` [INFERRED]
 - [[_make_alert()]] - `calls` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_81]] - `references` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

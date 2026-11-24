@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "TestCheckClamd"
-location: "L167"
+community: "ServiceManager"
+location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckClamd
+  - community/ServiceManager
 ---
 
 # connect()
 
 ## Connections
-- [[dot-test_running_via_socket()]] - `contains` [EXTRACTED]
+- [[dot-_logs_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckClamd
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

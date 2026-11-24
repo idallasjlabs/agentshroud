@@ -12,7 +12,7 @@ tags:
 # CorrelationSummary
 
 ## Connections
-- [[dot-to_dict()_10]] - `method` [EXTRACTED]
+- [[dot-to_dict()_9]] - `method` [EXTRACTED]
 - [[build_correlation_summary()]] - `calls` [EXTRACTED]
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 

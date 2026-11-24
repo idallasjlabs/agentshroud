@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan"
+community: "BufferHandler"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/BufferHandler
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[dot-emit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/BufferHandler

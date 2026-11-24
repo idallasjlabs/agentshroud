@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "test_memory_lifecycle.py"
+community: "middleware.py"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_memory_lifecyclepy
+  - community/middlewarepy
 ---
 
 # MemoryIntegrityConfig
 
 ## Connections
-- [[dot-__init__()_33]] - `references` [EXTRACTED]
-- [[dot-setup_method()_2]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `calls` [EXTRACTED]
+- [[dot-__init__()_154]] - `references` [EXTRACTED]
+- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_5]] - `calls` [EXTRACTED]
 - [[Configuration for memory file integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
 - [[TestMemoryIntegrityConfig]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[memory_integrity.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

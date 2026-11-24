@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
+community: "asyncio"
 location: "L1280"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_make_report
+  - community/asyncio
 ---
 
 # _fake_trivy_scan()
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_image_scans_run_for_each_target()]] - `indirect_call` [INFERRED]
 - [[_make_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_report
+#graphify/code #graphify/INFERRED #community/asyncio

@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_daily_cve_report.py"
+community: "TestProductionCompose"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_daily_cve_reportpy
+  - community/TestProductionCompose
 ---
 
 # fixture
 
 ## Connections
-- [[dot-_no_docker()_1]] - `references` [EXTRACTED]
-- [[dot-_no_docker()]] - `references` [EXTRACTED]
-- [[_isolated_alert_state()]] - `references` [EXTRACTED]
+- [[dot-compose()]] - `references` [EXTRACTED]
+- [[dot-compose()_1]] - `references` [EXTRACTED]
+- [[dot-compose()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

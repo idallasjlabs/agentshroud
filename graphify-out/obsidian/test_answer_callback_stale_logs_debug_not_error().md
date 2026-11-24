@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[EgressTelegramNotifier]] - `uses` [INFERRED]
 - [[_stale_callback_err()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_24]] - `references` [EXTRACTED]
 - [[test_egress_callback_stale.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_egress_callback_stalepy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L30"
+community: "_wrap_response"
+location: "L157"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/_wrap_response
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockValidator]] - `method` [EXTRACTED]
+- [[FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

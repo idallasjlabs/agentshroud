@@ -15,6 +15,6 @@ tags:
 - [[TestPinIsValidated]] - `method` [EXTRACTED]
 - [[_run()]] - `calls` [EXTRACTED]
 - [[_versions_file()]] - `calls` [EXTRACTED]
-- [[parametrize_2]] - `references` [EXTRACTED]
+- [[parametrize]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run

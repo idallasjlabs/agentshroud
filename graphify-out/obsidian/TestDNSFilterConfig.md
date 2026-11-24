@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "TestDNSFilterConfig"
+community: "DNSFilterConfig"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDNSFilterConfig
+  - community/DNSFilterConfig
 ---
 
 # TestDNSFilterConfig
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_strict_has_allowlist()]] - `method` [EXTRACTED]
 - [[test_dns_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig

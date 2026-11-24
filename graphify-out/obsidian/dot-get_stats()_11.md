@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Any_67]] - `references` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
 - [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

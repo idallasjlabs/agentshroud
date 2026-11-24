@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AlertStore]] - `method` [EXTRACTED]
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/LogBuffer

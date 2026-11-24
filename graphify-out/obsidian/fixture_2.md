@@ -11,6 +11,7 @@ tags:
 # fixture
 
 ## Connections
-- [[client()_1]] - `references` [EXTRACTED]
+- [[client()]] - `references` [EXTRACTED]
+- [[sync_client()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app

@@ -12,13 +12,13 @@ tags:
 # PermissionResult
 
 ## Connections
-- [[dot-__init__()_2]] - `calls` [EXTRACTED]
+- [[dot-__init__()_175]] - `calls` [EXTRACTED]
 - [[dot-check_permission()]] - `calls` [EXTRACTED]
 - [[dot-check_tool_permission()]] - `calls` [EXTRACTED]
 - [[dot-list_users_and_roles()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
 - [[Result of permission check.]] - `rationale_for` [EXTRACTED]
-- [[_FakeRBAC]] - `uses` [INFERRED]
+- [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[rbac.py]] - `contains` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 

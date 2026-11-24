@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_dashboard.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "test_dashboard.py"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_dashboardpy
 ---
 
 # test_collaborators_endpoint_reads_configured_contributor_sources()
 
 ## Connections
-- [[asyncio_69]] - `references` [EXTRACTED]
+- [[asyncio_2]] - `references` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_dashboardpy

@@ -8,8 +8,8 @@ members: 35
 **Members:** 35 nodes
 
 ## Members
-- [[dot-__call__()_10]] - code - gateway/tests/test_jira_weekly_review.py
-- [[dot-__init__()_141]] - code - gateway/tests/test_jira_weekly_review.py
+- [[dot-__call__()_8]] - code - gateway/tests/test_jira_weekly_review.py
+- [[dot-__init__()_132]] - code - gateway/tests/test_jira_weekly_review.py
 - [[Records POSTs; returns op-proxy secrets then a 201 for the comment.]] - rationale - gateway/tests/test_jira_weekly_review.py
 - [[Tests for the SCRUM-81 Hermes weekly Jira review script. The script lives in…]] - rationale - gateway/tests/test_jira_weekly_review.py
 - [[_MockTransport_1]] - code - gateway/tests/test_jira_weekly_review.py

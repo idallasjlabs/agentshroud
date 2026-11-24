@@ -1,19 +1,23 @@
 ---
-source_file: "scripts/soak_status.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "classify"
-location: "L76"
+community: "migrate-cve-registry-ghsa.py"
+location: "L516"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/classify
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # main()
 
 ## Connections
-- [[check-soak-status.sh]] - `references` [EXTRACTED]
-- [[classify()_1]] - `calls` [EXTRACTED]
-- [[soak_status.py]] - `contains` [EXTRACTED]
+- [[build_id_plan()]] - `calls` [EXTRACTED]
+- [[compute_stats()]] - `calls` [EXTRACTED]
+- [[gather_advisories()]] - `calls` [EXTRACTED]
+- [[load_registry()]] - `calls` [EXTRACTED]
+- [[migrate-cve-registry-ghsa.py]] - `contains` [EXTRACTED]
+- [[render_manual_review()]] - `calls` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/classify
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

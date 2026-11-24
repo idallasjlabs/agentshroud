@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "URLAnalyzer"
+community: "PrivacyPolicyEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/PrivacyPolicyEnforcer
 ---
 
 # str
 
 ## Connections
-- [[URLVerdict]] - `inherits` [EXTRACTED]
+- [[ServicePrivacy]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

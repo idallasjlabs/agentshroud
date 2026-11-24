@@ -12,8 +12,8 @@ tags:
 # AuditChain
 
 ## Connections
-- [[dot-__init__()_184]] - `calls` [EXTRACTED]
-- [[dot-__init__()_183]] - `method` [EXTRACTED]
+- [[dot-__init__()_180]] - `calls` [EXTRACTED]
+- [[dot-__init__()_179]] - `method` [EXTRACTED]
 - [[dot-__len__()_1]] - `method` [EXTRACTED]
 - [[dot-append()_1]] - `method` [EXTRACTED]
 - [[dot-append_block()]] - `method` [EXTRACTED]

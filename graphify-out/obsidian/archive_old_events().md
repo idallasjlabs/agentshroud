@@ -23,7 +23,7 @@ tags:
 - [[dot-test_vacuum_reduces_file_size_after_bulk_delete()]] - `calls` [EXTRACTED]
 - [[dot-test_waits_out_a_concurrent_writer_lock_instead_of_failing()]] - `calls` [EXTRACTED]
 - [[Move audit_events older than cutoff_days into archive_path, then delete +…]] - `rationale_for` [EXTRACTED]
-- [[Path_43]] - `references` [EXTRACTED]
+- [[Path_44]] - `references` [EXTRACTED]
 - [[_cli()]] - `calls` [EXTRACTED]
 - [[audit_archive.py]] - `contains` [EXTRACTED]
 - [[datetime_5]] - `references` [EXTRACTED]

@@ -16,7 +16,7 @@ tags:
 - [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[PIISanitizer]] - `method` [EXTRACTED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
 - [[Sanitize using regex patterns (fallback mode) Detects - US_SSN XXX-XX-XXXX -…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "._get_engine"
-location: "L410"
+community: "scanner_integration.py"
+location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/scanner_integrationpy
 ---
 
 # connect()
 
 ## Connections
-- [[dot-_logs_via_socket()]] - `contains` [EXTRACTED]
+- [[_is_container_running()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

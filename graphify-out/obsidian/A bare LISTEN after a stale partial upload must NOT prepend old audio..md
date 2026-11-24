@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "asyncio"
+community: "test_voice_gateway.py"
 location: "L3397"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_voice_gatewaypy
 ---
 
 # A bare LISTEN after a stale partial upload must NOT prepend old audio.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_bare_listen_starts_fresh()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy

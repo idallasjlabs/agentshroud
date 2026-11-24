@@ -12,7 +12,7 @@ tags:
 # CrossBotTrustLedger
 
 ## Connections
-- [[dot-__init__()_102]] - `method` [EXTRACTED]
+- [[dot-__init__()_105]] - `method` [EXTRACTED]
 - [[dot-_propagate()]] - `method` [EXTRACTED]
 - [[dot-build_full_mesh()]] - `method` [EXTRACTED]
 - [[dot-get_incidents()]] - `method` [EXTRACTED]

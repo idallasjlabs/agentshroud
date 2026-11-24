@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # asyncio
@@ -28,4 +28,4 @@ tags:
 - [[test_telegram_blocks_password()]] - `references` [EXTRACTED]
 - [[test_telegram_blocks_ssh_private_key()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

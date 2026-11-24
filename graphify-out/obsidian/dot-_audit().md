@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-check_request()]] - `calls` [EXTRACTED]
-- [[dot-scan_response()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
+- [[dot-scan_response()_1]] - `calls` [EXTRACTED]
+- [[Any_5]] - `references` [EXTRACTED]
 - [[Record an audit entry in the hash chain.]] - `rationale_for` [EXTRACTED]
 - [[WebProxy]] - `method` [EXTRACTED]
 

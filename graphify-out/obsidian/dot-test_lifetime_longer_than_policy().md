@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "TestRejected"
+community: "test_edge_e2e_sdk.py"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRejected
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .test_lifetime_longer_than_policy()
@@ -15,4 +15,4 @@ tags:
 - [[TestRejected]] - `method` [EXTRACTED]
 - [[_forge()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRejected
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

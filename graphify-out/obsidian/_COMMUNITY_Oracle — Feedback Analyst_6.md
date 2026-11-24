@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_61]] - document - .omp/agents/oracle.md
 - [[Persona_40]] - document - .omp/agents/oracle.md
 - [[Quality Checklist_46]] - document - .omp/agents/oracle.md
-- [[Role_111]] - document - .omp/agents/oracle.md
+- [[Role_113]] - document - .omp/agents/oracle.md
 - [[System Prompt_40]] - document - .omp/agents/oracle.md
 
 ## Live Query (requires Dataview plugin)

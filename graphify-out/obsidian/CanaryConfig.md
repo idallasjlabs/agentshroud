@@ -12,8 +12,8 @@ tags:
 # CanaryConfig
 
 ## Connections
-- [[dot-__init__()_88]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_14]] - `calls` [EXTRACTED]
+- [[dot-__init__()_93]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
 - [[dot-test_incident_logging()]] - `calls` [EXTRACTED]
 - [[dot-test_partial_canary_match_handling()]] - `calls` [EXTRACTED]
 - [[Configuration for the Output Canary System.]] - `rationale_for` [EXTRACTED]

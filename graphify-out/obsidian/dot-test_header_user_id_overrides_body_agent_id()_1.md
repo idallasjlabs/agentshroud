@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "mcp_proxy.py"
+community: "ProxyResult"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_proxypy
+  - community/ProxyResult
 ---
 
 # .test_header_user_id_overrides_body_agent_id()
@@ -16,4 +16,4 @@ tags:
 - [[_capture()_6]] - `indirect_call` [INFERRED]
 - [[asyncio_29]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

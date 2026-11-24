@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_install_that_lands_the_wrong_version_fails_and_rolls_back()]] - `calls` [EXTRACTED]
 - [[dot-test_non_sha_pin_is_refused_before_touching_hermes()]] - `calls` [EXTRACTED]
-- [[Path_2]] - `references` [EXTRACTED]
+- [[Path_1]] - `references` [EXTRACTED]
 - [[_run()]] - `calls` [EXTRACTED]
 - [[test_update_conduit_push.py]] - `contains` [EXTRACTED]
 

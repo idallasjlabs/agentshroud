@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "middleware.py"
-location: "L175"
+community: "CanaryTripwire"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/CanaryTripwire
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-_calculate_similarity()]] - `calls` [EXTRACTED]
-- [[dot-_redact_fuzzy_match()]] - `calls` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
-- [[RedactionResult_1]] - `calls` [EXTRACTED]
-- [[Scan text for protected content and return redacted version. Args text The…]] - `rationale_for` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - `rationale_for` [EXTRACTED]
+- [[TripwireResponse]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "MiddlewareManager"
+community: "app"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/app
 ---
 
 # .test_forward_middleware_blocking()
@@ -18,4 +18,4 @@ tags:
 - [[TestForwardEndpoint]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/app

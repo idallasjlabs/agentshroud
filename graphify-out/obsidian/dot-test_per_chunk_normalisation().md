@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "TelegramAPIProxy"
+community: "._s"
 location: "L478"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/_s
 ---
 
 # .test_per_chunk_normalisation()
@@ -16,4 +16,4 @@ tags:
 - [[TestSplitForSpeech]] - `method` [EXTRACTED]
 - [[split_for_speech normalises the full text so no markdown or tokens survive.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/_s

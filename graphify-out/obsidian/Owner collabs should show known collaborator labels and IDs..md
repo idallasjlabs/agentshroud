@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "fake_urlopen"
+community: "_make_update"
 location: "L490"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/fake_urlopen
+  - community/_make_update
 ---
 
 # Owner /collabs should show known collaborator labels and IDs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_owner_collabs_command_shows_named_roster()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/fake_urlopen
+#graphify/rationale #graphify/EXTRACTED #community/_make_update

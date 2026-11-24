@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "BlockingPipeline"
-location: "L102"
+community: "AuditChain"
+location: "L482"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/AuditChain
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[BlockingPipeline]] - `method` [EXTRACTED]
-- [[FakePipelineResult]] - `calls` [EXTRACTED]
+- [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
+- [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
+- [[PipelineResult]] - `references` [EXTRACTED]
+- [[Process an inbound message through the full security pipeline. Thin wrapper…]] - `rationale_for` [EXTRACTED]
+- [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/code #graphify/EXTRACTED #community/AuditChain

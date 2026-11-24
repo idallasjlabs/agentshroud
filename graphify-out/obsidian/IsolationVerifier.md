@@ -12,7 +12,7 @@ tags:
 # IsolationVerifier
 
 ## Connections
-- [[dot-__init__()_195]] - `method` [EXTRACTED]
+- [[dot-__init__()_191]] - `method` [EXTRACTED]
 - [[dot-generate_compose()]] - `method` [EXTRACTED]
 - [[dot-test_capabilities_not_dropped_flagged()]] - `calls` [EXTRACTED]
 - [[dot-test_compose_contains_all_agents()]] - `calls` [EXTRACTED]

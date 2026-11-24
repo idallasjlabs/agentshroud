@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "test_all_modules_enforce.py"
+community: "multi_turn_tracker.py"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/multi_turn_trackerpy
 ---
 
 # DisclosureCategory
@@ -14,10 +14,10 @@ tags:
 ## Connections
 - [[dot-_add_disclosure_event()]] - `references` [EXTRACTED]
 - [[Categories of information that contribute to disclosure scoring.]] - `rationale_for` [EXTRACTED]
-- [[Enum_13]] - `inherits` [EXTRACTED]
+- [[Enum_18]] - `inherits` [EXTRACTED]
 - [[TestMultiTurnTracker]] - `uses` [INFERRED]
 - [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
-- [[str_8]] - `inherits` [EXTRACTED]
+- [[str_12]] - `inherits` [EXTRACTED]
 - [[test_multi_turn_tracker.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/multi_turn_trackerpy

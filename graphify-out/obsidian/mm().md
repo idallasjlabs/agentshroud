@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[MiddlewareManager built via __new__ — every module attr explicitly None so each…]] - `rationale_for` [EXTRACTED]
-- [[fixture_141]] - `references` [EXTRACTED]
+- [[fixture_143]] - `references` [EXTRACTED]
 - [[test_middleware_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

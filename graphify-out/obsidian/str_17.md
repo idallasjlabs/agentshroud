@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "load_config"
+community: "GitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/GitGuard
 ---
 
 # str
 
 ## Connections
-- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
+- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/GitGuard

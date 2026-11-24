@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "rationale"
-community: "get_trivy_image_summaries"
+community: "Any"
 location: "L1043"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_trivy_image_summaries
+  - community/Any
 ---
 
 # Write a fake image report file in the expected filename format.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_write_image_report()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_trivy_image_summaries
+#graphify/rationale #graphify/EXTRACTED #community/Any

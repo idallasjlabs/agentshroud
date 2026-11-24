@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "ingest_api/config.py"
-location: "L92"
+community: "GatewayConfig"
+location: "L29"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ingest_api/configpy
+  - graphify/EXTRACTED
+  - community/GatewayConfig
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_67]] - `references` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[fixture_69]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

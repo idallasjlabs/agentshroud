@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "ServiceManager"
 location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/ServiceManager
 ---
 
 # _patch_http_connection()
@@ -21,9 +21,9 @@ tags:
 - [[dot-test_parses_multiplexed_frames()]] - `calls` [EXTRACTED]
 - [[dot-test_tail_limit_applied()]] - `calls` [EXTRACTED]
 - [[Replace http.client.HTTPConnection so the in-function _UnixHTTP subclass…]] - `rationale_for` [EXTRACTED]
-- [[__init__()_22]] - `contains` [EXTRACTED]
+- [[__init__()_17]] - `contains` [EXTRACTED]
 - [[getresponse()]] - `contains` [EXTRACTED]
 - [[request()]] - `contains` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

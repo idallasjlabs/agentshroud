@@ -12,7 +12,7 @@ tags:
 # .get_stats()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[SecurityPipeline]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditChain

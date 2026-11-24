@@ -1,12 +1,12 @@
 ---
 source_file: "scripts/sunday-upgrade.sh"
 type: "code"
-community: "sunday-upgrade.sh"
+community: "upgrade-2026-09-21.md"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sunday-upgradesh
+  - community/upgrade-2026-09-21md
 ---
 
 # sunday-upgrade.sh script
@@ -17,4 +17,4 @@ tags:
 - [[_switch_to_main()]] - `calls` [EXTRACTED]
 - [[sunday-upgrade.sh]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sunday-upgradesh
+#graphify/code #graphify/EXTRACTED #community/upgrade-2026-09-21md

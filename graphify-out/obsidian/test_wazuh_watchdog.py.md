@@ -16,7 +16,7 @@ tags:
 - [[TestWatchdogBehaviour]] - `contains` [EXTRACTED]
 - [[TestWatchdogWiring]] - `contains` [EXTRACTED]
 - [[_all()]] - `contains` [EXTRACTED]
-- [[_run()_5]] - `contains` [EXTRACTED]
+- [[_run()_7]] - `contains` [EXTRACTED]
 - [[_run_4b()]] - `contains` [EXTRACTED]
 - [[_step_4b()]] - `contains` [EXTRACTED]
 - [[wazuh-manager daemon watchdog (dockerwazuhservices.dwazuh-watchdogrun). The…]] - `rationale_for` [EXTRACTED]

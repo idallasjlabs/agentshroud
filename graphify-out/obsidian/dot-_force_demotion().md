@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "lifespan.py"
+community: "TrustLevel"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TrustLevel
 ---
 
 # ._force_demotion()
@@ -17,4 +17,4 @@ tags:
 - [[TrustLevel_1]] - `calls` [EXTRACTED]
 - [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

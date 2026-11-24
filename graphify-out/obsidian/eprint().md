@@ -12,7 +12,7 @@ tags:
 # eprint()
 
 ## Connections
-- [[main()_27]] - `calls` [EXTRACTED]
+- [[main()_26]] - `calls` [EXTRACTED]
 - [[model_usage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/model_usagepy

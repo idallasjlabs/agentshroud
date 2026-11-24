@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "_FakeStreamClient"
-location: "L1437"
+community: "SubagentMonitor"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeStreamClient
+  - community/SubagentMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamClient]] - `method` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeStreamClient
+#graphify/code #graphify/EXTRACTED #community/SubagentMonitor

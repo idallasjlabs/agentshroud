@@ -15,6 +15,6 @@ tags:
 - [[TestToolResultSanitizer]] - `method` [EXTRACTED]
 - [[Tool result PII configuration for tests]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
-- [[fixture_70]] - `references` [EXTRACTED]
+- [[fixture_77]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

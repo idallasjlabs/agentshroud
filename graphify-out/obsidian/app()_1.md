@@ -1,19 +1,19 @@
 ---
 source_file: "chatbot/test_main.py"
 type: "code"
-community: "test_main.py"
+community: "chatbot/main.py"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mainpy
+  - community/chatbot/mainpy
 ---
 
 # app()
 
 ## Connections
 - [[Import chatbot.main with a fresh module state (no real OpenAI).]] - `rationale_for` [EXTRACTED]
-- [[fixture_41]] - `references` [EXTRACTED]
+- [[fixture_142]] - `references` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

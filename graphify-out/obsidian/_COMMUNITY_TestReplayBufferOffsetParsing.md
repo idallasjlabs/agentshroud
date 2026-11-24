@@ -35,13 +35,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY__make_sanitizer]]
+- 4 edges to [[_COMMUNITY_asyncio_5]]
+- 3 edges to [[_COMMUNITY__make_sanitizer]]
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_PIIConfig]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
 - [[TestReplayBufferOffsetParsing]] - degree 7, connects to 2 communities
 - [[TestForwardToTelegramTimeouts]] - degree 6, connects to 2 communities
-- [[dot-test_long_poll_timeout_remains_60s()]] - degree 5, connects to 1 community
-- [[dot-test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 1 community
+- [[dot-test_long_poll_timeout_remains_60s()]] - degree 5, connects to 2 communities
+- [[dot-test_non_long_poll_timeout_is_15s()]] - degree 5, connects to 2 communities
 - [[dot-test_json_body_still_calls_mark_delivered()]] - degree 5, connects to 1 community

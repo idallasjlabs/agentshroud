@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "IntelReportStore"
+community: "ServerConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/ServerConfig
 ---
 
 # Exception
 
 ## Connections
-- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

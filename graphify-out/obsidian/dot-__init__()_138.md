@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "test_forward_routing.py"
-location: "L22"
+community: "make_httpx_fetcher"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/make_httpx_fetcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[CitationVerifier]] - `method` [EXTRACTED]
+- [[Fetcher]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

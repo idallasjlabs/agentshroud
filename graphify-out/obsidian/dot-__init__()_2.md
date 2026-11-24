@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
 community: "soc/router.py"
-location: "L167"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,8 @@ tags:
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[_FakeRBAC]] - `method` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

@@ -15,7 +15,7 @@ tags:
 - [[Expected Behavior]] - `contains` [EXTRACTED]
 - [[Purpose_88]] - `contains` [EXTRACTED]
 - [[Related Notes_62]] - `contains` [EXTRACTED]
-- [[Security Controls_2]] - `contains` [EXTRACTED]
+- [[Security Controls_1]] - `contains` [EXTRACTED]
 - [[browser-fetch.js]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/browser-fetchjs

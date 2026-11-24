@@ -28,7 +28,7 @@ members: 30
 - [[Progressive-Trust Enforcement Mode (SCRUM-78)]] - document - docker/README.md
 - [[Quick Start_3]] - document - docker/README.md
 - [[Rebuild Containers]] - document - docker/README.md
-- [[Reference]] - document - docker/README.md
+- [[Reference_2]] - document - docker/README.md
 - [[Reproducible dev shell (Nix flake)]] - document - docker/README.md
 - [[SOC Per-Module Enforcement Heat-Map (SCRUM-80)]] - document - docker/README.md
 - [[Secrets_2]] - document - docker/README.md

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AgentRegistry]] - `contains` [EXTRACTED]
 - [[ContainerConfig]] - `contains` [EXTRACTED]
-- [[Enum_41]] - `imports_from` [EXTRACTED]
+- [[Enum_42]] - `imports_from` [EXTRACTED]
 - [[IsolationCheck]] - `contains` [EXTRACTED]
 - [[IsolationStatus]] - `contains` [EXTRACTED]
 - [[IsolationVerifier]] - `contains` [EXTRACTED]

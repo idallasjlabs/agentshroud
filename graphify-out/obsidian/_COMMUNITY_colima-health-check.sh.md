@@ -8,7 +8,7 @@ members: 12
 **Members:** 12 nodes
 
 ## Members
-- [[PATH_10]] - code - docker/scripts/colima-health-check.sh
+- [[PATH_11]] - code - docker/scripts/colima-health-check.sh
 - [[_colima_vm_flags()]] - code - docker/scripts/colima-health-check.sh
 - [[_dead_dns_servers()]] - code - docker/scripts/colima-health-check.sh
 - [[_upgrade_in_progress()]] - code - docker/scripts/colima-health-check.sh

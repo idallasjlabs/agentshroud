@@ -8,7 +8,7 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_153]] - document - docker/config/openclaw/skills/i-sec/README.md
+- [[Purpose_151]] - document - docker/config/openclaw/skills/i-sec/README.md
 - [[Related Skills_83]] - document - docker/config/openclaw/skills/i-sec/README.md
 - [[Security Review (SEC)_1]] - document - docker/config/openclaw/skills/i-sec/README.md
 - [[Usage_93]] - document - docker/config/openclaw/skills/i-sec/README.md

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L414"
+community: "test_edge_e2e_sdk.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__call__()
 
 ## Connections
-- [[dot-_send_plain()]] - `calls` [EXTRACTED]
-- [[EdgeGuard]] - `method` [EXTRACTED]
-- [[replay()]] - `indirect_call` [INFERRED]
+- [[Clock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

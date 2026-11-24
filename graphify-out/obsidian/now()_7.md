@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_mfa_guard.py"
 type: "code"
-community: "_sleep"
-location: "L1976"
+community: "test_mfa_guard.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sleep
+  - community/test_mfa_guardpy
 ---
 
 # now()
 
 ## Connections
-- [[dot-test_zero_new_cves_marks_checked_immediately()]] - `contains` [EXTRACTED]
+- [[fixture_85]] - `references` [EXTRACTED]
+- [[test_mfa_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

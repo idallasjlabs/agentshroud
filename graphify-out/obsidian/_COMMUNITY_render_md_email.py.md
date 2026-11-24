@@ -14,8 +14,8 @@ members: 9
 - [[_inline()]] - code - docker/bots/hermes/render_md_email.py
 - [[_render_table()]] - code - docker/bots/hermes/render_md_email.py
 - [[_save_fence()]] - code - docker/bots/hermes/render_md_email.py
-- [[main()_8]] - code - docker/bots/hermes/render_md_email.py
-- [[render()]] - code - docker/bots/hermes/render_md_email.py
+- [[main()_9]] - code - docker/bots/hermes/render_md_email.py
+- [[render()_1]] - code - docker/bots/hermes/render_md_email.py
 - [[render_md_email.py]] - code - docker/bots/hermes/render_md_email.py
 
 ## Live Query (requires Dataview plugin)

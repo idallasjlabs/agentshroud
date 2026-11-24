@@ -1,20 +1,21 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "CanaryTripwire"
-location: "L127"
+community: "WebProxyResult"
+location: "L434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CanaryTripwire
+  - community/WebProxyResult
 ---
 
 # .scan_response()
 
 ## Connections
-- [[dot-scan()]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
-- [[Pipeline-compatible bridge scan response text and return TripwireResponse.]] - `rationale_for` [EXTRACTED]
-- [[TripwireResponse]] - `calls` [EXTRACTED]
+- [[dot-_audit()]] - `calls` [EXTRACTED]
+- [[EgressEvent]] - `calls` [EXTRACTED]
+- [[Scan a response body for prompt injection, PII, and hidden content. This is…]] - `rationale_for` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CanaryTripwire
+#graphify/code #graphify/EXTRACTED #community/WebProxyResult

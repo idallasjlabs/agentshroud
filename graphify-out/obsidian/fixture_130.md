@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolChainAnalyzer"
+community: "TestKillSwitchScript"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestKillSwitchScript
 ---
 
 # fixture
 
 ## Connections
-- [[dot-analyzer()]] - `references` [EXTRACTED]
-- [[dot-analyzer()_1]] - `references` [EXTRACTED]
-- [[dot-analyzer()_2]] - `references` [EXTRACTED]
-- [[mock_alert_callback()_1]] - `references` [EXTRACTED]
-- [[tool_chain_analyzer()]] - `references` [EXTRACTED]
+- [[dot-script_content()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/TestKillSwitchScript

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "test_all_modules_enforce.py"
+community: "MultiTurnTracker"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/MultiTurnTracker
 ---
 
 # Compile regex patterns for detecting disclosure categories.
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `rationale_for` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

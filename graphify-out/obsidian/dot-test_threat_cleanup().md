@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "ContentThreat"
+community: "middleware.py"
 location: "L366"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContentThreat
+  - community/middlewarepy
 ---
 
 # .test_threat_cleanup()
@@ -16,4 +16,4 @@ tags:
 - [[Test cleanup of old threat records.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContentThreat
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

@@ -17,7 +17,7 @@ tags:
 - [[__exit__()_3]] - `contains` [EXTRACTED]
 - [[_fake_urlopen()_3]] - `contains` [EXTRACTED]
 - [[_fake_urlopen()_4]] - `indirect_call` [INFERRED]
-- [[asyncio_20]] - `references` [EXTRACTED]
-- [[read()_5]] - `contains` [EXTRACTED]
+- [[asyncio_21]] - `references` [EXTRACTED]
+- [[read()_6]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run_proxy

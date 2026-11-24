@@ -12,8 +12,8 @@ tags:
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_12]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_10]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]
 - [[dot-test_config_hash_changes()]] - `method` [EXTRACTED]

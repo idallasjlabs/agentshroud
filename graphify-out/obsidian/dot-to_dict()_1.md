@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "FileIntegrityRecord"
-location: "L49"
+community: "make_event"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileIntegrityRecord
+  - community/make_event
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_14]] - `references` [EXTRACTED]
-- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord
+#graphify/code #graphify/EXTRACTED #community/make_event

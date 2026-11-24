@@ -15,7 +15,7 @@ tags:
 - [[Path_34]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
-- [[boom()_6]] - `contains` [EXTRACTED]
-- [[boom()_5]] - `indirect_call` [INFERRED]
+- [[boom()_5]] - `contains` [EXTRACTED]
+- [[boom()_4]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_skill_guardpy

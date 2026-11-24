@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestEgressFilter"
+community: "EgressFilter"
 location: "L446"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilter
+  - community/EgressFilter
 ---
 
 # .test_denied_port()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

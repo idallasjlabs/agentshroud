@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APeerTestDouble"
+community: "A2APolicyConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APeerTestDouble
+  - community/A2APolicyConfig
 ---
 
 # Response
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-_handle()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

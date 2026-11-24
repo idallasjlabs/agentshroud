@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_compose_sets_nemotron_local_model_overrides"
 location: "L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_compose_sets_nemotron_local_model_overrides
 ---
 
 # .test_compose_sets_nemotron_local_model_overrides()
@@ -15,4 +15,4 @@ tags:
 - [[Main compose stack should expose a single model-mode switch with localcloud…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_compose_sets_nemotron_local_model_overrides

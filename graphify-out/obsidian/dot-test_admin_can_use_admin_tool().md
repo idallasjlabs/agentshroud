@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestAdminAccess"
+community: "test_tool_acl.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAdminAccess
+  - community/test_tool_aclpy
 ---
 
 # .test_admin_can_use_admin_tool()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAdminAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAdminAccess
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

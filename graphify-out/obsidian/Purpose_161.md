@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-tdd/README.md"
 type: "document"
-community: "Project Management (SKILL)"
+community: "Test-Driven Development README"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_SKILL
+  - community/Test-Driven_Development_README
 ---
 
 # Purpose
 
 ## Connections
-- [[Project Management (PM)_2]] - `contains` [EXTRACTED]
-- [[Project Management (README)]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Test-Driven Development README]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_SKILL
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_README
