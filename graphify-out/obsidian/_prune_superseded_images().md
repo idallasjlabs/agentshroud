@@ -2,7 +2,7 @@
 source_file: "scripts/asb"
 type: "code"
 community: "asb"
-location: "L563"
+location: "L567"
 tags:
   - graphify/code
   - graphify/EXTRACTED

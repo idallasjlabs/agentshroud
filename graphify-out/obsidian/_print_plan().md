@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[RemediationPlan]] - `references` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
-- [[main()_24]] - `calls` [EXTRACTED]
+- [[main()_23]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/plan_remediation

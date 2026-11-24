@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "daily_cve_report.py"
-location: "L2833"
+community: "MCPPolicyEngine"
+location: "L478"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/daily_cve_reportpy
+  - community/MCPPolicyEngine
 ---
 
 # _run()
 
 ## Connections
-- [[dot-_token()]] - `indirect_call` [INFERRED]
-- [[run_and_send_cve_report()]] - `calls` [EXTRACTED]
-- [[trigger_cve_report()]] - `contains` [EXTRACTED]
+- [[_base_config()]] - `calls` [EXTRACTED]
+- [[_real_queue()]] - `calls` [EXTRACTED]
+- [[test_enforce_real_queue_high_risk_not_downgraded_to_allow()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

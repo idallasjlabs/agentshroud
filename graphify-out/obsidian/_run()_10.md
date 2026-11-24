@@ -1,18 +1,18 @@
 ---
-source_file: "scripts/discover_upstream_versions.py"
+source_file: "scripts/auto_remediate_cves.py"
 type: "code"
-community: "discover_upstream_versions.py"
-location: "L210"
+community: "plan_remediation"
+location: "L230"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/discover_upstream_versionspy
+  - graphify/EXTRACTED
+  - community/plan_remediation
 ---
 
 # _run()
 
 ## Connections
-- [[_call_with_deadline()]] - `indirect_call` [INFERRED]
-- [[fn()]] - `calls` [INFERRED]
+- [[apply_remediation()]] - `calls` [EXTRACTED]
+- [[auto_remediate_cves.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy
+#graphify/code #graphify/EXTRACTED #community/plan_remediation

@@ -1,19 +1,17 @@
 ---
-source_file: "firmware/voice-terminal/main/ws_client.c"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "ws_client.c"
-location: "L32"
+community: "SOCWebSocketHandler"
+location: "L63"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/ws_clientc
+  - graphify/INFERRED
+  - community/SOCWebSocketHandler
 ---
 
 # _on_event()
 
 ## Connections
-- [[esp_event_base_t]] - `references` [EXTRACTED]
-- [[vt_remote_log()]] - `calls` [INFERRED]
-- [[ws_client.c]] - `contains` [EXTRACTED]
+- [[dot-_event_fan_out()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_clientc
+#graphify/code #graphify/INFERRED #community/SOCWebSocketHandler

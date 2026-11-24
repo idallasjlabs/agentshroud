@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "test_clamav_pipeline.py"
+community: "PipelineAction"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_clamav_pipelinepy
+  - community/PipelineAction
 ---
 
 # _timeout_wait_for()
@@ -16,4 +16,4 @@ tags:
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy
+#graphify/code #graphify/EXTRACTED #community/PipelineAction

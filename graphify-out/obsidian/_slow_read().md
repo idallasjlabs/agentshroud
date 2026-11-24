@@ -12,6 +12,6 @@ tags:
 # _slow_read()
 
 ## Connections
-- [[fake_urlopen()_22]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_18]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/test_llm_proxy_failoverpy

@@ -12,7 +12,7 @@ tags:
 # _reset_reply_resume()
 
 ## Connections
-- [[fixture_118]] - `references` [EXTRACTED]
+- [[fixture_120]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

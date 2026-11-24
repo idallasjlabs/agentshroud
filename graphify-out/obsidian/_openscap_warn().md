@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "_score_compliance_auditing"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/_score_compliance_auditing
 ---
 
 # _openscap_warn()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_four_when_openscap_running_with_failures()]] - `calls` [EXTRACTED]
 - [[dot-test_managed_when_has_failures()]] - `calls` [EXTRACTED]
-- [[Any_78]] - `references` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/_score_compliance_auditing

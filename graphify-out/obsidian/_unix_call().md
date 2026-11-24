@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[_docker_exec_bot()]] - `contains` [EXTRACTED]
-- [[connect()_4]] - `contains` [EXTRACTED]
+- [[connect()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

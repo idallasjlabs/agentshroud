@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "_score_compliance_auditing"
 location: "L120"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/_score_compliance_auditing
 ---
 
 # _openscap_not_run()
@@ -16,8 +16,8 @@ tags:
 - [[dot-_patch_all_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_baseline_three_when_openscap_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_defined_when_oscap_binary_present()]] - `calls` [EXTRACTED]
-- [[dot-test_zero_when_not_run()_1]] - `calls` [EXTRACTED]
-- [[Any_78]] - `references` [EXTRACTED]
+- [[dot-test_zero_when_not_run()]] - `calls` [EXTRACTED]
+- [[Any_45]] - `references` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/_score_compliance_auditing

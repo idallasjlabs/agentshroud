@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "_score_image_integrity"
 location: "L926"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/_score_image_integrity
 ---
 
 # _score_image_integrity()
@@ -16,11 +16,11 @@ tags:
 - [[dot-test_four_when_sbom_and_clean_trivy()]] - `calls` [EXTRACTED]
 - [[dot-test_one_when_sbom_exists()]] - `calls` [EXTRACTED]
 - [[dot-test_zero_when_no_sbom_no_trivy()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Score domain 1 Image Integrity (0-5). 1=SBOM exists, 2=Trivy ran, 3=zero…]] - `rationale_for` [EXTRACTED]
 - [[_is_fresh()]] - `calls` [EXTRACTED]
 - [[compute_scorecard()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/_score_image_integrity

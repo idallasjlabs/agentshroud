@@ -12,8 +12,8 @@ tags:
 # _run_hermes_api_forwarder()
 
 ## Connections
-- [[_handle()_1]] - `contains` [EXTRACTED]
-- [[_handle()_2]] - `indirect_call` [INFERRED]
+- [[_handle()]] - `contains` [EXTRACTED]
+- [[_handle()_1]] - `indirect_call` [INFERRED]
 - [[_pipe()]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `contains` [EXTRACTED]
 
