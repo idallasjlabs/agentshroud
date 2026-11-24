@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/sidecar.py"
+source_file: "gateway/tests/test_jira_weekly_review.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L60"
+community: "test_jira_weekly_review.py"
+location: "L195"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/test_jira_weekly_reviewpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SidecarScanner]] - `method` [EXTRACTED]
+- [[_MockTransport_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_jira_weekly_reviewpy

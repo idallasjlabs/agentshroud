@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "ContainerSnapshot"
-location: "L62"
+community: "GatewayBackedProvider"
+location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/GatewayBackedProvider
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[EdgeSettings]] - `references` [EXTRACTED]
+- [[GatewayBackedProvider]] - `method` [EXTRACTED]
+- [[GatewayClient]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

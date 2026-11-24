@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/context_integrity.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "ContextGuard"
-location: "L64"
+community: "GatewayEmailService"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_27]] - `references` [EXTRACTED]
-- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
+- [[_FakeSmtp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

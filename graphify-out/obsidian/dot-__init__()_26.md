@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_sanitizer.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "PIIConfig"
-location: "L144"
+community: "EnvironmentGuard"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/EnvironmentGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

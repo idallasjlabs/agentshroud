@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/prompt_guard.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "prompt_guard.py"
-location: "L584"
+community: "RedactionResult"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/RedactionResult
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args block_threshold Score at or above which input is blocked.…]] - `rationale_for` [EXTRACTED]
-- [[PatternRule]] - `references` [EXTRACTED]
-- [[PromptGuard]] - `method` [EXTRACTED]
+- [[Any_39]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/RedactionResult

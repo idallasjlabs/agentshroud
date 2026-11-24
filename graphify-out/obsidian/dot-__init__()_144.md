@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L67"
+community: "EncodingDetector"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/EncodingDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[EncodingConfig]] - `calls` [EXTRACTED]
+- [[EncodingDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/EncodingDetector

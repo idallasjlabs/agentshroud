@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "test_edge_facades.py"
-location: "L159"
+community: "CredentialInjector"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_facadespy
+  - community/CredentialInjector
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `references` [EXTRACTED]
-- [[HermesDelegate]] - `method` [EXTRACTED]
+- [[dot-_load_credentials()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_mappings()]] - `calls` [EXTRACTED]
+- [[CredentialInjector]] - `method` [EXTRACTED]
+- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_facadespy
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

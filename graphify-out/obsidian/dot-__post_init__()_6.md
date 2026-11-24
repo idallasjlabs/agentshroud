@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # .__post_init__()
@@ -16,4 +16,4 @@ tags:
 - [[RBACConfig]] - `calls` [EXTRACTED]
 - [[_norm()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

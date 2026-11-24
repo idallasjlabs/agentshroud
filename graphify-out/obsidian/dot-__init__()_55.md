@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "LLMProxy"
-location: "L251"
+community: "TestPresidioPathContract"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/TestPresidioPathContract
 ---
 
 # .__init__()
 
 ## Connections
-- [[LLMProxy]] - `method` [EXTRACTED]
+- [[_FakeRecognizerResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/TestPresidioPathContract

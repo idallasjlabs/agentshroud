@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L140"
+community: "GatewayBackedProvider"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/GatewayBackedProvider
 ---
 
 # .__init__()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[dot-__init__()_48]] - `calls` [EXTRACTED]
+- [[EdgeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

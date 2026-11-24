@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "ConsentFramework"
-location: "L71"
+community: "EnvelopeSigner"
+location: "L81"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/EnvelopeSigner
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[PkeStatus]] - `method` [EXTRACTED]
+- [[datetime_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

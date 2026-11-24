@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L314"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

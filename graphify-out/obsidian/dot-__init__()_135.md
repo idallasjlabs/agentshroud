@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/git_guard.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "GitGuard"
-location: "L52"
+community: "OutputSchemaEnforcer"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/OutputSchemaEnforcer
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args mode 'monitor' (log findings) or 'enforce' (quarantine suspicious files)]] - `rationale_for` [EXTRACTED]
-- [[GitGuard]] - `method` [EXTRACTED]
+- [[dot-_register_default_schema()]] - `calls` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

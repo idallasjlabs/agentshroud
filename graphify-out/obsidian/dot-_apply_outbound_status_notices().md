@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "TestOutboundClassifierHelpers"
 location: "L3885"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/TestOutboundClassifierHelpers
 ---
 
 # ._apply_outbound_status_notices()
@@ -17,9 +17,9 @@ tags:
 - [[dot-_contains_legacy_block_notice()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
 - [[dot-_is_no_reply_token()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[Map internal statuspolicy texts to user-safe replacement notices. Pure helper…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers

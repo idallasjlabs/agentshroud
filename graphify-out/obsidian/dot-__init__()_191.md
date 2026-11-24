@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "DNSBlocklist"
-location: "L64"
+community: "AgentRegistry"
+location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Path_67]] - `references` [EXTRACTED]
+- [[AgentRegistry]] - `references` [EXTRACTED]
+- [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

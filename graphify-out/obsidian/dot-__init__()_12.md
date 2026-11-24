@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "EncryptedStore"
-location: "L61"
+community: "CronStateMonitor"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store. Args master_secret The master secret string.…]] - `rationale_for` [EXTRACTED]
+- [[_DedupDispatchFake]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

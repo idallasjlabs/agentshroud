@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "TrustManager"
-location: "L97"
+community: "PathIsolationManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/PathIsolationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

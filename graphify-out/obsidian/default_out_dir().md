@@ -12,8 +12,8 @@ tags:
 # default_out_dir()
 
 ## Connections
-- [[Path_44]] - `references` [EXTRACTED]
+- [[Path_45]] - `references` [EXTRACTED]
 - [[gen.py]] - `contains` [EXTRACTED]
-- [[main()_20]] - `calls` [EXTRACTED]
+- [[main()_21]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/genpy

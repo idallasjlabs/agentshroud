@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "FakeClock"
-location: "L425"
+community: "_FakeWSConnect"
+location: "L745"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeClock
+  - community/_FakeWSConnect
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[_FakeWSConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeClock
+#graphify/code #graphify/EXTRACTED #community/_FakeWSConnect

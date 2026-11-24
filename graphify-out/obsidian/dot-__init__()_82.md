@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "_LegacyStubApprovalQueue"
-location: "L388"
+community: "ContextGuard"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_LegacyStubApprovalQueue
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[Any_30]] - `references` [EXTRACTED]
+- [[ContextIntegrityScorer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_LegacyStubApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

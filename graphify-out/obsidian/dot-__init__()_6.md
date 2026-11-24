@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "MCPPermissionManager"
-location: "L183"
+community: "make_event"
+location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPermissionManager
+  - community/make_event
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig]] - `references` [EXTRACTED]
-- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[dot-__init__()_7]] - `calls` [EXTRACTED]
+- [[_Denied]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPermissionManager
+#graphify/code #graphify/EXTRACTED #community/make_event

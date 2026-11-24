@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/edge_jwt.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "EdgeStore"
-location: "L114"
+community: "AlertTelegramRelay"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeStore]] - `references` [EXTRACTED]
-- [[TokenService]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

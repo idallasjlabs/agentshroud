@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "soc/router.py"
 location: "L925"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/soc/routerpy
 ---
 
 # ._analyze_request_for_rbac()
@@ -20,4 +20,4 @@ tags:
 - [[Resource]] - `references` [EXTRACTED]
 - [[ToolTier]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

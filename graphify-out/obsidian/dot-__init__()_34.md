@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "KeyVault"
-location: "L148"
+community: "FakeClock"
+location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVault
+  - community/FakeClock
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyInjector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVault
+#graphify/code #graphify/EXTRACTED #community/FakeClock

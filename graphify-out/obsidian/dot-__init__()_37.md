@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "._handle"
-location: "L55"
+community: "Any"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/Any
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_13]] - `references` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_20]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/Any

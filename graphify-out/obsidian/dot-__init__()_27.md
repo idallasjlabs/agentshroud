@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "test_mcp_proxy_coverage.py"
-location: "L445"
+community: "lifespan.py"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxy_coveragepy
+  - community/lifespanpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

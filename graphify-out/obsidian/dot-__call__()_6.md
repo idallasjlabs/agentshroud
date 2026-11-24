@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "AsyncMock"
-location: "L8636"
+community: "RateLimitGuard"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/RateLimitGuard
 ---
 
 # .__call__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[FakeClock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

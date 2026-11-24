@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L130"
+community: "OutboundInfoFilter"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/OutboundInfoFilter
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Window]] - `method` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
+- [[Any_42]] - `references` [EXTRACTED]
+- [[InfoCategory]] - `calls` [EXTRACTED]
+- [[Initialize the outbound information filter. Args config Configuration…]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

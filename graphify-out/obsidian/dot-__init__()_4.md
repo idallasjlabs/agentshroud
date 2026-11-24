@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/falco_monitor.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "FalcoAlertWatcher"
-location: "L194"
+community: "run"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FalcoAlertWatcher
+  - community/run
 ---
 
 # .__init__()
 
 ## Connections
-- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
-- [[Path]] - `references` [EXTRACTED]
+- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher
+#graphify/code #graphify/EXTRACTED #community/run

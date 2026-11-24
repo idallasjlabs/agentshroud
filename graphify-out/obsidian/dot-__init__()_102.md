@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "TrustManager"
-location: "L148"
+community: "GatewayConfig"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/GatewayConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `calls` [EXTRACTED]
+- [[Initialize router Args config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

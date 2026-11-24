@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L108"
+community: "GroupRoleResolver"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/GroupRoleResolver
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_120]] - `calls` [EXTRACTED]
-- [[_Denied]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

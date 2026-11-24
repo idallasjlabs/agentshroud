@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L29"
+community: "MetadataGuard"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/MetadataGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock_1]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/MetadataGuard

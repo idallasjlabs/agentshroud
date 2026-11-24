@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/store.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "EdgeStore"
-location: "L115"
+community: "ServiceManager"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/ServiceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeStore]] - `method` [EXTRACTED]
-- [[Path_56]] - `references` [EXTRACTED]
+- [[Any_63]] - `references` [EXTRACTED]
+- [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

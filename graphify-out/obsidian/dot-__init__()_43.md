@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L107"
+community: "test_forward_stream.py"
+location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_forward_streampy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeGroup]] - `method` [EXTRACTED]
+- [[_PassthroughPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

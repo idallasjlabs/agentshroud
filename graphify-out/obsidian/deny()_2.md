@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
-location: "L5726"
+community: ".test_egress_callback_from_collaborator_is_rejected"
+location: "L5772"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_egress_callback_from_collaborator_is_rejected
 ---
 
 # deny()
 
 ## Connections
-- [[dot-test_egress_callback_non_dict_result_is_handled()]] - `contains` [EXTRACTED]
+- [[dot-test_egress_callback_from_collaborator_is_rejected()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_egress_callback_from_collaborator_is_rejected

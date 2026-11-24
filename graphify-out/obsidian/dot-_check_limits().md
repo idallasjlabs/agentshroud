@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "make_event"
 location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/make_event
 ---
 
 # ._check_limits()
@@ -19,4 +19,4 @@ tags:
 - [[_Denied]] - `calls` [EXTRACTED]
 - [[_rank()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/make_event

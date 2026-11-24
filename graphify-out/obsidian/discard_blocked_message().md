@@ -12,7 +12,7 @@ tags:
 # discard_blocked_message()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Discard (keep quarantined) a blocked message after admin review.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]

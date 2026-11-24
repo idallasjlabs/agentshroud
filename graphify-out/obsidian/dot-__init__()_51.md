@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L78"
+community: "test_sanitizer.py"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/test_sanitizerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy

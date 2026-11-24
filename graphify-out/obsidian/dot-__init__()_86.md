@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ssh_proxy/proxy.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "SSHProxy"
-location: "L138"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[SSHConfig]] - `references` [EXTRACTED]
-- [[SSHProxy]] - `method` [EXTRACTED]
+- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

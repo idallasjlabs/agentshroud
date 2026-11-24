@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L131"
+community: "WebProxy"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/WebProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeSettings]] - `references` [EXTRACTED]
-- [[GatewayBackedProvider]] - `method` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/WebProxy

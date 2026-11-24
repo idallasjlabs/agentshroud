@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "asyncio"
-location: "L278"
+community: "AlertDispatcher"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/AlertDispatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeAuditStore_1]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Path_57]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

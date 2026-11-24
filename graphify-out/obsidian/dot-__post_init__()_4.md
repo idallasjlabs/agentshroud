@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/memory_lifecycle.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "MemoryLifecycleManager"
-location: "L67"
+community: "TrustManager"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/TrustManager
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[RetentionAction]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/code #graphify/EXTRACTED #community/TrustManager

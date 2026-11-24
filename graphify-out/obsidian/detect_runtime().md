@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "patch"
+community: "detect_runtime"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/detect_runtime
 ---
 
 # detect_runtime()
@@ -27,4 +27,4 @@ tags:
 - [[runtime__init__.py]] - `contains` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

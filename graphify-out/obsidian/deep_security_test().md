@@ -12,7 +12,7 @@ tags:
 # deep_security_test()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Comprehensive security integration test — tests every module with real payloads.]] - `rationale_for` [EXTRACTED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]

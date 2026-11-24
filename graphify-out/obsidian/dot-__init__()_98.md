@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "ingest_api/config.py"
-location: "L73"
+community: "RateLimitGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig]] - `references` [EXTRACTED]
-- [[Store configuration Actual database connection created in initialize(). Args…]] - `rationale_for` [EXTRACTED]
+- [[FakeClock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

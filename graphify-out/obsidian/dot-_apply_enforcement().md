@@ -15,6 +15,6 @@ tags:
 - [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[Apply monitorenforce + redactblock semantics to a redaction result.]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `method` [EXTRACTED]
-- [[RedactionResult]] - `references` [EXTRACTED]
+- [[RedactionResult_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RedactionResult

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/privacy_policy.py"
+source_file: "gateway/tests/test_cron_state_monitor.py"
 type: "code"
-community: "PrivacyPolicyEnforcer"
-location: "L181"
+community: "CronStateMonitor"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-default()]] - `calls` [EXTRACTED]
-- [[PrivacyPolicy]] - `references` [EXTRACTED]
-- [[PrivacyPolicyEnforcer]] - `method` [EXTRACTED]
+- [[_DispatchSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

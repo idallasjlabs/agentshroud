@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/tests/test_slack_proxy_coverage.py"
 type: "code"
-community: "AgentRegistry"
-location: "L90"
+community: "SlackAPIProxy"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/SlackAPIProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `references` [EXTRACTED]
-- [[IsolationVerifier]] - `method` [EXTRACTED]
+- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

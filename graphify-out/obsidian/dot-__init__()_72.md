@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/ingest_api/email_service.py"
 type: "code"
-community: "ContextGuard"
-location: "L70"
+community: "GatewayEmailService"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/GatewayEmailService
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[GatewayEmailService]] - `method` [EXTRACTED]
+- [[TransportFactory]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

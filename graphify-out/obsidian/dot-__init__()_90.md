@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "asyncio"
-location: "L73"
+community: "_LegacyStubApprovalQueue"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_LegacyStubApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
-- [[Any_33]] - `references` [EXTRACTED]
-- [[InfoCategory]] - `calls` [EXTRACTED]
-- [[Initialize the outbound information filter. Args config Configuration…]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_LegacyStubApprovalQueue

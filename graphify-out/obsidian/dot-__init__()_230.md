@@ -1,5 +1,5 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_citation_verifier.py"
 type: "code"
 community: "DraftEntry"
 location: "L29"

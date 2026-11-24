@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L605"
+community: "AuditChain"
+location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/AuditChain
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeBus]] - `method` [EXTRACTED]
+- [[AuditChain]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/AuditChain

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/encoding_detector.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
-location: "L69"
+community: "A2APolicyConfig"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/A2APolicyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EncodingConfig]] - `calls` [EXTRACTED]
-- [[EncodingDetector]] - `method` [EXTRACTED]
+- [[A2APeerTestDouble]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/tests/test_edge_service_routes.py"
 type: "code"
-community: "load_config"
-location: "L252"
+community: "test_edge_service_routes.py"
+location: "L193"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/test_edge_service_routespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig]] - `calls` [EXTRACTED]
-- [[MCPPolicyEngine]] - `method` [EXTRACTED]
+- [[Raises]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

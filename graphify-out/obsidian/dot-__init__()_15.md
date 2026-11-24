@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "FakeRBAC"
-location: "L157"
+community: "EgressScope"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/EgressScope
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC]] - `method` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue. Args rules_file Path to persistent rules…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/EgressScope

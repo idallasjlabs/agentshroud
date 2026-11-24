@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/inbound_edge/store.py"
 type: "code"
-community: "WebContentScanner"
-location: "L202"
+community: "EdgeStore"
+location: "L115"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/EdgeStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[WebContentScanner]] - `method` [EXTRACTED]
+- [[EdgeStore]] - `method` [EXTRACTED]
+- [[Path_54]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/EdgeStore

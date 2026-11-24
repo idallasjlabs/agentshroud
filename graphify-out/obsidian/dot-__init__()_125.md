@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_edge_pipeline.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L54"
+community: "GitGuard"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/GitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Clock_1]] - `method` [EXTRACTED]
+- [[Args mode 'monitor' (log findings) or 'enforce' (quarantine suspicious files)]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/GitGuard

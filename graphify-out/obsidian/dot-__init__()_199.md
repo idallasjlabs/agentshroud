@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L65"
+community: "normalize_input"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/normalize_input
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/normalize_input

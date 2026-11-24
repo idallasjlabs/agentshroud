@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "_StubAuditStore"
-location: "L446"
+community: "_FakeStreamClient"
+location: "L1437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_StubAuditStore
+  - community/_FakeStreamClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Event]] - `method` [EXTRACTED]
+- [[_FakeStreamClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_StubAuditStore
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamClient

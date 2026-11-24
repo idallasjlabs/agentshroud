@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/oauth_service.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "EdgeOAuthService"
-location: "L53"
+community: "DockerEngine"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/DockerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_136]] - `calls` [EXTRACTED]
-- [[OAuthFailure]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

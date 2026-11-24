@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/proxy/webhook_receiver.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "WebhookReceiver"
-location: "L36"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
-- [[RBACConfig]] - `calls` [EXTRACTED]
-- [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[WebhookReceiver]] - `method` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager. Args base_workspace Base directory for user…]] - `rationale_for` [EXTRACTED]
+- [[Path_65]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

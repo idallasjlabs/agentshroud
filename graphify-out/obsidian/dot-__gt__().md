@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "PermissionLevel"
+community: "test_mcp_proxy.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PermissionLevel
+  - community/test_mcp_proxypy
 ---
 
 # .__gt__()
@@ -15,4 +15,4 @@ tags:
 - [[dot-level_value()]] - `calls` [EXTRACTED]
 - [[PermissionLevel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PermissionLevel
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

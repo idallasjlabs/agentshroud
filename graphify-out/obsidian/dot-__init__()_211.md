@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L78"
+community: "FalcoAlertWatcher"
+location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/FalcoAlertWatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Path_73]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

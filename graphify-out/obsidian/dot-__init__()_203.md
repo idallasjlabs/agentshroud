@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L210"
+community: "EnvelopeSigner"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/EnvelopeSigner
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult_1]] - `method` [EXTRACTED]
+- [[EnvelopeSigner]] - `references` [EXTRACTED]
+- [[HermesDelegate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

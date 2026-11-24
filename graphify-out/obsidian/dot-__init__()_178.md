@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L38"
+community: "ingest_api/main.py"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ingest_api/mainpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
-- [[WebSocket_6]] - `references` [EXTRACTED]
+- [[Args max_requests Maximum requests allowed in the time window window_seconds…]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L82"
+community: "OutputCanary"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/OutputCanary
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `calls` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[Initialize the Output Canary System. Args config Optional configuration. Uses…]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/OutputCanary

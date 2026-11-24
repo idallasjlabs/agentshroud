@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "LogBuffer"
-location: "L142"
+community: "AuditStore"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogBuffer
+  - community/AuditStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Path_60]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogBuffer
+#graphify/code #graphify/EXTRACTED #community/AuditStore

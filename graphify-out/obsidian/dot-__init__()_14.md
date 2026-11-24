@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_proxy_coverage.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "_make_proxy"
-location: "L78"
+community: "MCPInspector"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/MCPInspector
 ---
 
 # .__init__()
 
 ## Connections
-- [[_RaisingRedactionResult]] - `method` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

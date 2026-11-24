@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "middleware.py"
-location: "L50"
+community: "test_mfa_guard.py"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[ApprovalStore]] - `method` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

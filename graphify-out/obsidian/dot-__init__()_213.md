@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L480"
+community: "_patch_urlopen"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/_patch_urlopen
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_213]] - `calls` [EXTRACTED]
-- [[_SocketTransportWriter]] - `method` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_patch_urlopen

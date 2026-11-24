@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "AuditExportConfig"
-location: "L65"
+community: "test_mcp_proxy.py"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/test_mcp_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditExportConfig]] - `references` [EXTRACTED]
-- [[AuditExporter]] - `method` [EXTRACTED]
-- [[AuditStore]] - `references` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
+- [[StdioConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

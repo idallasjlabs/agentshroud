@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L45"
+community: "GatewayBackedProvider"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/GatewayBackedProvider
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_1]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[dot-__init__()_45]] - `calls` [EXTRACTED]
+- [[Any_22]] - `references` [EXTRACTED]
+- [[GatewayError]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

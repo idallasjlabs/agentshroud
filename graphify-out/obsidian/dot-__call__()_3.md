@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "._handle"
-location: "L73"
+community: "FakeClock"
+location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/FakeClock
 ---
 
 # .__call__()
 
 ## Connections
-- [[dot-_handle()]] - `calls` [EXTRACTED]
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_13]] - `references` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/FakeClock

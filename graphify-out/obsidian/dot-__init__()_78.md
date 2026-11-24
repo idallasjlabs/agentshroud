@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "BrowserSecurityGuard"
-location: "L96"
+community: "KeyInjector"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BrowserSecurityGuard
+  - community/KeyInjector
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard
+#graphify/code #graphify/EXTRACTED #community/KeyInjector

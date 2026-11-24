@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/inbound_edge/edge_jwt.py"
 type: "code"
-community: "make_httpx_fetcher"
-location: "L191"
+community: "EdgeStore"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_httpx_fetcher
+  - community/EdgeStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[EdgeStore]] - `references` [EXTRACTED]
+- [[TokenService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher
+#graphify/code #graphify/EXTRACTED #community/EdgeStore

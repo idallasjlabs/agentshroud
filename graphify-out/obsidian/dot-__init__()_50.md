@@ -1,28 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/tests/test_sanitizer.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L155"
+community: "test_sanitizer.py"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/test_sanitizerpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
-- [[DNSFilter]] - `calls` [EXTRACTED]
-- [[DNSFilterConfig]] - `calls` [EXTRACTED]
-- [[EgressMonitor]] - `calls` [EXTRACTED]
-- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
-- [[RateLimiter]] - `calls` [EXTRACTED]
-- [[URLAnalyzer]] - `references` [EXTRACTED]
-- [[WebContentScanner]] - `references` [EXTRACTED]
-- [[WebProxy]] - `method` [EXTRACTED]
-- [[WebProxyConfig]] - `references` [EXTRACTED]
+- [[_FakeAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "MCPServerConfig"
-location: "L95"
+community: "LLMProxy"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPServerConfig
+  - community/LLMProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPServerConfig]] - `references` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPServerConfig
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/oauth_security.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "OAuthSecurityValidator"
-location: "L55"
+community: "DifferentialPIIDetector"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OAuthSecurityValidator
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OAuthSecurityValidator
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

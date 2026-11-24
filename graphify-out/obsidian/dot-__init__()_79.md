@@ -1,18 +1,17 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "_FakeAsyncClient"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/_FakeAsyncClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "CanaryTripwire"
-location: "L45"
+community: "migrate-cve-registry-ghsa.py"
+location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CanaryTripwire
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CanaryTripwire
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

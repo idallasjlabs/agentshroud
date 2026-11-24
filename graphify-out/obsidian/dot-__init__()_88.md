@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "OutputCanary"
-location: "L67"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[Initialize the Output Canary System. Args config Optional configuration. Uses…]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

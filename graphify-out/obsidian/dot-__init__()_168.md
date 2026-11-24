@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L391"
+community: "test_edge_e2e_sdk.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrackingInjector]] - `method` [EXTRACTED]
+- [[FakeFacade]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

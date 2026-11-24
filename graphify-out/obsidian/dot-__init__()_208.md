@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "test_edge_facades.py"
-location: "L81"
+community: "test_http_proxy_coverage.py"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_facadespy
+  - community/test_http_proxy_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[PkeStatus]] - `method` [EXTRACTED]
-- [[datetime_9]] - `references` [EXTRACTED]
+- [[_HeaderTimeoutReader]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_facadespy
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

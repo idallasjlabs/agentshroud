@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "RedactionResult"
-location: "L28"
+community: "CanaryTripwire"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/CanaryTripwire
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[CanaryConfig_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

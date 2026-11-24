@@ -28,7 +28,7 @@ tags:
 - [[dot-test_reload_returns_200_with_skills_list()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_all_drifted_items()]] - `calls` [EXTRACTED]
 - [[Copy all files in manifest from source to each per-bot destination.…]] - `rationale_for` [EXTRACTED]
-- [[Path_55]] - `references` [EXTRACTED]
+- [[Path_71]] - `references` [EXTRACTED]
 - [[PlannedAction]] - `references` [EXTRACTED]
 - [[SkillsManifest]] - `references` [EXTRACTED]
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]

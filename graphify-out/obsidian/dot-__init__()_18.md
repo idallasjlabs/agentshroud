@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L122"
+community: "AsyncMock"
+location: "L8633"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/AsyncMock
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the key rotation manager.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `references` [EXTRACTED]
-- [[KeyRotationManager]] - `method` [EXTRACTED]
+- [[AsyncMock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/AsyncMock

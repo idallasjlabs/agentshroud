@@ -1,22 +1,19 @@
 ---
-source_file: "gateway/inbound_edge/oauth_service.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "EdgeOAuthService"
-location: "L67"
+community: "prompt_guard.py"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/prompt_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_137]] - `calls` [EXTRACTED]
-- [[EdgeOAuthService]] - `method` [EXTRACTED]
-- [[EdgeStore]] - `references` [EXTRACTED]
-- [[Notify]] - `references` [EXTRACTED]
-- [[TokenService]] - `references` [EXTRACTED]
-- [[VendorProfile]] - `references` [EXTRACTED]
+- [[Args block_threshold Score at or above which input is blocked.…]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/prompt_guardpy

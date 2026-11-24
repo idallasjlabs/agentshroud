@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L42"
+community: "ServerConfig"
+location: "L71"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/ServerConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[ConsentFramework]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

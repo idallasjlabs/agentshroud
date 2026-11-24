@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "DraftEntry"
+community: "EgressFilter"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/EgressFilter
 ---
 
 # domain_matches()
@@ -21,4 +21,4 @@ tags:
 - [[egress_config.py_2]] - `contains` [EXTRACTED]
 - [[egress_filter.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/proxy/slack_socket_client.py"
 type: "code"
-community: "ToolResultInjectionScanner"
-location: "L176"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules. Args custom_rules…]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[SlackSocketClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

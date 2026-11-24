@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_sanitizer.py"
+source_file: "gateway/proxy/collaborator_greeter.py"
 type: "code"
-community: "PIIConfig"
-location: "L154"
+community: "test_collaborator_greeter.py"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/test_collaborator_greeterpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAnalyzer]] - `method` [EXTRACTED]
+- [[dot-_load_state()]] - `calls` [EXTRACTED]
+- [[dot-_load_taglines()]] - `calls` [EXTRACTED]
+- [[AsyncClient]] - `references` [EXTRACTED]
+- [[CollaboratorGreeter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

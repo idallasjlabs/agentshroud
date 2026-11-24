@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "WebhookReceiver"
+community: "UserSessionManager"
 location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebhookReceiver
+  - community/UserSessionManager
 ---
 
 # ._can_create_directory()
 
 ## Connections
-- [[dot-__init__()_185]] - `calls` [EXTRACTED]
+- [[dot-__init__()_184]] - `calls` [EXTRACTED]
 - [[Check if we can create the given directory path.]] - `rationale_for` [EXTRACTED]
-- [[Path_66]] - `references` [EXTRACTED]
+- [[Path_64]] - `references` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebhookReceiver
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

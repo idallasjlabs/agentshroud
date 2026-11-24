@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "MemoryIntegrityMonitor"
-location: "L65"
+community: "GroupWorkspaceManager"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryIntegrityMonitor
+  - community/GroupWorkspaceManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[dot-_load_write_windows()]] - `calls` [EXTRACTED]
-- [[MemoryIntegrityConfig]] - `references` [EXTRACTED]
-- [[MemoryIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_12]] - `references` [EXTRACTED]
+- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

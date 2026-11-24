@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L585"
+community: "test_intel_endpoint.py"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/test_intel_endpointpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

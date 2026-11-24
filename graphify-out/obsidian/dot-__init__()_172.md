@@ -1,17 +1,20 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "EgressFilter"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/EgressFilter
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[EgressFilterConfig]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

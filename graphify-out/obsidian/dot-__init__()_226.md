@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "test_progressive_lockdown.py"
-location: "L38"
+community: "A2APolicyConfig"
+location: "L437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_progressive_lockdownpy
+  - community/A2APolicyConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC_1]] - `method` [EXTRACTED]
+- [[HermesA2AForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_progressive_lockdownpy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

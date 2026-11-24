@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/module_stats.py"
+source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "test_module_stats.py"
-location: "L41"
+community: "EdgeOAuthService"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_module_statspy
+  - community/EdgeOAuthService
 ---
 
 # .__init__()
 
 ## Connections
-- [[ModuleStatsCollector]] - `method` [EXTRACTED]
+- [[dot-__init__()_126]] - `calls` [EXTRACTED]
+- [[OAuthFailure]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_module_statspy
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

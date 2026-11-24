@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "AuditChain"
-location: "L136"
+community: "._run_proxy"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/_run_proxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AuditChain]] - `method` [EXTRACTED]
+- [[_FakeResp]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/_run_proxy

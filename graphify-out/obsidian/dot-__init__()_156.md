@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/collaborator_tracker.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "CollaboratorActivityTracker"
-location: "L54"
+community: "_run_asgi"
+location: "L718"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollaboratorActivityTracker
+  - community/_run_asgi
 ---
 
 # .__init__()
 
 ## Connections
-- [[CollaboratorActivityTracker]] - `method` [EXTRACTED]
-- [[Path_51]] - `references` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollaboratorActivityTracker
+#graphify/code #graphify/EXTRACTED #community/_run_asgi

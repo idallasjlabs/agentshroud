@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "._filter_outbound"
 location: "L3928"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/_filter_outbound
 ---
 
 # ._apply_outbound_model_error_rewrites()
@@ -15,8 +15,8 @@ tags:
 - [[dot-_collaborator_safe_notice()]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
 - [[dot-_rewrite_known_runtime_errors()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[Rewrite raw modelruntime error texts to actionable user-facing messages. Pure…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/_filter_outbound
