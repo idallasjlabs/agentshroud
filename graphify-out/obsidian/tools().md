@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Replace shutil.which with a controllable name → path mapping.]] - `rationale_for` [EXTRACTED]
-- [[fixture_42]] - `references` [EXTRACTED]
+- [[fixture_48]] - `references` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/fs

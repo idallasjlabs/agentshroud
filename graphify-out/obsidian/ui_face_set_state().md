@@ -1,12 +1,12 @@
 ---
 source_file: "firmware/voice-terminal/main/ui_face.c"
 type: "code"
-community: "app_main.c"
+community: "test_playback_state.c"
 location: "L371"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/app_mainc
+  - community/test_playback_statec
 ---
 
 # ui_face_set_state()
@@ -19,4 +19,4 @@ tags:
 - [[voice_task()]] - `calls` [INFERRED]
 - [[ws_vg_state_t]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/app_mainc
+#graphify/code #graphify/INFERRED #community/test_playback_statec

@@ -15,8 +15,8 @@ tags:
 - [[TestVersionRoutes]] - `contains` [EXTRACTED]
 - [[Tests for Version Manager API Routes.]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `contains` [EXTRACTED]
-- [[client()_19]] - `contains` [EXTRACTED]
-- [[fastapi_3]] - `imports_from` [EXTRACTED]
+- [[client()_20]] - `contains` [EXTRACTED]
+- [[fastapi_4]] - `imports_from` [EXTRACTED]
 - [[tmp_version_db()]] - `contains` [EXTRACTED]
 - [[version_routes.py_2]] - `imports_from` [EXTRACTED]
 

@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
 - [[Live regression 2026-08-07 Hermes's own internal LLM failover (Anthropic…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_60]] - `references` [EXTRACTED]
-- [[mock_stream()_17]] - `contains` [EXTRACTED]
-- [[mock_stream()_18]] - `indirect_call` [INFERRED]
+- [[asyncio_58]] - `references` [EXTRACTED]
+- [[mock_stream()_5]] - `contains` [EXTRACTED]
+- [[mock_stream()_6]] - `indirect_call` [INFERRED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentTarget

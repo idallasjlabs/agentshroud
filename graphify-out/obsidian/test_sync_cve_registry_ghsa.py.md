@@ -20,7 +20,7 @@ tags:
 - [[TestNvdReportOnly]] - `contains` [EXTRACTED]
 - [[TestPerAgentIsolation]] - `contains` [EXTRACTED]
 - [[TestProcessGhsaAdvisories]] - `contains` [EXTRACTED]
-- [[TestSerialization]] - `contains` [EXTRACTED]
+- [[TestSerialization_1]] - `contains` [EXTRACTED]
 - [[TestSnapshotSmoke]] - `contains` [EXTRACTED]
 - [[Tests for scriptssync-cve-registry.py — Phase 1 GHSA under_review auto-…]] - `rationale_for` [EXTRACTED]
 - [[_adv()]] - `contains` [EXTRACTED]

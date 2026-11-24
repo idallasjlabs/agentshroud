@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "app"
 location: "L1003"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/app
 ---
 
 # test_ws_empty_transcript_goes_idle()
@@ -18,4 +18,4 @@ tags:
 - [[app()]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/app

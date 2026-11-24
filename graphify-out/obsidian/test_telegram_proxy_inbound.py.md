@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # test_telegram_proxy_inbound.py
@@ -41,8 +41,8 @@ tags:
 - [[_no_owner_mirror()]] - `contains` [EXTRACTED]
 - [[_no_real_telegram_network()]] - `contains` [EXTRACTED]
 - [[_wrap_response()]] - `contains` [EXTRACTED]
-- [[asyncio_21]] - `imports` [EXTRACTED]
+- [[asyncio_22]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

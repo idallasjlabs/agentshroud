@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "test_security_integration.py"
-location: "L70"
+community: "A2APolicyConfig"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/A2APolicyConfig
 ---
 
 # trust_manager()
 
 ## Connections
+- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_107]] - `references` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[fixture_141]] - `references` [EXTRACTED]
+- [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig

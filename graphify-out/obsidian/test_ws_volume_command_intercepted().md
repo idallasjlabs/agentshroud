@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L2547"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # test_ws_volume_command_intercepted()
@@ -17,8 +17,8 @@ tags:
 - [[_capture_synth()]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
-- [[asyncio_50]] - `references` [EXTRACTED]
+- [[asyncio_71]] - `references` [EXTRACTED]
 - [[set volume X%' must NOT reach the agent the server sends a…]] - `rationale_for` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_mock_ws

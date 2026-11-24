@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L3093"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # test_ws_use_model_command_with_chained_question()
@@ -21,7 +21,7 @@ tags:
 - [[_mock_llm()_1]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
-- [[asyncio_50]] - `references` [EXTRACTED]
+- [[asyncio_71]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_mock_ws

@@ -12,7 +12,7 @@ tags:
 # test_upgrade_hermes_restarts_the_real_container_name()
 
 ## Connections
-- [[__init__()_10]] - `contains` [EXTRACTED]
+- [[__init__()_9]] - `contains` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 - [[update_service()_2]] - `contains` [EXTRACTED]
 - [[update_service() must be called with the real container name (agentshroud-…]] - `rationale_for` [EXTRACTED]

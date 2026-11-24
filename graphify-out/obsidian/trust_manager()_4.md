@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_a2a_trust_scoring.py"
+source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "lifespan.py"
-location: "L74"
+community: "test_security_integration.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_security_integrationpy
 ---
 
 # trust_manager()
 
 ## Connections
-- [[ProgressiveTrustConfig]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_88]] - `references` [EXTRACTED]
-- [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
+- [[fixture_106]] - `references` [EXTRACTED]
+- [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

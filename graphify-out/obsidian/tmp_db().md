@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Create a temporary database for testing.]] - `rationale_for` [EXTRACTED]
-- [[fixture_120]] - `references` [EXTRACTED]
+- [[fixture_122]] - `references` [EXTRACTED]
 - [[test_agentshroud_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/version_routespy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L491"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # test_submit_does_not_deadlock_on_hung_websocket_client()
@@ -21,4 +21,4 @@ tags:
 - [[asyncio_48]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

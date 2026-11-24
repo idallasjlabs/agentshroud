@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "test_redteam_probes.py"
+community: "TrustManager"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_redteam_probespy
+  - community/TrustManager
 ---
 
 # test_trust_escalation_blocked()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Trust level must not allow exec from conversation alone.]] - `rationale_for` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[asyncio_27]] - `references` [EXTRACTED]
+- [[asyncio_42]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

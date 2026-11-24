@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L447"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # test_websocket_notifications()
@@ -20,4 +20,4 @@ tags:
 - [[asyncio_48]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue
+#graphify/code #graphify/INFERRED #community/test_mfa_guardpy

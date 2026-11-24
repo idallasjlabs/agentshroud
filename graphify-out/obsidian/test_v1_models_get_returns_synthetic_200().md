@@ -12,7 +12,7 @@ tags:
 # test_v1_models_get_returns_synthetic_200()
 
 ## Connections
-- [[parametrize_12]] - `references` [EXTRACTED]
+- [[parametrize_10]] - `references` [EXTRACTED]
 - [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
