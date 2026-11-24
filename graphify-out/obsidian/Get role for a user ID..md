@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "rationale"
-community: "middleware.py"
+community: ".get_user_role"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/get_user_role
 ---
 
 # Get role for a user ID.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_user_role()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/get_user_role

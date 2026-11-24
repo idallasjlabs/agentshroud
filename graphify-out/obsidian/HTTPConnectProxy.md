@@ -12,15 +12,15 @@ tags:
 # HTTPConnectProxy
 
 ## Connections
-- [[dot-__init__()_163]] - `method` [EXTRACTED]
+- [[dot-__init__()_151]] - `method` [EXTRACTED]
 - [[dot-_agent_id_for_peer()]] - `method` [EXTRACTED]
 - [[dot-_clamav_scan_bytes()]] - `method` [EXTRACTED]
 - [[dot-_handle_client()]] - `method` [EXTRACTED]
 - [[dot-_process_connect()]] - `method` [EXTRACTED]
 - [[dot-_relay()]] - `method` [EXTRACTED]
 - [[dot-_relay_and_scan()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_18]] - `method` [EXTRACTED]
-- [[dot-start()_2]] - `method` [EXTRACTED]
+- [[dot-get_stats()_17]] - `method` [EXTRACTED]
+- [[dot-start()_1]] - `method` [EXTRACTED]
 - [[dot-stop()_12]] - `method` [EXTRACTED]
 - [[AppState]] - `uses` [INFERRED]
 - [[Asyncio HTTP CONNECT proxy server. Intercepts CONNECT tunnel requests,…]] - `rationale_for` [EXTRACTED]

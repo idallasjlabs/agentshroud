@@ -12,7 +12,7 @@ tags:
 # GroupApprovalRouter
 
 ## Connections
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
+- [[dot-__init__()_24]] - `method` [EXTRACTED]
 - [[dot-_build_group_reply_text()]] - `method` [EXTRACTED]
 - [[dot-_build_owner_dm_text()]] - `method` [EXTRACTED]
 - [[dot-_default_send()]] - `method` [EXTRACTED]

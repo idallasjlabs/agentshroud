@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "Any"
 location: "L469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Any
 ---
 
 # Get current system statistics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_get_system_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Any

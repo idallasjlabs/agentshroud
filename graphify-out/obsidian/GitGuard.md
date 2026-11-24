@@ -12,8 +12,8 @@ tags:
 # GitGuard
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_135]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_125]] - `method` [EXTRACTED]
 - [[dot-_analyze_file_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_file()]] - `method` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[dot-test_clean_hook_passes()]] - `calls` [EXTRACTED]
 - [[dot-test_clean_repo_no_findings()]] - `calls` [EXTRACTED]
 - [[dot-test_curl_in_hook_flagged()]] - `calls` [EXTRACTED]
-- [[dot-test_default_mode_is_enforce()_5]] - `calls` [EXTRACTED]
+- [[dot-test_default_mode_is_enforce()_6]] - `calls` [EXTRACTED]
 - [[dot-test_finding_has_file_path()]] - `calls` [EXTRACTED]
 - [[dot-test_git_guard_detects_credential_patterns()]] - `calls` [INFERRED]
 - [[dot-test_git_guard_instantiates()]] - `calls` [EXTRACTED]
@@ -50,7 +50,7 @@ tags:
 - [[git_guard.py]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[scan_repository()]] - `calls` [EXTRACTED]
 - [[t_git()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
