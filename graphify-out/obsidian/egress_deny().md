@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Deny an egress request (oncesessionpermanent).]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[post_6]] - `references` [EXTRACTED]

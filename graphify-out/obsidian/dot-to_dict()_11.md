@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "AuditChain"
-location: "L88"
+community: "UserSessionManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/UserSessionManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
-- [[PipelineResult]] - `method` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

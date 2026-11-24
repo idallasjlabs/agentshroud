@@ -12,7 +12,7 @@ tags:
 # egress_emergency_block()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Enabledisable emergency block-all for outbound egress.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[post_6]] - `references` [EXTRACTED]

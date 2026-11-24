@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/consent_framework.py"
 type: "code"
-community: "ConsentFramework"
+community: "ServerConfig"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConsentFramework
+  - community/ServerConfig
 ---
 
 # .validate_config()
@@ -19,4 +19,4 @@ tags:
 - [[ShellInjectionDetected]] - `calls` [EXTRACTED]
 - [[Validate a server configuration before execution.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConsentFramework
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

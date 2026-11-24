@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_pipeline.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L102"
+community: "asyncio"
+location: "L354"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/EnhancedApprovalQueue
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # emit()
 
 ## Connections
-- [[edge()]] - `indirect_call` [INFERRED]
+- [[dot-test_emits_egress_event_to_event_bus()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "email_send"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # .validate_source()
@@ -15,4 +15,4 @@ tags:
 - [[ForwardRequest]] - `method` [EXTRACTED]
 - [[field_validator_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/email_send

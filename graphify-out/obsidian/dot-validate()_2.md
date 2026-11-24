@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/key_rotation.py"
+source_file: "gateway/security/output_schema.py"
 type: "code"
-community: "Any"
-location: "L110"
+community: "OutputSchemaEnforcer"
+location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/OutputSchemaEnforcer
 ---
 
 # .validate()
 
 ## Connections
-- [[Any_25]] - `references` [EXTRACTED]
-- [[CredentialValidator]] - `method` [EXTRACTED]
-- [[Validate a credential. Returns tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
+- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
+- [[SchemaValidationResult]] - `calls` [EXTRACTED]
+- [[Validate output against the named schema. Args output The agent response text…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

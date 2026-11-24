@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "InstructionEnvelope"
+community: "EnvelopeSigner"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InstructionEnvelope
+  - community/EnvelopeSigner
 ---
 
 # .wrap_system_prompt()
@@ -17,4 +17,4 @@ tags:
 - [[EnvelopeSigner]] - `method` [EXTRACTED]
 - [[InstructionEnvelope]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InstructionEnvelope
+#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner

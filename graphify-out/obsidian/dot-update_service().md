@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "._get_engine"
+community: "ServiceManager"
 location: "L376"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_get_engine
+  - community/ServiceManager
 ---
 
 # .update_service()
@@ -16,4 +16,4 @@ tags:
 - [[Pull the latest image then restart the container.]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_get_engine
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

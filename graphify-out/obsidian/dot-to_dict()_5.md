@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "ContainerSnapshot"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/ContainerSnapshot
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_58]] - `references` [EXTRACTED]
-- [[RemediationPlan]] - `method` [EXTRACTED]
-- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

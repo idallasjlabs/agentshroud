@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # enhanced_queue.py
@@ -22,8 +22,8 @@ tags:
 - [[ToolRiskPolicy]] - `imports` [EXTRACTED]
 - [[approval_queuestore.py]] - `imports_from` [EXTRACTED]
 - [[approvals.py]] - `imports_from` [EXTRACTED]
-- [[fastapi_3]] - `imports_from` [EXTRACTED]
-- [[httpx_1]] - `imports` [EXTRACTED]
+- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[httpx]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -36,4 +36,4 @@ tags:
 - [[test_enhanced_approval.py]] - `imports_from` [EXTRACTED]
 - [[test_mfa_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

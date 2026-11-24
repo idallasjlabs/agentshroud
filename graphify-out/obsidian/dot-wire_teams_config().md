@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "middleware.py"
+community: "soc/router.py"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/soc/routerpy
 ---
 
 # .wire_teams_config()
@@ -15,4 +15,4 @@ tags:
 - [[Merge group membership and admin IDs from TeamsConfig into RBAC. Called from…]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

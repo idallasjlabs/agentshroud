@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
 community: "ingest_api/main.py"
-location: "L85"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,7 @@ tags:
 # .to_dict()
 
 ## Connections
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

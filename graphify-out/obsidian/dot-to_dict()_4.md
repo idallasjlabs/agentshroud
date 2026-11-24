@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "Delegation"
-location: "L73"
+community: "lifespan.py"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Delegation
+  - community/lifespanpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Delegation]] - `method` [EXTRACTED]
+- [[Any_15]] - `references` [EXTRACTED]
+- [[CanaryResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Delegation
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

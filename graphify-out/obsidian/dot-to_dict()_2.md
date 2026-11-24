@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "ContainerSnapshot"
-location: "L35"
+community: "DelegationPrivilege"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/DelegationPrivilege
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[Delegation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

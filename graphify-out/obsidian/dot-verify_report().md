@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/citation_verifier.py"
 type: "code"
-community: "DraftEntry"
+community: ".verify_entry"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/verify_entry
 ---
 
 # .verify_report()
@@ -18,4 +18,4 @@ tags:
 - [[DraftEntry]] - `references` [EXTRACTED]
 - [[Verify every draft claim; return a report of only verified claims. Claims…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/verify_entry

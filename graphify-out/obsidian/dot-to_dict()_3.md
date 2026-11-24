@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "SecurityPipeline"
-location: "L50"
+community: "EgressScope"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/EgressScope
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_16]] - `references` [EXTRACTED]
-- [[CanaryResult]] - `method` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/EgressScope

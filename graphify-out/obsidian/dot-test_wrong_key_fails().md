@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
 community: "EncryptedStore"
-location: "L725"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestCryptography]] - `method` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/EncryptedStore

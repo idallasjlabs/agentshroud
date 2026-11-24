@@ -12,7 +12,7 @@ tags:
 # export_hermes()
 
 ## Connections
-- [[Path_70]] - `references` [EXTRACTED]
+- [[Path_69]] - `references` [EXTRACTED]
 - [[_docker_read_file()]] - `calls` [EXTRACTED]
 - [[datetime_7]] - `references` [EXTRACTED]
 - [[export()]] - `conceptually_related_to` [INFERRED]

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/models.py"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/ingest_api/mainpy
 ---
 
 # exception_handler
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

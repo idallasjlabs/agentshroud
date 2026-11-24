@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "email_send"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/email_send
 ---
 
 # email_send()
 
 ## Connections
 - [[ApprovalRequest]] - `uses` [INFERRED]
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Email send gateway (P3 channel ownership). The bot submits email send requests…]] - `rationale_for` [EXTRACTED]
 - [[EmailSendRequest]] - `uses` [INFERRED]
 - [[EmailSendResponse]] - `uses` [INFERRED]
@@ -24,4 +24,4 @@ tags:
 - [[forward.py]] - `contains` [EXTRACTED]
 - [[post_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/email_send
