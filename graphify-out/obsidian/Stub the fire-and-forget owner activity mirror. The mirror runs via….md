@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "test_telegram_proxy_inbound.py"
+community: "._make_proxy"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_telegram_proxy_inboundpy
+  - community/_make_proxy
 ---
 
 # Stub the fire-and-forget owner activity mirror. The mirror runs via…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_no_owner_mirror()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_inboundpy
+#graphify/rationale #graphify/EXTRACTED #community/_make_proxy

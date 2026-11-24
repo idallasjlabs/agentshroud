@@ -12,7 +12,7 @@ tags:
 # Technical Writer (TW)
 
 ## Connections
-- [[Purpose_157]] - `contains` [EXTRACTED]
+- [[Purpose_155]] - `contains` [EXTRACTED]
 - [[Related Skills_87]] - `contains` [EXTRACTED]
 - [[Usage_97]] - `contains` [EXTRACTED]
 - [[openclawskillsi-twREADME]] - `contains` [EXTRACTED]

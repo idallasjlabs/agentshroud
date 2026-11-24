@@ -12,7 +12,7 @@ tags:
 # System Audit Vault
 
 ## Connections
-- [[Purpose_150]] - `contains` [EXTRACTED]
+- [[Purpose_148]] - `contains` [EXTRACTED]
 - [[Related Skills_80]] - `contains` [EXTRACTED]
 - [[Usage_90]] - `contains` [EXTRACTED]
 - [[openclawskillsi-savREADME]] - `contains` [EXTRACTED]

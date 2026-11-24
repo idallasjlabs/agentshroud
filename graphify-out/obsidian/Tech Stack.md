@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "dashboard/README.md"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/dashboard/READMEmd
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # Tech Stack
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AgentShroud Dashboard]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/dashboard/READMEmd
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "lifespan.py"
+community: "ToolACLEnforcer"
 location: "L145"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ToolACLEnforcer
 ---
 
 # Stored level is the promotion ceiling when the ladder is active.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_trust_respects_stored_ceiling()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

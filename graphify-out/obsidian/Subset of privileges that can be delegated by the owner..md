@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/delegation.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "DelegationPrivilege"
 location: "L48"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/DelegationPrivilege
 ---
 
 # Subset of privileges that can be delegated by the owner.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[DelegationPrivilege]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/DelegationPrivilege

@@ -12,6 +12,6 @@ tags:
 # Strip admin-private content from a response before delivering to user. Args:…
 
 ## Connections
-- [[dot-filter_response()]] - `rationale_for` [EXTRACTED]
+- [[dot-filter_response()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

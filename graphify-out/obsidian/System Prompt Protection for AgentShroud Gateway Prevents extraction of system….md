@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "middleware.py"
+community: "run"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/run
 ---
 
 # System Prompt Protection for AgentShroud Gateway Prevents extraction of system…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[prompt_protection.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/run

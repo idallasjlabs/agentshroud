@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "lifespan.py"
 location: "L52"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/lifespanpy
 ---
 
 # Subscribe to all events
 
 ## Connections
-- [[dot-subscribe()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-subscribe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
