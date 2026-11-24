@@ -32,6 +32,6 @@ tags:
 - [[TestEnvironmentValidation]] - `uses` [INFERRED]
 - [[TestServerConfigValidation]] - `uses` [INFERRED]
 - [[TestWhitelistBlacklist]] - `uses` [INFERRED]
-- [[consent_framework.py_2]] - `contains` [EXTRACTED]
+- [[consent_framework.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/ServerConfig

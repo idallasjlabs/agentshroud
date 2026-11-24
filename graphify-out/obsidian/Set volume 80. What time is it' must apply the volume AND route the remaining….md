@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "asyncio"
+community: "_mock_ws"
 location: "L2601"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # Set volume 80. What time is it?' must apply the volume AND route the remaining…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_volume_command_with_chained_question()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/_mock_ws

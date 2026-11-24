@@ -12,17 +12,17 @@ tags:
 # ServiceManager
 
 ## Connections
-- [[dot-__init__()_64]] - `method` [EXTRACTED]
+- [[dot-__init__()_162]] - `method` [EXTRACTED]
 - [[dot-_describe_service()]] - `method` [EXTRACTED]
 - [[dot-_get_engine()]] - `method` [EXTRACTED]
 - [[dot-_logs_via_socket()]] - `method` [EXTRACTED]
-- [[dot-get_logs()]] - `method` [EXTRACTED]
+- [[dot-get_logs()_1]] - `method` [EXTRACTED]
 - [[dot-get_service()]] - `method` [EXTRACTED]
 - [[dot-list_services()]] - `method` [EXTRACTED]
 - [[dot-mgr_with_engine()]] - `calls` [EXTRACTED]
-- [[dot-restart_service()]] - `method` [EXTRACTED]
+- [[dot-restart_service()_1]] - `method` [EXTRACTED]
 - [[dot-start_service()]] - `method` [EXTRACTED]
-- [[dot-stop_service()]] - `method` [EXTRACTED]
+- [[dot-stop_service()_1]] - `method` [EXTRACTED]
 - [[dot-test_all_actions_false_without_engine()]] - `calls` [EXTRACTED]
 - [[dot-test_bytes_payload_is_decoded()]] - `calls` [EXTRACTED]
 - [[dot-test_empty_info_means_container_not_found()]] - `calls` [EXTRACTED]

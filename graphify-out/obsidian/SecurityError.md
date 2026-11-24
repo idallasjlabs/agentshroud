@@ -16,7 +16,7 @@ tags:
 - [[dot-extract()]] - `calls` [EXTRACTED]
 - [[dot-fill_field()]] - `calls` [EXTRACTED]
 - [[dot-navigate()]] - `calls` [EXTRACTED]
-- [[Exception_4]] - `inherits` [EXTRACTED]
+- [[Exception_7]] - `inherits` [EXTRACTED]
 - [[Raised when security policy is violated]] - `rationale_for` [EXTRACTED]
 - [[browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 

@@ -12,6 +12,6 @@ tags:
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_17]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_15]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/setup_method

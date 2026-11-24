@@ -12,7 +12,7 @@ tags:
 # SidecarScanner
 
 ## Connections
-- [[dot-__init__()_132]] - `method` [EXTRACTED]
+- [[dot-__init__()_122]] - `method` [EXTRACTED]
 - [[dot-get_stats()_9]] - `method` [EXTRACTED]
 - [[dot-scan()_2]] - `method` [EXTRACTED]
 - [[Sidecar security scanner — reduced security, traffic can bypass. This is for…]] - `rationale_for` [EXTRACTED]

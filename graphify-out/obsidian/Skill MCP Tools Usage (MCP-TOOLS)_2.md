@@ -1,8 +1,8 @@
 ---
-source_file: ".github/agents/i-mcpm.agent.md"
+source_file: ".cursor/agents/i-mcpm.md"
 type: "document"
 community: "Available MCP Servers"
-location: "L11"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,9 +12,9 @@ tags:
 # Skill: MCP Tools Usage (MCP-TOOLS)
 
 ## Connections
-- [[Available MCP Servers_3]] - `contains` [EXTRACTED]
-- [[MCP Troubleshooting_2]] - `contains` [EXTRACTED]
-- [[Role_71]] - `contains` [EXTRACTED]
-- [[i-mcpm.agent]] - `contains` [EXTRACTED]
+- [[dot-cursoragentsi-mcpm]] - `contains` [EXTRACTED]
+- [[Available MCP Servers_2]] - `contains` [EXTRACTED]
+- [[MCP Troubleshooting_1]] - `contains` [EXTRACTED]
+- [[Role_67]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

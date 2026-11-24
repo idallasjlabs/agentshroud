@@ -16,7 +16,7 @@ tags:
 - [[Core Discipline Understand → Structure → Write → Validate]] - `contains` [EXTRACTED]
 - [[Document Structure]] - `contains` [EXTRACTED]
 - [[Document-Type Patterns]] - `contains` [EXTRACTED]
-- [[Role_68]] - `contains` [EXTRACTED]
+- [[Role_69]] - `contains` [EXTRACTED]
 - [[Rules_11]] - `contains` [EXTRACTED]
 - [[hermesskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[hermesskillsi-twSKILL]] - `contains` [EXTRACTED]

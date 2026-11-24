@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "EgressFilter"
+community: "management.py"
 location: "L891"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/managementpy
 ---
 
 # Serve the emergency kill switch page.
 
 ## Connections
-- [[killswitch()_1]] - `rationale_for` [EXTRACTED]
+- [[killswitch()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

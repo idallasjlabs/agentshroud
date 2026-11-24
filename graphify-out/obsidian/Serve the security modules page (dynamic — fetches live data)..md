@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "EgressFilter"
+community: "management.py"
 location: "L86"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/managementpy
 ---
 
 # Serve the security modules page (dynamic — fetches live data).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[modules()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

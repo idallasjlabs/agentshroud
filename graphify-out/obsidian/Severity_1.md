@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # Severity
 
 ## Connections
-- [[Enum_38]] - `inherits` [EXTRACTED]
+- [[Enum_39]] - `inherits` [EXTRACTED]
 - [[TestCoerceToWSEvent]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
@@ -31,11 +31,11 @@ tags:
 - [[from_egress_attempt()]] - `uses` [INFERRED]
 - [[from_pipeline_result()]] - `uses` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_21]] - `inherits` [EXTRACTED]
+- [[str_22]] - `inherits` [EXTRACTED]
 - [[test_soc_bots.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/soc/modelspy
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

@@ -17,7 +17,7 @@ tags:
 - [[Core Principle]] - `contains` [EXTRACTED]
 - [[Output Format_11]] - `contains` [EXTRACTED]
 - [[Review Layers]] - `contains` [EXTRACTED]
-- [[Role_34]] - `contains` [EXTRACTED]
+- [[Role_35]] - `contains` [EXTRACTED]
 - [[SecureClaw-Specific Threat Model]] - `contains` [EXTRACTED]
 - [[Verification Commands]] - `contains` [EXTRACTED]
 

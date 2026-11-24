@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "test_runtime_engines.py"
+community: "generate_compose"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_runtime_enginespy
+  - community/generate_compose
 ---
 
 # ServiceDef
@@ -16,9 +16,9 @@ tags:
 - [[dot-test_generate_custom_services()]] - `calls` [EXTRACTED]
 - [[Definition of a single service for compose generation.]] - `rationale_for` [EXTRACTED]
 - [[TestComposeGenerator]] - `uses` [INFERRED]
-- [[compose_generator.py_2]] - `contains` [EXTRACTED]
+- [[compose_generator.py]] - `contains` [EXTRACTED]
 - [[generate_apple_script()]] - `references` [EXTRACTED]
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy
+#graphify/code #graphify/EXTRACTED #community/generate_compose

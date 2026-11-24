@@ -12,8 +12,8 @@ tags:
 # SessionManager
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_198]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_193]] - `method` [EXTRACTED]
 - [[dot-_fingerprint()]] - `method` [EXTRACTED]
 - [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[dot-create_session()]] - `method` [EXTRACTED]
@@ -35,7 +35,7 @@ tags:
 - [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
-- [[manager()_3]] - `uses` [INFERRED]
+- [[manager()_4]] - `uses` [INFERRED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[session_security.py_2]] - `contains` [EXTRACTED]
 

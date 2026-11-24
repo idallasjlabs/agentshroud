@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_rbac.py"
 type: "rationale"
-community: "GroupRole"
+community: "GroupRoleResolver"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRole
+  - community/GroupRoleResolver
 ---
 
 # Set or update the role for a user in a specific group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-set_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRole
+#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver

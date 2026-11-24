@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/management.py"
 type: "rationale"
-community: "EgressFilter"
+community: "management.py"
 location: "L312"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/managementpy
 ---
 
 # Serve the collaborators page (dynamic — fetches live activity data).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[collaborators()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/managementpy

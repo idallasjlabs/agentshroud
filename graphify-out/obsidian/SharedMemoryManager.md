@@ -12,7 +12,7 @@ tags:
 # SharedMemoryManager
 
 ## Connections
-- [[dot-__init__()_92]] - `method` [EXTRACTED]
+- [[dot-__init__()_96]] - `method` [EXTRACTED]
 - [[dot-_is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[dot-_strip_private_content()]] - `method` [EXTRACTED]
 - [[dot-append_to_group_memory()]] - `method` [EXTRACTED]

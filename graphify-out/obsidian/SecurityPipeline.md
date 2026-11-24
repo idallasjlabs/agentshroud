@@ -12,7 +12,7 @@ tags:
 # SecurityPipeline
 
 ## Connections
-- [[dot-__init__()_184]] - `method` [EXTRACTED]
+- [[dot-__init__()_180]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]
 - [[dot-_maybe_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-_pipeline()]] - `calls` [EXTRACTED]
@@ -22,8 +22,8 @@ tags:
 - [[dot-get_stats()_14]] - `method` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-process_inbound()_4]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_5]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_5]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_6]] - `method` [EXTRACTED]
 - [[dot-set_global_mode()]] - `method` [EXTRACTED]
 - [[dot-test_detector_failure_fails_closed_for_non_owner()]] - `calls` [EXTRACTED]
 - [[dot-test_full_trust_tool_result_injection_audited_not_blocked()]] - `calls` [EXTRACTED]
@@ -75,7 +75,7 @@ tags:
 - [[pipeline()_2]] - `uses` [INFERRED]
 - [[pipeline()]] - `uses` [INFERRED]
 - [[pipeline.py_1]] - `contains` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[state.py]] - `imports` [EXTRACTED]
 - [[test_canary.py]] - `imports` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `imports` [EXTRACTED]
