@@ -1,17 +1,27 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L474"
+community: "parse_clamscan_output"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/parse_clamscan_output
 ---
 
 # run_clamscan()
 
 ## Connections
-- [[test_manage_scan_all_endpoint()]] - `contains` [EXTRACTED]
+- [[dot-_clamav_scan_bytes()]] - `calls` [EXTRACTED]
+- [[dot-test_clamav_binary_not_found()]] - `calls` [EXTRACTED]
+- [[dot-test_run_not_found()]] - `calls` [EXTRACTED]
+- [[Any_74]] - `references` [EXTRACTED]
+- [[Run ClamAV scan and return parsed results. Args target Directory or file to…]] - `rationale_for` [EXTRACTED]
+- [[_run_capture()]] - `calls` [EXTRACTED]
+- [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
+- [[http_proxy.py]] - `imports` [EXTRACTED]
+- [[parse_clamscan_output()]] - `calls` [EXTRACTED]
+- [[test_security_audit.py]] - `imports` [EXTRACTED]
+- [[test_security_toolchain.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output

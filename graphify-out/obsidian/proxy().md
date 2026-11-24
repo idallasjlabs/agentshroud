@@ -1,20 +1,22 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "SSHProxy"
-location: "L47"
+community: "test_mcp_proxy.py"
+location: "L80"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/SSHProxy
+  - graphify/INFERRED
+  - community/test_mcp_proxypy
 ---
 
 # proxy()
 
 ## Connections
-- [[SSHConfig]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
-- [[fixture_51]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[MCPAuditTrail]] - `uses` [INFERRED]
+- [[MCPInspector]] - `uses` [INFERRED]
+- [[MCPPermissionManager]] - `uses` [INFERRED]
+- [[MCPProxy]] - `uses` [INFERRED]
+- [[fixture_39]] - `references` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/INFERRED #community/test_mcp_proxypy

@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-_audit()_1]] - `calls` [EXTRACTED]
-- [[dot-can_use_tool()_1]] - `calls` [EXTRACTED]
+- [[dot-can_use_tool()]] - `calls` [EXTRACTED]
 - [[dot-can_use_tool_from_origin()]] - `calls` [EXTRACTED]
-- [[dot-check()_6]] - `calls` [EXTRACTED]
+- [[dot-check()_5]] - `calls` [EXTRACTED]
 - [[dot-evaluate()_1]] - `calls` [EXTRACTED]
 - [[dot-evaluate()]] - `calls` [EXTRACTED]
 - [[dot-test_record_decision_helper()]] - `calls` [EXTRACTED]

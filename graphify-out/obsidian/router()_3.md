@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # router()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
-- [[fixture_65]] - `references` [EXTRACTED]
+- [[fixture_102]] - `references` [EXTRACTED]
 - [[test_router_streaming.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

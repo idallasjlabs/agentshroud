@@ -12,11 +12,11 @@ tags:
 # quarantine_summary()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - `rationale_for` [EXTRACTED]
 - [[_count_by_status()]] - `contains` [EXTRACTED]
 - [[_top_reasons()]] - `contains` [EXTRACTED]
-- [[get_4]] - `references` [EXTRACTED]
+- [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

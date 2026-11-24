@@ -12,7 +12,7 @@ tags:
 # run_ghsa_sync()
 
 ## Connections
-- [[Path_69]] - `references` [EXTRACTED]
+- [[Path_68]] - `references` [EXTRACTED]
 - [[Run the GHSA pipeline for EVERY registered agent, each on its OWN path. Returns…]] - `rationale_for` [EXTRACTED]
 - [[list_cve_agents()]] - `calls` [EXTRACTED]
 - [[main()_34]] - `calls` [EXTRACTED]

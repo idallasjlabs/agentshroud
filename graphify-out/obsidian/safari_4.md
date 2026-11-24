@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-ompmcp.json]] - `contains` [EXTRACTED]
 - [[opthomebrewbinnpx_3]] - `references` [EXTRACTED]
-- [[PATH_48]] - `requires_env` [EXTRACTED]
+- [[PATH_49]] - `requires_env` [EXTRACTED]
 - [[safari-mcp_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/omp/mcpjson

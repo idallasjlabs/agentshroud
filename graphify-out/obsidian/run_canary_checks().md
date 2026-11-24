@@ -12,7 +12,7 @@ tags:
 # run_canary_checks()
 
 ## Connections
-- [[AuthRequired_1]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[Run canary integrity checks.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[post_6]] - `references` [EXTRACTED]

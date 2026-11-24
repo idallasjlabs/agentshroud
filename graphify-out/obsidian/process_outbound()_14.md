@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
-location: "L265"
+community: "TestOutboundPipelineIntegration"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # process_outbound()
 
 ## Connections
-- [[dot-test_form_outbound_owner_exempt_from_fail_closed()]] - `contains` [EXTRACTED]
+- [[dot-test_outbound_pipeline_called_when_available()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

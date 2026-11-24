@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EgressFilter"
+community: "ModeRequest"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/ModeRequest
 ---
 
 # put
 
 ## Connections
-- [[update_egress_allowlist()]] - `references` [EXTRACTED]
+- [[set_mode()]] - `references` [EXTRACTED]
+- [[update_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_e2e_proxy.py"
+source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "test_e2e_proxy.py"
-location: "L52"
+community: "lifespan.py"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_proxypy
+  - community/lifespanpy
 ---
 
 # prompt_guard()
 
 ## Connections
+- [[Create a PromptGuard instance for testing]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[fixture_85]] - `references` [EXTRACTED]
-- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
+- [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

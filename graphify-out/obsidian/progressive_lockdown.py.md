@@ -12,7 +12,7 @@ tags:
 # progressive_lockdown.py
 
 ## Connections
-- [[Enum_39]] - `imports_from` [EXTRACTED]
+- [[Enum_40]] - `imports_from` [EXTRACTED]
 - [[LockdownAction]] - `contains` [EXTRACTED]
 - [[LockdownLevel]] - `contains` [EXTRACTED]
 - [[Progressive Lockdown — per-principal cumulative risk scoring and escalation.…]] - `rationale_for` [EXTRACTED]

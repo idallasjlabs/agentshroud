@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[PromptGuard]] - `uses` [INFERRED]
-- [[fixture_107]] - `references` [EXTRACTED]
+- [[fixture_106]] - `references` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_security_integrationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
+community: "EncodingDetector"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/EncodingDetector
 ---
 
 # replacer()
@@ -15,4 +15,4 @@ tags:
 - [[dot-decode_url()]] - `contains` [EXTRACTED]
 - [[DecodedLayer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/EncodingDetector

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_socket_client.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: ".test_get_wss_url_returns_url_on_success"
-location: "L122"
+community: "._fake_aiohttp"
+location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_get_wss_url_returns_url_on_success
+  - community/_fake_aiohttp
 ---
 
 # post()
 
 ## Connections
-- [[dot-test_get_wss_url_returns_url_on_success()]] - `contains` [EXTRACTED]
+- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_get_wss_url_returns_url_on_success
+#graphify/code #graphify/EXTRACTED #community/_fake_aiohttp

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "chat"
+community: "management.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chat
+  - community/managementpy
 ---
 
 # post
 
 ## Connections
-- [[chat()]] - `references` [EXTRACTED]
+- [[rotate_credential()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chat
+#graphify/code #graphify/EXTRACTED #community/managementpy

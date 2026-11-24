@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "version_routes.py"
+community: "detect_runtime"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/detect_runtime
 ---
 
 # post
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[start_install()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/detect_runtime

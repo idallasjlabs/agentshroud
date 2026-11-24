@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "_make_multipart_body"
-location: "L5082"
+community: "test_forward_stream.py"
+location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_multipart_body
+  - community/test_forward_streampy
 ---
 
 # process_outbound()
 
 ## Connections
-- [[dot-test_multipart_pipeline_block_non_owner()]] - `contains` [EXTRACTED]
+- [[test_filtered_stream_sentinel_stripped_fails_safe_by_releasing_all()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_multipart_body
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

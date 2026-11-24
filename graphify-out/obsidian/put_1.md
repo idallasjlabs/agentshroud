@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_web_api_coverage.py"
+community: "management.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/managementpy
 ---
 
 # put
 
 ## Connections
-- [[set_mode()]] - `references` [EXTRACTED]
-- [[update_config()]] - `references` [EXTRACTED]
+- [[update_egress_allowlist()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/managementpy

@@ -15,7 +15,7 @@ tags:
 - [[Resolve the model + provider Hermes should use, honouring local-model parity.…]] - `rationale_for` [EXTRACTED]
 - [[_apply_stale_alias_correction()]] - `contains` [EXTRACTED]
 - [[_resolve_from_env()]] - `contains` [EXTRACTED]
-- [[main()_6]] - `contains` [EXTRACTED]
+- [[main()_7]] - `contains` [EXTRACTED]
 - [[provider_for_model()]] - `contains` [EXTRACTED]
 - [[resolve_model()]] - `contains` [EXTRACTED]
 - [[strip_provider_prefix()]] - `contains` [EXTRACTED]

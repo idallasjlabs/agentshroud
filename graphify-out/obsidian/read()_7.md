@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_soc_services_coverage.py"
-location: "L8792"
+community: "._run_proxy"
+location: "L494"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/_run_proxy
 ---
 
 # read()
 
 ## Connections
-- [[dot-test_forward_file_download_aborts_at_size_limit()]] - `contains` [EXTRACTED]
+- [[dot-test_truncates_over_length_text()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_run_proxy

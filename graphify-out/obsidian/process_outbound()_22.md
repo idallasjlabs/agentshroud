@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
+community: ".test_pipeline_receives_trust_level"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/test_pipeline_receives_trust_level
 ---
 
 # process_outbound()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pipeline_receives_trust_level()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/test_pipeline_receives_trust_level

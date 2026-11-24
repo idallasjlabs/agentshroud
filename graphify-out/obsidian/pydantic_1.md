@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "ingest_api/models.py"
+community: "GatewayConfig"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/GatewayConfig
 ---
 
 # pydantic.md
@@ -30,4 +30,4 @@ tags:
 - [[test_intel_pipeline.py]] - `imports_from` [EXTRACTED]
 - [[version_routes.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/document #graphify/EXTRACTED #community/GatewayConfig

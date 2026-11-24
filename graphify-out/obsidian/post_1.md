@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "KeyRotationManager"
+community: "decide_approval"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/decide_approval
 ---
 
 # post
 
 ## Connections
-- [[rotate_credential()]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/decide_approval

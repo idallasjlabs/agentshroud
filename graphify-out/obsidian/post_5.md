@@ -12,7 +12,7 @@ tags:
 
 ## Connections
 - [[import_config()]] - `references` [EXTRACTED]
-- [[killswitch()]] - `references` [EXTRACTED]
+- [[killswitch()_1]] - `references` [EXTRACTED]
 - [[rebuild()]] - `references` [EXTRACTED]
 - [[restart_service()_2]] - `references` [EXTRACTED]
 - [[rollback_agentshroud()]] - `references` [EXTRACTED]

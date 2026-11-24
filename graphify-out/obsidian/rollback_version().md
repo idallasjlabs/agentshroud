@@ -12,10 +12,10 @@ tags:
 # rollback_version()
 
 ## Connections
-- [[Any_76]] - `references` [EXTRACTED]
+- [[Any_72]] - `references` [EXTRACTED]
 - [[Rollback to the previous version. Requires approval_id.]] - `rationale_for` [EXTRACTED]
 - [[RollbackRequest]] - `references` [EXTRACTED]
-- [[post_8]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 - [[rollback()]] - `calls` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 
