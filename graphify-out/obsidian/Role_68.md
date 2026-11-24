@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-tw/SKILL.md"
+source_file: "docker/config/hermes/skills/i-cr/SKILL.md"
 type: "document"
 community: "hermes/skills/i-cr/SKILL.md"
 location: "L7"
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Skill Technical Writer (TW)]] - `contains` [EXTRACTED]
+- [[Skill Code Review (CR)_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-cr/SKILLmd

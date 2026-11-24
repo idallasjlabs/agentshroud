@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/athena.md"
+source_file: ".opencode/agents/i-tdd.md"
 type: "document"
-community: "Athena — Knowledge Distiller"
-location: "L10"
+community: "Skill: Test-Driven Development (TDD)"
+location: "L11"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Athena__Knowledge_Distiller
+  - community/Skill_Test-Driven_Development_TDD
 ---
 
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller]] - `contains` [EXTRACTED]
+- [[Skill Test-Driven Development (TDD)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller
+#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD

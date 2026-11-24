@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-sec.agent.md"
+source_file: "docker/config/openclaw/skills/i-session-prompt/SKILL.md"
 type: "document"
-community: "Skill: Security Review (SEC)"
-location: "L13"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Security_Review_SEC
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill Security Review (SEC)_3]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

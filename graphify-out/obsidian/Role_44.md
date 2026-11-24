@@ -1,17 +1,17 @@
 ---
-source_file: ".github/agents/i-tdd.agent.md"
+source_file: ".github/agents/i-session-prompt.agent.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
-location: "L15"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_2]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

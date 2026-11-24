@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_filter.py"
 type: "rationale"
-community: "._check_impl"
+community: "EgressFilter"
 location: "L639"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_check_impl
+  - community/EgressFilter
 ---
 
 # Return top destination domains by volume.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_top_destinations()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_check_impl
+#graphify/rationale #graphify/EXTRACTED #community/EgressFilter

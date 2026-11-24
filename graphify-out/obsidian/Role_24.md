@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cr/SKILL.md"
+source_file: ".opencode/agents/i-crpr.md"
 type: "document"
-community: ".agents/skills/i-cr/SKILL.md"
-location: "L10"
+community: "Skill: Create PR with Pre-Flight Audit (CRPR)"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/agents/skills/i-cr/SKILLmd
+  - community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR
 ---
 
 # Role
 
 ## Connections
-- [[Skill Code Review (CR)]] - `contains` [EXTRACTED]
+- [[Skill Create PR with Pre-Flight Audit (CRPR)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/agents/skills/i-cr/SKILLmd
+#graphify/document #graphify/EXTRACTED #community/Skill_Create_PR_with_Pre-Flight_Audit_CRPR

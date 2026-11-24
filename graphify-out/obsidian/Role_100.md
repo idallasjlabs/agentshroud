@@ -1,17 +1,17 @@
 ---
-source_file: ".cursor/agents/hermes.md"
+source_file: ".agents/skills/oracle/SKILL.md"
 type: "document"
-community: "Hermes — Reference Verifier"
-location: "L10"
+community: "Oracle — Feedback Analyst"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes__Reference_Verifier
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Role
 
 ## Connections
-- [[Hermes — Reference Verifier_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes__Reference_Verifier
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

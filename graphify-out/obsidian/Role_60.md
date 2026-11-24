@@ -1,8 +1,8 @@
 ---
-source_file: ".github/agents/i-daedalus.agent.md"
+source_file: ".cursor/agents/daedalus.md"
 type: "document"
 community: "Daedalus — Concept Illustrator"
-location: "L13"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_5]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_4]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

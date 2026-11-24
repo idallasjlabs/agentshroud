@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/daedalus.md"
+source_file: ".opencode/agents/athena.md"
 type: "document"
-community: "Daedalus — Concept Illustrator"
-location: "L10"
+community: "Athena — Knowledge Distiller"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Daedalus__Concept_Illustrator
+  - community/Athena__Knowledge_Distiller
 ---
 
 # Role
 
 ## Connections
-- [[Daedalus — Concept Illustrator_2]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator
+#graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

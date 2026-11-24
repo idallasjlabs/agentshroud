@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "rationale"
-community: "lifespan.py"
+community: "ToolACLEnforcer"
 location: "L343"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ToolACLEnforcer
 ---
 
 # SCRUM-78 — operational monitor↔enforce lever.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEnforcementMode]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/ToolACLEnforcer

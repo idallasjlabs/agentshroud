@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-gg.md"
+source_file: ".opencode/agents/i-mcpm.md"
 type: "document"
-community: "Skill: Git Workflow Guardian (GIT-GUARD)"
-location: "L10"
+community: "Available MCP Servers"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Git_Workflow_Guardian_GIT-GUARD
+  - community/Available_MCP_Servers
 ---
 
 # Role
 
 ## Connections
-- [[Skill Git Workflow Guardian (GIT-GUARD)]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/Available_MCP_Servers

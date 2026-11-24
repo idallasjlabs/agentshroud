@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L43"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # Routes content to appropriate agent containers Routing priority: 1. Explicit…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[MultiAgentRouter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

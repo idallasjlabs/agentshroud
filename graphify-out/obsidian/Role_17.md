@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-cicd/SKILL.md"
+source_file: ".agents/skills/i-mcpm/SKILL.md"
 type: "document"
-community: "Skill: CI/CD Pipeline Advisor (CICD)"
-location: "L7"
+community: "Skill: MCP Tools Usage (MCP-TOOLS)"
+location: "L8"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_CI/CD_Pipeline_Advisor_CICD
+  - community/Skill_MCP_Tools_Usage_MCP-TOOLS
 ---
 
 # Role
 
 ## Connections
-- [[Skill CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[Skill MCP Tools Usage (MCP-TOOLS)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Tools_Usage_MCP-TOOLS

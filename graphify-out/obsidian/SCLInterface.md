@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # SCLInterface
 
 ## Connections
-- [[Enum_38]] - `inherits` [EXTRACTED]
+- [[Enum_39]] - `inherits` [EXTRACTED]
 - [[_log_audit()]] - `uses` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str_21]] - `inherits` [EXTRACTED]
+- [[str_22]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

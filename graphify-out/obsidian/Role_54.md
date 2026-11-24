@@ -1,8 +1,8 @@
 ---
-source_file: ".github/agents/i-athena.agent.md"
+source_file: ".cursor/agents/athena.md"
 type: "document"
 community: "Athena — Knowledge Distiller"
-location: "L13"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Role
 
 ## Connections
-- [[Athena — Knowledge Distiller_3]] - `contains` [EXTRACTED]
+- [[Athena — Knowledge Distiller_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Athena__Knowledge_Distiller

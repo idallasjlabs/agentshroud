@@ -1,17 +1,17 @@
 ---
-source_file: ".omp/agents/i-tdd.md"
+source_file: ".omp/agents/i-session-prompt.md"
 type: "document"
-community: "Skill: Test-Driven Development (TDD)"
-location: "L11"
+community: "Workflow: Survey → Draft → Inject → Confirm"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skill_Test-Driven_Development_TDD
+  - community/Workflow_Survey__Draft__Inject__Confirm
 ---
 
 # Role
 
 ## Connections
-- [[Skill Test-Driven Development (TDD)_3]] - `contains` [EXTRACTED]
+- [[Skill Session Prompt Generator (SESSION-PROMPT)_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skill_Test-Driven_Development_TDD
+#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # RouterConfig
 
 ## Connections
-- [[dot-__init__()_99]] - `references` [EXTRACTED]
+- [[dot-__init__()_102]] - `references` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_router_url_rejected()]] - `calls` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-test_valid_router_url_accepted()]] - `calls` [EXTRACTED]
 - [[dot-validate_default_url()]] - `method` [EXTRACTED]
 - [[dot-validate_targets()]] - `method` [EXTRACTED]
-- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[Multi-agent router configuration]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[TestConfigValidation]] - `uses` [INFERRED]
@@ -53,4 +53,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

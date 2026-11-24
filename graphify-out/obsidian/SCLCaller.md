@@ -12,7 +12,7 @@ tags:
 # SCLCaller
 
 ## Connections
-- [[dot-__init__()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_2]] - `method` [EXTRACTED]
 - [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
 - [[dot-is_owner()]] - `method` [EXTRACTED]
 - [[dot-require()]] - `method` [EXTRACTED]

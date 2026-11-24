@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "rationale"
-community: "test_mcp_proxy.py"
+community: "TestInjectionDetection"
 location: "L113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/TestInjectionDetection
 ---
 
 # Return the highest threat level from all findings.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-highest_threat()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TestInjectionDetection

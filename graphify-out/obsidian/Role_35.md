@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/agents/i-session-prompt.md"
+source_file: ".agents/agents/i-sec.md"
 type: "document"
-community: "Workflow: Survey → Draft → Inject → Confirm"
+community: "Skill: Security Review (SEC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Workflow_Survey__Draft__Inject__Confirm
+  - community/Skill_Security_Review_SEC
 ---
 
 # Role
 
 ## Connections
-- [[Skill Session Prompt Generator (SESSION-PROMPT)]] - `contains` [EXTRACTED]
+- [[Skill Security Review (SEC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Workflow_Survey__Draft__Inject__Confirm
+#graphify/document #graphify/EXTRACTED #community/Skill_Security_Review_SEC

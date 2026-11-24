@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "rationale"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L360"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # SCRUM-110: restart recovery must reschedule the timeout with the item's…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
