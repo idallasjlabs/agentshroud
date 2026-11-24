@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L201"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # ToolRiskConfig
 
 ## Connections
-- [[dot-__init__()_117]] - `references` [EXTRACTED]
+- [[dot-__init__()_114]] - `references` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[BaseModel_6]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[TestPersistence_2]] - `uses` [INFERRED]
 - [[Tool risk tier configuration]] - `rationale_for` [EXTRACTED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
-- [[edge()]] - `uses` [INFERRED]
+- [[edge()_1]] - `uses` [INFERRED]
 - [[enhanced_mfa_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[env()]] - `uses` [INFERRED]
@@ -37,4 +37,4 @@ tags:
 - [[test_websocket_notifications()]] - `uses` [INFERRED]
 - [[tool_risk_config()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

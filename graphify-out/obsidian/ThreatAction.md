@@ -12,11 +12,11 @@ tags:
 # ThreatAction
 
 ## Connections
-- [[Enum_26]] - `inherits` [EXTRACTED]
+- [[Enum_34]] - `inherits` [EXTRACTED]
 - [[TestPromptGuard]] - `uses` [INFERRED]
 - [[TestPromptGuardToolResultTrustGate]] - `uses` [INFERRED]
 - [[prompt_guard.py_2]] - `contains` [EXTRACTED]
-- [[str_13]] - `inherits` [EXTRACTED]
+- [[str_19]] - `inherits` [EXTRACTED]
 - [[test_benign_message()]] - `uses` [INFERRED]
 - [[test_pipeline_unit.py]] - `imports` [EXTRACTED]
 - [[test_prompt_guard.py]] - `imports` [EXTRACTED]

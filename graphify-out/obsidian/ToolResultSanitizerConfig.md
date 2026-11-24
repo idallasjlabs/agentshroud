@@ -12,11 +12,11 @@ tags:
 # ToolResultSanitizerConfig
 
 ## Connections
-- [[dot-__init__()_17]] - `references` [EXTRACTED]
-- [[dot-setup_method()_17]] - `calls` [EXTRACTED]
+- [[dot-__init__()_21]] - `references` [EXTRACTED]
+- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_config()_3]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_6]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_7]] - `calls` [EXTRACTED]
 - [[dot-test_performance_with_large_content()]] - `calls` [EXTRACTED]
 - [[dot-test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
 - [[dot-test_warn_mode()]] - `calls` [EXTRACTED]

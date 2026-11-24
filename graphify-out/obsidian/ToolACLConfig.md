@@ -12,7 +12,7 @@ tags:
 # ToolACLConfig
 
 ## Connections
-- [[dot-__init__()_186]] - `calls` [EXTRACTED]
+- [[dot-__init__()_182]] - `calls` [EXTRACTED]
 - [[dot-effective_admin()]] - `method` [EXTRACTED]
 - [[dot-effective_collaborator_allowed()]] - `method` [EXTRACTED]
 - [[dot-effective_private()]] - `method` [EXTRACTED]

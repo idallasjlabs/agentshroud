@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L151"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # Three or more consecutive newlines are collapsed to two.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_collapses_excessive_newlines()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

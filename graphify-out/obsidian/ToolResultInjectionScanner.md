@@ -12,12 +12,12 @@ tags:
 # ToolResultInjectionScanner
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_32]] - `method` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
 - [[dot-_detect_encoded_injection()]] - `method` [EXTRACTED]
 - [[dot-_detect_unicode_obfuscation()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_1]] - `method` [EXTRACTED]
-- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Scanner for detecting prompt injection in tool results.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]
@@ -26,7 +26,7 @@ tags:
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
+- [[run()]] - `calls` [EXTRACTED]
 - [[scanner()]] - `uses` [INFERRED]
 - [[test_tool_injection_encoded_check_uses_full_ruleset()]] - `calls` [EXTRACTED]
 - [[test_tool_injection_hex_encoded_uses_full_ruleset()]] - `calls` [EXTRACTED]

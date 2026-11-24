@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "lifespan.py"
+community: "ProgressiveTrustConfig"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ProgressiveTrustConfig
 ---
 
 # Threshold for promoting to a trust level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PromotionThreshold]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/ProgressiveTrustConfig

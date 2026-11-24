@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_edge_network_isolation.py"
 type: "rationale"
 community: "test_edge_network_isolation.py"
-location: "L329"
+location: "L444"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

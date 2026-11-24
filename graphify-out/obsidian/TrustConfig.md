@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # TrustConfig
 
 ## Connections
-- [[dot-__init__()_103]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
+- [[dot-__init__()_217]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_5]] - `method` [EXTRACTED]
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_shared_tm()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_points()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_7]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_2]] - `calls` [EXTRACTED]
 - [[dot-test_empty_bot_list_does_not_raise()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_limited_to_max_depth()]] - `calls` [EXTRACTED]
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - `calls` [EXTRACTED]
@@ -47,8 +47,8 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports` [EXTRACTED]
-- [[trust_manager()_2]] - `uses` [INFERRED]
+- [[trust_manager()_3]] - `uses` [INFERRED]
 - [[trust_manager()]] - `uses` [INFERRED]
 - [[trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

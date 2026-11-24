@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "lifespan.py"
+community: "ProgressiveTrustConfig"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ProgressiveTrustConfig
 ---
 
 # TrustLevel
@@ -15,8 +15,8 @@ tags:
 - [[dot-get_next_trust_level()]] - `references` [EXTRACTED]
 - [[dot-get_previous_trust_level()]] - `references` [EXTRACTED]
 - [[dot-get_trust_level_order()]] - `references` [EXTRACTED]
-- [[dot-is_tool_allowed()_1]] - `references` [EXTRACTED]
-- [[Enum_32]] - `inherits` [EXTRACTED]
+- [[dot-is_tool_allowed()]] - `references` [EXTRACTED]
+- [[Enum_27]] - `inherits` [EXTRACTED]
 - [[TestEnumMapping]] - `uses` [INFERRED]
 - [[TestProgressiveTrustConfigUnit]] - `uses` [INFERRED]
 - [[Trust levels from untrusted to verified.]] - `rationale_for` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig

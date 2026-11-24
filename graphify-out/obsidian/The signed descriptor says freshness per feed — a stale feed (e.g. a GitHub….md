@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_facades.py"
 type: "rationale"
-community: "test_edge_facades.py"
+community: "EnvelopeSigner"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_edge_facadespy
+  - community/EnvelopeSigner
 ---
 
 # The signed descriptor says "freshness per feed" — a stale feed (e.g. a GitHub…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pke_status_reports_freshness_the_descriptor_promises()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_edge_facadespy
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

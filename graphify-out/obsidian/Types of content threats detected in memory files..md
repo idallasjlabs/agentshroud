@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "MemoryLifecycleConfig"
+community: "middleware.py"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MemoryLifecycleConfig
+  - community/middlewarepy
 ---
 
 # Types of content threats detected in memory files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ContentThreatType]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleConfig
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
