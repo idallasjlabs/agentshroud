@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat…]] - `rationale_for` [EXTRACTED]
 - [[mock_post()_1]] - `contains` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]

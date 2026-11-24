@@ -15,7 +15,7 @@ tags:
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
-- [[parametrize_25]] - `references` [EXTRACTED]
+- [[parametrize_23]] - `references` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/A2APolicyEngine

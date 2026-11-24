@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Test health check with healthy agent]] - `rationale_for` [EXTRACTED]
-- [[asyncio_59]] - `references` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 - [[mock_get()]] - `indirect_call` [INFERRED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 

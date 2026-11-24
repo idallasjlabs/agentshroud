@@ -13,10 +13,10 @@ tags:
 
 ## Connections
 - [[Same freeze, but on the HTTPError branch's e.read() — also moved off the event…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_20]] - `references` [EXTRACTED]
 - [[canary()]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_22]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_21]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_18]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_17]] - `indirect_call` [INFERRED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 

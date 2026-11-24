@@ -15,7 +15,7 @@ tags:
 - [[LLMProxy]] - `imports` [EXTRACTED]
 - [[Tests for the cloud→local quota failover orchestrator in LLMProxy.]] - `rationale_for` [EXTRACTED]
 - [[_call_proxy()]] - `contains` [EXTRACTED]
-- [[asyncio_19]] - `imports` [EXTRACTED]
+- [[asyncio_20]] - `imports` [EXTRACTED]
 - [[llm_proxy.py]] - `imports_from` [EXTRACTED]
 - [[make_proxy()_1]] - `contains` [EXTRACTED]
 - [[test_already_local_request_does_not_failover()]] - `contains` [EXTRACTED]

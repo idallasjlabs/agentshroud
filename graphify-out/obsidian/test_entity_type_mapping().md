@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # test_entity_type_mapping()
@@ -16,4 +16,4 @@ tags:
 - [[_entity_type_mapping()]] - `calls` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

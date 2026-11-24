@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "ingest_api/models.py"
+community: "StatusResponse"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/StatusResponse
 ---
 
 # test_enhanced_status.py
@@ -15,4 +15,4 @@ tags:
 - [[StatusResponse]] - `imports` [EXTRACTED]
 - [[TestEnhancedStatus]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/StatusResponse

@@ -49,7 +49,7 @@ tags:
 - [[TestThreatLevelCalc]] - `contains` [EXTRACTED]
 - [[ThreatLevel_1]] - `imports` [EXTRACTED]
 - [[audit()]] - `contains` [EXTRACTED]
-- [[config()_1]] - `contains` [EXTRACTED]
+- [[config()_2]] - `contains` [EXTRACTED]
 - [[inspector()]] - `contains` [EXTRACTED]
 - [[mcp_audit.py_2]] - `imports_from` [EXTRACTED]
 - [[mcp_config.py_2]] - `imports_from` [EXTRACTED]
@@ -57,7 +57,7 @@ tags:
 - [[mcp_permissions.py_2]] - `imports_from` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[passthrough_proxy()]] - `contains` [EXTRACTED]
-- [[proxy()_1]] - `contains` [EXTRACTED]
+- [[proxy()]] - `contains` [EXTRACTED]
 - [[strict_inspector()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

@@ -30,12 +30,12 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[group_workspace.py]] - `imports_from` [EXTRACTED]
 - [[manager()_1]] - `contains` [EXTRACTED]
-- [[rbac()_2]] - `contains` [EXTRACTED]
+- [[rbac()_1]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[session_manager()]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `imports_from` [EXTRACTED]
 - [[shared_memory()]] - `contains` [EXTRACTED]
 - [[shared_memory.py]] - `imports_from` [EXTRACTED]
-- [[teams()_2]] - `contains` [EXTRACTED]
+- [[teams()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AgentTarget]] - `uses` [INFERRED]
-- [[asyncio_58]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[forward_to_agent passes response.json() through unchanged for chat targets.]] - `rationale_for` [EXTRACTED]
 - [[mock_post()]] - `contains` [EXTRACTED]
 - [[mock_post()_6]] - `indirect_call` [INFERRED]

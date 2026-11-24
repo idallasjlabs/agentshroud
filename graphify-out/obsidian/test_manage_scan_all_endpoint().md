@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[asyncio_51]] - `references` [EXTRACTED]
-- [[run_clamscan()_1]] - `contains` [EXTRACTED]
+- [[run_clamscan()]] - `contains` [EXTRACTED]
 - [[run_trivy_scan()_1]] - `contains` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 

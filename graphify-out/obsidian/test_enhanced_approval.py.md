@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_approval.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "test_mfa_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # test_enhanced_approval.py
@@ -39,4 +39,4 @@ tags:
 - [[test_websocket_notifications()]] - `contains` [EXTRACTED]
 - [[tool_risk_config()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

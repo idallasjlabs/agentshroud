@@ -24,6 +24,6 @@ tags:
 - [[Tests for group_config.py — V9-4A TeamsConfig, GroupConfig, ProjectConfig.]] - `rationale_for` [EXTRACTED]
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `imports` [EXTRACTED]
-- [[teams()_3]] - `contains` [EXTRACTED]
+- [[teams()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/telegram_proxypy

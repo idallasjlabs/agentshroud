@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L89"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # test_list_targets()
@@ -15,4 +15,4 @@ tags:
 - [[Test listing all configured targets]] - `rationale_for` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

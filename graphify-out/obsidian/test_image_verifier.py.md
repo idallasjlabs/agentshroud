@@ -15,7 +15,7 @@ tags:
 - [[Tests for gatewaysecurityimage_verifier.py. Covers - verify_image cosign…]] - `rationale_for` [EXTRACTED]
 - [[_instant_wait_for()_1]] - `contains` [EXTRACTED]
 - [[_timeout_wait_for()_1]] - `contains` [EXTRACTED]
-- [[asyncio_79]] - `imports` [EXTRACTED]
+- [[asyncio_78]] - `imports` [EXTRACTED]
 - [[image_verifier.py]] - `imports_from` [EXTRACTED]
 - [[test_cosign_fails_bad_signature()]] - `contains` [EXTRACTED]
 - [[test_cosign_not_found()]] - `contains` [EXTRACTED]

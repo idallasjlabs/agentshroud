@@ -12,7 +12,7 @@ tags:
 # test_gate_opens_on_reply_complete()
 
 ## Connections
-- [[main()_28]] - `calls` [EXTRACTED]
+- [[main()_27]] - `calls` [EXTRACTED]
 - [[playback_gate_should_open()]] - `calls` [INFERRED]
 - [[test_playback_state.c]] - `contains` [EXTRACTED]
 
