@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "test_all_modules_enforce.py"
-location: "L445"
+community: "._monitor_resources"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_all_modules_enforcepy
+  - community/_monitor_resources
 ---
 
 # .add_alert_callback()
 
 ## Connections
-- [[Add a callback function for alerts.]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[callable]] - `references` [EXTRACTED]
+- [[Add a callback function to be called when resource alerts are triggered.]] - `rationale_for` [EXTRACTED]
+- [[Any_17]] - `references` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy
+#graphify/code #graphify/EXTRACTED #community/_monitor_resources

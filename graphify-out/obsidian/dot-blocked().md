@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L130"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # .blocked()
@@ -18,4 +18,4 @@ tags:
 - [[from_egress_attempt()]] - `indirect_call` [INFERRED]
 - [[from_pipeline_result()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/soc/modelspy
+#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy

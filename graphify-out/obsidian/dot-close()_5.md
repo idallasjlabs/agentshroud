@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
 type: "code"
-community: "_FakeUnixSocket"
-location: "L54"
+community: "SecureBrowser"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeUnixSocket
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[Clean up browser resources_2]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeUnixSocket
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

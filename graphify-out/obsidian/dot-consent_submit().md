@@ -2,7 +2,7 @@
 source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
 community: "EdgeOAuthService"
-location: "L185"
+location: "L188"
 tags:
   - graphify/code
   - graphify/EXTRACTED

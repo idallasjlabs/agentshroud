@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustManager"
+community: "TrustLevel"
 location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustLevel
 ---
 
 # ._update_score()
@@ -22,4 +22,4 @@ tags:
 - [[TrustLevel_1]] - `calls` [EXTRACTED]
 - [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

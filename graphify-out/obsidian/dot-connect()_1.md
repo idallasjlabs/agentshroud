@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ingest_api/config.py"
-location: "L350"
+community: "test_mfa_guard.py"
+location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/test_mfa_guardpy
 ---
 
 # .connect()
 
 ## Connections
-- [[Accept a WebSocket connection and add to connected set Args websocket…]] - `rationale_for` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket_2]] - `references` [EXTRACTED]
+- [[Accept a WebSocket connection and add to connected set.]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[WebSocket_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

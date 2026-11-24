@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestProductionCompose]] - `method` [EXTRACTED]
 - [[_load_compose()]] - `calls` [EXTRACTED]
-- [[fixture_86]] - `references` [EXTRACTED]
+- [[fixture_89]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestProductionCompose

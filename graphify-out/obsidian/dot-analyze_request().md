@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L119"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # .analyze_request()
@@ -22,4 +22,4 @@ tags:
 - [[ApprovalHardening]] - `method` [EXTRACTED]
 - [[DeceptionDetection]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

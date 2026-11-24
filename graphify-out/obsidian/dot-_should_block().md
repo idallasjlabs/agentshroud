@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "MCPInspector"
 location: "L399"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/MCPInspector
 ---
 
 # ._should_block()
@@ -17,4 +17,4 @@ tags:
 - [[InspectionFinding]] - `references` [EXTRACTED]
 - [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPInspector

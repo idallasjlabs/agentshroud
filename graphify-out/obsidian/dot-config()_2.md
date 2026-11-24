@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestMinimalConfig]] - `method` [EXTRACTED]
 - [[_parse_env_file()]] - `calls` [EXTRACTED]
-- [[fixture_95]] - `references` [EXTRACTED]
+- [[fixture_96]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestParanoidConfig

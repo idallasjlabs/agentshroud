@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ingest_api/config.py"
-location: "L401"
+community: "test_mfa_guard.py"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/test_mfa_guardpy
 ---
 
 # .close()
 
 ## Connections
-- [[Close database connection]] - `rationale_for` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
+- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

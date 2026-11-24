@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
 community: "test_http_proxy_coverage.py"
-location: "L97"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .close()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[_MockWriter]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

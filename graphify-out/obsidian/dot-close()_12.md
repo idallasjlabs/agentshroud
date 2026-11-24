@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/service.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L75"
+community: "_run_asgi"
+location: "L726"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/_run_asgi
 ---
 
 # .close()
 
 ## Connections
-- [[EdgeService]] - `method` [EXTRACTED]
+- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/_run_asgi

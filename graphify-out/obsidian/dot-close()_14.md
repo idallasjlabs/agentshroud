@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/store.py"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "EdgeStore"
-location: "L126"
+community: "test_edge_e2e_sdk.py"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .close()
 
 ## Connections
-- [[EdgeStore]] - `method` [EXTRACTED]
+- [[EdgeService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

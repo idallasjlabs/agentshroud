@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "HeuristicClassifier"
+community: "normalize_input"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HeuristicClassifier
+  - community/normalize_input
 ---
 
 # .classify()
@@ -18,4 +18,4 @@ tags:
 - [[Classify text for injection probability. Args text Input text to classify…]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier
+#graphify/code #graphify/EXTRACTED #community/normalize_input

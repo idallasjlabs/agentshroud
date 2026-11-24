@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-append_block()]] - `calls` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_70]] - `references` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `calls` [EXTRACTED]
 

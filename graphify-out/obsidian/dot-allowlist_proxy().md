@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestAllowlistMode]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[fixture_108]] - `references` [EXTRACTED]
+- [[fixture_107]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/WebProxy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "TokenValidator"
-location: "L151"
+community: "SecureBrowser"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/SecureBrowser
 ---
 
 # .close()
 
 ## Connections
-- [[Close the audit-log database connection.]] - `rationale_for` [EXTRACTED]
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

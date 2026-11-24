@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L498"
+community: "ServiceManager"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/ServiceManager
 ---
 
 # .connect()
 
 ## Connections
-- [[Accept a WebSocket connection and add to connected set.]] - `rationale_for` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket_3]] - `references` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
+- [[request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "EnhancedApprovalQueue"
+community: "make_event"
 location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue
+  - community/make_event
 ---
 
 # .call_tool()
@@ -15,11 +15,11 @@ tags:
 - [[dot-_authenticate()]] - `calls` [EXTRACTED]
 - [[dot-_check_limits()]] - `calls` [EXTRACTED]
 - [[dot-_p0()]] - `calls` [EXTRACTED]
-- [[dot-_record()_1]] - `calls` [EXTRACTED]
+- [[dot-_record()]] - `calls` [EXTRACTED]
 - [[dot-_scrub()]] - `calls` [EXTRACTED]
 - [[dot-_strike()]] - `calls` [EXTRACTED]
 - [[dot-_visible_tools()]] - `calls` [EXTRACTED]
-- [[Any_43]] - `references` [EXTRACTED]
+- [[Any_9]] - `references` [EXTRACTED]
 - [[ApprovalContext]] - `calls` [EXTRACTED]
 - [[CallContext]] - `calls` [EXTRACTED]
 - [[EdgeCallPipeline]] - `method` [EXTRACTED]
@@ -27,4 +27,4 @@ tags:
 - [[_result()]] - `calls` [EXTRACTED]
 - [[canonical_bytes()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnhancedApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/make_event

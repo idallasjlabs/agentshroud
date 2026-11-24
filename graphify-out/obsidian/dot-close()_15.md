@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "_run_asgi"
-location: "L726"
+community: "AuditStore"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_asgi
+  - community/AuditStore
 ---
 
 # .close()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_asgi
+#graphify/code #graphify/EXTRACTED #community/AuditStore

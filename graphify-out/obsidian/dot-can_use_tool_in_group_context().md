@@ -12,7 +12,7 @@ tags:
 # .can_use_tool_in_group_context()
 
 ## Connections
-- [[dot-can_use_tool()_1]] - `calls` [EXTRACTED]
+- [[dot-can_use_tool()]] - `calls` [EXTRACTED]
 - [[Check whether user_id may invoke tool_name when acting inside a group…]] - `rationale_for` [EXTRACTED]
 - [[ToolACLEnforcer]] - `method` [EXTRACTED]
 

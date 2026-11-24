@@ -1,22 +1,22 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "ApprovalStore"
-location: "L369"
+community: "test_mfa_guard.py"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/test_mfa_guardpy
 ---
 
 # .broadcast()
 
 ## Connections
-- [[dot-_expire_stale()]] - `calls` [EXTRACTED]
+- [[dot-_timeout_request()]] - `calls` [EXTRACTED]
 - [[dot-decide()_1]] - `calls` [EXTRACTED]
 - [[dot-submit()_1]] - `calls` [EXTRACTED]
-- [[Any_59]] - `references` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
-- [[Send a JSON message to all connected WebSocket clients Silently removes clients…]] - `rationale_for` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Send a JSON message to all connected WebSocket clients. SCRUM-154 bounds each…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-get_user_role()]] - `calls` [EXTRACTED]
 - [[dot-list_users_and_roles()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()]] - `calls` [EXTRACTED]
+- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
 - [[Action]] - `references` [EXTRACTED]
 - [[Any_1]] - `references` [EXTRACTED]
 - [[Check if a user has permission to perform an action on a resource.]] - `rationale_for` [EXTRACTED]
