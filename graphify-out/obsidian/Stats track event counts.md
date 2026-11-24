@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "make_event"
 location: "L81"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/make_event
 ---
 
 # Stats track event counts
 
 ## Connections
-- [[test_get_stats()_2]] - `rationale_for` [EXTRACTED]
+- [[test_get_stats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/make_event

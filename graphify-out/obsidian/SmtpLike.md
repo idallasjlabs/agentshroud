@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-login()]] - `method` [EXTRACTED]
 - [[dot-sendmail()]] - `method` [EXTRACTED]
-- [[Protocol]] - `inherits` [EXTRACTED]
+- [[Protocol_1]] - `inherits` [EXTRACTED]
 - [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - `rationale_for` [EXTRACTED]
 - [[email_service.py]] - `contains` [EXTRACTED]
 

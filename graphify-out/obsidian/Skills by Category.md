@@ -20,9 +20,9 @@ tags:
 - [[Investigation]] - `contains` [EXTRACTED]
 - [[MCP Tools]] - `contains` [EXTRACTED]
 - [[Production Safety]] - `contains` [EXTRACTED]
-- [[Reference_1]] - `contains` [EXTRACTED]
+- [[Reference]] - `contains` [EXTRACTED]
 - [[SecureClaw (Project-Specific)]] - `contains` [EXTRACTED]
 - [[System Utilities]] - `contains` [EXTRACTED]
-- [[Workflow_1]] - `contains` [EXTRACTED]
+- [[Workflow]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skills_by_Category

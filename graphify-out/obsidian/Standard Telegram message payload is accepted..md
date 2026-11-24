@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "rationale"
-community: "test_channel_ownership.py"
+community: "TestTelegramWebhook"
 location: "L49"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_channel_ownershippy
+  - community/TestTelegramWebhook
 ---
 
 # Standard Telegram message payload is accepted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_valid_payload_returns_200()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_channel_ownershippy
+#graphify/rationale #graphify/EXTRACTED #community/TestTelegramWebhook

@@ -12,12 +12,12 @@ tags:
 # SlackAPIProxy
 
 ## Connections
-- [[dot-__init__()_199]] - `method` [EXTRACTED]
+- [[dot-__init__()_194]] - `method` [EXTRACTED]
 - [[dot-_call_slack_api()]] - `method` [EXTRACTED]
 - [[dot-_intercept_connections_open()]] - `method` [EXTRACTED]
 - [[dot-_is_owner_channel()]] - `method` [EXTRACTED]
 - [[dot-consume_relay_token()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_17]] - `method` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
 - [[dot-handle_event()]] - `method` [EXTRACTED]
 - [[dot-invite_channel_member()]] - `method` [EXTRACTED]
 - [[dot-kick_channel_member()]] - `method` [EXTRACTED]
