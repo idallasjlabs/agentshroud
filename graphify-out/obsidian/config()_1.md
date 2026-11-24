@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
 community: "test_mcp_proxy.py"
-location: "L33"
+location: "L69"
 tags:
   - graphify/code
   - graphify/INFERRED
@@ -15,9 +15,8 @@ tags:
 - [[MCPProxyConfig]] - `uses` [INFERRED]
 - [[MCPServerConfig]] - `uses` [INFERRED]
 - [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
 - [[PermissionLevel]] - `uses` [INFERRED]
-- [[fixture_52]] - `references` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[fixture_38]] - `references` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/test_mcp_proxypy

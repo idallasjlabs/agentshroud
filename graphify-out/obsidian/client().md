@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_1]] - `references` [EXTRACTED]
+- [[fixture_2]] - `references` [EXTRACTED]
 - [[lifespan()]] - `calls` [INFERRED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 

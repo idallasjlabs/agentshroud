@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "code"
-community: "SecurityPipeline"
+community: "lifespan.py"
 location: "L26"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/SecurityPipeline
+  - community/lifespanpy
 ---
 
 # canary_pipeline()
@@ -17,7 +17,7 @@ tags:
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_84]] - `references` [EXTRACTED]
+- [[fixture_138]] - `references` [EXTRACTED]
 - [[test_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/SecurityPipeline
+#graphify/code #graphify/INFERRED #community/lifespanpy

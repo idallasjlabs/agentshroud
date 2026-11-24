@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "scanner_integration.py"
+community: "compute_scorecard"
 location: "L2396"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/compute_scorecard
 ---
 
 # compute_scorecard()
@@ -22,10 +22,10 @@ tags:
 - [[dot-test_scorecard_domain_ids_are_sequential()]] - `calls` [EXTRACTED]
 - [[dot-test_secrets_management_baseline_two()]] - `calls` [EXTRACTED]
 - [[dot-test_standard_basis_present()]] - `calls` [EXTRACTED]
-- [[dot-test_timestamp_present()_1]] - `calls` [EXTRACTED]
+- [[dot-test_timestamp_present()]] - `calls` [EXTRACTED]
 - [[dot-test_totals_present()]] - `calls` [EXTRACTED]
 - [[dot-test_version_is_v090()]] - `calls` [EXTRACTED]
-- [[Any_65]] - `references` [EXTRACTED]
+- [[Any_60]] - `references` [EXTRACTED]
 - [[Compute the 33-domain Security Scorecard. Domains 1–21 Container…]] - `rationale_for` [EXTRACTED]
 - [[_compute_weighted_subscore()]] - `calls` [EXTRACTED]
 - [[_determine_compliance_level()]] - `calls` [EXTRACTED]
@@ -74,4 +74,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/compute_scorecard

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_api_contract_fuzz.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "test_api_contract_fuzz.py"
-location: "L144"
+community: "test_soc_router_coverage.py"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_contract_fuzzpy
+  - community/test_soc_router_coveragepy
 ---
 
 # client()
 
 ## Connections
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_26]] - `references` [EXTRACTED]
-- [[test_api_contract_fuzz.py]] - `contains` [EXTRACTED]
+- [[fixture_28]] - `references` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

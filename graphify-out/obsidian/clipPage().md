@@ -15,7 +15,7 @@ tags:
 - [[background.js]] - `contains` [EXTRACTED]
 - [[extractPageContent()]] - `indirect_call` [INFERRED]
 - [[loadConfig()]] - `calls` [EXTRACTED]
-- [[notify()_2]] - `calls` [EXTRACTED]
+- [[notify()_1]] - `calls` [EXTRACTED]
 - [[reportResult()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/backgroundjs

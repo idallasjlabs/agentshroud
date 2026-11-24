@@ -20,7 +20,7 @@ tags:
 - [[_handle_websocket()]] - `contains` [EXTRACTED]
 - [[_read_gateway_password()]] - `contains` [EXTRACTED]
 - [[canvas_proxy_app()]] - `contains` [EXTRACTED]
-- [[httpx_1]] - `imports` [EXTRACTED]
+- [[httpx]] - `imports` [EXTRACTED]
 - [[test_canvas_proxy.py]] - `imports` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 

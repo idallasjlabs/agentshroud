@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "app"
-location: "L29"
+community: "email_send"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app
+  - community/email_send
 ---
 
 # bypass_auth()
 
 ## Connections
-- [[fixture_3]] - `references` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[fixture_54]] - `references` [EXTRACTED]
+- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app
+#graphify/code #graphify/EXTRACTED #community/email_send

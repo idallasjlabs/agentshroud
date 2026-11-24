@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[auth_dep()]] - `indirect_call` [INFERRED]
-- [[fixture_110]] - `references` [EXTRACTED]
+- [[fixture_108]] - `references` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

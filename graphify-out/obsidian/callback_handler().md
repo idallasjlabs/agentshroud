@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "EnhancedApprovalQueue"
-location: "L198"
+community: "test_mfa_guard.py"
+location: "L204"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/EnhancedApprovalQueue
+  - community/test_mfa_guardpy
 ---
 
 # callback_handler()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_full_oauth_and_tool_calls_with_sdk_client()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/EnhancedApprovalQueue
+#graphify/code #graphify/INFERRED #community/test_mfa_guardpy

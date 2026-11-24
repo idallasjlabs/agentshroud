@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Function Details_42]] - `contains` [EXTRACTED]
 - [[Key Classes  Functions_45]] - `contains` [EXTRACTED]
-- [[Purpose_170]] - `contains` [EXTRACTED]
+- [[Purpose_171]] - `contains` [EXTRACTED]
 - [[Related_46]] - `contains` [EXTRACTED]
 - [[Responsibilities_49]] - `contains` [EXTRACTED]
 - [[Social Engineering Patterns]] - `contains` [EXTRACTED]

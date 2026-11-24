@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/soc/services.py"
 type: "code"
-community: "TestCheckClamd"
-location: "L210"
+community: "test_soc_realtime_coverage.py"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckClamd
+  - community/test_soc_realtime_coveragepy
 ---
 
 # connect()
 
 ## Connections
-- [[dot-test_standby_when_no_socket_and_no_process()]] - `contains` [EXTRACTED]
+- [[_inspect_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckClamd
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "rationale"
-community: "test_clamav_scan_unavailable_degrades_silently"
+community: "HTTPConnectProxy"
 location: "L768"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_clamav_scan_unavailable_degrades_silently
+  - community/HTTPConnectProxy
 ---
 
 # clamscan binary missing (sidecar down) -> no exception, temp file removed.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_clamav_scan_unavailable_degrades_silently()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_clamav_scan_unavailable_degrades_silently
+#graphify/rationale #graphify/EXTRACTED #community/HTTPConnectProxy

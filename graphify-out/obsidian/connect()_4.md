@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/soc/router.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L3011"
+community: "_patch_open"
+location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/_patch_open
 ---
 
 # connect()
 
 ## Connections
-- [[_unix_call()]] - `contains` [EXTRACTED]
+- [[dot-test_running_via_proc_scan()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_patch_open

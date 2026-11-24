@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/scanner_integration.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "scanner_integration.py"
-location: "L359"
+community: "_patch_open"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/_patch_open
 ---
 
 # connect()
 
 ## Connections
-- [[_is_container_running()]] - `contains` [EXTRACTED]
+- [[dot-test_standby_when_no_socket_and_no_process()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/_patch_open

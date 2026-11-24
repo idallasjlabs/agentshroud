@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_event_bus.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "make_event"
 location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/make_event
 ---
 
 # cb()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_async_subscriber()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/make_event

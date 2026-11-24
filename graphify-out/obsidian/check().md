@@ -12,11 +12,11 @@ tags:
 # check()
 
 ## Connections
-- [[Path_23]] - `references` [EXTRACTED]
+- [[Path_21]] - `references` [EXTRACTED]
 - [[_compare()]] - `calls` [EXTRACTED]
 - [[_is_number()]] - `calls` [EXTRACTED]
 - [[_load_json()]] - `calls` [EXTRACTED]
 - [[check_benchmark_regression.py]] - `contains` [EXTRACTED]
-- [[main()_7]] - `calls` [EXTRACTED]
+- [[main()_8]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/check_benchmark_regressionpy

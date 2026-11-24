@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "_make_sanitizer"
-location: "L3368"
+community: ".test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries"
+location: "L2737"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_raw_web_fetch_json_internal_suffix_domain_does_not_queue_approval()]] - `contains` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries

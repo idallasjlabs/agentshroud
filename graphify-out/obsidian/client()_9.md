@@ -1,18 +1,19 @@
 ---
-source_file: "chatbot/test_main.py"
+source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "test_main.py"
-location: "L33"
+community: "email_send"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mainpy
+  - community/email_send
 ---
 
 # client()
 
 ## Connections
-- [[fixture_41]] - `references` [EXTRACTED]
-- [[test_main.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_54]] - `references` [EXTRACTED]
+- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mainpy
+#graphify/code #graphify/EXTRACTED #community/email_send

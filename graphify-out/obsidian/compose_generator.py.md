@@ -1,17 +1,19 @@
 ---
-source_file: "docs/vault/02 - Modules/Runtime/compose_generator.py.md"
-type: "document"
-community: "compose_generator.py"
+source_file: "gateway/runtime/compose_generator.py"
+type: "code"
+community: "generate_compose"
 location: "L1"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/compose_generatorpy
+  - community/generate_compose
 ---
 
-# compose_generator.py.md
+# compose_generator.py
 
 ## Connections
-- [[compose_generator.py_1]] - `contains` [EXTRACTED]
+- [[ServiceDef]] - `contains` [EXTRACTED]
+- [[generate_apple_script()]] - `contains` [EXTRACTED]
+- [[generate_compose()]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/compose_generatorpy
+#graphify/code #graphify/EXTRACTED #community/generate_compose

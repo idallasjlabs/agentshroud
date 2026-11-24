@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FakeClock_1]] - `calls` [EXTRACTED]
-- [[fixture_55]] - `references` [EXTRACTED]
+- [[fixture_63]] - `references` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/RateLimitGuard
