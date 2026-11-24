@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EgressEvent"
+community: "ToolResultInjectionScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressEvent
+  - community/ToolResultInjectionScanner
 ---
 
 # str
 
 ## Connections
-- [[EgressChannel]] - `inherits` [EXTRACTED]
+- [[InjectionAction]] - `inherits` [EXTRACTED]
+- [[InjectionSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressEvent
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GroupRole"
+community: "URLAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRole
+  - community/URLAnalyzer
 ---
 
 # str
 
 ## Connections
-- [[GroupRole]] - `inherits` [EXTRACTED]
+- [[URLVerdict]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRole
+#graphify/code #graphify/EXTRACTED #community/URLAnalyzer

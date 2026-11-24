@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[UserSessionManager]] - `uses` [INFERRED]
-- [[fixture_22]] - `references` [EXTRACTED]
+- [[fixture_23]] - `references` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "ApprovalStore"
+community: "ApprovalRequest"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/ApprovalRequest
 ---
 
 # submit_one()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_100_concurrent_submissions()]] - `contains` [EXTRACTED]
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

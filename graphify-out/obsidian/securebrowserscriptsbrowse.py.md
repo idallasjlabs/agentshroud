@@ -12,12 +12,12 @@ tags:
 # securebrowser/scripts/browse.py
 
 ## Connections
-- [[Enum_23]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_4]] - `contains` [EXTRACTED]
+- [[Enum_24]] - `imports_from` [EXTRACTED]
+- [[RiskLevel_5]] - `contains` [EXTRACTED]
 - [[SecureBrowser_3]] - `contains` [EXTRACTED]
 - [[SecureBrowser - Enterprise-grade secure browser automation Part of AgentShroud…_3]] - `rationale_for` [EXTRACTED]
 - [[SecurityConfig_4]] - `contains` [EXTRACTED]
 - [[SecurityError_3]] - `contains` [EXTRACTED]
-- [[main()_13]] - `contains` [EXTRACTED]
+- [[main()_14]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

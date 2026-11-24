@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_proxy.py"
+source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "AsyncMock"
-location: "L605"
+community: "lifespan.py"
+location: "L239"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AsyncMock
+  - graphify/INFERRED
+  - community/lifespanpy
 ---
 
 # scan()
 
 ## Connections
-- [[dot-test_attachments_scanned()]] - `contains` [EXTRACTED]
-- [[_pass_result()]] - `calls` [EXTRACTED]
+- [[dot-test_prompt_guard_concurrent_scans()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/INFERRED #community/lifespanpy

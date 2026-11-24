@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # strict_sandbox()
 
 ## Connections
 - [[FileSandbox]] - `uses` [INFERRED]
-- [[fixture_73]] - `references` [EXTRACTED]
+- [[fixture_45]] - `references` [EXTRACTED]
 - [[test_file_sandbox.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

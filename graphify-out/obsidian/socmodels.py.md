@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # soc/models.py
@@ -17,11 +17,11 @@ tags:
 - [[ContributorRecord]] - `contains` [EXTRACTED]
 - [[EgressRequest_1]] - `contains` [EXTRACTED]
 - [[EgressStatus]] - `contains` [EXTRACTED]
-- [[Enum_38]] - `imports_from` [EXTRACTED]
+- [[Enum_39]] - `imports_from` [EXTRACTED]
 - [[HealthStatus]] - `contains` [EXTRACTED]
 - [[Platform]] - `contains` [EXTRACTED]
 - [[ResourceUsage_1]] - `contains` [EXTRACTED]
-- [[RiskLevel_5]] - `contains` [EXTRACTED]
+- [[RiskLevel_6]] - `contains` [EXTRACTED]
 - [[SCLConfirmationRequired]] - `contains` [EXTRACTED]
 - [[SCLError]] - `contains` [EXTRACTED]
 - [[SCLInterface]] - `contains` [EXTRACTED]
@@ -49,4 +49,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

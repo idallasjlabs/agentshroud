@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustConfig"
+community: "TrustManager"
 location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustConfig
+  - community/TrustManager
 ---
 
 # strict_manager()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Trust manager starting at untrusted.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_135]] - `references` [EXTRACTED]
+- [[fixture_75]] - `references` [EXTRACTED]
 - [[test_trust_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustManager

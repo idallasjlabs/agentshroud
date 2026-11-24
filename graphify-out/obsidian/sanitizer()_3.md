@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "ingest_api/config.py"
+community: "GatewayConfig"
 location: "L173"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/GatewayConfig
 ---
 
 # sanitizer()
@@ -16,6 +16,6 @@ tags:
 - [[GatewayConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[conftest.py]] - `contains` [EXTRACTED]
-- [[fixture_60]] - `references` [EXTRACTED]
+- [[fixture_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

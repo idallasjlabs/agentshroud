@@ -15,7 +15,7 @@ tags:
 - [[dot-test_has_timestamp()]] - `calls` [EXTRACTED]
 - [[dot-test_invalid_version_format()]] - `calls` [EXTRACTED]
 - [[dot-test_valid_version()]] - `calls` [EXTRACTED]
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_73]] - `references` [EXTRACTED]
 - [[Perform a security review before version change. Checks - Known CVEs for the…]] - `rationale_for` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]

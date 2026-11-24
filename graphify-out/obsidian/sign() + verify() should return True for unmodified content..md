@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_instruction_envelope.py"
 type: "rationale"
-community: "TestEnvelopeSigner"
+community: "EnvelopeSigner"
 location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEnvelopeSigner
+  - community/EnvelopeSigner
 ---
 
 # sign() + verify() should return True for unmodified content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_sign_and_verify_roundtrip()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEnvelopeSigner
+#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner

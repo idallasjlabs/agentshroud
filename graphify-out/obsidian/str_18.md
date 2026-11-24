@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "WebContentScanner"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/MCPPolicyEngine
 ---
 
 # str
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
+- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

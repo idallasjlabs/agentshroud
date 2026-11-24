@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_ssh_proxy.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "SSHProxy"
-location: "L19"
+community: "GatewayConfig"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SSHProxy
+  - community/GatewayConfig
 ---
 
 # ssh_config()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[SSHConfig]] - `uses` [INFERRED]
 - [[SSHHostConfig]] - `uses` [INFERRED]
-- [[fixture_51]] - `references` [EXTRACTED]
-- [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
+- [[fixture_70]] - `references` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SSHProxy
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

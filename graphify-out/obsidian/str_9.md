@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "web_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/web_proxypy
 ---
 
 # str
 
 ## Connections
-- [[InjectionAction]] - `inherits` [EXTRACTED]
-- [[InjectionSeverity]] - `inherits` [EXTRACTED]
+- [[ProxyAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/web_proxypy

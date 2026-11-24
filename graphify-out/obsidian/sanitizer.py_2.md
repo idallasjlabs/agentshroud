@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # sanitizer.py
@@ -16,7 +16,7 @@ tags:
 - [[PIIConfig]] - `imports` [EXTRACTED]
 - [[PIISanitizer]] - `contains` [EXTRACTED]
 - [[RedactionDetail]] - `imports` [EXTRACTED]
-- [[RedactionResult]] - `imports` [EXTRACTED]
+- [[RedactionResult_1]] - `imports` [EXTRACTED]
 - [[conftest.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PIIConfig
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

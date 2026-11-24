@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "TestCheckClamd"
-location: "L183"
+community: "make_fake_socket_module"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckClamd
+  - community/make_fake_socket_module
 ---
 
 # settimeout()
 
 ## Connections
-- [[dot-test_running_via_proc_scan()]] - `contains` [EXTRACTED]
+- [[make_fake_socket_module()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckClamd
+#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module

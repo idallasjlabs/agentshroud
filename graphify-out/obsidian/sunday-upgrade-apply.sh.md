@@ -16,7 +16,7 @@ tags:
 - [[Base docker-compose stack]] - `references` [EXTRACTED]
 - [[Exclusive mkdir run lock + HEAD-pinned build guard (PR 475)]] - `rationale_for` [EXTRACTED]
 - [[Exit 50 build failed and rollback failed (stack may be degraded)]] - `references` [EXTRACTED]
-- [[PATH_6]] - `defines` [EXTRACTED]
+- [[PATH_7]] - `defines` [EXTRACTED]
 - [[Refuse to build with uncommitted changes in build context]] - `rationale_for` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-06 (prod, disk-exhaustion incident)]] - `references` [EXTRACTED]
 - [[Sunday Upgrade Report 2026-09-14 (dev account)]] - `references` [EXTRACTED]

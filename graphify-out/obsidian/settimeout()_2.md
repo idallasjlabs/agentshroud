@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "TestCheckClamd"
-location: "L207"
+community: "_patch_open"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckClamd
+  - community/_patch_open
 ---
 
 # settimeout()
 
 ## Connections
-- [[dot-test_standby_when_no_socket_and_no_process()]] - `contains` [EXTRACTED]
+- [[dot-test_running_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckClamd
+#graphify/code #graphify/EXTRACTED #community/_patch_open
