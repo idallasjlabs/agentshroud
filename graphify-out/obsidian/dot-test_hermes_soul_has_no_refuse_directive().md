@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_hermes_soul_has_no_refuse_directive"
 location: "L703"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_hermes_soul_has_no_refuse_directive
 ---
 
 # .test_hermes_soul_has_no_refuse_directive()
@@ -15,4 +15,4 @@ tags:
 - [[Hermes SOUL.md must instruct the agent never to issue a blanket 'cannot…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_hermes_soul_has_no_refuse_directive

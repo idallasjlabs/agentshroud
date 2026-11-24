@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "test_middleware_coverage.py"
+community: "TestMetadataGuard"
 location: "L486"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_middleware_coveragepy
+  - community/TestMetadataGuard
 ---
 
 # .test_headers_sanitized()
@@ -15,4 +15,4 @@ tags:
 - [[TestMetadataGuard_1]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

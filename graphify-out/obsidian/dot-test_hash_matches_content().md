@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
 - [[Verify hash matches SHA-256 of the content.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_39]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

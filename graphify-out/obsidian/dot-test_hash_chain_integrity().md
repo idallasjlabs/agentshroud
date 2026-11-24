@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test hash chain maintains integrity.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `method` [EXTRACTED]
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditStore

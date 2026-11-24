@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "Any"
+community: "scanner_integration.py"
 location: "L275"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/scanner_integrationpy
 ---
 
 # .test_infected_report()
@@ -15,4 +15,4 @@ tags:
 - [[TestGetClamavSummary]] - `method` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy

@@ -12,7 +12,7 @@ tags:
 # .test_invalid_extra_pattern_does_not_crash()
 
 ## Connections
-- [[dot-from_dict()]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestResponseFiltering]] - `method` [EXTRACTED]
 

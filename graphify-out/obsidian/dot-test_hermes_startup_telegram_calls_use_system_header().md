@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "code"
-community: "TestConfigValidation"
+community: ".test_hermes_startup_telegram_calls_use_system_header"
 location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/test_hermes_startup_telegram_calls_use_system_header
 ---
 
 # .test_hermes_startup_telegram_calls_use_system_header()
@@ -15,4 +15,4 @@ tags:
 - [[Hermes startup notifications must use X-AgentShroud-System 1 (bypasses content…]] - `rationale_for` [EXTRACTED]
 - [[TestConfigValidation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/test_hermes_startup_telegram_calls_use_system_header
