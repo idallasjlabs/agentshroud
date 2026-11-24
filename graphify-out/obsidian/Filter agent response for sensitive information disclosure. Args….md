@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "lifespan.py"
+community: "OutboundInfoFilter"
 location: "L354"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/OutboundInfoFilter
 ---
 
 # Filter agent response for sensitive information disclosure. Args:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-filter_response()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

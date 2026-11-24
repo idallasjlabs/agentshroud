@@ -12,7 +12,7 @@ tags:
 # FakeGroup
 
 ## Connections
-- [[dot-__init__()_43]] - `method` [EXTRACTED]
+- [[dot-__init__()_41]] - `method` [EXTRACTED]
 - [[dot-model_dump()]] - `method` [EXTRACTED]
 - [[test_add_group_member_paths()]] - `calls` [EXTRACTED]
 - [[test_create_group_paths()]] - `calls` [EXTRACTED]

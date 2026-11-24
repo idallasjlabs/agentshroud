@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "lifespan.py"
+community: "OutboundInfoFilter"
 location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/OutboundInfoFilter
 ---
 
 # FilterMatch
@@ -17,4 +17,4 @@ tags:
 - [[A single match found by the outbound filter.]] - `rationale_for` [EXTRACTED]
 - [[outbound_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

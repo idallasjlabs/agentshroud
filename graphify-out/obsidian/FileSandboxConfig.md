@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "middleware.py"
+community: "FileSandbox"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/FileSandbox
 ---
 
 # FileSandboxConfig
 
 ## Connections
-- [[dot-__init__()_112]] - `calls` [EXTRACTED]
-- [[dot-__init__()_114]] - `references` [EXTRACTED]
+- [[dot-__init__()]] - `calls` [EXTRACTED]
+- [[dot-__init__()_71]] - `references` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
 - [[dot-sandbox()]] - `calls` [EXTRACTED]
 - [[dot-test_default_mode_is_enforce()_4]] - `calls` [EXTRACTED]
@@ -35,8 +35,8 @@ tags:
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
-- [[run()_1]] - `calls` [EXTRACTED]
-- [[strict_config()_2]] - `uses` [INFERRED]
+- [[run()]] - `calls` [EXTRACTED]
+- [[strict_config()_1]] - `uses` [INFERRED]
 - [[t_sandbox()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]
@@ -44,4 +44,4 @@ tags:
 - [[test_round2_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

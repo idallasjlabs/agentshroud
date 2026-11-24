@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_make_sanitizer"
+community: "TestOutboundPipelineIntegration"
 location: "L1083"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_sanitizer
+  - community/TestOutboundPipelineIntegration
 ---
 
 # Form caption field should be filtered the same as text/draft/message fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_form_caption_tool_payload_is_normalized()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundPipelineIntegration

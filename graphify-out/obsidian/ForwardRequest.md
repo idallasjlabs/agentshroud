@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "TestConfigValidation"
+community: "AgentTarget"
 location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigValidation
+  - community/AgentTarget
 ---
 
 # ForwardRequest
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_invalid_source_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_valid_forward_request()]] - `calls` [EXTRACTED]
 - [[dot-validate_source()]] - `method` [EXTRACTED]
-- [[BaseModel_3]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[Request to forward content through the gateway Received from iOS Shortcuts,…]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]
@@ -55,4 +55,4 @@ tags:
 - [[test_shortcut_source_accepted()]] - `calls` [EXTRACTED]
 - [[test_valid_sources()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigValidation
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

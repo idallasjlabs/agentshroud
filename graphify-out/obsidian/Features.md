@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Features"
+community: "Detailed Profiles"
 location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Features
+  - community/Detailed_Profiles
 ---
 
 # Features
@@ -19,4 +19,4 @@ tags:
 - [[Memory Browser]] - `contains` [EXTRACTED]
 - [[Network Inspector]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Features
+#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles

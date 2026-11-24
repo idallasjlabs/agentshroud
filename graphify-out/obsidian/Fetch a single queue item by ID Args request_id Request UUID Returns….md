@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "rationale"
-community: "ApprovalStore"
+community: "GatewayConfig"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/GatewayConfig
 ---
 
 # Fetch a single queue item by ID Args: request_id: Request UUID Returns:…
 
 ## Connections
-- [[dot-get_item()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_item()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ApprovalStore
+#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig

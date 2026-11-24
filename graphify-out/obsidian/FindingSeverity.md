@@ -12,10 +12,10 @@ tags:
 # FindingSeverity
 
 ## Connections
-- [[Enum_34]] - `inherits` [EXTRACTED]
+- [[Enum_35]] - `inherits` [EXTRACTED]
 - [[TestDangerousXMLDetection]] - `uses` [INFERRED]
 - [[TestDangerousXMLIsBlockedNotFlagged]] - `uses` [INFERRED]
-- [[str_18]] - `inherits` [EXTRACTED]
+- [[str_20]] - `inherits` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports` [EXTRACTED]
 - [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 

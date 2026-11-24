@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
-- [[Exception_15]] - `inherits` [EXTRACTED]
+- [[Exception_14]] - `inherits` [EXTRACTED]
 - [[Raised when forwarding to agent fails]] - `rationale_for` [EXTRACTED]
 - [[_raise_forward_error()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]

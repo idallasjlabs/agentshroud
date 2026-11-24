@@ -12,7 +12,7 @@ tags:
 # FakeRBAC
 
 ## Connections
-- [[dot-__init__()_226]] - `method` [EXTRACTED]
+- [[dot-__init__()_229]] - `method` [EXTRACTED]
 - [[dot-is_owner()_6]] - `method` [EXTRACTED]
 - [[_make_proxy()_2]] - `calls` [EXTRACTED]
 - [[test_progressive_lockdown.py]] - `contains` [EXTRACTED]
