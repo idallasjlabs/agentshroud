@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "chat"
+community: "management.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chat
+  - community/managementpy
 ---
 
 # BaseModel
 
 ## Connections
-- [[ChatRequest]] - `inherits` [EXTRACTED]
-- [[ChatResponse]] - `inherits` [EXTRACTED]
+- [[EgressAllowlistResponse]] - `inherits` [EXTRACTED]
+- [[EgressAllowlistUpdate]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chat
+#graphify/code #graphify/EXTRACTED #community/managementpy

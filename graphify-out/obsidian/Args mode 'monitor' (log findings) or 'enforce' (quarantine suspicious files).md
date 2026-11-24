@@ -12,6 +12,6 @@ tags:
 # Args: mode: 'monitor' (log findings) or 'enforce' (quarantine suspicious files)
 
 ## Connections
-- [[dot-__init__()_135]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_125]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/GitGuard

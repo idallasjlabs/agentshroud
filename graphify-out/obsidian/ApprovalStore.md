@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/approval_queue/store.py"
 type: "code"
-community: "ApprovalStore"
+community: "test_mfa_guard.py"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalStore
+  - community/test_mfa_guardpy
 ---
 
 # ApprovalStore
 
 ## Connections
-- [[dot-__init__()_117]] - `references` [EXTRACTED]
-- [[dot-__init__()_157]] - `method` [EXTRACTED]
-- [[dot-close()_13]] - `method` [EXTRACTED]
+- [[dot-__init__()_114]] - `references` [EXTRACTED]
+- [[dot-__init__()_116]] - `method` [EXTRACTED]
+- [[dot-close()_10]] - `method` [EXTRACTED]
 - [[dot-initialize()_2]] - `method` [EXTRACTED]
 - [[dot-load_all()]] - `method` [EXTRACTED]
 - [[dot-load_pending()]] - `method` [EXTRACTED]
-- [[dot-save()_1]] - `method` [EXTRACTED]
+- [[dot-save()_2]] - `method` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
 - [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
 - [[dot-test_store_persists_across_reopen()]] - `calls` [EXTRACTED]
@@ -30,15 +30,15 @@ tags:
 - [[TestPersistence_2]] - `uses` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[approval_queuestore.py]] - `contains` [EXTRACTED]
-- [[edge()]] - `uses` [INFERRED]
+- [[edge()_1]] - `uses` [INFERRED]
 - [[enhanced_mfa_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[env()]] - `uses` [INFERRED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[stack()]] - `uses` [INFERRED]
+- [[store()_1]] - `uses` [INFERRED]
 - [[store()_2]] - `uses` [INFERRED]
-- [[store()_3]] - `uses` [INFERRED]
 - [[temp_store()]] - `uses` [INFERRED]
 - [[test_approval_store.py]] - `imports` [EXTRACTED]
 - [[test_approval_stress.py]] - `imports` [EXTRACTED]
@@ -57,4 +57,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `uses` [INFERRED]
 - [[test_websocket_notifications()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalStore
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

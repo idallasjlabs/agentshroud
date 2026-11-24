@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "decide_approval"
 location: "L70"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/decide_approval
 ---
 
 # Approve or reject a pending action Authentication required.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[decide_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/decide_approval

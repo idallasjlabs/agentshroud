@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/main.py"
+community: "decide_approval"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/decide_approval
 ---
 
 # AuthRequired
@@ -15,4 +15,4 @@ tags:
 - [[list_pending_approvals()_1]] - `references` [EXTRACTED]
 - [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/decide_approval

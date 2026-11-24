@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "rationale"
-community: "_canonicalize_ip_literal"
+community: "A2APolicyEngine"
 location: "L265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_canonicalize_ip_literal
+  - community/A2APolicyEngine
 ---
 
 # Best-effort canonicalization of alternate IPv4 encodings that…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_canonicalize_ip_literal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_canonicalize_ip_literal
+#graphify/rationale #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/models.py"
+community: "BotConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/modelspy
+  - community/BotConfig
 ---
 
 # BaseModel
 
 ## Connections
-- [[OwnerEmailRequest]] - `inherits` [EXTRACTED]
+- [[BotConfig]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/modelspy
+#graphify/code #graphify/EXTRACTED #community/BotConfig

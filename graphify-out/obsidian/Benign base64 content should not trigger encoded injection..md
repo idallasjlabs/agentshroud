@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "rationale"
-community: "ToolResultInjectionScanner"
+community: "TestEncodedInjection"
 location: "L107"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/TestEncodedInjection
 ---
 
 # Benign base64 content should not trigger encoded injection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_base64_clean_content_not_flagged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/rationale #graphify/EXTRACTED #community/TestEncodedInjection

@@ -1,16 +1,32 @@
 ---
 source_file: ""
 type: "code"
-community: "BotConfig"
+community: "GatewayConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BotConfig
+  - community/GatewayConfig
 ---
 
 # BaseModel
 
 ## Connections
-- [[BotConfig]] - `inherits` [EXTRACTED]
+- [[AgentTarget]] - `inherits` [EXTRACTED]
+- [[ApprovalDecision]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueItem]] - `inherits` [EXTRACTED]
+- [[ApprovalRequest]] - `inherits` [EXTRACTED]
+- [[EmailSendRequest]] - `inherits` [EXTRACTED]
+- [[EmailSendResponse]] - `inherits` [EXTRACTED]
+- [[ForwardRequest]] - `inherits` [EXTRACTED]
+- [[ForwardResponse]] - `inherits` [EXTRACTED]
+- [[LedgerEntry]] - `inherits` [EXTRACTED]
+- [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
+- [[RedactionDetail]] - `inherits` [EXTRACTED]
+- [[RedactionResult_1]] - `inherits` [EXTRACTED]
+- [[SSHExecRequest]] - `inherits` [EXTRACTED]
+- [[SSHExecResponse]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
+- [[StatusResponse]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BotConfig
+#graphify/code #graphify/EXTRACTED #community/GatewayConfig

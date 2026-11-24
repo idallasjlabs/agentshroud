@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # BaseModel
@@ -21,4 +21,4 @@ tags:
 - [[ServiceDescriptor]] - `inherits` [EXTRACTED]
 - [[WSEvent]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

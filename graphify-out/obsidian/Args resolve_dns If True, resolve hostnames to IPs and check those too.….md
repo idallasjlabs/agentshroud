@@ -12,6 +12,6 @@ tags:
 # Args: resolve_dns: If True, resolve hostnames to IPs and check those too.…
 
 ## Connections
-- [[dot-__init__()_16]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_20]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/URLAnalyzer
