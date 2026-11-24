@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "test_soc_services_coverage.py"
-location: "L68"
+community: "test_progressive_lockdown.py"
+location: "L615"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/test_progressive_lockdownpy
 ---
 
 # __init__()
 
 ## Connections
-- [[_patch_http_connection()]] - `contains` [EXTRACTED]
+- [[dot-test_lifespan_sets_one_shared_instance_for_telegram_and_falco()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_progressive_lockdownpy

@@ -68,10 +68,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_upgrade-2026-09-21]]
 - 2 edges to [[_COMMUNITY_sunday-upgrade-apply.sh]]
 - 2 edges to [[_COMMUNITY_check-vendor-compat.sh]]
-- 2 edges to [[_COMMUNITY_sunday-upgrade.sh]]
-- 1 edge to [[_COMMUNITY_upgrade-2026-09-21]]
 - 1 edge to [[_COMMUNITY_Procedure]]
 - 1 edge to [[_COMMUNITY_plan_remediation]]
 - 1 edge to [[_COMMUNITY_discover_upstream_versions.py]]

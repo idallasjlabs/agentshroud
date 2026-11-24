@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_executor.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_hermes_forwarder_drops_non_http"
-location: "L56"
+community: "_patch_open"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_forwarder_drops_non_http
+  - community/_patch_open
 ---
 
 # __init__()
 
 ## Connections
-- [[test_hermes_forwarder_drops_non_http()]] - `contains` [EXTRACTED]
+- [[dot-test_running_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_forwarder_drops_non_http
+#graphify/code #graphify/EXTRACTED #community/_patch_open

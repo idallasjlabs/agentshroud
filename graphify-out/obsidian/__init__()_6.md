@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "TestDeterministicPresidioInit"
-location: "L134"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDeterministicPresidioInit
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_init_wires_explicit_nlp_engine_when_model_present()]] - `contains` [EXTRACTED]
+- [[dot-test_hello_message_not_dispatched()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDeterministicPresidioInit
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

@@ -8,7 +8,7 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Any_79]] - code
+- [[Any_76]] - code
 - [[Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal…]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Kaiser-windowed sinc anti-aliasing filter suppresses content above the output…]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz. For…]] - rationale - voice_gateway/tts.py
@@ -35,8 +35,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_test_voice_gateway.py]]
+- 1 edge to [[_COMMUNITY_dot-_s]]
 - 1 edge to [[_COMMUNITY_TestNormalizeForSpeech]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 - 1 edge to [[_COMMUNITY_server.py]]
 
 ## Top bridge nodes

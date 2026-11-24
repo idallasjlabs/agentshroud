@@ -12,7 +12,7 @@ tags:
 # _Svc
 
 ## Connections
-- [[dot-__init__()_44]] - `method` [EXTRACTED]
+- [[dot-__init__()_42]] - `method` [EXTRACTED]
 - [[dot-model_dump()_1]] - `method` [EXTRACTED]
 - [[test_health_healthy_and_degraded()]] - `calls` [EXTRACTED]
 - [[test_list_services_and_bot_filter()]] - `calls` [EXTRACTED]

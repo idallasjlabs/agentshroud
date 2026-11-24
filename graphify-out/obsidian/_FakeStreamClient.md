@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__aenter__()_2]] - `method` [EXTRACTED]
 - [[dot-__aexit__()_2]] - `method` [EXTRACTED]
-- [[dot-__init__()_74]] - `method` [EXTRACTED]
+- [[dot-__init__()_83]] - `method` [EXTRACTED]
 - [[dot-stream()]] - `method` [EXTRACTED]
 - [[Stands in for httpx.AsyncClient inside LLMProxy._stream().]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]

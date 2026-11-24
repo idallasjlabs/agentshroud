@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "DifferentialPIIDetector"
+community: "differential_pii_detector.py"
 location: "L156"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/DifferentialPIIDetector
+  - community/differential_pii_detectorpy
 ---
 
 # _collapse_spaced()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_normalize_adversarial()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/DifferentialPIIDetector
+#graphify/code #graphify/INFERRED #community/differential_pii_detectorpy

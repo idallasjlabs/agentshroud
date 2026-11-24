@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_socket_client.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: ".test_hello_message_not_dispatched"
-location: "L212"
+community: "test_benchmark_regression.py"
+location: "L902"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hello_message_not_dispatched
+  - community/test_benchmark_regressionpy
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_hello_message_not_dispatched()]] - `contains` [EXTRACTED]
+- [[_fake_contributor_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hello_message_not_dispatched
+#graphify/code #graphify/EXTRACTED #community/test_benchmark_regressionpy

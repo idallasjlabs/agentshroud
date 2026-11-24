@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "mcp_proxy.py"
+community: "ProxyResult"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_proxypy
+  - community/ProxyResult
 ---
 
 # _capture()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_body_agent_id_used_without_header()]] - `contains` [EXTRACTED]
 - [[ProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

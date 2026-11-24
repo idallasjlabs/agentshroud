@@ -12,7 +12,7 @@ tags:
 # _docker_read_file()
 
 ## Connections
-- [[Path_70]] - `references` [EXTRACTED]
+- [[Path_69]] - `references` [EXTRACTED]
 - [[Read a file out of a container via `exec cat` rather than `docker cp` — on this…]] - `rationale_for` [EXTRACTED]
 - [[Why exec cat replaced docker cp for reading container files]] - `rationale_for` [EXTRACTED]
 - [[export-bot-conversations.py]] - `contains` [EXTRACTED]

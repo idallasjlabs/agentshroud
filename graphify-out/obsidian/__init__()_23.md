@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L695"
+community: "_patch_open"
+location: "L180"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/_patch_open
 ---
 
 # __init__()
 
 ## Connections
-- [[test_relay_and_scan_read_error_scans_partial_buffer()]] - `contains` [EXTRACTED]
+- [[dot-test_running_via_proc_scan()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_patch_open

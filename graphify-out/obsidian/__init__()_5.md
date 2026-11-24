@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "FakeRBAC"
-location: "L5638"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeRBAC
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_owner_activity_is_tracked_with_flag()]] - `contains` [EXTRACTED]
+- [[dot-test_events_api_envelope_dispatches_handle_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeRBAC
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

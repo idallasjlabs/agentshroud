@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "asyncio"
-location: "L351"
+community: "test_http_proxy_coverage.py"
+location: "L695"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_http_proxy_coveragepy
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_emits_egress_event_to_event_bus()]] - `contains` [EXTRACTED]
+- [[test_relay_and_scan_read_error_scans_partial_buffer()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

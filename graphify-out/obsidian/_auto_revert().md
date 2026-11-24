@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "test_web_api_coverage.py"
+community: "ModeRequest"
 location: "L271"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_web_api_coveragepy
+  - community/ModeRequest
 ---
 
 # _auto_revert()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[set_mode()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_web_api_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ModeRequest

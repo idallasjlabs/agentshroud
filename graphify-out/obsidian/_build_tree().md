@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-from_source()]] - `calls` [EXTRACTED]
-- [[Path_75]] - `references` [EXTRACTED]
+- [[Path_76]] - `references` [EXTRACTED]
 - [[Read every manifest entry under source, failing CLOSED on unreadable files.…]] - `rationale_for` [EXTRACTED]
 - [[SkillsManifest]] - `uses` [INFERRED]
 - [[main()_37]] - `calls` [EXTRACTED]

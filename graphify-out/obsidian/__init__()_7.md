@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "make_fake_socket_module"
-location: "L78"
+community: "test_soc_router_coverage.py"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_fake_socket_module
+  - community/test_soc_router_coveragepy
 ---
 
 # __init__()
 
 ## Connections
-- [[make_fake_socket_module()]] - `contains` [EXTRACTED]
+- [[_make_service_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

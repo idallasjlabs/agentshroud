@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_router_streaming.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "AgentTarget"
-location: "L41"
+community: "test_voice_gateway.py"
+location: "L564"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentTarget
+  - community/test_voice_gatewaypy
 ---
 
 # _aiter_lines()
 
 ## Connections
-- [[_mock_stream_response()]] - `indirect_call` [INFERRED]
+- [[_mock_llm_stream_resp()]] - `indirect_call` [INFERRED]
+- [[_mock_stream_resp()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/test_voice_gatewaypy

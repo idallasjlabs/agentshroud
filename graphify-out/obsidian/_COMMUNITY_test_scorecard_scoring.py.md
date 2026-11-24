@@ -13,7 +13,7 @@ members: 11
 - [[clean_falco()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[clean_openscap_with_zero_fails()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[clean_trivy()]] - code - gateway/tests/test_scorecard_scoring.py
-- [[fixture_29]] - code
+- [[fixture_30]] - code
 - [[not_run_clamav()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[not_run_falco()]] - code - gateway/tests/test_scorecard_scoring.py
 - [[not_run_openscap()]] - code - gateway/tests/test_scorecard_scoring.py

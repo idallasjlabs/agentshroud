@@ -1,11 +1,11 @@
 ---
 type: community
-members: 86
+members: 87
 ---
 
 # test_soc_bots.py
 
-**Members:** 86 nodes
+**Members:** 87 nodes
 
 ## Members
 - [[dot-_make_state_with_bot()]] - code - gateway/tests/test_soc_bots.py
@@ -88,10 +88,11 @@ members: 86
 - [[_make_m6_bot_config()]] - code - gateway/tests/test_soc_bots.py
 - [[_make_m6_caller()]] - code - gateway/tests/test_soc_bots.py
 - [[_make_owner_caller()]] - code - gateway/tests/test_soc_bots.py
-- [[asyncio_77]] - code
+- [[asyncio_76]] - code
 - [[compute_bot_scorecard()]] - code - gateway/security/scanner_integration.py
 - [[get_agent_cves()]] - code - gateway/soc/router.py
 - [[get_config()_1]] - code - gateway/soc/router.py
+- [[get_security_events()]] - code - gateway/soc/router.py
 - [[list_bots()]] - code - gateway/soc/router.py
 - [[test_soc_bots.py]] - code - gateway/tests/test_soc_bots.py
 
@@ -103,18 +104,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 52 edges to [[_COMMUNITY_socrouter.py]]
-- 15 edges to [[_COMMUNITY_socmodels.py]]
+- 55 edges to [[_COMMUNITY_socrouter.py]]
+- 16 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
 - 9 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
 - 2 edges to [[_COMMUNITY_scanner_integration.py]]
 - 1 edge to [[_COMMUNITY_PrivacyPolicyEnforcer]]
 - 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_Any]]
+- 1 edge to [[_COMMUNITY_Any_1]]
 
 ## Top bridge nodes
-- [[test_soc_bots.py]] - degree 43, connects to 4 communities
+- [[test_soc_bots.py]] - degree 43, connects to 3 communities
 - [[compute_bot_scorecard()]] - degree 21, connects to 3 communities
 - [[dot-test_filters_egress_log_by_bot_id()]] - degree 7, connects to 3 communities
-- [[dot-test_filters_events_by_exact_bot_id()]] - degree 7, connects to 3 communities
-- [[dot-test_no_bot_id_returns_all_events()]] - degree 7, connects to 3 communities
+- [[list_bots()]] - degree 18, connects to 2 communities
+- [[get_security_events()]] - degree 12, connects to 2 communities

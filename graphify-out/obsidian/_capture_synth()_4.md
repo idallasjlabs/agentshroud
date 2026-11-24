@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "asyncio"
+community: "_mock_ws"
 location: "L3005"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_mock_ws
 ---
 
 # _capture_synth()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_use_local_command_confirms_with_model_name()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_mock_ws

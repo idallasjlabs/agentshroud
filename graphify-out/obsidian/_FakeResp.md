@@ -12,9 +12,9 @@ tags:
 # _FakeResp
 
 ## Connections
-- [[dot-__init__()_187]] - `method` [EXTRACTED]
+- [[dot-__init__()_183]] - `method` [EXTRACTED]
 - [[dot-_patch_http()]] - `calls` [EXTRACTED]
-- [[dot-read()]] - `method` [EXTRACTED]
+- [[dot-read()_1]] - `method` [EXTRACTED]
 - [[_fake_urlopen()_3]] - `calls` [INFERRED]
 - [[_fake_urlopen()_4]] - `calls` [INFERRED]
 - [[request()_1]] - `calls` [INFERRED]

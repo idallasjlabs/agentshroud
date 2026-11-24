@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_socket_client.py"
+source_file: "gateway/tests/test_edge_service_routes.py"
 type: "code"
-community: ".test_get_wss_url_returns_url_on_success"
-location: "L119"
+community: "test_edge_service_routes.py"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_get_wss_url_returns_url_on_success
+  - community/test_edge_service_routespy
 ---
 
 # __aexit__()
 
 ## Connections
-- [[dot-test_get_wss_url_returns_url_on_success()]] - `contains` [EXTRACTED]
+- [[test_telegram_send_posts_card()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_get_wss_url_returns_url_on_success
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

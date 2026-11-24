@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "services.py"
+community: "test_soc_realtime_coverage.py"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _engine_status_to_service_status()
@@ -16,4 +16,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[services.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -32,8 +32,8 @@ members: 81
 - [[dot-test_successful_upgrade()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[dot-test_valid_version()]] - code - gateway/tests/test_agentshroud_manager.py
 - [[dot-test_with_env_var()]] - code - gateway/tests/test_agentshroud_manager.py
-- [[Any_76]] - code
-- [[Any_77]] - code
+- [[Any_72]] - code
+- [[Any_73]] - code
 - [[BaseModel_12]] - code
 - [[Check the currently installed OpenClaw version.]] - rationale - gateway/tools/agentshroud_manager.py
 - [[Connection_3]] - code
@@ -71,7 +71,7 @@ members: 81
 - [[check_current_version()]] - code - gateway/tools/agentshroud_manager.py
 - [[downgrade()]] - code - gateway/tools/agentshroud_manager.py
 - [[downgrade_version()]] - code - gateway/ingest_api/version_routes.py
-- [[fixture_120]] - code
+- [[fixture_122]] - code
 - [[get_7]] - code
 - [[get_available_versions()]] - code - gateway/ingest_api/version_routes.py
 - [[get_current_version()]] - code - gateway/ingest_api/version_routes.py
@@ -79,7 +79,7 @@ members: 81
 - [[list_available_versions()]] - code - gateway/tools/agentshroud_manager.py
 - [[list_versions()]] - code - gateway/tools/agentshroud_manager.py
 - [[mask_credentials()]] - code - gateway/tools/agentshroud_manager.py
-- [[post_8]] - code
+- [[post_7]] - code
 - [[review_version()]] - code - gateway/ingest_api/version_routes.py
 - [[rollback()]] - code - gateway/tools/agentshroud_manager.py
 - [[rollback_version()]] - code - gateway/ingest_api/version_routes.py
@@ -98,10 +98,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_ingest_apimodels.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_fastapi]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_GatewayConfig]]
 - 1 edge to [[_COMMUNITY_TestVersionRoutes]]
 
 ## Top bridge nodes
-- [[version_routes.py_2]] - degree 22, connects to 4 communities
+- [[version_routes.py_2]] - degree 22, connects to 3 communities

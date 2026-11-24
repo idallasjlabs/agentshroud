@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "load_config"
+community: "MCPPolicyEngine"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_config
+  - community/MCPPolicyEngine
 ---
 
 # _FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_143]] - `method` [EXTRACTED]
+- [[dot-__init__()_134]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()_3]] - `method` [EXTRACTED]
 - [[dot-wait_for_decision()_3]] - `method` [EXTRACTED]
 - [[Minimal stand-in for EnhancedApprovalQueue. Records submissions and returns a…]] - `rationale_for` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_enforce_high_risk_queue_no_wait_denies_closed()]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_config
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

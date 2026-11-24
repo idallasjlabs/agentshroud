@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_soc_services_coverage.py"
+community: "ServiceManager"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_services_coveragepy
+  - community/ServiceManager
 ---
 
 # _FakeResponse
 
 ## Connections
-- [[dot-__init__()_196]] - `method` [EXTRACTED]
-- [[dot-read()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_163]] - `method` [EXTRACTED]
+- [[dot-read()]] - `method` [EXTRACTED]
 - [[dot-test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[dot-test_404_returns_empty_dict()]] - `calls` [EXTRACTED]
 - [[dot-test_500_returns_none()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_tail_limit_applied()]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_services_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

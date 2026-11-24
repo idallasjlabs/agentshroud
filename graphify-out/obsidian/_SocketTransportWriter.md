@@ -12,7 +12,7 @@ tags:
 # _SocketTransportWriter
 
 ## Connections
-- [[dot-__init__()_213]] - `method` [EXTRACTED]
+- [[dot-__init__()_210]] - `method` [EXTRACTED]
 - [[Writer exposing a .transport whose socket records setsockopt calls.]] - `rationale_for` [EXTRACTED]
 - [[_MockWriter]] - `inherits` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

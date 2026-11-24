@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "TestListServices"
-location: "L513"
+community: "TestFailsLoudly"
+location: "L473"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestListServices
+  - community/TestFailsLoudly
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_falls_back_to_openclaw_only_on_config_load_failure()]] - `contains` [EXTRACTED]
+- [[dot-test_main_exits_nonzero_when_an_agent_fails()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestListServices
+#graphify/code #graphify/EXTRACTED #community/TestFailsLoudly

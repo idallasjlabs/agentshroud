@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
-location: "L661"
+community: ".test_stranger_within_limit_triggers_approval_workflow"
+location: "L7839"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # __enter__()
 
 ## Connections
-- [[dot-test_patched_versions_carried_into_result()]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_23]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

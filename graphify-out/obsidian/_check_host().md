@@ -12,7 +12,7 @@ tags:
 # _check_host()
 
 ## Connections
-- [[Any_68]] - `references` [EXTRACTED]
+- [[Any_66]] - `references` [EXTRACTED]
 - [[TCP connect to port 22 to check if host is reachable.]] - `rationale_for` [EXTRACTED]
 - [[_tcp_check()]] - `indirect_call` [INFERRED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]

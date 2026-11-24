@@ -15,7 +15,7 @@ members: 15
 - [[dot-test_wrapper_env_host_override()]] - code - gateway/tests/test_multi_host_test.py
 - [[dot-test_wrapper_mixed_exit_codes_fail()]] - code - gateway/tests/test_multi_host_test.py
 - [[ArgumentParser_1]] - code
-- [[Path_76]] - code
+- [[Path_77]] - code
 - [[TestParserAndCommandResolution]] - code - gateway/tests/test_multi_host_test.py
 - [[TestWrapperSubprocess]] - code - gateway/tests/test_multi_host_test.py
 - [[Tests for multi_host_test — host parsing + result aggregation (no real SSH).]] - rationale - gateway/tests/test_multi_host_test.py

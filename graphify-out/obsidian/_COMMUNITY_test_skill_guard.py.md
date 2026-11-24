@@ -26,7 +26,7 @@ members: 35
 - [[dot-test_sync_aborts_on_dangerous_tree()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_sync_allows_clean_tree()]] - code - gateway/tests/test_skill_guard.py
 - [[dot-test_sync_dry_run_does_not_write_but_still_scans()]] - code - gateway/tests/test_skill_guard.py
-- [[CompletedProcess_3]] - code
+- [[CompletedProcess_4]] - code
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - rationale - gateway/tests/test_skill_guard.py
 - [[Path_34]] - code
 - [[TestClient_1]] - code
@@ -38,9 +38,9 @@ members: 35
 - [[The parallel bash sync path must invoke SkillGuard before copying.]] - rationale - gateway/tests/test_skill_guard.py
 - [[_run_scan_cli()]] - code - gateway/tests/test_skill_guard.py
 - [[_write_tree()]] - code - gateway/tests/test_skill_guard.py
+- [[boom()_4]] - code - gateway/tests/test_skill_guard.py
 - [[boom()_5]] - code - gateway/tests/test_skill_guard.py
-- [[boom()_6]] - code - gateway/tests/test_skill_guard.py
-- [[fixture_71]] - code
+- [[fixture_78]] - code
 - [[guard()_2]] - code - gateway/tests/test_skill_guard.py
 - [[test_skill_guard.py]] - code - gateway/tests/test_skill_guard.py
 
@@ -52,10 +52,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_SkillGuard]]
-- 6 edges to [[_COMMUNITY_ScanResult_1]]
-- 1 edge to [[_COMMUNITY_test_web_api_coverage.py]]
-- 1 edge to [[_COMMUNITY_fastapi]]
+- 14 edges to [[_COMMUNITY_SkillGuard]]
+- 5 edges to [[_COMMUNITY_ScanResult_1]]
+- 1 edge to [[_COMMUNITY_require_auth]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_api.py]]
 
 ## Top bridge nodes

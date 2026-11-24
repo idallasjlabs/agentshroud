@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "services.py"
+community: "test_soc_realtime_coverage.py"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/servicespy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _check_openscap()
@@ -15,4 +15,4 @@ tags:
 - [[Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).]] - `rationale_for` [EXTRACTED]
 - [[services.py]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/servicespy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

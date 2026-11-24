@@ -12,7 +12,7 @@ tags:
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_223]] - `method` [EXTRACTED]
+- [[dot-__init__()_225]] - `method` [EXTRACTED]
 - [[dot-forward()_2]] - `method` [EXTRACTED]
 - [[Records what it was asked to forward; returns a canned response.]] - `rationale_for` [EXTRACTED]
 - [[forwarder()_1]] - `calls` [EXTRACTED]

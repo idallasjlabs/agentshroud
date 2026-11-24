@@ -1,26 +1,21 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "DraftEntry"
-location: "L26"
+community: "test_intel_endpoint.py"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/test_intel_endpointpy
 ---
 
 # _FakeFetcher
 
 ## Connections
-- [[dot-__call__()_13]] - `method` [EXTRACTED]
-- [[dot-__init__()_229]] - `method` [EXTRACTED]
-- [[dot-_verifier()]] - `calls` [EXTRACTED]
-- [[dot-_verifier()_1]] - `calls` [EXTRACTED]
-- [[dot-test_host_confusion_urls_rejected_and_never_fetched()]] - `calls` [EXTRACTED]
-- [[dot-test_ssrf_unsafe_urls_rejected_before_fetch()]] - `calls` [EXTRACTED]
-- [[Deterministic fetcher maps url - (status, sha_or_None). Records calls.]] - `rationale_for` [EXTRACTED]
+- [[dot-__call__()_12]] - `method` [EXTRACTED]
+- [[dot-__init__()_176]] - `method` [EXTRACTED]
 - [[FetchOutcome]] - `uses` [INFERRED]
-- [[test_citation_verifier.py]] - `contains` [EXTRACTED]
-- [[test_default_allowlist_uses_permanent_egress_domains()]] - `calls` [EXTRACTED]
+- [[_inject_fetcher()]] - `calls` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

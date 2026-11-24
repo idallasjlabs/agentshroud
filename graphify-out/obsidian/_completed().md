@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_returns_none_when_all_paths_fail()]] - `calls` [EXTRACTED]
-- [[CompletedProcess_5]] - `references` [EXTRACTED]
+- [[CompletedProcess_6]] - `references` [EXTRACTED]
 - [[fake_run()_4]] - `calls` [EXTRACTED]
 - [[fake_run()_5]] - `calls` [EXTRACTED]
 - [[fake_run()_6]] - `calls` [EXTRACTED]

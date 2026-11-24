@@ -28,7 +28,7 @@ members: 26
 - [[TestTopicScopedMemory]] - code - gateway/tests/test_shared_memory.py
 - [[TestUserPrivateMemory]] - code - gateway/tests/test_shared_memory.py
 - [[Tests for gatewaysecurityshared_memory.py — V9-T1 Group shared memory +…]] - rationale - gateway/tests/test_shared_memory.py
-- [[fixture_119]] - code
+- [[fixture_121]] - code
 - [[rbac()_5]] - code - gateway/tests/test_shared_memory.py
 - [[session_mgr()]] - code - gateway/tests/test_shared_memory.py
 - [[smm()_1]] - code - gateway/tests/test_shared_memory.py
@@ -44,14 +44,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_UserSessionManager]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
 - 3 edges to [[_COMMUNITY_SharedMemoryManager]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
 - 2 edges to [[_COMMUNITY_TeamsConfig]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[test_shared_memory.py]] - degree 18, connects to 6 communities
+- [[test_shared_memory.py]] - degree 18, connects to 5 communities
 - [[rbac()_5]] - degree 4, connects to 2 communities
 - [[session_mgr()]] - degree 3, connects to 1 community
 - [[smm()_1]] - degree 3, connects to 1 community

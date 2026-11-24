@@ -8,7 +8,7 @@ members: 45
 **Members:** 45 nodes
 
 ## Members
-- [[dot-from_dict()_5]] - code - gateway/security/session_manager.py
+- [[dot-from_dict()_6]] - code - gateway/security/session_manager.py
 - [[dot-test_add_message()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_conversation_history_limit()]] - code - gateway/tests/test_session_manager.py
 - [[dot-test_default_trust_level_is_untrusted()]] - code - gateway/tests/test_session_manager.py
@@ -50,8 +50,8 @@ members: 45
 - [[TestTrustLevel]] - code - gateway/tests/test_session_manager.py
 - [[Tests for gatewaysecuritysession_manager.py — session isolation and security.]] - rationale - gateway/tests/test_session_manager.py
 - [[UserSession]] - code - gateway/security/session_manager.py
-- [[fixture_50]] - code
-- [[mgr()]] - code - gateway/tests/test_session_manager.py
+- [[fixture_60]] - code
+- [[mgr()_2]] - code - gateway/tests/test_session_manager.py
 - [[test_session_manager.py]] - code - gateway/tests/test_session_manager.py
 
 ## Live Query (requires Dataview plugin)
@@ -62,13 +62,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_dot-get_or_create_session]]
-- 4 edges to [[_COMMUNITY_UserSessionManager]]
+- 9 edges to [[_COMMUNITY_UserSessionManager]]
 - 1 edge to [[_COMMUNITY_TestAtomicRegistryWrites]]
 - 1 edge to [[_COMMUNITY_TestMultiBotIsolation]]
 
 ## Top bridge nodes
 - [[test_session_manager.py]] - degree 15, connects to 3 communities
-- [[UserSession]] - degree 8, connects to 2 communities
-- [[dot-from_dict()_5]] - degree 6, connects to 1 community
-- [[mgr()]] - degree 4, connects to 1 community
+- [[UserSession]] - degree 8, connects to 1 community
+- [[dot-from_dict()_6]] - degree 6, connects to 1 community
+- [[mgr()_2]] - degree 4, connects to 1 community

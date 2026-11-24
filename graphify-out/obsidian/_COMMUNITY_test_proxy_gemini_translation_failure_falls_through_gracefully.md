@@ -12,7 +12,7 @@ members: 11
 - [[If openai_to_gemini_request raises, the request must still be forwarded…]] - rationale - gateway/tests/test_gemini_via_openai_path.py
 - [[The combined path v1chatcompletions with model=gemini- must end up POSTing…]] - rationale - gateway/tests/test_gemini_via_openai_path.py
 - [[_broken_translator()]] - code - gateway/tests/test_gemini_via_openai_path.py
-- [[asyncio_23]] - code
+- [[asyncio_25]] - code
 - [[fake_open()_1]] - code - gateway/tests/test_gemini_via_openai_path.py
 - [[mock_forward()_16]] - code - gateway/tests/test_gemini_via_openai_path.py
 - [[mock_forward()_17]] - code - gateway/tests/test_gemini_via_openai_path.py

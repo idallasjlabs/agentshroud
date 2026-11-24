@@ -12,7 +12,7 @@ tags:
 # _StubApprovalQueue
 
 ## Connections
-- [[dot-__init__()_188]] - `method` [EXTRACTED]
+- [[dot-__init__()_186]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()_4]] - `method` [EXTRACTED]
 - [[dot-wait_for_decision()_4]] - `method` [EXTRACTED]
 - [[test_a2a_policy.py]] - `contains` [EXTRACTED]

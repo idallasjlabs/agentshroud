@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: ".test_stranger_rate_limit_notice_includes_reset_time"
-location: "L7842"
+community: ".test_default_transport_is_smtp_ssl"
+location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_stranger_rate_limit_notice_includes_reset_time
+  - community/test_default_transport_is_smtp_ssl
 ---
 
 # __exit__()
 
 ## Connections
-- [[fake_urlopen()_33]] - `contains` [EXTRACTED]
+- [[dot-test_default_transport_is_smtp_ssl()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_stranger_rate_limit_notice_includes_reset_time
+#graphify/code #graphify/EXTRACTED #community/test_default_transport_is_smtp_ssl

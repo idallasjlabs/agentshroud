@@ -31,7 +31,7 @@ members: 27
 - [[_make_pipeline_result()]] - code - gateway/tests/test_telegram_pipeline.py
 - [[_make_proxy()_3]] - code - gateway/tests/test_telegram_pipeline.py
 - [[_make_update()_2]] - code - gateway/tests/test_telegram_pipeline.py
-- [[asyncio_68]] - code
+- [[asyncio_67]] - code
 - [[fake_forward()_3]] - code - gateway/tests/test_telegram_pipeline.py
 - [[sendMessageDraft must be suppressed to prevent draft flicker leaks.]] - rationale - gateway/tests/test_telegram_pipeline.py
 - [[test_telegram_pipeline.py]] - code - gateway/tests/test_telegram_pipeline.py
@@ -45,11 +45,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 2 edges to [[_COMMUNITY_PipelineAction]]
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY_AuditChain]]
 - 1 edge to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
 
 ## Top bridge nodes
 - [[test_telegram_pipeline.py]] - degree 18, connects to 5 communities

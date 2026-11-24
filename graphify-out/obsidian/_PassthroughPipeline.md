@@ -12,7 +12,7 @@ tags:
 # _PassthroughPipeline
 
 ## Connections
-- [[dot-__init__()_45]] - `method` [EXTRACTED]
+- [[dot-__init__()_43]] - `method` [EXTRACTED]
 - [[dot-process_inbound()]] - `method` [EXTRACTED]
 - [[dot-process_outbound()_1]] - `method` [EXTRACTED]
 - [[Mock pipeline whose process_outbound returns the window text unchanged —…]] - `rationale_for` [EXTRACTED]

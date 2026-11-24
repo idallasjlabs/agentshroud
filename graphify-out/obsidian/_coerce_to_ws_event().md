@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "soc/models.py"
+community: "test_soc_realtime_coverage.py"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/modelspy
+  - community/test_soc_realtime_coveragepy
 ---
 
 # _coerce_to_ws_event()
@@ -39,4 +39,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/modelspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
