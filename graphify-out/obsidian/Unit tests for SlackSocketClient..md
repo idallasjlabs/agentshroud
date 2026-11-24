@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_socket_client.py"
 type: "rationale"
-community: "_make_client"
+community: ".test_events_api_envelope_dispatches_handle_event"
 location: "L97"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_make_client
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # Unit tests for SlackSocketClient.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSlackSocketClient]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_make_client
+#graphify/rationale #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

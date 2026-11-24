@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "ResourceGuard"
+community: "VRAMHeadroomError"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/VRAMHeadroomError
 ---
 
 # VRAMHeadroomError
 
 ## Connections
 - [[dot-check_vram_headroom()]] - `calls` [EXTRACTED]
-- [[Exception_16]] - `inherits` [EXTRACTED]
+- [[Exception_6]] - `inherits` [EXTRACTED]
 - [[Raised when a local-model call is rejected because estimated VRAM usage would…]] - `rationale_for` [EXTRACTED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_resource_guard_vram_headroom_check_raises_on_insufficient_vram()]] - `uses` [INFERRED]
 - [[test_vram_headroom_error_is_not_resource_warning()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/VRAMHeadroomError
