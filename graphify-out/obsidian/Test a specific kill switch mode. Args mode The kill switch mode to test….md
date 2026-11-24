@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "rationale"
-community: "KillSwitchMonitor"
+community: "Any"
 location: "L427"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/Any
 ---
 
 # Test a specific kill switch mode. Args: mode: The kill switch mode to test…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_test_killswitch_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/rationale #graphify/EXTRACTED #community/Any

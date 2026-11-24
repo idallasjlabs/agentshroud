@@ -12,6 +12,6 @@ tags:
 # Test authentication and authorization enforcement.
 
 ## Connections
-- [[TestAuth_1]] - `rationale_for` [EXTRACTED]
+- [[TestAuth]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TestAuth

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "MemoryLifecycleManager"
+community: "middleware.py"
 location: "1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # Test Memory Lifecycle and Integrity
@@ -15,4 +15,4 @@ tags:
 - [[MemoryIntegrityMonitor]] - `references` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

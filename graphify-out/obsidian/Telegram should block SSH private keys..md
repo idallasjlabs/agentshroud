@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_block_credentials.py"
 type: "rationale"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L98"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # Telegram should block SSH private keys.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_telegram_blocks_ssh_private_key()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

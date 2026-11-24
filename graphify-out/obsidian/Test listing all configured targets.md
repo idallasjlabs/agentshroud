@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "rationale"
-community: "ingest_api/config.py"
+community: "AgentTarget"
 location: "L90"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/configpy
+  - community/AgentTarget
 ---
 
 # Test listing all configured targets
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_list_targets()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

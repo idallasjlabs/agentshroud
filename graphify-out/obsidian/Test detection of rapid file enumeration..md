@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "ToolChainAnalyzer"
+community: "TestToolChainAnalyzer"
 location: "L144"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolChainAnalyzer
+  - community/TestToolChainAnalyzer
 ---
 
 # Test detection of rapid file enumeration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rapid_file_enumeration()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer

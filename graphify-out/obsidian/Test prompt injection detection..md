@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "TestMemoryLifecycleManager"
+community: "middleware.py"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestMemoryLifecycleManager
+  - community/middlewarepy
 ---
 
 # Test prompt injection detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_prompt_injection_detection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestMemoryLifecycleManager
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

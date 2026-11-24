@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L453"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # Test denied request creation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_denied_request_creation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening

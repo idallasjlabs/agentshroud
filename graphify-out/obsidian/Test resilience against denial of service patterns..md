@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L296"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # Test resilience against denial of service patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDoSPrevention]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

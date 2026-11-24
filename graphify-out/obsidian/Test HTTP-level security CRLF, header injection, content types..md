@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PIIConfig"
+community: "lifespan.py"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PIIConfig
+  - community/lifespanpy
 ---
 
 # Test HTTP-level security: CRLF, header injection, content types.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHTTPSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

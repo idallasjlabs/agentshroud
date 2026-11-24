@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "PathRewriteResult"
+community: "PathIsolationManager"
 location: "L335"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathRewriteResult
+  - community/PathIsolationManager
 ---
 
 # Test blocked result creation.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_blocked_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathRewriteResult
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

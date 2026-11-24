@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_hardening.py"
 type: "rationale"
-community: "middleware.py"
+community: "TestApprovalHardening"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestApprovalHardening
 ---
 
 # Test normalization handles empty descriptions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_normalize_description_handles_empty()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/TestApprovalHardening

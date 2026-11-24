@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "PromptGuard"
+community: "lifespan.py"
 location: "L459"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PromptGuard
+  - community/lifespanpy
 ---
 
 # Test MCP tool proxy security controls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMCPSecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PromptGuard
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
