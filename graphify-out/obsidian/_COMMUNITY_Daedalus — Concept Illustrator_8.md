@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Daedalus — Concept Illustrator_8]] - document - .agents/skills/daedalus/README.md
-- [[Purpose_98]] - document - .agents/skills/daedalus/README.md
+- [[Purpose_96]] - document - .agents/skills/daedalus/README.md
 - [[Related Skills_28]] - document - .agents/skills/daedalus/README.md
 - [[Usage_38]] - document - .agents/skills/daedalus/README.md
 - [[daedalusREADME]] - document - .agents/skills/daedalus/README.md

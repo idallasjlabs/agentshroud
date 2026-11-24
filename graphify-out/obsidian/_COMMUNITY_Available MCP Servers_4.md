@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-ompagentsi-mcpm]] - document - .omp/agents/i-mcpm.md
-- [[1. GitHub MCP_4]] - document - .omp/agents/i-mcpm.md
-- [[2. Atlassian MCP (Jira + Confluence)_4]] - document - .omp/agents/i-mcpm.md
-- [[3. AWS API MCP_4]] - document - .omp/agents/i-mcpm.md
-- [[Authentication Issues_3]] - document - .omp/agents/i-mcpm.md
-- [[Available MCP Servers_4]] - document - .omp/agents/i-mcpm.md
-- [[Common Errors_3]] - document - .omp/agents/i-mcpm.md
-- [[MCP Troubleshooting_3]] - document - .omp/agents/i-mcpm.md
-- [[Role_73]] - document - .omp/agents/i-mcpm.md
-- [[Skill MCP Tools Usage (MCP-TOOLS)_3]] - document - .omp/agents/i-mcpm.md
+- [[dot-opencodeagentsi-mcpm]] - document - .opencode/agents/i-mcpm.md
+- [[1. GitHub MCP_5]] - document - .opencode/agents/i-mcpm.md
+- [[2. Atlassian MCP (Jira + Confluence)_5]] - document - .opencode/agents/i-mcpm.md
+- [[3. AWS API MCP_5]] - document - .opencode/agents/i-mcpm.md
+- [[Authentication Issues_4]] - document - .opencode/agents/i-mcpm.md
+- [[Available MCP Servers_5]] - document - .opencode/agents/i-mcpm.md
+- [[Common Errors_4]] - document - .opencode/agents/i-mcpm.md
+- [[MCP Troubleshooting_4]] - document - .opencode/agents/i-mcpm.md
+- [[Role_76]] - document - .opencode/agents/i-mcpm.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_5]] - document - .opencode/agents/i-mcpm.md
 
 ## Live Query (requires Dataview plugin)
 

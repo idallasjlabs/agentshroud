@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Branding Specialist (BS)_1]] - document - docker/config/openclaw/skills/i-bs/README.md
-- [[Purpose_137]] - document - docker/config/openclaw/skills/i-bs/README.md
+- [[Purpose_135]] - document - docker/config/openclaw/skills/i-bs/README.md
 - [[Related Skills_67]] - document - docker/config/openclaw/skills/i-bs/README.md
 - [[Usage_77]] - document - docker/config/openclaw/skills/i-bs/README.md
 - [[openclawskillsi-bsREADME]] - document - docker/config/openclaw/skills/i-bs/README.md

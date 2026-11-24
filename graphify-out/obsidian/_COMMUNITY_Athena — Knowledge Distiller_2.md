@@ -15,7 +15,7 @@ members: 12
 - [[Output Format_26]] - document - .cursor/agents/athena.md
 - [[Persona_6]] - document - .cursor/agents/athena.md
 - [[Quality Checklist_12]] - document - .cursor/agents/athena.md
-- [[Role_53]] - document - .cursor/agents/athena.md
+- [[Role_54]] - document - .cursor/agents/athena.md
 - [[System Prompt_6]] - document - .cursor/agents/athena.md
 - [[User Prompt Template_5]] - document - .cursor/agents/athena.md
 - [[cheatsheet_2]] - document - .cursor/agents/athena.md

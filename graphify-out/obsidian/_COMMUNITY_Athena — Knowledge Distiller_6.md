@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Athena — Knowledge Distiller_6]] - document - .agents/skills/athena/README.md
-- [[Purpose_94]] - document - .agents/skills/athena/README.md
+- [[Purpose_92]] - document - .agents/skills/athena/README.md
 - [[Related Skills_24]] - document - .agents/skills/athena/README.md
 - [[Usage_33]] - document - .agents/skills/athena/README.md
 - [[athenaREADME]] - document - .agents/skills/athena/README.md

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 30
+members: 36
 ---
 
 # AgentShroud Device Pairing Management
 
-**Members:** 30 nodes
+**Members:** 36 nodes
 
 ## Members
 - [[1. Regular Audits]] - document - docs/setup/DEVICE_PAIRING.md
@@ -16,6 +16,7 @@ members: 30
 - [[AgentShroud Device Pairing Management]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Approve All Pending Requests]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Approving Device Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Common Scenarios]] - document - docs/setup/DEVICE_PAIRING.md
 - [[File Locations]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Finding Pending Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
 - [[How Device Pairing Works]] - document - docs/setup/DEVICE_PAIRING.md
@@ -31,6 +32,11 @@ members: 30
 - [[Quick Approval (Single Device)]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Rejecting Pairing Requests]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Revoking Device Access]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 1 New BrowserComputer]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 2 Safari Private Window]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 3 Multiple Computers]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 4 LostStolen Device]] - document - docs/setup/DEVICE_PAIRING.md
+- [[Scenario 5 Clear All Devices (Nuclear Option)]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Security Best Practices]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Security Notes_1]] - document - docs/setup/DEVICE_PAIRING.md
 - [[Troubleshooting_16]] - document - docs/setup/DEVICE_PAIRING.md
@@ -48,8 +54,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-- 1 edge to [[_COMMUNITY_Common Scenarios]]
 - 1 edge to [[_COMMUNITY_System Instructions Credential Security (Ultra-Conservative)]]
 
 ## Top bridge nodes
-- [[AgentShroud Device Pairing Management]] - degree 16, connects to 3 communities
+- [[AgentShroud Device Pairing Management]] - degree 16, connects to 2 communities

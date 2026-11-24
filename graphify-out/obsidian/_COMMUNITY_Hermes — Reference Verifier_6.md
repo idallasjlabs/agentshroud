@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_62]] - document - .opencode/agents/hermes.md
 - [[Persona_41]] - document - .opencode/agents/hermes.md
 - [[Quality Checklist_47]] - document - .opencode/agents/hermes.md
-- [[Role_112]] - document - .opencode/agents/hermes.md
+- [[Role_114]] - document - .opencode/agents/hermes.md
 - [[System Prompt_41]] - document - .opencode/agents/hermes.md
 
 ## Live Query (requires Dataview plugin)

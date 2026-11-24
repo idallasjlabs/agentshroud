@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-mcREADME]] - document - .agents/skills/i-mc/README.md
 - [[GSDE&G Development Master Checklist (MC)]] - document - .agents/skills/i-mc/README.md
-- [[Purpose_104]] - document - .agents/skills/i-mc/README.md
+- [[Purpose_102]] - document - .agents/skills/i-mc/README.md
 - [[Related Skills_34]] - document - .agents/skills/i-mc/README.md
 - [[Usage_44]] - document - .agents/skills/i-mc/README.md
 

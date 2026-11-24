@@ -8,7 +8,7 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_91]] - code - gateway/security/config_integrity.py
+- [[dot-__init__()_95]] - code - gateway/security/config_integrity.py
 - [[dot-_hash_file()]] - code - gateway/security/config_integrity.py
 - [[dot-_load_baseline()]] - code - gateway/security/config_integrity.py
 - [[dot-_save_baseline()]] - code - gateway/security/config_integrity.py
@@ -30,7 +30,7 @@ members: 38
 - [[_write_openclaw()]] - code - gateway/tests/test_config_integrity_monitor.py
 - [[config_integrity.py]] - code - gateway/security/config_integrity.py
 - [[dirs()]] - code - gateway/tests/test_config_integrity_monitor.py
-- [[fixture_54]] - code
+- [[fixture_62]] - code
 - [[test_added_file_is_detected()]] - code - gateway/tests/test_config_integrity_monitor.py
 - [[test_baseline_advances_only_when_clean()]] - code - gateway/tests/test_config_integrity_monitor.py
 - [[test_config_integrity_monitor.py]] - code - gateway/tests/test_config_integrity_monitor.py

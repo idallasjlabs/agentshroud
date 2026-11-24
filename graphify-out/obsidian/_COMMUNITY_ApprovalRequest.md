@@ -1,14 +1,14 @@
 ---
 type: community
-members: 130
+members: 148
 ---
 
 # ApprovalRequest
 
-**Members:** 130 nodes
+**Members:** 148 nodes
 
 ## Members
-- [[dot-__init__()_20]] - code - gateway/approval_queue/group_router.py
+- [[dot-__init__()_24]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_default_send()]] - code - gateway/approval_queue/group_router.py
@@ -16,12 +16,17 @@ members: 130
 - [[dot-is_group_context()]] - code - gateway/approval_queue/group_router.py
 - [[dot-route_approval()]] - code - gateway/approval_queue/group_router.py
 - [[dot-send_json()]] - code - gateway/tests/test_approval_queue.py
+- [[dot-test_100_concurrent_submissions()]] - code - gateway/tests/test_approval_stress.py
 - [[dot-test_both_owner_dm_and_group_notified()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_concurrent_submit_and_decide()]] - code - gateway/tests/test_approval_stress.py
 - [[dot-test_default_send_stub_returns_ok()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_dm_approval_no_group_side_effect()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_dm_approval_routes_only_to_owner()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_double_decide_raises()]] - code - gateway/tests/test_approval_stress.py
+- [[dot-test_expired_request_cannot_be_decided()]] - code - gateway/tests/test_approval_stress.py
 - [[dot-test_extract_chat_id_from_group_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_extract_chat_id_returns_none_for_non_group()]] - code - gateway/tests/test_group_approval_routing.py
+- [[dot-test_get_pending_expires_stale()]] - code - gateway/tests/test_approval_stress.py
 - [[dot-test_group_chat_receives_thread_reply()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_is_group_context_false_for_collab_agent_id()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_is_group_context_false_for_default()]] - code - gateway/tests/test_group_approval_routing.py
@@ -31,10 +36,12 @@ members: 130
 - [[dot-test_owner_receives_dm_for_group_approval()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_route_approval_auto_detects_group_context()]] - code - gateway/tests/test_group_approval_routing.py
 - [[dot-test_router_works_without_send_fn()]] - code - gateway/tests/test_group_approval_routing.py
+- [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[A WebSocket stand-in whose send_json never returns — models a dead client…]] - rationale - gateway/tests/test_approval_queue.py
 - [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Any_8]] - code
+- [[Any_13]] - code
 - [[ApprovalRequest]] - code - gateway/ingest_api/models.py
+- [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Build the owner DM notification text.]] - rationale - gateway/approval_queue/group_router.py
 - [[Cover the no-op _default_send stub used when no transport is injected.]] - rationale - gateway/tests/test_group_approval_routing.py
@@ -42,6 +49,8 @@ members: 130
 - [[Create approval queue instance for testing]] - rationale - gateway/tests/test_approval_queue.py
 - [[DM approval must not send any message to a group chat ID.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[DM-context approvals must not trigger group notifications.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Deciding on already-decided request raises ValueError.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Expired request raises ValueError on decide.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Extract the raw chat_id from a group-{chat_id} agent_id.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Extract the raw chat_id from a group-{chat_id} agent_id. Returns None if the…]] - rationale - gateway/approval_queue/group_router.py
 - [[Group-aware Approval Router (v1.2.0 Workstream A). When an approval request…]] - rationale - gateway/approval_queue/group_router.py
@@ -65,6 +74,8 @@ members: 130
 - [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate the in-…]] - rationale - gateway/tests/test_approval_queue.py
 - [[SCRUM-110 writes go through a temp file + os.replace so a crash mid-write can…]] - rationale - gateway/tests/test_approval_queue.py
 - [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.…]] - rationale - gateway/tests/test_approval_queue.py
+- [[Submit 100 requests concurrently — all should succeed.]] - rationale - gateway/tests/test_approval_stress.py
+- [[Submit and decide requests concurrently.]] - rationale - gateway/tests/test_approval_stress.py
 - [[TDD — Workstream A (v1.2.0) Group approval routing. Tests that - When an…]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[Test WebSocket client connection]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test WebSocket client disconnection]] - rationale - gateway/tests/test_approval_queue.py
@@ -81,12 +92,16 @@ members: 130
 - [[Test that concurrent decision attempts are handled correctly]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test that get_pending excludes decided requests]] - rationale - gateway/tests/test_approval_queue.py
 - [[Test that requests expire after timeout]] - rationale - gateway/tests/test_approval_queue.py
+- [[TestApprovalTimeout]] - code - gateway/tests/test_approval_stress.py
+- [[TestAutoExpire]] - code - gateway/tests/test_approval_stress.py
+- [[TestConcurrentApprovalRequests]] - code - gateway/tests/test_approval_stress.py
 - [[TestDMApprovalOwnerOnly]] - code - gateway/tests/test_group_approval_routing.py
 - [[TestGroupApprovalOwnerDM]] - code - gateway/tests/test_group_approval_routing.py
 - [[TestGroupApprovalRouterContextDetection]] - code - gateway/tests/test_group_approval_routing.py
 - [[TestGroupApprovalRouterDefaultSend]] - code - gateway/tests/test_group_approval_routing.py
 - [[Tests for approval queue]] - rationale - gateway/tests/test_approval_queue.py
 - [[The originating group chat must receive a thread-reply notification.]] - rationale - gateway/tests/test_group_approval_routing.py
+- [[Timeout handling for approval requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[When group_chat_id is None, only the owner receives a notification.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[_HangingWebSocket]] - code - gateway/tests/test_approval_queue.py
 - [[_send()]] - code - gateway/tests/test_group_approval_routing.py
@@ -100,11 +115,13 @@ members: 130
 - [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
 - [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
 - [[cleanup_decided() should remove approvedrejected items older than threshold.]] - rationale - gateway/tests/test_approval_queue.py
+- [[decide()]] - code - gateway/tests/test_approval_stress.py
 - [[decide_approve()]] - code - gateway/tests/test_approval_queue.py
 - [[decide_reject()]] - code - gateway/tests/test_approval_queue.py
 - [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[fixture_16]] - code
 - [[fixture_17]] - code
+- [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
 - [[group_router.py]] - code - gateway/approval_queue/group_router.py
 - [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
 - [[owner_chat_id receives a DM notification for every group-context approval.]] - rationale - gateway/tests/test_group_approval_routing.py
@@ -112,6 +129,7 @@ members: 130
 - [[route_approval auto-detects group context when group_chat_id not explicitly…]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[router()]] - code - gateway/tests/test_group_approval_routing.py
 - [[router_with_sent()]] - code - gateway/tests/test_group_approval_routing.py
+- [[submit_one()]] - code - gateway/tests/test_approval_stress.py
 - [[test_approval_queue.py]] - code - gateway/tests/test_approval_queue.py
 - [[test_broadcast_does_not_hang_forever_on_dead_client()]] - code - gateway/tests/test_approval_queue.py
 - [[test_broadcast_with_failed_client()]] - code - gateway/tests/test_approval_queue.py
@@ -147,17 +165,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_EnhancedApprovalQueue]]
-- 10 edges to [[_COMMUNITY_ApprovalStore]]
-- 10 edges to [[_COMMUNITY_ingest_apiconfig.py]]
-- 9 edges to [[_COMMUNITY_ingest_apimodels.py]]
-- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 4 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 21 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 16 edges to [[_COMMUNITY_GatewayConfig]]
+- 6 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_test_edge_approvals.py]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
+- 1 edge to [[_COMMUNITY_decide_approval]]
+- 1 edge to [[_COMMUNITY_email_send]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
 - [[ApprovalRequest]] - degree 74, connects to 6 communities
 - [[test_approval_queue.py]] - degree 35, connects to 3 communities
 - [[test_group_approval_routing.py]] - degree 12, connects to 1 community
-- [[test_cleanup_decided_persists_removal_to_disk()]] - degree 5, connects to 1 community
-- [[test_persist_pending_store_writes_atomically()]] - degree 5, connects to 1 community
+- [[TestApprovalTimeout]] - degree 5, connects to 1 community
+- [[TestConcurrentApprovalRequests]] - degree 5, connects to 1 community

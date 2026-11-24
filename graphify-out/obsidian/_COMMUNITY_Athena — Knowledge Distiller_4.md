@@ -15,7 +15,7 @@ members: 12
 - [[Output Format_28]] - document - .omp/agents/athena.md
 - [[Persona_8]] - document - .omp/agents/athena.md
 - [[Quality Checklist_14]] - document - .omp/agents/athena.md
-- [[Role_55]] - document - .omp/agents/athena.md
+- [[Role_56]] - document - .omp/agents/athena.md
 - [[System Prompt_8]] - document - .omp/agents/athena.md
 - [[User Prompt Template_7]] - document - .omp/agents/athena.md
 - [[cheatsheet_4]] - document - .omp/agents/athena.md

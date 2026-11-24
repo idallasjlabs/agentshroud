@@ -8,16 +8,16 @@ members: 10
 **Members:** 10 nodes
 
 ## Members
-- [[dot-cursoragentsi-mcpm]] - document - .cursor/agents/i-mcpm.md
-- [[1. GitHub MCP_2]] - document - .cursor/agents/i-mcpm.md
-- [[2. Atlassian MCP (Jira + Confluence)_2]] - document - .cursor/agents/i-mcpm.md
-- [[3. AWS API MCP_2]] - document - .cursor/agents/i-mcpm.md
-- [[Authentication Issues_1]] - document - .cursor/agents/i-mcpm.md
-- [[Available MCP Servers_2]] - document - .cursor/agents/i-mcpm.md
-- [[Common Errors_1]] - document - .cursor/agents/i-mcpm.md
-- [[MCP Troubleshooting_1]] - document - .cursor/agents/i-mcpm.md
-- [[Role_66]] - document - .cursor/agents/i-mcpm.md
-- [[Skill MCP Tools Usage (MCP-TOOLS)_1]] - document - .cursor/agents/i-mcpm.md
+- [[1. GitHub MCP_3]] - document - .github/agents/i-mcpm.agent.md
+- [[2. Atlassian MCP (Jira + Confluence)_3]] - document - .github/agents/i-mcpm.agent.md
+- [[3. AWS API MCP_3]] - document - .github/agents/i-mcpm.agent.md
+- [[Authentication Issues_2]] - document - .github/agents/i-mcpm.agent.md
+- [[Available MCP Servers_3]] - document - .github/agents/i-mcpm.agent.md
+- [[Common Errors_2]] - document - .github/agents/i-mcpm.agent.md
+- [[MCP Troubleshooting_2]] - document - .github/agents/i-mcpm.agent.md
+- [[Role_72]] - document - .github/agents/i-mcpm.agent.md
+- [[Skill MCP Tools Usage (MCP-TOOLS)_3]] - document - .github/agents/i-mcpm.agent.md
+- [[i-mcpm.agent]] - document - .github/agents/i-mcpm.agent.md
 
 ## Live Query (requires Dataview plugin)
 

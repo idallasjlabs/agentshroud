@@ -15,7 +15,7 @@ members: 12
 - [[Output Format_23]] - document - .agents/agents/athena.md
 - [[Persona_4]] - document - .agents/agents/athena.md
 - [[Quality Checklist_10]] - document - .agents/agents/athena.md
-- [[Role_51]] - document - .agents/agents/athena.md
+- [[Role_52]] - document - .agents/agents/athena.md
 - [[System Prompt_4]] - document - .agents/agents/athena.md
 - [[User Prompt Template_3]] - document - .agents/agents/athena.md
 - [[cheatsheet]] - document - .agents/agents/athena.md

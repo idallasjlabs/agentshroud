@@ -8,7 +8,7 @@ members: 28
 **Members:** 28 nodes
 
 ## Members
-- [[dot-__init__()_172]] - code - src/interfaces/text_control_center.py
+- [[dot-__init__()_170]] - code - src/interfaces/text_control_center.py
 - [[dot-clear_screen()]] - code - src/interfaces/text_control_center.py
 - [[dot-draw_approvals()]] - code - src/interfaces/text_control_center.py
 - [[dot-draw_dashboard()]] - code - src/interfaces/text_control_center.py
@@ -19,7 +19,7 @@ members: 28
 - [[dot-get_auth()]] - code - src/interfaces/text_control_center.py
 - [[dot-get_key()_1]] - code - src/interfaces/text_control_center.py
 - [[dot-make_api_request()]] - code - src/interfaces/text_control_center.py
-- [[dot-run()_8]] - code - src/interfaces/text_control_center.py
+- [[dot-run()_7]] - code - src/interfaces/text_control_center.py
 - [[ANSI]] - code - src/interfaces/text_control_center.py
 - [[AgentShroud Text Control Center - Full Terminal TUI Dashboard Usage python3…]] - rationale - src/interfaces/text_control_center.py
 - [[Clear screen and position cursor at home]] - rationale - src/interfaces/text_control_center.py
@@ -34,7 +34,7 @@ members: 28
 - [[Get gateway authentication]] - rationale - src/interfaces/text_control_center.py
 - [[Main control center loop]] - rationale - src/interfaces/text_control_center.py
 - [[Make authenticated API request to gateway]] - rationale - src/interfaces/text_control_center.py
-- [[main()_29]] - code - src/interfaces/text_control_center.py
+- [[main()_28]] - code - src/interfaces/text_control_center.py
 - [[text_control_center.py_1]] - code - src/interfaces/text_control_center.py
 
 ## Live Query (requires Dataview plugin)

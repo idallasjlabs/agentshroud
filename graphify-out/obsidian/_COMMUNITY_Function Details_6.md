@@ -11,7 +11,7 @@ members: 17
 - [[Configuration  Environment Variables_28]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Function Details_41]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Key Classes  Functions_44]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
-- [[Purpose_164]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
+- [[Purpose_165]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Related_45]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[Responsibilities_48]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md
 - [[SessionManager.__init__(max_session_age, max_sessions_per_ip, rate_limit_window)]] - document - docs/vault/02 - Modules/Security Modules/session_security.py.md

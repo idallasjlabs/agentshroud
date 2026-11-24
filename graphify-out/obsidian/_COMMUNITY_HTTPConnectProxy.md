@@ -1,21 +1,21 @@
 ---
 type: community
-members: 80
+members: 89
 ---
 
 # HTTPConnectProxy
 
-**Members:** 80 nodes
+**Members:** 89 nodes
 
 ## Members
-- [[dot-__init__()_217]] - code - gateway/tests/test_http_proxy.py
+- [[dot-__init__()_214]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_20]] - code - gateway/tests/test_http_proxy.py
 - [[dot-close()_21]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_22]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_3]] - code - gateway/tests/test_http_proxy.py
 - [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
-- [[dot-get_stats()_18]] - code - gateway/proxy/http_proxy.py
-- [[dot-start()_2]] - code - gateway/proxy/http_proxy.py
+- [[dot-get_stats()_17]] - code - gateway/proxy/http_proxy.py
+- [[dot-start()_1]] - code - gateway/proxy/http_proxy.py
 - [[dot-stop()_12]] - code - gateway/proxy/http_proxy.py
 - [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
 - [[dot-write()_3]] - code - gateway/tests/test_http_proxy.py
@@ -39,6 +39,10 @@ members: 80
 - [[Unknown IP with no bot_hostnames registered → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
 - [[_DummyTargetWriter_1]] - code - gateway/tests/test_http_proxy.py
 - [[_MockWriter_1]] - code - gateway/tests/test_http_proxy.py
+- [[_fake_clamscan()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_fake_clamscan()_1]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_fake_clamscan()_2]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[_fake_clamscan()_3]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_fdns()]] - code - gateway/tests/test_http_proxy.py
 - [[_make_stream()_1]] - code - gateway/tests/test_http_proxy.py
 - [[_open_conn()_3]] - code - gateway/tests/test_http_proxy.py
@@ -51,6 +55,7 @@ members: 80
 - [[check_async()_63]] - code - gateway/tests/test_http_proxy.py
 - [[check_async()_64]] - code - gateway/tests/test_http_proxy.py
 - [[check_async()_65]] - code - gateway/tests/test_http_proxy.py
+- [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[clamscan runs must never share the default executor with LLM upstream calls…]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[log_external_decision()_3]] - code - gateway/tests/test_http_proxy.py
 - [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id…]] - rationale - gateway/tests/test_http_proxy.py
@@ -69,6 +74,10 @@ members: 80
 - [[test_agent_id_for_peer_rdns_miss_forward_dns_hit()]] - code - gateway/tests/test_http_proxy.py
 - [[test_agent_id_for_peer_unknown_no_hostnames()]] - code - gateway/tests/test_http_proxy.py
 - [[test_blocked_domain_is_tracked_in_recent()]] - code - gateway/tests/test_http_proxy.py
+- [[test_clamav_scan_clean_records_nothing()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[test_clamav_scan_infected_records_stats()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[test_clamav_scan_unavailable_degrades_silently()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[test_clamav_scan_unlink_failure_swallowed()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[test_clamav_scans_use_dedicated_single_thread_executor()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[test_connect_blocked_domain_returns_403()]] - code - gateway/tests/test_http_proxy.py
 - [[test_connect_denied_by_egress_filter_returns_403()]] - code - gateway/tests/test_http_proxy.py
@@ -97,19 +106,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
-- 22 edges to [[_COMMUNITY_WebProxy]]
+- 37 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
+- 21 edges to [[_COMMUNITY_WebProxy]]
+- 7 edges to [[_COMMUNITY_EgressFilter]]
 - 7 edges to [[_COMMUNITY_dot-_relay]]
-- 5 edges to [[_COMMUNITY_EgressPolicy]]
-- 4 edges to [[_COMMUNITY_test_clamav_scan_unavailable_degrades_silently]]
-- 2 edges to [[_COMMUNITY_EgressFilter]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_web_proxy.py]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy]] - degree 84, connects to 10 communities
+- [[HTTPConnectProxy]] - degree 84, connects to 6 communities
 - [[test_http_proxy.py]] - degree 41, connects to 3 communities
 - [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - degree 11, connects to 2 communities
 - [[test_connect_system_bypass_domain_skips_policy_checks()]] - degree 10, connects to 2 communities

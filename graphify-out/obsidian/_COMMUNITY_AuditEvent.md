@@ -8,7 +8,7 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[dot-__init__()_200]] - code - gateway/security/audit_store.py
+- [[dot-__init__()_196]] - code - gateway/security/audit_store.py
 - [[dot-_generate_event_id()]] - code - gateway/security/audit_store.py
 - [[dot-compute_content_hash()]] - code - gateway/security/audit_store.py
 - [[dot-compute_entry_hash()]] - code - gateway/security/audit_store.py
@@ -42,13 +42,14 @@ SORT file.name ASC
 - 7 edges to [[_COMMUNITY_AuditExporter]]
 - 6 edges to [[_COMMUNITY_AuditStore]]
 - 3 edges to [[_COMMUNITY_dot-test_concurrent_log_event_two_connections_keeps_linear_chain]]
-- 3 edges to [[_COMMUNITY_EnhancedApprovalQueue]]
 - 2 edges to [[_COMMUNITY_AuditExportConfig]]
 - 2 edges to [[_COMMUNITY_asyncio_6]]
+- 2 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 - 1 edge to [[_COMMUNITY_TestAuditStore]]
+- 1 edge to [[_COMMUNITY_GatewayConfig]]
 
 ## Top bridge nodes
 - [[test_audit_export.py]] - degree 14, connects to 6 communities
+- [[audit_store.py]] - degree 7, connects to 3 communities
 - [[audit_export.py]] - degree 6, connects to 3 communities
 - [[AuditEvent]] - degree 20, connects to 2 communities
-- [[audit_store.py]] - degree 7, connects to 2 communities

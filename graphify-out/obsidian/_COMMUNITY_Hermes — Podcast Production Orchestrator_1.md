@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Hermes — Podcast Production Orchestrator_1]] - document - .agents/skills/hermes/README.md
-- [[Purpose_100]] - document - .agents/skills/hermes/README.md
+- [[Purpose_98]] - document - .agents/skills/hermes/README.md
 - [[Related Skills_30]] - document - .agents/skills/hermes/README.md
 - [[Usage_40]] - document - .agents/skills/hermes/README.md
 - [[hermesREADME]] - document - .agents/skills/hermes/README.md

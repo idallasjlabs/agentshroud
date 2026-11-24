@@ -10,7 +10,7 @@ members: 5
 ## Members
 - [[dot-agentsskillsi-bsREADME]] - document - .agents/skills/i-bs/README.md
 - [[Branding Specialist (BS)]] - document - .agents/skills/i-bs/README.md
-- [[Purpose_101]] - document - .agents/skills/i-bs/README.md
+- [[Purpose_99]] - document - .agents/skills/i-bs/README.md
 - [[Related Skills_31]] - document - .agents/skills/i-bs/README.md
 - [[Usage_41]] - document - .agents/skills/i-bs/README.md
 

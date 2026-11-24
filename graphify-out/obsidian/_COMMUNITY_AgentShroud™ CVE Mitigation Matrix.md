@@ -39,7 +39,7 @@ members: 37
 - [[Tier 1 — Hand-Curated CVEs (AgentShroud-Specific Mitigations)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Tier 3 — NVD-Sourced Bulk CVEs (276 entries)]] - document - docs/security/cve-mitigation-matrix.md
 - [[Under Review Is Honest, Not Mitigated]] - rationale - docs/security/cve-mitigation-matrix.md
-- [[Verification_3]] - document - docs/security/cve-mitigation-matrix.md
+- [[Verification_2]] - document - docs/security/cve-mitigation-matrix.md
 - [[hermes image (93 residual, all Debian, all `fix NONE`)]] - document - docs/security/cve-mitigation-matrix.md
 - [[openclaw image (2 residual)]] - document - docs/security/cve-mitigation-matrix.md
 - [[slsa-verifier From-Source Dependency Override]] - concept - docs/security/cve-mitigation-matrix.md

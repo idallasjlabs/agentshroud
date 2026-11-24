@@ -8,7 +8,7 @@ members: 24
 **Members:** 24 nodes
 
 ## Members
-- [[dot-__init__()_193]] - code - gateway/proxy/dns_forwarder.py
+- [[dot-__init__()_189]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-_make_protocol()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-connection_made()]] - code - gateway/proxy/dns_forwarder.py
 - [[dot-error_received()]] - code - gateway/proxy/dns_forwarder.py

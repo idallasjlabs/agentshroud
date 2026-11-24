@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
-- [[Purpose_151]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
+- [[Purpose_149]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
 - [[Related Skills_81]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
 - [[Usage_91]] - document - docker/config/openclaw/skills/i-sec-defense/README.md
 - [[openclawskillsi-sec-defenseREADME]] - document - docker/config/openclaw/skills/i-sec-defense/README.md

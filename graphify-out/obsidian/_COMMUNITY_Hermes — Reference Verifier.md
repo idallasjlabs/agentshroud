@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_44]] - document - .agents/agents/hermes.md
 - [[Persona_23]] - document - .agents/agents/hermes.md
 - [[Quality Checklist_29]] - document - .agents/agents/hermes.md
-- [[Role_94]] - document - .agents/agents/hermes.md
+- [[Role_95]] - document - .agents/agents/hermes.md
 - [[System Prompt_23]] - document - .agents/agents/hermes.md
 
 ## Live Query (requires Dataview plugin)

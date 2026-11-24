@@ -14,7 +14,7 @@ members: 8
 - [[Output Format_50]] - document - .cursor/agents/hermes.md
 - [[Persona_29]] - document - .cursor/agents/hermes.md
 - [[Quality Checklist_35]] - document - .cursor/agents/hermes.md
-- [[Role_100]] - document - .cursor/agents/hermes.md
+- [[Role_101]] - document - .cursor/agents/hermes.md
 - [[System Prompt_29]] - document - .cursor/agents/hermes.md
 
 ## Live Query (requires Dataview plugin)

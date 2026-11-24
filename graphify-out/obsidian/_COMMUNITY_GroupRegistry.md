@@ -51,15 +51,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_socrouter.py]]
+- 8 edges to [[_COMMUNITY_socrouter.py]]
 - 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
 - [[GroupRegistry]] - degree 24, connects to 3 communities
-- [[TestGroupRegistry]] - degree 16, connects to 2 communities
 - [[Group]] - degree 8, connects to 2 communities
+- [[TestGroupRegistry]] - degree 16, connects to 1 community
 - [[dot-_make_rbac()]] - degree 12, connects to 1 community
 - [[dot-create_group()]] - degree 4, connects to 1 community

@@ -8,11 +8,11 @@ members: 9
 **Members:** 9 nodes
 
 ## Members
-- [[dot-__init__()_174]] - code - gateway/web/dashboard_endpoints.py
+- [[dot-__init__()_171]] - code - gateway/web/dashboard_endpoints.py
 - [[dot-append()]] - code - gateway/web/dashboard_endpoints.py
 - [[dot-recent()]] - code - gateway/web/dashboard_endpoints.py
 - [[dot-tail()]] - code - gateway/web/dashboard_endpoints.py
-- [[Any_68]] - code
+- [[Any_66]] - code
 - [[LogBuffer]] - code - gateway/web/dashboard_endpoints.py
 - [[Ring buffer for recent logaudit entries.]] - rationale - gateway/web/dashboard_endpoints.py
 - [[test_log_buffer_ring()]] - code - gateway/tests/test_dashboard_endpoints.py
@@ -31,7 +31,7 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[LogBuffer]] - degree 8, connects to 2 communities
-- [[Any_68]] - degree 3, connects to 1 community
+- [[Any_66]] - degree 3, connects to 1 community
 - [[test_log_buffer_ring()]] - degree 2, connects to 1 community
 - [[test_log_buffer_tail()]] - degree 2, connects to 1 community
 - [[dot-recent()]] - degree 2, connects to 1 community

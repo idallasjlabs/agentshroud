@@ -13,7 +13,7 @@ members: 8
 - [[Output Format_47]] - document - .agents/skills/hermes/SKILL.md
 - [[Persona_26]] - document - .agents/skills/hermes/SKILL.md
 - [[Quality Checklist_32]] - document - .agents/skills/hermes/SKILL.md
-- [[Role_97]] - document - .agents/skills/hermes/SKILL.md
+- [[Role_98]] - document - .agents/skills/hermes/SKILL.md
 - [[System Prompt_26]] - document - .agents/skills/hermes/SKILL.md
 - [[hermesSKILL]] - document - .agents/skills/hermes/SKILL.md
 
