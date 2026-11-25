@@ -12,10 +12,10 @@ tags:
 # OutputSchemaEnforcer
 
 ## Connections
-- [[dot-__init__()_135]] - `method` [EXTRACTED]
+- [[dot-__init__()_132]] - `method` [EXTRACTED]
 - [[dot-_register_default_schema()]] - `method` [EXTRACTED]
 - [[dot-register_schema()]] - `method` [EXTRACTED]
-- [[dot-validate()_2]] - `method` [EXTRACTED]
+- [[dot-validate()_3]] - `method` [EXTRACTED]
 - [[Validates outbound responses against structural schemas. Usage enforcer =…]] - `rationale_for` [EXTRACTED]
 - [[enforcer()_2]] - `uses` [INFERRED]
 - [[lifespan()]] - `uses` [INFERRED]

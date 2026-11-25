@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # Persist a runtime collab mode change for a group.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_group_collab_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

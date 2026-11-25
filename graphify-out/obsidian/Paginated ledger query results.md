@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L153"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # Paginated ledger query results
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[LedgerQueryResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

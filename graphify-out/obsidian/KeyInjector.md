@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyInjector"
+community: "KeyVault"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyInjector
+  - community/KeyVault
 ---
 
 # KeyInjector
 
 ## Connections
-- [[dot-__init__()_78]] - `method` [EXTRACTED]
+- [[dot-__init__()_27]] - `method` [EXTRACTED]
 - [[dot-inject_for_request()]] - `method` [EXTRACTED]
 - [[dot-test_inject_auth_header()]] - `calls` [EXTRACTED]
 - [[dot-test_inject_fails_for_unscoped()]] - `calls` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[key_vault.py]] - `contains` [EXTRACTED]
 - [[test_key_vault.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyInjector
+#graphify/code #graphify/EXTRACTED #community/KeyVault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_config.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "PermissionLevel"
 location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/PermissionLevel
 ---
 
 # PermissionLevel
@@ -16,7 +16,7 @@ tags:
 - [[dot-__gt__()]] - `method` [EXTRACTED]
 - [[dot-__le__()]] - `method` [EXTRACTED]
 - [[dot-__lt__()]] - `method` [EXTRACTED]
-- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
 - [[dot-infer_permission_level()]] - `references` [EXTRACTED]
 - [[dot-level_value()]] - `method` [EXTRACTED]
 - [[Enum_14]] - `inherits` [EXTRACTED]
@@ -25,15 +25,15 @@ tags:
 - [[TestInferPermission]] - `uses` [INFERRED]
 - [[TestPermissionLevel]] - `uses` [INFERRED]
 - [[TestTrustMapping]] - `uses` [INFERRED]
+- [[config()_3]] - `uses` [INFERRED]
 - [[config()_1]] - `uses` [INFERRED]
-- [[config()_2]] - `uses` [INFERRED]
 - [[make_config()]] - `uses` [INFERRED]
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 - [[mcp_permissions.py_2]] - `imports` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[str_8]] - `inherits` [EXTRACTED]
+- [[str_20]] - `inherits` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

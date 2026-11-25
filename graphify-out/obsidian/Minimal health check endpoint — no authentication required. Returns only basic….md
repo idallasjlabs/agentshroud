@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "StatusResponse"
+community: "fastapi.md"
 location: "L31"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/fastapimd
 ---
 
 # Minimal health check endpoint — no authentication required. Returns only basic…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[health_check()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/StatusResponse
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

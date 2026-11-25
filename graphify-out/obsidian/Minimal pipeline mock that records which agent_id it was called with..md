@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L20"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # Minimal pipeline mock that records which agent_id it was called with.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_PipelineCaptor]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

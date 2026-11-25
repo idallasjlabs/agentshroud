@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationConfig"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationConfig
 ---
 
 # KeyRotationConfig
 
 ## Connections
-- [[dot-__init__()_22]] - `references` [EXTRACTED]
+- [[dot-__init__()_41]] - `references` [EXTRACTED]
 - [[dot-add_custom_policy()]] - `method` [EXTRACTED]
 - [[dot-get_op_reference()]] - `method` [EXTRACTED]
 - [[dot-get_policy()]] - `method` [EXTRACTED]
 - [[dot-is_emergency_trigger_enabled()]] - `method` [EXTRACTED]
-- [[dot-manager()]] - `calls` [EXTRACTED]
+- [[dot-manager()_2]] - `calls` [EXTRACTED]
 - [[dot-setup_manager_with_credential()]] - `calls` [EXTRACTED]
 - [[dot-test_add_custom_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_key_rotation.py]] - `imports` [EXTRACTED]
 - [[test_key_rotation_internals.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig

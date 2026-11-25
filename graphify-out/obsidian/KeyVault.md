@@ -12,9 +12,9 @@ tags:
 # KeyVault
 
 ## Connections
-- [[dot-__init__()_78]] - `references` [EXTRACTED]
-- [[dot-__init__()_76]] - `references` [EXTRACTED]
-- [[dot-__init__()_36]] - `method` [EXTRACTED]
+- [[dot-__init__()_27]] - `references` [EXTRACTED]
+- [[dot-__init__()_28]] - `references` [EXTRACTED]
+- [[dot-__init__()_29]] - `method` [EXTRACTED]
 - [[dot-_agent_in_scope()]] - `method` [EXTRACTED]
 - [[dot-_log_audit()]] - `method` [EXTRACTED]
 - [[dot-_make_vault_pipeline()]] - `calls` [EXTRACTED]

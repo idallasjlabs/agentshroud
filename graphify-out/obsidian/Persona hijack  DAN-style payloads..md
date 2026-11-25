@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "normalize_input"
+community: "HeuristicClassifier"
 location: "L284"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/HeuristicClassifier
 ---
 
 # Persona hijack / DAN-style payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPersonaHijack]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/normalize_input
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

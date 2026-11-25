@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: ".test_collaborator_name_filtering"
+community: "TestOutboundInfoFilter"
 location: "L235"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_name_filtering
+  - community/TestOutboundInfoFilter
 ---
 
 # Known collaborator names should be redacted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_name_filtering()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_name_filtering
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

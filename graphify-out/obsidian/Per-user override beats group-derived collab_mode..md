@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L254"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # Per-user override beats group-derived collab_mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_user_override_takes_precedence_over_group()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

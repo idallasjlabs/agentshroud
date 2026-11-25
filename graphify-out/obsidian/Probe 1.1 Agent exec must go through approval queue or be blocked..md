@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "TrustManager"
+community: "test_redteam_probes.py"
 location: "L80"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_redteam_probespy
 ---
 
 # Probe 1.1: Agent exec must go through approval queue or be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_exec_requires_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy

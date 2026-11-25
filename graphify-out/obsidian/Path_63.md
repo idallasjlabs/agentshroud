@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "parse_clamscan_output"
+community: "WebhookReceiver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/parse_clamscan_output
+  - community/WebhookReceiver
 ---
 
 # Path
 
 ## Connections
-- [[save_report()_1]] - `references` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_clamscan_output
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

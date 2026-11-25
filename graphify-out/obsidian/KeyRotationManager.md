@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_22]] - `method` [EXTRACTED]
+- [[dot-__init__()_41]] - `method` [EXTRACTED]
 - [[dot-_generate_new_credential()]] - `method` [EXTRACTED]
 - [[dot-_read_credential_from_1password()]] - `method` [EXTRACTED]
 - [[dot-_retire_old_credential_after_grace_period()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[dot-get_all_credentials_status()]] - `method` [EXTRACTED]
 - [[dot-get_credential_status()]] - `method` [EXTRACTED]
 - [[dot-get_health_score()]] - `method` [EXTRACTED]
-- [[dot-manager()]] - `calls` [EXTRACTED]
+- [[dot-manager()_2]] - `calls` [EXTRACTED]
 - [[dot-register_credential()]] - `method` [EXTRACTED]
 - [[dot-register_validator()]] - `method` [EXTRACTED]
 - [[dot-rotate_credential()]] - `method` [EXTRACTED]

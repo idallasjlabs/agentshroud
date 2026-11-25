@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "email_send"
+community: "AgentTarget"
 location: "L588"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/email_send
+  - community/AgentTarget
 ---
 
 # Main ingest endpoint Receives data from iOS Shortcuts, browser extension, or…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/email_send
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

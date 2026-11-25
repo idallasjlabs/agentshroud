@@ -12,8 +12,8 @@ tags:
 # MCPPermissionManager
 
 ## Connections
-- [[dot-__init__()_62]] - `references` [EXTRACTED]
-- [[dot-__init__()_59]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `references` [EXTRACTED]
+- [[dot-__init__()_52]] - `method` [EXTRACTED]
 - [[dot-_load_privacy_policy()]] - `method` [EXTRACTED]
 - [[dot-_recompile_private_data_patterns()]] - `method` [EXTRACTED]
 - [[dot-_record_private_access_attempt()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[make_proxy()]] - `calls` [EXTRACTED]
 - [[mcp_permissions.py_2]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `imports` [EXTRACTED]
-- [[mgr()_1]] - `uses` [INFERRED]
+- [[mgr()_2]] - `uses` [INFERRED]
 - [[proxy()]] - `uses` [INFERRED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `imports` [EXTRACTED]

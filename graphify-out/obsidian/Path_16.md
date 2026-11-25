@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan"
+community: "test_config_hot_reload.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/test_config_hot_reloadpy
 ---
 
 # Path
@@ -14,4 +14,4 @@ tags:
 - [[_load()_1]] - `references` [EXTRACTED]
 - [[_write()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

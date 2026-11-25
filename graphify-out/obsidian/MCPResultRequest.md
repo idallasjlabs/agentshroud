@@ -12,7 +12,7 @@ tags:
 # MCPResultRequest
 
 ## Connections
-- [[BaseModel_11]] - `inherits` [EXTRACTED]
+- [[BaseModel_12]] - `inherits` [EXTRACTED]
 - [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[mcp_result_endpoint()]] - `references` [EXTRACTED]

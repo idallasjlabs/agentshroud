@@ -12,6 +12,6 @@ tags:
 # Ordered severity ladder (``IntEnum`` so comparisons work).
 
 ## Connections
-- [[Severity]] - `rationale_for` [EXTRACTED]
+- [[Severity_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SkillGuard

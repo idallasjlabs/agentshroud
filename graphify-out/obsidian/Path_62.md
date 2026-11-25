@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_cron_jobs_prompts.py"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cron_jobs_promptspy
+  - community/ingest_api/mainpy
 ---
 
 # Path
 
 ## Connections
-- [[_load_jobs()]] - `references` [EXTRACTED]
+- [[_load_contributor_logs()]] - `references` [EXTRACTED]
+- [[_parse_collaborator_log_dirs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cron_jobs_promptspy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

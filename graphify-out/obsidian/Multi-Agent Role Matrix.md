@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Multi-Agent Role Matrix
@@ -19,4 +19,4 @@ tags:
 - [[References_5]] - `contains` [EXTRACTED]
 - [[Security-Sensitive Paths]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

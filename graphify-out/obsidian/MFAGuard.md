@@ -12,9 +12,9 @@ tags:
 # MFAGuard
 
 ## Connections
-- [[dot-__init__()_114]] - `references` [EXTRACTED]
-- [[dot-__init__()_115]] - `references` [EXTRACTED]
-- [[dot-__init__()_117]] - `method` [EXTRACTED]
+- [[dot-__init__()_108]] - `references` [EXTRACTED]
+- [[dot-__init__()_92]] - `references` [EXTRACTED]
+- [[dot-__init__()_110]] - `method` [EXTRACTED]
 - [[dot-_decode_secret()]] - `method` [EXTRACTED]
 - [[dot-_prune_used()]] - `method` [EXTRACTED]
 - [[dot-_totp_for_counter()]] - `method` [EXTRACTED]
@@ -25,7 +25,7 @@ tags:
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[Verify a TOTP second factor for high-risk operations (fail-closed). Args…]] - `rationale_for` [EXTRACTED]
 - [[_queue()]] - `calls` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[enhanced_mfa_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[env()]] - `uses` [INFERRED]

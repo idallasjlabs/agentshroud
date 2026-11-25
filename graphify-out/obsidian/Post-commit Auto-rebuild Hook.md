@@ -1,11 +1,11 @@
 ---
 source_file: "docker/config/openclaw/skills/graphify/references/hooks.md"
 type: "concept"
-community: "graphify Skill"
+community: "sunday-scan.sh"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/graphify_Skill
+  - community/sunday-scansh
 ---
 
 # Post-commit Auto-rebuild Hook
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Structural (AST) Extraction — Part A]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/graphify_Skill
+#graphify/concept #graphify/EXTRACTED #community/sunday-scansh

@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "get_trivy_summary"
+community: "_run_4b"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/_run_4b
 ---
 
 # Path
 
 ## Connections
-- [[_is_fresh()]] - `references` [EXTRACTED]
-- [[_load_latest_json()]] - `references` [EXTRACTED]
+- [[_run()_7]] - `references` [EXTRACTED]
+- [[_run_4b()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/_run_4b

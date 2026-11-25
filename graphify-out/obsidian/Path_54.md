@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EdgeStore"
+community: "api.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/apipy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_150]] - `references` [EXTRACTED]
+- [[_skills_reload_paths()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/apipy

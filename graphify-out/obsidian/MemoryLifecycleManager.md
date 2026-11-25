@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "MemoryLifecycleManager"
 location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryLifecycleManager
 ---
 
 # MemoryLifecycleManager
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_155]] - `method` [EXTRACTED]
+- [[dot-__init__()_133]] - `method` [EXTRACTED]
 - [[dot-_cleanup_old_actions()]] - `method` [EXTRACTED]
 - [[dot-_cleanup_old_threats()]] - `method` [EXTRACTED]
 - [[dot-archive_file()]] - `method` [EXTRACTED]
@@ -25,8 +25,8 @@ tags:
 - [[dot-run_lifecycle_maintenance()]] - `method` [EXTRACTED]
 - [[dot-sanitize_content()]] - `method` [EXTRACTED]
 - [[dot-scan_content_for_threats()]] - `method` [EXTRACTED]
+- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
 - [[dot-setup_method()_28]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
 - [[dot-validate_memory_write()]] - `method` [EXTRACTED]
 - [[Manages memory file lifecycle and content security.]] - `rationale_for` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `shares_data_with` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "EdgeStore"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/EdgeStore
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_154]] - `references` [EXTRACTED]
-- [[dot-_compute_file_hash()]] - `references` [EXTRACTED]
-- [[dot-_detect_modification_source()]] - `references` [EXTRACTED]
-- [[dot-scan_file()]] - `references` [EXTRACTED]
+- [[dot-__init__()_153]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/EdgeStore

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ScanResult"
+community: "clamav_scanner.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/clamav_scannerpy
 ---
 
 # Path
 
 ## Connections
-- [[_build_tree()]] - `references` [EXTRACTED]
+- [[save_report()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/clamav_scannerpy

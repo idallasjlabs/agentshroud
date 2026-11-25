@@ -1,17 +1,17 @@
 ---
-source_file: "docs/architecture/adr/ADR-006-multi-runtime-support.md"
+source_file: ".github/ISSUE_TEMPLATE/gsd.md"
 type: "document"
-community: "ADR-006: Multi-Runtime Container Support"
-location: "L50"
+community: "gsd.md"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ADR-006_Multi-Runtime_Container_Support
+  - community/gsdmd
 ---
 
 # Problem
 
 ## Connections
-- [[Cisco AnyConnect VPN Networking Fix]] - `contains` [EXTRACTED]
+- [[gsd]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ADR-006_Multi-Runtime_Container_Support
+#graphify/document #graphify/EXTRACTED #community/gsdmd

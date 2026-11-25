@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L310"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # Persist a runtime group creation so it survives container restarts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[persist_group_create()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

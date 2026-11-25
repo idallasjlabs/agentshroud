@@ -16,6 +16,6 @@ tags:
 - [[MCP AWS Profile Configuration Skill_1]] - `references` [INFERRED]
 - [[Purpose_169]] - `contains` [EXTRACTED]
 - [[Related Skills_112]] - `contains` [EXTRACTED]
-- [[Usage_125]] - `contains` [EXTRACTED]
+- [[Usage_126]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/MCP_AWS_Profile_Configuration_README

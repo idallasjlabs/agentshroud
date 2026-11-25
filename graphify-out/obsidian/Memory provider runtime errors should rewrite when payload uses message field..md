@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_memory_provider_error_is_rewritten_for_json_message_field"
+community: "_make_sanitizer"
 location: "L1409"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_memory_provider_error_is_rewritten_for_json_message_field
+  - community/_make_sanitizer
 ---
 
 # Memory provider runtime errors should rewrite when payload uses message field.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_memory_provider_error_is_rewritten_for_json_message_field()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_memory_provider_error_is_rewritten_for_json_message_field
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

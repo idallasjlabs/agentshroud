@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "LogSanitizer"
+community: "test_dashboard_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/test_dashboard_endpointspy
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-filter()_1]] - `references` [EXTRACTED]
+- [[dot-emit()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

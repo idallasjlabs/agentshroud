@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "._extract_egress_targets"
+community: "ProxyResult"
 location: "L369"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/ProxyResult
 ---
 
 # Process an MCP tool call through the security pipeline. Args: tool_call: The…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-process_tool_call()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/rationale #graphify/EXTRACTED #community/ProxyResult

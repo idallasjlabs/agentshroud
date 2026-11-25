@@ -12,7 +12,7 @@ tags:
 # MCPToolCall
 
 ## Connections
-- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
+- [[dot-__post_init__()]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `references` [EXTRACTED]
 - [[dot-process_tool_call()]] - `references` [EXTRACTED]
 - [[dot-test_audit_entry_created()]] - `calls` [EXTRACTED]

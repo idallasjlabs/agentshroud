@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPInspector"
+community: "test_mcp_proxy.py"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_mcp_proxypy
 ---
 
 # MCPInspector
 
 ## Connections
-- [[dot-__init__()_62]] - `references` [EXTRACTED]
-- [[dot-__init__()_14]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `references` [EXTRACTED]
+- [[dot-__init__()_51]] - `method` [EXTRACTED]
 - [[dot-_redact_pii()]] - `method` [EXTRACTED]
 - [[dot-_scan_text()]] - `method` [EXTRACTED]
 - [[dot-_scan_value()]] - `method` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

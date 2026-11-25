@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "MultiHostResult"
 location: "L133"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/MultiHostResult
 ---
 
 # OKE Channel — CPA Exam Prep Dialogue Guidelines
@@ -17,4 +17,4 @@ tags:
 - [[Expert Persona]] - `contains` [EXTRACTED]
 - [[Socrates — Dialogue Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

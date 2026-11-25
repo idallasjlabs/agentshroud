@@ -12,7 +12,7 @@ tags:
 # MCPToolResult
 
 ## Connections
-- [[dot-__post_init__()_2]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_1]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `references` [EXTRACTED]
 - [[dot-test_admin_private_data_not_redacted_for_owner()]] - `calls` [EXTRACTED]

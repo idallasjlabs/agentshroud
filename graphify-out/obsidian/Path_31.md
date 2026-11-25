@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "migrate-cve-registry-ghsa.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_95]] - `references` [EXTRACTED]
-- [[dot-_hash_file()]] - `references` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

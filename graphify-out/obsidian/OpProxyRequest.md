@@ -12,7 +12,7 @@ tags:
 # OpProxyRequest
 
 ## Connections
-- [[BaseModel_11]] - `inherits` [EXTRACTED]
+- [[BaseModel_12]] - `inherits` [EXTRACTED]
 - [[Request body for POST credentialsop-proxy.]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[op_proxy()]] - `references` [EXTRACTED]

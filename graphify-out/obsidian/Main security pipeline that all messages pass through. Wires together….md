@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L318"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # Main security pipeline that all messages pass through. Wires together:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

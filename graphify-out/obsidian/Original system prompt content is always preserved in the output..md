@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_manager.py"
 type: "rationale"
-community: "test_session_manager.py"
+community: "TestSystemPromptReanchoring"
 location: "L449"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_session_managerpy
+  - community/TestSystemPromptReanchoring
 ---
 
 # Original system prompt content is always preserved in the output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_reanchor_preserves_original_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_session_managerpy
+#graphify/rationale #graphify/EXTRACTED #community/TestSystemPromptReanchoring

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "UserSessionManager"
+community: "DNSBlocklist"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/DNSBlocklist
 ---
 
 # Path
 
 ## Connections
-- [[dot-__init__()_185]] - `references` [EXTRACTED]
+- [[dot-__init__()_191]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

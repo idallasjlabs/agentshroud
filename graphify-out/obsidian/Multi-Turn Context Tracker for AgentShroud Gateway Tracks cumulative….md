@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "rationale"
-community: "multi_turn_tracker.py"
+community: "MultiTurnTracker"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/multi_turn_trackerpy
+  - community/MultiTurnTracker
 ---
 
 # Multi-Turn Context Tracker for AgentShroud Gateway Tracks cumulative…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[multi_turn_tracker.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/multi_turn_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_skills_reload_impl"
+community: "generate_summary"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_skills_reload_impl
+  - community/generate_summary
 ---
 
 # Path
 
 ## Connections
-- [[_skills_reload_paths()]] - `references` [EXTRACTED]
+- [[read_alerts()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_skills_reload_impl
+#graphify/code #graphify/EXTRACTED #community/generate_summary

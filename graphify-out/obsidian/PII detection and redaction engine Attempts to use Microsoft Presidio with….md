@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L32"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # PII detection and redaction engine Attempts to use Microsoft Presidio with…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[PIISanitizer]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

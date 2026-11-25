@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # LedgerConfig
 
 ## Connections
-- [[dot-__init__()_101]] - `references` [EXTRACTED]
+- [[dot-__init__()_93]] - `references` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
-- [[dot-ledger()]] - `calls` [EXTRACTED]
 - [[dot-ledger()_1]] - `calls` [EXTRACTED]
+- [[dot-ledger()]] - `calls` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
-- [[BaseModel_7]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[Data ledger configuration]] - `rationale_for` [EXTRACTED]
 - [[DataLedger]] - `uses` [INFERRED]
 - [[TestAuditChainPerformance]] - `uses` [INFERRED]
@@ -28,7 +28,7 @@ tags:
 - [[full_pipeline_config()]] - `uses` [INFERRED]
 - [[ingest_apiconfig.py]] - `contains` [EXTRACTED]
 - [[ledger()]] - `uses` [INFERRED]
-- [[ledger()_2]] - `uses` [INFERRED]
+- [[ledger()_1]] - `uses` [INFERRED]
 - [[ledger.py_2]] - `imports` [EXTRACTED]
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[test_audit_chain.py]] - `imports` [EXTRACTED]
@@ -45,4 +45,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
