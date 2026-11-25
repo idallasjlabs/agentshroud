@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "TestMemoryIntegrityMonitor"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # .test_hash_computation()
@@ -15,4 +15,4 @@ tags:
 - [[Test file hash computation.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_toolchain.py"
 type: "code"
-community: "wazuh_client.py"
+community: "generate_summary"
 location: "L688"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/generate_summary
 ---
 
 # .test_level_to_severity()
@@ -15,4 +15,4 @@ tags:
 - [[TestWazuhParser]] - `method` [EXTRACTED]
 - [[level_to_severity()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/generate_summary

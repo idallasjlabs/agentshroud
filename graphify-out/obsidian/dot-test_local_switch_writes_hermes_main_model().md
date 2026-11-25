@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "._run_and_read"
+community: "ApprovalQueueConfig (5)"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # .test_local_switch_writes_hermes_main_model()
@@ -16,4 +16,4 @@ tags:
 - [[After local switch, HERMES_MAIN_MODEL is written to .env.]] - `rationale_for` [EXTRACTED]
 - [[TestSwitchModelBothBots]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

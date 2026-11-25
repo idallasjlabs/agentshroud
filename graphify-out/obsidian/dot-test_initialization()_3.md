@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_approval_hardening.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "TestApprovalHardening"
-location: "L60"
+community: "PIIConfig"
+location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/PIIConfig
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test hardening initialization.]] - `rationale_for` [EXTRACTED]
-- [[TestApprovalHardening]] - `method` [EXTRACTED]
+- [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

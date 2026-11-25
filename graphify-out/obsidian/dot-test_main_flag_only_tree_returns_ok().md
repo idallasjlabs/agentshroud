@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Path"
 location: "L479"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Path
 ---
 
 # .test_main_flag_only_tree_returns_ok()
 
 ## Connections
-- [[Path_34]] - `references` [EXTRACTED]
+- [[Path_33]] - `references` [EXTRACTED]
 - [[TestScanEntrypointInProcess]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Path

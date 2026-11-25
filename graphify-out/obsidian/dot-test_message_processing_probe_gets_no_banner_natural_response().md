@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "TestBuildCollaboratorSafeInfoResponse"
+community: "TelegramAPIProxy"
 location: "L7553"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/TelegramAPIProxy
 ---
 
 # .test_message_processing_probe_gets_no_banner_natural_response()
@@ -16,4 +16,4 @@ tags:
 - [[B1.2b pipelineprocessing questions should get a natural answer without…]] - `rationale_for` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

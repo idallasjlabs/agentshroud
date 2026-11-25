@@ -15,6 +15,6 @@ tags:
 - [[dot-_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 - [[_quarantine_blocked_message must NOT increment lockdown count for immune users.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

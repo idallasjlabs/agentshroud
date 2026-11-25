@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestDeploymentMode"
+community: "test_soc_edge.py"
 location: "L402"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDeploymentMode
+  - community/test_soc_edgepy
 ---
 
 # .test_invalid_value_is_reported_not_guessed()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDeploymentMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDeploymentMode
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

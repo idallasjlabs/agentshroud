@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_docs_accuracy.py"
+community: "MiddlewareManager"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/MiddlewareManager
 ---
 
 # .test_has_security_contact()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSecurityMdAccuracy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

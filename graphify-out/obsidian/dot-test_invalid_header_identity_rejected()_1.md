@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ProxyResult"
+community: "TestMCPResultEndpoint"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyResult
+  - community/TestMCPResultEndpoint
 ---
 
 # .test_invalid_header_identity_rejected()
 
 ## Connections
 - [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
-- [[asyncio_29]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyResult
+#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint

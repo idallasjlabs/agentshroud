@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test handling 1-hour time-limited approval callback.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
-- [[asyncio_44]] - `references` [EXTRACTED]
+- [[asyncio_45]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

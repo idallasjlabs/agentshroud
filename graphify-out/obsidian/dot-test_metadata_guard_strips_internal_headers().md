@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "LogSanitizer"
+community: "EnvironmentGuard"
 location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/EnvironmentGuard
 ---
 
 # .test_metadata_guard_strips_internal_headers()
@@ -16,4 +16,4 @@ tags:
 - [[MetadataGuard]] - `calls` [INFERRED]
 - [[TestInfoLeakage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

@@ -17,7 +17,7 @@ tags:
 - [[__aexit__()_2]] - `contains` [EXTRACTED]
 - [[_get_wss_url returns the WSS URL from apps.connections.open.]] - `rationale_for` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_17]] - `references` [EXTRACTED]
 - [[post()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

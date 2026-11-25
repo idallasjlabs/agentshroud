@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # .test_group_id_uses_group_prefix_namespace()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 - [[group-{chat_id} sessions must live under the 'groups' subdirectory.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

@@ -15,6 +15,6 @@ tags:
 - [[Non-embedding memory errors should not be forced into embedding guidance text.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_sanitizer

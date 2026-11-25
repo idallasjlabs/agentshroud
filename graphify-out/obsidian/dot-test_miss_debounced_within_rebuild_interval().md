@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "TestTelegramTokenRegistryRebuildOnMiss"
+community: "BotConfig"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTelegramTokenRegistryRebuildOnMiss
+  - community/BotConfig
 ---
 
 # .test_miss_debounced_within_rebuild_interval()
@@ -20,4 +20,4 @@ tags:
 - [[_fake_read_secret()_1]] - `indirect_call` [INFERRED]
 - [[telegram_api_proxy()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTelegramTokenRegistryRebuildOnMiss
+#graphify/code #graphify/EXTRACTED #community/BotConfig

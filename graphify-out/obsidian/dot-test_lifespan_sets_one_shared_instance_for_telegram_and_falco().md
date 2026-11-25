@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestLifespanWiring]] - `method` [EXTRACTED]
 - [[__init__()_22]] - `contains` [EXTRACTED]
-- [[asyncio_88]] - `references` [EXTRACTED]
+- [[asyncio_89]] - `references` [EXTRACTED]
 - [[run()_6]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_progressive_lockdownpy

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "RedactionResult"
-location: "L92"
+community: "PathIsolationManager"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PathIsolationManager
 ---
 
 # .test_initialization()
 
 ## Connections
-- [[Test sanitizer initialization]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
+- [[Test manager initialization.]] - `rationale_for` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
-- [[asyncio_28]] - `references` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyResult

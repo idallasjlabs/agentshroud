@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # .test_get_user_groups_member()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMembershipQueries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

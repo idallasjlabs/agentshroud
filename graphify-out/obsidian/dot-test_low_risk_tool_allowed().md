@@ -15,6 +15,6 @@ tags:
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[Test that low-risk tools are allowed without approval.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
-- [[asyncio_48]] - `references` [EXTRACTED]
+- [[asyncio_49]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMCPProxyIntegration

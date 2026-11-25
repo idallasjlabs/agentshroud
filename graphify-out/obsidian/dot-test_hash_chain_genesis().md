@@ -12,6 +12,6 @@ tags:
 # .test_hash_chain_genesis()
 
 ## Connections
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditTrail

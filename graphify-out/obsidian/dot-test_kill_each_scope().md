@@ -15,6 +15,6 @@ tags:
 - [[TestEdgeCommands]] - `method` [EXTRACTED]
 - [[_invoke()]] - `calls` [EXTRACTED]
 - [[_stub_client()]] - `calls` [EXTRACTED]
-- [[parametrize_8]] - `references` [EXTRACTED]
+- [[parametrize_7]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_stub_client

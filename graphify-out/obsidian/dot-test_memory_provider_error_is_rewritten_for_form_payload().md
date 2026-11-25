@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "_make_sanitizer"
 location: "L1464"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/_make_sanitizer
 ---
 
 # .test_memory_provider_error_is_rewritten_for_form_payload()
@@ -15,6 +15,6 @@ tags:
 - [[Embeddingprovider memory errors should also be rewritten for urlencoded…]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

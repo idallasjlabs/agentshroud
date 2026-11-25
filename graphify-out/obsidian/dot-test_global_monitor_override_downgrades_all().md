@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "lifespan.py"
+community: "ingest_api/config.py"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ingest_api/configpy
 ---
 
 # .test_global_monitor_override_downgrades_all()
@@ -17,4 +17,4 @@ tags:
 - [[TestGetModuleModeEnforceDefault]] - `method` [EXTRACTED]
 - [[get_module_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy
