@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 location: "L29"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # teams()
@@ -15,7 +15,7 @@ tags:
 - [[GroupConfig]] - `uses` [INFERRED]
 - [[ProjectConfig]] - `uses` [INFERRED]
 - [[TeamsConfig]] - `uses` [INFERRED]
-- [[fixture_9]] - `references` [EXTRACTED]
+- [[fixture_16]] - `references` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_collaborator_responsespy
+#graphify/code #graphify/INFERRED #community/TeamsConfig

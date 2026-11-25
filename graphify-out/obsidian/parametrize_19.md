@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestDeploymentMode"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDeploymentMode
+  - community/MiddlewareManager
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_declared_mode_and_drift()]] - `references` [EXTRACTED]
+- [[dot-test_module_has_implementation()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDeploymentMode
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

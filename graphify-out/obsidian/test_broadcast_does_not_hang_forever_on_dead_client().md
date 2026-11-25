@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_HangingWebSocket]] - `calls` [EXTRACTED]
-- [[asyncio_10]] - `references` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 - [[broadcast() bounds each client's send with a timeout — defense in depth so an…]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

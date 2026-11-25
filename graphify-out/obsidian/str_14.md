@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "PipelineAction"
+community: "GitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/GitGuard
 ---
 
 # str
 
 ## Connections
-- [[PipelineAction]] - `inherits` [EXTRACTED]
+- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/GitGuard

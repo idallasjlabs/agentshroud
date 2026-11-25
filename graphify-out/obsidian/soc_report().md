@@ -12,7 +12,7 @@ tags:
 # soc_report()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Consolidated SOC report for dashboardSIEM pull workflows.]] - `rationale_for` [EXTRACTED]
 - [[_build_activity_entries_from_contributor_logs()]] - `calls` [EXTRACTED]
 - [[_build_activity_summary_from_contributor_logs()]] - `calls` [EXTRACTED]

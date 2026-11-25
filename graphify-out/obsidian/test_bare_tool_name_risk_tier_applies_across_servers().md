@@ -12,7 +12,7 @@ tags:
 # test_bare_tool_name_risk_tier_applies_across_servers()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A risk tier declared with a bare tool name applies on any allowlisted server…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]

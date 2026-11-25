@@ -17,7 +17,7 @@ tags:
 - [[_eof_target_connection()]] - `calls` [EXTRACTED]
 - [[_make_stream()]] - `calls` [EXTRACTED]
 - [[log_external_decision raising must not break the CONNECT.]] - `rationale_for` [EXTRACTED]
-- [[log_external_decision()_2]] - `contains` [EXTRACTED]
+- [[log_external_decision()]] - `contains` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

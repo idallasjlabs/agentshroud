@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GroupRoleResolver"
+community: "PromptGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/PromptGuard
 ---
 
 # str
 
 ## Connections
-- [[GroupRole]] - `inherits` [EXTRACTED]
+- [[ThreatAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

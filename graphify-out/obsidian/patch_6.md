@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestApprovalHardening"
+community: "ToolResultSanitizer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/ToolResultSanitizer
 ---
 
 # patch
 
 ## Connections
-- [[dot-test_cleanup_old_denied_requests()]] - `references` [EXTRACTED]
-- [[dot-test_cooldown_period_enforcement()]] - `references` [EXTRACTED]
-- [[dot-test_different_requests_not_in_cooldown()]] - `references` [EXTRACTED]
+- [[dot-test_logging()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

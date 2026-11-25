@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "TrustLevel"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/TrustLevel
 ---
 
 # test_a2a_violation_types_exist()
@@ -15,4 +15,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

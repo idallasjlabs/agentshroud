@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APolicyEngine"
+community: "AgentRegistry"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/AgentRegistry
 ---
 
 # str
 
 ## Connections
-- [[A2AMethod]] - `inherits` [EXTRACTED]
-- [[A2APolicyAction]] - `inherits` [EXTRACTED]
+- [[IsolationStatus]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

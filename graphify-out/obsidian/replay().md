@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "test_edge_fuzz.py"
-location: "L450"
+community: "test_edge_service_routes.py"
+location: "L453"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_edge_fuzzpy
+  - community/test_edge_service_routespy
 ---
 
 # replay()
 
 ## Connections
-- [[dot-__call__()_13]] - `indirect_call` [INFERRED]
+- [[dot-__call__()_9]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_edge_fuzzpy
+#graphify/code #graphify/INFERRED #community/test_edge_service_routespy

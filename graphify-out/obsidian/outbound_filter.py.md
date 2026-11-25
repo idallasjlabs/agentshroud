@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "outbound_filter.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/outbound_filterpy
 ---
 
 # outbound_filter.py
 
 ## Connections
-- [[Enum_31]] - `imports_from` [EXTRACTED]
+- [[Enum_29]] - `imports_from` [EXTRACTED]
 - [[FilterMatch]] - `contains` [EXTRACTED]
 - [[FilterResult_1]] - `contains` [EXTRACTED]
 - [[InfoCategory]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[test_outbound_filter.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/outbound_filterpy

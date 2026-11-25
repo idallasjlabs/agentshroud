@@ -12,7 +12,7 @@ tags:
 # ssh_history()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Query SSH audit entries from ledger]] - `rationale_for` [EXTRACTED]
 - [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

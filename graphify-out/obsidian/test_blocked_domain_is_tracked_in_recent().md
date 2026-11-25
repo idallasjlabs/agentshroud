@@ -17,7 +17,7 @@ tags:
 - [[WebProxyConfig]] - `uses` [INFERRED]
 - [[_MockWriter_1]] - `calls` [EXTRACTED]
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
-- [[asyncio_82]] - `references` [EXTRACTED]
+- [[asyncio_83]] - `references` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_module_stats.py"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_module_statspy
+  - community/MCPPolicyEngine
 ---
 
 # str
 
 ## Connections
-- [[Decision]] - `inherits` [EXTRACTED]
+- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_module_statspy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

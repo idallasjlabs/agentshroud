@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ScanResult"
+community: "SkillGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/SkillGuard
 ---
 
 # skill_guard.py
@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Finding]] - `contains` [EXTRACTED]
 - [[Recommendation]] - `contains` [EXTRACTED]
-- [[ScanResult_2]] - `contains` [EXTRACTED]
-- [[Severity]] - `contains` [EXTRACTED]
+- [[ScanResult_1]] - `contains` [EXTRACTED]
+- [[Severity_1]] - `contains` [EXTRACTED]
 - [[SkillGuard]] - `contains` [EXTRACTED]
 - [[SkillGuard — skill supply-chain scanning (SCRUM-97). Agents in AgentShroud can…]] - `rationale_for` [EXTRACTED]
 - [[SkillScanError]] - `contains` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[scan.py]] - `imports_from` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "detect_runtime"
+community: "installer.py"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/installerpy
 ---
 
 # start_install()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[InstallConfig]] - `references` [EXTRACTED]
 - [[Start the installation process. This endpoint kicks off the install and returns…]] - `rationale_for` [EXTRACTED]
-- [[installer.py_2]] - `contains` [EXTRACTED]
-- [[post_8]] - `references` [EXTRACTED]
+- [[installer.py]] - `contains` [EXTRACTED]
+- [[post_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/EXTRACTED #community/installerpy

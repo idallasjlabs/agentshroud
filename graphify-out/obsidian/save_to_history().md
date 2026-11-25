@@ -12,7 +12,7 @@ tags:
 # save_to_history()
 
 ## Connections
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[Path_20]] - `references` [EXTRACTED]
 - [[Save a health report to history. Args score Overall score. grade Letter…]] - `rationale_for` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]

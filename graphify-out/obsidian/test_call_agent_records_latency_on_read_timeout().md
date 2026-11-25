@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A read-timeout (worst-case latency) is still recorded, then falls back.]] - `rationale_for` [EXTRACTED]
 - [[_call_agent_stream()]] - `calls` [EXTRACTED]
-- [[asyncio_77]] - `references` [EXTRACTED]
+- [[asyncio_78]] - `references` [EXTRACTED]
 - [[mock_stream()_27]] - `contains` [EXTRACTED]
 - [[mock_stream()_25]] - `indirect_call` [INFERRED]
 - [[test_voice_latency_guard.py]] - `contains` [EXTRACTED]

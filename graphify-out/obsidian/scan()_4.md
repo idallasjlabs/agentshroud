@@ -1,23 +1,17 @@
 ---
-source_file: "gateway/cli/main.py"
+source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "cli/main.py"
-location: "L346"
+community: "TestConcurrency"
+location: "L239"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/cli/mainpy
+  - graphify/INFERRED
+  - community/TestConcurrency
 ---
 
 # scan()
 
 ## Connections
-- [[SCLClient]] - `uses` [INFERRED]
-- [[Trigger a security scan.]] - `rationale_for` [EXTRACTED]
-- [[_output()]] - `calls` [EXTRACTED]
-- [[argument]] - `references` [EXTRACTED]
-- [[climain.py]] - `contains` [EXTRACTED]
-- [[command_9]] - `references` [EXTRACTED]
-- [[pass_context]] - `references` [EXTRACTED]
+- [[dot-test_prompt_guard_concurrent_scans()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/cli/mainpy
+#graphify/code #graphify/INFERRED #community/TestConcurrency

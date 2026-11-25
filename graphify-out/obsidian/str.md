@@ -11,7 +11,7 @@ tags:
 # str
 
 ## Connections
-- [[Role]] - `inherits` [EXTRACTED]
-- [[ToolTier]] - `inherits` [EXTRACTED]
+- [[Action]] - `inherits` [EXTRACTED]
+- [[Resource]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

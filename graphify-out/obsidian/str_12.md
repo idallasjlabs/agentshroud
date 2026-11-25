@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "multi_turn_tracker.py"
+community: "GroupRoleResolver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/multi_turn_trackerpy
+  - community/GroupRoleResolver
 ---
 
 # str
 
 ## Connections
-- [[AlertLevel]] - `inherits` [EXTRACTED]
-- [[DisclosureCategory]] - `inherits` [EXTRACTED]
+- [[GroupRole]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/multi_turn_trackerpy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "test_module_stats.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/test_module_statspy
 ---
 
 # str
 
 ## Connections
-- [[InjectionAction]] - `inherits` [EXTRACTED]
-- [[InjectionSeverity]] - `inherits` [EXTRACTED]
+- [[Decision]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # telegram_proxy.py
@@ -17,7 +17,7 @@ tags:
 - [[GroupWorkspaceManager]] - `imports` [EXTRACTED]
 - [[ProgressiveLockdown]] - `imports` [EXTRACTED]
 - [[RBACConfig]] - `imports` [EXTRACTED]
-- [[RateLimiter_1]] - `imports` [EXTRACTED]
+- [[RateLimiter]] - `imports` [EXTRACTED]
 - [[Telegram API Reverse Proxy — intercepts all bot ↔ Telegram traffic. The gateway…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `contains` [EXTRACTED]
 - [[_OutboundScan]] - `contains` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[test_telegram_proxy_outbound.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

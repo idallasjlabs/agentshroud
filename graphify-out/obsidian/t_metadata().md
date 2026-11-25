@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "MetadataGuard"
+community: "deep_security_test"
 location: "L3513"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/deep_security_test
 ---
 
 # t_metadata()
@@ -15,4 +15,4 @@ tags:
 - [[MetadataGuard]] - `calls` [EXTRACTED]
 - [[deep_security_test()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

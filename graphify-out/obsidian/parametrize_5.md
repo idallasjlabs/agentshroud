@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan"
+community: "test_soc_router_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/test_soc_router_coveragepy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_file_exists()]] - `references` [EXTRACTED]
+- [[test_approvals_missing_queue_is_503()]] - `references` [EXTRACTED]
+- [[test_approvals_unknown_id_is_404()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

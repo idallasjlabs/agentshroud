@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ingest_api/main.py"
+community: "EgressFilterConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/EgressFilterConfig
 ---
 
 # put
 
 ## Connections
-- [[set_user_role()_1]] - `references` [EXTRACTED]
+- [[update_egress_allowlist()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

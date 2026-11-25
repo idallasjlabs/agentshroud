@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestPathIsolationManager"
+community: "TestApprovalHardening"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/TestApprovalHardening
 ---
 
 # patch
 
 ## Connections
-- [[dot-test_cleanup_abandoned_directories()]] - `references` [EXTRACTED]
-- [[dot-test_dont_cleanup_active_user_directories()]] - `references` [EXTRACTED]
+- [[dot-test_cleanup_old_denied_requests()]] - `references` [EXTRACTED]
+- [[dot-test_cooldown_period_enforcement()]] - `references` [EXTRACTED]
+- [[dot-test_different_requests_not_in_cooldown()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

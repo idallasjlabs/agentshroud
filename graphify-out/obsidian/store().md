@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ReportStore]] - `uses` [INFERRED]
-- [[fixture_36]] - `references` [EXTRACTED]
+- [[fixture_44]] - `references` [EXTRACTED]
 - [[test_report_store.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestReportAPI

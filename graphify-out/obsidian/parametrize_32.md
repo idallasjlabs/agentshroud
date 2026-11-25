@@ -1,20 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_deployment_mode.py"
+community: "test_lifespan_prune.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_deployment_modepy
+  - community/test_lifespan_prunepy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_compose_flags_per_mode()]] - `references` [EXTRACTED]
-- [[test_edge_funnel_profile_is_opt_in_and_needs_an_edge_mode()]] - `references` [EXTRACTED]
-- [[test_environment_value_wins()]] - `references` [EXTRACTED]
-- [[test_unknown_mode_fails_closed()]] - `references` [EXTRACTED]
-- [[test_what_each_mode_runs()]] - `references` [EXTRACTED]
+- [[test_is_fixture_uid_blocks_short_numeric()]] - `references` [EXTRACTED]
+- [[test_is_fixture_uid_blocks_test_user_prefix()]] - `references` [EXTRACTED]
+- [[test_is_fixture_uid_passes_real_uids()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_deployment_modepy
+#graphify/code #graphify/EXTRACTED #community/test_lifespan_prunepy

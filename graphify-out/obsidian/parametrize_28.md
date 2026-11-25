@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_make_proxy"
+community: "service.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/servicepy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - `references` [EXTRACTED]
-- [[test_model_ref_round_trip()]] - `references` [EXTRACTED]
+- [[test_searxng_proxy_direct_only_for_internal_container_names()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/servicepy

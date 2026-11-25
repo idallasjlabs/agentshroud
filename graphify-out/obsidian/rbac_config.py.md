@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # rbac_config.py
 
 ## Connections
-- [[Enum]] - `imports_from` [EXTRACTED]
+- [[Enum_12]] - `imports_from` [EXTRACTED]
 - [[Group]] - `contains` [EXTRACTED]
 - [[GroupRegistry]] - `contains` [EXTRACTED]
 - [[RBAC Configuration - Role-Based Access Control Configuration Defines user roles…]] - `rationale_for` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[tool_acl.py]] - `imports_from` [EXTRACTED]
 - [[unpause_collaborator()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

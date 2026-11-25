@@ -16,7 +16,7 @@ tags:
 - [[Follow-Up Actions]] - `contains` [EXTRACTED]
 - [[Incident Summary]] - `contains` [EXTRACTED]
 - [[Remediation]] - `contains` [EXTRACTED]
-- [[Root Cause]] - `contains` [EXTRACTED]
+- [[Root Cause_1]] - `contains` [EXTRACTED]
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - `contains` [EXTRACTED]
 - [[Timeline]] - `contains` [EXTRACTED]
 

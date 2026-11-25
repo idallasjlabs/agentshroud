@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config.py"
 type: "code"
-community: "api.py"
+community: "ingest_api/config.py"
 location: "L113"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/ingest_api/configpy
 ---
 
 # test_bot_service_names_uses_resolved_container_name()
@@ -16,4 +16,4 @@ tags:
 - [[_bot_service_names() must use each bot's real container name, not a hardcoded…]] - `rationale_for` [EXTRACTED]
 - [[test_config.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

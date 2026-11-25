@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_hermes_model_resolver.py"
+community: "TestComplianceMaths"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_hermes_model_resolverpy
+  - community/TestComplianceMaths
 ---
 
 # parametrize
 
 ## Connections
-- [[test_provider_for_model()]] - `references` [EXTRACTED]
-- [[test_strip_provider_prefix()]] - `references` [EXTRACTED]
+- [[dot-test_compliance_levels()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy
+#graphify/code #graphify/EXTRACTED #community/TestComplianceMaths

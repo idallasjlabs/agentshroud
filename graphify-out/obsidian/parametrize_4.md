@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "test_api_contract_fuzz.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/test_api_contract_fuzzpy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_approvals_missing_queue_is_503()]] - `references` [EXTRACTED]
-- [[test_approvals_unknown_id_is_404()]] - `references` [EXTRACTED]
+- [[test_endpoint_survives_adversarial_body()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

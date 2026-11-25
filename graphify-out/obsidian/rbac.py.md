@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # rbac.py
 
 ## Connections
 - [[Action]] - `contains` [EXTRACTED]
-- [[Enum_1]] - `imports_from` [EXTRACTED]
+- [[Enum]] - `imports_from` [EXTRACTED]
 - [[PermissionResult]] - `contains` [EXTRACTED]
 - [[RBAC Manager - Role-Based Access Control Core Implements role-based access…]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig]] - `imports` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_soc_edge.py]] - `imports_from` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

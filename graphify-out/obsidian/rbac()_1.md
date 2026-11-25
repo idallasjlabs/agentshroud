@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[RBACConfig]] - `uses` [INFERRED]
-- [[fixture_23]] - `references` [EXTRACTED]
+- [[fixture_28]] - `references` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

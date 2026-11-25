@@ -2,19 +2,17 @@
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
 community: "_make_proxy"
-location: "L570"
+location: "L663"
 tags:
   - graphify/code
-  - graphify/INFERRED
+  - graphify/EXTRACTED
   - community/_make_proxy
 ---
 
 # scan()
 
 ## Connections
-- [[dot-test_attachments_scanned()]] - `indirect_call` [INFERRED]
-- [[dot-test_blocks_scanned_even_when_text_present()]] - `indirect_call` [INFERRED]
-- [[dot-test_structured_field_sanitization_blocks_delivery()]] - `indirect_call` [INFERRED]
+- [[dot-test_structured_field_sanitization_blocks_delivery()]] - `contains` [EXTRACTED]
 - [[_pass_result()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

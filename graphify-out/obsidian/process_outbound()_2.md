@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundScanUnification"
-location: "L5236"
+community: "_make_multipart_body"
+location: "L5102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundScanUnification
+  - community/_make_multipart_body
 ---
 
 # process_outbound()
 
 ## Connections
-- [[dot-test_json_caption_pipeline_block_replaces_caption()]] - `contains` [EXTRACTED]
+- [[dot-test_multipart_fails_closed_for_non_owner()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundScanUnification
+#graphify/code #graphify/EXTRACTED #community/_make_multipart_body

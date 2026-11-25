@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "tool_chain_analyzer.py"
+community: "EgressEvent"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tool_chain_analyzerpy
+  - community/EgressEvent
 ---
 
 # str
 
 ## Connections
-- [[ChainAction]] - `inherits` [EXTRACTED]
-- [[RiskLevel]] - `inherits` [EXTRACTED]
+- [[EgressChannel]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

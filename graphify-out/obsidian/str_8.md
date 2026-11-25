@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mcp_proxy.py"
+community: "ToolResultInjectionScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/ToolResultInjectionScanner
 ---
 
 # str
 
 ## Connections
-- [[MCPTransport]] - `inherits` [EXTRACTED]
-- [[PermissionLevel]] - `inherits` [EXTRACTED]
+- [[InjectionAction]] - `inherits` [EXTRACTED]
+- [[InjectionSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

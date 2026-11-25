@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "lifespan"
+community: "ingest_api/config.py"
 location: "L380"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/ingest_api/configpy
 ---
 
 # resolve_config_path()
@@ -23,4 +23,4 @@ tags:
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_resolve_config_path_explicit_and_env()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

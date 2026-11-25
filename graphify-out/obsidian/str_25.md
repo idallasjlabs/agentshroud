@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentRegistry"
+community: "ToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ToolChainAnalyzer
 ---
 
 # str
 
 ## Connections
-- [[IsolationStatus]] - `inherits` [EXTRACTED]
+- [[ChainAction]] - `inherits` [EXTRACTED]
+- [[RiskLevel_6]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "prompt_guard.py"
+community: "EgressAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/EgressAction
 ---
 
 # str
 
 ## Connections
-- [[ThreatAction]] - `inherits` [EXTRACTED]
+- [[EgressAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/EgressAction

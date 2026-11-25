@@ -12,7 +12,7 @@ tags:
 # soc_events()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Return recent security telemetry events with optional filters.]] - `rationale_for` [EXTRACTED]
 - [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

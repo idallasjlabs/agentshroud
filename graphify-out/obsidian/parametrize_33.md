@@ -1,17 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "DraftEntry"
+community: "test_deployment_mode.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DraftEntry
+  - community/test_deployment_modepy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_host_confusion_urls_rejected_and_never_fetched()]] - `references` [EXTRACTED]
-- [[dot-test_ssrf_unsafe_urls_rejected_before_fetch()]] - `references` [EXTRACTED]
+- [[test_compose_flags_per_mode()]] - `references` [EXTRACTED]
+- [[test_edge_funnel_profile_is_opt_in_and_needs_an_edge_mode()]] - `references` [EXTRACTED]
+- [[test_environment_value_wins()]] - `references` [EXTRACTED]
+- [[test_unknown_mode_fails_closed()]] - `references` [EXTRACTED]
+- [[test_what_each_mode_runs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DraftEntry
+#graphify/code #graphify/EXTRACTED #community/test_deployment_modepy

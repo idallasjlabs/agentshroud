@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[A2AProxy]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `references` [EXTRACTED]
-- [[asyncio_85]] - `references` [EXTRACTED]
+- [[_StubForwarder_2]] - `references` [EXTRACTED]
+- [[asyncio_87]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

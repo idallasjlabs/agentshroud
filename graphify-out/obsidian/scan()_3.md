@@ -1,18 +1,23 @@
 ---
-source_file: "gateway/tests/test_slack_proxy.py"
+source_file: "gateway/cli/main.py"
 type: "code"
-community: "_make_proxy"
-location: "L663"
+community: "cli/main.py"
+location: "L346"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/cli/mainpy
 ---
 
 # scan()
 
 ## Connections
-- [[dot-test_structured_field_sanitization_blocks_delivery()]] - `contains` [EXTRACTED]
-- [[_pass_result()]] - `calls` [EXTRACTED]
+- [[SCLClient]] - `uses` [INFERRED]
+- [[Trigger a security scan.]] - `rationale_for` [EXTRACTED]
+- [[_output()]] - `calls` [EXTRACTED]
+- [[argument]] - `references` [EXTRACTED]
+- [[climain.py]] - `contains` [EXTRACTED]
+- [[command_9]] - `references` [EXTRACTED]
+- [[pass_context]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

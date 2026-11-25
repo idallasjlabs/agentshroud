@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_socket_client.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: ".test_events_api_envelope_dispatches_handle_event"
-location: "L224"
+community: "GatewayEmailService"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_events_api_envelope_dispatches_handle_event
+  - community/GatewayEmailService
 ---
 
 # send()
 
 ## Connections
-- [[dot-test_hello_message_not_dispatched()]] - `contains` [EXTRACTED]
+- [[dot-test_email_send_routes_through_injectable_service()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

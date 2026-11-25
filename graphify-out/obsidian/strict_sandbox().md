@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_file_sandbox.py"
+source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "FileSandbox"
+community: "test_privilege_separation.py"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/test_privilege_separationpy
 ---
 
 # strict_sandbox()
 
 ## Connections
 - [[FileSandbox]] - `uses` [INFERRED]
-- [[fixture_45]] - `references` [EXTRACTED]
-- [[test_file_sandbox.py]] - `contains` [EXTRACTED]
+- [[Sandbox with separation of privilege enforcement.]] - `rationale_for` [EXTRACTED]
+- [[fixture_40]] - `references` [EXTRACTED]
+- [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

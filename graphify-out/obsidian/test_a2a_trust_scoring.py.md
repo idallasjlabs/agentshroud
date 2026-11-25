@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "TrustLevel"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/TrustLevel
 ---
 
 # test_a2a_trust_scoring.py
@@ -19,8 +19,8 @@ tags:
 - [[SCRUM-129 Phase 4 — A2A trust-scoring wiring. Reuses TrustManager as-is…]] - `rationale_for` [EXTRACTED]
 - [[TrustManager]] - `imports` [EXTRACTED]
 - [[ViolationType]] - `imports` [EXTRACTED]
-- [[_StubForwarder_2]] - `contains` [EXTRACTED]
-- [[_jsonrpc()_2]] - `contains` [EXTRACTED]
+- [[_StubForwarder_1]] - `contains` [EXTRACTED]
+- [[_jsonrpc()_1]] - `contains` [EXTRACTED]
 - [[a2a_policy.py]] - `imports_from` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports_from` [EXTRACTED]
 - [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
@@ -32,7 +32,7 @@ tags:
 - [[test_proxy_without_trust_manager_does_not_raise()]] - `contains` [EXTRACTED]
 - [[test_ssrf_callback_rejection_triggers_severe_demotion()]] - `contains` [EXTRACTED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `contains` [EXTRACTED]
-- [[trust_manager()_2]] - `contains` [EXTRACTED]
+- [[trust_manager()_3]] - `contains` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

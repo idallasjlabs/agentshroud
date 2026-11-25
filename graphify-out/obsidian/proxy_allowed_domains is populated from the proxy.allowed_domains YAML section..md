@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "rationale"
-community: "lifespan"
+community: "ingest_api/config.py"
 location: "L319"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/ingest_api/configpy
 ---
 
 # proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_allowed_domains_parsed_from_yaml()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

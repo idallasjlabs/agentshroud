@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_network_isolation.py"
+community: "_run"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_network_isolationpy
+  - community/_run
 ---
 
 # parametrize
 
 ## Connections
-- [[test_check_fails_when_control_removed()]] - `references` [EXTRACTED]
-- [[test_gateway_mounts_edge_config_read_only()]] - `references` [EXTRACTED]
-- [[test_gateway_receives_pke_feed_list()]] - `references` [EXTRACTED]
-- [[test_isolation_control_holds()]] - `references` [EXTRACTED]
+- [[dot-test_non_sha_pin_is_refused_before_touching_hermes()]] - `references` [EXTRACTED]
+- [[dot-test_pulse_off_passes()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_network_isolationpy
+#graphify/code #graphify/EXTRACTED #community/_run

@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "URLAnalyzer"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/RBACConfig
 ---
 
 # str
 
 ## Connections
-- [[URLVerdict]] - `inherits` [EXTRACTED]
+- [[Role]] - `inherits` [EXTRACTED]
+- [[ToolTier]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

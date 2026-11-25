@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Sync TestClient for WebSocket tests]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_2]] - `references` [EXTRACTED]
+- [[fixture_4]] - `references` [EXTRACTED]
 - [[test_dashboard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app

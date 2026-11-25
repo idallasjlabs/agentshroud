@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "lifespan.py"
+community: "test_canary.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_canarypy
 ---
 
 # run_canary()
 
 ## Connections
 - [[CanaryCheck]] - `calls` [EXTRACTED]
-- [[CanaryResult]] - `calls` [EXTRACTED]
+- [[CanaryResult_2]] - `calls` [EXTRACTED]
 - [[Run the canary verification system. Args pipeline SecurityPipeline instance…]] - `rationale_for` [EXTRACTED]
 - [[canary.py_2]] - `contains` [EXTRACTED]
 - [[lifespan()]] - `indirect_call` [INFERRED]
@@ -28,4 +28,4 @@ tags:
 - [[test_canary_with_unhealthy_forwarder()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "TrustManager"
+community: "test_redteam_probes.py"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_redteam_probespy
 ---
 
 # pipeline()
 
 ## Connections
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[fixture_74]] - `references` [EXTRACTED]
+- [[fixture_38]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

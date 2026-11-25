@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L184"
+community: "test_edge_e2e_sdk.py"
+location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/test_edge_e2e_sdkpy
 ---
 
 # redirect_handler()
@@ -15,4 +15,4 @@ tags:
 - [[_client()]] - `calls` [EXTRACTED]
 - [[test_full_oauth_and_tool_calls_with_sdk_client()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

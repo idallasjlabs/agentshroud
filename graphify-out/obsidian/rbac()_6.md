@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_make_rbac()_1]] - `calls` [EXTRACTED]
-- [[fixture_124]] - `references` [EXTRACTED]
+- [[fixture_119]] - `references` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

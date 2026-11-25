@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # queue.py
@@ -18,7 +18,7 @@ tags:
 - [[ApprovalQueueItem]] - `imports` [EXTRACTED]
 - [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[MFAGuard]] - `imports` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[mfa_guard.py]] - `imports_from` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_ssh_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "MiddlewareResult"
 location: "L9415"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/MiddlewareResult
 ---
 
 # process_request()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_full_access_collaborator_passes_despite_middleware_block()]] - `contains` [EXTRACTED]
 - [[MiddlewareResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/MiddlewareResult

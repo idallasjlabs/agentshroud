@@ -16,7 +16,7 @@ tags:
 - [[MCPInspector]] - `uses` [INFERRED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
-- [[fixture_39]] - `references` [EXTRACTED]
+- [[fixture_46]] - `references` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/test_mcp_proxypy

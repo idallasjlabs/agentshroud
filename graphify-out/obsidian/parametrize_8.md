@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "_stub_client"
+community: "test_hermes_model_resolver.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_stub_client
+  - community/test_hermes_model_resolverpy
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_kill_each_scope()]] - `references` [EXTRACTED]
-- [[dot-test_simple_get_subcommands()]] - `references` [EXTRACTED]
-- [[test_convenience_methods_hit_expected_endpoints()]] - `references` [EXTRACTED]
+- [[test_provider_for_model()]] - `references` [EXTRACTED]
+- [[test_strip_provider_prefix()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_stub_client
+#graphify/code #graphify/EXTRACTED #community/test_hermes_model_resolverpy

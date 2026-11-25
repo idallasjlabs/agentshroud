@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ToolResultInjectionScanner]] - `uses` [INFERRED]
 - [[_scanner_summary()]] - `indirect_call` [INFERRED]
-- [[fixture_44]] - `references` [EXTRACTED]
+- [[fixture_48]] - `references` [EXTRACTED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

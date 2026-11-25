@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_docs_accuracy.py"
+community: "TestParanoidConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/TestParanoidConfig
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_module_has_implementation()]] - `references` [EXTRACTED]
+- [[dot-test_file_exists()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/TestParanoidConfig

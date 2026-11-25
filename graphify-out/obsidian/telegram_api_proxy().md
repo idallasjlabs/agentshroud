@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "BotConfig"
 location: "L4594"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/BotConfig
 ---
 
 # telegram_api_proxy()
@@ -17,11 +17,11 @@ tags:
 - [[dot-test_miss_rebuilds_and_recovers_when_secret_becomes_available()]] - `calls` [EXTRACTED]
 - [[dot-test_miss_still_rejected_after_rebuild_if_truly_unknown()]] - `calls` [EXTRACTED]
 - [[Proxy Telegram Bot API calls through security pipeline.]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[_build_telegram_token_registry()]] - `calls` [EXTRACTED]
 - [[api_route_1]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/BotConfig

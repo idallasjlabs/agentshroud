@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # soc/auth.py
@@ -24,7 +24,7 @@ tags:
 - [[_resolve_caller()]] - `contains` [EXTRACTED]
 - [[_verify_bearer()]] - `contains` [EXTRACTED]
 - [[_verify_session_token()]] - `contains` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[get_caller()]] - `contains` [EXTRACTED]
 - [[issue_session_token()]] - `contains` [EXTRACTED]
 - [[issue_ws_token()]] - `contains` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_soc_router_coverage.py]] - `imports_from` [EXTRACTED]
 - [[websocket.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestParseModeStrippedAfterPIIRedaction"
+community: "test_telegram_proxy_outbound.py"
 location: "L4411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestParseModeStrippedAfterPIIRedaction
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # parse_mode=HTML must be preserved for owner when text contains no PII.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_parse_mode_preserved_when_no_pii_detected()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

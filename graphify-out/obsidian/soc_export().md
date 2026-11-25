@@ -12,9 +12,9 @@ tags:
 # soc_export()
 
 ## Connections
-- [[AuditExportConfig_1]] - `uses` [INFERRED]
+- [[AuditExportConfig]] - `uses` [INFERRED]
 - [[AuditExporter]] - `uses` [INFERRED]
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - `rationale_for` [EXTRACTED]
 - [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

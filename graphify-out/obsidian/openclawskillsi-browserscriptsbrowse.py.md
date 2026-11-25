@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[Enum_22]] - `imports_from` [EXTRACTED]
-- [[RiskLevel_4]] - `contains` [EXTRACTED]
+- [[RiskLevel_3]] - `contains` [EXTRACTED]
 - [[SecureBrowser_2]] - `contains` [EXTRACTED]
 - [[SecureBrowser - Enterprise-grade secure browser automation Part of AgentShroud…_2]] - `rationale_for` [EXTRACTED]
 - [[SecurityConfig_3]] - `contains` [EXTRACTED]
 - [[SecurityError_2]] - `contains` [EXTRACTED]
-- [[main()_13]] - `contains` [EXTRACTED]
+- [[main()_12]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

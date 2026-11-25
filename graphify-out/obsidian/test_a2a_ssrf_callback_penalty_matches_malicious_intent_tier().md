@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_trust_scoring.py"
 type: "code"
-community: "ProgressiveTrustConfig"
+community: "TrustLevel"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/TrustLevel
 ---
 
 # test_a2a_ssrf_callback_penalty_matches_malicious_intent_tier()
@@ -16,4 +16,4 @@ tags:
 - [[ViolationType]] - `uses` [INFERRED]
 - [[test_a2a_trust_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel
