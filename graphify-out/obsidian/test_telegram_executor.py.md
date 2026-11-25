@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Regression guards for gateway lifespan startup fixes. Covers -…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_84]] - `imports` [EXTRACTED]
+- [[asyncio_86]] - `imports` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
 - [[test_hermes_forwarder_drops_non_http()]] - `contains` [EXTRACTED]
 - [[test_lifespan_hermes_forwarder_has_http_peek()]] - `contains` [EXTRACTED]

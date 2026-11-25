@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "test_security_audit.py"
+community: "middleware.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/middlewarepy
 ---
 
 # test_security_audit.py
@@ -42,10 +42,10 @@ tags:
 - [[Session]] - `imports` [EXTRACTED]
 - [[SubagentEvent]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
-- [[TestAuditTrail]] - `contains` [EXTRACTED]
+- [[TestAuditTrail_2]] - `contains` [EXTRACTED]
 - [[TestAuth]] - `contains` [EXTRACTED]
 - [[TestContainerSecurity]] - `contains` [EXTRACTED]
-- [[TestContextGuard]] - `contains` [EXTRACTED]
+- [[TestContextGuard_1]] - `contains` [EXTRACTED]
 - [[TestCryptography]] - `contains` [EXTRACTED]
 - [[TestFileSandbox]] - `contains` [EXTRACTED]
 - [[TestLoggingSecurity]] - `contains` [EXTRACTED]
@@ -64,7 +64,7 @@ tags:
 - [[run_canary()]] - `imports` [EXTRACTED]
 - [[run_clamscan()_1]] - `imports` [EXTRACTED]
 - [[run_trivy_scan()]] - `imports` [EXTRACTED]
-- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[wazuh_client.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

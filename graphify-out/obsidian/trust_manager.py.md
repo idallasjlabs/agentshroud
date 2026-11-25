@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "TrustManager"
+community: "TrustLevel"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustLevel
 ---
 
 # trust_manager.py
@@ -37,4 +37,4 @@ tags:
 - [[test_security_regressions_v1_2.py]] - `imports_from` [EXTRACTED]
 - [[test_trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

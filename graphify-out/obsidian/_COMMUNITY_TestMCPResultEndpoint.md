@@ -1,0 +1,47 @@
+---
+type: community
+members: 21
+---
+
+# TestMCPResultEndpoint
+
+**Members:** 21 nodes
+
+## Members
+- [[dot-test_body_agent_id_used_without_header()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_clean_result_accepted()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_header_user_id_overrides_body_agent_id()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_invalid_header_identity_rejected()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_owner_body_identity_rejected_without_header()_1]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_result_missing_server_name_rejected()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_result_requires_auth()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_result_returns_processing_time()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_result_with_null_content()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[dot-test_result_with_pii_is_audited_not_blocked()]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[A result containing PII is audited and redacted — never blocked (results are…]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[A result with no threats should be accepted and audited (200).]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Body-only owner identity must be rejected to prevent impersonation._1]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Null content is handled gracefully.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Request missing required server_name is rejected with 422.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[Response includes processing_time_ms.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[TestMCPResultEndpoint]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[Unauthenticated request is rejected.]] - rationale - gateway/tests/test_mcp_result_endpoint.py
+- [[_capture()_3]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[_capture()_4]] - code - gateway/tests/test_mcp_result_endpoint.py
+- [[asyncio_66]] - code
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/TestMCPResultEndpoint
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 3 edges to [[_COMMUNITY_ProxyResult]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+
+## Top bridge nodes
+- [[TestMCPResultEndpoint]] - degree 12, connects to 2 communities
+- [[_capture()_4]] - degree 3, connects to 1 community
+- [[_capture()_3]] - degree 2, connects to 1 community

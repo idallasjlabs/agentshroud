@@ -12,10 +12,10 @@ tags:
 # upgrade_version()
 
 ## Connections
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[Upgrade to a target version. Requires approval_id unless dry_run.]] - `rationale_for` [EXTRACTED]
 - [[VersionRequest]] - `references` [EXTRACTED]
-- [[post_7]] - `references` [EXTRACTED]
+- [[post_8]] - `references` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 

@@ -15,7 +15,7 @@ tags:
 - [[Create a test tool risk configuration.]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
 - [[ToolRiskPolicy]] - `uses` [INFERRED]
-- [[fixture_84]] - `references` [EXTRACTED]
+- [[fixture_88]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

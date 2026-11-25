@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
-community: "test_forward_stream.py"
+community: "AgentTarget"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/AgentTarget
 ---
 
 # test_resolve_trust_level_maps_trust_score_to_tier()
@@ -15,7 +15,7 @@ tags:
 - [[_request()]] - `calls` [EXTRACTED]
 - [[_resolve_user_trust_level()]] - `calls` [EXTRACTED]
 - [[_target()]] - `calls` [EXTRACTED]
-- [[parametrize_6]] - `references` [EXTRACTED]
+- [[parametrize_16]] - `references` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

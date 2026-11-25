@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_playback_state.c"
+community: "app_main.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_playback_statec
+  - community/app_mainc
 ---
 
 # ws_vg_state_t
 
 ## Connections
-- [[_on_vg_state()]] - `references` [EXTRACTED]
+- [[_state_to_emotion()]] - `references` [EXTRACTED]
+- [[ui_face_set_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_playback_statec
+#graphify/code #graphify/EXTRACTED #community/app_mainc

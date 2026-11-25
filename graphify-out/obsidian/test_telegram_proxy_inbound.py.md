@@ -19,7 +19,7 @@ tags:
 - [[FakeRBAC]] - `contains` [EXTRACTED]
 - [[MiddlewareResult]] - `imports` [EXTRACTED]
 - [[PassthroughPipeline]] - `contains` [EXTRACTED]
-- [[RateLimiter_1]] - `imports` [EXTRACTED]
+- [[RateLimiter]] - `imports` [EXTRACTED]
 - [[TelegramAPIProxy]] - `imports` [EXTRACTED]
 - [[TestBotIsMentioned]] - `contains` [EXTRACTED]
 - [[TestCollaboratorPromptClassifiers]] - `contains` [EXTRACTED]
@@ -41,7 +41,7 @@ tags:
 - [[_no_owner_mirror()]] - `contains` [EXTRACTED]
 - [[_no_real_telegram_network()]] - `contains` [EXTRACTED]
 - [[_wrap_response()]] - `contains` [EXTRACTED]
-- [[asyncio_22]] - `imports` [EXTRACTED]
+- [[asyncio_19]] - `imports` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/ingest_api/configpy
 ---
 
 # test_security_integration.py
@@ -32,7 +32,7 @@ tags:
 - [[TrustLevel_1]] - `imports` [EXTRACTED]
 - [[TrustManager]] - `imports` [EXTRACTED]
 - [[approval_queue()_1]] - `contains` [EXTRACTED]
-- [[asyncio_61]] - `imports` [EXTRACTED]
+- [[asyncio_42]] - `imports` [EXTRACTED]
 - [[drift_detector.py]] - `imports_from` [EXTRACTED]
 - [[egress_config.py_2]] - `imports_from` [EXTRACTED]
 - [[egress_filter()_1]] - `contains` [EXTRACTED]
@@ -41,12 +41,12 @@ tags:
 - [[encrypted_store.py]] - `imports_from` [EXTRACTED]
 - [[full_pipeline_config()]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
-- [[ledger()_2]] - `contains` [EXTRACTED]
+- [[ledger()_1]] - `contains` [EXTRACTED]
 - [[ledger.py_2]] - `imports_from` [EXTRACTED]
-- [[prompt_guard()_2]] - `contains` [EXTRACTED]
+- [[prompt_guard()]] - `contains` [EXTRACTED]
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
-- [[sanitizer()_5]] - `contains` [EXTRACTED]
+- [[sanitizer()_4]] - `contains` [EXTRACTED]
 - [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_drift_detection_in_pipeline()]] - `contains` [EXTRACTED]
 - [[test_egress_blocks_unauthorized_after_trust_check()]] - `contains` [EXTRACTED]
@@ -60,7 +60,7 @@ tags:
 - [[test_pipeline_selective_modules()]] - `contains` [EXTRACTED]
 - [[test_response_credential_blocking()]] - `contains` [EXTRACTED]
 - [[test_trust_insufficient_action_blocked()]] - `contains` [EXTRACTED]
-- [[trust_manager()_4]] - `contains` [EXTRACTED]
+- [[trust_manager()_2]] - `contains` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

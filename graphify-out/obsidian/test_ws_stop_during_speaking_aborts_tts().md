@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_mock_ws"
+community: "asyncio"
 location: "L2325"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # test_ws_stop_during_speaking_aborts_tts()
@@ -19,7 +19,7 @@ tags:
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[_push_stop_on_first_pcm()]] - `indirect_call` [INFERRED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_53]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_mock_ws
+#graphify/code #graphify/EXTRACTED #community/asyncio

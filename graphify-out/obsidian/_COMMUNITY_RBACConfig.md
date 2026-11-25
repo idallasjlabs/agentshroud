@@ -1,0 +1,240 @@
+---
+type: community
+members: 173
+---
+
+# RBACConfig
+
+**Members:** 173 nodes
+
+## Members
+- [[dot-__init__()_30]] - code - gateway/proxy/telegram_proxy.py
+- [[dot-__init__()_31]] - code - gateway/security/rbac.py
+- [[dot-__init__()_32]] - code - gateway/soc/auth.py
+- [[dot-__init__()_33]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-__post_init__()_4]] - code - gateway/security/rbac_config.py
+- [[dot-_build_permission_matrix()]] - code - gateway/security/rbac.py
+- [[dot-_build_tool_permissions()]] - code - gateway/security/rbac.py
+- [[dot-audit_privilege_change()]] - code - gateway/security/rbac.py
+- [[dot-can_user_manage_user()]] - code - gateway/security/rbac.py
+- [[dot-check_permission()_1]] - code - gateway/security/rbac.py
+- [[dot-check_permission()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-check_tool_permission()_1]] - code - gateway/security/rbac.py
+- [[dot-get_role_hierarchy()]] - code - gateway/security/rbac.py
+- [[dot-get_user_permissions_summary()]] - code - gateway/security/rbac.py
+- [[dot-get_user_role()_1]] - code - gateway/security/rbac_config.py
+- [[dot-get_user_role()_2]] - code - gateway/security/rbac.py
+- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
+- [[dot-is_admin_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_collaborator_or_higher()]] - code - gateway/security/rbac_config.py
+- [[dot-is_privilege_escalation()]] - code - gateway/security/rbac.py
+- [[dot-list_users_and_roles()]] - code - gateway/security/rbac.py
+- [[dot-set_user_role()]] - code - gateway/security/rbac_config.py
+- [[dot-set_user_role()_1]] - code - gateway/security/rbac.py
+- [[dot-setup_method()_9]] - code - gateway/tests/test_rbac.py
+- [[dot-teardown_method()_1]] - code - gateway/tests/test_rbac.py
+- [[dot-test_bearer_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_cookie_raw_bearer_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_default_config_initialization()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_get_caller_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_get_rbac_manager_builds_real_manager()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_get_users_by_role()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_invalid_action_resource_combinations()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_invalid_user_id()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_is_group_admin_with_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_is_group_admin_without_teams_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_is_owner_delegates_to_config()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_list_users_and_roles()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_no_credentials_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_owner_and_collaborators_can_be_overridden_from_env()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_check_with_context()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_admin()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_collaborator()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_owner()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_permission_matrix_viewer()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_allows_authorized_access()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_blocks_unauthorized_access()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_handles_missing_user_id()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_initialization_in_middleware()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_rbac_manager_without_config()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_require_allowed_does_not_raise()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_require_denied_raises_403_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_require_denied_without_reason_uses_forbidden()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_role_assignment()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_role_hierarchy_checks()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_role_hierarchy_levels()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_session_cookie_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_set_user_role()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_tool_tier_permissions()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_user_management_hierarchy()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_user_permissions_summary()]] - code - gateway/tests/test_rbac.py
+- [[dot-test_wrong_bearer_raises_401()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_x_soc_token_header_valid()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
+- [[Any_13]] - code
+- [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - rationale - gateway/security/rbac_config.py
+- [[Build the permission matrix for all roles.]] - rationale - gateway/security/rbac.py
+- [[Build tool tier permissions for each role.]] - rationale - gateway/security/rbac.py
+- [[Check if a user can use tools of a specific tier.]] - rationale - gateway/security/rbac.py
+- [[Check if a user has permission to perform an action on a resource.]] - rationale - gateway/security/rbac.py
+- [[Check if one user can manage another user.]] - rationale - gateway/security/rbac.py
+- [[Check if user has admin privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Check if user has collaborator privileges or higher.]] - rationale - gateway/security/rbac_config.py
+- [[Close sqlite-holding sub-modules so Python 3.13's GC does not finalize them…]] - rationale - gateway/tests/test_rbac.py
+- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
+- [[Ensure the persistence store's parent directory exists. Returns False on…]] - rationale - gateway/security/rbac_config.py
+- [[Enum_12]] - code
+- [[Env overrides should drive runtime ownercollaborator identity.]] - rationale - gateway/tests/test_rbac.py
+- [[FastAPI dependency resolve Bearercookie token → user_id → role.]] - rationale - gateway/soc/auth.py
+- [[Get a summary of permissions for a user.]] - rationale - gateway/security/rbac.py
+- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
+- [[Get role for a user ID.]] - rationale - gateway/security/rbac_config.py
+- [[Get role hierarchy levels (higher number = more privileges).]] - rationale - gateway/security/rbac.py
+- [[Get the role for a user.]] - rationale - gateway/security/rbac.py
+- [[Group workspace manager — SCRUM-67 WS-A. Turns a Telegram GROUP into a shared…]] - rationale - gateway/security/group_workspace.py
+- [[Initialize RBAC manager with configuration.]] - rationale - gateway/security/rbac.py
+- [[Initialize user roles based on configuration.]] - rationale - gateway/security/rbac_config.py
+- [[List all users and their roles (admin+ only).]] - rationale - gateway/security/rbac.py
+- [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - rationale - gateway/security/rbac.py
+- [[Merge group membership and admin IDs from TeamsConfig into RBAC. Called from…]] - rationale - gateway/security/rbac_config.py
+- [[Minimal RBAC stand-in with controllable check_permission results.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Pause a collaborator's bot access without removing their record (file-locked).…]] - rationale - gateway/security/rbac_config.py
+- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
+- [[PermissionResult]] - code - gateway/security/rbac.py
+- [[Public FastAPI dependency injected by SCL route handlers.]] - rationale - gateway/soc/auth.py
+- [[RBAC Configuration - Role-Based Access Control Configuration Defines user roles…]] - rationale - gateway/security/rbac_config.py
+- [[RBAC Manager - Role-Based Access Control Core Implements role-based access…]] - rationale - gateway/security/rbac.py
+- [[RBAC Tests - Role-Based Access Control Tests Tests for the AgentShroud RBAC…]] - rationale - gateway/tests/test_rbac.py
+- [[RBACConfig]] - code - gateway/security/rbac_config.py
+- [[RBACManager]] - code - gateway/security/rbac.py
+- [[Read dynamically approved collaborator IDs from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Read persisted collaborator-removal exclusions from disk (Bug 1 fix). Applies…]] - rationale - gateway/security/rbac_config.py
+- [[Read persisted paused-collaborator IDs from disk. Owner-initiated manual pause…]] - rationale - gateway/security/rbac_config.py
+- [[Read the full collaborator persistence store (all keys) from disk.]] - rationale - gateway/security/rbac_config.py
+- [[Remove a collaborator from effective access (file-locked). Strips the UID from…]] - rationale - gateway/security/rbac_config.py
+- [[Result of permission check.]] - rationale - gateway/security/rbac.py
+- [[Resume a paused collaborator's bot access (file-locked). Removes the UID from…]] - rationale - gateway/security/rbac_config.py
+- [[Return True if changing from_role → to_role represents an escalation.]] - rationale - gateway/security/rbac.py
+- [[Role]] - code - gateway/security/rbac_config.py
+- [[Role-Based Access Control Manager.]] - rationale - gateway/security/rbac.py
+- [[SCL authentication and authorization helpers. Supports three auth methods for…]] - rationale - gateway/soc/auth.py
+- [[Set a user's role (owner-only operation).]] - rationale - gateway/security/rbac.py
+- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
+- [[Set up test environment._1]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC configuration.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC error handling and edge cases.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC handling when user ID is missing.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC integration with middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC manager functionality.]] - rationale - gateway/tests/test_rbac.py
+- [[Test RBAC manager initialization without explicit config.]] - rationale - gateway/tests/test_rbac.py
+- [[Test admin role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test collaborator role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test default RBAC configuration initialization.]] - rationale - gateway/tests/test_rbac.py
+- [[Test dynamic role assignment.]] - rationale - gateway/tests/test_rbac.py
+- [[Test getting user permissions summary.]] - rationale - gateway/tests/test_rbac.py
+- [[Test getting users by role.]] - rationale - gateway/tests/test_rbac.py
+- [[Test handling of invalid actionresource combinations.]] - rationale - gateway/tests/test_rbac.py
+- [[Test handling of invalid user IDs.]] - rationale - gateway/tests/test_rbac.py
+- [[Test listing users and roles.]] - rationale - gateway/tests/test_rbac.py
+- [[Test owner role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test permission checks with additional context.]] - rationale - gateway/tests/test_rbac.py
+- [[Test role hierarchy helper methods.]] - rationale - gateway/tests/test_rbac.py
+- [[Test role hierarchy levels.]] - rationale - gateway/tests/test_rbac.py
+- [[Test setting user roles.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC allows authorized access.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC blocks unauthorized access attempts.]] - rationale - gateway/tests/test_rbac.py
+- [[Test that RBAC is properly initialized in middleware.]] - rationale - gateway/tests/test_rbac.py
+- [[Test tool tier access permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[Test user management hierarchy.]] - rationale - gateway/tests/test_rbac.py
+- [[Test viewer role permissions.]] - rationale - gateway/tests/test_rbac.py
+- [[TestRBACConfig]] - code - gateway/tests/test_rbac.py
+- [[TestRBACErrorHandling]] - code - gateway/tests/test_rbac.py
+- [[TestRBACIntegration]] - code - gateway/tests/test_rbac.py
+- [[TestRBACManager]] - code - gateway/tests/test_rbac.py
+- [[TestResolveCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestSCLCaller]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Tool security tiers for RBAC permissions.]] - rationale - gateway/security/rbac_config.py
+- [[Tool-Level Access Control (v0.9.0 Tranche 2) Enforces per-user, per-group tool…]] - rationale - gateway/security/tool_acl.py
+- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
+- [[ToolTier]] - code - gateway/security/rbac_config.py
+- [[User roles in AgentShroud RBAC system. Hierarchy (highest to lowest) OWNER …]] - rationale - gateway/security/rbac_config.py
+- [[Write the full collaborator persistence store (all keys) to disk.]] - rationale - gateway/security/rbac_config.py
+- [[_FakeRBAC_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_ensure_collab_dir()]] - code - gateway/security/rbac_config.py
+- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
+- [[_load_collab_store()]] - code - gateway/security/rbac_config.py
+- [[_resolve_caller()]] - code - gateway/soc/auth.py
+- [[_write_collab_store()]] - code - gateway/security/rbac_config.py
+- [[asyncio_23]] - code
+- [[get_caller()]] - code - gateway/soc/auth.py
+- [[group_workspace.py]] - code - gateway/security/group_workspace.py
+- [[load_paused_collaborator_ids()]] - code - gateway/security/rbac_config.py
+- [[load_persisted_collaborators()]] - code - gateway/security/rbac_config.py
+- [[load_removed_collaborator_ids()]] - code - gateway/security/rbac_config.py
+- [[pause_collaborator()]] - code - gateway/security/rbac_config.py
+- [[persist_approved_collaborator()]] - code - gateway/security/rbac_config.py
+- [[rbac.py]] - code - gateway/security/rbac.py
+- [[rbac_config.py]] - code - gateway/security/rbac_config.py
+- [[revoke_approved_collaborator()]] - code - gateway/security/rbac_config.py
+- [[socauth.py]] - code - gateway/soc/auth.py
+- [[str_6]] - code
+- [[test_rbac.py]] - code - gateway/tests/test_rbac.py
+- [[tool_acl.py]] - code - gateway/security/tool_acl.py
+- [[unpause_collaborator()]] - code - gateway/security/rbac_config.py
+
+## Live Query (requires Dataview plugin)
+
+```dataview
+TABLE source_file, type FROM #community/RBACConfig
+SORT file.name ASC
+```
+
+## Connections to other communities
+- 52 edges to [[_COMMUNITY_socrouter.py]]
+- 19 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 12 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 10 edges to [[_COMMUNITY_TeamsConfig]]
+- 8 edges to [[_COMMUNITY_ContributorManager]]
+- 8 edges to [[_COMMUNITY_GroupRegistry]]
+- 7 edges to [[_COMMUNITY_GroupWorkspaceManager]]
+- 7 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 7 edges to [[_COMMUNITY_ContextGuard]]
+- 7 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 7 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 7 edges to [[_COMMUNITY_test_tool_acl.py]]
+- 7 edges to [[_COMMUNITY_GroupRoleResolver]]
+- 7 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 6 edges to [[_COMMUNITY_MiddlewareManager]]
+- 6 edges to [[_COMMUNITY_test_soc_edge.py]]
+- 5 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 5 edges to [[_COMMUNITY_UserSessionManager]]
+- 5 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 4 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 4 edges to [[_COMMUNITY_middleware.py]]
+- 4 edges to [[_COMMUNITY_issue_session_token]]
+- 3 edges to [[_COMMUNITY_TestCollaboratorPersistence]]
+- 2 edges to [[_COMMUNITY_dot-process_request]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
+- 2 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 2 edges to [[_COMMUNITY_socmodels.py]]
+- 2 edges to [[_COMMUNITY__coerce_to_ws_event]]
+- 2 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 2 edges to [[_COMMUNITY__verify_bearer]]
+- 1 edge to [[_COMMUNITY_TestMiddlewareSessionEnforcement]]
+- 1 edge to [[_COMMUNITY_PIISanitizer]]
+- 1 edge to [[_COMMUNITY_AuditChain]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_RateLimiter]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_test_module_stats.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
+- 1 edge to [[_COMMUNITY_secrets.py]]
+
+## Top bridge nodes
+- [[RBACConfig]] - degree 85, connects to 30 communities
+- [[rbac_config.py]] - degree 45, connects to 18 communities
+- [[Role]] - degree 56, connects to 15 communities
+- [[socauth.py]] - degree 27, connects to 10 communities
+- [[RBACManager]] - degree 37, connects to 4 communities

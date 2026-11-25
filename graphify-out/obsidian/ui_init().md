@@ -12,7 +12,7 @@ tags:
 # ui_init()
 
 ## Connections
-- [[app_main()]] - `calls` [EXTRACTED]
+- [[app_main()_1]] - `calls` [EXTRACTED]
 - [[app_main.c]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app_mainc

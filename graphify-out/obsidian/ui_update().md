@@ -12,7 +12,7 @@ tags:
 # ui_update()
 
 ## Connections
-- [[app_main()]] - `calls` [EXTRACTED]
+- [[app_main()_1]] - `calls` [EXTRACTED]
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[ui_state_t]] - `references` [EXTRACTED]
 - [[wifi_event_handler()]] - `calls` [EXTRACTED]

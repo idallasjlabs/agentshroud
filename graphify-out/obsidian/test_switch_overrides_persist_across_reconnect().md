@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_mock_ws"
+community: "asyncio"
 location: "L3260"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # test_switch_overrides_persist_across_reconnect()
@@ -21,7 +21,7 @@ tags:
 - [[_mock_llm()_1]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_53]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_mock_ws
+#graphify/code #graphify/EXTRACTED #community/asyncio

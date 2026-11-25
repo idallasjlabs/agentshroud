@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L278"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # tracker()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_close_middleware_after()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/RedactionResult
+#graphify/code #graphify/INFERRED #community/PIIConfig

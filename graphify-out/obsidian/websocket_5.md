@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "api.py"
+community: "_run_asgi"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/_run_asgi
 ---
 
 # websocket
 
 ## Connections
-- [[ws_logs()]] - `references` [EXTRACTED]
-- [[ws_updates()]] - `references` [EXTRACTED]
+- [[hermes_dashboard_ws_proxy()]] - `references` [EXTRACTED]
+- [[slack_ws_relay()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/_run_asgi

@@ -12,7 +12,7 @@ tags:
 # test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]

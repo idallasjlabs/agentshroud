@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "lifespan.py"
+community: "test_telegram_proxy_outbound.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # test_telegram_proxy_outbound.py
@@ -41,10 +41,10 @@ tags:
 - [[Tests for TelegramAPIProxy outbound security pipeline integration. Proves that…]] - `rationale_for` [EXTRACTED]
 - [[_make_multipart_body()]] - `contains` [EXTRACTED]
 - [[_make_sanitizer()]] - `contains` [EXTRACTED]
-- [[asyncio_66]] - `imports` [EXTRACTED]
+- [[asyncio_31]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[ContentFinding]] - `contains` [EXTRACTED]
-- [[Enum_35]] - `imports_from` [EXTRACTED]
+- [[Enum_34]] - `imports_from` [EXTRACTED]
 - [[FindingSeverity]] - `contains` [EXTRACTED]
-- [[ScanResult_1]] - `contains` [EXTRACTED]
+- [[ScanResult_2]] - `contains` [EXTRACTED]
 - [[WebContentScanner]] - `contains` [EXTRACTED]
 - [[test_xml_dtd_control.py]] - `imports_from` [EXTRACTED]
 - [[web_proxy.py_2]] - `imports_from` [EXTRACTED]

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TrustManager]] - `uses` [INFERRED]
-- [[fixture_25]] - `references` [EXTRACTED]
+- [[fixture_31]] - `references` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py

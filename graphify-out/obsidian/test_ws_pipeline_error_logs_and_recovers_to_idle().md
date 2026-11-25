@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_ws_pipeline_error_logs_and_recovers_to_idle"
+community: "test_voice_gateway.py"
 location: "L1751"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_pipeline_error_logs_and_recovers_to_idle
+  - community/test_voice_gatewaypy
 ---
 
 # test_ws_pipeline_error_logs_and_recovers_to_idle()
@@ -17,4 +17,4 @@ tags:
 - [[_failing_transcribe()]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_pipeline_error_logs_and_recovers_to_idle
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

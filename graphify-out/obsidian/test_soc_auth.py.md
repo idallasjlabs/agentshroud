@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_auth.py"
 type: "code"
-community: "ws_soc_endpoint"
+community: "test_soc_realtime_coverage.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_soc_endpoint
+  - community/test_soc_realtime_coveragepy
 ---
 
 # test_soc_auth.py
@@ -21,4 +21,4 @@ tags:
 - [[redeem_ws_token()]] - `imports` [EXTRACTED]
 - [[socauth.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

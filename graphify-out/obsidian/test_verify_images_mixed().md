@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_mock_verify()_1]] - `indirect_call` [INFERRED]
-- [[asyncio_78]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 - [[test_image_verifier.py]] - `contains` [EXTRACTED]
 - [[verify_images()]] - `calls` [EXTRACTED]
 - [[verify_images one succeeds, one fails → results keyed by ref.]] - `rationale_for` [EXTRACTED]

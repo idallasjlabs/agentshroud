@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # test_subagent_monitor.py
@@ -15,7 +15,7 @@ tags:
 - [[SubagentEventType]] - `imports` [EXTRACTED]
 - [[SubagentMonitor]] - `imports` [EXTRACTED]
 - [[SubagentMonitorConfig]] - `imports` [EXTRACTED]
-- [[TestAuditTrail_2]] - `contains` [EXTRACTED]
+- [[TestAuditTrail_1]] - `contains` [EXTRACTED]
 - [[TestConcurrentLimits]] - `contains` [EXTRACTED]
 - [[TestKillSwitch_1]] - `contains` [EXTRACTED]
 - [[TestPermissionMonitoring]] - `contains` [EXTRACTED]
@@ -30,4 +30,4 @@ tags:
 - [[strict_monitor()]] - `contains` [EXTRACTED]
 - [[subagent_monitor.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

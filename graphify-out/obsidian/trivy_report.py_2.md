@@ -1,25 +1,25 @@
 ---
-source_file: "gateway/security/trivy_report.py"
-type: "code"
-community: "parse_trivy_output"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Security Modules/trivy_report.py.md"
+type: "document"
+community: "trivy_report.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/trivy_reportpy
 ---
 
 # trivy_report.py
 
 ## Connections
-- [[daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[generate_summary()_1]] - `contains` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
-- [[parse_trivy_output()]] - `contains` [EXTRACTED]
-- [[run_trivy_scan()]] - `contains` [EXTRACTED]
-- [[save_report()]] - `contains` [EXTRACTED]
-- [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[test_security_audit.py]] - `imports_from` [EXTRACTED]
-- [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
+- [[Configuration  Environment Variables_18]] - `contains` [EXTRACTED]
+- [[Function Details_30]] - `contains` [EXTRACTED]
+- [[Key Classes  Functions_32]] - `contains` [EXTRACTED]
+- [[Purpose_39]] - `contains` [EXTRACTED]
+- [[Related_32]] - `contains` [EXTRACTED]
+- [[Responsibilities_32]] - `contains` [EXTRACTED]
+- [[Severity Order (for ranking)]] - `contains` [EXTRACTED]
+- [[Threat Model_14]] - `contains` [EXTRACTED]
+- [[trivy_report.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/document #graphify/EXTRACTED #community/trivy_reportpy

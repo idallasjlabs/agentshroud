@@ -12,7 +12,7 @@ tags:
 # test_strip_provider_prefix()
 
 ## Connections
-- [[parametrize_9]] - `references` [EXTRACTED]
+- [[parametrize_8]] - `references` [EXTRACTED]
 - [[strip_provider_prefix()]] - `calls` [INFERRED]
 - [[test_hermes_model_resolver.py]] - `contains` [EXTRACTED]
 

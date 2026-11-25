@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "mock_stream"
 location: "L924"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # test_ws_full_utterance_state_sequence()
@@ -15,8 +15,8 @@ tags:
 - [[LISTEN → binary PCM → END → STT → forwardstream → TTS → PCM + END → idle.]] - `rationale_for` [EXTRACTED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[mock_stream()_22]] - `contains` [EXTRACTED]
-- [[mock_stream()_20]] - `indirect_call` [INFERRED]
+- [[mock_stream()_16]] - `contains` [EXTRACTED]
+- [[mock_stream()_15]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

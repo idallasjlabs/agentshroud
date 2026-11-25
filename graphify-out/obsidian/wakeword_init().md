@@ -1,19 +1,19 @@
 ---
 source_file: "firmware/voice-terminal/main/wakeword.c"
 type: "code"
-community: "wakeword.c"
+community: "app_main.c"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/app_mainc
 ---
 
 # wakeword_init()
 
 ## Connections
-- [[app_main()]] - `calls` [INFERRED]
-- [[esp_err_t_3]] - `references` [EXTRACTED]
+- [[app_main()_1]] - `calls` [INFERRED]
+- [[esp_err_t_6]] - `references` [EXTRACTED]
 - [[wakeword.c]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/app_mainc

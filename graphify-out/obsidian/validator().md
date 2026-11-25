@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "_make_token"
+community: "TokenValidator"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/TokenValidator
 ---
 
 # validator()
 
 ## Connections
 - [[TokenValidator]] - `uses` [INFERRED]
-- [[fixture_35]] - `references` [EXTRACTED]
+- [[fixture_43]] - `references` [EXTRACTED]
 - [[test_token_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_token
+#graphify/code #graphify/EXTRACTED #community/TokenValidator
