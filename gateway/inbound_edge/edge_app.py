@@ -54,6 +54,7 @@ from mcp.server.auth.settings import AuthSettings, ClientRegistrationOptions, Re
 from mcp.server.lowlevel import Server
 from mcp.server.transport_security import TransportSecuritySettings
 from mcp.shared.auth import OAuthClientInformationFull, OAuthToken
+from mcp.shared.exceptions import MCPError
 from starlette.requests import Request
 from starlette.responses import HTMLResponse, JSONResponse, PlainTextResponse, RedirectResponse
 from starlette.routing import Route
@@ -358,19 +359,21 @@ def _request_token(ctx) -> Optional[AccessToken]:
 
 def _build_server(gw: GatewayClient) -> Server:
     async def on_list_tools(ctx, params) -> types.ListToolsResult:
+        # MCPError, not PermissionError: the SDK sends its message as a clean JSON-RPC
+        # error; any other exception becomes a logged traceback and "Internal server error".
         token = _request_token(ctx)
         if token is None:
-            raise PermissionError("unauthenticated")
+            raise MCPError(types.INVALID_REQUEST, "unauthenticated")
         try:
             tools = await gw.call("tools.list", token=token.token)
         except GatewayError as exc:
-            raise PermissionError(exc.error.get("message") or "forbidden")
+            raise MCPError(types.INVALID_REQUEST, exc.error.get("message") or "forbidden")
         return types.ListToolsResult(tools=[types.Tool.model_validate(t) for t in tools])
 
     async def on_call_tool(ctx, params) -> types.CallToolResult:
         token = _request_token(ctx)
         if token is None:
-            raise PermissionError("unauthenticated")
+            raise MCPError(types.INVALID_REQUEST, "unauthenticated")
         try:
             result = await gw.call(
                 "tools.call",

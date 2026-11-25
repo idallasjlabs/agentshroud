@@ -105,9 +105,11 @@ class EdgeDeps:
 
 
 class _Denied(Exception):
-    def __init__(self, reason: str, message: str):
+    def __init__(self, reason: str, message: str, identity: Optional[Dict[str, str]] = None):
         super().__init__(message)
         self.reason = reason
+        # vendor/client_id/jti when known (signature verified) — attributes the denial.
+        self.identity = identity or {}
 
 
 @dataclass
@@ -179,18 +181,30 @@ class EdgeCallPipeline:
         except TokenRejected as exc:
             msg = str(exc)
             reason = "revoked" if "revoked" in msg else "unauthorized"
-            raise _Denied(reason, f"{'revoked' if reason == 'revoked' else 'unauthorized'}: {msg}")
+            identity = (
+                {"vendor": exc.vendor, "client_id": exc.client_id, "jti": exc.jti}
+                if exc.vendor
+                else None
+            )
+            raise _Denied(
+                reason, f"{'revoked' if reason == 'revoked' else 'unauthorized'}: {msg}", identity
+            )
+        identity = {
+            "vendor": principal.vendor,
+            "client_id": principal.client_id,
+            "jti": principal.jti,
+        }
         profile = self.d.profiles.get(principal.vendor)
         if profile is None or not profile.enabled:
-            raise _Denied("vendor_disabled", "vendor disabled")
+            raise _Denied("vendor_disabled", "vendor disabled", identity)
         if self.d.lockdown.level_of(principal.principal_id) == LockdownLevel.SUSPENDED:
-            raise _Denied("revoked", "revoked: client suspended by lockdown")
+            raise _Denied("revoked", "revoked: client suspended by lockdown", identity)
         if profile.allowed_hours is not None:
             start, end, tz = profile.allowed_hours
             now = datetime.fromtimestamp(self.d.clock(), tz=tz).time()
             inside = start <= now <= end if start <= end else (now >= start or now <= end)
             if not inside:
-                raise _Denied("outside_hours", "outside allowed hours")
+                raise _Denied("outside_hours", "outside allowed hours", identity)
         return principal, profile
 
     def _visible_tools(self, profile: VendorProfile) -> List[str]:
@@ -204,9 +218,24 @@ class EdgeCallPipeline:
         return names
 
     async def list_tools(self, token: str) -> List[Dict[str, Any]]:
+        started = self.d.clock()
         try:
             _, profile = await self._authenticate(token)
         except _Denied as exc:
+            # A refused listing is the first thing a killed vendor hits; audit it (FR6).
+            rec: Dict[str, Any] = {
+                "request_id": None,
+                "vendor": None,
+                "client_id": None,
+                "jti": None,
+                "tool": "tools/list",
+                "outcome": "denied",
+                "deny_reason": exc.reason,
+            }
+            rec.update(exc.identity)
+            self._count_denial(rec)
+            rec["latency_ms"] = round((self.d.clock() - started) * 1000, 3)
+            await self._record(rec, None)
             raise PermissionError(str(exc)) from exc
         return [mcp_tool(name) for name in self._visible_tools(profile)]
 
@@ -456,8 +485,10 @@ class EdgeCallPipeline:
         except _Denied as exc:
             rec["outcome"] = "denied"
             rec["deny_reason"] = exc.reason
+            if principal is None:
+                rec.update(exc.identity)
+            self._count_denial(rec)
             if principal is not None:
-                self.stats[principal.vendor].denials[exc.reason] += 1
                 if exc.reason in _STRIKES:
                     await self._strike(principal, exc.reason)
             return _result(f"denied: {exc}", error=True)
@@ -472,14 +503,19 @@ class EdgeCallPipeline:
             rec["latency_ms"] = round((self.d.clock() - started) * 1000, 3)
             await self._record(rec, principal)
 
+    def _count_denial(self, rec: Dict[str, Any]) -> None:
+        if rec["vendor"]:
+            self.stats[rec["vendor"]].denials[rec["deny_reason"]] += 1
+
     async def _record(self, rec: Dict[str, Any], principal: Optional[EdgePrincipal]) -> None:
         severity = "info" if rec["outcome"] in ("ok", "awaiting_approval") else "warning"
         try:
             await self.d.audit.log_event("edge_call", severity, rec, "inbound_edge", bot_id="edge")
         except Exception as exc:
             logger.error("edge audit write failed: %s", exc)
-        if principal is not None:
-            self.stats[principal.vendor].recent.appendleft(
+        vendor = principal.vendor if principal is not None else rec.get("vendor")
+        if vendor:
+            self.stats[vendor].recent.appendleft(
                 {
                     k: rec.get(k)
                     for k in ("request_id", "client_id", "tool", "outcome", "latency_ms")
@@ -487,7 +523,7 @@ class EdgeCallPipeline:
                 | {
                     "deny_reason": rec.get("deny_reason"),
                     # vendor + ts let the Command Center merge vendors newest-first.
-                    "vendor": principal.vendor,
+                    "vendor": vendor,
                     "ts": self.d.clock(),
                 }
             )

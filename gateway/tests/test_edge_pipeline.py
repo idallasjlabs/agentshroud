@@ -166,6 +166,40 @@ class TestToolListing:
         with pytest.raises(PermissionError, match="disabled"):
             await pipe.list_tools(await _token(deps))
 
+    async def test_killed_vendor_listing_is_denied_and_audited(self, edge):
+        # K1 on prod: a killed vendor's tools/list was refused but left no audit row (FR6).
+        pipe, deps, *_ = edge
+        token = await _token(deps)
+        await deps.store.kill("vendor", "claude-duet", "K1")
+        with pytest.raises(PermissionError, match="revoked"):
+            await pipe.list_tools(token)
+        rows = await deps.audit.query_events(event_type="edge_call", limit=5)
+        assert len(rows) == 1
+        d = rows[0].details
+        assert (d["tool"], d["outcome"], d["deny_reason"]) == ("tools/list", "denied", "revoked")
+        assert (d["vendor"], d["client_id"]) == ("claude-duet", "c1")
+        assert pipe.stats["claude-duet"].denials["revoked"] == 1
+
+    async def test_disabled_vendor_listing_is_audited(self, edge):
+        pipe, deps, *_ = edge
+        deps.profiles["claude-duet"] = _profile(enabled=False)
+        with pytest.raises(PermissionError):
+            await pipe.list_tools(await _token(deps))
+        d = (await deps.audit.query_events(event_type="edge_call", limit=5))[0].details
+        assert (d["vendor"], d["deny_reason"]) == ("claude-duet", "vendor_disabled")
+
+    async def test_unverifiable_token_listing_is_audited_without_identity(self, edge):
+        pipe, deps, *_ = edge
+        with pytest.raises(PermissionError, match="unauthorized"):
+            await pipe.list_tools("not-a-jwt")
+        d = (await deps.audit.query_events(event_type="edge_call", limit=5))[0].details
+        assert (d["vendor"], d["deny_reason"]) == (None, "unauthorized")
+
+    async def test_successful_listing_writes_no_audit_row(self, edge):
+        pipe, deps, *_ = edge
+        await pipe.list_tools(await _token(deps))
+        assert await deps.audit.query_events(event_type="edge_call", limit=5) == []
+
 
 class TestT1ToolAbuse:
     async def test_unknown_tool_denied_and_audited(self, edge):
@@ -327,6 +361,18 @@ class TestT4AuthN:
         await deps.store.kill("vendor", "claude-duet", "owner")
         r = await pipe.call_tool(token, "pke_status", {}, "r")
         assert r["isError"] and "revoked" in _text(r)
+
+    async def test_vendor_kill_denial_names_the_vendor(self, edge):
+        # The killed token verifies cryptographically, so its vendor and client are
+        # trustworthy; without them the denial is unattributable and uncounted.
+        pipe, deps, *_ = edge
+        token = await _token(deps)
+        await deps.store.kill("vendor", "claude-duet", "K1")
+        await pipe.call_tool(token, "pke_status", {}, "r")
+        d = (await deps.audit.query_events(event_type="edge_call", limit=5))[0].details
+        assert (d["vendor"], d["client_id"], d["deny_reason"]) == ("claude-duet", "c1", "revoked")
+        assert d["jti"]
+        assert pipe.stats["claude-duet"].denials["revoked"] == 1
 
 
 class TestT9Abuse:
