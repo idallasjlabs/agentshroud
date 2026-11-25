@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Any"
+community: "KillSwitchMonitor"
 location: "L373"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KillSwitchMonitor
 ---
 
 # ._test_docker_available()
@@ -17,4 +17,4 @@ tags:
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Test if Docker is available.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

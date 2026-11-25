@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestParseModeStrippedAfterPIIRedaction"
+community: "test_telegram_proxy_outbound.py"
 location: "L4347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseModeStrippedAfterPIIRedaction
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # ._make_owner_proxy()
@@ -19,4 +19,4 @@ tags:
 - [[Return a TelegramAPIProxy configured with a mock owner RBAC.]] - `rationale_for` [EXTRACTED]
 - [[TestParseModeStrippedAfterPIIRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

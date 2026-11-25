@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "prompt_guard.py"
+community: "PromptGuard"
 location: "L652"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/PromptGuard
 ---
 
 # ._check_encoded_content()
@@ -16,4 +16,4 @@ tags:
 - [[Check for suspicious base64 content that decodes to injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

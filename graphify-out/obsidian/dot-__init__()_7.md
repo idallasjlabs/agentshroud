@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "make_event"
-location: "L162"
+community: "DelegationPrivilege"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/DelegationPrivilege
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_6]] - `calls` [EXTRACTED]
-- [[EdgeCallPipeline]] - `method` [EXTRACTED]
-- [[EdgeDeps]] - `references` [EXTRACTED]
-- [[_Window]] - `calls` [EXTRACTED]
+- [[dot-_load()]] - `calls` [EXTRACTED]
+- [[DelegationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

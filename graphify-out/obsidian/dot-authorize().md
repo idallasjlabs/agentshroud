@@ -2,7 +2,7 @@
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
 community: "GatewayBackedProvider"
-location: "L166"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED

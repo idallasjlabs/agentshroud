@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "LogSanitizer"
+community: "deep_security_test"
 location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/deep_security_test
 ---
 
 # ._filter_msg()
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_user_path_redacted()]] - `calls` [EXTRACTED]
 - [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

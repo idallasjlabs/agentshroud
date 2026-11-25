@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/rbac.py"
 type: "code"
-community: "_FakeWSConnect"
-location: "L745"
+community: "RBACConfig"
+location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeWSConnect
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWSConnect]] - `method` [EXTRACTED]
+- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
+- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
+- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `references` [EXTRACTED]
+- [[RBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeWSConnect
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

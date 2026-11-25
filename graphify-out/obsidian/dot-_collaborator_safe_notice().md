@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L2219"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # ._collaborator_safe_notice()
@@ -16,7 +16,7 @@ tags:
 - [[dot-_apply_outbound_status_notices()]] - `calls` [EXTRACTED]
 - [[dot-_check_collaborator_leakage()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
-- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[dot-_handle_outbound_tool_calls()]] - `calls` [EXTRACTED]
 - [[dot-_notify_collaborator_command_blocked()]] - `calls` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

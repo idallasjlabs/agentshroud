@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/killswitch_monitor.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "KillSwitchConfig"
-location: "L37"
+community: "EgressFilterConfig"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchConfig
+  - community/EgressFilterConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-from_env()_3]] - `calls` [EXTRACTED]
-- [[Any_86]] - `references` [EXTRACTED]
-- [[KillSwitchConfig]] - `references` [EXTRACTED]
-- [[KillSwitchMonitor]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[EgressFilterConfig]] - `references` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[get_egress_config()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

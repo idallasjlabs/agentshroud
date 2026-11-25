@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L29"
+community: "CanaryTripwire"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/CanaryTripwire
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock_1]] - `method` [EXTRACTED]
+- [[CanaryConfig_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

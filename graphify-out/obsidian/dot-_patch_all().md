@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestAggregateResults"
+community: "P2 High Priority Incidents"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/P2_High_Priority_Incidents
 ---
 
 # ._patch_all()
@@ -19,4 +19,4 @@ tags:
 - [[TestAggregateResults]] - `method` [EXTRACTED]
 - [[_stub_summary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/P2_High_Priority_Incidents

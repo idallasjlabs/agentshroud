@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L742"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # ._set_outbound_block_cascade()
@@ -16,4 +16,4 @@ tags:
 - [[Activate per-chat cascade window to prevent streaming-fragment leak-through.…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

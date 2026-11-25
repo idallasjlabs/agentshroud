@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # ._log_event()
@@ -21,4 +21,4 @@ tags:
 - [[SubagentEventType]] - `references` [EXTRACTED]
 - [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

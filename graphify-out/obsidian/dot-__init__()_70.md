@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/intel_report.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "ReportIntegrityError"
-location: "L205"
+community: "MCPServerConfig"
+location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportIntegrityError
+  - community/MCPServerConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[IntelReportStore]] - `method` [EXTRACTED]
-- [[Path_23]] - `references` [EXTRACTED]
+- [[HttpSseConnection]] - `method` [EXTRACTED]
+- [[MCPServerConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "egress_approval.py"
+community: "EgressApprovalQueue"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/EgressApprovalQueue
 ---
 
 # ._assess_risk()
@@ -15,6 +15,6 @@ tags:
 - [[dot-assess_risk()]] - `calls` [EXTRACTED]
 - [[dot-request_approval()]] - `calls` [EXTRACTED]
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
-- [[RiskLevel_1]] - `references` [EXTRACTED]
+- [[RiskLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

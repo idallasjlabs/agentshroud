@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "SessionContext"
+community: "MultiTurnTracker"
 location: "L250"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/MultiTurnTracker
 ---
 
 # ._analyze_agent_response()
@@ -16,6 +16,6 @@ tags:
 - [[dot-track_message()]] - `calls` [EXTRACTED]
 - [[Analyze agent response for potential information leaks.]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext]] - `references` [EXTRACTED]
+- [[SessionContext_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionContext
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "ContributorManager"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ContributorManager
 ---
 
 # ._ensure_rbac()
@@ -17,4 +17,4 @@ tags:
 - [[ContributorManager]] - `method` [EXTRACTED]
 - [[RBACConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ContributorManager

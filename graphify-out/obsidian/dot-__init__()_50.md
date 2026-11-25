@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_sanitizer.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "test_sanitizer.py"
-location: "L154"
+community: "LLMProxy"
+location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/LLMProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAnalyzer]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

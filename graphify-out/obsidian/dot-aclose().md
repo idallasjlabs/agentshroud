@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "GatewayBackedProvider"
-location: "L125"
+community: "test_edge_service_routes.py"
+location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/test_edge_service_routespy
 ---
 
 # .aclose()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GatewayClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

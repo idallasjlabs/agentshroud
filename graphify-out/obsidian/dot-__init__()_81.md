@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/dashboard/proxy_status.py"
 type: "code"
-community: "ContextGuard"
-location: "L70"
+community: "ProxyDashboard"
+location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/ProxyDashboard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ContextGuard]] - `method` [EXTRACTED]
+- [[ProxyDashboard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/ProxyDashboard

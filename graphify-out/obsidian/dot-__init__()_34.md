@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "FakeClock"
-location: "L425"
+community: "test_soc_router_coverage.py"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FakeClock
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeClock]] - `method` [EXTRACTED]
+- [[FakeAuditStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FakeClock
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "._handle"
+community: "AlertTelegramRelay"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/AlertTelegramRelay
 ---
 
 # ._handle()
 
 ## Connections
-- [[dot-__call__()_4]] - `calls` [EXTRACTED]
+- [[dot-__call__()_10]] - `calls` [EXTRACTED]
 - [[dot-_clean_tool()]] - `calls` [EXTRACTED]
 - [[dot-_coerce()]] - `calls` [EXTRACTED]
 - [[dot-_dedup_key()]] - `calls` [EXTRACTED]
 - [[dot-_spawn_send()]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[Any_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

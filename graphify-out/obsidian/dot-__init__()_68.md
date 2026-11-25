@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/audit_export.py"
+source_file: ".agents/skills/browser/scripts/browse.py"
 type: "code"
-community: "AuditExportConfig"
-location: "L28"
+community: "SecureBrowser"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditExportConfig
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_default_jsonld_context()]] - `calls` [EXTRACTED]
-- [[AuditExportConfig_1]] - `method` [EXTRACTED]
+- [[dot-_load_config()]] - `calls` [EXTRACTED]
+- [[SecureBrowser]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditExportConfig
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

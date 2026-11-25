@@ -15,7 +15,7 @@ tags:
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
 - [[AgentTarget]] - `references` [EXTRACTED]
-- [[Any_56]] - `references` [EXTRACTED]
+- [[Any_48]] - `references` [EXTRACTED]
 - [[Build the outbound payload for `target`, shared by the blocking and streaming…]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `method` [EXTRACTED]
 

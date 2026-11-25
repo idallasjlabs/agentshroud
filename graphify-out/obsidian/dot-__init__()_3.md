@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/prompt_protection.py"
+source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "run"
-location: "L56"
+community: "ContextGuard"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()]] - `calls` [EXTRACTED]
-- [[dot-_load_protected_content()]] - `calls` [EXTRACTED]
-- [[Any_3]] - `references` [EXTRACTED]
-- [[Initialize prompt protection system. Args config Configuration dictionary…]] - `rationale_for` [EXTRACTED]
-- [[PromptProtection]] - `method` [EXTRACTED]
+- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
+- [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

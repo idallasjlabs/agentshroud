@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "asyncio"
 location: "L671"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/asyncio
 ---
 
 # ._blocking_prompt_guard()
@@ -18,4 +18,4 @@ tags:
 - [[ScanResult]] - `calls` [EXTRACTED]
 - [[TestPromptGuardToolResultTrustGate]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/asyncio

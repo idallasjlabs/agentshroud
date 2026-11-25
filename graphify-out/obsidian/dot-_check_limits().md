@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "make_event"
-location: "L258"
+community: "test_edge_pipeline.py"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_edge_pipelinepy
 ---
 
 # ._check_limits()
@@ -19,4 +19,4 @@ tags:
 - [[_Denied]] - `calls` [EXTRACTED]
 - [[_rank()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

@@ -1,18 +1,19 @@
 ---
-source_file: "docker/config/openclaw/skills/i-browser/scripts/browse.py"
+source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "SecureBrowser"
-location: "L65"
+community: "TestModuleInstantiationInEnforceMode"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_config()_2]] - `calls` [EXTRACTED]
-- [[SecureBrowser_2]] - `method` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[Initialize the Output Canary System. Args config Optional configuration. Uses…]] - `rationale_for` [EXTRACTED]
+- [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

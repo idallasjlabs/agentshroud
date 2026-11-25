@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/shared_memory.py"
+source_file: "scripts/migrate-cve-registry-ghsa.py"
 type: "code"
-community: "SharedMemoryManager"
-location: "L57"
+community: "migrate-cve-registry-ghsa.py"
+location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SharedMemoryManager]] - `method` [EXTRACTED]
+- [[MatchResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

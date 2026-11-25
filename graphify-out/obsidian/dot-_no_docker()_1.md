@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Pin _running_image to the docker-unavailable fallback path so these tests…]] - `rationale_for` [EXTRACTED]
 - [[TestBuildImageTargets]] - `method` [EXTRACTED]
-- [[fixture_91]] - `references` [EXTRACTED]
+- [[fixture_96]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_build_image_targets

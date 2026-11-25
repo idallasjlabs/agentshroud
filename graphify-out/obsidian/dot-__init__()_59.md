@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/proxy/mcp_permissions.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "test_mcp_proxy.py"
-location: "L183"
+community: "ToolResultInjectionScanner"
+location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/ToolResultInjectionScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
-- [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
-- [[MCPPermissionManager]] - `method` [EXTRACTED]
-- [[MCPProxyConfig]] - `references` [EXTRACTED]
-- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[Initialize the scanner with optional custom rules. Args custom_rules…]] - `rationale_for` [EXTRACTED]
+- [[InjectionRule]] - `references` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

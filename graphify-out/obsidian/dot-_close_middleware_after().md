@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # ._close_middleware_after()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestMiddlewareIntegration]] - `method` [EXTRACTED]
 - [[Track every MiddlewareManager instantiated in this class and close its sqlite-…]] - `rationale_for` [EXTRACTED]
-- [[fixture_77]] - `references` [EXTRACTED]
+- [[fixture_82]] - `references` [EXTRACTED]
 - [[tracker()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

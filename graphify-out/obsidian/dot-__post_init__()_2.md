@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MCPToolCall"
-location: "L66"
+community: "ContentThreat"
+location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/ContentThreat
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[MCPToolResult]] - `method` [EXTRACTED]
+- [[ContentThreat]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/ContentThreat

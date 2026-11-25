@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L539"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # .allowlist_proxy()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestAllowlistMode]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
-- [[fixture_107]] - `references` [EXTRACTED]
+- [[fixture_106]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

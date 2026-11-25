@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "_FakeStreamClient"
-location: "L1437"
+community: "_LegacyStubApprovalQueue"
+location: "L388"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeStreamClient
+  - community/_LegacyStubApprovalQueue
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamClient]] - `method` [EXTRACTED]
+- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeStreamClient
+#graphify/code #graphify/EXTRACTED #community/_LegacyStubApprovalQueue

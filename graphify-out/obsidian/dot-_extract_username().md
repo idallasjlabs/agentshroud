@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: ".process_webhook"
+community: "WebhookReceiver"
 location: "L285"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/process_webhook
+  - community/WebhookReceiver
 ---
 
 # ._extract_username()
@@ -15,8 +15,8 @@ tags:
 - [[dot-process_webhook()]] - `calls` [EXTRACTED]
 - [[dot-test_extract_username_slack()]] - `calls` [EXTRACTED]
 - [[dot-test_extract_username_slack_fallback_to_user_id()]] - `calls` [EXTRACTED]
-- [[Any_71]] - `references` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
 - [[Extract display name from webhook payload.]] - `rationale_for` [EXTRACTED]
 - [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/process_webhook
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

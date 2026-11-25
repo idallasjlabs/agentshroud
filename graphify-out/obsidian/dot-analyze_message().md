@@ -19,7 +19,7 @@ tags:
 - [[Analyze a message for context poisoning attempts. Args session_id Session…]] - `rationale_for` [EXTRACTED]
 - [[ContextAttack]] - `calls` [EXTRACTED]
 - [[ContextGuard]] - `method` [EXTRACTED]
-- [[SessionContext_1]] - `calls` [EXTRACTED]
+- [[SessionContext]] - `calls` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContextGuard

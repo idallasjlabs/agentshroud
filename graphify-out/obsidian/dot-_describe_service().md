@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "ServiceManager"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ServiceManager
 ---
 
 # ._describe_service()
@@ -21,4 +21,4 @@ tags:
 - [[_engine_status_to_service_status()]] - `calls` [EXTRACTED]
 - [[_inspect_via_socket()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

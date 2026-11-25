@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/output_canary.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "OutputCanary"
-location: "L67"
+community: "ingest_api/config.py"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/ingest_api/configpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig]] - `calls` [EXTRACTED]
-- [[Initialize the Output Canary System. Args config Optional configuration. Uses…]] - `rationale_for` [EXTRACTED]
-- [[OutputCanary]] - `method` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[LedgerConfig]] - `references` [EXTRACTED]
+- [[Store configuration Actual database connection created in initialize(). Args…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

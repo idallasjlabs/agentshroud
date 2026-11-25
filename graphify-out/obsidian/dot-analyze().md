@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "test_url_analyzer.py"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/test_url_analyzerpy
 ---
 
 # .analyze()
@@ -21,4 +21,4 @@ tags:
 - [[URLAnalyzer]] - `method` [EXTRACTED]
 - [[URLFinding]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

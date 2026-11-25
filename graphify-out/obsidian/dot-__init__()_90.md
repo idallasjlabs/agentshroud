@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_a2a_policy.py"
+source_file: "gateway/tests/test_rate_limit_guard.py"
 type: "code"
-community: "_LegacyStubApprovalQueue"
-location: "L388"
+community: "RateLimitGuard"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_LegacyStubApprovalQueue
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_LegacyStubApprovalQueue]] - `method` [EXTRACTED]
+- [[FakeClock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_LegacyStubApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L3462"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # ._multipart_boundary()
@@ -16,4 +16,4 @@ tags:
 - [[Extract the boundary token from a multipart Content-Type header.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/tests/test_differential_pii_detector.py"
 type: "code"
-community: "telegram_proxy.py"
-location: "L398"
+community: "TestPresidioPathContract"
+location: "L210"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TestPresidioPathContract
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[RBACConfig]] - `calls` [EXTRACTED]
-- [[RateLimiter_1]] - `calls` [EXTRACTED]
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
-- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
+- [[_FakeRecognizerResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TestPresidioPathContract

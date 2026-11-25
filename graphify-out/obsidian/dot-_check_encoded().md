@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_normalize()]] - `calls` [EXTRACTED]
 - [[dot-scan()_1]] - `calls` [EXTRACTED]
-- [[CanaryResult_2]] - `calls` [EXTRACTED]
+- [[CanaryResult_1]] - `calls` [EXTRACTED]
 - [[CanaryTripwire]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CanaryTripwire

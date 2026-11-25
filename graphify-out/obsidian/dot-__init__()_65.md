@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_audit.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "MCPAuditTrail"
-location: "L62"
+community: "test_all_modules_enforce.py"
+location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/test_all_modules_enforcepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPAuditTrail]] - `method` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[SubagentMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/approval_queue/group_router.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ApprovalRequest"
-location: "L49"
+community: "_FakeBus"
+location: "L605"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/_FakeBus
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_13]] - `references` [EXTRACTED]
-- [[GroupApprovalRouter]] - `method` [EXTRACTED]
+- [[_FakeBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/_FakeBus

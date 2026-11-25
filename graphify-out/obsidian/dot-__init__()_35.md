@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "._handle"
-location: "L55"
+community: "test_soc_router_coverage.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[FakeCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/security/report_store.py"
 type: "code"
-community: "make_event"
-location: "L130"
+community: "ReportStore"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ReportStore
 ---
 
 # .__init__()
 
 ## Connections
-- [[_Window]] - `method` [EXTRACTED]
+- [[ReportStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/ReportStore

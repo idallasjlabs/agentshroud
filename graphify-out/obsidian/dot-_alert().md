@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "make_event"
-location: "L214"
+community: "test_edge_pipeline.py"
+location: "L243"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_edge_pipelinepy
 ---
 
 # ._alert()
@@ -17,4 +17,4 @@ tags:
 - [[EdgePrincipal]] - `references` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

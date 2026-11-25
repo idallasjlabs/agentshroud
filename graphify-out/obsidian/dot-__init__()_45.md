@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/cli/client.py"
 type: "code"
-community: "GatewayBackedProvider"
-location: "L404"
+community: "SCLClient"
+location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/SCLClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_48]] - `calls` [EXTRACTED]
-- [[EdgeGuard]] - `method` [EXTRACTED]
+- [[SCLClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/SCLClient

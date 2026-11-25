@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestReplayBufferOffsetParsing"
+community: "test_telegram_proxy_outbound.py"
 location: "L4620"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # ._make_proxy_with_mock_buffer()
@@ -17,4 +17,4 @@ tags:
 - [[TestReplayBufferOffsetParsing]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

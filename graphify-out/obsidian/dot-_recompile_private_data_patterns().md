@@ -12,7 +12,7 @@ tags:
 # ._recompile_private_data_patterns()
 
 ## Connections
-- [[dot-__init__()_59]] - `calls` [EXTRACTED]
+- [[dot-__init__()_52]] - `calls` [EXTRACTED]
 - [[dot-_load_privacy_policy()]] - `calls` [EXTRACTED]
 - [[Compile private data patterns once for efficient repeated use.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]

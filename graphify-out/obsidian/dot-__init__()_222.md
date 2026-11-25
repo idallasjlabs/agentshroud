@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "A2AProxy"
-location: "L148"
+community: "HTTPConnectProxy"
+location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxy
+  - community/HTTPConnectProxy
 ---
 
 # .__init__()
 
 ## Connections
-- [[A2APolicyEngine]] - `references` [EXTRACTED]
-- [[A2AProxy]] - `method` [EXTRACTED]
-- [[Any_88]] - `references` [EXTRACTED]
+- [[_MockWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxy
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

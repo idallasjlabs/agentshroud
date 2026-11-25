@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "TokenValidator"
-location: "L52"
+community: "test_http_proxy_coverage.py"
+location: "L480"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/test_http_proxy_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[dot-__init__()_216]] - `calls` [EXTRACTED]
+- [[_SocketTransportWriter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy

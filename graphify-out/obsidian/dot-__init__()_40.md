@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L1510"
+community: "GatewayBackedProvider"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/GatewayBackedProvider
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[_FakeDecideQueue]] - `method` [EXTRACTED]
+- [[EdgeSettings]] - `references` [EXTRACTED]
+- [[GatewayBackedProvider]] - `method` [EXTRACTED]
+- [[GatewayClient]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

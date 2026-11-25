@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L23"
+community: "_FakeAsyncClient"
+location: "L598"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/_FakeAsyncClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeSmtp]] - `method` [EXTRACTED]
+- [[_FakeAsyncClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "ContainerSnapshot"
-location: "L69"
+community: "test_telegram_replay.py"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/test_telegram_replaypy
 ---
 
 # ._init_db()
 
 ## Connections
 - [[dot-__init__()_44]] - `calls` [EXTRACTED]
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

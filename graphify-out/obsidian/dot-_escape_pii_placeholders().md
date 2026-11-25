@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._filter_outbound"
+community: "TelegramAPIProxy"
 location: "L3220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_filter_outbound
+  - community/TelegramAPIProxy
 ---
 
 # ._escape_pii_placeholders()
 
 ## Connections
-- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[HTML-escape PII redaction placeholders so they render as literal text instead…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_filter_outbound
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

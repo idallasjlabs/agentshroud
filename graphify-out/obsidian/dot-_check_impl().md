@@ -17,7 +17,7 @@ tags:
 - [[dot-_matches_allowlist_domain()]] - `calls` [EXTRACTED]
 - [[dot-_matches_ip_list()]] - `calls` [EXTRACTED]
 - [[dot-_record()_2]] - `calls` [EXTRACTED]
-- [[dot-check()_5]] - `calls` [EXTRACTED]
+- [[dot-check()_6]] - `calls` [EXTRACTED]
 - [[dot-get_policy()_1]] - `calls` [EXTRACTED]
 - [[Check if an outbound connection is allowed. Args agent_id The agent making…]] - `rationale_for` [EXTRACTED]
 - [[EgressAttempt]] - `references` [EXTRACTED]

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/rate_limit_guard.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L82"
+community: "TrustManager"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/TrustManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[RateLimitConfig]] - `calls` [EXTRACTED]
-- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/TrustManager

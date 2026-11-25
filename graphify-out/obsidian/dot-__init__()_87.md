@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/security/config_integrity.py"
 type: "code"
-community: "BrowserSecurityGuard"
-location: "L96"
+community: "ConfigIntegrityMonitor"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BrowserSecurityGuard
+  - community/ConfigIntegrityMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
+- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Path_29]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

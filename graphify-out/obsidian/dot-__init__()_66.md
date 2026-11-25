@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/egress_monitor.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "web_proxy.py"
-location: "L86"
+community: "test_jira_dev_ticket.py"
+location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/test_jira_dev_ticketpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressMonitor]] - `method` [EXTRACTED]
-- [[EgressMonitorConfig]] - `references` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/env_guard.py"
+source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "EnvironmentGuard"
-location: "L36"
+community: "FakeClock"
+location: "L425"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvironmentGuard
+  - community/FakeClock
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvironmentGuard]] - `method` [EXTRACTED]
+- [[FakeClock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard
+#graphify/code #graphify/EXTRACTED #community/FakeClock

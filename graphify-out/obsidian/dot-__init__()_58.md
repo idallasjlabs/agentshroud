@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "LLMProxy"
-location: "L251"
+community: "RateLimiter"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/RateLimiter
 ---
 
 # .__init__()
 
 ## Connections
-- [[LLMProxy]] - `method` [EXTRACTED]
+- [[Args max_requests Maximum requests allowed in the time window window_seconds…]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

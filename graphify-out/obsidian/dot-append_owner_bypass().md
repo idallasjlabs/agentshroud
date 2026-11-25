@@ -12,8 +12,8 @@ tags:
 # .append_owner_bypass()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `references` [EXTRACTED]
 - [[Record an owner guard-bypass in the tamper-evident chain (SCRUM-95). The owner…]] - `rationale_for` [EXTRACTED]

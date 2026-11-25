@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "TrustManager"
-location: "L98"
+community: "RBACConfig"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/RBACConfig
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[TrustDecayPolicy]] - `method` [EXTRACTED]
+- [[Initialize user roles based on configuration.]] - `rationale_for` [EXTRACTED]
+- [[RBACConfig]] - `method` [EXTRACTED]
+- [[load_persisted_collaborators()]] - `calls` [EXTRACTED]
+- [[load_removed_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "lifespan.py"
-location: "L38"
+community: "KeyVault"
+location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()]] - `calls` [EXTRACTED]
-- [[Initialize sanitizer Args config PII configuration from agentshroud.yaml]] - `rationale_for` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[PIISanitizer]] - `method` [EXTRACTED]
-- [[load_all_secret_file_values()]] - `calls` [EXTRACTED]
+- [[KeyLeakDetector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/KeyVault

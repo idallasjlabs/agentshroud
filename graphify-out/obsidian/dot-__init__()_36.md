@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "KeyVaultConfig"
-location: "L66"
+community: "test_soc_router_coverage.py"
+location: "L1510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyVault]] - `method` [EXTRACTED]
-- [[KeyVaultConfig]] - `references` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[_FakeDecideQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

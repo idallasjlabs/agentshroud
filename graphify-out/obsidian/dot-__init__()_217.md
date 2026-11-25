@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "TrustLevel"
-location: "L97"
+community: "test_dashboard_endpoints.py"
+location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/test_dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_db()_2]] - `calls` [EXTRACTED]
-- [[ProgressiveTrustConfig]] - `references` [EXTRACTED]
-- [[TrustConfig]] - `calls` [EXTRACTED]
-- [[TrustLevel_1]] - `references` [EXTRACTED]
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[AlertStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustLevel
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

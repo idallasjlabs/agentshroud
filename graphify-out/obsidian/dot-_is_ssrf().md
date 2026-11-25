@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "test_url_analyzer.py"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/test_url_analyzerpy
 ---
 
 # ._is_ssrf()
@@ -17,4 +17,4 @@ tags:
 - [[Check if hostname is a privatereserved address (SSRF attempt).]] - `rationale_for` [EXTRACTED]
 - [[URLAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

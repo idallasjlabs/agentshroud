@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "A2APeerTestDouble"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2APeerTestDouble
 ---
 
 # ._handle()
@@ -16,4 +16,4 @@ tags:
 - [[Request_9]] - `references` [EXTRACTED]
 - [[Response_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble

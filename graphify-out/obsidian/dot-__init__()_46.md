@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "GatewayBackedProvider"
-location: "L132"
+community: "middleware.py"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/middlewarepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeSettings]] - `references` [EXTRACTED]
-- [[GatewayBackedProvider]] - `method` [EXTRACTED]
-- [[GatewayClient]] - `references` [EXTRACTED]
+- [[DNSFilter]] - `method` [EXTRACTED]
+- [[DNSFilterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

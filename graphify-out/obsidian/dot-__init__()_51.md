@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_sanitizer.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "test_sanitizer.py"
-location: "L144"
+community: "test_mcp_proxy.py"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_sanitizerpy
+  - community/test_mcp_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult]] - `method` [EXTRACTED]
+- [[MCPInspector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_sanitizerpy
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

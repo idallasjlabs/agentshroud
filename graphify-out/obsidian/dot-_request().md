@@ -16,7 +16,7 @@ tags:
 - [[dot-get()]] - `calls` [EXTRACTED]
 - [[dot-post()]] - `calls` [EXTRACTED]
 - [[dot-put()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "lifespan.py"
-location: "L42"
+community: "KeyVault"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[EventBus]] - `method` [EXTRACTED]
+- [[KeyInjector]] - `method` [EXTRACTED]
+- [[KeyVault]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/KeyVault

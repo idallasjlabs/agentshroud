@@ -12,7 +12,7 @@ tags:
 # ._notify_telegram()
 
 ## Connections
-- [[dot-submit()_1]] - `calls` [EXTRACTED]
+- [[dot-submit()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueItem]] - `references` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 - [[Send Telegram notification for approval requests. Sends a formatted message to…]] - `rationale_for` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # .add_protected_content()
@@ -18,4 +18,4 @@ tags:
 - [[ProtectedContent]] - `calls` [EXTRACTED]
 - [[run()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

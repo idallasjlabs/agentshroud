@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustManager"
+community: "TrustConfig"
 location: "L515"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustConfig
 ---
 
 # ._shared_tm()
@@ -21,4 +21,4 @@ tags:
 - [[TrustConfig]] - `calls` [EXTRACTED]
 - [[TrustManager]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

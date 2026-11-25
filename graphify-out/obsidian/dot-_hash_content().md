@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # ._hash_content()
@@ -16,4 +16,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[SHA-256 hash of content string Args content Text to hash Returns Hexadecimal…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

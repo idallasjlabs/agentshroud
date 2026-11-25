@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-process_tool_call()]] - `calls` [EXTRACTED]
 - [[Actually execute the tool call against the MCP server.]] - `rationale_for` [EXTRACTED]
-- [[Any_91]] - `references` [EXTRACTED]
+- [[Any_29]] - `references` [EXTRACTED]
 - [[MCPProxy]] - `method` [EXTRACTED]
 - [[MCPToolCall]] - `references` [EXTRACTED]
 - [[MCPToolResult]] - `calls` [EXTRACTED]

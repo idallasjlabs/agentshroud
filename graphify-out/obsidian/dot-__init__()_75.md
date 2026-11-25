@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_jira_dev_ticket.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "test_jira_dev_ticket.py"
-location: "L248"
+community: "_FakeStreamClient"
+location: "L1437"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_jira_dev_ticketpy
+  - community/_FakeStreamClient
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockTransport]] - `method` [EXTRACTED]
+- [[_FakeStreamClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamClient
