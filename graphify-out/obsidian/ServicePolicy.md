@@ -12,8 +12,8 @@ tags:
 # ServicePolicy
 
 ## Connections
-- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
-- [[dot-from_dict()_3]] - `method` [EXTRACTED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_2]] - `method` [EXTRACTED]
 - [[Privacy policy for a single service.]] - `rationale_for` [EXTRACTED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: ".test_comprehensive_attack_scenarios"
+community: "TestOutboundInfoFilter"
 location: "L469"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_comprehensive_attack_scenarios
+  - community/TestOutboundInfoFilter
 ---
 
 # Test against realistic attack scenarios.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_comprehensive_attack_scenarios()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_comprehensive_attack_scenarios
+#graphify/rationale #graphify/EXTRACTED #community/TestOutboundInfoFilter

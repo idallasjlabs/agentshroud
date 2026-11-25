@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "PathIsolationManager"
+community: "ContextGuard"
 location: "L24"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/ContextGuard
 ---
 
 # Test default configuration values.
 
 ## Connections
-- [[dot-test_default_config()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_default_config()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "run"
+community: "ContextGuard"
 location: "L17"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # Test cases for XMLLeakFilter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestXMLLeakFilter]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

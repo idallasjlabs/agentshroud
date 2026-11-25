@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "._extract_egress_targets"
+community: "MCPServerConfig"
 location: "L120"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/MCPServerConfig
 ---
 
 # Send a JSON-RPC request and read the response.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-send_request()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

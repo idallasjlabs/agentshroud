@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "StreamHead"
+community: "test_llm_proxy.py"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StreamHead
+  - community/test_llm_proxypy
 ---
 
 # StreamHead
@@ -26,4 +26,4 @@ tags:
 - [[test_streaming_with_head_reports_200_then_chunks()]] - `uses` [INFERRED]
 - [[test_streaming_with_head_reports_upstream_400_and_body()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/StreamHead
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

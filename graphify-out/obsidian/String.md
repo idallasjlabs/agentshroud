@@ -34,6 +34,7 @@ tags:
 - [[format_deploy_status()]] - `references` [EXTRACTED]
 - [[format_status()]] - `references` [EXTRACTED]
 - [[json_str()]] - `references` [EXTRACTED]
+- [[lvgl_kawaii_face.c]] - `imports` [EXTRACTED]
 - [[map_http_error()]] - `references` [EXTRACTED]
 - [[ota.c]] - `imports` [EXTRACTED]
 - [[render_output_lines()]] - `references` [EXTRACTED]

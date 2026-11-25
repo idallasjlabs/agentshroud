@@ -1,20 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: ".github/ISSUE_TEMPLATE/postmortem.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
-location: "L22"
+community: "postmortem.md"
+location: "L25"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+  - community/postmortemmd
 ---
 
 # Root Cause
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[Primary gVisor networking mode]] - `contains` [EXTRACTED]
-- [[Secondary Python IPv6 fallback (misleading error)]] - `contains` [EXTRACTED]
-- [[Secondary transparent HTTPS proxy]] - `contains` [EXTRACTED]
+- [[postmortem]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+#graphify/document #graphify/EXTRACTED #community/postmortemmd

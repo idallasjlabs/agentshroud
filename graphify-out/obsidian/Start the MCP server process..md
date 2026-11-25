@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "._extract_egress_targets"
+community: "MCPServerConfig"
 location: "L102"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/MCPServerConfig
 ---
 
 # Start the MCP server process.
 
 ## Connections
-- [[dot-start()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-start()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

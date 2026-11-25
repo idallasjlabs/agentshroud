@@ -12,6 +12,6 @@ tags:
 # Stop the Stack
 
 ## Connections
-- [[Usage_26]] - `contains` [EXTRACTED]
+- [[Usage_27]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Usage

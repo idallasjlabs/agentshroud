@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "_mock_forward"
+community: "_make_sanitizer"
 location: "L2325"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_mock_forward
+  - community/_make_sanitizer
 ---
 
 # Starting notice dedupe should tolerate emoji variation drift.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_proxy_request_suppresses_starting_notice_emoji_variants()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_mock_forward
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

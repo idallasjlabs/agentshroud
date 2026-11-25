@@ -12,7 +12,7 @@ tags:
 # SSHProxy
 
 ## Connections
-- [[dot-__init__()_92]] - `method` [EXTRACTED]
+- [[dot-__init__()_85]] - `method` [EXTRACTED]
 - [[dot-execute()]] - `method` [EXTRACTED]
 - [[dot-is_auto_approved()]] - `method` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
@@ -87,8 +87,8 @@ tags:
 - [[TestSSHValidateCwd]] - `uses` [INFERRED]
 - [[TestSSHWriteFileShellMetacharacterContentRoundTrip]] - `uses` [INFERRED]
 - [[TestValidateCommand]] - `uses` [INFERRED]
-- [[client()_13]] - `uses` [INFERRED]
 - [[client()_14]] - `uses` [INFERRED]
+- [[client()_15]] - `uses` [INFERRED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

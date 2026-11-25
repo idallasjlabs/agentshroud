@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L215"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # SSH exec requiring approval sanitizes PII in command before storing
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_ssh_approval_sanitizes_command_pii()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

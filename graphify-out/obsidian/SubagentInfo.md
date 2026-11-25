@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # SubagentInfo
@@ -16,4 +16,4 @@ tags:
 - [[dot-register_spawn()]] - `calls` [EXTRACTED]
 - [[subagent_monitor.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

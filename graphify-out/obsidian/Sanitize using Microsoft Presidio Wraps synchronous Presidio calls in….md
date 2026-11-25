@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # Sanitize using Microsoft Presidio Wraps synchronous Presidio calls in…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_sanitize_presidio()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RedactionResult
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/auth.py"
 type: "rationale"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # SCL authentication and authorization helpers. Supports three auth methods for…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[socauth.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

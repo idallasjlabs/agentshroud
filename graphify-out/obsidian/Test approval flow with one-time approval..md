@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalQueue"
+community: "asyncio"
 location: "L183"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalQueue
+  - community/asyncio
 ---
 
 # Test approval flow with one-time approval.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_approval_flow_once()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

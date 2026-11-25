@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
+community: "ToolChainAnalyzer"
 location: "L37"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/ToolChainAnalyzer
 ---
 
 # Test cases for ToolChainAnalyzer class.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestToolChainAnalyzer_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

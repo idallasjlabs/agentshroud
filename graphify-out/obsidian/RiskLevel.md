@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/security/tool_chain_analyzer.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "tool_chain_analyzer.py"
-location: "L88"
+community: "ApprovalMode"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/tool_chain_analyzerpy
+  - community/ApprovalMode
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_assess_risk()]] - `references` [EXTRACTED]
 - [[Enum_10]] - `inherits` [EXTRACTED]
-- [[Risk levels for tool call chains.]] - `rationale_for` [EXTRACTED]
-- [[TestToolChainAnalyzer_1]] - `uses` [INFERRED]
-- [[str_7]] - `inherits` [EXTRACTED]
-- [[test_tool_chain_analyzer.py]] - `imports` [EXTRACTED]
-- [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
+- [[Risk assessment levels for egress requests.]] - `rationale_for` [EXTRACTED]
+- [[TestEgressApprovalQueue]] - `uses` [INFERRED]
+- [[egress_approval.py]] - `contains` [EXTRACTED]
+- [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/tool_chain_analyzerpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalMode

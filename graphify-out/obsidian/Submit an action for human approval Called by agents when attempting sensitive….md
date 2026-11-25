@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "decide_approval"
+community: "fastapi.md"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/fastapimd
 ---
 
 # Submit an action for human approval Called by agents when attempting sensitive…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[submit_approval_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/decide_approval
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L21"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # Set up test fixtures.
 
 ## Connections
-- [[dot-setup_method()_12]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_14]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

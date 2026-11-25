@@ -12,7 +12,7 @@ tags:
 # ServiceManager
 
 ## Connections
-- [[dot-__init__()_162]] - `method` [EXTRACTED]
+- [[dot-__init__()_168]] - `method` [EXTRACTED]
 - [[dot-_describe_service()]] - `method` [EXTRACTED]
 - [[dot-_get_engine()]] - `method` [EXTRACTED]
 - [[dot-_logs_via_socket()]] - `method` [EXTRACTED]

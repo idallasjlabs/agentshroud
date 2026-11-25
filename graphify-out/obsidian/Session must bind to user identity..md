@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TestAuth"
+community: "Session"
 location: "L413"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/Session
 ---
 
 # Session must bind to user identity.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_session_binding()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuth
+#graphify/rationale #graphify/EXTRACTED #community/Session

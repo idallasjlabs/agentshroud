@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "rationale"
-community: "lifespan.py"
+community: "SecurityConfig"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/SecurityConfig
 ---
 
 # Security module configuration
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityModuleConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/SecurityConfig

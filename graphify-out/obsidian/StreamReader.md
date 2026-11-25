@@ -11,7 +11,7 @@ tags:
 # StreamReader
 
 ## Connections
-- [[_handle()_2]] - `references` [EXTRACTED]
+- [[_handle()]] - `references` [EXTRACTED]
 - [[_pump()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_handle

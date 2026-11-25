@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "middleware.py"
+community: "ContentThreat"
 location: "L367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/ContentThreat
 ---
 
 # Test cleanup of old threat records.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_threat_cleanup()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/ContentThreat

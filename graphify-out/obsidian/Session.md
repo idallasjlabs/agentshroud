@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "TestAuth"
+community: "Session"
 location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/Session
 ---
 
 # Session
@@ -27,4 +27,4 @@ tags:
 - [[t_session()]] - `calls` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/Session

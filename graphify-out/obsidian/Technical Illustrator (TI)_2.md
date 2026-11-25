@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Purpose_177]] - `contains` [EXTRACTED]
 - [[Related Skills_116]] - `contains` [EXTRACTED]
-- [[Usage_132]] - `contains` [EXTRACTED]
+- [[Usage_133]] - `contains` [EXTRACTED]
 - [[hermesskillsi-tiREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_i-ti

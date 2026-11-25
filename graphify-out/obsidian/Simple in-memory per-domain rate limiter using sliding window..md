@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L96"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # Simple in-memory per-domain rate limiter using sliding window.
 
 ## Connections
-- [[RateLimiter]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

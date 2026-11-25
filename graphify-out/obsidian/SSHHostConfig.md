@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # SSHHostConfig
@@ -22,8 +22,8 @@ tags:
 - [[TestApprovalQueuePIISanitization]] - `uses` [INFERRED]
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
 - [[TestSSHStrictHostKeyChecking]] - `uses` [INFERRED]
-- [[ssh_config()]] - `uses` [INFERRED]
 - [[ssh_config()_1]] - `uses` [INFERRED]
+- [[ssh_config()]] - `uses` [INFERRED]
 - [[ssh_config()_2]] - `uses` [INFERRED]
 - [[ssh_config.py_2]] - `contains` [EXTRACTED]
 - [[test_security_fixes.py]] - `imports` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[test_ssh_proxy.py]] - `imports` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

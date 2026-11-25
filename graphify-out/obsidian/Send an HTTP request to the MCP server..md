@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "._extract_egress_targets"
+community: "MCPServerConfig"
 location: "L166"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/MCPServerConfig
 ---
 
 # Send an HTTP request to the MCP server.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-send_request()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

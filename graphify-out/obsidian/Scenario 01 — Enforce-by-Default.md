@@ -1,12 +1,12 @@
 ---
 source_file: "docs/planning/v1.2/red-team-assessment-v1.2.0.md"
 type: "document"
-community: "§1 — Re-run of Prior Scenarios"
+community: "Docker Compose (infra diagram)"
 location: "L53"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1__Re-run_of_Prior_Scenarios
+  - community/Docker_Compose_infra_diagram
 ---
 
 # Scenario 01 — Enforce-by-Default
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[§1 — Re-run of Prior Scenarios]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1__Re-run_of_Prior_Scenarios
+#graphify/document #graphify/EXTRACTED #community/Docker_Compose_infra_diagram

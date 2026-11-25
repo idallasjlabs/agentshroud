@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "soc_correlation.py"
 location: "L4"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/soc_correlationpy
 ---
 
 # SOC correlation helpers. Builds a compact cross-signal security view by…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[soc_correlation.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/soc_correlationpy

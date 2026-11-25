@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACIntegration"
+community: "RBACConfig"
 location: "L339"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACIntegration
+  - community/RBACConfig
 ---
 
 # Test RBAC integration with middleware.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRBACIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACIntegration
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

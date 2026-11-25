@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "ScanResult"
+community: "WebContentScanner"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/WebContentScanner
 ---
 
 # Scan content for security issues. Args: content: The web content to scan.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan()_4]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ScanResult
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

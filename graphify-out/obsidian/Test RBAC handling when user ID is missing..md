@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACIntegration"
+community: "RBACConfig"
 location: "L406"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACIntegration
+  - community/RBACConfig
 ---
 
 # Test RBAC handling when user ID is missing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rbac_handles_missing_user_id()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACIntegration
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

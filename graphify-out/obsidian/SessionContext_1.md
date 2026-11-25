@@ -1,20 +1,26 @@
 ---
-source_file: "gateway/security/context_guard.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "ContextGuard"
-location: "L54"
+community: "MultiTurnTracker"
+location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/MultiTurnTracker
 ---
 
 # SessionContext
 
 ## Connections
-- [[dot-_detect_rapid_context_growth()]] - `references` [EXTRACTED]
-- [[dot-analyze_message()]] - `calls` [EXTRACTED]
-- [[Context tracking for a session.]] - `rationale_for` [EXTRACTED]
-- [[context_guard.py]] - `contains` [EXTRACTED]
+- [[dot-_add_disclosure_event()]] - `references` [EXTRACTED]
+- [[dot-_analyze_agent_response()]] - `references` [EXTRACTED]
+- [[dot-_analyze_user_message()]] - `references` [EXTRACTED]
+- [[dot-_check_thresholds()]] - `references` [EXTRACTED]
+- [[dot-_score_message_patterns()]] - `references` [EXTRACTED]
+- [[dot-_score_response_patterns()]] - `references` [EXTRACTED]
+- [[dot-_trigger_alert()]] - `references` [EXTRACTED]
+- [[dot-track_message()]] - `calls` [EXTRACTED]
+- [[Context tracking for a single session.]] - `rationale_for` [EXTRACTED]
+- [[multi_turn_tracker.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

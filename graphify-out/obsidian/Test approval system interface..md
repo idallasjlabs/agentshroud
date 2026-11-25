@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "rationale"
-community: "TestToolChainAnalyzer"
+community: "ToolChainAnalyzer"
 location: "L403"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/ToolChainAnalyzer
 ---
 
 # Test approval system interface.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_approval_system()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

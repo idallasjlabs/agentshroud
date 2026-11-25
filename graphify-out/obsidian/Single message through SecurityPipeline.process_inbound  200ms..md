@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L291"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # Single message through SecurityPipeline.process_inbound < 200ms.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_single_inbound_under_200ms()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

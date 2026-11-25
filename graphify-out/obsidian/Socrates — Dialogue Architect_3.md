@@ -1,12 +1,12 @@
 ---
 source_file: "docker/config/hermes/skills/i-socrates/SKILL.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
+community: "MultiHostResult"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/MultiHostResult
 ---
 
 # Socrates — Dialogue Architect
@@ -25,4 +25,4 @@ tags:
 - [[User Prompt Template_17]] - `contains` [EXTRACTED]
 - [[hermesskillsi-socratesSKILL]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/MultiHostResult

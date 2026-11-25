@@ -18,8 +18,8 @@ tags:
 - [[Blocked Syscalls (Notable)]] - `contains` [EXTRACTED]
 - [[Default Action]] - `contains` [EXTRACTED]
 - [[Gateway vs Bot Profile Differences]] - `contains` [EXTRACTED]
-- [[Purpose_64]] - `contains` [EXTRACTED]
-- [[Related Notes_26]] - `contains` [EXTRACTED]
+- [[Purpose_65]] - `contains` [EXTRACTED]
+- [[Related Notes_27]] - `contains` [EXTRACTED]
 - [[seccomp-profiles]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

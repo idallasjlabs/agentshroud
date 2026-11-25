@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/AGENT_ROLES.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L48"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Security-Sensitive Paths
@@ -16,4 +16,4 @@ tags:
 - [[Multi-Agent Role Matrix (AGENT_ROLES.md)]] - `references` [EXTRACTED]
 - [[Rule 1 — GSD Issue Before the Branch]] - `conceptually_related_to` [INFERRED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

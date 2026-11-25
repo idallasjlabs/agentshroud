@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "rationale"
-community: "middleware.py"
+community: "ContentThreat"
 location: "L104"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/ContentThreat
 ---
 
 # Scan memory file content for security threats.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-scan_content_for_threats()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/ContentThreat

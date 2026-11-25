@@ -13,13 +13,13 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_193]] - `method` [EXTRACTED]
+- [[dot-__init__()_197]] - `method` [EXTRACTED]
 - [[dot-_fingerprint()]] - `method` [EXTRACTED]
 - [[dot-cleanup_expired()_3]] - `method` [EXTRACTED]
 - [[dot-create_session()]] - `method` [EXTRACTED]
 - [[dot-destroy_session()]] - `method` [EXTRACTED]
 - [[dot-generate_instruction_nonce()]] - `method` [EXTRACTED]
-- [[dot-manager()_2]] - `calls` [INFERRED]
+- [[dot-manager()_1]] - `calls` [INFERRED]
 - [[dot-register_event_source()]] - `method` [EXTRACTED]
 - [[dot-rotate_session()]] - `method` [EXTRACTED]
 - [[dot-test_cleanup_expired()]] - `calls` [INFERRED]
@@ -35,7 +35,7 @@ tags:
 - [[TestRateLimiting_3]] - `uses` [INFERRED]
 - [[TestSessionCleanup]] - `uses` [INFERRED]
 - [[TestSessionValidation]] - `uses` [INFERRED]
-- [[manager()_4]] - `uses` [INFERRED]
+- [[manager()_3]] - `uses` [INFERRED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[session_security.py_2]] - `contains` [EXTRACTED]
 

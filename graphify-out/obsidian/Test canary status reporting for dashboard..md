@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L141"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # Test canary status reporting for dashboard.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_status_reporting()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

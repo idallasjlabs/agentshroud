@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # SubagentMonitorConfig
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_74]] - `references` [EXTRACTED]
+- [[dot-__init__()_65]] - `references` [EXTRACTED]
 - [[dot-test_subagent_monitor_default_enforce()]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
@@ -25,4 +25,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

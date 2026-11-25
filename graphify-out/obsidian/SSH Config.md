@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Applied By_1]] - `contains` [EXTRACTED]
 - [[Key Configuration]] - `contains` [EXTRACTED]
-- [[Purpose_82]] - `contains` [EXTRACTED]
-- [[Related Notes_54]] - `contains` [EXTRACTED]
+- [[Purpose_85]] - `contains` [EXTRACTED]
+- [[Related Notes_57]] - `contains` [EXTRACTED]
 - [[Relationship to agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[ssh-config]] - `contains` [EXTRACTED]
 
