@@ -26,7 +26,7 @@ import logging
 import secrets
 import time
 from dataclasses import dataclass
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import jwt
 from cryptography.hazmat.primitives import serialization
@@ -43,7 +43,21 @@ _REQUIRED = ["iss", "aud", "sub", "exp", "iat", "nbf", "jti", "client_id", "vend
 
 
 class TokenRejected(Exception):
-    """The presented token must not be honoured. ``str(exc)`` is safe to audit."""
+    """The presented token must not be honoured. ``str(exc)`` is safe to audit.
+
+    ``vendor``/``client_id``/``jti`` are set only once the signature has verified,
+    so a denial can be attributed without trusting forged claims.
+    """
+
+    def __init__(
+        self,
+        message: str,
+        vendor: Optional[str] = None,
+        client_id: Optional[str] = None,
+        jti: Optional[str] = None,
+    ):
+        super().__init__(message)
+        self.vendor, self.client_id, self.jti = vendor, client_id, jti
 
 
 @dataclass(frozen=True)
@@ -170,7 +184,7 @@ class TokenService:
             raise TokenRejected("unknown jti")
         killed = await self._store.killed_reason(vendor, client_id, jti)
         if killed:
-            raise TokenRejected(killed)
+            raise TokenRejected(killed, vendor=vendor, client_id=client_id, jti=jti)
         return EdgePrincipal(
             vendor=vendor,
             client_id=client_id,

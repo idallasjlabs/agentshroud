@@ -14,16 +14,19 @@ PKCE, owner consent with the one-time code, token exchange bound to the resource
 tools/list, a read call, and a write call that returns an approval ticket.
 """
 
+import logging
 from contextlib import asynccontextmanager
 from urllib.parse import parse_qs, urlparse
 
 import httpx
 import httpx2
+import pytest
 from fastapi import FastAPI
 from mcp.client.auth import OAuthClientProvider
 from mcp.client.session import ClientSession
 from mcp.client.streamable_http import streamable_http_client
 from mcp.shared.auth import AuthorizationCodeResult, OAuthClientMetadata
+from mcp.shared.exceptions import MCPError
 
 from gateway.approval_queue.enhanced_queue import EnhancedApprovalQueue
 from gateway.approval_queue.store import ApprovalStore
@@ -176,7 +179,7 @@ def _client(edge, **kw):
     return httpx2.AsyncClient(transport=httpx2.ASGITransport(app=edge), base_url=PUBLIC, **kw)
 
 
-async def test_full_oauth_and_tool_calls_with_sdk_client(tmp_path):
+async def test_full_oauth_and_tool_calls_with_sdk_client(tmp_path, caplog):
     async with stack(tmp_path) as (edge, service, facades, queue):
         enrollment = await service.store.open_enrollment("claude-duet", ttl_s=600)
         captured = {}
@@ -247,6 +250,17 @@ async def test_full_oauth_and_tool_calls_with_sdk_client(tmp_path):
                         },
                     )
                     assert not done.is_error and done.structured_content == {"reply": "ok"}
+
+                    # K1: a killed vendor gets a clean MCP error naming the kill, and the
+                    # edge logs no traceback for this expected denial.
+                    await service.store.kill("vendor", "claude-duet", "K1")
+                    caplog.clear()
+                    with caplog.at_level(logging.ERROR):
+                        with pytest.raises(MCPError, match="revoked: K1"):
+                            await session.list_tools()
+                        killed = await session.call_tool("lab_search", {"query": "weather"})
+                    assert killed.is_error and "revoked" in killed.content[0].text
+                    assert [r.getMessage() for r in caplog.records if r.exc_info] == []
         clients = await service.store.list_clients()
         assert [c["vendor"] for c in clients] == ["claude-duet"]
 
