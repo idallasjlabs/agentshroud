@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L1434"
+community: "mock_stream"
+location: "L1481"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/mock_stream
 ---
 
 # __init__()
 
 ## Connections
-- [[test_group_memory_read()]] - `contains` [EXTRACTED]
+- [[test_call_agent_uses_structured_timeout()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

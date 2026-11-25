@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "TestTelegram400Retry"
-location: "L4585"
+community: "TestNvdReportOnly"
+location: "L423"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTelegram400Retry
+  - community/TestNvdReportOnly
 ---
 
 # _fake_urlopen()
 
 ## Connections
-- [[dot-test_400_retry_no_loop()]] - `contains` [EXTRACTED]
+- [[dot-test_persistent_failure_exits_non_zero()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTelegram400Retry
+#graphify/code #graphify/EXTRACTED #community/TestNvdReportOnly

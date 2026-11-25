@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Fail any real urlopen fast unless a test installs its own fake. Blocked-message…]] - `rationale_for` [EXTRACTED]
 - [[_refuse()]] - `indirect_call` [INFERRED]
-- [[fixture_37]] - `references` [EXTRACTED]
+- [[fixture_45]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

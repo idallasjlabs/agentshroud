@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_service_routes.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L150"
+community: "MCPServerConfig"
+location: "L256"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/MCPServerConfig
 ---
 
 # __aenter__()
 
 ## Connections
-- [[test_telegram_send_posts_card()]] - `contains` [EXTRACTED]
+- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

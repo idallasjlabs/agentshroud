@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_coerce_to_ws_event"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_coerce_to_ws_event
 ---
 
 # _coerce_to_ws_event()
@@ -31,7 +31,7 @@ tags:
 - [[dot-test_wsevent_passthrough()]] - `calls` [EXTRACTED]
 - [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - `rationale_for` [EXTRACTED]
 - [[GatewayEvent]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[WSEvent]] - `calls` [EXTRACTED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[test_soc_edge.py]] - `imports` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event

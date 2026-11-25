@@ -14,7 +14,7 @@ members: 13
 - [[Real SSNs (not preceded by uppercase) must still be detected.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
 - [[Regression tests for the tightened US_SSN regex. CVE-2024-NNNN identifiers…]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
 - [[SSN at the very start of a string (no preceding character) is still flagged.]] - rationale - gateway/tests/test_us_ssn_regex_tightened.py
-- [[asyncio_17]] - code
+- [[asyncio_14]] - code
 - [[test_cve_dense_report_body_preserved()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
 - [[test_cve_pattern_not_flagged_as_ssn()]] - code - gateway/tests/test_us_ssn_regex_tightened.py
 - [[test_cve_with_five_digit_suffix_not_flagged()]] - code - gateway/tests/test_us_ssn_regex_tightened.py

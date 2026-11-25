@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "test_listen_offset_resumes_partial_upload"
 location: "L3355"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_listen_offset_resumes_partial_upload
 ---
 
 # _capture_transcribe()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_listen_offset_resumes_partial_upload()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_listen_offset_resumes_partial_upload

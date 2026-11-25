@@ -15,8 +15,8 @@ tags:
 - [[MCPProxy]] - `calls` [EXTRACTED]
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[_base_config()]] - `calls` [EXTRACTED]
-- [[_boom()_22]] - `contains` [EXTRACTED]
-- [[_boom()_21]] - `indirect_call` [INFERRED]
+- [[_boom()_25]] - `contains` [EXTRACTED]
+- [[_boom()_24]] - `indirect_call` [INFERRED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[test_mcp_proxy_real_queue_high_risk_never_executes_without_approval()]] - `contains` [EXTRACTED]
 

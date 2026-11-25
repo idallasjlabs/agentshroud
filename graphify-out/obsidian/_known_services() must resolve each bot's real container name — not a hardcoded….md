@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "rationale"
-community: "ServiceManager"
+community: "TestKnownServices"
 location: "L501"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/TestKnownServices
 ---
 
 # _known_services() must resolve each bot's real container name — not a hardcoded…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKnownServices]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ServiceManager
+#graphify/rationale #graphify/EXTRACTED #community/TestKnownServices

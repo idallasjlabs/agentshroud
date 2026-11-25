@@ -12,9 +12,9 @@ tags:
 # _PassInboundPipeline
 
 ## Connections
-- [[dot-__init__()_123]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_1]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_2]] - `method` [EXTRACTED]
+- [[dot-__init__()_115]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_2]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_3]] - `method` [EXTRACTED]
 - [[Pipeline stub inbound passes through; outbound behavior injectable.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 - [[test_webhook_outbound_block_withheld()]] - `calls` [EXTRACTED]

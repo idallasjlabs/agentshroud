@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "get_falco_summary"
+community: "generate_summary"
 location: "L654"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_falco_summary
+  - community/generate_summary
 ---
 
 # _is_falco_running()
@@ -16,4 +16,4 @@ tags:
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_falco_summary
+#graphify/code #graphify/EXTRACTED #community/generate_summary

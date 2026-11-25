@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "MCPPolicyEngine"
 location: "L432"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/MCPPolicyEngine
 ---
 
 # _real_queue()
@@ -21,4 +21,4 @@ tags:
 - [[_run()_9]] - `calls` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

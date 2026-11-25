@@ -1,196 +1,64 @@
 ---
 type: community
-members: 183
+members: 51
 ---
 
 # test_soc_realtime_coverage.py
 
-**Members:** 183 nodes
+**Members:** 51 nodes
 
 ## Members
-- [[dot-__init__()_177]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-_build_record()]] - code - gateway/soc/contributors.py
-- [[dot-_describe_service()]] - code - gateway/soc/services.py
-- [[dot-_ensure_rbac()]] - code - gateway/soc/contributors.py
-- [[dot-_ensure_teams()]] - code - gateway/soc/contributors.py
-- [[dot-_load_paused_ids()]] - code - gateway/soc/contributors.py
-- [[dot-blocked()]] - code - gateway/security/skill_guard.py
-- [[dot-get_contributor()]] - code - gateway/soc/contributors.py
-- [[dot-list_contributors()]] - code - gateway/soc/contributors.py
-- [[dot-severity()]] - code - gateway/security/skill_guard.py
-- [[dot-subscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_allowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_approved_status()]] - code - gateway/tests/test_soc_egress.py
-- [[dot-test_blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_confirmation_required()]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_construction()]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_construction()_1]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_construction()_2]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_conversion_error_path()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_conversion_error_path()_2]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_conversion_error_path()_3]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-setup_method()_30]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_bearer_header_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_conversion_error_path()_4]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_defaults()_2]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_destructive_requires_confirmation()]] - code - gateway/tests/test_soc_egress.py
-- [[dot-test_details_excludes_reserved_keys()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_dict_allowed_without_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_dict_blocked_with_reason()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_dict_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_edge_gateway_event_is_forwarded()]] - code - gateway/tests/test_soc_edge.py
-- [[dot-test_egress_denied()]] - code - gateway/tests/test_soc_websocket.py
-- [[dot-test_engine_health_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[dot-test_engine_status_mapping()]] - code - gateway/tests/test_soc_services_coverage.py
-- [[dot-test_error_model()]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_event_type_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_fan_out_filters_and_forwards()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_fan_out_honours_edge_subscription()]] - code - gateway/tests/test_soc_edge.py
-- [[dot-test_fan_out_survives_coerce_exception()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_empty_token_rejected()_1]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_expired_token_rejected()_1]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_explicit_env_wins()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_full_dict()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_invalid_dict_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_keepalive_sends_pings()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_legacy_inbound_blocked()]] - code - gateway/tests/test_soc_websocket.py
-- [[dot-test_message_fallback_for_summary()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_minimal_construction()]] - code - gateway/tests/test_soc_models.py
+- [[dot-test_handler_exception_is_swallowed()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_closes_4003()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_invalid_token_rejected()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_and_redeem()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_issue_ws_token_prunes_expired()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_legacy_env_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[dot-test_minimal_dict_uses_fallbacks()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_none_bus_returns_immediately()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_object_form()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_object_form_with_defaults()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_optional_fields_default_none()]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_pending_status_default()]] - code - gateway/tests/test_soc_egress.py
-- [[dot-test_permission_denied_error()]] - code - gateway/tests/test_soc_egress.py
-- [[dot-test_preserves_severity()]] - code - gateway/tests/test_soc_websocket.py
-- [[dot-test_red_risk_high_threat()]] - code - gateway/tests/test_soc_egress.py
-- [[dot-test_returns_none_on_bad_input()]] - code - gateway/tests/test_soc_websocket.py
-- [[dot-test_running_service()]] - code - gateway/tests/test_soc_services.py
-- [[dot-test_sanitized()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_security_event()]] - code - gateway/tests/test_soc_websocket.py
-- [[dot-test_send_event_serializes()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_send_event_swallows_transport_error()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_severity_enum_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_severity_ordering()_1]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_source_key_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_standby_service()]] - code - gateway/tests/test_soc_services.py
-- [[dot-test_stopped_service()]] - code - gateway/tests/test_soc_services.py
-- [[dot-test_string_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_type_mapping()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_unhealthy_service()]] - code - gateway/tests/test_soc_services.py
-- [[dot-test_unknown_severity_defaults_to_info()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-test_unmapped_gateway_event_still_dropped()]] - code - gateway/tests/test_soc_edge.py
-- [[dot-test_with_resource_usage()]] - code - gateway/tests/test_soc_models.py
-- [[dot-test_wsevent_passthrough()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[dot-unsubscribe()_1]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[Any_68]] - code
-- [[AuditLogEntry]] - code - gateway/soc/models.py
-- [[BaseModel_10]] - code
-- [[Best-effort conversion of arbitrary event dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Best-effort mapping of arbitrary severity strings to Severity enum.]] - rationale - gateway/soc/event_adapter.py
-- [[Collect recent SecurityEvents from AuditStore (async-safe read).]] - rationale - gateway/soc/event_adapter.py
-- [[ContributorRecord]] - code - gateway/soc/models.py
-- [[Convert AuditEvent (from AuditStore) to SecurityEvent. AuditEvent fields…]] - rationale - gateway/soc/event_adapter.py
-- [[Convert a PipelineResult to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an AnomalyAlert (from EgressMonitorSOCCorrelation) to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an EgressAttempt or egress dict to SecurityEvent.]] - rationale - gateway/soc/event_adapter.py
-- [[Convert an EventBus item to WSEvent, return None if conversion fails.]] - rationale - gateway/soc/websocket.py
-- [[Coverage tests for gatewaysocservices.py — ServiceManager, socket fallbacks,…]] - rationale - gateway/tests/test_soc_services_coverage.py
+- [[dot-test_missing_first_file_falls_to_second()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_multiple_tokens_independent()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_no_sources_returns_empty()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_raw_gateway_password_fallback()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_redeem_expired_ws_token_returns_none()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_single_use()]] - code - gateway/tests/test_soc_auth.py
+- [[dot-test_token_file_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_unauthorized_closes_4003()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[dot-test_valid_ws_token_accepts()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[Clear token store before each test.]] - rationale - gateway/tests/test_soc_auth.py
+- [[Consume a WS token and return the user_id, or None if invalidexpired.]] - rationale - gateway/soc/auth.py
 - [[Coverage tests for gatewaysocwebsocket.py, event_adapter.py and auth.py.…]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[EgressRequest_1]] - code - gateway/soc/models.py
-- [[EgressStatus]] - code - gateway/soc/models.py
-- [[Enum_39]] - code
-- [[HealthStatus]] - code - gateway/soc/models.py
-- [[Highest severity across all findings (``NONE`` when clean).]] - rationale - gateway/security/skill_guard.py
-- [[Platform]] - code - gateway/soc/models.py
-- [[Query Docker daemon directly via Unix socket — no CLI needed.]] - rationale - gateway/soc/services.py
+- [[FastAPI WebSocket route handler for wssoc.]] - rationale - gateway/soc/websocket.py
+- [[Issue a short-lived, single-use WebSocket token for a user.]] - rationale - gateway/soc/auth.py
+- [[Make runsecrets reads deterministic (raise OSError) on any host.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
+- [[Read the gateway auth token from envsecret. Resolution order (matches…]] - rationale - gateway/soc/auth.py
 - [[Remove all gateway-password env vars and clear token stores.]] - rationale - gateway/tests/test_soc_realtime_coverage.py
-- [[ResourceUsage_1]] - code - gateway/soc/models.py
-- [[Return 'running', 'stopped', or 'not_installed' for clamd (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return 'running', 'stopped', or 'not_installed' for fluent-bit (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return 'running', 'stopped', or 'not_installed' for openscap (CC-01).]] - rationale - gateway/soc/services.py
-- [[Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01).]] - rationale - gateway/soc/services.py
-- [[RiskLevel_6]] - code - gateway/soc/models.py
-- [[SCLConfirmationRequired]] - code - gateway/soc/models.py
-- [[SCLError]] - code - gateway/soc/models.py
-- [[SCLInterface]] - code - gateway/soc/models.py
-- [[SOC Contributor Manager — wraps RBACConfig + TeamsConfig → ContributorRecord.]] - rationale - gateway/soc/contributors.py
-- [[SOC Service Manager — wraps container runtime engine to produce…]] - rationale - gateway/soc/services.py
-- [[SOC event adapter — normalises heterogeneous event sources into SecurityEvent.…]] - rationale - gateway/soc/event_adapter.py
-- [[SOC unified WebSocket stream — wssoc. Replaces the 5 separate ws endpoints…]] - rationale - gateway/soc/websocket.py
-- [[SOC unified data models. SecurityEvent, EgressRequest, ServiceDescriptor,…]] - rationale - gateway/soc/models.py
-- [[STANDBY = binary installed but cannot run in this environment; should be…]] - rationale - gateway/tests/test_soc_services.py
-- [[SecurityEvent]] - code - gateway/soc/models.py
-- [[ServiceDescriptor]] - code - gateway/soc/models.py
-- [[ServiceStatus]] - code - gateway/soc/models.py
-- [[Severity_1]] - code - gateway/soc/models.py
-- [[TestCoerceToWSEvent]] - code - gateway/tests/test_soc_websocket.py
-- [[TestCoerceToWSEventExtra]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestConfirmationModel]] - code - gateway/tests/test_soc_egress.py
-- [[TestContributorRecord]] - code - gateway/tests/test_soc_models.py
-- [[TestEdgeEventOverWebSocket]] - code - gateway/tests/test_soc_edge.py
-- [[TestEgressRequest]] - code - gateway/tests/test_soc_models.py
-- [[TestEgressRequestModel]] - code - gateway/tests/test_soc_egress.py
-- [[TestEventFanOut]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestFromAnomalyAlert]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[TestFromDict]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestFromEgressAttempt]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestFromPipelineResult]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestListServices]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestMapSeverity]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestSCLError]] - code - gateway/tests/test_soc_models.py
-- [[TestSecurityEvent]] - code - gateway/tests/test_soc_models.py
-- [[TestSendEventAndKeepalive]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[TestServiceDescriptor]] - code - gateway/tests/test_soc_models.py
-- [[TestServiceDescriptorDefaults]] - code - gateway/tests/test_soc_services.py
-- [[TestStatusMappings]] - code - gateway/tests/test_soc_services_coverage.py
-- [[TestWSEvent]] - code - gateway/tests/test_soc_models.py
-- [[Tests for SOC egress endpoints — model-level and confirmation model validation.]] - rationale - gateway/tests/test_soc_egress.py
-- [[Tests for gatewaysocmodels.py — SCL data models.]] - rationale - gateway/tests/test_soc_models.py
-- [[Tests for gatewaysocservices.py — ServiceManager unit tests.]] - rationale - gateway/tests/test_soc_services.py
-- [[Tests for gatewaysocwebsocket.py — SOCWebSocketHandler unit tests.]] - rationale - gateway/tests/test_soc_websocket.py
-- [[UserRole]] - code - gateway/soc/models.py
-- [[Validate ServiceDescriptor model defaults — no real container calls.]] - rationale - gateway/tests/test_soc_services.py
-- [[WSEvent]] - code - gateway/soc/models.py
-- [[WSEventType]] - code - gateway/soc/models.py
-- [[_FakeBus]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[_check_clamd()]] - code - gateway/soc/services.py
-- [[_check_fluent_bit()]] - code - gateway/soc/services.py
-- [[_check_openscap()]] - code - gateway/soc/services.py
-- [[_check_wazuh_agent()]] - code - gateway/soc/services.py
-- [[_coerce_to_ws_event()]] - code - gateway/soc/websocket.py
-- [[_engine_health_to_health()]] - code - gateway/soc/services.py
-- [[_engine_status_to_service_status()]] - code - gateway/soc/services.py
-- [[_inspect_via_socket()]] - code - gateway/soc/services.py
-- [[_map_severity()]] - code - gateway/soc/event_adapter.py
-- [[_new_uuid()]] - code - gateway/soc/models.py
-- [[_now_iso()]] - code - gateway/soc/models.py
-- [[_role_enum()]] - code - gateway/soc/contributors.py
-- [[_send()_1]] - code - gateway/tests/test_soc_edge.py
-- [[_spin()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[blocked()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestGetConfigToken]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestTokenStorePruning]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSSOCEndpoint]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[TestWSTokens]] - code - gateway/tests/test_soc_auth.py
+- [[Tests for gatewaysocauth.py — SCL authentication and WS token issuance.]] - rationale - gateway/tests/test_soc_auth.py
+- [[_block_run_secrets()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[_get_config_token()]] - code - gateway/soc/auth.py
+- [[_make_ws()]] - code - gateway/tests/test_soc_realtime_coverage.py
 - [[clean_auth_env()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[collect_recent_events()]] - code - gateway/soc/event_adapter.py
-- [[connect()_2]] - code - gateway/soc/services.py
-- [[contributors.py]] - code - gateway/soc/contributors.py
-- [[domain()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[event_adapter.py]] - code - gateway/soc/event_adapter.py
-- [[fixture_119]] - code
-- [[fragile()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[from_anomaly_alert()]] - code - gateway/soc/event_adapter.py
-- [[from_audit_chain_entry()]] - code - gateway/soc/event_adapter.py
-- [[from_dict()]] - code - gateway/soc/event_adapter.py
-- [[from_egress_attempt()]] - code - gateway/soc/event_adapter.py
-- [[from_pipeline_result()]] - code - gateway/soc/event_adapter.py
-- [[parametrize_21]] - code
-- [[parametrize_22]] - code
-- [[services.py]] - code - gateway/soc/services.py
-- [[socmodels.py]] - code - gateway/soc/models.py
-- [[str_22]] - code
-- [[test_soc_egress.py]] - code - gateway/tests/test_soc_egress.py
-- [[test_soc_models.py]] - code - gateway/tests/test_soc_models.py
+- [[fixture_114]] - code
+- [[guarded_open()]] - code - gateway/tests/test_soc_realtime_coverage.py
+- [[issue_ws_token()]] - code - gateway/soc/auth.py
+- [[redeem_ws_token()]] - code - gateway/soc/auth.py
+- [[soc_websocket()]] - code - gateway/soc/router.py
+- [[test_soc_auth.py]] - code - gateway/tests/test_soc_auth.py
 - [[test_soc_realtime_coverage.py]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[test_soc_services.py]] - code - gateway/tests/test_soc_services.py
-- [[test_soc_services_coverage.py]] - code - gateway/tests/test_soc_services_coverage.py
-- [[test_soc_websocket.py]] - code - gateway/tests/test_soc_websocket.py
-- [[title()]] - code - gateway/tests/test_soc_realtime_coverage.py
-- [[websocket.py]] - code - gateway/soc/websocket.py
+- [[websocket_6]] - code
+- [[ws_soc_endpoint()]] - code - gateway/soc/websocket.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -200,31 +68,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_ServiceManager]]
-- 34 edges to [[_COMMUNITY_socrouter.py]]
-- 20 edges to [[_COMMUNITY_ws_soc_endpoint]]
-- 16 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 15 edges to [[_COMMUNITY_SOCWebSocketHandler]]
-- 11 edges to [[_COMMUNITY_ContributorManager]]
-- 7 edges to [[_COMMUNITY__audit_entry]]
-- 6 edges to [[_COMMUNITY_AsyncMock]]
-- 5 edges to [[_COMMUNITY_make_event]]
-- 4 edges to [[_COMMUNITY__patch_open]]
-- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_ScanResult_1]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 2 edges to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_SkillGuard]]
-- 1 edge to [[_COMMUNITY_dot-_handle]]
-- 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_dot-verify_export_integrity]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_GatewayConfig]]
+- 19 edges to [[_COMMUNITY_RBACConfig]]
+- 9 edges to [[_COMMUNITY__coerce_to_ws_event]]
+- 7 edges to [[_COMMUNITY_socrouter.py]]
+- 6 edges to [[_COMMUNITY_issue_session_token]]
+- 5 edges to [[_COMMUNITY_SOCWebSocketHandler]]
+- 4 edges to [[_COMMUNITY_Severity]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY__FakeBus]]
+- 2 edges to [[_COMMUNITY__audit_entry]]
+- 2 edges to [[_COMMUNITY__verify_bearer]]
+- 2 edges to [[_COMMUNITY_socmodels.py]]
+- 1 edge to [[_COMMUNITY_TestFromPipelineResult]]
+- 1 edge to [[_COMMUNITY_TestFromAnomalyAlert]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
-- [[test_soc_realtime_coverage.py]] - degree 54, connects to 5 communities
-- [[websocket.py]] - degree 18, connects to 5 communities
-- [[_coerce_to_ws_event()]] - degree 26, connects to 3 communities
-- [[contributors.py]] - degree 10, connects to 3 communities
-- [[TestEdgeEventOverWebSocket]] - degree 7, connects to 3 communities
+- [[test_soc_realtime_coverage.py]] - degree 54, connects to 14 communities
+- [[ws_soc_endpoint()]] - degree 16, connects to 4 communities
+- [[issue_ws_token()]] - degree 15, connects to 2 communities
+- [[redeem_ws_token()]] - degree 14, connects to 2 communities
+- [[_get_config_token()]] - degree 12, connects to 2 communities

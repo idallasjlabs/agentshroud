@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestAgentsRegistry"
+community: "test_soc_edge.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/test_soc_edgepy
 ---
 
 # _bot()
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_local_health_from_service_manager()]] - `calls` [EXTRACTED]
 - [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

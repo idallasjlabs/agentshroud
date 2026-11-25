@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_sync_cve_registry_ghsa.py"
 type: "code"
-community: "._run_proxy"
-location: "L503"
+community: ".test_fetch_paginates_via_link_cursor"
+location: "L533"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_run_proxy
+  - graphify/EXTRACTED
+  - community/test_fetch_paginates_via_link_cursor
 ---
 
 # _fake_urlopen()
 
 ## Connections
-- [[dot-test_short_text_passes_through_unchanged()]] - `indirect_call` [INFERRED]
-- [[dot-test_truncates_over_length_text()]] - `indirect_call` [INFERRED]
-- [[_FakeResp]] - `calls` [INFERRED]
+- [[dot-test_fetch_paginates_via_link_cursor()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_run_proxy
+#graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor

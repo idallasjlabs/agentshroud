@@ -12,7 +12,7 @@ tags:
 # _LegacyStubApprovalQueue
 
 ## Connections
-- [[dot-__init__()_90]] - `method` [EXTRACTED]
+- [[dot-__init__()_83]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()_1]] - `method` [EXTRACTED]
 - [[dot-wait_for_decision()_1]] - `method` [EXTRACTED]
 - [[A duck-typed queue predating the ``force_tier`` kwarg — enforce() must fall…]] - `rationale_for` [EXTRACTED]

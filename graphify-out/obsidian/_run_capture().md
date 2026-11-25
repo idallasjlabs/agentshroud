@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "test_clamav_pipeline.py"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/test_clamav_pipelinepy
 ---
 
 # _run_capture()
@@ -18,4 +18,4 @@ tags:
 - [[test_run_clamscan_clamdscan_command_has_no_clamscan_only_flags()]] - `calls` [EXTRACTED]
 - [[test_run_clamscan_clamscan_command_unchanged()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

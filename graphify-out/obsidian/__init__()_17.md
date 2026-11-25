@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "ServiceManager"
-location: "L68"
+community: "EgressAction"
+location: "L351"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/EgressAction
 ---
 
 # __init__()
 
 ## Connections
-- [[_patch_http_connection()]] - `contains` [EXTRACTED]
+- [[dot-test_emits_egress_event_to_event_bus()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/EgressAction

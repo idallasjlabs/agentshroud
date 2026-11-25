@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-summary()]] - `indirect_call` [INFERRED]
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Build normalized scanner summary for SOCdashboard telemetry.]] - `rationale_for` [EXTRACTED]
 - [[Return normalized scanner state + latest results for SOCdashboard views.]] - `rationale_for` [EXTRACTED]
 - [[_record_scanner_result()]] - `calls` [EXTRACTED]

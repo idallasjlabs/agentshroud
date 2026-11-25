@@ -12,7 +12,7 @@ tags:
 # _FakeRecognizerResult
 
 ## Connections
-- [[dot-__init__()_51]] - `method` [EXTRACTED]
+- [[dot-__init__()_43]] - `method` [EXTRACTED]
 - [[dot-analyze()_1]] - `calls` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 

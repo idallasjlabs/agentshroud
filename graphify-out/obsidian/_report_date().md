@@ -12,7 +12,7 @@ tags:
 # _report_date()
 
 ## Connections
-- [[datetime_2]] - `references` [EXTRACTED]
+- [[datetime_1]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
 - [[export_bot()]] - `calls` [EXTRACTED]
 

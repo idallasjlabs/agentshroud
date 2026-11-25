@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_outbound.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: ".test_activity_command_renders_entries"
-location: "L4813"
+community: "ProxyResult"
+location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_activity_command_renders_entries
+  - community/ProxyResult
 ---
 
 # _capture()
 
 ## Connections
-- [[dot-test_activity_command_renders_entries()]] - `contains` [EXTRACTED]
+- [[dot-test_body_agent_id_used_when_header_missing()]] - `contains` [EXTRACTED]
+- [[ProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_activity_command_renders_entries
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

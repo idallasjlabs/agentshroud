@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L524"
+community: "SharedMemoryManager"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/SharedMemoryManager
 ---
 
 # _boom()
 
 ## Connections
-- [[_run()_9]] - `contains` [EXTRACTED]
+- [[dot-test_user_write_io_failure_returns_false()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-__init__()_5]] - `method` [EXTRACTED]
-- [[dot-check_permission()_1]] - `method` [EXTRACTED]
-- [[dot-check_tool_permission()_1]] - `method` [EXTRACTED]
-- [[dot-get_user_role()_1]] - `method` [EXTRACTED]
+- [[dot-check_permission()]] - `method` [EXTRACTED]
+- [[dot-check_tool_permission()]] - `method` [EXTRACTED]
+- [[dot-get_user_role()]] - `method` [EXTRACTED]
 - [[dot-test_owner_bypass()_2]] - `calls` [EXTRACTED]
 - [[dot-test_owner_bypass()_3]] - `calls` [EXTRACTED]
 - [[dot-test_owner_bypasses_sandbox()]] - `calls` [EXTRACTED]

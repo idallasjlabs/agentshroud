@@ -12,7 +12,7 @@ tags:
 # _no_enable_env()
 
 ## Connections
-- [[fixture_117]] - `references` [EXTRACTED]
+- [[fixture_115]] - `references` [EXTRACTED]
 - [[test_edge_profiles.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_write

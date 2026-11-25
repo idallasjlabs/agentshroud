@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "A2AProxy"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2AProxy
 ---
 
 # a2a_proxy.py
@@ -26,4 +26,4 @@ tags:
 - [[test_a2a_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_a2a_trust_scoring.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/A2AProxy

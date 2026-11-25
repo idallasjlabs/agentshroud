@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_daily_cve_report.py"
+source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_sleep"
-location: "L1598"
+community: "test_tts_kokoro_pipeline_load_failure_raises"
+location: "L188"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/_sleep
+  - graphify/EXTRACTED
+  - community/test_tts_kokoro_pipeline_load_failure_raises
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `indirect_call` [INFERRED]
+- [[test_tts_kokoro_pipeline_load_failure_raises()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/_sleep
+#graphify/code #graphify/EXTRACTED #community/test_tts_kokoro_pipeline_load_failure_raises

@@ -12,9 +12,9 @@ tags:
 # _PassthroughPipeline
 
 ## Connections
-- [[dot-__init__()_43]] - `method` [EXTRACTED]
-- [[dot-process_inbound()]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_39]] - `method` [EXTRACTED]
+- [[dot-process_inbound()_1]] - `method` [EXTRACTED]
+- [[dot-process_outbound()_2]] - `method` [EXTRACTED]
 - [[Mock pipeline whose process_outbound returns the window text unchanged —…]] - `rationale_for` [EXTRACTED]
 - [[_make_stream_app_state()]] - `calls` [EXTRACTED]
 - [[test_filtered_stream_releases_sentences_in_order()]] - `calls` [EXTRACTED]

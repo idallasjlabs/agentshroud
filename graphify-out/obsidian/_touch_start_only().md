@@ -12,6 +12,7 @@ tags:
 # _touch_start_only()
 
 ## Connections
+- [[face_animation_pause()]] - `calls` [INFERRED]
 - [[lv_event_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[vt_remote_log()]] - `calls` [INFERRED]

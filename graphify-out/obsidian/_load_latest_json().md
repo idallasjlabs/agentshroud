@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "get_trivy_summary"
+community: "Any"
 location: "L448"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/Any
 ---
 
 # _load_latest_json()
@@ -19,13 +19,13 @@ tags:
 - [[dot-test_returns_none_on_invalid_json()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_none_when_all_files_empty()]] - `calls` [EXTRACTED]
 - [[dot-test_skips_empty_files_returns_next_valid()]] - `calls` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Load the most recent JSON report file from a directory. Args directory…]] - `rationale_for` [EXTRACTED]
-- [[Path_35]] - `references` [EXTRACTED]
+- [[Path_34]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_openscap_summary()]] - `calls` [EXTRACTED]
 - [[get_trivy_summary()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/Any

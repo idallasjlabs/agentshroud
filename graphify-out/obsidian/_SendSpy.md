@@ -12,8 +12,8 @@ tags:
 # _SendSpy
 
 ## Connections
-- [[dot-__call__()_9]] - `method` [EXTRACTED]
-- [[dot-__init__()_161]] - `method` [EXTRACTED]
+- [[dot-__call__()_11]] - `method` [EXTRACTED]
+- [[dot-__init__()_167]] - `method` [EXTRACTED]
 - [[test_alert_telegram_relay.py]] - `contains` [EXTRACTED]
 - [[test_async_sanitizer_supported()]] - `calls` [EXTRACTED]
 - [[test_critical_alert_relayed_to_owner()]] - `calls` [EXTRACTED]

@@ -12,7 +12,7 @@ tags:
 # _StubForwarder
 
 ## Connections
-- [[dot-__init__()_124]] - `method` [EXTRACTED]
+- [[dot-__init__()_116]] - `method` [EXTRACTED]
 - [[dot-forward()]] - `method` [EXTRACTED]
 - [[Forwarder stub returning a canned bot response body.]] - `rationale_for` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_voice_gateway.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L1481"
+community: "test_dns_canvas_coverage.py"
+location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_dns_canvas_coveragepy
 ---
 
 # __init__()
 
 ## Connections
-- [[test_call_agent_uses_structured_timeout()]] - `contains` [EXTRACTED]
+- [[make_fake_socket_module()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

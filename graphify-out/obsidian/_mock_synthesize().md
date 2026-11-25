@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "mock_stream"
 location: "L1419"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # _mock_synthesize()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_one_sentence_reply_unchanged()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

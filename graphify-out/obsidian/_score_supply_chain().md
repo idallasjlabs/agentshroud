@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "get_sbom"
+community: "get_trivy_summary"
 location: "L999"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_sbom
+  - community/get_trivy_summary
 ---
 
 # _score_supply_chain()
@@ -22,4 +22,4 @@ tags:
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_sbom
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

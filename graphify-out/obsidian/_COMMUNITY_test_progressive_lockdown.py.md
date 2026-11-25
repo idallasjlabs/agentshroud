@@ -8,7 +8,7 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[dot-__init__()_229]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-__init__()_230]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-is_owner()_6]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-process_inbound()_9]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-test_attach_lockdown_replaces_instance()]] - code - gateway/tests/test_progressive_lockdown.py
@@ -23,7 +23,7 @@ members: 18
 - [[TestTelegramProxyInjection]] - code - gateway/tests/test_progressive_lockdown.py
 - [[Tests for progressive lockdown UX fixes. Covers 1. ProgressiveLockdown unit…]] - rationale - gateway/tests/test_progressive_lockdown.py
 - [[__init__()_22]] - code - gateway/tests/test_progressive_lockdown.py
-- [[asyncio_88]] - code
+- [[asyncio_89]] - code
 - [[run()_6]] - code - gateway/tests/test_progressive_lockdown.py
 - [[test_progressive_lockdown.py]] - code - gateway/tests/test_progressive_lockdown.py
 
@@ -35,19 +35,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 10 edges to [[_COMMUNITY_ProgressiveLockdown]]
 - 8 edges to [[_COMMUNITY__make_proxy_1]]
 - 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 3 edges to [[_COMMUNITY_FalcoAlertWatcher]]
 - 2 edges to [[_COMMUNITY_FakeClock]]
 - 2 edges to [[_COMMUNITY_LockdownLevel]]
 - 1 edge to [[_COMMUNITY_TestCollabLockdownNotifications]]
-- 1 edge to [[_COMMUNITY_TestConcurrency]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 - 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[test_progressive_lockdown.py]] - degree 27, connects to 10 communities
+- [[test_progressive_lockdown.py]] - degree 27, connects to 9 communities
 - [[TestLifespanWiring]] - degree 6, connects to 3 communities
 - [[TestTelegramProxyInjection]] - degree 6, connects to 2 communities
 - [[dot-test_falco_critical_escalates_instance_shared_with_telegram()]] - degree 5, connects to 2 communities

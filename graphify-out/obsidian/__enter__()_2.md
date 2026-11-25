@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: ".test_default_transport_is_smtp_ssl"
-location: "L124"
+community: "TestUpstreamAlertDedup"
+location: "L661"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_default_transport_is_smtp_ssl
+  - community/TestUpstreamAlertDedup
 ---
 
 # __enter__()
 
 ## Connections
-- [[dot-test_default_transport_is_smtp_ssl()]] - `contains` [EXTRACTED]
+- [[dot-test_patched_versions_carried_into_result()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_default_transport_is_smtp_ssl
+#graphify/code #graphify/EXTRACTED #community/TestUpstreamAlertDedup

@@ -1,26 +1,26 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "mock_stream"
 location: "L1114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # _sse_body()
 
 ## Connections
-- [[__aenter__()_6]] - `calls` [EXTRACTED]
-- [[mock_stream()_13]] - `calls` [EXTRACTED]
-- [[mock_stream()_22]] - `calls` [EXTRACTED]
-- [[mock_stream()_23]] - `calls` [EXTRACTED]
-- [[mock_stream()_24]] - `calls` [EXTRACTED]
+- [[__aenter__()_4]] - `calls` [EXTRACTED]
+- [[mock_stream()_12]] - `calls` [EXTRACTED]
+- [[mock_stream()_16]] - `calls` [EXTRACTED]
+- [[mock_stream()_17]] - `calls` [EXTRACTED]
+- [[mock_stream()_18]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_empty_stream_yields_nothing()]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_malformed_json_line_skipped_not_fatal()]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_skips_blank_and_comment_lines()]] - `calls` [EXTRACTED]
 - [[test_call_agent_stream_yields_sentences_in_order()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

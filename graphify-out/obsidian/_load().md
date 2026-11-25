@@ -12,7 +12,7 @@ tags:
 # _load()
 
 ## Connections
-- [[Any_8]] - `references` [EXTRACTED]
+- [[Any_6]] - `references` [EXTRACTED]
 - [[Path_3]] - `references` [EXTRACTED]
 - [[_compose()]] - `calls` [EXTRACTED]
 - [[test_edge_network_isolation.py]] - `contains` [EXTRACTED]

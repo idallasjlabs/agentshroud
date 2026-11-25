@@ -12,7 +12,7 @@ tags:
 # _base_config()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[Two allowlisted peers, one denylisted peer, default-deny for everyone else.]] - `rationale_for` [EXTRACTED]
 - [[engine()_1]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
+community: "test_daily_cve_report.py"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_report
+  - community/test_daily_cve_reportpy
 ---
 
 # _make_report()
@@ -34,4 +34,4 @@ tags:
 - [[_fake_trivy_scan()_5]] - `calls` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_report
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

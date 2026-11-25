@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-__aiter__()_1]] - `method` [EXTRACTED]
 - [[dot-__anext__()_1]] - `method` [EXTRACTED]
-- [[dot-__init__()_156]] - `method` [EXTRACTED]
-- [[dot-close()_12]] - `method` [EXTRACTED]
+- [[dot-__init__()_160]] - `method` [EXTRACTED]
+- [[dot-close()_13]] - `method` [EXTRACTED]
 - [[dot-send()_2]] - `method` [EXTRACTED]
 - [[dot-test_relay_with_trusted_origin()]] - `calls` [EXTRACTED]
 - [[dot-test_sec_websocket_protocol_token_authenticates()]] - `calls` [EXTRACTED]

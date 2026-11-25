@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L296"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # _analyze_and_anonymize()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_sanitize_presidio()]] - `indirect_call` [INFERRED]
 - [[RedactionDetail]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Path"
 location: "L458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Path
 ---
 
 # _run_scan_cli()
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_cli_fails_closed_on_unreadable_file()]] - `calls` [EXTRACTED]
 - [[dot-test_cli_missing_source_nonzero()]] - `calls` [EXTRACTED]
 - [[CompletedProcess_4]] - `references` [EXTRACTED]
-- [[Path_34]] - `references` [EXTRACTED]
+- [[Path_33]] - `references` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Path

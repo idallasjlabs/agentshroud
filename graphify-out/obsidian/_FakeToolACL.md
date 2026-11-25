@@ -12,7 +12,7 @@ tags:
 # _FakeToolACL
 
 ## Connections
-- [[dot-__init__()_157]] - `method` [EXTRACTED]
+- [[dot-__init__()_162]] - `method` [EXTRACTED]
 - [[dot-can_use_tool()_1]] - `method` [EXTRACTED]
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]

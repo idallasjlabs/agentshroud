@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "app"
 location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/app
 ---
 
 # _TrustCaptor
 
 ## Connections
-- [[dot-__init__()_129]] - `method` [EXTRACTED]
-- [[dot-process_inbound()_4]] - `method` [EXTRACTED]
-- [[dot-process_outbound()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_4]] - `method` [EXTRACTED]
+- [[dot-process_inbound()]] - `method` [EXTRACTED]
+- [[dot-process_outbound()]] - `method` [EXTRACTED]
 - [[dot-test_empty_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]
 - [[dot-test_no_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]
 - [[dot-test_non_owner_user_id_does_not_elevate_trust()]] - `calls` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[_make_trust_app_state()]] - `references` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/app

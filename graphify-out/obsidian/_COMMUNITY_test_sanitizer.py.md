@@ -8,8 +8,8 @@ members: 47
 **Members:** 47 nodes
 
 ## Members
-- [[dot-__init__()_50]] - code - gateway/tests/test_sanitizer.py
-- [[dot-__init__()_51]] - code - gateway/tests/test_sanitizer.py
+- [[dot-__init__()_42]] - code - gateway/tests/test_sanitizer.py
+- [[dot-__init__()_43]] - code - gateway/tests/test_sanitizer.py
 - [[dot-analyze()_1]] - code - gateway/tests/test_sanitizer.py
 - [[dot-anonymize()]] - code - gateway/tests/test_sanitizer.py
 - [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - rationale - gateway/tests/test_sanitizer.py
@@ -29,8 +29,8 @@ members: 47
 - [[_FakeRecognizerResult]] - code - gateway/tests/test_sanitizer.py
 - [[_presidio_sanitizer()]] - code - gateway/tests/test_sanitizer.py
 - [[_regex_sanitizer()]] - code - gateway/tests/test_sanitizer.py
-- [[asyncio_27]] - code
-- [[parametrize_7]] - code
+- [[asyncio_29]] - code
+- [[parametrize_6]] - code
 - [[test_block_action_blocks_and_withholds_pii()]] - code - gateway/tests/test_sanitizer.py
 - [[test_block_action_clean_content_passes_unchanged()]] - code - gateway/tests/test_sanitizer.py
 - [[test_credit_card_detection()]] - code - gateway/tests/test_sanitizer.py
@@ -64,10 +64,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_PIISanitizer]]
+- 4 edges to [[_COMMUNITY_PIIConfig]]
 
 ## Top bridge nodes
-- [[test_sanitizer.py]] - degree 31, connects to 1 community
-- [[_regex_sanitizer()]] - degree 11, connects to 1 community
-- [[_presidio_sanitizer()]] - degree 8, connects to 1 community
-- [[test_disabled_config_not_blocked()]] - degree 4, connects to 1 community
+- [[test_sanitizer.py]] - degree 31, connects to 2 communities
+- [[_regex_sanitizer()]] - degree 11, connects to 2 communities
+- [[_presidio_sanitizer()]] - degree 8, connects to 2 communities
+- [[test_disabled_config_not_blocked()]] - degree 4, connects to 2 communities

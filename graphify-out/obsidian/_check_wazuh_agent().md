@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "ServiceManager"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ServiceManager
 ---
 
 # _check_wazuh_agent()
@@ -15,4 +15,4 @@ tags:
 - [[Return 'running', 'stopped', or 'not_installed' for wazuh-agentd (CC-01).]] - `rationale_for` [EXTRACTED]
 - [[services.py]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

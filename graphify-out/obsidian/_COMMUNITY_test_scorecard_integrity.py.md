@@ -19,21 +19,21 @@ members: 42
 - [[dot-test_optimizing_when_installed_clean_no_timestamp()_1]] - code - gateway/tests/test_scanner_integration.py
 - [[A report that is 48h old must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
 - [[Fresh clean report with zero CVEs should score 5.]] - rationale - gateway/tests/test_scorecard_integrity.py
+- [[Path_34]] - code
+- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 2 Vulnerability Management (0-5). 1=module installed but no…]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 6 Malware Defense (0-5). 1=module installed or not_run, 3=clamd…]] - rationale - gateway/security/scanner_integration.py
 - [[Scorecard integrity tests — verify no stubemptystale data can inflate scores.…]] - rationale - gateway/tests/test_scorecard_integrity.py
 - [[Stale ClamAV report (48h) must not score above 1.]] - rationale - gateway/tests/test_scorecard_integrity.py
 - [[TestScoreMalwareDefense_1]] - code - gateway/tests/test_scanner_integration.py
 - [[TestScoreVulnerabilityManagement_1]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_clean()]] - code - gateway/tests/test_scanner_integration.py
-- [[_clamav_infected()]] - code - gateway/tests/test_scanner_integration.py
 - [[_clean_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_clean_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
+- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
 - [[_not_run_clamav()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_not_run_trivy()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[_score_malware_defense()]] - code - gateway/security/scanner_integration.py
 - [[_score_vulnerability_management()]] - code - gateway/security/scanner_integration.py
-- [[_trivy_critical()]] - code - gateway/tests/test_scanner_integration.py
 - [[test_empty_collaborator_activity_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[test_empty_key_rotation_log_no_score()]] - code - gateway/tests/test_scorecard_integrity.py
 - [[test_host_hardening_empty_audit_log_no_bonus()]] - code - gateway/tests/test_scorecard_integrity.py
@@ -59,17 +59,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_Any_1]]
-- 3 edges to [[_COMMUNITY_compute_scorecard]]
-- 3 edges to [[_COMMUNITY_scanner_integration.py]]
+- 8 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_aggregate_results]]
 - 3 edges to [[_COMMUNITY_Any]]
-- 2 edges to [[_COMMUNITY__score_image_integrity]]
-- 2 edges to [[_COMMUNITY_get_trivy_summary]]
+- 2 edges to [[_COMMUNITY_compute_scorecard]]
+- 1 edge to [[_COMMUNITY_get_trivy_summary]]
 
 ## Top bridge nodes
-- [[_score_vulnerability_management()]] - degree 17, connects to 5 communities
-- [[_score_malware_defense()]] - degree 15, connects to 5 communities
-- [[_clamav_clean()]] - degree 5, connects to 4 communities
-- [[_trivy_critical()]] - degree 4, connects to 3 communities
-- [[_clamav_infected()]] - degree 3, connects to 2 communities
+- [[_score_vulnerability_management()]] - degree 17, connects to 4 communities
+- [[_score_malware_defense()]] - degree 15, connects to 4 communities
+- [[_is_fresh()]] - degree 8, connects to 4 communities
+- [[test_scorecard_integrity.py]] - degree 23, connects to 1 community
+- [[TestScoreVulnerabilityManagement_1]] - degree 6, connects to 1 community

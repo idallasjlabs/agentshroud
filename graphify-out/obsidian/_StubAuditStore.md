@@ -12,7 +12,7 @@ tags:
 # _StubAuditStore
 
 ## Connections
-- [[dot-__init__()_224]] - `method` [EXTRACTED]
+- [[dot-__init__()_227]] - `method` [EXTRACTED]
 - [[dot-log_event()_2]] - `method` [EXTRACTED]
 - [[_Event]] - `contains` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]

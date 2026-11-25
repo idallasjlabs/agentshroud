@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_run_asgi"
+community: "TestCanvasAuthHelpers"
 location: "L553"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_asgi
+  - community/TestCanvasAuthHelpers
 ---
 
 # _http_scope()
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_upstream_failure_returns_502()]] - `calls` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_asgi
+#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers

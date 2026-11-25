@@ -9,8 +9,8 @@ members: 6
 
 ## Members
 - [[Key Operations (Inferred)]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Purpose_89]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
-- [[Related Notes_63]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Purpose_91]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
+- [[Related Notes_65]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 - [[Relationship to Web API]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 - [[text_control_center.py  agentshroud_manager.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md
 - [[text_control_center.py]] - document - docs/vault/02 - Modules/Other/text_control_center.py.md

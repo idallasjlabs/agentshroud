@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L2311"
+community: "GatewayEmailService"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/GatewayEmailService
 ---
 
 # __init__()
 
 ## Connections
-- [[test_upgrade_hermes_restarts_the_real_container_name()]] - `contains` [EXTRACTED]
+- [[dot-test_default_transport_is_smtp_ssl()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

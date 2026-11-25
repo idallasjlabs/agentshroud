@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ToolACLConfig]] - `uses` [INFERRED]
-- [[fixture_86]] - `references` [EXTRACTED]
+- [[fixture_90]] - `references` [EXTRACTED]
 - [[test_group_rbac.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

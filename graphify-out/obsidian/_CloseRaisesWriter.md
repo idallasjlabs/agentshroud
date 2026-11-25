@@ -12,7 +12,7 @@ tags:
 # _CloseRaisesWriter
 
 ## Connections
-- [[dot-close()_17]] - `method` [EXTRACTED]
+- [[dot-close()_19]] - `method` [EXTRACTED]
 - [[_MockWriter]] - `inherits` [EXTRACTED]
 - [[test_handle_client_tolerates_writer_close_failure()]] - `calls` [EXTRACTED]
 - [[test_http_proxy_coverage.py]] - `contains` [EXTRACTED]

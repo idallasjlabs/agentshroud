@@ -19,7 +19,7 @@ tags:
 - [[dot-test_http_error_with_non_json_body_returns_error_dict()]] - `calls` [EXTRACTED]
 - [[dot-test_post_serializes_body()]] - `calls` [EXTRACTED]
 - [[dot-test_put_and_delete_methods()]] - `calls` [EXTRACTED]
-- [[Exception_20]] - `references` [EXTRACTED]
+- [[Exception_21]] - `references` [EXTRACTED]
 - [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - `rationale_for` [EXTRACTED]
 - [[fake_urlopen()_82]] - `indirect_call` [INFERRED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]

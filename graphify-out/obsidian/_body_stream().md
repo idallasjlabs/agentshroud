@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "AgentTarget"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/AgentTarget
 ---
 
 # _body_stream()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[limit_request_body()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "test_daily_cve_report.py"
+community: "check_upstream_cves"
 location: "L352"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_daily_cve_reportpy
+  - community/check_upstream_cves
 ---
 
 # _capture_req()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_uses_github_token_in_header()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_daily_cve_reportpy
+#graphify/code #graphify/INFERRED #community/check_upstream_cves

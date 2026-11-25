@@ -20,8 +20,8 @@ members: 14
 - [[parse_trivy_output(raw)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[run_trivy_scan(target, scan_type, severity, timeout, trivy_bin)]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[save_report(report, log_dir)_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
+- [[trivy_report.py_2]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 - [[trivy_report.py_1]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
-- [[trivy_report.py]] - document - docs/vault/02 - Modules/Security Modules/trivy_report.py.md
 
 ## Live Query (requires Dataview plugin)
 

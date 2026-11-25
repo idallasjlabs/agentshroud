@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestReplayBufferOffsetParsing"
+community: "test_telegram_proxy_outbound.py"
 location: "L4628"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # _fake()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_fake_get_updates_urlopen()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy
