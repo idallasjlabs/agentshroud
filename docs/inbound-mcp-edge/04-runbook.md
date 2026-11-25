@@ -11,9 +11,9 @@ Run these in **your own** macOS account (on marvin, `ijefferson.admin`), in Term
 Check it: in the output of `security dump-keychain -a ~/Library/Keychains/login.keychain-db` (no secrets without `-d`), the key's `decrypt` entry must show `applications (0)`.
 
 ```bash
-python -m gateway.inbound_edge.descriptors keygen --keychain agentshroud-edge   # first time / rotation only
+python -m gateway.inbound_edge.descriptors keygen --keychain agentshroud-edge-2   # first time / rotation only
 python -m gateway.inbound_edge.descriptors manifest
-python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge
+python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge-2
 python -m gateway.inbound_edge.descriptors verify          # → verify: OK
 ```
 
