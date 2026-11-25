@@ -17,6 +17,6 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

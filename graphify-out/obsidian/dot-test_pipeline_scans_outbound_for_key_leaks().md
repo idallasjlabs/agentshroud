@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "GitGuard"
+community: "FileSandbox"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/FileSandbox
 ---
 
 # .test_pipeline_scans_outbound_for_key_leaks()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyVaultWired]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

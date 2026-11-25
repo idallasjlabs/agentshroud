@@ -16,6 +16,6 @@ tags:
 - [[Owner channel pipeline called with user_trust_level=FULL, message forwarded.]] - `rationale_for` [EXTRACTED]
 - [[TestOwnerChannelFiltering]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
-- [[asyncio_38]] - `references` [EXTRACTED]
+- [[asyncio_40]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

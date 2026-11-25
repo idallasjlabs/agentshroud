@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "lifespan"
+community: "ingest_api/config.py"
 location: "L318"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/ingest_api/configpy
 ---
 
 # .test_proxy_allowed_domains_parsed_from_yaml()
@@ -16,4 +16,4 @@ tags:
 - [[load_config()]] - `calls` [EXTRACTED]
 - [[proxy_allowed_domains is populated from the proxy.allowed_domains YAML section.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

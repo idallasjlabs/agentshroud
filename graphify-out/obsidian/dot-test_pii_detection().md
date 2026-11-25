@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "TestMemoryLifecycleManager"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryLifecycleManager
 ---
 
 # .test_pii_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test PII detection in memory content.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestMemoryLifecycleManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "middleware.py"
 location: "L176"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/middlewarepy
 ---
 
 # .test_queries_logged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditLogging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

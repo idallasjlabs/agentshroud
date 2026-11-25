@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # .test_monitor_mode_allows_unknown_domains()
@@ -17,4 +17,4 @@ tags:
 - [[Test that monitor mode allows unknown domains but logs them.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

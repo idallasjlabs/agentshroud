@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Missing server_name or tool_name should return 422.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
-- [[asyncio_28]] - `references` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyResult

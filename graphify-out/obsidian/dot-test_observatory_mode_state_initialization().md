@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test that observatory mode state is properly initialized.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
-- [[asyncio_55]] - `references` [EXTRACTED]
+- [[asyncio_88]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

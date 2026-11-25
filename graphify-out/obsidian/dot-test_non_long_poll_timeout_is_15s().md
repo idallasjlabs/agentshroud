@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestReplayBufferOffsetParsing"
+community: "test_telegram_proxy_outbound.py"
 location: "L4492"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_non_long_poll_timeout_is_15s()
@@ -15,7 +15,7 @@ tags:
 - [[dot-_fake_urlopen_factory()]] - `calls` [EXTRACTED]
 - [[TestForwardToTelegramTimeouts]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 - [[sendMessage and similar calls must use a 15s urlopen timeout.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # .test_normal_response_not_flagged_for_size()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestResponseSizeLimits]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

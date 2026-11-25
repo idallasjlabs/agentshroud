@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestSecurityViolationLogging"
+community: "test_privilege_separation.py"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityViolationLogging
+  - community/test_privilege_separationpy
 ---
 
 # .test_normal_operations_not_violations()
@@ -15,4 +15,4 @@ tags:
 - [[Normal workspace operations should not be flagged as violations.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityViolationLogging]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityViolationLogging
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

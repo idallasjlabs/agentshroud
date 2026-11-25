@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # .test_no_duplicate_projects()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestProjectQueries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

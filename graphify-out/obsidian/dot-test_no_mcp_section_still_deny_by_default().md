@@ -12,7 +12,7 @@ tags:
 # .test_no_mcp_section_still_deny_by_default()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A config with no mcp_proxy AND no mcp_policy still yields a fail-closed default…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultPolicyNoMcpServers]] - `method` [EXTRACTED]

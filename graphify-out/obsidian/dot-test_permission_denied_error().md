@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_egress.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "soc/models.py"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/soc/modelspy
 ---
 
 # .test_permission_denied_error()
@@ -15,4 +15,4 @@ tags:
 - [[SCLError]] - `calls` [EXTRACTED]
 - [[TestConfirmationModel]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

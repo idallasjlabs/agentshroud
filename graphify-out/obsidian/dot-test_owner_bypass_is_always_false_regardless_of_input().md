@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_a2a_policy_default_failclosed.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "A2APolicyEngine"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2APolicyEngine
 ---
 
 # .test_owner_bypass_is_always_false_regardless_of_input()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 - [[Unlike MCP, owner_bypass is not operator-configurable for A2A at all — an…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

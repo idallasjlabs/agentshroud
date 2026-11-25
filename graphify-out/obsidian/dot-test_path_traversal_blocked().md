@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestEdgeCases"
+community: "test_privilege_separation.py"
 location: "L316"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEdgeCases
+  - community/test_privilege_separationpy
 ---
 
 # .test_path_traversal_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Path traversal attempts should be blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestEdgeCases]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEdgeCases
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

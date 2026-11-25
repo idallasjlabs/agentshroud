@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestUpstreamAlertDedup]] - `method` [EXTRACTED]
-- [[__enter__()_1]] - `contains` [EXTRACTED]
-- [[__exit__()_1]] - `contains` [EXTRACTED]
+- [[__enter__()_2]] - `contains` [EXTRACTED]
+- [[__exit__()_2]] - `contains` [EXTRACTED]
 - [[read()_4]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestUpstreamAlertDedup

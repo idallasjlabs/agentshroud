@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "SecurityPipeline"
+community: "asyncio"
 location: "L896"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/asyncio
 ---
 
 # .test_owner_exempted_block_does_not_decay_trust()
@@ -16,6 +16,6 @@ tags:
 - [[Owner messages that would trip a guard are logged but never blocked —…]] - `rationale_for` [EXTRACTED]
 - [[TestTrustViolationRecording]] - `method` [EXTRACTED]
 - [[_FakeAttack]] - `calls` [EXTRACTED]
-- [[asyncio_34]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -15,8 +15,8 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[Owner block notice should retry with owner-specific fallback when first send…]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_send()_13]] - `contains` [EXTRACTED]
-- [[fake_send()_12]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_send()_12]] - `contains` [EXTRACTED]
+- [[fake_send()_11]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

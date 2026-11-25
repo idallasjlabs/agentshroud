@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # .test_pii_detection_accuracy_at_scale()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
 - [[Verify detection accuracy doesn't degrade at scale.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_16]] - `references` [EXTRACTED]
+- [[asyncio_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

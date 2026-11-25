@@ -17,6 +17,6 @@ tags:
 - [[When bot_username is unset the filter is bypassed entirely.]] - `rationale_for` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

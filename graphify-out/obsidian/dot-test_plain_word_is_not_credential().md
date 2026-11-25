@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_env_guard_class.py"
+community: "TestLooksLikeCredential"
 location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/TestLooksLikeCredential
 ---
 
 # .test_plain_word_is_not_credential()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestLooksLikeCredential]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/TestLooksLikeCredential

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestAgentsRegistry"
+community: "test_soc_edge.py"
 location: "L607"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/test_soc_edgepy
 ---
 
 # .test_owner_only()
@@ -15,4 +15,4 @@ tags:
 - [[FakeCaller_1]] - `calls` [EXTRACTED]
 - [[TestEdgeEnroll]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

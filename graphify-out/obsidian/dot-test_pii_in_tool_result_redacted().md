@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestInjectionDetection"
+community: "TestPIIDetection"
 location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/TestPIIDetection
 ---
 
 # .test_pii_in_tool_result_redacted()
 
 ## Connections
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[TestPIIDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/TestPIIDetection

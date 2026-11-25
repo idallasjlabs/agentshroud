@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test successful notification sending.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
-- [[asyncio_44]] - `references` [EXTRACTED]
+- [[asyncio_45]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

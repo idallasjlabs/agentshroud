@@ -15,7 +15,7 @@ tags:
 - [[FakeRBAC]] - `calls` [EXTRACTED]
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[fake_forward()_1]] - `contains` [EXTRACTED]
 - [[fake_forward()_2]] - `indirect_call` [INFERRED]
 - [[proxy_request should track dropped updates (e.g. collaborator blocked command).]] - `rationale_for` [EXTRACTED]

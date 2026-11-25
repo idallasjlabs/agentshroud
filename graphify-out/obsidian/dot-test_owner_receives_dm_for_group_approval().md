@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 - [[owner_chat_id receives a DM notification for every group-context approval.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "normalize_input"
+community: "HeuristicClassifier"
 location: "L286"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/HeuristicClassifier
 ---
 
 # .test_persona_hijack_detection_rate()
@@ -15,4 +15,4 @@ tags:
 - [[TestPersonaHijack]] - `method` [EXTRACTED]
 - [[_any_detector_fires()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

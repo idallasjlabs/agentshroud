@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "TestMediumSeverity"
+community: "ToolResultInjectionScanner"
 location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMediumSeverity
+  - community/ToolResultInjectionScanner
 ---
 
 # .test_prompt_extraction()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMediumSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMediumSeverity
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

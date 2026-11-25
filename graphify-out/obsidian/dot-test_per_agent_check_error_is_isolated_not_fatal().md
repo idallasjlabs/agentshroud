@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[A raised per-agent check error is ISOLATED — the ingest still completes. Per-…]] - `rationale_for` [EXTRACTED]
 - [[TestGhsaIngestScheduler]] - `method` [EXTRACTED]
-- [[_boom()_20]] - `indirect_call` [INFERRED]
+- [[_boom()_23]] - `indirect_call` [INFERRED]
 - [[_sleep()_1]] - `contains` [EXTRACTED]
 - [[_sleep()_2]] - `indirect_call` [INFERRED]
 - [[asyncio_21]] - `references` [EXTRACTED]

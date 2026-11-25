@@ -15,6 +15,6 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Owner DM must describe the action_type that requires approval.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

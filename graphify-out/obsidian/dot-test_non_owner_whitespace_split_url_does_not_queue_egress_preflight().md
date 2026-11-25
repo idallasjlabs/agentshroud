@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
+community: "asyncio"
 location: "L6205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/asyncio
 ---
 
 # .test_non_owner_whitespace_split_url_does_not_queue_egress_preflight()
@@ -18,7 +18,7 @@ tags:
 - [[Whitespace-split URL tokens should not queue malformed preflight approvals.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[check_async()_26]] - `contains` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[check_async()_30]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/asyncio

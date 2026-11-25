@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L339"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # .test_pii_from_agent_a_not_in_agent_b_audit()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[PII redacted for agent A does not leak into agent B's audit trail.]] - `rationale_for` [EXTRACTED]
 - [[TestE2E09SessionIsolation]] - `method` [EXTRACTED]
-- [[asyncio_9]] - `references` [EXTRACTED]
+- [[asyncio_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

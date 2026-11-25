@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
 community: "_token"
-location: "L231"
+location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED

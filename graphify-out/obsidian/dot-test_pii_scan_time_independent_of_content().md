@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "TestHTTPSecurity"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TestHTTPSecurity
 ---
 
 # .test_pii_scan_time_independent_of_content()
@@ -17,4 +17,4 @@ tags:
 - [[PIISanitizer]] - `calls` [INFERRED]
 - [[TestTimingAttacks]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

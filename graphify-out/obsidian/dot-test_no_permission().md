@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 location: "L140"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # .test_no_permission()
@@ -15,4 +15,4 @@ tags:
 - [[TestErrorFormatters]] - `method` [EXTRACTED]
 - [[format_no_permission()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

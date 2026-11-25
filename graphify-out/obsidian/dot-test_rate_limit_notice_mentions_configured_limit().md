@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Rate-limit notice must reflect configured collaborator limit.]] - `rationale_for` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_urlopen()_11]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_urlopen()_10]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_48]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

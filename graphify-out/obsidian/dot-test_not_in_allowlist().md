@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestServerAccess"
+community: "PermissionLevel"
 location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestServerAccess
+  - community/PermissionLevel
 ---
 
 # .test_not_in_allowlist()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestServerAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestServerAccess
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

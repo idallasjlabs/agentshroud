@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L451"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # .test_no_audit_chain_no_crash()
@@ -16,4 +16,4 @@ tags:
 - [[TestAuditChain]] - `method` [EXTRACTED]
 - [[WebProxy]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

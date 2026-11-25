@@ -16,7 +16,7 @@ tags:
 - [[TestMultipartOutboundPipeline]] - `method` [EXTRACTED]
 - [[_make_multipart_body()]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[process_outbound()_7]] - `contains` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
+- [[process_outbound()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_multipart_body

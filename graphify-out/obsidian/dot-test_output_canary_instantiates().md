@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # .test_output_canary_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[OutputCanary]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode
