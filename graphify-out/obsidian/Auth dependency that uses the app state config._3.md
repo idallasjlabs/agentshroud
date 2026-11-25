@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/ingest_api/routes/health.py"
+source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "rationale"
 community: "ingest_api/main.py"
-location: "L19"
+location: "L386"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

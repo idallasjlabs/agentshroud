@@ -13,12 +13,12 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_113]] - `references` [EXTRACTED]
+- [[dot-__init__()_107]] - `references` [EXTRACTED]
 - [[dot-config()_1]] - `calls` [EXTRACTED]
 - [[dot-test_cooldown_disabled_when_feature_disabled()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_config()_2]] - `calls` [EXTRACTED]
 - [[dot-test_deception_detection_disabled()]] - `calls` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `calls` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `calls` [EXTRACTED]
 - [[Configuration for approval queue hardening.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[TestApprovalHardening]] - `uses` [INFERRED]

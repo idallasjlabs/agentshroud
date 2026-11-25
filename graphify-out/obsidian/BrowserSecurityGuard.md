@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_153]] - `calls` [EXTRACTED]
-- [[dot-__init__()_87]] - `method` [EXTRACTED]
+- [[dot-__init__()_159]] - `calls` [EXTRACTED]
+- [[dot-__init__()_79]] - `method` [EXTRACTED]
 - [[dot-analyze_content()]] - `method` [EXTRACTED]
 - [[dot-analyze_screenshot()]] - `method` [EXTRACTED]
 - [[dot-can_enter_credentials()]] - `method` [EXTRACTED]

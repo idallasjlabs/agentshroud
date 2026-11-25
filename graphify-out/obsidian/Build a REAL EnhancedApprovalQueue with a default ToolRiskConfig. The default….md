@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_policy.py"
 type: "rationale"
-community: "test_mfa_guard.py"
+community: "MCPPolicyEngine"
 location: "L433"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/MCPPolicyEngine
 ---
 
 # Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig. The default…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_real_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/MCPPolicyEngine

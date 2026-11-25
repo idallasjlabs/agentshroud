@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L77"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # Build the permission matrix for all roles.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_build_permission_matrix()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

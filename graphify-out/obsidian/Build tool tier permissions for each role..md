@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "rationale"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L174"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # Build tool tier permissions for each role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_build_tool_permissions()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/soc/routerpy
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

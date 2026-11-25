@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/canary.py"
 type: "code"
-community: "lifespan.py"
+community: "test_canary.py"
 location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_canarypy
 ---
 
 # CanaryCheck
@@ -16,4 +16,4 @@ tags:
 - [[canary.py_2]] - `contains` [EXTRACTED]
 - [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

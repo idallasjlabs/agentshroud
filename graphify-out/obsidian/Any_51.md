@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "DockerEngine"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/MCPPolicyEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-inspect()_2]] - `references` [EXTRACTED]
+- [[dot-enforce()]] - `references` [EXTRACTED]
+- [[dot-evaluate()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

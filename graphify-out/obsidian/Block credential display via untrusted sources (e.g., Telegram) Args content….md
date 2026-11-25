@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L492"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # Block credential display via untrusted sources (e.g., Telegram) Args: content:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-block_credentials()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

@@ -1,24 +1,31 @@
 ---
 source_file: ""
 type: "code"
-community: "AuditChain"
+community: "test_scanner_integration.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/test_scanner_integrationpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_process_inbound_core()]] - `references` [EXTRACTED]
-- [[dot-_process_outbound_core()]] - `references` [EXTRACTED]
-- [[dot-append()_1]] - `references` [EXTRACTED]
-- [[dot-append_block()]] - `references` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_14]] - `references` [EXTRACTED]
-- [[dot-process_inbound()_5]] - `references` [EXTRACTED]
-- [[dot-process_outbound()_6]] - `references` [EXTRACTED]
-- [[dot-to_dict()_10]] - `references` [EXTRACTED]
+- [[_clamav_clean()]] - `references` [EXTRACTED]
+- [[_clamav_infected()]] - `references` [EXTRACTED]
+- [[_clean_trivy_report()]] - `references` [EXTRACTED]
+- [[_critical_trivy_report()]] - `references` [EXTRACTED]
+- [[_falco_clean()]] - `references` [EXTRACTED]
+- [[_falco_critical()]] - `references` [EXTRACTED]
+- [[_falco_not_run()]] - `references` [EXTRACTED]
+- [[_openscap_clean()]] - `references` [EXTRACTED]
+- [[_openscap_not_run()]] - `references` [EXTRACTED]
+- [[_openscap_warn()]] - `references` [EXTRACTED]
+- [[_trivy_clean()]] - `references` [EXTRACTED]
+- [[_trivy_critical()]] - `references` [EXTRACTED]
+- [[_trivy_not_run()]] - `references` [EXTRACTED]
+- [[_wazuh_clean()]] - `references` [EXTRACTED]
+- [[_wazuh_not_run()]] - `references` [EXTRACTED]
+- [[_write_image_report()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy

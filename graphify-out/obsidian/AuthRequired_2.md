@@ -1,18 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "decide_approval"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/AgentTarget
 ---
 
 # AuthRequired
 
 ## Connections
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
+- [[email_send()]] - `references` [EXTRACTED]
+- [[email_send_owner()]] - `references` [EXTRACTED]
+- [[forward_content()]] - `references` [EXTRACTED]
+- [[forward_content_stream()]] - `references` [EXTRACTED]
+- [[telegram_webhook()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/decide_approval
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

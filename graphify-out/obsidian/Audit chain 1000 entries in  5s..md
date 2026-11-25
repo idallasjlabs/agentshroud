@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L119"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # Audit chain: 1000 entries in < 5s.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAuditChainPerformance]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

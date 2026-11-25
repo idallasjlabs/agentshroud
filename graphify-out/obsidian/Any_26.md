@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mcp_proxy.py"
+community: "SOCWebSocketHandler"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/SOCWebSocketHandler
 ---
 
 # Any
 
 ## Connections
-- [[dot-from_dict()_5]] - `references` [EXTRACTED]
+- [[dot-_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

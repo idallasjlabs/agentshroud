@@ -1,21 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "api.py"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/AgentTarget
 ---
 
 # BaseModel
 
 ## Connections
-- [[ConfigUpdate]] - `inherits` [EXTRACTED]
-- [[IntelDraftEntry]] - `inherits` [EXTRACTED]
-- [[IntelDraftRequest]] - `inherits` [EXTRACTED]
-- [[KillSwitchAction]] - `inherits` [EXTRACTED]
-- [[ModeRequest]] - `inherits` [EXTRACTED]
-- [[UpdateRequest]] - `inherits` [EXTRACTED]
+- [[OwnerEmailRequest]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

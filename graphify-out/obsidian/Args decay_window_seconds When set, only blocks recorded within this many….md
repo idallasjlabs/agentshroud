@@ -12,6 +12,6 @@ tags:
 # Args: decay_window_seconds: When set, only blocks recorded within this many…
 
 ## Connections
-- [[dot-__init__()_120]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_113]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ProgressiveLockdown

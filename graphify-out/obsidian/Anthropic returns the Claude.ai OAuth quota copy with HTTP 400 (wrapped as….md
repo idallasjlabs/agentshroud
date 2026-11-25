@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_llm_quota_detector.py"
 type: "rationale"
-community: "is_quota_exhausted"
+community: "is_overloaded"
 location: "L50"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/is_quota_exhausted
+  - community/is_overloaded
 ---
 
 # Anthropic returns the Claude.ai OAuth quota copy with HTTP 400 (wrapped as…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_detect_anthropic_400_oauth_extra_usage()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/is_quota_exhausted
+#graphify/rationale #graphify/EXTRACTED #community/is_overloaded

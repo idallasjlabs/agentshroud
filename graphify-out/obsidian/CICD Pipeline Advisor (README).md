@@ -12,9 +12,9 @@ tags:
 
 ## Connections
 - [[CICD Pipeline Advisor (SKILL)]] - `references` [INFERRED]
-- [[Purpose_87]] - `contains` [EXTRACTED]
+- [[Purpose_89]] - `contains` [EXTRACTED]
 - [[Related Skills_22]] - `contains` [EXTRACTED]
-- [[Usage_29]] - `contains` [EXTRACTED]
+- [[Usage_30]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

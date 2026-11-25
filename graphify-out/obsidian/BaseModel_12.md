@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "version_routes.py"
+community: "ingest_api/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/ingest_api/mainpy
 ---
 
 # BaseModel
 
 ## Connections
-- [[RollbackRequest]] - `inherits` [EXTRACTED]
-- [[VersionRequest]] - `inherits` [EXTRACTED]
+- [[MCPProxyRequest]] - `inherits` [EXTRACTED]
+- [[MCPResultRequest]] - `inherits` [EXTRACTED]
+- [[OpProxyRequest]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

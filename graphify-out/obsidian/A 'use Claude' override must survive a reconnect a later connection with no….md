@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_mock_ws"
+community: "asyncio"
 location: "L3261"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # A 'use Claude' override must survive a reconnect: a later connection with no…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_switch_overrides_persist_across_reconnect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_mock_ws
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

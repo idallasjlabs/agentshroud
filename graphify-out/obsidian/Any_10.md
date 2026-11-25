@@ -1,19 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "make_event"
+community: "FileIntegrityRecord"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/FileIntegrityRecord
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_recent()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_1]] - `references` [EXTRACTED]
-- [[dot-to_dict()_1]] - `references` [EXTRACTED]
-- [[make_event()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_4]] - `references` [EXTRACTED]
+- [[dot-get_integrity_status()]] - `references` [EXTRACTED]
+- [[dot-get_recent_alerts()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

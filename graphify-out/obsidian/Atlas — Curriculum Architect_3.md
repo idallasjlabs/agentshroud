@@ -12,9 +12,9 @@ tags:
 # Atlas — Curriculum Architect
 
 ## Connections
-- [[Purpose_93]] - `contains` [EXTRACTED]
+- [[Purpose_95]] - `contains` [EXTRACTED]
 - [[Related Skills_25]] - `contains` [EXTRACTED]
-- [[Usage_34]] - `contains` [EXTRACTED]
+- [[Usage_35]] - `contains` [EXTRACTED]
 - [[atlasREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

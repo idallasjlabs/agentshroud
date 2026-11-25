@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # BaseModel
@@ -14,4 +14,4 @@ tags:
 - [[SSHConfig]] - `inherits` [EXTRACTED]
 - [[SSHHostConfig]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

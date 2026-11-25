@@ -1,7 +1,7 @@
 {
   "colorGroups": [
     {
-      "query": "tag:#community/MiddlewareManager",
+      "query": "tag:#community/process_request",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -15,7 +15,7 @@
       }
     },
     {
-      "query": "tag:#community/TestOutboundPipelineIntegration",
+      "query": "tag:#community/_make_sanitizer",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -43,7 +43,7 @@
       }
     },
     {
-      "query": "tag:#community/ws_soc_endpoint",
+      "query": "tag:#community/test_soc_realtime_coveragepy",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -57,14 +57,14 @@
       }
     },
     {
-      "query": "tag:#community/TestToolChainAnalyzer",
+      "query": "tag:#community/ToolChainAnalyzer",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/Any",
+      "query": "tag:#community/KillSwitchMonitor",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -92,14 +92,14 @@
       }
     },
     {
-      "query": "tag:#community/lifespanpy",
+      "query": "tag:#community/test_filter_xml_blockspy",
       "color": {
         "a": 1,
         "rgb": 7780274
       }
     },
     {
-      "query": "tag:#community/_filter_outbound",
+      "query": "tag:#community/asyncio",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -113,7 +113,7 @@
       }
     },
     {
-      "query": "tag:#community/TestCollaboratorPromptClassifiers",
+      "query": "tag:#community/test_redteam_probespy",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -141,7 +141,7 @@
       }
     },
     {
-      "query": "tag:#community/_make_sanitizer",
+      "query": "tag:#community/mock_stream",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -169,7 +169,7 @@
       }
     },
     {
-      "query": "tag:#community/SecurityPipeline",
+      "query": "tag:#community/asyncio",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -197,14 +197,14 @@
       }
     },
     {
-      "query": "tag:#community/RedactionResult",
+      "query": "tag:#community/PIIConfig",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/get_trivy_summary",
+      "query": "tag:#community/_coerce_to_ws_event",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -239,7 +239,7 @@
       }
     },
     {
-      "query": "tag:#community/_mock_ws",
+      "query": "tag:#community/asyncio",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -260,7 +260,7 @@
       }
     },
     {
-      "query": "tag:#community/prompt_guardpy",
+      "query": "tag:#community/PromptGuard",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -316,7 +316,7 @@
       }
     },
     {
-      "query": "tag:#community/AgentTarget",
+      "query": "tag:#community/asyncio",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -358,7 +358,7 @@
       }
     },
     {
-      "query": "tag:#community/WebProxy",
+      "query": "tag:#community/lifespanpy",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -379,14 +379,14 @@
       }
     },
     {
-      "query": "tag:#community/TestServerAccess",
+      "query": "tag:#community/PermissionLevel",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/_make_update",
+      "query": "tag:#community/PassthroughPipeline",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -561,7 +561,7 @@
       }
     },
     {
-      "query": "tag:#community/EnvelopeSigner",
+      "query": "tag:#community/servicepy",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -624,7 +624,7 @@
       }
     },
     {
-      "query": "tag:#community/TrustLevel",
+      "query": "tag:#community/TrustConfig",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -673,7 +673,7 @@
       }
     },
     {
-      "query": "tag:#community/TestOutboundClassifierHelpers",
+      "query": "tag:#community/_extract_first_egress_target",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -687,7 +687,7 @@
       }
     },
     {
-      "query": "tag:#community/test_ws_e_rt2_inbound_encodingpy",
+      "query": "tag:#community/CredentialInfo",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -701,7 +701,7 @@
       }
     },
     {
-      "query": "tag:#community/run",
+      "query": "tag:#community/ContextGuard",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -722,7 +722,7 @@
       }
     },
     {
-      "query": "tag:#community/WebProxyResult",
+      "query": "tag:#community/test_block_credentialspy",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -778,7 +778,7 @@
       }
     },
     {
-      "query": "tag:#community/make_event",
+      "query": "tag:#community/EventBus",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -799,7 +799,7 @@
       }
     },
     {
-      "query": "tag:#community/test_collaborator_responsespy",
+      "query": "tag:#community/TeamsConfig",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -848,21 +848,21 @@
       }
     },
     {
-      "query": "tag:#community/URLAnalyzer",
+      "query": "tag:#community/test_url_analyzerpy",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/KeyRotationManager",
+      "query": "tag:#community/KeyRotationConfig",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/test_e2e_watchtowerpy",
+      "query": "tag:#community/PIISanitizer",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -1016,7 +1016,7 @@
       }
     },
     {
-      "query": "tag:#community/_run_and_read",
+      "query": "tag:#community/ApprovalQueueConfig_5",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -1030,7 +1030,7 @@
       }
     },
     {
-      "query": "tag:#community/asyncio",
+      "query": "tag:#community/MiddlewareResult",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -1058,7 +1058,7 @@
       }
     },
     {
-      "query": "tag:#community/lifespan",
+      "query": "tag:#community/test_config_hot_reloadpy",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -1121,7 +1121,7 @@
       }
     },
     {
-      "query": "tag:#community/telegram_proxypy",
+      "query": "tag:#community/KeyRotationManager",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -1198,14 +1198,14 @@
       }
     },
     {
-      "query": "tag:#community/DNSFilterConfig",
+      "query": "tag:#community/middlewarepy",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/_make_token",
+      "query": "tag:#community/TokenValidator",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -1226,14 +1226,14 @@
       }
     },
     {
-      "query": "tag:#community/Skill_MCP_AWS_Profile_Configuration_MCPM-AWS-PROFILE",
+      "query": "tag:#community/pick_latest_stable",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/test_collaborator_command_blocking_question_gets_safe_info_not_denial",
+      "query": "tag:#community/TestHeuristicClassifier",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -1317,7 +1317,7 @@
       }
     },
     {
-      "query": "tag:#community/test_runtime_enginespy",
+      "query": "tag:#community/installerpy",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -1331,7 +1331,7 @@
       }
     },
     {
-      "query": "tag:#community/web_proxypy",
+      "query": "tag:#community/EgressEvent",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -1429,7 +1429,7 @@
       }
     },
     {
-      "query": "tag:#community/SubagentMonitor",
+      "query": "tag:#community/test_all_modules_enforcepy",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -1450,7 +1450,7 @@
       }
     },
     {
-      "query": "tag:#community/TestMultiTurnTracker",
+      "query": "tag:#community/MultiTurnTracker",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -1513,7 +1513,7 @@
       }
     },
     {
-      "query": "tag:#community/ContextGuard",
+      "query": "tag:#community/context_guardpy",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -1541,7 +1541,7 @@
       }
     },
     {
-      "query": "tag:#community/PipelineAction",
+      "query": "tag:#community/test_clamav_pipelinepy",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -1576,7 +1576,7 @@
       }
     },
     {
-      "query": "tag:#community/ContainerEngine",
+      "query": "tag:#community/DockerEngine",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -1604,7 +1604,7 @@
       }
     },
     {
-      "query": "tag:#community/test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise",
+      "query": "tag:#community/lifespan",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -1625,14 +1625,14 @@
       }
     },
     {
-      "query": "tag:#community/_make_report",
+      "query": "tag:#community/test_daily_cve_reportpy",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/OutputCanary",
+      "query": "tag:#community/TestModuleInstantiationInEnforceMode",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -1674,7 +1674,7 @@
       }
     },
     {
-      "query": "tag:#community/MetadataGuard",
+      "query": "tag:#community/TestMetadataGuard",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -1765,7 +1765,7 @@
       }
     },
     {
-      "query": "tag:#community/TestPathIsolationManager",
+      "query": "tag:#community/Severity",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -1779,7 +1779,7 @@
       }
     },
     {
-      "query": "tag:#community/GatewayConfig",
+      "query": "tag:#community/ingest_api/configpy",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -1821,7 +1821,7 @@
       }
     },
     {
-      "query": "tag:#community/wazuh_clientpy",
+      "query": "tag:#community/generate_summary",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -1968,7 +1968,7 @@
       }
     },
     {
-      "query": "tag:#community/test_skill_guardpy",
+      "query": "tag:#community/Path",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -2045,7 +2045,7 @@
       }
     },
     {
-      "query": "tag:#community/GSDEG_Skills_Reference",
+      "query": "tag:#community/Skills_by_Category",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -2059,7 +2059,7 @@
       }
     },
     {
-      "query": "tag:#community/GSDEG_Skills_Reference",
+      "query": "tag:#community/Skills_by_Category",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -2080,7 +2080,7 @@
       }
     },
     {
-      "query": "tag:#community/ProgressiveTrustConfig",
+      "query": "tag:#community/TrustLevel",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -2129,7 +2129,7 @@
       }
     },
     {
-      "query": "tag:#community/TestPromptProtection",
+      "query": "tag:#community/lvgl_kawaii_facec",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -2150,7 +2150,7 @@
       }
     },
     {
-      "query": "tag:#community/OutboundInfoFilter",
+      "query": "tag:#community/outbound_filterpy",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -2178,7 +2178,7 @@
       }
     },
     {
-      "query": "tag:#community/Any",
+      "query": "tag:#community/get_trivy_image_summaries",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -2255,7 +2255,7 @@
       }
     },
     {
-      "query": "tag:#community/test_forward_routingpy",
+      "query": "tag:#community/AgentTarget",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -2409,7 +2409,7 @@
       }
     },
     {
-      "query": "tag:#community/test_edge_approvalspy",
+      "query": "tag:#community/test_edge_pipelinepy",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -2472,7 +2472,7 @@
       }
     },
     {
-      "query": "tag:#community/TeamsConfig",
+      "query": "tag:#community/test_key_rotationpy",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -2507,7 +2507,7 @@
       }
     },
     {
-      "query": "tag:#community/voice_task",
+      "query": "tag:#community/ws_clientc",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -2591,7 +2591,7 @@
       }
     },
     {
-      "query": "tag:#community/Phase_3_Requirements_Working_Chat_Container",
+      "query": "tag:#community/_wrap_response_5",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -2605,7 +2605,7 @@
       }
     },
     {
-      "query": "tag:#community/DockerEngine",
+      "query": "tag:#community/MemoryLifecycleManager",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -2619,7 +2619,7 @@
       }
     },
     {
-      "query": "tag:#community/is_quota_exhausted",
+      "query": "tag:#community/_call_llm_stream",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -2654,7 +2654,7 @@
       }
     },
     {
-      "query": "tag:#community/_mock_forward",
+      "query": "tag:#community/TestPromptGuard",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -2885,7 +2885,7 @@
       }
     },
     {
-      "query": "tag:#community/test_docs_accuracypy",
+      "query": "tag:#community/MiddlewareManager",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -3032,7 +3032,7 @@
       }
     },
     {
-      "query": "tag:#community/Hermes_Agent__Connection_Setup",
+      "query": "tag:#community/check_command",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -3074,7 +3074,7 @@
       }
     },
     {
-      "query": "tag:#community/EncodingDetector",
+      "query": "tag:#community/test_ws_e_rt2_inbound_encodingpy",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -3116,7 +3116,7 @@
       }
     },
     {
-      "query": "tag:#community/Pre-Purge_Secret_Rotation_Checklist",
+      "query": "tag:#community/GSDEG_Skills_Reference_Guide",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -3130,7 +3130,7 @@
       }
     },
     {
-      "query": "tag:#community/version_routes_APIRouter__/api/v1/versions",
+      "query": "tag:#community/Pre-Deployment_Checklist_3",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -3179,7 +3179,7 @@
       }
     },
     {
-      "query": "tag:#community/Security_Controls",
+      "query": "tag:#community/Container_Security_Policy__AgentShroud",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -3228,14 +3228,14 @@
       }
     },
     {
-      "query": "tag:#community/graphify_Skill",
+      "query": "tag:#community/sunday-scansh",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT",
+      "query": "tag:#community/SecurityPipeline_4",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -3256,7 +3256,7 @@
       }
     },
     {
-      "query": "tag:#community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility",
+      "query": "tag:#community/dashboard/READMEmd",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -3291,14 +3291,14 @@
       }
     },
     {
-      "query": "tag:#community/AgentShroud_v080__Full_Security__Functionality_Audit",
+      "query": "tag:#community/Seccomp_Profiles",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/Multi-Agent_Role_Matrix",
+      "query": "tag:#community/Dockerfile__Bot_OpenClaw",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -3424,7 +3424,7 @@
       }
     },
     {
-      "query": "tag:#community/ManifestEntry",
+      "query": "tag:#community/_patch_http_connection",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -3529,14 +3529,14 @@
       }
     },
     {
-      "query": "tag:#community/test_group_isolationpy",
+      "query": "tag:#community/TestGroupMemoryNamespaceIsolation",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/test_security_integrationpy",
+      "query": "tag:#community/MemoryIntegrityMonitor",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -3557,7 +3557,7 @@
       }
     },
     {
-      "query": "tag:#community/TestToolResultSanitizer",
+      "query": "tag:#community/ToolResultSanitizer",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -3634,7 +3634,7 @@
       }
     },
     {
-      "query": "tag:#community/middlewarepy",
+      "query": "tag:#community/test_memory_lifecyclepy",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -3683,21 +3683,21 @@
       }
     },
     {
-      "query": "tag:#community/AgentShroud_Red_Team_Adversarial_Tester",
+      "query": "tag:#community/AgentShroud_Color_Palette",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/Socrates__Dialogue_Architect",
+      "query": "tag:#community/MultiHostResult",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/AgentShroud_Red_Team_Adversarial_Tester",
+      "query": "tag:#community/Test-Driven_Development_README",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -3711,7 +3711,7 @@
       }
     },
     {
-      "query": "tag:#community/asyncio",
+      "query": "tag:#community/EgressAction",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -3725,7 +3725,7 @@
       }
     },
     {
-      "query": "tag:#community/read_secret",
+      "query": "tag:#community/secretspy",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -4026,7 +4026,7 @@
       }
     },
     {
-      "query": "tag:#community/LogBuffer",
+      "query": "tag:#community/_mock_response",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -4145,7 +4145,7 @@
       }
     },
     {
-      "query": "tag:#community/TestDeploymentMode",
+      "query": "tag:#community/TestMCPResultEndpoint",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -4299,7 +4299,7 @@
       }
     },
     {
-      "query": "tag:#community/test_soc_realtime_coveragepy",
+      "query": "tag:#community/soc/modelspy",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -4558,7 +4558,7 @@
       }
     },
     {
-      "query": "tag:#community/process_webhook",
+      "query": "tag:#community/WebhookReceiver",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -4586,7 +4586,7 @@
       }
     },
     {
-      "query": "tag:#community/test_shared_memorypy",
+      "query": "tag:#community/DriftDetector",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -4761,7 +4761,7 @@
       }
     },
     {
-      "query": "tag:#community/_extract_first_egress_target",
+      "query": "tag:#community/descriptorspy",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -4985,7 +4985,7 @@
       }
     },
     {
-      "query": "tag:#community/TestAuth",
+      "query": "tag:#community/Session",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -5062,7 +5062,7 @@
       }
     },
     {
-      "query": "tag:#community/ToolChainAnalyzer",
+      "query": "tag:#community/TestTrustManager",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -5139,7 +5139,7 @@
       }
     },
     {
-      "query": "tag:#community/Part_2__Red-Team_Attack_Run_SCRUM-73",
+      "query": "tag:#community/WS-E_Security_Audit__AgentShroud_v12_Gateway__OpenClaw__Hermes",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -5405,7 +5405,7 @@
       }
     },
     {
-      "query": "tag:#community/LogSanitizer",
+      "query": "tag:#community/deep_security_test",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -5419,21 +5419,21 @@
       }
     },
     {
-      "query": "tag:#community/test_security_auditpy",
+      "query": "tag:#community/TestAuth",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/normalize_input",
+      "query": "tag:#community/HeuristicClassifier",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/TestAgentsRegistry",
+      "query": "tag:#community/test_soc_edgepy",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -5741,14 +5741,14 @@
       }
     },
     {
-      "query": "tag:#community/_client_info",
+      "query": "tag:#community/test_edge_oauthpy",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/BlockingPipeline",
+      "query": "tag:#community/test_encoding_detected_on_getUpdates",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -5916,21 +5916,21 @@
       }
     },
     {
-      "query": "tag:#community/TestEgressFilterConfig",
+      "query": "tag:#community/EgressFilterConfig",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/MultiTurnTracker",
+      "query": "tag:#community/TestMemoryLifecycleManager",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/ToolResultSanitizerConfig",
+      "query": "tag:#community/Security_Controls",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -5965,14 +5965,14 @@
       }
     },
     {
-      "query": "tag:#community/dashboard_endpointspy",
+      "query": "tag:#community/test_agentshroud_managerpy",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/TokenValidator",
+      "query": "tag:#community/upgrade",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -6238,7 +6238,7 @@
       }
     },
     {
-      "query": "tag:#community/ScanResult",
+      "query": "tag:#community/TestMemoryIntegrityMonitor",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -6252,7 +6252,7 @@
       }
     },
     {
-      "query": "tag:#community/HTTPForwarder",
+      "query": "tag:#community/test_canarypy",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -6427,7 +6427,7 @@
       }
     },
     {
-      "query": "tag:#community/detect_runtime",
+      "query": "tag:#community/_append_audit_event",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -6469,7 +6469,7 @@
       }
     },
     {
-      "query": "tag:#community/ScanResult",
+      "query": "tag:#community/clamav_scannerpy",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -6623,14 +6623,14 @@
       }
     },
     {
-      "query": "tag:#community/TestTelegramWebhook",
+      "query": "tag:#community/TestConcurrency",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/A2APolicyConfig",
+      "query": "tag:#community/A2APeerTestDouble",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -6770,7 +6770,7 @@
       }
     },
     {
-      "query": "tag:#community/TestReplayBufferOffsetParsing",
+      "query": "tag:#community/test_telegram_proxy_outboundpy",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -7113,7 +7113,7 @@
       }
     },
     {
-      "query": "tag:#community/Detailed_Profiles",
+      "query": "tag:#community/Features",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -7309,7 +7309,7 @@
       }
     },
     {
-      "query": "tag:#community/TestAggregateResults",
+      "query": "tag:#community/P2_High_Priority_Incidents",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -7414,7 +7414,7 @@
       }
     },
     {
-      "query": "tag:#community/TestOutboundScanUnification",
+      "query": "tag:#community/test_alert_dispatcher_retrypy",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -7428,7 +7428,7 @@
       }
     },
     {
-      "query": "tag:#community/test_dashboardpy",
+      "query": "tag:#community/TestWebSocketHandshakeAuth",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -7456,7 +7456,7 @@
       }
     },
     {
-      "query": "tag:#community/A2A_Agent-to-Agent_Protocol_Threat_Analysis",
+      "query": "tag:#community/TestLoadFromText",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -7547,14 +7547,14 @@
       }
     },
     {
-      "query": "tag:#community/3__Bot_Pipeline_Integrity_Checks",
+      "query": "tag:#community/CI/CD_Quality_Gates_14_jobs_6_workflows",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/1__Re-run_of_Prior_Scenarios",
+      "query": "tag:#community/Docker_Compose_infra_diagram",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -7869,7 +7869,7 @@
       }
     },
     {
-      "query": "tag:#community/test_daily_cve_reportpy",
+      "query": "tag:#community/check_upstream_cves",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -7953,7 +7953,7 @@
       }
     },
     {
-      "query": "tag:#community/MCPInspector",
+      "query": "tag:#community/issue_session_token",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -8485,14 +8485,14 @@
       }
     },
     {
-      "query": "tag:#community/tool_chain_analyzerpy",
+      "query": "tag:#community/TestPrivilegeEscalation",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/ToolResultSanitizer",
+      "query": "tag:#community/Part_2__Red-Team_Attack_Run_SCRUM-73",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -8520,7 +8520,7 @@
       }
     },
     {
-      "query": "tag:#community/analyze_tool_call",
+      "query": "tag:#community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -8534,7 +8534,7 @@
       }
     },
     {
-      "query": "tag:#community/StatusResponse",
+      "query": "tag:#community/fastapimd",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -8569,28 +8569,28 @@
       }
     },
     {
-      "query": "tag:#community/generate_compose",
+      "query": "tag:#community/test_runtime_enginespy",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/_score_compliance_auditing",
+      "query": "tag:#community/EgressRule",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/TestWebSearchLog",
+      "query": "tag:#community/Detailed_Profiles",
       "color": {
         "a": 1,
         "rgb": 11565729
       }
     },
     {
-      "query": "tag:#community/_entry",
+      "query": "tag:#community/LVGL_KAWAII_FACE",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -8968,7 +8968,7 @@
       }
     },
     {
-      "query": "tag:#community/SessionContext",
+      "query": "tag:#community/setup_resource_guard",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -9017,7 +9017,7 @@
       }
     },
     {
-      "query": "tag:#community/make_fake_socket_module",
+      "query": "tag:#community/TestHermesEgressAllowlist",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -9031,7 +9031,7 @@
       }
     },
     {
-      "query": "tag:#community/egress_approvalpy",
+      "query": "tag:#community/ApprovalMode",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -9073,7 +9073,7 @@
       }
     },
     {
-      "query": "tag:#community/TestParseModeStrippedAfterPIIRedaction",
+      "query": "tag:#community/FileIntegrityRecord",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -9367,7 +9367,7 @@
       }
     },
     {
-      "query": "tag:#community/_monitor_resources",
+      "query": "tag:#community/_get_disk_io_stats",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -9423,7 +9423,7 @@
       }
     },
     {
-      "query": "tag:#community/CVE_Registry__Manual_Review_List",
+      "query": "tag:#community/AsyncMock_2_2",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -9514,7 +9514,7 @@
       }
     },
     {
-      "query": "tag:#community/_FakeWSConnect",
+      "query": "tag:#community/ContentThreat",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -9528,14 +9528,14 @@
       }
     },
     {
-      "query": "tag:#community/get_sbom",
+      "query": "tag:#community/get_trivy_summary",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/_is_domain_allowed",
+      "query": "tag:#community/_FakeBus",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -9556,7 +9556,7 @@
       }
     },
     {
-      "query": "tag:#community/KillSwitchMonitor",
+      "query": "tag:#community/_fake_stats",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -9787,7 +9787,7 @@
       }
     },
     {
-      "query": "tag:#community/TestRBACConfig",
+      "query": "tag:#community/TestServiceManagerGetLogs",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -9808,7 +9808,7 @@
       }
     },
     {
-      "query": "tag:#community/TestInstallerAPI",
+      "query": "tag:#community/TestTelegramProxyRouteMultiBot",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -9836,7 +9836,7 @@
       }
     },
     {
-      "query": "tag:#community/TestWebSecurity",
+      "query": "tag:#community/TestHTTPSecurity",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -9878,7 +9878,7 @@
       }
     },
     {
-      "query": "tag:#community/test_activity_command_renders_entries",
+      "query": "tag:#community/scrub_output",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -10347,7 +10347,7 @@
       }
     },
     {
-      "query": "tag:#community/_handle",
+      "query": "tag:#community/TestManagementWSTokenScoping",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -10389,7 +10389,7 @@
       }
     },
     {
-      "query": "tag:#community/KeyVaultConfig",
+      "query": "tag:#community/TestToolResultScan",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -10410,7 +10410,7 @@
       }
     },
     {
-      "query": "tag:#community/deep_security_test",
+      "query": "tag:#community/drift_detectorpy",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -10459,7 +10459,7 @@
       }
     },
     {
-      "query": "tag:#community/TestEgressApprovalAPI",
+      "query": "tag:#community/asyncio",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -10480,14 +10480,14 @@
       }
     },
     {
-      "query": "tag:#community/Any",
+      "query": "tag:#community/MemoryLifecycleConfig",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/TestRBACIntegration",
+      "query": "tag:#community/RBACConfig",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -10641,7 +10641,7 @@
       }
     },
     {
-      "query": "tag:#community/TestInboundChokepointWiring",
+      "query": "tag:#community/mask_credentials",
       "color": {
         "a": 1,
         "rgb": 5142951
@@ -10739,7 +10739,7 @@
       }
     },
     {
-      "query": "tag:#community/Skills_by_Category",
+      "query": "tag:#community/TestCheckCommandExecution",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -10753,7 +10753,7 @@
       }
     },
     {
-      "query": "tag:#community/Skills_by_Category",
+      "query": "tag:#community/TestInspectorEdgeCases",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -11698,14 +11698,14 @@
       }
     },
     {
-      "query": "tag:#community/TestSecurityPolicyProtection",
+      "query": "tag:#community/test_privilege_separationpy",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/TestReadAccess",
+      "query": "tag:#community/TestPIIDetection",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -12258,7 +12258,7 @@
       }
     },
     {
-      "query": "tag:#community/TestAgentShroudSourceCodeProtection",
+      "query": "tag:#community/TestCrossBotTrustPivot",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -12279,14 +12279,14 @@
       }
     },
     {
-      "query": "tag:#community/TestDependencySecurity",
+      "query": "tag:#community/TestPromptInjectionDetection",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/decide_approval",
+      "query": "tag:#community/aiosqlite",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -12398,7 +12398,7 @@
       }
     },
     {
-      "query": "tag:#community/KillSwitchError",
+      "query": "tag:#community/verify_shared_nothing",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -13511,14 +13511,14 @@
       }
     },
     {
-      "query": "tag:#community/test_key_vaultpy",
+      "query": "tag:#community/__init__",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/test_chat_completions_aliaspy",
+      "query": "tag:#community/TestNormalDNSResolution",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -13574,35 +13574,35 @@
       }
     },
     {
-      "query": "tag:#community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message",
+      "query": "tag:#community/RateLimiter",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/TestTelegram400Retry",
+      "query": "tag:#community/TestOwnerEmailBypassesPii",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/TestTelegramTokenRegistryRebuildOnMiss",
+      "query": "tag:#community/TestSensitiveOps",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/TestCVE2026_9367TerminalToolDenied",
+      "query": "tag:#community/TestAuditQueries",
       "color": {
         "a": 1,
         "rgb": 14767961
       }
     },
     {
-      "query": "tag:#community/test_v1_models_syntheticpy",
+      "query": "tag:#community/TestSystemPromptReanchoring",
       "color": {
         "a": 1,
         "rgb": 7780274
@@ -13700,7 +13700,7 @@
       }
     },
     {
-      "query": "tag:#community/_fake_kokoro_pipeline",
+      "query": "tag:#community/httpx",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -13770,7 +13770,7 @@
       }
     },
     {
-      "query": "tag:#community/_fw_client",
+      "query": "tag:#community/_score_secure_development",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -13973,7 +13973,7 @@
       }
     },
     {
-      "query": "tag:#community/AuditExportConfig",
+      "query": "tag:#community/test_audit_exportpy",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -14050,35 +14050,35 @@
       }
     },
     {
-      "query": "tag:#community/TestConfigurationProtection",
+      "query": "tag:#community/_verify_bearer",
       "color": {
         "a": 1,
         "rgb": 16752039
       }
     },
     {
-      "query": "tag:#community/TestSystemPathProtection",
+      "query": "tag:#community/check_current_version",
       "color": {
         "a": 1,
         "rgb": 10253663
       }
     },
     {
-      "query": "tag:#community/TestWorkspaceAccessPreserved",
+      "query": "tag:#community/downgrade",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/TestSecurityViolationLogging",
+      "query": "tag:#community/rollback",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/TestEdgeCases",
+      "query": "tag:#community/TestScrubCommandOutput",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -14120,7 +14120,7 @@
       }
     },
     {
-      "query": "tag:#community/TestResponseConsistency",
+      "query": "tag:#community/TestFromPipelineResult",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -14134,7 +14134,7 @@
       }
     },
     {
-      "query": "tag:#community/multi_turn_trackerpy",
+      "query": "tag:#community/test_collaborator_approval_queue_probe_gets_safe_info",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -14197,7 +14197,7 @@
       }
     },
     {
-      "query": "tag:#community/TestTriageClassLevelCoverage",
+      "query": "tag:#community/test_listen_offset_resumes_partial_upload",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -14407,7 +14407,7 @@
       }
     },
     {
-      "query": "tag:#community/load_profiles",
+      "query": "tag:#community/8_Docker_System_Pruning",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -14596,7 +14596,7 @@
       }
     },
     {
-      "query": "tag:#community/Pydantic",
+      "query": "tag:#community/soc_correlationpy",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -14624,7 +14624,7 @@
       }
     },
     {
-      "query": "tag:#community/KeyLeakDetector",
+      "query": "tag:#community/TestCheckFileAccess",
       "color": {
         "a": 1,
         "rgb": 12234924
@@ -14645,7 +14645,7 @@
       }
     },
     {
-      "query": "tag:#community/_score_image_integrity",
+      "query": "tag:#community/aggregate_results",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -14659,7 +14659,7 @@
       }
     },
     {
-      "query": "tag:#community/test_concurrent_log_event_two_connections_keeps_linear_chain",
+      "query": "tag:#community/TestLooksLikeCredential",
       "color": {
         "a": 1,
         "rgb": 5873999
@@ -14673,7 +14673,7 @@
       }
     },
     {
-      "query": "tag:#community/TestKeyLeakDetection",
+      "query": "tag:#community/TestFromAnomalyAlert",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -14687,7 +14687,7 @@
       }
     },
     {
-      "query": "tag:#community/get_falco_summary",
+      "query": "tag:#community/TestKnownServices",
       "color": {
         "a": 1,
         "rgb": 10253663
@@ -14708,7 +14708,7 @@
       }
     },
     {
-      "query": "tag:#community/StreamHead",
+      "query": "tag:#community/TestStreamingProxyStatusPropagation",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -14736,7 +14736,7 @@
       }
     },
     {
-      "query": "tag:#community/KeyInjector",
+      "query": "tag:#community/Multi-Layer_Detection_Strategy",
       "color": {
         "a": 1,
         "rgb": 15583560
@@ -14750,7 +14750,7 @@
       }
     },
     {
-      "query": "tag:#community/TestSkillsReloadEndpoint",
+      "query": "tag:#community/env_guardpy",
       "color": {
         "a": 1,
         "rgb": 16752039
@@ -14764,21 +14764,21 @@
       }
     },
     {
-      "query": "tag:#community/TestInferPermission",
+      "query": "tag:#community/TestStatusHelpers",
       "color": {
         "a": 1,
         "rgb": 12234924
       }
     },
     {
-      "query": "tag:#community/TestPermissionLevel",
+      "query": "tag:#community/test_upgrade_hermes_restarts_the_real_container_name",
       "color": {
         "a": 1,
         "rgb": 5142951
       }
     },
     {
-      "query": "tag:#community/_fake_aiohttp",
+      "query": "tag:#community/MCPServerConfig",
       "color": {
         "a": 1,
         "rgb": 15896107
@@ -15058,14 +15058,14 @@
       }
     },
     {
-      "query": "tag:#community/TestParamSanitization",
+      "query": "tag:#community/fixture",
       "color": {
         "a": 1,
         "rgb": 15896107
       }
     },
     {
-      "query": "tag:#community/TestHighSeverity",
+      "query": "tag:#community/Authentication_and_Authorization_Framework",
       "color": {
         "a": 1,
         "rgb": 14767961
@@ -15079,21 +15079,21 @@
       }
     },
     {
-      "query": "tag:#community/email_send",
+      "query": "tag:#community/test_startup_telegram_calls_use_system_header",
       "color": {
         "a": 1,
         "rgb": 5873999
       }
     },
     {
-      "query": "tag:#community/_resolve_bot_container",
+      "query": "tag:#community/test_mcp_tool_filtering",
       "color": {
         "a": 1,
         "rgb": 15583560
       }
     },
     {
-      "query": "tag:#community/get_user_role",
+      "query": "tag:#community/test_agentshroud_name_not_redacted",
       "color": {
         "a": 1,
         "rgb": 11565729
@@ -15114,17 +15114,10 @@
       }
     },
     {
-      "query": "tag:#community/MemoryTokenStorage",
+      "query": "tag:#community/lvgl_kawaii_faceh",
       "color": {
         "a": 1,
         "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_default_transport_is_smtp_ssl",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
       }
     },
     {
@@ -15191,13 +15184,6 @@
       }
     },
     {
-      "query": "tag:#community/TestCheckAll",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
       "query": "tag:#community/TestSnapshotSmoke",
       "color": {
         "a": 1,
@@ -15219,20 +15205,6 @@
       }
     },
     {
-      "query": "tag:#community/TestOwnerMirrorCoalescing",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/_results",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
       "query": "tag:#community/TestHiddenContent",
       "color": {
         "a": 1,
@@ -15251,20 +15223,6 @@
       "color": {
         "a": 1,
         "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_egress_callback_non_dict_result_is_handled",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_egress_callback_from_collaborator_is_rejected",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
       }
     },
     {
@@ -15587,13 +15545,6 @@
       "color": {
         "a": 1,
         "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/_run_disconnect_test",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
       }
     },
     {
@@ -15996,13 +15947,6 @@
       }
     },
     {
-      "query": "tag:#community/require_auth",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
       "query": "tag:#community/_LegacyStubApprovalQueue",
       "color": {
         "a": 1,
@@ -16014,27 +15958,6 @@
       "color": {
         "a": 1,
         "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/FastAPI",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/TestKeyRedaction",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/TestSingleUseGrants",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
       }
     },
     {
@@ -16108,13 +16031,6 @@
       }
     },
     {
-      "query": "tag:#community/TestKeyRotation",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
       "query": "tag:#community/test_dashboard_fallback_when_template_missing",
       "color": {
         "a": 1,
@@ -16122,45 +16038,10 @@
       }
     },
     {
-      "query": "tag:#community/TestKeyScoping",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/TestTrustLevels",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/TestDefaultBotId",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/TestTrustMapping",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
       "query": "tag:#community/TestExtractUserId",
       "color": {
         "a": 1,
         "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/TestDefenseLayerVocabulary",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
       }
     },
     {
@@ -16182,13 +16063,6 @@
       "color": {
         "a": 1,
         "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/TestConcurrency",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
       }
     },
     {
@@ -16654,31 +16528,10 @@
       }
     },
     {
-      "query": "tag:#community/test_api_alerts_endpoint_emits_bus_event",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
       "query": "tag:#community/TestTempFiles",
       "color": {
         "a": 1,
         "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/TestLocalAgentHealthHelper",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/TestReversibilityScoring",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
       }
     },
     {
@@ -16752,24 +16605,10 @@
       }
     },
     {
-      "query": "tag:#community/_skills_reload_impl",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
       "query": "tag:#community/TestZeroWidthAttacks",
       "color": {
         "a": 1,
         "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/BufferHandler",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
       }
     },
     {
@@ -16987,13 +16826,6 @@
       "color": {
         "a": 1,
         "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/CollabMode",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
       }
     },
     {
@@ -17312,24 +17144,10 @@
       }
     },
     {
-      "query": "tag:#community/get_private_access_events",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
       "query": "tag:#community/test_webhook_receiver_passes_agent_id_as_bot_id",
       "color": {
         "a": 1,
         "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/get_private_redaction_events",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
       }
     },
     {
@@ -17365,20 +17183,6 @@
       "color": {
         "a": 1,
         "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/record_private_data_redaction",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/ConsistencyScore",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
       }
     },
     {
@@ -17487,13 +17291,6 @@
       }
     },
     {
-      "query": "tag:#community/get_status",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
       "query": "tag:#community/TestAppStateHas",
       "color": {
         "a": 1,
@@ -17508,20 +17305,6 @@
       }
     },
     {
-      "query": "tag:#community/InjectionRule",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/TestRateLimiting",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
       "query": "tag:#community/TestMultiTurnTracker",
       "color": {
         "a": 1,
@@ -17533,41 +17316,6 @@
       "color": {
         "a": 1,
         "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_edge_cases",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/TestEncodedInjection",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/TestCleanContent",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_encoding_detector_decodes_rot13_injection",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_logging",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
       }
     },
     {
@@ -18271,13 +18019,6 @@
       }
     },
     {
-      "query": "tag:#community/flush",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
       "query": "tag:#community/ingest_api/__init__py",
       "color": {
         "a": 1,
@@ -18338,13 +18079,6 @@
       "color": {
         "a": 1,
         "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/setup_method",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
       }
     },
     {
@@ -19853,255 +19587,10 @@
       }
     },
     {
-      "query": "tag:#community/test_performance",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
       "query": "tag:#community/TestExpiredUsageCleanup",
       "color": {
         "a": 1,
         "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_owner_revoke_command_persists_pause_to_disk",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_outbound_owner_exempt_from_fail_closed",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_form_outbound_pipeline_sanitized_text_applied",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_form_outbound_pipeline_block_non_owner",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_form_outbound_fails_closed_for_non_owner",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_embedded_web_fetch_json_queues_approval_when_available",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_form_outbound_owner_exempt_from_fail_closed",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_queues_egress_approval_when_available",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_approval_queue_is_cooldown_deduped",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_approval_cooldown_is_scheme_port_scoped",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_approval_prunes_expired_cooldown_entries",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_approval_normalizes_leading_dot_domain",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_approval_strips_trailing_punctuation",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_invalid_host_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_filename_reference_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_explicit_md_tld_domain_still_queues_approval",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_ip_host_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_url_with_trailing_backtick_still_queues_approval",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_url_with_control_character_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_url_with_backslashes_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_non_http_scheme_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_info_filter_redaction_escalates_to_block_for_non_owner",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_userinfo_url_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_non_standard_port_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_internal_suffix_domain_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_numeric_tld_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_scheme_relative_url_queues_https_approval",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_pipeline_receives_trust_level",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_clean_content_passes_through",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/TestMediumSeverity",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_ws_pipeline_error_logs_and_recovers_to_idle",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
       }
     },
     {
@@ -20144,13 +19633,6 @@
       "color": {
         "a": 1,
         "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_openclaw_patch_script_emits_per_chat_group_agents",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
       }
     },
     {
@@ -20329,367 +19811,10 @@
       }
     },
     {
-      "query": "tag:#community/test_common_tools_not_filtered",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_telegram_user_id_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_security_architecture_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_credential_path_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_operational_path_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_code_block_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_partial_xml_tool_tag_is_filtered",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/setup_method",
+      "query": "tag:#community/OutboundInfoFilter",
       "color": {
         "a": 1,
         "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_collaborator_name_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_admin_private_service_data_redacted",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_multiple_categories",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_initialization_default",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_trust_level_overrides",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_monitor_mode",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_risk_classification",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_initialization_with_config",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_edge_cases",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_pattern_overlaps",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_context_aware_user_id_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_tailscale_hostname_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_custom_patterns",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_stats",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_comprehensive_attack_scenarios",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_tailnet_id_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_internal_url_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_private_ip_filtering",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_collaborator_egress_approval_banner_is_redacted_json",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_provider_error_is_rewritten_for_json_message_field",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_provider_error_slash_variant_is_rewritten_for_form_payload",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_content_field",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_error_without_embedding_provider_hint_is_not_rewritten_for_form_payload",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_healthcheck_skill_error_without_sandbox_hint_is_not_rewritten_for_form_payload",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_healthcheck_sandbox_message_without_skill_md_is_not_rewritten_for_form_content",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_provider_error_is_rewritten_for_form_caption_field",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_json_without_content_type_is_still_filtered",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_json_without_content_type_empty_text_with_message_is_still_filtered",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_urlencoded_collaborator_no_reply_gets_protected_notice",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_html_parse_mode_preserved_without_redaction_placeholders",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_form_payload_with_draft_field_is_filtered",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_long_outbound_message_quarantined",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_pii_redacted_on_outbound",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
-      }
-    },
-    {
-      "query": "tag:#community/test_plain_no_reply_token_for_collaborator_gets_protected_notice",
-      "color": {
-        "a": 1,
-        "rgb": 11565729
-      }
-    },
-    {
-      "query": "tag:#community/test_plain_no_reply_token_with_punctuation_is_rewritten",
-      "color": {
-        "a": 1,
-        "rgb": 16752039
-      }
-    },
-    {
-      "query": "tag:#community/test_collaborator_not_authorized_command_text_is_normalized_form",
-      "color": {
-        "a": 1,
-        "rgb": 10253663
-      }
-    },
-    {
-      "query": "tag:#community/test_collaborator_legacy_protected_prefix_is_normalized_json",
-      "color": {
-        "a": 1,
-        "rgb": 12234924
-      }
-    },
-    {
-      "query": "tag:#community/test_collaborator_legacy_protected_prefix_is_normalized_form",
-      "color": {
-        "a": 1,
-        "rgb": 5142951
-      }
-    },
-    {
-      "query": "tag:#community/test_ollama_tools_unsupported_error_is_sanitized",
-      "color": {
-        "a": 1,
-        "rgb": 15896107
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_provider_error_variant_is_rewritten_generic",
-      "color": {
-        "a": 1,
-        "rgb": 14767961
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_provider_guidance_phrase_is_rewritten_generic",
-      "color": {
-        "a": 1,
-        "rgb": 7780274
-      }
-    },
-    {
-      "query": "tag:#community/test_truncated_model_sentence_is_rewritten_to_active_model_hint",
-      "color": {
-        "a": 1,
-        "rgb": 5873999
-      }
-    },
-    {
-      "query": "tag:#community/test_memory_provider_error_with_explicit_memory_command_keeps_memory_guidance",
-      "color": {
-        "a": 1,
-        "rgb": 15583560
       }
     }
   ]

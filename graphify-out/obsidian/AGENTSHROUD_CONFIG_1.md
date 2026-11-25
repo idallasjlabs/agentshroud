@@ -15,8 +15,8 @@ tags:
 - [[AGENTSHROUD_CONFIG]] - `contains` [EXTRACTED]
 - [[Default Search Order (when NOT set)]] - `contains` [EXTRACTED]
 - [[Description_13]] - `contains` [EXTRACTED]
-- [[Related Notes_55]] - `contains` [EXTRACTED]
-- [[Usage_28]] - `contains` [EXTRACTED]
+- [[Related Notes_58]] - `contains` [EXTRACTED]
+- [[Usage_29]] - `contains` [EXTRACTED]
 - [[When to Set]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG

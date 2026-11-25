@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/state.py"
 type: "code"
-community: "lifespan.py"
+community: "ingest_api/config.py"
 location: "L23"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/ingest_api/configpy
 ---
 
 # AppState
@@ -29,4 +29,4 @@ tags:
 - [[UserSessionManager]] - `uses` [INFERRED]
 - [[state.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

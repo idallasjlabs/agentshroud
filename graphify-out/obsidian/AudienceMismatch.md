@@ -12,7 +12,7 @@ tags:
 # AudienceMismatch
 
 ## Connections
-- [[dot-validate()_3]] - `calls` [EXTRACTED]
+- [[dot-validate()_1]] - `calls` [EXTRACTED]
 - [[TestAudienceValidation]] - `uses` [INFERRED]
 - [[TestAuditLogging_1]] - `uses` [INFERRED]
 - [[TokenError]] - `inherits` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestReadAccess"
+community: "test_privilege_separation.py"
 location: "L213"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestReadAccess
+  - community/test_privilege_separationpy
 ---
 
 # Agent can read its own workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_workspace_read_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestReadAccess
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

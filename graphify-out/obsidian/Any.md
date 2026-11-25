@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "MiddlewareManager"
+community: ".process_request"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/process_request
 ---
 
 # Any
@@ -20,4 +20,4 @@ tags:
 - [[dot-process_request()]] - `references` [EXTRACTED]
 - [[dot-process_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/process_request

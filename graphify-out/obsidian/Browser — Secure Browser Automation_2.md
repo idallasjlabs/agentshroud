@@ -12,9 +12,9 @@ tags:
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_134]] - `contains` [EXTRACTED]
+- [[Purpose_136]] - `contains` [EXTRACTED]
 - [[Related Skills_66]] - `contains` [EXTRACTED]
-- [[Usage_76]] - `contains` [EXTRACTED]
+- [[Usage_77]] - `contains` [EXTRACTED]
 - [[openclawskillsi-browserREADME]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 

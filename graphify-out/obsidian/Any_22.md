@@ -1,20 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayBackedProvider"
+community: "test_mcp_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/test_mcp_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_48]] - `references` [EXTRACTED]
-- [[dot-_token()]] - `references` [EXTRACTED]
-- [[dot-call()]] - `references` [EXTRACTED]
-- [[dot-exchange_identity_assertion()]] - `references` [EXTRACTED]
-- [[dot-revoke_token()]] - `references` [EXTRACTED]
+- [[dot-_redact_pii()]] - `references` [EXTRACTED]
+- [[dot-_scan_value()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_call()]] - `references` [EXTRACTED]
+- [[dot-inspect_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

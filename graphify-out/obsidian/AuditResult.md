@@ -12,7 +12,7 @@ tags:
 # AuditResult
 
 ## Connections
-- [[Enum_39]] - `inherits` [EXTRACTED]
+- [[Enum_38]] - `inherits` [EXTRACTED]
 - [[_decide_approval()]] - `uses` [INFERRED]
 - [[_log_audit()]] - `uses` [INFERRED]
 - [[_run_killswitch()]] - `uses` [INFERRED]
@@ -23,7 +23,7 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[start_service()]] - `uses` [INFERRED]
 - [[stop_service()]] - `uses` [INFERRED]
-- [[str_22]] - `inherits` [EXTRACTED]
+- [[str_21]] - `inherits` [EXTRACTED]
 - [[test_approvals_mfa_required_is_403()]] - `uses` [INFERRED]
 - [[test_killswitch_failure_is_audited_as_failed()]] - `uses` [INFERRED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]

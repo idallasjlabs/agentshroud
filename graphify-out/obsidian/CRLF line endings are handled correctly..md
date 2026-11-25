@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_utils_secrets.py"
 type: "rationale"
-community: "read_secret"
+community: "secrets.py"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/read_secret
+  - community/secretspy
 ---
 
 # CRLF line endings are handled correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_crlf_stripped()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/read_secret
+#graphify/rationale #graphify/EXTRACTED #community/secretspy

@@ -1,25 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "TestApprovalHardening"
+community: "PIIConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/PIIConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-_check_description_parameter_mismatch()]] - `references` [EXTRACTED]
-- [[dot-_check_parameter_obfuscation()]] - `references` [EXTRACTED]
-- [[dot-_check_repeat_request_patterns()]] - `references` [EXTRACTED]
-- [[dot-_create_parameter_fingerprint()]] - `references` [EXTRACTED]
-- [[dot-_format_parameters_with_highlighting()]] - `references` [EXTRACTED]
-- [[dot-analyze_request()]] - `references` [EXTRACTED]
-- [[dot-format_hardened_message()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_7]] - `references` [EXTRACTED]
-- [[dot-is_request_in_cooldown()]] - `references` [EXTRACTED]
-- [[dot-record_denied_request()]] - `references` [EXTRACTED]
+- [[dot-__init__()_101]] - `references` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L295"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # A non-owner user_id is not a spoof risk and must pass through unchanged (it…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_owner_body_user_id_passes_through()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

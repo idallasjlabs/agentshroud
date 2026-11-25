@@ -12,6 +12,6 @@ tags:
 # Archive a card
 
 ## Connections
-- [[Usage_18]] - `contains` [EXTRACTED]
+- [[Usage_19]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Usage

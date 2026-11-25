@@ -1,19 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "EnvelopeSigner"
+community: "test_dashboard_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/test_dashboard_endpointspy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_parse()]] - `references` [EXTRACTED]
-- [[dot-run()_9]] - `references` [EXTRACTED]
-- [[dot-run()_10]] - `references` [EXTRACTED]
-- [[dot-run()_11]] - `references` [EXTRACTED]
+- [[dot-recent()]] - `references` [EXTRACTED]
+- [[dot-tail()]] - `references` [EXTRACTED]
+- [[_check_host()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

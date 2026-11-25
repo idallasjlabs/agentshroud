@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "MemoryLifecycleManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/MemoryLifecycleManager
 ---
 
 # Any
 
 ## Connections
-- [[build_edge_service()]] - `references` [EXTRACTED]
+- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

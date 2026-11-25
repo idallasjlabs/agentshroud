@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._monitor_resources"
+community: "._get_disk_io_stats"
 location: "L103"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_monitor_resources
+  - community/_get_disk_io_stats
 ---
 
 # Add a callback function to be called when resource alerts are triggered.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-add_alert_callback()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_monitor_resources
+#graphify/rationale #graphify/EXTRACTED #community/_get_disk_io_stats

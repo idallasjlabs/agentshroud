@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentTarget"
+community: "test_agent_cve_registry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_agent_cve_registrypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
-- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
-- [[dot-health_check()_3]] - `references` [EXTRACTED]
+- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy

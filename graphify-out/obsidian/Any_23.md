@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_telegram_replay.py"
+community: "MCPAuditTrail"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/MCPAuditTrail
 ---
 
 # Any
 
 ## Connections
-- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
-- [[dot-record_inbound()]] - `references` [EXTRACTED]
+- [[dot-generate_report()]] - `references` [EXTRACTED]
+- [[dot-log_tool_call()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

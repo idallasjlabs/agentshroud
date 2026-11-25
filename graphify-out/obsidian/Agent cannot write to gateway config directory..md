@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestConfigurationProtection"
+community: "test_privilege_separation.py"
 location: "L138"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestConfigurationProtection
+  - community/test_privilege_separationpy
 ---
 
 # Agent cannot write to gateway config directory.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_gateway_config_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestConfigurationProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

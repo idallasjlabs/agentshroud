@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py"
+community: "test_dashboard_endpoints.py"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/test_dashboard_endpointspy
 ---
 
 # AlertStore
 
 ## Connections
-- [[dot-__init__()_215]] - `method` [EXTRACTED]
+- [[dot-__init__()_217]] - `method` [EXTRACTED]
 - [[dot-push()_4]] - `method` [EXTRACTED]
 - [[dot-recent()]] - `method` [EXTRACTED]
 - [[dot-summary()]] - `method` [EXTRACTED]
@@ -21,4 +21,4 @@ tags:
 - [[test_alert_store_push_and_summary()]] - `calls` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

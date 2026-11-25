@@ -1,24 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "CompetitiveIntelReport"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/CompetitiveIntelReport
 ---
 
 # BaseModel
 
 ## Connections
-- [[AuditLogEntry]] - `inherits` [EXTRACTED]
-- [[ContributorRecord]] - `inherits` [EXTRACTED]
-- [[EgressRequest_1]] - `inherits` [EXTRACTED]
-- [[ResourceUsage_1]] - `inherits` [EXTRACTED]
-- [[SCLConfirmationRequired]] - `inherits` [EXTRACTED]
-- [[SCLError]] - `inherits` [EXTRACTED]
-- [[SecurityEvent]] - `inherits` [EXTRACTED]
-- [[ServiceDescriptor]] - `inherits` [EXTRACTED]
-- [[WSEvent]] - `inherits` [EXTRACTED]
+- [[Citation]] - `inherits` [EXTRACTED]
+- [[CompetitiveIntelReport]] - `inherits` [EXTRACTED]
+- [[CompetitorEntry]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

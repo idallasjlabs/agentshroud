@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # Batch F1 — v0.8.0 "Watchtower" E2E Test Suite (10 enforcement scenarios). These…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_e2e_watchtower.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

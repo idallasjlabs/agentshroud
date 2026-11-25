@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalRequest"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/RBACConfig
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_24]] - `references` [EXTRACTED]
-- [[dot-_default_send()]] - `references` [EXTRACTED]
+- [[dot-check_permission()_1]] - `references` [EXTRACTED]
+- [[dot-get_user_permissions_summary()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

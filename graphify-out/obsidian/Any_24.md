@@ -1,20 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "SCLClient"
+community: "generate_report"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/generate_report
 ---
 
 # Any
 
 ## Connections
-- [[dot-_request()]] - `references` [EXTRACTED]
-- [[dot-delete()_1]] - `references` [EXTRACTED]
-- [[dot-get()]] - `references` [EXTRACTED]
-- [[dot-post()]] - `references` [EXTRACTED]
-- [[dot-put()]] - `references` [EXTRACTED]
+- [[calculate_overall_score()]] - `references` [EXTRACTED]
+- [[calculate_tool_score()]] - `references` [EXTRACTED]
+- [[format_report()]] - `references` [EXTRACTED]
+- [[generate_report()]] - `references` [EXTRACTED]
+- [[get_trend()]] - `references` [EXTRACTED]
+- [[save_to_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/generate_report

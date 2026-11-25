@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestWebProxySecurityIntegration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Any
 
 ## Connections
-- [[dot-broadcast()_1]] - `references` [EXTRACTED]
-- [[dot-submit_tool_request()_2]] - `references` [EXTRACTED]
+- [[dot-_audit()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_8]] - `references` [EXTRACTED]
+- [[dot-to_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Purpose_179]] - `contains` [EXTRACTED]
 - [[Related Skills_121]] - `contains` [EXTRACTED]
-- [[Usage_137]] - `contains` [EXTRACTED]
+- [[Usage_138]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/hermes/skills/i-bs/READMEmd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestAgentShroudSourceCodeProtection"
+community: "test_privilege_separation.py"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAgentShroudSourceCodeProtection
+  - community/test_privilege_separationpy
 ---
 
 # Agent cannot write to security framework files.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_security_module_write_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAgentShroudSourceCodeProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

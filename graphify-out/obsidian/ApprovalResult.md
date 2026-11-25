@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "egress_approval.py"
+community: "ApprovalMode"
 location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/ApprovalMode
 ---
 
 # ApprovalResult
 
 ## Connections
 - [[dot-request_approval()]] - `references` [EXTRACTED]
-- [[Enum_12]] - `inherits` [EXTRACTED]
+- [[Enum_10]] - `inherits` [EXTRACTED]
 - [[Result of an approval request.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 - [[test_egress_filter.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalMode

@@ -1,23 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "make_event"
+community: "EnvironmentGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/EnvironmentGuard
 ---
 
 # Any
 
 ## Connections
-- [[dot-_p0()]] - `references` [EXTRACTED]
-- [[dot-_record()]] - `references` [EXTRACTED]
-- [[dot-_scrub()]] - `references` [EXTRACTED]
-- [[dot-call_tool()]] - `references` [EXTRACTED]
-- [[dot-list_tools()]] - `references` [EXTRACTED]
-- [[dot-run()]] - `references` [EXTRACTED]
-- [[_result()]] - `references` [EXTRACTED]
-- [[_string_leaves()]] - `references` [EXTRACTED]
+- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
+- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

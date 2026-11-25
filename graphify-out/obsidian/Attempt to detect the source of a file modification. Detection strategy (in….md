@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "rationale"
-community: "middleware.py"
+community: "MemoryIntegrityMonitor"
 location: "L171"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryIntegrityMonitor
 ---
 
 # Attempt to detect the source of a file modification. Detection strategy (in…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_detect_modification_source()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/MemoryIntegrityMonitor

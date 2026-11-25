@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # BaseModel
@@ -15,4 +15,4 @@ tags:
 - [[ProjectConfig]] - `inherits` [EXTRACTED]
 - [[TeamsConfig]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

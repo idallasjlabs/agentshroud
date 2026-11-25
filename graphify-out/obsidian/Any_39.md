@@ -1,20 +1,25 @@
 ---
 source_file: ""
 type: "code"
-community: "RedactionResult"
+community: "migrate-cve-registry-ghsa.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/migrate-cve-registry-ghsapy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_108]] - `references` [EXTRACTED]
-- [[dot-_extract_dict_content()]] - `references` [EXTRACTED]
-- [[dot-_extract_scannable_content()]] - `references` [EXTRACTED]
-- [[dot-_reconstruct_result()]] - `references` [EXTRACTED]
-- [[dot-sanitize_tool_result()]] - `references` [EXTRACTED]
+- [[_advisory_text_tokens()]] - `references` [EXTRACTED]
+- [[build_id_plan()]] - `references` [EXTRACTED]
+- [[compute_stats()]] - `references` [EXTRACTED]
+- [[fetch_advisories()]] - `references` [EXTRACTED]
+- [[gather_advisories()]] - `references` [EXTRACTED]
+- [[load_registry()]] - `references` [EXTRACTED]
+- [[load_snapshot()]] - `references` [EXTRACTED]
+- [[match_entry()]] - `references` [EXTRACTED]
+- [[render_manual_review()]] - `references` [EXTRACTED]
+- [[rewrite_registry_text()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy

@@ -1,21 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "version_routes.py"
+community: "descriptors.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/descriptorspy
 ---
 
 # Any
 
 ## Connections
-- [[downgrade_version()]] - `references` [EXTRACTED]
-- [[get_current_version()]] - `references` [EXTRACTED]
-- [[get_version_history()]] - `references` [EXTRACTED]
-- [[review_version()]] - `references` [EXTRACTED]
-- [[rollback_version()]] - `references` [EXTRACTED]
-- [[upgrade_version()]] - `references` [EXTRACTED]
+- [[build_manifest()]] - `references` [EXTRACTED]
+- [[canonical_bytes()]] - `references` [EXTRACTED]
+- [[descriptor_hash()]] - `references` [EXTRACTED]
+- [[verify_descriptors()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/descriptorspy

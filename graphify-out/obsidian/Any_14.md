@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnvironmentGuard"
+community: "TestResourceGuardAlertBridge"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvironmentGuard
+  - community/TestResourceGuardAlertBridge
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_leakage_summary()]] - `references` [EXTRACTED]
-- [[dot-monitor_environment_access()]] - `references` [EXTRACTED]
+- [[dot-_build_bridge()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard
+#graphify/code #graphify/EXTRACTED #community/TestResourceGuardAlertBridge

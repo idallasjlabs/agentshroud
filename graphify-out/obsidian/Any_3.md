@@ -1,17 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "run"
+community: "test_security_toolchain.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/test_security_toolchainpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_3]] - `references` [EXTRACTED]
-- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
+- [[dot-_handle_critical()]] - `references` [EXTRACTED]
+- [[categorize_alerts()]] - `references` [EXTRACTED]
+- [[generate_summary()]] - `references` [EXTRACTED]
+- [[parse_alert()]] - `references` [EXTRACTED]
+- [[read_alerts()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/test_security_toolchainpy

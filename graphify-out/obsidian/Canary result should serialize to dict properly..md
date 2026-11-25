@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_canary.py"
 type: "rationale"
-community: "lifespan.py"
+community: "test_canary.py"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_canarypy
 ---
 
 # Canary result should serialize to dict properly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_canary_result_serialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/test_canarypy

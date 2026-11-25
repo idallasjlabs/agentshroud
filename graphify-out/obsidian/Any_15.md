@@ -1,16 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "GatewayBackedProvider"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/GatewayBackedProvider
 ---
 
 # Any
 
 ## Connections
-- [[dot-to_dict()_4]] - `references` [EXTRACTED]
+- [[dot-__init__()_141]] - `references` [EXTRACTED]
+- [[dot-_token()]] - `references` [EXTRACTED]
+- [[dot-call()]] - `references` [EXTRACTED]
+- [[dot-exchange_identity_assertion()]] - `references` [EXTRACTED]
+- [[dot-revoke_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider

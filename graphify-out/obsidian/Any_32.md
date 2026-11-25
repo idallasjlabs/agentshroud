@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "OutputCanary"
+community: "DockerEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/DockerEngine
 ---
 
 # Any
 
 ## Connections
-- [[dot-_scan_for_canary()]] - `references` [EXTRACTED]
-- [[dot-get_status()]] - `references` [EXTRACTED]
+- [[dot-inspect()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

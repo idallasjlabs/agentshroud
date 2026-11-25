@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-__call__()_2]] - `method` [EXTRACTED]
-- [[dot-__init__()_18]] - `method` [EXTRACTED]
-- [[dot-__init__()_64]] - `calls` [INFERRED]
-- [[dot-__init__()_40]] - `calls` [INFERRED]
+- [[dot-__init__()_14]] - `method` [EXTRACTED]
+- [[dot-__init__()_72]] - `calls` [INFERRED]
+- [[dot-__init__()_36]] - `calls` [INFERRED]
 - [[dot-_handler()]] - `calls` [INFERRED]
 - [[dot-_mock_request()]] - `calls` [INFERRED]
 - [[dot-_mock_websocket()]] - `calls` [INFERRED]
@@ -192,8 +192,8 @@ tags:
 - [[_make_ws()]] - `calls` [INFERRED]
 - [[_mock_ws()]] - `calls` [INFERRED]
 - [[_run_disconnect_test()]] - `calls` [INFERRED]
-- [[client()_7]] - `calls` [INFERRED]
-- [[client()_8]] - `calls` [INFERRED]
+- [[client()_1]] - `calls` [INFERRED]
+- [[client()_6]] - `calls` [INFERRED]
 - [[mock_create_subprocess()]] - `calls` [INFERRED]
 - [[run()_4]] - `calls` [INFERRED]
 - [[test_audit_export_cef()]] - `calls` [INFERRED]

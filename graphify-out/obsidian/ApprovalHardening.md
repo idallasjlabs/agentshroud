@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_113]] - `method` [EXTRACTED]
+- [[dot-__init__()_107]] - `method` [EXTRACTED]
 - [[dot-_check_description_parameter_mismatch()]] - `method` [EXTRACTED]
 - [[dot-_check_misleading_language()]] - `method` [EXTRACTED]
 - [[dot-_check_parameter_obfuscation()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-_normalize_description()]] - `method` [EXTRACTED]
 - [[dot-analyze_request()]] - `method` [EXTRACTED]
 - [[dot-format_hardened_message()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_7]] - `method` [EXTRACTED]
+- [[dot-get_stats()_9]] - `method` [EXTRACTED]
 - [[dot-hardening()]] - `calls` [EXTRACTED]
 - [[dot-is_request_in_cooldown()]] - `method` [EXTRACTED]
 - [[dot-record_denied_request()]] - `method` [EXTRACTED]

@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "._monitor_resources"
+community: "test_telegram_replay.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_monitor_resources
+  - community/test_telegram_replaypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_alert_high_usage()]] - `references` [EXTRACTED]
-- [[dot-_get_disk_io_stats()]] - `references` [EXTRACTED]
-- [[dot-add_alert_callback()]] - `references` [EXTRACTED]
-- [[dot-get_usage_stats()]] - `references` [EXTRACTED]
+- [[dot-pull_undelivered()]] - `references` [EXTRACTED]
+- [[dot-record_inbound()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_monitor_resources
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

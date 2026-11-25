@@ -17,7 +17,7 @@ tags:
 - [[Colors_1]] - `contains` [EXTRACTED]
 - [[Communication Templates_1]] - `contains` [EXTRACTED]
 - [[Key Messaging_1]] - `contains` [EXTRACTED]
-- [[License_5]] - `contains` [EXTRACTED]
+- [[License_6]] - `contains` [EXTRACTED]
 - [[Logo Usage_2]] - `contains` [EXTRACTED]
 - [[Social Handles_1]] - `contains` [EXTRACTED]
 - [[Trademark_1]] - `contains` [EXTRACTED]

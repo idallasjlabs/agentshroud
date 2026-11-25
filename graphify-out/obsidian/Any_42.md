@@ -1,18 +1,25 @@
 ---
 source_file: ""
 type: "code"
-community: "OutboundInfoFilter"
+community: "TestApprovalHardening"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/TestApprovalHardening
 ---
 
 # Any
 
 ## Connections
-- [[dot-__init__()_121]] - `references` [EXTRACTED]
-- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_8]] - `references` [EXTRACTED]
+- [[dot-_check_description_parameter_mismatch()]] - `references` [EXTRACTED]
+- [[dot-_check_parameter_obfuscation()]] - `references` [EXTRACTED]
+- [[dot-_check_repeat_request_patterns()]] - `references` [EXTRACTED]
+- [[dot-_create_parameter_fingerprint()]] - `references` [EXTRACTED]
+- [[dot-_format_parameters_with_highlighting()]] - `references` [EXTRACTED]
+- [[dot-analyze_request()]] - `references` [EXTRACTED]
+- [[dot-format_hardened_message()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_9]] - `references` [EXTRACTED]
+- [[dot-is_request_in_cooldown()]] - `references` [EXTRACTED]
+- [[dot-record_denied_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

@@ -1,16 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "TestAggregateResults"
+community: "EventBus"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/EventBus
 ---
 
 # Any
 
 ## Connections
-- [[_stub_summary()]] - `references` [EXTRACTED]
+- [[dot-get_recent()]] - `references` [EXTRACTED]
+- [[dot-get_stats()]] - `references` [EXTRACTED]
+- [[dot-to_dict()]] - `references` [EXTRACTED]
+- [[make_event()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/EventBus

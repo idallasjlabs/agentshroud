@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_mock_ws"
+community: "asyncio"
 location: "L2265"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # Build a MagicMock WebSocket for direct voice_endpoint() tests. Frames are…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_mock_ws()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_mock_ws
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

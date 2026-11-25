@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestWorkspaceAccessPreserved"
+community: "test_privilege_separation.py"
 location: "L185"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestWorkspaceAccessPreserved
+  - community/test_privilege_separationpy
 ---
 
 # Agent can still write to its own workspace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestWorkspaceAccessPreserved]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestWorkspaceAccessPreserved
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

@@ -12,9 +12,9 @@ tags:
 # 8D Root Cause Analysis
 
 ## Connections
-- [[Purpose_97]] - `contains` [EXTRACTED]
+- [[Purpose_99]] - `contains` [EXTRACTED]
 - [[Related Skills_29]] - `contains` [EXTRACTED]
-- [[Usage_39]] - `contains` [EXTRACTED]
+- [[Usage_40]] - `contains` [EXTRACTED]
 - [[eightd-root-cause-analysisREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis

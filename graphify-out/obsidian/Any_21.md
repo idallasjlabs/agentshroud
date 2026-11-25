@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestResourceGuardAlertBridge"
+community: "test_mcp_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestResourceGuardAlertBridge
+  - community/test_mcp_proxypy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_build_bridge()]] - `references` [EXTRACTED]
+- [[dot-from_dict()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestResourceGuardAlertBridge
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

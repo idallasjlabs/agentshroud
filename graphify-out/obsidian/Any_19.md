@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "._handle"
+community: "TokenValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/TokenValidator
 ---
 
 # Any
 
 ## Connections
-- [[dot-__call__()_4]] - `references` [EXTRACTED]
-- [[dot-__init__()_35]] - `references` [EXTRACTED]
-- [[dot-_clean_tool()]] - `references` [EXTRACTED]
-- [[dot-_coerce()]] - `references` [EXTRACTED]
-- [[dot-_handle()]] - `references` [EXTRACTED]
+- [[dot-_decode_token()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/TokenValidator
