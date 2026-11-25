@@ -18,7 +18,7 @@ tags:
 - [[Dockerfile.bot]] - `contains` [EXTRACTED]
 - [[Image Labels (OCI)_1]] - `contains` [EXTRACTED]
 - [[Pre-installed Tools_1]] - `contains` [EXTRACTED]
-- [[Related Notes_22]] - `contains` [EXTRACTED]
+- [[Related Notes_23]] - `contains` [EXTRACTED]
 - [[Scripts Copied to `usrlocalbin`]] - `contains` [EXTRACTED]
 - [[Security Patches Applied at Build Time]] - `contains` [EXTRACTED]
 - [[TODO (from source)]] - `contains` [EXTRACTED]

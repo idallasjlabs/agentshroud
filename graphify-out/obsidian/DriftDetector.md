@@ -1,27 +1,27 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "ContainerSnapshot"
+community: "DriftDetector"
 location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/DriftDetector
 ---
 
 # DriftDetector
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_44]] - `method` [EXTRACTED]
-- [[dot-_init_db()]] - `method` [EXTRACTED]
+- [[dot-__init__()_183]] - `method` [EXTRACTED]
+- [[dot-_init_db()_2]] - `method` [EXTRACTED]
 - [[dot-acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-check_drift()]] - `method` [EXTRACTED]
-- [[dot-close()_1]] - `method` [EXTRACTED]
+- [[dot-close()_15]] - `method` [EXTRACTED]
 - [[dot-get_alerts()]] - `method` [EXTRACTED]
 - [[dot-get_baseline()]] - `method` [EXTRACTED]
 - [[dot-set_baseline()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
 - [[dot-test_drift_detector_baseline()]] - `calls` [EXTRACTED]
 - [[dot-test_drift_detector_concurrent_writes()]] - `calls` [INFERRED]
 - [[dot-test_drift_detector_detects_change()]] - `calls` [EXTRACTED]
@@ -29,8 +29,8 @@ tags:
 - [[dot-test_simultaneous_baseline_and_config_change()]] - `calls` [EXTRACTED]
 - [[Detect configuration drift from known-good baselines.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[TestAuditTrail]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestAuditTrail_2]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestDriftDetector]] - `uses` [INFERRED]
 - [[TestDriftDetectorHardened]] - `uses` [INFERRED]
 - [[drift_detector.py]] - `contains` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/DriftDetector

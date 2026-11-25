@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/security/canary.py"
 type: "code"
-community: "CanaryTripwire"
-location: "L28"
+community: "test_canary.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CanaryTripwire
+  - community/test_canarypy
 ---
 
 # CanaryResult
 
 ## Connections
-- [[dot-_check_encoded()]] - `calls` [EXTRACTED]
-- [[dot-_check_plain()]] - `calls` [EXTRACTED]
-- [[dot-scan()_1]] - `calls` [EXTRACTED]
-- [[canary_tripwire.py]] - `contains` [EXTRACTED]
+- [[dot-to_dict()_14]] - `method` [EXTRACTED]
+- [[Result of running the canary system.]] - `rationale_for` [EXTRACTED]
+- [[canary.py_2]] - `contains` [EXTRACTED]
+- [[run_canary()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CanaryTripwire
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

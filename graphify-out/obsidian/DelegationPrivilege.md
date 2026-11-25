@@ -17,7 +17,7 @@ tags:
 - [[dot-delegate()]] - `references` [EXTRACTED]
 - [[dot-is_delegated()]] - `references` [EXTRACTED]
 - [[dot-revoke()]] - `references` [EXTRACTED]
-- [[Enum_6]] - `inherits` [EXTRACTED]
+- [[Enum_5]] - `inherits` [EXTRACTED]
 - [[Subset of privileges that can be delegated by the owner.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestAccessControl]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[delegation.py]] - `contains` [EXTRACTED]
 - [[revoke_delegation()]] - `uses` [INFERRED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str_3]] - `inherits` [EXTRACTED]
+- [[str_2]] - `inherits` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 - [[test_delegation.py]] - `imports` [EXTRACTED]
 

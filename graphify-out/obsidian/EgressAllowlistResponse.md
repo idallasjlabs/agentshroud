@@ -12,7 +12,7 @@ tags:
 # EgressAllowlistResponse
 
 ## Connections
-- [[BaseModel_2]] - `inherits` [EXTRACTED]
+- [[BaseModel_3]] - `inherits` [EXTRACTED]
 - [[Response model for egress allowlist.]] - `rationale_for` [EXTRACTED]
 - [[get_egress_allowlist()]] - `calls` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]

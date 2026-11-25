@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestOutboundClassifierHelpers"
+community: "._extract_first_egress_target"
 location: "L4681"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/_extract_first_egress_target
 ---
 
 # Common LLM prose with 'risk:', 'tool:', 'id:' must NOT trigger the matcher.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_no_false_positive_on_generic_llm_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target

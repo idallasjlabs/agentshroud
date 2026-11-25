@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "TelegramAPIProxy"
 location: "L1624"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts requesting direct system/audit log contents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_log_access_request()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

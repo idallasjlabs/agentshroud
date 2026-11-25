@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TrustManager"
+community: "TestPrivilegeEscalation"
 location: "L556"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPrivilegeEscalation
 ---
 
 # Consent framework should be available for gating.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_consent_required_for_sensitive_ops()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/TestPrivilegeEscalation

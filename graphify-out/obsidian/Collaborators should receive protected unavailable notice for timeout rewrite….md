@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "asyncio"
+community: "_make_sanitizer"
 location: "L782"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_make_sanitizer
 ---
 
 # Collaborators should receive protected unavailable notice for timeout rewrite…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_llm_timeout_error_is_normalized_to_protected_unavailable_json()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

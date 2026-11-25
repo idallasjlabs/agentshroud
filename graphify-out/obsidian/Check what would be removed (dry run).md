@@ -1,12 +1,12 @@
 ---
 source_file: "docs/runbooks/colima-docker-guide.md"
 type: "document"
-community: "Colima & Docker Operations Guide — AgentShroud"
+community: "8. Docker System Pruning"
 location: "L411"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Colima__Docker_Operations_Guide__AgentShroud
+  - community/8_Docker_System_Pruning
 ---
 
 # Check what would be removed (dry run)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[8. Docker System Pruning]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Colima__Docker_Operations_Guide__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/8_Docker_System_Pruning

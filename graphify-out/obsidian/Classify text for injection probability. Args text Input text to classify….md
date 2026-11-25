@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "rationale"
-community: "normalize_input"
+community: "TestHeuristicClassifier"
 location: "L165"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/TestHeuristicClassifier
 ---
 
 # Classify text for injection probability. Args: text: Input text to classify…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-classify()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/normalize_input
+#graphify/rationale #graphify/EXTRACTED #community/TestHeuristicClassifier

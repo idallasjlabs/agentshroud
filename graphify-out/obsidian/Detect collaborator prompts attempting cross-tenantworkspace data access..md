@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "TelegramAPIProxy"
 location: "L2113"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts attempting cross-tenant/workspace data access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_cross_tenant_data_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

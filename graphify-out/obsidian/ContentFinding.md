@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "ScanResult"
+community: "WebContentScanner"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/WebContentScanner
 ---
 
 # ContentFinding
@@ -21,4 +21,4 @@ tags:
 - [[A single finding from content scanning.]] - `rationale_for` [EXTRACTED]
 - [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

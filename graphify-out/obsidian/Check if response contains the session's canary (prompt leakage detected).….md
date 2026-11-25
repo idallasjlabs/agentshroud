@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "rationale"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L205"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # Check if response contains the session's canary (prompt leakage detected).…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-check_response()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

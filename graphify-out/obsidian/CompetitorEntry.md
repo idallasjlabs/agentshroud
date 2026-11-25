@@ -18,7 +18,7 @@ tags:
 - [[dot-test_security_score_above_max_rejected()]] - `calls` [EXTRACTED]
 - [[dot-verify_entry()]] - `references` [EXTRACTED]
 - [[A single competitor record in a competitive intel report.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_9]] - `inherits` [EXTRACTED]
+- [[BaseModel_10]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]
 - [[citation_verifier.py]] - `imports` [EXTRACTED]

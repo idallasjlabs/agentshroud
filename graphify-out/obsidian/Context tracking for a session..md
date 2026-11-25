@@ -12,6 +12,6 @@ tags:
 # Context tracking for a session.
 
 ## Connections
-- [[SessionContext_1]] - `rationale_for` [EXTRACTED]
+- [[SessionContext]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/ContextGuard

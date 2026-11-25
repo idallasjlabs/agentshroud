@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # EgressFilterConfig
 
 ## Connections
-- [[dot-__init__()_172]] - `references` [EXTRACTED]
+- [[dot-__init__()_220]] - `references` [EXTRACTED]
 - [[dot-_matches_any_pattern()]] - `method` [EXTRACTED]
 - [[dot-from_environment()]] - `method` [EXTRACTED]
 - [[dot-get_effective_allowlist()]] - `method` [EXTRACTED]
 - [[dot-is_denylisted()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_30]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
 - [[dot-test_allow_is_not_persisted_to_audit_store()]] - `calls` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [EXTRACTED]
 - [[dot-test_config_roundtrip()]] - `calls` [EXTRACTED]
@@ -42,7 +42,7 @@ tags:
 - [[dot-test_per_agent_policy()]] - `calls` [EXTRACTED]
 - [[dot-test_port_filtering()]] - `calls` [EXTRACTED]
 - [[dot-test_private_ip_blocking()]] - `calls` [EXTRACTED]
-- [[dot-test_url_parsing()]] - `calls` [EXTRACTED]
+- [[dot-test_url_parsing()_1]] - `calls` [EXTRACTED]
 - [[dot-test_wildcard_allowlist_matching()]] - `calls` [EXTRACTED]
 - [[Configuration for egress filtering enforcement.]] - `rationale_for` [EXTRACTED]
 - [[EgressFilter]] - `uses` [INFERRED]
@@ -78,4 +78,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

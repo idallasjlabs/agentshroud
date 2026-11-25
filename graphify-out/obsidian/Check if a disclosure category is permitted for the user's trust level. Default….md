@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/outbound_filter.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "outbound_filter.py"
 location: "L453"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/outbound_filterpy
 ---
 
 # Check if a disclosure category is permitted for the user's trust level. Default…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_allowed_for_trust()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/outbound_filterpy

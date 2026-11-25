@@ -12,7 +12,7 @@ tags:
 # CrossBotTrustLedger
 
 ## Connections
-- [[dot-__init__()_105]] - `method` [EXTRACTED]
+- [[dot-__init__()_97]] - `method` [EXTRACTED]
 - [[dot-_propagate()]] - `method` [EXTRACTED]
 - [[dot-build_full_mesh()]] - `method` [EXTRACTED]
 - [[dot-get_incidents()]] - `method` [EXTRACTED]
@@ -47,7 +47,7 @@ tags:
 - [[TestTrustViolationRecording]] - `uses` [INFERRED]
 - [[TrustManager]] - `uses` [INFERRED]
 - [[cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
-- [[ledger()_1]] - `uses` [INFERRED]
+- [[ledger()_2]] - `uses` [INFERRED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `imports` [EXTRACTED]

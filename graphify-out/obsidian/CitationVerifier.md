@@ -12,7 +12,7 @@ tags:
 # CitationVerifier
 
 ## Connections
-- [[dot-__init__()_138]] - `method` [EXTRACTED]
+- [[dot-__init__()_135]] - `method` [EXTRACTED]
 - [[dot-_verifier()]] - `calls` [EXTRACTED]
 - [[dot-_verifier()_1]] - `calls` [EXTRACTED]
 - [[dot-_verify_url()]] - `method` [EXTRACTED]

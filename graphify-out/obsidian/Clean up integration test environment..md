@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "middleware.py"
+community: "test_memory_lifecycle.py"
 location: "L405"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # Clean up integration test environment.
 
 ## Connections
-- [[dot-teardown_method()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-teardown_method()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/test_memory_lifecyclepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestCollaboratorPromptClassifiers"
+community: "TelegramAPIProxy"
 location: "L1586"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCollaboratorPromptClassifiers
+  - community/TelegramAPIProxy
 ---
 
 # Detect collaborator prompts trying to inspect approval queue internals/metadata.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_looks_like_approval_queue_probe()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCollaboratorPromptClassifiers
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

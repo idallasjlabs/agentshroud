@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "CredentialInfo"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/CredentialInfo
 ---
 
 # Create a sample credential for testing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-sample_credential()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/CredentialInfo

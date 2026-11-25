@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "concept"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/concept
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # Credential Rotation Checklist
@@ -14,4 +14,4 @@ tags:
 - [[Pre-Purge Secret Rotation Checklist]] - `shares_data_with` [INFERRED]
 - [[Real Credentials Present in Git History]] - `references` [EXTRACTED]
 
-#graphify/concept #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/concept #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

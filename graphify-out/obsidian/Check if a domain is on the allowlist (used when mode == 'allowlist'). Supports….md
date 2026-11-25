@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "rationale"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L114"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # Check if a domain is on the allowlist (used when mode == 'allowlist'). Supports…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-is_domain_allowed()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

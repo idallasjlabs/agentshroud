@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L117"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # E2E-02: Social security numbers and email are redacted before forwarding.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E02InboundPIIRedaction]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer
