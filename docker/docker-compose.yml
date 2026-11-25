@@ -227,6 +227,12 @@ services:
       # Comma-separated https RSS URLs for the read-only pke_status tool; empty
       # (the default) means the tool is not offered. Set per host, never here.
       - AGENTSHROUD_EDGE_PKE_FEEDS=${AGENTSHROUD_EDGE_PKE_FEEDS:-}
+      # Obsidian vault "Tasks and Projects" (vault_* tools) via the Local REST API
+      # plugin on the host, e.g. http://host.docker.internal:27123 (local hosts only;
+      # see docs/inbound-mcp-edge/04-runbook.md). Both empty (the default) means the
+      # tools are not offered. Set per host in docker/.env, never here.
+      - AGENTSHROUD_EDGE_OBSIDIAN_URL=${AGENTSHROUD_EDGE_OBSIDIAN_URL:-}
+      - AGENTSHROUD_EDGE_OBSIDIAN_KEY=${AGENTSHROUD_EDGE_OBSIDIAN_KEY:-}
     group_add:
       - "991"   # docker socket GID — read-only service introspection for SOC
     security_opt:

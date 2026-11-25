@@ -117,6 +117,25 @@ Forged/replayed tokens, unlisted tools and schema abuse (H1–H3) cannot be driv
 
 **Between sessions:** `asb edge kill --vendor claude-duet --confirm`, set `AGENTSHROUD_EDGE_FUNNEL=0` (and `docker stop agentshroud-edge-funnel`), remove `claude-duet` from `AGENTSHROUD_EDGE_ENABLE_VENDORS` and run `asb up`, toggle the connector off in Claude, and remove any Duet standing instruction that calls AgentShroud.
 
+## 1b. Obsidian vault "Tasks and Projects" (`vault_*` tools)
+
+**Only works while marvin is awake with Obsidian open** on the vault: the Local REST API plugin runs inside the Obsidian app, so a sleeping Mac or a closed Obsidian means every `vault_*` call fails (the edge fails closed and audits `internal error`).
+
+1. In Obsidian → Settings → Local REST API (plugin 5.5.2): enable the **HTTP** server (port 27123). Do not use HTTPS 27124 (its self-signed certificate is rejected). Copy the API key. Leave the binding host at `127.0.0.1` until the network decision in the PR is made.
+2. Store the key where the gateway reads it, never in the repo:
+   - preferred: a Docker secret file `obsidian_api_key` mounted into the gateway (`/run/secrets/obsidian_api_key`), which wins when present; or
+   - `AGENTSHROUD_EDGE_OBSIDIAN_KEY=<key>` in `docker/.env` (gitignored). An environment value is visible to `docker inspect`; prefer the secret.
+3. Set `AGENTSHROUD_EDGE_OBSIDIAN_URL=http://host.docker.internal:27123` in `docker/.env`. The gateway accepts only `http://` on host.docker.internal, localhost, a single-label container name or a private/loopback IP, with a port and no path; anything else hides the tools and logs `Obsidian vault tools NOT offered`.
+4. `asb up`, then confirm the gateway log lists the `vault_*` tools in `Inbound MCP Edge ready: … tools=[…]`.
+5. Reachability check from inside the gateway (no key needed; the plugin's `/` answers without auth): `docker exec agentshroud-gateway python -c "import httpx;print(httpx.get('http://host.docker.internal:27123/', trust_env=False).status_code)"` → `200`.
+
+**Pilot (reads first):** the tracked profile ships `daily_vault_writes: 0`, so every vault write is refused by budget before an approval card is even sent.
+1. In the Claude connector's tool permissions, set `vault_search` to *ask before use* and every other `vault_*` tool to *never*.
+2. In Duet: "Use AgentShroud vault_search to find notes about AgentShroud." Confirm in the audit trail that the call arrived as `vendor=claude-duet tool=vault_search outcome=ok`. If no audit row appears, Duet did not call the connector: stop and record it.
+3. Repeat from claude.ai chat and from the iPhone/iPad app.
+4. Then allow `vault_read`, `vault_project`, `vault_tasks` the same way.
+5. Writes: in a reviewed change raise `daily_vault_writes` (for example to 25), then test one write at a time (`vault_inbox_add` first) and approve or deny on Telegram. Archive and delete last.
+
 ## 2. Killswitch
 
 | Scope | Command | Effect |

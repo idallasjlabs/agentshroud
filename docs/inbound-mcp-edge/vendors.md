@@ -29,6 +29,43 @@ Every profile declares `connection` (`mcp` or `chat-bridge`), `support` (`docume
 - **Egress addresses:** Anthropic publishes `160.79.104.0/21` and `153.61.208.0/20` for MCP tool calls ([IP addresses](https://platform.claude.com/docs/en/api/ip-addresses)). They are recorded in `source_cidrs` and not yet enforced.
 - **Profile:** `config/inbound-edge/vendors/claude-duet.yaml`.
 
+### Obsidian vault "Tasks and Projects" (`vault_*` tools)
+
+Duet, claude.ai chat/Cowork and the Claude iPhone/iPad apps all reach the vault through the AgentShroud connector under the `claude-duet` profile, so one set of guardrails covers every Claude surface. The tools are curated facades (`gateway/inbound_edge/facades.py`, `ObsidianVault`) over the Obsidian Local REST API plugin; there is no raw Obsidian MCP passthrough. They are hidden unless the gateway has `AGENTSHROUD_EDGE_OBSIDIAN_URL` and a key (runbook §1b).
+
+| Tool | Access | Arguments (no path, URL or command) | Effect |
+|---|---|---|---|
+| `vault_search` | read | `query` (one line ≤256), `max_results` 5/10/20 | `POST /search/simple/`; title, folder, snippet; hidden-folder hits dropped |
+| `vault_read` | read | `folder` enum, `title` | one note |
+| `vault_project` | read | `project` enum, `part` hub/sync/both | `<slug>.md` and/or `<slug>.sync.md` |
+| `vault_tasks` | read | `scope` inbox/today/overdue/work/personal | open `- [ ]` lines; "today" is the gateway's `GATEWAY_TZ` date |
+| `vault_inbox_add` | write | `text` ≤2000 | appended to `00 Inbox/Inbox.md` |
+| `vault_note_create` | write | `folder` (Inbox, Resources, Journal Daily/Weekly), `title`, `body` ≤8000 | new note; fails if it exists |
+| `vault_project_add_task` | write | `project`, `task` (one line ≤300), `due` YYYY-MM-DD | `- [ ] <task> 📅 <due> #<project>` under `## Tasks` in the hub |
+| `vault_project_append` | write | `project`, `heading` Tasks/Grooming/Notes, `text` ≤4000 | appended under that heading in the hub only |
+| `vault_journal_append` | write | `date`, `text` ≤4000 | `40 Journal/Daily/<date>.md`, created if missing |
+| `vault_project_archive` | write | `project` | `<slug>/` moved into `99 Archive/` file by file |
+| `vault_note_delete` | write | `folder` (as create), `title` | note sent to the trash |
+
+A `title` is one line of letters, digits, space and `-_.()`, at most 120 characters, with no `/`, no `..`, no leading or trailing dot or space, and never ending in `.sync` (any case). The facade builds the path from the enum and the title, then re-checks that it is a direct child of the expected folder.
+
+**Guardrails (same for every tool):**
+
+| Area | Agents may | Enforced by |
+|---|---|---|
+| Any `*.sync.md` | Read only (written by a sync script) | shared write guard `assert_vault_writable`; titles cannot end in `.sync`; archive leaves them in place |
+| `01 GTD/` (Personal, Work) | Read only | not in any write enum; shared write guard |
+| `.obsidian/` (any hidden folder) | No access | not in any enum; read and write guards refuse hidden segments; search hits dropped |
+| `90 Templates/`, `Home.md`, `Start here.md` | Read only | not in any write enum; shared write guard |
+| `00 Inbox/` | Add new notes and tasks | `vault_inbox_add`, `vault_note_create` |
+| `10 Personal/<repo>/<repo>.md`, `20 Work/<repo>/<repo>.md` | Edit (tasks, grooming notes) | hub path pinned per tool; never the folder's other files |
+| `40 Journal/` | Add and edit | `vault_journal_append`, `vault_note_create` |
+| `30 Resources/` | Add new notes | `vault_note_create` (fails if the note exists) |
+| `99 Archive/` | Move in only when asked | `vault_project_archive` (approval ticket) |
+| Deleting any note | Never without asking | `vault_note_delete` (approval ticket); never hubs, `.sync.md`, `01 GTD/`, templates or root notes |
+
+Every write tool is `access: write`: the first call returns an approval ticket, the owner decides on Telegram, and only the repeated call with the ticket runs. Approved vault writes count against the profile's `daily_vault_writes`, separate from `daily_delegations`. Caller text is stored inside a signed `wrap_untrusted` envelope (so any agent that reads the note later sees it as third-party data), after backticks, `<`, `%%` and `![` are made inert so Dataview, Templater, HTML and remote images cannot execute or beacon from it.
+
 ## Poke
 
 - **Attach:** poke.com/integrations/new → Name, MCP Server URL, optional API key ([Poke docs](https://poke.com/docs/managing-integrations)).

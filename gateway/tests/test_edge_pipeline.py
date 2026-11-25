@@ -509,3 +509,143 @@ class TestCommandCenterStats:
         assert rec["request_id"] == "req-cc" and rec["outcome"] == "ok"
         assert rec["vendor"] == "claude-duet"
         assert rec["ts"] == clock.t
+
+
+class TestObsidianVaultWrites:
+    """The real ObsidianVault facade behind the real pipeline (fake REST API, no network)."""
+
+    WRITES = {
+        "vault_inbox_add": {"text": "buy milk"},
+        "vault_note_create": {"folder": "30 Resources", "title": "Paper", "body": "b"},
+        "vault_project_add_task": {"project": "agentshroud", "task": "ship", "due": "2026-12-01"},
+        "vault_project_append": {"project": "agentshroud", "heading": "Grooming", "text": "g"},
+        "vault_journal_append": {"date": "2026-11-25", "text": "day"},
+        "vault_project_archive": {"project": "agentshroud"},
+        "vault_note_delete": {"folder": "00 Inbox", "title": "Old"},
+    }
+
+    @staticmethod
+    def _wire(deps, facades, **profile_kw):
+        from urllib.parse import unquote
+
+        import httpx
+
+        from gateway.inbound_edge.descriptors import VAULT_TOOL_DESCRIPTORS
+        from gateway.inbound_edge.facades import ObsidianVault
+        from gateway.security.instruction_envelope import EnvelopeSigner
+
+        sent = []
+        files = {
+            "00 Inbox/Inbox.md": "# Inbox\n",
+            "00 Inbox/Old.md": "old",
+            "10 Personal/agentshroud/agentshroud.md": "# agentshroud\n\n## Tasks\n",
+        }
+
+        def handler(request):
+            sent.append((request.method, request.url.raw_path.decode()))
+            path = unquote(request.url.raw_path.decode())[len("/vault/") :]
+            if request.method != "GET":
+                return httpx.Response(204)
+            if path.endswith("/"):
+                names = [p[len(path) :] for p in files if p.startswith(path)]
+                return httpx.Response(200, json={"files": names}) if names else httpx.Response(404)
+            return httpx.Response(200, text=files[path]) if path in files else httpx.Response(404)
+
+        vault = ObsidianVault(
+            "http://host.docker.internal:27123",
+            "k",
+            EnvelopeSigner(key=b"e" * 32),
+            transport=httpx.MockTransport(handler),
+        )
+        facades.update(vault.facades())
+        tools = {"delegate_to_hermes": "write"}
+        tools.update({n: d["access"] for n, d in VAULT_TOOL_DESCRIPTORS.items()})
+        deps.profiles["claude-duet"] = _profile(tools=tools, **profile_kw)
+        return sent
+
+    @staticmethod
+    def _day(clock):
+        import time
+
+        return time.strftime("%Y-%m-%d", time.gmtime(clock()))
+
+    @pytest.mark.parametrize("tool", sorted(WRITES))
+    async def test_each_write_needs_an_approval_ticket(self, edge, tool):
+        pipe, deps, facades, queue, _, clock = edge
+        sent = self._wire(deps, facades, daily_vault_writes=5)
+        token = await _token(deps)
+        args = self.WRITES[tool]
+        first = await pipe.call_tool(token, tool, args, "r1")
+        assert first["structuredContent"]["status"] == "awaiting_human_approval"
+        assert sent == []  # nothing reached the vault before approval
+        bad = await pipe.call_tool(token, tool, {**args, "approval_ticket": "A" * 43}, "rb")
+        assert bad["isError"] and sent == []
+        ticket = first["structuredContent"]["approval_ticket"]
+        await queue.decide(
+            first["structuredContent"]["approval_request_id"], approved=True, decided_by="owner"
+        )
+        ok = await pipe.call_tool(token, tool, {**args, "approval_ticket": ticket}, "r2")
+        assert not ok["isError"], _text(ok)
+        assert ok["structuredContent"]["ok"] is True
+        assert any(m in ("PUT", "DELETE", "MOVE") for m, _ in sent)
+        day = self._day(clock)
+        assert pipe._daily[("claude-duet", day, "vault_writes")] == 1
+        assert pipe._daily[("claude-duet", day, "delegations")] == 0
+
+    async def test_reads_need_no_ticket(self, edge):
+        pipe, deps, facades, *_ = edge
+        sent = self._wire(deps, facades)
+        r = await pipe.call_tool(
+            await _token(deps), "vault_read", {"folder": "00 Inbox", "title": "Old"}, "r"
+        )
+        assert not r["isError"] and r["structuredContent"]["content"] == "old"
+        assert sent == [("GET", "/vault/00%20Inbox/Old.md")]
+
+    async def test_daily_vault_write_budget_is_separate(self, edge):
+        pipe, deps, facades, *_ = edge
+        self._wire(deps, facades, daily_vault_writes=0)
+        token = await _token(deps)
+        r = await pipe.call_tool(token, "vault_inbox_add", {"text": "x"}, "r")
+        assert r["isError"] and "daily vault write budget exhausted" in _text(r)
+        # The Hermes delegation budget is not the vault budget.
+        args = {"task": "x", "priority": "low"}
+        r = await pipe.call_tool(token, "delegate_to_hermes", args, "r")
+        assert r["structuredContent"]["status"] == "awaiting_human_approval"
+
+    async def test_vault_tools_hidden_without_facade(self, edge):
+        pipe, deps, facades, *_ = edge
+        self._wire(deps, facades)
+        listed = {t["name"] for t in await pipe.list_tools(await _token(deps))}
+        assert {"vault_search", "vault_note_delete"} <= listed
+        for name in [n for n in facades if n.startswith("vault_")]:
+            del facades[name]
+        listed = {t["name"] for t in await pipe.list_tools(await _token(deps))}
+        assert not any(n.startswith("vault_") for n in listed)
+        r = await pipe.call_tool(await _token(deps), "vault_search", {"query": "x"}, "r")
+        assert r["isError"] and "not permitted" in _text(r)
+
+    async def test_traversal_and_bad_slug_denied_by_schema(self, edge):
+        pipe, deps, facades, *_ = edge
+        sent = self._wire(deps, facades)
+        token = await _token(deps)
+        for tool, args in (
+            ("vault_read", {"folder": "root", "title": "../../etc/passwd"}),
+            ("vault_read", {"folder": ".obsidian", "title": "app"}),
+            ("vault_project", {"project": "../01 GTD"}),
+            ("vault_note_delete", {"folder": "01 GTD/Work", "title": "Next"}),
+            ("vault_note_create", {"folder": "00 Inbox", "title": "x.sync", "body": "b"}),
+            ("vault_read", {"folder": "root", "title": "Home", "path": "Home.md"}),
+        ):
+            r = await pipe.call_tool(token, tool, args, "r")
+            assert r["isError"] and "schema violation" in _text(r), (tool, args)
+        assert sent == []
+
+    async def test_unknown_budget_fails_closed(self, edge, monkeypatch):
+        from gateway.inbound_edge import call_pipeline as cp
+
+        pipe, deps, facades, *_ = edge
+        self._wire(deps, facades, daily_vault_writes=5)
+        desc = dict(cp.TOOL_DESCRIPTORS["vault_inbox_add"], write_budget="nope")
+        monkeypatch.setitem(cp.TOOL_DESCRIPTORS, "vault_inbox_add", desc)
+        r = await pipe.call_tool(await _token(deps), "vault_inbox_add", {"text": "x"}, "r")
+        assert r["isError"] and "unknown write budget" in _text(r)

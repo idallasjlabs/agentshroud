@@ -481,3 +481,112 @@ def test_cli_verify_ok_and_bad_stdin(signed_descriptors, capsys):
 def test_unreadable_public_key_refuses():
     with pytest.raises(d.DescriptorIntegrityError, match="unreadable"):
         d.verify_descriptors(d.build_manifest(), "AAAA", b"not a pem", d.TOOL_DESCRIPTORS)
+
+
+# ── Obsidian vault wiring ──────────────────────────────────────────────────
+
+_VAULT = [
+    "vault_inbox_add",
+    "vault_journal_append",
+    "vault_note_create",
+    "vault_note_delete",
+    "vault_project",
+    "vault_project_add_task",
+    "vault_project_append",
+    "vault_project_archive",
+    "vault_read",
+    "vault_search",
+    "vault_tasks",
+]
+
+
+async def _edge_facades(tmp_path, monkeypatch):
+    monkeypatch.setenv("AGENTSHROUD_INBOUND_EDGE", "1")
+    monkeypatch.setenv("AGENTSHROUD_EDGE_PUBLIC_URL", "https://e.ts.net:8443")
+    monkeypatch.setenv("AGENTSHROUD_DATA_DIR", str(tmp_path))
+    edge = await svc_mod.build_edge_service(_app_state(tmp_path))
+    try:
+        return sorted(edge.pipeline.d.facades), edge.pipeline.d.facades
+    finally:
+        await edge.close()
+
+
+@pytest.mark.parametrize(
+    "url,key",
+    [("", ""), ("http://host.docker.internal:27123", ""), ("", "k")],
+)
+async def test_vault_tools_hidden_unless_url_and_key(
+    tmp_path, monkeypatch, secrets_dir, signed_descriptors, url, key
+):
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_URL", url)
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_KEY", key)
+    names, _ = await _edge_facades(tmp_path, monkeypatch)
+    assert names == ["lab_search"]
+
+
+async def test_vault_tools_offered_with_env_key(
+    tmp_path, monkeypatch, secrets_dir, signed_descriptors
+):
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_URL", "http://host.docker.internal:27123/")
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_KEY", "env-key")
+    monkeypatch.setenv("GATEWAY_TZ", "America/New_York")
+    names, facades = await _edge_facades(tmp_path, monkeypatch)
+    assert names == sorted(["lab_search", *_VAULT])
+    vault = facades["vault_search"]._vault
+    assert vault._base == "http://host.docker.internal:27123" and vault._key == "env-key"
+
+
+async def test_vault_secret_file_wins_over_env(
+    tmp_path, monkeypatch, secrets_dir, signed_descriptors
+):
+    (secrets_dir / "obsidian_api_key").write_text("file-key\n")
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_URL", "http://host.docker.internal:27123")
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_KEY", "env-key")
+    _, facades = await _edge_facades(tmp_path, monkeypatch)
+    assert facades["vault_read"]._vault._key == "file-key"
+
+
+async def test_vault_public_url_refused(
+    tmp_path, monkeypatch, secrets_dir, signed_descriptors, caplog
+):
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_URL", "http://vault.example.com:27123")
+    monkeypatch.setenv("AGENTSHROUD_EDGE_OBSIDIAN_KEY", "k")
+    with caplog.at_level(logging.CRITICAL):
+        names, _ = await _edge_facades(tmp_path, monkeypatch)
+    assert names == ["lab_search"] and "vault tools NOT offered" in caplog.text
+
+
+@pytest.mark.parametrize(
+    "url,expected",
+    [
+        ("http://host.docker.internal:27123", "http://host.docker.internal:27123"),
+        ("http://HOST.docker.internal:27123/", "http://host.docker.internal:27123"),
+        ("http://localhost:27123", "http://localhost:27123"),
+        ("http://obsidian-forwarder:27123", "http://obsidian-forwarder:27123"),
+        ("http://127.0.0.1:27123", "http://127.0.0.1:27123"),
+        ("http://192.168.5.2:27123", "http://192.168.5.2:27123"),
+        ("http://[::1]:27123", "http://[::1]:27123"),
+        ("https://host.docker.internal:27124", None),
+        ("http://host.docker.internal", None),
+        ("http://user:pw@host.docker.internal:27123", None),  # pragma: allowlist secret
+        ("http://host.docker.internal:27123/vault", None),
+        ("http://host.docker.internal:27123/?x=1", None),
+        ("http://host.docker.internal:27123/#f", None),
+        ("http://evil.example.com:27123", None),
+        ("http://8.8.8.8:27123", None),
+        ("http://0.0.0.0:27123", None),
+        ("http://host.docker.internal:99999", None),
+        ("ftp://localhost:21", None),
+        ("not a url", None),
+    ],
+)
+def test_obsidian_url_is_pinned_to_local_hosts(url, expected):
+    assert svc_mod._obsidian_url(url) == expected
+
+
+def test_obsidian_today_uses_gateway_tz_and_falls_back():
+    from datetime import date
+
+    assert isinstance(svc_mod._obsidian_today("America/New_York")(), date)
+    assert isinstance(svc_mod._obsidian_today("Not/AZone")(), date)
+    assert isinstance(svc_mod._obsidian_today("../etc")(), date)

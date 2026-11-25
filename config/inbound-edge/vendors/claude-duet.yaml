@@ -27,12 +27,30 @@ tools:
   lab_search: read
   pke_status: read
   delegate_to_hermes: write
+  # Obsidian vault "Tasks and Projects" (hidden unless the gateway has
+  # AGENTSHROUD_EDGE_OBSIDIAN_URL + key). Pilot: vault_search first (PR notes).
+  vault_search: read
+  vault_read: read
+  vault_project: read
+  vault_tasks: read
+  vault_inbox_add: write
+  vault_note_create: write
+  vault_project_add_task: write
+  vault_project_append: write
+  vault_journal_append: write
+  vault_project_archive: write
+  vault_note_delete: write
 limits:
   per_client_per_minute: 30
   per_vendor_per_minute: 60
   max_concurrency: 4
   daily_calls: 500
   daily_delegations: 20
+  # Approved vault_* writes per day, counted apart from Hermes delegations.
+  # 0 = every vault write is refused server-side (budget) even if approved: the
+  # pilot proves reads first. Raise it (e.g. 25) in a reviewed change after the
+  # read pilot passes (docs/inbound-mcp-edge/04-runbook.md §1b).
+  daily_vault_writes: 0
 dlp:
   mode: redact
   min_confidence: 0.9

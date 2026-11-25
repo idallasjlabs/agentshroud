@@ -60,9 +60,62 @@ class TestDescriptorShape:
             else:
                 assert "approval_ticket" not in props, name
 
-    def test_initial_tool_set(self):
-        assert set(d.TOOL_DESCRIPTORS) == {"lab_search", "pke_status", "delegate_to_hermes"}
+    def test_tool_set(self):
+        vault = {
+            "vault_search",
+            "vault_read",
+            "vault_project",
+            "vault_tasks",
+            "vault_inbox_add",
+            "vault_note_create",
+            "vault_project_add_task",
+            "vault_project_append",
+            "vault_journal_append",
+            "vault_project_archive",
+            "vault_note_delete",
+        }
+        assert set(d.TOOL_DESCRIPTORS) == {"lab_search", "pke_status", "delegate_to_hermes"} | vault
         assert d.TOOL_DESCRIPTORS["delegate_to_hermes"]["access"] == "write"
+
+    def test_vault_schemas_take_no_path_url_or_command(self):
+        # T7/T8: callers pass enums plus a title; the facade builds every path.
+        for name, desc in d.VAULT_TOOL_DESCRIPTORS.items():
+            for prop, spec in desc["inputSchema"]["properties"].items():
+                assert prop in {
+                    "query",
+                    "max_results",
+                    "folder",
+                    "title",
+                    "project",
+                    "part",
+                    "scope",
+                    "text",
+                    "body",
+                    "task",
+                    "due",
+                    "heading",
+                    "date",
+                    "approval_ticket",
+                }, (name, prop)
+                if prop in ("folder", "project", "part", "scope", "heading"):
+                    assert "enum" in spec, (name, prop)
+
+    def test_internal_fields_never_reach_the_mcp_view(self):
+        view = d.mcp_tool("vault_note_delete")
+        assert set(view) == {"name", "description", "inputSchema"}
+
+
+class TestCommittedManifest:
+    def test_committed_manifest_matches_the_code(self):
+        """Reproducible half of a descriptor release: hashes in the committed manifest."""
+        committed = json.loads(d.MANIFEST_PATH.read_text())
+        assert committed == d.build_manifest()
+
+    def test_committed_signature_verifies(self):
+        """Owner half of a release: descriptors.manifest.sig must be re-signed with the
+        owner's Ed25519 key whenever a descriptor changes. Until then the edge refuses to
+        start (verify_shipped_descriptors), and this test fails on purpose."""
+        d.verify_shipped_descriptors()
 
 
 class TestManifest:
