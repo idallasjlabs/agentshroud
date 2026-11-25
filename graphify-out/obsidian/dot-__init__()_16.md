@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/encrypted_store.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EncryptedStore"
-location: "L61"
+community: "EgressRule"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/EgressRule
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_resolve_secret()]] - `calls` [EXTRACTED]
-- [[EncryptedStore]] - `method` [EXTRACTED]
-- [[Initialize the encrypted store. Args master_secret The master secret string.…]] - `rationale_for` [EXTRACTED]
+- [[dot-_load_rules()]] - `calls` [EXTRACTED]
+- [[EgressApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize the approval queue. Args rules_file Path to persistent rules…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/EgressRule

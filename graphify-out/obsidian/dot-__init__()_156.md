@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "_run_asgi"
-location: "L718"
+community: "lifespan.py"
+location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_asgi
+  - community/lifespanpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamWS]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `references` [EXTRACTED]
+- [[HTTPConnectProxy]] - `method` [EXTRACTED]
+- [[WebProxy]] - `references` [EXTRACTED]
+- [[WebProxyConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_asgi
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

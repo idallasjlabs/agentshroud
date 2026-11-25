@@ -38,7 +38,7 @@ tags:
 - [[run_upstream_cve_check_all_agents()]] - `contains` [EXTRACTED]
 - [[save_report()]] - `imports` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `imports_from` [EXTRACTED]
-- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[upstream_cve_check_scheduler()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy

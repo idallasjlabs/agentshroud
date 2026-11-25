@@ -1,20 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "test_us_ssn_regex_tightened.py"
+community: ".test_events_api_envelope_dispatches_handle_event"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_us_ssn_regex_tightenedpy
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # asyncio
 
 ## Connections
-- [[test_cve_dense_report_body_preserved()]] - `references` [EXTRACTED]
-- [[test_cve_pattern_not_flagged_as_ssn()]] - `references` [EXTRACTED]
-- [[test_cve_with_five_digit_suffix_not_flagged()]] - `references` [EXTRACTED]
-- [[test_real_ssn_still_flagged()]] - `references` [EXTRACTED]
-- [[test_ssn_at_start_of_string_still_flagged()]] - `references` [EXTRACTED]
+- [[dot-test_events_api_envelope_dispatches_handle_event()]] - `references` [EXTRACTED]
+- [[dot-test_get_wss_url_raises_on_api_error()]] - `references` [EXTRACTED]
+- [[dot-test_get_wss_url_returns_url_on_success()]] - `references` [EXTRACTED]
+- [[dot-test_hello_message_not_dispatched()]] - `references` [EXTRACTED]
+- [[dot-test_run_resets_backoff_after_successful_connect()]] - `references` [EXTRACTED]
+- [[test_slack_socket_client.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

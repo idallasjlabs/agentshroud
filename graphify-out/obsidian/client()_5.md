@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_soc_router_coverage.py"
+source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "test_soc_router_coverage.py"
-location: "L135"
+community: "app"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/app
 ---
 
 # client()
 
 ## Connections
-- [[fixture_28]] - `references` [EXTRACTED]
-- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_7]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/app

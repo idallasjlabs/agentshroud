@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/progressive_lockdown.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "ProgressiveLockdown"
-location: "L122"
+community: "AgentTarget"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveLockdown
+  - community/AgentTarget
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args decay_window_seconds When set, only blocks recorded within this many…]] - `rationale_for` [EXTRACTED]
-- [[ProgressiveLockdown]] - `method` [EXTRACTED]
+- [[_PipelineCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

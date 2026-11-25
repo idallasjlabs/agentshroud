@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L65"
+community: "AgentRegistry"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/AgentRegistry
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

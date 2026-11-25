@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestFromPipelineResult"
 location: "L400"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestFromPipelineResult
 ---
 
 # blocked()
 
 ## Connections
-- [[dot-test_conversion_error_path()_4]] - `contains` [EXTRACTED]
+- [[dot-test_conversion_error_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestFromPipelineResult

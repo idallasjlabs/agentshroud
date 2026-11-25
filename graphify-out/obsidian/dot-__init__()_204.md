@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "EnvelopeSigner"
-location: "L81"
+community: "test_soc_edge.py"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/test_soc_edgepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[PkeStatus]] - `method` [EXTRACTED]
-- [[datetime_9]] - `references` [EXTRACTED]
+- [[FakeCaller_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

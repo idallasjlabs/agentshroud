@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/credential_injector.py"
+source_file: "gateway/runtime/apple_engine.py"
 type: "code"
-community: "CredentialInjector"
-location: "L105"
+community: "AppleContainerEngine"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/AppleContainerEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load_credentials()]] - `calls` [EXTRACTED]
-- [[dot-_load_default_mappings()]] - `calls` [EXTRACTED]
-- [[CredentialInjector]] - `method` [EXTRACTED]
-- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine

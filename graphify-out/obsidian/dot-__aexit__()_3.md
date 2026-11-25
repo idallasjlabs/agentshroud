@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_local_parity.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "_FakeStreamResponse"
-location: "L1421"
+community: "_HeadFakeClient"
+location: "L824"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeStreamResponse
+  - community/_HeadFakeClient
 ---
 
 # .__aexit__()
 
 ## Connections
-- [[_FakeStreamResponse]] - `method` [EXTRACTED]
+- [[_HeadFakeClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeStreamResponse
+#graphify/code #graphify/EXTRACTED #community/_HeadFakeClient

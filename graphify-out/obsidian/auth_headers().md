@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # auth_headers()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Return Authorization headers with test token]] - `rationale_for` [EXTRACTED]
 - [[conftest.py]] - `contains` [EXTRACTED]
-- [[fixture_66]] - `references` [EXTRACTED]
+- [[fixture_69]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

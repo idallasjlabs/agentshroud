@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/web/dashboard_endpoints.py"
+source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "LogBuffer"
-location: "L142"
+community: "test_edge_e2e_sdk.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogBuffer
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[LogBuffer]] - `method` [EXTRACTED]
+- [[Facade_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogBuffer
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

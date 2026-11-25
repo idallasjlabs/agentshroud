@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/runtime/apple_engine.py"
+source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "AppleContainerEngine"
-location: "L31"
+community: "TestAuth"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AppleContainerEngine
+  - community/TestAuth
 ---
 
 # .__init__()
 
 ## Connections
-- [[AppleContainerEngine]] - `method` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AppleContainerEngine
+#graphify/code #graphify/EXTRACTED #community/TestAuth

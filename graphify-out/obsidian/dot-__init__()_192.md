@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/telegram_egress_notify.py"
+source_file: "gateway/security/network_validator.py"
 type: "code"
-community: "EgressTelegramNotifier"
-location: "L76"
+community: "NetworkValidator"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressTelegramNotifier
+  - community/NetworkValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressTelegramNotifier]] - `method` [EXTRACTED]
+- [[NetworkValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressTelegramNotifier
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

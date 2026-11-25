@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "Any"
+community: "KillSwitchMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KillSwitchMonitor
 ---
 
 # deque
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-_count_recent_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

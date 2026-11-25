@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/contributors.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "soc/models.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/soc/modelspy
 ---
 
 # contributors.py
@@ -23,4 +23,4 @@ tags:
 - [[socmodels.py]] - `imports_from` [EXTRACTED]
 - [[test_soc_contributors.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

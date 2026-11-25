@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_cli_coverage.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "test_cli_coverage.py"
-location: "L663"
+community: "test_key_rotation.py"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_cli_coveragepy
+  - community/test_key_rotationpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeWS]] - `method` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_key_rotationpy

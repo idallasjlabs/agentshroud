@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/instruction_envelope.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "EnvelopeSigner"
-location: "L52"
+community: "DifferentialPIIDetector"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/DifferentialPIIDetector
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `method` [EXTRACTED]
+- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
+- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector

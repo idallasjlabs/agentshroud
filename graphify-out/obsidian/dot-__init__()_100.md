@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/tool_result_injection.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "InjectionRule"
-location: "L176"
+community: "SkillGuard"
+location: "L314"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/InjectionRule
+  - community/SkillGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the scanner with optional custom rules. Args custom_rules…]] - `rationale_for` [EXTRACTED]
-- [[InjectionRule]] - `references` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[SkillGuard]] - `method` [EXTRACTED]
+- [[_Rule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/InjectionRule
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

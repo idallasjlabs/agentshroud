@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "test_intel_endpoint.py"
-location: "L38"
+community: "_is_op_reference_allowed"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_intel_endpointpy
+  - community/_is_op_reference_allowed
 ---
 
 # client()
 
 ## Connections
-- [[fixture_118]] - `references` [EXTRACTED]
-- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
+- [[auth_dep()]] - `indirect_call` [INFERRED]
+- [[fixture_108]] - `references` [EXTRACTED]
+- [[test_op_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

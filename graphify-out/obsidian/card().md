@@ -2,7 +2,7 @@
 source_file: "gateway/inbound_edge/service.py"
 type: "code"
 community: "test_edge_service_routes.py"
-location: "L125"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED

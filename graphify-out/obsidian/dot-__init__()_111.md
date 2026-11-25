@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/module_stats.py"
 type: "code"
-community: "TestWebProxySecurityIntegration"
-location: "L47"
+community: "test_module_stats.py"
+location: "L41"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebProxySecurityIntegration
+  - community/test_module_statspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockEgressEvent]] - `method` [EXTRACTED]
+- [[ModuleStatsCollector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration
+#graphify/code #graphify/EXTRACTED #community/test_module_statspy

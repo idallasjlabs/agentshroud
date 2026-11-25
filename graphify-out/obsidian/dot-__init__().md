@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: "ContextGuard"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .__init__()
@@ -55,4 +55,4 @@ tags:
 - [[UserSessionManager]] - `calls` [EXTRACTED]
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,23 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_web_proxy.py"
 type: "code"
-community: "test_mcp_proxy.py"
-location: "L33"
+community: "lifespan.py"
+location: "L24"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_mcp_proxypy
+  - graphify/EXTRACTED
+  - community/lifespanpy
 ---
 
 # config()
 
 ## Connections
-- [[MCPProxyConfig]] - `uses` [INFERRED]
-- [[MCPServerConfig]] - `uses` [INFERRED]
-- [[MCPToolConfig]] - `uses` [INFERRED]
-- [[MCPTransport]] - `uses` [INFERRED]
-- [[PermissionLevel]] - `uses` [INFERRED]
-- [[fixture_39]] - `references` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[WebProxyConfig]] - `uses` [INFERRED]
+- [[fixture_106]] - `references` [EXTRACTED]
+- [[test_web_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

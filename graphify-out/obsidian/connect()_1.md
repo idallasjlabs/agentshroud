@@ -2,7 +2,7 @@
 source_file: "gateway/soc/services.py"
 type: "code"
 community: "ServiceManager"
-location: "L410"
+location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # connect()
 
 ## Connections
-- [[dot-_logs_via_socket()]] - `contains` [EXTRACTED]
+- [[_inspect_via_socket()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ServiceManager

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/dns_forwarder.py"
+source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "DNSForwarderProtocol"
-location: "L163"
+community: "A2APolicyEngine"
+location: "L393"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSForwarderProtocol
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSForwarderProtocol]] - `method` [EXTRACTED]
+- [[A2APolicyConfig]] - `calls` [EXTRACTED]
+- [[A2APolicyEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSForwarderProtocol
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_integrity.py"
 type: "code"
-community: "ContextGuard"
+community: "context_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/context_guardpy
 ---
 
 # context_integrity.py
@@ -22,4 +22,4 @@ tags:
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 - [[test_context_integrity.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/context_guardpy

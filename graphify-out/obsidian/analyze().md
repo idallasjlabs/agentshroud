@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit_advanced.py"
+source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "ContextGuard"
-location: "L279"
+community: "test_ws_e_rt2_inbound_encoding.py"
+location: "L219"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ContextGuard
+  - graphify/EXTRACTED
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # analyze()
 
 ## Connections
-- [[dot-test_context_guard_session_isolation_under_load()]] - `indirect_call` [INFERRED]
+- [[test_inbound_encoding_detector_error_fails_closed()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

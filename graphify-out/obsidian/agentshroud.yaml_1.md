@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Config Search Order]] - `contains` [EXTRACTED]
-- [[Purpose_56]] - `contains` [EXTRACTED]
-- [[Related Notes_10]] - `contains` [EXTRACTED]
+- [[Purpose_57]] - `contains` [EXTRACTED]
+- [[Related Notes_11]] - `contains` [EXTRACTED]
 - [[Top-Level Sections]] - `contains` [EXTRACTED]
 - [[agentshroud.yaml]] - `contains` [EXTRACTED]
 - [[channels section]] - `contains` [EXTRACTED]

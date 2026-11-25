@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_web_api_coverage.py"
+source_file: "gateway/tests/test_v1_models_synthetic.py"
 type: "code"
-community: "_engine"
-location: "L59"
+community: "app"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_engine
+  - community/app
 ---
 
 # client()
 
 ## Connections
-- [[fixture_31]] - `references` [EXTRACTED]
-- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[TestClient with a stubbed proxy IP that passes the network allowlist.]] - `rationale_for` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_8]] - `references` [EXTRACTED]
+- [[test_v1_models_synthetic.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_engine
+#graphify/code #graphify/EXTRACTED #community/app

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/inbound_edge/facades.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L43"
+community: "service.py"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/servicepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_MockWriter]] - `method` [EXTRACTED]
+- [[LabSearch]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/servicepy

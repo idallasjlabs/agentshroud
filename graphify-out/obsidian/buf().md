@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[UpdateReplayBuffer]] - `uses` [INFERRED]
-- [[fixture_33]] - `references` [EXTRACTED]
+- [[fixture_39]] - `references` [EXTRACTED]
 - [[test_telegram_replay.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

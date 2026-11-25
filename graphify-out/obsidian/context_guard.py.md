@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "context_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/context_guardpy
 ---
 
 # context_guard.py
@@ -16,7 +16,7 @@ tags:
 - [[ContextAttack]] - `contains` [EXTRACTED]
 - [[ContextGuard]] - `contains` [EXTRACTED]
 - [[ContextSegment]] - `contains` [EXTRACTED]
-- [[SessionContext_1]] - `contains` [EXTRACTED]
+- [[SessionContext]] - `contains` [EXTRACTED]
 - [[check_message()]] - `contains` [EXTRACTED]
 - [[context_integrity.py]] - `imports_from` [EXTRACTED]
 - [[get_context_guard()]] - `contains` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_e2e_watchtower.py]] - `imports_from` [EXTRACTED]
 - [[test_redteam_probes.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/context_guardpy

@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/security/context_guard.py"
 type: "code"
-community: "soc/router.py"
-location: "L64"
+community: "ContextGuard"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ContextGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_build_permission_matrix()]] - `calls` [EXTRACTED]
-- [[dot-_build_tool_permissions()]] - `calls` [EXTRACTED]
-- [[Initialize RBAC manager with configuration.]] - `rationale_for` [EXTRACTED]
-- [[RBACConfig]] - `references` [EXTRACTED]
-- [[RBACManager]] - `method` [EXTRACTED]
+- [[ContextGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

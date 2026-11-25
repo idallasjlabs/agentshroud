@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "Severity"
 location: "L435"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_realtime_coveragepy
+  - community/Severity
 ---
 
 # domain()
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_conversion_error_path()_3]] - `contains` [EXTRACTED]
 - [[from_egress_attempt()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/Severity

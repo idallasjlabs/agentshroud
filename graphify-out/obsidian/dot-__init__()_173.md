@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "test_dns_canvas_coverage.py"
-location: "L585"
+community: "test_edge_e2e_sdk.py"
+location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dns_canvas_coveragepy
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeUpstreamResponse]] - `method` [EXTRACTED]
+- [[Clock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

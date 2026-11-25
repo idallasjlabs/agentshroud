@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/agent_isolation.py"
+source_file: "gateway/tests/test_a2a_policy.py"
 type: "code"
-community: "AgentRegistry"
-location: "L55"
+community: "A2APolicyEngine"
+location: "L323"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/A2APolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[AgentRegistry]] - `method` [EXTRACTED]
+- [[_StubApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

@@ -12,7 +12,7 @@ tags:
 # connection
 
 ## Connections
-- [[enum_3]] - `contains` [EXTRACTED]
+- [[enum_2]] - `contains` [EXTRACTED]
 - [[properties]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/properties

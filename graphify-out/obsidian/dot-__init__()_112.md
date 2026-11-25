@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_web_proxy_security.py"
+source_file: "gateway/security/group_rbac.py"
 type: "code"
-community: "TestWebProxySecurityIntegration"
-location: "L39"
+community: "GroupRoleResolver"
+location: "L87"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebProxySecurityIntegration
+  - community/GroupRoleResolver
 ---
 
 # .__init__()
 
 ## Connections
-- [[MockURLResult]] - `method` [EXTRACTED]
+- [[GroupRoleResolver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_wrap_response"
+community: "asyncio"
 location: "L7611"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response
+  - community/asyncio
 ---
 
 # always_raise()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_safe_info_response_exception_sends_unavailable_fallback()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response
+#graphify/code #graphify/INFERRED #community/asyncio

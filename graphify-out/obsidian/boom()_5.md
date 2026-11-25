@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_skill_guard.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_skill_guard.py"
-location: "L505"
+community: "_coerce_to_ws_event"
+location: "L655"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - graphify/INFERRED
+  - community/_coerce_to_ws_event
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_main_unreadable_file_fails_closed()]] - `contains` [EXTRACTED]
+- [[dot-test_keepalive_breaks_on_construction_error()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/INFERRED #community/_coerce_to_ws_event

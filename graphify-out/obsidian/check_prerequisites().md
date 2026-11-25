@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/installer.py"
 type: "code"
-community: "detect_runtime"
+community: "installer.py"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/installerpy
 ---
 
 # check_prerequisites()
@@ -15,7 +15,7 @@ tags:
 - [[Check system prerequisites for installation.]] - `rationale_for` [EXTRACTED]
 - [[PrerequisiteCheck]] - `calls` [EXTRACTED]
 - [[detect_runtime()]] - `calls` [EXTRACTED]
-- [[get_9]] - `references` [EXTRACTED]
-- [[installer.py_2]] - `contains` [EXTRACTED]
+- [[get_3]] - `references` [EXTRACTED]
+- [[installer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/EXTRACTED #community/installerpy

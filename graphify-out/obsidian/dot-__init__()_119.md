@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_rbac.py"
+source_file: "gateway/inbound_edge/oauth_service.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L87"
+community: "EdgeOAuthService"
+location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/EdgeOAuthService
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupRoleResolver]] - `method` [EXTRACTED]
+- [[dot-__init__()_118]] - `calls` [EXTRACTED]
+- [[OAuthFailure]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

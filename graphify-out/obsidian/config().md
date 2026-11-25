@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L27"
+community: "KeyVault"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/KeyVault
 ---
 
 # config()
 
 ## Connections
-- [[KillSwitchConfig]] - `uses` [INFERRED]
-- [[fixture_22]] - `references` [EXTRACTED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[KeyVaultConfig]] - `uses` [INFERRED]
+- [[fixture_30]] - `references` [EXTRACTED]
+- [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/KeyVault

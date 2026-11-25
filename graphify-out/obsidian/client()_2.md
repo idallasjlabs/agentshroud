@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
+source_file: "gateway/tests/test_dashboard.py"
 type: "code"
 community: "app"
-location: "L21"
+location: "L32"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -15,6 +15,6 @@ tags:
 - [[app()]] - `indirect_call` [INFERRED]
 - [[fixture_4]] - `references` [EXTRACTED]
 - [[lifespan()]] - `calls` [INFERRED]
-- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
+- [[test_dashboard.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_raw_web_fetch_json_ip_host_does_not_queue_approval"
-location: "L2941"
+community: "_make_sanitizer"
+location: "L3433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_ip_host_does_not_queue_approval
+  - community/_make_sanitizer
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_raw_web_fetch_json_ip_host_does_not_queue_approval()]] - `contains` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_numeric_tld_does_not_queue_approval()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_ip_host_does_not_queue_approval
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

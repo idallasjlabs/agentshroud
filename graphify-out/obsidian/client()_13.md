@@ -1,25 +1,20 @@
 ---
-source_file: "gateway/tests/test_ssh_endpoints.py"
+source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "GatewayConfig"
-location: "L79"
+community: "ingest_api/config.py"
+location: "L51"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/GatewayConfig
+  - graphify/EXTRACTED
+  - community/ingest_api/configpy
 ---
 
 # client()
 
 ## Connections
-- [[ApprovalQueue]] - `uses` [INFERRED]
-- [[DataLedger]] - `uses` [INFERRED]
-- [[MultiAgentRouter]] - `uses` [INFERRED]
-- [[PIISanitizer]] - `uses` [INFERRED]
-- [[SSHProxy]] - `uses` [INFERRED]
-- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_70]] - `references` [EXTRACTED]
-- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_72]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

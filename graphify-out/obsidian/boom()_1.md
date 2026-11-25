@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "AsyncMock"
-location: "L655"
+community: "TestIsContainerRunning"
+location: "L861"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AsyncMock
+  - graphify/EXTRACTED
+  - community/TestIsContainerRunning
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_keepalive_breaks_on_construction_error()]] - `indirect_call` [INFERRED]
+- [[dot-test_containerized_fallback_evidence()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

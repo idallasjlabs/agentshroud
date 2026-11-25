@@ -1,17 +1,28 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L391"
+community: "lifespan.py"
+location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/lifespanpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrackingInjector]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `calls` [EXTRACTED]
+- [[DNSFilter]] - `calls` [EXTRACTED]
+- [[DNSFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressMonitor]] - `calls` [EXTRACTED]
+- [[EgressMonitorConfig]] - `calls` [EXTRACTED]
+- [[NetworkValidator]] - `calls` [EXTRACTED]
+- [[OAuthSecurityValidator]] - `calls` [EXTRACTED]
+- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[URLAnalyzer]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `references` [EXTRACTED]
+- [[WebProxy]] - `method` [EXTRACTED]
+- [[WebProxyConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_realtime_coverage.py"
+source_file: "src/interfaces/text_control_center.py"
 type: "code"
-community: "ws_soc_endpoint"
-location: "L167"
+community: "ControlCenter"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_soc_endpoint
+  - community/ControlCenter
 ---
 
 # .__init__()
 
 ## Connections
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[_FakeRBAC_2]] - `method` [EXTRACTED]
+- [[ControlCenter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint
+#graphify/code #graphify/EXTRACTED #community/ControlCenter

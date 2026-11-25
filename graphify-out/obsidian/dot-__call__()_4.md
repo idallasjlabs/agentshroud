@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/alert_telegram_relay.py"
+source_file: "gateway/tests/test_jira_dev_ticket.py"
 type: "code"
-community: "._handle"
-location: "L73"
+community: "test_jira_dev_ticket.py"
+location: "L258"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/test_jira_dev_ticketpy
 ---
 
 # .__call__()
 
 ## Connections
-- [[dot-_handle()]] - `calls` [EXTRACTED]
-- [[AlertTelegramRelay]] - `method` [EXTRACTED]
-- [[Any_19]] - `references` [EXTRACTED]
+- [[_MockTransport]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/test_jira_dev_ticketpy

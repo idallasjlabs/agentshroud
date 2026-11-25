@@ -12,10 +12,10 @@ tags:
 # create_report()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_6]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/tool_acl.py"
+source_file: "gateway/security/audit_export.py"
 type: "code"
-community: "test_tool_acl.py"
-location: "L214"
+community: "AuditExporter"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_tool_aclpy
+  - community/AuditExporter
 ---
 
 # .__init__()
 
 ## Connections
-- [[ToolACLConfig]] - `calls` [EXTRACTED]
-- [[ToolACLEnforcer]] - `method` [EXTRACTED]
+- [[AuditExportConfig]] - `references` [EXTRACTED]
+- [[AuditExporter]] - `method` [EXTRACTED]
+- [[AuditStore]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy
+#graphify/code #graphify/EXTRACTED #community/AuditExporter

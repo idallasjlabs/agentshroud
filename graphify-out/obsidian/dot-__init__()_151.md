@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "WebProxy"
-location: "L111"
+community: "ResourceGuard"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/ResourceGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `references` [EXTRACTED]
-- [[HTTPConnectProxy]] - `method` [EXTRACTED]
-- [[WebProxy]] - `references` [EXTRACTED]
-- [[WebProxyConfig]] - `calls` [EXTRACTED]
+- [[dot-_get_disk_io_stats()]] - `calls` [EXTRACTED]
+- [[dot-_start_monitoring_task()]] - `calls` [EXTRACTED]
+- [[ResourceGuard]] - `method` [EXTRACTED]
+- [[ResourceLimits]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

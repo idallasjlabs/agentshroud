@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/url_analyzer.py"
+source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "URLAnalyzer"
-location: "L102"
+community: "EnvironmentGuard"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/EnvironmentGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args resolve_dns If True, resolve hostnames to IPs and check those too.…]] - `rationale_for` [EXTRACTED]
-- [[URLAnalyzer]] - `method` [EXTRACTED]
+- [[EnvironmentGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

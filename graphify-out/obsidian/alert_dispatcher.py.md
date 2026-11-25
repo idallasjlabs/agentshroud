@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "AlertDispatcher"
+community: "test_alert_dispatcher_retry.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_alert_dispatcher_retrypy
 ---
 
 # alert_dispatcher.py
@@ -17,4 +17,4 @@ tags:
 - [[test_alert_dispatcher_retry.py]] - `imports_from` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy

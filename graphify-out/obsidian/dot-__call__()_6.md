@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_rate_limit_guard.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "RateLimitGuard"
-location: "L32"
+community: "test_cli_coverage.py"
+location: "L684"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/test_cli_coveragepy
 ---
 
 # .__call__()
 
 ## Connections
-- [[FakeClock_1]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy

@@ -1,24 +1,30 @@
 ---
 source_file: ""
 type: "code"
-community: "hermes_dashboard_ws_proxy"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/hermes_dashboard_ws_proxy
+  - community/AgentTarget
 ---
 
 # asyncio
 
 ## Connections
-- [[dot-test_alerts_accepted_from_localhost()]] - `references` [EXTRACTED]
-- [[dot-test_bots_inventory_matches_the_real_container_name()]] - `references` [EXTRACTED]
-- [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - `references` [EXTRACTED]
-- [[dot-test_proxy_returns_400_on_traversal()]] - `references` [EXTRACTED]
-- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `references` [EXTRACTED]
-- [[dot-test_relays_text_and_bytes_both_directions()]] - `references` [EXTRACTED]
-- [[dot-test_traversal_in_path_closes_without_connecting()]] - `references` [EXTRACTED]
-- [[dot-test_traversal_in_query_closes_without_connecting()]] - `references` [EXTRACTED]
-- [[dot-test_upstream_connect_failure_closes_gracefully()]] - `references` [EXTRACTED]
+- [[test_approval_decision_valid()]] - `references` [EXTRACTED]
+- [[test_approval_request_valid()]] - `references` [EXTRACTED]
+- [[test_forward_request_valid()]] - `references` [EXTRACTED]
+- [[test_forward_request_validation_empty_content()]] - `references` [EXTRACTED]
+- [[test_forward_request_validation_invalid_source()]] - `references` [EXTRACTED]
+- [[test_global_exception_handler()]] - `references` [EXTRACTED]
+- [[test_global_exception_handler_http_exception()]] - `references` [EXTRACTED]
+- [[test_lifespan_initialization()]] - `references` [EXTRACTED]
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - `references` [EXTRACTED]
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - `references` [EXTRACTED]
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - `references` [EXTRACTED]
+- [[test_log_requests_middleware()]] - `references` [EXTRACTED]
+- [[test_security_headers_middleware_catches_exception_group()]] - `references` [EXTRACTED]
+- [[test_security_headers_middleware_normal_response()]] - `references` [EXTRACTED]
+- [[test_security_headers_middleware_reraises_non_group()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

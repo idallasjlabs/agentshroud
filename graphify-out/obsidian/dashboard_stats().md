@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/ingest_api/routes/dashboard.py"
 type: "code"
-community: "test_dashboard.py"
+community: "ingest_api/main.py"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/ingest_api/mainpy
 ---
 
 # dashboard_stats()
 
 ## Connections
-- [[AuthRequired]] - `references` [EXTRACTED]
+- [[AuthRequired_4]] - `references` [EXTRACTED]
 - [[JSON stats for dashboard]] - `rationale_for` [EXTRACTED]
-- [[Request_1]] - `references` [EXTRACTED]
+- [[Request_8]] - `references` [EXTRACTED]
 - [[_build_egress_live_snapshot()]] - `calls` [EXTRACTED]
 - [[dashboard.py]] - `contains` [EXTRACTED]
-- [[get_1]] - `references` [EXTRACTED]
+- [[get_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

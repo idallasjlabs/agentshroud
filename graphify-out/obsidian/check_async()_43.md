@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_raw_web_fetch_json_approval_normalizes_leading_dot_domain"
-location: "L2778"
+community: "_make_sanitizer"
+location: "L2844"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_approval_normalizes_leading_dot_domain
+  - community/_make_sanitizer
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()]] - `contains` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_invalid_host_does_not_queue_approval()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_approval_normalizes_leading_dot_domain
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

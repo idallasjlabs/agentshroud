@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "make_proxy"
-location: "L534"
+community: "asyncio"
+location: "L6108"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/make_proxy
+  - graphify/EXTRACTED
+  - community/asyncio
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_async_egress_filter_deny_uses_rule_as_reason()]] - `indirect_call` [INFERRED]
+- [[dot-test_non_owner_non_http_url_does_not_suppress_separate_bare_domain_preflight()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/make_proxy
+#graphify/code #graphify/EXTRACTED #community/asyncio

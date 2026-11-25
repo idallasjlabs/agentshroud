@@ -1,26 +1,22 @@
 ---
 source_file: ""
 type: "code"
-community: "HTTPConnectProxy"
+community: "FalcoAlertWatcher"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/FalcoAlertWatcher
 ---
 
 # asyncio
 
 ## Connections
-- [[test_blocked_domain_is_tracked_in_recent()]] - `references` [EXTRACTED]
-- [[test_connect_blocked_domain_returns_403()]] - `references` [EXTRACTED]
-- [[test_connect_denied_by_egress_filter_returns_403()]] - `references` [EXTRACTED]
-- [[test_connect_system_bypass_domain_skips_policy_checks()]] - `references` [EXTRACTED]
-- [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - `references` [EXTRACTED]
-- [[test_http_proxy.py]] - `imports` [EXTRACTED]
-- [[test_malformed_request_line_returns_400()]] - `references` [EXTRACTED]
-- [[test_non_connect_method_returns_405()]] - `references` [EXTRACTED]
-- [[test_ssrf_attempt_returns_403()]] - `references` [EXTRACTED]
-- [[test_system_bypass_domain_logs_external_decision()]] - `references` [EXTRACTED]
-- [[test_system_bypass_without_egress_filter()]] - `references` [EXTRACTED]
+- [[test_critical_alert_triggers_lockdown()]] - `references` [EXTRACTED]
+- [[test_deduplication_same_alert_twice()]] - `references` [EXTRACTED]
+- [[test_missing_alert_dir_noop()]] - `references` [EXTRACTED]
+- [[test_multiple_critical_alerts()]] - `references` [EXTRACTED]
+- [[test_no_progressive_lockdown_configured()]] - `references` [EXTRACTED]
+- [[test_stop_halts_run_loop()]] - `references` [EXTRACTED]
+- [[test_warning_alert_not_blocked()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

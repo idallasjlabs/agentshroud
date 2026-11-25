@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/security/consent_framework.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "ServerConfig"
-location: "L71"
+community: "WebhookReceiver"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/WebhookReceiver
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConsentFramework]] - `method` [EXTRACTED]
+- [[dot-_can_create_directory()]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[UserSessionManager]] - `calls` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

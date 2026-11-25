@@ -1,35 +1,38 @@
 ---
 source_file: ""
 type: "code"
-community: "asyncio"
+community: "test_soc_egress_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_soc_egress_endpointspy
 ---
 
 # asyncio
 
 ## Connections
-- [[dot-test_emergency_disabled_trigger_rejected()]] - `references` [EXTRACTED]
-- [[dot-test_generate_returns_typed_token()]] - `references` [EXTRACTED]
-- [[dot-test_in_progress_is_rejected()]] - `references` [EXTRACTED]
-- [[dot-test_max_attempts_exceeded_is_rejected()]] - `references` [EXTRACTED]
-- [[dot-test_not_due_without_force_is_rejected()]] - `references` [EXTRACTED]
-- [[dot-test_read_generic_exception_yields_none()]] - `references` [EXTRACTED]
-- [[dot-test_read_nonzero_returncode_yields_none()]] - `references` [EXTRACTED]
-- [[dot-test_read_success_strips_whitespace()]] - `references` [EXTRACTED]
-- [[dot-test_read_timeout_yields_none()]] - `references` [EXTRACTED]
-- [[dot-test_retire_clears_old_reference_when_grace_expired()]] - `references` [EXTRACTED]
-- [[dot-test_retire_noop_when_no_grace_period()]] - `references` [EXTRACTED]
-- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - `references` [EXTRACTED]
-- [[dot-test_store_failure_marks_failed()]] - `references` [EXTRACTED]
-- [[dot-test_store_nonzero_returncode_is_false()]] - `references` [EXTRACTED]
-- [[dot-test_store_rejects_malformed_reference()]] - `references` [EXTRACTED]
-- [[dot-test_store_success()]] - `references` [EXTRACTED]
-- [[dot-test_store_timeout_is_false()]] - `references` [EXTRACTED]
-- [[dot-test_unknown_credential_returns_error()]] - `references` [EXTRACTED]
-- [[dot-test_validate_with_validator_that_raises_fails_closed()]] - `references` [EXTRACTED]
-- [[dot-test_validate_without_registered_validator_passes()]] - `references` [EXTRACTED]
+- [[test_manage_egress_add_remove_rule_and_risk()]] - `references` [EXTRACTED]
+- [[test_manage_egress_emergency_toggle()]] - `references` [EXTRACTED]
+- [[test_manage_egress_log_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_egress_pending_endpoint_includes_summary()]] - `references` [EXTRACTED]
+- [[test_manage_egress_rules_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_privacy_policy_and_audit_endpoints()]] - `references` [EXTRACTED]
+- [[test_manage_scan_all_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_scanners_history_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_scanners_summary_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_soc_correlation_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_soc_events_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_soc_export_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_soc_export_invalid_format()]] - `references` [EXTRACTED]
+- [[test_manage_soc_report_endpoint()]] - `references` [EXTRACTED]
+- [[test_manage_soc_report_falls_back_to_contributor_logs()]] - `references` [EXTRACTED]
+- [[test_outbound_quarantine_endpoints()]] - `references` [EXTRACTED]
+- [[test_quarantine_list_endpoint()]] - `references` [EXTRACTED]
+- [[test_quarantine_release_and_discard_flow()]] - `references` [EXTRACTED]
+- [[test_quarantine_summary_endpoint()]] - `references` [EXTRACTED]
+- [[test_soc_scanners_recent_empty()]] - `references` [EXTRACTED]
+- [[test_soc_scanners_recent_limit()]] - `references` [EXTRACTED]
+- [[test_soc_scanners_recent_returns_history()]] - `references` [EXTRACTED]
+- [[test_soc_scanners_recent_status_filter()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

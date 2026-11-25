@@ -17,7 +17,7 @@ tags:
 - [[dot-test_one_critical()]] - `calls` [EXTRACTED]
 - [[dot-test_perfect_score()]] - `calls` [EXTRACTED]
 - [[dot-test_score_floor()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[Calculate score for a single tool (0-100). Args summary Tool summary dict…]] - `rationale_for` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]

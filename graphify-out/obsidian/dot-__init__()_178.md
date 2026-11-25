@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L37"
+community: "test_intel_endpoint.py"
+location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/test_intel_endpointpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Args max_requests Maximum requests allowed in the time window window_seconds…]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[_FakeFetcher]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

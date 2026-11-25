@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L278"
+community: "TestPromptGuard"
+location: "L584"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/TestPromptGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[Args block_threshold Score at or above which input is blocked.…]] - `rationale_for` [EXTRACTED]
+- [[PatternRule]] - `references` [EXTRACTED]
+- [[PromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/TestPromptGuard

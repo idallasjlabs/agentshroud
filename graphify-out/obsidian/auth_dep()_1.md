@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/dashboard.py"
+source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "test_dashboard.py"
-location: "L385"
+community: "fastapi.md"
+location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/fastapimd
 ---
 
 # auth_dep()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Auth dependency that uses the app state config.]] - `rationale_for` [EXTRACTED]
 - [[Request_1]] - `references` [EXTRACTED]
+- [[approval.py]] - `contains` [EXTRACTED]
 - [[create_auth_dependency()]] - `calls` [EXTRACTED]
-- [[dashboard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/fastapimd

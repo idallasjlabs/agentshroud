@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L540"
+community: "lifespan.py"
+location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/lifespanpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeToolACL]] - `method` [EXTRACTED]
+- [[Args resolve_dns If True, resolve hostnames to IPs and check those too.…]] - `rationale_for` [EXTRACTED]
+- [[URLAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_dashboard_endpoints.py"
+source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "test_dashboard_endpoints.py"
-location: "L25"
+community: "test_soc_edge.py"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboard_endpointspy
+  - community/test_soc_edgepy
 ---
 
 # client()
 
 ## Connections
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_135]] - `references` [EXTRACTED]
-- [[lifespan()]] - `calls` [INFERRED]
-- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_127]] - `references` [EXTRACTED]
+- [[test_soc_edge.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

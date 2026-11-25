@@ -15,7 +15,7 @@ tags:
 - [[appendLog()_3]] - `contains` [EXTRACTED]
 - [[browserFetch()_3]] - `indirect_call` [INFERRED]
 - [[fs_5]] - `contains` [EXTRACTED]
-- [[path_29]] - `contains` [EXTRACTED]
+- [[path_28]] - `contains` [EXTRACTED]
 - [[{ chromium }_3]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/browser-fetchjs

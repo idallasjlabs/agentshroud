@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/tests/test_edge_e2e_sdk.py"
 type: "code"
-community: "EgressFilter"
-location: "L91"
+community: "test_edge_e2e_sdk.py"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[EgressFilterConfig]] - `references` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[get_egress_config()]] - `calls` [EXTRACTED]
+- [[MemoryTokenStorage]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

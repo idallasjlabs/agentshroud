@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "soc/router.py"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/soc/routerpy
 ---
 
 # build_correlation_summary()
@@ -25,4 +25,4 @@ tags:
 - [[soc_correlation.py]] - `contains` [EXTRACTED]
 - [[soc_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

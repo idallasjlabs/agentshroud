@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "_FakeAsyncClient"
-location: "L603"
+community: "_FakeStreamClient"
+location: "L1440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeAsyncClient
+  - community/_FakeStreamClient
 ---
 
 # .__aenter__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[_FakeStreamClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamClient

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "fastapi.md"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/fastapimd
 ---
 
 # dependency()
@@ -15,4 +15,4 @@ tags:
 - [[create_auth_dependency()]] - `indirect_call` [INFERRED]
 - [[get_auth_dependency()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/fastapimd

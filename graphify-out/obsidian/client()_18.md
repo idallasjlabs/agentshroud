@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_edge.py"
+source_file: "gateway/tests/test_intel_endpoint.py"
 type: "code"
-community: "TestAgentsRegistry"
-location: "L135"
+community: "test_intel_endpoint.py"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/test_intel_endpointpy
 ---
 
 # client()
 
 ## Connections
-- [[fixture_132]] - `references` [EXTRACTED]
-- [[test_soc_edge.py]] - `contains` [EXTRACTED]
+- [[fixture_116]] - `references` [EXTRACTED]
+- [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

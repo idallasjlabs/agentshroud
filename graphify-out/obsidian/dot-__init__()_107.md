@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/data_exfil_volume_guard.py"
+source_file: "gateway/security/approval_hardening.py"
 type: "code"
-community: "DataExfilVolumeGuard"
-location: "L86"
+community: "TestApprovalHardening"
+location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DataExfilVolumeGuard
+  - community/TestApprovalHardening
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataExfilVolumeConfig]] - `calls` [EXTRACTED]
-- [[DataExfilVolumeGuard]] - `method` [EXTRACTED]
+- [[ApprovalHardening]] - `method` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DataExfilVolumeGuard
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

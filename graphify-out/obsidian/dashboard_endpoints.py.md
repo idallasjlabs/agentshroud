@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py"
+community: "test_dashboard_endpoints.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/test_dashboard_endpointspy
 ---
 
 # dashboard_endpoints.py
@@ -21,7 +21,7 @@ tags:
 - [[_tcp_check()]] - `contains` [EXTRACTED]
 - [[alerts_summary()]] - `contains` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[install_log_handler()]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports_from` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[ssh_hosts()_1]] - `contains` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

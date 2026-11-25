@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tools/agentshroud_manager.py"
 type: "code"
-community: "version_routes.py"
+community: "check_current_version"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/check_current_version
 ---
 
 # check_current_version()
@@ -15,7 +15,7 @@ tags:
 - [[dot-test_after_upgrade()]] - `calls` [EXTRACTED]
 - [[dot-test_no_history_unknown()]] - `calls` [EXTRACTED]
 - [[dot-test_with_env_var()]] - `calls` [EXTRACTED]
-- [[Any_73]] - `references` [EXTRACTED]
+- [[Any_82]] - `references` [EXTRACTED]
 - [[Check the currently installed OpenClaw version.]] - `rationale_for` [EXTRACTED]
 - [[_get_db()]] - `calls` [EXTRACTED]
 - [[agentshroud_manager.py]] - `contains` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[upgrade()]] - `calls` [EXTRACTED]
 - [[version_routes.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/check_current_version

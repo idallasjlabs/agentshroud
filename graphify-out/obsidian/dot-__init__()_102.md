@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/ingest_api/router.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "GatewayConfig"
-location: "L52"
+community: "PIIConfig"
+location: "L58"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize router Args config Router configuration]] - `rationale_for` [EXTRACTED]
-- [[MultiAgentRouter]] - `method` [EXTRACTED]
-- [[RouterConfig]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

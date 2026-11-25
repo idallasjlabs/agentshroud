@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/approval_queue/group_router.py"
 type: "code"
-community: "AsyncMock"
-location: "L8633"
+community: "ApprovalRequest"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AsyncMock
+  - community/ApprovalRequest
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncMock]] - `method` [EXTRACTED]
+- [[Any_8]] - `references` [EXTRACTED]
+- [[GroupApprovalRouter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AsyncMock
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -12,6 +12,6 @@ tags:
 # .__init__()
 
 ## Connections
-- [[_FakeRBAC_1]] - `method` [EXTRACTED]
+- [[_FakeRBAC_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ContributorManager

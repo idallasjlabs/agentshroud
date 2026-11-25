@@ -11,15 +11,11 @@ tags:
 # asyncio
 
 ## Connections
-- [[dot-test_100_concurrent_submissions()]] - `references` [EXTRACTED]
-- [[dot-test_concurrent_submit_and_decide()]] - `references` [EXTRACTED]
-- [[dot-test_double_decide_raises()]] - `references` [EXTRACTED]
-- [[dot-test_expired_request_cannot_be_decided()]] - `references` [EXTRACTED]
-- [[dot-test_get_pending_expires_stale()]] - `references` [EXTRACTED]
-- [[dot-test_store_expires_old_items()]] - `references` [EXTRACTED]
-- [[dot-test_store_persists_across_reopen()]] - `references` [EXTRACTED]
-- [[dot-test_store_save_and_load()]] - `references` [EXTRACTED]
-- [[dot-test_store_update_status()]] - `references` [EXTRACTED]
-- [[test_approval_stress.py]] - `imports` [EXTRACTED]
+- [[test_audit_store_initialize_is_idempotent()]] - `references` [EXTRACTED]
+- [[test_decide_persists()]] - `references` [EXTRACTED]
+- [[test_expired_items_on_reload()]] - `references` [EXTRACTED]
+- [[test_initialize_is_idempotent()_1]] - `references` [EXTRACTED]
+- [[test_persist_and_reload()]] - `references` [EXTRACTED]
+- [[test_store_survives_restart()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

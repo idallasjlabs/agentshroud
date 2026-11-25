@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "KeyRotationManager"
+community: "export-email-reports.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/export-email-reportspy
 ---
 
 # datetime
 
 ## Connections
-- [[dot-register_credential()]] - `references` [EXTRACTED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[_parse_since()]] - `references` [EXTRACTED]
+- [[_report_date()]] - `references` [EXTRACTED]
+- [[export-email-reports.py]] - `imports_from` [EXTRACTED]
+- [[export_bot()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/export-email-reportspy

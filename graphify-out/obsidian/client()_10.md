@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
+source_file: "gateway/tests/test_web_api_coverage.py"
 type: "code"
-community: "email_send"
-location: "L38"
+community: "_engine"
+location: "L59"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/_engine
 ---
 
 # client()
 
 ## Connections
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_55]] - `references` [EXTRACTED]
-- [[test_email_owner_bypasses_pii.py]] - `contains` [EXTRACTED]
+- [[fixture_37]] - `references` [EXTRACTED]
+- [[test_web_api_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/_engine

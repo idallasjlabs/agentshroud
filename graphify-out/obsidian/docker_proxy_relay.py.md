@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Relays 127.0.0.1HERMES_DOCKER_RELAY_PORT - docker-socket-proxy2375. Hermes's…]] - `rationale_for` [EXTRACTED]
-- [[_handle()_2]] - `contains` [EXTRACTED]
+- [[_handle()]] - `contains` [EXTRACTED]
 - [[_pump()]] - `contains` [EXTRACTED]
-- [[main()_10]] - `contains` [EXTRACTED]
+- [[main()_9]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_handle

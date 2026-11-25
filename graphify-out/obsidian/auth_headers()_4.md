@@ -12,7 +12,7 @@ tags:
 # auth_headers()
 
 ## Connections
-- [[fixture_135]] - `references` [EXTRACTED]
+- [[fixture_131]] - `references` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

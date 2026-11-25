@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_forward_routing.py"
+source_file: "gateway/security/mcp_policy.py"
 type: "code"
-community: "test_forward_routing.py"
-location: "L404"
+community: "MCPPolicyEngine"
+location: "L252"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/MCPPolicyEngine
 ---
 
 # .__init__()
 
 ## Connections
-- [[_TrustCaptor]] - `method` [EXTRACTED]
+- [[MCPPolicyConfig]] - `calls` [EXTRACTED]
+- [[MCPPolicyEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

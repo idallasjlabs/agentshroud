@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "asyncio"
-location: "L6390"
+community: "test_mcp_proxy.py"
+location: "L498"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_mcp_proxypy
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_overlong_fqdn_does_not_queue_egress_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_egress_denied_blocks_url_tool_call()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

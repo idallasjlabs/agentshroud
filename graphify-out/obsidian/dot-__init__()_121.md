@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/security/outbound_filter.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "OutboundInfoFilter"
-location: "L73"
+community: "test_cli_coverage.py"
+location: "L680"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/test_cli_coveragepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_patterns()]] - `calls` [EXTRACTED]
-- [[Any_42]] - `references` [EXTRACTED]
-- [[InfoCategory]] - `calls` [EXTRACTED]
-- [[Initialize the outbound information filter. Args config Configuration…]] - `rationale_for` [EXTRACTED]
-- [[OutboundInfoFilter]] - `method` [EXTRACTED]
+- [[_FakeConnect]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/test_cli_coveragepy
