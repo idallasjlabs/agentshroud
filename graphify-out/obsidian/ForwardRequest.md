@@ -19,7 +19,7 @@ tags:
 - [[dot-test_invalid_source_rejected()]] - `calls` [EXTRACTED]
 - [[dot-test_valid_forward_request()]] - `calls` [EXTRACTED]
 - [[dot-validate_source()]] - `method` [EXTRACTED]
-- [[BaseModel_5]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[Request to forward content through the gateway Received from iOS Shortcuts,…]] - `rationale_for` [EXTRACTED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]

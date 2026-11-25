@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ServerConfig"
+community: "test_edge_e2e_sdk.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/test_edge_e2e_sdkpy
 ---
 
 # Exception
 
 ## Connections
-- [[ConfigValidationError]] - `inherits` [EXTRACTED]
+- [[TokenRejected]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

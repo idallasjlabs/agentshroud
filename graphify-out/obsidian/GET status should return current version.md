@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "asyncio"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/asyncio
 ---
 
 # GET /status should return current version
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_status_returns_current_version()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "_patch_urlopen"
+community: "TestAuth"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_patch_urlopen
+  - community/TestAuth
 ---
 
 # Exception
 
 ## Connections
-- [[_patch_urlopen()]] - `references` [EXTRACTED]
+- [[OAuthError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_patch_urlopen
+#graphify/code #graphify/EXTRACTED #community/TestAuth

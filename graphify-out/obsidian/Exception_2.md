@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "make_proxy"
+community: "TokenValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_proxy
+  - community/TokenValidator
 ---
 
 # Exception
 
 ## Connections
-- [[dot-__init__()_30]] - `references` [EXTRACTED]
+- [[TokenError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_proxy
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/tool_result_injection.py"
 type: "rationale"
-community: "InjectionRule"
+community: "ToolResultInjectionScanner"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/InjectionRule
+  - community/ToolResultInjectionScanner
 ---
 
 # Initialize the scanner with optional custom rules. Args: custom_rules:…
 
 ## Connections
-- [[dot-__init__()_100]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_59]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/InjectionRule
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

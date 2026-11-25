@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_125]] - `method` [EXTRACTED]
+- [[dot-__init__()_117]] - `method` [EXTRACTED]
 - [[dot-_analyze_file_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_content()]] - `method` [EXTRACTED]
 - [[dot-_analyze_script_file()]] - `method` [EXTRACTED]

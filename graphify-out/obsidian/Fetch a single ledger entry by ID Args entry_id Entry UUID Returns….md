@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # Fetch a single ledger entry by ID Args: entry_id: Entry UUID Returns:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_entry()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_module_stats.py"
+community: "outbound_filter.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_module_statspy
+  - community/outbound_filterpy
 ---
 
 # Enum
 
 ## Connections
-- [[Decision]] - `inherits` [EXTRACTED]
-- [[module_stats.py]] - `imports_from` [EXTRACTED]
+- [[InfoCategory]] - `inherits` [EXTRACTED]
+- [[outbound_filter.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_module_statspy
+#graphify/code #graphify/EXTRACTED #community/outbound_filterpy

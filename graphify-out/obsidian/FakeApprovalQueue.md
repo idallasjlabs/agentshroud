@@ -12,7 +12,7 @@ tags:
 # FakeApprovalQueue
 
 ## Connections
-- [[dot-__init__()_29]] - `method` [EXTRACTED]
+- [[dot-__init__()_21]] - `method` [EXTRACTED]
 - [[dot-get_item()]] - `method` [EXTRACTED]
 - [[dot-submit_tool_request()]] - `method` [EXTRACTED]
 - [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `calls` [INFERRED]

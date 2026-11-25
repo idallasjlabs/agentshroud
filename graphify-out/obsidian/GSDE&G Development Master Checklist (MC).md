@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-mcREADME]] - `contains` [EXTRACTED]
-- [[Purpose_102]] - `contains` [EXTRACTED]
+- [[Purpose_104]] - `contains` [EXTRACTED]
 - [[Related Skills_34]] - `contains` [EXTRACTED]
-- [[Usage_44]] - `contains` [EXTRACTED]
+- [[Usage_45]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

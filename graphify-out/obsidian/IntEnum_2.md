@@ -11,6 +11,6 @@ tags:
 # IntEnum
 
 ## Connections
-- [[ThreatLevel]] - `inherits` [EXTRACTED]
+- [[ThreatLevel_1]] - `inherits` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

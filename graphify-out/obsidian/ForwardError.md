@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "AgentTarget"
+community: "test_forward_stream.py"
 location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_forward_streampy
 ---
 
 # ForwardError
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-forward_to_agent()]] - `calls` [EXTRACTED]
 - [[dot-forward_to_agent_stream()]] - `calls` [EXTRACTED]
-- [[Exception_14]] - `inherits` [EXTRACTED]
+- [[Exception_1]] - `inherits` [EXTRACTED]
 - [[Raised when forwarding to agent fails]] - `rationale_for` [EXTRACTED]
 - [[_raise_forward_error()]] - `calls` [EXTRACTED]
 - [[forward.py]] - `imports` [EXTRACTED]
@@ -37,4 +37,4 @@ tags:
 - [[test_stream_raises_forward_error_on_malformed_json()]] - `uses` [INFERRED]
 - [[test_stream_rejects_non_openai_compat_target()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

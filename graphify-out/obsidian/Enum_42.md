@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentRegistry"
+community: "ToolChainAnalyzer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/ToolChainAnalyzer
 ---
 
 # Enum
 
 ## Connections
-- [[IsolationStatus]] - `inherits` [EXTRACTED]
-- [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
+- [[ChainAction]] - `inherits` [EXTRACTED]
+- [[RiskLevel_6]] - `inherits` [EXTRACTED]
+- [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

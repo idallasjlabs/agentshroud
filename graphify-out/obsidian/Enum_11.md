@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "KeyRotationManager"
+community: "MemoryLifecycleConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/MemoryLifecycleConfig
 ---
 
 # Enum
 
 ## Connections
-- [[RotationStatus]] - `inherits` [EXTRACTED]
-- [[key_rotation.py]] - `imports_from` [EXTRACTED]
+- [[ContentThreatType]] - `inherits` [EXTRACTED]
+- [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig

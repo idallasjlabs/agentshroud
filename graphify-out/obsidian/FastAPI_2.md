@@ -1,17 +1,21 @@
 ---
-source_file: ""
-type: "code"
-community: "lifespan"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
+type: "document"
+community: "fastapi.md"
+location: "L9"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/fastapimd
 ---
 
 # FastAPI
 
 ## Connections
-- [[lifespan()]] - `references` [EXTRACTED]
-- [[lifespan.py]] - `imports_from` [EXTRACTED]
+- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
+- [[Purpose_44]] - `contains` [EXTRACTED]
+- [[Related Notes_10]] - `contains` [EXTRACTED]
+- [[Where Used]] - `contains` [EXTRACTED]
+- [[fastapi_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/document #graphify/EXTRACTED #community/fastapimd

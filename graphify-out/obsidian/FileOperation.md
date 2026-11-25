@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_check()]] - `calls` [EXTRACTED]
-- [[dot-get_audit_log()_2]] - `references` [EXTRACTED]
+- [[dot-get_audit_log()_3]] - `references` [EXTRACTED]
 - [[dot-get_security_violations()]] - `references` [EXTRACTED]
 - [[file_sandbox.py]] - `contains` [EXTRACTED]
 

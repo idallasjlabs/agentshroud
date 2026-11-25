@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/trivy_report.py"
 type: "rationale"
-community: "parse_trivy_output"
+community: "test_security_toolchain.py"
 location: "L189"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/parse_trivy_output
+  - community/test_security_toolchainpy
 ---
 
 # Generate a summary dict suitable for the health report. Args: report: Parsed…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[generate_summary()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/parse_trivy_output
+#graphify/rationale #graphify/EXTRACTED #community/test_security_toolchainpy

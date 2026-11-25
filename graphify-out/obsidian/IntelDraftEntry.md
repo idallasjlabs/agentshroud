@@ -12,7 +12,7 @@ tags:
 # IntelDraftEntry
 
 ## Connections
-- [[BaseModel_8]] - `inherits` [EXTRACTED]
+- [[BaseModel_9]] - `inherits` [EXTRACTED]
 - [[One unverified competitor claim + its candidate source URLs.]] - `rationale_for` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 

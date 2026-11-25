@@ -12,6 +12,6 @@ tags:
 # Fully initialized async client with lifespan.
 
 ## Connections
-- [[client()_1]] - `rationale_for` [EXTRACTED]
+- [[client()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/app

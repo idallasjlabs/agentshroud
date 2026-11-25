@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_e2e_sdk.py"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/MiddlewareManager
 ---
 
 # Exception
 
 ## Connections
-- [[TokenRejected]] - `inherits` [EXTRACTED]
+- [[dot-_record_guard_init_failure()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

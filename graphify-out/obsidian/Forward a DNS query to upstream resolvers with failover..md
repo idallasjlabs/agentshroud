@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "rationale"
-community: "make_fake_socket_module"
+community: "test_dns_canvas_coverage.py"
 location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/make_fake_socket_module
+  - community/test_dns_canvas_coveragepy
 ---
 
 # Forward a DNS query to upstream resolvers with failover.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[forward_query()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/make_fake_socket_module
+#graphify/rationale #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

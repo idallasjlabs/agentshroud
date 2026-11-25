@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "EgressAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/EgressAction
 ---
 
 # Enum
 
 ## Connections
-- [[ContentThreatType]] - `inherits` [EXTRACTED]
-- [[memory_lifecycle.py]] - `imports_from` [EXTRACTED]
+- [[EgressAction]] - `inherits` [EXTRACTED]
+- [[egress_filter.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/EgressAction

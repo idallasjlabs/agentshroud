@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "rationale"
-community: "._extract_egress_targets"
-location: "L841"
+community: "TestWebProxySecurityIntegration"
+location: "L629"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[dot-get_stats()_19]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/rationale #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

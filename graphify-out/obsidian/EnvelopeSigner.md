@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "service.py"
 location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/servicepy
 ---
 
 # EnvelopeSigner
 
 ## Connections
-- [[dot-__init__()_203]] - `references` [EXTRACTED]
-- [[dot-__init__()_205]] - `method` [EXTRACTED]
+- [[dot-__init__()_208]] - `references` [EXTRACTED]
+- [[dot-__init__()_211]] - `method` [EXTRACTED]
 - [[dot-_compute_signature()]] - `method` [EXTRACTED]
 - [[dot-sign()]] - `method` [EXTRACTED]
 - [[dot-test_different_keys_fail_verification()]] - `calls` [EXTRACTED]
@@ -47,4 +47,4 @@ tags:
 - [[unwrap_untrusted()]] - `references` [EXTRACTED]
 - [[wrap_untrusted()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/servicepy

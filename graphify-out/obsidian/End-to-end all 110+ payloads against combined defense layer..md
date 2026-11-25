@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "normalize_input"
+community: "HeuristicClassifier"
 location: "L388"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/HeuristicClassifier
 ---
 
 # End-to-end: all 110+ payloads against combined defense layer.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOverallDetectionRate]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/normalize_input
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

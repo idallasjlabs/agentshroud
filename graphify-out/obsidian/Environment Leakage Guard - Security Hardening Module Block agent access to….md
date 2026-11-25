@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "rationale"
-community: "check_command"
+community: "env_guard.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/check_command
+  - community/env_guardpy
 ---
 
 # Environment Leakage Guard - Security Hardening Module Block agent access to…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[env_guard.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/check_command
+#graphify/rationale #graphify/EXTRACTED #community/env_guardpy

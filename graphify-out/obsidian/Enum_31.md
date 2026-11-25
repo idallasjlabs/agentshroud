@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "OutboundInfoFilter"
+community: "GitGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/GitGuard
 ---
 
 # Enum
 
 ## Connections
-- [[InfoCategory]] - `inherits` [EXTRACTED]
-- [[outbound_filter.py]] - `imports_from` [EXTRACTED]
+- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
+- [[git_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/GitGuard

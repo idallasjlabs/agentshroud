@@ -1,12 +1,12 @@
 ---
 source_file: "docs/setup/HERMES_SETUP.md"
 type: "document"
-community: "Hermes Agent — Connection Setup"
+community: "check_command"
 location: "L4"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Hermes_Agent__Connection_Setup
+  - community/check_command
 ---
 
 # Hermes Agent — Connection Setup
@@ -21,4 +21,4 @@ tags:
 - [[Table of Contents_1]] - `contains` [EXTRACTED]
 - [[Troubleshooting_35]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Hermes_Agent__Connection_Setup
+#graphify/document #graphify/EXTRACTED #community/check_command

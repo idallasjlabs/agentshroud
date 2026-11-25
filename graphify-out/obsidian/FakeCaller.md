@@ -12,8 +12,8 @@ tags:
 # FakeCaller
 
 ## Connections
-- [[dot-__init__()_39]] - `method` [EXTRACTED]
-- [[dot-is_group_admin()]] - `method` [EXTRACTED]
+- [[dot-__init__()_35]] - `method` [EXTRACTED]
+- [[dot-is_group_admin()_1]] - `method` [EXTRACTED]
 - [[dot-is_owner()_2]] - `method` [EXTRACTED]
 - [[dot-require()_1]] - `method` [EXTRACTED]
 - [[Role]] - `uses` [INFERRED]

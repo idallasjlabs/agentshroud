@@ -12,6 +12,6 @@ tags:
 # Initialize the multi-turn tracker. Args: config: Configuration dictionary with…
 
 ## Connections
-- [[dot-__init__()_212]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_67]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

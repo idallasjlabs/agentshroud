@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_security_audit.py"
+community: "SessionManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/SessionManager
 ---
 
 # Exception
 
 ## Connections
-- [[OAuthError]] - `inherits` [EXTRACTED]
+- [[SessionError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/SessionManager

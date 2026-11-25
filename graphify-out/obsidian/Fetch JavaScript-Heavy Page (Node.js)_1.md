@@ -12,6 +12,6 @@ tags:
 # Fetch JavaScript-Heavy Page (Node.js)
 
 ## Connections
-- [[Usage_100]] - `contains` [EXTRACTED]
+- [[Usage_101]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

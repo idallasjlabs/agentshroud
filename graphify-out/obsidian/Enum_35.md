@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "WebContentScanner"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebContentScanner
+  - community/lifespanpy
 ---
 
 # Enum
 
 ## Connections
-- [[FindingSeverity]] - `inherits` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
+- [[ProxyAction]] - `inherits` [EXTRACTED]
+- [[web_proxy.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebContentScanner
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

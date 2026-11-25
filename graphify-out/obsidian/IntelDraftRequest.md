@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[A draft competitive-intel report submitted for citation verification.]] - `rationale_for` [EXTRACTED]
-- [[BaseModel_8]] - `inherits` [EXTRACTED]
+- [[BaseModel_9]] - `inherits` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[submit_competitive_intel()]] - `references` [EXTRACTED]
 

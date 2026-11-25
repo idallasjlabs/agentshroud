@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "SecureBrowser"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/AgentTarget
 ---
 
 # Exception
 
 ## Connections
-- [[SecurityError_3]] - `inherits` [EXTRACTED]
+- [[global_exception_handler()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

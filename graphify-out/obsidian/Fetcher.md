@@ -11,7 +11,7 @@ tags:
 # Fetcher
 
 ## Connections
-- [[dot-__init__()_138]] - `references` [EXTRACTED]
+- [[dot-__init__()_135]] - `references` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher

@@ -1,17 +1,17 @@
 ---
 source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
-community: "Pydantic"
+community: "AgentTarget"
 location: "L31"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/AgentTarget
 ---
 
 # Key Configuration Models
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[Pydantic_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic
+#graphify/document #graphify/EXTRACTED #community/AgentTarget

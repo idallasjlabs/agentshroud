@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "test_memory_lifecycle.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # Enum
@@ -14,4 +14,4 @@ tags:
 - [[ModificationSource]] - `inherits` [EXTRACTED]
 - [[memory_integrity.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

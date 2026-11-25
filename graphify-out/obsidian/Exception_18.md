@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "SessionManager"
+community: "ServerConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/ServerConfig
 ---
 
 # Exception
 
 ## Connections
-- [[SessionError]] - `inherits` [EXTRACTED]
+- [[ConfigValidationError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

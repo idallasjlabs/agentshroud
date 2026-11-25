@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "web_proxy.py"
+community: "EgressEvent"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/EgressEvent
 ---
 
 # Enum
@@ -14,4 +14,4 @@ tags:
 - [[EgressChannel]] - `inherits` [EXTRACTED]
 - [[egress_monitor.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

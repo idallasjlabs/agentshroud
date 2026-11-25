@@ -12,6 +12,6 @@ tags:
 # Filter outbound LLM response for credential leaks and XML.
 
 ## Connections
-- [[dot-_filter_outbound()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-_filter_outbound()]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/LLMProxy

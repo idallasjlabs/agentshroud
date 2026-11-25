@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "make_event"
+community: "test_forward_stream.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_forward_streampy
 ---
 
 # Exception
 
 ## Connections
-- [[_Denied]] - `inherits` [EXTRACTED]
+- [[ForwardError]] - `inherits` [EXTRACTED]
+- [[RouterError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_forward_streampy

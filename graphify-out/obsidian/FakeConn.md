@@ -12,7 +12,7 @@ tags:
 # FakeConn
 
 ## Connections
-- [[dot-__init__()_30]] - `method` [EXTRACTED]
+- [[dot-__init__()_22]] - `method` [EXTRACTED]
 - [[dot-send_request()]] - `method` [EXTRACTED]
 - [[dot-stop()_1]] - `method` [EXTRACTED]
 - [[dot-test_execution_redacts_admin_private_content()]] - `calls` [EXTRACTED]

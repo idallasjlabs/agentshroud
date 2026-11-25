@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "MCPPolicyEngine"
+community: "PromptGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/PromptGuard
 ---
 
 # Enum
 
 ## Connections
-- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
-- [[mcp_policy.py]] - `imports_from` [EXTRACTED]
+- [[ThreatAction]] - `inherits` [EXTRACTED]
+- [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

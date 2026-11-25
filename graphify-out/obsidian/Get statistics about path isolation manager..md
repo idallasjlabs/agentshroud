@@ -12,6 +12,6 @@ tags:
 # Get statistics about path isolation manager.
 
 ## Connections
-- [[dot-get_stats()_5]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

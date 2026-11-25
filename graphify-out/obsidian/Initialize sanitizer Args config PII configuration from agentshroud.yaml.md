@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L39"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # Initialize sanitizer Args: config: PII configuration from agentshroud.yaml
 
 ## Connections
-- [[dot-__init__()_28]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_17]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

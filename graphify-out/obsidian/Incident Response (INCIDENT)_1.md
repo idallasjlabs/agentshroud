@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-productionREADME]] - `contains` [EXTRACTED]
-- [[Purpose_104]] - `contains` [EXTRACTED]
+- [[Purpose_106]] - `contains` [EXTRACTED]
 - [[Related Skills_36]] - `contains` [EXTRACTED]
-- [[Usage_46]] - `contains` [EXTRACTED]
+- [[Usage_47]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Incident_Response_INCIDENT

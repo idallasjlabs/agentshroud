@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # GSD Cadence — Get Shit Done Governance
@@ -18,4 +18,4 @@ tags:
 - [[Rule 2 — Approval Tag for High-Severity Changes]] - `contains` [EXTRACTED]
 - [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

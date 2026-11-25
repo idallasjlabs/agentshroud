@@ -12,14 +12,14 @@ tags:
 # IsolationStatus
 
 ## Connections
-- [[Enum_42]] - `inherits` [EXTRACTED]
+- [[Enum_41]] - `inherits` [EXTRACTED]
 - [[TestAgentIsolation]] - `uses` [INFERRED]
 - [[TestContainerSecurity]] - `uses` [INFERRED]
 - [[TestNetworkIsolation]] - `uses` [INFERRED]
 - [[TestSharedNothing]] - `uses` [INFERRED]
 - [[TestVolumeIsolation]] - `uses` [INFERRED]
 - [[agent_isolation.py_2]] - `contains` [EXTRACTED]
-- [[str_25]] - `inherits` [EXTRACTED]
+- [[str_24]] - `inherits` [EXTRACTED]
 - [[test_agent_isolation.py]] - `imports` [EXTRACTED]
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_security_hardening.py]] - `imports` [EXTRACTED]

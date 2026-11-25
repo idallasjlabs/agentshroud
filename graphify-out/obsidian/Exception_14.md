@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentTarget"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/test_edge_service_routespy
 ---
 
 # Exception
 
 ## Connections
-- [[ForwardError]] - `inherits` [EXTRACTED]
-- [[RouterError]] - `inherits` [EXTRACTED]
+- [[GatewayError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
