@@ -6,14 +6,18 @@ All commands run on marvin from the repo root. Dev uses the `agentshroud-bot` co
 
 ### 1. Sign the tool descriptors (owner only, interactive terminal)
 
+Run these in **your own** macOS account (on marvin, `ijefferson.admin`), in Terminal on your desktop, never in the account the agents run as (`agentshroud-bot`). The key decides which tools vendors may call, so no agent may be able to reach it.
+
 ```bash
-python -m gateway.inbound_edge.descriptors keygen | keyring set agentshroud-edge descriptors
+python -m gateway.inbound_edge.descriptors keygen --keychain agentshroud-edge   # first time / rotation only
 python -m gateway.inbound_edge.descriptors manifest
-keyring get agentshroud-edge descriptors | python -m gateway.inbound_edge.descriptors sign
+python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge
 python -m gateway.inbound_edge.descriptors verify          # → verify: OK
 ```
 
-Commit `config/inbound-edge/descriptors.{manifest.json,manifest.sig,pub.pem}`. The private key exists only in your keychain (or use `op` in place of `keyring`).
+Commit `config/inbound-edge/descriptors.{manifest.json,manifest.sig,pub.pem}`. `--keychain` keeps the private key in your login keychain: it goes in and out through `security` on stdin, never argv or the screen. `keygen` refuses to replace an existing key. Without `--keychain`, `keygen` prints the key once for 1Password and `sign` reads it from stdin. If `sign` says *stdin did not contain a base64 Ed25519 private key*, the keychain could not be read. The usual cause is a shell without your desktop session (tmux, `su`, ssh), where macOS cannot show the approval dialog.
+
+**Rotating the key** (e.g. moving it off another account): `keygen --keychain` writes a new `descriptors.pub.pem`. Then `sign` and `verify` as above, and commit the new `pub.pem` and `.sig` together in one PR. Every open PR that changes descriptors must be re-signed after it rebases. Delete the old keychain item from the old account afterwards.
 
 ### 2. Create the edge secrets
 
