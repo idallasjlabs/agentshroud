@@ -208,9 +208,10 @@ def mcp_tool(name: str) -> dict:
 #   python -m gateway.inbound_edge.descriptors manifest
 #   python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge
 #
-# Run as the OWNER's macOS account, never the account the agents run as: the key
-# signs what the edge lets vendors call. With --keychain the key goes to and from
-# the login keychain through ``security`` on stdin only (never argv, never printed).
+# The key signs what the edge lets vendors call, so every use needs the owner: run
+# in a desktop Terminal and choose Allow, never Always Allow, in the dialog. With
+# --keychain the key goes to and from the login keychain through ``security`` on
+# stdin only (never argv, never printed).
 # Without it, keygen prints the key once (base64, one line) for 1Password and sign
 # reads it from stdin. sign refuses a key that does not match the committed public
 # key and verifies the result before writing the signature.
@@ -231,14 +232,16 @@ def _keychain_has(run, service: str) -> bool:
 
 def _keychain_store(run, service: str, secret: str) -> bool:
     # `security -i` reads the command from stdin, so the key never appears in argv.
+    # -T "" trusts no application: without it macOS trusts /usr/bin/security, and any
+    # process in this account could read the key with no dialog.
     stored = run(
         ["security", "-i"],
-        input=f"add-generic-password -s {service} -a {_ITEM_ACCOUNT} -w {secret}\n",
+        input=f'add-generic-password -s {service} -a {_ITEM_ACCOUNT} -T "" -w {secret}\n',
         capture_output=True,
         text=True,
         check=False,
     )
-    return stored.returncode == 0
+    return stored.returncode == 0 and _keychain_has(run, service)
 
 
 def _keychain_read(run, service: str) -> Optional[str]:

@@ -9,6 +9,7 @@ from __future__ import annotations
 import base64
 import copy
 import json
+import shlex
 
 import pytest
 from cryptography.hazmat.primitives import serialization
@@ -187,10 +188,12 @@ class TestSigningCli:
 class FakeKeychain:
     """Stands in for macOS ``security``: records every argv and stdin it receives."""
 
-    def __init__(self, add_rc=0):
+    def __init__(self, add_rc=0, drop=False):
         self.items = {}
+        self.trusted = {}
         self.calls = []
         self.add_rc = add_rc
+        self.drop = drop  # reports success but stores nothing
 
     def __call__(self, cmd, input=None, capture_output=True, text=True, check=False):
         import subprocess
@@ -203,19 +206,20 @@ class FakeKeychain:
             out = self.items[key] + "\n" if "-w" in cmd else "attributes"
             return subprocess.CompletedProcess(cmd, 0, out, "")
         if cmd == ["security", "-i"]:
-            words = input.split()
+            words = shlex.split(input)
             assert words[0] == "add-generic-password"
             key = (words[words.index("-s") + 1], words[words.index("-a") + 1])
-            if self.add_rc == 0:
+            if self.add_rc == 0 and not self.drop:
                 self.items[key] = words[words.index("-w") + 1]
+                trusted = words[words.index("-T") + 1] if "-T" in words else "/usr/bin/security"
+                self.trusted[key] = trusted
             return subprocess.CompletedProcess(cmd, self.add_rc, "", "")
         raise AssertionError(f"unexpected command {cmd}")
 
 
 class TestKeychainSigning:
     """The signing key lives in the OWNER's macOS keychain, read and written through
-    ``security`` with the key on stdin only — so it can live outside the account the
-    agents run as, with no Python keyring module (2026-11-25)."""
+    ``security`` with the key on stdin only, and every read needs the owner's approval."""
 
     @staticmethod
     def _paths(tmp_path):
@@ -232,6 +236,20 @@ class TestKeychainSigning:
         assert key not in capsys.readouterr().out
         assert all(key not in " ".join(argv) for argv, _ in kc.calls)
         assert b"PUBLIC KEY" in pub.read_bytes()
+
+    def test_keygen_trusts_no_application_to_read_the_key(self, tmp_path):
+        # Without -T "" macOS trusts /usr/bin/security itself, so any process in the
+        # account, agents included, reads the key with no dialog (measured 2026-11-25).
+        *_, args = self._paths(tmp_path)
+        kc = FakeKeychain()
+        assert d.main(["keygen", "--keychain", "agentshroud-edge", *args], run=kc) == 0
+        assert kc.trusted[("agentshroud-edge", "descriptors")] == ""
+
+    def test_keygen_fails_when_the_item_is_not_there_afterwards(self, tmp_path):
+        _, _, pub, args = self._paths(tmp_path)
+        kc = FakeKeychain(drop=True)
+        assert d.main(["keygen", "--keychain", "agentshroud-edge", *args], run=kc) == 1
+        assert not pub.exists()
 
     def test_keygen_refuses_to_replace_an_existing_key(self, tmp_path):
         _, _, pub, args = self._paths(tmp_path)
