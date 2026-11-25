@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L352"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # .is_privilege_escalation()
@@ -18,4 +18,4 @@ tags:
 - [[Return True if changing from_role → to_role represents an escalation.]] - `rationale_for` [EXTRACTED]
 - [[Role]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

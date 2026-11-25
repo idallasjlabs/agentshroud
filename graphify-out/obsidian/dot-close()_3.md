@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
 community: "SecureBrowser"
 location: "L379"
@@ -12,7 +12,7 @@ tags:
 # .close()
 
 ## Connections
-- [[Clean up browser resources]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[Clean up browser resources_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

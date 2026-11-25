@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "GatewayConfig"
-location: "L237"
+community: "test_mfa_guard.py"
+location: "L450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/test_mfa_guardpy
 ---
 
 # .get_pending()
 
 ## Connections
-- [[dot-_expire_stale()]] - `calls` [EXTRACTED]
-- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[Get all pending (not expired, not decided) items First expires any stale items.…]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Get all pending approval items.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

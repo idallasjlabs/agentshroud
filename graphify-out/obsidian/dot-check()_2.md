@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/ingest_api/auth.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L85"
+community: "RateLimiter"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/RateLimiter
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_hash_file()]] - `calls` [EXTRACTED]
-- [[dot-_load_baseline()]] - `calls` [EXTRACTED]
-- [[dot-_save_baseline()]] - `calls` [EXTRACTED]
-- [[Compare current file hashes against baseline. Returns a list of change records…]] - `rationale_for` [EXTRACTED]
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
+- [[Check if client is within rate limit Args client_id Usually client IP address…]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/RateLimiter

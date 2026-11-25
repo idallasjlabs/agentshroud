@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/service.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "test_edge_e2e_sdk.py"
-location: "L75"
+community: "AuditStore"
+location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/AuditStore
 ---
 
 # .close()
 
 ## Connections
-- [[EdgeService]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/AuditStore

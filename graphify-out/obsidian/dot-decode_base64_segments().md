@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "EncodingDetector"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L78"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncodingDetector
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # .decode_base64_segments()
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `method` [EXTRACTED]
 - [[replacer()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/EncodingDetector
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

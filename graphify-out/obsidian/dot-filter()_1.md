@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "LogSanitizer"
+community: "deep_security_test"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/deep_security_test
 ---
 
 # .filter()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_sanitize_text()]] - `calls` [EXTRACTED]
 - [[Filter log record, sanitizing sensitive content.]] - `rationale_for` [EXTRACTED]
-- [[LogRecord_2]] - `references` [EXTRACTED]
+- [[LogRecord_1]] - `references` [EXTRACTED]
 - [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

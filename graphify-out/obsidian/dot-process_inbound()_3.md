@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
-location: "L28"
+community: "AgentTarget"
+location: "L310"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # .process_inbound()
 
 ## Connections
-- [[_PipelineCaptor]] - `method` [EXTRACTED]
+- [[_BlockedOutboundPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "CredentialInfo"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/CredentialInfo
 ---
 
 # .is_in_grace_period()
@@ -15,4 +15,4 @@ tags:
 - [[CredentialInfo]] - `method` [EXTRACTED]
 - [[Whether credential is currently in grace period.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ScanResult"
+community: "SkillGuard"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/SkillGuard
 ---
 
 # .extend()
 
 ## Connections
-- [[ScanResult_2]] - `method` [EXTRACTED]
+- [[ScanResult_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

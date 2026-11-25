@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyInjector"
+community: "KeyVault"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyInjector
+  - community/KeyVault
 ---
 
 # .inject_for_request()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[KeyInjector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyInjector
+#graphify/code #graphify/EXTRACTED #community/KeyVault

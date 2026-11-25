@@ -1,22 +1,18 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "EgressFilter"
-location: "L149"
+community: "lifespan.py"
+location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/lifespanpy
 ---
 
 # .check()
 
 ## Connections
-- [[dot-_check_impl()]] - `calls` [EXTRACTED]
-- [[dot-check_async()]] - `calls` [EXTRACTED]
-- [[EgressAttempt]] - `references` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[Public entry — records the decision for the SOC heat-map (SCRUM-80), then…_1]] - `rationale_for` [EXTRACTED]
-- [[record_decision()]] - `calls` [EXTRACTED]
+- [[Check if request is within rate limit. Returns True if allowed.]] - `rationale_for` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

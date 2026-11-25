@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "FileSandbox"
-location: "L955"
+community: "PIIConfig"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/PIIConfig
 ---
 
 # .sanitizer()
 
 ## Connections
-- [[LogSanitizer]] - `calls` [EXTRACTED]
-- [[TestLoggingSecurity]] - `method` [EXTRACTED]
-- [[fixture_47]] - `references` [EXTRACTED]
+- [[TestToolResultSanitizer]] - `method` [EXTRACTED]
+- [[Tool result sanitizer instance for tests]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[fixture_82]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

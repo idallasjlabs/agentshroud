@@ -12,7 +12,7 @@ tags:
 # .config_hash()
 
 ## Connections
-- [[dot-to_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_4]] - `calls` [EXTRACTED]
 - [[ContainerSnapshot]] - `method` [EXTRACTED]
 - [[SHA-256 hash of the config for quick comparison.]] - `rationale_for` [EXTRACTED]
 

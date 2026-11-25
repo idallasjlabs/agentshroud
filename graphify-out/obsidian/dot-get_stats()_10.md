@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_proxy.py"
+source_file: "gateway/proxy/sidecar.py"
 type: "code"
-community: "TelegramAPIProxy"
-location: "L1020"
+community: "test_e2e_proxy.py"
+location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TelegramAPIProxy
+  - community/test_e2e_proxypy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[Any_44]] - `references` [EXTRACTED]
+- [[SidecarScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

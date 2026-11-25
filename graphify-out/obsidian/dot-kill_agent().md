@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # .kill_agent()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_log_event()]] - `calls` [EXTRACTED]
 - [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

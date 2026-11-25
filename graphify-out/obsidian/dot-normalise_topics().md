@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # .normalise_topics()
@@ -15,4 +15,4 @@ tags:
 - [[ProjectConfig]] - `method` [EXTRACTED]
 - [[field_validator]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

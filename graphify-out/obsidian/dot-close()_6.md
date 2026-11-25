@@ -1,18 +1,18 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "SecureBrowser"
-location: "L379"
+community: "ingest_api/config.py"
+location: "L401"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/ingest_api/configpy
 ---
 
 # .close()
 
 ## Connections
-- [[Clean up browser resources_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_3]] - `method` [EXTRACTED]
+- [[Close database connection]] - `rationale_for` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

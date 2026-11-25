@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/path_isolation.py"
+source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "PathIsolationManager"
-location: "L286"
+community: "ingest_api/config.py"
+location: "L347"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/ingest_api/configpy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Get statistics about path isolation manager.]] - `rationale_for` [EXTRACTED]
-- [[PathIsolationManager]] - `method` [EXTRACTED]
-- [[any_36]] - `references` [EXTRACTED]
+- [[Any_36]] - `references` [EXTRACTED]
+- [[DataLedger]] - `method` [EXTRACTED]
+- [[Get aggregate statistics Returns Dictionary with total entries, by source, etc.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

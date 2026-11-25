@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # .check_response()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_BrokenOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

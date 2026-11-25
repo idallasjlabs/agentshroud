@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/llm_proxy.py"
+source_file: "gateway/security/outbound_filter.py"
 type: "code"
-community: "LLMProxy"
-location: "L287"
+community: ".__init__"
+location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/__init__
 ---
 
 # .get_stats()
 
 ## Connections
-- [[LLMProxy]] - `method` [EXTRACTED]
+- [[Any_25]] - `references` [EXTRACTED]
+- [[Get filter statistics.]] - `rationale_for` [EXTRACTED]
+- [[OutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/__init__

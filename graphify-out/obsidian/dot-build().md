@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "ContainerEngine"
-location: "L56"
+community: "DockerEngine"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/DockerEngine
 ---
 
 # .build()
 
 ## Connections
-- [[Build an image. Returns the image idtag.]] - `rationale_for` [EXTRACTED]
-- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

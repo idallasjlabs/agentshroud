@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "MemoryLifecycleManager"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryLifecycleManager
 ---
 
 # .enforce_memory_md_size_limit()
@@ -18,4 +18,4 @@ tags:
 - [[MemoryLifecycleManager]] - `method` [EXTRACTED]
 - [[RetentionAction]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

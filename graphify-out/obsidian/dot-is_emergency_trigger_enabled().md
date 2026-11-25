@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation_config.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationConfig"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationConfig
 ---
 
 # .is_emergency_trigger_enabled()
@@ -15,4 +15,4 @@ tags:
 - [[Check if a specific emergency trigger is enabled.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig

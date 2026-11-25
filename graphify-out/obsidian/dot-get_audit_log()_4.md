@@ -1,18 +1,18 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SecureBrowser"
-location: "L399"
+community: "test_all_modules_enforce.py"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/test_all_modules_enforcepy
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[Return complete audit log]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `method` [EXTRACTED]
+- [[SubagentEvent]] - `references` [EXTRACTED]
+- [[SubagentMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

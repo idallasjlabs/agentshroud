@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/group_config.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: "TeamsConfig"
-location: "L133"
+community: "._teams_config"
+location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/_teams_config
 ---
 
 # .is_group_admin()
 
 ## Connections
-- [[TeamsConfig]] - `method` [EXTRACTED]
+- [[dot-_teams_config()]] - `indirect_call` [INFERRED]
+- [[Check group admin status via TeamsConfig if available.]] - `rationale_for` [EXTRACTED]
+- [[SCLCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/_teams_config

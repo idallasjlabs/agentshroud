@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_forward_stream.py"
 type: "code"
 community: "test_forward_stream.py"
-location: "L157"
+location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .process_outbound()
 
 ## Connections
-- [[_PassthroughPipeline]] - `method` [EXTRACTED]
+- [[_BlockingPipeline]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_forward_streampy

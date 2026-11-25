@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "ContainerSnapshot"
+community: "DriftDetector"
 location: "L267"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/DriftDetector
 ---
 
 # .get_alerts()
@@ -15,4 +15,4 @@ tags:
 - [[DriftDetector]] - `method` [EXTRACTED]
 - [[Retrieve stored drift alerts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/DriftDetector

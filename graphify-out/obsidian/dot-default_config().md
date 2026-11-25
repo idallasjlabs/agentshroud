@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # .default_config()
@@ -15,6 +15,6 @@ tags:
 - [[Default PII configuration for tests]] - `rationale_for` [EXTRACTED]
 - [[PIIConfig]] - `calls` [EXTRACTED]
 - [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[fixture_77]] - `references` [EXTRACTED]
+- [[fixture_82]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

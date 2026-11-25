@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "WebProxyResult"
-location: "L91"
+community: "test_url_analyzer.py"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyResult
+  - community/test_url_analyzerpy
 ---
 
 # .flagged()
 
 ## Connections
-- [[WebProxyResult]] - `method` [EXTRACTED]
+- [[URLAnalysisResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyResult
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

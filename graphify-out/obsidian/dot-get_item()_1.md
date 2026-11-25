@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/approval_queue/queue.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "GatewayConfig"
-location: "L252"
+community: "test_mfa_guard.py"
+location: "L454"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/test_mfa_guardpy
 ---
 
 # .get_item()
 
 ## Connections
-- [[ApprovalQueue]] - `method` [EXTRACTED]
+- [[dot-decide()]] - `calls` [EXTRACTED]
 - [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[Fetch a single queue item by ID Args request_id Request UUID Returns…]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Fetch a single queue item by ID.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

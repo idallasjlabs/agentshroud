@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/inbound_edge/service.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L63"
+community: "test_soc_edge.py"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/test_soc_edgepy
 ---
 
 # .close()
 
 ## Connections
-- [[_CloseRaisesWriter]] - `method` [EXTRACTED]
+- [[EdgeService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

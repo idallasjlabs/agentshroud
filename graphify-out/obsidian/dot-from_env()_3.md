@@ -12,7 +12,7 @@ tags:
 # .from_env()
 
 ## Connections
-- [[dot-__init__()_220]] - `calls` [EXTRACTED]
+- [[dot-__init__()_224]] - `calls` [EXTRACTED]
 - [[KillSwitchConfig]] - `method` [EXTRACTED]
 - [[Load configuration from environment variables._1]] - `rationale_for` [EXTRACTED]
 

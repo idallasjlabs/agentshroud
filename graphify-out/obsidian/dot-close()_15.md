@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "AuditStore"
-location: "L166"
+community: "DriftDetector"
+location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/DriftDetector
 ---
 
 # .close()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Close the database connection._1]] - `rationale_for` [EXTRACTED]
+- [[DriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/DriftDetector

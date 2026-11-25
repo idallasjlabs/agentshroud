@@ -12,7 +12,7 @@ tags:
 # .get_security_report()
 
 ## Connections
-- [[Any_77]] - `references` [EXTRACTED]
+- [[Any_75]] - `references` [EXTRACTED]
 - [[Get comprehensive network security report.]] - `rationale_for` [EXTRACTED]
 - [[NetworkValidator]] - `method` [EXTRACTED]
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L274"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # .register_bot_hostnames()
@@ -15,4 +15,4 @@ tags:
 - [[Add bot container hostnames to the infrastructure detection patterns. Called at…]] - `rationale_for` [EXTRACTED]
 - [[PromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

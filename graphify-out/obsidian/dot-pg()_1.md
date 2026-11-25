@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "lifespan.py"
+community: "PromptGuard"
 location: "L246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PromptGuard
 ---
 
 # .pg()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[TestToolResultScan]] - `method` [EXTRACTED]
-- [[fixture_21]] - `references` [EXTRACTED]
+- [[fixture_101]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

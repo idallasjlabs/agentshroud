@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CollabMode"
+community: "main.rs"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollabMode
+  - community/mainrs
 ---
 
 # .fmt()
@@ -16,4 +16,4 @@ tags:
 - [[Formatter]] - `references` [EXTRACTED]
 - [[Result]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollabMode
+#graphify/code #graphify/EXTRACTED #community/mainrs

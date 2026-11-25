@@ -12,7 +12,7 @@ tags:
 # .get_top_destinations()
 
 ## Connections
-- [[dot-get_stats()_12]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_13]] - `calls` [EXTRACTED]
 - [[EgressFilter]] - `method` [EXTRACTED]
 - [[Return top destination domains by volume.]] - `rationale_for` [EXTRACTED]
 

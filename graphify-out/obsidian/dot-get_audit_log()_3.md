@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/subagent_monitor.py"
+source_file: "gateway/security/file_sandbox.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L159"
+community: "FileSandbox"
+location: "L409"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/FileSandbox
 ---
 
 # .get_audit_log()
 
 ## Connections
-- [[SubagentEvent]] - `references` [EXTRACTED]
-- [[SubagentMonitor]] - `method` [EXTRACTED]
+- [[dot-get_security_violations()]] - `calls` [EXTRACTED]
+- [[FileOperation]] - `references` [EXTRACTED]
+- [[FileSandbox]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

@@ -1,23 +1,22 @@
 ---
-source_file: "gateway/ingest_api/sanitizer.py"
+source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "RedactionResult"
-location: "L195"
+community: "ToolResultSanitizer"
+location: "L228"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/ToolResultSanitizer
 ---
 
 # .sanitize()
 
 ## Connections
-- [[dot-_apply_enforcement()]] - `calls` [EXTRACTED]
-- [[dot-_resolve_threshold()]] - `calls` [EXTRACTED]
-- [[dot-_sanitize_presidio()]] - `calls` [EXTRACTED]
-- [[dot-_sanitize_regex()]] - `calls` [EXTRACTED]
-- [[Detect PII in content and apply the enforcement action Args content Text to…]] - `rationale_for` [EXTRACTED]
-- [[PIISanitizer]] - `method` [EXTRACTED]
-- [[RedactionResult_1]] - `references` [EXTRACTED]
+- [[dot-_extract_code_blocks()]] - `calls` [EXTRACTED]
+- [[dot-_restore_code_blocks()]] - `calls` [EXTRACTED]
+- [[dot-sanitize_images()]] - `calls` [EXTRACTED]
+- [[dot-sanitize_links()]] - `calls` [EXTRACTED]
+- [[Sanitize tool result content by filtering markdown links and images. Args…]] - `rationale_for` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

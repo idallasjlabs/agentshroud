@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "LogSanitizer"
+community: "deep_security_test"
 location: "L1353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/deep_security_test
 ---
 
 # .get_log_sanitizer()
@@ -16,4 +16,4 @@ tags:
 - [[LogSanitizer]] - `references` [EXTRACTED]
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

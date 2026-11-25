@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "middleware.py"
 location: "L211"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/middlewarepy
 ---
 
 # .get_flagged_queries()
@@ -16,4 +16,4 @@ tags:
 - [[DNSFilter]] - `method` [EXTRACTED]
 - [[DNSQuery]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

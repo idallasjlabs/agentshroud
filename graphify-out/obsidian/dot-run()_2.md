@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L85"
+community: "DockerEngine"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/DockerEngine
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
-- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
-- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
-- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

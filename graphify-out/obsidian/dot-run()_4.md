@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/inbound_edge/call_pipeline.py"
 type: "code"
-community: "DockerEngine"
-location: "L56"
+community: "test_edge_pipeline.py"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/test_edge_pipelinepy
 ---
 
 # .run()
 
 ## Connections
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[Any_50]] - `references` [EXTRACTED]
+- [[Facade]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

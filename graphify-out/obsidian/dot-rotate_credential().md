@@ -18,7 +18,7 @@ tags:
 - [[dot-_validate_credential()]] - `calls` [EXTRACTED]
 - [[dot-check_and_rotate_due_credentials()]] - `calls` [EXTRACTED]
 - [[dot-emergency_rotate_credential()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 - [[Rotate a single credential with zero downtime. Workflow generate new →…]] - `rationale_for` [EXTRACTED]
 

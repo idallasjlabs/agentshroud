@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "._is_domain_allowed"
+community: "ToolResultSanitizer"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_domain_allowed
+  - community/ToolResultSanitizer
 ---
 
 # .sanitize_images()
 
 ## Connections
-- [[dot-sanitize()]] - `calls` [EXTRACTED]
+- [[dot-sanitize()_2]] - `calls` [EXTRACTED]
 - [[Remove or warn about markdown images pointing to non-allowlisted domains.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[ToolResultSanitizer_1]] - `method` [EXTRACTED]
 - [[replace_image()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_domain_allowed
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-get_all_credentials_status()]] - `calls` [EXTRACTED]
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[Get detailed status for a credential.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 

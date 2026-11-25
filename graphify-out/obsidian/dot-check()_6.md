@@ -1,18 +1,22 @@
 ---
-source_file: "gateway/ingest_api/auth.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L47"
+community: "EgressFilter"
+location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/EgressFilter
 ---
 
 # .check()
 
 ## Connections
-- [[Check if client is within rate limit Args client_id Usually client IP address…]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter_1]] - `method` [EXTRACTED]
+- [[dot-_check_impl()]] - `calls` [EXTRACTED]
+- [[dot-check_async()]] - `calls` [EXTRACTED]
+- [[EgressAttempt]] - `references` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[Public entry — records the decision for the SOC heat-map (SCRUM-80), then…_1]] - `rationale_for` [EXTRACTED]
+- [[record_decision()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

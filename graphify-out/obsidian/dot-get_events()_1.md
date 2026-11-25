@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "web_proxy.py"
+community: "EgressEvent"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/EgressEvent
 ---
 
 # .get_events()
@@ -16,4 +16,4 @@ tags:
 - [[EgressEvent]] - `references` [EXTRACTED]
 - [[EgressMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

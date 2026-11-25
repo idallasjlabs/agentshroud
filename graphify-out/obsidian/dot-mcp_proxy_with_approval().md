@@ -15,6 +15,6 @@ tags:
 - [[Create an MCP proxy with approval queue.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxy]] - `calls` [EXTRACTED]
 - [[TestMCPProxyIntegration]] - `method` [EXTRACTED]
-- [[fixture_84]] - `references` [EXTRACTED]
+- [[fixture_88]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestMCPProxyIntegration

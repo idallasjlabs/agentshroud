@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "ProgressiveTrustConfig"
+community: "TrustLevel"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/TrustLevel
 ---
 
 # .is_tool_allowed()
@@ -16,4 +16,4 @@ tags:
 - [[ProgressiveTrustConfig]] - `method` [EXTRACTED]
 - [[TrustLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Accept a WebSocket connection and add to connected set.]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[WebSocket_4]] - `references` [EXTRACTED]
+- [[WebSocket_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

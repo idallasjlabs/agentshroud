@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "middleware.py"
+community: "test_memory_lifecycle.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # .from_env()
@@ -17,4 +17,4 @@ tags:
 - [[Create configuration from environment variables.]] - `rationale_for` [EXTRACTED]
 - [[MemorySecurityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

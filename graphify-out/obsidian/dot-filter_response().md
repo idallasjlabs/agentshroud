@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L91"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # .filter_response()
@@ -16,4 +16,4 @@ tags:
 - [[FilterResult]] - `calls` [EXTRACTED]
 - [[XMLLeakFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "._extract_egress_targets"
+community: "ProxyResult"
 location: "L859"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/ProxyResult
 ---
 
 # .check_approval_required()
@@ -16,4 +16,4 @@ tags:
 - [[Check if a tool call requires approval and wait for it if needed.]] - `rationale_for` [EXTRACTED]
 - [[MCPProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

@@ -15,6 +15,6 @@ tags:
 - [[Create a FastAPI test client.]] - `rationale_for` [EXTRACTED]
 - [[TestOpenAPIContract]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_139]] - `references` [EXTRACTED]
+- [[fixture_137]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Any"
+community: "KillSwitchMonitor"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KillSwitchMonitor
 ---
 
 # .heartbeat_check()
@@ -19,4 +19,4 @@ tags:
 - [[Check if the agent is responding within expected parameters. Returns Dict…]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

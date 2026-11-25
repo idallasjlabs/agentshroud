@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Any"
+community: "KillSwitchMonitor"
 location: "L295"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KillSwitchMonitor
 ---
 
 # .get_status()
@@ -18,4 +18,4 @@ tags:
 - [[Get current kill switch monitor status. Returns Dict containing current status…]] - `rationale_for` [EXTRACTED]
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

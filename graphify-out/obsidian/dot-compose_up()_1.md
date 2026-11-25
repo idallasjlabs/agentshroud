@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "PodmanEngine"
-location: "L184"
+community: "DockerEngine"
+location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/DockerEngine
 ---
 
 # .compose_up()
 
 ## Connections
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[Bring up services from a compose file.]] - `rationale_for` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

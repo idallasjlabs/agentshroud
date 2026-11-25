@@ -23,7 +23,7 @@ tags:
 - [[dot-get_risk()]] - `calls` [EXTRACTED]
 - [[dot-get_services()]] - `calls` [EXTRACTED]
 - [[dot-get_users()]] - `calls` [EXTRACTED]
-- [[Any_24]] - `references` [EXTRACTED]
+- [[Any_18]] - `references` [EXTRACTED]
 - [[SCLClient]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SCLClient

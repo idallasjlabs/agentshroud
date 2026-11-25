@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[EgressTelegramNotifier]] - `calls` [EXTRACTED]
 - [[TestEgressTelegramNotify]] - `method` [EXTRACTED]
-- [[fixture_76]] - `references` [EXTRACTED]
+- [[fixture_81]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

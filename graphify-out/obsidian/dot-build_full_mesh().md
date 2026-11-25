@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustManager"
+community: "TrustConfig"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustConfig
 ---
 
 # .build_full_mesh()
@@ -25,4 +25,4 @@ tags:
 - [[TrustDecayPolicy]] - `references` [EXTRACTED]
 - [[lifespan()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

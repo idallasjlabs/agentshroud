@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/security/egress_filter.py"
+source_file: "gateway/security/alert_dispatcher.py"
 type: "code"
-community: "EgressFilter"
-location: "L616"
+community: "AlertDispatcher"
+location: "L220"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/AlertDispatcher
 ---
 
 # .get_stats()
 
 ## Connections
-- [[dot-get_log()]] - `calls` [EXTRACTED]
-- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
-- [[EgressFilter]] - `method` [EXTRACTED]
-- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
+- [[AlertDispatcher]] - `method` [EXTRACTED]
+- [[Any_65]] - `references` [EXTRACTED]
+- [[Get dispatcher statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

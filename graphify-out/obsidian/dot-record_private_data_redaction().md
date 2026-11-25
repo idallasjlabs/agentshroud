@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: ".record_private_data_redaction"
+community: "test_mcp_proxy.py"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/record_private_data_redaction
+  - community/test_mcp_proxypy
 ---
 
 # .record_private_data_redaction()
@@ -16,4 +16,4 @@ tags:
 - [[PrivateRedactionEvent]] - `calls` [EXTRACTED]
 - [[Record admin-private data redaction event for compliance audit.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/record_private_data_redaction
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

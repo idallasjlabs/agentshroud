@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # .get_domain_settings()
@@ -16,4 +16,4 @@ tags:
 - [[Get settings for a specific domain, falling back to defaults.]] - `rationale_for` [EXTRACTED]
 - [[WebProxyConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy
