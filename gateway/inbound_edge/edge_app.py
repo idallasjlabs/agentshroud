@@ -63,6 +63,22 @@ from gateway.inbound_edge.edge_jwt import TokenRejected, verify_signature_only
 
 logger = logging.getLogger("agentshroud.inbound_edge.edge_app")
 
+
+class ExpectedDenialFilter(logging.Filter):
+    """The SDK's Mcp-Param check lists tools internally and logs a refused listing
+    with a traceback at ERROR. A denial raised as MCPError is expected (kill, revoked
+    token): log it as one INFO line. Any other exception keeps its traceback."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        exc = record.exc_info[1] if record.exc_info else None
+        if isinstance(exc, MCPError):
+            record.msg = f"{record.getMessage()} (denied: {exc.message})"
+            record.args = ()
+            record.exc_info = record.exc_text = None
+            record.levelno, record.levelname = logging.INFO, "INFO"
+        return True
+
+
 MAX_REQUEST_BYTES = 64 * 1024
 SERVICE_HEADER = "X-Edge-Service-Token"
 _EXACT_PATHS = {
@@ -367,7 +383,7 @@ def _build_server(gw: GatewayClient) -> Server:
         try:
             tools = await gw.call("tools.list", token=token.token)
         except GatewayError as exc:
-            raise MCPError(types.INVALID_REQUEST, exc.error.get("message") or "forbidden")
+            raise MCPError(types.INVALID_REQUEST, exc.error.get("message") or "forbidden") from None
         return types.ListToolsResult(tools=[types.Tool.model_validate(t) for t in tools])
 
     async def on_call_tool(ctx, params) -> types.CallToolResult:
@@ -463,6 +479,9 @@ class EdgeGuard:
 def create_app(
     settings: EdgeSettings, gateway_transport: Optional[httpx.AsyncBaseTransport] = None
 ):
+    sdk_log = logging.getLogger("mcp.server._streamable_http_modern")
+    if not any(isinstance(f, ExpectedDenialFilter) for f in sdk_log.filters):
+        sdk_log.addFilter(ExpectedDenialFilter())
     gw = GatewayClient(settings, transport=gateway_transport)
     provider = GatewayBackedProvider(gw, settings)
     server = _build_server(gw)

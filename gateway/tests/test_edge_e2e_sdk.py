@@ -328,3 +328,50 @@ async def test_gateway_rpc_requires_service_token(tmp_path):
                 headers={"X-Edge-Service-Token": SERVICE_TOKEN},
             )
             assert nope.status_code == 404
+
+
+class TestExpectedDenialLogging:
+    """K1 final on prod: the SDK's Mcp-Param check lists tools internally and logs the
+    refused listing with a 2-part traceback at ERROR. An expected MCPError denial
+    must log one line, while any other exception keeps its traceback."""
+
+    @staticmethod
+    def _record(exc):
+        try:
+            raise exc
+        except Exception:
+            import sys
+
+            return logging.LogRecord(
+                "mcp.server._streamable_http_modern",
+                logging.ERROR,
+                __file__,
+                1,
+                "Mcp-Param header validation skipped: the tools/list listing failed",
+                (),
+                sys.exc_info(),
+            )
+
+    def test_mcp_error_denial_becomes_one_info_line(self):
+        from gateway.inbound_edge.edge_app import ExpectedDenialFilter
+
+        rec = self._record(MCPError(-32600, "revoked: vendor revoked: K1"))
+        assert ExpectedDenialFilter().filter(rec) is True
+        assert rec.exc_info is None and rec.levelno == logging.INFO
+        assert rec.getMessage().endswith("(denied: revoked: vendor revoked: K1)")
+
+    def test_unexpected_errors_keep_their_traceback(self):
+        from gateway.inbound_edge.edge_app import ExpectedDenialFilter
+
+        rec = self._record(RuntimeError("boom"))
+        assert ExpectedDenialFilter().filter(rec) is True
+        assert rec.exc_info is not None and rec.levelno == logging.ERROR
+
+    def test_create_app_installs_the_filter(self):
+        from gateway.inbound_edge.edge_app import EdgeSettings, ExpectedDenialFilter, create_app
+
+        create_app(
+            EdgeSettings(public_url=PUBLIC, gateway_url="http://gateway", service_token="t" * 48)
+        )
+        sdk = logging.getLogger("mcp.server._streamable_http_modern")
+        assert sum(isinstance(f, ExpectedDenialFilter) for f in sdk.filters) == 1
