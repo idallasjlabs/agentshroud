@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "rationale"
-community: "multi_turn_tracker.py"
+community: "MultiTurnTracker"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/multi_turn_trackerpy
+  - community/MultiTurnTracker
 ---
 
 # Tests for Multi-Turn Context Tracker module.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_multi_turn_tracker.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/multi_turn_trackerpy
+#graphify/rationale #graphify/EXTRACTED #community/MultiTurnTracker

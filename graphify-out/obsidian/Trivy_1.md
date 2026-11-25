@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ARM64 Support]] - `contains` [EXTRACTED]
 - [[Gateway Usage_1]] - `contains` [EXTRACTED]
-- [[Purpose_86]] - `contains` [EXTRACTED]
-- [[Related Notes_60]] - `contains` [EXTRACTED]
+- [[Purpose_88]] - `contains` [EXTRACTED]
+- [[Related Notes_62]] - `contains` [EXTRACTED]
 - [[Script Usage]] - `contains` [EXTRACTED]
 - [[trivy]] - `contains` [EXTRACTED]
 

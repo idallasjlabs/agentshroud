@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # TestRBACErrorHandling
@@ -23,4 +23,4 @@ tags:
 - [[Test RBAC error handling and edge cases.]] - `rationale_for` [EXTRACTED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

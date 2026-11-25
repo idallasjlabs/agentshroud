@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L440"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # TestRealWorldScenarios
@@ -19,7 +19,7 @@ tags:
 - [[RedactionResult_1]] - `uses` [INFERRED]
 - [[Test realistic tool result scenarios]] - `rationale_for` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/RedactionResult
+#graphify/code #graphify/INFERRED #community/PIIConfig

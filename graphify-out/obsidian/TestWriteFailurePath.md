@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "TeamsConfig"
+community: "SharedMemoryManager"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TeamsConfig
+  - community/SharedMemoryManager
 ---
 
 # TestWriteFailurePath
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_user_write_io_failure_returns_false()]] - `method` [EXTRACTED]
 - [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TeamsConfig
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

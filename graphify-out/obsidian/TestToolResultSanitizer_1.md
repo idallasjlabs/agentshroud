@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestToolResultSanitizer"
+community: "ToolResultSanitizer"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolResultSanitizer
+  - community/ToolResultSanitizer
 ---
 
 # TestToolResultSanitizer
 
 ## Connections
-- [[dot-setup_method()_15]] - `method` [EXTRACTED]
+- [[dot-setup_method()_27]] - `method` [EXTRACTED]
 - [[dot-test_blocked_pattern_detection()]] - `method` [EXTRACTED]
 - [[dot-test_code_blocks_preserved()]] - `method` [EXTRACTED]
 - [[dot-test_convenience_function()]] - `method` [EXTRACTED]
 - [[dot-test_domain_matching_patterns()]] - `method` [EXTRACTED]
-- [[dot-test_edge_cases()_4]] - `method` [EXTRACTED]
+- [[dot-test_edge_cases()_3]] - `method` [EXTRACTED]
 - [[dot-test_empty_alt_text_handling()]] - `method` [EXTRACTED]
 - [[dot-test_empty_or_none_input()]] - `method` [EXTRACTED]
 - [[dot-test_external_domain_stripping()]] - `method` [EXTRACTED]
@@ -31,8 +31,8 @@ tags:
 - [[dot-test_mixed_content_sanitization()]] - `method` [EXTRACTED]
 - [[dot-test_warn_mode()]] - `method` [EXTRACTED]
 - [[Test ToolResultSanitizer functionality.]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `uses` [INFERRED]
+- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
 - [[ToolResultSanitizerConfig]] - `uses` [INFERRED]
 - [[test_tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

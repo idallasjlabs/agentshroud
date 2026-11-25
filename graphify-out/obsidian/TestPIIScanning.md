@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_api_key_pattern_detected()]] - `method` [EXTRACTED]
-- [[dot-test_credit_card_detected()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_detected()_1]] - `method` [EXTRACTED]
 - [[dot-test_email_detected()]] - `method` [EXTRACTED]
 - [[dot-test_no_pii_clean()]] - `method` [EXTRACTED]
 - [[dot-test_pii_in_write_flagged()]] - `method` [EXTRACTED]

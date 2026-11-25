@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/service.py"
 type: "rationale"
-community: "make_event"
-location: "L67"
+community: "test_soc_edge.py"
+location: "L69"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_soc_edgepy
 ---
 
 # The validated vendor profiles the pipeline enforces (read by the Command…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-profiles()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/make_event
+#graphify/rationale #graphify/EXTRACTED #community/test_soc_edgepy

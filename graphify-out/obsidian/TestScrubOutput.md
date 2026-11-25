@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "check_command"
+community: "scrub_output"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/scrub_output
 ---
 
 # TestScrubOutput
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_scrubs_openai_key()]] - `method` [EXTRACTED]
 - [[test_env_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/scrub_output

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "ServiceManager"
 location: "L79"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_realtime_coveragepy
+  - community/ServiceManager
 ---
 
 # TestServiceDescriptor
@@ -20,4 +20,4 @@ tags:
 - [[ServiceStatus]] - `uses` [INFERRED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/ServiceManager

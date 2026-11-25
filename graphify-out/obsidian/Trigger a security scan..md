@@ -12,6 +12,6 @@ tags:
 # Trigger a security scan.
 
 ## Connections
-- [[scan()_4]] - `rationale_for` [EXTRACTED]
+- [[scan()_3]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/cli/mainpy

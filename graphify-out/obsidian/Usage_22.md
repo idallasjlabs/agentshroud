@@ -1,5 +1,5 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: ".agents/skills/i-qa/README.md"
 type: "document"
 community: "Quality Assurance (SKILL)"
 location: "L10"
@@ -12,7 +12,7 @@ tags:
 # Usage
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # TestRBACManager
 
 ## Connections
-- [[dot-setup_method()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_9]] - `method` [EXTRACTED]
 - [[dot-test_list_users_and_roles()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_admin()]] - `method` [EXTRACTED]
 - [[dot-test_permission_matrix_collaborator()]] - `method` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[Test RBAC manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_rbac.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

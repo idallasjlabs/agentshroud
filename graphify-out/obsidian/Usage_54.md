@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sec-defense/README.md"
+source_file: ".agents/skills/sav/README.md"
 type: "document"
-community: "Blue Team Security Auditor (SEC-DEFENSE)"
-location: "L10"
+community: "System Audit Vault"
+location: "L9"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
+  - community/System_Audit_Vault
 ---
 
 # Usage
 
 ## Connections
-- [[Blue Team Security Auditor (SEC-DEFENSE)]] - `contains` [EXTRACTED]
+- [[System Audit Vault]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE
+#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault

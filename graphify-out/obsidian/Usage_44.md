@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-mc/README.md"
+source_file: ".agents/skills/i-cr/README.md"
 type: "document"
-community: "GSDE&G Development Master Checklist (MC)"
+community: "Code Review (CR)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GSDEG_Development_Master_Checklist_MC
+  - community/Code_Review_CR
 ---
 
 # Usage
 
 ## Connections
-- [[GSDE&G Development Master Checklist (MC)]] - `contains` [EXTRACTED]
+- [[Code Review (CR)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC
+#graphify/document #graphify/EXTRACTED #community/Code_Review_CR

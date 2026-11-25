@@ -19,7 +19,7 @@ tags:
 - [[dot-test_safe_content_passes()]] - `method` [EXTRACTED]
 - [[dot-test_tech_support_scam()]] - `method` [EXTRACTED]
 - [[dot-test_urgent_action_required()]] - `method` [EXTRACTED]
-- [[ThreatLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

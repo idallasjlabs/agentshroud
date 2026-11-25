@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L264"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # TestMiddlewareIntegration
@@ -27,4 +27,4 @@ tags:
 - [[Test integration with MiddlewareManager]] - `rationale_for` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

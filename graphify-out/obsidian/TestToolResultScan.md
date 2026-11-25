@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "prompt_guard.py"
+community: "TestToolResultScan"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/TestToolResultScan
 ---
 
 # TestToolResultScan
@@ -22,4 +22,4 @@ tags:
 - [[Tests for indirect prompt injection detection in tool results.]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestToolResultScan

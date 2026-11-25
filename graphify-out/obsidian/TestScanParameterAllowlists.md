@@ -12,7 +12,7 @@ tags:
 # TestScanParameterAllowlists
 
 ## Connections
-- [[dot-setup_method()_3]] - `method` [EXTRACTED]
+- [[dot-setup_method()_1]] - `method` [EXTRACTED]
 - [[dot-teardown_method()]] - `method` [EXTRACTED]
 - [[dot-test_clamav_default_target_passes_allowlist()]] - `method` [EXTRACTED]
 - [[dot-test_clamav_invalid_target_returns_400()]] - `method` [EXTRACTED]

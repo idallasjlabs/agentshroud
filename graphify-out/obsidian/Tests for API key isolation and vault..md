@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "rationale"
-community: "test_key_vault.py"
+community: "KeyVault"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_key_vaultpy
+  - community/KeyVault
 ---
 
 # Tests for API key isolation and vault.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_key_vault.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_key_vaultpy
+#graphify/rationale #graphify/EXTRACTED #community/KeyVault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # TestOutboundBlockedNotDelivered
@@ -17,4 +17,4 @@ tags:
 - [[Regression forward returned out_result.sanitized_message without checking…]] - `rationale_for` [EXTRACTED]
 - [[test_forward_routing.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

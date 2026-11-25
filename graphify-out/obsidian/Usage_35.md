@@ -1,17 +1,17 @@
 ---
-source_file: ".github/copilot-instructions.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "1) PROJECT IDENTITY"
-location: "L589"
+community: "Atlas — Curriculum Architect"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/1_PROJECT_IDENTITY
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Usage
 
 ## Connections
-- [[1) PROJECT IDENTITY]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/1_PROJECT_IDENTITY
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

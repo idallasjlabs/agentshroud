@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestWebSecurity"
+community: "TestHTTPSecurity"
 location: "L706"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSecurity
+  - community/TestHTTPSecurity
 ---
 
 # TestWebSecurity
@@ -20,4 +20,4 @@ tags:
 - [[Test web dashboard and API security headers.]] - `rationale_for` [EXTRACTED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSecurity
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

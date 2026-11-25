@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "rationale"
-community: "web_proxy.py"
+community: "EgressEvent"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/EgressEvent
 ---
 
 # Tests for unified egress monitoring.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_monitor.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/web_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/EgressEvent

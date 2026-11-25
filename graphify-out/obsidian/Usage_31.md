@@ -1,17 +1,17 @@
 ---
-source_file: "skills/custom/browser-fetch/SKILL.md"
+source_file: "src/interfaces/README.md"
 type: "document"
-community: "Browser Fetch Skill"
-location: "L27"
+community: "Control Center"
+location: "L7"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser_Fetch_Skill
+  - community/Control_Center
 ---
 
 # Usage
 
 ## Connections
-- [[Browser Fetch Skill]] - `contains` [EXTRACTED]
+- [[Control Center]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser_Fetch_Skill
+#graphify/document #graphify/EXTRACTED #community/Control_Center

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mnemosyne/README.md"
+source_file: ".agents/skills/mac-app-discovery/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "macOS System Administrator (MAC)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/macOS_System_Administrator_MAC
 ---
 
 # Usage
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_7]] - `contains` [EXTRACTED]
+- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC

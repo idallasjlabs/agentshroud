@@ -16,7 +16,7 @@ tags:
 - [[dot-test_malformed_reference_returns_422()]] - `method` [EXTRACTED]
 - [[dot-test_op_subprocess_failure_returns_502()]] - `method` [EXTRACTED]
 - [[dot-test_path_traversal_returns_403()]] - `method` [EXTRACTED]
-- [[dot-test_requires_auth()_1]] - `method` [EXTRACTED]
+- [[dot-test_requires_auth()_2]] - `method` [EXTRACTED]
 - [[dot-test_valid_reference_returns_value()]] - `method` [EXTRACTED]
 - [[test_op_proxy.py]] - `contains` [EXTRACTED]
 

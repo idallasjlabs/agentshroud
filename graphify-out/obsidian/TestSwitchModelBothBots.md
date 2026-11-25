@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "._run_and_read"
+community: "ApprovalQueueConfig (5)"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # TestSwitchModelBothBots
@@ -20,4 +20,4 @@ tags:
 - [[switch_model.sh must write model config for both OpenClaw and Hermes.]] - `rationale_for` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

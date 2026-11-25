@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "_make_token"
+community: "TokenValidator"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/TokenValidator
 ---
 
 # TestScopeEnforcement
@@ -19,4 +19,4 @@ tags:
 - [[ScopeViolation]] - `uses` [INFERRED]
 - [[test_token_validation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_token
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

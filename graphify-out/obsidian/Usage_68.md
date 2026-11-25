@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-pm/README.md"
+source_file: "docker/config/hermes/skills/i-oracle/README.md"
 type: "document"
-community: "Project Management (PM)"
+community: "Oracle — Feedback Analyst"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Project_Management_PM
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Usage
 
 ## Connections
-- [[Project Management (PM)]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_9]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Project_Management_PM
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "SSHProxy"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/SSHProxy
 ---
 
 # Tests for SSH Proxy module
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ssh_proxy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/SSHProxy

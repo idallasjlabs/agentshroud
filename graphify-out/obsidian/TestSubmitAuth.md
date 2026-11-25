@@ -12,7 +12,7 @@ tags:
 # TestSubmitAuth
 
 ## Connections
-- [[dot-test_requires_auth()_2]] - `method` [EXTRACTED]
+- [[dot-test_requires_auth()_3]] - `method` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

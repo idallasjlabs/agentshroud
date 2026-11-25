@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "rationale"
-community: "prompt_guard.py"
+community: "PromptGuard"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/PromptGuard
 ---
 
 # Tests for PromptGuard security component
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_guard.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

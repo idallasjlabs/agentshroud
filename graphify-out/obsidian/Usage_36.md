@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/aws/README.md"
+source_file: ".github/copilot-instructions.md"
 type: "document"
-community: "AWS Cloud Management & FinOps"
-location: "L10"
+community: "1) PROJECT IDENTITY"
+location: "L589"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AWS_Cloud_Management__FinOps
+  - community/1_PROJECT_IDENTITY
 ---
 
 # Usage
 
 ## Connections
-- [[AWS Cloud Management & FinOps]] - `contains` [EXTRACTED]
+- [[1) PROJECT IDENTITY]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AWS_Cloud_Management__FinOps
+#graphify/document #graphify/EXTRACTED #community/1_PROJECT_IDENTITY

@@ -16,7 +16,7 @@ tags:
 - [[dot-test_no_hook_returns_none_threat()]] - `method` [EXTRACTED]
 - [[dot-test_screenshot_hook_registered()]] - `method` [EXTRACTED]
 - [[ThreatAssessment]] - `uses` [INFERRED]
-- [[ThreatLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

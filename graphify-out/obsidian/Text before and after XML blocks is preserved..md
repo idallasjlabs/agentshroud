@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "rationale"
-community: "lifespan.py"
+community: "test_filter_xml_blocks.py"
 location: "L101"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_filter_xml_blockspy
 ---
 
 # Text before and after XML blocks is preserved.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_filters_blocks_preserves_surrounding_text()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/test_filter_xml_blockspy

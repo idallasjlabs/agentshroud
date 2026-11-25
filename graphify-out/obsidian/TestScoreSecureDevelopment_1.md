@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_scanner_integration.py"
+source_file: "gateway/tests/test_scorecard_scoring.py"
 type: "code"
-community: "test_scanner_integration.py"
-location: "L815"
+community: "TestScoreSecureDevelopment"
+location: "L502"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_scanner_integrationpy
+  - community/TestScoreSecureDevelopment
 ---
 
 # TestScoreSecureDevelopment
 
 ## Connections
-- [[dot-test_at_least_one()]] - `method` [EXTRACTED]
-- [[dot-test_three_when_semgrep_and_precommit_present()]] - `method` [EXTRACTED]
-- [[test_scanner_integration.py]] - `contains` [EXTRACTED]
+- [[dot-test_five_all_sdl_configs_present()]] - `method` [EXTRACTED]
+- [[dot-test_one_baseline_no_configs()]] - `method` [EXTRACTED]
+- [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TestScoreSecureDevelopment

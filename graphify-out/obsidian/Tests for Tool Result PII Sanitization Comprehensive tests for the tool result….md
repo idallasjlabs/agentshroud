@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # Tests for Tool Result PII Sanitization Comprehensive tests for the tool result…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tool_result_pii.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RedactionResult
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

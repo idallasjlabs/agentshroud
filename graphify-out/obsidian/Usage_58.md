@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-apollo/README.md"
+source_file: ".agents/skills/vulcan/README.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
+community: "Vulcan — Subject Matter Auditor"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Usage
 
 ## Connections
-- [[Apollo — Audio Systems Producer_7]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

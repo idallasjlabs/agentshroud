@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "context_guard.py"
 location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/context_guardpy
 ---
 
 # TestSourceTagging
 
 ## Connections
-- [[dot-guard()_3]] - `method` [EXTRACTED]
+- [[dot-guard()_1]] - `method` [EXTRACTED]
 - [[dot-test_empty_provenance_for_unknown_session()]] - `method` [EXTRACTED]
 - [[dot-test_segment_hash_integrity()]] - `method` [EXTRACTED]
 - [[dot-test_segment_provenance_ordering()]] - `method` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[ContextSegment]] - `uses` [INFERRED]
 - [[test_context_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/context_guardpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/eightd-root-cause-analysis/README.md"
+source_file: ".agents/skills/daedalus/README.md"
 type: "document"
-community: "8D Root Cause Analysis"
+community: "Daedalus — Concept Illustrator"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/8D_Root_Cause_Analysis
+  - community/Daedalus__Concept_Illustrator
 ---
 
 # Usage
 
 ## Connections
-- [[8D Root Cause Analysis_1]] - `contains` [EXTRACTED]
+- [[Daedalus — Concept Illustrator_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/8D_Root_Cause_Analysis
+#graphify/document #graphify/EXTRACTED #community/Daedalus__Concept_Illustrator

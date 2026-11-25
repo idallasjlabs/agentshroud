@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_web_proxy.py"
 type: "rationale"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # Tests for Web Proxy — comprehensive security tests. Covers: URL…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_web_proxy.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

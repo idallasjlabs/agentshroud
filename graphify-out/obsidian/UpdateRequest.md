@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_update_request_defaults()]] - `calls` [EXTRACTED]
-- [[BaseModel_8]] - `inherits` [EXTRACTED]
+- [[BaseModel_9]] - `inherits` [EXTRACTED]
 - [[TestAgentshroudUpdates]] - `uses` [INFERRED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[test_web_api_coverage.py]] - `imports` [EXTRACTED]

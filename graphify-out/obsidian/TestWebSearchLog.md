@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestWebSearchLog"
+community: "test_telegram_proxy_outbound.py"
 location: "L3689"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSearchLog
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # TestWebSearchLog
@@ -21,4 +21,4 @@ tags:
 - [[Tests for _trigger_web_search_log and raw web_search JSON outbound handling.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

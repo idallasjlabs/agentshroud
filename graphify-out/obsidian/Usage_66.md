@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mnemosyne/README.md"
+source_file: "docker/config/hermes/skills/i-mcpm/README.md"
 type: "document"
-community: "Mnemosyne — Retention Engineer"
+community: "MCP Tools Usage (MCPM)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Mnemosyne__Retention_Engineer
+  - community/MCP_Tools_Usage_MCPM
 ---
 
 # Usage
 
 ## Connections
-- [[Mnemosyne — Retention Engineer_8]] - `contains` [EXTRACTED]
+- [[MCP Tools Usage (MCPM)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer
+#graphify/document #graphify/EXTRACTED #community/MCP_Tools_Usage_MCPM

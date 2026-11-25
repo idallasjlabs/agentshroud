@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestSystemPathProtection"
+community: "test_privilege_separation.py"
 location: "L160"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSystemPathProtection
+  - community/test_privilege_separationpy
 ---
 
 # TestSystemPathProtection
@@ -18,4 +18,4 @@ tags:
 - [[Agent cannot modify system paths.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSystemPathProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

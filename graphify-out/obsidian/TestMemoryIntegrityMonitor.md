@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "TestMemoryIntegrityMonitor"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # TestMemoryIntegrityMonitor
 
 ## Connections
-- [[dot-setup_method()_27]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_4]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_7]] - `method` [EXTRACTED]
 - [[dot-test_expected_write_window()]] - `method` [EXTRACTED]
 - [[dot-test_file_monitoring_new_file()]] - `method` [EXTRACTED]
 - [[dot-test_hash_computation()]] - `method` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[Test memory integrity monitoring.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

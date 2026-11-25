@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_web_proxy.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
 community: "TestPIIDetection"
-location: "L265"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,11 +12,15 @@ tags:
 # TestPIIDetection
 
 ## Connections
-- [[dot-test_aws_key_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_pii_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_pii_in_url_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_private_key_in_response_flagged()]] - `method` [EXTRACTED]
-- [[dot-test_ssn_in_url_flagged()_1]] - `method` [EXTRACTED]
-- [[test_web_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_clean_result_passes_through()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_detected()]] - `method` [EXTRACTED]
+- [[dot-test_credit_card_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_email_detected_but_low_threat()]] - `method` [EXTRACTED]
+- [[dot-test_pii_in_tool_result_redacted()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_detected_in_params()]] - `method` [EXTRACTED]
+- [[dot-test_ssn_redacted_in_params()]] - `method` [EXTRACTED]
+- [[FindingType]] - `uses` [INFERRED]
+- [[ThreatLevel]] - `uses` [INFERRED]
+- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestPIIDetection

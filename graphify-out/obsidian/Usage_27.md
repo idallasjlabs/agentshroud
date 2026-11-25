@@ -1,17 +1,24 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docker/README.md"
 type: "document"
-community: "gitleaks.toml"
-location: "L19"
+community: "Usage"
+location: "L274"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gitleakstoml
+  - community/Usage
 ---
 
 # Usage
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Check Status]] - `contains` [EXTRACTED]
+- [[Hermes  HCI]] - `contains` [EXTRACTED]
+- [[Port Reference]] - `contains` [EXTRACTED]
+- [[Start the Stack]] - `contains` [EXTRACTED]
+- [[Stop the Stack]] - `contains` [EXTRACTED]
+- [[Test Chat]] - `contains` [EXTRACTED]
+- [[View Logs]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gitleakstoml
+#graphify/document #graphify/EXTRACTED #community/Usage

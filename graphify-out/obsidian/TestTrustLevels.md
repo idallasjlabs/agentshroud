@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestTrustLevels"
+community: "PermissionLevel"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustLevels
+  - community/PermissionLevel
 ---
 
 # TestTrustLevels
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_set_and_get()]] - `method` [EXTRACTED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustLevels
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

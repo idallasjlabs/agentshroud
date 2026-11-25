@@ -1,25 +1,22 @@
 ---
-source_file: "gateway/proxy/mcp_inspector.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "TestInjectionDetection"
-location: "L66"
+community: "BrowserSecurityGuard"
+location: "L23"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/BrowserSecurityGuard
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[dot-highest_threat()]] - `references` [EXTRACTED]
-- [[Enum_26]] - `inherits` [EXTRACTED]
-- [[TestInjectionDetection]] - `uses` [INFERRED]
-- [[TestPIIDetection_1]] - `uses` [INFERRED]
-- [[TestThreatLevelCalc]] - `uses` [INFERRED]
-- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
-- [[proxy__init__.py]] - `imports` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
+- [[dot-check_url_reputation()]] - `references` [EXTRACTED]
+- [[IntEnum_2]] - `inherits` [EXTRACTED]
+- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
+- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
+- [[TestURLReputation]] - `uses` [INFERRED]
+- [[browser_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

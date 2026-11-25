@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestReplayBufferOffsetParsing"
+community: "test_telegram_proxy_outbound.py"
 location: "L4609"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # TestReplayBufferOffsetParsing
@@ -20,4 +20,4 @@ tags:
 - [[Verify URL-encoded and JSON getUpdates bodies both trigger mark_delivered…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

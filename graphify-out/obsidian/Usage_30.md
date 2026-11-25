@@ -1,17 +1,18 @@
 ---
-source_file: "src/interfaces/README.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "Control Center"
-location: "L7"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Control_Center
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[Control Center]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Control_Center
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

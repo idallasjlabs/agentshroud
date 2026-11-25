@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "TestMediumSeverity"
+community: "ToolResultInjectionScanner"
 location: "L79"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMediumSeverity
+  - community/ToolResultInjectionScanner
 ---
 
 # TestMediumSeverity
@@ -17,4 +17,4 @@ tags:
 - [[InjectionSeverity]] - `uses` [INFERRED]
 - [[test_tool_result_injection.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMediumSeverity
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

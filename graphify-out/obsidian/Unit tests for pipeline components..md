@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "TrustManager"
+community: "asyncio"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/asyncio
 ---
 
 # Unit tests for pipeline components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_unit.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

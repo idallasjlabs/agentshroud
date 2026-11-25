@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "._run_and_read"
+community: "ApprovalQueueConfig (5)"
 location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # TestSwitchModelIdempotent
@@ -21,4 +21,4 @@ tags:
 - [[switch_model.sh local m twice must leave docker.env unchanged on second run.]] - `rationale_for` [EXTRACTED]
 - [[test_switch_model_idempotent.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

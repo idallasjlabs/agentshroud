@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docker/config/hermes/skills/i-qa/README.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
-location: "L50"
+community: "Quality Assurance (SKILL)"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/Quality_Assurance_SKILL
 ---
 
 # Usage
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (QA)_1]] - `contains` [EXTRACTED]
+- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

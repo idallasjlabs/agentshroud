@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_proxy.py"
 type: "code"
-community: "GatewayConfig"
+community: "SSHProxy"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/SSHProxy
 ---
 
 # TestSSHDisabled
@@ -17,4 +17,4 @@ tags:
 - [[Test SSH disabled returns 503 (Finding 12)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

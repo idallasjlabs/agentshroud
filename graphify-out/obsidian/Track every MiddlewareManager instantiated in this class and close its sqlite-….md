@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L269"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # Track every MiddlewareManager instantiated in this class and close its sqlite-…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_close_middleware_after()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RedactionResult
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig
