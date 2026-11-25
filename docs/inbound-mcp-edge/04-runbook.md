@@ -6,18 +6,20 @@ All commands run on marvin from the repo root. Dev uses the `agentshroud-bot` co
 
 ### 1. Sign the tool descriptors (owner only, interactive terminal)
 
-Run these in **your own** macOS account (on marvin, `ijefferson.admin`), in Terminal on your desktop, never in the account the agents run as (`agentshroud-bot`). The key decides which tools vendors may call, so no agent may be able to reach it.
+Run these in **your own** macOS account (on marvin, `ijefferson.admin`), in Terminal on your desktop. The key decides which tools vendors may call. Agents also run in this account, so the account alone does not protect the key: `keygen --keychain` stores it with no trusted application, and macOS asks you before every read. Choose **Allow**, never **Always Allow** (that lets any process in the account read it silently), and **Deny** any dialog you did not start.
+
+Check it: in the output of `security dump-keychain -a ~/Library/Keychains/login.keychain-db` (no secrets without `-d`), the key's `decrypt` entry must show `applications (0)`.
 
 ```bash
-python -m gateway.inbound_edge.descriptors keygen --keychain agentshroud-edge   # first time / rotation only
+python -m gateway.inbound_edge.descriptors keygen --keychain agentshroud-edge-2   # first time / rotation only
 python -m gateway.inbound_edge.descriptors manifest
-python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge
+python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge-2
 python -m gateway.inbound_edge.descriptors verify          # → verify: OK
 ```
 
-Commit `config/inbound-edge/descriptors.{manifest.json,manifest.sig,pub.pem}`. `--keychain` keeps the private key in your login keychain: it goes in and out through `security` on stdin, never argv or the screen. `keygen` refuses to replace an existing key. Without `--keychain`, `keygen` prints the key once for 1Password and `sign` reads it from stdin. If `sign` says *stdin did not contain a base64 Ed25519 private key*, the keychain could not be read. The usual cause is a shell without your desktop session (tmux, `su`, ssh), where macOS cannot show the approval dialog.
+Commit `config/inbound-edge/descriptors.{manifest.json,manifest.sig,pub.pem}`. `--keychain` keeps the private key in your login keychain: it goes in and out through `security` on stdin, never argv or the screen. `keygen` refuses to replace an existing key. Without `--keychain`, `keygen` prints the key once for 1Password and `sign` reads it from stdin. If `sign` says *no … key readable in the keychain*, you denied the dialog or the shell has no desktop session (`su`, ssh, some tmux servers), so macOS could not show it.
 
-**Rotating the key** (e.g. moving it off another account): `keygen --keychain` writes a new `descriptors.pub.pem`. Then `sign` and `verify` as above, and commit the new `pub.pem` and `.sig` together in one PR. Every open PR that changes descriptors must be re-signed after it rebases. Delete the old keychain item from the old account afterwards.
+**Rotating the key**: `keygen --keychain <new service name>` writes a new `descriptors.pub.pem`. Then `sign` and `verify` as above, and commit the new `pub.pem` and `.sig` together in one PR. Every open PR that changes descriptors must be re-signed after it rebases. Use the new service name above from then on. Delete the old keychain item once the PR is merged.
 
 ### 2. Create the edge secrets
 
