@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Oracle — Feedback Analyst_10]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[Purpose_141]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Purpose_143]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[Related Skills_73]] - document - docker/config/openclaw/skills/i-oracle/README.md
-- [[Usage_83]] - document - docker/config/openclaw/skills/i-oracle/README.md
+- [[Usage_84]] - document - docker/config/openclaw/skills/i-oracle/README.md
 - [[openclawskillsi-oracleREADME]] - document - docker/config/openclaw/skills/i-oracle/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Adversary Model_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Attack Phases_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Attack Techniques Reference_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Coverage Requirements_4]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Critical Rules_20]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Infrastructure_16]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Key Principle_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Output_13]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Phase 2 Prompt Injection_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Phase 3 Indirect Injection_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Phase 4 Data Exfiltration_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Phase 5 Exploitation Chains_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Phase 6 Detection Validation_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Test Structure_11]] - document - .agents/skills/sec-offense/SKILL.md
-- [[Writing Exploit Tests_3]] - document - .agents/skills/sec-offense/SKILL.md
-- [[sec-offenseSKILL]] - document - .agents/skills/sec-offense/SKILL.md
+- [[Adversary Model_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[AgentShroud Red Team Adversarial Tester_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Attack Phases_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Attack Techniques Reference_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Coverage Requirements_6]] - document - .github/agents/i-sec-offense.agent.md
+- [[Critical Rules_22]] - document - .github/agents/i-sec-offense.agent.md
+- [[Infrastructure_18]] - document - .github/agents/i-sec-offense.agent.md
+- [[Key Principle_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Output_15]] - document - .github/agents/i-sec-offense.agent.md
+- [[Phase 1 Reconnaissance & Trust Probing_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Phase 2 Prompt Injection_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Phase 3 Indirect Injection_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Phase 4 Data Exfiltration_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Phase 5 Exploitation Chains_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Phase 6 Detection Validation_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[Test Structure_13]] - document - .github/agents/i-sec-offense.agent.md
+- [[Writing Exploit Tests_5]] - document - .github/agents/i-sec-offense.agent.md
+- [[i-sec-offense.agent]] - document - .github/agents/i-sec-offense.agent.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # Docker Compose (infra diagram)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Docker Compose (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[Docker Secrets (infra diagram)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[Docker Secrets Management (deployment doc)]] - concept - docs/architecture/deployment-diagram.md
-- [[Docker Secrets Structure (runsecrets)]] - concept - docs/data/schema-documentation.md
-- [[Named Docker Volumes]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[agentshroud-internal network (172.20.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
-- [[agentshroud-isolated network (172.21.0.016)]] - image - docs/diagrams/images/diagram-04-infrastructure-hosting.svg
+- [[Scenario 00 — Information Disclosure (Phase 0 finding)]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 01 — Enforce-by-Default]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 02 — Human-in-the-Loop Bypass]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 03 — Session Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 04 — Separation of Privilege]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 05 — Credential Isolation]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[Scenario 06 — Outbound Information Filter]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
+- [[§1 — Re-run of Prior Scenarios]] - document - docs/planning/v1.2/red-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/Docker_Compose_infra_diagram
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
+
+## Top bridge nodes
+- [[§1 — Re-run of Prior Scenarios]] - degree 8, connects to 1 community

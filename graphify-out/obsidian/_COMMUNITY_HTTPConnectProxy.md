@@ -1,21 +1,21 @@
 ---
 type: community
-members: 89
+members: 88
 ---
 
 # HTTPConnectProxy
 
-**Members:** 89 nodes
+**Members:** 88 nodes
 
 ## Members
-- [[dot-__init__()_214]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_20]] - code - gateway/tests/test_http_proxy.py
-- [[dot-close()_21]] - code - gateway/tests/test_http_proxy.py
+- [[dot-__init__()_222]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_22]] - code - gateway/tests/test_http_proxy.py
+- [[dot-close()_23]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_2]] - code - gateway/tests/test_http_proxy.py
 - [[dot-drain()_3]] - code - gateway/tests/test_http_proxy.py
 - [[dot-get_extra_info()_1]] - code - gateway/tests/test_http_proxy.py
-- [[dot-get_stats()_17]] - code - gateway/proxy/http_proxy.py
-- [[dot-start()_1]] - code - gateway/proxy/http_proxy.py
+- [[dot-get_stats()_18]] - code - gateway/proxy/http_proxy.py
+- [[dot-start()_2]] - code - gateway/proxy/http_proxy.py
 - [[dot-stop()_12]] - code - gateway/proxy/http_proxy.py
 - [[dot-write()_2]] - code - gateway/tests/test_http_proxy.py
 - [[dot-write()_3]] - code - gateway/tests/test_http_proxy.py
@@ -51,13 +51,13 @@ members: 89
 - [[_open_conn()_6]] - code - gateway/tests/test_http_proxy.py
 - [[_rdns()]] - code - gateway/tests/test_http_proxy.py
 - [[api.telegram.org must NOT be a system bypass domain. Direct CONNECT tunnels to…]] - rationale - gateway/tests/test_http_proxy.py
-- [[asyncio_82]] - code
+- [[asyncio_83]] - code
 - [[check_async()_63]] - code - gateway/tests/test_http_proxy.py
 - [[check_async()_64]] - code - gateway/tests/test_http_proxy.py
 - [[check_async()_65]] - code - gateway/tests/test_http_proxy.py
 - [[clamscan binary missing (sidecar down) - no exception, temp file removed.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[clamscan runs must never share the default executor with LLM upstream calls…]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[log_external_decision()_3]] - code - gateway/tests/test_http_proxy.py
+- [[log_external_decision()_1]] - code - gateway/tests/test_http_proxy.py
 - [[rDNS fails; forward DNS resolves bot hostname to source IP → correct bot_id…]] - rationale - gateway/tests/test_http_proxy.py
 - [[rDNS fails; forward DNS resolves to a DIFFERENT IP → generic label, cached.]] - rationale - gateway/tests/test_http_proxy.py
 - [[rDNS failure + fDNS failure → generic label, cached, no exception.]] - rationale - gateway/tests/test_http_proxy.py
@@ -88,7 +88,6 @@ members: 89
 - [[test_initial_stats_are_zero()]] - code - gateway/tests/test_http_proxy.py
 - [[test_malformed_request_line_returns_400()]] - code - gateway/tests/test_http_proxy.py
 - [[test_non_connect_method_returns_405()]] - code - gateway/tests/test_http_proxy.py
-- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_proxy_created_with_default_web_proxy()]] - code - gateway/tests/test_http_proxy.py
 - [[test_proxy_created_with_egress_filter()]] - code - gateway/tests/test_http_proxy.py
 - [[test_ssrf_attempt_returns_403()]] - code - gateway/tests/test_http_proxy.py
@@ -106,16 +105,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
-- 21 edges to [[_COMMUNITY_WebProxy]]
-- 7 edges to [[_COMMUNITY_EgressFilter]]
+- 36 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
+- 24 edges to [[_COMMUNITY_lifespan.py]]
 - 7 edges to [[_COMMUNITY_dot-_relay]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 5 edges to [[_COMMUNITY_EgressAction]]
+- 2 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_EgressFilter]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_web_proxy.py]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 
 ## Top bridge nodes
-- [[HTTPConnectProxy]] - degree 84, connects to 6 communities
+- [[HTTPConnectProxy]] - degree 84, connects to 7 communities
 - [[test_http_proxy.py]] - degree 41, connects to 3 communities
 - [[test_connect_unknown_domain_can_be_allowed_by_interactive_egress()]] - degree 11, connects to 2 communities
 - [[test_connect_system_bypass_domain_skips_policy_checks()]] - degree 10, connects to 2 communities

@@ -8,10 +8,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_110]] - document - .agents/skills/sad/README.md
+- [[Purpose_112]] - document - .agents/skills/sad/README.md
 - [[Related Skills_42]] - document - .agents/skills/sad/README.md
 - [[System Audit Documentation]] - document - .agents/skills/sad/README.md
-- [[Usage_52]] - document - .agents/skills/sad/README.md
+- [[Usage_53]] - document - .agents/skills/sad/README.md
 - [[sadREADME]] - document - .agents/skills/sad/README.md
 
 ## Live Query (requires Dataview plugin)

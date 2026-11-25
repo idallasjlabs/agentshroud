@@ -8,7 +8,7 @@ members: 56
 **Members:** 56 nodes
 
 ## Members
-- [[dot-__init__()_16]] - code - gateway/security/encrypted_store.py
+- [[dot-__init__()_12]] - code - gateway/security/encrypted_store.py
 - [[dot-_derive_key()]] - code - gateway/security/encrypted_store.py
 - [[dot-_resolve_secret()]] - code - gateway/security/encrypted_store.py
 - [[dot-decrypt()]] - code - gateway/security/encrypted_store.py
@@ -19,7 +19,7 @@ members: 56
 - [[dot-encrypt_b64()]] - code - gateway/security/encrypted_store.py
 - [[dot-get_blob_key_id()]] - code - gateway/security/encrypted_store.py
 - [[dot-rotate()]] - code - gateway/security/encrypted_store.py
-- [[dot-setup_method()_6]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_5]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_b64_roundtrip()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_custom_key_id()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_different_encryptions_differ()]] - code - gateway/tests/test_security_hardening.py
@@ -74,16 +74,17 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_AgentRegistry]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 3 edges to [[_COMMUNITY_test_security_integration.py]]
-- 2 edges to [[_COMMUNITY_KeyVaultConfig]]
-- 2 edges to [[_COMMUNITY_LogSanitizer]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 3 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 2 edges to [[_COMMUNITY_KeyVault]]
+- 2 edges to [[_COMMUNITY_EnvironmentGuard]]
+- 2 edges to [[_COMMUNITY_TestHTTPSecurity]]
+- 1 edge to [[_COMMUNITY_TestFileSandbox]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
-- [[EncryptedStore]] - degree 37, connects to 8 communities
+- [[EncryptedStore]] - degree 37, connects to 9 communities
 - [[encrypted_store.py]] - degree 5, connects to 2 communities
 - [[TestEncryptedStore]] - degree 19, connects to 1 community
 - [[_secure_zero()]] - degree 9, connects to 1 community

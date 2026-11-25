@@ -36,7 +36,7 @@ members: 30
 - [[Security Guarantees_7]] - document - .github/agents/i-browser.agent.md
 - [[Take Screenshot_6]] - document - .github/agents/i-browser.agent.md
 - [[Troubleshooting_42]] - document - .github/agents/i-browser.agent.md
-- [[Usage_114]] - document - .github/agents/i-browser.agent.md
+- [[Usage_115]] - document - .github/agents/i-browser.agent.md
 - [[i-browser.agent]] - document - .github/agents/i-browser.agent.md
 
 ## Live Query (requires Dataview plugin)

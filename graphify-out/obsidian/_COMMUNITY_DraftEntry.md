@@ -9,7 +9,7 @@ members: 33
 
 ## Members
 - [[dot-__call__()_14]] - code - gateway/tests/test_citation_verifier.py
-- [[dot-__init__()_230]] - code - gateway/tests/test_citation_verifier.py
+- [[dot-__init__()_231]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-_verifier()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-_verifier()_1]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-test_allowlisted_live_source_kept()]] - code - gateway/tests/test_citation_verifier.py
@@ -38,7 +38,7 @@ members: 33
 - [[Tests for the citation verifier (SCRUM-75). The verifier ENFORCES that every…]] - rationale - gateway/tests/test_citation_verifier.py
 - [[Verifies competitor claims against re-fetched, allowlisted sources.]] - rationale - gateway/security/citation_verifier.py
 - [[_FakeFetcher_1]] - code - gateway/tests/test_citation_verifier.py
-- [[parametrize_33]] - code
+- [[parametrize_34]] - code
 - [[test_citation_verifier.py]] - code - gateway/tests/test_citation_verifier.py
 - [[test_default_allowlist_uses_permanent_egress_domains()]] - code - gateway/tests/test_citation_verifier.py
 

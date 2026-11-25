@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[GSDE&G Development Master Checklist (MC)_1]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Purpose_119]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Purpose_121]] - document - docker/config/hermes/skills/i-mc/README.md
 - [[Related Skills_51]] - document - docker/config/hermes/skills/i-mc/README.md
-- [[Usage_61]] - document - docker/config/hermes/skills/i-mc/README.md
+- [[Usage_62]] - document - docker/config/hermes/skills/i-mc/README.md
 - [[hermesskillsi-mcREADME]] - document - docker/config/hermes/skills/i-mc/README.md
 
 ## Live Query (requires Dataview plugin)

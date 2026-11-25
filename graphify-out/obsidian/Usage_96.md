@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-tdd/README.md"
 type: "document"
-community: "Technical Illustrator (TI)"
+community: "Test-Driven Development (TDD)"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_TI
+  - community/Test-Driven_Development_TDD
 ---
 
 # Usage
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Test-Driven Development (TDD)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development_TDD

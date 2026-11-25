@@ -52,8 +52,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
 - 1 edge to [[_COMMUNITY_Credential Security Policy]]
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference]]
-- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference_1]]
+- 1 edge to [[_COMMUNITY_Skills by Category]]
+- 1 edge to [[_COMMUNITY_Skills by Category_1]]
 
 ## Top bridge nodes
 - [[CREDENTIAL-PROTECTION-IMPLEMENTED]] - degree 21, connects to 2 communities

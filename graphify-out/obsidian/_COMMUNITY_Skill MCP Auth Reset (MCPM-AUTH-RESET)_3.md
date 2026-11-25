@@ -33,7 +33,7 @@ members: 32
 - [[Step 3 Verify Authentication_3]] - document - .github/agents/i-mcpm-auth-reset.agent.md
 - [[Step 4 Restart Claude Code_3]] - document - .github/agents/i-mcpm-auth-reset.agent.md
 - [[Troubleshooting_32]] - document - .github/agents/i-mcpm-auth-reset.agent.md
-- [[Usage_106]] - document - .github/agents/i-mcpm-auth-reset.agent.md
+- [[Usage_107]] - document - .github/agents/i-mcpm-auth-reset.agent.md
 - [[Verification Checklist_4]] - document - .github/agents/i-mcpm-auth-reset.agent.md
 - [[Verify Authentication_6]] - document - .github/agents/i-mcpm-auth-reset.agent.md
 - [[Verify Authentication_7]] - document - .github/agents/i-mcpm-auth-reset.agent.md

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "load_profiles"
+community: "SkillGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/load_profiles
+  - community/SkillGuard
 ---
 
 # ValueError
 
 ## Connections
-- [[ProfileError]] - `inherits` [EXTRACTED]
+- [[SkillScanError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/load_profiles
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

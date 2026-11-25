@@ -8,7 +8,7 @@ members: 22
 **Members:** 22 nodes
 
 ## Members
-- [[dot-__init__()_211]] - code - gateway/security/falco_monitor.py
+- [[dot-__init__()_219]] - code - gateway/security/falco_monitor.py
 - [[dot-_handle_critical()]] - code - gateway/security/falco_monitor.py
 - [[dot-_process_new_alerts()]] - code - gateway/security/falco_monitor.py
 - [[dot-run()_12]] - code - gateway/security/falco_monitor.py
@@ -20,7 +20,7 @@ members: 22
 - [[Tests for FalcoAlertWatcher — enforcement bridge from Falco alerts to…]] - rationale - gateway/tests/test_falco_watcher.py
 - [[Watcher works without a lockdown module — only logs.]] - rationale - gateway/tests/test_falco_watcher.py
 - [[_make_alert()]] - code - gateway/tests/test_falco_watcher.py
-- [[asyncio_81]] - code
+- [[asyncio_82]] - code
 - [[counting_poll()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_critical_alert_triggers_lockdown()]] - code - gateway/tests/test_falco_watcher.py
 - [[test_deduplication_same_alert_twice()]] - code - gateway/tests/test_falco_watcher.py

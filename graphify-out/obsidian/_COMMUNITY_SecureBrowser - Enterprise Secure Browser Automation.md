@@ -38,7 +38,7 @@ members: 32
 - [[See Also]] - document - skills/custom/securebrowser/SKILL.md
 - [[Take Screenshot]] - document - skills/custom/securebrowser/SKILL.md
 - [[Troubleshooting_6]] - document - skills/custom/securebrowser/SKILL.md
-- [[Usage_25]] - document - skills/custom/securebrowser/SKILL.md
+- [[Usage_26]] - document - skills/custom/securebrowser/SKILL.md
 - [[securebrowserSKILL]] - document - skills/custom/securebrowser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,11 +1,11 @@
 ---
 type: community
-members: 34
+members: 40
 ---
 
 # SecurityConfig
 
-**Members:** 34 nodes
+**Members:** 40 nodes
 
 ## Members
 - [[dot-test_get_module_mode_enforce_override()]] - code - gateway/tests/test_enforce_defaults.py
@@ -27,7 +27,11 @@ members: 34
 - [[dot-test_security_module_config_default_mode()]] - code - gateway/tests/test_all_modules_enforce.py
 - [[dot-test_security_module_config_defaults()]] - code - gateway/tests/test_enforce_defaults.py
 - [[Complete security configuration]] - rationale - gateway/ingest_api/config.py
+- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
+- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
+- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
 - [[SecurityConfig_1]] - code - gateway/ingest_api/config.py
+- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
 - [[Test get_module_mode returns enforce when explicitly set.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test get_module_mode returns enforce when no override set.]] - rationale - gateway/tests/test_enforce_defaults.py
 - [[Test get_module_mode returns monitor when AGENTSHROUD_MODE=monitor.]] - rationale - gateway/tests/test_enforce_defaults.py
@@ -41,7 +45,9 @@ members: 34
 - [[TestEnforceDefaults]] - code - gateway/tests/test_enforce_defaults.py
 - [[TestSecurityConfigDefaults]] - code - gateway/tests/test_all_modules_enforce.py
 - [[Verify SecurityConfig and SecurityModuleConfig default to enforce.]] - rationale - gateway/tests/test_all_modules_enforce.py
+- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
 - [[dict]] - code
+- [[get_module_mode()]] - code - gateway/ingest_api/config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -51,13 +57,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 9 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 5 edges to [[_COMMUNITY_PIIConfig]]
+- 4 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 2 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_TestObservatoryMode]]
+- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
 
 ## Top bridge nodes
+- [[get_module_mode()]] - degree 14, connects to 7 communities
+- [[check_monitor_mode_warnings()]] - degree 9, connects to 4 communities
 - [[SecurityConfig_1]] - degree 24, connects to 3 communities
+- [[SecurityModuleConfig]] - degree 9, connects to 3 communities
 - [[TestSecurityConfigDefaults]] - degree 13, connects to 1 community
-- [[TestEnforceDefaults]] - degree 13, connects to 1 community
-- [[dot-test_get_module_mode_enforce_override()]] - degree 5, connects to 1 community
-- [[dot-test_get_module_mode_no_override()]] - degree 5, connects to 1 community

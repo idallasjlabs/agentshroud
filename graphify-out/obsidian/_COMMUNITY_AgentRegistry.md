@@ -1,21 +1,21 @@
 ---
 type: community
-members: 88
+members: 81
 ---
 
 # AgentRegistry
 
-**Members:** 88 nodes
+**Members:** 81 nodes
 
 ## Members
-- [[dot-__init__()_190]] - code - gateway/security/agent_isolation.py
-- [[dot-__init__()_191]] - code - gateway/security/agent_isolation.py
-- [[dot-from_dict()_10]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_194]] - code - gateway/security/agent_isolation.py
+- [[dot-__init__()_195]] - code - gateway/security/agent_isolation.py
+- [[dot-from_dict()_11]] - code - gateway/security/agent_isolation.py
 - [[dot-generate_compose()]] - code - gateway/security/agent_isolation.py
 - [[dot-get()_1]] - code - gateway/security/agent_isolation.py
 - [[dot-list_agents()]] - code - gateway/security/agent_isolation.py
 - [[dot-register()]] - code - gateway/security/agent_isolation.py
-- [[dot-setup_method()_36]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_34]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_capabilities_not_dropped_flagged()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_compose_contains_all_agents()]] - code - gateway/tests/test_agent_isolation.py
 - [[dot-test_compose_networks_are_internal()]] - code - gateway/tests/test_agent_isolation.py
@@ -52,22 +52,17 @@ members: 88
 - [[dot-test_volume_isolation_ok()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_volume_isolation_violation()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_writable_root_flagged()]] - code - gateway/tests/test_agent_isolation.py
-- [[dot-to_dict()_12]] - code - gateway/security/agent_isolation.py
+- [[dot-to_dict()_10]] - code - gateway/security/agent_isolation.py
 - [[dot-unregister()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_network_isolation()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_shared_nothing()]] - code - gateway/security/agent_isolation.py
-- [[dot-verify_volume_isolation()]] - code - gateway/security/agent_isolation.py
 - [[A single properly-configured agent should have zero issues.]] - rationale - gateway/tests/test_agent_isolation.py
 - [[AgentRegistry]] - code - gateway/security/agent_isolation.py
 - [[AgentRegistry must accept group-{chat_id} agent IDs with chat_type metadata.]] - rationale - gateway/tests/test_group_isolation.py
 - [[ContainerConfig]] - code - gateway/security/agent_isolation.py
 - [[Deserialize registry from dict.]] - rationale - gateway/security/agent_isolation.py
-- [[Enum_42]] - code
-- [[Full shared-nothing verification network + volume + security settings.]] - rationale - gateway/security/agent_isolation.py
+- [[Enum_41]] - code
 - [[Generate Docker Compose config for all registered agents.]] - rationale - gateway/security/agent_isolation.py
 - [[Get container config for an agent.]] - rationale - gateway/security/agent_isolation.py
 - [[Helper to create a ContainerConfig with sensible defaults.]] - rationale - gateway/tests/test_agent_isolation.py
-- [[IsolationCheck]] - code - gateway/security/agent_isolation.py
 - [[IsolationStatus]] - code - gateway/security/agent_isolation.py
 - [[IsolationVerifier]] - code - gateway/security/agent_isolation.py
 - [[List all registered agent IDs.]] - rationale - gateway/security/agent_isolation.py
@@ -88,12 +83,10 @@ members: 88
 - [[Tests for gatewaysecurityagent_isolation.py — verify shared-nothing isolation.]] - rationale - gateway/tests/test_agent_isolation.py
 - [[Two group identities should each have distinct volumes.]] - rationale - gateway/tests/test_group_isolation.py
 - [[Verify container isolation properties.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own network namespace.]] - rationale - gateway/security/agent_isolation.py
-- [[Verify that each agent has its own volume (no shared filesystems).]] - rationale - gateway/security/agent_isolation.py
 - [[_make_config()]] - code - gateway/tests/test_agent_isolation.py
 - [[agent_isolation.py_2]] - code - gateway/security/agent_isolation.py
 - [[group-{chat_id} and collab-{uid} identities can coexist in the same registry.]] - rationale - gateway/tests/test_group_isolation.py
-- [[str_25]] - code
+- [[str_24]] - code
 - [[test_agent_isolation.py]] - code - gateway/tests/test_agent_isolation.py
 - [[test_security_hardening.py]] - code - gateway/tests/test_security_hardening.py
 
@@ -106,24 +99,32 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_EncryptedStore]]
-- 5 edges to [[_COMMUNITY_lifespan.py]]
-- 5 edges to [[_COMMUNITY_ContainerSnapshot]]
-- 5 edges to [[_COMMUNITY_TrustManager]]
-- 5 edges to [[_COMMUNITY_EgressFilter]]
-- 4 edges to [[_COMMUNITY_prompt_guard.py]]
-- 4 edges to [[_COMMUNITY_test_group_isolation.py]]
+- 4 edges to [[_COMMUNITY_dot-verify_shared_nothing]]
+- 4 edges to [[_COMMUNITY_lifespan.py]]
+- 4 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 3 edges to [[_COMMUNITY_PromptGuard]]
+- 3 edges to [[_COMMUNITY_middleware.py]]
 - 3 edges to [[_COMMUNITY_lifespan]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 2 edges to [[_COMMUNITY_EgressPolicy]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_ContainerSnapshot]]
+- 2 edges to [[_COMMUNITY_TrustLevel]]
+- 2 edges to [[_COMMUNITY_TestPromptGuard]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY_DriftDetector]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_TrustConfig]]
 - 1 edge to [[_COMMUNITY_TestPromptGuardEvasion]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_EgressAction]]
 - 1 edge to [[_COMMUNITY_parse_clamscan_output]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_TrustLevel]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_TestTrustManager]]
+- 1 edge to [[_COMMUNITY_drift_detector.py]]
 
 ## Top bridge nodes
-- [[test_security_hardening.py]] - degree 36, connects to 9 communities
-- [[AgentRegistry]] - degree 50, connects to 5 communities
+- [[test_security_hardening.py]] - degree 36, connects to 15 communities
+- [[AgentRegistry]] - degree 50, connects to 6 communities
+- [[agent_isolation.py_2]] - degree 11, connects to 4 communities
+- [[IsolationVerifier]] - degree 37, connects to 3 communities
 - [[ContainerConfig]] - degree 22, connects to 3 communities
-- [[agent_isolation.py_2]] - degree 11, connects to 3 communities
-- [[IsolationVerifier]] - degree 37, connects to 2 communities

@@ -44,8 +44,8 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_AgentShroud Security Architecture]]
 - 1 edge to [[_COMMUNITY_Colima & Docker Operations Guide — AgentShroud]]
 - 1 edge to [[_COMMUNITY_hermesSOUL]]
-- 1 edge to [[_COMMUNITY_Hermes Agent — Connection Setup]]
-- 1 edge to [[_COMMUNITY_Part 2 — Red-Team Attack Run (SCRUM-73)]]
+- 1 edge to [[_COMMUNITY_check_command_1]]
+- 1 edge to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
 
 ## Top bridge nodes
 - [[Prompt Injection]] - degree 5, connects to 2 communities

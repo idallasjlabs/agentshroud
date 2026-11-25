@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/descriptors.py"
 type: "rationale"
-community: "test_edge_service_routes.py"
+community: "descriptors.py"
 location: "L158"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/descriptorspy
 ---
 
 # Verify the manifest signature, then that ``descriptors`` match it exactly.…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[verify_descriptors()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/rationale #graphify/EXTRACTED #community/descriptorspy

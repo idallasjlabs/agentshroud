@@ -1,18 +1,17 @@
 ---
-source_file: "docker/DOCKER-VPN-NETWORKING.md"
+source_file: "docs/reference/PREREQUISITES.md"
 type: "document"
-community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
-location: "L93"
+community: "AgentShroud Prerequisites"
+location: "L560"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+  - community/AgentShroud_Prerequisites
 ---
 
 # Verification
 
 ## Connections
-- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
-- [[With VPN connected]] - `contains` [EXTRACTED]
+- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites

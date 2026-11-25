@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_5]] - document - .github/agents/i-qa.agent.md
-- [[B. AWS Step Functions_5]] - document - .github/agents/i-qa.agent.md
-- [[C. AWS Athena_5]] - document - .github/agents/i-qa.agent.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_5]] - document - .github/agents/i-qa.agent.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_5]] - document - .github/agents/i-qa.agent.md
-- [[F. IAM Policies_5]] - document - .github/agents/i-qa.agent.md
-- [[G. Tailscale  Network_5]] - document - .github/agents/i-qa.agent.md
-- [[General Rules_5]] - document - .github/agents/i-qa.agent.md
-- [[H. Service Control for Production Testing_5]] - document - .github/agents/i-qa.agent.md
-- [[H.1 Pause Glue Jobs Before Testing_5]] - document - .github/agents/i-qa.agent.md
-- [[H.2 Pause Step Functions Before Testing_5]] - document - .github/agents/i-qa.agent.md
-- [[H.3 Database Tables for Test Data_5]] - document - .github/agents/i-qa.agent.md
-- [[H.4 Cleanup Verification Checklist_5]] - document - .github/agents/i-qa.agent.md
-- [[Objective_11]] - document - .github/agents/i-qa.agent.md
-- [[Output Format_102]] - document - .github/agents/i-qa.agent.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_5]] - document - .github/agents/i-qa.agent.md
-- [[Role_248]] - document - .github/agents/i-qa.agent.md
-- [[Skill Quality Assurance (QA)_5]] - document - .github/agents/i-qa.agent.md
-- [[Testing Hierarchy_5]] - document - .github/agents/i-qa.agent.md
-- [[i-qa.agent]] - document - .github/agents/i-qa.agent.md
+- [[dot-ompagentsi-qa]] - document - .omp/agents/i-qa.md
+- [[A. AWS Glue Jobs_6]] - document - .omp/agents/i-qa.md
+- [[B. AWS Step Functions_6]] - document - .omp/agents/i-qa.md
+- [[C. AWS Athena_6]] - document - .omp/agents/i-qa.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_6]] - document - .omp/agents/i-qa.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_6]] - document - .omp/agents/i-qa.md
+- [[F. IAM Policies_6]] - document - .omp/agents/i-qa.md
+- [[G. Tailscale  Network_6]] - document - .omp/agents/i-qa.md
+- [[General Rules_6]] - document - .omp/agents/i-qa.md
+- [[H. Service Control for Production Testing_6]] - document - .omp/agents/i-qa.md
+- [[H.1 Pause Glue Jobs Before Testing_6]] - document - .omp/agents/i-qa.md
+- [[H.2 Pause Step Functions Before Testing_6]] - document - .omp/agents/i-qa.md
+- [[H.3 Database Tables for Test Data_6]] - document - .omp/agents/i-qa.md
+- [[H.4 Cleanup Verification Checklist_6]] - document - .omp/agents/i-qa.md
+- [[Objective_12]] - document - .omp/agents/i-qa.md
+- [[Output Format_103]] - document - .omp/agents/i-qa.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_6]] - document - .omp/agents/i-qa.md
+- [[Role_249]] - document - .omp/agents/i-qa.md
+- [[Skill Quality Assurance (QA)_6]] - document - .omp/agents/i-qa.md
+- [[Testing Hierarchy_6]] - document - .omp/agents/i-qa.md
 
 ## Live Query (requires Dataview plugin)
 

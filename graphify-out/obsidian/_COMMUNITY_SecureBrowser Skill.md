@@ -30,7 +30,7 @@ members: 43
 - [[Full Configuration Example]] - document - skills/custom/securebrowser/README.md
 - [[Integration_2]] - document - skills/custom/securebrowser/README.md
 - [[Key Features_2]] - document - skills/custom/securebrowser/README.md
-- [[License_6]] - document - skills/custom/securebrowser/README.md
+- [[License_7]] - document - skills/custom/securebrowser/README.md
 - [[Limitations_1]] - document - skills/custom/securebrowser/README.md
 - [[Navigate]] - document - skills/custom/securebrowser/README.md
 - [[Overview_7]] - document - skills/custom/securebrowser/README.md

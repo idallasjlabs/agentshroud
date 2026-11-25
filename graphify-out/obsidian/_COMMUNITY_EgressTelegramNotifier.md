@@ -8,7 +8,7 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[dot-__init__()_192]] - code - gateway/proxy/telegram_egress_notify.py
+- [[dot-__init__()_196]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_api_url()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_async_send()]] - code - gateway/proxy/telegram_egress_notify.py
 - [[dot-_send_request()]] - code - gateway/proxy/telegram_egress_notify.py

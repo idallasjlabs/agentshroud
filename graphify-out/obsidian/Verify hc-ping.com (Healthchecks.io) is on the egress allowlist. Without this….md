@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_heartbeat_egress.py"
 type: "rationale"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # Verify hc-ping.com (Healthchecks.io) is on the egress allowlist. Without this…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_heartbeat_egress.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxy
+#graphify/rationale #graphify/EXTRACTED #community/lifespanpy

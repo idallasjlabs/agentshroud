@@ -13,7 +13,7 @@ members: 10
 - [[Bot Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Full Stack Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Gateway Only Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
-- [[Related Notes_30]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
+- [[Related Notes_31]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Restart Procedure_1]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Restart Verification]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[When to Restart]] - document - docs/vault/08 - Runbooks/Restart Procedure.md

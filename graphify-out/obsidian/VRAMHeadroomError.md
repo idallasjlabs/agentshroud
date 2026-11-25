@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-check_vram_headroom()]] - `calls` [EXTRACTED]
-- [[Exception_6]] - `inherits` [EXTRACTED]
+- [[Exception_4]] - `inherits` [EXTRACTED]
 - [[Raised when a local-model call is rejected because estimated VRAM usage would…]] - `rationale_for` [EXTRACTED]
 - [[TestVramHeadroom]] - `uses` [INFERRED]
 - [[resource_guard.py]] - `contains` [EXTRACTED]

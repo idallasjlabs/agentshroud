@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Athena — Knowledge Distiller_8]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Purpose_131]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Purpose_133]] - document - docker/config/openclaw/skills/i-athena/README.md
 - [[Related Skills_63]] - document - docker/config/openclaw/skills/i-athena/README.md
-- [[Usage_73]] - document - docker/config/openclaw/skills/i-athena/README.md
+- [[Usage_74]] - document - docker/config/openclaw/skills/i-athena/README.md
 - [[openclawskillsi-athenaREADME]] - document - docker/config/openclaw/skills/i-athena/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -12,8 +12,8 @@ members: 7
 - [[AGENTSHROUD_CONFIG]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 - [[Default Search Order (when NOT set)]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 - [[Description_13]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Related Notes_55]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
-- [[Usage_28]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Related Notes_58]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
+- [[Usage_29]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 - [[When to Set]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md
 
 ## Live Query (requires Dataview plugin)

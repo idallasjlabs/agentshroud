@@ -23,7 +23,7 @@ members: 34
 - [[dot-verify_integrity()]] - code - gateway/security/intel_report.py
 - [[A single competitor record in a competitive intel report.]] - rationale - gateway/security/intel_report.py
 - [[A verified source backing a competitor claim. A Citation is only created by the…]] - rationale - gateway/security/intel_report.py
-- [[BaseModel_9]] - code
+- [[BaseModel_10]] - code
 - [[Citation]] - code - gateway/security/intel_report.py
 - [[Citation verifier for competitive-intelligence reports (SCRUM-75). IEC 62443…]] - rationale - gateway/security/citation_verifier.py
 - [[Competitive Intelligence Report — Schema, Integrity, and Store (B.2) IEC 62443…]] - rationale - gateway/security/intel_report.py
@@ -57,8 +57,8 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_dot-verify_entry]]
 - 2 edges to [[_COMMUNITY_TestIntelReportHashIntegrity]]
 - 2 edges to [[_COMMUNITY_test_intel_endpoint.py]]
-- 2 edges to [[_COMMUNITY_EgressFilter]]
-- 2 edges to [[_COMMUNITY_GatewayConfig]]
+- 2 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
 - 1 edge to [[_COMMUNITY_make_httpx_fetcher]]
 
 ## Top bridge nodes

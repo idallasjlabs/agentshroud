@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "spaCy"
-location: "L27"
+community: "aiosqlite"
+location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/spaCy
+  - community/aiosqlite
 ---
 
 # Where Used
 
 ## Connections
-- [[spaCy_1]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/spaCy
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

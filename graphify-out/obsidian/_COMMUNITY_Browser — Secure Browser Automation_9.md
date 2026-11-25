@@ -37,7 +37,7 @@ members: 30
 - [[Security Guarantees_8]] - document - .omp/agents/browser.md
 - [[Take Screenshot_7]] - document - .omp/agents/browser.md
 - [[Troubleshooting_43]] - document - .omp/agents/browser.md
-- [[Usage_115]] - document - .omp/agents/browser.md
+- [[Usage_116]] - document - .omp/agents/browser.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -28,7 +28,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_§5 — Trivy Container Scan Results]]
-- 1 edge to [[_COMMUNITY_§3 — Bot Pipeline Integrity Checks]]
+- 1 edge to [[_COMMUNITY_CICD Quality Gates (14 jobs, 6 workflows)]]
 - 1 edge to [[_COMMUNITY_§4 — Hermes-Specific Section (NEW — first assessment)]]
 - 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Red Team Assessment]]
 

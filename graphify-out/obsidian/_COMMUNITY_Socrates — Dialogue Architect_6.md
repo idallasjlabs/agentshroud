@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[dot-cursoragentssocrates]] - document - .cursor/agents/socrates.md
-- [[Dialogue Adaptations_3]] - document - .cursor/agents/socrates.md
-- [[Dialogue Techniques_3]] - document - .cursor/agents/socrates.md
-- [[EXPERT_3]] - document - .cursor/agents/socrates.md
-- [[ElevenLabs v3 Audio Tags_3]] - document - .cursor/agents/socrates.md
-- [[Episode Closing (Mandatory for OKE)_3]] - document - .cursor/agents/socrates.md
-- [[Expert Persona_3]] - document - .cursor/agents/socrates.md
-- [[HOST_3]] - document - .cursor/agents/socrates.md
-- [[Input Requirements_71]] - document - .cursor/agents/socrates.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_3]] - document - .cursor/agents/socrates.md
-- [[Output Format_113]] - document - .cursor/agents/socrates.md
-- [[Persona_55]] - document - .cursor/agents/socrates.md
-- [[Quality Checklist_63]] - document - .cursor/agents/socrates.md
-- [[Role_274]] - document - .cursor/agents/socrates.md
-- [[Socrates — Dialogue Architect_6]] - document - .cursor/agents/socrates.md
-- [[Speaker Definitions_3]] - document - .cursor/agents/socrates.md
-- [[System Prompt_55]] - document - .cursor/agents/socrates.md
-- [[User Prompt Template_23]] - document - .cursor/agents/socrates.md
+- [[Dialogue Adaptations_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Dialogue Techniques_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[EXPERT_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Expert Persona_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[HOST_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Input Requirements_72]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Output Format_114]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Persona_56]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Quality Checklist_64]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Role_275]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Socrates — Dialogue Architect_7]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[Speaker Definitions_4]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[System Prompt_56]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[User Prompt Template_24]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
+- [[openclawskillsi-socratesSKILL]] - document - docker/config/openclaw/skills/i-socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

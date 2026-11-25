@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Oracle — Feedback Analyst_8]] - document - .agents/skills/oracle/README.md
-- [[Purpose_109]] - document - .agents/skills/oracle/README.md
+- [[Purpose_111]] - document - .agents/skills/oracle/README.md
 - [[Related Skills_41]] - document - .agents/skills/oracle/README.md
-- [[Usage_51]] - document - .agents/skills/oracle/README.md
+- [[Usage_52]] - document - .agents/skills/oracle/README.md
 - [[oracleREADME]] - document - .agents/skills/oracle/README.md
 
 ## Live Query (requires Dataview plugin)

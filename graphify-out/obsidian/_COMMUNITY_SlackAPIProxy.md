@@ -8,13 +8,13 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[dot-__init__()_194]] - code - gateway/proxy/slack_proxy.py
-- [[dot-__init__()_195]] - code - gateway/tests/test_slack_proxy_coverage.py
+- [[dot-__init__()_198]] - code - gateway/proxy/slack_proxy.py
+- [[dot-__init__()_199]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[dot-_call_slack_api()]] - code - gateway/proxy/slack_proxy.py
 - [[dot-_intercept_connections_open()]] - code - gateway/proxy/slack_proxy.py
 - [[dot-_is_owner_channel()]] - code - gateway/proxy/slack_proxy.py
 - [[dot-consume_relay_token()]] - code - gateway/proxy/slack_proxy.py
-- [[dot-get_stats()_16]] - code - gateway/proxy/slack_proxy.py
+- [[dot-get_stats()_17]] - code - gateway/proxy/slack_proxy.py
 - [[dot-handle_event()]] - code - gateway/proxy/slack_proxy.py
 - [[dot-info_filter_redaction_count()]] - code - gateway/tests/test_slack_proxy_coverage.py
 - [[dot-invite_channel_member()]] - code - gateway/proxy/slack_proxy.py
@@ -45,10 +45,9 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_AsyncMock]]
 - 3 edges to [[_COMMUNITY__make_proxy]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY_dot-test_events_api_envelope_dispatches_handle_event]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 - 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
 
 ## Top bridge nodes
 - [[SlackAPIProxy]] - degree 21, connects to 5 communities

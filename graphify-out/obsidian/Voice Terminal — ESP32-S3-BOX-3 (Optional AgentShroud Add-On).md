@@ -19,7 +19,7 @@ tags:
 - [[Success pattern — `docker logs agentshroud-voice-gateway`]] - `contains` [EXTRACTED]
 - [[Troubleshooting_34]] - `contains` [EXTRACTED]
 - [[Updating the firmware (OTA — the normal deploy path)]] - `contains` [EXTRACTED]
-- [[Usage_108]] - `contains` [EXTRACTED]
+- [[Usage_109]] - `contains` [EXTRACTED]
 - [[voice-terminal-esp32-s3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Voice_Terminal__ESP32-S3-BOX-3_Optional_AgentShroud_Add-On

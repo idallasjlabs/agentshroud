@@ -8,10 +8,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_152]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Purpose_154]] - document - docker/config/openclaw/skills/i-socrates/README.md
 - [[Related Skills_84]] - document - docker/config/openclaw/skills/i-socrates/README.md
 - [[Socrates — Dialogue Architect_2]] - document - docker/config/openclaw/skills/i-socrates/README.md
-- [[Usage_94]] - document - docker/config/openclaw/skills/i-socrates/README.md
+- [[Usage_95]] - document - docker/config/openclaw/skills/i-socrates/README.md
 - [[openclawskillsi-socratesREADME]] - document - docker/config/openclaw/skills/i-socrates/README.md
 
 ## Live Query (requires Dataview plugin)

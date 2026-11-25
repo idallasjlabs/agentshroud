@@ -1,17 +1,17 @@
 ---
-source_file: "docs/reference/PREREQUISITES.md"
+source_file: "docs/security/cve-mitigation-matrix.md"
 type: "document"
-community: "AgentShroud Prerequisites"
-location: "L560"
+community: "AgentShroud™ CVE Mitigation Matrix"
+location: "L489"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Prerequisites
+  - community/AgentShroud_CVE_Mitigation_Matrix
 ---
 
 # Verification
 
 ## Connections
-- [[✅ Setup Checklist]] - `contains` [EXTRACTED]
+- [[AgentShroud™ CVE Mitigation Matrix]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Prerequisites
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_CVE_Mitigation_Matrix

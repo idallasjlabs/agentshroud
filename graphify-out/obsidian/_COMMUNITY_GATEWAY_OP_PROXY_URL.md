@@ -11,7 +11,7 @@ members: 8
 - [[Description_10]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[GATEWAY_OP_PROXY_URL_1]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[GATEWAY_OP_PROXY_URL]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
-- [[Related Notes_42]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
+- [[Related Notes_45]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Security_10]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Set In_3]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md
 - [[Usage Flow]] - document - docs/vault/04 - Environment Variables/GATEWAY_OP_PROXY_URL.md

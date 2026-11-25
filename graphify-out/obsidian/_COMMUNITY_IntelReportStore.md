@@ -10,7 +10,7 @@ members: 28
 ## Members
 - [[dot-_make_report()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-load_all()_1]] - code - gateway/security/intel_report.py
-- [[dot-store()_1]] - code - gateway/tests/test_intel_pipeline.py
+- [[dot-store()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-store_dir()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_chain_hash_links_reports()]] - code - gateway/tests/test_intel_pipeline.py
 - [[dot-test_integrity_check_fails_for_tampered_file()]] - code - gateway/tests/test_intel_pipeline.py
@@ -31,11 +31,11 @@ members: 28
 - [[If the previous report file is corrupt, save must not raise.]] - rationale - gateway/tests/test_intel_pipeline.py
 - [[IntelReportStore]] - code - gateway/security/intel_report.py
 - [[Load all reports in chronological order (oldest first).]] - rationale - gateway/security/intel_report.py
-- [[Path_59]] - code
+- [[Path_58]] - code
 - [[Persistent store for competitive intelligence reports. Each report is saved as…]] - rationale - gateway/security/intel_report.py
 - [[TestIntelReportStore]] - code - gateway/tests/test_intel_pipeline.py
 - [[Walk the entire report chain and verify hash linkage. Returns (True, Chain…]] - rationale - gateway/security/intel_report.py
-- [[fixture_114]] - code
+- [[fixture_111]] - code
 
 ## Live Query (requires Dataview plugin)
 

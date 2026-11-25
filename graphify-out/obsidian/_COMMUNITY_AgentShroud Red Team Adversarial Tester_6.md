@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[dot-ompagentssec-offense]] - document - .omp/agents/sec-offense.md
-- [[Adversary Model_6]] - document - .omp/agents/sec-offense.md
-- [[AgentShroud Red Team Adversarial Tester_6]] - document - .omp/agents/sec-offense.md
-- [[Attack Phases_6]] - document - .omp/agents/sec-offense.md
-- [[Attack Techniques Reference_6]] - document - .omp/agents/sec-offense.md
-- [[Coverage Requirements_7]] - document - .omp/agents/sec-offense.md
-- [[Critical Rules_23]] - document - .omp/agents/sec-offense.md
-- [[Infrastructure_19]] - document - .omp/agents/sec-offense.md
-- [[Key Principle_6]] - document - .omp/agents/sec-offense.md
-- [[Output_16]] - document - .omp/agents/sec-offense.md
-- [[Phase 1 Reconnaissance & Trust Probing_6]] - document - .omp/agents/sec-offense.md
-- [[Phase 2 Prompt Injection_6]] - document - .omp/agents/sec-offense.md
-- [[Phase 3 Indirect Injection_6]] - document - .omp/agents/sec-offense.md
-- [[Phase 4 Data Exfiltration_6]] - document - .omp/agents/sec-offense.md
-- [[Phase 5 Exploitation Chains_6]] - document - .omp/agents/sec-offense.md
-- [[Phase 6 Detection Validation_6]] - document - .omp/agents/sec-offense.md
-- [[Test Structure_14]] - document - .omp/agents/sec-offense.md
-- [[Writing Exploit Tests_6]] - document - .omp/agents/sec-offense.md
+- [[Adversary Model_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[AgentShroud Red Team Adversarial Tester_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Attack Phases_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Attack Techniques Reference_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Coverage Requirements_9]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Critical Rules_25]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Infrastructure_21]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Key Principle_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Output_18]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 1 Reconnaissance & Trust Probing_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 2 Prompt Injection_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 3 Indirect Injection_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 4 Data Exfiltration_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 5 Exploitation Chains_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Phase 6 Detection Validation_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Test Structure_16]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[Writing Exploit Tests_8]] - document - skills/custom/agentshroud-redteam/SKILL.md
+- [[agentshroud-redteamSKILL]] - document - skills/custom/agentshroud-redteam/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

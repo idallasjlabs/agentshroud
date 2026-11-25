@@ -15,7 +15,7 @@ members: 8
 - [[MCP Proxy Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 - [[MCP Proxy Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 - [[MCP Proxy Wrapper Issues (Bot Side)]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
-- [[Related Notes_48]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
+- [[Related Notes_51]] - document - docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md
 
 ## Live Query (requires Dataview plugin)
 

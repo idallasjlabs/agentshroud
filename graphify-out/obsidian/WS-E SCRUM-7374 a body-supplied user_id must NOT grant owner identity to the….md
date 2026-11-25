@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "rationale"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L226"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # WS-E SCRUM-73/74: a body-supplied user_id must NOT grant owner identity to the…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOwnerSpoofingViaForwardBody]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

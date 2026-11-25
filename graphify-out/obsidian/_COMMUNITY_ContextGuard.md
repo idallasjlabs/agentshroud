@@ -1,119 +1,161 @@
 ---
 type: community
-members: 106
+members: 148
 ---
 
 # ContextGuard
 
-**Members:** 106 nodes
+**Members:** 148 nodes
 
 ## Members
-- [[dot-__init__()_81]] - code - gateway/security/context_guard.py
-- [[dot-__init__()_82]] - code - gateway/security/context_integrity.py
+- [[dot-__init__()]] - code - gateway/ingest_api/middleware.py
+- [[dot-__init__()_1]] - code - gateway/security/context_guard.py
+- [[dot-__init__()_2]] - code - gateway/security/prompt_protection.py
+- [[dot-__init__()_3]] - code - gateway/security/xml_leak_filter.py
+- [[dot-_calculate_similarity()]] - code - gateway/security/prompt_protection.py
+- [[dot-_compile_detection_patterns()]] - code - gateway/security/prompt_protection.py
 - [[dot-_detect_hidden_instructions()]] - code - gateway/security/context_guard.py
 - [[dot-_detect_instruction_injection()]] - code - gateway/security/context_guard.py
 - [[dot-_detect_rapid_context_growth()]] - code - gateway/security/context_guard.py
 - [[dot-_detect_repetition_attacks()]] - code - gateway/security/context_guard.py
+- [[dot-_load_protected_content()]] - code - gateway/security/prompt_protection.py
+- [[dot-_redact_fuzzy_match()]] - code - gateway/security/prompt_protection.py
+- [[dot-add_protected_content()]] - code - gateway/security/prompt_protection.py
 - [[dot-analyze_message()]] - code - gateway/security/context_guard.py
-- [[dot-get_segment_provenance()]] - code - gateway/security/context_guard.py
+- [[dot-filter_function_calls_only()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-filter_response()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-get_protection_stats()]] - code - gateway/security/prompt_protection.py
 - [[dot-get_session_risk_level()]] - code - gateway/security/context_guard.py
-- [[dot-guard()_3]] - code - gateway/tests/test_context_guard.py
-- [[dot-guard()_4]] - code - gateway/tests/test_security_audit.py
-- [[dot-record_segment()]] - code - gateway/security/context_guard.py
-- [[dot-score_context()]] - code - gateway/security/context_integrity.py
-- [[dot-tag_segment()]] - code - gateway/security/context_guard.py
-- [[dot-test_below_alert_threshold_logs_warning()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_context_guard_session_isolation_under_load()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_context_guard_tool_manipulation()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-register_bot_hostnames()]] - code - gateway/security/prompt_protection.py
+- [[dot-scan_command_injection()]] - code - gateway/security/xml_leak_filter.py
+- [[dot-scan_response()]] - code - gateway/security/prompt_protection.py
+- [[dot-setup_method()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_add_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_clean_response_passes_through()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_clean_text_passes()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_credential_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_custom_config()]] - code - gateway/tests/test_path_isolation.py
 - [[dot-test_deeply_nested_context_attacks()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_duplicate_hashes_detected()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_empty_context_scores_clean()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_empty_provenance_for_unknown_session()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_few_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_injected_untrusted_segment_lowers_score()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_json_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_default_config()]] - code - gateway/tests/test_path_isolation.py
+- [[dot-test_disabled_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_dynamic_bot_hostname_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_edge_cases()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_empty_text_returns_clean()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_file_path_removal()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_file_reference_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_function_calls_xml_removal()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_fuzzy_matching()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_hash_fingerprinting()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_infrastructure_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_initialization()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_json_injection_in_context()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_normal_message_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_normal_sized_message_allowed()]] - code - gateway/tests/test_context_guard.py
+- [[dot-test_multiple_redactions()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_normal_content_passes()]] - code - gateway/tests/test_prompt_protection.py
 - [[dot-test_oversized_json_payload()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_oversized_message_blocked()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_pristine_context_scores_high()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_repeated_pattern_flagged()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_role_switching()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_segment_hash_integrity()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_provenance_ordering()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_segment_tagging_basic()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_separate_sessions_isolated()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_session_isolation()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_short_repetitions_allowed()]] - code - gateway/tests/test_context_guard.py
-- [[dot-test_tampered_system_prompt_lowers_score()]] - code - gateway/tests/test_context_integrity.py
-- [[dot-test_xml_tag_injection()]] - code - gateway/tests/test_security_audit.py
-- [[A well-formed context with valid HMAC should score close to 1.0.]] - rationale - gateway/tests/test_context_integrity.py
+- [[dot-test_product_name_not_redacted()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_protected_content_loading()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_protection_stats()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_python_eval_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_quick_function_calls_filter()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_shell_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_sql_injection_detected()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[dot-test_structural_pattern_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_tool_inventory_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-test_user_id_redaction()]] - code - gateway/tests/test_prompt_protection.py
+- [[dot-xml_filter()]] - code - gateway/tests/test_xml_leak_filter.py
+- [[A piece of content that should be protected from disclosure.]] - rationale - gateway/security/prompt_protection.py
+- [[Add bot container hostnames to the infrastructure detection patterns. Called at…]] - rationale - gateway/security/prompt_protection.py
+- [[Add content to the protected registry. Args name Identifier for this content…]] - rationale - gateway/security/prompt_protection.py
 - [[Analyze a message for context poisoning attempts. Args session_id Session…]] - rationale - gateway/security/context_guard.py
-- [[Any_30]] - code
-- [[Check if message should be allowed, with detailed findings. Args text Message…]] - rationale - gateway/security/context_guard.py
-- [[Compute a 0.0–1.0 integrity score for the given context segments. Args…]] - rationale - gateway/security/context_integrity.py
-- [[Context Integrity Scoring — C21 Computes a rolling 0.0–1.0 integrity score for…]] - rationale - gateway/security/context_integrity.py
-- [[Context Window Poisoning Defense - Security Hardening Module Detect attempts to…]] - rationale - gateway/security/context_guard.py
-- [[Context guard should detect tool result manipulation.]] - rationale - gateway/tests/test_security_audit_advanced.py
+- [[Any_2]] - code
+- [[Calculate similarity between text and protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[Compile regex patterns for detecting disclosure attempts.]] - rationale - gateway/security/prompt_protection.py
+- [[Configuration for path isolation system.]] - rationale - gateway/security/path_isolation.py
 - [[Context tracking for a session.]] - rationale - gateway/security/context_guard.py
 - [[ContextAttack]] - code - gateway/security/context_guard.py
 - [[ContextGuard]] - code - gateway/security/context_guard.py
-- [[ContextIntegrityScorer]] - code - gateway/security/context_integrity.py
-- [[ContextSegment]] - code - gateway/security/context_guard.py
-- [[Create a provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
+- [[Create a PromptProtection instance for testing.]] - rationale - gateway/tests/test_prompt_protection.py
 - [[Detect hidden instructions buried in large text blocks.]] - rationale - gateway/security/context_guard.py
 - [[Detect instruction injection attempts.]] - rationale - gateway/security/context_guard.py
 - [[Detect rapid context window filling.]] - rationale - gateway/security/context_guard.py
 - [[Detect repetition-based context stuffing attacks.]] - rationale - gateway/security/context_guard.py
 - [[Detected context window attack attempt.]] - rationale - gateway/security/context_guard.py
-- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
-- [[Duplicate content hashes reduce score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Empty segment list should not penalize the score.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
+- [[Filter outbound response content to remove sensitive information. Args…]] - rationale - gateway/security/xml_leak_filter.py
+- [[Filter to remove sensitive XML and path information from outbound responses.]] - rationale - gateway/security/xml_leak_filter.py
+- [[FilterResult]] - code - gateway/security/xml_leak_filter.py
 - [[Get risk level for a session based on detected attacks.]] - rationale - gateway/security/context_guard.py
-- [[Get the global context guard instance.]] - rationale - gateway/security/context_guard.py
+- [[Get statistics about the protection system.]] - rationale - gateway/security/prompt_protection.py
 - [[Guard against context window poisoning attacks.]] - rationale - gateway/security/context_guard.py
-- [[IntegrityScore]] - code - gateway/security/context_integrity.py
+- [[Initialize all security modules.]] - rationale - gateway/ingest_api/middleware.py
+- [[Initialize prompt protection system. Args config Configuration dictionary…]] - rationale - gateway/security/prompt_protection.py
+- [[Initialize the filter with predefined patterns.]] - rationale - gateway/security/xml_leak_filter.py
 - [[JSON injection in message shouldn't manipulate context.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Mismatched HMAC should reduce score by at least 0.15.]] - rationale - gateway/tests/test_context_integrity.py
+- [[Load protected content from configured sources.]] - rationale - gateway/security/prompt_protection.py
+- [[Main system prompt protection engine. Maintains fingerprints of sensitive…]] - rationale - gateway/security/prompt_protection.py
 - [[Nested context attacks shouldn't cause stack overflow.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
-- [[Return ordered list of provenance records for the session.]] - rationale - gateway/security/context_guard.py
-- [[Rolling context integrity score for a session.]] - rationale - gateway/security/context_integrity.py
-- [[Score below 0.6 should produce a warning log.]] - rationale - gateway/tests/test_context_integrity.py
-- [[Scores the integrity of a session's context. Usage scorer =…]] - rationale - gateway/security/context_integrity.py
-- [[SessionContext_1]] - code - gateway/security/context_guard.py
-- [[Sessions shouldn't leak data under concurrent access.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Tag a segment and append it to the session's provenance log.]] - rationale - gateway/security/context_guard.py
-- [[Tagged provenance record for a context segment.]] - rationale - gateway/security/context_guard.py
-- [[Test Context Window Poisoning Defense.]] - rationale - gateway/tests/test_context_guard.py
-- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestCheckMessage]] - code - gateway/tests/test_context_guard.py
-- [[TestContextGuard]] - code - gateway/tests/test_security_audit.py
-- [[TestContextIntegrityScorer]] - code - gateway/tests/test_context_integrity.py
-- [[TestSourceTagging]] - code - gateway/tests/test_context_guard.py
-- [[Tests for ContextIntegrityScorer (C21).]] - rationale - gateway/tests/test_context_integrity.py
-- [[Untrusted segment injected after system segment reduces score.]] - rationale - gateway/tests/test_context_integrity.py
+- [[PathIsolationConfig]] - code - gateway/security/path_isolation.py
+- [[Product name 'agentshroud' and 'agentshroud-openclaw' are public branding —…]] - rationale - gateway/tests/test_prompt_protection.py
+- [[PromptProtection]] - code - gateway/security/prompt_protection.py
+- [[ProtectedContent]] - code - gateway/security/prompt_protection.py
+- [[Quick filter that only removes function call XML (for performance). Args…]] - rationale - gateway/security/xml_leak_filter.py
+- [[Redact text that fuzzy matches protected content.]] - rationale - gateway/security/prompt_protection.py
+- [[RedactionResult]] - code - gateway/security/prompt_protection.py
+- [[Result from XML leak filtering.]] - rationale - gateway/security/xml_leak_filter.py
+- [[Result of scanning and redacting content.]] - rationale - gateway/security/prompt_protection.py
+- [[Sample protected content for testing.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Scan outbound text for command  code injection patterns. Does NOT modify the…]] - rationale - gateway/security/xml_leak_filter.py
+- [[Scan text for protected content and return redacted version. Args text The…]] - rationale - gateway/security/prompt_protection.py
+- [[SessionContext]] - code - gateway/security/context_guard.py
+- [[Set up test fixtures.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[System Prompt Protection for AgentShroud Gateway Prevents extraction of system…]] - rationale - gateway/security/prompt_protection.py
+- [[Test adding protected content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test cases for PromptProtection class.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test cases for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test custom configuration values.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test default configuration values.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test edge cases and error conditions.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test fuzzy matching against protected content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test getting protection statistics.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test loading protected content from files.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test path isolation configuration.]] - rationale - gateway/tests/test_path_isolation.py
+- [[Test proper initialization of PromptProtection.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of credential patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of file references.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of system prompt structural patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of targeted infrastructure details. Generic hostnames (e.g.…]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of tool inventory details.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test redaction of user ID patterns.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test removal of file paths from responses.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test removal of function call XML blocks.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test text with multiple types of sensitive content.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that clean responses pass through unchanged.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[Test that content is properly fingerprinted with hashes.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that disabled protection passes through content unchanged.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that dynamically registered bot hostnames are redacted.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test that normal content passes through without redaction.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Test the performance-optimized function calls only filter.]] - rationale - gateway/tests/test_xml_leak_filter.py
+- [[TestCommandInjectionScan]] - code - gateway/tests/test_xml_leak_filter.py
+- [[TestPathIsolationConfig]] - code - gateway/tests/test_path_isolation.py
+- [[TestPromptProtection]] - code - gateway/tests/test_prompt_protection.py
+- [[TestXMLLeakFilter]] - code - gateway/tests/test_xml_leak_filter.py
+- [[Tests for System Prompt Protection module.]] - rationale - gateway/tests/test_prompt_protection.py
+- [[Tests for XMLLeakFilter.]] - rationale - gateway/tests/test_xml_leak_filter.py
 - [[Very large JSON shouldn't crash the parser.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[_make_segment()]] - code - gateway/tests/test_context_integrity.py
-- [[analyze()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[check_message()]] - code - gateway/security/context_guard.py
-- [[context_guard.py]] - code - gateway/security/context_guard.py
-- [[context_integrity.py]] - code - gateway/security/context_integrity.py
-- [[fixture_56]] - code
-- [[fixture_57]] - code
-- [[get_context_guard()]] - code - gateway/security/context_guard.py
-- [[guard()]] - code - gateway/tests/test_context_integrity.py
-- [[scorer()]] - code - gateway/tests/test_context_integrity.py
-- [[test_context_guard.py]] - code - gateway/tests/test_context_guard.py
-- [[test_context_integrity.py]] - code - gateway/tests/test_context_integrity.py
+- [[XML Leak Filter — prevent sensitive XML and path information from leaking in…]] - rationale - gateway/security/xml_leak_filter.py
+- [[XMLLeakFilter]] - code - gateway/security/xml_leak_filter.py
+- [[enforcement-audit-script.py]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[fail()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[fixture]] - code
+- [[fixture_1]] - code
+- [[ok()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[prompt_protection()]] - code - gateway/tests/test_prompt_protection.py
+- [[prompt_protection.py]] - code - gateway/security/prompt_protection.py
+- [[run()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[sample_protected_content()]] - code - gateway/tests/test_prompt_protection.py
+- [[test_prompt_protection.py]] - code - gateway/tests/test_prompt_protection.py
+- [[test_xml_leak_filter.py]] - code - gateway/tests/test_xml_leak_filter.py
+- [[warn()]] - code - docs/planning/reviews/enforcement-audit-script.py
+- [[xml_leak_filter.py]] - code - gateway/security/xml_leak_filter.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -123,24 +165,66 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_lifespan.py]]
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_test_e2e_watchtower.py]]
-- 3 edges to [[_COMMUNITY_prompt_guard.py]]
-- 3 edges to [[_COMMUNITY_normalize_input]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_run]]
-- 2 edges to [[_COMMUNITY_deep_security_test]]
-- 2 edges to [[_COMMUNITY_PathIsolationManager]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
-- 2 edges to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 10 edges to [[_COMMUNITY_context_guard.py]]
+- 10 edges to [[_COMMUNITY_PathIsolationManager]]
+- 8 edges to [[_COMMUNITY_middleware.py]]
+- 8 edges to [[_COMMUNITY_PIISanitizer]]
+- 8 edges to [[_COMMUNITY_FileSandbox]]
+- 7 edges to [[_COMMUNITY_MiddlewareManager]]
+- 7 edges to [[_COMMUNITY_RBACConfig]]
+- 6 edges to [[_COMMUNITY_TestApprovalHardening]]
+- 4 edges to [[_COMMUNITY_socrouter.py]]
+- 4 edges to [[_COMMUNITY_TestModuleInstantiationInEnforceMode]]
+- 4 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 3 edges to [[_COMMUNITY_deep_security_test]]
+- 3 edges to [[_COMMUNITY_TestHTTPSecurity]]
+- 3 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 3 edges to [[_COMMUNITY_GitGuard]]
+- 3 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 2 edges to [[_COMMUNITY_TestFileSandbox]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_TestConcurrency]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_EgressEvent]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
+- 2 edges to [[_COMMUNITY_CanaryTripwire]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
+- 2 edges to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 2 edges to [[_COMMUNITY_EgressAction]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY_AuditStore]]
+- 1 edge to [[_COMMUNITY_EnvironmentGuard]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager]]
+- 1 edge to [[_COMMUNITY_TokenValidator]]
+- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_BrowserSecurityGuard]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleManager]]
+- 1 edge to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
+- 1 edge to [[_COMMUNITY_DriftDetector]]
+- 1 edge to [[_COMMUNITY_ServerConfig]]
+- 1 edge to [[_COMMUNITY_NetworkValidator]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_SessionManager]]
+- 1 edge to [[_COMMUNITY_TestAuth]]
+- 1 edge to [[_COMMUNITY_ToolChainAnalyzer]]
+- 1 edge to [[_COMMUNITY_CredentialInjector]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_KeyRotationConfig]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleConfig]]
 
 ## Top bridge nodes
-- [[ContextGuard]] - degree 44, connects to 10 communities
-- [[context_guard.py]] - degree 16, connects to 5 communities
-- [[test_context_integrity.py]] - degree 12, connects to 2 communities
-- [[context_integrity.py]] - degree 9, connects to 2 communities
-- [[ContextIntegrityScorer]] - degree 8, connects to 2 communities
+- [[dot-__init__()]] - degree 42, connects to 31 communities
+- [[run()]] - degree 36, connects to 21 communities
+- [[enforcement-audit-script.py]] - degree 33, connects to 19 communities
+- [[ContextGuard]] - degree 44, connects to 13 communities
+- [[PathIsolationConfig]] - degree 17, connects to 5 communities

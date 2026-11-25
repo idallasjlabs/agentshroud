@@ -1,13 +1,14 @@
 ---
 type: community
-members: 26
+members: 27
 ---
 
 # AuditExporter
 
-**Members:** 26 nodes
+**Members:** 27 nodes
 
 ## Members
+- [[dot-__init__()_182]] - code - gateway/security/audit_export.py
 - [[dot-_export_cef()]] - code - gateway/security/audit_export.py
 - [[dot-_export_json()]] - code - gateway/security/audit_export.py
 - [[dot-_export_jsonld()]] - code - gateway/security/audit_export.py
@@ -43,16 +44,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_AuditEvent]]
+- 6 edges to [[_COMMUNITY_test_audit_export.py]]
 - 6 edges to [[_COMMUNITY_asyncio_6]]
-- 3 edges to [[_COMMUNITY_AuditExportConfig]]
-- 3 edges to [[_COMMUNITY_AuditStore]]
+- 4 edges to [[_COMMUNITY_AuditStore]]
+- 4 edges to [[_COMMUNITY_AuditEvent]]
 - 2 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 2 edges to [[_COMMUNITY_dot-verify_export_integrity]]
 
 ## Top bridge nodes
 - [[AuditExporter]] - degree 21, connects to 5 communities
-- [[TestAuditExporter]] - degree 13, connects to 3 communities
+- [[TestAuditExporter]] - degree 13, connects to 2 communities
+- [[dot-__init__()_182]] - degree 3, connects to 2 communities
 - [[dot-_export_cef()]] - degree 5, connects to 1 community
 - [[dot-_export_json()]] - degree 4, connects to 1 community
-- [[dot-_export_jsonld()]] - degree 4, connects to 1 community

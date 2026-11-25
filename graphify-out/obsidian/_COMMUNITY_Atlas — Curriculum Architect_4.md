@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Atlas — Curriculum Architect_4]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Purpose_118]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Purpose_120]] - document - docker/config/hermes/skills/i-atlas/README.md
 - [[Related Skills_50]] - document - docker/config/hermes/skills/i-atlas/README.md
-- [[Usage_60]] - document - docker/config/hermes/skills/i-atlas/README.md
+- [[Usage_61]] - document - docker/config/hermes/skills/i-atlas/README.md
 - [[hermesskillsi-atlasREADME]] - document - docker/config/hermes/skills/i-atlas/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,12 +1,12 @@
 ---
 source_file: "docs/governance/GSD_CADENCE.md"
 type: "document"
-community: "Multi-Agent Role Matrix"
+community: "Dockerfile — Bot (OpenClaw)"
 location: "L49"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Multi-Agent_Role_Matrix
+  - community/Dockerfile__Bot_OpenClaw
 ---
 
 # Weekly (every Friday)
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Rule 3 — Weekly Kaizen + Monthly Chaos Drill]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Multi-Agent_Role_Matrix
+#graphify/document #graphify/EXTRACTED #community/Dockerfile__Bot_OpenClaw

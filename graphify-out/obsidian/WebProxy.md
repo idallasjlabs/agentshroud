@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L140"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # WebProxy
 
 ## Connections
-- [[dot-__init__()_151]] - `references` [EXTRACTED]
-- [[dot-__init__()_153]] - `method` [EXTRACTED]
+- [[dot-__init__()_156]] - `references` [EXTRACTED]
+- [[dot-__init__()_159]] - `method` [EXTRACTED]
 - [[dot-_audit()]] - `method` [EXTRACTED]
 - [[dot-allowlist_proxy()]] - `calls` [EXTRACTED]
 - [[dot-check_request()]] - `method` [EXTRACTED]
-- [[dot-get_stats()]] - `method` [EXTRACTED]
-- [[dot-scan_response()_1]] - `method` [EXTRACTED]
+- [[dot-get_stats()_8]] - `method` [EXTRACTED]
+- [[dot-scan_response()_2]] - `method` [EXTRACTED]
 - [[dot-setUp()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_denylist()]] - `calls` [EXTRACTED]
 - [[dot-test_custom_domain_size_limit()]] - `calls` [EXTRACTED]
@@ -39,7 +39,7 @@ tags:
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestAuditChain]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestWebProxySecurityIntegration]] - `uses` [INFERRED]
 - [[URLAnalyzer]] - `uses` [INFERRED]
@@ -64,4 +64,4 @@ tags:
 - [[test_web_proxy_security.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/WebProxy
+#graphify/code #graphify/INFERRED #community/lifespanpy

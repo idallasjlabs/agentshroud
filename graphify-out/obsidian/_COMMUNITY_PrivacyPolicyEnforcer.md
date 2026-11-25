@@ -8,14 +8,14 @@ members: 66
 **Members:** 66 nodes
 
 ## Members
-- [[dot-__init__()_17]] - code - gateway/security/privacy_policy.py
+- [[dot-__init__()_13]] - code - gateway/security/privacy_policy.py
 - [[dot-_get_role_value()]] - code - gateway/security/privacy_policy.py
 - [[dot-_user_in_allowed_groups()]] - code - gateway/security/privacy_policy.py
 - [[dot-contains_private_data()]] - code - gateway/security/privacy_policy.py
 - [[dot-default()]] - code - gateway/security/privacy_policy.py
 - [[dot-filter_response()_1]] - code - gateway/security/privacy_policy.py
+- [[dot-from_dict()_1]] - code - gateway/security/privacy_policy.py
 - [[dot-from_dict()_2]] - code - gateway/security/privacy_policy.py
-- [[dot-from_dict()_3]] - code - gateway/security/privacy_policy.py
 - [[dot-is_service_allowed()]] - code - gateway/security/privacy_policy.py
 - [[dot-should_alert()]] - code - gateway/security/privacy_policy.py
 - [[dot-should_audit()]] - code - gateway/security/privacy_policy.py
@@ -44,7 +44,7 @@ members: 66
 - [[dot-test_should_not_alert_owner()]] - code - gateway/tests/test_privacy_policy.py
 - [[dot-test_should_not_audit_unknown_service()]] - code - gateway/tests/test_privacy_policy.py
 - [[dot-test_unknown_service_allowed_by_default()]] - code - gateway/tests/test_privacy_policy.py
-- [[Enum_8]] - code
+- [[Enum_7]] - code
 - [[Evaluates access control and filters responses per privacy policy.]] - rationale - gateway/security/privacy_policy.py
 - [[Parse from a YAMLdict representation. Example YAML privacy services gmail…]] - rationale - gateway/security/privacy_policy.py
 - [[Privacy Policy Enforcer (v0.9.0 Tranche 2) Admin-defined configuration…]] - rationale - gateway/security/privacy_policy.py
@@ -69,10 +69,10 @@ members: 66
 - [[_make_rbac()]] - code - gateway/tests/test_privacy_policy.py
 - [[default_policy()]] - code - gateway/tests/test_privacy_policy.py
 - [[enforcer()]] - code - gateway/tests/test_privacy_policy.py
-- [[fixture_10]] - code
+- [[fixture_18]] - code
 - [[privacy_policy.py]] - code - gateway/security/privacy_policy.py
 - [[rbac()]] - code - gateway/tests/test_privacy_policy.py
-- [[str_5]] - code
+- [[str_4]] - code
 - [[test_privacy_policy.py]] - code - gateway/tests/test_privacy_policy.py
 
 ## Live Query (requires Dataview plugin)
@@ -83,16 +83,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_socrouter.py]]
+- 7 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY_TeamsConfig]]
 - 3 edges to [[_COMMUNITY_lifespan]]
 - 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_TeamsConfig]]
 - 1 edge to [[_COMMUNITY_test_soc_bots.py]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[test_privacy_policy.py]] - degree 18, connects to 3 communities
 - [[PrivacyPolicyEnforcer]] - degree 23, connects to 2 communities
+- [[test_privacy_policy.py]] - degree 18, connects to 2 communities
 - [[PrivacyPolicy]] - degree 13, connects to 2 communities
 - [[_make_rbac()]] - degree 8, connects to 2 communities
 - [[dot-default()]] - degree 7, connects to 2 communities

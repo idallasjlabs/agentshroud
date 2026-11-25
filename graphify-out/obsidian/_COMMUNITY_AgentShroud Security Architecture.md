@@ -1,20 +1,17 @@
 ---
 type: community
-members: 49
+members: 40
 ---
 
 # AgentShroud Security Architecture
 
-**Members:** 49 nodes
+**Members:** 40 nodes
 
 ## Members
-- [[API Key Security]] - document - docs/security/security-architecture.md
 - [[AgentShroud Security Architecture]] - document - docs/security/security-architecture.md
-- [[Approval Queue Workflow]] - document - docs/security/security-architecture.md
 - [[Architecture Diagram]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Audit Ledger (SQLite)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
 - [[Audit Log Encryption]] - document - docs/security/security-architecture.md
-- [[Authentication and Authorization Framework]] - document - docs/security/security-architecture.md
 - [[Bot Identity Separation (Separate Accounts)]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
 - [[CVE Mitigation Details]] - document - docs/security/security-architecture.md
 - [[CVE-2026-22708 AI Agent Container Escape via Prompt Injection]] - document - docs/security/security-architecture.md
@@ -35,24 +32,18 @@ members: 49
 - [[Executive Summary_2]] - document - docs/security/security-architecture.md
 - [[For Open-Source Contributors]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Known Issues (Accepted Risks)]] - document - docs/security/SECURITY_ARCHITECTURE.md
-- [[Layer 1 Pattern Matching]] - document - docs/security/security-architecture.md
-- [[Layer 2 Unicode Normalization]] - document - docs/security/security-architecture.md
-- [[Layer 3 Multi-Layer Decoding]] - document - docs/security/security-architecture.md
 - [[Limitations & Residual Risks]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Memory Encryption]] - document - docs/security/security-architecture.md
-- [[Multi-Layer Detection Strategy]] - document - docs/security/security-architecture.md
 - [[PII Detection System]] - document - docs/security/security-architecture.md
 - [[PII Sanitization at Gateway Boundary]] - rationale - docs/security/SECURITY_ARCHITECTURE.md
 - [[Principle You Decide What The Agent Sees]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Project Goals]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Prompt Guard System (Module 25)]] - concept - docs/security/security-architecture.md
-- [[Prompt Injection Defense]] - document - docs/security/security-architecture.md
 - [[Quick Reference_1]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Recommended Production Setup]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Security Checklist]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Threat Model_15]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[Transport Encryption]] - document - docs/security/security-architecture.md
-- [[Trust Level Progression]] - document - docs/security/security-architecture.md
 - [[What AgentShroud DOES NOT Protect Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[What AgentShroud Does]] - document - docs/security/SECURITY_ARCHITECTURE.md
 - [[What We're Protecting Against]] - document - docs/security/SECURITY_ARCHITECTURE.md
@@ -67,11 +58,13 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 5 edges to [[_COMMUNITY_AgentShroud v0.8.0 Watchtower Release Plan]]
-- 1 edge to [[_COMMUNITY_Detailed Profiles]]
+- 1 edge to [[_COMMUNITY_Features]]
 - 1 edge to [[_COMMUNITY_Security Controls]]
+- 1 edge to [[_COMMUNITY_Multi-Layer Detection Strategy]]
+- 1 edge to [[_COMMUNITY_Authentication and Authorization Framework]]
 - 1 edge to [[_COMMUNITY_Security Module Inventory]]
 - 1 edge to [[_COMMUNITY_SECURITY_VALUE_PROPOSITION]]
-- 1 edge to [[_COMMUNITY_Part 2 — Red-Team Attack Run (SCRUM-73)]]
+- 1 edge to [[_COMMUNITY_WS-E Security Audit — AgentShroud v1.2 (Gateway + OpenClaw + Hermes)]]
 
 ## Top bridge nodes
-- [[AgentShroud Security Architecture]] - degree 32, connects to 6 communities
+- [[AgentShroud Security Architecture]] - degree 32, connects to 8 communities

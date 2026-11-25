@@ -34,7 +34,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud Data Dictionary]]
-- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)_1]]
+- 1 edge to [[_COMMUNITY_Skill MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]]
 - 1 edge to [[_COMMUNITY_SSH Configuration Guide]]
 - 1 edge to [[_COMMUNITY_Common Operations]]
 - 1 edge to [[_COMMUNITY_Message Composition with MML (MIME Meta Language)]]

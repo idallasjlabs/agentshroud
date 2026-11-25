@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[C. AWS Athena_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[F. IAM Policies_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[General Rules_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Objective_8]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Output Format_76]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Role_165]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
-- [[openclawskillsi-qaSKILL]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[dot-agentsagentsi-qa]] - document - .agents/agents/i-qa.md
+- [[A. AWS Glue Jobs_3]] - document - .agents/agents/i-qa.md
+- [[B. AWS Step Functions_3]] - document - .agents/agents/i-qa.md
+- [[C. AWS Athena_3]] - document - .agents/agents/i-qa.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_3]] - document - .agents/agents/i-qa.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_3]] - document - .agents/agents/i-qa.md
+- [[F. IAM Policies_3]] - document - .agents/agents/i-qa.md
+- [[G. Tailscale  Network_3]] - document - .agents/agents/i-qa.md
+- [[General Rules_3]] - document - .agents/agents/i-qa.md
+- [[H. Service Control for Production Testing_3]] - document - .agents/agents/i-qa.md
+- [[H.1 Pause Glue Jobs Before Testing_3]] - document - .agents/agents/i-qa.md
+- [[H.2 Pause Step Functions Before Testing_3]] - document - .agents/agents/i-qa.md
+- [[H.3 Database Tables for Test Data_3]] - document - .agents/agents/i-qa.md
+- [[H.4 Cleanup Verification Checklist_3]] - document - .agents/agents/i-qa.md
+- [[Objective_9]] - document - .agents/agents/i-qa.md
+- [[Output Format_98]] - document - .agents/agents/i-qa.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_3]] - document - .agents/agents/i-qa.md
+- [[Role_244]] - document - .agents/agents/i-qa.md
+- [[Skill Quality Assurance (QA)_3]] - document - .agents/agents/i-qa.md
+- [[Testing Hierarchy_3]] - document - .agents/agents/i-qa.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,9 +35,3 @@ members: 20
 TABLE source_file, type FROM #community/Production_Testing_Procedures____NO_SEPARATE_DEV_ENVIRONMENT
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
-
-## Top bridge nodes
-- [[Skill Quality Assurance (QA)_2]] - degree 7, connects to 1 community

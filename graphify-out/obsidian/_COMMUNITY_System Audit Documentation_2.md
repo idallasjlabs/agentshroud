@@ -8,10 +8,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_147]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Purpose_149]] - document - docker/config/openclaw/skills/i-sad/README.md
 - [[Related Skills_79]] - document - docker/config/openclaw/skills/i-sad/README.md
 - [[System Audit Documentation_2]] - document - docker/config/openclaw/skills/i-sad/README.md
-- [[Usage_89]] - document - docker/config/openclaw/skills/i-sad/README.md
+- [[Usage_90]] - document - docker/config/openclaw/skills/i-sad/README.md
 - [[openclawskillsi-sadREADME]] - document - docker/config/openclaw/skills/i-sad/README.md
 
 ## Live Query (requires Dataview plugin)

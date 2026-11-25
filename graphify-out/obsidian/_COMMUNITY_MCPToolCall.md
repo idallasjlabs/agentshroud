@@ -1,15 +1,15 @@
 ---
 type: community
-members: 75
+members: 73
 ---
 
 # MCPToolCall
 
-**Members:** 75 nodes
+**Members:** 73 nodes
 
 ## Members
+- [[dot-__post_init__()]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-__post_init__()_1]] - code - gateway/proxy/mcp_proxy.py
-- [[dot-__post_init__()_2]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-_execute_tool_call()]] - code - gateway/proxy/mcp_proxy.py
 - [[dot-test_admin_private_data_not_redacted_for_owner()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_admin_private_data_redacted_for_non_owner()]] - code - gateway/tests/test_mcp_proxy.py
@@ -19,7 +19,6 @@ members: 75
 - [[dot-test_clean_call_allowed()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_clean_result_passes()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_egress_allows_non_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_elevated_agent_can_execute()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_error_result_logged()]] - code - gateway/tests/test_mcp_proxy.py
 - [[dot-test_execute_none_content_result_does_not_unbind()]] - code - gateway/tests/test_mcp_proxy.py
@@ -75,7 +74,6 @@ members: 75
 - [[_ok()]] - code - gateway/tests/test_mcp_policy.py
 - [[asyncio_1]] - code
 - [[check_async()]] - code - gateway/tests/test_mcp_proxy.py
-- [[check_async()_1]] - code - gateway/tests/test_mcp_proxy.py
 - [[emit()]] - code - gateway/tests/test_mcp_proxy.py
 - [[emit()_1]] - code - gateway/tests/test_mcp_proxy.py
 - [[emit()_2]] - code - gateway/tests/test_mcp_proxy.py
@@ -92,19 +90,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 37 edges to [[_COMMUNITY_test_mcp_proxy.py]]
 - 8 edges to [[_COMMUNITY_MCPPolicyEngine]]
 - 4 edges to [[_COMMUNITY_make_proxy]]
 - 4 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 4 edges to [[_COMMUNITY_dot-_extract_egress_targets]]
 - 3 edges to [[_COMMUNITY_TestMCPProxyIntegration]]
-- 3 edges to [[_COMMUNITY_MCPInspector]]
-- 3 edges to [[_COMMUNITY_MCPAuditTrail]]
+- 3 edges to [[_COMMUNITY_ProxyResult]]
+- 2 edges to [[_COMMUNITY_MCPAuditTrail]]
 - 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
+- 1 edge to [[_COMMUNITY_MCPServerConfig]]
 
 ## Top bridge nodes
 - [[MCPToolCall]] - degree 59, connects to 7 communities
 - [[MCPToolResult]] - degree 37, connects to 5 communities
-- [[TestProxyInterception]] - degree 12, connects to 3 communities
-- [[dot-test_egress_allows_non_url_tool_call()]] - degree 9, connects to 3 communities
-- [[dot-test_egress_denied_blocks_url_tool_call()]] - degree 8, connects to 3 communities
+- [[dot-_execute_tool_call()]] - degree 6, connects to 3 communities
+- [[TestProxyInterception]] - degree 12, connects to 2 communities
+- [[dot-test_egress_allows_non_url_tool_call()]] - degree 9, connects to 2 communities

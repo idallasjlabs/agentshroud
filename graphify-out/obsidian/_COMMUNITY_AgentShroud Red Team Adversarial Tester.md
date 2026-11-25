@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Adversary Model]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[AgentShroud Red Team Adversarial Tester]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Attack Phases]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Attack Techniques Reference]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Coverage Requirements_1]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Critical Rules_9]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Infrastructure_8]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Key Principle]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Output_8]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 1 Reconnaissance & Trust Probing]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 2 Prompt Injection]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 3 Indirect Injection]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 4 Data Exfiltration]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 5 Exploitation Chains]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Phase 6 Detection Validation]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Test Structure_5]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[Writing Exploit Tests]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
-- [[hermesskillsi-sec-offenseSKILL]] - document - docker/config/hermes/skills/i-sec-offense/SKILL.md
+- [[dot-agentsagentssec-offense]] - document - .agents/agents/sec-offense.md
+- [[Adversary Model_2]] - document - .agents/agents/sec-offense.md
+- [[AgentShroud Red Team Adversarial Tester_2]] - document - .agents/agents/sec-offense.md
+- [[Attack Phases_2]] - document - .agents/agents/sec-offense.md
+- [[Attack Techniques Reference_2]] - document - .agents/agents/sec-offense.md
+- [[Coverage Requirements_3]] - document - .agents/agents/sec-offense.md
+- [[Critical Rules_19]] - document - .agents/agents/sec-offense.md
+- [[Infrastructure_15]] - document - .agents/agents/sec-offense.md
+- [[Key Principle_2]] - document - .agents/agents/sec-offense.md
+- [[Output_12]] - document - .agents/agents/sec-offense.md
+- [[Phase 1 Reconnaissance & Trust Probing_2]] - document - .agents/agents/sec-offense.md
+- [[Phase 2 Prompt Injection_2]] - document - .agents/agents/sec-offense.md
+- [[Phase 3 Indirect Injection_2]] - document - .agents/agents/sec-offense.md
+- [[Phase 4 Data Exfiltration_2]] - document - .agents/agents/sec-offense.md
+- [[Phase 5 Exploitation Chains_2]] - document - .agents/agents/sec-offense.md
+- [[Phase 6 Detection Validation_2]] - document - .agents/agents/sec-offense.md
+- [[Test Structure_10]] - document - .agents/agents/sec-offense.md
+- [[Writing Exploit Tests_2]] - document - .agents/agents/sec-offense.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -33,9 +33,3 @@ members: 18
 TABLE source_file, type FROM #community/AgentShroud_Red_Team_Adversarial_Tester
 SORT file.name ASC
 ```
-
-## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-bsREADME]]
-
-## Top bridge nodes
-- [[AgentShroud Red Team Adversarial Tester]] - degree 8, connects to 1 community

@@ -1,20 +1,21 @@
 ---
 type: community
-members: 7
+members: 8
 ---
 
 # CI/CD Quality Gates (14 jobs, 6 workflows)
 
-**Members:** 7 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Get Shit Done (GSD) Governance Cadence]] - concept - docs/architecture/agentic-os.md
-- [[CICD Pipeline Integration Guide]] - document - docs/api/integration-guide.md
-- [[CICD Quality Gates (14 jobs, 6 workflows)]] - concept - docs/architecture/agentic-os.md
-- [[Gap Analysis & Recommendations]] - concept - docs/architecture/agentic-os.md
-- [[Git Worktrees (..agentshroud-worktrees)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[GitHub Actions CI (test + lint + security-scan)]] - image - docs/diagrams/images/diagram-06-cicd-deployment.svg
-- [[PrePost Tool Hook Enforcement Layer]] - concept - docs/architecture/agentic-os.md
+- [[3.1 PII Sanitizer — confidence floor]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.2 Egress filter — enforce mode]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.3 form-urlencoded outbound bypass (PR158 regression check)]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.4 KeyVault seeding includes Hermes secrets]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.5 Telegram proxy multi-bot token validation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.6 CONNECT proxy force-blocks api.telegram.org]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[3.7 agentshroud-isolated network isolation]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
+- [[§3 — Bot Pipeline Integrity Checks]] - document - docs/planning/v1.2/blue-team-assessment-v1.2.0.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,3 +23,9 @@ members: 7
 TABLE source_file, type FROM #community/CI/CD_Quality_Gates_14_jobs_6_workflows
 SORT file.name ASC
 ```
+
+## Connections to other communities
+- 1 edge to [[_COMMUNITY_AgentShroud v1.2.0 — Blue Team Security Assessment]]
+
+## Top bridge nodes
+- [[§3 — Bot Pipeline Integrity Checks]] - degree 8, connects to 1 community

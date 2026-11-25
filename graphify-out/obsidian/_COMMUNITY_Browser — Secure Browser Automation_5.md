@@ -37,7 +37,7 @@ members: 30
 - [[Security Guarantees_4]] - document - .agents/agents/browser.md
 - [[Take Screenshot_3]] - document - .agents/agents/browser.md
 - [[Troubleshooting_38]] - document - .agents/agents/browser.md
-- [[Usage_111]] - document - .agents/agents/browser.md
+- [[Usage_112]] - document - .agents/agents/browser.md
 
 ## Live Query (requires Dataview plugin)
 

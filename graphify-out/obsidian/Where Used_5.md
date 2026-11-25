@@ -1,8 +1,8 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
 community: "AgentTarget"
-location: "L19"
+location: "L22"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Where Used
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[Pydantic_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentTarget

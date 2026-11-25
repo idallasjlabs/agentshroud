@@ -14,8 +14,8 @@ members: 10
 - [[Blocked Syscalls (Notable)]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Default Action]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Gateway vs Bot Profile Differences]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Purpose_64]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
-- [[Related Notes_26]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Purpose_65]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
+- [[Related Notes_27]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[Seccomp Profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 - [[seccomp-profiles]] - document - docs/vault/03 - Configuration/seccomp-profiles.md
 

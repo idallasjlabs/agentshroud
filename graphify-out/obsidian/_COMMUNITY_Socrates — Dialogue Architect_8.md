@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Dialogue Adaptations_5]] - document - .github/agents/i-socrates.agent.md
-- [[Dialogue Techniques_5]] - document - .github/agents/i-socrates.agent.md
-- [[EXPERT_5]] - document - .github/agents/i-socrates.agent.md
-- [[ElevenLabs v3 Audio Tags_5]] - document - .github/agents/i-socrates.agent.md
-- [[Episode Closing (Mandatory for OKE)_5]] - document - .github/agents/i-socrates.agent.md
-- [[Expert Persona_5]] - document - .github/agents/i-socrates.agent.md
-- [[HOST_5]] - document - .github/agents/i-socrates.agent.md
-- [[Input Requirements_74]] - document - .github/agents/i-socrates.agent.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_5]] - document - .github/agents/i-socrates.agent.md
-- [[Output Format_116]] - document - .github/agents/i-socrates.agent.md
-- [[Persona_58]] - document - .github/agents/i-socrates.agent.md
-- [[Quality Checklist_66]] - document - .github/agents/i-socrates.agent.md
-- [[Role_282]] - document - .github/agents/i-socrates.agent.md
-- [[Socrates — Dialogue Architect_8]] - document - .github/agents/i-socrates.agent.md
-- [[Speaker Definitions_5]] - document - .github/agents/i-socrates.agent.md
-- [[System Prompt_58]] - document - .github/agents/i-socrates.agent.md
-- [[User Prompt Template_26]] - document - .github/agents/i-socrates.agent.md
-- [[i-socrates.agent]] - document - .github/agents/i-socrates.agent.md
+- [[dot-ompagentssocrates]] - document - .omp/agents/socrates.md
+- [[Dialogue Adaptations_6]] - document - .omp/agents/socrates.md
+- [[Dialogue Techniques_6]] - document - .omp/agents/socrates.md
+- [[EXPERT_6]] - document - .omp/agents/socrates.md
+- [[ElevenLabs v3 Audio Tags_6]] - document - .omp/agents/socrates.md
+- [[Episode Closing (Mandatory for OKE)_6]] - document - .omp/agents/socrates.md
+- [[Expert Persona_6]] - document - .omp/agents/socrates.md
+- [[HOST_6]] - document - .omp/agents/socrates.md
+- [[Input Requirements_75]] - document - .omp/agents/socrates.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_6]] - document - .omp/agents/socrates.md
+- [[Output Format_117]] - document - .omp/agents/socrates.md
+- [[Persona_59]] - document - .omp/agents/socrates.md
+- [[Quality Checklist_67]] - document - .omp/agents/socrates.md
+- [[Role_283]] - document - .omp/agents/socrates.md
+- [[Socrates — Dialogue Architect_9]] - document - .omp/agents/socrates.md
+- [[Speaker Definitions_6]] - document - .omp/agents/socrates.md
+- [[System Prompt_59]] - document - .omp/agents/socrates.md
+- [[User Prompt Template_27]] - document - .omp/agents/socrates.md
 
 ## Live Query (requires Dataview plugin)
 

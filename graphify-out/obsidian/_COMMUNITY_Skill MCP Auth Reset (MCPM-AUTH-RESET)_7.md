@@ -20,8 +20,8 @@ members: 16
 - [[Role_189]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Security Best Practices_8]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_7]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_126]] - document - .agents/skills/i-mcpm-auth-reset/README.md
-- [[Usage_127]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_127]] - document - .agents/skills/i-mcpm-auth-reset/README.md
+- [[Usage_128]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verification Checklist_8]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 - [[When to Invoke_17]] - document - .agents/skills/i-mcpm-auth-reset/SKILL.md
 

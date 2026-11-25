@@ -1,17 +1,17 @@
 ---
 type: community
-members: 36
+members: 46
 ---
 
 # GatewayEmailService
 
-**Members:** 36 nodes
+**Members:** 46 nodes
 
 ## Members
 - [[dot-__enter__()]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-__exit__()]] - code - gateway/tests/test_gateway_email_service.py
-- [[dot-__init__()_72]] - code - gateway/ingest_api/email_service.py
-- [[dot-__init__()_73]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-__init__()_63]] - code - gateway/ingest_api/email_service.py
+- [[dot-__init__()_64]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-build_message()]] - code - gateway/ingest_api/email_service.py
 - [[dot-login()]] - code - gateway/ingest_api/email_service.py
 - [[dot-login()_1]] - code - gateway/tests/test_gateway_email_service.py
@@ -19,6 +19,8 @@ members: 36
 - [[dot-sender()]] - code - gateway/ingest_api/email_service.py
 - [[dot-sendmail()]] - code - gateway/ingest_api/email_service.py
 - [[dot-sendmail()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_default_transport_is_smtp_ssl()]] - code - gateway/tests/test_gateway_email_service.py
+- [[dot-test_email_send_routes_through_injectable_service()]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-test_html_message_has_plain_fallback_then_html()]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-test_plain_message_has_single_plain_part()]] - code - gateway/tests/test_gateway_email_service.py
 - [[dot-test_send_html_uses_html_payload()]] - code - gateway/tests/test_gateway_email_service.py
@@ -28,19 +30,27 @@ members: 36
 - [[Build the MIME message string (multipartalternative). For HTML mail the plain…]] - rationale - gateway/ingest_api/email_service.py
 - [[Gateway owner-comms email service (SCRUM-77). Consolidates the SMTP transport…]] - rationale - gateway/ingest_api/email_service.py
 - [[GatewayEmailService]] - code - gateway/ingest_api/email_service.py
-- [[Protocol_1]] - code
+- [[POST emailsend to the owner sends via forward._email_service — proving the…]] - rationale - gateway/tests/test_gateway_email_service.py
+- [[Protocol]] - code
 - [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - rationale - gateway/tests/test_gateway_email_service.py
 - [[Send one email synchronously. Blocking — call in an executor. Raises the…]] - rationale - gateway/ingest_api/email_service.py
 - [[Sends owner-comms email over an injectable SMTP transport.]] - rationale - gateway/ingest_api/email_service.py
 - [[SmtpLike]] - code - gateway/ingest_api/email_service.py
 - [[TestBuildMessage]] - code - gateway/tests/test_gateway_email_service.py
+- [[TestEndpointUsesService]] - code - gateway/tests/test_gateway_email_service.py
 - [[TestSend]] - code - gateway/tests/test_gateway_email_service.py
 - [[Tests for GatewayEmailService (SCRUM-77). The transport is injected, so no test…]] - rationale - gateway/tests/test_gateway_email_service.py
 - [[The subset of ``smtplib.SMTP_SSL`` the service uses.]] - rationale - gateway/ingest_api/email_service.py
 - [[TransportFactory]] - code
 - [[_FakeSmtp]] - code - gateway/tests/test_gateway_email_service.py
+- [[__enter__()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[__exit__()_1]] - code - gateway/tests/test_gateway_email_service.py
+- [[__init__()_9]] - code - gateway/tests/test_gateway_email_service.py
 - [[_service()]] - code - gateway/tests/test_gateway_email_service.py
 - [[email_service.py]] - code - gateway/ingest_api/email_service.py
+- [[login()]] - code - gateway/tests/test_gateway_email_service.py
+- [[send()_2]] - code - gateway/tests/test_gateway_email_service.py
+- [[sendmail()]] - code - gateway/tests/test_gateway_email_service.py
 - [[test_gateway_email_service.py]] - code - gateway/tests/test_gateway_email_service.py
 - [[test_sender_property()]] - code - gateway/tests/test_gateway_email_service.py
 - [[upstream_to_client()]] - code - gateway/proxy/canvas_proxy.py
@@ -53,14 +63,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_app]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_dot-test_default_transport_is_smtp_ssl]]
+- 3 edges to [[_COMMUNITY_app]]
+- 2 edges to [[_COMMUNITY_AgentTarget]]
 - 1 edge to [[_COMMUNITY_canvas_proxy.py]]
 
 ## Top bridge nodes
 - [[GatewayEmailService]] - degree 11, connects to 1 community
 - [[test_gateway_email_service.py]] - degree 10, connects to 1 community
-- [[TestSend]] - degree 7, connects to 1 community
+- [[dot-test_email_send_routes_through_injectable_service()]] - degree 5, connects to 1 community
 - [[email_service.py]] - degree 5, connects to 1 community
 - [[upstream_to_client()]] - degree 2, connects to 1 community

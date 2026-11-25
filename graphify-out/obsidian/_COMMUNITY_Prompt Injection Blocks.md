@@ -14,7 +14,7 @@ members: 8
 - [[Prompt Injection Blocks_2]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
 - [[Prompt Injection Blocks_1]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
 - [[Prompt Injection in Monitor Mode]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
-- [[Related Notes_49]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
+- [[Related Notes_52]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
 - [[Tool Result Injections]] - document - docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md
 
 ## Live Query (requires Dataview plugin)

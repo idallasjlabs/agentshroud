@@ -36,7 +36,7 @@ members: 30
 - [[Security Guarantees_2]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Take Screenshot_1]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[Troubleshooting_14]] - document - docker/config/hermes/skills/i-browser/SKILL.md
-- [[Usage_99]] - document - docker/config/hermes/skills/i-browser/SKILL.md
+- [[Usage_100]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 - [[hermesskillsi-browserSKILL]] - document - docker/config/hermes/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

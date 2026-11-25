@@ -21,7 +21,7 @@ members: 26
 - [[Quarterly]] - document - docs/reference/PREREQUISITES.md
 - [[Secrets Management_1]] - document - docs/reference/PREREQUISITES.md
 - [[Software]] - document - docs/reference/PREREQUISITES.md
-- [[Verification_3]] - document - docs/reference/PREREQUISITES.md
+- [[Verification_4]] - document - docs/reference/PREREQUISITES.md
 - [[✅ Setup Checklist]] - document - docs/reference/PREREQUISITES.md
 - [[✅ Your Current Setup Status]] - document - docs/reference/PREREQUISITES.md
 - [[🆘 Troubleshooting_1]] - document - docs/reference/PREREQUISITES.md

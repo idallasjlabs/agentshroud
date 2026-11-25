@@ -12,9 +12,9 @@ members: 19
 - [[Incident Response (SKILL)]] - document - .agents/skills/i-production/SKILL.md
 - [[Production Safety Checklist (PROD-SAFETY)]] - document - docker/config/hermes/skills/i-ps/README.md
 - [[Production Safety Checklist (SKILL)]] - document - .agents/skills/i-ps/SKILL.md
-- [[Purpose_66]] - document - .agents/skills/i-qa/README.md
-- [[Purpose_67]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Purpose_68]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Purpose_68]] - document - .agents/skills/i-qa/README.md
+- [[Purpose_69]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Purpose_70]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (QA)]] - document - .agents/skills/i-qa/README.md
 - [[Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[Quality Assurance (README)]] - document - .agents/skills/i-qa/README.md
@@ -22,9 +22,9 @@ members: 19
 - [[Related Skills_19]] - document - .agents/skills/i-qa/README.md
 - [[Related Skills_20]] - document - docker/config/hermes/skills/i-ps/README.md
 - [[Related Skills_21]] - document - docker/config/hermes/skills/i-qa/README.md
-- [[Usage_21]] - document - .agents/skills/i-qa/README.md
-- [[Usage_22]] - document - docker/config/hermes/skills/i-ps/README.md
-- [[Usage_23]] - document - docker/config/hermes/skills/i-qa/README.md
+- [[Usage_22]] - document - .agents/skills/i-qa/README.md
+- [[Usage_23]] - document - docker/config/hermes/skills/i-ps/README.md
+- [[Usage_24]] - document - docker/config/hermes/skills/i-qa/README.md
 - [[hermesskillsi-psREADME]] - document - docker/config/hermes/skills/i-ps/README.md
 - [[hermesskillsi-qaREADME]] - document - docker/config/hermes/skills/i-qa/README.md
 

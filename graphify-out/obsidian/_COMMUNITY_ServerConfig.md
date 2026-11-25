@@ -8,7 +8,7 @@ members: 46
 **Members:** 46 nodes
 
 ## Members
-- [[dot-__init__()_181]] - code - gateway/security/consent_framework.py
+- [[dot-__init__()_184]] - code - gateway/security/consent_framework.py
 - [[dot-add_to_blacklist()]] - code - gateway/security/consent_framework.py
 - [[dot-add_to_whitelist()]] - code - gateway/security/consent_framework.py
 - [[dot-get_blacklist()]] - code - gateway/security/consent_framework.py
@@ -41,7 +41,7 @@ members: 46
 - [[Consent Framework Module - Pre-configuration consent for MCP server…]] - rationale - gateway/security/consent_framework.py
 - [[ConsentDecision]] - code - gateway/security/consent_framework.py
 - [[ConsentFramework]] - code - gateway/security/consent_framework.py
-- [[Exception_17]] - code
+- [[Exception_18]] - code
 - [[ServerConfig]] - code - gateway/security/consent_framework.py
 - [[ShellInjectionDetected]] - code - gateway/security/consent_framework.py
 - [[TestConsentDecision]] - code - gateway/tests/test_consent_framework.py
@@ -51,7 +51,7 @@ members: 46
 - [[Tests for consent_framework module - MCP server config validation. TDD Written…]] - rationale - gateway/tests/test_consent_framework.py
 - [[Validate a server configuration before execution.]] - rationale - gateway/security/consent_framework.py
 - [[consent_framework.py]] - code - gateway/security/consent_framework.py
-- [[fixture_123]] - code
+- [[fixture_118]] - code
 - [[framework()]] - code - gateway/tests/test_consent_framework.py
 - [[test_consent_framework.py]] - code - gateway/tests/test_consent_framework.py
 
@@ -63,13 +63,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
-- 1 edge to [[_COMMUNITY_TrustManager]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 3 edges to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_TestPrivilegeEscalation]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_TestAuth]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
 
 ## Top bridge nodes
+- [[ConsentFramework]] - degree 14, connects to 3 communities
 - [[ConsentDecision]] - degree 10, connects to 3 communities
-- [[ConsentFramework]] - degree 14, connects to 2 communities
 - [[consent_framework.py]] - degree 7, connects to 1 community

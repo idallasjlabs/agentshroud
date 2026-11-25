@@ -15,7 +15,7 @@ members: 9
 - [[Gateway Container (`agentshroud-gateway`)]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[Gateway Internal Layer Order]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[Network Topology]] - document - docs/vault/01 - Architecture/Architecture Overview.md
-- [[Related Notes_31]] - document - docs/vault/01 - Architecture/Architecture Overview.md
+- [[Related Notes_33]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 - [[Summary_20]] - document - docs/vault/01 - Architecture/Architecture Overview.md
 
 ## Live Query (requires Dataview plugin)

@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Git Workflow Guardian (GIT-GUARD)_1]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Purpose_138]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Purpose_140]] - document - docker/config/openclaw/skills/i-gg/README.md
 - [[Related Skills_70]] - document - docker/config/openclaw/skills/i-gg/README.md
-- [[Usage_80]] - document - docker/config/openclaw/skills/i-gg/README.md
+- [[Usage_81]] - document - docker/config/openclaw/skills/i-gg/README.md
 - [[openclawskillsi-ggREADME]] - document - docker/config/openclaw/skills/i-gg/README.md
 
 ## Live Query (requires Dataview plugin)

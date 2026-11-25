@@ -8,7 +8,7 @@ members: 23
 **Members:** 23 nodes
 
 ## Members
-- [[dot-__init__()_202]] - code - gateway/runtime/apple_engine.py
+- [[dot-__init__()_206]] - code - gateway/runtime/apple_engine.py
 - [[dot-_cmd()_2]] - code - gateway/runtime/apple_engine.py
 - [[dot-build()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-compose_down()_3]] - code - gateway/runtime/apple_engine.py
@@ -28,7 +28,7 @@ members: 23
 - [[dot-unpause()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-volume_create()_3]] - code - gateway/runtime/apple_engine.py
 - [[dot-volume_rm()_3]] - code - gateway/runtime/apple_engine.py
-- [[Any_80]] - code
+- [[Any_78]] - code
 - [[AppleContainerEngine]] - code - gateway/runtime/apple_engine.py
 - [[Container engine backed by Apple's `container` CLI.]] - rationale - gateway/runtime/apple_engine.py
 
@@ -40,9 +40,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 5 edges to [[_COMMUNITY_DockerEngine]]
 - 4 edges to [[_COMMUNITY_patch]]
-- 3 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 3 edges to [[_COMMUNITY_ContainerEngine]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
 
 ## Top bridge nodes
 - [[AppleContainerEngine]] - degree 31, connects to 3 communities

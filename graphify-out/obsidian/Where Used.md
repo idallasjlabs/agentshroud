@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/presidio-analyzer.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Presidio Analyzer"
-location: "L56"
+community: "fastapi.md"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Presidio_Analyzer
+  - community/fastapimd
 ---
 
 # Where Used
 
 ## Connections
-- [[Presidio Analyzer]] - `contains` [EXTRACTED]
+- [[FastAPI_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Presidio_Analyzer
+#graphify/document #graphify/EXTRACTED #community/fastapimd

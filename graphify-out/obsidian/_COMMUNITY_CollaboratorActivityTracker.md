@@ -45,11 +45,12 @@ SORT file.name ASC
 - 7 edges to [[_COMMUNITY_test_collaborator_tracker.py]]
 - 5 edges to [[_COMMUNITY_test_lifespan_prune.py]]
 - 4 edges to [[_COMMUNITY_dot-record_activity]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
 
 ## Top bridge nodes
-- [[CollaboratorActivityTracker]] - degree 28, connects to 5 communities
+- [[CollaboratorActivityTracker]] - degree 28, connects to 6 communities
 - [[TestTrackerGetHealth]] - degree 5, connects to 1 community
 - [[test_fixture_uid_writes_blocked()]] - degree 3, connects to 1 community
 - [[test_owner_display_name_overrides_pipe()]] - degree 3, connects to 1 community

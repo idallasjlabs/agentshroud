@@ -17,7 +17,7 @@ members: 21
 - [[Contact_1]] - document - docs/project/legal/TRADEMARK.md
 - [[Elevator pitch_1]] - document - BRAND.md
 - [[Key Messaging_1]] - document - BRAND.md
-- [[License_5]] - document - BRAND.md
+- [[License_6]] - document - BRAND.md
 - [[Logo Usage_2]] - document - BRAND.md
 - [[One-liner_1]] - document - BRAND.md
 - [[Social Handles_1]] - document - BRAND.md

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "soc/models.py"
 location: "L238"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/soc/modelspy
 ---
 
 # WSEventType
 
 ## Connections
-- [[Enum_39]] - `inherits` [EXTRACTED]
+- [[Enum_38]] - `inherits` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `uses` [INFERRED]
 - [[TestCoerceToWSEvent]] - `uses` [INFERRED]
 - [[TestCoerceToWSEventExtra]] - `uses` [INFERRED]
@@ -21,11 +21,11 @@ tags:
 - [[TestWSEvent]] - `uses` [INFERRED]
 - [[_coerce_to_ws_event()]] - `uses` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
-- [[str_22]] - `inherits` [EXTRACTED]
+- [[str_21]] - `inherits` [EXTRACTED]
 - [[test_soc_edge.py]] - `imports` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[test_soc_websocket.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy
