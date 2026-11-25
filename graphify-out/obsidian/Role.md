@@ -1,28 +1,28 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # Role
 
 ## Connections
-- [[dot-__init__()_2]] - `references` [EXTRACTED]
+- [[dot-__init__()_32]] - `references` [EXTRACTED]
 - [[dot-_build_permission_matrix()]] - `references` [EXTRACTED]
 - [[dot-_build_tool_permissions()]] - `references` [EXTRACTED]
 - [[dot-audit_privilege_change()]] - `references` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `references` [EXTRACTED]
 - [[dot-get_user_role()_2]] - `references` [EXTRACTED]
-- [[dot-get_user_role()]] - `references` [EXTRACTED]
 - [[dot-get_users_by_role()]] - `references` [EXTRACTED]
 - [[dot-is_privilege_escalation()]] - `references` [EXTRACTED]
 - [[dot-set_user_role()]] - `references` [EXTRACTED]
 - [[dot-set_user_role()_1]] - `references` [EXTRACTED]
-- [[Enum]] - `inherits` [EXTRACTED]
+- [[Enum_12]] - `inherits` [EXTRACTED]
 - [[FakeCaller_1]] - `uses` [INFERRED]
 - [[FakeCaller]] - `uses` [INFERRED]
 - [[RBACManager]] - `uses` [INFERRED]
@@ -40,7 +40,7 @@ tags:
 - [[TestSCLCaller]] - `uses` [INFERRED]
 - [[ToolACLEnforcer]] - `uses` [INFERRED]
 - [[User roles in AgentShroud RBAC system. Hierarchy (highest to lowest) OWNER …]] - `rationale_for` [EXTRACTED]
-- [[_FakeRBAC_1]] - `uses` [INFERRED]
+- [[_FakeRBAC_2]] - `uses` [INFERRED]
 - [[_make_m6_caller()]] - `uses` [INFERRED]
 - [[_make_owner_caller()]] - `uses` [INFERRED]
 - [[_make_rbac()]] - `uses` [INFERRED]
@@ -55,7 +55,7 @@ tags:
 - [[set_user_role()]] - `uses` [INFERRED]
 - [[socauth.py]] - `imports` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
-- [[str]] - `inherits` [EXTRACTED]
+- [[str_6]] - `inherits` [EXTRACTED]
 - [[test_e2e.py]] - `imports` [EXTRACTED]
 - [[test_forward_pii_sanitized_and_ledger_entry()]] - `uses` [INFERRED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
@@ -69,4 +69,4 @@ tags:
 - [[test_tool_acl.py]] - `imports` [EXTRACTED]
 - [[tool_acl.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

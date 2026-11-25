@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[dot-agentsagentssocrates]] - document - .agents/agents/socrates.md
-- [[Dialogue Adaptations_1]] - document - .agents/agents/socrates.md
-- [[Dialogue Techniques_1]] - document - .agents/agents/socrates.md
-- [[EXPERT_1]] - document - .agents/agents/socrates.md
-- [[ElevenLabs v3 Audio Tags_1]] - document - .agents/agents/socrates.md
-- [[Episode Closing (Mandatory for OKE)_1]] - document - .agents/agents/socrates.md
-- [[Expert Persona_1]] - document - .agents/agents/socrates.md
-- [[HOST_1]] - document - .agents/agents/socrates.md
-- [[Input Requirements_69]] - document - .agents/agents/socrates.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - document - .agents/agents/socrates.md
-- [[Output Format_111]] - document - .agents/agents/socrates.md
-- [[Persona_53]] - document - .agents/agents/socrates.md
-- [[Quality Checklist_61]] - document - .agents/agents/socrates.md
-- [[Role_272]] - document - .agents/agents/socrates.md
-- [[Socrates — Dialogue Architect_4]] - document - .agents/agents/socrates.md
-- [[Speaker Definitions_1]] - document - .agents/agents/socrates.md
-- [[System Prompt_53]] - document - .agents/agents/socrates.md
-- [[User Prompt Template_21]] - document - .agents/agents/socrates.md
+- [[Dialogue Adaptations_2]] - document - .agents/skills/socrates/SKILL.md
+- [[Dialogue Techniques_2]] - document - .agents/skills/socrates/SKILL.md
+- [[EXPERT_2]] - document - .agents/skills/socrates/SKILL.md
+- [[ElevenLabs v3 Audio Tags_2]] - document - .agents/skills/socrates/SKILL.md
+- [[Episode Closing (Mandatory for OKE)_2]] - document - .agents/skills/socrates/SKILL.md
+- [[Expert Persona_2]] - document - .agents/skills/socrates/SKILL.md
+- [[HOST_2]] - document - .agents/skills/socrates/SKILL.md
+- [[Input Requirements_70]] - document - .agents/skills/socrates/SKILL.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_2]] - document - .agents/skills/socrates/SKILL.md
+- [[Output Format_112]] - document - .agents/skills/socrates/SKILL.md
+- [[Persona_54]] - document - .agents/skills/socrates/SKILL.md
+- [[Quality Checklist_62]] - document - .agents/skills/socrates/SKILL.md
+- [[Role_273]] - document - .agents/skills/socrates/SKILL.md
+- [[Socrates — Dialogue Architect_5]] - document - .agents/skills/socrates/SKILL.md
+- [[Speaker Definitions_2]] - document - .agents/skills/socrates/SKILL.md
+- [[System Prompt_54]] - document - .agents/skills/socrates/SKILL.md
+- [[User Prompt Template_22]] - document - .agents/skills/socrates/SKILL.md
+- [[socratesSKILL]] - document - .agents/skills/socrates/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 

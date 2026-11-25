@@ -46,8 +46,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_prompt_guard.py]]
+- 3 edges to [[_COMMUNITY_PromptGuard]]
 
 ## Top bridge nodes
-- [[TestNewPatternsV080]] - degree 30, connects to 2 communities
+- [[TestNewPatternsV080]] - degree 30, connects to 1 community

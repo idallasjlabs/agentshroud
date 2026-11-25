@@ -1,38 +1,39 @@
 ---
 type: community
-members: 25
+members: 26
 ---
 
 # TestPromptGuard
 
-**Members:** 25 nodes
+**Members:** 26 nodes
 
 ## Members
-- [[dot-test_base64_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_message_not_blocked()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_clean_technical_message()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_dan_jailbreak()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_empty_input()_3]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_ignore_previous_instructions()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_indirect_injection_url()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_instruction_override()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_multilingual_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_prompt_leaking_via_markdown()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_repeated_injection()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_role_reassignment()_2]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_system_prompt_extraction()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_token_smuggling()]] - code - gateway/tests/test_security_audit.py
-- [[dot-test_xml_injection()]] - code - gateway/tests/test_security_audit.py
-- [[Base64 encoded instruction.]] - rationale - gateway/tests/test_security_audit.py
-- [[Injection in another language.]] - rationale - gateway/tests/test_security_audit.py
-- [[Markdown-based injection.]] - rationale - gateway/tests/test_security_audit.py
-- [[Normal messages should pass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Same injection multiple times shouldn't bypass.]] - rationale - gateway/tests/test_security_audit.py
-- [[Technical discussion mentioning 'system' shouldn't trigger.]] - rationale - gateway/tests/test_security_audit.py
-- [[Test prompt injection detection with adversarial payloads.]] - rationale - gateway/tests/test_security_audit.py
-- [[TestPromptGuard_1]] - code - gateway/tests/test_security_audit.py
-- [[Token boundary attack.]] - rationale - gateway/tests/test_security_audit.py
-- [[URL-based indirect injection.]] - rationale - gateway/tests/test_security_audit.py
+- [[dot-__init__()_134]] - code - gateway/security/prompt_guard.py
+- [[dot-setup_method()_23]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_base64_encoded_injection()_2]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_benign_base64()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_clean_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_combined_attack_high_score()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_custom_pattern()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_dan_jailbreak()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_delimiter_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_empty_input()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_forget_everything()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_ignore_instructions()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_indirect_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_new_instructions_override()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_none_input()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_extraction()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_prompt_leak_question()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_role_reassignment()_1]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_rtl_override()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_sanitized_output()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_unicode_zero_width()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_warn_threshold()]] - code - gateway/tests/test_security_hardening.py
+- [[dot-test_xml_tag_injection()]] - code - gateway/tests/test_security_hardening.py
+- [[Args block_threshold Score at or above which input is blocked.…]] - rationale - gateway/security/prompt_guard.py
+- [[PatternRule]] - code - gateway/security/prompt_guard.py
+- [[TestPromptGuard]] - code - gateway/tests/test_security_hardening.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,9 +43,12 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_FileSandbox]]
+- 7 edges to [[_COMMUNITY_PromptGuard]]
+- 2 edges to [[_COMMUNITY_AgentRegistry]]
 
 ## Top bridge nodes
-- [[TestPromptGuard_1]] - degree 19, connects to 3 communities
+- [[TestPromptGuard]] - degree 26, connects to 2 communities
+- [[PatternRule]] - degree 5, connects to 2 communities
+- [[dot-__init__()_134]] - degree 3, connects to 1 community
+- [[dot-test_custom_pattern()]] - degree 3, connects to 1 community
+- [[dot-setup_method()_23]] - degree 2, connects to 1 community

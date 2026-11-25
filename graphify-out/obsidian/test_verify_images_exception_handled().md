@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[_mock_verify()]] - `contains` [EXTRACTED]
 - [[_mock_verify()_1]] - `indirect_call` [INFERRED]
-- [[asyncio_78]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 - [[test_image_verifier.py]] - `contains` [EXTRACTED]
 - [[verify_images()]] - `calls` [EXTRACTED]
 - [[verify_images exception from one task is caught, others continue.]] - `rationale_for` [EXTRACTED]

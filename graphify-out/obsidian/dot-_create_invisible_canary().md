@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/output_canary.py"
 type: "code"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # ._create_invisible_canary()
@@ -16,4 +16,4 @@ tags:
 - [[Create an invisible version of the canary using various techniques. Args…]] - `rationale_for` [EXTRACTED]
 - [[OutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

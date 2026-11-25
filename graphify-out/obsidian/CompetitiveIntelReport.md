@@ -21,7 +21,7 @@ tags:
 - [[dot-source_not_empty()]] - `method` [EXTRACTED]
 - [[dot-verify_integrity()]] - `method` [EXTRACTED]
 - [[dot-verify_report()]] - `references` [EXTRACTED]
-- [[BaseModel_9]] - `inherits` [EXTRACTED]
+- [[BaseModel_10]] - `inherits` [EXTRACTED]
 - [[CitationVerifier]] - `uses` [INFERRED]
 - [[Schema for a Hermes-generated competitive intelligence report. The…]] - `rationale_for` [EXTRACTED]
 - [[TestCompetitiveIntelReportSchema]] - `uses` [INFERRED]

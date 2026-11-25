@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-process_inbound_request()]] - `calls` [EXTRACTED]
 - [[A2AProxy]] - `method` [EXTRACTED]
-- [[Any_88]] - `references` [EXTRACTED]
+- [[Any_90]] - `references` [EXTRACTED]
 - [[Flatten an A2A Message's `parts` array to plain text for PII scanning. Returns…]] - `rationale_for` [EXTRACTED]
 - [[test_extract_text_concatenates_text_parts()]] - `calls` [EXTRACTED]
 - [[test_extract_text_empty_message_returns_empty_string()]] - `calls` [EXTRACTED]

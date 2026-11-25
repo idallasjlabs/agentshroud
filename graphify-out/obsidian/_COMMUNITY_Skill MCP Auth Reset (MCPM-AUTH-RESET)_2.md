@@ -33,7 +33,7 @@ members: 32
 - [[Step 3 Verify Authentication_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Step 4 Restart Claude Code_2]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Troubleshooting_31]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_105]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_106]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verification Checklist_3]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verify Authentication_4]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verify Authentication_5]] - document - docker/config/hermes/skills/i-mcpm-auth-reset/SKILL.md

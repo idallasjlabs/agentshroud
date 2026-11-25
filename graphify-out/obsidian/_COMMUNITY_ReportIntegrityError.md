@@ -8,11 +8,11 @@ members: 11
 **Members:** 11 nodes
 
 ## Members
-- [[dot-__init__()_70]] - code - gateway/security/intel_report.py
+- [[dot-__init__()_61]] - code - gateway/security/intel_report.py
 - [[dot-_load_latest_file()]] - code - gateway/security/intel_report.py
 - [[dot-load_latest()]] - code - gateway/security/intel_report.py
 - [[dot-save()_1]] - code - gateway/security/intel_report.py
-- [[Exception_5]] - code
+- [[Exception_3]] - code
 - [[Load the most recently saved report. Args verify If True, raise…]] - rationale - gateway/security/intel_report.py
 - [[Path_23]] - code
 - [[Persist report to the store, linking it to the previous report. Sets…]] - rationale - gateway/security/intel_report.py
@@ -36,4 +36,4 @@ SORT file.name ASC
 - [[dot-load_latest()]] - degree 5, connects to 2 communities
 - [[dot-save()_1]] - degree 5, connects to 2 communities
 - [[dot-_load_latest_file()]] - degree 5, connects to 1 community
-- [[dot-__init__()_70]] - degree 2, connects to 1 community
+- [[dot-__init__()_61]] - degree 2, connects to 1 community

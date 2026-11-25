@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "ContainerEngine"
-location: "L147"
+community: "DockerEngine"
+location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/DockerEngine
 ---
 
 # .compose_up()
 
 ## Connections
-- [[Bring up services from a compose file.]] - `rationale_for` [EXTRACTED]
-- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

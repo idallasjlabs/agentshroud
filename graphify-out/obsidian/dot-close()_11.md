@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/store.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "EdgeStore"
-location: "L126"
+community: "_patch_http_connection"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/_patch_http_connection
 ---
 
 # .close()
 
 ## Connections
-- [[EdgeStore]] - `method` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/_patch_http_connection

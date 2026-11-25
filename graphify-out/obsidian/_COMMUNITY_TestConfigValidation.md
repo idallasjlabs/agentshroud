@@ -12,13 +12,13 @@ members: 11
 - [[dot-test_invalid_router_url_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_invalid_source_rejected()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_invalid_target_url_rejected()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_openclaw_patch_script_emits_per_chat_group_agents()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_router_url_must_be_localhost_or_openclaw()]] - code - gateway/tests/test_config_validation.py
-- [[dot-test_startup_telegram_calls_use_system_header()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_valid_forward_request()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_valid_router_url_accepted()]] - code - gateway/tests/test_config_validation.py
 - [[GatewayConfig validation behavior.]] - rationale - gateway/tests/test_config_validation.py
-- [[Startup notification Telegram calls should be marked as system-originated.]] - rationale - gateway/tests/test_config_validation.py
 - [[TestConfigValidation]] - code - gateway/tests/test_config_validation.py
+- [[apply-patches.js must create per-chat group-{chatId} agents for the approval…]] - rationale - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,17 +28,16 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_GatewayConfig]]
+- 5 edges to [[_COMMUNITY_ingest_apiconfig.py]]
 - 4 edges to [[_COMMUNITY_AgentTarget]]
-- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
 - 1 edge to [[_COMMUNITY_dot-test_openclaw_patch_script_recovers_corrupt_json]]
 - 1 edge to [[_COMMUNITY_dot-test_openclaw_patch_script_removes_legacy_gateway_model_key]]
 - 1 edge to [[_COMMUNITY_dot-test_openclaw_version_pin_is_consistent_across_bot_images]]
 - 1 edge to [[_COMMUNITY_dot-test_openclaw_patch_script_sets_control_ui_allowed_origins]]
 - 1 edge to [[_COMMUNITY_dot-test_openclaw_patch_script_seeds_group_allowlist]]
 - 1 edge to [[_COMMUNITY_dot-test_openclaw_patch_script_uses_multi_group_allowlist_var]]
-- 1 edge to [[_COMMUNITY_dot-test_openclaw_patch_script_emits_per_chat_group_agents]]
-- 1 edge to [[_COMMUNITY_dot-test_lifespan_uvicorn_warning_filter_drops_invalid_http_noise]]
+- 1 edge to [[_COMMUNITY_lifespan]]
 - 1 edge to [[_COMMUNITY_dot-test_proxy_allowed_network_default_includes_current_subnets]]
 - 1 edge to [[_COMMUNITY_dot-test_lifespan_op_prewarm_guarded_against_pytest]]
 - 1 edge to [[_COMMUNITY_dot-test_startup_wrapper_defaults_openclaw_bind_to_loopback]]
@@ -46,6 +45,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_dot-test_startup_notifications_use_minimal_message_format]]
 - 1 edge to [[_COMMUNITY_dot-test_startup_notifications_wait_for_runtime_readiness]]
 - 1 edge to [[_COMMUNITY_dot-test_startup_online_notice_sent_only_after_readiness_gate]]
+- 1 edge to [[_COMMUNITY_dot-test_startup_telegram_calls_use_system_header]]
 - 1 edge to [[_COMMUNITY_dot-test_hermes_startup_telegram_calls_use_system_header]]
 - 1 edge to [[_COMMUNITY_dot-test_hermes_dockerfile_installs_xxd]]
 - 1 edge to [[_COMMUNITY_dot-test_hermes_openai_api_key_wired_via_secret]]

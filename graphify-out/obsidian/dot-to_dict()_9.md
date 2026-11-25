@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/soc_correlation.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "ingest_api/main.py"
-location: "L44"
+community: "UserSessionManager"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/UserSessionManager
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_69]] - `references` [EXTRACTED]
-- [[CorrelationSummary]] - `method` [EXTRACTED]
+- [[Any_71]] - `references` [EXTRACTED]
+- [[Convert session to dictionary for serialization.]] - `rationale_for` [EXTRACTED]
+- [[UserSession]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

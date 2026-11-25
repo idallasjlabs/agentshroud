@@ -1,60 +1,54 @@
 ---
 type: community
-members: 331
+members: 288
 ---
 
 # ingest_api/main.py
 
-**Members:** 331 nodes
+**Members:** 288 nodes
 
 ## Members
-- [[dot-__init__()_178]] - code - gateway/ingest_api/auth.py
-- [[dot-check()_6]] - code - gateway/ingest_api/auth.py
-- [[dot-to_dict()_9]] - code - gateway/security/soc_correlation.py
 - [[1Password credential proxy (P2 credential isolation). Reads a secret from…]] - rationale - gateway/ingest_api/main.py
 - [[Add a domain to the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[Add an egress allowdeny rule.]] - rationale - gateway/ingest_api/main.py
-- [[Add security headers to all responses (defense-in-depth). Also catches Python…]] - rationale - gateway/ingest_api/main.py
 - [[Alias for Hermes Anthropic SDK's apiv1 preflight path. Some Anthropic SDK…]] - rationale - gateway/ingest_api/main.py
 - [[Alias for hermes v0.16.0+'s OpenAI client. Hermes upgraded to v0.16.0 on…]] - rationale - gateway/ingest_api/main.py
-- [[Any_69]] - code
-- [[Approval modes for rules.]] - rationale - gateway/security/egress_approval.py
-- [[Approval system routes. Human approval system endpoints - approve - Submit…]] - rationale - gateway/ingest_api/routes/approval.py
-- [[ApprovalMode]] - code - gateway/security/egress_approval.py
 - [[Approve an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
-- [[Args max_requests Maximum requests allowed in the time window window_seconds…]] - rationale - gateway/ingest_api/auth.py
 - [[Audit feed for private-data access policy violations.]] - rationale - gateway/ingest_api/main.py
-- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/health.py
+- [[Auth dependency that uses the app state config._3]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[AuthRequired_3]] - code
 - [[AuthRequired_4]] - code
-- [[BaseModel_11]] - code
+- [[BaseModel_12]] - code
 - [[Build compact egress dashboard snapshot for websocketAPI clients.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Build normalized scanner summary for SOCdashboard telemetry.]] - rationale - gateway/ingest_api/main.py
-- [[Build the Telegram bot-token → bot_id registry from configured secrets.]] - rationale - gateway/ingest_api/main.py
 - [[CIS Docker Benchmark checks for this container.]] - rationale - gateway/ingest_api/main.py
 - [[CORS middleware that uses config from app_state]] - rationale - gateway/ingest_api/main.py
-- [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - rationale - gateway/ingest_api/main.py
-- [[Check if client is within rate limit Args client_id Usually client IP address…]] - rationale - gateway/ingest_api/auth.py
 - [[Comprehensive container security profile — runs all applicable checks.]] - rationale - gateway/ingest_api/main.py
 - [[Consolidated SOC report for dashboardSIEM pull workflows.]] - rationale - gateway/ingest_api/main.py
-- [[CorrelationSummary]] - code - gateway/security/soc_correlation.py
-- [[Create authentication dependency callable This is a synchronous wrapper that…]] - rationale - gateway/ingest_api/auth.py
-- [[Cross-signal SOC correlation summary.]] - rationale - gateway/ingest_api/main.py
+- [[Create a short-lived WebSocket-only token.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Dashboard HTML uses data attributes instead of onclick for approvals]] - rationale - gateway/tests/test_dashboard.py
 - [[Dashboard and collaborator routes. Dashboard and activity monitoring endpoints…]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Deny an egress request (oncesessionpermanent).]] - rationale - gateway/ingest_api/main.py
 - [[Discard (keep quarantined) a blocked message after admin review.]] - rationale - gateway/ingest_api/main.py
 - [[Discard a blocked outbound message after admin review.]] - rationale - gateway/ingest_api/main.py
 - [[Enabledisable emergency block-all for outbound egress.]] - rationale - gateway/ingest_api/main.py
 - [[End-to-end integration tests for the full gateway stack. Tests the complete…]] - rationale - gateway/tests/test_e2e.py
-- [[Exception_16]] - code
+- [[Execute SSH command with validation and approval]] - rationale - gateway/ingest_api/main.py
 - [[Export tamper-evident audit events in SOCSIEM formats.]] - rationale - gateway/ingest_api/main.py
-- [[Factory that returns authentication dependency for FastAPI This allows us to…]] - rationale - gateway/ingest_api/auth.py
+- [[Fallback activity entries when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Fallback activity summary when tracker data is unavailableempty.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Fetch one report (metadata + content). Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[Forget this' - permanently delete a ledger entry Implements right to erasure.…_1]] - rationale - gateway/ingest_api/main.py
 - [[Forward content → PII sanitized → ledger entry created → event bus fired.]] - rationale - gateway/tests/test_e2e.py
 - [[Forward without auth returns 401403.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboard includes Content-Security-Policy header]] - rationale - gateway/tests/test_dashboard.py
 - [[GET dashboard with valid cookie auth returns HTML.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboard with valid cookie serves HTML_1]] - rationale - gateway/tests/test_dashboard.py
+- [[GET dashboard without auth returns 403]] - rationale - gateway/tests/test_dashboard.py
 - [[GET dashboard without auth returns 403.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboardstats returns JSON stats]] - rationale - gateway/tests/test_dashboard.py
 - [[GET dashboardstats returns JSON stats.]] - rationale - gateway/tests/test_e2e.py
+- [[GET dashboardstats without auth returns 401]] - rationale - gateway/tests/test_dashboard.py
 - [[GET status returns service info.]] - rationale - gateway/tests/test_e2e.py
 - [[Generate comprehensive security health report.]] - rationale - gateway/ingest_api/main.py
 - [[Get DNS blocklist statistics. Returns current DNS filtering statistics from the…]] - rationale - gateway/ingest_api/main.py
@@ -63,7 +57,8 @@ members: 331
 - [[Get permissions summary for a user (admin+ only).]] - rationale - gateway/ingest_api/main.py
 - [[Get permissions summary for the current user.]] - rationale - gateway/ingest_api/main.py
 - [[HTTP CONNECT proxy traffic statistics. Shows allowedblocked counts and recent…]] - rationale - gateway/ingest_api/main.py
-- [[Health check endpoint for the AgentShroud Gateway]] - rationale - gateway/ingest_api/routes/health.py
+- [[Helper to create a GatewayEvent with current timestamp]] - rationale - gateway/ingest_api/event_bus.py
+- [[JSON stats for dashboard]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[LLMProxy.get_stats]] - code - gateway/proxy/llm_proxy.py
 - [[List all configured agent targets with health status Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[List all security modules and their status.]] - rationale - gateway/ingest_api/main.py
@@ -74,44 +69,46 @@ members: 331
 - [[List quarantined blocked outbound messages for admin review.]] - rationale - gateway/ingest_api/main.py
 - [[List recent egress attempts for dashboardSOC triage.]] - rationale - gateway/ingest_api/main.py
 - [[List report metadata (no content), newest first, optionally by bot. Cross-bot…]] - rationale - gateway/ingest_api/main.py
+- [[Load contributor logs from multiple directories with de-dup by filename.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Log all incoming requests Never logs request bodies (may contain PII).]] - rationale - gateway/ingest_api/main.py
 - [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - rationale - gateway/ingest_api/main.py
 - [[MCP tool result outbound audit endpoint. Receives a tool result from the bot's…]] - rationale - gateway/ingest_api/main.py
 - [[MCPProxyRequest]] - code - gateway/ingest_api/main.py
 - [[MCPResultRequest]] - code - gateway/ingest_api/main.py
-- [[Main Endpoints Integration Tests - P1 Middleware Wiring Tests for main.py…]] - rationale - gateway/tests/test_main_endpoints.py
-- [[Message forwarding routes. Core message forwarding endpoints -…]] - rationale - gateway/ingest_api/routes/forward.py
 - [[OpProxyRequest]] - code - gateway/ingest_api/main.py
+- [[Path_62]] - code
 - [[Persist last scanner result and emit live event-bus telemetry.]] - rationale - gateway/ingest_api/main.py
 - [[Preview egress risk heuristic for domainport combos.]] - rationale - gateway/ingest_api/main.py
 - [[Proxy Anthropic API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
 - [[Proxy Google Gemini API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
-- [[Proxy Telegram Bot API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
 - [[Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…]] - rationale - gateway/ingest_api/main.py
 - [[Proxy native Ollama API calls through security pipeline.]] - rationale - gateway/ingest_api/main.py
 - [[Query SSH audit entries from ledger]] - rationale - gateway/ingest_api/main.py
 - [[Query the data ledger Returns paginated results with optional filters.…]] - rationale - gateway/ingest_api/main.py
-- [[RateLimiter_1]] - code - gateway/ingest_api/auth.py
 - [[Receive structured security alerts from gateway-internal scripts. Called by…]] - rationale - gateway/ingest_api/main.py
 - [[Redirect bare hermes-dashboard to hermes-dashboard so assets resolve.]] - rationale - gateway/ingest_api/main.py
-- [[Reject request bodies larger than 1MB before parsing. Checks Content-Length…]] - rationale - gateway/ingest_api/main.py
 - [[Release a blocked outbound message for adminmanual resend flow.]] - rationale - gateway/ingest_api/main.py
 - [[Release a quarantined message for admin workflow follow-up.]] - rationale - gateway/ingest_api/main.py
 - [[Remove a domain from the local denylist. Authentication required.]] - rationale - gateway/ingest_api/main.py
 - [[Remove an egress rule by domain.]] - rationale - gateway/ingest_api/main.py
-- [[Request_6]] - code
 - [[Request_7]] - code
+- [[Request_8]] - code
 - [[Request body for POST credentialsop-proxy.]] - rationale - gateway/ingest_api/main.py
 - [[Request body for POST mcpproxy — intercept a single MCP tool call.]] - rationale - gateway/ingest_api/main.py
 - [[Request body for POST mcpresult — submit a tool result for outbound audit.]] - rationale - gateway/ingest_api/main.py
+- [[Resolve contributor log directories (ordered, de-duplicated).]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Resolve trusted effective identity and prevent owner spoofing via body.]] - rationale - gateway/ingest_api/main.py
+- [[Response from POST sshwrite_file. success reflects whether the remote write…]] - rationale - gateway/ingest_api/models.py
+- [[Response from SSH command execution]] - rationale - gateway/ingest_api/models.py
 - [[Return LLM proxy statistics.]] - rationale - gateway/ingest_api/main.py
 - [[Return True if the recipient is in the allowlist.]] - rationale - gateway/ingest_api/main.py
 - [[Return a paginated list of blocked domains. Authentication required.]] - rationale - gateway/ingest_api/main.py
+- [[Return a short-lived WS-only auth token for cookie-authenticated sessions.…]] - rationale - gateway/ingest_api/routes/dashboard.py
+- [[Return collaborator data from the shared bot workspace volume. Reads…]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Return current private-data policy configuration and enforcement state.]] - rationale - gateway/ingest_api/main.py
 - [[Return egress rules and emergency-block status.]] - rationale - gateway/ingest_api/main.py
 - [[Return normalized scanner state + latest results for SOCdashboard views.]] - rationale - gateway/ingest_api/main.py
-- [[Return recent Wazuh HIDS alerts with FIM and rootkit summary.]] - rationale - gateway/ingest_api/main.py
+- [[Return recent Falco runtime security alerts with summary.]] - rationale - gateway/ingest_api/main.py
 - [[Return recent security telemetry events with optional filters.]] - rationale - gateway/ingest_api/main.py
 - [[Return scanner result history for SOC timeline views.]] - rationale - gateway/ingest_api/main.py
 - [[Reverse-proxy the Hermes Agent dashboard through the gateway.]] - rationale - gateway/ingest_api/main.py
@@ -122,52 +119,43 @@ members: 331
 - [[Run canary integrity checks.]] - rationale - gateway/ingest_api/main.py
 - [[Run kill switch verification test. Args dry_run If True (default), only…]] - rationale - gateway/ingest_api/main.py
 - [[SOC 2 Trust Service Criteria compliance coverage report. Maps active…]] - rationale - gateway/ingest_api/main.py
-- [[SOC correlation helpers. Builds a compact cross-signal security view by…]] - rationale - gateway/security/soc_correlation.py
+- [[SSHExecResponse]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileResponse]] - code - gateway/ingest_api/models.py
 - [[Scored security health report — grade, per-tool scores, recommendations.…]] - rationale - gateway/ingest_api/main.py
+- [[Serve the dashboard HTML (requires auth via query param or cookie) On first…]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Set a user's role (owner only).]] - rationale - gateway/ingest_api/main.py
-- [[Simple token-bucket rate limiter Limits requests per client IP to prevent…]] - rationale - gateway/ingest_api/auth.py
-- [[Simplified unit tests for main.py to achieve 90% coverage Focuses on easily…]] - rationale - gateway/tests/test_main_simple.py
 - [[Store a report in the gateway-managed multi-bot report store. Body {bot…]] - rationale - gateway/ingest_api/main.py
 - [[Submit SSH command → approval queued.]] - rationale - gateway/tests/test_e2e.py
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - rationale - gateway/ingest_api/main.py
 - [[System Control - Live Dashboard Shows real-time system status with links to…]] - rationale - gateway/ingest_api/main.py
-- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
-- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
-- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
-- [[Test auth dependency with invalid auth scheme]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with invalid token]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with missing Authorization header]] - rationale - gateway/tests/test_auth.py
-- [[Test auth dependency with valid token]] - rationale - gateway/tests/test_auth.py
-- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
-- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
-- [[Test rate limiter allows requests under limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter blocks requests over limit]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter cleans up old requests]] - rationale - gateway/tests/test_auth.py
-- [[Test rate limiter tracks clients separately]] - rationale - gateway/tests/test_auth.py
-- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
-- [[Test that token verification uses constant-time comparison]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with invalid token]] - rationale - gateway/tests/test_auth.py
-- [[Test token verification with valid token]] - rationale - gateway/tests/test_auth.py
-- [[Tests for authentication and rate limiting]] - rationale - gateway/tests/test_auth.py
+- [[Tests for Dashboard endpoints and WebSocket activity feed]] - rationale - gateway/tests/test_dashboard.py
 - [[Trigger an immediate blocklist refresh from upstream adlists. Authentication…]] - rationale - gateway/ingest_api/main.py
 - [[Validate a WebSocket token (single-use, time-limited).]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Validate and normalize agentuser identity used for policy checks.]] - rationale - gateway/ingest_api/main.py
-- [[Verify token using constant-time comparison Uses hmac.compare_digest to prevent…]] - rationale - gateway/ingest_api/auth.py
+- [[WebSocket wsactivity connects and authenticates via scoped WS token]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity receives emitted events]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsactivity rejects bad auth during handshake]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress connects and emits egress snapshot.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward auth_ events for SOC visibility.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward privacy_ events.]] - rationale - gateway/tests/test_dashboard.py
+- [[WebSocket wsegress should forward scanner_result events.]] - rationale - gateway/tests/test_dashboard.py
 - [[WebSocket endpoint for real-time approval notifications Protocol 1. Client…]] - rationale - gateway/ingest_api/routes/approval.py
 - [[WebSocket for real-time activity feed]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[WebSocket stream specialized for egresssecurity dashboard updates.]] - rationale - gateway/ingest_api/routes/dashboard.py
 - [[Write file content to an allowlisted SSH host via structured transport. Unlike…]] - rationale - gateway/ingest_api/main.py
 - [[_active()]] - code - gateway/ingest_api/main.py
-- [[_body_stream()]] - code - gateway/ingest_api/main.py
+- [[_build_activity_entries_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[_build_activity_summary_from_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_build_egress_live_snapshot()]] - code - gateway/ingest_api/routes/dashboard.py
-- [[_build_telegram_token_registry()]] - code - gateway/ingest_api/main.py
 - [[_count_by_status()]] - code - gateway/ingest_api/main.py
+- [[_create_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_do_op_read()]] - code - gateway/ingest_api/main.py
+- [[_execute_and_record()]] - code - gateway/ingest_api/main.py
+- [[_get_recent()]] - code - gateway/tests/test_dashboard.py
 - [[_is_imessage_recipient_allowed()]] - code - gateway/ingest_api/main.py
+- [[_load_contributor_logs()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_normalize_agent_identity()]] - code - gateway/ingest_api/main.py
+- [[_parse_collaborator_log_dirs()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[_record_scanner_result()]] - code - gateway/ingest_api/main.py
 - [[_refresh_session()]] - code - gateway/ingest_api/main.py
 - [[_resolve_effective_agent_id()]] - code - gateway/ingest_api/main.py
@@ -178,25 +166,20 @@ members: 331
 - [[add()]] - code - gateway/ingest_api/main.py
 - [[add_blocked_domain()]] - code - gateway/ingest_api/main.py
 - [[api_route_1]] - code
-- [[approval.py]] - code - gateway/ingest_api/routes/approval.py
 - [[approval_websocket()]] - code - gateway/ingest_api/routes/approval.py
-- [[asyncio_68]] - code
 - [[asyncio_69]] - code
 - [[asyncio_70]] - code
-- [[auth_check()]] - code - gateway/ingest_api/auth.py
-- [[auth_dep()_4]] - code - gateway/ingest_api/routes/health.py
-- [[build_correlation_summary()]] - code - gateway/security/soc_correlation.py
+- [[auth_dep()_4]] - code - gateway/ingest_api/routes/dashboard.py
 - [[container_security_profile()]] - code - gateway/ingest_api/main.py
 - [[cors_middleware()]] - code - gateway/ingest_api/main.py
-- [[create_auth_dependency()]] - code - gateway/ingest_api/auth.py
 - [[create_report()]] - code - gateway/ingest_api/main.py
 - [[dashboard.py]] - code - gateway/ingest_api/routes/dashboard.py
+- [[dashboard_stats()]] - code - gateway/ingest_api/routes/dashboard.py
+- [[dashboard_ws_token()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[delete_1]] - code
 - [[delete_ledger_entry()]] - code - gateway/ingest_api/main.py
-- [[dependency()]] - code - gateway/ingest_api/auth.py
 - [[discard_blocked_message()]] - code - gateway/ingest_api/main.py
 - [[discard_blocked_outbound()]] - code - gateway/ingest_api/main.py
-- [[disconnecting_stream()]] - code - gateway/tests/test_main_simple.py
 - [[egress_add_rule()]] - code - gateway/ingest_api/main.py
 - [[egress_approve()]] - code - gateway/ingest_api/main.py
 - [[egress_deny()]] - code - gateway/ingest_api/main.py
@@ -208,30 +191,26 @@ members: 331
 - [[egress_rules()]] - code - gateway/ingest_api/main.py
 - [[egress_websocket()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[event_bus.py_2]] - code - gateway/ingest_api/event_bus.py
-- [[exception_handler]] - code
-- [[fastapi_4]] - document - docs/vault/05 - Dependencies/fastapi.md
-- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
+- [[falco_alerts()]] - code - gateway/ingest_api/main.py
 - [[full_security_report()]] - code - gateway/ingest_api/main.py
 - [[get_6]] - code
-- [[get_auth_dependency()]] - code - gateway/ingest_api/auth.py
+- [[get_7]] - code
+- [[get_collaborators()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[get_dns_stats()]] - code - gateway/ingest_api/main.py
+- [[get_emergency_status()]] - code - gateway/tests/test_dashboard.py
 - [[get_ledger_entry()]] - code - gateway/ingest_api/main.py
+- [[get_log()]] - code - gateway/tests/test_dashboard.py
 - [[get_my_permissions()]] - code - gateway/ingest_api/main.py
+- [[get_pending_requests()_4]] - code - gateway/tests/test_dashboard.py
 - [[get_report()]] - code - gateway/ingest_api/main.py
 - [[get_soc2_compliance_report()]] - code - gateway/ingest_api/main.py
+- [[get_stats()]] - code - gateway/tests/test_dashboard.py
 - [[get_user_permissions()]] - code - gateway/ingest_api/main.py
-- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
 - [[google_api_proxy()]] - code - gateway/ingest_api/main.py
-- [[health.py]] - code - gateway/ingest_api/routes/health.py
 - [[hermes_dashboard_proxy()]] - code - gateway/ingest_api/main.py
 - [[hermes_dashboard_root()]] - code - gateway/ingest_api/main.py
-- [[ingest_apiauth.py]] - code - gateway/ingest_api/auth.py
 - [[ingest_apimain.py]] - code - gateway/ingest_api/main.py
 - [[killswitch_status()]] - code - gateway/ingest_api/main.py
-- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
-- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
-- [[limit_request_body returns a clean 400 when the client drops mid-upload.…]] - rationale - gateway/tests/test_main_simple.py
-- [[limit_request_body()]] - code - gateway/ingest_api/main.py
 - [[list_agents()_1]] - code - gateway/ingest_api/main.py
 - [[list_blocked_domains()]] - code - gateway/ingest_api/main.py
 - [[list_blocked_message_quarantine()]] - code - gateway/ingest_api/main.py
@@ -244,26 +223,19 @@ members: 331
 - [[llm_openai_chat_alias()]] - code - gateway/ingest_api/main.py
 - [[llm_proxy_stats()]] - code - gateway/ingest_api/main.py
 - [[log_requests()]] - code - gateway/ingest_api/main.py
+- [[make_event()]] - code - gateway/ingest_api/event_bus.py
 - [[mcp_proxy_endpoint()]] - code - gateway/ingest_api/main.py
 - [[mcp_result_endpoint()]] - code - gateway/ingest_api/main.py
 - [[middleware]] - code
-- [[mock_call_next()]] - code - gateway/tests/test_main_simple.py
-- [[mock_call_next()_1]] - code - gateway/tests/test_main_simple.py
-- [[mock_call_next()_2]] - code - gateway/tests/test_main_simple.py
-- [[mock_call_next()_3]] - code - gateway/tests/test_main_simple.py
-- [[mock_call_next()_4]] - code - gateway/tests/test_main_simple.py
-- [[mock_call_next_raises()]] - code - gateway/tests/test_main_simple.py
-- [[mock_call_next_raises()_1]] - code - gateway/tests/test_main_simple.py
 - [[ollama_api_proxy()]] - code - gateway/ingest_api/main.py
 - [[on_event()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[on_event()_1]] - code - gateway/ingest_api/routes/dashboard.py
 - [[op_proxy()]] - code - gateway/ingest_api/main.py
-- [[oversized_stream()]] - code - gateway/tests/test_main_simple.py
-- [[post_6]] - code
+- [[post_7]] - code
 - [[privacy_audit()]] - code - gateway/ingest_api/main.py
 - [[privacy_policy_status()]] - code - gateway/ingest_api/main.py
 - [[proxy_status()]] - code - gateway/ingest_api/main.py
-- [[put_3]] - code
+- [[put_2]] - code
 - [[quarantine_summary()]] - code - gateway/ingest_api/main.py
 - [[query_ledger()]] - code - gateway/ingest_api/main.py
 - [[receive_security_alert()]] - code - gateway/ingest_api/main.py
@@ -278,65 +250,50 @@ members: 331
 - [[run_openscap_scan()]] - code - gateway/ingest_api/main.py
 - [[run_trivy_scan()_2]] - code - gateway/ingest_api/main.py
 - [[scanner_history()]] - code - gateway/ingest_api/main.py
-- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
-- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
-- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is…]] - rationale - gateway/tests/test_main_simple.py
-- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
 - [[security_health_report()]] - code - gateway/ingest_api/main.py
+- [[serve_dashboard()]] - code - gateway/ingest_api/routes/dashboard.py
 - [[set_user_role()_1]] - code - gateway/ingest_api/main.py
 - [[slack_api_proxy()]] - code - gateway/ingest_api/main.py
-- [[small_stream()]] - code - gateway/tests/test_main_simple.py
-- [[soc_correlation()]] - code - gateway/ingest_api/main.py
-- [[soc_correlation.py]] - code - gateway/security/soc_correlation.py
 - [[soc_events()]] - code - gateway/ingest_api/main.py
 - [[soc_export()]] - code - gateway/ingest_api/main.py
 - [[soc_redirect()]] - code - gateway/ingest_api/main.py
 - [[soc_report()]] - code - gateway/ingest_api/main.py
+- [[ssh_exec()]] - code - gateway/ingest_api/main.py
 - [[ssh_history()]] - code - gateway/ingest_api/main.py
 - [[ssh_hosts()]] - code - gateway/ingest_api/main.py
 - [[ssh_write_file()]] - code - gateway/ingest_api/main.py
 - [[system_control()]] - code - gateway/ingest_api/main.py
-- [[telegram_api_proxy()]] - code - gateway/ingest_api/main.py
-- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_auth.py]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_scheme()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_invalid_token()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_missing_header()]] - code - gateway/tests/test_auth.py
-- [[test_auth_dependency_valid_token()]] - code - gateway/tests/test_auth.py
+- [[test_build_activity_entries_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_entries_from_contributor_logs_accepts_non_bullet_and_zulu_time()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_activity_summary_from_contributor_logs_accepts_non_bullet_lines()]] - code - gateway/tests/test_dashboard.py
+- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - code - gateway/tests/test_dashboard.py
+- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard.py]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_has_csp_header()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_requires_auth()]] - code - gateway/tests/test_dashboard.py
 - [[test_dashboard_requires_auth()_1]] - code - gateway/tests/test_e2e.py
 - [[test_dashboard_returns_html()]] - code - gateway/tests/test_e2e.py
+- [[test_dashboard_serves_html()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_endpoint()]] - code - gateway/tests/test_dashboard.py
+- [[test_dashboard_stats_requires_auth()]] - code - gateway/tests/test_dashboard.py
 - [[test_dashboard_stats_returns_json()]] - code - gateway/tests/test_e2e.py
+- [[test_dashboard_xss_prevention()]] - code - gateway/tests/test_dashboard.py
 - [[test_e2e.py]] - code - gateway/tests/test_e2e.py
 - [[test_forward_pii_sanitized_and_ledger_entry()]] - code - gateway/tests/test_e2e.py
-- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
-- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
 - [[test_forward_without_auth_rejected()]] - code - gateway/tests/test_e2e.py
-- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
-- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
-- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
-- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
-- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
-- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
-- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
-- [[test_main_endpoints.py]] - code - gateway/tests/test_main_endpoints.py
-- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
-- [[test_rate_limiter_allows_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_blocks_excess_requests()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_separate_clients()]] - code - gateway/tests/test_auth.py
-- [[test_rate_limiter_window_cleanup()]] - code - gateway/tests/test_auth.py
-- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
-- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
-- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_load_contributor_logs_reads_multiple_dirs_and_dedupes()]] - code - gateway/tests/test_dashboard.py
+- [[test_parse_collaborator_log_dirs_dedupes_and_preserves_order()]] - code - gateway/tests/test_dashboard.py
 - [[test_ssh_submit_queues_approval()]] - code - gateway/tests/test_e2e.py
 - [[test_status_endpoint()]] - code - gateway/tests/test_e2e.py
-- [[test_verify_token_constant_time()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_invalid()]] - code - gateway/tests/test_auth.py
-- [[test_verify_token_valid()]] - code - gateway/tests/test_auth.py
+- [[test_ws_activity_connects()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_receives_events()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_activity_requires_auth()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_connects_and_snapshot()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_auth_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_privacy_event()]] - code - gateway/tests/test_dashboard.py
+- [[test_ws_egress_receives_scanner_event()]] - code - gateway/tests/test_dashboard.py
 - [[verify_killswitch()]] - code - gateway/ingest_api/main.py
-- [[verify_token()]] - code - gateway/ingest_api/auth.py
-- [[wazuh_alerts()]] - code - gateway/ingest_api/main.py
 - [[websocket_7]] - code
 - [[websocket_8]] - code
 
@@ -348,114 +305,83 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 34 edges to [[_COMMUNITY_GatewayConfig]]
-- 27 edges to [[_COMMUNITY_socrouter.py]]
-- 25 edges to [[_COMMUNITY_test_dashboard.py]]
-- 20 edges to [[_COMMUNITY_make_event]]
-- 18 edges to [[_COMMUNITY_email_send]]
-- 15 edges to [[_COMMUNITY_app]]
-- 14 edges to [[_COMMUNITY_lifespan.py]]
-- 9 edges to [[_COMMUNITY_AgentTarget]]
-- 8 edges to [[_COMMUNITY_hermes_dashboard_ws_proxy]]
-- 6 edges to [[_COMMUNITY_ApprovalRequest]]
-- 6 edges to [[_COMMUNITY_test_security.py]]
-- 5 edges to [[_COMMUNITY_decide_approval]]
+- 25 edges to [[_COMMUNITY_AgentTarget]]
+- 17 edges to [[_COMMUNITY_EventBus]]
+- 15 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 15 edges to [[_COMMUNITY_fastapi]]
+- 13 edges to [[_COMMUNITY_socrouter.py]]
+- 12 edges to [[_COMMUNITY_app]]
+- 7 edges to [[_COMMUNITY_RBACConfig]]
+- 7 edges to [[_COMMUNITY_AlertTelegramRelay]]
+- 5 edges to [[_COMMUNITY_ApprovalMode]]
+- 5 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
 - 4 edges to [[_COMMUNITY_MCPToolCall]]
-- 4 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 4 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 4 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 4 edges to [[_COMMUNITY_wazuh_client.py]]
-- 4 edges to [[_COMMUNITY_api.py]]
+- 4 edges to [[_COMMUNITY_deep_security_test]]
+- 4 edges to [[_COMMUNITY_BotConfig]]
+- 4 edges to [[_COMMUNITY_generate_summary]]
+- 4 edges to [[_COMMUNITY_test_edge_pipeline.py]]
+- 4 edges to [[_COMMUNITY_hermes_dashboard_ws_proxy]]
+- 3 edges to [[_COMMUNITY_ApprovalRequest]]
+- 3 edges to [[_COMMUNITY_middleware.py]]
+- 3 edges to [[_COMMUNITY_SSHProxy]]
+- 3 edges to [[_COMMUNITY_TrustLevel]]
 - 3 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY__wrap_response]]
-- 3 edges to [[_COMMUNITY_StatusResponse]]
-- 3 edges to [[_COMMUNITY_TrustManager]]
-- 3 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 3 edges to [[_COMMUNITY_dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message]]
-- 3 edges to [[_COMMUNITY_egress_approval.py]]
-- 3 edges to [[_COMMUNITY_deep_security_test]]
-- 3 edges to [[_COMMUNITY_TestTelegramTokenRegistryRebuildOnMiss]]
+- 3 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 3 edges to [[_COMMUNITY__coerce_to_ws_event]]
 - 3 edges to [[_COMMUNITY__is_op_reference_allowed]]
-- 3 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
-- 3 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
+- 2 edges to [[_COMMUNITY_PIISanitizer]]
 - 2 edges to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 2 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
 - 2 edges to [[_COMMUNITY_test_telegram_replay.py]]
-- 2 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
-- 2 edges to [[_COMMUNITY_AuditExportConfig]]
+- 2 edges to [[_COMMUNITY_test_audit_export.py]]
 - 2 edges to [[_COMMUNITY_FileSandbox]]
-- 2 edges to [[_COMMUNITY_GatewayEmailService]]
-- 2 edges to [[_COMMUNITY_StreamHead]]
-- 2 edges to [[_COMMUNITY_SSHProxy]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
-- 2 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
+- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 2 edges to [[_COMMUNITY_ResourceGuard]]
-- 2 edges to [[_COMMUNITY_EgressScope]]
-- 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 2 edges to [[_COMMUNITY_EgressApprovalQueue]]
 - 2 edges to [[_COMMUNITY_AuditExporter]]
-- 2 edges to [[_COMMUNITY_UserSessionManager]]
-- 2 edges to [[_COMMUNITY_TrustLevel]]
-- 2 edges to [[_COMMUNITY_lifespan]]
-- 2 edges to [[_COMMUNITY_PipelineAction]]
-- 2 edges to [[_COMMUNITY__get_gmail_app_password]]
+- 2 edges to [[_COMMUNITY_TestWebSocketHandshakeAuth]]
+- 2 edges to [[_COMMUNITY_EgressRule]]
+- 2 edges to [[_COMMUNITY_TestManagementWSTokenScoping]]
+- 2 edges to [[_COMMUNITY_ProxyResult]]
+- 2 edges to [[_COMMUNITY_EgressFilter]]
+- 2 edges to [[_COMMUNITY_service.py]]
+- 2 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 2 edges to [[_COMMUNITY_TeamsConfig]]
+- 2 edges to [[_COMMUNITY_test_soc_edge.py]]
 - 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
-- 2 edges to [[_COMMUNITY_management.py]]
-- 2 edges to [[_COMMUNITY_EdgeOAuthService]]
-- 2 edges to [[_COMMUNITY_test_soc_egress_endpoints.py]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
-- 2 edges to [[_COMMUNITY_AlertTelegramRelay]]
-- 2 edges to [[_COMMUNITY_dashboard_endpoints.py]]
-- 2 edges to [[_COMMUNITY_version_routes.py]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalQueue]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
 - 1 edge to [[_COMMUNITY_EgressPolicy]]
 - 1 edge to [[_COMMUNITY_EnvironmentGuard]]
-- 1 edge to [[_COMMUNITY_TestEgressApprovalAPI]]
 - 1 edge to [[_COMMUNITY_ContainerSnapshot]]
-- 1 edge to [[_COMMUNITY_DNSFilterConfig]]
-- 1 edge to [[_COMMUNITY_ContextGuard]]
-- 1 edge to [[_COMMUNITY_MetadataGuard]]
-- 1 edge to [[_COMMUNITY_GitGuard]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_dot-_run_proxy]]
-- 1 edge to [[_COMMUNITY_TestAuth]]
-- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_LogSanitizer]]
 - 1 edge to [[_COMMUNITY_TokenValidator]]
-- 1 edge to [[_COMMUNITY_run]]
-- 1 edge to [[_COMMUNITY_patch]]
-- 1 edge to [[_COMMUNITY__FakeWSConnect]]
-- 1 edge to [[_COMMUNITY_dot-_handle]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_GitGuard]]
+- 1 edge to [[_COMMUNITY_Session]]
+- 1 edge to [[_COMMUNITY_SlackAPIProxy]]
+- 1 edge to [[_COMMUNITY_test_forward_stream.py]]
+- 1 edge to [[_COMMUNITY_SOCWebSocketHandler]]
 - 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
-- 1 edge to [[_COMMUNITY_require_auth]]
-- 1 edge to [[_COMMUNITY_test_api_alerts_endpoint_emits_bus_event]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_dot-test_events_api_envelope_dispatches_handle_event]]
-- 1 edge to [[_COMMUNITY__engine]]
-- 1 edge to [[_COMMUNITY_test_mcp_proxy.py]]
-- 1 edge to [[_COMMUNITY_ProxyResult]]
-- 1 edge to [[_COMMUNITY_test_chat_completions_alias.py]]
-- 1 edge to [[_COMMUNITY_test_v1_models_synthetic.py]]
-- 1 edge to [[_COMMUNITY_test_report_store.py]]
-- 1 edge to [[_COMMUNITY_FastAPI]]
-- 1 edge to [[_COMMUNITY_test_skill_guard.py]]
-- 1 edge to [[_COMMUNITY_test_forward_routing.py]]
-- 1 edge to [[_COMMUNITY_prompt_guard.py]]
+- 1 edge to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 1 edge to [[_COMMUNITY_lifespan]]
 - 1 edge to [[_COMMUNITY_test_edge_service_routes.py]]
-- 1 edge to [[_COMMUNITY_test_docs_accuracy.py]]
-- 1 edge to [[_COMMUNITY_test_intel_endpoint.py]]
-- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY__run_asgi]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_dot-test_events_api_envelope_dispatches_handle_event]]
+- 1 edge to [[_COMMUNITY_management.py]]
+- 1 edge to [[_COMMUNITY_test_report_store.py]]
+- 1 edge to [[_COMMUNITY_test_e2e_proxy.py]]
+- 1 edge to [[_COMMUNITY_EdgeOAuthService]]
+- 1 edge to [[_COMMUNITY_api.py]]
+- 1 edge to [[_COMMUNITY_secrets.py]]
+- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
 - 1 edge to [[_COMMUNITY_test_progressive_lockdown.py]]
-- 1 edge to [[_COMMUNITY_test_edge_fuzz.py]]
-- 1 edge to [[_COMMUNITY_dot-from_source]]
-- 1 edge to [[_COMMUNITY_TestVersionRoutes]]
-- 1 edge to [[_COMMUNITY_detect_runtime]]
 
 ## Top bridge nodes
-- [[ingest_apimain.py]] - degree 195, connects to 58 communities
-- [[fastapi_4]] - degree 32, connects to 20 communities
-- [[forward.py]] - degree 42, connects to 12 communities
-- [[ApprovalMode]] - degree 21, connects to 10 communities
-- [[RateLimiter_1]] - degree 25, connects to 8 communities
+- [[ingest_apimain.py]] - degree 195, connects to 56 communities
+- [[make_event()]] - degree 67, connects to 21 communities
+- [[event_bus.py_2]] - degree 18, connects to 11 communities
+- [[test_e2e.py]] - degree 15, connects to 5 communities
+- [[dashboard.py]] - degree 26, connects to 4 communities

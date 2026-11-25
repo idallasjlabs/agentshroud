@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ToolResultInjectionScanner"
+community: "TestReportAPI"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/TestReportAPI
 ---
 
 # fixture
 
 ## Connections
-- [[scanner()]] - `references` [EXTRACTED]
+- [[dot-client()_4]] - `references` [EXTRACTED]
+- [[store()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/TestReportAPI

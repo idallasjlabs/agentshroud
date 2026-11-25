@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[A. AWS Glue Jobs_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[B. AWS Step Functions_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[C. AWS Athena_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[F. IAM Policies_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[G. Tailscale  Network_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[General Rules_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H. Service Control for Production Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.1 Pause Glue Jobs Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.2 Pause Step Functions Before Testing_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.3 Database Tables for Test Data_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[H.4 Cleanup Verification Checklist_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Objective_7]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Output Format_75]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Role_164]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Skill Quality Assurance (QA)_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[Testing Hierarchy_1]] - document - docker/config/hermes/skills/i-qa/SKILL.md
-- [[hermesskillsi-qaSKILL]] - document - docker/config/hermes/skills/i-qa/SKILL.md
+- [[A. AWS Glue Jobs_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[B. AWS Step Functions_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[C. AWS Athena_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[F. IAM Policies_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[G. Tailscale  Network_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[General Rules_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H. Service Control for Production Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.1 Pause Glue Jobs Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.2 Pause Step Functions Before Testing_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.3 Database Tables for Test Data_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[H.4 Cleanup Verification Checklist_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Objective_8]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Output Format_76]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Role_165]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Skill Quality Assurance (QA)_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[Testing Hierarchy_2]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
+- [[openclawskillsi-qaSKILL]] - document - docker/config/openclaw/skills/i-qa/SKILL.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,7 +37,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_hermesskillsi-crSKILL]]
+- 1 edge to [[_COMMUNITY_openclawskillsi-crSKILL]]
 
 ## Top bridge nodes
-- [[Skill Quality Assurance (QA)_1]] - degree 7, connects to 1 community
+- [[Skill Quality Assurance (QA)_2]] - degree 7, connects to 1 community

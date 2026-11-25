@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L197"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # RedactionDetail
@@ -18,7 +18,7 @@ tags:
 - [[dot-test_process_tool_result_success()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_dict_with_pii()]] - `calls` [EXTRACTED]
 - [[dot-test_sanitize_string_with_pii()]] - `calls` [EXTRACTED]
-- [[BaseModel_5]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[Individual redaction record]] - `rationale_for` [EXTRACTED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[TestMiddlewareIntegration]] - `uses` [INFERRED]
@@ -29,4 +29,4 @@ tags:
 - [[sanitizer.py_2]] - `imports` [EXTRACTED]
 - [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

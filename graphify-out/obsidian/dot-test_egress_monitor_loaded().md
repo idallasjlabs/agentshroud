@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_audit_advanced.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "EnvironmentGuard"
-location: "L597"
+community: "middleware.py"
+location: "L632"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvironmentGuard
+  - community/middlewarepy
 ---
 
 # .test_egress_monitor_loaded()
 
 ## Connections
-- [[Egress monitoring should be available.]] - `rationale_for` [EXTRACTED]
-- [[TestExfiltrationDetection]] - `method` [EXTRACTED]
+- [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

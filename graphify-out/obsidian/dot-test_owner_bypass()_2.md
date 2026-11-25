@@ -12,7 +12,7 @@ tags:
 # .test_owner_bypass()
 
 ## Connections
-- [[TestContextGuard_1]] - `method` [EXTRACTED]
+- [[TestContextGuard]] - `method` [EXTRACTED]
 - [[_FakeRBAC]] - `calls` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 

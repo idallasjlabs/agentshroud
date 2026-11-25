@@ -12,8 +12,8 @@ tags:
 # A2APolicyEngine
 
 ## Connections
-- [[dot-__init__()_222]] - `references` [EXTRACTED]
-- [[dot-__init__()_227]] - `method` [EXTRACTED]
+- [[dot-__init__()_225]] - `references` [EXTRACTED]
+- [[dot-__init__()_189]] - `method` [EXTRACTED]
 - [[dot-_decide()_1]] - `method` [EXTRACTED]
 - [[dot-_tier_for()_1]] - `method` [EXTRACTED]
 - [[dot-enforce()_1]] - `method` [EXTRACTED]

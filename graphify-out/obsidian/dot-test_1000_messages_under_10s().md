@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # .test_1000_messages_under_10s()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Process 1000 mixed messages in under 10 seconds.]] - `rationale_for` [EXTRACTED]
 - [[TestPIISanitizerPerformance]] - `method` [EXTRACTED]
-- [[asyncio_16]] - `references` [EXTRACTED]
+- [[asyncio_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestCheckAll"
+community: "PermissionLevel"
 location: "L436"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckAll
+  - community/PermissionLevel
 ---
 
 # .test_combined_blocks_private_data_parameter()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCheckAll]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckAll
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

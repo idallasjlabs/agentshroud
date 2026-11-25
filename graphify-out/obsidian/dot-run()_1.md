@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: ".test_events_api_envelope_dispatches_handle_event"
-location: "L66"
+community: "SOCWebSocketHandler"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_events_api_envelope_dispatches_handle_event
+  - community/SOCWebSocketHandler
 ---
 
 # .run()
 
 ## Connections
-- [[dot-_connect_and_handle()]] - `calls` [EXTRACTED]
-- [[dot-_get_wss_url()]] - `calls` [EXTRACTED]
-- [[Main reconnect loop. Runs until stop() is called.]] - `rationale_for` [EXTRACTED]
-- [[SlackSocketClient]] - `method` [EXTRACTED]
-- [[compute_backoff()]] - `calls` [EXTRACTED]
+- [[dot-_event_fan_out()]] - `calls` [EXTRACTED]
+- [[dot-_keepalive_loop()]] - `calls` [EXTRACTED]
+- [[Main connection loop.]] - `rationale_for` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

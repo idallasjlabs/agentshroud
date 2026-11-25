@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_differential_pii_detector.py"
+community: "ApprovalRequest"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_differential_pii_detectorpy
+  - community/ApprovalRequest
 ---
 
 # fixture
 
 ## Connections
-- [[default_config()]] - `references` [EXTRACTED]
-- [[detector()]] - `references` [EXTRACTED]
+- [[mock_send_message()]] - `references` [EXTRACTED]
+- [[router()]] - `references` [EXTRACTED]
+- [[router_with_sent()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_differential_pii_detectorpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalRequest

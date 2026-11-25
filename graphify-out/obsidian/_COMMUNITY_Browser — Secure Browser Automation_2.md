@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Browser — Secure Browser Automation_2]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Purpose_134]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Purpose_136]] - document - docker/config/openclaw/skills/i-browser/README.md
 - [[Related Skills_66]] - document - docker/config/openclaw/skills/i-browser/README.md
-- [[Usage_76]] - document - docker/config/openclaw/skills/i-browser/README.md
+- [[Usage_77]] - document - docker/config/openclaw/skills/i-browser/README.md
 - [[openclawskillsi-browserREADME]] - document - docker/config/openclaw/skills/i-browser/README.md
 
 ## Live Query (requires Dataview plugin)

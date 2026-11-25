@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestParanoidConfig"
+community: "_build_image_targets"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParanoidConfig
+  - community/_build_image_targets
 ---
 
 # fixture
 
 ## Connections
-- [[dot-config()_2]] - `references` [EXTRACTED]
-- [[dot-config()_3]] - `references` [EXTRACTED]
-- [[dot-config()_4]] - `references` [EXTRACTED]
+- [[dot-_no_docker()_1]] - `references` [EXTRACTED]
+- [[dot-_no_docker()]] - `references` [EXTRACTED]
+- [[_isolated_alert_state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParanoidConfig
+#graphify/code #graphify/EXTRACTED #community/_build_image_targets

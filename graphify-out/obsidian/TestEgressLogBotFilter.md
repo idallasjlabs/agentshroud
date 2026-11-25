@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_filters_egress_log_by_bot_id()]] - `method` [EXTRACTED]
 - [[SecurityEvent]] - `uses` [INFERRED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[test_soc_bots.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

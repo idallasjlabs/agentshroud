@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "OutboundInfoFilter"
+community: "asyncio"
 location: "L786"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/asyncio
 ---
 
 # TestOutboundFilterResultBinding
@@ -18,7 +18,7 @@ tags:
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[Regression filter_result was possibly-unbound in process_outbound when no…]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[asyncio_34]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 - [[test_pipeline_unit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "code"
-community: "TestRBACConfig"
+community: "RBACConfig"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRBACConfig
+  - community/RBACConfig
 ---
 
 # .test_role_hierarchy_checks()
@@ -15,4 +15,4 @@ tags:
 - [[Test role hierarchy helper methods.]] - `rationale_for` [EXTRACTED]
 - [[TestRBACConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRBACConfig
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

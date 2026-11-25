@@ -15,8 +15,8 @@ tags:
 - [[Default Ports]] - `contains` [EXTRACTED]
 - [[Environment Variables_12]] - `contains` [EXTRACTED]
 - [[Key Class `PortManager`]] - `contains` [EXTRACTED]
-- [[Purpose_75]] - `contains` [EXTRACTED]
-- [[Related Notes_41]] - `contains` [EXTRACTED]
+- [[Purpose_78]] - `contains` [EXTRACTED]
+- [[Related Notes_44]] - `contains` [EXTRACTED]
 - [[port_manager.py]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/port_managerpy

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FalcoAlertWatcher]] - `uses` [INFERRED]
-- [[asyncio_81]] - `references` [EXTRACTED]
+- [[asyncio_82]] - `references` [EXTRACTED]
 - [[counting_poll()]] - `indirect_call` [INFERRED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 

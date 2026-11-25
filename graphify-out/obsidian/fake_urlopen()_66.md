@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_make_update"
-location: "L1121"
+community: "PassthroughPipeline"
+location: "L439"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_update
+  - community/PassthroughPipeline
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_owner_pending_command_shows_pending_active_and_revoked()]] - `contains` [EXTRACTED]
+- [[dot-test_owner_start_uses_local_notice_and_does_not_forward()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_update
+#graphify/code #graphify/EXTRACTED #community/PassthroughPipeline

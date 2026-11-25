@@ -12,7 +12,7 @@ tags:
 # test_group_memory_read()
 
 ## Connections
-- [[__init__()_8]] - `contains` [EXTRACTED]
+- [[__init__()_7]] - `contains` [EXTRACTED]
 - [[get_group_memory()_1]] - `contains` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 

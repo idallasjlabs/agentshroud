@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
 type: "document"
-community: "installer.py"
-location: "L42"
+community: "MCP Proxy Errors"
+location: "L104"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/MCP_Proxy_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors

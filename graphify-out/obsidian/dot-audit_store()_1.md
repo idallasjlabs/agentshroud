@@ -15,6 +15,6 @@ tags:
 - [[AuditStore]] - `calls` [EXTRACTED]
 - [[Create in-memory audit store for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `method` [EXTRACTED]
-- [[fixture_116]] - `references` [EXTRACTED]
+- [[fixture_113]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditStore

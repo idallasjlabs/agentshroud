@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Content hash should be a valid SHA-256 hex digest.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditChainIntegrity]] - `method` [EXTRACTED]
-- [[asyncio_36]] - `references` [EXTRACTED]
+- [[asyncio_38]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

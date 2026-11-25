@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "GroupWorkspaceManager"
+community: "RBACConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupWorkspaceManager
+  - community/RBACConfig
 ---
 
 # group_workspace.py
@@ -24,4 +24,4 @@ tags:
 - [[shared_memory.py]] - `imports_from` [EXTRACTED]
 - [[test_group_workspace_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

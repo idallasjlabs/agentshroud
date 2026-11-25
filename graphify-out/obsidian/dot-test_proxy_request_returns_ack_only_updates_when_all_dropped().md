@@ -16,7 +16,7 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[When all getUpdates items are locally handleddropped, return ack-only…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[fake_forward()]] - `contains` [EXTRACTED]
 - [[fake_forward()_2]] - `indirect_call` [INFERRED]
 - [[fake_start_notice()]] - `indirect_call` [INFERRED]

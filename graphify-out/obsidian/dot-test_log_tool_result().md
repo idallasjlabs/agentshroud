@@ -12,6 +12,6 @@ tags:
 # .test_log_tool_result()
 
 ## Connections
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditTrail

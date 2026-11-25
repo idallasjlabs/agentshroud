@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "rationale"
-community: "wazuh_client.py"
+community: "generate_summary"
 location: "L163"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/generate_summary
 ---
 
 # Filter alerts to rootkit detection events only. Args: alerts: List of parsed…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[get_rootkit_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/rationale #graphify/EXTRACTED #community/generate_summary

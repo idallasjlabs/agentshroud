@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
+source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "GatewayConfig"
-location: "L92"
+community: "ingest_api/config.py"
+location: "L79"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # client()
@@ -17,9 +17,9 @@ tags:
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
 - [[SSHProxy]] - `uses` [INFERRED]
-- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
+- [[Set up app state and provide TestClient.]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_72]] - `references` [EXTRACTED]
-- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
+- [[fixture_77]] - `references` [EXTRACTED]
+- [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GatewayConfig
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

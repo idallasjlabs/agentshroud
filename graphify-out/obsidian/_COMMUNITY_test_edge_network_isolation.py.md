@@ -9,7 +9,7 @@ members: 63
 
 ## Members
 - [[A sequence tagged ``!override`` — replaces instead of merging.]] - rationale - gateway/tests/test_edge_network_isolation.py
-- [[Any_8]] - code
+- [[Any_6]] - code
 - [[IPv4Network]] - code
 - [[Minimal compose merge mappings deep-merge, ``!override`` replaces,…]] - rationale - gateway/tests/test_edge_network_isolation.py
 - [[Node]] - code
@@ -58,10 +58,10 @@ members: 63
 - [[check_issuer_matches()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_proxy_allowlist_excludes_dmz()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[check_serve_config_exposes_only_edge()]] - code - gateway/tests/test_edge_network_isolation.py
-- [[fixture_6]] - code
+- [[fixture_12]] - code
 - [[list]] - code
 - [[mutate()]] - code - gateway/tests/test_edge_network_isolation.py
-- [[parametrize_1]] - code
+- [[parametrize_2]] - code
 - [[service.py reads AGENTSHROUD_EDGE_PKE_FEEDS; without the passthrough the…]] - rationale - gateway/tests/test_edge_network_isolation.py
 - [[test_check_fails_when_control_removed()]] - code - gateway/tests/test_edge_network_isolation.py
 - [[test_dev_and_prod_dmz_subnets_differ()]] - code - gateway/tests/test_edge_network_isolation.py

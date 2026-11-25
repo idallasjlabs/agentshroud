@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "LogSanitizer"
+community: "EnvironmentGuard"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/EnvironmentGuard
 ---
 
 # TestInfoLeakage
@@ -27,4 +27,4 @@ tags:
 - [[TokenValidator]] - `uses` [INFERRED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard

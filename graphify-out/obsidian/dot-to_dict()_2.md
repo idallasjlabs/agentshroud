@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "DelegationPrivilege"
-location: "L73"
+community: "EgressScope"
+location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationPrivilege
+  - community/EgressScope
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Delegation]] - `method` [EXTRACTED]
+- [[EgressScope]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege
+#graphify/code #graphify/EXTRACTED #community/EgressScope

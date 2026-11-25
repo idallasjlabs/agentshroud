@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "web_proxy.py"
+community: "EgressEvent"
 location: "L25"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/web_proxypy
+  - community/EgressEvent
 ---
 
 # EgressChannel
@@ -22,8 +22,8 @@ tags:
 - [[TestSlowDripDetection]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[egress_monitor.py_2]] - `contains` [EXTRACTED]
-- [[str_10]] - `inherits` [EXTRACTED]
+- [[str_7]] - `inherits` [EXTRACTED]
 - [[test_egress_monitor.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/web_proxypy
+#graphify/code #graphify/INFERRED #community/EgressEvent

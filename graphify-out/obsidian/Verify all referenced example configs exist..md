@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_config_validation.py"
 type: "rationale"
-community: "lifespan"
+community: "TestParanoidConfig"
 location: "L791"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/TestParanoidConfig
 ---
 
 # Verify all referenced example configs exist.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAllExampleConfigsExist]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespan
+#graphify/rationale #graphify/EXTRACTED #community/TestParanoidConfig

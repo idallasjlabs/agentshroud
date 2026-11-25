@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/delegation.py"
+source_file: "gateway/security/cron_state_monitor.py"
 type: "code"
-community: "DelegationPrivilege"
-location: "L103"
+community: "CronStateMonitor"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationPrivilege
+  - community/CronStateMonitor
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_load()]] - `calls` [EXTRACTED]
-- [[DelegationManager]] - `method` [EXTRACTED]
+- [[CronStateMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege
+#graphify/code #graphify/EXTRACTED #community/CronStateMonitor

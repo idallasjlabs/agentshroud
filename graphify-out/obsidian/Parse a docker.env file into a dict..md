@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "._run_and_read"
+community: "ApprovalQueueConfig (5)"
 location: "L29"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # Parse a docker/.env file into a dict.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_read_env()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_run_and_read
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "MCPServerConfig"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/MCPServerConfig
 ---
 
 # ConnectionPool
 
 ## Connections
-- [[dot-__init__()_62]] - `calls` [EXTRACTED]
-- [[dot-__init__()_60]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `calls` [EXTRACTED]
+- [[dot-__init__()_69]] - `method` [EXTRACTED]
 - [[dot-get_or_create()]] - `method` [EXTRACTED]
 - [[dot-remove()]] - `method` [EXTRACTED]
 - [[dot-stop_all()]] - `method` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[mcp_proxy.py_2]] - `contains` [EXTRACTED]
 - [[test_mcp_proxy_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

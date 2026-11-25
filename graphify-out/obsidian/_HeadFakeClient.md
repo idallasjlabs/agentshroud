@@ -12,9 +12,9 @@ tags:
 # _HeadFakeClient
 
 ## Connections
-- [[dot-__aenter__()_4]] - `method` [EXTRACTED]
-- [[dot-__aexit__()_4]] - `method` [EXTRACTED]
-- [[dot-__init__()_91]] - `method` [EXTRACTED]
+- [[dot-__aenter__()_3]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_3]] - `method` [EXTRACTED]
+- [[dot-__init__()_84]] - `method` [EXTRACTED]
 - [[dot-stream()_1]] - `method` [EXTRACTED]
 - [[test_llm_proxy.py]] - `contains` [EXTRACTED]
 

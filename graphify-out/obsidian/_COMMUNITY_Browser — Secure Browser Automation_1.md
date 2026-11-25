@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Browser — Secure Browser Automation_1]] - document - .agents/skills/browser/README.md
-- [[Purpose_95]] - document - .agents/skills/browser/README.md
+- [[Purpose_97]] - document - .agents/skills/browser/README.md
 - [[Related Skills_27]] - document - .agents/skills/browser/README.md
-- [[Usage_37]] - document - .agents/skills/browser/README.md
+- [[Usage_38]] - document - .agents/skills/browser/README.md
 - [[browserREADME]] - document - .agents/skills/browser/README.md
 
 ## Live Query (requires Dataview plugin)

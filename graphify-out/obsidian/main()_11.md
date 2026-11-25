@@ -1,5 +1,5 @@
 ---
-source_file: ".agents/skills/browser/scripts/browse.py"
+source_file: "docker/config/hermes/skills/i-browser/scripts/browse.py"
 type: "code"
 community: "SecureBrowser"
 location: "L409"
@@ -12,8 +12,8 @@ tags:
 # main()
 
 ## Connections
-- [[CLI interface for SecureBrowser]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser]] - `calls` [EXTRACTED]
-- [[browserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[CLI interface for SecureBrowser_1]] - `rationale_for` [EXTRACTED]
+- [[SecureBrowser_1]] - `calls` [EXTRACTED]
+- [[hermesskillsi-browserscriptsbrowse.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

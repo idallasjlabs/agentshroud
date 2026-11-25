@@ -8,8 +8,8 @@ members: 27
 **Members:** 27 nodes
 
 ## Members
-- [[dot-__call__()_12]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-__init__()_176]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__call__()_13]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-__init__()_178]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-ok()]] - code - gateway/security/citation_verifier.py
 - [[dot-test_all_unverified_yields_empty_report()]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-test_keeps_verified_drops_unverified()]] - code - gateway/tests/test_intel_endpoint.py
@@ -18,7 +18,7 @@ members: 27
 - [[dot-test_not_ok_without_content()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-test_ok_requires_2xx_and_content()]] - code - gateway/tests/test_citation_verifier.py
 - [[dot-test_persisted_report_is_retrievable_and_chain_valid()]] - code - gateway/tests/test_intel_endpoint.py
-- [[dot-test_requires_auth()_2]] - code - gateway/tests/test_intel_endpoint.py
+- [[dot-test_requires_auth()_3]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-test_too_many_candidate_urls_rejected()]] - code - gateway/tests/test_intel_endpoint.py
 - [[dot-test_too_many_entries_rejected()]] - code - gateway/tests/test_intel_endpoint.py
 - [[A source counts as proven only on a 2xx with non-empty content.]] - rationale - gateway/security/citation_verifier.py
@@ -32,8 +32,8 @@ members: 27
 - [[_FakeFetcher]] - code - gateway/tests/test_intel_endpoint.py
 - [[_draft()]] - code - gateway/tests/test_intel_endpoint.py
 - [[_inject_fetcher()]] - code - gateway/tests/test_intel_endpoint.py
-- [[client()_17]] - code - gateway/tests/test_intel_endpoint.py
-- [[fixture_118]] - code
+- [[client()_18]] - code - gateway/tests/test_intel_endpoint.py
+- [[fixture_116]] - code
 - [[test_intel_endpoint.py]] - code - gateway/tests/test_intel_endpoint.py
 
 ## Live Query (requires Dataview plugin)
@@ -48,9 +48,9 @@ SORT file.name ASC
 - 3 edges to [[_COMMUNITY_make_httpx_fetcher]]
 - 2 edges to [[_COMMUNITY_CompetitiveIntelReport]]
 - 1 edge to [[_COMMUNITY_dot-verify_entry]]
-- 1 edge to [[_COMMUNITY_require_auth]]
+- 1 edge to [[_COMMUNITY_test_runtime_engines.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 - 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
 - [[test_intel_endpoint.py]] - degree 16, connects to 6 communities

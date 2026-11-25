@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: ".test_logging"
+community: "ToolResultSanitizer"
 location: "L306"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_logging
+  - community/ToolResultSanitizer
 ---
 
 # .test_logging()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test that appropriate logging occurs.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[patch_4]] - `references` [EXTRACTED]
+- [[patch_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_logging
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L357"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # .audit_privilege_change()
@@ -18,4 +18,4 @@ tags:
 - [[RBACManager]] - `method` [EXTRACTED]
 - [[Role]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

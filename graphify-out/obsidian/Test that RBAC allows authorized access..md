@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACIntegration"
+community: "RBACConfig"
 location: "L390"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACIntegration
+  - community/RBACConfig
 ---
 
 # Test that RBAC allows authorized access.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rbac_allows_authorized_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACIntegration
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

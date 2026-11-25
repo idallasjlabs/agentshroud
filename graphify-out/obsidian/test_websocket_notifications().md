@@ -17,7 +17,7 @@ tags:
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[Test that approval events are generated for WebSocket notification.]] - `rationale_for` [EXTRACTED]
 - [[ToolRiskConfig]] - `uses` [INFERRED]
-- [[asyncio_48]] - `references` [EXTRACTED]
+- [[asyncio_49]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/INFERRED #community/test_mfa_guardpy

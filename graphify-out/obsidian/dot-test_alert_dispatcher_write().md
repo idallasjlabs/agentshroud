@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[AlertDispatcher]] - `calls` [EXTRACTED]
-- [[TestAuditTrail]] - `method` [EXTRACTED]
+- [[TestAuditTrail_2]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

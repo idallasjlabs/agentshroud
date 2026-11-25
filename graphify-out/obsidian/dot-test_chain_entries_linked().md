@@ -12,6 +12,6 @@ tags:
 # .test_chain_entries_linked()
 
 ## Connections
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditTrail

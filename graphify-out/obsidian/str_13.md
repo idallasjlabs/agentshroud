@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "SubagentMonitor"
+community: "test_e2e_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_e2e_proxypy
 ---
 
 # str
 
 ## Connections
-- [[SubagentEventType]] - `inherits` [EXTRACTED]
+- [[PipelineAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

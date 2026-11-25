@@ -1,30 +1,28 @@
 ---
 type: community
-members: 17
+members: 15
 ---
 
 # clamav_scanner.py
 
-**Members:** 17 nodes
+**Members:** 15 nodes
 
 ## Members
-- [[Configuration]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Environment Variables]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Error Handling]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Function Details]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Key Classes  Functions_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Mode Enforce vs Monitor]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Purpose_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Related_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Responsibilities_2]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[Threat Model]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[clamav_scanner.py_1]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[clamav_scanner.py]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[generate_summary(report)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[parse_clamscan_output(output, returncode)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[run_clamscan(target, recursive, timeout, clamscan_bin, exclude_patterns)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[save_report(report, log_dir)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
-- [[update_virus_db(freshclam_bin, timeout)]] - document - docs/vault/02 - Modules/Security Modules/clamav_scanner.py.md
+- [[dot-test_clamav_binary_not_found()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_run_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_update_db_not_found()]] - code - gateway/tests/test_security_toolchain.py
+- [[Any_89]] - code
+- [[Generate a summary dict suitable for the health report. Args report Parsed…_1]] - rationale - gateway/security/clamav_scanner.py
+- [[Path_76]] - code
+- [[Run ClamAV scan and return parsed results. Args target Directory or file to…]] - rationale - gateway/security/clamav_scanner.py
+- [[Save a ClamAV report to the log directory.]] - rationale - gateway/security/clamav_scanner.py
+- [[TestClamAVRun]] - code - gateway/tests/test_security_toolchain.py
+- [[Update ClamAV virus database using freshclam. Args freshclam_bin Path to…]] - rationale - gateway/security/clamav_scanner.py
+- [[clamav_scanner.py_2]] - code - gateway/security/clamav_scanner.py
+- [[generate_summary()_3]] - code - gateway/security/clamav_scanner.py
+- [[run_clamscan()_1]] - code - gateway/security/clamav_scanner.py
+- [[save_report()_1]] - code - gateway/security/clamav_scanner.py
+- [[update_virus_db()]] - code - gateway/security/clamav_scanner.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -34,7 +32,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Overview]]
+- 6 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 5 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 4 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_run_trivy_scan]]
+- 1 edge to [[_COMMUNITY_dot-_relay]]
+- 1 edge to [[_COMMUNITY_scanner_integration.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 
 ## Top bridge nodes
-- [[clamav_scanner.py]] - degree 2, connects to 1 community
+- [[clamav_scanner.py_2]] - degree 13, connects to 6 communities
+- [[run_clamscan()_1]] - degree 11, connects to 6 communities
+- [[Any_89]] - degree 6, connects to 2 communities
+- [[generate_summary()_3]] - degree 5, connects to 2 communities
+- [[update_virus_db()]] - degree 5, connects to 1 community

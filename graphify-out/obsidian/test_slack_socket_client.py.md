@@ -17,7 +17,7 @@ tags:
 - [[TestSlackSocketClient]] - `contains` [EXTRACTED]
 - [[Tests for SlackSocketClient — gateway-side Slack Socket Mode listener. Verifies…]] - `rationale_for` [EXTRACTED]
 - [[_make_client()]] - `contains` [EXTRACTED]
-- [[asyncio_19]] - `imports` [EXTRACTED]
+- [[asyncio_17]] - `imports` [EXTRACTED]
 - [[compute_backoff()]] - `imports` [EXTRACTED]
 - [[slack_socket_client.py]] - `imports_from` [EXTRACTED]
 

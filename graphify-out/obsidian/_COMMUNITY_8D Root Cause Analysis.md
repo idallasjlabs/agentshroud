@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[8D Root Cause Analysis]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Purpose_47]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Purpose_48]] - document - docker/config/openclaw/skills/i-eightd/README.md
 - [[Related Skills_13]] - document - docker/config/openclaw/skills/i-eightd/README.md
-- [[Usage_14]] - document - docker/config/openclaw/skills/i-eightd/README.md
+- [[Usage_15]] - document - docker/config/openclaw/skills/i-eightd/README.md
 - [[openclawskillsi-eightdREADME]] - document - docker/config/openclaw/skills/i-eightd/README.md
 
 ## Live Query (requires Dataview plugin)

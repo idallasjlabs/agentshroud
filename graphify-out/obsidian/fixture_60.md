@@ -11,6 +11,6 @@ tags:
 # fixture
 
 ## Connections
-- [[mgr()_2]] - `references` [EXTRACTED]
+- [[mgr()_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_session_managerpy

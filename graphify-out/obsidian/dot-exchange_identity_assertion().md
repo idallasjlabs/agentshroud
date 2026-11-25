@@ -2,7 +2,7 @@
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
 community: "GatewayBackedProvider"
-location: "L272"
+location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,7 +12,7 @@ tags:
 # .exchange_identity_assertion()
 
 ## Connections
-- [[Any_22]] - `references` [EXTRACTED]
+- [[Any_15]] - `references` [EXTRACTED]
 - [[GatewayBackedProvider]] - `method` [EXTRACTED]
 - [[OAuthToken]] - `references` [EXTRACTED]
 - [[TokenError]] - `calls` [INFERRED]

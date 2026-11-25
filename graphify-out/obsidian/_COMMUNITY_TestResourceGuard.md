@@ -8,7 +8,7 @@ members: 26
 **Members:** 26 nodes
 
 ## Members
-- [[dot-teardown_method()_7]] - code - gateway/tests/test_resource_guard.py
+- [[dot-teardown_method()_4]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_brief_spike_below_debounce_does_not_alert()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_check_resource_over_limit_blocked()]] - code - gateway/tests/test_resource_guard.py
 - [[dot-test_check_resource_temp_files_limit()]] - code - gateway/tests/test_resource_guard.py
@@ -31,7 +31,7 @@ members: 26
 - [[Test that resource usage resets after time window.]] - rationale - gateway/tests/test_resource_guard.py
 - [[Test that resource usage under limits passes.]] - rationale - gateway/tests/test_resource_guard.py
 - [[TestResourceGuard]] - code - gateway/tests/test_resource_guard.py
-- [[asyncio_72]] - code
+- [[asyncio_71]] - code
 - [[patch_7]] - code
 - [[stop() should cancel background monitor cleanly.]] - rationale - gateway/tests/test_resource_guard.py
 

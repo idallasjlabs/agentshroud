@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-session_manager()]] - `method` [EXTRACTED]
-- [[dot-temp_workspace()_2]] - `method` [EXTRACTED]
+- [[dot-temp_workspace()]] - `method` [EXTRACTED]
 - [[dot-test_conversation_history_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_memory_file_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_owner_access_control()]] - `method` [EXTRACTED]

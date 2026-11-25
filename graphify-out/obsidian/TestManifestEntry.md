@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skills_manifest_sync.py"
 type: "code"
-community: "ManifestEntry"
+community: ".from_source"
 location: "L64"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ManifestEntry
+  - community/from_source
 ---
 
 # TestManifestEntry
@@ -18,4 +18,4 @@ tags:
 - [[ManifestEntry]] - `uses` [INFERRED]
 - [[test_skills_manifest_sync.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ManifestEntry
+#graphify/code #graphify/EXTRACTED #community/from_source

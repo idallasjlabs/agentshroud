@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_http_proxy_coverage.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
+community: "lifespan.py"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/lifespanpy
 ---
 
 # _allowlist_proxy()
@@ -19,4 +19,4 @@ tags:
 - [[test_recent_stats_trimmed_to_100_entries()]] - `calls` [EXTRACTED]
 - [[test_target_without_port_defaults_to_443()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

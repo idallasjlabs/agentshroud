@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "asyncio"
 location: "L212"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/asyncio
 ---
 
 # ContextGuard must run in SecurityPipeline.process_inbound() — A2.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestContextGuardInPipeline]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

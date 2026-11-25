@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "KeyLeakDetector"
+community: "KeyVault"
 location: "L163"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyLeakDetector
+  - community/KeyVault
 ---
 
 # .scan_outbound()
@@ -16,4 +16,4 @@ tags:
 - [[LeakScanResult]] - `calls` [EXTRACTED]
 - [[run()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyLeakDetector
+#graphify/code #graphify/EXTRACTED #community/KeyVault

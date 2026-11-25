@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_send_event()]] - `calls` [EXTRACTED]
-- [[dot-run()_2]] - `calls` [EXTRACTED]
+- [[dot-run()_1]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

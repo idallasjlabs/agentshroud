@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_router_openai_translation.py"
+source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget"
-location: "L129"
+community: "asyncio"
+location: "L268"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/asyncio
 ---
 
 # mock_post()
 
 ## Connections
-- [[_mock_response()]] - `calls` [EXTRACTED]
-- [[test_openai_malformed_response_raises_forward_error()]] - `contains` [EXTRACTED]
+- [[test_forward_uses_chat_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/asyncio

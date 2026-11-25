@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/security/cross_bot_trust_ledger.py"
 type: "code"
 community: "TrustManager"
-location: "L68"
+location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # .__post_init__()
 
 ## Connections
-- [[TrustConfig]] - `method` [EXTRACTED]
+- [[TrustDecayPolicy]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustManager

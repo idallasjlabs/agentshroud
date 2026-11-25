@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "decide_approval"
+community: "installer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/installerpy
 ---
 
 # get
 
 ## Connections
-- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
+- [[check_prerequisites()]] - `references` [EXTRACTED]
+- [[get_runtimes()]] - `references` [EXTRACTED]
+- [[installer_page()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/decide_approval
+#graphify/code #graphify/EXTRACTED #community/installerpy

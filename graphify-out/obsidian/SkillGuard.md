@@ -12,10 +12,10 @@ tags:
 # SkillGuard
 
 ## Connections
-- [[dot-__init__()_221]] - `method` [EXTRACTED]
+- [[dot-__init__()_100]] - `method` [EXTRACTED]
 - [[dot-_line_at()]] - `method` [EXTRACTED]
 - [[dot-_scan_opaque_blobs()]] - `method` [EXTRACTED]
-- [[dot-scan_file()_1]] - `method` [EXTRACTED]
+- [[dot-scan_file()]] - `method` [EXTRACTED]
 - [[dot-scan_skill_tree()]] - `method` [EXTRACTED]
 - [[dot-test_1password_env_dump_flags()]] - `references` [EXTRACTED]
 - [[dot-test_absolute_system_path_write_flags()]] - `references` [EXTRACTED]
@@ -59,7 +59,7 @@ tags:
 - [[_skills_reload_impl()]] - `calls` [EXTRACTED]
 - [[api.py_2]] - `imports` [EXTRACTED]
 - [[guard()_2]] - `uses` [INFERRED]
-- [[main()_37]] - `calls` [EXTRACTED]
+- [[main()_17]] - `calls` [EXTRACTED]
 - [[scan.py]] - `imports` [EXTRACTED]
 - [[skill_guard.py]] - `contains` [EXTRACTED]
 - [[test_skill_guard.py]] - `imports` [EXTRACTED]

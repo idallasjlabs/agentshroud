@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "CredentialInfo"
 location: "L272"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/CredentialInfo
 ---
 
 # .setup_manager_with_credential()
@@ -18,6 +18,6 @@ tags:
 - [[MockValidator]] - `calls` [EXTRACTED]
 - [[Set up manager with a credential that needs rotation.]] - `rationale_for` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `method` [EXTRACTED]
-- [[fixture_13]] - `references` [EXTRACTED]
+- [[fixture_143]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

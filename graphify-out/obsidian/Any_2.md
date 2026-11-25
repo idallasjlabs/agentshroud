@@ -1,24 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/router.py"
+community: "ContextGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/ContextGuard
 ---
 
 # Any
 
 ## Connections
-- [[_deployment_state()]] - `references` [EXTRACTED]
-- [[_edge_snapshot()]] - `references` [EXTRACTED]
-- [[_hosted_edge_rows()]] - `references` [EXTRACTED]
-- [[_hosted_status()]] - `references` [EXTRACTED]
-- [[_log_audit()]] - `references` [EXTRACTED]
-- [[_profile_catalog()]] - `references` [EXTRACTED]
-- [[_run_killswitch()]] - `references` [EXTRACTED]
-- [[_unhooked_hosted_rows()]] - `references` [EXTRACTED]
-- [[auth_ws_token()]] - `references` [EXTRACTED]
+- [[dot-__init__()_2]] - `references` [EXTRACTED]
+- [[dot-get_protection_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

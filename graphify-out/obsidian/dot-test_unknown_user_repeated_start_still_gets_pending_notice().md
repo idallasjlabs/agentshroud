@@ -18,7 +18,7 @@ tags:
 - [[Unknown users should still receive pending notice on repeated start during…]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[fake_owner_notice()_18]] - `contains` [EXTRACTED]
 - [[fake_owner_notice()_4]] - `indirect_call` [INFERRED]
 - [[fake_pending_notice()_2]] - `contains` [EXTRACTED]

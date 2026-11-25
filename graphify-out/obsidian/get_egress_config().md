@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/egress_config.py"
 type: "code"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L358"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # get_egress_config()
 
 ## Connections
-- [[dot-__init__()_172]] - `calls` [EXTRACTED]
+- [[dot-__init__()_220]] - `calls` [EXTRACTED]
 - [[dot-test_config_roundtrip()]] - `calls` [EXTRACTED]
 - [[EgressFilterConfig]] - `references` [EXTRACTED]
 - [[Get the global egress filter configuration.]] - `rationale_for` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_egress_enforce.py]] - `imports` [EXTRACTED]
 - [[update_egress_allowlist()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

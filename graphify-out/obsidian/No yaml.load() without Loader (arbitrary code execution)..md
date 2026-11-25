@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TestDependencySecurity"
+community: "TestHTTPSecurity"
 location: "L643"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDependencySecurity
+  - community/TestHTTPSecurity
 ---
 
 # No yaml.load() without Loader (arbitrary code execution).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_no_yaml_unsafe_load()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDependencySecurity
+#graphify/rationale #graphify/EXTRACTED #community/TestHTTPSecurity

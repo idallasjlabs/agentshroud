@@ -12,7 +12,7 @@ tags:
 # _base_config()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A representative policy two allowlisted servers, one denylisted server, a per-…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[_run()_8]] - `calls` [EXTRACTED]

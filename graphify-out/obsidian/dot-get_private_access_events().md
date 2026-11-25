@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: ".get_private_access_events"
+community: "test_mcp_proxy.py"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_private_access_events
+  - community/test_mcp_proxypy
 ---
 
 # .get_private_access_events()
@@ -16,4 +16,4 @@ tags:
 - [[MCPPermissionManager]] - `method` [EXTRACTED]
 - [[Return recent blocked private-tool attempts for auditing.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_private_access_events
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

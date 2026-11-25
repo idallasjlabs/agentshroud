@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "StatusResponse"
+community: "fastapi.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/fastapimd
 ---
 
 # get
@@ -14,4 +14,4 @@ tags:
 - [[health_check()]] - `references` [EXTRACTED]
 - [[health_check_detail()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StatusResponse
+#graphify/code #graphify/EXTRACTED #community/fastapimd

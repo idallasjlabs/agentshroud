@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "EgressFilter"
+community: "EgressFilterConfig"
 location: "L109"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/EgressFilterConfig
 ---
 
 # TestEgressFilterEnforcement
@@ -19,7 +19,7 @@ tags:
 - [[dot-test_monitor_mode_allows_unknown_domains()]] - `method` [EXTRACTED]
 - [[dot-test_port_filtering()]] - `method` [EXTRACTED]
 - [[dot-test_private_ip_blocking()]] - `method` [EXTRACTED]
-- [[dot-test_url_parsing()]] - `method` [EXTRACTED]
+- [[dot-test_url_parsing()_1]] - `method` [EXTRACTED]
 - [[dot-test_wildcard_allowlist_matching()]] - `method` [EXTRACTED]
 - [[EgressAction]] - `uses` [INFERRED]
 - [[EgressFilter]] - `uses` [INFERRED]
@@ -27,4 +27,4 @@ tags:
 - [[Test EgressFilter with enforcemonitor modes.]] - `rationale_for` [EXTRACTED]
 - [[test_egress_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressFilter
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "TestKeyLeakDetection"
+community: "asyncio"
 location: "L579"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKeyLeakDetection
+  - community/asyncio
 ---
 
 # ._passthrough_pii()
@@ -15,4 +15,4 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestKeyLeakDetection_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKeyLeakDetection
+#graphify/code #graphify/EXTRACTED #community/asyncio

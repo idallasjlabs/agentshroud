@@ -12,7 +12,7 @@ tags:
 # bridge_module()
 
 ## Connections
-- [[fixture_5]] - `references` [EXTRACTED]
+- [[fixture_9]] - `references` [EXTRACTED]
 - [[test_hermes_dashboard_bridge.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestRewriteRequestHeaders

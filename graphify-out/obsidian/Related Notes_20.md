@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/00 - START HERE/Quick Reference.md"
+source_file: "docs/vault/09 - Diagrams/Startup Flow Diagram.md"
 type: "document"
-community: "Quick Reference — AgentShroud"
-location: "L176"
+community: "Startup Flow Diagram"
+location: "L83"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quick_Reference__AgentShroud
+  - community/Startup_Flow_Diagram
 ---
 
 # Related Notes
 
 ## Connections
-- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
+- [[Startup Flow Diagram_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud
+#graphify/document #graphify/EXTRACTED #community/Startup_Flow_Diagram

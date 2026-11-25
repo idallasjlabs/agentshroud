@@ -1,12 +1,12 @@
 ---
 source_file: "dashboard/README.md"
 type: "document"
-community: "Detailed Profiles"
+community: "Features"
 location: "L38"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Detailed_Profiles
+  - community/Features
 ---
 
 # Network Inspector
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Features]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Detailed_Profiles
+#graphify/document #graphify/EXTRACTED #community/Features

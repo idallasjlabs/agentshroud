@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/cross_bot_trust_ledger.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "TrustManager"
-location: "L148"
+community: "TestWebProxySecurityIntegration"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[CrossBotTrustLedger]] - `method` [EXTRACTED]
-- [[TrustDecayPolicy]] - `calls` [EXTRACTED]
+- [[MockEgressEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

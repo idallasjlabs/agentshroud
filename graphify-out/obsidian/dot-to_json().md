@@ -12,7 +12,7 @@ tags:
 # .to_json()
 
 ## Connections
-- [[dot-to_dict()_14]] - `calls` [EXTRACTED]
+- [[dot-to_dict()_13]] - `calls` [EXTRACTED]
 - [[SkillsManifest]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/from_source

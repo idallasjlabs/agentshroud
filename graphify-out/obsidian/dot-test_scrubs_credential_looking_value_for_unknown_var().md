@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_env_guard_class.py"
+community: "TestScrubCommandOutput"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/TestScrubCommandOutput
 ---
 
 # .test_scrubs_credential_looking_value_for_unknown_var()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestScrubCommandOutput]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/TestScrubCommandOutput

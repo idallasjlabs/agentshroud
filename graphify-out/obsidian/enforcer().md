@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[PrivacyPolicyEnforcer]] - `uses` [INFERRED]
-- [[fixture_10]] - `references` [EXTRACTED]
+- [[fixture_18]] - `references` [EXTRACTED]
 - [[test_privacy_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

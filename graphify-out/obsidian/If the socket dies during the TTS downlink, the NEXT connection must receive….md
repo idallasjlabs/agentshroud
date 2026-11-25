@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "_mock_ws"
+community: "asyncio"
 location: "L3455"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # If the socket dies during the TTS downlink, the NEXT connection must receive…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_tts_resume_after_mid_stream_disconnect()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_mock_ws
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

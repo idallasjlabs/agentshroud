@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestAuth"
+community: "Session"
 location: "L420"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/Session
 ---
 
 # .test_session_different_fingerprints()
@@ -16,4 +16,4 @@ tags:
 - [[Session]] - `calls` [EXTRACTED]
 - [[TestAuth]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/Session

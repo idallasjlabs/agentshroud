@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_shared_memory_write_acl.py"
+source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "TeamsConfig"
-location: "L235"
+community: "_sleep"
+location: "L1598"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TeamsConfig
+  - community/_sleep
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_group_write_io_failure_returns_false()]] - `indirect_call` [INFERRED]
-- [[dot-test_user_write_io_failure_returns_false()]] - `indirect_call` [INFERRED]
+- [[dot-test_per_agent_check_error_is_isolated_not_fatal()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TeamsConfig
+#graphify/code #graphify/INFERRED #community/_sleep

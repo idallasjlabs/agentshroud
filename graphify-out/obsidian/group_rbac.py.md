@@ -12,7 +12,7 @@ tags:
 # group_rbac.py
 
 ## Connections
-- [[Enum_30]] - `imports_from` [EXTRACTED]
+- [[Enum_28]] - `imports_from` [EXTRACTED]
 - [[Group-context RBAC — per-member role resolution for Telegram group workspaces.…]] - `rationale_for` [EXTRACTED]
 - [[GroupRole]] - `contains` [EXTRACTED]
 - [[GroupRoleResolver]] - `contains` [EXTRACTED]

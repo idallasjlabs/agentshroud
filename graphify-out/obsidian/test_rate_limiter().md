@@ -12,7 +12,7 @@ tags:
 # test_rate_limiter()
 
 ## Connections
-- [[RateLimiter_1]] - `calls` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
 - [[Test rate limiting behavior]] - `rationale_for` [EXTRACTED]
 - [[test_security.py]] - `contains` [EXTRACTED]
 

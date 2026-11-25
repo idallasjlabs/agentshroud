@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "lifespan.py"
+community: "test_all_modules_enforce.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_all_modules_enforcepy
 ---
 
 # test_all_modules_enforce.py
@@ -53,4 +53,4 @@ tags:
 - [[subagent_monitor.py_2]] - `imports_from` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

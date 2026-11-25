@@ -1,20 +1,20 @@
 ---
 type: community
-members: 129
+members: 131
 ---
 
 # LLMProxy
 
-**Members:** 129 nodes
+**Members:** 131 nodes
 
 ## Members
-- [[dot-__init__()_58]] - code - gateway/proxy/llm_proxy.py
+- [[dot-__init__()_50]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_apply_filters()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_build_timeout_fallback_response()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_emit_failover_notice()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_enforce_tool_acl()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_failover_request()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-_filter_outbound()_1]] - code - gateway/proxy/llm_proxy.py
+- [[dot-_filter_outbound()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_filter_outbound_streaming()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_filter_streaming_event()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_flatten_fieldflare_schema()]] - code - gateway/proxy/llm_proxy.py
@@ -34,12 +34,13 @@ members: 129
 - [[dot-_scan_request_data()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_strip_fieldflare_unsupported_fields()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-_widen_optional_tool_param_types()]] - code - gateway/proxy/llm_proxy.py
-- [[dot-get_stats()_2]] - code - gateway/proxy/llm_proxy.py
+- [[dot-base_url()]] - code - gateway/ingest_api/bot_config.py
+- [[dot-get_stats()_1]] - code - gateway/proxy/llm_proxy.py
 - [[dot-proxy_messages()]] - code - gateway/proxy/llm_proxy.py
 - [[dot-proxy_messages_streaming()]] - code - gateway/proxy/llm_proxy.py
 - [[A Gemma model that is NOT Turbo Fieldflare's exact ID still falls through to…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Add 'null' as an accepted type for every non-required tool parameter, in place.…]] - rationale - gateway/proxy/llm_proxy.py
-- [[Any_25]] - code
+- [[Any_20]] - code
 - [[Apply XML and credential filters to text.]] - rationale - gateway/proxy/llm_proxy.py
 - [[Apply outbound text filters to known streaming response formats. Also enforces…]] - rationale - gateway/proxy/llm_proxy.py
 - [[Attempt a cloud→local failover dispatch. Returns (status, headers, body) from…]] - rationale - gateway/proxy/llm_proxy.py
@@ -47,6 +48,7 @@ members: 129
 - [[BaseException_1]] - code
 - [[Build a structured 503 for an unreachable local backend. Logs one WARNING per…]] - rationale - gateway/proxy/llm_proxy.py
 - [[Build provider-compatible timeout fallback message to avoid silent Telegram…]] - rationale - gateway/proxy/llm_proxy.py
+- [[Compute the bot's internal base URL from hostname and port.]] - rationale - gateway/ingest_api/bot_config.py
 - [[Fieldflare and other no-auth local backends are left untouched.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[Filter buffered SSE-like streaming responses for XMLcredential leaks and…]] - rationale - gateway/proxy/llm_proxy.py
 - [[Filter outbound LLM response for credential leaks and XML.]] - rationale - gateway/proxy/llm_proxy.py
@@ -147,27 +149,26 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 33 edges to [[_COMMUNITY__make_proxy_2]]
-- 26 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 27 edges to [[_COMMUNITY_test_llm_proxy.py]]
+- 14 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 - 12 edges to [[_COMMUNITY_dot-_suppress_qwen3_thinking]]
-- 11 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 - 7 edges to [[_COMMUNITY_ResourceGuard]]
 - 6 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
-- 5 edges to [[_COMMUNITY_is_quota_exhausted]]
+- 4 edges to [[_COMMUNITY_is_overloaded]]
 - 4 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 3 edges to [[_COMMUNITY_test_proxy_gemini_translation_failure_falls_through_gracefully]]
 - 2 edges to [[_COMMUNITY_test_llm_proxy_failover.py]]
 - 2 edges to [[_COMMUNITY_VRAMHeadroomError]]
-- 2 edges to [[_COMMUNITY_is_overloaded]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_StreamHead]]
 - 1 edge to [[_COMMUNITY__FakeStreamClient]]
 - 1 edge to [[_COMMUNITY__FakeStreamResponse]]
 - 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
 
 ## Top bridge nodes
-- [[LLMProxy]] - degree 117, connects to 9 communities
+- [[LLMProxy]] - degree 117, connects to 8 communities
 - [[test_llm_proxy_local_parity.py]] - degree 83, connects to 6 communities
-- [[dot-proxy_messages()]] - degree 29, connects to 5 communities
-- [[_stream()_1]] - degree 15, connects to 5 communities
+- [[dot-proxy_messages()]] - degree 29, connects to 4 communities
+- [[_stream()_1]] - degree 15, connects to 3 communities
 - [[dot-_failover_request()]] - degree 13, connects to 2 communities

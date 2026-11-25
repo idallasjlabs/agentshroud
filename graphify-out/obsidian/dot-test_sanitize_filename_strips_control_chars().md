@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "MetadataGuard"
+community: "TestMetadataGuard"
 location: "L50"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/TestMetadataGuard
 ---
 
 # .test_sanitize_filename_strips_control_chars()
@@ -15,4 +15,4 @@ tags:
 - [[Test that unicode control characters are stripped.]] - `rationale_for` [EXTRACTED]
 - [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

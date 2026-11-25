@@ -15,6 +15,6 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Owner DM message text must reference the originating group chat_id.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestUserSessionManager"
 location: "L40"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestUserSessionManager
 ---
 
 # .session_manager()
@@ -15,6 +15,6 @@ tags:
 - [[Create a session manager with temporary workspace.]] - `rationale_for` [EXTRACTED]
 - [[TestUserSessionManager]] - `method` [EXTRACTED]
 - [[UserSessionManager]] - `calls` [EXTRACTED]
-- [[fixture_125]] - `references` [EXTRACTED]
+- [[fixture_15]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestUserSessionManager

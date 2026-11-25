@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[dot-record()_2]] - `calls` [EXTRACTED]
-- [[Enum_29]] - `inherits` [EXTRACTED]
+- [[Enum_27]] - `inherits` [EXTRACTED]
 - [[module_stats.py]] - `contains` [EXTRACTED]
-- [[str_15]] - `inherits` [EXTRACTED]
+- [[str_11]] - `inherits` [EXTRACTED]
 - [[test_block_rate_computed()]] - `uses` [INFERRED]
 - [[test_empty_module_zero_rate_not_division_error()]] - `uses` [INFERRED]
 - [[test_module_stats.py]] - `imports` [EXTRACTED]

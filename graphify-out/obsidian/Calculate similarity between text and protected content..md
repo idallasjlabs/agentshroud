@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "run"
+community: "ContextGuard"
 location: "L249"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # Calculate similarity between text and protected content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_calculate_similarity()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

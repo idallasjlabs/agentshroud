@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_fixes.py"
+source_file: "gateway/tests/test_mcp_proxy_endpoint.py"
 type: "code"
-community: "GatewayConfig"
-location: "L29"
+community: "lifespan"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/lifespan
 ---
 
 # client()
 
 ## Connections
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_69]] - `references` [EXTRACTED]
+- [[fixture_61]] - `references` [EXTRACTED]
 - [[lifespan()]] - `calls` [INFERRED]
-- [[test_security_fixes.py]] - `contains` [EXTRACTED]
+- [[test_mcp_proxy_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/lifespan

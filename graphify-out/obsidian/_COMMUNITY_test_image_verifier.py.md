@@ -17,7 +17,7 @@ members: 22
 - [[_mock_verify()]] - code - gateway/tests/test_image_verifier.py
 - [[_mock_verify()_1]] - code - gateway/tests/test_image_verifier.py
 - [[_timeout_wait_for()_1]] - code - gateway/tests/test_image_verifier.py
-- [[asyncio_78]] - code
+- [[asyncio_79]] - code
 - [[image_verifier.py]] - code - gateway/security/image_verifier.py
 - [[test_cosign_fails_bad_signature()]] - code - gateway/tests/test_image_verifier.py
 - [[test_cosign_not_found()]] - code - gateway/tests/test_image_verifier.py

@@ -12,8 +12,8 @@ tags:
 # Coverage
 
 ## Connections
-- [[Enum_5]] - `inherits` [EXTRACTED]
-- [[str_2]] - `inherits` [EXTRACTED]
+- [[Enum_4]] - `inherits` [EXTRACTED]
+- [[str_1]] - `inherits` [EXTRACTED]
 - [[triage-cve-mitigations.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

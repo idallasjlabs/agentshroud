@@ -1,13 +1,14 @@
 ---
 type: community
-members: 62
+members: 73
 ---
 
 # test_anthropic_openai_translator.py
 
-**Members:** 62 nodes
+**Members:** 73 nodes
 
 ## Members
+- [[A 429 that escaped the retry loop must trigger local failover.]] - rationale - gateway/tests/test_rate_limit_failover.py
 - [[Anthropic v1messages response → OpenAI v1chatcompletions envelope.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Anthropic Messages API ↔ Ollama OpenAI-compat translator. Pure functions — no…]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[Claude-model-via-OpenAI-path translation. Hermes v0.16.0 routes Claude calls…]] - rationale - gateway/tests/test_claude_via_openai_path.py
@@ -20,6 +21,8 @@ members: 62
 - [[Flatten Anthropic system prompt (string or content-block list) to plain text.]] - rationale - gateway/proxy/anthropic_openai_translator.py
 - [[LLM API Reverse Proxy — intercepts all OpenClaw ↔ (AnthropicOpenAIGoogle)…]] - rationale - gateway/proxy/llm_proxy.py
 - [[OpenAI-compat SSE stream → Anthropic SSE stream translator. Consumes an async…]] - rationale - gateway/proxy/anthropic_openai_sse_translator.py
+- [[Post-retry rate-limit failover. Observed 2026-06-131415 Anthropic returned…]] - rationale - gateway/tests/test_rate_limit_failover.py
+- [[Return (True, anthropic_rate_limitopenai_rate_limit...) for a persistent…]] - rationale - gateway/proxy/llm_quota_detector.py
 - [[Tests for gatewayproxyanthropic_openai_translator.py and…]] - rationale - gateway/tests/test_anthropic_openai_translator.py
 - [[The combined path v1chatcompletions with model=claude- must end up POSTing…]] - rationale - gateway/tests/test_claude_via_openai_path.py
 - [[Tool-call-only SSE stream must produce tool_use at index 0 (no text gap).]] - rationale - gateway/tests/test_anthropic_openai_translator.py
@@ -37,17 +40,25 @@ members: 62
 - [[anthropic_openai_translator.py]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[anthropic_to_openai_request()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[anthropic_to_openai_response()]] - code - gateway/proxy/anthropic_openai_translator.py
-- [[asyncio_18]] - code
+- [[asyncio_15]] - code
+- [[asyncio_16]] - code
 - [[fake_open()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[is_rate_limited_post_retry()]] - code - gateway/proxy/llm_quota_detector.py
 - [[llm_proxy.py]] - code - gateway/proxy/llm_proxy.py
 - [[mock_forward()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[mock_forward()_1]] - code - gateway/tests/test_rate_limit_failover.py
 - [[openai_to_anthropic_request()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[openai_to_anthropic_response()]] - code - gateway/proxy/anthropic_openai_translator.py
 - [[test_anthropic_openai_translator.py]] - code - gateway/tests/test_anthropic_openai_translator.py
 - [[test_anthropic_to_openai_response_envelope()]] - code - gateway/tests/test_claude_via_openai_path.py
 - [[test_claude_via_openai_path.py]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_detector_empty_body_still_fires_as_generic_cloud()]] - code - gateway/tests/test_rate_limit_failover.py
+- [[test_detector_fires_on_plain_429()]] - code - gateway/tests/test_rate_limit_failover.py
+- [[test_detector_skips_non_429()]] - code - gateway/tests/test_rate_limit_failover.py
 - [[test_openai_to_anthropic_request_strips_system_role()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_proxy_failover_on_post_retry_429()]] - code - gateway/tests/test_rate_limit_failover.py
 - [[test_proxy_rewrites_claude_via_openai_path()]] - code - gateway/tests/test_claude_via_openai_path.py
+- [[test_rate_limit_failover.py]] - code - gateway/tests/test_rate_limit_failover.py
 - [[test_sse_translator_basic_text_stream()]] - code - gateway/tests/test_anthropic_openai_translator.py
 - [[test_sse_translator_empty_stream_emits_full_sequence()]] - code - gateway/tests/test_anthropic_openai_translator.py
 - [[test_sse_translator_model_preserved_in_message_start()]] - code - gateway/tests/test_anthropic_openai_translator.py
@@ -79,21 +90,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_LLMProxy]]
+- 14 edges to [[_COMMUNITY_LLMProxy]]
 - 6 edges to [[_COMMUNITY_test_gemini_openai_translator.py]]
-- 4 edges to [[_COMMUNITY_is_quota_exhausted]]
+- 5 edges to [[_COMMUNITY_is_overloaded]]
+- 2 edges to [[_COMMUNITY_test_llm_proxy.py]]
 - 2 edges to [[_COMMUNITY_main.rs]]
-- 1 edge to [[_COMMUNITY_StreamHead]]
-- 1 edge to [[_COMMUNITY_email_send]]
-- 1 edge to [[_COMMUNITY_is_overloaded]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_dot-_suppress_qwen3_thinking]]
 - 1 edge to [[_COMMUNITY_test_proxy_gemini_translation_failure_falls_through_gracefully]]
 - 1 edge to [[_COMMUNITY_test_llm_proxy_failover.py]]
-- 1 edge to [[_COMMUNITY_test_llm_proxy.py]]
 
 ## Top bridge nodes
-- [[llm_proxy.py]] - degree 27, connects to 9 communities
+- [[llm_proxy.py]] - degree 27, connects to 7 communities
+- [[test_rate_limit_failover.py]] - degree 9, connects to 2 communities
+- [[is_rate_limited_post_retry()]] - degree 8, connects to 2 communities
 - [[anthropic_to_openai_request()]] - degree 19, connects to 1 community
 - [[openai_to_anthropic_response()]] - degree 13, connects to 1 community
-- [[anthropic_openai_translator.py]] - degree 12, connects to 1 community
-- [[_collect_sse()]] - degree 9, connects to 1 community

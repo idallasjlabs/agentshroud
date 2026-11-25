@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TrustManager"
+community: "ingest_api/config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/ingest_api/configpy
 ---
 
 # fixture
 
 ## Connections
-- [[hermes_tm()]] - `references` [EXTRACTED]
-- [[ledger()_1]] - `references` [EXTRACTED]
-- [[openclaw_tm()]] - `references` [EXTRACTED]
-- [[policy()]] - `references` [EXTRACTED]
+- [[router()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

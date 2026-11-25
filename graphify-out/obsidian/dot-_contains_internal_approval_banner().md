@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "TestOutboundClassifierHelpers"
+community: "._extract_first_egress_target"
 location: "L2667"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/_extract_first_egress_target
 ---
 
 # ._contains_internal_approval_banner()
@@ -30,4 +30,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/code #graphify/EXTRACTED #community/_extract_first_egress_target

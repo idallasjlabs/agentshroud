@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "TestHTTPSecurity"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TestHTTPSecurity
 ---
 
 # test_security_audit_advanced.py
 
 ## Connections
-- [[TestConcurrency]] - `contains` [EXTRACTED]
+- [[TestConcurrency_1]] - `contains` [EXTRACTED]
 - [[TestDependencySecurity]] - `contains` [EXTRACTED]
 - [[TestDoSPrevention]] - `contains` [EXTRACTED]
 - [[TestExfiltrationDetection]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[TestTimingAttacks]] - `contains` [EXTRACTED]
 - [[TestWebSecurity]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

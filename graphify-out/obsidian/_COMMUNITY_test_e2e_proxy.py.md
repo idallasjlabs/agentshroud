@@ -1,25 +1,26 @@
 ---
 type: community
-members: 85
+members: 89
 ---
 
 # test_e2e_proxy.py
 
-**Members:** 85 nodes
+**Members:** 89 nodes
 
 ## Members
-- [[dot-__init__()_122]] - code - gateway/proxy/sidecar.py
-- [[dot-__init__()_123]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-__init__()_124]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-__init__()_114]] - code - gateway/proxy/sidecar.py
+- [[dot-__init__()_115]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-__init__()_116]] - code - gateway/tests/test_e2e_proxy.py
 - [[dot-forward()]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-get_stats()_9]] - code - gateway/proxy/sidecar.py
-- [[dot-process_inbound()_1]] - code - gateway/tests/test_e2e_proxy.py
-- [[dot-process_outbound()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-get_stats()_10]] - code - gateway/proxy/sidecar.py
+- [[dot-process_inbound()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[dot-process_outbound()_3]] - code - gateway/tests/test_e2e_proxy.py
 - [[dot-scan()_2]] - code - gateway/proxy/sidecar.py
 - [[A pipeline-blocked outbound response must NOT be delivered. Regression test…]] - rationale - gateway/tests/test_e2e_proxy.py
-- [[Any_43]] - code
+- [[Any_44]] - code
 - [[Configure egress filter to block a domain — verify denied.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[E2E Proxy Pipeline Tests — verify security pipeline actually works. These tests…]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[Enum_30]] - code
 - [[Forwarder stub returning a canned bot response body.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[If the outbound pipeline crashes, the bot response must be withheld.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Insert messages, modify a hash — verify chain integrity check fails.]] - rationale - gateway/tests/test_e2e_proxy.py
@@ -27,6 +28,7 @@ members: 85
 - [[Message with both PII and injection — blocked before PII scan.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Mock OpenClaw response containing PII — verify stripped.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[Pipeline stub inbound passes through; outbound behavior injectable.]] - rationale - gateway/tests/test_e2e_proxy.py
+- [[PipelineAction]] - code - gateway/proxy/pipeline.py
 - [[Request to scan a message.]] - rationale - gateway/proxy/sidecar.py
 - [[Response from sidecar scan.]] - rationale - gateway/proxy/sidecar.py
 - [[Scan a message through the security pipeline.]] - rationale - gateway/proxy/sidecar.py
@@ -55,16 +57,18 @@ members: 85
 - [[Verify webhook receiver strips PII.]] - rationale - gateway/tests/test_e2e_proxy.py
 - [[_PassInboundPipeline]] - code - gateway/tests/test_e2e_proxy.py
 - [[_StubForwarder]] - code - gateway/tests/test_e2e_proxy.py
-- [[asyncio_50]] - code
+- [[asyncio_51]] - code
 - [[blocking_outbound()]] - code - gateway/tests/test_e2e_proxy.py
 - [[crashing_outbound()]] - code - gateway/tests/test_e2e_proxy.py
-- [[fixture_88]] - code
+- [[fixture_92]] - code
 - [[forwarder()]] - code - gateway/tests/test_e2e_proxy.py
 - [[pii_config()_1]] - code - gateway/tests/test_e2e_proxy.py
 - [[pipeline()_2]] - code - gateway/tests/test_e2e_proxy.py
+- [[pipeline.py_1]] - code - gateway/proxy/pipeline.py
 - [[prompt_guard()_1]] - code - gateway/tests/test_e2e_proxy.py
-- [[sanitizer()_4]] - code - gateway/tests/test_e2e_proxy.py
+- [[sanitizer()_5]] - code - gateway/tests/test_e2e_proxy.py
 - [[sidecar.py_2]] - code - gateway/proxy/sidecar.py
+- [[str_13]] - code
 - [[test_approval_queue_enforced()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_audit_chain_empty_valid()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_audit_chain_integrity()]] - code - gateway/tests/test_e2e_proxy.py
@@ -92,7 +96,7 @@ members: 85
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_webhook_receiver_processes()]] - code - gateway/tests/test_e2e_proxy.py
 - [[test_webhook_strips_pii()]] - code - gateway/tests/test_e2e_proxy.py
-- [[trust_manager()_3]] - code - gateway/tests/test_e2e_proxy.py
+- [[trust_manager()_4]] - code - gateway/tests/test_e2e_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -102,20 +106,35 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_PipelineAction]]
-- 8 edges to [[_COMMUNITY_lifespan.py]]
-- 7 edges to [[_COMMUNITY_UserSessionManager]]
-- 7 edges to [[_COMMUNITY_HTTPForwarder]]
-- 6 edges to [[_COMMUNITY_TrustManager]]
-- 6 edges to [[_COMMUNITY_EgressFilter]]
-- 5 edges to [[_COMMUNITY_AuditChain]]
-- 2 edges to [[_COMMUNITY_SecurityPipeline]]
+- 10 edges to [[_COMMUNITY_PIISanitizer]]
+- 8 edges to [[_COMMUNITY_AuditChain]]
+- 8 edges to [[_COMMUNITY_test_canary.py]]
+- 7 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 6 edges to [[_COMMUNITY_asyncio_2]]
+- 6 edges to [[_COMMUNITY_WebhookReceiver]]
+- 4 edges to [[_COMMUNITY_TrustManager]]
+- 4 edges to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 3 edges to [[_COMMUNITY_TrustLevel]]
+- 3 edges to [[_COMMUNITY_test_telegram_pipeline.py]]
+- 3 edges to [[_COMMUNITY_PromptGuard]]
+- 3 edges to [[_COMMUNITY_EgressFilter]]
+- 3 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_outbound_filter.py]]
+- 2 edges to [[_COMMUNITY_TrustConfig]]
+- 2 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_EgressPolicy]]
-- 1 edge to [[_COMMUNITY_prompt_guard.py]]
+- 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
+- 1 edge to [[_COMMUNITY_test_redteam_probes.py]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
 
 ## Top bridge nodes
-- [[test_e2e_proxy.py]] - degree 63, connects to 10 communities
-- [[test_inbound_outbound_both_audited()]] - degree 5, connects to 2 communities
-- [[asyncio_50]] - degree 27, connects to 1 community
-- [[test_webhook_outbound_block_withheld()]] - degree 7, connects to 1 community
-- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - degree 7, connects to 1 community
+- [[pipeline.py_1]] - degree 28, connects to 17 communities
+- [[test_e2e_proxy.py]] - degree 63, connects to 14 communities
+- [[PipelineAction]] - degree 35, connects to 5 communities
+- [[trust_manager()_4]] - degree 4, connects to 2 communities
+- [[asyncio_51]] - degree 27, connects to 1 community

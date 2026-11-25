@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "AuditEvent"
+community: "test_audit_export.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditEvent
+  - community/test_audit_exportpy
 ---
 
 # audit_store.py
@@ -20,4 +20,4 @@ tags:
 - [[test_edge_e2e_sdk.py]] - `imports_from` [EXTRACTED]
 - [[test_edge_pipeline.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditEvent
+#graphify/code #graphify/EXTRACTED #community/test_audit_exportpy

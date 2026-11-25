@@ -12,9 +12,9 @@ tags:
 # test_soc_egress_endpoints.py
 
 ## Connections
-- [[client()_15]] - `contains` [EXTRACTED]
+- [[client()_16]] - `contains` [EXTRACTED]
 - [[event_bus.py_2]] - `imports_from` [EXTRACTED]
-- [[httpx]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
 - [[test_manage_egress_add_remove_rule_and_risk()]] - `contains` [EXTRACTED]

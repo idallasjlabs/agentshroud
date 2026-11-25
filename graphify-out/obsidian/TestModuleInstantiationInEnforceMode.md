@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "PathIsolationManager"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # TestModuleInstantiationInEnforceMode
@@ -37,4 +37,4 @@ tags:
 - [[Verify modules can instantiate and operate in enforce mode.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

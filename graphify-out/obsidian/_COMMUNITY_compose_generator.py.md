@@ -12,7 +12,7 @@ members: 13
 - [[Default Service Configuration]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Function Details_34]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Key Classes  Functions_36]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
-- [[Purpose_54]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
+- [[Purpose_55]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Related_36]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[Responsibilities_36]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md
 - [[compose_generator.py_2]] - document - docs/vault/02 - Modules/Runtime/compose_generator.py.md

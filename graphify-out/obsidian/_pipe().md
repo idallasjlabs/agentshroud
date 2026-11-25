@@ -12,7 +12,7 @@ tags:
 # _pipe()
 
 ## Connections
-- [[_handle()]] - `calls` [EXTRACTED]
+- [[_handle()_1]] - `calls` [EXTRACTED]
 - [[_run_hermes_api_forwarder()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/lifespan

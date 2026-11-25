@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "GatewayConfig"
+community: "asyncio"
 location: "L186"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/asyncio
 ---
 
 # .test_dashboard_bad_cookie_returns_403()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[GET dashboard with invalid cookie returns 403]] - `rationale_for` [EXTRACTED]
 - [[TestDashboardCookieAuth]] - `method` [EXTRACTED]
-- [[asyncio_40]] - `references` [EXTRACTED]
+- [[asyncio_67]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

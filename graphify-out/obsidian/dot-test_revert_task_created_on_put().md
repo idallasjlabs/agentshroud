@@ -16,7 +16,7 @@ tags:
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestAutoRevert]] - `method` [EXTRACTED]
 - [[_make_app()]] - `calls` [EXTRACTED]
-- [[asyncio_55]] - `references` [EXTRACTED]
+- [[asyncio_88]] - `references` [EXTRACTED]
 - [[set_mode()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

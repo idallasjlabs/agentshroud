@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "test_scanner_integration.py"
+community: "_score_secure_development"
 location: "L829"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_scanner_integrationpy
+  - community/_score_secure_development
 ---
 
 # path_factory()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_three_when_semgrep_and_precommit_present()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_scanner_integrationpy
+#graphify/code #graphify/INFERRED #community/_score_secure_development

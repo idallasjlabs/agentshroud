@@ -1,17 +1,17 @@
 ---
-source_file: ".github/ISSUE_TEMPLATE/gsd.md"
+source_file: "docker/DOCKER-VPN-NETWORKING.md"
 type: "document"
-community: "gsd.md"
-location: "L9"
+community: "Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility"
+location: "L3"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gsdmd
+  - community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility
 ---
 
 # Problem
 
 ## Connections
-- [[gsd]] - `contains` [EXTRACTED]
+- [[Docker Desktop Network Settings — Cisco AnyConnect VPN Compatibility]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gsdmd
+#graphify/document #graphify/EXTRACTED #community/Docker_Desktop_Network_Settings__Cisco_AnyConnect_VPN_Compatibility

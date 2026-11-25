@@ -24,7 +24,7 @@ members: 21
 - [[TestIsOwner]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestSetConfig]] - code - gateway/tests/test_middleware_coverage.py
 - [[_bot()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[fixture_143]] - code
+- [[fixture_142]] - code
 - [[mm()]] - code - gateway/tests/test_middleware_coverage.py
 - [[temp_workspace()_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[test_middleware_coverage.py]] - code - gateway/tests/test_middleware_coverage.py
@@ -39,24 +39,25 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY__req]]
-- 5 edges to [[_COMMUNITY_MiddlewareManager]]
 - 4 edges to [[_COMMUNITY__FakeRBAC]]
 - 4 edges to [[_COMMUNITY__tool_req]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_UserSessionManager]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
+- 2 edges to [[_COMMUNITY_MiddlewareResult]]
 - 2 edges to [[_COMMUNITY_TestScanToolResult]]
 - 1 edge to [[_COMMUNITY_TestAnalyzeRequestForRBAC]]
 - 1 edge to [[_COMMUNITY_TestIsPathAllowedForUser]]
 - 1 edge to [[_COMMUNITY_TestCrossSessionAccess]]
 - 1 edge to [[_COMMUNITY_TestFilterOutboundResponse]]
 - 1 edge to [[_COMMUNITY_TestExtractUserId]]
-- 1 edge to [[_COMMUNITY_TestMultiTurnTracker_1]]
-- 1 edge to [[_COMMUNITY_TestMetadataGuard]]
+- 1 edge to [[_COMMUNITY_TestMultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_TestMetadataGuard_1]]
 - 1 edge to [[_COMMUNITY_middleware.py]]
 
 ## Top bridge nodes
-- [[test_middleware_coverage.py]] - degree 41, connects to 16 communities
+- [[test_middleware_coverage.py]] - degree 41, connects to 17 communities
 - [[TestSetConfig]] - degree 7, connects to 1 community
 - [[mm()]] - degree 4, connects to 1 community
 - [[dot-test_default_bot_and_sanitizer_configured()]] - degree 3, connects to 1 community

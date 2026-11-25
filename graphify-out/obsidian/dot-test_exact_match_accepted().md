@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "test_security_audit.py"
+community: "TestAuth"
 location: "L164"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestAuth
 ---
 
 # .test_exact_match_accepted()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRedirectURI]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

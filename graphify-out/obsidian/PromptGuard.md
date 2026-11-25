@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "code"
-community: "lifespan.py"
+community: "PromptGuard"
 location: "L581"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PromptGuard
 ---
 
 # PromptGuard
 
 ## Connections
-- [[dot-__init__()_136]] - `method` [EXTRACTED]
+- [[dot-__init__()_134]] - `method` [EXTRACTED]
 - [[dot-_check_encoded_content()]] - `method` [EXTRACTED]
 - [[dot-_check_unicode_tricks()]] - `method` [EXTRACTED]
 - [[dot-_get_hmac_key()]] - `method` [EXTRACTED]
-- [[dot-guard()]] - `calls` [EXTRACTED]
-- [[dot-guard()_6]] - `calls` [EXTRACTED]
-- [[dot-guard()_1]] - `calls` [EXTRACTED]
 - [[dot-guard()_2]] - `calls` [EXTRACTED]
+- [[dot-guard()_3]] - `calls` [EXTRACTED]
+- [[dot-guard()_4]] - `calls` [EXTRACTED]
+- [[dot-guard()_6]] - `calls` [EXTRACTED]
 - [[dot-pg()]] - `calls` [EXTRACTED]
 - [[dot-pg()_1]] - `calls` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
@@ -27,10 +27,10 @@ tags:
 - [[dot-reanchor_delimiters()]] - `method` [EXTRACTED]
 - [[dot-register_system_prompt()]] - `method` [EXTRACTED]
 - [[dot-scan()_3]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_3]] - `method` [EXTRACTED]
-- [[dot-setup_method()_21]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
+- [[dot-setup_method()_22]] - `calls` [EXTRACTED]
 - [[dot-setup_method()_23]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_9]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_10]] - `calls` [EXTRACTED]
 - [[dot-test_binary_data_in_text_fields()]] - `calls` [INFERRED]
 - [[dot-test_crlf_in_prompt_guard()]] - `calls` [INFERRED]
 - [[dot-test_custom_pattern()]] - `calls` [EXTRACTED]
@@ -55,7 +55,7 @@ tags:
 - [[Detect and block prompt injection attempts.]] - `rationale_for` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `uses` [INFERRED]
 - [[TestClassicOverride]] - `uses` [INFERRED]
-- [[TestConcurrency]] - `uses` [INFERRED]
+- [[TestConcurrency_1]] - `uses` [INFERRED]
 - [[TestContextInjection]] - `uses` [INFERRED]
 - [[TestDoSPrevention]] - `uses` [INFERRED]
 - [[TestE2E10FailClosed]] - `uses` [INFERRED]
@@ -89,7 +89,7 @@ tags:
 - [[canary_pipeline()]] - `uses` [INFERRED]
 - [[context_integrity.py]] - `imports` [EXTRACTED]
 - [[deep_security_test()]] - `uses` [INFERRED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[guard()]] - `uses` [INFERRED]
 - [[ingest_apimain.py]] - `imports` [EXTRACTED]
@@ -97,8 +97,8 @@ tags:
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[pipeline()]] - `uses` [INFERRED]
 - [[prompt_guard()_1]] - `uses` [INFERRED]
-- [[prompt_guard()]] - `uses` [INFERRED]
 - [[prompt_guard()_2]] - `uses` [INFERRED]
+- [[prompt_guard()]] - `uses` [INFERRED]
 - [[prompt_guard.py_2]] - `contains` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
@@ -126,4 +126,4 @@ tags:
 - [[test_security_integration.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,25 +1,17 @@
 ---
-source_file: "gateway/security/rbac.py"
+source_file: "gateway/tests/test_middleware_coverage.py"
 type: "code"
-community: "soc/router.py"
-location: "L187"
+community: "_FakeRBAC"
+location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/_FakeRBAC
 ---
 
 # .check_permission()
 
 ## Connections
-- [[dot-get_user_role()]] - `calls` [EXTRACTED]
-- [[dot-list_users_and_roles()]] - `calls` [EXTRACTED]
-- [[dot-set_user_role()_1]] - `calls` [EXTRACTED]
-- [[Action]] - `references` [EXTRACTED]
-- [[Any_1]] - `references` [EXTRACTED]
-- [[Check if a user has permission to perform an action on a resource.]] - `rationale_for` [EXTRACTED]
-- [[PermissionResult]] - `calls` [EXTRACTED]
-- [[RBACManager]] - `method` [EXTRACTED]
-- [[Resource]] - `references` [EXTRACTED]
+- [[_FakeRBAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/_FakeRBAC

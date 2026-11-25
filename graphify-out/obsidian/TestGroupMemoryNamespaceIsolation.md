@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # TestGroupMemoryNamespaceIsolation
@@ -20,4 +20,4 @@ tags:
 - [[Writes in group-A must not be readable from group-B.]] - `rationale_for` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

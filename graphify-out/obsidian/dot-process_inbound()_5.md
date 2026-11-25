@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_maybe_record_trust_violation()]] - `calls` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[PipelineResult]] - `references` [EXTRACTED]
 - [[Process an inbound message through the full security pipeline. Thin wrapper…]] - `rationale_for` [EXTRACTED]
 - [[SecurityPipeline]] - `method` [EXTRACTED]

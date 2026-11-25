@@ -23,7 +23,7 @@ tags:
 - [[dot-test_real_registry_plan_is_internally_consistent()]] - `calls` [INFERRED]
 - [[dot-test_separates_advisories_already_fixed_at_the_current_pin()]] - `calls` [INFERRED]
 - [[dot-test_unparseable_fixed_in_is_treated_as_not_remediable()]] - `calls` [INFERRED]
-- [[Any_55]] - `references` [EXTRACTED]
+- [[Any_57]] - `references` [EXTRACTED]
 - [[RemediationPlan]] - `calls` [EXTRACTED]
 - [[Work out the minimum version bump that remediates the most advisories. Only…]] - `rationale_for` [EXTRACTED]
 - [[auto_remediate_cves.py]] - `contains` [EXTRACTED]

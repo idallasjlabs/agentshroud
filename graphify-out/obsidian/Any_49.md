@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "MCPPolicyEngine"
+community: "test_edge_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/test_edge_pipelinepy
 ---
 
 # Any
 
 ## Connections
-- [[dot-enforce()]] - `references` [EXTRACTED]
-- [[dot-evaluate()]] - `references` [EXTRACTED]
-- [[dot-from_dict()_7]] - `references` [EXTRACTED]
+- [[args_sha256()]] - `references` [EXTRACTED]
+- [[render_card()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

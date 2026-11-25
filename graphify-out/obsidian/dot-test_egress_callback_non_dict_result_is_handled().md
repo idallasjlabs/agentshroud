@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_egress_callback_non_dict_result_is_handled"
+community: "_wrap_response"
 location: "L5711"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_egress_callback_non_dict_result_is_handled
+  - community/_wrap_response
 ---
 
 # .test_egress_callback_non_dict_result_is_handled()
@@ -17,8 +17,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[answer_callback()_1]] - `contains` [EXTRACTED]
 - [[approve()_1]] - `contains` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[deny()_1]] - `contains` [EXTRACTED]
 - [[handle_callback()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_egress_callback_non_dict_result_is_handled
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

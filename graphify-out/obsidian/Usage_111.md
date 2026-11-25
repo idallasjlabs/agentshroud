@@ -1,23 +1,17 @@
 ---
-source_file: ".agents/agents/browser.md"
+source_file: ".opencode/agents/i-mcpm-auth-reset.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
-location: "L57"
+community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
+location: "L20"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET
 ---
 
 # Usage
 
 ## Connections
-- [[Browser — Secure Browser Automation_5]] - `contains` [EXTRACTED]
-- [[Click Element_3]] - `contains` [EXTRACTED]
-- [[Extract Data_3]] - `contains` [EXTRACTED]
-- [[Fetch JavaScript-Heavy Page (Node.js)_2]] - `contains` [EXTRACTED]
-- [[Fill Form_2]] - `contains` [EXTRACTED]
-- [[Navigate to URL_3]] - `contains` [EXTRACTED]
-- [[Take Screenshot_3]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_5]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

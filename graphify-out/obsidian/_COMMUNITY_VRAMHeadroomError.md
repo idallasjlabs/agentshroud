@@ -12,7 +12,7 @@ members: 11
 - [[dot-test_disabled_when_threshold_zero()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_passes_with_sufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
 - [[dot-test_rejects_insufficient_headroom()]] - code - gateway/tests/test_resource_guard_limits.py
-- [[Exception_6]] - code
+- [[Exception_4]] - code
 - [[Pre-flight VRAM headroom check before dispatching a long-context local-model…]] - rationale - gateway/security/resource_guard.py
 - [[Raised when a local-model call is rejected because estimated VRAM usage would…]] - rationale - gateway/security/resource_guard.py
 - [[TestVramHeadroom]] - code - gateway/tests/test_resource_guard_limits.py

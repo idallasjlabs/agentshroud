@@ -12,6 +12,6 @@ tags:
 # Initialize session manager. Args: base_workspace: Base directory for user…
 
 ## Connections
-- [[dot-__init__()_185]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_187]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/UserSessionManager

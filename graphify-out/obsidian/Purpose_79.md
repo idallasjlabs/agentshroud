@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "installer.py"
+community: "OpenClaw"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/installerpy
+  - community/OpenClaw
 ---
 
 # Purpose
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/installerpy
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

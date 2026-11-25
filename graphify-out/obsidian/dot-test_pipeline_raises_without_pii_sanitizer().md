@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L359"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # .test_pipeline_raises_without_pii_sanitizer()
@@ -16,4 +16,4 @@ tags:
 - [[SecurityPipeline]] - `calls` [EXTRACTED]
 - [[TestE2E10FailClosed]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

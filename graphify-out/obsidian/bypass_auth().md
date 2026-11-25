@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "email_send"
+community: "app"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/app
 ---
 
 # bypass_auth()
 
 ## Connections
-- [[fixture_54]] - `references` [EXTRACTED]
+- [[fixture_2]] - `references` [EXTRACTED]
 - [[test_channel_ownership.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/app

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "generate_compose"
+community: "test_runtime_engines.py"
 location: "L569"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_compose
+  - community/test_runtime_enginespy
 ---
 
 # TestComposeGenerator
@@ -23,4 +23,4 @@ tags:
 - [[ServiceDef]] - `uses` [INFERRED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_compose
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "test_url_analyzer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_url_analyzerpy
 ---
 
 # fixture
 
 ## Connections
-- [[sanitizer()_2]] - `references` [EXTRACTED]
+- [[analyzer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

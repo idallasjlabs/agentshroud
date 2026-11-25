@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_score_image_integrity"
+community: "aggregate_results"
 location: "L622"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_image_integrity
+  - community/aggregate_results
 ---
 
 # TestScoreImageIntegrity
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_zero_when_no_sbom_no_trivy()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_image_integrity
+#graphify/code #graphify/EXTRACTED #community/aggregate_results

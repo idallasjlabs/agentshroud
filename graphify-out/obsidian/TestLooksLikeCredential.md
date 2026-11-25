@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_env_guard_class.py"
+community: "TestLooksLikeCredential"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/TestLooksLikeCredential
 ---
 
 # TestLooksLikeCredential
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_short_value_is_not_credential()]] - `method` [EXTRACTED]
 - [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/TestLooksLikeCredential

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "rationale"
-community: "TestInjectionDetection"
+community: "TestSensitiveOps"
 location: "L250"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/TestSensitiveOps
 ---
 
 # In strict mode, sensitive ops with injection ARE blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_sensitive_blocked_strict_with_injection()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/rationale #graphify/EXTRACTED #community/TestSensitiveOps

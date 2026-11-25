@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TrustManager"
+community: "TestPrivilegeEscalation"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPrivilegeEscalation
 ---
 
 # .test_trust_cannot_exceed_max()
@@ -16,4 +16,4 @@ tags:
 - [[Trust score should have an upper bound.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TestPrivilegeEscalation

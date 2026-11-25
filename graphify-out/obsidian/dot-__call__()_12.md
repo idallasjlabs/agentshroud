@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "test_intel_endpoint.py"
-location: "L32"
+community: "test_edge_e2e_sdk.py"
+location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_intel_endpointpy
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__call__()
 
 ## Connections
-- [[FetchOutcome]] - `calls` [EXTRACTED]
-- [[_FakeFetcher]] - `method` [EXTRACTED]
+- [[Clock_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

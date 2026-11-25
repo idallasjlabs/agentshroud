@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: ".test_performance"
+community: "TestOutboundInfoFilter"
 location: "L433"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_performance
+  - community/TestOutboundInfoFilter
 ---
 
 # ._time_one_filter()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_performance()]] - `calls` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_performance
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

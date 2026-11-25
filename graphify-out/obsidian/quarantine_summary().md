@@ -12,7 +12,7 @@ tags:
 # quarantine_summary()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Summarize inboundoutbound quarantine state for SOCdashboard use.]] - `rationale_for` [EXTRACTED]
 - [[_count_by_status()]] - `contains` [EXTRACTED]
 - [[_top_reasons()]] - `contains` [EXTRACTED]

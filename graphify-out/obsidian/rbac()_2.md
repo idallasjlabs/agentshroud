@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_rbac.py"
+source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "GroupRoleResolver"
-location: "L79"
+community: "SharedMemoryManager"
+location: "L76"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/SharedMemoryManager
 ---
 
 # rbac()
 
 ## Connections
 - [[RBACConfig]] - `uses` [INFERRED]
-- [[fixture_86]] - `references` [EXTRACTED]
-- [[test_group_rbac.py]] - `contains` [EXTRACTED]
+- [[fixture_64]] - `references` [EXTRACTED]
+- [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

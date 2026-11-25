@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "GitGuard"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/MCPPolicyEngine
 ---
 
 # Enum
 
 ## Connections
-- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
-- [[git_guard.py]] - `imports_from` [EXTRACTED]
+- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
+- [[mcp_policy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

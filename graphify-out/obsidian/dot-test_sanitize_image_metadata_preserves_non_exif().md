@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "MetadataGuard"
+community: "TestMetadataGuard"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/TestMetadataGuard
 ---
 
 # .test_sanitize_image_metadata_preserves_non_exif()
@@ -15,4 +15,4 @@ tags:
 - [[Test that non-EXIF data is preserved.]] - `rationale_for` [EXTRACTED]
 - [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

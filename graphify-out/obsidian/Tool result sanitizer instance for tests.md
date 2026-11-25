@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "rationale"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L89"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # Tool result sanitizer instance for tests
 
 ## Connections
-- [[dot-sanitizer()_3]] - `rationale_for` [EXTRACTED]
+- [[dot-sanitizer()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RedactionResult
+#graphify/rationale #graphify/EXTRACTED #community/PIIConfig

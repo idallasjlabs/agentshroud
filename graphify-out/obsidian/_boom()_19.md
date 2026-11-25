@@ -2,16 +2,17 @@
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
 community: "test_tts_kokoro_pipeline_load_failure_raises"
-location: "L188"
+location: "L85"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
+  - graphify/INFERRED
   - community/test_tts_kokoro_pipeline_load_failure_raises
 ---
 
 # _boom()
 
 ## Connections
-- [[test_tts_kokoro_pipeline_load_failure_raises()]] - `contains` [EXTRACTED]
+- [[test_lifespan_tolerates_warmup_failure()]] - `indirect_call` [INFERRED]
+- [[test_tts_kokoro_pipeline_load_failure_raises()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_tts_kokoro_pipeline_load_failure_raises
+#graphify/code #graphify/INFERRED #community/test_tts_kokoro_pipeline_load_failure_raises

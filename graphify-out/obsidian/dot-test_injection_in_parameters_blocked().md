@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
 - [[Tool call with injection pattern in parameters should return 403.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_28]] - `references` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyResult

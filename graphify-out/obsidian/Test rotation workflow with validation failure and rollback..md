@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "test_key_rotation.py"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/test_key_rotationpy
 ---
 
 # Test rotation workflow with validation failure and rollback.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rotation_with_validation_failure()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/test_key_rotationpy

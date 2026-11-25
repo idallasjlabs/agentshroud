@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "GatewayConfig"
+community: "aiosqlite"
 location: "L27"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/aiosqlite
 ---
 
 # Database Files
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GatewayConfig
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

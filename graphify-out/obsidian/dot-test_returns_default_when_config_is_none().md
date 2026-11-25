@@ -15,7 +15,7 @@ tags:
 - [[Backward-compat config attr absent → return single OpenClaw default.]] - `rationale_for` [EXTRACTED]
 - [[TestListBots]] - `method` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
-- [[asyncio_76]] - `references` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[list_bots()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -12,7 +12,7 @@ tags:
 # TestEncryptedStore
 
 ## Connections
-- [[dot-setup_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_5]] - `method` [EXTRACTED]
 - [[dot-test_b64_roundtrip()]] - `method` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `method` [EXTRACTED]
 - [[dot-test_different_encryptions_differ()]] - `method` [EXTRACTED]

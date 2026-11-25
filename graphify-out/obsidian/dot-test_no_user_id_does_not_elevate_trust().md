@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "app"
 location: "L531"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/app
 ---
 
 # .test_no_user_id_does_not_elevate_trust()
@@ -17,4 +17,4 @@ tags:
 - [[TestOwnerTrustElevation]] - `method` [EXTRACTED]
 - [[_TrustCaptor]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/app

@@ -8,7 +8,7 @@ members: 17
 **Members:** 17 nodes
 
 ## Members
-- [[Any_76]] - code
+- [[Any_73]] - code
 - [[Frequencies well below the Nyquist (≤3 kHz) must pass through with minimal…]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Kaiser-windowed sinc anti-aliasing filter suppresses content above the output…]] - rationale - gateway/tests/test_voice_gateway.py
 - [[Resample raw S16LE mono PCM from src_rate Hz to dst_rate Hz. For…]] - rationale - voice_gateway/tts.py

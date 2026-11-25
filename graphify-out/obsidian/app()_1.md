@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Import chatbot.main with a fresh module state (no real OpenAI).]] - `rationale_for` [EXTRACTED]
-- [[fixture_142]] - `references` [EXTRACTED]
+- [[fixture_141]] - `references` [EXTRACTED]
 - [[test_main.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

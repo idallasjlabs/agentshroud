@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "prompt_guard.py"
+community: "TestPromptGuard"
 location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/TestPromptGuard
 ---
 
 # .test_empty_input()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPromptGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestPromptGuard

@@ -15,7 +15,7 @@ tags:
 - [[appendLog()_2]] - `contains` [EXTRACTED]
 - [[browserFetch()_2]] - `indirect_call` [INFERRED]
 - [[fs_4]] - `contains` [EXTRACTED]
-- [[path_28]] - `contains` [EXTRACTED]
+- [[path_27]] - `contains` [EXTRACTED]
 - [[{ chromium }_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/openclaw/skills/i-browser/browsejs

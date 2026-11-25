@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "code"
-community: "._run_and_read"
+community: "ApprovalQueueConfig (5)"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # ._run_twice()
@@ -22,4 +22,4 @@ tags:
 - [[_read_env()]] - `calls` [EXTRACTED]
 - [[_run_switch()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_and_read
+#graphify/code #graphify/EXTRACTED #community/ApprovalQueueConfig_5

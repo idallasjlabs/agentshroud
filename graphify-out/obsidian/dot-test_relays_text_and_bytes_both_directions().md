@@ -16,7 +16,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestHermesDashboardWsProxy]] - `method` [EXTRACTED]
 - [[_one_frame_aiter()]] - `indirect_call` [INFERRED]
-- [[asyncio_52]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[hermes_dashboard_ws_proxy()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy

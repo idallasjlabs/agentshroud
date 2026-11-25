@@ -42,18 +42,18 @@ members: 60
 - [[Security Review (SEC)_2]] - document - docker/config/hermes/skills/i-sec/README.md
 - [[System Audit Vault_2]] - document - docker/config/hermes/skills/i-sav/README.md
 - [[Technical Writer (TW)_2]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_136]] - document - docker/config/hermes/skills/i-aws/README.md
-- [[Usage_137]] - document - docker/config/hermes/skills/i-bs/README.md
-- [[Usage_138]] - document - docker/config/hermes/skills/i-data/README.md
-- [[Usage_139]] - document - docker/config/hermes/skills/i-eightd/README.md
-- [[Usage_140]] - document - docker/config/hermes/skills/i-gg/README.md
-- [[Usage_141]] - document - docker/config/hermes/skills/i-hermes/README.md
-- [[Usage_142]] - document - docker/config/hermes/skills/i-mac/README.md
-- [[Usage_143]] - document - docker/config/hermes/skills/i-sav/README.md
-- [[Usage_144]] - document - docker/config/hermes/skills/i-sec-offense/README.md
-- [[Usage_145]] - document - docker/config/hermes/skills/i-sec/README.md
-- [[Usage_146]] - document - docker/config/hermes/skills/i-tw/README.md
-- [[Usage_147]] - document - docker/config/hermes/skills/i-vulcan/README.md
+- [[Usage_137]] - document - docker/config/hermes/skills/i-aws/README.md
+- [[Usage_138]] - document - docker/config/hermes/skills/i-bs/README.md
+- [[Usage_139]] - document - docker/config/hermes/skills/i-data/README.md
+- [[Usage_140]] - document - docker/config/hermes/skills/i-eightd/README.md
+- [[Usage_141]] - document - docker/config/hermes/skills/i-gg/README.md
+- [[Usage_142]] - document - docker/config/hermes/skills/i-hermes/README.md
+- [[Usage_143]] - document - docker/config/hermes/skills/i-mac/README.md
+- [[Usage_144]] - document - docker/config/hermes/skills/i-sav/README.md
+- [[Usage_145]] - document - docker/config/hermes/skills/i-sec-offense/README.md
+- [[Usage_146]] - document - docker/config/hermes/skills/i-sec/README.md
+- [[Usage_147]] - document - docker/config/hermes/skills/i-tw/README.md
+- [[Usage_148]] - document - docker/config/hermes/skills/i-vulcan/README.md
 - [[Vulcan — Subject Matter Auditor_9]] - document - docker/config/hermes/skills/i-vulcan/README.md
 - [[hermesskillsi-awsREADME]] - document - docker/config/hermes/skills/i-aws/README.md
 - [[hermesskillsi-bsREADME]] - document - docker/config/hermes/skills/i-bs/README.md
@@ -81,7 +81,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_4]]
 - 1 edge to [[_COMMUNITY_System Audit Documentation_1]]
 - 1 edge to [[_COMMUNITY_Blue Team Security Auditor (SEC-DEFENSE)_1]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester]]
+- 1 edge to [[_COMMUNITY_AgentShroud Color Palette_1]]
 - 1 edge to [[_COMMUNITY_AgentShroud Blue Team Security Auditor_6]]
 - 1 edge to [[_COMMUNITY_CICD Pipeline Advisor (SKILL)]]
 - 1 edge to [[_COMMUNITY_Project Management (SKILL)]]

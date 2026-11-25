@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_log_sanitizer.py"
 type: "code"
-community: "AgentRegistry"
-location: "L647"
+community: "deep_security_test"
+location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/deep_security_test
 ---
 
 # .setup_method()
 
 ## Connections
-- [[AgentRegistry]] - `calls` [EXTRACTED]
-- [[ContainerConfig]] - `calls` [EXTRACTED]
-- [[TestAgentIsolation]] - `method` [EXTRACTED]
+- [[LogSanitizer]] - `calls` [EXTRACTED]
+- [[TestLogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

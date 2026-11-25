@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "_wrap_response"
-location: "L6494"
+location: "L6458"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # check_async()
 
 ## Connections
-- [[dot-test_non_owner_scheme_relative_url_queues_https_preflight()]] - `contains` [EXTRACTED]
+- [[dot-test_non_owner_uppercase_http_scheme_queues_port_80_preflight()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

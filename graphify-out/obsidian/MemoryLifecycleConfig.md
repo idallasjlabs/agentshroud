@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/memory_config.py"
 type: "code"
-community: "middleware.py"
+community: "MemoryLifecycleConfig"
 location: "L48"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryLifecycleConfig
 ---
 
 # MemoryLifecycleConfig
 
 ## Connections
-- [[dot-__init__()_155]] - `references` [EXTRACTED]
-- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
+- [[dot-__init__()_133]] - `references` [EXTRACTED]
+- [[dot-setup_method()_8]] - `calls` [EXTRACTED]
 - [[Configuration for memory lifecycle management.]] - `rationale_for` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `uses` [INFERRED]
 - [[TestMemoryLifecycleManager]] - `uses` [INFERRED]
@@ -23,4 +23,4 @@ tags:
 - [[memory_lifecycle.py]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig

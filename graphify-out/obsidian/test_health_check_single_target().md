@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget"
+community: "asyncio"
 location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/asyncio
 ---
 
 # test_health_check_single_target()
 
 ## Connections
 - [[Test health check for single target]] - `rationale_for` [EXTRACTED]
-- [[asyncio_57]] - `references` [EXTRACTED]
+- [[asyncio_60]] - `references` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/asyncio

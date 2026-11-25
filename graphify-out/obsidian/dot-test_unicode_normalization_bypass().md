@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "TestHTTPSecurity"
 location: "L127"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TestHTTPSecurity
 ---
 
 # .test_unicode_normalization_bypass()
@@ -17,4 +17,4 @@ tags:
 - [[TestHTTPSecurity]] - `method` [EXTRACTED]
 - [[Unicode tricks shouldn't bypass PII detection.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

@@ -1,26 +1,30 @@
 ---
-source_file: "gateway/proxy/web_content_scanner.py"
+source_file: "gateway/security/skill_guard.py"
 type: "code"
-community: "ScanResult"
-location: "L45"
+community: "SkillGuard"
+location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/SkillGuard
 ---
 
 # ScanResult
 
 ## Connections
-- [[dot-_scan_encoded_payloads()]] - `references` [EXTRACTED]
-- [[dot-_scan_hidden_content()]] - `references` [EXTRACTED]
-- [[dot-_scan_pii()]] - `references` [EXTRACTED]
-- [[dot-_scan_prompt_injection()]] - `references` [EXTRACTED]
-- [[dot-_scan_xml_dtd()]] - `references` [EXTRACTED]
-- [[dot-_scan_zero_width()]] - `references` [EXTRACTED]
-- [[dot-flagged()_2]] - `method` [EXTRACTED]
-- [[dot-scan()_4]] - `calls` [EXTRACTED]
-- [[Result of scanning web content.]] - `rationale_for` [EXTRACTED]
-- [[web_content_scanner.py_2]] - `contains` [EXTRACTED]
+- [[dot-_scan_opaque_blobs()]] - `references` [EXTRACTED]
+- [[dot-blocked()]] - `method` [EXTRACTED]
+- [[dot-extend()]] - `method` [EXTRACTED]
+- [[dot-recommendation()]] - `method` [EXTRACTED]
+- [[dot-scan_file()]] - `calls` [EXTRACTED]
+- [[dot-scan_skill_tree()]] - `calls` [EXTRACTED]
+- [[dot-severity()]] - `method` [EXTRACTED]
+- [[Aggregated result of scanning a skill file or an entire skill tree.]] - `rationale_for` [EXTRACTED]
+- [[TestAggregation]] - `uses` [INFERRED]
+- [[_finding_categories()]] - `uses` [INFERRED]
+- [[_print_findings()]] - `uses` [INFERRED]
+- [[scan.py]] - `imports` [EXTRACTED]
+- [[skill_guard.py]] - `contains` [EXTRACTED]
+- [[test_skill_guard.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

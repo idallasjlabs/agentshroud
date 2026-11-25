@@ -36,7 +36,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_CREDENTIAL-PROTECTION-IMPLEMENTED]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Value Proposition - Revised]]
-- 1 edge to [[_COMMUNITY_Detailed Profiles]]
+- 1 edge to [[_COMMUNITY_Features]]
 - 1 edge to [[_COMMUNITY_Security Verification Report]]
 - 1 edge to [[_COMMUNITY_AgentShroud Device Pairing Management]]
 - 1 edge to [[_COMMUNITY_AgentShroud Security Architecture]]

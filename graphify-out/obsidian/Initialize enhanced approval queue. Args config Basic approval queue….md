@@ -12,6 +12,6 @@ tags:
 # Initialize enhanced approval queue. Args: config: Basic approval queue…
 
 ## Connections
-- [[dot-__init__()_114]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_108]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

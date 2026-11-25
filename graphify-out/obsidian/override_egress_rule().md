@@ -12,7 +12,7 @@ tags:
 # override_egress_rule()
 
 ## Connections
-- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
 - [[Action]] - `uses` [INFERRED]
 - [[Add or override a specific egress domain rule (CC-10). Supports optional scope…]] - `rationale_for` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]

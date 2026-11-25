@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestHermesDashboardPathTraversal]] - `method` [EXTRACTED]
-- [[asyncio_52]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[hermes_dashboard_proxy raises HTTPException(400) for traversal in path.]] - `rationale_for` [EXTRACTED]
 - [[hermes_dashboard_proxy()]] - `calls` [EXTRACTED]
 

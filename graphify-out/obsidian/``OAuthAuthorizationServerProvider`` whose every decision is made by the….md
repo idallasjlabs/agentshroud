@@ -2,7 +2,7 @@
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "rationale"
 community: "GatewayBackedProvider"
-location: "L130"
+location: "L131"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED

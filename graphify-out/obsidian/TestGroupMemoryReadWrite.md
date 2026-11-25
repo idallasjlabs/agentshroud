@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "test_shared_memory.py"
+community: "SharedMemoryManager"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/SharedMemoryManager
 ---
 
 # TestGroupMemoryReadWrite
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_multiple_appends_accumulate()]] - `method` [EXTRACTED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
 type: "document"
-community: "CI Workflows"
-location: "L47"
+community: "Prompt Injection Blocks"
+location: "L78"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI_Workflows
+  - community/Prompt_Injection_Blocks
 ---
 
 # Related Notes
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI_Workflows
+#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks

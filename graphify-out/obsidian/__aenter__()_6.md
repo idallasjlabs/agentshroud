@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_voice_gateway.py"
+source_file: "gateway/tests/test_edge_service_routes.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L1484"
+community: "test_edge_service_routes.py"
+location: "L150"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_edge_service_routespy
 ---
 
 # __aenter__()
 
 ## Connections
-- [[_mock_stream_resp()]] - `calls` [EXTRACTED]
-- [[_sse_body()]] - `calls` [EXTRACTED]
-- [[test_call_agent_uses_structured_timeout()]] - `contains` [EXTRACTED]
+- [[test_telegram_send_posts_card()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AuditStore"
+community: "test_intel_endpoint.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/test_intel_endpointpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-audit_store()]] - `references` [EXTRACTED]
-- [[dot-audit_store()_1]] - `references` [EXTRACTED]
-- [[dot-export_config()]] - `references` [EXTRACTED]
-- [[dot-store()_2]] - `references` [EXTRACTED]
-- [[dot-store()_3]] - `references` [EXTRACTED]
+- [[client()_18]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy

@@ -1,12 +1,12 @@
 ---
 source_file: "cli/src/main.rs"
 type: "code"
-community: "CollabMode"
+community: "main.rs"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollabMode
+  - community/mainrs
 ---
 
 # CollabMode
@@ -17,4 +17,4 @@ tags:
 - [[SetTarget]] - `references` [EXTRACTED]
 - [[main.rs]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollabMode
+#graphify/code #graphify/EXTRACTED #community/mainrs

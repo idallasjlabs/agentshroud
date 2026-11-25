@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "asyncio"
+community: "EgressAction"
 location: "L450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressAction
 ---
 
 # notify_pending()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_egress_filter_notifies_on_deny()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressAction

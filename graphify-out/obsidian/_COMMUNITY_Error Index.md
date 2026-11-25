@@ -16,7 +16,7 @@ members: 10
 - [[MCP Proxy Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[PII Pipeline Errors]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[Prompt Injection Blocks]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
-- [[Related Notes_29]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
+- [[Related Notes_30]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 - [[Startup Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/Error Index.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestReplayBufferOffsetParsing"
+community: "test_telegram_proxy_outbound.py"
 location: "L4493"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # sendMessage and similar calls must use a 15s urlopen timeout.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_long_poll_timeout_is_15s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

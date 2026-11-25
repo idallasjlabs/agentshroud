@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "email_send"
+community: "AgentTarget"
 location: "L149"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/email_send
+  - community/AgentTarget
 ---
 
 # Telegram inbound webhook (P3: channel ownership). All Telegram messages…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_webhook()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/email_send
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

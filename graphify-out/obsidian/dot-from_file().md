@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/skills/manifest.py"
 type: "code"
-community: "ManifestEntry"
+community: ".from_source"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ManifestEntry
+  - community/from_source
 ---
 
 # .from_file()
@@ -20,4 +20,4 @@ tags:
 - [[ManifestEntry]] - `method` [EXTRACTED]
 - [[Path_71]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ManifestEntry
+#graphify/code #graphify/EXTRACTED #community/from_source

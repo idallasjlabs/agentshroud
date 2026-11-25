@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_A2A (Agent-to-Agent) Protocol Threat Analysis]]
+- 1 edge to [[_COMMUNITY_TestLoadFromText]]
 - 1 edge to [[_COMMUNITY_STRIDE Threat Analysis]]
 
 ## Top bridge nodes

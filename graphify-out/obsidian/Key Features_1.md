@@ -12,6 +12,6 @@ tags:
 # Key Features
 
 ## Connections
-- [[installer.py_1]] - `contains` [EXTRACTED]
+- [[installer.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/installerpy

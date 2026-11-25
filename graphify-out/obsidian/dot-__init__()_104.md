@@ -1,17 +1,17 @@
 ---
-source_file: "scripts/migrate-cve-registry-ghsa.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "migrate-cve-registry-ghsa.py"
-location: "L178"
+community: "TestWebProxySecurityIntegration"
+location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/migrate-cve-registry-ghsapy
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[MatchResult]] - `method` [EXTRACTED]
+- [[MockDNSVerdict]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/migrate-cve-registry-ghsapy
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "ModeRequest"
+community: "TestObservatoryMode"
 location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/TestObservatoryMode
 ---
 
 # TestObservatoryModeAPI
@@ -17,4 +17,4 @@ tags:
 - [[Integration tests for Observatory Mode API endpoints.]] - `rationale_for` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

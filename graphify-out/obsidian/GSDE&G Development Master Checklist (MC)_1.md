@@ -12,9 +12,9 @@ tags:
 # GSDE&G Development Master Checklist (MC)
 
 ## Connections
-- [[Purpose_119]] - `contains` [EXTRACTED]
+- [[Purpose_121]] - `contains` [EXTRACTED]
 - [[Related Skills_51]] - `contains` [EXTRACTED]
-- [[Usage_61]] - `contains` [EXTRACTED]
+- [[Usage_62]] - `contains` [EXTRACTED]
 - [[hermesskillsi-mcREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/GSDEG_Development_Master_Checklist_MC

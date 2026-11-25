@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "rationale"
-community: "TestPromptProtection"
+community: "ContextGuard"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/ContextGuard
 ---
 
 # Product name 'agentshroud' and 'agentshroud-openclaw' are public branding —…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_product_name_not_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

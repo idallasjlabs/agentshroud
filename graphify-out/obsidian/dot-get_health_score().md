@@ -12,7 +12,7 @@ tags:
 # .get_health_score()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[Calculate overall credential health score.]] - `rationale_for` [EXTRACTED]
 - [[KeyRotationManager]] - `method` [EXTRACTED]
 

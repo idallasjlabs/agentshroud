@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestWebProxySecurityIntegration"
+community: "GroupRoleResolver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebProxySecurityIntegration
+  - community/GroupRoleResolver
 ---
 
 # Enum
 
 ## Connections
-- [[MockEgressChannel]] - `inherits` [EXTRACTED]
-- [[MockThreatLevel]] - `inherits` [EXTRACTED]
-- [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
+- [[GroupRole]] - `inherits` [EXTRACTED]
+- [[group_rbac.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

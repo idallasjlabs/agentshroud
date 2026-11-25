@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "VRAMHeadroomError"
+community: "SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/VRAMHeadroomError
+  - community/SecureBrowser
 ---
 
 # Exception
 
 ## Connections
-- [[VRAMHeadroomError]] - `inherits` [EXTRACTED]
+- [[SecurityError_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/VRAMHeadroomError
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

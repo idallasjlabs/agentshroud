@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/ingest_api/config.py"
+source_file: "gateway/security/group_config.py"
 type: "code"
-community: "lifespan"
-location: "L287"
+community: "TeamsConfig"
+location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/TeamsConfig
 ---
 
 # .model_post_init()
 
 ## Connections
-- [[AuditExportConfig]] - `method` [EXTRACTED]
+- [[TeamsConfig]] - `method` [EXTRACTED]
+- [[_apply_persisted_overrides()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

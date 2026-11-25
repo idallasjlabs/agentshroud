@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
+community: "test_daily_cve_report.py"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_report
+  - community/test_daily_cve_reportpy
 ---
 
 # .test_error_report_shows_error_message()
@@ -16,4 +16,4 @@ tags:
 - [[_make_error_report()]] - `calls` [EXTRACTED]
 - [[format_cve_report()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_report
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

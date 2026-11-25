@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Path"
 location: "L471"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Path
 ---
 
 # TestScanEntrypointInProcess
@@ -21,4 +21,4 @@ tags:
 - [[Exercise ``gateway.skills.scan.main`` directly for exit-code coverage.]] - `rationale_for` [EXTRACTED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Path

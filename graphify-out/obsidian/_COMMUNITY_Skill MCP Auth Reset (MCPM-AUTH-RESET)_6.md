@@ -33,7 +33,7 @@ members: 32
 - [[Step 3 Verify Authentication_7]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Step 4 Restart Claude Code_7]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Troubleshooting_47]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
-- [[Usage_121]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
+- [[Usage_122]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verification Checklist_7]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verify Authentication_14]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md
 - [[Verify Authentication_15]] - document - docker/config/openclaw/skills/i-mcpm-auth-reset/SKILL.md

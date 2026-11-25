@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "lifespan"
+community: "test_config_hot_reload.py"
 location: "L774"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/test_config_hot_reloadpy
 ---
 
 # _default_mtime()
@@ -18,4 +18,4 @@ tags:
 - [[test_config_hot_reload.py]] - `imports` [EXTRACTED]
 - [[test_default_mtime_reads_real_file_and_handles_missing()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

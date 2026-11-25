@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "TestMemoryLifecycleManager"
 location: "L244"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryLifecycleManager
 ---
 
 # .test_content_sanitization()
@@ -15,4 +15,4 @@ tags:
 - [[Test content sanitization removes threats.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestMemoryLifecycleManager

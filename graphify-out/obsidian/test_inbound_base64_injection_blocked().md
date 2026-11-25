@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PipelineAction]] - `uses` [INFERRED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
-- [[asyncio_89]] - `references` [EXTRACTED]
+- [[asyncio_59]] - `references` [EXTRACTED]
 - [[base64-wrapped DAN injection is decoded-and-blocked on the inbound path.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 

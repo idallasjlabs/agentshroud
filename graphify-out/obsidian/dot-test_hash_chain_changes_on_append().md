@@ -12,6 +12,6 @@ tags:
 # .test_hash_chain_changes_on_append()
 
 ## Connections
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditTrail

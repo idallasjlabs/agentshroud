@@ -12,7 +12,7 @@ members: 13
 - [[Environment Variables_10]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Function Details_35]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Key Classes  Functions_37]] - document - docs/vault/02 - Modules/Runtime/config.py.md
-- [[Purpose_55]] - document - docs/vault/02 - Modules/Runtime/config.py.md
+- [[Purpose_56]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Related_37]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Responsibilities_37]] - document - docs/vault/02 - Modules/Runtime/config.py.md
 - [[Rootless Resolution Table]] - document - docs/vault/02 - Modules/Runtime/config.py.md

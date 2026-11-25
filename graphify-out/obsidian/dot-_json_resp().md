@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestFetch]] - `method` [EXTRACTED]
-- [[_fake_urlopen()_8]] - `calls` [EXTRACTED]
+- [[_fake_urlopen()_6]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_fetch_paginates_via_link_cursor

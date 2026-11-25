@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DelegationManager]] - `uses` [INFERRED]
 - [[In-memory delegation manager (no disk IO).]] - `rationale_for` [EXTRACTED]
-- [[fixture_8]] - `references` [EXTRACTED]
+- [[fixture_14]] - `references` [EXTRACTED]
 - [[test_delegation.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

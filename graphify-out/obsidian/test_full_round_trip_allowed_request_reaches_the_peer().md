@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "A2APolicyEngine"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2APolicyEngine
 ---
 
 # test_full_round_trip_allowed_request_reaches_the_peer()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `uses` [INFERRED]
 - [[A2AProxy]] - `uses` [INFERRED]
 - [[HermesA2AForwarder]] - `uses` [INFERRED]
-- [[_jsonrpc()_1]] - `calls` [EXTRACTED]
-- [[asyncio_86]] - `references` [EXTRACTED]
+- [[_jsonrpc()]] - `calls` [EXTRACTED]
+- [[asyncio_72]] - `references` [EXTRACTED]
 - [[test_a2a_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

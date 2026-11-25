@@ -12,7 +12,7 @@ tags:
 # state()
 
 ## Connections
-- [[fixture_28]] - `references` [EXTRACTED]
+- [[fixture_34]] - `references` [EXTRACTED]
 - [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

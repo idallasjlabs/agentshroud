@@ -29,7 +29,7 @@ tags:
 - [[dot-test_new_advisory_becomes_under_review()]] - `calls` [EXTRACTED]
 - [[dot-test_openclaw_advisory_does_not_touch_hermes_registry()]] - `calls` [EXTRACTED]
 - [[dot-test_per_agent_prefix_applied()]] - `calls` [EXTRACTED]
-- [[_fake_urlopen()_8]] - `calls` [EXTRACTED]
+- [[_fake_urlopen()_6]] - `calls` [EXTRACTED]
 - [[test_sync_cve_registry_ghsa.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_adv

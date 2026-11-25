@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "rationale"
-community: "test_ws_e_rt2_inbound_encoding.py"
+community: "PromptGuard"
 location: "L232"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/PromptGuard
 ---
 
 # `_check_encoded_content` now matches rules beyond the old top-5 slice. Failing-…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_prompt_guard_encoded_check_uses_full_ruleset()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

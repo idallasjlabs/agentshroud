@@ -12,7 +12,7 @@ tags:
 # AuditChainEntry
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
 - [[dot-append_block()]] - `references` [EXTRACTED]
 - [[dot-append_owner_bypass()]] - `references` [EXTRACTED]
 - [[dot-entries()_1]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "TestMultiTurnTracker"
+community: "MultiTurnTracker"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/MultiTurnTracker
 ---
 
 # .test_cumulative_scoring()
@@ -15,4 +15,4 @@ tags:
 - [[Test that scores accumulate across turns.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

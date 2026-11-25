@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_router.py"
+source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "AgentTarget"
-location: "L135"
+community: "_mock_response"
+location: "L239"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/AgentTarget
+  - graphify/EXTRACTED
+  - community/_mock_response
 ---
 
 # mock_post()
 
 ## Connections
-- [[test_forward_to_agent_http_error()]] - `indirect_call` [INFERRED]
-- [[test_forward_to_agent_timeout()]] - `indirect_call` [INFERRED]
-- [[test_forward_to_agent_unexpected_error()]] - `indirect_call` [INFERRED]
-- [[test_forward_uses_chat_path()]] - `indirect_call` [INFERRED]
+- [[_mock_response()]] - `calls` [EXTRACTED]
+- [[test_openai_payload_includes_model()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/_mock_response

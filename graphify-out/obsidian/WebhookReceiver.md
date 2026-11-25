@@ -1,25 +1,25 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "UserSessionManager"
+community: "WebhookReceiver"
 location: "L29"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/WebhookReceiver
 ---
 
 # WebhookReceiver
 
 ## Connections
-- [[dot-__init__()_184]] - `method` [EXTRACTED]
+- [[dot-__init__()_181]] - `method` [EXTRACTED]
 - [[dot-_can_create_directory()]] - `method` [EXTRACTED]
 - [[dot-_extract_message()]] - `method` [EXTRACTED]
 - [[dot-_extract_user_id()_1]] - `method` [EXTRACTED]
 - [[dot-_extract_username()]] - `method` [EXTRACTED]
 - [[dot-_prepare_session_payload()]] - `method` [EXTRACTED]
 - [[dot-_replace_message()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_15]] - `method` [EXTRACTED]
+- [[dot-get_stats()_16]] - `method` [EXTRACTED]
 - [[dot-process_webhook()]] - `method` [EXTRACTED]
 - [[dot-test_webhook_conversation_logging()]] - `calls` [EXTRACTED]
 - [[dot-test_webhook_session_context_injection()]] - `calls` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[test_webhook_strips_pii()]] - `uses` [INFERRED]
 - [[webhook_receiver.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -18,7 +18,7 @@ tags:
 - [[URLs with embedded userinfo should not enter approval allowlist flows.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[check_async()_25]] - `contains` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[check_async()_24]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

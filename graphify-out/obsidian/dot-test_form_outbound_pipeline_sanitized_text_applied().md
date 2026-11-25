@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_form_outbound_pipeline_sanitized_text_applied"
+community: "_make_sanitizer"
 location: "L190"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_form_outbound_pipeline_sanitized_text_applied
+  - community/_make_sanitizer
 ---
 
 # .test_form_outbound_pipeline_sanitized_text_applied()
@@ -15,7 +15,7 @@ tags:
 - [[Pipeline-sanitized text must replace the original in form payloads.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[process_outbound()_17]] - `contains` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
+- [[process_outbound()_16]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_form_outbound_pipeline_sanitized_text_applied
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GitGuard"
+community: "WebContentScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GitGuard
+  - community/WebContentScanner
 ---
 
 # str
 
 ## Connections
-- [[ThreatLevel_2]] - `inherits` [EXTRACTED]
+- [[FindingSeverity]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GitGuard
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

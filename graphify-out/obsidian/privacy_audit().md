@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Audit feed for private-data access policy violations.]] - `rationale_for` [EXTRACTED]
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 

@@ -12,7 +12,7 @@ tags:
 # test_observatory_mode.py
 
 ## Connections
-- [[FastAPI_1]] - `imports_from` [EXTRACTED]
+- [[FastAPI_3]] - `imports_from` [EXTRACTED]
 - [[KillSwitchConfig]] - `imports` [EXTRACTED]
 - [[KillSwitchMonitor]] - `imports` [EXTRACTED]
 - [[ModeRequest]] - `imports` [EXTRACTED]
@@ -28,8 +28,8 @@ tags:
 - [[TestSetMode]] - `contains` [EXTRACTED]
 - [[_make_app()]] - `contains` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
-- [[asyncio_55]] - `imports` [EXTRACTED]
-- [[client()_3]] - `contains` [EXTRACTED]
+- [[asyncio_88]] - `imports` [EXTRACTED]
+- [[client()_7]] - `contains` [EXTRACTED]
 - [[get_module_mode()]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]

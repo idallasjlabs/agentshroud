@@ -12,7 +12,7 @@ tags:
 # ._load_privacy_policy()
 
 ## Connections
-- [[dot-__init__()_59]] - `calls` [EXTRACTED]
+- [[dot-__init__()_52]] - `calls` [EXTRACTED]
 - [[dot-_recompile_private_data_patterns()]] - `calls` [EXTRACTED]
 - [[Load optional admin-private tool patterns from policy file.]] - `rationale_for` [EXTRACTED]
 - [[MCPPermissionManager]] - `method` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustLevel"
+community: "TrustConfig"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/TrustConfig
 ---
 
 # .test_basic_can_read()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestActionGating]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustLevel
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

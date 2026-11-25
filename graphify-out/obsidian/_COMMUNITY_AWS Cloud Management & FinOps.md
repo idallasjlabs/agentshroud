@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[AWS Cloud Management & FinOps]] - document - .agents/skills/aws/README.md
-- [[Purpose_94]] - document - .agents/skills/aws/README.md
+- [[Purpose_96]] - document - .agents/skills/aws/README.md
 - [[Related Skills_26]] - document - .agents/skills/aws/README.md
-- [[Usage_36]] - document - .agents/skills/aws/README.md
+- [[Usage_37]] - document - .agents/skills/aws/README.md
 - [[awsREADME]] - document - .agents/skills/aws/README.md
 
 ## Live Query (requires Dataview plugin)

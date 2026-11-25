@@ -12,7 +12,7 @@ tags:
 # wifi_init()
 
 ## Connections
-- [[app_main()]] - `calls` [EXTRACTED]
+- [[app_main()_1]] - `calls` [EXTRACTED]
 - [[app_main.c]] - `contains` [EXTRACTED]
 - [[ui_update()]] - `calls` [EXTRACTED]
 

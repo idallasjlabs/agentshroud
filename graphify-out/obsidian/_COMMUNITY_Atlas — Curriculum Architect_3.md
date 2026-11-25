@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Atlas — Curriculum Architect_3]] - document - .agents/skills/atlas/README.md
-- [[Purpose_93]] - document - .agents/skills/atlas/README.md
+- [[Purpose_95]] - document - .agents/skills/atlas/README.md
 - [[Related Skills_25]] - document - .agents/skills/atlas/README.md
-- [[Usage_34]] - document - .agents/skills/atlas/README.md
+- [[Usage_35]] - document - .agents/skills/atlas/README.md
 - [[atlasREADME]] - document - .agents/skills/atlas/README.md
 
 ## Live Query (requires Dataview plugin)

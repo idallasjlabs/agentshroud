@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: ".test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message"
-location: "L5334"
+community: "test_llm_proxy.py"
+location: "L416"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message
+  - graphify/INFERRED
+  - community/test_llm_proxypy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message()]] - `contains` [EXTRACTED]
+- [[_make_fake_urlopen()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message
+#graphify/code #graphify/INFERRED #community/test_llm_proxypy

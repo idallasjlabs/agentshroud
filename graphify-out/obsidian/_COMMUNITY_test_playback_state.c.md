@@ -1,14 +1,13 @@
 ---
 type: community
-members: 32
+members: 27
 ---
 
 # test_playback_state.c
 
-**Members:** 32 nodes
+**Members:** 27 nodes
 
 ## Members
-- [[_on_vg_state()]] - code - firmware/voice-terminal/main/app_main.c
 - [[delivery_resume_offset()]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[delivery_track_sent_ok()]] - code - firmware/voice-terminal/main/playback_logic.h
 - [[face_set_state()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
@@ -31,15 +30,11 @@ members: 32
 - [[test_resume_offset_rewinds_8kb()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[test_track_sent_ok_is_monotonic()]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[tts_task()]] - code - firmware/voice-terminal/main/app_main.c
-- [[ui_face_set_state()]] - code - firmware/voice-terminal/main/ui_face.c
 - [[vt_agent_count()_2]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[vt_remote_log()_2]] - code - firmware/voice-terminal/test/test_playback_state/test_playback_state.c
 - [[wakeword_set_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_triggered()]] - code - firmware/voice-terminal/main/wakeword.c
 - [[wakeword_tts_playing()]] - code - firmware/voice-terminal/main/wakeword.c
 - [[wakeword_tts_stop_clear()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[wakeword_tts_stop_requested()]] - code - firmware/voice-terminal/main/wakeword.c
-- [[ws_vg_state_t_1]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,14 +44,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_wakeword.c]]
-- 9 edges to [[_COMMUNITY_app_main.c]]
-- 8 edges to [[_COMMUNITY_voice_task]]
+- 11 edges to [[_COMMUNITY_wakeword.c]]
+- 6 edges to [[_COMMUNITY_app_main.c]]
+- 3 edges to [[_COMMUNITY_ws_client.c]]
 - 1 edge to [[_COMMUNITY_main.rs]]
 
 ## Top bridge nodes
-- [[wakeword_tts_stop_requested()]] - degree 6, connects to 3 communities
-- [[wakeword_triggered()]] - degree 15, connects to 2 communities
-- [[wakeword_tts_playing()]] - degree 8, connects to 2 communities
-- [[ui_face_set_state()]] - degree 6, connects to 2 communities
+- [[wakeword_tts_playing()]] - degree 8, connects to 3 communities
+- [[tts_task()]] - degree 9, connects to 2 communities
 - [[test_playback_state.c]] - degree 19, connects to 1 community
+- [[playback_step()]] - degree 10, connects to 1 community
+- [[reset_all()]] - degree 8, connects to 1 community

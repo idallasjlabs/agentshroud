@@ -11,6 +11,6 @@ tags:
 # TransportFactory
 
 ## Connections
-- [[dot-__init__()_72]] - `references` [EXTRACTED]
+- [[dot-__init__()_63]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GatewayEmailService

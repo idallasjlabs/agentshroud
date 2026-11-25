@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "SharedMemoryManager"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/SharedMemoryManager
 ---
 
 # TestGroupMemoryInvisibleFromDM
@@ -19,4 +19,4 @@ tags:
 - [[Group workspace content must not leak into any user's DM workspace.]] - `rationale_for` [EXTRACTED]
 - [[test_group_isolation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

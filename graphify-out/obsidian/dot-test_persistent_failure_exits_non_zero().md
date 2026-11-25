@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestNvdReportOnly]] - `method` [EXTRACTED]
-- [[_fake_urlopen()_2]] - `contains` [EXTRACTED]
-- [[_fake_urlopen()_9]] - `indirect_call` [INFERRED]
+- [[_fake_urlopen()]] - `contains` [EXTRACTED]
+- [[_fake_urlopen()_7]] - `indirect_call` [INFERRED]
 - [[_sync()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestNvdReportOnly

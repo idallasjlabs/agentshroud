@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "email_send"
+community: "AgentTarget"
 location: "L127"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/email_send
+  - community/AgentTarget
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/email_send
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

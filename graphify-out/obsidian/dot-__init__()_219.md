@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/forwarder.py"
+source_file: "gateway/security/falco_monitor.py"
 type: "code"
-community: "HTTPForwarder"
-location: "L57"
+community: "FalcoAlertWatcher"
+location: "L194"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPForwarder
+  - community/FalcoAlertWatcher
 ---
 
 # .__init__()
 
 ## Connections
-- [[ForwarderConfig]] - `calls` [EXTRACTED]
-- [[HTTPForwarder]] - `method` [EXTRACTED]
+- [[FalcoAlertWatcher]] - `method` [EXTRACTED]
+- [[Path_73]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPForwarder
+#graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

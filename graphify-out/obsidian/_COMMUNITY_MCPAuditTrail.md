@@ -8,7 +8,7 @@ members: 34
 **Members:** 34 nodes
 
 ## Members
-- [[dot-__init__()_65]] - code - gateway/proxy/mcp_audit.py
+- [[dot-__init__()_54]] - code - gateway/proxy/mcp_audit.py
 - [[dot-__len__()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-_compute_chain_hash()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-entries()]] - code - gateway/proxy/mcp_audit.py
@@ -30,7 +30,7 @@ members: 34
 - [[dot-total_appended()]] - code - gateway/proxy/mcp_audit.py
 - [[dot-verify_chain()]] - code - gateway/proxy/mcp_audit.py
 - [[A single MCP tool call audit entry.]] - rationale - gateway/proxy/mcp_audit.py
-- [[Any_27]] - code
+- [[Any_23]] - code
 - [[Audit trail for MCP tool calls, integrated with SHA-256 hash chain.]] - rationale - gateway/proxy/mcp_audit.py
 - [[Compute hash chain values. Returns (content_hash, chain_hash).]] - rationale - gateway/proxy/mcp_audit.py
 - [[Generate an MCP audit report summary.]] - rationale - gateway/proxy/mcp_audit.py
@@ -51,8 +51,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 12 edges to [[_COMMUNITY_test_mcp_proxy.py]]
-- 3 edges to [[_COMMUNITY_MCPToolCall]]
+- 13 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 2 edges to [[_COMMUNITY_MCPToolCall]]
 - 1 edge to [[_COMMUNITY_make_proxy]]
 
 ## Top bridge nodes

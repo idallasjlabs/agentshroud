@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Proxy bot Slack Web API calls through SecurityPipeline. Restricted to the…]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[api_route_1]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 

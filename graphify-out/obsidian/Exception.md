@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "MiddlewareManager"
+community: "make_proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/make_proxy
 ---
 
 # Exception
 
 ## Connections
-- [[dot-_record_guard_init_failure()]] - `references` [EXTRACTED]
+- [[dot-__init__()_22]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/make_proxy

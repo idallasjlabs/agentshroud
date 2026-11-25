@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/approval_hardening.py"
+source_file: "gateway/security/progressive_lockdown.py"
 type: "code"
-community: "TestApprovalHardening"
-location: "L114"
+community: "ProgressiveLockdown"
+location: "L122"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/ProgressiveLockdown
 ---
 
 # .__init__()
 
 ## Connections
-- [[ApprovalHardening]] - `method` [EXTRACTED]
-- [[ApprovalHardeningConfig]] - `references` [EXTRACTED]
+- [[Args decay_window_seconds When set, only blocks recorded within this many…]] - `rationale_for` [EXTRACTED]
+- [[ProgressiveLockdown]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

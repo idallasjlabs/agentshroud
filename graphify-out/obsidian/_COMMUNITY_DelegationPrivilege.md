@@ -8,7 +8,7 @@ members: 70
 **Members:** 70 nodes
 
 ## Members
-- [[dot-__init__()_9]] - code - gateway/security/delegation.py
+- [[dot-__init__()_7]] - code - gateway/security/delegation.py
 - [[dot-_cleanup_expired()]] - code - gateway/security/delegation.py
 - [[dot-_load()]] - code - gateway/security/delegation.py
 - [[dot-_require_owner()]] - code - gateway/security/delegation.py
@@ -45,14 +45,14 @@ members: 70
 - [[dot-test_revoke_all_for_user()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_removes_delegation()]] - code - gateway/tests/test_delegation.py
 - [[dot-test_revoke_returns_false_when_nothing_to_revoke()]] - code - gateway/tests/test_delegation.py
-- [[dot-to_dict()_2]] - code - gateway/security/delegation.py
+- [[dot-to_dict()_1]] - code - gateway/security/delegation.py
 - [[A single time-bounded privilege delegation record.]] - rationale - gateway/security/delegation.py
 - [[Create a time-bounded delegation. Args owner_id Must match configured…]] - rationale - gateway/security/delegation.py
 - [[Delegation]] - code - gateway/security/delegation.py
 - [[DelegationError]] - code - gateway/security/delegation.py
 - [[DelegationManager]] - code - gateway/security/delegation.py
 - [[DelegationPrivilege]] - code - gateway/security/delegation.py
-- [[Enum_6]] - code
+- [[Enum_5]] - code
 - [[In-memory delegation manager (no disk IO).]] - rationale - gateway/tests/test_delegation.py
 - [[Manages owner-away privilege delegations. Thread-safe via file locking for…]] - rationale - gateway/security/delegation.py
 - [[Owner-Away Privilege Delegation (v0.9.0 Tranche 1) Owner can delegate specific…]] - rationale - gateway/security/delegation.py
@@ -74,9 +74,9 @@ members: 70
 - [[Tests for gatewaysecuritydelegation.py — V9-T1 Owner-away privilege…]] - rationale - gateway/tests/test_delegation.py
 - [[ValueError]] - code
 - [[delegation.py]] - code - gateway/security/delegation.py
-- [[fixture_8]] - code
+- [[fixture_14]] - code
 - [[mgr()]] - code - gateway/tests/test_delegation.py
-- [[str_3]] - code
+- [[str_2]] - code
 - [[test_delegation.py]] - code - gateway/tests/test_delegation.py
 
 ## Live Query (requires Dataview plugin)
@@ -91,7 +91,7 @@ SORT file.name ASC
 - 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
 
 ## Top bridge nodes
 - [[DelegationPrivilege]] - degree 22, connects to 3 communities

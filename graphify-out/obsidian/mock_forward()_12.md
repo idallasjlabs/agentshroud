@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
 community: "test_llm_proxy_failover.py"
-location: "L214"
+location: "L527"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # mock_forward()
 
 ## Connections
-- [[test_proxy_failover_ollama_unreachable_returns_original_429()]] - `contains` [EXTRACTED]
+- [[test_proxy_failover_gemini_tools_passthrough()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

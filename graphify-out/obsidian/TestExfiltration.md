@@ -15,7 +15,7 @@ tags:
 - [[dot-test_curl_pipe_to_shell_blocks()]] - `method` [EXTRACTED]
 - [[dot-test_requests_post_to_external_host_flags()]] - `method` [EXTRACTED]
 - [[dot-test_urllib_urlopen_flags()]] - `method` [EXTRACTED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 

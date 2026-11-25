@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "test_listen_offset_resumes_partial_upload"
 location: "L3341"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/test_listen_offset_resumes_partial_upload
 ---
 
 # test_listen_offset_resumes_partial_upload()
@@ -16,7 +16,7 @@ tags:
 - [[_capture_transcribe()]] - `contains` [EXTRACTED]
 - [[_capture_transcribe()_1]] - `indirect_call` [INFERRED]
 - [[_mock_ws()]] - `calls` [EXTRACTED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_53]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/test_listen_offset_resumes_partial_upload

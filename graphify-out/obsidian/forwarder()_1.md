@@ -12,8 +12,8 @@ tags:
 # forwarder()
 
 ## Connections
-- [[_StubForwarder_1]] - `calls` [EXTRACTED]
-- [[fixture_140]] - `references` [EXTRACTED]
+- [[_StubForwarder_2]] - `calls` [EXTRACTED]
+- [[fixture_139]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

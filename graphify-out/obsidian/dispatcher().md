@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_killswitch_monitor_behavior.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "KillSwitchMonitor"
-location: "L36"
+community: "test_alert_dispatcher_retry.py"
+location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_alert_dispatcher_retrypy
 ---
 
 # dispatcher()
 
 ## Connections
-- [[fixture_22]] - `references` [EXTRACTED]
-- [[test_killswitch_monitor_behavior.py]] - `contains` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[Path_2]] - `references` [EXTRACTED]
+- [[fixture_11]] - `references` [EXTRACTED]
+- [[test_alert_dispatcher_retry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy

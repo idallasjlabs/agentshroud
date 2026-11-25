@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ssh_config.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # ssh_config.py
@@ -16,9 +16,9 @@ tags:
 - [[SSHHostConfig]] - `contains` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[proxy.py]] - `imports_from` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `imports_from` [EXTRACTED]
 - [[test_ssh_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_ssh_write_file_endpoint.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

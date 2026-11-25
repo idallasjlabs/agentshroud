@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "PipelineAction"
+community: "test_clamav_pipeline.py"
 location: "L198"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/test_clamav_pipelinepy
 ---
 
 # scan_bytes()
 
 ## Connections
-- [[Any_74]] - `references` [EXTRACTED]
+- [[Any_89]] - `references` [EXTRACTED]
 - [[Stream bytes to clamdscan for inline malware scanning. Uses ``clamdscan…]] - `rationale_for` [EXTRACTED]
 - [[clamav_scanner.py_2]] - `contains` [EXTRACTED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -24,4 +24,4 @@ tags:
 - [[test_scan_bytes_infected()]] - `calls` [EXTRACTED]
 - [[test_scan_bytes_timeout()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

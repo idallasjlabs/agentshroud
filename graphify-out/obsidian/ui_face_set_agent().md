@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_on_ws_ctrl()]] - `calls` [INFERRED]
-- [[app_main()]] - `calls` [INFERRED]
+- [[app_main()_1]] - `calls` [INFERRED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[voice_task()]] - `calls` [INFERRED]
 

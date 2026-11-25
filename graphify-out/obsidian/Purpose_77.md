@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/python-jose.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "python-jose"
+community: "httpx"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/python-jose
+  - community/httpx
 ---
 
 # Purpose
 
 ## Connections
-- [[python-jose_1]] - `contains` [EXTRACTED]
+- [[httpx]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/python-jose
+#graphify/document #graphify/EXTRACTED #community/httpx

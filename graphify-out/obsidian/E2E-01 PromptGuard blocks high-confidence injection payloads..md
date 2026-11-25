@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L83"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # E2E-01: PromptGuard blocks high-confidence injection payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestE2E01PromptGuardBlocking]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Rollback a named bot container to the previous image tag.]] - `rationale_for` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
-- [[post_5]] - `references` [EXTRACTED]
+- [[post_6]] - `references` [EXTRACTED]
 - [[rollback_openclaw()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/apipy

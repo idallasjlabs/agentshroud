@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # .get_role_hierarchy()
@@ -17,4 +17,4 @@ tags:
 - [[Get role hierarchy levels (higher number = more privileges).]] - `rationale_for` [EXTRACTED]
 - [[RBACManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

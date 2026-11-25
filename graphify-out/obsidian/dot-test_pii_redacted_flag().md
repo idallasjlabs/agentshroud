@@ -12,6 +12,6 @@ tags:
 # .test_pii_redacted_flag()
 
 ## Connections
-- [[TestAuditTrail_1]] - `method` [EXTRACTED]
+- [[TestAuditTrail]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditTrail

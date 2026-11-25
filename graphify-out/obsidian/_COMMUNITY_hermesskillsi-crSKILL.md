@@ -79,7 +79,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Skill Mindmap Architect (MM)_1]]
 - 1 edge to [[_COMMUNITY_Skill Project Management (PM)_1]]
 - 1 edge to [[_COMMUNITY_Pre-Deployment Checklist_1]]
-- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT]]
 - 1 edge to [[_COMMUNITY_REQUIRED NOTES — PRODUCE EVERY ONE OF THESE]]
 - 1 edge to [[_COMMUNITY_Skill Security Review (SEC)_7]]
 - 1 edge to [[_COMMUNITY_Skill Test-Driven Development (TDD)_6]]

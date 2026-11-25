@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_write"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_write
 ---
 
 # parametrize
 
 ## Connections
-- [[dot-test_string_mapping()]] - `references` [EXTRACTED]
-- [[dot-test_type_mapping()]] - `references` [EXTRACTED]
+- [[dot-test_invalid_profile_refuses_to_load()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_write

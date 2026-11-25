@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "_patch_http_connection"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/_patch_http_connection
 ---
 
 # _FakeResponse
 
 ## Connections
-- [[dot-__init__()_163]] - `method` [EXTRACTED]
+- [[dot-__init__()_147]] - `method` [EXTRACTED]
 - [[dot-read()]] - `method` [EXTRACTED]
 - [[dot-test_200_returns_parsed_json()]] - `calls` [EXTRACTED]
 - [[dot-test_404_returns_empty_dict()]] - `calls` [EXTRACTED]
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_tail_limit_applied()]] - `calls` [EXTRACTED]
 - [[test_soc_services_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/_patch_http_connection

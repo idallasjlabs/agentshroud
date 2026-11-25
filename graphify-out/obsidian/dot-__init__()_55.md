@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_differential_pii_detector.py"
+source_file: "gateway/security/egress_monitor.py"
 type: "code"
-community: "TestPresidioPathContract"
-location: "L210"
+community: "EgressEvent"
+location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPresidioPathContract
+  - community/EgressEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeRecognizerResult_1]] - `method` [EXTRACTED]
+- [[EgressMonitor]] - `method` [EXTRACTED]
+- [[EgressMonitorConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPresidioPathContract
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

@@ -16,6 +16,6 @@ tags:
 - [[dot-_send_notification()]] - `references` [EXTRACTED]
 - [[dot-dispatch()]] - `references` [EXTRACTED]
 - [[dot-get_digest()]] - `references` [EXTRACTED]
-- [[dot-get_stats()_11]] - `references` [EXTRACTED]
+- [[dot-get_stats()_12]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AlertDispatcher

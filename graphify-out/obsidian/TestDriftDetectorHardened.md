@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ContainerSnapshot"
+community: "DriftDetector"
 location: "L919"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/DriftDetector
 ---
 
 # TestDriftDetectorHardened
@@ -18,4 +18,4 @@ tags:
 - [[Tests for drift detector hardening.]] - `rationale_for` [EXTRACTED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/DriftDetector

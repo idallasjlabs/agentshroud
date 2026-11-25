@@ -12,7 +12,7 @@ tags:
 # audio_preinit()
 
 ## Connections
-- [[app_main()]] - `calls` [INFERRED]
+- [[app_main()_1]] - `calls` [INFERRED]
 - [[audio.c]] - `contains` [EXTRACTED]
 - [[esp_err_t_5]] - `references` [EXTRACTED]
 

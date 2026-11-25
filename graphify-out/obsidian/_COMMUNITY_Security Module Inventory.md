@@ -1,11 +1,11 @@
 ---
 type: community
-members: 34
+members: 29
 ---
 
 # Security Module Inventory
 
-**Members:** 34 nodes
+**Members:** 29 nodes
 
 ## Members
 - [[1. Ingress Controller]] - document - docs/security/security-architecture.md
@@ -29,13 +29,8 @@ members: 34
 - [[26. MCP Inspector]] - document - docs/security/security-architecture.md
 - [[3. Web Application Firewall (WAF)]] - document - docs/security/security-architecture.md
 - [[4. Geo-Blocking]] - document - docs/security/security-architecture.md
-- [[5. Network Isolation]] - document - docs/security/security-architecture.md
-- [[6. DNS Filter]] - document - docs/security/security-architecture.md
-- [[7. TLS Termination and Inspection]] - document - docs/security/security-architecture.md
-- [[8. Network Rate Limiter]] - document - docs/security/security-architecture.md
 - [[9. seccomp Profiles]] - document - docs/security/security-architecture.md
 - [[Layer 1 Perimeter Security (4 Modules)]] - document - docs/security/security-architecture.md
-- [[Layer 2 Network Security (4 Modules)]] - document - docs/security/security-architecture.md
 - [[Layer 3 Operating System Security (4 Modules)]] - document - docs/security/security-architecture.md
 - [[Layer 4 Platform Security (4 Modules)]] - document - docs/security/security-architecture.md
 - [[Layer 5 Identity & Access Management (4 Modules)]] - document - docs/security/security-architecture.md
@@ -55,5 +50,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Security Controls]]
 
 ## Top bridge nodes
-- [[Security Module Inventory]] - degree 8, connects to 1 community
-- [[Layer 2 Network Security (4 Modules)]] - degree 6, connects to 1 community
+- [[Security Module Inventory]] - degree 8, connects to 2 communities

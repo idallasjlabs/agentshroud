@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_result_endpoint.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "ProxyResult"
-location: "L178"
+community: "test_telegram_proxy_outbound.py"
+location: "L4840"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ProxyResult
+  - graphify/EXTRACTED
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # _capture()
 
 ## Connections
-- [[dot-test_body_agent_id_used_without_header()]] - `indirect_call` [INFERRED]
-- [[dot-test_header_user_id_overrides_body_agent_id()_1]] - `indirect_call` [INFERRED]
-- [[ProxyResult]] - `calls` [EXTRACTED]
+- [[dot-test_activity_command_reports_tracker_unhealthy()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ProxyResult
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

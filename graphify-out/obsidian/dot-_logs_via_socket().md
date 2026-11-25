@@ -15,6 +15,6 @@ tags:
 - [[dot-get_logs()_1]] - `calls` [EXTRACTED]
 - [[Read container logs via Docker Unix socket — fallback when engine unavailable.…]] - `rationale_for` [EXTRACTED]
 - [[ServiceManager]] - `method` [EXTRACTED]
-- [[connect()_1]] - `contains` [EXTRACTED]
+- [[connect()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ServiceManager

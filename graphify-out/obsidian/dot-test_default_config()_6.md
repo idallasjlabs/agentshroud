@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "TestEgressFilterConfig"
+community: "EgressFilterConfig"
 location: "L30"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilterConfig
+  - community/EgressFilterConfig
 ---
 
 # .test_default_config()
 
 ## Connections
 - [[EgressFilterConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
+- [[Test default configuration values._4]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

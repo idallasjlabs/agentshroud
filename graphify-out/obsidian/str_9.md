@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "web_proxy.py"
+community: "test_all_modules_enforce.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/test_all_modules_enforcepy
 ---
 
 # str
 
 ## Connections
-- [[ProxyAction]] - `inherits` [EXTRACTED]
+- [[SubagentEventType]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

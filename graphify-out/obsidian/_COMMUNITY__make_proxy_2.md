@@ -54,13 +54,13 @@ members: 78
 - [[_make_proxy()_4]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_openai_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[_openai_tool_use_ok()]] - code - gateway/tests/test_llm_proxy_local_parity.py
-- [[asyncio_83]] - code
+- [[asyncio_84]] - code
 - [[deepseek-r1 is routed to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[failover_local_secondary_succeeded stat increments on successful secondary…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[mlx-communitydeepseek-r1 full ID routes to mlx_lm endpoint.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[ollama prefix is stripped during proxy_messages dispatch and normalization…]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[p99 timeout (TimeoutError on primary local) triggers secondary local model.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
-- [[parametrize_28]] - code
+- [[parametrize_30]] - code
 - [[proxy_messages applies the shim only on the Fieldflare route, before forwarding.]] - rationale - gateway/tests/test_llm_proxy_local_parity.py
 - [[test_cloud_mode_anthropic_tool_use_shape_passes_through()]] - code - gateway/tests/test_llm_proxy_local_parity.py
 - [[test_deepseek_r1_routes_to_mlxlm()]] - code - gateway/tests/test_llm_proxy_local_parity.py

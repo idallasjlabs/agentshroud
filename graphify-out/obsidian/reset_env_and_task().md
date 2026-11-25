@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Reset AGENTSHROUD_MODE and cancel any revert task between tests.]] - `rationale_for` [EXTRACTED]
-- [[fixture_14]] - `references` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
 - [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

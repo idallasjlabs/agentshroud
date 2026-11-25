@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "web_proxy.py"
+community: "test_privilege_separation.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/test_privilege_separationpy
 ---
 
 # fixture
 
 ## Connections
-- [[default_config()_2]] - `references` [EXTRACTED]
-- [[monitor()]] - `references` [EXTRACTED]
-- [[monitor_config()_1]] - `references` [EXTRACTED]
+- [[enforce_config()]] - `references` [EXTRACTED]
+- [[middleware_manager()]] - `references` [EXTRACTED]
+- [[strict_sandbox()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

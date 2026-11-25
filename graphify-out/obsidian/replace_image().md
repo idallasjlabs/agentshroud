@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "._is_domain_allowed"
+community: "ToolResultSanitizer"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_is_domain_allowed
+  - community/ToolResultSanitizer
 ---
 
 # replace_image()
@@ -17,4 +17,4 @@ tags:
 - [[dot-_url_has_blocked_patterns()]] - `calls` [EXTRACTED]
 - [[dot-sanitize_images()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_is_domain_allowed
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

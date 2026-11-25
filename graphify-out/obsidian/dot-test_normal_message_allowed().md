@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_guard.py"
 type: "code"
-community: "ContextGuard"
+community: "context_guard.py"
 location: "L15"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/context_guardpy
 ---
 
 # .test_normal_message_allowed()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckMessage]] - `method` [EXTRACTED]
 - [[check_message()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/context_guardpy

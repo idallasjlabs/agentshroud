@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "voice_task"
+community: "ws_client.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/voice_task
+  - community/ws_clientc
 ---
 
 # ws_client_handle_t
@@ -22,4 +22,4 @@ tags:
 - [[ws_client_send_pcm()]] - `references` [EXTRACTED]
 - [[ws_client_send_stop()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/voice_task
+#graphify/code #graphify/EXTRACTED #community/ws_clientc

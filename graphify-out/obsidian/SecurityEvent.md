@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "Severity"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/Severity
 ---
 
 # SecurityEvent
@@ -17,7 +17,7 @@ tags:
 - [[dot-test_minimal_construction()]] - `calls` [EXTRACTED]
 - [[dot-test_no_bot_id_returns_all_events()]] - `calls` [EXTRACTED]
 - [[dot-test_optional_fields_default_none()]] - `calls` [EXTRACTED]
-- [[BaseModel_10]] - `inherits` [EXTRACTED]
+- [[BaseModel_11]] - `inherits` [EXTRACTED]
 - [[TestCollectRecentEvents]] - `uses` [INFERRED]
 - [[TestEgressLogBotFilter]] - `uses` [INFERRED]
 - [[TestFromAuditChainEntry]] - `uses` [INFERRED]
@@ -35,4 +35,4 @@ tags:
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/Severity

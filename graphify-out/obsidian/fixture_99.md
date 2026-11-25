@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_docs_accuracy.py"
+community: "OutputSchemaEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/OutputSchemaEnforcer
 ---
 
 # fixture
 
 ## Connections
-- [[dot-contributing()]] - `references` [EXTRACTED]
-- [[dot-readme()]] - `references` [EXTRACTED]
-- [[dot-security_md()]] - `references` [EXTRACTED]
+- [[enforcer()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

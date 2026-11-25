@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "FileSandbox"
+community: "test_privilege_separation.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/test_privilege_separationpy
 ---
 
 # test_privilege_separation.py
@@ -28,6 +28,6 @@ tags:
 - [[file_sandbox.py]] - `imports_from` [EXTRACTED]
 - [[middleware.py_2]] - `imports_from` [EXTRACTED]
 - [[middleware_manager()]] - `contains` [EXTRACTED]
-- [[strict_sandbox()_1]] - `contains` [EXTRACTED]
+- [[strict_sandbox()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

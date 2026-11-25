@@ -8,7 +8,7 @@ members: 45
 **Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_85]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-__init__()_77]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_classify_risk()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_domain_matches()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_init_browser()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -19,10 +19,10 @@ members: 45
 - [[dot-_take_screenshot()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-_validate_url()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-click()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-close()_4]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-close()_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-extract()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-fill_field()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[dot-get_audit_log()_5]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[dot-get_audit_log()_6]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[dot-navigate()_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[CLI interface for SecureBrowser_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Check if action requires approval Security Approval queue integration_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -31,7 +31,7 @@ members: 45
 - [[Clean up browser resources_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Click an element Security Risk classification for destructive actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Enum_21]] - code
-- [[Exception_8]] - code
+- [[Exception_6]] - code
 - [[Extract data from page Security No credential extraction allowed_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Fill a single form field Security Risk classification, approval for sensitive…_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Initialize browser with security settings_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -42,7 +42,7 @@ members: 45
 - [[Raised when security policy is violated_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Return complete audit log_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Risk classification for browser actions_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[RiskLevel_3]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[RiskLevel_2]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Secure browser automation with enterprise controls Security guarantees - Only…_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[SecureBrowser_1]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[SecureBrowser - Enterprise-grade secure browser automation Part of AgentShroud…_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
@@ -52,7 +52,7 @@ members: 45
 - [[Take screenshot and save to audit directory_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[Validate URL against allowlistblocklist Security This is the primary URL…_1]] - rationale - docker/config/hermes/skills/i-browser/scripts/browse.py
 - [[hermesskillsi-browserscriptsbrowse.py]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
-- [[main()_12]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
+- [[main()_11]] - code - docker/config/hermes/skills/i-browser/scripts/browse.py
 
 ## Live Query (requires Dataview plugin)
 

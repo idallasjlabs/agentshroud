@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "descriptors.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/descriptorspy
 ---
 
 # RuntimeError
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[DescriptorIntegrityError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/descriptorspy

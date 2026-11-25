@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_approvals.py"
 type: "code"
-community: "test_edge_approvals.py"
+community: "test_edge_pipeline.py"
 location: "L179"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_approvalspy
+  - community/test_edge_pipelinepy
 ---
 
 # .test_after_use_a_new_request_needs_a_new_approval()
@@ -15,4 +15,4 @@ tags:
 - [[TestIdempotency]] - `method` [EXTRACTED]
 - [[_ctx()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_approvalspy
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

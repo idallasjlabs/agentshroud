@@ -12,7 +12,7 @@ tags:
 # AuditEvent
 
 ## Connections
-- [[dot-__init__()_196]] - `method` [EXTRACTED]
+- [[dot-__init__()_200]] - `method` [EXTRACTED]
 - [[dot-_export_cef()]] - `references` [EXTRACTED]
 - [[dot-_export_json()]] - `references` [EXTRACTED]
 - [[dot-_export_jsonld()]] - `references` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_content_hash()]] - `calls` [EXTRACTED]
 - [[dot-test_entry_hash_chain()]] - `calls` [EXTRACTED]
 - [[dot-test_event_creation()]] - `calls` [EXTRACTED]
-- [[dot-to_dict()_13]] - `method` [EXTRACTED]
+- [[dot-to_dict()_11]] - `method` [EXTRACTED]
 - [[dot-verify_hash_chain()]] - `calls` [EXTRACTED]
 - [[AuditExporter]] - `uses` [INFERRED]
 - [[Represents a single audit event. The ``bot_id`` field identifies which bot…]] - `rationale_for` [EXTRACTED]

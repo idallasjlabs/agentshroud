@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TestDependencySecurity"
+community: "TestHTTPSecurity"
 location: "L628"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestDependencySecurity
+  - community/TestHTTPSecurity
 ---
 
 # Test dependency and supply chain security.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDependencySecurity]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestDependencySecurity
+#graphify/rationale #graphify/EXTRACTED #community/TestHTTPSecurity

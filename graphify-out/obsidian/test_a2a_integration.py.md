@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "A2APolicyEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/A2APolicyEngine
 ---
 
 # test_a2a_integration.py
@@ -20,7 +20,7 @@ tags:
 - [[ProgressiveTrustConfig]] - `imports` [EXTRACTED]
 - [[SCRUM-129 Phase 5 — real-HTTP integration tests for the A2A governance module,…]] - `rationale_for` [EXTRACTED]
 - [[TrustManager]] - `imports` [EXTRACTED]
-- [[_jsonrpc()_1]] - `contains` [EXTRACTED]
+- [[_jsonrpc()]] - `contains` [EXTRACTED]
 - [[a2a_policy.py]] - `imports_from` [EXTRACTED]
 - [[a2a_proxy.py]] - `imports_from` [EXTRACTED]
 - [[progressive_trust_config.py]] - `imports_from` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[trust_manager()_5]] - `contains` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

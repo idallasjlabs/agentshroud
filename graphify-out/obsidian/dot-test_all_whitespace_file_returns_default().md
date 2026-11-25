@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_utils_secrets.py"
 type: "code"
-community: "read_secret"
+community: "secrets.py"
 location: "L93"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/read_secret
+  - community/secretspy
 ---
 
 # .test_all_whitespace_file_returns_default()
@@ -15,4 +15,4 @@ tags:
 - [[TestReadSecret]] - `method` [EXTRACTED]
 - [[read_secret()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/read_secret
+#graphify/code #graphify/EXTRACTED #community/secretspy

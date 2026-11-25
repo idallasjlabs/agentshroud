@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_e2e_proxy.py"
 type: "code"
-community: "test_security_integration.py"
-location: "L60"
+community: "test_e2e_proxy.py"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/test_e2e_proxypy
 ---
 
 # sanitizer()
 
 ## Connections
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[fixture_106]] - `references` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[fixture_92]] - `references` [EXTRACTED]
+- [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

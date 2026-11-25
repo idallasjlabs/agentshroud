@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Pull Request Generator (PR)_2]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Purpose_143]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Purpose_145]] - document - docker/config/openclaw/skills/i-pr/README.md
 - [[Related Skills_75]] - document - docker/config/openclaw/skills/i-pr/README.md
-- [[Usage_85]] - document - docker/config/openclaw/skills/i-pr/README.md
+- [[Usage_86]] - document - docker/config/openclaw/skills/i-pr/README.md
 - [[openclawskillsi-prREADME]] - document - docker/config/openclaw/skills/i-pr/README.md
 
 ## Live Query (requires Dataview plugin)

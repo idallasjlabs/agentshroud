@@ -1,27 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_config.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "test_mcp_proxy.py"
-location: "L98"
+community: "drift_detector.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/drift_detectorpy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-test_from_dict_basic()]] - `calls` [EXTRACTED]
-- [[dot-test_from_dict_defaults()]] - `calls` [EXTRACTED]
-- [[dot-test_from_dict_http_transport()]] - `calls` [EXTRACTED]
-- [[Any_26]] - `references` [EXTRACTED]
-- [[MCPProxyConfig]] - `method` [EXTRACTED]
-- [[MCPServerConfig]] - `calls` [EXTRACTED]
-- [[MCPToolConfig]] - `calls` [EXTRACTED]
-- [[MCPTransport]] - `calls` [EXTRACTED]
-- [[Parse config from a dictionary (e.g. loaded from YAML).]] - `rationale_for` [EXTRACTED]
-- [[PermissionLevel]] - `calls` [EXTRACTED]
-- [[lifespan()]] - `calls` [EXTRACTED]
+- [[dot-get_baseline()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/drift_detectorpy

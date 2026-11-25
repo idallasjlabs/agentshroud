@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_make_update"
-location: "L5041"
+community: "PassthroughPipeline"
+location: "L5450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_update
+  - community/PassthroughPipeline
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_self_diagnostic_command_is_handled_locally_for_owner()]] - `contains` [EXTRACTED]
+- [[dot-test_self_diagnostic_dedupe_handles_missing_update_id_different_messages()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_update
+#graphify/code #graphify/EXTRACTED #community/PassthroughPipeline

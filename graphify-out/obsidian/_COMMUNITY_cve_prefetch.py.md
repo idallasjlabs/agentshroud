@@ -12,7 +12,7 @@ members: 5
 - [[curl_json()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 - [[cve_prefetch.py]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 - [[known_ghsa_ids()]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
-- [[main()_15]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
+- [[main()_14]] - code - docker/config/openclaw/cron/scripts/cve_prefetch.py
 
 ## Live Query (requires Dataview plugin)
 

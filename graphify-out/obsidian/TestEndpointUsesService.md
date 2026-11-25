@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: "app"
+community: "GatewayEmailService"
 location: "L152"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app
+  - community/GatewayEmailService
 ---
 
 # TestEndpointUsesService
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_email_send_routes_through_injectable_service()]] - `method` [EXTRACTED]
 - [[test_gateway_email_service.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

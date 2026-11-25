@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "OutputCanary"
+community: "TestHeuristicClassifier"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestHeuristicClassifier
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
+- [[dot-_score_signal()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "middleware.py"
+community: "MemoryIntegrityMonitor"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryIntegrityMonitor
 ---
 
 # .register_expected_write()
@@ -17,4 +17,4 @@ tags:
 - [[ModificationSource]] - `references` [EXTRACTED]
 - [[Register an expected write to a file to prevent false alerts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

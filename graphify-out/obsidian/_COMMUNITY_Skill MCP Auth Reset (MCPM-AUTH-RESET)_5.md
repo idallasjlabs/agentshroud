@@ -34,7 +34,7 @@ members: 32
 - [[Step 3 Verify Authentication_5]] - document - .opencode/agents/i-mcpm-auth-reset.md
 - [[Step 4 Restart Claude Code_5]] - document - .opencode/agents/i-mcpm-auth-reset.md
 - [[Troubleshooting_36]] - document - .opencode/agents/i-mcpm-auth-reset.md
-- [[Usage_110]] - document - .opencode/agents/i-mcpm-auth-reset.md
+- [[Usage_111]] - document - .opencode/agents/i-mcpm-auth-reset.md
 - [[Verification Checklist_6]] - document - .opencode/agents/i-mcpm-auth-reset.md
 - [[Verify Authentication_10]] - document - .opencode/agents/i-mcpm-auth-reset.md
 - [[Verify Authentication_11]] - document - .opencode/agents/i-mcpm-auth-reset.md

@@ -16,9 +16,9 @@ tags:
 - [[TestGroupPresenceProbe]] - `method` [EXTRACTED]
 - [[_make_group_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_send()_9]] - `contains` [EXTRACTED]
-- [[fake_send()_12]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_send()_8]] - `contains` [EXTRACTED]
+- [[fake_send()_11]] - `indirect_call` [INFERRED]
 - [[hello, can you help' must reach the LLM path, not be swallowed by the probe.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

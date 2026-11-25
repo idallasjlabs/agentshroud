@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "LockdownLevel"
+community: "A2APolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LockdownLevel
+  - community/A2APolicyEngine
 ---
 
 # str
 
 ## Connections
-- [[LockdownLevel]] - `inherits` [EXTRACTED]
+- [[A2AMethod]] - `inherits` [EXTRACTED]
+- [[A2APolicyAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LockdownLevel
+#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine

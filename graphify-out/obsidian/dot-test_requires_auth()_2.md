@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/tests/test_op_proxy.py"
 type: "code"
-community: "test_intel_endpoint.py"
-location: "L173"
+community: "_is_op_reference_allowed"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_intel_endpointpy
+  - community/_is_op_reference_allowed
 ---
 
 # .test_requires_auth()
 
 ## Connections
-- [[TestSubmitAuth]] - `method` [EXTRACTED]
-- [[_draft()]] - `calls` [EXTRACTED]
+- [[Endpoint returns 401 without auth override._1]] - `rationale_for` [EXTRACTED]
+- [[TestOpProxyEndpoint]] - `method` [EXTRACTED]
+- [[auth_dep()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy
+#graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

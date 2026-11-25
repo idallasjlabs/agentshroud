@@ -12,7 +12,7 @@ tags:
 # now()
 
 ## Connections
-- [[fixture_97]] - `references` [EXTRACTED]
+- [[fixture_102]] - `references` [EXTRACTED]
 - [[test_audit_archive.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/archive_old_events

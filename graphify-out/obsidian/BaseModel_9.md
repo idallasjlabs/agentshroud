@@ -1,18 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "CompetitiveIntelReport"
+community: "api.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CompetitiveIntelReport
+  - community/apipy
 ---
 
 # BaseModel
 
 ## Connections
-- [[Citation]] - `inherits` [EXTRACTED]
-- [[CompetitiveIntelReport]] - `inherits` [EXTRACTED]
-- [[CompetitorEntry]] - `inherits` [EXTRACTED]
+- [[ConfigUpdate]] - `inherits` [EXTRACTED]
+- [[IntelDraftEntry]] - `inherits` [EXTRACTED]
+- [[IntelDraftRequest]] - `inherits` [EXTRACTED]
+- [[KillSwitchAction]] - `inherits` [EXTRACTED]
+- [[ModeRequest]] - `inherits` [EXTRACTED]
+- [[UpdateRequest]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport
+#graphify/code #graphify/EXTRACTED #community/apipy

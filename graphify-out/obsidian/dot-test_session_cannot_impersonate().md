@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TrustManager"
+community: "TestPrivilegeEscalation"
 location: "L561"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPrivilegeEscalation
 ---
 
 # .test_session_cannot_impersonate()
@@ -16,4 +16,4 @@ tags:
 - [[Session]] - `calls` [INFERRED]
 - [[TestPrivilegeEscalation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TestPrivilegeEscalation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestDeploymentMode"
+community: "test_soc_edge.py"
 location: "L383"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDeploymentMode
+  - community/test_soc_edgepy
 ---
 
 # .test_declared_mode_and_drift()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestDeploymentMode]] - `method` [EXTRACTED]
 - [[_no_rows()]] - `indirect_call` [INFERRED]
-- [[parametrize_19]] - `references` [EXTRACTED]
+- [[parametrize_26]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDeploymentMode
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

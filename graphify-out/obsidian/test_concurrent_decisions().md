@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalRequest]] - `uses` [INFERRED]
 - [[Test that concurrent decision attempts are handled correctly]] - `rationale_for` [EXTRACTED]
-- [[asyncio_10]] - `references` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 - [[decide_approve()]] - `contains` [EXTRACTED]
 - [[decide_reject()]] - `contains` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]

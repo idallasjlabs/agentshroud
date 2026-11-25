@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[ApprovalStore]] - `uses` [INFERRED]
 - [[Items saved by one store instance are visible to another.]] - `rationale_for` [EXTRACTED]
-- [[Path_38]] - `references` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
 - [[_make_item()]] - `calls` [EXTRACTED]
-- [[asyncio_46]] - `references` [EXTRACTED]
+- [[asyncio_47]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

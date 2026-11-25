@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "lifespan"
+community: "test_config_hot_reload.py"
 location: "L744"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespan
+  - community/test_config_hot_reloadpy
 ---
 
 # reload_config()
@@ -26,4 +26,4 @@ tags:
 - [[test_reload_rejects_invalid_and_keeps_last_good()]] - `calls` [EXTRACTED]
 - [[test_reload_rejects_schema_violation_and_keeps_last_good()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespan
+#graphify/code #graphify/EXTRACTED #community/test_config_hot_reloadpy

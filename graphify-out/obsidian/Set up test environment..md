@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "MiddlewareManager"
-location: "L342"
+community: "MemoryLifecycleConfig"
+location: "L193"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/MemoryLifecycleConfig
 ---
 
 # Set up test environment.
 
 ## Connections
-- [[dot-setup_method()]] - `rationale_for` [EXTRACTED]
+- [[dot-setup_method()_8]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/MemoryLifecycleConfig

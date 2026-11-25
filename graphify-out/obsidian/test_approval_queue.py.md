@@ -18,7 +18,7 @@ tags:
 - [[Tests for approval queue]] - `rationale_for` [EXTRACTED]
 - [[_HangingWebSocket]] - `contains` [EXTRACTED]
 - [[approval_queue()]] - `contains` [EXTRACTED]
-- [[asyncio_10]] - `imports` [EXTRACTED]
+- [[asyncio_9]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]

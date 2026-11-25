@@ -12,9 +12,9 @@ tags:
 # Quality Assurance (QA)
 
 ## Connections
-- [[Purpose_68]] - `contains` [EXTRACTED]
+- [[Purpose_70]] - `contains` [EXTRACTED]
 - [[Related Skills_21]] - `contains` [EXTRACTED]
-- [[Usage_23]] - `contains` [EXTRACTED]
+- [[Usage_24]] - `contains` [EXTRACTED]
 - [[hermesskillsi-qaREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

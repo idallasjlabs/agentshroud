@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestRotateGuardBranches]] - `method` [EXTRACTED]
 - [[_old_cred()]] - `calls` [EXTRACTED]
-- [[asyncio_54]] - `references` [EXTRACTED]
+- [[asyncio_57]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

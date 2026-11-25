@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_api_alerts_endpoint_emits_bus_event"
-location: "L135"
+community: "test_telegram_proxy_outbound.py"
+location: "L4762"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_api_alerts_endpoint_emits_bus_event
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # _capture()
 
 ## Connections
-- [[test_api_alerts_endpoint_emits_bus_event()]] - `indirect_call` [INFERRED]
+- [[dot-test_activity_command_renders_entries()]] - `indirect_call` [INFERRED]
+- [[dot-test_activity_command_reports_tracker_unhealthy()]] - `indirect_call` [INFERRED]
+- [[dot-test_pending_includes_egress_entries()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_api_alerts_endpoint_emits_bus_event
+#graphify/code #graphify/INFERRED #community/test_telegram_proxy_outboundpy

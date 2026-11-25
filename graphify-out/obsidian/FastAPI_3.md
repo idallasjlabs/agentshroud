@@ -1,21 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
-type: "document"
-community: "FastAPI"
-location: "L9"
+source_file: ""
+type: "code"
+community: "test_observatory_mode.py"
 tags:
-  - graphify/document
+  - graphify/code
   - graphify/EXTRACTED
-  - community/FastAPI
+  - community/test_observatory_modepy
 ---
 
 # FastAPI
 
 ## Connections
-- [[Key FastAPI Features Used]] - `contains` [EXTRACTED]
-- [[Purpose_157]] - `contains` [EXTRACTED]
-- [[Related Notes_65]] - `contains` [EXTRACTED]
-- [[Where Used_3]] - `contains` [EXTRACTED]
-- [[fastapi_4]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `imports_from` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FastAPI
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

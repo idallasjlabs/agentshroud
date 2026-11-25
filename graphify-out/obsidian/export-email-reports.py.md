@@ -16,7 +16,7 @@ tags:
 - [[_list_report_files()]] - `contains` [EXTRACTED]
 - [[_parse_since()]] - `contains` [EXTRACTED]
 - [[_report_date()]] - `contains` [EXTRACTED]
-- [[datetime_2]] - `imports_from` [EXTRACTED]
+- [[datetime_1]] - `imports_from` [EXTRACTED]
 - [[export_bot()]] - `contains` [EXTRACTED]
 - [[main()_5]] - `contains` [EXTRACTED]
 

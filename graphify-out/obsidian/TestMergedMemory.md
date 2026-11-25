@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_shared_memory.py"
 type: "code"
-community: "test_shared_memory.py"
+community: "SharedMemoryManager"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_shared_memorypy
+  - community/SharedMemoryManager
 ---
 
 # TestMergedMemory
@@ -20,4 +20,4 @@ tags:
 - [[dot-test_user_sees_their_group_memory()]] - `method` [EXTRACTED]
 - [[test_shared_memory.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_shared_memorypy
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

@@ -12,7 +12,7 @@ tags:
 # list_security_modules()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[List all security modules and their status.]] - `rationale_for` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]

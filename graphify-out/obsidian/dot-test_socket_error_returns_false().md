@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestIsContainerRunning]] - `method` [EXTRACTED]
-- [[boom()_3]] - `indirect_call` [INFERRED]
+- [[boom()_2]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/TestIsContainerRunning

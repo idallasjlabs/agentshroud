@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "rationale"
-community: "TrustManager"
+community: "test_redteam_probes.py"
 location: "L41"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_redteam_probespy
 ---
 
 # Minimal approval queue mock that accepts items.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_make_approval_queue()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/test_redteam_probespy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "ProgressiveTrustConfig"
+community: "TrustLevel"
 location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/TrustLevel
 ---
 
 # .test_everything_else_fails_closed_to_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[TestEnforcementModeResolver]] - `method` [EXTRACTED]
 - [[resolve_enforcement_mode()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

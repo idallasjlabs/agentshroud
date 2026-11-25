@@ -12,7 +12,7 @@ tags:
 # test_default_allow_opt_in_permits_non_allowlisted_safe_tool()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]

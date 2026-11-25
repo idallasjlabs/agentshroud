@@ -12,8 +12,8 @@ tags:
 # .from_env()
 
 ## Connections
-- [[dot-__init__()_114]] - `calls` [EXTRACTED]
-- [[dot-__init__()_115]] - `calls` [EXTRACTED]
+- [[dot-__init__()_108]] - `calls` [EXTRACTED]
+- [[dot-__init__()_92]] - `calls` [EXTRACTED]
 - [[Build an MFAGuard from environment variables  Docker secret file. Recognized…]] - `rationale_for` [EXTRACTED]
 - [[MFAGuard]] - `method` [EXTRACTED]
 - [[_truthy()]] - `calls` [EXTRACTED]

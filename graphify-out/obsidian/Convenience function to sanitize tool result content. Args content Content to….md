@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "ToolResultSanitizerConfig"
+community: "ToolResultSanitizer"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizerConfig
+  - community/ToolResultSanitizer
 ---
 
 # Convenience function to sanitize tool result content. Args: content: Content to…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[sanitize_tool_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizerConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

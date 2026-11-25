@@ -13,11 +13,11 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_100]] - `method` [EXTRACTED]
+- [[dot-__init__()_59]] - `method` [EXTRACTED]
 - [[dot-_detect_encoded_injection()]] - `method` [EXTRACTED]
 - [[dot-_detect_unicode_obfuscation()]] - `method` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `method` [EXTRACTED]
-- [[dot-setup_method()_11]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_12]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
 - [[Scanner for detecting prompt injection in tool results.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultInjectionScanner]] - `uses` [INFERRED]

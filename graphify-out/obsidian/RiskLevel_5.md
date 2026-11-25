@@ -1,22 +1,23 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "gateway/soc/models.py"
 type: "code"
-community: "SecureBrowser"
-location: "L34"
+community: "soc/models.py"
+location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/soc/modelspy
 ---
 
 # RiskLevel
 
 ## Connections
-- [[dot-_classify_risk()_3]] - `references` [EXTRACTED]
-- [[dot-_log_action()_3]] - `references` [EXTRACTED]
-- [[dot-_requires_approval()_3]] - `references` [EXTRACTED]
-- [[Enum_24]] - `inherits` [EXTRACTED]
-- [[Risk classification for browser actions_3]] - `rationale_for` [EXTRACTED]
-- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[Enum_38]] - `inherits` [EXTRACTED]
+- [[TestEgressRequest]] - `uses` [INFERRED]
+- [[TestEgressRequestModel]] - `uses` [INFERRED]
+- [[socmodels.py]] - `contains` [EXTRACTED]
+- [[str_21]] - `inherits` [EXTRACTED]
+- [[test_soc_egress.py]] - `imports` [EXTRACTED]
+- [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

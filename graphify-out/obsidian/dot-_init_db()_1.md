@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/telegram_replay.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "test_telegram_replay.py"
-location: "L53"
+community: "TrustLevel"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/TrustLevel
 ---
 
 # ._init_db()
 
 ## Connections
-- [[dot-__init__()_52]] - `calls` [EXTRACTED]
-- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
+- [[dot-__init__()_103]] - `calls` [EXTRACTED]
+- [[TrustManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

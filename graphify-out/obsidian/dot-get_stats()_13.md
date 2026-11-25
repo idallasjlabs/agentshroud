@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/security/audit_store.py"
+source_file: "gateway/security/egress_filter.py"
 type: "code"
-community: "AuditStore"
-location: "L440"
+community: "EgressFilter"
+location: "L616"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/EgressFilter
 ---
 
 # .get_stats()
 
 ## Connections
-- [[AuditStore]] - `method` [EXTRACTED]
-- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[dot-get_log()]] - `calls` [EXTRACTED]
+- [[dot-get_top_destinations()]] - `calls` [EXTRACTED]
+- [[EgressFilter]] - `method` [EXTRACTED]
+- [[Get summary statistics of egress attempts.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

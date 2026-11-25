@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sav/README.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "System Audit Vault"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Vault
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Vault]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Vault
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

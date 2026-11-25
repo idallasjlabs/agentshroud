@@ -58,7 +58,7 @@ tags:
 - [[run_trivy_scan()]] - `imports` [EXTRACTED]
 - [[save_report()]] - `imports` [EXTRACTED]
 - [[score_to_grade()]] - `imports` [EXTRACTED]
-- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py]] - `imports_from` [EXTRACTED]
 - [[update_virus_db()]] - `imports` [EXTRACTED]
 - [[wazuh_client.py_2]] - `imports_from` [EXTRACTED]
 

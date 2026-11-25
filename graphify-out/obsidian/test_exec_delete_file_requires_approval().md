@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "TrustManager"
+community: "test_redteam_probes.py"
 location: "L90"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_redteam_probespy
 ---
 
 # test_exec_delete_file_requires_approval()
 
 ## Connections
 - [[Probe 1.1b delete_file action must go through approval or be blocked.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_42]] - `references` [EXTRACTED]
+- [[asyncio_28]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

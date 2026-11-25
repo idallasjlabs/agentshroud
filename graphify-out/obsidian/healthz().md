@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "GatewayBackedProvider"
-location: "L336"
+community: "test_edge_service_routes.py"
+location: "L337"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GatewayBackedProvider
+  - community/test_edge_service_routespy
 ---
 
 # healthz()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_consent_routes()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/GatewayBackedProvider
+#graphify/code #graphify/INFERRED #community/test_edge_service_routespy

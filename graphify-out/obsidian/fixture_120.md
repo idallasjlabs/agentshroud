@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_voice_gateway.py"
+community: "descriptors.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/descriptorspy
 ---
 
 # fixture
 
 ## Connections
-- [[_reset_reply_resume()]] - `references` [EXTRACTED]
+- [[secrets_dir()_1]] - `references` [EXTRACTED]
+- [[signed_descriptors()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/descriptorspy

@@ -12,9 +12,9 @@ tags:
 # get_version_history()
 
 ## Connections
-- [[Any_72]] - `references` [EXTRACTED]
+- [[Any_69]] - `references` [EXTRACTED]
 - [[Get version change history.]] - `rationale_for` [EXTRACTED]
-- [[get_7]] - `references` [EXTRACTED]
+- [[get_8]] - `references` [EXTRACTED]
 - [[list_versions()]] - `calls` [EXTRACTED]
 - [[mask_credentials()]] - `calls` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]

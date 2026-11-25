@@ -16,7 +16,7 @@ tags:
 - [[DelegationError]] - `contains` [EXTRACTED]
 - [[DelegationManager]] - `contains` [EXTRACTED]
 - [[DelegationPrivilege]] - `contains` [EXTRACTED]
-- [[Enum_6]] - `imports_from` [EXTRACTED]
+- [[Enum_5]] - `imports_from` [EXTRACTED]
 - [[Owner-Away Privilege Delegation (v0.9.0 Tranche 1) Owner can delegate specific…]] - `rationale_for` [EXTRACTED]
 - [[test_delegation.py]] - `imports_from` [EXTRACTED]
 

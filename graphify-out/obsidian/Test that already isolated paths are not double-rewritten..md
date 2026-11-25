@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "PathIsolationManager"
 location: "L210"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/PathIsolationManager
 ---
 
 # Test that already isolated paths are not double-rewritten.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_already_isolated_paths_not_rewritten()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

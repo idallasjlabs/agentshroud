@@ -8,14 +8,14 @@ members: 64
 **Members:** 64 nodes
 
 ## Members
-- [[dot-__init__()_187]] - code - gateway/proxy/dns_blocklist.py
+- [[dot-__init__()_191]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-_periodic_update_loop()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-download_blocklist()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-is_blocked()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-load_from_text()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-parse_hosts_line()]] - code - gateway/proxy/dns_blocklist.py
-- [[dot-setup_method()_33]] - code - gateway/tests/test_dns_blocklist.py
-- [[dot-setup_method()_34]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-setup_method()_31]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-setup_method()_32]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-start_periodic_updates()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-stats()]] - code - gateway/proxy/dns_blocklist.py
 - [[dot-stop()_9]] - code - gateway/proxy/dns_blocklist.py
@@ -28,7 +28,7 @@ members: 64
 - [[dot-test_download_failure_falls_back_to_cache()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_download_failure_no_cache_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_download_success_caches_to_disk()]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-test_empty_text()]] - code - gateway/tests/test_dns_blocklist.py
+- [[dot-test_empty_text()_1]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_exact_match()_1]] - code - gateway/tests/test_dns_blocklist.py
 - [[dot-test_hosts_line_without_domain_returns_none()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-test_multi_line_parsing()]] - code - gateway/tests/test_dns_blocklist.py
@@ -54,7 +54,7 @@ members: 64
 - [[Lifecycle start_periodic_updates()stop() task management.]] - rationale - gateway/tests/test_dns_blocklist.py
 - [[Parse a single line from a hosts-format or domain-only blocklist. Supports -…]] - rationale - gateway/proxy/dns_blocklist.py
 - [[Parse blocklist text and add domains. Returns count of new domains.]] - rationale - gateway/proxy/dns_blocklist.py
-- [[Path_66]] - code
+- [[Path_65]] - code
 - [[Return blocklist statistics.]] - rationale - gateway/proxy/dns_blocklist.py
 - [[Start background task for periodic blocklist updates.]] - rationale - gateway/proxy/dns_blocklist.py
 - [[Stop periodic updates.]] - rationale - gateway/proxy/dns_blocklist.py
@@ -66,7 +66,7 @@ members: 64
 - [[TestLoadFromText]] - code - gateway/tests/test_dns_blocklist.py
 - [[TestStats_1]] - code - gateway/tests/test_dns_blocklist.py
 - [[Tests for the in-process DNS blocklist (replaced Pi-hole integration).]] - rationale - gateway/tests/test_dns_blocklist.py
-- [[asyncio_75]] - code
+- [[asyncio_76]] - code
 - [[is_blocked() — exact match, parent-domain wildcard, allowlist, denylist, case.]] - rationale - gateway/tests/test_dns_blocklist.py
 - [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - rationale - gateway/tests/test_dns_blocklist.py
 - [[stats() returns the expected keys.]] - rationale - gateway/tests/test_dns_blocklist.py

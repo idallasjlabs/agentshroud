@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "_patch_http_connection"
 location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/_patch_http_connection
 ---
 
 # .test_404_returns_empty_dict()
@@ -16,4 +16,4 @@ tags:
 - [[_FakeResponse]] - `calls` [EXTRACTED]
 - [[_patch_http_connection()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/_patch_http_connection

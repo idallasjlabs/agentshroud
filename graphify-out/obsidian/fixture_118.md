@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_intel_endpoint.py"
+community: "ServerConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_intel_endpointpy
+  - community/ServerConfig
 ---
 
 # fixture
 
 ## Connections
-- [[client()_17]] - `references` [EXTRACTED]
+- [[framework()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_intel_endpointpy
+#graphify/code #graphify/EXTRACTED #community/ServerConfig

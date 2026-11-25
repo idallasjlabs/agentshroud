@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "code"
-community: "TestAuth"
+community: "Session"
 location: "L3611"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/Session
 ---
 
 # t_session()
@@ -15,4 +15,4 @@ tags:
 - [[Session]] - `calls` [EXTRACTED]
 - [[deep_security_test()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/Session

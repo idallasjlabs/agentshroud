@@ -12,7 +12,7 @@ tags:
 # SCLClient
 
 ## Connections
-- [[dot-__init__()_53]] - `method` [EXTRACTED]
+- [[dot-__init__()_45]] - `method` [EXTRACTED]
 - [[dot-_request()]] - `method` [EXTRACTED]
 - [[dot-add_collaborator()]] - `method` [EXTRACTED]
 - [[dot-add_group_member()]] - `method` [EXTRACTED]
@@ -76,7 +76,7 @@ tags:
 - [[get_services()]] - `uses` [INFERRED]
 - [[get_users()]] - `uses` [INFERRED]
 - [[restart_service()_3]] - `uses` [INFERRED]
-- [[scan()_4]] - `uses` [INFERRED]
+- [[scan()_3]] - `uses` [INFERRED]
 - [[set_mode()_1]] - `uses` [INFERRED]
 - [[stop_service()_3]] - `uses` [INFERRED]
 - [[tail()_1]] - `uses` [INFERRED]

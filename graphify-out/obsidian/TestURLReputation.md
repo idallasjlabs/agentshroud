@@ -19,7 +19,7 @@ tags:
 - [[dot-test_known_phishing_pattern()]] - `method` [EXTRACTED]
 - [[dot-test_legitimate_url()]] - `method` [EXTRACTED]
 - [[dot-test_suspicious_subdomain()]] - `method` [EXTRACTED]
-- [[ThreatLevel]] - `uses` [INFERRED]
+- [[ThreatLevel_1]] - `uses` [INFERRED]
 - [[test_browser_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

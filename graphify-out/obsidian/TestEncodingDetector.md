@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_encoding_detector.py"
 type: "code"
-community: "EncodingDetector"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L9"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncodingDetector
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # TestEncodingDetector
@@ -26,4 +26,4 @@ tags:
 - [[EncodingDetector]] - `uses` [INFERRED]
 - [[test_encoding_detector.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncodingDetector
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

@@ -12,7 +12,7 @@ tags:
 # _make_service_manager()
 
 ## Connections
-- [[__init__()_7]] - `contains` [EXTRACTED]
+- [[__init__()_6]] - `contains` [EXTRACTED]
 - [[get_logs()]] - `contains` [EXTRACTED]
 - [[list_services()_1]] - `contains` [EXTRACTED]
 - [[restart_service()_1]] - `contains` [EXTRACTED]

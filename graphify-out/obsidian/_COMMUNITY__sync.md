@@ -22,7 +22,7 @@ members: 15
 - [[TestSerialization_1]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_exec_registry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_sync()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[parametrize_2]] - code
+- [[parametrize_3]] - code
 
 ## Live Query (requires Dataview plugin)
 

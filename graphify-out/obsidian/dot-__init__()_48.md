@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "GatewayBackedProvider"
-location: "L94"
+community: "TokenValidator"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/TokenValidator
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_45]] - `calls` [EXTRACTED]
-- [[Any_22]] - `references` [EXTRACTED]
-- [[GatewayError]] - `method` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

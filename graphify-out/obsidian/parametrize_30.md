@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_lifespan_prune.py"
+community: "_make_proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_lifespan_prunepy
+  - community/_make_proxy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_is_fixture_uid_blocks_short_numeric()]] - `references` [EXTRACTED]
-- [[test_is_fixture_uid_blocks_test_user_prefix()]] - `references` [EXTRACTED]
-- [[test_is_fixture_uid_passes_real_uids()]] - `references` [EXTRACTED]
+- [[test_fieldflare_shim_leaves_accepted_tool_choice_strings_alone()]] - `references` [EXTRACTED]
+- [[test_model_ref_round_trip()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_lifespan_prunepy
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

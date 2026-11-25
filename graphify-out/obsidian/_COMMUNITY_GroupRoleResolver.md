@@ -1,14 +1,14 @@
 ---
 type: community
-members: 69
+members: 65
 ---
 
 # GroupRoleResolver
 
-**Members:** 69 nodes
+**Members:** 65 nodes
 
 ## Members
-- [[dot-__init__()_119]] - code - gateway/security/group_rbac.py
+- [[dot-__init__()_112]] - code - gateway/security/group_rbac.py
 - [[dot-can_use_high_risk()]] - code - gateway/security/group_rbac.py
 - [[dot-get_all_roles()]] - code - gateway/security/group_rbac.py
 - [[dot-get_role()]] - code - gateway/security/group_rbac.py
@@ -40,7 +40,7 @@ members: 69
 - [[dot-test_set_role_creates_new_entry()]] - code - gateway/tests/test_group_rbac.py
 - [[dot-test_set_role_updates_existing_entry()]] - code - gateway/tests/test_group_rbac.py
 - [[An invalid role string in the map falls back to READ_ONLY.]] - rationale - gateway/tests/test_group_rbac.py
-- [[Enum_30]] - code
+- [[Enum_28]] - code
 - [[Group-context RBAC — per-member role resolution for Telegram group workspaces.…]] - rationale - gateway/security/group_rbac.py
 - [[GroupRole]] - code - gateway/security/group_rbac.py
 - [[GroupRoleResolver]] - code - gateway/security/group_rbac.py
@@ -49,7 +49,6 @@ members: 69
 - [[Owner is allowed ALL tools in group context.]] - rationale - gateway/tests/test_group_rbac.py
 - [[Owner must have unrestricted access even in group context.]] - rationale - gateway/tests/test_group_rbac.py
 - [[Per-group roles for Telegram group workspace members. Hierarchy (highest to…]] - rationale - gateway/security/group_rbac.py
-- [[Per-tool call rate limit configuration.]] - rationale - gateway/security/tool_acl.py
 - [[Remove a user's role entry from a group (falls back to READ_ONLY).]] - rationale - gateway/security/group_rbac.py
 - [[Resolve per-group roles for Telegram group workspace members. Args…]] - rationale - gateway/security/group_rbac.py
 - [[Return True if the tool is classified as high-risk. High-risk tools require…]] - rationale - gateway/security/group_rbac.py
@@ -63,20 +62,17 @@ members: 69
 - [[Test GroupRole.rank, can_use_high_risk, and GroupRoleResolver helpers.]] - rationale - gateway/tests/test_group_rbac.py
 - [[TestGroupRoleProperties]] - code - gateway/tests/test_group_rbac.py
 - [[TestOwnerGroupContext]] - code - gateway/tests/test_group_rbac.py
-- [[Tool-Level Access Control (v0.9.0 Tranche 2) Enforces per-user, per-group tool…]] - rationale - gateway/security/tool_acl.py
-- [[ToolRateLimit]] - code - gateway/security/tool_acl.py
 - [[acl_config()]] - code - gateway/tests/test_group_rbac.py
 - [[enforcer()_1]] - code - gateway/tests/test_group_rbac.py
-- [[fixture_86]] - code
+- [[fixture_90]] - code
 - [[get_all_roles with an invalid role string falls back to READ_ONLY per entry.]] - rationale - gateway/tests/test_group_rbac.py
 - [[group_rbac.py]] - code - gateway/security/group_rbac.py
 - [[group_role_resolver()]] - code - gateway/tests/test_group_rbac.py
-- [[rbac()_2]] - code - gateway/tests/test_group_rbac.py
+- [[rbac()_5]] - code - gateway/tests/test_group_rbac.py
 - [[remove_role on a user not in map is a no-op (no exception).]] - rationale - gateway/tests/test_group_rbac.py
-- [[str_16]] - code
-- [[teams()_3]] - code - gateway/tests/test_group_rbac.py
+- [[str_12]] - code
+- [[teams()_4]] - code - gateway/tests/test_group_rbac.py
 - [[test_group_rbac.py]] - code - gateway/tests/test_group_rbac.py
-- [[tool_acl.py]] - code - gateway/security/tool_acl.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -86,19 +82,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_ToolACLEnforcer]]
-- 4 edges to [[_COMMUNITY_test_tool_acl.py]]
+- 7 edges to [[_COMMUNITY_RBACConfig]]
+- 3 edges to [[_COMMUNITY_TeamsConfig]]
+- 3 edges to [[_COMMUNITY_ToolACLEnforcer]]
 - 2 edges to [[_COMMUNITY_TestGroupRoleResolver]]
-- 2 edges to [[_COMMUNITY_TeamsConfig]]
+- 2 edges to [[_COMMUNITY_test_tool_acl.py]]
 - 1 edge to [[_COMMUNITY_TestReadOnlyMemberGroupContext]]
 - 1 edge to [[_COMMUNITY_TestMemberGroupContext]]
-- 1 edge to [[_COMMUNITY_test_module_stats.py]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
 
 ## Top bridge nodes
-- [[test_group_rbac.py]] - degree 21, connects to 8 communities
-- [[tool_acl.py]] - degree 13, connects to 4 communities
-- [[GroupRole]] - degree 14, connects to 2 communities
+- [[test_group_rbac.py]] - degree 21, connects to 7 communities
+- [[GroupRole]] - degree 14, connects to 3 communities
+- [[GroupRoleResolver]] - degree 27, connects to 1 community
+- [[group_rbac.py]] - degree 6, connects to 1 community
 - [[acl_config()]] - degree 3, connects to 1 community
-- [[enforcer()_1]] - degree 3, connects to 1 community

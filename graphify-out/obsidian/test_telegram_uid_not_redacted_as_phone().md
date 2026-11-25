@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Bare 10-digit Telegram UID must pass through unchanged — no PHONE_NUMBER.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_27]] - `references` [EXTRACTED]
+- [[asyncio_29]] - `references` [EXTRACTED]
 - [[test_sanitizer.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_sanitizerpy

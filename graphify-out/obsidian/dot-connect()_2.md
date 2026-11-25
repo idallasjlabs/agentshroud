@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "ServiceManager"
+community: "_patch_http_connection"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/_patch_http_connection
 ---
 
 # .connect()
@@ -15,4 +15,4 @@ tags:
 - [[_FakeUnixSocket]] - `method` [EXTRACTED]
 - [[request()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/_patch_http_connection

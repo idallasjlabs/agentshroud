@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "ingest_api/main.py"
 location: "L981"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/mainpy
 ---
 
 # Execute SSH command with validation and approval
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ssh_exec()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sad/README.md"
+source_file: ".agents/skills/oracle/README.md"
 type: "document"
-community: "System Audit Documentation"
-location: "L9"
+community: "Oracle — Feedback Analyst"
+location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Documentation
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Usage
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

@@ -12,7 +12,7 @@ tags:
 # ._teams_config()
 
 ## Connections
-- [[dot-is_group_admin()_1]] - `indirect_call` [INFERRED]
+- [[dot-is_group_admin()_2]] - `indirect_call` [INFERRED]
 - [[Return TeamsConfig from app_state if available.]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 

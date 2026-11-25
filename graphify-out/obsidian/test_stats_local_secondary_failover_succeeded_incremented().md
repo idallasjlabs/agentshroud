@@ -15,7 +15,7 @@ tags:
 - [[_fake_forward()_25]] - `contains` [EXTRACTED]
 - [[_fake_forward()_24]] - `indirect_call` [INFERRED]
 - [[_make_proxy()_4]] - `calls` [EXTRACTED]
-- [[asyncio_83]] - `references` [EXTRACTED]
+- [[asyncio_84]] - `references` [EXTRACTED]
 - [[failover_local_secondary_succeeded stat increments on successful secondary…]] - `rationale_for` [EXTRACTED]
 - [[test_llm_proxy_local_parity.py]] - `contains` [EXTRACTED]
 

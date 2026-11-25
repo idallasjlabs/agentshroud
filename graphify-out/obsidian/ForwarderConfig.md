@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "HTTPForwarder"
+community: "test_canary.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPForwarder
+  - community/test_canarypy
 ---
 
 # ForwarderConfig
 
 ## Connections
-- [[dot-__init__()_219]] - `calls` [EXTRACTED]
+- [[dot-__init__()_223]] - `calls` [EXTRACTED]
 - [[Configuration for the HTTP forwarder.]] - `rationale_for` [EXTRACTED]
 - [[forwarder()]] - `uses` [INFERRED]
 - [[forwarder.py_2]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[test_forwarder_error_handling()]] - `uses` [INFERRED]
 - [[unhealthy_forwarder()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPForwarder
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

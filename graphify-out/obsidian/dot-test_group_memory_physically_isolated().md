@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # .test_group_memory_physically_isolated()
@@ -15,4 +15,4 @@ tags:
 - [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 - [[group-A and group-B memory files must be in separate directories.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

@@ -19,7 +19,7 @@ tags:
 - [[dot-resolve_peer_id()]] - `calls` [EXTRACTED]
 - [[A2AProxy]] - `method` [EXTRACTED]
 - [[A2AProxyResult]] - `calls` [EXTRACTED]
-- [[Any_88]] - `references` [EXTRACTED]
+- [[Any_90]] - `references` [EXTRACTED]
 - [[_redact_message_text()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

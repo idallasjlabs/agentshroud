@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/dashboard/proxy_status.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "ProxyDashboard"
-location: "L83"
+community: "RateLimitGuard"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyDashboard
+  - community/RateLimitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[ProxyDashboard]] - `method` [EXTRACTED]
+- [[RateLimitConfig]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyDashboard
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

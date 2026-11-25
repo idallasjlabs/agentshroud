@@ -1,17 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L1125"
+community: "_call_llm_stream"
+location: "L564"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - graphify/INFERRED
+  - community/_call_llm_stream
 ---
 
 # _aiter_lines()
 
 ## Connections
-- [[_mock_stream_resp()]] - `contains` [EXTRACTED]
+- [[_mock_llm_stream_resp()]] - `indirect_call` [INFERRED]
+- [[_mock_stream_resp()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/INFERRED #community/_call_llm_stream

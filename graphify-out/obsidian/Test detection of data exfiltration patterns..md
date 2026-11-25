@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "EnvironmentGuard"
+community: "FileSandbox"
 location: "L577"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnvironmentGuard
+  - community/FileSandbox
 ---
 
 # Test detection of data exfiltration patterns.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestExfiltrationDetection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard
+#graphify/rationale #graphify/EXTRACTED #community/FileSandbox

@@ -10,8 +10,8 @@ members: 6
 ## Members
 - [[A modelpipeline warm-up failure at startup must NOT down the gateway.…]] - rationale - gateway/tests/test_voice_gateway.py
 - [[If the Kokoro pipeline can't be constructed, synthesize() raises RuntimeError.]] - rationale - gateway/tests/test_voice_gateway.py
-- [[_boom()_18]] - code - gateway/tests/test_voice_gateway.py
 - [[_boom()_19]] - code - gateway/tests/test_voice_gateway.py
+- [[_boom()_20]] - code - gateway/tests/test_voice_gateway.py
 - [[test_lifespan_tolerates_warmup_failure()]] - code - gateway/tests/test_voice_gateway.py
 - [[test_tts_kokoro_pipeline_load_failure_raises()]] - code - gateway/tests/test_voice_gateway.py
 

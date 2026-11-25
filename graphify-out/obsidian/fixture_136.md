@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestVersionRoutes"
+community: "test_canary.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/test_canarypy
 ---
 
 # fixture
 
 ## Connections
-- [[app()]] - `references` [EXTRACTED]
-- [[client()_20]] - `references` [EXTRACTED]
-- [[tmp_version_db()]] - `references` [EXTRACTED]
+- [[canary_pipeline()]] - `references` [EXTRACTED]
+- [[healthy_forwarder()]] - `references` [EXTRACTED]
+- [[unhealthy_forwarder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

@@ -1,21 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-disabled_client()]] - `references` [EXTRACTED]
-- [[dot-no_approval_client()]] - `references` [EXTRACTED]
-- [[auth_headers()_2]] - `references` [EXTRACTED]
-- [[client()_13]] - `references` [EXTRACTED]
-- [[ssh_config()]] - `references` [EXTRACTED]
-- [[test_config_with_ssh()]] - `references` [EXTRACTED]
+- [[queue()]] - `references` [EXTRACTED]
+- [[store()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

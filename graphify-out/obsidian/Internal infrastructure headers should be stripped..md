@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "LogSanitizer"
+community: "EnvironmentGuard"
 location: "L440"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/EnvironmentGuard
 ---
 
 # Internal infrastructure headers should be stripped.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_metadata_guard_strips_internal_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LogSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard

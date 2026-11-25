@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[ApprovalMode]] - `uses` [INFERRED]
 - [[Approve an egress request (oncesessionpermanent).]] - `rationale_for` [EXTRACTED]
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_6]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

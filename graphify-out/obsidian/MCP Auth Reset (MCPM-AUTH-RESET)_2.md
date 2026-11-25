@@ -16,6 +16,6 @@ tags:
 - [[dot-agentsskillsi-mcpm-auth-resetSKILL]] - `contains` [EXTRACTED]
 - [[Purpose_170]] - `contains` [EXTRACTED]
 - [[Related Skills_113]] - `contains` [EXTRACTED]
-- [[Usage_126]] - `contains` [EXTRACTED]
+- [[Usage_127]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

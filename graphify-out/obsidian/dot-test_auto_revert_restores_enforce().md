@@ -15,7 +15,7 @@ tags:
 - [[Auto-revert task sets mode back to enforce after delay.]] - `rationale_for` [EXTRACTED]
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestAutoRevert]] - `method` [EXTRACTED]
-- [[asyncio_55]] - `references` [EXTRACTED]
+- [[asyncio_88]] - `references` [EXTRACTED]
 - [[fast_sleep()]] - `indirect_call` [INFERRED]
 - [[set_mode()]] - `calls` [EXTRACTED]
 

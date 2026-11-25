@@ -37,7 +37,7 @@ members: 30
 - [[Security Guarantees_9]] - document - .opencode/agents/browser.md
 - [[Take Screenshot_8]] - document - .opencode/agents/browser.md
 - [[Troubleshooting_44]] - document - .opencode/agents/browser.md
-- [[Usage_116]] - document - .opencode/agents/browser.md
+- [[Usage_117]] - document - .opencode/agents/browser.md
 
 ## Live Query (requires Dataview plugin)
 

@@ -33,10 +33,10 @@ members: 31
 - [[_plain_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[_tool_call_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[_tool_result_msg()]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[asyncio_59]] - code
-- [[fixture_103]] - code
-- [[manager()_3]] - code - gateway/tests/test_file_sandbox_message_gate.py
-- [[session_manager()_3]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[asyncio_61]] - code
+- [[fixture_104]] - code
+- [[manager()_2]] - code - gateway/tests/test_file_sandbox_message_gate.py
+- [[session_manager()_4]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[temp_workspace()]] - code - gateway/tests/test_file_sandbox_message_gate.py
 - [[test_file_sandbox_message_gate.py]] - code - gateway/tests/test_file_sandbox_message_gate.py
 
@@ -48,12 +48,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_MiddlewareResult]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 - 1 edge to [[_COMMUNITY_middleware.py]]
 
 ## Top bridge nodes
-- [[test_file_sandbox_message_gate.py]] - degree 15, connects to 3 communities
+- [[test_file_sandbox_message_gate.py]] - degree 15, connects to 4 communities
 - [[TestFileSandboxSkippedForPlainMessages]] - degree 7, connects to 1 community
-- [[manager()_3]] - degree 4, connects to 1 community
-- [[session_manager()_3]] - degree 3, connects to 1 community
+- [[manager()_2]] - degree 4, connects to 1 community
+- [[session_manager()_4]] - degree 3, connects to 1 community

@@ -20,7 +20,7 @@ tags:
 - [[ReportIntegrityError]] - `contains` [EXTRACTED]
 - [[_compute_hash()]] - `contains` [EXTRACTED]
 - [[citation_verifier.py]] - `imports_from` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 - [[test_citation_verifier.py]] - `imports_from` [EXTRACTED]
 - [[test_intel_pipeline.py]] - `imports_from` [EXTRACTED]
 

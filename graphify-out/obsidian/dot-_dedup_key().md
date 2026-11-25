@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "._handle"
+community: "AlertTelegramRelay"
 location: "L199"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_handle
+  - community/AlertTelegramRelay
 ---
 
 # ._dedup_key()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_handle()]] - `calls` [EXTRACTED]
 - [[AlertTelegramRelay]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

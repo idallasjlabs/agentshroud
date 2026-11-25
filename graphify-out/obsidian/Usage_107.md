@@ -1,8 +1,8 @@
 ---
-source_file: ".omp/agents/i-mcpm-auth-reset.md"
+source_file: ".github/agents/i-mcpm-auth-reset.agent.md"
 type: "document"
 community: "Skill: MCP Auth Reset (MCPM-AUTH-RESET)"
-location: "L20"
+location: "L24"
 tags:
   - graphify/document
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # Usage
 
 ## Connections
-- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_4]] - `contains` [EXTRACTED]
+- [[Skill MCP Auth Reset (MCPM-AUTH-RESET)_3]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Skill_MCP_Auth_Reset_MCPM-AUTH-RESET

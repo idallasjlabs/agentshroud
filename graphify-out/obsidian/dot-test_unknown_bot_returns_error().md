@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[TestAgentCvesBotId]] - `method` [EXTRACTED]
 - [[_make_owner_caller()]] - `calls` [EXTRACTED]
-- [[asyncio_76]] - `references` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[get_agent_cves()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "SessionManager"
+community: "service.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionManager
+  - community/servicepy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-manager()_2]] - `references` [EXTRACTED]
-- [[manager()_4]] - `references` [EXTRACTED]
+- [[signer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionManager
+#graphify/code #graphify/EXTRACTED #community/servicepy

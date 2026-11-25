@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "GatewayConfig"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/AgentTarget
 ---
 
 # ingest_api/models.py
@@ -39,7 +39,7 @@ tags:
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
 - [[ledger.py_2]] - `imports_from` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
 - [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_approval_queue.py]] - `imports_from` [EXTRACTED]
@@ -58,4 +58,4 @@ tags:
 - [[test_tool_result_pii.py]] - `imports_from` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

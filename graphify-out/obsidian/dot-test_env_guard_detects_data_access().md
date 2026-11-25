@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "EnvironmentGuard"
+community: "FileSandbox"
 location: "L604"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvironmentGuard
+  - community/FileSandbox
 ---
 
 # .test_env_guard_detects_data_access()
@@ -16,4 +16,4 @@ tags:
 - [[EnvironmentGuard]] - `calls` [INFERRED]
 - [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvironmentGuard
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

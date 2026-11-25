@@ -12,10 +12,10 @@ tags:
 # _FakeConnect
 
 ## Connections
-- [[dot-__aenter__()_5]] - `method` [EXTRACTED]
-- [[dot-__aexit__()_5]] - `method` [EXTRACTED]
-- [[dot-__call__()_7]] - `method` [EXTRACTED]
-- [[dot-__init__()_130]] - `method` [EXTRACTED]
+- [[dot-__aenter__()_4]] - `method` [EXTRACTED]
+- [[dot-__aexit__()_4]] - `method` [EXTRACTED]
+- [[dot-__call__()_6]] - `method` [EXTRACTED]
+- [[dot-__init__()_121]] - `method` [EXTRACTED]
 - [[_install_fake_websockets()]] - `calls` [EXTRACTED]
 - [[test_cli_coverage.py]] - `contains` [EXTRACTED]
 

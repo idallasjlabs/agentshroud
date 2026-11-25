@@ -1,17 +1,19 @@
 ---
-source_file: "src/interfaces/text_control_center.py"
+source_file: "gateway/inbound_edge/edge_jwt.py"
 type: "code"
-community: "ControlCenter"
-location: "L66"
+community: "test_edge_e2e_sdk.py"
+location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ControlCenter
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[ControlCenter]] - `method` [EXTRACTED]
+- [[dot-__init__()_169]] - `calls` [EXTRACTED]
+- [[EdgeStore]] - `references` [EXTRACTED]
+- [[TokenService]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ControlCenter
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

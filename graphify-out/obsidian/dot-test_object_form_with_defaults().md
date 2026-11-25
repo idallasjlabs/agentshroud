@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestFromAnomalyAlert"
 location: "L453"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestFromAnomalyAlert
 ---
 
 # .test_object_form_with_defaults()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFromAnomalyAlert]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestFromAnomalyAlert

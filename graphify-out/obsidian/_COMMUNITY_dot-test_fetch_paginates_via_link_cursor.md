@@ -19,11 +19,11 @@ members: 18
 - [[__enter__()_5]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[__exit__()_5]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[__init__()_26]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_fake_urlopen()_3]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_fake_urlopen()_4]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_fake_urlopen()_5]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_fake_urlopen()_6]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_fake_urlopen()_7]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[_fake_urlopen()_8]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[_fake_urlopen()_9]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[aquasecuritytrivy 403s the Actions token but serves the public feed.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[read()_12]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
@@ -43,6 +43,6 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[dot-test_fetch_paginates_via_link_cursor()]] - degree 9, connects to 2 communities
 - [[dot-test_transient_read_timeout_is_retried()]] - degree 3, connects to 2 communities
-- [[_fake_urlopen()_9]] - degree 7, connects to 1 community
+- [[_fake_urlopen()_7]] - degree 7, connects to 1 community
 - [[TestFetch]] - degree 6, connects to 1 community
 - [[dot-test_token_refused_retries_public_endpoint_without_token()]] - degree 5, connects to 1 community

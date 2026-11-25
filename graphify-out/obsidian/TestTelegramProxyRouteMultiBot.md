@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_multibot.py"
 type: "code"
-community: "TestMultiBotContextvarRouting"
+community: "TestTelegramProxyRouteMultiBot"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultiBotContextvarRouting
+  - community/TestTelegramProxyRouteMultiBot
 ---
 
 # TestTelegramProxyRouteMultiBot
@@ -20,4 +20,4 @@ tags:
 - [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_multibot.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultiBotContextvarRouting
+#graphify/code #graphify/EXTRACTED #community/TestTelegramProxyRouteMultiBot

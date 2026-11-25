@@ -1,20 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_integration.py"
+source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "test_security_integration.py"
-location: "L91"
+community: "TrustManager"
+location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/TrustManager
 ---
 
 # ledger()
 
 ## Connections
-- [[DataLedger]] - `uses` [INFERRED]
-- [[LedgerConfig]] - `uses` [INFERRED]
-- [[fixture_106]] - `references` [EXTRACTED]
-- [[test_security_integration.py]] - `contains` [EXTRACTED]
+- [[CrossBotTrustLedger]] - `uses` [INFERRED]
+- [[TrustDecayPolicy]] - `uses` [INFERRED]
+- [[fixture_80]] - `references` [EXTRACTED]
+- [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/TrustManager

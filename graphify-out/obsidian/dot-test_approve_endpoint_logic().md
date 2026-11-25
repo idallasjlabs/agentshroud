@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "code"
-community: "TestEgressApprovalAPI"
+community: "asyncio"
 location: "L510"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressApprovalAPI
+  - community/asyncio
 ---
 
 # .test_approve_endpoint_logic()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test POST manageegressapprove{request_id} endpoint logic.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `method` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressApprovalAPI
+#graphify/code #graphify/EXTRACTED #community/asyncio

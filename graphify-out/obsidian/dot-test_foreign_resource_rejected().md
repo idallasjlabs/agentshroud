@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "_client_info"
+community: "test_edge_oauth.py"
 location: "L224"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_client_info
+  - community/test_edge_oauthpy
 ---
 
 # .test_foreign_resource_rejected()
@@ -15,4 +15,4 @@ tags:
 - [[TestAuthorizeAndConsent]] - `method` [EXTRACTED]
 - [[_client_info()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_client_info
+#graphify/code #graphify/EXTRACTED #community/test_edge_oauthpy

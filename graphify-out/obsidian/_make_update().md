@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_make_update"
+community: "_wrap_response"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_update
+  - community/_wrap_response
 ---
 
 # _make_update()
@@ -232,4 +232,4 @@ tags:
 - [[fake_forward()_2]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_update
+#graphify/code #graphify/EXTRACTED #community/_wrap_response

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/citation_verifier.py"
+source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "make_httpx_fetcher"
-location: "L126"
+community: "WebContentScanner"
+location: "L202"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_httpx_fetcher
+  - community/WebContentScanner
 ---
 
 # .__init__()
 
 ## Connections
-- [[CitationVerifier]] - `method` [EXTRACTED]
-- [[Fetcher]] - `references` [EXTRACTED]
+- [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

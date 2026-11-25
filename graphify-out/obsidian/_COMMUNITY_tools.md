@@ -9,7 +9,7 @@ members: 5
 
 ## Members
 - [[additionalProperties_4]] - code - config/inbound-edge/schema.json
-- [[enum_25]] - code - config/inbound-edge/schema.json
+- [[enum_24]] - code - config/inbound-edge/schema.json
 - [[maxProperties]] - code - config/inbound-edge/schema.json
 - [[tools_1]] - code - config/inbound-edge/schema.json
 - [[type_28]] - code - config/inbound-edge/schema.json

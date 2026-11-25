@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_71]] - `method` [EXTRACTED]
+- [[dot-__init__()_62]] - `method` [EXTRACTED]
 - [[dot-_check()]] - `method` [EXTRACTED]
 - [[dot-_detect_raw_traversal()]] - `method` [EXTRACTED]
 - [[dot-_is_immutable_file()]] - `method` [EXTRACTED]
@@ -23,7 +23,7 @@ tags:
 - [[dot-check_read()]] - `method` [EXTRACTED]
 - [[dot-check_write()]] - `method` [EXTRACTED]
 - [[dot-detect_staging_patterns()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_2]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_3]] - `method` [EXTRACTED]
 - [[dot-get_security_violations()]] - `method` [EXTRACTED]
 - [[dot-get_temp_files()]] - `method` [EXTRACTED]
 - [[dot-monitor_sandbox()]] - `calls` [EXTRACTED]
@@ -46,8 +46,8 @@ tags:
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[sandbox()]] - `uses` [INFERRED]
-- [[strict_sandbox()]] - `uses` [INFERRED]
 - [[strict_sandbox()_1]] - `uses` [INFERRED]
+- [[strict_sandbox()]] - `uses` [INFERRED]
 - [[t_sandbox()]] - `calls` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]
 - [[test_file_sandbox.py]] - `imports` [EXTRACTED]

@@ -1,20 +1,25 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_ssh_write_file_endpoint.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L16"
+community: "ingest_api/config.py"
+location: "L92"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - graphify/INFERRED
+  - community/ingest_api/configpy
 ---
 
 # client()
 
 ## Connections
+- [[ApprovalQueue]] - `uses` [INFERRED]
+- [[DataLedger]] - `uses` [INFERRED]
+- [[MultiAgentRouter]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[SSHProxy]] - `uses` [INFERRED]
+- [[Set up app state and provide TestClient._1]] - `rationale_for` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_93]] - `references` [EXTRACTED]
-- [[lifespan()]] - `calls` [INFERRED]
-- [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
+- [[fixture_78]] - `references` [EXTRACTED]
+- [[test_ssh_write_file_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
-location: "L3530"
+community: "_make_sanitizer"
+location: "L2778"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/_make_sanitizer
 ---
 
 # check_async()
 
 ## Connections
-- [[dot-test_raw_web_fetch_json_uppercase_http_scheme_queues_port_80_approval()]] - `contains` [EXTRACTED]
+- [[dot-test_raw_web_fetch_json_approval_normalizes_leading_dot_domain()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

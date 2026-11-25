@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "mock_stream"
 location: "L1408"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # test_ws_one_sentence_reply_unchanged()
@@ -17,8 +17,8 @@ tags:
 - [[_mock_synthesize()_1]] - `indirect_call` [INFERRED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[mock_stream()_23]] - `contains` [EXTRACTED]
-- [[mock_stream()_20]] - `indirect_call` [INFERRED]
+- [[mock_stream()_17]] - `contains` [EXTRACTED]
+- [[mock_stream()_15]] - `indirect_call` [INFERRED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

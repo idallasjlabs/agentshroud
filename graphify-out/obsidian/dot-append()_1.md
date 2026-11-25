@@ -1,21 +1,17 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "AuditChain"
-location: "L144"
+community: "test_dashboard_endpoints.py"
+location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/test_dashboard_endpointspy
 ---
 
 # .append()
 
 ## Connections
-- [[dot-append_block()]] - `calls` [EXTRACTED]
-- [[dot-append_owner_bypass()]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
-- [[AuditChain]] - `method` [EXTRACTED]
-- [[AuditChainEntry]] - `calls` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

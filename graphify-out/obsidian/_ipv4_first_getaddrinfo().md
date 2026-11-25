@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L63"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # _ipv4_first_getaddrinfo()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_proxy.py_2]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/telegram_proxypy
+#graphify/code #graphify/INFERRED #community/TeamsConfig

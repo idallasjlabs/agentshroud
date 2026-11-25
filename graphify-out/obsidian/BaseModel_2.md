@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "management.py"
+community: "installer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/managementpy
+  - community/installerpy
 ---
 
 # BaseModel
 
 ## Connections
-- [[EgressAllowlistResponse]] - `inherits` [EXTRACTED]
-- [[EgressAllowlistUpdate]] - `inherits` [EXTRACTED]
+- [[InstallConfig]] - `inherits` [EXTRACTED]
+- [[PrerequisiteCheck]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/managementpy
+#graphify/code #graphify/EXTRACTED #community/installerpy

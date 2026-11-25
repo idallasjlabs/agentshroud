@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L322"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # Blocking agent A does not affect agent B's processing.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_agents_process_independently()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

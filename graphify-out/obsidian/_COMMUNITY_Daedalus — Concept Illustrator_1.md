@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Daedalus — Concept Illustrator_1]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Purpose_45]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Purpose_46]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 - [[Related Skills_11]] - document - docker/config/openclaw/skills/i-daedalus/README.md
-- [[Usage_12]] - document - docker/config/openclaw/skills/i-daedalus/README.md
+- [[Usage_13]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 - [[openclawskillsi-daedalusREADME]] - document - docker/config/openclaw/skills/i-daedalus/README.md
 
 ## Live Query (requires Dataview plugin)

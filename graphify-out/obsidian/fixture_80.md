@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "TestApprovalHardening"
+community: "TrustManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestApprovalHardening
+  - community/TrustManager
 ---
 
 # fixture
 
 ## Connections
-- [[dot-config()_1]] - `references` [EXTRACTED]
-- [[dot-hardening()]] - `references` [EXTRACTED]
+- [[hermes_tm()]] - `references` [EXTRACTED]
+- [[ledger()_2]] - `references` [EXTRACTED]
+- [[openclaw_tm()]] - `references` [EXTRACTED]
+- [[policy()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening
+#graphify/code #graphify/EXTRACTED #community/TrustManager

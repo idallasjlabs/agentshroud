@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/router.py"
+community: "triage-cve-mitigations.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/triage-cve-mitigationspy
 ---
 
 # str
 
 ## Connections
-- [[Action]] - `inherits` [EXTRACTED]
-- [[Resource]] - `inherits` [EXTRACTED]
+- [[Coverage]] - `inherits` [EXTRACTED]
+- [[VulnClass]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/triage-cve-mitigationspy

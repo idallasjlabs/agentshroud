@@ -19,7 +19,7 @@ members: 13
 - [[Tests for Module 28 — Differential PII Detector for Tool Results. IEC 62443 FR3…]] - rationale - gateway/tests/test_differential_pii_detector.py
 - [[default_config()]] - code - gateway/tests/test_differential_pii_detector.py
 - [[detector()]] - code - gateway/tests/test_differential_pii_detector.py
-- [[fixture_26]] - code
+- [[fixture_32]] - code
 - [[test_differential_pii_detector.py]] - code - gateway/tests/test_differential_pii_detector.py
 
 ## Live Query (requires Dataview plugin)

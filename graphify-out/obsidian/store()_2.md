@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_approval_stress.py"
+source_file: "gateway/tests/test_approval_store.py"
 type: "code"
 community: "test_mfa_guard.py"
-location: "L30"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,8 @@ tags:
 
 ## Connections
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[fixture_82]] - `references` [EXTRACTED]
-- [[test_approval_stress.py]] - `contains` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
+- [[fixture_86]] - `references` [EXTRACTED]
+- [[test_approval_store.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

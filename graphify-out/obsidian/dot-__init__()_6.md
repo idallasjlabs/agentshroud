@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event"
-location: "L108"
+community: "EventBus"
+location: "L42"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/EventBus
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_7]] - `calls` [EXTRACTED]
-- [[_Denied]] - `method` [EXTRACTED]
+- [[EventBus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/EventBus

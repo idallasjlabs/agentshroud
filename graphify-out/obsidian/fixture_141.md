@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APolicyConfig"
+community: "chatbot/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/chatbot/mainpy
 ---
 
 # fixture
 
 ## Connections
-- [[test_double_peer()]] - `references` [EXTRACTED]
-- [[trust_manager()_5]] - `references` [EXTRACTED]
+- [[app()_1]] - `references` [EXTRACTED]
+- [[client()_21]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

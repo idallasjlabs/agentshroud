@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_router_openai_translation.py"
+source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget"
-location: "L181"
+community: "asyncio"
+location: "L135"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/AgentTarget
+  - graphify/INFERRED
+  - community/asyncio
 ---
 
 # mock_post()
 
 ## Connections
-- [[_mock_response()]] - `calls` [EXTRACTED]
-- [[test_generic_target_sends_content_body()]] - `contains` [EXTRACTED]
+- [[test_forward_to_agent_http_error()]] - `indirect_call` [INFERRED]
+- [[test_forward_to_agent_timeout()]] - `indirect_call` [INFERRED]
+- [[test_forward_to_agent_unexpected_error()]] - `indirect_call` [INFERRED]
+- [[test_forward_uses_chat_path()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/asyncio

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/skill_guard.py"
+source_file: "gateway/tests/test_cli_coverage.py"
 type: "code"
-community: "ScanResult"
-location: "L314"
+community: "_patch_urlopen"
+location: "L36"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/_patch_urlopen
 ---
 
 # .__init__()
 
 ## Connections
-- [[SkillGuard]] - `method` [EXTRACTED]
-- [[_Rule]] - `references` [EXTRACTED]
+- [[_FakeHTTPResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/_patch_urlopen

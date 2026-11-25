@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[_esc()]] - `calls` [EXTRACTED]
-- [[render()_1]] - `indirect_call` [INFERRED]
+- [[render()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/render_md_emailpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_json_without_content_type_is_still_filtered"
+community: "_make_sanitizer"
 location: "L1861"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_json_without_content_type_is_still_filtered
+  - community/_make_sanitizer
 ---
 
 # .test_json_without_content_type_is_still_filtered()
@@ -15,6 +15,6 @@ tags:
 - [[Missing content-type must not bypass outbound JSON leak filtering.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_json_without_content_type_is_still_filtered
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

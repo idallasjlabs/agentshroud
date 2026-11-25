@@ -12,7 +12,7 @@ tags:
 # not_run_trivy()
 
 ## Connections
-- [[fixture_30]] - `references` [EXTRACTED]
+- [[fixture_36]] - `references` [EXTRACTED]
 - [[test_scorecard_scoring.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_scorecard_scoringpy

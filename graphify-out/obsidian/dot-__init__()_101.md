@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "GatewayConfig"
-location: "L73"
+community: "PIIConfig"
+location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/PIIConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[LedgerConfig]] - `references` [EXTRACTED]
-- [[Store configuration Actual database connection created in initialize(). Args…]] - `rationale_for` [EXTRACTED]
+- [[Any_40]] - `references` [EXTRACTED]
+- [[PIIConfig]] - `references` [EXTRACTED]
+- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

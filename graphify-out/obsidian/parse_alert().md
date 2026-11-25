@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-_process_new_alerts()]] - `calls` [EXTRACTED]
-- [[Any_4]] - `references` [EXTRACTED]
+- [[Any_3]] - `references` [EXTRACTED]
 - [[Parse a single Falco alert. Args raw Raw Falco alert JSON. Returns Parsed…]] - `rationale_for` [EXTRACTED]
 - [[falco_monitor.py]] - `contains` [EXTRACTED]
 - [[read_alerts()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/router.py"
 type: "code"
-community: "ws_soc_endpoint"
+community: "test_soc_realtime_coverage.py"
 location: "L3235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_soc_endpoint
+  - community/test_soc_realtime_coveragepy
 ---
 
 # soc_websocket()
@@ -16,4 +16,4 @@ tags:
 - [[websocket_6]] - `references` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

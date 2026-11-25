@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "GroupRoleResolver"
+community: "test_e2e_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/test_e2e_proxypy
 ---
 
 # Enum
 
 ## Connections
-- [[GroupRole]] - `inherits` [EXTRACTED]
-- [[group_rbac.py]] - `imports_from` [EXTRACTED]
+- [[PipelineAction]] - `inherits` [EXTRACTED]
+- [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

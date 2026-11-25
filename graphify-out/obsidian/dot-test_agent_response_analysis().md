@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "TestMultiTurnTracker"
+community: "MultiTurnTracker"
 location: "L283"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultiTurnTracker
+  - community/MultiTurnTracker
 ---
 
 # .test_agent_response_analysis()
@@ -15,4 +15,4 @@ tags:
 - [[Test analysis of agent responses for potential leaks.]] - `rationale_for` [EXTRACTED]
 - [[TestMultiTurnTracker]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

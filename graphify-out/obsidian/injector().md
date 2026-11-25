@@ -16,7 +16,7 @@ tags:
 - [[CredentialInjector with a custom mapping pointing at the temp secrets.]] - `rationale_for` [EXTRACTED]
 - [[CredentialInjectorConfig]] - `uses` [INFERRED]
 - [[CredentialMapping]] - `uses` [INFERRED]
-- [[fixture_29]] - `references` [EXTRACTED]
+- [[fixture_35]] - `references` [EXTRACTED]
 - [[test_credential_injector.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

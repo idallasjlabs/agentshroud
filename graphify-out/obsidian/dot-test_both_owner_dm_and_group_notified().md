@@ -15,6 +15,6 @@ tags:
 - [[A single group-context approval triggers both owner DM AND group reply.]] - `rationale_for` [EXTRACTED]
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[TestGroupApprovalOwnerDM]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

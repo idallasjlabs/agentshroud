@@ -12,7 +12,7 @@ tags:
 # _Event
 
 ## Connections
-- [[dot-__init__()_223]] - `method` [EXTRACTED]
+- [[dot-__init__()_226]] - `method` [EXTRACTED]
 - [[dot-log_event()_2]] - `calls` [EXTRACTED]
 - [[_StubAuditStore]] - `contains` [EXTRACTED]
 

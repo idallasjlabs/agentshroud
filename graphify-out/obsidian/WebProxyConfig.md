@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/web_config.py"
 type: "code"
-community: "WebProxy"
+community: "lifespan.py"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/lifespanpy
 ---
 
 # WebProxyConfig
 
 ## Connections
-- [[dot-__init__()_151]] - `calls` [EXTRACTED]
-- [[dot-__init__()_153]] - `references` [EXTRACTED]
+- [[dot-__init__()_156]] - `calls` [EXTRACTED]
+- [[dot-__init__()_159]] - `references` [EXTRACTED]
 - [[dot-allowlist_config()]] - `calls` [EXTRACTED]
 - [[dot-get_domain_settings()]] - `method` [EXTRACTED]
 - [[dot-is_domain_allowed()]] - `method` [EXTRACTED]
@@ -36,12 +36,12 @@ tags:
 - [[TestAllowlistMode]] - `uses` [INFERRED]
 - [[TestDomainDenylist]] - `uses` [INFERRED]
 - [[TestIsDomainAllowed]] - `uses` [INFERRED]
-- [[TestRateLimiting_2]] - `uses` [INFERRED]
+- [[TestRateLimiting_1]] - `uses` [INFERRED]
 - [[TestResponseSizeLimits]] - `uses` [INFERRED]
 - [[TestWebProxyConfig]] - `uses` [INFERRED]
 - [[WebProxy]] - `uses` [INFERRED]
 - [[_allowlist_proxy()]] - `calls` [EXTRACTED]
-- [[config()_4]] - `uses` [INFERRED]
+- [[config()_2]] - `uses` [INFERRED]
 - [[http_proxy.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
@@ -62,4 +62,4 @@ tags:
 - [[web_config.py_2]] - `contains` [EXTRACTED]
 - [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

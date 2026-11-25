@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "egress_approval.py"
+community: "EgressApprovalQueue"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/EgressApprovalQueue
 ---
 
 # .assess_risk()
@@ -17,4 +17,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[Public risk assessment helper for managementAPI surfaces.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

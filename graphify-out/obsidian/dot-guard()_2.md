@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "FileSandbox"
-location: "L219"
+community: "PromptGuard"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/PromptGuard
 ---
 
 # .guard()
 
 ## Connections
 - [[PromptGuard]] - `calls` [EXTRACTED]
-- [[TestPromptGuard_1]] - `method` [EXTRACTED]
-- [[fixture_47]] - `references` [EXTRACTED]
+- [[TestPromptGuardPerformance]] - `method` [EXTRACTED]
+- [[fixture_24]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

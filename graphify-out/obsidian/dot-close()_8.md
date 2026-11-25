@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/trust_manager.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "TrustManager"
-location: "L442"
+community: "test_mfa_guard.py"
+location: "L106"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_mfa_guardpy
 ---
 
 # .close()
 
 ## Connections
-- [[TrustManager]] - `method` [EXTRACTED]
+- [[Close the store and cancel timeout tasks.]] - `rationale_for` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

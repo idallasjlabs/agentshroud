@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "egress_approval.py"
+community: "ApprovalMode"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/ApprovalMode
 ---
 
 # EgressRequest
@@ -19,4 +19,4 @@ tags:
 - [[egress_approval.py]] - `contains` [EXTRACTED]
 - [[test_egress_approval.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalMode

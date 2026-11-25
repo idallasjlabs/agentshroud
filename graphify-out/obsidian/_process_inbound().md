@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "email_send"
+community: "AgentTarget"
 location: "L386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/AgentTarget
 ---
 
 # _process_inbound()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ForwardRequest]] - `uses` [INFERRED]
 - [[RBACConfig]] - `calls` [EXTRACTED]
-- [[Request_3]] - `references` [EXTRACTED]
+- [[Request_6]] - `references` [EXTRACTED]
 - [[Target resolution + P1 middleware + inbound security pipeline — shared by the…]] - `rationale_for` [EXTRACTED]
 - [[_InboundResult]] - `calls` [EXTRACTED]
 - [[forward.py]] - `contains` [EXTRACTED]
@@ -22,4 +22,4 @@ tags:
 - [[forward_content_stream()]] - `calls` [EXTRACTED]
 - [[source()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

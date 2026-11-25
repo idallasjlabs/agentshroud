@@ -12,11 +12,11 @@ tags:
 # set_user_role()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[Role]] - `uses` [INFERRED]
 - [[Set a user's role (owner only).]] - `rationale_for` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[put_3]] - `references` [EXTRACTED]
+- [[put_2]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

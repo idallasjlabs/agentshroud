@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_approvals.py"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_approvalspy
+  - community/AgentTarget
 ---
 
 # Any
 
 ## Connections
-- [[args_sha256()]] - `references` [EXTRACTED]
-- [[render_card()]] - `references` [EXTRACTED]
+- [[dot-_build_forward_payload()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent()]] - `references` [EXTRACTED]
+- [[dot-forward_to_agent_stream()]] - `references` [EXTRACTED]
+- [[dot-health_check()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_approvalspy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

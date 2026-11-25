@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ApprovalRequest]] - `uses` [INFERRED]
-- [[asyncio_10]] - `references` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 - [[cleanup_decided() should not remove decided items newer than threshold.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 

@@ -15,7 +15,7 @@ tags:
 - [[ApprovalRequest]] - `uses` [INFERRED]
 - [[SCRUM-154 a dead WebSocket client must never wedge the approval lock.…]] - `rationale_for` [EXTRACTED]
 - [[_HangingWebSocket]] - `calls` [EXTRACTED]
-- [[asyncio_10]] - `references` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -12,7 +12,7 @@ members: 6
 - [[browserFetch()_1]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[fs_3]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[hermesskillsi-browserbrowse.js]] - code - docker/config/hermes/skills/i-browser/browse.js
-- [[path_27]] - code - docker/config/hermes/skills/i-browser/browse.js
+- [[path_26]] - code - docker/config/hermes/skills/i-browser/browse.js
 - [[{ chromium }_1]] - code - docker/config/hermes/skills/i-browser/browse.js
 
 ## Live Query (requires Dataview plugin)

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_clamav_pipeline.py"
 type: "code"
-community: "PipelineAction"
+community: "test_clamav_pipeline.py"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/test_clamav_pipelinepy
 ---
 
 # test_scan_bytes_binary_not_found()
 
 ## Connections
-- [[asyncio_31]] - `references` [EXTRACTED]
+- [[asyncio_33]] - `references` [EXTRACTED]
 - [[scan_bytes()]] - `calls` [EXTRACTED]
 - [[test_clamav_pipeline.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

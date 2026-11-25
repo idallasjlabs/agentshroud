@@ -30,10 +30,10 @@ tags:
 - [[dot-test_summary_critical()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_top_cves_ids()]] - `calls` [EXTRACTED]
 - [[dot-test_summary_warning_high_only()]] - `calls` [EXTRACTED]
-- [[Any_16]] - `references` [EXTRACTED]
+- [[Any_11]] - `references` [EXTRACTED]
 - [[Parse raw Trivy JSON output into a structured summary. Args raw Raw JSON…]] - `rationale_for` [EXTRACTED]
 - [[run_trivy_scan()]] - `calls` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]
-- [[trivy_report.py_2]] - `contains` [EXTRACTED]
+- [[trivy_report.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/parse_trivy_output

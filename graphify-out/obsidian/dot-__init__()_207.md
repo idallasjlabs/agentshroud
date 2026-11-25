@@ -1,17 +1,21 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L88"
+community: "ToolChainAnalyzer"
+location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/ToolChainAnalyzer
 ---
 
 # .__init__()
 
 ## Connections
-- [[_DummyTargetWriter]] - `method` [EXTRACTED]
+- [[dot-_load_custom_patterns()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_patterns()]] - `calls` [EXTRACTED]
+- [[Any_79]] - `references` [EXTRACTED]
+- [[Initialize the tool chain analyzer. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
+- [[ToolChainAnalyzer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

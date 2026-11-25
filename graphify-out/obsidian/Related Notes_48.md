@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/MCP Proxy Errors.md"
+source_file: "docs/vault/05 - Dependencies/openclaw.md"
 type: "document"
-community: "MCP Proxy Errors"
-location: "L104"
+community: "OpenClaw"
+location: "L56"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Proxy_Errors
+  - community/OpenClaw
 ---
 
 # Related Notes
 
 ## Connections
-- [[MCP Proxy Errors_2]] - `contains` [EXTRACTED]
+- [[OpenClaw_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/OpenClaw

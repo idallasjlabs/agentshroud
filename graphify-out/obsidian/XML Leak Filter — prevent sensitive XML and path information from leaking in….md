@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/xml_leak_filter.py"
 type: "rationale"
-community: "run"
+community: "ContextGuard"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # XML Leak Filter — prevent sensitive XML and path information from leaking in…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[xml_leak_filter.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

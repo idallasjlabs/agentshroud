@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: "MetadataGuard"
+community: "TestMetadataGuard"
 location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/TestMetadataGuard
 ---
 
 # TestMetadataGuard
 
 ## Connections
-- [[dot-setup_method()_13]] - `method` [EXTRACTED]
+- [[dot-setup_method()_15]] - `method` [EXTRACTED]
 - [[dot-test_all_unicode_control_chars_stripped()]] - `method` [EXTRACTED]
 - [[dot-test_check_for_exif_detects_magic_bytes()]] - `method` [EXTRACTED]
 - [[dot-test_check_oversized_headers_flags_large_headers()]] - `method` [EXTRACTED]
@@ -28,4 +28,4 @@ tags:
 - [[MetadataGuard]] - `uses` [INFERRED]
 - [[test_metadata_guard.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

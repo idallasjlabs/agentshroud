@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "code"
-community: "MiddlewareManager"
+community: ".process_request"
 location: "L1246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/process_request
 ---
 
 # ._is_tool_call_request()
@@ -17,4 +17,4 @@ tags:
 - [[MiddlewareManager]] - `method` [EXTRACTED]
 - [[Return True only when the request contains actual tool calls or tool results.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/process_request

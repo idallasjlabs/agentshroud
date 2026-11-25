@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "WebProxyResult"
-location: "L629"
+community: "MCPServerConfig"
+location: "L841"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/WebProxyResult
+  - community/MCPServerConfig
 ---
 
 # Get proxy statistics.
 
 ## Connections
-- [[dot-get_stats()]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_3]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/WebProxyResult
+#graphify/rationale #graphify/EXTRACTED #community/MCPServerConfig

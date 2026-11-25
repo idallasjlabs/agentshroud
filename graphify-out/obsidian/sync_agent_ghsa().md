@@ -12,7 +12,7 @@ tags:
 # sync_agent_ghsa()
 
 ## Connections
-- [[Path_68]] - `references` [EXTRACTED]
+- [[Path_67]] - `references` [EXTRACTED]
 - [[Run ONE agent's full, independent GHSA pipeline. Returns count registered.…]] - `rationale_for` [EXTRACTED]
 - [[SyncError]] - `calls` [EXTRACTED]
 - [[_print_summary()]] - `calls` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "TestAuth"
+community: "TrustManager"
 location: "L429"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/TrustManager
 ---
 
 # Low-trust agents should be blocked from high-risk actions.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_trust_level_enforcement()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAuth
+#graphify/rationale #graphify/EXTRACTED #community/TrustManager

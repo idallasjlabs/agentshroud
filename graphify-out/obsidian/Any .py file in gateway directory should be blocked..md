@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestAgentShroudSourceCodeProtection"
+community: "test_privilege_separation.py"
 location: "L91"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestAgentShroudSourceCodeProtection
+  - community/test_privilege_separationpy
 ---
 
 # Any .py file in gateway directory should be blocked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_any_python_file_in_gateway_blocked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestAgentShroudSourceCodeProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

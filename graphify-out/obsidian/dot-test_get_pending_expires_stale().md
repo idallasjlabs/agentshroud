@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[TestApprovalTimeout]] - `method` [EXTRACTED]
-- [[asyncio_47]] - `references` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 - [[get_pending should expire stale items.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

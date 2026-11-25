@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACConfig"
+community: "RBACConfig"
 location: "L88"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACConfig
+  - community/RBACConfig
 ---
 
 # Test getting users by role.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_users_by_role()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

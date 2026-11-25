@@ -8,7 +8,7 @@ members: 148
 **Members:** 148 nodes
 
 ## Members
-- [[dot-__init__()_24]] - code - gateway/approval_queue/group_router.py
+- [[dot-__init__()_18]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_group_reply_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_build_owner_dm_text()]] - code - gateway/approval_queue/group_router.py
 - [[dot-_default_send()]] - code - gateway/approval_queue/group_router.py
@@ -39,7 +39,7 @@ members: 148
 - [[100 concurrent approval requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[A WebSocket stand-in whose send_json never returns — models a dead client…]] - rationale - gateway/tests/test_approval_queue.py
 - [[A single group-context approval triggers both owner DM AND group reply.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[Any_13]] - code
+- [[Any_8]] - code
 - [[ApprovalRequest]] - code - gateway/ingest_api/models.py
 - [[Auto-expire old requests.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Build the group thread reply notification text.]] - rationale - gateway/approval_queue/group_router.py
@@ -109,8 +109,8 @@ members: 148
 - [[agent_id starting with 'group-' is recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[agent_id='default' is NOT recognized as group context.]] - rationale - gateway/tests/test_group_approval_routing.py
 - [[approval_queue()]] - code - gateway/tests/test_approval_queue.py
+- [[asyncio_9]] - code
 - [[asyncio_10]] - code
-- [[asyncio_11]] - code
 - [[broadcast() bounds each client's send with a timeout — defense in depth so an…]] - rationale - gateway/tests/test_approval_queue.py
 - [[cleanup_decided() must not remove pending items regardless of age.]] - rationale - gateway/tests/test_approval_queue.py
 - [[cleanup_decided() should not remove decided items newer than threshold.]] - rationale - gateway/tests/test_approval_queue.py
@@ -119,8 +119,8 @@ members: 148
 - [[decide_approve()]] - code - gateway/tests/test_approval_queue.py
 - [[decide_reject()]] - code - gateway/tests/test_approval_queue.py
 - [[extract_group_chat_id returns None for non-group agent IDs.]] - rationale - gateway/tests/test_group_approval_routing.py
-- [[fixture_16]] - code
-- [[fixture_17]] - code
+- [[fixture_25]] - code
+- [[fixture_26]] - code
 - [[get_pending should expire stale items.]] - rationale - gateway/tests/test_approval_stress.py
 - [[group_router.py]] - code - gateway/approval_queue/group_router.py
 - [[mock_send_message()]] - code - gateway/tests/test_group_approval_routing.py
@@ -165,18 +165,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 21 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 16 edges to [[_COMMUNITY_GatewayConfig]]
-- 6 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 3 edges to [[_COMMUNITY_test_edge_approvals.py]]
+- 16 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 16 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 9 edges to [[_COMMUNITY_AgentTarget]]
+- 3 edges to [[_COMMUNITY_test_edge_pipeline.py]]
+- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_decide_approval]]
-- 1 edge to [[_COMMUNITY_email_send]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
 - [[ApprovalRequest]] - degree 74, connects to 6 communities
-- [[test_approval_queue.py]] - degree 35, connects to 3 communities
+- [[test_approval_queue.py]] - degree 35, connects to 2 communities
 - [[test_group_approval_routing.py]] - degree 12, connects to 1 community
 - [[TestApprovalTimeout]] - degree 5, connects to 1 community
 - [[TestConcurrentApprovalRequests]] - degree 5, connects to 1 community

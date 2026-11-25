@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "DelegationPrivilege"
+community: "multi_host_test.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationPrivilege
+  - community/multi_host_testpy
 ---
 
 # Enum
 
 ## Connections
-- [[DelegationPrivilege]] - `inherits` [EXTRACTED]
-- [[delegation.py]] - `imports_from` [EXTRACTED]
+- [[HostStatus]] - `inherits` [EXTRACTED]
+- [[multi_host_test.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege
+#graphify/code #graphify/EXTRACTED #community/multi_host_testpy

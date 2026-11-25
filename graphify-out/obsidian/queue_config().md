@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
 - [[Create approval queue configuration for testing]] - `rationale_for` [EXTRACTED]
-- [[fixture_16]] - `references` [EXTRACTED]
+- [[fixture_25]] - `references` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

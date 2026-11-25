@@ -29,7 +29,7 @@ members: 46
 - [[The iOSmacOS Shortcuts source value ('shortcut') is on the allowlist.]] - rationale - gateway/tests/test_security.py
 - [[Verify authentication doesn't leak timing information]] - rationale - gateway/tests/test_security.py
 - [[Verify token comparison is constant-time]] - rationale - gateway/tests/test_security.py
-- [[asyncio_74]] - code
+- [[asyncio_75]] - code
 - [[content_type is a closed Literal set; a shortcut cannot invent new types.]] - rationale - gateway/tests/test_security.py
 - [[parametrize_24]] - code
 - [[test_constant_time_comparison()]] - code - gateway/tests/test_security.py
@@ -63,9 +63,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 9 edges to [[_COMMUNITY_AgentTarget]]
-- 6 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_GatewayConfig]]
+- 10 edges to [[_COMMUNITY_AgentTarget]]
+- 4 edges to [[_COMMUNITY_fastapi]]
+- 2 edges to [[_COMMUNITY_RateLimiter]]
 
 ## Top bridge nodes
 - [[test_security.py]] - degree 27, connects to 3 communities

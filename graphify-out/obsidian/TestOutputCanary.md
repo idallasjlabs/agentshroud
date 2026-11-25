@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L17"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # TestOutputCanary
 
 ## Connections
-- [[dot-setup_method()_12]] - `method` [EXTRACTED]
+- [[dot-setup_method()_14]] - `method` [EXTRACTED]
 - [[dot-test_canary_cleanup()]] - `method` [EXTRACTED]
 - [[dot-test_canary_generation_per_session()]] - `method` [EXTRACTED]
 - [[dot-test_clean_response_passes()]] - `method` [EXTRACTED]
@@ -31,4 +31,4 @@ tags:
 - [[Test cases for the Output Canary System.]] - `rationale_for` [EXTRACTED]
 - [[test_output_canary.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

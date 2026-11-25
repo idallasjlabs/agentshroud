@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/key_vault.py"
+source_file: "gateway/tests/test_llm_proxy_local_parity.py"
 type: "code"
-community: "KeyLeakDetector"
-location: "L160"
+community: "_FakeStreamResponse"
+location: "L1413"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyLeakDetector
+  - community/_FakeStreamResponse
 ---
 
 # .__init__()
 
 ## Connections
-- [[KeyLeakDetector]] - `method` [EXTRACTED]
-- [[KeyVault]] - `references` [EXTRACTED]
+- [[_FakeStreamResponse]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyLeakDetector
+#graphify/code #graphify/EXTRACTED #community/_FakeStreamResponse

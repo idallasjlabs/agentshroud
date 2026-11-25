@@ -12,8 +12,8 @@ tags:
 # .append_block()
 
 ## Connections
-- [[dot-append()_1]] - `calls` [EXTRACTED]
-- [[Any_70]] - `references` [EXTRACTED]
+- [[dot-append()]] - `calls` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
 - [[Append to the chain with guaranteed SQLite persistence. Used exclusively for…]] - `rationale_for` [EXTRACTED]
 - [[AuditChain]] - `method` [EXTRACTED]
 - [[AuditChainEntry]] - `references` [EXTRACTED]

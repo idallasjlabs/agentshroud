@@ -10,8 +10,8 @@ members: 9
 ## Members
 - [[Contents]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Coverage Requirements]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Purpose_72]] - document - docs/vault/03 - Configuration/pytest.ini.md
-- [[Related Notes_35]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Purpose_74]] - document - docs/vault/03 - Configuration/pytest.ini.md
+- [[Related Notes_37]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Test Execution]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Test Locations]] - document - docs/vault/03 - Configuration/pytest.ini.md
 - [[Why `tmppytest_cache`]] - document - docs/vault/03 - Configuration/pytest.ini.md

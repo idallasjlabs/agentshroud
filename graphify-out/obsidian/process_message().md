@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "ingest_api/config.py"
 location: "L235"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/ingest_api/configpy
 ---
 
 # process_message()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_pipeline_concurrent_messages()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -12,7 +12,7 @@ tags:
 # TestPromptGuardEvasion
 
 ## Connections
-- [[dot-setup_method()_9]] - `method` [EXTRACTED]
+- [[dot-setup_method()_10]] - `method` [EXTRACTED]
 - [[dot-test_double_base64_injection()]] - `method` [EXTRACTED]
 - [[dot-test_fullwidth_detection()]] - `method` [EXTRACTED]
 - [[dot-test_homoglyph_detection()]] - `method` [EXTRACTED]

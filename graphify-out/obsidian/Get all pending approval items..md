@@ -12,6 +12,6 @@ tags:
 # Get all pending approval items.
 
 ## Connections
-- [[dot-get_pending()_2]] - `rationale_for` [EXTRACTED]
+- [[dot-get_pending()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_mfa_guardpy

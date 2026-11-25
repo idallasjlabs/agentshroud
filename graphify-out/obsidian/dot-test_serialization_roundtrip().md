@@ -12,7 +12,7 @@ tags:
 # .test_serialization_roundtrip()
 
 ## Connections
-- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
 - [[AgentRegistry]] - `calls` [EXTRACTED]
 - [[TestAgentRegistry]] - `method` [EXTRACTED]
 - [[_make_config()]] - `calls` [EXTRACTED]

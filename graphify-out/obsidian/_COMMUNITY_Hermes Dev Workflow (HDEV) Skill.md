@@ -32,7 +32,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_GIT-GUARD Skill Definition]]
 - 1 edge to [[_COMMUNITY_Coding Agent (bash-first)]]
-- 1 edge to [[_COMMUNITY_graphify Skill]]
+- 1 edge to [[_COMMUNITY_sunday-scan.sh_1]]
 
 ## Top bridge nodes
 - [[OpenClaw Dev Workflow (ODEV)]] - degree 4, connects to 2 communities

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_scanner_integration_coverage.py"
+source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "TestIsContainerRunning"
-location: "L175"
+community: "Path"
+location: "L408"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/TestIsContainerRunning
+  - community/Path
 ---
 
 # boom()
 
 ## Connections
-- [[dot-test_containerized_fallback_evidence()]] - `indirect_call` [INFERRED]
-- [[dot-test_socket_error_returns_false()]] - `indirect_call` [INFERRED]
+- [[dot-test_main_unreadable_file_fails_closed()]] - `indirect_call` [INFERRED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/TestIsContainerRunning
+#graphify/code #graphify/INFERRED #community/Path

@@ -17,6 +17,6 @@ tags:
 - [[_getUpdates_response()]] - `calls` [EXTRACTED]
 - [[_make_proxy()_3]] - `calls` [EXTRACTED]
 - [[_make_update()_2]] - `calls` [EXTRACTED]
-- [[asyncio_67]] - `references` [EXTRACTED]
+- [[asyncio_68]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_telegram_pipelinepy

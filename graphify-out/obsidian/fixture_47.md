@@ -1,23 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "FileSandbox"
+community: "EgressEvent"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/EgressEvent
 ---
 
 # fixture
 
 ## Connections
-- [[dot-guard()_4]] - `references` [EXTRACTED]
-- [[dot-guard()_2]] - `references` [EXTRACTED]
-- [[dot-monitor_sandbox()]] - `references` [EXTRACTED]
-- [[dot-sandbox()]] - `references` [EXTRACTED]
-- [[dot-sanitizer()_2]] - `references` [EXTRACTED]
-- [[dot-sanitizer()_1]] - `references` [EXTRACTED]
-- [[dot-store()]] - `references` [EXTRACTED]
-- [[dot-token_validator()]] - `references` [EXTRACTED]
+- [[default_config()_2]] - `references` [EXTRACTED]
+- [[monitor()]] - `references` [EXTRACTED]
+- [[monitor_config()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

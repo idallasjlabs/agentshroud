@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CanaryConfig_1]] - `contains` [EXTRACTED]
-- [[CanaryResult_2]] - `contains` [EXTRACTED]
+- [[CanaryResult_1]] - `contains` [EXTRACTED]
 - [[CanaryTripwire]] - `contains` [EXTRACTED]
 - [[TripwireResponse]] - `contains` [EXTRACTED]
 - [[test_canary_tripwire.py]] - `imports_from` [EXTRACTED]

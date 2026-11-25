@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mcp_proxy.py"
+community: "test_redteam_probes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/test_redteam_probespy
 ---
 
 # fixture
 
 ## Connections
-- [[config()_1]] - `references` [EXTRACTED]
-- [[mgr()_1]] - `references` [EXTRACTED]
+- [[pipeline()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

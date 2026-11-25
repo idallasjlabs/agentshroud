@@ -12,7 +12,7 @@ tags:
 # egress_remove_rule()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Remove an egress rule by domain.]] - `rationale_for` [EXTRACTED]
 - [[delete_1]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "egress_approval.py"
+community: "ApprovalMode"
 location: "L47"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/ApprovalMode
 ---
 
 # Represents a pending egress approval request.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EgressRequest]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalMode

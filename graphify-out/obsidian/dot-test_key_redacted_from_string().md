@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "TestKeyRedaction"
+community: "KeyVault"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKeyRedaction
+  - community/KeyVault
 ---
 
 # .test_key_redacted_from_string()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyRedaction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKeyRedaction
+#graphify/code #graphify/EXTRACTED #community/KeyVault

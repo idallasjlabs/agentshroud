@@ -22,7 +22,7 @@ tags:
 - [[health_check()_1]] - `contains` [EXTRACTED]
 - [[lifespan()_1]] - `contains` [EXTRACTED]
 - [[load_persona_files()]] - `contains` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 - [[require_auth()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/chatbot/mainpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: ".test_logging"
+community: "ToolResultSanitizer"
 location: "L307"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_logging
+  - community/ToolResultSanitizer
 ---
 
 # Test that appropriate logging occurs.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_logging()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_logging
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

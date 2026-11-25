@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # SecurityPipeline
@@ -19,7 +19,7 @@ tags:
 - [[dot-_pipeline_with_trust()]] - `calls` [EXTRACTED]
 - [[dot-_process_inbound_core()]] - `method` [EXTRACTED]
 - [[dot-_process_outbound_core()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_14]] - `method` [EXTRACTED]
+- [[dot-get_stats()_15]] - `method` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
 - [[dot-process_inbound()_5]] - `method` [EXTRACTED]
@@ -96,4 +96,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

@@ -12,8 +12,8 @@ tags:
 # ProgressiveLockdown
 
 ## Connections
-- [[dot-__init__()_49]] - `calls` [EXTRACTED]
-- [[dot-__init__()_120]] - `method` [EXTRACTED]
+- [[dot-__init__()_30]] - `calls` [EXTRACTED]
+- [[dot-__init__()_113]] - `method` [EXTRACTED]
 - [[dot-_action()]] - `method` [EXTRACTED]
 - [[dot-_claim_notify()]] - `method` [EXTRACTED]
 - [[dot-_effective_level()]] - `method` [EXTRACTED]
@@ -63,7 +63,7 @@ tags:
 - [[dot-test_suspension_is_sticky_under_decay()]] - `calls` [EXTRACTED]
 - [[dot-test_threaded_record_block_counts_exactly()]] - `calls` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
-- [[TestConcurrency_1]] - `uses` [INFERRED]
+- [[TestConcurrency]] - `uses` [INFERRED]
 - [[TestDecay]] - `uses` [INFERRED]
 - [[TestEscalateTo]] - `uses` [INFERRED]
 - [[TestLifespanWiring]] - `uses` [INFERRED]
@@ -74,7 +74,7 @@ tags:
 - [[TestTelegramProxyInjection]] - `uses` [INFERRED]
 - [[Tracks per-principal block counts and returns escalation actions. Thread-safe…]] - `rationale_for` [EXTRACTED]
 - [[_app_state()_1]] - `calls` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[progressive_lockdown.py]] - `contains` [EXTRACTED]

@@ -13,9 +13,9 @@ members: 9
 - [[Affected Modules]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Behavior_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Description_9]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Related Notes_37]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Related Notes_39]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Startup Warnings]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
-- [[Usage_24]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
+- [[Usage_25]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 - [[Values_1]] - document - docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "CollabMode"
+community: "main.rs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CollabMode
+  - community/mainrs
 ---
 
 # Formatter
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-fmt()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CollabMode
+#graphify/code #graphify/EXTRACTED #community/mainrs

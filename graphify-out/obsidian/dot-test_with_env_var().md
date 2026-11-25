@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "version_routes.py"
+community: "check_current_version"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/check_current_version
 ---
 
 # .test_with_env_var()
@@ -15,4 +15,4 @@ tags:
 - [[TestCheckCurrentVersion]] - `method` [EXTRACTED]
 - [[check_current_version()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/check_current_version

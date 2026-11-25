@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "._extract_egress_targets"
+community: "ProxyResult"
 location: "L311"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/ProxyResult
 ---
 
 # ._emit_privacy_event()
@@ -18,4 +18,4 @@ tags:
 - [[MCPProxy]] - `method` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

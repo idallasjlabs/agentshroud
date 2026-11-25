@@ -12,7 +12,7 @@ tags:
 # TestPromptGuard
 
 ## Connections
-- [[dot-guard()_2]] - `method` [EXTRACTED]
+- [[dot-guard()_6]] - `method` [EXTRACTED]
 - [[dot-test_base64_injection()]] - `method` [EXTRACTED]
 - [[dot-test_clean_message_not_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_clean_technical_message()]] - `method` [EXTRACTED]

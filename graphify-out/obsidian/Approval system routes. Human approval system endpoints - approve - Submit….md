@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "fastapi.md"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/fastapimd
 ---
 
 # Approval system routes. Human approval system endpoints: - /approve - Submit…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[approval.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

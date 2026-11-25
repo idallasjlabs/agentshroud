@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/email_service.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "GatewayEmailService"
-location: "L51"
+community: "MCPServerConfig"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/MCPServerConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[GatewayEmailService]] - `method` [EXTRACTED]
-- [[TransportFactory]] - `references` [EXTRACTED]
+- [[AsyncMock]] - `calls` [INFERRED]
+- [[FakeProcess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

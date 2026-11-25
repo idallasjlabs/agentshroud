@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[SecurityPipeline]] - `uses` [INFERRED]
-- [[asyncio_35]] - `references` [EXTRACTED]
+- [[asyncio_37]] - `references` [EXTRACTED]
 - [[config-off equivalence absent guard leaves inbound behaviour identical.]] - `rationale_for` [EXTRACTED]
 - [[test_rate_limit_guard.py]] - `contains` [EXTRACTED]
 

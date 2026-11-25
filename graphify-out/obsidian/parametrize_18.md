@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_security_integration.py"
+community: "test_edge_service_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/test_edge_service_routespy
 ---
 
 # parametrize
 
 ## Connections
-- [[test_hyphenated_sk_keys_are_blocked()]] - `references` [EXTRACTED]
+- [[test_rpc_error_mapping()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

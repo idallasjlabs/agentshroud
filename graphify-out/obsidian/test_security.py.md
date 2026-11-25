@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ForwardRequest]] - `imports` [EXTRACTED]
-- [[RateLimiter_1]] - `imports` [EXTRACTED]
+- [[RateLimiter]] - `imports` [EXTRACTED]
 - [[Security and edge case tests for AgentShroud Gateway]] - `rationale_for` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]

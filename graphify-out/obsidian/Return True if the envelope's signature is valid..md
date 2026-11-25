@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "rationale"
-community: "EnvelopeSigner"
+community: "service.py"
 location: "L76"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/servicepy
 ---
 
 # Return True if the envelope's signature is valid.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-verify()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/rationale #graphify/EXTRACTED #community/servicepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/AgentTarget
 ---
 
 # forward.py
@@ -37,7 +37,7 @@ tags:
 - [[email_send_owner()]] - `contains` [EXTRACTED]
 - [[email_service.py]] - `imports_from` [EXTRACTED]
 - [[event_bus.py_2]] - `imports_from` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[forward_content()]] - `contains` [EXTRACTED]
 - [[forward_content_stream()]] - `contains` [EXTRACTED]
 - [[ingest_apiauth.py]] - `imports_from` [EXTRACTED]
@@ -45,7 +45,7 @@ tags:
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
 - [[make_event()]] - `imports` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 - [[state.py]] - `imports_from` [EXTRACTED]
 - [[telegram_webhook()]] - `contains` [EXTRACTED]
 - [[test_channel_ownership.py]] - `imports_from` [EXTRACTED]
@@ -55,4 +55,4 @@ tags:
 - [[test_gmail_credential_retrieval.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

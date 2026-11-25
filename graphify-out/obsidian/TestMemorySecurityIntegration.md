@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "test_memory_lifecycle.py"
 location: "L391"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # TestMemorySecurityIntegration
 
 ## Connections
-- [[dot-setup_method()_29]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_6]] - `method` [EXTRACTED]
+- [[dot-setup_method()_28]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_3]] - `method` [EXTRACTED]
 - [[dot-test_integrated_memory_protection()]] - `method` [EXTRACTED]
 - [[dot-test_status_reporting()_1]] - `method` [EXTRACTED]
 - [[MemoryIntegrityMonitor]] - `uses` [INFERRED]
@@ -22,4 +22,4 @@ tags:
 - [[Test integration of memory security components.]] - `rationale_for` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

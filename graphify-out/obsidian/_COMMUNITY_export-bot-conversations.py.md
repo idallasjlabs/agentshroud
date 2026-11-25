@@ -30,8 +30,8 @@ members: 24
 - [[export-telegram-history.py]] - code - scripts/export-telegram-history.py
 - [[export_hermes()]] - code - scripts/export-bot-conversations.py
 - [[export_openclaw()]] - code - scripts/export-bot-conversations.py
-- [[main()_35]] - code - scripts/export-bot-conversations.py
-- [[main()_36]] - code - scripts/export-telegram-history.py
+- [[main()_36]] - code - scripts/export-bot-conversations.py
+- [[main()_37]] - code - scripts/export-telegram-history.py
 
 ## Live Query (requires Dataview plugin)
 

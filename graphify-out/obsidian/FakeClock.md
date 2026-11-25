@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__call__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_34]] - `method` [EXTRACTED]
+- [[dot-__init__()_26]] - `method` [EXTRACTED]
 - [[dot-advance()]] - `method` [EXTRACTED]
 - [[dot-test_blocks_inside_window_still_escalate()]] - `calls` [EXTRACTED]
 - [[dot-test_decay_off_by_default_blocks_never_age_out()]] - `calls` [EXTRACTED]

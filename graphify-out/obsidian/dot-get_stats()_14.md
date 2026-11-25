@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/pipeline.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "AuditChain"
-location: "L1689"
+community: "AuditStore"
+location: "L440"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditChain
+  - community/AuditStore
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_70]] - `references` [EXTRACTED]
-- [[SecurityPipeline]] - `method` [EXTRACTED]
+- [[AuditStore]] - `method` [EXTRACTED]
+- [[Get audit store statistics.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditChain
+#graphify/code #graphify/EXTRACTED #community/AuditStore

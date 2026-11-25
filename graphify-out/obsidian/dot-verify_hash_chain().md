@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "AuditStore"
+community: "AuditEvent"
 location: "L317"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/AuditEvent
 ---
 
 # .verify_hash_chain()
@@ -16,4 +16,4 @@ tags:
 - [[AuditStore]] - `method` [EXTRACTED]
 - [[Verify the integrity of the hash chain. The first examined row's prev_hash must…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

@@ -1,16 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "middleware.py"
+community: "AlertTelegramRelay"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/AlertTelegramRelay
 ---
 
 # Any
 
 ## Connections
-- [[dot-get_lifecycle_status()]] - `references` [EXTRACTED]
+- [[dot-__call__()_10]] - `references` [EXTRACTED]
+- [[dot-__init__()_166]] - `references` [EXTRACTED]
+- [[dot-_clean_tool()]] - `references` [EXTRACTED]
+- [[dot-_coerce()]] - `references` [EXTRACTED]
+- [[dot-_handle()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

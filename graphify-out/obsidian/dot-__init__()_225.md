@@ -1,8 +1,8 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/proxy/a2a_proxy.py"
 type: "code"
 community: "A2AProxy"
-location: "L32"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,8 @@ tags:
 # .__init__()
 
 ## Connections
-- [[_StubForwarder_1]] - `method` [EXTRACTED]
+- [[A2APolicyEngine]] - `references` [EXTRACTED]
+- [[A2AProxy]] - `method` [EXTRACTED]
+- [[Any_90]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

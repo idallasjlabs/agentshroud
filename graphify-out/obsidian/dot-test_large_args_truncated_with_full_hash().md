@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_approvals.py"
 type: "code"
-community: "test_edge_approvals.py"
+community: "test_edge_pipeline.py"
 location: "L232"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_approvalspy
+  - community/test_edge_pipelinepy
 ---
 
 # .test_large_args_truncated_with_full_hash()
@@ -16,4 +16,4 @@ tags:
 - [[TestApprovalCard]] - `method` [EXTRACTED]
 - [[args_sha256()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_approvalspy
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

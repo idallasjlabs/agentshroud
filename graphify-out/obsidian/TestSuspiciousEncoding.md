@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestInjectionDetection"
+community: "test_mcp_proxy.py"
 location: "L262"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/test_mcp_proxypy
 ---
 
 # TestSuspiciousEncoding
@@ -18,4 +18,4 @@ tags:
 - [[FindingType]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

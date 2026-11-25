@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TokenValidator"
+community: "cli/main.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/cli/mainpy
 ---
 
 # Any
 
 ## Connections
-- [[dot-_decode_token()]] - `references` [EXTRACTED]
+- [[_edge_result()]] - `references` [EXTRACTED]
+- [[_output()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/cli/mainpy

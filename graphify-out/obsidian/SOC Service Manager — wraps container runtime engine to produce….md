@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "rationale"
-community: "test_soc_realtime_coverage.py"
+community: "ServiceManager"
 location: "L2"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ServiceManager
 ---
 
 # SOC Service Manager — wraps container runtime engine to produce…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[services.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/rationale #graphify/EXTRACTED #community/ServiceManager

@@ -1,22 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentTarget"
+community: "hermes_dashboard_ws_proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/hermes_dashboard_ws_proxy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_generic_target_returns_json_as_is()]] - `references` [EXTRACTED]
-- [[test_generic_target_sends_content_body()]] - `references` [EXTRACTED]
-- [[test_openai_empty_choices_raises_forward_error()]] - `references` [EXTRACTED]
-- [[test_openai_malformed_response_raises_forward_error()]] - `references` [EXTRACTED]
-- [[test_openai_payload_includes_model()]] - `references` [EXTRACTED]
-- [[test_openai_target_returns_content_string()]] - `references` [EXTRACTED]
-- [[test_openai_target_sends_messages_body()]] - `references` [EXTRACTED]
+- [[dot-test_alerts_accepted_from_localhost()]] - `references` [EXTRACTED]
+- [[dot-test_bots_inventory_matches_the_real_container_name()]] - `references` [EXTRACTED]
+- [[dot-test_connects_to_bridge_port_with_ws_scheme_and_query()]] - `references` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal()]] - `references` [EXTRACTED]
+- [[dot-test_proxy_returns_400_on_traversal_in_query()]] - `references` [EXTRACTED]
+- [[dot-test_relays_text_and_bytes_both_directions()]] - `references` [EXTRACTED]
+- [[dot-test_traversal_in_path_closes_without_connecting()]] - `references` [EXTRACTED]
+- [[dot-test_traversal_in_query_closes_without_connecting()]] - `references` [EXTRACTED]
+- [[dot-test_upstream_connect_failure_closes_gracefully()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy

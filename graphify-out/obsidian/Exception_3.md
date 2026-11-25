@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayBackedProvider"
+community: "ReportIntegrityError"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/ReportIntegrityError
 ---
 
 # Exception
 
 ## Connections
-- [[GatewayError]] - `inherits` [EXTRACTED]
+- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError

@@ -24,8 +24,8 @@ tags:
 - [[_inject_fetcher()]] - `contains` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
 - [[citation_verifier.py]] - `imports_from` [EXTRACTED]
-- [[client()_17]] - `contains` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[client()_18]] - `contains` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[make_httpx_fetcher()]] - `imports` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 

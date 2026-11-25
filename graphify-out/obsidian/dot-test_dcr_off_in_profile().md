@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "_client_info"
+community: "test_edge_oauth.py"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_client_info
+  - community/test_edge_oauthpy
 ---
 
 # .test_dcr_off_in_profile()
@@ -16,4 +16,4 @@ tags:
 - [[_client_info()]] - `calls` [EXTRACTED]
 - [[_profile()_2]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_client_info
+#graphify/code #graphify/EXTRACTED #community/test_edge_oauthpy

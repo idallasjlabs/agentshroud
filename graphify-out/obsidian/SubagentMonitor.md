@@ -1,24 +1,24 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # SubagentMonitor
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_74]] - `method` [EXTRACTED]
+- [[dot-__init__()_65]] - `method` [EXTRACTED]
 - [[dot-_log_event()]] - `method` [EXTRACTED]
 - [[dot-check_tool_usage()]] - `method` [EXTRACTED]
 - [[dot-deregister()]] - `method` [EXTRACTED]
 - [[dot-get_active()]] - `method` [EXTRACTED]
-- [[dot-get_audit_log()_3]] - `method` [EXTRACTED]
+- [[dot-get_audit_log()_4]] - `method` [EXTRACTED]
 - [[dot-get_flagged_events()]] - `method` [EXTRACTED]
 - [[dot-kill_agent()]] - `method` [EXTRACTED]
 - [[dot-kill_all()]] - `method` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_security_audit.py]] - `imports` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

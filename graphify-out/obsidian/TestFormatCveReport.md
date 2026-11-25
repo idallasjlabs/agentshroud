@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_daily_cve_report.py"
 type: "code"
-community: "_make_report"
+community: "test_daily_cve_report.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_report
+  - community/test_daily_cve_reportpy
 ---
 
 # TestFormatCveReport
@@ -25,4 +25,4 @@ tags:
 - [[dot-test_zero_count_severity_omitted()]] - `method` [EXTRACTED]
 - [[test_daily_cve_report.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_report
+#graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

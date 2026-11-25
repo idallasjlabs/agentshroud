@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/forward.py"
 type: "rationale"
-community: "email_send"
+community: "AgentTarget"
 location: "L177"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/email_send
+  - community/AgentTarget
 ---
 
 # Email send gateway (P3: channel ownership). The bot submits email send requests…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[email_send()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/email_send
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

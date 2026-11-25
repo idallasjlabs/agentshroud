@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_fake_kokoro_pipeline"
+community: "test_voice_gateway.py"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_fake_kokoro_pipeline
+  - community/test_voice_gatewaypy
 ---
 
 # _fake_kokoro_pipeline()
@@ -20,4 +20,4 @@ tags:
 - [[test_tts_synthesize_via_kokoro()]] - `calls` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_fake_kokoro_pipeline
+#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy

@@ -22,7 +22,7 @@ tags:
 - [[dot-test_agent_id_propagated_for_openclaw()]] - `calls` [EXTRACTED]
 - [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - `calls` [EXTRACTED]
 - [[dot-test_default_not_used_in_pipeline()]] - `calls` [EXTRACTED]
-- [[BaseModel_5]] - `inherits` [EXTRACTED]
+- [[BaseModel_7]] - `inherits` [EXTRACTED]
 - [[Downstream agent target]] - `rationale_for` [EXTRACTED]
 - [[MultiAgentRouter]] - `uses` [INFERRED]
 - [[TestAgentIdPropagatedFromTarget]] - `uses` [INFERRED]

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "make_fake_socket_module"
-location: "L78"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L169"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_fake_socket_module
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # __init__()
 
 ## Connections
-- [[make_fake_socket_module()]] - `contains` [EXTRACTED]
+- [[dot-test_events_api_envelope_dispatches_handle_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module
+#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

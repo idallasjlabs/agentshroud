@@ -15,6 +15,6 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[SSHProxy]] - `references` [EXTRACTED]
 - [[TestExecute]] - `method` [EXTRACTED]
-- [[asyncio_32]] - `references` [EXTRACTED]
+- [[asyncio_34]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SSHProxy

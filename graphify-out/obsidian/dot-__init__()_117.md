@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/mfa_guard.py"
+source_file: "gateway/security/git_guard.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L116"
+community: "GitGuard"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/GitGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_decode_secret()]] - `calls` [EXTRACTED]
-- [[MFAGuard]] - `method` [EXTRACTED]
+- [[Args mode 'monitor' (log findings) or 'enforce' (quarantine suspicious files)]] - `rationale_for` [EXTRACTED]
+- [[GitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/GitGuard

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[GroupApprovalRouter]] - `uses` [INFERRED]
 - [[GroupApprovalRouter wired with a mock Telegram send function.]] - `rationale_for` [EXTRACTED]
-- [[fixture_17]] - `references` [EXTRACTED]
+- [[fixture_26]] - `references` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

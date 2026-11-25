@@ -34,7 +34,7 @@ members: 29
 - [[STPA-Sec Methodology]] - concept - docker/config/openclaw/skills/i-sec-defense/SKILL.md
 - [[Unsafe Control Actions (UCA-1 through UCA-17)]] - concept - skills/custom/agentshroud-blueteam/references/steve-hay-assessment.md
 - [[Unsafe Control Actions (UCAs)_6]] - document - skills/custom/agentshroud-blueteam/SKILL.md
-- [[Usage_109]] - document - skills/README.md
+- [[Usage_110]] - document - skills/README.md
 - [[agentshroud-blueteamSKILL]] - document - skills/custom/agentshroud-blueteam/SKILL.md
 - [[skillsREADME]] - document - skills/README.md
 

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "web_proxy.py"
+community: "lifespan.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/lifespanpy
 ---
 
 # web_proxy.py
@@ -19,11 +19,11 @@ tags:
 - [[EgressEvent]] - `imports` [EXTRACTED]
 - [[EgressMonitor]] - `imports` [EXTRACTED]
 - [[EgressMonitorConfig]] - `imports` [EXTRACTED]
-- [[Enum_15]] - `imports_from` [EXTRACTED]
+- [[Enum_35]] - `imports_from` [EXTRACTED]
 - [[NetworkValidator]] - `imports` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `imports` [EXTRACTED]
 - [[ProxyAction]] - `contains` [EXTRACTED]
-- [[RateLimiter]] - `contains` [EXTRACTED]
+- [[RateLimiter_1]] - `contains` [EXTRACTED]
 - [[URLAnalyzer]] - `imports` [EXTRACTED]
 - [[WebContentScanner]] - `imports` [EXTRACTED]
 - [[WebProxy]] - `contains` [EXTRACTED]
@@ -43,4 +43,4 @@ tags:
 - [[web_config.py_2]] - `imports_from` [EXTRACTED]
 - [[web_content_scanner.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

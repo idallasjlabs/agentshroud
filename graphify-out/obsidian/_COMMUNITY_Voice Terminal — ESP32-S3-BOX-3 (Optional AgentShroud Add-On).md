@@ -24,7 +24,7 @@ members: 22
 - [[Tap to talk]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Troubleshooting_34]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Updating the firmware (OTA — the normal deploy path)]] - document - docs/integrations/voice-terminal-esp32-s3.md
-- [[Usage_108]] - document - docs/integrations/voice-terminal-esp32-s3.md
+- [[Usage_109]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Voice Terminal — ESP32-S3-BOX-3 (Optional AgentShroud Add-On)]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Voice volume]] - document - docs/integrations/voice-terminal-esp32-s3.md
 - [[Voice-gateway configuration (env vars, set in `dockerdocker-compose.yml`)]] - document - docs/integrations/voice-terminal-esp32-s3.md

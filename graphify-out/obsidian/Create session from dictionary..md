@@ -12,6 +12,6 @@ tags:
 # Create session from dictionary.
 
 ## Connections
-- [[dot-from_dict()_6]] - `rationale_for` [EXTRACTED]
+- [[dot-from_dict()_7]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_session_managerpy

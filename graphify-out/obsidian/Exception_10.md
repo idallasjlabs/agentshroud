@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "BrowserSecurityGuard"
+community: "EdgeOAuthService"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BrowserSecurityGuard
+  - community/EdgeOAuthService
 ---
 
 # Exception
 
 ## Connections
-- [[CredentialEntryBlocked]] - `inherits` [EXTRACTED]
+- [[OAuthFailure]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard
+#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService

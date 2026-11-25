@@ -12,7 +12,7 @@ tags:
 # get_agent_cve_summary()
 
 ## Connections
-- [[Any_54]] - `references` [EXTRACTED]
+- [[Any_56]] - `references` [EXTRACTED]
 - [[Return a summary of the advisory registry for the specified agent. Counts are…]] - `rationale_for` [EXTRACTED]
 - [[_resolve_registries()]] - `calls` [EXTRACTED]
 - [[agent_cve_registry.py]] - `contains` [EXTRACTED]

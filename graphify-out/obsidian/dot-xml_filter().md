@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # .xml_filter()
@@ -16,4 +16,4 @@ tags:
 - [[XMLLeakFilter]] - `calls` [EXTRACTED]
 - [[fixture_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "rationale"
-community: "._monitor_resources"
+community: "._get_disk_io_stats"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_monitor_resources
+  - community/_get_disk_io_stats
 ---
 
 # Current resource usage metrics.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ResourceUsage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_monitor_resources
+#graphify/rationale #graphify/EXTRACTED #community/_get_disk_io_stats

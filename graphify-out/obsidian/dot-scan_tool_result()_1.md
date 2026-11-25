@@ -1,20 +1,23 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/tool_result_injection.py"
 type: "code"
-community: "differential_pii_detector.py"
-location: "L371"
+community: "ToolResultInjectionScanner"
+location: "L245"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/differential_pii_detectorpy
+  - community/ToolResultInjectionScanner
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[dot-_scan()]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
-- [[Scan a tool result with the lower confidence floor. Args tool_name Name of…]] - `rationale_for` [EXTRACTED]
-- [[ToolResultPIIReport]] - `references` [EXTRACTED]
+- [[dot-_detect_encoded_injection()]] - `calls` [EXTRACTED]
+- [[dot-_detect_unicode_obfuscation()]] - `calls` [EXTRACTED]
+- [[InjectionResult]] - `calls` [EXTRACTED]
+- [[Scan tool result content for injection attempts. Args tool_name Name of the…]] - `rationale_for` [EXTRACTED]
+- [[ToolResultInjectionScanner]] - `method` [EXTRACTED]
+- [[normalize_input()]] - `calls` [EXTRACTED]
+- [[strip_markdown_exfil()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/differential_pii_detectorpy
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

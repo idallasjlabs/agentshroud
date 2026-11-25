@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "rationale"
-community: "EgressFilter"
+community: "_make_filter"
 location: "L253"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressFilter
+  - community/_make_filter
 ---
 
 # EgressAttempt stores the right fields.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEgressAttempt]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressFilter
+#graphify/rationale #graphify/EXTRACTED #community/_make_filter

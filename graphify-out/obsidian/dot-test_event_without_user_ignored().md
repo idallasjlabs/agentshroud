@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestHandleEvent]] - `method` [EXTRACTED]
-- [[asyncio_38]] - `references` [EXTRACTED]
+- [[asyncio_40]] - `references` [EXTRACTED]
 - [[handle_event ignores message events with no user field.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

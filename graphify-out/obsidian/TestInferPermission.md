@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestInferPermission"
+community: "PermissionLevel"
 location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInferPermission
+  - community/PermissionLevel
 ---
 
 # TestInferPermission
@@ -21,4 +21,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInferPermission
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

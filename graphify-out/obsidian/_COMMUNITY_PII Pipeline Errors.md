@@ -14,7 +14,7 @@ members: 9
 - [[PII Pipeline Errors_2]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[PII Pipeline Errors_1]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[Redaction Breaking JSONStructured Data]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
-- [[Related Notes_40]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
+- [[Related Notes_42]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[Tool Result PII Not Scanned]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 - [[spaCy Model Issues]] - document - docs/vault/07 - Errors & Troubleshooting/PII Pipeline Errors.md
 

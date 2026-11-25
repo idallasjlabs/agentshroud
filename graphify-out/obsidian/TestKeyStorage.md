@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "test_key_vault.py"
+community: "KeyVault"
 location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_key_vaultpy
+  - community/KeyVault
 ---
 
 # TestKeyStorage
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_store_and_retrieve()]] - `method` [EXTRACTED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_key_vaultpy
+#graphify/code #graphify/EXTRACTED #community/KeyVault

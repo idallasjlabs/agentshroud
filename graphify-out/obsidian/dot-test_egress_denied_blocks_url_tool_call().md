@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "MCPToolCall"
+community: "test_mcp_proxy.py"
 location: "L496"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPToolCall
+  - community/test_mcp_proxypy
 ---
 
 # .test_egress_denied_blocks_url_tool_call()
@@ -19,6 +19,6 @@ tags:
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[TestProxyInterception]] - `method` [EXTRACTED]
 - [[asyncio_1]] - `references` [EXTRACTED]
-- [[check_async()_1]] - `contains` [EXTRACTED]
+- [[check_async()_31]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPToolCall
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

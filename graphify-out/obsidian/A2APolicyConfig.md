@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/a2a_policy.py"
 type: "code"
-community: "A2APolicyConfig"
+community: "A2APolicyEngine"
 location: "L175"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/A2APolicyConfig
+  - community/A2APolicyEngine
 ---
 
 # A2APolicyConfig
 
 ## Connections
-- [[dot-__init__()_227]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()_9]] - `method` [EXTRACTED]
-- [[dot-from_dict()_11]] - `method` [EXTRACTED]
+- [[dot-__init__()_189]] - `calls` [EXTRACTED]
+- [[dot-__post_init__()_8]] - `method` [EXTRACTED]
+- [[dot-from_dict()_10]] - `method` [EXTRACTED]
 - [[dot-test_bare_config_denies_every_peer()]] - `calls` [EXTRACTED]
 - [[Declarative A2A security policy. Loaded from the ``a2a_policy`` section of…]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `uses` [INFERRED]
@@ -42,4 +42,4 @@ tags:
 - [[test_task_ownership_denial_is_not_bypassable_by_high_risk_approval_path()]] - `uses` [INFERRED]
 - [[test_task_ownership_violation_records_a2a_violation_type()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/A2APolicyConfig
+#graphify/code #graphify/INFERRED #community/A2APolicyEngine

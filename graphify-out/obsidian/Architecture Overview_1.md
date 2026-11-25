@@ -17,7 +17,7 @@ tags:
 - [[Full System Diagram]] - `contains` [EXTRACTED]
 - [[Gateway Internal Layer Order]] - `contains` [EXTRACTED]
 - [[Network Topology]] - `contains` [EXTRACTED]
-- [[Related Notes_31]] - `contains` [EXTRACTED]
+- [[Related Notes_33]] - `contains` [EXTRACTED]
 - [[Summary_20]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Architecture_Overview

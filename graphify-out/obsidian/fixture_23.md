@@ -1,21 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "GroupWorkspaceManager"
+community: "PIISanitizer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupWorkspaceManager
+  - community/PIISanitizer
 ---
 
 # fixture
 
 ## Connections
-- [[dot-proxy()]] - `references` [EXTRACTED]
-- [[manager()_1]] - `references` [EXTRACTED]
-- [[rbac()_1]] - `references` [EXTRACTED]
-- [[session_manager()]] - `references` [EXTRACTED]
-- [[shared_memory()]] - `references` [EXTRACTED]
-- [[teams()_1]] - `references` [EXTRACTED]
+- [[pii_config()]] - `references` [EXTRACTED]
+- [[pipeline()]] - `references` [EXTRACTED]
+- [[sanitizer()_1]] - `references` [EXTRACTED]
+- [[trust_manager()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

@@ -1,18 +1,18 @@
 ---
 type: community
-members: 60
+members: 59
 ---
 
 # CronStateMonitor
 
-**Members:** 60 nodes
+**Members:** 59 nodes
 
 ## Members
 - [[dot-__call__()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-__call__()_1]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_11]] - code - gateway/security/cron_state_monitor.py
-- [[dot-__init__()_12]] - code - gateway/tests/test_cron_state_monitor.py
-- [[dot-__init__()_13]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_9]] - code - gateway/security/cron_state_monitor.py
+- [[dot-__init__()_10]] - code - gateway/tests/test_cron_state_monitor.py
+- [[dot-__init__()_11]] - code - gateway/tests/test_cron_state_monitor.py
 - [[dot-_dispatch_aggregate()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_episode_id()]] - code - gateway/security/cron_state_monitor.py
 - [[dot-_evaluate()]] - code - gateway/security/cron_state_monitor.py
@@ -52,7 +52,6 @@ members: 60
 - [[Poll bot cron stores; dispatch AlertDispatcher alerts on failures.]] - rationale - gateway/security/cron_state_monitor.py
 - [[Read one bot's cron store; tolerate absencecorruption.]] - rationale - gateway/security/cron_state_monitor.py
 - [[Start the poll loop as an asyncio task (idempotent).]] - rationale - gateway/security/cron_state_monitor.py
-- [[Task]] - code
 - [[TestAdversarial]] - code - gateway/tests/test_cron_state_monitor.py
 - [[TestParsing]] - code - gateway/tests/test_cron_state_monitor.py
 - [[TestTransitions]] - code - gateway/tests/test_cron_state_monitor.py
@@ -64,7 +63,7 @@ members: 60
 - [[_hermes_store()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[_oc_job()]] - code - gateway/tests/test_cron_state_monitor.py
 - [[_openclaw_store()]] - code - gateway/tests/test_cron_state_monitor.py
-- [[asyncio_6]] - code
+- [[asyncio_4]] - code
 - [[cron_state_monitor.py]] - code - gateway/security/cron_state_monitor.py
 - [[test_cron_state_monitor.py]] - code - gateway/tests/test_cron_state_monitor.py
 - [[test_poll_loop_runs_and_stops()]] - code - gateway/tests/test_cron_state_monitor.py
@@ -79,9 +78,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_app_main.c]]
-- 1 edge to [[_COMMUNITY_wakeword.c]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
 
 ## Top bridge nodes
 - [[CronStateMonitor]] - degree 33, connects to 2 communities
-- [[Task]] - degree 3, connects to 2 communities
+- [[dot-start()]] - degree 4, connects to 1 community

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestWebSearchLog"
+community: "test_telegram_proxy_outbound.py"
 location: "L3693"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSearchLog
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_web_search_log_called_with_correct_params()
@@ -15,7 +15,7 @@ tags:
 - [[TestWebSearchLog]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
 - [[_trigger_web_search_log calls log_external_decision with Brave domain and query.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[log_external_decision()]] - `contains` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
+- [[log_external_decision()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSearchLog
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

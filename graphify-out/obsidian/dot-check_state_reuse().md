@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/oauth_security.py"
 type: "code"
-community: "test_security_audit.py"
+community: "TestAuth"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestAuth
 ---
 
 # .check_state_reuse()
@@ -15,4 +15,4 @@ tags:
 - [[OAuthError]] - `calls` [EXTRACTED]
 - [[OAuthSecurityValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

@@ -12,10 +12,10 @@ tags:
 # MCPToolConfig
 
 ## Connections
-- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
 - [[Configuration for a specific MCP tool.]] - `rationale_for` [EXTRACTED]
+- [[config()_3]] - `uses` [INFERRED]
 - [[config()_1]] - `uses` [INFERRED]
-- [[config()_2]] - `uses` [INFERRED]
 - [[make_config()]] - `calls` [EXTRACTED]
 - [[mcp_config.py_2]] - `contains` [EXTRACTED]
 - [[proxy__init__.py]] - `imports` [EXTRACTED]

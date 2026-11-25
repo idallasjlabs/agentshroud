@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/api.py.md"
+source_file: "docs/vault/01 - Architecture/Architecture Overview.md"
 type: "document"
-community: "api.py"
-location: "L74"
+community: "Architecture Overview"
+location: "L183"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apipy
+  - community/Architecture_Overview
 ---
 
 # Related Notes
 
 ## Connections
-- [[api.py_1]] - `contains` [EXTRACTED]
+- [[Architecture Overview_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apipy
+#graphify/document #graphify/EXTRACTED #community/Architecture_Overview

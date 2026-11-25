@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ProxyResult"
+community: "TestMCPResultEndpoint"
 location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyResult
+  - community/TestMCPResultEndpoint
 ---
 
 # TestMCPResultEndpoint
@@ -25,4 +25,4 @@ tags:
 - [[ProxyResult]] - `uses` [INFERRED]
 - [[test_mcp_result_endpoint.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyResult
+#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint

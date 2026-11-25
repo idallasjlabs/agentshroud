@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gateway_email_service.py"
+source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: ".test_default_transport_is_smtp_ssl"
-location: "L121"
+community: "MCPServerConfig"
+location: "L263"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_default_transport_is_smtp_ssl
+  - community/MCPServerConfig
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_default_transport_is_smtp_ssl()]] - `contains` [EXTRACTED]
+- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_default_transport_is_smtp_ssl
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

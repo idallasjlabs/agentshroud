@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # .test_leaked_canary_detected_in_response()
@@ -15,4 +15,4 @@ tags:
 - [[Test that leaked canaries are detected in responses.]] - `rationale_for` [EXTRACTED]
 - [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

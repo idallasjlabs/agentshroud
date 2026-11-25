@@ -10,8 +10,8 @@ members: 7
 ## Members
 - [[Applied By_1]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Key Configuration]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Purpose_82]] - document - docs/vault/03 - Configuration/ssh-config.md
-- [[Related Notes_54]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Purpose_85]] - document - docs/vault/03 - Configuration/ssh-config.md
+- [[Related Notes_57]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[Relationship to agentshroud.yaml]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[SSH Config]] - document - docs/vault/03 - Configuration/ssh-config.md
 - [[ssh-config]] - document - docs/vault/03 - Configuration/ssh-config.md

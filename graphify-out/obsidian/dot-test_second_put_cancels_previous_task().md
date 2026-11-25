@@ -15,7 +15,7 @@ tags:
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[Second PUT cancels the first revert task.]] - `rationale_for` [EXTRACTED]
 - [[TestAutoRevert]] - `method` [EXTRACTED]
-- [[asyncio_55]] - `references` [EXTRACTED]
+- [[asyncio_88]] - `references` [EXTRACTED]
 - [[set_mode()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

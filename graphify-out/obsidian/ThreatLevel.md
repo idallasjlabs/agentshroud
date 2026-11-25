@@ -1,22 +1,25 @@
 ---
-source_file: "gateway/security/browser_security.py"
+source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "BrowserSecurityGuard"
-location: "L23"
+community: "test_mcp_proxy.py"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BrowserSecurityGuard
+  - community/test_mcp_proxypy
 ---
 
 # ThreatLevel
 
 ## Connections
-- [[dot-check_url_reputation()]] - `references` [EXTRACTED]
-- [[IntEnum_2]] - `inherits` [EXTRACTED]
-- [[TestScreenshotAnalysis]] - `uses` [INFERRED]
-- [[TestSocialEngineeringDetection]] - `uses` [INFERRED]
-- [[TestURLReputation]] - `uses` [INFERRED]
-- [[browser_security.py]] - `contains` [EXTRACTED]
+- [[dot-highest_threat()]] - `references` [EXTRACTED]
+- [[Enum_15]] - `inherits` [EXTRACTED]
+- [[TestInjectionDetection]] - `uses` [INFERRED]
+- [[TestPIIDetection]] - `uses` [INFERRED]
+- [[TestThreatLevelCalc]] - `uses` [INFERRED]
+- [[Threat level classification.]] - `rationale_for` [EXTRACTED]
+- [[mcp_inspector.py_2]] - `contains` [EXTRACTED]
+- [[proxy__init__.py]] - `imports` [EXTRACTED]
+- [[test_mcp_proxy.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

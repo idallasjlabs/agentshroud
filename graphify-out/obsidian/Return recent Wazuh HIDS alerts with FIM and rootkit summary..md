@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/main.py"
 type: "rationale"
-community: "ingest_api/main.py"
+community: "generate_summary"
 location: "L1840"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/generate_summary
 ---
 
 # Return recent Wazuh HIDS alerts with FIM and rootkit summary.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[wazuh_alerts()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/rationale #graphify/EXTRACTED #community/generate_summary

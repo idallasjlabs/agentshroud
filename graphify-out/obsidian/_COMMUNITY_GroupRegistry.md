@@ -51,7 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_socrouter.py]]
+- 8 edges to [[_COMMUNITY_RBACConfig]]
 - 5 edges to [[_COMMUNITY_TelegramAPIProxy]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]

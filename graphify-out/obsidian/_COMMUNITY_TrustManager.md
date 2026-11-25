@@ -1,21 +1,18 @@
 ---
 type: community
-members: 225
+members: 90
 ---
 
 # TrustManager
 
-**Members:** 225 nodes
+**Members:** 90 nodes
 
 ## Members
-- [[dot-__init__()_105]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-__post_init__()_4]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-__post_init__()_5]] - code - gateway/security/trust_manager.py
+- [[dot-__init__()_97]] - code - gateway/security/cross_bot_trust_ledger.py
+- [[dot-__post_init__()_5]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_missing_()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-_propagate()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-_shared_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-build_full_mesh()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-close()_8]] - code - gateway/security/trust_manager.py
+- [[dot-close()_7]] - code - gateway/security/trust_manager.py
 - [[dot-get_history()]] - code - gateway/security/trust_manager.py
 - [[dot-get_incidents()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-incident_count()]] - code - gateway/security/cross_bot_trust_ledger.py
@@ -23,36 +20,17 @@ members: 225
 - [[dot-record_incident()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-register_peer()]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[dot-register_trust_manager()]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[dot-setup_method()_16]] - code - gateway/tests/test_security_hardening.py
-- [[dot-teardown_method()_3]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_10000_lookups_under_1s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_action_allowed_basic()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_action_denied_high_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_action_unknown_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_adding_a_fourth_bot_extends_the_mesh_to_everyone()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_bot_without_registered_trust_manager_is_skipped()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_consent_required_for_sensitive_ops()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_critical_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_custom_points()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_default_config()_2]] - code - gateway/tests/test_trust_manager.py
 - [[dot-test_default_policy_is_sane()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_empty_bot_list_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_empty_ledger_has_no_incidents()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_event_type_validation()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_every_bot_shares_the_same_trust_manager()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_failure_decreases_score()_1]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_fraction_above_one_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_from_string()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_get_incidents_by_source()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_get_incidents_with_limit()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_get_trust()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_get_trust_unknown()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_high_severity_propagates_full_fraction()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_history()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_history_empty_for_new_agent()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_history_recorded()]] - code - gateway/tests/test_trust_manager.py
 - [[dot-test_incident_limit_retained()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_incident_on_one_bot_propagates_to_all_mesh_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_incident_record_fields()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_incidents_are_recorded()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_invalid_string_returns_none()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
@@ -63,176 +41,63 @@ members: 225
 - [[dot-test_ordering()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_persistence_across_instances()]] - code - gateway/tests/test_trust_manager.py
 - [[dot-test_propagated_to_is_empty_for_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_propagation_limited_to_max_depth()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_propagation_registers_unregistered_peer_agent()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_rate_limiting_prevents_rapid_escalation()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_agent()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_register_idempotent()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_register_peer()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_register_peer_is_bidirectional_by_default()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_score_never_negative()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_session_cannot_impersonate()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_single_bot_has_no_peers_and_does_not_raise()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_sqlite_persistence()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_subagent_monitor_tracks_events()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_success_increases_score()_1]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_three_bots_form_a_full_mesh()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_thresholds_populated()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_trust_cannot_exceed_max()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_trust_escalation_attack()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_trust_level_ordering()]] - code - gateway/tests/test_trust_manager.py
-- [[dot-test_trust_level_progression()]] - code - gateway/tests/test_security_hardening.py
-- [[dot-test_trust_manager_rapid_updates()]] - code - gateway/tests/test_security_audit_advanced.py
+- [[dot-test_trust_level_enforcement()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_trust_recovery()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_trust_update_performance()]] - code - gateway/tests/test_performance.py
-- [[dot-test_two_bots_are_mutual_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_unregistered_agent_blocked()]] - code - gateway/tests/test_security_audit_advanced.py
 - [[dot-test_unregistered_bot_has_no_peers()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[dot-test_violation_drops_trust_significantly()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_violation_large_decrease()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_zero_decay_fraction_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-test_zero_max_depth_rejected()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[dot-vouch_for_agent()]] - code - gateway/security/trust_manager.py
 - [[1000 trust updates (mix of successfailure).]] - rationale - gateway/tests/test_performance.py
 - [[10000 trust lookups in under 1 second.]] - rationale - gateway/tests/test_performance.py
 - [[A single cross-bot incident recorded in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[A single violation should meaningfully impact trust.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[An incident on openclaw should not re-apply to openclaw via the ledger.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Attach a TrustManager instance to a bot name.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Audit chain must detect tampering.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[BotIncidentSeverity]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[Build a SecurityPipeline with all guards wired up.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Build a ledger where every bot in bot_ids is a mutual peer of every other…]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Combined prompt injection + role override must be caught.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Config with strict thresholds.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Configuration for how incidents decay peer trust scores. Attributes…]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Consent framework should be available for gating.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[ContextGuard must detect context window poisoning (massive payload).]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Create a temporary trust database.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Create a trust manager with temp DB.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Cross-Bot Trust Ledger — Module 27 (v1.2.0) IEC 62443 FR6 (Audit Log …]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[CrossBotTrustLedger]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[Default propagation policy.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Depth-2 propagation A → B → C but NOT C → D when max_depth=2.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Different sessions should have different identities.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[EncodingDetector must detect base64 in outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[EncodingDetector must detect base64-encoded payloads on inbound.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[End-to-end a real incident on bot A decays trust on bots B and C in a 3-bot…]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Every pipeline operation must produce an audit chain entry.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Get trust history for an agent.]] - rationale - gateway/security/trust_manager.py
 - [[IncidentRecord]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[IntEnum_3]] - code
 - [[Log an incident and propagate trust decay to registered peers. Args…]] - rationale - gateway/security/cross_bot_trust_ledger.py
+- [[Low-trust agents should be blocked from high-risk actions.]] - rationale - gateway/tests/test_security_audit.py
 - [[Manage progressive trust for agents.]] - rationale - gateway/security/trust_manager.py
-- [[Minimal approval queue mock that accepts items.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Non-owner collaborators must be blocked by prompt guard.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[One agent's session data must not leak to another.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Ordered severity levels for cross-bot incidents. Values map to IEC 62443 SLIR…]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Owner vouches for an agent, unlocking VERIFIEDFULL promotion.]] - rationale - gateway/security/trust_manager.py
 - [[Peer agent not registered in TrustManager should be auto-registered.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Probe 1.1 Agent exec must go through approval queue or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.1b delete_file action must go through approval or be blocked.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.1c admin_action must require approval or be trust-blocked.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.6 EgressFilter must block non-allowlisted domains.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.6b EgressFilter must block direct IP exfiltration.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.6c EgressFilter must block internalprivate IP ranges.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.9 PII sanitizer must redact SSN on inbound messages.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.9b PII sanitizer must redact SSN on outbound responses.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.9c PII sanitizer must redact credit card numbers.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Probe 1.9d PII sanitizer must redact email addresses on outbound.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[PromptGuard must block classic 'ignore instructions' injection.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[PromptGuard must block role-override injection.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[PromptGuard must detect system prompt extraction attempts.]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Propagation to a peer with no registered TrustManager must not raise.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Rapid successes should be capped by rate limiting.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Rapid trust score updates shouldn't corrupt state.]] - rationale - gateway/tests/test_security_audit_advanced.py
 - [[Recursive BFS propagation up to max_propagation_depth hops.]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Red Team Probe Tests — Phase 5 Steve Hay's specific attack probes. Each test…]] - rationale - gateway/tests/test_redteam_probes.py
 - [[Register bot_b as a peer of bot_a. Args bot_a Source bot name. bot_b Peer…]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Return incidents, optionally filtered by source bot. Args source_bot If…]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Return the number of incidents currently in the ledger.]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Return the registered peers for bot_name (empty list if none).]] - rationale - gateway/security/cross_bot_trust_ledger.py
 - [[Shared trust decay channel for multi-bot deployments. Usage ledger =…]] - rationale - gateway/security/cross_bot_trust_ledger.py
-- [[Subagent events should be trackable.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test configuration options.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust boundaries and privilege escalation prevention.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test trust history tracking.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Test trust level hierarchy and thresholds.]] - rationale - gateway/tests/test_trust_manager.py
 - [[Test trust survives restart.]] - rationale - gateway/tests/test_trust_manager.py
 - [[TestBotIncidentSeverity]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestBuildFullMesh]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestConfig_1]] - code - gateway/tests/test_trust_manager.py
 - [[TestCrossBotTrustLedgerConstruction]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[TestGetIncidentsLimit]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestHistory]] - code - gateway/tests/test_trust_manager.py
 - [[TestIncidentAudit]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[TestIncidentPropagation]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[TestPersistence_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestPrivilegeEscalation]] - code - gateway/tests/test_security_audit_advanced.py
 - [[TestTrustDecayPolicyValidation]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[TestTrustLevels_1]] - code - gateway/tests/test_trust_manager.py
-- [[TestTrustManager]] - code - gateway/tests/test_security_hardening.py
-- [[TestTrustManagerHardened]] - code - gateway/tests/test_security_hardening.py
 - [[TestTrustManagerPerformance]] - code - gateway/tests/test_performance.py
 - [[Tests for Module 27 — Cross-Bot Trust Ledger. IEC 62443 FR6 (Audit Log …]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
-- [[Tests for Progressive Trust System.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Tests for trust manager hardening.]] - rationale - gateway/tests/test_security_hardening.py
-- [[The exact scenario the user asked for add a 4th bot and it just works.]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[Trust check 10000 lookups in  1s.]] - rationale - gateway/tests/test_performance.py
-- [[Trust level must not allow exec from conversation alone.]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Trust manager starting at untrusted.]] - rationale - gateway/tests/test_trust_manager.py
-- [[Trust score should have an upper bound.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[TrustConfig]] - code - gateway/security/trust_manager.py
+- [[Trust should recover after good behavior.]] - rationale - gateway/tests/test_security_audit.py
 - [[TrustDecayPolicy]] - code - gateway/security/cross_bot_trust_ledger.py
 - [[TrustManager]] - code - gateway/security/trust_manager.py
-- [[Unit tests for pipeline components.]] - rationale - gateway/tests/test_pipeline_unit.py
-- [[Unknown event types should not inject SQL.]] - rationale - gateway/tests/test_security_hardening.py
-- [[Unregistered agents should not be trusted.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Verify you can't jump from UNTRUSTED to FULL in one step.]] - rationale - gateway/tests/test_security_hardening.py
-- [[_make_approval_queue()]] - code - gateway/tests/test_redteam_probes.py
-- [[_make_full_pipeline()]] - code - gateway/tests/test_redteam_probes.py
-- [[asyncio_42]] - code
-- [[build_full_mesh N-agent-scalable topology construction. Adding a 3rd4thNth…]] - rationale - gateway/tests/test_cross_bot_trust_ledger.py
 - [[cross_bot_trust_ledger.py]] - code - gateway/security/cross_bot_trust_ledger.py
-- [[fixture_73]] - code
-- [[fixture_74]] - code
-- [[fixture_75]] - code
+- [[fixture_80]] - code
 - [[hermes_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[ledger()_1]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[manager()_2]] - code - gateway/tests/test_trust_manager.py
+- [[ledger()_2]] - code - gateway/tests/test_cross_bot_trust_ledger.py
 - [[openclaw_tm()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[pipeline()_1]] - code - gateway/tests/test_redteam_probes.py
-- [[pipeline.py_1]] - code - gateway/proxy/pipeline.py
 - [[policy()]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[strict_config()_3]] - code - gateway/tests/test_trust_manager.py
-- [[strict_manager()]] - code - gateway/tests/test_trust_manager.py
-- [[test_admin_action_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_audit_chain_records_all_events()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_audit_chain_tamper_detection()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_combined_injection_techniques()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_context_poisoning_blocked()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_credit_card_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
 - [[test_cross_bot_trust_ledger.py]] - code - gateway/tests/test_cross_bot_trust_ledger.py
-- [[test_egress_blocks_internal_ip()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_egress_blocks_ip_exfil()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_egress_blocks_unknown_domain()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_email_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_encoding_detector_base64_outbound()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_encoding_detector_catches_base64_inbound()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_exec_delete_file_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_exec_requires_approval()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_non_owner_blocked_by_prompt_guard()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_pipeline_unit.py]] - code - gateway/tests/test_pipeline_unit.py
-- [[test_prompt_extraction_attempt()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_prompt_injection_ignore_instructions()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_prompt_injection_role_override()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_redteam_probes.py]] - code - gateway/tests/test_redteam_probes.py
-- [[test_session_isolation()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_ssn_redacted_inbound()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_ssn_redacted_outbound()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_trust_escalation_blocked()]] - code - gateway/tests/test_redteam_probes.py
-- [[test_trust_manager.py]] - code - gateway/tests/test_trust_manager.py
-- [[trust_db()]] - code - gateway/tests/test_trust_manager.py
-- [[trust_manager.py]] - code - gateway/security/trust_manager.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -242,50 +107,33 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 35 edges to [[_COMMUNITY_lifespan.py]]
-- 25 edges to [[_COMMUNITY_TrustLevel]]
-- 24 edges to [[_COMMUNITY_SecurityPipeline]]
-- 9 edges to [[_COMMUNITY_ProgressiveTrustConfig]]
-- 8 edges to [[_COMMUNITY_A2APolicyConfig]]
-- 6 edges to [[_COMMUNITY_ToolACLEnforcer]]
-- 6 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 6 edges to [[_COMMUNITY_test_e2e_watchtower.py]]
-- 6 edges to [[_COMMUNITY_EgressFilter]]
-- 6 edges to [[_COMMUNITY_AuditChain]]
-- 5 edges to [[_COMMUNITY_AgentRegistry]]
-- 5 edges to [[_COMMUNITY_TestAuth]]
-- 4 edges to [[_COMMUNITY_PipelineAction]]
-- 4 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 3 edges to [[_COMMUNITY_ContextGuard]]
-- 3 edges to [[_COMMUNITY_lifespan]]
-- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 3 edges to [[_COMMUNITY_test_security_integration.py]]
-- 3 edges to [[_COMMUNITY_test_security_regressions_v1_2.py]]
-- 3 edges to [[_COMMUNITY_prompt_guard.py]]
-- 3 edges to [[_COMMUNITY_EncodingDetector]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_EgressPolicy]]
-- 2 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
-- 2 edges to [[_COMMUNITY_run]]
+- 22 edges to [[_COMMUNITY_TrustLevel]]
+- 21 edges to [[_COMMUNITY_TrustConfig]]
+- 12 edges to [[_COMMUNITY_PIISanitizer]]
+- 5 edges to [[_COMMUNITY_asyncio_2]]
+- 5 edges to [[_COMMUNITY_TestTrustManager]]
+- 4 edges to [[_COMMUNITY_TestPrivilegeEscalation]]
+- 4 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 4 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 4 edges to [[_COMMUNITY_A2APolicyEngine]]
+- 3 edges to [[_COMMUNITY_TestAuth]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
 - 2 edges to [[_COMMUNITY_deep_security_test]]
-- 2 edges to [[_COMMUNITY_EnvelopeSigner]]
-- 1 edge to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_TestTrustProgression]]
-- 1 edge to [[_COMMUNITY_SubagentMonitor]]
-- 1 edge to [[_COMMUNITY_KeyLeakDetector]]
-- 1 edge to [[_COMMUNITY_TestKeyLeakDetection]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_ServerConfig]]
-- 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
-- 1 edge to [[_COMMUNITY_test_telegram_pipeline.py]]
-- 1 edge to [[_COMMUNITY_WebProxy]]
-- 1 edge to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 2 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 2 edges to [[_COMMUNITY_test_redteam_probes.py]]
+- 2 edges to [[_COMMUNITY_test_canary.py]]
+- 2 edges to [[_COMMUNITY_test_security_regressions_v1_2.py]]
+- 2 edges to [[_COMMUNITY_TestConcurrency]]
+- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_A2APeerTestDouble]]
 
 ## Top bridge nodes
-- [[TrustManager]] - degree 114, connects to 17 communities
-- [[pipeline.py_1]] - degree 28, connects to 15 communities
-- [[test_pipeline_unit.py]] - degree 35, connects to 12 communities
-- [[trust_manager.py]] - degree 24, connects to 11 communities
-- [[test_redteam_probes.py]] - degree 49, connects to 8 communities
+- [[TrustManager]] - degree 114, connects to 23 communities
+- [[CrossBotTrustLedger]] - degree 40, connects to 4 communities
+- [[BotIncidentSeverity]] - degree 16, connects to 3 communities
+- [[test_cross_bot_trust_ledger.py]] - degree 20, connects to 2 communities
+- [[cross_bot_trust_ledger.py]] - degree 9, connects to 2 communities

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-load_latest()]] - `calls` [EXTRACTED]
-- [[Exception_5]] - `inherits` [EXTRACTED]
+- [[Exception_3]] - `inherits` [EXTRACTED]
 - [[Raised when a loaded report fails its hash integrity check.]] - `rationale_for` [EXTRACTED]
 - [[TestIntelReportStore]] - `uses` [INFERRED]
 - [[intel_report.py]] - `contains` [EXTRACTED]

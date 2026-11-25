@@ -12,12 +12,12 @@ tags:
 # IntelReportStore
 
 ## Connections
-- [[dot-__init__()_70]] - `method` [EXTRACTED]
+- [[dot-__init__()_61]] - `method` [EXTRACTED]
 - [[dot-_load_latest_file()]] - `method` [EXTRACTED]
 - [[dot-load_all()_1]] - `method` [EXTRACTED]
 - [[dot-load_latest()]] - `method` [EXTRACTED]
 - [[dot-save()_1]] - `method` [EXTRACTED]
-- [[dot-store()_1]] - `references` [EXTRACTED]
+- [[dot-store()]] - `references` [EXTRACTED]
 - [[dot-test_chain_hash_links_reports()]] - `references` [EXTRACTED]
 - [[dot-test_integrity_check_fails_for_tampered_file()]] - `references` [EXTRACTED]
 - [[dot-test_integrity_check_passes_for_saved_report()]] - `references` [EXTRACTED]

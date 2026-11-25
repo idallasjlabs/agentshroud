@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/proxy/dns_blocklist.py"
+source_file: "gateway/security/session_manager.py"
 type: "code"
-community: "DNSBlocklist"
-location: "L64"
+community: "UserSessionManager"
+location: "L138"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/UserSessionManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSBlocklist]] - `method` [EXTRACTED]
-- [[Path_66]] - `references` [EXTRACTED]
+- [[dot-_load_sessions()]] - `calls` [EXTRACTED]
+- [[Initialize session manager. Args base_workspace Base directory for user…]] - `rationale_for` [EXTRACTED]
+- [[Path_64]] - `references` [EXTRACTED]
+- [[UserSessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/UserSessionManager

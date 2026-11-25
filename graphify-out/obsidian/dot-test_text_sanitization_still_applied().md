@@ -17,6 +17,6 @@ tags:
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[_pass_result()]] - `calls` [EXTRACTED]
-- [[asyncio_38]] - `references` [EXTRACTED]
+- [[asyncio_40]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

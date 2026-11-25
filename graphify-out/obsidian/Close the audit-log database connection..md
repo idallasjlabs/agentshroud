@@ -12,6 +12,6 @@ tags:
 # Close the audit-log database connection.
 
 ## Connections
-- [[dot-close()_22]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_1]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/TokenValidator

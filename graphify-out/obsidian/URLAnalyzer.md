@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/proxy/url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "lifespan.py"
 location: "L99"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/lifespanpy
 ---
 
 # URLAnalyzer
 
 ## Connections
-- [[dot-__init__()_153]] - `references` [EXTRACTED]
-- [[dot-__init__()_20]] - `method` [EXTRACTED]
+- [[dot-__init__()_159]] - `references` [EXTRACTED]
+- [[dot-__init__()_157]] - `method` [EXTRACTED]
 - [[dot-_check_base64()]] - `method` [EXTRACTED]
 - [[dot-_is_private_ip()]] - `method` [EXTRACTED]
 - [[dot-_is_ssrf()]] - `method` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[url_analyzer.py_2]] - `contains` [EXTRACTED]
 - [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

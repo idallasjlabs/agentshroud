@@ -71,7 +71,7 @@ members: 71
 - [[fake_exists()_1]] - code - chatbot/test_main.py
 - [[fake_read_text()]] - code - chatbot/test_main.py
 - [[fake_read_text()_1]] - code - chatbot/test_main.py
-- [[fixture_142]] - code
+- [[fixture_141]] - code
 - [[get_10]] - code
 - [[health_check()_1]] - code - chatbot/main.py
 - [[lifespan()_1]] - code - chatbot/main.py
@@ -89,7 +89,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_GatewayConfig]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
 - [[chatbotmain.py]] - degree 12, connects to 1 community

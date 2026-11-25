@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[A clean tool call with no threats should be allowed (200).]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
-- [[asyncio_28]] - `references` [EXTRACTED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyResult

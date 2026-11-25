@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-cicdREADME]] - `contains` [EXTRACTED]
-- [[Purpose_100]] - `contains` [EXTRACTED]
+- [[Purpose_102]] - `contains` [EXTRACTED]
 - [[Related Skills_32]] - `contains` [EXTRACTED]
-- [[Usage_42]] - `contains` [EXTRACTED]
+- [[Usage_43]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

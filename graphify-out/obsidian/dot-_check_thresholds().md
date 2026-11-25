@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "SessionContext"
+community: "MultiTurnTracker"
 location: "L334"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/MultiTurnTracker
 ---
 
 # ._check_thresholds()
 
 ## Connections
-- [[dot-_trigger_alert()_1]] - `calls` [EXTRACTED]
+- [[dot-_trigger_alert()]] - `calls` [EXTRACTED]
 - [[dot-track_message()]] - `calls` [EXTRACTED]
 - [[Check session score against thresholds and take action.]] - `rationale_for` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext]] - `references` [EXTRACTED]
+- [[SessionContext_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionContext
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

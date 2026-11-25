@@ -8,7 +8,7 @@ members: 15
 **Members:** 15 nodes
 
 ## Members
-- [[dot-__init__()_10]] - code - gateway/security/report_store.py
+- [[dot-__init__()_8]] - code - gateway/security/report_store.py
 - [[dot-_check_size()]] - code - gateway/security/report_store.py
 - [[dot-_enforce_count_cap()]] - code - gateway/security/report_store.py
 - [[dot-_path()]] - code - gateway/security/report_store.py

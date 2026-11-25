@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "AgentRegistry"
+community: ".verify_shared_nothing"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/verify_shared_nothing
 ---
 
 # Verify that each agent has its own network namespace.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-verify_network_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/verify_shared_nothing

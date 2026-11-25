@@ -1,51 +1,19 @@
 ---
 type: community
-members: 320
+members: 213
 ---
 
 # soc/router.py
 
-**Members:** 320 nodes
+**Members:** 213 nodes
 
 ## Members
-- [[dot-__init__()_1]] - code - gateway/security/rbac.py
-- [[dot-__init__()_2]] - code - gateway/soc/auth.py
-- [[dot-__post_init__()]] - code - gateway/security/rbac_config.py
 - [[dot-_analyze_request_for_rbac()]] - code - gateway/ingest_api/middleware.py
-- [[dot-_build_permission_matrix()]] - code - gateway/security/rbac.py
-- [[dot-_build_tool_permissions()]] - code - gateway/security/rbac.py
-- [[dot-audit_privilege_change()]] - code - gateway/security/rbac.py
-- [[dot-can_user_manage_user()]] - code - gateway/security/rbac.py
-- [[dot-check_permission()]] - code - gateway/security/rbac.py
-- [[dot-check_tool_permission()]] - code - gateway/security/rbac.py
-- [[dot-get_role_hierarchy()]] - code - gateway/security/rbac.py
-- [[dot-get_user_permissions_summary()]] - code - gateway/security/rbac.py
-- [[dot-get_user_role()]] - code - gateway/security/rbac.py
-- [[dot-get_users_by_role()]] - code - gateway/security/rbac_config.py
 - [[dot-is_owner()]] - code - gateway/soc/auth.py
-- [[dot-is_privilege_escalation()]] - code - gateway/security/rbac.py
-- [[dot-list_users_and_roles()]] - code - gateway/security/rbac.py
 - [[dot-require()]] - code - gateway/soc/auth.py
-- [[dot-set_user_role()]] - code - gateway/security/rbac_config.py
-- [[dot-set_user_role()_1]] - code - gateway/security/rbac.py
-- [[dot-setup_method()_1]] - code - gateway/tests/test_rbac.py
 - [[dot-test_disabled_state()]] - code - gateway/tests/test_soc_edge.py
 - [[dot-test_enabled_state()]] - code - gateway/tests/test_soc_edge.py
-- [[dot-test_invalid_action_resource_combinations()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_invalid_user_id()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_list_users_and_roles()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_permission_check_with_context()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_permission_matrix_admin()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_permission_matrix_collaborator()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_permission_matrix_owner()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_permission_matrix_viewer()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_rbac_manager_without_config()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_role_hierarchy_levels()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_set_user_role()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_tool_tier_permissions()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_user_management_hierarchy()]] - code - gateway/tests/test_rbac.py
-- [[dot-test_user_permissions_summary()]] - code - gateway/tests/test_rbac.py
-- [[dot-wire_teams_config()]] - code - gateway/security/rbac_config.py
+- [[A kill switch action did not fully take effect. ``status_code`` is 503 when no…]] - rationale - gateway/web/api.py
 - [[Action]] - code - gateway/security/rbac.py
 - [[Actions that can be performed in the system.]] - rationale - gateway/security/rbac.py
 - [[Add or override a specific egress domain rule (CC-10). Supports optional scope…]] - rationale - gateway/soc/router.py
@@ -53,24 +21,18 @@ members: 320
 - [[AddGroupMemberRequest]] - code - gateway/soc/router.py
 - [[Analyze request to determine RBAC action, resource, and tool tier.]] - rationale - gateway/ingest_api/middleware.py
 - [[Any_1]] - code
-- [[Any_2]] - code
-- [[Append a collaborator UID to the persistent store (idempotent, file-locked).]] - rationale - gateway/security/rbac_config.py
 - [[ApprovalDecisionRequest]] - code - gateway/soc/router.py
 - [[AuditResult]] - code - gateway/soc/models.py
 - [[BaseModel]] - code
-- [[Build the permission matrix for all roles.]] - rationale - gateway/security/rbac.py
-- [[Build tool tier permissions for each role.]] - rationale - gateway/security/rbac.py
 - [[Change the root log level at runtime without restart (CC-44).]] - rationale - gateway/soc/router.py
-- [[Check if a user can use tools of a specific tier.]] - rationale - gateway/security/rbac.py
-- [[Check if a user has permission to perform an action on a resource.]] - rationale - gateway/security/rbac.py
-- [[Check if one user can manage another user.]] - rationale - gateway/security/rbac.py
 - [[Clear shared memory for a group workspace (owner only).]] - rationale - gateway/soc/router.py
-- [[Configuration for Role-Based Access Control.]] - rationale - gateway/security/rbac_config.py
 - [[Container Security Scorecard — 12-domain maturity assessment. Standards basis…]] - rationale - gateway/soc/router.py
+- [[Container name → health, or its status when not running. Empty when the…]] - rationale - gateway/soc/router.py
 - [[Create a new group at runtime (owner only).]] - rationale - gateway/soc/router.py
 - [[Create a time-bounded privilege delegation (owner only).]] - rationale - gateway/soc/router.py
 - [[CreateDelegationRequest]] - code - gateway/soc/router.py
 - [[CreateGroupRequest]] - code - gateway/soc/router.py
+- [[Cross-signal SOC correlation summary.]] - rationale - gateway/ingest_api/main.py
 - [[Delete a group at runtime (owner only).]] - rationale - gateway/soc/router.py
 - [[DisconnectRequest]] - code - gateway/soc/router.py
 - [[EdgeEnrollRequest]] - code - gateway/soc/router.py
@@ -80,57 +42,35 @@ members: 320
 - [[EgressRuleOverrideRequest]] - code - gateway/soc/router.py
 - [[EgressScopeRequest]] - code - gateway/soc/router.py
 - [[EmergencyBlockRequest]] - code - gateway/soc/router.py
-- [[Ensure the persistence store's parent directory exists. Returns False on…]] - rationale - gateway/security/rbac_config.py
 - [[Enum]] - code
-- [[Enum_1]] - code
 - [[Exchange gateway token for a session cookie.]] - rationale - gateway/soc/router.py
 - [[Execute a kill switch mode via the shared engine-backed implementation.…]] - rationale - gateway/soc/router.py
-- [[Get a summary of permissions for a user.]] - rationale - gateway/security/rbac.py
-- [[Get all users with a specific role.]] - rationale - gateway/security/rbac_config.py
-- [[Get role hierarchy levels (higher number = more privileges).]] - rationale - gateway/security/rbac.py
-- [[Get the role for a user.]] - rationale - gateway/security/rbac.py
 - [[Get tool allowdeny lists for a user or group entity.]] - rationale - gateway/soc/router.py
 - [[HTTPException]] - code
 - [[How a vendor connects and whether its custom-MCP support is documented.]] - rationale - gateway/soc/router.py
-- [[In-memory counters for the Command Center (reset on restart).]] - rationale - gateway/inbound_edge/call_pipeline.py
 - [[In-place openclaw upgrade runs npm install -g inside the bot container. No…]] - rationale - gateway/soc/router.py
 - [[Inbound MCP Edge state for the Command Center; ``enabled false`` when off.]] - rationale - gateway/soc/router.py
-- [[Initialize RBAC manager with configuration.]] - rationale - gateway/security/rbac.py
-- [[Initialize user roles based on configuration.]] - rationale - gateway/security/rbac_config.py
 - [[Issue a short-lived WebSocket token for wssoc.]] - rationale - gateway/soc/router.py
 - [[JSONResponse]] - code
+- [[KillSwitchError]] - code - gateway/web/api.py
 - [[Lift a kill. Lifting a kill that does not exist is a 404, never a silent ok.]] - rationale - gateway/soc/router.py
 - [[List all active privilege delegations.]] - rationale - gateway/soc/router.py
-- [[List all users and their roles (admin+ only).]] - rationale - gateway/security/rbac.py
 - [[List security modules with availability, mode, and descriptions (CC-42, CC-43).]] - rationale - gateway/soc/router.py
 - [[List service privacy policies (read-only view).]] - rationale - gateway/soc/router.py
 - [[Live per-module enforcement heat-map (SCRUM-80). Real allowblocksanitize…]] - rationale - gateway/soc/router.py
-- [[Log privilege changes; emit WARNING for escalations (unusual patterns).]] - rationale - gateway/security/rbac.py
 - [[LoginRequest]] - code - gateway/soc/router.py
-- [[Merge group membership and admin IDs from TeamsConfig into RBAC. Called from…]] - rationale - gateway/security/rbac_config.py
 - [[One registry of every agent AgentShroud proxies or watches (SCRUM-216).…]] - rationale - gateway/soc/router.py
 - [[Open a one-time enrollment window for a vendor and return its code once. The…]] - rationale - gateway/soc/router.py
 - [[Operator-ready risk summary with plain-English bullets and per-user risk map…]] - rationale - gateway/soc/router.py
-- [[Pause a collaborator's bot access without removing their record (file-locked).…]] - rationale - gateway/security/rbac_config.py
 - [[Pause a contributor's bot access without removing their record.]] - rationale - gateway/soc/router.py
 - [[Per-vendor view of profiles, process counters, clients and kills.]] - rationale - gateway/soc/router.py
-- [[PermissionResult]] - code - gateway/security/rbac.py
-- [[Public FastAPI dependency injected by SCL route handlers.]] - rationale - gateway/soc/auth.py
+- [[Perform a kill switch action against the container engine. Shared by ``POST…]] - rationale - gateway/web/api.py
 - [[Pull the latest Hermes Agent image and restart the container. Unlike OpenClaw…]] - rationale - gateway/soc/router.py
 - [[Pull the latest image for a container and restart it.]] - rationale - gateway/soc/router.py
-- [[RBAC Configuration - Role-Based Access Control Configuration Defines user roles…]] - rationale - gateway/security/rbac_config.py
-- [[RBAC Manager - Role-Based Access Control Core Implements role-based access…]] - rationale - gateway/security/rbac.py
-- [[RBAC Tests - Role-Based Access Control Tests Tests for the AgentShroud RBAC…]] - rationale - gateway/tests/test_rbac.py
-- [[RBACConfig]] - code - gateway/security/rbac_config.py
-- [[RBACManager]] - code - gateway/security/rbac.py
 - [[Raise 403 if the caller lacks the required permission.]] - rationale - gateway/soc/auth.py
-- [[Read dynamically approved collaborator IDs from disk.]] - rationale - gateway/security/rbac_config.py
-- [[Read persisted collaborator-removal exclusions from disk (Bug 1 fix). Applies…]] - rationale - gateway/security/rbac_config.py
 - [[Read raw shared memory for a group workspace.]] - rationale - gateway/soc/router.py
-- [[Read the full collaborator persistence store (all keys) from disk.]] - rationale - gateway/security/rbac_config.py
 - [[Read the live per-module enforcement counters (SCRUM-80); tolerate absence.]] - rationale - gateway/soc/router.py
 - [[Recent scanner events from the in-process startupscheduled scan history.…]] - rationale - gateway/soc/router.py
-- [[Remove a collaborator from effective access (file-locked). Strips the UID from…]] - rationale - gateway/security/rbac_config.py
 - [[Remove an egress rule for a domain (CC-10).]] - rationale - gateway/soc/router.py
 - [[Rename a group (CC-34).]] - rationale - gateway/soc/router.py
 - [[RenameGroupRequest]] - code - gateway/soc/router.py
@@ -138,10 +78,7 @@ members: 320
 - [[Resolved identity of the SCL caller, including role and user_id.]] - rationale - gateway/soc/auth.py
 - [[Resource]] - code - gateway/security/rbac.py
 - [[Resources that can be accessed in the system.]] - rationale - gateway/security/rbac.py
-- [[Result of permission check.]] - rationale - gateway/security/rbac.py
-- [[Resume a paused collaborator's bot access (file-locked). Removes the UID from…]] - rationale - gateway/security/rbac_config.py
 - [[Resume a paused contributor's bot access.]] - rationale - gateway/soc/router.py
-- [[Return True if changing from_role → to_role represents an escalation.]] - rationale - gateway/security/rbac.py
 - [[Return all active egress rules preloaded permanent, user-created permanent,…]] - rationale - gateway/soc/router.py
 - [[Return current LLM quota failover statistics.]] - rationale - gateway/soc/router.py
 - [[Return egress decision history (approvedenytimeout) (CC-40).]] - rationale - gateway/soc/router.py
@@ -151,70 +88,39 @@ members: 320
 - [[Revoke a privilege delegation. Omit privilege to revoke all for the user.]] - rationale - gateway/soc/router.py
 - [[Revoke a vendor, client or token. The store is read on every edge call, so the…]] - rationale - gateway/soc/router.py
 - [[Revoke an active rule from a past approval decision (CC-40).]] - rationale - gateway/soc/router.py
-- [[Role]] - code - gateway/security/rbac_config.py
-- [[Role-Based Access Control Manager.]] - rationale - gateway/security/rbac.py
 - [[Route a SOC approvedeny to EnhancedApprovalQueue.decide() (SCRUM-200). oktrue…]] - rationale - gateway/soc/router.py
 - [[Run a Trivy CVE scan immediately and send the report via Telegram. Requires…]] - rationale - gateway/soc/router.py
 - [[Run a shell command on the Docker Compose host via SSH. Requires…]] - rationale - gateway/soc/router.py
-- [[SCL authentication and authorization helpers. Supports three auth methods for…]] - rationale - gateway/soc/auth.py
+- [[RuntimeError]] - code
 - [[SCLCaller]] - code - gateway/soc/auth.py
 - [[SOC Shared Command Layer — socv1 REST router. Implements all SCL verb-noun…]] - rationale - gateway/soc/router.py
 - [[ScanRequest]] - code - gateway/soc/router.py
 - [[ServiceActionRequest]] - code - gateway/soc/router.py
-- [[Set a user's role (owner-only operation).]] - rationale - gateway/security/rbac.py
 - [[Set per-user collab mode override (persists across restarts).]] - rationale - gateway/soc/router.py
-- [[Set role for a user ID (owner-only operation).]] - rationale - gateway/security/rbac_config.py
-- [[Set up test environment._1]] - rationale - gateway/tests/test_rbac.py
 - [[SetLogLevelRequest]] - code - gateway/soc/router.py
 - [[SetModeRequest]] - code - gateway/soc/router.py
 - [[SetModuleModeRequest]] - code - gateway/soc/router.py
 - [[SetRoleRequest]] - code - gateway/soc/router.py
 - [[SetUserModeRequest]] - code - gateway/soc/router.py
 - [[Switch a security module between enforcemonitordisabled modes at runtime…]] - rationale - gateway/soc/router.py
-- [[Test RBAC error handling and edge cases.]] - rationale - gateway/tests/test_rbac.py
-- [[Test RBAC manager functionality.]] - rationale - gateway/tests/test_rbac.py
-- [[Test RBAC manager initialization without explicit config.]] - rationale - gateway/tests/test_rbac.py
-- [[Test admin role permissions.]] - rationale - gateway/tests/test_rbac.py
-- [[Test collaborator role permissions.]] - rationale - gateway/tests/test_rbac.py
-- [[Test getting user permissions summary.]] - rationale - gateway/tests/test_rbac.py
-- [[Test handling of invalid actionresource combinations.]] - rationale - gateway/tests/test_rbac.py
-- [[Test handling of invalid user IDs.]] - rationale - gateway/tests/test_rbac.py
-- [[Test listing users and roles.]] - rationale - gateway/tests/test_rbac.py
-- [[Test owner role permissions.]] - rationale - gateway/tests/test_rbac.py
-- [[Test permission checks with additional context.]] - rationale - gateway/tests/test_rbac.py
-- [[Test role hierarchy levels.]] - rationale - gateway/tests/test_rbac.py
-- [[Test setting user roles.]] - rationale - gateway/tests/test_rbac.py
-- [[Test tool tier access permissions.]] - rationale - gateway/tests/test_rbac.py
-- [[Test user management hierarchy.]] - rationale - gateway/tests/test_rbac.py
-- [[Test viewer role permissions.]] - rationale - gateway/tests/test_rbac.py
 - [[TestEdgeStatus]] - code - gateway/tests/test_soc_edge.py
-- [[TestRBACErrorHandling]] - code - gateway/tests/test_rbac.py
-- [[TestRBACManager]] - code - gateway/tests/test_rbac.py
 - [[The declared AGENTSHROUD_DEPLOYMENT and whether the running edge matches it.…]] - rationale - gateway/soc/router.py
-- [[Tool security tiers for RBAC permissions.]] - rationale - gateway/security/rbac_config.py
-- [[ToolTier]] - code - gateway/security/rbac_config.py
 - [[Unified scanner aggregation Trivy, Falco, ClamAV, Wazuh, OpenSCAP. Returns…]] - rationale - gateway/soc/router.py
 - [[Update a user's display name (CC-35).]] - rationale - gateway/soc/router.py
 - [[UpdateDisplayNameRequest]] - code - gateway/soc/router.py
-- [[User roles in AgentShroud RBAC system. Hierarchy (highest to lowest) OWNER …]] - rationale - gateway/security/rbac_config.py
-- [[VendorStats]] - code - gateway/inbound_edge/call_pipeline.py
-- [[Write the full collaborator persistence store (all keys) to disk.]] - rationale - gateway/security/rbac_config.py
 - [[_app_state()]] - code - gateway/soc/router.py
 - [[_confirmation_required()]] - code - gateway/soc/router.py
 - [[_decide_approval()]] - code - gateway/soc/router.py
 - [[_deployment_state()]] - code - gateway/soc/router.py
 - [[_edge_service()]] - code - gateway/soc/router.py
 - [[_edge_snapshot()]] - code - gateway/soc/router.py
-- [[_ensure_collab_dir()]] - code - gateway/security/rbac_config.py
-- [[_get_rbac_manager()]] - code - gateway/soc/auth.py
 - [[_hosted_edge_rows()]] - code - gateway/soc/router.py
 - [[_hosted_status()]] - code - gateway/soc/router.py
 - [[_kill_present()]] - code - gateway/soc/router.py
-- [[_load_collab_store()]] - code - gateway/security/rbac_config.py
+- [[_local_agent_health()]] - code - gateway/soc/router.py
 - [[_log_audit()]] - code - gateway/soc/router.py
 - [[_module_stats_snapshot()]] - code - gateway/soc/router.py
 - [[_not_found()]] - code - gateway/soc/router.py
-- [[_profile()]] - code - gateway/tests/test_soc_edge.py
 - [[_profile_catalog()]] - code - gateway/soc/router.py
 - [[_require_edge()]] - code - gateway/soc/router.py
 - [[_require_edge_owner()]] - code - gateway/soc/router.py
@@ -223,7 +129,6 @@ members: 320
 - [[_ssh_compose()]] - code - gateway/soc/router.py
 - [[_unhooked_hosted_rows()]] - code - gateway/soc/router.py
 - [[_worst_lockdown()]] - code - gateway/soc/router.py
-- [[_write_collab_store()]] - code - gateway/security/rbac_config.py
 - [[acknowledge_config_integrity()]] - code - gateway/soc/router.py
 - [[add_collaborator()]] - code - gateway/soc/router.py
 - [[add_group_member()]] - code - gateway/soc/router.py
@@ -231,6 +136,7 @@ members: 320
 - [[approve_request()]] - code - gateway/soc/router.py
 - [[auth_login()]] - code - gateway/soc/router.py
 - [[auth_ws_token()]] - code - gateway/soc/router.py
+- [[build_correlation_summary()]] - code - gateway/security/soc_correlation.py
 - [[clear_group_memory()]] - code - gateway/soc/router.py
 - [[create_delegation()]] - code - gateway/soc/router.py
 - [[create_group()]] - code - gateway/soc/router.py
@@ -238,14 +144,13 @@ members: 320
 - [[delete_group()]] - code - gateway/soc/router.py
 - [[deny_egress()]] - code - gateway/soc/router.py
 - [[deny_request()]] - code - gateway/soc/router.py
-- [[edge()]] - code - gateway/tests/test_soc_edge.py
 - [[edge_enroll()]] - code - gateway/soc/router.py
 - [[edge_kill()]] - code - gateway/soc/router.py
 - [[edge_unkill()]] - code - gateway/soc/router.py
 - [[emergency_block_egress()]] - code - gateway/soc/router.py
+- [[execute_killswitch()]] - code - gateway/web/api.py
 - [[export_audit()]] - code - gateway/soc/router.py
 - [[get]] - code
-- [[get_caller()]] - code - gateway/soc/auth.py
 - [[get_collaborator_activity()]] - code - gateway/soc/router.py
 - [[get_edge_status()]] - code - gateway/soc/router.py
 - [[get_egress_history()]] - code - gateway/soc/router.py
@@ -266,6 +171,7 @@ members: 320
 - [[get_scanner_recent_events()]] - code - gateway/soc/router.py
 - [[get_scanner_results()]] - code - gateway/soc/router.py
 - [[get_security_alerts()]] - code - gateway/soc/router.py
+- [[get_security_events()]] - code - gateway/soc/router.py
 - [[get_security_scorecard()]] - code - gateway/soc/router.py
 - [[get_service_logs()]] - code - gateway/soc/router.py
 - [[get_soc_correlation()]] - code - gateway/soc/router.py
@@ -282,22 +188,15 @@ members: 320
 - [[list_pending_approvals()]] - code - gateway/soc/router.py
 - [[list_services()]] - code - gateway/soc/router.py
 - [[list_users()]] - code - gateway/soc/router.py
-- [[load_persisted_collaborators()]] - code - gateway/security/rbac_config.py
-- [[load_removed_collaborator_ids()]] - code - gateway/security/rbac_config.py
 - [[override_egress_rule()]] - code - gateway/soc/router.py
-- [[pause_collaborator()]] - code - gateway/security/rbac_config.py
 - [[pause_collaborator_endpoint()]] - code - gateway/soc/router.py
-- [[persist_approved_collaborator()]] - code - gateway/security/rbac_config.py
 - [[post]] - code
 - [[put]] - code
-- [[rbac.py]] - code - gateway/security/rbac.py
-- [[rbac_config.py]] - code - gateway/security/rbac_config.py
 - [[rebuild_all_services()]] - code - gateway/soc/router.py
 - [[remove_egress_rule()]] - code - gateway/soc/router.py
 - [[remove_group_member()]] - code - gateway/soc/router.py
 - [[rename_group()]] - code - gateway/soc/router.py
 - [[restart_service()]] - code - gateway/soc/router.py
-- [[revoke_approved_collaborator()]] - code - gateway/security/rbac_config.py
 - [[revoke_collaborator()]] - code - gateway/soc/router.py
 - [[revoke_delegation()]] - code - gateway/soc/router.py
 - [[revoke_egress_history()]] - code - gateway/soc/router.py
@@ -308,19 +207,13 @@ members: 320
 - [[set_module_mode()]] - code - gateway/soc/router.py
 - [[set_user_collab_mode()]] - code - gateway/soc/router.py
 - [[set_user_role()]] - code - gateway/soc/router.py
-- [[socauth.py]] - code - gateway/soc/auth.py
 - [[socrouter.py]] - code - gateway/soc/router.py
+- [[soc_correlation()]] - code - gateway/ingest_api/main.py
 - [[start_service()]] - code - gateway/soc/router.py
 - [[stop_service()]] - code - gateway/soc/router.py
 - [[str]] - code
-- [[str_1]] - code
-- [[test_command_center_has_agents_and_edge_tabs()]] - code - gateway/tests/test_soc_edge.py
-- [[test_command_center_shows_deployment_and_connection()]] - code - gateway/tests/test_soc_edge.py
-- [[test_edge_service_exposes_enforced_profiles()]] - code - gateway/tests/test_soc_edge.py
-- [[test_rbac.py]] - code - gateway/tests/test_rbac.py
-- [[test_soc_edge.py]] - code - gateway/tests/test_soc_edge.py
+- [[test_risk_level_label_boundaries()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[trigger_cve_report()]] - code - gateway/soc/router.py
-- [[unpause_collaborator()]] - code - gateway/security/rbac_config.py
 - [[unpause_collaborator_endpoint()]] - code - gateway/soc/router.py
 - [[update_display_name()]] - code - gateway/soc/router.py
 - [[update_service()]] - code - gateway/soc/router.py
@@ -337,78 +230,52 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 55 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 37 edges to [[_COMMUNITY_ws_soc_endpoint]]
-- 34 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 27 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 21 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 19 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 15 edges to [[_COMMUNITY_TestAgentsRegistry]]
-- 14 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 12 edges to [[_COMMUNITY_MiddlewareManager]]
-- 11 edges to [[_COMMUNITY_ServiceManager]]
-- 10 edges to [[_COMMUNITY_run]]
-- 9 edges to [[_COMMUNITY_ContributorManager]]
-- 8 edges to [[_COMMUNITY_GroupRegistry]]
-- 7 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 6 edges to [[_COMMUNITY_middleware.py]]
-- 6 edges to [[_COMMUNITY_UserSessionManager]]
-- 6 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 5 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 5 edges to [[_COMMUNITY_test_tool_acl.py]]
-- 5 edges to [[_COMMUNITY_GroupWorkspaceManager]]
-- 5 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
-- 4 edges to [[_COMMUNITY_make_event]]
-- 4 edges to [[_COMMUNITY_test_mcp_proxy.py]]
-- 4 edges to [[_COMMUNITY_TeamsConfig]]
-- 4 edges to [[_COMMUNITY_SharedMemoryManager]]
-- 4 edges to [[_COMMUNITY_dot-get_user_role]]
-- 3 edges to [[_COMMUNITY_test_group_isolation.py]]
-- 3 edges to [[_COMMUNITY_test_shared_memory.py]]
-- 3 edges to [[_COMMUNITY_lifespan]]
-- 3 edges to [[_COMMUNITY_TestCollaboratorPersistence]]
-- 3 edges to [[_COMMUNITY_TestRBACConfig]]
+- 52 edges to [[_COMMUNITY_RBACConfig]]
+- 47 edges to [[_COMMUNITY_test_soc_bots.py]]
+- 14 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
+- 14 edges to [[_COMMUNITY_TeamsConfig]]
+- 13 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 12 edges to [[_COMMUNITY_test_soc_edge.py]]
+- 11 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 10 edges to [[_COMMUNITY_socmodels.py]]
+- 10 edges to [[_COMMUNITY_ServiceManager]]
+- 7 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
+- 7 edges to [[_COMMUNITY_api.py]]
+- 5 edges to [[_COMMUNITY_Severity]]
+- 4 edges to [[_COMMUNITY_ContextGuard]]
+- 3 edges to [[_COMMUNITY_MiddlewareManager]]
 - 3 edges to [[_COMMUNITY_DelegationPrivilege]]
-- 3 edges to [[_COMMUNITY_EgressScope]]
-- 3 edges to [[_COMMUNITY_dot-_filter_outbound]]
+- 3 edges to [[_COMMUNITY_ApprovalMode]]
+- 3 edges to [[_COMMUNITY_ContributorManager]]
+- 3 edges to [[_COMMUNITY_get_trivy_summary]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY_ingest_apiconfig.py]]
 - 3 edges to [[_COMMUNITY_soc_dashboard]]
-- 2 edges to [[_COMMUNITY_email_send]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_TrustManager]]
-- 2 edges to [[_COMMUNITY_TestRBACIntegration]]
-- 2 edges to [[_COMMUNITY_test_collaborator_responses.py]]
-- 2 edges to [[_COMMUNITY_KillSwitchError]]
-- 2 edges to [[_COMMUNITY_EdgeStore]]
-- 2 edges to [[_COMMUNITY_TestDeploymentMode]]
-- 2 edges to [[_COMMUNITY_LockdownLevel]]
-- 2 edges to [[_COMMUNITY_Any_1]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_EgressScope]]
+- 2 edges to [[_COMMUNITY_soc_correlation.py]]
+- 2 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 2 edges to [[_COMMUNITY_dot-process_request]]
+- 2 edges to [[_COMMUNITY_issue_session_token]]
+- 2 edges to [[_COMMUNITY_aggregate_results]]
 - 2 edges to [[_COMMUNITY_compute_scorecard]]
-- 2 edges to [[_COMMUNITY_get_trivy_summary]]
-- 2 edges to [[_COMMUNITY_load_profiles]]
-- 2 edges to [[_COMMUNITY_BotConfig]]
 - 2 edges to [[_COMMUNITY_test_module_stats.py]]
-- 2 edges to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_AuditChain]]
-- 1 edge to [[_COMMUNITY_SecurityPipeline]]
-- 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
-- 1 edge to [[_COMMUNITY_TestMiddlewareSessionEnforcement]]
+- 2 edges to [[_COMMUNITY_asyncio_1]]
 - 1 edge to [[_COMMUNITY_dot-_teams_config]]
-- 1 edge to [[_COMMUNITY_SOCWebSocketHandler]]
-- 1 edge to [[_COMMUNITY_TestLocalAgentHealthHelper]]
-- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
-- 1 edge to [[_COMMUNITY_dot-process_webhook]]
-- 1 edge to [[_COMMUNITY_GatewayBackedProvider]]
-- 1 edge to [[_COMMUNITY_get_sbom]]
-- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_WebhookReceiver]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_LLMProxy]]
+- 1 edge to [[_COMMUNITY_EgressRule]]
 - 1 edge to [[_COMMUNITY_test_agent_cve_registry.py]]
-- 1 edge to [[_COMMUNITY_read_secret]]
-- 1 edge to [[_COMMUNITY_GatewayConfig]]
+- 1 edge to [[_COMMUNITY_secrets.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 - 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
-- [[RBACConfig]] - degree 85, connects to 31 communities
-- [[socrouter.py]] - degree 194, connects to 26 communities
-- [[Role]] - degree 56, connects to 19 communities
-- [[rbac_config.py]] - degree 45, connects to 19 communities
-- [[test_soc_edge.py]] - degree 46, connects to 13 communities
+- [[socrouter.py]] - degree 194, connects to 27 communities
+- [[Action]] - degree 102, connects to 8 communities
+- [[Resource]] - degree 102, connects to 8 communities
+- [[SCLCaller]] - degree 114, connects to 4 communities
+- [[_app_state()]] - degree 69, connects to 4 communities

@@ -1,159 +1,131 @@
 ---
 type: community
-members: 146
+members: 118
 ---
 
 # middleware.py
 
-**Members:** 146 nodes
+**Members:** 118 nodes
 
 ## Members
-- [[dot-__init__()_154]] - code - gateway/security/memory_integrity.py
-- [[dot-__init__()_155]] - code - gateway/security/memory_lifecycle.py
-- [[dot-__post_init__()_7]] - code - gateway/security/memory_lifecycle.py
-- [[dot-__post_init__()_8]] - code - gateway/security/memory_lifecycle.py
-- [[dot-_cleanup_old_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-_cleanup_old_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-_compute_file_hash()]] - code - gateway/security/memory_integrity.py
-- [[dot-_detect_modification_source()]] - code - gateway/security/memory_integrity.py
-- [[dot-_is_in_write_window()]] - code - gateway/security/memory_integrity.py
-- [[dot-_load_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[dot-_load_write_windows()]] - code - gateway/security/memory_integrity.py
-- [[dot-_save_integrity_database()]] - code - gateway/security/memory_integrity.py
-- [[dot-_save_write_windows()]] - code - gateway/security/memory_integrity.py
-- [[dot-archive_file()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-enforce_daily_notes_retention()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-enforce_memory_md_size_limit()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-from_dict()_9]] - code - gateway/security/memory_integrity.py
-- [[dot-from_env()_2]] - code - gateway/security/memory_config.py
-- [[dot-get_integrity_status()]] - code - gateway/security/memory_integrity.py
-- [[dot-get_lifecycle_status()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-get_recent_actions()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-get_recent_alerts()]] - code - gateway/security/memory_integrity.py
-- [[dot-get_recent_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-register_expected_write()]] - code - gateway/security/memory_integrity.py
-- [[dot-run_lifecycle_maintenance()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-sanitize_content()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-scan_all_monitored_files()]] - code - gateway/security/memory_integrity.py
-- [[dot-scan_content_for_threats()]] - code - gateway/security/memory_lifecycle.py
-- [[dot-scan_file()]] - code - gateway/security/memory_integrity.py
-- [[dot-setup_method()_27]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-setup_method()_28]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-setup_method()_29]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_4]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_5]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-teardown_method()_6]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_config_from_env()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_content_sanitization()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_daily_notes_retention()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_default_config()_5]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_expected_write_window()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_file_monitoring_new_file()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_hash_computation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_integrated_memory_protection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_integrity_database_persistence()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_lifecycle_maintenance()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_memory_md_size_limit()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_memory_write_validation()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_pii_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_prompt_injection_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_status_reporting()_1]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_tampering_detection()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-test_threat_cleanup()]] - code - gateway/tests/test_memory_lifecycle.py
-- [[dot-to_dict()_8]] - code - gateway/security/memory_integrity.py
-- [[dot-validate_memory_write()]] - code - gateway/security/memory_lifecycle.py
-- [[Action taken during retention policy enforcement.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Any_61]] - code
-- [[Any_62]] - code
-- [[Archive a file to the archive directory.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Attempt to detect the source of a file modification. Detection strategy (in…]] - rationale - gateway/security/memory_integrity.py
-- [[Check if a file is currently in a write grace window.]] - rationale - gateway/security/memory_integrity.py
-- [[Clean up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Clean up old retention action records.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Clean up old threat records.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Clean up test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Clean up test environment._1]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Combined memory security configuration.]] - rationale - gateway/security/memory_config.py
-- [[Compute SHA-256 hash of a file.]] - rationale - gateway/security/memory_integrity.py
-- [[Configuration for memory file integrity monitoring.]] - rationale - gateway/security/memory_config.py
-- [[Configuration for memory lifecycle management.]] - rationale - gateway/security/memory_config.py
-- [[ContentThreat]] - code - gateway/security/memory_lifecycle.py
-- [[ContentThreatType]] - code - gateway/security/memory_lifecycle.py
-- [[Convert to dictionary for JSON serialization.]] - rationale - gateway/security/memory_integrity.py
-- [[Create configuration from environment variables.]] - rationale - gateway/security/memory_config.py
-- [[Create from dictionary for JSON deserialization.]] - rationale - gateway/security/memory_integrity.py
-- [[Detected threat in memory file content.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enforce retention policy for daily notes.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enforce size limit for MEMORY.md file.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Enum_36]] - code
-- [[Enum_37]] - code
-- [[FileIntegrityRecord]] - code - gateway/security/memory_integrity.py
-- [[Get alerts from the last N hours.]] - rationale - gateway/security/memory_integrity.py
-- [[Get current integrity monitoring status.]] - rationale - gateway/security/memory_integrity.py
-- [[Get current lifecycle management status.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get retention actions taken in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Get threats detected in the last N hours.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Load active write windows from disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Load integrity database from disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Manages memory file lifecycle and content security.]] - rationale - gateway/security/memory_lifecycle.py
-- [[MemoryIntegrityConfig]] - code - gateway/security/memory_config.py
-- [[MemoryIntegrityMonitor]] - code - gateway/security/memory_integrity.py
-- [[MemoryLifecycleConfig]] - code - gateway/security/memory_config.py
-- [[MemoryLifecycleManager]] - code - gateway/security/memory_lifecycle.py
-- [[MemorySecurityConfig]] - code - gateway/security/memory_config.py
+- [[dot-__init__()_46]] - code - gateway/security/dns_filter.py
+- [[dot-__init__()_47]] - code - gateway/security/metadata_guard.py
+- [[dot-_cleanup_rate_window()]] - code - gateway/security/dns_filter.py
+- [[dot-_detect_tunneling()]] - code - gateway/security/dns_filter.py
+- [[dot-_domain_in_allowlist()]] - code - gateway/security/dns_filter.py
+- [[dot-_is_private_ip()_1]] - code - gateway/security/dns_filter.py
+- [[dot-check()_1]] - code - gateway/security/dns_filter.py
+- [[dot-check_for_exif()]] - code - gateway/security/metadata_guard.py
+- [[dot-check_oversized_headers()]] - code - gateway/security/metadata_guard.py
+- [[dot-dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-get_audit_log()_1]] - code - gateway/security/dns_filter.py
+- [[dot-get_document_tag()]] - code - gateway/security/metadata_guard.py
+- [[dot-get_flagged_queries()]] - code - gateway/security/dns_filter.py
+- [[dot-guard()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-resolve_and_cache()]] - code - gateway/security/dns_filter.py
+- [[dot-sanitize_filename()]] - code - gateway/security/metadata_guard.py
+- [[dot-sanitize_headers()]] - code - gateway/security/metadata_guard.py
+- [[dot-sanitize_image_metadata()]] - code - gateway/security/metadata_guard.py
+- [[dot-shannon_entropy()]] - code - gateway/security/dns_filter.py
+- [[dot-tag_document()]] - code - gateway/security/metadata_guard.py
+- [[dot-test_allowlist_blocks_unlisted_in_enforce()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_allowlist_permits_listed_domain()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_allowlist_permits_subdomain()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_base64_in_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_browser_security_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_burst_queries_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_default_allows_all_domains()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_default_mode_is_enforce()_1]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_dns_entropy_calculator()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dns_filter_config()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_dns_low_entropy_legit()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_document_tag_creation()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_document_tag_lookup_by_hash()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_document_tag_untrusted_source()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_egress_filter_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_egress_monitor_loaded()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_empty_string()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_enforce_mode_blocks_tunneling()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_flagged_queries_in_log()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_generous_defaults()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_get_document_tag_unknown_hash_returns_none()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_hex_encoded_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_high_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_high_entropy_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_log_contains_timestamp()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_log_contains_verdict()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_low_entropy_string()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_metadata_oversized_headers()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_metadata_path_traversal_stripped()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_metadata_sanitize_filename()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_multiple_long_labels_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_network_validator_importable()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_no_allowlist_allows_all()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_normal_rate_not_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_oauth_redirect_mismatch()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_private_ip_detection()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_public_ip_not_private()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_queries_logged()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_resolve_and_cache_empty_domain_graceful()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_stable_resolution_passes()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_strict_has_allowlist()]] - code - gateway/tests/test_dns_filter.py
+- [[dot-test_tag_document_different_content_different_hash()]] - code - gateway/tests/test_metadata_guard.py
+- [[dot-test_very_long_subdomain_flagged()]] - code - gateway/tests/test_dns_filter.py
+- [[Check if binary data contains EXIF metadata.]] - rationale - gateway/security/metadata_guard.py
+- [[Check if headers exceed size limits.]] - rationale - gateway/security/metadata_guard.py
+- [[Create and store a provenance tag for a document.]] - rationale - gateway/security/metadata_guard.py
+- [[DNSFilter]] - code - gateway/security/dns_filter.py
+- [[DNSFilterConfig]] - code - gateway/security/dns_filter.py
+- [[DNSQuery]] - code - gateway/security/dns_filter.py
+- [[DNSVerdict]] - code - gateway/security/dns_filter.py
+- [[Default mode is enforce after v0.8.0 enforcement hardening.]] - rationale - gateway/tests/test_dns_filter.py
+- [[DocumentTag]] - code - gateway/security/metadata_guard.py
+- [[EntropyCalculator]] - code - gateway/security/dns_filter.py
+- [[Guards against metadata channel attacks and information disclosure.]] - rationale - gateway/security/metadata_guard.py
+- [[High-entropy domains (potential tunneling).]] - rationale - gateway/tests/test_security_audit.py
+- [[Known private ranges should be detected.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Legit domains have lower entropy.]] - rationale - gateway/tests/test_security_audit.py
+- [[Look up a document tag by its SHA-256 content hash.]] - rationale - gateway/security/metadata_guard.py
+- [[Metadata Channel Guard - Security Hardening Module Sanitize HTTP headers, image…]] - rationale - gateway/security/metadata_guard.py
+- [[MetadataGuard]] - code - gateway/security/metadata_guard.py
 - [[Middleware Manager - P1 Security Hardening Orchestrates security modules for…]] - rationale - gateway/ingest_api/middleware.py
-- [[ModificationSource]] - code - gateway/security/memory_integrity.py
-- [[Monitors integrity of critical memory files.]] - rationale - gateway/security/memory_integrity.py
-- [[Path_55]] - code
-- [[Path_56]] - code
-- [[Record of a file's integrity state.]] - rationale - gateway/security/memory_integrity.py
-- [[Register an expected write to a file to prevent false alerts.]] - rationale - gateway/security/memory_integrity.py
-- [[RetentionAction]] - code - gateway/security/memory_lifecycle.py
-- [[Run all lifecycle maintenance tasks.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Sanitize content by removingredacting threats.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Save active write windows to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Save integrity database to disk.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan a single file for integrity changes.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan all configured monitored files and directories.]] - rationale - gateway/security/memory_integrity.py
-- [[Scan memory file content for security threats.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Set up integration test environment.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Set up test environment._2]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Set up test environment._3]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Source of a file modification.]] - rationale - gateway/security/memory_integrity.py
-- [[Test MEMORY.md size limit enforcement.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test Memory Lifecycle and Integrity]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Test PII detection in memory content.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test cleanup of old threat records.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test complete lifecycle maintenance run.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test complete memory protection workflow.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test configuration from environment variables.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test content sanitization removes threats.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test default configuration values._2]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test detection of unauthorized modifications.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test file hash computation.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integration of memory security components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test integrity database saves and loads correctly.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity configuration.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory integrity monitoring.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test memory lifecycle management.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test monitoring a new file.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test prompt injection detection.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test retention policy for daily notes.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test status reporting from both components.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test validation before writing to memory files.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Test write grace window prevents false alerts.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityConfig]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryIntegrityMonitor]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemoryLifecycleManager]] - code - gateway/tests/test_memory_lifecycle.py
-- [[TestMemorySecurityIntegration]] - code - gateway/tests/test_memory_lifecycle.py
-- [[Tests for memory lifecycle and integrity management.]] - rationale - gateway/tests/test_memory_lifecycle.py
-- [[Types of content threats detected in memory files.]] - rationale - gateway/security/memory_lifecycle.py
-- [[Validate content before writing to memory file.]] - rationale - gateway/security/memory_lifecycle.py
-- [[memory_config.py]] - code - gateway/security/memory_config.py
-- [[memory_integrity.py]] - code - gateway/security/memory_integrity.py
-- [[memory_lifecycle.py]] - code - gateway/security/memory_lifecycle.py
+- [[Provenance record for a document ingested into the agent context.]] - rationale - gateway/security/metadata_guard.py
+- [[Public IPs should not be flagged as private.]] - rationale - gateway/tests/test_dns_filter.py
+- [[RedirectMismatch]] - code - gateway/security/oauth_security.py
+- [[Remove EXIF metadata from image data if present.]] - rationale - gateway/security/metadata_guard.py
+- [[Resolve domain to an IP and cache it for 5 minutes.]] - rationale - gateway/security/dns_filter.py
+- [[Resolving a domain that fails should return empty string gracefully.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Return True if the IP address is in a private  loopback range.]] - rationale - gateway/security/dns_filter.py
+- [[Sanitize HTTP headers by removing sensitive information.]] - rationale - gateway/security/metadata_guard.py
+- [[Sanitize filename by removing unicode control characters and normalizing.]] - rationale - gateway/security/metadata_guard.py
+- [[Seeding the same IP twice should not flag rebinding.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Test DNS filtering, SSRF prevention, and egress control.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestAuditLogging]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSAllowlist]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSFilterConfig]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSRebinding]] - code - gateway/tests/test_dns_filter.py
+- [[TestDNSTunnelingDetection]] - code - gateway/tests/test_dns_filter.py
+- [[TestDocumentTagging]] - code - gateway/tests/test_metadata_guard.py
+- [[TestEntropyCalculator]] - code - gateway/tests/test_dns_filter.py
+- [[TestNetworkSecurity]] - code - gateway/tests/test_security_audit.py
+- [[TestRateLimiting]] - code - gateway/tests/test_dns_filter.py
+- [[Tests for DNS exfiltration prevention.]] - rationale - gateway/tests/test_dns_filter.py
+- [[Tests for Metadata Channel Guard]] - rationale - gateway/tests/test_metadata_guard.py
+- [[TunnelingPattern]] - code - gateway/security/dns_filter.py
+- [[default_config()_1]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[dns_filter.py_2]] - code - gateway/security/dns_filter.py
+- [[fixture_41]] - code
+- [[fixture_42]] - code
+- [[metadata_guard.py]] - code - gateway/security/metadata_guard.py
 - [[middleware.py_2]] - code - gateway/ingest_api/middleware.py
-- [[test_memory_lifecycle.py]] - code - gateway/tests/test_memory_lifecycle.py
+- [[monitor_config()]] - code - gateway/tests/test_dns_filter.py
+- [[monitor_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_config()]] - code - gateway/tests/test_dns_filter.py
+- [[strict_filter()]] - code - gateway/tests/test_dns_filter.py
+- [[test_dns_filter.py]] - code - gateway/tests/test_dns_filter.py
+- [[test_metadata_guard.py]] - code - gateway/tests/test_metadata_guard.py
+- [[test_security_audit.py]] - code - gateway/tests/test_security_audit.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -163,56 +135,82 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_MiddlewareManager]]
-- 7 edges to [[_COMMUNITY_lifespan.py]]
-- 6 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_FileSandbox]]
-- 4 edges to [[_COMMUNITY_lifespan]]
-- 3 edges to [[_COMMUNITY_run]]
-- 3 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 3 edges to [[_COMMUNITY_web_proxy.py]]
-- 3 edges to [[_COMMUNITY_SubagentMonitor]]
-- 3 edges to [[_COMMUNITY_PathIsolationManager]]
-- 3 edges to [[_COMMUNITY_RedactionResult]]
+- 9 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 9 edges to [[_COMMUNITY_TestAuth]]
+- 8 edges to [[_COMMUNITY_ContextGuard]]
+- 8 edges to [[_COMMUNITY_lifespan.py]]
+- 7 edges to [[_COMMUNITY_deep_security_test]]
+- 7 edges to [[_COMMUNITY_FileSandbox]]
+- 5 edges to [[_COMMUNITY_EnvironmentGuard]]
+- 5 edges to [[_COMMUNITY_EgressEvent]]
+- 5 edges to [[_COMMUNITY_PIIConfig]]
+- 5 edges to [[_COMMUNITY_ResourceGuard]]
+- 4 edges to [[_COMMUNITY_RBACConfig]]
+- 4 edges to [[_COMMUNITY_MiddlewareManager]]
+- 4 edges to [[_COMMUNITY_BrowserSecurityGuard]]
+- 4 edges to [[_COMMUNITY_NetworkValidator]]
+- 3 edges to [[_COMMUNITY_EgressPolicy]]
+- 3 edges to [[_COMMUNITY_KeyVault]]
+- 3 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_TestMetadataGuard]]
+- 3 edges to [[_COMMUNITY_TokenValidator]]
+- 3 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
 - 3 edges to [[_COMMUNITY_TestApprovalHardening]]
+- 3 edges to [[_COMMUNITY_GitGuard]]
+- 3 edges to [[_COMMUNITY_ToolResultSanitizer]]
+- 3 edges to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 3 edges to [[_COMMUNITY_AlertDispatcher]]
+- 3 edges to [[_COMMUNITY_ServerConfig]]
 - 3 edges to [[_COMMUNITY_UserSessionManager]]
-- 2 edges to [[_COMMUNITY_KeyRotationManager]]
-- 2 edges to [[_COMMUNITY_ContainerSnapshot]]
-- 2 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
-- 2 edges to [[_COMMUNITY_ContextGuard]]
-- 2 edges to [[_COMMUNITY_BrowserSecurityGuard]]
-- 2 edges to [[_COMMUNITY_OutputCanary]]
-- 2 edges to [[_COMMUNITY_MetadataGuard]]
-- 2 edges to [[_COMMUNITY_GitGuard]]
-- 2 edges to [[_COMMUNITY_ResourceGuard]]
-- 2 edges to [[_COMMUNITY_AlertDispatcher]]
-- 2 edges to [[_COMMUNITY_ServerConfig]]
-- 2 edges to [[_COMMUNITY_NetworkValidator]]
-- 2 edges to [[_COMMUNITY_AgentRegistry]]
+- 3 edges to [[_COMMUNITY_AgentRegistry]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 2 edges to [[_COMMUNITY_TestModuleInstantiationInEnforceMode]]
+- 2 edges to [[_COMMUNITY_PathIsolationManager]]
+- 2 edges to [[_COMMUNITY_DriftDetector]]
+- 2 edges to [[_COMMUNITY_parse_clamscan_output]]
+- 2 edges to [[_COMMUNITY_TestFileSandbox]]
 - 2 edges to [[_COMMUNITY_SessionManager]]
-- 2 edges to [[_COMMUNITY_LogSanitizer]]
-- 2 edges to [[_COMMUNITY_test_security_audit.py]]
-- 2 edges to [[_COMMUNITY_ToolResultSanitizerConfig]]
-- 2 edges to [[_COMMUNITY_TokenValidator]]
-- 2 edges to [[_COMMUNITY_normalize_input]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_ToolResultSanitizer]]
-- 1 edge to [[_COMMUNITY_EnvironmentGuard]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_ToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_ToolChainAnalyzer]]
+- 2 edges to [[_COMMUNITY_clamav_scanner.py]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_PIISanitizer]]
+- 1 edge to [[_COMMUNITY_MiddlewareResult]]
+- 1 edge to [[_COMMUNITY_ContainerSnapshot]]
+- 1 edge to [[_COMMUNITY_KeyRotationManager]]
+- 1 edge to [[_COMMUNITY_TestNormalDNSResolution]]
+- 1 edge to [[_COMMUNITY_TestSupplyChain]]
+- 1 edge to [[_COMMUNITY_TestPIIDetection_2]]
+- 1 edge to [[_COMMUNITY_TrustManager]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleManager]]
+- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_Session]]
+- 1 edge to [[_COMMUNITY_TestPromptGuard_1]]
 - 1 edge to [[_COMMUNITY_CredentialInjector]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_run_trivy_scan]]
+- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_test_canary.py]]
+- 1 edge to [[_COMMUNITY_app]]
 - 1 edge to [[_COMMUNITY_CredentialInjectorConfig]]
-- 1 edge to [[_COMMUNITY_tool_chain_analyzer.py]]
-- 1 edge to [[_COMMUNITY_multi_turn_tracker.py]]
-- 1 edge to [[_COMMUNITY_test_file_sandbox_message_gate.py]]
-- 1 edge to [[_COMMUNITY_check_command]]
+- 1 edge to [[_COMMUNITY_test_alert_dispatcher_retry.py]]
+- 1 edge to [[_COMMUNITY_KeyRotationConfig]]
+- 1 edge to [[_COMMUNITY_drift_detector.py]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleConfig]]
+- 1 edge to [[_COMMUNITY_test_privilege_separation.py]]
+- 1 edge to [[_COMMUNITY_context_guard.py]]
+- 1 edge to [[_COMMUNITY_env_guard.py]]
 - 1 edge to [[_COMMUNITY_KillSwitchConfig]]
+- 1 edge to [[_COMMUNITY_test_file_sandbox_message_gate.py]]
 - 1 edge to [[_COMMUNITY_test_middleware_coverage.py]]
+- 1 edge to [[_COMMUNITY_generate_report]]
+- 1 edge to [[_COMMUNITY_generate_summary]]
 
 ## Top bridge nodes
-- [[middleware.py_2]] - degree 98, connects to 45 communities
-- [[MemoryIntegrityMonitor]] - degree 29, connects to 3 communities
-- [[MemoryLifecycleManager]] - degree 28, connects to 3 communities
-- [[MemoryIntegrityConfig]] - degree 12, connects to 2 communities
-- [[MemoryLifecycleConfig]] - degree 10, connects to 2 communities
+- [[middleware.py_2]] - degree 98, connects to 51 communities
+- [[test_security_audit.py]] - degree 54, connects to 35 communities
+- [[MetadataGuard]] - degree 28, connects to 6 communities
+- [[DNSFilterConfig]] - degree 23, connects to 6 communities
+- [[TestNetworkSecurity]] - degree 21, connects to 4 communities

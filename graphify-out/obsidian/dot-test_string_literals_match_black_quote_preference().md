@@ -15,6 +15,6 @@ tags:
 - [[CI runs black on gateway; an appended registry block must already be clean.]] - `rationale_for` [EXTRACTED]
 - [[TestSerialization_1]] - `method` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
-- [[parametrize_2]] - `references` [EXTRACTED]
+- [[parametrize_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sync

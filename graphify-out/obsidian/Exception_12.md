@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "EdgeOAuthService"
+community: "test_edge_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/test_edge_pipelinepy
 ---
 
 # Exception
 
 ## Connections
-- [[OAuthFailure]] - `inherits` [EXTRACTED]
+- [[ApprovalDenied]] - `inherits` [EXTRACTED]
+- [[ApprovalPending]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

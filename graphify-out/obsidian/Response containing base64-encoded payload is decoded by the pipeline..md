@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # Response containing base64-encoded payload is decoded by the pipeline.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_base64_content_decoded()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

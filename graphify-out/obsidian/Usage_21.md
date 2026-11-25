@@ -1,18 +1,17 @@
 ---
-source_file: ".agents/skills/i-qa/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-aws-profile/README.md"
 type: "document"
-community: "Quality Assurance (SKILL)"
+community: "pick_latest_stable"
 location: "L10"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quality_Assurance_SKILL
+  - community/pick_latest_stable
 ---
 
 # Usage
 
 ## Connections
-- [[Quality Assurance (QA)]] - `contains` [EXTRACTED]
-- [[Quality Assurance (SKILL)]] - `contains` [EXTRACTED]
+- [[MCP AWS Profile Configuration (MCPM-AWS-PROFILE)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL
+#graphify/document #graphify/EXTRACTED #community/pick_latest_stable

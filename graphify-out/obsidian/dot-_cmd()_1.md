@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/runtime/docker_engine.py"
+source_file: "gateway/runtime/podman_engine.py"
 type: "code"
-community: "DockerEngine"
-location: "L29"
+community: "PodmanEngine"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DockerEngine
+  - community/PodmanEngine
 ---
 
 # ._cmd()
 
 ## Connections
 - [[dot-exec()_2]] - `calls` [EXTRACTED]
+- [[dot-generate_systemd()]] - `calls` [EXTRACTED]
 - [[dot-health_check()_2]] - `calls` [EXTRACTED]
 - [[dot-inspect()_2]] - `calls` [EXTRACTED]
 - [[dot-logs()_2]] - `calls` [EXTRACTED]
@@ -26,6 +27,6 @@ tags:
 - [[dot-unpause()_2]] - `calls` [EXTRACTED]
 - [[dot-volume_create()_2]] - `calls` [EXTRACTED]
 - [[dot-volume_rm()_2]] - `calls` [EXTRACTED]
-- [[DockerEngine]] - `method` [EXTRACTED]
+- [[PodmanEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DockerEngine
+#graphify/code #graphify/EXTRACTED #community/PodmanEngine

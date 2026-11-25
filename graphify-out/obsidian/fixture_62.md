@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ConfigIntegrityMonitor"
+community: "SSHProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/SSHProxy
 ---
 
 # fixture
 
 ## Connections
-- [[dirs()]] - `references` [EXTRACTED]
+- [[proxy()_1]] - `references` [EXTRACTED]
+- [[ssh_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/SSHProxy

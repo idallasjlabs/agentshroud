@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestAggregateResults"
+community: "P2 High Priority Incidents"
 location: "L547"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/P2_High_Priority_Incidents
 ---
 
 # .test_high_means_warning()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_patch_all()]] - `calls` [EXTRACTED]
 - [[TestAggregateResults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/P2_High_Priority_Incidents

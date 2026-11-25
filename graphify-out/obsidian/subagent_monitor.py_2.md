@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/subagent_monitor.py"
 type: "code"
-community: "SubagentMonitor"
+community: "test_all_modules_enforce.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/test_all_modules_enforcepy
 ---
 
 # subagent_monitor.py
 
 ## Connections
-- [[Enum_19]] - `imports_from` [EXTRACTED]
+- [[Enum_18]] - `imports_from` [EXTRACTED]
 - [[SubagentEvent]] - `contains` [EXTRACTED]
 - [[SubagentEventType]] - `contains` [EXTRACTED]
 - [[SubagentInfo]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[test_all_modules_enforce.py]] - `imports_from` [EXTRACTED]
 - [[test_subagent_monitor.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

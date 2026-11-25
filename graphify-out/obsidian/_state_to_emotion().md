@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[_apply_state_cb()]] - `calls` [EXTRACTED]
-- [[face_emotion_t]] - `references` [EXTRACTED]
+- [[face_emotion_t_1]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
-- [[ws_vg_state_t]] - `references` [EXTRACTED]
+- [[ws_vg_state_t_1]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app_mainc

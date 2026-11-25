@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_e2e_watchtower.py"
+source_file: "gateway/tests/test_block_credentials.py"
 type: "code"
-community: "test_e2e_watchtower.py"
-location: "L49"
+community: "test_block_credentials.py"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/test_block_credentialspy
 ---
 
 # sanitizer()
 
 ## Connections
+- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[fixture_15]] - `references` [EXTRACTED]
-- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
+- [[fixture_10]] - `references` [EXTRACTED]
+- [[test_block_credentials.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/test_block_credentialspy

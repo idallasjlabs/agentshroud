@@ -1,16 +1,26 @@
 ---
 source_file: ""
 type: "code"
-community: "test_agent_cve_registry.py"
+community: "TelegramAPIProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_agent_cve_registrypy
+  - community/TelegramAPIProxy
 ---
 
 # Any
 
 ## Connections
-- [[get_agent_cve_summary()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_model_error_rewrites()]] - `references` [EXTRACTED]
+- [[dot-_apply_outbound_status_notices()]] - `references` [EXTRACTED]
+- [[dot-_build_ack_only_updates()]] - `references` [EXTRACTED]
+- [[dot-_check_collaborator_leakage()]] - `references` [EXTRACTED]
+- [[dot-_extract_embedded_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_handle_outbound_tool_calls()]] - `references` [EXTRACTED]
+- [[dot-_parse_tool_call_json()]] - `references` [EXTRACTED]
+- [[dot-_redact_owner_ids()]] - `references` [EXTRACTED]
+- [[dot-_resolve_text_field()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_fetch_approval()]] - `references` [EXTRACTED]
+- [[dot-_trigger_web_search_log()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_agent_cve_registrypy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -12,15 +12,15 @@ tags:
 # DNSBlocklist
 
 ## Connections
-- [[dot-__init__()_187]] - `method` [EXTRACTED]
+- [[dot-__init__()_191]] - `method` [EXTRACTED]
 - [[dot-_periodic_update_loop()]] - `method` [EXTRACTED]
 - [[dot-download_blocklist()]] - `method` [EXTRACTED]
 - [[dot-is_blocked()]] - `method` [EXTRACTED]
 - [[dot-load_from_text()]] - `method` [EXTRACTED]
 - [[dot-parse_hosts_line()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_33]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_34]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_7]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_31]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_32]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_6]] - `calls` [EXTRACTED]
 - [[dot-start_periodic_updates()]] - `method` [EXTRACTED]
 - [[dot-stats()]] - `method` [EXTRACTED]
 - [[dot-stop()_9]] - `method` [EXTRACTED]

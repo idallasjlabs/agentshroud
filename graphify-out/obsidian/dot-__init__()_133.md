@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/mcp_policy.py"
+source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L252"
+community: "MemoryLifecycleManager"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/MemoryLifecycleManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[MCPPolicyConfig]] - `calls` [EXTRACTED]
-- [[MCPPolicyEngine]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `references` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[Path_43]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleManager

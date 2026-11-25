@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_services_coverage.py"
+source_file: "gateway/tests/test_mcp_policy.py"
 type: "code"
-community: "ServiceManager"
-location: "L383"
+community: "MCPPolicyEngine"
+location: "L524"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/ServiceManager
+  - graphify/EXTRACTED
+  - community/MCPPolicyEngine
 ---
 
 # _boom()
 
 ## Connections
-- [[dot-test_falls_back_to_openclaw_only_on_config_load_failure()]] - `indirect_call` [INFERRED]
-- [[dot-test_internal_probe_failure_keeps_container_descriptors()]] - `indirect_call` [INFERRED]
-- [[dot-test_resolution_failure_returns_none()]] - `indirect_call` [INFERRED]
+- [[_run()_9]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

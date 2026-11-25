@@ -1,17 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "KillSwitchMonitor"
+community: "test_runtime_engines.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchMonitor
+  - community/test_runtime_enginespy
 ---
 
 # fixture
 
 ## Connections
-- [[config()]] - `references` [EXTRACTED]
-- [[dispatcher()]] - `references` [EXTRACTED]
+- [[dot-client()]] - `references` [EXTRACTED]
+- [[dot-client()_1]] - `references` [EXTRACTED]
+- [[dot-client()_2]] - `references` [EXTRACTED]
+- [[dot-client()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

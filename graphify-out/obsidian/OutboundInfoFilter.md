@@ -12,14 +12,14 @@ tags:
 # OutboundInfoFilter
 
 ## Connections
-- [[dot-__init__()_121]] - `method` [EXTRACTED]
+- [[dot-__init__()_56]] - `method` [EXTRACTED]
 - [[dot-_classify_response_risk()]] - `method` [EXTRACTED]
 - [[dot-_compile_patterns()]] - `method` [EXTRACTED]
 - [[dot-_is_allowed_for_trust()]] - `method` [EXTRACTED]
 - [[dot-filter_response()_2]] - `method` [EXTRACTED]
-- [[dot-get_stats()_8]] - `method` [EXTRACTED]
-- [[dot-setup_method()_22]] - `calls` [EXTRACTED]
+- [[dot-get_stats()_2]] - `method` [EXTRACTED]
 - [[dot-setup_method()_18]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_19]] - `calls` [EXTRACTED]
 - [[dot-test_custom_patterns()]] - `calls` [EXTRACTED]
 - [[dot-test_initialization_with_config()]] - `calls` [EXTRACTED]
 - [[dot-test_monitor_mode()]] - `calls` [EXTRACTED]

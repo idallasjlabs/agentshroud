@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/encoding_detector.py"
 type: "code"
-community: "EncodingDetector"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncodingDetector
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # EncodingDetector
@@ -26,7 +26,7 @@ tags:
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[build_edge_service()]] - `calls` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[encoding_detector.py]] - `contains` [EXTRACTED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
@@ -48,4 +48,4 @@ tags:
 - [[test_redteam_probes.py]] - `imports` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncodingDetector
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

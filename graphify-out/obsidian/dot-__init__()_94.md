@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/metadata_guard.py"
+source_file: "gateway/ingest_api/router.py"
 type: "code"
-community: "MetadataGuard"
-location: "L39"
+community: "ingest_api/config.py"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/ingest_api/configpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[MetadataGuard]] - `method` [EXTRACTED]
+- [[Initialize router Args config Router configuration]] - `rationale_for` [EXTRACTED]
+- [[MultiAgentRouter]] - `method` [EXTRACTED]
+- [[RouterConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

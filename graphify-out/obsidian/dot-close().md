@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/proxy/telegram_replay.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1438"
+community: "test_telegram_replay.py"
+location: "L70"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/test_telegram_replaypy
 ---
 
 # .close()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Shutdown middleware background tasks cleanly.]] - `rationale_for` [EXTRACTED]
+- [[Close the SQLite connection (idempotent).]] - `rationale_for` [EXTRACTED]
+- [[UpdateReplayBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/edge_app.py"
+source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "GatewayBackedProvider"
-location: "L103"
+community: "middleware.py"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayBackedProvider
+  - community/middlewarepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AsyncBaseTransport]] - `references` [EXTRACTED]
-- [[EdgeSettings]] - `references` [EXTRACTED]
-- [[GatewayClient]] - `method` [EXTRACTED]
+- [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayBackedProvider
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

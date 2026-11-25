@@ -1,18 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "FileSandbox"
+community: "test_mcp_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/test_mcp_proxypy
 ---
 
 # fixture
 
 ## Connections
-- [[enforce_config()]] - `references` [EXTRACTED]
-- [[middleware_manager()]] - `references` [EXTRACTED]
-- [[strict_sandbox()_1]] - `references` [EXTRACTED]
+- [[audit()]] - `references` [EXTRACTED]
+- [[config()_1]] - `references` [EXTRACTED]
+- [[inspector()]] - `references` [EXTRACTED]
+- [[passthrough_proxy()]] - `references` [EXTRACTED]
+- [[proxy()]] - `references` [EXTRACTED]
+- [[strict_inspector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

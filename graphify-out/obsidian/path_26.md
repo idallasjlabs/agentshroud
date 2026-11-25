@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/browse.js"
+source_file: "docker/config/hermes/skills/i-browser/browse.js"
 type: "code"
-community: "browser/browse.js"
+community: "hermes/skills/i-browser/browse.js"
 location: "L8"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/browser/browsejs
+  - community/hermes/skills/i-browser/browsejs
 ---
 
 # path
 
 ## Connections
-- [[browserbrowse.js]] - `contains` [EXTRACTED]
+- [[hermesskillsi-browserbrowse.js]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/browser/browsejs
+#graphify/code #graphify/EXTRACTED #community/hermes/skills/i-browser/browsejs

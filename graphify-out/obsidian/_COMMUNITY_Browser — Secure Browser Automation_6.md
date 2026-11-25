@@ -36,7 +36,7 @@ members: 30
 - [[Security Guarantees_5]] - document - .agents/skills/browser/SKILL.md
 - [[Take Screenshot_4]] - document - .agents/skills/browser/SKILL.md
 - [[Troubleshooting_40]] - document - .agents/skills/browser/SKILL.md
-- [[Usage_112]] - document - .agents/skills/browser/SKILL.md
+- [[Usage_113]] - document - .agents/skills/browser/SKILL.md
 - [[browserSKILL]] - document - .agents/skills/browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

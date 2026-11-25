@@ -16,6 +16,6 @@ tags:
 - [[KeyRotationManager]] - `uses` [INFERRED]
 - [[Trigger manual rotation for a specific credential (owner only).]] - `rationale_for` [EXTRACTED]
 - [[management.py]] - `contains` [EXTRACTED]
-- [[post_2]] - `references` [EXTRACTED]
+- [[post_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/managementpy

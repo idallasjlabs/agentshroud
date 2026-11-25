@@ -16,7 +16,7 @@ tags:
 - [[Configuration_9]] - `contains` [EXTRACTED]
 - [[Integration_2]] - `contains` [EXTRACTED]
 - [[Key Features_2]] - `contains` [EXTRACTED]
-- [[License_6]] - `contains` [EXTRACTED]
+- [[License_7]] - `contains` [EXTRACTED]
 - [[Limitations_1]] - `contains` [EXTRACTED]
 - [[Overview_7]] - `contains` [EXTRACTED]
 - [[Publishing to ClawHub]] - `contains` [EXTRACTED]

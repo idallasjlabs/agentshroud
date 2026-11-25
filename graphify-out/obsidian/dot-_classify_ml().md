@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "normalize_input"
+community: "TestHeuristicClassifier"
 location: "L215"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/TestHeuristicClassifier
 ---
 
 # ._classify_ml()
@@ -18,4 +18,4 @@ tags:
 - [[HeuristicClassifier]] - `method` [EXTRACTED]
 - [[EXPERIMENTAL ML model classification placeholder.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

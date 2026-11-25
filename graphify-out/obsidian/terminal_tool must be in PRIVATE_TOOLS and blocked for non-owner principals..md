@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "rationale"
-community: "TestCVE2026_9367TerminalToolDenied"
+community: "test_tool_acl.py"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestCVE2026_9367TerminalToolDenied
+  - community/test_tool_aclpy
 ---
 
 # terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCVE2026_9367TerminalToolDenied]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied
+#graphify/rationale #graphify/EXTRACTED #community/test_tool_aclpy

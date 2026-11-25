@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test querying events with filters.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditStore]] - `method` [EXTRACTED]
-- [[asyncio_79]] - `references` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAuditStore

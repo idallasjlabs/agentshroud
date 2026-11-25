@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Globally Denied Command]] - `contains` [EXTRACTED]
 - [[HTTP 403 — SSH Host Not Allowed]] - `contains` [EXTRACTED]
-- [[Related Notes_50]] - `contains` [EXTRACTED]
+- [[Related Notes_53]] - `contains` [EXTRACTED]
 - [[SSH Connection Timeout]] - `contains` [EXTRACTED]
 - [[SSH Key Not Found]] - `contains` [EXTRACTED]
 - [[SSH Proxy Errors]] - `contains` [EXTRACTED]

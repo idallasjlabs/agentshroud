@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L228"
+community: "PIISanitizer"
+location: "L379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/PIISanitizer
 ---
 
 # .sanitize()
 
 ## Connections
-- [[dot-_extract_code_blocks()]] - `calls` [EXTRACTED]
-- [[dot-_restore_code_blocks()]] - `calls` [EXTRACTED]
-- [[dot-sanitize_images()]] - `calls` [EXTRACTED]
-- [[dot-sanitize_links()]] - `calls` [EXTRACTED]
-- [[Sanitize tool result content by filtering markdown links and images. Args…]] - `rationale_for` [EXTRACTED]
-- [[ToolResultSanitizer]] - `method` [EXTRACTED]
+- [[_BrokenSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

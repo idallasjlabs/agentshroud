@@ -1,28 +1,23 @@
 ---
 source_file: ""
 type: "code"
-community: "A2AProxy"
+community: "test_canary.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxy
+  - community/test_canarypy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_agent_card_discovery_is_never_policy_gated()]] - `references` [EXTRACTED]
-- [[test_agent_card_discovery_is_still_audited()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_allowed_peer_low_risk_forwards()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_binary_part_is_forwarded_unscanned_and_flagged()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_denial_is_also_logged_to_audit_store()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_denied_peer_never_reaches_hermes()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_high_risk_method_without_approval_queue_denied()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_logs_to_audit_store_when_configured()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_malformed_body_is_blocked()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_missing_auth_is_blocked_and_never_forwarded()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_pii_in_message_is_redacted_before_forwarding()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_task_ownership_violation_blocked()]] - `references` [EXTRACTED]
-- [[test_process_inbound_request_unknown_token_is_blocked()]] - `references` [EXTRACTED]
+- [[test_canary_fails_without_pipeline()]] - `references` [EXTRACTED]
+- [[test_canary_message_contains_fake_pii()]] - `references` [EXTRACTED]
+- [[test_canary_passes_with_pipeline()]] - `references` [EXTRACTED]
+- [[test_canary_result_serialization()]] - `references` [EXTRACTED]
+- [[test_canary_verifies_audit_chain()]] - `references` [EXTRACTED]
+- [[test_canary_verifies_pii_stripping()]] - `references` [EXTRACTED]
+- [[test_canary_with_healthy_forwarder()]] - `references` [EXTRACTED]
+- [[test_canary_with_unhealthy_forwarder()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxy
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

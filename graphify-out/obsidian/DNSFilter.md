@@ -1,20 +1,20 @@
 ---
 source_file: "gateway/security/dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "middleware.py"
 location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/middlewarepy
 ---
 
 # DNSFilter
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_153]] - `calls` [EXTRACTED]
-- [[dot-__init__()_54]] - `method` [EXTRACTED]
+- [[dot-__init__()_159]] - `calls` [EXTRACTED]
+- [[dot-__init__()_46]] - `method` [EXTRACTED]
 - [[dot-_cleanup_rate_window()]] - `method` [EXTRACTED]
 - [[dot-_detect_tunneling()]] - `method` [EXTRACTED]
 - [[dot-_domain_in_allowlist()]] - `method` [EXTRACTED]
@@ -35,4 +35,4 @@ tags:
 - [[test_dns_filter.py]] - `imports` [EXTRACTED]
 - [[web_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

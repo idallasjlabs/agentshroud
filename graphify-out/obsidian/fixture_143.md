@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_middleware_coverage.py"
+community: "CredentialInfo"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_middleware_coveragepy
+  - community/CredentialInfo
 ---
 
 # fixture
 
 ## Connections
-- [[mm()]] - `references` [EXTRACTED]
-- [[temp_workspace()_1]] - `references` [EXTRACTED]
-- [[usm()]] - `references` [EXTRACTED]
+- [[dot-manager()_2]] - `references` [EXTRACTED]
+- [[dot-sample_credential()]] - `references` [EXTRACTED]
+- [[dot-setup_manager_with_credential()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

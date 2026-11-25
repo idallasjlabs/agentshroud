@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestSystemPathProtection"
+community: "test_privilege_separation.py"
 location: "L161"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSystemPathProtection
+  - community/test_privilege_separationpy
 ---
 
 # Agent cannot modify system paths.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSystemPathProtection]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSystemPathProtection
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

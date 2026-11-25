@@ -1,17 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "PIIConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/PIIConfig
 ---
 
 # fixture
 
 ## Connections
-- [[queue()]] - `references` [EXTRACTED]
-- [[store()_2]] - `references` [EXTRACTED]
+- [[dot-_close_middleware_after()]] - `references` [EXTRACTED]
+- [[dot-default_config()]] - `references` [EXTRACTED]
+- [[dot-mock_config()]] - `references` [EXTRACTED]
+- [[dot-sanitizer()_2]] - `references` [EXTRACTED]
+- [[dot-tool_config()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

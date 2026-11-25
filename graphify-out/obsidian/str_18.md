@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "MCPPolicyEngine"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPPolicyEngine
+  - community/lifespanpy
 ---
 
 # str
 
 ## Connections
-- [[MCPPolicyAction]] - `inherits` [EXTRACTED]
+- [[ProxyAction]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

@@ -24,7 +24,7 @@ members: 30
 - [[Kill Switch Procedure_1]] - document - docs/vault/08 - Runbooks/Kill Switch Procedure.md
 - [[Legend]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
 - [[Quick Reference]] - document - docs/vault/00 - START HERE/Quick Reference.md
-- [[Related Notes_23]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
+- [[Related Notes_24]] - document - docs/vault/09 - Diagrams/Full System Flowchart.md
 - [[Restart Procedure]] - document - docs/vault/08 - Runbooks/Restart Procedure.md
 - [[Shutdown & Recovery_1]] - document - docs/vault/01 - Architecture/Shutdown & Recovery.md
 - [[Startup Flow Diagram (vault note)]] - document - docs/vault/09 - Diagrams/Startup Flow Diagram.md
@@ -48,8 +48,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_middleware.py_1]]
-- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
-- 1 edge to [[_COMMUNITY_prompt_guard.py_1]]
+- 1 edge to [[_COMMUNITY_clamav_scanner.py_1]]
+- 1 edge to [[_COMMUNITY_prompt_guard.py]]
 - 1 edge to [[_COMMUNITY_Gateway Python Dependencies (`gatewayrequirements.txt`)]]
 - 1 edge to [[_COMMUNITY_auth.py]]
 - 1 edge to [[_COMMUNITY_ledger.py]]
@@ -81,9 +81,9 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_pipeline.py — Security Pipeline]]
 - 1 edge to [[_COMMUNITY_Layer-by-Layer Breakdown]]
 - 1 edge to [[_COMMUNITY_alert_dispatcher.py]]
-- 1 edge to [[_COMMUNITY_drift_detector.py]]
+- 1 edge to [[_COMMUNITY_drift_detector.py_1]]
 - 1 edge to [[_COMMUNITY_encrypted_store.py]]
-- 1 edge to [[_COMMUNITY_env_guard.py]]
+- 1 edge to [[_COMMUNITY_env_guard.py_1]]
 - 1 edge to [[_COMMUNITY_trust_manager.py]]
 - 1 edge to [[_COMMUNITY_Prompt Injection Blocks]]
 - 1 edge to [[_COMMUNITY_All Environment Variables]]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "._looks_like_safe_collaborator_info_query"
+community: "TelegramAPIProxy"
 location: "L1033"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_looks_like_safe_collaborator_info_query
+  - community/TelegramAPIProxy
 ---
 
 # ._looks_like_file_query()
@@ -19,4 +19,4 @@ tags:
 - [[TelegramAPIProxy]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_looks_like_safe_collaborator_info_query
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

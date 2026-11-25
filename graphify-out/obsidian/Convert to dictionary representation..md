@@ -12,6 +12,6 @@ tags:
 # Convert to dictionary representation.
 
 ## Connections
-- [[dot-to_dict()_13]] - `rationale_for` [EXTRACTED]
+- [[dot-to_dict()_11]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditEvent

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
+source_file: "docs/vault/06 - Containers & Services/volumes.md"
 type: "document"
-community: "Troubleshooting Matrix"
-location: "L143"
+community: "Docker Volumes"
+location: "L90"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Troubleshooting_Matrix
+  - community/Docker_Volumes
 ---
 
 # Related Notes
 
 ## Connections
-- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
+- [[Docker Volumes]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Matrix
+#graphify/document #graphify/EXTRACTED #community/Docker_Volumes

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestAgentShroudSourceCodeProtection"
+community: "test_privilege_separation.py"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentShroudSourceCodeProtection
+  - community/test_privilege_separationpy
 ---
 
 # TestAgentShroudSourceCodeProtection
@@ -19,4 +19,4 @@ tags:
 - [[Agent cannot modify AgentShroud's own source code.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentShroudSourceCodeProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

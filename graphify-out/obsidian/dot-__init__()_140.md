@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_intel_endpoint.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "make_httpx_fetcher"
-location: "L191"
+community: "test_edge_service_routes.py"
+location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_httpx_fetcher
+  - community/test_edge_service_routespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StreamResp]] - `method` [EXTRACTED]
+- [[AsyncBaseTransport]] - `references` [EXTRACTED]
+- [[EdgeSettings]] - `references` [EXTRACTED]
+- [[GatewayClient]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

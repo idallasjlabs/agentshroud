@@ -1,21 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mcp_proxy.py"
+community: "test_telegram_replay.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/test_telegram_replaypy
 ---
 
 # fixture
 
 ## Connections
-- [[audit()]] - `references` [EXTRACTED]
-- [[config()_2]] - `references` [EXTRACTED]
-- [[inspector()]] - `references` [EXTRACTED]
-- [[passthrough_proxy()]] - `references` [EXTRACTED]
-- [[proxy()]] - `references` [EXTRACTED]
-- [[strict_inspector()]] - `references` [EXTRACTED]
+- [[buf()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/__init__.py"
 type: "code"
-community: "ContainerEngine"
+community: "DockerEngine"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/DockerEngine
 ---
 
 # runtime/__init__.py
@@ -23,7 +23,7 @@ tags:
 - [[docker_engine.py_2]] - `re_exports` [EXTRACTED]
 - [[engine.py_2]] - `re_exports` [EXTRACTED]
 - [[get_engine()]] - `contains` [EXTRACTED]
-- [[installer.py_2]] - `imports_from` [EXTRACTED]
+- [[installer.py]] - `imports_from` [EXTRACTED]
 - [[podman_engine.py_2]] - `re_exports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

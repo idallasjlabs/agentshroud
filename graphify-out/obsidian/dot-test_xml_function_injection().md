@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "TestHighSeverity"
+community: "ToolResultInjectionScanner"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestHighSeverity
+  - community/ToolResultInjectionScanner
 ---
 
 # .test_xml_function_injection()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestHighSeverity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestHighSeverity
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

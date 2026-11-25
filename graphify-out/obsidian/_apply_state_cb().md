@@ -13,6 +13,8 @@ tags:
 
 ## Connections
 - [[_state_to_emotion()]] - `calls` [EXTRACTED]
+- [[face_animation_pause()]] - `calls` [INFERRED]
+- [[face_set_emotion()]] - `calls` [INFERRED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app_mainc

@@ -12,7 +12,7 @@ tags:
 # .test_configured_allowlist_still_works_alongside_fail_closed_default()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[Fail-closed-by-default must not mean impossible to allow anything — an…]] - `rationale_for` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]

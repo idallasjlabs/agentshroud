@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestTrustMapping"
+community: "PermissionLevel"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTrustMapping
+  - community/PermissionLevel
 ---
 
 # TestTrustMapping
@@ -19,4 +19,4 @@ tags:
 - [[PermissionLevel]] - `uses` [INFERRED]
 - [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTrustMapping
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

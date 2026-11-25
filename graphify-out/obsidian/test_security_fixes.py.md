@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # test_security_fixes.py
@@ -27,11 +27,11 @@ tags:
 - [[TestWebSocketHandshakeAuth]] - `contains` [EXTRACTED]
 - [[Tests for v0.2.0 peer review security fixes Covers - CRITICAL-1 SSH…]] - `rationale_for` [EXTRACTED]
 - [[_create_ws_token()]] - `imports` [EXTRACTED]
-- [[client()_12]] - `contains` [EXTRACTED]
+- [[client()_5]] - `contains` [EXTRACTED]
 - [[dashboard.py]] - `imports_from` [EXTRACTED]
-- [[httpx]] - `imports_from` [EXTRACTED]
+- [[httpx_1]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[sync_client()_1]] - `contains` [EXTRACTED]
 - [[telegram_api_proxy()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

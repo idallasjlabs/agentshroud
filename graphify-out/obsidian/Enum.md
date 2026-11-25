@@ -11,8 +11,8 @@ tags:
 # Enum
 
 ## Connections
-- [[Role]] - `inherits` [EXTRACTED]
-- [[ToolTier]] - `inherits` [EXTRACTED]
-- [[rbac_config.py]] - `imports_from` [EXTRACTED]
+- [[Action]] - `inherits` [EXTRACTED]
+- [[Resource]] - `inherits` [EXTRACTED]
+- [[rbac.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/soc/routerpy

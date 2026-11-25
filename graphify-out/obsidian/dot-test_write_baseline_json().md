@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # .test_write_baseline_json()
@@ -16,6 +16,6 @@ tags:
 - [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - `rationale_for` [EXTRACTED]
 - [[TestBenchmarkBaseline]] - `method` [EXTRACTED]
 - [[TrustManager]] - `calls` [EXTRACTED]
-- [[asyncio_16]] - `references` [EXTRACTED]
+- [[asyncio_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

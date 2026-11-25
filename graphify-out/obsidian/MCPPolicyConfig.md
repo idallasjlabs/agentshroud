@@ -12,9 +12,9 @@ tags:
 # MCPPolicyConfig
 
 ## Connections
-- [[dot-__init__()_133]] - `calls` [EXTRACTED]
+- [[dot-__init__()_129]] - `calls` [EXTRACTED]
 - [[dot-__post_init__()_6]] - `method` [EXTRACTED]
-- [[dot-from_dict()_7]] - `method` [EXTRACTED]
+- [[dot-from_dict()_8]] - `method` [EXTRACTED]
 - [[Declarative MCP security policy. Loaded from the ``mcp_policy`` section of…]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig]] - `uses` [INFERRED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]

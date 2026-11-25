@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "rationale"
-community: "AgentRegistry"
+community: ".verify_shared_nothing"
 location: "L123"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/verify_shared_nothing
 ---
 
 # Verify that each agent has its own volume (no shared filesystems).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-verify_volume_isolation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/AgentRegistry
+#graphify/rationale #graphify/EXTRACTED #community/verify_shared_nothing

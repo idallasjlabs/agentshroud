@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "middleware.py"
+community: "TestMemoryLifecycleManager"
 location: "L283"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryLifecycleManager
 ---
 
 # Test retention policy for daily notes.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_daily_notes_retention()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/TestMemoryLifecycleManager

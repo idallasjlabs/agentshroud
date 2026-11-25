@@ -15,6 +15,6 @@ tags:
 - [[EgressApprovalQueue]] - `calls` [EXTRACTED]
 - [[Mock app_state with egress approval queue.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalAPI]] - `method` [EXTRACTED]
-- [[fixture_52]] - `references` [EXTRACTED]
+- [[fixture_54]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/fixture

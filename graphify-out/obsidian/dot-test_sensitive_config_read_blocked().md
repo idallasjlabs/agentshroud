@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestReadAccess"
+community: "test_privilege_separation.py"
 location: "L225"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReadAccess
+  - community/test_privilege_separationpy
 ---
 
 # .test_sensitive_config_read_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot read sensitive configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestReadAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReadAccess
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

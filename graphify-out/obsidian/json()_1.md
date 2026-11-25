@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "test_api_alerts_endpoint_emits_bus_event"
-location: "L144"
+community: "asyncio"
+location: "L265"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_api_alerts_endpoint_emits_bus_event
+  - community/asyncio
 ---
 
 # json()
 
 ## Connections
-- [[test_api_alerts_endpoint_emits_bus_event()]] - `contains` [EXTRACTED]
+- [[test_forward_uses_chat_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_api_alerts_endpoint_emits_bus_event
+#graphify/code #graphify/EXTRACTED #community/asyncio

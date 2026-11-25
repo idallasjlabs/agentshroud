@@ -12,7 +12,7 @@ tags:
 # ._is_owner_chat()
 
 ## Connections
-- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[dot-_notify_user_blocked()]] - `calls` [EXTRACTED]
 - [[Return True when chat_id belongs to the configured owner. Handles both real…]] - `rationale_for` [EXTRACTED]

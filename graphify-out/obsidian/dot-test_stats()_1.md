@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: ".test_stats"
-location: "L460"
+community: "TestAuditStore"
+location: "L145"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_stats
+  - community/TestAuditStore
 ---
 
 # .test_stats()
 
 ## Connections
-- [[Test filter statistics.]] - `rationale_for` [EXTRACTED]
-- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
+- [[Test audit store statistics.]] - `rationale_for` [EXTRACTED]
+- [[TestAuditStore]] - `method` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_stats
+#graphify/code #graphify/EXTRACTED #community/TestAuditStore

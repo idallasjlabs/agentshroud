@@ -12,7 +12,7 @@ tags:
 # TestSessionIsolationEndToEnd
 
 ## Connections
-- [[dot-temp_workspace()_1]] - `method` [EXTRACTED]
+- [[dot-temp_workspace()_2]] - `method` [EXTRACTED]
 - [[dot-test_complete_user_isolation()]] - `method` [EXTRACTED]
 - [[dot-test_owner_admin_access()]] - `method` [EXTRACTED]
 - [[dot-test_session_persistence()]] - `method` [EXTRACTED]

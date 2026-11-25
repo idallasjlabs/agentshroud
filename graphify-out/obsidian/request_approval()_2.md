@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "asyncio"
+community: "EgressAction"
 location: "L335"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressAction
 ---
 
 # request_approval()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unknown_domain_denied_when_denied()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressAction

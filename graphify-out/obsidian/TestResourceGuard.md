@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-setup_method()_26]] - `method` [EXTRACTED]
-- [[dot-teardown_method()_7]] - `method` [EXTRACTED]
+- [[dot-teardown_method()_4]] - `method` [EXTRACTED]
 - [[dot-test_brief_spike_below_debounce_does_not_alert()]] - `method` [EXTRACTED]
 - [[dot-test_check_resource_over_limit_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_check_resource_temp_files_limit()]] - `method` [EXTRACTED]

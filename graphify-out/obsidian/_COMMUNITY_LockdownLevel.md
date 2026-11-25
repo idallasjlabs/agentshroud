@@ -18,7 +18,7 @@ members: 25
 - [[dot-level_of()]] - code - gateway/security/progressive_lockdown.py
 - [[dot-record_block()]] - code - gateway/security/progressive_lockdown.py
 - [[Apply decay (if enabled) and recompute the principal's level.]] - rationale - gateway/security/progressive_lockdown.py
-- [[Enum_40]] - code
+- [[Enum_39]] - code
 - [[Jump a principal directly to `level` (never lowers its current level). The…]] - rationale - gateway/security/progressive_lockdown.py
 - [[LockdownAction]] - code - gateway/security/progressive_lockdown.py
 - [[LockdownLevel]] - code - gateway/security/progressive_lockdown.py
@@ -32,7 +32,7 @@ members: 25
 - [[_level_for_count()]] - code - gateway/security/progressive_lockdown.py
 - [[_max_level()]] - code - gateway/security/progressive_lockdown.py
 - [[progressive_lockdown.py]] - code - gateway/security/progressive_lockdown.py
-- [[str_23]] - code
+- [[str_22]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -42,20 +42,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_ProgressiveLockdown]]
-- 4 edges to [[_COMMUNITY_make_event]]
-- 3 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 14 edges to [[_COMMUNITY_ProgressiveLockdown]]
+- 6 edges to [[_COMMUNITY_test_edge_pipeline.py]]
+- 3 edges to [[_COMMUNITY_test_soc_edge.py]]
 - 2 edges to [[_COMMUNITY__token]]
 - 2 edges to [[_COMMUNITY_test_progressive_lockdown.py]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
 - 1 edge to [[_COMMUNITY_FakeClock]]
-- 1 edge to [[_COMMUNITY_TestAgentsRegistry]]
-- 1 edge to [[_COMMUNITY_dot-get_status]]
 - 1 edge to [[_COMMUNITY_ContributorManager]]
+- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 
 ## Top bridge nodes
-- [[LockdownLevel]] - degree 23, connects to 8 communities
+- [[LockdownLevel]] - degree 23, connects to 6 communities
 - [[progressive_lockdown.py]] - degree 14, connects to 6 communities
-- [[dot-_refresh()]] - degree 8, connects to 2 communities
 - [[dot-escalate_to()]] - degree 10, connects to 1 community
 - [[dot-record_block()]] - degree 9, connects to 1 community
+- [[dot-_refresh()]] - degree 8, connects to 1 community

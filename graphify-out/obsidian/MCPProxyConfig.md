@@ -12,17 +12,17 @@ tags:
 # MCPProxyConfig
 
 ## Connections
-- [[dot-__init__()_59]] - `references` [EXTRACTED]
-- [[dot-__init__()_62]] - `references` [EXTRACTED]
-- [[dot-from_dict()_5]] - `method` [EXTRACTED]
+- [[dot-__init__()_52]] - `references` [EXTRACTED]
+- [[dot-__init__()_53]] - `references` [EXTRACTED]
+- [[dot-from_dict()_6]] - `method` [EXTRACTED]
 - [[dot-test_disabled_server_blocked()]] - `calls` [EXTRACTED]
 - [[MCPPermissionManager]] - `uses` [INFERRED]
 - [[MCPProxy]] - `uses` [INFERRED]
 - [[TestAllowDenyList]] - `uses` [INFERRED]
 - [[TestConfigParsing]] - `uses` [INFERRED]
 - [[Top-level MCP proxy configuration.]] - `rationale_for` [EXTRACTED]
+- [[config()_3]] - `uses` [INFERRED]
 - [[config()_1]] - `uses` [INFERRED]
-- [[config()_2]] - `uses` [INFERRED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[make_config()]] - `calls` [EXTRACTED]

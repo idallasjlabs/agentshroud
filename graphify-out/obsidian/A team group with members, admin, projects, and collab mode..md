@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "rationale"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 location: "L55"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # A team group with members, admin, projects, and collab mode.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[GroupConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

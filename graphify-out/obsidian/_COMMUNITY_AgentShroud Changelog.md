@@ -36,7 +36,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Prompt Daily Component Health Digest]]
 - 1 edge to [[_COMMUNITY_Telegram Formatting Rule (bold only, no headers or tables)]]
 - 1 edge to [[_COMMUNITY_Hermes Cron Jobs Reference & Recreation Guide]]
-- 1 edge to [[_COMMUNITY_Pre-Purge Secret Rotation Checklist]]
+- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference Guide_2]]
 - 1 edge to [[_COMMUNITY_Currently Unmitigable Residual Class]]
 
 ## Top bridge nodes

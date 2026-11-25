@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/apollo/README.md"
+source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
 type: "document"
-community: "Apollo — Audio Systems Producer"
-location: "L6"
+community: "text_control_center.py / agentshroud_manager.py"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Apollo__Audio_Systems_Producer
+  - community/text_control_centerpy_/_agentshroud_managerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
+- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer
+#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy

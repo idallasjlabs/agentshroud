@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "MetadataGuard"
+community: "middleware.py"
 location: "L637"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/middlewarepy
 ---
 
 # .test_browser_security_loaded()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestNetworkSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

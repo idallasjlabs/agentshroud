@@ -15,8 +15,8 @@ tags:
 - [[First Boot]] - `contains` [EXTRACTED]
 - [[Gateway Usage]] - `contains` [EXTRACTED]
 - [[Installation_1]] - `contains` [EXTRACTED]
-- [[Purpose_83]] - `contains` [EXTRACTED]
-- [[Related Notes_57]] - `contains` [EXTRACTED]
+- [[Purpose_86]] - `contains` [EXTRACTED]
+- [[Related Notes_60]] - `contains` [EXTRACTED]
 - [[clamav]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/ClamAV

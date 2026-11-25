@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACConfig"
+community: "RBACConfig"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACConfig
+  - community/RBACConfig
 ---
 
 # Test RBAC configuration.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestRBACConfig]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

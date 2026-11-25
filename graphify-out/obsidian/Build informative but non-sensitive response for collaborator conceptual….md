@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestBuildCollaboratorSafeInfoResponse"
+community: "TelegramAPIProxy"
 location: "L2293"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestBuildCollaboratorSafeInfoResponse
+  - community/TelegramAPIProxy
 ---
 
 # Build informative but non-sensitive response for collaborator conceptual…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_build_collaborator_safe_info_response()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestBuildCollaboratorSafeInfoResponse
+#graphify/rationale #graphify/EXTRACTED #community/TelegramAPIProxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "PromptGuard"
 location: "L319"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PromptGuard
 ---
 
 # .test_very_long_message()
@@ -16,4 +16,4 @@ tags:
 - [[TestDoSPrevention]] - `method` [EXTRACTED]
 - [[Very long messages should be handled without crash.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/ingest_api/middleware.py"
+source_file: "gateway/security/differential_pii_detector.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L1263"
+community: "differential_pii_detector.py"
+location: "L371"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/differential_pii_detectorpy
 ---
 
 # .scan_tool_result()
 
 ## Connections
-- [[MiddlewareManager]] - `method` [EXTRACTED]
-- [[Scan tool result for injection attempts and return sanitized content. Args…]] - `rationale_for` [EXTRACTED]
+- [[dot-_scan()]] - `calls` [EXTRACTED]
+- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
+- [[Scan a tool result with the lower confidence floor. Args tool_name Name of…]] - `rationale_for` [EXTRACTED]
+- [[ToolResultPIIReport]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/differential_pii_detectorpy

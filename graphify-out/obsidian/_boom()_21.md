@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_policy.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "MCPPolicyEngine"
-location: "L376"
+community: "SharedMemoryManager"
+location: "L235"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/MCPPolicyEngine
+  - community/SharedMemoryManager
 ---
 
 # _boom()
 
 ## Connections
-- [[_run()_9]] - `indirect_call` [INFERRED]
-- [[test_mcp_proxy_blocks_policy_denied_call()]] - `indirect_call` [INFERRED]
+- [[dot-test_group_write_io_failure_returns_false()]] - `indirect_call` [INFERRED]
+- [[dot-test_user_write_io_failure_returns_false()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/MCPPolicyEngine
+#graphify/code #graphify/INFERRED #community/SharedMemoryManager

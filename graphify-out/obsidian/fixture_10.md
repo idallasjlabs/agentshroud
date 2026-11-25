@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "test_block_credentials.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/test_block_credentialspy
 ---
 
 # fixture
 
 ## Connections
-- [[default_policy()]] - `references` [EXTRACTED]
-- [[enforcer()]] - `references` [EXTRACTED]
-- [[rbac()]] - `references` [EXTRACTED]
+- [[sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_block_credentialspy

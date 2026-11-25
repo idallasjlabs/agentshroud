@@ -13,7 +13,7 @@ members: 12
 - [[Imports From  Exports To_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 - [[Key Classes  Functions_38]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 - [[Known Issues  Notes_8]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
-- [[Purpose_57]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
+- [[Purpose_58]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 - [[Related_39]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 - [[Responsibilities_38]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md
 - [[SSHConfig Fields]] - document - docs/vault/02 - Modules/Gateway Core/ssh_config.py.md

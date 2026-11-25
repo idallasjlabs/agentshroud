@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "asyncio"
 location: "L2139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/asyncio
 ---
 
 # test_listen_without_end_times_out()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[If a device sends LISTEN but never sends END (crash  stuck firmware), the…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_53]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/asyncio

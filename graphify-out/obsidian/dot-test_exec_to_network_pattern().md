@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "ToolChainAnalyzer"
 location: "L171"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/ToolChainAnalyzer
 ---
 
 # .test_exec_to_network_pattern()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of exec → network communication pattern.]] - `rationale_for` [EXTRACTED]
 - [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

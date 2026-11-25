@@ -1,22 +1,29 @@
 ---
-source_file: "gateway/tests/test_subagent_monitor.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "SubagentMonitor"
-location: "L184"
+community: "AlertDispatcher"
+location: "L759"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/AlertDispatcher
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[dot-test_audit_filterable_by_agent()]] - `method` [EXTRACTED]
-- [[dot-test_audit_has_timestamps()]] - `method` [EXTRACTED]
-- [[dot-test_deregister_logged()]] - `method` [EXTRACTED]
-- [[dot-test_spawn_logged()]] - `method` [EXTRACTED]
-- [[SubagentEventType]] - `uses` [INFERRED]
-- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
+- [[dot-test_alert_dedup()]] - `method` [EXTRACTED]
+- [[dot-test_alert_dispatcher_init()]] - `method` [EXTRACTED]
+- [[dot-test_alert_dispatcher_write()]] - `method` [EXTRACTED]
+- [[dot-test_canary_system_importable()]] - `method` [EXTRACTED]
+- [[dot-test_drift_detector_baseline()]] - `method` [EXTRACTED]
+- [[dot-test_drift_detector_detects_change()]] - `method` [EXTRACTED]
+- [[dot-test_drift_no_false_positive()]] - `method` [EXTRACTED]
+- [[dot-test_health_report_importable()]] - `method` [EXTRACTED]
+- [[AlertDispatcher]] - `uses` [INFERRED]
+- [[ContainerSnapshot]] - `uses` [INFERRED]
+- [[DriftDetector]] - `uses` [INFERRED]
+- [[Test audit chain integrity and tamper detection.]] - `rationale_for` [EXTRACTED]
+- [[test_security_audit.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

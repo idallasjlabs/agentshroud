@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "test_url_analyzer.py"
 location: "L205"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/test_url_analyzerpy
 ---
 
 # .test_short_base64_not_flagged()
@@ -15,4 +15,4 @@ tags:
 - [[Short base64 strings are normal (e.g., API tokens in URLs).]] - `rationale_for` [EXTRACTED]
 - [[TestDataExfiltration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

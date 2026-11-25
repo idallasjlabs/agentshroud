@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "prompt_guard.py"
+community: "TestPromptGuard"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/TestPromptGuard
 ---
 
 # TestPromptGuard
@@ -33,10 +33,10 @@ tags:
 - [[dot-test_sanitized_output()]] - `method` [EXTRACTED]
 - [[dot-test_unicode_zero_width()]] - `method` [EXTRACTED]
 - [[dot-test_warn_threshold()]] - `method` [EXTRACTED]
-- [[dot-test_xml_tag_injection()_1]] - `method` [EXTRACTED]
+- [[dot-test_xml_tag_injection()]] - `method` [EXTRACTED]
 - [[PatternRule]] - `uses` [INFERRED]
 - [[PromptGuard]] - `uses` [INFERRED]
 - [[ThreatAction]] - `uses` [INFERRED]
 - [[test_security_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestPromptGuard

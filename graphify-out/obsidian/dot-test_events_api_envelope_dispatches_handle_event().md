@@ -18,10 +18,10 @@ tags:
 - [[__aexit__()]] - `contains` [EXTRACTED]
 - [[__aiter__()]] - `contains` [EXTRACTED]
 - [[__anext__()]] - `contains` [EXTRACTED]
-- [[__init__()_5]] - `contains` [EXTRACTED]
+- [[__init__()_4]] - `contains` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_17]] - `references` [EXTRACTED]
 - [[events_api envelopes call proxy.handle_event with the payload.]] - `rationale_for` [EXTRACTED]
-- [[send()_1]] - `contains` [EXTRACTED]
+- [[send()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

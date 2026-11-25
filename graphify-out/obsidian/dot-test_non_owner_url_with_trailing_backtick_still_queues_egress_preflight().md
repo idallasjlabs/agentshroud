@@ -18,7 +18,7 @@ tags:
 - [[Trailing markdown backticks should not prevent preflight queueing.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[check_async()_24]] - `contains` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[check_async()_23]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

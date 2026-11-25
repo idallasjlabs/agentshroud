@@ -23,8 +23,8 @@ members: 18
 - [[Related Skills_106]] - document - .agents/skills/i-pm/README.md
 - [[Related Skills_107]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[Security Audit (i-sec)]] - document - .agents/skills/i-sec/SKILL.md
-- [[Usage_119]] - document - .agents/skills/i-pm/README.md
-- [[Usage_120]] - document - docker/config/hermes/skills/i-cr/README.md
+- [[Usage_120]] - document - .agents/skills/i-pm/README.md
+- [[Usage_121]] - document - docker/config/hermes/skills/i-cr/README.md
 - [[hermesskillsi-crREADME]] - document - docker/config/hermes/skills/i-cr/README.md
 
 ## Live Query (requires Dataview plugin)

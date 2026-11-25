@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "PrivacyPolicyEnforcer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PrivacyPolicyEnforcer
 ---
 
 # fixture
 
 ## Connections
-- [[sanitizer()_1]] - `references` [EXTRACTED]
+- [[default_policy()]] - `references` [EXTRACTED]
+- [[enforcer()]] - `references` [EXTRACTED]
+- [[rbac()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

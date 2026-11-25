@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Description_12]] - `contains` [EXTRACTED]
 - [[Effect_1]] - `contains` [EXTRACTED]
-- [[Related Notes_44]] - `contains` [EXTRACTED]
+- [[Related Notes_47]] - `contains` [EXTRACTED]
 - [[SDK Patch_1]] - `contains` [EXTRACTED]
 - [[Set In_4]] - `contains` [EXTRACTED]
 - [[TELEGRAM_API_BASE_URL]] - `contains` [EXTRACTED]

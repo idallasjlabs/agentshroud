@@ -12,11 +12,11 @@ members: 35
 - [[Returns empty result when scanner_result_history is empty.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
 - [[Returns scanner events from app_state.scanner_result_history.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
 - [[Status query param filters by summary.status.]] - rationale - gateway/tests/test_soc_egress_endpoints.py
-- [[asyncio_51]] - code
+- [[asyncio_54]] - code
 - [[cleanup_expired()]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[client()_15]] - code - gateway/tests/test_soc_egress_endpoints.py
-- [[fixture_93]] - code
-- [[get_pending_requests()_1]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[client()_16]] - code - gateway/tests/test_soc_egress_endpoints.py
+- [[fixture_98]] - code
+- [[get_pending_requests()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[run_clamscan()]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[run_trivy_scan()_1]] - code - gateway/tests/test_soc_egress_endpoints.py
 - [[test_manage_egress_add_remove_rule_and_risk()]] - code - gateway/tests/test_soc_egress_endpoints.py
@@ -52,14 +52,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_make_event]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 5 edges to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_app]]
 - 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
-- [[test_soc_egress_endpoints.py]] - degree 28, connects to 3 communities
-- [[client()_15]] - degree 4, connects to 2 communities
+- [[test_soc_egress_endpoints.py]] - degree 28, connects to 2 communities
+- [[client()_16]] - degree 4, connects to 2 communities
 - [[test_manage_soc_events_endpoint()]] - degree 3, connects to 1 community
 - [[test_manage_soc_report_endpoint()]] - degree 3, connects to 1 community

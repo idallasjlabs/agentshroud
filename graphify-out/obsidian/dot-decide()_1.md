@@ -1,21 +1,22 @@
 ---
-source_file: "gateway/approval_queue/enhanced_queue.py"
+source_file: "gateway/approval_queue/queue.py"
 type: "code"
-community: "test_mfa_guard.py"
-location: "L357"
+community: "._append_audit_event"
+location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/_append_audit_event
 ---
 
 # .decide()
 
 ## Connections
+- [[dot-_append_audit_event()]] - `calls` [EXTRACTED]
+- [[dot-_persist_pending_store()]] - `calls` [EXTRACTED]
 - [[dot-broadcast()_1]] - `calls` [EXTRACTED]
-- [[dot-get_item()_2]] - `calls` [EXTRACTED]
+- [[ApprovalQueue]] - `method` [EXTRACTED]
 - [[ApprovalQueueItem]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
-- [[Process an approval decision. IEC 62443 FR1 approving a high-risk action…]] - `rationale_for` [EXTRACTED]
+- [[Process an approval decision Args request_id Request UUID approved Whether…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/_append_audit_event

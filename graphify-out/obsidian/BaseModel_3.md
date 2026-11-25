@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "email_send"
+community: "management.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/managementpy
 ---
 
 # BaseModel
 
 ## Connections
-- [[OwnerEmailRequest]] - `inherits` [EXTRACTED]
+- [[EgressAllowlistResponse]] - `inherits` [EXTRACTED]
+- [[EgressAllowlistUpdate]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/managementpy

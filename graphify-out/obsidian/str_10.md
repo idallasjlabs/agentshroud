@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "web_proxy.py"
+community: "MultiTurnTracker"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/MultiTurnTracker
 ---
 
 # str
 
 ## Connections
-- [[EgressChannel]] - `inherits` [EXTRACTED]
+- [[AlertLevel]] - `inherits` [EXTRACTED]
+- [[DisclosureCategory]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

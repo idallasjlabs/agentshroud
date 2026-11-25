@@ -12,14 +12,14 @@ tags:
 # ToolRiskConfig
 
 ## Connections
-- [[dot-__init__()_114]] - `references` [EXTRACTED]
+- [[dot-__init__()_108]] - `references` [EXTRACTED]
 - [[dot-test_restart_recovery_preserves_timeout_action()]] - `calls` [EXTRACTED]
-- [[BaseModel_7]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[TestPersistence_2]] - `uses` [INFERRED]
 - [[Tool risk tier configuration]] - `rationale_for` [EXTRACTED]
 - [[_real_queue()]] - `calls` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[enhanced_mfa_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
 - [[env()]] - `uses` [INFERRED]

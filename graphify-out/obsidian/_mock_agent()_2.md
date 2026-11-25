@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_mock_ws"
+community: "asyncio"
 location: "L1540"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # _mock_agent()
@@ -22,4 +22,4 @@ tags:
 - [[test_ws_tts_pipeline_sends_all_sentences()]] - `indirect_call` [INFERRED]
 - [[test_ws_volume_command_with_chained_question()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_mock_ws
+#graphify/code #graphify/INFERRED #community/asyncio

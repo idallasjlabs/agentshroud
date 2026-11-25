@@ -1,21 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/call_pipeline.py"
+source_file: "gateway/security/canary_tripwire.py"
 type: "code"
-community: "make_event"
-location: "L475"
+community: "CanaryTripwire"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/CanaryTripwire
 ---
 
 # ._record()
 
 ## Connections
-- [[dot-call_tool()]] - `calls` [EXTRACTED]
-- [[Any_9]] - `references` [EXTRACTED]
-- [[EdgeCallPipeline]] - `method` [EXTRACTED]
-- [[EdgePrincipal]] - `references` [EXTRACTED]
-- [[make_event()]] - `calls` [EXTRACTED]
+- [[dot-scan()_1]] - `calls` [EXTRACTED]
+- [[CanaryTripwire]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/CanaryTripwire

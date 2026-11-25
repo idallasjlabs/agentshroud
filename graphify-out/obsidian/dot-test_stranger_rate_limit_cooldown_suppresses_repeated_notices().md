@@ -18,8 +18,8 @@ tags:
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_rl_notice()_2]] - `contains` [EXTRACTED]
-- [[fake_rl_notice()_1]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_rl_notice()_1]] - `contains` [EXTRACTED]
+- [[fake_rl_notice()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

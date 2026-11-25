@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "AgentTarget"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/ingest_api/configpy
 ---
 
 # test_router_streaming.py
@@ -19,7 +19,7 @@ tags:
 - [[Tests for MultiAgentRouter.forward_to_agent_stream — SSE relay to an OpenAI-…]] - `rationale_for` [EXTRACTED]
 - [[_mock_stream_response()]] - `contains` [EXTRACTED]
 - [[_sse_lines()]] - `contains` [EXTRACTED]
-- [[httpx]] - `imports` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apirouter.py]] - `imports_from` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `contains` [EXTRACTED]
 - [[test_stream_yields_content_deltas_in_order()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

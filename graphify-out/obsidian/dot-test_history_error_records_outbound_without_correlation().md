@@ -16,7 +16,7 @@ tags:
 - [[History lookup returns ok=False → no inbound record; outbound still logged,…]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_7]] - `references` [EXTRACTED]
+- [[asyncio_5]] - `references` [EXTRACTED]
 - [[fake_api()_1]] - `contains` [EXTRACTED]
 - [[fake_api()_3]] - `indirect_call` [INFERRED]
 

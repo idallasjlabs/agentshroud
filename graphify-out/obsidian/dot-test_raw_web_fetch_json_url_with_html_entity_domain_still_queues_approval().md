@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval"
+community: "_make_sanitizer"
 location: "L3593"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval
+  - community/_make_sanitizer
 ---
 
 # .test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval()
@@ -15,7 +15,7 @@ tags:
 - [[HTML-entity encoded domains in leaked JSON should normalize before approval.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[check_async()_59]] - `contains` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
+- [[check_async()_57]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_url_with_html_entity_domain_still_queues_approval
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

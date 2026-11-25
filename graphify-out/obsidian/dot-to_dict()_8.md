@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "middleware.py"
-location: "L49"
+community: "AuditChain"
+location: "L88"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/AuditChain
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_61]] - `references` [EXTRACTED]
-- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
+- [[Any_67]] - `references` [EXTRACTED]
+- [[PipelineResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/AuditChain

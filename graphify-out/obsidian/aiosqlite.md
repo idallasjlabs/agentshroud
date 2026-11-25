@@ -1,12 +1,12 @@
 ---
 source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "GatewayConfig"
+community: "aiosqlite"
 location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/aiosqlite
 ---
 
 # aiosqlite.md
@@ -18,4 +18,4 @@ tags:
 - [[inbound_edgestore.py]] - `imports` [EXTRACTED]
 - [[ledger.py_2]] - `imports` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GatewayConfig
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "TestMemoryIntegrityMonitor"
 location: "L168"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # .test_integrity_database_persistence()
@@ -16,4 +16,4 @@ tags:
 - [[Test integrity database saves and loads correctly.]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

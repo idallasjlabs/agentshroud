@@ -1,38 +1,37 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
+source_file: "gateway/security/tool_result_sanitizer.py"
 type: "code"
-community: "ToolResultSanitizer"
-location: "L90"
+community: "PIIConfig"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizer
+  - community/PIIConfig
 ---
 
 # ToolResultSanitizer
 
 ## Connections
-- [[dot-__init__()_21]] - `method` [EXTRACTED]
-- [[dot-_domain_matches_pattern()]] - `method` [EXTRACTED]
-- [[dot-_extract_code_blocks()]] - `method` [EXTRACTED]
-- [[dot-_is_domain_allowed()]] - `method` [EXTRACTED]
-- [[dot-_is_internal_link()]] - `method` [EXTRACTED]
-- [[dot-_restore_code_blocks()]] - `method` [EXTRACTED]
-- [[dot-_url_has_blocked_patterns()]] - `method` [EXTRACTED]
-- [[dot-sanitize()]] - `method` [EXTRACTED]
-- [[dot-sanitize_images()]] - `method` [EXTRACTED]
-- [[dot-sanitize_links()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_15]] - `calls` [EXTRACTED]
-- [[dot-test_performance_with_large_content()]] - `calls` [EXTRACTED]
-- [[dot-test_realistic_web_scraping_result()]] - `calls` [EXTRACTED]
-- [[dot-test_warn_mode()]] - `calls` [EXTRACTED]
-- [[Enhanced markdown sanitizer with configurable domain allowlist.]] - `rationale_for` [EXTRACTED]
+- [[dot-__init__()_102]] - `method` [EXTRACTED]
+- [[dot-_extract_dict_content()]] - `method` [EXTRACTED]
+- [[dot-_extract_scannable_content()]] - `method` [EXTRACTED]
+- [[dot-_get_sanitizer_for_tool()]] - `method` [EXTRACTED]
+- [[dot-_log_redaction_audit()]] - `method` [EXTRACTED]
+- [[dot-_reconstruct_result()]] - `method` [EXTRACTED]
+- [[dot-sanitize_tool_result()]] - `method` [EXTRACTED]
+- [[dot-sanitizer()_2]] - `calls` [EXTRACTED]
+- [[dot-test_email_content_scanning()]] - `calls` [EXTRACTED]
+- [[dot-test_icloud_contact_scanning()]] - `calls` [EXTRACTED]
+- [[dot-test_initialization()_3]] - `calls` [EXTRACTED]
+- [[dot-test_sanitize_disabled()]] - `calls` [EXTRACTED]
 - [[MiddlewareManager]] - `uses` [INFERRED]
-- [[TestIntegration_1]] - `uses` [INFERRED]
-- [[TestToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[PIISanitizer]] - `uses` [INFERRED]
+- [[RedactionResult_1]] - `uses` [INFERRED]
+- [[TestRealWorldScenarios]] - `uses` [INFERRED]
+- [[TestToolResultSanitizer]] - `uses` [INFERRED]
+- [[Tool result PII sanitizer with per-tool configuration]] - `rationale_for` [EXTRACTED]
 - [[middleware.py_2]] - `imports` [EXTRACTED]
-- [[sanitize_tool_result()]] - `calls` [EXTRACTED]
-- [[test_tool_result_sanitizer_enhanced.py]] - `imports` [EXTRACTED]
-- [[tool_result_sanitizer_enhanced.py]] - `contains` [EXTRACTED]
+- [[test_tool_result_pii.py]] - `imports` [EXTRACTED]
+- [[tool_result_sanitizer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

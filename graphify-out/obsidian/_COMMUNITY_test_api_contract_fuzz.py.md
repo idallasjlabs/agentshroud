@@ -12,9 +12,9 @@ members: 11
 - [[Schema-driven contract fuzzing for the ingestdata-plane API (SCRUM-76).…]] - rationale - gateway/tests/test_api_contract_fuzz.py
 - [[_deep_nest()]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[_fuzzable_endpoints()]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[client()_4]] - code - gateway/tests/test_api_contract_fuzz.py
-- [[fixture_27]] - code
-- [[parametrize_3]] - code
+- [[client()_8]] - code - gateway/tests/test_api_contract_fuzz.py
+- [[fixture_33]] - code
+- [[parametrize_4]] - code
 - [[test_api_contract_fuzz.py]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[test_destructive_routes_are_excluded()]] - code - gateway/tests/test_api_contract_fuzz.py
 - [[test_endpoint_survives_adversarial_body()]] - code - gateway/tests/test_api_contract_fuzz.py
@@ -31,4 +31,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_app]]
 
 ## Top bridge nodes
-- [[client()_4]] - degree 3, connects to 1 community
+- [[client()_8]] - degree 3, connects to 1 community

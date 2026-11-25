@@ -1,21 +1,19 @@
 ---
-source_file: "docker/bots/hermes/docker_proxy_relay.py"
+source_file: "gateway/ingest_api/lifespan.py"
 type: "code"
-community: "_handle"
-location: "L62"
+community: "lifespan"
+location: "L2251"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/_handle
+  - graphify/INFERRED
+  - community/lifespan
 ---
 
 # _handle()
 
 ## Connections
-- [[StreamReader]] - `references` [EXTRACTED]
-- [[StreamWriter]] - `references` [EXTRACTED]
-- [[_pump()]] - `calls` [EXTRACTED]
-- [[docker_proxy_relay.py]] - `contains` [EXTRACTED]
-- [[main()_10]] - `indirect_call` [INFERRED]
+- [[_pipe()_1]] - `calls` [EXTRACTED]
+- [[_run_hermes_api_forwarder()]] - `indirect_call` [INFERRED]
+- [[_run_hermes_dashboard_forwarder()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_handle
+#graphify/code #graphify/INFERRED #community/lifespan

@@ -12,15 +12,15 @@ tags:
 # CanaryTripwire
 
 ## Connections
-- [[dot-__init__()_106]] - `method` [EXTRACTED]
+- [[dot-__init__()_98]] - `method` [EXTRACTED]
 - [[dot-_check_encoded()]] - `method` [EXTRACTED]
 - [[dot-_check_plain()]] - `method` [EXTRACTED]
 - [[dot-_normalize()]] - `method` [EXTRACTED]
-- [[dot-_record()_1]] - `method` [EXTRACTED]
+- [[dot-_record()]] - `method` [EXTRACTED]
 - [[dot-detection_count()]] - `method` [EXTRACTED]
 - [[dot-register_canary()]] - `method` [EXTRACTED]
 - [[dot-scan()_1]] - `method` [EXTRACTED]
-- [[dot-scan_response()_2]] - `method` [EXTRACTED]
+- [[dot-scan_response()_1]] - `method` [EXTRACTED]
 - [[dot-setup_method()_17]] - `calls` [EXTRACTED]
 - [[dot-test_custom_config()_1]] - `calls` [EXTRACTED]
 - [[dot-test_no_canaries()]] - `calls` [EXTRACTED]
@@ -28,7 +28,7 @@ tags:
 - [[TestCanaryTripwire]] - `uses` [INFERRED]
 - [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[canary_tripwire.py]] - `contains` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]

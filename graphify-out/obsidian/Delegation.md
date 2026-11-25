@@ -17,7 +17,7 @@ tags:
 - [[dot-get_active_delegations()]] - `references` [EXTRACTED]
 - [[dot-get_delegations_for_user()]] - `references` [EXTRACTED]
 - [[dot-is_active()]] - `method` [EXTRACTED]
-- [[dot-to_dict()_2]] - `method` [EXTRACTED]
+- [[dot-to_dict()_1]] - `method` [EXTRACTED]
 - [[A single time-bounded privilege delegation record.]] - `rationale_for` [EXTRACTED]
 - [[TestSerialization]] - `uses` [INFERRED]
 - [[delegation.py]] - `contains` [EXTRACTED]

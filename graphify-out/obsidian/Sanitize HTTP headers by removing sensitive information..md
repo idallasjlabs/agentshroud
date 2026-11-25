@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "rationale"
-community: "MetadataGuard"
+community: "middleware.py"
 location: "L75"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/middlewarepy
 ---
 
 # Sanitize HTTP headers by removing sensitive information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-sanitize_headers()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard
+#graphify/rationale #graphify/EXTRACTED #community/middlewarepy

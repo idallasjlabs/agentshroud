@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestInjectionDetection"
+community: "TestSensitiveOps"
 location: "L234"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/TestSensitiveOps
 ---
 
 # .test_shell_command_flagged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSensitiveOps]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/TestSensitiveOps

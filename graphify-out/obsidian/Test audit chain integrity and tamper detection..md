@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "rationale"
-community: "ContainerSnapshot"
+community: "AlertDispatcher"
 location: "L760"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/AlertDispatcher
 ---
 
 # Test audit chain integrity and tamper detection.
 
 ## Connections
-- [[TestAuditTrail]] - `rationale_for` [EXTRACTED]
+- [[TestAuditTrail_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

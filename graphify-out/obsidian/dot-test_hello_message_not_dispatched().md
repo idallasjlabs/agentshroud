@@ -18,10 +18,10 @@ tags:
 - [[__aexit__()_3]] - `contains` [EXTRACTED]
 - [[__aiter__()_1]] - `contains` [EXTRACTED]
 - [[__anext__()_1]] - `contains` [EXTRACTED]
-- [[__init__()_6]] - `contains` [EXTRACTED]
+- [[__init__()_5]] - `contains` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_17]] - `references` [EXTRACTED]
 - [[hello messages are silently consumed without calling handle_event.]] - `rationale_for` [EXTRACTED]
-- [[send()_2]] - `contains` [EXTRACTED]
+- [[send()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

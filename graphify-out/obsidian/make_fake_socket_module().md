@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "make_fake_socket_module"
+community: "test_dns_canvas_coverage.py"
 location: "L67"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_fake_socket_module
+  - community/test_dns_canvas_coveragepy
 ---
 
 # make_fake_socket_module()
@@ -16,11 +16,11 @@ tags:
 - [[dot-test_failover_to_second_upstream()]] - `calls` [EXTRACTED]
 - [[dot-test_first_upstream_succeeds()]] - `calls` [EXTRACTED]
 - [[Build a fake `socket` module namespace driving forward_query without IO. Each…]] - `rationale_for` [EXTRACTED]
-- [[__init__()_4]] - `contains` [EXTRACTED]
-- [[close()]] - `contains` [EXTRACTED]
+- [[__init__()_18]] - `contains` [EXTRACTED]
+- [[close()_2]] - `contains` [EXTRACTED]
 - [[recv()]] - `contains` [EXTRACTED]
 - [[sendto()]] - `contains` [EXTRACTED]
 - [[settimeout()]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "_mock_ws"
+community: "asyncio"
 location: "L2068"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_mock_ws
+  - community/asyncio
 ---
 
 # test_ws_tts_pipeline_sends_all_sentences()
@@ -17,7 +17,7 @@ tags:
 - [[_mock_agent()_2]] - `indirect_call` [INFERRED]
 - [[_pcm_bytes()]] - `calls` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_53]] - `references` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_mock_ws
+#graphify/code #graphify/EXTRACTED #community/asyncio

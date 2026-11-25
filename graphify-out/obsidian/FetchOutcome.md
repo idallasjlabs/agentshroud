@@ -12,7 +12,7 @@ tags:
 # FetchOutcome
 
 ## Connections
-- [[dot-__call__()_12]] - `calls` [EXTRACTED]
+- [[dot-__call__()_13]] - `calls` [EXTRACTED]
 - [[dot-__call__()_14]] - `references` [EXTRACTED]
 - [[dot-ok()]] - `method` [EXTRACTED]
 - [[Result of re-fetching a candidate citation URL through the web proxy.]] - `rationale_for` [EXTRACTED]

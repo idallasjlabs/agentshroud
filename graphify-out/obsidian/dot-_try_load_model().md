@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "normalize_input"
+community: "HeuristicClassifier"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/HeuristicClassifier
 ---
 
 # ._try_load_model()
 
 ## Connections
-- [[dot-__init__()_199]] - `calls` [EXTRACTED]
+- [[dot-__init__()_203]] - `calls` [EXTRACTED]
 - [[HeuristicClassifier]] - `method` [EXTRACTED]
 - [[EXPERIMENTAL Attempt to load a fine-tuned ML model. Returns True on success.…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

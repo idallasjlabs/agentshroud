@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
+community: "PromptGuard"
 location: "L249"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - community/PromptGuard
 ---
 
 # test_prompt_guard_double_encoded_uses_full_ruleset()
@@ -16,4 +16,4 @@ tags:
 - [[PromptGuard]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

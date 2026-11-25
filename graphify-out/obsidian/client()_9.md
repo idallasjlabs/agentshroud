@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_channel_ownership.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: "email_send"
-location: "L37"
+community: "test_soc_router_coverage.py"
+location: "L135"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/test_soc_router_coveragepy
 ---
 
 # client()
 
 ## Connections
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_54]] - `references` [EXTRACTED]
-- [[test_channel_ownership.py]] - `contains` [EXTRACTED]
+- [[fixture_34]] - `references` [EXTRACTED]
+- [[test_soc_router_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

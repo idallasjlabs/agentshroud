@@ -36,7 +36,7 @@ members: 30
 - [[Security Guarantees_3]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Take Screenshot_2]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[Troubleshooting_15]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
-- [[Usage_100]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
+- [[Usage_101]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 - [[openclawskillsi-browserSKILL]] - document - docker/config/openclaw/skills/i-browser/SKILL.md
 
 ## Live Query (requires Dataview plugin)

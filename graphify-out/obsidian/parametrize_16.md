@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/AgentTarget
 ---
 
 # parametrize
 
 ## Connections
-- [[test_rpc_error_mapping()]] - `references` [EXTRACTED]
+- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

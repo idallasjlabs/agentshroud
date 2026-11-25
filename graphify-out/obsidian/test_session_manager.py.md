@@ -25,7 +25,7 @@ tags:
 - [[Tests for gatewaysecuritysession_manager.py — session isolation and security.]] - `rationale_for` [EXTRACTED]
 - [[UserSession]] - `imports` [EXTRACTED]
 - [[UserSessionManager]] - `imports` [EXTRACTED]
-- [[mgr()_2]] - `contains` [EXTRACTED]
+- [[mgr()_1]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_session_managerpy

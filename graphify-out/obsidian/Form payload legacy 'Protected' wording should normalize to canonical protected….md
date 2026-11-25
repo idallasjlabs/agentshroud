@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_collaborator_legacy_protected_prefix_is_normalized_form"
+community: "_make_sanitizer"
 location: "L663"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_collaborator_legacy_protected_prefix_is_normalized_form
+  - community/_make_sanitizer
 ---
 
 # Form payload legacy 'Protected' wording should normalize to canonical protected…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_collaborator_legacy_protected_prefix_is_normalized_form()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_collaborator_legacy_protected_prefix_is_normalized_form
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

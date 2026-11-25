@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_acl.py"
 type: "rationale"
-community: "GroupRoleResolver"
+community: "RBACConfig"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupRoleResolver
+  - community/RBACConfig
 ---
 
 # Tool-Level Access Control (v0.9.0 Tranche 2) Enforces per-user, per-group tool…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tool_acl.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupRoleResolver
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

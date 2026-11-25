@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Apollo — Audio Systems Producer_7]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Purpose_116]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Purpose_118]] - document - docker/config/hermes/skills/i-apollo/README.md
 - [[Related Skills_48]] - document - docker/config/hermes/skills/i-apollo/README.md
-- [[Usage_58]] - document - docker/config/hermes/skills/i-apollo/README.md
+- [[Usage_59]] - document - docker/config/hermes/skills/i-apollo/README.md
 - [[hermesskillsi-apolloREADME]] - document - docker/config/hermes/skills/i-apollo/README.md
 
 ## Live Query (requires Dataview plugin)

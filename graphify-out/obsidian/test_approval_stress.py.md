@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_approval_stress.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/ingest_api/configpy
 ---
 
 # test_approval_stress.py
@@ -23,11 +23,11 @@ tags:
 - [[TestAutoExpire]] - `contains` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `contains` [EXTRACTED]
 - [[approval_queuestore.py]] - `imports_from` [EXTRACTED]
-- [[asyncio_47]] - `imports` [EXTRACTED]
+- [[asyncio_48]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 - [[queue()]] - `contains` [EXTRACTED]
 - [[queue.py]] - `imports_from` [EXTRACTED]
-- [[store()_2]] - `contains` [EXTRACTED]
+- [[store()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

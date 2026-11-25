@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "TrustManager"
+community: "test_e2e_proxy.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_e2e_proxypy
 ---
 
 # pipeline.py
@@ -15,7 +15,7 @@ tags:
 - [[AuditChain]] - `contains` [EXTRACTED]
 - [[AuditChainEntry]] - `contains` [EXTRACTED]
 - [[BotIncidentSeverity]] - `imports` [EXTRACTED]
-- [[Enum_23]] - `imports_from` [EXTRACTED]
+- [[Enum_30]] - `imports_from` [EXTRACTED]
 - [[FilterResult_1]] - `imports` [EXTRACTED]
 - [[InjectionAction]] - `imports` [EXTRACTED]
 - [[PipelineAction]] - `contains` [EXTRACTED]
@@ -41,4 +41,4 @@ tags:
 - [[test_web_proxy.py]] - `imports_from` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

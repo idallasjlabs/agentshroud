@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L360"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # Attempting to create a pipeline with no PII sanitizer raises RuntimeError.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_pipeline_raises_without_pii_sanitizer()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

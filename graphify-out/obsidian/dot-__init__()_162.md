@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/soc/services.py"
+source_file: "gateway/tests/test_llm_proxy.py"
 type: "code"
-community: "ServiceManager"
-location: "L218"
+community: "test_llm_proxy.py"
+location: "L540"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServiceManager
+  - community/test_llm_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_63]] - `references` [EXTRACTED]
-- [[ServiceManager]] - `method` [EXTRACTED]
+- [[_FakeToolACL]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServiceManager
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy

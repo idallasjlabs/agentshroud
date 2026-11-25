@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # prompt_protection.py
@@ -18,4 +18,4 @@ tags:
 - [[System Prompt Protection for AgentShroud Gateway Prevents extraction of system…]] - `rationale_for` [EXTRACTED]
 - [[test_prompt_protection.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

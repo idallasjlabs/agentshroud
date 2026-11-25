@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_fuzz.py"
+community: "TestOpenAPIContract"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_fuzzpy
+  - community/TestOpenAPIContract
 ---
 
 # fixture
 
 ## Connections
-- [[no_exec()]] - `references` [EXTRACTED]
+- [[dot-client()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract

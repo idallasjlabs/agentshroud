@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_103]] - `method` [EXTRACTED]
+- [[dot-__init__()_95]] - `method` [EXTRACTED]
 - [[dot-_apply_path_rewriting()]] - `method` [EXTRACTED]
 - [[dot-_check_cross_user_access()]] - `method` [EXTRACTED]
 - [[dot-_cleanup_user_directory()]] - `method` [EXTRACTED]
@@ -25,9 +25,9 @@ tags:
 - [[dot-cleanup_abandoned_directories()]] - `method` [EXTRACTED]
 - [[dot-end_user_session()]] - `method` [EXTRACTED]
 - [[dot-get_active_users()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_5]] - `method` [EXTRACTED]
+- [[dot-get_stats()_6]] - `method` [EXTRACTED]
 - [[dot-get_user_temp_path()]] - `method` [EXTRACTED]
-- [[dot-manager()_1]] - `calls` [EXTRACTED]
+- [[dot-manager()]] - `calls` [EXTRACTED]
 - [[dot-register_user_session()]] - `method` [EXTRACTED]
 - [[dot-rewrite_path()]] - `method` [EXTRACTED]
 - [[dot-test_path_isolation_instantiates()]] - `calls` [EXTRACTED]

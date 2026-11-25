@@ -1,38 +1,40 @@
 ---
 type: community
-members: 26
+members: 28
 ---
 
 # test_daily_cve_report.py
 
-**Members:** 26 nodes
+**Members:** 28 nodes
 
 ## Members
-- [[dot-_patch_urllib()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_raises_on_network_error()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_returns_empty_when_all_known()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_affected_packages_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_contains_cve_ids()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_contains_header()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_contains_package_names()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_contains_severity_counts()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_error_report_shows_error_message()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_fixed_version_shown()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_checked_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_file_missing()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_file_missing()_1]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_false_when_ingested_yesterday()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_returns_new_advisory_not_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_true_when_checked_today()]] - code - gateway/tests/test_daily_cve_report.py
 - [[dot-test_returns_true_when_ingested_today()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_skips_advisory_whose_cve_is_already_tracked()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_skips_advisory_without_ghsa_id()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_skips_ghsa_already_in_registry()]] - code - gateway/tests/test_daily_cve_report.py
-- [[dot-test_uses_github_token_in_header()]] - code - gateway/tests/test_daily_cve_report.py
-- [[Build a minimal GitHub Security Advisory payload keyed on GHSA id. ``ghsa_id``…]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[Fetch one agent's GitHub Security Advisories and return advisories we don't…]] - rationale - gateway/security/daily_cve_report.py
-- [[Stub urllib.request.urlopen to return a list of advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[dot-test_status_clean_when_no_critical_high()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_status_critical_when_critical_present()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_total_vulnerability_count_shown()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_zero_count_severity_omitted()]] - code - gateway/tests/test_daily_cve_report.py
+- [[Build a minimal parsed Trivy report.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Format a Trivy scan result into a Telegram-ready Markdown message. Args…]] - rationale - gateway/security/daily_cve_report.py
 - [[TestAlreadyCheckedUpstreamToday]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestAlreadyIngestedGhsaToday]] - code - gateway/tests/test_daily_cve_report.py
-- [[TestCheckUpstreamCves]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestFormatCveReport]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestRunAndSendCveReportFailedDeliveryNotMarkedSent]] - code - gateway/tests/test_daily_cve_report.py
 - [[Tests for gateway.security.daily_cve_report.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[_capture_req()]] - code - gateway/tests/test_daily_cve_report.py
-- [[_make_github_advisory()]] - code - gateway/tests/test_daily_cve_report.py
-- [[check_upstream_cves()]] - code - gateway/security/daily_cve_report.py
+- [[_make_error_report()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_make_report()]] - code - gateway/tests/test_daily_cve_report.py
+- [[format_cve_report()]] - code - gateway/security/daily_cve_report.py
 - [[test_daily_cve_report.py]] - code - gateway/tests/test_daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
@@ -43,21 +45,23 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_asyncio]]
-- 6 edges to [[_COMMUNITY_daily_cve_report.py]]
-- 4 edges to [[_COMMUNITY__make_report]]
+- 17 edges to [[_COMMUNITY_asyncio_1]]
+- 5 edges to [[_COMMUNITY_daily_cve_report.py]]
+- 3 edges to [[_COMMUNITY_check_upstream_cves]]
 - 3 edges to [[_COMMUNITY__sleep]]
 - 3 edges to [[_COMMUNITY__build_image_targets]]
 - 2 edges to [[_COMMUNITY_format_upstream_cve_alert]]
 - 2 edges to [[_COMMUNITY_dot-test_gives_up_and_marks_sent_after_max_retries]]
-- 2 edges to [[_COMMUNITY_sync-cve-registry.py]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
 - 1 edge to [[_COMMUNITY_TestRunningImageResolution]]
 - 1 edge to [[_COMMUNITY_TestUpstreamAlertDedup]]
 - 1 edge to [[_COMMUNITY_dot-_run_proxy]]
 - 1 edge to [[_COMMUNITY_list_cve_agents]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY_sync-cve-registry.py]]
 
 ## Top bridge nodes
 - [[test_daily_cve_report.py]] - degree 35, connects to 13 communities
-- [[check_upstream_cves()]] - degree 13, connects to 2 communities
+- [[format_cve_report()]] - degree 17, connects to 3 communities
+- [[_make_report()]] - degree 21, connects to 1 community
+- [[_make_error_report()]] - degree 3, connects to 1 community
 - [[TestRunAndSendCveReportFailedDeliveryNotMarkedSent]] - degree 2, connects to 1 community

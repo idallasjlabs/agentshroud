@@ -1,19 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "fixture"
+community: "test_all_modules_enforce.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fixture
+  - community/test_all_modules_enforcepy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-approval_queue()]] - `references` [EXTRACTED]
-- [[dot-mock_app_state()]] - `references` [EXTRACTED]
-- [[dot-mock_auth()]] - `references` [EXTRACTED]
-- [[dot-temp_rules_file()]] - `references` [EXTRACTED]
+- [[default_config()_4]] - `references` [EXTRACTED]
+- [[monitor()_1]] - `references` [EXTRACTED]
+- [[monitor_config()_2]] - `references` [EXTRACTED]
+- [[strict_config()_2]] - `references` [EXTRACTED]
+- [[strict_monitor()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fixture
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

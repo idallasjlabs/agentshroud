@@ -1,19 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "FileSandbox"
+community: "._make_proxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/_make_proxy
 ---
 
 # fixture
 
 ## Connections
-- [[default_config()_3]] - `references` [EXTRACTED]
-- [[sandbox()]] - `references` [EXTRACTED]
-- [[strict_config()_1]] - `references` [EXTRACTED]
-- [[strict_sandbox()]] - `references` [EXTRACTED]
+- [[_no_owner_mirror()]] - `references` [EXTRACTED]
+- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/_make_proxy

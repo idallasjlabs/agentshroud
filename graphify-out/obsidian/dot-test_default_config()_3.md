@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_result_pii.py"
+source_file: "gateway/tests/test_approval_hardening.py"
 type: "code"
-community: "RedactionResult"
-location: "L29"
+community: "TestApprovalHardening"
+location: "L21"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/TestApprovalHardening
 ---
 
 # .test_default_config()
 
 ## Connections
-- [[Test default configuration]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultPIIConfig]] - `method` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
+- [[ApprovalHardeningConfig]] - `calls` [EXTRACTED]
+- [[Test default configuration values._1]] - `rationale_for` [EXTRACTED]
+- [[TestApprovalHardeningConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

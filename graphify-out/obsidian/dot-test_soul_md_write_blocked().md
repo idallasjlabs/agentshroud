@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestSecurityPolicyProtection"
+community: "test_privilege_separation.py"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityPolicyProtection
+  - community/test_privilege_separationpy
 ---
 
 # .test_soul_md_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot modify SOUL.md behavioral instructions.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityPolicyProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityPolicyProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

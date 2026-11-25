@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "code"
-community: "ProgressiveTrustConfig"
+community: "TrustLevel"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/TrustLevel
 ---
 
 # ProgressiveTrustConfig
 
 ## Connections
-- [[dot-__init__()_217]] - `references` [EXTRACTED]
+- [[dot-__init__()_103]] - `references` [EXTRACTED]
 - [[dot-get_next_trust_level()]] - `method` [EXTRACTED]
 - [[dot-get_previous_trust_level()]] - `method` [EXTRACTED]
 - [[dot-get_trust_level_order()]] - `method` [EXTRACTED]
@@ -34,7 +34,7 @@ tags:
 - [[test_a2a_trust_scoring.py]] - `imports` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `imports` [EXTRACTED]
 - [[trust_manager()_5]] - `uses` [INFERRED]
-- [[trust_manager()_2]] - `uses` [INFERRED]
+- [[trust_manager()_3]] - `uses` [INFERRED]
 - [[trust_manager.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

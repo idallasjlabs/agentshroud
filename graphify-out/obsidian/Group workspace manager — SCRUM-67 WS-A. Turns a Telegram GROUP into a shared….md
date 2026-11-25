@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "rationale"
-community: "GroupWorkspaceManager"
+community: "RBACConfig"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GroupWorkspaceManager
+  - community/RBACConfig
 ---
 
 # Group workspace manager — SCRUM-67 WS-A. Turns a Telegram GROUP into a shared…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[group_workspace.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GroupWorkspaceManager
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

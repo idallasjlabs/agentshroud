@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "WebProxy"
-location: "L103"
+community: "RateLimitGuard"
+location: "L108"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxy
+  - community/RateLimitGuard
 ---
 
 # .check()
 
 ## Connections
-- [[Check if request is within rate limit. Returns True if allowed.]] - `rationale_for` [EXTRACTED]
-- [[RateLimiter]] - `method` [EXTRACTED]
+- [[dot-_burst_limit()]] - `calls` [EXTRACTED]
+- [[dot-_sustained_limit()]] - `calls` [EXTRACTED]
+- [[RateLimitDecision]] - `calls` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
+- [[Record one request for (agent_id, tool) and decide allowblock. Fail-closed on…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxy
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

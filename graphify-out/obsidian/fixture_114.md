@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "IntelReportStore"
+community: "test_soc_realtime_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/IntelReportStore
+  - community/test_soc_realtime_coveragepy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-store()_1]] - `references` [EXTRACTED]
-- [[dot-store_dir()]] - `references` [EXTRACTED]
+- [[clean_auth_env()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/IntelReportStore
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

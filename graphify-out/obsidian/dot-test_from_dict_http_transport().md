@@ -12,7 +12,7 @@ tags:
 # .test_from_dict_http_transport()
 
 ## Connections
-- [[dot-from_dict()_5]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
 - [[TestConfigParsing]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

@@ -12,7 +12,7 @@ tags:
 # deep_security_test()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Comprehensive security integration test — tests every module with real payloads.]] - `rationale_for` [EXTRACTED]
 - [[ContainerSnapshot]] - `uses` [INFERRED]
 - [[ContextGuard]] - `uses` [INFERRED]
@@ -34,7 +34,7 @@ tags:
 - [[_pii()]] - `contains` [EXTRACTED]
 - [[atest()]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_6]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 - [[t_alert()]] - `indirect_call` [INFERRED]
 - [[t_audit()]] - `indirect_call` [INFERRED]
 - [[t_auth()]] - `indirect_call` [INFERRED]

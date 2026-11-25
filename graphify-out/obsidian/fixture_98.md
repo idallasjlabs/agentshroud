@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_service_routes.py"
+community: "test_soc_egress_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_service_routespy
+  - community/test_soc_egress_endpointspy
 ---
 
 # fixture
 
 ## Connections
-- [[secrets_dir()_1]] - `references` [EXTRACTED]
-- [[signed_descriptors()]] - `references` [EXTRACTED]
+- [[client()_16]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy
+#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

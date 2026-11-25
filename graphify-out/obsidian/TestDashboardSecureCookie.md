@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "GatewayConfig"
+community: "asyncio"
 location: "L299"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/asyncio
 ---
 
 # TestDashboardSecureCookie
@@ -16,4 +16,4 @@ tags:
 - [[Dashboard cookie secure flag is dynamic based on request scheme]] - `rationale_for` [EXTRACTED]
 - [[test_security_fixes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/asyncio

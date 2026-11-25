@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContainerSnapshot"
+community: "AlertDispatcher"
 location: "L850"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/AlertDispatcher
 ---
 
 # .test_canary_system_importable()
 
 ## Connections
-- [[TestAuditTrail]] - `method` [EXTRACTED]
+- [[TestAuditTrail_2]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/AlertDispatcher

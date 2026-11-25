@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "KillSwitchError"
+community: "soc/router.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchError
+  - community/soc/routerpy
 ---
 
 # RuntimeError
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[KillSwitchError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchError
+#graphify/code #graphify/EXTRACTED #community/soc/routerpy

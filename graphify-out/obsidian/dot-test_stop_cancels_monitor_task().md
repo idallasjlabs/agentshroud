@@ -15,7 +15,7 @@ tags:
 - [[ResourceGuard]] - `calls` [EXTRACTED]
 - [[ResourceLimits]] - `calls` [EXTRACTED]
 - [[TestResourceGuard]] - `method` [EXTRACTED]
-- [[asyncio_72]] - `references` [EXTRACTED]
+- [[asyncio_71]] - `references` [EXTRACTED]
 - [[stop() should cancel background monitor cleanly.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestResourceGuard

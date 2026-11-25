@@ -1,20 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/approvals.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "EdgeStore"
-location: "L129"
+community: "_patch_http_connection"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/_patch_http_connection
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeApprovals]] - `method` [EXTRACTED]
-- [[EdgeStore]] - `references` [EXTRACTED]
-- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
-- [[Notifier]] - `references` [EXTRACTED]
+- [[_FakeUnixSocket]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/_patch_http_connection

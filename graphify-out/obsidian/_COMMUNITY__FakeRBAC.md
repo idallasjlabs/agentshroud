@@ -9,9 +9,9 @@ members: 21
 
 ## Members
 - [[dot-__init__()_5]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-check_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-check_tool_permission()_1]] - code - gateway/tests/test_middleware_coverage.py
-- [[dot-get_user_role()_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-check_permission()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-check_tool_permission()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-get_user_role()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_context_guard_init_raise_recorded_and_logged()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_mm_fixture_without_failed_guards_attr_is_safe()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_non_critical_guard_failure_not_recorded()]] - code - gateway/tests/test_middleware_coverage.py

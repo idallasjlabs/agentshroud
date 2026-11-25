@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "code"
-community: "email_send"
+community: "AgentTarget"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/AgentTarget
 ---
 
 # .subject_not_empty()
 
 ## Connections
 - [[EmailSendRequest]] - `method` [EXTRACTED]
-- [[field_validator_1]] - `references` [EXTRACTED]
+- [[field_validator_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

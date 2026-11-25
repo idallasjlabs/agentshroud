@@ -12,9 +12,9 @@ tags:
 # Pull Request Generator (PR)
 
 ## Connections
-- [[Purpose_143]] - `contains` [EXTRACTED]
+- [[Purpose_145]] - `contains` [EXTRACTED]
 - [[Related Skills_75]] - `contains` [EXTRACTED]
-- [[Usage_85]] - `contains` [EXTRACTED]
+- [[Usage_86]] - `contains` [EXTRACTED]
 - [[openclawskillsi-prREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

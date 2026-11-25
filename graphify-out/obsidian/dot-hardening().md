@@ -15,6 +15,6 @@ tags:
 - [[ApprovalHardening]] - `calls` [EXTRACTED]
 - [[Create approval hardening instance for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
-- [[fixture_80]] - `references` [EXTRACTED]
+- [[fixture_85]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

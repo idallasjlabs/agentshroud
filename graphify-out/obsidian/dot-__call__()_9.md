@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/tests/test_alert_telegram_relay.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "AlertTelegramRelay"
-location: "L17"
+community: "test_edge_service_routes.py"
+location: "L426"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertTelegramRelay
+  - community/test_edge_service_routespy
 ---
 
 # .__call__()
 
 ## Connections
-- [[_SendSpy]] - `method` [EXTRACTED]
+- [[dot-_send_plain()]] - `calls` [EXTRACTED]
+- [[EdgeGuard]] - `method` [EXTRACTED]
+- [[replay()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

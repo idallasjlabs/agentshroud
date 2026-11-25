@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "middleware.py"
+community: "TestMemoryIntegrityMonitor"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # Test integrity database saves and loads correctly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_integrity_database_persistence()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

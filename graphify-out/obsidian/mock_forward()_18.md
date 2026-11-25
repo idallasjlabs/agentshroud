@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_rate_limit_failover.py"
+source_file: "gateway/tests/test_gemini_via_openai_path.py"
 type: "code"
-community: "is_quota_exhausted"
-location: "L79"
+community: "test_proxy_gemini_translation_failure_falls_through_gracefully"
+location: "L35"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/is_quota_exhausted
+  - community/test_proxy_gemini_translation_failure_falls_through_gracefully
 ---
 
 # mock_forward()
 
 ## Connections
-- [[test_proxy_failover_on_post_retry_429()]] - `indirect_call` [INFERRED]
+- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `indirect_call` [INFERRED]
+- [[test_proxy_rewrites_gemini_via_openai_path()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/is_quota_exhausted
+#graphify/code #graphify/INFERRED #community/test_proxy_gemini_translation_failure_falls_through_gracefully

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestSecurityPolicyProtection"
+community: "test_privilege_separation.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityPolicyProtection
+  - community/test_privilege_separationpy
 ---
 
 # TestSecurityPolicyProtection
@@ -19,4 +19,4 @@ tags:
 - [[Agent cannot modify security policies and behavioral instructions.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityPolicyProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

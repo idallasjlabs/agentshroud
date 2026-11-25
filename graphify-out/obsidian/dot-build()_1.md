@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/podman_engine.py"
+source_file: "gateway/runtime/engine.py"
 type: "code"
-community: "PodmanEngine"
-location: "L49"
+community: "DockerEngine"
+location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PodmanEngine
+  - community/DockerEngine
 ---
 
 # .build()
 
 ## Connections
-- [[PodmanEngine]] - `method` [EXTRACTED]
+- [[Build an image. Returns the image idtag.]] - `rationale_for` [EXTRACTED]
+- [[ContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PodmanEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "soc/router.py"
+community: "server.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/serverpy
 ---
 
 # Enum
 
 ## Connections
-- [[Action]] - `inherits` [EXTRACTED]
-- [[Resource]] - `inherits` [EXTRACTED]
-- [[rbac.py]] - `imports_from` [EXTRACTED]
+- [[_State]] - `inherits` [EXTRACTED]
+- [[server.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/serverpy

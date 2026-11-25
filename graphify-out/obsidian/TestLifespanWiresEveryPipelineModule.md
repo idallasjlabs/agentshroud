@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "code"
-community: "test_docs_accuracy.py"
+community: "MiddlewareManager"
 location: "L261"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/MiddlewareManager
 ---
 
 # TestLifespanWiresEveryPipelineModule
@@ -17,4 +17,4 @@ tags:
 - [[SecurityPipeline]] - `uses` [INFERRED]
 - [[test_docs_accuracy.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "TestOutboundClassifierHelpers"
+community: "._extract_first_egress_target"
 location: "L1126"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestOutboundClassifierHelpers
+  - community/_extract_first_egress_target
 ---
 
 # Detect plain NO_REPLY sentinel with light punctuation wrapping.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_is_no_reply_token()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestOutboundClassifierHelpers
+#graphify/rationale #graphify/EXTRACTED #community/_extract_first_egress_target

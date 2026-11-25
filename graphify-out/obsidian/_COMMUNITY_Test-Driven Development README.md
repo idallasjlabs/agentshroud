@@ -24,8 +24,8 @@ members: 19
 - [[Test-Driven Development README]] - document - .agents/skills/i-tdd/README.md
 - [[UI Expert (UI)]] - document - .agents/skills/i-ui/SKILL.md
 - [[UX Skill (i-ux, external)]] - concept - .agents/skills/i-ux/SKILL.md
-- [[Usage_117]] - document - .agents/skills/i-tdd/README.md
-- [[Usage_118]] - document - docker/config/hermes/skills/i-tdd/README.md
+- [[Usage_118]] - document - .agents/skills/i-tdd/README.md
+- [[Usage_119]] - document - docker/config/hermes/skills/i-tdd/README.md
 - [[hermesskillsi-tddREADME]] - document - docker/config/hermes/skills/i-tdd/README.md
 
 ## Live Query (requires Dataview plugin)

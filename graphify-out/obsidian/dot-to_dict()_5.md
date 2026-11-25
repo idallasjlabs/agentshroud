@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/soc_correlation.py"
 type: "code"
-community: "ContainerSnapshot"
-location: "L35"
+community: "soc_correlation.py"
+location: "L44"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/soc_correlationpy
 ---
 
 # .to_dict()
 
 ## Connections
-- [[dot-config_hash()]] - `calls` [EXTRACTED]
-- [[ContainerSnapshot]] - `method` [EXTRACTED]
+- [[Any_28]] - `references` [EXTRACTED]
+- [[CorrelationSummary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/soc_correlationpy

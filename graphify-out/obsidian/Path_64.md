@@ -11,6 +11,6 @@ tags:
 # Path
 
 ## Connections
-- [[dot-_can_create_directory()]] - `references` [EXTRACTED]
+- [[dot-__init__()_187]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/UserSessionManager

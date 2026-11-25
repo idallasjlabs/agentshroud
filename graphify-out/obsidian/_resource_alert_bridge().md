@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/ingest_api/lifespan.py"
+source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "lifespan"
-location: "L1200"
+community: "TestResourceGuardAlertBridge"
+location: "L65"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespan
+  - community/TestResourceGuardAlertBridge
 ---
 
 # _resource_alert_bridge()
 
 ## Connections
-- [[lifespan()]] - `indirect_call` [INFERRED]
+- [[dot-_build_bridge()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/lifespan
+#graphify/code #graphify/INFERRED #community/TestResourceGuardAlertBridge

@@ -13,7 +13,7 @@ members: 6
 - [[dot-test_weighted_subscore_empty_map()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[dot-test_weighted_subscore_partial()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestComplianceMaths]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[parametrize_11]] - code
+- [[parametrize_9]] - code
 
 ## Live Query (requires Dataview plugin)
 

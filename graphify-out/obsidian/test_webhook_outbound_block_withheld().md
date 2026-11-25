@@ -16,7 +16,7 @@ tags:
 - [[WebhookReceiver]] - `uses` [INFERRED]
 - [[_PassInboundPipeline]] - `calls` [EXTRACTED]
 - [[_StubForwarder]] - `calls` [EXTRACTED]
-- [[asyncio_50]] - `references` [EXTRACTED]
+- [[asyncio_51]] - `references` [EXTRACTED]
 - [[blocking_outbound()]] - `indirect_call` [INFERRED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 

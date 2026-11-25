@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "telegram_proxy.py"
+community: "test_differential_pii_detector.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/test_differential_pii_detectorpy
 ---
 
 # fixture
 
 ## Connections
-- [[teams()_2]] - `references` [EXTRACTED]
+- [[default_config()]] - `references` [EXTRACTED]
+- [[detector()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/test_differential_pii_detectorpy

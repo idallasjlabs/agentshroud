@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/progressive_trust_config.py"
 type: "rationale"
-community: "ProgressiveTrustConfig"
+community: "TrustLevel"
 location: "L35"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/TrustLevel
 ---
 
 # Trust levels from untrusted to verified.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TrustLevel]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/rationale #graphify/EXTRACTED #community/TrustLevel

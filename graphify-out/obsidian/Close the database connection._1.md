@@ -12,6 +12,6 @@ tags:
 # Close the database connection.
 
 ## Connections
-- [[dot-close()_15]] - `rationale_for` [EXTRACTED]
+- [[dot-close()_14]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AuditStore

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustManager"
+community: "TrustConfig"
 location: "L563"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustConfig
 ---
 
 # .test_incident_on_one_bot_propagates_to_all_mesh_peers()
@@ -17,4 +17,4 @@ tags:
 - [[End-to-end a real incident on bot A decays trust on bots B and C in a 3-bot…]] - `rationale_for` [EXTRACTED]
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

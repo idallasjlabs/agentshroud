@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "Any"
+community: "KillSwitchMonitor"
 location: "L582"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/KillSwitchMonitor
 ---
 
 # ._log_heartbeat_result()
@@ -17,4 +17,4 @@ tags:
 - [[KillSwitchMonitor]] - `method` [EXTRACTED]
 - [[Log heartbeat result to file.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/KillSwitchMonitor

@@ -22,7 +22,7 @@ tags:
 - [[Operating Rules (Non-Negotiable)_7]] - `contains` [EXTRACTED]
 - [[Resource Inventory CSV Schema]] - `contains` [EXTRACTED]
 - [[Tagging Standard]] - `contains` [EXTRACTED]
-- [[Workflow_2]] - `contains` [EXTRACTED]
+- [[Workflow]] - `contains` [EXTRACTED]
 - [[openclawskillsi-awsSKILL]] - `contains` [EXTRACTED]
 - [[openclawskillsi-crSKILL]] - `contains` [EXTRACTED]
 

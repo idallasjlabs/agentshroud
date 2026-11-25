@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_guard.py"
 type: "rationale"
-community: "lifespan.py"
+community: "PromptGuard"
 location: "L639"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PromptGuard
 ---
 
 # Strip injected fake delimiters and return sanitized message. Called when…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-reanchor_delimiters()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/PromptGuard

@@ -1,22 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/oauth_service.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "EdgeOAuthService"
-location: "L67"
+community: "test_edge_pipeline.py"
+location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeOAuthService
+  - community/test_edge_pipelinepy
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_127]] - `calls` [EXTRACTED]
-- [[EdgeOAuthService]] - `method` [EXTRACTED]
-- [[EdgeStore]] - `references` [EXTRACTED]
-- [[Notify]] - `references` [EXTRACTED]
-- [[TokenService]] - `references` [EXTRACTED]
-- [[VendorProfile]] - `references` [EXTRACTED]
+- [[Clock]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeOAuthService
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

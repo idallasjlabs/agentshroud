@@ -12,14 +12,14 @@ tags:
 # SOCWebSocketHandler
 
 ## Connections
-- [[dot-__init__()_67]] - `method` [EXTRACTED]
+- [[dot-__init__()_57]] - `method` [EXTRACTED]
 - [[dot-_event_fan_out()]] - `method` [EXTRACTED]
 - [[dot-_handler()]] - `references` [EXTRACTED]
 - [[dot-_keepalive_loop()]] - `method` [EXTRACTED]
 - [[dot-_make_handler()]] - `references` [EXTRACTED]
 - [[dot-_matches()]] - `references` [EXTRACTED]
 - [[dot-_send_event()]] - `method` [EXTRACTED]
-- [[dot-run()_2]] - `method` [EXTRACTED]
+- [[dot-run()_1]] - `method` [EXTRACTED]
 - [[dot-test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
 - [[Manages a single wssoc client connection.]] - `rationale_for` [EXTRACTED]
 - [[TestEdgeEventOverWebSocket]] - `uses` [INFERRED]

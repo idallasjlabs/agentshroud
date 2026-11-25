@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "RateLimitGuard"
+community: "ConfigIntegrityMonitor"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RateLimitGuard
+  - community/ConfigIntegrityMonitor
 ---
 
 # fixture
 
 ## Connections
-- [[clock()]] - `references` [EXTRACTED]
+- [[dirs()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RateLimitGuard
+#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor

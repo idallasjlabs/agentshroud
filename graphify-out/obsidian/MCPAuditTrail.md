@@ -12,8 +12,8 @@ tags:
 # MCPAuditTrail
 
 ## Connections
-- [[dot-__init__()_62]] - `references` [EXTRACTED]
-- [[dot-__init__()_65]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `references` [EXTRACTED]
+- [[dot-__init__()_54]] - `method` [EXTRACTED]
 - [[dot-__len__()]] - `method` [EXTRACTED]
 - [[dot-_compute_chain_hash()]] - `method` [EXTRACTED]
 - [[dot-entries()]] - `method` [EXTRACTED]

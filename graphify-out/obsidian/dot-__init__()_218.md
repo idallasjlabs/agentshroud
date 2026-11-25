@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "test_edge_fuzz.py"
-location: "L51"
+community: "test_dashboard_endpoints.py"
+location: "L142"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_fuzzpy
+  - community/test_dashboard_endpointspy
 ---
 
 # .__init__()
 
 ## Connections
-- [[LabSearch]] - `method` [EXTRACTED]
+- [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

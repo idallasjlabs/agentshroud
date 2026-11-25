@@ -12,13 +12,13 @@ tags:
 # MCPPolicyAction
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
-- [[Enum_33]] - `inherits` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
+- [[Enum_32]] - `inherits` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `uses` [INFERRED]
 - [[TestDefaultPolicyNoMcpServers]] - `uses` [INFERRED]
 - [[The three terminal policy outcomes for an MCP tool call.]] - `rationale_for` [EXTRACTED]
 - [[mcp_policy.py]] - `contains` [EXTRACTED]
-- [[str_18]] - `inherits` [EXTRACTED]
+- [[str_15]] - `inherits` [EXTRACTED]
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - `uses` [INFERRED]
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - `uses` [INFERRED]
 - [[test_critical_tool_requires_approval()]] - `uses` [INFERRED]

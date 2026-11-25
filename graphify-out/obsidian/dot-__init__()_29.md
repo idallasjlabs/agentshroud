@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/security/key_vault.py"
 type: "code"
-community: "make_proxy"
-location: "L445"
+community: "KeyVault"
+location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_proxy
+  - community/KeyVault
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeApprovalQueue]] - `method` [EXTRACTED]
+- [[KeyVault]] - `method` [EXTRACTED]
+- [[KeyVaultConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_proxy
+#graphify/code #graphify/EXTRACTED #community/KeyVault

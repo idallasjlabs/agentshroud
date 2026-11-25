@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
+source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "test_ws_e_rt2_inbound_encoding.py"
-location: "L219"
+community: "TestConcurrency"
+location: "L279"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_ws_e_rt2_inbound_encodingpy
+  - graphify/INFERRED
+  - community/TestConcurrency
 ---
 
 # analyze()
 
 ## Connections
-- [[test_inbound_encoding_detector_error_fails_closed()]] - `contains` [EXTRACTED]
+- [[dot-test_context_guard_session_isolation_under_load()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy
+#graphify/code #graphify/INFERRED #community/TestConcurrency

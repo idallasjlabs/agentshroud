@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: ".test_common_tools_not_filtered"
+community: "TestOutboundInfoFilter"
 location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_common_tools_not_filtered
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_common_tools_not_filtered()
@@ -15,4 +15,4 @@ tags:
 - [[Test that common English words are not filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_common_tools_not_filtered
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

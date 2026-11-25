@@ -1,20 +1,19 @@
 ---
-source_file: "scripts/export-bot-conversations.py"
+source_file: "scripts/sync-cve-registry.py"
 type: "code"
-community: "export-bot-conversations.py"
-location: "L232"
+community: "sync-cve-registry.py"
+location: "L692"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/export-bot-conversationspy
+  - community/sync-cve-registrypy
 ---
 
 # main()
 
 ## Connections
-- [[_parse_since()_1]] - `calls` [EXTRACTED]
-- [[export-bot-conversations.py]] - `contains` [EXTRACTED]
-- [[export_hermes()]] - `calls` [EXTRACTED]
-- [[export_openclaw()]] - `calls` [EXTRACTED]
+- [[_run_nvd_sync()]] - `calls` [EXTRACTED]
+- [[run_ghsa_sync()]] - `calls` [EXTRACTED]
+- [[sync-cve-registry.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/export-bot-conversationspy
+#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

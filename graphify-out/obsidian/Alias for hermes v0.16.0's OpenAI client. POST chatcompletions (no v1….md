@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "rationale"
-community: "test_chat_completions_alias.py"
+community: "app"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_chat_completions_aliaspy
+  - community/app
 ---
 
 # Alias for hermes v0.16.0's OpenAI client. POST /chat/completions (no /v1…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_chat_completions_alias.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_chat_completions_aliaspy
+#graphify/rationale #graphify/EXTRACTED #community/app

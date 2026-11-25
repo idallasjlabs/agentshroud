@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TelegramAPIProxy"
 location: "L7941"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TelegramAPIProxy
 ---
 
 # ._handle_addtogroup_command()
@@ -20,4 +20,4 @@ tags:
 - [[format_unknown_group()]] - `calls` [EXTRACTED]
 - [[persist_group_member_add()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

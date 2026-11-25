@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_chain.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # test_audit_chain.py
@@ -20,9 +20,9 @@ tags:
 - [[TestConcurrentWrites]] - `contains` [EXTRACTED]
 - [[TestRetention]] - `contains` [EXTRACTED]
 - [[TestTamperDetection]] - `contains` [EXTRACTED]
-- [[asyncio_36]] - `imports` [EXTRACTED]
+- [[asyncio_38]] - `imports` [EXTRACTED]
 - [[ingest_apiconfig.py]] - `imports_from` [EXTRACTED]
 - [[ledger()]] - `contains` [EXTRACTED]
 - [[ledger.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

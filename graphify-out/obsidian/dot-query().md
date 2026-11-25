@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L206"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # .query()
@@ -16,4 +16,4 @@ tags:
 - [[LedgerQueryResponse]] - `references` [EXTRACTED]
 - [[Query ledger entries with pagination and filters Args page Page number…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

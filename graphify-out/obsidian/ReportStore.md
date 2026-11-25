@@ -12,7 +12,7 @@ tags:
 # ReportStore
 
 ## Connections
-- [[dot-__init__()_10]] - `method` [EXTRACTED]
+- [[dot-__init__()_8]] - `method` [EXTRACTED]
 - [[dot-_check_size()]] - `method` [EXTRACTED]
 - [[dot-_enforce_count_cap()]] - `method` [EXTRACTED]
 - [[dot-_path()]] - `method` [EXTRACTED]

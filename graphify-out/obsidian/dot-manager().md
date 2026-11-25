@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_key_rotation.py"
+source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "KeyRotationManager"
-location: "L162"
+community: "PathIsolationManager"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/PathIsolationManager
 ---
 
 # .manager()
 
 ## Connections
-- [[Create a manager with test configuration.]] - `rationale_for` [EXTRACTED]
-- [[KeyRotationConfig]] - `calls` [EXTRACTED]
-- [[KeyRotationManager]] - `calls` [EXTRACTED]
-- [[TestKeyRotationManager]] - `method` [EXTRACTED]
-- [[fixture_13]] - `references` [EXTRACTED]
+- [[Create path isolation manager for testing.]] - `rationale_for` [EXTRACTED]
+- [[PathIsolationManager]] - `calls` [EXTRACTED]
+- [[TestPathIsolationManager]] - `method` [EXTRACTED]
+- [[fixture_79]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

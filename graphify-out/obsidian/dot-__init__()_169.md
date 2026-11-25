@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/alert_dispatcher.py"
+source_file: "gateway/inbound_edge/edge_jwt.py"
 type: "code"
-community: "AlertDispatcher"
-location: "L38"
+community: "test_edge_e2e_sdk.py"
+location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AlertDispatcher
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[AlertDispatcher]] - `method` [EXTRACTED]
-- [[Path_57]] - `references` [EXTRACTED]
+- [[dot-__init__()_170]] - `calls` [EXTRACTED]
+- [[TokenRejected]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AlertDispatcher
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

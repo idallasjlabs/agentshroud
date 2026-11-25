@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/proxy/slack_proxy.py"
+source_file: "gateway/proxy/webhook_receiver.py"
 type: "code"
-community: "SlackAPIProxy"
-location: "L435"
+community: "WebhookReceiver"
+location: "L363"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SlackAPIProxy
+  - community/WebhookReceiver
 ---
 
 # .get_stats()
 
 ## Connections
-- [[SlackAPIProxy]] - `method` [EXTRACTED]
+- [[Any_68]] - `references` [EXTRACTED]
+- [[WebhookReceiver]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TrustManager"
+community: "TestConcurrency"
 location: "L219"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestConcurrency
 ---
 
 # Rapid trust score updates shouldn't corrupt state.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_trust_manager_rapid_updates()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/TestConcurrency

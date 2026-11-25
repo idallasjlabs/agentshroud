@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "code"
-community: "ScanResult"
+community: "WebContentScanner"
 location: "L212"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/WebContentScanner
 ---
 
 # .scan()
@@ -19,7 +19,7 @@ tags:
 - [[dot-_scan_xml_dtd()]] - `calls` [EXTRACTED]
 - [[dot-_scan_zero_width()]] - `calls` [EXTRACTED]
 - [[Scan content for security issues. Args content The web content to scan.…]] - `rationale_for` [EXTRACTED]
-- [[ScanResult_1]] - `calls` [EXTRACTED]
+- [[ScanResult_2]] - `calls` [EXTRACTED]
 - [[WebContentScanner]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/WebContentScanner

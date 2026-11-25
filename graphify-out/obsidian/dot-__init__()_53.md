@@ -1,17 +1,23 @@
 ---
-source_file: "gateway/cli/client.py"
+source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "SCLClient"
-location: "L17"
+community: "test_mcp_proxy.py"
+location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SCLClient
+  - community/test_mcp_proxypy
 ---
 
 # .__init__()
 
 ## Connections
-- [[SCLClient]] - `method` [EXTRACTED]
+- [[ConnectionPool]] - `calls` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `references` [EXTRACTED]
+- [[MCPAuditTrail]] - `references` [EXTRACTED]
+- [[MCPInspector]] - `references` [EXTRACTED]
+- [[MCPPermissionManager]] - `references` [EXTRACTED]
+- [[MCPProxy]] - `method` [EXTRACTED]
+- [[MCPProxyConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SCLClient
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

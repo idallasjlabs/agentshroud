@@ -1,12 +1,12 @@
 ---
 source_file: "voice_gateway/server.py"
 type: "code"
-community: "server.py"
+community: "_call_llm_stream"
 location: "L713"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/serverpy
+  - community/_call_llm_stream
 ---
 
 # _call_llm_stream()
@@ -24,4 +24,4 @@ tags:
 - [[test_voice_gateway.py]] - `imports` [EXTRACTED]
 - [[voice_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/serverpy
+#graphify/code #graphify/EXTRACTED #community/_call_llm_stream

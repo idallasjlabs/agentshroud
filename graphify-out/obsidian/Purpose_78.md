@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/spacy.md"
+source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
 type: "document"
-community: "spaCy"
-location: "L16"
+community: "port_manager.py"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/spaCy
+  - community/port_managerpy
 ---
 
 # Purpose
 
 ## Connections
-- [[spaCy_1]] - `contains` [EXTRACTED]
+- [[port_manager.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/spaCy
+#graphify/document #graphify/EXTRACTED #community/port_managerpy

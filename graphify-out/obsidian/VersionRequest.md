@@ -12,7 +12,7 @@ tags:
 # VersionRequest
 
 ## Connections
-- [[BaseModel_12]] - `inherits` [EXTRACTED]
+- [[BaseModel_13]] - `inherits` [EXTRACTED]
 - [[Request for version change operations.]] - `rationale_for` [EXTRACTED]
 - [[downgrade_version()]] - `references` [EXTRACTED]
 - [[review_version()]] - `references` [EXTRACTED]

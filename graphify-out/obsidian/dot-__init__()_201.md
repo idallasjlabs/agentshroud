@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/security/differential_pii_detector.py"
+source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "DifferentialPIIDetector"
-location: "L314"
+community: "deep_security_test"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DifferentialPIIDetector
+  - community/deep_security_test
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_init_presidio()_1]] - `calls` [EXTRACTED]
-- [[DifferentialPIIConfig]] - `calls` [EXTRACTED]
-- [[DifferentialPIIDetector]] - `method` [EXTRACTED]
+- [[dot-__init__()_201]] - `calls` [EXTRACTED]
+- [[dot-_compile_patterns()_1]] - `calls` [EXTRACTED]
+- [[LogSanitizer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DifferentialPIIDetector
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

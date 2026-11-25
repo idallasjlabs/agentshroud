@@ -12,7 +12,7 @@ tags:
 # .validate()
 
 ## Connections
-- [[Any_12]] - `references` [EXTRACTED]
+- [[Any_16]] - `references` [EXTRACTED]
 - [[CredentialValidator]] - `method` [EXTRACTED]
 - [[Validate a credential. Returns tuple (is_valid, message)]] - `rationale_for` [EXTRACTED]
 

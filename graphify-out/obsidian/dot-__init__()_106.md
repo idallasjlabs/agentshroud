@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/canary_tripwire.py"
+source_file: "gateway/tests/test_web_proxy_security.py"
 type: "code"
-community: "CanaryTripwire"
-location: "L45"
+community: "TestWebProxySecurityIntegration"
+location: "L39"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CanaryTripwire
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .__init__()
 
 ## Connections
-- [[CanaryConfig_1]] - `calls` [EXTRACTED]
-- [[CanaryTripwire]] - `method` [EXTRACTED]
+- [[MockURLResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CanaryTripwire
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

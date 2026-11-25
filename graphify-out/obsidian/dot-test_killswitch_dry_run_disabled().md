@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "SubagentMonitor"
+community: "KillSwitchConfig"
 location: "L92"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SubagentMonitor
+  - community/KillSwitchConfig
 ---
 
 # .test_killswitch_dry_run_disabled()
@@ -16,4 +16,4 @@ tags:
 - [[KillSwitchConfig]] - `calls` [EXTRACTED]
 - [[TestModuleConfigDefaults]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SubagentMonitor
+#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig

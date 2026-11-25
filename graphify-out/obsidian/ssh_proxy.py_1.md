@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Configured Hosts]] - `contains` [EXTRACTED]
 - [[Key Class `SSHProxy`]] - `contains` [EXTRACTED]
-- [[Purpose_69]] - `contains` [EXTRACTED]
-- [[Related Notes_32]] - `contains` [EXTRACTED]
+- [[Purpose_71]] - `contains` [EXTRACTED]
+- [[Related Notes_34]] - `contains` [EXTRACTED]
 - [[Responsibilities_44]] - `contains` [EXTRACTED]
 - [[Security Notes]] - `contains` [EXTRACTED]
 - [[ssh_proxy.py]] - `contains` [EXTRACTED]

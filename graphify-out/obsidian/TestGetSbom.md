@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_sbom"
+community: "get_trivy_summary"
 location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_sbom
+  - community/get_trivy_summary
 ---
 
 # TestGetSbom
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_returns_none_when_no_dir()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_sbom
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

@@ -35,9 +35,9 @@ members: 42
 - [[Skill kaizen_7]] - document - docker/config/openclaw/skills/i-kaizen/SKILL.md
 - [[Skill kanban_7]] - document - docker/config/openclaw/skills/i-kanban/SKILL.md
 - [[System Prompt_47]] - document - docker/config/openclaw/skills/i-hermes/SKILL.md
-- [[Usage_122]] - document - docker/config/openclaw/skills/i-mac/README.md
-- [[Usage_123]] - document - docker/config/openclaw/skills/i-mc/README.md
-- [[Usage_124]] - document - docker/config/openclaw/skills/i-mcpm/README.md
+- [[Usage_123]] - document - docker/config/openclaw/skills/i-mac/README.md
+- [[Usage_124]] - document - docker/config/openclaw/skills/i-mc/README.md
+- [[Usage_125]] - document - docker/config/openclaw/skills/i-mcpm/README.md
 - [[macOS System Administrator (MAC)_1]] - document - docker/config/openclaw/skills/i-mac/README.md
 - [[openclawskillsi-cdSKILL]] - document - docker/config/openclaw/skills/i-cd/SKILL.md
 - [[openclawskillsi-ciSKILL]] - document - docker/config/openclaw/skills/i-ci/SKILL.md
@@ -74,9 +74,9 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_Browser — Secure Browser Automation_4]]
 - 1 edge to [[_COMMUNITY_iCloud Services_1]]
 - 1 edge to [[_COMMUNITY_Skill Technical Illustrator (TI)_2]]
-- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_2]]
+- 1 edge to [[_COMMUNITY_Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_1]]
 - 1 edge to [[_COMMUNITY_Skill MCP Doctor (MCPM-DOCTOR)_1]]
-- 1 edge to [[_COMMUNITY_AgentShroud Red Team Adversarial Tester_1]]
+- 1 edge to [[_COMMUNITY_Test-Driven Development README_1]]
 - 1 edge to [[_COMMUNITY_Atlas — Curriculum Architect_7]]
 - 1 edge to [[_COMMUNITY_Skill Audit Branch (AB) — Merge Regression Detection_7]]
 - 1 edge to [[_COMMUNITY_Technical Specification_7]]

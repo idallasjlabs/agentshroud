@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_audit_export.py"
+source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "AuditStore"
-location: "L303"
+community: "TestFileSandbox"
+location: "L693"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AuditStore
+  - community/TestFileSandbox
 ---
 
 # .store()
 
 ## Connections
-- [[AuditStore]] - `calls` [EXTRACTED]
-- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
-- [[fixture_116]] - `references` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestCryptography]] - `method` [EXTRACTED]
+- [[fixture_121]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AuditStore
+#graphify/code #graphify/EXTRACTED #community/TestFileSandbox

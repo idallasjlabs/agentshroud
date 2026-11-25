@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestParseModeStrippedAfterPIIRedaction"
-location: "L4437"
+community: "_make_multipart_body"
+location: "L5124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseModeStrippedAfterPIIRedaction
+  - community/_make_multipart_body
 ---
 
 # process_outbound()
 
 ## Connections
-- [[dot-test_parse_mode_preserved_and_placeholder_escaped_pipeline_path()]] - `contains` [EXTRACTED]
+- [[dot-test_multipart_owner_exempt_from_fail_closed()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseModeStrippedAfterPIIRedaction
+#graphify/code #graphify/EXTRACTED #community/_make_multipart_body

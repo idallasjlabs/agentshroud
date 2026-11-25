@@ -12,7 +12,7 @@ tags:
 # server.py
 
 ## Connections
-- [[Enum_2]] - `imports_from` [EXTRACTED]
+- [[Enum_1]] - `imports_from` [EXTRACTED]
 - [[FastAPI]] - `imports_from` [EXTRACTED]
 - [[Voice Gateway — FastAPI app exposing GET health and WebSocket voice. Per-…]] - `rationale_for` [EXTRACTED]
 - [[_State]] - `contains` [EXTRACTED]
@@ -36,7 +36,7 @@ tags:
 - [[_warm()]] - `contains` [EXTRACTED]
 - [[firmware_bin()]] - `contains` [EXTRACTED]
 - [[health()]] - `contains` [EXTRACTED]
-- [[httpx]] - `imports` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
 - [[stt.py]] - `imports_from` [EXTRACTED]
 - [[test_voice_gateway.py]] - `imports_from` [EXTRACTED]
 - [[test_voice_latency_guard.py]] - `imports_from` [EXTRACTED]

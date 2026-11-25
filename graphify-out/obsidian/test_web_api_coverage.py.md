@@ -41,8 +41,8 @@ tags:
 - [[_module_state_guard()]] - `contains` [EXTRACTED]
 - [[_resolve_bot_container()]] - `imports` [EXTRACTED]
 - [[api.py_2]] - `imports_from` [EXTRACTED]
-- [[client()_6]] - `contains` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[client()_10]] - `contains` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_engine

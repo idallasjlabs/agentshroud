@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy_coverage.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "test_http_proxy_coverage.py"
-location: "L261"
+community: "test_telegram_proxy_outbound.py"
+location: "L3698"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_http_proxy_coveragepy
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # log_external_decision()
 
 ## Connections
-- [[test_bypass_logging_failure_does_not_block_tunnel()]] - `contains` [EXTRACTED]
+- [[dot-test_web_search_log_called_with_correct_params()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_http_proxy_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

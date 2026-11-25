@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "test_llm_proxy.py"
-location: "L797"
+community: "lifespan.py"
+location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxypy
+  - community/lifespanpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_HeadFakeResponse]] - `method` [EXTRACTED]
+- [[RateLimiter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxypy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

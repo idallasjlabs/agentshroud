@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ReportIntegrityError"
+community: "SecureBrowser"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ReportIntegrityError
+  - community/SecureBrowser
 ---
 
 # Exception
 
 ## Connections
-- [[ReportIntegrityError]] - `inherits` [EXTRACTED]
+- [[SecurityError]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ReportIntegrityError
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

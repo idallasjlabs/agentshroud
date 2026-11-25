@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L940"
+community: "_call_llm_stream"
+location: "L623"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/_call_llm_stream
 ---
 
 # mock_stream()
 
 ## Connections
-- [[_mock_stream_resp()]] - `calls` [EXTRACTED]
-- [[_sse_body()]] - `calls` [EXTRACTED]
-- [[test_ws_full_utterance_state_sequence()]] - `contains` [EXTRACTED]
+- [[_mock_llm_stream_resp()]] - `calls` [EXTRACTED]
+- [[test_call_llm_stream_skips_malformed_chunks()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/_call_llm_stream

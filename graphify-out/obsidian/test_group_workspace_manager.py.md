@@ -36,6 +36,6 @@ tags:
 - [[session_manager.py]] - `imports_from` [EXTRACTED]
 - [[shared_memory()]] - `contains` [EXTRACTED]
 - [[shared_memory.py]] - `imports_from` [EXTRACTED]
-- [[teams()_1]] - `contains` [EXTRACTED]
+- [[teams()_2]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

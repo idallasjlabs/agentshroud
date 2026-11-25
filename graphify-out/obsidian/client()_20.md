@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_version_routes.py"
+source_file: "gateway/tests/test_dashboard_endpoints.py"
 type: "code"
-community: "TestVersionRoutes"
-location: "L28"
+community: "test_dashboard_endpoints.py"
+location: "L25"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestVersionRoutes
+  - community/test_dashboard_endpointspy
 ---
 
 # client()
 
 ## Connections
-- [[fixture_136]] - `references` [EXTRACTED]
-- [[test_version_routes.py]] - `contains` [EXTRACTED]
+- [[app()]] - `indirect_call` [INFERRED]
+- [[fixture_131]] - `references` [EXTRACTED]
+- [[lifespan()]] - `calls` [INFERRED]
+- [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestVersionRoutes
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Create temporary rules file for testing.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
-- [[fixture_52]] - `references` [EXTRACTED]
+- [[fixture_54]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/fixture

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/resource_guard.py"
 type: "code"
-community: "._monitor_resources"
+community: "._get_disk_io_stats"
 location: "L136"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_monitor_resources
+  - community/_get_disk_io_stats
 ---
 
 # ._monitor_resources()
@@ -18,4 +18,4 @@ tags:
 - [[Background task to monitor resource usage and trigger alerts.]] - `rationale_for` [EXTRACTED]
 - [[ResourceGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_monitor_resources
+#graphify/code #graphify/EXTRACTED #community/_get_disk_io_stats

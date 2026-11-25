@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "asyncio"
-location: "L8792"
+community: "test_llm_proxy_failover.py"
+location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/test_llm_proxy_failoverpy
 ---
 
 # read()
 
 ## Connections
-- [[dot-test_forward_file_download_aborts_at_size_limit()]] - `contains` [EXTRACTED]
+- [[test_forward_request_slow_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

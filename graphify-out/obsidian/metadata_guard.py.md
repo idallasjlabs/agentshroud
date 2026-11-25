@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "MetadataGuard"
+community: "middleware.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/middlewarepy
 ---
 
 # metadata_guard.py
@@ -18,4 +18,4 @@ tags:
 - [[middleware.py_2]] - `imports_from` [EXTRACTED]
 - [[test_metadata_guard.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

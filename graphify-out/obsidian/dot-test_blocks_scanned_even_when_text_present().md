@@ -16,7 +16,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestMultiFieldOutboundScanning]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
-- [[asyncio_38]] - `references` [EXTRACTED]
-- [[scan()_2]] - `indirect_call` [INFERRED]
+- [[asyncio_40]] - `references` [EXTRACTED]
+- [[scan()_1]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

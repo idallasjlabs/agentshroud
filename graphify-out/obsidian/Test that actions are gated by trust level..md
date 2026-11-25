@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "rationale"
-community: "TrustLevel"
+community: "TrustConfig"
 location: "L99"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/TrustConfig
 ---
 
 # Test that actions are gated by trust level.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestActionGating]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustLevel
+#graphify/rationale #graphify/EXTRACTED #community/TrustConfig

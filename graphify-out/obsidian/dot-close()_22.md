@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/token_validation.py"
+source_file: "gateway/tests/test_http_proxy.py"
 type: "code"
-community: "TokenValidator"
-location: "L151"
+community: "HTTPConnectProxy"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TokenValidator
+  - community/HTTPConnectProxy
 ---
 
 # .close()
 
 ## Connections
-- [[Close the audit-log database connection.]] - `rationale_for` [EXTRACTED]
-- [[TokenValidator]] - `method` [EXTRACTED]
+- [[_DummyTargetWriter_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TokenValidator
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

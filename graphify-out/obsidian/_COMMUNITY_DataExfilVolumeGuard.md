@@ -8,11 +8,11 @@ members: 40
 **Members:** 40 nodes
 
 ## Members
-- [[dot-__init__()_107]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-__init__()_99]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-_size()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-get_stats()_6]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-get_stats()_7]] - code - gateway/security/data_exfil_volume_guard.py
 - [[dot-observe()]] - code - gateway/security/data_exfil_volume_guard.py
-- [[dot-reset_session()]] - code - gateway/security/data_exfil_volume_guard.py
+- [[dot-reset_session()_1]] - code - gateway/security/data_exfil_volume_guard.py
 - [[A blocked (undelivered) response must not consume the session budget, otherwise…]] - rationale - gateway/tests/test_data_exfil_volume_guard.py
 - [[Clear cumulative + baseline state for a session (e.g. on new session).]] - rationale - gateway/security/data_exfil_volume_guard.py
 - [[Configuration for class`DataExfilVolumeGuard`.]] - rationale - gateway/security/data_exfil_volume_guard.py
@@ -28,7 +28,7 @@ members: 40
 - [[VolumeVerdict]] - code - gateway/security/data_exfil_volume_guard.py
 - [[_SessionState]] - code - gateway/security/data_exfil_volume_guard.py
 - [[_make_pipeline()_3]] - code - gateway/tests/test_data_exfil_volume_guard.py
-- [[asyncio_43]] - code
+- [[asyncio_44]] - code
 - [[data_exfil_volume_guard.py]] - code - gateway/security/data_exfil_volume_guard.py
 - [[test_accepts_str_and_bytes()]] - code - gateway/tests/test_data_exfil_volume_guard.py
 - [[test_adaptive_floor_prevents_noise_blocks()]] - code - gateway/tests/test_data_exfil_volume_guard.py
@@ -58,7 +58,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
+- 3 edges to [[_COMMUNITY_PIISanitizer]]
 - 2 edges to [[_COMMUNITY_lifespan.py]]
 - 2 edges to [[_COMMUNITY_lifespan]]
 

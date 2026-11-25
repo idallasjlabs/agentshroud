@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[MCP Tools Usage (MCPM)_1]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Purpose_123]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Purpose_125]] - document - docker/config/hermes/skills/i-mcpm/README.md
 - [[Related Skills_55]] - document - docker/config/hermes/skills/i-mcpm/README.md
-- [[Usage_65]] - document - docker/config/hermes/skills/i-mcpm/README.md
+- [[Usage_66]] - document - docker/config/hermes/skills/i-mcpm/README.md
 - [[hermesskillsi-mcpmREADME]] - document - docker/config/hermes/skills/i-mcpm/README.md
 
 ## Live Query (requires Dataview plugin)

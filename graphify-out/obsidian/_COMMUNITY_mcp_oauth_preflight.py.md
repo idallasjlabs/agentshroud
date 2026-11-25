@@ -26,7 +26,7 @@ members: 23
 - [[cmd_oauth()]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
 - [[cmd_reachability()]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
 - [[getenv_required()]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
-- [[main()_32]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
+- [[main()_33]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
 - [[mcp_oauth_preflight.py]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
 - [[mcp_oauth_preflight.py Enterprise-safe OAuth + MCP connectivity preflight.…]] - rationale - .llm_settings/scripts/mcp_oauth_preflight.py
 - [[oauth_atlassian()]] - code - .llm_settings/scripts/mcp_oauth_preflight.py
@@ -40,7 +40,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 1 edge to [[_COMMUNITY_secrets.py]]
 
 ## Top bridge nodes
 - [[mcp_oauth_preflight.py]] - degree 18, connects to 1 community

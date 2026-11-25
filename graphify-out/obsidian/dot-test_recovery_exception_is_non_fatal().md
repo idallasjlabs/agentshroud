@@ -16,7 +16,7 @@ tags:
 - [[Exception during inbound recovery → swallowed; outbound still recorded.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_7]] - `references` [EXTRACTED]
+- [[asyncio_5]] - `references` [EXTRACTED]
 - [[fake_api()_2]] - `contains` [EXTRACTED]
 - [[fake_api()_3]] - `indirect_call` [INFERRED]
 

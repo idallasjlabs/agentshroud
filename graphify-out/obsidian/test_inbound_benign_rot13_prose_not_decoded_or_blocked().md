@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
-- [[asyncio_89]] - `references` [EXTRACTED]
+- [[asyncio_59]] - `references` [EXTRACTED]
 - [[rot13-looking prose with no injection indicators is left alone.]] - `rationale_for` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 

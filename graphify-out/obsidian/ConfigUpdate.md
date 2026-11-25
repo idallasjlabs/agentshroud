@@ -12,7 +12,7 @@ tags:
 # ConfigUpdate
 
 ## Connections
-- [[BaseModel_8]] - `inherits` [EXTRACTED]
+- [[BaseModel_9]] - `inherits` [EXTRACTED]
 - [[api.py_2]] - `contains` [EXTRACTED]
 - [[import_config()]] - `references` [EXTRACTED]
 - [[update_config()]] - `references` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L324"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # .test_100_outbound_messages_under_5s()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[100 messages through process_outbound in under 5 seconds.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityPipelineChainLatency]] - `method` [EXTRACTED]
-- [[asyncio_16]] - `references` [EXTRACTED]
+- [[asyncio_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

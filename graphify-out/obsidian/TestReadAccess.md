@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestReadAccess"
+community: "test_privilege_separation.py"
 location: "L209"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReadAccess
+  - community/test_privilege_separationpy
 ---
 
 # TestReadAccess
@@ -19,4 +19,4 @@ tags:
 - [[Test read access controls.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReadAccess
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

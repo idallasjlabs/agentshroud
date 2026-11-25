@@ -12,6 +12,8 @@ tags:
 # _touch_pressed()
 
 ## Connections
+- [[face_animation_pause()]] - `calls` [INFERRED]
+- [[face_set_emotion()]] - `calls` [INFERRED]
 - [[lv_event_t]] - `references` [EXTRACTED]
 - [[ui_face.c]] - `contains` [EXTRACTED]
 - [[vt_remote_log()]] - `calls` [INFERRED]

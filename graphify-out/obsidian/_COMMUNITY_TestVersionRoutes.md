@@ -1,11 +1,11 @@
 ---
 type: community
-members: 20
+members: 14
 ---
 
 # TestVersionRoutes
 
-**Members:** 20 nodes
+**Members:** 14 nodes
 
 ## Members
 - [[dot-test_downgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
@@ -22,12 +22,6 @@ members: 20
 - [[dot-test_upgrade_requires_approval()]] - code - gateway/tests/test_version_routes.py
 - [[dot-test_upgrade_with_approval()]] - code - gateway/tests/test_version_routes.py
 - [[TestVersionRoutes]] - code - gateway/tests/test_version_routes.py
-- [[Tests for Version Manager API Routes.]] - rationale - gateway/tests/test_version_routes.py
-- [[Use a temporary DB for all tests.]] - rationale - gateway/tests/test_version_routes.py
-- [[client()_20]] - code - gateway/tests/test_version_routes.py
-- [[fixture_136]] - code
-- [[test_version_routes.py]] - code - gateway/tests/test_version_routes.py
-- [[tmp_version_db()]] - code - gateway/tests/test_version_routes.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -37,10 +31,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_app]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY_version_routes.py]]
 
 ## Top bridge nodes
-- [[test_version_routes.py]] - degree 7, connects to 3 communities
-- [[fixture_136]] - degree 3, connects to 1 community
+- [[TestVersionRoutes]] - degree 14, connects to 1 community

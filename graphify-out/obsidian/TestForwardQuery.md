@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "make_fake_socket_module"
+community: "test_dns_canvas_coverage.py"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_fake_socket_module
+  - community/test_dns_canvas_coveragepy
 ---
 
 # TestForwardQuery
@@ -17,4 +17,4 @@ tags:
 - [[dot-test_first_upstream_succeeds()]] - `method` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

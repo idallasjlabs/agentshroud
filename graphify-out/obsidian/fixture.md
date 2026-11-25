@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "run"
+community: "ContextGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # fixture
@@ -14,4 +14,4 @@ tags:
 - [[prompt_protection()]] - `references` [EXTRACTED]
 - [[sample_protected_content()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

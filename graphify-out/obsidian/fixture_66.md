@@ -1,21 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayConfig"
+community: "SharedMemoryManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/SharedMemoryManager
 ---
 
 # fixture
 
 ## Connections
-- [[_ensure_agentshroud_config_resolvable()]] - `references` [EXTRACTED]
-- [[auth_headers()]] - `references` [EXTRACTED]
-- [[sanitizer()_3]] - `references` [EXTRACTED]
-- [[test_client()]] - `references` [EXTRACTED]
-- [[test_config()]] - `references` [EXTRACTED]
-- [[test_ledger()]] - `references` [EXTRACTED]
+- [[rbac()_4]] - `references` [EXTRACTED]
+- [[session_manager()_3]] - `references` [EXTRACTED]
+- [[shared_memory()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

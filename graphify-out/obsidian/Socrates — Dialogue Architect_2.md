@@ -12,9 +12,9 @@ tags:
 # Socrates — Dialogue Architect
 
 ## Connections
-- [[Purpose_152]] - `contains` [EXTRACTED]
+- [[Purpose_154]] - `contains` [EXTRACTED]
 - [[Related Skills_84]] - `contains` [EXTRACTED]
-- [[Usage_94]] - `contains` [EXTRACTED]
+- [[Usage_95]] - `contains` [EXTRACTED]
 - [[openclawskillsi-socratesREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

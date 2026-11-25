@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_security_toolchain.py"
+source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "generate_report"
-location: "L795"
+community: "TestAuditQueries"
+location: "L424"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_report
+  - community/TestAuditQueries
 ---
 
 # .test_generate_report()
 
 ## Connections
-- [[TestHealthReport]] - `method` [EXTRACTED]
-- [[generate_report()]] - `calls` [EXTRACTED]
+- [[TestAuditQueries]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_report
+#graphify/code #graphify/EXTRACTED #community/TestAuditQueries

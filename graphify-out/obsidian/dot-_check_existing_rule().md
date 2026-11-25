@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EgressScope"
+community: "EgressApprovalQueue"
 location: "L337"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressScope
+  - community/EgressApprovalQueue
 ---
 
 # ._check_existing_rule()
@@ -18,4 +18,4 @@ tags:
 - [[EgressApprovalQueue]] - `method` [EXTRACTED]
 - [[EgressRule]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressScope
+#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue

@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/soc/websocket.py"
+source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "SOCWebSocketHandler"
-location: "L38"
+community: "MultiTurnTracker"
+location: "L94"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SOCWebSocketHandler
+  - community/MultiTurnTracker
 ---
 
 # .__init__()
 
 ## Connections
-- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
-- [[WebSocket_2]] - `references` [EXTRACTED]
+- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
+- [[Any_27]] - `references` [EXTRACTED]
+- [[Initialize the multi-turn tracker. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
+- [[MultiTurnTracker]] - `method` [EXTRACTED]
+- [[ThresholdConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

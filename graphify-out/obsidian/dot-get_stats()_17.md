@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/proxy/http_proxy.py"
+source_file: "gateway/proxy/slack_proxy.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L165"
+community: "SlackAPIProxy"
+location: "L435"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/SlackAPIProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[HTTPConnectProxy]] - `method` [EXTRACTED]
-- [[Return proxy traffic statistics.]] - `rationale_for` [EXTRACTED]
+- [[SlackAPIProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/SlackAPIProxy

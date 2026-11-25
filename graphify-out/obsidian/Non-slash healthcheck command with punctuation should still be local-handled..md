@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "asyncio"
+community: "PassthroughPipeline"
 location: "L4853"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/PassthroughPipeline
 ---
 
 # Non-slash healthcheck command with punctuation should still be local-handled.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/PassthroughPipeline

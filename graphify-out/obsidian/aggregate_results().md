@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "Any"
+community: "aggregate_results"
 location: "L880"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/Any
+  - community/aggregate_results
 ---
 
 # aggregate_results()
@@ -17,10 +17,10 @@ tags:
 - [[dot-test_overall_not_configured_when_all_not_run()]] - `calls` [EXTRACTED]
 - [[dot-test_overall_warning_when_high_only()]] - `calls` [EXTRACTED]
 - [[dot-test_scanners_dict_has_all_tools()]] - `calls` [EXTRACTED]
-- [[dot-test_timestamp_present()_1]] - `calls` [EXTRACTED]
+- [[dot-test_timestamp_present()]] - `calls` [EXTRACTED]
 - [[dot-test_totals_sum_across_scanners()]] - `calls` [EXTRACTED]
 - [[Aggregate results from all security scanners into a unified dict. Returns Dict…]] - `rationale_for` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
 - [[get_fluent_bit_summary()]] - `calls` [EXTRACTED]
@@ -32,4 +32,4 @@ tags:
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/Any
+#graphify/code #graphify/EXTRACTED #community/aggregate_results

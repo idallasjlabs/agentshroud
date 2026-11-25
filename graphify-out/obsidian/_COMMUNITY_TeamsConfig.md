@@ -1,54 +1,157 @@
 ---
 type: community
-members: 41
+members: 144
 ---
 
 # TeamsConfig
 
-**Members:** 41 nodes
+**Members:** 144 nodes
 
 ## Members
+- [[dot-coerce_members()]] - code - gateway/security/group_config.py
 - [[dot-get_all_member_ids()]] - code - gateway/security/group_config.py
 - [[dot-get_group_safe_response_prefix()]] - code - gateway/security/group_config.py
 - [[dot-get_user_collab_mode()]] - code - gateway/security/group_config.py
 - [[dot-get_user_groups()]] - code - gateway/security/group_config.py
 - [[dot-get_user_projects()]] - code - gateway/security/group_config.py
-- [[dot-is_group_admin()_2]] - code - gateway/security/group_config.py
-- [[dot-model_post_init()_1]] - code - gateway/security/group_config.py
+- [[dot-is_admin()]] - code - gateway/security/group_config.py
+- [[dot-is_group_admin()]] - code - gateway/security/group_config.py
+- [[dot-is_member()]] - code - gateway/security/group_config.py
+- [[dot-matches_topic()]] - code - gateway/security/group_config.py
+- [[dot-model_post_init()]] - code - gateway/security/group_config.py
+- [[dot-normalise_topics()]] - code - gateway/security/group_config.py
+- [[dot-test_addtogroup_success()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_already_member()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_apply_persisted_overrides_skips_user_overrides_key()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_collab_outside_scope_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_collab_unavailable_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_contains_allowed_tools()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_contains_group_and_project()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_empty_prefix_string_not_returned()]] - code - gateway/tests/test_group_config.py
 - [[dot-test_empty_teams_parses()]] - code - gateway/tests/test_group_config.py
-- [[dot-test_foreign_writer_blocked()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_group_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_legacy_no_author_write_still_appends()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_owner_write_into_user_memory_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_get_all_member_ids()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_get_user_collab_mode_falls_back_to_group()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_get_user_groups_member()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_get_user_groups_multi_group()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_get_user_groups_non_member()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_get_user_projects_member()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_get_user_projects_non_member()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_group_config_safe_response_prefix_field()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_group_config_safe_response_prefix_set()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_is_group_admin_correct()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_is_group_admin_unknown_group()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_is_group_admin_wrong_user()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_local_only_mode()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_member_sees_group()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_member_sees_project()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_no_duplicate_projects()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_no_groups_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_no_groups_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_no_permission()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_no_prefix_by_default()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_no_projects_for_unknown_user()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_no_projects_not_empty()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_not_member()]] - code - gateway/tests/test_collaborator_responses.py
 - [[dot-test_parses_groups()]] - code - gateway/tests/test_group_config.py
 - [[dot-test_parses_projects()]] - code - gateway/tests/test_group_config.py
-- [[dot-test_self_write_succeeds()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[dot-test_user_write_io_failure_returns_false()]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[A non-owner author cannot write into another user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[A user may write into their own private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[Back-compat existing callers that pass no author_idrbac_config keep working.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
-- [[If the underlying session store raises, the authorized write reports failure…]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[dot-test_persist_user_collab_mode()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_persist_user_collab_mode_update()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_prefix_not_returned_for_non_member()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_prefix_returned_for_member()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_project_scoped_mode()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_rmfromgroup_success()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_setmode_success_group()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_setmode_success_user()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_shows_admin()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_shows_projects()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_unknown_group()]] - code - gateway/tests/test_collaborator_responses.py
+- [[dot-test_unknown_user_returns_local_only()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_unknown_user_returns_none()]] - code - gateway/tests/test_group_config.py
+- [[dot-test_user_override_takes_precedence_over_group()]] - code - gateway/tests/test_group_config.py
+- [[dot-validate_mode()]] - code - gateway/security/group_config.py
+- [[A project defines a scoped focus area for a team.]] - rationale - gateway/security/group_config.py
+- [[A team group with members, admin, projects, and collab mode.]] - rationale - gateway/security/group_config.py
+- [[BaseModel_1]] - code
+- [[Build the system-prompt injection for project_scoped mode.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[Calling persist_user_collab_mode twice updates the stored value.]] - rationale - gateway/tests/test_group_config.py
+- [[Format a user's accessible projects for display.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[Format a user's group memberships for display.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[Format detailed info for a single group.]] - rationale - gateway/proxy/collaborator_responses.py
+- [[Group and Project configuration models for v0.9.0 Team Collaboration. Defines…]] - rationale - gateway/security/group_config.py
+- [[GroupConfig]] - code - gateway/security/group_config.py
 - [[Merge group_overrides.json additions into the in-memory TeamsConfig.]] - rationale - gateway/security/group_config.py
+- [[Per-user collab_mode override persists to group_overrides.json and takes…]] - rationale - gateway/tests/test_group_config.py
+- [[Per-user override beats group-derived collab_mode.]] - rationale - gateway/tests/test_group_config.py
+- [[Persist a per-user collab mode override set via the SOC dashboard. Stored under…]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime collab mode change for a group.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group creation so it survives container restarts.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group deletion so it survives container restarts.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group membership addition.]] - rationale - gateway/security/group_config.py
+- [[Persist a runtime group membership removal.]] - rationale - gateway/security/group_config.py
+- [[ProjectConfig]] - code - gateway/security/group_config.py
+- [[Result of the shared outbound text security scan. processed a scan path…]] - rationale - gateway/proxy/telegram_proxy.py
+- [[Return True if any focus_topic appears in the text (case-insensitive).]] - rationale - gateway/security/group_config.py
 - [[Return all groups the user belongs to.]] - rationale - gateway/security/group_config.py
 - [[Return all projects accessible to the user via group membership.]] - rationale - gateway/security/group_config.py
 - [[Return deduplicated list of all user IDs across all groups.]] - rationale - gateway/security/group_config.py
 - [[Return the effective collab_mode for a user. Resolution order 1. Per-user…]] - rationale - gateway/security/group_config.py
 - [[Return the safe_response_prefix for the first group that the user belongs to…]] - rationale - gateway/security/group_config.py
-- [[TDD — WS-E finding RT-5 (HIGH) shared-memory write access control. Before this…]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[Shared collaborator response templates for Telegram and Slack proxies.…]] - rationale - gateway/proxy/collaborator_responses.py
 - [[TeamsConfig]] - code - gateway/security/group_config.py
+- [[Telegram API Reverse Proxy — intercepts all bot ↔ Telegram traffic. The gateway…]] - rationale - gateway/proxy/telegram_proxy.py
+- [[TestAdminChecks]] - code - gateway/tests/test_group_config.py
+- [[TestBuildProjectContextInjection]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestCollabMode]] - code - gateway/tests/test_group_config.py
+- [[TestConstantMessages]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestErrorFormatters]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestFormatGroupInfo]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestFormatGroupsList]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestFormatProjectsList]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestGroupSafeResponsePrefix]] - code - gateway/tests/test_group_config.py
+- [[TestMembershipQueries]] - code - gateway/tests/test_group_config.py
+- [[TestMutationFormatters]] - code - gateway/tests/test_collaborator_responses.py
+- [[TestProjectQueries]] - code - gateway/tests/test_group_config.py
 - [[TestTeamsConfigParsing]] - code - gateway/tests/test_group_config.py
-- [[TestUserMemoryWriteACL]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[TestWriteFailurePath]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[The owner may write into any user's private memory.]] - rationale - gateway/tests/test_shared_memory_write_acl.py
+- [[TestUserCollabModeOverride]] - code - gateway/tests/test_group_config.py
+- [[Tests for gatewayproxycollaborator_responses.py — response template…]] - rationale - gateway/tests/test_collaborator_responses.py
+- [[Tests for group_config.py — V9-4A TeamsConfig, GroupConfig, ProjectConfig.]] - rationale - gateway/tests/test_group_config.py
 - [[Top-level teams configuration parsed from agentshroud.yaml `teams` section.]] - rationale - gateway/security/group_config.py
+- [[Without a per-user override, group-derived mode is returned.]] - rationale - gateway/tests/test_group_config.py
+- [[_OutboundScan]] - code - gateway/proxy/telegram_proxy.py
+- [[__user_overrides__ key must not be treated as a group_id.]] - rationale - gateway/tests/test_group_config.py
 - [[_apply_persisted_overrides()]] - code - gateway/security/group_config.py
-- [[_boom()_23]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[_boom()_24]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[fixture_94]] - code
-- [[rbac()_3]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[session_manager()_2]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[shared_memory()_1]] - code - gateway/tests/test_shared_memory_write_acl.py
-- [[test_shared_memory_write_acl.py]] - code - gateway/tests/test_shared_memory_write_acl.py
+- [[_ipv4_first_getaddrinfo()]] - code - gateway/proxy/telegram_proxy.py
+- [[_load_overrides()]] - code - gateway/security/group_config.py
+- [[_save_overrides()]] - code - gateway/security/group_config.py
+- [[build_project_context_injection()]] - code - gateway/proxy/collaborator_responses.py
+- [[collaborator_responses.py]] - code - gateway/proxy/collaborator_responses.py
+- [[field_validator]] - code
+- [[fixture_16]] - code
+- [[fixture_17]] - code
+- [[format_addtogroup_success()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_already_member()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_group_info()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_groups_list()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_no_permission()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_not_member()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_projects_list()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_rmfromgroup_success()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_setmode_success()]] - code - gateway/proxy/collaborator_responses.py
+- [[format_unknown_group()]] - code - gateway/proxy/collaborator_responses.py
+- [[group_config.py]] - code - gateway/security/group_config.py
+- [[persist_group_collab_mode()]] - code - gateway/security/group_config.py
+- [[persist_group_create()]] - code - gateway/security/group_config.py
+- [[persist_group_delete()]] - code - gateway/security/group_config.py
+- [[persist_group_member_add()]] - code - gateway/security/group_config.py
+- [[persist_group_member_remove()]] - code - gateway/security/group_config.py
+- [[persist_user_collab_mode writes under __user_overrides__ key.]] - rationale - gateway/tests/test_group_config.py
+- [[persist_user_collab_mode()]] - code - gateway/security/group_config.py
+- [[project()]] - code - gateway/tests/test_collaborator_responses.py
+- [[teams()]] - code - gateway/tests/test_collaborator_responses.py
+- [[teams()_1]] - code - gateway/tests/test_group_config.py
+- [[telegram_proxy.py_2]] - code - gateway/proxy/telegram_proxy.py
+- [[test_collaborator_responses.py]] - code - gateway/tests/test_collaborator_responses.py
+- [[test_group_config.py]] - code - gateway/tests/test_group_config.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -58,25 +161,32 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_collaborator_responses.py]]
-- 7 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 5 edges to [[_COMMUNITY_GroupWorkspaceManager]]
-- 4 edges to [[_COMMUNITY_socrouter.py]]
-- 4 edges to [[_COMMUNITY_UserSessionManager]]
-- 3 edges to [[_COMMUNITY_SharedMemoryManager]]
-- 3 edges to [[_COMMUNITY_test_tool_acl.py]]
-- 2 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 2 edges to [[_COMMUNITY_test_group_isolation.py]]
-- 2 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 2 edges to [[_COMMUNITY_test_shared_memory.py]]
-- 1 edge to [[_COMMUNITY_TestGroupMemoryWriteACL]]
-- 1 edge to [[_COMMUNITY_GatewayConfig]]
-- 1 edge to [[_COMMUNITY_lifespan]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
+- 17 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 14 edges to [[_COMMUNITY_socrouter.py]]
+- 10 edges to [[_COMMUNITY_RBACConfig]]
+- 9 edges to [[_COMMUNITY_SharedMemoryManager]]
+- 6 edges to [[_COMMUNITY_GroupWorkspaceManager]]
+- 4 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 4 edges to [[_COMMUNITY_test_tool_acl.py]]
+- 3 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
+- 3 edges to [[_COMMUNITY_GroupRoleResolver]]
+- 2 edges to [[_COMMUNITY_ToolResultInjectionScanner]]
+- 2 edges to [[_COMMUNITY_secrets.py]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_DelegationPrivilege]]
+- 1 edge to [[_COMMUNITY_ApprovalMode]]
+- 1 edge to [[_COMMUNITY_RateLimiter]]
+- 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
+- 1 edge to [[_COMMUNITY_test_progressive_lockdown.py]]
+- 1 edge to [[_COMMUNITY_test_telegram_pipeline.py]]
+- 1 edge to [[_COMMUNITY_dot-_make_proxy]]
+- 1 edge to [[_COMMUNITY_test_telegram_proxy_outbound.py]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
 
 ## Top bridge nodes
-- [[TeamsConfig]] - degree 40, connects to 12 communities
-- [[test_shared_memory_write_acl.py]] - degree 16, connects to 5 communities
-- [[_apply_persisted_overrides()]] - degree 5, connects to 2 communities
-- [[TestTeamsConfigParsing]] - degree 5, connects to 1 community
-- [[dot-get_user_groups()]] - degree 5, connects to 1 community
+- [[telegram_proxy.py_2]] - degree 39, connects to 15 communities
+- [[group_config.py]] - degree 27, connects to 8 communities
+- [[TeamsConfig]] - degree 40, connects to 7 communities
+- [[persist_group_collab_mode()]] - degree 8, connects to 2 communities
+- [[persist_group_member_add()]] - degree 8, connects to 2 communities

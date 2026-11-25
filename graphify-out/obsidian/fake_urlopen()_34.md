@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_make_update"
-location: "L3542"
+community: "PassthroughPipeline"
+location: "L3143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_update
+  - community/PassthroughPipeline
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_collaborator_approval_queue_probe_gets_safe_info()]] - `contains` [EXTRACTED]
+- [[dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_update
+#graphify/code #graphify/EXTRACTED #community/PassthroughPipeline

@@ -12,9 +12,9 @@ tags:
 # Browser — Secure Browser Automation
 
 ## Connections
-- [[Purpose_95]] - `contains` [EXTRACTED]
+- [[Purpose_97]] - `contains` [EXTRACTED]
 - [[Related Skills_27]] - `contains` [EXTRACTED]
-- [[Usage_37]] - `contains` [EXTRACTED]
+- [[Usage_38]] - `contains` [EXTRACTED]
 - [[browserREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation

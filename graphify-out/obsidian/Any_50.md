@@ -1,21 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "daily_cve_report.py"
+community: "test_edge_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/daily_cve_reportpy
+  - community/test_edge_pipelinepy
 ---
 
 # Any
 
 ## Connections
-- [[check_upstream_cves()]] - `references` [EXTRACTED]
-- [[format_cve_report()]] - `references` [EXTRACTED]
-- [[format_upstream_cve_alert()]] - `references` [EXTRACTED]
-- [[run_and_send_cve_report()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check()]] - `references` [EXTRACTED]
-- [[run_upstream_cve_check_all_agents()]] - `references` [EXTRACTED]
+- [[dot-_count_denial()]] - `references` [EXTRACTED]
+- [[dot-_p0()]] - `references` [EXTRACTED]
+- [[dot-_record()_1]] - `references` [EXTRACTED]
+- [[dot-_scrub()]] - `references` [EXTRACTED]
+- [[dot-call_tool()]] - `references` [EXTRACTED]
+- [[dot-list_tools()]] - `references` [EXTRACTED]
+- [[dot-run()_4]] - `references` [EXTRACTED]
+- [[_result()]] - `references` [EXTRACTED]
+- [[_string_leaves()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/daily_cve_reportpy
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

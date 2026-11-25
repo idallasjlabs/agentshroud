@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_check_impl()]] - `references` [EXTRACTED]
 - [[dot-_record()_2]] - `calls` [EXTRACTED]
-- [[dot-check()_5]] - `references` [EXTRACTED]
+- [[dot-check()_6]] - `references` [EXTRACTED]
 - [[dot-check_async()]] - `references` [EXTRACTED]
 - [[dot-get_log()]] - `references` [EXTRACTED]
 - [[TestEgressAttempt]] - `uses` [INFERRED]

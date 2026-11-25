@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/session_security.py"
 type: "code"
-community: "TestAuth"
+community: "SessionManager"
 location: "L104"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/SessionManager
 ---
 
 # .rotate_session()
@@ -16,4 +16,4 @@ tags:
 - [[Session]] - `calls` [EXTRACTED]
 - [[SessionManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/SessionManager

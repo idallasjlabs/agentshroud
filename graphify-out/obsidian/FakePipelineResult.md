@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "BlockingPipeline"
+community: ".test_encoding_detected_on_getUpdates"
 location: "L85"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BlockingPipeline
+  - community/test_encoding_detected_on_getUpdates
 ---
 
 # FakePipelineResult
@@ -18,4 +18,4 @@ tags:
 - [[process_inbound()_1]] - `calls` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BlockingPipeline
+#graphify/code #graphify/EXTRACTED #community/test_encoding_detected_on_getUpdates

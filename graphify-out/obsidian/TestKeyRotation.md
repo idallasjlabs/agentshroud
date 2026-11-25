@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "TestKeyRotation"
+community: "KeyVault"
 location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKeyRotation
+  - community/KeyVault
 ---
 
 # TestKeyRotation
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_rotation_logged()]] - `method` [EXTRACTED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKeyRotation
+#graphify/code #graphify/EXTRACTED #community/KeyVault

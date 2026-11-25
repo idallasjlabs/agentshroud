@@ -12,7 +12,7 @@ tags:
 # _base_policy_engine()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]
 - [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[proxy()_3]] - `calls` [EXTRACTED]

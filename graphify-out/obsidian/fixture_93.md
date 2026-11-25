@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "TestProductionCompose"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/TestProductionCompose
 ---
 
 # fixture
 
 ## Connections
-- [[client()_15]] - `references` [EXTRACTED]
+- [[dot-compose()]] - `references` [EXTRACTED]
+- [[dot-compose()_1]] - `references` [EXTRACTED]
+- [[dot-compose()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/TestProductionCompose

@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[ApprovalStore]] - `uses` [INFERRED]
-- [[Path_38]] - `references` [EXTRACTED]
+- [[Path_37]] - `references` [EXTRACTED]
 - [[Re-initializing must not orphan the first aiosqlite connection. aiosqlite…_1]] - `rationale_for` [EXTRACTED]
-- [[asyncio_46]] - `references` [EXTRACTED]
+- [[asyncio_47]] - `references` [EXTRACTED]
 - [[test_approval_store.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

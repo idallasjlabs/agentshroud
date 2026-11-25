@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_forward_stream.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_stream.py"
-location: "L168"
+community: "app"
+location: "L421"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_streampy
+  - community/app
 ---
 
 # .process_outbound()
 
 ## Connections
-- [[_BlockingPipeline]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_streampy
+#graphify/code #graphify/EXTRACTED #community/app

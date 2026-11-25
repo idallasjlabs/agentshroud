@@ -1,20 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "test_observatory_mode.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_observatory_modepy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-guard()_6]] - `references` [EXTRACTED]
-- [[dot-guard()_1]] - `references` [EXTRACTED]
-- [[dot-pg()]] - `references` [EXTRACTED]
-- [[dot-pg()_1]] - `references` [EXTRACTED]
-- [[prompt_guard()]] - `references` [EXTRACTED]
+- [[client()_7]] - `references` [EXTRACTED]
+- [[reset_env_and_task()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

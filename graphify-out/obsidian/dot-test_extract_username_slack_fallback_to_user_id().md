@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_slack_proxy.py"
 type: "code"
-community: ".process_webhook"
+community: "WebhookReceiver"
 location: "L185"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/process_webhook
+  - community/WebhookReceiver
 ---
 
 # .test_extract_username_slack_fallback_to_user_id()
@@ -15,4 +15,4 @@ tags:
 - [[dot-_extract_username()]] - `calls` [EXTRACTED]
 - [[TestWebhookReceiverSlackExtraction]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/process_webhook
+#graphify/code #graphify/EXTRACTED #community/WebhookReceiver

@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
 community: "test_soc_router_coverage.py"
-location: "L82"
+location: "L1434"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # __init__()
 
 ## Connections
-- [[_make_service_manager()]] - `contains` [EXTRACTED]
+- [[test_group_memory_read()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

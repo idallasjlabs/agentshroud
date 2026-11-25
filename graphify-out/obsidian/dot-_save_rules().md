@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "EgressApprovalQueue"
+community: "EgressScope"
 location: "L307"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/EgressScope
 ---
 
 # ._save_rules()
@@ -22,4 +22,4 @@ tags:
 - [[EgressScope]] - `calls` [EXTRACTED]
 - [[Save rules to persistent storage.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/code #graphify/EXTRACTED #community/EgressScope

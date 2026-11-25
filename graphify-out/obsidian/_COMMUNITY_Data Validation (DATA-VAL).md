@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Data Validation (DATA-VAL)_1]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Purpose_46]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Purpose_47]] - document - docker/config/openclaw/skills/i-data/README.md
 - [[Related Skills_12]] - document - docker/config/openclaw/skills/i-data/README.md
-- [[Usage_13]] - document - docker/config/openclaw/skills/i-data/README.md
+- [[Usage_14]] - document - docker/config/openclaw/skills/i-data/README.md
 - [[openclawskillsi-dataREADME]] - document - docker/config/openclaw/skills/i-data/README.md
 
 ## Live Query (requires Dataview plugin)

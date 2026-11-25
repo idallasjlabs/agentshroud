@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Collaborator daily greeting — fires on the first inbound Telegram message from…]] - `rationale_for` [EXTRACTED]
 - [[CollaboratorGreeter]] - `contains` [EXTRACTED]
-- [[httpx]] - `imports` [EXTRACTED]
+- [[httpx_1]] - `imports` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `imports_from` [EXTRACTED]
 

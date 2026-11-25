@@ -1,21 +1,21 @@
 ---
 type: community
-members: 96
+members: 95
 ---
 
 # test_http_proxy_coverage.py
 
-**Members:** 96 nodes
+**Members:** 95 nodes
 
 ## Members
-- [[dot-__init__()_207]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_208]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_209]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-__init__()_210]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_16]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[dot-close()_17]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_213]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_214]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_215]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-__init__()_216]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_18]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-close()_19]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_20]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[dot-close()_21]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-drain()_1]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[dot-get_extra_info()]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -45,7 +45,6 @@ members: 96
 - [[_SocketTransportWriter]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_TimeoutReader]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[__init__()_20]] - code - gateway/tests/test_http_proxy_coverage.py
-- [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_always_fail()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_boom()_28]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[_capture_open()]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -66,7 +65,7 @@ members: 96
 - [[asyncio.open_connection replacement returning an immediately-EOF stream.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[get_extra_info raising must not break the established tunnel.]] - rationale - gateway/tests/test_http_proxy_coverage.py
 - [[log_external_decision raising must not break the CONNECT.]] - rationale - gateway/tests/test_http_proxy_coverage.py
-- [[log_external_decision()_2]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[log_external_decision()]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[read()_8]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[read()_9]] - code - gateway/tests/test_http_proxy_coverage.py
 - [[read()_10]] - code - gateway/tests/test_http_proxy_coverage.py
@@ -113,14 +112,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 37 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 6 edges to [[_COMMUNITY_WebProxy]]
+- 36 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 8 edges to [[_COMMUNITY_lifespan.py]]
 - 5 edges to [[_COMMUNITY_dot-_relay]]
-- 1 edge to [[_COMMUNITY_web_proxy.py]]
 
 ## Top bridge nodes
-- [[test_http_proxy_coverage.py]] - degree 55, connects to 4 communities
-- [[_allowlist_proxy()]] - degree 6, connects to 2 communities
+- [[test_http_proxy_coverage.py]] - degree 55, connects to 3 communities
 - [[test_relay_idle_timeout_closes_writer()]] - degree 5, connects to 2 communities
 - [[test_relay_swallows_read_errors()]] - degree 5, connects to 2 communities
 - [[test_relay_swallows_writer_close_failure()]] - degree 4, connects to 2 communities
+- [[_MockWriter]] - degree 33, connects to 1 community

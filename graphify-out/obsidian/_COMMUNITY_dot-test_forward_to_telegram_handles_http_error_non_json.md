@@ -23,9 +23,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 2 edges to [[_COMMUNITY_asyncio_5]]
+- 4 edges to [[_COMMUNITY__make_sanitizer]]
 
 ## Top bridge nodes
-- [[dot-test_forward_to_telegram_handles_http_error_non_json()]] - degree 5, connects to 2 communities
-- [[dot-test_forward_to_telegram_returns_http_error_json()]] - degree 4, connects to 2 communities
+- [[dot-test_forward_to_telegram_handles_http_error_non_json()]] - degree 5, connects to 1 community
+- [[dot-test_forward_to_telegram_returns_http_error_json()]] - degree 4, connects to 1 community

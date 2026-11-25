@@ -8,10 +8,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_154]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Purpose_156]] - document - docker/config/openclaw/skills/i-ti/README.md
 - [[Related Skills_86]] - document - docker/config/openclaw/skills/i-ti/README.md
 - [[Technical Illustrator (TI)]] - document - docker/config/openclaw/skills/i-ti/README.md
-- [[Usage_96]] - document - docker/config/openclaw/skills/i-ti/README.md
+- [[Usage_97]] - document - docker/config/openclaw/skills/i-ti/README.md
 - [[openclawskillsi-tiREADME]] - document - docker/config/openclaw/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_config.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L228"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # Per-user collab_mode override: persists to group_overrides.json and takes…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestUserCollabModeOverride]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L725"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # Step 2 PII sanitisation must be skipped for the authenticated owner. Non-owner…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInboundPIIOwnerExemption]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

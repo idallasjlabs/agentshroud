@@ -12,7 +12,7 @@ tags:
 # privacy_policy.py
 
 ## Connections
-- [[Enum_8]] - `imports_from` [EXTRACTED]
+- [[Enum_7]] - `imports_from` [EXTRACTED]
 - [[Privacy Policy Enforcer (v0.9.0 Tranche 2) Admin-defined configuration…]] - `rationale_for` [EXTRACTED]
 - [[PrivacyPolicy]] - `contains` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `contains` [EXTRACTED]

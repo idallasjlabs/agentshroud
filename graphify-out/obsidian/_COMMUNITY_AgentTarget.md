@@ -1,153 +1,189 @@
 ---
 type: community
-members: 140
+members: 176
 ---
 
 # AgentTarget
 
-**Members:** 140 nodes
+**Members:** 176 nodes
 
 ## Members
+- [[dot-__init__()_120]] - code - gateway/tests/test_forward_routing.py
 - [[dot-_build_forward_payload()]] - code - gateway/ingest_api/router.py
+- [[dot-_post()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-_run_forward()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-body_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-content_not_empty()]] - code - gateway/ingest_api/models.py
 - [[dot-forward_to_agent()]] - code - gateway/ingest_api/router.py
 - [[dot-forward_to_agent_stream()]] - code - gateway/ingest_api/router.py
 - [[dot-health_check()_3]] - code - gateway/ingest_api/router.py
 - [[dot-list_targets()]] - code - gateway/ingest_api/router.py
-- [[dot-register_bots()]] - code - gateway/ingest_api/router.py
+- [[dot-path_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-process_inbound()_3]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_inbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_4]] - code - gateway/tests/test_forward_routing.py
+- [[dot-process_outbound()_5]] - code - gateway/tests/test_forward_routing.py
 - [[dot-resolve_target()]] - code - gateway/ingest_api/router.py
+- [[dot-subject_not_empty()]] - code - gateway/ingest_api/models.py
+- [[dot-test_agent_id_propagated_for_hermes()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_agent_id_propagated_for_openclaw()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_blocked_outbound_replaced_with_policy_notice()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_body_owner_id_with_matching_trusted_header_is_honored()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_body_owner_id_without_trusted_header_is_stripped()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_default_not_used_in_pipeline()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_forward_passes_user_id_in_metadata_to_process_inbound()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-test_non_owner_body_user_id_passes_through()]] - code - gateway/tests/test_forward_routing.py
+- [[dot-validate_base64()]] - code - gateway/ingest_api/models.py
+- [[dot-validate_source()]] - code - gateway/ingest_api/models.py
+- [[A non-owner user_id is not a spoof risk and must pass through unchanged (it…]] - rationale - gateway/tests/test_forward_routing.py
+- [[Add security headers to all responses (defense-in-depth). Also catches Python…]] - rationale - gateway/ingest_api/main.py
 - [[AgentTarget]] - code - gateway/ingest_api/models.py
 - [[AgentTarget accepts custom chat_path and health_path.]] - rationale - gateway/tests/test_router.py
 - [[AgentTarget defaults chat_path and health_path correctly.]] - rationale - gateway/tests/test_router.py
-- [[Any_56]] - code
-- [[Both bots must be reachable via the same router without conflict.]] - rationale - gateway/tests/test_router.py
-- [[Build a fake httpx.Response whose .json() returns body.]] - rationale - gateway/tests/test_router_openai_translation.py
+- [[Any_48]] - code
+- [[ApprovalDecision]] - code - gateway/ingest_api/models.py
+- [[Auth dependency that uses the app state config._2]] - rationale - gateway/ingest_api/routes/forward.py
+- [[AuthRequired_2]] - code
+- [[BaseModel_7]] - code
+- [[BaseModel_8]] - code
+- [[Build a minimal mock app_state that returns a target with the given bot name.]] - rationale - gateway/tests/test_forward_routing.py
 - [[Build the outbound payload for `target`, shared by the blocking and streaming…]] - rationale - gateway/ingest_api/router.py
+- [[Catch-all error handler Never leaks stack traces or internal details to client.…]] - rationale - gateway/ingest_api/main.py
 - [[Check health of one or all agent targets Args target Specific target to…]] - rationale - gateway/ingest_api/router.py
-- [[Create a router configuration for testing]] - rationale - gateway/tests/test_router.py
-- [[Create a router instance for testing]] - rationale - gateway/tests/test_router.py
 - [[Determine which agent should receive this content Args request Forward…]] - rationale - gateway/ingest_api/router.py
 - [[Downstream agent target]] - rationale - gateway/ingest_api/models.py
-- [[Empty choices list raises ForwardError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Exception_14]] - code
+- [[Email send gateway (P3 channel ownership). The bot submits email send requests…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[EmailSendRequest]] - code - gateway/ingest_api/models.py
+- [[EmailSendResponse]] - code - gateway/ingest_api/models.py
+- [[Everything the post-routing forwarding steps (blocking or streaming) need, once…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Exception_11]] - code
+- [[Field Validators]] - document - docs/vault/05 - Dependencies/pydantic.md
 - [[Forward sanitized content to agent via HTTP POST Args target Agent target to…]] - rationale - gateway/ingest_api/router.py
-- [[ForwardError]] - code - gateway/ingest_api/router.py
 - [[ForwardRequest]] - code - gateway/ingest_api/models.py
-- [[Key Features Used]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Live regression 2026-08-07 Hermes's own internal LLM failover (Anthropic…]] - rationale - gateway/tests/test_router_streaming.py
-- [[Malformed OpenAI response (missing choices) raises ForwardError, not KeyError.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[MultiAgentRouter]] - code - gateway/ingest_api/router.py
-- [[Populate routing targets from the bots registry. Iterates all BotConfig entries…]] - rationale - gateway/ingest_api/router.py
-- [[Purpose_159]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[Raised when forwarding to agent fails]] - rationale - gateway/ingest_api/router.py
-- [[Raised when no valid routing target found]] - rationale - gateway/ingest_api/router.py
-- [[Related Notes_68]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[ForwardResponse]] - code - gateway/ingest_api/models.py
+- [[Inbound passes; outbound returns blocked=True with the original text intact.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Key Configuration Models]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Legitimate voice-gateway path owner ID in body + matching trusted header must…]] - rationale - gateway/tests/test_forward_routing.py
+- [[Main ingest endpoint Receives data from iOS Shortcuts, browser extension, or…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Message forwarding routes. Core message forwarding endpoints -…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Minimal app_state for owner-trust tests.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Minimal pipeline mock that records which agent_id it was called with.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Owner ID claimed in the body with NO trusted header must not reach the pipeline…]] - rationale - gateway/tests/test_forward_routing.py
+- [[OwnerEmailRequest]] - code - gateway/ingest_api/routes/forward.py
+- [[Pipeline receives 'hermes' as agent_id when routed to hermes.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Pipeline receives 'openclaw' as agent_id when routed to openclaw.]] - rationale - gateway/tests/test_forward_routing.py
+- [[Purpose_159]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Pydantic_1]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Regression 'default' must never appear in agent_id when a named target is…]] - rationale - gateway/tests/test_forward_routing.py
+- [[Regression forward returned out_result.sanitized_message without checking…]] - rationale - gateway/tests/test_forward_routing.py
+- [[Reject request bodies larger than 1MB before parsing. Checks Content-Length…]] - rationale - gateway/ingest_api/main.py
+- [[Related Notes_67]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[Request_6]] - code
+- [[Request to execute an SSH command]] - rationale - gateway/ingest_api/models.py
 - [[Request to forward content through the gateway Received from iOS Shortcuts,…]] - rationale - gateway/ingest_api/models.py
+- [[Request to send an email through the gateway (P3 channel ownership). The bot…]] - rationale - gateway/ingest_api/models.py
+- [[Request to write file content to an allowlisted SSH host. Unlike…]] - rationale - gateway/ingest_api/models.py
+- [[Resolve the outbound trust level for `request`, shared by the blocking and…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Response after content is ingested, sanitized, and logged]] - rationale - gateway/ingest_api/models.py
+- [[Response from POST emailsend.]] - rationale - gateway/ingest_api/models.py
+- [[Return True if the email address is on the pre-approved recipient list.]] - rationale - gateway/ingest_api/routes/forward.py
 - [[Return all configured agent targets Returns List of AgentTarget objects]] - rationale - gateway/ingest_api/router.py
-- [[RouterError]] - code - gateway/ingest_api/router.py
-- [[Routes content to appropriate agent containers Routing priority 1. Explicit…]] - rationale - gateway/ingest_api/router.py
-- [[Security Note_2]] - document - docs/vault/05 - Dependencies/httpx.md
+- [[SSHExecRequest]] - code - gateway/ingest_api/models.py
+- [[SSHWriteFileRequest]] - code - gateway/ingest_api/models.py
+- [[Send an email to the owner without exposing the recipient address in the…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Simplified unit tests for main.py to achieve 90% coverage Focuses on easily…]] - rationale - gateway/tests/test_main_simple.py
 - [[Stream sanitized content to an OpenAI-compatible agent, yielding text deltas as…]] - rationale - gateway/ingest_api/router.py
-- [[Test forwarding handles HTTP error responses]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding handles timeout exception]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding handles unexpected exceptions]] - rationale - gateway/tests/test_router.py
-- [[Test forwarding to offline agent raises ForwardError]] - rationale - gateway/tests/test_router.py
-- [[Test health check for offline agent]] - rationale - gateway/tests/test_router.py
-- [[Test health check for single target]] - rationale - gateway/tests/test_router.py
-- [[Test health check with healthy agent]] - rationale - gateway/tests/test_router.py
-- [[Test listing all configured targets]] - rationale - gateway/tests/test_router.py
-- [[Test routing to default target]] - rationale - gateway/tests/test_router.py
-- [[Test routing with explicit route_to]] - rationale - gateway/tests/test_router.py
-- [[Test routing with invalid explicit target falls back to default]] - rationale - gateway/tests/test_router.py
-- [[Tests for MultiAgentRouter.forward_to_agent_stream — SSE relay to an OpenAI-…]] - rationale - gateway/tests/test_router_streaming.py
-- [[Tests for multi-agent router]] - rationale - gateway/tests/test_router.py
-- [[Tests for §2.2 OpenAI-compatible target translation in MultiAgentRouter.…]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[The OpenAI payload must include a non-empty model field.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[Where Used_5]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[_aiter_lines()]] - code - gateway/tests/test_router_streaming.py
-- [[_mock_response()]] - code - gateway/tests/test_router_openai_translation.py
-- [[_mock_stream_response()]] - code - gateway/tests/test_router_streaming.py
-- [[_raise_connect()]] - code - gateway/tests/test_router.py
-- [[_sse_lines()]] - code - gateway/tests/test_router_streaming.py
-- [[asyncio_56]] - code
-- [[asyncio_57]] - code
-- [[asyncio_58]] - code
-- [[fixture_100]] - code
-- [[fixture_101]] - code
-- [[fixture_102]] - code
-- [[forward_to_agent builds URL from target.chat_path.]] - rationale - gateway/tests/test_router.py
-- [[forward_to_agent extracts choices0.message.content and returns a string.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent passes response.json() through unchanged for chat targets.]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent sends the generic {content, ledger_id, ...} body for chat…]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[forward_to_agent sends {model, messages} when chat_path ends…]] - rationale - gateway/tests/test_router_openai_translation.py
-- [[health_check builds URL from target.health_path.]] - rationale - gateway/tests/test_router.py
-- [[httpx_1]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[httpx]] - document - docs/vault/05 - Dependencies/httpx.md
-- [[ingest_apirouter.py]] - code - gateway/ingest_api/router.py
-- [[json()_2]] - code - gateway/tests/test_router.py
-- [[load_config computes CORS origins from the configured port.]] - rationale - gateway/tests/test_router.py
-- [[mock_get()]] - code - gateway/tests/test_router.py
-- [[mock_get()_1]] - code - gateway/tests/test_router.py
-- [[mock_post()]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_1]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_2]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_3]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_4]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_5]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_6]] - code - gateway/tests/test_router_openai_translation.py
-- [[mock_post()_7]] - code - gateway/tests/test_router.py
-- [[mock_post()_8]] - code - gateway/tests/test_router.py
-- [[mock_post()_9]] - code - gateway/tests/test_router.py
-- [[mock_post()_10]] - code - gateway/tests/test_router.py
-- [[mock_stream()]] - code - gateway/tests/test_router_streaming.py
-- [[mock_stream()_1]] - code - gateway/tests/test_router_streaming.py
-- [[mock_stream()_2]] - code - gateway/tests/test_router_streaming.py
-- [[mock_stream()_3]] - code - gateway/tests/test_router_streaming.py
-- [[mock_stream()_4]] - code - gateway/tests/test_router_streaming.py
-- [[mock_stream()_5]] - code - gateway/tests/test_router_streaming.py
-- [[mock_stream()_6]] - code - gateway/tests/test_router_streaming.py
-- [[raise_for_status()]] - code - gateway/tests/test_router.py
-- [[raise_for_status()_1]] - code - gateway/tests/test_router.py
-- [[route_to='hermes' must resolve to the Hermes AgentTarget.]] - rationale - gateway/tests/test_router.py
-- [[router()_1]] - code - gateway/tests/test_router_openai_translation.py
-- [[router()_2]] - code - gateway/tests/test_router.py
-- [[router()_3]] - code - gateway/tests/test_router_streaming.py
-- [[router_config()]] - code - gateway/tests/test_router.py
+- [[Streaming variant of forward for OpenAI-compat agents (Hermes). Same inbound…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Target resolution + P1 middleware + inbound security pipeline — shared by the…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Telegram inbound webhook (P3 channel ownership). All Telegram messages…]] - rationale - gateway/ingest_api/routes/forward.py
+- [[Test ApprovalDecision with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ApprovalRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test FastAPI lifespan initialization]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects empty content]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest rejects invalid source]] - rationale - gateway/tests/test_main_simple.py
+- [[Test ForwardRequest with valid data]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler]] - rationale - gateway/tests/test_main_simple.py
+- [[Test global exception handler with HTTPException]] - rationale - gateway/tests/test_main_simple.py
+- [[Test request logging middleware]] - rationale - gateway/tests/test_main_simple.py
+- [[TestAgentIdPropagatedFromTarget]] - code - gateway/tests/test_forward_routing.py
+- [[TestOutboundBlockedNotDelivered]] - code - gateway/tests/test_forward_routing.py
+- [[TestOwnerSpoofingViaForwardBody]] - code - gateway/tests/test_forward_routing.py
+- [[Tests proving that agent_id=target.name (not default) flows into the security…]] - rationale - gateway/tests/test_forward_routing.py
+- [[User's decision on a pending approval request]] - rationale - gateway/ingest_api/models.py
+- [[Verify that the resolved target.name is used as agent_id in pipeline calls.]] - rationale - gateway/tests/test_forward_routing.py
+- [[WS-E SCRUM-7374 a body-supplied user_id must NOT grant owner identity to the…]] - rationale - gateway/tests/test_forward_routing.py
+- [[Where Used_5]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[_BlockedOutboundPipeline]] - code - gateway/tests/test_forward_routing.py
+- [[_InboundResult]] - code - gateway/ingest_api/routes/forward.py
+- [[_PipelineCaptor]] - code - gateway/tests/test_forward_routing.py
+- [[_body_stream()]] - code - gateway/ingest_api/main.py
+- [[_is_email_recipient_allowed()]] - code - gateway/ingest_api/routes/forward.py
+- [[_make_mock_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[_make_trust_app_state()]] - code - gateway/tests/test_forward_routing.py
+- [[_passthrough_block_credentials()]] - code - gateway/tests/test_forward_routing.py
+- [[_process_inbound()]] - code - gateway/ingest_api/routes/forward.py
+- [[_request()]] - code - gateway/tests/test_forward_stream.py
+- [[_resolve_user_trust_level()]] - code - gateway/ingest_api/routes/forward.py
+- [[_target()]] - code - gateway/tests/test_forward_stream.py
+- [[asyncio_52]] - code
+- [[auth_dep()_3]] - code - gateway/ingest_api/routes/forward.py
+- [[disconnecting_stream()]] - code - gateway/tests/test_main_simple.py
+- [[email_send()]] - code - gateway/ingest_api/routes/forward.py
+- [[email_send_owner()]] - code - gateway/ingest_api/routes/forward.py
+- [[exception_handler]] - code
+- [[field_validator_3]] - code
+- [[forward.py]] - code - gateway/ingest_api/routes/forward.py
+- [[forward_content()]] - code - gateway/ingest_api/routes/forward.py
+- [[forward_content_stream()]] - code - gateway/ingest_api/routes/forward.py
+- [[global_exception_handler()]] - code - gateway/ingest_api/main.py
+- [[ingest_apimodels.py]] - code - gateway/ingest_api/models.py
+- [[limit_request_body re-injects a fully-read chunked body and calls downstream.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body rejects chunked bodies over 1MB with 413.]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body returns a clean 400 when the client drops mid-upload.…]] - rationale - gateway/tests/test_main_simple.py
+- [[limit_request_body()]] - code - gateway/ingest_api/main.py
+- [[mock_call_next()]] - code - gateway/tests/test_main_simple.py
+- [[mock_call_next()_1]] - code - gateway/tests/test_main_simple.py
+- [[mock_call_next()_2]] - code - gateway/tests/test_main_simple.py
+- [[mock_call_next()_3]] - code - gateway/tests/test_main_simple.py
+- [[mock_call_next()_4]] - code - gateway/tests/test_main_simple.py
+- [[mock_call_next_raises()]] - code - gateway/tests/test_main_simple.py
+- [[mock_call_next_raises()_1]] - code - gateway/tests/test_main_simple.py
+- [[oversized_stream()]] - code - gateway/tests/test_main_simple.py
+- [[parametrize_16]] - code
+- [[post_5]] - code
+- [[process_inbound must receive metadata={'user_id' ...} from forward so that…]] - rationale - gateway/tests/test_forward_routing.py
+- [[pydantic]] - document - docs/vault/05 - Dependencies/pydantic.md
+- [[security_headers_middleware adds expected security headers.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware re-raises BaseExceptions that are not groups.]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware returns 500 when anyio BaseExceptionGroup is…]] - rationale - gateway/tests/test_main_simple.py
+- [[security_headers_middleware()]] - code - gateway/ingest_api/main.py
+- [[small_stream()]] - code - gateway/tests/test_main_simple.py
+- [[telegram_webhook()]] - code - gateway/ingest_api/routes/forward.py
 - [[test_agent_target_custom_paths()]] - code - gateway/tests/test_router.py
 - [[test_agent_target_default_paths()]] - code - gateway/tests/test_router.py
-- [[test_cors_origins_include_configured_port()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_http_error()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_offline()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_timeout()]] - code - gateway/tests/test_router.py
-- [[test_forward_to_agent_unexpected_error()]] - code - gateway/tests/test_router.py
-- [[test_forward_uses_chat_path()]] - code - gateway/tests/test_router.py
-- [[test_generic_target_returns_json_as_is()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_generic_target_sends_content_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_health_check_healthy_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_offline_agent()]] - code - gateway/tests/test_router.py
-- [[test_health_check_single_target()]] - code - gateway/tests/test_router.py
-- [[test_health_check_uses_health_path()]] - code - gateway/tests/test_router.py
-- [[test_hermes_and_openclaw_coexist()]] - code - gateway/tests/test_router.py
-- [[test_list_targets()]] - code - gateway/tests/test_router.py
-- [[test_openai_empty_choices_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_malformed_response_raises_forward_error()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_payload_includes_model()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_target_returns_content_string()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_openai_target_sends_messages_body()]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_resolve_target_default()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_explicit()]] - code - gateway/tests/test_router.py
-- [[test_resolve_target_invalid_explicit()]] - code - gateway/tests/test_router.py
-- [[test_resolves_hermes_target()]] - code - gateway/tests/test_router.py
-- [[test_router.py]] - code - gateway/tests/test_router.py
-- [[test_router_openai_translation.py]] - code - gateway/tests/test_router_openai_translation.py
-- [[test_router_streaming.py]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_ignores_lines_without_data_prefix()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_payload_sets_stream_true()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_connect_failure()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_http_status_error()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_raises_forward_error_on_malformed_json()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_rejects_non_openai_compat_target()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - code - gateway/tests/test_router_streaming.py
-- [[test_stream_yields_content_deltas_in_order()]] - code - gateway/tests/test_router_streaming.py
+- [[test_approval_decision_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_approval_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_valid()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_empty_content()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_request_validation_invalid_source()]] - code - gateway/tests/test_main_simple.py
+- [[test_forward_routing.py]] - code - gateway/tests/test_forward_routing.py
+- [[test_global_exception_handler()]] - code - gateway/tests/test_main_simple.py
+- [[test_global_exception_handler_http_exception()]] - code - gateway/tests/test_main_simple.py
+- [[test_lifespan_initialization()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_over_limit_rejected()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_chunked_body_within_limit_passes_through()]] - code - gateway/tests/test_main_simple.py
+- [[test_limit_request_body_client_disconnect_returns_clean_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_log_requests_middleware()]] - code - gateway/tests/test_main_simple.py
+- [[test_main_simple.py]] - code - gateway/tests/test_main_simple.py
+- [[test_resolve_trust_level_maps_trust_score_to_tier()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_info_for_target_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_no_trust_manager_defaults_untrusted()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_non_owner_user_id_does_not_upgrade()]] - code - gateway/tests/test_forward_stream.py
+- [[test_resolve_trust_level_owner_user_id_upgrades_to_full()]] - code - gateway/tests/test_forward_stream.py
+- [[test_security_headers_middleware_catches_exception_group()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_normal_response()]] - code - gateway/tests/test_main_simple.py
+- [[test_security_headers_middleware_reraises_non_group()]] - code - gateway/tests/test_main_simple.py
+- [[v2 vs v1]] - document - docs/vault/05 - Dependencies/pydantic.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -157,36 +193,42 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 33 edges to [[_COMMUNITY_GatewayConfig]]
-- 12 edges to [[_COMMUNITY_test_forward_routing.py]]
-- 11 edges to [[_COMMUNITY_test_forward_stream.py]]
-- 9 edges to [[_COMMUNITY_lifespan.py]]
-- 9 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 9 edges to [[_COMMUNITY_test_security.py]]
-- 8 edges to [[_COMMUNITY_email_send]]
+- 33 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 32 edges to [[_COMMUNITY_test_forward_stream.py]]
+- 25 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 13 edges to [[_COMMUNITY_app]]
+- 11 edges to [[_COMMUNITY_fastapi]]
+- 10 edges to [[_COMMUNITY_test_security.py]]
+- 9 edges to [[_COMMUNITY_ApprovalRequest]]
+- 9 edges to [[_COMMUNITY_asyncio_9]]
+- 7 edges to [[_COMMUNITY_PIIConfig]]
+- 7 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 7 edges to [[_COMMUNITY__mock_response]]
 - 4 edges to [[_COMMUNITY_TestConfigValidation]]
-- 2 edges to [[_COMMUNITY_lifespan]]
-- 2 edges to [[_COMMUNITY_test_collaborator_greeter.py]]
-- 2 edges to [[_COMMUNITY_EnvelopeSigner]]
-- 2 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 3 edges to [[_COMMUNITY_AsyncMock]]
+- 3 edges to [[_COMMUNITY__get_gmail_app_password]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_GatewayEmailService]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
+- 2 edges to [[_COMMUNITY_CompetitiveIntelReport]]
+- 1 edge to [[_COMMUNITY_TestParanoidConfig]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_socrouter.py]]
-- 1 edge to [[_COMMUNITY_server.py]]
-- 1 edge to [[_COMMUNITY_test_dashboard.py]]
-- 1 edge to [[_COMMUNITY_egress_approval.py]]
-- 1 edge to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 1 edge to [[_COMMUNITY_GatewayBackedProvider]]
-- 1 edge to [[_COMMUNITY_ProxyResult]]
-- 1 edge to [[_COMMUNITY_test_mfa_guard.py]]
-- 1 edge to [[_COMMUNITY_test_soc_egress_endpoints.py]]
-- 1 edge to [[_COMMUNITY_test_edge_service_routes.py]]
-- 1 edge to [[_COMMUNITY_canvas_proxy.py]]
-- 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 1 edge to [[_COMMUNITY_test_edge_fuzz.py]]
-- 1 edge to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_management.py]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
+- 1 edge to [[_COMMUNITY_test_edge_pipeline.py]]
+- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 1 edge to [[_COMMUNITY_chatbotmain.py]]
+- 1 edge to [[_COMMUNITY_version_routes.py]]
+- 1 edge to [[_COMMUNITY_socmodels.py]]
+- 1 edge to [[_COMMUNITY_api.py]]
 
 ## Top bridge nodes
-- [[httpx]] - degree 27, connects to 19 communities
-- [[ForwardRequest]] - degree 42, connects to 8 communities
-- [[AgentTarget]] - degree 53, connects to 5 communities
-- [[MultiAgentRouter]] - degree 33, connects to 3 communities
-- [[ForwardError]] - degree 24, connects to 3 communities
+- [[pydantic]] - degree 17, connects to 12 communities
+- [[forward.py]] - degree 42, connects to 11 communities
+- [[ingest_apimodels.py]] - degree 45, connects to 9 communities
+- [[ForwardRequest]] - degree 42, connects to 6 communities
+- [[BaseModel_7]] - degree 17, connects to 6 communities

@@ -12,7 +12,7 @@ tags:
 # TrustLevel
 
 ## Connections
-- [[dot-__init__()_217]] - `references` [EXTRACTED]
+- [[dot-__init__()_103]] - `references` [EXTRACTED]
 - [[dot-_force_demotion()]] - `calls` [EXTRACTED]
 - [[dot-_promotion_allowed()]] - `references` [EXTRACTED]
 - [[dot-_score_to_level()]] - `calls` [EXTRACTED]
@@ -22,7 +22,7 @@ tags:
 - [[dot-record_success()]] - `references` [EXTRACTED]
 - [[dot-record_violation()]] - `references` [EXTRACTED]
 - [[dot-register_agent()]] - `references` [EXTRACTED]
-- [[IntEnum_4]] - `inherits` [EXTRACTED]
+- [[IntEnum_5]] - `inherits` [EXTRACTED]
 - [[TestActionGating]] - `uses` [INFERRED]
 - [[TestAgentRegistration]] - `uses` [INFERRED]
 - [[TestBackwardCompat]] - `uses` [INFERRED]

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_progressive_lockdown.py"
+source_file: "gateway/tests/test_a2a_integration.py"
 type: "code"
-community: "test_progressive_lockdown.py"
-location: "L38"
+community: "A2APeerTestDouble"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_progressive_lockdownpy
+  - community/A2APeerTestDouble
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeRBAC_1]] - `method` [EXTRACTED]
+- [[A2APeerTestDouble]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_progressive_lockdownpy
+#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble

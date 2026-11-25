@@ -1,20 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "test_dashboard.py"
+community: "fastapi.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/fastapimd
 ---
 
 # Request
 
 ## Connections
 - [[auth_dep()_1]] - `references` [EXTRACTED]
-- [[dashboard_stats()]] - `references` [EXTRACTED]
-- [[dashboard_ws_token()]] - `references` [EXTRACTED]
-- [[get_collaborators()]] - `references` [EXTRACTED]
-- [[serve_dashboard()]] - `references` [EXTRACTED]
+- [[decide_approval()]] - `references` [EXTRACTED]
+- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
+- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/fastapimd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestDefaultBotId"
+community: "test_telegram_proxy_outbound.py"
 location: "L5386"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDefaultBotId
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # .test_injected_default_overrides_openclaw()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestDefaultBotId]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDefaultBotId
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

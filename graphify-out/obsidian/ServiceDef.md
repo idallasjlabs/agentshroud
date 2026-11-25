@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/runtime/compose_generator.py"
 type: "code"
-community: "generate_compose"
+community: "test_runtime_engines.py"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_compose
+  - community/test_runtime_enginespy
 ---
 
 # ServiceDef
@@ -21,4 +21,4 @@ tags:
 - [[generate_compose()]] - `references` [EXTRACTED]
 - [[test_runtime_engines.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_compose
+#graphify/code #graphify/EXTRACTED #community/test_runtime_enginespy

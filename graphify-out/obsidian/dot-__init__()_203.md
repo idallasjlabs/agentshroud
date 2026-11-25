@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/facades.py"
+source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "EnvelopeSigner"
-location: "L159"
+community: "HeuristicClassifier"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/HeuristicClassifier
 ---
 
 # .__init__()
 
 ## Connections
-- [[EnvelopeSigner]] - `references` [EXTRACTED]
-- [[HermesDelegate]] - `method` [EXTRACTED]
+- [[dot-_try_load_model()]] - `calls` [EXTRACTED]
+- [[HeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

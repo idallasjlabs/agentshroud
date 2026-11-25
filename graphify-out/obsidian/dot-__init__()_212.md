@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/security/multi_turn_tracker.py"
+source_file: "gateway/security/credential_injector.py"
 type: "code"
-community: "MultiTurnTracker"
-location: "L94"
+community: "CredentialInjector"
+location: "L105"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MultiTurnTracker
+  - community/CredentialInjector
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-_compile_detection_patterns()_1]] - `calls` [EXTRACTED]
-- [[Any_82]] - `references` [EXTRACTED]
-- [[Initialize the multi-turn tracker. Args config Configuration dictionary with…]] - `rationale_for` [EXTRACTED]
-- [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[ThresholdConfig]] - `calls` [EXTRACTED]
+- [[dot-_load_credentials()]] - `calls` [EXTRACTED]
+- [[dot-_load_default_mappings()]] - `calls` [EXTRACTED]
+- [[CredentialInjector]] - `method` [EXTRACTED]
+- [[CredentialInjectorConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

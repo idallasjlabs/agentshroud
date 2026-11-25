@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/proxy/llm_proxy.py"
 type: "code"
-community: "make_event"
-location: "L95"
+community: "LLMProxy"
+location: "L287"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/LLMProxy
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
-- [[EventBus]] - `method` [EXTRACTED]
+- [[LLMProxy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/LLMProxy

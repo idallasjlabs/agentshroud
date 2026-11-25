@@ -12,12 +12,12 @@ tags:
 # ServicePrivacy
 
 ## Connections
-- [[dot-from_dict()_3]] - `calls` [EXTRACTED]
-- [[Enum_8]] - `inherits` [EXTRACTED]
+- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
+- [[Enum_7]] - `inherits` [EXTRACTED]
 - [[Privacy classification for a service.]] - `rationale_for` [EXTRACTED]
 - [[TestPrivacyPolicyParsing]] - `uses` [INFERRED]
 - [[privacy_policy.py]] - `contains` [EXTRACTED]
-- [[str_5]] - `inherits` [EXTRACTED]
+- [[str_4]] - `inherits` [EXTRACTED]
 - [[test_privacy_policy.py]] - `imports` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer

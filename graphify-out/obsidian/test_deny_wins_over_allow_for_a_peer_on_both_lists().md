@@ -12,7 +12,7 @@ tags:
 # test_deny_wins_over_allow_for_a_peer_on_both_lists()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]

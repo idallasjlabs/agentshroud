@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "asyncio"
+community: "EgressAction"
 location: "L300"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressAction
 ---
 
 # .test_allow_is_not_persisted_to_audit_store()
@@ -17,4 +17,4 @@ tags:
 - [[TestAuditStorePersistence]] - `method` [EXTRACTED]
 - [[asyncio_63]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressAction

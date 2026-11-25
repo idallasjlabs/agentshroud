@@ -136,6 +136,7 @@ members: 158
 - [[fake_notice()_9]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_notice()_10]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_notice()_11]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_3]] - code - gateway/tests/test_telegram_proxy_inbound.py
@@ -156,8 +157,7 @@ members: 158
 - [[fake_send()_18]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_19]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fixture_37]] - code
+- [[fixture_45]] - code
 - [[hello!' and 'hello' should both match.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[hello' (bare) in a group triggers '✅ @agentshroud_bot online' from openclaw.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[hello' in a group triggers '✅ @agentshroud_hermes_bot online' when processed as…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
@@ -175,26 +175,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 50 edges to [[_COMMUNITY__wrap_response]]
-- 48 edges to [[_COMMUNITY_asyncio_1]]
-- 19 edges to [[_COMMUNITY__make_update]]
-- 9 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 5 edges to [[_COMMUNITY_TestCollaboratorPromptClassifiers]]
+- 63 edges to [[_COMMUNITY__wrap_response]]
+- 47 edges to [[_COMMUNITY_asyncio]]
+- 14 edges to [[_COMMUNITY_TelegramAPIProxy]]
+- 7 edges to [[_COMMUNITY_PassthroughPipeline]]
 - 4 edges to [[_COMMUNITY_AsyncMock]]
 - 4 edges to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice]]
-- 3 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
-- 3 edges to [[_COMMUNITY_BlockingPipeline]]
-- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 3 edges to [[_COMMUNITY_RateLimiter]]
+- 2 edges to [[_COMMUNITY_MiddlewareResult]]
+- 2 edges to [[_COMMUNITY_dot-test_encoding_detected_on_getUpdates]]
 - 1 edge to [[_COMMUNITY_dot-_bot_is_mentioned]]
 - 1 edge to [[_COMMUNITY_dot-_normalize_command_token]]
+- 1 edge to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
 - 1 edge to [[_COMMUNITY_dot-_is_group_message]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_telegram_proxy.py]]
+- 1 edge to [[_COMMUNITY_TeamsConfig]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
-- [[test_telegram_proxy_inbound.py]] - degree 32, connects to 16 communities
-- [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - degree 9, connects to 4 communities
-- [[dot-test_suspended_drop_notice_respects_cooldown()]] - degree 9, connects to 4 communities
-- [[dot-test_suspended_user_receives_drop_notice()]] - degree 9, connects to 4 communities
-- [[dot-test_dm_hello_does_not_trigger_probe()]] - degree 8, connects to 3 communities
+- [[test_telegram_proxy_inbound.py]] - degree 32, connects to 15 communities
+- [[dot-test_suspended_drop_notice_fires_again_after_cooldown()]] - degree 9, connects to 3 communities
+- [[dot-test_suspended_drop_notice_respects_cooldown()]] - degree 9, connects to 3 communities
+- [[dot-test_suspended_user_receives_drop_notice()]] - degree 9, connects to 3 communities
+- [[dot-test_collaborator_safe_info_response_retries_with_unavailable_notice_on_send_failure()]] - degree 5, connects to 3 communities

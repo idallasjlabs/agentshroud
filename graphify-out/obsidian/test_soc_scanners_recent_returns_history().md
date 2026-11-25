@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Returns scanner events from app_state.scanner_result_history.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_51]] - `references` [EXTRACTED]
+- [[asyncio_54]] - `references` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

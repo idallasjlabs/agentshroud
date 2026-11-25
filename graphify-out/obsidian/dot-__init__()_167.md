@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_pipeline.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "test_edge_e2e_sdk.py"
-location: "L54"
+community: "AlertTelegramRelay"
+location: "L13"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[Clock_1]] - `method` [EXTRACTED]
+- [[_SendSpy]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

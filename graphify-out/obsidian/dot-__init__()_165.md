@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_e2e_sdk.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_edge_e2e_sdk.py"
-location: "L54"
+community: "EgressAction"
+location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/EgressAction
 ---
 
 # .__init__()
 
 ## Connections
-- [[Facade_1]] - `method` [EXTRACTED]
+- [[FakeAuditStore_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/EgressAction

@@ -12,7 +12,7 @@ members: 6
 - [[browserbrowse.js]] - code - .agents/skills/browser/browse.js
 - [[browserFetch()]] - code - .agents/skills/browser/browse.js
 - [[fs_2]] - code - .agents/skills/browser/browse.js
-- [[path_26]] - code - .agents/skills/browser/browse.js
+- [[path_25]] - code - .agents/skills/browser/browse.js
 - [[{ chromium }]] - code - .agents/skills/browser/browse.js
 
 ## Live Query (requires Dataview plugin)

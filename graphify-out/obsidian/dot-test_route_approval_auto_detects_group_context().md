@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[TestGroupApprovalRouterContextDetection]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 - [[route_approval auto-detects group context when group_chat_id not explicitly…]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_resource_guard_wiring.py"
 type: "code"
-community: "ResourceGuard"
+community: "setup_resource_guard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/setup_resource_guard
 ---
 
 # test_resource_guard_wiring.py
@@ -20,4 +20,4 @@ tags:
 - [[TestResourceGuardWiring]] - `contains` [EXTRACTED]
 - [[setup_resource_guard()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/setup_resource_guard

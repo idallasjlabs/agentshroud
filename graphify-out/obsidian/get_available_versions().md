@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[List available OpenClaw versions.]] - `rationale_for` [EXTRACTED]
-- [[get_7]] - `references` [EXTRACTED]
+- [[get_8]] - `references` [EXTRACTED]
 - [[list_available_versions()]] - `calls` [EXTRACTED]
 - [[version_routes.py_2]] - `contains` [EXTRACTED]
 

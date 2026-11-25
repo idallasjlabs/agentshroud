@@ -1,18 +1,20 @@
 ---
-source_file: "gateway/tests/test_benchmark_regression.py"
+source_file: "gateway/tests/test_output_canary.py"
 type: "code"
-community: "test_benchmark_regression.py"
-location: "L104"
+community: "TestModuleInstantiationInEnforceMode"
+location: "L20"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_benchmark_regressionpy
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestBenchmarkRegression]] - `method` [EXTRACTED]
-- [[load_baseline()]] - `calls` [EXTRACTED]
+- [[CanaryConfig]] - `calls` [EXTRACTED]
+- [[OutputCanary]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._2]] - `rationale_for` [EXTRACTED]
+- [[TestOutputCanary]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_benchmark_regressionpy
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

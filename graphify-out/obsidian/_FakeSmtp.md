@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__enter__()]] - `method` [EXTRACTED]
 - [[dot-__exit__()]] - `method` [EXTRACTED]
-- [[dot-__init__()_73]] - `method` [EXTRACTED]
+- [[dot-__init__()_64]] - `method` [EXTRACTED]
 - [[dot-login()_1]] - `method` [EXTRACTED]
 - [[dot-sendmail()_1]] - `method` [EXTRACTED]
 - [[Records loginsendmail; usable as a context manager like SMTP_SSL.]] - `rationale_for` [EXTRACTED]

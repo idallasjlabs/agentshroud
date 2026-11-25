@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "._is_domain_allowed"
+community: "ToolResultSanitizer"
 location: "L169"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_is_domain_allowed
+  - community/ToolResultSanitizer
 ---
 
 # Remove or warn about markdown images pointing to non-allowlisted domains.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-sanitize_images()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_is_domain_allowed
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

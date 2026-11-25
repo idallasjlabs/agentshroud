@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "ContextGuard"
+community: "TestConcurrency"
 location: "L273"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestConcurrency
 ---
 
 # .test_context_guard_session_isolation_under_load()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ContextGuard]] - `calls` [INFERRED]
 - [[Sessions shouldn't leak data under concurrent access.]] - `rationale_for` [EXTRACTED]
-- [[TestConcurrency]] - `method` [EXTRACTED]
-- [[analyze()]] - `indirect_call` [INFERRED]
+- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[analyze()_1]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestConcurrency

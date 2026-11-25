@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
 type: "document"
-community: "port_manager.py"
-location: "L49"
+community: "Container Errors"
+location: "L119"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/Container_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[Container Errors_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/Container_Errors

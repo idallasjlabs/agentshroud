@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestSecurityPolicyProtection"
+community: "test_privilege_separation.py"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSecurityPolicyProtection
+  - community/test_privilege_separationpy
 ---
 
 # .test_config_yaml_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot modify gateway configuration.]] - `rationale_for` [EXTRACTED]
 - [[TestSecurityPolicyProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSecurityPolicyProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

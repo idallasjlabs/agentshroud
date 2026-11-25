@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/middleware.py"
 type: "rationale"
-community: "MiddlewareManager"
+community: ".process_request"
 location: "L1200"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/process_request
 ---
 
 # Check for unauthorized cross-session access attempts. **Implementation note:**…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_check_cross_session_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/rationale #graphify/EXTRACTED #community/process_request

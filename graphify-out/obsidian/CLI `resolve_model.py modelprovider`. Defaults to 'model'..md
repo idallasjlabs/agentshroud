@@ -12,6 +12,6 @@ tags:
 # CLI: `resolve_model.py [model|provider]`. Defaults to 'model'.
 
 ## Connections
-- [[main()_7]] - `rationale_for` [EXTRACTED]
+- [[main()_6]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/test_hermes_model_resolverpy

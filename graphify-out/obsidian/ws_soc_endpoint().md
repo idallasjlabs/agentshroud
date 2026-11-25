@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "ws_soc_endpoint"
+community: "test_soc_realtime_coverage.py"
 location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_soc_endpoint
+  - community/test_soc_realtime_coveragepy
 ---
 
 # ws_soc_endpoint()
@@ -21,7 +21,7 @@ tags:
 - [[FastAPI WebSocket route handler for wssoc.]] - `rationale_for` [EXTRACTED]
 - [[RBACConfig]] - `calls` [EXTRACTED]
 - [[SOCWebSocketHandler]] - `calls` [EXTRACTED]
-- [[WebSocket_2]] - `references` [EXTRACTED]
+- [[WebSocket_1]] - `references` [EXTRACTED]
 - [[_get_config_token()]] - `calls` [EXTRACTED]
 - [[redeem_ws_token()]] - `calls` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
@@ -29,4 +29,4 @@ tags:
 - [[test_soc_realtime_coverage.py]] - `imports` [EXTRACTED]
 - [[websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint
+#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "MiddlewareResult"
 location: "L9477"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/MiddlewareResult
 ---
 
 # fake_notify_blocked()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/MiddlewareResult

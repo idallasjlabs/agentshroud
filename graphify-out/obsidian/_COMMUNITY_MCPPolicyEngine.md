@@ -1,22 +1,22 @@
 ---
 type: community
-members: 107
+members: 109
 ---
 
 # MCPPolicyEngine
 
-**Members:** 107 nodes
+**Members:** 109 nodes
 
 ## Members
-- [[dot-__init__()_133]] - code - gateway/security/mcp_policy.py
-- [[dot-__init__()_134]] - code - gateway/tests/test_mcp_policy.py
+- [[dot-__init__()_129]] - code - gateway/security/mcp_policy.py
+- [[dot-__init__()_130]] - code - gateway/tests/test_mcp_policy.py
 - [[dot-__post_init__()_6]] - code - gateway/security/mcp_policy.py
 - [[dot-_decide()]] - code - gateway/security/mcp_policy.py
 - [[dot-_tier_for()]] - code - gateway/security/mcp_policy.py
 - [[dot-allowed()]] - code - gateway/security/mcp_policy.py
 - [[dot-enforce()]] - code - gateway/security/mcp_policy.py
 - [[dot-evaluate()]] - code - gateway/security/mcp_policy.py
-- [[dot-from_dict()_7]] - code - gateway/security/mcp_policy.py
+- [[dot-from_dict()_8]] - code - gateway/security/mcp_policy.py
 - [[dot-submit_tool_request()_3]] - code - gateway/tests/test_mcp_policy.py
 - [[dot-test_configured_servers_are_allowlisted_by_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
 - [[dot-test_engine_allows_known_server_under_default()]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
@@ -38,11 +38,12 @@ members: 107
 - [[A stock config (no mcp_policy) must produce a non-empty, deny-by-default…]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
 - [[An empty config denies everything — never a blanket allow.]] - rationale - gateway/tests/test_mcp_policy.py
 - [[An operator-authored mcp_policy section must be honoured verbatim.]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
-- [[Any_49]] - code
+- [[Any_51]] - code
+- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig. The default…]] - rationale - gateway/tests/test_mcp_policy.py
 - [[Decides allow  deny  require-approval for MCP tool calls. Usage engine =…]] - rationale - gateway/security/mcp_policy.py
 - [[Declarative MCP security policy. Loaded from the ``mcp_policy`` section of…]] - rationale - gateway/security/mcp_policy.py
 - [[End-to-end the engine wired into MCPProxy with a REAL approval queue must…]] - rationale - gateway/tests/test_mcp_policy.py
-- [[Enum_33]] - code
+- [[Enum_32]] - code
 - [[Evaluate a single MCP tool call. Pure — no IO, no side effects beyond best-…]] - rationale - gateway/security/mcp_policy.py
 - [[Evaluate and resolve the decision to a terminal ALLOWDENY. For…]] - rationale - gateway/security/mcp_policy.py
 - [[Fail-closed intent even on a known server, an obviously destructive tool must…]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
@@ -60,7 +61,7 @@ members: 107
 - [[Normalize a servertool reference for robust, evasion-resistant matching.…]] - rationale - gateway/security/mcp_policy.py
 - [[Owner skips the approval gate for high-risk tools, but a denylisted tool is…]] - rationale - gateway/tests/test_mcp_policy.py
 - [[Parse a policy config from a plain dict (e.g. loaded from YAML).]] - rationale - gateway/security/mcp_policy.py
-- [[Path_41]] - code
+- [[Path_40]] - code
 - [[Resolve the risk tier for a tool. Explicit classification (qualified beats…]] - rationale - gateway/security/mcp_policy.py
 - [[TDD — WS-E finding RT-11 (HIGH, deploy) MCP policy engine ships DORMANT.…]] - rationale - gateway/tests/test_mcp_policy_default_failclosed.py
 - [[TestDefaultMcpPolicyIsFailClosed]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
@@ -74,18 +75,19 @@ members: 107
 - [[When an operator explicitly opts into default-allow, a non-allowlisted server…]] - rationale - gateway/tests/test_mcp_policy.py
 - [[_FakeApprovalQueue]] - code - gateway/tests/test_mcp_policy.py
 - [[_base_config()]] - code - gateway/tests/test_mcp_policy.py
-- [[_boom()_21]] - code - gateway/tests/test_mcp_policy.py
-- [[_boom()_22]] - code - gateway/tests/test_mcp_policy.py
+- [[_boom()_24]] - code - gateway/tests/test_mcp_policy.py
+- [[_boom()_25]] - code - gateway/tests/test_mcp_policy.py
 - [[_fake_record()]] - code - gateway/tests/test_mcp_policy.py
 - [[_norm()]] - code - gateway/security/mcp_policy.py
+- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
 - [[_run()_8]] - code - gateway/tests/test_mcp_policy.py
 - [[_run()_9]] - code - gateway/tests/test_mcp_policy.py
 - [[_write()_1]] - code - gateway/tests/test_mcp_policy_default_failclosed.py
 - [[engine()]] - code - gateway/tests/test_mcp_policy.py
 - [[evaluate() records the decision for the SOC module heat-map.]] - rationale - gateway/tests/test_mcp_policy.py
-- [[fixture_92]] - code
+- [[fixture_97]] - code
 - [[mcp_policy.py]] - code - gateway/security/mcp_policy.py
-- [[str_18]] - code
+- [[str_15]] - code
 - [[test_allowlisted_server_safe_tool_is_allowed()]] - code - gateway/tests/test_mcp_policy.py
 - [[test_bare_tool_name_risk_tier_applies_across_servers()]] - code - gateway/tests/test_mcp_policy.py
 - [[test_critical_tool_requires_approval()]] - code - gateway/tests/test_mcp_policy.py
@@ -124,17 +126,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 11 edges to [[_COMMUNITY_lifespan]]
+- 11 edges to [[_COMMUNITY_ingest_apiconfig.py]]
 - 8 edges to [[_COMMUNITY_MCPToolCall]]
-- 7 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 5 edges to [[_COMMUNITY_socrouter.py]]
+- 6 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 5 edges to [[_COMMUNITY_RBACConfig]]
 - 4 edges to [[_COMMUNITY_test_mcp_proxy.py]]
-- 3 edges to [[_COMMUNITY_lifespan.py]]
+- 3 edges to [[_COMMUNITY_lifespan]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
 - 2 edges to [[_COMMUNITY_test_module_stats.py]]
 
 ## Top bridge nodes
-- [[test_mcp_policy.py]] - degree 46, connects to 4 communities
+- [[test_mcp_policy.py]] - degree 46, connects to 5 communities
 - [[MCPPolicyEngine]] - degree 46, connects to 3 communities
 - [[MCPPolicyConfig]] - degree 23, connects to 3 communities
-- [[_run()_9]] - degree 7, connects to 3 communities
 - [[mcp_policy.py]] - degree 11, connects to 2 communities
+- [[_real_queue()]] - degree 8, connects to 2 communities

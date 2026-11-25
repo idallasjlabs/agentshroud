@@ -12,7 +12,7 @@ tags:
 # A2AProxy
 
 ## Connections
-- [[dot-__init__()_222]] - `method` [EXTRACTED]
+- [[dot-__init__()_225]] - `method` [EXTRACTED]
 - [[dot-_audit()_1]] - `method` [EXTRACTED]
 - [[dot-_record_trust_violation()]] - `method` [EXTRACTED]
 - [[dot-extract_text_for_pii_scan()]] - `method` [EXTRACTED]

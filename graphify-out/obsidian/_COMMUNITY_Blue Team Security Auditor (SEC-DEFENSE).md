@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Blue Team Security Auditor (SEC-DEFENSE)]] - document - .agents/skills/sec-defense/README.md
-- [[Purpose_112]] - document - .agents/skills/sec-defense/README.md
+- [[Purpose_114]] - document - .agents/skills/sec-defense/README.md
 - [[Related Skills_44]] - document - .agents/skills/sec-defense/README.md
-- [[Usage_54]] - document - .agents/skills/sec-defense/README.md
+- [[Usage_55]] - document - .agents/skills/sec-defense/README.md
 - [[sec-defenseREADME]] - document - .agents/skills/sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)

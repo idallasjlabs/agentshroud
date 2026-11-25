@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_soc_edge.py"
+source_file: "gateway/security/audit_store.py"
 type: "code"
-community: "TestAgentsRegistry"
-location: "L44"
+community: "AuditEvent"
+location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/AuditEvent
 ---
 
 # .__init__()
 
 ## Connections
-- [[FakeCaller_1]] - `method` [EXTRACTED]
+- [[dot-_generate_event_id()]] - `calls` [EXTRACTED]
+- [[AuditEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/AuditEvent

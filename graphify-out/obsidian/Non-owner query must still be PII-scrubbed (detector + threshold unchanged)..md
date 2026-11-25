@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L770"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # Non-owner query must still be PII-scrubbed (detector + threshold unchanged).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_non_owner_inbound_query_still_redacted()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

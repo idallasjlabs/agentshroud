@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TrustLevel"
+community: "SkillGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/SkillGuard
 ---
 
 # IntEnum
 
 ## Connections
-- [[TrustLevel_1]] - `inherits` [EXTRACTED]
+- [[Recommendation]] - `inherits` [EXTRACTED]
+- [[Severity_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustLevel
+#graphify/code #graphify/EXTRACTED #community/SkillGuard

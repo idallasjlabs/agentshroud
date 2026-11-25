@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "URLAnalyzer"
+community: "KeyRotationConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/KeyRotationConfig
 ---
 
 # Enum
 
 ## Connections
-- [[URLVerdict]] - `inherits` [EXTRACTED]
-- [[url_analyzer.py_2]] - `imports_from` [EXTRACTED]
+- [[RotationStatus]] - `inherits` [EXTRACTED]
+- [[key_rotation.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig

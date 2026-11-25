@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "lifespan.py"
+community: "TestHTTPSecurity"
 location: "L128"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TestHTTPSecurity
 ---
 
 # Unicode tricks shouldn't bypass PII detection.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_unicode_normalization_bypass()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/lifespanpy
+#graphify/rationale #graphify/EXTRACTED #community/TestHTTPSecurity

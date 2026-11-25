@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[DifferentialPIIConfig]] - `uses` [INFERRED]
 - [[DifferentialPIIDetector]] - `uses` [INFERRED]
-- [[fixture_26]] - `references` [EXTRACTED]
+- [[fixture_32]] - `references` [EXTRACTED]
 - [[test_differential_pii_detector.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_differential_pii_detectorpy

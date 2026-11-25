@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "TestAgentsRegistry"
+community: ".from_source"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/from_source
 ---
 
 # fixture
 
 ## Connections
-- [[client()_18]] - `references` [EXTRACTED]
-- [[edge()]] - `references` [EXTRACTED]
-- [[holder()_1]] - `references` [EXTRACTED]
-- [[state()_1]] - `references` [EXTRACTED]
+- [[dot-client()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/from_source

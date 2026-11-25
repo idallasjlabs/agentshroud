@@ -15,9 +15,9 @@ tags:
 - [[Fallback Behavior]] - `contains` [EXTRACTED]
 - [[First-Boot Performance]] - `contains` [EXTRACTED]
 - [[Model]] - `contains` [EXTRACTED]
-- [[Purpose_78]] - `contains` [EXTRACTED]
-- [[Related Notes_47]] - `contains` [EXTRACTED]
-- [[Where Used_1]] - `contains` [EXTRACTED]
+- [[Purpose_81]] - `contains` [EXTRACTED]
+- [[Related Notes_50]] - `contains` [EXTRACTED]
+- [[Where Used_4]] - `contains` [EXTRACTED]
 - [[spacy]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/spaCy

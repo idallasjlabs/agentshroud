@@ -21,9 +21,9 @@ members: 28
 - [[dot-test_op_subprocess_failure_returns_502()]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_path_traversal_blocked()_1]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_path_traversal_returns_403()]] - code - gateway/tests/test_op_proxy.py
-- [[dot-test_requires_auth()_1]] - code - gateway/tests/test_op_proxy.py
+- [[dot-test_requires_auth()_2]] - code - gateway/tests/test_op_proxy.py
 - [[dot-test_valid_reference_returns_value()]] - code - gateway/tests/test_op_proxy.py
-- [[Endpoint returns 401 without auth override.]] - rationale - gateway/tests/test_op_proxy.py
+- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_op_proxy.py
 - [[Real functional check, not a boot-time smoke test every op reference…]] - rationale - gateway/tests/test_op_proxy.py
 - [[Return True if the op reference matches an allowed path pattern.]] - rationale - gateway/ingest_api/main.py
 - [[SCRUM-81 Hermes weekly Jira review needs tokenemaildomain fields.]] - rationale - gateway/tests/test_op_proxy.py
@@ -33,7 +33,7 @@ members: 28
 - [[Tests for POST credentialsop-proxy endpoint (P2 credential isolation).]] - rationale - gateway/tests/test_op_proxy.py
 - [[The vault has no item literally titled Brave Search API Key — the real item…]] - rationale - gateway/tests/test_op_proxy.py
 - [[_is_op_reference_allowed()]] - code - gateway/ingest_api/main.py
-- [[client()_16]] - code - gateway/tests/test_op_proxy.py
+- [[client()_17]] - code - gateway/tests/test_op_proxy.py
 - [[fixture_108]] - code
 - [[test_op_proxy.py]] - code - gateway/tests/test_op_proxy.py
 
@@ -51,5 +51,5 @@ SORT file.name ASC
 ## Top bridge nodes
 - [[test_op_proxy.py]] - degree 8, connects to 2 communities
 - [[_is_op_reference_allowed()]] - degree 13, connects to 1 community
-- [[client()_16]] - degree 3, connects to 1 community
-- [[dot-test_requires_auth()_1]] - degree 3, connects to 1 community
+- [[client()_17]] - degree 3, connects to 1 community
+- [[dot-test_requires_auth()_2]] - degree 3, connects to 1 community

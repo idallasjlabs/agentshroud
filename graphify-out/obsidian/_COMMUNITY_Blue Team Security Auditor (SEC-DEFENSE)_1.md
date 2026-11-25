@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Blue Team Security Auditor (SEC-DEFENSE)_1]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Purpose_129]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Purpose_131]] - document - docker/config/hermes/skills/i-sec-defense/README.md
 - [[Related Skills_61]] - document - docker/config/hermes/skills/i-sec-defense/README.md
-- [[Usage_71]] - document - docker/config/hermes/skills/i-sec-defense/README.md
+- [[Usage_72]] - document - docker/config/hermes/skills/i-sec-defense/README.md
 - [[hermesskillsi-sec-defenseREADME]] - document - docker/config/hermes/skills/i-sec-defense/README.md
 
 ## Live Query (requires Dataview plugin)

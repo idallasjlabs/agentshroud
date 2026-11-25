@@ -15,6 +15,6 @@ tags:
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestListServices]] - `method` [EXTRACTED]
 - [[_boom()_27]] - `contains` [EXTRACTED]
-- [[_boom()_25]] - `indirect_call` [INFERRED]
+- [[_boom()_26]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ServiceManager

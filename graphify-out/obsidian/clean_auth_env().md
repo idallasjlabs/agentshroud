@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Remove all gateway-password env vars and clear token stores.]] - `rationale_for` [EXTRACTED]
-- [[fixture_119]] - `references` [EXTRACTED]
+- [[fixture_114]] - `references` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy

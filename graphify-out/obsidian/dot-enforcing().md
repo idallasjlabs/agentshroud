@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/profiles.py"
 type: "code"
-community: "make_event"
+community: "test_edge_pipeline.py"
 location: "L84"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/test_edge_pipelinepy
 ---
 
 # .enforcing()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[VendorProfile]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_log_sanitizer.py"
 type: "rationale"
-community: "LogSanitizer"
+community: "deep_security_test"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/deep_security_test
 ---
 
 # Test Log Sanitizer - verify PII and credential scrubbing from log output.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_log_sanitizer.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LogSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/deep_security_test

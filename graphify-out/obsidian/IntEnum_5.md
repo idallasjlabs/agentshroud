@@ -1,17 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ScanResult"
+community: "TrustLevel"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/TrustLevel
 ---
 
 # IntEnum
 
 ## Connections
-- [[Recommendation]] - `inherits` [EXTRACTED]
-- [[Severity]] - `inherits` [EXTRACTED]
+- [[TrustLevel_1]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ScanResult
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

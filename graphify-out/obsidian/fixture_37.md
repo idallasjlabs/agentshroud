@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "._make_proxy"
+community: "_engine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_proxy
+  - community/_engine
 ---
 
 # fixture
 
 ## Connections
-- [[_no_owner_mirror()]] - `references` [EXTRACTED]
-- [[_no_real_telegram_network()]] - `references` [EXTRACTED]
+- [[_module_state_guard()]] - `references` [EXTRACTED]
+- [[client()_10]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_proxy
+#graphify/code #graphify/EXTRACTED #community/_engine

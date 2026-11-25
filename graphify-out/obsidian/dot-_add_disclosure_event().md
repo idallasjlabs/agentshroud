@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/multi_turn_tracker.py"
 type: "code"
-community: "SessionContext"
+community: "MultiTurnTracker"
 location: "L308"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SessionContext
+  - community/MultiTurnTracker
 ---
 
 # ._add_disclosure_event()
@@ -19,6 +19,6 @@ tags:
 - [[DisclosureCategory]] - `references` [EXTRACTED]
 - [[DisclosureEvent]] - `calls` [EXTRACTED]
 - [[MultiTurnTracker]] - `method` [EXTRACTED]
-- [[SessionContext]] - `references` [EXTRACTED]
+- [[SessionContext_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SessionContext
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

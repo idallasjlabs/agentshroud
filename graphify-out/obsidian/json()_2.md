@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_router.py"
+source_file: "gateway/tests/test_alert_telegram_relay.py"
 type: "code"
-community: "AgentTarget"
-location: "L265"
+community: "AlertTelegramRelay"
+location: "L144"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/AlertTelegramRelay
 ---
 
 # json()
 
 ## Connections
-- [[test_forward_uses_chat_path()]] - `contains` [EXTRACTED]
+- [[test_api_alerts_endpoint_emits_bus_event()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

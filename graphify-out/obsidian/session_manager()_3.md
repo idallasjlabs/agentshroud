@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_file_sandbox_message_gate.py"
+source_file: "gateway/tests/test_shared_memory_write_acl.py"
 type: "code"
-community: "test_file_sandbox_message_gate.py"
-location: "L43"
+community: "SharedMemoryManager"
+location: "L69"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/SharedMemoryManager
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `uses` [INFERRED]
-- [[fixture_103]] - `references` [EXTRACTED]
-- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
+- [[fixture_66]] - `references` [EXTRACTED]
+- [[test_shared_memory_write_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

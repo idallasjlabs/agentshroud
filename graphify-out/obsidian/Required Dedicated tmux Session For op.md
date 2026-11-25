@@ -1,11 +1,11 @@
 ---
 source_file: "skills/openclaw/1password/SKILL.md"
 type: "rationale"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # Required Dedicated tmux Session For op
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[1Password CLI Skill]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

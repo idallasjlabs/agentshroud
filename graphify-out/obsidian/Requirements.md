@@ -1,17 +1,17 @@
 ---
-source_file: "CONTRIBUTING.md"
+source_file: "firmware/voice-terminal/components/lvgl_kawaii_face/README.md"
 type: "document"
-community: "Contributing to AgentShroud™"
-location: "L56"
+community: "LVGL KAWAII FACE"
+location: "L120"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Contributing_to_AgentShroud
+  - community/LVGL_KAWAII_FACE
 ---
 
 # Requirements
 
 ## Connections
-- [[Pull Request Process]] - `contains` [EXTRACTED]
+- [[LVGL KAWAII FACE]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Contributing_to_AgentShroud
+#graphify/document #graphify/EXTRACTED #community/LVGL_KAWAII_FACE

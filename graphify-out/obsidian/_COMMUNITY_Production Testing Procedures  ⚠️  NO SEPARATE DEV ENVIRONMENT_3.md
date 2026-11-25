@@ -8,26 +8,26 @@ members: 20
 **Members:** 20 nodes
 
 ## Members
-- [[dot-agentsagentsi-qa]] - document - .agents/agents/i-qa.md
-- [[A. AWS Glue Jobs_3]] - document - .agents/agents/i-qa.md
-- [[B. AWS Step Functions_3]] - document - .agents/agents/i-qa.md
-- [[C. AWS Athena_3]] - document - .agents/agents/i-qa.md
-- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_3]] - document - .agents/agents/i-qa.md
-- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_3]] - document - .agents/agents/i-qa.md
-- [[F. IAM Policies_3]] - document - .agents/agents/i-qa.md
-- [[G. Tailscale  Network_3]] - document - .agents/agents/i-qa.md
-- [[General Rules_3]] - document - .agents/agents/i-qa.md
-- [[H. Service Control for Production Testing_3]] - document - .agents/agents/i-qa.md
-- [[H.1 Pause Glue Jobs Before Testing_3]] - document - .agents/agents/i-qa.md
-- [[H.2 Pause Step Functions Before Testing_3]] - document - .agents/agents/i-qa.md
-- [[H.3 Database Tables for Test Data_3]] - document - .agents/agents/i-qa.md
-- [[H.4 Cleanup Verification Checklist_3]] - document - .agents/agents/i-qa.md
-- [[Objective_9]] - document - .agents/agents/i-qa.md
-- [[Output Format_98]] - document - .agents/agents/i-qa.md
-- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_3]] - document - .agents/agents/i-qa.md
-- [[Role_244]] - document - .agents/agents/i-qa.md
-- [[Skill Quality Assurance (QA)_3]] - document - .agents/agents/i-qa.md
-- [[Testing Hierarchy_3]] - document - .agents/agents/i-qa.md
+- [[dot-cursoragentsi-qa]] - document - .cursor/agents/i-qa.md
+- [[A. AWS Glue Jobs_4]] - document - .cursor/agents/i-qa.md
+- [[B. AWS Step Functions_4]] - document - .cursor/agents/i-qa.md
+- [[C. AWS Athena_4]] - document - .cursor/agents/i-qa.md
+- [[D. PostgreSQL — RDS (`fe-gsdl-poc-database`)_4]] - document - .cursor/agents/i-qa.md
+- [[E. MySQL — On-Site Zabbix Databases (200+ sites)_4]] - document - .cursor/agents/i-qa.md
+- [[F. IAM Policies_4]] - document - .cursor/agents/i-qa.md
+- [[G. Tailscale  Network_4]] - document - .cursor/agents/i-qa.md
+- [[General Rules_4]] - document - .cursor/agents/i-qa.md
+- [[H. Service Control for Production Testing_4]] - document - .cursor/agents/i-qa.md
+- [[H.1 Pause Glue Jobs Before Testing_4]] - document - .cursor/agents/i-qa.md
+- [[H.2 Pause Step Functions Before Testing_4]] - document - .cursor/agents/i-qa.md
+- [[H.3 Database Tables for Test Data_4]] - document - .cursor/agents/i-qa.md
+- [[H.4 Cleanup Verification Checklist_4]] - document - .cursor/agents/i-qa.md
+- [[Objective_10]] - document - .cursor/agents/i-qa.md
+- [[Output Format_99]] - document - .cursor/agents/i-qa.md
+- [[Production Testing Procedures  ⚠️  NO SEPARATE DEV ENVIRONMENT_4]] - document - .cursor/agents/i-qa.md
+- [[Role_245]] - document - .cursor/agents/i-qa.md
+- [[Skill Quality Assurance (QA)_4]] - document - .cursor/agents/i-qa.md
+- [[Testing Hierarchy_4]] - document - .cursor/agents/i-qa.md
 
 ## Live Query (requires Dataview plugin)
 

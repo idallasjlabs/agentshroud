@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "ApprovalMode"
 location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/ApprovalMode
 ---
 
 # ApprovalMode
@@ -17,7 +17,7 @@ tags:
 - [[dot-approve()]] - `references` [EXTRACTED]
 - [[dot-deny()]] - `references` [EXTRACTED]
 - [[Approval modes for rules.]] - `rationale_for` [EXTRACTED]
-- [[Enum_12]] - `inherits` [EXTRACTED]
+- [[Enum_10]] - `inherits` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[TestEgressApprovalAPI]] - `uses` [INFERRED]
 - [[TestEgressApprovalQueue]] - `uses` [INFERRED]
@@ -34,4 +34,4 @@ tags:
 - [[test_egress_approve_mode_mapping()]] - `uses` [INFERRED]
 - [[test_soc_router_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/ApprovalMode

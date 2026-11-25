@@ -16,7 +16,7 @@ tags:
 - [[dot-test_clean_skill_tree_allows()]] - `method` [EXTRACTED]
 - [[dot-test_empty_content_allows()]] - `method` [EXTRACTED]
 - [[Recommendation]] - `uses` [INFERRED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 

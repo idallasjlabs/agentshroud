@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_oauth_security.py"
 type: "code"
-community: "test_security_audit.py"
+community: "TestAuth"
 location: "L28"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/TestAuth
 ---
 
 # validator()
 
 ## Connections
 - [[OAuthSecurityValidator]] - `uses` [INFERRED]
-- [[fixture_131]] - `references` [EXTRACTED]
+- [[fixture_126]] - `references` [EXTRACTED]
 - [[test_oauth_security.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/TestAuth

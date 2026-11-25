@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/drift_detector.py"
+source_file: "gateway/security/token_validation.py"
 type: "code"
-community: "ContainerSnapshot"
-location: "L308"
+community: "TokenValidator"
+location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/TokenValidator
 ---
 
 # .close()
 
 ## Connections
-- [[DriftDetector]] - `method` [EXTRACTED]
+- [[Close the audit-log database connection.]] - `rationale_for` [EXTRACTED]
+- [[TokenValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

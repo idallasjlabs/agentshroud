@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "code"
-community: ".analyze_tool_call"
+community: "ToolChainAnalyzer"
 location: "L139"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/analyze_tool_call
+  - community/ToolChainAnalyzer
 ---
 
 # ChainPattern
@@ -19,4 +19,4 @@ tags:
 - [[Definition of a suspicious tool call pattern.]] - `rationale_for` [EXTRACTED]
 - [[tool_chain_analyzer.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/analyze_tool_call
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

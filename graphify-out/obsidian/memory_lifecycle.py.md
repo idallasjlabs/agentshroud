@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "MemoryLifecycleConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryLifecycleConfig
 ---
 
 # memory_lifecycle.py
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ContentThreat]] - `contains` [EXTRACTED]
 - [[ContentThreatType]] - `contains` [EXTRACTED]
-- [[Enum_37]] - `imports_from` [EXTRACTED]
+- [[Enum_11]] - `imports_from` [EXTRACTED]
 - [[MemoryLifecycleConfig]] - `imports` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `contains` [EXTRACTED]
 - [[RetentionAction]] - `contains` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[middleware.py_2]] - `imports_from` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig

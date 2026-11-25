@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_slack_socket_client.py"
 type: "code"
-community: "_wrap_response"
-location: "L3925"
+community: ".test_events_api_envelope_dispatches_handle_event"
+location: "L76"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_wrap_response
+  - community/test_events_api_envelope_dispatches_handle_event
 ---
 
 # fake_sleep()
 
 ## Connections
-- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - `indirect_call` [INFERRED]
+- [[dot-test_run_resets_backoff_after_successful_connect()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_wrap_response
+#graphify/code #graphify/INFERRED #community/test_events_api_envelope_dispatches_handle_event

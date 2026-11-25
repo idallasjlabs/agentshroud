@@ -34,7 +34,7 @@ members: 32
 - [[Step 3 Verify Authentication_4]] - document - .omp/agents/i-mcpm-auth-reset.md
 - [[Step 4 Restart Claude Code_4]] - document - .omp/agents/i-mcpm-auth-reset.md
 - [[Troubleshooting_33]] - document - .omp/agents/i-mcpm-auth-reset.md
-- [[Usage_107]] - document - .omp/agents/i-mcpm-auth-reset.md
+- [[Usage_108]] - document - .omp/agents/i-mcpm-auth-reset.md
 - [[Verification Checklist_5]] - document - .omp/agents/i-mcpm-auth-reset.md
 - [[Verify Authentication_8]] - document - .omp/agents/i-mcpm-auth-reset.md
 - [[Verify Authentication_9]] - document - .omp/agents/i-mcpm-auth-reset.md

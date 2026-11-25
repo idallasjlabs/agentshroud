@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "asyncio"
-location: "L351"
+community: "EgressAction"
+location: "L369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressAction
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_emits_egress_event_to_event_bus()]] - `contains` [EXTRACTED]
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressAction

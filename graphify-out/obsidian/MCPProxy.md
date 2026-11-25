@@ -12,13 +12,13 @@ tags:
 # MCPProxy
 
 ## Connections
-- [[dot-__init__()_62]] - `method` [EXTRACTED]
+- [[dot-__init__()_53]] - `method` [EXTRACTED]
 - [[dot-_emit_privacy_event()]] - `method` [EXTRACTED]
 - [[dot-_execute_tool_call()]] - `method` [EXTRACTED]
 - [[dot-_extract_egress_targets()]] - `method` [EXTRACTED]
 - [[dot-_sanitize_admin_private_data()]] - `method` [EXTRACTED]
 - [[dot-check_approval_required()]] - `method` [EXTRACTED]
-- [[dot-get_stats()_19]] - `method` [EXTRACTED]
+- [[dot-get_stats()_3]] - `method` [EXTRACTED]
 - [[dot-mcp_proxy_with_approval()]] - `calls` [EXTRACTED]
 - [[dot-process_tool_call()]] - `method` [EXTRACTED]
 - [[dot-process_tool_result()_1]] - `method` [EXTRACTED]

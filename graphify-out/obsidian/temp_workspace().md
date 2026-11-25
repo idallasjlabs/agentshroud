@@ -12,7 +12,7 @@ tags:
 # temp_workspace()
 
 ## Connections
-- [[fixture_103]] - `references` [EXTRACTED]
+- [[fixture_104]] - `references` [EXTRACTED]
 - [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

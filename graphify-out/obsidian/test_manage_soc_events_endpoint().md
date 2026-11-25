@@ -12,7 +12,7 @@ tags:
 # test_manage_soc_events_endpoint()
 
 ## Connections
-- [[asyncio_51]] - `references` [EXTRACTED]
+- [[asyncio_54]] - `references` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 

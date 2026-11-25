@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_block_credentials.py"
+source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "lifespan.py"
-location: "L19"
+community: "PIISanitizer"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # sanitizer()
 
 ## Connections
-- [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[fixture_18]] - `references` [EXTRACTED]
-- [[test_block_credentials.py]] - `contains` [EXTRACTED]
+- [[fixture_23]] - `references` [EXTRACTED]
+- [[test_e2e_watchtower.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

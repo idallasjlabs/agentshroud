@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "rationale"
-community: "normalize_input"
+community: "ToolResultInjectionScanner"
 location: "L4"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/ToolResultInjectionScanner
 ---
 
 # Input Normalization — pre-process text before security scanning. Strips…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[input_normalizer.py_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/normalize_input
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultInjectionScanner

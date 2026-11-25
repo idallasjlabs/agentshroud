@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "rationale"
-community: "test_security_regressions_v1_2.py"
+community: "TestHermesEgressAllowlist"
 location: "L498"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/TestHermesEgressAllowlist
 ---
 
 # PR#190 failover search engines must be allowlisted.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_failover_search_engines_in_allowlist()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/rationale #graphify/EXTRACTED #community/TestHermesEgressAllowlist

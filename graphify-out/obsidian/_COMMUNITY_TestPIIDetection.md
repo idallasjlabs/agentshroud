@@ -1,19 +1,21 @@
 ---
 type: community
-members: 6
+members: 8
 ---
 
 # TestPIIDetection
 
-**Members:** 6 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[dot-test_aws_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_pii_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_pii_in_url_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_private_key_in_response_flagged()]] - code - gateway/tests/test_web_proxy.py
-- [[dot-test_ssn_in_url_flagged()_1]] - code - gateway/tests/test_web_proxy.py
-- [[TestPIIDetection]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_clean_result_passes_through()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_credit_card_detected()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_credit_card_redacted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_email_detected_but_low_threat()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_pii_in_tool_result_redacted()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_ssn_detected_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[dot-test_ssn_redacted_in_params()]] - code - gateway/tests/test_mcp_proxy.py
+- [[TestPIIDetection]] - code - gateway/tests/test_mcp_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -23,7 +25,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_WebProxy]]
+- 3 edges to [[_COMMUNITY_test_mcp_proxy.py]]
 
 ## Top bridge nodes
-- [[TestPIIDetection]] - degree 6, connects to 1 community
+- [[TestPIIDetection]] - degree 10, connects to 1 community

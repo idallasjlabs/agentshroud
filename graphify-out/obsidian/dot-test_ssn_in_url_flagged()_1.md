@@ -12,6 +12,6 @@ tags:
 # .test_ssn_in_url_flagged()
 
 ## Connections
-- [[TestPIIDetection]] - `method` [EXTRACTED]
+- [[TestPIIDetection_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestPIIDetection

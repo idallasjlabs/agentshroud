@@ -1,32 +1,26 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # BaseModel
 
 ## Connections
-- [[AgentTarget]] - `inherits` [EXTRACTED]
-- [[ApprovalDecision]] - `inherits` [EXTRACTED]
-- [[ApprovalQueueItem]] - `inherits` [EXTRACTED]
-- [[ApprovalRequest]] - `inherits` [EXTRACTED]
-- [[EmailSendRequest]] - `inherits` [EXTRACTED]
-- [[EmailSendResponse]] - `inherits` [EXTRACTED]
-- [[ForwardRequest]] - `inherits` [EXTRACTED]
-- [[ForwardResponse]] - `inherits` [EXTRACTED]
-- [[LedgerEntry]] - `inherits` [EXTRACTED]
-- [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
-- [[RedactionDetail]] - `inherits` [EXTRACTED]
-- [[RedactionResult_1]] - `inherits` [EXTRACTED]
-- [[SSHExecRequest]] - `inherits` [EXTRACTED]
-- [[SSHExecResponse]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
-- [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
-- [[StatusResponse]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `inherits` [EXTRACTED]
+- [[AuditExportConfig_1]] - `inherits` [EXTRACTED]
+- [[ChannelsConfig]] - `inherits` [EXTRACTED]
+- [[GatewayConfig]] - `inherits` [EXTRACTED]
+- [[LedgerConfig]] - `inherits` [EXTRACTED]
+- [[PIIConfig]] - `inherits` [EXTRACTED]
+- [[RouterConfig]] - `inherits` [EXTRACTED]
+- [[SecurityConfig_1]] - `inherits` [EXTRACTED]
+- [[SecurityModuleConfig]] - `inherits` [EXTRACTED]
+- [[ToolRiskConfig]] - `inherits` [EXTRACTED]
+- [[ToolRiskPolicy]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

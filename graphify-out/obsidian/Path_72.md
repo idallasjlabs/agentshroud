@@ -11,7 +11,7 @@ tags:
 # Path
 
 ## Connections
-- [[dot-client()_5]] - `references` [EXTRACTED]
+- [[dot-client()_6]] - `references` [EXTRACTED]
 - [[dot-test_build_excludes_manifest_json_itself()]] - `references` [EXTRACTED]
 - [[dot-test_build_includes_all_files()]] - `references` [EXTRACTED]
 - [[dot-test_build_is_sorted_deterministically()]] - `references` [EXTRACTED]

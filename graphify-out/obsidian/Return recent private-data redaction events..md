@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "rationale"
-community: ".get_private_redaction_events"
+community: "test_mcp_proxy.py"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_private_redaction_events
+  - community/test_mcp_proxypy
 ---
 
 # Return recent private-data redaction events.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-get_private_redaction_events()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_private_redaction_events
+#graphify/rationale #graphify/EXTRACTED #community/test_mcp_proxypy

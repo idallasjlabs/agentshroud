@@ -8,14 +8,14 @@ members: 42
 **Members:** 42 nodes
 
 ## Members
-- [[dot-__call__()_6]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-__init__()_97]] - code - gateway/security/rate_limit_guard.py
-- [[dot-__init__()_98]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__call__()_5]] - code - gateway/tests/test_rate_limit_guard.py
+- [[dot-__init__()_89]] - code - gateway/security/rate_limit_guard.py
+- [[dot-__init__()_90]] - code - gateway/tests/test_rate_limit_guard.py
 - [[dot-_burst_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[dot-_sustained_limit()]] - code - gateway/security/rate_limit_guard.py
 - [[dot-advance()_1]] - code - gateway/tests/test_rate_limit_guard.py
-- [[dot-check()_3]] - code - gateway/security/rate_limit_guard.py
-- [[dot-get_stats()_3]] - code - gateway/security/rate_limit_guard.py
+- [[dot-check()_4]] - code - gateway/security/rate_limit_guard.py
+- [[dot-get_stats()_4]] - code - gateway/security/rate_limit_guard.py
 - [[Adaptive per-agent  per-tool sliding-window rate limiter with burst detection.]] - rationale - gateway/security/rate_limit_guard.py
 - [[Build a SecurityPipeline with only the guards needed to exercise the…]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[Configuration for class`RateLimitGuard`. All windows are per (agent_id, tool)…]] - rationale - gateway/security/rate_limit_guard.py
@@ -29,10 +29,10 @@ members: 42
 - [[Tests for RateLimitGuard — SCRUM-68 WS-B.1 deep-hardening module. Adaptive per-…]] - rationale - gateway/tests/test_rate_limit_guard.py
 - [[__getitem__()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[_make_pipeline()_2]] - code - gateway/tests/test_rate_limit_guard.py
-- [[asyncio_35]] - code
+- [[asyncio_37]] - code
 - [[clock()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[config-off equivalence absent guard leaves inbound behaviour identical.]] - rationale - gateway/tests/test_rate_limit_guard.py
-- [[fixture_63]] - code
+- [[fixture_67]] - code
 - [[rate_limit_guard.py]] - code - gateway/security/rate_limit_guard.py
 - [[test_burst_clears_after_burst_window()]] - code - gateway/tests/test_rate_limit_guard.py
 - [[test_burst_detection_blocks()]] - code - gateway/tests/test_rate_limit_guard.py
@@ -59,7 +59,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_SecurityPipeline]]
+- 3 edges to [[_COMMUNITY_PIISanitizer]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
 - 2 edges to [[_COMMUNITY_lifespan.py]]
 - 2 edges to [[_COMMUNITY_lifespan]]

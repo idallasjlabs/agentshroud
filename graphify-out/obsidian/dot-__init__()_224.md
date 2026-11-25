@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_a2a_proxy.py"
+source_file: "gateway/security/killswitch_monitor.py"
 type: "code"
-community: "A2AProxy"
-location: "L449"
+community: "KillSwitchConfig"
+location: "L37"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxy
+  - community/KillSwitchConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[_StubAuditStore]] - `method` [EXTRACTED]
+- [[dot-from_env()_3]] - `calls` [EXTRACTED]
+- [[Any_86]] - `references` [EXTRACTED]
+- [[KillSwitchConfig]] - `references` [EXTRACTED]
+- [[KillSwitchMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxy
+#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig

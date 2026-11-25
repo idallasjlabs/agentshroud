@@ -12,7 +12,7 @@ tags:
 # ._load()
 
 ## Connections
-- [[dot-__init__()_9]] - `calls` [EXTRACTED]
+- [[dot-__init__()_7]] - `calls` [EXTRACTED]
 - [[dot-from_dict()]] - `calls` [EXTRACTED]
 - [[DelegationManager]] - `method` [EXTRACTED]
 

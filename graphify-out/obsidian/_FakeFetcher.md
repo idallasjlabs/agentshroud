@@ -12,8 +12,8 @@ tags:
 # _FakeFetcher
 
 ## Connections
-- [[dot-__call__()_12]] - `method` [EXTRACTED]
-- [[dot-__init__()_176]] - `method` [EXTRACTED]
+- [[dot-__call__()_13]] - `method` [EXTRACTED]
+- [[dot-__init__()_178]] - `method` [EXTRACTED]
 - [[FetchOutcome]] - `uses` [INFERRED]
 - [[_inject_fetcher()]] - `calls` [EXTRACTED]
 - [[test_intel_endpoint.py]] - `contains` [EXTRACTED]

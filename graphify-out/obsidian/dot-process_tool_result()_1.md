@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "._extract_egress_targets"
+community: "ProxyResult"
 location: "L756"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/ProxyResult
 ---
 
 # .process_tool_result()
@@ -19,4 +19,4 @@ tags:
 - [[Process a tool result coming back (for cases where execution happens…]] - `rationale_for` [EXTRACTED]
 - [[ProxyResult]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/code #graphify/EXTRACTED #community/ProxyResult

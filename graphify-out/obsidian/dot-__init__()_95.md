@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/security/config_integrity.py"
+source_file: "gateway/security/path_isolation.py"
 type: "code"
-community: "ConfigIntegrityMonitor"
-location: "L49"
+community: "PathIsolationManager"
+location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ConfigIntegrityMonitor
+  - community/PathIsolationManager
 ---
 
 # .__init__()
 
 ## Connections
-- [[ConfigIntegrityMonitor]] - `method` [EXTRACTED]
-- [[Path_31]] - `references` [EXTRACTED]
+- [[dot-_ensure_base_directory()]] - `calls` [EXTRACTED]
+- [[PathIsolationConfig]] - `references` [EXTRACTED]
+- [[PathIsolationManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ConfigIntegrityMonitor
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

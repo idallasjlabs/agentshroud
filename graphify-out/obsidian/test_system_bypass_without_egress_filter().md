@@ -18,7 +18,7 @@ tags:
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[_open_conn()_6]] - `contains` [EXTRACTED]
 - [[_open_conn()_3]] - `indirect_call` [INFERRED]
-- [[asyncio_82]] - `references` [EXTRACTED]
+- [[asyncio_83]] - `references` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

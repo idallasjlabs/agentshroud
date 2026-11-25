@@ -12,7 +12,7 @@ tags:
 # .test_engine_requires_approval_for_destructive_tool_on_known_server()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[Fail-closed intent even on a known server, an obviously destructive tool must…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]

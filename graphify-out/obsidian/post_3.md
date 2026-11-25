@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "email_send"
+community: "management.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/managementpy
 ---
 
 # post
 
 ## Connections
-- [[email_send()]] - `references` [EXTRACTED]
-- [[email_send_owner()]] - `references` [EXTRACTED]
-- [[forward_content()]] - `references` [EXTRACTED]
-- [[forward_content_stream()]] - `references` [EXTRACTED]
-- [[telegram_webhook()]] - `references` [EXTRACTED]
+- [[rotate_credential()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/managementpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "rationale"
-community: "asyncio"
+community: "MiddlewareResult"
 location: "L9411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/MiddlewareResult
 ---
 
 # Middleware block must be bypassed for full_access collaborators.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_full_access_collaborator_passes_despite_middleware_block()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/asyncio
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareResult

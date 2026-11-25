@@ -12,5 +12,6 @@ tags:
 
 ## Connections
 - [[client()_2]] - `references` [EXTRACTED]
+- [[sync_client()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app

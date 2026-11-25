@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestApprovalHardening"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestApprovalHardening
 ---
 
 # fixture
 
 ## Connections
-- [[enhanced_mfa_queue()]] - `references` [EXTRACTED]
-- [[now()_7]] - `references` [EXTRACTED]
+- [[dot-config()_1]] - `references` [EXTRACTED]
+- [[dot-hardening()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/security/group_workspace.py"
+source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "GroupWorkspaceManager"
-location: "L95"
+community: "RBACConfig"
+location: "L167"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GroupWorkspaceManager
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[GroupWorkspaceManager]] - `method` [EXTRACTED]
+- [[PermissionResult]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

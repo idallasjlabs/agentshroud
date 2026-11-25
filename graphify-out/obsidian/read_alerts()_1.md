@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "wazuh_client.py"
+community: "generate_summary"
 location: "L66"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wazuh_clientpy
+  - community/generate_summary
 ---
 
 # read_alerts()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
-- [[Path_32]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
+- [[Path_30]] - `references` [EXTRACTED]
 - [[Read Wazuh alerts from the alert directory. Args alert_dir Directory…]] - `rationale_for` [EXTRACTED]
 - [[datetime_3]] - `references` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
@@ -23,4 +23,4 @@ tags:
 - [[wazuh_alerts()]] - `calls` [EXTRACTED]
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wazuh_clientpy
+#graphify/code #graphify/EXTRACTED #community/generate_summary

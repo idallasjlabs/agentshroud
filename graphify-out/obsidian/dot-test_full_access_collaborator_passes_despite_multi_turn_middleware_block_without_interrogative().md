@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "MiddlewareResult"
 location: "L9450"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/MiddlewareResult
 ---
 
 # .test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()
@@ -17,10 +17,10 @@ tags:
 - [[TestFullAccessMiddlewareBypass]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[fake_notify_blocked()_1]] - `contains` [EXTRACTED]
 - [[fake_notify_blocked()]] - `indirect_call` [INFERRED]
 - [[full_access bypass applies even when the message has no interrogative marker.…]] - `rationale_for` [EXTRACTED]
 - [[process_request()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/MiddlewareResult

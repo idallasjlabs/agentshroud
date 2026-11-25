@@ -55,7 +55,7 @@ SORT file.name ASC
 - 20 edges to [[_COMMUNITY__w]]
 - 4 edges to [[_COMMUNITY__age]]
 - 3 edges to [[_COMMUNITY_fs]]
-- 2 edges to [[_COMMUNITY_TestAggregateResults]]
+- 2 edges to [[_COMMUNITY_P2 High Priority Incidents]]
 - 2 edges to [[_COMMUNITY_TestIsContainerRunning]]
 - 1 edge to [[_COMMUNITY_TestContainerRuntimeIsolation]]
 - 1 edge to [[_COMMUNITY_TestComplianceMaths]]

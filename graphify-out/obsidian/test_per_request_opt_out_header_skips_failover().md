@@ -15,8 +15,8 @@ tags:
 - [[_call_proxy()]] - `calls` [EXTRACTED]
 - [[asyncio_20]] - `references` [EXTRACTED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
-- [[mock_forward()_3]] - `contains` [EXTRACTED]
-- [[mock_forward()_6]] - `indirect_call` [INFERRED]
+- [[mock_forward()_4]] - `contains` [EXTRACTED]
+- [[mock_forward()_7]] - `indirect_call` [INFERRED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

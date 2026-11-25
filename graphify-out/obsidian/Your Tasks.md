@@ -1,12 +1,12 @@
 ---
 source_file: "docs/claude-security-audit-prompt.md"
 type: "document"
-community: "AgentShroud v0.8.0 — Full Security & Functionality Audit"
+community: "Seccomp Profiles"
 location: "L156"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_v080__Full_Security__Functionality_Audit
+  - community/Seccomp_Profiles
 ---
 
 # Your Tasks
@@ -20,4 +20,4 @@ tags:
 - [[AgentShroud v0.8.0 — Full Security & Functionality Audit]] - `contains` [EXTRACTED]
 - [[Collaborator Access Control Tests]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_v080__Full_Security__Functionality_Audit
+#graphify/document #graphify/EXTRACTED #community/Seccomp_Profiles

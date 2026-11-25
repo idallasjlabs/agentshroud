@@ -1,15 +1,15 @@
 ---
 type: community
-members: 62
+members: 70
 ---
 
 # patch
 
-**Members:** 62 nodes
+**Members:** 70 nodes
 
 ## Members
-- [[dot-setup_method()_4]] - code - gateway/tests/test_runtime_engines.py
-- [[dot-setup_method()_5]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-setup_method()_2]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-setup_method()_3]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_auto_detect_priority()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_build()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_build_with_args()]] - code - gateway/tests/test_runtime_engines.py
@@ -18,6 +18,11 @@ members: 62
 - [[dot-test_compose_down()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_not_supported()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_compose_up()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_apple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_docker()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_multiple()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_none()]] - code - gateway/tests/test_runtime_engines.py
+- [[dot-test_detect_podman()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_exec()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_explicit_apple()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_explicit_docker()]] - code - gateway/tests/test_runtime_engines.py
@@ -61,13 +66,16 @@ members: 62
 - [[dot-test_stop_service()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_update_history()]] - code - gateway/tests/test_runtime_engines.py
 - [[dot-test_volume_create()]] - code - gateway/tests/test_runtime_engines.py
+- [[Auto-detect which container runtimes are available on this system.]] - rationale - gateway/runtime/__init__.py
 - [[Return an appropriate container engine instance. Args preference Explicit…]] - rationale - gateway/runtime/__init__.py
 - [[Test the management API endpoints with mocked runtime.]] - rationale - gateway/tests/test_runtime_engines.py
 - [[TestAppleContainerEngine]] - code - gateway/tests/test_runtime_engines.py
+- [[TestDetectRuntime]] - code - gateway/tests/test_runtime_engines.py
 - [[TestDockerEngine]] - code - gateway/tests/test_runtime_engines.py
 - [[TestGetEngine]] - code - gateway/tests/test_runtime_engines.py
 - [[TestPodmanEngine]] - code - gateway/tests/test_runtime_engines.py
 - [[TestWebAPI]] - code - gateway/tests/test_runtime_engines.py
+- [[detect_runtime()]] - code - gateway/runtime/__init__.py
 - [[get_engine()]] - code - gateway/runtime/__init__.py
 - [[patch]] - code
 
@@ -79,20 +87,18 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_test_runtime_engines.py]]
-- 6 edges to [[_COMMUNITY_detect_runtime]]
+- 10 edges to [[_COMMUNITY_test_runtime_engines.py]]
+- 7 edges to [[_COMMUNITY_DockerEngine]]
+- 5 edges to [[_COMMUNITY_api.py]]
 - 4 edges to [[_COMMUNITY_AppleContainerEngine]]
-- 4 edges to [[_COMMUNITY_DockerEngine]]
 - 4 edges to [[_COMMUNITY_PodmanEngine]]
-- 3 edges to [[_COMMUNITY_api.py]]
-- 2 edges to [[_COMMUNITY_TestInstallerAPI]]
-- 2 edges to [[_COMMUNITY_ContainerEngine]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 3 edges to [[_COMMUNITY_installer.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 - 1 edge to [[_COMMUNITY_ServiceManager]]
 
 ## Top bridge nodes
-- [[get_engine()]] - degree 19, connects to 9 communities
+- [[get_engine()]] - degree 19, connects to 7 communities
+- [[detect_runtime()]] - degree 14, connects to 4 communities
 - [[TestGetEngine]] - degree 10, connects to 4 communities
-- [[patch]] - degree 51, connects to 2 communities
 - [[TestDockerEngine]] - degree 25, connects to 2 communities
-- [[TestWebAPI]] - degree 15, connects to 2 communities
+- [[TestAppleContainerEngine]] - degree 10, connects to 2 communities

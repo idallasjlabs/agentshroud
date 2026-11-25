@@ -1,13 +1,15 @@
 ---
 type: community
-members: 20
+members: 24
 ---
 
 # TestUserSessionManager
 
-**Members:** 20 nodes
+**Members:** 24 nodes
 
 ## Members
+- [[dot-session_manager()]] - code - gateway/tests/test_session_isolation.py
+- [[dot-temp_workspace()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_conversation_history_isolation()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_memory_file_isolation()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_owner_access_control()]] - code - gateway/tests/test_session_isolation.py
@@ -17,6 +19,8 @@ members: 20
 - [[dot-test_session_listing_authorization()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_session_prompt_isolation()]] - code - gateway/tests/test_session_isolation.py
 - [[dot-test_trust_level_per_user()]] - code - gateway/tests/test_session_isolation.py
+- [[Create a session manager with temporary workspace.]] - rationale - gateway/tests/test_session_isolation.py
+- [[Create a temporary workspace for testing.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test that conversation histories are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test that each user gets isolated directories.]] - rationale - gateway/tests/test_session_isolation.py
 - [[Test that memory files are isolated per user.]] - rationale - gateway/tests/test_session_isolation.py
@@ -37,7 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_UserSessionManager]]
+- 3 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_TestMiddlewareSessionEnforcement]]
 
 ## Top bridge nodes
+- [[dot-session_manager()]] - degree 4, connects to 2 communities
 - [[TestUserSessionManager]] - degree 14, connects to 1 community
+- [[dot-temp_workspace()]] - degree 3, connects to 1 community

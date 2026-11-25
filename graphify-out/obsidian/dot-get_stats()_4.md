@@ -1,19 +1,17 @@
 ---
-source_file: "gateway/ingest_api/ledger.py"
+source_file: "gateway/security/rate_limit_guard.py"
 type: "code"
-community: "GatewayConfig"
-location: "L347"
+community: "RateLimitGuard"
+location: "L218"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/RateLimitGuard
 ---
 
 # .get_stats()
 
 ## Connections
-- [[Any_35]] - `references` [EXTRACTED]
-- [[DataLedger]] - `method` [EXTRACTED]
-- [[Get aggregate statistics Returns Dictionary with total entries, by source, etc.]] - `rationale_for` [EXTRACTED]
+- [[RateLimitGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/RateLimitGuard

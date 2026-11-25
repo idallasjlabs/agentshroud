@@ -15,7 +15,7 @@ tags:
 - [[Stub the fire-and-forget owner activity mirror. The mirror runs via…]] - `rationale_for` [EXTRACTED]
 - [[TelegramAPIProxy]] - `uses` [INFERRED]
 - [[_noop()]] - `indirect_call` [INFERRED]
-- [[fixture_37]] - `references` [EXTRACTED]
+- [[fixture_45]] - `references` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

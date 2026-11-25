@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "version_routes.py"
+community: "upgrade"
 location: "L132"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/upgrade
 ---
 
 # .test_blocked_on_invalid_version()
@@ -15,4 +15,4 @@ tags:
 - [[TestUpgrade_1]] - `method` [EXTRACTED]
 - [[upgrade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/upgrade

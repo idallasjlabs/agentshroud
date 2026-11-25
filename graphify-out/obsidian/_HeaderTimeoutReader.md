@@ -12,7 +12,7 @@ tags:
 # _HeaderTimeoutReader
 
 ## Connections
-- [[dot-__init__()_208]] - `method` [EXTRACTED]
+- [[dot-__init__()_214]] - `method` [EXTRACTED]
 - [[dot-readline()]] - `method` [EXTRACTED]
 - [[First readline returns the request line; the next stalls.]] - `rationale_for` [EXTRACTED]
 - [[test_header_read_timeout_returns_408()]] - `calls` [EXTRACTED]

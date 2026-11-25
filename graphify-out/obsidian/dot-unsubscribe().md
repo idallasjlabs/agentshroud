@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "lifespan.py"
+community: "EventBus"
 location: "L56"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/EventBus
 ---
 
 # .unsubscribe()
@@ -15,4 +15,4 @@ tags:
 - [[EventBus]] - `method` [EXTRACTED]
 - [[Unsubscribe from events]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/EventBus

@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_soc_egress_endpoints.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_soc_egress_endpoints.py"
-location: "L81"
+community: "EgressAction"
+location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/EgressAction
 ---
 
 # get_pending_requests()
 
 ## Connections
-- [[test_manage_egress_pending_endpoint_includes_summary()]] - `contains` [EXTRACTED]
+- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/EgressAction

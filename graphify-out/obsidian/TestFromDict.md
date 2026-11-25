@@ -12,7 +12,7 @@ tags:
 # TestFromDict
 
 ## Connections
-- [[dot-test_conversion_error_path()_2]] - `method` [EXTRACTED]
+- [[dot-test_conversion_error_path()_4]] - `method` [EXTRACTED]
 - [[dot-test_full_dict()]] - `method` [EXTRACTED]
 - [[dot-test_minimal_dict_uses_fallbacks()]] - `method` [EXTRACTED]
 - [[test_soc_realtime_coverage.py]] - `contains` [EXTRACTED]

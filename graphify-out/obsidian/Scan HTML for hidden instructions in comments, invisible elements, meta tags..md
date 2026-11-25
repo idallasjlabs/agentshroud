@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/web_content_scanner.py"
 type: "rationale"
-community: "ScanResult"
+community: "WebContentScanner"
 location: "L288"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/WebContentScanner
 ---
 
 # Scan HTML for hidden instructions in comments, invisible elements, meta tags.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_scan_hidden_content()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ScanResult
+#graphify/rationale #graphify/EXTRACTED #community/WebContentScanner

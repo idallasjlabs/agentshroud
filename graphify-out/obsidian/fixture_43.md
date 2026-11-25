@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_v1_models_synthetic.py"
+community: "TokenValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_v1_models_syntheticpy
+  - community/TokenValidator
 ---
 
 # fixture
 
 ## Connections
-- [[client()_8]] - `references` [EXTRACTED]
+- [[validator()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_v1_models_syntheticpy
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

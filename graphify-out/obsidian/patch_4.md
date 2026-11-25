@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: ".test_logging"
+community: "PathIsolationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_logging
+  - community/PathIsolationManager
 ---
 
 # patch
 
 ## Connections
-- [[dot-test_logging()]] - `references` [EXTRACTED]
+- [[dot-test_cleanup_abandoned_directories()]] - `references` [EXTRACTED]
+- [[dot-test_dont_cleanup_active_user_directories()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_logging
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

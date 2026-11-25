@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_token_validation.py"
 type: "code"
-community: "_make_token"
+community: "TokenValidator"
 location: "L230"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/TokenValidator
 ---
 
 # .test_multiple_validations_logged()
@@ -15,4 +15,4 @@ tags:
 - [[TestAuditLogging_1]] - `method` [EXTRACTED]
 - [[_make_token()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_token
+#graphify/code #graphify/EXTRACTED #community/TokenValidator

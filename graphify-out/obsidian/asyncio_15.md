@@ -1,23 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "lifespan.py"
+community: "test_anthropic_openai_translator.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_canary_fails_without_pipeline()]] - `references` [EXTRACTED]
-- [[test_canary_message_contains_fake_pii()]] - `references` [EXTRACTED]
-- [[test_canary_passes_with_pipeline()]] - `references` [EXTRACTED]
-- [[test_canary_result_serialization()]] - `references` [EXTRACTED]
-- [[test_canary_verifies_audit_chain()]] - `references` [EXTRACTED]
-- [[test_canary_verifies_pii_stripping()]] - `references` [EXTRACTED]
-- [[test_canary_with_healthy_forwarder()]] - `references` [EXTRACTED]
-- [[test_canary_with_unhealthy_forwarder()]] - `references` [EXTRACTED]
+- [[test_proxy_rewrites_claude_via_openai_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

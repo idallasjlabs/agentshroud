@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "middleware.py"
+community: "MemoryIntegrityMonitor"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/MemoryIntegrityMonitor
 ---
 
 # MemoryIntegrityMonitor
@@ -25,9 +25,9 @@ tags:
 - [[dot-get_recent_alerts()]] - `method` [EXTRACTED]
 - [[dot-register_expected_write()]] - `method` [EXTRACTED]
 - [[dot-scan_all_monitored_files()]] - `method` [EXTRACTED]
-- [[dot-scan_file()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_27]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_29]] - `calls` [EXTRACTED]
+- [[dot-scan_file()_1]] - `method` [EXTRACTED]
+- [[dot-setup_method()_38]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_28]] - `calls` [EXTRACTED]
 - [[dot-test_integrity_database_persistence()]] - `calls` [EXTRACTED]
 - [[MemoryIntegrityConfig]] - `uses` [INFERRED]
 - [[MemoryLifecycleManager]] - `shares_data_with` [EXTRACTED]
@@ -42,4 +42,4 @@ tags:
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[test_memory_lifecycle.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/MemoryIntegrityMonitor

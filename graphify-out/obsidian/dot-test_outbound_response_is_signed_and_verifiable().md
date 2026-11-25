@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "asyncio"
 location: "L506"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/asyncio
 ---
 
 # .test_outbound_response_is_signed_and_verifiable()
@@ -16,6 +16,6 @@ tags:
 - [[InstructionEnvelope]] - `calls` [EXTRACTED]
 - [[TestEnvelopeSignerInPipeline]] - `method` [EXTRACTED]
 - [[_make_signer_pipeline()]] - `calls` [EXTRACTED]
-- [[asyncio_34]] - `references` [EXTRACTED]
+- [[asyncio_36]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/asyncio

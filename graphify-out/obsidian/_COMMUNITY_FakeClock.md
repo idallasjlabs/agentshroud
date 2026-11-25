@@ -9,7 +9,7 @@ members: 12
 
 ## Members
 - [[dot-__call__()_3]] - code - gateway/tests/test_progressive_lockdown.py
-- [[dot-__init__()_34]] - code - gateway/tests/test_progressive_lockdown.py
+- [[dot-__init__()_26]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-advance()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-test_blocks_inside_window_still_escalate()]] - code - gateway/tests/test_progressive_lockdown.py
 - [[dot-test_decay_off_by_default_blocks_never_age_out()]] - code - gateway/tests/test_progressive_lockdown.py

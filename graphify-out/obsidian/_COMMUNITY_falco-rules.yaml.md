@@ -11,8 +11,8 @@ members: 9
 - [[Integration]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Network Enforcement]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Priority Levels]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Purpose_71]] - document - docs/vault/03 - Configuration/falco-rules.md
-- [[Related Notes_34]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Purpose_73]] - document - docs/vault/03 - Configuration/falco-rules.md
+- [[Related Notes_36]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Rules Defined]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[Shell Spawning Exceptions]] - document - docs/vault/03 - Configuration/falco-rules.md
 - [[falco-rules]] - document - docs/vault/03 - Configuration/falco-rules.md

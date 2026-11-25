@@ -8,9 +8,9 @@ members: 6
 **Members:** 6 nodes
 
 ## Members
-- [[dot-__aenter__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__aexit__()_1]] - code - gateway/tests/test_dns_canvas_coverage.py
-- [[dot-__init__()_79]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aenter__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__aexit__()]] - code - gateway/tests/test_dns_canvas_coverage.py
+- [[dot-__init__()_73]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[dot-request()]] - code - gateway/tests/test_dns_canvas_coverage.py
 - [[Stands in for httpx.AsyncClient; records request kwargs.]] - rationale - gateway/tests/test_dns_canvas_coverage.py
 - [[_FakeAsyncClient]] - code - gateway/tests/test_dns_canvas_coverage.py

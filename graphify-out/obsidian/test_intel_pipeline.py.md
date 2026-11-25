@@ -21,6 +21,6 @@ tags:
 - [[TestIntelReportStore]] - `contains` [EXTRACTED]
 - [[Tests for B.2 — Competitive Intel Pipeline (schema validation + hash…]] - `rationale_for` [EXTRACTED]
 - [[intel_report.py]] - `imports_from` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/CompetitiveIntelReport

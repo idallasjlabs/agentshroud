@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/api.py"
 type: "code"
-community: "api.py"
+community: "ingest_api/config.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/apipy
+  - community/ingest_api/configpy
 ---
 
 # _bot_service_names()
@@ -21,4 +21,4 @@ tags:
 - [[test_config.py]] - `imports` [EXTRACTED]
 - [[ws_logs()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/apipy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "asyncio"
+community: "EgressAction"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressAction
 ---
 
 # asyncio
@@ -21,4 +21,4 @@ tags:
 - [[test_egress_filter_no_notification_on_allow()]] - `references` [EXTRACTED]
 - [[test_egress_filter_notifies_on_deny()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressAction

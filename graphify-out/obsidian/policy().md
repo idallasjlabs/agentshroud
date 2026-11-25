@@ -15,7 +15,7 @@ tags:
 - [[BotIncidentSeverity]] - `uses` [INFERRED]
 - [[Default propagation policy.]] - `rationale_for` [EXTRACTED]
 - [[TrustDecayPolicy]] - `uses` [INFERRED]
-- [[fixture_73]] - `references` [EXTRACTED]
+- [[fixture_80]] - `references` [EXTRACTED]
 - [[test_cross_bot_trust_ledger.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TrustManager

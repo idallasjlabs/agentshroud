@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestInjectionDetection"
+community: "TestWebProxySecurityIntegration"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/TestWebProxySecurityIntegration
 ---
 
 # Enum
 
 ## Connections
-- [[FindingType]] - `inherits` [EXTRACTED]
-- [[ThreatLevel_1]] - `inherits` [EXTRACTED]
-- [[mcp_inspector.py_2]] - `imports_from` [EXTRACTED]
+- [[MockEgressChannel]] - `inherits` [EXTRACTED]
+- [[MockThreatLevel]] - `inherits` [EXTRACTED]
+- [[test_web_proxy_security.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

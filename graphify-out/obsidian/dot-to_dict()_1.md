@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/ingest_api/event_bus.py"
+source_file: "gateway/security/delegation.py"
 type: "code"
-community: "make_event"
-location: "L35"
+community: "DelegationPrivilege"
+location: "L73"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/DelegationPrivilege
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_10]] - `references` [EXTRACTED]
-- [[GatewayEvent]] - `method` [EXTRACTED]
+- [[Delegation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege

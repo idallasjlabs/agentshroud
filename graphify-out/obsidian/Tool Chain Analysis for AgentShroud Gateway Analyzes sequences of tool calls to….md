@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: "tool_chain_analyzer.py"
+community: "ToolChainAnalyzer"
 location: "L5"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/tool_chain_analyzerpy
+  - community/ToolChainAnalyzer
 ---
 
 # Tool Chain Analysis for AgentShroud Gateway Analyzes sequences of tool calls to…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[tool_chain_analyzer.py]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/tool_chain_analyzerpy
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

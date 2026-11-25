@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/dns_filter.py"
+source_file: "gateway/proxy/mcp_audit.py"
 type: "code"
-community: "DNSFilterConfig"
-location: "L78"
+community: "MCPAuditTrail"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/MCPAuditTrail
 ---
 
 # .__init__()
 
 ## Connections
-- [[DNSFilter]] - `method` [EXTRACTED]
-- [[DNSFilterConfig]] - `references` [EXTRACTED]
+- [[MCPAuditTrail]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail

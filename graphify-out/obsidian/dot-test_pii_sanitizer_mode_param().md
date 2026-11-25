@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enforce_defaults.py"
 type: "code"
-community: "lifespan.py"
+community: "PIIConfig"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIIConfig
 ---
 
 # .test_pii_sanitizer_mode_param()
@@ -17,4 +17,4 @@ tags:
 - [[Test PIISanitizer accepts and stores mode parameter.]] - `rationale_for` [EXTRACTED]
 - [[TestModuleEnforcement]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

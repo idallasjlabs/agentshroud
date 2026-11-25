@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget"
+community: "asyncio"
 location: "L294"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/asyncio
 ---
 
 # mock_get()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_health_check_uses_health_path()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/asyncio

@@ -1,29 +1,22 @@
 ---
-source_file: "gateway/web/installer.py"
-type: "code"
-community: "detect_runtime"
-location: "L1"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/installer.py.md"
+type: "document"
+community: "installer.py"
+location: "L10"
 tags:
-  - graphify/code
+  - graphify/document
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/installerpy
 ---
 
 # installer.py
 
 ## Connections
-- [[AgentShroud Web Installer — Step-by-step installation wizard.]] - `rationale_for` [EXTRACTED]
-- [[InstallConfig]] - `contains` [EXTRACTED]
-- [[PrerequisiteCheck]] - `contains` [EXTRACTED]
-- [[check_prerequisites()]] - `contains` [EXTRACTED]
-- [[detect_runtime()]] - `imports` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
-- [[get_runtimes()]] - `contains` [EXTRACTED]
-- [[get_security_comparison()]] - `imports` [EXTRACTED]
-- [[installer_page()]] - `contains` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
-- [[runtime__init__.py]] - `imports_from` [EXTRACTED]
-- [[security.py_2]] - `imports_from` [EXTRACTED]
-- [[start_install()]] - `contains` [EXTRACTED]
+- [[Endpoints (Inferred)]] - `contains` [EXTRACTED]
+- [[Key Features_1]] - `contains` [EXTRACTED]
+- [[Purpose_82]] - `contains` [EXTRACTED]
+- [[Related Notes_54]] - `contains` [EXTRACTED]
+- [[When Used]] - `contains` [EXTRACTED]
+- [[installer.py_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/document #graphify/EXTRACTED #community/installerpy

@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # patch
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[dot-test_incident_logging()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputCanary
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

@@ -1,19 +1,23 @@
 ---
-source_file: "gateway/security/tool_result_sanitizer.py"
+source_file: "gateway/approval_queue/enhanced_queue.py"
 type: "code"
-community: "RedactionResult"
-location: "L28"
+community: "test_mfa_guard.py"
+location: "L47"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/test_mfa_guardpy
 ---
 
 # .__init__()
 
 ## Connections
-- [[Any_39]] - `references` [EXTRACTED]
-- [[PIIConfig]] - `references` [EXTRACTED]
-- [[ToolResultPIIConfig]] - `method` [EXTRACTED]
+- [[dot-from_env()]] - `calls` [EXTRACTED]
+- [[ApprovalQueueConfig]] - `references` [EXTRACTED]
+- [[ApprovalStore]] - `references` [EXTRACTED]
+- [[EnhancedApprovalQueue]] - `method` [EXTRACTED]
+- [[Initialize enhanced approval queue. Args config Basic approval queue…]] - `rationale_for` [EXTRACTED]
+- [[MFAGuard]] - `references` [EXTRACTED]
+- [[ToolRiskConfig]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

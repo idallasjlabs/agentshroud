@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_egress_filter.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "asyncio"
-location: "L369"
+community: "_patch_http_connection"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_patch_http_connection
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_allowlisted_domain_still_prompts_when_approval_all_enabled()]] - `contains` [EXTRACTED]
+- [[_patch_http_connection()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_patch_http_connection

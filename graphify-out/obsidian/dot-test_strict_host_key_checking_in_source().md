@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L51"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # .test_strict_host_key_checking_in_source()
@@ -15,4 +15,4 @@ tags:
 - [[Source code uses StrictHostKeyChecking=yes]] - `rationale_for` [EXTRACTED]
 - [[TestSSHStrictHostKeyChecking]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

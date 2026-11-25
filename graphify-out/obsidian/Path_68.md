@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "sync-cve-registry.py"
+community: "test_soc_edge.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/sync-cve-registrypy
+  - community/test_soc_edgepy
 ---
 
 # Path
 
 ## Connections
-- [[run_ghsa_sync()]] - `references` [EXTRACTED]
-- [[sync_agent_ghsa()]] - `references` [EXTRACTED]
+- [[_parse()]] - `references` [EXTRACTED]
+- [[load_profiles()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

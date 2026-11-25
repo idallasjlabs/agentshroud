@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[MCPPolicyEngine]] - `uses` [INFERRED]
 - [[_base_config()]] - `calls` [EXTRACTED]
-- [[fixture_92]] - `references` [EXTRACTED]
+- [[fixture_97]] - `references` [EXTRACTED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

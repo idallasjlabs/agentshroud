@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/soc/models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "soc/models.py"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/soc/modelspy
 ---
 
 # ResourceUsage
 
 ## Connections
 - [[dot-test_with_resource_usage()]] - `calls` [EXTRACTED]
-- [[BaseModel_10]] - `inherits` [EXTRACTED]
+- [[BaseModel_11]] - `inherits` [EXTRACTED]
 - [[TestServiceDescriptor]] - `uses` [INFERRED]
 - [[socmodels.py]] - `contains` [EXTRACTED]
 - [[test_soc_models.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

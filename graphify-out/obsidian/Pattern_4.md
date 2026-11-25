@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "LogSanitizer"
+community: "TestModuleInstantiationInEnforceMode"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # Pattern
 
 ## Connections
-- [[dot-_compile_patterns()_1]] - `references` [EXTRACTED]
+- [[dot-_create_detection_patterns()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

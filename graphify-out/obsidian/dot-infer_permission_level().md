@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_permissions.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "PermissionCheck"
 location: "L378"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/PermissionCheck
 ---
 
 # .infer_permission_level()
@@ -18,4 +18,4 @@ tags:
 - [[MCPServerConfig]] - `references` [EXTRACTED]
 - [[PermissionLevel]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/PermissionCheck

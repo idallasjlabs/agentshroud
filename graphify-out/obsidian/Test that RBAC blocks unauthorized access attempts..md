@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACIntegration"
+community: "RBACConfig"
 location: "L376"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACIntegration
+  - community/RBACConfig
 ---
 
 # Test that RBAC blocks unauthorized access attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_rbac_blocks_unauthorized_access()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACIntegration
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

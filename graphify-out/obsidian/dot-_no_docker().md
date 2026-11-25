@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Pin _running_image to the docker-unavailable fallback (same as…]] - `rationale_for` [EXTRACTED]
 - [[TestRunAndSendCveReportImageScans]] - `method` [EXTRACTED]
-- [[fixture_91]] - `references` [EXTRACTED]
+- [[fixture_96]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

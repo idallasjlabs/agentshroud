@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestProductionCompose"
+community: "test_mfa_guard.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestProductionCompose
+  - community/test_mfa_guardpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-compose()]] - `references` [EXTRACTED]
-- [[dot-compose()_1]] - `references` [EXTRACTED]
-- [[dot-compose()_2]] - `references` [EXTRACTED]
+- [[enhanced_mfa_queue()]] - `references` [EXTRACTED]
+- [[now()_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestProductionCompose
+#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

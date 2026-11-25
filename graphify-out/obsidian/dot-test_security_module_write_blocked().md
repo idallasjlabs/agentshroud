@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestAgentShroudSourceCodeProtection"
+community: "test_privilege_separation.py"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentShroudSourceCodeProtection
+  - community/test_privilege_separationpy
 ---
 
 # .test_security_module_write_blocked()
@@ -15,4 +15,4 @@ tags:
 - [[Agent cannot write to security framework files.]] - `rationale_for` [EXTRACTED]
 - [[TestAgentShroudSourceCodeProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentShroudSourceCodeProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

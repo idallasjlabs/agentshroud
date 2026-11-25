@@ -8,9 +8,9 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_156]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Purpose_158]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Related Skills_88]] - document - docker/config/openclaw/skills/i-vulcan/README.md
-- [[Usage_98]] - document - docker/config/openclaw/skills/i-vulcan/README.md
+- [[Usage_99]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[Vulcan — Subject Matter Auditor_8]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 - [[openclawskillsi-vulcanREADME]] - document - docker/config/openclaw/skills/i-vulcan/README.md
 

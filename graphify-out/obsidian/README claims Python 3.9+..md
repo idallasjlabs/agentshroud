@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_docs_accuracy.py"
 type: "rationale"
-community: "test_docs_accuracy.py"
+community: "MiddlewareManager"
 location: "L54"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_docs_accuracypy
+  - community/MiddlewareManager
 ---
 
 # README claims Python 3.9+.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_python_version_claim()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_docs_accuracypy
+#graphify/rationale #graphify/EXTRACTED #community/MiddlewareManager

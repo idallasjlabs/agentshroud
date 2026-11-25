@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/dns_forwarder.py"
 type: "code"
-community: "make_fake_socket_module"
+community: "test_dns_canvas_coverage.py"
 location: "L130"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_fake_socket_module
+  - community/test_dns_canvas_coveragepy
 ---
 
 # forward_query()
@@ -20,4 +20,4 @@ tags:
 - [[dns_forwarder.py]] - `contains` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_fake_socket_module
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

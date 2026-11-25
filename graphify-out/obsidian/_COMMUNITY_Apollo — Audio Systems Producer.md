@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[Apollo — Audio Systems Producer_6]] - document - .agents/skills/apollo/README.md
-- [[Purpose_91]] - document - .agents/skills/apollo/README.md
+- [[Purpose_93]] - document - .agents/skills/apollo/README.md
 - [[Related Skills_23]] - document - .agents/skills/apollo/README.md
-- [[Usage_32]] - document - .agents/skills/apollo/README.md
+- [[Usage_33]] - document - .agents/skills/apollo/README.md
 - [[apolloREADME]] - document - .agents/skills/apollo/README.md
 
 ## Live Query (requires Dataview plugin)

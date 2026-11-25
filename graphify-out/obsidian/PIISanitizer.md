@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "code"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L31"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # PIISanitizer
 
 ## Connections
-- [[dot-__init__()_28]] - `method` [EXTRACTED]
+- [[dot-__init__()_17]] - `method` [EXTRACTED]
 - [[dot-_apply_enforcement()]] - `method` [EXTRACTED]
 - [[dot-_get_sanitizer_for_tool()]] - `references` [EXTRACTED]
 - [[dot-_init_presidio()]] - `method` [EXTRACTED]
@@ -27,7 +27,7 @@ tags:
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()]] - `calls` [EXTRACTED]
 - [[dot-pipeline()_1]] - `calls` [EXTRACTED]
-- [[dot-sanitize()_2]] - `method` [EXTRACTED]
+- [[dot-sanitize()_1]] - `method` [EXTRACTED]
 - [[dot-sanitizer()]] - `calls` [EXTRACTED]
 - [[dot-sanitizer()_1]] - `calls` [EXTRACTED]
 - [[dot-test_many_pii_entities()]] - `calls` [INFERRED]
@@ -55,7 +55,7 @@ tags:
 - [[TestSSHRequireApprovalFalse]] - `uses` [INFERRED]
 - [[TestSecurityPipelineChainLatency]] - `uses` [INFERRED]
 - [[TestTimingAttacks]] - `uses` [INFERRED]
-- [[ToolResultSanitizer_1]] - `uses` [INFERRED]
+- [[ToolResultSanitizer]] - `uses` [INFERRED]
 - [[_make_pii_sanitizer()]] - `calls` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
@@ -63,20 +63,20 @@ tags:
 - [[_regex_sanitizer()]] - `calls` [EXTRACTED]
 - [[build_edge_service()]] - `calls` [EXTRACTED]
 - [[canary_pipeline()]] - `uses` [INFERRED]
-- [[client()_13]] - `uses` [INFERRED]
 - [[client()_14]] - `uses` [INFERRED]
+- [[client()_15]] - `uses` [INFERRED]
 - [[conftest.py]] - `imports` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[enforcement-audit-script.py]] - `imports` [EXTRACTED]
 - [[lifespan()]] - `uses` [INFERRED]
 - [[lifespan.py]] - `imports` [EXTRACTED]
 - [[run()]] - `calls` [EXTRACTED]
 - [[sanitizer()_3]] - `uses` [INFERRED]
-- [[sanitizer()_1]] - `uses` [INFERRED]
-- [[sanitizer()_4]] - `uses` [INFERRED]
 - [[sanitizer()]] - `uses` [INFERRED]
-- [[sanitizer()_2]] - `uses` [INFERRED]
 - [[sanitizer()_5]] - `uses` [INFERRED]
+- [[sanitizer()_1]] - `uses` [INFERRED]
+- [[sanitizer()_2]] - `uses` [INFERRED]
+- [[sanitizer()_4]] - `uses` [INFERRED]
 - [[sanitizer.py_2]] - `contains` [EXTRACTED]
 - [[service.py]] - `imports` [EXTRACTED]
 - [[stack()]] - `uses` [INFERRED]
@@ -104,4 +104,4 @@ tags:
 - [[test_ws_e_rt2_inbound_encoding.py]] - `imports` [EXTRACTED]
 - [[tool_result_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

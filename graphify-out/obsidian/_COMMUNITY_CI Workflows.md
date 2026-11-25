@@ -12,8 +12,8 @@ members: 7
 - [[Coverage Threshold]] - document - docs/vault/03 - Configuration/ci-workflows.md
 - [[Expected Pipeline (Inferred)]] - document - docs/vault/03 - Configuration/ci-workflows.md
 - [[Key Test Command]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Purpose_80]] - document - docs/vault/03 - Configuration/ci-workflows.md
-- [[Related Notes_52]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Purpose_83]] - document - docs/vault/03 - Configuration/ci-workflows.md
+- [[Related Notes_55]] - document - docs/vault/03 - Configuration/ci-workflows.md
 - [[ci-workflows]] - document - docs/vault/03 - Configuration/ci-workflows.md
 
 ## Live Query (requires Dataview plugin)

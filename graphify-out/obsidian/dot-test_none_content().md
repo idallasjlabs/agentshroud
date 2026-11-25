@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_injection.py"
 type: "code"
-community: "TestCleanContent"
+community: "ToolResultInjectionScanner"
 location: "L154"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCleanContent
+  - community/ToolResultInjectionScanner
 ---
 
 # .test_none_content()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCleanContent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCleanContent
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

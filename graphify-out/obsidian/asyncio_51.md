@@ -1,38 +1,42 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_egress_endpoints.py"
+community: "test_e2e_proxy.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_egress_endpointspy
+  - community/test_e2e_proxypy
 ---
 
 # asyncio
 
 ## Connections
-- [[test_manage_egress_add_remove_rule_and_risk()]] - `references` [EXTRACTED]
-- [[test_manage_egress_emergency_toggle()]] - `references` [EXTRACTED]
-- [[test_manage_egress_log_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_egress_pending_endpoint_includes_summary()]] - `references` [EXTRACTED]
-- [[test_manage_egress_rules_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_privacy_policy_and_audit_endpoints()]] - `references` [EXTRACTED]
-- [[test_manage_scan_all_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_scanners_history_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_scanners_summary_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_soc_correlation_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_soc_events_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_soc_export_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_soc_export_invalid_format()]] - `references` [EXTRACTED]
-- [[test_manage_soc_report_endpoint()]] - `references` [EXTRACTED]
-- [[test_manage_soc_report_falls_back_to_contributor_logs()]] - `references` [EXTRACTED]
-- [[test_outbound_quarantine_endpoints()]] - `references` [EXTRACTED]
-- [[test_quarantine_list_endpoint()]] - `references` [EXTRACTED]
-- [[test_quarantine_release_and_discard_flow()]] - `references` [EXTRACTED]
-- [[test_quarantine_summary_endpoint()]] - `references` [EXTRACTED]
-- [[test_soc_scanners_recent_empty()]] - `references` [EXTRACTED]
-- [[test_soc_scanners_recent_limit()]] - `references` [EXTRACTED]
-- [[test_soc_scanners_recent_returns_history()]] - `references` [EXTRACTED]
-- [[test_soc_scanners_recent_status_filter()]] - `references` [EXTRACTED]
+- [[test_approval_queue_enforced()]] - `references` [EXTRACTED]
+- [[test_audit_chain_empty_valid()]] - `references` [EXTRACTED]
+- [[test_audit_chain_integrity()]] - `references` [EXTRACTED]
+- [[test_audit_chain_single_entry()]] - `references` [EXTRACTED]
+- [[test_clean_message_passes()]] - `references` [EXTRACTED]
+- [[test_direct_bypass_blocked()]] - `references` [EXTRACTED]
+- [[test_egress_allowed_domain()]] - `references` [EXTRACTED]
+- [[test_egress_blocked()]] - `references` [EXTRACTED]
+- [[test_forwarder_error_handling()]] - `references` [EXTRACTED]
+- [[test_forwarder_mock()]] - `references` [EXTRACTED]
+- [[test_inbound_outbound_both_audited()]] - `references` [EXTRACTED]
+- [[test_kill_switch_freezes()]] - `references` [EXTRACTED]
+- [[test_mixed_pii_and_injection()]] - `references` [EXTRACTED]
+- [[test_multiple_prompt_patterns()]] - `references` [EXTRACTED]
+- [[test_outbound_pii_stripped()]] - `references` [EXTRACTED]
+- [[test_pii_stripped_inbound()]] - `references` [EXTRACTED]
+- [[test_pipeline_processing_time()]] - `references` [EXTRACTED]
+- [[test_pipeline_stats()]] - `references` [EXTRACTED]
+- [[test_prompt_injection_blocked()]] - `references` [EXTRACTED]
+- [[test_sidecar_scanner()]] - `references` [EXTRACTED]
+- [[test_tampered_audit_detected()]] - `references` [EXTRACTED]
+- [[test_trust_level_enforced()]] - `references` [EXTRACTED]
+- [[test_webhook_blocks_injection()]] - `references` [EXTRACTED]
+- [[test_webhook_outbound_block_withheld()]] - `references` [EXTRACTED]
+- [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `references` [EXTRACTED]
+- [[test_webhook_receiver_processes()]] - `references` [EXTRACTED]
+- [[test_webhook_strips_pii()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

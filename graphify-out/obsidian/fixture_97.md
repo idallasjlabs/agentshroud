@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "archive_old_events"
+community: "MCPPolicyEngine"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/archive_old_events
+  - community/MCPPolicyEngine
 ---
 
 # fixture
 
 ## Connections
-- [[now()_8]] - `references` [EXTRACTED]
+- [[engine()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/archive_old_events
+#graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

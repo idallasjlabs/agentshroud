@@ -12,7 +12,7 @@ tags:
 # ._load_config()
 
 ## Connections
-- [[dot-__init__()_85]] - `calls` [EXTRACTED]
+- [[dot-__init__()_77]] - `calls` [EXTRACTED]
 - [[Load security configuration_1]] - `rationale_for` [EXTRACTED]
 - [[SecureBrowser_1]] - `method` [EXTRACTED]
 - [[SecurityConfig_2]] - `calls` [EXTRACTED]

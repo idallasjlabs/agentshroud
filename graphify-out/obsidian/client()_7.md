@@ -1,20 +1,19 @@
 ---
-source_file: "gateway/tests/test_chat_completions_alias.py"
+source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "test_chat_completions_alias.py"
-location: "L27"
+community: "test_observatory_mode.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_chat_completions_aliaspy
+  - community/test_observatory_modepy
 ---
 
 # client()
 
 ## Connections
-- [[AsyncMock]] - `calls` [INFERRED]
-- [[app()]] - `indirect_call` [INFERRED]
-- [[fixture_42]] - `references` [EXTRACTED]
-- [[test_chat_completions_alias.py]] - `contains` [EXTRACTED]
+- [[_make_app()]] - `calls` [EXTRACTED]
+- [[fixture_21]] - `references` [EXTRACTED]
+- [[test_observatory_mode.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_chat_completions_aliaspy
+#graphify/code #graphify/EXTRACTED #community/test_observatory_modepy

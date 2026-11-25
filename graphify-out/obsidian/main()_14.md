@@ -1,19 +1,19 @@
 ---
-source_file: "skills/custom/securebrowser/scripts/browse.py"
+source_file: "docker/config/openclaw/cron/scripts/cve_prefetch.py"
 type: "code"
-community: "SecureBrowser"
-location: "L409"
+community: "cve_prefetch.py"
+location: "L45"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecureBrowser
+  - community/cve_prefetchpy
 ---
 
 # main()
 
 ## Connections
-- [[CLI interface for SecureBrowser_3]] - `rationale_for` [EXTRACTED]
-- [[SecureBrowser_3]] - `calls` [EXTRACTED]
-- [[securebrowserscriptsbrowse.py]] - `contains` [EXTRACTED]
+- [[curl_json()]] - `calls` [EXTRACTED]
+- [[cve_prefetch.py]] - `contains` [EXTRACTED]
+- [[known_ghsa_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecureBrowser
+#graphify/code #graphify/EXTRACTED #community/cve_prefetchpy

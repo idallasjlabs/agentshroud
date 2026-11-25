@@ -11,7 +11,7 @@ tags:
 # AsyncClient
 
 ## Connections
-- [[dot-__init__()_25]] - `references` [EXTRACTED]
+- [[dot-__init__()_19]] - `references` [EXTRACTED]
 - [[dot-_get_client()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

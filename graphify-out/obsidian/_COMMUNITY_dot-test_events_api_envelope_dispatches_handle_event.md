@@ -8,10 +8,10 @@ members: 67
 **Members:** 67 nodes
 
 ## Members
-- [[dot-__init__()_32]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-__init__()_23]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_connect_and_handle()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-_get_wss_url()]] - code - gateway/proxy/slack_socket_client.py
-- [[dot-run()_1]] - code - gateway/proxy/slack_socket_client.py
+- [[dot-run()]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-stop()_2]] - code - gateway/proxy/slack_socket_client.py
 - [[dot-test_capped_at_cap_for_large_attempts()]] - code - gateway/tests/test_slack_socket_client.py
 - [[dot-test_events_api_envelope_dispatches_handle_event()]] - code - gateway/tests/test_slack_socket_client.py
@@ -54,23 +54,23 @@ members: 67
 - [[__aiter__()_1]] - code - gateway/tests/test_slack_socket_client.py
 - [[__anext__()]] - code - gateway/tests/test_slack_socket_client.py
 - [[__anext__()_1]] - code - gateway/tests/test_slack_socket_client.py
+- [[__init__()_4]] - code - gateway/tests/test_slack_socket_client.py
 - [[__init__()_5]] - code - gateway/tests/test_slack_socket_client.py
-- [[__init__()_6]] - code - gateway/tests/test_slack_socket_client.py
 - [[_get_wss_url raises RuntimeError when apps.connections.open fails.]] - rationale - gateway/tests/test_slack_socket_client.py
 - [[_get_wss_url returns the WSS URL from apps.connections.open.]] - rationale - gateway/tests/test_slack_socket_client.py
 - [[_make_client()]] - code - gateway/tests/test_slack_socket_client.py
-- [[asyncio_19]] - code
+- [[asyncio_17]] - code
 - [[compute_backoff()]] - code - gateway/proxy/slack_socket_client.py
 - [[events_api envelopes call proxy.handle_event with the payload.]] - rationale - gateway/tests/test_slack_socket_client.py
 - [[fake_backoff()]] - code - gateway/tests/test_slack_socket_client.py
 - [[fake_connect_and_handle()]] - code - gateway/tests/test_slack_socket_client.py
 - [[fake_get_wss_url()]] - code - gateway/tests/test_slack_socket_client.py
-- [[fake_sleep()_1]] - code - gateway/tests/test_slack_socket_client.py
+- [[fake_sleep()]] - code - gateway/tests/test_slack_socket_client.py
 - [[hello messages are silently consumed without calling handle_event.]] - rationale - gateway/tests/test_slack_socket_client.py
 - [[post()]] - code - gateway/tests/test_slack_socket_client.py
 - [[post()_1]] - code - gateway/tests/test_slack_socket_client.py
+- [[send()]] - code - gateway/tests/test_slack_socket_client.py
 - [[send()_1]] - code - gateway/tests/test_slack_socket_client.py
-- [[send()_2]] - code - gateway/tests/test_slack_socket_client.py
 - [[slack_proxy.py]] - code - gateway/proxy/slack_proxy.py
 - [[slack_socket_client.py]] - code - gateway/proxy/slack_socket_client.py
 - [[stop() signals the run loop to exit.]] - rationale - gateway/tests/test_slack_socket_client.py
@@ -86,14 +86,13 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_AsyncMock]]
 - 2 edges to [[_COMMUNITY_SlackAPIProxy]]
+- 2 edges to [[_COMMUNITY_secrets.py]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_read_secret]]
-- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
 - 1 edge to [[_COMMUNITY_ingest_apimain.py]]
 - 1 edge to [[_COMMUNITY__make_proxy]]
 
 ## Top bridge nodes
-- [[slack_proxy.py]] - degree 9, connects to 7 communities
+- [[slack_proxy.py]] - degree 9, connects to 6 communities
 - [[dot-test_events_api_envelope_dispatches_handle_event()]] - degree 11, connects to 1 community
 - [[dot-test_hello_message_not_dispatched()]] - degree 11, connects to 1 community
 - [[_make_client()]] - degree 9, connects to 1 community

@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "LogBuffer"
+community: "test_dashboard_endpoints.py"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogBuffer
+  - community/test_dashboard_endpointspy
 ---
 
 # .tail()
 
 ## Connections
-- [[Any_66]] - `references` [EXTRACTED]
+- [[Any_81]] - `references` [EXTRACTED]
 - [[LogBuffer]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogBuffer
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

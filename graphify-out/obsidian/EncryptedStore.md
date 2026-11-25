@@ -12,7 +12,7 @@ tags:
 # EncryptedStore
 
 ## Connections
-- [[dot-__init__()_16]] - `method` [EXTRACTED]
+- [[dot-__init__()_12]] - `method` [EXTRACTED]
 - [[dot-_derive_key()]] - `method` [EXTRACTED]
 - [[dot-_resolve_secret()]] - `method` [EXTRACTED]
 - [[dot-decrypt()]] - `method` [EXTRACTED]
@@ -23,8 +23,8 @@ tags:
 - [[dot-encrypt_b64()]] - `method` [EXTRACTED]
 - [[dot-get_blob_key_id()]] - `method` [EXTRACTED]
 - [[dot-rotate()]] - `calls` [EXTRACTED]
-- [[dot-setup_method()_6]] - `calls` [EXTRACTED]
-- [[dot-store()]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_5]] - `calls` [EXTRACTED]
+- [[dot-store()_3]] - `calls` [EXTRACTED]
 - [[dot-test_custom_key_id()]] - `calls` [EXTRACTED]
 - [[dot-test_encrypt_decrypt_still_works_after_zeroing()]] - `calls` [EXTRACTED]
 - [[dot-test_encrypted_store_constant_time()]] - `calls` [INFERRED]

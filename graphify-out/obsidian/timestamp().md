@@ -12,7 +12,7 @@ tags:
 # timestamp()
 
 ## Connections
-- [[dot-test_conversion_error_path()]] - `contains` [EXTRACTED]
+- [[dot-test_conversion_error_path()_2]] - `contains` [EXTRACTED]
 - [[dot-verify_export_integrity()]] - `indirect_call` [INFERRED]
 - [[from_audit_chain_entry()]] - `indirect_call` [INFERRED]
 

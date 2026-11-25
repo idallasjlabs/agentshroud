@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "management.py"
+community: "installer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/managementpy
+  - community/installerpy
 ---
 
 # post
 
 ## Connections
-- [[rotate_credential()]] - `references` [EXTRACTED]
+- [[start_install()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/managementpy
+#graphify/code #graphify/EXTRACTED #community/installerpy

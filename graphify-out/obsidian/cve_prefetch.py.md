@@ -15,6 +15,6 @@ tags:
 - [[Deterministic prefetch for the CVE Triage cron job. Fetches both GitHub…]] - `rationale_for` [EXTRACTED]
 - [[curl_json()]] - `contains` [EXTRACTED]
 - [[known_ghsa_ids()]] - `contains` [EXTRACTED]
-- [[main()_15]] - `contains` [EXTRACTED]
+- [[main()_14]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/cve_prefetchpy

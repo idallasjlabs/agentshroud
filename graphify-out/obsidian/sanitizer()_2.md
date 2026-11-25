@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_filter_xml_blocks.py"
 type: "code"
-community: "lifespan.py"
+community: "test_filter_xml_blocks.py"
 location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/test_filter_xml_blockspy
 ---
 
 # sanitizer()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[PIISanitizer]] - `uses` [INFERRED]
-- [[fixture_19]] - `references` [EXTRACTED]
+- [[fixture_27]] - `references` [EXTRACTED]
 - [[test_filter_xml_blocks.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/test_filter_xml_blockspy

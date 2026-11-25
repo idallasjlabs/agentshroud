@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_CONFIG.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "AGENTSHROUD_CONFIG"
-location: "L34"
+community: "CI Workflows"
+location: "L47"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_CONFIG
+  - community/CI_Workflows
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_CONFIG_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_CONFIG
+#graphify/document #graphify/EXTRACTED #community/CI_Workflows

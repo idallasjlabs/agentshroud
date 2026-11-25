@@ -12,8 +12,8 @@ members: 11
 - [[Environment Variables Used_9]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Key Class `EnhancedApprovalQueue`]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Persistence]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Purpose_61]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
-- [[Related Notes_21]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Purpose_62]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
+- [[Related Notes_22]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Responsibilities_41]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Timeout Behavior]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md
 - [[Tool Risk Tiers]] - document - docs/vault/02 - Modules/Other/approval_queue.py.md

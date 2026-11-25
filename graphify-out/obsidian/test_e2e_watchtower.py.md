@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # test_e2e_watchtower.py
@@ -44,7 +44,7 @@ tags:
 - [[pipeline()]] - `contains` [EXTRACTED]
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
-- [[sanitizer()]] - `contains` [EXTRACTED]
+- [[sanitizer()_1]] - `contains` [EXTRACTED]
 - [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_enhanced_sanitizer_error()]] - `contains` [EXTRACTED]
 - [[test_pipeline_fails_closed_on_output_canary_error()]] - `contains` [EXTRACTED]
@@ -52,4 +52,4 @@ tags:
 - [[trust_manager()]] - `contains` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

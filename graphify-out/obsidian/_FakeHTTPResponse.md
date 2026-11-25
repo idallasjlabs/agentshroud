@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-__enter__()_3]] - `method` [EXTRACTED]
 - [[dot-__exit__()_3]] - `method` [EXTRACTED]
-- [[dot-__init__()_213]] - `method` [EXTRACTED]
+- [[dot-__init__()_221]] - `method` [EXTRACTED]
 - [[dot-read()_2]] - `method` [EXTRACTED]
 - [[Context-manager stand-in for the object urlopen() yields.]] - `rationale_for` [EXTRACTED]
 - [[fake_urlopen()_82]] - `calls` [EXTRACTED]

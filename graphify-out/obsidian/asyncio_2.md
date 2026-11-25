@@ -1,24 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "test_dashboard.py"
+community: "EventBus"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_dashboardpy
+  - community/EventBus
 ---
 
 # asyncio
 
 ## Connections
-- [[test_build_egress_live_snapshot_enriches_pending_metrics()]] - `references` [EXTRACTED]
-- [[test_collaborators_endpoint_reads_configured_contributor_sources()]] - `references` [EXTRACTED]
-- [[test_dashboard.py]] - `imports` [EXTRACTED]
-- [[test_dashboard_has_csp_header()]] - `references` [EXTRACTED]
-- [[test_dashboard_requires_auth()]] - `references` [EXTRACTED]
-- [[test_dashboard_serves_html()]] - `references` [EXTRACTED]
-- [[test_dashboard_stats_endpoint()]] - `references` [EXTRACTED]
-- [[test_dashboard_stats_requires_auth()]] - `references` [EXTRACTED]
-- [[test_dashboard_xss_prevention()]] - `references` [EXTRACTED]
+- [[test_async_subscriber()]] - `references` [EXTRACTED]
+- [[test_auth_failure_escalation()]] - `references` [EXTRACTED]
+- [[test_emit_no_subscribers_no_error()]] - `references` [EXTRACTED]
+- [[test_emit_to_multiple_subscribers()]] - `references` [EXTRACTED]
+- [[test_event_has_required_fields()]] - `references` [EXTRACTED]
+- [[test_get_recent()]] - `references` [EXTRACTED]
+- [[test_get_stats()]] - `references` [EXTRACTED]
+- [[test_subscribe_receive_events()]] - `references` [EXTRACTED]
+- [[test_unsubscribe_stops_events()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_dashboardpy
+#graphify/code #graphify/EXTRACTED #community/EventBus

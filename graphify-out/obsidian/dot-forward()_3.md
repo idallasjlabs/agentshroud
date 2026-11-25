@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/proxy/a2a_proxy.py"
+source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "A2APolicyConfig"
-location: "L446"
+community: "test_canary.py"
+location: "L72"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyConfig
+  - community/test_canarypy
 ---
 
 # .forward()
 
 ## Connections
-- [[HermesA2AForwarder]] - `method` [EXTRACTED]
+- [[dot-health_check()_5]] - `calls` [EXTRACTED]
+- [[Forward a request to the OpenClaw backend.]] - `rationale_for` [EXTRACTED]
+- [[ForwardResult]] - `calls` [EXTRACTED]
+- [[HTTPForwarder]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyConfig
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

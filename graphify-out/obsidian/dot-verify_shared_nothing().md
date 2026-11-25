@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/agent_isolation.py"
 type: "code"
-community: "AgentRegistry"
+community: ".verify_shared_nothing"
 location: "L151"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentRegistry
+  - community/verify_shared_nothing
 ---
 
 # .verify_shared_nothing()
@@ -18,4 +18,4 @@ tags:
 - [[IsolationCheck]] - `calls` [EXTRACTED]
 - [[IsolationVerifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentRegistry
+#graphify/code #graphify/EXTRACTED #community/verify_shared_nothing

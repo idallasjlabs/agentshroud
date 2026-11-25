@@ -16,6 +16,6 @@ tags:
 - [[PassthroughPipeline_1]] - `calls` [EXTRACTED]
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
 - [[TestLifespanWiring]] - `method` [EXTRACTED]
-- [[asyncio_88]] - `references` [EXTRACTED]
+- [[asyncio_89]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_progressive_lockdownpy

@@ -14,7 +14,7 @@ members: 19
 - [[__init__()_21]] - code - gateway/tests/test_telegram_executor.py
 - [[_fake_open_connection()]] - code - gateway/tests/test_telegram_executor.py
 - [[_fake_reader_factory()]] - code - gateway/tests/test_telegram_executor.py
-- [[asyncio_84]] - code
+- [[asyncio_86]] - code
 - [[close()_3]] - code - gateway/tests/test_telegram_executor.py
 - [[close()_4]] - code - gateway/tests/test_telegram_executor.py
 - [[drain()]] - code - gateway/tests/test_telegram_executor.py

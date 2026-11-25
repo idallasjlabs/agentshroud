@@ -1,23 +1,23 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
+community: "mock_stream"
 location: "L1466"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # test_call_agent_uses_structured_timeout()
 
 ## Connections
-- [[__aenter__()_6]] - `contains` [EXTRACTED]
-- [[__aexit__()_6]] - `contains` [EXTRACTED]
-- [[__init__()_18]] - `contains` [EXTRACTED]
+- [[__aenter__()_4]] - `contains` [EXTRACTED]
+- [[__aexit__()_4]] - `contains` [EXTRACTED]
+- [[__init__()_8]] - `contains` [EXTRACTED]
 - [[_call_agent_stream must pass a structured httpx.Timeout to AsyncClient. The…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_71]] - `references` [EXTRACTED]
+- [[asyncio_53]] - `references` [EXTRACTED]
 - [[stream()]] - `contains` [EXTRACTED]
 - [[test_voice_gateway.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/ingest_api/config.py"
 type: "code"
-community: "test_mfa_guard.py"
+community: "ingest_api/config.py"
 location: "L103"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/ingest_api/configpy
 ---
 
 # ApprovalQueueConfig
 
 ## Connections
-- [[dot-__init__()_114]] - `references` [EXTRACTED]
-- [[dot-__init__()_115]] - `references` [EXTRACTED]
+- [[dot-__init__()_108]] - `references` [EXTRACTED]
+- [[dot-__init__()_92]] - `references` [EXTRACTED]
 - [[dot-disabled_client()]] - `calls` [EXTRACTED]
 - [[dot-no_approval_client()]] - `calls` [EXTRACTED]
 - [[dot-test_enforce_mode_disabled()]] - `calls` [EXTRACTED]
@@ -21,7 +21,7 @@ tags:
 - [[dot-test_restore_pending_items()]] - `calls` [EXTRACTED]
 - [[Approval queue configuration]] - `rationale_for` [EXTRACTED]
 - [[ApprovalQueue]] - `uses` [INFERRED]
-- [[BaseModel_7]] - `inherits` [EXTRACTED]
+- [[BaseModel_5]] - `inherits` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
 - [[TestPersistence_2]] - `uses` [INFERRED]
 - [[TestSSHDisabledEndpoint]] - `uses` [INFERRED]
@@ -31,7 +31,7 @@ tags:
 - [[_real_queue()]] - `calls` [EXTRACTED]
 - [[approval_queue()_1]] - `uses` [INFERRED]
 - [[conftest.py]] - `imports` [EXTRACTED]
-- [[edge()_1]] - `uses` [INFERRED]
+- [[edge()]] - `uses` [INFERRED]
 - [[enhanced_mfa_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue()]] - `uses` [INFERRED]
 - [[enhanced_queue.py]] - `imports` [EXTRACTED]
@@ -63,4 +63,4 @@ tags:
 - [[test_submit_does_not_deadlock_on_hung_websocket_client()_1]] - `uses` [INFERRED]
 - [[test_websocket_notifications()]] - `uses` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

@@ -27,7 +27,7 @@ SORT file.name ASC
 - 5 edges to [[_COMMUNITY_DraftEntry]]
 - 3 edges to [[_COMMUNITY_CompetitiveIntelReport]]
 - 1 edge to [[_COMMUNITY_test_intel_endpoint.py]]
-- 1 edge to [[_COMMUNITY_EgressFilter]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
 - 1 edge to [[_COMMUNITY_make_httpx_fetcher]]
 
 ## Top bridge nodes

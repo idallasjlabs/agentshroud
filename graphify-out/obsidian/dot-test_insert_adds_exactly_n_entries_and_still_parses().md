@@ -15,6 +15,6 @@ tags:
 - [[TestListLocator]] - `method` [EXTRACTED]
 - [[_exec_registry()]] - `calls` [EXTRACTED]
 - [[_sync()]] - `calls` [EXTRACTED]
-- [[parametrize_2]] - `references` [EXTRACTED]
+- [[parametrize_3]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_sync

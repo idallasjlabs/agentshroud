@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/inbound_edge/edge_jwt.py"
+source_file: "gateway/web/api.py"
 type: "code"
-community: "EdgeStore"
-location: "L114"
+community: "api.py"
+location: "L117"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EdgeStore
+  - community/apipy
 ---
 
 # .__init__()
 
 ## Connections
-- [[EdgeStore]] - `references` [EXTRACTED]
-- [[TokenService]] - `method` [EXTRACTED]
+- [[dot-__init__()_150]] - `calls` [EXTRACTED]
+- [[KillSwitchError]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EdgeStore
+#graphify/code #graphify/EXTRACTED #community/apipy

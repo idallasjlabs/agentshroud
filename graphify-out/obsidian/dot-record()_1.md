@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/ledger.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L114"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # .record()
@@ -17,4 +17,4 @@ tags:
 - [[DataLedger]] - `method` [EXTRACTED]
 - [[LedgerEntry]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

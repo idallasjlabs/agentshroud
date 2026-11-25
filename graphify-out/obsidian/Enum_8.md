@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "PrivacyPolicyEnforcer"
+community: "test_url_analyzer.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PrivacyPolicyEnforcer
+  - community/test_url_analyzerpy
 ---
 
 # Enum
 
 ## Connections
-- [[ServicePrivacy]] - `inherits` [EXTRACTED]
-- [[privacy_policy.py]] - `imports_from` [EXTRACTED]
+- [[URLVerdict]] - `inherits` [EXTRACTED]
+- [[url_analyzer.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PrivacyPolicyEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

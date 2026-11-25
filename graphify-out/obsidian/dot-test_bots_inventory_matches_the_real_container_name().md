@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestHealthCheckDetailBotsInventory]] - `method` [EXTRACTED]
-- [[asyncio_52]] - `references` [EXTRACTED]
+- [[asyncio_56]] - `references` [EXTRACTED]
 - [[health()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy

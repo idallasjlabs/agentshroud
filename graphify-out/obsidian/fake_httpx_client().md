@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[_FakeUpstreamResponse]] - `calls` [EXTRACTED]
-- [[fixture_115]] - `references` [EXTRACTED]
+- [[fixture_112]] - `references` [EXTRACTED]
 - [[test_dns_canvas_coverage.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

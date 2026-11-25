@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ssh_endpoints.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L354"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # TestSSHRequireApprovalFalse
@@ -30,4 +30,4 @@ tags:
 - [[Test require_approval=false executes directly (Finding 5)]] - `rationale_for` [EXTRACTED]
 - [[test_ssh_endpoints.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GatewayConfig
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

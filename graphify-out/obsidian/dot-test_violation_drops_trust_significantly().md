@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TrustManager"
+community: "TestPrivilegeEscalation"
 location: "L526"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPrivilegeEscalation
 ---
 
 # .test_violation_drops_trust_significantly()
@@ -16,4 +16,4 @@ tags:
 - [[TestPrivilegeEscalation]] - `method` [EXTRACTED]
 - [[TrustManager]] - `calls` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TestPrivilegeEscalation

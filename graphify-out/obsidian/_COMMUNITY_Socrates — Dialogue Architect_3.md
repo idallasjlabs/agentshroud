@@ -8,24 +8,24 @@ members: 18
 **Members:** 18 nodes
 
 ## Members
-- [[Dialogue Adaptations]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Dialogue Techniques]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[EXPERT]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[ElevenLabs v3 Audio Tags]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Episode Closing (Mandatory for OKE)]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Expert Persona]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[HOST]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Input Requirements_53]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[OKE Channel — CPA Exam Prep Dialogue Guidelines]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Output Format_87]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Persona_45]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Quality Checklist_51]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Role_173]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Socrates — Dialogue Architect_3]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[Speaker Definitions]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[System Prompt_45]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[User Prompt Template_17]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
-- [[hermesskillsi-socratesSKILL]] - document - docker/config/hermes/skills/i-socrates/SKILL.md
+- [[dot-agentsagentssocrates]] - document - .agents/agents/socrates.md
+- [[Dialogue Adaptations_1]] - document - .agents/agents/socrates.md
+- [[Dialogue Techniques_1]] - document - .agents/agents/socrates.md
+- [[EXPERT_1]] - document - .agents/agents/socrates.md
+- [[ElevenLabs v3 Audio Tags_1]] - document - .agents/agents/socrates.md
+- [[Episode Closing (Mandatory for OKE)_1]] - document - .agents/agents/socrates.md
+- [[Expert Persona_1]] - document - .agents/agents/socrates.md
+- [[HOST_1]] - document - .agents/agents/socrates.md
+- [[Input Requirements_69]] - document - .agents/agents/socrates.md
+- [[OKE Channel — CPA Exam Prep Dialogue Guidelines_1]] - document - .agents/agents/socrates.md
+- [[Output Format_111]] - document - .agents/agents/socrates.md
+- [[Persona_53]] - document - .agents/agents/socrates.md
+- [[Quality Checklist_61]] - document - .agents/agents/socrates.md
+- [[Role_272]] - document - .agents/agents/socrates.md
+- [[Socrates — Dialogue Architect_4]] - document - .agents/agents/socrates.md
+- [[Speaker Definitions_1]] - document - .agents/agents/socrates.md
+- [[System Prompt_53]] - document - .agents/agents/socrates.md
+- [[User Prompt Template_21]] - document - .agents/agents/socrates.md
 
 ## Live Query (requires Dataview plugin)
 

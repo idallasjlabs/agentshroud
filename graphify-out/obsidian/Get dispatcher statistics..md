@@ -12,6 +12,6 @@ tags:
 # Get dispatcher statistics.
 
 ## Connections
-- [[dot-get_stats()_11]] - `rationale_for` [EXTRACTED]
+- [[dot-get_stats()_12]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/AlertDispatcher

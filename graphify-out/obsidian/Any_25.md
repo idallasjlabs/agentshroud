@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "LLMProxy"
+community: ".__init__"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LLMProxy
+  - community/__init__
 ---
 
 # Any
 
 ## Connections
-- [[dot-_filter_streaming_event()]] - `references` [EXTRACTED]
-- [[dot-proxy_messages_streaming()]] - `references` [EXTRACTED]
+- [[dot-__init__()_56]] - `references` [EXTRACTED]
+- [[dot-_compile_patterns()]] - `references` [EXTRACTED]
+- [[dot-get_stats()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LLMProxy
+#graphify/code #graphify/EXTRACTED #community/__init__

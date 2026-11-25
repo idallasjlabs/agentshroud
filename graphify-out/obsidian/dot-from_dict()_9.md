@@ -1,21 +1,19 @@
 ---
-source_file: "gateway/security/memory_integrity.py"
+source_file: "gateway/runtime/config.py"
 type: "code"
-community: "middleware.py"
-location: "L56"
+community: "api.py"
+location: "L57"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/apipy
 ---
 
 # .from_dict()
 
 ## Connections
-- [[dot-_load_integrity_database()]] - `calls` [EXTRACTED]
-- [[Any_61]] - `references` [EXTRACTED]
-- [[Create from dictionary for JSON deserialization.]] - `rationale_for` [EXTRACTED]
-- [[FileIntegrityRecord]] - `method` [EXTRACTED]
-- [[ModificationSource]] - `calls` [EXTRACTED]
+- [[dot-test_from_dict()]] - `calls` [EXTRACTED]
+- [[Load from a config dictionary (e.g. from YAML).]] - `rationale_for` [EXTRACTED]
+- [[RuntimeConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/apipy

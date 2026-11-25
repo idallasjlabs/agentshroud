@@ -1,18 +1,21 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/proxy/telegram_proxy.py"
 type: "code"
-community: "make_proxy"
-location: "L125"
+community: "RBACConfig"
+location: "L398"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_proxy
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[Exception_2]] - `references` [EXTRACTED]
-- [[FakeConn]] - `method` [EXTRACTED]
+- [[ProgressiveLockdown]] - `calls` [EXTRACTED]
+- [[RBACConfig]] - `calls` [EXTRACTED]
+- [[RateLimiter]] - `calls` [EXTRACTED]
+- [[TelegramAPIProxy]] - `method` [EXTRACTED]
+- [[load_paused_collaborator_ids()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_proxy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/tests/test_voice_gateway.py"
+source_file: "gateway/tests/test_soc_services_coverage.py"
 type: "code"
-community: "test_tts_kokoro_pipeline_load_failure_raises"
-location: "L85"
+community: "TestKnownServices"
+location: "L513"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_tts_kokoro_pipeline_load_failure_raises
+  - graphify/EXTRACTED
+  - community/TestKnownServices
 ---
 
 # _boom()
 
 ## Connections
-- [[test_lifespan_tolerates_warmup_failure()]] - `indirect_call` [INFERRED]
-- [[test_tts_kokoro_pipeline_load_failure_raises()]] - `indirect_call` [INFERRED]
+- [[dot-test_falls_back_to_openclaw_only_on_config_load_failure()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_tts_kokoro_pipeline_load_failure_raises
+#graphify/code #graphify/EXTRACTED #community/TestKnownServices

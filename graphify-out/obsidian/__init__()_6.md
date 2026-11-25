@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_slack_socket_client.py"
+source_file: "gateway/tests/test_soc_router_coverage.py"
 type: "code"
-community: ".test_events_api_envelope_dispatches_handle_event"
-location: "L212"
+community: "test_soc_router_coverage.py"
+location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_events_api_envelope_dispatches_handle_event
+  - community/test_soc_router_coveragepy
 ---
 
 # __init__()
 
 ## Connections
-- [[dot-test_hello_message_not_dispatched()]] - `contains` [EXTRACTED]
+- [[_make_service_manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

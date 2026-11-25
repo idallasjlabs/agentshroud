@@ -73,7 +73,7 @@ members: 81
 - [[apps.connections.open pipeline is NOT invoked (not a message method).]] - rationale - gateway/tests/test_slack_proxy.py
 - [[apps.connections.open real WSS URL is stored and relay URL returned.]] - rationale - gateway/tests/test_slack_proxy.py
 - [[apps.connections.open response without url field returned unchanged.]] - rationale - gateway/tests/test_slack_proxy.py
-- [[asyncio_38]] - code
+- [[asyncio_40]] - code
 - [[blocksattachments and upload text must be scanned, not just `text`. Regression…]] - rationale - gateway/tests/test_slack_proxy.py
 - [[chat.postEphemeral text goes through the pipeline like postMessage.]] - rationale - gateway/tests/test_slack_proxy.py
 - [[consume_relay_token returns None for unknown tokens.]] - rationale - gateway/tests/test_slack_proxy.py
@@ -85,9 +85,9 @@ members: 81
 - [[handle_event records inbound activity for message events.]] - rationale - gateway/tests/test_slack_proxy.py
 - [[handle_event swallows tracker exceptions (non-fatal).]] - rationale - gateway/tests/test_slack_proxy.py
 - [[handle_event truncates message_preview to 80 characters.]] - rationale - gateway/tests/test_slack_proxy.py
+- [[scan()]] - code - gateway/tests/test_slack_proxy.py
 - [[scan()_1]] - code - gateway/tests/test_slack_proxy.py
 - [[scan()_2]] - code - gateway/tests/test_slack_proxy.py
-- [[scan()_3]] - code - gateway/tests/test_slack_proxy.py
 - [[test_slack_proxy.py]] - code - gateway/tests/test_slack_proxy.py
 
 ## Live Query (requires Dataview plugin)
@@ -100,12 +100,11 @@ SORT file.name ASC
 ## Connections to other communities
 - 26 edges to [[_COMMUNITY_AsyncMock]]
 - 3 edges to [[_COMMUNITY_SlackAPIProxy]]
-- 1 edge to [[_COMMUNITY_dot-process_webhook]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_WebhookReceiver]]
 - 1 edge to [[_COMMUNITY_dot-test_events_api_envelope_dispatches_handle_event]]
 
 ## Top bridge nodes
-- [[test_slack_proxy.py]] - degree 12, connects to 4 communities
+- [[test_slack_proxy.py]] - degree 12, connects to 3 communities
 - [[_make_proxy()_1]] - degree 35, connects to 1 community
 - [[TestHandleEvent]] - degree 9, connects to 1 community
 - [[dot-test_attachments_scanned()]] - degree 7, connects to 1 community

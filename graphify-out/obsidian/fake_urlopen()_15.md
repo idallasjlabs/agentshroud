@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_telegram_proxy_inbound.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "_wrap_response"
-location: "L3929"
+community: "test_llm_proxy_failover.py"
+location: "L148"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_wrap_response
+  - community/test_llm_proxy_failoverpy
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[dot-test_send_telegram_text_honors_retry_after_on_http_429()]] - `contains` [EXTRACTED]
+- [[test_forward_request_default_still_retries_429()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_wrap_response
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

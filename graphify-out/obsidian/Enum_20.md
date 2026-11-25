@@ -11,7 +11,7 @@ tags:
 # Enum
 
 ## Connections
-- [[RiskLevel_2]] - `inherits` [EXTRACTED]
+- [[RiskLevel_1]] - `inherits` [EXTRACTED]
 - [[browserscriptsbrowse.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -10,7 +10,7 @@ members: 20
 ## Members
 - [[dot-__enter__()_3]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-__exit__()_3]] - code - gateway/tests/test_cli_coverage.py
-- [[dot-__init__()_213]] - code - gateway/tests/test_cli_coverage.py
+- [[dot-__init__()_221]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-read()_2]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_empty_response_body_returns_empty_dict()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_get_builds_url_headers_and_parses_json()]] - code - gateway/tests/test_cli_coverage.py
@@ -21,7 +21,7 @@ members: 20
 - [[dot-test_post_serializes_body()]] - code - gateway/tests/test_cli_coverage.py
 - [[dot-test_put_and_delete_methods()]] - code - gateway/tests/test_cli_coverage.py
 - [[Context-manager stand-in for the object urlopen() yields.]] - rationale - gateway/tests/test_cli_coverage.py
-- [[Exception_20]] - code
+- [[Exception_21]] - code
 - [[Patch gateway.cli.client.urlopen; return list of captured Request objects.]] - rationale - gateway/tests/test_cli_coverage.py
 - [[TestSCLClientRequest]] - code - gateway/tests/test_cli_coverage.py
 - [[_FakeHTTPResponse]] - code - gateway/tests/test_cli_coverage.py

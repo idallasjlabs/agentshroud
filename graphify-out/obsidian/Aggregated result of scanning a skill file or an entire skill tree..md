@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/skill_guard.py"
 type: "rationale"
-community: "ScanResult"
+community: "SkillGuard"
 location: "L108"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ScanResult
+  - community/SkillGuard
 ---
 
 # Aggregated result of scanning a skill file or an entire skill tree.
 
 ## Connections
-- [[ScanResult_2]] - `rationale_for` [EXTRACTED]
+- [[ScanResult_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ScanResult
+#graphify/rationale #graphify/EXTRACTED #community/SkillGuard

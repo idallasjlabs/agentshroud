@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/wazuh_client.py"
 type: "code"
-community: "scanner_integration.py"
+community: "generate_summary"
 location: "L175"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/scanner_integrationpy
+  - community/generate_summary
 ---
 
 # generate_summary()
 
 ## Connections
-- [[Any_37]] - `references` [EXTRACTED]
+- [[Any_38]] - `references` [EXTRACTED]
 - [[Generate a summary dict suitable for the health report. Args alerts List of…_1]] - `rationale_for` [EXTRACTED]
 - [[get_clamav_summary()]] - `calls` [EXTRACTED]
 - [[get_falco_summary()]] - `calls` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[wazuh_alerts()]] - `calls` [EXTRACTED]
 - [[wazuh_client.py_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/scanner_integrationpy
+#graphify/code #graphify/EXTRACTED #community/generate_summary

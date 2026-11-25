@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_inspector.py"
 type: "code"
-community: "MCPInspector"
+community: "test_mcp_proxy.py"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPInspector
+  - community/test_mcp_proxypy
 ---
 
 # ._scan_text()
@@ -17,4 +17,4 @@ tags:
 - [[MCPInspector]] - `method` [EXTRACTED]
 - [[Scan a single string for all threat types.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPInspector
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/a2a_policy.py"
+source_file: "gateway/security/trust_manager.py"
 type: "code"
-community: "A2APolicyEngine"
-location: "L199"
+community: "TrustConfig"
+location: "L68"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/TrustConfig
 ---
 
 # .__post_init__()
 
 ## Connections
-- [[A2APolicyConfig]] - `method` [EXTRACTED]
-- [[_norm()_1]] - `calls` [EXTRACTED]
+- [[TrustConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

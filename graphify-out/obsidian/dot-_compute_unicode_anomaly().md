@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/heuristic_classifier.py"
 type: "code"
-community: "normalize_input"
+community: "TestHeuristicClassifier"
 location: "L146"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/TestHeuristicClassifier
 ---
 
 # ._compute_unicode_anomaly()
@@ -16,4 +16,4 @@ tags:
 - [[Detect unusual Unicode patterns that suggest evasion.]] - `rationale_for` [EXTRACTED]
 - [[HeuristicClassifier]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/TestHeuristicClassifier

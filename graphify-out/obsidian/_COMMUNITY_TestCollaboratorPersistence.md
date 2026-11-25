@@ -51,7 +51,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_socrouter.py]]
+- 3 edges to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
 - [[TestCollaboratorPersistence]] - degree 24, connects to 1 community

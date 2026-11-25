@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_ollama_tools_unsupported_error_is_sanitized"
+community: "_make_sanitizer"
 location: "L737"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_ollama_tools_unsupported_error_is_sanitized
+  - community/_make_sanitizer
 ---
 
 # .test_ollama_tools_unsupported_error_is_sanitized()
@@ -15,6 +15,6 @@ tags:
 - [[Raw model capability errors should be rewritten to actionable guidance.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_ollama_tools_unsupported_error_is_sanitized
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

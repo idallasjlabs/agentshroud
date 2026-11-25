@@ -15,9 +15,9 @@ tags:
 - [[dot-test_file_upload_initial_comment_scanned()]] - `calls` [EXTRACTED]
 - [[dot-test_post_ephemeral_scanned()]] - `calls` [EXTRACTED]
 - [[dot-test_text_sanitization_still_applied()]] - `calls` [EXTRACTED]
+- [[scan()]] - `calls` [EXTRACTED]
 - [[scan()_1]] - `calls` [EXTRACTED]
 - [[scan()_2]] - `calls` [EXTRACTED]
-- [[scan()_3]] - `calls` [EXTRACTED]
 - [[test_slack_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[cve_prefetch.py]] - `contains` [EXTRACTED]
-- [[main()_15]] - `calls` [EXTRACTED]
+- [[main()_14]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/cve_prefetchpy

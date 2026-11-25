@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_rbac.py"
 type: "rationale"
-community: "TestRBACConfig"
+community: "RBACConfig"
 location: "L33"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestRBACConfig
+  - community/RBACConfig
 ---
 
 # Test default RBAC configuration initialization.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_default_config_initialization()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestRBACConfig
+#graphify/rationale #graphify/EXTRACTED #community/RBACConfig

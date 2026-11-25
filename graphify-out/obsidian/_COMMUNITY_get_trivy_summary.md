@@ -1,33 +1,32 @@
 ---
 type: community
-members: 21
+members: 20
 ---
 
 # get_trivy_summary
 
-**Members:** 21 nodes
+**Members:** 20 nodes
 
 ## Members
 - [[dot-test_clean_when_installed_but_no_report()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_not_run_when_no_report_dir()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_prefix_filter()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_returns_generate_summary_output()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_most_recent_file()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_none_for_empty_directory()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_none_for_missing_directory()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_none_on_invalid_json()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_returns_none_when_all_files_empty()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_skips_empty_files_returns_next_valid()]] - code - gateway/tests/test_scanner_integration.py
-- [[Load the most recent JSON report file from a directory. Args directory…]] - rationale - gateway/security/scanner_integration.py
-- [[Path_35]] - code
-- [[Return True if the most recent report file was written within max_age_hours.]] - rationale - gateway/security/scanner_integration.py
+- [[dot-test_returns_latest_sbom()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_none_for_empty_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_returns_none_when_no_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_two_when_sbom_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_zero_when_empty_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_zero_when_no_sbom_dir()]] - code - gateway/tests/test_scanner_integration.py
 - [[Return latest Trivy scan summary from saved reports. When Trivy is installed…]] - rationale - gateway/security/scanner_integration.py
+- [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 29 AI Model & Supply Chain Integrity (0-5). MITRE ATLAS, OWASP…]] - rationale - gateway/security/scanner_integration.py
+- [[Score domain 3 Supply Chain (0-5). 0=no SBOM, 2=SBOM exists, 3=SBOM has…]] - rationale - gateway/security/scanner_integration.py
+- [[TestGetSbom]] - code - gateway/tests/test_scanner_integration.py
 - [[TestGetTrivySummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestLoadLatestJson_1]] - code - gateway/tests/test_scanner_integration.py
-- [[_is_fresh()]] - code - gateway/security/scanner_integration.py
-- [[_load_latest_json()]] - code - gateway/security/scanner_integration.py
+- [[TestScoreSupplyChain_1]] - code - gateway/tests/test_scanner_integration.py
 - [[_score_ai_model_supply_chain()]] - code - gateway/security/scanner_integration.py
+- [[_score_supply_chain()]] - code - gateway/security/scanner_integration.py
+- [[get_sbom()_1]] - code - gateway/security/scanner_integration.py
 - [[get_trivy_summary()]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -38,20 +37,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 6 edges to [[_COMMUNITY_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY_Any_1]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_compute_scorecard]]
-- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 1 edge to [[_COMMUNITY__score_compliance_auditing]]
-- 1 edge to [[_COMMUNITY_get_sbom]]
-- 1 edge to [[_COMMUNITY__score_image_integrity]]
+- 6 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 4 edges to [[_COMMUNITY_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_socrouter.py]]
+- 3 edges to [[_COMMUNITY_Any]]
+- 3 edges to [[_COMMUNITY_compute_scorecard]]
+- 1 edge to [[_COMMUNITY_aggregate_results]]
+- 1 edge to [[_COMMUNITY_generate_summary]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
+- 1 edge to [[_COMMUNITY_test_scorecard_integrity.py]]
 
 ## Top bridge nodes
-- [[get_trivy_summary()]] - degree 16, connects to 7 communities
-- [[_is_fresh()]] - degree 8, connects to 4 communities
-- [[_load_latest_json()]] - degree 15, connects to 3 communities
-- [[_score_ai_model_supply_chain()]] - degree 5, connects to 2 communities
-- [[TestLoadLatestJson_1]] - degree 8, connects to 1 community
+- [[get_trivy_summary()]] - degree 16, connects to 8 communities
+- [[get_sbom()_1]] - degree 9, connects to 4 communities
+- [[_score_supply_chain()]] - degree 9, connects to 3 communities
+- [[_score_ai_model_supply_chain()]] - degree 5, connects to 3 communities
+- [[TestGetSbom]] - degree 4, connects to 1 community

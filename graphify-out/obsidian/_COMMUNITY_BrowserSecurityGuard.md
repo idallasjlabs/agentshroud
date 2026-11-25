@@ -8,7 +8,7 @@ members: 45
 **Members:** 45 nodes
 
 ## Members
-- [[dot-__init__()_87]] - code - gateway/security/browser_security.py
+- [[dot-__init__()_79]] - code - gateway/security/browser_security.py
 - [[dot-analyze_content()]] - code - gateway/security/browser_security.py
 - [[dot-analyze_screenshot()]] - code - gateway/security/browser_security.py
 - [[dot-can_enter_credentials()]] - code - gateway/security/browser_security.py
@@ -40,7 +40,7 @@ members: 45
 - [[Browser Security Module - Detects social engineering in web content. Provides…]] - rationale - gateway/security/browser_security.py
 - [[BrowserSecurityGuard]] - code - gateway/security/browser_security.py
 - [[CredentialEntryBlocked]] - code - gateway/security/browser_security.py
-- [[Exception_10]] - code
+- [[Exception_8]] - code
 - [[IntEnum_2]] - code
 - [[TestCredentialProtection]] - code - gateway/tests/test_browser_security.py
 - [[TestScreenshotAnalysis]] - code - gateway/tests/test_browser_security.py
@@ -48,7 +48,7 @@ members: 45
 - [[TestURLReputation]] - code - gateway/tests/test_browser_security.py
 - [[Tests for browser_security module. TDD Written before implementation.]] - rationale - gateway/tests/test_browser_security.py
 - [[ThreatAssessment]] - code - gateway/security/browser_security.py
-- [[ThreatLevel]] - code - gateway/security/browser_security.py
+- [[ThreatLevel_1]] - code - gateway/security/browser_security.py
 - [[browser_security.py]] - code - gateway/security/browser_security.py
 - [[fixture_59]] - code
 - [[guard()_1]] - code - gateway/tests/test_browser_security.py
@@ -62,17 +62,15 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_WebProxy]]
-- 2 edges to [[_COMMUNITY_middleware.py]]
-- 2 edges to [[_COMMUNITY_web_proxy.py]]
-- 2 edges to [[_COMMUNITY_lifespan.py]]
-- 2 edges to [[_COMMUNITY_PathIsolationManager]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
-- 1 edge to [[_COMMUNITY_MetadataGuard]]
+- 4 edges to [[_COMMUNITY_middleware.py]]
+- 4 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_test_all_modules_enforce.py]]
+- 2 edges to [[_COMMUNITY_TestModuleInstantiationInEnforceMode]]
+- 1 edge to [[_COMMUNITY_ContextGuard]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
 - [[BrowserSecurityGuard]] - degree 17, connects to 6 communities
 - [[browser_security.py]] - degree 8, connects to 3 communities
-- [[ThreatAssessment]] - degree 8, connects to 2 communities
+- [[ThreatAssessment]] - degree 8, connects to 1 community
 - [[dot-test_browser_security_guard_instantiates()]] - degree 2, connects to 1 community

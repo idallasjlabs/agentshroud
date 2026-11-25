@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy_coverage.py"
+source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "._fake_aiohttp"
-location: "L272"
+community: "test_dns_canvas_coverage.py"
+location: "L95"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_fake_aiohttp
+  - community/test_dns_canvas_coveragepy
 ---
 
 # close()
 
 ## Connections
-- [[dot-_fake_aiohttp()]] - `contains` [EXTRACTED]
+- [[make_fake_socket_module()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_fake_aiohttp
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

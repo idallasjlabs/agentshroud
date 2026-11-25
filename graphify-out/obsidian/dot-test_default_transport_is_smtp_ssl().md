@@ -1,22 +1,22 @@
 ---
 source_file: "gateway/tests/test_gateway_email_service.py"
 type: "code"
-community: ".test_default_transport_is_smtp_ssl"
+community: "GatewayEmailService"
 location: "L116"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_default_transport_is_smtp_ssl
+  - community/GatewayEmailService
 ---
 
 # .test_default_transport_is_smtp_ssl()
 
 ## Connections
 - [[TestSend]] - `method` [EXTRACTED]
-- [[__enter__()_2]] - `contains` [EXTRACTED]
-- [[__exit__()_2]] - `contains` [EXTRACTED]
-- [[__init__()_11]] - `contains` [EXTRACTED]
+- [[__enter__()_1]] - `contains` [EXTRACTED]
+- [[__exit__()_1]] - `contains` [EXTRACTED]
+- [[__init__()_9]] - `contains` [EXTRACTED]
 - [[login()]] - `contains` [EXTRACTED]
 - [[sendmail()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_default_transport_is_smtp_ssl
+#graphify/code #graphify/EXTRACTED #community/GatewayEmailService

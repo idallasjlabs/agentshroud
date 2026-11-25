@@ -12,7 +12,7 @@ members: 40
 - [[dot-test_empty_summaries()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_error_status_gets_50()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_format_report_string()]] - code - gateway/tests/test_security_toolchain.py
-- [[dot-test_generate_report()_1]] - code - gateway/tests/test_security_toolchain.py
+- [[dot-test_generate_report()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_grade_a()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_grade_b()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_grade_c()]] - code - gateway/tests/test_security_toolchain.py
@@ -25,7 +25,7 @@ members: 40
 - [[dot-test_perfect_score()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_score_floor()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_trend_empty_db()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_28]] - code
+- [[Any_24]] - code
 - [[Calculate score for a single tool (0-100). Args summary Tool summary dict…]] - rationale - gateway/security/health_report.py
 - [[Calculate weighted overall security score. Args summaries Dict mapping tool…]] - rationale - gateway/security/health_report.py
 - [[Connection_1]] - code
@@ -58,8 +58,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 10 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
 
 ## Top bridge nodes
 - [[health_report.py_2]] - degree 11, connects to 3 communities

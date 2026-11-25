@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "ProgressiveTrustConfig"
+community: "PathIsolationManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/PathIsolationManager
 ---
 
 # fixture
 
 ## Connections
-- [[trust_manager()_2]] - `references` [EXTRACTED]
+- [[dot-config()]] - `references` [EXTRACTED]
+- [[dot-manager()]] - `references` [EXTRACTED]
+- [[dot-temp_dir()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/code #graphify/EXTRACTED #community/PathIsolationManager

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "BufferHandler"
+community: "deep_security_test"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/BufferHandler
+  - community/deep_security_test
 ---
 
 # LogRecord
 
 ## Connections
-- [[dot-emit()_1]] - `references` [EXTRACTED]
+- [[dot-filter()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/BufferHandler
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

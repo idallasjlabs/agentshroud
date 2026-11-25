@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestDependencySecurity"
+community: "TestHTTPSecurity"
 location: "L642"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDependencySecurity
+  - community/TestHTTPSecurity
 ---
 
 # .test_no_yaml_unsafe_load()
@@ -15,4 +15,4 @@ tags:
 - [[No yaml.load() without Loader (arbitrary code execution).]] - `rationale_for` [EXTRACTED]
 - [[TestDependencySecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDependencySecurity
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

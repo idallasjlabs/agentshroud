@@ -12,9 +12,9 @@ tags:
 # Security Review (SEC)
 
 ## Connections
-- [[Purpose_151]] - `contains` [EXTRACTED]
+- [[Purpose_153]] - `contains` [EXTRACTED]
 - [[Related Skills_83]] - `contains` [EXTRACTED]
-- [[Usage_93]] - `contains` [EXTRACTED]
+- [[Usage_94]] - `contains` [EXTRACTED]
 - [[openclawskillsi-secREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Security_Review_SEC

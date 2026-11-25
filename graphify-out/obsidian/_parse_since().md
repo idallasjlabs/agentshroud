@@ -15,7 +15,7 @@ tags:
 - [[Parse --since into a UTC-aware datetime. Accepts 'YYYY-MM-DD' or 'YYYY-MM-DD…]] - `rationale_for` [EXTRACTED]
 - [[_parse_since()_1]] - `semantically_similar_to` [INFERRED]
 - [[_parse_since()_2]] - `semantically_similar_to` [INFERRED]
-- [[datetime_2]] - `references` [EXTRACTED]
+- [[datetime_1]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
 - [[main()_5]] - `calls` [EXTRACTED]
 

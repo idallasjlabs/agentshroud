@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/env_guard.py"
 type: "code"
-community: "check_command"
+community: "env_guard.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/env_guardpy
 ---
 
 # env_guard.py
@@ -22,4 +22,4 @@ tags:
 - [[test_env_guard.py]] - `imports_from` [EXTRACTED]
 - [[test_env_guard_class.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/env_guardpy

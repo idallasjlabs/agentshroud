@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_dns_canvas_coverage.py"
+source_file: "gateway/security/browser_security.py"
 type: "code"
-community: "_FakeAsyncClient"
-location: "L598"
+community: "BrowserSecurityGuard"
+location: "L96"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_FakeAsyncClient
+  - community/BrowserSecurityGuard
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeAsyncClient]] - `method` [EXTRACTED]
+- [[BrowserSecurityGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_FakeAsyncClient
+#graphify/code #graphify/EXTRACTED #community/BrowserSecurityGuard

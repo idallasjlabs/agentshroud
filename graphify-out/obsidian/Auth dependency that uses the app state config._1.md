@@ -1,12 +1,12 @@
 ---
-source_file: "gateway/ingest_api/routes/approval.py"
+source_file: "gateway/ingest_api/routes/health.py"
 type: "rationale"
-community: "decide_approval"
-location: "L34"
+community: "fastapi.md"
+location: "L19"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/fastapimd
 ---
 
 # Auth dependency that uses the app state config.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[auth_dep()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/decide_approval
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

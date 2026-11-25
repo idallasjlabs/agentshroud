@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_intel_pipeline.py"
 type: "code"
-community: "FileSandbox"
-location: "L693"
+community: "IntelReportStore"
+location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/IntelReportStore
 ---
 
 # .store()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestCryptography]] - `method` [EXTRACTED]
-- [[fixture_47]] - `references` [EXTRACTED]
+- [[IntelReportStore]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
+- [[TestIntelReportStore]] - `method` [EXTRACTED]
+- [[fixture_111]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/FileSandbox
+#graphify/code #graphify/EXTRACTED #community/IntelReportStore

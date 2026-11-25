@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_gemini_via_openai_path.py"
+source_file: "gateway/tests/test_llm_proxy_failover.py"
 type: "code"
-community: "test_proxy_gemini_translation_failure_falls_through_gracefully"
-location: "L119"
+community: "test_llm_proxy_failover.py"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_proxy_gemini_translation_failure_falls_through_gracefully
+  - community/test_llm_proxy_failoverpy
 ---
 
 # mock_forward()
 
 ## Connections
-- [[test_proxy_gemini_translation_failure_falls_through_gracefully()]] - `contains` [EXTRACTED]
+- [[test_proxy_post_retry_429_now_failovers()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_proxy_gemini_translation_failure_falls_through_gracefully
+#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

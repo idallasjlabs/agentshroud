@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "TestHermesEgressAllowlist"
 location: "L470"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/TestHermesEgressAllowlist
 ---
 
 # .test_nousresearch_in_permanent_allowlist()
@@ -15,4 +15,4 @@ tags:
 - [[Hermes base image is from nousresearch.com — must be in egress allowlist.]] - `rationale_for` [EXTRACTED]
 - [[TestHermesEgressAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/TestHermesEgressAllowlist

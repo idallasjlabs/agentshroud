@@ -1,11 +1,11 @@
 ---
 source_file: "docs/security/secrets-inventory.md"
 type: "rationale"
-community: "Pre-Purge Secret Rotation Checklist"
+community: "GSDE&G Skills Reference Guide"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/Pre-Purge_Secret_Rotation_Checklist
+  - community/GSDEG_Skills_Reference_Guide
 ---
 
 # GitHub 90-Day Unreferenced-Commit Cache Warning
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[Git History Expungement via filter-repo]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/Pre-Purge_Secret_Rotation_Checklist
+#graphify/rationale #graphify/EXTRACTED #community/GSDEG_Skills_Reference_Guide

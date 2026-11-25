@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_approval.py"
 type: "rationale"
-community: "TestEgressApprovalAPI"
+community: "asyncio"
 location: "L427"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEgressApprovalAPI
+  - community/asyncio
 ---
 
 # Test GET /manage/egress/rules endpoint.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_get_egress_rules_endpoint()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEgressApprovalAPI
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

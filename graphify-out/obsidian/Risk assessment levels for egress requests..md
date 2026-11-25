@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "egress_approval.py"
+community: "ApprovalMode"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/ApprovalMode
 ---
 
 # Risk assessment levels for egress requests.
 
 ## Connections
-- [[RiskLevel_1]] - `rationale_for` [EXTRACTED]
+- [[RiskLevel]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalMode

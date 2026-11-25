@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_network_validator.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "NetworkValidator"
-location: "L19"
+community: "TestTrustManager"
+location: "L281"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/NetworkValidator
+  - community/TestTrustManager
 ---
 
 # .setup_method()
 
 ## Connections
-- [[NetworkValidator]] - `calls` [EXTRACTED]
-- [[TestNetworkValidator]] - `method` [EXTRACTED]
+- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/NetworkValidator
+#graphify/code #graphify/EXTRACTED #community/TestTrustManager

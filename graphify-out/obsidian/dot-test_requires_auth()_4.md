@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_channel_ownership.py"
 type: "code"
-community: "TestTelegramWebhook"
-location: "L79"
+community: "TestEmailSend"
+location: "L121"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestTelegramWebhook
+  - community/TestEmailSend
 ---
 
 # .test_requires_auth()
 
 ## Connections
 - [[Endpoint returns 401 without auth override._2]] - `rationale_for` [EXTRACTED]
-- [[TestTelegramWebhook]] - `method` [EXTRACTED]
+- [[TestEmailSend]] - `method` [EXTRACTED]
 - [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestTelegramWebhook
+#graphify/code #graphify/EXTRACTED #community/TestEmailSend

@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ServerConfig"
+community: "NetworkValidator"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ServerConfig
+  - community/NetworkValidator
 ---
 
 # fixture
 
 ## Connections
-- [[framework()]] - `references` [EXTRACTED]
+- [[tmp_compose()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ServerConfig
+#graphify/code #graphify/EXTRACTED #community/NetworkValidator

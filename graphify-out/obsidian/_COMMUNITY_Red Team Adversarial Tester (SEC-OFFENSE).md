@@ -8,10 +8,10 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_113]] - document - .agents/skills/sec-offense/README.md
+- [[Purpose_115]] - document - .agents/skills/sec-offense/README.md
 - [[Red Team Adversarial Tester (SEC-OFFENSE)]] - document - .agents/skills/sec-offense/README.md
 - [[Related Skills_45]] - document - .agents/skills/sec-offense/README.md
-- [[Usage_55]] - document - .agents/skills/sec-offense/README.md
+- [[Usage_56]] - document - .agents/skills/sec-offense/README.md
 - [[sec-offenseREADME]] - document - .agents/skills/sec-offense/README.md
 
 ## Live Query (requires Dataview plugin)

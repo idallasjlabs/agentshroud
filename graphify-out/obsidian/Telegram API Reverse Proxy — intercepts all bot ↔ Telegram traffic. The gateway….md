@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/telegram_proxy.py"
 type: "rationale"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L3"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # Telegram API Reverse Proxy — intercepts all bot ↔ Telegram traffic. The gateway…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[telegram_proxy.py_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/rationale #graphify/EXTRACTED #community/TeamsConfig

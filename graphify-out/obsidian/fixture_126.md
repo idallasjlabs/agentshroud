@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "A2APolicyEngine"
+community: "TestAuth"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2APolicyEngine
+  - community/TestAuth
 ---
 
 # fixture
 
 ## Connections
-- [[engine()_1]] - `references` [EXTRACTED]
+- [[validator()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2APolicyEngine
+#graphify/code #graphify/EXTRACTED #community/TestAuth

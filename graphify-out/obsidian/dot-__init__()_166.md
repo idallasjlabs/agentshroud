@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_edge_jwt.py"
+source_file: "gateway/ingest_api/alert_telegram_relay.py"
 type: "code"
-community: "test_edge_e2e_sdk.py"
-location: "L31"
+community: "AlertTelegramRelay"
+location: "L55"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/AlertTelegramRelay
 ---
 
 # .__init__()
 
 ## Connections
-- [[Clock]] - `method` [EXTRACTED]
+- [[AlertTelegramRelay]] - `method` [EXTRACTED]
+- [[Any_62]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/AlertTelegramRelay

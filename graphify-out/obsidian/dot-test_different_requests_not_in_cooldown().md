@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test that different requests are not affected by cooldown.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalHardening]] - `method` [EXTRACTED]
-- [[patch_6]] - `references` [EXTRACTED]
+- [[patch_5]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestApprovalHardening

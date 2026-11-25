@@ -1,21 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "generate_report"
+community: "soc_correlation.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/generate_report
+  - community/soc_correlationpy
 ---
 
 # Any
 
 ## Connections
-- [[calculate_overall_score()]] - `references` [EXTRACTED]
-- [[calculate_tool_score()]] - `references` [EXTRACTED]
-- [[format_report()]] - `references` [EXTRACTED]
-- [[generate_report()]] - `references` [EXTRACTED]
-- [[get_trend()]] - `references` [EXTRACTED]
-- [[save_to_history()]] - `references` [EXTRACTED]
+- [[dot-to_dict()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/generate_report
+#graphify/code #graphify/EXTRACTED #community/soc_correlationpy

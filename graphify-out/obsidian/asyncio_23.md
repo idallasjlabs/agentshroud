@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "TestRBACIntegration"
+community: "RBACConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestRBACIntegration
+  - community/RBACConfig
 ---
 
 # asyncio
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_rbac_blocks_unauthorized_access()]] - `references` [EXTRACTED]
 - [[dot-test_rbac_handles_missing_user_id()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestRBACIntegration
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

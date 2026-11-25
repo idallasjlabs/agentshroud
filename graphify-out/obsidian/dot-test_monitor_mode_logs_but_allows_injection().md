@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
 community: "_token"
-location: "L421"
+location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestMonitorMode]] - `method` [EXTRACTED]
-- [[_profile()_1]] - `calls` [EXTRACTED]
+- [[_profile()]] - `calls` [EXTRACTED]
 - [[_token()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_token

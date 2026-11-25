@@ -15,10 +15,10 @@ tags:
 - [[A successful WSS connection resets the attempt counter to 0.]] - `rationale_for` [EXTRACTED]
 - [[TestComputeBackoff]] - `method` [EXTRACTED]
 - [[_make_client()]] - `calls` [EXTRACTED]
-- [[asyncio_19]] - `references` [EXTRACTED]
+- [[asyncio_17]] - `references` [EXTRACTED]
 - [[fake_backoff()]] - `indirect_call` [INFERRED]
 - [[fake_connect_and_handle()]] - `indirect_call` [INFERRED]
 - [[fake_get_wss_url()]] - `indirect_call` [INFERRED]
-- [[fake_sleep()_1]] - `indirect_call` [INFERRED]
+- [[fake_sleep()]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event

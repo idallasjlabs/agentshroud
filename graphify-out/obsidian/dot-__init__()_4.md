@@ -1,18 +1,17 @@
 ---
-source_file: "gateway/security/xml_leak_filter.py"
+source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "run"
-location: "L50"
+community: "app"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/app
 ---
 
 # .__init__()
 
 ## Connections
-- [[Initialize the filter with predefined patterns.]] - `rationale_for` [EXTRACTED]
-- [[XMLLeakFilter]] - `method` [EXTRACTED]
+- [[_TrustCaptor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/app

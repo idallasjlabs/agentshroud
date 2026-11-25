@@ -1,18 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_file_sandbox_message_gate.py"
+community: "MiddlewareManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_file_sandbox_message_gatepy
+  - community/MiddlewareManager
 ---
 
 # fixture
 
 ## Connections
-- [[manager()_3]] - `references` [EXTRACTED]
-- [[session_manager()_3]] - `references` [EXTRACTED]
-- [[temp_workspace()]] - `references` [EXTRACTED]
+- [[dot-contributing()]] - `references` [EXTRACTED]
+- [[dot-readme()]] - `references` [EXTRACTED]
+- [[dot-security_md()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy
+#graphify/code #graphify/EXTRACTED #community/MiddlewareManager

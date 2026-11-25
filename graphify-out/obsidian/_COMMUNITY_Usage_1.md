@@ -14,7 +14,7 @@ members: 8
 - [[Start the Stack]] - document - docker/README.md
 - [[Stop the Stack]] - document - docker/README.md
 - [[Test Chat]] - document - docker/README.md
-- [[Usage_26]] - document - docker/README.md
+- [[Usage_27]] - document - docker/README.md
 - [[View Logs]] - document - docker/README.md
 
 ## Live Query (requires Dataview plugin)
@@ -28,4 +28,4 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_AgentShroud Docker Configuration]]
 
 ## Top bridge nodes
-- [[Usage_26]] - degree 8, connects to 1 community
+- [[Usage_27]] - degree 8, connects to 1 community

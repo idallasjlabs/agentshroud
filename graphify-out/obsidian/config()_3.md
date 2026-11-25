@@ -1,19 +1,22 @@
 ---
-source_file: "gateway/tests/test_key_vault.py"
+source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "test_key_vault.py"
-location: "L20"
+community: "PermissionLevel"
+location: "L69"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_key_vaultpy
+  - graphify/INFERRED
+  - community/PermissionLevel
 ---
 
 # config()
 
 ## Connections
-- [[KeyVaultConfig]] - `uses` [INFERRED]
-- [[fixture_41]] - `references` [EXTRACTED]
-- [[test_key_vault.py]] - `contains` [EXTRACTED]
+- [[MCPProxyConfig]] - `uses` [INFERRED]
+- [[MCPServerConfig]] - `uses` [INFERRED]
+- [[MCPToolConfig]] - `uses` [INFERRED]
+- [[PermissionLevel]] - `uses` [INFERRED]
+- [[fixture_107]] - `references` [EXTRACTED]
+- [[test_mcp_permissions.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_key_vaultpy
+#graphify/code #graphify/INFERRED #community/PermissionLevel

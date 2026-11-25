@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_citation_verifier.py"
+source_file: "gateway/inbound_edge/edge_app.py"
 type: "code"
-community: "make_httpx_fetcher"
-location: "L319"
+community: "test_edge_service_routes.py"
+location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_httpx_fetcher
+  - community/test_edge_service_routespy
 ---
 
 # .__init__()
 
 ## Connections
-- [[_FakeStreamResponse_1]] - `method` [EXTRACTED]
+- [[dot-__init__()_141]] - `calls` [EXTRACTED]
+- [[EdgeGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_httpx_fetcher
+#graphify/code #graphify/EXTRACTED #community/test_edge_service_routespy

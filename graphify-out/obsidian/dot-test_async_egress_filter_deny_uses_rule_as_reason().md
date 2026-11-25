@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[TestEgressFilterPaths]] - `method` [EXTRACTED]
-- [[check_async()_28]] - `indirect_call` [INFERRED]
+- [[check_async()_26]] - `indirect_call` [INFERRED]
 - [[make_call()]] - `calls` [EXTRACTED]
 - [[make_proxy()]] - `calls` [EXTRACTED]
 

@@ -15,7 +15,7 @@ members: 12
 - [[HTTPForwarder.health_check()]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[HTTPForwarder.set_response_handler(handler)]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[Key Classes  Functions_39]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
-- [[Purpose_59]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
+- [[Purpose_60]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[Related_40]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[Responsibilities_39]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md
 - [[forwarder.py_1]] - document - docs/vault/02 - Modules/Proxy Layer/forwarder.py.md

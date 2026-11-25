@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
-- [[_capture()_4]] - `indirect_call` [INFERRED]
-- [[asyncio_28]] - `references` [EXTRACTED]
+- [[_capture()_1]] - `indirect_call` [INFERRED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 - [[x-agentshroud-user-id header must override spoofable body agent_id.]] - `rationale_for` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyResult

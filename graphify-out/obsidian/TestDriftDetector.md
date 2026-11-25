@@ -12,7 +12,7 @@ tags:
 # TestDriftDetector
 
 ## Connections
-- [[dot-setup_method()_10]] - `method` [EXTRACTED]
+- [[dot-setup_method()_11]] - `method` [EXTRACTED]
 - [[dot-teardown_method()_2]] - `method` [EXTRACTED]
 - [[dot-test_acknowledge_alert()]] - `method` [EXTRACTED]
 - [[dot-test_alerts_persisted()]] - `method` [EXTRACTED]

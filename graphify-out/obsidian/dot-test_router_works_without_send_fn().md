@@ -16,6 +16,6 @@ tags:
 - [[GroupApprovalRouter]] - `calls` [EXTRACTED]
 - [[Router with no send_message_fn uses the default stub (no network calls).]] - `rationale_for` [EXTRACTED]
 - [[TestGroupApprovalRouterDefaultSend]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

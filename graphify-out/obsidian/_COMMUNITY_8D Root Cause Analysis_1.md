@@ -9,9 +9,9 @@ members: 5
 
 ## Members
 - [[8D Root Cause Analysis_1]] - document - .agents/skills/eightd-root-cause-analysis/README.md
-- [[Purpose_97]] - document - .agents/skills/eightd-root-cause-analysis/README.md
+- [[Purpose_99]] - document - .agents/skills/eightd-root-cause-analysis/README.md
 - [[Related Skills_29]] - document - .agents/skills/eightd-root-cause-analysis/README.md
-- [[Usage_39]] - document - .agents/skills/eightd-root-cause-analysis/README.md
+- [[Usage_40]] - document - .agents/skills/eightd-root-cause-analysis/README.md
 - [[eightd-root-cause-analysisREADME]] - document - .agents/skills/eightd-root-cause-analysis/README.md
 
 ## Live Query (requires Dataview plugin)

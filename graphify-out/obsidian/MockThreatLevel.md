@@ -12,7 +12,7 @@ tags:
 # MockThreatLevel
 
 ## Connections
-- [[Enum_28]] - `inherits` [EXTRACTED]
+- [[Enum_26]] - `inherits` [EXTRACTED]
 - [[test_web_proxy_security.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration

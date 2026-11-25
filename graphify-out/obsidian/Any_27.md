@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "MCPAuditTrail"
+community: "MultiTurnTracker"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MCPAuditTrail
+  - community/MultiTurnTracker
 ---
 
 # Any
 
 ## Connections
-- [[dot-generate_report()]] - `references` [EXTRACTED]
-- [[dot-log_tool_call()]] - `references` [EXTRACTED]
+- [[dot-__init__()_67]] - `references` [EXTRACTED]
+- [[dot-get_global_stats()]] - `references` [EXTRACTED]
+- [[dot-get_session_stats()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MCPAuditTrail
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

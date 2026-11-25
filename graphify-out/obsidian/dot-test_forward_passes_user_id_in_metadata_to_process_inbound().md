@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L177"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # .test_forward_passes_user_id_in_metadata_to_process_inbound()
@@ -18,4 +18,4 @@ tags:
 - [[app()]] - `indirect_call` [INFERRED]
 - [[process_inbound must receive metadata={'user_id' ...} from forward so that…]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

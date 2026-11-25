@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/06 - Containers & Services/networks.md"
+source_file: "docs/vault/05 - Dependencies/playwright.md"
 type: "document"
-community: "Docker Networks"
-location: "L72"
+community: "Playwright"
+location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Docker_Networks
+  - community/Playwright
 ---
 
 # Related Notes
 
 ## Connections
-- [[Docker Networks]] - `contains` [EXTRACTED]
+- [[Playwright_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Docker_Networks
+#graphify/document #graphify/EXTRACTED #community/Playwright

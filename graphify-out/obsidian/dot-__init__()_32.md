@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/proxy/slack_socket_client.py"
+source_file: "gateway/soc/auth.py"
 type: "code"
-community: ".test_events_api_envelope_dispatches_handle_event"
-location: "L59"
+community: "RBACConfig"
+location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_events_api_envelope_dispatches_handle_event
+  - community/RBACConfig
 ---
 
 # .__init__()
 
 ## Connections
-- [[SlackSocketClient]] - `method` [EXTRACTED]
+- [[RBACManager]] - `references` [EXTRACTED]
+- [[Role]] - `references` [EXTRACTED]
+- [[SCLCaller]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_events_api_envelope_dispatches_handle_event
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

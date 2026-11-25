@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_workspace.py"
 type: "code"
-community: "SharedMemoryManager"
+community: "GroupWorkspaceManager"
 location: "L125"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SharedMemoryManager
+  - community/GroupWorkspaceManager
 ---
 
 # ._is_owner()
@@ -17,4 +17,4 @@ tags:
 - [[GroupWorkspaceManager]] - `method` [EXTRACTED]
 - [[Return True if user_id is the system owner (oversight override).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

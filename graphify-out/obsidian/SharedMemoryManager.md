@@ -12,7 +12,7 @@ tags:
 # SharedMemoryManager
 
 ## Connections
-- [[dot-__init__()_96]] - `method` [EXTRACTED]
+- [[dot-__init__()_88]] - `method` [EXTRACTED]
 - [[dot-_is_authorized_group_writer()]] - `method` [EXTRACTED]
 - [[dot-_strip_private_content()]] - `method` [EXTRACTED]
 - [[dot-append_to_group_memory()]] - `method` [EXTRACTED]
@@ -27,9 +27,9 @@ tags:
 - [[TestPrivateContentDetection]] - `uses` [INFERRED]
 - [[get_group_memory()]] - `uses` [INFERRED]
 - [[group_workspace.py]] - `imports` [EXTRACTED]
-- [[shared_memory()_2]] - `uses` [INFERRED]
-- [[shared_memory()]] - `uses` [INFERRED]
 - [[shared_memory()_1]] - `uses` [INFERRED]
+- [[shared_memory()]] - `uses` [INFERRED]
+- [[shared_memory()_2]] - `uses` [INFERRED]
 - [[shared_memory.py]] - `contains` [EXTRACTED]
 - [[smm()]] - `uses` [INFERRED]
 - [[smm()_1]] - `uses` [INFERRED]

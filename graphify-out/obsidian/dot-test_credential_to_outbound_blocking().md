@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestToolChainAnalyzer"
+community: "ToolChainAnalyzer"
 location: "L124"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolChainAnalyzer
+  - community/ToolChainAnalyzer
 ---
 
 # .test_credential_to_outbound_blocking()
@@ -15,4 +15,4 @@ tags:
 - [[Test that credential access → outbound tools are blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestToolChainAnalyzer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolChainAnalyzer
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

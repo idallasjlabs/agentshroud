@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_hermes_dashboard_bridge.py"
 type: "code"
-community: "_FakeWSConnect"
+community: "_run_asgi"
 location: "L128"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/_FakeWSConnect
+  - community/_run_asgi
 ---
 
 # upstream()
@@ -17,4 +17,4 @@ tags:
 - [[scenario()]] - `indirect_call` [INFERRED]
 - [[slack_ws_relay()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/_FakeWSConnect
+#graphify/code #graphify/INFERRED #community/_run_asgi

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: ".test_memory_provider_error_variant_is_rewritten_generic"
+community: "_make_sanitizer"
 location: "L882"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_memory_provider_error_variant_is_rewritten_generic
+  - community/_make_sanitizer
 ---
 
 # Variant wording should still map to generic runtime guidance by default.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_memory_provider_error_variant_is_rewritten_generic()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_memory_provider_error_variant_is_rewritten_generic
+#graphify/rationale #graphify/EXTRACTED #community/_make_sanitizer

@@ -18,8 +18,8 @@ members: 13
 - [[Technical Illustrator (TI)_2]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[Technical Illustrator (i-ti)]] - document - .agents/skills/i-ti/SKILL.md
 - [[Technical Writing (i-tw)]] - document - .agents/skills/i-tw/SKILL.md
-- [[Usage_131]] - document - .agents/skills/i-ti/README.md
-- [[Usage_132]] - document - docker/config/hermes/skills/i-ti/README.md
+- [[Usage_132]] - document - .agents/skills/i-ti/README.md
+- [[Usage_133]] - document - docker/config/hermes/skills/i-ti/README.md
 - [[hermesskillsi-tiREADME]] - document - docker/config/hermes/skills/i-ti/README.md
 
 ## Live Query (requires Dataview plugin)

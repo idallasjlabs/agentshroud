@@ -12,7 +12,7 @@ tags:
 # _DummyTargetWriter
 
 ## Connections
-- [[dot-close()_20]] - `method` [EXTRACTED]
+- [[dot-close()_22]] - `method` [EXTRACTED]
 - [[dot-drain()_2]] - `method` [EXTRACTED]
 - [[dot-write()_2]] - `method` [EXTRACTED]
 - [[_open_conn()_3]] - `calls` [EXTRACTED]

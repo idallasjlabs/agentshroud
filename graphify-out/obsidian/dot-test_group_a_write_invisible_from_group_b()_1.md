@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # .test_group_a_write_invisible_from_group_b()
@@ -15,4 +15,4 @@ tags:
 - [[Content appended to group-A memory must not appear in group-B memory.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

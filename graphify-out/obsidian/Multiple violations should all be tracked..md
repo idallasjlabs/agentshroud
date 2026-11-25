@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestSecurityViolationLogging"
+community: "test_privilege_separation.py"
 location: "L290"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestSecurityViolationLogging
+  - community/test_privilege_separationpy
 ---
 
 # Multiple violations should all be tracked.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_multiple_violations_tracked()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestSecurityViolationLogging
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

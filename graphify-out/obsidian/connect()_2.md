@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/soc/services.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L30"
+community: "ServiceManager"
+location: "L410"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/ServiceManager
 ---
 
 # connect()
 
 ## Connections
-- [[_inspect_via_socket()]] - `contains` [EXTRACTED]
+- [[dot-_logs_via_socket()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/ServiceManager

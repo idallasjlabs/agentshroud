@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/tool_chain_analyzer.py"
 type: "rationale"
-community: ".analyze_tool_call"
+community: "ToolChainAnalyzer"
 location: "L140"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/analyze_tool_call
+  - community/ToolChainAnalyzer
 ---
 
 # Definition of a suspicious tool call pattern.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[ChainPattern]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/analyze_tool_call
+#graphify/rationale #graphify/EXTRACTED #community/ToolChainAnalyzer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "TestGroupMemoryNamespaceIsolation"
 location: "L112"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/TestGroupMemoryNamespaceIsolation
 ---
 
 # .test_group_writes_are_independent_namespaces()
@@ -15,4 +15,4 @@ tags:
 - [[Both groups store separate content with no cross-contamination.]] - `rationale_for` [EXTRACTED]
 - [[TestGroupMemoryNamespaceIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/TestGroupMemoryNamespaceIsolation

@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/web/api.py"
+source_file: "gateway/soc/websocket.py"
 type: "code"
-community: "KillSwitchError"
-location: "L964"
+community: "SOCWebSocketHandler"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KillSwitchError
+  - community/SOCWebSocketHandler
 ---
 
 # .__init__()
 
 ## Connections
-- [[dot-__init__()_56]] - `calls` [EXTRACTED]
-- [[dot-__init__()_57]] - `calls` [EXTRACTED]
-- [[SkillGuardBlocked]] - `method` [EXTRACTED]
+- [[SOCWebSocketHandler]] - `method` [EXTRACTED]
+- [[WebSocket_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KillSwitchError
+#graphify/code #graphify/EXTRACTED #community/SOCWebSocketHandler

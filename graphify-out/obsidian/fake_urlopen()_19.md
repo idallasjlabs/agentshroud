@@ -1,17 +1,20 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_failover.py"
+source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
-location: "L763"
+community: ".test_stranger_within_limit_triggers_approval_workflow"
+location: "L7828"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - community/test_stranger_within_limit_triggers_approval_workflow
 ---
 
 # fake_urlopen()
 
 ## Connections
-- [[test_forward_request_slow_read_does_not_block_event_loop()]] - `contains` [EXTRACTED]
+- [[dot-test_stranger_rate_limit_notice_includes_reset_time()]] - `contains` [EXTRACTED]
+- [[__enter__()]] - `contains` [EXTRACTED]
+- [[__exit__()]] - `contains` [EXTRACTED]
+- [[read()_3]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

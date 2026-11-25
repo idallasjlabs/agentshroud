@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "CronStateMonitor"
+community: "lvgl_kawaii_face.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CronStateMonitor
+  - community/lvgl_kawaii_facec
 ---
 
 # Task
@@ -13,6 +13,7 @@ tags:
 ## Connections
 - [[dot-start()]] - `references` [EXTRACTED]
 - [[app_main.c]] - `imports` [EXTRACTED]
+- [[main.c]] - `imports` [EXTRACTED]
 - [[wakeword.c]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CronStateMonitor
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

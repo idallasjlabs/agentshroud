@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docker/config/openclaw/skills/i-vulcan/README.md"
 type: "document"
-community: "GatewayConfig"
-location: "L15"
+community: "Vulcan — Subject Matter Auditor"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/Vulcan__Subject_Matter_Auditor
 ---
 
 # Purpose
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[Vulcan — Subject Matter Auditor_8]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GatewayConfig
+#graphify/document #graphify/EXTRACTED #community/Vulcan__Subject_Matter_Auditor

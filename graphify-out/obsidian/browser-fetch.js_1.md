@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[Expected Behavior]] - `contains` [EXTRACTED]
-- [[Purpose_88]] - `contains` [EXTRACTED]
-- [[Related Notes_62]] - `contains` [EXTRACTED]
+- [[Purpose_90]] - `contains` [EXTRACTED]
+- [[Related Notes_64]] - `contains` [EXTRACTED]
 - [[Security Controls_1]] - `contains` [EXTRACTED]
 - [[browser-fetch.js]] - `contains` [EXTRACTED]
 

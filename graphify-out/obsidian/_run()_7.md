@@ -19,7 +19,7 @@ tags:
 - [[dot-test_keeps_retrying_while_still_down()]] - `calls` [EXTRACTED]
 - [[dot-test_one_missing_daemon_is_enough()]] - `calls` [EXTRACTED]
 - [[dot-test_single_miss_within_grace_does_not_restart()]] - `calls` [EXTRACTED]
-- [[Path_36]] - `references` [EXTRACTED]
+- [[Path_35]] - `references` [EXTRACTED]
 - [[test_wazuh_watchdog.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_run_4b

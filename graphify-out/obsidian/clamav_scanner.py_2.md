@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/clamav_scanner.py"
 type: "code"
-community: "PipelineAction"
+community: "clamav_scanner.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/clamav_scannerpy
 ---
 
 # clamav_scanner.py
@@ -26,4 +26,4 @@ tags:
 - [[test_security_toolchain.py]] - `imports_from` [EXTRACTED]
 - [[update_virus_db()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/clamav_scannerpy

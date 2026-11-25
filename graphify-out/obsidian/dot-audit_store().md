@@ -15,6 +15,6 @@ tags:
 - [[AuditStore]] - `calls` [EXTRACTED]
 - [[Create audit store with test data.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditExporter]] - `method` [EXTRACTED]
-- [[fixture_116]] - `references` [EXTRACTED]
+- [[fixture_113]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditStore

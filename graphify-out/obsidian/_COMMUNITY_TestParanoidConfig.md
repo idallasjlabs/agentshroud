@@ -1,11 +1,11 @@
 ---
 type: community
-members: 40
+members: 45
 ---
 
 # TestParanoidConfig
 
-**Members:** 40 nodes
+**Members:** 45 nodes
 
 ## Members
 - [[dot-config()_2]] - code - gateway/tests/test_config_validation.py
@@ -18,6 +18,7 @@ members: 40
 - [[dot-test_egress_filter_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_encrypted_store_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_extensive_approval_actions()]] - code - gateway/tests/test_config_validation.py
+- [[dot-test_file_exists()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_has_auth_token()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_has_auth_token_placeholder()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_has_gateway_bind()]] - code - gateway/tests/test_config_validation.py
@@ -39,15 +40,19 @@ members: 40
 - [[dot-test_telemetry_disabled()]] - code - gateway/tests/test_config_validation.py
 - [[dot-test_trust_manager_enabled()]] - code - gateway/tests/test_config_validation.py
 - [[Parse a .env file into a dict (ignoring comments and blanks).]] - rationale - gateway/tests/test_config_validation.py
-- [[Path_42]] - code
+- [[Path_41]] - code
+- [[TestAllExampleConfigsExist]] - code - gateway/tests/test_config_validation.py
 - [[TestMinimalConfig]] - code - gateway/tests/test_config_validation.py
 - [[TestParanoidConfig]] - code - gateway/tests/test_config_validation.py
 - [[TestRecommendedConfig]] - code - gateway/tests/test_config_validation.py
+- [[Verify all referenced example configs exist.]] - rationale - gateway/tests/test_config_validation.py
 - [[_parse_env_file()]] - code - gateway/tests/test_config_validation.py
-- [[fixture_96]] - code
+- [[fixture_100]] - code
 - [[minimal.env should have reasonable defaults.]] - rationale - gateway/tests/test_config_validation.py
+- [[parametrize_17]] - code
 - [[paranoid.env should enable ALL security features.]] - rationale - gateway/tests/test_config_validation.py
 - [[recommended.env should balance security and usability.]] - rationale - gateway/tests/test_config_validation.py
+- [[test_config_validation.py]] - code - gateway/tests/test_config_validation.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -57,10 +62,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_TestConfigValidation]]
 
 ## Top bridge nodes
-- [[TestParanoidConfig]] - degree 21, connects to 1 community
-- [[TestRecommendedConfig]] - degree 8, connects to 1 community
-- [[TestMinimalConfig]] - degree 7, connects to 1 community
-- [[_parse_env_file()]] - degree 6, connects to 1 community
+- [[test_config_validation.py]] - degree 9, connects to 4 communities

@@ -26,7 +26,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_asyncio]]
+- 1 edge to [[_COMMUNITY_asyncio_1]]
 
 ## Top bridge nodes
 - [[TestRunningImageResolution]] - degree 5, connects to 1 community

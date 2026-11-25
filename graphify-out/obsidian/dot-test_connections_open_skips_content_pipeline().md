@@ -16,6 +16,6 @@ tags:
 - [[TestSocketModeRelay]] - `method` [EXTRACTED]
 - [[_make_proxy()_1]] - `calls` [EXTRACTED]
 - [[apps.connections.open pipeline is NOT invoked (not a message method).]] - `rationale_for` [EXTRACTED]
-- [[asyncio_38]] - `references` [EXTRACTED]
+- [[asyncio_40]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

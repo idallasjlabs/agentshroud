@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Ordinary base64 content with no injection indicators is forwarded.]] - `rationale_for` [EXTRACTED]
 - [[_make_pipeline()_4]] - `calls` [EXTRACTED]
-- [[asyncio_89]] - `references` [EXTRACTED]
+- [[asyncio_59]] - `references` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_153]] - `calls` [EXTRACTED]
-- [[dot-__init__()_188]] - `method` [EXTRACTED]
+- [[dot-__init__()_159]] - `calls` [EXTRACTED]
+- [[dot-__init__()_192]] - `method` [EXTRACTED]
 - [[dot-_parse_service_network_config()]] - `method` [EXTRACTED]
 - [[dot-_validate_container_runtime_config()]] - `method` [EXTRACTED]
 - [[dot-_validate_dns_configuration()]] - `method` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-_validate_privileged_containers()]] - `method` [EXTRACTED]
 - [[dot-_validate_service_network_isolation()]] - `method` [EXTRACTED]
 - [[dot-get_security_report()]] - `method` [EXTRACTED]
-- [[dot-setup_method()_35]] - `calls` [EXTRACTED]
+- [[dot-setup_method()_33]] - `calls` [EXTRACTED]
 - [[dot-test_network_validator_init()]] - `calls` [EXTRACTED]
 - [[dot-test_validator_knows_the_two_real_networks()]] - `calls` [EXTRACTED]
 - [[dot-validate_docker_compose_config()]] - `method` [EXTRACTED]

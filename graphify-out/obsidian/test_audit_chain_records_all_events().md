@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "TrustManager"
+community: "test_redteam_probes.py"
 location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_redteam_probespy
 ---
 
 # test_audit_chain_records_all_events()
 
 ## Connections
 - [[Every pipeline operation must produce an audit chain entry.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_42]] - `references` [EXTRACTED]
+- [[asyncio_28]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

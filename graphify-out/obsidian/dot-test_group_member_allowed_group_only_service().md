@@ -12,7 +12,7 @@ tags:
 # .test_group_member_allowed_group_only_service()
 
 ## Connections
-- [[dot-from_dict()_2]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_1]] - `calls` [EXTRACTED]
 - [[PrivacyPolicyEnforcer]] - `calls` [EXTRACTED]
 - [[TestServiceAccessControl]] - `method` [EXTRACTED]
 - [[_make_rbac()]] - `calls` [EXTRACTED]

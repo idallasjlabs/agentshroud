@@ -33,7 +33,7 @@ SORT file.name ASC
 ## Connections to other communities
 - 1 edge to [[_COMMUNITY_AgentShroud™ CVE Mitigation Matrix]]
 - 1 edge to [[_COMMUNITY_Local-Model Job Quality Matrix]]
-- 1 edge to [[_COMMUNITY_Pre-Purge Secret Rotation Checklist]]
+- 1 edge to [[_COMMUNITY_GSDE&G Skills Reference Guide_2]]
 - 1 edge to [[_COMMUNITY_AgentShroud Changelog]]
 
 ## Top bridge nodes

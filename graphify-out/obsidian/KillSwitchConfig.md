@@ -12,7 +12,7 @@ tags:
 # KillSwitchConfig
 
 ## Connections
-- [[dot-__init__()_220]] - `references` [EXTRACTED]
+- [[dot-__init__()_224]] - `references` [EXTRACTED]
 - [[dot-_make_monitor()]] - `calls` [EXTRACTED]
 - [[dot-from_env()_3]] - `method` [EXTRACTED]
 - [[dot-test_anomaly_detection_excessive_tool_calls()]] - `calls` [EXTRACTED]
@@ -30,7 +30,7 @@ tags:
 - [[TestKillSwitchMonitor]] - `uses` [INFERRED]
 - [[TestKillSwitchVerification]] - `uses` [INFERRED]
 - [[TestModuleConfigDefaults]] - `uses` [INFERRED]
-- [[config()]] - `uses` [INFERRED]
+- [[config()_4]] - `uses` [INFERRED]
 - [[killswitch_config.py]] - `contains` [EXTRACTED]
 - [[killswitch_monitor.py]] - `imports` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `imports` [EXTRACTED]

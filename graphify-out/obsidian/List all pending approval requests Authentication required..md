@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "rationale"
-community: "decide_approval"
+community: "fastapi.md"
 location: "L111"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/fastapimd
 ---
 
 # List all pending approval requests Authentication required.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[list_pending_approvals()_1]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/decide_approval
+#graphify/rationale #graphify/EXTRACTED #community/fastapimd

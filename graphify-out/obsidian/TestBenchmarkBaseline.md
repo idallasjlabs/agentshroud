@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_performance.py"
 type: "code"
-community: "lifespan.py"
+community: "PIISanitizer"
 location: "L352"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/lifespanpy
+  - community/PIISanitizer
 ---
 
 # TestBenchmarkBaseline
@@ -22,4 +22,4 @@ tags:
 - [[TrustManager]] - `uses` [INFERRED]
 - [[test_performance.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/lifespanpy
+#graphify/code #graphify/INFERRED #community/PIISanitizer

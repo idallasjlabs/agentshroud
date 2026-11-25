@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_edge_e2e_sdk.py"
+source_file: "skills/custom/securebrowser/scripts/browse.py"
 type: "code"
-community: "MemoryTokenStorage"
+community: "SecureBrowser"
 location: "L65"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MemoryTokenStorage
+  - community/SecureBrowser
 ---
 
 # .__init__()
 
 ## Connections
-- [[MemoryTokenStorage]] - `method` [EXTRACTED]
+- [[dot-_load_config()_3]] - `calls` [EXTRACTED]
+- [[SecureBrowser_3]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MemoryTokenStorage
+#graphify/code #graphify/EXTRACTED #community/SecureBrowser

@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_group_isolation.py"
+source_file: "gateway/tests/test_file_sandbox_message_gate.py"
 type: "code"
-community: "test_group_isolation.py"
-location: "L66"
+community: "test_file_sandbox_message_gate.py"
+location: "L43"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # session_manager()
 
 ## Connections
 - [[UserSessionManager]] - `uses` [INFERRED]
-- [[fixture_105]] - `references` [EXTRACTED]
-- [[test_group_isolation.py]] - `contains` [EXTRACTED]
+- [[fixture_104]] - `references` [EXTRACTED]
+- [[test_file_sandbox_message_gate.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

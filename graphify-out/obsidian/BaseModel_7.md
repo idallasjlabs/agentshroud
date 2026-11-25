@@ -1,26 +1,32 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "AgentTarget"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/AgentTarget
 ---
 
 # BaseModel
 
 ## Connections
-- [[ApprovalQueueConfig]] - `inherits` [EXTRACTED]
-- [[AuditExportConfig]] - `inherits` [EXTRACTED]
-- [[ChannelsConfig]] - `inherits` [EXTRACTED]
-- [[GatewayConfig]] - `inherits` [EXTRACTED]
-- [[LedgerConfig]] - `inherits` [EXTRACTED]
-- [[PIIConfig]] - `inherits` [EXTRACTED]
-- [[RouterConfig]] - `inherits` [EXTRACTED]
-- [[SecurityConfig_1]] - `inherits` [EXTRACTED]
-- [[SecurityModuleConfig]] - `inherits` [EXTRACTED]
-- [[ToolRiskConfig]] - `inherits` [EXTRACTED]
-- [[ToolRiskPolicy]] - `inherits` [EXTRACTED]
+- [[AgentTarget]] - `inherits` [EXTRACTED]
+- [[ApprovalDecision]] - `inherits` [EXTRACTED]
+- [[ApprovalQueueItem]] - `inherits` [EXTRACTED]
+- [[ApprovalRequest]] - `inherits` [EXTRACTED]
+- [[EmailSendRequest]] - `inherits` [EXTRACTED]
+- [[EmailSendResponse]] - `inherits` [EXTRACTED]
+- [[ForwardRequest]] - `inherits` [EXTRACTED]
+- [[ForwardResponse]] - `inherits` [EXTRACTED]
+- [[LedgerEntry]] - `inherits` [EXTRACTED]
+- [[LedgerQueryResponse]] - `inherits` [EXTRACTED]
+- [[RedactionDetail]] - `inherits` [EXTRACTED]
+- [[RedactionResult_1]] - `inherits` [EXTRACTED]
+- [[SSHExecRequest]] - `inherits` [EXTRACTED]
+- [[SSHExecResponse]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileRequest]] - `inherits` [EXTRACTED]
+- [[SSHWriteFileResponse]] - `inherits` [EXTRACTED]
+- [[StatusResponse]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget
