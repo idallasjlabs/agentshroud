@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "ssh_proxy.py"
-location: "L65"
+community: "aiosqlite"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_proxypy
+  - community/aiosqlite
 ---
 
 # Related Notes
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_proxypy
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

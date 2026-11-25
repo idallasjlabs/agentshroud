@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "rationale"
-community: "._extract_egress_targets"
+community: "ProxyResult"
 location: "L332"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/ProxyResult
 ---
 
 # Redact admin-private data from tool results for non-owner agents.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_sanitize_admin_private_data()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/rationale #graphify/EXTRACTED #community/ProxyResult

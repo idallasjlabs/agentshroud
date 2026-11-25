@@ -1,18 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-ps/README.md"
+source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
 type: "document"
-community: "Quality Assurance (SKILL)"
-location: "L6"
+community: "aiosqlite"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Quality_Assurance_SKILL
+  - community/aiosqlite
 ---
 
 # Purpose
 
 ## Connections
-- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
-- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
+- [[aiosqlite_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL
+#graphify/document #graphify/EXTRACTED #community/aiosqlite

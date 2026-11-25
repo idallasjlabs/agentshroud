@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/approval_queue.py.md"
+source_file: "docs/vault/00 - START HERE/Quick Reference.md"
 type: "document"
-community: "EnhancedApprovalQueue (`enhanced_queue.py`)"
-location: "L76"
+community: "Quick Reference — AgentShroud"
+location: "L176"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/EnhancedApprovalQueue_enhanced_queuepy
+  - community/Quick_Reference__AgentShroud
 ---
 
 # Related Notes
 
 ## Connections
-- [[EnhancedApprovalQueue (`enhanced_queue.py`)]] - `contains` [EXTRACTED]
+- [[Quick Reference — AgentShroud]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/EnhancedApprovalQueue_enhanced_queuepy
+#graphify/document #graphify/EXTRACTED #community/Quick_Reference__AgentShroud

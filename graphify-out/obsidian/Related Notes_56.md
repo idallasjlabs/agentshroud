@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/LOG_LEVEL.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "LOG_LEVEL"
-location: "L50"
+community: "gitleaks.toml"
+location: "L43"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/LOG_LEVEL
+  - community/gitleakstoml
 ---
 
 # Related Notes
 
 ## Connections
-- [[LOG_LEVEL_1]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/LOG_LEVEL
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

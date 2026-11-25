@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/HTTP_PROXY.md"
+source_file: "docs/vault/05 - Dependencies/httpx.md"
 type: "document"
-community: "HTTP_PROXY / HTTPS_PROXY"
-location: "L49"
+community: "httpx"
+location: "L42"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/HTTP_PROXY_/_HTTPS_PROXY
+  - community/httpx
 ---
 
 # Related Notes
 
 ## Connections
-- [[HTTP_PROXY  HTTPS_PROXY]] - `contains` [EXTRACTED]
+- [[httpx]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/HTTP_PROXY_/_HTTPS_PROXY
+#graphify/document #graphify/EXTRACTED #community/httpx

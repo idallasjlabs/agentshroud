@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "GatewayEmailService"
+community: "test_edge_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayEmailService
+  - community/test_edge_pipelinepy
 ---
 
 # Protocol
 
 ## Connections
-- [[SmtpLike]] - `inherits` [EXTRACTED]
+- [[Facade]] - `inherits` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayEmailService
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

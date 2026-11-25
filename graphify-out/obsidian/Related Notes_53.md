@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
 type: "document"
-community: "gitleaks.toml"
-location: "L43"
+community: "SSH Proxy Errors"
+location: "L97"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/gitleakstoml
+  - community/SSH_Proxy_Errors
 ---
 
 # Related Notes
 
 ## Connections
-- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
+- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/gitleakstoml
+#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors

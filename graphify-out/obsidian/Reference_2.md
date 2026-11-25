@@ -1,17 +1,17 @@
 ---
-source_file: "docker/README.md"
+source_file: "docker/config/openclaw/skills/i-reference/SKILLS_GUIDE.md"
 type: "document"
-community: "AgentShroud Docker Configuration"
-location: "L462"
+community: "Skills by Category"
+location: "L220"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentShroud_Docker_Configuration
+  - community/Skills_by_Category
 ---
 
 # Reference
 
 ## Connections
-- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
+- [[Skills by Category_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration
+#graphify/document #graphify/EXTRACTED #community/Skills_by_Category

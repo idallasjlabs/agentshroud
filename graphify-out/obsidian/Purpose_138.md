@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-gg/README.md"
+source_file: "docker/config/openclaw/skills/i-cicd/README.md"
 type: "document"
-community: "Git Workflow Guardian (GIT-GUARD)"
+community: "CI/CD Pipeline Advisor (CICD)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Git_Workflow_Guardian_GIT-GUARD
+  - community/CI/CD_Pipeline_Advisor_CICD
 ---
 
 # Purpose
 
 ## Connections
-- [[Git Workflow Guardian (GIT-GUARD)_1]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Git_Workflow_Guardian_GIT-GUARD
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD

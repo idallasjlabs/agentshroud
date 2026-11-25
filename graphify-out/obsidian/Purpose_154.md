@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-ti/README.md"
+source_file: "docker/config/openclaw/skills/i-socrates/README.md"
 type: "document"
-community: "Technical Illustrator (TI)"
+community: "Socrates — Dialogue Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Technical_Illustrator_TI
+  - community/Socrates__Dialogue_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Technical Illustrator (TI)]] - `contains` [EXTRACTED]
+- [[Socrates — Dialogue Architect_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Technical_Illustrator_TI
+#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect

@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-sec/README.md"
+source_file: "docker/config/openclaw/skills/i-sec-defense/README.md"
 type: "document"
-community: "Security Review (SEC)"
+community: "Blue Team Security Auditor (SEC-DEFENSE)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Security_Review_SEC
+  - community/Blue_Team_Security_Auditor_SEC-DEFENSE
 ---
 
 # Purpose
 
 ## Connections
-- [[Security Review (SEC)_1]] - `contains` [EXTRACTED]
+- [[Blue Team Security Auditor (SEC-DEFENSE)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Security_Review_SEC
+#graphify/document #graphify/EXTRACTED #community/Blue_Team_Security_Auditor_SEC-DEFENSE

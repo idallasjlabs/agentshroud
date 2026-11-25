@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "EgressApprovalQueue"
+community: "EgressScope"
 location: "L730"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/EgressApprovalQueue
+  - community/EgressScope
 ---
 
 # Remove an egress rule. Args: domain: Domain to remove rule for Returns: True if…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-remove_rule()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue
+#graphify/rationale #graphify/EXTRACTED #community/EgressScope

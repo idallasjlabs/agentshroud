@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/pydantic.md"
+source_file: "docs/vault/03 - Configuration/ssh-config.md"
 type: "document"
-community: "Pydantic"
-location: "L15"
+community: "SSH Config"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pydantic
+  - community/SSH_Config
 ---
 
 # Purpose
 
 ## Connections
-- [[Pydantic]] - `contains` [EXTRACTED]
+- [[SSH Config]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pydantic
+#graphify/document #graphify/EXTRACTED #community/SSH_Config

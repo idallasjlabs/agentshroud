@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-pr/README.md"
+source_file: "docker/config/openclaw/skills/i-oracle/README.md"
 type: "document"
-community: "Pull Request Generator (PR)"
+community: "Oracle — Feedback Analyst"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Pull_Request_Generator_PR
+  - community/Oracle__Feedback_Analyst
 ---
 
 # Purpose
 
 ## Connections
-- [[Pull Request Generator (PR)_2]] - `contains` [EXTRACTED]
+- [[Oracle — Feedback Analyst_10]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR
+#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst

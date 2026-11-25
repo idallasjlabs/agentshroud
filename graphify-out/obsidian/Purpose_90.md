@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
+source_file: "docs/vault/02 - Modules/JavaScript/browser-fetch.js.md"
 type: "document"
-community: "proxy_status.py"
-location: "L15"
+community: "browser-fetch.js"
+location: "L14"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/proxy_statuspy
+  - community/browser-fetchjs
 ---
 
 # Purpose
 
 ## Connections
-- [[proxy_status.py_1]] - `contains` [EXTRACTED]
+- [[browser-fetch.js_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/proxy_statuspy
+#graphify/document #graphify/EXTRACTED #community/browser-fetchjs

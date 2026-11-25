@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-socrates/README.md"
+source_file: "docs/vault/05 - Dependencies/fastapi.md"
 type: "document"
-community: "Socrates — Dialogue Architect"
-location: "L6"
+community: "fastapi.md"
+location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Socrates__Dialogue_Architect
+  - community/fastapimd
 ---
 
 # Purpose
 
 ## Connections
-- [[Socrates — Dialogue Architect]] - `contains` [EXTRACTED]
+- [[FastAPI_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Socrates__Dialogue_Architect
+#graphify/document #graphify/EXTRACTED #community/fastapimd

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_pipeline_unit.py"
 type: "rationale"
-community: "OutboundInfoFilter"
+community: "asyncio"
 location: "L787"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/asyncio
 ---
 
 # Regression: filter_result was possibly-unbound in process_outbound when no…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestOutboundFilterResultBinding]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/rationale #graphify/EXTRACTED #community/asyncio

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Prompt Injection Blocks.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "Prompt Injection Blocks"
-location: "L78"
+community: "python-jose"
+location: "L44"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Prompt_Injection_Blocks
+  - community/python-jose
 ---
 
 # Related Notes
 
 ## Connections
-- [[Prompt Injection Blocks_2]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Prompt_Injection_Blocks
+#graphify/document #graphify/EXTRACTED #community/python-jose

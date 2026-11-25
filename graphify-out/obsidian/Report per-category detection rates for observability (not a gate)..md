@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "rationale"
-community: "normalize_input"
+community: "HeuristicClassifier"
 location: "L411"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/HeuristicClassifier
 ---
 
 # Report per-category detection rates for observability (not a gate).
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_detection_breakdown_by_category()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/normalize_input
+#graphify/rationale #graphify/EXTRACTED #community/HeuristicClassifier

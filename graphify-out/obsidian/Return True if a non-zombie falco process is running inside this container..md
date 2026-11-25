@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "rationale"
-community: "get_falco_summary"
+community: "generate_summary"
 location: "L655"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/get_falco_summary
+  - community/generate_summary
 ---
 
 # Return True if a non-zombie falco process is running inside this container.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[_is_falco_running()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/get_falco_summary
+#graphify/rationale #graphify/EXTRACTED #community/generate_summary

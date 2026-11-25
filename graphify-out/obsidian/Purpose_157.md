@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/fastapi.md"
+source_file: "docker/config/openclaw/skills/i-tw/README.md"
 type: "document"
-community: "FastAPI"
-location: "L15"
+community: "Technical Writer (TW)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/FastAPI
+  - community/Technical_Writer_TW
 ---
 
 # Purpose
 
 ## Connections
-- [[FastAPI_3]] - `contains` [EXTRACTED]
+- [[Technical Writer (TW)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/FastAPI
+#graphify/document #graphify/EXTRACTED #community/Technical_Writer_TW

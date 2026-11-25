@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-mcpm-auth-reset/README.md"
+source_file: "docker/config/hermes/skills/i-atlas/README.md"
 type: "document"
-community: "MCP Auth Reset (MCPM-AUTH-RESET)"
+community: "Atlas — Curriculum Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/MCP_Auth_Reset_MCPM-AUTH-RESET
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[MCP Auth Reset (MCPM-AUTH-RESET)_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_4]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/MCP_Auth_Reset_MCPM-AUTH-RESET
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

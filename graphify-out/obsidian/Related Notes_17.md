@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/JavaScript/apply-patches.js.md"
+source_file: "docs/vault/01 - Architecture/Startup Sequence.md"
 type: "document"
-community: "apply-patches.js"
-location: "L78"
+community: "Startup Sequence"
+location: "L173"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/apply-patchesjs
+  - community/Startup_Sequence
 ---
 
 # Related Notes
 
 ## Connections
-- [[apply-patches.js_1]] - `contains` [EXTRACTED]
+- [[Startup Sequence]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/apply-patchesjs
+#graphify/document #graphify/EXTRACTED #community/Startup_Sequence

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/SSH Proxy Errors.md"
+source_file: "docs/vault/05 - Dependencies/spacy.md"
 type: "document"
-community: "SSH Proxy Errors"
-location: "L97"
+community: "spaCy"
+location: "L45"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/SSH_Proxy_Errors
+  - community/spaCy
 ---
 
 # Related Notes
 
 ## Connections
-- [[SSH Proxy Errors_1]] - `contains` [EXTRACTED]
+- [[spaCy_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/SSH_Proxy_Errors
+#graphify/document #graphify/EXTRACTED #community/spaCy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Proxy Layer/web_config.py.md"
+source_file: "docs/vault/02 - Modules/Proxy Layer/forwarder.py.md"
 type: "document"
-community: "web_config.py"
+community: "forwarder.py"
 location: "L12"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/web_configpy
+  - community/forwarderpy
 ---
 
 # Purpose
 
 ## Connections
-- [[web_config.py_1]] - `contains` [EXTRACTED]
+- [[forwarder.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/web_configpy
+#graphify/document #graphify/EXTRACTED #community/forwarderpy

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/08 - Runbooks/Health Checks.md"
+source_file: "docs/vault/07 - Errors & Troubleshooting/Troubleshooting Matrix.md"
 type: "document"
-community: "Health Checks"
-location: "L173"
+community: "Troubleshooting Matrix"
+location: "L143"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Health_Checks
+  - community/Troubleshooting_Matrix
 ---
 
 # Related Notes
 
 ## Connections
-- [[Health Checks_1]] - `contains` [EXTRACTED]
+- [[Troubleshooting Matrix_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Health_Checks
+#graphify/document #graphify/EXTRACTED #community/Troubleshooting_Matrix

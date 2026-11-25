@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/mac-app-discovery/README.md"
+source_file: ".agents/skills/i-ps/README.md"
 type: "document"
-community: "macOS System Administrator (MAC)"
+community: "Production Safety Checklist (PROD-SAFETY)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/macOS_System_Administrator_MAC
+  - community/Production_Safety_Checklist_PROD-SAFETY
 ---
 
 # Purpose
 
 ## Connections
-- [[macOS System Administrator (MAC)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/macOS_System_Administrator_MAC
+#graphify/document #graphify/EXTRACTED #community/Production_Safety_Checklist_PROD-SAFETY

@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/07 - Errors & Troubleshooting/Container Errors.md"
+source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
 type: "document"
-community: "Container Errors"
-location: "L119"
+community: "AGENTSHROUD_MODE"
+location: "L64"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Container_Errors
+  - community/AGENTSHROUD_MODE
 ---
 
 # Related Notes
 
 ## Connections
-- [[Container Errors_2]] - `contains` [EXTRACTED]
+- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Container_Errors
+#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE

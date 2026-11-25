@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/sad/README.md"
+source_file: ".agents/skills/mnemosyne/README.md"
 type: "document"
-community: "System Audit Documentation"
+community: "Mnemosyne — Retention Engineer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/System_Audit_Documentation
+  - community/Mnemosyne__Retention_Engineer
 ---
 
 # Purpose
 
 ## Connections
-- [[System Audit Documentation]] - `contains` [EXTRACTED]
+- [[Mnemosyne — Retention Engineer_7]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/System_Audit_Documentation
+#graphify/document #graphify/EXTRACTED #community/Mnemosyne__Retention_Engineer

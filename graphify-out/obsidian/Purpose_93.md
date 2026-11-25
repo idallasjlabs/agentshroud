@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/atlas/README.md"
+source_file: ".agents/skills/apollo/README.md"
 type: "document"
-community: "Atlas — Curriculum Architect"
+community: "Apollo — Audio Systems Producer"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Atlas__Curriculum_Architect
+  - community/Apollo__Audio_Systems_Producer
 ---
 
 # Purpose
 
 ## Connections
-- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
+- [[Apollo — Audio Systems Producer_6]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect
+#graphify/document #graphify/EXTRACTED #community/Apollo__Audio_Systems_Producer

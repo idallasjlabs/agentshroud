@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_chat_completions_alias.py"
 type: "rationale"
-community: "test_chat_completions_alias.py"
+community: "app"
 location: "L94"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_chat_completions_aliaspy
+  - community/app
 ---
 
 # Regression: don't break the existing /v1/messages path.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_root_v1_messages_still_works_unchanged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_chat_completions_aliaspy
+#graphify/rationale #graphify/EXTRACTED #community/app

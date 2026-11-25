@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
+source_file: "docker/config/hermes/skills/i-ps/README.md"
 type: "document"
-community: "ssh_proxy.py"
-location: "L15"
+community: "Quality Assurance (SKILL)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ssh_proxypy
+  - community/Quality_Assurance_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (PROD-SAFETY)]] - `contains` [EXTRACTED]
+- [[Production Safety Checklist (SKILL)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ssh_proxypy
+#graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

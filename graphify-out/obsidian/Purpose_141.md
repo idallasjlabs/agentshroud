@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/openclaw/skills/i-oracle/README.md"
+source_file: "docker/config/openclaw/skills/i-mcpm-doctor/README.md"
 type: "document"
-community: "Oracle — Feedback Analyst"
+community: "MCP Doctor (MCPM-DOCTOR)"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Oracle__Feedback_Analyst
+  - community/MCP_Doctor_MCPM-DOCTOR
 ---
 
 # Purpose
 
 ## Connections
-- [[Oracle — Feedback Analyst_10]] - `contains` [EXTRACTED]
+- [[MCP Doctor (MCPM-DOCTOR)_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Oracle__Feedback_Analyst
+#graphify/document #graphify/EXTRACTED #community/MCP_Doctor_MCPM-DOCTOR

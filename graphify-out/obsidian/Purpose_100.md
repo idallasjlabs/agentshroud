@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/i-cicd/README.md"
+source_file: ".agents/skills/hermes/README.md"
 type: "document"
-community: "CI/CD Pipeline Advisor (CICD)"
+community: "Hermes — Podcast Production Orchestrator"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI/CD_Pipeline_Advisor_CICD
+  - community/Hermes__Podcast_Production_Orchestrator
 ---
 
 # Purpose
 
 ## Connections
-- [[CICD Pipeline Advisor (CICD)_1]] - `contains` [EXTRACTED]
+- [[Hermes — Podcast Production Orchestrator_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_CICD
+#graphify/document #graphify/EXTRACTED #community/Hermes__Podcast_Production_Orchestrator

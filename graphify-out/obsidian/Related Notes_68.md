@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/09 - Diagrams/Network Topology.md"
 type: "document"
-community: "AgentTarget"
-location: "L42"
+community: "Network Topology"
+location: "L106"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/Network_Topology
 ---
 
 # Related Notes
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[Network Topology_2]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AgentTarget
+#graphify/document #graphify/EXTRACTED #community/Network_Topology

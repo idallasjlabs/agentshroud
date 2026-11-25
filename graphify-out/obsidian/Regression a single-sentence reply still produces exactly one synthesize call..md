@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "rationale"
-community: "test_voice_gateway.py"
+community: "mock_stream"
 location: "L1409"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # Regression: a single-sentence reply still produces exactly one synthesize call.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[test_ws_one_sentence_reply_unchanged()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/rationale #graphify/EXTRACTED #community/mock_stream

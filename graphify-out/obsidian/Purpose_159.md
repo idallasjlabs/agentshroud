@@ -1,5 +1,5 @@
 ---
-source_file: "docs/vault/05 - Dependencies/httpx.md"
+source_file: "docs/vault/05 - Dependencies/pydantic.md"
 type: "document"
 community: "AgentTarget"
 location: "L15"
@@ -12,6 +12,6 @@ tags:
 # Purpose
 
 ## Connections
-- [[httpx_1]] - `contains` [EXTRACTED]
+- [[Pydantic_1]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/AgentTarget

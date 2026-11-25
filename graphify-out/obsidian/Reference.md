@@ -1,17 +1,17 @@
 ---
-source_file: "docker/config/hermes/skills/i-reference/SKILLS_GUIDE.md"
+source_file: "docker/README.md"
 type: "document"
-community: "Skills by Category"
-location: "L220"
+community: "AgentShroud Docker Configuration"
+location: "L462"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Skills_by_Category
+  - community/AgentShroud_Docker_Configuration
 ---
 
 # Reference
 
 ## Connections
-- [[Skills by Category]] - `contains` [EXTRACTED]
+- [[AgentShroud Docker Configuration]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Skills_by_Category
+#graphify/document #graphify/EXTRACTED #community/AgentShroud_Docker_Configuration

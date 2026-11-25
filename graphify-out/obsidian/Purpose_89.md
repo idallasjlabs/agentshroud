@@ -1,17 +1,18 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/text_control_center.py.md"
+source_file: "docker/config/hermes/skills/i-cicd/README.md"
 type: "document"
-community: "text_control_center.py / agentshroud_manager.py"
-location: "L14"
+community: "CI/CD Pipeline Advisor (SKILL)"
+location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/text_control_centerpy_/_agentshroud_managerpy
+  - community/CI/CD_Pipeline_Advisor_SKILL
 ---
 
 # Purpose
 
 ## Connections
-- [[text_control_center.py  agentshroud_manager.py]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (CICD)]] - `contains` [EXTRACTED]
+- [[CICD Pipeline Advisor (README)]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/text_control_centerpy_/_agentshroud_managerpy
+#graphify/document #graphify/EXTRACTED #community/CI/CD_Pipeline_Advisor_SKILL

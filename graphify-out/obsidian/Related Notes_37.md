@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/04 - Environment Variables/AGENTSHROUD_MODE.md"
+source_file: "docs/vault/03 - Configuration/pytest.ini.md"
 type: "document"
-community: "AGENTSHROUD_MODE"
-location: "L64"
+community: "pytest.ini"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/AGENTSHROUD_MODE
+  - community/pytestini
 ---
 
 # Related Notes
 
 ## Connections
-- [[AGENTSHROUD_MODE_1]] - `contains` [EXTRACTED]
+- [[pytest.ini_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/AGENTSHROUD_MODE
+#graphify/document #graphify/EXTRACTED #community/pytestini

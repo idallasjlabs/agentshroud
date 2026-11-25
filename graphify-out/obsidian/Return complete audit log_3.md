@@ -12,6 +12,6 @@ tags:
 # Return complete audit log
 
 ## Connections
-- [[dot-get_audit_log()_7]] - `rationale_for` [EXTRACTED]
+- [[dot-get_audit_log()_8]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/SecureBrowser

@@ -1,31 +1,31 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L53"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # RBACConfig
 
 ## Connections
 - [[dot-__init__()]] - `calls` [EXTRACTED]
-- [[dot-__init__()_59]] - `calls` [EXTRACTED]
+- [[dot-__init__()_52]] - `calls` [EXTRACTED]
 - [[dot-__init__()_180]] - `calls` [EXTRACTED]
-- [[dot-__init__()_49]] - `calls` [EXTRACTED]
-- [[dot-__init__()_184]] - `calls` [EXTRACTED]
-- [[dot-__init__()_1]] - `references` [EXTRACTED]
+- [[dot-__init__()_30]] - `calls` [EXTRACTED]
+- [[dot-__init__()_181]] - `calls` [EXTRACTED]
+- [[dot-__init__()_31]] - `references` [EXTRACTED]
 - [[dot-__post_init__()_6]] - `calls` [EXTRACTED]
-- [[dot-__post_init__()]] - `method` [EXTRACTED]
+- [[dot-__post_init__()_4]] - `method` [EXTRACTED]
 - [[dot-_ensure_rbac()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
 - [[dot-_is_owner()]] - `calls` [EXTRACTED]
 - [[dot-_make_rbac()]] - `references` [EXTRACTED]
 - [[dot-get_user_groups_by_id()]] - `method` [EXTRACTED]
-- [[dot-get_user_role()_2]] - `method` [EXTRACTED]
+- [[dot-get_user_role()_1]] - `method` [EXTRACTED]
 - [[dot-get_users_by_role()]] - `method` [EXTRACTED]
 - [[dot-is_admin_or_higher()]] - `method` [EXTRACTED]
 - [[dot-is_collaborator_or_higher()]] - `method` [EXTRACTED]
@@ -67,11 +67,11 @@ tags:
 - [[middleware.py_2]] - `imports` [EXTRACTED]
 - [[pipeline.py_1]] - `imports` [EXTRACTED]
 - [[privacy_policy.py]] - `imports` [EXTRACTED]
-- [[rbac()_4]] - `uses` [INFERRED]
 - [[rbac()_2]] - `uses` [INFERRED]
-- [[rbac()_1]] - `uses` [INFERRED]
 - [[rbac()_5]] - `uses` [INFERRED]
+- [[rbac()_1]] - `uses` [INFERRED]
 - [[rbac()_3]] - `uses` [INFERRED]
+- [[rbac()_4]] - `uses` [INFERRED]
 - [[rbac.py]] - `imports` [EXTRACTED]
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[run()]] - `uses` [INFERRED]
@@ -98,4 +98,4 @@ tags:
 - [[websocket.py]] - `imports` [EXTRACTED]
 - [[ws_soc_endpoint()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

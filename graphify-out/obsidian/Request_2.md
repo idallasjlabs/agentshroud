@@ -1,19 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "decide_approval"
+community: "fastapi.md"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/fastapimd
 ---
 
 # Request
 
 ## Connections
 - [[auth_dep()_2]] - `references` [EXTRACTED]
-- [[decide_approval()]] - `references` [EXTRACTED]
-- [[list_pending_approvals()_1]] - `references` [EXTRACTED]
-- [[submit_approval_request()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/decide_approval
+#graphify/code #graphify/EXTRACTED #community/fastapimd

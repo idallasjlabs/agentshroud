@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/aiosqlite.md"
+source_file: "docs/vault/02 - Modules/Web & Dashboard/proxy_status.py.md"
 type: "document"
-community: "GatewayConfig"
-location: "L42"
+community: "proxy_status.py"
+location: "L40"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/proxy_statuspy
 ---
 
 # Related Notes
 
 ## Connections
-- [[aiosqlite_1]] - `contains` [EXTRACTED]
+- [[proxy_status.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/GatewayConfig
+#graphify/document #graphify/EXTRACTED #community/proxy_statuspy

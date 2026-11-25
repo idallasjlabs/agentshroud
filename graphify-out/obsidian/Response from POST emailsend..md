@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/models.py"
 type: "rationale"
-community: "GatewayConfig"
+community: "AgentTarget"
 location: "L367"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/AgentTarget
 ---
 
 # Response from POST /email/send.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[EmailSendResponse]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/GatewayConfig
+#graphify/rationale #graphify/EXTRACTED #community/AgentTarget

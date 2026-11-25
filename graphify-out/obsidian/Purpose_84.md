@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/playwright.md"
+source_file: "docs/vault/03 - Configuration/gitleaks.toml.md"
 type: "document"
-community: "Playwright"
+community: "gitleaks.toml"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Playwright
+  - community/gitleakstoml
 ---
 
 # Purpose
 
 ## Connections
-- [[Playwright_3]] - `contains` [EXTRACTED]
+- [[gitleaks.toml_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Playwright
+#graphify/document #graphify/EXTRACTED #community/gitleakstoml

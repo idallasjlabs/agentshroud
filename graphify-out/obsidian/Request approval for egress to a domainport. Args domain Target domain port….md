@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/egress_approval.py"
 type: "rationale"
-community: "egress_approval.py"
+community: "EgressApprovalQueue"
 location: "L359"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/egress_approvalpy
+  - community/EgressApprovalQueue
 ---
 
 # Request approval for egress to a domain/port. Args: domain: Target domain port:…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-request_approval()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/egress_approvalpy
+#graphify/rationale #graphify/EXTRACTED #community/EgressApprovalQueue

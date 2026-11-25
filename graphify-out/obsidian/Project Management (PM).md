@@ -12,9 +12,9 @@ tags:
 # Project Management (PM)
 
 ## Connections
-- [[Purpose_126]] - `contains` [EXTRACTED]
+- [[Purpose_128]] - `contains` [EXTRACTED]
 - [[Related Skills_58]] - `contains` [EXTRACTED]
-- [[Usage_68]] - `contains` [EXTRACTED]
+- [[Usage_69]] - `contains` [EXTRACTED]
 - [[hermesskillsi-pmREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Project_Management_PM

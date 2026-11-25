@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/sanitizer.py"
 type: "rationale"
-community: "RedactionResult"
+community: "PIISanitizer"
 location: "L178"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIISanitizer
 ---
 
 # Return the effective confidence threshold for one call (raise-only). The…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-_resolve_threshold()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/RedactionResult
+#graphify/rationale #graphify/EXTRACTED #community/PIISanitizer

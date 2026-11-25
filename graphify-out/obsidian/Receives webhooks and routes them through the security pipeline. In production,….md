@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/webhook_receiver.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "WebhookReceiver"
 location: "L30"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/WebhookReceiver
 ---
 
 # Receives webhooks and routes them through the security pipeline. In production,…
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[WebhookReceiver]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/WebhookReceiver

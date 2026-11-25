@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/02 - Modules/Other/port_manager.py.md"
+source_file: "docs/vault/03 - Configuration/wazuh-ossec.md"
 type: "document"
-community: "port_manager.py"
-location: "L15"
+community: "wazuh-ossec.conf"
+location: "L16"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/port_managerpy
+  - community/wazuh-ossecconf
 ---
 
 # Purpose
 
 ## Connections
-- [[port_manager.py_1]] - `contains` [EXTRACTED]
+- [[wazuh-ossec.conf]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/port_managerpy
+#graphify/document #graphify/EXTRACTED #community/wazuh-ossecconf

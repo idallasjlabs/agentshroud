@@ -12,6 +12,6 @@ tags:
 # Related
 
 ## Connections
-- [[trivy_report.py_1]] - `contains` [EXTRACTED]
+- [[trivy_report.py_2]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/trivy_reportpy

@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[dot-agentsskillsi-crSKILL]] - `contains` [EXTRACTED]
 - [[dot-agentsskillsi-prREADME]] - `contains` [EXTRACTED]
-- [[Purpose_103]] - `contains` [EXTRACTED]
+- [[Purpose_105]] - `contains` [EXTRACTED]
 - [[Related Skills_35]] - `contains` [EXTRACTED]
-- [[Usage_45]] - `contains` [EXTRACTED]
+- [[Usage_46]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Pull_Request_Generator_PR

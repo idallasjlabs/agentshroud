@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/prompt_protection.py"
 type: "rationale"
-community: "run"
+community: "ContextGuard"
 location: "L40"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # Result of scanning and redacting content.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[RedactionResult]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

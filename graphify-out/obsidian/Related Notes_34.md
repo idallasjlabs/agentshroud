@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/falco-rules.md"
+source_file: "docs/vault/02 - Modules/Other/ssh_proxy.py.md"
 type: "document"
-community: "falco-rules.yaml"
-location: "L64"
+community: "ssh_proxy.py"
+location: "L65"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/falco-rulesyaml
+  - community/ssh_proxypy
 ---
 
 # Related Notes
 
 ## Connections
-- [[falco-rules.yaml]] - `contains` [EXTRACTED]
+- [[ssh_proxy.py_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/falco-rulesyaml
+#graphify/document #graphify/EXTRACTED #community/ssh_proxypy

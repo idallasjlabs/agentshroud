@@ -13,8 +13,8 @@ tags:
 
 ## Connections
 - [[dot-agentsskillsi-qaREADME]] - `contains` [EXTRACTED]
-- [[Purpose_66]] - `contains` [EXTRACTED]
+- [[Purpose_68]] - `contains` [EXTRACTED]
 - [[Related Skills_19]] - `contains` [EXTRACTED]
-- [[Usage_21]] - `contains` [EXTRACTED]
+- [[Usage_22]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL

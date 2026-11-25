@@ -1,17 +1,17 @@
 ---
-source_file: ".agents/skills/browser/README.md"
+source_file: ".agents/skills/atlas/README.md"
 type: "document"
-community: "Browser — Secure Browser Automation"
+community: "Atlas — Curriculum Architect"
 location: "L6"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Browser__Secure_Browser_Automation
+  - community/Atlas__Curriculum_Architect
 ---
 
 # Purpose
 
 ## Connections
-- [[Browser — Secure Browser Automation_1]] - `contains` [EXTRACTED]
+- [[Atlas — Curriculum Architect_3]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Browser__Secure_Browser_Automation
+#graphify/document #graphify/EXTRACTED #community/Atlas__Curriculum_Architect

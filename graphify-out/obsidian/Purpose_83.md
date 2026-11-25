@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/05 - Dependencies/clamav.md"
+source_file: "docs/vault/03 - Configuration/ci-workflows.md"
 type: "document"
-community: "ClamAV"
+community: "CI Workflows"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/ClamAV
+  - community/CI_Workflows
 ---
 
 # Purpose
 
 ## Connections
-- [[ClamAV_1]] - `contains` [EXTRACTED]
+- [[CI Workflows]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/ClamAV
+#graphify/document #graphify/EXTRACTED #community/CI_Workflows

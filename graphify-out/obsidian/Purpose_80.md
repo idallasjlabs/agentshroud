@@ -1,17 +1,17 @@
 ---
-source_file: "docs/vault/03 - Configuration/ci-workflows.md"
+source_file: "docs/vault/05 - Dependencies/python-jose.md"
 type: "document"
-community: "CI Workflows"
+community: "python-jose"
 location: "L15"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/CI_Workflows
+  - community/python-jose
 ---
 
 # Purpose
 
 ## Connections
-- [[CI Workflows]] - `contains` [EXTRACTED]
+- [[python-jose_1]] - `contains` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/CI_Workflows
+#graphify/document #graphify/EXTRACTED #community/python-jose

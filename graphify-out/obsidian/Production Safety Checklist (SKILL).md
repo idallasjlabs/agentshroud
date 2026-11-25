@@ -12,10 +12,10 @@ tags:
 
 ## Connections
 - [[Incident Response (SKILL)]] - `semantically_similar_to` [INFERRED]
-- [[Purpose_67]] - `contains` [EXTRACTED]
+- [[Purpose_69]] - `contains` [EXTRACTED]
 - [[Quality Assurance (SKILL)]] - `semantically_similar_to` [INFERRED]
 - [[Related Skills_20]] - `contains` [EXTRACTED]
-- [[Usage_22]] - `contains` [EXTRACTED]
+- [[Usage_23]] - `contains` [EXTRACTED]
 - [[hermesskillsi-bsREADME]] - `contains` [EXTRACTED]
 
 #graphify/document #graphify/EXTRACTED #community/Quality_Assurance_SKILL
