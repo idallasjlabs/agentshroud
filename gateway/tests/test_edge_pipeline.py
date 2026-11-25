@@ -195,6 +195,28 @@ class TestToolListing:
         d = (await deps.audit.query_events(event_type="edge_call", limit=5))[0].details
         assert (d["vendor"], d["deny_reason"]) == (None, "unauthorized")
 
+    async def test_auth_denial_is_audited_and_counted(self, edge):
+        pipe, deps, *_ = edge
+        await pipe.record_auth_denial(
+            {
+                "step": "token_refresh",
+                "vendor": "claude-duet",
+                "client_id": "c1",
+                "jti": None,
+                "deny_reason": "revoked",
+            }
+        )
+        rows = await deps.audit.query_events(event_type="edge_auth", limit=5)
+        d = rows[0].details
+        assert (d["tool"], d["outcome"], d["deny_reason"]) == (
+            "oauth/token_refresh",
+            "denied",
+            "revoked",
+        )
+        assert (d["vendor"], d["client_id"]) == ("claude-duet", "c1")
+        assert pipe.stats["claude-duet"].denials["revoked"] == 1
+        assert await deps.audit.query_events(event_type="edge_call", limit=5) == []
+
     async def test_successful_listing_writes_no_audit_row(self, edge):
         pipe, deps, *_ = edge
         await pipe.list_tools(await _token(deps))

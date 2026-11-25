@@ -273,3 +273,82 @@ class TestRefreshAndRevoke:
         await svc.store.kill("vendor", "claude-duet", "owner")
         with pytest.raises(OAuthFailure, match="revoked"):
             await svc.exchange_refresh_token(info["client_id"], tok["refresh_token"], [])
+
+
+class TestKilledAuthIsAuditedAndRecoverable:
+    """K1 rerun on prod: a killed vendor whose access token had lapsed was refused at
+    /token and /mcp with no audit row, and the refused refresh burned its refresh
+    token, so lifting the kill forced the vendor to reconnect."""
+
+    @pytest.fixture
+    def denials(self, svc):
+        seen = []
+
+        async def hook(rec):
+            seen.append(rec)
+
+        svc.on_denied = hook
+        return seen
+
+    async def test_refused_refresh_is_reported(self, svc, denials):
+        info, code, _ = await _linked(svc)
+        tok = await svc.exchange_authorization_code(info["client_id"], code)
+        await svc.store.kill("vendor", "claude-duet", "K1")
+        with pytest.raises(OAuthFailure, match="revoked"):
+            await svc.exchange_refresh_token(info["client_id"], tok["refresh_token"], [])
+        assert denials == [
+            {
+                "step": "token_refresh",
+                "vendor": "claude-duet",
+                "client_id": info["client_id"],
+                "jti": None,
+                "deny_reason": "revoked",
+            }
+        ]
+
+    async def test_refresh_token_survives_kill_and_works_after_unkill(self, svc, denials):
+        info, code, _ = await _linked(svc)
+        tok = await svc.exchange_authorization_code(info["client_id"], code)
+        await svc.store.kill("vendor", "claude-duet", "K1")
+        for _ in range(2):  # a vendor retrying must not trip reuse detection either
+            with pytest.raises(OAuthFailure, match="revoked"):
+                await svc.exchange_refresh_token(info["client_id"], tok["refresh_token"], [])
+        await svc.store.unkill("vendor", "claude-duet")
+        again = await svc.exchange_refresh_token(info["client_id"], tok["refresh_token"], [])
+        assert again["access_token"]
+
+    async def test_refused_code_exchange_is_reported(self, svc, denials):
+        info, code, _ = await _linked(svc)
+        await svc.store.kill("vendor", "claude-duet", "K1")
+        with pytest.raises(OAuthFailure, match="revoked"):
+            await svc.exchange_authorization_code(info["client_id"], code)
+        assert [(d["step"], d["vendor"]) for d in denials] == [("token_exchange", "claude-duet")]
+
+    async def test_killed_access_token_is_reported_with_jti(self, svc, denials):
+        info, code, _ = await _linked(svc)
+        tok = await svc.exchange_authorization_code(info["client_id"], code)
+        await svc.store.kill("vendor", "claude-duet", "K1")
+        assert await svc.load_access_token(tok["access_token"]) is None
+        assert len(denials) == 1
+        d = denials[0]
+        assert (d["step"], d["vendor"], d["client_id"]) == (
+            "access_token",
+            "claude-duet",
+            info["client_id"],
+        )
+        assert d["jti"]
+
+    async def test_garbage_token_is_not_reported(self, svc, denials):
+        # Unattributable noise (expired, forged, malformed) is not a vendor denial.
+        assert await svc.load_access_token("not-a-jwt") is None
+        assert denials == []
+
+    async def test_failing_hook_never_breaks_the_refusal(self, svc):
+        async def boom(rec):
+            raise RuntimeError("audit down")
+
+        svc.on_denied = boom
+        info, code, _ = await _linked(svc)
+        await svc.store.kill("vendor", "claude-duet", "K1")
+        with pytest.raises(OAuthFailure, match="revoked"):
+            await svc.exchange_authorization_code(info["client_id"], code)

@@ -284,12 +284,14 @@ async def build_edge_service(app_state: Any) -> Optional[EdgeService]:
         facades=facades,
         local_agents=local_agents,
     )
+    pipeline = EdgeCallPipeline(deps)
+    oauth.on_denied = pipeline.record_auth_denial
     service = EdgeService(
         store=store,
         tokens=tokens,
         oauth=oauth,
         approvals=approvals,
-        pipeline=EdgeCallPipeline(deps),
+        pipeline=pipeline,
         service_token=service_token,
         issuer=issuer,
         resource=resource,

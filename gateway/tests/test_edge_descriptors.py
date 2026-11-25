@@ -235,3 +235,104 @@ class TestSigningCli:
         other = base64.b64encode(b"\x01" * 32).decode()
         assert d.main(["sign", *paths], stdin=io.StringIO(other + "\n")) == 1
         assert not sig.exists()
+
+
+class FakeKeychain:
+    """Stands in for macOS ``security``: records every argv and stdin it receives."""
+
+    def __init__(self, add_rc=0):
+        self.items = {}
+        self.calls = []
+        self.add_rc = add_rc
+
+    def __call__(self, cmd, input=None, capture_output=True, text=True, check=False):
+        import subprocess
+
+        self.calls.append((list(cmd), input))
+        if cmd[:2] == ["security", "find-generic-password"]:
+            key = (cmd[cmd.index("-s") + 1], cmd[cmd.index("-a") + 1])
+            if key not in self.items:
+                return subprocess.CompletedProcess(cmd, 44, "", "item could not be found")
+            out = self.items[key] + "\n" if "-w" in cmd else "attributes"
+            return subprocess.CompletedProcess(cmd, 0, out, "")
+        if cmd == ["security", "-i"]:
+            words = input.split()
+            assert words[0] == "add-generic-password"
+            key = (words[words.index("-s") + 1], words[words.index("-a") + 1])
+            if self.add_rc == 0:
+                self.items[key] = words[words.index("-w") + 1]
+            return subprocess.CompletedProcess(cmd, self.add_rc, "", "")
+        raise AssertionError(f"unexpected command {cmd}")
+
+
+class TestKeychainSigning:
+    """The signing key lives in the OWNER's macOS keychain, read and written through
+    ``security`` with the key on stdin only — so it can live outside the account the
+    agents run as, with no Python keyring module (2026-11-25)."""
+
+    @staticmethod
+    def _paths(tmp_path):
+        manifest, sig, pub = tmp_path / "m.json", tmp_path / "m.sig", tmp_path / "p.pem"
+        args = ["--manifest", str(manifest), "--signature", str(sig), "--public-key", str(pub)]
+        return manifest, sig, pub, args
+
+    def test_keygen_stores_key_in_keychain_and_prints_nothing(self, tmp_path, capsys):
+        _, _, pub, args = self._paths(tmp_path)
+        kc = FakeKeychain()
+        assert d.main(["keygen", "--keychain", "agentshroud-edge", *args], run=kc) == 0
+        key = kc.items[("agentshroud-edge", "descriptors")]
+        assert len(base64.b64decode(key)) == 32
+        assert key not in capsys.readouterr().out
+        assert all(key not in " ".join(argv) for argv, _ in kc.calls)
+        assert b"PUBLIC KEY" in pub.read_bytes()
+
+    def test_keygen_refuses_to_replace_an_existing_key(self, tmp_path):
+        _, _, pub, args = self._paths(tmp_path)
+        kc = FakeKeychain()
+        kc.items[("agentshroud-edge", "descriptors")] = "old"
+        assert d.main(["keygen", "--keychain", "agentshroud-edge", *args], run=kc) == 1
+        assert kc.items[("agentshroud-edge", "descriptors")] == "old"
+        assert not pub.exists()
+
+    def test_keygen_writes_no_public_key_when_the_keychain_store_fails(self, tmp_path):
+        _, _, pub, args = self._paths(tmp_path)
+        kc = FakeKeychain(add_rc=1)
+        assert d.main(["keygen", "--keychain", "agentshroud-edge", *args], run=kc) == 1
+        assert not pub.exists()
+
+    def test_sign_reads_the_key_from_the_keychain(self, tmp_path):
+        manifest, sig, pub, args = self._paths(tmp_path)
+        kc = FakeKeychain()
+        d.main(["keygen", "--keychain", "agentshroud-edge", *args], run=kc)
+        d.main(["manifest", *args])
+        assert d.main(["sign", "--keychain", "agentshroud-edge", *args], run=kc) == 0
+        d.verify_descriptors(
+            json.loads(manifest.read_text()), sig.read_text().strip(), pub.read_bytes()
+        )
+        key = kc.items[("agentshroud-edge", "descriptors")]
+        assert all(key not in " ".join(argv) for argv, _ in kc.calls)
+
+    def test_sign_without_a_keychain_item_fails_cleanly(self, tmp_path, capsys):
+        manifest, sig, _, args = self._paths(tmp_path)
+        d.main(["manifest", *args])
+        assert d.main(["sign", "--keychain", "agentshroud-edge", *args], run=FakeKeychain()) == 1
+        assert "keychain" in capsys.readouterr().err
+        assert not sig.exists()
+
+    def test_sign_refuses_an_empty_or_garbage_key(self, tmp_path, capsys):
+        # What a locked keychain (no GUI to approve) hands back: an empty line.
+        import io
+
+        manifest, sig, _, args = self._paths(tmp_path)
+        d.main(["manifest", *args])
+        for line in ("\n", "not base64!\n"):
+            assert d.main(["sign", *args], stdin=io.StringIO(line)) == 1
+        assert "base64 Ed25519" in capsys.readouterr().err
+        assert not sig.exists()
+
+    @pytest.mark.parametrize("service", ["a b", "x;rm", "", "-s", "a\nb"])
+    def test_unsafe_service_names_are_refused(self, tmp_path, service):
+        *_, args = self._paths(tmp_path)
+        kc = FakeKeychain()
+        assert d.main(["keygen", f"--keychain={service}", *args], run=kc) == 1
+        assert kc.calls == []

@@ -121,6 +121,7 @@ async def test_builds_with_everything_enabled(
         assert edge.issuer == "https://e.ts.net:8443" and edge.resource.endswith("/mcp")
         assert sorted(edge.pipeline.d.facades) == ["delegate_to_hermes", "lab_search", "pke_status"]
         assert edge.pipeline.d.local_agents == {"hermes"}
+        assert edge.oauth.on_denied == edge.pipeline.record_auth_denial
         assert edge.service_token_ok("t" * 48) and not edge.service_token_ok("x" * 48)
         assert not edge.service_token_ok(None)
         assert state.event_bus.events[0].summary == "Inbound MCP Edge started"
