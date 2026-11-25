@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "FileSandbox"
+community: "test_privilege_separation.py"
 location: "L237"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/FileSandbox
+  - community/test_privilege_separationpy
 ---
 
 # Test file path pattern matching logic.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPatternMatching]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/FileSandbox
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

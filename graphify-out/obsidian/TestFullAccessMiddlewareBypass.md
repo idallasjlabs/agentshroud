@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "MiddlewareResult"
 location: "L9395"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/MiddlewareResult
 ---
 
 # TestFullAccessMiddlewareBypass
@@ -25,4 +25,4 @@ tags:
 - [[full_access collaborators must pass through middleware and secondary pipeline…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_inbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/MiddlewareResult

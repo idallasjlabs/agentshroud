@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_env_guard_class.py"
+community: "TestCheckFileAccess"
 location: "L27"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/TestCheckFileAccess
 ---
 
 # TestCheckFileAccess
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_blocks_wildcard_proc_pid_environ()]] - `method` [EXTRACTED]
 - [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/TestCheckFileAccess

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "TestEgressFilterConfig"
+community: "EgressFilterConfig"
 location: "L82"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilterConfig
+  - community/EgressFilterConfig
 ---
 
 # TestEgressConfigDefaultEnforce
@@ -16,4 +16,4 @@ tags:
 - [[EgressFilterConfig]] - `uses` [INFERRED]
 - [[test_round2_hardening.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

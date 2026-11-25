@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "code"
-community: "TestConfigurationProtection"
+community: "test_privilege_separation.py"
 location: "L134"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConfigurationProtection
+  - community/test_privilege_separationpy
 ---
 
 # TestConfigurationProtection
@@ -18,4 +18,4 @@ tags:
 - [[Agent cannot modify AgentShroud configuration files.]] - `rationale_for` [EXTRACTED]
 - [[test_privilege_separation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConfigurationProtection
+#graphify/code #graphify/EXTRACTED #community/test_privilege_separationpy

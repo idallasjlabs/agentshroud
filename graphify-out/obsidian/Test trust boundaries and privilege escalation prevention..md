@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "TrustManager"
+community: "TestPrivilegeEscalation"
 location: "L512"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TestPrivilegeEscalation
 ---
 
 # Test trust boundaries and privilege escalation prevention.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestPrivilegeEscalation]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TrustManager
+#graphify/rationale #graphify/EXTRACTED #community/TestPrivilegeEscalation

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "asyncio"
+community: "EgressAction"
 location: "L270"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/EgressAction
 ---
 
 # TestAuditStorePersistence
@@ -20,4 +20,4 @@ tags:
 - [[Only DENY decisions are persisted to the tamper-evident audit store. ALLOW…]] - `rationale_for` [EXTRACTED]
 - [[test_egress_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/EgressAction

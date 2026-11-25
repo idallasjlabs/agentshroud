@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_websocket.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_coerce_to_ws_event"
 location: "L60"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_coerce_to_ws_event
 ---
 
 # TestCoerceToWSEvent
@@ -17,8 +17,8 @@ tags:
 - [[dot-test_preserves_severity()]] - `method` [EXTRACTED]
 - [[dot-test_returns_none_on_bad_input()]] - `method` [EXTRACTED]
 - [[dot-test_security_event()]] - `method` [EXTRACTED]
-- [[Severity_1]] - `uses` [INFERRED]
+- [[Severity]] - `uses` [INFERRED]
 - [[WSEventType]] - `uses` [INFERRED]
 - [[test_soc_websocket.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event

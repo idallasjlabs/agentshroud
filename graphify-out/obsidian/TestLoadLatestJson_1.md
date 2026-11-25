@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "get_trivy_summary"
+community: "Any"
 location: "L149"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_trivy_summary
+  - community/Any
 ---
 
 # TestLoadLatestJson
@@ -21,4 +21,4 @@ tags:
 - [[dot-test_skips_empty_files_returns_next_valid()]] - `method` [EXTRACTED]
 - [[test_scanner_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_trivy_summary
+#graphify/code #graphify/EXTRACTED #community/Any

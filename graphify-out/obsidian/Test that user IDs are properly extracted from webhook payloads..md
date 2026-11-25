@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "rationale"
-community: "UserSessionManager"
+community: "TestMiddlewareSessionEnforcement"
 location: "L279"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # Test that user IDs are properly extracted from webhook payloads.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_webhook_user_id_extraction()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/UserSessionManager
+#graphify/rationale #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

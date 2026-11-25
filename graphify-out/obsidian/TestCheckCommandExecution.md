@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_env_guard_class.py"
+community: "TestCheckCommandExecution"
 location: "L52"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/TestCheckCommandExecution
 ---
 
 # TestCheckCommandExecution
@@ -21,4 +21,4 @@ tags:
 - [[dot-test_unparseable_text_is_allowed()_1]] - `method` [EXTRACTED]
 - [[test_env_guard_class.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/TestCheckCommandExecution

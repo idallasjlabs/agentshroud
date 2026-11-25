@@ -12,7 +12,7 @@ tags:
 # TestEgressSSRF
 
 ## Connections
-- [[dot-setup_method()_8]] - `method` [EXTRACTED]
+- [[dot-setup_method()_7]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_loopback()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_mapped_ipv6_private()]] - `method` [EXTRACTED]
 - [[dot-test_block_ipv4_private()]] - `method` [EXTRACTED]

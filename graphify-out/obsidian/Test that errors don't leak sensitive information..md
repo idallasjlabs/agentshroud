@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "rationale"
-community: "LogSanitizer"
+community: "EnvironmentGuard"
 location: "L384"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/EnvironmentGuard
 ---
 
 # Test that errors don't leak sensitive information.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestInfoLeakage]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/LogSanitizer
+#graphify/rationale #graphify/EXTRACTED #community/EnvironmentGuard

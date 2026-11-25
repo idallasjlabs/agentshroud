@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "lifespan.py"
+community: "ingest_api/config.py"
 location: "L98"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ingest_api/configpy
 ---
 
 # TestGetModuleModeEnforceDefault
@@ -18,4 +18,4 @@ tags:
 - [[Verify get_module_mode returns enforce when no override is set.]] - `rationale_for` [EXTRACTED]
 - [[test_all_modules_enforce.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

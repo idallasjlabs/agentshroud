@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "detect_runtime"
+community: "patch"
 location: "L24"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/detect_runtime
+  - community/patch
 ---
 
 # TestDetectRuntime
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_detect_podman()]] - `method` [EXTRACTED]
 - [[test_runtime_engines.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/detect_runtime
+#graphify/code #graphify/EXTRACTED #community/patch

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_triage_cve_mitigations.py"
 type: "code"
-community: "TestDefenseLayerVocabulary"
+community: "_t"
 location: "L328"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDefenseLayerVocabulary
+  - community/_t
 ---
 
 # TestDefenseLayerVocabulary
@@ -17,4 +17,4 @@ tags:
 - [[WebContentScanner]] - `uses` [INFERRED]
 - [[test_triage_cve_mitigations.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDefenseLayerVocabulary
+#graphify/code #graphify/EXTRACTED #community/_t

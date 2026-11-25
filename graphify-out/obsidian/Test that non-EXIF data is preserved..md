@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_metadata_guard.py"
 type: "rationale"
-community: "MetadataGuard"
+community: "TestMetadataGuard"
 location: "L129"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/TestMetadataGuard
 ---
 
 # Test that non-EXIF data is preserved.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_sanitize_image_metadata_preserves_non_exif()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/MetadataGuard
+#graphify/rationale #graphify/EXTRACTED #community/TestMetadataGuard

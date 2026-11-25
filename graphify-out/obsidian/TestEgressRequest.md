@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "soc/models.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_soc_realtime_coveragepy
+  - community/soc/modelspy
 ---
 
 # TestEgressRequest
 
 ## Connections
-- [[dot-test_construction()_1]] - `method` [EXTRACTED]
+- [[dot-test_construction()_2]] - `method` [EXTRACTED]
 - [[EgressRequest_1]] - `uses` [INFERRED]
 - [[EgressStatus]] - `uses` [INFERRED]
-- [[RiskLevel_6]] - `uses` [INFERRED]
+- [[RiskLevel_5]] - `uses` [INFERRED]
 - [[test_soc_models.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/INFERRED #community/soc/modelspy

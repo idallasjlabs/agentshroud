@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_custom_config()_2]] - `method` [EXTRACTED]
-- [[dot-test_default_config()_4]] - `method` [EXTRACTED]
+- [[dot-test_default_config()_3]] - `method` [EXTRACTED]
 - [[ApprovalHardeningConfig]] - `uses` [INFERRED]
 - [[Test approval hardening configuration.]] - `rationale_for` [EXTRACTED]
 - [[test_approval_hardening.py]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "TestKeyScoping"
+community: "KeyVault"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKeyScoping
+  - community/KeyVault
 ---
 
 # TestKeyScoping
@@ -18,4 +18,4 @@ tags:
 - [[dot-test_wildcard_scope_allows_all()]] - `method` [EXTRACTED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKeyScoping
+#graphify/code #graphify/EXTRACTED #community/KeyVault

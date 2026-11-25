@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestEdgeCases"
+community: "test_privilege_separation.py"
 location: "L314"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestEdgeCases
+  - community/test_privilege_separationpy
 ---
 
 # Test edge cases and potential bypass attempts.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeCases]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestEdgeCases
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

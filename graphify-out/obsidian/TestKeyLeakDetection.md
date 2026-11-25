@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyLeakDetector"
+community: "KeyVault"
 location: "L141"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyLeakDetector
+  - community/KeyVault
 ---
 
 # TestKeyLeakDetection
@@ -21,4 +21,4 @@ tags:
 - [[KeyVaultConfig]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyLeakDetector
+#graphify/code #graphify/EXTRACTED #community/KeyVault

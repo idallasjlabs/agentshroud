@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_progressive_trust_integration.py"
 type: "code"
-community: "ProgressiveTrustConfig"
+community: "TrustLevel"
 location: "L417"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProgressiveTrustConfig
+  - community/TrustLevel
 ---
 
 # TestEnforcementModeResolver
@@ -17,4 +17,4 @@ tags:
 - [[SCRUM-78 — the env-var resolver must fail CLOSED (enforce).]] - `rationale_for` [EXTRACTED]
 - [[test_progressive_trust_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProgressiveTrustConfig
+#graphify/code #graphify/EXTRACTED #community/TrustLevel

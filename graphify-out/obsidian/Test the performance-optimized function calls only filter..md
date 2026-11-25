@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "run"
+community: "ContextGuard"
 location: "L78"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # Test the performance-optimized function calls only filter.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_quick_function_calls_filter()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_output_canary.py"
 type: "rationale"
-community: "OutputCanary"
+community: "TestModuleInstantiationInEnforceMode"
 location: "L173"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/OutputCanary
+  - community/TestModuleInstantiationInEnforceMode
 ---
 
 # Test that invisible canaries are created properly.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_invisible_canary_creation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/OutputCanary
+#graphify/rationale #graphify/EXTRACTED #community/TestModuleInstantiationInEnforceMode

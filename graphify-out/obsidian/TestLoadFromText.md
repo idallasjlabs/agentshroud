@@ -12,11 +12,11 @@ tags:
 # TestLoadFromText
 
 ## Connections
-- [[dot-setup_method()_34]] - `method` [EXTRACTED]
+- [[dot-setup_method()_32]] - `method` [EXTRACTED]
 - [[dot-test_allowlist_skip()]] - `method` [EXTRACTED]
 - [[dot-test_comments_skipped()]] - `method` [EXTRACTED]
 - [[dot-test_deduplication()_1]] - `method` [EXTRACTED]
-- [[dot-test_empty_text()]] - `method` [EXTRACTED]
+- [[dot-test_empty_text()_1]] - `method` [EXTRACTED]
 - [[dot-test_multi_line_parsing()]] - `method` [EXTRACTED]
 - [[DNSBlocklist]] - `uses` [INFERRED]
 - [[load_from_text() — multi-line parsing, dedup, allowlist skip.]] - `rationale_for` [EXTRACTED]

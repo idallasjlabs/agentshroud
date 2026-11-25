@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "rationale"
-community: "KeyRotationManager"
+community: "test_key_rotation.py"
 location: "L363"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/test_key_rotationpy
 ---
 
 # Test emergency rotation workflow.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_emergency_rotation()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/rationale #graphify/EXTRACTED #community/test_key_rotationpy

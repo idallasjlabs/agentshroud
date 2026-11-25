@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "web_proxy.py"
+community: "EgressEvent"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/EgressEvent
 ---
 
 # TestEgressMonitorConfig
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_generous_baselines()]] - `method` [EXTRACTED]
 - [[test_egress_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

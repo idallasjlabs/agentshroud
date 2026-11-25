@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "rationale"
-community: "middleware.py"
+community: "test_memory_lifecycle.py"
 location: "L392"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # Test integration of memory security components.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMemorySecurityIntegration]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/middlewarepy
+#graphify/rationale #graphify/EXTRACTED #community/test_memory_lifecyclepy

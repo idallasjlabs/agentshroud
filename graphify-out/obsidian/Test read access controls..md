@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_privilege_separation.py"
 type: "rationale"
-community: "TestReadAccess"
+community: "test_privilege_separation.py"
 location: "L210"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestReadAccess
+  - community/test_privilege_separationpy
 ---
 
 # Test read access controls.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReadAccess]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestReadAccess
+#graphify/rationale #graphify/EXTRACTED #community/test_privilege_separationpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration_coverage.py"
 type: "code"
-community: "TestAggregateResults"
+community: "P2 High Priority Incidents"
 location: "L520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAggregateResults
+  - community/P2_High_Priority_Incidents
 ---
 
 # TestAggregateResults
@@ -19,4 +19,4 @@ tags:
 - [[dot-test_high_means_warning()]] - `method` [EXTRACTED]
 - [[test_scanner_integration_coverage.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAggregateResults
+#graphify/code #graphify/EXTRACTED #community/P2_High_Priority_Incidents

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestDefaultBotId"
+community: "test_telegram_proxy_outbound.py"
 location: "L5379"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDefaultBotId
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # TestDefaultBotId
@@ -19,4 +19,4 @@ tags:
 - [[_active_bot_id returns the constructor-injected default when no contextvar is…]] - `rationale_for` [EXTRACTED]
 - [[test_telegram_proxy_outbound.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDefaultBotId
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

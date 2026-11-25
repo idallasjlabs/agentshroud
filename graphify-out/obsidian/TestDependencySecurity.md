@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestDependencySecurity"
+community: "TestHTTPSecurity"
 location: "L627"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestDependencySecurity
+  - community/TestHTTPSecurity
 ---
 
 # TestDependencySecurity
@@ -19,4 +19,4 @@ tags:
 - [[Test dependency and supply chain security.]] - `rationale_for` [EXTRACTED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestDependencySecurity
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "rationale"
-community: ".test_monitor_mode"
+community: "OutboundInfoFilter"
 location: "L303"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/test_monitor_mode
+  - community/OutboundInfoFilter
 ---
 
 # Test that monitor mode logs but doesn't redact.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_monitor_mode()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/test_monitor_mode
+#graphify/rationale #graphify/EXTRACTED #community/OutboundInfoFilter

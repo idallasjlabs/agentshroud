@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_context_integrity.py"
 type: "code"
-community: "ContextGuard"
+community: "context_guard.py"
 location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/context_guardpy
 ---
 
 # TestContextIntegrityScorer
@@ -21,4 +21,4 @@ tags:
 - [[IntegrityScore]] - `uses` [INFERRED]
 - [[test_context_integrity.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/context_guardpy

@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_subprocess_shell_true_flags()]] - `method` [EXTRACTED]
 - [[dot-test_wget_pipe_sh_blocks()]] - `method` [EXTRACTED]
-- [[Severity]] - `uses` [INFERRED]
+- [[Severity_1]] - `uses` [INFERRED]
 - [[SkillGuard]] - `uses` [INFERRED]
 - [[test_skill_guard.py]] - `contains` [EXTRACTED]
 

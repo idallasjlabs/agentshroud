@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "TestHTTPSecurity"
 location: "L107"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/TestHTTPSecurity
 ---
 
 # TestHTTPSecurity
@@ -26,4 +26,4 @@ tags:
 - [[Test HTTP-level security CRLF, header injection, content types.]] - `rationale_for` [EXTRACTED]
 - [[test_security_audit_advanced.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

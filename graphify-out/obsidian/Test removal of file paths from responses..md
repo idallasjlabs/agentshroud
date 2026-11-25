@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "rationale"
-community: "run"
+community: "ContextGuard"
 location: "L60"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # Test removal of file paths from responses.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_file_path_removal()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/run
+#graphify/rationale #graphify/EXTRACTED #community/ContextGuard

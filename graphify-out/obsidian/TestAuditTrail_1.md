@@ -1,26 +1,22 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_subagent_monitor.py"
 type: "code"
-community: "TestAuditTrail"
-location: "L286"
+community: "test_all_modules_enforce.py"
+location: "L184"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuditTrail
+  - community/test_all_modules_enforcepy
 ---
 
 # TestAuditTrail
 
 ## Connections
-- [[dot-test_blocked_entry_logged()]] - `method` [EXTRACTED]
-- [[dot-test_chain_entries_linked()]] - `method` [EXTRACTED]
-- [[dot-test_hash_chain_changes_on_append()]] - `method` [EXTRACTED]
-- [[dot-test_hash_chain_genesis()]] - `method` [EXTRACTED]
-- [[dot-test_hash_chain_valid()]] - `method` [EXTRACTED]
-- [[dot-test_log_tool_call()]] - `method` [EXTRACTED]
-- [[dot-test_log_tool_result()]] - `method` [EXTRACTED]
-- [[dot-test_pii_redacted_flag()]] - `method` [EXTRACTED]
-- [[dot-test_tampered_chain_detected()]] - `method` [EXTRACTED]
-- [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
+- [[dot-test_audit_filterable_by_agent()]] - `method` [EXTRACTED]
+- [[dot-test_audit_has_timestamps()]] - `method` [EXTRACTED]
+- [[dot-test_deregister_logged()]] - `method` [EXTRACTED]
+- [[dot-test_spawn_logged()]] - `method` [EXTRACTED]
+- [[SubagentEventType]] - `uses` [INFERRED]
+- [[test_subagent_monitor.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuditTrail
+#graphify/code #graphify/EXTRACTED #community/test_all_modules_enforcepy

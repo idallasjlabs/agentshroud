@@ -21,7 +21,7 @@ tags:
 - [[dot-test_prompt_override_blocked()]] - `method` [EXTRACTED]
 - [[dot-test_special_token_injection()]] - `method` [EXTRACTED]
 - [[FindingType]] - `uses` [INFERRED]
-- [[ThreatLevel_1]] - `uses` [INFERRED]
+- [[ThreatLevel]] - `uses` [INFERRED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestInjectionDetection

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "rationale"
-community: "ToolResultSanitizerConfig"
+community: "ToolResultSanitizer"
 location: "L331"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/ToolResultSanitizerConfig
+  - community/ToolResultSanitizer
 ---
 
 # Test sanitizing a realistic web scraping result.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_realistic_web_scraping_result()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizerConfig
+#graphify/rationale #graphify/EXTRACTED #community/ToolResultSanitizer

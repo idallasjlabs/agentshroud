@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "TestHermesEgressAllowlist"
 location: "L467"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/TestHermesEgressAllowlist
 ---
 
 # TestHermesEgressAllowlist
@@ -20,4 +20,4 @@ tags:
 - [[Verify that Hermes-specific egress destinations are in the canonical allowlist.]] - `rationale_for` [EXTRACTED]
 - [[test_security_regressions_v1_2.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/TestHermesEgressAllowlist

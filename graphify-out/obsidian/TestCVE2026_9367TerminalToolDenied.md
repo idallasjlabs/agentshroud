@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_acl.py"
 type: "code"
-community: "TestCVE2026_9367TerminalToolDenied"
+community: "test_tool_acl.py"
 location: "L302"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCVE2026_9367TerminalToolDenied
+  - community/test_tool_aclpy
 ---
 
 # TestCVE2026_9367TerminalToolDenied
@@ -22,4 +22,4 @@ tags:
 - [[terminal_tool must be in PRIVATE_TOOLS and blocked for non-owner principals.]] - `rationale_for` [EXTRACTED]
 - [[test_tool_acl.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCVE2026_9367TerminalToolDenied
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

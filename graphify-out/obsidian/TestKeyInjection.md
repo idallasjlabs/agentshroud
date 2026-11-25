@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "KeyInjector"
+community: "KeyVault"
 location: "L80"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyInjector
+  - community/KeyVault
 ---
 
 # TestKeyInjection
@@ -18,4 +18,4 @@ tags:
 - [[KeyInjector]] - `uses` [INFERRED]
 - [[test_key_vault.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyInjector
+#graphify/code #graphify/EXTRACTED #community/KeyVault

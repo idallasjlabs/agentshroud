@@ -1,17 +1,17 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "rationale"
-community: "TestPathIsolationManager"
+community: "PathIsolationManager"
 location: "L74"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/PathIsolationManager
 ---
 
 # Test manager initialization.
 
 ## Connections
-- [[dot-test_initialization()_1]] - `rationale_for` [EXTRACTED]
+- [[dot-test_initialization()_2]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/rationale #graphify/EXTRACTED #community/PathIsolationManager

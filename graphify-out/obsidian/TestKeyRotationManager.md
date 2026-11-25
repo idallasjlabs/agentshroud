@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "CredentialInfo"
 location: "L158"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/CredentialInfo
 ---
 
 # TestKeyRotationManager
 
 ## Connections
-- [[dot-manager()]] - `method` [EXTRACTED]
+- [[dot-manager()_2]] - `method` [EXTRACTED]
 - [[dot-sample_credential()]] - `method` [EXTRACTED]
 - [[dot-test_get_credential_status()]] - `method` [EXTRACTED]
 - [[dot-test_get_health_score_all_healthy()]] - `method` [EXTRACTED]
@@ -26,4 +26,4 @@ tags:
 - [[Test key rotation manager functionality.]] - `rationale_for` [EXTRACTED]
 - [[test_key_rotation.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

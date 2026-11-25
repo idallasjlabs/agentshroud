@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "TestSkillsReloadEndpoint"
+community: "Path"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSkillsReloadEndpoint
+  - community/Path
 ---
 
 # TestClient
 
 ## Connections
 - [[dot-client()_5]] - `references` [EXTRACTED]
-- [[dot-test_reload_returns_200_with_skills_list()]] - `references` [EXTRACTED]
-- [[dot-test_reload_returns_500_on_source_missing()]] - `references` [EXTRACTED]
+- [[dot-test_reload_allows_clean_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_blocks_dangerous_skill()]] - `references` [EXTRACTED]
+- [[dot-test_reload_fails_closed_on_unreadable_file()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSkillsReloadEndpoint
+#graphify/code #graphify/EXTRACTED #community/Path

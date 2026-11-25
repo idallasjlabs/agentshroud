@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L101"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # TestCommandInjectionScan
@@ -22,4 +22,4 @@ tags:
 - [[XMLLeakFilter]] - `uses` [INFERRED]
 - [[test_xml_leak_filter.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard
