@@ -17,7 +17,7 @@ tags:
 - [[MCPToolCall]] - `calls` [EXTRACTED]
 - [[The engine wired into MCPProxy blocks a denied call before dispatch — the fake…]] - `rationale_for` [EXTRACTED]
 - [[_base_config()]] - `calls` [EXTRACTED]
-- [[_boom()_21]] - `indirect_call` [INFERRED]
+- [[_boom()_24]] - `indirect_call` [INFERRED]
 - [[test_mcp_policy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/MCPPolicyEngine

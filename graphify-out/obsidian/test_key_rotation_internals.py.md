@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation_internals.py"
 type: "code"
-community: "KeyRotationManager"
+community: "KeyRotationConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/KeyRotationConfig
 ---
 
 # test_key_rotation_internals.py
@@ -30,4 +30,4 @@ tags:
 - [[key_rotation_config.py]] - `imports_from` [EXTRACTED]
 - [[manager()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/KeyRotationConfig

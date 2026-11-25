@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_group_isolation.py"
 type: "code"
-community: "test_group_isolation.py"
+community: "SharedMemoryManager"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/SharedMemoryManager
 ---
 
 # test_group_isolation.py
@@ -24,13 +24,13 @@ tags:
 - [[UserSessionManager]] - `imports` [EXTRACTED]
 - [[agent_isolation.py_2]] - `imports_from` [EXTRACTED]
 - [[group_config.py]] - `imports_from` [EXTRACTED]
-- [[rbac()_4]] - `contains` [EXTRACTED]
+- [[rbac()_2]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
-- [[session_manager()_4]] - `contains` [EXTRACTED]
+- [[session_manager()_2]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `imports_from` [EXTRACTED]
-- [[shared_memory()_2]] - `contains` [EXTRACTED]
+- [[shared_memory()_1]] - `contains` [EXTRACTED]
 - [[shared_memory.py]] - `imports_from` [EXTRACTED]
-- [[teams()_4]] - `contains` [EXTRACTED]
+- [[teams()_3]] - `contains` [EXTRACTED]
 - [[tmp_workspace()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

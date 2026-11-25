@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_email_owner_bypasses_pii.py"
 type: "code"
-community: "email_send"
+community: "app"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/app
 ---
 
 # test_email_owner_bypasses_pii.py
@@ -17,8 +17,8 @@ tags:
 - [[auth_dep()]] - `imports` [EXTRACTED]
 - [[auth_dep()_3]] - `imports` [EXTRACTED]
 - [[bypass_auth()_1]] - `contains` [EXTRACTED]
-- [[client()_10]] - `contains` [EXTRACTED]
+- [[client()_4]] - `contains` [EXTRACTED]
 - [[forward.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/app

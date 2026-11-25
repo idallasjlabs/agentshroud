@@ -15,8 +15,8 @@ tags:
 - [[Without the interactive flag the 3-retry loop is unchanged (guards the hermes-…]] - `rationale_for` [EXTRACTED]
 - [[_no_sleep()]] - `indirect_call` [INFERRED]
 - [[asyncio_20]] - `references` [EXTRACTED]
-- [[fake_urlopen()_16]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_17]] - `indirect_call` [INFERRED]
+- [[fake_urlopen()_15]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_16]] - `indirect_call` [INFERRED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 

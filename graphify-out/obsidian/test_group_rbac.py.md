@@ -29,9 +29,9 @@ tags:
 - [[group_config.py]] - `imports_from` [EXTRACTED]
 - [[group_rbac.py]] - `imports_from` [EXTRACTED]
 - [[group_role_resolver()]] - `contains` [EXTRACTED]
-- [[rbac()_2]] - `contains` [EXTRACTED]
+- [[rbac()_5]] - `contains` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
-- [[teams()_3]] - `contains` [EXTRACTED]
+- [[teams()_4]] - `contains` [EXTRACTED]
 - [[tool_acl.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

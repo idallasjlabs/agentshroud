@@ -42,7 +42,7 @@ tags:
 - [[pipeline.py_1]] - `imports_from` [EXTRACTED]
 - [[prompt_guard()_1]] - `contains` [EXTRACTED]
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
-- [[sanitizer()_4]] - `contains` [EXTRACTED]
+- [[sanitizer()_5]] - `contains` [EXTRACTED]
 - [[sanitizer.py_2]] - `imports_from` [EXTRACTED]
 - [[sidecar.py_2]] - `imports_from` [EXTRACTED]
 - [[test_approval_queue_enforced()]] - `contains` [EXTRACTED]
@@ -72,7 +72,7 @@ tags:
 - [[test_webhook_outbound_pipeline_crash_fails_closed()]] - `contains` [EXTRACTED]
 - [[test_webhook_receiver_processes()]] - `contains` [EXTRACTED]
 - [[test_webhook_strips_pii()]] - `contains` [EXTRACTED]
-- [[trust_manager()_3]] - `contains` [EXTRACTED]
+- [[trust_manager()_4]] - `contains` [EXTRACTED]
 - [[trust_manager.py]] - `imports_from` [EXTRACTED]
 - [[webhook_receiver.py]] - `imports_from` [EXTRACTED]
 

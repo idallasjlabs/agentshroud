@@ -12,7 +12,7 @@ tags:
 # test_keyword_heuristic_auto_classifies_unlisted_destructive_tool()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A destructive tool the operator forgot to classify is still caught as high-risk…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]

@@ -12,7 +12,7 @@ tags:
 # test_enforce_unicode_evasion_still_denied()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A fullwidthhomoglyph tool name must not evade the denylistkeyword heuristic.…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]

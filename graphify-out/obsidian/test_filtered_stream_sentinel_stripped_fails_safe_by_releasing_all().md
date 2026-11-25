@@ -15,7 +15,7 @@ tags:
 - [[_aiter()]] - `calls` [EXTRACTED]
 - [[_filtered_sentence_stream()]] - `calls` [EXTRACTED]
 - [[asyncio_26]] - `references` [EXTRACTED]
-- [[process_outbound()_6]] - `contains` [EXTRACTED]
+- [[process_outbound()_1]] - `contains` [EXTRACTED]
 - [[test_forward_stream.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_forward_streampy

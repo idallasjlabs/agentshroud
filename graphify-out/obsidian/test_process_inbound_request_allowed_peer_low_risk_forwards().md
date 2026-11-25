@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[A2AProxy]] - `uses` [INFERRED]
-- [[_StubForwarder_1]] - `references` [EXTRACTED]
-- [[_jsonrpc()]] - `calls` [EXTRACTED]
-- [[asyncio_85]] - `references` [EXTRACTED]
+- [[_StubForwarder_2]] - `references` [EXTRACTED]
+- [[_jsonrpc()_2]] - `calls` [EXTRACTED]
+- [[asyncio_87]] - `references` [EXTRACTED]
 - [[test_a2a_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/A2AProxy

@@ -12,7 +12,7 @@ tags:
 # test_owner_bypasses_approval_but_not_hard_deny()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]

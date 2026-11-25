@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_monitor.py"
 type: "code"
-community: "web_proxy.py"
+community: "EgressEvent"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/web_proxypy
+  - community/EgressEvent
 ---
 
 # test_egress_monitor.py
@@ -29,4 +29,4 @@ tags:
 - [[monitor()]] - `contains` [EXTRACTED]
 - [[monitor_config()_1]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/web_proxypy
+#graphify/code #graphify/EXTRACTED #community/EgressEvent

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "check_command"
+community: "scrub_output"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/scrub_output
 ---
 
 # test_env_guard.py
@@ -19,4 +19,4 @@ tags:
 - [[env_guard.py]] - `imports_from` [EXTRACTED]
 - [[scrub_output()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/scrub_output

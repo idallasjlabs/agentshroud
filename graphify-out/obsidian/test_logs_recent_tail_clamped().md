@@ -12,7 +12,7 @@ tags:
 # test_logs_recent_tail_clamped()
 
 ## Connections
-- [[asyncio_80]] - `references` [EXTRACTED]
+- [[asyncio_81]] - `references` [EXTRACTED]
 - [[tail parameter is clamped to 1-100.]] - `rationale_for` [EXTRACTED]
 - [[test_dashboard_endpoints.py]] - `contains` [EXTRACTED]
 

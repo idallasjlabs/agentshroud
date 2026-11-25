@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[The combined path v1chatcompletions with model=claude- must end up POSTing…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_18]] - `references` [EXTRACTED]
+- [[asyncio_15]] - `references` [EXTRACTED]
 - [[fake_open()]] - `indirect_call` [INFERRED]
 - [[mock_forward()]] - `indirect_call` [INFERRED]
 - [[test_claude_via_openai_path.py]] - `contains` [EXTRACTED]

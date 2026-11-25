@@ -12,7 +12,7 @@ tags:
 # test_invalid_default_action_falls_back_to_deny()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A malformed default_action in YAML must not fail open — it becomes deny.]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]

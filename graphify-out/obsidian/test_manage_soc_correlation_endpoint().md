@@ -12,7 +12,7 @@ tags:
 # test_manage_soc_correlation_endpoint()
 
 ## Connections
-- [[asyncio_51]] - `references` [EXTRACTED]
+- [[asyncio_54]] - `references` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

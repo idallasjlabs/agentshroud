@@ -20,7 +20,7 @@ tags:
 - [[_make_stream()_1]] - `calls` [EXTRACTED]
 - [[_open_conn()_4]] - `contains` [EXTRACTED]
 - [[_open_conn()_3]] - `indirect_call` [INFERRED]
-- [[asyncio_82]] - `references` [EXTRACTED]
+- [[asyncio_83]] - `references` [EXTRACTED]
 - [[check_async()_65]] - `contains` [EXTRACTED]
 - [[test_http_proxy.py]] - `contains` [EXTRACTED]
 

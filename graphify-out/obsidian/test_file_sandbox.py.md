@@ -26,6 +26,6 @@ tags:
 - [[file_sandbox.py]] - `imports_from` [EXTRACTED]
 - [[sandbox()]] - `contains` [EXTRACTED]
 - [[strict_config()_1]] - `contains` [EXTRACTED]
-- [[strict_sandbox()]] - `contains` [EXTRACTED]
+- [[strict_sandbox()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FileSandbox

@@ -12,7 +12,7 @@ tags:
 # test_default_action_allow_lets_unlisted_peers_through_to_risk_tier_check()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]
 - [[A2APolicyConfig]] - `uses` [INFERRED]

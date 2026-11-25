@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_redteam_probes.py"
 type: "code"
-community: "TrustManager"
+community: "test_redteam_probes.py"
 location: "L248"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_redteam_probespy
 ---
 
 # test_encoding_detector_base64_outbound()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[EncodingDetector must detect base64 in outbound responses.]] - `rationale_for` [EXTRACTED]
 - [[_make_full_pipeline()]] - `calls` [EXTRACTED]
-- [[asyncio_42]] - `references` [EXTRACTED]
+- [[asyncio_28]] - `references` [EXTRACTED]
 - [[test_redteam_probes.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_redteam_probespy

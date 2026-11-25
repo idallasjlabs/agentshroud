@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # test_collaborator_responses.py
@@ -39,4 +39,4 @@ tags:
 - [[project()]] - `contains` [EXTRACTED]
 - [[teams()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "test_key_rotation.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/test_key_rotationpy
 ---
 
 # test_key_rotation.py
@@ -25,7 +25,7 @@ tags:
 - [[TestKeyRotationManager]] - `contains` [EXTRACTED]
 - [[TestKeyRotationWorkflow]] - `contains` [EXTRACTED]
 - [[Tests for automated key rotation (R-22)]] - `rationale_for` [EXTRACTED]
-- [[asyncio_8]] - `imports` [EXTRACTED]
+- [[asyncio_55]] - `imports` [EXTRACTED]
 - [[key_rotation.py]] - `imports_from` [EXTRACTED]
 - [[key_rotation_config.py]] - `imports_from` [EXTRACTED]
 - [[require_auth()]] - `imports` [EXTRACTED]
@@ -33,4 +33,4 @@ tags:
 - [[test_credentials_status_endpoint()]] - `contains` [EXTRACTED]
 - [[test_rotate_credential_endpoint()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/test_key_rotationpy

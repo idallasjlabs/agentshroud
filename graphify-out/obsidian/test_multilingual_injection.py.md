@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "TestMultilingualInjection"
+community: "PromptGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestMultilingualInjection
+  - community/PromptGuard
 ---
 
 # test_multilingual_injection.py
@@ -17,4 +17,4 @@ tags:
 - [[Tests for multilingual prompt injection detection.]] - `rationale_for` [EXTRACTED]
 - [[prompt_guard.py_2]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[CVE IDs with 5-digit suffix must also be excluded.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_17]] - `references` [EXTRACTED]
+- [[asyncio_14]] - `references` [EXTRACTED]
 - [[test_us_ssn_regex_tightened.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_us_ssn_regex_tightenedpy

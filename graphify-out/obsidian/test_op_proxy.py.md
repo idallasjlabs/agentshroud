@@ -18,7 +18,7 @@ tags:
 - [[Tests for POST credentialsop-proxy endpoint (P2 credential isolation).]] - `rationale_for` [EXTRACTED]
 - [[_is_op_reference_allowed()]] - `imports` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[client()_16]] - `contains` [EXTRACTED]
+- [[client()_17]] - `contains` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_is_op_reference_allowed

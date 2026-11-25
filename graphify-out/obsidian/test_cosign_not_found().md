@@ -12,7 +12,7 @@ tags:
 # test_cosign_not_found()
 
 ## Connections
-- [[asyncio_78]] - `references` [EXTRACTED]
+- [[asyncio_79]] - `references` [EXTRACTED]
 - [[test_image_verifier.py]] - `contains` [EXTRACTED]
 - [[verify_image()]] - `calls` [EXTRACTED]
 

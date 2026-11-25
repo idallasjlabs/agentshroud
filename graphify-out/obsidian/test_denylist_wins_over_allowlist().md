@@ -12,7 +12,7 @@ tags:
 # test_denylist_wins_over_allowlist()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A server both allowed and denied is denied (deny wins).]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `uses` [INFERRED]
 - [[MCPPolicyConfig]] - `uses` [INFERRED]

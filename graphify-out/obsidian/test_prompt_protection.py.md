@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "run"
+community: "ContextGuard"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/ContextGuard
 ---
 
 # test_prompt_protection.py
@@ -19,4 +19,4 @@ tags:
 - [[prompt_protection.py]] - `imports_from` [EXTRACTED]
 - [[sample_protected_content()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

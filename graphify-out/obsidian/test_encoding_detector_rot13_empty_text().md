@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ws_e_rt2_inbound_encoding.py"
 type: "code"
-community: "test_encoding_detector_decodes_rot13_injection"
+community: "test_ws_e_rt2_inbound_encoding.py"
 location: "L330"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_encoding_detector_decodes_rot13_injection
+  - community/test_ws_e_rt2_inbound_encodingpy
 ---
 
 # test_encoding_detector_rot13_empty_text()
@@ -16,4 +16,4 @@ tags:
 - [[EncodingDetector]] - `calls` [EXTRACTED]
 - [[test_ws_e_rt2_inbound_encoding.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_encoding_detector_decodes_rot13_injection
+#graphify/code #graphify/EXTRACTED #community/test_ws_e_rt2_inbound_encodingpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router.py"
 type: "code"
-community: "AgentTarget"
+community: "asyncio"
 location: "L100"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/asyncio
 ---
 
 # test_health_check_offline_agent()
@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Test health check for offline agent]] - `rationale_for` [EXTRACTED]
 - [[_raise_connect()]] - `indirect_call` [INFERRED]
-- [[asyncio_57]] - `references` [EXTRACTED]
+- [[asyncio_60]] - `references` [EXTRACTED]
 - [[test_router.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/asyncio

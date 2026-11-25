@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/conftest.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L91"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # test_config()
@@ -19,6 +19,6 @@ tags:
 - [[PIIConfig]] - `uses` [INFERRED]
 - [[RouterConfig]] - `uses` [INFERRED]
 - [[conftest.py]] - `contains` [EXTRACTED]
-- [[fixture_66]] - `references` [EXTRACTED]
+- [[fixture_69]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/GatewayConfig
+#graphify/code #graphify/INFERRED #community/ingest_api/configpy

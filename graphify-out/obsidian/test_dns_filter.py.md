@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_filter.py"
 type: "code"
-community: "DNSFilterConfig"
+community: "middleware.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/middlewarepy
 ---
 
 # test_dns_filter.py
@@ -32,4 +32,4 @@ tags:
 - [[strict_config()]] - `contains` [EXTRACTED]
 - [[strict_filter()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

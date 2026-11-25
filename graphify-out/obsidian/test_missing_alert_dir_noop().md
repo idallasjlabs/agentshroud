@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[FalcoAlertWatcher]] - `uses` [INFERRED]
-- [[asyncio_81]] - `references` [EXTRACTED]
+- [[asyncio_82]] - `references` [EXTRACTED]
 - [[test_falco_watcher.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/FalcoAlertWatcher

@@ -16,8 +16,8 @@ tags:
 - [[LLMProxy]] - `uses` [INFERRED]
 - [[_broken_translator()]] - `indirect_call` [INFERRED]
 - [[asyncio_25]] - `references` [EXTRACTED]
-- [[mock_forward()_16]] - `contains` [EXTRACTED]
-- [[mock_forward()_17]] - `indirect_call` [INFERRED]
+- [[mock_forward()_17]] - `contains` [EXTRACTED]
+- [[mock_forward()_18]] - `indirect_call` [INFERRED]
 - [[test_gemini_via_openai_path.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_proxy_gemini_translation_failure_falls_through_gracefully

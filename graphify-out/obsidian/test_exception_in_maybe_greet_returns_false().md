@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Unexpected exception in maybe_greet must be caught and return False.]] - `rationale_for` [EXTRACTED]
 - [[_make_greeter()]] - `calls` [EXTRACTED]
-- [[asyncio_12]] - `references` [EXTRACTED]
+- [[asyncio_11]] - `references` [EXTRACTED]
 - [[test_collaborator_greeter.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_collaborator_greeterpy

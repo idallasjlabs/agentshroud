@@ -22,9 +22,9 @@ tags:
 - [[_plain_msg()]] - `contains` [EXTRACTED]
 - [[_tool_call_msg()]] - `contains` [EXTRACTED]
 - [[_tool_result_msg()]] - `contains` [EXTRACTED]
-- [[manager()_3]] - `contains` [EXTRACTED]
+- [[manager()_2]] - `contains` [EXTRACTED]
 - [[middleware.py_2]] - `imports_from` [EXTRACTED]
-- [[session_manager()_3]] - `contains` [EXTRACTED]
+- [[session_manager()_4]] - `contains` [EXTRACTED]
 - [[session_manager.py]] - `imports_from` [EXTRACTED]
 - [[temp_workspace()]] - `contains` [EXTRACTED]
 

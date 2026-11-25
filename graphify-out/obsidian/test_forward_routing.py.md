@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # test_forward_routing.py
@@ -27,4 +27,4 @@ tags:
 - [[forward.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

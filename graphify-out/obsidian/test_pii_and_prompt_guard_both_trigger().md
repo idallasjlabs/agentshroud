@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_security_integration.py"
 type: "code"
-community: "test_security_integration.py"
+community: "ingest_api/config.py"
 location: "L178"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/ingest_api/configpy
 ---
 
 # test_pii_and_prompt_guard_both_trigger()
 
 ## Connections
 - [[When both PII sanitizer and prompt guard detect issues.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_61]] - `references` [EXTRACTED]
+- [[asyncio_42]] - `references` [EXTRACTED]
 - [[test_security_integration.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

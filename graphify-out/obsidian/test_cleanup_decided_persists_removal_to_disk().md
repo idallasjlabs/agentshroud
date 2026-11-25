@@ -15,7 +15,7 @@ tags:
 - [[ApprovalQueue]] - `uses` [INFERRED]
 - [[ApprovalRequest]] - `uses` [INFERRED]
 - [[SCRUM-110 cleanup_decided() must persist the removal, not just mutate the in-…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_10]] - `references` [EXTRACTED]
+- [[asyncio_9]] - `references` [EXTRACTED]
 - [[test_approval_queue.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

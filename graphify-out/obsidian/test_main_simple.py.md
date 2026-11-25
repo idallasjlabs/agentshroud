@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_simple.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "AgentTarget"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/AgentTarget
 ---
 
 # test_main_simple.py
@@ -16,7 +16,7 @@ tags:
 - [[ApprovalRequest]] - `imports` [EXTRACTED]
 - [[ForwardRequest]] - `imports` [EXTRACTED]
 - [[Simplified unit tests for main.py to achieve 90% coverage Focuses on easily…]] - `rationale_for` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[global_exception_handler()]] - `imports` [EXTRACTED]
 - [[ingest_apimain.py]] - `imports_from` [EXTRACTED]
 - [[ingest_apimodels.py]] - `imports_from` [EXTRACTED]
@@ -39,4 +39,4 @@ tags:
 - [[test_security_headers_middleware_normal_response()]] - `contains` [EXTRACTED]
 - [[test_security_headers_middleware_reraises_non_group()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

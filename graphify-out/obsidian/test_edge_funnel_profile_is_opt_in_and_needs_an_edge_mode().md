@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[The dedicated Funnel node is public exposure, so it never starts by mode alone…]] - `rationale_for` [EXTRACTED]
 - [[_bash()]] - `calls` [EXTRACTED]
-- [[parametrize_32]] - `references` [EXTRACTED]
+- [[parametrize_33]] - `references` [EXTRACTED]
 - [[test_deployment_mode.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_deployment_modepy

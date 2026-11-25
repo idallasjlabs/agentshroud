@@ -15,11 +15,11 @@ tags:
 - [[A real production incident a stalled chunked response from a local model…]] - `rationale_for` [EXTRACTED]
 - [[asyncio_20]] - `references` [EXTRACTED]
 - [[canary()_1]] - `contains` [EXTRACTED]
-- [[close()_1]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_19]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_17]] - `indirect_call` [INFERRED]
+- [[close()]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_18]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_16]] - `indirect_call` [INFERRED]
 - [[make_proxy()_1]] - `calls` [EXTRACTED]
-- [[read()_1]] - `contains` [EXTRACTED]
+- [[read()_2]] - `contains` [EXTRACTED]
 - [[test_llm_proxy_failover.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy

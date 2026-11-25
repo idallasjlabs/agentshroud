@@ -46,6 +46,6 @@ tags:
 - [[format_upstream_cve_alert()]] - `imports` [EXTRACTED]
 - [[list_cve_agents()]] - `imports` [EXTRACTED]
 - [[run_and_send_cve_report()]] - `imports` [EXTRACTED]
-- [[trivy_report.py_2]] - `imports_from` [EXTRACTED]
+- [[trivy_report.py]] - `imports_from` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_daily_cve_reportpy

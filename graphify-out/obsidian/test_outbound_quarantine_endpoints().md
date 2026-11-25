@@ -12,7 +12,7 @@ tags:
 # test_outbound_quarantine_endpoints()
 
 ## Connections
-- [[asyncio_51]] - `references` [EXTRACTED]
+- [[asyncio_54]] - `references` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy

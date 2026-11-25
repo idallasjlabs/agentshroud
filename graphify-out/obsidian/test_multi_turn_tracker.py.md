@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_multi_turn_tracker.py"
 type: "code"
-community: "multi_turn_tracker.py"
+community: "MultiTurnTracker"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/multi_turn_trackerpy
+  - community/MultiTurnTracker
 ---
 
 # test_multi_turn_tracker.py
@@ -22,4 +22,4 @@ tags:
 - [[multi_turn_tracker()]] - `contains` [EXTRACTED]
 - [[multi_turn_tracker.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/multi_turn_trackerpy
+#graphify/code #graphify/EXTRACTED #community/MultiTurnTracker

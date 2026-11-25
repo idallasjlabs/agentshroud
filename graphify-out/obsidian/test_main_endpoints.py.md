@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_main_endpoints.py"
 type: "code"
-community: "ingest_api/main.py"
+community: "app"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ingest_api/mainpy
+  - community/app
 ---
 
 # test_main_endpoints.py
@@ -30,7 +30,7 @@ tags:
 - [[TestStatusEndpoint]] - `contains` [EXTRACTED]
 - [[TestStreamingProxyStatusPropagation]] - `contains` [EXTRACTED]
 - [[auth_dep()]] - `imports` [EXTRACTED]
-- [[fastapi_4]] - `imports_from` [EXTRACTED]
+- [[fastapi_1]] - `imports_from` [EXTRACTED]
 - [[health.py]] - `imports_from` [EXTRACTED]
 - [[hermes_dashboard_proxy()]] - `imports` [EXTRACTED]
 - [[hermes_dashboard_ws_proxy()]] - `imports` [EXTRACTED]
@@ -38,4 +38,4 @@ tags:
 - [[middleware.py_2]] - `imports_from` [EXTRACTED]
 - [[receive_security_alert()]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy
+#graphify/code #graphify/EXTRACTED #community/app

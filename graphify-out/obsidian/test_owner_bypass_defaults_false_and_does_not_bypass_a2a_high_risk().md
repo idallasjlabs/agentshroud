@@ -12,7 +12,7 @@ tags:
 # test_owner_bypass_defaults_false_and_does_not_bypass_a2a_high_risk()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2A peers are never equivalent to the human operator — unlike MCP, owner_bypass…]] - `rationale_for` [EXTRACTED]
 - [[A2AMethod]] - `uses` [INFERRED]
 - [[A2APolicyAction]] - `uses` [INFERRED]

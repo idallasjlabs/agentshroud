@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_ledger.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # test_initialize_is_idempotent()
@@ -15,7 +15,7 @@ tags:
 - [[DataLedger]] - `uses` [INFERRED]
 - [[LedgerConfig]] - `uses` [INFERRED]
 - [[Re-initializing must not orphan the first aiosqlite connection. aiosqlite…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_39]] - `references` [EXTRACTED]
+- [[asyncio_41]] - `references` [EXTRACTED]
 - [[test_ledger.py]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

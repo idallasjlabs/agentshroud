@@ -12,9 +12,9 @@ tags:
 # test_manage_egress_pending_endpoint_includes_summary()
 
 ## Connections
-- [[asyncio_51]] - `references` [EXTRACTED]
+- [[asyncio_54]] - `references` [EXTRACTED]
 - [[cleanup_expired()]] - `contains` [EXTRACTED]
-- [[get_pending_requests()_1]] - `contains` [EXTRACTED]
+- [[get_pending_requests()]] - `contains` [EXTRACTED]
 - [[test_soc_egress_endpoints.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_egress_endpointspy
