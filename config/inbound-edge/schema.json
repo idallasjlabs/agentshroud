@@ -44,7 +44,8 @@
         "per_vendor_per_minute": {"type": "integer", "minimum": 1, "maximum": 1200},
         "max_concurrency": {"type": "integer", "minimum": 1, "maximum": 32},
         "daily_calls": {"type": "integer", "minimum": 1, "maximum": 100000},
-        "daily_delegations": {"type": "integer", "minimum": 0, "maximum": 1000}
+        "daily_delegations": {"type": "integer", "minimum": 0, "maximum": 1000},
+        "daily_vault_writes": {"type": "integer", "minimum": 0, "maximum": 500}
       }
     },
     "dlp": {

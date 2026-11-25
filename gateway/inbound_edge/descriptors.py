@@ -51,6 +51,180 @@ _MULTI_LINE = "^[^\\u0000-\\u0008\\u000b-\\u001f\\u007f]+(?![\\s\\S])"
 # secrets.token_urlsafe(32) — the format approval tickets are minted in.
 _TICKET = {"type": "string", "pattern": "^[A-Za-z0-9_-]{43}$", "maxLength": 43}
 
+# ── Obsidian vault "Tasks and Projects" (ObsidianVault facade) ─────────────
+# Callers name a note by enum + title only; the facade builds the vault path.
+# A title is one line of letters, digits, space and -_.() (≤120), never "..",
+# never a leading/trailing dot or space and never ending in ".sync" in any case
+# (sync-owned notes are <name>.sync.md, and macOS volumes are case-insensitive).
+_TITLE = {
+    "type": "string",
+    "minLength": 1,
+    "maxLength": 120,
+    "pattern": (
+        "^(?![ .])(?![\\s\\S]*\\.\\.)(?![\\s\\S]*[ .](?![\\s\\S]))"
+        "(?![\\s\\S]*\\.[sS][yY][nN][cC](?![\\s\\S]))[A-Za-z0-9 _.()-]+(?![\\s\\S])"
+    ),
+}
+_DATE = {
+    "type": "string",
+    "maxLength": 10,
+    "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(?![\\s\\S])",
+}
+PERSONAL_PROJECTS = (
+    "llm-settings",
+    "local-llms",
+    "gtd",
+    "ha",
+    "agentshroud",
+    "omarchy",
+    "safari-agent",
+    "homeassistant",
+    "feeds",
+    "pke",
+    "mac-perf-analysis",
+    "shortcuts-playground",
+    "coe",
+    "obsidian",
+)
+WORK_PROJECTS = (
+    "ai-diagnostics-ot",
+    "services-data-lake",
+    "tenable-cloud-security",
+    "nessus-pro",
+    "azure-arc",
+)
+_PROJECT = {"type": "string", "enum": [*PERSONAL_PROJECTS, *WORK_PROJECTS]}
+VAULT_READ_FOLDERS = (
+    "00 Inbox",
+    "01 GTD/Personal",
+    "01 GTD/Work",
+    "30 Resources",
+    "40 Journal/Daily",
+    "40 Journal/Weekly",
+    "90 Templates",
+    "99 Archive",
+    "root",
+)
+VAULT_NOTE_FOLDERS = ("00 Inbox", "30 Resources", "40 Journal/Daily", "40 Journal/Weekly")
+_APPROVAL_NOTE = (
+    " Needs the owner's approval: the first call returns an approval ticket; repeat "
+    "the identical call with that ticket once it is approved."
+)
+
+
+def _vault_write(description: str, required: list, properties: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "version": "1.0.0",
+        "access": "write",
+        # Counted against the vendor's daily_vault_writes, not daily_delegations.
+        "write_budget": "vault_writes",
+        "description": description + _APPROVAL_NOTE,
+        "inputSchema": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": required,
+            "properties": {**properties, "approval_ticket": _TICKET},
+        },
+    }
+
+
+def _vault_read(description: str, required: list, properties: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "version": "1.0.0",
+        "access": "read",
+        "description": description,
+        "inputSchema": {
+            "type": "object",
+            "additionalProperties": False,
+            "required": required,
+            "properties": properties,
+        },
+    }
+
+
+def _text(max_length: int) -> Dict[str, Any]:
+    return {"type": "string", "minLength": 1, "maxLength": max_length, "pattern": _MULTI_LINE}
+
+
+VAULT_TOOL_DESCRIPTORS: Dict[str, Dict[str, Any]] = {
+    "vault_search": _vault_read(
+        "Search the owner's Obsidian vault 'Tasks and Projects'. Returns note "
+        "titles, folders and a short snippet per match.",
+        ["query"],
+        {
+            "query": {"type": "string", "minLength": 1, "maxLength": 256, "pattern": _SINGLE_LINE},
+            "max_results": {"type": "integer", "enum": [5, 10, 20]},
+        },
+    ),
+    "vault_read": _vault_read(
+        "Read one note from the owner's Obsidian vault by folder and title.",
+        ["folder", "title"],
+        {"folder": {"type": "string", "enum": list(VAULT_READ_FOLDERS)}, "title": _TITLE},
+    ),
+    "vault_project": _vault_read(
+        "Read a project's hub note, its sync-generated status note, or both.",
+        ["project"],
+        {"project": _PROJECT, "part": {"type": "string", "enum": ["hub", "sync", "both"]}},
+    ),
+    "vault_tasks": _vault_read(
+        "List open tasks (unchecked '- [ ]' lines) from the vault by scope.",
+        ["scope"],
+        {
+            "scope": {
+                "type": "string",
+                "enum": ["inbox", "today", "overdue", "work", "personal"],
+            }
+        },
+    ),
+    "vault_inbox_add": _vault_write(
+        "Append text to the vault inbox note (00 Inbox/Inbox.md).",
+        ["text"],
+        {"text": _text(2000)},
+    ),
+    "vault_note_create": _vault_write(
+        "Create a new note in an allowed vault folder. Fails if the note exists.",
+        ["folder", "title", "body"],
+        {
+            "folder": {"type": "string", "enum": list(VAULT_NOTE_FOLDERS)},
+            "title": _TITLE,
+            "body": _text(8000),
+        },
+    ),
+    "vault_project_add_task": _vault_write(
+        "Add an open task, with an optional due date, under '## Tasks' in a project hub note.",
+        ["project", "task"],
+        {
+            "project": _PROJECT,
+            "task": {"type": "string", "minLength": 1, "maxLength": 300, "pattern": _SINGLE_LINE},
+            "due": _DATE,
+        },
+    ),
+    "vault_project_append": _vault_write(
+        "Append text under the Tasks, Grooming or Notes heading of a project hub note.",
+        ["project", "heading", "text"],
+        {
+            "project": _PROJECT,
+            "heading": {"type": "string", "enum": ["Tasks", "Grooming", "Notes"]},
+            "text": _text(4000),
+        },
+    ),
+    "vault_journal_append": _vault_write(
+        "Append text to the daily journal note for a date, creating the note if missing.",
+        ["date", "text"],
+        {"date": _DATE, "text": _text(4000)},
+    ),
+    "vault_project_archive": _vault_write(
+        "Move a project's folder into '99 Archive'.",
+        ["project"],
+        {"project": _PROJECT},
+    ),
+    "vault_note_delete": _vault_write(
+        "Delete one note from an allowed vault folder (moved to the trash).",
+        ["folder", "title"],
+        {"folder": {"type": "string", "enum": list(VAULT_NOTE_FOLDERS)}, "title": _TITLE},
+    ),
+}
+
 TOOL_DESCRIPTORS: Dict[str, Dict[str, Any]] = {
     "lab_search": {
         "version": "1.0.0",
@@ -114,6 +288,7 @@ TOOL_DESCRIPTORS: Dict[str, Dict[str, Any]] = {
             },
         },
     },
+    **VAULT_TOOL_DESCRIPTORS,
 }
 
 

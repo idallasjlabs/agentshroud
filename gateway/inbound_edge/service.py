@@ -21,18 +21,27 @@ Environment:
     AGENTSHROUD_EDGE_HERMES_URL     default http://${HERMES_API_HOST_UPSTREAM}:8642
     AGENTSHROUD_EDGE_HERMES_PROFILE default edge-delegate (tool hidden unless set to on)
     AGENTSHROUD_EDGE_DELEGATE       "1" once the edge-delegate Hermes profile is seeded
-Secrets: edge_signing_key (EC P-256 PEM), edge_gateway_token, hermes_api_key.
+    AGENTSHROUD_EDGE_OBSIDIAN_URL   Obsidian Local REST API (HTTP), e.g.
+                                    http://host.docker.internal:27123; local hosts only
+    AGENTSHROUD_EDGE_OBSIDIAN_KEY   its API key, set per host in docker/.env (never in
+                                    the repo); a mounted obsidian_api_key secret wins.
+                                    The vault_* tools are hidden unless URL and key are set.
+Secrets: edge_signing_key (EC P-256 PEM), edge_gateway_token, hermes_api_key,
+optional obsidian_api_key.
 """
 
 import base64
 import hmac
+import ipaddress
 import logging
 import os
 import secrets
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Optional
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 import httpx
 
@@ -40,7 +49,7 @@ from gateway.inbound_edge.approvals import EdgeApprovals
 from gateway.inbound_edge.call_pipeline import EdgeCallPipeline, EdgeDeps
 from gateway.inbound_edge.descriptors import verify_shipped_descriptors
 from gateway.inbound_edge.edge_jwt import TokenService
-from gateway.inbound_edge.facades import HermesDelegate, LabSearch, PkeStatus
+from gateway.inbound_edge.facades import HermesDelegate, LabSearch, ObsidianVault, PkeStatus
 from gateway.inbound_edge.oauth_service import EdgeOAuthService, derive_seal_key
 from gateway.inbound_edge.profiles import VendorProfile, load_profiles
 from gateway.inbound_edge.store import EdgeStore
@@ -91,6 +100,53 @@ def _searxng_proxy(url: str, egress_proxy: Optional[str]) -> Optional[str]:
     if host and "." not in host and ":" not in host and host != "localhost":
         return None
     return egress_proxy
+
+
+_OBSIDIAN_LOCAL_HOSTS = {"host.docker.internal", "localhost"}
+
+
+def _obsidian_url(url: str) -> Optional[str]:
+    """The Obsidian base URL if it names a local service, else ``None`` (tools hidden).
+
+    The vault hop goes direct, not through the egress proxy: that proxy only does
+    CONNECT, so a plain-HTTP request through it fails, as for SearXNG. Going direct
+    is only safe because the target is pinned to local hosts here: plain http, no
+    credentials in the URL, no path, and a host that is host.docker.internal,
+    localhost, a single-label container name or a loopback/private IP literal. A
+    public name or address is refused, so the Bearer key cannot be sent off-box by
+    a mistyped setting.
+    """
+    try:
+        parsed = urlparse(url.strip())
+        port = parsed.port
+    except ValueError:
+        return None
+    host = (parsed.hostname or "").lower()
+    if parsed.scheme != "http" or not host or port is None:
+        return None
+    if parsed.username or parsed.password or parsed.path not in ("", "/"):
+        return None
+    if parsed.query or parsed.fragment:
+        return None
+    if host in _OBSIDIAN_LOCAL_HOSTS:
+        return f"http://{host}:{port}"
+    try:
+        ip = ipaddress.ip_address(host)
+    except ValueError:
+        # Not an IP: only a single-label (container) name is local.
+        return f"http://{host}:{port}" if "." not in host else None
+    if ip.is_unspecified or not (ip.is_loopback or ip.is_private):
+        return None
+    return f"http://{ip.compressed if ip.version == 4 else f'[{ip.compressed}]'}:{port}"
+
+
+def _obsidian_today(tz_name: str):
+    """'Today' for vault_tasks in the owner's timezone (GATEWAY_TZ)."""
+    try:
+        tz = ZoneInfo(tz_name)
+    except (ZoneInfoNotFoundError, ValueError):
+        tz = ZoneInfo("UTC")
+    return lambda: datetime.now(tz).date()
 
 
 def _read_secret_blob(name: str) -> bytes:
@@ -168,6 +224,27 @@ async def build_edge_service(app_state: Any) -> Optional[EdgeService]:
                 EnvelopeSigner(),
             )
             local_agents.add("hermes")
+    obsidian_raw = os.environ.get("AGENTSHROUD_EDGE_OBSIDIAN_URL", "").strip()
+    obsidian_key = (
+        _read_secret_blob("obsidian_api_key").decode().strip()
+        or os.environ.get("AGENTSHROUD_EDGE_OBSIDIAN_KEY", "").strip()
+    )
+    if obsidian_raw and obsidian_key:
+        obsidian_url = _obsidian_url(obsidian_raw)
+        if obsidian_url is None:
+            logger.critical(
+                "Obsidian vault tools NOT offered: AGENTSHROUD_EDGE_OBSIDIAN_URL must be "
+                "http://<local host>:<port> (host.docker.internal, localhost, a container "
+                "name or a private IP)"
+            )
+        else:
+            vault = ObsidianVault(
+                obsidian_url,
+                obsidian_key,
+                EnvelopeSigner(),
+                today=_obsidian_today(os.environ.get("GATEWAY_TZ", "UTC")),
+            )
+            facades.update(vault.facades())
 
     pipeline_state = getattr(app_state, "pipeline", None)
     tripwire = getattr(pipeline_state, "canary_tripwire", None)

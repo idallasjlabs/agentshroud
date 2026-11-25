@@ -109,6 +109,9 @@ class TestFailClosed:
             # The Slack/Teams chat bridge (SCRUM-220) is not built: an enabled
             # chat-bridge vendor must refuse, not load and silently do nothing.
             ({"connection": "chat-bridge"}, "chat-bridge.*not implemented"),
+            ({"limits__daily_vault_writes": -1}, "daily_vault_writes"),
+            ({"limits__daily_vault_writes": 501}, "daily_vault_writes"),
+            ({"tools__vault_note_delete": "read"}, "declared write"),
         ],
     )
     def test_invalid_profile_refuses_to_load(self, tmp_path, changes, match):
@@ -193,6 +196,24 @@ class TestShippedProfiles:
         prof = p.load_profiles(p.VENDORS_DIR)["claude-duet"]
         assert "https://claude.ai/api/mcp/auth_callback" in prof.redirect_uris
         assert "https://claude.com/api/mcp/auth_callback" in prof.redirect_uris
+
+    def test_daily_vault_writes_defaults_to_zero(self, tmp_path):
+        assert p.load_profiles(_write(tmp_path, BASE))["test-vendor"].daily_vault_writes == 0
+        data = _variant(limits__daily_vault_writes=7)
+        assert p.load_profiles(_write(tmp_path, data))["test-vendor"].daily_vault_writes == 7
+
+    def test_claude_duet_lists_the_vault_tools_and_stays_disabled(self):
+        prof = p.load_profiles(p.VENDORS_DIR)["claude-duet"]
+        assert prof.enabled is False
+        vault = {t: a for t, a in prof.tools.items() if t.startswith("vault_")}
+        assert sorted(t for t, a in vault.items() if a == "read") == [
+            "vault_project",
+            "vault_read",
+            "vault_search",
+            "vault_tasks",
+        ]
+        assert len([a for a in vault.values() if a == "write"]) == 7
+        assert prof.daily_vault_writes == 0 and prof.daily_delegations == 20  # reads-first pilot
 
     def test_delegate_is_write_everywhere(self):
         for vendor, prof in p.load_profiles(p.VENDORS_DIR).items():

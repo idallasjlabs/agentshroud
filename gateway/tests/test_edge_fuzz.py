@@ -262,3 +262,113 @@ async def test_edge_guard_allowlist_holds_even_if_inner_app_serves_everything():
             assert (await c.get(path)).status_code == 404, path
         for path in ("/mcp", "/healthz", "/.well-known/oauth-authorization-server"):
             assert (await c.get(path)).status_code == 200, path
+
+
+# ── Obsidian vault tools ────────────────────────────────────────────────────
+
+_VAULT_ENUM_FIELDS = [
+    ("vault_read", "folder", {"title": "x"}),
+    ("vault_note_create", "folder", {"title": "x", "body": "b"}),
+    ("vault_note_delete", "folder", {"title": "x"}),
+    ("vault_project", "project", {}),
+    ("vault_project", "part", {"project": "pke"}),
+    ("vault_tasks", "scope", {}),
+    ("vault_project_append", "heading", {"project": "pke", "text": "t"}),
+    ("vault_project_archive", "project", {}),
+    ("vault_project_add_task", "project", {"task": "t"}),
+]
+
+
+@pytest.mark.parametrize("tool,field,rest", _VAULT_ENUM_FIELDS)
+@FUZZ
+@given(value=st.one_of(st.text(max_size=40), st.integers(), st.none()))
+def test_vault_enums_closed(tool, field, rest, value):
+    enum = TOOL_DESCRIPTORS[tool]["inputSchema"]["properties"][field]["enum"]
+    if value in enum:
+        return
+    assert not VALIDATORS[tool].is_valid({**rest, field: value})
+
+
+@FUZZ
+@given(title=st.text(max_size=140))
+def test_vault_title_schema_and_facade_agree(title):
+    """Whatever passes the schema also passes the facade's own re-check, and never
+    contains a separator, a traversal or a sync suffix."""
+    from gateway.inbound_edge.facades import VAULT_TITLE_RE
+
+    ok = VALIDATORS["vault_read"].is_valid({"folder": "root", "title": title})
+    assert ok == bool(VAULT_TITLE_RE.fullmatch(title))
+    if ok:
+        assert "/" not in title and "\\" not in title and ".." not in title
+        assert not title.lower().endswith(".sync") and not title.startswith(".")
+
+
+@FUZZ
+@given(payload=SHELLISH, title=st.sampled_from(["Note", "a..b", "../x", "x.sync", "x/y"]))
+def test_vault_title_never_carries_shell_or_paths(payload, title):
+    assert not VALIDATORS["vault_read"].is_valid({"folder": "root", "title": payload})
+    assert VALIDATORS["vault_read"].is_valid({"folder": "root", "title": title}) == (
+        title == "Note"
+    )
+
+
+@FUZZ
+@given(value=st.text(max_size=12))
+def test_vault_dates(value):
+    import re
+
+    valid = VALIDATORS["vault_journal_append"].is_valid({"date": value, "text": "t"})
+    shape = re.fullmatch(r"[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])", value)
+    assert valid == bool(shape)
+
+
+@FUZZ
+@given(
+    task=st.text(min_size=1, max_size=40),
+    ctrl=st.sampled_from(["\x00", "\x07", "\x1b", "\x7f", "\n", "\r"]),
+)
+def test_vault_single_line_fields_reject_control_chars(task, ctrl):
+    assert not VALIDATORS["vault_project_add_task"].is_valid(
+        {"project": "pke", "task": task + ctrl}
+    )
+    assert not VALIDATORS["vault_search"].is_valid({"query": task + ctrl})
+
+
+@FUZZ
+@given(suffix=st.text(max_size=50))
+def test_vault_body_length_cap(suffix):
+    text = "x" * 8001 + suffix
+    assert not VALIDATORS["vault_note_create"].is_valid(
+        {"folder": "00 Inbox", "title": "x", "body": text}
+    )
+
+
+@FUZZ
+@given(
+    payload=SHELLISH,
+    prefix=st.text(max_size=20).filter(lambda s: all(ord(c) > 31 and c != "\x7f" for c in s)),
+)
+async def test_vault_shellish_text_is_stored_inert_and_never_executes(no_exec, payload, prefix):
+    from types import SimpleNamespace
+
+    from gateway.inbound_edge.facades import ObsidianVault
+    from gateway.security.instruction_envelope import EnvelopeSigner
+
+    stored = {}
+
+    def handler(request):
+        if request.method == "GET":
+            return httpx.Response(404)
+        stored["body"] = request.content.decode()
+        return httpx.Response(204)
+
+    vault = ObsidianVault(
+        "http://h:27123", "k", EnvelopeSigner(key=b"k" * 32), transport=httpx.MockTransport(handler)
+    )
+    call = SimpleNamespace(request_id="r", principal=SimpleNamespace(vendor="claude-duet"))
+    out = await vault.run_tool("vault_inbox_add", {"text": (prefix + payload)[:2000]}, call)
+    assert out["ok"]
+    body = stored["body"]
+    assert "UNTRUSTED_THIRD_PARTY_CONTENT" in body
+    inner = body.split(">>>\n", 1)[1]
+    assert "`" not in inner and "<%" not in inner

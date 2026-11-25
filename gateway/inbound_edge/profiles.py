@@ -68,6 +68,9 @@ class VendorProfile:
     dlp_min_confidence: float
     max_response_bytes: int
     source_networks: Tuple[ipaddress._BaseNetwork, ...] = field(default=())
+    # Approved Obsidian vault writes per day (vault_* write tools). Optional in the
+    # YAML; 0 (the default) means a profile must opt in to any vault write.
+    daily_vault_writes: int = 0
     allowed_hours: Optional[Tuple[time, time, ZoneInfo]] = None
     # How the hosted agent reaches AgentShroud: "mcp" (this edge) or "chat-bridge"
     # (Slack/Teams, SCRUM-220). "support" records whether the vendor documents
@@ -174,6 +177,7 @@ def _parse(path: Path, data: object, validator: jsonschema.Draft202012Validator)
         max_concurrency=limits["max_concurrency"],
         daily_calls=limits["daily_calls"],
         daily_delegations=limits["daily_delegations"],
+        daily_vault_writes=limits.get("daily_vault_writes", 0),
         dlp_mode=dlp["mode"],
         dlp_min_confidence=float(dlp["min_confidence"]),
         max_response_bytes=data["max_response_bytes"],

@@ -60,6 +60,13 @@ logger = logging.getLogger("agentshroud.inbound_edge.call_pipeline")
 # Per-tool response caps on top of the vendor's max_response_bytes.
 TOOL_RESPONSE_CAPS = {"lab_search": 65_536}
 VENDOR_DISABLE_AFTER_SUSPENDED_CLIENTS = 2
+# Approved writes count against a per-vendor daily budget. The descriptor (signed)
+# names the budget; Obsidian vault writes have their own so they cannot exhaust,
+# or be hidden inside, the Hermes delegation budget.
+_BUDGET_DENIALS = {
+    "delegations": "daily delegation budget exhausted",
+    "vault_writes": "daily vault write budget exhausted",
+}
 # Denials that count towards the principal's lockdown level.
 _STRIKES = {"prompt_injection", "schema", "tool_not_permitted", "rate_limited", "canary", "dlp"}
 _LADDER = {
@@ -300,8 +307,9 @@ class EdgeCallPipeline:
         if TOOL_DESCRIPTORS[tool]["access"] == "write":
             if _rank(level) >= _rank(LockdownLevel.ESCALATED):
                 raise _Denied("writes_disabled", "writes disabled by lockdown")
-            if self._daily[(profile.vendor, day, "delegations")] >= profile.daily_delegations:
-                raise _Denied("budget", "daily delegation budget exhausted")
+            budget = _write_budget(tool)
+            if self._daily[(profile.vendor, day, budget)] >= getattr(profile, f"daily_{budget}"):
+                raise _Denied("budget", _BUDGET_DENIALS[budget])
         if self._inflight[profile.vendor] >= profile.max_concurrency:
             raise _Denied("concurrency", "concurrency limit reached")
         self._daily[(profile.vendor, day, "calls")] += 1
@@ -449,7 +457,7 @@ class EdgeCallPipeline:
                     raise _Denied("approval", f"approval: {exc}")
                 rec["approval"] = {"decision": "approved"}
                 day = time.strftime("%Y-%m-%d", time.gmtime(self.d.clock()))
-                self._daily[(profile.vendor, day, "delegations")] += 1
+                self._daily[(profile.vendor, day, _write_budget(name))] += 1
                 arguments = {k: v for k, v in arguments.items() if k != "approval_ticket"}
 
             result = await facade.run(arguments, call)
@@ -558,6 +566,13 @@ class EdgeCallPipeline:
             )
         except Exception as exc:
             logger.error("edge event emit failed: %s", exc)
+
+
+def _write_budget(tool: str) -> str:
+    budget = TOOL_DESCRIPTORS[tool].get("write_budget", "delegations")
+    if budget not in _BUDGET_DENIALS:  # fail closed on a descriptor naming no known budget
+        raise _Denied("budget", f"unknown write budget {budget!r}")
+    return budget
 
 
 def _rank(level: LockdownLevel) -> int:
