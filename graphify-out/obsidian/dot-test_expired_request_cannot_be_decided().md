@@ -15,6 +15,6 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Expired request raises ValueError on decide.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalTimeout]] - `method` [EXTRACTED]
-- [[asyncio_47]] - `references` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

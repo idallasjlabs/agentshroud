@@ -12,7 +12,7 @@ tags:
 # .test_five_zero_failures_fresh_report()
 
 ## Connections
-- [[TestScoreComplianceAuditing_1]] - `method` [EXTRACTED]
+- [[TestScoreComplianceAuditing]] - `method` [EXTRACTED]
 - [[_mock_dir_with_fresh_files()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_mock_dir_with_fresh_files

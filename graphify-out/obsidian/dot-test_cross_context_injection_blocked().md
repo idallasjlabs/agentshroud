@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L181"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # .test_cross_context_injection_blocked()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Injecting a system-level override via a follow-up message is blocked.]] - `rationale_for` [EXTRACTED]
 - [[TestE2E04ContextGuardBlocking]] - `method` [EXTRACTED]
-- [[asyncio_9]] - `references` [EXTRACTED]
+- [[asyncio_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

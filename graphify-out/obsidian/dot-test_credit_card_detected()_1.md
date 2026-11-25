@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_mcp_proxy.py"
+source_file: "gateway/tests/test_file_sandbox.py"
 type: "code"
-community: "TestInjectionDetection"
-location: "L195"
+community: "FileSandbox"
+location: "L123"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/FileSandbox
 ---
 
 # .test_credit_card_detected()
 
 ## Connections
-- [[TestPIIDetection_1]] - `method` [EXTRACTED]
+- [[PIIScanner]] - `calls` [EXTRACTED]
+- [[TestPIIScanning]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

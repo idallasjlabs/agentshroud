@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "KeyVault"
 location: "L709"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/KeyVault
 ---
 
 # .test_different_plaintexts_different_ciphertexts()
@@ -15,4 +15,4 @@ tags:
 - [[Same plaintext encrypted twice should produce different ciphertext (random IV).]] - `rationale_for` [EXTRACTED]
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/KeyVault

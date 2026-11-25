@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_round2_hardening.py"
 type: "code"
-community: "TestEgressFilterConfig"
+community: "EgressFilterConfig"
 location: "L83"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilterConfig
+  - community/EgressFilterConfig
 ---
 
 # .test_from_environment_defaults_to_enforce()
@@ -15,4 +15,4 @@ tags:
 - [[dot-from_environment()]] - `calls` [EXTRACTED]
 - [[TestEgressConfigDefaultEnforce]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

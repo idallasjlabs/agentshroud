@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_path_isolation.py"
 type: "code"
-community: "PathIsolationManager"
+community: "ContextGuard"
 location: "L34"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/ContextGuard
 ---
 
 # .test_custom_config()
@@ -16,4 +16,4 @@ tags:
 - [[Test custom configuration values.]] - `rationale_for` [EXTRACTED]
 - [[TestPathIsolationConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "asyncio"
+community: "_make_sanitizer"
 location: "L2557"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/asyncio
+  - community/_make_sanitizer
 ---
 
 # .test_embedded_tool_call_json_is_removed_from_text()
@@ -15,6 +15,6 @@ tags:
 - [[If tool-call JSON is embedded in prose, strip JSON block before delivery.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/asyncio
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_regressions_v1_2.py"
 type: "code"
-community: "test_security_regressions_v1_2.py"
+community: "TestHermesEgressAllowlist"
 location: "L497"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_regressions_v1_2py
+  - community/TestHermesEgressAllowlist
 ---
 
 # .test_failover_search_engines_in_allowlist()
@@ -15,4 +15,4 @@ tags:
 - [[PR190 failover search engines must be allowlisted.]] - `rationale_for` [EXTRACTED]
 - [[TestHermesEgressAllowlist]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_regressions_v1_2py
+#graphify/code #graphify/EXTRACTED #community/TestHermesEgressAllowlist

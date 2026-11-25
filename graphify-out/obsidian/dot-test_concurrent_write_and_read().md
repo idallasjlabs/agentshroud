@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Concurrent writes and reads don't conflict.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentWrites]] - `method` [EXTRACTED]
-- [[asyncio_36]] - `references` [EXTRACTED]
+- [[asyncio_38]] - `references` [EXTRACTED]
 - [[read()_5]] - `contains` [EXTRACTED]
 - [[write()]] - `contains` [EXTRACTED]
 

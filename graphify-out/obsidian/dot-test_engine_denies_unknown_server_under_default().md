@@ -12,7 +12,7 @@ tags:
 # .test_engine_denies_unknown_server_under_default()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]
 - [[The synthesised default, fed to the engine, DENIES an unknown server.]] - `rationale_for` [EXTRACTED]

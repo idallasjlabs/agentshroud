@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_scanner_integration.py"
 type: "code"
-community: "_score_image_integrity"
+community: "aggregate_results"
 location: "L634"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_score_image_integrity
+  - community/aggregate_results
 ---
 
 # .test_four_when_sbom_and_clean_trivy()
@@ -16,4 +16,4 @@ tags:
 - [[_score_image_integrity()]] - `calls` [EXTRACTED]
 - [[_trivy_clean()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_score_image_integrity
+#graphify/code #graphify/EXTRACTED #community/aggregate_results

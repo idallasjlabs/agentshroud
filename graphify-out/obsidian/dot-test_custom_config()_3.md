@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "ToolResultSanitizerConfig"
+community: "ToolResultSanitizer"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultSanitizerConfig
+  - community/ToolResultSanitizer
 ---
 
 # .test_custom_config()
@@ -16,4 +16,4 @@ tags:
 - [[TestToolResultSanitizerConfig]] - `method` [EXTRACTED]
 - [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizerConfig
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

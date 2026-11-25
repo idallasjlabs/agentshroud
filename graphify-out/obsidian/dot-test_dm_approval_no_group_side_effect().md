@@ -15,6 +15,6 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[DM approval must not send any message to a group chat ID.]] - `rationale_for` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `method` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

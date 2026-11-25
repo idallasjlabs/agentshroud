@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_heuristic_classifier.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "normalize_input"
-location: "L85"
+community: "DNSBlocklist"
+location: "L131"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/DNSBlocklist
 ---
 
 # .test_empty_text()
 
 ## Connections
-- [[TestHeuristicClassifier]] - `method` [EXTRACTED]
+- [[TestLoadFromText]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/DNSBlocklist

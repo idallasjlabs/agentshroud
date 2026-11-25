@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L514"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # .test_email_content_scanning()
@@ -19,7 +19,7 @@ tags:
 - [[Test scanning email content for sensitive data]] - `rationale_for` [EXTRACTED]
 - [[TestRealWorldScenarios]] - `method` [EXTRACTED]
 - [[ToolResultPIIConfig]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizer_1]] - `calls` [EXTRACTED]
-- [[asyncio_45]] - `references` [EXTRACTED]
+- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
+- [[asyncio_46]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

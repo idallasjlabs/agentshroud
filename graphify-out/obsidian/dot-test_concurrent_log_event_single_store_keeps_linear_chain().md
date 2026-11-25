@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
-community: ".test_concurrent_log_event_two_connections_keeps_linear_chain"
+community: "test_audit_export.py"
 location: "L411"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_concurrent_log_event_two_connections_keeps_linear_chain
+  - community/test_audit_exportpy
 ---
 
 # .test_concurrent_log_event_single_store_keeps_linear_chain()
@@ -16,6 +16,6 @@ tags:
 - [[TestAuditStoreConcurrentAppend]] - `method` [EXTRACTED]
 - [[_assert_linear_chain()]] - `calls` [EXTRACTED]
 - [[_chain_rows()]] - `calls` [EXTRACTED]
-- [[asyncio_79]] - `references` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_concurrent_log_event_two_connections_keeps_linear_chain
+#graphify/code #graphify/EXTRACTED #community/test_audit_exportpy

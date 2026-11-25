@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_guard.py"
 type: "code"
-community: "prompt_guard.py"
+community: "PromptGuard"
 location: "L200"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/prompt_guardpy
+  - community/PromptGuard
 ---
 
 # .test_explicit_key_used()
@@ -15,4 +15,4 @@ tags:
 - [[Explicit key parameter should override session key.]] - `rationale_for` [EXTRACTED]
 - [[TestSystemPromptHMAC]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/prompt_guardpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

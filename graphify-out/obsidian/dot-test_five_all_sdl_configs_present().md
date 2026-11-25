@@ -12,6 +12,6 @@ tags:
 # .test_five_all_sdl_configs_present()
 
 ## Connections
-- [[TestScoreSecureDevelopment]] - `method` [EXTRACTED]
+- [[TestScoreSecureDevelopment_1]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreSecureDevelopment

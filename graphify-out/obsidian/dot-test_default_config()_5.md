@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
+community: "test_memory_lifecycle.py"
 location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # .test_default_config()
 
 ## Connections
 - [[MemoryIntegrityConfig]] - `calls` [EXTRACTED]
-- [[Test default configuration values._2]] - `rationale_for` [EXTRACTED]
+- [[Test default configuration values._3]] - `rationale_for` [EXTRACTED]
 - [[TestMemoryIntegrityConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

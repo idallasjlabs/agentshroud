@@ -12,7 +12,7 @@ tags:
 # .test_engine_allows_known_server_under_default()
 
 ## Connections
-- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_8]] - `calls` [EXTRACTED]
 - [[A knownallowlisted server's non-high-risk tool is still ALLOWED — no breakage.]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultMcpPolicyIsFailClosed]] - `method` [EXTRACTED]

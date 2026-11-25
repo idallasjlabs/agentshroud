@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_pii.py"
 type: "code"
-community: "RedactionResult"
+community: "PIIConfig"
 location: "L251"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/RedactionResult
+  - community/PIIConfig
 ---
 
 # .test_empty_content_handling()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test handling of empty or whitespace-only content]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer]] - `method` [EXTRACTED]
-- [[asyncio_45]] - `references` [EXTRACTED]
+- [[asyncio_46]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/RedactionResult
+#graphify/code #graphify/EXTRACTED #community/PIIConfig

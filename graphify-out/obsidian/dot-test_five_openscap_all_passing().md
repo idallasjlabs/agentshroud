@@ -12,6 +12,6 @@ tags:
 # .test_five_openscap_all_passing()
 
 ## Connections
-- [[TestScoreContainerHardening_1]] - `method` [EXTRACTED]
+- [[TestScoreContainerHardening]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestScoreContainerHardening

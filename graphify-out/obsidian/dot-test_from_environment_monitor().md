@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_egress_enforce.py"
 type: "code"
-community: "TestEgressFilterConfig"
+community: "EgressFilterConfig"
 location: "L54"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestEgressFilterConfig
+  - community/EgressFilterConfig
 ---
 
 # .test_from_environment_monitor()
@@ -16,4 +16,4 @@ tags:
 - [[Test config creation from environment in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressFilterConfig]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestEgressFilterConfig
+#graphify/code #graphify/EXTRACTED #community/EgressFilterConfig

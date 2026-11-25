@@ -12,7 +12,7 @@ tags:
 # .test_from_dict_none_is_fail_closed()
 
 ## Connections
-- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
 - [[A2APolicyEngine]] - `calls` [EXTRACTED]
 - [[TestDefaultA2APolicyIsFailClosed]] - `method` [EXTRACTED]
 - [[load_config-style callers pass whatever the YAML section resolved to, which is…]] - `rationale_for` [EXTRACTED]

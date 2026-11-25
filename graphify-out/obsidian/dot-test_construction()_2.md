@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_soc_models.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
-location: "L136"
+community: "soc/models.py"
+location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/soc/modelspy
 ---
 
 # .test_construction()
 
 ## Connections
-- [[TestWSEvent]] - `method` [EXTRACTED]
-- [[WSEvent]] - `calls` [EXTRACTED]
+- [[EgressRequest_1]] - `calls` [EXTRACTED]
+- [[TestEgressRequest]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/soc/modelspy

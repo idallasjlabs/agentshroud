@@ -15,7 +15,7 @@ tags:
 - [[TestFileDownload]] - `method` [EXTRACTED]
 - [[_FakeResponse]] - `calls` [INFERRED]
 - [[_forward_file_download must raise when streamed bytes exceed limit…]] - `rationale_for` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[read()_2]] - `contains` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[read()_1]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

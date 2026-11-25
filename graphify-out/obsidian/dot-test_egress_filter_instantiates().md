@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_all_modules_enforce.py"
 type: "code"
-community: "PathIsolationManager"
+community: "EgressFilter"
 location: "L166"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PathIsolationManager
+  - community/EgressFilter
 ---
 
 # .test_egress_filter_instantiates()
@@ -15,4 +15,4 @@ tags:
 - [[EgressFilter]] - `calls` [EXTRACTED]
 - [[TestModuleInstantiationInEnforceMode]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

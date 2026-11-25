@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestLocalAgentHealthHelper"
+community: "test_soc_edge.py"
 location: "L353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestLocalAgentHealthHelper
+  - community/test_soc_edgepy
 ---
 
 # .test_engine_failure_is_empty_not_raise()
@@ -15,4 +15,4 @@ tags:
 - [[TestLocalAgentHealthHelper]] - `method` [EXTRACTED]
 - [[list_services()_2]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestLocalAgentHealthHelper
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

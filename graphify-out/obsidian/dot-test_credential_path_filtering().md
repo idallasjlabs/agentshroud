@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: ".test_credential_path_filtering"
+community: "TestOutboundInfoFilter"
 location: "L174"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_credential_path_filtering
+  - community/TestOutboundInfoFilter
 ---
 
 # .test_credential_path_filtering()
@@ -15,4 +15,4 @@ tags:
 - [[Test that credential paths are filtered.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_credential_path_filtering
+#graphify/code #graphify/EXTRACTED #community/TestOutboundInfoFilter

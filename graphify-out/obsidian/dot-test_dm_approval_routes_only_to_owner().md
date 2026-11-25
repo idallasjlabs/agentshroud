@@ -15,6 +15,6 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[TestDMApprovalOwnerOnly]] - `method` [EXTRACTED]
 - [[When group_chat_id is None, only the owner receives a notification.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_11]] - `references` [EXTRACTED]
+- [[asyncio_10]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

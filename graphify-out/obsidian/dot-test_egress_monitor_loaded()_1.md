@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_audit.py"
+source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "MetadataGuard"
-location: "L632"
+community: "FileSandbox"
+location: "L597"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/FileSandbox
 ---
 
 # .test_egress_monitor_loaded()
 
 ## Connections
-- [[TestNetworkSecurity]] - `method` [EXTRACTED]
+- [[Egress monitoring should be available.]] - `rationale_for` [EXTRACTED]
+- [[TestExfiltrationDetection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/FileSandbox

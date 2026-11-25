@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Emergency block-all should deny all new approval requests.]] - `rationale_for` [EXTRACTED]
 - [[TestEgressApprovalQueue]] - `method` [EXTRACTED]
-- [[asyncio_3]] - `references` [EXTRACTED]
+- [[asyncio_22]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestEgressApprovalQueue

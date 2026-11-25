@@ -13,6 +13,6 @@ tags:
 
 ## Connections
 - [[TestComplianceMaths]] - `method` [EXTRACTED]
-- [[parametrize_11]] - `references` [EXTRACTED]
+- [[parametrize_9]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestComplianceMaths

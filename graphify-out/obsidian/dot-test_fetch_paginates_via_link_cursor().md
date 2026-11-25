@@ -17,8 +17,8 @@ tags:
 - [[__exit__()_5]] - `contains` [EXTRACTED]
 - [[__init__()_26]] - `contains` [EXTRACTED]
 - [[_adv()]] - `calls` [EXTRACTED]
-- [[_fake_urlopen()_6]] - `contains` [EXTRACTED]
-- [[_fake_urlopen()_9]] - `indirect_call` [INFERRED]
+- [[_fake_urlopen()_4]] - `contains` [EXTRACTED]
+- [[_fake_urlopen()_7]] - `indirect_call` [INFERRED]
 - [[_sync()]] - `calls` [EXTRACTED]
 - [[read()_12]] - `contains` [EXTRACTED]
 

@@ -15,7 +15,7 @@ tags:
 - [[ApprovalRequest]] - `calls` [EXTRACTED]
 - [[Submit and decide requests concurrently.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `method` [EXTRACTED]
-- [[asyncio_47]] - `references` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 - [[decide()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest
