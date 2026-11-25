@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "service.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/servicepy
 ---
 
 # instruction_envelope.py
@@ -25,4 +25,4 @@ tags:
 - [[unwrap_untrusted()]] - `contains` [EXTRACTED]
 - [[wrap_untrusted()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/servicepy

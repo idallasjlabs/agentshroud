@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "fs"
+community: "ToolResultInjectionScanner"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/fs
+  - community/ToolResultInjectionScanner
 ---
 
 # fixture
 
 ## Connections
-- [[flags()]] - `references` [EXTRACTED]
-- [[fs()]] - `references` [EXTRACTED]
-- [[tools()]] - `references` [EXTRACTED]
+- [[scanner()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/fs
+#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner

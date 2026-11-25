@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_fuzz.py"
+source_file: "gateway/tests/test_edge_facades.py"
 type: "code"
-community: "test_edge_fuzz.py"
-location: "L151"
+community: "service.py"
+location: "L49"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_edge_fuzzpy
+  - graphify/EXTRACTED
+  - community/servicepy
 ---
 
 # handler()
 
 ## Connections
-- [[test_shellish_input_never_executes()]] - `indirect_call` [INFERRED]
+- [[test_pke_status_summary_and_per_feed()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_edge_fuzzpy
+#graphify/code #graphify/EXTRACTED #community/servicepy

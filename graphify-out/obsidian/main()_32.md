@@ -1,19 +1,21 @@
 ---
-source_file: ".llm_settings/scripts/mcp_oauth_preflight.py"
+source_file: "gateway/inbound_edge/descriptors.py"
 type: "code"
-community: "mcp_oauth_preflight.py"
-location: "L497"
+community: "descriptors.py"
+location: "L216"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/mcp_oauth_preflightpy
+  - community/descriptorspy
 ---
 
 # main()
 
 ## Connections
-- [[cmd_oauth()]] - `calls` [EXTRACTED]
-- [[cmd_reachability()]] - `calls` [EXTRACTED]
-- [[mcp_oauth_preflight.py]] - `contains` [EXTRACTED]
+- [[build_manifest()]] - `calls` [EXTRACTED]
+- [[canonical_bytes()]] - `calls` [EXTRACTED]
+- [[descriptors.py]] - `contains` [EXTRACTED]
+- [[test_cli_verify_ok_and_bad_stdin()]] - `calls` [EXTRACTED]
+- [[verify_descriptors()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/mcp_oauth_preflightpy
+#graphify/code #graphify/EXTRACTED #community/descriptorspy

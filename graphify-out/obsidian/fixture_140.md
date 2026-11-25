@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "A2AProxy"
+community: "A2APeerTestDouble"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/A2AProxy
+  - community/A2APeerTestDouble
 ---
 
 # fixture
 
 ## Connections
-- [[forwarder()_1]] - `references` [EXTRACTED]
-- [[proxy()_3]] - `references` [EXTRACTED]
+- [[test_double_peer()]] - `references` [EXTRACTED]
+- [[trust_manager()_5]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/A2AProxy
+#graphify/code #graphify/EXTRACTED #community/A2APeerTestDouble

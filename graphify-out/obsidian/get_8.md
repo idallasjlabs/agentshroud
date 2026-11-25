@@ -1,19 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "dashboard_endpoints.py"
+community: "version_routes.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/version_routespy
 ---
 
 # get
 
 ## Connections
-- [[alerts_summary()]] - `references` [EXTRACTED]
-- [[logs_recent()]] - `references` [EXTRACTED]
-- [[proxy_status()_1]] - `references` [EXTRACTED]
-- [[ssh_hosts()_1]] - `references` [EXTRACTED]
+- [[get_available_versions()]] - `references` [EXTRACTED]
+- [[get_current_version()]] - `references` [EXTRACTED]
+- [[get_version_history()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/version_routespy

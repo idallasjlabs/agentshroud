@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "make_event"
+community: "ingest_api/main.py"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/ingest_api/mainpy
 ---
 
 # make_event()
@@ -15,7 +15,7 @@ tags:
 - [[dot-_alert()]] - `calls` [EXTRACTED]
 - [[dot-_emit_privacy_event()]] - `calls` [EXTRACTED]
 - [[dot-_emit_quarantine_event()]] - `calls` [EXTRACTED]
-- [[dot-_record()]] - `calls` [EXTRACTED]
+- [[dot-_record()_1]] - `calls` [EXTRACTED]
 - [[dot-_record()_2]] - `calls` [EXTRACTED]
 - [[dot-approve()]] - `calls` [EXTRACTED]
 - [[dot-check_async()]] - `calls` [EXTRACTED]
@@ -24,7 +24,7 @@ tags:
 - [[dot-test_edge_gateway_event_is_forwarded()]] - `calls` [EXTRACTED]
 - [[dot-test_fan_out_honours_edge_subscription()]] - `calls` [EXTRACTED]
 - [[dot-test_unmapped_gateway_event_still_dropped()]] - `calls` [EXTRACTED]
-- [[Any_10]] - `references` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
 - [[GatewayEvent]] - `calls` [EXTRACTED]
 - [[Helper to create a GatewayEvent with current timestamp]] - `rationale_for` [EXTRACTED]
 - [[_alert_event()]] - `calls` [EXTRACTED]
@@ -80,4 +80,4 @@ tags:
 - [[test_ws_egress_receives_privacy_event()]] - `calls` [EXTRACTED]
 - [[test_ws_egress_receives_scanner_event()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

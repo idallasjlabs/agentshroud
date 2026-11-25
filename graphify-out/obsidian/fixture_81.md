@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "TestEgressTelegramNotify"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/TestEgressTelegramNotify
 ---
 
 # fixture
 
 ## Connections
-- [[store()_1]] - `references` [EXTRACTED]
+- [[dot-notifier()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/TestEgressTelegramNotify

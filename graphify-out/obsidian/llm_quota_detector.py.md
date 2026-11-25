@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "is_quota_exhausted"
+community: "is_overloaded"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_quota_exhausted
+  - community/is_overloaded
 ---
 
 # llm_quota_detector.py
@@ -23,4 +23,4 @@ tags:
 - [[test_llm_quota_detector.py]] - `imports_from` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_quota_exhausted
+#graphify/code #graphify/EXTRACTED #community/is_overloaded

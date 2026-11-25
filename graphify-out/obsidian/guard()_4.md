@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ResourceGuard]] - `uses` [INFERRED]
 - [[ResourceLimits]] - `uses` [INFERRED]
-- [[fixture_104]] - `references` [EXTRACTED]
+- [[fixture_105]] - `references` [EXTRACTED]
 - [[test_resource_guard_limits.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ResourceGuard

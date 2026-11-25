@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "chatbot/main.py"
+community: "test_middleware_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/chatbot/mainpy
+  - community/test_middleware_coveragepy
 ---
 
 # fixture
 
 ## Connections
-- [[app()_1]] - `references` [EXTRACTED]
-- [[client()_21]] - `references` [EXTRACTED]
+- [[mm()]] - `references` [EXTRACTED]
+- [[temp_workspace()_1]] - `references` [EXTRACTED]
+- [[usm()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/chatbot/mainpy
+#graphify/code #graphify/EXTRACTED #community/test_middleware_coveragepy

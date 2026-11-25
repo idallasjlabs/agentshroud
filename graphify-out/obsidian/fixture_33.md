@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_telegram_replay.py"
+community: "test_api_contract_fuzz.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_telegram_replaypy
+  - community/test_api_contract_fuzzpy
 ---
 
 # fixture
 
 ## Connections
-- [[buf()]] - `references` [EXTRACTED]
+- [[client()_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_telegram_replaypy
+#graphify/code #graphify/EXTRACTED #community/test_api_contract_fuzzpy

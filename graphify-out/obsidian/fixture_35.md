@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "_make_token"
+community: "test_credential_injector.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_token
+  - community/test_credential_injectorpy
 ---
 
 # fixture
 
 ## Connections
-- [[validator()]] - `references` [EXTRACTED]
+- [[injector()]] - `references` [EXTRACTED]
+- [[secrets_dir()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_token
+#graphify/code #graphify/EXTRACTED #community/test_credential_injectorpy

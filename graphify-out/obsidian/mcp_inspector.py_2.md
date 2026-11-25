@@ -12,13 +12,13 @@ tags:
 # mcp_inspector.py
 
 ## Connections
-- [[Enum_26]] - `imports_from` [EXTRACTED]
+- [[Enum_15]] - `imports_from` [EXTRACTED]
 - [[FindingType]] - `contains` [EXTRACTED]
 - [[InspectionFinding]] - `contains` [EXTRACTED]
 - [[InspectionResult]] - `contains` [EXTRACTED]
 - [[MCP Inspector — tool call inspection for injection, PII, and sensitive ops.…]] - `rationale_for` [EXTRACTED]
 - [[MCPInspector]] - `contains` [EXTRACTED]
-- [[ThreatLevel_1]] - `contains` [EXTRACTED]
+- [[ThreatLevel]] - `contains` [EXTRACTED]
 - [[mcp_proxy.py_2]] - `imports_from` [EXTRACTED]
 - [[proxy__init__.py]] - `re_exports` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `imports_from` [EXTRACTED]

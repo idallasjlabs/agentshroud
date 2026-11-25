@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/forwarder.py"
 type: "code"
-community: "HTTPForwarder"
+community: "test_canary.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPForwarder
+  - community/test_canarypy
 ---
 
 # forwarder.py
@@ -18,4 +18,4 @@ tags:
 - [[test_canary.py]] - `imports_from` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPForwarder
+#graphify/code #graphify/EXTRACTED #community/test_canarypy

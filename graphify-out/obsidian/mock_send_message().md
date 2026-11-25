@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Mock async Telegram sendMessage to capture DM and group notifications.]] - `rationale_for` [EXTRACTED]
 - [[_send()]] - `indirect_call` [INFERRED]
-- [[fixture_17]] - `references` [EXTRACTED]
+- [[fixture_26]] - `references` [EXTRACTED]
 - [[test_group_approval_routing.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest

@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestKillSwitchScript"
+community: "CredentialInjector"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKillSwitchScript
+  - community/CredentialInjector
 ---
 
 # fixture
 
 ## Connections
-- [[dot-script_content()]] - `references` [EXTRACTED]
+- [[dot-injector()]] - `references` [EXTRACTED]
+- [[dot-injector()_1]] - `references` [EXTRACTED]
+- [[dot-injector_with_secrets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKillSwitchScript
+#graphify/code #graphify/EXTRACTED #community/CredentialInjector

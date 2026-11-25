@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_network_isolation.py"
+community: "app"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_network_isolationpy
+  - community/app
 ---
 
 # fixture
 
 ## Connections
-- [[_compose()]] - `references` [EXTRACTED]
+- [[bypass_auth()_1]] - `references` [EXTRACTED]
+- [[client()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_network_isolationpy
+#graphify/code #graphify/EXTRACTED #community/app

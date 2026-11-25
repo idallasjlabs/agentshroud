@@ -12,7 +12,7 @@ tags:
 # mcp_policy.py
 
 ## Connections
-- [[Enum_33]] - `imports_from` [EXTRACTED]
+- [[Enum_32]] - `imports_from` [EXTRACTED]
 - [[MCP (Model Context Protocol) security policy engine (SCRUM-84). The enforcement…]] - `rationale_for` [EXTRACTED]
 - [[MCPPolicyAction]] - `contains` [EXTRACTED]
 - [[MCPPolicyConfig]] - `contains` [EXTRACTED]

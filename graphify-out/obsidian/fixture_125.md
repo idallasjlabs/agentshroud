@@ -1,24 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "UserSessionManager"
+community: "TestKillSwitchScript"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestKillSwitchScript
 ---
 
 # fixture
 
 ## Connections
-- [[dot-middleware_manager()]] - `references` [EXTRACTED]
-- [[dot-mock_forwarder()]] - `references` [EXTRACTED]
-- [[dot-mock_pipeline()]] - `references` [EXTRACTED]
-- [[dot-session_manager()]] - `references` [EXTRACTED]
-- [[dot-session_manager()_1]] - `references` [EXTRACTED]
-- [[dot-temp_workspace()]] - `references` [EXTRACTED]
-- [[dot-temp_workspace()_1]] - `references` [EXTRACTED]
-- [[dot-temp_workspace()_2]] - `references` [EXTRACTED]
-- [[dot-temp_workspace()_3]] - `references` [EXTRACTED]
+- [[dot-script_content()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestKillSwitchScript

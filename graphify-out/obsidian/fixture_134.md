@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "CredentialInjector"
+community: "TrustConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/CredentialInjector
+  - community/TrustConfig
 ---
 
 # fixture
 
 ## Connections
-- [[dot-injector()]] - `references` [EXTRACTED]
-- [[dot-injector()_1]] - `references` [EXTRACTED]
-- [[dot-injector_with_secrets()]] - `references` [EXTRACTED]
+- [[manager()_4]] - `references` [EXTRACTED]
+- [[strict_config()_3]] - `references` [EXTRACTED]
+- [[strict_manager()]] - `references` [EXTRACTED]
+- [[trust_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/CredentialInjector
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

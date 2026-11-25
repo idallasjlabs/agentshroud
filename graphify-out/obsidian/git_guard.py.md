@@ -12,7 +12,7 @@ tags:
 # git_guard.py
 
 ## Connections
-- [[Enum_32]] - `imports_from` [EXTRACTED]
+- [[Enum_31]] - `imports_from` [EXTRACTED]
 - [[Git Hook Guard - Security Hardening Module Scan git hooks and package…]] - `rationale_for` [EXTRACTED]
 - [[GitGuard]] - `contains` [EXTRACTED]
 - [[SecurityFinding]] - `contains` [EXTRACTED]

@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "TestOpenAPIContract"
+community: "A2AProxy"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOpenAPIContract
+  - community/A2AProxy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-client()_7]] - `references` [EXTRACTED]
+- [[forwarder()_1]] - `references` [EXTRACTED]
+- [[proxy()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOpenAPIContract
+#graphify/code #graphify/EXTRACTED #community/A2AProxy

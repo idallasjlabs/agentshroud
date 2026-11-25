@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "PipelineAction"
+community: "test_clamav_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/PipelineAction
+  - community/test_clamav_pipelinepy
 ---
 
 # fixture
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[clamd_sock_path()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/PipelineAction
+#graphify/code #graphify/EXTRACTED #community/test_clamav_pipelinepy

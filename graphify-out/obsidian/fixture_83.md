@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_mfa_guard.py"
+community: "Path"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mfa_guardpy
+  - community/Path
 ---
 
 # fixture
 
 ## Connections
-- [[env()]] - `references` [EXTRACTED]
+- [[dot-client()_5]] - `references` [EXTRACTED]
+- [[guard()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy
+#graphify/code #graphify/EXTRACTED #community/Path

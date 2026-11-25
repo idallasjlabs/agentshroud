@@ -12,7 +12,7 @@ tags:
 # multi_host_test.py
 
 ## Connections
-- [[Enum_7]] - `imports_from` [EXTRACTED]
+- [[Enum_6]] - `imports_from` [EXTRACTED]
 - [[HostResult]] - `contains` [EXTRACTED]
 - [[HostStatus]] - `contains` [EXTRACTED]
 - [[MultiHostResult]] - `contains` [EXTRACTED]

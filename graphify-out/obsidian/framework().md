@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[ConsentFramework]] - `uses` [INFERRED]
-- [[fixture_123]] - `references` [EXTRACTED]
+- [[fixture_118]] - `references` [EXTRACTED]
 - [[test_consent_framework.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ServerConfig

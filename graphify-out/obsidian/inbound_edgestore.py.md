@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/inbound_edge/store.py"
 type: "code"
-community: "test_edge_e2e_sdk.py"
+community: "test_edge_pipeline.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/test_edge_pipelinepy
 ---
 
 # inbound_edge/store.py
@@ -28,4 +28,4 @@ tags:
 - [[test_edge_pipeline.py]] - `imports_from` [EXTRACTED]
 - [[test_soc_edge.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Print every ghsa_id in the CVE registry, one per line. Exists so the daily CVE…]] - `rationale_for` [EXTRACTED]
 - [[agent_cve_registry.py]] - `imports_from` [EXTRACTED]
-- [[main()_33]] - `contains` [EXTRACTED]
+- [[main()_34]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/sync-cve-registrypy

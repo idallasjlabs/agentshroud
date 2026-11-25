@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/input_normalizer.py"
 type: "code"
-community: "normalize_input"
+community: "TelegramAPIProxy"
 location: "L33"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/TelegramAPIProxy
 ---
 
 # normalize_input()
@@ -21,7 +21,7 @@ tags:
 - [[dot-_contains_legacy_block_notice()]] - `calls` [EXTRACTED]
 - [[dot-_extract_owner_target()]] - `calls` [EXTRACTED]
 - [[dot-_filter_inbound_updates()]] - `calls` [EXTRACTED]
-- [[dot-_filter_outbound()]] - `calls` [EXTRACTED]
+- [[dot-_filter_outbound()_1]] - `calls` [EXTRACTED]
 - [[dot-_filter_outbound_multipart()]] - `calls` [EXTRACTED]
 - [[dot-_is_no_reply_token()]] - `calls` [EXTRACTED]
 - [[dot-_looks_like_allowlist_bypass_request()]] - `calls` [EXTRACTED]
@@ -76,7 +76,7 @@ tags:
 - [[dot-analyze_message()]] - `calls` [EXTRACTED]
 - [[dot-process_request()]] - `calls` [EXTRACTED]
 - [[dot-scan()_3]] - `calls` [EXTRACTED]
-- [[dot-scan_tool_result()_2]] - `calls` [EXTRACTED]
+- [[dot-scan_tool_result()_1]] - `calls` [EXTRACTED]
 - [[dot-test_base64_payload_normalized()]] - `calls` [EXTRACTED]
 - [[dot-test_detection_breakdown_by_category()]] - `calls` [EXTRACTED]
 - [[dot-test_encoding_bypass_detection_rate()]] - `calls` [EXTRACTED]
@@ -94,4 +94,4 @@ tags:
 - [[test_adversarial_injection.py]] - `imports` [EXTRACTED]
 - [[tool_result_injection.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/TelegramAPIProxy

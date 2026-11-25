@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_http_proxy.py"
+source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "HTTPConnectProxy"
-location: "L324"
+community: "test_telegram_proxy_outbound.py"
+location: "L3733"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPConnectProxy
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # log_external_decision()
 
 ## Connections
-- [[test_system_bypass_domain_logs_external_decision()]] - `contains` [EXTRACTED]
+- [[dot-test_web_search_query_truncation()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy
+#graphify/code #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

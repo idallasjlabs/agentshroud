@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[MCPInspector]] - `uses` [INFERRED]
-- [[fixture_39]] - `references` [EXTRACTED]
+- [[fixture_46]] - `references` [EXTRACTED]
 - [[test_mcp_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

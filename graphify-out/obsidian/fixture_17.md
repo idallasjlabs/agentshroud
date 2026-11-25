@@ -1,18 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalRequest"
+community: "TeamsConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TeamsConfig
 ---
 
 # fixture
 
 ## Connections
-- [[mock_send_message()]] - `references` [EXTRACTED]
-- [[router()]] - `references` [EXTRACTED]
-- [[router_with_sent()]] - `references` [EXTRACTED]
+- [[teams()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

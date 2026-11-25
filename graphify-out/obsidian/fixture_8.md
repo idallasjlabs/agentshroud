@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "DelegationPrivilege"
+community: "app"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DelegationPrivilege
+  - community/app
 ---
 
 # fixture
 
 ## Connections
-- [[mgr()]] - `references` [EXTRACTED]
+- [[client()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DelegationPrivilege
+#graphify/code #graphify/EXTRACTED #community/app

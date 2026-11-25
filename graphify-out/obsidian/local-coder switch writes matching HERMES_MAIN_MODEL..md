@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_switch_model_idempotent.py"
 type: "rationale"
-community: "._run_and_read"
+community: "ApprovalQueueConfig (5)"
 location: "L259"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/_run_and_read
+  - community/ApprovalQueueConfig_5
 ---
 
 # local-coder switch writes matching HERMES_MAIN_MODEL.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_local_coder_switch_both_bots()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/_run_and_read
+#graphify/rationale #graphify/EXTRACTED #community/ApprovalQueueConfig_5

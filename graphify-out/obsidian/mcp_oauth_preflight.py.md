@@ -25,7 +25,7 @@ tags:
 - [[cmd_oauth()]] - `contains` [EXTRACTED]
 - [[cmd_reachability()]] - `contains` [EXTRACTED]
 - [[getenv_required()]] - `contains` [EXTRACTED]
-- [[main()_32]] - `contains` [EXTRACTED]
+- [[main()_33]] - `contains` [EXTRACTED]
 - [[mcp_oauth_preflight.py Enterprise-safe OAuth + MCP connectivity preflight.…]] - `rationale_for` [EXTRACTED]
 - [[oauth_atlassian()]] - `contains` [EXTRACTED]
 - [[oauth_github()]] - `contains` [EXTRACTED]

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/web/dashboard_endpoints.py"
 type: "code"
-community: "dashboard_endpoints.py"
+community: "test_dashboard_endpoints.py"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/dashboard_endpointspy
+  - community/test_dashboard_endpointspy
 ---
 
 # logs_recent()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Recent securityaudit log entries. Optional ``bot=`` query parameter restricts…]] - `rationale_for` [EXTRACTED]
 - [[dashboard_endpoints.py]] - `contains` [EXTRACTED]
-- [[get_8]] - `references` [EXTRACTED]
+- [[get_9]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/dashboard_endpointspy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

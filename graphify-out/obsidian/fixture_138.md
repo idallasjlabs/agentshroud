@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "HTTPForwarder"
+community: "KillSwitchConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/HTTPForwarder
+  - community/KillSwitchConfig
 ---
 
 # fixture
 
 ## Connections
-- [[canary_pipeline()]] - `references` [EXTRACTED]
-- [[healthy_forwarder()]] - `references` [EXTRACTED]
-- [[unhealthy_forwarder()]] - `references` [EXTRACTED]
+- [[config()_4]] - `references` [EXTRACTED]
+- [[dispatcher()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/HTTPForwarder
+#graphify/code #graphify/EXTRACTED #community/KillSwitchConfig

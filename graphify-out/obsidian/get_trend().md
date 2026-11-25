@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-test_history_persistence()]] - `calls` [EXTRACTED]
 - [[dot-test_trend_empty_db()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[Get score trend for the last N days. Args days Number of days to look back.…]] - `rationale_for` [EXTRACTED]
 - [[Path_20]] - `references` [EXTRACTED]
 - [[generate_report()]] - `calls` [EXTRACTED]

@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "app_main.c"
+community: "lvgl_kawaii_face.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/app_mainc
+  - community/lvgl_kawaii_facec
 ---
 
 # lv_obj_t
 
 ## Connections
-- [[_find_canvas()]] - `references` [EXTRACTED]
-- [[_report_and_place_canvas()]] - `references` [EXTRACTED]
+- [[draw_eye()]] - `references` [EXTRACTED]
+- [[draw_mouth()]] - `references` [EXTRACTED]
+- [[face_get_container()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/app_mainc
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

@@ -1,19 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "TestInstallerAPI"
+community: "PIISanitizer"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInstallerAPI
+  - community/PIISanitizer
 ---
 
 # fixture
 
 ## Connections
-- [[dot-client()]] - `references` [EXTRACTED]
-- [[dot-client()_1]] - `references` [EXTRACTED]
-- [[dot-client()_2]] - `references` [EXTRACTED]
-- [[dot-client()_3]] - `references` [EXTRACTED]
+- [[dot-guard()_2]] - `references` [EXTRACTED]
+- [[dot-ledger()_1]] - `references` [EXTRACTED]
+- [[dot-ledger()]] - `references` [EXTRACTED]
+- [[dot-pipeline()]] - `references` [EXTRACTED]
+- [[dot-pipeline()_1]] - `references` [EXTRACTED]
+- [[dot-sanitizer()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInstallerAPI
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

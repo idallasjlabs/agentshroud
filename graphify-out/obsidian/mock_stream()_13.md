@@ -1,19 +1,18 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L1216"
+community: "mock_stream"
+location: "L1246"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # mock_stream()
 
 ## Connections
 - [[_mock_stream_resp()]] - `calls` [EXTRACTED]
-- [[_sse_body()]] - `calls` [EXTRACTED]
-- [[test_call_agent_stream_posts_to_forward_stream_endpoint()]] - `contains` [EXTRACTED]
+- [[test_call_agent_stream_skips_blank_and_comment_lines()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

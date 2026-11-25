@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_llm_proxy_failover.py"
+source_file: "gateway/tests/test_rate_limit_failover.py"
 type: "code"
-community: "test_llm_proxy_failover.py"
-location: "L312"
+community: "test_anthropic_openai_translator.py"
+location: "L79"
 tags:
   - graphify/code
-  - graphify/EXTRACTED
-  - community/test_llm_proxy_failoverpy
+  - graphify/INFERRED
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # mock_forward()
 
 ## Connections
-- [[test_already_local_request_does_not_failover()]] - `contains` [EXTRACTED]
+- [[test_proxy_failover_on_post_retry_429()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_llm_proxy_failoverpy
+#graphify/code #graphify/INFERRED #community/test_anthropic_openai_translatorpy

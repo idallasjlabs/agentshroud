@@ -1,16 +1,20 @@
 ---
 source_file: ""
 type: "code"
-community: "test_env_guard_class.py"
+community: "GroupRoleResolver"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/GroupRoleResolver
 ---
 
 # fixture
 
 ## Connections
-- [[guard()_3]] - `references` [EXTRACTED]
+- [[acl_config()]] - `references` [EXTRACTED]
+- [[enforcer()_1]] - `references` [EXTRACTED]
+- [[group_role_resolver()]] - `references` [EXTRACTED]
+- [[rbac()_5]] - `references` [EXTRACTED]
+- [[teams()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/GroupRoleResolver

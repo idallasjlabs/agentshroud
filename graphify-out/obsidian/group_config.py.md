@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/group_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "TeamsConfig"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/TeamsConfig
 ---
 
 # group_config.py
@@ -28,7 +28,7 @@ tags:
 - [[persist_group_member_add()]] - `contains` [EXTRACTED]
 - [[persist_group_member_remove()]] - `contains` [EXTRACTED]
 - [[persist_user_collab_mode()]] - `contains` [EXTRACTED]
-- [[pydantic_1]] - `imports_from` [EXTRACTED]
+- [[pydantic]] - `imports_from` [EXTRACTED]
 - [[rbac_config.py]] - `imports_from` [EXTRACTED]
 - [[test_collaborator_responses.py]] - `imports_from` [EXTRACTED]
 - [[test_group_config.py]] - `imports_from` [EXTRACTED]
@@ -40,4 +40,4 @@ tags:
 - [[test_shared_memory_write_acl.py]] - `imports_from` [EXTRACTED]
 - [[test_tool_acl.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

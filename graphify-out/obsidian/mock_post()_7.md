@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_router.py"
+source_file: "gateway/tests/test_router_openai_translation.py"
 type: "code"
-community: "AgentTarget"
-location: "L169"
+community: "_mock_response"
+location: "L129"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/_mock_response
 ---
 
 # mock_post()
 
 ## Connections
-- [[test_forward_to_agent_http_error()]] - `contains` [EXTRACTED]
+- [[_mock_response()]] - `calls` [EXTRACTED]
+- [[test_openai_malformed_response_raises_forward_error()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/_mock_response

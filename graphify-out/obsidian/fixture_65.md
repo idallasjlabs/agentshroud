@@ -1,18 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "TestPathIsolationManager"
+community: "SharedMemoryManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPathIsolationManager
+  - community/SharedMemoryManager
 ---
 
 # fixture
 
 ## Connections
-- [[dot-config()]] - `references` [EXTRACTED]
-- [[dot-manager()_1]] - `references` [EXTRACTED]
-- [[dot-temp_dir()]] - `references` [EXTRACTED]
+- [[rbac()_3]] - `references` [EXTRACTED]
+- [[session_mgr()]] - `references` [EXTRACTED]
+- [[smm()_1]] - `references` [EXTRACTED]
+- [[tmp_workspace()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPathIsolationManager
+#graphify/code #graphify/EXTRACTED #community/SharedMemoryManager

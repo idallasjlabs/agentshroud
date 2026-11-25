@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_router_streaming.py"
 type: "code"
-community: "AgentTarget"
+community: "test_forward_stream.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/AgentTarget
+  - community/test_forward_streampy
 ---
 
 # mock_stream()
@@ -21,4 +21,4 @@ tags:
 - [[test_stream_skips_chunk_missing_choices_key_and_continues()]] - `indirect_call` [INFERRED]
 - [[test_stream_yields_content_deltas_in_order()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/AgentTarget
+#graphify/code #graphify/INFERRED #community/test_forward_streampy

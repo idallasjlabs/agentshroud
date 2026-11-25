@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[ForwarderConfig]] - `uses` [INFERRED]
 - [[HTTPForwarder]] - `uses` [INFERRED]
-- [[fixture_88]] - `references` [EXTRACTED]
+- [[fixture_92]] - `references` [EXTRACTED]
 - [[test_e2e_proxy.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_e2e_proxypy

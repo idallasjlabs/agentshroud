@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_security_audit.py"
+community: "test_dashboard_endpoints.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_auditpy
+  - community/test_dashboard_endpointspy
 ---
 
 # fixture
 
 ## Connections
-- [[validator()_1]] - `references` [EXTRACTED]
+- [[auth_headers()_4]] - `references` [EXTRACTED]
+- [[client()_20]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_auditpy
+#graphify/code #graphify/EXTRACTED #community/test_dashboard_endpointspy

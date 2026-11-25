@@ -1,18 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "_build_image_targets"
+community: "test_collaborator_tracker.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_build_image_targets
+  - community/test_collaborator_trackerpy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-_no_docker()_1]] - `references` [EXTRACTED]
-- [[dot-_no_docker()]] - `references` [EXTRACTED]
-- [[_isolated_alert_state()]] - `references` [EXTRACTED]
+- [[log_file()]] - `references` [EXTRACTED]
+- [[tracker()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_build_image_targets
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_trackerpy

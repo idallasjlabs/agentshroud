@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "rationale"
-community: "TestReplayBufferOffsetParsing"
+community: "test_telegram_proxy_outbound.py"
 location: "L4510"
 tags:
   - graphify/rationale
   - graphify/EXTRACTED
-  - community/TestReplayBufferOffsetParsing
+  - community/test_telegram_proxy_outboundpy
 ---
 
 # getUpdates must use a 60s urlopen timeout so the long-poll is not aborted early.
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[dot-test_long_poll_timeout_remains_60s()]] - `rationale_for` [EXTRACTED]
 
-#graphify/rationale #graphify/EXTRACTED #community/TestReplayBufferOffsetParsing
+#graphify/rationale #graphify/EXTRACTED #community/test_telegram_proxy_outboundpy

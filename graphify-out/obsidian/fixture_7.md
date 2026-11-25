@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "make_event"
+community: "app"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/make_event
+  - community/app
 ---
 
 # fixture
 
 ## Connections
-- [[bus()]] - `references` [EXTRACTED]
+- [[client()_5]] - `references` [EXTRACTED]
+- [[sync_client()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/make_event
+#graphify/code #graphify/EXTRACTED #community/app

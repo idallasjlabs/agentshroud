@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Log all incoming requests Never logs request bodies (may contain PII).]] - `rationale_for` [EXTRACTED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[middleware]] - `references` [EXTRACTED]
 - [[test_log_requests_middleware()]] - `calls` [EXTRACTED]

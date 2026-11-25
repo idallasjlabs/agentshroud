@@ -15,7 +15,7 @@ tags:
 - [[dot-test_clean_when_installed_but_no_report()]] - `calls` [EXTRACTED]
 - [[dot-test_not_run_when_no_report_dir()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_generate_summary_output()]] - `calls` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Return latest Trivy scan summary from saved reports. When Trivy is installed…]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[_score_ai_model_supply_chain()]] - `calls` [EXTRACTED]

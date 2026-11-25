@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "TestNvdAppend"
+community: "fs"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestNvdAppend
+  - community/fs
 ---
 
 # fixture
 
 ## Connections
-- [[dot-registry()]] - `references` [EXTRACTED]
+- [[flags()]] - `references` [EXTRACTED]
+- [[fs()]] - `references` [EXTRACTED]
+- [[tools()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestNvdAppend
+#graphify/code #graphify/EXTRACTED #community/fs

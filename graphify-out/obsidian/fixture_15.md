@@ -1,19 +1,24 @@
 ---
 source_file: ""
 type: "code"
-community: "test_e2e_watchtower.py"
+community: "TestMiddlewareSessionEnforcement"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # fixture
 
 ## Connections
-- [[pii_config()]] - `references` [EXTRACTED]
-- [[pipeline()]] - `references` [EXTRACTED]
-- [[sanitizer()]] - `references` [EXTRACTED]
-- [[trust_manager()]] - `references` [EXTRACTED]
+- [[dot-middleware_manager()]] - `references` [EXTRACTED]
+- [[dot-mock_forwarder()]] - `references` [EXTRACTED]
+- [[dot-mock_pipeline()]] - `references` [EXTRACTED]
+- [[dot-session_manager()]] - `references` [EXTRACTED]
+- [[dot-session_manager()_1]] - `references` [EXTRACTED]
+- [[dot-temp_workspace()_1]] - `references` [EXTRACTED]
+- [[dot-temp_workspace()_2]] - `references` [EXTRACTED]
+- [[dot-temp_workspace()]] - `references` [EXTRACTED]
+- [[dot-temp_workspace()_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

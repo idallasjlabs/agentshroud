@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/scanner_integration.py"
 type: "code"
-community: "get_sbom"
+community: "get_trivy_summary"
 location: "L861"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/get_sbom
+  - community/get_trivy_summary
 ---
 
 # get_sbom()
@@ -15,11 +15,11 @@ tags:
 - [[dot-test_returns_latest_sbom()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_none_for_empty_dir()]] - `calls` [EXTRACTED]
 - [[dot-test_returns_none_when_no_dir()]] - `calls` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Return the latest SBOM (Software Bill of Materials) as parsed JSON.]] - `rationale_for` [EXTRACTED]
 - [[_score_supply_chain()]] - `calls` [EXTRACTED]
 - [[scanner_integration.py]] - `contains` [EXTRACTED]
 - [[socrouter.py]] - `imports` [EXTRACTED]
 - [[test_scanner_integration.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/get_sbom
+#graphify/code #graphify/EXTRACTED #community/get_trivy_summary

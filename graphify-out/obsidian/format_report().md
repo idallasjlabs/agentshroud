@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[dot-test_format_report_string()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[Format a health report as a human-readable string. Args report Full report…]] - `rationale_for` [EXTRACTED]
 - [[health_report.py_2]] - `contains` [EXTRACTED]
 - [[test_security_toolchain.py]] - `imports` [EXTRACTED]

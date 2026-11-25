@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[Decision]] - `contains` [EXTRACTED]
-- [[Enum_29]] - `imports_from` [EXTRACTED]
+- [[Enum_27]] - `imports_from` [EXTRACTED]
 - [[Live per-module enforcement counters (SCRUM-80). Feeds the SOC dashboard's per-…]] - `rationale_for` [EXTRACTED]
 - [[ModuleStatsCollector]] - `contains` [EXTRACTED]
 - [[get_collector()]] - `contains` [EXTRACTED]

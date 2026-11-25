@@ -1,19 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_router_coverage.py"
+community: "GroupWorkspaceManager"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_router_coveragepy
+  - community/GroupWorkspaceManager
 ---
 
 # fixture
 
 ## Connections
-- [[client()_5]] - `references` [EXTRACTED]
-- [[holder()]] - `references` [EXTRACTED]
-- [[ks_engine()]] - `references` [EXTRACTED]
-- [[state()]] - `references` [EXTRACTED]
+- [[dot-proxy()]] - `references` [EXTRACTED]
+- [[manager()_1]] - `references` [EXTRACTED]
+- [[rbac()_1]] - `references` [EXTRACTED]
+- [[session_manager()]] - `references` [EXTRACTED]
+- [[shared_memory()]] - `references` [EXTRACTED]
+- [[teams()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy
+#graphify/code #graphify/EXTRACTED #community/GroupWorkspaceManager

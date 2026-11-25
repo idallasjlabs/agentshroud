@@ -1,22 +1,19 @@
 ---
 source_file: ""
 type: "code"
-community: "DNSFilterConfig"
+community: "test_soc_router_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSFilterConfig
+  - community/test_soc_router_coveragepy
 ---
 
 # fixture
 
 ## Connections
-- [[dot-dns_filter()]] - `references` [EXTRACTED]
-- [[default_config()_1]] - `references` [EXTRACTED]
-- [[dns_filter()]] - `references` [EXTRACTED]
-- [[monitor_config()]] - `references` [EXTRACTED]
-- [[monitor_filter()]] - `references` [EXTRACTED]
-- [[strict_config()]] - `references` [EXTRACTED]
-- [[strict_filter()]] - `references` [EXTRACTED]
+- [[client()_9]] - `references` [EXTRACTED]
+- [[holder()]] - `references` [EXTRACTED]
+- [[ks_engine()]] - `references` [EXTRACTED]
+- [[state()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSFilterConfig
+#graphify/code #graphify/EXTRACTED #community/test_soc_router_coveragepy

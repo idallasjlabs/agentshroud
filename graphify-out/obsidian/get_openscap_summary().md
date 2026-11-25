@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[dot-test_clean_report()]] - `calls` [EXTRACTED]
 - [[dot-test_critical_on_critical_findings()]] - `calls` [EXTRACTED]
-- [[dot-test_not_run_when_no_report()]] - `calls` [EXTRACTED]
+- [[dot-test_not_run_when_no_report()_1]] - `calls` [EXTRACTED]
 - [[dot-test_warning_on_failures()]] - `calls` [EXTRACTED]
-- [[Any_60]] - `references` [EXTRACTED]
+- [[Any_61]] - `references` [EXTRACTED]
 - [[Return latest OpenSCAP compliance summary from saved reports.]] - `rationale_for` [EXTRACTED]
 - [[_load_latest_json()]] - `calls` [EXTRACTED]
 - [[aggregate_results()]] - `calls` [EXTRACTED]

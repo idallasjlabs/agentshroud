@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/ingest_api/routes/approval.py"
 type: "code"
-community: "decide_approval"
+community: "fastapi.md"
 location: "L110"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/decide_approval
+  - community/fastapimd
 ---
 
 # list_pending_approvals()
 
 ## Connections
-- [[AuthRequired_2]] - `references` [EXTRACTED]
+- [[AuthRequired]] - `references` [EXTRACTED]
 - [[List all pending approval requests Authentication required.]] - `rationale_for` [EXTRACTED]
-- [[Request_2]] - `references` [EXTRACTED]
+- [[Request_1]] - `references` [EXTRACTED]
 - [[approval.py]] - `contains` [EXTRACTED]
-- [[get_3]] - `references` [EXTRACTED]
+- [[get_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/decide_approval
+#graphify/code #graphify/EXTRACTED #community/fastapimd

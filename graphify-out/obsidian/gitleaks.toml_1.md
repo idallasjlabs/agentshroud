@@ -13,9 +13,9 @@ tags:
 
 ## Connections
 - [[Integration_1]] - `contains` [EXTRACTED]
-- [[Purpose_81]] - `contains` [EXTRACTED]
-- [[Related Notes_53]] - `contains` [EXTRACTED]
-- [[Usage_27]] - `contains` [EXTRACTED]
+- [[Purpose_84]] - `contains` [EXTRACTED]
+- [[Related Notes_56]] - `contains` [EXTRACTED]
+- [[Usage_28]] - `contains` [EXTRACTED]
 - [[What It Checks]] - `contains` [EXTRACTED]
 - [[gitleaks.toml]] - `contains` [EXTRACTED]
 

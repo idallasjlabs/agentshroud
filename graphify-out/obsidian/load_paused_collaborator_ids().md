@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "telegram_proxy.py"
+community: "RBACConfig"
 location: "L414"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/telegram_proxypy
+  - community/RBACConfig
 ---
 
 # load_paused_collaborator_ids()
 
 ## Connections
-- [[dot-__init__()_49]] - `calls` [EXTRACTED]
+- [[dot-__init__()_30]] - `calls` [EXTRACTED]
 - [[dot-_load_paused_ids()]] - `calls` [EXTRACTED]
 - [[Read persisted paused-collaborator IDs from disk. Owner-initiated manual pause…]] - `rationale_for` [EXTRACTED]
 - [[_load_collab_store()]] - `calls` [EXTRACTED]
@@ -20,4 +20,4 @@ tags:
 - [[rbac_config.py]] - `contains` [EXTRACTED]
 - [[telegram_proxy.py_2]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/telegram_proxypy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

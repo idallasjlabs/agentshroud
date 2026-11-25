@@ -1,17 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "ApprovalRequest"
+community: "TeamsConfig"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ApprovalRequest
+  - community/TeamsConfig
 ---
 
 # fixture
 
 ## Connections
-- [[approval_queue()]] - `references` [EXTRACTED]
-- [[queue_config()]] - `references` [EXTRACTED]
+- [[project()]] - `references` [EXTRACTED]
+- [[teams()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ApprovalRequest
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

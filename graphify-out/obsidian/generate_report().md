@@ -12,9 +12,9 @@ tags:
 # generate_report()
 
 ## Connections
-- [[dot-test_generate_report()_1]] - `calls` [EXTRACTED]
+- [[dot-test_generate_report()]] - `calls` [EXTRACTED]
 - [[dot-test_history_persistence()]] - `calls` [EXTRACTED]
-- [[Any_28]] - `references` [EXTRACTED]
+- [[Any_24]] - `references` [EXTRACTED]
 - [[Generate a full health report. Args summaries Dict mapping tool name to…]] - `rationale_for` [EXTRACTED]
 - [[Path_20]] - `references` [EXTRACTED]
 - [[calculate_overall_score()]] - `calls` [EXTRACTED]

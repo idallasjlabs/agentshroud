@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/llm_quota_detector.py"
 type: "code"
-community: "is_quota_exhausted"
+community: "test_anthropic_openai_translator.py"
 location: "L214"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/is_quota_exhausted
+  - community/test_anthropic_openai_translatorpy
 ---
 
 # is_rate_limited_post_retry()
@@ -21,4 +21,4 @@ tags:
 - [[test_detector_skips_non_429()]] - `calls` [EXTRACTED]
 - [[test_rate_limit_failover.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/is_quota_exhausted
+#graphify/code #graphify/EXTRACTED #community/test_anthropic_openai_translatorpy

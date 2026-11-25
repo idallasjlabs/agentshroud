@@ -1,17 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "email_send"
+community: "fixture"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/fixture
 ---
 
 # fixture
 
 ## Connections
-- [[bypass_auth()_1]] - `references` [EXTRACTED]
-- [[client()_10]] - `references` [EXTRACTED]
+- [[app()]] - `references` [EXTRACTED]
+- [[client()_11]] - `references` [EXTRACTED]
+- [[tmp_version_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/fixture

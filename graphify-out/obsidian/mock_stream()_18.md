@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_voice_gateway.py"
 type: "code"
-community: "test_voice_gateway.py"
-location: "L667"
+community: "mock_stream"
+location: "L1353"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_voice_gatewaypy
+  - community/mock_stream
 ---
 
 # mock_stream()
 
 ## Connections
-- [[_mock_llm_stream_resp()]] - `calls` [EXTRACTED]
-- [[_openai_delta_lines()]] - `calls` [EXTRACTED]
-- [[test_call_llm_stream_sends_full_history()]] - `contains` [EXTRACTED]
+- [[_mock_stream_resp()]] - `calls` [EXTRACTED]
+- [[_sse_body()]] - `calls` [EXTRACTED]
+- [[test_ws_sentence_chunked_tts_calls_synthesize_per_sentence()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_voice_gatewaypy
+#graphify/code #graphify/EXTRACTED #community/mock_stream

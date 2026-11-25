@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_discover_upstream_versions.py"
+source_file: "gateway/tests/test_alert_dispatcher_retry.py"
 type: "code"
-community: "discover_upstream_versions.py"
-location: "L162"
+community: "test_alert_dispatcher_retry.py"
+location: "L60"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/discover_upstream_versionspy
+  - community/test_alert_dispatcher_retrypy
 ---
 
 # flaky()
 
 ## Connections
-- [[dot-test_returns_result_after_transient_failures()]] - `indirect_call` [INFERRED]
+- [[test_succeeds_after_one_transient_failure()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/discover_upstream_versionspy
+#graphify/code #graphify/INFERRED #community/test_alert_dispatcher_retrypy

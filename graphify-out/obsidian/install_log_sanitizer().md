@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/log_sanitizer.py"
 type: "code"
-community: "LogSanitizer"
+community: "deep_security_test"
 location: "L133"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/LogSanitizer
+  - community/deep_security_test
 ---
 
 # install_log_sanitizer()
@@ -19,4 +19,4 @@ tags:
 - [[sanitized_getLogger()]] - `indirect_call` [INFERRED]
 - [[test_log_sanitizer.py]] - `imports` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/LogSanitizer
+#graphify/code #graphify/EXTRACTED #community/deep_security_test

@@ -13,14 +13,14 @@ tags:
 
 ## Connections
 - [[ApprovalRequest]] - `uses` [INFERRED]
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[MCP tool call interception endpoint. Receives an MCP tool call, runs it through…]] - `rationale_for` [EXTRACTED]
 - [[MCPProxyRequest]] - `references` [EXTRACTED]
 - [[MCPToolCall]] - `uses` [INFERRED]
-- [[Request_6]] - `references` [EXTRACTED]
+- [[Request_7]] - `references` [EXTRACTED]
 - [[_is_imessage_recipient_allowed()]] - `calls` [EXTRACTED]
 - [[_resolve_effective_agent_id()]] - `calls` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
-- [[post_6]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

@@ -23,6 +23,6 @@ tags:
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[test_main_endpoints.py]] - `imports` [EXTRACTED]
 - [[upstream()]] - `indirect_call` [INFERRED]
-- [[websocket_1]] - `references` [EXTRACTED]
+- [[websocket_5]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/hermes_dashboard_ws_proxy

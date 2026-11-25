@@ -11,7 +11,7 @@ tags:
 # fixture
 
 ## Connections
+- [[bypass_auth()]] - `references` [EXTRACTED]
 - [[client()]] - `references` [EXTRACTED]
-- [[sync_client()]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/app

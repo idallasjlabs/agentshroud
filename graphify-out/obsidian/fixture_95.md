@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "OutputSchemaEnforcer"
+community: "test_edge_pipeline.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/test_edge_pipelinepy
 ---
 
 # fixture
 
 ## Connections
-- [[enforcer()_2]] - `references` [EXTRACTED]
+- [[edge()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_edge_pipelinepy

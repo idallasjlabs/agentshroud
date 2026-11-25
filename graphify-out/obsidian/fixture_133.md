@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "EnvelopeSigner"
+community: "test_agentshroud_manager.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/test_agentshroud_managerpy
 ---
 
 # fixture
 
 ## Connections
-- [[signer()]] - `references` [EXTRACTED]
+- [[tmp_db()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/test_agentshroud_managerpy
