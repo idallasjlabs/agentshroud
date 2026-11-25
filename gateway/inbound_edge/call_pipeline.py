@@ -503,14 +503,34 @@ class EdgeCallPipeline:
             rec["latency_ms"] = round((self.d.clock() - started) * 1000, 3)
             await self._record(rec, principal)
 
+    async def record_auth_denial(self, denial: Dict[str, Any]) -> None:
+        """Audit an OAuth-layer refusal of an identified vendor (EdgeOAuthService.on_denied)."""
+        rec: Dict[str, Any] = {
+            "request_id": None,
+            "vendor": denial["vendor"],
+            "client_id": denial["client_id"],
+            "jti": denial.get("jti"),
+            "tool": f"oauth/{denial['step']}",
+            "outcome": "denied",
+            "deny_reason": denial["deny_reason"],
+            "latency_ms": 0.0,
+        }
+        self._count_denial(rec)
+        await self._record(rec, None, event_type="edge_auth")
+
     def _count_denial(self, rec: Dict[str, Any]) -> None:
         if rec["vendor"]:
             self.stats[rec["vendor"]].denials[rec["deny_reason"]] += 1
 
-    async def _record(self, rec: Dict[str, Any], principal: Optional[EdgePrincipal]) -> None:
+    async def _record(
+        self,
+        rec: Dict[str, Any],
+        principal: Optional[EdgePrincipal],
+        event_type: str = "edge_call",
+    ) -> None:
         severity = "info" if rec["outcome"] in ("ok", "awaiting_approval") else "warning"
         try:
-            await self.d.audit.log_event("edge_call", severity, rec, "inbound_edge", bot_id="edge")
+            await self.d.audit.log_event(event_type, severity, rec, "inbound_edge", bot_id="edge")
         except Exception as exc:
             logger.error("edge audit write failed: %s", exc)
         vendor = principal.vendor if principal is not None else rec.get("vendor")

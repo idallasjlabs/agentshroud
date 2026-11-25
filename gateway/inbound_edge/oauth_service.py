@@ -73,6 +73,7 @@ class EdgeOAuthService:
         resource: str,
         notify: Optional[Notify] = None,
         clock: Callable[[], float] = time.time,
+        on_denied: Optional[Callable[[Dict[str, Any]], Awaitable[None]]] = None,
     ):
         self.store = store
         self.tokens = tokens
@@ -82,6 +83,8 @@ class EdgeOAuthService:
         self._notify = notify
         self._clock = clock
         self._attempts: Dict[str, int] = {}
+        # Audits refusals of an identified vendor (FR6); wired to the call pipeline.
+        self.on_denied = on_denied
 
     # ── helpers ────────────────────────────────────────────────────────
     def _profile(self, vendor: str) -> VendorProfile:
@@ -103,12 +106,39 @@ class EdgeOAuthService:
             except Exception as exc:
                 logger.error("edge oauth owner notification failed: %s", exc)
 
-    async def _issue(
-        self, client_id: str, vendor: str, scopes: List[str], family: Optional[str] = None
-    ) -> Dict[str, Any]:
+    async def _denied(
+        self, step: str, vendor: str, client_id: str, reason: str, jti: Optional[str] = None
+    ) -> None:
+        if self.on_denied is None:
+            return
+        try:
+            await self.on_denied(
+                {
+                    "step": step,
+                    "vendor": vendor,
+                    "client_id": client_id,
+                    "jti": jti,
+                    "deny_reason": reason,
+                }
+            )
+        except Exception as exc:  # auditing must never turn a refusal into a grant
+            logger.error("edge auth denial audit failed: %s", exc)
+
+    async def _refuse_if_killed(self, step: str, vendor: str, client_id: str) -> None:
         killed = await self.store.killed_reason(vendor, client_id, "-")
         if killed:
+            await self._denied(step, vendor, client_id, "revoked")
             raise OAuthFailure("invalid_grant", killed)
+
+    async def _issue(
+        self,
+        step: str,
+        client_id: str,
+        vendor: str,
+        scopes: List[str],
+        family: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        await self._refuse_if_killed(step, vendor, client_id)
         access, _, exp = await self.tokens.mint_access(client_id, vendor, scopes)
         refresh = secrets.token_urlsafe(32)
         await self.store.put_refresh(
@@ -237,7 +267,9 @@ class EdgeOAuthService:
         found = await self.store.take_code(code)
         if found is None or found["client_id"] != client_id:
             raise OAuthFailure("invalid_grant", "authorisation code invalid or used")
-        return await self._issue(client_id, found["vendor"], list(found["data"]["scopes"]))
+        return await self._issue(
+            "token_exchange", client_id, found["vendor"], list(found["data"]["scopes"])
+        )
 
     async def load_refresh_token(self, client_id: str, token: str) -> Optional[Dict[str, Any]]:
         found = await self.store.peek_refresh(token)
@@ -248,21 +280,27 @@ class EdgeOAuthService:
     async def exchange_refresh_token(
         self, client_id: str, token: str, scopes: List[str]
     ) -> Dict[str, Any]:
+        # Check the kill before rotating: a refused refresh must not consume the token,
+        # or lifting the kill forces the vendor to reconnect (K1 rerun, 2026-11-25).
+        peeked = await self.store.peek_refresh(token)
+        if peeked is not None and peeked["client_id"] == client_id:
+            await self._refuse_if_killed("token_refresh", peeked["vendor"], client_id)
         found = await self.store.rotate_refresh(token)
         if found is None or found["client_id"] != client_id:
             raise OAuthFailure("invalid_grant", "refresh token invalid, used or revoked")
         granted = list(found["data"]["scopes"])
         if scopes and not set(scopes) <= set(granted):
             raise OAuthFailure("invalid_scope", "scope widening is not allowed")
-        killed = await self.store.killed_reason(found["vendor"], client_id, "-")
-        if killed:
-            raise OAuthFailure("invalid_grant", killed)
-        return await self._issue(client_id, found["vendor"], scopes or granted, found["family"])
+        return await self._issue(
+            "token_refresh", client_id, found["vendor"], scopes or granted, found["family"]
+        )
 
     async def load_access_token(self, token: str) -> Optional[Dict[str, Any]]:
         try:
             principal = await self.tokens.verify_access(token)
-        except TokenRejected:
+        except TokenRejected as exc:
+            if exc.vendor:  # a verified token refused by a kill; noise stays unaudited
+                await self._denied("access_token", exc.vendor, exc.client_id, "revoked", exc.jti)
             return None
         return {
             "token": token,
