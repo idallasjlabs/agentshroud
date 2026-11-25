@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "ContextGuard"
+community: "TestFileSandbox"
 location: "L343"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContextGuard
+  - community/TestFileSandbox
 ---
 
 # .test_session_isolation()
 
 ## Connections
 - [[Different sessions should not share state unsafely.]] - `rationale_for` [EXTRACTED]
-- [[TestContextGuard]] - `method` [EXTRACTED]
+- [[TestContextGuard_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContextGuard
+#graphify/code #graphify/EXTRACTED #community/TestFileSandbox

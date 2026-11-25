@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "._sanitize_reason"
+community: "_make_sanitizer"
 location: "L3627"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_sanitize_reason
+  - community/_make_sanitizer
 ---
 
 # .test_sanitize_reason_hides_internal_paths()
@@ -16,4 +16,4 @@ tags:
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[User-facing block reasons should not expose modules or file paths.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_sanitize_reason
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_dns_canvas_coverage.py"
 type: "code"
-community: "_run_asgi"
+community: "TestCanvasAuthHelpers"
 location: "L698"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_run_asgi
+  - community/TestCanvasAuthHelpers
 ---
 
 # .test_skip_basic_auth_bypasses_gate()
@@ -16,4 +16,4 @@ tags:
 - [[_http_scope()]] - `calls` [EXTRACTED]
 - [[_run_asgi()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_run_asgi
+#graphify/code #graphify/EXTRACTED #community/TestCanvasAuthHelpers

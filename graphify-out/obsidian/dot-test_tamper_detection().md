@@ -15,6 +15,6 @@ tags:
 - [[AuditExporter]] - `calls` [EXTRACTED]
 - [[Test tamper detection in exports.]] - `rationale_for` [EXTRACTED]
 - [[TestAuditExporter]] - `method` [EXTRACTED]
-- [[asyncio_79]] - `references` [EXTRACTED]
+- [[asyncio_80]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditExporter

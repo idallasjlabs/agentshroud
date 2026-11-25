@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy.py"
 type: "code"
-community: "TestInjectionDetection"
+community: "test_mcp_proxy.py"
 location: "L269"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestInjectionDetection
+  - community/test_mcp_proxypy
 ---
 
 # .test_small_base64_ok()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSuspiciousEncoding]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestInjectionDetection
+#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy

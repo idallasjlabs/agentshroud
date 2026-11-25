@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ServiceManager]] - `calls` [EXTRACTED]
 - [[TestGetEngine_1]] - `method` [EXTRACTED]
-- [[_boom()_25]] - `indirect_call` [INFERRED]
+- [[_boom()_26]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ServiceManager

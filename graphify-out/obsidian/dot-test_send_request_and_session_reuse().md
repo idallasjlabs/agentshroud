@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "MCPServerConfig"
 location: "L280"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/MCPServerConfig
 ---
 
 # .test_send_request_and_session_reuse()
@@ -17,4 +17,4 @@ tags:
 - [[MCPServerConfig]] - `calls` [EXTRACTED]
 - [[TestHttpSseConnection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

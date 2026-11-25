@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestRetry]] - `method` [EXTRACTED]
 - [[_retry()]] - `calls` [INFERRED]
-- [[flaky()]] - `indirect_call` [INFERRED]
+- [[flaky()_1]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/INFERRED #community/discover_upstream_versionspy

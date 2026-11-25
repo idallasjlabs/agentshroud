@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_permissions.py"
 type: "code"
-community: "TestCheckAll"
+community: "PermissionLevel"
 location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestCheckAll
+  - community/PermissionLevel
 ---
 
 # .test_server_denied_stops_early()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCheckAll]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestCheckAll
+#graphify/code #graphify/EXTRACTED #community/PermissionLevel

@@ -15,6 +15,6 @@ tags:
 - [[ApprovalQueueItem]] - `calls` [EXTRACTED]
 - [[Items saved to store can be reloaded.]] - `rationale_for` [EXTRACTED]
 - [[TestApprovalStorePersistence]] - `method` [EXTRACTED]
-- [[asyncio_47]] - `references` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -16,8 +16,8 @@ tags:
 - [[PassthroughPipeline]] - `calls` [EXTRACTED]
 - [[TestStrangerRateLimit]] - `method` [EXTRACTED]
 - [[_send_stranger_rate_limit_notice must include a reset time in HHMM UTC format.]] - `rationale_for` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_urlopen()_23]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_urlopen()_19]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_48]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/test_stranger_within_limit_triggers_approval_workflow

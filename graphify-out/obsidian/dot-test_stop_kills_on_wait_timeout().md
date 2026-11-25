@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_proxy_coverage.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "MCPServerConfig"
 location: "L227"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/MCPServerConfig
 ---
 
 # .test_stop_kills_on_wait_timeout()
@@ -19,4 +19,4 @@ tags:
 - [[fake_exec()_2]] - `contains` [EXTRACTED]
 - [[fake_exec()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

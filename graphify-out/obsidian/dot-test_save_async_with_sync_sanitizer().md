@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ReportStore]] - `calls` [EXTRACTED]
 - [[TestAsyncSave]] - `method` [EXTRACTED]
-- [[asyncio_30]] - `references` [EXTRACTED]
+- [[asyncio_32]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/TestAsyncSave

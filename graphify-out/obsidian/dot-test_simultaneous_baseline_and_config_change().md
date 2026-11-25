@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ContainerSnapshot"
+community: "DriftDetector"
 location: "L922"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/DriftDetector
 ---
 
 # .test_simultaneous_baseline_and_config_change()
@@ -17,4 +17,4 @@ tags:
 - [[TestDriftDetectorHardened]] - `method` [EXTRACTED]
 - [[Verify drift is detected even with rapid changes.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/DriftDetector

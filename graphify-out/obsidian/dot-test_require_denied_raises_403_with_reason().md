@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "ws_soc_endpoint"
+community: "RBACConfig"
 location: "L183"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ws_soc_endpoint
+  - community/RBACConfig
 ---
 
 # .test_require_denied_raises_403_with_reason()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[SCLCaller]] - `calls` [EXTRACTED]
 - [[TestSCLCaller]] - `method` [EXTRACTED]
-- [[_FakeRBAC_2]] - `calls` [EXTRACTED]
+- [[_FakeRBAC_1]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ws_soc_endpoint
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

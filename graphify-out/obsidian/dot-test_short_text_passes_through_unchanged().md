@@ -15,8 +15,8 @@ tags:
 - [[TestSendTelegramTruncation]] - `method` [EXTRACTED]
 - [[__enter__()_3]] - `contains` [EXTRACTED]
 - [[__exit__()_3]] - `contains` [EXTRACTED]
-- [[_fake_urlopen()_3]] - `contains` [EXTRACTED]
-- [[_fake_urlopen()_4]] - `indirect_call` [INFERRED]
+- [[_fake_urlopen()_1]] - `contains` [EXTRACTED]
+- [[_fake_urlopen()_2]] - `indirect_call` [INFERRED]
 - [[asyncio_21]] - `references` [EXTRACTED]
 - [[read()_6]] - `contains` [EXTRACTED]
 

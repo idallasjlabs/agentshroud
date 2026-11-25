@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: ".test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval"
+community: "_make_sanitizer"
 location: "L3459"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval
+  - community/_make_sanitizer
 ---
 
 # .test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval()
@@ -15,7 +15,7 @@ tags:
 - [[Domains over 253 chars should be rejected before queueing approvals.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
-- [[check_async()_57]] - `contains` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
+- [[check_async()_49]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_raw_web_fetch_json_overlong_fqdn_does_not_queue_approval
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard.py"
 type: "code"
-community: "check_command"
+community: "scrub_output"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/check_command
+  - community/scrub_output
 ---
 
 # .test_scrubs_aws_key()
@@ -15,4 +15,4 @@ tags:
 - [[TestScrubOutput]] - `method` [EXTRACTED]
 - [[scrub_output()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/check_command
+#graphify/code #graphify/EXTRACTED #community/scrub_output

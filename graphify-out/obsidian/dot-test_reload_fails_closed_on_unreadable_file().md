@@ -1,21 +1,21 @@
 ---
 source_file: "gateway/tests/test_skill_guard.py"
 type: "code"
-community: "test_skill_guard.py"
+community: "Path"
 location: "L389"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_skill_guardpy
+  - community/Path
 ---
 
 # .test_reload_fails_closed_on_unreadable_file()
 
 ## Connections
-- [[Path_34]] - `references` [EXTRACTED]
-- [[TestClient_1]] - `references` [EXTRACTED]
+- [[Path_33]] - `references` [EXTRACTED]
+- [[TestClient]] - `references` [EXTRACTED]
 - [[TestReloadIntegration]] - `method` [EXTRACTED]
 - [[_write_tree()]] - `calls` [EXTRACTED]
-- [[boom()_4]] - `indirect_call` [INFERRED]
+- [[boom()_3]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_skill_guardpy
+#graphify/code #graphify/EXTRACTED #community/Path

@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[ModeRequest]] - `calls` [EXTRACTED]
 - [[TestMode]] - `method` [EXTRACTED]
-- [[fake_sleep()_2]] - `indirect_call` [INFERRED]
+- [[fake_sleep()_1]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/ModeRequest

@@ -12,7 +12,7 @@ tags:
 # .test_session_to_dict_and_back()
 
 ## Connections
-- [[dot-from_dict()_6]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_7]] - `calls` [EXTRACTED]
 - [[TestSerialization_2]] - `method` [EXTRACTED]
 - [[UserSession]] - `calls` [EXTRACTED]
 

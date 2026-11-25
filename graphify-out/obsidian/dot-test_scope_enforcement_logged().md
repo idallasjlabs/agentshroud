@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_key_vault.py"
 type: "code"
-community: "TestKeyScoping"
+community: "KeyVault"
 location: "L74"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestKeyScoping
+  - community/KeyVault
 ---
 
 # .test_scope_enforcement_logged()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestKeyScoping]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestKeyScoping
+#graphify/code #graphify/EXTRACTED #community/KeyVault

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_make_update"
+community: "PassthroughPipeline"
 location: "L5520"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_update
+  - community/PassthroughPipeline
 ---
 
 # .test_self_diagnose_dedupe_handles_missing_update_id_same_message()
@@ -18,8 +18,8 @@ tags:
 - [[When update_id is missing, same message_id should dedupe self-diagnose notices.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_urlopen()_73]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_urlopen()_71]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_48]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_update
+#graphify/code #graphify/EXTRACTED #community/PassthroughPipeline

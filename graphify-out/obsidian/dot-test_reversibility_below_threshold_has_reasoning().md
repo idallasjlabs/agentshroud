@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestReversibilityScoring"
+community: "ToolChainAnalyzer"
 location: "L543"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReversibilityScoring
+  - community/ToolChainAnalyzer
 ---
 
 # .test_reversibility_below_threshold_has_reasoning()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReversibilityScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReversibilityScoring
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

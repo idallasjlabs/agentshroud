@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "TestFromPipelineResult"
 location: "L382"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/TestFromPipelineResult
 ---
 
 # .test_sanitized()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestFromPipelineResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/TestFromPipelineResult

@@ -1,19 +1,19 @@
 ---
 source_file: "gateway/tests/test_progressive_lockdown.py"
 type: "code"
-community: "TestConcurrency"
+community: "ProgressiveLockdown"
 location: "L556"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestConcurrency
+  - community/ProgressiveLockdown
 ---
 
 # .test_threaded_record_block_counts_exactly()
 
 ## Connections
 - [[ProgressiveLockdown]] - `calls` [EXTRACTED]
-- [[TestConcurrency_1]] - `method` [EXTRACTED]
+- [[TestConcurrency]] - `method` [EXTRACTED]
 - [[hammer()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestConcurrency
+#graphify/code #graphify/EXTRACTED #community/ProgressiveLockdown

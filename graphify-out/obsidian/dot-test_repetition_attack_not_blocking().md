@@ -12,7 +12,7 @@ tags:
 # .test_repetition_attack_not_blocking()
 
 ## Connections
-- [[TestContextGuard_1]] - `method` [EXTRACTED]
+- [[TestContextGuard]] - `method` [EXTRACTED]
 - [[_req()_1]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_req

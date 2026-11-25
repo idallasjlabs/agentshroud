@@ -15,7 +15,7 @@ tags:
 - [[AsyncMock]] - `calls` [INFERRED]
 - [[TestBotSelectorFrontend]] - `method` [EXTRACTED]
 - [[_make_m6_caller()]] - `calls` [EXTRACTED]
-- [[asyncio_76]] - `references` [EXTRACTED]
+- [[asyncio_77]] - `references` [EXTRACTED]
 - [[get_security_events()]] - `calls` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_soc_botspy

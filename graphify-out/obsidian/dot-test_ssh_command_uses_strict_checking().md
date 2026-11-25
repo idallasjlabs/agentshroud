@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_fixes.py"
 type: "code"
-community: "GatewayConfig"
+community: "ingest_api/config.py"
 location: "L62"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/GatewayConfig
+  - community/ingest_api/configpy
 ---
 
 # .test_ssh_command_uses_strict_checking()
@@ -17,7 +17,7 @@ tags:
 - [[SSHHostConfig]] - `calls` [EXTRACTED]
 - [[SSHProxy]] - `calls` [EXTRACTED]
 - [[TestSSHStrictHostKeyChecking]] - `method` [EXTRACTED]
-- [[asyncio_40]] - `references` [EXTRACTED]
+- [[asyncio_67]] - `references` [EXTRACTED]
 - [[mock_create_subprocess()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/GatewayConfig
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

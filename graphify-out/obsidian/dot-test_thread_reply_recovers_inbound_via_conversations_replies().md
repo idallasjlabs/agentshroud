@@ -16,7 +16,7 @@ tags:
 - [[TestOutboundTracking]] - `method` [EXTRACTED]
 - [[Thread reply with no cached corr → conversations.replies lookup recovers the…]] - `rationale_for` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_7]] - `references` [EXTRACTED]
+- [[asyncio_5]] - `references` [EXTRACTED]
 - [[fake_api()_3]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

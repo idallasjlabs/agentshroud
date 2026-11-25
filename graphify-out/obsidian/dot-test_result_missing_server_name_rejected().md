@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_mcp_result_endpoint.py"
 type: "code"
-community: "ProxyResult"
+community: "TestMCPResultEndpoint"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ProxyResult
+  - community/TestMCPResultEndpoint
 ---
 
 # .test_result_missing_server_name_rejected()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Request missing required server_name is rejected with 422.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPResultEndpoint]] - `method` [EXTRACTED]
-- [[asyncio_29]] - `references` [EXTRACTED]
+- [[asyncio_66]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ProxyResult
+#graphify/code #graphify/EXTRACTED #community/TestMCPResultEndpoint

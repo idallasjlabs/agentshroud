@@ -18,8 +18,8 @@ tags:
 - [[Unicode fullwidth self-diagnostic command should still be local-handled.]] - `rationale_for` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_urlopen()_13]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_urlopen()_12]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_48]] - `indirect_call` [INFERRED]
 
 #graphify/code #graphify/EXTRACTED #community/_wrap_response

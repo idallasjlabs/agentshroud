@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_enhanced_status.py"
 type: "code"
-community: "StatusResponse"
+community: "fastapi.md"
 location: "L63"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/StatusResponse
+  - community/fastapimd
 ---
 
 # .test_status_response_monitor_mode()
@@ -16,4 +16,4 @@ tags:
 - [[Test status response in monitor mode.]] - `rationale_for` [EXTRACTED]
 - [[TestEnhancedStatus]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/StatusResponse
+#graphify/code #graphify/EXTRACTED #community/fastapimd

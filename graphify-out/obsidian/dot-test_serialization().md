@@ -12,7 +12,7 @@ tags:
 # .test_serialization()
 
 ## Connections
-- [[dot-from_dict()_10]] - `calls` [EXTRACTED]
+- [[dot-from_dict()_11]] - `calls` [EXTRACTED]
 - [[TestAgentIsolation]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AgentRegistry

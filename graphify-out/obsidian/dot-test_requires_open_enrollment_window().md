@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_oauth.py"
 type: "code"
-community: "_client_info"
+community: "test_edge_oauth.py"
 location: "L118"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_client_info
+  - community/test_edge_oauthpy
 ---
 
 # .test_requires_open_enrollment_window()
@@ -15,4 +15,4 @@ tags:
 - [[TestRegistration]] - `method` [EXTRACTED]
 - [[_client_info()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_client_info
+#graphify/code #graphify/EXTRACTED #community/test_edge_oauthpy
