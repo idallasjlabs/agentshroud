@@ -26,8 +26,9 @@ import binascii
 import copy
 import hashlib
 import json
+import re
 from pathlib import Path
-from typing import Any, Dict, Mapping
+from typing import Any, Dict, Mapping, Optional
 
 from cryptography.exceptions import InvalidSignature
 from cryptography.hazmat.primitives import serialization
@@ -203,18 +204,56 @@ def mcp_tool(name: str) -> dict:
 
 # ── owner signing workflow ───────────────────────────────────────────────────
 #
-#   python -m gateway.inbound_edge.descriptors keygen | keyring set agentshroud-edge descriptors
+#   python -m gateway.inbound_edge.descriptors keygen --keychain agentshroud-edge
 #   python -m gateway.inbound_edge.descriptors manifest
-#   keyring get agentshroud-edge descriptors | python -m gateway.inbound_edge.descriptors sign
+#   python -m gateway.inbound_edge.descriptors sign --keychain agentshroud-edge
 #
-# keygen prints the raw Ed25519 private key once, base64 on one line, for a
-# keychain/1Password to store; only the public key is written to disk. sign reads
-# the key from stdin (never argv), refuses a key that does not match the committed
-# public key, and verifies the result before writing the signature.
+# Run as the OWNER's macOS account, never the account the agents run as: the key
+# signs what the edge lets vendors call. With --keychain the key goes to and from
+# the login keychain through ``security`` on stdin only (never argv, never printed).
+# Without it, keygen prints the key once (base64, one line) for 1Password and sign
+# reads it from stdin. sign refuses a key that does not match the committed public
+# key and verifies the result before writing the signature.
+
+_ITEM_ACCOUNT = "descriptors"
+_KEYCHAIN_SERVICE_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,63}")
 
 
-def main(argv=None, stdin=None) -> int:
+def _keychain_has(run, service: str) -> bool:
+    found = run(
+        ["security", "find-generic-password", "-s", service, "-a", _ITEM_ACCOUNT],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return found.returncode == 0
+
+
+def _keychain_store(run, service: str, secret: str) -> bool:
+    # `security -i` reads the command from stdin, so the key never appears in argv.
+    stored = run(
+        ["security", "-i"],
+        input=f"add-generic-password -s {service} -a {_ITEM_ACCOUNT} -w {secret}\n",
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return stored.returncode == 0
+
+
+def _keychain_read(run, service: str) -> Optional[str]:
+    found = run(
+        ["security", "find-generic-password", "-s", service, "-a", _ITEM_ACCOUNT, "-w"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return found.stdout if found.returncode == 0 else None
+
+
+def main(argv=None, stdin=None, run=None) -> int:
     import argparse
+    import subprocess
     import sys
 
     from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
@@ -224,29 +263,49 @@ def main(argv=None, stdin=None) -> int:
     parser.add_argument("--manifest", type=Path, default=MANIFEST_PATH)
     parser.add_argument("--signature", type=Path, default=SIGNATURE_PATH)
     parser.add_argument("--public-key", type=Path, default=PUBLIC_KEY_PATH)
+    parser.add_argument("--keychain", metavar="SERVICE", help="macOS login keychain service")
     args = parser.parse_args(argv)
     stdin = stdin or sys.stdin
+    run = run or subprocess.run
+    if args.keychain is not None and not _KEYCHAIN_SERVICE_RE.fullmatch(args.keychain):
+        print("--keychain: service must be letters, digits, '.', '_' or '-'", file=sys.stderr)
+        return 1
 
     if args.command == "keygen":
-        key = Ed25519PrivateKey.generate()
-        args.public_key.write_bytes(
-            key.public_key().public_bytes(
-                serialization.Encoding.PEM, serialization.PublicFormat.SubjectPublicKeyInfo
+        if args.keychain and _keychain_has(run, args.keychain):
+            print(
+                f"keygen: keychain already holds {args.keychain}; not replacing it", file=sys.stderr
             )
-        )
+            return 1
+        key = Ed25519PrivateKey.generate()
         raw = key.private_bytes(
             serialization.Encoding.Raw,
             serialization.PrivateFormat.Raw,
             serialization.NoEncryption(),
         )
-        print(base64.b64encode(raw).decode())
+        secret = base64.b64encode(raw).decode()
+        if args.keychain and not _keychain_store(run, args.keychain, secret):
+            print("keygen: storing the key in the keychain failed", file=sys.stderr)
+            return 1
+        # Public key only once the private key is safely stored.
+        args.public_key.write_bytes(
+            key.public_key().public_bytes(
+                serialization.Encoding.PEM, serialization.PublicFormat.SubjectPublicKeyInfo
+            )
+        )
+        if not args.keychain:
+            print(secret)
         return 0
     if args.command == "manifest":
         args.manifest.write_text(json.dumps(build_manifest(), indent=2, sort_keys=True) + "\n")
         return 0
     if args.command == "sign":
+        line = stdin.readline() if not args.keychain else _keychain_read(run, args.keychain)
+        if line is None:
+            print(f"sign: no {args.keychain} key readable in the keychain", file=sys.stderr)
+            return 1
         try:
-            key = Ed25519PrivateKey.from_private_bytes(base64.b64decode(stdin.readline().strip()))
+            key = Ed25519PrivateKey.from_private_bytes(base64.b64decode(line.strip()))
         except (binascii.Error, ValueError):
             print("sign: stdin did not contain a base64 Ed25519 private key", file=sys.stderr)
             return 1
