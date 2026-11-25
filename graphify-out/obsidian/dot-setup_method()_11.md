@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_tool_injection_scan.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "ToolResultInjectionScanner"
-location: "L23"
+community: "ContainerSnapshot"
+location: "L509"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ToolResultInjectionScanner
+  - community/ContainerSnapshot
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._1]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultInjectionScanner]] - `method` [EXTRACTED]
-- [[ToolResultInjectionScanner]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `calls` [EXTRACTED]
+- [[DriftDetector]] - `calls` [EXTRACTED]
+- [[TestDriftDetector]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ToolResultInjectionScanner
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

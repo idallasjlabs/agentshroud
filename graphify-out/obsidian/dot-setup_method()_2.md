@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/tests/test_xml_leak_filter.py"
+source_file: "gateway/tests/test_runtime_engines.py"
 type: "code"
-community: "run"
-location: "L19"
+community: "patch"
+location: "L360"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/run
+  - community/patch
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
-- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
-- [[XMLLeakFilter]] - `calls` [EXTRACTED]
+- [[AppleContainerEngine]] - `calls` [EXTRACTED]
+- [[TestAppleContainerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/run
+#graphify/code #graphify/EXTRACTED #community/patch

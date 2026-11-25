@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
 type: "code"
-community: "TestToolResultSanitizer"
+community: "ToolResultSanitizer"
 location: "L102"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestToolResultSanitizer
+  - community/ToolResultSanitizer
 ---
 
 # .test_blocked_pattern_detection()
@@ -15,4 +15,4 @@ tags:
 - [[Test detection of blocked patterns in URLs.]] - `rationale_for` [EXTRACTED]
 - [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestToolResultSanitizer
+#graphify/code #graphify/EXTRACTED #community/ToolResultSanitizer

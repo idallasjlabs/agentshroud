@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_dns_blocklist.py"
 type: "code"
-community: "EncryptedStore"
-location: "L38"
+community: "TestParseHostsLine"
+location: "L16"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EncryptedStore
+  - community/TestParseHostsLine
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EncryptedStore]] - `calls` [EXTRACTED]
-- [[TestEncryptedStore]] - `method` [EXTRACTED]
+- [[DNSBlocklist]] - `calls` [EXTRACTED]
+- [[TestParseHostsLine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EncryptedStore
+#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine

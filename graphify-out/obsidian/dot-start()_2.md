@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/proxy/mcp_proxy.py"
+source_file: "gateway/proxy/http_proxy.py"
 type: "code"
-community: "._extract_egress_targets"
-location: "L101"
+community: "HTTPConnectProxy"
+location: "L153"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_extract_egress_targets
+  - community/HTTPConnectProxy
 ---
 
 # .start()
 
 ## Connections
-- [[dot-send_request()_2]] - `calls` [EXTRACTED]
-- [[Start the MCP server process.]] - `rationale_for` [EXTRACTED]
-- [[StdioConnection]] - `method` [EXTRACTED]
+- [[HTTPConnectProxy]] - `method` [EXTRACTED]
+- [[Start the CONNECT proxy server.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/_extract_egress_targets
+#graphify/code #graphify/EXTRACTED #community/HTTPConnectProxy

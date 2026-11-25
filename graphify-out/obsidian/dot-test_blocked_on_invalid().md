@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_agentshroud_manager.py"
 type: "code"
-community: "version_routes.py"
+community: "downgrade"
 location: "L155"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/version_routespy
+  - community/downgrade
 ---
 
 # .test_blocked_on_invalid()
@@ -15,4 +15,4 @@ tags:
 - [[TestDowngrade]] - `method` [EXTRACTED]
 - [[downgrade()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/version_routespy
+#graphify/code #graphify/EXTRACTED #community/downgrade

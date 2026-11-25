@@ -1,21 +1,20 @@
 ---
-source_file: "gateway/tests/test_memory_lifecycle.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "middleware.py"
-location: "L394"
+community: "EgressFilter"
+location: "L407"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/EgressFilter
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
-- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
-- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressFilterConfig]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/EgressFilter

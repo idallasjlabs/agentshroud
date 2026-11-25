@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_outbound_filter.py"
+source_file: "gateway/tests/test_multilingual_injection.py"
 type: "code"
-community: "OutboundInfoFilter"
-location: "L521"
+community: "TestMultilingualInjection"
+location: "L10"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutboundInfoFilter
+  - community/TestMultilingualInjection
 ---
 
 # .setup_method()
 
 ## Connections
-- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
-- [[TestFabricatedSecurityNotice]] - `method` [EXTRACTED]
+- [[PromptGuard]] - `calls` [EXTRACTED]
+- [[Set up PromptGuard with standard thresholds.]] - `rationale_for` [EXTRACTED]
+- [[TestMultilingualInjection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter
+#graphify/code #graphify/EXTRACTED #community/TestMultilingualInjection

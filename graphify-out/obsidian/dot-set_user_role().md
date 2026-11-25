@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/rbac_config.py"
 type: "code"
-community: "soc/router.py"
+community: "RBACConfig"
 location: "L161"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/soc/routerpy
+  - community/RBACConfig
 ---
 
 # .set_user_role()
@@ -16,4 +16,4 @@ tags:
 - [[Role]] - `references` [EXTRACTED]
 - [[Set role for a user ID (owner-only operation).]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/soc/routerpy
+#graphify/code #graphify/EXTRACTED #community/RBACConfig

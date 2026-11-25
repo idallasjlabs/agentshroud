@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "TestParseHostsLine"
-location: "L16"
+community: "EgressPolicy"
+location: "L845"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestParseHostsLine
+  - community/EgressPolicy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestParseHostsLine]] - `method` [EXTRACTED]
+- [[EgressFilter]] - `calls` [EXTRACTED]
+- [[EgressPolicy]] - `calls` [EXTRACTED]
+- [[TestEgressSSRF]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestParseHostsLine
+#graphify/code #graphify/EXTRACTED #community/EgressPolicy

@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/tests/test_runtime_engines.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "patch"
-location: "L317"
+community: "EncryptedStore"
+location: "L38"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/patch
+  - community/EncryptedStore
 ---
 
 # .setup_method()
 
 ## Connections
-- [[PodmanEngine]] - `calls` [EXTRACTED]
-- [[TestPodmanEngine]] - `method` [EXTRACTED]
+- [[EncryptedStore]] - `calls` [EXTRACTED]
+- [[TestEncryptedStore]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/patch
+#graphify/code #graphify/EXTRACTED #community/EncryptedStore

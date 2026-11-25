@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/mcp_proxy.py"
 type: "code"
-community: "test_mcp_proxy.py"
+community: "MCPServerConfig"
 location: "L143"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_mcp_proxypy
+  - community/MCPServerConfig
 ---
 
 # .stop()
@@ -15,4 +15,4 @@ tags:
 - [[StdioConnection]] - `method` [EXTRACTED]
 - [[Stop the MCP server process.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_mcp_proxypy
+#graphify/code #graphify/EXTRACTED #community/MCPServerConfig

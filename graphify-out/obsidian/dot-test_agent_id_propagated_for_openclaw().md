@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L126"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # .test_agent_id_propagated_for_openclaw()
@@ -19,4 +19,4 @@ tags:
 - [[_PipelineCaptor]] - `calls` [EXTRACTED]
 - [[_make_mock_app_state()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

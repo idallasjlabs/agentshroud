@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "_make_update"
+community: ".test_collaborator_approval_queue_probe_gets_safe_info"
 location: "L3049"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/_make_update
+  - community/test_collaborator_approval_queue_probe_gets_safe_info
 ---
 
 # .test_collaborator_hypothetical_execution_question_gets_safe_info()
@@ -18,8 +18,8 @@ tags:
 - [[TestInboundPipelineOnGetUpdates]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
-- [[fake_urlopen()_41]] - `contains` [EXTRACTED]
-- [[fake_urlopen()_51]] - `indirect_call` [INFERRED]
+- [[asyncio_19]] - `references` [EXTRACTED]
+- [[fake_urlopen()_23]] - `contains` [EXTRACTED]
+- [[fake_urlopen()_48]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/_make_update
+#graphify/code #graphify/EXTRACTED #community/test_collaborator_approval_queue_probe_gets_safe_info

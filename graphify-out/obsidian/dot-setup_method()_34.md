@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_dns_blocklist.py"
+source_file: "gateway/tests/test_security_hardening.py"
 type: "code"
-community: "DNSBlocklist"
-location: "L101"
+community: "AgentRegistry"
+location: "L647"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/DNSBlocklist
+  - community/AgentRegistry
 ---
 
 # .setup_method()
 
 ## Connections
-- [[DNSBlocklist]] - `calls` [EXTRACTED]
-- [[TestLoadFromText]] - `method` [EXTRACTED]
+- [[AgentRegistry]] - `calls` [EXTRACTED]
+- [[ContainerConfig]] - `calls` [EXTRACTED]
+- [[TestAgentIsolation]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/DNSBlocklist
+#graphify/code #graphify/EXTRACTED #community/AgentRegistry

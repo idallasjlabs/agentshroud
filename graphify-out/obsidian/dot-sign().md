@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/instruction_envelope.py"
 type: "code"
-community: "EnvelopeSigner"
+community: "service.py"
 location: "L61"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EnvelopeSigner
+  - community/servicepy
 ---
 
 # .sign()
@@ -19,4 +19,4 @@ tags:
 - [[InstructionEnvelope]] - `calls` [EXTRACTED]
 - [[Return a signed envelope for content.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EnvelopeSigner
+#graphify/code #graphify/EXTRACTED #community/servicepy

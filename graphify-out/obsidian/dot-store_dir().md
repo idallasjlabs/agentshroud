@@ -12,8 +12,8 @@ tags:
 # .store_dir()
 
 ## Connections
-- [[Path_59]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
-- [[fixture_114]] - `references` [EXTRACTED]
+- [[fixture_111]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/IntelReportStore

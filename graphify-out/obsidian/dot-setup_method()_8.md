@@ -1,19 +1,20 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "EgressPolicy"
-location: "L845"
+community: "MemoryLifecycleConfig"
+location: "L192"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressPolicy
+  - community/MemoryLifecycleConfig
 ---
 
 # .setup_method()
 
 ## Connections
-- [[EgressFilter]] - `calls` [EXTRACTED]
-- [[EgressPolicy]] - `calls` [EXTRACTED]
-- [[TestEgressSSRF]] - `method` [EXTRACTED]
+- [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
+- [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
+- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressPolicy
+#graphify/code #graphify/EXTRACTED #community/MemoryLifecycleConfig

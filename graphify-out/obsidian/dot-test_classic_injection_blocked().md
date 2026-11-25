@@ -1,18 +1,18 @@
 ---
 source_file: "gateway/tests/test_e2e_watchtower.py"
 type: "code"
-community: "test_e2e_watchtower.py"
+community: "PIISanitizer"
 location: "L86"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_e2e_watchtowerpy
+  - community/PIISanitizer
 ---
 
 # .test_classic_injection_blocked()
 
 ## Connections
 - [[TestE2E01PromptGuardBlocking]] - `method` [EXTRACTED]
-- [[asyncio_9]] - `references` [EXTRACTED]
+- [[asyncio_7]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_e2e_watchtowerpy
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

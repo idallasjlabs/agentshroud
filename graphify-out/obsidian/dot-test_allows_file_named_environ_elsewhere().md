@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_env_guard_class.py"
 type: "code"
-community: "test_env_guard_class.py"
+community: "TestCheckFileAccess"
 location: "L46"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_env_guard_classpy
+  - community/TestCheckFileAccess
 ---
 
 # .test_allows_file_named_environ_elsewhere()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestCheckFileAccess]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_env_guard_classpy
+#graphify/code #graphify/EXTRACTED #community/TestCheckFileAccess

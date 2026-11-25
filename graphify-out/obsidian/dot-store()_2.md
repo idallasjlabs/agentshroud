@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_audit_export.py"
 type: "code"
 community: "AuditStore"
-location: "L463"
+location: "L303"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[AuditStore]] - `calls` [EXTRACTED]
-- [[TestAuditStoreAnchoredVerify]] - `method` [EXTRACTED]
-- [[fixture_116]] - `references` [EXTRACTED]
+- [[TestAuditStoreBotId]] - `method` [EXTRACTED]
+- [[fixture_113]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AuditStore

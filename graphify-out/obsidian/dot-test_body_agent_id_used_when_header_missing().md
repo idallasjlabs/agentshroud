@@ -14,8 +14,8 @@ tags:
 ## Connections
 - [[Body agent_id is used only when trusted header is absent.]] - `rationale_for` [EXTRACTED]
 - [[TestMCPProxyEndpoint_1]] - `method` [EXTRACTED]
-- [[_capture()_3]] - `contains` [EXTRACTED]
-- [[_capture()_4]] - `indirect_call` [INFERRED]
-- [[asyncio_28]] - `references` [EXTRACTED]
+- [[_capture()]] - `contains` [EXTRACTED]
+- [[_capture()_1]] - `indirect_call` [INFERRED]
+- [[asyncio_30]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ProxyResult

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustManager"
+community: "TrustConfig"
 location: "L534"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustConfig
 ---
 
 # .test_adding_a_fourth_bot_extends_the_mesh_to_everyone()
@@ -17,4 +17,4 @@ tags:
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 - [[The exact scenario the user asked for add a 4th bot and it just works.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

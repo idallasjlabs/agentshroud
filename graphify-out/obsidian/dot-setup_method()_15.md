@@ -1,20 +1,18 @@
 ---
-source_file: "gateway/tests/test_tool_result_sanitizer_enhanced.py"
+source_file: "gateway/tests/test_metadata_guard.py"
 type: "code"
-community: ".setup_method"
-location: "L51"
+community: "TestMetadataGuard"
+location: "L18"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/setup_method
+  - community/TestMetadataGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
-- [[TestToolResultSanitizer_1]] - `method` [EXTRACTED]
-- [[ToolResultSanitizer]] - `calls` [EXTRACTED]
-- [[ToolResultSanitizerConfig]] - `calls` [EXTRACTED]
+- [[MetadataGuard]] - `calls` [EXTRACTED]
+- [[TestMetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/setup_method
+#graphify/code #graphify/EXTRACTED #community/TestMetadataGuard

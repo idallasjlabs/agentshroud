@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_observatory_mode.py"
 type: "code"
-community: "ModeRequest"
+community: "TestObservatoryMode"
 location: "L422"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ModeRequest
+  - community/TestObservatoryMode
 ---
 
 # .test_auto_revert_timer_logic()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[Test auto-revert timer functionality.]] - `rationale_for` [EXTRACTED]
 - [[TestObservatoryMode]] - `method` [EXTRACTED]
-- [[asyncio_55]] - `references` [EXTRACTED]
+- [[asyncio_88]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ModeRequest
+#graphify/code #graphify/EXTRACTED #community/TestObservatoryMode

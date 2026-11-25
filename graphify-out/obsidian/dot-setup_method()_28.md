@@ -1,20 +1,21 @@
 ---
 source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "middleware.py"
-location: "L192"
+community: "test_memory_lifecycle.py"
+location: "L394"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/middlewarepy
+  - community/test_memory_lifecyclepy
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MemoryLifecycleConfig]] - `calls` [EXTRACTED]
+- [[MemoryIntegrityMonitor]] - `calls` [EXTRACTED]
 - [[MemoryLifecycleManager]] - `calls` [EXTRACTED]
-- [[Set up test environment._2]] - `rationale_for` [EXTRACTED]
-- [[TestMemoryLifecycleManager]] - `method` [EXTRACTED]
+- [[MemorySecurityConfig]] - `calls` [EXTRACTED]
+- [[Set up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/middlewarepy
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

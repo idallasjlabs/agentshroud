@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_edge_jwt.py"
 type: "code"
-community: "TestSingleUseGrants"
+community: "test_edge_e2e_sdk.py"
 location: "L242"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestSingleUseGrants
+  - community/test_edge_e2e_sdkpy
 ---
 
 # .test_auth_code_is_single_use()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestSingleUseGrants]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestSingleUseGrants
+#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_prompt_protection.py"
 type: "code"
-community: "TestPromptProtection"
+community: "ContextGuard"
 location: "L187"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestPromptProtection
+  - community/ContextGuard
 ---
 
 # .test_add_protected_content()
@@ -15,4 +15,4 @@ tags:
 - [[Test adding protected content.]] - `rationale_for` [EXTRACTED]
 - [[TestPromptProtection]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestPromptProtection
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

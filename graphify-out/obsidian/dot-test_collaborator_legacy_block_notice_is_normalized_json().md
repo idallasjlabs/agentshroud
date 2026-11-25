@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_outbound.py"
 type: "code"
-community: "TestOutboundPipelineIntegration"
+community: "_make_sanitizer"
 location: "L619"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestOutboundPipelineIntegration
+  - community/_make_sanitizer
 ---
 
 # .test_collaborator_legacy_block_notice_is_normalized_json()
@@ -15,6 +15,6 @@ tags:
 - [[Legacy bracket-style block notices should normalize to Protect wording.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundPipelineIntegration]] - `method` [EXTRACTED]
 - [[_make_sanitizer()]] - `calls` [EXTRACTED]
-- [[asyncio_66]] - `references` [EXTRACTED]
+- [[asyncio_31]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestOutboundPipelineIntegration
+#graphify/code #graphify/EXTRACTED #community/_make_sanitizer

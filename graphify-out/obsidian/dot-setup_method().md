@@ -1,19 +1,19 @@
 ---
-source_file: "gateway/tests/test_rbac.py"
+source_file: "gateway/tests/test_xml_leak_filter.py"
 type: "code"
-community: "MiddlewareManager"
-location: "L341"
+community: "ContextGuard"
+location: "L19"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MiddlewareManager
+  - community/ContextGuard
 ---
 
 # .setup_method()
 
 ## Connections
-- [[MiddlewareManager]] - `calls` [EXTRACTED]
-- [[Set up test environment.]] - `rationale_for` [EXTRACTED]
-- [[TestRBACIntegration]] - `method` [EXTRACTED]
+- [[Set up test fixtures.]] - `rationale_for` [EXTRACTED]
+- [[TestXMLLeakFilter]] - `method` [EXTRACTED]
+- [[XMLLeakFilter]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MiddlewareManager
+#graphify/code #graphify/EXTRACTED #community/ContextGuard

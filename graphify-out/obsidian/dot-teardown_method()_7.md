@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_resource_guard.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TestResourceGuard"
-location: "L28"
+community: "TestMemoryIntegrityMonitor"
+location: "L77"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestResourceGuard
+  - community/TestMemoryIntegrityMonitor
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestResourceGuard]] - `method` [EXTRACTED]
+- [[Clean up test environment._1]] - `rationale_for` [EXTRACTED]
+- [[TestMemoryIntegrityMonitor]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestResourceGuard
+#graphify/code #graphify/EXTRACTED #community/TestMemoryIntegrityMonitor

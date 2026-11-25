@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[50 concurrent write operations should all succeed.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentWrites]] - `method` [EXTRACTED]
-- [[asyncio_36]] - `references` [EXTRACTED]
+- [[asyncio_38]] - `references` [EXTRACTED]
 - [[write_entry()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/asyncio

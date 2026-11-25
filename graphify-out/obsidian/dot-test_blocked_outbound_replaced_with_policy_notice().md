@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_forward_routing.py"
 type: "code"
-community: "test_forward_routing.py"
+community: "AgentTarget"
 location: "L338"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_forward_routingpy
+  - community/AgentTarget
 ---
 
 # .test_blocked_outbound_replaced_with_policy_notice()
@@ -19,4 +19,4 @@ tags:
 - [[_passthrough_block_credentials()]] - `indirect_call` [INFERRED]
 - [[app()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/test_forward_routingpy
+#graphify/code #graphify/EXTRACTED #community/AgentTarget

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/metadata_guard.py"
 type: "code"
-community: "MetadataGuard"
+community: "middleware.py"
 location: "L162"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/MetadataGuard
+  - community/middlewarepy
 ---
 
 # .tag_document()
@@ -16,4 +16,4 @@ tags:
 - [[DocumentTag]] - `calls` [EXTRACTED]
 - [[MetadataGuard]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/MetadataGuard
+#graphify/code #graphify/EXTRACTED #community/middlewarepy

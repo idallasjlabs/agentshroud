@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/tests/test_security_hardening.py"
+source_file: "gateway/tests/test_memory_lifecycle.py"
 type: "code"
-community: "TrustManager"
-location: "L284"
+community: "test_memory_lifecycle.py"
+location: "L404"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/test_memory_lifecyclepy
 ---
 
 # .teardown_method()
 
 ## Connections
-- [[TestTrustManager]] - `method` [EXTRACTED]
+- [[Clean up integration test environment.]] - `rationale_for` [EXTRACTED]
+- [[TestMemorySecurityIntegration]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/test_memory_lifecyclepy

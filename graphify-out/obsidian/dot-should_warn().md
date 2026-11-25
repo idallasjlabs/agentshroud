@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/key_rotation.py"
 type: "code"
-community: "KeyRotationManager"
+community: "CredentialInfo"
 location: "L97"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyRotationManager
+  - community/CredentialInfo
 ---
 
 # .should_warn()
@@ -16,4 +16,4 @@ tags:
 - [[CredentialRotationPolicy]] - `references` [EXTRACTED]
 - [[Whether credential age warrants a warning.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyRotationManager
+#graphify/code #graphify/EXTRACTED #community/CredentialInfo

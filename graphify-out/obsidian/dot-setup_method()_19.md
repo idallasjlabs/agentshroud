@@ -1,18 +1,19 @@
 ---
-source_file: "gateway/tests/test_module_stats.py"
+source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: "test_module_stats.py"
-location: "L124"
+community: "OutboundInfoFilter"
+location: "L22"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_module_statspy
+  - community/OutboundInfoFilter
 ---
 
 # .setup_method()
 
 ## Connections
-- [[TestEgressWiringEndToEnd]] - `method` [EXTRACTED]
-- [[get_collector()]] - `calls` [EXTRACTED]
+- [[OutboundInfoFilter]] - `calls` [EXTRACTED]
+- [[Set up test fixtures._3]] - `rationale_for` [EXTRACTED]
+- [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_module_statspy
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

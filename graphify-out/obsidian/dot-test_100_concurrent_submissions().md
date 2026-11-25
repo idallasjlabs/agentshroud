@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[Submit 100 requests concurrently — all should succeed.]] - `rationale_for` [EXTRACTED]
 - [[TestConcurrentApprovalRequests]] - `method` [EXTRACTED]
-- [[asyncio_47]] - `references` [EXTRACTED]
+- [[asyncio_48]] - `references` [EXTRACTED]
 - [[submit_one()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ApprovalRequest
