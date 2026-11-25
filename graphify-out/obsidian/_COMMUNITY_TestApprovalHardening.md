@@ -8,7 +8,7 @@ members: 110
 **Members:** 110 nodes
 
 ## Members
-- [[dot-__init__()_113]] - code - gateway/security/approval_hardening.py
+- [[dot-__init__()_107]] - code - gateway/security/approval_hardening.py
 - [[dot-_check_description_parameter_mismatch()]] - code - gateway/security/approval_hardening.py
 - [[dot-_check_misleading_language()]] - code - gateway/security/approval_hardening.py
 - [[dot-_check_parameter_obfuscation()]] - code - gateway/security/approval_hardening.py
@@ -20,7 +20,7 @@ members: 110
 - [[dot-analyze_request()]] - code - gateway/security/approval_hardening.py
 - [[dot-config()_1]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-format_hardened_message()]] - code - gateway/security/approval_hardening.py
-- [[dot-get_stats()_7]] - code - gateway/security/approval_hardening.py
+- [[dot-get_stats()_9]] - code - gateway/security/approval_hardening.py
 - [[dot-hardening()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-is_request_in_cooldown()]] - code - gateway/security/approval_hardening.py
 - [[dot-record_denied_request()]] - code - gateway/security/approval_hardening.py
@@ -35,7 +35,7 @@ members: 110
 - [[dot-test_deception_detection_disabled()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_downplaying_language()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_deception_detection_misleading_description()]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_default_config()_4]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_default_config()_3]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_default_detection()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_denied_request_creation()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_different_requests_not_in_cooldown()]] - code - gateway/tests/test_approval_hardening.py
@@ -44,7 +44,7 @@ members: 110
 - [[dot-test_format_hardened_message_with_security_concerns()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_format_parameters_with_highlighting()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_get_stats()_2]] - code - gateway/tests/test_approval_hardening.py
-- [[dot-test_initialization()_3]] - code - gateway/tests/test_approval_hardening.py
+- [[dot-test_initialization()_4]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_normalize_description_handles_empty()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_normalize_description_removes_misleading_phrases()]] - code - gateway/tests/test_approval_hardening.py
 - [[dot-test_parameter_fingerprinting_consistency()]] - code - gateway/tests/test_approval_hardening.py
@@ -55,7 +55,7 @@ members: 110
 - [[dot-test_repeat_request_pattern_detection()]] - code - gateway/tests/test_approval_hardening.py
 - [[Analyze an approval request for potential deception or social engineering.…]] - rationale - gateway/security/approval_hardening.py
 - [[Anti-social-engineering hardening for approval queue.]] - rationale - gateway/security/approval_hardening.py
-- [[Any_40]] - code
+- [[Any_42]] - code
 - [[ApprovalHardening]] - code - gateway/security/approval_hardening.py
 - [[ApprovalHardeningConfig]] - code - gateway/security/approval_hardening.py
 - [[Check for misleading language patterns in description.]] - rationale - gateway/security/approval_hardening.py
@@ -115,8 +115,8 @@ members: 110
 - [[TestDeceptionDetection]] - code - gateway/tests/test_approval_hardening.py
 - [[TestDeniedRequest]] - code - gateway/tests/test_approval_hardening.py
 - [[approval_hardening.py]] - code - gateway/security/approval_hardening.py
-- [[fixture_80]] - code
-- [[patch_6]] - code
+- [[fixture_85]] - code
+- [[patch_5]] - code
 - [[test_approval_hardening.py]] - code - gateway/tests/test_approval_hardening.py
 
 ## Live Query (requires Dataview plugin)
@@ -127,9 +127,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
-- 4 edges to [[_COMMUNITY_run]]
+- 6 edges to [[_COMMUNITY_ContextGuard]]
 - 3 edges to [[_COMMUNITY_middleware.py]]
+- 2 edges to [[_COMMUNITY_MiddlewareManager]]
 
 ## Top bridge nodes
 - [[ApprovalHardening]] - degree 26, connects to 3 communities

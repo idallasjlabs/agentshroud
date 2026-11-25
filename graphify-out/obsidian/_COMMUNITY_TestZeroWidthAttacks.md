@@ -21,7 +21,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_WebProxy]]
+- 1 edge to [[_COMMUNITY_lifespan.py]]
 
 ## Top bridge nodes
 - [[TestZeroWidthAttacks]] - degree 3, connects to 1 community

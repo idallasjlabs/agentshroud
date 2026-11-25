@@ -1,37 +1,26 @@
 ---
 type: community
-members: 35
+members: 24
 ---
 
 # TestMultiBotContextvarRouting
 
-**Members:** 35 nodes
+**Members:** 24 nodes
 
 ## Members
-- [[dot-_make_proxy()_5]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-_mock_app_state_with_registry()]] - code - gateway/tests/test_telegram_proxy_multibot.py
+- [[dot-_make_proxy()_4]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_bot_id_falls_back_to_openclaw()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_bot_id_returns_contextvar_when_set()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_send_token_returns_contextvar_inside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_active_send_token_returns_default_outside_request()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_empty_registry_fails_closed()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_proxy_request_contextvar_visible_inside_impl()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_proxy_request_resets_contextvar_after_return()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_send_telegram_text_falls_back_to_default_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[dot-test_send_telegram_text_uses_inbound_token()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_unknown_token_rejected()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_valid_hermes_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[dot-test_valid_openclaw_token_accepted()]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[A request bearing the Hermes token resolves to 'hermes' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[A request bearing the OpenClaw token resolves to 'openclaw' bot_id.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[After proxy_request returns, _inbound_bot_token is reset to its prior value.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[An unregistered token must not be matched — fail-closed.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[If no tokens are registered, any token must be rejected.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
-- [[Integration tests for the telegram-api{path} route with multi-bot registry.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Outside a proxy_request call, _active_bot_id() returns 'openclaw'.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[Outside a proxy_request call, _active_send_token() returns self._bot_token.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[TestMultiBotContextvarRouting]] - code - gateway/tests/test_telegram_proxy_multibot.py
-- [[TestTelegramProxyRouteMultiBot]] - code - gateway/tests/test_telegram_proxy_multibot.py
 - [[Tests for per-request bot token routing via contextvars. Regression suite for…]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[The contextvar set by proxy_request is visible throughout _proxy_request_impl.…]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
 - [[When _inbound_bot_id is set, _active_bot_id() returns it.]] - rationale - gateway/tests/test_telegram_proxy_multibot.py
@@ -52,11 +41,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_BotConfig]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
+- 1 edge to [[_COMMUNITY_BotConfig]]
 
 ## Top bridge nodes
 - [[TestMultiBotContextvarRouting]] - degree 12, connects to 2 communities
-- [[TestTelegramProxyRouteMultiBot]] - degree 7, connects to 1 community
 - [[run()_4]] - degree 2, connects to 1 community

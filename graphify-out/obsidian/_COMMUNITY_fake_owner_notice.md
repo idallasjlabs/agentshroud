@@ -78,8 +78,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 76 edges to [[_COMMUNITY__wrap_response]]
-- 19 edges to [[_COMMUNITY__make_update]]
-- 19 edges to [[_COMMUNITY_asyncio_1]]
+- 19 edges to [[_COMMUNITY_PassthroughPipeline]]
+- 19 edges to [[_COMMUNITY_asyncio]]
 - 3 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
 - 1 edge to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice]]
 

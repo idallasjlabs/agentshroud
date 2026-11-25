@@ -8,9 +8,9 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_107]] - document - .agents/skills/mac-app-discovery/README.md
+- [[Purpose_109]] - document - .agents/skills/mac-app-discovery/README.md
 - [[Related Skills_39]] - document - .agents/skills/mac-app-discovery/README.md
-- [[Usage_49]] - document - .agents/skills/mac-app-discovery/README.md
+- [[Usage_50]] - document - .agents/skills/mac-app-discovery/README.md
 - [[mac-app-discoveryREADME]] - document - .agents/skills/mac-app-discovery/README.md
 - [[macOS System Administrator (MAC)]] - document - .agents/skills/mac-app-discovery/README.md
 

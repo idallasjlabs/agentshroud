@@ -1,32 +1,32 @@
 ---
 type: community
-members: 235
+members: 224
 ---
 
 # test_mfa_guard.py
 
-**Members:** 235 nodes
+**Members:** 224 nodes
 
 ## Members
-- [[dot-__init__()_114]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-__init__()_115]] - code - gateway/approval_queue/queue.py
-- [[dot-__init__()_116]] - code - gateway/approval_queue/store.py
-- [[dot-__init__()_117]] - code - gateway/security/mfa_guard.py
+- [[dot-__init__()_108]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-__init__()_109]] - code - gateway/approval_queue/store.py
+- [[dot-__init__()_110]] - code - gateway/security/mfa_guard.py
 - [[dot-_decode_secret()]] - code - gateway/security/mfa_guard.py
 - [[dot-_notify_telegram()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-_prune_used()]] - code - gateway/security/mfa_guard.py
 - [[dot-_schedule_timeout()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-_timeout_request()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-_totp_for_counter()]] - code - gateway/security/mfa_guard.py
-- [[dot-broadcast()_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-close()_9]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-close()_10]] - code - gateway/approval_queue/store.py
+- [[dot-broadcast()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_8]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-close()_9]] - code - gateway/approval_queue/store.py
 - [[dot-connect()_1]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-decide()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-decide()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-disconnect()_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-from_env()]] - code - gateway/security/mfa_guard.py
-- [[dot-get_item()_2]] - code - gateway/approval_queue/enhanced_queue.py
-- [[dot-get_pending()_2]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_item()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-get_item()_2]] - code - gateway/approval_queue/queue.py
+- [[dot-get_pending()_1]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-get_policy_for_tier()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-get_tool_risk_tier()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-initialize()_1]] - code - gateway/approval_queue/enhanced_queue.py
@@ -37,7 +37,8 @@ members: 235
 - [[dot-requires_approval()]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-save()_2]] - code - gateway/approval_queue/store.py
 - [[dot-send_json()_1]] - code - gateway/tests/test_enhanced_approval.py
-- [[dot-submit()_1]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-submit()]] - code - gateway/approval_queue/enhanced_queue.py
+- [[dot-submit()_1]] - code - gateway/approval_queue/queue.py
 - [[dot-submit_tool_request()_2]] - code - gateway/approval_queue/enhanced_queue.py
 - [[dot-test_critical_tool_approval_flow()]] - code - gateway/tests/test_enhanced_approval.py
 - [[dot-test_critical_tool_denial_flow()]] - code - gateway/tests/test_enhanced_approval.py
@@ -59,16 +60,12 @@ members: 235
 - [[A WebSocket stand-in whose send_json never returns. Models a real-world dead…]] - rationale - gateway/tests/test_enhanced_approval.py
 - [[A pending approval request in the queue]] - rationale - gateway/ingest_api/models.py
 - [[Accept a WebSocket connection and add to connected set.]] - rationale - gateway/approval_queue/enhanced_queue.py
+- [[Add an action to the approval queue Args request Approval request from agent…]] - rationale - gateway/approval_queue/queue.py
 - [[Add an action to the approval queue with policy-based timeout.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Any_41]] - code
-- [[Approval Queue Stress Tests — concurrent requests and timeouts.]] - rationale - gateway/tests/test_approval_stress.py
-- [[Approval queue configuration]] - rationale - gateway/ingest_api/config.py
-- [[ApprovalQueueConfig]] - code - gateway/ingest_api/config.py
+- [[Any_43]] - code
 - [[ApprovalQueueItem]] - code - gateway/ingest_api/models.py
 - [[ApprovalStore]] - code - gateway/approval_queue/store.py
 - [[AuditStore same idempotency contract as ApprovalStore.]] - rationale - gateway/tests/test_approval_store.py
-- [[BaseModel_7]] - code
-- [[Build a REAL EnhancedApprovalQueue with a default ToolRiskConfig. The default…]] - rationale - gateway/tests/test_mcp_policy.py
 - [[Build an MFAGuard from environment variables  Docker secret file. Recognized…]] - rationale - gateway/security/mfa_guard.py
 - [[Check if a tool requires approval based on risk tier and policy.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Close the database connection.]] - rationale - gateway/approval_queue/store.py
@@ -83,12 +80,12 @@ members: 235
 - [[Enhanced approval queue with enforce mode and tool risk tiers. Features -…]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[EnhancedApprovalQueue]] - code - gateway/approval_queue/enhanced_queue.py
 - [[Expired items are marked expired during load_pending.]] - rationale - gateway/tests/test_approval_store.py
+- [[Fetch a single queue item by ID Args request_id Request UUID Returns…]] - rationale - gateway/approval_queue/queue.py
 - [[Fetch a single queue item by ID.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Get all pending approval items.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Get the policy for a risk tier.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Get the risk tier for a tool.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Handle timeout for a pending request.]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[Initialize approval queue Args config Approval queue configuration mfa_guard…]] - rationale - gateway/approval_queue/queue.py
 - [[Initialize enhanced approval queue. Args config Basic approval queue…]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Initialize the store and restore pending items.]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Insert or replace an approval item.]] - rationale - gateway/approval_queue/store.py
@@ -102,8 +99,8 @@ members: 235
 - [[MFAResult]] - code - gateway/security/mfa_guard.py
 - [[Open the database and create the schema. Idempotent a second call must not…]] - rationale - gateway/approval_queue/store.py
 - [[Outcome of an MFA verification. Attributes allowed True if the action may…]] - rationale - gateway/security/mfa_guard.py
+- [[Path_36]] - code
 - [[Path_37]] - code
-- [[Path_38]] - code
 - [[Process an approval decision. IEC 62443 FR1 approving a high-risk action…]] - rationale - gateway/approval_queue/enhanced_queue.py
 - [[Queue persistence across restart.]] - rationale - gateway/tests/test_approval_stress.py
 - [[Re-initializing must not orphan the first aiosqlite connection. aiosqlite…_1]] - rationale - gateway/tests/test_approval_store.py
@@ -148,12 +145,11 @@ members: 235
 - [[Verify a TOTP second factor for high-risk operations (fail-closed). Args…]] - rationale - gateway/security/mfa_guard.py
 - [[Verify the second factor for a high-risk action. Args action_type The action…]] - rationale - gateway/security/mfa_guard.py
 - [[Wait for an approval decision. Returns True if approved, False if deniedtimed…]] - rationale - gateway/approval_queue/enhanced_queue.py
-- [[WebSocket_4]] - code
+- [[WebSocket_3]] - code
 - [[_HangingWebSocket_1]] - code - gateway/tests/test_enhanced_approval.py
 - [[_make_item()]] - code - gateway/tests/test_approval_store.py
 - [[_none()]] - code - gateway/tests/test_mfa_guard.py
 - [[_queue()]] - code - gateway/tests/test_mfa_guard.py
-- [[_real_queue()]] - code - gateway/tests/test_mcp_policy.py
 - [[_ref_totp()]] - code - gateway/tests/test_mfa_guard.py
 - [[_submit_enhanced_high_risk()]] - code - gateway/tests/test_mfa_guard.py
 - [[_submit_high_risk()]] - code - gateway/tests/test_mfa_guard.py
@@ -161,33 +157,27 @@ members: 235
 - [[_truthy()]] - code - gateway/security/mfa_guard.py
 - [[approval_queuestore.py]] - code - gateway/approval_queue/store.py
 - [[approve_after_delay()]] - code - gateway/tests/test_enhanced_approval.py
-- [[asyncio_46]] - code
 - [[asyncio_47]] - code
 - [[asyncio_48]] - code
 - [[asyncio_49]] - code
+- [[asyncio_50]] - code
 - [[broadcast() itself must bound its wait per-client, not just rely on callers…]] - rationale - gateway/tests/test_enhanced_approval.py
-- [[callback_handler()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[enhanced_mfa_queue()]] - code - gateway/tests/test_mfa_guard.py
 - [[enhanced_queue()]] - code - gateway/tests/test_enhanced_approval.py
 - [[enhanced_queue.py]] - code - gateway/approval_queue/enhanced_queue.py
 - [[env()]] - code - gateway/tests/test_edge_approvals.py
-- [[fixture_81]] - code
-- [[fixture_82]] - code
-- [[fixture_83]] - code
-- [[fixture_84]] - code
-- [[fixture_85]] - code
+- [[fixture_86]] - code
+- [[fixture_87]] - code
+- [[fixture_88]] - code
+- [[fixture_89]] - code
 - [[mfa_guard.py]] - code - gateway/security/mfa_guard.py
 - [[notifier()]] - code - gateway/tests/test_edge_approvals.py
 - [[now()_7]] - code - gateway/tests/test_mfa_guard.py
 - [[parametrize_13]] - code
-- [[queue()]] - code - gateway/tests/test_approval_stress.py
-- [[redirect_handler()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[spy()]] - code - gateway/tests/test_mfa_guard.py
-- [[store()_1]] - code - gateway/tests/test_approval_store.py
-- [[store()_2]] - code - gateway/tests/test_approval_stress.py
+- [[store()_2]] - code - gateway/tests/test_approval_store.py
 - [[temp_store()]] - code - gateway/tests/test_enhanced_approval.py
 - [[test_approval_store.py]] - code - gateway/tests/test_approval_store.py
-- [[test_approval_stress.py]] - code - gateway/tests/test_approval_stress.py
 - [[test_audit_store_initialize_is_idempotent()]] - code - gateway/tests/test_approval_store.py
 - [[test_broadcast_does_not_hang_forever_on_dead_client()_1]] - code - gateway/tests/test_enhanced_approval.py
 - [[test_counter_below_zero_skipped()]] - code - gateway/tests/test_mfa_guard.py
@@ -221,7 +211,6 @@ members: 235
 - [[test_from_env_reads_secret_and_flag()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_reads_secret_file()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_from_env_unreadable_secret_file()]] - code - gateway/tests/test_mfa_guard.py
-- [[test_full_oauth_and_tool_calls_with_sdk_client()]] - code - gateway/tests/test_edge_e2e_sdk.py
 - [[test_initialize_is_idempotent()_1]] - code - gateway/tests/test_approval_store.py
 - [[test_invalid_base32_secret_treated_as_unconfigured()]] - code - gateway/tests/test_mfa_guard.py
 - [[test_invalid_code_denies()]] - code - gateway/tests/test_mfa_guard.py
@@ -252,28 +241,27 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 44 edges to [[_COMMUNITY_GatewayConfig]]
-- 30 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
-- 21 edges to [[_COMMUNITY_ApprovalRequest]]
-- 16 edges to [[_COMMUNITY_test_edge_approvals.py]]
-- 15 edges to [[_COMMUNITY_lifespan.py]]
-- 7 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 6 edges to [[_COMMUNITY_lifespan]]
+- 48 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 26 edges to [[_COMMUNITY_test_edge_pipeline.py]]
+- 16 edges to [[_COMMUNITY_ApprovalRequest]]
+- 11 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 7 edges to [[_COMMUNITY_AgentTarget]]
 - 6 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 6 edges to [[_COMMUNITY_MCPPolicyEngine]]
 - 5 edges to [[_COMMUNITY_TestMCPProxyIntegration]]
-- 3 edges to [[_COMMUNITY_test_security_integration.py]]
+- 5 edges to [[_COMMUNITY_dot-_append_audit_event]]
+- 3 edges to [[_COMMUNITY_lifespan.py]]
 - 2 edges to [[_COMMUNITY_EdgeStore]]
+- 2 edges to [[_COMMUNITY_lifespan]]
 - 2 edges to [[_COMMUNITY_test_soc_router_coverage.py]]
-- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 2 edges to [[_COMMUNITY_fastapi]]
 - 2 edges to [[_COMMUNITY_AuditStore]]
 - 1 edge to [[_COMMUNITY_MCPToolCall]]
-- 1 edge to [[_COMMUNITY_SecurityConfig]]
-- 1 edge to [[_COMMUNITY_MemoryTokenStorage]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_aiosqlite]]
 
 ## Top bridge nodes
-- [[EnhancedApprovalQueue]] - degree 59, connects to 8 communities
-- [[ApprovalQueueConfig]] - degree 50, connects to 8 communities
+- [[EnhancedApprovalQueue]] - degree 59, connects to 9 communities
 - [[enhanced_queue.py]] - degree 23, connects to 8 communities
+- [[ApprovalStore]] - degree 44, connects to 6 communities
 - [[test_enhanced_approval.py]] - degree 26, connects to 6 communities
-- [[ApprovalStore]] - degree 44, connects to 5 communities
+- [[ApprovalQueueItem]] - degree 32, connects to 5 communities

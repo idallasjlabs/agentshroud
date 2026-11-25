@@ -29,7 +29,7 @@ members: 23
 - [[TestKillSwitchConfig]] - code - gateway/tests/test_killswitch_modes.py
 - [[TestKillSwitchScript]] - code - gateway/tests/test_killswitch_modes.py
 - [[Verify the kill switch script structure and modes.]] - rationale - gateway/tests/test_killswitch_modes.py
-- [[fixture_130]] - code
+- [[fixture_125]] - code
 - [[test_killswitch_modes.py]] - code - gateway/tests/test_killswitch_modes.py
 
 ## Live Query (requires Dataview plugin)

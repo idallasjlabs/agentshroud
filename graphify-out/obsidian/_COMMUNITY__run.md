@@ -26,7 +26,7 @@ members: 21
 - [[TestUpgrade]] - code - gateway/tests/test_update_conduit_push.py
 - [[_run()]] - code - gateway/tests/test_update_conduit_push.py
 - [[_versions_file()]] - code - gateway/tests/test_update_conduit_push.py
-- [[parametrize]] - code
+- [[parametrize_1]] - code
 - [[scriptsupdate-conduit-push.sh — pinned installer for Hermes's conduit_push…]] - rationale - gateway/tests/test_update_conduit_push.py
 - [[test_update_conduit_push.py]] - code - gateway/tests/test_update_conduit_push.py
 

@@ -8,11 +8,11 @@ members: 38
 **Members:** 38 nodes
 
 ## Members
-- [[dot-__init__()_118]] - code - gateway/security/module_stats.py
+- [[dot-__init__()_111]] - code - gateway/security/module_stats.py
 - [[dot-record()_2]] - code - gateway/security/module_stats.py
 - [[dot-reset()]] - code - gateway/security/module_stats.py
-- [[dot-setup_method()_19]] - code - gateway/tests/test_module_stats.py
 - [[dot-setup_method()_20]] - code - gateway/tests/test_module_stats.py
+- [[dot-setup_method()_21]] - code - gateway/tests/test_module_stats.py
 - [[dot-snapshot()]] - code - gateway/security/module_stats.py
 - [[dot-test_allowed_egress_counts_as_allowed()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_denied_egress_counts_as_blocked()]] - code - gateway/tests/test_module_stats.py
@@ -20,7 +20,7 @@ members: 38
 - [[dot-test_record_decision_never_raises()]] - code - gateway/tests/test_module_stats.py
 - [[dot-test_tool_acl_can_use_tool_records()]] - code - gateway/tests/test_module_stats.py
 - [[Decision]] - code - gateway/security/module_stats.py
-- [[Enum_29]] - code
+- [[Enum_27]] - code
 - [[Ergonomic recorder for enforcement points — never raises. ``sanitized=True``…]] - rationale - gateway/security/module_stats.py
 - [[Live per-module enforcement counters (SCRUM-80). Feeds the SOC dashboard's per-…]] - rationale - gateway/security/module_stats.py
 - [[ModuleStatsCollector]] - code - gateway/security/module_stats.py
@@ -35,7 +35,7 @@ members: 38
 - [[get_collector()]] - code - gateway/security/module_stats.py
 - [[module_stats.py]] - code - gateway/security/module_stats.py
 - [[record_decision()]] - code - gateway/security/module_stats.py
-- [[str_15]] - code
+- [[str_11]] - code
 - [[test_block_rate_computed()]] - code - gateway/tests/test_module_stats.py
 - [[test_empty_module_zero_rate_not_division_error()]] - code - gateway/tests/test_module_stats.py
 - [[test_module_stats.py]] - code - gateway/tests/test_module_stats.py
@@ -55,18 +55,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_EgressFilter]]
+- 5 edges to [[_COMMUNITY_EgressFilter]]
 - 5 edges to [[_COMMUNITY_ToolACLEnforcer]]
+- 2 edges to [[_COMMUNITY_EgressAction]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_A2AProxy]]
 - 2 edges to [[_COMMUNITY_A2APolicyEngine]]
 - 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 1 edge to [[_COMMUNITY_A2AProxy]]
-- 1 edge to [[_COMMUNITY_A2APolicyConfig]]
-- 1 edge to [[_COMMUNITY_GroupRoleResolver]]
+- 1 edge to [[_COMMUNITY_EgressFilterConfig]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
 
 ## Top bridge nodes
 - [[record_decision()]] - degree 16, connects to 7 communities
-- [[test_module_stats.py]] - degree 19, connects to 2 communities
+- [[test_module_stats.py]] - degree 19, connects to 3 communities
+- [[TestEgressWiringEndToEnd]] - degree 7, connects to 2 communities
 - [[get_collector()]] - degree 11, connects to 1 community
-- [[TestEgressWiringEndToEnd]] - degree 7, connects to 1 community
 - [[TestEnforcementWiring]] - degree 7, connects to 1 community

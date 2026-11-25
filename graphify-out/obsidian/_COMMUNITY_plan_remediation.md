@@ -26,11 +26,11 @@ members: 60
 - [[dot-test_write_pin_refuses_an_absent_key()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[dot-test_write_pin_replaces_only_the_target_line()]] - code - gateway/tests/test_auto_remediate_cves.py
 - [[dot-test_write_pin_round_trips_through_read_pin()]] - code - gateway/tests/test_auto_remediate_cves.py
-- [[dot-to_dict()_6]] - code - scripts/auto_remediate_cves.py
+- [[dot-to_dict()_7]] - code - scripts/auto_remediate_cves.py
 - [[2026.7.1-2' is AgentShroud's own rebuild counter, not upstream semver. An…]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[Already-triaged entries are somebody's assessed verdict — a version bump…]] - rationale - gateway/tests/test_auto_remediate_cves.py
 - [[An operator may cap how far forward an unattended job may jump.]] - rationale - gateway/tests/test_auto_remediate_cves.py
-- [[Any_55]] - code
+- [[Any_57]] - code
 - [[Automated CVE remediation — actually patch the advisories, don't just file…]] - rationale - scripts/auto_remediate_cves.py
 - [[Bump the pin, run the gated upgrade, revert the pin if it does not hold.…]] - rationale - scripts/auto_remediate_cves.py
 - [[Import the committed OpenClaw registry.]] - rationale - scripts/auto_remediate_cves.py

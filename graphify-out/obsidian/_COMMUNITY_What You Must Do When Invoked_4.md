@@ -26,7 +26,7 @@ members: 21
 - [[Step 6 - Generate Obsidian vault (opt-in) + HTML_4]] - document - .cursor/agents/graphify.md
 - [[Step 9 - Save manifest, update cost tracker, clean up, and report_4]] - document - .cursor/agents/graphify.md
 - [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_4]] - document - .cursor/agents/graphify.md
-- [[Usage_130]] - document - .cursor/agents/graphify.md
+- [[Usage_131]] - document - .cursor/agents/graphify.md
 - [[What You Must Do When Invoked_4]] - document - .cursor/agents/graphify.md
 - [[What graphify is for_4]] - document - .cursor/agents/graphify.md
 

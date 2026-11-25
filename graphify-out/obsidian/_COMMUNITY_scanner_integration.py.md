@@ -1,26 +1,20 @@
 ---
 type: community
-members: 68
+members: 58
 ---
 
 # scanner_integration.py
 
-**Members:** 68 nodes
+**Members:** 58 nodes
 
 ## Members
-- [[dot-test_baseline_three_without_daemon_config()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_clean_when_installed_but_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_infected_report()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_not_run_when_no_report()_1]] - code - gateway/tests/test_scanner_integration.py
 - [[Apply mandatory gate overrides to domain scores. Returns updated scores dict.…]] - rationale - gateway/security/scanner_integration.py
-- [[Generate a summary dict suitable for the health report. Args alerts List of…_1]] - rationale - gateway/security/wazuh_client.py
+- [[Determine composite compliance level using the weakest-link rule. All 7 sub-…]] - rationale - gateway/security/scanner_integration.py
 - [[Read and return the Docker daemon config from daemon.json, or {} if unavailable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if app_state has a non-None attribute with the given name.]] - rationale - gateway/security/scanner_integration.py
-- [[Return True if clamd Unix socket tmpclamd.ctl is connectable.]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if running inside a Docker container (.dockerenv present).]] - rationale - gateway/security/scanner_integration.py
 - [[Return True if the named Docker container is currently in 'running' state. Uses…]] - rationale - gateway/security/scanner_integration.py
 - [[Return docker-compose.yml text for containerized-deployment evidence checks.]] - rationale - gateway/security/scanner_integration.py
-- [[Return latest ClamAV scan summary from saved reports. When ClamAV is installed…]] - rationale - gateway/security/scanner_integration.py
 - [[Return scriptssecurity-scan.sh text, or empty string.]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 13 Identity & Authentication (0-5). IEC 62443 FR1. 1=API token…]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 14 Access Control & Authorization (0-5). IEC 62443 FR2. 1=role…]] - rationale - gateway/security/scanner_integration.py
@@ -42,11 +36,9 @@ members: 68
 - [[Score domain 32 Rogue Agent Containment & Killswitch (0-5). OWASP ASI-03, CSA…]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 33 Data Exfiltration Prevention (0-5). OWASP ASI-06, MITRE ATLAS,…]] - rationale - gateway/security/scanner_integration.py
 - [[Score domain 7 Network Segmentation (0-5). 3=Docker network architecture…]] - rationale - gateway/security/scanner_integration.py
-- [[TestGetClamavSummary]] - code - gateway/tests/test_scanner_integration.py
-- [[TestScoreNetworkSegmentation_1]] - code - gateway/tests/test_scanner_integration.py
 - [[_app_state_has()]] - code - gateway/security/scanner_integration.py
+- [[_determine_compliance_level()]] - code - gateway/security/scanner_integration.py
 - [[_evaluate_mandatory_gates()]] - code - gateway/security/scanner_integration.py
-- [[_is_clamd_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_container_running()]] - code - gateway/security/scanner_integration.py
 - [[_is_containerized()]] - code - gateway/security/scanner_integration.py
 - [[_read_compose_text()]] - code - gateway/security/scanner_integration.py
@@ -73,8 +65,6 @@ members: 68
 - [[_score_tool_use_safety()]] - code - gateway/security/scanner_integration.py
 - [[_security_scan_sh_text()]] - code - gateway/security/scanner_integration.py
 - [[connect()_3]] - code - gateway/security/scanner_integration.py
-- [[generate_summary()_2]] - code - gateway/security/wazuh_client.py
-- [[get_clamav_summary()]] - code - gateway/security/scanner_integration.py
 - [[scanner_integration.py]] - code - gateway/security/scanner_integration.py
 
 ## Live Query (requires Dataview plugin)
@@ -85,29 +75,25 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_compute_scorecard]]
-- 13 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 8 edges to [[_COMMUNITY_Any_1]]
-- 6 edges to [[_COMMUNITY_get_trivy_summary]]
-- 5 edges to [[_COMMUNITY_wazuh_client.py]]
+- 26 edges to [[_COMMUNITY_compute_scorecard]]
+- 12 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 8 edges to [[_COMMUNITY_Any]]
+- 4 edges to [[_COMMUNITY_get_trivy_summary]]
+- 4 edges to [[_COMMUNITY_generate_summary]]
+- 4 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
 - 3 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 3 edges to [[_COMMUNITY_get_falco_summary]]
-- 3 edges to [[_COMMUNITY_get_wazuh_summary]]
-- 3 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
-- 2 edges to [[_COMMUNITY__score_compliance_auditing]]
-- 2 edges to [[_COMMUNITY_get_sbom]]
-- 2 edges to [[_COMMUNITY_Any]]
+- 2 edges to [[_COMMUNITY_aggregate_results]]
+- 2 edges to [[_COMMUNITY_get_wazuh_summary]]
 - 2 edges to [[_COMMUNITY_test_soc_bots.py]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output]]
-- 1 edge to [[_COMMUNITY__score_image_integrity]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
-- 1 edge to [[_COMMUNITY_parse_clamscan_output]]
+- 1 edge to [[_COMMUNITY__score_secure_development]]
+- 1 edge to [[_COMMUNITY_get_trivy_image_summaries]]
+- 1 edge to [[_COMMUNITY_clamav_scanner.py]]
 - 1 edge to [[_COMMUNITY_test_scorecard_scoring.py]]
 - 1 edge to [[_COMMUNITY_test_scanner_integration_coverage.py]]
 
 ## Top bridge nodes
-- [[scanner_integration.py]] - degree 71, connects to 18 communities
-- [[generate_summary()_2]] - degree 13, connects to 7 communities
-- [[get_clamav_summary()]] - degree 12, connects to 4 communities
+- [[scanner_integration.py]] - degree 71, connects to 15 communities
 - [[_score_network_segmentation()]] - degree 9, connects to 2 communities
 - [[_evaluate_mandatory_gates()]] - degree 6, connects to 2 communities
+- [[_app_state_has()]] - degree 23, connects to 1 community
+- [[_score_docker_daemon_config()]] - degree 6, connects to 1 community

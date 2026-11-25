@@ -16,7 +16,7 @@ members: 9
 - [[Create temporary rules file for testing.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Mock app_state with egress approval queue.]] - rationale - gateway/tests/test_egress_approval.py
 - [[Mock authentication dependency.]] - rationale - gateway/tests/test_egress_approval.py
-- [[fixture_52]] - code
+- [[fixture_54]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_TestEgressApprovalQueue]]
-- 2 edges to [[_COMMUNITY_TestEgressApprovalAPI]]
+- 2 edges to [[_COMMUNITY_ApprovalMode]]
 - 2 edges to [[_COMMUNITY_EgressApprovalQueue]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
 

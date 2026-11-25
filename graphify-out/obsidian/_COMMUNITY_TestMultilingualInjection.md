@@ -1,14 +1,14 @@
 ---
 type: community
-members: 38
+members: 36
 ---
 
 # TestMultilingualInjection
 
-**Members:** 38 nodes
+**Members:** 36 nodes
 
 ## Members
-- [[dot-setup_method()_21]] - code - gateway/tests/test_multilingual_injection.py
+- [[dot-setup_method()_22]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_benign_multilingual_text()]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_case_insensitive_detection()]] - code - gateway/tests/test_multilingual_injection.py
 - [[dot-test_mixed_language_injection()]] - code - gateway/tests/test_multilingual_injection.py
@@ -44,8 +44,6 @@ members: 38
 - [[Test that multilingual patterns have appropriate weights.]] - rationale - gateway/tests/test_multilingual_injection.py
 - [[Test that pattern matching is case insensitive where applicable.]] - rationale - gateway/tests/test_multilingual_injection.py
 - [[TestMultilingualInjection]] - code - gateway/tests/test_multilingual_injection.py
-- [[Tests for multilingual prompt injection detection.]] - rationale - gateway/tests/test_multilingual_injection.py
-- [[test_multilingual_injection.py]] - code - gateway/tests/test_multilingual_injection.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -55,10 +53,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_prompt_guard.py]]
+- 3 edges to [[_COMMUNITY_PromptGuard]]
 
 ## Top bridge nodes
-- [[test_multilingual_injection.py]] - degree 4, connects to 2 communities
 - [[TestMultilingualInjection]] - degree 20, connects to 1 community
-- [[dot-setup_method()_21]] - degree 3, connects to 1 community
+- [[dot-setup_method()_22]] - degree 3, connects to 1 community

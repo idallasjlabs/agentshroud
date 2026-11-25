@@ -8,8 +8,8 @@ members: 49
 **Members:** 49 nodes
 
 ## Members
-- [[dot-__init__()_29]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[dot-__init__()_30]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_21]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[dot-__init__()_22]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-get_item()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-send_request()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-stop()_1]] - code - gateway/tests/test_mcp_proxy_coverage.py
@@ -44,7 +44,7 @@ members: 49
 - [[dot-test_tool_not_requiring_approval_allowed()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-test_unknown_server_returns_error_result()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[dot-wait_for_decision()]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[Exception_2]] - code
+- [[Exception]] - code
 - [[FakeApprovalQueue]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[FakeConn]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[Stand-in connection injected into the proxy's pool.]] - rationale - gateway/tests/test_mcp_proxy_coverage.py
@@ -54,7 +54,7 @@ members: 49
 - [[TestExecuteToolCall]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestResultProcessingAndLifecycle]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[TestSanitizeAdminPrivateData]] - code - gateway/tests/test_mcp_proxy_coverage.py
-- [[check_async()_28]] - code - gateway/tests/test_mcp_proxy_coverage.py
+- [[check_async()_26]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[make_call()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 - [[make_proxy()]] - code - gateway/tests/test_mcp_proxy_coverage.py
 
@@ -69,13 +69,13 @@ SORT file.name ASC
 - 16 edges to [[_COMMUNITY_test_mcp_proxy.py]]
 - 4 edges to [[_COMMUNITY_MCPToolCall]]
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 3 edges to [[_COMMUNITY_asyncio_4]]
-- 1 edge to [[_COMMUNITY_MCPInspector]]
+- 3 edges to [[_COMMUNITY_EgressAction]]
+- 1 edge to [[_COMMUNITY_MCPServerConfig]]
 - 1 edge to [[_COMMUNITY_MCPAuditTrail]]
 
 ## Top bridge nodes
-- [[make_proxy()]] - degree 34, connects to 3 communities
+- [[make_proxy()]] - degree 34, connects to 2 communities
 - [[make_call()]] - degree 22, connects to 2 communities
+- [[FakeConn]] - degree 16, connects to 2 communities
 - [[FakeApprovalQueue]] - degree 13, connects to 2 communities
 - [[TestResultProcessingAndLifecycle]] - degree 7, connects to 2 communities
-- [[FakeConn]] - degree 16, connects to 1 community

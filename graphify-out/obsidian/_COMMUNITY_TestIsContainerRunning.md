@@ -18,8 +18,8 @@ members: 12
 - [[dot-test_stopped_container_returns_false()]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestHostOsHardening]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[TestIsContainerRunning]] - code - gateway/tests/test_scanner_integration_coverage.py
+- [[boom()_1]] - code - gateway/tests/test_scanner_integration_coverage.py
 - [[boom()_2]] - code - gateway/tests/test_scanner_integration_coverage.py
-- [[boom()_3]] - code - gateway/tests/test_scanner_integration_coverage.py
 
 ## Live Query (requires Dataview plugin)
 

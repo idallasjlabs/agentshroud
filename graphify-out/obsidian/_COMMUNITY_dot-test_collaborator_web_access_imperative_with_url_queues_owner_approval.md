@@ -60,8 +60,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 40 edges to [[_COMMUNITY__wrap_response]]
-- 15 edges to [[_COMMUNITY__make_update]]
-- 10 edges to [[_COMMUNITY_asyncio_1]]
+- 15 edges to [[_COMMUNITY_PassthroughPipeline]]
+- 10 edges to [[_COMMUNITY_asyncio]]
 
 ## Top bridge nodes
 - [[dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval()]] - degree 13, connects to 3 communities

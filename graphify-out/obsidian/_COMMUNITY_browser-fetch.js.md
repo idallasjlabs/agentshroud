@@ -12,7 +12,7 @@ members: 6
 - [[browser-fetch.js_2]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[browserFetch()_3]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[fs_5]] - code - skills/custom/browser-fetch/browser-fetch.js
-- [[path_29]] - code - skills/custom/browser-fetch/browser-fetch.js
+- [[path_28]] - code - skills/custom/browser-fetch/browser-fetch.js
 - [[{ chromium }_3]] - code - skills/custom/browser-fetch/browser-fetch.js
 
 ## Live Query (requires Dataview plugin)

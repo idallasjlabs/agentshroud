@@ -17,9 +17,9 @@ members: 12
 - [[TestNoResponseGuarantee]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[Unknown users must always receive either a pending notice or a rate-limit…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_owner_notice()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[fake_send()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_22]] - code - gateway/tests/test_telegram_proxy_inbound.py
 - [[fake_send()_23]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send()_24]] - code - gateway/tests/test_telegram_proxy_inbound.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -31,8 +31,8 @@ SORT file.name ASC
 ## Connections to other communities
 - 9 edges to [[_COMMUNITY__wrap_response]]
 - 4 edges to [[_COMMUNITY_dot-_make_proxy]]
-- 3 edges to [[_COMMUNITY__make_update]]
-- 3 edges to [[_COMMUNITY_asyncio_1]]
+- 3 edges to [[_COMMUNITY_PassthroughPipeline]]
+- 3 edges to [[_COMMUNITY_asyncio]]
 - 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
 - 1 edge to [[_COMMUNITY_fake_owner_notice]]
 

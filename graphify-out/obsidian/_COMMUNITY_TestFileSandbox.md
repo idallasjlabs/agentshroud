@@ -1,22 +1,37 @@
 ---
 type: community
-members: 32
+members: 56
 ---
 
 # TestFileSandbox
 
-**Members:** 32 nodes
+**Members:** 56 nodes
 
 ## Members
+- [[dot-guard()_5]] - code - gateway/tests/test_security_audit.py
+- [[dot-guard()_6]] - code - gateway/tests/test_security_audit.py
+- [[dot-monitor_sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-sandbox()]] - code - gateway/tests/test_security_audit.py
+- [[dot-sanitizer()_3]] - code - gateway/tests/test_security_audit.py
+- [[dot-store()_3]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_absolute_path_to_sensitive_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_app_read_allowed()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_basic_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_clean_conversation()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_context_window_stuffing()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_conversation_history_manipulation()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_double_encoded_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_enforce_vs_monitor_contrast()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_fake_system_message()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_json_injection()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_markdown_heading_injection()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_monitor_mode_allows_everything()_1]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_null_byte_injection_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_proc_meminfo_allowed()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_proc_self_environ_blocked()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_rapid_fire_messages()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_role_switching()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_session_isolation()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_staging_detection()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_symlink_traversal_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_tmp_read_allowed()_1]] - code - gateway/tests/test_security_audit.py
@@ -26,20 +41,29 @@ members: 32
 - [[dot-test_write_to_app_data_allowed()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_write_to_system_dir_blocked()]] - code - gateway/tests/test_security_audit.py
 - [[dot-test_write_to_tmp_allowed()]] - code - gateway/tests/test_security_audit.py
+- [[dot-test_xml_tag_injection()_1]] - code - gateway/tests/test_security_audit.py
+- [[dot-token_validator()]] - code - gateway/tests/test_security_audit.py
 - [[Access to procselfenviron exposes env vars — must be blocked.]] - rationale - gateway/tests/test_security_audit.py
 - [[Allowed read path should pass.]] - rationale - gateway/tests/test_security_audit.py
 - [[Detect data staging patterns.]] - rationale - gateway/tests/test_security_audit.py
+- [[Different sessions should not share state unsafely.]] - rationale - gateway/tests/test_security_audit.py
+- [[Fill context with repeated instructions.]] - rationale - gateway/tests/test_security_audit.py
 - [[Monitor mode flags but allows — verify difference from enforce.]] - rationale - gateway/tests/test_security_audit.py
+- [[Monitor-mode sandbox for comparison testing.]] - rationale - gateway/tests/test_security_audit.py
+- [[Rapid messages shouldn't cause errors.]] - rationale - gateway/tests/test_security_audit.py
 - [[Reading from app should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 - [[Reading from tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 - [[Same path, different modes — enforce blocks, monitor allows.]] - rationale - gateway/tests/test_security_audit.py
 - [[Symlink-based escape attempt blocked.]] - rationale - gateway/tests/test_security_audit.py
+- [[Test context manipulation detection.]] - rationale - gateway/tests/test_security_audit.py
 - [[Test file system sandboxing in enforce mode — blocks unauthorized access.]] - rationale - gateway/tests/test_security_audit.py
+- [[TestContextGuard_1]] - code - gateway/tests/test_security_audit.py
 - [[TestFileSandbox]] - code - gateway/tests/test_security_audit.py
 - [[Writing PII should be flagged even to allowed paths.]] - rationale - gateway/tests/test_security_audit.py
 - [[Writing outside allowed paths must be blocked.]] - rationale - gateway/tests/test_security_audit.py
 - [[Writing to appdata should be allowed.]] - rationale - gateway/tests/test_security_audit.py
 - [[Writing to tmp should be allowed.]] - rationale - gateway/tests/test_security_audit.py
+- [[fixture_121]] - code
 
 ## Live Query (requires Dataview plugin)
 
@@ -49,8 +73,22 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_FileSandbox]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 6 edges to [[_COMMUNITY_FileSandbox]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
+- 2 edges to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_EnvironmentGuard]]
+- 1 edge to [[_COMMUNITY_KeyVault]]
+- 1 edge to [[_COMMUNITY_TokenValidator]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_TestPromptGuard_1]]
+- 1 edge to [[_COMMUNITY_deep_security_test]]
+- 1 edge to [[_COMMUNITY_TestAuth]]
+- 1 edge to [[_COMMUNITY_TestPIIDetection_2]]
 
 ## Top bridge nodes
 - [[TestFileSandbox]] - degree 24, connects to 2 communities
+- [[TestContextGuard_1]] - degree 14, connects to 2 communities
+- [[dot-token_validator()]] - degree 3, connects to 2 communities
+- [[dot-store()_3]] - degree 3, connects to 2 communities
+- [[dot-sanitizer()_3]] - degree 3, connects to 2 communities

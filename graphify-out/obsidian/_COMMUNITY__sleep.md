@@ -27,7 +27,7 @@ members: 42
 - [[TestGhsaIngestSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestUpstreamCveCheckSchedulerRetry]] - code - gateway/tests/test_daily_cve_report.py
 - [[_already_ingested_ghsa_today returns False on a malformed sentinel.]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[_boom()_20]] - code - gateway/tests/test_daily_cve_report.py
+- [[_boom()_23]] - code - gateway/tests/test_daily_cve_report.py
 - [[_fake_all_agents()]] - code - gateway/tests/test_daily_cve_report.py
 - [[_fake_all_agents()_1]] - code - gateway/tests/test_daily_cve_report.py
 - [[_fake_all_agents()_2]] - code - gateway/tests/test_daily_cve_report.py
@@ -59,7 +59,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 8 edges to [[_COMMUNITY_asyncio]]
+- 8 edges to [[_COMMUNITY_asyncio_1]]
 - 3 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 - 3 edges to [[_COMMUNITY_dot-test_gives_up_and_marks_sent_after_max_retries]]
 - 1 edge to [[_COMMUNITY_list_cve_agents]]

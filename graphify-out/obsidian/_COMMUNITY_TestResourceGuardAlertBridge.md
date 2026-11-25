@@ -13,12 +13,12 @@ members: 11
 - [[dot-test_missing_timestamp_falls_back_to_zero()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_non_spike_alert_dispatched_with_medium_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[dot-test_spike_alert_dispatched_with_high_severity()]] - code - gateway/tests/test_resource_guard_wiring.py
-- [[Any_21]] - code
+- [[Any_14]] - code
 - [[End-to-end register the bridge on a real ResourceGuard, trigger its alert path…]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[Recreate the lifespan bridge closure verbatim from…]] - rationale - gateway/tests/test_resource_guard_wiring.py
 - [[TestResourceGuardAlertBridge]] - code - gateway/tests/test_resource_guard_wiring.py
 - [[The lifespan bridges ResourceGuard's native callback payload to…]] - rationale - gateway/tests/test_resource_guard_wiring.py
-- [[_resource_alert_bridge()_1]] - code - gateway/tests/test_resource_guard_wiring.py
+- [[_resource_alert_bridge()]] - code - gateway/tests/test_resource_guard_wiring.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -28,8 +28,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_ResourceGuard]]
+- 2 edges to [[_COMMUNITY_ResourceGuard]]
+- 1 edge to [[_COMMUNITY_setup_resource_guard]]
 
 ## Top bridge nodes
-- [[TestResourceGuardAlertBridge]] - degree 8, connects to 1 community
+- [[TestResourceGuardAlertBridge]] - degree 8, connects to 2 communities
 - [[dot-test_bridge_registered_via_add_alert_callback_fires_through()]] - degree 4, connects to 1 community

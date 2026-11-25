@@ -11,7 +11,7 @@ members: 64
 - [[Add a collaborator by Telegram user ID.]] - rationale - gateway/cli/main.py
 - [[Add a user to a group.]] - rationale - gateway/cli/main.py
 - [[Aggregate health report.]] - rationale - gateway/cli/main.py
-- [[Any_84]] - code
+- [[Any_83]] - code
 - [[Approve an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Deny an egress request by ID.]] - rationale - gateway/cli/main.py
 - [[Emergency freeze pause all bot containers.]] - rationale - gateway/cli/main.py
@@ -66,7 +66,7 @@ members: 64
 - [[pass_context]] - code
 - [[restart()]] - code - gateway/cli/main.py
 - [[restart_service()_3]] - code - gateway/cli/main.py
-- [[scan()_4]] - code - gateway/cli/main.py
+- [[scan()_3]] - code - gateway/cli/main.py
 - [[set()]] - code - gateway/cli/main.py
 - [[set_mode()_1]] - code - gateway/cli/main.py
 - [[stop()]] - code - gateway/cli/main.py

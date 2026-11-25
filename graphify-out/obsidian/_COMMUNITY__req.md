@@ -35,7 +35,7 @@ members: 33
 - [[dot-test_repetition_attack_not_blocking()]] - code - gateway/tests/test_middleware_coverage.py
 - [[dot-test_session_context_injected()]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestBrowserSecurity]] - code - gateway/tests/test_middleware_coverage.py
-- [[TestContextGuard_1]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestContextGuard]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestEnvGuard]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestGitGuard_1]] - code - gateway/tests/test_middleware_coverage.py
 - [[TestMemoryIntegrityRegistration]] - code - gateway/tests/test_middleware_coverage.py
@@ -52,14 +52,14 @@ SORT file.name ASC
 ## Connections to other communities
 - 12 edges to [[_COMMUNITY__FakeRBAC]]
 - 7 edges to [[_COMMUNITY_test_middleware_coverage.py]]
-- 3 edges to [[_COMMUNITY_TestMultiTurnTracker_1]]
+- 3 edges to [[_COMMUNITY_TestMultiTurnTracker]]
 - 2 edges to [[_COMMUNITY_TestCrossSessionAccess]]
-- 2 edges to [[_COMMUNITY_TestMetadataGuard]]
+- 2 edges to [[_COMMUNITY_TestMetadataGuard_1]]
 - 1 edge to [[_COMMUNITY__tool_req]]
 
 ## Top bridge nodes
 - [[_req()_1]] - degree 43, connects to 6 communities
 - [[TestProcessRequestIdentity]] - degree 9, connects to 1 community
-- [[TestContextGuard_1]] - degree 6, connects to 1 community
+- [[TestContextGuard]] - degree 6, connects to 1 community
 - [[TestEnvGuard]] - degree 5, connects to 1 community
 - [[TestGitGuard_1]] - degree 5, connects to 1 community

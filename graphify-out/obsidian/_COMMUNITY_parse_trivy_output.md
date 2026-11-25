@@ -1,11 +1,11 @@
 ---
 type: community
-members: 35
+members: 32
 ---
 
 # parse_trivy_output
 
-**Members:** 35 nodes
+**Members:** 32 nodes
 
 ## Members
 - [[dot-test_custom_prefix()]] - code - gateway/tests/test_security_toolchain.py
@@ -27,10 +27,9 @@ members: 35
 - [[dot-test_summary_error()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_summary_top_cves_ids()]] - code - gateway/tests/test_security_toolchain.py
 - [[dot-test_summary_warning_high_only()]] - code - gateway/tests/test_security_toolchain.py
-- [[Any_16]] - code
+- [[Any_11]] - code
 - [[Custom report_prefix is used verbatim.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[Default report_prefix produces a 'trivy-' filename.]] - rationale - gateway/tests/test_security_toolchain.py
-- [[Generate a summary dict suitable for the health report. Args report Parsed…]] - rationale - gateway/security/trivy_report.py
 - [[Parse raw Trivy JSON output into a structured summary. Args raw Raw JSON…]] - rationale - gateway/security/trivy_report.py
 - [[Path_9]] - code
 - [[Save a Trivy report to the log directory. Args report Parsed report dict.…]] - rationale - gateway/security/trivy_report.py
@@ -38,11 +37,9 @@ members: 35
 - [[TestTrivyParser]] - code - gateway/tests/test_security_toolchain.py
 - [[TestTrivySaveReport]] - code - gateway/tests/test_security_toolchain.py
 - [[TestTrivySummary]] - code - gateway/tests/test_security_toolchain.py
-- [[generate_summary()_1]] - code - gateway/security/trivy_report.py
 - [[parse_trivy_output()]] - code - gateway/security/trivy_report.py
 - [[save_report creates the log directory if it does not exist.]] - rationale - gateway/tests/test_security_toolchain.py
 - [[save_report()]] - code - gateway/security/trivy_report.py
-- [[trivy_report.py_2]] - code - gateway/security/trivy_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -52,19 +49,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_test_security_toolchain.py]]
-- 3 edges to [[_COMMUNITY_run_trivy_scan]]
-- 3 edges to [[_COMMUNITY_daily_cve_report.py]]
-- 2 edges to [[_COMMUNITY_asyncio]]
-- 1 edge to [[_COMMUNITY__make_report]]
-- 1 edge to [[_COMMUNITY_scanner_integration.py]]
-- 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
-- 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 8 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 2 edges to [[_COMMUNITY_run_trivy_scan]]
+- 1 edge to [[_COMMUNITY_asyncio_1]]
+- 1 edge to [[_COMMUNITY_daily_cve_report.py]]
 
 ## Top bridge nodes
-- [[trivy_report.py_2]] - degree 9, connects to 6 communities
-- [[generate_summary()_1]] - degree 8, connects to 5 communities
 - [[save_report()]] - degree 11, connects to 3 communities
 - [[parse_trivy_output()]] - degree 23, connects to 2 communities
+- [[Any_11]] - degree 4, connects to 2 communities
 - [[TestTrivyParser]] - degree 11, connects to 1 community
+- [[TestTrivySummary]] - degree 6, connects to 1 community

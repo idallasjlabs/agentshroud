@@ -1,13 +1,14 @@
 ---
 type: community
-members: 94
+members: 98
 ---
 
 # main.rs
 
-**Members:** 94 nodes
+**Members:** 98 nodes
 
 ## Members
+- [[dot-fmt()]] - code - cli/src/main.rs
 - [[dot-get()_3]] - code - cli/src/main.rs
 - [[dot-get()_4]] - code - cli/src/main.rs
 - [[dot-new()]] - code - cli/src/main.rs
@@ -24,8 +25,11 @@ members: 94
 - [[ApprovalAction]] - code - cli/src/main.rs
 - [[Cli_1]] - code - cli/src/main.rs
 - [[Client]] - code
+- [[CollabMode]] - code - cli/src/main.rs
 - [[Commands_3]] - code - cli/src/main.rs
+- [[Display]] - code
 - [[FakeTransport]] - code - cli/src/main.rs
+- [[Formatter]] - code
 - [[GatewayClient_1]] - code - cli/src/main.rs
 - [[GatewayClientT]] - code - cli/src/main.rs
 - [[GetResource]] - code - cli/src/main.rs
@@ -111,16 +115,13 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_CollabMode]]
 - 3 edges to [[_COMMUNITY_app_main.c]]
 - 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 - 2 edges to [[_COMMUNITY_wakeword.c]]
 - 1 edge to [[_COMMUNITY_ota.c]]
-- 1 edge to [[_COMMUNITY_voice_task]]
+- 1 edge to [[_COMMUNITY_lvgl_kawaii_face.c]]
+- 1 edge to [[_COMMUNITY_ws_client.c]]
 - 1 edge to [[_COMMUNITY_test_playback_state.c]]
 
 ## Top bridge nodes
-- [[String]] - degree 37, connects to 6 communities
-- [[main.rs]] - degree 74, connects to 1 community
-- [[Result]] - degree 15, connects to 1 community
-- [[SetTarget]] - degree 4, connects to 1 community
+- [[String]] - degree 38, connects to 7 communities

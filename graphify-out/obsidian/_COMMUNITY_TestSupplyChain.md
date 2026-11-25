@@ -29,7 +29,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_test_security_audit.py]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
 
 ## Top bridge nodes
 - [[TestSupplyChain]] - degree 7, connects to 1 community

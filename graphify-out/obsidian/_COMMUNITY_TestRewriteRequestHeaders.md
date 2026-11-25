@@ -21,7 +21,7 @@ members: 17
 - [[TestRewriteRequestHeaders]] - code - gateway/tests/test_hermes_dashboard_bridge.py
 - [[Tests for the Hermes dashboard bridge's HTTP header rewrite (2026-07 502400…]] - rationale - gateway/tests/test_hermes_dashboard_bridge.py
 - [[bridge_module()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
-- [[fixture_5]] - code
+- [[fixture_9]] - code
 - [[relay_module()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
 - [[scenario()]] - code - gateway/tests/test_hermes_dashboard_bridge.py
 - [[test_hermes_dashboard_bridge.py]] - code - gateway/tests/test_hermes_dashboard_bridge.py
@@ -34,7 +34,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY__FakeWSConnect]]
+- 1 edge to [[_COMMUNITY__run_asgi]]
 
 ## Top bridge nodes
 - [[scenario()]] - degree 2, connects to 1 community

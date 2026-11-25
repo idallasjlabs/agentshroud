@@ -11,7 +11,7 @@ members: 10
 - [[dot-test_hash_chain_integrity()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_log_event()]] - code - gateway/tests/test_audit_export.py
 - [[dot-test_query_events()]] - code - gateway/tests/test_audit_export.py
-- [[dot-test_stats()]] - code - gateway/tests/test_audit_export.py
+- [[dot-test_stats()_1]] - code - gateway/tests/test_audit_export.py
 - [[Test AuditStore functionality.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test audit store statistics.]] - rationale - gateway/tests/test_audit_export.py
 - [[Test hash chain maintains integrity.]] - rationale - gateway/tests/test_audit_export.py
@@ -29,11 +29,11 @@ SORT file.name ASC
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_asyncio_6]]
 - 2 edges to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_AuditEvent]]
+- 1 edge to [[_COMMUNITY_test_audit_export.py]]
 
 ## Top bridge nodes
 - [[TestAuditStore]] - degree 8, connects to 2 communities
 - [[dot-test_hash_chain_integrity()]] - degree 3, connects to 1 community
 - [[dot-test_log_event()]] - degree 3, connects to 1 community
 - [[dot-test_query_events()]] - degree 3, connects to 1 community
-- [[dot-test_stats()]] - degree 3, connects to 1 community
+- [[dot-test_stats()_1]] - degree 3, connects to 1 community

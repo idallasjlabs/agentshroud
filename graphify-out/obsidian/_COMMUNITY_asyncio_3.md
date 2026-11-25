@@ -1,46 +1,55 @@
 ---
 type: community
-members: 33
+members: 42
 ---
 
 # asyncio
 
-**Members:** 33 nodes
+**Members:** 42 nodes
 
 ## Members
-- [[dot-test_emergency_disabled_trigger_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_generate_returns_typed_token()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_get_all_credentials_status_lists_registered()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_get_credential_status_none_for_unknown()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_health_score_empty_is_perfect()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_in_progress_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_max_attempts_exceeded_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_not_due_without_force_is_rejected()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_generic_exception_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_nonzero_returncode_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_success_strips_whitespace()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_read_timeout_yields_none()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_retire_clears_old_reference_when_grace_expired()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_retire_noop_when_no_grace_period()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_scheduled_rotation_disabled_short_circuits()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_failure_marks_failed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_nonzero_returncode_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_rejects_malformed_reference()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_success()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_store_timeout_is_false()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_unknown_credential_returns_error()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_validate_with_validator_that_raises_fails_closed()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[dot-test_validate_without_registered_validator_passes()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestCheckAndRotateDisabled]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestEmergencyAndRetire]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestGenerateAndValidate]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestReadFrom1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestRotateGuardBranches]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStatusHelpers]] - code - gateway/tests/test_key_rotation_internals.py
-- [[TestStoreIn1Password]] - code - gateway/tests/test_key_rotation_internals.py
-- [[_old_cred()]] - code - gateway/tests/test_key_rotation_internals.py
-- [[asyncio_54]] - code
-- [[validate()]] - code - gateway/tests/test_key_rotation_internals.py
+- [[dot-test_1000_entries_all_recorded()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_50_concurrent_writes()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_concurrent_write_and_read()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_content_hashes_are_unique()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_delete_entry_removes_it()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_delete_nonexistent_returns_false()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_enforce_retention_deletes_expired()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_entry_retrieval_by_id()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_hash_is_sha256()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_hash_matches_content()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_nonexistent_entry_returns_none()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_query_filter_by_source()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_query_pagination()]] - code - gateway/tests/test_audit_chain.py
+- [[dot-test_stats_correct()]] - code - gateway/tests/test_audit_chain.py
+- [[50 concurrent write operations should all succeed.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Can retrieve specific entry by ID for verification.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Chain with many entries — verify integrity.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Concurrent writes and reads don't conflict.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Concurrent writes to chain.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Content hash should be a valid SHA-256 hex digest.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Deleted entry is gone (right to erasure).]] - rationale - gateway/tests/test_audit_chain.py
+- [[Deleting nonexistent entry returns False.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Different content should produce different hashes.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Export chain and re-verify.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Filter entries by source.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Looking up nonexistent entry returns None.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Paginated queries return correct subsets.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Retention enforcement removes expired entries.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Retention enforcement.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Stats reflect actual data.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Tamper detection at various chain positions.]] - rationale - gateway/tests/test_audit_chain.py
+- [[TestAuditChainIntegrity]] - code - gateway/tests/test_audit_chain.py
+- [[TestChainExportAndVerification]] - code - gateway/tests/test_audit_chain.py
+- [[TestConcurrentWrites]] - code - gateway/tests/test_audit_chain.py
+- [[TestRetention]] - code - gateway/tests/test_audit_chain.py
+- [[TestTamperDetection]] - code - gateway/tests/test_audit_chain.py
+- [[Verify hash matches SHA-256 of the content.]] - rationale - gateway/tests/test_audit_chain.py
+- [[Write 1000 entries and verify they're all there.]] - rationale - gateway/tests/test_audit_chain.py
+- [[asyncio_38]] - code
+- [[read()_5]] - code - gateway/tests/test_audit_chain.py
+- [[write()]] - code - gateway/tests/test_audit_chain.py
+- [[write_entry()]] - code - gateway/tests/test_audit_chain.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -50,11 +59,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 13 edges to [[_COMMUNITY_KeyRotationManager]]
+- 6 edges to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
-- [[_old_cred()]] - degree 9, connects to 1 community
-- [[TestRotateGuardBranches]] - degree 8, connects to 1 community
-- [[TestGenerateAndValidate]] - degree 5, connects to 1 community
-- [[TestReadFrom1Password]] - degree 5, connects to 1 community
-- [[TestStoreIn1Password]] - degree 5, connects to 1 community
+- [[asyncio_38]] - degree 15, connects to 1 community
+- [[TestAuditChainIntegrity]] - degree 6, connects to 1 community
+- [[TestTamperDetection]] - degree 6, connects to 1 community
+- [[TestChainExportAndVerification]] - degree 5, connects to 1 community
+- [[TestConcurrentWrites]] - degree 4, connects to 1 community

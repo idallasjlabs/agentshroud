@@ -38,7 +38,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 5 edges to [[_COMMUNITY_asyncio]]
+- 5 edges to [[_COMMUNITY_asyncio_1]]
 - 3 edges to [[_COMMUNITY__sleep]]
 - 2 edges to [[_COMMUNITY_test_daily_cve_report.py]]
 

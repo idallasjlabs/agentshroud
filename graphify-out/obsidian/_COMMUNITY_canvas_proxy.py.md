@@ -9,7 +9,7 @@ members: 22
 
 ## Members
 - [[ASGI application auth-gated transparent reverse proxy for Canvas. Handles…]] - rationale - gateway/proxy/canvas_proxy.py
-- [[Any_67]] - code
+- [[Any_66]] - code
 - [[Build headers to forward upstream, stripping hop-by-hop and Authorization.]] - rationale - gateway/proxy/canvas_proxy.py
 - [[Canvas Reverse Proxy with HTTP Basic Auth Gate (CVE-2026-34871 fix). Intercepts…]] - rationale - gateway/proxy/canvas_proxy.py
 - [[Canvas reverse-proxy upstream wiring regression tests. The v1.1.0 container…]] - rationale - gateway/tests/test_canvas_proxy.py
@@ -42,7 +42,7 @@ SORT file.name ASC
 - 1 edge to [[_COMMUNITY_GatewayEmailService]]
 - 1 edge to [[_COMMUNITY__run_asgi]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
 - 1 edge to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 
 ## Top bridge nodes

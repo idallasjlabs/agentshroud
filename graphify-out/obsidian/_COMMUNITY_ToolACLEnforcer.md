@@ -1,11 +1,11 @@
 ---
 type: community
-members: 63
+members: 61
 ---
 
 # ToolACLEnforcer
 
-**Members:** 63 nodes
+**Members:** 61 nodes
 
 ## Members
 - [[dot-_can_use_tool_impl()]] - code - gateway/security/tool_acl.py
@@ -49,7 +49,6 @@ members: 63
 - [[Enforces tool-level access control based on user role and group membership.…]] - rationale - gateway/security/tool_acl.py
 - [[High score with too few interactions must NOT climb the ladder.]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[MALICIOUS_INTENT drops a level even when the score would not.]] - rationale - gateway/tests/test_progressive_trust_integration.py
-- [[ProgressiveTrustConfig → TrustManager integration tests. The trust ladder…]] - rationale - gateway/tests/test_progressive_trust_integration.py
 - [[Public entry — records the decision for the SOC heat-map (SCRUM-80), then…]] - rationale - gateway/security/tool_acl.py
 - [[Return True if the user is within rate limits for the given tool. Side-effect…]] - rationale - gateway/security/tool_acl.py
 - [[Return per-user tool denial counts since last restart (V9-2 SOC correlation).]] - rationale - gateway/security/tool_acl.py
@@ -70,7 +69,6 @@ members: 63
 - [[_fast_ladder()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[_make_tm()]] - code - gateway/tests/test_progressive_trust_integration.py
 - [[_set_state()]] - code - gateway/tests/test_progressive_trust_integration.py
-- [[test_progressive_trust_integration.py]] - code - gateway/tests/test_progressive_trust_integration.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -80,19 +78,19 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 15 edges to [[_COMMUNITY_ProgressiveTrustConfig]]
+- 24 edges to [[_COMMUNITY_TrustLevel]]
 - 14 edges to [[_COMMUNITY_test_tool_acl.py]]
-- 9 edges to [[_COMMUNITY_TrustLevel]]
-- 6 edges to [[_COMMUNITY_TrustManager]]
 - 5 edges to [[_COMMUNITY_test_module_stats.py]]
-- 4 edges to [[_COMMUNITY_GroupRoleResolver]]
-- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 3 edges to [[_COMMUNITY_GroupRoleResolver]]
+- 2 edges to [[_COMMUNITY_RBACConfig]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
 - 1 edge to [[_COMMUNITY_lifespan.py]]
 - 1 edge to [[_COMMUNITY_lifespan]]
+- 1 edge to [[_COMMUNITY_TrustConfig]]
 
 ## Top bridge nodes
-- [[ToolACLEnforcer]] - degree 44, connects to 6 communities
-- [[test_progressive_trust_integration.py]] - degree 24, connects to 3 communities
+- [[ToolACLEnforcer]] - degree 44, connects to 7 communities
+- [[_make_tm()]] - degree 24, connects to 3 communities
 - [[_set_state()]] - degree 18, connects to 2 communities
-- [[TestEnforcementMode]] - degree 9, connects to 2 communities
-- [[TestToolGating]] - degree 8, connects to 2 communities
+- [[_fast_ladder()]] - degree 13, connects to 1 community
+- [[TestEnforcementMode]] - degree 9, connects to 1 community

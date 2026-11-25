@@ -9,9 +9,9 @@ members: 7
 
 ## Members
 - [[Integration_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Purpose_81]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Related Notes_53]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
-- [[Usage_27]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Purpose_84]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Related Notes_56]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
+- [[Usage_28]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 - [[What It Checks]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 - [[gitleaks.toml_1]] - document - docs/vault/03 - Configuration/gitleaks.toml.md
 - [[gitleaks.toml]] - document - docs/vault/03 - Configuration/gitleaks.toml.md

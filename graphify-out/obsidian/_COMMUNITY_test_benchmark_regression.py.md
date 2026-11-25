@@ -9,7 +9,7 @@ members: 42
 
 ## Members
 - [[dot-_time_fn()]] - code - gateway/tests/test_benchmark_regression.py
-- [[dot-setup_method()_14]] - code - gateway/tests/test_benchmark_regression.py
+- [[dot-setup_method()_16]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_100_inbound_requests()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_file_exists()]] - code - gateway/tests/test_benchmark_regression.py
 - [[dot-test_baseline_values_are_reasonable()]] - code - gateway/tests/test_benchmark_regression.py
@@ -38,7 +38,7 @@ members: 42
 - [[_one_run()]] - code - gateway/tests/test_benchmark_regression.py
 - [[_write_results()]] - code - gateway/tests/test_benchmark_regression.py
 - [[assert_within_threshold()]] - code - gateway/tests/test_benchmark_regression.py
-- [[fixture_64]] - code
+- [[fixture_68]] - code
 - [[get_contributor()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[list_contributors()]] - code - gateway/tests/test_soc_router_coverage.py
 - [[load_baseline()]] - code - gateway/tests/test_benchmark_regression.py

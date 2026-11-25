@@ -43,8 +43,8 @@ members: 38
 - [[_no_enable_env()]] - code - gateway/tests/test_edge_profiles.py
 - [[_variant()]] - code - gateway/tests/test_edge_profiles.py
 - [[_write()_2]] - code - gateway/tests/test_edge_profiles.py
-- [[fixture_117]] - code
-- [[parametrize_20]] - code
+- [[fixture_115]] - code
+- [[parametrize_21]] - code
 - [[test_edge_profiles.py]] - code - gateway/tests/test_edge_profiles.py
 
 ## Live Query (requires Dataview plugin)
@@ -55,8 +55,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_lifespan.py]]
-- 1 edge to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 3 edges to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_test_soc_edge.py]]
 
 ## Top bridge nodes
 - [[test_edge_profiles.py]] - degree 11, connects to 2 communities

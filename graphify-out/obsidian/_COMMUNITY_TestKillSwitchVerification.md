@@ -29,8 +29,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
 - 2 edges to [[_COMMUNITY_KillSwitchConfig]]
+- 2 edges to [[_COMMUNITY_KillSwitchMonitor]]
 - 1 edge to [[_COMMUNITY_test_observatory_mode.py]]
 
 ## Top bridge nodes

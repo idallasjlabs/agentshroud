@@ -10,8 +10,8 @@ members: 9
 ## Members
 - [[Configured Hosts]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
 - [[Key Class `SSHProxy`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Purpose_69]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
-- [[Related Notes_32]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Purpose_71]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
+- [[Related Notes_34]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
 - [[Responsibilities_44]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
 - [[Security Notes]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md
 - [[`execute(host str, command str, session_id str) → SSHExecResult`]] - document - docs/vault/02 - Modules/Other/ssh_proxy.py.md

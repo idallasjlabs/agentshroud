@@ -12,7 +12,7 @@ members: 86
 - [[A real CVE always came from a GHSA advisory, so cve_id implies ghsa_id.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[A single shared output path makes multi-agent coverage impossible.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[An agent with no version source must be refused, never verdicted. Emitting…]] - rationale - gateway/tests/test_agent_cve_registry.py
-- [[Any_54]] - code
+- [[Any_56]] - code
 - [[Backward compatibility the default openclaw run must still exit 0.]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CRITICAL GUARD no entry `id` may look like a real CVE id. This is the load-…]] - rationale - gateway/tests/test_agent_cve_registry.py
 - [[CompletedProcess_5]] - code

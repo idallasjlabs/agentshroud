@@ -11,7 +11,7 @@ members: 37
 - [[Owner messages are now recorded with is_owner=True (not silently dropped).]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Real Telegram UIDs (9-10 digits) must NOT be pruned.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[Unit tests for CollaboratorActivityTracker.]] - rationale - gateway/tests/test_collaborator_tracker.py
-- [[fixture_87]] - code
+- [[fixture_91]] - code
 - [[get_activity_summary returns a by_bot breakdown keyed by bot_id.]] - rationale - gateway/tests/test_collaborator_tracker.py
 - [[log_file()]] - code - gateway/tests/test_collaborator_tracker.py
 - [[record_activity with bot_id='hermes' stores bot_id in the entry.]] - rationale - gateway/tests/test_collaborator_tracker.py
@@ -55,7 +55,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 7 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 1 edge to [[_COMMUNITY_UserSessionManager]]
+- 1 edge to [[_COMMUNITY_WebhookReceiver]]
 - 1 edge to [[_COMMUNITY_test_webhook_receiver_passes_agent_id_as_bot_id]]
 - 1 edge to [[_COMMUNITY_test_get_activity_filters_by_bot_id]]
 - 1 edge to [[_COMMUNITY_test_get_activity_summary_by_bot_empty_when_no_file]]

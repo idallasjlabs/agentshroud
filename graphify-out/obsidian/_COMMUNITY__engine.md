@@ -1,11 +1,11 @@
 ---
 type: community
-members: 91
+members: 98
 ---
 
 # _engine
 
-**Members:** 91 nodes
+**Members:** 98 nodes
 
 ## Members
 - [[dot-test_check_bot_updates_npm_failure_and_exec_failure()]] - code - gateway/tests/test_web_api_coverage.py
@@ -42,6 +42,8 @@ members: 91
 - [[dot-test_report_with_healthy_runtime()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_report_with_unhealthy_runtime_falls_back_to_docker()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_requires_confirmation()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_resolves_hermes_to_the_real_renamed_container()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_resolves_openclaw_to_the_convention_default()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_restart_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_restart_service_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_rollback_agentshroud_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
@@ -57,9 +59,9 @@ members: 91
 - [[dot-test_stop_service_failure_returns_500()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_stop_service_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_streams_logs_then_cleans_up_on_disconnect()]] - code - gateway/tests/test_web_api_coverage.py
+- [[dot-test_unknown_bot_id_falls_back_to_the_naive_guess()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_history_git_failure_returns_empty()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_update_history_returns_commits()]] - code - gateway/tests/test_web_api_coverage.py
-- [[dot-test_update_request_defaults()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_bot_failure_reports_error_step()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_bot_success()]] - code - gateway/tests/test_web_api_coverage.py
 - [[dot-test_upgrade_openclaw_alias()]] - code - gateway/tests/test_web_api_coverage.py
@@ -73,6 +75,8 @@ members: 91
 - [[dot-test_validate_rejects_unknown_token()]] - code - gateway/tests/test_web_api_coverage.py
 - [[Build a subprocess.run double that simulates the upgrade git flow.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[Coverage tests for gatewaywebapi.py (management REST API). Exercises auth,…]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[KillSwitchAction]] - code - gateway/web/api.py
+- [[Resolve the real Docker container name for a given bot_id — from…]] - rationale - gateway/web/api.py
 - [[Restore AGENTSHROUD_MODE, revert task, and WS token registry per test.]] - rationale - gateway/tests/test_web_api_coverage.py
 - [[SimpleNamespace_1]] - code
 - [[TestAgentshroudUpdates]] - code - gateway/tests/test_web_api_coverage.py
@@ -84,6 +88,7 @@ members: 91
 - [[TestMgmtWsTokens]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestOpenclawAliases]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestRebuild]] - code - gateway/tests/test_web_api_coverage.py
+- [[TestResolveBotContainer]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestSecurityReport]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestServiceControl]] - code - gateway/tests/test_web_api_coverage.py
 - [[TestStatus_1]] - code - gateway/tests/test_web_api_coverage.py
@@ -94,10 +99,12 @@ members: 91
 - [[_fake_ws()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_gitless_run()]] - code - gateway/tests/test_web_api_coverage.py
 - [[_module_state_guard()]] - code - gateway/tests/test_web_api_coverage.py
-- [[client()_6]] - code - gateway/tests/test_web_api_coverage.py
+- [[_resolve_bot_container must use BotConfig.resolved_container_name, not a…]] - rationale - gateway/tests/test_web_api_coverage.py
+- [[_resolve_bot_container()]] - code - gateway/web/api.py
+- [[client()_10]] - code - gateway/tests/test_web_api_coverage.py
 - [[fake_run()_1]] - code - gateway/tests/test_web_api_coverage.py
 - [[fake_run()_2]] - code - gateway/tests/test_web_api_coverage.py
-- [[fixture_31]] - code
+- [[fixture_37]] - code
 - [[test_web_api_coverage.py]] - code - gateway/tests/test_web_api_coverage.py
 
 ## Live Query (requires Dataview plugin)
@@ -108,17 +115,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 7 edges to [[_COMMUNITY_api.py]]
+- 10 edges to [[_COMMUNITY_api.py]]
 - 2 edges to [[_COMMUNITY_AsyncMock]]
-- 2 edges to [[_COMMUNITY__resolve_bot_container]]
-- 2 edges to [[_COMMUNITY_require_auth]]
+- 2 edges to [[_COMMUNITY_test_runtime_engines.py]]
 - 2 edges to [[_COMMUNITY_ModeRequest]]
 - 1 edge to [[_COMMUNITY_TestConfig]]
-- 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
-- [[test_web_api_coverage.py]] - degree 32, connects to 6 communities
+- [[test_web_api_coverage.py]] - degree 32, connects to 5 communities
+- [[_resolve_bot_container()]] - degree 9, connects to 2 communities
 - [[TestAgentshroudUpdates]] - degree 13, connects to 1 community
-- [[TestKillSwitch]] - degree 10, connects to 1 community
 - [[_fake_ws()]] - degree 8, connects to 1 community
-- [[dot-test_streams_logs_then_cleans_up_on_disconnect()]] - degree 4, connects to 1 community
+- [[KillSwitchAction]] - degree 6, connects to 1 community

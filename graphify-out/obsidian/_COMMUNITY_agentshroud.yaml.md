@@ -9,8 +9,8 @@ members: 13
 
 ## Members
 - [[Config Search Order]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Purpose_56]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
-- [[Related Notes_10]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
+- [[Purpose_57]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
+- [[Related Notes_11]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[Top-Level Sections]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[agentshroud.yaml_1]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md
 - [[agentshroud.yaml]] - document - docs/vault/03 - Configuration/agentshroud.yaml.md

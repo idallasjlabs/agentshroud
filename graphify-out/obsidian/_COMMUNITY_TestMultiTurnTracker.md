@@ -1,57 +1,17 @@
 ---
 type: community
-members: 44
+members: 4
 ---
 
 # TestMultiTurnTracker
 
-**Members:** 44 nodes
+**Members:** 4 nodes
 
 ## Members
-- [[dot-test_agent_response_analysis()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_alert_callbacks()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_basic_message_tracking()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_blocked_session_behavior()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_credential_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_cumulative_scoring()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_edge_cases()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_file_reference_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_global_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_infrastructure_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_initialization()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_pii_fragment_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_repeated_query_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_sequential_extraction_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_session_blocking()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_session_cleanup()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_session_reset()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_session_stats()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_system_info_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_threshold_warnings()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[dot-test_tool_name_detection()]] - code - gateway/tests/test_multi_turn_tracker.py
-- [[Test alert callback functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test analysis of agent responses for potential leaks.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test basic message tracking functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test behavior of blocked sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test cases for MultiTurnTracker class.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test cleanup of old sessions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of PII fragment patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of credential-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of file reference patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of infrastructure-related queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of repeated queries with different phrasing.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of sequential extraction patterns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of system information queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test detection of tool inventory queries.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test edge cases and error conditions.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test getting global statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test getting session statistics.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test proper initialization of MultiTurnTracker.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test session reset functionality.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test that scores accumulate across turns.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test that sessions get blocked at high scores.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[Test threshold-based warning system.]] - rationale - gateway/tests/test_multi_turn_tracker.py
-- [[TestMultiTurnTracker]] - code - gateway/tests/test_multi_turn_tracker.py
+- [[dot-test_blocked_non_owner_denied()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_blocked_owner_exempted()]] - code - gateway/tests/test_middleware_coverage.py
+- [[dot-test_tracker_exception_fails_closed()]] - code - gateway/tests/test_middleware_coverage.py
+- [[TestMultiTurnTracker_1]] - code - gateway/tests/test_middleware_coverage.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -61,8 +21,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_multi_turn_tracker.py]]
-- 2 edges to [[_COMMUNITY_MultiTurnTracker]]
+- 3 edges to [[_COMMUNITY__req]]
+- 1 edge to [[_COMMUNITY_test_middleware_coverage.py]]
 
 ## Top bridge nodes
-- [[TestMultiTurnTracker]] - degree 27, connects to 2 communities
+- [[TestMultiTurnTracker_1]] - degree 4, connects to 1 community
+- [[dot-test_blocked_non_owner_denied()]] - degree 2, connects to 1 community
+- [[dot-test_blocked_owner_exempted()]] - degree 2, connects to 1 community
+- [[dot-test_tracker_exception_fails_closed()]] - degree 2, connects to 1 community

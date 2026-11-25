@@ -1,86 +1,92 @@
 ---
 type: community
-members: 73
+members: 79
 ---
 
 # asyncio
 
-**Members:** 73 nodes
+**Members:** 79 nodes
 
 ## Members
-- [[dot-test_blocked_command_with_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_approval_action_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_function_calls_payload_text_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_guardrail_mod_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_plugin_discovery_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_tool_trace_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_collaborator_unsafe_scheme_request_is_blocked_and_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_default_collab_outbound_still_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_default_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_forward_file_download_aborts_at_size_limit()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_forward_file_download_returns_raw_body_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_collaborator_passes_despite_middleware_block()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_disclosure_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_full_access_outbound_not_blocked_by_leakage_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_healthcheck_word_with_punctuation_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_domain_like_token_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_domain_with_trailing_period_still_queues_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_non_owner_overlong_fqdn_does_not_queue_egress_preflight()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_per_user_mode_override_controls_outbound_filter()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_project_scoped_collaborator_still_blocked_by_middleware()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_request_api_path_still_json_parsed()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_request_file_download_error_returns_502()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_proxy_request_file_prefix_returns_binary_sentinel()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_self_diagnose_with_mention_is_handled_locally()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_unapproved_collaborator_slash_command_with_mention_and_punctuation_is_quarantined()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[dot-test_within_limit_document_update_passes()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator function_calls payload should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Collaborator attempts to approvedeny requests should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Domain-like tokens followed by identifier chars should not be treated as URLs.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Domains over 253 chars should be rejected from preflight approval.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Guardrailsecurity config modification prompts should be blocked and…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Inbound update with document.file_size within limit must pass (CVE-2026-32049).]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Mentioned self-diagnose variant should still route to local diagnostics…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Middleware block must be bypassed for full_access collaborators.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Non-slash healthcheck command with punctuation should still be local-handled.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Per-user mode override is respected by the outbound filter. A collaborator…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Plugintool auto-discovery inventory prompts should be blocked.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Punctuation-obfuscated blocked commands should still be quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Raw tool tracearguments requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Sentence-ending punctuation after a domain should still permit preflight…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFileDownload]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[TestFullAccessMiddlewareBypass]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[Tests for _forward_file_download() and proxy_request() binary path. Regression…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unknown collaborator slash commands should stay blocked with…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[Unsafe URL scheme fetch requests should be blocked and quarantined.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download must raise when streamed bytes exceed limit…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[_forward_file_download returns dict with _raw_body, _content_type, _status_code.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[asyncio_22]] - code
-- [[check_async()_29]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[check_async()_30]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[check_async()_31]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notify_blocked()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notify_blocked()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_notify_blocked()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send_text()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_send_text()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_20]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[fake_urlopen()_21]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access bypass applies even when the message has no interrogative marker.…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator must receive the general-access disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborator outbound must pass through even when leakage filter…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[full_access collaborators must pass through middleware and secondary pipeline…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborator must receive the restricted-scope disclosure message.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[local_only collaborators must still be blocked by the leakage filter.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[process_request()]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[process_request()_1]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[process_request()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
-- [[project_scoped collaborators are still blocked when middleware blocks (non-…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request returns 502 sentinel when file download raises.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request with path_prefix='file' returns _raw_body sentinel (no JSON…]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[proxy_request without file prefix still JSON-parses the response.]] - rationale - gateway/tests/test_telegram_proxy_inbound.py
-- [[read()_2]] - code - gateway/tests/test_telegram_proxy_inbound.py
+- [[dot-_no_docker()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_agent_label_falls_back_when_source_missing()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_alert_send_failure_is_swallowed()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_all_agents_omitting_bot_tokens_preserves_default_behavior()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_all_agents_runs_each_independently_and_isolates_failure()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_all_agents_uses_per_agent_token_when_provided()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_check_scoped_to_agent_registry_and_repo()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_critical_image_finding_uses_red_icon()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_daily_fs_scan_skips_security_log_tree()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_dedup_is_per_agent()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_failed_send_does_not_write_stamp_or_mark_sent_date()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_hermes_zero_stays_silent_via_all_agents()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_hermes_zero_still_reports_when_always_report_zero()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_image_scan_error_does_not_abort_report()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_image_scan_result_in_return_value()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_image_scan_summary_appended_to_message()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_image_scans_run_for_each_target()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_no_alert_when_registry_current()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_no_telegram_send_when_no_token()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_openclaw_zero_stays_silent()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_error_on_github_api_failure()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_returns_summary_without_token()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_second_check_does_not_resend()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_sends_alert_when_new_cves_found()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_sends_telegram_on_success()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_trivy_error_still_sends_error_report()]] - code - gateway/tests/test_daily_cve_report.py
+- [[dot-test_zero_report_send_failure_is_swallowed()]] - code - gateway/tests/test_daily_cve_report.py
+- [[2026-08-04 fix Hermes zero-CVE heartbeats confused the owner because they're…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[2026-08-04 each wrapped agent's alert must go out via ITS OWN bot token (so it…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A Telegram failure on the new-CVE alert path never raises.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A Telegram failure on the zero-report path never raises.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A critical finding in an image scan uses the red icon.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[A failing image scan appends an error line but does not raise.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Backward compatibility no bot_tokens arg means every agent still gets the…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[If the per-agent source config is missing, the label falls back gracefully.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Message sent via Telegram includes a Container Image Scans section.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[OpenClaw and Hermes are processed on fully separate paths; one failing never…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Owner wants to SEE a Hermes report even with 0 new advisories.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Pin _running_image to the docker-unavailable fallback (same as…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Return value includes image_scans list.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[Run a Trivy scan, format the report, and send via Telegram. Args bot_token…]] - rationale - gateway/security/daily_cve_report.py
+- [[TestPerAgentUpstreamChecks]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestRunAndSendCveReport]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestRunAndSendCveReportImageScans]] - code - gateway/tests/test_daily_cve_report.py
+- [[TestRunUpstreamCveCheck]] - code - gateway/tests/test_daily_cve_report.py
+- [[The daily fs scan of  must exclude varlogsecurity (trivy's own cache +…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[_boom_send()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_boom_send()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_check()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_3]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_4]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_5]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_6]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_7]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_8]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_9]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_10]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_11]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_12]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_13]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_14]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_15]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_16]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_17]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_send()_18]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_trivy_scan()]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_trivy_scan()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_trivy_scan()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_trivy_scan()_3]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_trivy_scan()_4]] - code - gateway/tests/test_daily_cve_report.py
+- [[_fake_trivy_scan()_5]] - code - gateway/tests/test_daily_cve_report.py
+- [[_run()_5]] - code - gateway/soc/router.py
+- [[asyncio_21]] - code
+- [[check_upstream_cves(agent_id=...) selects that agent's OWN repo + list.]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[run_and_send_cve_report calls run_trivy_scan with scan_type='image' for each…]] - rationale - gateway/tests/test_daily_cve_report.py
+- [[run_and_send_cve_report()]] - code - gateway/security/daily_cve_report.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -90,31 +96,24 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 157 edges to [[_COMMUNITY__wrap_response]]
-- 66 edges to [[_COMMUNITY__make_update]]
-- 48 edges to [[_COMMUNITY_dot-_make_proxy]]
-- 19 edges to [[_COMMUNITY_fake_owner_notice]]
-- 10 edges to [[_COMMUNITY_dot-test_collaborator_web_access_imperative_with_url_queues_owner_approval]]
-- 6 edges to [[_COMMUNITY_dot-test_stranger_within_limit_triggers_approval_workflow]]
-- 6 edges to [[_COMMUNITY_BlockingPipeline]]
-- 4 edges to [[_COMMUNITY_MiddlewareManager]]
-- 3 edges to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 3 edges to [[_COMMUNITY_dot-test_proxy_request_returns_ack_only_updates_when_all_dropped]]
-- 3 edges to [[_COMMUNITY_dot-test_unknown_user_always_gets_pending_or_rate_limit_notice]]
-- 3 edges to [[_COMMUNITY_dot-test_collaborator_rate_limit_notice_is_sent_for_each_limited_message]]
-- 2 edges to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_ServiceManager]]
-- 1 edge to [[_COMMUNITY_dot-_looks_like_safe_collaborator_info_query]]
-- 1 edge to [[_COMMUNITY_dot-test_collaborator_command_blocking_question_gets_safe_info_not_denial]]
-- 1 edge to [[_COMMUNITY_dot-test_egress_callback_applies_queue_decision]]
-- 1 edge to [[_COMMUNITY_dot-test_egress_callback_non_dict_result_is_handled]]
-- 1 edge to [[_COMMUNITY_dot-test_egress_callback_from_collaborator_is_rejected]]
-- 1 edge to [[_COMMUNITY_dot-test_healthcheck_local_notice_dedupe_with_missing_update_id_same_message]]
-- 1 edge to [[_COMMUNITY_dot-test_owner_revoke_command_persists_pause_to_disk]]
+- 17 edges to [[_COMMUNITY_test_daily_cve_report.py]]
+- 8 edges to [[_COMMUNITY__sleep]]
+- 5 edges to [[_COMMUNITY_dot-test_gives_up_and_marks_sent_after_max_retries]]
+- 4 edges to [[_COMMUNITY_daily_cve_report.py]]
+- 3 edges to [[_COMMUNITY_TestUpstreamAlertDedup]]
+- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY__build_image_targets]]
+- 2 edges to [[_COMMUNITY_dot-_run_proxy]]
+- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
+- 1 edge to [[_COMMUNITY_run_trivy_scan]]
+- 1 edge to [[_COMMUNITY_parse_trivy_output]]
+- 1 edge to [[_COMMUNITY__t]]
+- 1 edge to [[_COMMUNITY_GatewayBackedProvider]]
+- 1 edge to [[_COMMUNITY_TestRunningImageResolution]]
 
 ## Top bridge nodes
-- [[asyncio_22]] - degree 267, connects to 16 communities
-- [[TestFullAccessMiddlewareBypass]] - degree 12, connects to 3 communities
-- [[TestFileDownload]] - degree 10, connects to 3 communities
-- [[dot-test_full_access_collaborator_passes_despite_multi_turn_middleware_block_without_interrogative()]] - degree 10, connects to 3 communities
-- [[dot-test_project_scoped_collaborator_still_blocked_by_middleware()]] - degree 9, connects to 2 communities
+- [[run_and_send_cve_report()]] - degree 18, connects to 8 communities
+- [[asyncio_21]] - degree 40, connects to 4 communities
+- [[_run()_5]] - degree 3, connects to 2 communities
+- [[TestPerAgentUpstreamChecks]] - degree 11, connects to 1 community
+- [[TestRunAndSendCveReportImageScans]] - degree 7, connects to 1 community

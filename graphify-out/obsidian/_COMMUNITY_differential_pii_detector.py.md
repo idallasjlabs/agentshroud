@@ -11,7 +11,7 @@ members: 15
 - [[dot-_redact()]] - code - gateway/security/differential_pii_detector.py
 - [[dot-_scan()]] - code - gateway/security/differential_pii_detector.py
 - [[dot-scan_prompt()]] - code - gateway/security/differential_pii_detector.py
-- [[dot-scan_tool_result()_1]] - code - gateway/security/differential_pii_detector.py
+- [[dot-scan_tool_result()]] - code - gateway/security/differential_pii_detector.py
 - [[Core scan normalize adversarial patterns, then run PII recognition.]] - rationale - gateway/security/differential_pii_detector.py
 - [[Differential PII Detector for Tool Results — Module 28 (v1.2.0) IEC 62443 FR3…]] - rationale - gateway/security/differential_pii_detector.py
 - [[Full scan result for a tool result or prompt.]] - rationale - gateway/security/differential_pii_detector.py
@@ -41,4 +41,4 @@ SORT file.name ASC
 - [[dot-_scan()]] - degree 8, connects to 2 communities
 - [[dot-_redact()]] - degree 4, connects to 2 communities
 - [[dot-scan_prompt()]] - degree 4, connects to 1 community
-- [[dot-scan_tool_result()_1]] - degree 4, connects to 1 community
+- [[dot-scan_tool_result()]] - degree 4, connects to 1 community

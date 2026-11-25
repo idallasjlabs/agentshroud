@@ -1,291 +1,129 @@
 ---
 type: community
-members: 278
+members: 116
 ---
 
 # lifespan.py
 
-**Members:** 278 nodes
+**Members:** 116 nodes
 
 ## Members
 - [[NOTE Gateway-side Slack Socket Mode listener removed.]] - rationale - gateway/ingest_api/lifespan.py
-- [[NOTE This branch ships hot-reload of the config FILE only. The web config]] - rationale - gateway/ingest_api/config.py
-- [[dot-__init__()_27]] - code - gateway/ingest_api/event_bus.py
-- [[dot-__init__()_28]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-_init_presidio()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-block_credentials()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-filter_xml_blocks()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-get_mode()]] - code - gateway/ingest_api/sanitizer.py
-- [[dot-guard()]] - code - gateway/tests/test_performance.py
-- [[dot-guard()_1]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-pg()]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-pg()_1]] - code - gateway/tests/test_prompt_guard.py
-- [[dot-pipeline()]] - code - gateway/tests/test_performance.py
-- [[dot-pipeline()_1]] - code - gateway/tests/test_performance.py
-- [[dot-reanchor_delimiters()]] - code - gateway/security/prompt_guard.py
-- [[dot-sanitizer()]] - code - gateway/tests/test_performance.py
-- [[dot-sanitizer()_1]] - code - gateway/tests/test_security_audit.py
-- [[dot-subscribe()]] - code - gateway/ingest_api/event_bus.py
-- [[dot-test_1000_messages_under_10s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_1000_messages_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_100_inbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_100_outbound_messages_under_5s()]] - code - gateway/tests/test_performance.py
-- [[dot-test_binary_data_in_text_fields()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_crlf_in_prompt_guard()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_deeply_nested_json()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
-- [[dot-test_empty_inputs_everywhere()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_get_module_mode_no_env_override()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[dot-test_global_monitor_override_downgrades_all()]] - code - gateway/tests/test_all_modules_enforce.py
-- [[dot-test_hmac_comparison_for_secrets()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_many_pii_entities()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_mcp_proxy_module_exists()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_null_byte_in_prompt()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_pii_detection_accuracy_at_scale()]] - code - gateway/tests/test_performance.py
-- [[dot-test_pii_inbound_latency()]] - code - gateway/tests/test_performance.py
-- [[dot-test_pii_sanitizer_default_enforcement()]] - code - gateway/tests/test_enforce_defaults.py
-- [[dot-test_pii_sanitizer_mode_param()]] - code - gateway/tests/test_enforce_defaults.py
-- [[dot-test_pii_scan_time_independent_of_content()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_polyglot_payload()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_prompt_guard_catches_tool_injection()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_prompt_guard_concurrent_scans()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_prompt_guard_no_early_exit_leak()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_rapid_fire_scans()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_regex_redos_email()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_regex_redos_ssn()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_single_inbound_under_200ms()]] - code - gateway/tests/test_performance.py
-- [[dot-test_single_message_pipeline_under_100ms()]] - code - gateway/tests/test_performance.py
-- [[dot-test_single_outbound_under_200ms()]] - code - gateway/tests/test_performance.py
-- [[dot-test_unicode_normalization_bypass()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_very_long_message()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-test_write_baseline_json()]] - code - gateway/tests/test_performance.py
-- [[dot-test_xml_entity_expansion()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[dot-to_dict()_4]] - code - gateway/security/canary.py
-- [[dot-unsubscribe()]] - code - gateway/ingest_api/event_bus.py
-- [[100 messages through process_inbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[100 messages through process_outbound in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[AGENTSHROUD_MODE=monitor must downgrade ALL modules to monitor.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[API is a trusted source.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Any_15]] - code
-- [[AppState]] - code - gateway/ingest_api/state.py
+- [[NOTE api.telegram.org is intentionally NOT listed here. The bot is]] - rationale - gateway/proxy/http_proxy.py
+- [[dot-__init__()_156]] - code - gateway/proxy/http_proxy.py
+- [[dot-__init__()_157]] - code - gateway/proxy/url_analyzer.py
+- [[dot-__init__()_158]] - code - gateway/proxy/web_proxy.py
+- [[dot-__init__()_159]] - code - gateway/proxy/web_proxy.py
+- [[dot-allowlist_config()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-allowlist_proxy()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-check()_5]] - code - gateway/proxy/web_proxy.py
+- [[dot-get_domain_settings()]] - code - gateway/proxy/web_config.py
+- [[dot-is_domain_allowed()]] - code - gateway/proxy/web_config.py
+- [[dot-is_domain_denied()]] - code - gateway/proxy/web_config.py
+- [[dot-reset()_2]] - code - gateway/proxy/web_proxy.py
+- [[dot-test_allowed_domain_passes()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_audit_chain_valid()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_base64_encoded_injection_in_html()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_base64_in_query_flagged()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_base64_in_url_path_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_blocked_request_audited()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_case_insensitive()_2]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_custom_denylist()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_custom_domain_size_limit()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_default_mode_is_denylist()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denied_domain_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denied_domain_malware()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denied_subdomain_blocked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_denylist_mode_still_works()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_different_domains_independent()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_domain_denied()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_domain_not_in_denylist_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_empty_allowlist_blocks_everything()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_exact_match()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_get_domain_settings_custom()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_get_domain_settings_default()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_github_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_injection_stats()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_large_response_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_listed_domain_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_long_query_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_no_audit_chain_no_crash()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_normal_content_type_not_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_normal_response_not_flagged_for_size()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_adds_header()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_allows_everything()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_mode_default_off()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_passthrough_skips_content_scan()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_rate_limit_blocks_excess()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_rate_limiter_reset()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_request_audited()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_response_audited()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_ssrf_blocked_before_allowlist_check()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_stackoverflow_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_stats_tracked()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_suspicious_content_type_flagged()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_unlisted_domain_blocked()_1]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_deeper_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_does_not_match_other_root()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_domain_settings()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_matches_root_domain()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_matches_subdomain()]] - code - gateway/tests/test_web_proxy.py
+- [[dot-test_wildcard_subdomain_passes()]] - code - gateway/tests/test_web_proxy.py
+- [[Analyze URLs for SSRF, data exfiltration, and suspicious patterns.]] - rationale - gateway/proxy/url_analyzer.py
 - [[Application lifespan management for the AgentShroud Gateway]] - rationale - gateway/ingest_api/lifespan.py
-- [[Application state container for the AgentShroud Gateway]] - rationale - gateway/ingest_api/state.py
-- [[Batch F5 exit criterion verify ALL core security modules default to enforce…]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Binary data in text fields shouldn't crash.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Block credential display via untrusted sources (e.g., Telegram) Args content…]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Blocked responses should contain helpful guidance.]] - rationale - gateway/tests/test_block_credentials.py
-- [[CRLF injection in prompt shouldn't bypass detection.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Canary result should serialize to dict properly.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should detect that fake PII was stripped.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should fail proxy check with unhealthy forwarder.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should fail when no pipeline configured.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should pass proxy check with healthy forwarder.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should pass when pipeline is properly configured.]] - rationale - gateway/tests/test_canary.py
-- [[Canary should verify audit chain integrity.]] - rationale - gateway/tests/test_canary.py
-- [[CanaryCheck]] - code - gateway/security/canary.py
-- [[CanaryResult]] - code - gateway/security/canary.py
-- [[Closed function_calls block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed invoke block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed parameter block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Closed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Collect and write benchmark baselines to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
-- [[Concurrent prompt scans shouldn't interfere with each other.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Console is a trusted source — credentials should pass through.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Container for application-wide state]] - rationale - gateway/ingest_api/state.py
-- [[Control UI is a trusted source.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Create a PromptGuard instance for testing]] - rationale - gateway/tests/test_prompt_guard.py
-- [[Create a real PII sanitizer in regex mode (no spaCy).]] - rationale - gateway/tests/test_redteam_probes.py
-- [[Deeply nested JSON shouldn't cause stack overflow.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Detect and block prompt injection attempts.]] - rationale - gateway/security/prompt_guard.py
-- [[Email regex should not be vulnerable to ReDoS.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Empty string input returns empty string, not filtered.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Empty strings shouldn't crash any module.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[End-to-end pipeline latency for a single message.]] - rationale - gateway/tests/test_performance.py
-- [[EventBus]] - code - gateway/ingest_api/event_bus.py
-- [[External API source should also block.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Individual canary check result.]] - rationale - gateway/security/canary.py
-- [[Initialize Microsoft Presidio engines Falls back to regex if PresidiospaCy…]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Initialize sanitizer Args config PII configuration from agentshroud.yaml]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Injection attempts should be detected even under load.]] - rationale - gateway/tests/test_performance.py
-- [[Large XML block spanning many lines is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Localhost is a trusted source.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Log warnings for any core modules running in monitor mode.]] - rationale - gateway/ingest_api/config.py
-- [[MCP proxy module should be importable.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Message with hundreds of PII entities should complete.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Multiple XML blocks in one response are all removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Nested invoke inside function_calls is fully removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Normal text should not be blocked on any source.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Normal text without XML blocks is returned unchanged.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Null bytes shouldn't bypass prompt guard.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[PII Sanitization Engine for AgentShroud Gateway Detects and redacts personally…]] - rationale - gateway/ingest_api/sanitizer.py
-- [[PII detection and redaction configuration]] - rationale - gateway/ingest_api/config.py
-- [[PII detection and redaction engine Attempts to use Microsoft Presidio with…]] - rationale - gateway/ingest_api/sanitizer.py
-- [[PII sanitizer 1000 messages in  10s.]] - rationale - gateway/tests/test_performance.py
-- [[PII scanning time should be roughly linear, not exponential.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[PII-laden messages through inbound pipeline — verify redaction + timing.]] - rationale - gateway/tests/test_performance.py
-- [[PIIConfig]] - code - gateway/ingest_api/config.py
-- [[PIISanitizer]] - code - gateway/ingest_api/sanitizer.py
-- [[Performance Baseline Tests — latency and throughput benchmarks.]] - rationale - gateway/tests/test_performance.py
-- [[Pipeline with all modules disabled acts as passthrough.]] - rationale - gateway/tests/test_security_integration.py
-- [[Pipeline with only PII enabled, prompt guard disabled.]] - rationale - gateway/tests/test_security_integration.py
-- [[Polyglot (valid as multiple formats) shouldn't bypass checks.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Process 1000 mixed messages in under 10 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[Prompt guard should catch tool-call injection attempts.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Prompt guard should scan full input, not short-circuit on first match.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Prompt guard 1000 messages in  5s.]] - rationale - gateway/tests/test_performance.py
-- [[PromptGuard]] - code - gateway/security/prompt_guard.py
-- [[Rapid scanning shouldn't degrade or crash.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Regular 6-digit numbers (zip codes, IDs) should NOT be blocked.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Regular HTML-like tags that are NOT in the block list are not removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Remove Claude XML function call blocks from responses Strips out internal…]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Result is stripped of leadingtrailing whitespace.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Result of running the canary system.]] - rationale - gateway/security/canary.py
-- [[Return current enforcement mode Returns enforce or monitor]] - rationale - gateway/ingest_api/sanitizer.py
-- [[Return module mode, respecting the global permissive override.]] - rationale - gateway/ingest_api/config.py
-- [[Return type is always (str, bool).]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Run standard benchmarks and write results to .benchmarksbaseline-v1.0.0.json.]] - rationale - gateway/tests/test_performance.py
-- [[Run the canary verification system. Args pipeline SecurityPipeline instance…]] - rationale - gateway/security/canary.py
-- [[SSN regex should not be vulnerable to ReDoS.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Scan 1000 messages in under 5 seconds.]] - rationale - gateway/tests/test_performance.py
-- [[Security module configuration]] - rationale - gateway/ingest_api/config.py
-- [[SecurityModuleConfig]] - code - gateway/ingest_api/config.py
-- [[SecurityPipeline.process_inboundoutbound latency via the real pipeline class.]] - rationale - gateway/tests/test_performance.py
-- [[Short values after 'password' should not trigger ( 8 chars).]] - rationale - gateway/tests/test_block_credentials.py
-- [[Simple in-process event bus with async support]] - rationale - gateway/ingest_api/event_bus.py
-- [[Single message through SecurityPipeline.process_inbound  200ms.]] - rationale - gateway/tests/test_performance.py
-- [[Single message through SecurityPipeline.process_outbound  200ms.]] - rationale - gateway/tests/test_performance.py
-- [[Single message through full pipeline in under 100ms.]] - rationale - gateway/tests/test_performance.py
-- [[Strip injected fake delimiters and return sanitized message. Called when…]] - rationale - gateway/security/prompt_guard.py
-- [[Subscribe to all events]] - rationale - gateway/ingest_api/event_bus.py
-- [[Technical content without actual credentials should pass.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Telegram should block AWS access keys.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Telegram should block GitHub tokens.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Telegram should block JSON-formatted passwords (from op item get).]] - rationale - gateway/tests/test_block_credentials.py
-- [[Telegram should block OpenAI API keys.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Telegram should block SSH private keys.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Telegram should block password display.]] - rationale - gateway/tests/test_block_credentials.py
-- [[Test HTTP-level security CRLF, header injection, content types.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test MCP tool proxy security controls.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test PIISanitizer accepts and stores mode parameter.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test PIISanitizer defaults to enforce mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test enforce-by-default functionality for core security modules.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test for timing side-channels in security-critical comparisons.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test resilience against denial of service patterns.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Test that individual modules respect the enforcemonitor mode.]] - rationale - gateway/tests/test_enforce_defaults.py
-- [[Test thread safety and race conditions in security modules.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[TestBenchmarkBaseline]] - code - gateway/tests/test_performance.py
-- [[TestConcurrency]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestDoSPrevention]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestFullPipelineLatency]] - code - gateway/tests/test_performance.py
-- [[TestGetModuleModeEnforceDefault]] - code - gateway/tests/test_all_modules_enforce.py
-- [[TestHTTPSecurity]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestMCPSecurity]] - code - gateway/tests/test_security_audit_advanced.py
-- [[TestModuleEnforcement]] - code - gateway/tests/test_enforce_defaults.py
-- [[TestPIISanitizerPerformance]] - code - gateway/tests/test_performance.py
-- [[TestPromptGuardPerformance]] - code - gateway/tests/test_performance.py
-- [[TestSecurityPipelineChainLatency]] - code - gateway/tests/test_performance.py
-- [[TestTimingAttacks]] - code - gateway/tests/test_security_audit_advanced.py
-- [[Tests for TelegramAPIProxy outbound security pipeline integration. Proves that…]] - rationale - gateway/tests/test_telegram_proxy_outbound.py
-- [[Tests for block_credentials method in PIISanitizer. TDD approach Tests written…]] - rationale - gateway/tests/test_block_credentials.py
-- [[Tests for filter_xml_blocks method in PIISanitizer. TDD approach Tests written…]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Tests for the canary verification system.]] - rationale - gateway/tests/test_canary.py
-- [[Text before and after XML blocks is preserved.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Three or more consecutive newlines are collapsed to two.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Tool Result PII Sanitizer Wraps the existing PIISanitizer for tool-result-…]] - rationale - gateway/security/tool_result_sanitizer.py
-- [[Unclosed function_calls block (truncated output) is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed function_results block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed system-reminder block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unclosed thinking block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[Unicode tricks shouldn't bypass PII detection.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Unsubscribe from events]] - rationale - gateway/ingest_api/event_bus.py
-- [[Verify canary message contains the expected fake PII.]] - rationale - gateway/tests/test_canary.py
-- [[Verify detection accuracy doesn't degrade at scale.]] - rationale - gateway/tests/test_performance.py
-- [[Verify get_module_mode returns enforce when no override is set.]] - rationale - gateway/tests/test_all_modules_enforce.py
-- [[Verify hmac.compare_digest is available for constant-time comparison.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[Very long messages should be handled without crash.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[XXE-style payloads shouldn't crash processing.]] - rationale - gateway/tests/test_security_audit_advanced.py
-- [[_make_pii_sanitizer()]] - code - gateway/tests/test_redteam_probes.py
-- [[asyncio_14]] - code
-- [[asyncio_15]] - code
-- [[asyncio_16]] - code
-- [[canary.py_2]] - code - gateway/security/canary.py
-- [[canary_pipeline()]] - code - gateway/tests/test_canary.py
-- [[check_monitor_mode_warnings()]] - code - gateway/ingest_api/config.py
-- [[fixture_18]] - code
-- [[fixture_19]] - code
-- [[fixture_20]] - code
-- [[fixture_21]] - code
-- [[get_module_mode()]] - code - gateway/ingest_api/config.py
-- [[ingest_apiconfig.py]] - code - gateway/ingest_api/config.py
+- [[Args resolve_dns If True, resolve hostnames to IPs and check those too.…]] - rationale - gateway/proxy/url_analyzer.py
+- [[CONNECT tunnel must NOT allow api.telegram.org — forces traffic through reverse…]] - rationale - gateway/tests/test_http_proxy.py
+- [[Check if a domain is on the allowlist (used when mode == 'allowlist'). Supports…]] - rationale - gateway/proxy/web_config.py
+- [[Check if a domain is on the denylist.]] - rationale - gateway/proxy/web_config.py
+- [[Check if request is within rate limit. Returns True if allowed.]] - rationale - gateway/proxy/web_proxy.py
+- [[Configuration for the web traffic proxy. Default-allow all URLs pass unless…]] - rationale - gateway/proxy/web_config.py
+- [[Default (denylist) mode is unchanged.]] - rationale - gateway/tests/test_web_proxy.py
+- [[Default-deny allowlist unlisted domains are blocked.]] - rationale - gateway/tests/test_web_proxy.py
+- [[DomainSettings]] - code - gateway/proxy/web_config.py
+- [[Enum_35]] - code
+- [[Get settings for a specific domain, falling back to defaults.]] - rationale - gateway/proxy/web_config.py
+- [[HTTP CONNECT proxy server — intercepts all bot outbound traffic. Listens on…]] - rationale - gateway/proxy/http_proxy.py
+- [[HTTP web traffic proxy for OpenClaw. Intercepts all outbound web requests, runs…]] - rationale - gateway/proxy/web_proxy.py
+- [[Per-domain configuration overrides.]] - rationale - gateway/proxy/web_config.py
+- [[Proxy works without an audit chain.]] - rationale - gateway/tests/test_web_proxy.py
+- [[ProxyAction]] - code - gateway/proxy/web_proxy.py
+- [[RateLimiter_1]] - code - gateway/proxy/web_proxy.py
+- [[Simple in-memory per-domain rate limiter using sliding window.]] - rationale - gateway/proxy/web_proxy.py
+- [[TestAllowlistMode]] - code - gateway/tests/test_web_proxy.py
+- [[TestAuditChain]] - code - gateway/tests/test_web_proxy.py
+- [[TestContentTypeFiltering]] - code - gateway/tests/test_web_proxy.py
+- [[TestDataExfiltration_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestDomainDenylist]] - code - gateway/tests/test_web_proxy.py
+- [[TestEncodedPayloads]] - code - gateway/tests/test_web_proxy.py
+- [[TestIsDomainAllowed]] - code - gateway/tests/test_web_proxy.py
+- [[TestPassthroughMode_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestRateLimiting_1]] - code - gateway/tests/test_web_proxy.py
+- [[TestResponseSizeLimits]] - code - gateway/tests/test_web_proxy.py
+- [[TestStats]] - code - gateway/tests/test_web_proxy.py
+- [[TestWebProxyConfig]] - code - gateway/tests/test_web_proxy.py
+- [[Tests for Web Proxy — comprehensive security tests. Covers URL…]] - rationale - gateway/tests/test_web_proxy.py
+- [[URLAnalyzer]] - code - gateway/proxy/url_analyzer.py
+- [[Unit tests for WebProxyConfig.is_domain_allowed().]] - rationale - gateway/tests/test_web_proxy.py
+- [[Verify hc-ping.com (Healthchecks.io) is on the egress allowlist. Without this…]] - rationale - gateway/tests/test_heartbeat_egress.py
+- [[WebProxy]] - code - gateway/proxy/web_proxy.py
+- [[WebProxyConfig]] - code - gateway/proxy/web_config.py
+- [[_allowlist_proxy()]] - code - gateway/tests/test_http_proxy_coverage.py
+- [[audit_chain()]] - code - gateway/tests/test_web_proxy.py
+- [[config()_2]] - code - gateway/tests/test_web_proxy.py
+- [[fixture_106]] - code
+- [[http_proxy.py]] - code - gateway/proxy/http_proxy.py
 - [[lifespan.py]] - code - gateway/ingest_api/lifespan.py
-- [[prompt_guard()]] - code - gateway/tests/test_prompt_guard.py
-- [[run_canary()]] - code - gateway/security/canary.py
-- [[sanitizer()_1]] - code - gateway/tests/test_block_credentials.py
-- [[sanitizer()_2]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[sanitizer.py_2]] - code - gateway/ingest_api/sanitizer.py
-- [[scan()]] - code - gateway/tests/test_security_audit_advanced.py
-- [[state.py]] - code - gateway/ingest_api/state.py
-- [[test_all_modules_enforce.py]] - code - gateway/tests/test_all_modules_enforce.py
-- [[test_api_source_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_block_credentials.py]] - code - gateway/tests/test_block_credentials.py
-- [[test_blocked_message_contains_guidance()]] - code - gateway/tests/test_block_credentials.py
-- [[test_canary.py]] - code - gateway/tests/test_canary.py
-- [[test_canary_fails_without_pipeline()]] - code - gateway/tests/test_canary.py
-- [[test_canary_message_contains_fake_pii()]] - code - gateway/tests/test_canary.py
-- [[test_canary_passes_with_pipeline()]] - code - gateway/tests/test_canary.py
-- [[test_canary_result_serialization()]] - code - gateway/tests/test_canary.py
-- [[test_canary_verifies_audit_chain()]] - code - gateway/tests/test_canary.py
-- [[test_canary_verifies_pii_stripping()]] - code - gateway/tests/test_canary.py
-- [[test_canary_with_healthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[test_canary_with_unhealthy_forwarder()]] - code - gateway/tests/test_canary.py
-- [[test_collapses_excessive_newlines()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_console_source_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_control_ui_source_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_does_not_filter_normal_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_does_not_filter_regular_html_tags()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_empty_string_returns_unchanged()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_enforce_defaults.py]] - code - gateway/tests/test_enforce_defaults.py
-- [[test_external_api_blocks_credentials()]] - code - gateway/tests/test_block_credentials.py
-- [[test_filter_xml_blocks.py]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_blocks_preserves_surrounding_text()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_calls_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_function_results_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_invoke_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_large_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_multiple_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_nested_invoke_inside_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_parameter_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_system_reminder_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_thinking_block()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_calls()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_function_results()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_system_reminder()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_filters_unclosed_thinking()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_localhost_source_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_normal_technical_content_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_normal_text_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_performance.py]] - code - gateway/tests/test_performance.py
-- [[test_pipeline_all_modules_disabled()]] - code - gateway/tests/test_security_integration.py
-- [[test_pipeline_selective_modules()]] - code - gateway/tests/test_security_integration.py
-- [[test_returns_tuple_of_str_and_bool()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_security_audit_advanced.py]] - code - gateway/tests/test_security_audit_advanced.py
-- [[test_short_password_field_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_six_digit_number_not_blocked()]] - code - gateway/tests/test_block_credentials.py
-- [[test_strips_leading_trailing_whitespace()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_telegram_blocks_aws_key()]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_blocks_github_token()]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_blocks_json_password()]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_blocks_openai_api_key()]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_blocks_password()]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_blocks_ssh_private_key()]] - code - gateway/tests/test_block_credentials.py
-- [[test_telegram_proxy_outbound.py]] - code - gateway/tests/test_telegram_proxy_outbound.py
-- [[test_was_filtered_false_when_no_blocks()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[test_was_filtered_true_when_block_present()]] - code - gateway/tests/test_filter_xml_blocks.py
-- [[tool_result_sanitizer.py]] - code - gateway/security/tool_result_sanitizer.py
-- [[was_filtered is False when no XML blocks are present.]] - rationale - gateway/tests/test_filter_xml_blocks.py
-- [[was_filtered is True when an XML block is removed.]] - rationale - gateway/tests/test_filter_xml_blocks.py
+- [[passthrough_proxy()_1]] - code - gateway/tests/test_web_proxy.py
+- [[proxy()_2]] - code - gateway/tests/test_web_proxy.py
+- [[str_18]] - code
+- [[test_hc_ping_allowed()]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_hc_ping_subdomain_not_blocked()]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_heartbeat_egress.py]] - code - gateway/tests/test_heartbeat_egress.py
+- [[test_proxy_created_with_custom_web_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_telegram_api_blocked_in_connect_proxy()]] - code - gateway/tests/test_http_proxy.py
+- [[test_web_proxy.py]] - code - gateway/tests/test_web_proxy.py
+- [[web_config.py_2]] - code - gateway/proxy/web_config.py
+- [[web_proxy.py_2]] - code - gateway/proxy/web_proxy.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -295,155 +133,108 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 68 edges to [[_COMMUNITY_GatewayConfig]]
-- 35 edges to [[_COMMUNITY_TrustManager]]
-- 34 edges to [[_COMMUNITY_RedactionResult]]
-- 28 edges to [[_COMMUNITY_prompt_guard.py]]
-- 25 edges to [[_COMMUNITY_lifespan]]
-- 22 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
-- 16 edges to [[_COMMUNITY_SecurityPipeline]]
-- 16 edges to [[_COMMUNITY_ContextGuard]]
-- 15 edges to [[_COMMUNITY_test_mfa_guard.py]]
-- 15 edges to [[_COMMUNITY_SecurityConfig]]
-- 14 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 12 edges to [[_COMMUNITY_normalize_input]]
-- 10 edges to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
-- 10 edges to [[_COMMUNITY_test_security_integration.py]]
-- 9 edges to [[_COMMUNITY_AgentTarget]]
-- 8 edges to [[_COMMUNITY_test_sanitizer.py]]
-- 8 edges to [[_COMMUNITY_test_e2e_proxy.py]]
-- 8 edges to [[_COMMUNITY_test_e2e_watchtower.py]]
-- 8 edges to [[_COMMUNITY_EgressFilter]]
-- 8 edges to [[_COMMUNITY_FileSandbox]]
-- 7 edges to [[_COMMUNITY_run]]
-- 7 edges to [[_COMMUNITY_middleware.py]]
-- 7 edges to [[_COMMUNITY_test_mcp_proxy.py]]
-- 6 edges to [[_COMMUNITY_test_edge_service_routes.py]]
-- 6 edges to [[_COMMUNITY_PathIsolationManager]]
-- 6 edges to [[_COMMUNITY_HTTPForwarder]]
-- 5 edges to [[_COMMUNITY_make_event]]
-- 5 edges to [[_COMMUNITY_UserSessionManager]]
-- 5 edges to [[_COMMUNITY_AgentRegistry]]
-- 5 edges to [[_COMMUNITY_WebProxy]]
-- 4 edges to [[_COMMUNITY_ContainerSnapshot]]
-- 3 edges to [[_COMMUNITY_EncryptedStore]]
-- 3 edges to [[_COMMUNITY_EgressPolicy]]
-- 3 edges to [[_COMMUNITY__write]]
-- 3 edges to [[_COMMUNITY_test_middleware_coverage.py]]
-- 3 edges to [[_COMMUNITY__make_sanitizer]]
-- 3 edges to [[_COMMUNITY_AlertTelegramRelay]]
-- 3 edges to [[_COMMUNITY_test_security_audit.py]]
-- 3 edges to [[_COMMUNITY_HTTPConnectProxy]]
-- 3 edges to [[_COMMUNITY_SSHProxy]]
-- 3 edges to [[_COMMUNITY_TestMultilingualInjection]]
-- 3 edges to [[_COMMUNITY_ResourceGuard]]
-- 3 edges to [[_COMMUNITY_AlertDispatcher]]
-- 3 edges to [[_COMMUNITY_LogSanitizer]]
-- 3 edges to [[_COMMUNITY_web_proxy.py]]
-- 3 edges to [[_COMMUNITY_SubagentMonitor]]
-- 3 edges to [[_COMMUNITY_MCPPolicyEngine]]
-- 3 edges to [[_COMMUNITY_CollaboratorActivityTracker]]
-- 3 edges to [[_COMMUNITY_KillSwitchConfig]]
-- 3 edges to [[_COMMUNITY_PipelineAction]]
+- 24 edges to [[_COMMUNITY_HTTPConnectProxy]]
+- 11 edges to [[_COMMUNITY_EgressEvent]]
+- 10 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 10 edges to [[_COMMUNITY_TestWebProxySecurityIntegration]]
+- 9 edges to [[_COMMUNITY_test_url_analyzer.py]]
+- 8 edges to [[_COMMUNITY_middleware.py]]
+- 8 edges to [[_COMMUNITY_test_http_proxy_coverage.py]]
+- 7 edges to [[_COMMUNITY_lifespan]]
+- 5 edges to [[_COMMUNITY_NetworkValidator]]
+- 4 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 4 edges to [[_COMMUNITY_BrowserSecurityGuard]]
+- 4 edges to [[_COMMUNITY_TrustLevel]]
+- 4 edges to [[_COMMUNITY_WebContentScanner]]
+- 4 edges to [[_COMMUNITY_TestAuth]]
+- 4 edges to [[_COMMUNITY_AgentRegistry]]
+- 4 edges to [[_COMMUNITY_EgressFilterConfig]]
+- 3 edges to [[_COMMUNITY_KeyVault]]
+- 3 edges to [[_COMMUNITY_test_mfa_guard.py]]
+- 3 edges to [[_COMMUNITY_EgressFilter]]
 - 3 edges to [[_COMMUNITY_daily_cve_report.py]]
 - 3 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
-- 2 edges to [[_COMMUNITY_MiddlewareManager]]
-- 2 edges to [[_COMMUNITY_socrouter.py]]
+- 2 edges to [[_COMMUNITY_ContextGuard]]
 - 2 edges to [[_COMMUNITY_PrivacyPolicyEnforcer]]
-- 2 edges to [[_COMMUNITY_test_soc_realtime_coverage.py]]
-- 2 edges to [[_COMMUNITY_TestPIIDetection_1]]
-- 2 edges to [[_COMMUNITY_deep_security_test]]
-- 2 edges to [[_COMMUNITY_TestPromptGuardEvasion]]
-- 2 edges to [[_COMMUNITY_TestNewPatternsV080]]
-- 2 edges to [[_COMMUNITY_TokenValidator]]
-- 2 edges to [[_COMMUNITY_dot-test_activity_command_renders_entries]]
-- 2 edges to [[_COMMUNITY_DNSFilterConfig]]
-- 2 edges to [[_COMMUNITY__make_multipart_body]]
-- 2 edges to [[_COMMUNITY_BrowserSecurityGuard]]
-- 2 edges to [[_COMMUNITY_OutputCanary]]
+- 2 edges to [[_COMMUNITY_PIISanitizer]]
 - 2 edges to [[_COMMUNITY_RateLimitGuard]]
+- 2 edges to [[_COMMUNITY_TrustManager]]
 - 2 edges to [[_COMMUNITY_DataExfilVolumeGuard]]
-- 2 edges to [[_COMMUNITY_ProgressiveTrustConfig]]
-- 2 edges to [[_COMMUNITY_OutboundInfoFilter]]
-- 2 edges to [[_COMMUNITY_GitGuard]]
-- 2 edges to [[_COMMUNITY_asyncio_5]]
-- 2 edges to [[_COMMUNITY_TestOutboundClassifierHelpers]]
-- 2 edges to [[_COMMUNITY_TestReplayBufferOffsetParsing]]
-- 2 edges to [[_COMMUNITY_test_observatory_mode.py]]
-- 2 edges to [[_COMMUNITY_load_all_secret_file_values]]
-- 2 edges to [[_COMMUNITY_test_edge_approvals.py]]
-- 2 edges to [[_COMMUNITY_telegram_proxy.py]]
-- 1 edge to [[_COMMUNITY_TestOutboundScanUnification]]
+- 2 edges to [[_COMMUNITY_MCPPolicyEngine]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
+- 2 edges to [[_COMMUNITY_AuditChain]]
+- 2 edges to [[_COMMUNITY_UserSessionManager]]
+- 2 edges to [[_COMMUNITY_SecurityConfig]]
+- 2 edges to [[_COMMUNITY_test_clamav_pipeline.py]]
+- 2 edges to [[_COMMUNITY_test_edge_service_routes.py]]
+- 2 edges to [[_COMMUNITY_secrets.py]]
+- 2 edges to [[_COMMUNITY_test_dashboard_endpoints.py]]
+- 2 edges to [[_COMMUNITY_clamav_scanner.py]]
+- 2 edges to [[_COMMUNITY_test_security_toolchain.py]]
+- 2 edges to [[_COMMUNITY_test_e2e_proxy.py]]
+- 2 edges to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_EventBus]]
 - 1 edge to [[_COMMUNITY_DelegationPrivilege]]
 - 1 edge to [[_COMMUNITY_ReportStore]]
 - 1 edge to [[_COMMUNITY_CronStateMonitor]]
-- 1 edge to [[_COMMUNITY_dot-_rewrite_known_runtime_errors]]
-- 1 edge to [[_COMMUNITY_TestWebSearchLog]]
-- 1 edge to [[_COMMUNITY_EnvironmentGuard]]
-- 1 edge to [[_COMMUNITY_TestParseModeStrippedAfterPIIRedaction]]
-- 1 edge to [[_COMMUNITY_test_api_alerts_endpoint_emits_bus_event]]
-- 1 edge to [[_COMMUNITY_TestPromptGuard]]
-- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
-- 1 edge to [[_COMMUNITY_dot-_filter_outbound]]
-- 1 edge to [[_COMMUNITY_TestWebSecurity]]
-- 1 edge to [[_COMMUNITY_KeyVault]]
-- 1 edge to [[_COMMUNITY_KeyVaultConfig]]
-- 1 edge to [[_COMMUNITY_TestDependencySecurity]]
+- 1 edge to [[_COMMUNITY_EncryptedStore]]
+- 1 edge to [[_COMMUNITY_EgressPolicy]]
+- 1 edge to [[_COMMUNITY_TestSSRFBlocking]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleConfig]]
+- 1 edge to [[_COMMUNITY_RBACConfig]]
+- 1 edge to [[_COMMUNITY_TestPromptInjectionDetection]]
 - 1 edge to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_TestTelegram400Retry]]
 - 1 edge to [[_COMMUNITY_ToolResultInjectionScanner]]
-- 1 edge to [[_COMMUNITY_TestOutboundPipelineIntegration]]
-- 1 edge to [[_COMMUNITY_KeyLeakDetector]]
-- 1 edge to [[_COMMUNITY_TestOwnerMirrorCoalescing]]
-- 1 edge to [[_COMMUNITY_TestDefaultBotId]]
+- 1 edge to [[_COMMUNITY_context_guard.py]]
+- 1 edge to [[_COMMUNITY_TestHiddenContent]]
+- 1 edge to [[_COMMUNITY_TestPIIDetection_1]]
+- 1 edge to [[_COMMUNITY_SSHProxy]]
+- 1 edge to [[_COMMUNITY_TestZeroWidthAttacks]]
 - 1 edge to [[_COMMUNITY_ConfigIntegrityMonitor]]
-- 1 edge to [[_COMMUNITY_BotConfig]]
 - 1 edge to [[_COMMUNITY_CanaryTripwire]]
+- 1 edge to [[_COMMUNITY_OutboundInfoFilter]]
 - 1 edge to [[_COMMUNITY_ProgressiveLockdown]]
 - 1 edge to [[_COMMUNITY_ToolACLEnforcer]]
-- 1 edge to [[_COMMUNITY_TeamsConfig]]
 - 1 edge to [[_COMMUNITY_OutputSchemaEnforcer]]
 - 1 edge to [[_COMMUNITY_GroupRegistry]]
-- 1 edge to [[_COMMUNITY_TelegramAPIProxy]]
-- 1 edge to [[_COMMUNITY_EncodingDetector]]
+- 1 edge to [[_COMMUNITY_MemoryLifecycleManager]]
+- 1 edge to [[_COMMUNITY_MiddlewareManager]]
+- 1 edge to [[_COMMUNITY_CollaboratorActivityTracker]]
+- 1 edge to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 1 edge to [[_COMMUNITY_MemoryIntegrityMonitor]]
+- 1 edge to [[_COMMUNITY_test_memory_lifecycle.py]]
+- 1 edge to [[_COMMUNITY_EgressAction]]
+- 1 edge to [[_COMMUNITY_AlertTelegramRelay]]
 - 1 edge to [[_COMMUNITY_EgressApprovalQueue]]
+- 1 edge to [[_COMMUNITY_AlertDispatcher]]
 - 1 edge to [[_COMMUNITY_AuditStore]]
-- 1 edge to [[_COMMUNITY_dot-_extract_first_egress_target]]
+- 1 edge to [[_COMMUNITY_DriftDetector]]
 - 1 edge to [[_COMMUNITY_DNSBlocklist]]
-- 1 edge to [[_COMMUNITY_NetworkValidator]]
-- 1 edge to [[_COMMUNITY_dot-_looks_like_safe_collaborator_info_query]]
-- 1 edge to [[_COMMUNITY_ToolChainAnalyzer]]
 - 1 edge to [[_COMMUNITY_EgressTelegramNotifier]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 - 1 edge to [[_COMMUNITY_DifferentialPIIDetector]]
-- 1 edge to [[_COMMUNITY_dot-_is_valid_domain_name]]
-- 1 edge to [[_COMMUNITY_EnvelopeSigner]]
+- 1 edge to [[_COMMUNITY_service.py]]
 - 1 edge to [[_COMMUNITY_FalcoAlertWatcher]]
-- 1 edge to [[_COMMUNITY_MultiTurnTracker]]
-- 1 edge to [[_COMMUNITY_TestBuildCollaboratorSafeInfoResponse]]
-- 1 edge to [[_COMMUNITY_TrustLevel]]
-- 1 edge to [[_COMMUNITY_TestObservatoryMode]]
-- 1 edge to [[_COMMUNITY_get_wazuh_summary]]
+- 1 edge to [[_COMMUNITY_KillSwitchMonitor]]
+- 1 edge to [[_COMMUNITY_socrouter.py]]
+- 1 edge to [[_COMMUNITY_setup_resource_guard]]
 - 1 edge to [[_COMMUNITY_get_trivy_summary]]
-- 1 edge to [[_COMMUNITY_read_secret]]
+- 1 edge to [[_COMMUNITY_test_config_hot_reload.py]]
+- 1 edge to [[_COMMUNITY_get_wazuh_summary]]
 - 1 edge to [[_COMMUNITY_canvas_proxy.py]]
 - 1 edge to [[_COMMUNITY_test_image_verifier.py]]
 - 1 edge to [[_COMMUNITY_test_lifespan_prune.py]]
-- 1 edge to [[_COMMUNITY_test_security_toolchain.py]]
-- 1 edge to [[_COMMUNITY_tool_chain_analyzer.py]]
-- 1 edge to [[_COMMUNITY_ApprovalRequest]]
-- 1 edge to [[_COMMUNITY_api.py]]
-- 1 edge to [[_COMMUNITY_dashboard_endpoints.py]]
+- 1 edge to [[_COMMUNITY_test_canary.py]]
 - 1 edge to [[_COMMUNITY_generate_report]]
-- 1 edge to [[_COMMUNITY_parse_trivy_output]]
-- 1 edge to [[_COMMUNITY_wazuh_client.py]]
+- 1 edge to [[_COMMUNITY_generate_summary]]
+- 1 edge to [[_COMMUNITY_PIIConfig]]
+- 1 edge to [[_COMMUNITY_outbound_filter.py]]
+- 1 edge to [[_COMMUNITY_KillSwitchConfig]]
 - 1 edge to [[_COMMUNITY_test_hermes_forwarder_drops_non_http]]
-- 1 edge to [[_COMMUNITY_ProxyResult]]
-- 1 edge to [[_COMMUNITY_dot-_make_proxy]]
-- 1 edge to [[_COMMUNITY_multi_turn_tracker.py]]
 
 ## Top bridge nodes
-- [[lifespan.py]] - degree 137, connects to 78 communities
-- [[PromptGuard]] - degree 113, connects to 24 communities
-- [[test_telegram_proxy_outbound.py]] - degree 34, connects to 22 communities
-- [[ingest_apiconfig.py]] - degree 73, connects to 21 communities
-- [[PIIConfig]] - degree 100, connects to 19 communities
+- [[lifespan.py]] - degree 137, connects to 84 communities
+- [[WebProxy]] - degree 51, connects to 10 communities
+- [[web_proxy.py_2]] - degree 30, connects to 10 communities
+- [[test_web_proxy.py]] - degree 31, connects to 7 communities
+- [[http_proxy.py]] - degree 16, connects to 7 communities

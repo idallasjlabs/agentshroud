@@ -19,7 +19,7 @@ members: 13
 - [[Notes]] - document - skills/openclaw/trello/SKILL.md
 - [[Setup]] - document - skills/openclaw/trello/SKILL.md
 - [[Trello Skill]] - document - skills/openclaw/trello/SKILL.md
-- [[Usage_18]] - document - skills/openclaw/trello/SKILL.md
+- [[Usage_19]] - document - skills/openclaw/trello/SKILL.md
 - [[trelloSKILL]] - document - skills/openclaw/trello/SKILL.md
 
 ## Live Query (requires Dataview plugin)

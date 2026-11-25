@@ -9,7 +9,7 @@ members: 4
 
 ## Members
 - [[dot-_teams_config()]] - code - gateway/proxy/telegram_proxy.py
-- [[dot-is_group_admin()_1]] - code - gateway/soc/auth.py
+- [[dot-is_group_admin()_2]] - code - gateway/soc/auth.py
 - [[Check group admin status via TeamsConfig if available.]] - rationale - gateway/soc/auth.py
 - [[Return TeamsConfig from app_state if available.]] - rationale - gateway/proxy/telegram_proxy.py
 
@@ -26,4 +26,4 @@ SORT file.name ASC
 
 ## Top bridge nodes
 - [[dot-_teams_config()]] - degree 3, connects to 1 community
-- [[dot-is_group_admin()_1]] - degree 3, connects to 1 community
+- [[dot-is_group_admin()_2]] - degree 3, connects to 1 community

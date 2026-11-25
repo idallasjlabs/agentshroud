@@ -1,11 +1,11 @@
 ---
 type: community
-members: 27
+members: 49
 ---
 
 # is_overloaded
 
-**Members:** 27 nodes
+**Members:** 49 nodes
 
 ## Members
 - [[dot-test_anthropic_api_error_500_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
@@ -30,11 +30,33 @@ members: 27
 - [[dot-test_overloaded_word_in_chat_content_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
 - [[dot-test_quota_statuses_not_claimed()]] - code - gateway/tests/test_llm_quota_detector.py
 - [[dot-test_unrecognized_error_shape_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[Anthropic returns the Claude.ai OAuth quota copy with HTTP 400 (wrapped as…]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Generic 400 validation errors must NOT trigger failover.]] - rationale - gateway/tests/test_llm_quota_detector.py
+- [[Quota-exhaustion detector for cloud LLM providers. Pure-function module — no…]] - rationale - gateway/proxy/llm_quota_detector.py
 - [[Return (True, provider_overloaded) for a provider capacity-error envelope…]] - rationale - gateway/proxy/llm_quota_detector.py
+- [[Return (True, token) if the response indicates a billingquota wall. The stable…]] - rationale - gateway/proxy/llm_quota_detector.py
 - [[SCRUM-60 in-body overload envelopes from OpenAI and Gemini must fail over…]] - rationale - gateway/tests/test_llm_quota_detector.py
 - [[TestIsOverloaded]] - code - gateway/tests/test_llm_quota_detector.py
 - [[TestOverloadedMultiProvider]] - code - gateway/tests/test_llm_quota_detector.py
+- [[_is_anthropic_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_google_quota()]] - code - gateway/proxy/llm_quota_detector.py
+- [[_is_openai_quota()]] - code - gateway/proxy/llm_quota_detector.py
 - [[is_overloaded()]] - code - gateway/proxy/llm_quota_detector.py
+- [[is_quota_exhausted()]] - code - gateway/proxy/llm_quota_detector.py
+- [[llm_quota_detector.py]] - code - gateway/proxy/llm_quota_detector.py
+- [[test_200_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_400_without_quota_substring_not_flagged()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_500_never_triggers()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_400_oauth_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_credit_balance_substring()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_extra_usage()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_rate_limit_type_quota_message()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_anthropic_settings_url()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_google_resource_exhausted()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_detect_openai_insufficient_quota()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_llm_quota_detector.py]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_no_false_positive_on_anthropic_request_rate_limit()]] - code - gateway/tests/test_llm_quota_detector.py
+- [[test_non_json_body_anthropic_429_no_substring_match()]] - code - gateway/tests/test_llm_quota_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -44,11 +66,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_is_quota_exhausted]]
-- 2 edges to [[_COMMUNITY_LLMProxy]]
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 5 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 4 edges to [[_COMMUNITY_LLMProxy]]
 
 ## Top bridge nodes
-- [[is_overloaded()]] - degree 28, connects to 3 communities
-- [[TestOverloadedMultiProvider]] - degree 16, connects to 1 community
-- [[TestIsOverloaded]] - degree 9, connects to 1 community
+- [[is_overloaded()]] - degree 28, connects to 2 communities
+- [[is_quota_exhausted()]] - degree 21, connects to 2 communities
+- [[llm_quota_detector.py]] - degree 10, connects to 1 community

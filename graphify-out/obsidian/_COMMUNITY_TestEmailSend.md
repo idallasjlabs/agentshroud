@@ -14,7 +14,7 @@ members: 21
 - [[dot-test_missing_to_returns_422()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_owner_body_not_redacted()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_pii_redacted_for_unknown_recipient()]] - code - gateway/tests/test_channel_ownership.py
-- [[dot-test_requires_auth()_3]] - code - gateway/tests/test_channel_ownership.py
+- [[dot-test_requires_auth()_4]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_response_has_timestamp()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_unknown_recipient_no_queue_returns_403()]] - code - gateway/tests/test_channel_ownership.py
 - [[dot-test_unknown_recipient_queued_for_approval()]] - code - gateway/tests/test_channel_ownership.py
@@ -22,7 +22,7 @@ members: 21
 - [[Allowed (owner) recipient receives the body verbatim — PII scan is skipped. The…]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Approved response includes sanitized_body field.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Email to an allowed recipient returns 200 with status=approved.]] - rationale - gateway/tests/test_channel_ownership.py
-- [[Endpoint returns 401 without auth override._1]] - rationale - gateway/tests/test_channel_ownership.py
+- [[Endpoint returns 401 without auth override._2]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Missing 'subject' or 'body' returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[Missing 'to' field returns 422.]] - rationale - gateway/tests/test_channel_ownership.py
 - [[PII in email body IS redacted before queuing for unknown recipients.]] - rationale - gateway/tests/test_channel_ownership.py
@@ -39,12 +39,11 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 3 edges to [[_COMMUNITY_AsyncMock]]
-- 1 edge to [[_COMMUNITY_email_send]]
-- 1 edge to [[_COMMUNITY_app]]
+- 2 edges to [[_COMMUNITY_app]]
 
 ## Top bridge nodes
 - [[TestEmailSend]] - degree 11, connects to 1 community
 - [[dot-test_owner_body_not_redacted()]] - degree 3, connects to 1 community
 - [[dot-test_pii_redacted_for_unknown_recipient()]] - degree 3, connects to 1 community
-- [[dot-test_requires_auth()_3]] - degree 3, connects to 1 community
+- [[dot-test_requires_auth()_4]] - degree 3, connects to 1 community
 - [[dot-test_unknown_recipient_queued_for_approval()]] - degree 3, connects to 1 community

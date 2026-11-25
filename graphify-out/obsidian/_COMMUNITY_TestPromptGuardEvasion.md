@@ -8,7 +8,7 @@ members: 13
 **Members:** 13 nodes
 
 ## Members
-- [[dot-setup_method()_9]] - code - gateway/tests/test_security_hardening.py
+- [[dot-setup_method()_10]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_double_base64_injection()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_fullwidth_detection()]] - code - gateway/tests/test_security_hardening.py
 - [[dot-test_homoglyph_detection()]] - code - gateway/tests/test_security_hardening.py
@@ -30,9 +30,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_PromptGuard]]
 - 1 edge to [[_COMMUNITY_AgentRegistry]]
 
 ## Top bridge nodes
 - [[TestPromptGuardEvasion]] - degree 10, connects to 2 communities
-- [[dot-setup_method()_9]] - degree 2, connects to 1 community
+- [[dot-setup_method()_10]] - degree 2, connects to 1 community

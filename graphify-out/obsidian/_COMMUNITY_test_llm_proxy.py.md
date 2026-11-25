@@ -1,18 +1,18 @@
 ---
 type: community
-members: 89
+members: 91
 ---
 
 # test_llm_proxy.py
 
-**Members:** 89 nodes
+**Members:** 91 nodes
 
 ## Members
 - [[dot-__aenter__()_6]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-__aexit__()_6]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_157]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_158]] - code - gateway/tests/test_llm_proxy.py
-- [[dot-__init__()_159]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_162]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_163]] - code - gateway/tests/test_llm_proxy.py
+- [[dot-__init__()_164]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-aiter_bytes()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-aread()_1]] - code - gateway/tests/test_llm_proxy.py
 - [[dot-block_credentials()_1]] - code - gateway/tests/test_llm_proxy.py
@@ -30,6 +30,7 @@ members: 89
 - [[Events from 'unknown' user_id must not be blocked (not authenticated).]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Existing callers (with_head=False) keep getting bytes only — no StreamHead.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Fake CredentialInjector that records inject_headers calls and applies Anthropic…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[First item yielded by proxy_messages_streaming(with_head=True). Carries the…]] - rationale - gateway/proxy/llm_proxy.py
 - [[LM Studio down → 503 backend_unavailable with LM Studio hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Localnon-Anthropic destination injector must NOT be called.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Minimal ToolACLEnforcer stub that denies a named tool.]] - rationale - gateway/tests/test_llm_proxy.py
@@ -41,6 +42,7 @@ members: 89
 - [[Repeated connect failures log one WARNING per window, not per request.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Return a monkeypatched urlopen that captures the Request headers.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[Same regression as…]] - rationale - gateway/tests/test_llm_proxy.py
+- [[StreamHead]] - code - gateway/proxy/llm_proxy.py
 - [[Streaming Anthropic request triggers inject_headers before httpx connects.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[_FakeSanitizer]] - code - gateway/tests/test_llm_proxy.py
 - [[_FakeToolACL]] - code - gateway/tests/test_llm_proxy.py
@@ -60,7 +62,7 @@ members: 89
 - [[block_credentials()]] - code - gateway/tests/test_llm_proxy.py
 - [[content_block_start with terminal_tool must be replaced with a text error block.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[fake_open()_2]] - code - gateway/tests/test_llm_proxy.py
-- [[fake_urlopen()_31]] - code - gateway/tests/test_llm_proxy.py
+- [[fake_urlopen()_29]] - code - gateway/tests/test_llm_proxy.py
 - [[mlx_lm down (connection refused) → 503 backend_unavailable with start hint.]] - rationale - gateway/tests/test_llm_proxy.py
 - [[mock_forward()_19]] - code - gateway/tests/test_llm_proxy.py
 - [[mock_forward()_20]] - code - gateway/tests/test_llm_proxy.py
@@ -106,16 +108,17 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 26 edges to [[_COMMUNITY_LLMProxy]]
-- 6 edges to [[_COMMUNITY_StreamHead]]
+- 27 edges to [[_COMMUNITY_LLMProxy]]
+- 3 edges to [[_COMMUNITY_TestStreamingProxyStatusPropagation]]
+- 2 edges to [[_COMMUNITY_test_anthropic_openai_translator.py]]
 - 2 edges to [[_COMMUNITY_LLMProxy.proxy_messages (non-streaming)]]
 - 1 edge to [[_COMMUNITY_AsyncMock]]
 - 1 edge to [[_COMMUNITY__HeadFakeClient]]
-- 1 edge to [[_COMMUNITY_test_anthropic_openai_translator.py]]
+- 1 edge to [[_COMMUNITY_app]]
 
 ## Top bridge nodes
-- [[test_llm_proxy.py]] - degree 43, connects to 4 communities
-- [[_run_stream()]] - degree 10, connects to 3 communities
-- [[test_streaming_connect_failure_keeps_in_stream_error_frame()]] - degree 7, connects to 3 communities
+- [[StreamHead]] - degree 13, connects to 4 communities
+- [[test_llm_proxy.py]] - degree 43, connects to 3 communities
+- [[_run_stream()]] - degree 10, connects to 2 communities
+- [[test_streaming_connect_failure_keeps_in_stream_error_frame()]] - degree 7, connects to 2 communities
 - [[test_scan_request_data_scans_messages_without_name_error()]] - degree 5, connects to 2 communities
-- [[test_proxy_messages_plain_openai_model_substitutes_real_key()]] - degree 8, connects to 1 community

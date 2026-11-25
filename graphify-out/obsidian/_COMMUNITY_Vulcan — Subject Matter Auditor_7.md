@@ -8,9 +8,9 @@ members: 5
 **Members:** 5 nodes
 
 ## Members
-- [[Purpose_115]] - document - .agents/skills/vulcan/README.md
+- [[Purpose_117]] - document - .agents/skills/vulcan/README.md
 - [[Related Skills_47]] - document - .agents/skills/vulcan/README.md
-- [[Usage_57]] - document - .agents/skills/vulcan/README.md
+- [[Usage_58]] - document - .agents/skills/vulcan/README.md
 - [[Vulcan — Subject Matter Auditor_7]] - document - .agents/skills/vulcan/README.md
 - [[vulcanREADME]] - document - .agents/skills/vulcan/README.md
 

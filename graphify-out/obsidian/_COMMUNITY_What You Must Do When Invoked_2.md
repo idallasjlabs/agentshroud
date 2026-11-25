@@ -28,7 +28,7 @@ members: 24
 - [[Step 6 - Generate Obsidian vault (opt-in) + HTML_2]] - document - docker/config/hermes/skills/graphify/SKILL.md
 - [[Step 9 - Save manifest, update cost tracker, clean up, and report_2]] - document - docker/config/hermes/skills/graphify/SKILL.md
 - [[Steps 6b-8 - Wiki, Neo4j, SVG, GraphML, MCP, benchmark (only on their flags)_2]] - document - docker/config/hermes/skills/graphify/SKILL.md
-- [[Usage_128]] - document - docker/config/hermes/skills/graphify/SKILL.md
+- [[Usage_129]] - document - docker/config/hermes/skills/graphify/SKILL.md
 - [[What You Must Do When Invoked_2]] - document - docker/config/hermes/skills/graphify/SKILL.md
 - [[What graphify is for_2]] - document - docker/config/hermes/skills/graphify/SKILL.md
 - [[hermesskillsgraphifySKILL]] - document - docker/config/hermes/skills/graphify/SKILL.md

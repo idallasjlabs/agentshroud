@@ -9,8 +9,8 @@ members: 6
 
 ## Members
 - [[Expected Behavior]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Purpose_88]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
-- [[Related Notes_62]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[Purpose_90]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
+- [[Related Notes_64]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 - [[Security Controls_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 - [[browser-fetch.js_1]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md
 - [[browser-fetch.js]] - document - docs/vault/02 - Modules/JavaScript/browser-fetch.js.md

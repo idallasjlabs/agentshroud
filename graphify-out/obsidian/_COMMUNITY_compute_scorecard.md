@@ -1,11 +1,11 @@
 ---
 type: community
-members: 38
+members: 36
 ---
 
 # compute_scorecard
 
-**Members:** 38 nodes
+**Members:** 36 nodes
 
 ## Members
 - [[dot-_all_not_run_patches()]] - code - gateway/tests/test_scanner_integration.py
@@ -25,12 +25,11 @@ members: 38
 - [[dot-test_scorecard_domain_ids_are_sequential()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_secrets_management_baseline_two()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_standard_basis_present()]] - code - gateway/tests/test_scanner_integration.py
-- [[dot-test_timestamp_present()]] - code - gateway/tests/test_scanner_integration.py
+- [[dot-test_timestamp_present()_1]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_totals_present()]] - code - gateway/tests/test_scanner_integration.py
 - [[dot-test_version_is_v090()]] - code - gateway/tests/test_scanner_integration.py
 - [[Compute the 33-domain Security Scorecard. Domains 1–21 Container…]] - rationale - gateway/security/scanner_integration.py
 - [[DISA STIG domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
-- [[Determine composite compliance level using the weakest-link rule. All 7 sub-…]] - rationale - gateway/security/scanner_integration.py
 - [[Determine the highest achieved IEC 62443 Security Level. SL 1 All IEC-mapped…]] - rationale - gateway/security/scanner_integration.py
 - [[EU AI Act domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[ISO 42001 domain map references only valid domain IDs.]] - rationale - gateway/tests/test_scanner_integration.py
@@ -42,7 +41,6 @@ members: 38
 - [[_compute_weighted_subscore returns 0.0 for an empty domain map.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[_compute_weighted_subscore returns 100.0 when all domains score 5.]] - rationale - gateway/tests/test_scanner_integration.py
 - [[_compute_weighted_subscore()]] - code - gateway/security/scanner_integration.py
-- [[_determine_compliance_level()]] - code - gateway/security/scanner_integration.py
 - [[_determine_iec_sl()]] - code - gateway/security/scanner_integration.py
 - [[_score_container_runtime_isolation()]] - code - gateway/security/scanner_integration.py
 - [[compute_scorecard()]] - code - gateway/security/scanner_integration.py
@@ -55,21 +53,20 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 27 edges to [[_COMMUNITY_scanner_integration.py]]
-- 12 edges to [[_COMMUNITY_test_scanner_integration.py]]
-- 4 edges to [[_COMMUNITY__score_compliance_auditing]]
-- 3 edges to [[_COMMUNITY__score_image_integrity]]
-- 3 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 26 edges to [[_COMMUNITY_scanner_integration.py]]
+- 16 edges to [[_COMMUNITY_test_scanner_integration.py]]
+- 3 edges to [[_COMMUNITY_get_trivy_summary]]
+- 3 edges to [[_COMMUNITY_aggregate_results]]
+- 3 edges to [[_COMMUNITY_Any]]
 - 2 edges to [[_COMMUNITY_socrouter.py]]
-- 2 edges to [[_COMMUNITY_get_trivy_summary]]
-- 2 edges to [[_COMMUNITY_Any_1]]
-- 1 edge to [[_COMMUNITY_get_sbom]]
-- 1 edge to [[_COMMUNITY_get_falco_summary]]
+- 2 edges to [[_COMMUNITY_test_scorecard_integrity.py]]
+- 1 edge to [[_COMMUNITY__score_secure_development]]
 - 1 edge to [[_COMMUNITY_get_wazuh_summary]]
+- 1 edge to [[_COMMUNITY_generate_summary]]
 
 ## Top bridge nodes
-- [[compute_scorecard()]] - degree 61, connects to 11 communities
-- [[dot-test_clean_tools_improve_score()]] - degree 8, connects to 4 communities
-- [[dot-_all_not_run_patches()]] - degree 18, connects to 3 communities
+- [[compute_scorecard()]] - degree 61, connects to 10 communities
+- [[dot-_all_not_run_patches()]] - degree 18, connects to 2 communities
+- [[dot-test_clean_tools_improve_score()]] - degree 8, connects to 2 communities
 - [[_compute_weighted_subscore()]] - degree 6, connects to 2 communities
 - [[TestComputeScorecard]] - degree 21, connects to 1 community

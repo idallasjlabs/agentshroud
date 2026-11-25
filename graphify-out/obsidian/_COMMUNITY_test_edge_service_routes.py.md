@@ -1,64 +1,82 @@
 ---
 type: community
-members: 72
+members: 88
 ---
 
 # test_edge_service_routes.py
 
-**Members:** 72 nodes
+**Members:** 88 nodes
 
 ## Members
+- [[dot-__call__()_9]] - code - gateway/inbound_edge/edge_app.py
 - [[dot-__getattr__()]] - code - gateway/tests/test_edge_service_routes.py
+- [[dot-__init__()_139]] - code - gateway/inbound_edge/edge_app.py
+- [[dot-__init__()_140]] - code - gateway/inbound_edge/edge_app.py
+- [[dot-__init__()_141]] - code - gateway/inbound_edge/edge_app.py
 - [[dot-__init__()_142]] - code - gateway/tests/test_edge_service_routes.py
-- [[A correctly signed manifest in a temp dir, wired in place of the committed one.]] - rationale - gateway/tests/test_edge_service_routes.py
-- [[Any_52]] - code
-- [[Any_53]] - code
-- [[Canonical JSON sorted keys, no insignificant whitespace, UTF-8.]] - rationale - gateway/inbound_edge/descriptors.py
-- [[DescriptorIntegrityError]] - code - gateway/inbound_edge/descriptors.py
-- [[Ed25519PublicKey]] - code
+- [[dot-_send_plain()]] - code - gateway/inbound_edge/edge_app.py
+- [[dot-aclose()]] - code - gateway/inbound_edge/edge_app.py
+- [[dot-call()]] - code - gateway/inbound_edge/edge_app.py
+- [[dot-resource()]] - code - gateway/inbound_edge/edge_app.py
+- [[ASGI guard in front of the SDK route allowlist, size cap, no JSON-RPC batches.]] - rationale - gateway/inbound_edge/edge_app.py
+- [[AccessToken]] - code
+- [[Any_55]] - code
+- [[AsyncBaseTransport]] - code
+- [[EdgeGuard]] - code - gateway/inbound_edge/edge_app.py
+- [[EdgeSettings]] - code - gateway/inbound_edge/edge_app.py
+- [[Exception_14]] - code
+- [[GatewayClient]] - code - gateway/inbound_edge/edge_app.py
+- [[GatewayError]] - code - gateway/inbound_edge/edge_app.py
 - [[Raises]] - code - gateway/tests/test_edge_service_routes.py
 - [[Raw TCP forwarder host 127.0.0.1port (published by compose) → edge…]] - rationale - gateway/inbound_edge/routes.py
-- [[RuntimeError_1]] - code
+- [[Route]] - code
+- [[Server]] - code
 - [[Stable per-install canary values, created once and kept in the edge store.]] - rationale - gateway/inbound_edge/service.py
 - [[Startup check against the manifest, signature and key committed under config.]] - rationale - gateway/inbound_edge/descriptors.py
-- [[The served descriptors do not match the signed manifest. Refuse to start.]] - rationale - gateway/inbound_edge/descriptors.py
-- [[Verify the manifest signature, then that ``descriptors`` match it exactly.…]] - rationale - gateway/inbound_edge/descriptors.py
+- [[The bearer token the SDK's auth middleware accepted for this request. Stateless…]] - rationale - gateway/inbound_edge/edge_app.py
+- [[The edge's only client the gateway's edgev1rpc door.]] - rationale - gateway/inbound_edge/edge_app.py
 - [[Whole secret file (PEM is multi-line; gateway.utils.secrets keeps only the last…]] - rationale - gateway/inbound_edge/service.py
-- [[__aenter__()_5]] - code - gateway/tests/test_edge_service_routes.py
-- [[__aexit__()_5]] - code - gateway/tests/test_edge_service_routes.py
+- [[__aenter__()_6]] - code - gateway/tests/test_edge_service_routes.py
+- [[__aexit__()_6]] - code - gateway/tests/test_edge_service_routes.py
 - [[__init__()_14]] - code - gateway/tests/test_edge_service_routes.py
 - [[_app_state()_1]] - code - gateway/tests/test_edge_service_routes.py
+- [[_build_server()]] - code - gateway/inbound_edge/edge_app.py
+- [[_consent_routes()]] - code - gateway/inbound_edge/edge_app.py
 - [[_err()]] - code - gateway/tests/test_edge_service_routes.py
 - [[_handle()_3]] - code - gateway/inbound_edge/routes.py
-- [[_load_public_key()]] - code - gateway/inbound_edge/descriptors.py
 - [[_pipe()_2]] - code - gateway/inbound_edge/routes.py
 - [[_post()]] - code - gateway/tests/test_edge_service_routes.py
 - [[_provider()]] - code - gateway/tests/test_edge_service_routes.py
 - [[_read_secret_blob()]] - code - gateway/inbound_edge/service.py
+- [[_request_token()]] - code - gateway/inbound_edge/edge_app.py
 - [[_rpc_app()]] - code - gateway/tests/test_edge_service_routes.py
 - [[_serve()]] - code - gateway/inbound_edge/routes.py
 - [[_telegram_send()]] - code - gateway/inbound_edge/service.py
 - [[build_edge_service()]] - code - gateway/inbound_edge/service.py
-- [[build_manifest()]] - code - gateway/inbound_edge/descriptors.py
-- [[canonical_bytes()]] - code - gateway/inbound_edge/descriptors.py
 - [[card()]] - code - gateway/inbound_edge/service.py
-- [[descriptor_hash()]] - code - gateway/inbound_edge/descriptors.py
-- [[descriptors.py]] - code - gateway/inbound_edge/descriptors.py
+- [[consent()]] - code - gateway/inbound_edge/edge_app.py
+- [[create_app()]] - code - gateway/inbound_edge/edge_app.py
 - [[echo()]] - code - gateway/tests/test_edge_service_routes.py
-- [[emit()_6]] - code - gateway/tests/test_edge_service_routes.py
-- [[fixture_98]] - code
+- [[edge_app.py]] - code - gateway/inbound_edge/edge_app.py
+- [[emit()_7]] - code - gateway/tests/test_edge_service_routes.py
+- [[handler()]] - code - gateway/tests/test_edge_service_routes.py
 - [[handler()_1]] - code - gateway/tests/test_edge_service_routes.py
-- [[main()_22]] - code - gateway/inbound_edge/descriptors.py
+- [[healthz()]] - code - gateway/inbound_edge/edge_app.py
+- [[main()_22]] - code - gateway/inbound_edge/edge_app.py
 - [[method()]] - code - gateway/tests/test_edge_service_routes.py
 - [[notify()]] - code - gateway/inbound_edge/service.py
-- [[parametrize_16]] - code
+- [[on_call_tool()]] - code - gateway/inbound_edge/edge_app.py
+- [[on_list_tools()]] - code - gateway/inbound_edge/edge_app.py
+- [[parametrize_18]] - code
 - [[post()_3]] - code - gateway/tests/test_edge_service_routes.py
-- [[secrets_dir()_1]] - code - gateway/tests/test_edge_service_routes.py
-- [[signed_descriptors()]] - code - gateway/tests/test_edge_service_routes.py
+- [[render()_1]] - code - gateway/inbound_edge/edge_app.py
+- [[replay()]] - code - gateway/inbound_edge/edge_app.py
+- [[settings_from_env()]] - code - gateway/inbound_edge/edge_app.py
 - [[start_edge_forwarder()]] - code - gateway/inbound_edge/routes.py
 - [[store_canaries()]] - code - gateway/inbound_edge/service.py
 - [[test_builds_with_everything_enabled()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_cli_verify_ok_and_bad_stdin()]] - code - gateway/tests/test_edge_service_routes.py
+- [[test_consent_route_error_paths()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_disabled_by_default()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_edge_service_routes.py]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_enabled_without_secrets_refuses()]] - code - gateway/tests/test_edge_service_routes.py
@@ -76,9 +94,7 @@ members: 72
 - [[test_settings_from_env()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_telegram_send_posts_card()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_token_errors_and_foreign_resource()]] - code - gateway/tests/test_edge_service_routes.py
-- [[test_unreadable_public_key_refuses()]] - code - gateway/tests/test_edge_service_routes.py
 - [[test_unsigned_descriptors_refuse()]] - code - gateway/tests/test_edge_service_routes.py
-- [[verify_descriptors()]] - code - gateway/inbound_edge/descriptors.py
 - [[verify_shipped_descriptors()]] - code - gateway/inbound_edge/descriptors.py
 
 ## Live Query (requires Dataview plugin)
@@ -89,28 +105,31 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 16 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
-- 15 edges to [[_COMMUNITY_GatewayBackedProvider]]
-- 6 edges to [[_COMMUNITY_make_event]]
-- 6 edges to [[_COMMUNITY_lifespan.py]]
+- 11 edges to [[_COMMUNITY_test_edge_e2e_sdk.py]]
+- 11 edges to [[_COMMUNITY_service.py]]
+- 10 edges to [[_COMMUNITY_GatewayBackedProvider]]
+- 8 edges to [[_COMMUNITY_descriptors.py]]
+- 6 edges to [[_COMMUNITY_test_edge_pipeline.py]]
 - 4 edges to [[_COMMUNITY_EdgeOAuthService]]
-- 4 edges to [[_COMMUNITY_test_edge_approvals.py]]
-- 3 edges to [[_COMMUNITY_EnvelopeSigner]]
 - 3 edges to [[_COMMUNITY_test_edge_fuzz.py]]
+- 2 edges to [[_COMMUNITY_PIIConfig]]
 - 2 edges to [[_COMMUNITY_ProgressiveLockdown]]
 - 2 edges to [[_COMMUNITY_EdgeStore]]
+- 2 edges to [[_COMMUNITY_test_soc_edge.py]]
 - 2 edges to [[_COMMUNITY_lifespan]]
-- 2 edges to [[_COMMUNITY_TestManifest]]
+- 2 edges to [[_COMMUNITY_lifespan.py]]
+- 2 edges to [[_COMMUNITY_ingest_apiconfig.py]]
+- 1 edge to [[_COMMUNITY_PIISanitizer]]
 - 1 edge to [[_COMMUNITY_CanaryTripwire]]
-- 1 edge to [[_COMMUNITY_EncodingDetector]]
-- 1 edge to [[_COMMUNITY_normalize_input]]
-- 1 edge to [[_COMMUNITY_load_profiles]]
-- 1 edge to [[_COMMUNITY_AgentTarget]]
+- 1 edge to [[_COMMUNITY_PromptGuard]]
+- 1 edge to [[_COMMUNITY_test_ws_e_rt2_inbound_encoding.py]]
+- 1 edge to [[_COMMUNITY_HeuristicClassifier]]
 - 1 edge to [[_COMMUNITY_ingest_apimain.py]]
+- 1 edge to [[_COMMUNITY_fastapi]]
 
 ## Top bridge nodes
-- [[build_edge_service()]] - degree 34, connects to 13 communities
-- [[test_edge_service_routes.py]] - degree 48, connects to 8 communities
-- [[descriptors.py]] - degree 16, connects to 5 communities
-- [[canonical_bytes()]] - degree 12, connects to 3 communities
+- [[build_edge_service()]] - degree 35, connects to 14 communities
+- [[test_edge_service_routes.py]] - degree 48, connects to 10 communities
+- [[edge_app.py]] - degree 17, connects to 4 communities
 - [[start_edge_forwarder()]] - degree 10, connects to 3 communities
+- [[create_app()]] - degree 13, connects to 2 communities

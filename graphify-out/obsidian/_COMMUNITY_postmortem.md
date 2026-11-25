@@ -12,7 +12,7 @@ members: 8
 - [[Follow-Up Actions]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Incident Summary]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Remediation]] - document - .github/ISSUE_TEMPLATE/postmortem.md
-- [[Root Cause]] - document - .github/ISSUE_TEMPLATE/postmortem.md
+- [[Root Cause_1]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Test Added to Prevent Recurrence (MANDATORY)]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[Timeline]] - document - .github/ISSUE_TEMPLATE/postmortem.md
 - [[postmortem]] - document - .github/ISSUE_TEMPLATE/postmortem.md

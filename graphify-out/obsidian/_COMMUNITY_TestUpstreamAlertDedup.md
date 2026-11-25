@@ -14,8 +14,8 @@ members: 10
 - [[dot-test_unwritable_state_file_is_logged_not_raised()]] - code - gateway/tests/test_daily_cve_report.py
 - [[TestUpstreamAlertDedup]] - code - gateway/tests/test_daily_cve_report.py
 - [[The 0605 check and the 0700 GHSA ingest share one diff; an advisory still…]] - rationale - gateway/tests/test_daily_cve_report.py
-- [[__enter__()_1]] - code - gateway/tests/test_daily_cve_report.py
-- [[__exit__()_1]] - code - gateway/tests/test_daily_cve_report.py
+- [[__enter__()_2]] - code - gateway/tests/test_daily_cve_report.py
+- [[__exit__()_2]] - code - gateway/tests/test_daily_cve_report.py
 - [[_flaky_send()]] - code - gateway/tests/test_daily_cve_report.py
 - [[read()_4]] - code - gateway/tests/test_daily_cve_report.py
 
@@ -27,7 +27,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_asyncio]]
+- 3 edges to [[_COMMUNITY_asyncio_1]]
 - 1 edge to [[_COMMUNITY_test_daily_cve_report.py]]
 
 ## Top bridge nodes

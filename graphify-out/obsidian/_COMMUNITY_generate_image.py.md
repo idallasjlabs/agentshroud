@@ -12,7 +12,7 @@ members: 5
 - [[Get API key from argument first, then environment.]] - rationale - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[generate_image.py]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 - [[get_api_key()]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
-- [[main()_16]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
+- [[main()_15]] - code - skills/openclaw/nano-banana-pro/scripts/generate_image.py
 
 ## Live Query (requires Dataview plugin)
 

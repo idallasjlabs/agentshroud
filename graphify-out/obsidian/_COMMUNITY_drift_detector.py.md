@@ -1,31 +1,21 @@
 ---
 type: community
-members: 18
+members: 8
 ---
 
 # drift_detector.py
 
-**Members:** 18 nodes
+**Members:** 8 nodes
 
 ## Members
-- [[Configuration_27]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[ContainerSnapshot.config_hash()]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Database Schema_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Drift Categories and Severity]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.acknowledge_alert(alert_id)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.check_drift(current)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.get_alerts(container_id, unacknowledged_only, limit)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[DriftDetector.set_baseline(snapshot)]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Environment Variables_16]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Function Details_47]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Key Classes  Functions_50]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Mode Enforce vs Monitor_9]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Purpose_191]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Related_54]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Responsibilities_54]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[Threat Model_24]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[drift_detector.py_2]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
-- [[drift_detector.py_1]] - document - docs/vault/02 - Modules/Security Modules/drift_detector.py.md
+- [[dot-check_drift()]] - code - gateway/security/drift_detector.py
+- [[dot-from_dict()_5]] - code - gateway/security/drift_detector.py
+- [[dot-get_baseline()]] - code - gateway/security/drift_detector.py
+- [[Compare current config against baseline, return any drift alerts.]] - rationale - gateway/security/drift_detector.py
+- [[Drift Detection — detect unauthorized container config changes. Snapshots…]] - rationale - gateway/security/drift_detector.py
+- [[DriftAlert]] - code - gateway/security/drift_detector.py
+- [[Retrieve baseline snapshot for a container.]] - rationale - gateway/security/drift_detector.py
+- [[drift_detector.py]] - code - gateway/security/drift_detector.py
 
 ## Live Query (requires Dataview plugin)
 
@@ -35,7 +25,14 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 1 edge to [[_COMMUNITY_Architecture Overview]]
+- 4 edges to [[_COMMUNITY_ContainerSnapshot]]
+- 3 edges to [[_COMMUNITY_DriftDetector]]
+- 1 edge to [[_COMMUNITY_middleware.py]]
+- 1 edge to [[_COMMUNITY_AgentRegistry]]
+- 1 edge to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
-- [[drift_detector.py_1]] - degree 2, connects to 1 community
+- [[drift_detector.py]] - degree 7, connects to 5 communities
+- [[dot-check_drift()]] - degree 5, connects to 2 communities
+- [[dot-get_baseline()]] - degree 5, connects to 2 communities
+- [[dot-from_dict()_5]] - degree 2, connects to 1 community

@@ -32,7 +32,7 @@ members: 77
 - [[dot-test_single_attempt_never_sleeps()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[A fetch that never returns must not hang the unattended run. 2026-10-16 the…]] - rationale - gateway/tests/test_discover_upstream_versions.py
 - [[All published versions of an npm package (via the npm CLI).]] - rationale - scripts/discover_upstream_versions.py
-- [[Any_57]] - code
+- [[Any_58]] - code
 - [[Call ``fn(attempt)`` up to ``attempts`` times; re-raise the last error if all…]] - rationale - scripts/discover_upstream_versions.py
 - [[Discover the latest upstream releases of the tools AgentShroud wraps. WHY THIS…]] - rationale - scripts/discover_upstream_versions.py
 - [[Every Docker Hub failure on marvin was on IPv6; curl -4 was 100% clean.]] - rationale - gateway/tests/test_discover_upstream_versions.py
@@ -69,7 +69,7 @@ members: 77
 - [[fetch()_1]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[fetch_dockerhub_tags()]] - code - scripts/discover_upstream_versions.py
 - [[fetch_npm_versions()]] - code - scripts/discover_upstream_versions.py
-- [[flaky()]] - code - gateway/tests/test_discover_upstream_versions.py
+- [[flaky()_1]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[fn()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[hub()]] - code - gateway/tests/test_discover_upstream_versions.py
 - [[hub()_1]] - code - gateway/tests/test_discover_upstream_versions.py

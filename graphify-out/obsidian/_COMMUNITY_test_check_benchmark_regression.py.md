@@ -13,7 +13,7 @@ members: 21
 - [[_current()]] - code - gateway/tests/test_check_benchmark_regression.py
 - [[_load_checker()]] - code - gateway/tests/test_check_benchmark_regression.py
 - [[_run()_13]] - code - gateway/tests/test_check_benchmark_regression.py
-- [[parametrize_27]] - code
+- [[parametrize_29]] - code
 - [[test_baseline_missing_mean_key_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
 - [[test_batch_metric_regression_exits_nonzero()]] - code - gateway/tests/test_check_benchmark_regression.py
 - [[test_check_benchmark_regression.py]] - code - gateway/tests/test_check_benchmark_regression.py

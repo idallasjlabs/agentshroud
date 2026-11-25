@@ -39,7 +39,7 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_URLAnalyzer]]
+- 2 edges to [[_COMMUNITY_test_url_analyzer.py]]
 
 ## Top bridge nodes
 - [[TestSSRFDetection]] - degree 21, connects to 1 community

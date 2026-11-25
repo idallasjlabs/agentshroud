@@ -45,8 +45,8 @@ members: 40
 - [[Test risk level emoji display.]] - rationale - gateway/tests/test_egress_telegram_notify.py
 - [[Test successful notification sending.]] - rationale - gateway/tests/test_egress_telegram_notify.py
 - [[TestEgressTelegramNotify]] - code - gateway/tests/test_egress_telegram_notify.py
-- [[asyncio_44]] - code
-- [[fixture_76]] - code
+- [[asyncio_45]] - code
+- [[fixture_81]] - code
 - [[handle_callback must include agent_id so the proxy can notify the originating…]] - rationale - gateway/tests/test_egress_telegram_notify.py
 
 ## Live Query (requires Dataview plugin)

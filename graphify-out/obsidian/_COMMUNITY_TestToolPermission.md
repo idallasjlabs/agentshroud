@@ -39,9 +39,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 3 edges to [[_COMMUNITY_test_mcp_proxy.py]]
+- 1 edge to [[_COMMUNITY_PermissionLevel]]
 
 ## Top bridge nodes
-- [[TestToolPermission]] - degree 23, connects to 1 community
+- [[TestToolPermission]] - degree 23, connects to 2 communities
 - [[dot-test_privacy_policy_overrides_patterns()]] - degree 2, connects to 1 community
 - [[dot-test_privacy_policy_status_when_missing_file()]] - degree 2, connects to 1 community

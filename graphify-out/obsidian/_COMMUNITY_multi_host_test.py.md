@@ -12,7 +12,7 @@ members: 15
 - [[dot-test_custom_user()]] - code - gateway/tests/test_multi_host_test.py
 - [[Build the ssh argv for a host. Non-interactive, fail-fast on connect.…]] - rationale - gateway/tools/multi_host_test.py
 - [[Describe exactly what would run, without executing anything.]] - rationale - gateway/tools/multi_host_test.py
-- [[Enum_7]] - code
+- [[Enum_6]] - code
 - [[HostStatus]] - code - gateway/tools/multi_host_test.py
 - [[Outcome classification for a single host.]] - rationale - gateway/tools/multi_host_test.py
 - [[TestBuildSshArgv]] - code - gateway/tests/test_multi_host_test.py
@@ -22,7 +22,7 @@ members: 15
 - [[_run()_1]] - code - gateway/tools/multi_host_test.py
 - [[build_ssh_argv()]] - code - gateway/tools/multi_host_test.py
 - [[multi_host_test.py]] - code - gateway/tools/multi_host_test.py
-- [[str_4]] - code
+- [[str_3]] - code
 
 ## Live Query (requires Dataview plugin)
 

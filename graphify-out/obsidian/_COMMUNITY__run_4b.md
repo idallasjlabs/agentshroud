@@ -26,7 +26,7 @@ members: 29
 - [[dot-test_restart_that_does_not_recover_is_a_failure()]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[dot-test_script_is_executable_in_git()_1]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[dot-test_single_miss_within_grace_does_not_restart()]] - code - gateway/tests/test_wazuh_watchdog.py
-- [[Path_36]] - code
+- [[Path_35]] - code
 - [[TestHealthCheckWazuhStep]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[TestWatchdogBehaviour]] - code - gateway/tests/test_wazuh_watchdog.py
 - [[TestWatchdogWiring]] - code - gateway/tests/test_wazuh_watchdog.py

@@ -16,7 +16,7 @@ members: 9
 - [[_load_json()]] - code - scripts/check_benchmark_regression.py
 - [[check()]] - code - scripts/check_benchmark_regression.py
 - [[check_benchmark_regression.py]] - code - scripts/check_benchmark_regression.py
-- [[main()_8]] - code - scripts/check_benchmark_regression.py
+- [[main()_7]] - code - scripts/check_benchmark_regression.py
 
 ## Live Query (requires Dataview plugin)
 

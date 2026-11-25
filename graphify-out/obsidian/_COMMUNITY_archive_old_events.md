@@ -44,7 +44,7 @@ members: 43
 - [[events list of (event_id, timestamp, prev_hash, entry_hash).]] - rationale - gateway/tests/test_audit_archive.py
 - [[execute()]] - code - gateway/tests/test_audit_archive.py
 - [[failing_vacuum_connect()]] - code - gateway/tests/test_audit_archive.py
-- [[fixture_97]] - code
+- [[fixture_102]] - code
 - [[hold_write_lock()]] - code - gateway/tests/test_audit_archive.py
 - [[n_noisy events of (egress_filter, INFO); n_denies of (egress_filter, HIGH);…]] - rationale - gateway/tests/test_audit_archive.py
 - [[now()_8]] - code - gateway/tests/test_audit_archive.py

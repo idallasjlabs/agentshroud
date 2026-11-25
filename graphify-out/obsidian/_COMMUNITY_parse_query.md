@@ -30,9 +30,8 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 4 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
+- 5 edges to [[_COMMUNITY_test_dns_canvas_coverage.py]]
 - 4 edges to [[_COMMUNITY_DNSForwarderProtocol]]
-- 1 edge to [[_COMMUNITY_make_fake_socket_module]]
 
 ## Top bridge nodes
 - [[dot-_handle_query()]] - degree 5, connects to 2 communities

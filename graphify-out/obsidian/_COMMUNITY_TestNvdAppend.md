@@ -15,7 +15,7 @@ members: 8
 - [[dot-test_openclaw_and_hermes_lists_each_get_their_own_entry()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestNvdAppend]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[The NVD source appends to the OpenClaw  Hermes lists through the same locator.]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[fixture_50]] - code
+- [[fixture_51]] - code
 
 ## Live Query (requires Dataview plugin)
 

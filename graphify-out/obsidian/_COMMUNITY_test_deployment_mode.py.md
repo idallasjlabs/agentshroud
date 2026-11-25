@@ -14,7 +14,7 @@ members: 24
 - [[The dedicated Funnel node is public exposure, so it never starts by mode alone…]] - rationale - gateway/tests/test_deployment_mode.py
 - [[_asb_setup()]] - code - gateway/tests/test_deployment_mode.py
 - [[_bash()]] - code - gateway/tests/test_deployment_mode.py
-- [[parametrize_32]] - code
+- [[parametrize_33]] - code
 - [[test_asb_and_post_deploy_check_use_the_library()]] - code - gateway/tests/test_deployment_mode.py
 - [[test_asb_build_and_up_carry_the_deployment_flags()]] - code - gateway/tests/test_deployment_mode.py
 - [[test_asb_cloud_mode_drops_local_agents_even_for_full()]] - code - gateway/tests/test_deployment_mode.py

@@ -8,7 +8,7 @@ members: 43
 **Members:** 43 nodes
 
 ## Members
-- [[dot-__init__()_25]] - code - gateway/proxy/collaborator_greeter.py
+- [[dot-__init__()_19]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_get_client()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_state()]] - code - gateway/proxy/collaborator_greeter.py
 - [[dot-_load_taglines()]] - code - gateway/proxy/collaborator_greeter.py
@@ -30,7 +30,7 @@ members: 43
 - [[_make_greeter()]] - code - gateway/tests/test_collaborator_greeter.py
 - [[_ok_response()]] - code - gateway/tests/test_collaborator_greeter.py
 - [[_persist_state failure must not raise.]] - rationale - gateway/tests/test_collaborator_greeter.py
-- [[asyncio_12]] - code
+- [[asyncio_11]] - code
 - [[collaborator_greeter.py]] - code - gateway/proxy/collaborator_greeter.py
 - [[test_bot_isolation()]] - code - gateway/tests/test_collaborator_greeter.py
 - [[test_caption_length_clamped()]] - code - gateway/tests/test_collaborator_greeter.py
@@ -61,7 +61,7 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 2 edges to [[_COMMUNITY_ingest_apimain.py]]
-- 2 edges to [[_COMMUNITY_AgentTarget]]
+- 2 edges to [[_COMMUNITY_ingest_apiconfig.py]]
 
 ## Top bridge nodes
 - [[collaborator_greeter.py]] - degree 5, connects to 2 communities

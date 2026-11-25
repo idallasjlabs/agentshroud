@@ -14,7 +14,7 @@ members: 8
 - [[dot-test_persistent_failure_exits_non_zero()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[TestNvdReportOnly]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[The NVD path emits the pre-migration schema (id=CVE-…, no ghsa_idcve_id).…]] - rationale - gateway/tests/test_sync_cve_registry_ghsa.py
-- [[_fake_urlopen()_2]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
+- [[_fake_urlopen()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 - [[_no_write()]] - code - gateway/tests/test_sync_cve_registry_ghsa.py
 
 ## Live Query (requires Dataview plugin)
