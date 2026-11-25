@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/proxy/web_proxy.py"
+source_file: "gateway/ingest_api/event_bus.py"
 type: "code"
-community: "WebProxyResult"
-location: "L75"
+community: "EventBus"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/WebProxyResult
+  - community/EventBus
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_5]] - `references` [EXTRACTED]
-- [[WebProxyResult]] - `method` [EXTRACTED]
+- [[Any_7]] - `references` [EXTRACTED]
+- [[GatewayEvent]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/WebProxyResult
+#graphify/code #graphify/EXTRACTED #community/EventBus

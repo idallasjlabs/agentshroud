@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: "asyncio"
+community: "MiddlewareResult"
 location: "L9601"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/asyncio
+  - community/MiddlewareResult
 ---
 
 # fake_send_text()
@@ -15,4 +15,4 @@ tags:
 - [[dot-test_default_disclosure_text()]] - `indirect_call` [INFERRED]
 - [[dot-test_full_access_disclosure_text()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/asyncio
+#graphify/code #graphify/INFERRED #community/MiddlewareResult

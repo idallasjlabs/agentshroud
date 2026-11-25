@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "ContainerSnapshot"
+community: "drift_detector.py"
 location: "L1"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerSnapshot
+  - community/drift_detectorpy
 ---
 
 # drift_detector.py
@@ -20,4 +20,4 @@ tags:
 - [[test_security_hardening.py]] - `imports_from` [EXTRACTED]
 - [[test_security_integration.py]] - `imports_from` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot
+#graphify/code #graphify/EXTRACTED #community/drift_detectorpy

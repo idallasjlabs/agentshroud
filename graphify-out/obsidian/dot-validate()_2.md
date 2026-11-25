@@ -1,19 +1,18 @@
 ---
-source_file: "gateway/security/output_schema.py"
+source_file: "gateway/tests/test_key_rotation.py"
 type: "code"
-community: "OutputSchemaEnforcer"
-location: "L89"
+community: "test_key_rotation.py"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/OutputSchemaEnforcer
+  - community/test_key_rotationpy
 ---
 
 # .validate()
 
 ## Connections
-- [[OutputSchemaEnforcer]] - `method` [EXTRACTED]
-- [[SchemaValidationResult]] - `calls` [EXTRACTED]
-- [[Validate output against the named schema. Args output The agent response text…]] - `rationale_for` [EXTRACTED]
+- [[Mock validation that can be controlled.]] - `rationale_for` [EXTRACTED]
+- [[MockValidator]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer
+#graphify/code #graphify/EXTRACTED #community/test_key_rotationpy

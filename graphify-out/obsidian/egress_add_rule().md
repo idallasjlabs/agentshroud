@@ -14,9 +14,9 @@ tags:
 ## Connections
 - [[Add an egress allowdeny rule.]] - `rationale_for` [EXTRACTED]
 - [[ApprovalMode]] - `uses` [INFERRED]
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]
 - [[make_event()]] - `calls` [EXTRACTED]
-- [[post_6]] - `references` [EXTRACTED]
+- [[post_7]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/ingest_api/mainpy

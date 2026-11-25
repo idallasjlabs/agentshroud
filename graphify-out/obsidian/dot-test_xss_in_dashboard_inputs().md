@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "TestWebSecurity"
+community: "TestHTTPSecurity"
 location: "L746"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestWebSecurity
+  - community/TestHTTPSecurity
 ---
 
 # .test_xss_in_dashboard_inputs()
@@ -15,4 +15,4 @@ tags:
 - [[Dashboard should escape user inputs (no raw innerHTML from API).]] - `rationale_for` [EXTRACTED]
 - [[TestWebSecurity]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestWebSecurity
+#graphify/code #graphify/EXTRACTED #community/TestHTTPSecurity

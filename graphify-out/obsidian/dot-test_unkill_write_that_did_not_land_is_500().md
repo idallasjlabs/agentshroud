@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestAgentsRegistry"
+community: "test_soc_edge.py"
 location: "L578"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/test_soc_edgepy
 ---
 
 # .test_unkill_write_that_did_not_land_is_500()
@@ -16,4 +16,4 @@ tags:
 - [[_lost_write()_1]] - `contains` [EXTRACTED]
 - [[_lost_write()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

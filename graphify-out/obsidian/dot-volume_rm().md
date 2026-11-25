@@ -1,17 +1,18 @@
 ---
-source_file: "gateway/runtime/engine.py"
+source_file: "gateway/runtime/docker_engine.py"
 type: "code"
-community: "ContainerEngine"
-location: "L141"
+community: "DockerEngine"
+location: "L159"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ContainerEngine
+  - community/DockerEngine
 ---
 
 # .volume_rm()
 
 ## Connections
-- [[ContainerEngine]] - `method` [EXTRACTED]
+- [[dot-_cmd()]] - `calls` [EXTRACTED]
+- [[DockerEngine]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ContainerEngine
+#graphify/code #graphify/EXTRACTED #community/DockerEngine

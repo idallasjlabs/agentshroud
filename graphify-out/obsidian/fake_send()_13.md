@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "._make_proxy"
-location: "L6928"
+location: "L8182"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # fake_send()
 
 ## Connections
-- [[dot-test_notify_user_blocked_uses_owner_fallback_when_send_fails()]] - `contains` [EXTRACTED]
+- [[dot-test_collab_gets_alert_notice_at_3_blocks()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

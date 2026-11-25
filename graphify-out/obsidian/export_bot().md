@@ -16,7 +16,7 @@ tags:
 - [[Why report .md source files stand in for a missing sent-mail ledger]] - `rationale_for` [EXTRACTED]
 - [[_list_report_files()]] - `calls` [EXTRACTED]
 - [[_report_date()]] - `calls` [EXTRACTED]
-- [[datetime_2]] - `references` [EXTRACTED]
+- [[datetime_1]] - `references` [EXTRACTED]
 - [[export-email-reports.py]] - `contains` [EXTRACTED]
 - [[main()_5]] - `calls` [EXTRACTED]
 

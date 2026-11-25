@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "._make_proxy"
-location: "L7628"
+location: "L9342"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # fake_send()
 
 ## Connections
-- [[dot-test_notify_collaborator_command_blocked_retries_with_unavailable_notice_on_send_failure()]] - `contains` [EXTRACTED]
+- [[dot-test_cooldown_suppresses_second_ack()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_url_analyzer.py"
 type: "code"
-community: "URLAnalyzer"
+community: "test_url_analyzer.py"
 location: "L229"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/test_url_analyzerpy
 ---
 
 # .test_weird_scheme()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestMalformedURLs]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_url_analyzerpy

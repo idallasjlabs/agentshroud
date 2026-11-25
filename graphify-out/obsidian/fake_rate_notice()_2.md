@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
-community: ".test_collaborator_rate_limit_notice_is_sent_for_each_limited_message"
+community: "RateLimiter"
 location: "L3755"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+  - community/RateLimiter
 ---
 
 # fake_rate_notice()
@@ -16,4 +16,4 @@ tags:
 - [[dot-test_collaborator_rate_limit_notice_retries_next_message_when_send_fails()]] - `indirect_call` [INFERRED]
 - [[dot-test_collaborator_rate_limit_uses_user_id_when_chat_id_differs()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_collaborator_rate_limit_notice_is_sent_for_each_limited_message
+#graphify/code #graphify/INFERRED #community/RateLimiter

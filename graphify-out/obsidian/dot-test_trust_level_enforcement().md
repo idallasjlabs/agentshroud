@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestAuth"
+community: "TrustManager"
 location: "L428"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/TrustManager
 ---
 
 # .test_trust_level_enforcement()
@@ -16,4 +16,4 @@ tags:
 - [[TestAuth]] - `method` [EXTRACTED]
 - [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/TrustManager

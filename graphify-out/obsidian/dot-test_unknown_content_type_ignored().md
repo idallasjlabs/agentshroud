@@ -16,6 +16,6 @@ tags:
 - [[Bodies with an unrecognized Content-Type are not parsed at all.]] - `rationale_for` [EXTRACTED]
 - [[TestBodyParsing]] - `method` [EXTRACTED]
 - [[_make_proxy()]] - `calls` [EXTRACTED]
-- [[asyncio_7]] - `references` [EXTRACTED]
+- [[asyncio_5]] - `references` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/AsyncMock

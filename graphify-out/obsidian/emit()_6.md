@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_service_routes.py"
+source_file: "gateway/tests/test_edge_pipeline.py"
 type: "code"
-community: "test_edge_service_routes.py"
-location: "L68"
+community: "test_edge_pipeline.py"
+location: "L102"
 tags:
   - graphify/code
   - graphify/INFERRED
-  - community/test_edge_service_routespy
+  - community/test_edge_pipelinepy
 ---
 
 # emit()
 
 ## Connections
-- [[_app_state()_1]] - `indirect_call` [INFERRED]
+- [[edge()]] - `indirect_call` [INFERRED]
 
-#graphify/code #graphify/INFERRED #community/test_edge_service_routespy
+#graphify/code #graphify/INFERRED #community/test_edge_pipelinepy

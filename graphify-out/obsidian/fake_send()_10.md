@@ -2,7 +2,7 @@
 source_file: "gateway/tests/test_telegram_proxy_inbound.py"
 type: "code"
 community: "._make_proxy"
-location: "L9273"
+location: "L9369"
 tags:
   - graphify/code
   - graphify/EXTRACTED
@@ -12,6 +12,6 @@ tags:
 # fake_send()
 
 ## Connections
-- [[dot-test_status_in_group_sends_short_ack_not_full_status()]] - `contains` [EXTRACTED]
+- [[dot-test_stranger_hello_in_group_receives_ack()]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/_make_proxy

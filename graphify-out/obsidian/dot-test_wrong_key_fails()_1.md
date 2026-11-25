@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "KeyVaultConfig"
+community: "KeyVault"
 location: "L725"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/KeyVaultConfig
+  - community/KeyVault
 ---
 
 # .test_wrong_key_fails()
@@ -15,4 +15,4 @@ tags:
 - [[EncryptedStore]] - `calls` [EXTRACTED]
 - [[TestCryptography]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/KeyVaultConfig
+#graphify/code #graphify/EXTRACTED #community/KeyVault

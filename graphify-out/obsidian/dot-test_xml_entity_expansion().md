@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit_advanced.py"
 type: "code"
-community: "lifespan.py"
+community: "PromptGuard"
 location: "L147"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/PromptGuard
 ---
 
 # .test_xml_entity_expansion()
@@ -16,4 +16,4 @@ tags:
 - [[TestHTTPSecurity]] - `method` [EXTRACTED]
 - [[XXE-style payloads shouldn't crash processing.]] - `rationale_for` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/PromptGuard

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_collaborator_responses.py"
 type: "code"
-community: "test_collaborator_responses.py"
+community: "TeamsConfig"
 location: "L128"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_collaborator_responsespy
+  - community/TeamsConfig
 ---
 
 # .test_unknown_group()
@@ -15,4 +15,4 @@ tags:
 - [[TestErrorFormatters]] - `method` [EXTRACTED]
 - [[format_unknown_group()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_collaborator_responsespy
+#graphify/code #graphify/EXTRACTED #community/TeamsConfig

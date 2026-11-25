@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "URLAnalyzer"
+community: "test_alert_dispatcher_retry.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/URLAnalyzer
+  - community/test_alert_dispatcher_retrypy
 ---
 
 # fixture
 
 ## Connections
-- [[analyzer()]] - `references` [EXTRACTED]
+- [[dispatcher()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/URLAnalyzer
+#graphify/code #graphify/EXTRACTED #community/test_alert_dispatcher_retrypy

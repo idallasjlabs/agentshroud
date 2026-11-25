@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_session_isolation.py"
 type: "code"
-community: "UserSessionManager"
+community: "TestMiddlewareSessionEnforcement"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/UserSessionManager
+  - community/TestMiddlewareSessionEnforcement
 ---
 
 # .test_webhook_user_id_extraction()
@@ -15,6 +15,6 @@ tags:
 - [[Test that user IDs are properly extracted from webhook payloads.]] - `rationale_for` [EXTRACTED]
 - [[TestWebhookReceiverIntegration]] - `method` [EXTRACTED]
 - [[WebhookReceiver]] - `calls` [EXTRACTED]
-- [[asyncio_5]] - `references` [EXTRACTED]
+- [[asyncio_3]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/UserSessionManager
+#graphify/code #graphify/EXTRACTED #community/TestMiddlewareSessionEnforcement

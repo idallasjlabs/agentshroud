@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_security_audit.py"
 type: "code"
-community: "TestAuth"
+community: "TrustManager"
 location: "L441"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAuth
+  - community/TrustManager
 ---
 
 # .test_trust_recovery()
@@ -16,4 +16,4 @@ tags:
 - [[Trust should recover after good behavior.]] - `rationale_for` [EXTRACTED]
 - [[TrustManager]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAuth
+#graphify/code #graphify/EXTRACTED #community/TrustManager

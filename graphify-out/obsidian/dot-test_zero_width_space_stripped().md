@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_adversarial_injection.py"
 type: "code"
-community: "normalize_input"
+community: "HeuristicClassifier"
 location: "L350"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/normalize_input
+  - community/HeuristicClassifier
 ---
 
 # .test_zero_width_space_stripped()
@@ -15,4 +15,4 @@ tags:
 - [[TestEncodingBypass]] - `method` [EXTRACTED]
 - [[normalize_input()]] - `calls` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/normalize_input
+#graphify/code #graphify/EXTRACTED #community/HeuristicClassifier

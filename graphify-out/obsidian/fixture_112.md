@@ -1,16 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "test_edge_e2e_sdk.py"
+community: "test_dns_canvas_coverage.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_edge_e2e_sdkpy
+  - community/test_dns_canvas_coveragepy
 ---
 
 # fixture
 
 ## Connections
-- [[edge()_1]] - `references` [EXTRACTED]
+- [[fake_httpx_client()]] - `references` [EXTRACTED]
+- [[gateway_password()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/test_dns_canvas_coveragepy

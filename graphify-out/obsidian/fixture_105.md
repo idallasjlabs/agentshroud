@@ -1,20 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "test_group_isolation.py"
+community: "ResourceGuard"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_group_isolationpy
+  - community/ResourceGuard
 ---
 
 # fixture
 
 ## Connections
-- [[rbac()_4]] - `references` [EXTRACTED]
-- [[session_manager()_4]] - `references` [EXTRACTED]
-- [[shared_memory()_2]] - `references` [EXTRACTED]
-- [[teams()_4]] - `references` [EXTRACTED]
-- [[tmp_workspace()_1]] - `references` [EXTRACTED]
+- [[guard()_4]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_group_isolationpy
+#graphify/code #graphify/EXTRACTED #community/ResourceGuard

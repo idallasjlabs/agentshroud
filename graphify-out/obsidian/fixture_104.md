@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "ResourceGuard"
+community: "test_file_sandbox_message_gate.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/ResourceGuard
+  - community/test_file_sandbox_message_gatepy
 ---
 
 # fixture
 
 ## Connections
-- [[guard()_4]] - `references` [EXTRACTED]
+- [[manager()_2]] - `references` [EXTRACTED]
+- [[session_manager()_4]] - `references` [EXTRACTED]
+- [[temp_workspace()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/ResourceGuard
+#graphify/code #graphify/EXTRACTED #community/test_file_sandbox_message_gatepy

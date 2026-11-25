@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_realtime_coverage.py"
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "_coerce_to_ws_event"
 location: "L558"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/_coerce_to_ws_event
 ---
 
 # .test_type_mapping()
@@ -14,6 +14,6 @@ tags:
 ## Connections
 - [[TestCoerceToWSEventExtra]] - `method` [EXTRACTED]
 - [[_coerce_to_ws_event()]] - `calls` [EXTRACTED]
-- [[parametrize_21]] - `references` [EXTRACTED]
+- [[parametrize_12]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/_coerce_to_ws_event

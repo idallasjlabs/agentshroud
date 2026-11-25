@@ -14,7 +14,7 @@ tags:
 ## Connections
 - [[dot-_make_report()]] - `calls` [EXTRACTED]
 - [[IntelReportStore]] - `references` [EXTRACTED]
-- [[Path_59]] - `references` [EXTRACTED]
+- [[Path_58]] - `references` [EXTRACTED]
 - [[TestIntelReportStore]] - `method` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/IntelReportStore

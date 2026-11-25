@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "wakeword.c"
+community: "lvgl_kawaii_face.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/lvgl_kawaii_facec
 ---
 
 # esp_err_t
 
 ## Connections
-- [[wakeword_init()]] - `references` [EXTRACTED]
+- [[face_animation_init()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/lvgl_kawaii_facec

@@ -1,23 +1,21 @@
 ---
 source_file: ""
 type: "code"
-community: "test_security_integration.py"
+community: "lifespan.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_security_integrationpy
+  - community/lifespanpy
 ---
 
 # fixture
 
 ## Connections
-- [[approval_queue()_1]] - `references` [EXTRACTED]
-- [[egress_filter()_1]] - `references` [EXTRACTED]
-- [[encrypted_store()]] - `references` [EXTRACTED]
-- [[full_pipeline_config()]] - `references` [EXTRACTED]
-- [[ledger()_2]] - `references` [EXTRACTED]
-- [[prompt_guard()_2]] - `references` [EXTRACTED]
-- [[sanitizer()_5]] - `references` [EXTRACTED]
-- [[trust_manager()_4]] - `references` [EXTRACTED]
+- [[dot-allowlist_config()]] - `references` [EXTRACTED]
+- [[dot-allowlist_proxy()]] - `references` [EXTRACTED]
+- [[audit_chain()]] - `references` [EXTRACTED]
+- [[config()_2]] - `references` [EXTRACTED]
+- [[passthrough_proxy()_1]] - `references` [EXTRACTED]
+- [[proxy()_2]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_security_integrationpy
+#graphify/code #graphify/EXTRACTED #community/lifespanpy

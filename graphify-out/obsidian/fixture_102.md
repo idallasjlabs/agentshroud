@@ -1,16 +1,16 @@
 ---
 source_file: ""
 type: "code"
-community: "AgentTarget"
+community: "archive_old_events"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/AgentTarget
+  - community/archive_old_events
 ---
 
 # fixture
 
 ## Connections
-- [[router()_3]] - `references` [EXTRACTED]
+- [[now()_8]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/AgentTarget
+#graphify/code #graphify/EXTRACTED #community/archive_old_events

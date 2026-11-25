@@ -17,7 +17,7 @@ tags:
 - [[TestProgressiveLockdownUX]] - `method` [EXTRACTED]
 - [[_make_update()]] - `calls` [EXTRACTED]
 - [[_wrap_response()]] - `calls` [EXTRACTED]
-- [[asyncio_22]] - `references` [EXTRACTED]
+- [[asyncio_19]] - `references` [EXTRACTED]
 - [[fake_notice()_8]] - `contains` [EXTRACTED]
 - [[fake_notice()_10]] - `indirect_call` [INFERRED]
 

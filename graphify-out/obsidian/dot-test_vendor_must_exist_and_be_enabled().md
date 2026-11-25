@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestAgentsRegistry"
+community: "test_soc_edge.py"
 location: "L626"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/test_soc_edgepy
 ---
 
 # .test_vendor_must_exist_and_be_enabled()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestEdgeEnroll]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

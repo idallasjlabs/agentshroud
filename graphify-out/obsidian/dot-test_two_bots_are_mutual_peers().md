@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_cross_bot_trust_ledger.py"
 type: "code"
-community: "TrustManager"
+community: "TrustConfig"
 location: "L521"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustManager
+  - community/TrustConfig
 ---
 
 # .test_two_bots_are_mutual_peers()
@@ -16,4 +16,4 @@ tags:
 - [[dot-build_full_mesh()]] - `calls` [EXTRACTED]
 - [[TestBuildFullMesh]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustManager
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_soc_edge.py"
 type: "code"
-community: "TestAgentsRegistry"
+community: "test_soc_edge.py"
 location: "L233"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestAgentsRegistry
+  - community/test_soc_edgepy
 ---
 
 # .test_unhooked_hosted_agents_never_ok()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestAgentsRegistry]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestAgentsRegistry
+#graphify/code #graphify/EXTRACTED #community/test_soc_edgepy

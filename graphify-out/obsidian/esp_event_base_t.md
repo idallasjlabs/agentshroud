@@ -1,11 +1,11 @@
 ---
 source_file: ""
 type: "code"
-community: "wakeword.c"
+community: "ws_client.c"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/wakewordc
+  - community/ws_clientc
 ---
 
 # esp_event_base_t
@@ -13,4 +13,4 @@ tags:
 ## Connections
 - [[_on_event()_1]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/wakewordc
+#graphify/code #graphify/EXTRACTED #community/ws_clientc

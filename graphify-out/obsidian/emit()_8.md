@@ -1,17 +1,17 @@
 ---
-source_file: "gateway/tests/test_edge_e2e_sdk.py"
+source_file: "gateway/tests/test_egress_filter.py"
 type: "code"
-community: "test_edge_e2e_sdk.py"
-location: "L117"
+community: "EgressAction"
+location: "L354"
 tags:
   - graphify/code
-  - graphify/INFERRED
-  - community/test_edge_e2e_sdkpy
+  - graphify/EXTRACTED
+  - community/EgressAction
 ---
 
 # emit()
 
 ## Connections
-- [[stack()]] - `indirect_call` [INFERRED]
+- [[dot-test_emits_egress_event_to_event_bus()]] - `contains` [EXTRACTED]
 
-#graphify/code #graphify/INFERRED #community/test_edge_e2e_sdkpy
+#graphify/code #graphify/EXTRACTED #community/EgressAction

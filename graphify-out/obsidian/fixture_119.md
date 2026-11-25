@@ -1,16 +1,18 @@
 ---
 source_file: ""
 type: "code"
-community: "test_soc_realtime_coverage.py"
+community: "test_tool_acl.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_soc_realtime_coveragepy
+  - community/test_tool_aclpy
 ---
 
 # fixture
 
 ## Connections
-- [[clean_auth_env()]] - `references` [EXTRACTED]
+- [[dot-enforcer()]] - `references` [EXTRACTED]
+- [[enforcer()_3]] - `references` [EXTRACTED]
+- [[rbac()_6]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_soc_realtime_coveragepy
+#graphify/code #graphify/EXTRACTED #community/test_tool_aclpy

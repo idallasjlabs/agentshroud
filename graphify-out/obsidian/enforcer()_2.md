@@ -13,7 +13,7 @@ tags:
 
 ## Connections
 - [[OutputSchemaEnforcer]] - `uses` [INFERRED]
-- [[fixture_95]] - `references` [EXTRACTED]
+- [[fixture_99]] - `references` [EXTRACTED]
 - [[test_output_schema.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/OutputSchemaEnforcer

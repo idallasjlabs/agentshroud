@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_trust_manager.py"
 type: "code"
-community: "TrustLevel"
+community: "TrustConfig"
 location: "L111"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TrustLevel
+  - community/TrustConfig
 ---
 
 # .test_unregistered_denied()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestActionGating]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TrustLevel
+#graphify/code #graphify/EXTRACTED #community/TrustConfig

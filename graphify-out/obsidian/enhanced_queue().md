@@ -15,7 +15,7 @@ tags:
 - [[ApprovalQueueConfig]] - `uses` [INFERRED]
 - [[Create an enhanced approval queue for testing.]] - `rationale_for` [EXTRACTED]
 - [[EnhancedApprovalQueue]] - `uses` [INFERRED]
-- [[fixture_84]] - `references` [EXTRACTED]
+- [[fixture_88]] - `references` [EXTRACTED]
 - [[test_enhanced_approval.py]] - `contains` [EXTRACTED]
 
 #graphify/code #graphify/EXTRACTED #community/test_mfa_guardpy

@@ -12,7 +12,7 @@ tags:
 # egress_risk_preview()
 
 ## Connections
-- [[AuthRequired_4]] - `references` [EXTRACTED]
+- [[AuthRequired_3]] - `references` [EXTRACTED]
 - [[Preview egress risk heuristic for domainport combos.]] - `rationale_for` [EXTRACTED]
 - [[get_6]] - `references` [EXTRACTED]
 - [[ingest_apimain.py]] - `contains` [EXTRACTED]

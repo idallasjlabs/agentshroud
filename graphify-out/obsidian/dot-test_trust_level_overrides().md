@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_outbound_filter.py"
 type: "code"
-community: ".test_trust_level_overrides"
+community: "OutboundInfoFilter"
 location: "L278"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/test_trust_level_overrides
+  - community/OutboundInfoFilter
 ---
 
 # .test_trust_level_overrides()
@@ -16,4 +16,4 @@ tags:
 - [[Test that trust level overrides work correctly.]] - `rationale_for` [EXTRACTED]
 - [[TestOutboundInfoFilter]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/test_trust_level_overrides
+#graphify/code #graphify/EXTRACTED #community/OutboundInfoFilter

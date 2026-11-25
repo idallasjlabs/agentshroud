@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/proxy/pipeline.py"
 type: "code"
-community: "SecurityPipeline"
+community: "PIISanitizer"
 location: "L1696"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/SecurityPipeline
+  - community/PIISanitizer
 ---
 
 # .verify_audit_chain()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[SecurityPipeline]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/SecurityPipeline
+#graphify/code #graphify/EXTRACTED #community/PIISanitizer

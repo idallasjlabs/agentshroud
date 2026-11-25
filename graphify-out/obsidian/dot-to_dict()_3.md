@@ -1,17 +1,19 @@
 ---
-source_file: "gateway/security/egress_approval.py"
+source_file: "gateway/security/memory_integrity.py"
 type: "code"
-community: "EgressScope"
-location: "L85"
+community: "FileIntegrityRecord"
+location: "L49"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/EgressScope
+  - community/FileIntegrityRecord
 ---
 
 # .to_dict()
 
 ## Connections
-- [[EgressScope]] - `method` [EXTRACTED]
+- [[Any_10]] - `references` [EXTRACTED]
+- [[Convert to dictionary for JSON serialization.]] - `rationale_for` [EXTRACTED]
+- [[FileIntegrityRecord]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/EgressScope
+#graphify/code #graphify/EXTRACTED #community/FileIntegrityRecord

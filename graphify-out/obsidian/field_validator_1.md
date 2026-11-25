@@ -1,21 +1,17 @@
 ---
 source_file: ""
 type: "code"
-community: "email_send"
+community: "ingest_api/config.py"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/email_send
+  - community/ingest_api/configpy
 ---
 
 # field_validator
 
 ## Connections
-- [[dot-body_not_empty()]] - `references` [EXTRACTED]
-- [[dot-content_not_empty()]] - `references` [EXTRACTED]
-- [[dot-path_not_empty()]] - `references` [EXTRACTED]
-- [[dot-subject_not_empty()]] - `references` [EXTRACTED]
-- [[dot-validate_base64()]] - `references` [EXTRACTED]
-- [[dot-validate_source()]] - `references` [EXTRACTED]
+- [[dot-validate_default_url()]] - `references` [EXTRACTED]
+- [[dot-validate_targets()]] - `references` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/email_send
+#graphify/code #graphify/EXTRACTED #community/ingest_api/configpy

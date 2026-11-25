@@ -1,12 +1,12 @@
 ---
 source_file: "gateway/tests/test_tool_chain_analyzer.py"
 type: "code"
-community: "TestReversibilityScoring"
+community: "ToolChainAnalyzer"
 location: "L539"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/TestReversibilityScoring
+  - community/ToolChainAnalyzer
 ---
 
 # .test_unknown_tool_defaults_low()
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[TestReversibilityScoring]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/TestReversibilityScoring
+#graphify/code #graphify/EXTRACTED #community/ToolChainAnalyzer

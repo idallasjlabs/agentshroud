@@ -1,18 +1,18 @@
 ---
-source_file: "gateway/security/canary.py"
+source_file: "gateway/security/drift_detector.py"
 type: "code"
-community: "lifespan.py"
-location: "L50"
+community: "ContainerSnapshot"
+location: "L35"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/lifespanpy
+  - community/ContainerSnapshot
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_15]] - `references` [EXTRACTED]
-- [[CanaryResult]] - `method` [EXTRACTED]
+- [[dot-config_hash()]] - `calls` [EXTRACTED]
+- [[ContainerSnapshot]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/lifespanpy
+#graphify/code #graphify/EXTRACTED #community/ContainerSnapshot

@@ -1,19 +1,18 @@
 ---
-source_file: "scripts/auto_remediate_cves.py"
+source_file: "gateway/proxy/web_proxy.py"
 type: "code"
-community: "plan_remediation"
-location: "L153"
+community: "TestWebProxySecurityIntegration"
+location: "L75"
 tags:
   - graphify/code
   - graphify/EXTRACTED
-  - community/plan_remediation
+  - community/TestWebProxySecurityIntegration
 ---
 
 # .to_dict()
 
 ## Connections
-- [[Any_55]] - `references` [EXTRACTED]
-- [[RemediationPlan]] - `method` [EXTRACTED]
-- [[Serialise for the unattended run's audit trail.]] - `rationale_for` [EXTRACTED]
+- [[Any_41]] - `references` [EXTRACTED]
+- [[WebProxyResult]] - `method` [EXTRACTED]
 
-#graphify/code #graphify/EXTRACTED #community/plan_remediation
+#graphify/code #graphify/EXTRACTED #community/TestWebProxySecurityIntegration
